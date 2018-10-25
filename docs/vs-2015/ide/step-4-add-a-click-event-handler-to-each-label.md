@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923378"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Porovnávací hra probíhá takto:  
   
-1.  Když hráč zvolí některý čtverec se skrytou ikonou, program zobrazí ikonu hráči změnou barvy ikony na černou.  
+1. Když hráč zvolí některý čtverec se skrytou ikonou, program zobrazí ikonu hráči změnou barvy ikony na černou.  
   
-2.  Potom hráč zvolí jinou skrytou ikonu.  
+2. Potom hráč zvolí jinou skrytou ikonu.  
   
-3.  Jestliže se ikony shodují, zůstávají viditelné. Pokud tomu tak není, jsou obě ikony opět skryty.  
+3. Jestliže se ikony shodují, zůstávají viditelné. Pokud tomu tak není, jsou obě ikony opět skryty.  
   
- Aby program takto fungoval, přidejte obslužnou rutinu události Click, která změní barvu vybraného popisku.  
+   Aby program takto fungoval, přidejte obslužnou rutinu události Click, která změní barvu vybraného popisku.  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>Přidání obslužné rutiny události Click ke každému popisku  
   

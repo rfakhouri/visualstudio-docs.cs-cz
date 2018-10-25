@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924886"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Návod: Ladění textové šablony přistupující k modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Při úpravě nebo přidat textové šablony řešení jazyka specifického pro 
 ## <a name="creating-a-domain-specific-language-solution"></a>Vytváření řešení jazyka specifického pro doménu  
  V tomto postupu vytvoříte řešení jazyka specifického pro doménu, která má následující vlastnosti:  
   
--   Název: DebuggingTestLanguage  
+- Název: DebuggingTestLanguage  
   
--   Šablona řešení: minimální jazykový  
+- Šablona řešení: minimální jazykový  
   
--   Přípona souboru: .ddd  
+- Přípona souboru: .ddd  
   
--   Název společnosti: Fabrikam  
+- Název společnosti: Fabrikam  
   
- Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Vytvoření textové šablony  
  Přidejte textové šablony do vašeho řešení.  

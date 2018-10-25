@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871742"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v sadě Visual Studio, vám umožní navrhnout jazyka specifického pro doménu a potom generovat vše, co uživatelé musí mít k vytváření modelů, které jsou založeny na jazyce.
@@ -34,31 +34,31 @@ Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v
 ## <a name="the-dsl-tools-solution"></a>Řešení nástrojů DSL
  Průvodce Designer specifického pro doménu poskytuje následující šablony řešení:
 
--   Tok úkolů
+- Tok úkolů
 
--   Diagramy tříd
+- Diagramy tříd
 
--   Minimální jazykový
+- Minimální jazykový
 
--   Komponenta modelů
+- Komponenta modelů
 
--   Minimální WPF
+- Minimální WPF
 
--   Minimální Windows.Forms
+- Minimální Windows.Forms
 
--   Knihovna DSL, která
+- Knihovna DSL, která
 
- Další informace najdete v tématu [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).
+  Další informace najdete v tématu [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- Průvodce vytvoří řešení sady Visual Studio, který má následující projekty:
+  Průvodce vytvoří řešení sady Visual Studio, který má následující projekty:
 
--   DSL
+- DSL
 
-     Projektu Dsl definuje jazyka specifického pro doménu a jeho nástrojů úprav a zpracování.
+   Projektu Dsl definuje jazyka specifického pro doménu a jeho nástrojů úprav a zpracování.
 
--   **DslPackage**
+- **DslPackage**
 
-     DslPackage projektu určuje, jak integrovat nástroje jazyka pomocí sady Visual Studio.
+   DslPackage projektu určuje, jak integrovat nástroje jazyka pomocí sady Visual Studio.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>Grafické rozhraní nástrojů DSL
  Přidání elementů a vztahů do jazyka specifického pro doménu, můžete použít grafické rozhraní nástrojů DSL. Po přidání prvků, můžete definovat jejich vzhled mapování na obrazce, přizpůsobení barev a přidáním dekorátory. Můžete také přidat prvky do panelu nástrojů.

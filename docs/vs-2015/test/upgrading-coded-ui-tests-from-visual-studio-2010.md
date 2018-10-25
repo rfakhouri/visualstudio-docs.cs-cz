@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907141"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade programových testů UI z produktu Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Testovací projekty obsahující programové testy uživatelského rozhraní, kt
   
  Po instalaci aktualizace, následující [!INCLUDE[vs2010](../includes/vs2010-md.md)] lepší programové funkce nástroj pro testování uživatelského rozhraní pro Windows 8 s aktualizací SP1:  
   
--   Programový Test uživatelského rozhraní pro Microsoft ovládací prvky založené na rozhraní .NET Framework 4.5 Windows Presentation Foundation (WPF) můžete spustit na počítači se systémem Windows 8.  
+- Programový Test uživatelského rozhraní pro Microsoft ovládací prvky založené na rozhraní .NET Framework 4.5 Windows Presentation Foundation (WPF) můžete spustit na počítači se systémem Windows 8.  
   
--   Programových testů uživatelského rozhraní pro 64bitovou (x 64) Internet Explorer 10 můžete spustit na počítači se systémem Windows 8.  
+- Programových testů uživatelského rozhraní pro 64bitovou (x 64) Internet Explorer 10 můžete spustit na počítači se systémem Windows 8.  
   
- Aktualizace taky obsahuje opravy pro následující problémy:  
+  Aktualizace taky obsahuje opravy pro následující problémy:  
   
--   **Pokrytí kódu:** neschopnost otevřít soubor pokrytí kódu (.coverage), který je vytvořen pomocí sady Visual Studio 2012 v [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
+- **Pokrytí kódu:** neschopnost otevřít soubor pokrytí kódu (.coverage), který je vytvořen pomocí sady Visual Studio 2012 v [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.  
   
--   **Bezvýchodná situace testovacích artefaktů:** test artefaktu, který je přiřazen k neplatný uživatel v Team Foundation Server (TFS) 2010 má váš tým. Například uživatel opustí společnost, ale stále má testovacího případu, který je mu přiřazen. Upgrade TFS 2010 na verzi TFS 2012. Použijete [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 pro připojení k upgradovaném serveru TFS. Nejste schopni přiřazení artefaktů testu pro všechny uživatele TFS pomocí [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Bezvýchodná situace testovacích artefaktů:** test artefaktu, který je přiřazen k neplatný uživatel v Team Foundation Server (TFS) 2010 má váš tým. Například uživatel opustí společnost, ale stále má testovacího případu, který je mu přiřazen. Upgrade TFS 2010 na verzi TFS 2012. Použijete [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 pro připojení k upgradovaném serveru TFS. Nejste schopni přiřazení artefaktů testu pro všechny uživatele TFS pomocí [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Zátěžové testování:** při spuštění zátěžového testu společně s typem sítě než profil místní sítě (LAN) na počítači, to se systémem Windows 8, ovladač emulace sítě způsobí, že operační systém při selhání. Další podrobnosti najdete v tématu [2736182 článku znalostní BÁZE](http://support.microsoft.com/kb/2736182).  
+- **Zátěžové testování:** při spuštění zátěžového testu společně s typem sítě než profil místní sítě (LAN) na počítači, to se systémem Windows 8, ovladač emulace sítě způsobí, že operační systém při selhání. Další podrobnosti najdete v tématu [2736182 článku znalostní BÁZE](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Viz také  
  [Přenosy, migrace a upgrade projektů sady Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

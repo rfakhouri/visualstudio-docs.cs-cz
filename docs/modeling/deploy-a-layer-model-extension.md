@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874615"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Nasazení rozšíření pro modelování vrstev
 
@@ -29,13 +29,13 @@ Rozšíření je kompilováno do souboru VSIX, který si můžete nainstalovat n
 
 ### <a name="to-install-the-extension"></a>Chcete-li nainstalovat rozšíření
 
-1.  V projektu, který obsahuje **source.vsix.manifest**, otevřete **bin\\ \***  v Průzkumníku souborů.
+1. V projektu, který obsahuje **source.vsix.manifest**, otevřete *bin* adresáře v Průzkumníku souborů.
 
-2.  Kopírovat  **\*VSIX** soubor do počítače, na kterém chcete nainstalovat rozšíření.
+2. Kopírovat  **\*VSIX** soubor do počítače, na kterém chcete nainstalovat rozšíření.
 
-3.  V cílovém počítači dvakrát klikněte na soubor *.vsix v Průzkumníku Windows.
+3. V cílovém počítači dvakrát klikněte na soubor *.vsix v Průzkumníku Windows.
 
-     Otevře se instalátor VSIX.
+    Otevře se instalátor VSIX.
 
 ### <a name="to-uninstall-the-extension"></a>Chcete-li odinstalovat rozšíření
 

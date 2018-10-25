@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894622"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
@@ -48,7 +48,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
  Následující tabulka popisuje možnosti, které jsou k dispozici pro všechny uzly na návrhové ploše zobrazení grafu.
 
 |Možnost|Popis|
-|------------|-----------------|
+|-|-----------------|
 |**Zobrazit v Průzkumníkovi schémat XML**|Umístí fokus na Průzkumník schémat a zvýrazní schématu sady uzlu.|
 |**Zobrazit v zobrazení grafu**|Přepne do zobrazení grafu (šedě).|
 |**Generovat ukázkový soubor XML**|K dispozici pouze pro globální prvky. Generuje ukázkový soubor XML pro prvek globální.|
@@ -63,7 +63,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
  Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální prvky také obsahuje následující možnosti:
 
 |Možnost|Popis|
-|------------|-----------------|
+|-|-----------------|
 |**Přidat definici typu**|Přidá základní typ do diagramu.|
 |**Přidat všechny odkazy**|Přidá všechny uzly, které odkazovat na prvek a vykreslí šipky znázorňující vztahy mezi nimi.|
 |**Přidat členy skupiny nahrazení**|Přidá všechny členy skupiny nahrazení. Tato možnost se objeví v zobrazení, pokud je element head nebo členem substituční skupiny.|
@@ -72,7 +72,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
  Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální jednoduché a globální komplexní typy také obsahuje následující možnosti:
 
 |Možnost|Popis|
-|------------|-----------------|
+|-|-----------------|
 |**Přidat základní typ**|Pokud vybraný typ je odvozen od typu globální, přidá základní typ vybraného typu.|
 |**Přidat všechny odkazy**|Přidá všechny odkazy vybraného typu. To zahrnuje elementy a atributy vybraného typu a typy odvozené od vybraného typu.|
 |**Přidat všechny odvozené typy**|Přidá všechny typy, které jsou přímo i nepřímo odvozeny z vybraného typu.|
@@ -81,14 +81,14 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
  Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální skupiny a skupiny atributů obsahuje také následující možnosti:
 
 |Možnost|Popis|
-|------------|-----------------|
+|-|-----------------|
 |**Přidat všechny odkazy**|Přidá všechny uzly, které odkazují do skupiny a vykreslí šipky znázorňující vztahy mezi nimi.|
 |**Přidat všechny členy**|Přidá všechny členy skupiny a vykreslí šipky znázorňující vztahy mezi nimi.|
 
  Kromě běžných nastavení je popsáno výše kontextovou nabídku pro globální atributy také obsahuje následující možnosti:
 
 |Možnost|Popis|
-|------------|-----------------|
+|-|-----------------|
 |**Přidat všechny odkazy**|Přidá všechny uzly, které odkazují do skupiny a vykreslí šipky znázorňující vztahy mezi nimi.|
 
 ## <a name="properties-window"></a>Vlastnosti – okno
@@ -102,7 +102,7 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
  ![Panel nástrojů návrháře schémat XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Možnost|Popis|
-|------------|-----------------|
+|-|-----------------|
 |**Ukázat počáteční zobrazení**|Přepne [počáteční zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**1**.|
 |**Ukázat zobrazení modelu obsahu**|Přepne [zobrazení modelu obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**2**.|
 |**Ukázat zobrazení grafu**|Přepne [grafu zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**3**.|

@@ -9,12 +9,12 @@ description: Podrobnosti o jaká předplatná jsou k dispozici, platí pravidla 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876762"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)
 Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.
@@ -23,11 +23,13 @@ Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v pro
 Při nepřesahuje partnerem s kompetencí – buď na stříbrné nebo zlaté úrovně úroveň – partneři získávat core počet předplatných sady Visual Studio Enterprise. Tato základní výhody změny, pokud partner nepřesahuje alespoň jedné zlaté úrovně kompetence. Předplatné Visual Studio Enterprise je vlastní nabídka, která odpovídá přibližně [roční cloudové předplatné sady Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ale s určité výhody odebrat (z nichž mnohá jsou nabízeny zvlášť na partneři jako obecné výhody programu MPN, nikoli jako součástí předplatných sady Visual Studio Enterprise nabízené prostřednictvím programu MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Základní výhody sady Visual Studio pro získávat nejméně jeden s kompetencí jakéhokoli druhu
+
 | Úroveň vytvořené pouze na úrovni silver competency               | Alespoň jeden s kompetencí vytvořené na zlaté úrovni.   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 předplatných sady visual Studio Enterprise                   | 10 předplatných sady visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Další výhodou sady Visual Studio pro výběr možnosti
+
 | S kompetencí                                  | Další předplatná vytvořená pro **silver** s kompetencí | Další předplatná vytvořená pro **zlatá** s kompetencí |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Vývoj aplikací                     | 5 předplatných sady visual Studio Enterprise                  | 25 předplatných sady visual Studio Enterprise               |
@@ -39,6 +41,7 @@ Při nepřesahuje partnerem s kompetencí – buď na stříbrné nebo zlaté ú
 Bez ohledu na to, kolik činnost nepřesahuje partnera počet předplatných sady Visual Studio jsou omezené takto:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Omezení pro předplatná sady Visual Studio vytvořené prostřednictvím možnosti
+
 | Maximální výhoda pro partnery s úroveň pouze silver competency                   | Maximální výhoda pro partnery s nejméně jedné zlaté úrovně kompetence               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 předplatných sady visual Studio Enterprise každou zemi; 75 po celém světě          | 50 předplatných sady visual Studio Enterprise každou zemi; 150 po celém světě         |

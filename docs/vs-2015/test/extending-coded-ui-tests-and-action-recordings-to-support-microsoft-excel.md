@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872977"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamen�
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Tato část představuje programového uživatelského rozhraní testu příponu, která můžete záznam a přehrávání testů sešitů aplikace Excel. Každá část tohoto rozšíření je vysvětleno v této části a v komentářích ke kódu pro vývojáře, kteří chtějí vytvořit právě takové rozšíření.  
+  Tato část představuje programového uživatelského rozhraní testu příponu, která můžete záznam a přehrávání testů sešitů aplikace Excel. Každá část tohoto rozšíření je vysvětleno v této části a v komentářích ke kódu pro vývojáře, kteří chtějí vytvořit právě takové rozšíření.  
   
- ![Architektura uživatelského rozhraní testu](../test/media/ui-testarch.png "UI_TestArch")  
-Přehled architektury  
+  ![Architektura uživatelského rozhraní testu](../test/media/ui-testarch.png "UI_TestArch")  
+  Přehled architektury  
   
 ## <a name="download-the-sample"></a>Stáhněte si ukázku  
  Ukázka se skládá ze čtyř projekty v `CodedUIExtensibilitySample.sln` řešení:  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Získat ukázky z tohoto [blogový příspěvek](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Získat ukázky z tohoto [blogový příspěvek](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  Ukázka je určena pro použití s Microsoft Excel 2010. Ukázka může pracovat s jinými verzemi aplikace Microsoft Excel, ale není aktuálně podporován.  

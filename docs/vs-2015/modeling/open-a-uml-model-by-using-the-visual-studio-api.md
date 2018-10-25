@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920208"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Otevření modelu UML pomocí rozhraní API sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,27 +35,27 @@ Pomocí rozhraní API můžete také otevřít modelů a diagramů v uživatelsk
 ##  <a name="Showing"></a> Otevírání modelů a diagramů v sadě Visual Studio  
  K otevření modelu v uživatelském rozhraní, použijte standardní rozhraní API Visual Studio `EnvDTE.DTE`. Existují dvě užitečná přetypování, které můžete provést na položkách projektu modelování:  
   
--   `EnvDTE.Project` může být převeden do a z `IModelingProject`, pokud je projekt projektem modelování a projekt je načten do aktuální domény aplikace.  
+- `EnvDTE.Project` může být převeden do a z `IModelingProject`, pokud je projekt projektem modelování a projekt je načten do aktuální domény aplikace.  
   
--   `EnvDTE.ProjectItem` může být převeden do a z `IDiagramContext`, pokud je položka diagramu UML.  
+- `EnvDTE.ProjectItem` může být převeden do a z `IDiagramContext`, pokud je položka diagramu UML.  
   
- Následující příklad váš projekt musí importovat tyto odkazy:  
+  Následující příklad váš projekt musí importovat tyto odkazy:  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
--   Microsoft.VisualStudio.Shell.Immutable. [verze]  
+- Microsoft.VisualStudio.Shell.Immutable. [verze]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- Tento příklad otevře UML model v sadě Visual Studio:  
+  Tento příklad otevře UML model v sadě Visual Studio:  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

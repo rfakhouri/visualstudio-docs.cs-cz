@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875070"
 ---
 # <a name="shared-colors"></a>Sdílené barvy
 Sem vložte úvod.  
@@ -48,10 +48,10 @@ Sem vložte úvod.
  Použití...  
  -   vždy, když je potřeba vytvořit vlastní nabídku.  
   
--   Pokud máte nové komponenty uživatelského rozhraní, který chcete porovnat nabídek sady Visual Studio.  
+- Pokud máte nové komponenty uživatelského rozhraní, který chcete porovnat nabídek sady Visual Studio.  
   
- Nepoužívejte...  
- Barva pozadí samostatně. Vždy použijte kombinaci na pozadí a popředí uvedené.  
+  Nepoužívejte...  
+  Barva pozadí samostatně. Vždy použijte kombinaci na pozadí a popředí uvedené.  
   
 ##### <a name="menu-title"></a>Název nabídky  
  Názvy nabídek se skládají z na pozadí, ohraničení a text nadpisu, jakož i volitelný glyf, obvykle, když se nachází v nabídce v panelu příkazů.  
@@ -64,9 +64,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro všechno, co nechcete vždy odpovídat názvu nabídky.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro všechny rozevíracího seznamu, který se nachází v jiném kontextu.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro prvky uživatelského rozhraní, které nejsou podobný panelu příkazů.  
   
--   pro příkaz součástí než ty, pro kterou token názvy jsou určené.  
+- pro příkaz součástí než ty, pro kterou token názvy jsou určené.  
   
- **Výchozí** (ostatní stavy)  
+  **Výchozí** (ostatní stavy)  
   
 |Prvek|Název tokenu: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro ovládací prvky, které mají své vlastní token názvy.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Sem vložte úvod.
  Použití...  
  -   Při vytváření vlastního pole se seznamem.  
   
--   Při vytváření ovládací prvek panelu příkazů, který je podobný pole se seznamem.  
+- Při vytváření ovládací prvek panelu příkazů, který je podobný pole se seznamem.  
   
- Nepoužívejte...  
- -   pro všechno, co nechcete, aby vždy tak, aby odpovídaly příkaz uživatelské rozhraní panelu.  
+  Nepoužívejte...  
+  -   pro všechno, co nechcete, aby vždy tak, aby odpovídaly příkaz uživatelské rozhraní panelu.  
   
--   Když máte přístup k upravený pole se seznamem.  
+- Když máte přístup k upravený pole se seznamem.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro všechno, co to není podobný rozevíracího seznamu.  
   
--   pro pole se seznamem nebo tlačítka rozdělení.  
+- pro pole se seznamem nebo tlačítka rozdělení.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro jiné typy tlačítek.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Sem vložte úvod.
 ##### <a name="open-document-tabs"></a>Karty otevřených dokumentů  
  Každý otevřený dokument obsahuje kartu v kanálu kartu dokumentu, který se zobrazí její název. Dokumenty, můžete buď vybrat nebo otevřete na pozadí a jejich karty, aby odrážela tyto stavy:  
   
--   Vybraná karta představuje dokument, který je dobře zobrazeno v dokumentu. Vybraná karta má ohraničení dokumentu, který rozšiřuje dobře mezi horním okrajem dokumentu.  
+- Vybraná karta představuje dokument, který je dobře zobrazeno v dokumentu. Vybraná karta má ohraničení dokumentu, který rozšiřuje dobře mezi horním okrajem dokumentu.  
   
--   Karty na pozadí jsou všechny karty dokumentů, které nejsou aktuálně vybraná karta. Po kliknutí na stát vybraná karta a získat všechny barvy ohraničení, textu a pozadí z těchto tokenů názvy.  
+- Karty na pozadí jsou všechny karty dokumentů, které nejsou aktuálně vybraná karta. Po kliknutí na stát vybraná karta a získat všechny barvy ohraničení, textu a pozadí z těchto tokenů názvy.  
   
- ![Červená dokument otevřít kartu značka](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Červená dokument otevřít kartu značka](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Použití...  
- Pokud při vytváření vlastního dokumentu karty.  
+  Použití...  
+  Pokud při vytváření vlastního dokumentu karty.  
   
- Nepoužívejte...  
- -   u tabulátorů prozatímní (preview).  
+  Nepoužívejte...  
+  -   u tabulátorů prozatímní (preview).  
   
--   prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, pokud má aktualizace motivu.  
+- prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, pokud má aktualizace motivu.  
   
 ##### <a name="selected-tab"></a>Vybraná karta  
  **Fokus**  
@@ -611,9 +611,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro jakýkoli druh dokumentu nebo kartu, která není prozatímní (preview).  
   
--   prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, pokud má aktualizace motivu.  
+- prostředí pro uživatelské rozhraní, které nechcete automaticky změnit, pokud má aktualizace motivu.  
   
- **Karta vybrané ve verzi preview: fokus**  
+  **Karta vybrané ve verzi preview: fokus**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro uživatelské rozhraní, která není podobné k tlačítku přetečení.  
   
--   pro tlačítka přetečení panelu příkazů.  
+- pro tlačítka přetečení panelu příkazů.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   u tlačítek, která se zobrazí v jiných umístěních.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Sem vložte úvod.
   
  Vyhledávací pole může být jedna z několika státy, z nichž některé se vzájemně vylučují:  
   
--   "Zaměřuje" nebo "bez fokusu" odkazuje na Určuje, jestli je kurzor v textovém poli.  
+- "Zaměřuje" nebo "bez fokusu" odkazuje na Určuje, jestli je kurzor v textovém poli.  
   
--   "Aktivní" nebo "neaktivní" odkazuje na tom, jestli uživatel zadal vyhledávací dotaz v textovém poli.  
+- "Aktivní" nebo "neaktivní" odkazuje na tom, jestli uživatel zadal vyhledávací dotaz v textovém poli.  
   
--   "Při najetí myší" znamená, že uživatel má moused prostřednictvím vyhledávacího pole pomocí myši (Tento stav potlačí všechny ostatní stavy).  
+- "Při najetí myší" znamená, že uživatel má moused prostřednictvím vyhledávacího pole pomocí myši (Tento stav potlačí všechny ostatní stavy).  
   
--   "Zakázáno" znamená, že funkce vyhledávání je vypnuté pro aktuální kontext.  
+- "Zakázáno" znamená, že funkce vyhledávání je vypnuté pro aktuální kontext.  
   
- ![Červená pole hledání značka](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Červená pole hledání značka](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Použití...  
- Při navrhování vlastní vyhledávací pole.  
+  Použití...  
+  Při navrhování vlastní vyhledávací pole.  
   
- Nepoužívejte...  
- -   pro všechno, co není vyhledávací pole.  
+  Nepoužívejte...  
+  -   pro všechno, co není vyhledávací pole.  
   
--   pro všechno, co, které nechcete, aby vždy tak, aby odpovídaly hledání pole uživatelského rozhraní.  
+- pro všechno, co, které nechcete, aby vždy tak, aby odpovídaly hledání pole uživatelského rozhraní.  
   
- **Fokus**  
+  **Fokus**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Sem vložte úvod.
  Použití...  
  -   Pokud při vytváření vlastních vyhledávacích rozevíracím seznamu.  
   
--   správný token názvy správný seznam součástí.  
+- správný token názvy správný seznam součástí.  
   
- Nepoužívejte...  
- -   pro rozevíracích seznamů, které se zobrazí v jiném kontextu.  
+  Nepoužívejte...  
+  -   pro rozevíracích seznamů, které se zobrazí v jiném kontextu.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Výchozí (ostatní stavy)**  
+  **Výchozí (ostatní stavy)**  
   
 |Prvek|Název tokenu: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro všechno, co to není podobné zobrazení stromu.  
   
--   v libovolné na pozadí a popředí jinými než která byla specifikována.  
+- v libovolné na pozadí a popředí jinými než která byla specifikována.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Sem vložte úvod.
  Nepoužívejte...  
  -   pro uživatelské rozhraní, která není pole rozevíracího seznamu nebo pole se seznamem.  
   
--   pro [rozevíracího seznamu](../misc/shared-colors.md#BKMK_CommandDropDown) nebo [– pole se seznamem](../misc/shared-colors.md#BKMK_CommandComboBox) na panelu příkazů.  
+- pro [rozevíracího seznamu](../misc/shared-colors.md#BKMK_CommandDropDown) nebo [– pole se seznamem](../misc/shared-colors.md#BKMK_CommandComboBox) na panelu příkazů.  
   
- **Default**  
+  **Default**  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Sem vložte úvod.
  Použití...  
  -   pro profesionální návrháře využívající, které jsou podobné pro Nástroj Manifest Designer.  
   
--   místo použití běžných ovládacích prvků kartě v horní části editoru v rámci dokumentu kontejneru.  
+- místo použití běžných ovládacích prvků kartě v horní části editoru v rámci dokumentu kontejneru.  
   
- Nepoužívejte...  
- -   Pokud máte víc než šest karet.  
+  Nepoužívejte...  
+  -   Pokud máte víc než šest karet.  
   
--   pro všechny uživatelské rozhraní, která není strukturované jako nástroj Manifest Designer.  
+- pro všechny uživatelské rozhraní, která není strukturované jako nástroj Manifest Designer.  
   
 |Stav|Součást|Prvek|Název tokenu: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Sem vložte úvod.
  Použití...  
  -   pro oblasti, kam umístit nabídek a panelů nástrojů.  
   
--   Díky kombinaci název tokenu správné na pozadí a popředí.  
+- na pozadí a správné / popředí token kombinace názvu.  
   
- Nepoužívejte...  
- pro oblasti, které nejsou podobný police příkazu.  
+  Nepoužívejte...  
+  pro oblasti, které nejsou podobný police příkazu.  
   
 |Součást|Prvek|Název tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  

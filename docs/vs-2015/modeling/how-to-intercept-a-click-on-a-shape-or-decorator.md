@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926745"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Postupy: Zachycení kliknutí na obrazec či dekorátor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Zachycení kliknutí a přetáhne v CompartmentShape seznamech  
  Následující příklad umožňuje uživatelům změnit pořadí položek v obrazce oddílu jejich přetažením. Pokud chcete spustit tento kód:  
   
-1.  Vytvořit nové řešení DSL pomocí **diagramů tříd** šablonu řešení.  
+1. Vytvořit nové řešení DSL pomocí **diagramů tříd** šablonu řešení.  
   
-     Můžete také pracovat s vlastní řešení, které obsahuje obrazce oddílu. Tento kód předpokládá, že je vztah obsažení mezi prvky modelu, který je reprezentovaný tvar a prvky v seznamu položek oddílu.  
+    Můžete také pracovat s vlastní řešení, které obsahuje obrazce oddílu. Tento kód předpokládá, že je vztah obsažení mezi prvky modelu, který je reprezentovaný tvar a prvky v seznamu položek oddílu.  
   
-2.  Nastavte **Generates Double Derived** vlastnost obrazce oddílu.  
+2. Nastavte **Generates Double Derived** vlastnost obrazce oddílu.  
   
-3.  Tento kód vložte do souboru v **Dsl** projektu.  
+3. Tento kód vložte do souboru v **Dsl** projektu.  
   
-4.  Upravte názvy domén třídu a obrazec v tomto kódu tak, aby odpovídaly vlastní DSL.  
+4. Upravte názvy domén třídu a obrazec v tomto kódu tak, aby odpovídaly vlastní DSL.  
   
- Stručně řečeno kód pracuje následujícím způsobem. V tomto příkladu `ClassShape` je název obrazce oddílu.  
+   Stručně řečeno kód pracuje následujícím způsobem. V tomto příkladu `ClassShape` je název obrazce oddílu.  
   
 -   Sada obslužných rutin událostí myši je připojen ke každé instanci oddílu při jeho vytváření.  
   

@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897989"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nepojmenovávejte hodnoty výčtu &#39;Reserved&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204721"
 
  Pro omezený počet případů, je přidání člena k zásadní změně i v případě, že původní členy zachovat původní hodnoty. Především, nejde vrátit nového člena z existující cesty kódu bez narušení volajícím, které používají `switch` (`Select` v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) příkaz na návratovou hodnotu, která zahrnuje celou člena seznamu a, která vyvolají výjimku výchozí případ. Sekundární problém je, že kód klienta, jako nemusí zpracovávat změny v chování z metody reflexe <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. Podle toho, pokud má nový člen má být vrácena z existující metody nebo nekompatibilita známé aplikace nastává z důvodu špatného reflexe využití, pouze pevná řešení, je:
 
-1.  Přidáte nový výčet, který obsahuje původní a nové členy.
+1. Přidáte nový výčet, který obsahuje původní a nové členy.
 
-2.  Označte výčet pomocí původní <xref:System.ObsoleteAttribute?displayProperty=fullName> atribut.
+2. Označte výčet pomocí původní <xref:System.ObsoleteAttribute?displayProperty=fullName> atribut.
 
- Postupujte stejným způsobem pro žádné externě viditelné typy nebo členy, které zveřejňují původní výčtu.
+   Postupujte stejným způsobem pro žádné externě viditelné typy nebo členy, které zveřejňují původní výčtu.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, odeberte nebo změňte jeho název.

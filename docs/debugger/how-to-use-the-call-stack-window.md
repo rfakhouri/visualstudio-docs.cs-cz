@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853607"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Zobrazení zásobníku volání a použijte okno zásobníku volání v ladicím programu sady Visual Studio
 
@@ -45,17 +45,17 @@ Když [symboly ladění](#bkmk_symbols) nejsou k dispozici pro celý zásobník 
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > **Zásobník volání** okno je podobné ladění perspektivy v některých prostředí IDE, jako je Eclipse. 
-
+> 
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch zde popsaných v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, vyberte **nastavení importu a exportu** na **nástroje** nabídky.  Zobrazit [přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Zobrazit zásobník volání v ladicím programu 
   
--   Při ladění v **ladění** nabídce vyberte možnost **Windows > zásobník volání**.
+- Při ladění v **ladění** nabídce vyberte možnost **Windows > zásobník volání**.
 
- ![Okno zásobník volání](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Okno zásobník volání](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Žlutá šipka označuje zásobník snímků, kde je nyní umístěn ukazatel spuštění. Ve výchozím nastavení, toto je blok zásobníku, jehož informace se zobrazí ve zdroji, **lokální**, **automatické hodnoty**, **Watch**, a **zpětný překlad** systému windows . Pokud chcete změnit kontext ladicího programu na jiný rámec v zásobníku, můžete to udělat [přepnutí na jiný rámec zásobníku](#bkmk_switch).   
   

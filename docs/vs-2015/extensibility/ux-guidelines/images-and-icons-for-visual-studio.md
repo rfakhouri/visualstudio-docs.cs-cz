@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872535"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrázky a ikony pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255746"
 ### <a name="overview"></a>Přehled  
  Visual Studio používá moderní styl ikony, které čisté geometrie a rozdělení 50/50 zůstatek pozitivní nebo negativní (světlý/tmavý) a použijte metaphors s přímým přístupem, srozumitelné. Zásadní ikona center body návrhu kolem přehlednost zjednodušení a kontext.  
   
--   **Přehlednost:** soustředit na základní metafora, umožňující ikona jeho význam a osobnosti.  
+- **Přehlednost:** soustředit na základní metafora, umožňující ikona jeho význam a osobnosti.  
   
--   **Zjednodušení:** snížit na ikonu na jeho význam core – získejte motiv jenom nezbytné elementy a žádné frills.  
+- **Zjednodušení:** snížit na ikonu na jeho význam core – získejte motiv jenom nezbytné elementy a žádné frills.  
   
--   **Kontext:** vezměte v úvahu všechny aspekty rolí ikonu během vývoje pojem, který je zásadní při rozhodování o prvky, které tvoří jádro metafora na ikonu.  
+- **Kontext:** vezměte v úvahu všechny aspekty rolí ikonu během vývoje pojem, který je zásadní při rozhodování o prvky, které tvoří jádro metafora na ikonu.  
   
- S ikonami existuje několik bodů, aby:  
+  S ikonami existuje několik bodů, aby:  
   
--   Nepoužívejte ikon, které místo prvky uživatelského rozhraní s výjimkou v případě potřeby. Zvolte abstraktní nebo symbolické přístup, pokud prvek uživatelského rozhraní není běžné, zřejmá, ani jedinečný.  
+- Nepoužívejte ikon, které místo prvky uživatelského rozhraní s výjimkou v případě potřeby. Zvolte abstraktní nebo symbolické přístup, pokud prvek uživatelského rozhraní není běžné, zřejmá, ani jedinečný.  
   
--   Nelíbí společné prvky nadměrnému využití dokumentů, složky, šipky a ikonu lupy. Pomocí těchto prvků pouze v případě, že je velmi důležité na ikonu význam. Například na lupu směřující doprava by měla zobrazovat pouze vyhledávání, procházet a vyhledat.  
+- Nelíbí společné prvky nadměrnému využití dokumentů, složky, šipky a ikonu lupy. Pomocí těchto prvků pouze v případě, že je velmi důležité na ikonu význam. Například na lupu směřující doprava by měla zobrazovat pouze vyhledávání, procházet a vyhledat.  
   
--   I když některé prvky starší ikona udržovat použití perspektivy, nevytvářejte nové ikony prostorových Pokud element nemá přehlednost bez něj.  
+- I když některé prvky starší ikona udržovat použití perspektivy, nevytvářejte nové ikony prostorových Pokud element nemá přehlednost bez něj.  
   
--   Není cram příliš mnoho informací do ikonu. Jednoduchý obrázek, který lze snadno rozpoznat nebo se naučili jako symbol rozpoznatelných je mnohem užitečnější než bitovou kopii příliš složitý. Ikona nelze poskytují kompletní představu.  
+- Není cram příliš mnoho informací do ikonu. Jednoduchý obrázek, který lze snadno rozpoznat nebo se naučili jako symbol rozpoznatelných je mnohem užitečnější než bitovou kopii příliš složitý. Ikona nelze poskytují kompletní představu.  
   
 ### <a name="icon-creation"></a>Ikona vytvoření  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255746"
 ### <a name="icon-construction"></a>Ikona konstrukce  
  Nejmenší velikost ikony v sadě Visual Studio je 16 x 16. Největší v běžných použití je 32 x 32. Mějte na paměti nechcete zaplní celý 16 x 16, 24 × 24 nebo 32 x 32 rámce při navrhování ikonu. Ikona čitelné, jednotné konstrukce je nezbytné pro rozpoznávání uživatele. Při vytváření ikony proto zavázala dodržovat následující body.  
   
--   Ikony by měl být jasné, srozumitelné a konzistentní vzhledem k aplikacím.  
+- Ikony by měl být jasné, srozumitelné a konzistentní vzhledem k aplikacím.  
   
--   Je lepší použít elementy oznámení stavu jako jeden ikony a ne do zásobníku nad základní prvek ikonu. V některých kontextech může vyžadovat uživatelské rozhraní elementu stav, který chcete spárovat s elementem base.  
+- Je lepší použít elementy oznámení stavu jako jeden ikony a ne do zásobníku nad základní prvek ikonu. V některých kontextech může vyžadovat uživatelské rozhraní elementu stav, který chcete spárovat s elementem base.  
   
--   Ikony projektu jsou obvykle .ico soubory, které obsahují několik velikostí. Pouze rozměr 16 × 16, 24 × 24 a 32 × 32 ikony se aktualizují. Většina 16 x 16 a 24 × 24 ikony se obsahují stejné elementy. Ikony 32 x 32 obsahují další podrobnosti, včetně typ projektu jazyka v případě potřeby.  
+- Ikony projektu jsou obvykle .ico soubory, které obsahují několik velikostí. Pouze rozměr 16 × 16, 24 × 24 a 32 × 32 ikony se aktualizují. Většina 16 x 16 a 24 × 24 ikony se obsahují stejné elementy. Ikony 32 x 32 obsahují další podrobnosti, včetně typ projektu jazyka v případě potřeby.  
   
--   U ikon, 32 x 32 základní elementy mají obvykle tloušťku čáry 2 pixelů. Tloušťka čáry 1 nebo 2 pixelů může použitých pro elementy podrobností. Chcete-li zjistit, která je vhodnější použijte nejlepší rozhodnutí.  
+- U ikon, 32 x 32 základní elementy mají obvykle tloušťku čáry 2 pixelů. Tloušťka čáry 1 nebo 2 pixelů může použitých pro elementy podrobností. Chcete-li zjistit, která je vhodnější použijte nejlepší rozhodnutí.  
   
--   Máte nejméně s 1 pixelu mezery mezi elementy pro rozměr 16 × 16 a ikony 24 × 24. Ikony 32 x 32 použijte 2 pixel mezery mezi elementy a mezi modifikátor a base element.  
+- Máte nejméně s 1 pixelu mezery mezi elementy pro rozměr 16 × 16 a ikony 24 × 24. Ikony 32 x 32 použijte 2 pixel mezery mezi elementy a mezi modifikátor a base element.  
   
- ![Mezery mezi elementy pro rozměr 16 × 16, 24 × 24 a 32 × 32 ikony](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
+  ![Mezery mezi elementy pro rozměr 16 × 16, 24 × 24 a 32 × 32 ikony](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
   
- **Mezery mezi elementy pro ikony velikosti 16 x 16, 24 × 24 a 32 × 32**  
+  **Mezery mezi elementy pro ikony velikosti 16 x 16, 24 × 24 a 32 × 32**  
   
 #### <a name="color-and-accessibility"></a>Barvy a usnadnění přístupu  
  Zásady dodržování předpisů Visual Studio vyžadují, aby všechny ikony v rámci produktu předat požadavky na usnadnění přístupu barvy a kontrast. Toho můžete dosáhnout inverzi ikonu a při návrhu, byste měli vědět, že se bude obrácený prostřednictvím kódu programu v rámci produktu.  

@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d6ab30934750f2c825029c1433ea7ca68447dcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 551f2762886a9c6b8e7395d536538ac47752d3ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878151"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novinky pro programátory ve Visual Studiu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Tato verze sady Visual Studio zahrnuje následující vylepšení vám pomůže 
 
  Mezi další vylepšení patří:
 
--   **Vylepšené vertikální diagramy**. Pro střední až velká řešení sady Visual Studio můžete nyní použít zjednodušenou nabídku architektura získáte užitečnější kód mapy pro vaše řešení. Sestavení vašeho řešení se seskupují podle složek řešení, takže můžete vidět v kontextu a využít úsilí, které jste vložili do struktury řešení. Okamžitě uvidíte projekt a odkazy na sestavení a pak se zobrazí typy propojení. Kromě toho sestavení externí do vašeho řešení se seskupují kompaktnějším způsobem.
+- **Vylepšené vertikální diagramy**. Pro střední až velká řešení sady Visual Studio můžete nyní použít zjednodušenou nabídku architektura získáte užitečnější kód mapy pro vaše řešení. Sestavení vašeho řešení se seskupují podle složek řešení, takže můžete vidět v kontextu a využít úsilí, které jste vložili do struktury řešení. Okamžitě uvidíte projekt a odkazy na sestavení a pak se zobrazí typy propojení. Kromě toho sestavení externí do vašeho řešení se seskupují kompaktnějším způsobem.
 
--   **Projekty testů mají jiný styl a dají se filtrovat**. Teď můžete snadno a rychle identifikovat projekty testů na mapě protože mají jiný styl. Můžete se taky odfiltrovat, aby se mohli soustředit na funkční kód aplikace.
+- **Projekty testů mají jiný styl a dají se filtrovat**. Teď můžete snadno a rychle identifikovat projekty testů na mapě protože mají jiný styl. Můžete se taky odfiltrovat, aby se mohli soustředit na funkční kód aplikace.
 
--   **Zjednodušené odkazy externích závislostí**. Odkazy závislostí už nepředstavují dědičnost z System.Object, System.ValueType, System.Enum a System.Delegate. Díky tomu snadněji rozpoznáte externí závislosti ve vaší mapě kódu.
+- **Zjednodušené odkazy externích závislostí**. Odkazy závislostí už nepředstavují dědičnost z System.Object, System.ValueType, System.Enum a System.Delegate. Díky tomu snadněji rozpoznáte externí závislosti ve vaší mapě kódu.
 
--   **"Procházení – na odkazy závislostí" zohledňuje filtry**. Užitečný a jasný diagram získáte, když ho rozbalíte, abyste pochopili příspěvky k odkazu závislostí. Diagram není moc zaplněný a zohledňuje možnosti, které jste vybrali filtrování propojení.
+- **"Procházení – na odkazy závislostí" zohledňuje filtry**. Užitečný a jasný diagram získáte, když ho rozbalíte, abyste pochopili příspěvky k odkazu závislostí. Diagram není moc zaplněný a zohledňuje možnosti, které jste vybrali filtrování propojení.
 
--   **Prvky kódu se přidávají do mapy kódu s jejich kontextem**. Protože teď diagramy zobrazují se svým kontextem (až po sestavení řešení a složky, která můžete filtrovat podle potřeby), můžete získat užitečnější diagramy při přetažení prvků kódu z Průzkumníka řešení, zobrazení tříd, prohlížeče objektů nebo když vyberete prvky v Průzkumníku řešení a zvolíte zobrazení na mapě kódu.
+- **Prvky kódu se přidávají do mapy kódu s jejich kontextem**. Protože teď diagramy zobrazují se svým kontextem (až po sestavení řešení a složky, která můžete filtrovat podle potřeby), můžete získat užitečnější diagramy při přetažení prvků kódu z Průzkumníka řešení, zobrazení tříd, prohlížeče objektů nebo když vyberete prvky v Průzkumníku řešení a zvolíte zobrazení na mapě kódu.
 
--   **Rychlejší získání reaktivních map kódu**. Operací přetažení výsledek se dostaví okamžitě a vazby mezi uzly se vytvoří mnohem rychleji, aniž by ovlivnily následné uživatelem iniciované operace, třeba rozbalení uzlu nebo požadavek na víc uzlů. Při vytváření map kódu bez sestavování řešení, všechny krajní případy, takové kdy třeba sestavení nejsou vytvořená – se teď zpracují.
+- **Rychlejší získání reaktivních map kódu**. Operací přetažení výsledek se dostaví okamžitě a vazby mezi uzly se vytvoří mnohem rychleji, aniž by ovlivnily následné uživatelem iniciované operace, třeba rozbalení uzlu nebo požadavek na víc uzlů. Při vytváření map kódu bez sestavování řešení, všechny krajní případy, takové kdy třeba sestavení nejsou vytvořená – se teď zpracují.
 
--   **Přeskočit opětovné sestavování svého řešení.** Poskytuje lepší výkon při vytváření a úpravách diagramů.
+- **Přeskočit opětovné sestavování svého řešení.** Poskytuje lepší výkon při vytváření a úpravách diagramů.
 
--   **Filtrování skupin a uzlů prvků kódu**. Můžete rychle zpřehlednit tím vaše mapy zobrazení nebo skrytí prvky kódu na základě jejich kategorie a prvky kódu seskupíte podle složek řešení, sestavení, oborů názvů, složek projektu a typů.
+- **Filtrování skupin a uzlů prvků kódu**. Můžete rychle zpřehlednit tím vaše mapy zobrazení nebo skrytí prvky kódu na základě jejich kategorie a prvky kódu seskupíte podle složek řešení, sestavení, oborů názvů, složek projektu a typů.
 
--   **Filtrování vztahů v zájmu usnadnění diagramy**. Filtrování vazeb se teď týká i propojení mezi skupinami, takže práce s oknem filtru je teď míň obtěžující než v předchozích verzích.
+- **Filtrování vztahů v zájmu usnadnění diagramy**. Filtrování vazeb se teď týká i propojení mezi skupinami, takže práce s oknem filtru je teď míň obtěžující než v předchozích verzích.
 
--   **Vytváření diagramů ze zobrazení tříd a prohlížeče objektů**. Přetáhněte a umístěte soubory a sestavení do nové nebo existující mapy z oken zobrazení tříd a prohlížeče objektů.
+- **Vytváření diagramů ze zobrazení tříd a prohlížeče objektů**. Přetáhněte a umístěte soubory a sestavení do nové nebo existující mapy z oken zobrazení tříd a prohlížeče objektů.
 
- Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).
+  Zobrazit [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).
 
- **Další změny návrhu a modelování v této verzi:**
+  **Další změny návrhu a modelování v této verzi:**
 
--   **Diagramy vrstev**. Zobrazení tříd a prohlížeče objektů tyto diagramy můžete aktualizujte. Abyste splnili požadavky na návrh softwaru, použijte diagramy vrstev k popsání požadovaných závislostí pro váš software. Udržujte kód v souladu s tímto návrhem najděte kód, který nevyhovuje těmto omezením a ověřujte budoucí kód podle tohoto směrného plánu.
+- **Diagramy vrstev**. Zobrazení tříd a prohlížeče objektů tyto diagramy můžete aktualizujte. Abyste splnili požadavky na návrh softwaru, použijte diagramy vrstev k popsání požadovaných závislostí pro váš software. Udržujte kód v souladu s tímto návrhem najděte kód, který nevyhovuje těmto omezením a ověřujte budoucí kód podle tohoto směrného plánu.
 
--   **Diagramy UML**. Můžete už vytvoření diagramů tříd UML a sekvenční diagramy z kódu. Ale můžete pořád vytvářet pomocí nových elementů UML.
+- **Diagramy UML**. Můžete už vytvoření diagramů tříd UML a sekvenční diagramy z kódu. Ale můžete pořád vytvářet pomocí nových elementů UML.
 
--   **Průzkumník architektury**. Průzkumník architektury již slouží k vytváření diagramů. Ale můžete pořád použít Průzkumník řešení.
+- **Průzkumník architektury**. Průzkumník architektury již slouží k vytváření diagramů. Ale můžete pořád použít Průzkumník řešení.
 
 ##  <a name="VersionSupport"></a> Podpora edice nástroje architektury a modelování
 

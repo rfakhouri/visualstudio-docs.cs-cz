@@ -13,40 +13,40 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f66c4597116c2dd27320a8ae0bf69314bbb558b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05afdbffde5493f79d20f9f32d4a6cc0b674a72f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874550"
 ---
 # <a name="properties-of-diagrams"></a>Vlastnosti diagramů
-Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí v Návrháři vygenerovaný. Můžete například zadat výchozí barvu textu v diagramu.
+Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí ve vygenerovaném návrháři. Můžete například zadat výchozí barva textu v diagramu.
 
- Další informace najdete v tématu [jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak používat tyto vlastnosti najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Následující tabulka uvádí vlastnosti diagramů.
+ V následující tabulce jsou uvedeny vlastnosti diagramů.
 
 |Vlastnost|Popis|Výchozí|
-|--------------|-----------------|-------------|
-|Barva výplně|Barva výplně diagramu.|prázdné|
-|Barva textu|Barva textu, který se zobrazí v diagramu.|černé|
-|Modifikátor přístupu|Modifikátor přístupu – třída (veřejné nebo interní).|Public|
-|Vlastní atributy|Použít k přidání atributů do třídy generovaného kódu.|\<žádné >|
-|Generuje dvojitou odvozené|Pokud `True`, budou generovány základní třídu a částečné třídy (pro podporu přizpůsobení prostřednictvím přepsání). Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Má vlastní – konstruktor|Pokud `True`, bude k dispozici vlastní konstruktor v zdrojového kódu. Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|Modifikátor dědičnosti|Popisuje typ dědičnost třídy zdrojového kódu, která se generují z diagramu (`none`, `abstract` nebo `sealed`).|Žádné|
-|Základní Diagram|Základní třída tohoto diagramu.|(žádný)|
+|-|-|-|
+|Barva výplně|Barva výplně diagramu.|Prázdné|
+|Barva textu|Barva textu, který se zobrazí v diagramu.|Černá|
+|Modifikátor přístupu|Modifikátor přístupu třídy (veřejné nebo interní).|Public|
+|Vlastní atributy|Umožňuje přidat atributy vytvořené třídě kódu.|\<žádné >|
+|Generuje Double odvozené|Pokud `True`, se vygeneruje základní třídu a částečné třídy (pro podporu přizpůsobení pomocí přepisů). Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
+|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z diagramu (`none`, `abstract` nebo `sealed`).|Žádné|
+|Základní Diagram|Základní třída tento diagram.|(žádné)|
 |Název|Název tohoto diagramu.|Aktuální název|
-|Obor názvů|Obor názvů, který je přidružený tohoto diagramu.|Aktuální obor názvů|
-|Třída je reprezentovaná|Třída kořenové domény, která představuje tohoto diagramu.|Pokud je k dispozici aktuální kořenová třída|
+|Obor názvů|Obor názvů, který je přidružený tento diagram.|Aktuální obor názvů|
+|Reprezentovaná třída|Kořenová třída domény, který představuje tento diagram.|Pokud je k dispozici aktuální kořenová třída|
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto elementem.|\<žádné >|
-|Barva výplně zpřístupňuje jako vlastnost|Pokud `True`, může uživatel nastavit barvu výplně diagram generovaný návrháře. Chcete-li tuto možnost nastavíte, klikněte pravým tlačítkem na tvar diagram a klikněte na **přidat Explosed**.|False|
-|Zpřístupní barvy jako vlastnost|Pokud `True`, může uživatel nastavit v Návrháři generované barvy diagramu. Chcete-li tuto možnost nastavíte, klikněte pravým tlačítkem na tvar diagram a klikněte na **přidat Explosed**.|False|
-|Popis|Popis, který se používá k dokumentu generovaný návrháře.|\<žádné >|
-|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro toto schéma.|\<žádné >|
-|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tohoto diagramu.|\<žádné >|
+|Barva výplně zveřejní jako vlastnost|Pokud `True`, může uživatel nastavit barvu výplně diagramu vygenerovaného návrháře. Nastavit, klikněte pravým tlačítkem myši na obrazec diagram a klikněte na tlačítko **přidat Explosed**.|False|
+|Zpřístupní barvu textu jako vlastnost|Pokud `True`, může uživatel nastavit barvu textu diagramu ve vygenerovaném návrháři. Nastavit, klikněte pravým tlačítkem myši na obrazec diagram a klikněte na tlačítko **přidat Explosed**.|False|
+|Popis|Popis, který se používá k dokumentu vygenerovaného návrháře.|\<žádné >|
+|Zobrazovaný název|Název, který se zobrazí ve vygenerovaném návrháři u tohoto diagramu.|\<žádné >|
+|Klíčové slovo nápovědy|Klíčové slovo, je použít k indexování nápovědy klávesy F1 pro tento diagram.|\<žádné >|
 
 ## <a name="see-also"></a>Viz také
 
-- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

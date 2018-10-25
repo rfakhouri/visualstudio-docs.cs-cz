@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846834"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
 ###  <a name="BKMK_Run_tests"></a> Spuštění testů  
  Spustit všechny testy v řešení, všechny testy ve skupině nebo sadu testů, které jste vybrali. Proveďte jednu z těchto akcí:  
   
--   Chcete-li spustit všechny testy v řešení, zvolte **spustit všechny**.  
+- Chcete-li spustit všechny testy v řešení, zvolte **spustit všechny**.  
   
--   Chcete-li spustit všechny testy ve výchozí skupině, zvolte **spuštění...**  a pak vyberte skupinu v nabídce.  
+- Chcete-li spustit všechny testy ve výchozí skupině, zvolte **spuštění...**  a pak vyberte skupinu v nabídce.  
   
--   Vyberte jednotlivé testy, které chcete spustit, otevřete kontextovou nabídku pro vybraný test a pak zvolte **spustit vybrané testy**.  
+- Vyberte jednotlivé testy, které chcete spustit, otevřete kontextovou nabídku pro vybraný test a pak zvolte **spustit vybrané testy**.  
   
--   Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
+- Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
   
- Panel úspěšný/selhání v horní části okna Průzkumníka testů je animovaný během spuštění testů. V závěru testovacího běhu panel úspěšný/selhání se změní na zelenou Pokud všechny testy předat, nebo zčervená, pokud některé testy selhaly.  
+  Panel úspěšný/selhání v horní části okna Průzkumníka testů je animovaný během spuštění testů. V závěru testovacího běhu panel úspěšný/selhání se změní na zelenou Pokud všechny testy předat, nebo zčervená, pokud některé testy selhaly.  
   
- ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
+  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Spustit testy po každém sestavení  
   
@@ -102,19 +102,19 @@ Chcete-li spustit testy jednotky ze sady Visual Studio nebo projektů testován�
   
  Podokno podrobností testu zobrazí následující informace:  
   
--   Název zdrojového souboru a číslo řádku zkušební metody.  
+- Název zdrojového souboru a číslo řádku zkušební metody.  
   
--   Stav testu.  
+- Stav testu.  
   
--   Uplynulý čas trvalo spuštění zkušební metody.  
+- Uplynulý čas trvalo spuštění zkušební metody.  
   
- Pokud se test nezdaří, zobrazí se také v podokně podrobností:  
+  Pokud se test nezdaří, zobrazí se také v podokně podrobností:  
   
--   Zprávy vrácené jednotkou testovacího rozhraní pro test.  
+- Zprávy vrácené jednotkou testovacího rozhraní pro test.  
   
--   Trasování zásobníku v době testu se nezdařilo.  
+- Trasování zásobníku v době testu se nezdařilo.  
   
- ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
+  ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Zobrazit zdrojový kód testovací metody  
  Chcete-li zobrazit zdrojový kód pro testovací metodu v editoru sady Visual Studio, vyberte test a zvolte **otevřít Test** v kontextové nabídce (klávesnice: F12).  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  Filtrovat podle různých kritérií:  
   
-1.  Otevřete rozevírací seznam napravo od vyhledávacího pole.  
+1. Otevřete rozevírací seznam napravo od vyhledávacího pole.  
   
-2.  Zvolte Nová kritéria.  
+2. Zvolte Nová kritéria.  
   
-3.  Mezi uvozovkami zadejte hodnotu filtru.  
+3. Mezi uvozovkami zadejte hodnotu filtru.  
   
- ![Filtruje testy v Průzkumníku testů](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Filtruje testy v Průzkumníku testů](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  Hledání jsou malá a velká písmena a odpovídají libovolné části hodnoty kritérií zadaného řetězce.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Ladění testů jednotky  
  Průzkumník testů můžete použít ke spuštění relace ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:  
   
-1.  V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.  
+1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.  
   
-    > [!NOTE]
-    >  Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.  
+   > [!NOTE]
+   >  Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.  
   
-2.  V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.  
+2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.  
   
- Další informace o ladicím programu, najdete v části [ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).  
+   Další informace o ladicím programu, najdete v části [ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
+   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostika problémů s výkonem test – metoda  
  Chcete-li diagnostikovat, proč testovací metoda trvá příliš dlouho, v Průzkumníku testů vyberte metodu a zvolte profil v místní nabídce. Zobrazit [prohlížeč výkonu](../profiling/performance-explorer.md).  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Pokud chcete spustit pokrytí kódu pro testovací metody v řešení:  
   
-1.  Zvolte **testy** v nabídce sady Visual Studio a klikněte na tlačítko **analyzovat pokrytí kódu**.  
+1. Zvolte **testy** v nabídce sady Visual Studio a klikněte na tlačítko **analyzovat pokrytí kódu**.  
   
-2.  Z podnabídky zvolte jeden z následujících příkazů:  
+2. Z podnabídky zvolte jeden z následujících příkazů:  
   
-    -   **Vybrané testy** spouští testovací metody, které jste vybrali v aplikaci Test Explorer.  
+   -   **Vybrané testy** spouští testovací metody, které jste vybrali v aplikaci Test Explorer.  
   
-    -   **Všechny testy** spustí všechny testovací metody v řešení.  
+   -   **Všechny testy** spustí všechny testovací metody v řešení.  
   
- Okno výsledky pokrytí kódu zobrazuje procento bloků kódu produktu, které byly vykonány podle řádku, funkce, třídy, oboru názvů a modulu.  
+   Okno výsledky pokrytí kódu zobrazuje procento bloků kódu produktu, které byly vykonány podle řádku, funkce, třídy, oboru názvů a modulu.  
   
- Další informace najdete v tématu [pomocí pokrytí kódu k určení jak mnohem kódu je právě testováno](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Další informace najdete v tématu [pomocí pokrytí kódu k určení jak mnohem kódu je právě testováno](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
+   ![Zpět na začátek](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Externí prostředky  
   

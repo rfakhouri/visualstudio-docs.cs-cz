@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2390d71fa445366c62f5225d800f2cd4a2524e95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897196"
 ---
 # <a name="t4-template-directive"></a>T4 – direktiva Template
 
@@ -93,7 +93,6 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 #>
 Content of myFile is:
 <#= myFile #>
-
 ```
 
  Pokud používáte `inherits` a `hostspecific` , definujte hostitele = "trueFromBase" v odvozené třídě a host = "true" v základní třídě. To zabraňuje dvojité definici vlastnosti `Host` vlastnost v generovaném kódu.
@@ -121,7 +120,6 @@ Squares of numbers:
 <#
   Next number
 #>
-
 ```
 
 ## <a name="inherits-attribute"></a>Atribut inherits
@@ -150,7 +148,6 @@ This is the common footer.
   protected virtual void SpecificFragment1() { }
   protected virtual void SpecificFragment2() { }
 #>
-
 ```
 
  Textová šablona běhu (předzpracovaná) DerivedTemplate1.tt:
@@ -175,7 +172,6 @@ protected override void SpecificFragment2()
 <#+
 }
 #>
-
 ```
 
  Kód aplikace pro vyvolání DerivedTemplate1:

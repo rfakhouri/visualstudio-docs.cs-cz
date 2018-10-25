@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894375"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Tento návod ukazuje, jak přidat vlastnosti sledování do modelu domény.
   
  V tomto podrobném návodu vytvoření jazyka specifického pro doménu (DSL), který má Namespace sledování vlastnost, která má výchozí hodnotu na základě Namespace výchozí vlastnosti modelu. Další informace o sledování vlastnosti najdete v tématu [definování sledování vlastnosti](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   Podpora nástroje DSL sledování popisovače vlastnosti. Návrhář DSL však nelze použít pro přidání vlastnosti sledování do jazyka. Proto je nutné přidat vlastní kód musel definovat a implementovat vlastnosti sledování.  
+- Podpora nástroje DSL sledování popisovače vlastnosti. Návrhář DSL však nelze použít pro přidání vlastnosti sledování do jazyka. Proto je nutné přidat vlastní kód musel definovat a implementovat vlastnosti sledování.  
   
- Vlastnosti sledování do má dva stavy: sledování a aktualizované uživatelem. Sledování vlastnosti mají tyto funkce:  
+  Vlastnosti sledování do má dva stavy: sledování a aktualizované uživatelem. Sledování vlastnosti mají tyto funkce:  
   
--   Při sledování stavu, vypočítá hodnotu vlastnosti sledování a hodnota je aktualizována tak další vlastnosti v Změna modelu.  
+- Při sledování stavu, vypočítá hodnotu vlastnosti sledování a hodnota je aktualizována tak další vlastnosti v Změna modelu.  
   
--   Když v aktualizovaném podle stavu uživatele, hodnota vlastnosti sledování uchovává hodnotu, která uživatel naposledy nastavit vlastnost.  
+- Když v aktualizovaném podle stavu uživatele, hodnota vlastnosti sledování uchovává hodnotu, která uživatel naposledy nastavit vlastnost.  
   
--   V **vlastnosti** okně **resetování** příkaz pro vlastnosti sledování je povolená jenom při vlastnost se v aktualizovaném podle stavu uživatele. **Resetování** příkaz nastaví vlastnosti sledování do sledování stavu.  
+- V **vlastnosti** okně **resetování** příkaz pro vlastnosti sledování je povolená jenom při vlastnost se v aktualizovaném podle stavu uživatele. **Resetování** příkaz nastaví vlastnosti sledování do sledování stavu.  
   
--   V **vlastnosti** okno, když je vlastnost sledování ve sledování stavu, jeho hodnota se zobrazí v pravidelných písma.  
+- V **vlastnosti** okno, když je vlastnost sledování ve sledování stavu, jeho hodnota se zobrazí v pravidelných písma.  
   
--   V **vlastnosti** okno, když je vlastnost sledování v aktualizovaném ve stavu uživatele, jeho hodnota se zobrazí tučným písmem.  
+- V **vlastnosti** okno, když je vlastnost sledování v aktualizovaném ve stavu uživatele, jeho hodnota se zobrazí tučným písmem.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Před zahájením tohoto návodu, je třeba nejprve nainstalovat tyto komponenty:  

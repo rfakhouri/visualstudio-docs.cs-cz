@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925732"
 ---
 # <a name="msbuild-targets"></a>Cíle nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Cíle seskupují úkoly v určitém pořadí a povolit procesu sestavení, abych
 ## <a name="target-build-order"></a>Pořadí sestavení cílů  
  Pokud vstup pro jeden cíl závisí na výstupu jiný cíl, musejí být seřazeny cíle. Existuje několik způsobů, jak určit pořadí, ve které cíle spuštění.  
   
--   Počáteční cíle  
+- Počáteční cíle  
   
--   Výchozí cíle  
+- Výchozí cíle  
   
--   První cíl  
+- První cíl  
   
--   Závislosti cílů  
+- Závislosti cílů  
   
--   `BeforeTargets` a `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` a `AfterTargets` (MSBuild 4.0)  
   
- Cíl se nikdy nespustí dvakrát během jednoho sestavení, i v případě, že na něm závisí následující cíl v sestavení. Jakmile se spustí cíl, jeho příspěvku k sestavení je dokončena.  
+  Cíl se nikdy nespustí dvakrát během jednoho sestavení, i v případě, že na něm závisí následující cíl v sestavení. Jakmile se spustí cíl, jeho příspěvku k sestavení je dokončena.  
   
- Pořadí sestavení, podrobnosti a další informace o cíli, najdete v části [pořadí sestavení cílů](../msbuild/target-build-order.md).  
+  Pořadí sestavení, podrobnosti a další informace o cíli, najdete v části [pořadí sestavení cílů](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Dávkování cíle  
  Cílový prvek může mít `Outputs` atribut, který určuje metadat v podobě % (Metadata). Pokud ano, MSBuild spustí cíl jednou pro každou hodnotu jedinečná metadata seskupení nebo "dávkování" s touto hodnotou metadat položky. Například  

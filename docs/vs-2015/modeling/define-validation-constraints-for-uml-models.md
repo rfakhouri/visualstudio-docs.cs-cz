@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920661"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definování omezení ověřování pro modely UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Můžete definovat omezení ověření, které testují, zda model splňuje podm
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Chcete-li vytvořit rozšíření ověření ve vlastním souboru VSIX  
   
-1.  V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření ověřování**.  
+1. V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření ověřování**.  
   
-2.  Otevřít **.cs** souboru v novém projektu a upravte třídu pro implementaci omezení ověření.  
+2. Otevřít **.cs** souboru v novém projektu a upravte třídu pro implementaci omezení ověření.  
   
-     Další informace najdete v tématu [vyhodnocování omezení ověření](#Implementing).  
+    Další informace najdete v tématu [vyhodnocování omezení ověření](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Ujistěte se, že vaše **.cs** soubory obsahují následující `using` – příkaz:  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Ujistěte se, že vaše **.cs** soubory obsahují následující `using` – příkaz:  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Definováním nových metod můžete přidat další omezení. K identifikaci metody jako metodu ověřování, musí být označena s atributy stejným způsobem jako původní ověřovací metoda.  
+3. Definováním nových metod můžete přidat další omezení. K identifikaci metody jako metodu ověřování, musí být označena s atributy stejným způsobem jako původní ověřovací metoda.  
   
-4.  Otestujte omezení stisknutím klávesy F5. Další informace najdete v tématu [provádění ověření omezení](#Executing).  
+4. Otestujte omezení stisknutím klávesy F5. Další informace najdete v tématu [provádění ověření omezení](#Executing).  
   
-5.  Nainstalujte příkaz nabídky v jiném počítači zkopírováním souboru **bin\\\*\\\*VSIX** , který je sestaven projektem. Další informace najdete v tématu [instalace a odinstalace rozšíření](#Installing).  
+5. Nainstalujte příkaz nabídky v jiném počítači zkopírováním souboru **bin\\\*\\\*VSIX** , který je sestaven projektem. Další informace najdete v tématu [instalace a odinstalace rozšíření](#Installing).  
   
- Když přidáte další **.cs** soubory, bude obvykle vyžadovat následující `using` příkazy:  
+   Když přidáte další **.cs** soubory, bude obvykle vyžadovat následující `using` příkazy:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` Zobrazí se v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seznam chyb  
+- `"error string"` Zobrazí se v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seznam chyb  
   
--   `errorCode` řetězec, který by měl být jedinečným identifikátorem chyby  
+- `errorCode` řetězec, který by měl být jedinečným identifikátorem chyby  
   
--   `elementsWithError` identifikuje prvky v modelu. Když uživatel poklepe na sestavu chyby, bude vybrán obrazec představující tento prvek.  
+- `elementsWithError` identifikuje prvky v modelu. Když uživatel poklepe na sestavu chyby, bude vybrán obrazec představující tento prvek.  
   
- `LogError(),` `LogWarning()` a `LogMessage()` umísťují zprávy v různých částech seznamu chyb.  
+  `LogError(),` `LogWarning()` a `LogMessage()` umísťují zprávy v různých částech seznamu chyb.  
   
 ## <a name="how-validation-methods-are-applied"></a>Jak jsou použity metody ověřování  
  Ověření se aplikuje na každý prvek v modelu, včetně vztahů a částí větších prvků, jako jsou atributy třídy a parametry operace.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Odinstalace rozšíření  
   
-1.  Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.  
+1. Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.  
   
-2.  Rozbalte **nainstalovaná rozšíření**.  
+2. Rozbalte **nainstalovaná rozšíření**.  
   
-3.  Vyberte požadované rozšíření a klikněte na tlačítko **odinstalovat**.  
+3. Vyberte požadované rozšíření a klikněte na tlačítko **odinstalovat**.  
   
- Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z následujícího umístění kde *% LocalAppData %* je obvykle *DriveName*: \Users\\*uživatelskéjméno*\AppData\Local:  
+   Jen zřídka se chybné rozšíření se nepodaří načíst a vytvoří sestavu v okně chyb, ale nezobrazí ve Správci rozšíření. V takovém případě můžete odebrat rozšíření odstraněním souboru z následujícího umístění kde *% LocalAppData %* je obvykle *DriveName*: \Users\\*uživatelskéjméno*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [verze]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [verze]**  
   
 ##  <a name="Example"></a> Příklad  
  Tento příklad vyhledá smyčky ve vztahu závislosti mezi prvky.  

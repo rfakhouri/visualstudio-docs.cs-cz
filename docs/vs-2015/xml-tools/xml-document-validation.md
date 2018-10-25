@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914265"
 ---
 # <a name="xml-document-validation"></a>Ověření dokumentu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ XML Editor ověří syntaxi XML 1.0 a také provádí ověření dat při psaní
   
  Při ověřování se používají schémata se nacházejí to provede spárováním odpovídajících `targetNamespace` kompilované schématu s xmlns deklarací elementu. Zkompilovaných schémat jsou načteny z jednoho z následujících umístění, uvedeny v pořadí podle priority:  
   
--   Od zadaný v názvu souboru **schémata** pole v okně Vlastnosti dokumentu.  
+- Od zadaný v názvu souboru **schémata** pole v okně Vlastnosti dokumentu.  
   
--   Vložené schéma nebo DTD.  
+- Vložené schéma nebo DTD.  
   
--   Externí specifikaci DTD nebo `xsd:schemaLocation` a `xsd:noNamespaceSchemaLocation` atribut  
+- Externí specifikaci DTD nebo `xsd:schemaLocation` a `xsd:noNamespaceSchemaLocation` atribut  
   
--   "X-schema" XDR schématu obor názvů služby identifikátoru URI.  
+- "X-schema" XDR schématu obor názvů služby identifikátoru URI.  
   
- Schémata můžete také najít v následujících umístěních další schéma obsahuje prázdný cílový obor názvů:  
+  Schémata můžete také najít v následujících umístěních další schéma obsahuje prázdný cílový obor názvů:  
   
--   Jiné okno editoru obsahující schéma.  
+- Jiné okno editoru obsahující schéma.  
   
--   Schéma v aktuálním řešení.  
+- Schéma v aktuálním řešení.  
   
--   Schéma z adresáře mezipaměti schématu.  
+- Schéma z adresáře mezipaměti schématu.  
   
 ## <a name="xslt-files"></a>Soubory XSLT  
  Pokud upravujete soubor XSLT, xslt.xsd soubor umístěný v mezipaměti schématu se používá pro ověření. Chyby ověřování se zobrazí jako modré podtržení vlnovkou. Chyby kompilátoru XSLT se zobrazují jako červené podtržení vlnovkou.  

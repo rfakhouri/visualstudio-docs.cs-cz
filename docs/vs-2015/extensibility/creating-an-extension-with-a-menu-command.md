@@ -18,12 +18,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111b20eb427f1e1e2b4d00d1d2ced33c4bd677f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc470e08511c7bda44bfda2012636b626ba41e83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925926"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Vytváření rozšíření pomocí příkazu nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,21 +122,21 @@ Tento návod ukazuje, jak vytvořit rozšíření pomocí příkazu nabídky, kt
 ## <a name="next-steps"></a>Další kroky  
  Tento návod vám ukázal pouze malou část můžete dělat pomocí rozšíření sady Visual Studio. Tady je krátký seznam (poměrně snadno) je dobré, které vám pomůžou s rozšířeními sady Visual Studio:  
   
-1.  Můžete provést mnoho dalších věcí s jednoduchý příkaz:  
+1. Můžete provést mnoho dalších věcí s jednoduchý příkaz:  
   
-    1.  Přidat vlastní ikonu: [přidávání ikon k příkazům nabídky](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Přidat vlastní ikonu: [přidávání ikon k příkazům nabídky](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  Změna textu příkazu nabídky: [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Změna textu příkazu nabídky: [Změna textu příkazu nabídky](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  Přidání místní nabídky k příkazu: [vazby klávesové zkratky a položkami nabídky](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Přidání místní nabídky k příkazu: [vazby klávesové zkratky a položkami nabídky](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  Přidat různé druhy příkazy, nabídky a panely nástrojů: [rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)  
+2. Přidat různé druhy příkazy, nabídky a panely nástrojů: [rozšiřování nabídek a příkazů](../extensibility/extending-menus-and-commands.md)  
   
-3.  Přidat oken nástrojů a rozšíření integrovaných okna nástrojů sady Visual Studio: [rozšíření a přizpůsobení nástrojů Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Přidat oken nástrojů a rozšíření integrovaných okna nástrojů sady Visual Studio: [rozšíření a přizpůsobení nástrojů Windows](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  Přidání technologie IntelliSense, návrhy kódu a jiné funkce pro existující kód editory: [rozšíření pro Editor a služeb jazyka](../extensibility/extending-the-editor-and-language-services.md)  
+4. Přidání technologie IntelliSense, návrhy kódu a jiné funkce pro existující kód editory: [rozšíření pro Editor a služeb jazyka](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  Přidání stránky možnosti a vlastnosti a nastavení uživatele do rozšíření: [rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md) a [rozšíření uživatelská nastavení a možnosti](../extensibility/extending-user-settings-and-options.md)  
+5. Přidání stránky možnosti a vlastnosti a nastavení uživatele do rozšíření: [rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md) a [rozšíření uživatelská nastavení a možnosti](../extensibility/extending-user-settings-and-options.md)  
   
- Jiné druhy rozšíření vyžaduje trochu více práce, jako je vytvoření nového typu projektu ([rozšíření projektů](../extensibility/extending-projects.md)), vytvoření nového typu editoru ([vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)), nebo implementace rozšíření v izolovaném prostředí: [izolované prostředí sady Visual Studio](../extensibility/visual-studio-isolated-shell.md)
+   Jiné druhy rozšíření vyžaduje trochu více práce, jako je vytvoření nového typu projektu ([rozšíření projektů](../extensibility/extending-projects.md)), vytvoření nového typu editoru ([vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)), nebo implementace rozšíření v izolovaném prostředí: [izolované prostředí sady Visual Studio](../extensibility/visual-studio-isolated-shell.md)
 

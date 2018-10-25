@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915578"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Zachovat vlastnosti položky projektu
 Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako je například autor zdrojového souboru. To lze provést uložení vlastnost v souboru projektu.
@@ -117,22 +117,22 @@ Můžete chtít zachovat vlastnosti, které přidáte do položky projektu, jako
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>Chcete-li ověřit, že vlastnost je trvalá.
 
-1.  Spustit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a poté otevřete nebo vytvořte řešení.
+1. Spustit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a poté otevřete nebo vytvořte řešení.
 
-2.  Vyberte projekt položku VsPkg.cs v **Průzkumníka řešení**.
+2. Vyberte projekt položku VsPkg.cs v **Průzkumníka řešení**.
 
-3.  Použijte zarážku nebo jinak určit, že je načten vašeho balíčku VSPackage a že SetItemAttribute běží.
+3. Použijte zarážku nebo jinak určit, že je načten vašeho balíčku VSPackage a že SetItemAttribute běží.
 
-    > [!NOTE]
-    > Je možné vykonat autoload VSPackage v kontextu uživatelského rozhraní <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Další informace najdete v tématu [načtení rozšíření VSPackages](../extensibility/loading-vspackages.md).
+   > [!NOTE]
+   > Je možné vykonat autoload VSPackage v kontextu uživatelského rozhraní <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Další informace najdete v tématu [načtení rozšíření VSPackages](../extensibility/loading-vspackages.md).
 
-4.  Zavřít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a pak otevřete soubor projektu v poznámkovém bloku. Měli byste vidět \<Autor > Označit hodnota vlastní, následujícím způsobem:
+4. Zavřít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a pak otevřete soubor projektu v poznámkovém bloku. Měli byste vidět \<Autor > Označit hodnota vlastní, následujícím způsobem:
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>Viz také:
 

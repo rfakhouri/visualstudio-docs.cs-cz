@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926186"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Výrazy v ladicím programu sady Visual Studio
 Ladicího programu sady Visual Studio obsahuje hodnotitele výrazu, které pracují při zadání výrazu v **QuickWatch** dialogovém okně **Watch** okna, nebo **okamžité** okna. Vyhodnocení výrazu jsou také v práci **zarážky** okno a mnoha dalších místech v ladicím programu.
@@ -91,13 +91,13 @@ int main()
   
  Vnitřní funkce ladicího programu:  
   
--   Je zaručeno bezpečné: provádění vnitřní funkce ladicího programu nebude poškodit proces, který je právě laděna.  
+- Je zaručeno bezpečné: provádění vnitřní funkce ladicího programu nebude poškodit proces, který je právě laděna.  
   
--   Jsou povoleny v všechny výrazy, dokonce i ve scénářích, kde nejsou povolené vedlejší efekty a vyhodnocení funkce.  
+- Jsou povoleny v všechny výrazy, dokonce i ve scénářích, kde nejsou povolené vedlejší efekty a vyhodnocení funkce.  
   
--   Práce ve scénářích, kde nejsou volání normální funkce je to možné, jako je ladění s minimálním výpisem.  
+- Práce ve scénářích, kde nejsou volání normální funkce je to možné, jako je ladění s minimálním výpisem.  
   
- Vnitřní funkce ladicího programu můžete také nastavit vyhodnocování výrazů pohodlnější. Například `strncmp(str, "asd")` je mnohem jednodušší psaní v podmínku zarážky než `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  Vnitřní funkce ladicího programu můžete také nastavit vyhodnocování výrazů pohodlnější. Například `strncmp(str, "asd")` je mnohem jednodušší psaní v podmínku zarážky než `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Oblast|Vnitřní funkce|  
 |----------|-------------------------|  

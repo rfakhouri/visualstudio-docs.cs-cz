@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923365"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Cílová architektura a cílová platforma nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +32,25 @@ Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verz
   
  V současné době jsou k dispozici pro použití následující verze rozhraní .NET Framework:  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (zahrnutý v sadě Visual Studio 2005)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 (zahrnutý v sadě Visual Studio 2005)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (součástí [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.0 (součástí [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (součástí [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 3.5 (součástí [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (zahrnutý v sadě Visual Studio 2010)  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4 (zahrnutý v sadě Visual Studio 2010)  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (součástí [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5 (součástí [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (součástí [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.1 (součástí [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)])  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (součástí [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
+- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 4.6 (součástí [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)])  
   
- Verze rozhraní .NET Framework v seznamu sestavení, že každý zpřístupní odkazovat navzájem liší. Například nelze sestavit aplikace Windows Presentation Foundation (WPF), pokud váš projekt cílí na rozhraní .NET Framework verze 3.0 nebo vyšší.  
+  Verze rozhraní .NET Framework v seznamu sestavení, že každý zpřístupní odkazovat navzájem liší. Například nelze sestavit aplikace Windows Presentation Foundation (WPF), pokud váš projekt cílí na rozhraní .NET Framework verze 3.0 nebo vyšší.  
   
- Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový rámec pro projekt. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, a `v4.6`.  
+  Cílová architektura, která je zadána v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový rámec pro projekt. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, a `v4.6`.  
   
 ```  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -68,11 +68,11 @@ Projekt se dají spouštět na *Cílová architektura*, což je konkrétní verz
 ## <a name="target-platform"></a>Cílová platforma  
  A *platformy* je kombinaci hardwaru a softwaru, který definuje konkrétní běhového prostředí. Například  
   
--   `x86` Určuje 32bitová verze operačního systému Windows, který je spuštěn na procesoru Intel 80 x 86 nebo jeho ekvivalent.  
+- `x86` Určuje 32bitová verze operačního systému Windows, který je spuštěn na procesoru Intel 80 x 86 nebo jeho ekvivalent.  
   
--   `Xbox` Určuje platformu Microsoft Xbox 360.  
+- `Xbox` Určuje platformu Microsoft Xbox 360.  
   
- A *cílovou platformu* je konkrétní platformu, kterou váš projekt se vytvořil pro spuštění na. Cílová platforma je zvolena v `Platform` vlastnost v souboru projektu sestavení. Pomocí stránky vlastností projektu můžete změnit cílovou platformu nebo **nástroje Configuration Manager** v integrovaném vývojovém prostředí.  
+  A *cílovou platformu* je konkrétní platformu, kterou váš projekt se vytvořil pro spuštění na. Cílová platforma je zvolena v `Platform` vlastnost v souboru projektu sestavení. Pomocí stránky vlastností projektu můžete změnit cílovou platformu nebo **nástroje Configuration Manager** v integrovaném vývojovém prostředí.  
   
 ```  
 <PropertyGroup>  

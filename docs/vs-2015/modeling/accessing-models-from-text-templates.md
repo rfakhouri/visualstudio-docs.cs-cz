@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919855"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdroj
   
  Pro přístup k modelu z textové šablony:  
   
--   Nastavte vlastnost Zdědit – direktiva šablony do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To poskytuje přístup k Store.  
+- Nastavte vlastnost Zdědit – direktiva šablony do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To poskytuje přístup k Store.  
   
--   Zadejte procesory direktiv pro DSL, který chcete získat přístup. Tento kód načte sestavení vašeho DSL tak, že můžete použít své doménové třídy, vlastnosti a vztahy v kódu textové šablony. Také načte soubor modelu, který zadáte.  
+- Zadejte procesory direktiv pro DSL, který chcete získat přístup. Tento kód načte sestavení vašeho DSL tak, že můžete použít své doménové třídy, vlastnosti a vztahy v kódu textové šablony. Také načte soubor modelu, který zadáte.  
   
- A `.tt` souboru podobně jako v následujícím příkladu se vytvoří v ladění projektu při vytváření nového [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení ze šablony minimální jazykový DSL.  
+  A `.tt` souboru podobně jako v následujícím příkladu se vytvoří v ladění projektu při vytváření nového [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení ze šablony minimální jazykový DSL.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Všimněte si, že:  
   
-1.  `filename` a `validation` parametry jsou odděleny ";" a musí být žádné jiné oddělovače nebo mezery.  
+1. `filename` a `validation` parametry jsou odděleny ";" a musí být žádné jiné oddělovače nebo mezery.  
   
-2.  Seznam kategorií ověřování určuje, jaké metody ověřování se spustí. Více kategorií by měla být oddělena pomocí "&#124;" a musí být žádné jiné oddělovače nebo mezery.  
+2. Seznam kategorií ověřování určuje, jaké metody ověřování se spustí. Více kategorií by měla být oddělena pomocí "&#124;" a musí být žádné jiné oddělovače nebo mezery.  
   
- Pokud je nalezena chyba, se ohlásí v okně chyby a výsledek soubor obsahovat chybovou zprávu.  
+   Pokud je nalezena chyba, se ohlásí v okně chyby a výsledek soubor obsahovat chybovou zprávu.  
   
 ##  <a name="Multiple"></a> Přístup k více modelů z textové šablony  
   

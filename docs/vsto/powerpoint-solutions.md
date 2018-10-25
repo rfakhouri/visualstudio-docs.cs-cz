@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906556"
 ---
 # <a name="powerpoint-solutions"></a>Řešení pro aplikaci PowerPoint
   Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro Microsoft Office PowerPoint. Doplňky VSTO slouží k automatizaci aplikace PowerPoint, rozšířit funkce aplikace nebo přizpůsobení uživatelského rozhraní (UI) aplikace PowerPoint.  
@@ -42,15 +42,15 @@ ms.locfileid: "35675702"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Pomocí aplikace PowerPoint objektového modelu automatizace aplikace PowerPoint  
  Objektový model aplikace PowerPoint poskytuje mnoho typů, které můžete použít k automatizaci aplikace PowerPoint. Tyto typy umožňují také napsat kód k provedení běžných úloh:  
   
--   Programově vytvářet a formátovat prezentace.  
+- Programově vytvářet a formátovat prezentace.  
   
--   Přidat nebo odebrat snímky z prezentace.  
+- Přidat nebo odebrat snímky z prezentace.  
   
--   Přidejte nebo změňte tvary na snímku.  
+- Přidejte nebo změňte tvary na snímku.  
   
- Pro přístup k modelu objektů aplikace PowerPoint z doplňku VSTO, použijte `Application` pole `ThisAddIn` třídu ve vašem projektu. `Application` Pole vrátí <xref:Microsoft.Office.Interop.PowerPoint.Application> objekt, který představuje aktuální instanci aplikace PowerPoint. Další informace najdete v tématu [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
+  Pro přístup k modelu objektů aplikace PowerPoint z doplňku VSTO, použijte `Application` pole `ThisAddIn` třídu ve vašem projektu. `Application` Pole vrátí <xref:Microsoft.Office.Interop.PowerPoint.Application> objekt, který představuje aktuální instanci aplikace PowerPoint. Další informace najdete v tématu [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
   
- Při volání do objektového modelu aplikace PowerPoint, použijte typy, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Primární spolupracující sestavení funguje jako most mezi spravovaného kódu v doplňku VSTO a com – objektový model v PowerPointu. Všechny typy v primární spolupracující sestavení PowerPoint jsou definovány v <xref:Microsoft.Office.Interop.PowerPoint> oboru názvů. Další informace o primárních sestavení vzájemné spolupráce naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
+  Při volání do objektového modelu aplikace PowerPoint, použijte typy, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Primární spolupracující sestavení funguje jako most mezi spravovaného kódu v doplňku VSTO a com – objektový model v PowerPointu. Všechny typy v primární spolupracující sestavení PowerPoint jsou definovány v <xref:Microsoft.Office.Interop.PowerPoint> oboru názvů. Další informace o primárních sestavení vzájemné spolupráce naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
   
 ##  <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektu aplikace PowerPoint  
  Úplné informace o objektovém modelu aplikace PowerPoint mohou odkazovat na primární sestavení vzájemné spolupráce (PIA) odkaz na aplikaci PowerPoint a referenční dokumentace objektového modelu VBA.  

@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846197"
 ---
 # <a name="secure-office-solutions"></a>Zabezpečení řešení pro systém Office
   Model zabezpečení pro Office řešení zahrnuje několik technologií: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], v Centru zabezpečení v Microsoft Office a zónu lokalit s omezeným přístupem aplikace Internet Explorer. Následující části popisují, jak fungují různé funkce zabezpečení:  
   
--   [Zajistit jeho důvěryhodnost do řešení pro systém Office](#GrantingTrustToSolutions)  
+- [Zajistit jeho důvěryhodnost do řešení pro systém Office](#GrantingTrustToSolutions)  
   
--   [Zajistit jeho důvěryhodnost do dokumentů](#GrantingTrustToDocuments)  
+- [Zajistit jeho důvěryhodnost do dokumentů](#GrantingTrustToDocuments)  
   
--   [Zajistit jeho důvěryhodnost při použití Instalační služby systému Windows](#GrantingTrustWindowsInstaller)  
+- [Zajistit jeho důvěryhodnost při použití Instalační služby systému Windows](#GrantingTrustWindowsInstaller)  
   
--   [Specifické aspekty zabezpečení pro řešení pro systém Office](#Security)  
+- [Specifické aspekty zabezpečení pro řešení pro systém Office](#Security)  
   
--   [Zabezpečení během vývoje.](#SecurityDuringDeployment)  
+- [Zabezpečení během vývoje.](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools for Office runtime](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools for Office runtime](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Zajistit jeho důvěryhodnost do řešení pro systém Office  
  Muselo důvěřovat řešení pro systém Office znamená, že úprava zásady zabezpečení jednotlivých koncových uživatelů důvěřovat řešení pro Office podle následujících informací:  
   
--   Certifikát použitý k podepsání manifestu nasazení.  
+- Certifikát použitý k podepsání manifestu nasazení.  
   
--   Adresa URL manifestu nasazení.  
+- Adresa URL manifestu nasazení.  
   
- Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
+  Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Zajistit jeho důvěryhodnost do dokumentů  
  Přizpůsobení úrovni dokumentu vyžaduje, aby v adresáři, který je určený jako důvěryhodné umístění dokumentu. Další informace najdete v tématu [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074062"
 ### <a name="document-level-solutions"></a>Řešení na úrovni dokumentu  
  Plně kvalifikovanou cestu k dokumentu musí přidat do seznamu důvěryhodných umístění v aplikaci Microsoft Office, pokud vyvíjíte následující typy projektů:  
   
--   Řešení, která jsou ve sdílené síti, jako je například na úrovni dokumentu  *\\\servername\sharename*.  
+- Řešení, která jsou ve sdílené síti, jako je například na úrovni dokumentu  *\\\servername\sharename*.  
   
--   Dokument úrovni řešení pro Word, použít *doc* nebo *DOCM* soubory.  
+- Dokument úrovni řešení pro Word, použít *doc* nebo *DOCM* soubory.  
   
- Zahrnout podadresáře přidejte umístění dokumentu do seznamu důvěryhodných umístění nebo konkrétně zahrnout ladění a vytvoření složky. Další informace najdete v článku Microsoft Office Online nápověda [vytvoření, odebrání nebo změna důvěryhodného umístění pro soubory](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Zahrnout podadresáře přidejte umístění dokumentu do seznamu důvěryhodných umístění nebo konkrétně zahrnout ladění a vytvoření složky. Další informace najdete v článku Microsoft Office Online nápověda [vytvoření, odebrání nebo změna důvěryhodného umístění pro soubory](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Dočasné certifikáty  
  Visual Studio vytvoří dočasný certifikát, pokud podpisový certifikát ještě neexistuje. Doporučujeme použít tento dočasný certifikát pouze během vývoje a zakoupit certifikát oficiální pro nasazení.  

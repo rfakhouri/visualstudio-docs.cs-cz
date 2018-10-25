@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928669"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení Analyzéru zátěžového testu
 
@@ -51,7 +51,7 @@ Většina číselné hodnoty, které se zobrazují v tabulce pro čítače výko
  Následující tabulka obsahuje seznam tabulek, které jsou k dispozici k analýze zátěžových testů.
 
 |Název tabulky|Popis|
-|----------------|-----------------|
+|-|-|
 |Chyby|Zobrazí seznam chyb, ke kterým došlo během zátěžového testu. Další informace najdete v tématu [tabulka The chyby](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) v tomto tématu a [výsledky zátěžového testu analyzovat](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Stránky|Zobrazí seznam stránek přístup při spuštění zátěžového testu. Některá data v této tabulce je k dispozici, až po dokončení zátěžového testu. Další informace najdete v tématu [postupy: zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Požadavky|Zobrazí podrobnosti pro jednotlivé požadavky vydané během zátěžového testu. To zahrnuje všechny požadavky HTTP a závislé požadavky, jako jsou obrázky. Další informace najdete v tématu [tabulky The Requests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) v tomto tématu.|
@@ -73,7 +73,7 @@ Většina číselné hodnoty, které se zobrazují v tabulce pro čítače výko
  V následující tabulce jsou uvedeny ve sloupcích v **požadavky** tabulky:
 
 |Sloupec|Popis|Ve výchozím nastavení viditelné|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Požadavek**|Adresa URL požadavku. Například *home.html*, nebo *orange arrow.gif*.|Ano|
 |**Scénář**|Název scénáře.|Ano|
 |**Test**|Název testu.|Ano|
@@ -95,7 +95,7 @@ Většina číselné hodnoty, které se zobrazují v tabulce pro čítače výko
  V následující tabulce jsou uvedeny ve sloupcích v **testy** tabulky.
 
 |Sloupec|Popis|Ve výchozím nastavení viditelné|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|Název testu.|Ano|
 |**Scénář**|Název scénáře.|Ano|
 |**Celkem**|Celkový počet, kolikrát byl spuštěn test ve scénáři. Jedná se o počet, kolikrát test předaný a se nezdařilo.|Ano|
@@ -119,7 +119,7 @@ Většina číselné hodnoty, které se zobrazují v tabulce pro čítače výko
 > Chcete-li zobrazit všechny sloupce, je nutné povolit vlastnost úložiště podrobností časování, která je spojena s aktivní parametr spuštění. Další informace najdete v tématu [postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Sloupec|Popis|Zobrazuje bez podrobnosti časování|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transakce**|Název transakce.|Ano|
 |**Scénář**|Název scénáře.|Ano|
 |**Test**|Název testu.|Ano|
@@ -145,7 +145,7 @@ Většina číselné hodnoty, které se zobrazují v tabulce pro čítače výko
  Chyby tabulka obsahuje následující sloupce:
 
 |Sloupec|Popis|Ve výchozím nastavení viditelné|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Typ|Typ chyby. Například HttpError.|Ano|
 |SubType|Podtyp chybu. Například LoadTestException.|Ano|
 |Počet|Číslo chyby tohoto typu, ke které došlo během zátěžového testu. Položky v tomto sloupci se zobrazí jako hypertextové odkazy. Můžete použít libovolný hypertextový odkaz, chcete-li zobrazit seznam jednotlivých chyb.|Ano|
@@ -163,7 +163,7 @@ Chyby tabulky skupiny chyb podle typu a podtyp chyby. Chcete-li zobrazit tabulku
 **Chyby zátěžového testu** tabulka obsahuje následující sloupce:
 
 |Sloupec|Popis|
-|------------|-----------------|
+|-|-|
 |**čas**|Doba během zátěžového testu na kterém došlo k chybě.|
 |**Agent**|Název počítače agenta, na kterém došlo k chybě. To je důležité, když spustíte zátěžové testování pomocí testovacích kontrolérů a testovacích agentů. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Název webového testu v kterém došlo k chybě.|

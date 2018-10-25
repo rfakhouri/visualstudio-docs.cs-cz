@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886497"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Návod: Použití klávesové zkratky s rozšířením editoru
 Klávesové zkratky můžete reagovat v rozšíření editoru. Následující návod ukazuje, jak přidat grafického doplňku zobrazení k zobrazení textu s použitím klávesovou zkratku. Tento názorný postup je založen na šabloně editor grafického doplňku zobrazení, a umožňuje vám přidat dalších úprav s použitím na znak +.  
@@ -28,21 +28,21 @@ Klávesové zkratky můžete reagovat v rozšíření editoru. Následující n�
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Vytvoření projektu Managed Extensibility Framework (MEF)  
   
-1.  Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `KeyBindingTest`.  
+1. Vytvořte projekt VSIX C#. (V **nový projekt** dialogového okna, vyberte **Visual C# / rozšíření**, pak **projekt VSIX**.) Pojmenujte řešení `KeyBindingTest`.  
   
-2.  Přidání dalších úprav editoru textu šablony položky do projektu a pojmenujte ho `KeyBindingTest`. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Přidání dalších úprav editoru textu šablony položky do projektu a pojmenujte ho `KeyBindingTest`. Další informace najdete v tématu [vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Přidejte následující odkazy a nastavte **CopyLocal** k `false`:  
+3. Přidejte následující odkazy a nastavte **CopyLocal** k `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Sestavení Microsoft.VisualStudio.OLE.Interop  
+    Sestavení Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- V souboru třídy KeyBindingTest změňte název třídy na PurpleCornerBox. Abyste provedli odpovídající změny pomocí žárovky, který se zobrazí na levém okraji. Uvnitř konstruktoru, změňte název vrstvy grafického doplňku z **KeyBindingTest** k **PurpleCornerBox**:  
+   V souboru třídy KeyBindingTest změňte název třídy na PurpleCornerBox. Abyste provedli odpovídající změny pomocí žárovky, který se zobrazí na levém okraji. Uvnitř konstruktoru, změňte název vrstvy grafického doplňku z **KeyBindingTest** k **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -204,73 +204,73 @@ Nejprve aktualizujte odkazy projektu Nuget tak, aby odkazovaly editoru nejnověj
 
 Obslužná rutina příkazu je implementace <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, která zpracovává příkaz po vytvoření instance dalších úprav.  
   
-1.  Přidejte soubor třídy a pojmenujte ho `KeyBindingCommandHandler`.  
+1. Přidejte soubor třídy a pojmenujte ho `KeyBindingCommandHandler`.  
   
-2.  Přidejte následující příkazy using.  
+2. Přidejte následující příkazy using.  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Commanding;
-    using Microsoft.VisualStudio.Text.Editor;
-    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
-    using Microsoft.VisualStudio.Utilities;
-    using System.ComponentModel.Composition;   
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Commanding;
+   using Microsoft.VisualStudio.Text.Editor;
+   using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+   using Microsoft.VisualStudio.Utilities;
+   using System.ComponentModel.Composition;   
+   ```  
   
-3.  Třída s názvem KeyBindingCommandHandler by měla dědit z `ICommandHandler<TypeCharCommandArgs>`a exportujte ho jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. Třída s názvem KeyBindingCommandHandler by měla dědit z `ICommandHandler<TypeCharCommandArgs>`a exportujte ho jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
-    ```csharp  
-    [Export(typeof(ICommandHandler))]
-    [ContentType("text")]
-    [Name("KeyBindingTest")]
-    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
-    ```  
+   ```csharp  
+   [Export(typeof(ICommandHandler))]
+   [ContentType("text")]
+   [Name("KeyBindingTest")]
+   internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+   ```  
   
-4.  Přidáte zobrazovaný název obslužné rutiny příkazu:  
+4. Přidáte zobrazovaný název obslužné rutiny příkazu:  
   
-    ```csharp  
-    public string DisplayName => "KeyBindingTest";
-    ```  
+   ```csharp  
+   public string DisplayName => "KeyBindingTest";
+   ```  
     
-5.  Implementace `GetCommandState()` metodu následujícím způsobem. Protože tato obslužná rutina zpracovává příkaz TYPECHAR core editor, můžete delegovat, povolení příkazu základní editor.
+5. Implementace `GetCommandState()` metodu následujícím způsobem. Protože tato obslužná rutina zpracovává příkaz TYPECHAR core editor, můžete delegovat, povolení příkazu základní editor.
   
-    ```csharp  
-    public CommandState GetCommandState(TypeCharCommandArgs args)
-    {
-        return CommandState.Unspecified;
-    } 
-    ```  
+   ```csharp  
+   public CommandState GetCommandState(TypeCharCommandArgs args)
+   {
+       return CommandState.Unspecified;
+   } 
+   ```  
   
-6.  Implementace `ExecuteCommand()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus (**+**) znaku. 
+6. Implementace `ExecuteCommand()` metoda tak Fialová box se přidá do zobrazení, pokud znaménko plus (**+**) znaku. 
   
-    ```csharp  
-    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
-    {
-        if (args.TypedChar == '+')
-        {
-            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
-                "KeyBindingTextAdorned", out bool adorned) && adorned;
-            if (!alreadyAdorned)
-            {
-                new PurpleCornerBox((IWpfTextView)args.TextView);
-                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
-            }
-        }
+   ```csharp  
+   public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+   {
+       if (args.TypedChar == '+')
+       {
+           bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+               "KeyBindingTextAdorned", out bool adorned) && adorned;
+           if (!alreadyAdorned)
+           {
+               new PurpleCornerBox((IWpfTextView)args.TextView);
+               args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+           }
+       }
 
-        return false;
-    }
-    ```  
- 7. Zkopírujte definici dalších úprav vrstvy z *KeyBindingTestTextViewCreationListener.cs* do souboru *KeyBindingCommandHandler.cs* a odstraňte  *KeyBindingTestTextViewCreationListener.cs* souboru:
+       return false;
+   }
+   ```  
+   7. Zkopírujte definici dalších úprav vrstvy z *KeyBindingTestTextViewCreationListener.cs* do souboru *KeyBindingCommandHandler.cs* a odstraňte  *KeyBindingTestTextViewCreationListener.cs* souboru:
  
-    ```csharp  
-    /// <summary>
-    /// Defines the adornment layer for the adornment. This layer is ordered
-    /// after the selection layer in the Z-order.
-    /// </summary>
-    [Export(typeof(AdornmentLayerDefinition))]
-    [Name("PurpleCornerBox")]
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
-    private AdornmentLayerDefinition editorAdornmentLayer;    
-    ```  
+   ```csharp  
+   /// <summary>
+   /// Defines the adornment layer for the adornment. This layer is ordered
+   /// after the selection layer in the Z-order.
+   /// </summary>
+   [Export(typeof(AdornmentLayerDefinition))]
+   [Name("PurpleCornerBox")]
+   [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+   private AdornmentLayerDefinition editorAdornmentLayer;    
+   ```  
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>Ujistěte se, dalších úprav se zobrazí na každém řádku  
 

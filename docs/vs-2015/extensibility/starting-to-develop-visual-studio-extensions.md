@@ -16,12 +16,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a38410c1b64a455f12d91cd8460f5f04d369275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847302"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Začínáme s vývojem rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Pokud jste nikdy napsali před rozšíření sady Visual Studio, pravděpodobně
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Jaké druhy věcí můžete dělat s rozšířeními Visual Studia?  
  Pouze nebe při rozhodování o užívat různých rozšíření sady Visual Studio. Samozřejmě většina rozšíření mají něco, co můžete dělat s psaním kódu, ale, která nemusí být případ. Tady je několik příkladů typů rozšíření, která můžete vytvořit:  
   
--   Podpora jazyků, které nejsou zahrnuty v sadě Visual Studio s barevné zvýrazňování syntaxe, IntelliSense a podporu kompilátoru a ladění  
+- Podpora jazyků, které nejsou zahrnuty v sadě Visual Studio s barevné zvýrazňování syntaxe, IntelliSense a podporu kompilátoru a ladění  
   
--   Nástroje pro produktivitu, které rozšiřují základní integrované vývojové prostředí vyzkoušejte další šablony, dialogová okna refaktoringu, nový kód nebo okna nástrojů  
+- Nástroje pro produktivitu, které rozšiřují základní integrované vývojové prostředí vyzkoušejte další šablony, dialogová okna refaktoringu, nový kód nebo okna nástrojů  
   
--   Ať už specifický pro doménu pro scénáře, jako je podpora návrhu nebo cloudových dat  
+- Ať už specifický pro doménu pro scénáře, jako je podpora návrhu nebo cloudových dat  
   
- Příklady rozšíření, podívejte se [Galerie sady Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Můžete taky využít podívat [Visual Studio otevřete zdrojový rozšíření](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
+  Příklady rozšíření, podívejte se [Galerie sady Visual Studio](https://visualstudiogallery.msdn.microsoft.com/). Můžete taky využít podívat [Visual Studio otevřete zdrojový rozšíření](https://github.com/Microsoft/extendvs/blob/master/CommunityExtensions.md).  
   
 ## <a name="which-visual-studio-features-can-i-extend"></a>Které funkce Visual Studia můžete rozšířit?  
  Teoreticky vzato můžete rozšířit téměř libovolnou část aplikace Visual Studio: nabídky, panely nástrojů, příkazy, windows, řešení, projekty, editory a tak dále.  

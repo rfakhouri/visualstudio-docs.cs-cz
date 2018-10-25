@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889701"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Dialogové okno Nastavit vazbu ovládacího prvku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Použití **přizpůsobit vazbu ovládacího prvku** dialogové okno k určení,
  **Datový typ**  
  Zobrazí seznam typů, které spojují s ovládacími prvky:  
   
--   Tabulky, entity a objekty jsou reprezentovány ve formě **[seznam]** typy.  
+- Tabulky, entity a objekty jsou reprezentovány ve formě **[seznam]** typy.  
   
--   Sloupce nebo veřejné vlastnosti entit a objekty jsou reprezentovány jako skutečný datový typ sloupce nebo vlastnosti podkladových dat v úložišti.  
+- Sloupce nebo veřejné vlastnosti entit a objekty jsou reprezentovány jako skutečný datový typ sloupce nebo vlastnosti podkladových dat v úložišti.  
   
--   Objekty s uživatelem definované tvary jsou reprezentovány ve formě **[Další]**. Například pokud vaše aplikace má vlastní ovládací prvek, který zobrazuje data z více než jednu vlastnost objektu, vyberte **[Další]** datový typ pro ovládací prvek.  
+- Objekty s uživatelem definované tvary jsou reprezentovány ve formě **[Další]**. Například pokud vaše aplikace má vlastní ovládací prvek, který zobrazuje data z více než jednu vlastnost objektu, vyberte **[Další]** datový typ pro ovládací prvek.  
   
- **Přidružené ovládací prvky**  
- Zobrazí seznam ovládacích prvků, které můžete přiřadit konkrétní datového typu. Pokud chcete přidružit k datovému typu vybranému v konkrétní ovládací prvek **datový typ** seznam, zaškrtněte odpovídající políčko. Zrušte zaškrtnutí políčka k odebrání přidružení. Checked ovládací prvky se zobrazí v místní nabídce předložený **zdroje dat** okno pro položku typu přidružená data.  
+  **Přidružené ovládací prvky**  
+  Zobrazí seznam ovládacích prvků, které můžete přiřadit konkrétní datového typu. Pokud chcete přidružit k datovému typu vybranému v konkrétní ovládací prvek **datový typ** seznam, zaškrtněte odpovídající políčko. Zrušte zaškrtnutí políčka k odebrání přidružení. Checked ovládací prvky se zobrazí v místní nabídce předložený **zdroje dat** okno pro položku typu přidružená data.  
   
- Můžete přidat ovládací prvky do seznamu tak, že přidáte ovládací prvky, které mají jeden z několika atributů datové vazby, které mají **nástrojů**. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Můžete přidat ovládací prvky do seznamu tak, že přidáte ovládací prvky, které mají jeden z několika atributů datové vazby, které mají **nástrojů**. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Nastavit výchozí**  
- Přiřadí vybraný ovládací prvek typu jako výchozí pro položky vybrané datového typu. Výchozí ovládací prvek se zobrazí jako první výběru v místní nabídce předložený **zdroje dat** okno pro položku. Jako výchozí pro datový typ je možné přiřadit pouze jeden ovládací prvek typu.  
+  **Nastavit výchozí**  
+  Přiřadí vybraný ovládací prvek typu jako výchozí pro položky vybrané datového typu. Výchozí ovládací prvek se zobrazí jako první výběru v místní nabídce předložený **zdroje dat** okno pro položku. Jako výchozí pro datový typ je možné přiřadit pouze jeden ovládací prvek typu.  
   
- **Vymazat výchozí**  
- Odebere označení jako výchozí pro vybraný datový typ ovládacího prvku. Pokud není žádná výchozí nastavení pro vybraný datový typ **[Žádný]** se zobrazí jako první výběru v místní nabídce předložený **zdroje dat** okno pro položky z přidruženého typu.  
+  **Vymazat výchozí**  
+  Odebere označení jako výchozí pro vybraný datový typ ovládacího prvku. Pokud není žádná výchozí nastavení pro vybraný datový typ **[Žádný]** se zobrazí jako první výběru v místní nabídce předložený **zdroje dat** okno pro položky z přidruženého typu.  
   
 ## <a name="see-also"></a>Viz také  
  [Okno zdroje dat](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

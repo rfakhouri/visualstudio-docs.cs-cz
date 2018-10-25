@@ -18,27 +18,27 @@ ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41ce3fd47850df5bab1db771177637102e9ec57a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdb06d4909bab31169dc0a46156b7e1300b917bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891333"
 ---
 # <a name="program-nodes"></a>Uzly programů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Z hlediska architektury ladicího programu **program uzel**:  
   
--   Představuje jednoduchý popis programu.  
+- Představuje jednoduchý popis programu.  
   
--   Můžete identifikovat samostatně a proces je spuštěn v a lze připojit k být odpojen od a popisují ladicího stroje (DE), který byl vytvořen, pokud existuje.  
+- Můžete identifikovat samostatně a proces je spuštěn v a lze připojit k být odpojen od a popisují ladicího stroje (DE), který byl vytvořen, pokud existuje.  
   
--   Je reprezentován [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní, obvykle vytváří DE nebo portu. Uzly programů jsou přidána na port voláním [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Když program uzel se přidá k portu, přidá se do procesu obsahující program, který představuje tento uzel programu.  
+- Je reprezentován [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní, obvykle vytváří DE nebo portu. Uzly programů jsou přidána na port voláním [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Když program uzel se přidá k portu, přidá se do procesu obsahující program, který představuje tento uzel programu.  
   
- Nějakou dobu, po spuštění relace ladění, v závislosti na implementaci balíček ladicí program uzly slouží k vytvoření odpovídající programy. Když je proces pro jeho programy, jsou uvedené programy, jeden pro každý uzel programu.  
+  Nějakou dobu, po spuštění relace ladění, v závislosti na implementaci balíček ladicí program uzly slouží k vytvoření odpovídající programy. Když je proces pro jeho programy, jsou uvedené programy, jeden pro každý uzel programu.  
   
- Než programu přiřazen, rozhraní IDE potřebuje jednoduchý popis programu. Tyto informace můžete získat z uzlu programu. Jakmile program je připojen k, integrovaném vývojovém prostředí musí zobrazit podrobnější informace, jako je například seznam všechna vlákna spuštěná v programu. Tyto informace se získávají z této aplikace.  
+  Než programu přiřazen, rozhraní IDE potřebuje jednoduchý popis programu. Tyto informace můžete získat z uzlu programu. Jakmile program je připojen k, integrovaném vývojovém prostředí musí zobrazit podrobnější informace, jako je například seznam všechna vlákna spuštěná v programu. Tyto informace se získávají z této aplikace.  
   
 ## <a name="see-also"></a>Viz také  
  [Programy](../../extensibility/debugger/programs.md)   

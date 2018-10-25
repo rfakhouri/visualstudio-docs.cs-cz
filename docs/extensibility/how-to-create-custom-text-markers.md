@@ -13,56 +13,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc86f6f5e6689903acb4c57131cee5562117f732
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893101"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Postupy: vytvoření vlastního textu značky
 Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:  
   
--   Zaregistrujte nový text značky, tak, aby k němu mají přístup jiných nástrojů.  
+- Zaregistrujte nový text značky, tak, aby k němu mají přístup jiných nástrojů.  
   
--   Zadejte výchozí implementace a konfigurace text značky.  
+- Zadejte výchozí implementace a konfigurace text značky.  
   
--   Vytvoření služby, které lze použít s jinými procesy, aby používat text značky.  
+- Vytvoření služby, které lze použít s jinými procesy, aby používat text značky.  
   
- Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [postupy: použití značek text](../extensibility/how-to-use-text-markers.md).  
+  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [postupy: použití značek text](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Chcete-li zaregistrovat vlastní značky  
   
-1.  Vytvořte položku registru následujícím způsobem:  
+1. Vytvořte položku registru následujícím způsobem:  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > značky \Text Editor\External\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > značky \Text Editor\External\\\<MarkerGUID >**  
   
-     *\<MarkerGUID >* je `GUID` slouží k identifikaci značky přidávaný  
+    *\<MarkerGUID >* je `GUID` slouží k identifikaci značky přidávaný  
   
-     `<Version>` je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], například 8.0  
+    `<Version>` je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], například 8.0  
   
-     `<PackageGUID>` identifikátor GUID sady VSPackage implementuje objekt automatizace.  
+    `<PackageGUID>` identifikátor GUID sady VSPackage implementuje objekt automatizace.  
   
-    > [!NOTE]
-    >  Kořenová cesta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze >** monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Kořenová cesta **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze >** monitorconfigurationoverride lze přepsat náhradní root při inicializaci prostředí sady Visual Studio, pro další informace naleznete v tématu [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Vytvořit čtyři hodnoty v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > \Text Editor\External značky\\\<MarkerGUID >**  
+2. Vytvořit čtyři hodnoty v rámci **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<verze > \Text Editor\External značky\\\<MarkerGUID >**  
   
-    -   (Výchozí)  
+   -   (Výchozí)  
   
-    -   Služba  
+   -   Služba  
   
-    -   displayName  
+   -   displayName  
   
-    -   Balíček  
+   -   Balíček  
   
-    -   `Default` je typ REG_SZ volitelné položky. Pokud nastavíte hodnotu položky je řetězec obsahující některé užitečné identifikační informace, například "vlastní Text značky".  
+   -   `Default` je typ REG_SZ volitelné položky. Pokud nastavíte hodnotu položky je řetězec obsahující některé užitečné identifikační informace, například "vlastní Text značky".  
   
-    -   `Service` je typ REG_SZ položky obsahující řetězec GUID služby, která poskytuje vlastní text značky tím, že proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` je typ REG_SZ položky obsahující řetězec GUID služby, která poskytuje vlastní text značky tím, že proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` je typ REG_SZ položky obsahující ID prostředku názvu značky vlastní text. Formát je #YYYY.  
+   -   `DisplayName` je typ REG_SZ položky obsahující ID prostředku názvu značky vlastní text. Formát je #YYYY.  
   
-    -   `Package` je záznam obsahující typ REG_SZ `GUID` sady VSPackage, která poskytuje služby uvedené v části služby. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` je záznam obsahující typ REG_SZ `GUID` sady VSPackage, která poskytuje služby uvedené v části služby. Formát je {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ## <a name="to-create-a-custom-text-marker"></a>Chcete-li vytvořit vlastní text značky  
   

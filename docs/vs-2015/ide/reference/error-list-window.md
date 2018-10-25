@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873688"
 ---
 # <a name="error-list-window"></a>Okno Seznam chyb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ POZNÁMKA:]
   
  Můžete vyvíjet aplikace rychleji pomocí **seznam chyb** okna. Například můžete provádět následující úlohy:  
   
--   Zobrazte chyby, varování a zprávy vytvořené při psaní kódu.  
+- Zobrazte chyby, varování a zprávy vytvořené při psaní kódu.  
   
--   Najděte chyby syntaxe zaznamenané technologií IntelliSense.  
+- Najděte chyby syntaxe zaznamenané technologií IntelliSense.  
   
--   Vyhledejte chyby v nasazení, některé statické analýzy chyby a chyby zjištěné při použití zásad šablony organizace.  
+- Vyhledejte chyby v nasazení, některé statické analýzy chyby a chyby zjištěné při použití zásad šablony organizace.  
   
--   Dvakrát klikněte na libovolný záznam chybové zprávy pro otevření souboru, kde dojde k problému a přesunout do umístění chyby.  
+- Dvakrát klikněte na libovolný záznam chybové zprávy pro otevření souboru, kde dojde k problému a přesunout do umístění chyby.  
   
--   Filtrovat položky, které se zobrazí a které sloupce informací se zobrazí pro každou položku.  
+- Filtrovat položky, které se zobrazí a které sloupce informací se zobrazí pro každou položku.  
   
--   Hledejte konkrétní termíny a nastavte obor hledání pouze na aktuální projekt nebo dokument.  
+- Hledejte konkrétní termíny a nastavte obor hledání pouze na aktuální projekt nebo dokument.  
   
- Chcete-li zobrazit **seznam chyb**, klikněte na tlačítko **zobrazení / Seznam chyb**, nebo **CTRL +\\+ E**.  
+  Chcete-li zobrazit **seznam chyb**, klikněte na tlačítko **zobrazení / Seznam chyb**, nebo **CTRL +\\+ E**.  
   
- Můžete použít **chyby**, **upozornění**, a **zprávy** karet zobrazíte informace o různých úrovních.  
+  Můžete použít **chyby**, **upozornění**, a **zprávy** karet zobrazíte informace o různých úrovních.  
   
- Chcete-li seřadit, klikněte na libovolné záhlaví sloupce. Chcete-li znovu řadit podle dalšího sloupce, podržte stisknutou klávesu SHIFT a klikněte na další záhlaví sloupce. Chcete-li vybrat sloupce, které se zobrazí a které jsou skryté, zvolte **zobrazit sloupce** z místní nabídky. Chcete-li změnit pořadí, ve kterém jsou sloupce zobrazeny, přetáhněte libovolné záhlaví sloupce doleva nebo doprava.  
+  Chcete-li seřadit, klikněte na libovolné záhlaví sloupce. Chcete-li znovu řadit podle dalšího sloupce, podržte stisknutou klávesu SHIFT a klikněte na další záhlaví sloupce. Chcete-li vybrat sloupce, které se zobrazí a které jsou skryté, zvolte **zobrazit sloupce** z místní nabídky. Chcete-li změnit pořadí, ve kterém jsou sloupce zobrazeny, přetáhněte libovolné záhlaví sloupce doleva nebo doprava.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch zde popsaných v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, klikněte na tlačítko **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -63,18 +63,18 @@ POZNÁMKA:]
   
  Můžete omezit rozsah hledání můžete analyzovat a zpracovat skupiny chyb. Například můžete chtít zaměřit na základní chyby, které brání kompilaci projektu. Možnosti vytváření oboru zahrnují:  
   
-1.  **Otevřít dokumenty**: zobrazí chyby, varování a zprávy pro otevřené dokumenty.  
+1. **Otevřít dokumenty**: zobrazí chyby, varování a zprávy pro otevřené dokumenty.  
   
-2.  **Aktuální projekt**: zobrazí chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.  
+2. **Aktuální projekt**: zobrazí chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.  
   
-    > [!NOTE]
-    >  Filtrovaný seznam chyb, upozornění a zpráv se změní, pokud je projekt aktuálně vybraného dokumentu liší od projektu vybraného v **Průzkumníka řešení**.  
+   > [!NOTE]
+   >  Filtrovaný seznam chyb, upozornění a zpráv se změní, pokud je projekt aktuálně vybraného dokumentu liší od projektu vybraného v **Průzkumníka řešení**.  
   
-3.  **Aktuální dokument**: zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.  
+3. **Aktuální dokument**: zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.  
   
- Pokud na výsledek hledání je aktuálně použit filtr, zobrazí se název filtru v **seznam chyb** záhlaví okna. **Chyby**, **upozornění**, a **zprávy** tlačítka pak zobrazí počet filtrovaných položek zobrazených společně s celkový počtem položek; například tlačítka zobrazí x z y chyb. Pokud není použit žádný filtr, záhlaví říká pouze "Seznam chyb".  
+   Pokud na výsledek hledání je aktuálně použit filtr, zobrazí se název filtru v **seznam chyb** záhlaví okna. **Chyby**, **upozornění**, a **zprávy** tlačítka pak zobrazí počet filtrovaných položek zobrazených společně s celkový počtem položek; například tlačítka zobrazí x z y chyb. Pokud není použit žádný filtr, záhlaví říká pouze "Seznam chyb".  
   
- V seznamu na pravé straně panelu nástrojů Určuje, jestli se zobrazí chyby sestavení (chyby plynoucí z operace sestavení) nebo z technologie IntelliSense (byly zjištěny chyby před spuštěním sestavení), nebo z obou.  
+   V seznamu na pravé straně panelu nástrojů Určuje, jestli se zobrazí chyby sestavení (chyby plynoucí z operace sestavení) nebo z technologie IntelliSense (byly zjištěny chyby před spuštěním sestavení), nebo z obou.  
   
 ## <a name="search"></a>Hledat  
  Použití **Hledat v seznamu chyb** textového pole na pravé straně **seznam chyb** nástrojů k vyhledání konkrétní chyby v seznamu chyb. Můžete hledat v jakémkoli viditelném sloupci v seznamu chyb a výsledky hledání jsou vždy řazeny podle sloupce, který má prioritu řazení namísto podle dotazu nebo použitého filtru. Pokud se rozhodnete **Esc** klávesu je zaměření **seznam chyb**, můžete vymazat hledaný výraz a filtrování výsledků hledání. Můžete také kliknout **X** na pravé straně textového pole k zaškrtnutí políčka zrušte.  

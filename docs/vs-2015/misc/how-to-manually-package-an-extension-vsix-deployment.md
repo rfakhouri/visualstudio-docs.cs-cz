@@ -12,23 +12,23 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269286"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925835"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Postupy: ruční balíček rozšíření (VSIX nasazení)
 Můžete vytvořit balíček VSIX zabalit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření pro nasazení. Existují tři způsoby, jak vytvořit balíček:  
   
--   Vytvořte projekt VSIX balíček pomocí jedné z, které jsou součástí šablony pro rozšiřující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Toto je nejjednodušší způsob pro většinu scénářů.  
+- Vytvořte projekt VSIX balíček pomocí jedné z, které jsou součástí šablony pro rozšiřující [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK. Toto je nejjednodušší způsob pro většinu scénářů.  
   
--   Zabalení výstup projektu rozšíření v prázdné [projekt VSIX](../extensibility/vsix-project-template.md). Doporučujeme tuto možnost pro šablony, nepodporované sestavení a vlastních typů.  
+- Zabalení výstup projektu rozšíření v prázdné [projekt VSIX](../extensibility/vsix-project-template.md). Doporučujeme tuto možnost pro šablony, nepodporované sestavení a vlastních typů.  
   
--   Ruční vytvoření balíčku VSIX. Tuto možnost doporučujeme pouze v případě, že nejsou k dispozici dvě možnosti.  
+- Ruční vytvoření balíčku VSIX. Tuto možnost doporučujeme pouze v případě, že nejsou k dispozici dvě možnosti.  
   
- Tento dokument popisuje třetí možnost.  
+  Tento dokument popisuje třetí možnost.  
   
 ## <a name="creating-a-vsix-package"></a>Vytvoření balíčku VSIX  
  Chcete-li ručně balíček rozšíření, přidat soubor s příponou extension.manifest a souboru [Content_Types] .xml do projektu rozšíření, vytvořte z nich v komprimovaném souboru spolu s výstupu sestavení a přejmenujte komprimovaný soubor tak, aby měl příponu názvu souboru .vsix. Rozšíření zabalit, musí být typu, který je podporován [VSIX schématu](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  

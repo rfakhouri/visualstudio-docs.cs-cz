@@ -9,12 +9,12 @@ description: Informace pro poskytovatele Cloud Solution Provider, jak zakoupit a
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899458"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Nákup a správa cloudových předplatných sady Visual Studio pro vaše zákazníky
 
@@ -75,6 +75,7 @@ Pokud odběratel nebyl aktivovat svoje předplatné sady Visual Studio, pravděp
 Chcete-li zobrazit ceny sady Visual Studio pro partnery CSP, přihlaste se [partnerského centra](https://partnercenter.microsoft.com).  Zvolte **cenami a nabídkami** v levém navigačním podokně  Vyberte aktuální měsíc ceny souboru v rámci **založená na využití služby** v pravém horním rohu. Když se soubory ke stažení Excelovou tabulku, přejděte do **ceník Azure** list a filtrování **kategorie měřiče** sloupec, který se **sady Visual Studio**.
 
 Tady je postup pro interpretaci, co vidíte na tuto tabulku:
+
 | Kategorie měřiče    |   Název                 |  Jednotky                                |           Toto je                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Předplatné                         | Měsíční předplatné sady Visual Studio Enterprise   |

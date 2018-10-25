@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1029ff61c7833ae03ab513ef486ecbd1edb1f295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914211"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Postupy: řazení dat na listech prostřednictvím kódu programu
   Můžete řadit data obsažená v oblastech listů a seznamů v době běhu. Následující kód seřadí vícesloupcové oblast s názvem `Fruits` podle dat v prvním sloupci a poté podle data ve druhém sloupci.  
@@ -34,12 +34,12 @@ ms.locfileid: "35675833"
   
 ### <a name="to-sort-data-in-a-namedrange-control"></a>Řazení dat v ovládacím prvku NamedRange  
   
-1.  Volání <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> metodu <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku. V následujícím příkladu vyžaduje <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek s názvem `Fruits` v listu. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.  
+1. Volání <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> metodu <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku. V následujícím příkladu vyžaduje <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek s názvem `Fruits` v listu. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
-     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
+    [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
   
- Umístěte následující kód v *Sheet1.vb* nebo *Sheet1.cs* řazení dat v <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku. Kód předpokládá, že máte <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek s názvem `fruitList` na listu s názvem `Sheet1`.  
+   Umístěte následující kód v *Sheet1.vb* nebo *Sheet1.cs* řazení dat v <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku. Kód předpokládá, že máte <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek s názvem `fruitList` na listu s názvem `Sheet1`.  
   
 ### <a name="to-sort-data-in-a-listobject-control"></a>Řazení dat v ovládacím prvku ListObject  
   

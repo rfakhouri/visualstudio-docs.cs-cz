@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851605"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: vytvoření adaptéru diagnostických dat
 
@@ -33,7 +33,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
  Následuje částečný seznam klíčových událostí, které můžete použít při vytváření adaptéru diagnostických dat. Úplný seznam diagnostických dat adaptéru událostí naleznete v abstraktní <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> třídy.
 
 |Událost|Popis|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Začátek vašeho spuštění testu|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Konec vašeho spuštění testu|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Začátek každého testu v testovacím běhu|
@@ -52,78 +52,78 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
 
-1.  Vytvořte novou knihovnu tříd.
+1. Vytvořte novou knihovnu tříd.
 
-    1.  Na **souboru** nabídce zvolte **nový**a pak na **nový projekt**.
+   1.  Na **souboru** nabídce zvolte **nový**a pak na **nový projekt**.
 
-    2.  Z **typy projektů**, vyberte jazyk, který chcete použít.
+   2.  Z **typy projektů**, vyberte jazyk, který chcete použít.
 
-    3.  Z **instalované šablony sady Visual Studio**vyberte **knihovny tříd**.
+   3.  Z **instalované šablony sady Visual Studio**vyberte **knihovny tříd**.
 
-    4.  Zadejte název pro adaptér diagnostických dat.
+   4.  Zadejte název pro adaptér diagnostických dat.
 
-    5.  Zvolte **OK**.
+   5.  Zvolte **OK**.
 
-2.  Přidat sestavení **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+2. Přidat sestavení **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a zvolte **přidat odkaz** příkazu.
+   1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a zvolte **přidat odkaz** příkazu.
 
-    2.  Zvolte **.NET** a vyhledejte **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Zvolte **.NET** a vyhledejte **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Zvolte **OK**.
+   3.  Zvolte **OK**.
 
-3.  Přidat sestavení **Microsoft.VisualStudio.QualityTools.Common**.
+3. Přidat sestavení **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz** příkazu.
+   1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **odkazy** a vyberte **přidat odkaz** příkazu.
 
-    2.  Zvolte **/.NET**, vyhledejte **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Zvolte **/.NET**, vyhledejte **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Zvolte **OK**.
+   3.  Zvolte **OK**.
 
-4.  Přidejte následující `using` příkazy do souboru třídy:
+4. Přidejte následující `using` příkazy do souboru třídy:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do třídy pro adaptér diagnostických dat k jeho identifikaci jako adaptéru diagnostických dat, nahrazení **společnosti**, **produktu**, a **verze** s odpovídajícími informacemi pro adaptér diagnostických dat:
+5. Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do třídy pro adaptér diagnostických dat k jeho identifikaci jako adaptéru diagnostických dat, nahrazení **společnosti**, **produktu**, a **verze** s odpovídajícími informacemi pro adaptér diagnostických dat:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atribut třídy, nahraďte parametry s odpovídajícími informacemi pro adaptér diagnostických dat:
+6. Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atribut třídy, nahraďte parametry s odpovídajícími informacemi pro adaptér diagnostických dat:
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Tento popisný název se zobrazí v aktivitě nastavení testu.
+    Tento popisný název se zobrazí v aktivitě nastavení testu.
 
-    > [!NOTE]
-    > Můžete také přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> zadat `Type` z editoru vlastní konfigurace pro tento datový adaptér a volitelně zadat soubor nápovědy pro použití v editoru.
-    >
-    > Můžete také použít <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> k určení, že je vždy povolena.
+   > [!NOTE]
+   > Můžete také přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> zadat `Type` z editoru vlastní konfigurace pro tento datový adaptér a volitelně zadat soubor nápovědy pro použití v editoru.
+   >
+   > Můžete také použít <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> k určení, že je vždy povolena.
 
-7.  Vaše třída adaptéru diagnostických dat musí dědit z <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> třídy následujícím způsobem:
+7. Vaše třída adaptéru diagnostických dat musí dědit z <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> třídy následujícím způsobem:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Přidejte lokální proměnné následujícím způsobem:
+8. Přidejte lokální proměnné následujícím způsobem:
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Přidat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> metoda a **Dispose** metoda. V `Initialize` metody inicializujete jímky dat, všechna konfigurační data z nastavení testu a registrujete obslužné rutiny událostí, které chcete použít následujícím způsobem:
 
@@ -273,7 +273,7 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
 
 17. Spusťte testy pomocí nastavení testu společně s výběrem adaptéru diagnostiky dat vybrali.
 
-   K výsledkům testů je připojen datový soubor, který jste zadali.
+    K výsledkům testů je připojen datový soubor, který jste zadali.
 
 ## <a name="see-also"></a>Viz také:
 

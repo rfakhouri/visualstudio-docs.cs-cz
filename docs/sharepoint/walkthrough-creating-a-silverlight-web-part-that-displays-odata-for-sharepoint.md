@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878179"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
   SharePoint 2010 zveřejňuje data seznamu pomocí protokolu OData. V Sharepointu službu OData je implementováno služba RESTful ListData.svc. Tento návod ukazuje, jak vytvořit webové části služby SharePoint, který je hostitelem aplikace Silverlight. Aplikace programu Silverlight zobrazí informace o seznamu Sharepointu oznámení pomocí ListData.svc. Další informace najdete v tématu [rozhraní REST služby SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) a [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -42,25 +42,25 @@ ms.locfileid: "42626162"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>K vytvoření aplikace Silverlight a webové části Silverlight
   
-1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
   
-2.  Rozbalte **SharePoint** uzlu buď **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **2010** uzlu.  
+2. Rozbalte **SharePoint** uzlu buď **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **2010** uzlu.  
   
-3.  V podokně šablony vyberte **webové části služby SharePoint 2010 Silverlight** šablony.  
+3. V podokně šablony vyberte **webové části služby SharePoint 2010 Silverlight** šablony.  
   
-4.  V **název** zadejte **SLWebPartTest** a klikněte na tlačítko **OK** tlačítko.  
+4. V **název** zadejte **SLWebPartTest** a klikněte na tlačítko **OK** tlačítko.  
   
-     **Průvodce přizpůsobením SharePoint** zobrazí se dialogové okno.  
+    **Průvodce přizpůsobením SharePoint** zobrazí se dialogové okno.  
   
-5.  Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint server, ve kterém chcete ladit definice webu nebo použijte výchozí umístění (http://*systémový název*/) .  
+5. Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint server, ve kterém chcete ladit definice webu nebo použijte výchozí umístění (http://<em>systémový název</em>/) .  
   
-6.  V **co je úroveň důvěryhodnosti pro toto řešení SharePoint?** zvolte **nasadit jako řešení farmy** přepínač.  
+6. V **co je úroveň důvěryhodnosti pro toto řešení SharePoint?** zvolte **nasadit jako řešení farmy** přepínač.  
   
-     Přestože tento příklad používá řešení farmy, projekty webové části technologie Silverlight můžete nasadit jako farmy nebo řešení v izolovaném prostoru. Další informace o řešení v izolovaném prostoru a řešení farmy najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
+    Přestože tento příklad používá řešení farmy, projekty webové části technologie Silverlight můžete nasadit jako farmy nebo řešení v izolovaném prostoru. Další informace o řešení v izolovaném prostoru a řešení farmy najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  V **jak chcete přidružit webovou část Silverlight** část **zadejte informace o konfiguraci Silverlight** zvolte **vytvořením nového projektu technologie Silverlight a přidružit webovou část** přepínač.  
+7. V **jak chcete přidružit webovou část Silverlight** část **zadejte informace o konfiguraci Silverlight** zvolte **vytvořením nového projektu technologie Silverlight a přidružit webovou část** přepínač.  
   
-8.  Změnit **název** k **SLApplication**, nastavte **jazyk** buď **jazyka Visual Basic** nebo **Visual C#**, a pak nastavte **verze Silverlight** k **Silverlight 4.0**.  
+8. Změnit **název** k **SLApplication**, nastavte **jazyk** buď **jazyka Visual Basic** nebo **Visual C#**, a pak nastavte **verze Silverlight** k **Silverlight 4.0**.  
   
 9. Zvolte **Dokončit** tlačítko. Projekty, které se zobrazí v **Průzkumníka řešení**.  
   

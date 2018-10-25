@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c01bf88cc86f0b63c7dc63deb257f077f61541a0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908798"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Postupy: Přidání a odstranění čítačů pro grafy ve výsledcích zátěžového testu
 
@@ -33,7 +33,7 @@ Můžete použít **čítače** panel k přidání čítačů výkonu do grafu.
  Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 
 |Doba trvání zátěžového testu|Doporučená frekvence vzorkování|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hodina|5 sekund|
 |1 - 8 hodin|15 sekund|
 |8 - 24 hodin|30 sekund|

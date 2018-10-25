@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857390"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Spouštění v simulátoru Windows Store apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ Simulátor aplikace Visual Studio pro aplikace Windows Store je aplikace klasick
   
  Pro simulaci sítě-vlastnosti:  
   
-1.  Na panelu nástrojů themeroller simulátor **změnit vlastnosti sítě** tlačítko.  
+1. Na panelu nástrojů themeroller simulátor **změnit vlastnosti sítě** tlačítko.  
   
-2.  Na **nastavit vlastnosti sítě** dialogu **použití simulované sítě-vlastnosti**.  
+2. Na **nastavit vlastnosti sítě** dialogu **použití simulované sítě-vlastnosti**.  
   
-     Zrušte zaškrtnutí políčka odebrat simulace a vraťte se do vlastností síťového rozhraní aktuálně připojené.  
+    Zrušte zaškrtnutí políčka odebrat simulace a vraťte se do vlastností síťového rozhraní aktuálně připojené.  
   
-3.  Zadejte **název profilu** pro simulované síti. Doporučujeme použít jedinečný název, který můžete použít k identifikaci simulace v [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) vlastnost [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objektu.  
+3. Zadejte **název profilu** pro simulované síti. Doporučujeme použít jedinečný název, který můžete použít k identifikaci simulace v [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) vlastnost [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objektu.  
   
-4.  Vyberte [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) hodnotu z profilu **typ náklady na síť** seznamu.  
+4. Vyberte [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) hodnotu z profilu **typ náklady na síť** seznamu.  
   
-5.  Z **příznak stavu limitu dat** seznamu, můžete nastavit [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) vlastnost nebo [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)vlastnost na hodnotu true, nebo můžete zvolit  **V části omezení dat** nastavení obě hodnoty na hodnotu false.  
+5. Z **příznak stavu limitu dat** seznamu, můžete nastavit [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) vlastnost nebo [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)vlastnost na hodnotu true, nebo můžete zvolit  **V části omezení dat** nastavení obě hodnoty na hodnotu false.  
   
-6.  Z **Roaming stavu** seznam, nastavte [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) vlastnost.  
+6. Z **Roaming stavu** seznam, nastavte [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) vlastnost.  
   
-7.  Zvolte **nastavit vlastnosti** simulovat vlastnosti sítě aktivací popředí [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) událostí a na pozadí [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) typu  **NetworkStateChange**.  
+7. Zvolte **nastavit vlastnosti** simulovat vlastnosti sítě aktivací popředí [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) událostí a na pozadí [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) typu  **NetworkStateChange**.  
   
- **Další informace o správě připojení k síti**  
+   **Další informace o správě připojení k síti**  
   
- [Rychlý start: Správa měří omezení náklady na síť](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Rychlý start: Správa měří omezení náklady na síť](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Ukázka informace o síti](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Ukázka informace o síti](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analýza spotřeby energie](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analýza spotřeby energie](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [Jak reagovat na události systému s úlohami na pozadí](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Jak reagovat na události systému s úlohami na pozadí](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích Windows Store](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích Windows Store](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Přejděte simulátoru pomocí klávesnice  
  Simulátor nástrojů můžete přejít stisknutím klávesy **CTRL + ALT + Šipka nahoru** k přepnutí okno simulátoru na panel nástrojů simulátoru. Použití **šipka nahoru** a **šipka dolů** přesouvat mezi tlačítka na panelu nástrojů.  

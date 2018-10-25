@@ -1,5 +1,5 @@
 ---
-title: Přesunout typu do odpovídající soubor refaktoring v sadě Visual Studio
+title: Přesun typu do odpovídajícího souboru refaktoring v sadě Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,56 +12,56 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884144"
 ---
-# <a name="move-a-type-to-a-matching-file-refactoring"></a>Přesunout typu do odpovídající soubor refaktoring
+# <a name="move-a-type-to-a-matching-file-refactoring"></a>Přesunutí typu do odpovídajícího souboru refaktoring
 
-Tato refaktoring platí pro:
+Tento refaktoring platí pro:
 
 - C#
 
 - Visual Basic
 
-**Co:** umožňuje přesunout vybraný typ do samostatného souboru se stejným názvem.
+**Co:** umožňuje vybraného typu přesuňte do samostatného souboru se stejným názvem.
 
-**Kdy:** máte ve stejném souboru, který chcete použít k oddělení více tříd, struktur, rozhraní, atd.
+**Kdy:** mít více tříd, struktur, rozhraní a podobně ve stejném souboru, který chcete oddělit.
 
-**Důvod:** umístění více typů ve stejném souboru může být obtížné vyhledat tyto typy. Přesunutím typy souborů se stejným názvem bude kód čitelnější a snadný přechod.
+**Důvod, proč:** umístěním více typů ve stejném souboru může být obtížné najít tyto typy. Přesunutím typů souborů se stejným názvem, bude kód čitelnější a přehlednější a díky tomu.
 
 ## <a name="how-to"></a>Postupy
 
-1. Zvýrazněte nebo umístěte kurzor text do název typu pro přesun:
+1. Umístěte kurzor mezi název typu, kde je definován. Příklad:
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. Dále proveďte jednu z následujících akcí:
+
+   - Stisknutím klávesy **Ctrl**+**.**
+   - Klikněte pravým tlačítkem na název typu a vyberte **rychlé akce a Refaktoringy**
+
+1. Vyberte **přesunutí typu do *TypeName*.cs** z nabídky kde *TypeName* je název typu, který jste vybrali.
+
+   Typ se přesune do nového souboru v projektu, který má stejný název jako typ.
 
    - C#:
 
-    ![Zvýrazněný - C#](media/movetype-highlight-cs.png)
+      ![Výsledek inline-C#](media/movetype-result-cs.png)
 
    - Visual Basic:
 
-    ![Zvýrazněný - jazyka Visual Basic](media/movetype-highlight-vb.png)
+      ![Výsledek inline - jazyka Visual Basic](media/movetype-result-vb.png)
 
-1. Dále proveďte jednu z následujících akcí:
-
-   - **Klávesnice**
-     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přesunout typ *TypeName*.cs** z místní okno náhledu, kde *TypeName* je název typu, který jste vybrali.
-   - **Myš**
-     - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte **přesunout typ *TypeName*.cs** z místní okno náhledu, kde  *TypeName* je název typu, který jste vybrali.
-
-   Typ je přesunuta do nový soubor s tímto názvem v rámci vašeho řešení.
-
-   - C#:
-
-    ![Vložené result - C#](media/movetype-result-cs.png)
-
-   - Visual Basic:
-
-    ![Vložené result - jazyka Visual Basic](media/movetype-result-vb.png)
-
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Refactoring](../refactoring-in-visual-studio.md)

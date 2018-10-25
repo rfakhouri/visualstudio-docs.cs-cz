@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920128"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Model dědičnosti: fragmenty v základní metody  
  Ve vzoru použít v následujícím příkladu Všimněte si, že následující body:  
   
--   Základní třída `SharedFragments` metod v rámci bloky s funkcí třídy definuje `<#+ ... #>`.  
+- Základní třída `SharedFragments` metod v rámci bloky s funkcí třídy definuje `<#+ ... #>`.  
   
--   Základní třída obsahuje žádné volné. Místo toho všechny textové bloky dojít uvnitř funkce metody třídy.  
+- Základní třída obsahuje žádné volné. Místo toho všechny textové bloky dojít uvnitř funkce metody třídy.  
   
--   Vyvolá metody definované v odvozené třídě `SharedFragments`.  
+- Vyvolá metody definované v odvozené třídě `SharedFragments`.  
   
--   Volání aplikace `TextTransform()` metoda odvozené třídy, ale neprovádí transformaci základní třídy `SharedFragments`.  
+- Volání aplikace `TextTransform()` metoda odvozené třídy, ale neprovádí transformaci základní třídy `SharedFragments`.  
   
--   Textové šablony běhu jsou základní a odvozené třídy: to znamená, **Custom Tool** je nastavena na **TextTemplatingFilePreprocessor**.  
+- Textové šablony běhu jsou základní a odvozené třídy: to znamená, **Custom Tool** je nastavena na **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

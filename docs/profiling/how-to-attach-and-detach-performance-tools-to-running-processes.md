@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: připojení a odpojení nástroje pro sledování výkonu ke spuštěným procesům | Microsoft Docs'
+title: 'Postupy: připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,52 +18,52 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920927"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Postupy: připojení a odpojení nástroje pro sledování výkonu ke spuštěným procesům
-Profileru lze připojit k nebo odebrat ze spuštěných procesů usnadnění vzorkování a shromáždit data výkonu. Tuto metodu můžete použít k profilu procesu, když budete chtít vyhnout shromažďování dat o čas načítání aplikace nebo sledovat výkon proces po jeho dosáhne určitý stav.  
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Postupy: připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům
+Profiler slouží k připojení nebo odpojení od spuštěného procesu pro usnadnění odběru vzorků a shromažďuje data výkonu. Tímto způsobem může Profilovat proces, pokud chcete se vyhnout, shromažďování dat o čas načtení aplikace, nebo k monitorování výkonu procesu po jeho dosažení určitý stav.  
   
 > [!NOTE]
->  Následující postup se vztahuje k připojení a odpojení procesy uvnitř [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] integrované environmnent vývoj (IDE). Informace o tom, jak pomocí nástroje příkazového řádku najdete v tématu [profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md). Informace o tom, jak profilu služby najdete v tématu [profilu služby](../profiling/command-line-profiling-of-services.md).  
+>  Následující postup se vztahuje k připojení a odpojení procesy v rámci [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] integrované environmnent vývojové (prostředí IDE). Informace o tom, jak pomocí nástrojů příkazového řádku najdete v tématu [profilu z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md). Informace o tom, jak služby profilů najdete v tématu [profilu služby](../profiling/command-line-profiling-of-services.md).  
   
- Procesy, které jsou k dispozici pro profil závisí na přístupová oprávnění uživatelů, které nastavil správce počítače. Uživatelský účet, třeba mít oprávnění pro některé z následujících:  
+ Procesy, které jsou k dispozici pro profil záviset na oprávnění uživatelského přístupu, které jsou nastaveny správcem počítače. Uživatelský účet může třeba mít oprávnění pro kterýkoli z následujících:  
   
--   Rozšířené profilace funkce, když správce nastavil ovladače a spuštění služby.  
+- Pokročilé funkce, profilace, pokud správce nastavil ovladač a spouštění služby.  
   
--   Ukázka profilace jenom (uživatelé domény).  
+- Ukázka profilace pouze (uživatelé domény).  
   
--   Odepřít přístup k profilace pro každého.  
+- Odepřete přístup k profilaci pro každého.  
   
- Další informace najdete v tématu [profilování a Windows Vista zabezpečení](../profiling/profiling-and-windows-vista-security.md) a možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Další informace najdete v tématu [profilace a Windows Vista zabezpečení](../profiling/profiling-and-windows-vista-security.md) a možností správy v [VSPerfCmd](../profiling/vsperfcmd.md).  
   
-### <a name="to-attach-to-a-running-process"></a>Pro připojení k spuštěných procesů  
+### <a name="to-attach-to-a-running-process"></a>Připojit ke spuštěnému procesu  
   
-1.  Na **ladění** nabídky, přejděte na příkaz **profileru**, pak **prohlížeč výkonu**a potom klikněte na **Attach**.    
+1.  Na **ladění** nabídky, přejděte k **Profiler**, pak **prohlížeč výkonu**a potom klikněte na tlačítko **připojit**.    
   
-     **Připojit profileru proces** zobrazí se dialogové okno.  
+     **Připojit Profiler k procesu** zobrazí se dialogové okno.  
   
-2.  Klikněte na název procesu, který chcete přiřadit.  
+2.  Klikněte na název, který chcete připojit k procesu.  
   
 3.  Klikněte na tlačítko **připojit**.  
   
-### <a name="to-detach-from-a-running-process"></a>K odpojení od spuštěných procesů  
+### <a name="to-detach-from-a-running-process"></a>Chcete-li odpojit od spuštěného procesu  
   
-1.  n **ladění** nabídky, přejděte na příkaz **profileru**, pak **prohlížeč výkonu**a potom klikněte na **odpojení**. 
+1.  n **ladění** nabídky, přejděte k **Profiler**, pak **prohlížeč výkonu**a potom klikněte na tlačítko **odpojit**. 
   
-     **Připojit profileru proces** zobrazí se dialogové okno.  
+     **Připojit Profiler k procesu** zobrazí se dialogové okno.  
   
-2.  Klikněte na název bitové kopie, ze kterého chcete odpojit.  
+2.  Klikněte na název image, ze kterého se má odpojit.  
   
 3.  Klikněte na tlačítko **odpojit**.  
   
 ## <a name="see-also"></a>Viz také:  
  [Řízení shromažďování dat](../profiling/controlling-data-collection.md)   
- [Přehled výkonnostní relace](../profiling/performance-session-overview.md)   
- [Postupy: spuštění a ukončení shromažďování dat výkonu](../profiling/how-to-start-and-end-performance-data-collection.md)   
- [Profilace a zabezpečení systému Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
+ [Přehled relace výkonu](../profiling/performance-session-overview.md)   
+ [Postupy: spuštění a ukončení shromažďování dat o výkonu](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Profilace a zabezpečení Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

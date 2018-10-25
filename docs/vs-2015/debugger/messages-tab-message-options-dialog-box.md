@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912263"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Karta Zprávy, dialogové okno možností zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Použití **zprávy** kartu, vyberte v seznamu typů zpráv, které [zobrazení 
  **Skupiny zpráv**  
  Vyberte skupiny zprávy pro zobrazení. Dostupné skupiny patří:  
   
--   WM_USER: s kódem větší než nebo rovna hodnotě WM_USER  
+- WM_USER: s kódem větší než nebo rovna hodnotě WM_USER  
   
--   Registrovaný: zaregistrované **RegisterWindowMessage** volání  
+- Registrovaný: zaregistrované **RegisterWindowMessage** volání  
   
--   Neznámé: neznámé zprávy v rozsahu 0 až (WM_USER – 1)  
+- Neznámé: neznámé zprávy v rozsahu 0 až (WM_USER – 1)  
   
- Všimněte si, že tyto **skupiny zpráv** nelze namapovat na konkrétní položky v rámci **zobrazení zpráv**. Když vyberete skupinu, je výběr použitých přímo na datové proudy zpráv.  
+  Všimněte si, že tyto **skupiny zpráv** nelze namapovat na konkrétní položky v rámci **zobrazení zpráv**. Když vyberete skupinu, je výběr použitých přímo na datové proudy zpráv.  
   
- Šedým zaškrtávací políčko v rámci **skupiny zpráv** znamená, že **zobrazení zpráv** se změnila pole se seznamem pro zprávy v dané skupině; jsou vybrány všechny typy zpráv v této skupině.  
+  Šedým zaškrtávací políčko v rámci **skupiny zpráv** znamená, že **zobrazení zpráv** se změnila pole se seznamem pro zprávy v dané skupině; jsou vybrány všechny typy zpráv v této skupině.  
   
- **Uložit nastavení jako výchozí**  
- Uložte aktuální nastavení pro pozdější použití jako možnosti hledání zpráv. Tato nastavení jsou také uloženy při ukončení nástroje Spy ++.
+  **Uložit nastavení jako výchozí**  
+  Uložte aktuální nastavení pro pozdější použití jako možnosti hledání zpráv. Tato nastavení jsou také uloženy při ukončení nástroje Spy ++.
 
 
 

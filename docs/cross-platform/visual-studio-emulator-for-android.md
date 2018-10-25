@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 28d82c13273f18f9787104f080ed39c9c903076c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884833"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 
@@ -51,26 +51,26 @@ Visual Studio Emulator for Android je desktopová aplikace, které emuluje zař�
 ##  <a name="Requirements"></a> Požadavky na systém a zpětné kompatibility  
  Důležité informace o hardwaru, softwaru a požadavky na konfiguraci pro emulátor sady Visual Studio pro Android najdete v následujícím tématu.  
   
--   [Požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [Požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Vyžaduje Visual Studio 2015; Visual Studio Emulator for Android není zpětně kompatibilní s předchozími verzemi sady Visual Studio.  
+  Vyžaduje Visual Studio 2015; Visual Studio Emulator for Android není zpětně kompatibilní s předchozími verzemi sady Visual Studio.  
   
- Nové verze emulátoru se nainstalovat navíc k samotnému starší verze (a v některých případech může nahradit původní bitové kopie se zahodí nastavení, aplikace a soubory, které jsou nainstalované v těchto imagí).  
+  Nové verze emulátoru se nainstalovat navíc k samotnému starší verze (a v některých případech může nahradit původní bitové kopie se zahodí nastavení, aplikace a soubory, které jsou nainstalované v těchto imagí).  
   
 ##  <a name="Networking"></a> Správa sítě v sadě Visual Studio Emulator for Android  
  Síťové připojení emulátor Visual Studia pro Android se chová jako připojení aplikace stolním počítači s těmito charakteristikami:  
   
--   Emulátor se jeví jako samostatný zařízení pomocí jeho vlastní IP adresu v síti.  
+- Emulátor se jeví jako samostatný zařízení pomocí jeho vlastní IP adresu v síti.  
   
--   Nevyžaduje žádné další síťový software, který ještě není nainstalovaná s emulátorem.  
+- Nevyžaduje žádné další síťový software, který ještě není nainstalovaná s emulátorem.  
   
--   Není připojený k doméně Windows.  
+- Není připojený k doméně Windows.  
   
- Informace o tom možnosti připojení k síti na emulátor, si ho přemýšlejte jako podobný připojení Wi-Fi z telefonu s Androidem ke stejné síti. Aplikace běžící na vašem telefonu můžete získat přístup k síťovému prostředku přes Wi-Fi připojení, potom aplikaci spuštěnou v emulátoru dostanete také stejný prostředek sítě.  
+  Informace o tom možnosti připojení k síti na emulátor, si ho přemýšlejte jako podobný připojení Wi-Fi z telefonu s Androidem ke stejné síti. Aplikace běžící na vašem telefonu můžete získat přístup k síťovému prostředku přes Wi-Fi připojení, potom aplikaci spuštěnou v emulátoru dostanete také stejný prostředek sítě.  
   
- Další informace o požadavky na sítě, naleznete v tématu [požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+  Další informace o požadavky na sítě, naleznete v tématu [požadavky na systém pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- Informace o řešení potíží s problémy se sítí najdete v tématu [řešení potíží s Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
+  Informace o řešení potíží s problémy se sítí najdete v tématu [řešení potíží s Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
 ##  <a name="Configuring"></a> Konfigurace Visual Studio Emulator for Android  
  Testování vaší aplikace pro Android z důvodu kompatibility odstupňování nejrůznějších Android hardware může být složité. Android telefonech a tabletech na trhu span širokou škálu verze a velikostí obrazovky a pak v mnoha různých hardwarové konfigurace (paměti RAM, procesory, architektury, atd.). Visual Studio Emulator for Android tím zjednodušuje, pomocí profilů zařízení. Naše sada profilů zařízení představuje neoblíbenější hardware na trhu, včetně zařízení Samsung, Motorola, Sony, LG a dalších.  

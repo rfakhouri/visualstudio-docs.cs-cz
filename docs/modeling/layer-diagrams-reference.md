@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920923"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy závislostí: referenční dokumentace
 
@@ -59,7 +59,7 @@ Toto téma popisuje elementy, které můžete použít na diagram závislostí. 
 Následující tabulka popisuje prvky, které můžete použít na diagram závislostí.
 
 |**Obrazec**|**Element**|**Popis**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**Vrstvy**|Logické skupiny fyzické artefaktů ve vašem systému. Tyto artefakty mohou být obory názvů, projekty, třídy, metody a tak dále.<br /><br /> Chcete-li zobrazit artefakty, které jsou propojeny s vrstvou, otevřete místní nabídku vrstvy a klikněte na tlačítko **zobrazit odkazy** otevřete **Průzkumník vrstev**.<br /><br /> Další informace najdete v tématu [Průzkumník vrstev](#Explorer).<br /><br /> -   **Je zakázané závislosti Namespace** – Určuje, že artefakty přidružené k této vrstvě nemůže záviset na zadaných oborů názvů trasy.<br />-   **Je zakázané obory názvů** – Určuje, že artefakty přidružené k této vrstvě nesměly patřit zadanému oboru názvů.<br />-   **Požadované obory názvů** – Určuje, že artefakty přidružené k této vrstvě musí patřit do jedné ze zadaných oborů názvů trasy.|
 |2|**Závislost**|Označuje, že jedna vrstva může použít funkci v jiné vrstvě, ale ne naopak.<br /><br /> -   **Směr** -Určuje směr závislost.|
 |3|**Obousměrná závislost**|Označuje, že jedna vrstva může použít funkci v jiné vrstvě a naopak.<br /><br /> -   **Směr** -Určuje směr závislost.|
@@ -92,7 +92,7 @@ Na diagram závislostí, otevřete místní nabídku pro jednu nebo více vrstev
 > Pokud nevidíte všechny tyto vlastnosti, rozbalte **Průzkumník vrstev** okna.
 
 |**Sloupec v Průzkumníku vrstev**|**Popis**|
-|----------------------------------|---------------------|
+|-|-|
 |**Kategorie**|Druh artefaktu, jako jsou třídy, oboru názvů, zdrojový soubor a tak dále|
 |**Vrstvy**|Vrstva, která odkazuje na artefakt|
 |**Podporuje ověřování**|Pokud **True**, pak do procesu ověření vrstev můžete ověřit, že projekt odpovídá závislostí do nebo z tohoto elementu.<br /><br /> Pokud **False**, potom na odkaz není součástí procesu ověření vrstev.<br /><br /> Další informace najdete v tématu [diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md).|

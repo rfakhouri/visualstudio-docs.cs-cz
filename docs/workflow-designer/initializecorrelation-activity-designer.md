@@ -1,5 +1,5 @@
 ---
-title: Návrhář postupu provádění - InitializeCorrelation Návrhář aktivity
+title: Návrhář postupu provádění – Návrhář aktivity Initializecorrelation
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,46 +12,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879880"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Návrhář aktivity InitializeCorrelation
 
-**InitializeCorrelation** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivita vytváří korelace mezi zprávy před odesílání nebo přijímání je.
+**InitializeCorrelation** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. <xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivita vytváří korelaci mezi zprávy před odesláním nebo jejich přijetí.
 
-## <a name="the-initializecorrelation-activity"></a>InitializeCorrelation aktivity
+## <a name="the-initializecorrelation-activity"></a>Aktivity InitializeCorrelation
 
-<xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivita se používá k chybě při inicializaci korelací bez odesílání nebo přijímání zprávy. Korelace je obvykle inicializují při odesílání nebo přijímání zprávy. Pokud korelace je nutné vytvořit před odeslání nebo přijetí zprávy, použijte <xref:System.ServiceModel.Activities.InitializeCorrelation> k chybě při inicializaci korelaci.
+<xref:System.ServiceModel.Activities.InitializeCorrelation> Aktivita slouží k inicializaci korelace bez odesílání nebo přijímání zprávy. Korelace je obvykle inicializován při odesílání nebo přijímání zprávy. Pokud korelace musí vytvořit předtím, než je odeslání nebo přijetí zprávy, použijte <xref:System.ServiceModel.Activities.InitializeCorrelation> inicializace korelace.
 
-### <a name="using-the-initializecorrelation-activity-designer"></a>Pomocí návrháře InitializeCorrelation aktivity
+### <a name="using-the-initializecorrelation-activity-designer"></a>Pomocí aktivity Initializecorrelation
 
-Přístup **InitializeCorrelation** Návrhář aktivity v **zasílání zpráv** kategorii **sada nástrojů**.
+Přístup **InitializeCorrelation** návrháře aktivit v **zasílání zpráv** kategorii **nástrojů**.
 
-**InitializeCorrelation** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů. Vyřazení Návrhář aktivity vytvoří <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **InitializeCorrelation** Návrhář aktivity nebo v **DisplayName** pole **vlastnosti** okno.
+**InitializeCorrelation** návrháře aktivit můžete přetáhnout z **nástrojů** a vyřadit na povrch návrháře postupu provádění. Vyřazení Návrhář aktivity vytvoří <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity s výchozím <xref:System.Activities.Activity.DisplayName%2A> z InitializeCorrelation. <xref:System.Activities.Activity.DisplayName%2A> Můžete upravovat v záhlaví **InitializeCorrelation** Návrhář aktivity nebo **DisplayName** pomocí boxingu **vlastnosti** okno.
 
-<xref:System.ServiceModel.Activities.CorrelationHandle> Může být určuje v **korelace** pole **vlastnosti** okno na **InitializeCorrelation** aktivity plochu návrháře.
+<xref:System.ServiceModel.Activities.CorrelationHandle> Může být určuje v **korelace** pole **vlastnosti** na okno **InitializeCorrelation** povrch návrháře aktivit.
 
-Chcete-li zobrazit **inicializovat korelace** dialogové, kde můžete určit popisovač korelace a páry klíč hodnota používá k chybě při inicializaci, vyberte tlačítko se třemi tečkami vedle **CorrelationData** pole **vlastnosti** okno. Nebo vyberte text nápovědy "Zobrazení..." na **InitializeCorrelation** aktivity plochu návrháře. Další informace o použití tohoto dialogového okna, najdete v článku [dialogové okno Editor kolekcí typu](../workflow-designer/type-collection-editor-dialog-box.md) článku.
+Chcete-li zobrazit **inicializace korelace** dialogovému oknu, kde můžete zadat popisovač korelace a páry klíč hodnota použitý k inicializaci, vyberte tlačítko se třemi tečkami vedle **initalizecorrelation CorrelationData** pole v **vlastnosti** okna. Nebo vyberte text nápovědy "Zobrazit …" na **InitializeCorrelation** povrch návrháře aktivit. Další informace o tomto dialogovém okně najdete v článku [dialogové okno Editor typu kolekce](../workflow-designer/type-collection-editor-dialog-box.md) článku.
 
 ### <a name="the-initializecorrelation-properties"></a>Vlastnosti InitializeCorrelation
 
-Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.InitializeCorrelation> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v **vlastnosti** okno nebo na plochu návrháře pracovních postupů.
+Následující tabulka ukazuje <xref:System.ServiceModel.Activities.InitializeCorrelation> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti můžete upravovat v **vlastnosti** okně nebo na plochu návrháře postupu provádění.
 
 |Název vlastnosti|Požadováno|Použití|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. Výchozí hodnota je InitializeCorrelation.<br /><br /> I když používání jiné než výchozí hodnota popisný <xref:System.Activities.Activity.DisplayName%2A> není nezbytně nutné, doporučujeme.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> Použité pro přidružení aktivit pracovního postupu v korelaci.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Slovník dat korelace, která má vztah zprávy k instanci pracovního postupu.<br /><br /> Použití **inicializovat korelace** dialogové okno Konfigurace <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Další informace o použití toto dialogové okno, najdete v článku [dialogové okno Editor kolekcí typu](../workflow-designer/type-collection-editor-dialog-box.md) článku.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. Výchozí hodnota je InitializeCorrelation.<br /><br /> Ačkoli použití jinou než výchozí hodnotu pro popisný <xref:System.Activities.Activity.DisplayName%2A> není bezpodmínečně nutné, doporučujeme.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|<xref:System.ServiceModel.Activities.CorrelationHandle> Použito k přidružení pracovního postupu aktivit v korelaci.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Slovník korelace dat, které se týkají zprávy instance pracovního postupu.<br /><br /> Použití **inicializace korelace** dialogové okno Konfigurace <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Další informace o použití tomto dialogovém okně najdete v článku [dialogové okno Editor typu kolekce](../workflow-designer/type-collection-editor-dialog-box.md) článku.|
 
 ## <a name="see-also"></a>Viz také:
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Přijímat](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Odeslat](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

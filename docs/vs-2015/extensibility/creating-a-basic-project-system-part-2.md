@@ -17,12 +17,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58d456e9c6578ba36b8d4425238208a2435a6523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859236"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,73 +51,73 @@ První názorný postup v této sérii [vytvoření základního systému projek
   
  Pomocí šablony sady Visual Studio (soubor .vstemplate) namísto šablonu základního projektu, můžete řídit, jak se šablona zobrazuje v **nový projekt** dialogové okno a jak jsou nahrazeny parametry šablony.  Soubor .vstemplate je soubor XML, který popisuje, jak mají být zahrnuty při vytvoření projektu pomocí šablony projektu systému zdrojové soubory. Samotný systém projektu je sestaven tak, že shromažďují souboru .vstemplate a zdrojové soubory v souboru ZIP a nasadit tak, že zkopírujete soubor ZIP do umístění, který znáte Visual Studio. Tento proces je vysvětleno podrobněji dále v tomto návodu.  
   
-1.  V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete řešení SimpleProject, kterou jste vytvořili pomocí následujících [vytvoření základního systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md).  
+1. V [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otevřete řešení SimpleProject, kterou jste vytvořili pomocí následujících [vytvoření základního systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md).  
   
-2.  V souboru SimpleProjectPackage.cs nalezení ProvideProjectFactory atributu. Nahraďte druhý parametr (název projektu) s hodnotou null a čtvrtý parametr (cesta ke složce šablony projektu) ". \\\NullPath ", následujícím způsobem.  
+2. V souboru SimpleProjectPackage.cs nalezení ProvideProjectFactory atributu. Nahraďte druhý parametr (název projektu) s hodnotou null a čtvrtý parametr (cesta ke složce šablony projektu) ". \\\NullPath ", následujícím způsobem.  
   
-    ```  
-    [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  
-        "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",  
-        ".\\NullPath",  
-    LanguageVsTemplate = "SimpleProject")]  
-    ```  
+   ```  
+   [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  
+       "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",  
+       ".\\NullPath",  
+   LanguageVsTemplate = "SimpleProject")]  
+   ```  
   
-3.  Přidejte soubor XML s názvem SimpleProject.vstemplate \Templates\Projects\SimpleProject\ složky.  
+3. Přidejte soubor XML s názvem SimpleProject.vstemplate \Templates\Projects\SimpleProject\ složky.  
   
-4.  Nahraďte obsah SimpleProject.vstemplate následujícím kódem.  
+4. Nahraďte obsah SimpleProject.vstemplate následujícím kódem.  
   
-    ```xml  
-    <VSTemplate Version="2.0.0" Type="Project"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-      <TemplateData>  
-        <Name>SimpleProject Application</Name>  
-        <Description>  
-            A project for creating a SimpleProject application  
-         </Description>  
-         <Icon>SimpleProject.ico</Icon>  
-         <ProjectType>SimpleProject</ProjectType>  
-      </TemplateData>  
-      <TemplateContent>  
-        <Project File="SimpleProject.myproj" ReplaceParameters="true">  
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
-              Program.cs  
-          </ProjectItem>  
-          <ProjectItem ReplaceParameters="true" OpenInEditor="false">  
-             AssemblyInfo.cs  
-          </ProjectItem>  
-        </Project>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="2.0.0" Type="Project"  
+       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+     <TemplateData>  
+       <Name>SimpleProject Application</Name>  
+       <Description>  
+           A project for creating a SimpleProject application  
+        </Description>  
+        <Icon>SimpleProject.ico</Icon>  
+        <ProjectType>SimpleProject</ProjectType>  
+     </TemplateData>  
+     <TemplateContent>  
+       <Project File="SimpleProject.myproj" ReplaceParameters="true">  
+         <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
+             Program.cs  
+         </ProjectItem>  
+         <ProjectItem ReplaceParameters="true" OpenInEditor="false">  
+            AssemblyInfo.cs  
+         </ProjectItem>  
+       </Project>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-5.  V **vlastnosti** okně všech pět souborů ve složce \Templates\Projects\SimpleProject\ a sada **akce sestavení** k **ZipProject**.  
+5. V **vlastnosti** okně všech pět souborů ve složce \Templates\Projects\SimpleProject\ a sada **akce sestavení** k **ZipProject**.  
   
- ![](../extensibility/media/simpproj2.png "SimpProj2")  
+   ![](../extensibility/media/simpproj2.png "SimpProj2")  
   
- \<TemplateData > část určuje umístění a vzhled SimpleProject typů projektů v **nový projekt** dialogové okno, následujícím způsobem:  
+   \<TemplateData > část určuje umístění a vzhled SimpleProject typů projektů v **nový projekt** dialogové okno, následujícím způsobem:  
   
--   \<Name > šablony projektu bude aplikace SimpleProject názvy prvků.  
+- \<Name > šablony projektu bude aplikace SimpleProject názvy prvků.  
   
--   \<Popis > element obsahuje popis, který se zobrazí **nový projekt** dialogové okno při výběru šablony projektu.  
+- \<Popis > element obsahuje popis, který se zobrazí **nový projekt** dialogové okno při výběru šablony projektu.  
   
--   \<Ikonu > prvek určuje ikonu, která se zobrazí spolu s SimpleProject typ projektu.  
+- \<Ikonu > prvek určuje ikonu, která se zobrazí spolu s SimpleProject typ projektu.  
   
--   \<ProjectType > element názvy typů projektů v **nový projekt** dialogové okno. Tento název se nahradí parametr název projektu ProvideProjectFactory atributu.  
+- \<ProjectType > element názvy typů projektů v **nový projekt** dialogové okno. Tento název se nahradí parametr název projektu ProvideProjectFactory atributu.  
   
-    > [!NOTE]
-    >  \<ProjectType > element musí odpovídat `LanguageVsTemplate` argument `ProvideProjectFactory` atributu v souboru SimpleProjectPackage.cs.  
+  > [!NOTE]
+  >  \<ProjectType > element musí odpovídat `LanguageVsTemplate` argument `ProvideProjectFactory` atributu v souboru SimpleProjectPackage.cs.  
   
- \<TemplateContent > část popisuje tyto soubory, které jsou generovány při vytvoření nového projektu:  
+  \<TemplateContent > část popisuje tyto soubory, které jsou generovány při vytvoření nového projektu:  
   
--   SimpleProject.myproj  
+- SimpleProject.myproj  
   
--   Program.cs  
+- Program.cs  
   
--   AssemblyInfo.cs  
+- AssemblyInfo.cs  
   
- Všechny tři soubory `ReplaceParameters` nastavena na hodnotu true, což umožňuje nahrazení parametru.  Soubor Program.cs má `OpenInEditor` nastavena na hodnotu true, což způsobí, že soubor, který má být otevřen v editoru kódu při vytvoření projektu.  
+  Všechny tři soubory `ReplaceParameters` nastavena na hodnotu true, což umožňuje nahrazení parametru.  Soubor Program.cs má `OpenInEditor` nastavena na hodnotu true, což způsobí, že soubor, který má být otevřen v editoru kódu při vytvoření projektu.  
   
- Další informace o prvcích ve schématu šablony Visual Studio, najdete v článku [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md).  
+  Další informace o prvcích ve schématu šablony Visual Studio, najdete v článku [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
 >  Pokud projekt obsahuje více než jedna šablona Visual Studio, každá šablona je do samostatné složky. Musí mít každý soubor v této složce **akce sestavení** nastavena na **ZipProject**.  
@@ -159,15 +159,15 @@ První názorný postup v této sérii [vytvoření základního systému projek
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Zkoumání kroky sestavení šablony sady Visual Studio  
  Systém sestavení projektu VSPackage při změně souboru .vstemplate nebo je znovu sestavit projekt, který obsahuje soubor .vstemplate obvykle běží v režimu instalace sady Visual Studio. Můžete absolvovat tak, že nastavíte úroveň podrobností MSBuild na normální nebo vyšší.  
   
-1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  Rozbalte **projekty a řešení** uzlu a pak vyberte **sestavíte a spustíte**.  
+2. Rozbalte **projekty a řešení** uzlu a pak vyberte **sestavíte a spustíte**.  
   
-3.  Nastavte **podrobnosti výstupu sestavení projektu nástroje MSBuild** k **normální**. Klikněte na tlačítko **OK**.  
+3. Nastavte **podrobnosti výstupu sestavení projektu nástroje MSBuild** k **normální**. Klikněte na tlačítko **OK**.  
   
-4.  Znovu sestavte projekt SimpleProject.  
+4. Znovu sestavte projekt SimpleProject.  
   
- Krok sestavení k vytvoření souboru ZIP projektu by měl vypadat podobně jako v následujícím příkladu.  
+   Krok sestavení k vytvoření souboru ZIP projektu by měl vypadat podobně jako v následujícím příkladu.  
   
 ```  
 ZipProjects:  
@@ -189,23 +189,23 @@ ZipProjects:
 ## <a name="testing-a-visual-studio-template"></a>Testování šablony sady Visual Studio  
  Otestujte svůj projekt objekt pro vytváření zobrazíte, jestli se vytvoří hierarchii projektu pomocí šablony sady Visual Studio.  
   
-1.  Resetujte experimentální instanci Visual Studio SDK.  
+1. Resetujte experimentální instanci Visual Studio SDK.  
   
-     Na [!INCLUDE[win7](../includes/win7-md.md)]: V nabídce Start, vyhledejte **Microsoft Visual Studio nebo Microsoft Visual Studio SDK/Tools** složku a pak vyberte **resetování Microsoft Visual Studio experimentální instanci**.  
+    Na [!INCLUDE[win7](../includes/win7-md.md)]: V nabídce Start, vyhledejte **Microsoft Visual Studio nebo Microsoft Visual Studio SDK/Tools** složku a pak vyberte **resetování Microsoft Visual Studio experimentální instanci**.  
   
-     V novějších verzích Windows: na úvodní obrazovku, typ **resetování Microsoft Visual Studio \<verze > experimentální instanci**.  
+    V novějších verzích Windows: na úvodní obrazovku, typ **resetování Microsoft Visual Studio \<verze > experimentální instanci**.  
   
-2.  Zobrazí se okno příkazového řádku. Pokud vidíte text `Press any key to continue`, klikněte na ENTER. Jakmile okno se zavře, otevřete sadu Visual Studio.  
+2. Zobrazí se okno příkazového řádku. Pokud vidíte text `Press any key to continue`, klikněte na ENTER. Jakmile okno se zavře, otevřete sadu Visual Studio.  
   
-3.  SimpleProject projekt znovu sestavte a spusťte ladění. Zobrazí se experimentální instance.  
+3. SimpleProject projekt znovu sestavte a spusťte ladění. Zobrazí se experimentální instance.  
   
-4.  V experimentální instanci aplikace vytvořte projekt SimpleProject. V **nový projekt** dialogu **SimpleProject**.  
+4. V experimentální instanci aplikace vytvořte projekt SimpleProject. V **nový projekt** dialogu **SimpleProject**.  
   
-5.  Měli byste vidět novou instanci třídy SimpleProject.  
+5. Měli byste vidět novou instanci třídy SimpleProject.  
   
- ![](../extensibility/media/simpproj2-newproj.png "SimpProj2_NewProj")  
+   ![](../extensibility/media/simpproj2-newproj.png "SimpProj2_NewProj")  
   
- ![](../extensibility/media/simpproj2-myproj.png "SimpProj2_MyProj")  
+   ![](../extensibility/media/simpproj2-myproj.png "SimpProj2_MyProj")  
   
 ## <a name="creating-a-project-type-child-node"></a>Vytváří se podřízený uzel typu projektu  
  Můžete přidat podřízený uzel typu uzlu projektu v **nový projekt** dialogové okno.  Například pro typ projektu SimpleProject může mít podřízené uzly pro konzolové aplikace, okno aplikace, webové aplikace a tak dále.  
@@ -263,30 +263,30 @@ ZipProjects:
 ## <a name="testing-the-project-type-child-node"></a>Testování podřízený uzel typu projektu  
  Soubor projektu zobrazíte testu, zda **konzoly** podřízený uzel se zobrazí v **nový projekt** dialogové okno.  
   
-1.  Spustit **resetování Microsoft Visual Studio experimentální instanci aplikace** nástroj.  
+1. Spustit **resetování Microsoft Visual Studio experimentální instanci aplikace** nástroj.  
   
-2.  SimpleProject projekt znovu sestavte a spusťte ladění. Experimentální instanci aplikace by se měla objevit.  
+2. SimpleProject projekt znovu sestavte a spusťte ladění. Experimentální instanci aplikace by se měla objevit.  
   
-3.  V **nový projekt** dialogového okna, klikněte na tlačítko **SimpleProject** uzlu. **Konzolovou aplikaci** by se zobrazit v šabloně **šablony** podokně.  
+3. V **nový projekt** dialogového okna, klikněte na tlačítko **SimpleProject** uzlu. **Konzolovou aplikaci** by se zobrazit v šabloně **šablony** podokně.  
   
-4.  Rozbalte **SimpleProject** uzlu. **Konzoly** by se měla objevit podřízený uzel. **SimpleProject aplikace** šablony i nadále zobrazovat v **šablony** podokně.  
+4. Rozbalte **SimpleProject** uzlu. **Konzoly** by se měla objevit podřízený uzel. **SimpleProject aplikace** šablony i nadále zobrazovat v **šablony** podokně.  
   
-5.  . Klikněte na tlačítko **zrušit** a Zastavit ladění  
+5. . Klikněte na tlačítko **zrušit** a Zastavit ladění  
   
- ![](../extensibility/media/simpproj2-rollup.png "SimpProj2_Rollup")  
+   ![](../extensibility/media/simpproj2-rollup.png "SimpProj2_Rollup")  
   
- ![](../extensibility/media/simpproj2-subfolder.png "SimpProj2_Subfolder")  
+   ![](../extensibility/media/simpproj2-subfolder.png "SimpProj2_Subfolder")  
   
 ## <a name="substituting-project-template-parameters"></a>Nahraďte parametry šablony projektu  
  [Vytvoření základního systému projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md) vám ukázal, jak přepsat `ProjectNode.AddFileFromTemplate` metodu základní typ nahrazení parametru šablony. V této části se naučíte používat složitější parametry šablony sady Visual Studio.  
   
  Při vytváření projektu pomocí šablony v sadě Visual Studio **nový projekt** dialogové okno, jsou nahrazeny parametry šablony řetězců k přizpůsobení projektu. Parametr šablony je speciální token, který začíná a končí u dolaru, například $time$. Následující dva parametry jsou obzvláště užitečné pro povolení přizpůsobení v projektech, které jsou založeny na šabloně:  
   
--   $ $GUID [1-10] se nahradí nový identifikátor Guid. Můžete zadat až 10 jedinečné identifikátory GUID, například $guid1$.  
+- $ $GUID [1-10] se nahradí nový identifikátor Guid. Můžete zadat až 10 jedinečné identifikátory GUID, například $guid1$.  
   
--   $safeprojectname$ je zadaný uživatelem na název **nový projekt** dialogovém okně Upravit a odebrat všechny problematické znaky a mezery.  
+- $safeprojectname$ je zadaný uživatelem na název **nový projekt** dialogovém okně Upravit a odebrat všechny problematické znaky a mezery.  
   
- Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  Pokud chcete vytvořit vlastní šablony parametr, přečtěte si téma [NIB: postupy: předání vlastní parametry šablon](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  Pokud chcete vytvořit vlastní šablony parametr, přečtěte si téma [NIB: postupy: předání vlastní parametry šablon](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>K nahrazení parametrů šablony projektu  
   
@@ -359,145 +359,145 @@ ZipProjects:
   
 -   RootNamespace.  
   
-1.  V souboru SimpleProjectPackage.cs, přidejte tuto `ProvideObject` atribut `SimpleProjectPackage` třídy:  
+1. V souboru SimpleProjectPackage.cs, přidejte tuto `ProvideObject` atribut `SimpleProjectPackage` třídy:  
   
-    ```  
-    [ProvideObject(typeof(GeneralPropertyPage))]  
-    public sealed class SimpleProjectPackage : ProjectPackage  
-    ```  
+   ```  
+   [ProvideObject(typeof(GeneralPropertyPage))]  
+   public sealed class SimpleProjectPackage : ProjectPackage  
+   ```  
   
-     To zaregistruje třídy stránky vlastností `GeneralPropertyPage` pomocí modelu COM.  
+    To zaregistruje třídy stránky vlastností `GeneralPropertyPage` pomocí modelu COM.  
   
-2.  V souboru SimpleProjectNode.cs, přidejte tyto dvě přepsané metody `SimpleProjectNode` třídy:  
+2. V souboru SimpleProjectNode.cs, přidejte tyto dvě přepsané metody `SimpleProjectNode` třídy:  
   
-    ```  
-    protected override Guid[] GetConfigurationIndependentPropertyPages()  
-    {  
-        Guid[] result = new Guid[1];  
-        result[0] = typeof(GeneralPropertyPage).GUID;  
+   ```  
+   protected override Guid[] GetConfigurationIndependentPropertyPages()  
+   {  
+       Guid[] result = new Guid[1];  
+       result[0] = typeof(GeneralPropertyPage).GUID;  
+       return result;  
+   }  
+   protected override Guid[] GetPriorityProjectDesignerPages()  
+   {  
+       Guid[] result = new Guid[1];  
+       result[0] = typeof(GeneralPropertyPage).GUID;  
         return result;  
-    }  
-    protected override Guid[] GetPriorityProjectDesignerPages()  
-    {  
-        Guid[] result = new Guid[1];  
-        result[0] = typeof(GeneralPropertyPage).GUID;  
-         return result;  
-    }  
-    ```  
+   }  
+   ```  
   
-     Obě tyto metody vrátí celou řadu vlastností identifikátory GUID.  Identifikátor GUID GeneralPropertyPage je jediným prvkem pole, proto **stránky vlastností** dialogové okno se zobrazí pouze jednu stránku.  
+    Obě tyto metody vrátí celou řadu vlastností identifikátory GUID.  Identifikátor GUID GeneralPropertyPage je jediným prvkem pole, proto **stránky vlastností** dialogové okno se zobrazí pouze jednu stránku.  
   
-3.  Přidejte soubor třídy s názvem GeneralPropertyPage.cs SimpleProject projektu.  
+3. Přidejte soubor třídy s názvem GeneralPropertyPage.cs SimpleProject projektu.  
   
-4.  Obsah tohoto souboru nahraďte následujícím kódem:  
+4. Obsah tohoto souboru nahraďte následujícím kódem:  
   
-    ```  
-    using System;  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio;  
-    using Microsoft.VisualStudio.Project;  
-    using System.ComponentModel;  
+   ```  
+   using System;  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio;  
+   using Microsoft.VisualStudio.Project;  
+   using System.ComponentModel;  
   
-    namespace SimpleProject  
-    {  
-        [ComVisible(true)]  
-        [Guid("6BC7046B-B110-40d8-9F23-34263D8D2936")]  
-        public class GeneralPropertyPage : SettingsPage  
-        {  
-            private string assemblyName;  
-            private OutputType outputType;  
-            private string defaultNamespace;  
+   namespace SimpleProject  
+   {  
+       [ComVisible(true)]  
+       [Guid("6BC7046B-B110-40d8-9F23-34263D8D2936")]  
+       public class GeneralPropertyPage : SettingsPage  
+       {  
+           private string assemblyName;  
+           private OutputType outputType;  
+           private string defaultNamespace;  
   
-            public GeneralPropertyPage()  
-            {  
-                this.Name = "General";  
-            }  
+           public GeneralPropertyPage()  
+           {  
+               this.Name = "General";  
+           }  
   
-            [Category("AssemblyName")]  
-            [DisplayName("AssemblyName")]  
-            [Description("The output file holding assembly metadata.")]  
-            public string AssemblyName  
-            {  
-                get { return this.assemblyName; }  
-            }  
-            [Category("Application")]  
-            [DisplayName("OutputType")]  
-            [Description("The type of application to build.")]  
-            public OutputType OutputType  
-            {  
-                get { return this.outputType; }  
-                set { this.outputType = value; this.IsDirty = true; }  
-            }  
-            [Category("Application")]  
-            [DisplayName("DefaultNamespace")]  
-            [Description("Specifies the default namespace for added items.")]  
-            public string DefaultNamespace  
-            {  
-                get { return this.defaultNamespace; }  
-                set { this.defaultNamespace = value; this.IsDirty = true; }  
-            }  
+           [Category("AssemblyName")]  
+           [DisplayName("AssemblyName")]  
+           [Description("The output file holding assembly metadata.")]  
+           public string AssemblyName  
+           {  
+               get { return this.assemblyName; }  
+           }  
+           [Category("Application")]  
+           [DisplayName("OutputType")]  
+           [Description("The type of application to build.")]  
+           public OutputType OutputType  
+           {  
+               get { return this.outputType; }  
+               set { this.outputType = value; this.IsDirty = true; }  
+           }  
+           [Category("Application")]  
+           [DisplayName("DefaultNamespace")]  
+           [Description("Specifies the default namespace for added items.")]  
+           public string DefaultNamespace  
+           {  
+               get { return this.defaultNamespace; }  
+               set { this.defaultNamespace = value; this.IsDirty = true; }  
+           }  
   
-            protected override void BindProperties()  
-            {  
-                this.assemblyName = this.ProjectMgr.GetProjectProperty(  
-    "AssemblyName", true);  
-                this.defaultNamespace = this.ProjectMgr.GetProjectProperty(  
-    "RootNamespace", false);  
+           protected override void BindProperties()  
+           {  
+               this.assemblyName = this.ProjectMgr.GetProjectProperty(  
+   "AssemblyName", true);  
+               this.defaultNamespace = this.ProjectMgr.GetProjectProperty(  
+   "RootNamespace", false);  
   
-                string outputType = this.ProjectMgr.GetProjectProperty(  
-    "OutputType", false);  
-                this.outputType =   
-    (OutputType)Enum.Parse(typeof(OutputType), outputType);  
-            }  
+               string outputType = this.ProjectMgr.GetProjectProperty(  
+   "OutputType", false);  
+               this.outputType =   
+   (OutputType)Enum.Parse(typeof(OutputType), outputType);  
+           }  
   
-            protected override int ApplyChanges()  
-            {  
-                this.ProjectMgr.SetProjectProperty(  
-    "AssemblyName", this.assemblyName);  
-                this.ProjectMgr.SetProjectProperty(  
-    "OutputType", this.outputType.ToString());  
-                this.ProjectMgr.SetProjectProperty(  
-    "RootNamespace", this.defaultNamespace);  
-                this.IsDirty = false;  
+           protected override int ApplyChanges()  
+           {  
+               this.ProjectMgr.SetProjectProperty(  
+   "AssemblyName", this.assemblyName);  
+               this.ProjectMgr.SetProjectProperty(  
+   "OutputType", this.outputType.ToString());  
+               this.ProjectMgr.SetProjectProperty(  
+   "RootNamespace", this.defaultNamespace);  
+               this.IsDirty = false;  
   
-                return VSConstants.S_OK;  
-            }  
-        }  
-    }  
-    ```  
+               return VSConstants.S_OK;  
+           }  
+       }  
+   }  
+   ```  
   
-     `GeneralPropertyPage` Třída zveřejňuje tři veřejné vlastnosti AssemblyName, element OutputType a RootNamespace. Protože AssemblyName neobsahuje metodu set, zobrazí se jako vlastnost jen pro čtení. OutputType je výčtové konstanty, takže se zobrazí jako rozevíracího seznamu.  
+    `GeneralPropertyPage` Třída zveřejňuje tři veřejné vlastnosti AssemblyName, element OutputType a RootNamespace. Protože AssemblyName neobsahuje metodu set, zobrazí se jako vlastnost jen pro čtení. OutputType je výčtové konstanty, takže se zobrazí jako rozevíracího seznamu.  
   
-     `SettingsPage` Poskytuje základní třídu `ProjectMgr` zachovat vlastnosti. `BindProperties` Používá metoda `ProjectMgr` načíst hodnoty vlastností trvalý a nastavit odpovídající vlastnosti.  `ApplyChanges` Používá metoda `ProjectMgr` k získání hodnoty vlastnosti a uložit je trvale v souboru projektu. Vlastnost nastavit metody nastaví `IsDirty` na hodnotu true označuje, že vlastnosti muset nastavit jako trvalý.  Trvalost vyvolá se při uložení projektu nebo řešení.  
+    `SettingsPage` Poskytuje základní třídu `ProjectMgr` zachovat vlastnosti. `BindProperties` Používá metoda `ProjectMgr` načíst hodnoty vlastností trvalý a nastavit odpovídající vlastnosti.  `ApplyChanges` Používá metoda `ProjectMgr` k získání hodnoty vlastnosti a uložit je trvale v souboru projektu. Vlastnost nastavit metody nastaví `IsDirty` na hodnotu true označuje, že vlastnosti muset nastavit jako trvalý.  Trvalost vyvolá se při uložení projektu nebo řešení.  
   
-5.  Znovu sestavte řešení SimpleProject a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
+5. Znovu sestavte řešení SimpleProject a spusťte ladění. Experimentální instanci aplikace by se zobrazit.  
   
-6.  V experimentální instanci aplikace vytvořte novou aplikaci SimpleProject.  
+6. V experimentální instanci aplikace vytvořte novou aplikaci SimpleProject.  
   
-7.  Visual Studio volá váš projekt factory k vytvoření projektu pomocí šablony sady Visual Studio. Nový soubor Program.cs je otevřený v editoru kódu.  
+7. Visual Studio volá váš projekt factory k vytvoření projektu pomocí šablony sady Visual Studio. Nový soubor Program.cs je otevřený v editoru kódu.  
   
-8.  Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení**a potom klikněte na tlačítko **vlastnosti**. **Stránky vlastností** se zobrazí dialogové okno.  
+8. Klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení**a potom klikněte na tlačítko **vlastnosti**. **Stránky vlastností** se zobrazí dialogové okno.  
   
- ![](../extensibility/media/simpproj2-proppage.png "SimpProj2_PropPage")  
+   ![](../extensibility/media/simpproj2-proppage.png "SimpProj2_PropPage")  
   
 ## <a name="testing-the-project-property-page"></a>Testování stránky vlastností projektu  
  Nyní můžete zkontrolovat, jestli můžete upravit a změnit hodnoty vlastností.  
   
-1.  V **stránky vlastností MyConsoleApplication** dialogovém okně Změnit **DefaultNamespace** k **MyApplication**.  
+1. V **stránky vlastností MyConsoleApplication** dialogovém okně Změnit **DefaultNamespace** k **MyApplication**.  
   
-2.  Vyberte **OutputType** vlastnosti a pak vyberte **knihovny tříd**.  
+2. Vyberte **OutputType** vlastnosti a pak vyberte **knihovny tříd**.  
   
-3.  Klikněte na tlačítko **použít**a potom klikněte na tlačítko **OK**.  
+3. Klikněte na tlačítko **použít**a potom klikněte na tlačítko **OK**.  
   
-4.  Znovu otevřít **stránky vlastností** dialogové okno a zkontrolovat, že vaše změny byly trvale zaznamenány.  
+4. Znovu otevřít **stránky vlastností** dialogové okno a zkontrolovat, že vaše změny byly trvale zaznamenány.  
   
-5.  Ukončete experimentální instanci sady Visual Studio.  
+5. Ukončete experimentální instanci sady Visual Studio.  
   
-6.  Znovu otevřete experimentální instanci aplikace.  
+6. Znovu otevřete experimentální instanci aplikace.  
   
-7.  Znovu otevřít **stránky vlastností** dialogové okno a zkontrolovat, že vaše změny byly trvale zaznamenány.  
+7. Znovu otevřít **stránky vlastností** dialogové okno a zkontrolovat, že vaše změny byly trvale zaznamenány.  
   
-8.  Ukončete experimentální instanci sady Visual Studio.  
+8. Ukončete experimentální instanci sady Visual Studio.  
   
- ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
+   ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
 

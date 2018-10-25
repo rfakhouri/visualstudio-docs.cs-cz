@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890176"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
  V tomto návodu provedete následující kroky:  
   
--   Vytvořte nové n vrstvé řešení, která bude obsahovat více projektů.  
+- Vytvořte nové n vrstvé řešení, která bude obsahovat více projektů.  
   
--   Přidejte dva projekty knihovny tříd pro n vrstvého řešení.  
+- Přidejte dva projekty knihovny tříd pro n vrstvého řešení.  
   
--   Vytvoření typové datové sady s použitím **Průvodce konfigurací zdroje dat**.  
+- Vytvoření typové datové sady s použitím **Průvodce konfigurací zdroje dat**.  
   
--   Oddělení generované [objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a kód datovou sadu do samostatných projektů.  
+- Oddělení generované [objekty TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) a kód datovou sadu do samostatných projektů.  
   
--   Vytvoření služby Windows Communication Foundation (WCF) Chcete-li volat vrstvě přístupu k datům.  
+- Vytvoření služby Windows Communication Foundation (WCF) Chcete-li volat vrstvě přístupu k datům.  
   
--   Funkce můžete vytvořte ve službě k načtení dat z vrstvě přístupu k datům.  
+- Funkce můžete vytvořte ve službě k načtení dat z vrstvě přístupu k datům.  
   
--   Vytvoření aplikace Windows Forms, která bude sloužit jako prezentační vrstvy.  
+- Vytvoření aplikace Windows Forms, která bude sloužit jako prezentační vrstvy.  
   
--   Ovládací prvky Windows Forms, které jsou vázány na zdroj dat vytvořte.  
+- Ovládací prvky Windows Forms, které jsou vázány na zdroj dat vytvořte.  
   
--   Napsání kódu pro naplnění dat tabulky.  
+- Napsání kódu pro naplnění dat tabulky.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") video verzi tohoto tématu naleznete v tématu [Video postupy: vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") video verzi tohoto tématu naleznete v tématu [Video postupy: vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat:  
@@ -144,17 +144,17 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Oddělení objektů TableAdapter od objektu DataSet  
   
-1.  Dvakrát klikněte na panel **NorthwindDataSet.xsd** v **Průzkumníka řešení** otevření datové sady v **Návrhář Dataset**.  
+1. Dvakrát klikněte na panel **NorthwindDataSet.xsd** v **Průzkumníka řešení** otevření datové sady v **Návrhář Dataset**.  
   
-2.  Klepněte na prázdnou oblast v návrháři.  
+2. Klepněte na prázdnou oblast v návrháři.  
   
-3.  Vyhledejte **projektu DataSet** uzlu **vlastnosti** okna.  
+3. Vyhledejte **projektu DataSet** uzlu **vlastnosti** okna.  
   
-4.  V **projektu DataSet** klikněte na možnost **DataEntityTier**.  
+4. V **projektu DataSet** klikněte na možnost **DataEntityTier**.  
   
-5.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
+5. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
- Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (DataAccessTier) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnost (DataEntityTier) obsahuje typové datové sady: NorthwindDataSet.Dataset.Designer.vb (nebo NorthwindDataSet.Dataset.Designer.cs).  
+   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (DataAccessTier) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnost (DataEntityTier) obsahuje typové datové sady: NorthwindDataSet.Dataset.Designer.vb (nebo NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.  

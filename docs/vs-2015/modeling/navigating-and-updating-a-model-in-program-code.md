@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863162"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigace v modelu a aktualizace modelu v kódu programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,46 +223,46 @@ using (Transaction t =
   
  Tento příklad znázorňuje tyto základní body vytváření elementu:  
   
--   Vytvořte nový prvek do konkrétního oddílu Store. Pro prvky modelu a vztahů, ale ne tvary Toto je obvykle výchozí oddíl.  
+- Vytvořte nový prvek do konkrétního oddílu Store. Pro prvky modelu a vztahů, ale ne tvary Toto je obvykle výchozí oddíl.  
   
--   Zkontrolujte cílové vztah obsažení. V DslDefinition v tomto příkladu každý uživatel, který musí být cílem vztah FamilyTreeHasPeople vložení. K dosažení tohoto cíle, jsme můžete nastavit vlastnost FamilyTreeModel role objektu osoba, nebo přidat uživatele do FamilyTreeModel objektu role vlastnictví.  
+- Zkontrolujte cílové vztah obsažení. V DslDefinition v tomto příkladu každý uživatel, který musí být cílem vztah FamilyTreeHasPeople vložení. K dosažení tohoto cíle, jsme můžete nastavit vlastnost FamilyTreeModel role objektu osoba, nebo přidat uživatele do FamilyTreeModel objektu role vlastnictví.  
   
--   Nastavení vlastností nového elementu, zejména vlastnost, pro kterou `IsName` DslDefinition platí. Tento příznak označí vlastnost, která slouží k identifikaci elementu jedinečné v rámci jeho vlastníka. V tomto případě vlastnost Name má tento příznak.  
+- Nastavení vlastností nového elementu, zejména vlastnost, pro kterou `IsName` DslDefinition platí. Tento příznak označí vlastnost, která slouží k identifikaci elementu jedinečné v rámci jeho vlastníka. V tomto případě vlastnost Name má tento příznak.  
   
--   Definice DSL tento DSL musí byla načtena do Store. Pokud píšete rozšíření například příkaz nabídky, bude obvykle jednat již hodnotu true. V ostatních případech můžete explicitně načíst model do Store, nebo použít <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> se jej načíst. Další informace najdete v tématu [postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Definice DSL tento DSL musí byla načtena do Store. Pokud píšete rozšíření například příkaz nabídky, bude obvykle jednat již hodnotu true. V ostatních případech můžete explicitně načíst model do Store, nebo použít <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> se jej načíst. Další informace najdete v tématu [postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
- Při vytváření elementu tímto způsobem obrazce se automaticky vytvoří (Pokud DSL neobsahuje diagram). Zobrazí se v umístění služby automaticky přiřazený, výchozí tvar, barvu a další funkce. Pokud chcete určit, kde a jak se zobrazí související tvar, přečtěte si téma [vytváření elementu a jeho tvar](#merge).  
+  Při vytváření elementu tímto způsobem obrazce se automaticky vytvoří (Pokud DSL neobsahuje diagram). Zobrazí se v umístění služby automaticky přiřazený, výchozí tvar, barvu a další funkce. Pokud chcete určit, kde a jak se zobrazí související tvar, přečtěte si téma [vytváření elementu a jeho tvar](#merge).  
   
 ##  <a name="links"></a> Vytváření vztahů propojení  
  Existují dva vztahy definované v příkladu definici DSL. Definuje každou relaci *vlastnosti role* ve třídě na každém konci vztahu.  
   
  Existují tři způsoby, ve kterých můžete vytvořit instanci relace. Každá z těchto tří metod má stejný účinek:  
   
--   Nastavte vlastnost aktéra zdrojové role. Příklad:  
+- Nastavte vlastnost aktéra zdrojové role. Příklad:  
   
-    -   `familyTree.People.Add(edward);`  
+  -   `familyTree.People.Add(edward);`  
   
-    -   `edward.Parents.Add(henry);`  
+  -   `edward.Parents.Add(henry);`  
   
--   Nastavte vlastnost Aktér cílové role. Příklad:  
+- Nastavte vlastnost Aktér cílové role. Příklad:  
   
-    -   `edward.familyTreeModel = familyTree;`  
+  -   `edward.familyTreeModel = familyTree;`  
   
-         Násobnost tato role je `1..1`, takže můžeme přiřadit hodnotu.  
+       Násobnost tato role je `1..1`, takže můžeme přiřadit hodnotu.  
   
-    -   `henry.Children.Add(edward);`  
+  -   `henry.Children.Add(edward);`  
   
-         Násobnost tato role je `0..*`, takže můžeme přidat do kolekce.  
+       Násobnost tato role je `0..*`, takže můžeme přidat do kolekce.  
   
--   Explicitně vytvořte instanci relace. Příklad:  
+- Explicitně vytvořte instanci relace. Příklad:  
   
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
- Poslední metoda je užitečná, pokud chcete nastavit vlastnosti v relaci sama.  
+  Poslední metoda je užitečná, pokud chcete nastavit vlastnosti v relaci sama.  
   
- Při vytváření elementu tímto způsobem je automaticky vytvořen konektor v diagramu, ale má výchozí tvar, barvu a další funkce. Pokud chcete řídit způsob vytvoření konektoru přidružené, naleznete v tématu [vytváření elementu a jeho tvar](#merge).  
+  Při vytváření elementu tímto způsobem je automaticky vytvořen konektor v diagramu, ale má výchozí tvar, barvu a další funkce. Pokud chcete řídit způsob vytvoření konektoru přidružené, naleznete v tématu [vytváření elementu a jeho tvar](#merge).  
   
 ##  <a name="deleteelements"></a> Odstranění prvků  
  Odstranit element voláním `Delete()`:  
@@ -271,21 +271,21 @@ using (Transaction t =
   
  Tato operace odstraní také:  
   
--   Vztah odkazy na a z elementu. Například `edward.Parents` bude již obsahovat `henry`.  
+- Vztah odkazy na a z elementu. Například `edward.Parents` bude již obsahovat `henry`.  
   
--   Prvky v rolí, pro které `PropagatesDelete` příznak má hodnotu true. Například na tvar, který se zobrazí element se odstraní.  
+- Prvky v rolí, pro které `PropagatesDelete` příznak má hodnotu true. Například na tvar, který se zobrazí element se odstraní.  
   
- Ve výchozím nastavení, má každý vztah obsažení `PropagatesDelete` hodnotu true na cílová role. Odstraňuje se `henry` nedojde k odstranění `familyTree`, ale `familyTree.Delete()` by odstranit všechny `Persons`. Další informace najdete v tématu [přizpůsobení chování odstranění](../modeling/customizing-deletion-behavior.md).  
+  Ve výchozím nastavení, má každý vztah obsažení `PropagatesDelete` hodnotu true na cílová role. Odstraňuje se `henry` nedojde k odstranění `familyTree`, ale `familyTree.Delete()` by odstranit všechny `Persons`. Další informace najdete v tématu [přizpůsobení chování odstranění](../modeling/customizing-deletion-behavior.md).  
   
- Ve výchozím nastavení `PropagatesDelete` neplatí pro role referenční stavy.  
+  Ve výchozím nastavení `PropagatesDelete` neplatí pro role referenční stavy.  
   
- Může způsobit odstranění pravidla chcete vynechat, nechte konkrétní šíření při odstranění objektu. To je užitečné, pokud jeden element jsou nahrazování pro jiné. Můžete zadat identifikátor GUID jednu nebo víc rolí, u kterých by neměly rozšířit odstranění. Identifikátor GUID můžete získat z třídy vztahu:  
+  Může způsobit odstranění pravidla chcete vynechat, nechte konkrétní šíření při odstranění objektu. To je užitečné, pokud jeden element jsou nahrazování pro jiné. Můžete zadat identifikátor GUID jednu nebo víc rolí, u kterých by neměly rozšířit odstranění. Identifikátor GUID můžete získat z třídy vztahu:  
   
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
   
- (V tomto konkrétním příkladu by neměl žádný vliv, protože `PropagatesDelete` je `false` pro role `ParentsHaveChildren` vztah.)  
+  (V tomto konkrétním příkladu by neměl žádný vliv, protože `PropagatesDelete` je `false` pro role `ParentsHaveChildren` vztah.)  
   
- V některých případech je odstranění bráněno existenci zámek, který je v elementu nebo na element, který se odstraní podle šíření. Můžete použít `element.CanDelete()` ke kontrole, jestli je možné odstranit prvek.  
+  V některých případech je odstranění bráněno existenci zámek, který je v elementu nebo na element, který se odstraní podle šíření. Můžete použít `element.CanDelete()` ke kontrole, jestli je možné odstranit prvek.  
   
 ##  <a name="deletelinks"></a> Odstranění vztahů propojení  
  Vztah odkazu můžete odstranit tak, že odeberete element z vlastnosti role:  
@@ -467,11 +467,11 @@ FamilyTreeDiagram diagram =
   
  Tuto metodu:  
   
--   Nastaví název, pokud jste přiřadili vlastnost jako název elementu.  
+- Nastaví název, pokud jste přiřadili vlastnost jako název elementu.  
   
--   Dodržuje všechny direktivy sloučení elementů, který jste zadali v definici DSL.  
+- Dodržuje všechny direktivy sloučení elementů, který jste zadali v definici DSL.  
   
- Tento příklad vytvoří obrazec pod kurzor myši, když uživatel pokliká na diagramu. V definici DSL v tomto příkladu `FillColor` vlastnost `ExampleShape` byl zpřístupněn.  
+  Tento příklad vytvoří obrazec pod kurzor myši, když uživatel pokliká na diagramu. V definici DSL v tomto příkladu `FillColor` vlastnost `ExampleShape` byl zpřístupněn.  
   
 ```  
   

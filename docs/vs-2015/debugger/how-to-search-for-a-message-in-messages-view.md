@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c609e927244f0d0c297bdebedab451a6af59bd5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: debad8bbfbb72f43002c92dc3c962f378b13315e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853321"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Postupy: Hledání zprávy v zobrazení zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,32 +32,32 @@ Můžete vyhledat konkrétní zprávy v zobrazení zpráv s použitím jeho popi
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Hledání zprávy v zobrazení zpráv  
   
-1.  Uspořádat okna tak tohoto nástroje Spy ++ a aktivní [zobrazení zpráv](../debugger/messages-view.md) okna jsou viditelné.  
+1. Uspořádat okna tak tohoto nástroje Spy ++ a aktivní [zobrazení zpráv](../debugger/messages-view.md) okna jsou viditelné.  
   
-2.  Z **hledání** nabídce zvolte **najít zprávu**.  
+2. Z **hledání** nabídce zvolte **najít zprávu**.  
   
-     [Dialogové okno hledání zpráv](../debugger/message-search-dialog-box.md) otevře.  
+    [Dialogové okno hledání zpráv](../debugger/message-search-dialog-box.md) otevře.  
   
-3.  Přetáhněte **tažením nástroje hledání** požadované období. Při přetahování nástroj, **hledání zpráv** dialogové okno zobrazí podrobnosti o vybrané okno.  
+3. Přetáhněte **tažením nástroje hledání** požadované období. Při přetahování nástroj, **hledání zpráv** dialogové okno zobrazí podrobnosti o vybrané okno.  
   
-     – nebo –  
+    – nebo –  
   
-     Pokud máte popisovač okna jejichž zprávy, které chcete prověřit, zadejte ho do **zpracování** textového pole.  
+    Pokud máte popisovač okna jejichž zprávy, které chcete prověřit, zadejte ho do **zpracování** textového pole.  
   
-     – nebo –  
+    – nebo –  
   
-     Pokud víte, typ nebo ID zprávy, které chcete, vyberte z **typ** a **zpráva** rozevíracích nabídek a zrušte **zpracování** textového pole.  
+    Pokud víte, typ nebo ID zprávy, které chcete, vyberte z **typ** a **zpráva** rozevíracích nabídek a zrušte **zpracování** textového pole.  
   
-4.  Zrušte zaškrtnutí všech polí, u kterých nechcete k určení hodnot.  
+4. Zrušte zaškrtnutí všech polí, u kterých nechcete k určení hodnot.  
   
-    > [!TIP]
-    >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
+   > [!TIP]
+   >  Chcete-li přehlednost obrazovky, vyberte **skrýt Spy** možnost. Tato možnost ukrývá hlavním nástroje Spy ++ okně byste museli opustit pouze **najít okno** dialogové okno viditelné nad vaší aplikace. Obnovení hlavního okna nástroje Spy ++, po kliknutí na **OK** nebo **zrušit**, nebo pokud zrušíte výběr **skrýt Spy ++** možnost.  
   
-5.  Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
+5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-6.  Klikněte na tlačítko **OK**.  
+6. Klikněte na tlačítko **OK**.  
   
- Pokud je nalezen odpovídající zprávu, je zvýrazněn v okně zobrazení zprávy. Zobrazit [zobrazení zpráv](../debugger/messages-view.md).
+   Pokud je nalezen odpovídající zprávu, je zvýrazněn v okně zobrazení zprávy. Zobrazit [zobrazení zpráv](../debugger/messages-view.md).
 
 
 

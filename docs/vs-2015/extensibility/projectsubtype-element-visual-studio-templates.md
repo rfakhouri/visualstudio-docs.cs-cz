@@ -18,12 +18,12 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43f7638039672fad530cb2cd2447dbe8174011cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894076"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType – element (šablony sady Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +65,15 @@ Klasifikuje v subcategory hodnoty zadané v šabloně `ProjectType` elementu.
   
  `ProjectSubType` Element poskytuje podkategorii tak, aby [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elementu. Tato hodnota může obsahovat:  
   
--   `SmartDevice-NETCFv1`: Určuje, že šablona cílí [!INCLUDE[Compact](../includes/compact-md.md)] verze 1.0.  
+- `SmartDevice-NETCFv1`: Určuje, že šablona cílí [!INCLUDE[Compact](../includes/compact-md.md)] verze 1.0.  
   
--   `SmartDevice-NETCFv2`: Určuje, že tempalate cílí [!INCLUDE[Compact](../includes/compact-md.md)] verze 2.0.  
+- `SmartDevice-NETCFv2`: Určuje, že tempalate cílí [!INCLUDE[Compact](../includes/compact-md.md)] verze 2.0.  
   
- Pokud šablona obsahuje `ProjectType` element s hodnotou `Web`, `ProjectSubType` prvek určuje programovací jazyk šablony. Tento prvek může mít následující hodnoty:  
+  Pokud šablona obsahuje `ProjectType` element s hodnotou `Web`, `ProjectSubType` prvek určuje programovací jazyk šablony. Tento prvek může mít následující hodnoty:  
   
--   `CSharp`: Určuje, že šablona vytváří [!INCLUDE[csprcs](../includes/csprcs-md.md)] webový projekt nebo položku.  
+- `CSharp`: Určuje, že šablona vytváří [!INCLUDE[csprcs](../includes/csprcs-md.md)] webový projekt nebo položku.  
   
--   `VisualBasic`: Určuje, že šablona vytváří [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] webový projekt nebo položku.  
+- `VisualBasic`: Určuje, že šablona vytváří [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] webový projekt nebo položku.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablona projektu pro [!INCLUDE[csprcs](../includes/csprcs-md.md)] cílení aplikace zařízení [!INCLUDE[Compact](../includes/compact-md.md)] verze 2.0.  

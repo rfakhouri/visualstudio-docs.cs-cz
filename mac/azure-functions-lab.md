@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919738"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme s Azure Functions
 
@@ -34,17 +34,17 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
 1. Spuštění **Visual Studio for Mac**.
 
-1. Vyberte **soubor > Nový řešení**.
+2. Vyberte **soubor > Nový řešení**.
 
-1. Z **Cloud > Obecné** kategorii, vyberte **Azure Functions** šablony. Použijete C# k vytvoření knihovny tříd .NET, který je hostitelem Azure Functions. Klikněte na tlačítko **Další**.
+3. Z **Cloud > Obecné** kategorii, vyberte **Azure Functions** šablony. Použijete C# k vytvoření knihovny tříd .NET, který je hostitelem Azure Functions. Klikněte na tlačítko **Další**.
 
     ![Výběr šablony Azure functions](media/azure-functions-lab-image1.png)
 
-1. Nastavte **název projektu** k **"AzureFunctionsLab"** a klikněte na tlačítko **vytvořit**.
+4. Nastavte **název projektu** k **"AzureFunctionsLab"** a klikněte na tlačítko **vytvořit**.
 
     ![pojmenování a vytvoření projektu funkce azure functions](media/azure-functions-lab-image2.png)
 
-1. Rozbalte uzly v **oblasti řešení**. Výchozí šablona projektu zahrnuje NuGet odkazy na celou řadu balíčky Azure WebJobs, jakož i balíček Newtonsoft.Json. 
+5. Rozbalte uzly v **oblasti řešení**. Výchozí šablona projektu zahrnuje NuGet odkazy na celou řadu balíčky Azure WebJobs, jakož i balíček Newtonsoft.Json. 
 
      Existují tři soubory:  
         - **Host.JSON** pro popis globální konfiguraci možností pro hostitele  

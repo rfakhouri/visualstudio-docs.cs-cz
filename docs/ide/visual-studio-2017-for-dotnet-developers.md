@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928344"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -57,7 +57,7 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 > [!NOTE]
 > Některá rozšíření odpojit klávesové zkratky sady Visual Studio výchozí. Použití výše uvedené příkazy, obnovit vaše klávesové zkratky nastavení sady Visual Studio tak, že přejdete do **nástroje** > **nastavení importu a exportu** > **obnovit všechna nastavení**  nebo **nástroje** > **možnosti** > **klávesnice** > **resetování**.
 
-Další informace klávesové zkratky a příkazy v sadě Visual Studio [naši dokumentaci](..\ide\tips-and-tricks-for-visual-studio.md).
+Další informace klávesové zkratky a příkazy v sadě Visual Studio [naši dokumentaci](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Budu potřebovat způsob, jak rychle přejít na soubory nebo typy
 
@@ -161,7 +161,7 @@ Tady je seznam editoru a produktivitu funkcí pro zajištění efektivnějšího
 | Povolit navigaci na dekompilované zdroje | Povolit přejít k definici pro typy nebo členy z externích zdrojů a ILSpy decompiler znázornit těl metod. | **Nástroje** > **možnosti** > **textový Editor** > **jazyka C#** > **Advanced**   >  **Povolit navigaci na dekompilované zdroje** |
 | Režim dokončování a návrhu | Změny chování při dokončování IntelliSense--vývojářům IntelliJ pozadí mají tendenci se měnit nastavení zde z výchozího | **Nabídka** > **upravit** > **IntelliSense** > **přepnout režim dokončení** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Zobrazí odkaz na informace o kódu a změnit historii v editoru | **Nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >   **Funkce CodeLens** |
-| [Fragmenty kódu](../ide/visual-csharp-code-snippets.md) | Nápověda zástupných procedur na běžné často používaný text |  Zadejte název fragmentu kódu a stiskněte klávesu **kartu** dvakrát. |
+| [Fragmenty kódu](../ide/visual-csharp-code-snippets.md) | Nápověda zástupných procedur na běžné často používaný text | Zadejte název fragmentu kódu a stiskněte klávesu **kartu** dvakrát. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Chybějící funkce, která vám umožňuje být produktivní nebo právě probíhá nízký výkon?
 

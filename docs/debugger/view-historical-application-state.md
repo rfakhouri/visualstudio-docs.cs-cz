@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846860"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio
 
@@ -106,17 +106,17 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Nároky na po�
 * Pokud používáte režim události a snímky IntelliTrace ve verzích Windows starších než Windows 10 Fall Creators Update (RS3), a pokud je ladicí Cílová platforma aplikace nastavená na x86, nepřijímá snímky IntelliTrace.
 
     Alternativní řešení:
-    * Pokud jste na Windows 10 Anniversary Update (RS1) a nižší než verze 10.0.14393.2273, [nainstalovat KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Pokud jste ve Windows 10 Creators Update (RS2) a nižší než verze 10.0.15063.1112, [nainstalovat KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Instalaci nebo upgradu na Windows 10 Fall Creators Update (RS3). 
-    * Další možností: 
-        1. Nainstalujte z instalačního programu Visual studio sadu nástrojů VC++ 2015.3 v140 pro desktop (x86, x64).
-        2. Sestavte cílovou aplikaci.
-        3. Z příkazového řádku, použijte nástroj editbin a pro nastavení `Largeaddressaware` příznak pro cílový spustitelný soubor. Například můžete použít tento příkaz (po aktualizaci cesty): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
-        4. Chcete-li spustit ladění, stiskněte **F5**. Nyní snímky se přesunete na ladicí program kroků a zarážek.
+  * Pokud jste na Windows 10 Anniversary Update (RS1) a nižší než verze 10.0.14393.2273, [nainstalovat KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Pokud jste ve Windows 10 Creators Update (RS2) a nižší než verze 10.0.15063.1112, [nainstalovat KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Instalaci nebo upgradu na Windows 10 Fall Creators Update (RS3). 
+  * Další možností: 
+    1. Nainstalujte z instalačního programu Visual studio sadu nástrojů VC++ 2015.3 v140 pro desktop (x86, x64).
+    2. Sestavte cílovou aplikaci.
+    3. Z příkazového řádku, použijte nástroj editbin a pro nastavení `Largeaddressaware` příznak pro cílový spustitelný soubor. Například můžete použít tento příkaz (po aktualizaci cesty): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
+    4. Chcete-li spustit ladění, stiskněte **F5**. Nyní snímky se přesunete na ladicí program kroků a zarážek.
 
-        > [!Note]
-        > `Largeaddressaware` Musí být nastaven příznak pokaždé, když se spustitelný soubor je znovu sestaví se změnami.
+       > [!Note]
+       > `Largeaddressaware` Musí být nastaven příznak pokaždé, když se spustitelný soubor je znovu sestaví se změnami.
 
 * Pokud na aplikaci, která používá trvalý soubor mapovaných do paměti se pořídí snímek aplikace procesu, proces se snímkem udržuje výhradní zámek souborů mapovaných do paměti (i po nadřazený proces vydala platnost zámku). Jiné procesy jsou stále moct číst, ale nikoli zápis do souborů mapovaných do paměti.
 

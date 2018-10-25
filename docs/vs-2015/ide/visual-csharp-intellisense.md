@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862200"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
 ## <a name="completion-lists"></a>Seznamy dokončení  
  Seznamy dokončení technologie IntelliSense v jazyce Visual C# obsahovat tokeny od seznam členů, Dokončit slovo a další. Poskytuje rychlý přístup k:  
   
--   Členy typu nebo oboru názvů  
+- Členy typu nebo oboru názvů  
   
--   Funkce názvy proměnných, příkazy a  
+- Funkce názvy proměnných, příkazy a  
   
--   [Fragmenty kódu](#CodeSnippets),  
+- [Fragmenty kódu](#CodeSnippets),  
   
--   [Klíčová slova jazyka](#Keywords),  
+- [Klíčová slova jazyka](#Keywords),  
   
--   [Rozšiřující metody](#ExtensionMethods)  
+- [Rozšiřující metody](#ExtensionMethods)  
   
- Seznamu dokončení v jazyce C# je také dostatečně inteligentní, aby odfiltrovat irelevantní tokeny a předem vyberte token na základě kontextu. Další informace najdete v tématu [filtrované seznamy dokončení v jazyce C#](../misc/filtered-completion-lists-in-csharp.md) a [Pre-selected položky seznamu dokončení v jazyce C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  Seznamu dokončení v jazyce C# je také dostatečně inteligentní, aby odfiltrovat irelevantní tokeny a předem vyberte token na základě kontextu. Další informace najdete v tématu [filtrované seznamy dokončení v jazyce C#](../misc/filtered-completion-lists-in-csharp.md) a [Pre-selected položky seznamu dokončení v jazyce C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Fragmenty kódu do seznamů dokončení  
  V jazyce Visual C#, seznam pro doplňování zahrnuje fragmenty kódu můžete snadno vložit předdefinované obsahy kódu do vaší aplikace. Fragmenty kódu se zobrazí v seznamu pro doplňování jako fragment [zástupce – Element (fragmenty kódu technologie Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Další informace o fragmenty kódu, které jsou k dispozici v jazyce Visual C# ve výchozím nastavení najdete v tématu [fragmenty kódu Visual C#](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ Visual C# IntelliSense je k dispozici při psaní kódu v editoru a při laděn�
   
  K zobrazení příslušné možnosti, můžete použít jednu z následujících postupů:  
   
--   Klikněte na nedefinovaný identifikátor. Krátký podtržení se zobrazí pod znak, který nejvíce vlevo. Umístěte ukazatel myši na krátké podtržení a zobrazí se inteligentní značky (ikonu). Kliknutím na inteligentní značku.  
+- Klikněte na nedefinovaný identifikátor. Krátký podtržení se zobrazí pod znak, který nejvíce vlevo. Umístěte ukazatel myši na krátké podtržení a zobrazí se inteligentní značky (ikonu). Kliknutím na inteligentní značku.  
   
--   Klikněte na nedefinovaný identifikátor a potom stiskněte klávesu CTRL +. (tečka).  
+- Klikněte na nedefinovaný identifikátor a potom stiskněte klávesu CTRL +. (tečka).  
   
--   Klikněte pravým tlačítkem na nedefinovaný identifikátor a potom klikněte na tlačítko **generovat**.  
+- Klikněte pravým tlačítkem na nedefinovaný identifikátor a potom klikněte na tlačítko **generovat**.  
   
- Možnosti, které se zobrazí následující:  
+  Možnosti, které se zobrazí následující:  
   
--   **Generování provizorního kódu vlastnosti**  
+- **Generování provizorního kódu vlastnosti**  
   
--   **Generování zástupných procedur pole**  
+- **Generování zástupných procedur pole**  
   
--   **Generovat pahýl metody**  
+- **Generovat pahýl metody**  
   
--   **Generovat třídy**  
+- **Generovat třídy**  
   
--   **Generovat nový typ** (pro třídy, struktury, rozhraní nebo výčet)  
+- **Generovat nový typ** (pro třídy, struktury, rozhraní nebo výčet)  
   
 ## <a name="generate-event-handlers"></a>Generujte obslužné rutiny událostí  
  V editoru kódu technologie IntelliSense můžete připojit k pole události metod (obslužné rutiny událostí).  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7316c6096be59ee7781e116fa26e87623ccec27
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1ea73057992447016b1b9ac68c98b79b68f70c17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881609"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Požadavky na systém pro emulátor sady Visual Studio pro Android
 Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper-V, technologie virtualizace pro Windows 8 a novějších verzích. Pokud chcete spustit emulátor, musí počítač splňovat požadavky na spuštění technologie Hyper-V, jak je popsáno v tomto tématu.  
@@ -44,76 +44,76 @@ Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper
   
  Požadavky na systém  
   
--   Podpora technologie Hyper-V (viz níže uvedené požadavky technologie Hyper-V)  
+- Podpora technologie Hyper-V (viz níže uvedené požadavky technologie Hyper-V)  
   
--   6 GB nebo více paměti RAM.  
+- 6 GB nebo více paměti RAM.  
   
--   64bitová verze vydání verze Pro Windows 8, Windows 8.1, Windows 10 nebo vyšší  
+- 64bitová verze vydání verze Pro Windows 8, Windows 8.1, Windows 10 nebo vyšší  
   
--   Procesor, který podporuje SSSE3 nebo novější.  
+- Procesor, který podporuje SSSE3 nebo novější.  
   
- Požadavky na síť  
+  Požadavky na síť  
   
--   DHCP  
+- DHCP  
   
--   Automaticky nakonfigurované DNS a nastavení brány  
+- Automaticky nakonfigurované DNS a nastavení brány  
   
- Požadavky technologie Hyper-V  
+  Požadavky technologie Hyper-V  
   
--   V systému BIOS musí být podporovány následující funkce:  
+- V systému BIOS musí být podporovány následující funkce:  
   
-    -   Hardwarově řízenou virtualizaci  
+  -   Hardwarově řízenou virtualizaci  
   
-    -   Druhý překlad adres úrovně (SLAT)  
+  -   Druhý překlad adres úrovně (SLAT)  
   
-    -   Zabránění spuštění dat založené na hardwaru (DEP)  
+  -   Zabránění spuštění dat založené na hardwaru (DEP)  
   
--   Ve Windows Hyper-V musí být povolený a spuštěný.  
+- Ve Windows Hyper-V musí být povolený a spuštěný.  
   
--   Musíte být členem místní skupiny Správci Hyper-V.  
+- Musíte být členem místní skupiny Správci Hyper-V.  
   
 ##  <a name="System"></a> Požadavky na systém  
  Počítač musí splňovat následující požadavky:  
   
--   Podpora technologie Hyper-V (viz [požadavky technologie Hyper-V](#HyperV))  
+- Podpora technologie Hyper-V (viz [požadavky technologie Hyper-V](#HyperV))  
   
--   6 GB nebo více paměti RAM.  
+- 6 GB nebo více paměti RAM.  
   
--   verze 64-bit edition Pro Windows 8, Windows 8.1, Windows 10 nebo vyšší.  
+- verze 64-bit edition Pro Windows 8, Windows 8.1, Windows 10 nebo vyšší.  
   
- Chcete-li zkontrolovat požadavky na paměť RAM a Windows v Ovládacích panelech zvolte systém a zabezpečení a zvolte systému.  
+  Chcete-li zkontrolovat požadavky na paměť RAM a Windows v Ovládacích panelech zvolte systém a zabezpečení a zvolte systému.  
   
- ![Zkontrolujte požadavky na systém](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+  ![Zkontrolujte požadavky na systém](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Požadavky na síť  
  Síť musí splňovat následující požadavky:  
   
--   DHCP  
+- DHCP  
   
-     Emulátor vyžaduje DHCP, protože samotný nakonfiguruje jako samostatnou zařízení v síti s jeho vlastní IP adresu.  
+   Emulátor vyžaduje DHCP, protože samotný nakonfiguruje jako samostatnou zařízení v síti s jeho vlastní IP adresu.  
   
--   Automaticky nakonfigurované DNS a nastavení brány  
+- Automaticky nakonfigurované DNS a nastavení brány  
   
-     Není možné konfigurovat nastavení DNS a bránu ručně pro emulátor.  
+   Není možné konfigurovat nastavení DNS a bránu ručně pro emulátor.  
   
- Řešení potíží s problémy se sítí se spustila v emulátoru, naleznete v následujících tématech:  
+  Řešení potíží s problémy se sítí se spustila v emulátoru, naleznete v následujících tématech:  
   
--   [Poradce při potížích s emulátorem sady Visual Studio pro Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Poradce při potížích s emulátorem sady Visual Studio pro Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Požadavky technologie Hyper-V  
  Požadavky technologie Hyper-V v systému BIOS  
   
  Systém BIOS počítače musí podporovat následující požadavky a musí být povolena:  
   
--   Hardwarově řízenou virtualizaci  
+- Hardwarově řízenou virtualizaci  
   
--   Druhý překlad adres úrovně (SLAT)  
+- Druhý překlad adres úrovně (SLAT)  
   
--   Zabránění spuštění dat založené na hardwaru (DEP)  
+- Zabránění spuštění dat založené na hardwaru (DEP)  
   
- Požadavky technologie Hyper-V ve Windows  
+  Požadavky technologie Hyper-V ve Windows  
   
- Pokud váš počítač a nastavení systému BIOS jsou již nakonfigurována pro podporu technologie Hyper-V, instalační program povolí a spustí Hyper-V. Jinak budete muset ručně povolte tyto požadavky.  
+  Pokud váš počítač a nastavení systému BIOS jsou již nakonfigurována pro podporu technologie Hyper-V, instalační program povolí a spustí Hyper-V. Jinak budete muset ručně povolte tyto požadavky.  
   
 |Požadavek|Zkontrolujte a povolte tento požadavek|  
 |-----------------|----------------------------------------------|  
@@ -141,15 +141,15 @@ Emulátor Visual Studia pro Android běží jako virtuální počítač na Hyper
 ##  <a name="Files"></a> Technologie Hyper-V vyžaduje nešifrované a nekomprimované soubory  
  Na pevný disk nakonfigurovaný pomocí systému souborů NTFS musíte být nekomprimovaný a nešifrované soubory virtuálního pevného disku používá technologie Hyper-V. Ujistěte se, že nejsou v následujících adresářích komprimované nebo zašifrované:  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program soubory (x86) \Microsoft Emulator Manager  
+- C:\Program soubory (x86) \Microsoft Emulator Manager  
   
--   C:\Program soubory (x86) \Microsoft Visual Studio Emulator for Android  
+- C:\Program soubory (x86) \Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- V systému souborů ReFS soubory virtuálního pevného disku nesmí mít integrity bit sady.  
+  V systému souborů ReFS soubory virtuálního pevného disku nesmí mít integrity bit sady.  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Hardware grafiky předávání požadavků (podpora OpenGL ES)  
  Pro emulátor pro emulaci volání do GPU, jako jsou ty používané OpenGL ES váš počítač musí mít kompatibilním grafickým Procesorem DirectX s odpovídající nainstalované ovladače rozhraní DirectX.  

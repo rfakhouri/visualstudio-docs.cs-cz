@@ -9,12 +9,12 @@ description: Další informace o benefitech prioritní podpora součástí před
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9377302cdee771e282ab622df0b76ecf2ca3460b
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866737"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Prioritní podpora na předplatná sady Visual Studio
 
@@ -37,7 +37,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na pri
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Cloud Services (webové a pracovní role)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Azure SQL Database](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +229,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na pri
 
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuté       |  Ano          |

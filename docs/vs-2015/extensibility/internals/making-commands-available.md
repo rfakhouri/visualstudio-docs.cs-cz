@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883957"
 ---
 # <a name="making-commands-available"></a>Zpřístupnění příkazů
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ Při více rozšíření VSPackages přidávají do sady Visual Studio, může b
   
  Na páté hlavní kontextu oblast je stav uživatelského rozhraní IDE. Kontexty uživatelského rozhraní jsou označeny kontextu aktivní příkaz `GUID`s následujícím způsobem:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- Tyto GUID identifikátory jsou označeny jako aktivní nebo neaktivní, v závislosti na aktuální stav rozhraní IDE. Kontexty více uživatelského rozhraní může být aktivní ve stejnou dobu.  
+  Tyto GUID identifikátory jsou označeny jako aktivní nebo neaktivní, v závislosti na aktuální stav rozhraní IDE. Kontexty více uživatelského rozhraní může být aktivní ve stejnou dobu.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>Skrytí a zobrazení příkazy na základě kontextu  
  Můžete zobrazit nebo skrýt příkaz balíčku v integrovaném vývojovém prostředí bez načtení samotném balíčku. K tomuto účelu definovat příkaz v souboru .vsct balíčku pomocí `DefaultDisabled`, `DefaultInvisible`, a `DynamicVisibility` příkaz příznaky a přidat jeden nebo více [visibilityitem –](../../extensibility/visibilityitem-element.md) prvků, které mají [ Visibilityconstraints –](../../extensibility/visibilityconstraints-element.md) oddílu. Pokud zadaný příkaz kontextu `GUID` stane aktivní, se zobrazí příkaz bez načtení balíčku.  
@@ -113,13 +113,13 @@ Při více rozšíření VSPackages přidávají do sady Visual Studio, může b
   
  Příkaz je nastavena na povolena a zobrazí pokaždé, když existuje řešení To znamená vždy, když je jeden z kontextu následující příkaz identifikátory GUID aktivní:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- V příkladu, Všimněte si, že každý příkaz příznak je samostatný [příkazu příznak](../../extensibility/command-flag-element.md) elementu.  
+  V příkladu, Všimněte si, že každý příkaz příznak je samostatný [příkazu příznak](../../extensibility/command-flag-element.md) elementu.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

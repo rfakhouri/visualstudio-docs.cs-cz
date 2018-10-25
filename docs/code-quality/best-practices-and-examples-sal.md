@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1287d97ed50e781a0b7bf30be1f77d558c908f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899965"
 ---
 # <a name="best-practices-and-examples-sal"></a>Doporučené postupy a příklady (poznámky SAL)
 Tady jsou některé způsoby, jak získat maximum z zdrojového kódu anotace jazyka (SAL) a vyhnout se některé běžné problémy.
@@ -61,7 +61,6 @@ void Func2(_Out_ int *p1)
 {
     *p = 1;
 }
-
 ```
 
 ## <a name="predefensive-and-postdefensive"></a>\_Pre\_obranné\_ a \_příspěvek\_obrany\_
@@ -78,7 +77,6 @@ Následující příklad ukazuje běžné zneužití `_Out_writes_`.
 void Func1(_Out_writes_(size) CHAR *pb,
     DWORD size
 );
-
 ```
 
 Poznámka `_Out_writes_` znamená, že máte vyrovnávací paměti. Má `cb` bajtů přidělených s prvním bajtem inicializován při ukončení. Tato poznámka není striktně nesprávné a je vhodné express přidělená velikost. Však neobsahuje žádné informace, kolik prvky jsou inicializovány pomocí funkce.
@@ -100,7 +98,6 @@ void Func2(_Out_writes_all_(size) CHAR *pb,
 void Func3(_Out_writes_(size) PSTR pb,
     DWORD size
 );
-
 ```
 
 ## <a name="out-pstr"></a>\_Navýšení kapacity\_ PSTR
@@ -114,7 +111,6 @@ void Func1(_Out_ PSTR pFileName, size_t n);
 
 // Correct
 void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
-
 ```
 
 Poznámka, jako jsou `_In_ PCSTR` je běžné a užitečné. Odkazuje na vstupní řetězec, který má ukončení hodnotou NULL, protože podmínkou pro `_In_` umožňuje rozpoznávání řetězec zakončený hodnotou NULL.
@@ -130,7 +126,6 @@ void Func1(_In_ WCHAR* wszFileName);
 
 // Correct
 void Func2(_In_ PWSTR wszFileName);
-
 ```
 
 Chybí správné specifikace ukončení hodnotou NULL je běžné. Použít příslušné `STR` verze, kterou chcete nahradit typu, jak je znázorněno v následujícím příkladu.
@@ -148,7 +143,6 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 {
     return strcmp(p1, p2) == 0;
 }
-
 ```
 
 ## <a name="outrange"></a>\_Navýšení kapacity\_rozsahu\_
@@ -170,7 +164,6 @@ void Func2(
     DWORD cbSize,
     _Deref_out_range_(0, cbSize) _Out_ DWORD *pcbFilled
 );
-
 ```
 
  `_Deref_out_range_(0, cbSize)` není nezbytně nutné pro některé nástroje, protože ho jde odvodit z `_Out_writes_to_(cbSize,*pcbFilled)`, ale je zde uvedené pro úplnost.
@@ -188,7 +181,6 @@ int Func1(_In_ MyData *p, int flag);
 // Correct
 _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
-
 ```
 
  Výraz `result` odkazuje na hodnotu po stavu, která není k dispozici v předběžné stavu.
@@ -210,7 +202,6 @@ _Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
-
 ```
 
 ## <a name="reference-variable"></a>Odkaz na proměnnou
@@ -230,7 +221,6 @@ void Func2(
     _Out_writes_bytes_all_(cbSize) BYTE *pb,
     _Out_range_(0, 2) _Out_ DWORD &cbSize
 );
-
 ```
 
 ## <a name="annotations-on-return-values"></a>Poznámky na návratové hodnoty
@@ -244,7 +234,6 @@ _Out_opt_ void *MightReturnNullPtr1();
 
 // Correct
 _Ret_maybenull_ void *MightReturnNullPtr2();
-
 ```
 
 V tomto příkladu `_Out_opt_` říká, že ukazatel může mít hodnotu NULL jako součást předpoklad. Předběžné podmínky však nelze použít návratovou hodnotu. V takovém případě je správný Poznámka `_Ret_maybenull_`.

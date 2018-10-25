@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863721"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML pro použití
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ XML Editor obsahuje schéma mezipaměti umístěné v adresáři %InstallDir%\Xm
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Chcete-li vybrat schématu XML z mezipaměti schémat  
   
-1.  Otevření souboru v editoru XML.  
+1. Otevření souboru v editoru XML.  
   
-2.  V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.  
+2. V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.  
   
-     **Schémat XML** se zobrazí dialogové okno. Dialogové okno obsahuje všechna schémata s příponou XSD v mezipaměti schématu (včetně schémata odkazovaná v souboru catalog.xml) a také jakékoli schéma, které je v aktuálním řešení, otevřete v sadě Visual Studio, odkazuje `xsd:schemaLocation` atribut, nebo je odkazované v **schémata** vlastnost.  
+    **Schémat XML** se zobrazí dialogové okno. Dialogové okno obsahuje všechna schémata s příponou XSD v mezipaměti schématu (včetně schémata odkazovaná v souboru catalog.xml) a také jakékoli schéma, které je v aktuálním řešení, otevřete v sadě Visual Studio, odkazuje `xsd:schemaLocation` atribut, nebo je odkazované v **schémata** vlastnost.  
   
-3.  Výběr schémat pro účely ověření pomocí jedné z následujících akcí:  
+3. Výběr schémat pro účely ověření pomocí jedné z následujících akcí:  
   
-    -   Vyberte schéma uvedené v **schémat XML** dialogového okna, klikněte na tlačítko **použití** sloupec a pak vyberte **použít tohle schéma**.  
+   - Vyberte schéma uvedené v **schémat XML** dialogového okna, klikněte na tlačítko **použití** sloupec a pak vyberte **použít tohle schéma**.  
   
      -nebo-  
   
-    -   Výběr více schémat, které jsou uvedeny v **schémat XML** dialogového okna, klikněte pravým tlačítkem a vyberte **použít tohle schéma**.  
+   - Výběr více schémat, které jsou uvedeny v **schémat XML** dialogového okna, klikněte pravým tlačítkem a vyberte **použít tohle schéma**.  
   
-4.  Klikněte na tlačítko **OK**.  
+4. Klikněte na tlačítko **OK**.  
   
-     Seznam vybraná schémata zkopírována zpět **schémata** vlastnost dokumentu.  
+    Seznam vybraná schémata zkopírována zpět **schémata** vlastnost dokumentu.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Přidat do mezipaměti schématu schématu XML  
   

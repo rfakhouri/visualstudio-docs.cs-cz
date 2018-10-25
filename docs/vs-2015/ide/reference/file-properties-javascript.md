@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909728"
 ---
 # <a name="file-properties-javascript"></a>Vlastnosti souboru, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ Vlastnosti souboru můžete použít k označení jaké akce systém projektu by
 ### <a name="package-action"></a>Akce balíčku  
  **Akce balíčku** vlastnost indikuje, co Visual Studio dělá pomocí souboru při spuštění sestavení. **Balíček akce** může mít jednu z několika hodnot:  
   
--   **Žádný** – soubor není zahrnutý v manifestu balíčku. Příkladem je textový soubor, který obsahuje dokumentaci, například soubor Readme.  
+- **Žádný** – soubor není zahrnutý v manifestu balíčku. Příkladem je textový soubor, který obsahuje dokumentaci, například soubor Readme.  
   
--   **Obsahu** – soubor je zahrnutý v manifestu balíčku. Například toto nastavení je výchozí hodnota pro HTML, JS, CSS, obrázek, zvukový nebo video soubor.  
+- **Obsahu** – soubor je zahrnutý v manifestu balíčku. Například toto nastavení je výchozí hodnota pro HTML, JS, CSS, obrázek, zvukový nebo video soubor.  
   
--   **Manifest** – soubor není zahrnutý v manifestu balíčku. Místo toho soubor se používá pro vstup při generování manifestu balíčku. Toto je výchozí hodnota pro soubor package.appxmanifest.  
+- **Manifest** – soubor není zahrnutý v manifestu balíčku. Místo toho soubor se používá pro vstup při generování manifestu balíčku. Toto je výchozí hodnota pro soubor package.appxmanifest.  
   
--   **Prostředek** – soubor není zahrnutý v manifestu balíčku. Obsah souboru místo toho jsou indexovány v balíček prostředků indexu (PRI), která přejdou do manifestu balíčku. To se obvykle používá pro soubory prostředků.  
+- **Prostředek** – soubor není zahrnutý v manifestu balíčku. Obsah souboru místo toho jsou indexovány v balíček prostředků indexu (PRI), která přejdou do manifestu balíčku. To se obvykle používá pro soubory prostředků.  
   
- Výchozí hodnota pro **akce balíčku** závisí na příponu souboru, který přidáte do řešení.  
+  Výchozí hodnota pro **akce balíčku** závisí na příponu souboru, který přidáte do řešení.  
   
 ### <a name="file-name-property"></a>Vlastnost název souboru  
  Zobrazuje název souboru jako hodnota určená pouze pro čtení. Pokud chcete přejmenovat soubor, klikněte pravým tlačítkem v Průzkumníku řešení a vyberte **přejmenovat**.  

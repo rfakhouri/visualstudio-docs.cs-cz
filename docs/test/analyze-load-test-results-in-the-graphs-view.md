@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870052"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
 
@@ -39,7 +39,7 @@ Jsou k dispozici několik předdefinovaných grafy. Můžete použít předdefin
 V následující tabulce jsou uvedeny předdefinované grafy, které jsou k dispozici k analýze výsledků zátěžového testu.
 
 |Název grafu|Popis|
-|----------------|-----------------|
+|-|-|
 |Klíčoví ukazatelé|Čítače, které popisují základní aspekty testování výkonu, jako je například uživatelské zatížení, propustnost a dobu odezvy.|
 |Doba odezvy testu|Data o množství času testy provést, aby spustil.|
 |Doba odezvy stránky|Průměrná doba odezvy pro webové stránky, které jsou přístupné během zátěžového testu.|
@@ -63,7 +63,7 @@ V následující tabulce jsou uvedeny předdefinované grafy, které jsou k disp
  Legenda obsahuje následující sloupce:
 
 |Čítač|Název čítače|
-|-------------|-----------------------------|
+|-|-|
 |instance|Název instance čítače.|
 |Kategorie|Název kategorie čítače.|
 |Počítače|Název počítače, do které se shromažďují čítače.|
@@ -77,7 +77,7 @@ V následující tabulce jsou uvedeny předdefinované grafy, které jsou k disp
 ## <a name="tasks"></a>Úlohy
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-|
 |**Přizpůsobit grafy pomocí legendy:** zobrazení The grafů legendy zobrazuje informace pro každý čítač výkonu, který je spojen s grafem. Legendu můžete odebrat čítače výkonu, čítače výkonu v grafu zvýraznit a přizpůsobení možností zobrazování.|-   [Použití legendy zobrazení grafů k analýze zátěžových testů](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Zobrazit čítače v grafech:** přidáte různé druhy dat k zátěžovému testu výsledků graf tak, že čítače v grafu.|-   [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Přiblížit na grafy:** po dokončení zátěžového testu můžete použít přiblížení pruhy pro přiblížení či posune do oblasti grafu. Podle přiblížit, můžete zkoumat data, která byla vygenerována během spuštění jemnější podrobně zátěžového testu.|-   [Postupy: přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

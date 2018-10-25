@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919907"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Doporučené postupy pro používání fragmentů kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Kód ve fragmentu kódu zobrazuje pouze základní způsob, jak něco udělat. P
 ## <a name="security"></a>Zabezpečení  
  Zabezpečené fragment je závisí na jeho použití ve zdrojovém kódu a jak je změnit, až bude v kódu. Následující seznam obsahuje několik oblastí, které musíte vzít v úvahu.  
   
--   Přístup k souboru a databáze  
+- Přístup k souboru a databáze  
   
--   Zabezpečení přístupu kódu  
+- Zabezpečení přístupu kódu  
   
--   Ochrana prostředků (jako jsou protokoly událostí, registr)  
+- Ochrana prostředků (jako jsou protokoly událostí, registr)  
   
--   Ukládání tajných klíčů  
+- Ukládání tajných klíčů  
   
--   Ověřuje se, jestli vstupy  
+- Ověřuje se, jestli vstupy  
   
--   Předávání dat skriptovací technologie  
+- Předávání dat skriptovací technologie  
   
- Další informace najdete v tématu [zabezpečení aplikací](../ide/securing-applications.md).  
+  Další informace najdete v tématu [zabezpečení aplikací](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>Fragmenty kódu stažené  
  Fragmenty kódu technologie IntelliSense ve Visual Studio nainstalované nejsou v samotných ohrožení zabezpečení. Může ale vytvořit bezpečnostní rizika ve vaší aplikaci. Fragmenty kódu stažené z Internetu měli zacházet jako s další obsah stažený – s nejvyšší opatrností.  

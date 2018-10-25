@@ -1,5 +1,5 @@
 ---
-title: Ladicího programu přehled – Visual Studio | Microsoft Docs
+title: Ladicí program přehled – Visual Studio | Dokumentace Microsoftu
 ms.custom: mvc
 ms.date: 07/11/2017
 ms.technology: vs-ide-debug
@@ -14,35 +14,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1941c093b82e31b815140aed4af3201cd3681a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81e491d5441a6fbb6208864d8934a197d90118e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926251"
 ---
-# <a name="overview-of-the-visual-studio-debugger"></a>Přehled ladicího programu sady Visual Studio
+# <a name="overview-of-the-visual-studio-debugger"></a>Přehled o ladicím programu sady Visual Studio
 
-Ladicí program Visual Studio umožňuje sledovat chování běhové vašeho programu a vyhledejte chyby logiku. Ladicí program funguje pro všechny programovací jazyky Visual Studio a jejich přidružené knihovny. S ladicím programem může dojít k narušení provádění krokovat kód a vyhodnocení proměnné ve vaší aplikaci.  
+Ladicí program sady Visual Studio umožňuje sledovat chování běhu programu a vyhledávat logické chyby. Ladicí program pracuje s všechny programovací jazyky sady Visual Studio a jejich přidruženými knihovnami. Pomocí ladicího programu můžete přerušit běh krokovat kód a vyhodnocovat proměnné ve vaší aplikaci.  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, který ukazuje podobným způsobem. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, která zobrazuje podobný postup. |
 
-Ladicí program umožňuje nastavit zarážky, zkontrolujte proměnné a nastavte sleduje, zobrazení zásobníku volání, ladění na vzdálených zařízeních, ladění vícevláknové aplikace a využívat řadu dalších funkcí.
+Ladicí program můžete nastavit zarážky, kontrolovat proměnné a nastavit hodinky, zobrazení zásobníku volání, ladění na vzdálených zařízeních, laďte vícevláknové aplikace a využívat řadu dalších funkcí.
 
-![Nastavit zarážky](../debugger/media/dbg-tour-set-a-breakpoint.gif "nastavit zarážky")
+![Nastavit zarážku](../debugger/media/dbg-tour-set-a-breakpoint.gif "nastavte zarážku")
 
 ## <a name="next-steps"></a>Další kroky
   
 * [První pohled na ladicí program](../debugger/debugger-feature-tour.md)  
 
-    Prohlídka funkce ladicího programu sady Visual Studio.  
+    Prohlídka funkcí ladicího programu sady Visual Studio.  
  
 * [Další informace k ladění pomocí sady Visual Studio](../debugger/getting-started-with-the-debugger.md)
 
-    Vysvětluje, jak používat funkce ladicí program k ladění aplikací.  
+    Vysvětluje, jak používat funkce ladicího programu k ladění aplikací.  
 
 * [Ladicí program tipy a triky](../debugger/debugger-tips-and-tricks.md)  
 
-    Zjistěte, jak zvýšit produktivitu s ladicím programem. 
+    Zjistěte, jak zvýšit produktivitu pomocí ladicího programu. 

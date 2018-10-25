@@ -9,12 +9,12 @@ description: Další informace o benefitech Office 365 pro vývojáře, které j
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9c77062873704f6e92d04aa4e949f1db3c1c71f7
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858339"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -29,32 +29,32 @@ Předplatitelé s vybraným předplatným sady Visual Studio Enterprise získaj�
 3. Po dokončení procesu přihlašování, měli byste vidět stránce výhody předplatných.  Pokud máte více než jedno předplatné, můžete přepínat mezi předplatnými kliknutím na šipku rozevíracího seznamu v horním pravém rohu pod pásem karet černé.  Dlaždice výhodu předplatné pro vývojáře pro Office 365 je v kategorii nástroje.  Použijte šipku napravo od řádku dlaždic posouvat, dokud se nezobrazí na dlaždici Office.
 
 4. Klikněte na **aktivovat** odkaz v dolní části dlaždice výhodu.   
-    > [!div class="mx-imgBorder"]
-    > ![Dlaždice výhodu vývoj Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Dlaždice výhodu vývoj Office 365](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5.  Dalším krokem je vytvoření účtu služby.  Zobrazí se název a přihlašovací e-mailovou adresu.  
-- Zvolte svoji zemi.
-- Zadejte název vaší společnosti. 
-- Klikněte na zaškrtávací políčko první, abyste přijali podmínky a ujednání. 
-- Klikněte na tlačítko **Další**.
-    > [!div class="mx-imgBorder"]
-    > ![Vývoj sady Office 365 registrace](_img\vs-office-dev\vs-office-dev-signup.png)
-    
-6.  Označení vašich předvoleb a oblasti, které vás zajímají a klikněte na tlačítko **aktivovat předplatné**.   
-    > [!div class="mx-imgBorder"]
-    > ![Předvolby pro vývoj Office 365](_img\vs-office-dev\vs-office-dev-preferences.png)
+5. Dalším krokem je vytvoření účtu služby.  Zobrazí se název a přihlašovací e-mailovou adresu.  
+6. Zvolte svoji zemi.
+7. Zadejte název vaší společnosti. 
+8. Klikněte na zaškrtávací políčko první, abyste přijali podmínky a ujednání. 
+9. Klikněte na tlačítko **Další**.
+   > [!div class="mx-imgBorder"]
+   > ![Vývoj sady Office 365 registrace](_img/vs-office-dev/vs-office-dev-signup.png)
 
-7.  Budete dále ověřte svou zemi/oblast a vytvořte uživatelské jméno, doménu a heslo.
+10. Označení vašich předvoleb a oblasti, které vás zajímají a klikněte na tlačítko **aktivovat předplatné**.   
     > [!div class="mx-imgBorder"]
-    > ![Vývoj sady Office 365 uživatelské jméno a doménu](_img\vs-office-dev\vs-office-dev-domain.png)
+    > ![Předvolby pro vývoj Office 365](_img/vs-office-dev/vs-office-dev-preferences.png)
 
-8.  Zadejte svoje telefonní číslo a klikněte na tlačítko **poslat kód**.  To pomáhá nám Ujistěte se, že tento účet se vytváří skutečná osoba. 
+11. Budete dále ověřte svou zemi/oblast a vytvořte uživatelské jméno, doménu a heslo.
     > [!div class="mx-imgBorder"]
-    > ![Ověření pomocí telefonu vývojáře Office 365](_img\vs-office-dev\vs-office-dev-send-code.png)
+    > ![Vývoj sady Office 365 uživatelské jméno a doménu](_img/vs-office-dev/vs-office-dev-domain.png)
 
-9.  Zadejte kód se zobrazí a klikněte na tlačítko **nastavit**.
+12. Zadejte svoje telefonní číslo a klikněte na tlačítko **poslat kód**.  To pomáhá nám Ujistěte se, že tento účet se vytváří skutečná osoba. 
     > [!div class="mx-imgBorder"]
-    > ![Ověření kódu vývojáře Office 365](_img\vs-office-dev\vs-office-dev-setup.png)
+    > ![Ověření pomocí telefonu vývojáře Office 365](_img/vs-office-dev/vs-office-dev-send-code.png)
+
+13. Zadejte kód se zobrazí a klikněte na tlačítko **nastavit**.
+    > [!div class="mx-imgBorder"]
+    > ![Ověření kódu vývojáře Office 365](_img/vs-office-dev/vs-office-dev-setup.png)
 
 Je to!  Zobrazí se stránka zobrazení informací podle vašich požadavků.  
 
@@ -65,6 +65,7 @@ Další informace o předplatné Office 365 pro vývojáře, podívejte se [k pr
 
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuté      |  Ano          |

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865346"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Shromažďování diagnostických údajů pomocí nastavení testů
 
@@ -42,7 +42,7 @@ Ke spuštění jednotky, kódované UI, výkonu webu nebo zátěžového testu p
 Následující tabulka obsahuje přehled různých způsobů, že adaptéry diagnostických dat může být nakonfigurována pro použití s místním nebo vzdáleném počítači rolích.
 
 |Adaptér diagnostických dat, který se používá v nastavení testu|Ruční testy v místním počítači|Automatizované testy|Ruční testy: Sběr dat s použitím sady rolí a prostředí|Poznámky|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**Klient Proxy ASP.NET pro IntelliTrace a dopad testu:** tento server proxy umožňuje shromažďovat informace o voláních http z klienta na webový server pro adaptéry diagnostických dat IntelliTrace a dopad testu.|Ano|Ano|Ano|-Používejte pouze v případě, že adaptéry diagnostických dat IntelliTrace nebo dopad testu jsou vybrány pro roli klienta.|
 |**Profiler technologie ASP.NET:** můžete vytvořit nastavení testu, které zahrnuje profilování technologie ASP.NET, které shromažďuje údaje o výkonu webových aplikací ASP.NET.|Ne|Ano (viz poznámky)|Ne|– Tento adaptér diagnostických dat je podporován pouze v případě spuštění zátěžových testů ze sady Visual Studio.|
 |**Pokrytí kódu:** můžete vytvořit nastavení testu, který obsahuje informace o pokrytí kódu, který slouží k prověření, jak velká část kódu je pokryta testy.|Ne|Ano (viz poznámky)|Ne|– Můžete použít pokrytí kódu pouze při spuštění automatického testování z Visual Studia nebo *mstest.exe*a pouze z počítače, který spouští test. Vzdálený sběr není podporován.<br />– Shromažďování dat pokrytí kódu nebude fungovat, pokud máte nastavení testu nakonfigurováno shromažďování informací IntelliTrace. **Poznámka:** tento adaptér diagnostických dat platí pouze pro nastavení testu Visual Studio. Pro nastavení testu v nástroji Microsoft Test Manager se nepoužívá. Kromě toho tento adaptér je z důvodu kompatibility s testovacími projekty Visual Studio 2010. **Poznámka:** z důvodu kompatibility se pokrytí kódem uplatňuje při automatickém spuštění testů z nástroje Microsoft Test Manager nebo na vzdáleného testovacího agenta ze sady Visual Studio pomocí starší verze MSTest runner.|

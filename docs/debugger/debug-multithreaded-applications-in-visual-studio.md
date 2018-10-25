@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1d238f1c6be12753fe87cece03139185e1c24ad6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279542"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854770"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 Vlákno je řada pokynů, pro které operační systém přiděluje čas procesoru. Každý proces, na kterém běží v operačním systému se skládá z alespoň jednoho vlákna. Procesy, které mají více než jedno vlákno, se nazývají s více vlákny.  
@@ -88,18 +88,18 @@ Ladění aplikace s více vlákny s uživatelským rozhraním může být zvlá�
 ## <a name="related-sections"></a>Související oddíly  
  [Použití zarážek](../debugger/using-breakpoints.md)
 
- - Použijte podmínky zarážky nebo filtry, pokud chcete ladit jednotlivá vlákna.  
+- Použijte podmínky zarážky nebo filtry, pokud chcete ladit jednotlivá vlákna.  
   
- - Zarážky s trasováním umožňuje trasování spuštění programu bez přerušení. To může být užitečné pro studium problémů například zablokování.  
+- Zarážky s trasováním umožňuje trasování spuštění programu bez přerušení. To může být užitečné pro studium problémů například zablokování.  
   
- [Dělení na vlákna](/dotnet/standard/threading/index)  
- Práce s vlákny koncepty v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programování, včetně příkladu kódu.  
+  [Dělení na vlákna](/dotnet/standard/threading/index)  
+  Práce s vlákny koncepty v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programování, včetně příkladu kódu.  
   
- [Multithreading u komponent](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Jak používat multithreading u [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] komponenty.  
+  [Multithreading u komponent](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Jak používat multithreading u [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] komponenty.  
   
- [Podpora multithreadingu ve starším kódu (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- Práce s vlákny koncepty a příklady kódu pro programátory C++ používající knihovnu MFC.  
+  [Podpora multithreadingu ve starším kódu (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+  Práce s vlákny koncepty a příklady kódu pro programátory C++ používající knihovnu MFC.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vláken a procesů](../debugger/debug-threads-and-processes.md)   

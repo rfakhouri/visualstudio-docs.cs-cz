@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f79cf8693eb33d7ad5a5d26c9f3c2ef13cc9772c
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908986"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použijte šablony Polls – webový projekt Flask
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-Volání `repository.add_sample_polls()` končí v jednom z konkrétních `Repository` implementace zvolená datového úložiště. Každá implementace volá `_load_samples_json` metoda nalezena v *modely\__init__.py* načíst *models\samples.json* soubor do paměti, pak Iteruje přes tato data k vytvoření potřebných `Poll` a `Choice` objektů v úložišti.
+Volání `repository.add_sample_polls()` končí v jednom z konkrétních `Repository` implementace zvolená datového úložiště. Každá implementace volá `_load_samples_json` metoda nalezena v *modely\_\_init\_\_.py* načíst *models\samples.json* souboru do paměti a poté iteruje skrz tato data k vytvoření potřebných `Poll` a `Choice` objektů v úložišti.
 
 Po dokončení tohoto procesu `redirect('/')` výroky `seed` metoda přejde zpět na domovskou stránku. Protože `repository.get_polls` nyní vrací datový objekt podmíněné značky v *templates\index.html* nyní vykreslí tabulku obsahující dotazuje.
 

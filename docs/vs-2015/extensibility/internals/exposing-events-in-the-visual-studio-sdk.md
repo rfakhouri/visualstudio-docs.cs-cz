@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919882"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Zveřejňování událostí v sadě Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195569"
   
  Následující postup vysvětluje, jak jsou vráceny VSPackage konkrétní události.  
   
-1.  Spustí se prostředí.  
+1. Spustí se prostředí.  
   
-2.  Načte všechny názvy hodnot klíčů služby Automation, AutomationEvents a AutomationProperties všechny balíčky VSPackages z registru a ukládá názvy v tabulce.  
+2. Načte všechny názvy hodnot klíčů služby Automation, AutomationEvents a AutomationProperties všechny balíčky VSPackages z registru a ukládá názvy v tabulce.  
   
-3.  Spotřebitel automatizace volá, v tomto příkladu `DTE.Events.AutomationProjectsEvents` nebo `DTE.Events.AutomationProjectItemsEvents`.  
+3. Spotřebitel automatizace volá, v tomto příkladu `DTE.Events.AutomationProjectsEvents` nebo `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  Prostředí parametr řetězec najde v tabulce a načte odpovídající VSPackage.  
+4. Prostředí parametr řetězec najde v tabulce a načte odpovídající VSPackage.  
   
-5.  Prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody pomocí názvu předané ve volání; v tomto příkladu AutomationProjectsEvents nebo AutomationProjectItemsEvents.  
+5. Prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody pomocí názvu předané ve volání; v tomto příkladu AutomationProjectsEvents nebo AutomationProjectItemsEvents.  
   
-6.  Vytvoří kořenový objekt, který obsahuje metody, jako sady VSPackage `get_AutomationProjectsEvents` a `get_AutomationProjectItemEvents` a vrátí ukazatel rozhraní IDispatch objektu.  
+6. Vytvoří kořenový objekt, který obsahuje metody, jako sady VSPackage `get_AutomationProjectsEvents` a `get_AutomationProjectItemEvents` a vrátí ukazatel rozhraní IDispatch objektu.  
   
-7.  Prostředí volá odpovídající metodu na základě názvu předaná do volání služby automation.  
+7. Prostředí volá odpovídající metodu na základě názvu předaná do volání služby automation.  
   
-8.  `get_` Metoda vytvoří jiné události rozhraní IDispatch objekt, který implementuje oba `IConnectionPointContainer` rozhraní a `IConnectionPoint` rozhraní a vrací IDispatchpointer na objekt.  
+8. `get_` Metoda vytvoří jiné události rozhraní IDispatch objekt, který implementuje oba `IConnectionPointContainer` rozhraní a `IConnectionPoint` rozhraní a vrací IDispatchpointer na objekt.  
   
- Vystavení události pomocí automatizace, musí odpovědět na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> a sledujte pro řetězce, které přidáte do registru. V ukázce základního projektu jsou řetězce "BscProjectsEvents" a "BscProjectItemsEvents".  
+   Vystavení události pomocí automatizace, musí odpovědět na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> a sledujte pro řetězce, které přidáte do registru. V ukázce základního projektu jsou řetězce "BscProjectsEvents" a "BscProjectItemsEvents".  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Položky registru z ukázky základního projektu  
  V této části ukazuje, kde chcete-li přidat hodnoty událostí automatizace do registru.  

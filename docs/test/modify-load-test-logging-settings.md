@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909691"
 ---
 # <a name="modify-load-test-logging-settings"></a>Úprava nastavení protokolování zátěžového testu
 
@@ -24,7 +24,7 @@ Výsledek dokončeného zátěžového testu obsahuje vzorky čítače výkonu a
 *Testovací kontrolér* zařadí za všechny vzorkovací data shromážděná zátěžového testu do protokolu databáze, když je spuštěn test. Další data, jako jsou podrobnosti časování a podrobnosti o chybě, se načtou do databáze po dokončení testu.
 
 |Úloha|Související témata|
-|----------|-----------------------|
+|-|-----------------------|
 |**Určete, jak často k uložení protokolů při spuštění zátěžového testu:** můžete určit, jak často má být protokol testu při spuštění zátěžového testu.|-   [Postupy: určení frekvence ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Uložení protokolů, pokud zátěžový test selže:** můžete určit, jestli chcete při každém selhání testu uložit protokol testu.|-   [Postupy: určení, zda jsou selhání testu ukládána do protokolů testování](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Nastavit maximální velikost souboru protokolu:** můžete upravit konfigurační soubor XML, který je přidružený k službě kontroleru testů zadat maximální velikost souboru chcete použít pro soubor protokolu.|[Postupy: určení maximální velikosti souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|

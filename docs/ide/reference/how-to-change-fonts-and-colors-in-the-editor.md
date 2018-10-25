@@ -16,46 +16,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892711"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
-Můžete změnit výchozí tučné písmo, upravit velikost písma a změnit barvy popředí a na pozadí pro různé text **zobrazení položek** v editoru kódu. Když změnu nastavení písma mějte na paměti následující informace:
+Můžete změnit výchozí řez písma, nastavit velikost písma a změnit barvy popředí a pozadí pro různé textové **zobrazení položek** v editoru kódu. Když měnit nastavení písma mějte na paměti následující informace:
 
--   Nastavení pro **písma** a **velikost** jsou globální pro všechny elementy textu ve všech [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editory.
+- Nastavení pro **písmo** a **velikost** jsou globální pro všechny elementy textu ve všech [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editory.
 
--   Názvy písma s pevnou šířkou jsou uvedené tučným písmem.
+- Názvy neproporcionální písma jsou uvedené tučným písmem.
 
--   **Položka popředí**, **položky pozadí**, a **Bold** možnosti můžete nastavit pro každý typ textu elementu. Například, pokud změníte barvy a vyberte **Bold** pro **komentář** a **záložky**, jiné typy elementů textu, zůstanou beze změn.
+- **Popředí položky**, **položky pozadí**, a **tučné** možnosti můžete nastavit pro každý typ textu elementu. Například, pokud změna barev a vyberte **tučné** pro **komentář** a **záložky**, nebude mít jiné typy textových prvků.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídky se zobrazí se mohou lišit od těch popsaných v **pomoci** v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Chcete-li změnit výchozí řez písma, velikosti a barvy
 
-1.  Vyberte **možnosti** z **nástroje** nabídce a v **prostředí** složky, vyberte **písma a barev**.
+1.  Vyberte **možnosti** z **nástroje** nabídky a **prostředí** složky, vyberte **písma a barvy**.
 
      [Písma a barvy, prostředí, dialogové okno Možnosti](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) otevře.
 
-2.  V **zobrazit nastavení pro**, vyberte **textového editoru**.
+2.  V **zobrazit nastavení pro**vyberte **textový Editor**.
 
-3.  Změnit **písma** a **velikost** možnosti změnit vzhled písma a velikost pro všechny elementy textu ve všech editory.
+3.  Upravit **písmo** a **velikost** možnosti, jak změnit vzhled písma a velikost pro všechny elementy textu v editoru všechny.
 
-4.  Vyberte odpovídající položku v **zobrazení položek**a potom upravte **popředí položky** a **položky pozadí** možnosti.
+4.  Vyberte odpovídající položku v **zobrazení položek**a potom změňte **popředí položky** a **položky pozadí** možnosti.
 
     > [!TIP]
     >  Klikněte na tlačítko **použít výchozí hodnoty** obnovíte výchozí nastavení.
 
-5.  Click **OK**.
+5.  Klikněte na tlačítko **OK**.
 
 ## <a name="see-also"></a>Viz také
 
 - [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)
 - [Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funkce editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

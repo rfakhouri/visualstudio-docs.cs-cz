@@ -17,31 +17,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906023"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo systém integrovat nové funkce do sady Visual Studio. Můžete distribuovat rozšíření ostatním uživatelům, tak na Visual Studio Marketplace. Tady jsou některé způsoby, ve kterém můžete rozšíření sady Visual Studio:  
   
--   Přidání příkazů, tlačítek, nabídek a další prvky uživatelského rozhraní do integrovaného vývojového prostředí  
+- Přidání příkazů, tlačítek, nabídek a další prvky uživatelského rozhraní do integrovaného vývojového prostředí  
   
--   Přidat nové funkce okna nástrojů  
+- Přidat nové funkce okna nástrojů  
   
--   Rozšíření technologie IntelliSense pro daný jazyk, nebo na poskytovat technologii IntelliSense pro nový programovací jazyky  
+- Rozšíření technologie IntelliSense pro daný jazyk, nebo na poskytovat technologii IntelliSense pro nový programovací jazyky  
   
--   Ikony žárovky používat k poskytování pomocné parametry a návrhy, které pomáhá vývojářům psát lepší kód  
+- Ikony žárovky používat k poskytování pomocné parametry a návrhy, které pomáhá vývojářům psát lepší kód  
   
--   Povolit podporu pro nový jazyk  
+- Povolit podporu pro nový jazyk  
   
--   Přidat do vlastního typu projektu  
+- Přidat do vlastního typu projektu  
   
--   Oslovení miliónů vývojářů prostřednictvím Visual Studio Marketplace  
+- Oslovení miliónů vývojářů prostřednictvím Visual Studio Marketplace  
   
- Pokud jste nikdy napsali před rozšíření sady Visual Studio, byste měli najít další informace o těchto funkcích a na [Začínáme s vývojem rozšíření sady Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  Pokud jste nikdy napsali před rozšíření sady Visual Studio, byste měli najít další informace o těchto funkcích a na [Začínáme s vývojem rozšíření sady Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="install-the-visual-studio-sdk"></a>Instalace sady Visual Studio SDK  
  Visual Studio SDK je volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

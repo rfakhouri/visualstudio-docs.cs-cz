@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925902"
 ---
 # <a name="command-implementation"></a>Implementace příkazu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Implementace příkazu v sadě VSPackage, je třeba provést následující úkoly:  
   
-1.  V souboru .vsct nastavit skupinu příkazů a pak přidejte příkaz do ní. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+1. V souboru .vsct nastavit skupinu příkazů a pak přidejte příkaz do ní. Další informace najdete v tématu [tabulky příkazů aplikace Visual Studio (. Vsct) soubory](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-2.  Příkaz zaregistrujte pomocí sady Visual Studio.  
+2. Příkaz zaregistrujte pomocí sady Visual Studio.  
   
-3.  Implementace příkazu.  
+3. Implementace příkazu.  
   
- Následující části popisují, jak zaregistrovat a provádět příkazy.  
+   Následující části popisují, jak zaregistrovat a provádět příkazy.  
   
 ## <a name="registering-commands-with-visual-studio"></a>Registrace příkazy pomocí sady Visual Studio  
  Pokud váš příkaz se zobrazí v nabídce, je nutné přidat <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> VSPackage a použijte jako hodnotu název nabídky nebo jeho ID prostředku.  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>Stav metody dotazů  
  Při implementaci buď <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metody, zkontrolujte GUID sada, ke které patří příkaz příkazů a ID příkazu. Postupujte podle následujících pokynů:  
   
--   Pokud identifikátor GUID není rozpoznána, musí vrátit implementaci některé z metod <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Pokud identifikátor GUID není rozpoznána, musí vrátit implementaci některé z metod <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Pokud vaši implementaci některé z metod rozpozná identifikátor GUID, ale ve skutečnosti ještě implementována příkazu, pak metoda by měla vrátit <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+- Pokud vaši implementaci některé z metod rozpozná identifikátor GUID, ale ve skutečnosti ještě implementována příkazu, pak metoda by měla vrátit <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
--   Pokud vaše implementace některé z metod rozpozná GUID a příkaz, pak metoda by měla nastavit pole příznaků příkazů každý příkaz (v `prgCmds` parametr) pomocí následujících příznaků:  
+- Pokud vaše implementace některé z metod rozpozná GUID a příkaz, pak metoda by měla nastavit pole příznaků příkazů každý příkaz (v `prgCmds` parametr) pomocí následujících příznaků:  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je podporován.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je podporován.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by neměly být viditelné.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by neměly být viditelné.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je zapnutá a byly vráceny se zobrazí.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je zapnutá a byly vráceny se zobrazí.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud je příkaz povolen.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud je příkaz povolen.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by měl být skrytý, pokud se zobrazí v místní nabídce.  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz by měl být skrytý, pokud se zobrazí v místní nabídce.  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Pokud příkaz je kontroleru nabídky a není povolené, ale jeho seznamu rozevírací nabídky není prázdný a je stále k dispozici. (Tento příznak se používá jen zřídka.)  
   
--   Pokud příkaz bylo definováno v souboru .vsct `TextChanges` příznak, nastavte následující parametry:  
+- Pokud příkaz bylo definováno v souboru .vsct `TextChanges` příznak, nastavte následující parametry:  
   
-    -   Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.  
+  -   Nastavte `rgwz` elementu `pCmdText` parametr nový text příkazu.  
   
-    -   Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.  
+  -   Nastavte `cwActual` elementu `pCmdText` parametr velikosti řetězec příkazu.  
   
- Ujistěte se také, že aktuálním kontextu není funkce automatizace, pokud váš příkaz je určený speciálně pro zpracování funkcí automatizace.  
+  Ujistěte se také, že aktuálním kontextu není funkce automatizace, pokud váš příkaz je určený speciálně pro zpracování funkcí automatizace.  
   
- Chcete-li označit, že podpory ke konkrétnímu příkazu, vraťte <xref:Microsoft.VisualStudio.VSConstants.S_OK>. U všech ostatních příkazů vrátí <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
+  Chcete-li označit, že podpory ke konkrétnímu příkazu, vraťte <xref:Microsoft.VisualStudio.VSConstants.S_OK>. U všech ostatních příkazů vrátí <xref:Microsoft.VisualStudio.OLE.Interop.Constants>.  
   
- V následujícím příkladu metoda stav dotazu nejprve zajišťuje, že není funkce automatizace kontextu a potom vyhledá správný identifikátor GUID sady příkazů a ID příkazu. Samotný příkaz je nastavena na povolena a podporované. Ostatní příkazy se nepodporuje.  
+  V následujícím příkladu metoda stav dotazu nejprve zajišťuje, že není funkce automatizace kontextu a potom vyhledá správný identifikátor GUID sady příkazů a ID příkazu. Samotný příkaz je nastavena na povolena a podporované. Ostatní příkazy se nepodporuje.  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

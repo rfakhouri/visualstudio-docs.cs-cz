@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891021"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testování rozsáhlé aplikace s více mapami uživatelského rozhraní
 
@@ -25,19 +25,19 @@ Toto téma popisuje, jak používat programové testy UI při testování rozsá
 
  **Požadavky**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
- Když vytvoříte nový kódovaný test uživatelského rozhraní, testovací rozhraní sady Visual Studio generuje kód pro test ve výchozím nastavení <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> třídy. Další informace o tom, jak zaznamenat programové testy UI, naleznete v tématu [vytvořit kódované testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md) a [anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md).
+  Když vytvoříte nový kódovaný test uživatelského rozhraní, testovací rozhraní sady Visual Studio generuje kód pro test ve výchozím nastavení <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> třídy. Další informace o tom, jak zaznamenat programové testy UI, naleznete v tématu [vytvořit kódované testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md) a [anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md).
 
- Generovaný kód pro mapování uživatelského rozhraní obsahuje třídu pro každý objekt, který komunikuje testu. Pro jednotlivé metody generované třídě doprovodných prvků pro parametry metody je vygenerován speciálně pro tuto metodu. Pokud existuje velký počet objektů, stránek, formuláře a ovládací prvky v aplikaci, můžou růst velmi velké mapování uživatelského rozhraní. Navíc pokud několik lidí pracují na testy, aplikace nepraktický s jeden velký soubor mapování uživatelského rozhraní.
+  Generovaný kód pro mapování uživatelského rozhraní obsahuje třídu pro každý objekt, který komunikuje testu. Pro jednotlivé metody generované třídě doprovodných prvků pro parametry metody je vygenerován speciálně pro tuto metodu. Pokud existuje velký počet objektů, stránek, formuláře a ovládací prvky v aplikaci, můžou růst velmi velké mapování uživatelského rozhraní. Navíc pokud několik lidí pracují na testy, aplikace nepraktický s jeden velký soubor mapování uživatelského rozhraní.
 
- Použití více souborů mapování uživatelského rozhraní může poskytnout následující výhody:
+  Použití více souborů mapování uživatelského rozhraní může poskytnout následující výhody:
 
--   Každé mapování můžou být spojené s podmnožinu logické aplikace. To usnadňuje změny pro správu.
+- Každé mapování můžou být spojené s podmnožinu logické aplikace. To usnadňuje změny pro správu.
 
--   Každý tester můžete pracovat v části aplikace a zkontrolujte ve svém kódu, aniž by zasahovala do jiných testery pracující na ostatní části aplikace.
+- Každý tester můžete pracovat v části aplikace a zkontrolujte ve svém kódu, aniž by zasahovala do jiných testery pracující na ostatní části aplikace.
 
--   Doplňky uživatelského rozhraní aplikace je možné škálovat postupně s minimálním vlivem na testy jiné části uživatelského rozhraní.
+- Doplňky uživatelského rozhraní aplikace je možné škálovat postupně s minimálním vlivem na testy jiné části uživatelského rozhraní.
 
 ## <a name="do-you-need-multiple-ui-maps"></a>Potřebujete více mapami uživatelského rozhraní?
  Vytvoření více mapami uživatelského rozhraní v každém z těchto typů situacích:
@@ -50,34 +50,34 @@ Toto téma popisuje, jak používat programové testy UI při testování rozsá
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Chcete-li přidat mapování uživatelského rozhraní pro váš projekt programového testu UI
 
-1.  V **Průzkumníka řešení**, abyste vytvořili složku v váš projekt programového testu UI pro uložení všech mapami uživatelského rozhraní, klikněte pravým tlačítkem na souboru projektu programového testu uživatelského rozhraní, přejděte na **přidat**a klikněte na tlačítko **novou složku**. Třeba mohla mít název `UIMaps`.
+1. V **Průzkumníka řešení**, abyste vytvořili složku v váš projekt programového testu UI pro uložení všech mapami uživatelského rozhraní, klikněte pravým tlačítkem na souboru projektu programového testu uživatelského rozhraní, přejděte na **přidat**a klikněte na tlačítko **novou složku**. Třeba mohla mít název `UIMaps`.
 
-     Nové složky se zobrazí v části Projekt programového testu UI.
+    Nové složky se zobrazí v části Projekt programového testu UI.
 
-2.  Klikněte pravým tlačítkem myši `UIMaps` složku, přejděte na příkaz **přidat**a klikněte na tlačítko **nová položka**.
+2. Klikněte pravým tlačítkem myši `UIMaps` složku, přejděte na příkaz **přidat**a klikněte na tlačítko **nová položka**.
 
-     **Přidat novou položku** se zobrazí dialogové okno.
+    **Přidat novou položku** se zobrazí dialogové okno.
 
-    > [!NOTE]
-    > Musí být v projektu programového testu UI přidat nové mapování programového testu uživatelského rozhraní.
+   > [!NOTE]
+   > Musí být v projektu programového testu UI přidat nové mapování programového testu uživatelského rozhraní.
 
-3.  Vyberte **programový Test mapování uživatelského rozhraní** ze seznamu.
+3. Vyberte **programový Test mapování uživatelského rozhraní** ze seznamu.
 
-     V **název** pole, zadejte název nové mapování uživatelského rozhraní. Použijte název komponenty nebo stránka, která bude představovat mapy, například `HomePageMap`.
+    V **název** pole, zadejte název nové mapování uživatelského rozhraní. Použijte název komponenty nebo stránka, která bude představovat mapy, například `HomePageMap`.
 
-4.  Zvolte **přidat**.
+4. Zvolte **přidat**.
 
-     Minimalizuje okno sady Visual Studio a **Tvůrce programového testu UI** se zobrazí dialogové okno.
+    Minimalizuje okno sady Visual Studio a **Tvůrce programového testu UI** se zobrazí dialogové okno.
 
-5.  Záznam akce pro metodu první a zvolte **generovat kód**.
+5. Záznam akce pro metodu první a zvolte **generovat kód**.
 
-6.  Po zaznamenané všechny akce a kontrolní výrazy pro první komponenta nebo stránky a seskupeny do metod, zavřete **Tvůrce programového testu UI** dialogové okno.
+6. Po zaznamenané všechny akce a kontrolní výrazy pro první komponenta nebo stránky a seskupeny do metod, zavřete **Tvůrce programového testu UI** dialogové okno.
 
-7.  Pokračujte ve vytváření mapami uživatelského rozhraní. Záznam akce a kontrolní výrazy, seskupte je do metod pro každou komponentu a potom generovat kód.
+7. Pokračujte ve vytváření mapami uživatelského rozhraní. Záznam akce a kontrolní výrazy, seskupte je do metod pro každou komponentu a potom generovat kód.
 
- V mnoha případech okno nejvyšší úrovně vaší aplikace zůstává konstantní průvodců, formulářů a stránky. I když každá mapování uživatelského rozhraní obsahuje třídu pro okna nejvyšší úrovně, jsou všechny mapy pravděpodobně odkazující na stejné okno nejvyšší úrovně v rámci které všechny součásti aplikace spouštět. Programového uživatelského rozhraní testy hledání pro ovládací prvky hierarchicky shora dolů, z okna nejvyšší úrovně tak komplexní aplikace, může být duplicitní okno reálné nejvyšší úrovně v každé mapování uživatelského rozhraní. Pokud okno reálné nejvyšší úrovně je duplicitní, víc úpravy dojde, pokud se změní tohoto okna. To může způsobit problémy s výkonem při přepínání mezi mapami uživatelského rozhraní.
+   V mnoha případech okno nejvyšší úrovně vaší aplikace zůstává konstantní průvodců, formulářů a stránky. I když každá mapování uživatelského rozhraní obsahuje třídu pro okna nejvyšší úrovně, jsou všechny mapy pravděpodobně odkazující na stejné okno nejvyšší úrovně v rámci které všechny součásti aplikace spouštět. Programového uživatelského rozhraní testy hledání pro ovládací prvky hierarchicky shora dolů, z okna nejvyšší úrovně tak komplexní aplikace, může být duplicitní okno reálné nejvyšší úrovně v každé mapování uživatelského rozhraní. Pokud okno reálné nejvyšší úrovně je duplicitní, víc úpravy dojde, pokud se změní tohoto okna. To může způsobit problémy s výkonem při přepínání mezi mapami uživatelského rozhraní.
 
- Chcete-li minimalizovat tento efekt, můžete použít `CopyFrom()` metodu, abyste měli jistotu, že nové okno nejvyšší úrovně v této mapě uživatelského rozhraní je stejný jako hlavní okno nejvyšší úrovně.
+   Chcete-li minimalizovat tento efekt, můžete použít `CopyFrom()` metodu, abyste měli jistotu, že nové okno nejvyšší úrovně v této mapě uživatelského rozhraní je stejný jako hlavní okno nejvyšší úrovně.
 
 ## <a name="example"></a>Příklad
 

@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920362"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilace v klastrech HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Můžete provádět profilaci na výpočetních uzlech clusterů Microsoft Windo
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li Profilovat na výpočetním uzlu HPC, postupujte takto:  
   
--   Instalace sady Microsoft HPC Pack 2008 na stejném počítači jako [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Počítač nemá se jednat o část cluster prostředí HPC. Instalací sady HPC Pack na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Instalace sady Microsoft HPC Pack 2008 na stejném počítači jako [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Počítač nemá se jednat o část cluster prostředí HPC. Instalací sady HPC Pack na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Nainstalujte [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] a samostatné verze nástrojů pro profilaci na HPC v prostředí výpočetního uzlu. Instalace aplikací pro obě [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a samostatný profiler jsou k dispozici na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] instalačního média. **Poznámka:** po instalaci je nutné restartovat výpočetní [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a před instalací nástrojů pro profilaci.  
+- Nainstalujte [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] a samostatné verze nástrojů pro profilaci na HPC v prostředí výpočetního uzlu. Instalace aplikací pro obě [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a samostatný profiler jsou k dispozici na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] instalačního média. **Poznámka:** po instalaci je nutné restartovat výpočetní [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a před instalací nástrojů pro profilaci.  
   
- Chcete-li nainstalovat [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] a samostatného nástroje pro profilaci na aktivní prostředí HPC výpočetních uzlů a povolit profilaci na počítači clusteru, postupujte podle těchto kroků:  
+  Chcete-li nainstalovat [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] a samostatného nástroje pro profilaci na aktivní prostředí HPC výpočetních uzlů a povolit profilaci na počítači clusteru, postupujte podle těchto kroků:  
   
 1.  Otevřete okno příkazového řádku, který je nainstalován se sadou HPC pack.  
   

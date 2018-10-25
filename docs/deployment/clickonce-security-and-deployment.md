@@ -19,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c90d70af60b6bd1f2399847447c1d49785ebb0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dd089b57fb50d20c8805c932b0043bb8c0dba82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926446"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] je technologie nasazení, která vám umožní vytvořit automatických aktualizací aplikace založené na Windows, které mohou být nainstalovány a spuštěny vyžadují minimální interakci uživatele. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje plnou podporu pro publikování a aktualizace aplikací nasazených pomocí technologie ClickOnce, pokud jste vytvořili projekt v jazyce Visual Basic a Visual C#. Informace o nasazení aplikací v jazyce Visual C++, naleznete v tématu [ClickOnce – nasazení pro aplikace Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení překonává tři hlavní problémy v nasazení:  
   
--   **Chcete-li vyřešit potíže při aktualizaci aplikace.** Pomocí nasazení Instalační služby systému Windows při každé aktualizaci aplikace, uživatel může nainstalovat aktualizaci, soubor msp a použijte ji pro u nainstalovaného produktu; s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, můžete poskytnout aktualizace automaticky. Jsou staženy pouze ty části aplikace, které se změnily a plná aktualizovaná aplikace se znovu z nové složky vedle sebe.  
+- **Chcete-li vyřešit potíže při aktualizaci aplikace.** Pomocí nasazení Instalační služby systému Windows při každé aktualizaci aplikace, uživatel může nainstalovat aktualizaci, soubor msp a použijte ji pro u nainstalovaného produktu; s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, můžete poskytnout aktualizace automaticky. Jsou staženy pouze ty části aplikace, které se změnily a plná aktualizovaná aplikace se znovu z nové složky vedle sebe.  
   
--   **Dopad na počítači uživatele.** Pomocí nasazení Instalační služby systému Windows aplikace se často spoléhat na sdílené komponenty, s potenciálními konfliktu verzí; s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, každá aplikace je samostatná a nelze v konfliktu s jinými aplikacemi.  
+- **Dopad na počítači uživatele.** Pomocí nasazení Instalační služby systému Windows aplikace se často spoléhat na sdílené komponenty, s potenciálními konfliktu verzí; s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, každá aplikace je samostatná a nelze v konfliktu s jinými aplikacemi.  
   
--   **Oprávnění zabezpečení.** Nasazení Instalační služby systému Windows vyžaduje oprávnění pro správu a umožňuje pouze omezený uživatelský instalaci. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení umožňuje uživatelům bez oprávnění správce k instalaci a udělí jenom ty zabezpečení přístupu kódu potřebná oprávnění pro aplikaci.  
+- **Oprávnění zabezpečení.** Nasazení Instalační služby systému Windows vyžaduje oprávnění pro správu a umožňuje pouze omezený uživatelský instalaci. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení umožňuje uživatelům bez oprávnění správce k instalaci a udělí jenom ty zabezpečení přístupu kódu potřebná oprávnění pro aplikaci.  
   
- V minulosti těchto problémů může někdy dojít vývojáři rozhodnout vytvářet webové aplikace namísto aplikace pro systém Windows, byste museli obětovat bohatého uživatelského rozhraní pro usnadnění instalace. Pomocí aplikace nasazené pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], máte to nejlepší z obou technologií.  
+  V minulosti těchto problémů může někdy dojít vývojáři rozhodnout vytvářet webové aplikace namísto aplikace pro systém Windows, byste museli obětovat bohatého uživatelského rozhraní pro usnadnění instalace. Pomocí aplikace nasazené pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], máte to nejlepší z obou technologií.  
   
 ## <a name="what-is-a-clickonce-application"></a>Co je aplikace ClickOnce?  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je všechny Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), konzolové aplikace (*.exe*), nebo řešení pro Office (*.dll*) publikované pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie. Můžete publikovat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci třemi různými způsoby: z webové stránky, ze síťových sdílených složek nebo z média, například na disku CD-ROM. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace může v počítači koncového uživatele nainstalován a spustit místně i v případě, že je počítač v režimu offline, nebo ho můžete spustit v režimu pouze v režimu online, bez nutnosti trvale nic instalace v počítači koncového uživatele. Další informace najdete v tématu [volba strategie nasazení ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  

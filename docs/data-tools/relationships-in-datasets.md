@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864121"
 ---
 # <a name="create-relationships-between-datasets"></a>Vytváření vztahů mezi tabulkami
 Datové sady, které obsahují data související tabulky použijte <xref:System.Data.DataRelation> objekty představují nadřazené a podřízené relace mezi tabulkami a vrácení souvisejících záznamů od sebe. Přidání souvisejících tabulek do datové sady s použitím **Průvodce konfigurací zdroje dat**, nebo **Návrhář Dataset**, vytvoří a nakonfiguruje <xref:System.Data.DataRelation> objekt za vás.
@@ -58,7 +58,7 @@ Jako součást omezení cizího klíče můžete zadat referenční integritu pr
 Pravidla, které můžete použít jsou určené v <xref:System.Data.Rule> výčtu a jsou uvedeny v následující tabulce.
 
 |Pravidlo omezení pro cizí klíč|Akce|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|Také je provedena změna (update nebo delete) provedených na nadřazený záznam související záznamy v podřízené tabulce.|
 |<xref:System.Data.Rule.SetNull>|Podřízené záznamy se neodstraní, ale nastavení cizí klíče v podřízené záznamy <xref:System.DBNull>. S tímto nastavením může být ponecháno podřízené záznamy "osamocené položky" – to znamená, že nemají žádný vztah k nadřazené záznamy. **Poznámka:** pomocí tohoto pravidla může vést k neplatná data v podřízené tabulce.|
 |<xref:System.Data.Rule.SetDefault>|Cizí klíče v související podřízené záznamy je nastavena na výchozí hodnotu (podle sloupce <xref:System.Data.DataColumn.DefaultValue%2A> vlastnost).|

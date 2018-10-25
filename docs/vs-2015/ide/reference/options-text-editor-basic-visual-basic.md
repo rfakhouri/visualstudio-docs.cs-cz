@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902474"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Možnosti, textový editor, Basic (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ ms.locfileid: "49227835"
  **Přehlednou výpis (přeformátování) kódu**  
  Textový editor přeformátuje kódu podle potřeby. Pokud je vybraná tato možnost, bude se editor kódu:  
   
--   Zarovnat kód do umístění správné tabulátoru  
+- Zarovnat kód do umístění správné tabulátoru  
   
--   Recase klíčová slova, proměnných a objektů na správnou velikost.  
+- Recase klíčová slova, proměnných a objektů na správnou velikost.  
   
--   Přidat chybějící `Then` do `If...Then` – příkaz  
+- Přidat chybějící `Then` do `If...Then` – příkaz  
   
--   Přidat závorky k volání funkce  
+- Přidat závorky k volání funkce  
   
--   Přidat chybí koncové uvozovky na řetězce  
+- Přidat chybí koncové uvozovky na řetězce  
   
--   U vydavatelských exponenciální zápis  
+- U vydavatelských exponenciální zápis  
   
--   U vydavatelských kalendářních dat  
+- U vydavatelských kalendářních dat  
   
- **Povolení režimu sbalení**  
- Při otevření souboru v editoru kódu se zobrazí dokument v režimu sbalování. Zobrazit [Osnova](../../ide/outlining.md) Další informace. Pokud je vybraná tato možnost, funkci sbalování se aktivuje při otevření souboru.  
+  **Povolení režimu sbalení**  
+  Při otevření souboru v editoru kódu se zobrazí dokument v režimu sbalování. Zobrazit [Osnova](../../ide/outlining.md) Další informace. Pokud je vybraná tato možnost, funkci sbalování se aktivuje při otevření souboru.  
   
- **Automatické vložení členů rozhraní a MustOverride**  
- Pokud jste se zavázali `Implements` příkaz nebo `Inherits` příkaz pro třídu, textový editor vloží prototypy pro členy, které musí být implementován nebo jeho přepsána, v uvedeném pořadí.  
+  **Automatické vložení členů rozhraní a MustOverride**  
+  Pokud jste se zavázali `Implements` příkaz nebo `Inherits` příkaz pro třídu, textový editor vloží prototypy pro členy, které musí být implementován nebo jeho přepsána, v uvedeném pořadí.  
   
- **Zobrazit oddělovače řádků procedury**  
- Textový editor označuje visual oboru postupy. Řádek je vykreslena ve zdrojových souborech .vb vašeho projektu v umístěních uvedených v následující tabulce:  
+  **Zobrazit oddělovače řádků procedury**  
+  Textový editor označuje visual oboru postupy. Řádek je vykreslena ve zdrojových souborech .vb vašeho projektu v umístěních uvedených v následující tabulce:  
   
 |Umístění ve zdrojovém souboru .vb|Příklad umístění řádku|  
 |---------------------------------|------------------------------|  

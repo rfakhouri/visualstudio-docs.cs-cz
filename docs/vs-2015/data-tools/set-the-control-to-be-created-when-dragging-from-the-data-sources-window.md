@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860354"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Můžete vytvořit ovládací prvky vázané na data přetažením položek z **
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Chcete-li nastavit ovládací prvky mají být vytvořeny pro tabulky dat nebo objekty  
   
-1.  Ujistěte se, že je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
+1. Ujistěte se, že je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
   
-2.  V **zdroje dat** okna, vyberte položku, která představuje data tabulky nebo objektu, který chcete nastavit.  
+2. V **zdroje dat** okna, vyberte položku, která představuje data tabulky nebo objektu, který chcete nastavit.  
   
-3.  Klikněte na rozevírací nabídku pro položku a pak klikněte na jednu z následujících možností v nabídce:  
+3. Klikněte na rozevírací nabídku pro položku a pak klikněte na jednu z následujících možností v nabídce:  
   
-    -   Chcete-li zobrazit každé datové pole v samostatném ovládacím prvku, klikněte na tlačítko **podrobnosti**. Při přetažení položky dat do návrháře, tato akce vytvoří jiný ovládací prvek vázaný na data pro každý sloupec nebo vlastnost nadřazené tabulky dat nebo objekt, spolu s popisky pro každý ovládací prvek.  
+   - Chcete-li zobrazit každé datové pole v samostatném ovládacím prvku, klikněte na tlačítko **podrobnosti**. Při přetažení položky dat do návrháře, tato akce vytvoří jiný ovládací prvek vázaný na data pro každý sloupec nebo vlastnost nadřazené tabulky dat nebo objekt, spolu s popisky pro každý ovládací prvek.  
   
-    -   K zobrazení všech dat v ovládacím prvku jednoho, vyberte jiný ovládací prvek v seznamu, jako je například **DataGrid** nebo **seznamu** v aplikaci WPF nebo **DataGridView** ve Windows Forms aplikace.  
+   - K zobrazení všech dat v ovládacím prvku jednoho, vyberte jiný ovládací prvek v seznamu, jako je například **DataGrid** nebo **seznamu** v aplikaci WPF nebo **DataGridView** ve Windows Forms aplikace.  
   
      Seznam dostupných ovládacích prvků, závisí na návrháře, který máte otevřený, kterou verzi rozhraní .NET Framework váš projekt cílí, a určuje, zda jste přidali vlastní ovládací prvky tuto podporu datové vazby k **nástrojů**. Pokud je ovládací prvek, který chcete vytvořit seznam dostupných ovládacích prvků, můžete přidat ovládací prvek do seznamu. Další informace najdete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

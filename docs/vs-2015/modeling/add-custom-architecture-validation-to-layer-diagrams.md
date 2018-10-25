@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897911"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Přidání ověřování vlastní architektury do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Definování rozšíření pomocí šablony projektu  
   
-1.  Vytvoření projektu v novém řešení pomocí **nový projekt** příkaz **souboru** nabídky.  
+1. Vytvoření projektu v novém řešení pomocí **nový projekt** příkaz **souboru** nabídky.  
   
-2.  V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření ověřování návrháře vrstev**.  
+2. V **nový projekt** dialogovém okně **projekty modelování**vyberte **rozšíření ověřování návrháře vrstev**.  
   
-     Šablona vytvoří projekt, který obsahuje malý příklad.  
+    Šablona vytvoří projekt, který obsahuje malý příklad.  
   
-    > [!WARNING]
-    >  Do šablony makethe fungovat správně:  
-    >   
-    >  -   Upravte volání `LogValidationError` odebrat volitelné argumenty `errorSourceNodes` a `errorTargetNodes`.  
-    > -   Pokud používáte vlastní vlastnosti, použijte aktualizace uvedené v [přidání vlastních vlastností do diagramů vrstev](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   > [!WARNING]
+   >  Do šablony makethe fungovat správně:  
+   > 
+   > - Upravte volání `LogValidationError` odebrat volitelné argumenty `errorSourceNodes` a `errorTargetNodes`.  
+   >   -   Pokud používáte vlastní vlastnosti, použijte aktualizace uvedené v [přidání vlastních vlastností do diagramů vrstev](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  Upravte kód, aby definoval vaše ověření. Další informace najdete v tématu [programování ověření](#programming).  
+3. Upravte kód, aby definoval vaše ověření. Další informace najdete v tématu [programování ověření](#programming).  
   
-4.  Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).  
+4. Chcete-li otestovat rozšíření, naleznete v tématu [ladění ověřování vrstev](#debugging).  
   
-    > [!NOTE]
-    >  Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
+   > [!NOTE]
+   >  Vaše metoda bude volána pouze za zvláštních okolností a zarážky nebudou fungovat automaticky. Další informace najdete v tématu [ladění ověřování vrstev](#debugging).  
   
-5.  Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin\\\***. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
+5. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\*. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Přidání validátoru vrstvy do samostatného souboru VSIX  
  Pokud chcete vytvořit jeden VSIX, který obsahuje validátory vrstvy, příkazy a další rozšíření, doporučujeme vytvořit jeden projekt k definování VSIX a samostatné projekty pro obslužné rutiny. Informace o dalších typech rozšíření modelu naleznete v tématu [modelů a diagramů UML rozšířit](../modeling/extend-uml-models-and-diagrams.md).  
@@ -127,42 +127,42 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
 ##  <a name="programming"></a> Ověření programování  
  K definování ověření přípony vrstvy definujete třídu, která má následující vlastnosti:  
   
--   Celková forma deklarace je následující:  
+- Celková forma deklarace je následující:  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   Pokud zjistíte chybu, můžete ji ohlásit pomocí `LogValidationError()`.  
+- Pokud zjistíte chybu, můžete ji ohlásit pomocí `LogValidationError()`.  
   
-    > [!WARNING]
-    >  Nepoužívejte volitelné parametry `LogValidationError`.  
+  > [!WARNING]
+  >  Nepoužívejte volitelné parametry `LogValidationError`.  
   
- Pokud uživatel vyvolá **ověřit architekturu** příkaz nabídky, systém modulu runtime vrstvy zanalyzuje vrstvy a jejich artefakty k vytvoření grafu. Graf má čtyři části:  
+  Pokud uživatel vyvolá **ověřit architekturu** příkaz nabídky, systém modulu runtime vrstvy zanalyzuje vrstvy a jejich artefakty k vytvoření grafu. Graf má čtyři části:  
   
--   Modely vrstvy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které jsou reprezentovány jako uzly a odkazy v grafu.  
+- Modely vrstvy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, které jsou reprezentovány jako uzly a odkazy v grafu.  
   
--   Kód, položky projektu a další artefakty, které jsou definovány v řešení a reprezentovány jako uzly a odkazy, které představují závislosti zjištěné v procesu analýzy.  
+- Kód, položky projektu a další artefakty, které jsou definovány v řešení a reprezentovány jako uzly a odkazy, které představují závislosti zjištěné v procesu analýzy.  
   
--   Propojení z uzlů vrstvy do uzlů kódových artefaktů.  
+- Propojení z uzlů vrstvy do uzlů kódových artefaktů.  
   
--   Uzly, které představují chyby zjištěné validátorem.  
+- Uzly, které představují chyby zjištěné validátorem.  
   
- Pokud byl vytvořen graf, je volána metoda standardního ověření. Po jejím dokončení, všechny metody nainstalovaných rozšíření ověřování jsou zavolány v nespecifikovaném pořadí. Graf je předán pro každou `ValidateArchitecture` metodu, která může prohledávat graf a podávat zprávy o chybách, které nalezne.  
+  Pokud byl vytvořen graf, je volána metoda standardního ověření. Po jejím dokončení, všechny metody nainstalovaných rozšíření ověřování jsou zavolány v nespecifikovaném pořadí. Graf je předán pro každou `ValidateArchitecture` metodu, která může prohledávat graf a podávat zprávy o chybách, které nalezne.  
   
 > [!NOTE]
 >  Toto není stejný jako proces ověření, který je použit pro diagramy UML a není stejný jako proces ověření, který lze použít v jazycích specifické pro doménu.  
@@ -173,25 +173,25 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
   
  Každý uzel a každý odkaz má jednu nebo více kategorií, které určují typ prvku nebo vztahu, který představuje. Uzly typického grafu jsou následující kategorie:  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- Propojení z vrstev do prvků v kódu mají kategorii "Představuje".  
+  Propojení z vrstev do prvků v kódu mají kategorii "Představuje".  
   
 ##  <a name="debugging"></a> Ladění ověřování  
  Chcete-li ladit rozšíření ověřování vrstvy, stiskněte CTRL + F5. Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otevře. V tomto případě otevřete nebo vytvořte model vrstev. Tento model musí být přidružen ke kódu a musí mít alespoň jednu závislost.  
@@ -199,11 +199,11 @@ V sadě Visual Studio uživatelé mohou ověřit zdrojový kód v projektu proti
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Otestujte řešení, která obsahuje závislosti  
  Ověření není provedena, pokud jsou k dispozici následující vlastnosti:  
   
--   Na diagramu vrstvy je alespoň jeden odkaz závislosti.  
+- Na diagramu vrstvy je alespoň jeden odkaz závislosti.  
   
--   Existují vrstvy v modelu, které jsou spojeny s prvky kódu.  
+- Existují vrstvy v modelu, které jsou spojeny s prvky kódu.  
   
- Při prvním spuštění experimentální instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] k testování rozšíření ověřování otevřete nebo vytvořte řešení, které má tyto vlastnosti.  
+  Při prvním spuštění experimentální instance [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] k testování rozšíření ověřování otevřete nebo vytvořte řešení, které má tyto vlastnosti.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Spusťte čisté řešení před ověřením architektury  
  Pokaždé, když aktualizujete kód pro ověření, použijte **Vyčistit řešení** příkaz **sestavení** nabídky v experimentálním řešení před otestováním příkazu ověřit. To je nezbytné, protože výsledky ověření jsou ukládány do mezipaměti. Pokud jste neaktualizovali diagram testovací vrstvy nebo jeho kód, nebude provedeno metody ověřování.  

@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891846"
 ---
 # <a name="debugger-user-interface-xslt"></a>Uživatelské rozhraní ladicího programu (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ Toto téma popisuje oknech ladicího programu a dialogových oknech. Popisuje po
   
  Následující seznam popisuje některé omezení pro vyhodnocení výrazu XPath.  
   
--   Jsou povoleny pouze integrované funkce XPath.  
+- Jsou povoleny pouze integrované funkce XPath.  
   
--   XSLT integrované funkce, jako například `document()`, `key()`, a tak dále, nejsou povoleny.  
+- XSLT integrované funkce, jako například `document()`, `key()`, a tak dále, nejsou povoleny.  
   
--   Uživatelem definované funkce nejsou povoleny.  
+- Uživatelem definované funkce nejsou povoleny.  
   
- Další informace najdete v tématu [postupy: vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Další informace najdete v tématu [postupy: vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Okno zpětného překladu  
  V okně zpětný překlad zobrazí kód sestavení generovaný kompilátorem XSLT. Toto okno lze použít stejně jako všechny ostatní okna zpětného překladu sady Visual Studio.  

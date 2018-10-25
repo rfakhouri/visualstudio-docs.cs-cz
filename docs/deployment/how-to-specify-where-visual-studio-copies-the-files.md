@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869584"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Postupy: určení, kde sada Visual Studio zkopíruje soubory
 Když publikujete aplikaci s použitím technologie ClickOnce, `Publish Location` vlastnost určuje umístění, kde jsou umístěny soubory aplikace a manifest. Může jít cestu k souboru nebo cesta k serveru FTP.  
@@ -34,15 +34,15 @@ Když publikujete aplikaci s použitím technologie ClickOnce, `Publish Location
   
 ### <a name="to-specify-a-publishing-location"></a>Chcete-li určit umístění pro publikování  
   
-1.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+1. S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-2.  Klikněte na tlačítko **publikovat** kartu.  
+2. Klikněte na tlačítko **publikovat** kartu.  
   
-3.  V **umístění publikování** zadejte umístění pro publikování pomocí jedné z následujících formátů:  
+3. V **umístění publikování** zadejte umístění pro publikování pomocí jedné z následujících formátů:  
   
-    -   Chcete-li publikovat do sdílené složky nebo disk cestu k souboru, zadejte cestu pomocí cesty UNC (*\\\Server\ApplicationName*) nebo cestu k souboru (*C:\Deploy\ApplicationName*).  
+   - Chcete-li publikovat do sdílené složky nebo disk cestu k souboru, zadejte cestu pomocí cesty UNC (*\\\Server\ApplicationName*) nebo cestu k souboru (*C:\Deploy\ApplicationName*).  
   
-    -   Chcete-li publikovat na FTP server, zadejte cestu ve formátu *ftp://ftp.microsoft.com/\<ApplicationName >*.  
+   - Chcete-li publikovat na FTP server, zadejte cestu ve formátu <em>ftp://ftp.microsoft.com/\<ApplicationName ></em>.  
   
      Všimněte si, že text musí být součástí **umístění pro publikování** pole mohl procházet (**...** ) tlačítko pro práci.  
   

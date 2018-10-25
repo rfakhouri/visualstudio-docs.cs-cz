@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923404"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrace operací pro přípony názvů souborů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
 ## <a name="registering-standard-verbs"></a>Registruje standardní příkazy  
  Operační systém rozpozná standardní následující příkazy:  
   
--   Otevřít  
+- Otevřít  
   
--   Upravit  
+- Upravit  
   
--   Přehrát  
+- Přehrát  
   
--   Tisk  
+- Tisk  
   
--   Náhled  
+- Náhled  
   
- Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevřete soubor HTM jej zobrazí v prohlížeči, že úpravy něho soubor .htm spuštění editoru HTML. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
+  Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevřete soubor HTM jej zobrazí v prohlížeči, že úpravy něho soubor .htm spuštění editoru HTML. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
   
 > [!NOTE]
 >  Při registraci standardní příkazy, nenastavujte výchozí hodnotu pro klíč otevřete. Výchozí hodnota obsahuje řetězec zobrazení v nabídce. Operační systém poskytuje tento řetězec pro standardní příkazy.  

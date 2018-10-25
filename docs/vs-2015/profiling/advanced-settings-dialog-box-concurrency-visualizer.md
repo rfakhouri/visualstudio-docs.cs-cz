@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921961"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (Vizualizér souběžnosti)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ S použitím **Upřesnit nastavení** dialogové okno v Concurrency Visualizer m
 ## <a name="files"></a>Soubory  
  Na **soubory** kartu, můžete určit adresáře v rámci které trasování jsou soubory uložené trasování pokaždé, když se shromažďují.  Vizualizátor souběžnosti generuje pro každou trasování, které shromažďuje čtyři soubory:  
   
--   Soubor protokolu (ETL) jádra události trasování (*. kernel.etl)  
+- Soubor protokolu (ETL) jádra události trasování (*. kernel.etl)  
   
--   Soubor protokolu trasování událostí uživatelského režimu (*. user.etl)  
+- Soubor protokolu trasování událostí uživatelského režimu (*. user.etl)  
   
--   Data vizualizátoru souběžnosti soubor (*. CVData)  
+- Data vizualizátoru souběžnosti soubor (*. CVData)  
   
--   Soubor trasování vizualizátoru souběžnosti (*. CVTrace)  
+- Soubor trasování vizualizátoru souběžnosti (*. CVTrace)  
   
- Příslušné dva soubory ETL ukládat data trasování a dva soubory Vizualizátor souběžnosti ukládejte zpracovaná data.  Nezpracovaných souborů ETL se obvykle používá po zpracování trasování.  Výběr **soubory odstranit událost trasování protokolu (ETL) po dokončení analýzy** zaškrtávací políčko snižuje množství dat trasování, která je uložena na disk.  
+  Příslušné dva soubory ETL ukládat data trasování a dva soubory Vizualizátor souběžnosti ukládejte zpracovaná data.  Nezpracovaných souborů ETL se obvykle používá po zpracování trasování.  Výběr **soubory odstranit událost trasování protokolu (ETL) po dokončení analýzy** zaškrtávací políčko snižuje množství dat trasování, která je uložena na disk.  
   
 ## <a name="see-also"></a>Viz také  
  [Pouze můj kód](../profiling/just-my-code-threads-view.md)   

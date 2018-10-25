@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152458"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918789"
 ---
 # <a name="target-element-msbuild"></a>Target – element (MSBuild)
 Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] provádět sekvenčně.  
@@ -73,18 +73,18 @@ Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 
 ### <a name="child-elements"></a>Podřízené prvky  
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Úloha](../msbuild/task-element-msbuild.md)|Vytvoří a spustí instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úloh. V cíli může být nula nebo více úloh.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Obsahuje sadu uživatelem definované `Property` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `PropertyGroup` elementy.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Obsahuje sadu uživatelem definované `Item` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `ItemGroup` elementy. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).|  
-|[Onerror –](../msbuild/onerror-element-msbuild.md)|Způsobí, že jeden nebo více cílů ke spuštění, pokud `ContinueOnError` atribut je ErrorAndStop (nebo `false`) pro neúspěšné úlohy. Může být nula nebo více `OnError` prvky v cíli. Pokud `OnError` prvky jsou k dispozici, musí být poslední prvky v `Target` elementu.<br /><br /> Informace o tom, `ContinueOnError` atributu naleznete v tématu [Task – element (MSBuild)](../msbuild/task-element-msbuild.md).|  
+| Prvek | Popis |
+| - | - |
+| [Úloha](../msbuild/task-element-msbuild.md) | Vytvoří a spustí instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úloh. V cíli může být nula nebo více úloh. |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Obsahuje sadu uživatelem definované `Property` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `PropertyGroup` elementy. |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Obsahuje sadu uživatelem definované `Item` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `ItemGroup` elementy. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md). |
+| [Onerror –](../msbuild/onerror-element-msbuild.md) | Způsobí, že jeden nebo více cílů ke spuštění, pokud `ContinueOnError` atribut je ErrorAndStop (nebo `false`) pro neúspěšné úlohy. Může být nula nebo více `OnError` prvky v cíli. Pokud `OnError` prvky jsou k dispozici, musí být poslední prvky v `Target` elementu.<br /><br /> Informace o tom, `ContinueOnError` atributu naleznete v tématu [Task – element (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Nadřazené prvky  
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
+| Prvek | Popis |
+| - | - |
+| [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
 
 ## <a name="remarks"></a>Poznámky  
  V době běhu je zadán první cíl ke spuštění. Cíle může mít závislosti na jiných cílů. Například cíl nasazení závisí na cíli pro kompilaci. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Modul provádí v pořadí, v jakém jsou uvedeny v závislosti `DependsOnTargets` atribut zleva doprava. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md).  

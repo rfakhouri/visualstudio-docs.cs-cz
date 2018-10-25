@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865099"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Podpora vlastností projektu a konfigurace
 **Vlastnosti** okna [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) můžete zobrazit vlastnosti projektu a konfigurace. Stránky vlastností pro vlastní typ projektu můžete zadat tak, aby uživatel může nastavit vlastnosti pro vaši aplikaci.  
@@ -61,14 +61,14 @@ ms.locfileid: "46496035"
   
  `SettingsPage` Třídy a `Microsoft.VisualStudio.Package.ProjectNode` třídy nabízí tyto metody se zachovat vlastnosti projektu a konfigurace:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` a `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` zachovat vlastnosti projektu.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` a `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` zachovat vlastnosti projektu.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` a `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` zachovat vlastnosti konfigurace.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` a `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` zachovat vlastnosti konfigurace.  
   
-    > [!NOTE]
-    >  Implementace `Microsoft.VisualStudio.Package.SettingsPage` a `Microsoft.VisualStudio.Package.ProjectNode` třídy použijte `Microsoft.Build.BuildEngine` (MSBuild) metody pro získání a nastavení vlastností projektu a konfigurace ze souboru projektu.  
+  > [!NOTE]
+  >  Implementace `Microsoft.VisualStudio.Package.SettingsPage` a `Microsoft.VisualStudio.Package.ProjectNode` třídy použijte `Microsoft.Build.BuildEngine` (MSBuild) metody pro získání a nastavení vlastností projektu a konfigurace ze souboru projektu.  
   
- Odvozujete od třídy `SettingsPage` musí implementovat `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` a `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` zachovat vlastnosti projektu nebo konfigurace souboru projektu.  
+  Odvozujete od třídy `SettingsPage` musí implementovat `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` a `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` zachovat vlastnosti projektu nebo konfigurace souboru projektu.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute a cesta v registru  
  Třídy odvozené z `SettingsPage` jsou navržené ke sdílení napříč rozšíření VSPackages. Aby bylo možné pro balíček VSPackage pro vytvoření třídy odvozené z `SettingsPage`, přidejte `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` pro třídy odvozené od `Microsoft.VisualStudio.Shell.Package`.  

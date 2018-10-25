@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872405"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Návod: Vytvoření webové části pro SharePoint
 
@@ -96,13 +96,13 @@ Můžete určit, jaké ovládací prvky, které se mají zobrazit ve webové č�
 
 3. Přidejte následující kód, který `WebPart1` třídy. Tento kód deklaruje následující pole:
 
-    - Datová mřížka zobrazíte zaměstnance ve webové části.
+   - Datová mřížka zobrazíte zaměstnance ve webové části.
 
-    - Text, který se zobrazí v ovládacím prvku, který se používá k filtrování datové mřížce.
+   - Text, který se zobrazí v ovládacím prvku, který se používá k filtrování datové mřížce.
 
-    - Popisek, který se zobrazí chyba, pokud je datové mřížce nemůže zobrazit data.
+   - Popisek, který se zobrazí chyba, pokud je datové mřížce nemůže zobrazit data.
 
-    - Řetězec, který obsahuje cestu k souboru data zaměstnanců.
+   - Řetězec, který obsahuje cestu k souboru data zaměstnanců.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ Můžete určit, jaké ovládací prvky, které se mají zobrazit ve webové č�
 
 5. Nahradit `CreateChildControls` metodu s následujícím kódem. Tento kód provede následující:
 
-    - Přidá datovou mřížku a popisek, který je deklarován v předchozím kroku.
+   - Přidá datovou mřížku a popisek, který je deklarován v předchozím kroku.
 
-    - Vytvoří vazbu mřížky dat do souboru XML, který obsahuje data zaměstnanců.
+   - Vytvoří vazbu mřížky dat do souboru XML, který obsahuje data zaměstnanců.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. Přidejte následující metodu do `WebPart1` třídy. Tento kód provede následující:
 
-    - Vytvoří příkaz, který se zobrazí v nabídce příkazů webové části vykresleného webové části.
+   - Vytvoří příkaz, který se zobrazí v nabídce příkazů webové části vykresleného webové části.
 
-    - Zpracovává událost, která se vyvolá, když uživatel vybere příkaz v nabídce příkazů. Tento kód filtruje seznam zaměstnanců, která se zobrazí v datové mřížce.
+   - Zpracovává událost, která se vyvolá, když uživatel vybere příkaz v nabídce příkazů. Tento kód filtruje seznam zaměstnanců, která se zobrazí v datové mřížce.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897794"
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Textová šablona obsahuje text, který z ní bude vygenerován. Například ša
   
  Textové šablony se skládají z těchto částí:  
   
--   **Direktivy** – prvky, které určují způsob zpracování šablony.  
+- **Direktivy** – prvky, které určují způsob zpracování šablony.  
   
--   **Textové bloky** – obsah, který je zkopírován přímo do výstupu.  
+- **Textové bloky** – obsah, který je zkopírován přímo do výstupu.  
   
--   **Řídicí bloky** – programový kód, který do textu vloží hodnoty proměnných a řídí podmíněné nebo opakované části textu.  
+- **Řídicí bloky** – programový kód, který do textu vloží hodnoty proměnných a řídí podmíněné nebo opakované části textu.  
   
- Pokud chcete vyzkoušet příklady v tomto tématu, zkopírujte je do souboru šablony podle popisu v [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po úpravě souboru šablony jej uložte a poté zkontrolujte výstupní **.txt** souboru.  
+  Pokud chcete vyzkoušet příklady v tomto tématu, zkopírujte je do souboru šablony podle popisu v [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po úpravě souboru šablony jej uložte a poté zkontrolujte výstupní **.txt** souboru.  
   
 ## <a name="directives"></a>Direktivy  
  Direktivy textové šablony poskytují obecné pokyny modulu šablon textu o tom, jak generovat kód transformace a výstupní soubor.  

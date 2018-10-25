@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879529"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definování vlastní položky sady nástrojů pro modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
 ### <a name="what-the-custom-tool-will-replicate"></a>Co bude replikovat Custom Tool  
  Vlastní nástroj bude replikovat většinu funkcí zdrojového diagramu:  
   
--   Názvy. Když je vytvořena položka ze sady nástrojů, číslo se přidá na konec názvu v případě potřeby, aby se zabránilo duplicitní názvy ve stejném oboru názvů.  
+- Názvy. Když je vytvořena položka ze sady nástrojů, číslo se přidá na konec názvu v případě potřeby, aby se zabránilo duplicitní názvy ve stejném oboru názvů.  
   
--   Barvy, velikost a tvary  
+- Barvy, velikost a tvary  
   
--   Balíček profilů a stereotypů  
+- Balíček profilů a stereotypů  
   
--   Hodnoty vlastností, jako je například je abstraktní  
+- Hodnoty vlastností, jako je například je abstraktní  
   
--   Propojené pracovní položky  
+- Propojené pracovní položky  
   
--   Násobnosti a další vlastnosti relace  
+- Násobnosti a další vlastnosti relace  
   
--   Relativní umístění obrazce.  
+- Relativní umístění obrazce.  
   
- Tyto funkce se nezachová v vlastního nástroje:  
+  Tyto funkce se nezachová v vlastního nástroje:  
   
--   Jednoduché obrazce. Toto jsou tvary, které nesouvisí s prvky modelu, že lze nakreslit na některé druhy diagramů.  
+- Jednoduché obrazce. Toto jsou tvary, které nesouvisí s prvky modelu, že lze nakreslit na některé druhy diagramů.  
   
--   Konektor směrování. Pokud ručně směrování konektory směrování se nezachová při nástroj se používá. Pozice některé vnořeným obrazcům, jako je například porty, nejsou zachovány vzhledem k jejich vlastníky.  
+- Konektor směrování. Pokud ručně směrování konektory směrování se nezachová při nástroj se používá. Pozice některé vnořeným obrazcům, jako je například porty, nejsou zachovány vzhledem k jejich vlastníky.  
   
 ##  <a name="tbxinfo"></a> Definování vlastnosti vlastního nástroje  
  Informace o panelu nástrojů (**.tbxinfo**) soubor umožňuje zadat název panelu nástrojů, ikonu, popisek, karty a klíčové slovo pro jeden nebo více vlastních nástrojů nápovědy. Přiřadit libovolný název, jako například **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
  Hodnota položky může být buď:  
   
--   Jak je znázorněno v příkladu `<bmp fileName="…"/>` ikony sady nástrojů a `<value>string</value>` u jiných položek.  
+- Jak je znázorněno v příkladu `<bmp fileName="…"/>` ikony sady nástrojů a `<value>string</value>` u jiných položek.  
   
- \- nebo –  
+  \- nebo –  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     V takovém případě zadáte zkompilovaném sestavení, ve kterém byl zkompilován řetězcové hodnoty jako prostředky.  
+   V takovém případě zadáte zkompilovaném sestavení, ve kterém byl zkompilován řetězcové hodnoty jako prostředky.  
   
- Přidat `<customToolboxItem>` uzel pro každou položku sady nástrojů, které chcete definovat.  
+  Přidat `<customToolboxItem>` uzel pro každou položku sady nástrojů, které chcete definovat.  
   
- Uzly v **.tbxinfo** souboru jsou následující. Neexistuje výchozí hodnota pro každý uzel.  
+  Uzly v **.tbxinfo** souboru jsou následující. Neexistuje výchozí hodnota pro každý uzel.  
   
 |Název uzlu|definuje|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ K usnadnění vytváření elementu nebo skupiny prvků podle vzoru, který čas
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>K poskytování verze nástroje ve více než jednom jazyku  
   
-1.  Vytvořte projekt rozšíření aplikace Visual Studio, který obsahuje jeden nebo více vlastních nástrojů.  
+1. Vytvořte projekt rozšíření aplikace Visual Studio, který obsahuje jeden nebo více vlastních nástrojů.  
   
-     V **.tbxinfo** souboru, použijte metodu soubor prostředků pro definování nástroje `displayName`, nástrojů `tabName`a popisek. Vytvořit soubor prostředků, ve kterém jsou definovány tyto řetězce a zkompilovat do sestavení na ni odkazovat ze souboru tbxinfo.  
+    V **.tbxinfo** souboru, použijte metodu soubor prostředků pro definování nástroje `displayName`, nástrojů `tabName`a popisek. Vytvořit soubor prostředků, ve kterém jsou definovány tyto řetězce a zkompilovat do sestavení na ni odkazovat ze souboru tbxinfo.  
   
-2.  Vytvořte další sestavení, které obsahují soubory prostředků s řetězci v jiných jazycích.  
+2. Vytvořte další sestavení, které obsahují soubory prostředků s řetězci v jiných jazycích.  
   
-3.  Každý další sestavení umístěte do složky, jehož název je jazykovou verzi kódu pro jazyk. Francouzské verze sestavení, například umístíte text do složky s názvem **fr**.  
+3. Každý další sestavení umístěte do složky, jehož název je jazykovou verzi kódu pro jazyk. Francouzské verze sestavení, například umístíte text do složky s názvem **fr**.  
   
-4.  Používejte neutrální jazykovou verzi kódu, obvykle dvě písmena, nikoli konkrétní jazykovou verzi jako `fr-CA`. Další informace o kódech jazykových najdete v tématu [CultureInfo.GetCultures metody](http://go.microsoft.com/fwlink/?LinkId=160782), která poskytuje úplný seznam kódů jazykových verzí.  
+4. Používejte neutrální jazykovou verzi kódu, obvykle dvě písmena, nikoli konkrétní jazykovou verzi jako `fr-CA`. Další informace o kódech jazykových najdete v tématu [CultureInfo.GetCultures metody](http://go.microsoft.com/fwlink/?LinkId=160782), která poskytuje úplný seznam kódů jazykových verzí.  
   
-5.  Rozšíření sady Visual Studio můžete vytvářet a distribuovat ji.  
+5. Rozšíření sady Visual Studio můžete vytvářet a distribuovat ji.  
   
-6.  Při rozšíření je nainstalované v jiném počítači, verzi souboru prostředků na místních jazykovou verzi uživatele se automaticky načtou. Pokud jste nezadali verze pro jazykovou verzi uživatele, použije se výchozí prostředky.  
+6. Při rozšíření je nainstalované v jiném počítači, verzi souboru prostředků na místních jazykovou verzi uživatele se automaticky načtou. Pokud jste nezadali verze pro jazykovou verzi uživatele, použije se výchozí prostředky.  
   
- Tuto metodu nelze použít pro instalaci různých verzích diagram prototypu. Názvy elementů a konektory budou stejné v každé instalaci.  
+   Tuto metodu nelze použít pro instalaci různých verzích diagram prototypu. Názvy elementů a konektory budou stejné v každé instalaci.  
   
 ## <a name="other-toolbox-operations"></a>Další sady nástrojů operace  
  Obvykle v [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], můžete si přizpůsobit panel nástrojů přejmenování nástroje, jejich přesunutí na různé sady nástrojů karty a jejich odstranění. Ale tyto změny se neuloží pro nástroje pro modelování vlastní vytvořené pomocí postupů popsaných v tomto tématu. Po restartování [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], vlastních nástrojů se znovu zobrazí jejich definované názvy a umístění panelu nástrojů.  

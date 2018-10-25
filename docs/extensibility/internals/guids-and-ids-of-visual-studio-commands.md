@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926539"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Příkazy identifikátory GUID a ID sady Visual Studio
 Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí (IDE) sady Visual Studio jsou definovány v souborech .vsct, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -34,23 +34,23 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
   
 ### <a name="to-locate-a-command-definition"></a>Vyhledejte definici příkazu  
   
-1.  V sadě Visual Studio, otevřete následující soubory v seznamu *< cesta instalace sady Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  složky: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
+1. V sadě Visual Studio, otevřete následující soubory v seznamu *< cesta instalace sady Visual Studio SDK\>\VisualStudioIntegration\Common\Inc\\*  složky: *SharedCmdDef.vsct*, *ShellCmdDef.vsct*, *VsDbgCmdUsed.vsct*, *Venusmenu.vsct*.  
   
-     Většina příkazů sady Visual Studio jsou definovány v *SharedCmdDef.vsct* a *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* definuje příkazy, které se vztahují k ladicímu programu, a *Venusmenu.vsct* definuje příkazy, které jsou specifické pro vývoj pro Web.  
+    Většina příkazů sady Visual Studio jsou definovány v *SharedCmdDef.vsct* a *ShellCmdDef.vsct*. *VsDbgCmdUsed.vsct* definuje příkazy, které se vztahují k ladicímu programu, a *Venusmenu.vsct* definuje příkazy, které jsou specifické pro vývoj pro Web.  
   
-2.  Pokud je příkaz položku nabídky, mějte na paměti přesný text položky nabídky. Pokud je příkaz tlačítka na panelu nástrojů, mějte na paměti text popisku, který se zobrazí při pozastavení na něj.  
+2. Pokud je příkaz položku nabídky, mějte na paměti přesný text položky nabídky. Pokud je příkaz tlačítka na panelu nástrojů, mějte na paměti text popisku, který se zobrazí při pozastavení na něj.  
   
-3.  Stisknutím klávesy **Ctrl**+**F** otevřít **najít** dialogové okno.  
+3. Stisknutím klávesy **Ctrl**+**F** otevřít **najít** dialogové okno.  
   
-4.  V **najít** zadejte text, který jste si poznamenali v kroku 2.  
+4. V **najít** zadejte text, který jste si poznamenali v kroku 2.  
   
-5.  Ověřte, že **všechny otevřené dokumenty** se zobrazí **Hledat v** pole.  
+5. Ověřte, že **všechny otevřené dokumenty** se zobrazí **Hledat v** pole.  
   
-6.  Klikněte na tlačítko **najít další** tlačítko opakovaným text `<Strings>` část [element přepínače](../../extensibility/button-element.md).  
+6. Klikněte na tlačítko **najít další** tlačítko opakovaným text `<Strings>` část [element přepínače](../../extensibility/button-element.md).  
   
-     `<Button>` Element, který se zobrazí v příkazu je příkaz definice.  
+    `<Button>` Element, který se zobrazí v příkazu je příkaz definice.  
   
- Po nalezení definici příkazu můžete umístit kopii tohoto příkazu na jinou nabídku nebo panel nástrojů tak, že vytvoříte [commandplacement – element](../../extensibility/commandplacement-element.md) , který má stejný `guid` a `id` hodnoty jako u příkazu. Další informace najdete v tématu [vytváření znovu použitelných skupin tlačítek](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Po nalezení definici příkazu můžete umístit kopii tohoto příkazu na jinou nabídku nebo panel nástrojů tak, že vytvoříte [commandplacement – element](../../extensibility/commandplacement-element.md) , který má stejný `guid` a `id` hodnoty jako u příkazu. Další informace najdete v tématu [vytváření znovu použitelných skupin tlačítek](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Zvláštní případy  
  V následujících případech text nabídky nebo text popisku nemusí přesně odpovídat co je v definici příkazu.  

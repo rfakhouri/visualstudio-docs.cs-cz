@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207854"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913407"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,37 +29,37 @@ A *dekoratér* je ikona nebo řádek textu, který se zobrazí na tvar z jazyka 
   
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Řízení viditelnosti ikony nebo text dekoratér  
   
-1.  V definici DSL diagramu přidejte do třídy tvar ikony nebo dekoratéry textu, které se mají zobrazit.  
+1. V definici DSL diagramu přidejte do třídy tvar ikony nebo dekoratéry textu, které se mají zobrazit.  
   
-    1.  Klikněte pravým tlačítkem na třídu tvar, přejděte na **přidat**a potom klikněte na požadovaný typ dekoratér.  
+   1.  Klikněte pravým tlačítkem na třídu tvar, přejděte na **přidat**a potom klikněte na požadovaný typ dekoratér.  
   
-    2.  Nastavte dekoratér **pozice** vlastnost. Více než jeden dekoratér může mít na stejné pozici. Například můžete mít ikony pro muže a ženy, sdílení na stejné pozici.  
+   2.  Nastavte dekoratér **pozice** vlastnost. Více než jeden dekoratér může mít na stejné pozici. Například můžete mít ikony pro muže a ženy, sdílení na stejné pozici.  
   
-    3.  Nastavte **výchozí ikona** vlastnost dekoratér ikony.  
+   3.  Nastavte **výchozí ikona** vlastnost dekoratér ikony.  
   
-2.  Vyberte mapa elementu diagramu, který je Šedá čára mezi obrazec třídy a třídy domény na diagramem definice DSL.  
+2. Vyberte mapa elementu diagramu, který je Šedá čára mezi obrazec třídy a třídy domény na diagramem definice DSL.  
   
-3.  V okně podrobností DSL v **mapování Dekoratéru** kartu, vyberte dekoratér. Například MaleDecorator.  
+3. V okně podrobností DSL v **mapování Dekoratéru** kartu, vyberte dekoratér. Například MaleDecorator.  
   
-4.  Zkontrolujte, **filtr viditelnosti** pole.  
+4. Zkontrolujte, **filtr viditelnosti** pole.  
   
-5.  Pokud je doménová vlastnost, která by měla řídit viditelnost na okamžité doménová třída, ponechejte **cesta k vlastnosti filtru** prázdné.  
+5. Pokud je doménová vlastnost, která by měla řídit viditelnost na okamžité doménová třída, ponechejte **cesta k vlastnosti filtru** prázdné.  
   
-     V opačném případě klikněte na rozevírací nabídku a přejděte do relace nebo třídy, kde se nachází vlastnost.  
+    V opačném případě klikněte na rozevírací nabídku a přejděte do relace nebo třídy, kde se nachází vlastnost.  
   
-    -   Aby se zabránilo zprávu o chybách, by neměla procházet relace označené "*" v nástroji pro navigaci.  
+   -   Aby se zabránilo zprávu o chybách, by neměla procházet relace označené "*" v nástroji pro navigaci.  
   
-6.  Nastavte **vlastnost filtru** k doménové vlastnosti. Třeba pohlaví.  
+6. Nastavte **vlastnost filtru** k doménové vlastnosti. Třeba pohlaví.  
   
-7.  V **záznamy viditelnosti** seznamu, přidejte hodnoty této vlastnosti domény, pro který by měl být dekoratér viditelný. Například muže.  
+7. V **záznamy viditelnosti** seznamu, přidejte hodnoty této vlastnosti domény, pro který by měl být dekoratér viditelný. Například muže.  
   
-8.  Opakujte kroky pro jednotlivé ikony.  
+8. Opakujte kroky pro jednotlivé ikony.  
   
 9. **Transformovat všechny šablony**, sestavení a spuštění a otevřete diagram testu.  
   
 10. Když změníte řídicí hodnotu vlastnosti, by měl dekoratéry se zobrazí a zmizí.  
   
- Často budete chtít viditelnost kontrolován vzorec složitější než jednoduché sady hodnot. Například v ikony závisí na počtu odkazů určitého typu, nebo k němu závisí na tom, zda je číslo v určitém rozsahu. V takovém případě použijte následující postup.  
+    Často budete chtít viditelnost kontrolován vzorec složitější než jednoduché sady hodnot. Například v ikony závisí na počtu odkazů určitého typu, nebo k němu závisí na tom, zda je číslo v určitém rozsahu. V takovém případě použijte následující postup.  
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Řízení viditelnosti dekorátoru podle vzorce  
   

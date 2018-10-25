@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 27be9bc979ba1f3e86996aaf913502ca80142ebd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863682"
 ---
 # <a name="invokemethod-activity-designer"></a>Návrhář aktivity InvokeMethod
 **InvokeMethod** Návrhář slouží k vytvoření a konfigurace <xref:System.Activities.Statements.InvokeMethod> aktivity.  
@@ -51,15 +51,15 @@ ms.locfileid: "49252964"
   
  Algoritmus pro registraci parametry v <xref:System.Activities.Activity.CacheMetadata%2A> je znázorněno v následujícím seznamu:  
   
-1.  Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> argument.  
+1. Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> argument.  
   
-2.  Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.Result%2A> argument.  
+2. Zaregistrujte <xref:System.Activities.Statements.InvokeMethod.Result%2A> argument.  
   
-3.  Iterovat přes <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> kolekce a zaregistrovat každý argument.  
+3. Iterovat přes <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> kolekce a zaregistrovat každý argument.  
   
- Výsledný výjimka je typu <xref:System.Activities.InvalidWorkflowException> s následující zprávou: 'InvokeMethod': Proměnná argumentu RuntimeArgument nebo DelegateArgument již existuje s názvem "TargetObject". Názvy musí být v rámci oboru prostředí jedinečné.  
+   Výsledný výjimka je typu <xref:System.Activities.InvalidWorkflowException> s následující zprávou: 'InvokeMethod': Proměnná argumentu RuntimeArgument nebo DelegateArgument již existuje s názvem "TargetObject". Názvy musí být v rámci oboru prostředí jedinečné.  
   
- Toto omezení se nevztahuje na <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> a <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> vzhledem k tomu, že nejsou argumentů pracovního postupu a proto nejsou registrovány v <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> kolekce <xref:System.Activities.Statements.InvokeMethod> aktivity v <xref:System.Activities.Activity.CacheMetadata%2A> metody.  
+   Toto omezení se nevztahuje na <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> a <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> vzhledem k tomu, že nejsou argumentů pracovního postupu a proto nejsou registrovány v <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> kolekce <xref:System.Activities.Statements.InvokeMethod> aktivity v <xref:System.Activities.Activity.CacheMetadata%2A> metody.  
   
 ## <a name="see-also"></a>Viz také  
  [Primitiv](../workflow-designer/primitives-activity-designers.md)   

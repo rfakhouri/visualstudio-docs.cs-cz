@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d3191f14cb3ad10b6fb95f2da6a3a4281c839de
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921981"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Návod: Implementace kódu
 Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, aby uživatelé rozšíření můžete přidat do vlastní kód.  
@@ -27,13 +27,13 @@ Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, a
   
  Tento návod se naučíte k provedení následujících úkolů:  
   
-1.  Vytvoření a registrace fragmenty kódu pro konkrétní jazyk.  
+1. Vytvoření a registrace fragmenty kódu pro konkrétní jazyk.  
   
-2.  Přidat **Vložit fragment** příkazu do místní nabídky.  
+2. Přidat **Vložit fragment** příkazu do místní nabídky.  
   
-3.  Implementace fragment kódu rozšíření.  
+3. Implementace fragment kódu rozšíření.  
   
- Tento názorný postup je založen na [návod: zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md).  
+   Tento názorný postup je založen na [návod: zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnutý jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -43,72 +43,72 @@ Můžete vytvořit fragmenty kódu a zahrnout je do editoru rozšíření tak, a
   
  Následující kroky ukazují, jak vytvářet fragmenty kódu a přidružit konkrétní identifikátor GUID.  
   
-1.  Vytvořte následující adresářovou strukturu:  
+1. Vytvořte následující adresářovou strukturu:  
   
-     **%InstallDir%\TestSnippets\Snippets\1033\\**  
+    **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     kde *InstallDir %* je instalační složky sady Visual Studio. (I když se tato cesta se obvykle používá k instalaci fragmenty kódu, můžete jakoukoli cestu.)  
+    kde *InstallDir %* je instalační složky sady Visual Studio. (I když se tato cesta se obvykle používá k instalaci fragmenty kódu, můžete jakoukoli cestu.)  
   
-2.  Ve složce \1033\ vytvořit *.xml* soubor a pojmenujte ho **TestSnippets.xml**. (I když tento název se obvykle používá pro soubor indexu fragment kódu, můžete zadat libovolný název, jako má *.xml* příponu názvu souboru.) Přidejte následující text a odstraňovat zástupný identifikátor GUID a přidejte vlastní.  
+2. Ve složce \1033\ vytvořit *.xml* soubor a pojmenujte ho **TestSnippets.xml**. (I když tento název se obvykle používá pro soubor indexu fragment kódu, můžete zadat libovolný název, jako má *.xml* příponu názvu souboru.) Přidejte následující text a odstraňovat zástupný identifikátor GUID a přidejte vlastní.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <SnippetCollection>  
-        <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
-            <SnippetDir>  
-                <OnOff>On</OnOff>  
-                <Installed>true</Installed>  
-                <Locale>1033</Locale>  
-                <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
-                <LocalizedName>Snippets</LocalizedName>  
-            </SnippetDir>  
-        </Language>  
-    </SnippetCollection>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <SnippetCollection>  
+       <Language Lang="TestSnippets" Guid="{00000000-0000-0000-0000-000000000000}">  
+           <SnippetDir>  
+               <OnOff>On</OnOff>  
+               <Installed>true</Installed>  
+               <Locale>1033</Locale>  
+               <DirPath>%InstallRoot%\TestSnippets\Snippets\%LCID%\</DirPath>  
+               <LocalizedName>Snippets</LocalizedName>  
+           </SnippetDir>  
+       </Language>  
+   </SnippetCollection>  
+   ```  
   
-3.  Vytvořte soubor do složky fragmentů kódu, pojmenujte ho **testování**`.snippet`a poté přidejte následující text:  
+3. Vytvořte soubor do složky fragmentů kódu, pojmenujte ho **testování**`.snippet`a poté přidejte následující text:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
-        <CodeSnippet Format="1.0.0">  
-            <Header>  
-                <Title>Test replacement fields</Title>  
-                <Shortcut>test</Shortcut>  
-                <Description>Code snippet for testing replacement fields</Description>  
-                <Author>MSIT</Author>  
-                <SnippetTypes>  
-                    <SnippetType>Expansion</SnippetType>  
-                </SnippetTypes>  
-            </Header>  
-            <Snippet>  
-                <Declarations>  
-                    <Literal>  
-                      <ID>param1</ID>  
-                        <ToolTip>First field</ToolTip>  
-                        <Default>first</Default>  
-                    </Literal>  
-                    <Literal>  
-                        <ID>param2</ID>  
-                        <ToolTip>Second field</ToolTip>  
-                        <Default>second</Default>  
-                    </Literal>  
-                </Declarations>  
-                <References>  
-                   <Reference>  
-                       <Assembly>System.Windows.Forms.dll</Assembly>  
-                   </Reference>  
-                </References>  
-                <Code Language="TestSnippets">  
-                    <![CDATA[MessageBox.Show("$param1$");  
-         MessageBox.Show("$param2$");]]>  
-                </Code>    
-            </Snippet>  
-        </CodeSnippet>  
-    </CodeSnippets>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8" ?>  
+   <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+       <CodeSnippet Format="1.0.0">  
+           <Header>  
+               <Title>Test replacement fields</Title>  
+               <Shortcut>test</Shortcut>  
+               <Description>Code snippet for testing replacement fields</Description>  
+               <Author>MSIT</Author>  
+               <SnippetTypes>  
+                   <SnippetType>Expansion</SnippetType>  
+               </SnippetTypes>  
+           </Header>  
+           <Snippet>  
+               <Declarations>  
+                   <Literal>  
+                     <ID>param1</ID>  
+                       <ToolTip>First field</ToolTip>  
+                       <Default>first</Default>  
+                   </Literal>  
+                   <Literal>  
+                       <ID>param2</ID>  
+                       <ToolTip>Second field</ToolTip>  
+                       <Default>second</Default>  
+                   </Literal>  
+               </Declarations>  
+               <References>  
+                  <Reference>  
+                      <Assembly>System.Windows.Forms.dll</Assembly>  
+                  </Reference>  
+               </References>  
+               <Code Language="TestSnippets">  
+                   <![CDATA[MessageBox.Show("$param1$");  
+        MessageBox.Show("$param2$");]]>  
+               </Code>    
+           </Snippet>  
+       </CodeSnippet>  
+   </CodeSnippets>  
+   ```  
   
- Následující kroky ukazují, jak zaregistrovat fragmenty kódu.  
+   Následující kroky ukazují, jak zaregistrovat fragmenty kódu.  
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>K registraci fragmenty kódu pro konkrétní identifikátor GUID  
   

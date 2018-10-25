@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905251"
 ---
 # <a name="how-to-set-permissions"></a>Postupy: nastavení oprávnění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Členové skupiny uživatelů budou potřebovat přístup do složek a souborů na disku, které jsou sdíleny s ostatními členy týmu. Druhý postup "pro udělení přístupu k souborům sdíleného projektu," popisuje postup udělení tohoto přístupu.  
+  Členové skupiny uživatelů budou potřebovat přístup do složek a souborů na disku, které jsou sdíleny s ostatními členy týmu. Druhý postup "pro udělení přístupu k souborům sdíleného projektu," popisuje postup udělení tohoto přístupu.  
   
- Členové skupiny uživatelů můžete spustit nástroje pro profilaci, pokud správce udělí přístup k ovladači software pro nástrojů pro profilaci. Posledním postupu "postup udělení přístupu k ovladači profilování" popisuje, jak udělit přístup pro tento ovladač.  
+  Členové skupiny uživatelů můžete spustit nástroje pro profilaci, pokud správce udělí přístup k ovladači software pro nástrojů pro profilaci. Posledním postupu "postup udělení přístupu k ovladači profilování" popisuje, jak udělit přístup pro tento ovladač.  
   
 > [!NOTE]
 >  Musíte mít oprávnění správce postupovat podle kroků v těchto postupech.  
@@ -89,47 +89,47 @@ Toto téma popisuje, jak správce počítače uděluje oprávněních zabezpeče
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Udělit přístup k ovladači profilování  
   
-1.  Otevřete příkazový řádek jako správce.  
+1. Otevřete příkazový řádek jako správce.  
   
-2.  Změňte adresář na:  
+2. Změňte adresář na:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Spusťte následující příkaz:  
+3. Spusťte následující příkaz:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     Tento příkaz nainstaluje a spustí ovladač nástrojů pro profilaci.  
+    Tento příkaz nainstaluje a spustí ovladač nástrojů pro profilaci.  
   
-     Tento příkaz spustí profilaci ovladače a služby tak, aby uživatelům bez oprávnění správce může používat funkce profilování, které jsou k dispozici v prostoru procesu svoje uživatele. Pouze správce může spustit příkaz; a dojde k selhání pro uživatele bez oprávnění správce.  
+    Tento příkaz spustí profilaci ovladače a služby tak, aby uživatelům bez oprávnění správce může používat funkce profilování, které jsou k dispozici v prostoru procesu svoje uživatele. Pouze správce může spustit příkaz; a dojde k selhání pro uživatele bez oprávnění správce.  
   
-     Všimněte si, že jsou vrácena účinky tento krok po restartování počítače, pokud také provádět v posledním kroku v tomto postupu.  
+    Všimněte si, že jsou vrácena účinky tento krok po restartování počítače, pokud také provádět v posledním kroku v tomto postupu.  
   
-4.  Spusťte příkaz pro povolení přístupu k profilování funkce, které uživatel nebo skupina, která nemá přístup správce k počítači:  
+4. Spusťte příkaz pro povolení přístupu k profilování funkce, které uživatel nebo skupina, která nemá přístup správce k počítači:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     Tento příkaz udělí \<uživatelské jméno > nebo \<název skupiny > účet přístup k nástrojům profilace. \<Správné > volba určuje přístup k funkci profilování uživatele. \<Správné > možnost může být jeden nebo více z následujících hodnot:  
+    Tento příkaz udělí \<uživatelské jméno > nebo \<název skupiny > účet přístup k nástrojům profilace. \<Správné > volba určuje přístup k funkci profilování uživatele. \<Správné > možnost může být jeden nebo více z následujících hodnot:  
   
-    -   FullAccess – umožňuje přístup ke shromažďování dat výkonu ze služeb, včetně všech metod profilace vzorkování a různé relace profilování.  
+   -   FullAccess – umožňuje přístup ke shromažďování dat výkonu ze služeb, včetně všech metod profilace vzorkování a různé relace profilování.  
   
-    -   SampleProfiling – umožňuje přístup k ukázkové metod profilace  
+   -   SampleProfiling – umožňuje přístup k ukázkové metod profilace  
   
-    -   CrossSession - umožňuje přístup pro různé relace profilování, které jsou požadovány pro profilovací služby.  
+   -   CrossSession - umožňuje přístup pro různé relace profilování, které jsou požadovány pro profilovací služby.  
   
-5.  (Volitelné) Pokud chcete zachovat výsledky některého z předchozích kroků po restartování počítače, spusťte následující příkaz:  
+5. (Volitelné) Pokud chcete zachovat výsledky některého z předchozích kroků po restartování počítače, spusťte následující příkaz:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Zadaní uživatelé po přihlášení, teď budou moct používat profilovací nástroje bez oprávnění správce.  
+   Zadaní uživatelé po přihlášení, teď budou moct používat profilovací nástroje bez oprávnění správce.  
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921480"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Použití panelu čítačů v zobrazení grafů a zobrazení tabulek
 
@@ -54,7 +54,7 @@ Panel čítačů obsahuje následující funkce:
 ## <a name="tasks"></a>Úlohy
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Přidání více čítačů výkonu do grafu v zobrazení grafu:** v **čítače** panelu, můžete přidat různé druhy dat do grafu zátěžového testu přidáním dalších čítačů výkonu v grafu.|-   [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Analýza mezních hodnot zadaných v zátěžovém testu, které byly překročeny:** **čítače** panel zobrazuje ikony reprezentující překročení mezních hodnot, které poté můžete přidat do tabulek a grafů pro další analýzu.|-   [Postupy: Analýza překročení mezních použitím panelu čítačů](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Analýza všech chyb, které byly zjištěny během zátěžového testu:** **čítače** panel obsahuje uzel chyb, který obsahuje chyby kategorií a podkategorií, jako je například chyby protokolu HTTP, které můžete použít k přidání chyb do grafů pro Další analýzu.|-   [Postupy: Analýza chyb s použitím panelu čítačů](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Zvolte hodnotu **vzorkovací frekvence** vlastnost v zátěžovém testu běhu n
 Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 
 |Doba trvání zátěžového testu|Doporučená frekvence vzorkování|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hodina|5 sekund|
 |1 - 8 hodin|15 sekund|
 |8 - 24 hodin|30 sekund|

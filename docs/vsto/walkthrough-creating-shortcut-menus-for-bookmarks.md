@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884079"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Návod: Vytváření místních nabídek pro záložky
   Tento návod ukazuje, jak vytvořit místní nabídky pro <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků v přizpůsobení úrovni dokumentu pro aplikaci Word. Když uživatel klepne pravým tlačítkem myši textu v záložce, místní nabídce se zobrazí a poskytuje možnosti uživatele pro formátování textu.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783839"
   
  Tento návod znázorňuje následující úlohy:  
   
--   [Vytvoření projektu](#BKMK_CreateProject).  
+- [Vytvoření projektu](#BKMK_CreateProject).  
   
--   [Přidání textu a záložky v dokumentu](#BKMK_addtextandbookmarks).  
+- [Přidání textu a záložky v dokumentu](#BKMK_addtextandbookmarks).  
   
--   [Přidání příkazů pro nabídku](#BKMK_AddCmndsShortMenu).  
+- [Přidání příkazů pro nabídku](#BKMK_AddCmndsShortMenu).  
   
--   [Formátování textu v záložce](#BKMK_formattextbkmk).  
+- [Formátování textu v záložce](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
@@ -69,22 +69,22 @@ ms.locfileid: "38783839"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Chcete-li přidat ovládací prvek Bookmark do dokumentu  
   
-1.  V **nástrojů**, z **ovládací prvky aplikace Word** kartu tak, že přetáhnete <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku do dokumentu.  
+1. V **nástrojů**, z **ovládací prvky aplikace Word** kartu tak, že přetáhnete <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku do dokumentu.  
   
-     **Přidejte ovládací prvek Bookmark** zobrazí se dialogové okno.  
+    **Přidejte ovládací prvek Bookmark** zobrazí se dialogové okno.  
   
-2.  Výběr slov "Vytvoření nabídku, když kliknete pravým tlačítkem na text" a potom klikněte na tlačítko **OK**.  
+2. Výběr slov "Vytvoření nabídku, když kliknete pravým tlačítkem na text" a potom klikněte na tlačítko **OK**.  
   
-     `bookmark1` je přidán do dokumentu.  
+    `bookmark1` je přidán do dokumentu.  
   
-3.  Přidejte další <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího slova "klikněte pravým tlačítkem na text v záložku".  
+3. Přidejte další <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího slova "klikněte pravým tlačítkem na text v záložku".  
   
-     `bookmark2` je přidán do dokumentu.  
+    `bookmark2` je přidán do dokumentu.  
   
-    > [!NOTE]  
-    >  Slova "klikněte pravým tlačítkem na text" jsou v obou `bookmark1` a `bookmark2`.  
+   > [!NOTE]  
+   >  Slova "klikněte pravým tlačítkem na text" jsou v obou `bookmark1` a `bookmark2`.  
   
- Když přidáte záložku dokumentu v době návrhu <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek vytvořen. Můžete programovat proti několika událostem záložky. Můžete napsat kód <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> události záložky tak, že když uživatel klepne pravým tlačítkem myši textu v záložce, zobrazí místní nabídka.  
+   Když přidáte záložku dokumentu v době návrhu <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek vytvořen. Můžete programovat proti několika událostem záložky. Můžete napsat kód <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> události záložky tak, že když uživatel klepne pravým tlačítkem myši textu v záložce, zobrazí místní nabídka.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Přidání příkazů do místní nabídky  
  Přidání tlačítek do místní nabídky, která se zobrazí, když kliknete pravým tlačítkem na dokument.  

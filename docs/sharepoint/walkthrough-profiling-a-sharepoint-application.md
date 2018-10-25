@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852742"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Návod: Profilovat aplikaci služby SharePoint
   Tento návod ukazuje, jak pomocí nástrojů pro profilaci v sadě Visual Studio za účelem optimalizace výkonu aplikace SharePoint. Ukázková aplikace je příjemce událostí funkce Sharepointu, který obsahuje nečinné smyčky, která snižuje výkon příjemce událostí funkce. Profiler sady Visual Studio umožňuje vyhledat a odstranit nejdražší (nejpomalejší provádění) součást projektu, označované také jako *kritickou cestu*.  
   
  Tento návod demonstruje následující úkoly:  
   
--   [Přidání funkcí a příjemce událostí funkce](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Přidání funkcí a příjemce událostí funkce](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Konfigurace a nasazení aplikace služby SharePoint](#BKMK_ConfigSharePointApp).  
+- [Konfigurace a nasazení aplikace služby SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Spuštění aplikace SharePoint](#BKMK_RunSPApp).  
+- [Spuštění aplikace SharePoint](#BKMK_RunSPApp).  
   
--   [Zobrazení a interpretace výsledků profilace](#BKMK_ViewResults).  
+- [Zobrazení a interpretace výsledků profilace](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
@@ -52,23 +52,23 @@ ms.locfileid: "42634703"
   
 #### <a name="to-create-a-sharepoint-project"></a>Vytvoření projektu služby SharePoint  
   
-1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
+1. V panelu nabídky zvolte **souboru** > **nový** > **projektu** zobrazíte **nový projekt** dialogové okno.  
   
-2.  Rozbalte **SharePoint** uzlu buď **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **2010** uzlu.  
+2. Rozbalte **SharePoint** uzlu buď **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **2010** uzlu.  
   
-3.  V podokně šablony vyberte **projektu služby SharePoint 2010** šablony.  
+3. V podokně šablony vyberte **projektu služby SharePoint 2010** šablony.  
   
-4.  V **název** zadejte **ProfileTest**a klikněte na tlačítko **OK** tlačítko.  
+4. V **název** zadejte **ProfileTest**a klikněte na tlačítko **OK** tlačítko.  
   
-     **Průvodce přizpůsobením SharePoint** se zobrazí.  
+    **Průvodce přizpůsobením SharePoint** se zobrazí.  
   
-5.  Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint server, ve kterém chcete ladit definice webu nebo použijte výchozí umístění (http://*systémový název*/) .  
+5. Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint server, ve kterém chcete ladit definice webu nebo použijte výchozí umístění (http://<em>systémový název</em>/) .  
   
-6.  V **co je úroveň důvěryhodnosti pro toto řešení SharePoint?** zvolte **nasadit jako řešení farmy** přepínač.  
+6. V **co je úroveň důvěryhodnosti pro toto řešení SharePoint?** zvolte **nasadit jako řešení farmy** přepínač.  
   
-     V současné době je možné pouze řešení farmy profilu. Další informace o řešení v izolovaném prostoru a řešení farmy najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
+    V současné době je možné pouze řešení farmy profilu. Další informace o řešení v izolovaném prostoru a řešení farmy najdete v tématu [aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Zvolte **Dokončit** tlačítko. Projekt se objeví v **Průzkumníka řešení**.  
+7. Zvolte **Dokončit** tlačítko. Projekt se objeví v **Průzkumníka řešení**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Přidání funkcí a příjemce událostí funkce
  V dalším kroku přidejte funkce do projektu spolu s přijímače událostí pro funkci. Tento příjemce událostí bude obsahovat kód, který má být profilována.  

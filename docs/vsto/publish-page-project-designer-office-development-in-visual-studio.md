@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f1cd13ac0e167b407d01d2a5d769de16f6ce4da0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904710"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publikovat stranu, Návrhář projektů (vývoj pro Office v sadě Visual Studio)
   **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení.  
@@ -40,7 +40,7 @@ ms.locfileid: "35675829"
   
  Umístění složky pro publikování je adresář, do které Visual Studio kopíruje soubory řešení, jako je například manifesty, sestavení a dalších souborů ze sestavení. Musíte mít přístup pro zápis do tohoto adresáře.  
   
- Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\*), nebo plně kvalifikované umístění (*\\\servername\foldername* nebo http://*servername/foldername*).  
+ Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\*), nebo plně kvalifikované umístění (*\\\servername\foldername* nebo http://<em>servername/foldername</em>).  
   
  Ve výchozím nastavení, je umístění pro publikování *http://localhost/projectname/* Pokud máte službu IIS nainstalovánu, nebo *publikovat\\*  adresáře, pokud nemáte nainstalovanou službu IIS.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "35675829"
   
  Adresa URL složky instalace je adresář, ze kterého koncový uživatel nainstaluje vlastního nastavení. Je také cestu pro toto řešení bude používat ke kontrole aktualizací. Cesta může být stejné jako umístění složky pro publikování, ale to není povinné.  
   
- Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\*), nebo plně kvalifikované umístění (*\\\servername\foldername* nebo http://*servername/foldername*). Všechna místa protokolu HTTP/HTTPS musí být vytvořena znaků US-ASCII. Znaky Unicode nejsou podporovány.  
+ Mezi možnosti patří v místním počítači, UNC sdílené složky nebo webové stránky HTTP/HTTPS. Cesta může být místní (*c:\foldername\publishfolder*), relativní (*publikovat\\*), nebo plně kvalifikované umístění (*\\\servername\foldername* nebo http://<em>servername/foldername</em>). Všechna místa protokolu HTTP/HTTPS musí být vytvořena znaků US-ASCII. Znaky Unicode nejsou podporovány.  
   
  Pokud cesta instalace je nastavena, musí být soubory vlastního nastavení v dané oblasti pro uživatele k instalaci vlastního nastavení. Umístění je třeba nastavit pouze v případě, že znáte umístění poslední nasazení.  
   
@@ -60,55 +60,55 @@ ms.locfileid: "35675829"
  **Požadované součásti**  
  Požadavky lze zahrnout pomocí instalačního programu nebo stažen na vyžádání během instalace.  
   
--   **Stáhnout nezbytné součásti z webu dodavatele součástí**: tuto možnost použijte, chcete-li stáhnout tyto požadavky od Microsoftu.  
+- **Stáhnout nezbytné součásti z webu dodavatele součástí**: tuto možnost použijte, chcete-li stáhnout tyto požadavky od Microsoftu.  
   
--   **Stáhnout součásti ze stejného umístění, jako je má aplikace**: tuto možnost použijte, pokud chcete zabalit požadované součásti v instalačním programem vaší. Včetně požadované soubory s instalačním programem zvyšuje velikost řešení.  
+- **Stáhnout součásti ze stejného umístění, jako je má aplikace**: tuto možnost použijte, pokud chcete zabalit požadované součásti v instalačním programem vaší. Včetně požadované soubory s instalačním programem zvyšuje velikost řešení.  
   
--   **Stáhnout nezbytné součásti z následujícího umístění**: tuto možnost použijte, aby požadavky k dispozici koncovým uživatelům samostatně jako jiný instalační program na webové stránky nebo sdílené síťové složce.  
+- **Stáhnout nezbytné součásti z následujícího umístění**: tuto možnost použijte, aby požadavky k dispozici koncovým uživatelům samostatně jako jiný instalační program na webové stránky nebo sdílené síťové složce.  
   
- **Aktualizace**  
- Interval aktualizace Určuje, jak často se řešení zjišťuje dostupnost aktualizací. Ve výchozím nastavení je kontrolovat každých sedm dní.  
+  **Aktualizace**  
+  Interval aktualizace Určuje, jak často se řešení zjišťuje dostupnost aktualizací. Ve výchozím nastavení je kontrolovat každých sedm dní.  
   
- Vyhledávají se aktualizace pokaždé, když je načten do přizpůsobení na úrovni dokumentu nebo doplňku VSTO ponechá ho aktualizovat, ale bude mít vliv na výkon při spuštění.  
+  Vyhledávají se aktualizace pokaždé, když je načten do přizpůsobení na úrovni dokumentu nebo doplňku VSTO ponechá ho aktualizovat, ale bude mít vliv na výkon při spuštění.  
   
- Pokud provádíte nasazení s použitím disku CD-ROM nebo vyměnitelné jednotky, nastavte tuto vlastnost **nikdy Nezjišťovat dostupnost aktualizací**.  
+  Pokud provádíte nasazení s použitím disku CD-ROM nebo vyměnitelné jednotky, nastavte tuto vlastnost **nikdy Nezjišťovat dostupnost aktualizací**.  
   
- **Možnosti (popis)**  
- Můžete nastavit možnosti publikovat pro následující vlastnosti:  
+  **Možnosti (popis)**  
+  Můžete nastavit možnosti publikovat pro následující vlastnosti:  
   
--   Jazyk publikování: národní prostředí řešení pro Office.  
+- Jazyk publikování: národní prostředí řešení pro Office.  
   
--   Název vydavatele: název společnosti nebo vývojář se zobrazí v **přidat nebo odebrat programy** nebo **programy a funkce**.  
+- Název vydavatele: název společnosti nebo vývojář se zobrazí v **přidat nebo odebrat programy** nebo **programy a funkce**.  
   
--   Název produktu: název řešení Office, protože se zobrazí v **přidat nebo odebrat programy** nebo **programy a funkce**.  
+- Název produktu: název řešení Office, protože se zobrazí v **přidat nebo odebrat programy** nebo **programy a funkce**.  
   
--   Adresa URL podpory: umístění koncoví uživatelé kontaktovat technickou podporu pro řešení Office.  
+- Adresa URL podpory: umístění koncoví uživatelé kontaktovat technickou podporu pro řešení Office.  
   
- **Možnosti (nastavení Office)**  
- Můžete nastavit možnosti publikovat pro následující vlastnosti:  
+  **Možnosti (nastavení Office)**  
+  Můžete nastavit možnosti publikovat pro následující vlastnosti:  
   
--   Název řešení: název jako řešení pro Office se zobrazí v aplikaci Office.  
+- Název řešení: název jako řešení pro Office se zobrazí v aplikaci Office.  
   
--   Popis: popis jako řešení pro Office se zobrazí v aplikaci Office.  
+- Popis: popis jako řešení pro Office se zobrazí v aplikaci Office.  
   
--   Chování načítání doplňku VSTO.  
+- Chování načítání doplňku VSTO.  
   
-    -   Při spuštění: Určuje, že doplňku VSTO načte při spuštění aplikace Office.  
+  -   Při spuštění: Určuje, že doplňku VSTO načte při spuštění aplikace Office.  
   
-    -   Načítání na vyžádání: Určuje, že doplňku VSTO načte Pokud aplikace vyžaduje, například když uživatel klikne prvek uživatelského rozhraní, která využívá funkce v doplňku VSTO.  
+  -   Načítání na vyžádání: Určuje, že doplňku VSTO načte Pokud aplikace vyžaduje, například když uživatel klikne prvek uživatelského rozhraní, která využívá funkce v doplňku VSTO.  
   
- **Jazyk publikování** tato možnost nastaví jazyk licenční podmínky pro Software společnosti Microsoft a obsahuje seznam požadovaných jazykových sad. Jazyk vlastního nastavení nemá vliv. Jazyk v instalačním programu se určuje podle nainstalované jazyky sady Visual Studio.  
+  **Jazyk publikování** tato možnost nastaví jazyk licenční podmínky pro Software společnosti Microsoft a obsahuje seznam požadovaných jazykových sad. Jazyk vlastního nastavení nemá vliv. Jazyk v instalačním programu se určuje podle nainstalované jazyky sady Visual Studio.  
   
- Další informace o tom, jak změnit **jazyk publikování**, naleznete v tématu [postupy: Změna jazyka publikování pro aplikaci ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+  Další informace o tom, jak změnit **jazyk publikování**, naleznete v tématu [postupy: Změna jazyka publikování pro aplikaci ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
- **Verze publikování**  
- Nastaví číslo verze pro přizpůsobení. Při změně číslo verze aplikace publikována jako aktualizace. Během procesu sestavení, abyste zabránili přepsání dříve publikované verze je vytvořena nová složka pro každou verzi. Každá část verzi publikování (**hlavní**, **menší**, **sestavení**, **revize**) může obsahovat až pět číslic.  
+  **Verze publikování**  
+  Nastaví číslo verze pro přizpůsobení. Při změně číslo verze aplikace publikována jako aktualizace. Během procesu sestavení, abyste zabránili přepsání dříve publikované verze je vytvořena nová složka pro každou verzi. Každá část verzi publikování (**hlavní**, **menší**, **sestavení**, **revize**) může obsahovat až pět číslic.  
   
- **Automaticky zvyšovat číslo každé vydané verze**  
- Volitelné. Při výběru (výchozí), **revize** část čísla verze se zvýší o jedna pokaždé, když se publikuje přizpůsobení. To způsobí, že má být publikován jako aktualizace vlastního nastavení.  
+  **Automaticky zvyšovat číslo každé vydané verze**  
+  Volitelné. Při výběru (výchozí), **revize** část čísla verze se zvýší o jedna pokaždé, když se publikuje přizpůsobení. To způsobí, že má být publikován jako aktualizace vlastního nastavení.  
   
- **Publikovat**  
- Publikuje aplikace s použitím aktuální nastavení. Ekvivalentní **Dokončit** tlačítko **Průvodce publikováním**.  
+  **Publikovat**  
+  Publikuje aplikace s použitím aktuální nastavení. Ekvivalentní **Dokončit** tlačítko **Průvodce publikováním**.  
   
 ## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913212"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Postupy: přizpůsobení diagramů tříd
 
@@ -31,17 +31,17 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
 > [!NOTE]
 > Upravením způsobu, jakým se tvary v diagramu zobrazují, nezměníte základní kód pro typy znázorněné v diagramu.
 
-Oddíly, které obsahují zadejte členy, například **vlastnosti** část v třídě, se nazývají přihrádky. Jednotlivé oddíly a členy typu můžete skrýt nebo zobrazit.
+Oddíly, které obsahují členy, typu, jako **vlastnosti** části ve třídě, se nazývají oddíly. Jednotlivé oddíly a členy typu můžete skrýt nebo zobrazit.
 
 ## <a name="zoom-in-and-out-of-the-class-diagram"></a>Přiblížení a oddálení diagramu tříd
 
 1. Otevřete a vyberte soubor diagramu tříd v **návrhář tříd**.
 
-2. Na **návrhář tříd** nástrojů, klikněte na tlačítko **přiblížit** nebo **Oddálit** tlačítko změnit úroveň přiblížení plochu návrháře.
+2. Na **návrhář tříd** nástrojů, klikněte na tlačítko **přiblížit** nebo **Oddálit** tlačítko a změňte úroveň přiblížení návrhové ploše.
 
      or
 
-     Zadejte hodnotu přiblížení. Můžete použít **zvětšení** rozevíracím seznamu nebo zadejte platný přiblížení úroveň (platný rozsah je od 10 % až 400 %).
+     Zadejte hodnotu přiblížení. Můžete použít **přiblížení** rozevíracím seznamu nebo zadejte platnou úroveň přiblížení (platný rozsah je od 10 do 400 %).
 
     > [!NOTE]
     > Změna úrovně přiblížení neovlivní měřítko výtisku vašeho diagramu tříd.
@@ -50,23 +50,23 @@ Oddíly, které obsahují zadejte členy, například **vlastnosti** část v t�
 
 1. Otevřete a vyberte soubor diagramu tříd v **návrhář tříd**.
 
-2. Klikněte pravým tlačítkem myši na prázdnou oblast na návrhovou plochu a přejděte na **členy skupiny**.
+2. Klikněte pravým tlačítkem na prázdnou oblast na návrhové ploše a přejděte na **členy skupiny**.
 
 3. Vyberte jednu z dostupných možností:
 
-    - **Seskupit podle druhu** odděluje jednotlivé typ členy do seskupené seznam vlastností, metody, události a pole. Jednotlivé skupiny závisí na definici entit: třída například nebude zobrazovat žádnou skupinu událostí, pokud pro danou třídu zatím nebyly definovány žádné události.
+    - **Seskupit podle druhu** odděluje jednotlivé členy typu do seskupeného seznamu vlastností, metod, událostí a polí. Jednotlivé skupiny závisí na definici entit: třída například nebude zobrazovat žádnou skupinu událostí, pokud pro danou třídu zatím nebyly definovány žádné události.
 
-    - **Seskupit podle přístup** odděluje jednotlivé typ členů do seznamu seskupené podle člena přístup modifikátory. Například veřejné a soukromé.
+    - **Seskupit podle přístupu ke** modifikátorů přístupu odděluje jednotlivé členy typu do seskupeného seznamu na základě tohoto členu. Například veřejné a soukromé.
 
-    - **Seřadit podle abecedy** zobrazí položky, které tvoří entitu jako jeden abecední seznam. Seznam je seřazen vzestupně.
+    - **Seřadit podle abecedy** zobrazuje položky, které tvoří entitu, jako jeden abecední seznam. Seznam je seřazen vzestupně.
 
 ## <a name="hide-compartments-on-a-type"></a>Skrytí oddílů typu
 
 1. Otevřete a vyberte soubor diagramu tříd v **návrhář tříd**.
 
-2. Klikněte pravým tlačítkem na kategorii členů v typu, který chcete přizpůsobit (například vyberte **metody** uzlu v třídě.
+2. Klikněte pravým tlačítkem myši klikněte na kategorii členu v typu, který chcete přizpůsobit (například, vyberte **metody** uzlu ve třídě.
 
-3. Klikněte na tlačítko **skrýt prostředí**.
+3. Klikněte na tlačítko **skrýt oddíl**.
 
      Vybraný oddíl zmizí z kontejneru typu.
 
@@ -96,7 +96,7 @@ Oddíly, které obsahují zadejte členy, například **vlastnosti** část v t�
 
 2. Klikněte pravým tlačítkem myši na asociační čáru nebo čáru dědičnosti, kterou chcete skrýt.
 
-3. Klikněte na tlačítko **skrýt** pro Asociační čáry a klikněte na **skrýt řádek dědičnosti** pro dědičnosti řádky.
+3. Klikněte na tlačítko **skrýt** pro Asociační čáry a klikněte na **Skrýt čáru dědičnosti** u čar dědičnosti.
 
 4. Klikněte na tlačítko **zobrazit všechny členy**.
 
@@ -108,14 +108,14 @@ Oddíly, které obsahují zadejte členy, například **vlastnosti** část v t�
 
 2. Klikněte pravým tlačítkem na typ se skrytým přidružením nebo dědičností.
 
- Klikněte na tlačítko **zobrazit všechny členy** pro Asociační čáry a klikněte na **zobrazit základní třída** nebo **Zobrazit odvozené třídy** pro dědičnosti řádky.
+   Klikněte na tlačítko **zobrazit všechny členy** pro Asociační čáry a klikněte na **zobrazit základní třídu** nebo **Zobrazit odvozené třídy** u čar dědičnosti.
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>Odebrání tvaru z diagramu tříd
 Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu typu. Odebrání tvarů typu z diagramu tříd ovlivní pouze tento diagram: základní kód definující typ a ostatní diagramy, které typ zobrazují, ovlivněny nejsou.
 
 1. V diagramu tříd vyberte tvar typu, který chcete z diagramu odebrat.
 
-2. Na **upravit** nabídce zvolte **odebrání Diagram**.
+2. Na **upravit** nabídce zvolte **odebrat z diagramu**.
 
      Tvar typu a čáry přidružení nebo dědičnosti spojené s tvarem se již v diagramu nezobrazí.
 
@@ -123,11 +123,11 @@ Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu 
 
 1. Klikněte pravým tlačítkem myši na tvar na návrhové ploše.
 
-2. Vyberte **odstranit kód** v místní nabídce.
+2. Vyberte **smazat kód** v místní nabídce.
 
      Tvar je odstraněn z diagramu a jeho základní kód je odstraněn z projektu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Práce s diagramy tříd](working-with-class-diagrams.md)
 - [Postupy: změna mezi zápisem člena a zápisem asociace](how-to-change-between-member-notation-and-association-notation.md)

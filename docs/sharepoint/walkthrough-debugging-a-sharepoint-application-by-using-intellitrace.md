@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927343"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace
 
@@ -46,7 +46,7 @@ S použitím technologie IntelliTrace, můžete snadněji ladit řešení služb
 
 - [Ladění a opravy řešení SharePoint](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -265,15 +265,15 @@ Přidání kódu do příjemce funkce a data Collection je spuštěna, nasazení
 
 3. Deaktivace funkce provedením následujících kroků:
 
-    1. Na **Akce webu** nabídku v Sharepointu, zvolte **nastavení webu**.
+   1. Na **Akce webu** nabídku v Sharepointu, zvolte **nastavení webu**.
 
-    2. V části **Akce webu**, zvolte **spravovat funkce webu** odkaz.
+   2. V části **Akce webu**, zvolte **spravovat funkce webu** odkaz.
 
-    3. Vedle položky **IntelliTraceTest Feature1**, zvolte **deaktivovat** tlačítko.
+   3. Vedle položky **IntelliTraceTest Feature1**, zvolte **deaktivovat** tlačítko.
 
-    4. Na stránce s varováním, zvolte **deaktivovat tuto funkci** odkaz.
+   4. Na stránce s varováním, zvolte **deaktivovat tuto funkci** odkaz.
 
-     Obslužná rutina události FeatureDeactivating() vyvolá chybu.
+      Obslužná rutina události FeatureDeactivating() vyvolá chybu.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Shromažďování dat IntelliTrace pomocí agenta Microsoft Monitoring Agent
 
@@ -286,19 +286,19 @@ Pokud instalujete agenta Microsoft Monitoring Agent na počítači se systémem 
 
 2. Deaktivace funkce:
 
-    1. Na **Akce webu** nabídku v Sharepointu, zvolte **nastavení webu**.
+   1. Na **Akce webu** nabídku v Sharepointu, zvolte **nastavení webu**.
 
-    2. V části **Akce webu**, zvolte **spravovat funkce webu** odkaz.
+   2. V části **Akce webu**, zvolte **spravovat funkce webu** odkaz.
 
-    3. Vedle položky **IntelliTraceTest Feature1**, zvolte **deaktivovat** tlačítko.
+   3. Vedle položky **IntelliTraceTest Feature1**, zvolte **deaktivovat** tlačítko.
 
-    4. Na stránce s varováním, zvolte **deaktivovat tuto funkci** odkaz.
+   4. Na stránce s varováním, zvolte **deaktivovat tuto funkci** odkaz.
 
-     (V tomto případě z důvodu chyby vyvolané v obslužné rutině události FeatureDeactivating()) dojde k chybě.
+      (V tomto případě z důvodu chyby vyvolané v obslužné rutině události FeatureDeactivating()) dojde k chybě.
 
 3. V okně Powershellu, spusťte [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) příkaz pro vytvoření souboru .iTrace, zastavit monitorování a restartujte řešení služby SharePoint.
 
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>Ladění a opravy řešení SharePoint
 

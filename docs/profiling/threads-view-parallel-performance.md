@@ -14,29 +14,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80ce83bba65affcb47a702d572d8d962f712667e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883988"
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
 **Zobrazení vláken** je nejvíce podrobná a plně funkční zobrazení ve vizualizátoru souběžnosti (zvolte **analyzovat** > **Vizualizátor souběžnosti** spusťte Vizualizér souběžnosti). Pomocí tohoto zobrazení můžete identifikovat, jestli jsou vlákna provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
   
  Vizualizátor souběžnosti během analýzy profilu, zkontroluje všechny události přepnutí kontextu operačního systému pro každé vlákno aplikace. Přepnutí kontextu může dojít z mnoha důvodů, jako je například tyto:  
   
--   Vlákno je blokována v primitiv synchronizace.  
+- Vlákno je blokována v primitiv synchronizace.  
   
--   Vypršení platnosti quantum vlákna.  
+- Vypršení platnosti quantum vlákna.  
   
--   Vlákno požádá blokování vstupně-výstupních operací.  
+- Vlákno požádá blokování vstupně-výstupních operací.  
   
- Zobrazení vláken přiřadí kategorie každého přepnutí kontextu, když vlákno ukončila provádění. Kategorie jsou uvedeny v legendě v levé dolní části zobrazení. Vizualizátor souběžnosti kategorizuje přepněte kontext události tak, že dobře známé blokování rozhraní API zásobník volání vlákna. Pokud není nalezena žádná volání zásobníku shoda, Důvod čekání, která je poskytována [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] se používá. Ale [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorie mohou být založeny na podrobnosti implementace a nemusí odrážet záměru uživatele. Například [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] sestavy čekání důvod pro blokování zámku nativní tenký čtení a zápis jako vstupně-výstupní operace namísto synchronizace. Ve většině případů můžete identifikovat původní příčinu možných blokujících událostí prozkoumáním zásobníky volání, které odpovídají přepněte kontext události.  
+  Zobrazení vláken přiřadí kategorie každého přepnutí kontextu, když vlákno ukončila provádění. Kategorie jsou uvedeny v legendě v levé dolní části zobrazení. Vizualizátor souběžnosti kategorizuje přepněte kontext události tak, že dobře známé blokování rozhraní API zásobník volání vlákna. Pokud není nalezena žádná volání zásobníku shoda, Důvod čekání, která je poskytována [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] se používá. Ale [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorie mohou být založeny na podrobnosti implementace a nemusí odrážet záměru uživatele. Například [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] sestavy čekání důvod pro blokování zámku nativní tenký čtení a zápis jako vstupně-výstupní operace namísto synchronizace. Ve většině případů můžete identifikovat původní příčinu možných blokujících událostí prozkoumáním zásobníky volání, které odpovídají přepněte kontext události.  
   
- Zobrazení vláken také ukazuje závislosti mezi vlákny. Případě identifikujete vlákno, které je blokována v synchronizační objekt, můžete vyhledat vlákna, které ho odblokováno a aktivity v zásobníku volání pro toto vlákno v místě, můžete zkontrolovat při otevření druhou.  
+  Zobrazení vláken také ukazuje závislosti mezi vlákny. Případě identifikujete vlákno, které je blokována v synchronizační objekt, můžete vyhledat vlákna, které ho odblokováno a aktivity v zásobníku volání pro toto vlákno v místě, můžete zkontrolovat při otevření druhou.  
   
- Při provádění vlákna Vizualizátor souběžnosti shromažďuje ukázky. V zobrazení vláken můžete analyzovat, jaký kód provádí jeden nebo více vláken během provádění segmentu. Můžete také prozkoumat blokování sestavy a sestavy, které profilu zásobník volání stromu spuštění.  
+  Při provádění vlákna Vizualizátor souběžnosti shromažďuje ukázky. V zobrazení vláken můžete analyzovat, jaký kód provádí jeden nebo více vláken během provádění segmentu. Můžete také prozkoumat blokování sestavy a sestavy, které profilu zásobník volání stromu spuštění.  
   
 ## <a name="usage"></a>Použití  
  Tady jsou některé způsoby, které můžete zobrazení vláken:  
@@ -58,26 +58,26 @@ ms.locfileid: "35675863"
 ## <a name="examine-specific-time-intervals-and-threads"></a>Prozkoumat konkrétní časové intervaly a vlákna  
  Zobrazení vláken ukazuje časovou osu. Můžete přiblížení a posouvání v časové ose ke kontrole určitých intervalech a vlákna vaší aplikace. Na ose x čas a na ose y jsou několika kanálů:  
   
--   Dva kanály vstupně-výstupních operací pro každou jednotku disku na systém, jeden kanál pro čtení a jeden pro zápis.  
+- Dva kanály vstupně-výstupních operací pro každou jednotku disku na systém, jeden kanál pro čtení a jeden pro zápis.  
   
--   Kanál pro každé vlákno v procesu.  
+- Kanál pro každé vlákno v procesu.  
   
--   Kanály značky, pokud jsou značky událostí v trasování. Značky kanály zpočátku zobrazí v položce vláken kanály, které vygeneruje tyto události.  
+- Kanály značky, pokud jsou značky událostí v trasování. Značky kanály zpočátku zobrazí v položce vláken kanály, které vygeneruje tyto události.  
   
--   Kanály GPU.  
+- Kanály GPU.  
   
- Tady je ilustraci zobrazení vláken:  
+  Tady je ilustraci zobrazení vláken:  
   
- ![Zobrazit vlákna](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-Zobrazení vláken  
+  ![Zobrazit vlákna](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  Zobrazení vláken  
   
- Na začátku vlákna jsou seřazeny v pořadí, ve kterém jsou vytvořeny, tak, aby se první hlavního vlákna aplikace. Možnost řazení v levém horním rohu zobrazení můžete řadit vlákna podle jiného kritéria (například pomocí provádí většinu práce spuštění).  
+  Na začátku vlákna jsou seřazeny v pořadí, ve kterém jsou vytvořeny, tak, aby se první hlavního vlákna aplikace. Možnost řazení v levém horním rohu zobrazení můžete řadit vlákna podle jiného kritéria (například pomocí provádí většinu práce spuštění).  
   
- Můžete skrýt vlákna, která se provede práci výběrem jejich názvy ve sloupci na levé straně a potom kliknete **skrýt vybraná vlákna** tlačítko na panelu nástrojů. Doporučujeme, abyste skrytí vláken, které jsou zcela blokována, protože jejich statistiky nejsou relevantní a můžete clog sestavy.  
+  Můžete skrýt vlákna, která se provede práci výběrem jejich názvy ve sloupci na levé straně a potom kliknete **skrýt vybraná vlákna** tlačítko na panelu nástrojů. Doporučujeme, abyste skrytí vláken, které jsou zcela blokována, protože jejich statistiky nejsou relevantní a můžete clog sestavy.  
   
- Chcete-li identifikovat další vlákna skrýt v aktivní legenda, zvolte **Souhrn podle vláken** sestavy **Sestava profilu** kartu. Zobrazí rozpis spuštění grafu, který ukazuje stav vláken pro aktuálně vybraný časový interval. Na některých úrovních přiblížení nemusí být zobrazeny některá vlákna. Když k tomu dojde, symbol tří teček se zobrazí na pravé straně.  
+  Chcete-li identifikovat další vlákna skrýt v aktivní legenda, zvolte **Souhrn podle vláken** sestavy **Sestava profilu** kartu. Zobrazí rozpis spuštění grafu, který ukazuje stav vláken pro aktuálně vybraný časový interval. Na některých úrovních přiblížení nemusí být zobrazeny některá vlákna. Když k tomu dojde, symbol tří teček se zobrazí na pravé straně.  
   
- Po výběru intervalu a některá vlákna v ní můžete spustit analýzu výkonu.  
+  Po výběru intervalu a některá vlákna v ní můžete spustit analýzu výkonu.  
   
 ## <a name="analysis-tools"></a>Nástroje pro analýzu  
  Tato část popisuje sestavy a další nástroje pro analýzu.  

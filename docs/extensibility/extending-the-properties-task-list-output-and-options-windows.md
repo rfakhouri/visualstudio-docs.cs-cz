@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868687"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozšíření vlastností, seznamu úkolů, výstupu a možnosti systému windows
 Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento návod ukazuje, jak integrovat informace o vaší panelu nástrojů do nového **možnosti** stránky a nové nastavení na **vlastnosti** stránky a také způsob zápisu do **seznamu úkolů** a **výstup** systému windows.  
@@ -98,33 +98,33 @@ Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento náv
 ## <a name="create-an-options-page"></a>Vytvoření stránky Možnosti  
  Můžete zadat stránku **možnosti** dialogové okno tak, aby uživatelé mohou změnit nastavení pro panel nástrojů. Vytvoření stránky možnosti vyžaduje obě třídy, která popisuje možnosti a položky v *TodoListPackage.cs* nebo *TodoListPackage.vb* souboru.  
   
-1.  Přidejte třídu pojmenovanou `ToolsOptions.cs`. Ujistěte se, `ToolsOptions` třída dědí <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Přidejte třídu pojmenovanou `ToolsOptions.cs`. Ujistěte se, `ToolsOptions` třída dědí <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Přidejte následující příkaz using:  
+2. Přidejte následující příkaz using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  Na stránce Možnosti v tomto názorném postupu obsahuje pouze jednu možnost s názvem DaysAhead. Přidat soukromé pole s názvem **daysAhead** a vlastnost s názvem **DaysAhead** k `ToolsOptions` třídy:  
+3. Na stránce Možnosti v tomto názorném postupu obsahuje pouze jednu možnost s názvem DaysAhead. Přidat soukromé pole s názvem **daysAhead** a vlastnost s názvem **DaysAhead** k `ToolsOptions` třídy:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Nyní je třeba projekt vědět, tato stránka možností.  
+   Nyní je třeba projekt vědět, tato stránka možností.  
   
 ### <a name="make-the-options-page-available-to-users"></a>Na stránce Možnosti zpřístupnit uživatelům  
   

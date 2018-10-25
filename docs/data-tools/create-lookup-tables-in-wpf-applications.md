@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924197"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje ovládací prvek, který se zobrazí informace z jedné datové tabulky na základě hodnoty pole cizího klíče v druhé tabulce. Můžete vytvořit vyhledávací tabulku přetažením hlavního uzlu nadřazené tabulky nebo v objektu **zdroje dat** okna do ovládacího prvku, který je již vázán na sloupec nebo vlastnosti v související podřízené tabulce.
@@ -83,7 +83,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
      Visual Studio nastaví některé vlastnosti u ovládacího prvku ke konfiguraci vazby vyhledávání. V následující tabulce jsou uvedeny vlastnosti, které Visual Studio změní. Pokud třeba, můžete změnit tyto vlastnosti XAML nebo v **vlastnosti** okna.
 
     |Vlastnost|Vysvětlivky k nastavení|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Tato vlastnost určuje vazbu, která se používá ke stahování dat, která se zobrazí v ovládacím prvku nebo kolekci. Visual Studio nastaví tuto vlastnost <xref:System.Windows.Data.CollectionViewSource> nadřazené dat jste přetáhli do ovládacího prvku.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Tato vlastnost určuje cestu položky dat, který se zobrazí v ovládacím prvku. Visual Studio nastaví tuto vlastnost na první sloupec nebo vlastnosti v nadřazené data po primárním klíči, který má datový typ string.<br /><br /> Pokud chcete zobrazit jiného sloupce nebo vlastnosti v nadřazené dat, změňte tuto vlastnost na cestu jinou vlastnost.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio váže tato vlastnost na sloupec nebo vlastnost podřízených dat, kterou jste přetáhli do návrháře. Toto je cizí klíč k datům nadřazeného.|

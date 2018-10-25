@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924834"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Postupy: Změna velikosti ovládacích prvků záložek
   Nastavte velikost <xref:Microsoft.Office.Tools.Word.Bookmark> řídit, kdy je přidat do dokumentu aplikace Microsoft Office Word. Můžete také změnit velikost ji později.  
@@ -30,21 +30,21 @@ ms.locfileid: "35675686"
   
  Existují tři způsoby, jak změnit velikost záložky:  
   
--   Přidání nebo odstranění textu v <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.  
+- Přidání nebo odstranění textu v <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.  
   
-     Pokaždé, když přidáte záložku text, velikost záložky se automaticky zvětší tak, aby obsahovala nového textu. Když odstraníte text, velikost záložky automaticky sníží.  
+   Pokaždé, když přidáte záložku text, velikost záložky se automaticky zvětší tak, aby obsahovala nového textu. Když odstraníte text, velikost záložky automaticky sníží.  
   
--   Změnit <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> a <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnosti <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.  
+- Změnit <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> a <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> vlastnosti <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.  
   
-     To je užitečné, pokud chcete změnit velikost podle jenom několik znaků.  
+   To je užitečné, pokud chcete změnit velikost podle jenom několik znaků.  
   
--   Znovu vytvořit <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.  
+- Znovu vytvořit <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacího prvku.  
   
-     To je užitečné, pokud je zásadní změnu velikosti či umístění záložku.  
+   To je užitečné, pokud je zásadní změnu velikosti či umístění záložku.  
   
- Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu v době návrhu nebo v době běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [postupy: Přidání Záložka ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu v době návrhu nebo v době běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [postupy: Přidání Záložka ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Změnit vlastnosti počáteční a koncové  
   

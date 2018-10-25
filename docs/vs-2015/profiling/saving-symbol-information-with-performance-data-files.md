@@ -17,50 +17,50 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a41cbbed95461245b701ead1e9c11e662bd02f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c29d311eb5253da1e0a07e156d340df76c5193
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884755"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Ukládání informací o symbolech s datových souborů výkonu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud používáte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí (IDE) pro analýzu souborů a vy plánujete přesunout soubor VSP do jiného počítače, je nutné nastavit výkon nastavení projektu a uložit nebo *serializovat* symboly v váš soubor sestavy. Tím se zvyšuje velikost souboru sestavy. Serializaci symbolů je nezbytný dvou důvodů:  
   
--   Pro vložení kódu symboly do sestavy výkonu než cílová sestavení jsou ztraceny z umístění dočasného úložiště.  
+- Pro vložení kódu symboly do sestavy výkonu než cílová sestavení jsou ztraceny z umístění dočasného úložiště.  
   
--   Chcete-li zachovat symboly, tak, aby sestava výkonu je přenosný z PROFILOVANÉHO počítače a vypíše stejné informace, pokud otevření sestavy pro analýzu v jiném počítači, který může mít různé symboly.  
+- Chcete-li zachovat symboly, tak, aby sestava výkonu je přenosný z PROFILOVANÉHO počítače a vypíše stejné informace, pokud otevření sestavy pro analýzu v jiném počítači, který může mít různé symboly.  
   
- **Požadavky**  
+  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Může serializovat symboly z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaném vývojovém prostředí nebo z příkazového řádku:  
+  Může serializovat symboly z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaném vývojovém prostředí nebo z příkazového řádku:  
   
--   Pro serializaci symbolů v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí, přejděte na příkaz **nástroje** na řádku nabídek a pak klikněte na tlačítko **možnosti**. V **možnosti** okně **nástroje pro měření výkonu**a pak vyberte **automaticky serializovat informace o symbolech** zaškrtávací políčko.  
+- Pro serializaci symbolů v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí, přejděte na příkaz **nástroje** na řádku nabídek a pak klikněte na tlačítko **možnosti**. V **možnosti** okně **nástroje pro měření výkonu**a pak vyberte **automaticky serializovat informace o symbolech** zaškrtávací políčko.  
   
--   PACKSYMBOLS je ekvivalentní možnosti příkazového řádku při ukládání souborů sestav. Pro serializaci symbolů, zadejte **vsperfreport Summary/packsymbols filename.vsp**.  
+- PACKSYMBOLS je ekvivalentní možnosti příkazového řádku při ukládání souborů sestav. Pro serializaci symbolů, zadejte **vsperfreport Summary/packsymbols filename.vsp**.  
   
 ## <a name="troubleshooting-symbol-problems"></a>Řešení potíží se Symbol  
  Pokud nevidíte všechny symboly ve svém vlastním kódu, některá běžná řešení jsou k dispozici:  
   
--   Spusťte vsperfreport/debugsympath příkazového řádku zobrazíte úplný seznam umístění, kde profiler součásti načítání informací o symbolu a zda porovnat soubory symbolů, které se používají soubory, které používá váš projekt.  
+- Spusťte vsperfreport/debugsympath příkazového řádku zobrazíte úplný seznam umístění, kde profiler součásti načítání informací o symbolu a zda porovnat soubory symbolů, které se používají soubory, které používá váš projekt.  
   
--   Ujistěte se, že spustíte vsperfreport s příznakem/packsymbols nebo v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí, které máte možnost serializace symbolu informace vybraný v možnostech explorer obecné informace o výkonu.  
+- Ujistěte se, že spustíte vsperfreport s příznakem/packsymbols nebo v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrovaného vývojového prostředí, které máte možnost serializace symbolu informace vybraný v možnostech explorer obecné informace o výkonu.  
   
--   Pokud jste shromáždili typ dat, přidejte na příkazový řádek vsperfreport /SUMMARY:TYPE.  
+- Pokud jste shromáždili typ dat, přidejte na příkazový řádek vsperfreport /SUMMARY:TYPE.  
   
- Pokud nevidíte symboly z Windows nebo další programy společnosti Microsoft:  
+  Pokud nevidíte symboly z Windows nebo další programy společnosti Microsoft:  
   
--   Ujistěte se, že jste nastavili cestu k mezipaměti symbolů Windows. Proveďte jednu z následujících nastavení cesty k symbolu mezipaměti:  
+- Ujistěte se, že jste nastavili cestu k mezipaměti symbolů Windows. Proveďte jednu z následujících nastavení cesty k symbolu mezipaměti:  
   
-    -   Sada ladicí program -> symboly – možnost v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí na správnou cestu.  
+  -   Sada ladicí program -> symboly – možnost v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrované vývojové prostředí na správnou cestu.  
   
-    -   Symbolpath – možnost přidáte k příkazovému řádku VSPerfReport zahrnout symboly.  
+  -   Symbolpath – možnost přidáte k příkazovému řádku VSPerfReport zahrnout symboly.  
   
--   Pokud nevidíte všechny symboly v [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], ujistěte se, že máte správně nastavené pro ASP server server symbolů.  
+- Pokud nevidíte všechny symboly v [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], ujistěte se, že máte správně nastavené pro ASP server server symbolů.  
   
 ## <a name="repacking-symbols"></a>Opětovné balení symbolů  
  Pokud chcete který znovu zabalí symboly do sestavy, můžete to provést pomocí příkazového řádku nástroje VsPerfReport. Pomocí následujících příkazových řádků:  

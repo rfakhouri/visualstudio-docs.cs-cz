@@ -17,12 +17,12 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4bd3089d6916615a8b16d07b92b51f32afafaedc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886952"
 ---
 # <a name="solution-sln-file"></a>Soubor řešení (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,45 +65,45 @@ EndGlobal
   
  Načtení řešení, prostředí provádí následující pořadí úloh.  
   
-1.  Prostředí globální části souboru .sln, načte a zpracuje všechny oddíly označené `preSolution`. V takovém případě je jeden takový výraz:  
+1. Prostředí globální části souboru .sln, načte a zpracuje všechny oddíly označené `preSolution`. V takovém případě je jeden takový výraz:  
   
-    ```  
-    GlobalSection(SolutionConfiguration) = preSolution  
-         ConfigName.0 = Debug  
-         ConfigName.1 = Release  
-    ```  
+   ```  
+   GlobalSection(SolutionConfiguration) = preSolution  
+        ConfigName.0 = Debug  
+        ConfigName.1 = Release  
+   ```  
   
-     Když prostředí přečte `GlobalSection('name')` značku, odpovídá názvu VSPackage pomocí registru. Název klíče, který by měla existovat v klíči registru [HKLM\\< kořenový adresář aplikace ID registru\>\SolutionPersistence\AggregateGUIDs]. Klíče výchozí hodnota je identifikátor GUID balíčku (REG_SZ) sady VSPackage, který napsal položky.  
+    Když prostředí přečte `GlobalSection('name')` značku, odpovídá názvu VSPackage pomocí registru. Název klíče, který by měla existovat v klíči registru [HKLM\\< kořenový adresář aplikace ID registru\>\SolutionPersistence\AggregateGUIDs]. Klíče výchozí hodnota je identifikátor GUID balíčku (REG_SZ) sady VSPackage, který napsal položky.  
   
-2.  Prostředí načte sady VSPackage, volání `QueryInterface` v balíčku VSPackage pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> rozhraní a volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> metoda s daty v části sady VSPackage mohli uložit data. Prostředí tento proces se opakuje pro každý `preSolution` oddílu.  
+2. Prostředí načte sady VSPackage, volání `QueryInterface` v balíčku VSPackage pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> rozhraní a volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> metoda s daty v části sady VSPackage mohli uložit data. Prostředí tento proces se opakuje pro každý `preSolution` oddílu.  
   
-3.  Prostředí iteraci projektu dočasných bloků. V takovém případě je jeden projekt.  
+3. Prostředí iteraci projektu dočasných bloků. V takovém případě je jeden projekt.  
   
-    ```  
-    Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",  
-    "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"  
-    EndProject  
-    ```  
+   ```  
+   Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",  
+   "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"  
+   EndProject  
+   ```  
   
-     Tento příkaz, který obsahuje jedinečné GUID projektu a identifikátor GUID typu projektu. Tyto informace slouží prostředí k vyhledání souboru projektu nebo soubory, které patří k řešení, a pro každý projekt se nevyžaduje sady VSPackage. Projekt je předat identifikátor GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> načíst konkrétní VSPackage související s projektem, pak projekt je načten prostřednictvím sady VSPackage. V tomto případě je sady VSPackage, která jsou načtená pro tento projekt jazyka Visual Basic.  
+    Tento příkaz, který obsahuje jedinečné GUID projektu a identifikátor GUID typu projektu. Tyto informace slouží prostředí k vyhledání souboru projektu nebo soubory, které patří k řešení, a pro každý projekt se nevyžaduje sady VSPackage. Projekt je předat identifikátor GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> načíst konkrétní VSPackage související s projektem, pak projekt je načten prostřednictvím sady VSPackage. V tomto případě je sady VSPackage, která jsou načtená pro tento projekt jazyka Visual Basic.  
   
-     Každý projekt můžete zachovat a projektu Jedinečný ID instance, tak, aby k němu podle potřeby jiné projekty v řešení. V ideálním případě pokud řešení a projekty jsou pod správou zdrojového kódu, cesta k projektu by měla být relativní k cestě k řešení. Při prvním načtení řešení, soubory projektu nemohou být na počítači uživatele. Tím, že soubor projektu, které jsou uloženy na serveru relativní k souboru řešení, je poměrně jednoduchá pro soubor projektu a najít a zkopírovat do počítače uživatele. Potom zkopíruje a načte zbývající soubory potřebné pro projekt.  
+    Každý projekt můžete zachovat a projektu Jedinečný ID instance, tak, aby k němu podle potřeby jiné projekty v řešení. V ideálním případě pokud řešení a projekty jsou pod správou zdrojového kódu, cesta k projektu by měla být relativní k cestě k řešení. Při prvním načtení řešení, soubory projektu nemohou být na počítači uživatele. Tím, že soubor projektu, které jsou uloženy na serveru relativní k souboru řešení, je poměrně jednoduchá pro soubor projektu a najít a zkopírovat do počítače uživatele. Potom zkopíruje a načte zbývající soubory potřebné pro projekt.  
   
-4.  Podle informací obsažených v části projektu souboru .sln, prostředí načte každého souboru projektu. Samotného projektu je pak zodpovědná za naplnění hierarchie projektu a načítání všech vnořených projektů.  
+4. Podle informací obsažených v části projektu souboru .sln, prostředí načte každého souboru projektu. Samotného projektu je pak zodpovědná za naplnění hierarchie projektu a načítání všech vnořených projektů.  
   
-5.  Po zpracování všech oddílů v souboru .sln řešení se zobrazí v Průzkumníku řešení a je připravený pro úpravu uživatelem.  
+5. Po zpracování všech oddílů v souboru .sln řešení se zobrazí v Průzkumníku řešení a je připravený pro úpravu uživatelem.  
   
- Pokud žádné VSPackage, která implementuje projektu v řešení se nepodaří načíst, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> volání metody a každý projekt v řešení je zadána možnost Ignorovat změny, které jste zadali během načítání. Pokud dojde k chybám analýzy, co nejvíce informací se zachovají se soubory řešení a prostředí se zobrazí dialogové okno s upozorněním, že řešení je poškozený.  
+   Pokud žádné VSPackage, která implementuje projektu v řešení se nepodaří načíst, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> volání metody a každý projekt v řešení je zadána možnost Ignorovat změny, které jste zadali během načítání. Pokud dojde k chybám analýzy, co nejvíce informací se zachovají se soubory řešení a prostředí se zobrazí dialogové okno s upozorněním, že řešení je poškozený.  
   
- Když toto řešení je uložen nebo closed, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> metoda je volána a předané do hierarchie, které chcete zobrazit, pokud byly provedeny změny do řešení, které je nutné zadat do souboru .sln. Hodnota null, předaná `QuerySaveSolutionProps` v <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>, označuje, že se se informace ukládají pro řešení. Pokud hodnota není null, trvalé informace se týkají určitého projektu, určené ukazatel <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozhraní.  
+   Když toto řešení je uložen nebo closed, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> metoda je volána a předané do hierarchie, které chcete zobrazit, pokud byly provedeny změny do řešení, které je nutné zadat do souboru .sln. Hodnota null, předaná `QuerySaveSolutionProps` v <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>, označuje, že se se informace ukládají pro řešení. Pokud hodnota není null, trvalé informace se týkají určitého projektu, určené ukazatel <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozhraní.  
   
- Pokud nejsou k dispozici informace uložit, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> rozhraní je volána pomocí ukazatele na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> Metoda je volána poté prostředí k načtení dvojice název hodnota z `IPropertyBag` rozhraní a zápisu informací do souboru .sln.  
+   Pokud nejsou k dispozici informace uložit, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> rozhraní je volána pomocí ukazatele na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> metody. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> Metoda je volána poté prostředí k načtení dvojice název hodnota z `IPropertyBag` rozhraní a zápisu informací do souboru .sln.  
   
- `SaveSolutionProps` a `WriteSolutionProps` objekty jsou volány rekurzivně prostředí k načtení informací z Uložit `IPropertyBag` rozhraní, dokud se všechny změny byly zadány do souboru .sln. Tímto způsobem můžete zajistit, že se zachovat informace pomocí řešení a k dispozici příštím otevření řešení.  
+   `SaveSolutionProps` a `WriteSolutionProps` objekty jsou volány rekurzivně prostředí k načtení informací z Uložit `IPropertyBag` rozhraní, dokud se všechny změny byly zadány do souboru .sln. Tímto způsobem můžete zajistit, že se zachovat informace pomocí řešení a k dispozici příštím otevření řešení.  
   
- Všechny načtené VSPackage je vypočten a zjistěte, jestli má něco uložit do souboru .sln. Je pouze v době zatížení, který se generuje dotaz na klíče registru. Prostředí ví o všech načtených balíčků, protože jsou v době, kdy je řešení uloženo v paměti.  
+   Všechny načtené VSPackage je vypočten a zjistěte, jestli má něco uložit do souboru .sln. Je pouze v době zatížení, který se generuje dotaz na klíče registru. Prostředí ví o všech načtených balíčků, protože jsou v době, kdy je řešení uloženo v paměti.  
   
- Pouze soubor .sln obsahuje položky `preSolution` a `postSolution` oddíly. Nejsou žádné podobné oddílů v souboru .suo, protože toto řešení vyžaduje tyto informace načíst správně. Soubor .suo obsahuje možnosti specifické pro uživatele, jako jsou privátní poznámky, které nejsou určeny k sdílená nebo je umístěn pod správou zdrojového kódu.  
+   Pouze soubor .sln obsahuje položky `preSolution` a `postSolution` oddíly. Nejsou žádné podobné oddílů v souboru .suo, protože toto řešení vyžaduje tyto informace načíst správně. Soubor .suo obsahuje možnosti specifické pro uživatele, jako jsou privátní poznámky, které nejsou určeny k sdílená nebo je umístěn pod správou zdrojového kódu.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   

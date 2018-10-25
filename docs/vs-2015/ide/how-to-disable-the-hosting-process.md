@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848485"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Postupy: Zákaz procesu hostování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Je-li povolen hostitelský proces, mohou být volání určitých rozhraní API 
   
 ### <a name="to-disable-the-hosting-process"></a>Zakázání hostitelského procesu  
   
-1.  Otevřete projekt spustitelné aplikace v aplikaci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Projekty, které nevytváří spustitelné soubory (například knihovny tříd nebo projekty služeb) tuto možnost nemají.  
+1. Otevřete projekt spustitelné aplikace v aplikaci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Projekty, které nevytváří spustitelné soubory (například knihovny tříd nebo projekty služeb) tuto možnost nemají.  
   
-2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+2. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-3.  Klikněte na tlačítko **ladění** kartu.  
+3. Klikněte na tlačítko **ladění** kartu.  
   
-4.  Zrušte **povolit hostující proces sady Visual Studio** zaškrtávací políčko.  
+4. Zrušte **povolit hostující proces sady Visual Studio** zaškrtávací políčko.  
   
- Je-li hostitelský proces zakázán, nebudou k dispozici některé funkce pro ladění nebo může dojít k poklesu výkonu. Další informace najdete v tématu [ladění a proces hostování](../debugger/debugging-and-the-hosting-process.md).  
+   Je-li hostitelský proces zakázán, nebudou k dispozici některé funkce pro ladění nebo může dojít k poklesu výkonu. Další informace najdete v tématu [ladění a proces hostování](../debugger/debugging-and-the-hosting-process.md).  
   
- Obecně, pokud je hostitelský proces zakázán, platí:  
+   Obecně, pokud je hostitelský proces zakázán, platí:  
   
 -   Čas potřebný ke spuštění ladění aplikací [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] se zvýší.  
   

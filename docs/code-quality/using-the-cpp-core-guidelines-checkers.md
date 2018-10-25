@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: f7a802fc1d2a83d3618d19254900a9b3dacb7f7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 735b4891449d139058b7cf114639390f6a930b55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908339"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí podle dokumentu C++ Core Guidelines šachovnice
 Podle dokumentu C++ Core Guidelines jsou přenosná sadu pokynů, pravidla a osvědčenými postupy psaní kódu v jazyce C++ vytvořených odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu těchto pravidel jako součást své nástroje analýzy kódu pro jazyk C++. Tyto moduly pro kontrolu příručka core jsou nainstalované ve výchozím nastavení v sadě Visual Studio 2017 a jsou [k dispozici jako balíček NuGet pro Visual Studio 2015](#vs2015_corecheck).
@@ -53,15 +53,15 @@ int main()
 }
 ```
 
- Tento příklad ukazuje několik upozornění, která pravidla C++ Core Check najdete:
+Tento příklad ukazuje několik upozornění, která pravidla C++ Core Check najdete:
 
--   C26494 je pravidlo Type.5: objekt vždy inicializujte.
+- C26494 je pravidlo Type.5: objekt vždy inicializujte.
 
--   C26485 je pravidlo Bounds.3: žádné decay pole na ukazatel.
+- C26485 je pravidlo Bounds.3: žádné decay pole na ukazatel.
 
--   C26481 je pravidlo Bounds.1: Nepoužívejte aritmetiku ukazatele. Místo nich se používá `span`.
+- C26481 je pravidlo Bounds.1: Nepoužívejte aritmetiku ukazatele. Místo nich se používá `span`.
 
- Pokud je nainstalované a povolené při kompilaci tohoto kódu, jsou první dva upozornění výstup, ale je potlačeno třetí pravidel C++ Core Check analýzy kódu. Zde je výstup sestavení z ukázkového kódu:
+Pokud je nainstalované a povolené při kompilaci tohoto kódu, jsou první dva upozornění výstup, ale je potlačeno třetí pravidel C++ Core Check analýzy kódu. Zde je výstup sestavení z ukázkového kódu:
 
 ```Output
 1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
@@ -80,34 +80,36 @@ Nová pravidla přidávání na kontrola C++ Core pokyny, kdykoliv zvýšit poč
 Referenční témata pro většinu pravidel jsou v rámci [Visual Studio C++ Core zkontrolujte Reference](code-analysis-for-cpp-corecheck.md).
 
 Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
-  - **– Pravidla ukazatelů vlastníka** vynutit [kontroly správy prostředků související s owner<T> podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **– Pravidla ukazatelů vlastníka** vynutit [kontroly správy prostředků související s owner<T> podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **– Pravidla konstant** vynutit [kontroly podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **– Pravidla konstant** vynutit [kontroly podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **– Pravidla nezpracovaných ukazatelů** vynutit [kontroly správy prostředků související s nezpracovaných ukazatelů podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **– Pravidla nezpracovaných ukazatelů** vynutit [kontroly správy prostředků související s nezpracovaných ukazatelů podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **– Pravidla jedinečných ukazatelů** vynutit [kontroly správy prostředků související s typy se sémantikou jedinečných ukazatelů podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **– Pravidla jedinečných ukazatelů** vynutit [kontroly správy prostředků související s typy se sémantikou jedinečných ukazatelů podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **– Pravidla vazeb** vynutit [vazeb profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **– Pravidla vazeb** vynutit [vazeb profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Zadejte pravidla** vynutit [zadejte profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **Zadejte pravidla** vynutit [zadejte profil podle dokumentu C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-  **Visual Studio 2017 verze 15.5**:
-  - **Třída pravidla** několik pravidel, která se soustřeďují na správné použití operátoru zvláštní členské funkce a virtuální specifikací. Toto je podmnožinou kontroly doporučuje pro [třídy a třídy hierarchie](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
-  - **– Pravidla souběžnosti** jediné pravidlo, které zachytí objekty chybně deklarované ochrany. Další informace najdete v tématu [pokyny související se souběžností](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
-  - **Pravidla deklarace** několik pravidel z [rozhraní pokyny](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) ty se zaměřují na tom, jak globální proměnné jsou deklarovány.
-  - **Funkce pravidla** dvě kontroly, které pomáhají s přijetí `noexcept` specifikátor. Toto je část pokyny pro [vymazat funkce návrhu a implementace](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
-  - **– Pravidla sdílených ukazatelů** jako součást [správy prostředků](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) pokyny k vynucení, přidali jsme několik pravidel, které jsou specifické pro zobrazení sdílených ukazatelů jsou předány do funkcí nebo používané lokálně.
-  - **Pravidla stylu** jeden jednoduchý, ale důležité zaškrtnutí, která zakáže použití [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Toto je prvním krokem při vylepšování kódování styl a používat výrazy a příkazy v jazyce C++.
+**Visual Studio 2017 verze 15.5**:
 
-  **Visual Studio 2017 verze 15.6**:
-  - **Aritmetické pravidla** pravidla, která zjistí aritmetický [přetečení](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [podepsané bez znaménka operace](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) a [bit manipulaci s](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+- **Třída pravidla** několik pravidel, která se soustřeďují na správné použití operátoru zvláštní členské funkce a virtuální specifikací. Toto je podmnožinou kontroly doporučuje pro [třídy a třídy hierarchie](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
+- **– Pravidla souběžnosti** jediné pravidlo, které zachytí objekty chybně deklarované ochrany. Další informace najdete v tématu [pokyny související se souběžností](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
+- **Pravidla deklarace** několik pravidel z [rozhraní pokyny](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) ty se zaměřují na tom, jak globální proměnné jsou deklarovány.
+- **Funkce pravidla** dvě kontroly, které pomáhají s přijetí `noexcept` specifikátor. Toto je část pokyny pro [vymazat funkce návrhu a implementace](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
+- **– Pravidla sdílených ukazatelů** jako součást [správy prostředků](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) pokyny k vynucení, přidali jsme několik pravidel, které jsou specifické pro zobrazení sdílených ukazatelů jsou předány do funkcí nebo používané lokálně.
+- **Pravidla stylu** jeden jednoduchý, ale důležité zaškrtnutí, která zakáže použití [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Toto je prvním krokem při vylepšování kódování styl a používat výrazy a příkazy v jazyce C++.
 
+**Visual Studio 2017 verze 15.6**:
 
- Můžete omezit upozornění jenom v jednom nebo několika skupin. **Nativní minimální** a **nativní doporučená** pravidlo sady zahrnují C++ Core Check pravidla kromě jiných PREfast kontroly. Pokud chcete zobrazit dostupné sady pravidel, otevřete dialogové okno Vlastnosti projektu, vyberte **kód Analysis\General**, otevřete rozevírací seznam v **sad pravidel** pole se seznamem a výběru **zvolte více sad pravidel** . Další informace o použití sad pravidel v sadě Visual Studio najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md).
+- **Aritmetické pravidla** pravidla, která zjistí aritmetický [přetečení](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [podepsané bez znaménka operace](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) a [bit manipulaci s](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+
+Můžete omezit upozornění jenom v jednom nebo několika skupin. **Nativní minimální** a **nativní doporučená** pravidlo sady zahrnují C++ Core Check pravidla kromě jiných PREfast kontroly. Pokud chcete zobrazit dostupné sady pravidel, otevřete dialogové okno Vlastnosti projektu, vyberte **kód Analysis\General**, otevřete rozevírací seznam v **sad pravidel** pole se seznamem a výběru **zvolte více sad pravidel** . Další informace o použití sad pravidel v sadě Visual Studio najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md).
 
 ## <a name="macros"></a>Makra
- Kontrola C++ Core pokyny obsahuje soubor hlaviček, který definuje makra, které usnadňují potlačit celé kategorie upozornění v kódu:
+
+Kontrola C++ Core pokyny obsahuje soubor hlaviček, který definuje makra, které usnadňují potlačit celé kategorie upozornění v kódu:
 
 ```cpp
 ALL_CPPCORECHECK_WARNINGS
@@ -128,7 +130,8 @@ Tato makra odpovídají sady pravidel a rozšířit místo oddělený seznam č�
 ```
 
 ## <a name="attributes"></a>Atributy
- Kompilátor jazyka Microsoft Visual C++ má omezenou podporu pro GSL potlačení atributu. Slouží k potlačení upozornění na výrazu a příkazy bloku uvnitř funkce.
+
+Kompilátor jazyka Microsoft Visual C++ má omezenou podporu pro GSL potlačení atributu. Slouží k potlačení upozornění na výrazu a příkazy bloku uvnitř funkce.
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -151,17 +154,19 @@ Tato makra odpovídají sady pravidel a rozšířit místo oddělený seznam č�
 ```
 
 ## <a name="suppressing-analysis-by-using-command-line-options"></a>Potlačení analýzy pomocí možnosti příkazového řádku
- Místo #pragmas vám pomůže možnosti příkazového řádku na stránce vlastností v souboru potlačení upozornění pro projekt nebo jeden soubor. Například toto upozornění zakážete 26400 pro soubor:
 
- 1) Klikněte pravým tlačítkem na soubor v **Průzkumníka řešení**
+Místo #pragmas vám pomůže možnosti příkazového řádku na stránce vlastností v souboru potlačení upozornění pro projekt nebo jeden soubor. Například toto upozornění zakážete 26400 pro soubor:
 
- 2) Zvolte **vlastnosti | C / C ++ | Příkazový řádek**
+1. Klikněte pravým tlačítkem na soubor v **Průzkumníka řešení**
 
- 3) V **další možnosti** okně Přidat `/wd26400`.
+2. Zvolte **vlastnosti | C / C ++ | Příkazový řádek**
 
- Možnost příkazového řádku můžete dočasně zakázat všechny analýzy kódu pro soubor tak, že zadáte `/analyze-`. Tím dojde k upozornění *D9025 přepsání parametr / analyze' pomocí "/ analyze-"*, která upozorní, chcete-li znovu povolit analýzu kódu.
+3. V **další možnosti** okně Přidat `/wd26400`.
 
- ## <a name="corecheck_per_file"></a> Povolení kontrola C++ Core pokyny na konkrétní projektových souborů
+Možnost příkazového řádku můžete dočasně zakázat všechny analýzy kódu pro soubor tak, že zadáte `/analyze-`. Tím dojde k upozornění *D9025 přepsání parametr / analyze' pomocí "/ analyze-"*, která upozorní, chcete-li znovu povolit analýzu kódu.
+
+## <a name="corecheck_per_file"></a> Povolení kontrola C++ Core pokyny na konkrétní projektových souborů
+
 V některých případech může být užitečné pro analýzu kódu do, zaměřuje a stále použití integrovaného vývojového prostředí sady Visual Studio. Následující ukázkový scénář lze použít pro velké projekty, můžete ušetřit čas sestavení a aby bylo snazší, abyste vyfiltrovali výsledky:
 
 1. V příkazovém prostředí služby nastaven `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
@@ -174,6 +179,7 @@ V některých případech může být užitečné pro analýzu kódu do, zaměř
 8. Sestavte projekt znovu. Běžné PREFast kontroly by měl spustit na všechny soubory. Protože kontrola C++ Core pokyny není povolená ve výchozím nastavení, by měl spustit pouze v souboru, který je konfigurován pro použití.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Jak používat nástroj pro kontrolu jádra pokyny C++ mimo sadu Visual Studio
+
 Kontrola C++ Core Guidelines můžete použít v automatizovaných sestaveních.
 
 ### <a name="msbuild"></a>MSBuild
@@ -186,6 +192,7 @@ Kontrola C++ Core Guidelines můžete použít v automatizovaných sestaveních.
     <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
 ```
+
 Ujistěte se, že přidáte tyto vlastnosti před importem souboru Microsoft.Cpp.targets. Můžete vybrat konkrétní pravidlo sady nebo vytvořit vlastní sady pravidel nebo použít výchozí sadu pravidel, která obsahuje další PREfast kontroly.
 
 Nástroje C++ Core Checker lze použít pouze v zadané soubory s využitím stejným způsobem jako [bylo popsáno dříve](#corecheck_per_file), ale pomocí nástroje MSBuild souborů. Proměnné prostředí můžete nastavit pomocí `BuildMacro` položky:
@@ -210,42 +217,42 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ```
 
 ### <a name="non-msbuild-projects"></a>Projekty MSBuild bez
+
 Pokud používáte systém sestavení, který se nemusí spoléhat na MSBuild můžete spustit nástroj pro kontrolu, ale potřebujete, abyste věděli některé interní informace z konfigurace modulu analýzy kódu. Tyto interní informace nemusí podporovat v budoucnu.
 
 Budete muset nastavit pár proměnné prostředí a použijte vhodné možnosti příkazového řádku pro kompilátor. Je lepší práce v části "Native Tools Command Prompt" prostředí, takže nemusíte hledat konkrétní cesty pro kompilátor, zahrnout adresáře atd.
 
 1. **Proměnné prostředí**
-  - `set esp.extensions=cppcorecheck.dll` To říká modul načíst modul podle dokumentu C++ Core Guidelines.
-  - `set esp.annotationbuildlevel=ignore` Zakáže logiku, která zpracovává poznámky SAL. Poznámky nemají vliv na analýzu kódu v kontrola C++ Core pokyny, ale jejich zpracování trvá určitou dobu (v některých případech dlouhý čas). Toto nastavení je volitelné, ale důrazně ho doporučujeme.
-  - `set caexcludepath=%include%` Důrazně doporučujeme zakázat varování, které na standardní záhlaví. Můžete přidat další cesty, třeba cestu k společné hlavičky ve vašem projektu.
+   - `set esp.extensions=cppcorecheck.dll` To říká modul načíst modul podle dokumentu C++ Core Guidelines.
+   - `set esp.annotationbuildlevel=ignore` Zakáže logiku, která zpracovává poznámky SAL. Poznámky nemají vliv na analýzu kódu v kontrola C++ Core pokyny, ale jejich zpracování trvá určitou dobu (v některých případech dlouhý čas). Toto nastavení je volitelné, ale důrazně ho doporučujeme.
+   - `set caexcludepath=%include%` Důrazně doporučujeme zakázat varování, které na standardní záhlaví. Můžete přidat další cesty, třeba cestu k společné hlavičky ve vašem projektu.
 2. **Možnosti příkazového řádku**
-  - `/analyze`  Povolí analýzu kódu (zvažte také použití / analyze: pouze a / analyze: quiet).
-  - `/analyze:plugin EspXEngine.dll` Tato možnost načte modul rozšířeními pro analýzu kódu do nástroje PREfast. Tento modul, pak načte kontrola C++ Core pokyny.
-
-
+   - `/analyze`  Povolí analýzu kódu (zvažte také použití / analyze: pouze a / analyze: quiet).
+   - `/analyze:plugin EspXEngine.dll` Tato možnost načte modul rozšířeními pro analýzu kódu do nástroje PREfast. Tento modul, pak načte kontrola C++ Core pokyny.
 
 ## <a name="use-the-guideline-support-library"></a>Použití podpory knihovny obecných zásad
  Obecné zásady Support Library usnadňuje postupujte podle pokynů na jádro. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` dvojice parametrů s `span<T>` typu. Je k dispozici na GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Knihovna je open source, můžete zobrazit zdroje, ujistěte se, komentáře nebo přispívat. Projekt lze nalézt v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Postupujte podle pokynů C++ Core Check v projektech Visual Studio 2015
-  Pokud používáte Visual Studio 2015, se ve výchozím nastavení nenainstalují sad pravidel analýzy kódu C++ Core Check. Je nutné provést některé další kroky předtím, než můžete povolit C++ Core Check nástroje Analýza kódu v sadě Visual Studio 2015. Microsoft poskytuje podporu pro projekty Visual Studio 2015 s použitím balíčku Nuget. Balíček má název Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s aktualizací Update 1.
+## <a name="vs2015_corecheck"></a> Postupujte podle pokynů C++ Core Check v projektech Visual Studio 2015
 
- Tento balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví obecné zásady podpory knihovny (GSL). GSL je také k dispozici na Githubu v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+Pokud používáte Visual Studio 2015, se ve výchozím nastavení nenainstalují sad pravidel analýzy kódu C++ Core Check. Je nutné provést některé další kroky předtím, než můžete povolit C++ Core Check nástroje Analýza kódu v sadě Visual Studio 2015. Microsoft poskytuje podporu pro projekty Visual Studio 2015 s použitím balíčku Nuget. Balíček má název Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s aktualizací Update 1.
 
- Kvůli způsobu, jakým jsou načteny pravidel analýzy kódu musíte nainstalovat balíček Microsoft.CppCoreCheck NuGet do jednotlivých projektů C++, který chcete zkontrolovat v rámci sady Visual Studio 2015.
+Tento balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví obecné zásady podpory knihovny (GSL). GSL je také k dispozici na Githubu v [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Chcete-li přidat balíček Microsoft.CppCoreCheck do projektu v sadě Visual Studio 2015
+Kvůli způsobu, jakým jsou načteny pravidel analýzy kódu musíte nainstalovat balíček Microsoft.CppCoreCheck NuGet do jednotlivých projektů C++, který chcete zkontrolovat v rámci sady Visual Studio 2015.
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem a otevřete místní nabídku projektu v řešení, které chcete přidat balíček. Zvolte **spravovat balíčky NuGet** otevřít **Správce balíčků NuGet**.
+### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Chcete-li přidat balíček Microsoft.CppCoreCheck do projektu v sadě Visual Studio 2015
 
-2.  V **Správce balíčků NuGet** okna, vyhledejte Microsoft.CppCoreCheck.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem a otevřete místní nabídku projektu v řešení, které chcete přidat balíček. Zvolte **spravovat balíčky NuGet** otevřít **Správce balíčků NuGet**.
 
-     ![Okno Správce balíčků Nuget zobrazuje balíček CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.png)
+2. V **Správce balíčků NuGet** okna, vyhledejte Microsoft.CppCoreCheck.
 
-3.  Vyberte balíček Microsoft.CppCoreCheck a pak klikněte **nainstalovat** tlačítko pro přidání pravidel do projektu.
+    ![Okno Správce balíčků Nuget zobrazuje balíček CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.png)
 
- Balíček NuGet přidá další MSBuild *.targets* souboru projektu, která je volána, když povolit analýzu kódu na projektu. To *.targets* přidá soubor pravidel C++ Core Check jako další rozšíření pro nástroj pro analýzu kódu sady Visual Studio. Pokud je balíček nainstalován, můžete použít dialogové okno stránky vlastností k povolení nebo zakázání pravidla bylo uvolněno a experimentální.
+3. Vyberte balíček Microsoft.CppCoreCheck a pak klikněte **nainstalovat** tlačítko pro přidání pravidel do projektu.
+
+   Balíček NuGet přidá další MSBuild *.targets* souboru projektu, která je volána, když povolit analýzu kódu na projektu. To *.targets* přidá soubor pravidel C++ Core Check jako další rozšíření pro nástroj pro analýzu kódu sady Visual Studio. Pokud je balíček nainstalován, můžete použít dialogové okno stránky vlastností k povolení nebo zakázání pravidla bylo uvolněno a experimentální.
 
 ## <a name="see-also"></a>Viz také
-[Odkaz Kontrola C++ Core sady Visual Studio](code-analysis-for-cpp-corecheck.md).
 
+- [Odkaz Kontrola C++ Core sady Visual Studio](code-analysis-for-cpp-corecheck.md)

@@ -13,46 +13,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266b3c4154c10f537cdc9dec78b0f0a036d94503
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921207"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Postupy: vytvoření souboru .vsct  
   
 Existuje několik způsobů, jak vytvořit konfiguraci sady Visual Studio založený na formátu XML příkaz tabulky (*.vsct*) soubor.  
   
--   Můžete vytvořit nový balíček VSPackage správy kódu v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíčku šablony.  
+- Můžete vytvořit nový balíček VSPackage správy kódu v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíčku šablony.  
   
--   Můžete použít kompilátor konfigurace tabulky založený na formátu XML příkaz *Vsct.exe*můžete generovat soubor z existující *.ctc* souboru.  
+- Můžete použít kompilátor konfigurace tabulky založený na formátu XML příkaz *Vsct.exe*můžete generovat soubor z existující *.ctc* souboru.  
   
--   Můžete použít *Vsct.exe* ke generování *.vsct* souboru z existující *.cto* souboru.  
+- Můžete použít *Vsct.exe* ke generování *.vsct* souboru z existující *.cto* souboru.  
   
--   Můžete ručně vytvořit nový *.vsct* souboru.  
+- Můžete ručně vytvořit nový *.vsct* souboru.  
   
- Tento článek vysvětluje, jak ručně vytvořit nový *.vsct* souboru.  
+  Tento článek vysvětluje, jak ručně vytvořit nový *.vsct* souboru.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Ruční vytvoření nového souboru .vsct  
   
-1.  Spustit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+1. Spustit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-2.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **souboru**.  
+2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **souboru**.  
   
-3.  V **šablony** podokně klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.  
+3. V **šablony** podokně klikněte na tlačítko **soubor XML** a potom klikněte na tlačítko **otevřít**.  
   
-4.  Na **zobrazení** nabídky, klikněte na tlačítko **vlastnosti** k zobrazení vlastností souboru XML.  
+4. Na **zobrazení** nabídky, klikněte na tlačítko **vlastnosti** k zobrazení vlastností souboru XML.  
   
-5.  V **vlastnosti** okna, klikněte na tlačítko **Procházet** tlačítko **schémata** vlastnost.  
+5. V **vlastnosti** okna, klikněte na tlačítko **Procházet** tlačítko **schémata** vlastnost.  
   
-6.  V seznamu schémata XSD, vyberte *vsct.xsd* schématu. Pokud to není v seznamu, klikněte na tlačítko **přidat** a pak vyhledejte soubor na místním disku. Klikněte na tlačítko **OK** až budete hotoví.  
+6. V seznamu schémata XSD, vyberte *vsct.xsd* schématu. Pokud to není v seznamu, klikněte na tlačítko **přidat** a pak vyhledejte soubor na místním disku. Klikněte na tlačítko **OK** až budete hotoví.  
   
-7.  V souboru XML, zadejte *< commandtable –* a potom stiskněte klávesu **kartu**. Zavřete značku zadáním *>*.  
+7. V souboru XML, zadejte *< commandtable –* a potom stiskněte klávesu **kartu**. Zavřete značku zadáním *>*.  
   
-     Tato akce vytvoří základní *.vsct* souboru.  
+    Tato akce vytvoří základní *.vsct* souboru.  
   
-8.  Vyplňte elementy souboru XML, který chcete přidat, podle [– referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md). Další informace najdete v tématu [vytváření souborů .vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Vyplňte elementy souboru XML, který chcete přidat, podle [– referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md). Další informace najdete v tématu [vytváření souborů .vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
@@ -62,28 +62,28 @@ Můžete vytvořit základě XML *.vsct* soubor z existující tabulky příkaz�
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Vytvoření souboru .vsct ze souboru .ctc  
   
-1.  Získejte kopii souboru jazyka Perl.  
+1. Získejte kopii souboru jazyka Perl.  
   
-2.  Získejte kopii souboru skriptu jazyka Perl *ConvertCTCToVSCT.pl*, který je obvykle umístěn ve  *\<Visual Studio SDK instalační_cesta > \VisualStudioIntegration\Tools\bin* složky.  
+2. Získejte kopii souboru skriptu jazyka Perl *ConvertCTCToVSCT.pl*, který je obvykle umístěn ve  *\<Visual Studio SDK instalační_cesta > \VisualStudioIntegration\Tools\bin* složky.  
   
-3.  Získejte kopii souboru *.ctc* zdrojového souboru, který má být převeden.  
+3. Získejte kopii souboru *.ctc* zdrojového souboru, který má být převeden.  
   
-4.  Soubory umístíte do stejného adresáře.  
+4. Soubory umístíte do stejného adresáře.  
   
-5.  V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] okna příkazového řádku, přejděte do adresáře.  
+5. V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] okna příkazového řádku, přejděte do adresáře.  
   
-6.  Typ  
+6. Typ  
   
-    ```  
-    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
-    ```  
+   ```  
+   perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
+   ```  
   
-     kde *PkgCmd.ctc* je název *.ctc* souboru a *PkgCmd.vsct* je název *.vsct* soubor, který chcete vytvořit.  
+    kde *PkgCmd.ctc* je název *.ctc* souboru a *PkgCmd.vsct* je název *.vsct* soubor, který chcete vytvořit.  
   
-     Tato akce vytvoří novou *.vsct* souboru zdroje tabulky příkazů XML. Soubor můžete zkompilovat pomocí *Vsct.exe*, kompilátor VSCT, jako jste vytvářeli jakýkoli jiný *.vsct* souboru.  
+    Tato akce vytvoří novou *.vsct* souboru zdroje tabulky příkazů XML. Soubor můžete zkompilovat pomocí *Vsct.exe*, kompilátor VSCT, jako jste vytvářeli jakýkoli jiný *.vsct* souboru.  
   
-    > [!NOTE]
-    >  Můžete zlepšit čitelnost *.vsct* souboru přeformátování komentáře XML.  
+   > [!NOTE]
+   >  Můžete zlepšit čitelnost *.vsct* souboru přeformátování komentáře XML.  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 

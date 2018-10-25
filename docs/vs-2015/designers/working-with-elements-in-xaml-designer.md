@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896948"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,21 +46,21 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-change-the-layering-order"></a>Chcete-li změnit pořadí vrstev  
   
--   Proveďte jednu z těchto akcí:  
+- Proveďte jednu z těchto akcí:  
   
-    -   V **Osnova dokumentu** okně elementy přetáhnout nebo dolů lze vytvořit požadované pořadí vrstev.  
+  - V **Osnova dokumentu** okně elementy přetáhnout nebo dolů lze vytvořit požadované pořadí vrstev.  
   
-    -   Klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhovou plochu, pro kterou chcete změnit pořadí vrstev, přejděte na **pořadí**a pak klikněte na jednu z následujících akcí:  
+  - Klikněte pravým tlačítkem myši na prvek v okně Osnova dokumentu nebo na návrhovou plochu, pro kterou chcete změnit pořadí vrstev, přejděte na **pořadí**a pak klikněte na jednu z následujících akcí:  
   
-        -   **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.  
+    -   **Přenést do popředí** elementu uvést úplně přenést do popředí pořadí.  
   
-        -   **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.  
+    -   **Přenést blíž** vám elementu vpřed o jednu úroveň v pořadí.  
   
-        -   **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.  
+    -   **Přenést dál** odeslat zpět o jednu úroveň element v pořadí.  
   
-        -   **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.  
+    -   **Přenést do pozadí** odesílat elementu úplně přenést do pozadí pořadí.  
   
-     Změnit **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Pro překrývající se prvky, **ZIndex** vlastnost má přednost před pořadí prvků, které jsou zobrazeny v okně Osnova dokumentu. Element, který má nižší **ZIndex** hodnota se zobrazí v popředí při prvky překrývat.  
+    Změnit **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Pro překrývající se prvky, **ZIndex** vlastnost má přednost před pořadí prvků, které jsou zobrazeny v okně Osnova dokumentu. Element, který má nižší **ZIndex** hodnota se zobrazí v popředí při prvky překrývat.  
   
 ## <a name="changing-the-alignment-of-an-element"></a>Změna zarovnání prvku  
  Pomocí příkazů nabídky nebo přetažením prvky k zarovnávacím čárám je možné zarovnat elementy v návrhové ploše.  
@@ -115,9 +115,9 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Zrušit seskupení elementů a odstranit rozložení  
   
--   Klikněte pravým tlačítkem na skupinu, kterou chcete oddělit a klikněte na tlačítko **oddělit**.  
+- Klikněte pravým tlačítkem na skupinu, kterou chcete oddělit a klikněte na tlačítko **oddělit**.  
   
- Můžete taky seskupit nebo oddělit prvků tak, že pravým tlačítkem myši na vybrané položky v okně Osnova dokumentu a kliknutím na **seskupit do** nebo **oddělit**.  
+  Můžete taky seskupit nebo oddělit prvků tak, že pravým tlačítkem myši na vybrané položky v okně Osnova dokumentu a kliknutím na **seskupit do** nebo **oddělit**.  
   
 ## <a name="resetting-the-element-layout"></a>Resetování rozložení elementu  
  Pomocí příkazů resetovat rozložení můžete obnovit výchozí hodnoty pro specifické rozložení vlastností elementu. Pomocí tohoto příkazu můžete obnovit okraj, zarovnání, šířku, výšku a velikost elementu, samostatně nebo společně.  

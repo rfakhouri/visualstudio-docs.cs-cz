@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882663"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na ladicí program sady Visual Studio
 
@@ -188,7 +188,7 @@ V tomto příkladu `DirectoryInfo` volání přiřadil chyby na prázdný řetě
 
 Pomocníka výjimky je skvělé funkce, která vám může pomoci ladit chyby. Můžete také provádět akce podobně jako zobrazení Podrobnosti o chybě a přidat kukátko z pomocníka výjimky. Nebo v případě potřeby můžete změnit podmínky pro vyvolání konkrétní výjimky.
 
->  [!NOTE]
+> [!NOTE]
 > Nahrazuje Pomocníka pro výjimky v Pomocníkovi výjimky [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozbalte **nastavení výjimek** uzel pro další možnosti, jak zpracovat výjimky tohoto typu, ale není potřeba nic u této ukázky změnit!

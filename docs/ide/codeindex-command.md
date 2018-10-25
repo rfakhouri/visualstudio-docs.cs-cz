@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926147"
 ---
 # <a name="codeindex-command"></a>Codeindex – příkaz
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>Parametry
 
 |**Argument**|**Popis**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Určuje název kolekce projektů. Pokud název obsahuje mezery, uzavřete ho uvozovek, například "Fabrikam web".|
 |`CollectionId`|Určuje identifikační číslo kolekce projektu.|
 |`ServerPath`|Určuje cestu k souboru kódu.|
 
 |**Možnost**|**Popis**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Zobrazení stavu a konfigurace služby indexování kódu.|
 |**/setIndexing:**[na &#124; vypnout &#124; keepupOnly]|-   **na**: zahájení indexování všech sad změn.<br />-   **vypnout**: ukončení indexování všech sad změn.<br />-   **keepupOnly**: zastavení indexování dříve vytvořených sad změn a spuštění indexování pouze nových sad změn.|
 |**/ignoreList:**[Přidat &#124; odebrat &#124; removeAll &#124; zobrazení] `ServerPath`<br /><br /> Na začátku, konci nebo na obou koncích cesty k serveru můžete použít zástupný znak (*).|Určuje seznam souborů s kódem a jejich cesty, které nechcete indexované.<br /><br /> -   **Přidat**: přidání souboru, který nechcete indexovat do seznamu ignorovaných souborů.<br />-   **Odebrat**: odstranění souboru, který chcete indexovat ze seznamu ignorovaných souborů.<br />-   **removeAll**: vymazání seznamu ignorovaných souborů a zahájení indexování všech souborů.<br />-   **zobrazení**: Zobrazit všechny soubory, které nejsou indexovat.|

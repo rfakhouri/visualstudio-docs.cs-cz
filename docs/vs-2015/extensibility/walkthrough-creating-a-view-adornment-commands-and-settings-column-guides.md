@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862317"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Můžete rozšířit editoru textu nebo kódu sady Visual Studio s příkazy a z
   
  V tomto návodu provedete následující:  
   
--   Vytvořte projekt VSIX  
+- Vytvořte projekt VSIX  
   
--   Přidat grafického doplňku zobrazení editoru  
+- Přidat grafického doplňku zobrazení editoru  
   
--   Přidání podpory pro ukládání a načítání nastavení (Pokud k vodítka sloupců příkazu pro vykreslení a jejich barva)  
+- Přidání podpory pro ukládání a načítání nastavení (Pokud k vodítka sloupců příkazu pro vykreslení a jejich barva)  
   
--   Přidání příkazů (Přidání nebo odebrání vodítka sloupců, změna jejich barvy)  
+- Přidání příkazů (Přidání nebo odebrání vodítka sloupců, změna jejich barvy)  
   
--   Umístit příkazy na textový dokument kontextové nabídky a nabídky Upravit  
+- Umístit příkazy na textový dokument kontextové nabídky a nabídky Upravit  
   
--   Přidání podpory pro vyvolávání příkazů v příkazovém okně Visual Studio  
+- Přidání podpory pro vyvolávání příkazů v příkazovém okně Visual Studio  
   
- Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visual Studio[rozšíření](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Budete moct vyzkoušet verzi funkce vodítka sloupců s této galerie sady Visual Studio[rozšíření](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
- **Poznámka:**: v tomto názorném postupu vložte velké množství kódu do několika soubory generované záznamem šablony pro rozšíření sady visual studio, ale brzy bude odkazovat Tento názorný postup dokončené řešení na githubu s příklady dalších rozšíření.  Dokončený kód se mírně liší v tom, že má skutečné příkaz ikony namísto použití generictemplate ikony.  
+  **Poznámka:**: v tomto názorném postupu vložte velké množství kódu do několika soubory generované záznamem šablony pro rozšíření sady visual studio, ale brzy bude odkazovat Tento názorný postup dokončené řešení na githubu s příklady dalších rozšíření.  Dokončený kód se mírně liší v tom, že má skutečné příkaz ikony namísto použití generictemplate ikony.  
   
 ## <a name="getting-started"></a>Začínáme  
  Spouští se v sadě Visual Studio 2015, nenainstalujete sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnut jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,21 +49,21 @@ Můžete rozšířit editoru textu nebo kódu sady Visual Studio s příkazy a z
 ## <a name="setting-up-the-solution"></a>Nastavení řešení  
  Nejprve vytvořte projekt VSIX, přidáte grafického doplňku zobrazení editoru a pak přidejte příkaz (který přidá VSPackage vlastnit příkaz).  Základní architektura vypadá takto:  
   
--   Máte textové zobrazení vytvořit naslouchací proces, který vytvoří `ColumnGuideAdornment` objektu na zobrazení.  Tento objekt naslouchá událostem o změně zobrazení nebo změna nastavení, aktualizace nebo překreslování sloupec provede podle potřeby.  
+- Máte textové zobrazení vytvořit naslouchací proces, který vytvoří `ColumnGuideAdornment` objektu na zobrazení.  Tento objekt naslouchá událostem o změně zobrazení nebo změna nastavení, aktualizace nebo překreslování sloupec provede podle potřeby.  
   
--   Je `GuidesSettingsManager` , která zpracovává čtení a zápis z úložiště nastavení sady Visual Studio.  Správce nastavení také obsahuje operace pro aktualizaci nastavení, které podporují uživatelských příkazů (Přidat sloupec, odeberte sloupce, změňte barvu).  
+- Je `GuidesSettingsManager` , která zpracovává čtení a zápis z úložiště nastavení sady Visual Studio.  Správce nastavení také obsahuje operace pro aktualizaci nastavení, které podporují uživatelských příkazů (Přidat sloupec, odeberte sloupce, změňte barvu).  
   
--   Je VSIP balíček, který je nutné v případě, že máte uživatelské příkazy, ale je stejně často používaný kód, který inicializuje objekt implementace příkazy.  
+- Je VSIP balíček, který je nutné v případě, že máte uživatelské příkazy, ale je stejně často používaný kód, který inicializuje objekt implementace příkazy.  
   
--   Je `ColumnGuideCommands` deklarovat objekt, který implementuje uživatelských příkazů a připojí do obslužné rutiny příkazů pro příkazy v souboru .vsct.  
+- Je `ColumnGuideCommands` deklarovat objekt, který implementuje uživatelských příkazů a připojí do obslužné rutiny příkazů pro příkazy v souboru .vsct.  
   
- **VSIX**.  Použití **souboru &#124; nové...** příkaz pro vytvoření projektu.  V levém navigačním podokně zvolte uzel rozšiřitelnosti v rámci jazyka C# a zvolte **projekt VSIX** v pravém podokně.  Zadejte název ColumnGuides a zvolte **OK** pro vytvoření projektu.  
+  **VSIX**.  Použití **souboru &#124; nové...** příkaz pro vytvoření projektu.  V levém navigačním podokně zvolte uzel rozšiřitelnosti v rámci jazyka C# a zvolte **projekt VSIX** v pravém podokně.  Zadejte název ColumnGuides a zvolte **OK** pro vytvoření projektu.  
   
- **Zobrazení dalších úprav**.  Stisknutím tlačítka správný ukazatel myši na uzel projektu v Průzkumníku řešení.  Zvolte **přidat &#124; novou položku...** příkaz pro přidání nové položky grafického doplňku zobrazení.  Zvolte **rozšiřitelnost &#124; Editor** v levém navigačním podokně a zvolte **grafického doplňku zobrazení editoru** v pravém podokně.  Zadejte název ColumnGuideAdornment jako položka název a zvolte **přidat** a přidejte ji.  
+  **Zobrazení dalších úprav**.  Stisknutím tlačítka správný ukazatel myši na uzel projektu v Průzkumníku řešení.  Zvolte **přidat &#124; novou položku...** příkaz pro přidání nové položky grafického doplňku zobrazení.  Zvolte **rozšiřitelnost &#124; Editor** v levém navigačním podokně a zvolte **grafického doplňku zobrazení editoru** v pravém podokně.  Zadejte název ColumnGuideAdornment jako položka název a zvolte **přidat** a přidejte ji.  
   
- Můžete zobrazit tuto šablonu položky přidány dva soubory do projektu (stejně jako odkazy a tak dále): ColumnGuideAdornment.cs a ColumnGuideAdornmentTextViewCreationListener.cs.  Šablony jenom vykreslení obdélníku fialové pro zobrazení.  Níže se změnit několik řádků v naslouchacím procesu vytváření zobrazení a nahraďte jeho obsah ColumnGuideAdornment.cs.  
+  Můžete zobrazit tuto šablonu položky přidány dva soubory do projektu (stejně jako odkazy a tak dále): ColumnGuideAdornment.cs a ColumnGuideAdornmentTextViewCreationListener.cs.  Šablony jenom vykreslení obdélníku fialové pro zobrazení.  Níže se změnit několik řádků v naslouchacím procesu vytváření zobrazení a nahraďte jeho obsah ColumnGuideAdornment.cs.  
   
- **Příkazy**.  Stisknutím tlačítka správný ukazatel myši na uzel projektu v Průzkumníku řešení.  Zvolte **přidat &#124; novou položku...** příkaz pro přidání nové položky grafického doplňku zobrazení.  Zvolte **rozšiřitelnost &#124; VSPackage** v levém navigačním podokně a zvolte **vlastního příkazu** v pravém podokně.  Zadejte název ColumnGuideCommands jako položka název a zvolte **přidat** a přidejte ji.  Přidávání příkazů a balíček kromě několik odkazů, přidá ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs a ColumnGuideCommandsPackage.vsct.  Níže najdete nahradíte obsah první a poslední soubory musel definovat a implementovat příkazy.  
+  **Příkazy**.  Stisknutím tlačítka správný ukazatel myši na uzel projektu v Průzkumníku řešení.  Zvolte **přidat &#124; novou položku...** příkaz pro přidání nové položky grafického doplňku zobrazení.  Zvolte **rozšiřitelnost &#124; VSPackage** v levém navigačním podokně a zvolte **vlastního příkazu** v pravém podokně.  Zadejte název ColumnGuideCommands jako položka název a zvolte **přidat** a přidejte ji.  Přidávání příkazů a balíček kromě několik odkazů, přidá ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs a ColumnGuideCommandsPackage.vsct.  Níže najdete nahradíte obsah první a poslední soubory musel definovat a implementovat příkazy.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Nastavení naslouchacího procesu vytváření zobrazení textu  
  ColumnGuideAdornmentTextViewCreationListener.cs otevře v editoru.  Tento kód implementuje obslužné rutiny pro vždy, když sada Visual Studio vytvoří zobrazení textu.  Existují atributy, které řídí, kdy je volána obslužnou rutinu v závislosti na charakteristikách zobrazení.  

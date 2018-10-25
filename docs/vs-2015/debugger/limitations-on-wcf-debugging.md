@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888095"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Omezení ladění WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Existují tři způsoby, můžete začít ladění služby WCF:  
   
--   Ladění procesu klienta, která volá službu. Ladicí program do služby. Služba nemusí být ve stejném řešení jako klientské aplikace.  
+- Ladění procesu klienta, která volá službu. Ladicí program do služby. Služba nemusí být ve stejném řešení jako klientské aplikace.  
   
--   Ladění procesu klienta, který odešle požadavek do služby. Služba musí být součástí vašeho řešení.  
+- Ladění procesu klienta, který odešle požadavek do služby. Služba musí být součástí vašeho řešení.  
   
--   Použijete **připojit k procesu** k připojení ke službě, na kterém aktuálně běží. Ladění začíná v službě.  
+- Použijete **připojit k procesu** k připojení ke službě, na kterém aktuálně běží. Ladění začíná v službě.  
   
- Toto téma popisuje omezení na uvedené scénáře.  
+  Toto téma popisuje omezení na uvedené scénáře.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Omezení krokování s vnořením do služby  
  Chcete-li do služby z klientských aplikací, které ladíte, musí být splněny následující podmínky:  

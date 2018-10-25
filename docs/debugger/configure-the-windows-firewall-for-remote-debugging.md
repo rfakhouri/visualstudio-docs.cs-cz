@@ -10,35 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847952"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
 Toto téma popisuje postup konfigurace brány firewall pro povolení vzdáleného ladění na počítačích, na kterých běží tyto operační systémy:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 nebo 8.1  
+- Windows 8 nebo 8.1  
   
--   Windows 7   
+- Windows 7   
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
 
--   Windows Server 2012
+- Windows Server 2012
   
--   Windows Server 2008 R2 
+- Windows Server 2008 R2 
   
- Pokud v síti, na kterém jsou ladění není chráněné bránou firewall, tato konfigurace je zbytečné. V opačném případě počítače, který je hostitelem aplikace Visual Studio a vzdáleného počítače, který má být laděn vyžadovat změny konfigurace brány firewall.  
+  Pokud v síti, na kterém jsou ladění není chráněné bránou firewall, tato konfigurace je zbytečné. V opačném případě počítače, který je hostitelem aplikace Visual Studio a vzdáleného počítače, který má být laděn vyžadovat změny konfigurace brány firewall.  
   
- **Protokol IPSec** Pokud síť vyžaduje tuto komunikaci se provádí pomocí protokolu IPSec, je nutné otevřít další porty na hostitelském počítači Visual Studio, tak vzdálenému počítači.  
+  **Protokol IPSec** Pokud síť vyžaduje tuto komunikaci se provádí pomocí protokolu IPSec, je nutné otevřít další porty na hostitelském počítači Visual Studio, tak vzdálenému počítači.  
   
- **Webový Server** Pokud ladíte vzdáleného webového serveru, je nutné otevřít další port na vzdáleném počítači. (Pro službu IIS, musí být port 80 otevřený.)  
+  **Webový Server** Pokud ladíte vzdáleného webového serveru, je nutné otevřít další port na vzdáleném počítači. (Pro službu IIS, musí být port 80 otevřený.)  
   
- Všimněte si, že oba počítače nemají běžet stejný operační systém. Například v počítači s Visual Studio můžete spustit Windows 10 a vzdáleného počítače můžete spustit systém Windows Server 2012 R2.      
+  Všimněte si, že oba počítače nemají běžet stejný operační systém. Například v počítači s Visual Studio můžete spustit Windows 10 a vzdáleného počítače můžete spustit systém Windows Server 2012 R2.      
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na vzdáleném počítači, které umožňují vzdálené ladění  
   

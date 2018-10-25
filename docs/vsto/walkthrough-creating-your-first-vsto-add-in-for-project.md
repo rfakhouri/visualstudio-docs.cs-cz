@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884859"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Project
   Tento návod ukazuje, jak k vytvoření doplňku VSTO pro aplikaci Microsoft Office Project. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní projekty bez ohledu na to, které jsou otevřené aplikace. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "35675866"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Vytvoření projektu doplňku VSTO pro Project.  
+- Vytvoření projektu doplňku VSTO pro Project.  
   
--   Psaní kódu, který používá model objektu projektu přidejte úkol do nového projektu.  
+- Psaní kódu, který používá model objektu projektu přidejte úkol do nového projektu.  
   
--   Vytváření a spouštění projektů a otestovat ho.  
+- Vytváření a spouštění projektů a otestovat ho.  
   
--   Čištění dokončený projekt tak, aby doplňku VSTO už nespouští automaticky na vašem vývojovém počítači.  
+- Čištění dokončený projekt tak, aby doplňku VSTO už nespouští automaticky na vašem vývojovém počítači.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
@@ -78,14 +78,14 @@ ms.locfileid: "35675866"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Přidejte úkol do nového projektu  
   
-1.  V soubor kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Tento kód definuje obslužnou rutinu události pro `NewProject` událost `Microsoft.Office.Interop.MSProject.Application` třídy.  
+1. V soubor kódu ThisAddIn, přidejte následující kód, který `ThisAddIn` třídy. Tento kód definuje obslužnou rutinu události pro `NewProject` událost `Microsoft.Office.Interop.MSProject.Application` třídy.  
   
-     Když uživatel vytvoří nový projekt, tato obslužná rutina události přidá úkol do projektu.  
+    Když uživatel vytvoří nový projekt, tato obslužná rutina události přidá úkol do projektu.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Chcete-li upravit projekt, tento příklad kódu používá následující objekty:  
+   Chcete-li upravit projekt, tento příklad kódu používá následující objekty:  
   
 -   `Application` Pole `ThisAddIn` třídy. `Application` Pole vrátí `Microsoft.Office.Interop.MSProject.Application` objektu, který představuje aktuální instanci aplikace Project.  
   

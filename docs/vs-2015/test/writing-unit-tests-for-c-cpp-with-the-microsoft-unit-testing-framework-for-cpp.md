@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904037"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Zápis testů jednotek pro C/C++ s infrastrukturou testování částí Microsoft Unit Testing Framework pro C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ V sadě Visual Studio můžete vytvořit testy jednotek pro nespravovaný kód n
   
 ###  <a name="coupleProjects"></a> Několik testů projektu do projektu knihovny DLL  
   
-1.  Přidejte projekt knihovny DLL do odkazů projektu testovacího projektu:  
+1. Přidejte projekt knihovny DLL do odkazů projektu testovacího projektu:  
   
-    1.  Otevřete vlastnosti projektu testu a zvolte **společné vlastnosti**, **rámec a odkazy**.  
+   1.  Otevřete vlastnosti projektu testu a zvolte **společné vlastnosti**, **rámec a odkazy**.  
   
-         ![C&#43; &#43; vlastnosti projektu &#45; rámec a odkazy](../test/media/utecpp08.png "UteCpp08")  
+        ![C&#43; &#43; vlastnosti projektu &#45; rámec a odkazy](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Zvolte **přidat nový odkaz**.  
+   2.  Zvolte **přidat nový odkaz**.  
   
-         V **přidat odkaz** dialogového okna, vyberte projekt knihovny DLL a vyberte **přidat**.  
+        V **přidat odkaz** dialogového okna, vyberte projekt knihovny DLL a vyberte **přidat**.  
   
-         ![C&#43; &#43; vlastnosti projektu &#45; přidat nový odkaz](../test/media/utecpp09.png "UteCpp09")  
+        ![C&#43; &#43; vlastnosti projektu &#45; přidat nový odkaz](../test/media/utecpp09.png "UteCpp09")  
   
-2.  V souboru .cpp hlavní jednotkového testu zahrňte soubor .h kódu knihovny DLL:  
+2. V souboru .cpp hlavní jednotkového testu zahrňte soubor .h kódu knihovny DLL:  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Přidáte základní test, který používá exportované funkce:  
+3. Přidáte základní test, který používá exportované funkce:  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Sestavte řešení.  
+4. Sestavte řešení.  
   
-     Nový test se zobrazí v Průzkumníku testů.  
+    Nový test se zobrazí v Průzkumníku testů.  
   
-5.  V Průzkumníku testů, zvolte **spustit všechny**.  
+5. V Průzkumníku testů, zvolte **spustit všechny**.  
   
-     ![Průzkumník testu jednotek &#45; základní Test prošel](../test/media/utecpp10.png "UteCpp10")  
+    ![Průzkumník testu jednotek &#45; základní Test prošel](../test/media/utecpp10.png "UteCpp10")  
   
- Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.  
+   Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.  
   
 ###  <a name="iterate"></a> Využívejte iterativní posílit testy a daly se předat  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922468"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: Publikování aplikace WPF s povolenými vizuálními styly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
   
  Chcete-li vyřešit chybu a publikovat řešení, je třeba provést následující úkoly:  
   
--   [Publikování řešení bez povolenými vizuálními styly](#BKMK_publishsolwovs).  
+- [Publikování řešení bez povolenými vizuálními styly](#BKMK_publishsolwovs).  
   
--   [Vytvořit soubor manifestu](#BKMK_CreateManifest).  
+- [Vytvořit soubor manifestu](#BKMK_CreateManifest).  
   
--   [Vložit soubor manifestu do spustitelného souboru publikované řešení](#BKMK_embedmanifest).  
+- [Vložit soubor manifestu do spustitelného souboru publikované řešení](#BKMK_embedmanifest).  
   
--   [Podepsání manifestů aplikace a nasazení](#BKMK_signappdeplyman).  
+- [Podepsání manifestů aplikace a nasazení](#BKMK_signappdeplyman).  
   
- Potom můžete přesunout publikované soubory do umístění, ze kterého chcete, aby koncoví uživatelé k instalaci aplikace.  
+  Potom můžete přesunout publikované soubory do umístění, ze kterého chcete, aby koncoví uživatelé k instalaci aplikace.  
   
 ##  <a name="BKMK_publishsolwovs"></a> Publikování řešení bez povolenými vizuálními styly  
   
@@ -100,72 +100,72 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
   
 ##  <a name="BKMK_embedmanifest"></a> Vložit soubor manifestu do spustitelného souboru publikované řešení  
   
-1.  Otevřít **příkazový řádek sady Visual Studio**.  
+1. Otevřít **příkazový řádek sady Visual Studio**.  
   
-     Další informace o tom, jak otevřít **příkazový řádek sady Visual Studio**, naleznete v tématu [příkazové řádky](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
+    Další informace o tom, jak otevřít **příkazový řádek sady Visual Studio**, naleznete v tématu [příkazové řádky](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
   
-    > [!NOTE]
-    >  Ve zbývajících krocích vytvořit následující předpoklady o řešení:  
-    >   
-    >  -   Název řešení je **MyWPFProject**.  
-    > -   Řešení se nachází v následujícím adresáři: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      Publikování řešení na následující adresář: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Překopírujte nejnovější verzi souborů publikované aplikace se nachází v následujícím adresáři: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Není nutné použít název nebo umístění adresáře je popsáno výše. Název a umístění je popsáno výše se používají pouze pro ilustraci kroky potřebné k publikování vašich řešení.  
+   > [!NOTE]
+   >  Ve zbývajících krocích vytvořit následující předpoklady o řešení:  
+   > 
+   > - Název řešení je **MyWPFProject**.  
+   >   -   Řešení se nachází v následujícím adresáři: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   Publikování řešení na následující adresář: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   Překopírujte nejnovější verzi souborů publikované aplikace se nachází v následujícím adresáři: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Není nutné použít název nebo umístění adresáře je popsáno výše. Název a umístění je popsáno výše se používají pouze pro ilustraci kroky potřebné k publikování vašich řešení.  
   
-2.  Na příkazovém řádku změňte cestu k adresáři, který obsahuje nejnovější verzi souborů publikované aplikace. Následující příklad ukazuje tento krok.  
+2. Na příkazovém řádku změňte cestu k adresáři, který obsahuje nejnovější verzi souborů publikované aplikace. Následující příklad ukazuje tento krok.  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  Na příkazovém řádku spusťte následující příkaz, který vložit soubor manifestu do spustitelného souboru aplikace.  
+3. Na příkazovém řádku spusťte následující příkaz, který vložit soubor manifestu do spustitelného souboru aplikace.  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> Podepsání manifestů aplikace a nasazení  
   
-1.  Na příkazovém řádku spusťte následující příkaz k odebrání `.deploy` rozšíření ze spustitelného souboru v aktuálním adresáři.  
+1. Na příkazovém řádku spusťte následující příkaz k odebrání `.deploy` rozšíření ze spustitelného souboru v aktuálním adresáři.  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  Tento příklad předpokládá, že má pouze jeden soubor `.deploy` příponu souboru. Ujistěte se, že je přejmenovat všechny soubory v tomto adresáři, které mají `.deploy` příponu souboru.  
+   > [!NOTE]
+   >  Tento příklad předpokládá, že má pouze jeden soubor `.deploy` příponu souboru. Ujistěte se, že je přejmenovat všechny soubory v tomto adresáři, které mají `.deploy` příponu souboru.  
   
-2.  Na příkazovém řádku spusťte následující příkaz k podepsání manifestu aplikace.  
+2. Na příkazovém řádku spusťte následující příkaz k podepsání manifestu aplikace.  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Tento příklad předpokládá podepsání manifestu pomocí `.pfx` souboru projektu. Pokud nejsou podepsání manifestu, můžete vynechat `–cf` parametr, který se používá v tomto příkladu. Pokud se přihlašujete manifest certifikátem, který vyžaduje heslo, zadejte `–password` možnost (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
+   > [!NOTE]
+   >  Tento příklad předpokládá podepsání manifestu pomocí `.pfx` souboru projektu. Pokud nejsou podepsání manifestu, můžete vynechat `–cf` parametr, který se používá v tomto příkladu. Pokud se přihlašujete manifest certifikátem, který vyžaduje heslo, zadejte `–password` možnost (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
   
-3.  Na příkazovém řádku spusťte následující příkaz pro přidání `.deploy` příponu názvu souboru, který jste přejmenovali v předchozím kroku tohoto postupu.  
+3. Na příkazovém řádku spusťte následující příkaz pro přidání `.deploy` příponu názvu souboru, který jste přejmenovali v předchozím kroku tohoto postupu.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  Tento příklad předpokládá, že pouze jeden soubor měl `.deploy` příponu souboru. Ujistěte se, že je přejmenovat všechny soubory v tomto adresáři, které dříve měly `.deploy` příponu názvu souboru.  
+   > [!NOTE]
+   >  Tento příklad předpokládá, že pouze jeden soubor měl `.deploy` příponu souboru. Ujistěte se, že je přejmenovat všechny soubory v tomto adresáři, které dříve měly `.deploy` příponu názvu souboru.  
   
-4.  Na příkazovém řádku spusťte následující příkaz k podepsání manifestu nasazení.  
+4. Na příkazovém řádku spusťte následující příkaz k podepsání manifestu nasazení.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  Tento příklad předpokládá podepsání manifestu pomocí `.pfx` souboru projektu. Pokud nejsou podepsání manifestu, můžete vynechat `–cf` parametr, který se používá v tomto příkladu. Pokud se přihlašujete manifest certifikátem, který vyžaduje heslo, zadejte `–password` možnosti, jako v následujícím příkladu:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
+   > [!NOTE]
+   >  Tento příklad předpokládá podepsání manifestu pomocí `.pfx` souboru projektu. Pokud nejsou podepsání manifestu, můžete vynechat `–cf` parametr, který se používá v tomto příkladu. Pokud se přihlašujete manifest certifikátem, který vyžaduje heslo, zadejte `–password` možnosti, jako v následujícím příkladu:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
   
- Po provedení těchto kroků můžete přesunout publikované soubory do umístění, ze kterého chcete, aby koncoví uživatelé k instalaci aplikace. Pokud máte v úmyslu často aktualizovat řešení, můžete přesunout tyto příkazy do skriptu a spusťte skript pokaždé, když že publikujete novou verzi.  
+   Po provedení těchto kroků můžete přesunout publikované soubory do umístění, ze kterého chcete, aby koncoví uživatelé k instalaci aplikace. Pokud máte v úmyslu často aktualizovat řešení, můžete přesunout tyto příkazy do skriptu a spusťte skript pokaždé, když že publikujete novou verzi.  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

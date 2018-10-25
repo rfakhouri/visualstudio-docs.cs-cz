@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d87f44ad4a125f0aab0bafc2390cc1682082e5f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 39ab61615ed00504259909339734ab7874a6dfc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860367"
 ---
 # <a name="feedback-to-the-user"></a>Zpětná vazba uživateli
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), vizuální zpětnou vazbu týkající se dostupné funkce podle aktuálního výběru a globální výběr kontextu uživatele. V následující tabulce jsou uvedeny funkce, které jsou k dispozici v kontextech jiný výběr.  
@@ -38,27 +38,27 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované výv
   
  Pokud se pouze zařízení surface funkce zákazníci potřebují a nepřetržitě poskytovat konzistentní výběru a zpětná vazba místní prostředí, vám pomůže zjednodušit v integrovaném vývojovém prostředí. Při každém otevření okna v rozhraní IDE, platí následující pravidla:  
   
--   Pokud se okno změní jeho výběr kontextu, je v okně, jasně označeny názor na výběr a **dynamická Nápověda** okno, pokud je vidět, se aktualizuje tak, aby odrážela aktuální kontext.  
+- Pokud se okno změní jeho výběr kontextu, je v okně, jasně označeny názor na výběr a **dynamická Nápověda** okno, pokud je vidět, se aktualizuje tak, aby odrážela aktuální kontext.  
   
--   Pokud se okno změní kontext globálního výběru, všechny kontextové nabídky, okna aktivní hierarchii a záhlaví okna aplikace se aktualizují tak, aby odrážela aktuální kontext.  
+- Pokud se okno změní kontext globálního výběru, všechny kontextové nabídky, okna aktivní hierarchii a záhlaví okna aplikace se aktualizují tak, aby odrážela aktuální kontext.  
   
--   Okna by měl surface vlastnosti pro aktuální výběr v **vlastnosti** okno a volitelně také, zda se zobrazí, **stránky vlastností** dialogové okno.  
+- Okna by měl surface vlastnosti pro aktuální výběr v **vlastnosti** okno a volitelně také, zda se zobrazí, **stránky vlastností** dialogové okno.  
   
--   Pokud okno není surface vlastnosti nebo změnit výběr globální kontext, názor na výběr by neměl zůstat v okně když už není aktivní okno v integrovaném vývojovém prostředí.  
+- Pokud okno není surface vlastnosti nebo změnit výběr globální kontext, názor na výběr by neměl zůstat v okně když už není aktivní okno v integrovaném vývojovém prostředí.  
   
--   Všechna okna nástrojů konkrétní dokumenty by měly odrážet neustále aktivní dokument.  
+- Všechna okna nástrojů konkrétní dokumenty by měly odrážet neustále aktivní dokument.  
   
--   Nabídky, panely nástrojů a záhlaví okna aplikace by měly odrážet okno klienta nejvyššího rozhraní více dokumentů (MDI).  
+- Nabídky, panely nástrojů a záhlaví okna aplikace by měly odrážet okno klienta nejvyššího rozhraní více dokumentů (MDI).  
   
- Například, když kód HTML zobrazení **webový formulář** webové aplikace Visual Basic je projekt otevřít, a uživatel vybere `<td>` značky, zpětná vazba je k dispozici v následujícím způsobem:  
+  Například, když kód HTML zobrazení **webový formulář** webové aplikace Visual Basic je projekt otevřít, a uživatel vybere `<td>` značky, zpětná vazba je k dispozici v následujícím způsobem:  
   
--   Výběr je uvedené v aktivní okno a reflektován v **vlastnosti** okna.  
+- Výběr je uvedené v aktivní okno a reflektován v **vlastnosti** okna.  
   
--   Konkrétní dokumenty **nástrojů** aktualizován, aby odrážel aktivní dokument.  
+- Konkrétní dokumenty **nástrojů** aktualizován, aby odrážel aktivní dokument.  
   
--   **Editor** nástrojů a **tabulky** nabídky se zobrazí a aktualizuje záhlaví tak, aby odrážely okně webového formuláře.  
+- **Editor** nástrojů a **tabulky** nabídky se zobrazí a aktualizuje záhlaví tak, aby odrážely okně webového formuláře.  
   
--   Okno aktivní hierarchii, což je obvykle **Průzkumníka řešení**a jeho název panelu aktualizovat tak, aby odrážela aktuální kontext a kontextové **projektu** příkazy nabídky nyní budou vztahovat na aktivním webu Projekt aplikace.  
+- Okno aktivní hierarchii, což je obvykle **Průzkumníka řešení**a jeho název panelu aktualizovat tak, aby odrážela aktuální kontext a kontextové **projektu** příkazy nabídky nyní budou vztahovat na aktivním webu Projekt aplikace.  
   
 ## <a name="see-also"></a>Viz také:  
  [Výběr a Měna v prostředí IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   

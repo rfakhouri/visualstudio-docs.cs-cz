@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923443"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Upgrady pro rozšíření nainstalované pomocí. INSTALAČNÍ SLUŽBY MSI  
  Některá rozšíření využívajícím MSI nasazení šablony do společného umístění šablon například následující:  
   
--   **\<Visual Studio Instalační adresář > \Common7\IDE\\< ProjectTemplates/šablon položek >**  
+- **\<Visual Studio Instalační adresář > \Common7\IDE\\< ProjectTemplates/šablon položek >**  
   
--   **\<Visual Studio Instalační adresář > \Common7\IDE\Extensions\\< ExtensionName\>\\< projektů a šablon položek >**  
+- **\<Visual Studio Instalační adresář > \Common7\IDE\Extensions\\< ExtensionName\>\\< projektů a šablon položek >**  
   
- Pokud vaše rozšíření provede nasazení služby na základě Instalační služby MSI, musíte do manifestu šablony vygenerovat ručně a ujistěte se, že je součástí instalace rozšíření. Porovnejte výše uvedených příkladech .vstman a [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md). Pokud chcete zobrazit, co je potřeba zahrnout  
+  Pokud vaše rozšíření provede nasazení služby na základě Instalační služby MSI, musíte do manifestu šablony vygenerovat ručně a ujistěte se, že je součástí instalace rozšíření. Porovnejte výše uvedených příkladech .vstman a [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md). Pokud chcete zobrazit, co je potřeba zahrnout  
   
- Měli byste vytvořit samostatné manifesty pro šablony projektů a položek a by měl přejděte kořenový adresář šablon jak je uvedeno výše. Měli byste vytvořit jeden manifest rozšíření a národní prostředí.  
+  Měli byste vytvořit samostatné manifesty pro šablony projektů a položek a by měl přejděte kořenový adresář šablon jak je uvedeno výše. Měli byste vytvořit jeden manifest rozšíření a národní prostředí.  
   
 ## <a name="troubleshooting-template-installation"></a>Řešení potíží s instalací šablony  
  Pokud narazíte na problémy, projekt nebo položku šablony nasazení, můžete povolit protokolování diagnostiky.  
   
-1.  Spuštěním následujícího příkazu nastavte klíč registru a povolit protokolování:  
+1. Spuštěním následujícího příkazu nastavte klíč registru a povolit protokolování:  
   
-     **Přidat reg HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **Přidat reg HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Spusťte sadu Visual Studio a spusťte nový projekt a nová položka dialogová okna inicializace obou stromech šablony. Protokol šablony se zobrazí v **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Inicializace stromu každý šablona přidá položky do tohoto protokolu.  
+2. Spusťte sadu Visual Studio a spusťte nový projekt a nová položka dialogová okna inicializace obou stromech šablony. Protokol šablony se zobrazí v **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Inicializace stromu každý šablona přidá položky do tohoto protokolu.  
   
- Soubor protokolu obsahuje následující sloupce:  
+   Soubor protokolu obsahuje následující sloupce:  
   
 -   **FullPathToTemplate**, který má následující hodnoty:  
   

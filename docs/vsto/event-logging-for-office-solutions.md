@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925109"
 ---
 # <a name="event-logging-for-office-solutions"></a>Protokolování události u řešení pro systém Office
   Můžete v prohlížeči událostí ve Windows najdete v článku zprávy o výjimkách, které jsou zachyceny [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] při instalaci nebo odinstalaci řešení Office. Tyto zprávy z protokolování událostí můžete použít k vyřešení instalace a problémů s nasazením.  
@@ -51,33 +51,33 @@ ms.locfileid: "35675850"
   
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Přečíst protokol událostí ve Windows 7, Windows Vista a Windows Server 2008  
   
-1.  V Ovládacích panelech otevřete **nástroje pro správu**.  
+1. V Ovládacích panelech otevřete **nástroje pro správu**.  
   
-2.  Spustit **Prohlížeč událostí**.  
+2. Spustit **Prohlížeč událostí**.  
   
-3.  Rozbalte **protokoly Windows**.  
+3. Rozbalte **protokoly Windows**.  
   
-4.  Vyberte v seznamu protokolů událostí **aplikace**.  
+4. Vyberte v seznamu protokolů událostí **aplikace**.  
   
-5.  Na **akce** nabídky, klikněte na tlačítko **filtrovat aktuální protokol**.  
+5. Na **akce** nabídky, klikněte na tlačítko **filtrovat aktuální protokol**.  
   
-6.  V **zdroj události** seznamu vyberte **VSTO 4.0**.  
+6. V **zdroj události** seznamu vyberte **VSTO 4.0**.  
   
-7.  Pro instalaci události v **ID události** zadejte **4096**.  
+7. Pro instalaci události v **ID události** zadejte **4096**.  
   
-8.  Klikněte na tlačítko **OK** zobrazíte filtrované zobrazení.  
+8. Klikněte na tlačítko **OK** zobrazíte filtrované zobrazení.  
   
- V prohlížeči událostí obsahuje tyto informace:  
+   V prohlížeči událostí obsahuje tyto informace:  
   
--   Umístění manifestu nasazení pro řešení.  
+- Umístění manifestu nasazení pro řešení.  
   
--   Zpráva, která popisuje příčinu chyby nebo výjimky.  
+- Zpráva, která popisuje příčinu chyby nebo výjimky.  
   
- Tyto zprávy o výjimkách, můžete zjistit, proč pro problém s instalací, například na nedůvěryhodný certifikát, umístění služby nedůvěryhodné dokumentu nebo manifest nasazení je neplatná.  
+  Tyto zprávy o výjimkách, můžete zjistit, proč pro problém s instalací, například na nedůvěryhodný certifikát, umístění služby nedůvěryhodné dokumentu nebo manifest nasazení je neplatná.  
   
- Po odinstalaci je řešení pro Office, zůstanou zprávy o výjimce v protokolu událostí.  
+  Po odinstalaci je řešení pro Office, zůstanou zprávy o výjimce v protokolu událostí.  
   
- Zobrazit nebo protokolování výjimek zpráv při spuštění řešení pro Office naleznete v tématu [projekty Office ladění](../vsto/debugging-office-projects.md) a [projekty Office ladění](../vsto/debugging-office-projects.md).  
+  Zobrazit nebo protokolování výjimek zpráv při spuštění řešení pro Office naleznete v tématu [projekty Office ladění](../vsto/debugging-office-projects.md) a [projekty Office ladění](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Lokalizace  
  Visual Studio Tools for Office runtime language Určuje jazyk zpráva o výjimce. Například pokud má počítač koncového uživatele japonská jazyková sada nainstalovaná, zpráva výjimky je zapsané do protokolu událostí v japonštině.  

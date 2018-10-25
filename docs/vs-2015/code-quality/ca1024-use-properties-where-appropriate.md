@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858924"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Použijte vlastnosti, kde je to vhodné
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -42,25 +43,25 @@ ms.locfileid: "49222726"
 ## <a name="rule-description"></a>Popis pravidla
  Ve většině případů vlastnosti představují data a provedení metody akce. Vlastnosti jsou dostupné jako pole, které usnadňují jejich použití. Metoda je vhodným kandidátem pro stala vlastností, pokud se nachází jedna z těchto podmínek:
 
--   Nepřijímá žádné argumenty a vrátí informace o stavu objektu.
+- Nepřijímá žádné argumenty a vrátí informace o stavu objektu.
 
--   Přijímá jeden argument nastavit některá část stav objektu.
+- Přijímá jeden argument nastavit některá část stav objektu.
 
- Vlastnosti by měla chovat, jako by šlo polí. Pokud nelze metodu by neměla změnit na vlastnost. Metody jsou lepší než vlastnosti v následujících situacích:
+  Vlastnosti by měla chovat, jako by šlo polí. Pokud nelze metodu by neměla změnit na vlastnost. Metody jsou lepší než vlastnosti v následujících situacích:
 
--   Metoda provádí časově náročná operace. Metoda je perceivably pomalejší než čas, který je potřeba nastavit nebo získat hodnotu pole.
+- Metoda provádí časově náročná operace. Metoda je perceivably pomalejší než čas, který je potřeba nastavit nebo získat hodnotu pole.
 
--   Metoda provádí převod. Přístup k poli nevrací převedená verze tohoto data, která ukládá.
+- Metoda provádí převod. Přístup k poli nevrací převedená verze tohoto data, která ukládá.
 
--   Metoda Get má pozorovatelný vedlejší efekt. Načítání hodnoty pole nevytváří žádné vedlejší účinky.
+- Metoda Get má pozorovatelný vedlejší efekt. Načítání hodnoty pole nevytváří žádné vedlejší účinky.
 
--   Je důležité pořadí provádění. Nastaví hodnotu pole není závislý na výskyt jiné operace.
+- Je důležité pořadí provádění. Nastaví hodnotu pole není závislý na výskyt jiné operace.
 
--   Volání metody dvakrát za sebou vytvoří jiné výsledky.
+- Volání metody dvakrát za sebou vytvoří jiné výsledky.
 
--   Metoda je statická, ale vrátí objekt, který můžete změnit tak, volající. Načítání hodnoty pole neumožňuje volajícího, aby změna dat uložených v poli.
+- Metoda je statická, ale vrátí objekt, který můžete změnit tak, volající. Načítání hodnoty pole neumožňuje volajícího, aby změna dat uložených v poli.
 
--   Metoda vrátí pole.
+- Metoda vrátí pole.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, změňte metodu na vlastnost.

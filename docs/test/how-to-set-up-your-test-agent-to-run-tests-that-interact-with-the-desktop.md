@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862096"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Postupy: nastavení testovacího agenta pro spouštění testů komunikujících s plochou
 
@@ -48,27 +48,27 @@ Následujícím postupem nastavte všechny agenty, které jsou přiřazeny k rol
 
    > [!NOTE]
    > - Uživatel, který jste přidali ke spouštění procesu musí rovněž přidán jako člen skupiny TeamTestAgentService v počítači pro testovací kontrolér tohoto agenta. Pokud je tento uživatel aktuálním uživatelem, při přidání tohoto uživatele do počítače řadiče testů musíte odhlásit nebo restartovat.
-   - Hesla s hodnotou Null nejsou pro uživatelské účty podporována.
-   - Pokud chcete použít IntelliTrace nebo data emulace sítě a diagnostický adaptér, musí být uživatelský účet členem skupiny Administrators. Pokud počítač, na kterém je spuštěn testovací agent je spuštěn operační systém, který má nejméně privilegovaný uživatelský účet, musíte také spustit jako správce (se zvýšenými oprávněními). Pokud uživatelské jméno agenta není ve službě agenta, pokusí se ho přidat, což vyžaduje oprávnění testovacího kontroléru.
-   - Uživatel pokouší použít testovací kontrolér musí být účet uživatelé testovacího kontroléru nebo nebudou moci spouštět v kontroléru testy.
+   > - Hesla s hodnotou Null nejsou pro uživatelské účty podporována.
+   > - Pokud chcete použít IntelliTrace nebo data emulace sítě a diagnostický adaptér, musí být uživatelský účet členem skupiny Administrators. Pokud počítač, na kterém je spuštěn testovací agent je spuštěn operační systém, který má nejméně privilegovaný uživatelský účet, musíte také spustit jako správce (se zvýšenými oprávněními). Pokud uživatelské jméno agenta není ve službě agenta, pokusí se ho přidat, což vyžaduje oprávnění testovacího kontroléru.
+   > - Uživatel pokouší použít testovací kontrolér musí být účet uživatelé testovacího kontroléru nebo nebudou moci spouštět v kontroléru testy.
 
 4. Pokud chcete mít jistotu, že počítač, který s testovacím agentem může spouštět testy po restartování, můžete nastavit počítač pro automatické přihlášení jako uživatel – testovací agent. Vyberte **automatické přihlášení**. Toto uloží uživatelské jméno a heslo v zašifrované podobě v registru.
 
    > [!NOTE]
    > Pokud jsou připojeny k testovacím prostředí pomocí vzdálené plochy nebo připojení jako Host, může dojít k častým, neočekávaným odpojením. Jednou z možných příčin ztráty připojení je, že je počítač nakonfigurovaný pro automatické přihlášení do sítě.
 
-7. Chcete-li mít jistotu, že spořič obrazovky je zakázán, protože to může narušit jakékoli automatizované testy, které musí spolupracovat s plochou, vyberte **Ujistěte se, že spořič obrazovky je zakázán**.
+5. Chcete-li mít jistotu, že spořič obrazovky je zakázán, protože to může narušit jakékoli automatizované testy, které musí spolupracovat s plochou, vyberte **Ujistěte se, že spořič obrazovky je zakázán**.
 
    > [!WARNING]
    > Pokud automatické přihlášení nebo zakázání spořiče obrazovky, vznikají bezpečnostní rizika. Povolením automatického protokolování na můžete povolit ostatním uživatelům spustit tento počítač a použít účet, který se přihlásí automaticky. Pokud zakážete spořič obrazovky, počítač nemusí vyzvat uživatele k přihlášení k odemknutí počítače. Umožňuje všem uživatelům přístup k počítači, pokud mají fyzický přístup k počítači. Pokud povolíte tyto funkce v počítači, by měl Ujistěte se, že tyto počítače byly fyzicky zabezpečeny. Například tyto počítače jsou umístěny ve fyzicky zabezpečeném prostředí. Pokud zrušíte výběr **Ujistěte se, že spořič obrazovky je zakázán**, nepovolíte spořič obrazovky.
 
    Chcete-li agenta změnit zpět tak, aby se spouštěl jako služba, můžete použít tento nástroj a vybrat **služby**.
 
-8. Chcete-li změny použít, zvolte **použít nastavení**.
+6. Chcete-li změny použít, zvolte **použít nastavení**.
 
    A **souhrnné informace o konfiguraci** se zobrazí dialogové okno, které zobrazuje stav všech kroků konfigurace testovacího agenta.
 
-9. Zavřete **souhrnné informace o konfiguraci** dialogového okna zvolte **zavřete**. Klikněte na tlačítko **zavřete** zavřete **Test Agent Configuration Tool**.
+7. Zavřete **souhrnné informace o konfiguraci** dialogového okna zvolte **zavřete**. Klikněte na tlačítko **zavřete** zavřete **Test Agent Configuration Tool**.
 
    > [!NOTE]
    > Existuje ikona v oznamovací oblasti, která běží na počítači pro testovacího agenta, který je spuštěn jako proces. Zobrazuje stav testovacího agenta. Můžete spustit, zastavit nebo restartovat agenta, pokud je spuštěn jako proces, který používá tento nástroj. Chcete-li spustit testovacího agenta jako proces, pokud není spuštěn, zvolte **Start** > **sady Visual Studio** > **Microsoft Visual Studio Test Agent**.

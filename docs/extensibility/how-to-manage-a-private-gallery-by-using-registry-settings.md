@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72e4648643e60939fb74d69f960342d14b8a5d1b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854660"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Postupy: Správa privátní galerie s použitím nastavení registru
 Pokud jste správce nebo vývojáře rozšíření izolovaného prostředí, můžete řídit přístup ke ovládací prvky, šablony a nástroje v Galerii Visual Studio, Galerie ukázek nebo privátní galerie. Chcete-li galerii k dispozici nebo není k dispozici, vytvořte *.pkgdef* soubor, který popisuje změny registru klíčů a jejich hodnoty.  
@@ -41,17 +41,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories` Klíč odkazuje na galerii má být povolena nebo zakázána. Galerie Visual Studio a Galerie vzorových příkladů použijte následující úložiště identifikátory GUID:  
   
--   Galerie Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Galerie Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Galerie ukázek: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Galerie ukázek: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- `Disabled` Hodnota je volitelná. Galerie je ve výchozím nastavení povolené.  
+  `Disabled` Hodnota je volitelná. Galerie je ve výchozím nastavení povolené.  
   
- `Priority` Hodnota určuje pořadí, ve kterém jsou uvedeny Galerie v **možnosti** dialogové okno. Galerie Visual Studio má prioritu 10 a Galerie vzorových příkladů má prioritu 20. Spustit privátní galerie s prioritou 100. Pokud několik galeriích mají stejnou hodnotu priority, pořadí, ve kterém jsou uvedeny je dáno hodnoty jejich lokalizované `DisplayName` atributy.  
+  `Priority` Hodnota určuje pořadí, ve kterém jsou uvedeny Galerie v **možnosti** dialogové okno. Galerie Visual Studio má prioritu 10 a Galerie vzorových příkladů má prioritu 20. Spustit privátní galerie s prioritou 100. Pokud několik galeriích mají stejnou hodnotu priority, pořadí, ve kterém jsou uvedeny je dáno hodnoty jejich lokalizované `DisplayName` atributy.  
   
- `Protocol` Hodnota je povinná pro galerie na základě Atom nebo na Sharepointu.  
+  `Protocol` Hodnota je povinná pro galerie na základě Atom nebo na Sharepointu.  
   
- Buď `DisplayName`, nebo obojí `DisplayNameResourceID` a `DisplayNamePackageGuid`, musí být zadán. Pokud jsou všechny zadané, pak bude `DisplayNameResourceID` a `DisplayNamePackageGuid` pár se používá.  
+  Buď `DisplayName`, nebo obojí `DisplayNameResourceID` a `DisplayNamePackageGuid`, musí být zadán. Pokud jsou všechny zadané, pak bude `DisplayNameResourceID` a `DisplayNamePackageGuid` pár se používá.  
   
 ## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Zakázat Galerie sady Visual Studio pomocí souboru .pkgdef  
  Můžete zakázat v galerii *.pkgdef* souboru. Zakáže následující položku Galerie sady Visual Studio:  

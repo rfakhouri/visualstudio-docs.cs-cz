@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922643"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171454"
 
  Když je atribut APTCA uveden pro plně důvěryhodná sestavení a typ v sestavení je odvozen z typu, který neumožňuje volání částečně důvěryhodným volajícím, je možné zneužití zabezpečení. Pokud dva typy `T1` a `T2` splňovat následující podmínky, škodlivý volající použít typ `T1` obejít požadavek dědičnosti implicitní úplný vztah důvěryhodnosti, který chrání `T2`:
 
--   `T1` je veřejný typ deklarovaný v plně důvěryhodná sestavení, který má atribut APTCA.
+- `T1` je veřejný typ deklarovaný v plně důvěryhodná sestavení, který má atribut APTCA.
 
--   `T1` je odvozen z typu `T2` mimo sestavení.
+- `T1` je odvozen z typu `T2` mimo sestavení.
 
--   `T2`od sestavení nemá atribut APTCA a proto by neměl být odvoditelný typy v částečně důvěryhodné sestavení.
+- `T2`od sestavení nemá atribut APTCA a proto by neměl být odvoditelný typy v částečně důvěryhodné sestavení.
 
- Částečně důvěryhodný typ `X` může dědit z `T1`, které jí přístup na zděděné členy deklarované v `T2`. Protože `T2` nemá atribut APTCA, její okamžitý odvozeného typu (`T1`) musí splňovat vyžádané dědičnosti pro úplný vztah důvěryhodnosti; `T1` má úplný vztah důvěryhodnosti a proto splňuje tato kontrola. Je bezpečnostní riziko, protože `X` není součástí nesplňujete vyžádané dědičnosti, který chrání `T2` z nedůvěryhodné vytváření podtříd. Z tohoto důvodu nesmí typy s atributem APTCA rozšiřují typy, které nemají atribut.
+  Částečně důvěryhodný typ `X` může dědit z `T1`, které jí přístup na zděděné členy deklarované v `T2`. Protože `T2` nemá atribut APTCA, její okamžitý odvozeného typu (`T1`) musí splňovat vyžádané dědičnosti pro úplný vztah důvěryhodnosti; `T1` má úplný vztah důvěryhodnosti a proto splňuje tato kontrola. Je bezpečnostní riziko, protože `X` není součástí nesplňujete vyžádané dědičnosti, který chrání `T2` z nedůvěryhodné vytváření podtříd. Z tohoto důvodu nesmí typy s atributem APTCA rozšiřují typy, které nemají atribut.
 
- Jiné potíže se zabezpečením a možná častější ten, který je odvozený typ (`T1`) můžou prostřednictvím chyba programátora, zveřejnit chráněných členů z typu, který vyžaduje úplný vztah důvěryhodnosti (`T2`). Pokud k tomu dojde, nedůvěryhodných volajících získáte přístup k informacím, které by měly být k dispozici pouze pro plně důvěryhodná typy.
+  Jiné potíže se zabezpečením a možná častější ten, který je odvozený typ (`T1`) můžou prostřednictvím chyba programátora, zveřejnit chráněných členů z typu, který vyžaduje úplný vztah důvěryhodnosti (`T2`). Pokud k tomu dojde, nedůvěryhodných volajících získáte přístup k informacím, které by měly být k dispozici pouze pro plně důvěryhodná typy.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Pokud je typ hlášených porušení zásad v sestavení, která nevyžaduje atribut APTCA, odeberte ji.

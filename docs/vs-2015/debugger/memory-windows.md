@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925498"
 ---
 # <a name="memory-windows"></a>Okna paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ ms.locfileid: "49297190"
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Chcete-li změnit počet sloupců v okně paměti  
   
-1.  Na panelu nástrojů v horní části **paměti** okna, vyhledejte **sloupce** seznamu.  
+1. Na panelu nástrojů v horní části **paměti** okna, vyhledejte **sloupce** seznamu.  
   
-2.  V **sloupce** vyberte číslo sloupce, které chcete zobrazit nebo vybrat **automaticky** pro automatickou úpravu na šířku okna.  
+2. V **sloupce** vyberte číslo sloupce, které chcete zobrazit nebo vybrat **automaticky** pro automatickou úpravu na šířku okna.  
   
- Pokud nechcete, aby obsah **paměti** oknu změnit jako váš program spustí, můžete ji vypnout vyhodnocení výrazu za provozu.  
+   Pokud nechcete, aby obsah **paměti** oknu změnit jako váš program spustí, můžete ji vypnout vyhodnocení výrazu za provozu.  
   
 #### <a name="to-toggle-live-evaluation"></a>Chcete-li přepnout živé hodnocení  
   
-1.  Klikněte pravým tlačítkem myši **paměti** okna.  
+1. Klikněte pravým tlačítkem myši **paměti** okna.  
   
-2.  V místní nabídce klikněte na tlačítko **automaticky přehodnotit**.  
+2. V místní nabídce klikněte na tlačítko **automaticky přehodnotit**.  
   
-     Pokud se vyžaduje vyhodnocení za provozu na, bude vybrána možnost a kliknutím ji vypne živé hodnocení. Pokud se vyžaduje vyhodnocení za provozu vypnuto, není vybrána možnost a kliknutím zapne živé hodnocení.  
+    Pokud se vyžaduje vyhodnocení za provozu na, bude vybrána možnost a kliknutím ji vypne živé hodnocení. Pokud se vyžaduje vyhodnocení za provozu vypnuto, není vybrána možnost a kliknutím zapne živé hodnocení.  
   
- Můžete skrýt nebo zobrazit panel nástrojů v horní části **paměti** okna. Nebudete mít přístup k vyřešení pole nebo jinými nástroji tak dlouho, dokud je skrytý panelu nástrojů.  
+   Můžete skrýt nebo zobrazit panel nástrojů v horní části **paměti** okna. Nebudete mít přístup k vyřešení pole nebo jinými nástroji tak dlouho, dokud je skrytý panelu nástrojů.  
   
 #### <a name="to-toggle-the-toolbar"></a>Chcete-li přepnout panel nástrojů  
   

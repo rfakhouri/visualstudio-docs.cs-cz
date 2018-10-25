@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921428"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Vývoj s použitím jazyka Visual F # v sadě Visual Studio
 
@@ -61,7 +61,7 @@ Následující tabulka shrnuje funkce ve vlastnostech projektu jazyka F #:
 **Návrhář projektu** se skládá z několika stránky vlastností projektu seskupeny související funkce. K dispozici pro projekty F # stránky jsou většinou podmnožinu těchto k dispozici pro ostatní jazyky a jsou popsány v následující tabulce. Jsou uvedeny odkazy na odpovídající jazyka C# **Návrháře projektu** stránky.
 
 |Stránky Návrháře projektu|Související odkazy|Popis|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Aplikace|[Stránka aplikace, Návrhář projektu](reference/application-page-project-designer-csharp.md)|Umožňuje určit nastavení na úrovni aplikace a vlastnosti, například zda vytváříte knihovnu nebo spustitelný soubor, jakou verzi rozhraní .NET Framework aplikace je cílen na verzi a informace o kde prostředek soubory, které aplikace používá se ukládají.|
 |Sestavení|[Vytvořit stránku, Návrhář projektu](reference/build-page-project-designer-csharp.md)|Umožňuje řídit způsob kompilace kódu.|
 |Události sestavení|[Stránka události, Návrhář projektu sestavení](reference/build-events-page-project-designer-csharp.md)|Umožňuje určit příkazy se spustí před nebo po kompilaci.|
@@ -75,7 +75,7 @@ Následující tabulka shrnuje funkce ve vlastnostech projektu jazyka F #:
 V následující tabulce najdete souhrn nastavení, která jsou specifická pro F #:
 
 |Stránky Návrháře projektu|Nastavení|Popis|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Sestavení|Generovat volání tail|Pokud vybraná, umožňuje použití funkce tail Microsoft Intermediate Language (MSIL) instrukce. To způsobí, že rámec zásobníku znovu použije pro rekurzivní funkce chvostu. Ekvivalentní `--tailcalls` – možnost kompilátoru.|
 |Sestavení|Nastavení další příznaky|Umožňuje určit možnosti příkazového řádku kompilátoru Další.|
 

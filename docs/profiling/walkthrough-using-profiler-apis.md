@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928058"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
 
@@ -123,19 +123,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Můžete shromažďovat a zobrazovat data v integrovaném vývojovém prostředí sady Visual Studio  
   
-1.  Otevřít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí. K **analyzovat** nabídky, přejděte k **Profiler**a pak vyberte **novou relaci výkonu**.  
+1. Otevřít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí. K **analyzovat** nabídky, přejděte k **Profiler**a pak vyberte **novou relaci výkonu**.  
   
-2.  Přidat kompilované binární soubor na **cíle** v seznamu **prohlížeč výkonu** okna. Klikněte pravým tlačítkem na **cíle**a pak vyberte **přidat cílový binární**. Vyhledejte příslušný binární soubor v **přidat cílový binární** dialogové okno a potom klikněte na **otevřít**.  
+2. Přidat kompilované binární soubor na **cíle** v seznamu **prohlížeč výkonu** okna. Klikněte pravým tlačítkem na **cíle**a pak vyberte **přidat cílový binární**. Vyhledejte příslušný binární soubor v **přidat cílový binární** dialogové okno a potom klikněte na **otevřít**.  
   
-3.  Vyberte **instrumentace** z **metoda** seznamu **prohlížeč výkonu** nástrojů.  
+3. Vyberte **instrumentace** z **metoda** seznamu **prohlížeč výkonu** nástrojů.  
   
-4.  Klikněte na tlačítko **spustit s nástrojem pro profilaci**.  
+4. Klikněte na tlačítko **spustit s nástrojem pro profilaci**.  
   
-     Profileru instrumentace a spustí binárního souboru a vytvoření souboru sestavy výkonu. Zobrazí se v souboru obsahujícímu sestavu výkonu **sestavy** uzlu **prohlížeč výkonu**.  
+    Profileru instrumentace a spustí binárního souboru a vytvoření souboru sestavy výkonu. Zobrazí se v souboru obsahujícímu sestavu výkonu **sestavy** uzlu **prohlížeč výkonu**.  
   
-5.  Otevřete výsledného souboru obsahujícímu sestavu výkonu.  
+5. Otevřete výsledného souboru obsahujícímu sestavu výkonu.  
   
- Ve výchozím nastavení při spuštění profileru, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
+   Ve výchozím nastavení při spuštění profileru, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
   
 ```csharp  
 DataCollection.StopProfile(  

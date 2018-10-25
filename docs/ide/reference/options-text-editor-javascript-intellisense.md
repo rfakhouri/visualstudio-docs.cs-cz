@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f870468852b7de53d22a66683bc7c8f64ffcc174
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848524"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Možnosti, textový editor, JavaScript, IntelliSense
 Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastavení, které ovlivňují chování technologie IntelliSense pro JavaScript. Můžete přistupovat **IntelliSense** stránky výběrem **nástroje**, **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**,  **JavaScript**, **technologie IntelliSense.**
@@ -67,13 +67,13 @@ Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastav
 
  Pomocí předdefinovaných referenčních skupin můžete určit, že konkrétní soubory .js technologie IntelliSense jsou v oboru pro různé projekty jazyka JavaScript. K dispozici jsou čtyři referenční skupiny:
 
--   Implicitní (Windows *verze*), pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] využívající JavaScript. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] využívající JavaScript.
+- Implicitní (Windows *verze*), pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] využívající JavaScript. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] využívající JavaScript.
 
--   Implicitní (web) pro projekty HTML5. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro tyto typy projektů.
+- Implicitní (web) pro projekty HTML5. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js otevřený v editoru kódu pro tyto typy projektů.
 
--   Referenční skupiny vyhrazeného pracovníka, pro HTML5 web workers. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js, který má explicitní odkaz na referenční skupinu vyhrazeného pracovníka.
+- Referenční skupiny vyhrazeného pracovníka, pro HTML5 web workers. Soubory zahrnuté v této skupině jsou v oboru pro každý soubor .js, který má explicitní odkaz na referenční skupinu vyhrazeného pracovníka.
 
--   Obecné, pro ostatní typy projektů jazyka JavaScript.
+- Obecné, pro ostatní typy projektů jazyka JavaScript.
 
 **Zahrnuté soubory**
 

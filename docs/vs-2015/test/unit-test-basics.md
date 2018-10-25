@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863618"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testech jednotek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ Zkontrolujte, že je váš kód funguje podle očekávání tím vytváření a 
   
  Vytvoříme `MyBank` řešení, které obsahuje dva projekty:  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- Naše první pokus o návrhu `Accounts` projektu obsahuje třídy pro uložení základní informace o účtu, rozhraní, které určuje běžné funkce jakýkoli typ účtu, jako je uložení a odebírá z účtu a třída prostředků odvozený z rozhraní, která představuje běžný účet. Můžeme začít projekty účty tak, že vytvoříte následující zdrojové soubory:  
+  Naše první pokus o návrhu `Accounts` projektu obsahuje třídy pro uložení základní informace o účtu, rozhraní, které určuje běžné funkce jakýkoli typ účtu, jako je uložení a odebírá z účtu a třída prostředků odvozený z rozhraní, která představuje běžný účet. Můžeme začít projekty účty tak, že vytvoříte následující zdrojové soubory:  
   
--   `AccountInfo.cs` definuje základní informace o účtu.  
+- `AccountInfo.cs` definuje základní informace o účtu.  
   
--   `IAccount.cs` definuje standardní `IAccount` rozhraní pro účet, včetně metod pro uložení a odebrání prostředků z účtu a k načtení zůstatek na účtu.  
+- `IAccount.cs` definuje standardní `IAccount` rozhraní pro účet, včetně metod pro uložení a odebrání prostředků z účtu a k načtení zůstatek na účtu.  
   
--   `CheckingAccount.cs` obsahuje `CheckingAccount` třídu, která implementuje `IAccounts` rozhraní pro běžný účet.  
+- `CheckingAccount.cs` obsahuje `CheckingAccount` třídu, která implementuje `IAccounts` rozhraní pro běžný účet.  
   
- Víme z prostředí, že tento jednou z věcí, které musíte provést stažení z účtu kontroluje se ujistěte, že vybíraná hodnota je menší než zůstatek na účtu. Proto jsme přepsat `IAccount.Withdaw` metoda `CheckingAccount` s metodou, která kontroluje pro tuto podmínku. Metoda může vypadat takto:  
+  Víme z prostředí, že tento jednou z věcí, které musíte provést stažení z účtu kontroluje se ujistěte, že vybíraná hodnota je menší než zůstatek na účtu. Proto jsme přepsat `IAccount.Withdaw` metoda `CheckingAccount` s metodou, která kontroluje pro tuto podmínku. Metoda může vypadat takto:  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **Generovat projekt testování částí a zástupné procedury pro testování částí**  
   
-1.  V okně editoru kódu, klikněte pravým tlačítkem a zvolte **vytvořit testy jednotek** v místní nabídce.  
+1. V okně editoru kódu, klikněte pravým tlačítkem a zvolte **vytvořit testy jednotek** v místní nabídce.  
   
-     ![V okně editoru zobrazit kontextovou nabídku](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![V okně editoru zobrazit kontextovou nabídku](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Klikněte na OK přijmete výchozí hodnoty pro vytváření testů jednotek nebo změnu hodnoty použité k vytvoření a název jednotky testování projektů a testy jednotek. Můžete vybrat kód, který se ve výchozím nastavení přidá do metody jednotkového testu.  
+2. Klikněte na OK přijmete výchozí hodnoty pro vytváření testů jednotek nebo změnu hodnoty použité k vytvoření a název jednotky testování projektů a testy jednotek. Můžete vybrat kód, který se ve výchozím nastavení přidá do metody jednotkového testu.  
   
-     ![Pravé&#45;klikněte v editoru a zvolte Vytvořit testy jednotek](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![Pravé&#45;klikněte v editoru a zvolte Vytvořit testy jednotek](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  Zástupné procedury testu jednotek se vytvoří v nový projekt testů jednotek pro všechny metody ve třídě.  
+3. Zástupné procedury testu jednotek se vytvoří v nový projekt testů jednotek pro všechny metody ve třídě.  
   
-     ![Jednotkové testy jsou vytvořeny](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![Jednotkové testy jsou vytvořeny](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Teď přejděte k další postupy [přidejte kód do metody jednotkového testu](#BKMK_Writing_your_tests) smysluplné testování částí a všechny další jednotky testů, které chcete přidat do důkladně otestujte svůj kód.  
+4. Teď přejděte k další postupy [přidejte kód do metody jednotkového testu](#BKMK_Writing_your_tests) smysluplné testování částí a všechny další jednotky testů, které chcete přidat do důkladně otestujte svůj kód.  
   
- **Vytvoření testování částí projektu a testy jednotek ručně**  
+   **Vytvoření testování částí projektu a testy jednotek ručně**  
   
- Projekt testování částí obvykle zrcadlí strukturu projektu jeden kód. V tomto příkladu MyBank přidejte dva projekty testů jednotek s názvem `AccountsTests` a `BankDbTests` k `MyBanks` řešení. Názvy projektů testů libovolného, ale přijetí standardní zásady vytváření názvů je vhodné.  
+   Projekt testování částí obvykle zrcadlí strukturu projektu jeden kód. V tomto příkladu MyBank přidejte dva projekty testů jednotek s názvem `AccountsTests` a `BankDbTests` k `MyBanks` řešení. Názvy projektů testů libovolného, ale přijetí standardní zásady vytváření názvů je vhodné.  
   
- **Chcete-li přidat projekt do řešení pro testování částí:**  
+   **Chcete-li přidat projekt do řešení pro testování částí:**  
   
-1.  Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu** (klávesnice: Ctrl + Shift + N).  
+5. Na **souboru** nabídce zvolte **nový** a klikněte na tlačítko **projektu** (klávesnice: Ctrl + Shift + N).  
   
-2.  V dialogovém okně Nový projekt rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.  
+6. V dialogovém okně Nový projekt rozbalte **nainstalováno** uzlu, vyberte jazyk, který chcete použít pro testovací projekt a pak zvolte **testování**.  
   
-3.  Chcete-li použít jeden z rozhraní pro testování částí Microsoft, zvolte **projekt testů jednotek** ze seznamu šablon projektu. V opačném případě vyberte šablonu projektu jednotky testů, který chcete použít. K testování `Accounts` projektu v našem příkladu by projekt pojmenujte `AccountsTests`.  
+7. Chcete-li použít jeden z rozhraní pro testování částí Microsoft, zvolte **projekt testů jednotek** ze seznamu šablon projektu. V opačném případě vyberte šablonu projektu jednotky testů, který chcete použít. K testování `Accounts` projektu v našem příkladu by projekt pojmenujte `AccountsTests`.  
   
-    > [!WARNING]
-    >  Ne všechna rozhraní pro testování částí třetích stran a open source poskytují šablony projektu sady Visual Studio. Informace o vytvoření projektu naleznete v dokumentu framework.  
+   > [!WARNING]
+   >  Ne všechna rozhraní pro testování částí třetích stran a open source poskytují šablony projektu sady Visual Studio. Informace o vytvoření projektu naleznete v dokumentu framework.  
   
-4.  V projektu testování částí přidejte odkaz na projekt kódu v rámci testu v našem příkladu do projektu účty.  
+8. V projektu testování částí přidejte odkaz na projekt kódu v rámci testu v našem příkladu do projektu účty.  
   
-     Chcete-li vytvořit odkaz na projekt kódu:  
+    Chcete-li vytvořit odkaz na projekt kódu:  
   
-    1.  Vyberte projekt v Průzkumníku řešení.  
+   1.  Vyberte projekt v Průzkumníku řešení.  
   
-    2.  Na **projektu** nabídce zvolte **přidat odkaz**.  
+   2.  Na **projektu** nabídce zvolte **přidat odkaz**.  
   
-    3.  V dialogovém okně Správce odkazů otevřete **řešení** uzlu a zvolte **projekty**. Vyberte název projektu kódu a zavřete dialogové okno.  
+   3.  V dialogovém okně Správce odkazů otevřete **řešení** uzlu a zvolte **projekty**. Vyberte název projektu kódu a zavřete dialogové okno.  
   
- Každý projekt jednotkového testu obsahuje třídy, které zrcadlí názvy tříd v projektu kódu. V našem příkladu `AccountsTests` projekt bude obsahovat následující třídy:  
+   Každý projekt jednotkového testu obsahuje třídy, které zrcadlí názvy tříd v projektu kódu. V našem příkladu `AccountsTests` projekt bude obsahovat následující třídy:  
   
 -   `AccountInfoTests` Třída obsahující metody jednotkového testu pro `AccountInfo` třídy v `BankAccount` projektu  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  Vzor AAA (Assert uspořádat, Act) je běžný způsob psaní testů jednotek pro metody v rámci testu.  
   
--   **Uspořádat** část metodu testovací jednotky inicializuje objekty a nastaví hodnotu data, která se předá metodě v rámci testu.  
+- **Uspořádat** část metodu testovací jednotky inicializuje objekty a nastaví hodnotu data, která se předá metodě v rámci testu.  
   
--   **Act** část volá metodu v rámci testu s uspořádané parametry.  
+- **Act** část volá metodu v rámci testu s uspořádané parametry.  
   
--   **Assert** části ověřuje, že akce testované metody chová podle očekávání.  
+- **Assert** části ověřuje, že akce testované metody chová podle očekávání.  
   
- K testování `CheckingAccount.Withdraw` metoda našeho příkladu jsme napsali dva testy: ten, který ověřuje standardní chování metody a jednu, která ověřuje, že se nepodaří stažení větší než zůstatek na účtu. V `CheckingAccountTests` třídy, jsme přidejte následující metody:  
+  K testování `CheckingAccount.Withdraw` metoda našeho příkladu jsme napsali dva testy: ten, který ověřuje standardní chování metody a jednu, která ověřuje, že se nepodaří stažení větší než zůstatek na účtu. V `CheckingAccountTests` třídy, jsme přidejte následující metody:  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **Odpověď:** pomocí Průzkumníka testů ke spuštění relace ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:  
   
-1.  V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.  
+1. V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.  
   
-    > [!NOTE]
-    >  Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.  
+   > [!NOTE]
+   >  Vzhledem k tomu, že zkušební metody lze spustit v libovolném pořadí, nastavte zarážky v všechny testovací metody, které chcete ladit.  
   
-2.  V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** z místní nabídky.  
+2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** z místní nabídky.  
   
- Přečtěte si další podrobnosti o [ladění testů jednotek](../debugger/debugging-in-visual-studio.md).  
+   Přečtěte si další podrobnosti o [ladění testů jednotek](../debugger/debugging-in-visual-studio.md).  
   
- **Otázka: Pokud používám TDD, postup generování kódu z mé testy?**  
+   **Otázka: Pokud používám TDD, postup generování kódu z mé testy?**  
   
- **Odpověď:** IntelliSense použít ke generování třídy a metody v kódu projektu. Napíšete příkaz v testovací metodě, která volá třída nebo metoda, kterou chcete vygenerovat a pak otevřete nabídku technologie IntelliSense v rámci volání. Pokud je volání konstruktoru nové třídy, zvolte **generovat nový typ** v nabídce a postupujte podle průvodce a vložte třídy do projektu kódu. Pokud je volání metody, zvolte **generovat novou metodu** z nabídky technologie IntelliSense.  
+   **Odpověď:** IntelliSense použít ke generování třídy a metody v kódu projektu. Napíšete příkaz v testovací metodě, která volá třída nebo metoda, kterou chcete vygenerovat a pak otevřete nabídku technologie IntelliSense v rámci volání. Pokud je volání konstruktoru nové třídy, zvolte **generovat nový typ** v nabídce a postupujte podle průvodce a vložte třídy do projektu kódu. Pokud je volání metody, zvolte **generovat novou metodu** z nabídky technologie IntelliSense.  
   
- ![Metoda se zakázaným inzerováním Intellisense nabídka Generovat](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![Metoda se zakázaným inzerováním Intellisense nabídka Generovat](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **Dotaz: lze vytvořit testy jednotek, neměl zabrat víc kopií dat jako vstup pro spuštění testu?**  
+   **Dotaz: lze vytvořit testy jednotek, neměl zabrat víc kopií dat jako vstup pro spuštění testu?**  
   
- **Odpověď:** Ano. *Test řízený daty metody* umožní otestovat rozsah hodnot s testovací metodou jednu jednotku. Použití `DataSource` atribut testovací metody, která určuje zdroj dat a tabulky, který obsahuje hodnoty proměnné, které chcete testovat.  V těle metody přiřazují hodnoty řádků do proměnných pomocí `TestContext.DataRow[` *Názevsloupce* `]` indexeru.  
+   **Odpověď:** Ano. *Test řízený daty metody* umožní otestovat rozsah hodnot s testovací metodou jednu jednotku. Použití `DataSource` atribut testovací metody, která určuje zdroj dat a tabulky, který obsahuje hodnoty proměnné, které chcete testovat.  V těle metody přiřazují hodnoty řádků do proměnných pomocí `TestContext.DataRow[` *Názevsloupce* `]` indexeru.  
   
 > [!NOTE]
 >  Tyto postupy platí pouze pro testovací metody, které zapisují pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód. Pokud používáte jiné rozhraní, najdete v dokumentaci rozhraní ekvivalentní funkce.  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Microsoft Fakes používá dva přístupy k vytvoření náhradní třídy u externích závislostí.  
   
-1.  *Zástupné procedury* generovat náhradní třídy odvozené od nadřazené rozhraní cílovou třídu závislostí. Veřejné virtuální metody cílové třídy mohou být nahrazeny metody zástupných procedur.  
+1. *Zástupné procedury* generovat náhradní třídy odvozené od nadřazené rozhraní cílovou třídu závislostí. Veřejné virtuální metody cílové třídy mohou být nahrazeny metody zástupných procedur.  
   
-2.  *Překrytí* použít k rozdělení volání cílové metody k metodě náhradní překrytí pro nevirtuální metody instrumentace modulu runtime.  
+2. *Překrytí* použít k rozdělení volání cílové metody k metodě náhradní překrytí pro nevirtuální metody instrumentace modulu runtime.  
   
- V oba přístupy pomocí generovaného delegáti volání metody závislostí můžete určit chování, které chcete v testovací metodě.  
+   V oba přístupy pomocí generovaného delegáti volání metody závislostí můžete určit chování, které chcete v testovací metodě.  
   
- Další informace o [izolace metody jednotkového testu s Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+   Další informace o [izolace metody jednotkového testu s Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **Otázka: Mohu použít jiné rozhraní pro testování částí pro vytvoření testů jednotek?**  
+   **Otázka: Mohu použít jiné rozhraní pro testování částí pro vytvoření testů jednotek?**  
   
- **Odpověď:** Ano, postupujte podle těchto kroků [najít a nainstalovat jiná rozhraní Framework](../test/install-third-party-unit-test-frameworks.md). Po restartování sady Visual Studio otevřete řešení k vytvoření testování částí a poté vyberte nainstalované rozhraní tady:  
+   **Odpověď:** Ano, postupujte podle těchto kroků [najít a nainstalovat jiná rozhraní Framework](../test/install-third-party-unit-test-frameworks.md). Po restartování sady Visual Studio otevřete řešení k vytvoření testování částí a poté vyberte nainstalované rozhraní tady:  
   
- ![Vyberte jiné nainstalované testování částí](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![Vyberte jiné nainstalované testování částí](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Vaše zástupné procedury testu jednotek se vytvoří pomocí vybrané architektuře.
+   Vaše zástupné procedury testu jednotek se vytvoří pomocí vybrané architektuře.
 
 
 

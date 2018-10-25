@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924223"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Postupy: čtení z a zapisovat do vlastností dokumentu
   Můžete uložit vlastnosti dokumentu společně s dokumentem. Aplikace Office poskytují celou řadou integrované vlastnosti, jako je například autor, název a předmět. Toto téma ukazuje, jak nastavit vlastnosti dokumentu v aplikaci Microsoft Office Excel a Microsoft Office Word.  
@@ -35,13 +35,13 @@ ms.locfileid: "35676574"
 ## <a name="set-document-properties-in-excel"></a>Nastavení vlastností dokumentu v aplikaci Excel  
  Pro práci s předdefinované vlastnosti v aplikaci Excel, použijte následující vlastnosti:  
   
--   V projektu úrovni dokumentu pomocí <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> vlastnost `ThisWorkbook` třídy.  
+- V projektu úrovni dokumentu pomocí <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> vlastnost `ThisWorkbook` třídy.  
   
--   V projektu doplňku VSTO, použijte <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> vlastnost <xref:Microsoft.Office.Interop.Excel.Workbook> objektu.  
+- V projektu doplňku VSTO, použijte <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> vlastnost <xref:Microsoft.Office.Interop.Excel.Workbook> objektu.  
   
- Tyto vlastnosti vrátit <xref:Microsoft.Office.Core.DocumentProperties> objekt, což je kolekce z <xref:Microsoft.Office.Core.DocumentProperty> objekty. Můžete použít `Item` vlastnost kolekce, kterou chcete načíst určité vlastnosti, podle názvu nebo podle indexu v rámci kolekce.  
+  Tyto vlastnosti vrátit <xref:Microsoft.Office.Core.DocumentProperties> objekt, což je kolekce z <xref:Microsoft.Office.Core.DocumentProperty> objekty. Můžete použít `Item` vlastnost kolekce, kterou chcete načíst určité vlastnosti, podle názvu nebo podle indexu v rámci kolekce.  
   
- Následující příklad kódu ukazuje, jak změnit předdefinované **číslo revize** vlastnost v projektu úrovni dokumentu.  
+  Následující příklad kódu ukazuje, jak změnit předdefinované **číslo revize** vlastnost v projektu úrovni dokumentu.  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Chcete-li změnit vlastnost číslo revize v aplikaci Excel  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35676574"
 ## <a name="set-document-properties-in-word"></a>Nastavit vlastnosti dokumentu ve Wordu  
  Chcete-li pracovat předdefinované vlastnosti v aplikaci Word, použijte následující vlastnosti:  
   
--   V projektu úrovni dokumentu pomocí <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> vlastnost `ThisDocument` třídy.  
+- V projektu úrovni dokumentu pomocí <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> vlastnost `ThisDocument` třídy.  
   
--   V projektu doplňku VSTO, použijte <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Document> objektu.  
+- V projektu doplňku VSTO, použijte <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Document> objektu.  
   
- Tyto vlastnosti vrátit <xref:Microsoft.Office.Core.DocumentProperties> objekt, což je kolekce z <xref:Microsoft.Office.Core.DocumentProperty> objekty. Můžete použít `Item` vlastnost kolekce, kterou chcete načíst určité vlastnosti, podle názvu nebo podle indexu v rámci kolekce.  
+  Tyto vlastnosti vrátit <xref:Microsoft.Office.Core.DocumentProperties> objekt, což je kolekce z <xref:Microsoft.Office.Core.DocumentProperty> objekty. Můžete použít `Item` vlastnost kolekce, kterou chcete načíst určité vlastnosti, podle názvu nebo podle indexu v rámci kolekce.  
   
- Následující příklad kódu ukazuje, jak změnit předdefinované **subjektu** vlastnost v projektu úrovni dokumentu.  
+  Následující příklad kódu ukazuje, jak změnit předdefinované **subjektu** vlastnost v projektu úrovni dokumentu.  
   
 ### <a name="to-change-the-subject-property"></a>Chcete-li změnit vlastnost předmětu  
   

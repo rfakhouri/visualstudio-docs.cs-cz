@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900472"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Návod: Shromažďování dat pomocí formuláře Windows
   Tento návod ukazuje, jak otevřít formulář Windows z přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Excel, shromažďování informací od uživatele a zápisu informací do buňky listu.  
@@ -70,41 +70,41 @@ ms.locfileid: "35675851"
   
 ### <a name="to-add-a-windows-form"></a>Chcete-li přidat formulář Windows  
   
-1.  Vyberte projekt **WinFormInput** v **Průzkumníka řešení**.  
+1. Vyberte projekt **WinFormInput** v **Průzkumníka řešení**.  
   
-2.  Na **projektu** nabídky, klikněte na tlačítko **přidat formulář Windows**.  
+2. Na **projektu** nabídky, klikněte na tlačítko **přidat formulář Windows**.  
   
-3.  Název formuláře **GetInputString.vb** nebo **GetInputString.cs**a potom klikněte na tlačítko **přidat**.  
+3. Název formuláře **GetInputString.vb** nebo **GetInputString.cs**a potom klikněte na tlačítko **přidat**.  
   
-     Otevře se v Návrháři nový formulář.  
+    Otevře se v Návrháři nový formulář.  
   
-4.  Přidat <xref:System.Windows.Forms.TextBox> a <xref:System.Windows.Forms.Button> do formuláře.  
+4. Přidat <xref:System.Windows.Forms.TextBox> a <xref:System.Windows.Forms.Button> do formuláře.  
   
-5.  Klikněte na tlačítko, vyhledejte vlastnost **Text** v **vlastnosti** okna a změnit text, který má **OK**.  
+5. Klikněte na tlačítko, vyhledejte vlastnost **Text** v **vlastnosti** okna a změnit text, který má **OK**.  
   
- V dalším kroku přidejte kód pro `ThisWorkbook.vb` nebo `ThisWorkbook.cs` ke shromažďování informací o uživateli.  
+   V dalším kroku přidejte kód pro `ThisWorkbook.vb` nebo `ThisWorkbook.cs` ke shromažďování informací o uživateli.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Zobrazí se formulář Windows a shromažďování údajů o informace  
  Vytvoření instance `GetInputString` formuláře Windows a zobrazit ho a pak zapsat informace uživatele do buňky v listu.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Zobrazení formuláře a shromažďovat informace  
   
-1.  Klikněte pravým tlačítkem na **ThisWorkbook.vb** nebo **ThisWorkbook.cs** v **Průzkumníka řešení**a potom klikněte na tlačítko **zobrazit kód**.  
+1. Klikněte pravým tlačítkem na **ThisWorkbook.vb** nebo **ThisWorkbook.cs** v **Průzkumníka řešení**a potom klikněte na tlačítko **zobrazit kód**.  
   
-2.  V <xref:Microsoft.Office.Tools.Excel.Workbook.Open> obslužná rutina události `ThisWorkbook`, přidejte následující kód k deklaraci proměnné pro formulář `GetInputString` a poté zobrazí formulář.  
+2. V <xref:Microsoft.Office.Tools.Excel.Workbook.Open> obslužná rutina události `ThisWorkbook`, přidejte následující kód k deklaraci proměnné pro formulář `GetInputString` a poté zobrazí formulář.  
   
-    > [!NOTE]  
-    >  V jazyce C#, musíte přidat obslužnou rutinu události, jak je znázorněno <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> následující událost. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  V jazyce C#, musíte přidat obslužnou rutinu události, jak je znázorněno <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> následující událost. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Vytvořit metodu nazvanou `WriteStringToCell` , který zapíše text do pojmenované oblasti. Tato metoda je volána z formuláře a uživatelský vstup je předán <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku, `formInput`, v buňce **A1**.  
+3. Vytvořit metodu nazvanou `WriteStringToCell` , který zapíše text do pojmenované oblasti. Tato metoda je volána z formuláře a uživatelský vstup je předán <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku, `formInput`, v buňce **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Dál přidejte kód do formuláře klikněte na tlačítko na zpracování událostí.  
+   Dál přidejte kód do formuláře klikněte na tlačítko na zpracování událostí.  
   
 ## <a name="send-information-to-the-worksheet"></a>Odesílat informace do listu  
   

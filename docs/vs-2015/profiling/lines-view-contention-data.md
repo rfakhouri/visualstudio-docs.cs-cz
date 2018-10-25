@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921926"
 ---
 # <a name="lines-view---contention-data"></a>Zobrazení řádků – data kolizí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Zobrazení řádků dat kolizí obsahuje údaje o výkonu pro příkazy, které 
   
  Příkaz je identifikován následující data:  
   
--   Zdrojový soubor, který obsahuje Function – příkaz  
+- Zdrojový soubor, který obsahuje Function – příkaz  
   
--   Funkce, která obsahuje příkaz.  
+- Funkce, která obsahuje příkaz.  
   
--   Zdrojový řádek, ve kterém se spustí příkaz.  
+- Zdrojový řádek, ve kterém se spustí příkaz.  
   
--   Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
   
--   Řádku zdroje, u které končí příkaz.  
+- Řádku zdroje, u které končí příkaz.  
   
--   Znak ve zdrojovém řádku, kdy příkaz skončí.  
+- Znak ve zdrojovém řádku, kdy příkaz skončí.  
   
- Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
+  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
   
- Následující tabulka popisuje sloupce řádky zobrazit sestavu.  
+  Následující tabulka popisuje sloupce řádky zobrazit sestavu.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  

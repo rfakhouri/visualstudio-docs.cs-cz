@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860692"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informace o vývoji pro mobilní zařízení v Xamarinu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopi
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Essentials: Přehled produktu Visual Studio a Xamarin prostředí  
  *5 – 15 minutách*  
   
--   Počítači Windows pomocí sady Visual Studio a Xamarinu je, kde budete provádět většinu práce. V tomto počítači přímo sestavení Windows a aplikace pro Android a spouštění a ladění je na zařízení nebo emulátoru. Můžete také vzdáleně sestavení, spouštět a ladit aplikace pro iOS pomocí macu Visual Studio v počítači Windows můžete také připojit k iOS designer scénáře a simulátoru iOS.  
+- Počítači Windows pomocí sady Visual Studio a Xamarinu je, kde budete provádět většinu práce. V tomto počítači přímo sestavení Windows a aplikace pro Android a spouštění a ladění je na zařízení nebo emulátoru. Můžete také vzdáleně sestavení, spouštět a ladit aplikace pro iOS pomocí macu Visual Studio v počítači Windows můžete také připojit k iOS designer scénáře a simulátoru iOS.  
   
--   Mac s Xcode a Xamarin slouží jako sestavení nebo podepisování prostředí hostitele a modulu runtime pro aplikace pro iOS. Sestavení pro iOS ze sady Visual Studio v počítači Windows se deleguje na tento počítač Mac; Při ladění aplikace pro iOS ze sady Visual Studio, běží v simulátoru iOS na Macu nebo přímo na připojené zařízení připojená k počítači Mac. V tomto případě budete pracovat s aplikací nebo v počítači Mac a mají zkušenosti s laděním v sadě Visual Studio.  
+- Mac s Xcode a Xamarin slouží jako sestavení nebo podepisování prostředí hostitele a modulu runtime pro aplikace pro iOS. Sestavení pro iOS ze sady Visual Studio v počítači Windows se deleguje na tento počítač Mac; Při ladění aplikace pro iOS ze sady Visual Studio, běží v simulátoru iOS na Macu nebo přímo na připojené zařízení připojená k počítači Mac. V tomto případě budete pracovat s aplikací nebo v počítači Mac a mají zkušenosti s laděním v sadě Visual Studio.  
   
- Tyto vztahy jsou znázorněné níže, a další informace o práci s aplikacemi pro iOS na [Úvod k Xamarin.iosu pro Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
+  Tyto vztahy jsou znázorněné níže, a další informace o práci s aplikacemi pro iOS na [Úvod k Xamarin.iosu pro Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
   
- ![Vztah mezi Windows a Mac dev počítačů v prostředí Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin další 1")  
+  ![Vztah mezi Windows a Mac dev počítačů v prostředí Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin další 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Základy: Jak projekty jsou strukturované  
  *10 – 30 minut*  
@@ -64,15 +64,15 @@ Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopi
   
  Není nutné se rozhodnout, jaký přístup se ještě před zahájením; aplikace je možné implementovat pomocí kombinace nativní Xamarin a Xamarin.Forms:  
   
--   Xamarin.Forms použijte k vytvoření obrazovky pro obecné účely, které poskytují podobné možnosti a uživatelského rozhraní na platformách, jako je například přihlašovací údaje, obraťte se na formulářů a výsledky hledání.  
+- Xamarin.Forms použijte k vytvoření obrazovky pro obecné účely, které poskytují podobné možnosti a uživatelského rozhraní na platformách, jako je například přihlašovací údaje, obraťte se na formulářů a výsledky hledání.  
   
--   Úprava uživatelského rozhraní na základě podle platformy pomocí širokou škálu možností vlastního nastavení v Xamarin.Forms. Patří mezi ně OnPlatform rozhraní API, které je možné z obou kód a XAML, vytvoření vlastního zobrazení, rozšíření existující zobrazovací jednotky a vytvoření vlastní zobrazovací jednotky.  
+- Úprava uživatelského rozhraní na základě podle platformy pomocí širokou škálu možností vlastního nastavení v Xamarin.Forms. Patří mezi ně OnPlatform rozhraní API, které je možné z obou kód a XAML, vytvoření vlastního zobrazení, rozšíření existující zobrazovací jednotky a vytvoření vlastní zobrazovací jednotky.  
   
--   V případě potřeby použijte k vytváření obrazovek, které používají jedinečné funkce uživatelského rozhraní pro každou platformu, například obrazovku, která využívá nativní fotoaparátu zachycení a image práci s nativní Xamarin.  
+- V případě potřeby použijte k vytváření obrazovek, které používají jedinečné funkce uživatelského rozhraní pro každou platformu, například obrazovku, která využívá nativní fotoaparátu zachycení a image práci s nativní Xamarin.  
   
- Doporučujeme vždy začíná řešení Xamarin.Forms nastavit kód uživatelského rozhraní pro sdílení obsahu napříč platformami a pomocí možnosti přizpůsobení provést úpravy pro konkrétní platformu. Pokud budete potřebovat obrazovky zcela specifické pro platformu, můžete přidat ty samostatně pomocí nativní Xamarin.  
+  Doporučujeme vždy začíná řešení Xamarin.Forms nastavit kód uživatelského rozhraní pro sdílení obsahu napříč platformami a pomocí možnosti přizpůsobení provést úpravy pro konkrétní platformu. Pokud budete potřebovat obrazovky zcela specifické pro platformu, můžete přidat ty samostatně pomocí nativní Xamarin.  
   
- Další informace:  
+  Další informace:  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) poskytuje stručný přehled a výhody a nevýhody Xamarin.Forms oproti nativní vrstvy uživatelského rozhraní (to znamená, Xamarin.iOS a Xamarin.Android).  
   

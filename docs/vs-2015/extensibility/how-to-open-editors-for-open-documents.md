@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215992"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870156"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Postupy: Otevření editorů pro otevřené dokumenty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Předtím, než projekt se otevře okno dokumentu, projekt nejprve musíte urči
   
 #### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Chcete-li otevřít editor specifické pro projekt pro otevření souboru  
   
-1.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody.  
+1. Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody.  
   
-     Toto volání vrátí ukazatele do hierarchie, položku hierarchie a okna rámce dokumentu v případě potřeby.  
+    Toto volání vrátí ukazatele do hierarchie, položku hierarchie a okna rámce dokumentu v případě potřeby.  
   
-2.  Pokud je otevřít dokument, projekt musí zkontrolujte, zda existuje pouze datový objekt dokumentu, nebo objekt zobrazení dokumentu je také k dispozici.  
+2. Pokud je otevřít dokument, projekt musí zkontrolujte, zda existuje pouze datový objekt dokumentu, nebo objekt zobrazení dokumentu je také k dispozici.  
   
-    -   Pokud existuje objekt zobrazení dokumentu a toto zobrazení je pro jiné hierarchie nebo hierarchie položek, projekt používá ukazatel na rámec okna v zobrazení pro resurface existující okno.  
+   - Pokud existuje objekt zobrazení dokumentu a toto zobrazení je pro jiné hierarchie nebo hierarchie položek, projekt používá ukazatel na rámec okna v zobrazení pro resurface existující okno.  
   
-    -   Pokud existuje objekt zobrazení dokumentu a toto zobrazení je na stejné hierarchie a hierarchie položek, můžete projekt otevřít druhého zobrazení Pokud můžete připojit k podkladový datový objekt dokumentu. V opačném případě projektu používejte ukazatel na rámec okna v zobrazení pro resurface existující okno.  
+   - Pokud existuje objekt zobrazení dokumentu a toto zobrazení je na stejné hierarchie a hierarchie položek, můžete projekt otevřít druhého zobrazení Pokud můžete připojit k podkladový datový objekt dokumentu. V opačném případě projektu používejte ukazatel na rámec okna v zobrazení pro resurface existující okno.  
   
-    -   Pokud dokument datový objekt existuje, jenom projektu by měl určit, zda datový objekt dokumentu může použít pro jeho zobrazení. Pokud je datový objekt dokumentu kompatibilní, dokončení kroků popsaných v [otevření editoru specifické pro projekt](../extensibility/how-to-open-project-specific-editors.md).  
+   - Pokud dokument datový objekt existuje, jenom projektu by měl určit, zda datový objekt dokumentu může použít pro jeho zobrazení. Pokud je datový objekt dokumentu kompatibilní, dokončení kroků popsaných v [otevření editoru specifické pro projekt](../extensibility/how-to-open-project-specific-editors.md).  
   
      Pokud datový objekt dokumentu není kompatibilní, by měl uživateli, který označuje, že soubor je aktuálně používán zobrazí chyba. Tato chyba má být zobrazen v občasné případy, pouze, například když je kompilován soubor v době, uživatel se pokusil otevřít soubor pomocí editoru jiné než [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] core textového editoru. Základní text editor můžete sdílet s kompilátor dokumentu datový objekt.  
   
-3.  Pokud dokument není otevřen, protože neexistuje žádný dokument datového objektu nebo objekt zobrazení dokumentu, proveďte kroky v [otevření editoru specifické pro projekt](../extensibility/how-to-open-project-specific-editors.md).  
+3. Pokud dokument není otevřen, protože neexistuje žádný dokument datového objektu nebo objekt zobrazení dokumentu, proveďte kroky v [otevření editoru specifické pro projekt](../extensibility/how-to-open-project-specific-editors.md).  
   
 ## <a name="opening-a-standard-editor"></a>Otevření editoru Standard  
  Pomocí následujícího postupu otevřete standardní editor pro soubor, který už je otevřít.  

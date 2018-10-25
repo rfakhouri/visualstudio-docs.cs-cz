@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914564"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ Visual Studio Profiler umožňuje shromažďovat data o výkonu, který byl vyge
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Chcete-li zobrazit seznam seznam všech čítačů využití procesoru, které jsou podporovány na aktuální platformě  
   
-1.  V prohlížeči výkonu, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
+1. V prohlížeči výkonu, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
-2.  Proveďte jednu z těchto akcí:  
+2. Proveďte jednu z těchto akcí:  
   
-    -   Klikněte na tlačítko **vzorkování**a pak vyberte **čítač výkonu** z **ukázka** seznamu událostí. Čítače CPU jsou uvedeny v **dostupných čítačů výkonu**.  
+   - Klikněte na tlačítko **vzorkování**a pak vyberte **čítač výkonu** z **ukázka** seznamu událostí. Čítače CPU jsou uvedeny v **dostupných čítačů výkonu**.  
   
-         **Poznámka:** klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci odběru vzorků.  
+      **Poznámka:** klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci odběru vzorků.  
   
      -nebo-  
   
-    -   Vyberte **čítače CPU**a pak vyberte **shromáždit čítače CPU**. Čítače CPU jsou uvedeny v **dostupné čítače**.  
+   - Vyberte **čítače CPU**a pak vyberte **shromáždit čítače CPU**. Čítače CPU jsou uvedeny v **dostupné čítače**.  
   
-         **Poznámka:** klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.  
+      **Poznámka:** klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Chcete-li zobrazit seznam seznam čítačů okno, které jsou podporovány na aktuální platformě  
   
