@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1540e66893aeb99c4932c4667fa384b837e15a7
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872652"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA variant
 Přepsání více ukázka vyhlazování (MSAA) nastavení ve všech cíle vykreslování a Prohodit řetězy.  
@@ -33,23 +33,23 @@ Přepsání více ukázka vyhlazování (MSAA) nastavení ve všech cíle vykres
 ## <a name="remarks"></a>Poznámky  
  Ukázka počet a kvalita ukázky argumenty ve volání přepsat tyto varianty `ID3DDevice::CreateTexture2D` , vytvoření cíle vykreslování. Konkrétně se tyto parametry přepsat při:  
   
--   `D3D11_TEXTURE2D_DESC` Objekt předaný v `pDesc` popisuje cíl vykreslování; který je:  
+- `D3D11_TEXTURE2D_DESC` Objekt předaný v `pDesc` popisuje cíl vykreslování; který je:  
   
-    -   Člen BindFlags má příznak D3D11_BIND_TARGET nebo nastavený příznak D3D11_BIND_DEPTH_STENCIL.  
+  -   Člen BindFlags má příznak D3D11_BIND_TARGET nebo nastavený příznak D3D11_BIND_DEPTH_STENCIL.  
   
-    -   Využití člen je nastavený na D3D11_USAGE_DEFAULT.  
+  -   Využití člen je nastavený na D3D11_USAGE_DEFAULT.  
   
-    -   Člen CPUAccessFlags je nastavený na hodnotu 0.  
+  -   Člen CPUAccessFlags je nastavený na hodnotu 0.  
   
-    -   Člen MipLevels je nastavený na hodnotu 1.  
+  -   Člen MipLevels je nastavený na hodnotu 1.  
   
--   Zařízení podporuje počet vzorků požadovaný (0, 2 nebo 4) a kvalita ukázky (0) pro požadovaný cílový formát (D3D11_TEXTURE2D_DESC::Format člen), vzhledem k vykreslení `ID3D11Device::CheckMultisampleQualityLevels`.  
+- Zařízení podporuje počet vzorků požadovaný (0, 2 nebo 4) a kvalita ukázky (0) pro požadovaný cílový formát (D3D11_TEXTURE2D_DESC::Format člen), vzhledem k vykreslení `ID3D11Device::CheckMultisampleQualityLevels`.  
   
- Pokud člen D3D11_TEXTURE2D_DESC::BindFlags nemá nastaveny příznaky D3D_BIND_SHADER_RESOUCE nebo D3D11_BIND_UNORDERED_ACCESS, vytvoří se dvě verze textury; první má tyto příznaky pro použití jako cíl vykreslování a druhý je bez MSAA texturu, která má tyto příznaky ponechána beze změn tak, aby fungoval jako řešení vyrovnávací paměť pro první verzi. To je nezbytné, protože použití MSAA textury jako prostředek shaderu nebo neuspořádaným přístupem je pravděpodobně platný – například shaderu, který funguje na něm bude generovat nesprávné výsledky, protože očekáváte textury bez MSAA. Pokud varianty vytvořil sekundární bez MSAA textury, pak pokaždé, když cíl vykreslování MSAA není nastavena v kontextu zařízení, jsou vyřešeny její obsah do jiných MSAA textury. Podobně, pokaždé, když MSAA vykreslení cíl by měl být vázaný jako prostředek shaderu, nebo se používá v zobrazení s neuspořádaným přístupem, vyřešené bez MSAA textury vázán místo.  
+  Pokud člen D3D11_TEXTURE2D_DESC::BindFlags nemá nastaveny příznaky D3D_BIND_SHADER_RESOUCE nebo D3D11_BIND_UNORDERED_ACCESS, vytvoří se dvě verze textury; první má tyto příznaky pro použití jako cíl vykreslování a druhý je bez MSAA texturu, která má tyto příznaky ponechána beze změn tak, aby fungoval jako řešení vyrovnávací paměť pro první verzi. To je nezbytné, protože použití MSAA textury jako prostředek shaderu nebo neuspořádaným přístupem je pravděpodobně platný – například shaderu, který funguje na něm bude generovat nesprávné výsledky, protože očekáváte textury bez MSAA. Pokud varianty vytvořil sekundární bez MSAA textury, pak pokaždé, když cíl vykreslování MSAA není nastavena v kontextu zařízení, jsou vyřešeny její obsah do jiných MSAA textury. Podobně, pokaždé, když MSAA vykreslení cíl by měl být vázaný jako prostředek shaderu, nebo se používá v zobrazení s neuspořádaným přístupem, vyřešené bez MSAA textury vázán místo.  
   
- Tyto varianty také přepsat nastavení MSAA na všechny řetězce přepnutí vytvořené využitím `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, a `ID3D11CreateDeviceAndSwapChain`.  
+  Tyto varianty také přepsat nastavení MSAA na všechny řetězce přepnutí vytvořené využitím `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, a `ID3D11CreateDeviceAndSwapChain`.  
   
- Výsledkem těchto změn je, že dokončení veškerého vykreslování do cíl vykreslování MSAA, ale pokud vaše aplikace používá jednu z těchto takto cíle nebo vyrovnávací paměti řetězce přepnutí na zobrazení prostředků shaderu nebo zobrazení s neuspořádaným přístupem, a potom Vzorkovaná data z vyřešení , bez MSAA kopii cíl vykreslování.  
+  Výsledkem těchto změn je, že dokončení veškerého vykreslování do cíl vykreslování MSAA, ale pokud vaše aplikace používá jednu z těchto takto cíle nebo vyrovnávací paměti řetězce přepnutí na zobrazení prostředků shaderu nebo zobrazení s neuspořádaným přístupem, a potom Vzorkovaná data z vyřešení , bez MSAA kopii cíl vykreslování.  
   
 ## <a name="restrictions-and-limitations"></a>Omezení a omezení  
  V Direct3D11 MSAA textur jsou omezeny více než jiné MSAA textury. Například nelze volat `ID3D11DeviceContext::UpdateSubresource` na MSAA textury a volání `ID3D11DeviceContext::CopySubresourceRegion` selže, pokud počet vzorků a kvalita ukázky prostředku zdrojového a cílového prostředku se neshodují, které může dojít, pokud tato varianta přepíše nastavení MSAA prostředek, ale nikoli u druhého.  

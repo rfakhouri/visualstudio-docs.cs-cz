@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866152"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Přidávání rozšíření do definicí DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Rozšíření definice DSL umožňuje vytvořit balíček rozšíření jazyka s
   
  Další funkce patří:  
   
--   Vlastnosti elementů modelu a prezentace  
+- Vlastnosti elementů modelu a prezentace  
   
--   Dekoratéry pro obrazců a konektorů  
+- Dekoratéry pro obrazců a konektorů  
   
--   Třídy, relace, obrazců a konektorů  
+- Třídy, relace, obrazců a konektorů  
   
--   Omezení ověření  
+- Omezení ověření  
   
--   Položky panelu nástrojů a karty  
+- Položky panelu nástrojů a karty  
   
- Uživatel rozšířené DSL můžete vytvořit a uložit model, který obsahuje instance další funkce a dají se číst jinými uživateli, kteří nainstalovali odpovídající rozšíření. Uživatelé, kteří nejsou nainstalované rozšíření nemůže používat další funkce, ale můžete aktualizovat a uložit model bez ztráty další funkce.  
+  Uživatel rozšířené DSL můžete vytvořit a uložit model, který obsahuje instance další funkce a dají se číst jinými uživateli, kteří nainstalovali odpovídající rozšíření. Uživatelé, kteří nejsou nainstalované rozšíření nemůže používat další funkce, ale můžete aktualizovat a uložit model bez ztráty další funkce.  
   
- Ukázkový kód a další informace o této funkci najdete v tématu [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) webu.  
+  Ukázkový kód a další informace o této funkci najdete v tématu [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) webu.  
   
 ## <a name="see-also"></a>Viz také  
  [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

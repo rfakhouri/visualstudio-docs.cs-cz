@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a9c5f368cef94bdc270d678a25f0ec0d94052b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912874"
 ---
 # <a name="how-to-display-process-properties"></a>Postupy: Zobrazení vlastností procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Další informace o procesu uvedené v [zobrazení procesy](../debugger/processe
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>Chcete-li otevřít dialogové okno vlastností procesu  
   
-1.  Vyberte ze stromu se zobrazí v procesu **zobrazení procesů**.  
+1. Vyberte ze stromu se zobrazí v procesu **zobrazení procesů**.  
   
-2.  Z **zobrazení** nabídce zvolte **vlastnosti**.  
+2. Z **zobrazení** nabídce zvolte **vlastnosti**.  
   
- Dialogová okna vlastnosti nejsou modální, takže můžete kliknout na jiné položce v zobrazení oken a dialogových oken se zobrazí informace na vybranou položku.
+   Dialogová okna vlastnosti nejsou modální, takže můžete kliknout na jiné položce v zobrazení oken a dialogových oken se zobrazí informace na vybranou položku.
 
 
 

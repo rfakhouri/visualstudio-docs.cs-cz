@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891723"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Použití okna Paralelní zásobníky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ ms.locfileid: "49182167"
 ## <a name="tasks-view"></a>Zobrazení úloh  
  Pokud vaše aplikace používá <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty (spravovaný kód) nebo `task_handle` objekty (nativní kód) vyjádřete paralelismus, můžete použít pole se seznamem na panelu nástrojů okna paralelní zásobníky přepnout na *zobrazení úkolů*. Úlohy zobrazení uvádí zásobníky volání úkolů místo vlákna. Zobrazení úloh se liší od zobrazení vláken následujícím způsobem:  
   
--   Zásobníky volání vláken, které nejsou spuštěné úkoly se nezobrazují.  
+- Zásobníky volání vláken, které nejsou spuštěné úkoly se nezobrazují.  
   
--   Zásobníky volání vláken, na kterých běží úlohy jsou vizuálně oříznut v horní a dolní části můžete zobrazit nejrelevantnější bloky, které se vztahují na úlohy.  
+- Zásobníky volání vláken, na kterých běží úlohy jsou vizuálně oříznut v horní a dolní části můžete zobrazit nejrelevantnější bloky, které se vztahují na úlohy.  
   
--   Po několika úloh v jednom vlákně se oddělit zásobníky volání těchto úkolů do samostatné uzly.  
+- Po několika úloh v jednom vlákně se oddělit zásobníky volání těchto úkolů do samostatné uzly.  
   
- Následující obrázek znázorňuje paralelní zásobníky – zobrazení úloh na pravé straně a odpovídající zobrazení vláken na levé straně.  
+  Následující obrázek znázorňuje paralelní zásobníky – zobrazení úloh na pravé straně a odpovídající zobrazení vláken na levé straně.  
   
- ![Úlohy zobrazení okna paralelní zásobníky](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Úlohy zobrazení okna paralelní zásobníky](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Pokud chcete zobrazit celý zásobník volání, stačí přepnout zpět na zobrazení vláken pravým tlačítkem myši na rámec zásobníku a poté klepnutím na **přejít k vláknu**.  
+  Pokud chcete zobrazit celý zásobník volání, stačí přepnout zpět na zobrazení vláken pravým tlačítkem myši na rámec zásobníku a poté klepnutím na **přejít k vláknu**.  
   
- Jak je popsáno v předchozí tabulce, podržením ukazatele nad metoda kontextu, zobrazí se další informace. Následující obrázek ukazuje informace v popisu pro zobrazení vláken a zobrazení úloh.  
+  Jak je popsáno v předchozí tabulce, podržením ukazatele nad metoda kontextu, zobrazí se další informace. Následující obrázek ukazuje informace v popisu pro zobrazení vláken a zobrazení úloh.  
   
- ![Popisy tlačítek v okna paralelní zásobníky](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Popisy tlačítek v okna paralelní zásobníky](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Zobrazení metody  
  Ze zobrazení zobrazení vláken nebo úloh můžete vytvořit kontingenční graf v aktuální metodě kliknutím na ikonu zobrazení metody na panelu nástrojů. Metoda zobrazení ukazuje na první pohled všechny metody v všechna vlákna, které volají nebo jsou volány aktuální metoda. Následující obrázek znázorňuje zobrazení vláken a také jak vypadá stejné informace v zobrazení metody.  

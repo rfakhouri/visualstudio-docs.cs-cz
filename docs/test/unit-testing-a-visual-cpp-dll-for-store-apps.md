@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2e389bec552212da36fba5f35da89cc85efe9a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923040"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Testování knihovny DLL Visual C++
 
@@ -129,56 +129,55 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
 ##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Zviditelnit funkcí knihovny dll k testovacímu kódu
 
-1.  Přidáte RooterLib RooterLibTests projektu.
+1. Přidáte RooterLib RooterLibTests projektu.
 
-    1.  V **Průzkumníka řešení**, zvolte **RooterLibTests** projektu a klikněte na tlačítko **odkazy** v místní nabídce.
+   1.  V **Průzkumníka řešení**, zvolte **RooterLibTests** projektu a klikněte na tlačítko **odkazy** v místní nabídce.
 
-    2.  Na **vlastnosti projektu RooterLib** dialogového okna rozbalte **společné vlastnosti** a zvolte **rámec a odkazy**.
+   2.  Na **vlastnosti projektu RooterLib** dialogového okna rozbalte **společné vlastnosti** a zvolte **rámec a odkazy**.
 
-    3.  Zvolte **přidat nový odkaz**
+   3.  Zvolte **přidat nový odkaz**
 
-    4.  V **přidat odkaz** dialogového okna rozbalte **řešení** a klikněte na tlačítko **projekty**. Vyberte **RouterLib** položky.
+   4.  V **přidat odkaz** dialogového okna rozbalte **řešení** a klikněte na tlačítko **projekty**. Vyberte **RouterLib** položky.
 
-2.  Zahrnutím souboru hlaviček RooterLib v *unittest1.cpp*.
+2. Zahrnutím souboru hlaviček RooterLib v *unittest1.cpp*.
 
-    1.  Otevřít *unittest1.cpp*.
+   1.  Otevřít *unittest1.cpp*.
 
-    2.  Tento kód vložte do níže `#include "CppUnitTest.h"` řádku:
+   2.  Tento kód vložte do níže `#include "CppUnitTest.h"` řádku:
 
-        ```cpp
-        #include "..\RooterLib\RooterLib.h"
-        ```
+       ```cpp
+       #include "..\RooterLib\RooterLib.h"
+       ```
 
-3.  Přidáte test, který používá importované funkce. Přidejte následující kód, který *unittest1.cpp*:
+3. Přidáte test, který používá importované funkce. Přidejte následující kód, který *unittest1.cpp*:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-        CRooterLib rooter;
-        Assert::AreEqual(
-            // Expected value:
-            0.0,
-            // Actual value:
-            rooter.SquareRoot(0.0),
-            // Tolerance:
-            0.01,
-            // Message:
-            L"Basic test failed",
-            // Line number - used if there is no PDB file:
-            LINE_INFO());
-    }
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+       CRooterLib rooter;
+       Assert::AreEqual(
+           // Expected value:
+           0.0,
+           // Actual value:
+           rooter.SquareRoot(0.0),
+           // Tolerance:
+           0.01,
+           // Message:
+           L"Basic test failed",
+           // Line number - used if there is no PDB file:
+           LINE_INFO());
+   }
+   ```
 
-    ```
+4. Sestavte řešení.
 
-4.  Sestavte řešení.
+    Nový test se zobrazí v **Průzkumníka testů** v **nespuštěné testy** uzlu.
 
-     Nový test se zobrazí v **Průzkumníka testů** v **nespuštěné testy** uzlu.
+5. V **Průzkumník testů**, zvolte **spustit všechny**.
 
-5.  V **Průzkumník testů**, zvolte **spustit všechny**.
+    ![Základní Test proběhl úspěšně](../test/media/ute_cpp_testexplorer_basictest.png)
 
-     ![Základní Test proběhl úspěšně](../test/media/ute_cpp_testexplorer_basictest.png)
-
- Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.
+   Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.
 
 ##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Využívejte iterativní posílit testy a daly se předat
 
@@ -243,73 +242,72 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
 ##  <a name="Debug_a_failing_test"></a> Ladit test chybou
 
-1.  Přidat jiného testu k *unittest1.cpp*:
+1. Přidat jiného testu k *unittest1.cpp*:
 
-    ```cpp
-    // Verify that negative inputs throw an exception.
-     TEST_METHOD(NegativeRangeTest)
-     {
-       wchar_t message[200];
-       CRooterLib rooter;
-       for (double v = -0.1; v > -3.0; v = v - 0.5)
-       {
-         try
-         {
-           // Should raise an exception:
-           double result = rooter.SquareRoot(v);
-
-           swprintf_s(message, L"No exception for input %g", v);
-           Assert::Fail(message, LINE_INFO());
-         }
-         catch (std::out_of_range ex)
-         {
-           continue; // Correct exception.
-         }
-         catch (...)
-         {
-           swprintf_s(message, L"Incorrect exception for %g", v);
-           Assert::Fail(message, LINE_INFO());
-         }
-       }
-    };
-
-    ```
-
-2.  V **Průzkumník testů**, zvolte **spustit všechny**.
-
-     Test se nezdaří. Zvolte název testu v **Průzkumníka testů**. Neplatnost kontrolního výrazu je zvýrazněn. Zpráva o selhání je viditelný v podokně podrobností **Průzkumník testů**.
-
-     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
-
-3.  Chcete-li zjistit, proč se test nezdaří, kroku pomocí funkce:
-
-    1.  Nastavit zarážku na začátku `SquareRoot` funkce.
-
-    2.  V místní nabídce neúspěšných testů, zvolte **ladit vybrané testy**.
-
-         Při spuštění se zastaví na zarážce, krokovat kód.
-
-    3.  Přidejte kód, který *RooterLib.cpp* pro zachycení výjimky:
-
-        ```cpp
-        #include <stdexcept>
-        ...
-        double CRooterLib::SquareRoot(double v)
+   ```cpp
+   // Verify that negative inputs throw an exception.
+    TEST_METHOD(NegativeRangeTest)
+    {
+      wchar_t message[200];
+      CRooterLib rooter;
+      for (double v = -0.1; v > -3.0; v = v - 0.5)
+      {
+        try
         {
-            //Validate the input parameter:
-            if (v < 0.0)
-            {
-              throw std::out_of_range("Can't do square roots of negatives");
-            }
-        ...
+          // Should raise an exception:
+          double result = rooter.SquareRoot(v);
 
-        ```
+          swprintf_s(message, L"No exception for input %g", v);
+          Assert::Fail(message, LINE_INFO());
+        }
+        catch (std::out_of_range ex)
+        {
+          continue; // Correct exception.
+        }
+        catch (...)
+        {
+          swprintf_s(message, L"Incorrect exception for %g", v);
+          Assert::Fail(message, LINE_INFO());
+        }
+      }
+   };
+   ```
 
-    1.  V **Průzkumníka testů**, zvolte **spustit všechny** testovací metoda opravené a ujistěte se, že nebyla zavedena regrese.
+2. V **Průzkumník testů**, zvolte **spustit všechny**.
 
- Všechny testy jsou nyní úspěšné.
+    Test se nezdaří. Zvolte název testu v **Průzkumníka testů**. Neplatnost kontrolního výrazu je zvýrazněn. Zpráva o selhání je viditelný v podokně podrobností **Průzkumník testů**.
 
- ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png)
+    ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
+
+3. Chcete-li zjistit, proč se test nezdaří, kroku pomocí funkce:
+
+   1.  Nastavit zarážku na začátku `SquareRoot` funkce.
+
+   2.  V místní nabídce neúspěšných testů, zvolte **ladit vybrané testy**.
+
+        Při spuštění se zastaví na zarážce, krokovat kód.
+
+   3.  Přidejte kód, který *RooterLib.cpp* pro zachycení výjimky:
+
+       ```cpp
+       #include <stdexcept>
+       ...
+       double CRooterLib::SquareRoot(double v)
+       {
+           //Validate the input parameter:
+           if (v < 0.0)
+           {
+             throw std::out_of_range("Can't do square roots of negatives");
+           }
+       ...
+
+       ```
+
+   1.  V **Průzkumníka testů**, zvolte **spustit všechny** testovací metoda opravené a ujistěte se, že nebyla zavedena regrese.
+
+   Všechny testy jsou nyní úspěšné.
+
+   ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Refaktorujte kód beze změn testů
 

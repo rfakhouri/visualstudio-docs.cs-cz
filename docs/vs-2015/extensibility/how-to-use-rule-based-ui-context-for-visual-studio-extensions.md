@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f662a4383c56c21528b3dab556928fdaa043095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884092"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,75 +28,75 @@ Visual Studio umožňuje načítání rozšíření VSPackages při některých 
   
  Podle pravidel kontextu uživatelského rozhraní lze použít v mnoha různými způsoby:  
   
-1.  Zadejte omezení viditelnost příkazů a oken nástrojů. Příkazy a nástroje pro windows můžete skrýt, až do splnění pravidla kontextu uživatelského rozhraní.  
+1. Zadejte omezení viditelnost příkazů a oken nástrojů. Příkazy a nástroje pro windows můžete skrýt, až do splnění pravidla kontextu uživatelského rozhraní.  
   
-2.  Jako automatické omezení zatížení: automatické načtení balíčků jenom v případě splnění pravidla  
+2. Jako automatické omezení zatížení: automatické načtení balíčků jenom v případě splnění pravidla  
   
-3.  Zpožděná úloha: zpoždění načítání až do uplynutí zadaného intervalu a pravidlo je stále splněny.  
+3. Zpožděná úloha: zpoždění načítání až do uplynutí zadaného intervalu a pravidlo je stále splněny.  
   
- Mechanismu, který mohou využívat všechny rozšíření sady Visual Studio.  
+   Mechanismu, který mohou využívat všechny rozšíření sady Visual Studio.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Vytvoření uživatelského rozhraní založeného na pravidlo kontextu  
  Předpokládejme, že máte rozšíření volá TestPackage, která nabízí příkaz nabídky, která se vztahuje pouze na soubory s příponou ".config". Před VS2015, nejlepší možností je načíst TestPackage při <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> kontextu uživatelského rozhraní se aktivovala. Toto není efektivní, protože načtené řešení nesmí obsahovat i soubor .config. Dejte nám najdete v tématu Jak kontextu uživatelského rozhraní založeného na pravidlech lze aktivovat pouze v případě, že soubor s příponou .config kontextu uživatelského rozhraní je vybraná a zatížení TestPackage při aktivaci tohoto kontextu uživatelského rozhraní.  
   
-1.  Definovat nový identifikátor GUID UIContext a přidejte do třídy balíčku VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> a <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Definovat nový identifikátor GUID UIContext a přidejte do třídy balíčku VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> a <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Například předpokládejme, že nové UIContext "UIContextGuid" se má přidat. Vytvoří identifikátor GUID (identifikátor GUID můžete vytvořit kliknutím na Nástroje -> vytvořit guid) je "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Pak přidejte následující uvnitř třídy balíčku:  
+    Například předpokládejme, že nové UIContext "UIContextGuid" se má přidat. Vytvoří identifikátor GUID (identifikátor GUID můžete vytvořit kliknutím na Nástroje -> vytvořit guid) je "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Pak přidejte následující uvnitř třídy balíčku:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     Atributy, přidejte následující: (podrobnosti o těchto atributů budou vysvětlena dále)  
+    Atributy, přidejte následující: (podrobnosti o těchto atributů budou vysvětlena dále)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Tato metadata definovat nový identifikátor GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) a výraz odkazuje na jeden termín "DotConfig". Termín "DotConfig" vyhodnotí jako true, vždy, když aktuální výběr v aktivní hierarchii má název, který odpovídá vzoru regulárního výrazu "\\.config$" (končí řetězcem ".config"). (Výchozí) Určuje volitelný název pravidla, které jsou užitečné pro ladění.  
+    Tato metadata definovat nový identifikátor GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) a výraz odkazuje na jeden termín "DotConfig". Termín "DotConfig" vyhodnotí jako true, vždy, když aktuální výběr v aktivní hierarchii má název, který odpovídá vzoru regulárního výrazu "\\.config$" (končí řetězcem ".config"). (Výchozí) Určuje volitelný název pravidla, které jsou užitečné pro ladění.  
   
-     Hodnoty atributu jsou přidány do pkgdef generovány během doby sestavení později.  
+    Hodnoty atributu jsou přidány do pkgdef generovány během doby sestavení později.  
   
-2.  V souboru VSCT pro příkazy TestPackage přidejte příznak "DynamicVisibility" příslušnými příkazy:  
+2. V souboru VSCT pro příkazy TestPackage přidejte příznak "DynamicVisibility" příslušnými příkazy:  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  V části viditelnosti VSCT tie příslušné příkazy, které nový UIContext GUID definované v #1:  
+3. V části viditelnosti VSCT tie příslušné příkazy, které nový UIContext GUID definované v #1:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  V části symboly přidáte definici UIContext:  
+4. V části symboly přidáte definici UIContext:  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     Příkazy místní nabídky pro soubory *.config teď budou viditelné pouze v případě, že na vybranou položku v Průzkumníku řešení je soubor ".config" a balíčku nebudou načteny, dokud jeden z těchto příkazů je vybrána.  
+    Příkazy místní nabídky pro soubory *.config teď budou viditelné pouze v případě, že na vybranou položku v Průzkumníku řešení je soubor ".config" a balíčku nebudou načteny, dokud jeden z těchto příkazů je vybrána.  
   
- V dalším kroku použijeme ladicího programu k potvrzení, že načte balíček pouze při Očekáváme, že ho chcete. Chcete-li ladit TestPackage:  
+   V dalším kroku použijeme ladicího programu k potvrzení, že načte balíček pouze při Očekáváme, že ho chcete. Chcete-li ladit TestPackage:  
   
-1.  Nastavit zarážku <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
+5. Nastavit zarážku <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
   
-2.  Sestavení TestPackage a spusťte ladění.  
+6. Sestavení TestPackage a spusťte ladění.  
   
-3.  Vytvoření projektu nebo některou aplikaci otevřete.  
+7. Vytvoření projektu nebo některou aplikaci otevřete.  
   
-4.  Vyberte libovolný soubor s příponou jinou než .config. By neměl být zarážka dosažena.  
+8. Vyberte libovolný soubor s příponou jinou než .config. By neměl být zarážka dosažena.  
   
-5.  Vyberte soubor App.Config.  
+9. Vyberte soubor App.Config.  
   
- TestPackage načte a zastaví na zarážce.  
+   TestPackage načte a zastaví na zarážce.  
   
 ## <a name="adding-more-rules-for-ui-context"></a>Přidání další pravidla pro kontext uživatelského rozhraní  
  Vzhledem k tomu, že pravidla kontextu uživatelského rozhraní jsou logické výrazy, můžete přidat více omezený pravidla pro kontext uživatelského rozhraní. Například v rámci výše uvedené uživatelské rozhraní, můžete určit, že pravidlo platí, pouze když je načtené řešení s projektem. Tímto způsobem příkazy nezobrazí Pokud můžete otevřít soubor ".config" jako samostatný soubor, nikoli jako součást projektu.  

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877254"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: zápis testů jednotek pro knihovny DLL C++
 
@@ -117,53 +117,53 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
 
 ##  <a name="make_functions_visible"></a> Několik testů projektu do projektu knihovny DLL
 
-1.  Přidejte projekt knihovny DLL do odkazů projektu testovacího projektu:
+1. Přidejte projekt knihovny DLL do odkazů projektu testovacího projektu:
 
-    1.  Otevřete vlastnosti projektu testu a zvolte **společné vlastnosti** > **rámec a odkazy**.
+   1.  Otevřete vlastnosti projektu testu a zvolte **společné vlastnosti** > **rámec a odkazy**.
 
-         ![Vlastnosti projektu C++ | Rámec a odkazy](../test/media/utecpp08.png)
+        ![Vlastnosti projektu C++ | Rámec a odkazy](../test/media/utecpp08.png)
 
-    2.  Zvolte **přidat nový odkaz**.
+   2.  Zvolte **přidat nový odkaz**.
 
-         V **přidat odkaz** dialogového okna, vyberte projekt knihovny DLL a vyberte **přidat**.
+        V **přidat odkaz** dialogového okna, vyberte projekt knihovny DLL a vyberte **přidat**.
 
-         ![Vlastnosti projektu C++ | Přidat nový odkaz](../test/media/utecpp09.png)
+        ![Vlastnosti projektu C++ | Přidat nový odkaz](../test/media/utecpp09.png)
 
-2.  V hlavní Jednotkový test *.cpp* souboru, zahrnují *.h* soubor zdrojového kódu knihovny DLL:
+2. V hlavní Jednotkový test *.cpp* souboru, zahrnují *.h* soubor zdrojového kódu knihovny DLL:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Přidáte základní test, který používá exportované funkce:
+3. Přidáte základní test, který používá exportované funkce:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Sestavte řešení.
+4. Sestavte řešení.
 
-     Nový test se zobrazí v **Průzkumníka testů**.
+    Nový test se zobrazí v **Průzkumníka testů**.
 
-5.  V **Průzkumník testů**, zvolte **spustit všechny**.
+5. V **Průzkumník testů**, zvolte **spustit všechny**.
 
-     ![Průzkumník testu jednotek &#45; základní Test prošel](../test/media/utecpp10.png)
+    ![Průzkumník testu jednotek &#45; základní Test prošel](../test/media/utecpp10.png)
 
- Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.
+   Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.
 
 ##  <a name="iterate"></a> Využívejte iterativní posílit testy a daly se předat
 
@@ -330,7 +330,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
 ## <a name="see-also"></a>Viz také:
 
 - [Přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
+- [Používání atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Ladění nativního kódu](../debugger/debugging-native-code.md)
 - [Návod: Vytvoření a použití dynamické knihovny (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Import a export](/cpp/build/importing-and-exporting)

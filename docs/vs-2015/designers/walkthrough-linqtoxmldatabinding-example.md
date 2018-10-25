@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54e714aa95ee1206e278546bcd61e31687c45211
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c69c69cfed53b0080614984853b3128908c2e89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893647"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Návod: Příklad LinqToXmlDataBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ Tento návod popisuje příklad LinqToXmlDataBinding a vysvětluje některé zaj
 ## <a name="remarks"></a>Poznámky  
  LinqToXmlDataBinding program je aplikace Windows Presentation Foundation (WPF), který se skládá C# a XAML zdrojové soubory. Obsahuje vložený dokument XML, který definuje seznam knihy a umožňuje uživatelům zobrazit, přidat, odstranit a upravit tyto položky. Se skládá z následujících dvou primární zdrojové soubory:  
   
--   L2DBForm.XAML obsahuje kód XAML deklarace pro uživatelské rozhraní (UI) hlavního okna. Obsahuje také oddíl prostředků okna, která definuje data provider a vloženého dokumentu XML pro výpisy knihy.  
+- L2DBForm.XAML obsahuje kód XAML deklarace pro uživatelské rozhraní (UI) hlavního okna. Obsahuje také oddíl prostředků okna, která definuje data provider a vloženého dokumentu XML pro výpisy knihy.  
   
--   L2DBForm.XAML.cs obsahuje inicializační a metody zpracování událostí, které jsou přidružené uživatelské rozhraní.  
+- L2DBForm.XAML.cs obsahuje inicializační a metody zpracování událostí, které jsou přidružené uživatelské rozhraní.  
   
- Hlavní okno je rozdělen do následujících čtyř svislé částí uživatelského rozhraní:  
+  Hlavní okno je rozdělen do následujících čtyř svislé částí uživatelského rozhraní:  
   
--   **XML** zobrazí nezpracovaný zdroj dat XML vložené adresáře seznamu.  
+- **XML** zobrazí nezpracovaný zdroj dat XML vložené adresáře seznamu.  
   
--   **Rezervuje seznamu** zobrazuje jako standardní text položky adresáře a umožňuje uživateli vybrat a odstranit jednotlivé položky.  
+- **Rezervuje seznamu** zobrazuje jako standardní text položky adresáře a umožňuje uživateli vybrat a odstranit jednotlivé položky.  
   
--   **Upravit vybrané knihy** umožňuje uživateli upravit hodnoty přidružené k položce vybrané knihy.  
+- **Upravit vybrané knihy** umožňuje uživateli upravit hodnoty přidružené k položce vybrané knihy.  
   
--   **Přidat nový adresář** umožňuje vytvořit novou položku seznamu na základě hodnot zadaných uživatelem.  
+- **Přidat nový adresář** umožňuje vytvořit novou položku seznamu na základě hodnot zadaných uživatelem.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   

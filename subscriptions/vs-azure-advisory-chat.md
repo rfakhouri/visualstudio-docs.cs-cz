@@ -9,12 +9,12 @@ description: Naučte se, abyste mohli využívat výhody Azure Advisory Chat sou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ce99a05ae29f7533d0a0f98206263872d047d31
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896000"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -38,13 +38,14 @@ Použití poradce Azure konverzace je jednoduché.
 
 ## <a name="eligibility"></a>Způsobilost
 
-| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodního prodeje   | Jeden rok      |  Ano          |
-| Visual Studio Professional (standardní a roční cloudové, měsíčních cloudových) sady Visual Studio Enterprise (měsíční cloudu, NFR<sup>1</sup>) | Všechny                                      | Není k dispozici                                                            |  Ne          |
-| Visual Studio Test Professional (Standard)                         | Všechny                                              | Není k dispozici                                             |  Ne          |
-| Předplatné MSDN Platforms (Standard)                                          | Všechny                                              |Není k dispozici                                              |  Ne          |
-| Visual Studio Dev Essentials                                          | Není k dispozici                                              |Není k dispozici                                              |  Ne          |
+|                                                      Úroveň předplatného                                                      |     Kanály      |    Výhody    | Obnovitelné? |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise (standardní a roční cloudové)                                       | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
+| Visual Studio Professional (standardní a roční cloudové, měsíčních cloudových) sady Visual Studio Enterprise (měsíční cloudu, NFR<sup>1</sup>) |        Všechny        | Není k dispozici |     Ne     |
+|                                          Visual Studio Test Professional (Standard)                                          |        Všechny        | Není k dispozici |     Ne     |
+|                                                  Předplatné MSDN Platforms (Standard)                                                   |        Všechny        | Není k dispozici |     Ne     |
+|                                                 Visual Studio Dev Essentials                                                 |        Není k dispozici        | Není k dispozici |     Ne     |
+
 <sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT* 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

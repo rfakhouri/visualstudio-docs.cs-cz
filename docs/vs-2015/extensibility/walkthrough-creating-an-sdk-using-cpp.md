@@ -13,12 +13,12 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc1d47030cf8c71b681e7f6f2ff3c6df5dfa58eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c10611ee05178f907c36aae268b0d6990a9e6606
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905698"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Návod: Vytvoření sady SDK pomocí jazyka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,27 +148,27 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
   
 ##  <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd  
   
-1.  V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
+1. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
   
-2.  V seznamu šablon rozbalte **Visual C++**, **Windows Store**a pak vyberte **prázdnou aplikaci**. V **název** zadejte **NativeMathSDKSample**a klikněte na tlačítko **OK** tlačítko.  
+2. V seznamu šablon rozbalte **Visual C++**, **Windows Store**a pak vyberte **prázdnou aplikaci**. V **název** zadejte **NativeMathSDKSample**a klikněte na tlačítko **OK** tlačítko.  
   
-3.  V **Průzkumníka řešení**, otevřete místní nabídku **NativeMathSDKSample** projektu a klikněte na tlačítko **přidat**, **odkaz**.  
+3. V **Průzkumníka řešení**, otevřete místní nabídku **NativeMathSDKSample** projektu a klikněte na tlačítko **přidat**, **odkaz**.  
   
-4.  Na **společné vlastnosti**, **rámec a odkazy** rozbalte stránku vlastností v seznamu typy odkazů, **Windows**a pak vyberte **rozšíření** . V podokně podrobností vyberte **nativní sadou SDK matematické** rozšíření a klikněte na tlačítko **přidat nový odkaz** tlačítko.  
+4. Na **společné vlastnosti**, **rámec a odkazy** rozbalte stránku vlastností v seznamu typy odkazů, **Windows**a pak vyberte **rozšíření** . V podokně podrobností vyberte **nativní sadou SDK matematické** rozšíření a klikněte na tlačítko **přidat nový odkaz** tlačítko.  
   
-5.  V **přidat odkaz** dialogové okno, vyberte **nativní sadou SDK matematické** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.  
+5. V **přidat odkaz** dialogové okno, vyberte **nativní sadou SDK matematické** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.  
   
-6.  Zobrazte vlastnosti projektu pro NativeMathSDKSample.  
+6. Zobrazte vlastnosti projektu pro NativeMathSDKSample.  
   
-     Vlastnosti, které jste definovali v NativeMathSDK.props byly použity při přidání odkazu. To můžete ověřit kontrolou **adresáře VC ++** vlastnost projektu **vlastnosti konfigurace**.  
+    Vlastnosti, které jste definovali v NativeMathSDK.props byly použity při přidání odkazu. To můžete ověřit kontrolou **adresáře VC ++** vlastnost projektu **vlastnosti konfigurace**.  
   
-7.  V **Průzkumníka řešení**, otevřete MainPage.xaml a pak pomocí následujících XAML nahraďte jeho obsah:  
+7. V **Průzkumníka řešení**, otevřete MainPage.xaml a pak pomocí následujících XAML nahraďte jeho obsah:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
   
-8.  Aktualizace Mainpage.xaml.h tak, aby odpovídala takto:  
+8. Aktualizace Mainpage.xaml.h tak, aby odpovídala takto:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
   
 9. Aktualizace MainPage.xaml.cpp tak, aby odpovídala takto:  
   
@@ -180,7 +180,7 @@ Tento návod ukazuje, jak vytvořit nativní C++ matematické knihovny sady SDK,
   
      Správný výsledek se zobrazí.  
   
- Tento průvodce vám ukázal, jak vytvořit a použít rozšiřující sadu SDK pro volání do [!INCLUDE[wrt](../includes/wrt-md.md)] knihovny a non -[!INCLUDE[wrt](../includes/wrt-md.md)] knihovny.  
+    Tento průvodce vám ukázal, jak vytvořit a použít rozšiřující sadu SDK pro volání do [!INCLUDE[wrt](../includes/wrt-md.md)] knihovny a non -[!INCLUDE[wrt](../includes/wrt-md.md)] knihovny.  
   
 ## <a name="next-steps"></a>Další kroky  
   

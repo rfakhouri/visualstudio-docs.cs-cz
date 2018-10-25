@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75c6d92ae1cb5b71535d7f9aa4c9f2731f81e6ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39640001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861160"
 ---
 # <a name="how-to-implement-error-markers"></a>Postupy: implementace označování chyb
 Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější přizpůsobení editoru textu k implementaci. Však výhody, které nabízejí uživatelům vaší VSPackage můžete mnohem převažují nad náklady a umožnit jim. Označování chyb myš označit text, který předpokládá, že nesprávné s podtržení nebo podtrženo červenou čáru vaše analyzátoru jazyka. Tento ukazatel pomáhá programátoři vizuálně zobrazením nesprávný kód.  
@@ -27,23 +27,23 @@ Označování chyb (nebo červené podtržení vlnovkou) jsou nejobtížnější
   
 ## <a name="to-implement-the-red-wavy-underline-feature"></a>Chcete-li implementovat funkci červenou vlnovkou  
   
-1.  Vyberte text, u které chcete umístit červenou vlnovkou.  
+1. Vyberte text, u které chcete umístit červenou vlnovkou.  
   
-2.  Vytvořit značku typu `MARKER_CODESENSE_ERROR`. Další informace najdete v tématu [postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md).  
+2. Vytvořit značku typu `MARKER_CODESENSE_ERROR`. Další informace najdete v tématu [postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Potom předejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ukazatel rozhraní.  
+3. Potom předejte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> ukazatel rozhraní.  
   
- Tento proces také umožňuje vytvořit text tipu nebo speciální kontextové nabídky přes danou značku. Další informace najdete v tématu [postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md).  
+   Tento proces také umožňuje vytvořit text tipu nebo speciální kontextové nabídky přes danou značku. Další informace najdete v tématu [postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md).  
   
- Následující objekty jsou požadovány, než lze zobrazit označování chyb.  
+   Následující objekty jsou požadovány, než lze zobrazit označování chyb.  
   
--   Analyzátor.  
+- Analyzátor.  
   
--   Zprostředkovatel úkolu (to znamená, že implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), který udržuje záznam změn v řádku informace za účelem zjištění znovu analyzovaný řádky.  
+- Zprostředkovatel úkolu (to znamená, že implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), který udržuje záznam změn v řádku informace za účelem zjištění znovu analyzovaný řádky.  
   
--   Filtr zobrazení textu, který zachycuje blikající kurzor o události změn pomocí zobrazení <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) metody.  
+- Filtr zobrazení textu, který zachycuje blikající kurzor o události změn pomocí zobrazení <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) metody.  
   
- Analyzátor, zprostředkovatel úkolu a filtr poskytují infrastrukturu nutnou k umožnění označování chyb. Následující kroky obsahují procesu pro zobrazení označování chyb.  
+  Analyzátor, zprostředkovatel úkolu a filtr poskytují infrastrukturu nutnou k umožnění označování chyb. Následující kroky obsahují procesu pro zobrazení označování chyb.  
   
 1.  V zobrazení se filtruje je filtr získá ukazatel na úkol zprostředkovatele spojeného s data tohoto zobrazení.  
   

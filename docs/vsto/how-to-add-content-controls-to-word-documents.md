@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936963"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word
   V projektech aplikace Word úrovni dokumentu můžete přidat ovládací prvky obsahu v dokumentu v projektu, v době návrhu nebo za běhu. V projekty doplňku VSTO pro Word můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu.  
@@ -43,24 +43,24 @@ ms.locfileid: "35675869"
   
  Toto téma popisuje následující úkoly:  
   
--   [Přidání ovládacích prvků obsahu v době návrhu](#designtime)  
+- [Přidání ovládacích prvků obsahu v době návrhu](#designtime)  
   
--   [Přidání ovládacích prvků obsahu za běhu v projektu úrovni dokumentu](#runtimedoclevel)  
+- [Přidání ovládacích prvků obsahu za běhu v projektu úrovni dokumentu](#runtimedoclevel)  
   
--   [Přidání ovládacích prvků obsahu za běhu v projektu doplňku VSTO](#runtimeaddin)  
+- [Přidání ovládacích prvků obsahu za běhu v projektu doplňku VSTO](#runtimeaddin)  
   
- Informace o ovládacích prvcích obsahu najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  
+  Informace o ovládacích prvcích obsahu najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  
   
 ##  <a name="designtime"></a> Přidat obsah ovládací prvky v době návrhu  
  Existuje několik způsobů, jak přidat ovládací prvky obsahu v dokumentu v projektu úrovni dokumentu v době návrhu:  
   
--   Přidejte ovládací prvek obsahu z **ovládací prvky aplikace Word** karty **nástrojů**.  
+- Přidejte ovládací prvek obsahu z **ovládací prvky aplikace Word** karty **nástrojů**.  
   
--   Přidání ovládacího prvku obsahu do dokumentu stejným způsobem by přidat nativní ovládací prvek obsahu v aplikaci Word.  
+- Přidání ovládacího prvku obsahu do dokumentu stejným způsobem by přidat nativní ovládací prvek obsahu v aplikaci Word.  
   
--   Přetáhněte ovládací prvek obsahu do dokumentu z **zdroje dat** okna. To je užitečné, pokud chcete ovládací prvek svázat data při vytvoření ovládacího prvku. Další informace najdete v tématu [postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md) a [postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Přetáhněte ovládací prvek obsahu do dokumentu z **zdroje dat** okna. To je užitečné, pokud chcete ovládací prvek svázat data při vytvoření ovládacího prvku. Další informace najdete v tématu [postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md) a [postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Chcete-li přidat ovládací prvek obsahu do dokumentu pomocí panelu nástrojů  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35675869"
 ##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků obsahu za běhu v projektu úrovni dokumentu  
  Můžete přidat ovládací prvky obsahu prostřednictvím kódu programu do dokumentu za běhu pomocí metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnost `ThisDocument` třídu ve vašem projektu. Každá z metod má tři přetížení, které můžete použít k přidání ovládacího prvku obsahu následujícími způsoby:  
   
--   Přidejte ovládací prvek na aktuální výběr.  
+- Přidejte ovládací prvek na aktuální výběr.  
   
--   Přidání ovládacího prvku v zadaném rozsahu.  
+- Přidání ovládacího prvku v zadaném rozsahu.  
   
--   Přidejte ovládací prvek, který je založen na nativním ovládacím prvku obsahu v dokumentu.  
+- Přidejte ovládací prvek, který je založen na nativním ovládacím prvku obsahu v dokumentu.  
   
- Dynamicky vytvoří obsah, který se jako trvalý ovládací prvky v dokumentu, při zavření dokumentu. Nativní ovládací prvek obsahu, ale zůstává v dokumentu. Můžete znovu vytvořit ovládací prvek obsahu, který je založen na nativním ovládacím prvku obsahu při příštím otevření dokumentu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Dynamicky vytvoří obsah, který se jako trvalý ovládací prvky v dokumentu, při zavření dokumentu. Nativní ovládací prvek obsahu, ale zůstává v dokumentu. Můžete znovu vytvořit ovládací prvek obsahu, který je založen na nativním ovládacím prvku obsahu při příštím otevření dokumentu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 > [!NOTE]  
 >  Chcete-li přidat ovládací prvek zaškrtávací políčko obsahu dokumentu v projektu aplikace Word 2010, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  
@@ -141,15 +141,15 @@ ms.locfileid: "35675869"
 ##  <a name="runtimeaddin"></a> Přidání ovládacích prvků obsahu za běhu v projektu doplňku VSTO  
  Přidáním ovládacích prvků obsahu prostřednictvím kódu programu do libovolného otevřeného dokumentu za běhu pomocí doplňku VSTO. Chcete-li to provést, vygenerovat <xref:Microsoft.Office.Tools.Word.Document> hostitelem položku, která vychází z otevřeného dokumentu a pak použijte metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnosti této položky hostitele. Každá z metod má tři přetížení, které můžete použít k přidání ovládacího prvku obsahu následujícími způsoby:  
   
--   Přidejte ovládací prvek na aktuální výběr.  
+- Přidejte ovládací prvek na aktuální výběr.  
   
--   Přidání ovládacího prvku v zadaném rozsahu.  
+- Přidání ovládacího prvku v zadaném rozsahu.  
   
--   Přidejte ovládací prvek, který je založen na nativním ovládacím prvku obsahu v dokumentu.  
+- Přidejte ovládací prvek, který je založen na nativním ovládacím prvku obsahu v dokumentu.  
   
- Dynamicky vytvoří obsah, který se jako trvalý ovládací prvky v dokumentu, při zavření dokumentu. Nativní ovládací prvek obsahu, ale zůstává v dokumentu. Můžete znovu vytvořit ovládací prvek obsahu, který je založen na nativním ovládacím prvku obsahu při příštím otevření dokumentu. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Dynamicky vytvoří obsah, který se jako trvalý ovládací prvky v dokumentu, při zavření dokumentu. Nativní ovládací prvek obsahu, ale zůstává v dokumentu. Můžete znovu vytvořit ovládací prvek obsahu, který je založen na nativním ovládacím prvku obsahu při příštím otevření dokumentu. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Další informace o generování hostitelských položkách v projekty doplňku VSTO v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  Další informace o generování hostitelských položkách v projekty doplňku VSTO v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 > [!NOTE]  
 >  Chcete-li do dokumentu přidat ovládací prvek zaškrtávací políčko obsahu, musíte vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objektu. Další informace najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  

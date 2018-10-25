@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855401"
 ---
 # <a name="capturing-graphics-information"></a>Zaznamenání grafických informací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Spuštění aplikace v rámci Diagnostiky grafiky  
   
--   V panelu nabídky zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: stiskněte klávesy Alt + F5)  
+- V panelu nabídky zvolte **ladění**, **grafiky**, **spustit diagnostiku**. (Klávesnice: stiskněte klávesy Alt + F5)  
   
--   Na **grafiky** nástrojů, zvolte **spustit diagnostiku** tlačítko.  
+- Na **grafiky** nástrojů, zvolte **spustit diagnostiku** tlačítko.  
   
- Když je aplikace spuštěna v rámci Diagnostiky grafiky, některé druhy informací grafiky jsou zachycovány neustále. Patří mezi ně nastavení zařízení, vytváření řetězce přepnutí, vytváření grafických objektů a zdrojů a další důležité události, které ovlivňují více než jeden snímek. Zároveň můžete zachytit podrobné informace o konkrétních snímcích. Jedná se například o volání draw a rozesílání počítačového shaderu a objekty Direct3D a zdroje, které je podporují.  
+  Když je aplikace spuštěna v rámci Diagnostiky grafiky, některé druhy informací grafiky jsou zachycovány neustále. Patří mezi ně nastavení zařízení, vytváření řetězce přepnutí, vytváření grafických objektů a zdrojů a další důležité události, které ovlivňují více než jeden snímek. Zároveň můžete zachytit podrobné informace o konkrétních snímcích. Jedná se například o volání draw a rozesílání počítačového shaderu a objekty Direct3D a zdroje, které je podporují.  
   
 #### <a name="to-capture-a-frame"></a>Zachycení snímku  
   
--   V sadě Visual Studio na **grafiky** nástrojů, zvolte **zachytit snímek** tlačítko![zachytávání grafiky ikonu tlačítka](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- V sadě Visual Studio na **grafiky** nástrojů, zvolte **zachytit snímek** tlačítko![zachytávání grafiky ikonu tlačítka](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   Na klávesnici stiskněte klávesu Print Screen.  
+- Na klávesnici stiskněte klávesu Print Screen.  
   
-    > [!NOTE]
-    >  Když je aplikace spuštěna v rámci **diagnostiky grafiky**, klávesu Print Screen lze použít pouze k zachycení snímku informací grafiky; neprovádí její běžné funkci. To platí, dokud neukončíte zachycování informací grafiky – obvykle zastavením ladění nebo standardním ukončením aplikace, a to i když je aktivní jiná aplikace.  
+  > [!NOTE]
+  >  Když je aplikace spuštěna v rámci **diagnostiky grafiky**, klávesu Print Screen lze použít pouze k zachycení snímku informací grafiky; neprovádí její běžné funkci. To platí, dokud neukončíte zachycování informací grafiky – obvykle zastavením ladění nebo standardním ukončením aplikace, a to i když je aktivní jiná aplikace.  
   
--   Zachycení rozhraní sady Visual Studio, zvolte **zachytit snímek** tlačítko umístěné nad **diagnostické relace** časovou osu, nebo zvolte velké **zachytit snímek** tlačítko nacházel pod **snímků za sekundu** plavecké dráhy a napravo od všechny dříve zachycené snímky. Na následujícím obrázku jsou zvýrazněné obě tlačítka.  
+- Zachycení rozhraní sady Visual Studio, zvolte **zachytit snímek** tlačítko umístěné nad **diagnostické relace** časovou osu, nebo zvolte velké **zachytit snímek** tlačítko nacházel pod **snímků za sekundu** plavecké dráhy a napravo od všechny dříve zachycené snímky. Na následujícím obrázku jsou zvýrazněné obě tlačítka.  
   
-     ![Zachytit snímky pomocí nástroje využití GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Zachytit snímky pomocí nástroje využití GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Jakmile budete připraveni k prozkoumání snímky jste zaznamenali, spusťte **analyzátoru grafiky sady Visual Studio** podle **snímků...** odkaz na nad miniatury obrázků, nebo na něj poklikejte na miniaturu.  
+   Jakmile budete připraveni k prozkoumání snímky jste zaznamenali, spusťte **analyzátoru grafiky sady Visual Studio** podle **snímků...** odkaz na nad miniatury obrázků, nebo na něj poklikejte na miniaturu.  
   
- Zachytit lze pouze celé snímky, takže když zahájíte zachycování, jsou ve skutečnosti zaznamenány informace grafiky z následujícího snímku. Záznam začne okamžitě po zobrazení snímku, ve kterém jste zachycování inicializovali, a ukončí se po zobrazení zachyceného snímku. Když je aplikace spuštěna v rámci Diagnostiky grafiky, můžete zachytit libovolný počet snímků. Pokud nezachytíte žádné snímky, protokol grafiky bude zrušen.  
+  Zachytit lze pouze celé snímky, takže když zahájíte zachycování, jsou ve skutečnosti zaznamenány informace grafiky z následujícího snímku. Záznam začne okamžitě po zobrazení snímku, ve kterém jste zachycování inicializovali, a ukončí se po zobrazení zachyceného snímku. Když je aplikace spuštěna v rámci Diagnostiky grafiky, můžete zachytit libovolný počet snímků. Pokud nezachytíte žádné snímky, protokol grafiky bude zrušen.  
   
- Při zachytávání snímků, Visual Studio zobrazí okno diagnostiky relace (.diagsession). Pokud toto okno zavřít, zastavení ladění nebo zavřete aplikaci, nemůže zachytit žádné další rámce do protokolu. Chcete-li zachytit více informací grafiky, budete muset spuštění aplikace v rámci diagnostiky grafiky znovu a spusťte novou relaci diagnostiky.  
+  Při zachytávání snímků, Visual Studio zobrazí okno diagnostiky relace (.diagsession). Pokud toto okno zavřít, zastavení ladění nebo zavřete aplikaci, nemůže zachytit žádné další rámce do protokolu. Chcete-li zachytit více informací grafiky, budete muset spuštění aplikace v rámci diagnostiky grafiky znovu a spusťte novou relaci diagnostiky.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Možnosti zachytávání diagnostiky grafiky  
  Můžete nakonfigurovat zachytávání shromažďovat zásobníky volání pro všechny události grafiky nebo omezené dílčí, zakázat zachycování HUD a povolit nebo zakázat režim kompatibility zachycení.  

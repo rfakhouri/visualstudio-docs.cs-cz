@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929969"
 ---
 # <a name="customizing-the-model-explorer"></a>Přizpůsobení Průzkumníka modelů
 Je můžete změnit vzhled a chování Průzkumníka pro návrháře jazyka specifického pro doménu následujícím způsobem:
@@ -42,23 +42,23 @@ Je můžete změnit vzhled a chování Průzkumníka pro návrháře jazyka spec
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Přidání ikony k uzlu Průzkumníka
 
-1.  Vytvoření [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení pomocí šablony toku úkolů řešení.
+1. Vytvoření [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení pomocí šablony toku úkolů řešení.
 
-2.  Umístění souboru .bmp, který obsahuje ikonu rozměr 16 × 16 pixelů v **Dsl\Resources** složky v řešení.
+2. Umístění souboru .bmp, který obsahuje ikonu rozměr 16 × 16 pixelů v **Dsl\Resources** složky v řešení.
 
-3.  V **Průzkumník DSL**, klikněte pravým tlačítkem na **chování Průzkumníka** a potom klikněte na tlačítko **přidat nové nastavení uzlu Průzkumníka**.
+3. V **Průzkumník DSL**, klikněte pravým tlačítkem na **chování Průzkumníka** a potom klikněte na tlačítko **přidat nové nastavení uzlu Průzkumníka**.
 
-     **ExplorerNodeSettings** uzel se zobrazí v části **vlastní nastavení uzlu** uzlu.
+    **ExplorerNodeSettings** uzel se zobrazí v části **vlastní nastavení uzlu** uzlu.
 
-4.  Vyberte **ExplorerNodeSettings**a pak v **vlastnosti** okno, nastavte **třídy** k **objektu Actor**.
+4. Vyberte **ExplorerNodeSettings**a pak v **vlastnosti** okno, nastavte **třídy** k **objektu Actor**.
 
-5.  Nastavte **ikonu k zobrazení** na cestu k souboru ikony.
+5. Nastavte **ikonu k zobrazení** na cestu k souboru ikony.
 
-6.  Transformovat všechny šablony a potom sestavíte a spustíte řešení.
+6. Transformovat všechny šablony a potom sestavíte a spustíte řešení.
 
-7.  Ve vygenerovaném návrháři Otevřete diagram vzorku.
+7. Ve vygenerovaném návrháři Otevřete diagram vzorku.
 
-     V Průzkumníku by se měla zobrazit tři **objektu Actor** uzly, které mají vaší ikony.
+    V Průzkumníku by se měla zobrazit tři **objektu Actor** uzly, které mají vaší ikony.
 
 > [!NOTE]
 >  Pokud jste nastavili uzel ikona pro libovolný element, který se zobrazí v Průzkumníku vygenerovaný, všechny uzly Průzkumníka se zobrazí ikona. Pokud byla nastavena žádná ikona, uzly se zobrazí ikona výchozí.

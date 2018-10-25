@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903813"
 ---
 # <a name="how-to--with-text-templates"></a>Postupy pro textové šablony
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Textové šablony v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabízejí prak
 ### <a name="invoke-methods-from-a-template"></a>Vyvolání metody ze šablony  
  Pokud metody ještě neexistuje, například ve standardním [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] třídy:  
   
--   Použít \<#@assembly#> direktiva načíst sestavení a používání \<#@import#> Chcete-li nastavit obor názvů kontextu. Další informace najdete v tématu [T4 – Direktiva Import](../modeling/t4-import-directive.md).  
+- Použít \<#@assembly#> direktiva načíst sestavení a používání \<#@import#> Chcete-li nastavit obor názvů kontextu. Další informace najdete v tématu [T4 – Direktiva Import](../modeling/t4-import-directive.md).  
   
-     Často používají stejnou sadu sestavení, direktivy import, zvažte vytvoření procesor direktiv. V každé šabloně můžete vyvolat procesor direktiv, který lze načíst sestavení a soubory modelu a nastavte kontext oboru názvů. Další informace najdete v tématu [vytváření vlastních procesorů textových šablon T4 – direktiva](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Často používají stejnou sadu sestavení, direktivy import, zvažte vytvoření procesor direktiv. V každé šabloně můžete vyvolat procesor direktiv, který lze načíst sestavení a soubory modelu a nastavte kontext oboru názvů. Další informace najdete v tématu [vytváření vlastních procesorů textových šablon T4 – direktiva](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Pokud píšete metody sami:  
+  Pokud píšete metody sami:  
   
--   Při psaní textové šabloně běhu zapište definice částečné třídy, který má stejný název jako textové šabloně běhu. Přidejte další metody této třídy.  
+- Při psaní textové šabloně běhu zapište definice částečné třídy, který má stejný název jako textové šabloně běhu. Přidejte další metody této třídy.  
   
--   Zápis řídicí blok funkce třídy `<#+ ... #>` ve které je možné deklarovat soukromé třídy, vlastnosti a metody. Při kompilaci textové šablony se transformuje na třídu. Standardní řídicí bloky `<#...#>` textu se transformují do jedné metody a bloky s funkcí třídy jsou vloženy jako samostatné členy. Další informace najdete v tématu [řídicí bloky textových šablon](../modeling/text-template-control-blocks.md).  
+- Zápis řídicí blok funkce třídy `<#+ ... #>` ve které je možné deklarovat soukromé třídy, vlastnosti a metody. Při kompilaci textové šablony se transformuje na třídu. Standardní řídicí bloky `<#...#>` textu se transformují do jedné metody a bloky s funkcí třídy jsou vloženy jako samostatné členy. Další informace najdete v tématu [řídicí bloky textových šablon](../modeling/text-template-control-blocks.md).  
   
-     Metody definované funkce třídy mohou také obsahovat vložený textové bloky.  
+   Metody definované funkce třídy mohou také obsahovat vložený textové bloky.  
   
-     Zvažte umístění funkce třídy v samostatném souboru, který můžete `<#@include#>` do jednoho nebo více souborů šablon.  
+   Zvažte umístění funkce třídy v samostatném souboru, který můžete `<#@include#>` do jednoho nebo více souborů šablon.  
   
--   Zápis metod v samostatném sestavení (knihovna tříd) a je volat z vaší šablony. Použití `<#@assembly#>` směrnice pro načtení sestavení, a `<#@import#>` nastavit kontext oboru názvů. Všimněte si, že pokud chcete při ladění ji, sestavte znovu sestavení, budete muset zastavit a restartovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).  
+- Zápis metod v samostatném sestavení (knihovna tříd) a je volat z vaší šablony. Použití `<#@assembly#>` směrnice pro načtení sestavení, a `<#@import#>` nastavit kontext oboru názvů. Všimněte si, že pokud chcete při ladění ji, sestavte znovu sestavení, budete muset zastavit a restartovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [direktivy textové šablony T4](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Generovat ze schématu jeden model mnoho souborů  
  Pokud často generování souborů z modelů, které mají stejné schéma XML nebo databáze:  

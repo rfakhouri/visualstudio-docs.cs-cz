@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886276"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Spouštění aplikací pro Windows Store ve vzdáleném počítači
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
  [Konfigurace projektu Visual Studio pro vzdálené ladění](#BKMK_ConnectVS)  
   
--   [Volba vzdáleného zařízení pro projekty jazyka C# a Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Volba vzdáleného zařízení pro projekty jazyka C# a Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Volba vzdáleného zařízení pro projekty jazyka JavaScript a C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Volba vzdáleného zařízení pro projekty jazyka JavaScript a C++](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Spuštění relace vzdáleného ladění](#BKMK_RunRemoteDebug)  
+  [Spuštění relace vzdáleného ladění](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Požadované součásti  
  Ladění na vzdáleném zařízení:  
@@ -123,20 +123,20 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Konfigurace vzdáleného ladicího programu  
  Použijete dva nástroje upravit konfiguraci vzdáleného ladicího programu.  
   
-1.  Na **nástroje** nabídku **Visual Studio Remote Debugging Monitor**:  
+1. Na **nástroje** nabídku **Visual Studio Remote Debugging Monitor**:  
   
-    1.  Zvolte **možnosti** Chcete-li změnit číslo portu, režimu ověřování nebo intervalu časového limitu vzdáleného ladicího programu.  
+   1.  Zvolte **možnosti** Chcete-li změnit číslo portu, režimu ověřování nebo intervalu časového limitu vzdáleného ladicího programu.  
   
-    2.  Zvolte **oprávnění** přidat nebo odebrat uživatele, kteří mají oprávnění pro vzdálené ladění.  
+   2.  Zvolte **oprávnění** přidat nebo odebrat uživatele, kteří mají oprávnění pro vzdálené ladění.  
   
-        > [!NOTE]
-        >  Oprávnění musí být udělena pro každý uživatelský účet, který je vzdáleně laděn.  
+       > [!NOTE]
+       >  Oprávnění musí být udělena pro každý uživatelský účet, který je vzdáleně laděn.  
   
- Můžete použít **Průvodce konfigurací vzdáleného ladicího programu** nastavíte rozšířené možnosti pro vzdálený ladicí program. Chcete-li spustit průvodce, zvolte **Průvodce konfigurací vzdáleného ladicího programu** na úvodní obrazovce.  
+   Můžete použít **Průvodce konfigurací vzdáleného ladicího programu** nastavíte rozšířené možnosti pro vzdálený ladicí program. Chcete-li spustit průvodce, zvolte **Průvodce konfigurací vzdáleného ladicího programu** na úvodní obrazovce.  
   
-1.  Na **konfigurovat Visual Studio Remote Debugger** stránky, můžete také spustit vzdálený ladicí program jako službu. Ve většině případů není spuštěná jako služba vyžaduje.  
+2. Na **konfigurovat Visual Studio Remote Debugger** stránky, můžete také spustit vzdálený ladicí program jako službu. Ve většině případů není spuštěná jako služba vyžaduje.  
   
-2.  Na **konfigurace brány Windows Firewall pro ladění** stránky, můžete přidat nebo odebrat typ sítí, které chcete připojit ke vzdálenému ladicímu programu. Jsou povoleny pouze ty sítě, které zařízení je nyní připojen k. Musíte vybrat aspoň jednu síť.  
+3. Na **konfigurace brány Windows Firewall pro ladění** stránky, můžete přidat nebo odebrat typ sítí, které chcete připojit ke vzdálenému ladicímu programu. Jsou povoleny pouze ty sítě, které zařízení je nyní připojen k. Musíte vybrat aspoň jednu síť.  
   
 ##  <a name="BKMK_ConnectVS"></a> Konfigurace projektu Visual Studio pro vzdálené ladění  
  Zadáte vzdáleného zařízení pro připojení k ve vlastnostech projektu. Postup se liší v závislosti na programovacím jazyce. Můžete zadat název sítě vzdáleného zařízení nebo ho můžete vybrat v dialogovém okně vyberte připojení vzdáleného ladicího programu.  

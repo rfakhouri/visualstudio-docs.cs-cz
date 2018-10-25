@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4077f53008691dd1fcf6ddd07f890616bc09018
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d73ef1935f01a48d756ce39df934f3afa83c2d30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864839"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte které se zaměřují na nejdřív sestavit
 Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **– Cíl** přepnout.  
@@ -29,11 +29,11 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
   
 #### <a name="to-specify-one-initial-target"></a>Chcete-li určit jeden počáteční cíl  
   
--   Zadejte výchozí cíl v `InitialTargets` atribut `Project` elementu. Příklad:  
+- Zadejte výchozí cíl v `InitialTargets` atribut `Project` elementu. Příklad:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- Můžete zadat více než jeden počáteční cíl v `InitialTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
+  Můžete zadat více než jeden počáteční cíl v `InitialTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Chcete-li zadat více než jeden počáteční cíl  
   
@@ -46,11 +46,11 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
   
 #### <a name="to-specify-one-default-target"></a>Chcete-li zadat jeden výchozí cíl  
   
--   Zadejte výchozí cíl v `DefaultTargets` atribut `Project` elementu. Příklad:  
+- Zadejte výchozí cíl v `DefaultTargets` atribut `Project` elementu. Příklad:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- Můžete zadat více než jeden výchozí cíl v `DefaultTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
+  Můžete zadat více než jeden výchozí cíl v `DefaultTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>Chcete-li zadat více než jeden výchozí cíl  
   

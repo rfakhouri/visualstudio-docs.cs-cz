@@ -9,12 +9,12 @@ description: Další informace o předplatném školení Datacampu součástí v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863904"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -27,15 +27,15 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici Datacampu výhoda v kategorii "Vývoj Professional" a klikněte na **aktivovat**.
-    > [!div class="mx-imgBorder"]
-    > ![Výhoda Datacampu dlaždice](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Výhoda Datacampu dlaždice](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. Na stránce Datacampu můžete vytvořit nový účet.  Můžete nastavit zadejte e-mailovou adresu a heslo a přihlaste se pomocí existujících účtů z Facebooku, LinkedIn a Google.  Jakmile jste zadali přihlašovací údaje, klikněte na tlačítko **Začínáme**.
-    > [!div class="mx-imgBorder"]
-    > ![Vytvořit nový účet Datacampu](_img\vs-datacamp\vs-datacamp-create-account.png)
-
-    > [!NOTE]
-    > Když začnete vytvářet svůj účet, může zobrazit následující chybová zpráva: "zpráva JEJDA!  Svůj propagační kód je neplatná nebo vypršela její platnost."  K tomu dochází, protože když se vytvoří svůj propagační kód, jeho platnost vyprší po několika minutách.  Pokud se zobrazí tato zpráva, jednoduše vrátit [výhody](https://my.visualstudio.com/benefits) stránky a klikněte na **aktivovat** odkaz na dlaždici Datacampu výhodu.
+   > [!div class="mx-imgBorder"]
+   > ![Vytvořit nový účet Datacampu](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > Když začnete vytvářet svůj účet, může zobrazit následující chybová zpráva: "zpráva JEJDA!  Svůj propagační kód je neplatná nebo vypršela její platnost."  K tomu dochází, protože když se vytvoří svůj propagační kód, jeho platnost vyprší po několika minutách.  Pokud se zobrazí tato zpráva, jednoduše vrátit [výhody](https://my.visualstudio.com/benefits) stránky a klikněte na **aktivovat** odkaz na dlaždici Datacampu výhodu.
 
 4. Po vytvoření účtu můžete výuky.  Mezi možnosti patří:
     - Učení R pro datové vědy
@@ -43,28 +43,30 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
     - Rozvíjet vaše dovednosti datové vědy
 
 
-    Stačí klikněte na vaše vybrané cesty, abyste mohli začít.
-    > [!div class="mx-imgBorder"]
-    > ![Zvolte cestu Datacampu](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
+Just click on your chosen path to get started.
+> [!div class="mx-imgBorder"]
+> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
 
 5. Po zvolení cesty, můžete upřesnit vaše výuky tak, že vyberete cíl.  Například pokud jste zvolili cesty "Vývoj vaše Data Science znalostí", zobrazí se následující možnosti. Zvolte možnost, nebo klikněte na tlačítko **nejsem si jistý.  Zobrazit všechny kariéry** vytvořit širší cestu.
-    > [!div class="mx-imgBorder"]
-    > ![Dovednosti Datacampu datové vědy](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![Dovednosti Datacampu datové vědy](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Na základě cesty a možnosti, které jste vybrali, zobrazí se vám výběr stopy kariéru.  Klikněte na **zapsat** tlačítko pro sledování podle vašeho výběru.
-    > [!div class="mx-imgBorder"]
-    > ![Sledování Datacampu kariéru](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![Sledování Datacampu kariéru](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. Po registraci do vaší sledování se otevře první kurz v stopy.  Zobrazí se vám kurz vysvětlující, jak pracovat s kurz, včetně navigace a dokončení kurzu cvičení.
 
-    > [!div class="mx-imgBorder"]
-    > ![Začínáme se službou Datacampu](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![Začínáme se službou Datacampu](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí navštívit [ http://www.datacamp.com ](http://www.datacamp.com)a přihlaste se.  Zobrazí se řídicí panel a můžete pokračovat v vaše právo školení, kde pozastaveno. Stačí kliknout **dál sledovat**.
 
 > [!div class="mx-imgBorder"]   
-> ![Datacampu pokračovat školení](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![Datacampu pokračovat školení](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Způsobilost
 

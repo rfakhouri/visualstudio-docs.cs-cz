@@ -9,12 +9,12 @@ description: Přihlaste se k odběru předplatného MSDN Magazine součástí va
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65c1b2a37c11c70ab8cc8f67be21bc3ef9a35d60
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941266"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 
@@ -31,23 +31,24 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 2.  Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na tlačítko **přístup**.
 
 ### <a name="printed-edition"></a>Tištěné vydání
-1.  Vaše předplatné MSDN Magazine dostávat, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2.  Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na **přihlásit k odběru** na dlaždici předplatné MSDN Magazine. (Klikněte na "!" v pravém dolním rohu dlaždice pro přístup k digitální verzi.)
-    > [!div class="mx-imgBorder"]
-    > ![Dlaždice MSDN Magazine výhody](_img\vs-msdn\vs-msdn-tile.png)
+1. Vaše předplatné MSDN Magazine dostávat, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+2. Vyhledejte dlaždici Zpravodaj MSDN Magazine v části vývoj Professional a klikněte na **přihlásit k odběru** na dlaždici předplatné MSDN Magazine. (Klikněte na "!" v pravém dolním rohu dlaždice pro přístup k digitální verzi.)
+   > [!div class="mx-imgBorder"]
+   > ![Dlaždice MSDN Magazine výhody](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  Na stránce MSDN Magazine. Vyberte typ své upřednostňované předplatného.  Můžete zvolit digitální edice zdarma, bez ohledu na to, kde bydlíte.  Tištěná verze je k dispozici zdarma do oblasti USA.  Přesouvání poplatky za tištěné verze odeslané na adresy mimo USA.
-    > [!div class="mx-imgBorder"]
-    > ![Předplatná MSDN Magazine výhody](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. Na stránce MSDN Magazine. Vyberte typ své upřednostňované předplatného.  Můžete zvolit digitální edice zdarma, bez ohledu na to, kde bydlíte.  Tištěná verze je k dispozici zdarma do oblasti USA.  Přesouvání poplatky za tištěné verze odeslané na adresy mimo USA.
+   > [!div class="mx-imgBorder"]
+   > ![Předplatná MSDN Magazine výhody](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  Zadejte kontaktní údaje a klikněte na **odeslat**.  (Verze magazine, kterou jste vybrali se zobrazí v části předplatné Magazine.  Pokud jste zvolili tištěné vydání, bude první možnost číst **Ano!  Chci dostávat časopisu MSDN Magazine (12 problémy) 1 rok zdarma**.)
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine výhodu profilu](_img\vs-msdn\vs-msdn-profile.png)
+4. Zadejte kontaktní údaje a klikněte na **odeslat**.  (Verze magazine, kterou jste vybrali se zobrazí v části předplatné Magazine.  Pokud jste zvolili tištěné vydání, bude první možnost číst **Ano!  Chci dostávat časopisu MSDN Magazine (12 problémy) 1 rok zdarma**.)
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine výhodu profilu](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  To je všechno je to.  V závislosti na tom, kterou verzi magazine vyberete buď zahájíte příjem tištěné časopisy nebo e-mailů s odkazy na online verzích s další verzí.  Užijte si!
+5. To je všechno je to.  V závislosti na tom, kterou verzi magazine vyberete buď zahájíte příjem tištěné časopisy nebo e-mailů s odkazy na online verzích s další verzí.  Užijte si!
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> |Tištěné vydání       |  Ne.  K dispozici pro nové předplatitele pouze          |

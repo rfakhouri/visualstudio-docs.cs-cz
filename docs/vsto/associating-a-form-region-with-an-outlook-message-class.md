@@ -18,22 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6f48be189b7d7a35f713c224553dc9ad7c8a5c3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891996"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
-  Můžete určit, které aplikace Microsoft Office Outlook položky zobrazení oblasti formuláře ve přidružení oblasti formuláře k třídě zpráv každé položky. Například pokud se chcete připojit oblasti formuláře k dolnímu okraji položku e-mailu, můžete přidružit oblasti formuláře s `IPM.Note` třída zprávy.  
+  Můžete určit oblast formuláře zobrazit podle přidružení oblasti formuláře k třídě zpráv každé položky, položky, které aplikace Microsoft Office Outlook. Například pokud se chcete připojit k dolnímu okraji položky pošty oblasti formuláře, můžete přidružit oblasti formuláře s `IPM.Note` třída zprávy.  
   
- Přidružení oblasti formuláře s třídou zprávy, zadat název třídy zpráv v **nové oblasti formuláře aplikace Outlook** průvodce nebo použít atribut třídu objektů factory oblasti formuláře.  
+ Přidružení oblasti formuláře s třídou zprávu, zadejte název třídy zpráv v **novou oblast formuláře Outlooku** průvodce nebo použít atribut pro třídu objektů factory oblasti formuláře.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="understand-outlook-message-classes"></a>Pochopení tříd zpráv aplikace Outlook  
- Třídě zpráv aplikace Outlook identifikuje typ položky aplikace Outlook. Následující tabulka uvádí tyto osm standardní typy položek a jejich názvy tříd zprávy.  
+## <a name="understand-outlook-message-classes"></a>Pochopení třídy zpráv Outlooku  
+ K třídě zpráv aplikace Outlook identifikuje typ položky aplikace Outlook. V následující tabulce jsou uvedeny typy osm standardních položek a jejich názvy tříd zpráv.  
   
 |Typ položky aplikace Outlook|Název třídy zpráv|  
 |-----------------------|------------------------|  
@@ -45,73 +45,73 @@ ms.locfileid: "34268227"
 |PostItem|`IPM.Post` Nebo `IPM.Post.RSS`|  
 |TaskItem|`IPM.Task`|  
   
- Můžete také zadat názvy tříd vlastní zpráv. Třídy vlastní zprávu při identifikaci vlastních formulářích, které definujete v aplikaci Outlook.  
+ Můžete také zadat názvy vlastní třídy zpráv. Vlastní třídy zpráv identifikovat vlastních formulářů, které definujete v Outlooku.  
   
 > [!NOTE]  
->  Pro nahrazení a oblastí formulářů nahradit všechny můžete zadejte nový název třídy vlastní zprávu. Není nutné používat název třídy zpráva existující vlastní formulář. Název třídy vlastní zprávy musí být jedinečný. Zajistěte, aby byl název jedinečný jedním ze způsobů je použít zásady vytváření názvů podobný následujícímu: \< *StandardMessageClassName*>.\< *Společnosti*>.\< *MessageClassName*> (například: `IPM.Note.Contoso.MyMessageClass`).  
+>  Pro nahrazení a nahradit všechno formuláře oblasti můžete zadat nový název třídy vlastní zprávu. Nemusíte použít název třídy zpráv existujícího vlastního formuláře. Název třídy vlastní zprávu musí být jedinečný. Zajistěte, aby byl název jedinečný jedním ze způsobů je použít zásady vytváření názvů podobný následujícímu: \< *StandardMessageClassName*>.\< *Společnosti*>.\< *MessageClassName*> (například: `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook  
- Přidružení oblasti formuláře s třídou zprávy dvěma způsoby:  
+ Přidružení oblasti formuláře k třídu zpráv dvěma způsoby:  
   
--   Použití **nové oblasti formuláře aplikace Outlook** průvodce.  
+-   Použití **novou oblast formuláře Outlooku** průvodce.  
   
 -   Použití třídy atributů.  
   
-### <a name="use-the-new-outlook-form-region-wizard"></a>Použijte Průvodce novou oblasti formuláře aplikace Outlook  
- Na poslední stránce **nové oblasti formuláře aplikace Outlook** průvodce, můžete vybrat tříd standardní zpráv a zadejte názvy tříd vlastní zpráv, které chcete přidružit k oblasti formuláře.  
+### <a name="use-the-new-outlook-form-region-wizard"></a>Pomocí Průvodce novou oblast formuláře Outlooku  
+ Na poslední stránce **novou oblast formuláře Outlooku** průvodce, můžete vybrat standardní třídy zpráv a zadejte název vlastní třídy zpráv, které chcete přidružit k oblasti formuláře.  
   
- Standardní zprávy třídy nejsou k dispozici, pokud oblasti formuláře je určena k nahrazení celého formuláře nebo výchozí stránka formuláře. Můžete zadat názvy tříd standardní zprávy pouze pro formuláře přidá novou stránku do formuláře nebo které se připojují k dolnímu okraji formuláře. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplněk aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ Standardní třídy zpráv nejsou k dispozici, pokud se oblast formuláře je určena k nahrazení celý formulář nebo výchozí stránku formuláře. Můžete zadat názvy tříd standardní zprávu pouze u formulářů, přidejte novou stránku do formuláře nebo které jsou připojeny k dolní části formuláře. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
- Chcete-li zahrnout jeden nebo více tříd, vlastní zprávu, zadejte jejich názvy v **které třídy vlastní zpráva se zobrazí tato oblasti formuláře?** pole.  
+ Chcete-li zahrnout jednu nebo více tříd vlastní zprávu, zadejte jména manažerů v **které vlastní třídy zpráv budou zobrazovat tuto oblast formuláře?** pole.  
   
  Názvy, které zadáte, musí splňovat následující pokyny:  
   
--   Použít zpráva plně kvalifikovaný název třídy (například: "IPM. Note.Contoso").  
+- Použijte název plně kvalifikované třídě (například: "IPM. Note.Contoso").  
   
--   K oddělení více názvy tříd zprávy použijte středníky.  
+- K oddělení názvů tříd zpráv více, použijte středníky.  
   
--   Nezahrnovat standardní tříd zpráv aplikace Outlook, jako je například "IPM. Poznámka:"nebo"IPM. Obraťte se na". Zahrňte pouze vlastní zprávu třídy, jako je například "IPM. Note.Contoso".  
+- Nezahrnují standardní třídy zpráv Outlooku, jako je například "IPM. Poznámka:"nebo"IPM. Obraťte se na". Zahrňte pouze vlastní třídy zpráv, jako je například "IPM. Note.Contoso".  
   
--   Nezadávejte třídu základní zpráv samostatně (například: "IPM").  
+- Nezadávejte třída základní zprávy samostatně (například: "IPM").  
   
--   Není delší než 256 znaků pro každý název třídy zpráv.  
+- Není delší než 256 znaků pro každý název třídy zpráv.  
   
- **Nové oblasti formuláře aplikace Outlook** Průvodce ověří formát váš vstup, po kliknutí na tlačítko **Dokončit**.  
+  **Novou oblast formuláře Outlooku** Průvodce ověří formát svůj vstup. po kliknutí na **Dokončit**.  
   
 > [!NOTE]  
->  **Nové oblasti formuláře aplikace Outlook** průvodce není ověřte, zda jsou názvy tříd zprávy, které zadáte správnou nebo platný.  
+>  **Novou oblast formuláře Outlooku** Průvodce neověřuje, že jsou názvy tříd zpráv, které poskytnete správný nebo platný.  
   
- Po dokončení průvodce, **nové oblasti formuláře aplikace Outlook** průvodce platí atributy pro třídu oblasti formuláře, která obsahovat názvy tříd zadané zprávy. Tyto atributy můžete použít také ručně.  
+ Po dokončení průvodce **novou oblast formuláře Outlooku** Průvodce použije atributy do třídy oblasti formuláře, která obsahují názvy tříd zadané zprávy. Tyto atributy můžete použít také ručně.  
   
-### <a name="apply-class-attributes"></a>Použití atributů – třída  
- Po dokončení, budete moct přidružit oblasti formuláře k třídě zpráv aplikace Outlook **nové oblasti formuláře aplikace Outlook** průvodce. K tomu Použíjte atributy pro třídu objektů factory oblasti formuláře.  
+### <a name="apply-class-attributes"></a>Použití třídy atributů  
+ Můžete přiřadit oblasti formuláře k třídě zpráv aplikace Outlook po dokončení **novou oblast formuláře Outlooku** průvodce. K tomuto účelu Použíjte atributy do třídy objekt pro vytváření oblasti formuláře.  
   
- Následující příklad ukazuje dva <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> atributy, které byly použity na třídu objektu pro vytváření oblasti formuláře s názvem `myFormRegion`. První atribut přidruží oblasti formuláře třída standardní zprávy pro formulář zprávy e-mailu. Druhý atribut přidruží oblasti formuláře třídy vlastní zprávu s názvem `IPM.Task.Contoso`.  
+ Následující příklad ukazuje dva <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> atributy, které se použily třídu objekt pro vytváření oblasti formuláře s názvem `myFormRegion`. První atribut přidruží oblasti formuláře s třídou standardní zprávu pro formulář zprávy e-mailu. Druhý atribut přidruží oblasti formuláře k vlastní třídu zpráv s názvem `IPM.Task.Contoso`.  
   
  [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
  [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]  
   
- Atributy musí dodržovat následující pokyny:  
+ Atributy musí splňovat následující pokyny:  
   
--   Pro třídy vlastní zprávu, použijte zpráva plně kvalifikovaný název třídy (například: "IPM. Note.Contoso").  
+- Pro vlastní třídy zpráv, použijte název třídy úplného zprávy (třeba: "IPM. Note.Contoso").  
   
--   Nezadávejte třídu základní zpráv samostatně (například: "IPM").  
+- Nezadávejte třída základní zprávy samostatně (například: "IPM").  
   
--   Není delší než 256 znaků pro každý název třídy zpráv.  
+- Není delší než 256 znaků pro každý název třídy zpráv.  
   
--   Pokud oblasti formuláře nahradí celý formulář nebo výchozí stránka s formuláře nebudou obsahovat názvy tříd standardní zpráv. Můžete zadat názvy tříd standardní zprávy pouze pro formuláře přidá novou stránku do formuláře nebo které se připojují k dolnímu okraji formuláře. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplněk aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- Pokud se oblast formuláře nahradí celý formulář nebo výchozí stránku formuláře nezahrnují názvy standardní třídy zpráv. Můžete zadat názvy tříd standardní zprávu pouze u formulářů, přidejte novou stránku do formuláře nebo které jsou připojeny k dolní části formuláře. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
- Visual Studio ověří formát názvy tříd zprávy při sestavování projektu.  
+  Visual Studio ověří formát názvů tříd zpráv při sestavování projektu.  
   
 > [!NOTE]  
->  Visual Studio není ověřte, zda jsou názvy tříd zprávy, které zadáte správnou nebo platný.  
+>  Visual Studio neověřuje, že jsou názvy tříd zpráv, které poskytnete správný nebo platný.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)   
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
- [Návod: Návrh oblasti formuláře aplikace Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Pokyny k vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Přehled tříd název formuláře a zpráv](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Jak spolupracují formulářů aplikace Outlook a položek](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Název formuláře a zpráva přehled tříd](http://msdn.microsoft.com/library/office/ff867629.aspx)   
+ [Jak spolu fungují formulářů aplikace Outlook a položek](http://msdn.microsoft.com/library/office/ff869706.aspx)  
   
   
