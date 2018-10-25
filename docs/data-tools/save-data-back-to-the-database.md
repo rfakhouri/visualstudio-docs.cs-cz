@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916904"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 
@@ -50,7 +50,7 @@ Pokud jste obeznámeni s objekty TableAdapter, můžete přejít přímo na jedn
 |[Hierarchická aktualizace](../data-tools/hierarchical-update.md)|Provádění aktualizací v prvku dataset pomocí dvou nebo více souvisejících tabulek|
 |[Zpracování výjimky souběžnosti](../data-tools/handle-a-concurrency-exception.md)|Způsob zpracování výjimek, když dva uživatelé pokoušejí změnit na stejná data v databázi ve stejnou dobu|
 |[Postupy: ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)|Jak k uložení dat v transakci pomocí systému. Obor názvů transakcí a objekt TransactionScope|
-|[Ukládání dat do transakce](../data-tools/save-data-in-a-transaction.md)|Návod, který vytvoří aplikaci Windows Forms k předvedení ukládání dat do databáze v transakci|
+|[Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)|Návod, který vytvoří aplikaci Windows Forms k předvedení ukládání dat do databáze v transakci|
 |[Uložení dat do databáze (více tabulek)](../data-tools/save-data-to-a-database-multiple-tables.md)|Postup úpravy záznamů a uložit změny do několika tabulek zpět do databáze|
 |[Uložení dat z objektu do databáze](../data-tools/save-data-from-an-object-to-a-database.md)|Jak předávat data z objektu, který není v datové sadě k databázi pomocí TableAdapter dbdirect – metody|
 |[Ukládání dat pomocí metod TableAdapter DBDirect](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak odesílat dotazy SQL přímo k databázi pomocí TableAdapter|
@@ -73,21 +73,21 @@ Aktualizujete obsah datové sady pomocí *sloučení* ji jinému objektu dataset
 Při slučování datové sady, můžete předat logický argument (`preserveChanges`), které sděluje, <xref:System.Data.DataSet.Merge%2A> – metoda, jestli se má zachovat existující úpravy v cílové datové sadě. Datové sady spravovat více verzí záznamy, proto je důležité si pamatovat, že se sloučení více než jednu verzi záznamy. Následující tabulka ukazuje, jak je sloučen záznam v dvě datové sady:
 
 |DataRowVersion|Cílový dataset|Zdrojová datová sada|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Původní|James Wilson|James C. Wilson|
 |aktuální|Jan Wilson|James C. Wilson|
 
 Volání <xref:System.Data.DataSet.Merge%2A> metoda v předchozí tabulce s `preserveChanges=false targetDataset.Merge(sourceDataset)` má za následek následující data:
 
 |DataRowVersion|Cílový dataset|Zdrojová datová sada|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Původní|James C. Wilson|James C. Wilson|
 |aktuální|James C. Wilson|James C. Wilson|
 
 Volání <xref:System.Data.DataSet.Merge%2A> metodu s `preserveChanges = true targetDataset.Merge(sourceDataset, true)` má za následek následující data:
 
 |DataRowVersion|Cílový dataset|Zdrojová datová sada|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Původní|James C. Wilson|James C. Wilson|
 |aktuální|Jan Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ Informace o změnách v datové sadě je udržován dvěma způsoby: označením
 Následující tabulka obsahuje podrobnosti o možných hodnot <xref:System.Data.DataRowState> výčtu:
 
 |Hodnotou DataRowState|Popis|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Řádek byl přidán jako položku, která má <xref:System.Data.DataRowCollection>. (Řádek v tomto stavu nemá odpovídající původní verzi, protože neexistovala při poslední <xref:System.Data.DataRow.AcceptChanges%2A> byla volána metoda).|
 |<xref:System.Data.DataRowState.Deleted>|Řádek byl odstraněných položek prostřednictvím <xref:System.Data.DataRow.Delete%2A> z <xref:System.Data.DataRow> objektu.|
 |<xref:System.Data.DataRowState.Detached>|Řádek byl vytvořen, ale není součástí žádné <xref:System.Data.DataRowCollection>. A <xref:System.Data.DataRow> objektu je v tomto stavu ihned po jeho vytvoření, než byl přidán do kolekce, a poté, co se odebral z kolekce.|
@@ -142,7 +142,7 @@ Datové sady spravovat více verzí záznamy. <xref:System.Data.DataRowVersion> 
 Následující tabulka obsahuje podrobnosti o možných hodnot <xref:System.Data.DataRowVersion> výčtu:
 
 |Hodnota DataRowVersion|Popis|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Aktuální verze záznamu obsahuje všechny změny provedené u záznamu od posledního <xref:System.Data.DataRow.AcceptChanges%2A> byla volána. Pokud řádek byl odstraněn, neexistuje žádná aktuální verze.|
 |<xref:System.Data.DataRowVersion.Default>|Výchozí hodnota záznamu, tak jak je definoval zdroj schématu nebo dat datové sady.|
 |<xref:System.Data.DataRowVersion.Original>|Původní verze záznamu je kopií záznamu, jako bylo, že byly potvrzeny poslední změny času v datové sadě. V praxi to je obvykle verze záznamu jako přečtená ze zdroje dat.|
@@ -276,7 +276,7 @@ V příkazu UPDATE musíte zadat oba nové hodnoty (ty, které se zapíšou do z
 
 ## <a name="see-also"></a>Viz také:
 
-- [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Vytvoření a konfigurace objektů TableAdapter](create-and-configure-tableadapters.md)
 - [Aktualizace dat pomocí objektu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

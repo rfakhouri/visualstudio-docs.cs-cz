@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877644"
 ---
 # <a name="editing-tableadapters"></a>TableAdapters – úpravy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ Někdy můžete chtít změna schématu tabulky adaptéru. K tomuto účelu upra
 ## <a name="create-new-stored-procedures"></a>Vytvořit nové uložené procedury  
  Tato část vysvětluje, jak dokončit **Průvodce nastavením dotazu TableAdapter** při výběru **vytvořit nové uložené procedury** možnost.  
   
-1.  V **generovat uložené procedury** stránky, zadejte příkaz jazyka SQL k provedení při volání uložené procedury.  
+1. V **generovat uložené procedury** stránky, zadejte příkaz jazyka SQL k provedení při volání uložené procedury.  
   
-    > [!NOTE]
-    >  Průvodce poskytuje přístup k **Tvůrce dotazů**, vizuální nástroj pro vytváření příkazů jazyka SQL. Pokud chcete soubor otevřít, klikněte na tlačítko **Tvůrce dotazů** tlačítko.  
+   > [!NOTE]
+   >  Průvodce poskytuje přístup k **Tvůrce dotazů**, vizuální nástroj pro vytváření příkazů jazyka SQL. Pokud chcete soubor otevřít, klikněte na tlačítko **Tvůrce dotazů** tlačítko.  
   
-2.  V **vytvořit úložné procedury** stránce, postupujte takto:  
+2. V **vytvořit úložné procedury** stránce, postupujte takto:  
   
-    1.  Zadejte název pro novou úložnou proceduru.  
+   1. Zadejte název pro novou úložnou proceduru.  
   
-    2.  Určete, zda chcete vytvořit uloženou proceduru v podkladové databázi.  
+   2. Určete, zda chcete vytvořit uloženou proceduru v podkladové databázi.  
   
-        > [!NOTE]
-        >  Možnost vytvořit uloženou proceduru v databázi se určuje podle nastavení zabezpečení pro konkrétní databáze.  
+      > [!NOTE]
+      >  Možnost vytvořit uloženou proceduru v databázi se určuje podle nastavení zabezpečení pro konkrétní databáze.  
   
-     **Zobrazit výsledky průvodce** stránka zobrazuje výsledky vytvoření dotazu TableAdapter. Pokud průvodce zjistí problémy, tato stránka obsahuje informace o této chybě.  
+      **Zobrazit výsledky průvodce** stránka zobrazuje výsledky vytvoření dotazu TableAdapter. Pokud průvodce zjistí problémy, tato stránka obsahuje informace o této chybě.  
   
 ## <a name="use-existing-stored-procedures"></a>Použití stávajících uložených procedur  
  Tato část vysvětluje, jak dokončit **Průvodce nastavením dotazu TableAdapter** při výběru **použití stávajících uložených procedur** možnost.  
