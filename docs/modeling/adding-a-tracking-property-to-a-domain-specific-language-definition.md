@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898717"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 
@@ -30,29 +30,30 @@ Například v nástroje jazyka specifického pro doménu (DSL Tools), zobrazovan
 
 V tomto podrobném návodu vytvoření jazyka specifického pro doménu (DSL), který má Namespace sledování vlastnost, která má výchozí hodnotu na základě Namespace výchozí vlastnosti modelu. Další informace o sledování vlastnosti najdete v tématu [definování sledování vlastnosti](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   Podpora nástroje DSL sledování popisovače vlastnosti. Návrhář DSL však nelze použít pro přidání vlastnosti sledování do jazyka. Proto je nutné přidat vlastní kód musel definovat a implementovat vlastnosti sledování.
+- Podpora nástroje DSL sledování popisovače vlastnosti. Návrhář DSL však nelze použít pro přidání vlastnosti sledování do jazyka. Proto je nutné přidat vlastní kód musel definovat a implementovat vlastnosti sledování.
 
- Vlastnosti sledování do má dva stavy: sledování a aktualizované uživatelem. Sledování vlastnosti mají tyto funkce:
+  Vlastnosti sledování do má dva stavy: sledování a aktualizované uživatelem. Sledování vlastnosti mají tyto funkce:
 
--   Při sledování stavu, vypočítá hodnotu vlastnosti sledování a hodnota je aktualizována tak další vlastnosti v Změna modelu.
+- Při sledování stavu, vypočítá hodnotu vlastnosti sledování a hodnota je aktualizována tak další vlastnosti v Změna modelu.
 
--   Když v aktualizovaném podle stavu uživatele, hodnota vlastnosti sledování uchovává hodnotu, která uživatel naposledy nastavit vlastnost.
+- Když v aktualizovaném podle stavu uživatele, hodnota vlastnosti sledování uchovává hodnotu, která uživatel naposledy nastavit vlastnost.
 
--   V **vlastnosti** okně **resetování** příkaz pro vlastnosti sledování je povolená jenom při vlastnost se v aktualizovaném podle stavu uživatele. **Resetování** příkaz nastaví vlastnosti sledování do sledování stavu.
+- V **vlastnosti** okně **resetování** příkaz pro vlastnosti sledování je povolená jenom při vlastnost se v aktualizovaném podle stavu uživatele. **Resetování** příkaz nastaví vlastnosti sledování do sledování stavu.
 
--   V **vlastnosti** okno, když je vlastnost sledování ve sledování stavu, jeho hodnota se zobrazí v pravidelných písma.
+- V **vlastnosti** okno, když je vlastnost sledování ve sledování stavu, jeho hodnota se zobrazí v pravidelných písma.
 
--   V **vlastnosti** okno, když je vlastnost sledování v aktualizovaném ve stavu uživatele, jeho hodnota se zobrazí tučným písmem.
+- V **vlastnosti** okno, když je vlastnost sledování v aktualizovaném ve stavu uživatele, jeho hodnota se zobrazí tučným písmem.
 
 ## <a name="prerequisites"></a>Požadavky
 
 Před zahájením tohoto návodu, je třeba nejprve nainstalovat tyto komponenty:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
@@ -718,33 +719,33 @@ Přidání kódu, který podporuje vlastní chování po načtení pro serializa
 
 Dalším krokem je sestavte a spusťte návrháře DSL v nové instanci [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , aby mohli ověřit, že vlastnosti sledování pracuje správně.
 
-1.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.
+1. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.
 
-2.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.
+2. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.
 
-     Experimentální sestavení [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] otevře **ladění** řešení, která obsahuje soubor prázdný test.
+    Experimentální sestavení [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] otevře **ladění** řešení, která obsahuje soubor prázdný test.
 
-3.  V **Průzkumníka řešení**, poklikejte na soubor Test.trackingPropertyDsl ho otevřete v návrháři a klikněte na návrhové ploše.
+3. V **Průzkumníka řešení**, poklikejte na soubor Test.trackingPropertyDsl ho otevřete v návrháři a klikněte na návrhové ploše.
 
-     Všimněte si, že v **vlastnosti** okně diagramu **výchozí Namespace** vlastnost **DefaultNamespace**a **vlastní elementy** vlastnost **0/0**.
+    Všimněte si, že v **vlastnosti** okně diagramu **výchozí Namespace** vlastnost **DefaultNamespace**a **vlastní elementy** vlastnost **0/0**.
 
-4.  Přetáhněte **ExampleElement** element z **nástrojů** na plochu diagramu.
+4. Přetáhněte **ExampleElement** element z **nástrojů** na plochu diagramu.
 
-5.  V **vlastnosti** okna pro element, vyberte **Element Namespace** vlastnost a změňte hodnotu z **DefaultNamespace** k  **OtherNamespace**.
+5. V **vlastnosti** okna pro element, vyberte **Element Namespace** vlastnost a změňte hodnotu z **DefaultNamespace** k  **OtherNamespace**.
 
-     Všimněte si, že hodnota **Element Namespace** se nyní zobrazí tučným písmem.
+    Všimněte si, že hodnota **Element Namespace** se nyní zobrazí tučným písmem.
 
-6.  V **vlastnosti** okna, klikněte pravým tlačítkem na **Element Namespace**a potom klikněte na tlačítko **resetování**.
+6. V **vlastnosti** okna, klikněte pravým tlačítkem na **Element Namespace**a potom klikněte na tlačítko **resetování**.
 
-     Hodnota vlastnosti byla změněna na **DefaultNamespace**, a hodnota se zobrazí v pravidelných písma.
+    Hodnota vlastnosti byla změněna na **DefaultNamespace**, a hodnota se zobrazí v pravidelných písma.
 
-     Klikněte pravým tlačítkem na **Element Namespace** znovu. **Resetování** příkaz je teď zakázaná, protože vlastnost je aktuálně ve stavu sledování.
+    Klikněte pravým tlačítkem na **Element Namespace** znovu. **Resetování** příkaz je teď zakázaná, protože vlastnost je aktuálně ve stavu sledování.
 
-7.  Přetáhněte další **ExampleElement** z **nástrojů** na plochu diagramu a změňte jeho **Element Namespace** k **OtherNamespace**.
+7. Přetáhněte další **ExampleElement** z **nástrojů** na plochu diagramu a změňte jeho **Element Namespace** k **OtherNamespace**.
 
-8.  Klikněte na návrhové ploše.
+8. Klikněte na návrhové ploše.
 
-     V **vlastnosti** okno pro diagram hodnotu **vlastní elementy** je nyní **1/2**.
+    V **vlastnosti** okno pro diagram hodnotu **vlastní elementy** je nyní **1/2**.
 
 9. Změna **výchozí Namespace** diagramu z **DefaultNamespace** k **obor NewNamespace**.
 

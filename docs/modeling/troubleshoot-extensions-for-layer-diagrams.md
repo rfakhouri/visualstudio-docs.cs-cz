@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899640"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Řešení potíží s rozšířeními pro diagramy závislostí
 
@@ -25,22 +25,22 @@ Toto téma řeší některé problémy, které se mohou vyskytnout při vytvář
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Po stisknutí klávesy F5 pro ladění mého rozšíření, mé příkazy, obslužné rutiny gesta, rozšíření ověřování nebo vlastní vlastnosti nejsou zobrazeny na diagramů závislostí v experimentální instanci sady Visual Studio
 
-1.  Otevřete řešení rozšíření v experimentální instanci sady Visual Studio a na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.
+1. Otevřete řešení rozšíření v experimentální instanci sady Visual Studio a na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.
 
-2.  Stisknutím klávesy **F5** nebo **CTRL + F5** spustit experimentální instanci sady Visual Studio. Otevřete diagram závislostí a otestujte rozšíření.
+2. Stisknutím klávesy **F5** nebo **CTRL + F5** spustit experimentální instanci sady Visual Studio. Otevřete diagram závislostí a otestujte rozšíření.
 
- V případě potřeby, pokračujte dalším postupem.
+   V případě potřeby, pokračujte dalším postupem.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Běží stará verze mého rozšíření.
 
-1.  Ujistěte se, že je spuštěna žádná experimentální instance sady Visual Studio.
+1. Ujistěte se, že je spuštěna žádná experimentální instance sady Visual Studio.
 
-2.  Odstraňte následující složku: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [verze]
+2. Odstraňte následující složku: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [verze]
 
-    > [!NOTE]
-    > % LocalAppData % je obvykle *DriveName*: \Users\\*uživatelské jméno*\AppData\Local.
+   > [!NOTE]
+   > % LocalAppData % je obvykle *DriveName*: \Users\\*uživatelské jméno*\AppData\Local.
 
- V případě potřeby, pokračujte dalším postupem.
+   V případě potřeby, pokračujte dalším postupem.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Zobrazí se stará verze mých výsledků ověření nebo má metoda ověřování není volána.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897872"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ Pomocí nástroje využití GPU ve výkon sady Visual Studio a centra diagnostik
 ## <a name="requirements"></a>Požadavky  
  Následují požadavky na použití nástroje využití GPU, kromě požadavků na diagnostiky grafiky.  
   
--   GPU a ovladače, které podporují instrumentace nezbytné časování.  
+- GPU a ovladače, které podporují instrumentace nezbytné časování.  
   
-    > [!NOTE]
-    >  Další informace o podporovaný hardware a ovladačů najdete v tématu [hardwarem a ovladači podporují](#hwsupport) na konci tohoto dokumentu.  
+  > [!NOTE]
+  >  Další informace o podporovaný hardware a ovladačů najdete v tématu [hardwarem a ovladači podporují](#hwsupport) na konci tohoto dokumentu.  
   
- Další informace o požadavcích diagnostiky grafiky, naleznete v tématu [Začínáme](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Další informace o požadavcích diagnostiky grafiky, naleznete v tématu [Začínáme](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Pomocí nástroje využití GPU  
  Při spuštění aplikace v systému pomocí nástroje využití GPU Visual Studio vytvoří relaci diagnostiky grafů souhrnné informace o využití GPU v reálném čase a vykreslování výkonu vaší aplikace.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Chcete-li spustit nástroj využití GPU:  
   
-1.  V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: stiskněte kombinaci kláves Alt + F2).  
+1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: stiskněte kombinaci kláves Alt + F2).  
   
-2.  V Centru pro výkon a diagnostiku, zaškrtněte políčko vedle položky **využití GPU**. Volitelně můžete zaškrtnutím políčka vedle jiné nástroje, které vás zajímají. Můžete spustit několik výkonu a diagnostické nástroje souběžně, což umožňuje získat komplexnější přehled o výkonu vaší aplikace.  
+2. V Centru pro výkon a diagnostiku, zaškrtněte políčko vedle položky **využití GPU**. Volitelně můžete zaškrtnutím políčka vedle jiné nástroje, které vás zajímají. Můžete spustit několik výkonu a diagnostické nástroje souběžně, což umožňuje získat komplexnější přehled o výkonu vaší aplikace.  
   
-     ![Zvolte diagnostické nástroje, které chcete použít. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Zvolte diagnostické nástroje, které chcete použít. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  Ne všechny výkonu a diagnostické nástroje je možné ve stejnou dobu.  
+   > [!NOTE]
+   >  Ne všechny výkonu a diagnostické nástroje je možné ve stejnou dobu.  
   
-3.  Zvolte modrá **Start** tlačítko v dolní části rozcestníku výkon a Diagnostika ke spouštění vaší aplikace v nabídce Nástroje, které jste vybrali.  
+3. Zvolte modrá **Start** tlačítko v dolní části rozcestníku výkon a Diagnostika ke spouštění vaší aplikace v nabídce Nástroje, které jste vybrali.  
   
- Souhrnné informace, které se zobrazí v reálném čase zahrnuje časování snímků, frekvence snímků a využití GPU. Všechny tyto údaje vykreslovacích nezávisle na sobě, ale použít obecného časového měřítka, takže můžete snadno se týkají mezi nimi.  
+   Souhrnné informace, které se zobrazí v reálném čase zahrnuje časování snímků, frekvence snímků a využití GPU. Všechny tyto údaje vykreslovacích nezávisle na sobě, ale použít obecného časového měřítka, takže můžete snadno se týkají mezi nimi.  
   
- **Rámec doba (ms)** a **snímků za sekundu (FPS)** grafy obsahují dva červené, vodorovných čar, který cílí výkonu představují 30 a 60 snímků za sekundu. V **rámec čas** grafu překročení cíle výkonnosti po graf pod řádkem a chybějící ho po grafu nad řádek vaší aplikace. Počet snímků za druhý graf je opakem – vaše aplikace je vyšší než cílový výkon při graf je vyšší než řádku a chybějící ho po graf pod řádkem. Tyto grafy se používají především, chcete-li získat základní představu o výkonu vaší aplikace a k identifikaci slow-downs, které můžete chtít prozkoumat – například, náhlému poklesu v snímkovou frekvenci nebo špička využití GPU.  
+   **Rámec doba (ms)** a **snímků za sekundu (FPS)** grafy obsahují dva červené, vodorovných čar, který cílí výkonu představují 30 a 60 snímků za sekundu. V **rámec čas** grafu překročení cíle výkonnosti po graf pod řádkem a chybějící ho po grafu nad řádek vaší aplikace. Počet snímků za druhý graf je opakem – vaše aplikace je vyšší než cílový výkon při graf je vyšší než řádku a chybějící ho po graf pod řádkem. Tyto grafy se používají především, chcete-li získat základní představu o výkonu vaší aplikace a k identifikaci slow-downs, které můžete chtít prozkoumat – například, náhlému poklesu v snímkovou frekvenci nebo špička využití GPU.  
   
- Při spouštění vaší aplikace v pomocí nástroje využití GPU se relace diagnostiky taky shromažďuje podrobné informace o událostí grafiky, které byly spouštěny na GPU. Tyto informace slouží ke generování podrobnější sestavu o tom, jak vaše aplikace využívá hardware. Vzhledem k tomu, že tato sestava trvá nějakou dobu ke generování ze shromážděných informací, je k dispozici pouze po dokončení shromažďování údajů o informace diagnostickou relaci.  
+   Při spouštění vaší aplikace v pomocí nástroje využití GPU se relace diagnostiky taky shromažďuje podrobné informace o událostí grafiky, které byly spouštěny na GPU. Tyto informace slouží ke generování podrobnější sestavu o tom, jak vaše aplikace využívá hardware. Vzhledem k tomu, že tato sestava trvá nějakou dobu ke generování ze shromážděných informací, je k dispozici pouze po dokončení shromažďování údajů o informace diagnostickou relaci.  
   
- Když chcete podívat na výkon nebo využití vydávání lépe, zastavte shromažďování informací o výkonu, takže lze generovat sestavy.  
+   Když chcete podívat na výkon nebo využití vydávání lépe, zastavte shromažďování informací o výkonu, takže lze generovat sestavy.  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>Umožňuje generovat a prohlížet sestavy využití GPU:  
   
-1.  V dolní části okna diagnostické relace, zvolte **zastavit shromažďování** propojení nebo stisknutím klávesy **Zastavit** v levém horním rohu.  
+1. V dolní části okna diagnostické relace, zvolte **zastavit shromažďování** propojení nebo stisknutím klávesy **Zastavit** v levém horním rohu.  
   
-     ![Shromažďování informací o časování GPU a CPU. ](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Shromažďování informací o časování GPU a CPU. ](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  V horní části sestavy vyberte oddíl jednu z grafů, které ukazuje tento problém, že který chcete prozkoumat. Výběr může být až 3 sekund; delší oddíly se zkrátí spíš na začátku.  
+2. V horní části sestavy vyberte oddíl jednu z grafů, které ukazuje tento problém, že který chcete prozkoumat. Výběr může být až 3 sekund; delší oddíly se zkrátí spíš na začátku.  
   
-     ![Příspěvek&#45;kolekce, vyberte oblast, chcete-li zobrazit podrobnosti](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Příspěvek&#45;kolekce, vyberte oblast, chcete-li zobrazit podrobnosti](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  V dolní části sestavy, zvolte **podrobnosti** odkaz v **. klikněte zde k zobrazení podrobností o využití GPU pro tento rozsah** zprávu zobrazíte podrobné časová osa vašeho výběru.  
+3. V dolní části sestavy, zvolte **podrobnosti** odkaz v **. klikněte zde k zobrazení podrobností o využití GPU pro tento rozsah** zprávu zobrazíte podrobné časová osa vašeho výběru.  
   
-     ![Příspěvek&#45;kolekce s rozsah vybraný](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Příspěvek&#45;kolekce s rozsah vybraný](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- Otevře se nový dokument s kartami, která obsahuje sestavu. Sestava využití GPU vám umožní zobrazit zahájení události grafiky na CPU, až dorazí do místa GPU a jak dlouho trvalo GPU k jeho provedení. Tyto informace pomáhají identifikovat problémová místa a příležitosti pro zvýšení paralelismu ve vašem kódu.  
+   Otevře se nový dokument s kartami, která obsahuje sestavu. Sestava využití GPU vám umožní zobrazit zahájení události grafiky na CPU, až dorazí do místa GPU a jak dlouho trvalo GPU k jeho provedení. Tyto informace pomáhají identifikovat problémová místa a příležitosti pro zvýšení paralelismu ve vašem kódu.  
   
 ## <a name="using-the-gpu-usage-report"></a>Pomocí sestavy využití GPU  
  Horní části sestavy využití GPU zobrazuje časové osy pro procesoru aktivita, aktivita vykreslování GPU a aktivitu kopírování, která GPU. Tyto časové rámce jsou rozděleny ve světle šedý, svislé pruhy, které představují impulsu VSync zobrazení; frekvence pruhy odpovídá obnovovací frekvence jednoho zobrazení (vybrali pomocí **zobrazení** rozevíracího seznamu) tato data využití GPU se shromažďovala ze. Protože zobrazení může mít vyšší obnovovací frekvence než cílový výkon vaší aplikace nemusí být 1 až 1 vztah mezi impulsu vsync a chcete, aby vaše aplikace k dosažení frekvenci snímků. Podle jeho výkonu cílové musí aplikace dokončí zpracování, provádět vykreslování a volání Present() na cílové snímkové frekvence, ale vykreslený snímek se nezobrazí až do další impulsu vsync po Present().  

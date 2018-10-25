@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893933"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Vlastnosti definice DSL
 Definovat vlastnosti DslDefinition *jazyka specifického pro doménu* definice vlastnosti, jako je například verze číslování. Vlastnosti DslDefinition se zobrazí v **vlastnosti** okně po kliknutí na otevřené oblasti diagramu v *návrháře jazyka specifického pro doménu*.
@@ -26,7 +26,7 @@ Definovat vlastnosti DslDefinition *jazyka specifického pro doménu* definice v
  DslDefinition má vlastnosti v následující tabulce:
 
 |Vlastnost|Popis|Výchozí|
-|--------------|-----------------|-------------|
+|-|-|-|
 |Modifikátor přístupu|Určuje, jestli je modifikátor přístupu pro doménovou třídu veřejný nebo interní.|public|
 |Vlastní atributy|Uživatelem definované atributy pro doménovou třídu.<br /><br /> **Poznámka:** přidat atribut, pomocí tlačítka Procházet.|\<žádné >|
 |Název společnosti|Název aktuální název společnosti v systémovém registru.|Aktuální název společnosti|

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934558"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Návrh souborů tabulky (.vsct) příkaz XML
 Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz položek pro balíček VSPackage. Příkaz položky zahrnují tlačítka, pole se seznamem, nabídky, panely nástrojů a skupiny položek příkazu. Tento článek popisuje XML souborů tabulky příkazů, jak ovlivňují příkaz položky a v nabídkách a postupy jejich vytvoření.
@@ -33,37 +33,37 @@ Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz p
 ## <a name="differences-between-ctc-and-vsct-files"></a>Rozdíly mezi soubory .ctc a .vsct
  Zatímco význam za XML – značky v *.vsct* souboru jsou stejné jako značky v nyní zastaralé *.ctc* formát souboru, jejich implementace se trochu liší:
 
--   Nové  **\<extern >** značka je, kde můžete odkazovat na jiné *.h* soubory ke kompilaci, jako je například pro tyto soubory [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nástrojů.
+- Nové  **\<extern >** značka je, kde můžete odkazovat na jiné *.h* soubory ke kompilaci, jako je například pro tyto soubory [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nástrojů.
 
--   Zatímco *.vsct* soubory podpory **/ include** příkazu, jako *.ctc* do souborů, je také nabízí novou  **\<import >** element. Rozdíl je, **/ include** přináší *všechny* informací, zatímco  **\<import >** přináší pouze názvy.
+- Zatímco *.vsct* soubory podpory **/ include** příkazu, jako *.ctc* do souborů, je také nabízí novou  **\<import >** element. Rozdíl je, **/ include** přináší *všechny* informací, zatímco  **\<import >** přináší pouze názvy.
 
--   Zatímco *.ctc* soubory vyžadují soubor hlaviček, ve kterém definujete preprocesor – direktivy, jeden není vyžadováno pro *.vsct* soubory. Místo toho umístit vaše direktivy do tabulky symbolů umístěny v  **\<Symbol >** prvky, které jsou umístěné v dolní části *.vsct* souboru.
+- Zatímco *.ctc* soubory vyžadují soubor hlaviček, ve kterém definujete preprocesor – direktivy, jeden není vyžadováno pro *.vsct* soubory. Místo toho umístit vaše direktivy do tabulky symbolů umístěny v  **\<Symbol >** prvky, které jsou umístěné v dolní části *.vsct* souboru.
 
--   *.vsct* funkce soubory  **\<Poznámka >** značky, které umožňuje vložit jakékoli informace o rádi používáte, jako jsou poznámky nebo dokonce i obrázky.
+- *.vsct* funkce soubory  **\<Poznámka >** značky, které umožňuje vložit jakékoli informace o rádi používáte, jako jsou poznámky nebo dokonce i obrázky.
 
--   Hodnoty jsou uloženy jako atributy v položce.
+- Hodnoty jsou uloženy jako atributy v položce.
 
--   Příkaz příznaky lze uložit jednotlivě nebo nad sebou.  Technologie IntelliSense, však nelze použít u skládaných příkaz příznaky. Další informace o příznaků příkazů najdete v článku [CommandFlag element](../../extensibility/command-flag-element.md).
+- Příkaz příznaky lze uložit jednotlivě nebo nad sebou.  Technologie IntelliSense, však nelze použít u skládaných příkaz příznaky. Další informace o příznaků příkazů najdete v článku [CommandFlag element](../../extensibility/command-flag-element.md).
 
--   Můžete zadat více typů, jako je například rozdělení rozevírací seznamy, combos – atd.
+- Můžete zadat více typů, jako je například rozdělení rozevírací seznamy, combos – atd.
 
--   Ověření není GUID.
+- Ověření není GUID.
 
--   Každý prvek uživatelského rozhraní obsahuje řetězec, který představuje text, který se zobrazí s ním.
+- Každý prvek uživatelského rozhraní obsahuje řetězec, který představuje text, který se zobrazí s ním.
 
--   Nadřazené je volitelný. Pokud tento parametr vynechán, hodnota *skupiny neznámý* se používá.
+- Nadřazené je volitelný. Pokud tento parametr vynechán, hodnota *skupiny neznámý* se používá.
 
--   *Ikonu* argument je nepovinný.
+- *Ikonu* argument je nepovinný.
 
--   Bitmap – část: v této části jsou stejné jako v *.ctc* souboru, s tím rozdílem, že teď můžete zadat název souboru prostřednictvím Href, který bude i v *vsct.exe* kompilátor v době kompilace.
+- Bitmap – část: v této části jsou stejné jako v *.ctc* souboru, s tím rozdílem, že teď můžete zadat název souboru prostřednictvím Href, který bude i v *vsct.exe* kompilátor v době kompilace.
 
--   ResID: ID může být použité a stále funguje stejně jako v prostředku rastrového obrázku starého *.ctc* soubory.
+- ResID: ID může být použité a stále funguje stejně jako v prostředku rastrového obrázku starého *.ctc* soubory.
 
--   HRef: Novou metodu, která vám umožní zadat název souboru prostředku rastrového obrázku. Předpokládá, že se používají všechny, tak můžete vynechat využité části. Kompilátor nejprve vyhledat místní prostředky pro soubor a pak na žádné čisté sdílených složek a všechny prostředky definované **/I** přepnout.
+- HRef: Novou metodu, která vám umožní zadat název souboru prostředku rastrového obrázku. Předpokládá, že se používají všechny, tak můžete vynechat využité části. Kompilátor nejprve vyhledat místní prostředky pro soubor a pak na žádné čisté sdílených složek a všechny prostředky definované **/I** přepnout.
 
--   Klávesové zkratky: Už máte k určení emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.
+- Klávesové zkratky: Už máte k určení emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.
 
--   Keychord: Keychord byla vyřazena. Nový formát je *klíč1, Mod1, klic2, Mod2*.  Můžete zadat znak, šestnáctkové číslo nebo konstantu VK.
+- Keychord: Keychord byla vyřazena. Nový formát je *klíč1, Mod1, klic2, Mod2*.  Můžete zadat znak, šestnáctkové číslo nebo konstantu VK.
        
 Nový kompilátor *vsct.exe*, zkompiluje obě *.ctc* a *.vsct* soubory. Starý *ctc.exe* kompilátoru, ale nebude rozpoznat nebo kompilací *.vsct* soubory.
 

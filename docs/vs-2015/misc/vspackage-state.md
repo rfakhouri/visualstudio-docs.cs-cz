@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895207"
 ---
 # <a name="vspackage-state"></a>Stav balíčku VSPackage
 Řada faktorů určit sadu trvalé hodnoty nebo stav, nástroje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplikace.  
   
--   Projekty mají vlastnosti projektu a konfigurace.  
+- Projekty mají vlastnosti projektu a konfigurace.  
   
--   Řešení mají vlastnosti.  
+- Řešení mají vlastnosti.  
   
--   Uživatelská nastavení určuje velikost a pozice okna dokumentů, oken nástrojů, dokovací stavu a klávesové zkratky.  
+- Uživatelská nastavení určuje velikost a pozice okna dokumentů, oken nástrojů, dokovací stavu a klávesové zkratky.  
   
--   Aplikace může mít možnosti, které nastaví uživatel.  
+- Aplikace může mít možnosti, které nastaví uživatel.  
   
--   Objekty, které aplikace může mít vlastní vlastnosti.  
+- Objekty, které aplikace může mít vlastní vlastnosti.  
   
- Tady jsou některé ze způsobů, který [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stav aplikace je možné spravovat:  
+  Tady jsou některé ze způsobů, který [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stav aplikace je možné spravovat:  
   
--   Na stránkách vlastností projektu a řešení.  
+- Na stránkách vlastností projektu a řešení.  
   
--   Až **Průvodce importem a exportem nastavení**, který umožňuje uživateli přesunout nastavení z jednoho počítače do jiného.  
+- Až **Průvodce importem a exportem nastavení**, který umožňuje uživateli přesunout nastavení z jednoho počítače do jiného.  
   
--   Až **možnosti** dialogové okno, která zahrnuje možnosti týkající se aplikací.  
+- Až **možnosti** dialogové okno, která zahrnuje možnosti týkající se aplikací.  
   
--   Až **vlastnosti** okno, které zpřístupní vlastnosti objektů.  
+- Až **vlastnosti** okno, které zpřístupní vlastnosti objektů.  
   
--   Díky automatizaci. Aplikace můžete přístup k balíčku VSPackage a objekt vlastnosti, které byly vystaveny automatizace.  
+- Díky automatizaci. Aplikace můžete přístup k balíčku VSPackage a objekt vlastnosti, které byly vystaveny automatizace.  
   
- Základní stavu aplikace jsou různé mechanismy trvalost, které umožňují uložit a obnovit stav aplikace.  
+  Základní stavu aplikace jsou různé mechanismy trvalost, které umožňují uložit a obnovit stav aplikace.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Podpora pro trvalost stavu](../misc/support-for-state-persistence.md)  

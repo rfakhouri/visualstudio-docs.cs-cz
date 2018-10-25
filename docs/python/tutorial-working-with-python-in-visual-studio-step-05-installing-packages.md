@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fdc37c35d2563780804c38fb6a74e1574cfaa6ad
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 02fdc0d7cd8a16ec7a00191a364def22ad2d8192
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939394"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Pythonu
 
@@ -26,29 +26,29 @@ Komunita vývojářů Python vytvořil tisíce užitečné balíčky, které mů
 
 1. Vyberte **zobrazení** > **ostatní Windows** > **prostředí Pythonu** příkazu nabídky. **Prostředí Pythonu** jako partnera, který se otevře okno **Průzkumníka řešení** a zobrazí se vám různá prostředí, které jsou k dispozici. Seznam obsahuje i prostředí, které jste si nainstalovali pomocí instalačního programu sady Visual Studio a ty, které můžete nainstalovat samostatně. Prostředí tučným písmem je výchozí prostředí, který se používá pro nové projekty.
 
-  ![Okno prostředí Pythonu](media/environments-default-view-blue.png)
+   ![Okno prostředí Pythonu](media/environments-default-view-blue.png)
 
-1. Prostředí **přehled** karta poskytuje rychlý přístup k **interaktivní** okna pro toto prostředí spolu s instalační složku a interpretů životní prostředí. Vyberte například **otevřít interaktivní okno** a **interaktivní** v sadě Visual Studio se zobrazí okno pro konkrétní prostředí.
+2. Prostředí **přehled** karta poskytuje rychlý přístup k **interaktivní** okna pro toto prostředí spolu s instalační složku a interpretů životní prostředí. Vyberte například **otevřít interaktivní okno** a **interaktivní** v sadě Visual Studio se zobrazí okno pro konkrétní prostředí.
 
-1. Vyberte **balíčky** kartě a můžete zobrazit seznam balíčků, které jsou aktuálně nainstalované ve prostředí.
+3. Vyberte **balíčky** kartě a můžete zobrazit seznam balíčků, které jsou aktuálně nainstalované ve prostředí.
 
-  ![Balíčky nainstalované ve prostředí](media/environments-installed-packages-blue.png)
+   ![Balíčky nainstalované ve prostředí](media/environments-installed-packages-blue.png)
 
-1. Nainstalujte `matplotlib` tak, že do vyhledávacího pole zadáte její název, vyberte **instalace pip**
+4. Nainstalujte `matplotlib` tak, že do vyhledávacího pole zadáte její název, vyberte **instalace pip**
 
-  ![Instalace matplotlib v prostředí](media/environments-add-matplotlib1.png)
+   ![Instalace matplotlib v prostředí](media/environments-add-matplotlib1.png)
 
-1. Pokud se zobrazí výzva k tomu vyjádřit souhlas ke zvýšení úrovně oprávnění.
+5. Pokud se zobrazí výzva k tomu vyjádřit souhlas ke zvýšení úrovně oprávnění.
 
-1. Po dokončení instalace balíčku se zobrazí v **prostředí Pythonu** okna. **X** napravo od balíček odinstaluje se.
+6. Po dokončení instalace balíčku se zobrazí v **prostředí Pythonu** okna. **X** napravo od balíček odinstaluje se.
 
-  ![Dokončení instalace matplotlib v prostředí](media/environments-add-matplotlib2.png)
+   ![Dokončení instalace matplotlib v prostředí](media/environments-add-matplotlib2.png)
 
-  Indikátor průběhu malé se můžou objevit pod prostředí k označení, že Visual Studio sestavuje své databáze IntelliSense pro nově nainstalovaný balíček. **IntelliSense** karta zobrazuje také podrobnější informace. Všimněte si, že než tuto databázi se dokončí, funkce technologie IntelliSense, jako je automatické dokončování a kontroly syntaxe nebudou aktivní v okně editor pro tento balíček.
+   Indikátor průběhu malé se můžou objevit pod prostředí k označení, že Visual Studio sestavuje své databáze IntelliSense pro nově nainstalovaný balíček. **IntelliSense** karta zobrazuje také podrobnější informace. Všimněte si, že než tuto databázi se dokončí, funkce technologie IntelliSense, jako je automatické dokončování a kontroly syntaxe nebudou aktivní v okně editor pro tento balíček.
 
-  Všimněte si, že **Visual Studio 2017 verze 15.6** později používá jiný a rychlejší způsob pro práci s podporou technologie IntelliSense a zobrazí zprávu o tom on **IntelliSense** kartu.
+   Všimněte si, že **Visual Studio 2017 verze 15.6** později používá jiný a rychlejší způsob pro práci s podporou technologie IntelliSense a zobrazí zprávu o tom on **IntelliSense** kartu.
 
-1. Vytvoření nového projektu s **souboru** > **nový** > **projektu**, vyberete **aplikace v Pythonu** Šablona. V souboru kódu, který se zobrazí vložte následující kód, který vytvoří pouze v tomto případě promítají graficky kosinus wave jako předchozí kurz kroky:
+7. Vytvoření nového projektu s **souboru** > **nový** > **projektu**, vyberete **aplikace v Pythonu** Šablona. V souboru kódu, který se zobrazí vložte následující kód, který vytvoří pouze v tomto případě promítají graficky kosinus wave jako předchozí kurz kroky:
 
     ```python
     from math import radians
@@ -63,9 +63,9 @@ Komunita vývojářů Python vytvořil tisíce užitečné balíčky, které mů
     main()
     ```
 
-1. Spusťte program s (**F5**) nebo bez ladicího programu (**Ctrl**+**F5**) k zobrazení výstupu:
+8. Spusťte program s (**F5**) nebo bez ladicího programu (**Ctrl**+**F5**) k zobrazení výstupu:
 
-  ![Výstup příkladu matplotlib](media/environments-add-matplotlib3.png)
+   ![Výstup příkladu matplotlib](media/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Další krok
 

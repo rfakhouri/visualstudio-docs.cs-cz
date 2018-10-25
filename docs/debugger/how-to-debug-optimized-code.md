@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0e223853c8bf805d7466fffec184032b24ec9e88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937795"
 ---
 # <a name="how-to-debug-optimized-code"></a>Postupy: Ladění optimalizovaného kódu
 > [!NOTE]
@@ -43,37 +43,37 @@ ms.locfileid: "44280815"
   
  Může mít vliv na optimalizace:  
   
--   Lokální proměnné, které mohou být odebrána optimalizátorem nebo přesunout do umístění, které ladicí program nerozumí.  
+- Lokální proměnné, které mohou být odebrána optimalizátorem nebo přesunout do umístění, které ladicí program nerozumí.  
   
--   Pozice uvnitř funkce, které se mění při Optimalizátor sloučí bloky kódu.  
+- Pozice uvnitř funkce, které se mění při Optimalizátor sloučí bloky kódu.  
   
--   Názvy funkcí pro rámce v zásobníku volání, které mohou být další potíže, pokud Optimalizátor Sloučí dvě funkce.  
+- Názvy funkcí pro rámce v zásobníku volání, které mohou být další potíže, pokud Optimalizátor Sloučí dvě funkce.  
   
- Rámce, které se zobrazí v zásobníku volání jsou téměř vždy správná, ale za předpokladu, že máte symbolů pro všechny snímky. Pokud máte poškození zásobníku, pokud máte funkce v jazyce sestavení, nebo pokud jsou snímky operačního systému bez odpovídající symboly v zásobníku volání, bude nesprávný rámce v zásobníku volání.  
+  Rámce, které se zobrazí v zásobníku volání jsou téměř vždy správná, ale za předpokladu, že máte symbolů pro všechny snímky. Pokud máte poškození zásobníku, pokud máte funkce v jazyce sestavení, nebo pokud jsou snímky operačního systému bez odpovídající symboly v zásobníku volání, bude nesprávný rámce v zásobníku volání.  
   
- Globální a statické proměnné jsou vždy uvedeny správně. Proto je rozložení struktury. Pokud máte ukazatel na strukturu a hodnota ukazatele je správné, bude každé členské proměnné struktury zobrazení správné hodnoty.  
+  Globální a statické proměnné jsou vždy uvedeny správně. Proto je rozložení struktury. Pokud máte ukazatel na strukturu a hodnota ukazatele je správné, bude každé členské proměnné struktury zobrazení správné hodnoty.  
   
- Kvůli těmto omezením by měl ladit, pokud možno používá neoptimalizované verzi programu. Ve výchozím nastavení optimalizace je vypnuta konfigurace ladění programu v jazyce Visual C++ a zapnuté v konfiguraci vydané verze.  
+  Kvůli těmto omezením by měl ladit, pokud možno používá neoptimalizované verzi programu. Ve výchozím nastavení optimalizace je vypnuta konfigurace ladění programu v jazyce Visual C++ a zapnuté v konfiguraci vydané verze.  
   
- Chyba může být však zobrazí pouze v optimalizovanou verzi programu. V takovém případě musíte ladit optimalizovaný kód.  
+  Chyba může být však zobrazí pouze v optimalizovanou verzi programu. V takovém případě musíte ladit optimalizovaný kód.  
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Chcete-li konfiguraci sestavení optimalizace ladění  
   
-1.  Když vytvoříte nový projekt, vyberte `Win32 Debug` cíl. Použití `Win32``Debug` cílit, dokud se plně ladění programu a jste připraveni k sestavení `Win32 Release` cíl. Kompilátor neoptimalizuje `Win32 Debug` cíl.  
+1. Když vytvoříte nový projekt, vyberte `Win32 Debug` cíl. Použití `Win32``Debug` cílit, dokud se plně ladění programu a jste připraveni k sestavení `Win32 Release` cíl. Kompilátor neoptimalizuje `Win32 Debug` cíl.  
   
-2.  Vyberte projekt v Průzkumníku řešení.  
+2. Vyberte projekt v Průzkumníku řešení.  
   
-3.  Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.  
+3. Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.  
   
-4.  V **stránky vlastností** dialogové okno pole, ujistěte se, že `Debug` výběru v **konfigurace** rozevíracího seznamu.  
+4. V **stránky vlastností** dialogové okno pole, ujistěte se, že `Debug` výběru v **konfigurace** rozevíracího seznamu.  
   
-5.  V zobrazení složky na levé straně vyberte **C/C++** složky.  
+5. V zobrazení složky na levé straně vyberte **C/C++** složky.  
   
-6.  V části **C++** složky, vyberte `Optimization`.  
+6. V části **C++** složky, vyberte `Optimization`.  
   
-7.  V seznamu vlastnosti na pravé straně najít `Optimization`. Nastavení vedle sebe pravděpodobně říká `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Vyberte jednu z dalších možností (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, nebo `Custom`).  
+7. V seznamu vlastnosti na pravé straně najít `Optimization`. Nastavení vedle sebe pravděpodobně říká `Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`. Vyberte jednu z dalších možností (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`, nebo `Custom`).  
   
-8.  Pokud jste zvolili `Custom` možnost `Optimization`, teď můžete nastavit možnosti pro všechny ostatní vlastnosti zobrazené v seznamu vlastností.  
+8. Pokud jste zvolili `Custom` možnost `Optimization`, teď můžete nastavit možnosti pro všechny ostatní vlastnosti zobrazené v seznamu vlastností.  
   
 9. Vyberte konfigurační vlastnosti, C/C++, uzel příkazového řádku na stránce Vlastnosti projektu a přidejte `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` k **další možnosti** textového pole.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "44280815"
     >   
     >  Přidání `/Zo` dojde k zakázání [upravit a pokračovat](../debugger/edit-and-continue-visual-csharp.md).  
   
- Když ladíte optimalizovaný kód, použijte **zpětný překlad** okně zobrazíte pokyny, které jsou ve skutečnosti vytvářejí a. Při nastavení zarážek, je potřeba vědět, že zarážka může být přesunout společně s instrukce. Zvažte například následující kód:  
+   Když ladíte optimalizovaný kód, použijte **zpětný překlad** okně zobrazíte pokyny, které jsou ve skutečnosti vytvářejí a. Při nastavení zarážek, je potřeba vědět, že zarážka může být přesunout společně s instrukce. Zvažte například následující kód:  
   
 ```cpp
 for (x=0; x<10; x++)  

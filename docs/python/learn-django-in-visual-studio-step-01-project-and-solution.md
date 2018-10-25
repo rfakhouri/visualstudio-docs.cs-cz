@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942734"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -163,16 +163,16 @@ Po dokončení vytváření projektu, zkontrolujte často používaný kód proj
 
     ![Kontextové nabídky projektu Django příkazy na Python](media/django/step01-django-commands-menu.png)
 
-1. Ve vašem projektu do složky se stejným názvem jako projekt. Obsahuje základní soubory projektu Django:
+2. Ve vašem projektu do složky se stejným názvem jako projekt. Obsahuje základní soubory projektu Django:
 
-    - *__init.PY*: prázdný soubor Python říká, že tato složka je balíček Python.
-    - *wsgi.PY*: vstupní bod pro kompatibilní s rozhraním WSGI webové servery mohly vašeho projektu. Obvykle ponechává tento soubor jako-je, protože poskytuje háky pro produkční webové servery.
-    - *Settings.PY*: obsahuje nastavení pro projekt Django, který můžete upravit při vývoji webové aplikace.
-    - *URLs.PY*: obsahuje obsah pro projekt Django, která je také upravit v průběhu vývoje.
+   - *__init.PY*: prázdný soubor Python říká, že tato složka je balíček Python.
+   - *wsgi.PY*: vstupní bod pro kompatibilní s rozhraním WSGI webové servery mohly vašeho projektu. Obvykle ponechává tento soubor jako-je, protože poskytuje háky pro produkční webové servery.
+   - *Settings.PY*: obsahuje nastavení pro projekt Django, který můžete upravit při vývoji webové aplikace.
+   - *URLs.PY*: obsahuje obsah pro projekt Django, která je také upravit v průběhu vývoje.
 
-    ![Soubory projektu Django v Průzkumníku řešení](media/django/step01-django-project-in-solution-explorer.png)
+     ![Soubory projektu Django v Průzkumníku řešení](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Jak bylo uvedeno dříve, šablony sady Visual Studio také přidá *souboru requirements.txt* soubor do projektu zadáním Django závislost balíčku. Přítomnost tento soubor je, co vás zve k vytvoření virtuálního prostředí, při prvním vytvoření projektu.
+3. Jak bylo uvedeno dříve, šablony sady Visual Studio také přidá *souboru requirements.txt* soubor do projektu zadáním Django závislost balíčku. Přítomnost tento soubor je, co vás zve k vytvoření virtuálního prostředí, při prvním vytvoření projektu.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Otázka: Může Visual Studio generovat soubor requirements.txt z virtuálního prostředí po instalaci dalších balíčků?
 

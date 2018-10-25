@@ -9,12 +9,12 @@ description: Další informace o benefitech služeb Office 365 součástí někt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 27be6e98bcaf030a74096a404383cbc54d64f44f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908389"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 v předplatných sady Visual Studio
 
@@ -43,6 +43,7 @@ Pokud máte v plánu pro vývoj aplikací pro Office, bude potřeba aktivovat v�
 
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodního prodeje| K dispozici       |  Ano          |

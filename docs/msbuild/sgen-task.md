@@ -20,40 +20,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed195596715c044268b2b1fdf434d1fda20967c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 89a5285e304e74aba01f81d8ec9bfc5017677a7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150887"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919179"
 ---
 # <a name="sgen-task"></a>SGen – úloha
 Vytvoří sestavení serializace XML pro typy v zadaném sestavení. Tato úloha obtéká nástroj Generátor serializátor XML (*Sgen.exe*). Další informace najdete v tématu [nástroj Generátor serializátor XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
-  
+
 ## <a name="parameters"></a>Parametry  
  Následující tabulka popisuje parametry `SGen` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`BuildAssemblyName`|Vyžaduje `String` parametru.<br /><br /> Sestavení pro generování kódu serializace pro.|  
-|`BuildAssemblyPath`|Vyžaduje `String` parametru.<br /><br /> Cesta k sestavení pro generování kódu serializace pro.|  
-|`DelaySign`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, určuje, že chcete li plně podepsané sestavení. Pokud `false`, určuje, že chcete pouze umístit veřejný klíč v sestavení.<br /><br /> Tento parametr nemá žádný vliv, pokud nejsou použity s buď `KeyFile` nebo `KeyContainer` parametru.|  
-|`KeyContainer`|Volitelné `String` parametru.<br /><br /> Určuje kontejner obsahující pár klíčů. Toto podepíše sestavení tak, že vloží veřejný klíč do manifestu sestavení. Úloha se pak podepíše konečné sestavení soukromým klíčem.|  
-|`KeyFile`|Volitelné `String` parametru.<br /><br /> Určuje dvojici klíčů nebo veřejný klíč k podepsání sestavení. Kompilátor vloží veřejný klíč do manifestu sestavení a poté podepíše konečné sestavení soukromým klíčem.|  
-|`Platform`|Volitelné `String` parametru.<br /><br /> Získá nebo nastaví platformě kompilátoru sloužící ke generování výstupního sestavení. Tento parametr může mít hodnotu `x86`, `x64`, nebo `anycpu`. Výchozí hodnota je `anycpu`.|  
-|`References`|Volitelné `String[]` parametru.<br /><br /> Určuje sestavení, která je odkazováno dle typy vyžadujících serializace XML.|  
-|`SdkToolsPath`|Volitelné `String` parametru.<br /><br /> Určuje cestu k sadě SDK nástroje, jako *resgen.exe*.|  
-|`SerializationAssembly`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje sestavení vygenerované serializace.|  
-|`SerializationAssemblyName`|Volitelné `String` parametru.<br /><br /> Určuje název generovaného serializace sestavení.|  
-|`ShouldGenerateSerializer`|Vyžaduje `Boolean` parametru.<br /><br /> Pokud `true`, SGen – úloha by měl generovat sestavení serializace.|  
-|`Timeout`|Volitelné `Int32` parametru.<br /><br /> Určuje množství času, v milisekundách, po jejichž uplynutí je spustitelný soubor s úkolem ukončen. Výchozí hodnota je `Int.MaxValue`, která udává, že neexistuje žádný časový limit.|  
-|`ToolPath`|Volitelné `String` parametru.<br /><br /> Určuje umístění, kde bude úloha načtení základní spustitelného souboru (*sgen.exe*). Pokud není tento parametr zadán, použije úloha instalační cestu sady SDK odpovídající verzi rozhraní framework, na kterém běží [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
-|`Types`|Volitelné `String[]` parametru.<br /><br /> Získá nebo nastaví seznam pro generování kódu serializace pro konkrétní typy. SGen – vygeneruje kód serializace pouze u typů.|  
-|`UseProxyTypes`|Vyžaduje `Boolean` parametru.<br /><br /> Pokud `true`, SGen – úloha generuje kód serializace pouze pro typy XML webové služby serveru proxy.|  
-  
+
+
+| Parametr | Popis |
+|-----------------------------| - |
+| `BuildAssemblyName` | Vyžaduje `String` parametru.<br /><br /> Sestavení pro generování kódu serializace pro. |
+| `BuildAssemblyPath` | Vyžaduje `String` parametru.<br /><br /> Cesta k sestavení pro generování kódu serializace pro. |
+| `DelaySign` | Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, určuje, že chcete li plně podepsané sestavení. Pokud `false`, určuje, že chcete pouze umístit veřejný klíč v sestavení.<br /><br /> Tento parametr nemá žádný vliv, pokud nejsou použity s buď `KeyFile` nebo `KeyContainer` parametru. |
+| `KeyContainer` | Volitelné `String` parametru.<br /><br /> Určuje kontejner obsahující pár klíčů. Toto podepíše sestavení tak, že vloží veřejný klíč do manifestu sestavení. Úloha se pak podepíše konečné sestavení soukromým klíčem. |
+| `KeyFile` | Volitelné `String` parametru.<br /><br /> Určuje dvojici klíčů nebo veřejný klíč k podepsání sestavení. Kompilátor vloží veřejný klíč do manifestu sestavení a poté podepíše konečné sestavení soukromým klíčem. |
+| `Platform` | Volitelné `String` parametru.<br /><br /> Získá nebo nastaví platformě kompilátoru sloužící ke generování výstupního sestavení. Tento parametr může mít hodnotu `x86`, `x64`, nebo `anycpu`. Výchozí hodnota je `anycpu`. |
+| `References` | Volitelné `String[]` parametru.<br /><br /> Určuje sestavení, která je odkazováno dle typy vyžadujících serializace XML. |
+| `SdkToolsPath` | Volitelné `String` parametru.<br /><br /> Určuje cestu k sadě SDK nástroje, jako *resgen.exe*. |
+| `SerializationAssembly` | Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje sestavení vygenerované serializace. |
+| `SerializationAssemblyName` | Volitelné `String` parametru.<br /><br /> Určuje název generovaného serializace sestavení. |
+| `ShouldGenerateSerializer` | Vyžaduje `Boolean` parametru.<br /><br /> Pokud `true`, SGen – úloha by měl generovat sestavení serializace. |
+| `Timeout` | Volitelné `Int32` parametru.<br /><br /> Určuje množství času, v milisekundách, po jejichž uplynutí je spustitelný soubor s úkolem ukončen. Výchozí hodnota je `Int.MaxValue`, která udává, že neexistuje žádný časový limit. |
+| `ToolPath` | Volitelné `String` parametru.<br /><br /> Určuje umístění, kde bude úloha načtení základní spustitelného souboru (*sgen.exe*). Pokud není tento parametr zadán, použije úloha instalační cestu sady SDK odpovídající verzi rozhraní framework, na kterém běží [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `Types` | Volitelné `String[]` parametru.<br /><br /> Získá nebo nastaví seznam pro generování kódu serializace pro konkrétní typy. SGen – vygeneruje kód serializace pouze u typů. |
+| `UseProxyTypes` | Vyžaduje `Boolean` parametru.<br /><br /> Pokud `true`, SGen – úloha generuje kód serializace pouze pro typy XML webové služby serveru proxy. |
+
 ## <a name="remarks"></a>Poznámky  
  Kromě výše uvedených parametrů zdědí tento úkol parametry ze <xref:Microsoft.Build.Tasks.ToolTaskExtension> třída, která sama dědí z <xref:Microsoft.Build.Utilities.ToolTask> třídy. Seznam těchto dalších parametrů a jejich popisy najdete v tématu [tooltaskextension – základní třída](../msbuild/tooltaskextension-base-class.md).  
-  
+
 ## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
  [Úlohy](../msbuild/msbuild-tasks.md)   

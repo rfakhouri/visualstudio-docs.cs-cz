@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926199"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Používání atributu DebuggerDisplay
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Ovládací prvky zobrazení objektu, vlastnost nebo pole v oknech proměnných ladicího programu. Tento atribut lze použít pro typy delegátů, vlastnosti, pole a sestavení.  
@@ -36,7 +36,7 @@ ms.locfileid: "42635522"
  V následující tabulce jsou uvedeny některé možné způsoby použití `DebuggerDisplay` atribut a příklad výstupy.  
   
 |Atribut|Výstup ve sloupci Hodnota|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Použít u typu s poli `x` a `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Syntaxe parametru se může lišit mezi jazyky. Proto je používejte obezřetně.|`String value is [5, 6, 6]`|  
   
@@ -65,13 +65,13 @@ csc /t:library autoexp.cs
   
  Použití výrazů v DebuggerDisplay může vést k následujícím problémům:  
   
--   Vyhodnocování výrazů je nejvíce náročná operace v ladicím programu a tento výraz je vyhodnocen pokaždé, když se zobrazí. To může způsobit problémy s výkonem v krokování kódu. Složitý výraz, který se používá k zobrazení hodnoty v kolekci nebo seznam například může být velmi pomalé. když je velký počet prvků.  
+- Vyhodnocování výrazů je nejvíce náročná operace v ladicím programu a tento výraz je vyhodnocen pokaždé, když se zobrazí. To může způsobit problémy s výkonem v krokování kódu. Složitý výraz, který se používá k zobrazení hodnoty v kolekci nebo seznam například může být velmi pomalé. když je velký počet prvků.  
   
--   Chyba při vyhodnocování výrazu jazyka aktuální rámec zásobníku a ne vyhodnocení jazyk, ve kterém byla vytvořená výraz jsou výrazy vyhodnocovány. To může způsobit nepředvídatelné výsledky, když jsou různé jazyky.  
+- Chyba při vyhodnocování výrazu jazyka aktuální rámec zásobníku a ne vyhodnocení jazyk, ve kterém byla vytvořená výraz jsou výrazy vyhodnocovány. To může způsobit nepředvídatelné výsledky, když jsou různé jazyky.  
   
--   Vyhodnocení výrazu můžete změnit stav aplikace. Například výraz, který nastaví hodnotu vlastnosti mění hodnotu vlastnosti v provádění kódu.  
+- Vyhodnocení výrazu můžete změnit stav aplikace. Například výraz, který nastaví hodnotu vlastnosti mění hodnotu vlastnosti v provádění kódu.  
   
- Jeden způsob, jak snížit možné potíže vyhodnocení výrazu je tak, že vytvoříte privátní vlastnost, která provádí operace a vrátí hodnotu typu string. Atributu DebuggerDisplay lze následně zobrazí hodnota této vlastnosti privátní. Následující příklad implementuje tento model:  
+  Jeden způsob, jak snížit možné potíže vyhodnocení výrazu je tak, že vytvoříte privátní vlastnost, která provádí operace a vrátí hodnotu typu string. Atributu DebuggerDisplay lze následně zobrazí hodnota této vlastnosti privátní. Následující příklad implementuje tento model:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

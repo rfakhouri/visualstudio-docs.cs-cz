@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889786"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Přidávání příkazů a gest do diagramů vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Definování rozšíření pomocí šablony projektu  
   
-1.  Vytvoření projektu v novém řešení pomocí **nový projekt** příkaz **souboru** nabídky.  
+1. Vytvoření projektu v novém řešení pomocí **nový projekt** příkaz **souboru** nabídky.  
   
-2.  V **nový projekt** dialogovém okně **projekty modelování**, vyberte buď **rozšíření příkazu návrháře vrstvy** nebo **vrstva rozšíření gesta návrháře** .  
+2. V **nový projekt** dialogovém okně **projekty modelování**, vyberte buď **rozšíření příkazu návrháře vrstvy** nebo **vrstva rozšíření gesta návrháře** .  
   
-     Šablona vytvoří projekt, který obsahuje malý funkční příklad.  
+    Šablona vytvoří projekt, který obsahuje malý funkční příklad.  
   
-3.  Chcete-li otestovat rozšíření, stiskněte **CTRL + F5** nebo **F5**.  
+3. Chcete-li otestovat rozšíření, stiskněte **CTRL + F5** nebo **F5**.  
   
-     Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí. V takovém případě vytvořte diagram vrstvy. Vaše rozšíření příkazu nebo gesta by měla fungovat v tomto diagramu.  
+    Experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spustí. V takovém případě vytvořte diagram vrstvy. Vaše rozšíření příkazu nebo gesta by měla fungovat v tomto diagramu.  
   
-4.  Ukončete experimentální instanci a úprava vzorového kódu. Další informace najdete v tématu [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Ukončete experimentální instanci a úprava vzorového kódu. Další informace najdete v tématu [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Můžete přidat další obslužné rutiny příkazu nebo gesta do stejného projektu. Další informace naleznete v následující části:  
+5. Můžete přidat další obslužné rutiny příkazu nebo gesta do stejného projektu. Další informace naleznete v následující části:  
   
-     [Definování příkazu nabídky](#command)  
+    [Definování příkazu nabídky](#command)  
   
-     [Definování obslužné rutiny gesta](#gesture)  
+    [Definování obslužné rutiny gesta](#gesture)  
   
-6.  Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve **bin\\\***. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
+6. Chcete-li nainstalovat rozšíření v instanci hlavní aplikace [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], nebo v jiném počítači, vyhledejte **VSIX** ve *bin\\*. Zkopírujte ho do počítače, ve které chcete nainstalovat a poklepejte na něj. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Přidání příkazu nebo gesta do samostatného souboru VSIX  
  Pokud chcete vytvořit jeden VSIX, který obsahuje příkazy, validátory vrstvy a další rozšíření, doporučujeme vytvořit jeden projekt k definování VSIX a samostatné projekty pro obslužné rutiny. Informace o dalších typech rozšíření modelu naleznete v tématu [modelů a diagramů UML rozšířit](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ Můžete definovat příkazy kontextové nabídky a obslužné rutiny gesta v di
 ##  <a name="command"></a> Definování příkazu nabídky  
  K existujícímu gestu nebo projektu příkazu můžete přidat další definice příkazu nabídky. Každý příkaz je definován třídou, která má následující vlastnosti:  
   
--   Třída je deklarována následovně:  
+- Třída je deklarována následovně:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   Obor názvů a název třídy nejsou důležité.  
+- Obor názvů a název třídy nejsou důležité.  
   
--   Metody, které implementují `ICommandExtension` jsou následující:  
+- Metody, které implementují `ICommandExtension` jsou následující:  
   
-    -   `string Text {get;}` – Popisek, který se zobrazí v nabídce.  
+  -   `string Text {get;}` – Popisek, který se zobrazí v nabídce.  
   
-    -   `void QueryStatus(IMenuCommand command)` – volána, když uživatel klepne pravým tlačítkem myši v diagramu a určuje, zda má být příkaz viditelný a povolený pro aktuální výběr uživatele.  
+  -   `void QueryStatus(IMenuCommand command)` – volána, když uživatel klepne pravým tlačítkem myši v diagramu a určuje, zda má být příkaz viditelný a povolený pro aktuální výběr uživatele.  
   
-    -   `void Execute(IMenuCommand command)` – volána, když uživatel vybere příkaz.  
+  -   `void Execute(IMenuCommand command)` – volána, když uživatel vybere příkaz.  
   
--   Chcete-li zjistit aktuální výběr, můžete importovat `IDiagramContext`:  
+- Chcete-li zjistit aktuální výběr, můžete importovat `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Další informace najdete v tématu [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Další informace najdete v tématu [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Chcete-li přidat nový příkaz, vytvořte nový soubor kódu, který obsahuje následující ukázku. Potom ho otestujte a upravte.  
+  Chcete-li přidat nový příkaz, vytvořte nový soubor kódu, který obsahuje následující ukázku. Potom ho otestujte a upravte.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Všimněte si následujících o obslužných rutinách gest:  
   
--   Členové `IGestureExtension` jsou následující:  
+- Členové `IGestureExtension` jsou následující:  
   
-     **OnDoubleClick** – volána, když uživatel poklepe kdekoli v diagramu.  
+   **OnDoubleClick** – volána, když uživatel poklepe kdekoli v diagramu.  
   
-     **CanDragDrop** – voláno opakovaně, jak uživatel pohybuje ukazatelem myši při přetažení položky do diagramu. Musí pracovat rychle.  
+   **CanDragDrop** – voláno opakovaně, jak uživatel pohybuje ukazatelem myši při přetažení položky do diagramu. Musí pracovat rychle.  
   
-     **OnDragDrop** – volána, když uživatel zahodí položky do diagramu.  
+   **OnDragDrop** – volána, když uživatel zahodí položky do diagramu.  
   
--   První argument pro každou metodu je `IShape`, ze kterého můžete získat prvek vrstvy. Příklad:  
+- První argument pro každou metodu je `IShape`, ze kterého můžete získat prvek vrstvy. Příklad:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Obslužné rutiny pro některé typy přetažených položek jsou již definovány. Například můžete uživateli přetáhnout položky z Průzkumníka řešení do diagramu vrstvy. Nelze definovat obslužnou rutinu přetažení pro tyto typy položky. V těchto případech vaše `DragDrop` metody nebudou vyvolány.  
+- Obslužné rutiny pro některé typy přetažených položek jsou již definovány. Například můžete uživateli přetáhnout položky z Průzkumníka řešení do diagramu vrstvy. Nelze definovat obslužnou rutinu přetažení pro tyto typy položky. V těchto případech vaše `DragDrop` metody nebudou vyvolány.  
   
- Další informace o tom, jak dekódování dalších položek při jejich přetažení do diagramu najdete v tématu [definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Další informace o tom, jak dekódování dalších položek při jejich přetažení do diagramu najdete v tématu [definování obslužné rutiny gest v diagramu modelování](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Procházení a aktualizace modelů vrstev v programovém kódu](../modeling/navigate-and-update-layer-models-in-program-code.md)   

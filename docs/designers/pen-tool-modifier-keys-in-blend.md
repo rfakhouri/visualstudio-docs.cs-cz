@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908736"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Modifikační klávesy nástroje pero v Blendu
 V následující tabulce jsou uvedeny klávesových zkratek, které můžete použít při vytváření ho potřebujete změnit cestu **pera** nástroj ![nástroje pero](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Můžete také použít **pera** nástroj pro přidání nebo odebrání bodů na existující cestu nebo připojit dva existující cesty.
 
 |Pro tuto akci|Postup|Ukazatel|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Vytvořit bod spuštění segment rovné čáry|Klikněte na tlačítko Vytvořit nový bod|![Vytvořit bod spuštění segment rovné čáry](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Ukazatel pera|
 |Vytvořit bod spuštění segment křivku|Kliknout pro vytvoření nového bodu a pak přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![Vytvořit bod spuštění segment křivku](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Ukazatel pera|
 |Upravit poslední tečnu bez smooth omezení, které umožňují ostrý roh|Klikněte na tlačítko Vytvořit nový bod a potom stiskněte klávesu **Alt** před uvolněním tlačítka myši|![Upravit poslední tečnu bez smooth omezení](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Psaní perem ukazatel|
@@ -40,5 +40,5 @@ V následující tabulce jsou uvedeny klávesových zkratek, které můžete pou
 
 - [Klávesové zkratky a modifikační klávesy](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Modifikační klávesy návrhové plochy](../designers/artboard-modifier-keys-in-blend.md)
-- [Modifikační klávesy nástroje přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Modifikační klávesy nástroje Přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [Kreslení tvarů a cest](../designers/draw-shapes-and-paths.md)

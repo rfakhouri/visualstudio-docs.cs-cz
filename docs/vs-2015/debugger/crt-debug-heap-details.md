@@ -80,12 +80,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 900127801a232ed41f119def930f8bbfe8e93550
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923001"
 ---
 # <a name="crt-debug-heap-details"></a>Podrobnosti haldy ladění CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,19 +214,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Použití haldy ladění**  
   
--   Propojte sestavení ladění aplikace s ladicí verzí knihovny run-time C.  
+- Propojte sestavení ladění aplikace s ladicí verzí knihovny run-time C.  
   
- **Chcete-li změnit jeden nebo více bitových polí _crtDbgFlag a vytvoření nového stavu pro příznak**  
+  **Chcete-li změnit jeden nebo více bitových polí _crtDbgFlag a vytvoření nového stavu pro příznak**  
   
-1.  Volání `_CrtSetDbgFlag` s `newFlag` parametr nastaven na `_CRTDBG_REPORT_FLAG` (k získání aktuálního `_crtDbgFlag` stavu) a vrácené hodnoty uložte v dočasné proměnné.  
+1. Volání `_CrtSetDbgFlag` s `newFlag` parametr nastaven na `_CRTDBG_REPORT_FLAG` (k získání aktuálního `_crtDbgFlag` stavu) a vrácené hodnoty uložte v dočasné proměnné.  
   
-2.  Zapněte všechny bity `OR`- ováním (bitový &#124; symbol) dočasné proměnné s odpovídajícími bitovými maskami (představovanými v kódu aplikace konstantami manifestu).  
+2. Zapněte všechny bity `OR`- ováním (bitový &#124; symbol) dočasné proměnné s odpovídajícími bitovými maskami (představovanými v kódu aplikace konstantami manifestu).  
   
-3.  Vypnout podle bity `AND`- ing (bitové & symbol) proměnné s `NOT` (bitový ~ symbol) z příslušné bitovými maskami.  
+3. Vypnout podle bity `AND`- ing (bitové & symbol) proměnné s `NOT` (bitový ~ symbol) z příslušné bitovými maskami.  
   
-4.  Volání `_CrtSetDbgFlag` s `newFlag` parametr nastaven na hodnotu uloženou v dočasné proměnné, chcete-li vytvořit nový stav pro `_crtDbgFlag`.  
+4. Volání `_CrtSetDbgFlag` s `newFlag` parametr nastaven na hodnotu uloženou v dočasné proměnné, chcete-li vytvořit nový stav pro `_crtDbgFlag`.  
   
- Například následující řádky kódu zapnout automatickou detekci nevrácení paměti a vypnou kontrolu bloků typu `_CRT_BLOCK`:  
+   Například následující řádky kódu zapnout automatickou detekci nevrácení paměti a vypnou kontrolu bloků typu `_CRT_BLOCK`:  
   
 ```  
 // Get current flag  

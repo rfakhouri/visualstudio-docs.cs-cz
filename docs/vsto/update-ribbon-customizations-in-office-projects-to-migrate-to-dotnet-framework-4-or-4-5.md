@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d610d5403bfe0341008213c5e4c663196b90229
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937418"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud váš projekt obsahuje vlastní nastavení pásu karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položku projektu, musíte proveďte následující změny do projektu kódu, pokud Cílová architektura, která se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později.  
@@ -119,18 +119,18 @@ ms.locfileid: "39252519"
   
  Existují dva způsoby přístupu k <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu:  
   
--   Pomocí vlastnosti objekt pro vytváření třídy pásu karet. Použijte tento přístup z kódu ve své třídě pásu karet.  
+- Pomocí vlastnosti objekt pro vytváření třídy pásu karet. Použijte tento přístup z kódu ve své třídě pásu karet.  
   
--   S použitím `Globals.Factory.GetRibbonFactory` metody. Použijte tento přístup z kódu mimo svou třídu pásu karet. Další informace o třídě Globals, naleznete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md).  
+- S použitím `Globals.Factory.GetRibbonFactory` metody. Použijte tento přístup z kódu mimo svou třídu pásu karet. Další informace o třídě Globals, naleznete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Následující příklad kódu ukazuje, jak vytvořit <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> ve třídě pásu karet v projektu, který se zaměřuje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.  
+  Následující příklad kódu ukazuje, jak vytvořit <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> ve třídě pásu karet v projektu, který se zaměřuje [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
  Následující tabulka uvádí můžete programově vytvořit ovládací prvky a metody pro použití k vytvoření ovládacích prvků v projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.  
   
 |Ovládací prvek|Metoda RibbonFactory pro použití v [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější projekty|  
-|-------------|---------------------------------------------------------------------------------------------------------------|  
+|-------------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonCheckBox%2A>|  
@@ -155,7 +155,7 @@ ms.locfileid: "39252519"
  Následující tabulka uvádí události pásu karet a delegáty, které jsou spojeny s nimi v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.  
   
 |Událost|Delegát pro použití v [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější projekty|  
-|-----------|---------------------------------------------------------------------------------------------------|  
+|-----------| - |  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> událost v generované třídě pásu karet|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
@@ -165,11 +165,11 @@ ms.locfileid: "39252519"
   
  Existují dva způsoby přístupu k <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu:  
   
--   S použitím `Factory` vlastnosti třídy pásu karet. Použijte tento přístup z kódu ve své třídě pásu karet.  
+- S použitím `Factory` vlastnosti třídy pásu karet. Použijte tento přístup z kódu ve své třídě pásu karet.  
   
--   S použitím `Globals.Factory.GetRibbonFactory` metody. Použijte tento přístup z kódu mimo svou třídu pásu karet. Další informace o třídě Globals, naleznete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md).  
+- S použitím `Globals.Factory.GetRibbonFactory` metody. Použijte tento přístup z kódu mimo svou třídu pásu karet. Další informace o třídě Globals, naleznete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Následující příklad kódu ukazuje, jak nastavit `Position` vlastnosti karty ve třídě pásu karet v projektu, který cílí na rozhraní .NET Framework 3.5.  
+  Následující příklad kódu ukazuje, jak nastavit `Position` vlastnosti karty ve třídě pásu karet v projektu, který cílí na rozhraní .NET Framework 3.5.  
   
 ```vb  
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  

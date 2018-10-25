@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922195"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ Tento názorný ukazuje, jak vytvořit základní "formy nad daty" aplikace v sa
   
 ## <a name="create-the-model"></a>Vytvoření modelu  
   
-1.  Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolte **přidat &#124; nová položka**. V levém podokně pod uzlem jazyka C# vyberte **Data** a v prostředním podokně vyberte **datový Model Entity ADO.NET**.  
+1. Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolte **přidat &#124; nová položka**. V levém podokně pod uzlem jazyka C# vyberte **Data** a v prostředním podokně vyberte **datový Model Entity ADO.NET**.  
   
-     ![Entity Framework Model novou položku projektu](../data-tools/media/raddata-ef-new-project-item.png "raddata EF novou položku projektu")  
+    ![Entity Framework Model novou položku projektu](../data-tools/media/raddata-ef-new-project-item.png "raddata EF novou položku projektu")  
   
-2.  Volání modelu `Northwind_model` a na tlačítko OK. Tím se zobrazí **Průvodce datovým modelem Entity**. Zvolte **EF designeru z databáze** a potom klikněte na tlačítko **Další**.  
+2. Volání modelu `Northwind_model` a na tlačítko OK. Tím se zobrazí **Průvodce datovým modelem Entity**. Zvolte **EF designeru z databáze** a potom klikněte na tlačítko **Další**.  
   
-     ![EF Model z databáze](../data-tools/media/raddata-ef-model-from-database.png "raddata modelu EF z databáze")  
+    ![EF Model z databáze](../data-tools/media/raddata-ef-model-from-database.png "raddata modelu EF z databáze")  
   
-3.  Na další obrazovce vyberte váš LocalDB Northwind připojení a na **Další**.  
+3. Na další obrazovce vyberte váš LocalDB Northwind připojení a na **Další**.  
   
-4.  Na další stránce průvodce zvolíme, které tabulky, uložené procedury a ostatních databázových objektů chcete zahrnout do modelu Entity Framework. Rozbalte uzel dbo ve stromovém zobrazení a zvolte zákazníky, objednávky a podrobnostmi o objednávce. Ponechte zaškrtnuté políčko výchozí hodnoty a klikněte na **Dokončit**.  
+4. Na další stránce průvodce zvolíme, které tabulky, uložené procedury a ostatních databázových objektů chcete zahrnout do modelu Entity Framework. Rozbalte uzel dbo ve stromovém zobrazení a zvolte zákazníky, objednávky a podrobnostmi o objednávce. Ponechte zaškrtnuté políčko výchozí hodnoty a klikněte na **Dokončit**.  
   
-     ![Zvolit databázové objekty modelu](../data-tools/media/raddata-choose-ef-objects.png "raddata zvolte EF objekty")  
+    ![Zvolit databázové objekty modelu](../data-tools/media/raddata-choose-ef-objects.png "raddata zvolte EF objekty")  
   
-5.  Průvodce vygeneruje třídy C#, které představují model Entity Framework. Jedná se o prostý staré třídy jazyka C# a jsou co jsme se databind do uživatelského rozhraní WPF. Soubor .edmx popisuje vztahy a další metadata, která přidružuje třídy objektů v databázi.  Soubory .tt jsou šablony T4, které generují kód, které budou fungovat na modelu a uložte změny do databáze. Zobrazí se všechny tyto soubory v Průzkumníku řešení pod uzlem Northwind_model:  
+5. Průvodce vygeneruje třídy C#, které představují model Entity Framework. Jedná se o prostý staré třídy jazyka C# a jsou co jsme se databind do uživatelského rozhraní WPF. Soubor .edmx popisuje vztahy a další metadata, která přidružuje třídy objektů v databázi.  Soubory .tt jsou šablony T4, které generují kód, které budou fungovat na modelu a uložte změny do databáze. Zobrazí se všechny tyto soubory v Průzkumníku řešení pod uzlem Northwind_model:  
   
-     ![Soubory modelu EF v Průzkumníku řešení](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata soubory modelu EF Průzkumníka řešení")  
+    ![Soubory modelu EF v Průzkumníku řešení](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata soubory modelu EF Průzkumníka řešení")  
   
-     Na plochu návrháře pro soubor .edmx umožňuje změnit některé vlastnosti a vztahy v modelu. Nebudeme použití návrháře v tomto názorném postupu.  
+    Na plochu návrháře pro soubor .edmx umožňuje změnit některé vlastnosti a vztahy v modelu. Nebudeme použití návrháře v tomto názorném postupu.  
   
-6.  Soubory .tt jsou pro obecné účely a My potřebujeme jeden z nich pro práci s datovou vazbou WPF, která vyžaduje ObservableCollections upravit.  V Průzkumníku řešení rozbalte uzel Northwind_model, dokud nenajdete Northwind_model.tt. (Ujistěte se, že jste **není** v *. Kontext .tt soubor, který je přímo pod soubor .edmx).  
+6. Soubory .tt jsou pro obecné účely a My potřebujeme jeden z nich pro práci s datovou vazbou WPF, která vyžaduje ObservableCollections upravit.  V Průzkumníku řešení rozbalte uzel Northwind_model, dokud nenajdete Northwind_model.tt. (Ujistěte se, že jste **není** v *. Kontext .tt soubor, který je přímo pod soubor .edmx).  
   
-    -   Nahraďte dva výskyty <xref:System.Collections.ICollection> s <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   -   Nahraďte dva výskyty <xref:System.Collections.ICollection> s <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-    -   Nahraďte první výskyt <xref:System.Collections.Generic.HashSet%601> s <xref:System.Collections.ObjectModel.ObservableCollection%601> kolem řádku 51. Druhým výskytem HashSet nenahrazují  
+   -   Nahraďte první výskyt <xref:System.Collections.Generic.HashSet%601> s <xref:System.Collections.ObjectModel.ObservableCollection%601> kolem řádku 51. Druhým výskytem HashSet nenahrazují  
   
-    -   Nahradit jenom výskyt <xref:System.Collections.Generic> (kolem řádku 334) s <xref:System.Collections.ObjectModel>.  
+   -   Nahradit jenom výskyt <xref:System.Collections.Generic> (kolem řádku 334) s <xref:System.Collections.ObjectModel>.  
   
-7.  Stisknutím klávesy **Ctrl + Shift + B** k sestavení projektu. Po dokončení sestavení jsou viditelné v Průvodci zdroje dat třídy modelu.  
+7. Stisknutím klávesy **Ctrl + Shift + B** k sestavení projektu. Po dokončení sestavení jsou viditelné v Průvodci zdroje dat třídy modelu.  
   
- Nyní jsme připraveni k připojení tento model na stránku XAML, jsme mohli zobrazit, přejděte a upravit data.  
+   Nyní jsme připraveni k připojení tento model na stránku XAML, jsme mohli zobrazit, přejděte a upravit data.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>DataBind modelu, který má stránky XAML  
  Je možné psát vlastní kód vázání dat, ale je mnohem jednodušší nechte Visual Studio to pro vás udělal.  

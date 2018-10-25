@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926095"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Vytváření projektů a diagramů pomocí modelování UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ Modely UML pomůžou pochopit, popisují a návrh softwarové systémy. Visual S
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Vytvoření diagramu a přidat do projektu  
   
-1.  Na **architektura** nabídce zvolte **nové UML nebo diagramu vrstev**.  
+1. Na **architektura** nabídce zvolte **nové UML nebo diagramu vrstev**.  
   
-2.  V **přidat nový Diagram** dialogovém okně klikněte na typ diagramu modelování, který chcete.  
+2. V **přidat nový Diagram** dialogovém okně klikněte na typ diagramu modelování, který chcete.  
   
-     ![Přidat nový Diagram dialog](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![Přidat nový Diagram dialog](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  Zadejte název pro nový diagram.  
+3. Zadejte název pro nový diagram.  
   
-4.  V **přidat do projektu modelování** pole:  
+4. V **přidat do projektu modelování** pole:  
   
-    -   Vyberte projekt modelování, který již existuje ve vašem řešení a potom klikněte na tlačítko **OK**.  
+   - Vyberte projekt modelování, který již existuje ve vašem řešení a potom klikněte na tlačítko **OK**.  
   
      \- nebo –  
   
-    1.  Vyberte **vytvořte nový projekt modelování**a potom klikněte na tlačítko **OK**.  
+   1.  Vyberte **vytvořte nový projekt modelování**a potom klikněte na tlačítko **OK**.  
   
-    2.  V **vytvořit nový projekt modelování** dialogové okno, zadejte název a umístění nového projektu a pak klikněte na tlačítko **OK**.  
+   2.  V **vytvořit nový projekt modelování** dialogové okno, zadejte název a umístění nového projektu a pak klikněte na tlačítko **OK**.  
   
-         ![Vytvoření dialogového okna Nový projekt modelování](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![Vytvoření dialogového okna Nový projekt modelování](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         Pokud vaše řešení je otevřen, nový projekt je přidán do řešení. Pokud máte žádné otevřené řešení, můžete zadat název nového řešení.  
+        Pokud vaše řešení je otevřen, nový projekt je přidán do řešení. Pokud máte žádné otevřené řešení, můžete zadat název nového řešení.  
   
- Pokud už máte v modelovacím projektu, můžete také použít následující postup.  
+   Pokud už máte v modelovacím projektu, můžete také použít následující postup.  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Přidání diagramu do existujícího projektu modelování  
   

@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900160"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Zadávání poznámek k parametrům funkcí a návratovým hodnotám
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ Tento článek popisuje typické použití poznámek pro jednoduchou funkci para
   
  **Poznámky a popisy**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     Parametr nemůže mít hodnotu null, a ve stavu po odkazovala na umístění nemůže mít hodnotu null a musí být platný.  
+   Parametr nemůže mít hodnotu null, a ve stavu po odkazovala na umístění nemůže mít hodnotu null a musí být platný.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     Parametr může mít hodnotu null, ale po stavu odkazovala na umístění nemůže mít hodnotu null a musí být platný.  
+   Parametr může mít hodnotu null, ale po stavu odkazovala na umístění nemůže mít hodnotu null a musí být platný.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     Parametr nemůže mít hodnotu null a v po stavu odkazovala na umístění může být null.  
+   Parametr nemůže mít hodnotu null a v po stavu odkazovala na umístění může být null.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     Parametr může mít hodnotu null a v po stavu odkazovala na umístění může být null.  
+   Parametr může mít hodnotu null a v po stavu odkazovala na umístění může být null.  
   
- V následující tabulce jsou další podřetězců vloženy do název poznámky další kvalifikovat význam anotace.  Jsou různé podřetězců `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, a `_to_`.  
+  V následující tabulce jsou další podřetězců vloženy do název poznámky další kvalifikovat význam anotace.  Jsou různé podřetězců `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, a `_to_`.  
   
 > [!IMPORTANT]
 >  Pokud rozhraní, které jsou zadávání poznámek k modelu COM, formulář modelu COM těchto poznámek. U jiných typů rozhraní nepoužívat COM poznámky.  
   
  **Poznámky a popisy**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     Vrácený ukazatel `_Null_terminated_` poznámky.  
+   Vrácený ukazatel `_Null_terminated_` poznámky.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     Vrácenému ukazateli má sémantiku modelu COM a proto má `_On_failure_` po podmínka, vrácený ukazatel je null.  
+   Vrácenému ukazateli má sémantiku modelu COM a proto má `_On_failure_` po podmínka, vrácený ukazatel je null.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     Vrácený ukazatel odkazuje na platnou vyrovnávací paměť o velikosti `s` elementy nebo bajtů.  
+   Vrácený ukazatel odkazuje na platnou vyrovnávací paměť o velikosti `s` elementy nebo bajtů.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     Vrácený ukazatel odkazuje na vyrovnávací paměť o velikosti `s` elementy nebo bajtů, z nichž první `c` jsou platné.  
+   Vrácený ukazatel odkazuje na vyrovnávací paměť o velikosti `s` elementy nebo bajtů, z nichž první `c` jsou platné.  
   
- Určité konvence rozhraní předpokládá, že výstupní parametry budou zrušeny při selhání.  S výjimkou výslovně kód v modelu COM jsou upřednostňovanou formuláře v následující tabulce.  Pro kód v modelu COM použijte odpovídající formuláře modelu COM, které jsou uvedené v předchozí části.  
+  Určité konvence rozhraní předpokládá, že výstupní parametry budou zrušeny při selhání.  S výjimkou výslovně kód v modelu COM jsou upřednostňovanou formuláře v následující tabulce.  Pro kód v modelu COM použijte odpovídající formuláře modelu COM, které jsou uvedené v předchozí části.  
   
- **Poznámky a popisy**  
+  **Poznámky a popisy**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Upravuje se další poznámky. Výsledek je nastaven na hodnotu null, pokud funkce selže.  
+   Upravuje se další poznámky. Výsledek je nastaven na hodnotu null, pokud funkce selže.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Upravuje se další poznámky. Výsledek je nastaven na hodnotu nula, pokud funkce selže.  
+   Upravuje se další poznámky. Výsledek je nastaven na hodnotu nula, pokud funkce selže.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka je povinný parametr.  
+   Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka je povinný parametr.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka je volitelný parametr.  
+   Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka je volitelný parametr.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka se pro referenční parametr.  
+   Vrácený ukazatel odkazuje na platnou vyrovnávací paměť, pokud je funkce úspěšná, nebo hodnota null, pokud funkce selže. Tato poznámka se pro referenční parametr.  
   
 ## <a name="output-reference-parameters"></a>Výstupní parametry odkazu  
  Běžné použití parametru odkaz je pro výstupní parametry.  Pro jednoduché výstupní parametry odkaz – například `int&`–`_Out_` poskytne tak sémantiku správné.  Ale když výstupní hodnota je ukazatel – například `int *&`– poznámky ekvivalentní ukazatel, jako jsou `_Outptr_ int **` neposkytují správné sémantiku.  Stručně a výstižně express sémantiku odkazu výstupních parametrů pro typy ukazatelů, použijte tyto složené poznámky:  

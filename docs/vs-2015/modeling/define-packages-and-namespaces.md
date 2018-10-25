@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915014"
 ---
 # <a name="define-packages-and-namespaces"></a>Definování balíčků a oborů názvů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Chcete-li vytvořit balíček v Průzkumníku modelů UML  
   
-1.  Otevřít **Průzkumníku modelů UML**. Na **architektura** nabídky, přejděte k **Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
+1. Otevřít **Průzkumníku modelů UML**. Na **architektura** nabídky, přejděte k **Windows**a potom klikněte na tlačítko **Průzkumníku modelů UML**.  
   
-2.  Klikněte pravým tlačítkem na balíček nebo model, ke kterému chcete přidat nový balíček.  
+2. Klikněte pravým tlačítkem na balíček nebo model, ke kterému chcete přidat nový balíček.  
   
-    > [!NOTE]
-    >  Je možné vnořovat balíček uvnitř jiného balíčku.  
+   > [!NOTE]
+   >  Je možné vnořovat balíček uvnitř jiného balíčku.  
   
-3.  Přejděte na **přidat** a potom klikněte na tlačítko **balíčku**.  
+3. Přejděte na **přidat** a potom klikněte na tlačítko **balíčku**.  
   
-     V modelu se zobrazí nový balíček.  
+    V modelu se zobrazí nový balíček.  
   
-4.  Zadejte nový název pro balíček.  
+4. Zadejte nový název pro balíček.  
   
- Když vytvoříte balíček v Průzkumníku modelů UML je můžete zobrazit v diagramu tříd UML. Balíček můžete zobrazit také na více než jednoho diagramu tříd UML.  
+   Když vytvoříte balíček v Průzkumníku modelů UML je můžete zobrazit v diagramu tříd UML. Balíček můžete zobrazit také na více než jednoho diagramu tříd UML.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Chcete-li zobrazit existující balíček v diagramu tříd UML  
   
@@ -103,15 +103,15 @@ V sadě Visual Studio *balíčku* je kontejner pro definice elementů UML, jako 
 ##  <a name="Elements"></a> Vytvoření modelu elementů v rámci balíčky  
  Existují čtyři způsoby, ve kterých můžete umístit prvky modelu uvnitř balíčku:  
   
--   Přidáte nový prvek do balíčku v Průzkumníku modelů UML.  
+- Přidáte nový prvek do balíčku v Průzkumníku modelů UML.  
   
--   Přidáte třídami a ostatními typy balíčků v diagramu tříd UML.  
+- Přidáte třídami a ostatními typy balíčků v diagramu tříd UML.  
   
--   Nastavte **LinkedPackage** vlastnictví diagramu tak, aby nové prvky vytvořené v diagramu jsou umístěné uvnitř balíčku, který zadáte. Do balíčku tímto způsobem lze propojit diagramů tříd, komponenta diagramy a diagramy případů použití.  
+- Nastavte **LinkedPackage** vlastnictví diagramu tak, aby nové prvky vytvořené v diagramu jsou umístěné uvnitř balíčku, který zadáte. Do balíčku tímto způsobem lze propojit diagramů tříd, komponenta diagramy a diagramy případů použití.  
   
--   Přesuňte elementy do nebo z něj balíček v Průzkumníku modelů UML.  
+- Přesuňte elementy do nebo z něj balíček v Průzkumníku modelů UML.  
   
- Element v balíčku se zobrazí pod balíček v Průzkumníku modelů UML a jeho kvalifikovaný název začíná na úplný název balíčku. Pokud chcete zobrazit úplný název libovolný element, klikněte pravým tlačítkem na prvek a potom klikněte na **vlastnosti**. **Kvalifikovaný název** vlastnost se zobrazí v **vlastnosti** okna.  
+  Element v balíčku se zobrazí pod balíček v Průzkumníku modelů UML a jeho kvalifikovaný název začíná na úplný název balíčku. Pokud chcete zobrazit úplný název libovolný element, klikněte pravým tlačítkem na prvek a potom klikněte na **vlastnosti**. **Kvalifikovaný název** vlastnost se zobrazí v **vlastnosti** okna.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Chcete-li vytvořit element v balíčku v Průzkumníku modelů UML  
   

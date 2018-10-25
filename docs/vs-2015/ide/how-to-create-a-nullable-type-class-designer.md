@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941942"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytváření typů s povolenou hodnotou Null (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To
   
  Typy s možnou hodnotou Null jsou instance <xref:System.Nullable%601> struktury. Každá instance typu s možnou hodnotou Null má dvě veřejné vlastnosti jen pro čtení `HasValue` a `Value`:  
   
--   `HasValue` je typu `bool` a určuje, zda je proměnná obsahuje definovanou hodnotu. `True` znamená to, že proměnná obsahuje hodnotu než null. Můžete otestovat pomocí příkazu pro definovanou hodnotou `if (x.HasValue)` nebo `if (y != null)`.  
+- `HasValue` je typu `bool` a určuje, zda je proměnná obsahuje definovanou hodnotu. `True` znamená to, že proměnná obsahuje hodnotu než null. Můžete otestovat pomocí příkazu pro definovanou hodnotou `if (x.HasValue)` nebo `if (y != null)`.  
   
--   `Value` je stejného typu jako základní typ. Pokud `HasValue` je `True`, `Value` obsahuje smysluplnou hodnotu. Pokud `HasValue` je `False`, přístup k `Value` vyvolá výjimku neplatná operace.  
+- `Value` je stejného typu jako základní typ. Pokud `HasValue` je `True`, `Value` obsahuje smysluplnou hodnotu. Pokud `HasValue` je `False`, přístup k `Value` vyvolá výjimku neplatná operace.  
   
- Ve výchozím nastavení, pokud deklarujete proměnnou jako typ s možnou hodnotou Null nemá žádné definované hodnoty (`HasValue` je `False`), jiné než výchozí hodnotu jeho základní typ hodnoty.  
+  Ve výchozím nastavení, pokud deklarujete proměnnou jako typ s možnou hodnotou Null nemá žádné definované hodnoty (`HasValue` je `False`), jiné než výchozí hodnotu jeho základní typ hodnoty.  
   
- Návrhář tříd zobrazí typ připouštějící hodnotu Null, stejně jako zobrazí jeho nadřízeného typu.  
+  Návrhář tříd zobrazí typ připouštějící hodnotu Null, stejně jako zobrazí jeho nadřízeného typu.  
   
- Další informace o typech s povolenou hodnotou Null v jazyce Visual C# najdete v tématu [typy připouštějící hodnotu Null](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Další informace o typech s povolenou hodnotou Null v jazyce Visual Basic najdete v tématu [hodnotové typy s možnou hodnotou Null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Další informace o typech s povolenou hodnotou Null v jazyce Visual C# najdete v tématu [typy připouštějící hodnotu Null](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Další informace o typech s povolenou hodnotou Null v jazyce Visual Basic najdete v tématu [hodnotové typy s možnou hodnotou Null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Chcete-li přidat typ připouštějící hodnotu Null pomocí návrháře tříd  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871287b62506408139ddc62d624391bfa73c86ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3aef071d0c124878adf58d8346ad0b50f741300b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931347"
 ---
 # <a name="scccreatesubproject-function"></a>Scccreatesubproject – funkce
 Tato funkce vytvoří dílčí projekt s daným názvem. v rámci existující projekt nadřazené určené `lpParentProjPath` argument.  
@@ -97,4 +97,4 @@ SCCRTN SccCreateSubProject(
 ## <a name="see-also"></a>Viz také:  
  [Funkce modulu plug-in API zdrojového ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
  [Sccgetparentprojectpath –](../extensibility/sccgetparentprojectpath-function.md)   
- [Sccgetprojpath –](../extensibility/sccgetprojpath-function.md)
+ [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950014"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Správa výsledků zátěžových testů v úložiště výsledků testu zátěže
 
@@ -44,7 +44,7 @@ Při spuštění zátěžových testů v mohou být uloženy všechny informace 
 ## <a name="load-test-analyzer-tasks"></a>Načtení úlohy Analyzéru testu
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Úložiště výsledků zátěžového testu nastavte:** můžete nastavit úložiště výsledků zátěžového testu na SQL database. **Poznámka:** úložiště zátěžového testu můžete také vytvořit při instalaci řadiče testu. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).||
 |**Výběr a zobrazení úložiště výsledků:** můžete vybrat konkrétní úložiště výsledků. Nejste omezeni na úložiště místních výsledků. Často jsou zátěžové testy spuštěny na vzdálené sadě počítačů agentů. Výsledky testu z agentů nebo místního počítače můžete uložit na každý serversql, na kterém jste vytvořili úložiště výsledků zátěžového testu. V obou případech je nutné určit, kam se mají ukládat výsledky zátěžového testu s použitím **Správa testovacích Kontrolérů** okna.|-   [Postupy: Výběr úložiště výsledků zátěžového testu](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Odstranění výsledku zátěžového testu z úložiště:** můžete odebrat výsledek zátěžového testu z **editoru zátěžového testu** pomocí **otevřít a spravovat výsledky zátěžového testu** dialogové okno.|-   [Postupy: výsledků zátěžového testu odstranit z úložiště](../test/how-to-delete-load-test-results-from-a-repository.md)|

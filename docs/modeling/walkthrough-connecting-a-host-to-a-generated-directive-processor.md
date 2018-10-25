@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896234"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
 
@@ -33,21 +33,22 @@ V tomto podrobném návodu rozbalte vlastního hostitele tak, aby podporoval tex
 
 Tento návod zahrnuje následující úlohy:
 
--   Pomocí [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ke generování procesoru direktiv, který je založen na modelu domény.
+- Pomocí [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ke generování procesoru direktiv, který je založen na modelu domény.
 
--   Připojení vlastního hostitele textových šablon k procesoru vygenerovaných direktiv.
+- Připojení vlastního hostitele textových šablon k procesoru vygenerovaných direktiv.
 
--   Testování vlastního hostitele s procesoru vygenerovaných direktiv.
+- Testování vlastního hostitele s procesoru vygenerovaných direktiv.
 
 ## <a name="prerequisites"></a>Požadavky
 
 Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualization and Modeling SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualization and Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Kromě toho musí mít vlastní textovou šablonu můžete vytvořit v [návod: 
 
 V tomto názorném postupu použijete k vytvoření jazyka specifického pro doménu pro řešení DSLMinimalTest Průvodce návrháře jazyka specifického pro doménu.
 
-1.  Vytváření řešení jazyka specifického pro doménu, která má následující vlastnosti:
+1. Vytváření řešení jazyka specifického pro doménu, která má následující vlastnosti:
 
-    -   Název: DSLMinimalTest
+   -   Název: DSLMinimalTest
 
-    -   Šablona řešení: minimální jazykový
+   -   Šablona řešení: minimální jazykový
 
-    -   Přípona souboru: min
+   -   Přípona souboru: min
 
-    -   Název společnosti: Fabrikam
+   -   Název společnosti: Fabrikam
 
    Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
-    > [!IMPORTANT]
-    > Tento krok vygeneruje procesoru direktiv a přidá klíč pro něj v registru.
+   > [!IMPORTANT]
+   > Tento krok vygeneruje procesoru direktiv a přidá klíč pro něj v registru.
 
-3.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.
+3. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.
 
-     Otevře se druhá instance sady Visual Studio.
+    Otevře se druhá instance sady Visual Studio.
 
-4.  V experimentální sestavení v **Průzkumníka řešení**, poklikejte na soubor **sample.min**.
+4. V experimentální sestavení v **Průzkumníka řešení**, poklikejte na soubor **sample.min**.
 
-     Soubor se otevře v návrháři. Všimněte si, že model má dva prvky, ExampleElement1 a ExampleElement2 a propojení mezi nimi.
+    Soubor se otevře v návrháři. Všimněte si, že model má dva prvky, ExampleElement1 a ExampleElement2 a propojení mezi nimi.
 
-5.  Zavřete druhou instanci aplikace Visual Studio.
+5. Zavřete druhou instanci aplikace Visual Studio.
 
-6.  Uložte řešení a pak zavřete návrháře jazyka specifického pro doménu.
+6. Uložte řešení a pak zavřete návrháře jazyka specifického pro doménu.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Připojte se vlastního hostitele textových šablon k procesoru direktiv
 

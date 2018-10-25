@@ -1,6 +1,6 @@
 ---
-title: Co je nového v sadě Visual Studio odběrů
-description: Další informace o nové a aktualizované funkce, které můžete spravovat odběry Visual Studio.
+title: Co je nového v předplatných sady Visual Studio
+description: Další informace o nových a aktualizovaných funkcích, které můžete použít ke správě předplatných sady Visual Studio.
 ms.custom: ''
 ms.date: 06/25/2018
 ms.prod: vs-subscription
@@ -10,59 +10,59 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.openlocfilehash: e4f785902c200b79a2647f2d5c780062bd7e358f
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36947479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927226"
 ---
-# <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s nového v sadě Visual Studio odběrů
+# <a name="what39s-new-in-visual-studio-subscriptions"></a>Co&#39;s novou v předplatných sady Visual Studio
 
-Budeme aktualizovat balíček předplatné výhody často, aby bylo užitečnější pro vás. Přečtěte si další informace o nejnovějších funkcí, čtvrtletně seřazeny.
+Budeme aktualizovat balíček výhod předplatného často mají být ještě užitečnější pro vás. Přečtěte si další informace o nejnovějších funkcích čtvrtletně seřazeny.
 
 ## <a name="2018-q2-april-june"></a>2. čtvrtletí 2018 (duben–červen)
 
-Zde je rychlý rekapitulace co je nového v Dotaz č. 2.
+Tady je rychlá rekapitulace toho, co je nového v 2. čtvrtletí.
 
-### <a name="cloud-administrators"></a>Správce cloudu
+### <a name="cloud-administrators"></a>Správci cloudu
 
-Jsme přidali nové funkce pro správce cloudu, který je snazší spravovat předplatná cloudu:
+Přidali jsme nové funkce pro správce cloudu, umožňující snadnější správa cloudových předplatných:
 
-* [**Hromadné přiřazení**](/visualstudio/subscriptions/assign-license#bulk-assignments): Přidání a nahrát více odběrateli, hromadně.
+* [**Hromadné přiřazení**](/visualstudio/subscriptions/assign-license#bulk-assignments): Přidání a načíst několik předplatitelů hromadně.
 
- ![Přidávání více uživatelů pomocí hromadné přidání tlačítka](media\bulk-add-multiple-subscribers.png)
+  ![Přidávání více uživatelů pomocí hromadné přidání tlačítka](media/bulk-add-multiple-subscribers.png)
 
-* [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Exportovat seznam uživatelů a podrobnosti o jejich přiřazení. Seznam například to může být užitečné zejména, pokud chcete sledovat, přiřazení a data vypršení platnosti.
+* [**Export**](/visualstudio/subscriptions/exporting-subscriptions): Exportovat seznam uživatelů a podrobnosti o jejich přiřazení. Seznam například to může být velmi užitečné, pokud chcete ke sledování přiřazení a datum vypršení platnosti.
 
-   ![Export seznamu odběratelů do aplikace Excel pomocí tlačítko pro Export](media\export-subscriber-list-to-csv.png)
+   ![Exportovat seznam předplatitelů do aplikace Excel s použitím tlačítko pro Export](media/export-subscriber-list-to-csv.png)
 
 
-* [**Hromadná úprava**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Upravit informace o předplatném více odběratelů hromadně.
+* [**Hromadná úprava**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): Upravte informace o předplatném několik předplatitelů hromadně.
 
- ![Úprava více uživatelů pomocí tlačítka Upravit hromadné](media\bulk-edit-multiple-subscribers.png)
+  ![Úprava více uživatelů pomocí tlačítka hromadných úprav](media/bulk-edit-multiple-subscribers.png)
 
-* Prozkoumat nové pole, která jsou k dispozici v [ **přidat předplatné** prostředí](assign-license.md):
+* Prozkoumejte nová pole, které jsou k dispozici v [ **přidat předplatné** prostředí](assign-license.md):
 
-  * **E-mailové oznámení**: Pokud vaše organizace nepoužívá Azure AD a chcete použít jinou e-mailové oznámení než přihlášení e-mailu, můžete ho přidat.
+  * **E-mailové oznámení**: Pokud vaše organizace nepoužívá Azure AD a chcete použít jinou e-mailová oznámení než přihlašovací e-mailu, můžete ho přidat.
 
-    ![Přidat novou e-mailová adresa oznámení](media\add-new-subscriber-notification-email.png)
+    ![Přidáte novou e-mailovou adresu oznámení](media/add-new-subscriber-notification-email.png)
 
-  * **Předvolby komunikace**: Zvolte jazyk, který chcete používat k odesílání e-mailů přiřazení.
+  * **Předvolby komunikace**: Zvolte jazyk, který chcete použít k odesílání e-mailů přiřazení.
 
-    ![Změnit jazyk pro použití při odesílání oznámení e-mailů](media\change-subscriber-communication-preference.png)
+    ![Změnit jazyk, který chcete použít při odesílání oznámení e-mailů](media/change-subscriber-communication-preference.png)
 
-  * **Přidat odkaz**: Přidání odkazu poznámky pro odběry, které spravujete.
+  * **Přidat odkaz na**: Přidání odkazu poznámky pro předplatná, která spravujete.
 
-    ![Přidat vlastní odkaz poznámky pro každé předplatné](media\add-subscriber-reference-notes.png)
+    ![Přidat poznámky odkaz na předplatné](media/add-subscriber-reference-notes.png)
 
-* [**Opětovné odeslání e-mailu přiřazení**](resend-assignment-email.md): znovu odeslat e-mailové oznámení pro každý, kdo si na seznam odběratele a jako tolikrát, kolikrát chcete.
+* [**Znovu poslat e-mail s přiřazením**](resend-assignment-email.md): znovu odeslat e-mailové oznámení všem uživatelům ve vašem seznamu odběratele a pro libovolný počet, kolikrát chcete.
 
-  ![Znovu odeslat e-mail aktivace pro všechny uživatele nebo více uživatelů, kdykoli budete chtít](media\resend-subscriber-activation-emails.png)
+  ![Znovu poslat aktivační e-mail pro všechny uživatele nebo více uživatelů, pokaždé, když chcete](media/resend-subscriber-activation-emails.png)
 
-* [**Filtr**](search-license.md): uspořádání a filtrování dat odběratele, aby vyhovovalo vašim požadavkům.
+* [**Filtr**](search-license.md): uspořádání a filtrování vaše předplatitelská data do nejlépe vyhovovat vašim potřebám.
 
-  ![Filtrování dat odběratele, jak na základě dostupných polí](media\filter-subscriber-data.png)
+  ![Filtrovat předplatitele data, jak na základě dostupných polí](media/filter-subscriber-data.png)
 
 A je to teď!
 

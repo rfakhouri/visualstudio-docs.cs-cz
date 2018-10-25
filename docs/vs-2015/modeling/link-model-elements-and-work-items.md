@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891749"
 ---
 # <a name="link-model-elements-and-work-items"></a>Propojení prvků modelu a pracovních položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Sledujte úkoly, testovací případy, chyby, požadavky, problémy a další pr
   
  Propojit můžete například:  
   
--   Pracovní položku uživatelského scénáře a diagram aktivity, chcete-li zobrazit, jak vytvořit scénář jako posloupnost operací  
+- Pracovní položku uživatelského scénáře a diagram aktivity, chcete-li zobrazit, jak vytvořit scénář jako posloupnost operací  
   
--   Případ použití v diagramu případu a pracovní položky testovacího případu, chcete-li se ujistit, že je případ použití implementován správně  
+- Případ použití v diagramu případu a pracovní položky testovacího případu, chcete-li se ujistit, že je případ použití implementován správně  
   
--   Atribut ve třídě v diagramu tříd UML a pracovní položku chyby, chcete-li zobrazit chybu v implementaci atributu  
+- Atribut ve třídě v diagramu tříd UML a pracovní položku chyby, chcete-li zobrazit chybu v implementaci atributu  
   
--   Komponentu v diagramu komponent a pracovní položku úkolu, chcete-li sledovat vývoj komponenty. Taková úloha je obvykle rozdělena na menší úlohy  
+- Komponentu v diagramu komponent a pracovní položku úkolu, chcete-li sledovat vývoj komponenty. Taková úloha je obvykle rozdělena na menší úlohy  
   
- Pracovní položky je možné spojit s libovolným prvkem, který lze vybrat v diagramech modelování nebo v Průzkumníku modelů UML, jako tyto položky:  
+  Pracovní položky je možné spojit s libovolným prvkem, který lze vybrat v diagramech modelování nebo v Průzkumníku modelů UML, jako tyto položky:  
   
--   Všechny prvky v modelech UML, jako jsou například třídy UML, životní dráhy, případy použití, podsystémy, aktivity, uzly objektů, komponenty, rozhraní  
+- Všechny prvky v modelech UML, jako jsou například třídy UML, životní dráhy, případy použití, podsystémy, aktivity, uzly objektů, komponenty, rozhraní  
   
--   Všechny vztahy v modelech UML, jako jsou například asociace, generalizace, závislosti, toky, zprávy  
+- Všechny vztahy v modelech UML, jako jsou například asociace, generalizace, závislosti, toky, zprávy  
   
--   Části prvků, jako jsou například atributy a operace tříd, výskyty spuštění životních drah, vstupní a výstupní spojky aktivit a části a porty komponent  
+- Části prvků, jako jsou například atributy a operace tříd, výskyty spuštění životních drah, vstupní a výstupní spojky aktivit a části a porty komponent  
   
--   Vrstvy a závislosti vrstev  
+- Vrstvy a závislosti vrstev  
   
--   Komentáře a odkazy komentářů  
+- Komentáře a odkazy komentářů  
   
--   Diagramy. Chcete-li zvolit diagram, vyberte prázdnou část diagramu.  
+- Diagramy. Chcete-li zvolit diagram, vyberte prázdnou část diagramu.  
   
 > [!WARNING]
 >  Musíte už být připojení k TFS zdrojového kódu ovládacího prvku (SCC) vytvořit nebo propojit s pracovní položkou. Pokud se pokusíte otevřít připojení k jiné SCC TFS, Visual Studio automaticky zavře aktuální řešení. Ujistěte se, že jste již připojeni k příslušné SCC než se pokusíte vytvořit nebo propojit s pracovní položkou. V pozdějších verzích sady Visual Studio příkazy nabídky nejsou k dispozici v případě, že nejste připojeni k SCC.  

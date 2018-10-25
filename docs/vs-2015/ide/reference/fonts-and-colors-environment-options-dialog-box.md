@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949432"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ ms.locfileid: "49220703"
  **Zobrazit nastavení pro**  
  Obsahuje seznam všech prvků uživatelského rozhraní, pro které můžete změnit písma a barevná schémata. Po výběru položky z tohoto seznamu můžete upravit nastavení barev pro vybranou položku v **zobrazení položek**.  
   
--   **Textový Editor**  
+- **Textový Editor**  
   
-     Změny styl písma, velikosti a zobrazení nastavení barev pro textový Editor vliv na vzhled textu v textovém editoru výchozí. Tato nastavení se nevztahuje dokumenty otevřené v textovém editoru mimo rozhraní IDE.  
+   Změny styl písma, velikosti a zobrazení nastavení barev pro textový Editor vliv na vzhled textu v textovém editoru výchozí. Tato nastavení se nevztahuje dokumenty otevřené v textovém editoru mimo rozhraní IDE.  
   
--   **Tiskárny**  
+- **Tiskárny**  
   
-     Změny styl písma, velikosti a zobrazení nastavení barev pro tiskárnu vliv na vzhled textu v dokumentu.  
+   Změny styl písma, velikosti a zobrazení nastavení barev pro tiskárnu vliv na vzhled textu v dokumentu.  
   
-    > [!NOTE]
-    >  Podle potřeby, můžete vybrat různé výchozí písmo pro tisk než, který používá pro zobrazení v textovém editoru. To může být užitečné při tisku kódu, který obsahuje jednobajtových a dvoubajtových znaků.  
+  > [!NOTE]
+  >  Podle potřeby, můžete vybrat různé výchozí písmo pro tisk než, který používá pro zobrazení v textovém editoru. To může být užitečné při tisku kódu, který obsahuje jednobajtových a dvoubajtových znaků.  
   
--   **Dokončování příkazů**  
+- **Dokončování příkazů**  
   
-     Změní styl písma a velikost textu, který se zobrazí v doplňování výrazů rozbalovací v editoru.  
+   Změní styl písma a velikost textu, který se zobrazí v doplňování výrazů rozbalovací v editoru.  
   
--   **Nápověda editoru**  
+- **Nápověda editoru**  
   
-     Změní styl písma a velikost textu, který se zobrazí v popisu zobrazí v editoru.  
+   Změní styl písma a velikost textu, který se zobrazí v popisu zobrazí v editoru.  
   
--   **Písmo prostředí**  
+- **Písmo prostředí**  
   
-     Mění styl písma a velikost pro všechny prvky uživatelského rozhraní IDE, které ještě nemají samostatnou možností v **zobrazit nastavení pro.** Například tato možnost se vztahuje na **úvodní stránka** ale nebude mít vliv **výstup** okna.  
+   Mění styl písma a velikost pro všechny prvky uživatelského rozhraní IDE, které ještě nemají samostatnou možností v **zobrazit nastavení pro.** Například tato možnost se vztahuje na **úvodní stránka** ale nebude mít vliv **výstup** okna.  
   
--   **[Všechny textový nástroj Windows]**  
+- **[Všechny textový nástroj Windows]**  
   
-     Změny písmo, velikost a barvu zobrazit nastavení pro tuto položku vliv na vzhled textu v oknech nástrojů, které mají výstupní podokna v integrovaném vývojovém prostředí. Například okno výstup, okno příkazového řádku, hodnot proměnných atd.  
+   Změny písmo, velikost a barvu zobrazit nastavení pro tuto položku vliv na vzhled textu v oknech nástrojů, které mají výstupní podokna v integrovaném vývojovém prostředí. Například okno výstup, okno příkazového řádku, hodnot proměnných atd.  
   
-    > [!NOTE]
-    >  Změní text **[všechny textový nástroj Windows]** položky projeví během relace, ve kterém je provedete. Můžete si vyzkoušet tyto změny tak, že otevřete jinou instanci aplikace Visual Studio.  
+  > [!NOTE]
+  >  Změní text **[všechny textový nástroj Windows]** položky projeví během relace, ve kterém je provedete. Můžete si vyzkoušet tyto změny tak, že otevřete jinou instanci aplikace Visual Studio.  
   
- **Použít výchozí nastavení**  
- Obnoví písma a barvy hodnoty seznamu položky vybrané v **zobrazit nastavení pro**. **Použití** tlačítko se zobrazí, když jsou k dispozici pro výběr jiné režimy zobrazení. Můžete například zvolit ze dvou režimů tiskárny.  
+  **Použít výchozí nastavení**  
+  Obnoví písma a barvy hodnoty seznamu položky vybrané v **zobrazit nastavení pro**. **Použití** tlačítko se zobrazí, když jsou k dispozici pro výběr jiné režimy zobrazení. Můžete například zvolit ze dvou režimů tiskárny.  
   
- **Písmo (tučné písmo označuje neproporcionální písma)**  
- Zobrazí seznam všech písem nainstalovaný ve vašem systému. Když poprvé objeví v rozevírací nabídce, aktuální písmo vybrané v elementu **zobrazit nastavení pro** pole je zvýrazněn. Oprava písma – což je snazší zarovnání v editoru – zobrazí tučným písmem.  
+  **Písmo (tučné písmo označuje neproporcionální písma)**  
+  Zobrazí seznam všech písem nainstalovaný ve vašem systému. Když poprvé objeví v rozevírací nabídce, aktuální písmo vybrané v elementu **zobrazit nastavení pro** pole je zvýrazněn. Oprava písma – což je snazší zarovnání v editoru – zobrazí tučným písmem.  
   
- **Velikost**  
- Seznamy, které jsou k dispozici bod velikosti zvýrazněné písma. Změna velikosti písma ovlivní všechny **zobrazení položek** pro **zobrazit nastavení pro** výběru.  
+  **Velikost**  
+  Seznamy, které jsou k dispozici bod velikosti zvýrazněné písma. Změna velikosti písma ovlivní všechny **zobrazení položek** pro **zobrazit nastavení pro** výběru.  
   
- **Zobrazení položek**  
- Zobrazí seznam položek, pro které můžete změnit barvu popředí a pozadí.  
+  **Zobrazení položek**  
+  Zobrazí seznam položek, pro které můžete změnit barvu popředí a pozadí.  
   
 > [!NOTE]
 >  **Prostý Text** je výchozí zobrazení položky. V důsledku toho vlastnosti přiřazená **ve formátu prostého textu** podle vlastností, které jsou přiřazeny k ostatním položkám zobrazení, budou ignorovány. Například, pokud přiřadíte k modrou barvu **ve formátu prostého textu** a na zelenou barvu **identifikátor**, všechny identifikátory se zobrazí zeleně. V tomto příkladu **identifikátor** přepsání vlastnosti **ve formátu prostého textu** vlastnosti.  

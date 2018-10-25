@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912620"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura přizpůsobení na úrovni dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zahrnuje projekty pro vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word a Microsoft Office Excel. Toto téma popisuje následující aspekty přizpůsobení na úrovni dokumentu:  
   
--   [Vysvětlení přizpůsobení](#UnderstandingCustomizations)  
+- [Vysvětlení přizpůsobení](#UnderstandingCustomizations)  
   
--   [Součástí vlastní nastavení](#Components)  
+- [Součástí vlastní nastavení](#Components)  
   
--   [Jak fungují vlastní nastavení pomocí aplikace Microsoft Office](#HowCustomizationsWork)  
+- [Jak fungují vlastní nastavení pomocí aplikace Microsoft Office](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Obecné informace o vytvoření přizpůsobení na úrovni dokumentu naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Začínáme programování přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), a [Začínáme programování přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Obecné informace o vytvoření přizpůsobení na úrovni dokumentu naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [Začínáme programování přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), a [Začínáme programování přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Vysvětlení přizpůsobení  
  Při použití nástroje Office developer tools v sadě Visual Studio k vytvoření přizpůsobení na úrovni dokumentu, můžete vytvořit sestavení spravovaného kódu, který je spojen s určitým dokumentem. Dokumentu nebo sešitu s propojené sestavení se říká, že jste rozšíření se spravovaným kódem. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35676028"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Podpora pro Wordové dokumenty, které mají přípony názvů souborů XML  
  Šablony projektu na úrovni dokumentu není umožňují vytvářet projekty založené na následující formáty souborů:  
   
--   Wordový dokument XML (*\*xml*).  
+- Wordový dokument XML (*\*xml*).  
   
--   XML dokument aplikace Word 2003 (*\*xml*).  
+- XML dokument aplikace Word 2003 (*\*xml*).  
   
- Pokud chcete koncovým uživatelům použít vlastní nastavení do těchto formátů souborů, sestavovat a nasazovat vlastní nastavení, která používá jeden z podporovaných formátů uvedená v tabulce výše. Po instalaci přizpůsobení, koncovým uživatelům můžete uložit dokument v dokumentu XML (*\*xml*) formát nebo XML dokument aplikace Word 2003 (*\*xml*) formátu a přizpůsobení budou nadále fungovat podle očekávání.  
+  Pokud chcete koncovým uživatelům použít vlastní nastavení do těchto formátů souborů, sestavovat a nasazovat vlastní nastavení, která používá jeden z podporovaných formátů uvedená v tabulce výše. Po instalaci přizpůsobení, koncovým uživatelům můžete uložit dokument v dokumentu XML (*\*xml*) formát nebo XML dokument aplikace Word 2003 (*\*xml*) formátu a přizpůsobení budou nadále fungovat podle očekávání.  
   
 ##  <a name="Components"></a> Součástí vlastní nastavení  
  Hlavní součásti přizpůsobení se dokument a sestavení. Kromě těchto součástí existuje několik částí, které hrají důležitou roli v tom, jak aplikace Microsoft Office zjišťovat a načíst vlastní nastavení.  

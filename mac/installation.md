@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 6c047be1c797c0304a71ae2c55f256bdc5325aaf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934610"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Instalační program a instalace sady Visual Studio pro Mac
 
@@ -31,60 +31,60 @@ Pro práci se systémem iOS v sadě Visual Studio potřebujete následující:
 
 2. Po stažení instalačního programu balíčku, klikněte na tlačítko **VisualStudioInstaller.dmg** souboru připojit instalační program a spusťte jej dvojitým kliknutím logo, jak je znázorněno v následujícím obrázku:
 
-  ![Dialogové okno instalačního programu](media/installer-image1.png)
+   ![Dialogové okno instalačního programu](media/installer-image1.png)
 
 3. Můžete být vyzváni pomocí dialogového okna výstrah podobně jako na následujícím obrázku. V tomto případě klikněte na tlačítko **otevřít**:
 
-  ![dialogového okna výstrah](media/installer-image2.png)
+   ![dialogového okna výstrah](media/installer-image2.png)
 
 4. Instalační program zkontroluje váš systém ověření komponenty, které potřebujete k instalaci nebo aktualizaci:
 
-  ![Vyhodnocení systému](media/installer-image3.png)
+   ![Vyhodnocení systému](media/installer-image3.png)
 
 5. Zobrazí se vám pak pomocí dialogového okna výstrah s výzvou k potvrzení o ochraně osobních údajů a licenční podmínky. Stisknutím klávesy **pokračovat** tlačítko potvrďte podmínky:
 
-  ![Dialogové okno licence](media/installer-image4.png)
+   ![Dialogové okno licence](media/installer-image4.png)
 
 6. Instalační program zobrazí seznam požadovaných součástí, které nebyly nalezeny a, které je potřeba stáhnout a nainstalovat. Vyberte produkty, které si chcete stáhnout tady:
 
-  ![Vybrat položky](media/installer-image5.png)
+   ![Vybrat položky](media/installer-image5.png)
 
-  Pokud nechcete instalovat všechny platformy, vám pomohou rozhodnout, které platformy nainstalovat pomocí Průvodce níže:
+   Pokud nechcete instalovat všechny platformy, vám pomohou rozhodnout, které platformy nainstalovat pomocí Průvodce níže:
 
-  * **Aplikace pomocí Xamarinu**:
+   * **Aplikace pomocí Xamarinu**:
       - Xamarin.Forms – vyberte **Android** a **iOS** platformy.
       - iOS – vybrat **iOS** platformy (Všimněte si, že budete muset nainstalovat [ **Xcode**](https://developer.apple.com/xcode/)).
       - Android – vybrat **Android** platformy (Všimněte si, že musí také vybrat příslušné závislosti).
       - Vybrat pouze – Mac **macOS** platformy (Všimněte si, že budete muset nainstalovat [ **Xcode**](https://developer.apple.com/xcode/)).
       - Vyberte plně multiplatformní aplikace Xamarin – **Android**, **iOS**, a **macOS** platformy.
-  * **Aplikace .NET core** – vyberte **.NET Core** platformy.
-  * **Webové aplikace ASP.NET Core** – vyberte **.NET Core** platformy.
-  * **Multiplatformní vývoj her Unity** – žádné další platformy je potřeba nainstalovat za Visual Studio pro Mac. Odkazovat [Průvodce nastavením Unity](setup-vsmac-tools-unity.md) pro další informace o instalaci rozšíření Unity.
+   * **Aplikace .NET core** – vyberte **.NET Core** platformy.
+   * **Webové aplikace ASP.NET Core** – vyberte **.NET Core** platformy.
+   * **Multiplatformní vývoj her Unity** – žádné další platformy je potřeba nainstalovat za Visual Studio pro Mac. Odkazovat [Průvodce nastavením Unity](setup-vsmac-tools-unity.md) pro další informace o instalaci rozšíření Unity.
 
-  Tento instalační obrazovce zobrazí verzi a velikost jednotlivých součástí. Můžete kliknout jednotlivých komponent pro zobrazení seznamu závislostí pro danou součást (pro Android), najdete v další balíčky, které stáhne (pro .NET Core), nebo zobrazit další aplikace vyžaduje (pro iOS a macOS):
+   Tento instalační obrazovce zobrazí verzi a velikost jednotlivých součástí. Můžete kliknout jednotlivých komponent pro zobrazení seznamu závislostí pro danou součást (pro Android), najdete v další balíčky, které stáhne (pro .NET Core), nebo zobrazit další aplikace vyžaduje (pro iOS a macOS):
 
-  ![Android Další závislosti](media/installer-image6.png)
+   ![Android Další závislosti](media/installer-image6.png)
 
 7. Jakmile budete spokojeni se svým výběrem, vyberte **instalovat a aktualizovat** tlačítko pro spuštění procesu instalace.
 
 8. Instalační program spustí stahování a instalace z vybraných položek:
 
-  ![Spouští se instalace](media/installer-image7.png)
+   ![Spouští se instalace](media/installer-image7.png)
 
-  ![Stahování Xamarin.Mac](media/installer-image8.png)
+   ![Stahování Xamarin.Mac](media/installer-image8.png)
 
-  ![Dokončuje se instalace](media/installer-image9.png)
+   ![Dokončuje se instalace](media/installer-image9.png)
 
 9. Můžete být vyzváni ke zvýšení oprávnění potřebná pro jednotlivé součásti, které jsou vyžadovány k dokončení instalace. Zadejte pověření správce a pokračujte v procesu instalace:
 
-  ![Zadejte oprávnění, abyste mohli pokračovat s instalačním programem](media/installer-image10.png)
+   ![Zadejte oprávnění, abyste mohli pokračovat s instalačním programem](media/installer-image10.png)
 
 10. Jakmile je instalace úspěšná, můžete začít vyvíjet aplikace ve Visual Studiu stisknutím klávesy **Start**:
 
-  ![Otevřít Visual Studio](media/installer-image11.png)
+    ![Otevřít Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Pokud jste zvolili neinstaluje platformu nebo nástroj při původní instalaci (zrušením výběru ho v kroku #6), musíte spustit [instalační program](https://visualstudio.microsoft.com/vs/) znovu Pokud budete chtít později přidat komponenty.
+> Pokud jste zvolili neinstaluje platformu nebo nástroj při původní instalaci (zrušením výběru ho v kroku #6), musíte spustit [instalační program](https://visualstudio.microsoft.com/vs/) znovu Pokud budete chtít později přidat komponenty.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalace sady Visual Studio pro Mac za bránou firewall nebo proxy serverem

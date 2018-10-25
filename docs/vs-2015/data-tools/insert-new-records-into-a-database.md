@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891470"
 ---
 # <a name="insert-new-records-into-a-database"></a>Vkládání nových záznamů do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Chcete-li vkládání nových záznamů do databáze s použitím TableAdapter.Update – metoda  
   
-1.  Přidání nových záznamů do požadované <xref:System.Data.DataTable> vytvořením nového <xref:System.Data.DataRow> a jejím přidáním na <xref:System.Data.DataTable.Rows%2A> kolekce. Další informace najdete v tématu [postupy: Přidání řádků do DataTable určitého](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Přidání nových záznamů do požadované <xref:System.Data.DataTable> vytvořením nového <xref:System.Data.DataRow> a jejím přidáním na <xref:System.Data.DataTable.Rows%2A> kolekce. Další informace najdete v tématu [postupy: Přidání řádků do DataTable určitého](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
-2.  Po přidání nových řádků do <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metody. Můžete řídit objem dat se aktualizovat předáním buď celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>.  
+2. Po přidání nových řádků do <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metody. Můžete řídit objem dat se aktualizovat předáním buď celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>.  
   
-     Následující kód ukazuje, jak přidat nový záznam <xref:System.Data.DataTable> a následně zavolat `TableAdapter.Update` metody uložte nový řádek do databáze. (V tomto příkladu `Region` tabulky v databázi Northwind.)  
+    Následující kód ukazuje, jak přidat nový záznam <xref:System.Data.DataTable> a následně zavolat `TableAdapter.Update` metody uložte nový řádek do databáze. (V tomto příkladu `Region` tabulky v databázi Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- Pokud vaše aplikace používá k ukládání dat objektů, můžete použít `TableAdapter.Insert` metodu pro vytvoření nových řádků přímo v databázi. `Insert` Metoda přijímá jako parametry jednotlivé hodnoty pro každý sloupec. Volání metody vloží nový záznam do databáze se parametr hodnoty předané v.  
+   Pokud vaše aplikace používá k ukládání dat objektů, můžete použít `TableAdapter.Insert` metodu pro vytvoření nových řádků přímo v databázi. `Insert` Metoda přijímá jako parametry jednotlivé hodnoty pro každý sloupec. Volání metody vloží nový záznam do databáze se parametr hodnoty předané v.  
   
- Následující postup používá `Region` tabulky v databázi Northwind jako příklad.  
+   Následující postup používá `Region` tabulky v databázi Northwind jako příklad.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Chcete-li vkládání nových záznamů do databáze s použitím TableAdapter.Insert – metoda  
   

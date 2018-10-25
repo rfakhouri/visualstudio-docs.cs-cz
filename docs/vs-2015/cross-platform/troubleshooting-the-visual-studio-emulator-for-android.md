@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: aaec132bc8780ef01e4bff403f6cbf17df570204
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f5bff1d2977ffafa4b745eaf6fd9d6b5c84bdab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890683"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,11 +100,11 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
 ##  <a name="ManualNetworkConfig"></a> Nejde se připojit k síti cíle při vyžadují ruční konfiguraci nastavení sítě  
  Pro připojení k síti cíle z emulátoru serveru, musí vaše síť splňovat následující požadavky:  
   
--   DHCP. Emulátor vyžaduje DHCP, protože samotný nakonfiguruje jako samostatnou zařízení v síti s jeho vlastní IP adresu.  
+- DHCP. Emulátor vyžaduje DHCP, protože samotný nakonfiguruje jako samostatnou zařízení v síti s jeho vlastní IP adresu.  
   
--   Automaticky nakonfigurované DNS a nastavení brány. Není možné konfigurovat nastavení DNS a bránu ručně pro emulátor.  
+- Automaticky nakonfigurované DNS a nastavení brány. Není možné konfigurovat nastavení DNS a bránu ručně pro emulátor.  
   
- Pokud síť vyžaduje ručně nakonfigurované nastavení, obraťte se na správce IT k určení, jak můžete zajistit připojení k síti pro emulátor.  
+  Pokud síť vyžaduje ručně nakonfigurované nastavení, obraťte se na správce IT k určení, jak můžete zajistit připojení k síti pro emulátor.  
   
 ##  <a name="SlowStart"></a> Spuštění emulátoru pomalu, se nedaří spustit z důvodu vypršení časového limitu nebo selhání nasazení aplikace  
  Za určitých podmínek emulátor trvá několik minut nebo nepodaří spustit z důvodu vypršení časového limitu. Když emulátor nepodaří spustit, zobrazí se následující zpráva: `App deployment failed. Please try again`. Následující podmínky může vést k této chybě.  
@@ -147,131 +147,131 @@ Toto téma obsahuje informace, které pomáhají při řešení problémů, kter
 ##  <a name="NoStart"></a> Emulátor se nepodaří spustit (první použití)  
  Pokud emulátor nespustí, projděte si následující úkoly a identifikovat a opravit tento problém.  
   
--   Ujistěte se, že jsou splněny minimální požadavky na hardware a správnost nastavení systému BIOS.  
+- Ujistěte se, že jsou splněny minimální požadavky na hardware a správnost nastavení systému BIOS.  
   
-     Emulátor a Windows 8 Hyper-V vyžaduje 64bitový procesor s druhou překlad adres úrovně (SLAT). Pro Intel musíte v podstatě Core i3 i5 nebo i7 procesoru (nebo jeden z mnoha Xeons). Je k dispozici seznam AMD čipy [tady](http://support.amd.com/en-us).  
+   Emulátor a Windows 8 Hyper-V vyžaduje 64bitový procesor s druhou překlad adres úrovně (SLAT). Pro Intel musíte v podstatě Core i3 i5 nebo i7 procesoru (nebo jeden z mnoha Xeons). Je k dispozici seznam AMD čipy [tady](http://support.amd.com/en-us).  
   
-    1.  Ujistěte se, že váš počítač splňuje [požadavky na systém](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+  1. Ujistěte se, že váš počítač splňuje [požadavky na systém](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
-    2.  Ověřte, že [SLAT nástroj](https://slatstatuscheck.codeplex.com/) hlásí, že je počítač podporuje technologii SLAT.  
+  2. Ověřte, že [SLAT nástroj](https://slatstatuscheck.codeplex.com/) hlásí, že je počítač podporuje technologii SLAT.  
   
-    3.  V rámci nastavení systému BIOS v počítači Ujistěte se, že je povoleno všechny technologie virtualizace. Pro každého výrobce hardwaru se můžou lišit přesné popisy systému BIOS. Obecně platí povolte funkce související s:  
+  3. V rámci nastavení systému BIOS v počítači Ujistěte se, že je povoleno všechny technologie virtualizace. Pro každého výrobce hardwaru se můžou lišit přesné popisy systému BIOS. Obecně platí povolte funkce související s:  
   
-        -   SLAT (překladu adres druhé úrovně)  
+     -   SLAT (překladu adres druhé úrovně)  
   
-        -   EPT (Extended Page Tables) (Intel)  
+     -   EPT (Extended Page Tables) (Intel)  
   
-        -   NPT (vnořené Page Tables) (AMD)  
+     -   NPT (vnořené Page Tables) (AMD)  
   
-        -   RVI (Rapid Virtualization Indexing) (AMD)  
+     -   RVI (Rapid Virtualization Indexing) (AMD)  
   
-        -   VMX (zkratka Intel označující podpora virtualizace s hardwarovým řízením)  
+     -   VMX (zkratka Intel označující podpora virtualizace s hardwarovým řízením)  
   
-        -   SVM (zkratka AMD označující podpora virtualizace s hardwarovým řízením)  
+     -   SVM (zkratka AMD označující podpora virtualizace s hardwarovým řízením)  
   
-        -   XD (spuštění zakázat) (Intel); Tato možnost musí být povolena  
+     -   XD (spuštění zakázat) (Intel); Tato možnost musí být povolena  
   
-        -   NX (žádné Execute)(AMD); Toto musí být povolena.  
+     -   NX (žádné Execute)(AMD); Toto musí být povolena.  
   
-    4.  Pokud tyto možnosti jsou k dispozici v systému BIOS, je zakážete.  
+  4. Pokud tyto možnosti jsou k dispozici v systému BIOS, je zakážete.  
   
-        -   Zakázat Intel VT-d  
+     - Zakázat Intel VT-d  
   
-        -   Zakázat Trusted Execution  
+     - Zakázat Trusted Execution  
   
-         Další informace najdete v tomto článku: Technet: jak Hyper-V: na oprava systému BIOS chyby povolení Hyper-V  
+       Další informace najdete v tomto článku: Technet: jak Hyper-V: na oprava systému BIOS chyby povolení Hyper-V  
   
-    5.  Ujistěte se, že máte alespoň 4 GB systémové paměti a že není právě využívat v jiných prostředků náročné aplikace a procesy.  
+  5. Ujistěte se, že máte alespoň 4 GB systémové paměti a že není právě využívat v jiných prostředků náročné aplikace a procesy.  
   
-    6.  Zkontrolujte, že se systémem Windows 8 Professional nebo vyšší (Windows Server 2008 se nepodporuje). Windows Server 2012 je podporována, ale je nutné povolit desktopové prostředí.  
+  6. Zkontrolujte, že se systémem Windows 8 Professional nebo vyšší (Windows Server 2008 se nepodporuje). Windows Server 2012 je podporována, ale je nutné povolit desktopové prostředí.  
   
      Můžete si prohlédnout Prohlížeč událostí, jestli jsou všechny chyby hypervisoru. Chcete-li to provést, otevřete Prohlížeč událostí (počáteční klíč + R a potom zadejte `eventvwr`) a pak vyberte **protokoly Windows**, **systému**. Vyfiltrujte v protokolu podle zdroje události nastavení zdroje na **Hyper-V hypervisoru**. Vyhledejte chyby vám pomůže identifikovat hlavní příčinu.  
   
      Pokud váš procesor splňuje minimální požadavky, ale hypervisor stále nedaří, zvažte hledání na co si je upgrade systému BIOS dostupné pro váš počítač. Pokud existuje, a vy zvolíte upgradovat, je nutné sledovat všechna opatření od výrobce, při upgradu systému BIOS (jako je zajištění upgrade firmwaru systému BIOS není přerušení kvůli výpadku napájení, který může poškodit trvale systému BIOS).  
   
--   Ujistěte se, že máte alespoň 4 GB systémové paměti a že není právě využívat v jiných prostředků náročné aplikace a procesy.  
+- Ujistěte se, že máte alespoň 4 GB systémové paměti a že není právě využívat v jiných prostředků náročné aplikace a procesy.  
   
--   Odebrat nebo zakázat ovladačů jiných výrobců nebo software, který může být zasahovala do virtuální sítě.  
+- Odebrat nebo zakázat ovladačů jiných výrobců nebo software, který může být zasahovala do virtuální sítě.  
   
-     Existují některé známé problémy s některými 3. stran produkty nainstalované v systému Windows 8 například síťové ovladače a protokoly, které nejsou plně kompatibilní s Hyper-V síťového zásobníku.  
+   Existují některé známé problémy s některými 3. stran produkty nainstalované v systému Windows 8 například síťové ovladače a protokoly, které nejsou plně kompatibilní s Hyper-V síťového zásobníku.  
   
-     Obecně platí bude až vývojářům tyto produkty se aktualizace softwaru se kvůli kompatibilitě s Windows 8 a technologie Hyper-V.  
+   Obecně platí bude až vývojářům tyto produkty se aktualizace softwaru se kvůli kompatibilitě s Windows 8 a technologie Hyper-V.  
   
-     Následující produkty mohou vyžadovat upgradování pro dodržování předpisů pro Windows 8: VirtualBox, virtuální počítače VMWare, 7 někteří klienti VPN software brány firewall, některé verze klientů Cisco VPN a dalšími systémy virtualizace. Spolupracovat s vývojáři sporná virtualizačního softwaru Doporučte jim upgrade softwaru, aby byl kompatibilní s Windows 8 a technologie Hyper-V.  
+   Následující produkty mohou vyžadovat upgradování pro dodržování předpisů pro Windows 8: VirtualBox, virtuální počítače VMWare, 7 někteří klienti VPN software brány firewall, některé verze klientů Cisco VPN a dalšími systémy virtualizace. Spolupracovat s vývojáři sporná virtualizačního softwaru Doporučte jim upgrade softwaru, aby byl kompatibilní s Windows 8 a technologie Hyper-V.  
   
-     Jako **řešení**, zakážete všechny aplikace, které mohou být zasahovala do virtuální sítě pomocí emulátoru ke komunikaci s aplikací Visual Studio a ovladačů jiných výrobců. Tyto aplikace mohou zahrnovat:  
+   Jako **řešení**, zakážete všechny aplikace, které mohou být zasahovala do virtuální sítě pomocí emulátoru ke komunikaci s aplikací Visual Studio a ovladačů jiných výrobců. Tyto aplikace mohou zahrnovat:  
   
-    -   Antivirové aplikace (které integrovat do síťových protokolů)  
+  - Antivirové aplikace (které integrovat do síťových protokolů)  
   
-    -   Nástroje pro monitorování sítě  
+  - Nástroje pro monitorování sítě  
   
-    -   Nástroje protokolování sítě  
+  - Nástroje protokolování sítě  
   
-    -   Monitorovací software jiných systému  
+  - Monitorovací software jiných systému  
   
-     Jiné možných alternativních nemá odinstalaci produktů dotaz (a žádosti o produktu pro vývojáře k uvolnění aktualizovanou verzi), je provést následující kroky.  
+    Jiné možných alternativních nemá odinstalaci produktů dotaz (a žádosti o produktu pro vývojáře k uvolnění aktualizovanou verzi), je provést následující kroky.  
   
-    1.  Spusťte Správce připojení k síti (na obrazovce Start zadejte `View Network Connections` a vyberte tuto možnost, chcete-li zobrazit síťová připojení.)  
+  1. Spusťte Správce připojení k síti (na obrazovce Start zadejte `View Network Connections` a vyberte tuto možnost, chcete-li zobrazit síťová připojení.)  
   
-    2.  Pro adaptér vEthernet (interní Port Windows Phone Emulator interní přepínač Ethernet) vyberte **vlastnosti** v místní nabídce.  
+  2. Pro adaptér vEthernet (interní Port Windows Phone Emulator interní přepínač Ethernet) vyberte **vlastnosti** v místní nabídce.  
   
-         ![Virtuální adaptér používá Hyper&#45;V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")  
+      ![Virtuální adaptér používá Hyper&#45;V](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")  
   
-         Zde jsou zobrazeny vlastnosti adaptéru.  
+      Zde jsou zobrazeny vlastnosti adaptéru.  
   
-         ![Vlastnosti virtuálního adaptéru](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")  
+      ![Vlastnosti virtuálního adaptéru](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
-    3.  Pro tento adaptér pouze položky, které by měl být zvolena možnost **toto připojení používá následující položky** by měl být následující:  
+  3. Pro tento adaptér pouze položky, které by měl být zvolena možnost **toto připojení používá následující položky** by měl být následující:  
   
-        -   Klient sítě Microsoft  
+     -   Klient sítě Microsoft  
   
-        -   Plánovač paketů technologie QoS  
+     -   Plánovač paketů technologie QoS  
   
-        -   Sdílení souborů a tiskáren v sítích Microsoft  
+     -   Sdílení souborů a tiskáren v sítích Microsoft  
   
-        -   Ovladač Microsoft LLDP protokolu  
+     -   Ovladač Microsoft LLDP protokolu  
   
-        -   Ovladač vstupně-výstupních operací mapovače zjišťování topologie linkové vrstvě  
+     -   Ovladač vstupně-výstupních operací mapovače zjišťování topologie linkové vrstvě  
   
-        -   Respondér zjišťování topologie linkové vrstvě  
+     -   Respondér zjišťování topologie linkové vrstvě  
   
-        -   Internet Protocol verze 6 (TCP/IPv6)  
+     -   Internet Protocol verze 6 (TCP/IPv6)  
   
-        -   Protokol IP verze 4 (TCP/IPv4)  
+     -   Protokol IP verze 4 (TCP/IPv4)  
   
-    4.  Zrušte výběr další položky.  
+  4. Zrušte výběr další položky.  
   
      Nevýhodou použití této techniky je, že kdykoli nový 3. stran produkt instaluje nepodporované ovladače nebo pokaždé, když nainstalování emulátoru těchto kroků bude nutné jej opakovat.  
   
      Po odinstalování serveru produkty třetích stran, budete muset obnovit interní přepínač emulátoru Windows Phone. Postup:  
   
-    -   Otevřete Hyper-V a přejděte do Správce virtuálního přepínače. Vytvořit virtuální přepínač s názvem "Windows Phone Emulator interní přepínač" a nastavte její typ připojení na **interní síti**.  
+  - Otevřete Hyper-V a přejděte do Správce virtuálního přepínače. Vytvořit virtuální přepínač s názvem "Windows Phone Emulator interní přepínač" a nastavte její typ připojení na **interní síti**.  
   
-         ![Správce virtuálních přepínačů](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")  
+     ![Správce virtuálních přepínačů](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")  
   
-     Nyní spusťte emulátor. Mělo by to fungovat.  
+    Nyní spusťte emulátor. Mělo by to fungovat.  
   
 ##  <a name="NoBoot"></a> Nepodaří spustit po nainstalování emulátoru  
  Tomuto problému může dojít, pokud jsou splněny následující podmínky:  
   
--   Počítač se základní desky GB.  
+- Počítač se základní desky GB.  
   
--   USB3 je povolena na základní desce.  
+- USB3 je povolena na základní desce.  
   
- Chcete-li tento problém vyřešit, zakažte USB3 v nastavení systému BIOS základní desky a restartujte počítač. Zkontrolujte, zda GB vydala aktualizace systému BIOS základní desky.  
+  Chcete-li tento problém vyřešit, zakažte USB3 v nastavení systému BIOS základní desky a restartujte počítač. Zkontrolujte, zda GB vydala aktualizace systému BIOS základní desky.  
   
- Další informace najdete v tématu v následujícím článku znalostní báze Knowledge Base: [spouštěcí selhání po instalaci role Hyper-V v systémech GB](https://support.microsoft.com/en-us/kb/2693144).  
+  Další informace najdete v tématu v následujícím článku znalostní báze Knowledge Base: [spouštěcí selhání po instalaci role Hyper-V v systémech GB](https://support.microsoft.com/en-us/kb/2693144).  
   
 ##  <a name="ADB"></a> Visual Studio zasekne při pokusu o nasazení aplikace na emulátoru nebo emulátor se nezobrazí jako cíl ladění ve jiná Integrovaná vývojová prostředí  
  Pokud je spuštěný emulátor, ale nezobrazí se chcete připojit k ADB (Android Debug Bridge) nebo se nezobrazují v nástroje pro Android, která využívají ADB (Android Studio nebo Eclipse), budete muset upravit, kde emulátor hledá ADB. Emulátor používá klíč registru pro určení základní umístění sady Android SDK a hledá soubor \platform-tools\adb.exe v tomto adresáři. Chcete-li změnit cesta sady Android SDK používaná emulátorem:  
   
--   Otevřete Editor registru tak, že vyberete **spustit** z místní nabídky Start tlačítka zadáním `regedit` v dialogovém okně a zvolíte **OK**.  
+- Otevřete Editor registru tak, že vyberete **spustit** z místní nabídky Start tlačítka zadáním `regedit` v dialogovém okně a zvolíte **OK**.  
   
--   Přejděte do HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools ve stromové struktuře složek na levé straně.  
+- Přejděte do HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools ve stromové struktuře složek na levé straně.  
   
--   Upravit **cesta** proměnnou registru tak, aby odpovídaly cestu k vaší sady Android SDK.  
+- Upravit **cesta** proměnnou registru tak, aby odpovídaly cestu k vaší sady Android SDK.  
   
- Restartujte emulátor a byste teď měli zobrazíte emulátor připojen k ADB a související nástroje pro Android.  
+  Restartujte emulátor a byste teď měli zobrazíte emulátor připojen k ADB a související nástroje pro Android.  
   
 ##  <a name="XamarinPlayer"></a> Emulátor přestane reagovat, protože ji nelze nastavit UDP port  
  Tento problém z důvodu nekompatibility s Xamarin Playerem může docházet. Pokud se zobrazí emulátor přestane reagovat, nebo pokud se zobrazí tato chybová zpráva "nelze se připojit k operační systém zařízení je emulátor: Nelze nastavit UDP port.  Některé funkce můžou být zakázané", může dojít k tomuto problému. Proveďte následující kroky.  

@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902865"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Výběr a měna v prostředí IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ ms.locfileid: "49270921"
 ### <a name="window-types-and-selection"></a>Typy oken a výběr  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Integrovaném vývojovém prostředí slouží k uspořádání windows na dvě obecné typy:  
   
--   Typ hierarchie windows  
+- Typ hierarchie windows  
   
--   Oken s rámečkem, jako je například oken nástrojů a dokumentu  
+- Oken s rámečkem, jako je například oken nástrojů a dokumentu  
   
- Rozhraní IDE sleduje měny odlišně pro každý z těchto typů okna.  
+  Rozhraní IDE sleduje měny odlišně pro každý z těchto typů okna.  
   
- Okno nejběžnější typ projektu je Průzkumníku řešení, které řídí integrovaného vývojového prostředí. Okno typu projektu sleduje globální hierarchie a ItemID globální výběr kontextu a v okně spoléhá na výběru uživatele k určení aktuální hierarchií. Pro typ projektu windows prostředí poskytuje globální službu <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, pomocí které rozšíření VSPackages můžete monitorovat aktuální hodnoty pro otevřené elementy. V prostředí pro procházení vlastností doprovází této globální služby.  
+  Okno nejběžnější typ projektu je Průzkumníku řešení, které řídí integrovaného vývojového prostředí. Okno typu projektu sleduje globální hierarchie a ItemID globální výběr kontextu a v okně spoléhá na výběru uživatele k určení aktuální hierarchií. Pro typ projektu windows prostředí poskytuje globální službu <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, pomocí které rozšíření VSPackages můžete monitorovat aktuální hodnoty pro otevřené elementy. V prostředí pro procházení vlastností doprovází této globální služby.  
   
- Oken s rámečkem na druhé straně vytisknout tak, aby nabízel SelectionContext hodnoty (hierarchie/ItemID/SelectionContainer trojici komponent) použít v rámci okna rámce. . Použití oken s rámečkem služby <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> pro tento účel. Vytisknout lze vkládat pouze hodnoty pro zásobník pro výběr, byste museli opustit místní hodnoty pro hierarchii a ItemID beze změny, jako je typický pro dokumenty podřízeného MDI.  
+  Oken s rámečkem na druhé straně vytisknout tak, aby nabízel SelectionContext hodnoty (hierarchie/ItemID/SelectionContainer trojici komponent) použít v rámci okna rámce. . Použití oken s rámečkem služby <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> pro tento účel. Vytisknout lze vkládat pouze hodnoty pro zásobník pro výběr, byste museli opustit místní hodnoty pro hierarchii a ItemID beze změny, jako je typický pro dokumenty podřízeného MDI.  
   
 ### <a name="events-and-currency"></a>Události a měny  
  Může dojít k dva typy událostí, které mají vliv prostředí pojem měny:  

@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892685"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Dokončování členů ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ ms.locfileid: "49240809"
 ## <a name="how-it-works"></a>Jak to funguje  
  Následují dva způsoby, ve kterých se zobrazí seznam členů třídy MPF pomocí:  
   
--   Umístění blikající kurzor na identifikátor nebo za znakem ukončení člena a vyberete **seznam členů** z **IntelliSense** nabídky.  
+- Umístění blikající kurzor na identifikátor nebo za znakem ukončení člena a vyberete **seznam členů** z **IntelliSense** nabídky.  
   
--   <xref:Microsoft.VisualStudio.Package.IScanner> Skener zjistí znak člen dokončení a nastaví token aktivační událost s <xref:Microsoft.VisualStudio.Package.TokenTriggers> pro daný znak.  
+- <xref:Microsoft.VisualStudio.Package.IScanner> Skener zjistí znak člen dokončení a nastaví token aktivační událost s <xref:Microsoft.VisualStudio.Package.TokenTriggers> pro daný znak.  
   
- Člen dokončení znak označuje, že je členem třídy, struktury nebo výčtu dodržovat. Například v jazyce C# nebo Visual Basic je znak dokončení člena `.`, zatímco v jazyce C++ je znak, který buď `.` nebo `->`. Aktivační událost hodnota, při kontrole vyberte znak člena.  
+  Člen dokončení znak označuje, že je členem třídy, struktury nebo výčtu dodržovat. Například v jazyce C# nebo Visual Basic je znak dokončení člena `.`, zatímco v jazyce C++ je znak, který buď `.` nebo `->`. Aktivační událost hodnota, při kontrole vyberte znak člena.  
   
 ### <a name="the-intellisense-member-list-command"></a>Příkaz seznamu členů IntelliSense  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Příkaz zahájí volání <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodu <xref:Microsoft.VisualStudio.Package.Source> třídy a <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> zase volání metody <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda analyzátoru s důvod analýzy <xref:Microsoft.VisualStudio.Package.ParseReason>.  

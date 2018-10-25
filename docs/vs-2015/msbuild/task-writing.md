@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914707"
 ---
 # <a name="task-writing"></a>Zápis úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49254888"
   
  Existují dvě metody, které můžete použít při implementaci úkolu:  
   
--   Implementace <xref:Microsoft.Build.Framework.ITask> rozhraní přímo.  
+- Implementace <xref:Microsoft.Build.Framework.ITask> rozhraní přímo.  
   
--   Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Task>, která je definovaná v sestavení Microsoft.Build.Utilities.dll. Úloha implementuje ITask a poskytuje výchozí implementaci některých ITask členů. Protokolování je navíc jednodušší.  
+- Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Task>, která je definovaná v sestavení Microsoft.Build.Utilities.dll. Úloha implementuje ITask a poskytuje výchozí implementaci některých ITask členů. Protokolování je navíc jednodušší.  
   
- V obou případech musíte přidat do vaší třídy metodu s názvem `Execute`, což je metoda, která je volána, když je úloha spuštěna. Tato metoda nemá žádné parametry a vrátí `Boolean` hodnota: `true` Pokud byla úloha úspěšná nebo `false` Pokud se něco nepovedlo. Následující příklad zobrazuje úlohu, která neprovede žádnou akci a vrátí `true`.  
+  V obou případech musíte přidat do vaší třídy metodu s názvem `Execute`, což je metoda, která je volána, když je úloha spuštěna. Tato metoda nemá žádné parametry a vrátí `Boolean` hodnota: `true` Pokud byla úloha úspěšná nebo `false` Pokud se něco nepovedlo. Následující příklad zobrazuje úlohu, která neprovede žádnou akci a vrátí `true`.  
   
 ```  
 using System;  

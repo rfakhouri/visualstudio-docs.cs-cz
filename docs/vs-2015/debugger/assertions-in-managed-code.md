@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917697"
 ---
 # <a name="assertions-in-managed-code"></a>Kontrolní výrazy ve spravovaném kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  Jinak pro <xref:System.Diagnostics.Trace> metody pro práci, váš program musí mít jeden z následujících akcí v horní části zdrojového souboru:  
   
--   `#Const TRACE = True` V jazyce Visual Basic  
+- `#Const TRACE = True` V jazyce Visual Basic  
   
--   `#define TRACE` v jazyce Visual C# a C++  
+- `#define TRACE` v jazyce Visual C# a C++  
   
- Nebo program, musí být sestaveny s možností trasování:  
+  Nebo program, musí být sestaveny s možností trasování:  
   
--   `/d:TRACE=True` V jazyce Visual Basic  
+- `/d:TRACE=True` V jazyce Visual Basic  
   
--   `/d:TRACE` v jazyce Visual C# a C++  
+- `/d:TRACE` v jazyce Visual C# a C++  
   
- Pokud je potřeba použít metody ladění v jazyce C# nebo Visual Basic verze sestavení, můžete ve vaší konfiguraci vydané verze, definujte symbol ladění.  
+  Pokud je potřeba použít metody ladění v jazyce C# nebo Visual Basic verze sestavení, můžete ve vaší konfiguraci vydané verze, definujte symbol ladění.  
   
- Jazyk C++ nepodporuje <xref:System.Diagnostics.Debug> metody třídy. Můžete stejného výsledku dosáhnout pomocí <xref:System.Diagnostics.Trace> třídy s podmíněné kompilace, jako například `#ifdef DEBUG`... `#endif`. Můžete definovat tyto symboly v  **\<Projekt > stránky vlastností** dialogové okno. Další informace najdete v tématu [Změna nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) nebo [Změna nastavení projektu pro konfiguraci ladění jazyka C++ nebo C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  Jazyk C++ nepodporuje <xref:System.Diagnostics.Debug> metody třídy. Můžete stejného výsledku dosáhnout pomocí <xref:System.Diagnostics.Trace> třídy s podmíněné kompilace, jako například `#ifdef DEBUG`... `#endif`. Můžete definovat tyto symboly v  **\<Projekt > stránky vlastností** dialogové okno. Další informace najdete v tématu [Změna nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) nebo [Změna nastavení projektu pro konfiguraci ladění jazyka C++ nebo C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Assert – argumenty  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> a <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> trvat až tři argumenty. První argument, který je povinný, je podmínky, do kterého chcete zkontrolovat. Při volání <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> nebo <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> s pouze jedním argumentem `Assert` metoda zkontroluje podmínku a pokud je výsledek false, vypíše obsah zásobník volání a **výstup** okna. Následující příklad ukazuje <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> a <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>:  

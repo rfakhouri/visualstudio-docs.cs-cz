@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911444"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Slovníček pro Visual Studio Debugger
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ Následují termínů používaných v [!INCLUDE[vsprvs](../../../includes/vsprv
  čekající zarážka  
  Poskytuje abstrakci pro zarážky před, během a po kód je načten a způsob, jak Virtualizovat zarážky. A až do zarážky:  
   
--   Obsahuje všechny informace potřebné k vytvoření vazby zarážku do kódu v jedné nebo více programů.  
+- Obsahuje všechny informace potřebné k vytvoření vazby zarážku do kódu v jedné nebo více programů.  
   
--   Může vytvořit vazbu na několika místech kódu v jedné nebo více programů.  
+- Může vytvořit vazbu na několika místech kódu v jedné nebo více programů.  
   
--   Nikdy vytvoří vazbu samotný kód.  
+- Nikdy vytvoří vazbu samotný kód.  
   
- Načte každý kódu v době, všech čekajících zarážek v programu zvoleny zobrazíte, pokud lze svázat. Čekající zarážka se říká, že obsahuje všechny vazby zarážky, které se váže.  
+  Načte každý kódu v době, všech čekajících zarážek v programu zvoleny zobrazíte, pokud lze svázat. Čekající zarážka se říká, že obsahuje všechny vazby zarážky, které se váže.  
   
- zpracování  
- Fyzické proces Win32. Proces může obsahovat více programů. Viz také *program*.  
+  zpracování  
+  Fyzické proces Win32. Proces může obsahovat více programů. Viz také *program*.  
   
- program  
- Jeden obor názvů běží uvnitř konkrétní architektura za běhu. Viz také *procesu*.  
+  program  
+  Jeden obor názvů běží uvnitř konkrétní architektura za běhu. Viz také *procesu*.  
   
- Správce ladění relace (SDM)  
- Spravuje libovolný počet ladicími stroji ladění libovolný počet programy ve více procesech v libovolném počtu počítačů. Na úrovni basic je SDM multiplexor modulů ladění. Kromě toho SDM poskytuje jednotný přehled o relaci ladění do integrovaného vývojového prostředí.  
+  Správce ladění relace (SDM)  
+  Spravuje libovolný počet ladicími stroji ladění libovolný počet programy ve více procesech v libovolném počtu počítačů. Na úrovni basic je SDM multiplexor modulů ladění. Kromě toho SDM poskytuje jednotný přehled o relaci ladění do integrovaného vývojového prostředí.  
   
- rámec zásobníku  
- Představuje stav výpočet na konkrétní snímek a určitou úroveň volání vnořených funkcí.  
+  rámec zásobníku  
+  Představuje stav výpočet na konkrétní snímek a určitou úroveň volání vnořených funkcí.  
   
- vlákno  
- Zobecněný pojem instrukce založené na zásobníku spouštění používané alespoň jeden program.  
+  vlákno  
+  Zobecněný pojem instrukce založené na zásobníku spouštění používané alespoň jeden program.  
   
- upozornění zarážky  
- Abstrakce pro popis upozornění v čekající zarážkou. Upozornění zarážky popisuje důvod, proč čekající zarážka nebyla dosud vázán na místa v kódu. Je možné, že kód nenačetl ještě pro umístění popsal čekající zarážka nebo z nějakého důvodu.  
+  upozornění zarážky  
+  Abstrakce pro popis upozornění v čekající zarážkou. Upozornění zarážky popisuje důvod, proč čekající zarážka nebyla dosud vázán na místa v kódu. Je možné, že kód nenačetl ještě pro umístění popsal čekající zarážka nebo z nějakého důvodu.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřitelnost programu Visual Studio Debugger](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

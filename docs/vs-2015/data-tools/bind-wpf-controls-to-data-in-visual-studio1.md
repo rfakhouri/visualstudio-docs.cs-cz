@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914681"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat na [!INCLU
 ### <a name="datasets"></a>Datové sady  
  Při přetažení tabulky nebo sloupce z **zdroje dat** do okna návrháře, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , který provede následující akce:  
   
--   Přidá datovou sadu a nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v datové sadě.  
+- Přidá datovou sadu a nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v datové sadě.  
   
--   Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři, XAML naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru XAML vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.  
+- Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři, XAML naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru XAML vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rovněž provede následující změny do souboru kódu na pozadí:  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rovněž provede následující změny do souboru kódu na pozadí:  
   
--   Vytvoří <xref:System.Windows.FrameworkElement.Loaded> obslužné rutiny události pro [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, který obsahuje ovládací prvek. Obslužná rutina události vyplní tabulku daty, načte <xref:System.Windows.Data.CollectionViewSource> z kontejneru prostředky a potom provede první datovou položku v aktuální položce. Pokud <xref:System.Windows.FrameworkElement.Loaded> již existuje obslužná rutina události, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přidá tento kód do existující obslužné rutiny události.  
+- Vytvoří <xref:System.Windows.FrameworkElement.Loaded> obslužné rutiny události pro [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, který obsahuje ovládací prvek. Obslužná rutina události vyplní tabulku daty, načte <xref:System.Windows.Data.CollectionViewSource> z kontejneru prostředky a potom provede první datovou položku v aktuální položce. Pokud <xref:System.Windows.FrameworkElement.Loaded> již existuje obslužná rutina události, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přidá tento kód do existující obslužné rutiny události.  
   
 ### <a name="entity-data-models"></a>Modely entity data model  
  Při přetažení entity nebo vlastnosti entity z **zdroje dat** do okna návrháře, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , který provede následující akce:  
   
--   Přidá nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v dané entitě.  
+- Přidá nový <xref:System.Windows.Data.CollectionViewSource> k prostředkům kontejneru jste položku přetáhli. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k procházení a zobrazení dat v dané entitě.  
   
--   Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.  
+- Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] naváže ovládací prvek na položku. Pokud přetáhnete položku do kontejneru, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] vytvoří ovládací prvek, který byl vybrán pro přetaženou položku a naváže ovládací prvek na položku. Ovládací prvek je vytvořen uvnitř nové <xref:System.Windows.Controls.Grid>.  
   
- Sada Visual Studio rovněž provede následující změny v souboru s kódem na pozadí:  
+  Sada Visual Studio rovněž provede následující změny v souboru s kódem na pozadí:  
   
--   Přidá novou metodu, jež vrací dotaz pro entitu, kterou jste přetáhli do návrháře (nebo entitu obsahující vlastnost, kterou jste přetáhli do návrháře). Nová metoda má název Get*EntityName*dotaz, kde *EntityName* je název sady entit.  
+- Přidá novou metodu, jež vrací dotaz pro entitu, kterou jste přetáhli do návrháře (nebo entitu obsahující vlastnost, kterou jste přetáhli do návrháře). Nová metoda má název Get*EntityName*dotaz, kde *EntityName* je název sady entit.  
   
--   Vytvoří <xref:System.Windows.FrameworkElement.Loaded> obslužné rutiny události pro [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, který obsahuje ovládací prvek. Obslužná rutina události zavolá metodu Get*EntityName*metodu, aby vyplnila entitu daty, načte dotazu <xref:System.Windows.Data.CollectionViewSource> z kontejneru prostředky a potom provede první datovou položku v aktuální položce. Pokud <xref:System.Windows.FrameworkElement.Loaded> již existuje obslužná rutina události, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přidá tento kód do existující obslužné rutiny události.  
+- Vytvoří <xref:System.Windows.FrameworkElement.Loaded> obslužné rutiny události pro [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, který obsahuje ovládací prvek. Obslužná rutina události zavolá metodu Get*EntityName*metodu, aby vyplnila entitu daty, načte dotazu <xref:System.Windows.Data.CollectionViewSource> z kontejneru prostředky a potom provede první datovou položku v aktuální položce. Pokud <xref:System.Windows.FrameworkElement.Loaded> již existuje obslužná rutina události, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] přidá tento kód do existující obslužné rutiny události.  
   
 ### <a name="services"></a>Služby  
  Při přetažení objektu služby nebo vlastnosti z **zdroje dat** do okna návrháře, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] , která vytvoří ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na objekt či vlastnost). Ale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] negeneruje kódu, který vyplní daty objekt služby serveru proxy. Tento kód musíte napsat sami. Příklad, který ukazuje, jak to provést, najdete v části [WPF vytvoření vazby ovládacích prvků do datové služby WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  

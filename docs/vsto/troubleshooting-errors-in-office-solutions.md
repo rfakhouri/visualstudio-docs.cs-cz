@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917099"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Řešení potíží s chybami v řešeních pro systém Office
   Při provádění následujících úloh při vývoji řešení pro systém Office v sadě Visual Studio se můžete setkat s problémy:  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Tento kód vrátí následující chyby kompilace:  
   
--   Visual Basic: "odkaz na třídu 'Třídu DocumentClass' není povolen její sestavení odkazováno prostřednictvím režimu No-PIA."  
+- Visual Basic: "odkaz na třídu 'Třídu DocumentClass' není povolen její sestavení odkazováno prostřednictvím režimu No-PIA."  
   
--   Visual C#: "typ spolupráce, které 'Microsoft.Office.Interop.Word.DocumentClass' nemůže být vložený. Použijte příslušné rozhraní."  
+- Visual C#: "typ spolupráce, které 'Microsoft.Office.Interop.Word.DocumentClass' nemůže být vložený. Použijte příslušné rozhraní."  
   
- Chcete-li vyřešit tuto chybu, upravte kód, který odkazuje odpovídající rozhraní místo. Například místo odkazu <xref:Microsoft.Office.Interop.Word.DocumentClass> objektu, odkazovat na instanci <xref:Microsoft.Office.Interop.Word.Document> místo toho rozhraní.  
+  Chcete-li vyřešit tuto chybu, upravte kód, který odkazuje odpovídající rozhraní místo. Například místo odkazu <xref:Microsoft.Office.Interop.Word.DocumentClass> objektu, odkazovat na instanci <xref:Microsoft.Office.Interop.Word.Document> místo toho rozhraní.  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

@@ -15,16 +15,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f0930a98051d1674cf1828ed738def2949ca30
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: c422dc47ab7bf74c4a16e81efb4ed85d6b87b520
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950911"
 ---
 # <a name="visual-studio-debugging-samples"></a>Ukázky ladění sady Visual Studio
 Dvě ukázky ukazují, jak rozšířit pomocí ladicího programu sady Visual Studio [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
-  
--   Je součástí vzorku Chyba při vyhodnocování výrazu ladicího programu, pro spravované jazyky, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] okna, klikněte na tlačítko **ukázky** klikněte na tlačítko **všechny** nebo **jazyka C#** v seznamu jazyků a pak klikněte na tlačítko **ladicí program**.  
-  
--   Visual Studio ladit modul vzorek, nativním jazyce, je k dispozici na Galerie kódu na webu MSDN. Další informace najdete v tématu [ukázku modul ladění Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) na webu společnosti Microsoft.
+
+- Je součástí vzorku Chyba při vyhodnocování výrazu ladicího programu, pro spravované jazyky, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. V [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] okna, klikněte na tlačítko **ukázky** klikněte na tlačítko **všechny** nebo **jazyka C#** v seznamu jazyků a pak klikněte na tlačítko **ladicí program**.  
+
+- Visual Studio ladit modul vzorek, nativním jazyce, je k dispozici na Galerie kódu na webu MSDN. Další informace najdete v tématu [ukázku modul ladění Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) na webu společnosti Microsoft.

@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ad445190624ba70305d0e96ac55fc964702763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911275"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástrojů pro vytváření pomocí iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,39 +90,39 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
 ###  <a name="DownloadInstall"></a> Stažení a instalace vzdáleného agenta  
   
--   Z terminálu aplikace na počítači Mac zadejte:  
+- Z terminálu aplikace na počítači Mac zadejte:  
   
-     `sudo npm install -g --unsafe-perm vcremote`  
+   `sudo npm install -g --unsafe-perm vcremote`  
   
-     Globální instalace (**-g**) přepínač se doporučuje, ale nevyžaduje.  
+   Globální instalace (**-g**) přepínač se doporučuje, ale nevyžaduje.  
   
-     Během instalace vcremote je nainstalovaná a je aktivován režim pro vývojáře na vašem počítači Mac. [Homebrew](http://brew.sh/) a nainstaluje se také dva balíčky npm, vcremote lib a vcremote-utils.  
+   Během instalace vcremote je nainstalovaná a je aktivován režim pro vývojáře na vašem počítači Mac. [Homebrew](http://brew.sh/) a nainstaluje se také dva balíčky npm, vcremote lib a vcremote-utils.  
   
-    > [!NOTE]
-    >  K instalaci Homebrew, musí mít přístup sudo (správce). Pokud je potřeba nainstalovat vcremote bez sudo, můžete ručně nainstalujte Homebrew v umístění usr/local a jeho složku bin přidat do cesty. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Vývojářský režim povolit ručně, v aplikaci terminál zadejte tento příkaz: `DevToolsSecurity –enable`  
+  > [!NOTE]
+  >  K instalaci Homebrew, musí mít přístup sudo (správce). Pokud je potřeba nainstalovat vcremote bez sudo, můžete ručně nainstalujte Homebrew v umístění usr/local a jeho složku bin přidat do cesty. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Vývojářský režim povolit ručně, v aplikaci terminál zadejte tento příkaz: `DevToolsSecurity –enable`  
   
- Pokud aktualizujete na novou verzi sady Visual Studio, je třeba aktualizovat na aktuální verzi vzdáleného agenta. Aktualizace vzdáleného agenta, opakujte postup stažení a instalace vzdáleného agenta.  
+  Pokud aktualizujete na novou verzi sady Visual Studio, je třeba aktualizovat na aktuální verzi vzdáleného agenta. Aktualizace vzdáleného agenta, opakujte postup stažení a instalace vzdáleného agenta.  
   
 ##  <a name="Start"></a> Spuštění vzdáleného agenta  
  Vzdálený agent musí být spuštěná sada Visual Studio sestavte a spusťte váš kód s Iosem. Visual Studio musí být párována s vzdáleného agenta předtím, než může komunikovat. Ve výchozím nastavení se vzdálený agent spouští v režimu zabezpečené připojení, která vyžaduje kód PIN spárovat se sadou Visual Studio.  
   
 ###  <a name="RemoteAgentStartServer"></a> Spuštění vzdáleného agenta  
   
--   Z terminálu aplikace na počítači Mac zadejte:  
+- Z terminálu aplikace na počítači Mac zadejte:  
   
-     `vcremote`  
+   `vcremote`  
   
-     Spustí se vzdálený agent s výchozí adresář sestavení z ~ / vcremote. Další možnosti konfigurace, najdete v části [konfigurace vzdáleného agenta na počítači Mac](#ConfigureMac).  
+   Spustí se vzdálený agent s výchozí adresář sestavení z ~ / vcremote. Další možnosti konfigurace, najdete v části [konfigurace vzdáleného agenta na počítači Mac](#ConfigureMac).  
   
- Při prvním spuštění agenta a kdykoli vytvořit nový klientský certifikát, jsou k dispozici požadované informace pro konfiguraci agenta v sadě Visual Studio, včetně názvu hostitele, port a kód PIN.  
+  Při prvním spuštění agenta a kdykoli vytvořit nový klientský certifikát, jsou k dispozici požadované informace pro konfiguraci agenta v sadě Visual Studio, včetně názvu hostitele, port a kód PIN.  
   
- ![Ke generování zabezpečeného PIN kódu použít vcremote](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![Ke generování zabezpečeného PIN kódu použít vcremote](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
- Pokud máte v úmyslu konfigurace vzdáleného agenta v sadě Visual Studio pomocí názvu hostitele, odešlete zprávu ping Mac z Windows pomocí názvu hostitele k ověření, že je dostupný. V opačném případě budete muset místo toho použijte IP adresu.  
+  Pokud máte v úmyslu konfigurace vzdáleného agenta v sadě Visual Studio pomocí názvu hostitele, odešlete zprávu ping Mac z Windows pomocí názvu hostitele k ověření, že je dostupný. V opačném případě budete muset místo toho použijte IP adresu.  
   
- Vygenerovaný PIN kód je pro jeden čas použití a je platná pouze po omezenou dobu. Pokud aplikace Visual Studio není spárovat se vzdáleným agentem před vypršení časového limitu, je potřeba vygenerovat nový kód PIN. Další informace najdete v tématu [vygenerovat nový bezpečnostní kód PIN](#GeneratePIN).  
+  Vygenerovaný PIN kód je pro jeden čas použití a je platná pouze po omezenou dobu. Pokud aplikace Visual Studio není spárovat se vzdáleným agentem před vypršení časového limitu, je potřeba vygenerovat nový kód PIN. Další informace najdete v tématu [vygenerovat nový bezpečnostní kód PIN](#GeneratePIN).  
   
- Vzdálený agent můžete použít v nezabezpečeném režimu. V nezabezpečeném režimu se dají párovat vzdáleného agenta se sadou Visual Studio bez kódu PIN.  
+  Vzdálený agent můžete použít v nezabezpečeném režimu. V nezabezpečeném režimu se dají párovat vzdáleného agenta se sadou Visual Studio bez kódu PIN.  
   
 #### <a name="to-disable-secured-connection-mode"></a>Chcete-li zakázat režim zabezpečené připojení  
   
@@ -132,11 +132,11 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
 #### <a name="to-enable-secured-connection-mode"></a>Pokud chcete povolit režim zabezpečené připojení  
   
--   Pokud chcete povolit režim zabezpečené připojení, zadejte tento příkaz:  
+- Pokud chcete povolit režim zabezpečené připojení, zadejte tento příkaz:  
   
-     `vcremote --secure true`  
+   `vcremote --secure true`  
   
- Po zahájení vzdáleného agenta můžete použít v sadě Visual Studio až po ukončení.  
+  Po zahájení vzdáleného agenta můžete použít v sadě Visual Studio až po ukončení.  
   
 #### <a name="to-stop-the-remote-agent"></a>Chcete-li zastavit vzdáleného agenta  
   
@@ -147,36 +147,36 @@ Visual C++ pro vývoj mobilních řešení napříč platformami můžete použ�
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Konfigurace vzdáleného agenta ze sady Visual Studio  
   
-1.  Jestliže dosud není spuštěn agent na počítači Mac, postupujte podle kroků v [spustit vzdálený agent](#Start). Počítače Mac musí být spuštěná vcremote pro Visual Studio úspěšně spárovat, připojit a sestavte projekt.  
+1. Jestliže dosud není spuštěn agent na počítači Mac, postupujte podle kroků v [spustit vzdálený agent](#Start). Počítače Mac musí být spuštěná vcremote pro Visual Studio úspěšně spárovat, připojit a sestavte projekt.  
   
-2.  Na počítači Mac získáte název hostitele nebo IP adresu vašeho macu.  
+2. Na počítači Mac získáte název hostitele nebo IP adresu vašeho macu.  
   
-     Můžete získat IP adresu pomocí **ifconfig** příkazu v okně terminálu. Použijte adresu inet uvedené v části active síťové rozhraní.  
+    Můžete získat IP adresu pomocí **ifconfig** příkazu v okně terminálu. Použijte adresu inet uvedené v části active síťové rozhraní.  
   
-3.  Na řádku nabídek sady Visual Studio, zvolte **nástroje**, **možnosti**.  
+3. Na řádku nabídek sady Visual Studio, zvolte **nástroje**, **možnosti**.  
   
-4.  V **možnosti** dialogového okna rozbalte **různé platformy**, **C++**, **iOS**.  
+4. V **možnosti** dialogového okna rozbalte **různé platformy**, **C++**, **iOS**.  
   
-5.  V **název hostitele** a **Port** pole, zadejte hodnoty určené vzdáleného agenta při jeho spuštění. Název hostitele může být název DNS nebo IP adresu vašeho macu. Výchozí port je 3030.  
+5. V **název hostitele** a **Port** pole, zadejte hodnoty určené vzdáleného agenta při jeho spuštění. Název hostitele může být název DNS nebo IP adresu vašeho macu. Výchozí port je 3030.  
   
-    > [!NOTE]
-    >  Pokud je příkazem ping otestovat Mac pomocí názvu hostitele, budete muset použít IP adresu.  
+   > [!NOTE]
+   >  Pokud je příkazem ping otestovat Mac pomocí názvu hostitele, budete muset použít IP adresu.  
   
-6.  Pokud používáte vzdálený agent ve výchozím režimu zabezpečené připojení, zkontrolujte **Secure** zaškrtávací políčko, zadejte PIN kód hodnotu zadanou pomocí vzdáleného agenta v **Pin** pole. Pokud používáte vzdálený agent v režimu nezabezpečená připojení, zrušte zaškrtnutí políčka **Secure** zaškrtávací políčko a nechat **Pin** prázdné pole.  
+6. Pokud používáte vzdálený agent ve výchozím režimu zabezpečené připojení, zkontrolujte **Secure** zaškrtávací políčko, zadejte PIN kód hodnotu zadanou pomocí vzdáleného agenta v **Pin** pole. Pokud používáte vzdálený agent v režimu nezabezpečená připojení, zrušte zaškrtnutí políčka **Secure** zaškrtávací políčko a nechat **Pin** prázdné pole.  
   
-7.  Zvolte **pár** povolit párování.  
+7. Zvolte **pár** povolit párování.  
   
-     ![Konfigurace připojení vcremote pro sestavení iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![Konfigurace připojení vcremote pro sestavení iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
-     Párování se opakuje dokud nezměníte název hostitele nebo portu. Pokud změníte název hostitele nebo port v **možnosti** dialogové okno, vrátit zpět změny, zvolte **vrácení** tlačítka se vrátit k předchozí párování.  
+    Párování se opakuje dokud nezměníte název hostitele nebo portu. Pokud změníte název hostitele nebo port v **možnosti** dialogové okno, vrátit zpět změny, zvolte **vrácení** tlačítka se vrátit k předchozí párování.  
   
-     Pokud spárování úspěšné není, ověřte, že vzdálený agent běží, pomocí kroků v [spustit vzdálený agent](#Start). Pokud příliš mnoho času uplynulo od vzdáleného agenta PIN kód se vygeneroval, postupujte podle kroků v [vygenerovat nový bezpečnostní kód PIN](#GeneratePIN) na Macu a zkuste to znovu. Pokud použijete název hostitele počítače Mac, zkuste použít IP adresu v **název hostitele** místo toho.  
+    Pokud spárování úspěšné není, ověřte, že vzdálený agent běží, pomocí kroků v [spustit vzdálený agent](#Start). Pokud příliš mnoho času uplynulo od vzdáleného agenta PIN kód se vygeneroval, postupujte podle kroků v [vygenerovat nový bezpečnostní kód PIN](#GeneratePIN) na Macu a zkuste to znovu. Pokud použijete název hostitele počítače Mac, zkuste použít IP adresu v **název hostitele** místo toho.  
   
-8.  Aktualizovat název složky v **vzdálený kořen** pole zadat složku, která používají vzdálený agent ve vašem adresáři Domovská stránka (~) na počítači Mac. Ve výchozím nastavení vzdálený agent používá /Users/`username`/vcremote jako vzdálený kořen.  
+8. Aktualizovat název složky v **vzdálený kořen** pole zadat složku, která používají vzdálený agent ve vašem adresáři Domovská stránka (~) na počítači Mac. Ve výchozím nastavení vzdálený agent používá /Users/`username`/vcremote jako vzdálený kořen.  
   
 9. Zvolte **OK** se uložit nastavení vzdáleného připojení párování.  
   
- Visual Studio používá stejné informace pro připojení k vzdáleného agenta na počítači Mac pokaždé, když ho používáte. Nepotřebujete spárovat sady Visual Studio se vzdáleným agentem znovu není-li vygenerovat nový certifikát zabezpečení na počítači Mac, nebo jeho název hostitele nebo IP adresu změny.  
+   Visual Studio používá stejné informace pro připojení k vzdáleného agenta na počítači Mac pokaždé, když ho používáte. Nepotřebujete spárovat sady Visual Studio se vzdáleným agentem znovu není-li vygenerovat nový certifikát zabezpečení na počítači Mac, nebo jeho název hostitele nebo IP adresu změny.  
   
 ##  <a name="GeneratePIN"></a> Vygenerovat nový bezpečnostní kód PIN  
  Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný po omezenou dobu – ve výchozím nastavení, 10 minut. Pokud před vypršení časového limitu, nepárují sady Visual Studio se vzdáleným agentem, je potřeba vygenerovat nový kód PIN.  

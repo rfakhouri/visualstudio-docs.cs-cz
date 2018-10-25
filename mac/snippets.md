@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 864b39331944e881fe1bcdcfefa2dd7c1cebab09
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: bc362c950b919a4f9f663b5bd3ce1a2f0cbfb00a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906848"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu 
 
@@ -28,11 +28,11 @@ Existují některé jiné způsoby, jak přidat fragmenty kódu, z nichž někte
 
 * **Panel nástrojů** – použijte panel nástrojů pro zobrazení seznamu všech fragmentů kódu. Přetáhněte libovolné šabloně z panelu nástrojů na správné místo ve zdrojovém kódu:
 
- ![Fragmenty kódu v sadě nástrojů](media/source-editor-image14.png)
+  ![Fragmenty kódu v sadě nástrojů](media/source-editor-image14.png)
 
 * **Vložit šablony příkaz** – aktuálně nejsou k dispozici žádné výchozí klíč vazby sady pro vkládání šablony. Pokud chcete jeden vytvořit, přejděte do **sady Visual Studio > Předvolby... > vazeb klíče** a vyhledejte `template`. To umožňuje přidání požadovaného vazbu klíče do pole Upravit vazby, pak klikněte na tlačítko **použít**:
 
- ![Příkaz vložené šablony](media/source-editor-image15.png)
+  ![Příkaz vložené šablony](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Vytvoření nové šablony
 

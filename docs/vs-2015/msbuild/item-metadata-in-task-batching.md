@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923781"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadata položek v dávkování úloh
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256981"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] má schopnost rozdělení seznamů položek do různých kategorií nebo dávek, na základě položky metadat a spuštění úlohy jednou s jednotlivých dávek. Může být matoucí pochopit přesně položky, které jsou předávány pomocí které služby batch. Toto téma popisuje následující běžné scénáře, které se týkají dávkování.  
   
--   Dělení seznam položek do dávek  
+- Dělení seznam položek do dávek  
   
--   Dělení několik seznamů položek do dávek  
+- Dělení několik seznamů položek do dávek  
   
--   Dávkování jedna položka v čase  
+- Dávkování jedna položka v čase  
   
--   Filtrování seznamů položek  
+- Filtrování seznamů položek  
   
- Další informace o dávkové zpracování s [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], naleznete v tématu [dávkování](../msbuild/msbuild-batching.md).  
+  Další informace o dávkové zpracování s [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], naleznete v tématu [dávkování](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Dělení seznam položek do dávek  
  Dávkování umožňuje rozdělit seznam položek na jiné listy na základě položky metadat a předejte jednotlivých dávek úkol samostatně. To je užitečné pro vytváření satelitních sestavení.  

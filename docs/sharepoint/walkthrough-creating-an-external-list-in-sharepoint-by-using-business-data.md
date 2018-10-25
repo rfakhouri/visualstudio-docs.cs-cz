@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913966"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat
 
@@ -232,12 +232,12 @@ Chcete-li služba BDC v seznamu zobrazíte kontakty, je nutné přidat vyhledáv
 
 5. V `ContactService` třídy, nahraďte `ReadList` metodu s následujícím kódem. Tento kód provede následující:
 
-    - Načte data z tabulky kontaktů databáze AdventureWorks.
+   - Načte data z tabulky kontaktů databáze AdventureWorks.
 
-    - Vrátí seznam entit, kontaktujte služby BDC.
+   - Vrátí seznam entit, kontaktujte služby BDC.
 
-    > [!NOTE]
-    > Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
+     > [!NOTE]
+     > Nahraďte hodnotu `ServerName` pole s názvem vašeho serveru.
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

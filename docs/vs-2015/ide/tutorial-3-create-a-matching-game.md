@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939489"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutoriál 3: Vytvoření hry s hledáním shody
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto tutoriálu vytvoříte porovnávací hru, ve které hráč musí porovnat dvojice skrytých ikon. Získáte informace o následujících postupech:  
   
--   Store objektů, například ikon, v `List` objektu.  
+- Store objektů, například ikon, v `List` objektu.  
   
--   Použití `foreach` smyčky v jazyce Visual C# nebo `For Each` smyčky v jazyce Visual Basic k iterování položek v seznamu.  
+- Použití `foreach` smyčky v jazyce Visual C# nebo `For Each` smyčky v jazyce Visual Basic k iterování položek v seznamu.  
   
--   Udržování přehledu o stavu formuláře pomocí referenčních proměnných  
+- Udržování přehledu o stavu formuláře pomocí referenčních proměnných  
   
--   Sestavení obslužné rutiny události pro reakci na události, které lze použít s více objekty  
+- Sestavení obslužné rutiny události pro reakci na události, které lze použít s více objekty  
   
--   Vytvoření časovače, který odpočítává a po spuštění přesně jednou aktivuje událost  
+- Vytvoření časovače, který odpočítává a po spuštění přesně jednou aktivuje událost  
   
- Po absolvování tohoto tutoriálu váš program bude vypadat jako na následujícím obrázku.  
+  Po absolvování tohoto tutoriálu váš program bude vypadat jako na následujícím obrázku.  
   
- ![Hra, kterou vytvoříte v tomto kurzu](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Hra, kterou vytvoříte v tomto tutoriálu  
+  ![Hra, kterou vytvoříte v tomto kurzu](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Hra, kterou vytvoříte v tomto tutoriálu  
   
- Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz pro dokončení Porovnávací hra](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+  Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz pro dokončení Porovnávací hra](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
   
 > [!NOTE]
 >  V tomto tutoriálu je zahrnut jazyk Visual C# i jazyk Visual Basic, takže se zaměřte na informace, které jsou specifické pro vámi používaný programovací jazyk.  

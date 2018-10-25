@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928175"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Vytváření znovu použitelných skupin tlačítek
 Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně na nabídku nebo panel nástrojů. Všechny skupiny příkazů, lze ji znovu použít přiřazením do jiné nadřazené nabídky v části commandplacements – *.vsct* souboru.  
@@ -88,37 +88,37 @@ Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně n
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Vložit opakovaně použitelných skupin tlačítek v nabídce  
   
-1.  Vytvořit položku v `CommandPlacements` oddílu. Nastavte identifikátor GUID a ID `CommandPlacement` element u těch, které vaší skupiny a nastavit nadřazený identifikátor GUID a ID u těch, které v cílovém umístění.  
+1. Vytvořit položku v `CommandPlacements` oddílu. Nastavte identifikátor GUID a ID `CommandPlacement` element u těch, které vaší skupiny a nastavit nadřazený identifikátor GUID a ID u těch, které v cílovém umístění.  
   
-     Commandplacements – oddíl by měl umístit bezprostředně po části příkazy:  
+    Commandplacements – oddíl by měl umístit bezprostředně po části příkazy:  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     Příkaz skupiny můžou být zahrnuté ve více než jednu nabídku. Nadřazené nabídky může být ten, který jste vytvořili, ten, který je poskytnut pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (jak je popsáno v *ShellCmdDef.vsct* nebo *SharedCmdDef.vsct*), nebo disk, který je definován v jiné VSPackage. Počet vrstev vztahy k nadřazeným položkám je neomezený počet tak dlouho, dokud nabídce nadřazený server připojený k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo do místní nabídky, který se zobrazí při VSPackage.  
+    Příkaz skupiny můžou být zahrnuté ve více než jednu nabídku. Nadřazené nabídky může být ten, který jste vytvořili, ten, který je poskytnut pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (jak je popsáno v *ShellCmdDef.vsct* nebo *SharedCmdDef.vsct*), nebo disk, který je definován v jiné VSPackage. Počet vrstev vztahy k nadřazeným položkám je neomezený počet tak dlouho, dokud nabídce nadřazený server připojený k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo do místní nabídky, který se zobrazí při VSPackage.  
   
-     Následující příklad umístí na skupině **Průzkumníka řešení** napravo od ostatních tlačítek panelu nástrojů.  
+    Následující příklad umístí na skupině **Průzkumníka řešení** napravo od ostatních tlačítek panelu nástrojů.  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

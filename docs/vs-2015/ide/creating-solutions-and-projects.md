@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893699"
 ---
 # <a name="creating-solutions-and-projects"></a>Vytváření řešení a projektů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ Projekty jsou logické kontejnery pro všechno, co potřebujete k sestavení apl
   
 #### <a name="to-create-an-empty-solution"></a>Vytvoření prázdného řešení  
   
-1.  Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **nový projekt**.  
+1. Na **souboru** nabídky, klikněte na tlačítko **nový** a potom klikněte na tlačítko **nový projekt**.  
   
-2.  V levém podokně vyberte **nainstalováno**vyberte **ostatní typy projektů**a pak vyberte **řešení sady Visual Studio** z rozbaleného seznamu.  
+2. V levém podokně vyberte **nainstalováno**vyberte **ostatní typy projektů**a pak vyberte **řešení sady Visual Studio** z rozbaleného seznamu.  
   
-3.  V prostředním podokně vyberte **prázdné řešení**.  
+3. V prostředním podokně vyberte **prázdné řešení**.  
   
-4.  Nastavte **název** a **umístění** hodnoty pro vaše řešení, pak klikněte na **OK**.  
+4. Nastavte **název** a **umístění** hodnoty pro vaše řešení, pak klikněte na **OK**.  
   
- Po vytvoření prázdného řešení můžete přidat nové nebo existující projekty nebo položky k němu kliknutím **přidat novou položku** nebo **přidat existující položku** na **projektu** nabídky.  
+   Po vytvoření prázdného řešení můžete přidat nové nebo existující projekty nebo položky k němu kliknutím **přidat novou položku** nebo **přidat existující položku** na **projektu** nabídky.  
   
 ### <a name="deleting-solutions"></a>Odstraňuje se řešení  
  Řešení můžete odstranit trvale, ale ne prostřednictvím [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Před odstraněním řešení, přesuňte všechny projekty, které můžete chtít znovu použít v jiné řešení. Potom k odstranění adresáře, který obsahuje soubory řešení .sln a .suo, použijte Průzkumník souborů.  

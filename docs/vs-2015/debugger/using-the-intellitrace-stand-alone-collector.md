@@ -18,12 +18,12 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69fd91f60750da0f6301527bb7a7c4a9ba97bb6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938913"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Použití samostatného kolektoru IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ ms.locfileid: "49267472"
   
  **Požadavky**  
   
--   Rozhraní .NET framework 3.5, 4 nebo 4.5  
+- Rozhraní .NET framework 3.5, 4 nebo 4.5  
   
--   Visual Studio Enterprise (ale ne Professional nebo Community edice) na vývojovém počítači nebo jiném počítači pro otevření souborů .iTrace  
+- Visual Studio Enterprise (ale ne Professional nebo Community edice) na vývojovém počítači nebo jiném počítači pro otevření souborů .iTrace  
   
-    > [!NOTE]
-    >  Ujistěte se, že chcete ukládat symbolu (.pdb) soubory. Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).  
+  > [!NOTE]
+  >  Ujistěte se, že chcete ukládat symbolu (.pdb) soubory. Chcete-li ladit pomocí nástroje IntelliTrace a krokovat kód, musíte mít odpovídající zdrojové soubory a soubory symbolů. Zobrazit [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md).  
   
- **NEJČASTĚJŠÍ DOTAZY**  
+  **NEJČASTĚJŠÍ DOTAZY**  
   
--   [Jaké aplikace fungují s kolektorem?](#WhatApps)  
+- [Jaké aplikace fungují s kolektorem?](#WhatApps)  
   
--   [Jak mám začít?](#GetStarted)  
+- [Jak mám začít?](#GetStarted)  
   
--   [Jak lze získat většinu dat bez zpomalení aplikace?](#Minimizing)  
+- [Jak lze získat většinu dat bez zpomalení aplikace?](#Minimizing)  
   
--   [Kde jinde lze získat IntelliTrace data?](#WhereElse)  
+- [Kde jinde lze získat IntelliTrace data?](#WhereElse)  
   
 ##  <a name="WhatApps"></a> Jaké aplikace fungují s kolektorem?  
   
@@ -84,40 +84,40 @@ ms.locfileid: "49267472"
   
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalace kolekce  
   
-1.  Na serveru vaší aplikace vytvořte adresář kolektoru, například: **C:\IntelliTraceCollector**  
+1. Na serveru vaší aplikace vytvořte adresář kolektoru, například: **C:\IntelliTraceCollector**  
   
-2.  Stáhněte si kolektor z webu Microsoft Download Center nebo z instalační složky sady Visual Studio 2103 s aktualizací Update 3. [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2. Stáhněte si kolektor z webu Microsoft Download Center nebo z instalační složky sady Visual Studio 2103 s aktualizací Update 3. [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
   
-    -   **Microsoft Download Center**:  
+   - **Microsoft Download Center**:  
   
-        1.  Vedle položky **IntelliTraceCollector.exe**, zvolte **Stáhnout**.  
+     1. Vedle položky **IntelliTraceCollector.exe**, zvolte **Stáhnout**.  
   
-        2.  Uložte IntelliTraceCollector.exe do adresáře kolektoru, například: **C:\IntelliTraceCollector**  
+     2. Uložte IntelliTraceCollector.exe do adresáře kolektoru, například: **C:\IntelliTraceCollector**  
   
-        3.  Spusťte IntelliTraceCollector.exe. To vyextrahuje je extrahován soubor IntelliTraceCollection.cab.  
+     3. Spusťte IntelliTraceCollector.exe. To vyextrahuje je extrahován soubor IntelliTraceCollection.cab.  
   
-         \- nebo –  
+        \- nebo –  
   
-    -   **Visual Studio Instalační složka**:  
+   - **Visual Studio Instalační složka**:  
   
-        1.  Zkopírujte soubor IntelliTraceCollection.cab z následující složky:  
+     1.  Zkopírujte soubor IntelliTraceCollection.cab z následující složky:  
   
-             **.\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+          **.\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
-        2.  Vložte soubor IntelliTraceCollection.cab do adresáře kolektoru, například: **C:\IntelliTraceCollector**  
+     2.  Vložte soubor IntelliTraceCollection.cab do adresáře kolektoru, například: **C:\IntelliTraceCollector**  
   
-3.  Rozbalte soubor IntelliTraceCollection.cab:  
+3. Rozbalte soubor IntelliTraceCollection.cab:  
   
-    1.  Na serveru aplikace otevřete okno příkazového řádku jako správce.  
+   1.  Na serveru aplikace otevřete okno příkazového řádku jako správce.  
   
-    2.  Přejděte do adresáře kolektoru, například: **C:\IntelliTraceCollector**  
+   2.  Přejděte do adresáře kolektoru, například: **C:\IntelliTraceCollector**  
   
-    3.  Použití **rozbalte** příkaz, včetně tečky (**.**) na konci, a rozbalte soubor IntelliTraceCollection.cab:  
+   3.  Použití **rozbalte** příkaz, včetně tečky (**.**) na konci, a rozbalte soubor IntelliTraceCollection.cab:  
   
-         `expand  /f:* IntelliTraceCollection.cab .`  
+        `expand  /f:* IntelliTraceCollection.cab .`  
   
-        > [!NOTE]
-        >  Období (**.**) zachovává podsložky obsahující lokalizované plány sběru.  
+       > [!NOTE]
+       >  Období (**.**) zachovává podsložky obsahující lokalizované plány sběru.  
   
 ##  <a name="ConfigurePermissionsRunningCollector"></a> Nastavení oprávnění pro adresář kolekce  
   
@@ -173,47 +173,47 @@ ms.locfileid: "49267472"
   
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Nastavení oprávnění pro adresář souboru .iTrace  
   
-1.  Na serveru vaší aplikace vytvořte adresář souboru .iTrace, například: **C:\IntelliTraceLogFiles**  
+1. Na serveru vaší aplikace vytvořte adresář souboru .iTrace, například: **C:\IntelliTraceLogFiles**  
   
-    > [!NOTE]
-    >  -   Aby se zabránilo zpomalení vaší aplikace, vyberte umístění na místním vysokorychlostním disku, který není velmi aktivní.  
-    > -   Soubory .iTrace a soubory kolektoru lze umístit na stejném místě. Ale pokud máte webovou aplikaci nebo aplikaci služby SharePoint, ujistěte se, že je toto umístění mimo adresář, který je hostitelem aplikace.  
+   > [!NOTE]
+   > - Aby se zabránilo zpomalení vaší aplikace, vyberte umístění na místním vysokorychlostním disku, který není velmi aktivní.  
+   >   -   Soubory .iTrace a soubory kolektoru lze umístit na stejném místě. Ale pokud máte webovou aplikaci nebo aplikaci služby SharePoint, ujistěte se, že je toto umístění mimo adresář, který je hostitelem aplikace.  
+   > 
+   > [!IMPORTANT]
+   > - Omezte adresář souboru .iTrace jenom na ty identity, které musí s kolektorem pracovat. Soubor .iTrace může obsahovat citlivé informace, jako jsou data od uživatelů, databáze, další zdrojová umístění a připojovací řetězce, protože nástroj IntelliTrace umí zaznamenat libovolná data předaná parametrům metod nebo jako návratové hodnoty.  
+   >   -   Ujistěte se, že ty, kdo mohou otevírat soubory .iTrace jsou oprávněni prohlížet citlivá data. Při sdílení souborů .iTrace buďte opatrní. Pokud se ostatní uživatelé musí mít přístup, zkopírujte soubory do zabezpečeného sdíleného umístění.  
   
-    > [!IMPORTANT]
-    >  -   Omezte adresář souboru .iTrace jenom na ty identity, které musí s kolektorem pracovat. Soubor .iTrace může obsahovat citlivé informace, jako jsou data od uživatelů, databáze, další zdrojová umístění a připojovací řetězce, protože nástroj IntelliTrace umí zaznamenat libovolná data předaná parametrům metod nebo jako návratové hodnoty.  
-    > -   Ujistěte se, že ty, kdo mohou otevírat soubory .iTrace jsou oprávněni prohlížet citlivá data. Při sdílení souborů .iTrace buďte opatrní. Pokud se ostatní uživatelé musí mít přístup, zkopírujte soubory do zabezpečeného sdíleného umístění.  
+2. Pro webovou aplikaci nebo aplikaci služby SharePoint udělte jejich fondu aplikací úplná oprávnění k adresáři souboru .iTrace. Můžete použít Windows **icacls** příkaz % $n nebo pomocí Průzkumníka Windows (nebo Průzkumníka souborů).  
   
-2.  Pro webovou aplikaci nebo aplikaci služby SharePoint udělte jejich fondu aplikací úplná oprávnění k adresáři souboru .iTrace. Můžete použít Windows **icacls** příkaz % $n nebo pomocí Průzkumníka Windows (nebo Průzkumníka souborů).  
+    Příklad:  
   
-     Příklad:  
+   - Nastavení oprávnění se Windows **icacls** příkaz:  
   
-    -   Nastavení oprávnění se Windows **icacls** příkaz:  
+     - Pro webovou aplikaci v **DefaultAppPool** fondu aplikací:  
   
-        -   Pro webovou aplikaci v **DefaultAppPool** fondu aplikací:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
+     - Pro aplikaci služby SharePoint ve **SharePoint - 80** fondu aplikací:  
   
-        -   Pro aplikaci služby SharePoint ve **SharePoint - 80** fondu aplikací:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
+       -nebo-  
   
-         -nebo-  
+   - Nastavení oprávnění pomocí Průzkumníka Windows (nebo Průzkumníka souborů):  
   
-    -   Nastavení oprávnění pomocí Průzkumníka Windows (nebo Průzkumníka souborů):  
+     1.  Otevřít **vlastnosti** pro adresář souboru .iTrace.  
   
-        1.  Otevřít **vlastnosti** pro adresář souboru .iTrace.  
+     2.  Na **zabezpečení** kartě **upravit**, **přidat**.  
   
-        2.  Na **zabezpečení** kartě **upravit**, **přidat**.  
+     3.  Ujistěte se, že **zabudované objekty zabezpečení** se zobrazí v **vyberte typ objektu** pole. Pokud ji má, možnost **typy objektů** a přidejte ji.  
   
-        3.  Ujistěte se, že **zabudované objekty zabezpečení** se zobrazí v **vyberte typ objektu** pole. Pokud ji má, možnost **typy objektů** a přidejte ji.  
+     4.  Ujistěte se, že se zobrazí v místním počítači **z tohoto umístění** pole. Pokud ji má, možnost **umístění** ho změnit.  
   
-        4.  Ujistěte se, že se zobrazí v místním počítači **z tohoto umístění** pole. Pokud ji má, možnost **umístění** ho změnit.  
+     5.  V **zadejte názvy objektů k výběru** pole, přidat fond aplikací pro webovou aplikaci nebo aplikaci služby SharePoint.  
   
-        5.  V **zadejte názvy objektů k výběru** pole, přidat fond aplikací pro webovou aplikaci nebo aplikaci služby SharePoint.  
+     6.  Zvolte **Kontrola názvů** přeložit název. Zvolte **OK**.  
   
-        6.  Zvolte **Kontrola názvů** přeložit název. Zvolte **OK**.  
-  
-        7.  Ujistěte se, že má fond aplikací **úplné řízení**.  
+     7.  Ujistěte se, že má fond aplikací **úplné řízení**.  
   
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Shromažďování dat z webové aplikace nebo aplikace služby SharePoint  
   
@@ -297,92 +297,92 @@ ms.locfileid: "49267472"
   
  Tady jsou některé způsoby, jak získat většinu dat bez zpomalení vaší aplikace:  
   
--   Spuštění kolektoru, pouze pokud si myslíte, že dojde k nějakému problému, nebo pokud dokážete problém reprodukovat.  
+- Spuštění kolektoru, pouze pokud si myslíte, že dojde k nějakému problému, nebo pokud dokážete problém reprodukovat.  
   
-     Spustit shromažďování, reprodukujte problém a poté shromažďování zastavte. Otevřete soubor .iTrace v sadě Visual Studio Enterprise a prozkoumejte data. Zobrazit [otevřete soubor .iTrace v sadě Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
+   Spustit shromažďování, reprodukujte problém a poté shromažďování zastavte. Otevřete soubor .iTrace v sadě Visual Studio Enterprise a prozkoumejte data. Zobrazit [otevřete soubor .iTrace v sadě Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
   
--   Webových aplikací a aplikací služby SharePoint kolektor zaznamenává data pro každou aplikaci, která sdílí určený fond aplikací. To může zpomalit jakékoli aplikaci, která sdílí stejný fond aplikací, i když můžete zadat pouze moduly pro jednotlivé aplikace v plánu shromažďování.  
+- Webových aplikací a aplikací služby SharePoint kolektor zaznamenává data pro každou aplikaci, která sdílí určený fond aplikací. To může zpomalit jakékoli aplikaci, která sdílí stejný fond aplikací, i když můžete zadat pouze moduly pro jednotlivé aplikace v plánu shromažďování.  
   
-     Aby kolektor zpomalil ostatní aplikace, hostujte každou aplikaci v jejím vlastním fondu aplikací.  
+   Aby kolektor zpomalil ostatní aplikace, hostujte každou aplikaci v jejím vlastním fondu aplikací.  
   
--   Zkontrolujte události v plánu shromažďování, pro které nástroj IntelliTrace shromažďuje data. Upravte plán shromažďování a zakažte události, které nejsou důležité nebo vás nezajímají.  
+- Zkontrolujte události v plánu shromažďování, pro které nástroj IntelliTrace shromažďuje data. Upravte plán shromažďování a zakažte události, které nejsou důležité nebo vás nezajímají.  
   
-     Chcete-li zakázat událost, nastavte `enabled` atribut pro `<DiagnosticEventSpecification>` elementu `false`:  
+   Chcete-li zakázat událost, nastavte `enabled` atribut pro `<DiagnosticEventSpecification>` elementu `false`:  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Pokud `enabled` atribut neexistuje, je událost povolena.  
+   Pokud `enabled` atribut neexistuje, je událost povolena.  
   
-     *Jak to zlepší výkon?*  
+   *Jak to zlepší výkon?*  
   
-    -   Zakázáním událostí, které nejsou relevantní pro danou aplikaci, můžete zkrátit dobu spouštění. Například zakažte události pracovního postupu Windows pro aplikace, které nepoužívají Windows Workflow.  
+  -   Zakázáním událostí, které nejsou relevantní pro danou aplikaci, můžete zkrátit dobu spouštění. Například zakažte události pracovního postupu Windows pro aplikace, které nepoužívají Windows Workflow.  
   
-    -   Zakázáním událostí registru pro aplikace, které přístup k registru, ale nemají problémy s nastavením registru můžete zvýšit rychlost spouštění i výkon.  
+  -   Zakázáním událostí registru pro aplikace, které přístup k registru, ale nemají problémy s nastavením registru můžete zvýšit rychlost spouštění i výkon.  
   
--   Zkontrolujte moduly v plánu shromažďování, pro které nástroj IntelliTrace shromažďuje data. Upravte plán kolekce umožňuje zahrnout pouze moduly, které vás zajímají:  
+- Zkontrolujte moduly v plánu shromažďování, pro které nástroj IntelliTrace shromažďuje data. Upravte plán kolekce umožňuje zahrnout pouze moduly, které vás zajímají:  
   
-    1.  Otevřete plán shromažďování. Najít `<ModuleList>` elementu.  
+  1. Otevřete plán shromažďování. Najít `<ModuleList>` elementu.  
   
-    2.  V `<ModuleList>`, nastavte `isExclusionList` atribut `false`.  
+  2. V `<ModuleList>`, nastavte `isExclusionList` atribut `false`.  
   
-    3.  Použití `<Name>` – element pro určení každého modulu s některou z následujících akcí: název souboru, Řetězcová hodnota pro zahrnutí každého modulu, jehož název obsahuje daný řetězec, nebo veřejný klíč.  
+  3. Použití `<Name>` – element pro určení každého modulu s některou z následujících akcí: název souboru, Řetězcová hodnota pro zahrnutí každého modulu, jehož název obsahuje daný řetězec, nebo veřejný klíč.  
   
      Například pro shromažďování dat z právě hlavního webového modulu nebo webové aplikace Fabrikam Fiber, vytvořte seznam podobný následujícímu:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Pro shromažďování dat z libovolného modulu, jehož název obsahuje "Fabrikam", vytvořte seznam podobný následujícímu:  
+   Pro shromažďování dat z libovolného modulu, jehož název obsahuje "Fabrikam", vytvořte seznam podobný následujícímu:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Ke shromažďování dat z modulů zadáním jejich tokenů veřejných klíčů, vytvořte seznam podobný následujícímu:  
+   Ke shromažďování dat z modulů zadáním jejich tokenů veřejných klíčů, vytvořte seznam podobný následujícímu:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     *Jak to zlepší výkon?*  
+   *Jak to zlepší výkon?*  
   
-     To snižuje množství informací o volání metody a dalších instrumentačních dat, která nástroj IntelliTrace shromažďuje při spuštění a spuštění aplikace. Tato data vám umožní:  
+   To snižuje množství informací o volání metody a dalších instrumentačních dat, která nástroj IntelliTrace shromažďuje při spuštění a spuštění aplikace. Tato data vám umožní:  
   
-    -   Krokovat kód po shromáždění dat.  
+  - Krokovat kód po shromáždění dat.  
   
-    -   Zkontrolujte hodnoty předané a vrácené z volání funkce.  
+  - Zkontrolujte hodnoty předané a vrácené z volání funkce.  
   
-     *Proč namísto toho Nevyloučit moduly?*  
+    *Proč namísto toho Nevyloučit moduly?*  
   
-     Ve výchozím nastavení plány shromažďování dat vylučují moduly nastavením `isExclusionList` atribut `true`. Ale vyloučení modulů však může stále dojít shromažďování dat z modulů, které nesplňují kritéria v seznamu a vás nemusejí zajímat, například moduly třetích stran nebo open source.  
+    Ve výchozím nastavení plány shromažďování dat vylučují moduly nastavením `isExclusionList` atribut `true`. Ale vyloučení modulů však může stále dojít shromažďování dat z modulů, které nesplňují kritéria v seznamu a vás nemusejí zajímat, například moduly třetích stran nebo open source.  
   
--   *Existuje všechna data, která nástroj IntelliTrace neshromažďuje?*  
+- *Existuje všechna data, která nástroj IntelliTrace neshromažďuje?*  
   
-     Ano, pro snížení vlivu na výkon omezuje nástroj IntelliTrace shromažďování dat na hodnoty primitivních datových typů předávané a vracené z metod a na hodnoty primitivních datových typů v polích objektů nejvyšší úrovně předávané a vracené z metod.  
+   Ano, pro snížení vlivu na výkon omezuje nástroj IntelliTrace shromažďování dat na hodnoty primitivních datových typů předávané a vracené z metod a na hodnoty primitivních datových typů v polích objektů nejvyšší úrovně předávané a vracené z metod.  
   
-     Předpokládejme například, že máte `AlterEmployee` podpis metody, která přijímá celočíselné `id` a `Employee` objekt `oldemployee`:  
+   Předpokládejme například, že máte `AlterEmployee` podpis metody, která přijímá celočíselné `id` a `Employee` objekt `oldemployee`:  
   
-     `public Employee AlterEmployee(int id, Employee oldemployee)`  
+   `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
-     `Employee` Typ má následující atributy: `Id`, `Name`, a `HomeAddress`. Existuje vztah přidružení mezi `Employee` a `Address` typu.  
+   `Employee` Typ má následující atributy: `Id`, `Name`, a `HomeAddress`. Existuje vztah přidružení mezi `Employee` a `Address` typu.  
   
-     ![Vztah mezi zaměstnanci a adresa](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+   ![Vztah mezi zaměstnanci a adresa](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
-     Kolektor zaznamenává hodnoty `id`, `Employee.Id`, `Employee.Name` a `Employee` objekt vrácený z `AlterEmployee` metody. Kolektor však nezaznamenává informace o `Address` objektu, než zda měl hodnotu null nebo ne. Kolektor také nezaznamenává data o místních proměnných v `AlterEmployee` metoda Pokud jiné metody nepoužívají tyto místní proměnné jako parametry v tomto okamžiku jsou zaznamenávány jako parametry metod.  
+   Kolektor zaznamenává hodnoty `id`, `Employee.Id`, `Employee.Name` a `Employee` objekt vrácený z `AlterEmployee` metody. Kolektor však nezaznamenává informace o `Address` objektu, než zda měl hodnotu null nebo ne. Kolektor také nezaznamenává data o místních proměnných v `AlterEmployee` metoda Pokud jiné metody nepoužívají tyto místní proměnné jako parametry v tomto okamžiku jsou zaznamenávány jako parametry metod.  
   
 ##  <a name="WhereElse"></a> Kde jinde lze získat IntelliTrace data?  
   

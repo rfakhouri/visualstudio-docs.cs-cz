@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1ad7efda94ea3914caafa39d39870a77b08056d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e937f08ba73c8014bc7917fa0149b110ef349678
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897586"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,18 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
   
  Konkrétní verze sady Visual Studio, nebo konkrétní rozšíření sady Visual Studio, může být nutné vyvíjet typy konkrétní aplikace a služby pomocí HTML a JavaScriptu. Následující seznam obsahuje odkazy na další informace.  
   
--   Vytvoření aplikace pro různé platformy pomocí Apache Cordova, [získat Visual Studio Tools pro Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).  
+- Vytvoření aplikace pro různé platformy pomocí Apache Cordova, [získat Visual Studio Tools pro Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).  
   
--   Chcete-li vytvořit [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)a univerzálních aplikací pro (, které podporují obě platformy), [získat potřebné nástroje](http://dev.windows.com/en-us/develop/downloads).  
+- Chcete-li vytvořit [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop)a univerzálních aplikací pro (, které podporují obě platformy), [získat potřebné nástroje](http://dev.windows.com/en-us/develop/downloads).  
   
--   Vytvoření cloudové služby, najdete v tématu [webu Microsoft Azure](http://azure.microsoft.com/documentation/).  
+- Vytvoření cloudové služby, najdete v tématu [webu Microsoft Azure](http://azure.microsoft.com/documentation/).  
   
--   Chcete-li vytvořit weby a webové aplikace, [najdete v článku webu ASP.NET](http://www.asp.net/get-started/websites).  
+- Chcete-li vytvořit weby a webové aplikace, [najdete v článku webu ASP.NET](http://www.asp.net/get-started/websites).  
   
-    > [!NOTE]
-    >  Můžete vytvořit prázdný web ASP.Net a použít pro programování HTML, CSS a JavaScriptu. Soubor Webconfig poskytovaných technologií ASP.NET povolí ladění v sadě Visual Studio (nebo můžete použít nástroje F12 při spuštění aplikace).  
+  > [!NOTE]
+  >  Můžete vytvořit prázdný web ASP.Net a použít pro programování HTML, CSS a JavaScriptu. Soubor Webconfig poskytovaných technologií ASP.NET povolí ladění v sadě Visual Studio (nebo můžete použít nástroje F12 při spuštění aplikace).  
   
- Editor jazyka JavaScript v aplikaci Visual Studio poskytuje podporu technologie IntelliSense. Další informace najdete v tématu [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md).  
+  Editor jazyka JavaScript v aplikaci Visual Studio poskytuje podporu technologie IntelliSense. Další informace najdete v tématu [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md).  
   
 ## <a name="whats-new-in-javascript"></a>Co je nového v jazyce JavaScript  
  Nové funkce pro JavaScript jsou uvedeny v následující tabulce.  
