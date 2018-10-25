@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939550"
 ---
 # <a name="project-type-design-decisions"></a>Rozhodnutí týkající se návrhu typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Než vytvoříte nový typ projektu, je nutné provést několik rozhodnutí o n
   
  Máte několik možností, jak ke zvážení při výběru trvalosti pro položky ve vašem projektu. Můžete provést některou z následujících možností:  
   
--   Každý soubor byl změněn jednotlivě uložte.  
+- Každý soubor byl změněn jednotlivě uložte.  
   
--   Zachycení velký počet transakcí v jediném **Uložit** operace.  
+- Zachycení velký počet transakcí v jediném **Uložit** operace.  
   
--   Uložit soubory místně a potom publikovat na server nebo použít jiný přístup k uložení položek projektu, pokud položka představuje datové připojení ke vzdálenému objektu.  
+- Uložit soubory místně a potom publikovat na server nebo použít jiný přístup k uložení položek projektu, pokud položka představuje datové připojení ke vzdálenému objektu.  
   
- Další informace o trvalosti najdete v tématu [trvalost projektu](../../extensibility/internals/project-persistence.md) a [otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Další informace o trvalosti najdete v tématu [trvalost projektu](../../extensibility/internals/project-persistence.md) a [otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Model projektu závazku  
  Trvalá data objekty se otevřou v s přímým přístupem nebo počet zrušených zpracovaných režimu?  

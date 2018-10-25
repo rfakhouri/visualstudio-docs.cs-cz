@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936852"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Začínáme s laděním vícevláknových aplikací v sadě Visual Studio
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní si můžete usnadnit ladění aplikací s více vlákny. Tento kurz ukazuje, jak používat značky vlákna **paralelní zásobníky** okně **paralelní sledování** oken, podmíněné zarážky a filtr zarážek. Tento kurz trvá jenom několik minut, ale jeho dokončení se můžete seznámit s funkcemi pro ladění aplikací s více vlákny.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video")  |    [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) vícevláknové ladění zobrazující podobný postup. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) vícevláknové ladění zobrazující podobný postup. |
 
 Další témata poskytují další informace o použití jiných vícevláknové ladění nástrojů:
 
@@ -217,30 +217,30 @@ Pokud chcete začít tento kurz, potřebujete projekt aplikace s více vlákny. 
   
 #### <a name="to-start-debugging"></a>Pro spuštění ladění  
   
-1.  Klikněte v levém hřbetu z `Thread.Sleep` nebo `this_thread::sleep_for` příkazu k vložení novou zarážku.  
+1. Klikněte v levém hřbetu z `Thread.Sleep` nebo `this_thread::sleep_for` příkazu k vložení novou zarážku.  
   
-     Na levé straně editoru zdrojového kódu na ovládací prvek zobrazí se červený kruh. To znamená, že na tomto místě je nyní nastaveno zarážku. 
+    Na levé straně editoru zdrojového kódu na ovládací prvek zobrazí se červený kruh. To znamená, že na tomto místě je nyní nastaveno zarážku. 
   
-2.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** (**F5**).  
+2. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění** (**F5**).  
   
-     Visual Studio vytvoří řešení, aplikace spustí s připojeným ladícím nástrojem a poté se aplikace zastaví u zarážky.  
+    Visual Studio vytvoří řešení, aplikace spustí s připojeným ladícím nástrojem a poté se aplikace zastaví u zarážky.  
   
-    > [!NOTE]
-    > Je-li přepnout fokus do okna konzoly, klikněte na tlačítko v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno a vraťte se na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Je-li přepnout fokus do okna konzoly, klikněte na tlačítko v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno a vraťte se na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  V editoru zdrojového kódu vyhledejte řádek, který obsahuje zarážku:  
+3. V editoru zdrojového kódu vyhledejte řádek, který obsahuje zarážku:  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Ke zjištění značky vlákna  
 
@@ -384,4 +384,4 @@ Můžete nastavit zarážky v různých podmínkách, jako je například název
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Postupy: přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)

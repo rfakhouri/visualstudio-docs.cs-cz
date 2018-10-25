@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942566"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Návod: Vytvoření základní aplikace izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Chcete-li přizpůsobit výchozí domovskou stránku webového prohlížeče  
   
-1.  V souboru MyVSShellStub.Application.pkgdef změnit `DefaultHomePage` hodnotu prvku na "http://www.microsoft.com".  
+1. V souboru MyVSShellStub.Application.pkgdef změnit `DefaultHomePage` hodnotu prvku na "<http://www.microsoft.com>".  
   
-2.  Znovu sestavte projekt MyVSShellStub.  
+2. Znovu sestavte projekt MyVSShellStub.  
   
-3.  Sestavte řešení a spusťte ladění.  
+3. Sestavte řešení a spusťte ladění.  
   
-4.  V **zobrazení / ostatní Windows**, klikněte na tlačítko **webový prohlížeč**. **Webový prohlížeč** okně se zobrazí domovská stránka Microsoft Corporation.  
+4. V **zobrazení / ostatní Windows**, klikněte na tlačítko **webový prohlížeč**. **Webový prohlížeč** okně se zobrazí domovská stránka Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Odebírá se příkaz pro tisk  
  Souboru .vsct v projektu aplikace izolovaného prostředí uživatelského rozhraní se skládá ze sady deklarací v podobě `<Define name=No_` *Element*`>`, kde *Element* je jedním z standardní nabídky sady Visual Studio a příkazy.  
@@ -173,26 +173,26 @@ Tento návod ukazuje, jak vytvořit řešení izolovaného prostředí, přizpů
 ## <a name="deploying-the-isolated-shell-application"></a>Nasazení aplikací izolovaného prostředí  
  Nasazení aplikace izolovaného prostředí na cílovém počítači tak, že vytvoříte projekt instalace. Je nutné zadat tyto věci:  
   
--   Rozložení složky a soubory v cílovém počítači.  
+- Rozložení složky a soubory v cílovém počítači.  
   
--   Podmínky spuštění, které zaručit, že rozhraní .NET Framework a sady Visual Studio prostředí modulu runtime jsou nainstalovány v cílovém počítači.  
+- Podmínky spuštění, které zaručit, že rozhraní .NET Framework a sady Visual Studio prostředí modulu runtime jsou nainstalovány v cílovém počítači.  
   
- V následujícím postupu musíte do počítače nainstalovat program InstallShield Limited Edition.  
+  V následujícím postupu musíte do počítače nainstalovat program InstallShield Limited Edition.  
   
 #### <a name="to-create-the-setup-project"></a>Vytvoření projektu instalace  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel řešení a potom klikněte na tlačítko **přidat nový projekt**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel řešení a potom klikněte na tlačítko **přidat nový projekt**.  
   
-2.  V **nový projekt** dialogového okna rozbalte **ostatní typy projektů** a pak vyberte **instalace a nasazení**. Vyberte šablonu InstallShield. Název nového projektu `MySetup` a potom klikněte na tlačítko **OK**.  
+2. V **nový projekt** dialogového okna rozbalte **ostatní typy projektů** a pak vyberte **instalace a nasazení**. Vyberte šablonu InstallShield. Název nového projektu `MySetup` a potom klikněte na tlačítko **OK**.  
   
-3.  Pokud je už nainstalovaný program InstallShield Limited Edition, pokračujte k dalšímu kroku.  
+3. Pokud je už nainstalovaný program InstallShield Limited Edition, pokračujte k dalšímu kroku.  
   
-     Pokud ještě není nainstalovaný program InstallShield Limited Edition, zobrazí se stránka stahování programu InstallShield. Postupujte podle pokynů ke stažení a instalace produktu, výběr verze nástroje InstallShield, který je kompatibilní s vaší verzí sady Visual Studio. Musíte se rozhodnout, jestli se má zaregistrovat instalaci programu InstallShield nebo ho používat jako zkušební verzi. Po dokončení instalace je nutné restartovat Visual Studio.  
+    Pokud ještě není nainstalovaný program InstallShield Limited Edition, zobrazí se stránka stahování programu InstallShield. Postupujte podle pokynů ke stažení a instalace produktu, výběr verze nástroje InstallShield, který je kompatibilní s vaší verzí sady Visual Studio. Musíte se rozhodnout, jestli se má zaregistrovat instalaci programu InstallShield nebo ho používat jako zkušební verzi. Po dokončení instalace je nutné restartovat Visual Studio.  
   
-    > [!IMPORTANT]
-    >  Před vytvořením projektu InstallShield, je nutné spustit aplikaci Visual Studio jako správce. Pokud to neprovedete, zobrazí se chyba při vytváření projektu.  
+   > [!IMPORTANT]
+   >  Před vytvořením projektu InstallShield, je nutné spustit aplikaci Visual Studio jako správce. Pokud to neprovedete, zobrazí se chyba při vytváření projektu.  
   
- Další kroky ukazují, jak nakonfigurovat nastavení projektu.  
+   Další kroky ukazují, jak nakonfigurovat nastavení projektu.  
   
 > [!IMPORTANT]
 >  Ujistěte se, že jste vytvořili konfigurace pro vydání izolovaného prostředí projektu nejméně jednou předtím, než nakonfigurujete nastavení projektu.  

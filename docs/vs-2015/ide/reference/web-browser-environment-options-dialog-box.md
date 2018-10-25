@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931830"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webový prohlížeč, prostředí, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ Nastaví možnosti pro interní webový prohlížeč a aplikaci Internet Explore
  Zobrazit zdrojový kód v  
  Nastaví editor používá k otevření webové stránky, když zvolíte **zobrazit zdroj** na stránce z interní webový prohlížeč.  
   
--   **Editor zdrojového kódu** vyberte zobrazení zdroje v [psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md).  
+- **Editor zdrojového kódu** vyberte zobrazení zdroje v [psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
--   **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.  
+- **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.  
   
--   **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.  
+- **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.  
   
- Možnosti aplikace Internet Explorer  
- Kliknutím můžete změnit možnosti aplikace Internet Explorer pro **vlastnosti Internetu** dialogové okno. Změny provedené v tomto dialogovém vliv na interní webový prohlížeč i instancí aplikace Internet Explorer inicioval mimo rozhraní IDE sady Visual Studio (například z nabídky Start).  
+  Možnosti aplikace Internet Explorer  
+  Kliknutím můžete změnit možnosti aplikace Internet Explorer pro **vlastnosti Internetu** dialogové okno. Změny provedené v tomto dialogovém vliv na interní webový prohlížeč i instancí aplikace Internet Explorer inicioval mimo rozhraní IDE sady Visual Studio (například z nabídky Start).  
   
 > [!NOTE]
 >  V dialogovém okně Procházet s použijte k nahrazení sady Visual Studio interní webový prohlížeč, což je verze aplikace Internet Explorer, s použitím různých externí webový prohlížeč.  

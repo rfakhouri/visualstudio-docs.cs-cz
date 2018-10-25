@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933154"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Návod: Vytvoření hlavního podrobný vztah pomocí datové sady v mezipaměti
   Tento názorný postup ukazuje vytvoření vztah záznamů master/detail v listu a dat do mezipaměti, takže toto řešení je možné do offline režimu.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808262"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvořte projekt sešitu aplikace Excel s názvem **Moje hlavní-podrobnosti**, pomocí jazyka Visual Basic nebo C#. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [postupy: vytváření projektů pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Vytvořte projekt sešitu aplikace Excel s názvem **Moje hlavní-podrobnosti**, pomocí jazyka Visual Basic nebo C#. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [postupy: vytváření projektů pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Moje hlavní-podrobnosti** projektu **Průzkumníka řešení**.  
+   Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Moje hlavní-podrobnosti** projektu **Průzkumníka řešení**.  
   
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat  
  Použití **zdroje dat** okno pro přidání typové datové sady do projektu.  
   
 ### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
+1. Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
   
-2.  Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
+2. Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Vyberte **databáze** a potom klikněte na tlačítko **Další**.  
+3. Vyberte **databáze** a potom klikněte na tlačítko **Další**.  
   
-4.  Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
+4. Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
   
-5.  Po výběru nebo vytvoření připojení, klikněte na tlačítko **Další**.  
+5. Po výběru nebo vytvoření připojení, klikněte na tlačítko **Další**.  
   
-6.  Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
+6. Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
   
-7.  Rozbalte **tabulky** uzlu **databázové objekty** okna.  
+7. Rozbalte **tabulky** uzlu **databázové objekty** okna.  
   
-8.  Vyberte **objednávky** tabulky a **OrderDetails** tabulky.  
+8. Vyberte **objednávky** tabulky a **OrderDetails** tabulky.  
   
 9. Klikněte na tlačítko **Dokončit**.  
   
- Průvodce přidá do obou tabulek **zdroje dat** okna. Také přidá typové datové sady do projektu, který se zobrazuje **Průzkumníka řešení**.  
+   Průvodce přidá do obou tabulek **zdroje dat** okna. Také přidá typové datové sady do projektu, který se zobrazuje **Průzkumníka řešení**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Přidání ovládacích prvků na list  
  V tomto kroku přidáte pojmenované oblasti, objekt seznamu a dvě tlačítka na první sešit. Nejprve přidejte pojmenovaném rozsahu a objekt v seznamu **zdroje dat** okna tak, aby se automaticky vázán na zdroj dat. V dalším kroku přidejte tlačítka z **nástrojů**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808262"
   
 ### <a name="to-add-two-buttons"></a>Chcete-li přidat dvě tlačítka  
   
-1.  Z **běžné ovládací prvky** karty **nástrojů**, přidat <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **A3** listu.  
+1. Z **běžné ovládací prvky** karty **nástrojů**, přidat <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **A3** listu.  
   
-     Toto tlačítko nazývalo `Button1`.  
+    Toto tlačítko nazývalo `Button1`.  
   
-2.  Přidejte další <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **B3** listu.  
+2. Přidejte další <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **B3** listu.  
   
-     Toto tlačítko nazývalo `Button2`.  
+    Toto tlačítko nazývalo `Button2`.  
   
- V dalším kroku označte datovou sadu do mezipaměti v dokumentu.  
+   V dalším kroku označte datovou sadu do mezipaměti v dokumentu.  
   
 ## <a name="cache-the-dataset"></a>Datovou sadu do mezipaměti  
  Označit datovou sadu do mezipaměti v dokumentu tak, že datovou sadu, veřejné a nastavení **CacheInDocument** vlastnost.  
   
 ### <a name="to-cache-the-dataset"></a>Chcete-li datovou sadu do mezipaměti  
   
-1.  Vyberte **NorthwindDataSet** v panelu komponent.  
+1. Vyberte **NorthwindDataSet** v panelu komponent.  
   
-2.  V **vlastnosti** okno Změnit **modifikátory** vlastnost **veřejné**.  
+2. V **vlastnosti** okno Změnit **modifikátory** vlastnost **veřejné**.  
   
-     Předtím, než je povoleno ukládání do mezipaměti, musí být veřejné datové sady.  
+    Předtím, než je povoleno ukládání do mezipaměti, musí být veřejné datové sady.  
   
-3.  Změnit **CacheInDocument** vlastnost **True**.  
+3. Změnit **CacheInDocument** vlastnost **True**.  
   
- Dalším krokem je přidání textu tlačítka a v jazyce C# přidejte kód k připojení obslužných rutin událostí.  
+   Dalším krokem je přidání textu tlačítka a v jazyce C# přidejte kód k připojení obslužných rutin událostí.  
   
 ## <a name="initialize-the-controls"></a>Inicializovat ovládací prvky  
  Nastavení textu tlačítka a přidejte obslužné rutiny událostí během <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> událostí.  

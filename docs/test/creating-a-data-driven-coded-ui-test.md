@@ -11,98 +11,98 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940447"
 ---
-# <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datové programového testu uživatelského rozhraní
+# <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 
-K testování různých podmínkách, můžete spustit testy vícekrát s jiným parametrem hodnotami. Datově řízeného programového uživatelského rozhraní jsou testy pohodlný způsob, jak to udělat. Můžete definovat hodnoty parametrů ve zdroji dat a každý řádek ve zdroji dat je iterace programového testu uživatelského rozhraní. Celkový výsledek testu budou založeny na výsledek pro všechny iterace. Například pokud se jeden testovací iterace nezdaří, celkový výsledek testu je selhání.
+K testování různých podmínek, můžete spustit testy několikrát s různými hodnotami parametrů. S daty kódované UI testy jsou pohodlný způsob, jak to provést. Můžete definovat hodnoty parametrů ve zdroji dat a každý řádek ve zdroji dat je iteraci programový test uživatelského rozhraní. Celkový výsledek testu budou založeny na výsledek pro všechny iterace. Například pokud jedna iteraci testu nezdaří, celkový výsledek testu je selhání.
 
 **Požadavky**
 
 - Visual Studio Enterprise
-- Programového testu součást uživatelského rozhraní
+- Programový test komponenta uživatelského prostředí
 
-## <a name="create-a-test-project"></a>Vytvoření projektu testů
+## <a name="create-a-test-project"></a>Vytvoření testovacího projektu
 
-Tato ukázka vytvoří programového testu uživatelského rozhraní, která běží na Windows kalkulačky aplikace. Ho společně sečte dvě čísla a kontrolní výrazy používá k ověření, zda je správný součet. V dalším kroku programového kontrolní výraz a hodnoty parametrů pro dva čísla se řízené daty a uložené v hodnot oddělených čárkami (*.csv*) souboru.
+Tato ukázka vytvoří programový test uživatelského rozhraní, která běží na Windows Kalkulačka aplikace. Sečte dvě čísla a používá kontrolní výraz k ověření, že součet je správný. V dalším kroku se stane s daty a uložené v hodnot oddělených čárkami kódují kontrolního výrazu a hodnoty parametrů pro daných dvou čísel (*CSV*) soubor.
 
-### <a name="step-1---create-a-coded-ui-test"></a>Krok 1 – Vytvoření programového testu UI
+### <a name="step-1---create-a-coded-ui-test"></a>Krok 1: vytvoření programového testu uživatelského rozhraní
 
-1.  Vytvořte projekt.
+1. Vytvoření projektu.
 
-     ![Vytvoření projektu programových testů uživatelského rozhraní](../test/media/cuit_datadriven_.png)
+    ![Vytvořit projekt programového testu uživatelského rozhraní](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Pokud nevidíte **programového projekt testování uživatelského rozhraní** šablony, budete muset [nainstalovat součást programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Pokud se nezobrazí **projekt testu uživatelského rozhraní programového** šablony, budete muset [nainstalovat komponentu programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
-2.  Zvolit **záznam akce**.
+2. Zvolit **záznam akce**.
 
-     ![Pokud se rozhodnete záznam akcí](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![Zvolte pro záznam akce](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  Otevřete aplikaci kalkulačky a spusťte záznam test.
+3. Otevřete aplikaci kalkulačky a spusťte záznam testu.
 
-     ![Záznam akcí](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![Záznam akce](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  Přidat 1 a 2, pozastavit záznam a vygenerovat zkušební metody. Hodnoty tento uživatelský vstup jsme později budete nahraďte hodnotami z datového souboru.
+4. Přidat 1 a 2, pozastavit záznam a generovat zkušební metody. Později budete nahradíme hodnoty tento uživatelský vstup s hodnotami z datového souboru.
 
-     ![Test Genetate – metoda](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![Genetate testovací metody](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     Zavřete Tvůrce testu. Metoda je přidat do testu:
+    Zavřete Tvůrce testu. Metoda je přidána do testu:
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **spuštění testů**. (Klávesové zkratky: **Ctrl**+**R**,**T**).
+5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
 
-     Výsledek testu, který ukazuje Pokud test předán nebo se nezdařilo se zobrazí v **testování Explorer** okno. Otevřete okno Průzkumníka testů z **Test** nabídce zvolte **Windows** a potom zvolte **Průzkumníka testů**.
+    Zobrazí se ve výsledku testu, který ukazuje-li test úspěšný nebo neúspěšný **Průzkumníka testů** okna. Otevření okna Průzkumníka testů z **testovací** nabídce zvolte **Windows** a klikněte na tlačítko **Průzkumník testů**.
 
-6.  Protože zdroj dat lze také hodnoty parametrů assertion – které jsou používány test ověření očekávaných hodnot – přidejme kontrolní výrazy k ověření, zda je správný součet dvou čísel. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **generovat kód pro programové testování uživatelského rozhraní**a potom **použití programových Tvůrce uživatelského rozhraní Test**.
+6. Vzhledem k tomu, že zdroje dat lze také hodnoty parametrů kontrolní výraz – které jsou používány test ověření očekávané hodnoty – můžeme přidat kontrolní výraz se ověřit správnost součet dvou čísel. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **generovat kód pro programový Test uživatelského rozhraní**a potom **použití Tvůrce programového testu UI**.
 
-     Mapy ovládacího prvku text kalkulačky, který zobrazuje součet.
+    Mapování ovládacího prvku text v kalkulačce zobrazující součet.
 
-     ![Mapy ovládacího prvku textu uživatelského rozhraní](../test/media/cuit_datadriven_addassertion.png)
+    ![Mapování ovládacího prvku textu uživatelského rozhraní](../test/media/cuit_datadriven_addassertion.png)
 
-7.  Přidáte kontrolní výraz, který ověří, zda hodnota součtu je správný. Vyberte **ZobrazenýText** vlastnost, která má hodnotu **3** a potom zvolte **přidat kontrolní**. Použití **AreEqual** komparátoru a ověřte, zda je hodnota porovnání **3**.
+7. Přidáte kontrolní výraz, který ověří správnost hodnotu Součet. Zvolte **ZobrazenýText** vlastnost, která má hodnotu **3** a klikněte na tlačítko **přidat kontrolní výraz**. Použití **AreEqual** Komparátor a ověřte, zda je hodnota porovnání **3**.
 
-     ![Nakonfigurujte kontrolní výraz](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![Konfigurace kontrolního výrazu](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  Po dokončení konfigurace kontrolní výraz, generování kódu z Tvůrce znovu. Tím se vytvoří nová metoda pro ověření.
+8. Po dokončení konfigurace kontrolního výrazu, generování kódu z Tvůrce znovu. Tím se vytvoří novou metodu pro ověření.
 
-     ![Generate – metoda kontrolní výraz](../test/media/cuit_datadriven_assertiongencode.png)
+    ![Vytvořit metodu kontrolního výrazu](../test/media/cuit_datadriven_assertiongencode.png)
 
-     Protože `ValidateSum` metoda ověří výsledky `AddNumbers` metoda, přesunout ho k dolnímu okraji bloku kódu.
+    Protože `ValidateSum` metoda ověří výsledky `AddNumbers` metoda, jej přesunout na konec bloku kódu.
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
-9. Ověřte, že test běží pomocí `ValidateSum()` metoda. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **spuštění testů**. (Klávesové zkratky: **Ctrl**+**R**,**T**).
+9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
 
-     V tomto okamžiku všechny hodnoty parametrů jsou definovány v své metody jako konstanty. V dalším kroku vytvoříme datové sady, aby naše testovací řízené daty.
+     V tomto okamžiku všechny hodnoty parametrů jsou definovány v jejich metod jako konstanty. V dalším kroku vytvoříte datové sady, aby naše testovací řízené daty.
 
-### <a name="step-2---create-a-data-set"></a>Krok 2 – Vytvoření datové sady
+### <a name="step-2---create-a-data-set"></a>Krok 2: vytvoření datové sady
 
-1.  Přidejte do textového souboru do dataDrivenSample projektu s názvem *data.csv*.
+1.  Přidání textového souboru s názvem projektu dataDrivenSample *data.csv*.
 
-     ![Přidejte do projektu soubor hodnota hodnotami oddělenými čárkami](../test/media/cuit_datadriven_addcsvfile.png)
+     ![Přidejte do projektu soubor hodnota oddělených čárkami](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Naplnění *.csv* soubor s následující data:
+2.  Naplnění *CSV* souborů s následujícími údaji:
 
     |Num1|Num2|Součet|
     |-|-|-|
@@ -112,19 +112,19 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
      Po přidání data, soubor by měl vypadat takto:
 
-     ![Naplnění soubor .csv s daty](../test/media/cuit_datadriven_adddatatocsvfile.png)
+     ![Naplnění souboru .csv s daty](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  Je potřeba uložit *.csv* souboru pomocí správné kódování. Na **soubor** nabídce zvolte **rozšířené možnosti ukládání** a zvolte **Unicode (UTF-8 bez podpisu) - Codepage 65001** jako kódování.
+3.  Je potřeba uložit *CSV* soubor pomocí správné kódování. Na **souboru** nabídce zvolte **pokročilé nastavení uložení** a zvolte **kódování Unicode (UTF-8 bez podpisu) - znaková stránka 65001** jako kódování.
 
-4.  *.Csv* souboru, musí být zkopírovány do výstupního adresáře, nebo nelze spustit test. Použití **vlastnosti** okno a zkopírujte ho.
+4.  *CSV* soubor, musí být zkopírován do výstupního adresáře, nebo nelze spustit test. Použití **vlastnosti** okna zkopírujte.
 
-     ![Nasadit soubor .csv](../test/media/cuit_datadriven_deploycsvfile.png)
+     ![Nasadit soubor CSV](../test/media/cuit_datadriven_deploycsvfile.png)
 
-     Teď, když máme sadu dat vytvořili, můžeme vazbu dat na test.
+     Když teď máme sadu dat vytvořili, Pojďme vytvořit vazbu mezi dat do testu.
 
 ### <a name="step-3---add-data-source-binding"></a>Krok 3 – Přidání datového zdroje vazby
 
-1.  Svázat zdroj dat, přidejte `DataSource` atribut do existujícího `[TestMethod]` atribut, který je hned nad metodu test.
+1.  K vytvoření vazby zdroje dat, přidejte `DataSource` atribut do existujícího `[TestMethod]` atribut, který je hned nad testovací metody.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -136,20 +136,20 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
     }
     ```
 
-     Zdroj dat je nyní k dispozici pro použití v této metodě test.
+     Zdroj dat je teď k dispozici pro použití v této zkušební metodě.
 
     > [!TIP]
-    > V tématu [ukázky atribut zdroje dat](#CreateDataDrivenCUIT_QA_DataSourceAttributes) ve funkci QA část ukázky použití jiné typy zdrojů dat, jako je například XML, SQL Express a Excel.
+    > Zobrazit [ukázky atribut zdroje dat](#CreateDataDrivenCUIT_QA_DataSourceAttributes) v Q & části ukázky použití jiných typů zdrojů dat, jako jsou XML, SQL Express a Excel.
 
-2.  Spuštění testu.
+2.  Spusťte test.
 
-     Všimněte si, že test běží prostřednictvím tři iterací. To je proto tří řádků dat obsahuje zdroj dat, která byla vázána. Však bude také zjistíte, že test stále používá hodnoty parametru konstantní a je přidání 1 + 2 s součet hodnot 3 pokaždé, když.
+     Všimněte si, že test běží až tři iterace. Je to proto tří řádků dat obsahuje zdroj dat, která byla vázána. Ale také si povšimněte, že test se pořád používá hodnoty parametrů konstantní a přidává 1 + 2 s součet 3 pokaždé, když.
 
-     V dalším kroku nakonfigurujeme testu chcete hodnoty použít v datovém souboru zdroje.
+     V dalším kroku testu, aby použil hodnoty v souboru zdroje dat nakonfigurujeme.
 
-### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Krok 4 – používat data při programového testu uživatelského rozhraní
+### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>Krok 4: použití dat v programovém testu uživatelského rozhraní
 
-1.  Přidat `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` do horní části *CodedUITest.cs* souboru:
+1.  Přidat `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` k hornímu okraji *CodedUITest.cs* souboru:
 
     ```csharp
     using System;
@@ -165,7 +165,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  Přidat `TestContext.DataRow[]` v `CodedUITestMethod1()` metodu, která bude ze zdroje dat použít hodnoty. Hodnoty zdroje dat přepsat konstanty přiřadit do zdroje UIMap ovládacích prvků pomocí ovládacích prvků `SearchProperties`:
+2.  Přidat `TestContext.DataRow[]` v `CodedUITestMethod1()` metodu, která použije hodnoty ze zdroje dat. Hodnoty zdroje dat přepsat konstanty přiřazené k ovládacím prvkům UIMap pomocí ovládacích prvků `SearchProperties`:
 
     ```csharp
     public void CodedUITestMethod1()
@@ -178,33 +178,33 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
     }
     ```
 
-     Vlastnosti, které hledání do kódu data, a pokuste se zjistit pomocí editoru programových testů uživatelského rozhraní.
+     Chcete-li zjistit vlastnosti vyhledávání, které chcete data na kódu, použijte Editor programového testu uživatelského rozhraní.
 
-    -   Otevřete *UIMap.uitest* souboru.
+    -   Otevřít *UIMap.uitest* souboru.
 
-         ![Otevřete editoru programových testů UI](../test/media/cuit_datadriven_opentesteditor.png)
+         ![Otevřít editoru programového testu UI](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   Vyberte akci uživatelského rozhraní a sledovat odpovídající mapování ovládacích prvků uživatelského rozhraní. Všimněte si, jak mapování odpovídá kódu, například `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    -   Zvolte akce uživatelského rozhraní a sledovat odpovídající mapování ovládacích prvků uživatelského rozhraní. Všimněte si, jak mapování odpovídá kódu, například `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Pomoc s kódu pomocí editoru programového testu uživatelského rozhraní](../test/media/cuit_datadriven_testeditor.png)
+         ![Pomocí editoru programového testu uživatelského rozhraní pro účely pomoci s kódem](../test/media/cuit_datadriven_testeditor.png)
 
-    -   V **vlastnosti** okno, otevřete **vlastností vyhledávání**. Vlastností vyhledávání **název** co je se s nimi manipulovat, v kódu pomocí zdroje dat je hodnota. Například `SearchProperties` je právě přiřazován hodnoty z prvního sloupce každý řádek dat: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Pro tři iterací tento test se změní **název** hodnotu pro vlastnost vyhledávání 3, potom 5 a nakonec 6.
+    -   V **vlastnosti** okno Otevřít **vlastnosti hledání**. Vlastnosti hledání **název** co je právě zpracováván v kódu pomocí zdroje dat je hodnota. Například `SearchProperties` jsou přiřazeny hodnoty v prvním sloupci každý řádek dat: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Pro tři iterace, tento test změní **název** hodnotu pro vlastnost vyhledávání na 3, pak 5 a nakonec 6.
 
-         ![Použijte jako pomůcku při kódování vlastností vyhledávání](../test/media/cuit_datadriven_searchproperties.png)
+         ![Pomocí vlastnosti hledání pomoci při psaní kódu](../test/media/cuit_datadriven_searchproperties.png)
 
 3.  Uložte řešení.
 
-### <a name="step-5---run-the-data-driven-test"></a>Krok 5 – spuštění testu řízené daty
+### <a name="step-5---run-the-data-driven-test"></a>Krok 5: spuštění testu s daty
 
-1.  Ověřte, zda test nyní řízené daty tak, že znovu spustíte test.
+1.  Ověřte, že test nyní řízené daty opětovným spuštěním testu.
 
-     Měli byste vidět testu, spuštění prostřednictvím tři iterací pomocí hodnot v *.csv* souboru. Ověření by měla fungovat tak dobře a test by měla zobrazovat jako předaný v Průzkumníku otestovat.
+     Měla by se zobrazit testovací běh prostřednictvím tři iterace pomocí hodnot v *CSV* souboru. Ověření by měl pracovat tak dobře, a zobrazit testu jako úspěšný v aplikaci Test Explorer.
 
 ## <a name="q--a"></a>Dotazy a odpovědi
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Jaké jsou atributy zdroje dat pro jiné typy zdrojů dat, jako je například SQL Express nebo XML?
+###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Co jsou atributy zdroje dat pro další typy zdrojů dat, jako je například SQL Express nebo XML?
 
-Řetězce zdrojů dat ukázka v následující tabulce můžete použít tak, že kopírování je do vašeho kódu a potřebná přizpůsobení.
+Ukázka řetězce zdrojů dat v následující tabulce můžete použít zkopírováním do vašeho kódu a provedením nezbytných úpravách.
 
 **Typy zdrojů dat a atributy**
 
@@ -216,7 +216,7 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Testovacího případu v sadě Team Foundation Server
+-   Testovací případ v Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
@@ -228,11 +228,11 @@ Tato ukázka vytvoří programového testu uživatelského rozhraní, která bě
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze změnit kód v souboru UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze upravit kód v souboru UIMap.Designer?
 
-**Odpověď:** žádné změny v kódu *UIMapDesigner.cs* soubor se přepíše pokaždé, když generování kódu pomocí zdroje UIMap - Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů, můžete provést změny kódu potřebnými k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (tedy *CodedUITest1.cs*).
+**Odpověď:** všechny změny provedené v kódu *UIMapDesigner.cs* soubor bude přepsán při každém vytvoření kódu pomocí UIMap – Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů, můžete provést změny kódu potřebná k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (to znamená *CodedUITest1.cs*).
 
-Pokud budete muset upravit zaznamenaná metodu, musíte zkopírovat jej do *UIMap.cs* souborů a přejmenujte ji. *UIMap.cs* soubor lze použít k přepsání metody a vlastnosti v *UIMapDesigner.cs* souboru. Musíte odebrat odkaz na původní metodou programový *UITest.cs* a nahraďte název přejmenované metody.
+Pokud je třeba změnit zaznamenanou metodu, je nutné zkopírovat ho do *UIMap.cs* souboru a přejmenujte jej. *UIMap.cs* soubor lze použít k přepsání metod a vlastností v *UIMapDesigner.cs* souboru. Musíte odebrat odkaz na původní metodu programového *UITest.cs* soubor a nahradit ji názvem přejmenované metody.
 
 ## <a name="see-also"></a>Viz také:
 

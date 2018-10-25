@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939512"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -100,7 +100,7 @@ Test Explorer umožňuje seskupit testy do předdefinovaných kategorií. Větš
 ### <a name="test-explorer-groups"></a>Skupiny Průzkumníka testů
 
 |Skupina|Popis|
-|-----------|-----------------|
+|-|-----------------|
 |**Doba trvání**|Seskupí testy podle času spuštění: **rychlé**, **střední**, a **pomalá**.|
 |**Výsledek**|Seskupí testy podle výsledků spuštění: **neúspěšné testy**, **přeskočené testy**, **úspěšné testy**.|
 |**Osobnostní rysy**|Seskupí testy podle kategorie nebo párových hodnot, které definujete. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
@@ -115,7 +115,7 @@ Test Explorer umožňuje seskupit testy do předdefinovaných kategorií. Větš
  V rámci Microsoft testovacího rozhraní jednotky pro spravované aplikace, můžete definovat vlastnost název / hodnota v <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> atribut. Testovací rozhraní obsahuje také tyto předdefinované vlastnosti:
 
 |Vlastnost|Popis|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Kategorie vlastník je definována testovacím rozhraním jednotky a vyžaduje poskytnutí řetězce hodnoty vlastníka.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Kategorie Priorita je definována testovacím rozhraním jednotky a vyžaduje poskytnutí celočíselné hodnoty priority.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atribut TestCategory umožňuje zadat kategorii bez hodnoty. Kategorie definované atributu TestCategory může být také kategorie atribut TestProperty.|
@@ -143,7 +143,7 @@ Filtrovat podle různých kritérií:
 > Hledání jsou malá a velká písmena a odpovídají libovolné části hodnoty kritérií zadaného řetězce.
 
 |Kvalifikátor|Popis|
-|---------------|-----------------|
+|-|-----------------|
 |**Vlastnost**|Hledá odpovídající vlastnosti kategorie a hodnoty pro shody. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
 |**Projekt**|Vyhledá názvy projektů testů pro shody.|
 |**Chybová zpráva**|Hledání uživatelem definované chybové zprávy vrácené selháním výrazů pro shody.|
@@ -187,7 +187,7 @@ Průzkumník testů můžete použít ke spuštění relace ladění pro testy. 
 
 2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.
 
- Další informace o ladicím programu, najdete v části [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Další informace o ladicím programu, najdete v části [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnostika problémů s výkonem test – metoda
 
@@ -216,7 +216,7 @@ Další informace najdete v tématu [použití pokrytí kódu k určení, kolik 
 Testy můžete spustit z **Průzkumníka testů**, tak, že kliknete pravým tlačítkem v editoru kódu v testu a vyberete **spuštění testu**, nebo s použitím výchozí [zástupce Průzkumník testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) v Visual Studio. Některé zkratky jsou založené na kontextu. To znamená, že spustit nebo ladit testy založené na to, kde je kurzor v editoru kódu. Pokud ukazatel myši nachází uvnitř testovací metoda, která testovacích běhů metoda. Pokud je kurzor na úrovni třídy a poté spusťte všechny testy v dané třídě. To je stejný pro úroveň oboru názvů.
 
 |Časté příkazy| Klávesové zkratky|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 

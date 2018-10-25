@@ -10,37 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949809"
 ---
 # <a name="image-library-viewer"></a>Prohlížeč knihovny obrázků
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Nástroj Prohlížeč knihovny obrázků Visual Studio můžete načíst a vyhledávat image manifestů, které uživateli umožňují s nimi manipulovat stejným způsobem, který by sady Visual Studio. Uživatel může změnit na pozadí, velikosti, DPI, vysoký kontrast a další nastavení. Tento nástroj také zobrazuje informace o načítání pro každou manifestu obrázků a zobrazí informace o zdroji pro každý obrázek v manifestu obrázků. Tento nástroj je užitečný pro:  
   
-1.  Diagnostika chyb  
+1. Diagnostika chyb  
   
-2.  Atributy zajistit, že jsou správně nastavené v manifestech vlastní image  
+2. Atributy zajistit, že jsou správně nastavené v manifestech vlastní image  
   
-3.  Vyhledávání obrázků v katalogu obrázků Visual Studio tak, aby rozšíření sady Visual Studio můžete použít Image, které vyhovují stylu sady Visual Studio  
+3. Vyhledávání obrázků v katalogu obrázků Visual Studio tak, aby rozšíření sady Visual Studio můžete použít Image, které vyhovují stylu sady Visual Studio  
   
- ![Hero prohlížeč knihovny obrázků](../../extensibility/internals/media/image-library-viewer-hero.png "Hero prohlížeč knihovny obrázků")  
+   ![Hero prohlížeč knihovny obrázků](../../extensibility/internals/media/image-library-viewer-hero.png "Hero prohlížeč knihovny obrázků")  
   
- **Moniker obrázku.**  
+   **Moniker obrázku.**  
   
- Moniker bitové kopie (nebo moniker short) je GUID:ID pár, který jednoznačně identifikuje prostředek obrázku nebo seznam prostředků obrázků v knihovně obrázků.  
+   Moniker bitové kopie (nebo moniker short) je GUID:ID pár, který jednoznačně identifikuje prostředek obrázku nebo seznam prostředků obrázků v knihovně obrázků.  
   
- **Soubory manifestu obrázků**  
+   **Soubory manifestu obrázků**  
   
- Soubory manifestu (.imagemanifest) bitové kopie jsou soubory XML, které definují sadu prostředky obrázků, zástupných názvů, které představují tyto prostředky a skutečné bitové kopie nebo bitové kopie, které představují každou asset. Manifesty Image můžete definovat samostatné obrázky nebo bitové kopie jsou uvedené pro stále podporuje starší verze uživatelského rozhraní. Kromě toho jsou atributy, které je možné nastavit na prostředku nebo na jednotlivých obrázků za každý prostředek změnit, kdy a jak tyto prostředky jsou zobrazené.  
+   Soubory manifestu (.imagemanifest) bitové kopie jsou soubory XML, které definují sadu prostředky obrázků, zástupných názvů, které představují tyto prostředky a skutečné bitové kopie nebo bitové kopie, které představují každou asset. Manifesty Image můžete definovat samostatné obrázky nebo bitové kopie jsou uvedené pro stále podporuje starší verze uživatelského rozhraní. Kromě toho jsou atributy, které je možné nastavit na prostředku nebo na jednotlivých obrázků za každý prostředek změnit, kdy a jak tyto prostředky jsou zobrazené.  
   
- **Schéma manifestu obrázků**  
+   **Schéma manifestu obrázků**  
   
- Manifest kompletní obrázek vypadá takto:  
+   Manifest kompletní obrázek vypadá takto:  
   
 ```xml  
 <ImageManifest>  

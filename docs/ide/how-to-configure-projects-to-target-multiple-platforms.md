@@ -13,57 +13,57 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930216"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Postupy: Konfigurace projektů pro více cílových platforem
 
-Visual Studio poskytuje způsob, jak řešení cílit na několik různých architektury procesoru, nebo platformy, najednou. Chcete-li nastavit tyto vlastnosti jsou přístupné prostřednictvím **nástroje Configuration Manager** dialogové okno.
+Visual Studio poskytuje způsob, jak řešení, které cílí několika různými architekturami procesoru nebo platformy, najednou. Vlastnosti, které chcete nastavit tyto jsou přístupné prostřednictvím **nástroje Configuration Manager** dialogové okno.
 
-## <a name="target-a-platform"></a>Platformu
+## <a name="target-a-platform"></a>Cílové platformy
 
-**Nástroje Configuration Manager** dialogové okno umožňuje vytvořit a nastavit úroveň řešení a projektu konfigurace a platformy. Každou kombinaci řešení úrovni konfigurace a cíle může mít jedinečnou sadu vlastnosti související s, což umožňuje snadno přepínat mezi, například konfigurace verze s cílem [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] platformy, konfigurace verze která se zaměřuje x86 platformy a konfiguraci ladění, která je cílena x86 platformy.
+**Nástroje Configuration Manager** dialogové okno umožňuje vytvořit a nastavit na úrovni řešení a projektu konfigurace a platformy. Každou kombinaci konfigurace na úrovni řešení a cíle může mít jedinečnou sadu vlastností, které jsou spojené s, což umožňuje snadno přepínat mezi, například konfiguraci vydané verze, který cílí [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] platformy, konfiguraci vydané verze který cílí na x x86 platformu a konfiguraci ladění, který se zaměřuje x86 platformy.
 
 1.  Na **sestavení** nabídky, klikněte na tlačítko **nástroje Configuration Manager**.
 
-2.  V **aktivním řešení platformy pole**, vyberte platformu řešení k cíli, nebo vyberte  **\<nový >** k vytvoření nové platformě. Visual Studio bude kompilovat vaší aplikace pro platformu, která je nastavena jako aktivní platformy v **nástroje Configuration Manager** dialogové okno.
+2.  V **pole platforma aktivního řešení**, vyberte platformu vašeho řešení do cíle, nebo vyberte  **\<nový >** vytvořit nové platformy. Sada Visual Studio zkompiluje vaší aplikace pro cílení na platformy, které je nastaveno jako aktivní platformu v **nástroje Configuration Manager** dialogové okno.
 
 ## <a name="remove-a-platform"></a>Odebrat platformu
 
-Pokud si myslíte, že nemáte žádné požadavky pro platformu, můžete odebrat pomocí **nástroje Configuration Manager** dialogové okno. Tato akce odebere všechna nastavení řešení a projektů, které jste nakonfigurovali pro tuto kombinaci konfigurace a cíle.
+Pokud zjistíte, že nemáte žádné požadavky platformu, můžete odebrat pomocí **nástroje Configuration Manager** dialogové okno. Tato akce odebere všechna nastavení řešení a projektů, které jste nakonfigurovali pro kombinaci konfigurace a cíl.
 
 1.  Na **sestavení** nabídky, klikněte na tlačítko **nástroje Configuration Manager**.
 
-2.  V **aktivním řešení platformy pole**, vyberte  **\<Upravit >**. **Upravit platformy řešení** otevře se dialogové okno.
+2.  V **pole platforma aktivního řešení**vyberte  **\<Upravit >**. **Upravit platformy řešení** zobrazí se dialogové okno.
 
-3.  Klikněte na platformu, kterou chcete odebrat a klikněte na **odebrat**.
+3.  Klikněte na platformu, kterou chcete odebrat a klikněte na tlačítko **odebrat**.
 
-## <a name="target-multiple-platforms-with-one-solution"></a>Více cílových platforem s jedno řešení
+## <a name="target-multiple-platforms-with-one-solution"></a>Vyvíjet pro víc platforem s jedním z řešení
 
-Protože můžete změnit nastavení založené na kombinaci konfigurace a nastavení platformy, můžete nastavit řešení, který může cílit na více než jedné platformě.
+Vzhledem k tomu, že můžete změnit nastavení založené na kombinaci konfigurace a nastavení platformy, můžete nastavit řešení, které můžete cílit na více než jednu platformu.
 
 ### <a name="to-target-multiple-platforms"></a>Pro více cílových platforem
 
 1.  Použití **nástroje Configuration Manager** přidat alespoň dvě cílové platformy pro řešení.
 
-2.  Vyberte platformu, kterou chcete zacílit z **platforma Active řešení** seznamu.
+2.  Vyberte platformu, kterou chcete cílit na z **platformou aktivního řešení** seznamu.
 
 3.  Sestavte řešení.
 
-### <a name="to-build-multiple-solution-configurations-at-once"></a>K sestavení více konfigurací řešení najednou
+### <a name="to-build-multiple-solution-configurations-at-once"></a>Chcete-li sestavení více konfigurací řešení najednou
 
-1.  Použití **nástroje Configuration Manager** přidat alespoň dvě cílové platformy pro řešení.
+1. Použití **nástroje Configuration Manager** přidat alespoň dvě cílové platformy pro řešení.
 
-2.  Použití **dávkové sestavení** okno vytvořit několik konfigurace řešení najednou.
+2. Použití **dávkové sestavení** okna k sestavení několika konfigurací řešení najednou.
 
- Je možné, že na úrovni řešení platformě nastavení, například [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], a mít žádné projekty v rámci tohoto řešení cílení na stejnou platformu. Je také možné, že více projektů ve vašem řešení, každý cílení na různých platformách. Doporučuje se, že pokud máte jeden z těchto situací, můžete vytvořit novou konfiguraci s popisný název, aby nedocházelo k záměně.
+   Je možné mít nastaveno na hodnotu, například platformu úrovni řešení [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], a mít žádné projekty v rámci tohoto řešení, které cílí na stejnou platformu. Také je možné mít více projektů v řešení, každý cílí na různé platformy. Doporučuje se, že pokud některou z těchto situací, můžete vytvořit novou konfiguraci pomocí popisný název, aby nedocházelo k záměně.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)
-- [Pochopení konfigurace sestavení](../ide/understanding-build-configurations.md)
-- [Sestavení a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)
+- [Sestavení a vyčištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

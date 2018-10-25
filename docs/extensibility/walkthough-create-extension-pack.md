@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943099"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Návod: Vytvoření balíček rozšíření
+# <a name="walkthrough-create-an-extension-pack"></a>Návod: Vytvoření balíčku rozšíření
 
 Balíček rozšíření pro je sada rozšíření, které mohou být nainstalovány společně. Balíčky rozšíření umožňují snadno sdílet vaše oblíbená rozšíření s ostatními uživateli nebo sady sadu rozšíření pro konkrétní scénář.
   
@@ -40,8 +40,8 @@ Balíček rozšíření pro položky šablona vytvoří balíček rozšíření 
   
 3. Při přidání ExtensionPack1.vsext souboru, který obsahuje následující kód
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ Balíček rozšíření pro položky šablona vytvoří balíček rozšíření 
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. Vsixid rozšíření, které chcete zahrnout do balíčku rozšíření můžete najít na [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Najít rozšíření, které chcete zahrnout, a klikněte na **ID kopie**. Můžete aktualizovat existující **vsixId** v uvedeném souboru nebo jiného rozšíření přidat do seznamu.
 

@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934922"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Měření dopadu rozšíření v po spuštění
 
@@ -169,11 +169,11 @@ Například výše některé zajímavé volání zásobníků by:
 
 1. Vstupně-výstupních operací pomocí `System.IO` třída: celkové náklady na tyto snímky nemusí být moc drahé v trasování, ale jsou potenciální příčinou problému od souboru rychlost vstupně-výstupní operace se bude lišit počítač od počítače.
 
-  ![vstupně-výstupních operací snímků systému](media/perfview-system-io-frames.png)
+   ![vstupně-výstupních operací snímků systému](media/perfview-system-io-frames.png)
 
 2. Blokovat čekání na jiné asynchronní práce volání: V tomto případě celkový čas představuje čas na dokončení asynchronní práce je blokován hlavního vlákna.
 
-  ![blokování volání snímků](media/perfview-blocking-call-frames.png)
+   ![blokování volání snímků](media/perfview-blocking-call-frames.png)
 
 Jedna z ostatních zobrazení v trasování, které budou užitečné k určení vlivu se bude **Image zatížení zásobníky**. Můžete použít stejné filtry jako použitý pro **zásobníky vlákna čas** zobrazení a přečtěte si všechna sestavení načtená z důvodu prováděný balíčkem automaticky načíst kód.
 

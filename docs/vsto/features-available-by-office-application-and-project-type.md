@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929852"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Zadejte dostupné funkce podle aplikace systému Office a projektu
   Visual Studio obsahuje několik typů šablon projektů, které podporují různé obchodní scénáře pro aplikace Microsoft Office, včetně následujících typů:  
   
--   Přizpůsobení na úrovni dokumentu.  
+- Přizpůsobení na úrovni dokumentu.  
   
--   Doplňky VSTO.  
+- Doplňky VSTO.  
   
- Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné jenom pro některé typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a pásu karet rozšíření jsou k dispozici jenom pro některé aplikace. Další informace o typech jiný projekt, naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné jenom pro některé typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a pásu karet rozšíření jsou k dispozici jenom pro některé aplikace. Další informace o typech jiný projekt, naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Šablony projektů pro Office jsou k dispozici pouze v některých edicích [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940376"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Kukátko a Rychlé kukátko Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Následujícím způsobem přidejte do okna kukátka hodnoty tří proměnných:  
   
-1.  Nastavit zarážku na `c = a + b;` řádku.  
+1. Nastavit zarážku na `c = a + b;` řádku.  
   
-2.  Spustit ladění (**F5**). Provádění zastaví na zarážce.  
+2. Spustit ladění (**F5**). Provádění zastaví na zarážce.  
   
-3.  Otevřete okno kukátka (**ladění / Windows / sledovat / sledovat 1**, nebo **CTRL + ALT + W, 1**).  
+3. Otevřete okno kukátka (**ladění / Windows / sledovat / sledovat 1**, nebo **CTRL + ALT + W, 1**).  
   
-4.  Přidat `a` proměnné na první řádek, `b` proměnné na druhém řádku a `c` proměnné na třetí řádek.  
+4. Přidat `a` proměnné na první řádek, `b` proměnné na druhém řádku a `c` proměnné na třetí řádek.  
   
-5.  Pokračujte v ladění.  
+5. Pokračujte v ladění.  
   
- Měli byste vidět změny jako iteraci v rámci hodnoty proměnné `for` smyčky.  
+   Měli byste vidět změny jako iteraci v rámci hodnoty proměnné `for` smyčky.  
   
- Pokud programujete v nativním kódu, můžete někdy potřebovat kvalifikovat kontext názvu proměnné nebo výrazu obsahujícího název proměnné. Kontext je funkce, zdrojový soubor a modul, kde je umístěna proměnná. Pokud je to nutné, můžete použít syntaxi kontextového operátoru. Další informace najdete v tématu výrazy v jazyce C++.  
+   Pokud programujete v nativním kódu, můžete někdy potřebovat kvalifikovat kontext názvu proměnné nebo výrazu obsahujícího název proměnné. Kontext je funkce, zdrojový soubor a modul, kde je umístěna proměnná. Pokud je to nutné, můžete použít syntaxi kontextového operátoru. Další informace najdete v tématu výrazy v jazyce C++.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Sledování výrazy s okna kukátka  
  Teď si vyzkoušíme použití výrazu místo. Můžete přidat libovolný platný výraz rozpoznán v ladicím programu.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Pokud přejdete na ikonu, popisek obsahuje informace o proč výraz nebyl vyhodnocen.  Pokud se zobrazí circling šipky, výraz nebyl vyhodnocen pro jednu z následujících důvodů:  
   
--   • Chybu došlo k chybě, jako jsou vyhodnocovalo výraz. Například pravděpodobně došlo k vypršení časového limitu nebo mohly být proměnná mimo rozsah.  
+- • Chybu došlo k chybě, jako jsou vyhodnocovalo výraz. Například pravděpodobně došlo k vypršení časového limitu nebo mohly být proměnná mimo rozsah.  
   
--   • Výraz obsahuje volání funkce, které může způsobit vedlejší účinek v aplikaci (viz [vedlejší efekty a výrazy](#bkmk_sideEffects)).  
+- • Výraz obsahuje volání funkce, které může způsobit vedlejší účinek v aplikaci (viz [vedlejší efekty a výrazy](#bkmk_sideEffects)).  
   
--   Je vypnuto automatické vyhodnocování vlastností a volání implicitní funkce ladicím programem (**nástroje / Možnosti / ladění / povolit vyhodnocování vlastností a jiných implicitních volání funkcí**), a potom nemůže být výraz automaticky vyhodnocena.  
+- Je vypnuto automatické vyhodnocování vlastností a volání implicitní funkce ladicím programem (**nástroje / Možnosti / ladění / povolit vyhodnocování vlastností a jiných implicitních volání funkcí**), a potom nemůže být výraz automaticky vyhodnocena.  
   
- Pokud chcete aktualizovat hodnotu, klikněte na ikonu aktualizace nebo stisknutím klávesy MEZERNÍK. Ladicí program se pokusí opětovné vyhodnocení výrazu. Pokud se objevila ikona aktualizace, protože bylo vypnuto automatické hodnocení vlastností a implicitní vedlejší účinky, může být vyhodnocen výraz.  
+  Pokud chcete aktualizovat hodnotu, klikněte na ikonu aktualizace nebo stisknutím klávesy MEZERNÍK. Ladicí program se pokusí opětovné vyhodnocení výrazu. Pokud se objevila ikona aktualizace, protože bylo vypnuto automatické hodnocení vlastností a implicitní vedlejší účinky, může být vyhodnocen výraz.  
   
- Pokud se zobrazí ikona, která je kroužek s dvěma vlnovkou řádky, které se podobají vlákna, výraz nebyl vyhodnocen z důvodu možných závislosti mezi vlákny. Jinými slovy vyhodnocování kód vyžaduje ostatní vlákna v aplikaci dočasně spustit. Pokud jste v režimu přerušení, zastaví se obvykle všechna vlákna ve vaší aplikaci. Umožňuje spustit dočasně jiných vláken může mít neočekávané účinky na stav programu a způsobí, že se ladicí program ignorovat události, například zarážky a výjimky vyvolané na tato vlákna.  
+  Pokud se zobrazí ikona, která je kroužek s dvěma vlnovkou řádky, které se podobají vlákna, výraz nebyl vyhodnocen z důvodu možných závislosti mezi vlákny. Jinými slovy vyhodnocování kód vyžaduje ostatní vlákna v aplikaci dočasně spustit. Pokud jste v režimu přerušení, zastaví se obvykle všechna vlákna ve vaší aplikaci. Umožňuje spustit dočasně jiných vláken může mít neočekávané účinky na stav programu a způsobí, že se ladicí program ignorovat události, například zarážky a výjimky vyvolané na tato vlákna.  
   
 ##  <a name="bkmk_sideEffects"></a> Vedlejší efekty a výrazy  
  Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například vyhodnocení následujícího výrazu změní hodnotu `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Pokud chcete zobrazit pouze **dynamického zobrazení** pro objekt, můžete použít **dynamické** specifikátor formátu:  
   
--   C#: **ObjectName dynamické**  
+- C#: **ObjectName dynamické**  
   
--   Visual Basic:: **$dynamic ObjectName**  
+- Visual Basic:: **$dynamic ObjectName**  
   
- **Dynamického zobrazení** také rozšiřuje možnosti ladění pro objekty COM. Pokud ladicí program nalezne objekt modelu COM, který je obalen **System.__ComObject**, přidá **dynamického zobrazení** uzlu pro objekt.  
+  **Dynamického zobrazení** také rozšiřuje možnosti ladění pro objekty COM. Pokud ladicí program nalezne objekt modelu COM, který je obalen **System.__ComObject**, přidá **dynamického zobrazení** uzlu pro objekt.  
   
 ## <a name="see-also"></a>Viz také  
  [Okna ladicího programu](../debugger/debugger-windows.md)

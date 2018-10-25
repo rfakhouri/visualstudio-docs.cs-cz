@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937327"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 
@@ -61,7 +61,7 @@ Nejzákladnější úkoly integrovaném vývojovém prostředí sady Visual Stud
 Pokud chcete zvýšit vaši produktivitu, vezměte v úvahu pomocí nástroje Blend for Visual Studio pro následující úlohy. Jedná se o oblasti, kde Blend for Visual Studio nabízí další rychlost a funkce než návrháře aplikace Visual Studio nebo samotný kód.
 
 |Chcete-li|Visual Studio|Blend for Visual Studio|Další informace|
-|--------|-------------------|-----------------------------|----------------------|
+|--------|-------------------| - | - |
 |**Vytváření animací**|Neexistuje žádná návrhářský nástroj pro animace; je nutné je vytvořit prostřednictvím kódu programu. To vyžaduje pochopení animace a časování systému v projektech WPF a rozsáhlé znalosti kódování.|Vizuálně vytvářet animace a můžete si zobrazte jejich náhled v programu Blend for Visual Studio. Toto je rychlejší a přesnější, než vytváření animace v kódu. Můžete přidat aktivační události na zpracovávají interakci s uživatelem, a můžete přepnout na kód pro přidání obslužné rutiny událostí a další funkce.|[Animace objektů](../designers/animate-objects-in-xaml-designer.md)|
 |**Proměňte cesty ke snadnější práci s tvary a text**|Není podporováno.|Drobné nebo výrazné změny můžete provádět obrazce (například obdélníky a tři tečky) převedením na cesty, které poskytují lepší úprav ovládacího prvku. Můžete změnit tvar nebo kombinace cesty a vytvořit složené cesty z více tvarů.<br /><br /> Bloky textu můžete také převést do cesty k manipulaci s nimi jako vektorové obrázky.|[Kreslení tvarů a cest](../designers/draw-shapes-and-paths.md)|
 |**Přidání interaktivity návrhů uživatelského rozhraní**|Vyžaduje kódu C#, Visual Basic nebo C++.|Přetáhnout myší na ovládací prvky k přidání interaktivity do statické návrhy chování. Chování jsou připravené k použití kódu, které zapouzdřují funkce, jako je například přetažení, Lupa a změnám vizuálního stavu. Je stále početnější sadu chování, ze kterých můžete použít, a můžete vytvořit svoje vlastní.<br /><br /> Každý chování potom můžete přizpůsobit změnou jeho vlastností v programu Blend for Visual Studio nebo přidáním obslužných rutin událostí v kódu.|[Vložení ovládacích prvků a změna jejich chování](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|

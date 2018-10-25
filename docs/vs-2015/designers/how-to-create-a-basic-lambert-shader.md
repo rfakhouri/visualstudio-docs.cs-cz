@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8706e596946c7231e501c59536a4d79253c0337f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929722"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Postupy: Vytvoření základního Lambertova shaderu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Tento dokument popisuje způsob použití návrháře shaderu a orientovaného g
   
 #### <a name="to-create-a-lambert-shader"></a>Chcete-li vytvořit Lambertova shaderu  
   
-1.  Vytvořte shader DGSL pracovat. Informace o tom, jak přidat do projektu DGSL shader naleznete v části Začínáme v [návrháře shaderu](../designers/shader-designer.md).  
+1. Vytvořte shader DGSL pracovat. Informace o tom, jak přidat do projektu DGSL shader naleznete v části Začínáme v [návrháře shaderu](../designers/shader-designer.md).  
   
-2.  Odpojte **barva bodu** uzlu z **konečnou barvu** uzlu. Zvolte **RGB** z terminálu **barva bodu** uzel a klikněte na tlačítko **přerušit odkazy**. Nechte **alfa** terminálu připojen.  
+2. Odpojte **barva bodu** uzlu z **konečnou barvu** uzlu. Zvolte **RGB** z terminálu **barva bodu** uzel a klikněte na tlačítko **přerušit odkazy**. Nechte **alfa** terminálu připojen.  
   
-3.  Přidat **Lambertova** uzel do grafu. V **nástrojů**v části **nástroj**vyberte **Lambertova** a přesuňte jej na návrhovou plochu. Uzel lambertova vypočítá podíl celkové rozptýlení barvy pixelu na základě parametrů osvětlením okolí a difúzním.  
+3. Přidat **Lambertova** uzel do grafu. V **nástrojů**v části **nástroj**vyberte **Lambertova** a přesuňte jej na návrhovou plochu. Uzel lambertova vypočítá podíl celkové rozptýlení barvy pixelu na základě parametrů osvětlením okolí a difúzním.  
   
-4.  Připojení **barva bodu** uzlu **Lambertova** uzlu. V **vyberte** režimu, přesunout **RGB** z terminálu **barva bodu** uzlu **rozptýlit barvu** z terminálu **Lambertova**  uzlu. Toto připojení obsahuje uzel lambertova s interpolovanými barvy rozptýlení pixelu.  
+4. Připojení **barva bodu** uzlu **Lambertova** uzlu. V **vyberte** režimu, přesunout **RGB** z terminálu **barva bodu** uzlu **rozptýlit barvu** z terminálu **Lambertova**  uzlu. Toto připojení obsahuje uzel lambertova s interpolovanými barvy rozptýlení pixelu.  
   
-5.  Hodnota počítaného barvy se připojte k konečnou barvu. Přesunout **výstup** z terminálu **Lambertova** uzlu **RGB** z terminálu **konečnou barvu** uzlu.  
+5. Hodnota počítaného barvy se připojte k konečnou barvu. Přesunout **výstup** z terminálu **Lambertova** uzlu **RGB** z terminálu **konečnou barvu** uzlu.  
   
- Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.  
+   Následující obrázek znázorňuje dokončené shader graf a náhled shaderu použité pro model čajové konvice.  
   
 > [!NOTE]
 >  K předvedení lépe efekt shaderu na tomto obrázku, byl zadán oranžové barvy s použitím **MaterialDiffuse** parametr shaderu. Hry nebo aplikace můžete použít tento parametr slouží k poskytování hodnotu barvy jedinečný pro každý objekt. Informace o parametrech materiálu, naleznete v části Náhled shadery v [návrháře shaderu](../designers/shader-designer.md).  

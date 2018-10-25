@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935403"
 ---
 # <a name="relationships-in-datasets"></a>Vztahy v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ Datové sady, které obsahují data související tabulky použijte <xref:System
   
  <xref:System.Data.DataRelation> Objekt provádí dvě funkce:  
   
--   Může být k dispozici záznamy související s záznamu, na které pracujete. Pokud jste v nadřazený záznam poskytuje podřízené záznamy (<xref:System.Data.DataRow.GetChildRows%2A>) a nadřazený záznam, pokud pracujete s podřízeného záznamu (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Může být k dispozici záznamy související s záznamu, na které pracujete. Pokud jste v nadřazený záznam poskytuje podřízené záznamy (<xref:System.Data.DataRow.GetChildRows%2A>) a nadřazený záznam, pokud pracujete s podřízeného záznamu (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   To můžete vynutit omezení referenční integrity, jako je například odstranění související podřízené záznamy, když odstraníte záznam nadřazené.  
+- To můžete vynutit omezení referenční integrity, jako je například odstranění související podřízené záznamy, když odstraníte záznam nadřazené.  
   
- Je důležité pochopit rozdíl mezi true spojení a funkce <xref:System.Data.DataRelation> objektu. True spojení jsou záznamy na základě nadřazené a podřízené tabulky a vloží do jednoho ploché sady záznamů. Při použití <xref:System.Data.DataRelation> objektu, je vytvořen bez nové sady záznamů. Místo toho DataRelation sleduje relace mezi tabulkami a udržuje nadřazené a podřízené záznamy synchronizované.  
+  Je důležité pochopit rozdíl mezi true spojení a funkce <xref:System.Data.DataRelation> objektu. True spojení jsou záznamy na základě nadřazené a podřízené tabulky a vloží do jednoho ploché sady záznamů. Při použití <xref:System.Data.DataRelation> objektu, je vytvořen bez nové sady záznamů. Místo toho DataRelation sleduje relace mezi tabulkami a udržuje nadřazené a podřízené záznamy synchronizované.  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation – objekty a omezení  
  A <xref:System.Data.DataRelation> objektu se používá také vytvářet a vynucovat následující omezení:  
   
--   Jedinečné omezení, což zaručuje, že sloupce v tabulce neobsahuje duplicitní položky.  
+- Jedinečné omezení, což zaručuje, že sloupce v tabulce neobsahuje duplicitní položky.  
   
--   Omezení cizího klíče, který může sloužit k udržení referenční integrity mezi nadřazenou a podřízenou tabulku v datové sadě.  
+- Omezení cizího klíče, který může sloužit k udržení referenční integrity mezi nadřazenou a podřízenou tabulku v datové sadě.  
   
- Omezení, která zadáte <xref:System.Data.DataRelation> objektu jsou implementovány automaticky vytváří odpovídající objekty nebo nastavením vlastnosti. Pokud vytvoříte omezení foreign key s použitím <xref:System.Data.DataRelation> objektu, instance <xref:System.Data.ForeignKeyConstraint> třídy jsou přidány do <xref:System.Data.DataRelation> objektu <xref:System.Data.DataRelation.ChildKeyConstraint%2A> vlastnost.  
+  Omezení, která zadáte <xref:System.Data.DataRelation> objektu jsou implementovány automaticky vytváří odpovídající objekty nebo nastavením vlastnosti. Pokud vytvoříte omezení foreign key s použitím <xref:System.Data.DataRelation> objektu, instance <xref:System.Data.ForeignKeyConstraint> třídy jsou přidány do <xref:System.Data.DataRelation> objektu <xref:System.Data.DataRelation.ChildKeyConstraint%2A> vlastnost.  
   
- Jedinečné omezení je implementováno buď jednoduše nastavením <xref:System.Data.DataColumn.Unique%2A> vlastnost sloupec dat na `true` nebo přidáním instance <xref:System.Data.UniqueConstraint> třídu <xref:System.Data.DataRelation> objektu <xref:System.Data.DataRelation.ParentKeyConstraint%2A> vlastnost. Informace o pozastavení omezení v datové sadě, naleznete v tématu [vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Jedinečné omezení je implementováno buď jednoduše nastavením <xref:System.Data.DataColumn.Unique%2A> vlastnost sloupec dat na `true` nebo přidáním instance <xref:System.Data.UniqueConstraint> třídu <xref:System.Data.DataRelation> objektu <xref:System.Data.DataRelation.ParentKeyConstraint%2A> vlastnost. Informace o pozastavení omezení v datové sadě, naleznete v tématu [vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Pravidla referenční integritu  
  Jako součást omezení cizího klíče můžete zadat referenční integritu pravidla, která se použijí na třech místech:  
   
--   Při aktualizaci nadřazený záznam  
+- Při aktualizaci nadřazený záznam  
   
--   Při odstranění nadřazený záznam  
+- Při odstranění nadřazený záznam  
   
--   Kdy je změna přijímat nebo odmítat.  
+- Kdy je změna přijímat nebo odmítat.  
   
- Pravidla, které můžete použít jsou určené v <xref:System.Data.Rule> výčtu a jsou uvedeny v následující tabulce.  
+  Pravidla, které můžete použít jsou určené v <xref:System.Data.Rule> výčtu a jsou uvedeny v následující tabulce.  
   
 |Pravidlo omezení pro cizí klíč|Akce|  
 |----------------------------------|------------|  

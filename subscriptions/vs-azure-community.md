@@ -9,12 +9,12 @@ description: Další informace o benefitech komunity Azure zahrnuté ve vybraný
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 71082ba5cadc96af27e48fc005b69fb6434e1cfe
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937457"
 ---
 # <a name="azure-community"></a>Komunita Azure
 
@@ -51,15 +51,17 @@ Začínáme s komunitou Azure je snadné.
 ## <a name="eligibility"></a>Způsobilost
 Dostupnost ve prospěch komunity Azure závisí na vaší úrovně předplatného, jak je znázorněno níže:
 
-| Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodního prodeje   | Jeden rok      |  Ano          |
-| Visual Studio Professional (standardní a roční cloudové)  | VL, Azure, maloobchodního prodeje                                      | Jeden rok                                                           |  Ano          |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Jeden rok                                             |  Ano          |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              |Jeden rok                                              |  Ano          |
-| Visual Studio Enterprise (měsíční cloud), Visual Studio Professional (měsíční cloud), NFR<sup>1</sup>                                          | Všechny                                              |Není k dispozici                                              |  Ne          |
-| Visual Studio Dev Essentials                                        | Není k dispozici                                              |Není k dispozici                                              |  Ne          |
-|
+
+|                                          Úroveň předplatného                                           |     Kanály      |    Výhody    | Obnovitelné? |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Visual Studio Enterprise (standardní a roční cloudové)                           | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
+|                          Visual Studio Professional (standardní a roční cloudové)                          | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
+|                              Visual Studio Test Professional (Standard)                               |    VL maloobchodního prodeje     |   Jeden rok    |    Ano     |
+|                                       Předplatné MSDN Platforms (Standard)                                       |    VL maloobchodního prodeje     |   Jeden rok    |    Ano     |
+| Visual Studio Enterprise (měsíční cloud), Visual Studio Professional (měsíční cloud), NFR<sup>1</sup> |        Všechny        | Není k dispozici |     Ne     |
+|                                     Visual Studio Dev Essentials                                      |        Není k dispozici        | Není k dispozici |     Ne     |
+|                                                                                                       |                   |               |            |
+
 <sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)* 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

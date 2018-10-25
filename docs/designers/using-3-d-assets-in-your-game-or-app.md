@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880673"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 
@@ -41,7 +41,7 @@ Před nasazením 3D prostředků ve vašem sestavení v rámci Visual Studio obs
 2.  V části **dostupné soubory úpravy sestavení**, zaškrtněte políčka, která odpovídají typům aktiv, které chcete použít v projektu, jak je popsáno v následující tabulce:
 
     |Typ prostředku|Název přizpůsobení sestavení|
-    |----------------|------------------------------|
+    |----------------| - |
     |Texturami a obrázky|**ImageContentTask (.targets, .props)**|
     |3D modely|**MeshContentTask (.targets, .props)**|
     |Shadery|**ShaderGraphContentTask (.targets, .props)**|
@@ -67,7 +67,7 @@ Před nasazením 3D prostředků ve vašem sestavení v rámci Visual Studio obs
 Tady jsou tři typy zřetězených položek obsahu a jejich přiřazeného zdroje a výstupní typy souborů.
 
 |Typ položky|Typy zdrojových souborů|Formát výstupního souboru|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Kanál obsahu obrázku**|Formát Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *JPE*, *JFIF*)<br /><br /> Povrch Direct Draw (*.dds*)<br /><br /> Formát GIF (*.gif*)<br /><br /> Rastrový obrázek (*.bmp*, *DIB*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*TGA*)|Povrch DirectDraw (*.dds*)|
 |**Kanál obsahu mřížky**|Soubor AutoDesk FBX Interchange (*.fbx*)<br /><br /> Soubor DAE standardu Collada (*.dae*)<br /><br /> Soubor Wavefront OBJ (*.obj*)|Soubor mřížky 3D (*.cmo*)|
 |**Kanál obsahu shaderu**|Graf vizuálních shaderů (*.dgsl*)|Zkompilovat výstup shaderu (*.cso*)|

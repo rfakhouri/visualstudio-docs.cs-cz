@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933427"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Vaše definice DSL je platforma, na kterém můžete vytvářet výkonná sada n
   
  Například v ukázce Library.dsl `CirculationBook` má doménová třída `Generates``Double Derived` nastavenou na `true`. Generovaný kód pro danou třídu domény obsahuje dvě třídy:  
   
--   `CirculationBookBase`, což je abstraktní a který obsahuje všechny metody a vlastnosti.  
+- `CirculationBookBase`, což je abstraktní a který obsahuje všechny metody a vlastnosti.  
   
--   `CirculationBook`, který je odvozen z `CirculationBookBase`. Je prázdný, s výjimkou jejích konstruktorů.  
+- `CirculationBook`, který je odvozen z `CirculationBookBase`. Je prázdný, s výjimkou jejích konstruktorů.  
   
- Pokud chcete přepsat libovolné metody, vytvoříte částečnou definici odvozené třídy jako `CirculationBook`. Můžete přepsat generované metody a metody, které dědí z rozhraní pro modelování.  
+  Pokud chcete přepsat libovolné metody, vytvoříte částečnou definici odvozené třídy jako `CirculationBook`. Můžete přepsat generované metody a metody, které dědí z rozhraní pro modelování.  
   
- Tuto metodu můžete použít se všemi typy elementu, včetně prvků modelu, relace, tvary, diagramy a konektory. Můžete také přepsat metody jiné generované třídy. Některé vygenerované třídy, jako ToolboxHelper jsou vždy odvozené double.  
+  Tuto metodu můžete použít se všemi typy elementu, včetně prvků modelu, relace, tvary, diagramy a konektory. Můžete také přepsat metody jiné generované třídy. Některé vygenerované třídy, jako ToolboxHelper jsou vždy odvozené double.  
   
 ### <a name="custom-constructors"></a>Vlastní konstruktory  
  Konstruktor nemůže přepsat. I v double odvozené třídy musí být konstruktor v odvozené třídě.  

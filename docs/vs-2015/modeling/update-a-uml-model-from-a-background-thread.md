@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940993"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualizace modelu UML z vlákna na pozadí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ V některých případech může být užitečné provést změny modelu ve vlá
   
 #### <a name="to-run-the-example"></a>Chcete-li spustit příklad  
   
-1.  Vytvořte obslužnou rutinu příkazu v projektu v jazyce C#, jak je popsáno v [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Vytvořte obslužnou rutinu příkazu v projektu v jazyce C#, jak je popsáno v [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-2.  Ujistěte se, že projekt obsahuje odkazy na tato sestavení:  
+2. Ujistěte se, že projekt obsahuje odkazy na tato sestavení:  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  Přidejte do projektu formuláře Windows s názvem **ProgressForm**. By se zobrazit zpráva s oznámením, probíhají aktualizace. Nemusí mít další ovládací prvky.  
+3. Přidejte do projektu formuláře Windows s názvem **ProgressForm**. By se zobrazit zpráva s oznámením, probíhají aktualizace. Nemusí mít další ovládací prvky.  
   
-4.  Přidejte soubor jazyka C#, která obsahuje kód, který se zobrazí po provedení kroku 7.  
+4. Přidejte soubor jazyka C#, která obsahuje kód, který se zobrazí po provedení kroku 7.  
   
-5.  Sestavte a spusťte projekt.  
+5. Sestavte a spusťte projekt.  
   
-     Novou instanci třídy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] začne v experimentálním režimu.  
+    Novou instanci třídy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] začne v experimentálním režimu.  
   
-6.  Vytvořte nebo otevřete diagram tříd UML v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Vytvořte nebo otevřete diagram tříd UML v experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Klikněte pravým tlačítkem kamkoli v diagramu tříd UML a potom klikněte na tlačítko **přidat několik tříd UML**.  
+7. Klikněte pravým tlačítkem kamkoli v diagramu tříd UML a potom klikněte na tlačítko **přidat několik tříd UML**.  
   
- Několik nových polí tříd se zobrazí v diagramu, jeden po druhém v intervalech půl sekundy.  
+   Několik nových polí tříd se zobrazí v diagramu, jeden po druhém v intervalech půl sekundy.  
   
 ```csharp  
 using System;  

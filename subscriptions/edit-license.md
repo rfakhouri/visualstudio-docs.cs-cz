@@ -9,12 +9,12 @@ description: Zjistěte, jak můžou správci upravovat přiřazení předplatné
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d5d781f682372203e118fc6aaf1bfb51ea8bf652
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 588568521b52b6c21c93b6488829b5055d12048b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942462"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Úprava přiřazení předplatného sady Visual Studio
 
@@ -25,7 +25,7 @@ Předplatitel sady informace, opravte chyby nebo aktualizovat informace můžete
 
 Chcete-li upravit odběratele, vyberte symbol tří teček (...), které se zobrazují vedle e-mailovou adresu odběratele, když najedete myší nad ním. Zobrazí se rozevírací seznam.  Vyberte **upravit** upravit podrobné údaje o předplatitelích společnosti. Můžete také dvakrát kliknout na účastníka řádků v mřížce, chcete-li otevřít okno pro úpravu.
 > [!div class="mx-imgBorder"]
-> ![Vybrat odběratele k úpravě](_img\edit-license\select-subscriber.png)
+> ![Vybrat odběratele k úpravě](_img/edit-license/select-subscriber.png)
 
 Můžete aktualizovat účastníka křestní jméno, příjmení, zemi, jazyk a soubory ke stažení. Upravit informace na odběratele a potom klikněte na **Uložit**.
 
@@ -39,17 +39,17 @@ Můžete upravit několik předplatitelů najednou pomocí procesu hromadné úp
    > [!IMPORTANT]
    > Předplatné úrovně (například Enterprise, Professional, atd.) a identifikátory GUID předplatných se nedá změnit.  Při pokusu o nahrání s následujícími položkami změnit nahrávání se nezdaří.  
 
-1.  Chcete-li upravit několik předplatitelů najednou, přejděte na kartu předplatitele. Na pásu karet v horní části klikněte na tlačítko **hromadných úprav**. 
+1. Chcete-li upravit několik předplatitelů najednou, přejděte na kartu předplatitele. Na pásu karet v horní části klikněte na tlačítko **hromadných úprav**. 
 
-2.  Hromadné úpravy pomocí šablony aplikace Excel úpravy na informace o odběrateli. V okně hromadně upravit, klikněte na tlačítko **exportujte tuto tabulku** stáhnout aktuální seznam předplatitelů, včetně všech svých informací. 
-    > [!div class="mx-imgBorder"]
-    > ![Úpravy licenci - Export hromadné úpravy seznamu](_img\edit-license\edit-license-bulk-edit-export.png)
+2. Hromadné úpravy pomocí šablony aplikace Excel úpravy na informace o odběrateli. V okně hromadně upravit, klikněte na tlačítko **exportujte tuto tabulku** stáhnout aktuální seznam předplatitelů, včetně všech svých informací. 
+   > [!div class="mx-imgBorder"]
+   > ![Úpravy licenci - Export hromadné úpravy seznamu](_img/edit-license/edit-license-bulk-edit-export.png)
 
-3.  V dalším kroku uložte soubor místně, takže můžete snadno najít a proveďte potřebné změny před odesláním. K zajištění úspěšně nahrávaly **neupravujte úrovni předplatného nebo GUID předplatného** jako to uděláte tak způsobí, že se nezdaří. 
+3. V dalším kroku uložte soubor místně, takže můžete snadno najít a proveďte potřebné změny před odesláním. K zajištění úspěšně nahrávaly **neupravujte úrovni předplatného nebo GUID předplatného** jako to uděláte tak způsobí, že se nezdaří. 
 
-4.  Vrátit k portálu pro správu předplatných sady Visual Studio a v dialogovém okně hromadných úprav, klikněte na tlačítko **Procházet**. Vyberte Excelový soubor, který jste uložili a klikněte na tlačítko **OK**. Průběh nahrávání se zobrazí na obrazovce.
-    > [!div class="mx-imgBorder"]    
-    > ![Úpravy licenci - hromadné úpravy odesílání souborů](_img\edit-license\edit-license-bulk-file-upload1.png)
+4. Vrátit k portálu pro správu předplatných sady Visual Studio a v dialogovém okně hromadných úprav, klikněte na tlačítko **Procházet**. Vyberte Excelový soubor, který jste uložili a klikněte na tlačítko **OK**. Průběh nahrávání se zobrazí na obrazovce.
+   > [!div class="mx-imgBorder"]    
+   > ![Úpravy licenci - hromadné úpravy odesílání souborů](_img/edit-license/edit-license-bulk-file-upload1.png)
 
-5.  Po nahrání souboru, zobrazí se upozornění oznamující, že bylo úspěšné. V tomto okamžiku vaše změny se projeví ve informace o odběrateli. 
+5. Po nahrání souboru, zobrazí se upozornění oznamující, že bylo úspěšné. V tomto okamžiku vaše změny se projeví ve informace o odběrateli. 
 
