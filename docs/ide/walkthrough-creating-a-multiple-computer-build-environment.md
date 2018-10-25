@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951610"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Návod: Vytvoření prostředí více počítačů sestavení
 
@@ -55,7 +55,7 @@ Nainstalováním sady Visual Studio v hostitelském počítači vytvořte soubor
 
 1. Na hostitelském počítači nainstalujte Visual Studio.
 
-2. V počítači sestavení nainstalujte rozhraní .NET Framework 4.5. Pokud chcete ověřit, jestli je nainstalovaný, ujistěte se, že jako hodnotu klíče registru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version**  začíná "4.5".
+2. V počítači sestavení nainstalujte rozhraní .NET Framework 4.5 nebo novější. Pokud chcete ověřit, jestli je nainstalovaný, zkontrolujte, že **verze** v podklíči registru položku **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** má hodnotu **4.5** nebo vyšší.
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Kopírování souborů z hostitelského počítače do počítače sestavení
 
@@ -73,29 +73,29 @@ Všimněte si, že název *Program Files* složky závisí na operačním systé
 
 1. Pokud máte pouze Windows SDK pro Windows 8 nainstalované, zkopírujte tyto složky rekurzivně z hostitelského počítače do počítače sestavení:
 
-    - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %ProgramFiles%\Windows Kits\8.0\bin\
 
-    - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
 
-    - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
 
-    - %ProgramFiles%\Windows Kits\8.0\include\
+   - %ProgramFiles%\Windows Kits\8.0\include\
 
-    - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %ProgramFiles%\Windows Kits\8.0\Lib\
 
-    - %ProgramFiles%\Windows Kits\8.0\Redist\
+   - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-    - %ProgramFiles%\Windows Kits\8.0\References\
+   - %ProgramFiles%\Windows Kits\8.0\References\
 
-    Pokud máte také tyto jiné sady Windows 8...
+     Pokud máte také tyto jiné sady Windows 8...
 
-    - Microsoft Windows Assessment and Deployment Kit
+   - Microsoft Windows Assessment and Deployment Kit
 
-    - Microsoft Windows Driver Kit
+   - Microsoft Windows Driver Kit
 
-    - Microsoft Windows Hardware Certification Kit
+   - Microsoft Windows Hardware Certification Kit
 
-    .. .mohou mít nainstalovány soubory do *%ProgramFiles%\Windows Kits\8.0* složky, které jsou uvedeny v předchozím kroku a jejich licenční podmínky neumožňují práva sestavení serveru pro tyto soubory. Zkontrolujte licenční podmínky pro každý nainstalovanou sadu SDK Windows k ověření, zda mohou být soubory zkopírovány do počítače sestavení. Pokud licenční podmínky neumožňují práva sestavení serveru, odeberte soubory z počítače sestavení.
+     .. .mohou mít nainstalovány soubory do *%ProgramFiles%\Windows Kits\8.0* složky, které jsou uvedeny v předchozím kroku a jejich licenční podmínky neumožňují práva sestavení serveru pro tyto soubory. Zkontrolujte licenční podmínky pro každý nainstalovanou sadu SDK Windows k ověření, zda mohou být soubory zkopírovány do počítače sestavení. Pokud licenční podmínky neumožňují práva sestavení serveru, odeberte soubory z počítače sestavení.
 
 2. Zkopírujte následující složky rekurzivně z hostitelského počítače do počítače sestavení:
 
@@ -202,53 +202,53 @@ Je nutné vytvořit položky registru ke konfiguraci nastavení pro MSBuild.
 
 2. Vytvořte následující položky registru v počítači sestavení. Všechny tyto položky jsou řetězce (typ == "REG_SZ" v registru). Nastavte hodnoty těchto položek, které se stejný jako hodnoty srovnatelných položek v hostitelském počítači.
 
-    - **% RegistryRoot %\\. Veřejné Assemblies@(Default) NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild**
+   - **% RegistryRoot %\\. Veřejné Assemblies@(Default) NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild**
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-    - **% RegistryRoot %\VisualStudio\11.0@Source adresáře**
+   - **% RegistryRoot %\VisualStudio\11.0@Source adresáře**
 
-    - **% RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir**
+   - <strong>% RegistryRoot %\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-    - **% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32**
+   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-    - **% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64**
+   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-    - **% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32**
+   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-    - **% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64**
+   - <strong>% RegistryRoot %\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-    - **% RegistryRoot %\VisualStudio\SxS\VC7@11.0**
+   - **% RegistryRoot %\VisualStudio\SxS\VC7@11.0**
 
-    - **% RegistryRoot %\VisualStudio\SxS\VS7@11.0**
+   - **% RegistryRoot %\VisualStudio\SxS\VS7@11.0**
 
-    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
+   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-    - **% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>% RegistryRoot %\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-    Počítač sestavení x x64, také vytvořte následující položku registru a odkazovat na hostitelském počítači zjistěte, jak ji nastavit.
+   Počítač sestavení x x64, také vytvořte následující položku registru a odkazovat na hostitelském počítači zjistěte, jak ji nastavit.
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-    Pokud je počítač sestavení x64 a chcete použít 64bitovou verzi nástroje MSBuild, nebo pokud používáte službu sestavení serveru Team Foundation Server na x x64 počítače, musíte vytvořit následující položky registru v nativním 64bitovém registru. Odkazovat na hostitelském počítači zjistěte, jak nastavit tyto položky.
+   Pokud je počítač sestavení x64 a chcete použít 64bitovou verzi nástroje MSBuild, nebo pokud používáte službu sestavení serveru Team Foundation Server na x x64 počítače, vytvořte následující položky registru v nativním 64bitovém registru. Odkazovat na hostitelském počítači zjistěte, jak nastavit tyto položky.
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>Nastavení proměnných prostředí v počítači sestavení
 
@@ -261,7 +261,7 @@ Otevřít **příkazového řádku** na sestavovacím počítači a spusťte okn
 V této tabulce jsou uvedeny podporované argumenty pro *vcvarsall.bat*:
 
 |Vcvarsall.bat argument|Kompilátor|Architektura sestavovacího počítače|Architektura výstupu sestavení|
-|----------------------------|--------------|---------------------------------|-------------------------------|
+| - |--------------| - | - |
 |x86 (výchozí)|32bitová nativní|x86, x64|x86|
 |x86_amd64|x64 křížové|x86, x64|x64|
 |amd64|x64 nativní|x64|x64|
@@ -276,17 +276,17 @@ Pokud *vcvarsall.bat* proběhne úspěšně – tedy žádná chybová zpráva s
 
 2. Volitelně můžete také přidat následující cesty do proměnné PATH, aby bylo snazší používat nástroj MSBuild pro vytváření řešení.
 
-    Pokud chcete použít nativní 32bitový MSBuild, přidejte tyto cesty do proměnné PATH:
+   Pokud chcete použít nativní 32bitový MSBuild, přidejte tyto cesty do proměnné PATH:
 
-    - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje
+   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 nástroje
 
-    - %windir%\Microsoft.NET\Framework\v4.0.30319
+   - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-    Pokud chcete použít nativní 64bitový MSBuild, přidejte tyto cesty do proměnné PATH:
+   Pokud chcete použít nativní 64bitový MSBuild, přidejte tyto cesty do proměnné PATH:
 
-    - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - % Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
-    - %windir%\Microsoft.NET\Framework64\v4.0.30319
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
 ## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Instalace sestavení nástroje MSBuild k globální mezipaměti sestavení (GAC) v počítači sestavení
 

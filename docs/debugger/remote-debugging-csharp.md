@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d6bd68f5e94e04cab01dcb7bafd7dcc3cf3c17d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936118"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Vzdálené ladění projektu C# nebo Visual Basic v sadě Visual Studio
 Ladění aplikace Visual Studio, který byl nasazen na jiný počítač, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a spusťte aplikaci.
@@ -56,25 +56,25 @@ Vzdálený ladicí program podporuje se ve Windows 7 a novější (ne telefon) a
 ## <a name="remote_csharp"></a> Vzdálené ladění projektu
 Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikace ke vzdálenému počítači, ale můžete stále ladit vzdáleně následujícím způsobem. Následující postup předpokládá, že chcete ladit v počítači s názvem **MJO DL**, jak je znázorněno na obrázku níže.
   
-1.  Vytvoření projektu WPF s názvem **MyWpf**.  
+1. Vytvoření projektu WPF s názvem **MyWpf**.  
   
-2.  Nastavte zarážku někde v kódu, který je snadno dosaženo.  
+2. Nastavte zarážku někde v kódu, který je snadno dosaženo.  
   
-     Může například nastavit zarážku v rutině tlačítka. Uděláte to tak, otevřete soubor MainWindow.xaml a přidejte ovládací prvek tlačítko z panelu nástrojů a potom dvakrát klikněte na tlačítko otevřít její obslužná rutina.
+    Může například nastavit zarážku v rutině tlačítka. Uděláte to tak, otevřete soubor MainWindow.xaml a přidejte ovládací prvek tlačítko z panelu nástrojů a potom dvakrát klikněte na tlačítko otevřít její obslužná rutina.
   
-3.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **vlastnosti**.  
+3. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **vlastnosti**.  
   
-4.  Na **vlastnosti** zvolte **ladění** kartu.  
+4. Na **vlastnosti** zvolte **ladění** kartu.  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  Ujistěte se, **pracovní adresář** textové pole je prázdné.  
+5. Ujistěte se, **pracovní adresář** textové pole je prázdné.  
   
-6.  Zvolte **použít vzdálený počítač**a typ **MJO-DL:4022** v textovém poli. (4022 je číslo portu se zobrazují v okně vzdáleného ladicího programu. Číslo portu zvýší 2 v každé verzi sady Visual Studio).
+6. Zvolte **použít vzdálený počítač**a typ **MJO-DL:4022** v textovém poli. (4022 je číslo portu se zobrazují v okně vzdáleného ladicího programu. Číslo portu zvýší 2 v každé verzi sady Visual Studio).
   
-7.  Ujistěte se, že **povolit ladění nativního kódu** není vybraná.  
+7. Ujistěte se, že **povolit ladění nativního kódu** není vybraná.  
   
-8.  Sestavte projekt.  
+8. Sestavte projekt.  
   
 9. Vytvoření složky na vzdáleném počítači, který se stejnou cestou jako **ladění** složky v počítači aplikace Visual Studio:  **\<zdrojová_cesta_operačního_systému > \MyWPF\MyWPF\bin\Debug**.  
   
@@ -93,7 +93,7 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikac
   
 13. Pokud se zobrazí výzva, zadejte přihlašovací údaje k síti pro připojení ke vzdálenému počítači.  
   
-     Požadované přihlašovací údaje se liší v závislosti na konfiguraci zabezpečení vaší sítě. V počítači domény, můžete například zadat název domény a heslo. Na počítači mimo doménu, můžete například zadat název počítače a platné uživatelské jméno účtu, jako je třeba **MJO-DL\name@something.com**, spolu s správné heslo.
+     Požadované přihlašovací údaje se liší v závislosti na konfiguraci zabezpečení vaší sítě. V počítači domény, můžete například zadat název domény a heslo. Na počítači mimo doménu, můžete například zadat název počítače a platné uživatelské jméno účtu, jako je třeba <strong>MJO-DL\name@something.com</strong>, spolu s správné heslo.
 
      Měli byste vidět, že hlavní okno aplikace WPF je otevřít na vzdáleném počítači.
   
@@ -101,7 +101,7 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic desktopové aplikac
   
 15. Na počítač s Visual Studio měli byste vidět, že vykonávání se zastavilo na zarážku.
   
- Pokud máte jakékoli souborům bez kódu, které je potřeba v aplikaci použít, budete muset zahrnout je do projektu sady Visual Studio. Vytvořte složku projektu pro další soubory (v **Průzkumníka řešení**, klikněte na tlačítko **Přidat > Nová složka**). Pak přidejte soubory do složky (v **Průzkumníka řešení**, klikněte na tlačítko **Přidat > existující položku**, vyberte soubory). Na **vlastnosti** stránky pro každý soubor, nastavte **kopírovat do výstupního adresáře** k **vždy Kopírovat**.
+    Pokud máte jakékoli souborům bez kódu, které je potřeba v aplikaci použít, budete muset zahrnout je do projektu sady Visual Studio. Vytvořte složku projektu pro další soubory (v **Průzkumníka řešení**, klikněte na tlačítko **Přidat > Nová složka**). Pak přidejte soubory do složky (v **Průzkumníka řešení**, klikněte na tlačítko **Přidat > existující položku**, vyberte soubory). Na **vlastnosti** stránky pro každý soubor, nastavte **kopírovat do výstupního adresáře** k **vždy Kopírovat**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Nastavení se vzdálený symboly ladění 
 

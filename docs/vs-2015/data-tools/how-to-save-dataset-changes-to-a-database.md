@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949016"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Postupy: Uložení změn datové sady do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ Po dat ve vaší datové sadě byl změněn a ověřit, budete pravděpodobně c
 ## <a name="updating-two-related-tables-in-a-dataset"></a>Aktualizuje se dvou souvisejících tabulek v datové sadě  
  Při aktualizaci souvisejících tabulkách v datové sadě, je potřeba aktualizovat ve správném pořadí, abyste snížili riziko porušení omezení referenční integrity. Pořadí provádění příkazu bude následovat také indexy <xref:System.Data.DataRowCollection> v datové sadě. Abyste zabránili vyvolaných chyby integrity dat, osvědčeným postupem je aktualizovat databázi v následujícím pořadí:  
   
-1.  Podřízené tabulky: odstranění záznamů.  
+1. Podřízené tabulky: odstranění záznamů.  
   
-2.  Nadřazená tabulka: vložit, aktualizovat a odstraňovat záznamy.  
+2. Nadřazená tabulka: vložit, aktualizovat a odstraňovat záznamy.  
   
-3.  Podřízené tabulky: vkládací a aktualizační záznamy.  
+3. Podřízené tabulky: vkládací a aktualizační záznamy.  
   
- Podrobné informace o ukládání dat z více tabulek, naleznete v tématu [ukládání dat do databáze (více tabulek)](../data-tools/save-data-to-a-database-multiple-tables.md).  
+   Podrobné informace o ukládání dat z více tabulek, naleznete v tématu [ukládání dat do databáze (více tabulek)](../data-tools/save-data-to-a-database-multiple-tables.md).  
   
- Pokud provádíte aktualizaci dvou nebo více souvisejících tabulek, měli byste zahrnout veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zajišťuje všechny související změny do databáze se úspěšně před potvrzením změny. Další informace najdete v tématu [transakce a souběžnost](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+   Pokud provádíte aktualizaci dvou nebo více souvisejících tabulek, měli byste zahrnout veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zajišťuje všechny související změny do databáze se úspěšně před potvrzením změny. Další informace najdete v tématu [transakce a souběžnost](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>Chcete-li aktualizovat dvou souvisejících tabulek pomocí prvku TableAdapter  
   

@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949029"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Postupy: Aktualizace záznamů v databázi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ Můžete použít `TableAdapter.Update` metodu pro záznamy aktualizace (úpravy
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>K aktualizaci záznamů v databázi, která přijímá datovou sadu, DataTable, DataRow nebo DataRows() TableAdapter.Update – metoda  
   
-1.  Úprava záznamů v požadovaný <xref:System.Data.DataTable> přímou úpravou <xref:System.Data.DataRow> v <xref:System.Data.DataTable>. Další informace najdete v tématu [postupy: úprava řádků z DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Úprava záznamů v požadovaný <xref:System.Data.DataTable> přímou úpravou <xref:System.Data.DataRow> v <xref:System.Data.DataTable>. Další informace najdete v tématu [postupy: úprava řádků z DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  Po úpravě řádky v <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metoda. Můžete řídit objem dat se aktualizovat předáním buď celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>.  
+2. Po úpravě řádky v <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metoda. Můžete řídit objem dat se aktualizovat předáním buď celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>.  
   
-     Následující kód ukazuje, jak upravit záznam v <xref:System.Data.DataTable> a následně zavolat `TableAdapter.Update` metoda a uložte změny do databáze. (Tento příklad používá oblasti tabulky databáze Northwind.)  
+    Následující kód ukazuje, jak upravit záznam v <xref:System.Data.DataTable> a následně zavolat `TableAdapter.Update` metoda a uložte změny do databáze. (Tento příklad používá oblasti tabulky databáze Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Pokud vaše aplikace používá objekty k uložení dat v aplikaci, můžete použít objektu TableAdapter `DBDirect` metody k odeslání dat z objektů přímo do databáze. Tyto metody umožňují předat jako parametry metody jednotlivé hodnoty pro každý sloupec. Voláním této metody aktualizuje existující záznam v databázi s sloupec hodnoty předané do metody.  
+   Pokud vaše aplikace používá objekty k uložení dat v aplikaci, můžete použít objektu TableAdapter `DBDirect` metody k odeslání dat z objektů přímo do databáze. Tyto metody umožňují předat jako parametry metody jednotlivé hodnoty pro každý sloupec. Voláním této metody aktualizuje existující záznam v databázi s sloupec hodnoty předané do metody.  
   
- Následující postup používá Northwind `Region` tabulku s ukázkovým.  
+   Následující postup používá Northwind `Region` tabulku s ukázkovým.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>K aktualizaci záznamů v databázi pomocí TableAdapter.Update – metoda, která přebírá hodnoty sloupců  
   

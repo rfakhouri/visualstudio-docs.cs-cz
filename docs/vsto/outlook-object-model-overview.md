@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941188"
 ---
 # <a name="outlook-object-model-overview"></a>Přehled modelu objektů aplikace Outlook
   Vývoj doplňků VSTO pro aplikaci Microsoft Office Outlook, můžete pracovat s objekty, které jsou k dispozici v modelu objektů aplikace Outlook. Model objektů aplikace Outlook obsahuje třídy a rozhraní, které představují položky v uživatelském rozhraní. Například <xref:Microsoft.Office.Interop.Outlook.Application> objekt představuje celé aplikace <xref:Microsoft.Office.Interop.Outlook.Folder> objekt představuje složku, která obsahuje e-mailové zprávy nebo jiné položky a <xref:Microsoft.Office.Interop.Outlook.MailItem> objekt představuje e-mailové zprávy.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008265"
 ### <a name="application-object"></a>Objekt aplikace  
  <xref:Microsoft.Office.Interop.Outlook.Application> Objekt představuje aplikaci Outlook a je to objekt nejvyšší úrovně v modelu objektů aplikace Outlook. Některé z vašich nejdůležitějších členům tohoto objektu patří:  
   
--   [Createitem –](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodu, která slouží k vytvoření nové položky, například e-mailové zprávy, úkolu nebo události.  
+- [Createitem –](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodu, která slouží k vytvoření nové položky, například e-mailové zprávy, úkolu nebo události.  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Vlastnost, která vám umožní přístup k systému windows, které zobrazují obsah složky v uživatelském rozhraní (UI) aplikace Outlook.  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Vlastnost, která vám umožní přístup k systému windows, které zobrazují obsah složky v uživatelském rozhraní (UI) aplikace Outlook.  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Vlastnost, která vám umožní přístup k systému windows, které zobrazují obsah jedné položky, jako je například požadavek e-mailové zprávy nebo schůzky.  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Vlastnost, která vám umožní přístup k systému windows, které zobrazují obsah jedné položky, jako je například požadavek e-mailové zprávy nebo schůzky.  
   
- Chcete-li získat instanci <xref:Microsoft.Office.Interop.Outlook.Application> objektu, použití pole aplikace `ThisAddIn` třídu ve vašem projektu. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
+  Chcete-li získat instanci <xref:Microsoft.Office.Interop.Outlook.Application> objektu, použití pole aplikace `ThisAddIn` třídu ve vašem projektu. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Pokud chcete vyhnout upozornění zabezpečení při použití vlastnosti a metody, které jsou blokovány ochrana modelů objektů aplikace Outlook, získání objektů aplikace Outlook z pole aplikace `ThisAddIn` třídy. Další informace najdete v tématu [specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md).  

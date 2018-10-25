@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949307"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
 
@@ -49,28 +49,28 @@ Doplněk je zkompilovaná knihovna DLL, která běží v prostředí integrovan�
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>K vytvoření doplňku pomocí Průvodce doplňku
 
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na řešení, zvolte **přidat**a pak vyberte **nový projekt**.
 
-     **Nový projekt** se zobrazí dialogové okno.
+    **Nový projekt** se zobrazí dialogové okno.
 
-2.  V části **nainstalované šablony**, rozbalte **ostatní typy projektů** a vyberte **rozšiřitelnost**.
+2. V části **nainstalované šablony**, rozbalte **ostatní typy projektů** a vyberte **rozšiřitelnost**.
 
-3.  V seznamu šablon vyberte **Visual Studio Add-in**.
+3. V seznamu šablon vyberte **Visual Studio Add-in**.
 
-4.  V části **název**, zadejte název doplňku. Například **WebPerfTestResultsViewerAddin**.
+4. V části **název**, zadejte název doplňku. Například **WebPerfTestResultsViewerAddin**.
 
-5.  Zvolte **OK**.
+5. Zvolte **OK**.
 
-     Visual Studio **Průvodce doplňkem** spustí.
+    Visual Studio **Průvodce doplňkem** spustí.
 
-6.  Zvolte **Další**.
+6. Zvolte **Další**.
 
-7.  Na **zvolte programovací jazyk** vyberte programovací jazyk, který chcete použít k zápisu doplňku.
+7. Na **zvolte programovací jazyk** vyberte programovací jazyk, který chcete použít k zápisu doplňku.
 
-    > [!NOTE]
-    > Toto téma používá Visual C# pro ukázkový kód.
+   > [!NOTE]
+   > Toto téma používá Visual C# pro ukázkový kód.
 
-8.  Na **zvolte hostitele aplikace** stránce **sady Visual Studio** a zrušte zaškrtnutí **makra sady Visual Studio**.
+8. Na **zvolte hostitele aplikace** stránce **sady Visual Studio** a zrušte zaškrtnutí **makra sady Visual Studio**.
 
 9. Zvolte **Další**.
 
@@ -96,18 +96,18 @@ Doplněk je zkompilovaná knihovna DLL, která běží v prostředí integrovan�
 
      Přidejte kód do *Connect.cs* soubor po následujícím postupu, který vytvoří uživatelský ovládací prvek, který bude odkazovat tento projekt WebPerfTestResultsViewerAddin.
 
- Po doplněk, zaregistrujte ho pomocí sady Visual Studio předtím, než je možné ho aktivovat v **Add-In správce**. Můžete to provést pomocí souboru XML, který má *.addin* příponu názvu souboru.
+    Po doplněk, zaregistrujte ho pomocí sady Visual Studio předtím, než je možné ho aktivovat v **Add-In správce**. Můžete to provést pomocí souboru XML, který má *.addin* příponu názvu souboru.
 
- *.Addin* soubor popisuje informace, které Visual Studio vyžaduje pro zobrazení doplňku v **Add-In správce**. Když Visual Studio spustí, podívá se do *.addin* umístění pro všechny souborů k dispozici *.addin* soubory. Pokud najde všechny, přečte soubor XML a poskytuje **Add-In správce** informace, které vyžaduje pro spuštění doplňku po klepnutí.
+    *.Addin* soubor popisuje informace, které Visual Studio vyžaduje pro zobrazení doplňku v **Add-In správce**. Když Visual Studio spustí, podívá se do *.addin* umístění pro všechny souborů k dispozici *.addin* soubory. Pokud najde všechny, přečte soubor XML a poskytuje **Add-In správce** informace, které vyžaduje pro spuštění doplňku po klepnutí.
 
- *.Addin* soubor je vytvořen automaticky při vytvoření doplňku pomocí **Průvodce doplňkem**.
+    *.Addin* soubor je vytvořen automaticky při vytvoření doplňku pomocí **Průvodce doplňkem**.
 
 ### <a name="add-in-file-locations"></a>Umístění souboru doplňku
 
 Dvě kopie *.addin* soubory jsou automaticky vytvářeny **Průvodce doplňkem**, následujícím způsobem:
 
 |**. Umístění souboru doplňku**|**Popis**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Kořenové složky projektu|Používá se pro nasazení projektu doplňku. Zahrnutý v projektu pro snadné úpravy a má místní cestu pro nasazení stylu XCopy.|
 |Složka doplňku|Používá pro spuštění doplňku v prostředí ladění. Měly by vždy směrovat na výstupní cestu aktuální konfigurace sestavení.|
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951389"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Specifické aspekty zabezpečení pro řešení pro systém Office
   Funkce zabezpečení poskytované rozhraní Microsoft .NET Framework a Microsoft Office může pomoct chránit vaše řešení pro systém Office proti možné bezpečnostní hrozby. Toto téma vysvětluje některé z těchto hrozeb a poskytuje doporučení, která pomáhá chránit před nimi. Obsahuje také informace o vlivu řešení pro systém Office v nastavení zabezpečení systému Microsoft Office.  
@@ -55,11 +55,11 @@ ms.locfileid: "35675889"
   
  Ochrana modelů objektu může ovlivnit doplňků VSTO různými způsoby v závislosti na tom, zda se používá aplikace Outlook s Microsoft Exchange Server:  
   
--   Pokud aplikace Outlook se nepoužívá se serverem Exchange, správce můžete povolit nebo zakázat ochrana modelů objektů pro všechny doplňků VSTO na počítači.  
+- Pokud aplikace Outlook se nepoužívá se serverem Exchange, správce můžete povolit nebo zakázat ochrana modelů objektů pro všechny doplňků VSTO na počítači.  
   
--   Outlook se používá s Exchangem, může správce povolit nebo zakázat ochrana modelů objektů pro všechny doplňků VSTO na počítači nebo může správce určit, aniž se objeví ochrana modelů objektu lze spustit některé Add-ins VSTO. Správci mohou také upravit chování ochrana modelů objektů v určitých oblastech objektového modelu. Například Správci mohou automaticky povolit doplňků VSTO pro odeslání e-mailu prostřednictvím kódu programu, i když je povolená ochrana modelů objektu.  
+- Outlook se používá s Exchangem, může správce povolit nebo zakázat ochrana modelů objektů pro všechny doplňků VSTO na počítači nebo může správce určit, aniž se objeví ochrana modelů objektu lze spustit některé Add-ins VSTO. Správci mohou také upravit chování ochrana modelů objektů v určitých oblastech objektového modelu. Například Správci mohou automaticky povolit doplňků VSTO pro odeslání e-mailu prostřednictvím kódu programu, i když je povolená ochrana modelů objektu.  
   
- Spouští se v aplikaci Outlook 2007, chování ochrana modelů objektu se změnil na zlepšení zkušeností vývojářů a uživatelů současně pomáhá zabezpečit aplikace Outlook. Další informace najdete v tématu [kódu změny zabezpečení v aplikaci Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+  Spouští se v aplikaci Outlook 2007, chování ochrana modelů objektu se změnil na zlepšení zkušeností vývojářů a uživatelů současně pomáhá zabezpečit aplikace Outlook. Další informace najdete v tématu [kódu změny zabezpečení v aplikaci Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
 ### <a name="minimize-object-model-guard-warnings"></a>Minimalizovat objektu modelu guard upozornění  
  Pokud chcete vyhnout upozornění zabezpečení při použití s omezeným přístupem vlastnostem a metodám, ujistěte se, že váš doplněk VSTO získá objektů aplikace Outlook z `Application` pole `ThisAddIn` třídu ve vašem projektu. Další informace o tomto poli, naleznete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
@@ -94,15 +94,15 @@ ms.locfileid: "35675889"
   
  Pokud uživatel s použitím doplňků VSTO brání v načítání **centrum**, následující typy doplňků VSTO nenačte:  
   
--   Spravovaného a nespravovaného COM doplňků VSTO.  
+- Spravovaného a nespravovaného COM doplňků VSTO.  
   
--   Spravované a nespravované Chytré dokumenty.  
+- Spravované a nespravované Chytré dokumenty.  
   
--   Spravované a nespravované automatizaci VSTO doplňky.  
+- Spravované a nespravované automatizaci VSTO doplňky.  
   
--   Komponenty spravovaných a nespravovaných dat v reálném čase.  
+- Komponenty spravovaných a nespravovaných dat v reálném čase.  
   
- Následující postupy popisují, jak můžou uživatelé používat **centrum** omezit doplňků VSTO načítání v aplikaci Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a Microsoft Office 2010. Tyto postupy nemají vliv na doplňky VSTO nebo přizpůsobení vytvořené pomocí nástroje pro vývoj pro Office v sadě Visual Studio.  
+  Následující postupy popisují, jak můžou uživatelé používat **centrum** omezit doplňků VSTO načítání v aplikaci Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a Microsoft Office 2010. Tyto postupy nemají vliv na doplňky VSTO nebo přizpůsobení vytvořené pomocí nástroje pro vývoj pro Office v sadě Visual Studio.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Chcete-li zakázat doplňků VSTO v Microsoft Office 2010 a Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikací  
   

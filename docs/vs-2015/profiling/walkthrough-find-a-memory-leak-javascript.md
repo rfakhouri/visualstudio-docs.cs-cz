@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929566"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Návod: Vyhledání nevrácené paměti (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,44 +139,44 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 ### <a name="analyzing-the-memory-usage"></a>Analýza využití paměti  
   
-1.  Na **ladění** nástrojů v **spustit ladění** , zvolte cíl ladění pro aktualizovaný projekt: jednu emulátory Windows Phone nebo **simulátor**.  
+1. Na **ladění** nástrojů v **spustit ladění** , zvolte cíl ladění pro aktualizovaný projekt: jednu emulátory Windows Phone nebo **simulátor**.  
   
-    > [!TIP]
-    >  Aplikace pro Windows Store, můžete také zvolit **místního počítače** nebo **vzdálený počítač** v tomto seznamu. Výhodou použití emulátoru nebo simulátoru je však, že můžete umístit u sady Visual Studio a snadno přepínat mezi běžící aplikaci a analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spouštění aplikací v sadě Visual Studio](../debugger/run-store-apps-from-visual-studio.md) a [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > [!TIP]
+   >  Aplikace pro Windows Store, můžete také zvolit **místního počítače** nebo **vzdálený počítač** v tomto seznamu. Výhodou použití emulátoru nebo simulátoru je však, že můžete umístit u sady Visual Studio a snadno přepínat mezi běžící aplikaci a analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spouštění aplikací v sadě Visual Studio](../debugger/run-store-apps-from-visual-studio.md) a [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  Na **ladění** nabídce zvolte **Profiler výkonu...** .  
+2. Na **ladění** nabídce zvolte **Profiler výkonu...** .  
   
-3.  V **dostupných nástrojů**, zvolte **paměti jazyka JavaScript**a klikněte na tlačítko **Start**.  
+3. V **dostupných nástrojů**, zvolte **paměti jazyka JavaScript**a klikněte na tlačítko **Start**.  
   
-     V tomto kurzu budete se připojení analyzátoru paměti k spouštěný projekt. Informace o další možnosti, jako je připojení analyzátoru paměti nainstalované aplikace, najdete v části [paměti jazyka JavaScript](../profiling/javascript-memory.md).  
+    V tomto kurzu budete se připojení analyzátoru paměti k spouštěný projekt. Informace o další možnosti, jako je připojení analyzátoru paměti nainstalované aplikace, najdete v části [paměti jazyka JavaScript](../profiling/javascript-memory.md).  
   
-     Při spuštění analyzátoru paměti, může se zobrazit řízení uživatelských účtů, ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
+    Při spuštění analyzátoru paměti, může se zobrazit řízení uživatelských účtů, ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
   
-4.  Zvolte **nevracení paměti** tlačítko čtyřikrát za sebou.  
+4. Zvolte **nevracení paměti** tlačítko čtyřikrát za sebou.  
   
-     Při výběru tlačítka, zpracování kódu v souboru default.js nemá práce, kterou povede k nevrácení paměti událostí. To budete používat pro diagnostické účely.  
+    Při výběru tlačítka, zpracování kódu v souboru default.js nemá práce, kterou povede k nevrácení paměti událostí. To budete používat pro diagnostické účely.  
   
-    > [!TIP]
-    >  Opakující se scénář, který chcete testovat nevracení paměti usnadňuje odfiltrovat nezajímavé informace, jako jsou objekty, které jsou přidány do haldy během inicializace aplikace nebo při načítání stránky.  
+   > [!TIP]
+   >  Opakující se scénář, který chcete testovat nevracení paměti usnadňuje odfiltrovat nezajímavé informace, jako jsou objekty, které jsou přidány do haldy během inicializace aplikace nebo při načítání stránky.  
   
-5.  Ze spuštěné aplikaci přepněte do sady Visual Studio (Alt + Tab).  
+5. Ze spuštěné aplikaci přepněte do sady Visual Studio (Alt + Tab).  
   
-     Analýzu paměti jazyka JavaScript informace zobrazí na nové kartě v sadě Visual Studio.  
+    Analýzu paměti jazyka JavaScript informace zobrazí na nové kartě v sadě Visual Studio.  
   
-     Graf paměti v tomto zobrazení se souhrnnými ukazuje využití paměti procesem v čase. Zobrazení poskytuje také příkazy jako **udělat snímek haldy**. Snímek poskytuje podrobné informace o využití paměti v určitou dobu. Další informace najdete v tématu [paměti jazyka JavaScript](../profiling/javascript-memory.md).  
+    Graf paměti v tomto zobrazení se souhrnnými ukazuje využití paměti procesem v čase. Zobrazení poskytuje také příkazy jako **udělat snímek haldy**. Snímek poskytuje podrobné informace o využití paměti v určitou dobu. Další informace najdete v tématu [paměti jazyka JavaScript](../profiling/javascript-memory.md).  
   
-6.  Zvolte **udělat snímek haldy**.  
+6. Zvolte **udělat snímek haldy**.  
   
-7.  Přepněte do aplikace a zvolte možnost **nevracení paměti**.  
+7. Přepněte do aplikace a zvolte možnost **nevracení paměti**.  
   
-8.  Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** znovu.  
+8. Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** znovu.  
   
-     Tento obrázek ukazuje snímek směrného plánu (#1) a snímek č. 2.  
+    Tento obrázek ukazuje snímek směrného plánu (#1) a snímek č. 2.  
   
-     ![Směrný plán snímek a snímek 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![Směrný plán snímek a snímek 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  Emulátor Windows Phone není uveden snímek aplikace v době pořízení snímku.  
+   > [!NOTE]
+   >  Emulátor Windows Phone není uveden snímek aplikace v době pořízení snímku.  
   
 9. Přepněte do aplikace a zvolte **nevracení paměti** tlačítko znovu.  
   
@@ -193,18 +193,18 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
 12. V sadě Visual Studio porovnejte snímky. Snímek #2 obsahuje následující informace:  
   
-    -   Velikost haldy (zobrazené červeně na levé straně šipka nahoru) zvýšila o několik ve srovnání s snímku č. 1 KB.  
+    - Velikost haldy (zobrazené červeně na levé straně šipka nahoru) zvýšila o několik ve srovnání s snímku č. 1 KB.  
   
-        > [!IMPORTANT]
-        >  Využití hodnoty přesné paměti pro velikost haldy závisí na cíl ladění.  
+      > [!IMPORTANT]
+      >  Využití hodnoty přesné paměti pro velikost haldy závisí na cíl ladění.  
   
-    -   Počet objektů na haldě (zobrazené červená šipka vpravo nahoru) bylo zvýšeno ve srovnání s snímku č. 1. Jeden objekt se přidala (+ 1) a byly odebrány žádné objekty (-0).  
+    - Počet objektů na haldě (zobrazené červená šipka vpravo nahoru) bylo zvýšeno ve srovnání s snímku č. 1. Jeden objekt se přidala (+ 1) a byly odebrány žádné objekty (-0).  
   
-     Snímek #3 zobrazuje následující:  
+      Snímek #3 zobrazuje následující:  
   
-    -   Velikost haldy se znovu zvýšila několik stovek bajtů ve srovnání s snímku č. 2.  
+    - Velikost haldy se znovu zvýšila několik stovek bajtů ve srovnání s snímku č. 2.  
   
-    -   Počet objektů na haldě zvýšilo znovu ve srovnání s snímku č. 2. Jeden objekt se přidala (+ 1) a byly odebrány žádné objekty (-0).  
+    - Počet objektů na haldě zvýšilo znovu ve srovnání s snímku č. 2. Jeden objekt se přidala (+ 1) a byly odebrány žádné objekty (-0).  
   
 13. Ve snímku č. 3, vyberte text odkazu na pravé straně, který zobrazuje hodnotu + 1 / - 0 vedle červená šipka nahoru.  
   
@@ -220,76 +220,76 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
      Toto zobrazení obsahuje užitečné informace o nevracení paměti, jako je následující:  
   
-    -   Toto zobrazení ukazuje prvek DIV s ID `item`, a uchovávané velikosti objektu je několik stovek bajtů (přesná hodnota se liší).  
+    - Toto zobrazení ukazuje prvek DIV s ID `item`, a uchovávané velikosti objektu je několik stovek bajtů (přesná hodnota se liší).  
   
-    -   Tento objekt je objekt zbylé ze snímku č. 2 a představuje potenciální nevrácená paměť.  
+    - Tento objekt je objekt zbylé ze snímku č. 2 a představuje potenciální nevrácená paměť.  
   
-     Základní znalost aplikace pomáhá v tomto okamžiku: výběr **nevracení paměti** tlačítko by odeberte DIV element a přidat prvek, takže kód vypadá, že nepodporuje pracovat přímo (to znamená, že nevrací paměť). V další části vysvětluje, jak to opravit.  
+      Základní znalost aplikace pomáhá v tomto okamžiku: výběr **nevracení paměti** tlačítko by odeberte DIV element a přidat prvek, takže kód vypadá, že nepodporuje pracovat přímo (to znamená, že nevrací paměť). V další části vysvětluje, jak to opravit.  
   
     > [!TIP]
     >  V některých případech vyhledání objektu ve vztahu k `Global` objekt vám mohou pomoci identifikovat tohoto objektu. Chcete-li to provést, otevřete místní nabídku pro identifikátor a klikněte na tlačítko **zobrazit v zobrazení kořenů**.  
   
 ##  <a name="FixingMemory"></a> Opravte problém paměti  
   
-1.  Prozkoumat pomocí dat zobrazení pomocí profileru kód, který je zodpovědný za odebrání prvků modelu DOM s ID "položka". Vyvolá se v `initialize()` funkce.  
+1. Prozkoumat pomocí dat zobrazení pomocí profileru kód, který je zodpovědný za odebrání prvků modelu DOM s ID "položka". Vyvolá se v `initialize()` funkce.  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     `elem.removeNode(true)` se možná nebudou fungovat správně. Prozkoumejte, jak je kód do mezipaměti prvek modelu DOM a najít chyby; odkaz na prvek uložený v mezipaměti nejsou aktualizována.  
+    `elem.removeNode(true)` se možná nebudou fungovat správně. Prozkoumejte, jak je kód do mezipaměti prvek modelu DOM a najít chyby; odkaz na prvek uložený v mezipaměti nejsou aktualizována.  
   
-2.  V souboru default.js, přidejte následující řádek kódu do funkce zatížení, bezprostředně před volání `appendChild`:  
+2. V souboru default.js, přidejte následující řádek kódu do funkce zatížení, bezprostředně před volání `appendChild`:  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     Tento kód aktualizuje odkaz na prvek uložený v mezipaměti, takže elementu je správně odebrat, když zvolíte **nevracení paměti** tlačítko. Kompletní kód pro funkci zatížení nyní vypadá takto:  
+    Tento kód aktualizuje odkaz na prvek uložený v mezipaměti, takže elementu je správně odebrat, když zvolíte **nevracení paměti** tlačítko. Kompletní kód pro funkci zatížení nyní vypadá takto:  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  Na **ladění** nabídce zvolte **výkon a Diagnostika**.  
+3. Na **ladění** nabídce zvolte **výkon a Diagnostika**.  
   
-4.  V **dostupných nástrojů**, zvolte **paměti jazyka JavaScript**a klikněte na tlačítko **Start**.  
+4. V **dostupných nástrojů**, zvolte **paměti jazyka JavaScript**a klikněte na tlačítko **Start**.  
   
-5.  Postupujte stejným způsobem jako před pořizovat snímky tři. Tady jsou shrnuté kroky:  
+5. Postupujte stejným způsobem jako před pořizovat snímky tři. Tady jsou shrnuté kroky:  
   
-    1.  V aplikaci, zvolte **nevracení paměti** tlačítko čtyřikrát za sebou.  
+   1. V aplikaci, zvolte **nevracení paměti** tlačítko čtyřikrát za sebou.  
   
-    2.  Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** pro snímek směrného plánu.  
+   2. Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** pro snímek směrného plánu.  
   
-    3.  V aplikaci, zvolte **nevracení paměti** tlačítko.  
+   3. V aplikaci, zvolte **nevracení paměti** tlačítko.  
   
-    4.  Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** pro druhý snímek.  
+   4. Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** pro druhý snímek.  
   
-    5.  V aplikaci, zvolte **nevracení paměti** tlačítko.  
+   5. V aplikaci, zvolte **nevracení paměti** tlačítko.  
   
-    6.  Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** pro třetí snímek.  
+   6. Přepněte do aplikace Visual Studio a zvolte **udělat snímek haldy** pro třetí snímek.  
   
-     Snímek #3 nyní zobrazuje velikost haldy jako **žádný nárůst** ze snímku č. 2 a objekt se počítají jako + 1 nebo -1, což znamená, že jeden objekty byl přidán a jeden objekt se odebrala. To je požadované chování.  
+      Snímek #3 nyní zobrazuje velikost haldy jako **žádný nárůst** ze snímku č. 2 a objekt se počítají jako + 1 nebo -1, což znamená, že jeden objekty byl přidán a jeden objekt se odebrala. To je požadované chování.  
   
-     Následující obrázek ukazuje snímek č. 2 a snímek č. 3.  
+      Následující obrázek ukazuje snímek č. 2 a snímek č. 3.  
   
-     ![Snímky zobrazující nevracení paměti dlouhodobého](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Snímky zobrazující nevracení paměti dlouhodobého](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Viz také  
  [Paměť JavaScriptu](../profiling/javascript-memory.md)

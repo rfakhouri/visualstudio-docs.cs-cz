@@ -9,12 +9,12 @@ description: Další informace o benefitech LinkedIn Learning zahrnutý jako sou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9b40d11112497a46982440f98820dba69179486c
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942241"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Výhoda Linkedinem v předplatných sady Visual Studio
 
@@ -28,70 +28,71 @@ Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výh
 1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici LinkedIn Learning v kategorii vzdělávání a klikněte **získat kód** odkaz.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning výhodu dlaždice](_img\vs-linkedin\vs-linkedin-3-month-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning výhodu dlaždice](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
 
 
 3. Pokud už máte účet LinkedIn a jste přihlášení automaticky, okamžitě přejdete na stránku aktivace Linkedinem výhodu.  Pokud máte účet LinkedIn, ale jste přihlášení automaticky, stačí zadat svoje uživatelské jméno a heslo a potom klikněte na tlačítko **přihlášení**.  Přejděte prosím na [tento krok](#activate-your-offer) a aktivujte svou nabídku.
 
 ### <a name="create-a-linkedin-account"></a>Vytvořte si účet LinkedIn
 4. Pokud ještě nemáte účet LinkedIn, klikněte na tlačítko **zapojit**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning teď spojení](_img\vs-linkedin\vs-linkedin-join-now.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning teď spojení](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. Zadejte vaše osobní údaje, zvolte uživatelské jméno a heslo a klikněte na tlačítko **zapojit**.
-    > [!div class="mx-imgBorder"]
-    > ![Vytvořit účet LinkedIn Learning](_img\vs-linkedin\vs-linkedin-create-account.png)
+   > [!div class="mx-imgBorder"]
+   > ![Vytvořit účet LinkedIn Learning](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. Zadejte svou zemi a PSČ a pak klikněte na **Další**.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning nastavení umístění](_img\vs-linkedin\vs-linkedin-set-location.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning nastavení umístění](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. V dalším kroku budete poskytovat informace o sobě. pro váš profil.  Označuje, zda jste student a zadejte své aktuální pracovní pozice, společnosti a oboru.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning Role](_img\vs-linkedin\vs-linkedin-role.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning Role](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. V tomto kroku měli byste určit oblasti, které vás zajímají.  Pokud chcete urychlit proces vytvoření účtu, klikněte na tlačítko **Nejsem si jistý ještě.  Jmenuji se otevřít!**  (Můžete identifikovat oblasti zájmu později.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning zájmu](_img\vs-linkedin\vs-linkedin-interests.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning zájmu](_img/vs-linkedin/vs-linkedin-interests.png)
 
-9.  Pokud jste zadali e-mailovou adresu, odeslala zprávu obsahující potvrzovací kód.  Zpráva pochází od "Linkedin zprávy".  Pokud nenajdete to v doručené poště, prosím zkontrolujte složky s nevyžádanou poštu.  Zadejte kód ze zprávy a klikněte na tlačítko **ověřte**.
-    > [!div class="mx-imgBorder"]
-    > ![Ověřte, LinkedIn Learning](_img\vs-linkedin\vs-linkedin-verify.png)
+9. Pokud jste zadali e-mailovou adresu, odeslala zprávu obsahující potvrzovací kód.  Zpráva pochází od "Linkedin zprávy".  Pokud nenajdete to v doručené poště, prosím zkontrolujte složky s nevyžádanou poštu.  Zadejte kód ze zprávy a klikněte na tlačítko **ověřte**.
+   > [!div class="mx-imgBorder"]
+   > ![Ověřte, LinkedIn Learning](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. Pokud chcete importovat vaše kontakty z e-mailový účet, který jste zadali dříve, Uděláte to nyní.  V opačném případě klikněte na tlačítko **přeskočit**. (Pokud budete chtít tento krok přeskočte, budete vyzváni k potvrzení podle vašeho výběru.  Klikněte na tlačítko **Ano**.)
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning kontakty](_img\vs-linkedin\vs-linkedin-contacts.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning kontakty](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. Oznámení úlohy umožňují informováni o úlohy ve vaší oblasti, která může být vhodné pro vás.  Můžete nastavit upozornění úlohy nyní nebo přeskočení tohoto kroku můžete pokračovat ve vytváření účtu.
-    > [!div class="mx-imgBorder"]
-    > ![Upozorní, LinkedIn Learning úlohy](_img\vs-linkedin\vs-linkedin-job-alerts.png)
+   > [!div class="mx-imgBorder"]
+   > ![Upozorní, LinkedIn Learning úlohy](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. Na základě preferencí a osobní údaje, které jste zadali doposud, zobrazí se vám výběr doporučené připojení, abyste mohli začít vytvářet sítě.  Můžete přidat připojení, nebo tento krok přeskočit.
 
 13. Chcete-li přidat fotografii do vašeho profilu, klikněte na tlačítko **nahrávání fotek**.  V opačném případě můžete tento krok přeskočit.  (Můžete vždy přidat fotografii později.)
     > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning nahrávání fotek](_img\vs-linkedin\vs-linkedin-photo.png)
+    > ![LinkedIn Learning nahrávání fotek](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. LinkedIn aplikace si můžete stáhnout na váš telefon mít odkudkoli přístup k vaší síti.  Můžete odeslat odkaz na váš telefon nebo stáhnout přímo z App Store nebo Google Play.  Můžete také kliknout na **Další** nyní tento krok přeskočit a stáhněte si aplikaci později.
     > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning nahrávání fotek](_img\vs-linkedin\vs-linkedin-app.png)
+    > ![LinkedIn Learning nahrávání fotek](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Aktivujte vaše předplatné
 15. Teď, když jste přihlášení ke svému účtu LinkedIn, nebo vytvořit novou, budete připraveni k aktivaci předplatného Premium a začněte využívat Linkedinem.  Klikněte na tlačítko **aktivujte vaše předplatné**.
-    > [!div class="mx-imgBorder"]
-    > ![Aktivovat Linkedinem](_img\vs-linkedin\vs-linkedin-Activate1.png)
+   > [!div class="mx-imgBorder"]
+   > ![Aktivovat Linkedinem](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
 
 16. Můžete začít zkoumat dovednosti, které vás zajímají.  Vyberte ze seznamu doporučení, vyhledejte další dovednosti, nebo klikněte na tlačítko **přeskočit** pro pokračování bez dovednosti vyberete.
-    > [!div class="mx-imgBorder"]
-    > ![LinkedIn Learning dovednosti](_img\vs-linkedin\vs-linkedin-skills.png)
+   > [!div class="mx-imgBorder"]
+   > ![LinkedIn Learning dovednosti](_img/vs-linkedin/vs-linkedin-skills.png)
 
 17. Úspěšně jsme aktivovali nabídky předplatné Premium a teď začít používat LinkedIn Learning a všech dalších výhodách Premium!
-    > [!div class="mx-imgBorder"]
-    > ![Domovská stránka LinkedIn Learning](_img\vs-linkedin\vs-linkedin-learning-home.png)
+   > [!div class="mx-imgBorder"]
+   > ![Domovská stránka LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |

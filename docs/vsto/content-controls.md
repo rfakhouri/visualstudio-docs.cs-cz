@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940226"
 ---
 # <a name="content-controls"></a>Ovládací prvky obsahu
   Ovládací prvky obsahu poskytují způsob, jak můžete na dokumentech návrhu a šablony, které mají tyto funkce:  
   
--   Uživatelské rozhraní (UI), které má řízený vstup v podobě formuláře.  
+- Uživatelské rozhraní (UI), které má řízený vstup v podobě formuláře.  
   
--   Omezení, které uživatelům zabránit v úprav chráněných oddílů dokumentu nebo šablony. Další informace najdete v tématu [ochrana částí dokumentů pomocí ovládacích prvků obsahu](#Protection).  
+- Omezení, které uživatelům zabránit v úprav chráněných oddílů dokumentu nebo šablony. Další informace najdete v tématu [ochrana částí dokumentů pomocí ovládacích prvků obsahu](#Protection).  
   
--   Datové vazby ke zdroji dat Další informace najdete v tématu [vytvoření vazby dat na ovládací prvky obsahu](#DataBinding).  
+- Datové vazby ke zdroji dat Další informace najdete v tématu [vytvoření vazby dat na ovládací prvky obsahu](#DataBinding).  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [vytvoření vazby dat k aplikaci Word 2007 obsahu ovládacích prvků pomocí Visual Studio Tools pro systém Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [vytvoření vazby dat k aplikaci Word 2007 obsahu ovládacích prvků pomocí Visual Studio Tools pro systém Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Přehled ovládacích prvků obsahu  
  Ovládací prvky obsahu obsahují uživatelské rozhraní, která je optimalizovaná pro oba uživatele vstupní a tisku. Pokud přidáte ovládací prvek obsahu k dokumentu, ovládací prvek je identifikován ohraničení, název a dočasný text, který může poskytnout pokyny pro uživatele. Ohraničení a záhlaví ovládacího prvku se nezobrazují v tištěné verze dokumentu.  
@@ -68,11 +68,11 @@ ms.locfileid: "35676465"
   
  Ovládací prvky obsahu také nápovědy, abyste udělali toto:  
   
--   Zabraňte uživatelům v úpravách nebo odstraňování částí dokumentu. To je užitečné, pokud máte informace v dokumentu nebo šablony, která uživatelé by měli být schopni číst, ale nikoli upravovat, nebo pokud chcete, aby je uživatelé mohli upravit ovládací prvky obsahu, ale nikoli jejich odstraňování.  
+- Zabraňte uživatelům v úpravách nebo odstraňování částí dokumentu. To je užitečné, pokud máte informace v dokumentu nebo šablony, která uživatelé by měli být schopni číst, ale nikoli upravovat, nebo pokud chcete, aby je uživatelé mohli upravit ovládací prvky obsahu, ale nikoli jejich odstraňování.  
   
--   Svázat data částí dokumentu nebo šablony. Databázová pole, spravované objekty v lze svázat ovládací prvky obsahu [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementy XML, které jsou uloženy v dokumentu a jiných zdrojů dat.  
+- Svázat data částí dokumentu nebo šablony. Databázová pole, spravované objekty v lze svázat ovládací prvky obsahu [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementy XML, které jsou uloženy v dokumentu a jiných zdrojů dat.  
   
- V projektech na úrovni dokumentu můžete přidat ovládací prvky obsahu dokumentu v době návrhu nebo v době běhu. V doplňku VSTO projektů můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  V projektech na úrovni dokumentu můžete přidat ovládací prvky obsahu dokumentu v době návrhu nebo v době běhu. V doplňku VSTO projektů můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Ovládací prvky obsahu můžete použít jenom v dokumentech, které jsou uložené ve formátu Open XML. Ovládací prvky obsahu nelze použít v dokumentech, které jsou uloženy v dokumentu Wordu 97 – 2003 (*doc*) formát.  
@@ -133,11 +133,11 @@ ms.locfileid: "35676465"
   
  Pokud je oblast, kterou chcete chránit uvnitř ovládacího prvku obsahu, můžete zabránit uživatelům v úpravách nebo odstraňování ovládacího prvku vlastnosti ovládacího prvku obsahu:  
   
--   **LockContents** vlastnost zabraňuje uživatelům v úpravách obsahu.  
+- **LockContents** vlastnost zabraňuje uživatelům v úpravách obsahu.  
   
--   **LockContentControl** vlastnost zabraňuje uživatelům v odstranění ovládacího prvku.  
+- **LockContentControl** vlastnost zabraňuje uživatelům v odstranění ovládacího prvku.  
   
- Pokud v oblasti, které chcete chránit, není uvnitř ovládacího prvku obsahu, nebo pokud chcete chránit oblast, která obsahuje ovládací prvky obsahu a jiné typy obsahu, můžete vložit celé oblasti <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Na rozdíl od ostatních ovládacích prvků obsahu <xref:Microsoft.Office.Tools.Word.GroupContentControl> neposkytuje žádné uživatelské rozhraní, která je viditelná pro uživatele. Jejím jediným účelem je definování oblast, která uživatelé nelze upravit.  
+  Pokud v oblasti, které chcete chránit, není uvnitř ovládacího prvku obsahu, nebo pokud chcete chránit oblast, která obsahuje ovládací prvky obsahu a jiné typy obsahu, můžete vložit celé oblasti <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Na rozdíl od ostatních ovládacích prvků obsahu <xref:Microsoft.Office.Tools.Word.GroupContentControl> neposkytuje žádné uživatelské rozhraní, která je viditelná pro uživatele. Jejím jediným účelem je definování oblast, která uživatelé nelze upravit.  
   
 > [!NOTE]  
 >  Pokud jste vytvořili <xref:Microsoft.Office.Tools.Word.GroupContentControl> , která obsahuje vložené ovládací prvky obsahu, embedded ovládacích prvků obsahu nejsou chráněné automaticky. Je nutné použít **LockContents** vlastnosti každého vložit ovládací prvek zabránit uživatelům v úpravách jejich obsah.  
@@ -149,11 +149,11 @@ ms.locfileid: "35676465"
   
  Ovládací prvky obsahu poskytují následující možnosti vazby dat:  
   
--   Ovládací prvky obsahu můžete vázat na databázová pole nebo spravovaných objektů s použitím stejného modelu vazby dat jako Windows Forms.  
+- Ovládací prvky obsahu můžete vázat na databázová pole nebo spravovaných objektů s použitím stejného modelu vazby dat jako Windows Forms.  
   
--   Prvky v části XML lze svázat ovládací prvky obsahu (také s názvem *vlastní části XML*), který se vloží do dokumentu.  
+- Prvky v části XML lze svázat ovládací prvky obsahu (také s názvem *vlastní části XML*), který se vloží do dokumentu.  
   
- Přehled připojení k datům hostitelské ovládací prvky v řešeních pro systém Office, naleznete v tématu [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  Přehled připojení k datům hostitelské ovládací prvky v řešeních pro systém Office, naleznete v tématu [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Datový model vazby Windows Forms  
  Většina obsahu řídí podporu modelu jednoduché datové vazby, který používá Windows Forms. Jednoduchá vazba dat znamená, že je vytvořena vazba ovládacího prvku na jeden datový prvek, jako je například hodnota ve sloupci tabulky dat. Další informace najdete v tématu [a datové vazby Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  

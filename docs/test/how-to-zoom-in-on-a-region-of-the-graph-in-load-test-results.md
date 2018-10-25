@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932348"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Postupy: přiblížení oblasti grafu ve výsledcích zátěžového testu
 
@@ -94,15 +94,15 @@ Po dokončení zátěžového testu můžete přiblížit a přejděte do oblast
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Přiblížení výběrem a přetažením do oblasti grafu
 
-1.  Zvolte na jednom konci přiblížení oblasti grafu.
+1. Zvolte na jednom konci přiblížení oblasti grafu.
 
-2.  Přetažením ukazatele myši na druhém konci přiblížení oblasti.
+2. Přetažením ukazatele myši na druhém konci přiblížení oblasti.
 
-3.  Uvolněte tlačítko myši.
+3. Uvolněte tlačítko myši.
 
-     Tím se zvětší oblasti, která jste definovali kliknutím a přetažením.
+    Tím se zvětší oblasti, která jste definovali kliknutím a přetažením.
 
- Následující postup popisuje, jak rychle horizonální oddálení, aniž by bylo nutné upravit konce panelu přiblížení.
+   Následující postup popisuje, jak rychle horizonální oddálení, aniž by bylo nutné upravit konce panelu přiblížení.
 
 ### <a name="to-zoom-out"></a>Zmenšíte.
 

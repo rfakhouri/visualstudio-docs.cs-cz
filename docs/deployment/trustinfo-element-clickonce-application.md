@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941220"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; – element (aplikace ClickOnce)
 Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klientském počítači.  
@@ -142,21 +142,21 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Volitelné. Určuje úroveň zabezpečení, ve kterém aplikace požádá o který se spustí. Tento element nemá žádné podřízené položky a má následující atributy.  
   
--   `Level`  
+- `Level`  
   
-     Požadováno. Označuje, že úroveň zabezpečení aplikace požaduje. Možné hodnoty jsou:  
+   Požadováno. Označuje, že úroveň zabezpečení aplikace požaduje. Možné hodnoty jsou:  
   
-     `asInvoker`, požadování žádná další oprávnění. Tato úroveň vyžaduje že důvěryhodnosti žádné další výzvy.  
+   `asInvoker`, požadování žádná další oprávnění. Tato úroveň vyžaduje že důvěryhodnosti žádné další výzvy.  
   
-     `highestAvailable`, požadování nejvyšší oprávnění, která je k dispozici nadřazenému procesu.  
+   `highestAvailable`, požadování nejvyšší oprávnění, která je k dispozici nadřazenému procesu.  
   
-     `requireAdministrator`, vyžaduje oprávnění správce s úplnými oprávněními.  
+   `requireAdministrator`, vyžaduje oprávnění správce s úplnými oprávněními.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace bude instalovat pouze s hodnotou `asInvoker`. Instalace s jakoukoli jinou hodnotu se nezdaří.  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace bude instalovat pouze s hodnotou `asInvoker`. Instalace s jakoukoli jinou hodnotu se nezdaří.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     Volitelné. Určuje, jestli aplikace vyžaduje přístup k prvkům chráněného uživatelského rozhraní. Hodnoty jsou buď `true` nebo `false`, a výchozí hodnota je false. Pouze podepsané aplikace by měla mít hodnotu true.  
+   Volitelné. Určuje, jestli aplikace vyžaduje přístup k prvkům chráněného uživatelského rozhraní. Hodnoty jsou buď `true` nebo `false`, a výchozí hodnota je false. Pouze podepsané aplikace by měla mít hodnotu true.  
   
 ## <a name="remarks"></a>Poznámky  
  Pokud [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace požaduje více oprávnění než klientský počítač, udělí se ve výchozím nastavení, CLR správce důvěryhodnosti modulu CLR runtime požádá uživatele, pokud chce poskytnout aplikace tuto zvýšenou úroveň důvěryhodnosti. Pokud uživatel je hodnota Ne, aplikace se nespustí; v opačném případě bude spuštěna s požadovaná oprávnění.  

@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932547"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Přidání souboru XML  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, klikněte na tlačítko **přidat** a potom klikněte na tlačítko **nová položka**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, klikněte na tlačítko **přidat** a potom klikněte na tlačítko **nová položka**.  
   
-2.  V **přidat novou položku** dialogu **soubor XML** z **šablony** podokně.  
+2. V **přidat novou položku** dialogu **soubor XML** z **šablony** podokně.  
   
-3.  Přidejte ukázkový obsah do souboru.  
+3. Přidejte ukázkový obsah do souboru.  
   
-4.  V tomto návodu, pojmenujte soubor `exampleXml.xml`. Nastavení obsahu souboru má být XML je znázorněno v předchozí části.  
+4. V tomto návodu, pojmenujte soubor `exampleXml.xml`. Nastavení obsahu souboru má být XML je znázorněno v předchozí části.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Přidat soubor kódu testu  
  Přidejte do projektu soubor jazyka C# a zápis do něj ukázku, kterou chcete být schopni napsat kód. Příklad:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Chcete-li přidat do projektu soubor textové šablony  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, klikněte na tlačítko **přidat**a potom klikněte na tlačítko **nová položka**.  
   
-2.  V **přidat novou položku** dialogové okno Vyberte **textové šablony** z **šablony** podokně.  
+2. V **přidat novou položku** dialogové okno Vyberte **textové šablony** z **šablony** podokně.  
   
-    > [!NOTE]
-    >  Ujistěte se, že přidáte textové šablony a ne Předzpracované textové šablony.  
+   > [!NOTE]
+   >  Ujistěte se, že přidáte textové šablony a ne Předzpracované textové šablony.  
   
-3.  V souboru v direktivě šablony změnit `hostspecific` atribut `true`.  
+3. V souboru v direktivě šablony změnit `hostspecific` atribut `true`.  
   
-     Tato změna vám umožní kód šablony pro získání přístupu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] služby.  
+    Tato změna vám umožní kód šablony pro získání přístupu k [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] služby.  
   
-4.  V direktivě output změňte atribut rozšíření "cs" tak, aby tato šablona vygeneruje soubor jazyka C#. V projektu jazyka Visual Basic by ho změňte na "VB".  
+4. V direktivě output změňte atribut rozšíření "cs" tak, aby tato šablona vygeneruje soubor jazyka C#. V projektu jazyka Visual Basic by ho změňte na "VB".  
   
-5.  Uložte soubor. V této fázi soubor textové šablony by měl obsahovat tyto řádky:  
+5. Uložte soubor. V této fázi soubor textové šablony by měl obsahovat tyto řádky:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- .  
+   .  
   
- Všimněte si, že soubor cs zobrazí v Průzkumníku řešení jako pobočka souboru šablony. Můžete ho zobrazit kliknutím na [+] vedle názvu souboru šablony. Tento soubor je vygenerován ze souboru šablony při každém uložení nebo přesunutí výběru směrem od souboru šablony. Vygenerovaný soubor se zkompiluje jako součást vašeho projektu.  
+   Všimněte si, že soubor cs zobrazí v Průzkumníku řešení jako pobočka souboru šablony. Můžete ho zobrazit kliknutím na [+] vedle názvu souboru šablony. Tento soubor je vygenerován ze souboru šablony při každém uložení nebo přesunutí výběru směrem od souboru šablony. Vygenerovaný soubor se zkompiluje jako součást vašeho projektu.  
   
- Pro usnadnění práce při vývoji soubor šablony, uspořádat okna soubor šablony a vygenerovaný soubor tak, aby si ji můžete zobrazit vedle sebe. Díky tomu můžete zobrazit okamžitě výstup šablony. Můžete si všimnout, že pokud generuje šablona neplatný kód jazyka C#, chyby se zobrazí v okně chybové zprávy.  
+   Pro usnadnění práce při vývoji soubor šablony, uspořádat okna soubor šablony a vygenerovaný soubor tak, aby si ji můžete zobrazit vedle sebe. Díky tomu můžete zobrazit okamžitě výstup šablony. Můžete si všimnout, že pokud generuje šablona neplatný kód jazyka C#, chyby se zobrazí v okně chybové zprávy.  
   
- Veškeré úpravy, které můžete provést přímo v generovaném souboru budou ztraceny, při každém uložení souboru šablony. Si proto Vyhněte se úpravám vygenerovaný soubor, nebo upravit pouze pro krátké experimentů. Někdy je užitečné si vyzkoušet krátký fragment kódu v generovaném souboru, kde je technologie IntelliSense v operaci, a zkopírujte ho do souboru šablony.  
+   Veškeré úpravy, které můžete provést přímo v generovaném souboru budou ztraceny, při každém uložení souboru šablony. Si proto Vyhněte se úpravám vygenerovaný soubor, nebo upravit pouze pro krátké experimentů. Někdy je užitečné si vyzkoušet krátký fragment kódu v generovaném souboru, kde je technologie IntelliSense v operaci, a zkopírujte ho do souboru šablony.  
   
 ## <a name="developing-the-text-template"></a>Vývoj textové šablony  
  Následující doporučené pokyny agilního vývoje bude vyvíjíme šablony do menších krůčcích vymazání některé chyby na každý přírůstek, dokud testovací kód správně zkompiluje a spustí.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Závěr  
  Tento názorný postup ukazuje několik technik a výhody generování kódu:  
   
--   *Generování kódu* je vytvoření část zdrojového kódu aplikace *modelu*. Model obsahuje informace ve formě vhodné k doméně aplikace a může změnit během životního cyklu aplikace.  
+- *Generování kódu* je vytvoření část zdrojového kódu aplikace *modelu*. Model obsahuje informace ve formě vhodné k doméně aplikace a může změnit během životního cyklu aplikace.  
   
--   Silné typování je jednou z výhod generování kódu. Zatímco model představuje informace ve formě vhodnější pro uživatele, umožňuje generovaného kódu ostatních částech aplikace se informace o použití sadu typů.  
+- Silné typování je jednou z výhod generování kódu. Zatímco model představuje informace ve formě vhodnější pro uživatele, umožňuje generovaného kódu ostatních částech aplikace se informace o použití sadu typů.  
   
--   Technologie IntelliSense a kompilátor vám pomůžou vytvořit kód, který používá schéma modelu, pokud píšete nový kód pro i když dojde k aktualizaci schématu.  
+- Technologie IntelliSense a kompilátor vám pomůžou vytvořit kód, který používá schéma modelu, pokud píšete nový kód pro i když dojde k aktualizaci schématu.  
   
--   Přidávání souboru jednou šablonou znamená přístupnější aplikaci do projektu může poskytovat i tyto výhody.  
+- Přidávání souboru jednou šablonou znamená přístupnější aplikaci do projektu může poskytovat i tyto výhody.  
   
--   Textové šablony můžete vyvinuli a testovat rychle a postupně.  
+- Textové šablony můžete vyvinuli a testovat rychle a postupně.  
   
- V tomto podrobném návodu kód programu skutečně nevygeneruje instance modelu, reprezentativní vzorek souborů XML, které budou zpracovávat aplikace. V rámci formálnější přístupu schématu XML by vstup do šablony ve formě souboru XSD nebo definice jazyka specifického pro doménu. Tento přístup usnadníme pro šablonu, kterou chcete určit vlastnosti například násobnosti relace.  
+  V tomto podrobném návodu kód programu skutečně nevygeneruje instance modelu, reprezentativní vzorek souborů XML, které budou zpracovávat aplikace. V rámci formálnější přístupu schématu XML by vstup do šablony ve formě souboru XSD nebo definice jazyka specifického pro doménu. Tento přístup usnadníme pro šablonu, kterou chcete určit vlastnosti například násobnosti relace.  
   
 ## <a name="troubleshooting-the-text-template"></a>Řešení potíží s textové šablony  
  Pokud jste viděli šablona transformace nebo kompilace chyby **seznam chyb**, nebo pokud nevygeneroval výstupního souboru, je možné řešit textové šablony pomocí technik popsaných v [generování Soubory pomocí nástroje TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

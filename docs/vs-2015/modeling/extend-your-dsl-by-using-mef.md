@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930635"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,141 +30,141 @@ Můžete rozšíření jazyka specifického pro doménu (DSL) pomocí Managed Ex
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Povolit vašeho DSL prodloužit pomocí MEF  
   
-1.  Vytvořte novou složku s názvem **MefExtension** uvnitř **DslPackage** projektu. Přidejte do ní následující soubory:  
+1. Vytvořte novou složku s názvem **MefExtension** uvnitř **DslPackage** projektu. Přidejte do ní následující soubory:  
   
-     Název souboru: `CommandExtensionVSCT.tt`  
+    Název souboru: `CommandExtensionVSCT.tt`  
   
-    > [!IMPORTANT]
-    >  Nastavte identifikátor GUID v tomto souboru bude stejná jako CommandSetId identifikátor GUID, který je definován v DslPackage\GeneratedCode\Constants.tt  
+   > [!IMPORTANT]
+   >  Nastavte identifikátor GUID v tomto souboru bude stejná jako CommandSetId identifikátor GUID, který je definován v DslPackage\GeneratedCode\Constants.tt  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#  
-    // CmdSet Guid must be defined before master template is included  
-    // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
-    Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
-    string menuidCommandsExtensionBaseId="0x4000";  
-    #>  
-    <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#  
+   // CmdSet Guid must be defined before master template is included  
+   // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
+   Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
+   string menuidCommandsExtensionBaseId="0x4000";  
+   #>  
+   <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
+   ```  
   
-     Název souboru: `CommandExtensionRegistrar.tt`  
+    Název souboru: `CommandExtensionRegistrar.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
+   ```  
   
-     Název souboru: `ValidationExtensionEnablement.tt`  
+    Název souboru: `ValidationExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
+   ```  
   
-     Název souboru: `ValidationExtensionRegistrar.tt`  
+    Název souboru: `ValidationExtensionRegistrar.tt`  
   
-     Pokud chcete přidat tento soubor, musíte povolit ověřování v vašeho DSL pomocí alespoň jeden z parametrů v **EditorValidation** v Průzkumník DSL.  
+    Pokud chcete přidat tento soubor, musíte povolit ověřování v vašeho DSL pomocí alespoň jeden z parametrů v **EditorValidation** v Průzkumník DSL.  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
+   ```  
   
-     Název souboru: `PackageExtensionEnablement.tt`  
+    Název souboru: `PackageExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
+   ```  
   
-2.  Vytvořte novou složku s názvem **MefExtension** uvnitř **Dsl** projektu. Přidejte do ní následující soubory:  
+2. Vytvořte novou složku s názvem **MefExtension** uvnitř **Dsl** projektu. Přidejte do ní následující soubory:  
   
-     Název souboru: `DesignerExtensionMetaDataAttribute.tt`  
+    Název souboru: `DesignerExtensionMetaDataAttribute.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
+   ```  
   
-     Název souboru: `GestureExtensionEnablement.tt`  
+    Název souboru: `GestureExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
+   ```  
   
-     Název souboru: `GestureExtensionController.tt`  
+    Název souboru: `GestureExtensionController.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionController.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionController.tt" #>  
+   ```  
   
-3.  Přidejte následující řádek do existujícího souboru s názvem **DslPackage\Commands.vsct**:  
+3. Přidejte následující řádek do existujícího souboru s názvem **DslPackage\Commands.vsct**:  
   
-    ```  
-    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
-    ```  
+   ```  
+   <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
+   ```  
   
-     Vložit řádek za stávající `<Include>` směrnice.  
+    Vložit řádek za stávající `<Include>` směrnice.  
   
-4.  `Open DslDefinition.dsl.`  
+4. `Open DslDefinition.dsl.`  
   
-5.  V Průzkumníku DSL vyberte **Editor\Validation**.  
+5. V Průzkumníku DSL vyberte **Editor\Validation**.  
   
-6.  V okně Vlastnosti, ujistěte se, že nejméně jedna z vlastností s názvem **používá...**  je `true`.  
+6. V okně Vlastnosti, ujistěte se, že nejméně jedna z vlastností s názvem **používá...**  je `true`.  
   
-7.  V panelu nástrojů Průzkumníka řešení, klikněte na tlačítko **Transformovat všechny šablony**.  
+7. V panelu nástrojů Průzkumníka řešení, klikněte na tlačítko **Transformovat všechny šablony**.  
   
-     Podpůrné soubory se zobrazí pod všechny soubory, které jste přidali.  
+    Podpůrné soubory se zobrazí pod všechny soubory, které jste přidali.  
   
-8.  Sestavení a spuštění řešení Chcete-li ověřit, že stále funguje.  
+8. Sestavení a spuštění řešení Chcete-li ověřit, že stále funguje.  
   
- Vaše DSL je nyní povoleno rozhraní MEF. Příkazy nabídky, obslužné rutiny gesta a omezení ověření můžete psát jako rozšíření MEF. Tato rozšíření můžete psát ve vašem řešení DSL společně s další vlastní kód. Kromě toho vy nebo jiní vývojáři psát samostatné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která rozšíření vašeho DSL.  
+   Vaše DSL je nyní povoleno rozhraní MEF. Příkazy nabídky, obslužné rutiny gesta a omezení ověření můžete psát jako rozšíření MEF. Tato rozšíření můžete psát ve vašem řešení DSL společně s další vlastní kód. Kromě toho vy nebo jiní vývojáři psát samostatné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která rozšíření vašeho DSL.  
   
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Vytvoření rozšíření pro DSL povolené rozhraní MEF  
  Pokud máte přístup k DSL povolené MEF vytvořené sobě nebo někomu jinému, můžete psát rozšíření pro něj. Rozšíření lze použít k přidání příkazy, obslužné rutiny gesta nebo omezení ověření. K vytváření těchto rozšíření, můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení Extension (VSIX). Řešení se skládá ze dvou částí: projekt knihovny tříd, který vytváří sestavení kódu a projekt VSIX, která zabalí sestavení.  
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>Vytvoření DSL rozšíření VSIX  
   
-1.  Vytvořte nový projekt knihovny tříd. Chcete-li to provést, v **nový projekt** dialogu **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **knihovny tříd**.  
+1. Vytvořte nový projekt knihovny tříd. Chcete-li to provést, v **nový projekt** dialogu **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **knihovny tříd**.  
   
-2.  V nový projekt knihovny tříd přidejte odkaz na sestavení DSL.  
+2. V nový projekt knihovny tříd přidejte odkaz na sestavení DSL.  
   
-    -   Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".  
+   - Toto sestavení obsahuje obvykle název, který končí na ". DSL.dll".  
   
-    -   Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\***  
+   - Pokud máte přístup k projektu DSL, můžete najít soubor sestavení v adresáři **Dsl\bin\\\\***  
   
-    -   Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.  
+   - Pokud máte přístup k souboru DSL VSIX, můžete najít sestavení tak, že změníte příponu názvu souboru VSIX na ".zip". Soubor .zip dekomprimujte.  
   
-3.  Přidejte odkazy na následující sestavení .NET:  
+3. Přidejte odkazy na následující sestavení .NET:  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-    -   System.ComponentModel.Composition.dll  
+   -   System.ComponentModel.Composition.dll  
   
-    -   System.Windows.Forms.dll  
+   -   System.Windows.Forms.dll  
   
-4.  Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.  
+4. Vytvořte VSIX projekt ve stejném řešení. Chcete-li to provést, v **nový projekt** dialogového okna rozbalte **jazyka Visual Basic** nebo **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a pak vyberte  **Projekt VSIX**.  
   
-5.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.  
+5. V Průzkumníku řešení klikněte pravým tlačítkem na projekt VSIX a potom klikněte na tlačítko **nastavit jako spouštěný projekt**.  
   
-6.  V novém projektu, otevřete **source.extension.vsixmanifest**.  
+6. V novém projektu, otevřete **source.extension.vsixmanifest**.  
   
-7.  Klikněte na tlačítko **přidat obsah**. V dialogovém okně nastavte **typ obsahu** k **Komponenta MEF**, a **zdrojový projekt** do projektu knihovny tříd.  
+7. Klikněte na tlačítko **přidat obsah**. V dialogovém okně nastavte **typ obsahu** k **Komponenta MEF**, a **zdrojový projekt** do projektu knihovny tříd.  
   
-8.  Přidáte odkaz VSIX na DSL.  
+8. Přidáte odkaz VSIX na DSL.  
   
-    1.  V **source.extension.vsixmanifest**, klikněte na tlačítko **přidat odkaz**  
+   1. V **source.extension.vsixmanifest**, klikněte na tlačítko **přidat odkaz**  
   
-    2.  V dialogovém okně klikněte na tlačítko **přidat datové části** a vyhledejte soubor VSIX DSL. Soubor VSIX je součástí řešení DSL v **DslPackage\bin\\\***.  
+   2. V dialogovém okně klikněte na tlačítko **přidat datové části** a vyhledejte soubor VSIX DSL. Soubor VSIX je součástí řešení DSL v ** DslPackage\bin\\\\***.  
   
-         To umožňuje uživatelům s instalací DSL a rozšíření ve stejnou dobu. Pokud uživatel již nainstaloval DSL, nainstaluje se pouze rozšíření.  
+       To umožňuje uživatelům s instalací DSL a rozšíření ve stejnou dobu. Pokud uživatel již nainstaloval DSL, nainstaluje se pouze rozšíření.  
   
 9. Zkontrolujte a aktualizujte pole z **source.extension.vsixmanifest**. Klikněte na tlačítko **vybrat vydání** a ověřte, že správné [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edice jsou nastavené.  
   

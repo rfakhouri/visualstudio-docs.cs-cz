@@ -9,12 +9,12 @@ description: Další informace o sadě ModernRequirements produktů, které jsou
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7b2b7cd8848550efe24541a128caaf336a6458ad
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942865"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhoda MODERNRequirements4TFS v předplatných sady Visual Studio
 
@@ -22,69 +22,70 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 
 
 ## <a name="activation-steps"></a>Postup aktivace
-1.  Na vaše MODERNRequirementsTFS výhodu využít, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2.  Vyhledejte dlaždici MODERNRequirements4TFS v části nástroje a klikněte na **získat kód** odkaz v levé dolní části dlaždice.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements výhodu dlaždice](_img\vs-modernreq\vs-modernreq-tile.png)
+1. Na vaše MODERNRequirementsTFS výhodu využít, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2. Vyhledejte dlaždici MODERNRequirements4TFS v části nástroje a klikněte na **získat kód** odkaz v levé dolní části dlaždice.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements výhodu dlaždice](_img/vs-modernreq/vs-modernreq-tile.png)
 
-2.  Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
+3. Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
 
-3.  Budete přesměrováni na web ModernRequirements a vytvořit si účet a stáhnout software.  Na úvodní stránce zadejte požadovaný kontaktní údaje a klikněte na tlačítko **získání licenčního kódu a stažení**.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements cílová stránka](_img\vs-modernreq\vs-modernreq-landing.png)
-
-
-4.  Další stránka obsahuje licenční klíč.  Prosím zkontrolujte informace o zařízení na stránce a potom klikněte na modrý **stáhnout software, klepněte sem** odkaz uprostřed stránky.
-    > [!div class="mx-imgBorder"]
-    > ![ModernRequirements licenční klíč](_img\vs-modernreq\vs-modernreq-license-new-resized.png)
+4. Budete přesměrováni na web ModernRequirements a vytvořit si účet a stáhnout software.  Na úvodní stránce zadejte požadovaný kontaktní údaje a klikněte na tlačítko **získání licenčního kódu a stažení**.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements cílová stránka](_img/vs-modernreq/vs-modernreq-landing.png)
 
 
-5.  Na stránce stažení máte možnost nainstalovat sady MODERNRequirements nebo nainstalovat jednotlivé moduly ze sady SMARTOffice4TFS.  Správné možnosti pro vás bude záviset na vašich předvoleb, kterou verzi sady TFS jste nainstalovali.  Nezapomeňte seznámit se s informace na stránce můžete vybrat správnou verzi sady produkty za vás.
-    > [!div class="mx-imgBorder"]
-    > ![Možnosti stahování ModernRequirement](_img\vs-modernreq\vs-modernreq-download-page-new.png)
+5. Další stránka obsahuje licenční klíč.  Prosím zkontrolujte informace o zařízení na stránce a potom klikněte na modrý **stáhnout software, klepněte sem** odkaz uprostřed stránky.
+   > [!div class="mx-imgBorder"]
+   > ![ModernRequirements licenční klíč](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
 
-6.  V tomto příkladu jsme vybrali SMARTOffice4TFS.  Zobrazí se dialogové okno stažení, poskytuje tři možnosti pro stahování a ukládání souboru .zip.  My jsme vybrali **Uložit** tak, aby máme kopii balíčku ve složce stažené soubory v počítači.
 
-7.  Při stahování **SmartOffice4TFS_Online.zip** má dokončí, klikněte na tlačítko **otevřít složku**.
+6. Na stránce stažení máte možnost nainstalovat sady MODERNRequirements nebo nainstalovat jednotlivé moduly ze sady SMARTOffice4TFS.  Správné možnosti pro vás bude záviset na vašich předvoleb, kterou verzi sady TFS jste nainstalovali.  Nezapomeňte seznámit se s informace na stránce můžete vybrat správnou verzi sady produkty za vás.
+   > [!div class="mx-imgBorder"]
+   > ![Možnosti stahování ModernRequirement](_img/vs-modernreq/vs-modernreq-download-page-new.png)
 
-8.  Otevřete složku "SmartOffice4TFS_Online".
+7. V tomto příkladu jsme vybrali SMARTOffice4TFS.  Zobrazí se dialogové okno stažení, poskytuje tři možnosti pro stahování a ukládání souboru .zip.  My jsme vybrali **Uložit** tak, aby máme kopii balíčku ve složce stažené soubory v počítači.
 
-9.  Otevřete podsložku "SmartOffice4TFS_Online".
+8. Při stahování **SmartOffice4TFS_Online.zip** má dokončí, klikněte na tlačítko **otevřít složku**.
 
-10. Složka bude obsahovat čtyři instalační program aplikace, jednu pro:
+9. Otevřete složku "SmartOffice4TFS_Online".
+
+10. Otevřete podsložku "SmartOffice4TFS_Online".
+
+11. Složka bude obsahovat čtyři instalační program aplikace, jednu pro:
     - SmartExcel4TFS_Online
     - SmartOutlook4TFS_Online
     - SmartVisio4TFS_Online
     - SmartWord4TFS_Online
 
     > [!div class="mx-imgBorder"]
-    > ![Možnosti stahování ModernRequirement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
+    > ![Možnosti stahování ModernRequirement](_img/vs-modernreq/vs-modernreq-downloaded-cropped.png)
 
-11. Ve složce klikněte pravým tlačítkem myši a zvolte **Extrahovat vše**.  Zadejte umístění, kam chcete soubory, které chcete extrahovat a klikněte na tlačítko **extrahovat**.
+12. Ve složce klikněte pravým tlačítkem myši a zvolte **Extrahovat vše**.  Zadejte umístění, kam chcete soubory, které chcete extrahovat a klikněte na tlačítko **extrahovat**.
 
-12. K instalaci všech produktů, spusťte odpovídající aplikaci ze složky Stažené soubory.  V našem příkladu se nainstaluje SmartWord4TFS.  Když se otevře dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano** ke spuštění aplikace.
+13. K instalaci všech produktů, spusťte odpovídající aplikaci ze složky Stažené soubory.  V našem příkladu se nainstaluje SmartWord4TFS.  Když se otevře dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano** ke spuštění aplikace.
 
-13. Spustí se Průvodce instalací.  Klikněte na tlačítko **Další** pokračujte.
+14. Spustí se Průvodce instalací.  Klikněte na tlačítko **Další** pokračujte.
 
-14. Klikněte na tlačítko **souhlasím** přijměte podmínky a pak klikněte na přepínací tlačítko **Další**.
+15. Klikněte na tlačítko **souhlasím** přijměte podmínky a pak klikněte na přepínací tlačítko **Další**.
 
-15. Zvolte, kam chcete nainstalovat aplikaci a určit, zda má být k dispozici pro všechny uživatele nebo pouze sami.  Klikněte na tlačítko **Další**.
+16. Zvolte, kam chcete nainstalovat aplikaci a určit, zda má být k dispozici pro všechny uživatele nebo pouze sami.  Klikněte na tlačítko **Další**.
 
-16. Vyberte, zda má SmartWord k instalaci v režimu Autor nebo revidujícího.  Obraťte se na další informace o těchto režimech [MODERNRequirements podporu](http://www.modernrequirements.com/support-2/).  Klikněte na tlačítko **Další**.
+17. Vyberte, zda má SmartWord k instalaci v režimu Autor nebo revidujícího.  Obraťte se na další informace o těchto režimech [MODERNRequirements podporu](http://www.modernrequirements.com/support-2/).  Klikněte na tlačítko **Další**.
 
-17. Dále vyberte, jestli chcete nainstalovat šablony a klikněte na tlačítko **Další**.
+18. Dále vyberte, jestli chcete nainstalovat šablony a klikněte na tlačítko **Další**.
 
-18. Klikněte na tlačítko **Další** znovu a spusťte tak instalaci.
+19. Klikněte na tlačítko **Další** znovu a spusťte tak instalaci.
 
-19. Jakmile se zobrazí dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano**.
+20. Jakmile se zobrazí dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano**.
 
-20. Po dokončení instalace klikněte na tlačítko **Zavřít**.
+21. Po dokončení instalace klikněte na tlačítko **Zavřít**.
 
-21. Při příštím spuštění aplikace Microsoft Word, zobrazí se vám Instalační služby systému Microsoft Office přizpůsobení dialogové okno s dotazem, abychom potvrdili, že chcete nainstalovat doplněk SmartWord4TFS.  Klikněte na tlačítko **nainstalovat**.
+22. Při příštím spuštění aplikace Microsoft Word, zobrazí se vám Instalační služby systému Microsoft Office přizpůsobení dialogové okno s dotazem, abychom potvrdili, že chcete nainstalovat doplněk SmartWord4TFS.  Klikněte na tlačítko **nainstalovat**.
 
-22. Když aplikace Word se otevře, uvidíte, že byla přidána karta SmartWord4TFS. Klikněte na kartu pro zobrazení SmartWord4TFS sady nástrojů.
+23. Když aplikace Word se otevře, uvidíte, že byla přidána karta SmartWord4TFS. Klikněte na kartu pro zobrazení SmartWord4TFS sady nástrojů.
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |

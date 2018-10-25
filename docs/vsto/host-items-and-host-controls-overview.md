@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937496"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Přehled ovládacích prvků hostitele a hostitelské položky
   Hostitelských položek a hostitelských ovládacích prvků jsou typy, které poskytují programovací model pro řešení Office, které jsou vytvořeny pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Hostitelských položek a hostitelských ovládacích prvků Ujistěte se, interakci s objektové modely aplikace Microsoft Office Word a Microsoft Office Excel, které jsou založeny na modelu COM, více jako interakci s spravované objekty, jako jsou například ovládací prvky Windows Forms.  
@@ -54,21 +54,21 @@ ms.locfileid: "35675718"
 ## <a name="host-items"></a>Hostitelské položky  
  Hostitelské položky jsou typy, které jsou v horní části hierarchie objektů modelu v projektech pro systém Office. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Definuje následující položky hostitele řešení aplikace Word a Excel:  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- Každý z těchto typů rozšiřuje objekt, který existuje nativně v modelu objektů aplikace Word nebo Excel volána *nativní objekt Office*. Například <xref:Microsoft.Office.Tools.Word.Document> hostitelský objekt rozšiřuje <xref:Microsoft.Office.Interop.Word.Document> objekt, který je definován v primární spolupracující sestavení pro aplikaci Word.  
+  Každý z těchto typů rozšiřuje objekt, který existuje nativně v modelu objektů aplikace Word nebo Excel volána *nativní objekt Office*. Například <xref:Microsoft.Office.Tools.Word.Document> hostitelský objekt rozšiřuje <xref:Microsoft.Office.Interop.Word.Document> objekt, který je definován v primární spolupracující sestavení pro aplikaci Word.  
   
- Hostitelské položky obvykle mají stejné základní funkce jako odpovídajících objektech systému Office, ale jsou vylepšené o následující funkce:  
+  Hostitelské položky obvykle mají stejné základní funkce jako odpovídajících objektech systému Office, ale jsou vylepšené o následující funkce:  
   
--   Možnost hostování spravované ovládací prvky, včetně hostitelské ovládací prvky a ovládací prvky Windows Forms.  
+- Možnost hostování spravované ovládací prvky, včetně hostitelské ovládací prvky a ovládací prvky Windows Forms.  
   
--   Modely bohatší událostí. Některé události dokumentu, sešitu a listu v nativní modely objektů aplikace Word a Excel jsou vyvolány pouze na úrovni aplikace. Hostitelské položky poskytují tyto události na úrovni dokumentu, tak, aby bylo jednodušší zpracování událostí pro určitého dokumentu.  
+- Modely bohatší událostí. Některé události dokumentu, sešitu a listu v nativní modely objektů aplikace Word a Excel jsou vyvolány pouze na úrovni aplikace. Hostitelské položky poskytují tyto události na úrovni dokumentu, tak, aby bylo jednodušší zpracování událostí pro určitého dokumentu.  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>Vysvětlení hostitelské položky v projektech na úrovni dokumentu  
  V projektech na úrovni dokumentu hostitelské položky poskytují vstupní bod pro kód a mají návrhářů, které pomáhají při vývoji řešení.  
@@ -89,31 +89,31 @@ ms.locfileid: "35675718"
   
  Následující hostitelské ovládací prvky jsou k dispozici pro projekty aplikace Excel:  
   
--   [Graf – ovládací prvek](../vsto/chart-control.md)  
+- [Graf – ovládací prvek](../vsto/chart-control.md)  
   
--   [ListObject – ovládací prvek](../vsto/listobject-control.md)  
+- [ListObject – ovládací prvek](../vsto/listobject-control.md)  
   
--   [Namedrange – ovládací prvek](../vsto/namedrange-control.md)  
+- [Namedrange – ovládací prvek](../vsto/namedrange-control.md)  
   
--   [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)  
+- [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)  
   
- Následující hostitelské ovládací prvky jsou k dispozici pro projekty aplikace Word:  
+  Následující hostitelské ovládací prvky jsou k dispozici pro projekty aplikace Word:  
   
--   [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)  
+- [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)  
   
--   [Ovládací prvky obsahu](../vsto/content-controls.md)  
+- [Ovládací prvky obsahu](../vsto/content-controls.md)  
   
--   [XmlNode – ovládací prvek](../vsto/xmlnode-control.md)  
+- [XmlNode – ovládací prvek](../vsto/xmlnode-control.md)  
   
--   [XmlNodes – ovládací prvek](../vsto/xmlnodes-control.md)  
+- [XmlNodes – ovládací prvek](../vsto/xmlnodes-control.md)  
   
- Hostitelské ovládací prvky, které jsou přidány do dokumentů Office se chovat jako nativní objektů systému Office; hostitelské ovládací prvky však mají další funkce, včetně událostí a funkcí datové vazby. Například, když chcete zaznamenat události nativní <xref:Microsoft.Office.Interop.Excel.Range> objektu v aplikaci Excel, musíte nejprve zpracování události změny listu. Pak musíte určit, jestli ke změně došlo v rámci <xref:Microsoft.Office.Interop.Excel.Range>. Naproti tomu <xref:Microsoft.Office.Tools.Excel.NamedRange> má hostitelský ovládací prvek <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> událost, která dokáže zpracovat přímo.  
+  Hostitelské ovládací prvky, které jsou přidány do dokumentů Office se chovat jako nativní objektů systému Office; hostitelské ovládací prvky však mají další funkce, včetně událostí a funkcí datové vazby. Například, když chcete zaznamenat události nativní <xref:Microsoft.Office.Interop.Excel.Range> objektu v aplikaci Excel, musíte nejprve zpracování události změny listu. Pak musíte určit, jestli ke změně došlo v rámci <xref:Microsoft.Office.Interop.Excel.Range>. Naproti tomu <xref:Microsoft.Office.Tools.Excel.NamedRange> má hostitelský ovládací prvek <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> událost, která dokáže zpracovat přímo.  
   
- Vztah mezi položkou hostitelů a hostitelských ovládacích prvků je podobný vztahu mezi ovládací prvky formuláře Windows a Windows Forms. Stejně jako byste umístit ovládací prvek textové pole ve formuláři Windows Forms, umístíte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládání na <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt. Následující ilustrace znázorňuje vztah mezi hostitelských položek a hostitelských ovládacích prvků.  
+  Vztah mezi položkou hostitelů a hostitelských ovládacích prvků je podobný vztahu mezi ovládací prvky formuláře Windows a Windows Forms. Stejně jako byste umístit ovládací prvek textové pole ve formuláři Windows Forms, umístíte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládání na <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt. Následující ilustrace znázorňuje vztah mezi hostitelských položek a hostitelských ovládacích prvků.  
   
- ![Vztah mezi hostitelských položek a hostitelských ovládacích prvků](../vsto/media/hostitemscontrols.png "vztah mezi hostitelských položek a hostitelských ovládacích prvků")  
+  ![Vztah mezi hostitelských položek a hostitelských ovládacích prvků](../vsto/media/hostitemscontrols.png "vztah mezi hostitelských položek a hostitelských ovládacích prvků")  
   
- Můžete také použít ovládacích prvků Windows Forms v řešeních pro systém Office tak, že přidáte přímo na plochu dokumentu aplikace Word a Excel. Další informace najdete v tématu [ovládací prvky Windows Forms v přehledu dokumenty Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+  Můžete také použít ovládacích prvků Windows Forms v řešeních pro systém Office tak, že přidáte přímo na plochu dokumentu aplikace Word a Excel. Další informace najdete v tématu [ovládací prvky Windows Forms v přehledu dokumenty Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
 >  Přidání hostitelské ovládací prvky nebo ovládacích prvků Windows Forms do vnořeného dokumentu aplikace Word se nepodporuje.  
@@ -121,31 +121,31 @@ ms.locfileid: "35675718"
 ### <a name="add-host-controls-to-your-documents"></a>Přidat hostitelské ovládací prvky do dokumentů  
  V projektech na úrovni dokumentu můžete přidat hostitelské ovládací prvky do dokumentů aplikace Word nebo sešitů aplikace Excel v době návrhu následujícími způsoby:  
   
--   Přidat hostitelské ovládací prvky do dokumentu v době návrhu stejným způsobem by přidat nativní objekt.  
+- Přidat hostitelské ovládací prvky do dokumentu v době návrhu stejným způsobem by přidat nativní objekt.  
   
--   Přetáhněte ovládací prvky hostitele z **nástrojů** na dokumenty a sešity. Jsou k dispozici v aplikaci Excel hostitelské ovládací prvky **ovládací prvky Excelu** kartu v projektech aplikace Excel a hostitel Wordu ovládací prvky jsou k dispozici v **ovládací prvky aplikace Word** kartu v projektech aplikace Word.  
+- Přetáhněte ovládací prvky hostitele z **nástrojů** na dokumenty a sešity. Jsou k dispozici v aplikaci Excel hostitelské ovládací prvky **ovládací prvky Excelu** kartu v projektech aplikace Excel a hostitel Wordu ovládací prvky jsou k dispozici v **ovládací prvky aplikace Word** kartu v projektech aplikace Word.  
   
--   Přetáhněte ovládací prvky hostitele z **zdroje dat** okna do své dokumenty a sešity. To umožňuje přidat ovládací prvky, které jsou již vázán na data. Další informace najdete v tématu [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+- Přetáhněte ovládací prvky hostitele z **zdroje dat** okna do své dokumenty a sešity. To umožňuje přidat ovládací prvky, které jsou již vázán na data. Další informace najdete v tématu [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Na úrovni dokumentu a projekty doplňku VSTO můžete také přidat několik hostitelských ovládacích prvků do dokumentů za běhu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Na úrovni dokumentu a projekty doplňku VSTO můžete také přidat několik hostitelských ovládacích prvků do dokumentů za běhu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Další informace o tom, jak přidat hostitelské ovládací prvky k dokumentům naleznete v následujících tématech:  
+  Další informace o tom, jak přidat hostitelské ovládací prvky k dokumentům naleznete v následujících tématech:  
   
--   [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [Postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [Postupy: Přidání ovládacích prvků XMLMappedRange do listů](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků XMLMappedRange do listů](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [Postupy: Přidání ovládacích prvků XMLNode do dokumentů aplikace Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [Postupy: Přidání ovládacích prvků XMLNode do dokumentů aplikace Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [Postupy: Přidání ovládacích prvků XMLNodes do dokumentů aplikace Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [Postupy: Přidání ovládacích prvků XMLNodes do dokumentů aplikace Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>Název hostitelské ovládací prvky  
  Při přetažení hostitelského ovládacího prvku z **nástrojů** ke svému dokumentu, je ovládací prvek automaticky pojmenuje typ ovládacího prvku pomocí pořadové číslo na konci. Například název záložky **bookmark1**, **bookmark2**, a tak dále. Pokud používáte nativní funkce aplikace Word nebo Excel k přidání ovládacího prvku, můžete jí určitý název v době, kterou vytvoříte. Můžete také přejmenovat ovládacích prvků tak, že změníte hodnotu **název** vlastnost **vlastnosti** okna.  

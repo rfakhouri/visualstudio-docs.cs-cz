@@ -9,12 +9,12 @@ description: Další informace o Enterprise Mobility + Security výhodu součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c85643a13adec8913477d7201a224a6689d3d46f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930112"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -27,31 +27,32 @@ Roční cloudové služby Visual Studio Enterprise a standardních předplatnýc
 
 Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomocí existujícího účtu.
 
-1.  Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Vyhledejte dlaždici Enterprise Mobility + Security v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
-    > [!div class="mx-imgBorder"]
-    > ![EMS výhodu dlaždice](_img\vs-ems\vs-ems-tile.png)
+2. Vyhledejte dlaždici Enterprise Mobility + Security v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
+   > [!div class="mx-imgBorder"]
+   > ![EMS výhodu dlaždice](_img/vs-ems/vs-ems-tile.png)
 
-2.  V Enterprise Mobility + Security E5 stránky můžete přihlásit pomocí existujícího předplatného nebo vytvořte novou.  Vytvořte novou, dokončete požadované informace a klikněte na tlačítko **Další**.
-    > [!div class="mx-imgBorder"]
-    > ![EMS výhody vytvoření účtu](_img\vs-ems\vs-ems-create-account-cropped.png)
+3. V Enterprise Mobility + Security E5 stránky můžete přihlásit pomocí existujícího předplatného nebo vytvořte novou.  Vytvořte novou, dokončete požadované informace a klikněte na tlačítko **Další**.
+   > [!div class="mx-imgBorder"]
+   > ![EMS výhody vytvoření účtu](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-3. Vytvořte ID uživatele a heslo.  Klikněte na tlačítko **vytvořit Můj účet** pokračujte.
-    > [!div class="mx-imgBorder"]
-    > ![Výhoda EMS vytvořit ID uživatele](_img\vs-ems\vs-ems-userID-cropped.png)
+4. Vytvořte ID uživatele a heslo.  Klikněte na tlačítko **vytvořit Můj účet** pokračujte.
+   > [!div class="mx-imgBorder"]
+   > ![Výhoda EMS vytvořit ID uživatele](_img/vs-ems/vs-ems-userID-cropped.png)
 
-4.  Dále zadejte telefonní číslo chcete obdržet svůj ověřovací kód telefonicky nebo text.  Zadejte kód a klikněte na tlačítko **Další**.
-    > [!div class="mx-imgBorder"]
-    > ![Ověření výhodu EMS](_img\vs-ems\vs-ems-robot-cropped.png)
+5. Dále zadejte telefonní číslo chcete obdržet svůj ověřovací kód telefonicky nebo text.  Zadejte kód a klikněte na tlačítko **Další**.
+   > [!div class="mx-imgBorder"]
+   > ![Ověření výhodu EMS](_img/vs-ems/vs-ems-robot-cropped.png)
 
-5.  Na další stránce se zobrazí vaše přihlašovací stránku a ID uživatele.  Uložte pro pozdější použití.  Klikněte na tlačítko **jste připraveni přejít...**
-    > [!div class="mx-imgBorder"]
-    > ![Vytvořený účet výhodu EMS](_img\vs-ems\vs-ems-save-info-cropped.png)
+6. Na další stránce se zobrazí vaše přihlašovací stránku a ID uživatele.  Uložte pro pozdější použití.  Klikněte na tlačítko **jste připraveni přejít...**
+   > [!div class="mx-imgBorder"]
+   > ![Vytvořený účet výhodu EMS](_img/vs-ems/vs-ems-save-info-cropped.png)
 
-6.  EMS vyžaduje přístup k Microsoft [webu Azure Portal](https://azure.microsoft.com).  Postupujte podle tří kroků v rámci EMS úvodní stránka k aktivaci předplatného Azure přidejte uživatele a nakonfigurujte EMS.
+7. EMS vyžaduje přístup k Microsoft [webu Azure Portal](https://azure.microsoft.com).  Postupujte podle tří kroků v rámci EMS úvodní stránka k aktivaci předplatného Azure přidejte uživatele a nakonfigurujte EMS.
 
 ## <a name="eligibility"></a>Způsobilost
+
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano          |

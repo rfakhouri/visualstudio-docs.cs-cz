@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937730"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření sady Visual Studio spolu s metadaty sady Visual Studio používá ke klasifikaci a nainstalovat rozšíření. Tato metadata jsou obsaženy v manifestu VSIX a *[Content_Types] .xml* souboru. Balíčku VSIX může obsahovat také jeden nebo více *Extension.vsixlangpack* soubory k poskytování lokalizované textu instalace a může obsahovat další balíčky VSIX nainstalovat závislosti.  
@@ -55,7 +55,7 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
 ## <a name="installation-location"></a>Umístění instalace  
  Během instalace **rozšíření a aktualizace** hledá obsah balíčku VSIX v rámci *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*.  
   
- Ve výchozím nastavení, instalaci platí pouze pro aktuálního uživatele, protože *% LocalAppData %* je adresář specifické pro uživatele. Ale pokud nastavíte [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu v manifestu do `True`, nainstaluje rozšíření v rámci *... \\* VisualStudioInstallationFolder*\Common7\IDE\Extensions* a bude k dispozici pro všechny uživatele počítače.  
+ Ve výchozím nastavení, instalaci platí pouze pro aktuálního uživatele, protože *% LocalAppData %* je adresář specifické pro uživatele. Ale pokud nastavíte [AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b) elementu v manifestu do `True`, nainstaluje rozšíření v rámci <em>... \\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em> a bude k dispozici pro všechny uživatele počítače.  
   
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* souboru Určuje typy souborů v rozbalených *VSIX* souboru. Tento soubor používá při instalaci balíčku Visual Studio, ale není možné nainstalovat samotný soubor. Další informace o tomto souboru najdete v tématu [struktura souboru [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  

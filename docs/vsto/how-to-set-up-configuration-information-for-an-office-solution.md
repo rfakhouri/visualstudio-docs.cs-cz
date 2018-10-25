@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87f50856439158d6d931b519fb35e98970ef7d58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949458"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Postupy: nastavení informací o konfiguraci pro řešení Office
   Konfigurační soubory můžete použít ke konfiguraci nastavení, které jsou specifické pro vaše řešení pro Office. Můžete zadat nastavení, například zásady vazeb sestavení, objekty vzdálené komunikace, ladění a trasování nastavení.  
@@ -32,19 +32,19 @@ ms.locfileid: "35675688"
   
 ### <a name="to-add-a-configuration-file-to-your-office-project"></a>Chcete-li přidat konfigurační soubor do projektu sady Office  
   
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
   
-2.  V **kategorie** podokně klikněte na tlačítko **Obecné**.  
+2. V **kategorie** podokně klikněte na tlačítko **Obecné**.  
   
-3.  V **šablony** vyberte **konfiguračního souboru aplikace**.  
+3. V **šablony** vyberte **konfiguračního souboru aplikace**.  
   
-4.  V **název** zadejte stejný název jako sestavení plus rozšíření *.config*. Například konfigurační soubor pro sestavení projektu aplikace Excel názvem *ExcelWorkbook1.dll* by se pojmenoval *ExcelWorkbook1.dll.config*.  
+4. V **název** zadejte stejný název jako sestavení plus rozšíření *.config*. Například konfigurační soubor pro sestavení projektu aplikace Excel názvem *ExcelWorkbook1.dll* by se pojmenoval *ExcelWorkbook1.dll.config*.  
   
-5.  Klikněte na tlačítko **přidat**.  
+5. Klikněte na tlačítko **přidat**.  
   
-6.  Vytvoření konfiguračního souboru podle schéma konfiguračního souboru aplikace. Další informace najdete v tématu [schéma konfiguračního souboru pro rozhraní .NET Framework](/dotnet/framework/configure-apps/file-schema/index).  
+6. Vytvoření konfiguračního souboru podle schéma konfiguračního souboru aplikace. Další informace najdete v tématu [schéma konfiguračního souboru pro rozhraní .NET Framework](/dotnet/framework/configure-apps/file-schema/index).  
   
- Neexistují žádné zvláštní požadavky pro použití konfiguračních souborů s projekty sady Office.  
+   Neexistují žádné zvláštní požadavky pro použití konfiguračních souborů s projekty sady Office.  
   
 ## <a name="see-also"></a>Viz také:  
  [Schéma konfiguračního souboru pro rozhraní .NET Framework](/dotnet/framework/configure-apps/file-schema/index)   

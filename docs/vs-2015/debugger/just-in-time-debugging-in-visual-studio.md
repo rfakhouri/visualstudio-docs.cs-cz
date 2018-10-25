@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940577"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Ladění za běhu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Povolení nebo zakázání Just-In-Time ladění  
   
-1.  Otevřít Visual Studio. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
+1. Otevřít Visual Studio. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.  
   
-2.  V **možnosti** dialogové okno, vyberte **ladění** složky.  
+2. V **možnosti** dialogové okno, vyberte **ladění** složky.  
   
-3.  V **ladění** složky, vyberte **Just-In-Time** stránky.  
+3. V **ladění** složky, vyberte **Just-In-Time** stránky.  
   
-4.  V **povolit ladění za běhu tyto typy kódu** pole, zaškrtněte nebo zrušte zaškrtnutí odpovídajících typů programů: **spravované**, **nativní**, nebo **skript**.  
+4. V **povolit ladění za běhu tyto typy kódu** pole, zaškrtněte nebo zrušte zaškrtnutí odpovídajících typů programů: **spravované**, **nativní**, nebo **skript**.  
   
-     Zakázat Just-In-Time ladění, jakmile bylo povoleno, musí běžet s oprávněními správce. Povolení Just-In-Time ladění nastaví klíč registru, a chcete-li změnit tento klíč jsou požadována oprávnění správce.  
+    Zakázat Just-In-Time ladění, jakmile bylo povoleno, musí běžet s oprávněními správce. Povolení Just-In-Time ladění nastaví klíč registru, a chcete-li změnit tento klíč jsou požadována oprávnění správce.  
   
-5.  Klikněte na tlačítko **OK**.  
+5. Klikněte na tlačítko **OK**.  
   
- Ladění Just-In-Time může být stále povoleno i v případě, že ve vašem počítači je již nainstalované sady Visual Studio. Pokud není nainstalována sada Visual Studio, už se nedá vypnout Just-In-Time ladění ze sady Visual Studio **možnosti** dialogové okno. V takovém případě můžete zakázat Just-In-Time ladění pomocí úpravy registru Windows.  
+   Ladění Just-In-Time může být stále povoleno i v případě, že ve vašem počítači je již nainstalované sady Visual Studio. Pokud není nainstalována sada Visual Studio, už se nedá vypnout Just-In-Time ladění ze sady Visual Studio **možnosti** dialogové okno. V takovém případě můžete zakázat Just-In-Time ladění pomocí úpravy registru Windows.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Chcete-li zakázat Just-In-Time ladění pomocí úpravy registru  
   

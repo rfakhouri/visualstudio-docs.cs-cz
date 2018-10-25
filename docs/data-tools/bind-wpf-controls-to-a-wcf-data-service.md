@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949380"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 
@@ -52,13 +52,13 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
 Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:
 
--   Služby WCF Data Services. Další informace najdete v tématu [přehled](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- Služby WCF Data Services. Další informace najdete v tématu [přehled](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
--   Modely dat v [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
+- Modely dat v [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](/dotnet/framework/data/adonet/ef/overview).
+- Datových modelech entity a ADO.NET Entity Framework. Další informace najdete v tématu [přehled Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
--   Datové vazby WPF. Další informace najdete v tématu [přehled datové vazby](/dotnet/framework/wpf/data/data-binding-overview).
+- Datové vazby WPF. Další informace najdete v tématu [přehled datové vazby](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Vytvořte projekt služby
 
@@ -171,23 +171,23 @@ Chcete-li zobrazit data ze služby WCF Data Service, vytvořte novou aplikaci WP
 
 Přidání několika tlačítek do okna tak, že upravíte XAML ve WPF designer. Dále v tomto názorném postupu přidáte kód, který umožňuje uživatelům zobrazit a aktualizovat prodejní záznamů pomocí těchto tlačítek.
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel **souboru MainWindow.xaml**.
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel **souboru MainWindow.xaml**.
 
-     V okně se otevře v Návrháři WPF.
+    V okně se otevře v Návrháři WPF.
 
-2.  V [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] návrháře, přidejte následující kód mezi `<Grid>` značky:
+2. V [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] návrháře, přidejte následující kód mezi `<Grid>` značky:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Sestavte projekt.
+3. Sestavte projekt.
 
 ## <a name="create-the-data-bound-controls"></a>Vytvoření ovládacích prvků vázaných na data
 

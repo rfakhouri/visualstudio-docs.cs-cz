@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941217"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod pokličkou, část první
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Stručné shrnutí  
  Pojďme upravit **nový projekt** dialogové okno a vytvořte novou šablonu projektu uživatele.  
   
-1.  Přidejte MyProjectNode podsložky do složky 14.0\Common7\IDE\ProjectTemplates\CSharp \Program Files\Microsoft sady Visual Studio.  
+1. Přidejte MyProjectNode podsložky do složky 14.0\Common7\IDE\ProjectTemplates\CSharp \Program Files\Microsoft sady Visual Studio.  
   
-2.  Ve složce MyProjectNode pomocí libovolného textového editoru vytvořte soubor MyProject.vstdir.  
+2. Ve složce MyProjectNode pomocí libovolného textového editoru vytvořte soubor MyProject.vstdir.  
   
-3.  Přidejte tyto řádky do souboru .vstdir:  
+3. Přidejte tyto řádky do souboru .vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Uložte a zavřete soubor .vstdir.  
+4. Uložte a zavřete soubor .vstdir.  
   
-5.  Ve složce MyProjectNode pomocí libovolného textového editoru vytvořte soubor MyProject.vstemplate.  
+5. Ve složce MyProjectNode pomocí libovolného textového editoru vytvořte soubor MyProject.vstemplate.  
   
-6.  Do souboru .vstemplate přidejte tyto řádky:  
+6. Do souboru .vstemplate přidejte tyto řádky:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  The.vstemplate soubor uložte a zavřete editor.  
+7. The.vstemplate soubor uložte a zavřete editor.  
   
-8.  Soubor .vstemplate odešlete novou komprimovanou složku MyProjectNode\MyProject.zip.  
+8. Soubor .vstemplate odešlete novou komprimovanou složku MyProjectNode\MyProject.zip.  
   
 9. Příkazové okno Visual Studio zadejte:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Otevřít Visual Studio.  
+   Otevřít Visual Studio.  
   
-1.  Otevřít **nový projekt** dialogové okno pole a rozbalte **Visual C#** uzel projektu.  
+10. Otevřít **nový projekt** dialogové okno pole a rozbalte **Visual C#** uzel projektu.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode** se zobrazí jako podřízený uzel Visual C# jen v uzlu Windows.  
+    **MyProjectNode** se zobrazí jako podřízený uzel Visual C# jen v uzlu Windows.  
   
 ## <a name="see-also"></a>Viz také  
  [Nová generace projektů: Pod pokličkou, část druhá](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

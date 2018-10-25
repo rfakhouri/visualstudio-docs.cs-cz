@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942943"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 Aplikace ASP.NET Core vytvoří webový server v jeho hlavní metoda konfigurací a spuštění hostitele prostřednictvím instance [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Tato Tvůrce poskytuje metody, které umožňují hostitele nakonfigurovat. V aplikaci šablony jsou použité následující konfigurace:
 
- * `UseKestrel`: Určuje, že Kestrel server budou používat aplikaci
- * `UseContentRoot(Directory.GetCurrentDirectory())`: Používá kořenové složce webového projektu jako uživatel root obsahu aplikace při spuštění aplikace z této složky
- * `.UseIISIntegration()`: Určuje, že aplikace by měla fungovat se službou IIS. Použití služby IIS s ASP.NET Core `UseKestrel` a `UseIISIntegration` musí být zadána.
- * `.UseStartup<Startup>()`: Určuje třídu pro spuštění.
+* `UseKestrel`: Určuje, že Kestrel server budou používat aplikaci
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Používá kořenové složce webového projektu jako uživatel root obsahu aplikace při spuštění aplikace z této složky
+* `.UseIISIntegration()`: Určuje, že aplikace by měla fungovat se službou IIS. Použití služby IIS s ASP.NET Core `UseKestrel` a `UseIISIntegration` musí být zadána.
+* `.UseStartup<Startup>()`: Určuje třídu pro spuštění.
 
- Metody sestavení a spuštění sestavení IWebHost, který bude hostitelem aplikace a spusťte ji naslouchá příchozím požadavkům HTTP.
+  Metody sestavení a spuštění sestavení IWebHost, který bude hostitelem aplikace a spusťte ji naslouchá příchozím požadavkům HTTP.
 
 ### <a name="startupcs"></a>Startup.cs
 

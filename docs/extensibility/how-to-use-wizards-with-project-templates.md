@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d77cd34345055f6bcb4b8ea19631aa9a3a6780e3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 76bcd13fcee2f8b0bda775cc3ae241d7a363658e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928441"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: použití průvodců se šablonami projektů
 Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní, pokud je implementována, budete moci spouštět vlastní kód, když uživatel vytvoří projekt ze šablony.  
@@ -34,194 +34,194 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>Vytvoření projektu šablony projektu pomocí projektu VSIX  
  Můžete začít vytvářet vlastní šablonu pomocí projektu šablony projektu., která je součástí sady Visual Studio SDK. V tomto postupu použijeme šablonu projektu projektu C#, ale je také projektu šablony projektů Visual Basic. Potom přidáte projekt VSIX do řešení, které obsahuje projekt šablony projektu.  
   
-1.  Vytvoření projektu jazyka C# projekt šablony (v sadě Visual Studio **souboru** > **nový** > **projektu** > **Visual C#**   >  **Rozšiřitelnost** > **šablonu projektu C#**). Pojmenujte ji **MyProjectTemplate**.  
+1. Vytvoření projektu jazyka C# projekt šablony (v sadě Visual Studio **souboru** > **nový** > **projektu** > **Visual C#**   >  **Rozšiřitelnost** > **šablonu projektu C#**). Pojmenujte ji **MyProjectTemplate**.  
   
-    > [!NOTE]
-    >  Můžete být vyzváni k instalaci sady Visual Studio SDK. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Můžete být vyzváni k instalaci sady Visual Studio SDK. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Přidat nový projekt VSIX (**souboru** > **nový** > ** Projekt > **Visual C#** > ** rozšiřitelnosti > **projekt VSIX**) ve stejném řešení jako šablona projektu pro projekt (v **Průzkumníka řešení**, vyberte uzel řešení, klikněte pravým tlačítkem a vyberte **přidat** > **nový projekt** ). Pojmenujte ji **MyProjectWizard.**  
+2. Přidat nový projekt VSIX (**souboru** > **nový** > <strong>Projekt > ** vizuální C#</strong>   >  <strong>rozšiřitelnosti > ** Projekt VSIX</strong>) ve stejném řešení jako šablona projektu pro projekt (v **Průzkumníka řešení**, vyberte uzel řešení, klikněte pravým tlačítkem a vyberte **přidat**  >  **Nový projekt**). Pojmenujte ji **MyProjectWizard.**  
   
-3.  Nastavte projekt VSIX jako projekt po spuštění. V **Průzkumníka řešení**, vyberte uzel projektu VSIX, klikněte pravým tlačítkem a vyberte **nastavit jako spouštěný projekt**.  
+3. Nastavte projekt VSIX jako projekt po spuštění. V **Průzkumníka řešení**, vyberte uzel projektu VSIX, klikněte pravým tlačítkem a vyberte **nastavit jako spouštěný projekt**.  
   
-4.  Přidáte šablonu projektu jako prostředek projektu VSIX. V **Průzkumníka řešení**, pod uzlem projektu VSIX, vyhledejte *source.extension.vsixmanifest* souboru. Dvojím kliknutím ho otevřete v editoru manifestu.  
+4. Přidáte šablonu projektu jako prostředek projektu VSIX. V **Průzkumníka řešení**, pod uzlem projektu VSIX, vyhledejte *source.extension.vsixmanifest* souboru. Dvojím kliknutím ho otevřete v editoru manifestu.  
   
-5.  V editoru manifestu vyberte **prostředky** karty na levé straně okna.  
+5. V editoru manifestu vyberte **prostředky** karty na levé straně okna.  
   
-6.  V **prostředky** kartu, vyberte možnost **nový**. V **přidat nové aktivum** okno pro pole typu, vyberte **Microsoft.VisualStudio.ProjectTemplate**. V **zdroj** pole, vyberte **projekt v aktuálním řešení**. V **projektu** pole, vyberte **MyProjectTemplate**. Pak klikněte na tlačítko **OK**.  
+6. V **prostředky** kartu, vyberte možnost **nový**. V **přidat nové aktivum** okno pro pole typu, vyberte **Microsoft.VisualStudio.ProjectTemplate**. V **zdroj** pole, vyberte **projekt v aktuálním řešení**. V **projektu** pole, vyberte **MyProjectTemplate**. Pak klikněte na tlačítko **OK**.  
   
-7.  Sestavte řešení a spusťte ladění. Zobrazí se druhé instanci aplikace Visual Studio. (To může trvat několik minut.)  
+7. Sestavte řešení a spusťte ladění. Zobrazí se druhé instanci aplikace Visual Studio. (To může trvat několik minut.)  
   
-8.  Ve druhé instanci aplikace Visual Studio pokuste se vytvořit nový projekt s novou šablonu. (**Souboru** > **nové** > **Projekt > Visual C#** > **MyProject šablony**). Nový projekt by se měla objevit s třídou s názvem **Class1**. Nyní jste vytvořili vlastní šablonu projektu! Nyní Zastavte ladění.  
+8. Ve druhé instanci aplikace Visual Studio pokuste se vytvořit nový projekt s novou šablonu. (**Souboru** > **nové** > **Projekt > Visual C#** > **MyProject šablony**). Nový projekt by se měla objevit s třídou s názvem **Class1**. Nyní jste vytvořili vlastní šablonu projektu! Nyní Zastavte ladění.  
   
 ## <a name="create-a-custom-template-wizard"></a>Vytvoření vlastního průvodce šablony  
  Toto téma ukazuje, jak vytvořit vlastního průvodce, který otevře formulář Windows před vytvořením projektu. Formulář umožňuje uživatelům přidávat vlastní hodnotu parametru, který je přidán ke zdrojovému kódu během vytváření projektu.  
   
-1.  Nastavení projektu VSIX, aby mělo vytvořit sestavení.  
+1. Nastavení projektu VSIX, aby mělo vytvořit sestavení.  
   
-2.  V **Průzkumníka řešení**, vyberte uzel projektu VSIX. Níže v Průzkumníku řešení, měli byste vidět **vlastnosti** okna. Pokud ho nevidíte, vyberte **zobrazení** > **okno vlastností**, nebo stiskněte klávesu **F4**. V **vlastnosti** okna, vyberte následující pole do `true`:  
+2. V **Průzkumníka řešení**, vyberte uzel projektu VSIX. Níže v Průzkumníku řešení, měli byste vidět **vlastnosti** okna. Pokud ho nevidíte, vyberte **zobrazení** > **okno vlastností**, nebo stiskněte klávesu **F4**. V **vlastnosti** okna, vyberte následující pole do `true`:  
   
-    -   **IncludeAssemblyInVSIXContainer**  
+   -   **IncludeAssemblyInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInVSIXContainer**  
+   -   **IncludeDebugSymbolsInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-3.  Přidáte sestavení jako prostředek do projektu VSIX. Otevřít *source.extension.vsixmanifest* a vyberte možnost **prostředky** kartu. V **přidat nové aktivum** okně pro **typ** vyberte **Microsoft.VisualStudio.Assembly**, pro **zdroj** vyberte **A projekt v aktuálním řešení**a pro **projektu** vyberte **MyProjectWizard**.  
+3. Přidáte sestavení jako prostředek do projektu VSIX. Otevřít *source.extension.vsixmanifest* a vyberte možnost **prostředky** kartu. V **přidat nové aktivum** okně pro **typ** vyberte **Microsoft.VisualStudio.Assembly**, pro **zdroj** vyberte **A projekt v aktuálním řešení**a pro **projektu** vyberte **MyProjectWizard**.  
   
-4.  Přidejte následující odkazy do projektu VSIX. (V **Průzkumníka řešení**, v části VSIX projekt vyberte uzel **odkazy**, klikněte pravým tlačítkem a vyberte **přidat odkaz**.) V **přidat odkaz** dialogového okna v **Framework** kartu, najdete **System.Windows formuláře** sestavení a vyberte ji. Teď vyberte **rozšíření** najít kartu **EnvDTE** sestavení a vyberte ji. Také najít **Microsoft.VisualStudio.TemplateWizardInterface** sestavení a vyberte ji. Klikněte na tlačítko **OK**.  
+4. Přidejte následující odkazy do projektu VSIX. (V **Průzkumníka řešení**, v části VSIX projekt vyberte uzel **odkazy**, klikněte pravým tlačítkem a vyberte **přidat odkaz**.) V **přidat odkaz** dialogového okna v **Framework** kartu, najdete **System.Windows formuláře** sestavení a vyberte ji. Teď vyberte **rozšíření** najít kartu **EnvDTE** sestavení a vyberte ji. Také najít **Microsoft.VisualStudio.TemplateWizardInterface** sestavení a vyberte ji. Klikněte na tlačítko **OK**.  
   
-5.  Přidejte třídu pro implementaci průvodce do projektu VSIX. (V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu VSIX a vyberte **přidat**, pak **nová položka**, pak **třídy**.) Název třídy **WizardImplementation**.  
+5. Přidejte třídu pro implementaci průvodce do projektu VSIX. (V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu VSIX a vyberte **přidat**, pak **nová položka**, pak **třídy**.) Název třídy **WizardImplementation**.  
   
-6.  Nahraďte kód v *WizardImplementationClass.cs* souboru následujícím kódem:  
+6. Nahraďte kód v *WizardImplementationClass.cs* souboru následujícím kódem:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.TemplateWizard;  
-    using System.Windows.Forms;  
-    using EnvDTE;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.TemplateWizard;  
+   using System.Windows.Forms;  
+   using EnvDTE;  
   
-    namespace MyProjectWizard  
-    {  
-        public class WizardImplementation:IWizard  
-        {  
-            private UserInputForm inputForm;  
-            private string customMessage;  
+   namespace MyProjectWizard  
+   {  
+       public class WizardImplementation:IWizard  
+       {  
+           private UserInputForm inputForm;  
+           private string customMessage;  
   
-            // This method is called before opening any item that   
-            // has the OpenInEditor attribute.  
-            public void BeforeOpeningFile(ProjectItem projectItem)  
-            {  
-            }  
+           // This method is called before opening any item that   
+           // has the OpenInEditor attribute.  
+           public void BeforeOpeningFile(ProjectItem projectItem)  
+           {  
+           }  
   
-            public void ProjectFinishedGenerating(Project project)  
-            {  
-            }  
+           public void ProjectFinishedGenerating(Project project)  
+           {  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public void ProjectItemFinishedGenerating(ProjectItem   
-                projectItem)  
-            {  
-            }  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public void ProjectItemFinishedGenerating(ProjectItem   
+               projectItem)  
+           {  
+           }  
   
-            // This method is called after the project is created.  
-            public void RunFinished()  
-            {  
-            }  
+           // This method is called after the project is created.  
+           public void RunFinished()  
+           {  
+           }  
   
-            public void RunStarted(object automationObject,  
-                Dictionary<string, string> replacementsDictionary,  
-                WizardRunKind runKind, object[] customParams)  
-            {  
-                try  
-                {  
-                    // Display a form to the user. The form collects   
-                    // input for the custom message.  
-                    inputForm = new UserInputForm();  
-                    inputForm.ShowDialog();  
+           public void RunStarted(object automationObject,  
+               Dictionary<string, string> replacementsDictionary,  
+               WizardRunKind runKind, object[] customParams)  
+           {  
+               try  
+               {  
+                   // Display a form to the user. The form collects   
+                   // input for the custom message.  
+                   inputForm = new UserInputForm();  
+                   inputForm.ShowDialog();  
   
-                    customMessage = UserInputForm.CustomMessage;  
+                   customMessage = UserInputForm.CustomMessage;  
   
-                    // Add custom parameters.  
-                    replacementsDictionary.Add("$custommessage$",   
-                        customMessage);  
-                }  
-                catch (Exception ex)  
-                {  
-                    MessageBox.Show(ex.ToString());  
-                }  
-            }  
+                   // Add custom parameters.  
+                   replacementsDictionary.Add("$custommessage$",   
+                       customMessage);  
+               }  
+               catch (Exception ex)  
+               {  
+                   MessageBox.Show(ex.ToString());  
+               }  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public bool ShouldAddProjectItem(string filePath)  
-            {  
-                return true;  
-            }          
-        }  
-    }  
-    ```  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public bool ShouldAddProjectItem(string filePath)  
+           {  
+               return true;  
+           }          
+       }  
+   }  
+   ```  
   
-     **UserInputForm** odkazované v tomto kódu se provede později.  
+    **UserInputForm** odkazované v tomto kódu se provede později.  
   
-     `WizardImplementation` Třída obsahuje implementace metody pro každého člena <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. V tomto příkladu, pouze <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metoda provede úlohu. Všechny ostatní metody neprovádějí žádnou akci nebo vrátí `true`.  
+    `WizardImplementation` Třída obsahuje implementace metody pro každého člena <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. V tomto příkladu, pouze <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metoda provede úlohu. Všechny ostatní metody neprovádějí žádnou akci nebo vrátí `true`.  
   
-     <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Metoda přijímá čtyři parametry:  
+    <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Metoda přijímá čtyři parametry:  
   
-    -   <xref:System.Object> Parametr, který může být převeden do kořenového adresáře <xref:EnvDTE._DTE> objektu, která umožňuje přizpůsobit projekt.  
+   - <xref:System.Object> Parametr, který může být převeden do kořenového adresáře <xref:EnvDTE._DTE> objektu, která umožňuje přizpůsobit projekt.  
   
-    -   A <xref:System.Collections.Generic.Dictionary%602> parametr, který obsahuje kolekci všech předem definovaných parametrů v šabloně. Další informace o parametrech šablon naleznete v tématu [parametry šablony](../ide/template-parameters.md).  
+   - A <xref:System.Collections.Generic.Dictionary%602> parametr, který obsahuje kolekci všech předem definovaných parametrů v šabloně. Další informace o parametrech šablon naleznete v tématu [parametry šablony](../ide/template-parameters.md).  
   
-    -   A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parametr, který obsahuje informace o jaký druh šablony je používán.  
+   - A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parametr, který obsahuje informace o jaký druh šablony je používán.  
   
-    -   <xref:System.Object> Pole, které obsahuje sadu parametrů předaných průvodci pomocí sady Visual Studio.  
+   - <xref:System.Object> Pole, které obsahuje sadu parametrů předaných průvodci pomocí sady Visual Studio.  
   
      V tomto příkladu přidá hodnotu parametru ze vstupního formuláře uživatele do <xref:System.Collections.Generic.Dictionary%602> parametru. Každá instance `$custommessage$` parametr v projektu bude nahrazena textem zadaným uživatelem. Do projektu musíte přidat následující sestavení: **systému** a **System.Drawing**.
   
-7.  Teď vytvořte **UserInputForm**. V *WizardImplementation.cs* přidejte následující kód na konci `WizardImplementation` třídy.  
+7. Teď vytvořte **UserInputForm**. V *WizardImplementation.cs* přidejte následující kód na konci `WizardImplementation` třídy.  
   
-    ```csharp  
-    public partial class UserInputForm : Form  
-        {  
-            private static string customMessage;  
-            private TextBox textBox1;  
-            private Button button1;  
+   ```csharp  
+   public partial class UserInputForm : Form  
+       {  
+           private static string customMessage;  
+           private TextBox textBox1;  
+           private Button button1;  
   
-            public UserInputForm()  
-            {  
-                this.Size = new System.Drawing.Size(155, 265);   
+           public UserInputForm()  
+           {  
+               this.Size = new System.Drawing.Size(155, 265);   
   
-                button1 = new Button();  
-                button1.Location = new System.Drawing.Point(90, 25);  
-                button1.Size = new System.Drawing.Size(50, 25);  
-                button1.Click += button1_Click;  
-                this.Controls.Add(button1);  
+               button1 = new Button();  
+               button1.Location = new System.Drawing.Point(90, 25);  
+               button1.Size = new System.Drawing.Size(50, 25);  
+               button1.Click += button1_Click;  
+               this.Controls.Add(button1);  
   
-                textBox1 = new TextBox();  
-                textBox1.Location = new System.Drawing.Point(10, 25);  
-                textBox1.Size = new System.Drawing.Size(70, 20);  
-                this.Controls.Add(textBox1);  
-            }  
-            public static string CustomMessage  
-            {  
-                get  
-                {  
-                    return customMessage;  
-                }  
-                set  
-                {  
-                    customMessage = value;  
-                }     
-            }  
-            private void button1_Click(object sender, EventArgs e)  
-            {  
-                customMessage = textBox1.Text;  
-                this.Close();
-            }  
-        }  
-    ```  
+               textBox1 = new TextBox();  
+               textBox1.Location = new System.Drawing.Point(10, 25);  
+               textBox1.Size = new System.Drawing.Size(70, 20);  
+               this.Controls.Add(textBox1);  
+           }  
+           public static string CustomMessage  
+           {  
+               get  
+               {  
+                   return customMessage;  
+               }  
+               set  
+               {  
+                   customMessage = value;  
+               }     
+           }  
+           private void button1_Click(object sender, EventArgs e)  
+           {  
+               customMessage = textBox1.Text;  
+               this.Close();
+           }  
+       }  
+   ```  
   
-     Formulář vstupu uživatele poskytuje jednoduchý formulář pro zadávání vlastního parametru. Formulář obsahuje textové pole s názvem `textBox1` a tlačítko s názvem `button1`. Po kliknutí na tlačítko je text z textového pole uložen v `customMessage` parametru.  
+    Formulář vstupu uživatele poskytuje jednoduchý formulář pro zadávání vlastního parametru. Formulář obsahuje textové pole s názvem `textBox1` a tlačítko s názvem `button1`. Po kliknutí na tlačítko je text z textového pole uložen v `customMessage` parametru.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>Připojení Průvodce pro vlastní šablony  
  Aby vaše vlastní šablonu projektu použít vlastního průvodce musíte podepsat sestavení průvodce a přidat některé řádky do vaší vlastní šablonu projektu umožňuje vědět, kde najít implementaci Průvodce při vytváření nového projektu.  
   
-1.  Podepište sestavení. V **Průzkumníka řešení**, vyberte projekt VSIX, klikněte pravým tlačítkem a vyberte **vlastnosti projektu**.  
+1. Podepište sestavení. V **Průzkumníka řešení**, vyberte projekt VSIX, klikněte pravým tlačítkem a vyberte **vlastnosti projektu**.  
   
-2.  V **vlastnosti projektu** okna, vyberte **podepisování** kartu v **podepisování** kartě **podepsat sestavení**. V **vyberte soubor klíče se silným názvem** pole, vyberte  **\<nový >**. V **vytvořit klíč se silným názvem** okno v **název souboru klíče** zadejte **klíč.snk**. Zrušte zaškrtnutí políčka **chránit můj soubor klíče s heslem** pole.  
+2. V **vlastnosti projektu** okna, vyberte **podepisování** kartu v **podepisování** kartě **podepsat sestavení**. V **vyberte soubor klíče se silným názvem** pole, vyberte  **\<nový >**. V **vytvořit klíč se silným názvem** okno v **název souboru klíče** zadejte **klíč.snk**. Zrušte zaškrtnutí políčka **chránit můj soubor klíče s heslem** pole.  
   
-3.  V **Průzkumníka řešení**, vyberte projekt VSIX a najít **vlastnosti** okna.  
+3. V **Průzkumníka řešení**, vyberte projekt VSIX a najít **vlastnosti** okna.  
   
-4.  Nastavte **kopírovat sestavení výstupu do výstupního adresáře** pole **true**. To umožňuje sestavení kopírovat do výstupního adresáře, pokud je znovu sestavit řešení. Stále součástí `.vsix` souboru. Potřebujete zobrazit sestavení, aby bylo možné zjistit jeho podpisový klíč.  
+4. Nastavte **kopírovat sestavení výstupu do výstupního adresáře** pole **true**. To umožňuje sestavení kopírovat do výstupního adresáře, pokud je znovu sestavit řešení. Stále součástí `.vsix` souboru. Potřebujete zobrazit sestavení, aby bylo možné zjistit jeho podpisový klíč.  
   
-5.  Znovu sestavte řešení.  
+5. Znovu sestavte řešení.  
   
-6.  Můžete teď najít klíč.snk soubor v adresáři projektu MyProjectWizard (*\<umístění na disku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopírovat *klíč.snk* souboru.  
+6. Můžete teď najít klíč.snk soubor v adresáři projektu MyProjectWizard (*\<umístění na disku > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopírovat *klíč.snk* souboru.  
   
-7.  Přejděte do výstupního adresáře a najít sestavení (*\<umístění na disku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Vložit *klíč.snk* souboru zde. (To není nezbytně nutné, ale to vám usnadní následující kroky.)  
+7. Přejděte do výstupního adresáře a najít sestavení (*\<umístění na disku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Vložit *klíč.snk* souboru zde. (To není nezbytně nutné, ale to vám usnadní následující kroky.)  
   
-8.  Otevřete okno příkazového řádku a přejděte do adresáře, ve kterém byla vytvořena sestavení.  
+8. Otevřete okno příkazového řádku a přejděte do adresáře, ve kterém byla vytvořena sestavení.  
   
 9. Najít *sn.exe* nástroj pro podepisování. Například v operačním systému Windows 10 64-bit, typické cesta by být následující:  
   
@@ -261,17 +261,17 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
 ## <a name="add-the-custom-parameter-to-the-template"></a>Přidat vlastní parametr šablony  
  V tomto příkladu projekt použitý jako šablona zobrazí zprávu určenou ve formuláři vstupu uživatele vlastního průvodce.  
   
-1.  V **Průzkumníka řešení**, přejděte **MyProjectTemplate** projektu a otevřete *Class1.cs*.  
+1. V **Průzkumníka řešení**, přejděte **MyProjectTemplate** projektu a otevřete *Class1.cs*.  
   
-2.  V `Main` metoda aplikace, přidejte následující řádek kódu.  
+2. V `Main` metoda aplikace, přidejte následující řádek kódu.  
   
-    ```csharp  
-    Console.WriteLine("$custommessage$");  
-    ```  
+   ```csharp  
+   Console.WriteLine("$custommessage$");  
+   ```  
   
-     Parametr `$custommessage$` je nahrazena textem zadaným ve formuláři vstupu uživatele při vytvoření projektu ze šablony.  
+    Parametr `$custommessage$` je nahrazena textem zadaným ve formuláři vstupu uživatele při vytvoření projektu ze šablony.  
   
- Tady je soubor s úplným kódem dříve, než byl exportován do šablony.  
+   Tady je soubor s úplným kódem dříve, než byl exportován do šablony.  
   
 ```csharp  
 using System;  

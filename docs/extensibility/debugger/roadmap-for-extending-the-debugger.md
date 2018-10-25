@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f9272728f79e402800c56f6e8c9ce0fc008e3ad
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 7527d142b27e5b49bcf133429dc232614bad04a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942670"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Plán pro rozšíření ladicího programu
 Tato dokumentace obsahuje průvodce a referenční informace k rozšíření [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] ladicí program se [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -28,29 +28,29 @@ Tato dokumentace obsahuje průvodce a referenční informace k rozšíření [!I
   
  Kompilátor a její výstup zjistit, co je potřeba k nastavení ladění produktu. Pokud váš kompilátor:  
   
--   Cílí na nativní operační systém Windows a zapíše *. Soubor PDB* soubor, můžete ladit programy s modul ladění nativního kódu (DE), která je součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Není nutné implementovat DE nebo výraz Chyba při vyhodnocování. Chyba při vyhodnocování výrazu je určené pro syntaxi programovací jazyk C++.  
+- Cílí na nativní operační systém Windows a zapíše *. Soubor PDB* soubor, můžete ladit programy s modul ladění nativního kódu (DE), která je součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Není nutné implementovat DE nebo výraz Chyba při vyhodnocování. Chyba při vyhodnocování výrazu je určené pro syntaxi programovací jazyk C++.  
   
--   Vytvoří Microsoft intermediate language (MSIL) výstup, můžete ladit programy s modul ladění spravovaného kódu DE, která je také součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Proto potřebujete pouze implementace vyhodnocovače výrazů. Vyhodnocovací filtr výrazů ukázka poskytuje za vás. Další informace naleznete v následujících tématech:  
+- Vytvoří Microsoft intermediate language (MSIL) výstup, můžete ladit programy s modul ladění spravovaného kódu DE, která je také součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Proto potřebujete pouze implementace vyhodnocovače výrazů. Vyhodnocovací filtr výrazů ukázka poskytuje za vás. Další informace naleznete v následujících tématech:  
   
-     [Vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
+   [Vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [Vyhodnocování výrazů](../../extensibility/debugger/evaluating-expressions.md)  
+   [Vyhodnocování výrazů](../../extensibility/debugger/evaluating-expressions.md)  
   
-     [Kontext vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-context.md)  
+   [Kontext vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-context.md)  
   
-     [Vyhodnocení výrazu v režimu pozastavení](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+   [Vyhodnocení výrazu v režimu pozastavení](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
-     [Zápis běžné vyhodnocovač výrazů modulu runtime jazyka](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+   [Zápis běžné vyhodnocovač výrazů modulu runtime jazyka](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   Cíle a nechráněný operačního systému nebo jiné běhové prostředí, budete muset napsat vlastní DE. Kurz, který vytvoří jednoduchý DE pomocí knihovny ATL modelu COM je k dispozici. Další informace naleznete v následujících tématech:  
+- Cíle a nechráněný operačního systému nebo jiné běhové prostředí, budete muset napsat vlastní DE. Kurz, který vytvoří jednoduchý DE pomocí knihovny ATL modelu COM je k dispozici. Další informace naleznete v následujících tématech:  
   
-     [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+   [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Kurz: Vytvoření ladicího stroje pomocí knihovny ATL modelu COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+   [Kurz: Vytvoření ladicího stroje pomocí knihovny ATL modelu COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
-     [Implementace dodavatele portu](../../extensibility/debugger/implementing-a-port-supplier.md)  
+   [Implementace dodavatele portu](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
-     [Ukázky](../../extensibility/debugger/visual-studio-debugging-samples.md)  
+   [Ukázky](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   
 ## <a name="see-also"></a>Viz také:  
  [Začínáme](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

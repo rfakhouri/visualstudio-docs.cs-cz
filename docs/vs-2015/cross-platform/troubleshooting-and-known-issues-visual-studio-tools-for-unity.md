@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250612"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928682"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ V této části vám najít řešení běžných potíží s nástroji Visual St
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Pro sestavu, která sadě Visual Studio se zablokuje při ladění se sadou Visual Studio Tools for Unity  
   
-1.  Otevřete novou instanci sady Visual Studio.  
+1. Otevřete novou instanci sady Visual Studio.  
   
-2.  Otevřete dialogu připojit k procesu. V nové instanci sady Visual Studio, v hlavní nabídce zvolte **ladění**, **připojit k procesu**.  
+2. Otevřete dialogu připojit k procesu. V nové instanci sady Visual Studio, v hlavní nabídce zvolte **ladění**, **připojit k procesu**.  
   
-3.  Připojte ladicí modul k zmrazené instanci sady Visual Studio. V **připojit k procesu** dialogového okna, vyberte zmrazené instanci sady Visual Studio z **procesy k dispozici** tabulku a pak zvolte **připojit** tlačítko.  
+3. Připojte ladicí modul k zmrazené instanci sady Visual Studio. V **připojit k procesu** dialogového okna, vyberte zmrazené instanci sady Visual Studio z **procesy k dispozici** tabulku a pak zvolte **připojit** tlačítko.  
   
-4.  Pozastavte ladicí program. V nové instanci sady Visual Studio, v hlavní nabídce zvolte **ladění**, **příkaz Pozastavit vše** nebo stačí stisknout kombinaci kláves **Ctrl + Alt + Break**.  
+4. Pozastavte ladicí program. V nové instanci sady Visual Studio, v hlavní nabídce zvolte **ladění**, **příkaz Pozastavit vše** nebo stačí stisknout kombinaci kláves **Ctrl + Alt + Break**.  
   
-5.  Vytvoření výpisu podprocesu. V příkazovém řádku zadejte následující příkaz a stiskněte klávesu **Enter**.  
+5. Vytvoření výpisu podprocesu. V příkazovém řádku zadejte následující příkaz a stiskněte klávesu **Enter**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Možná budete muset provést **příkaz** okno viditelné první. V sadě Visual Studio, zvolte v hlavní nabídce **zobrazení**, **ostatní Windows**, **příkazové okno**.  
+    Možná budete muset provést **příkaz** okno viditelné první. V sadě Visual Studio, zvolte v hlavní nabídce **zobrazení**, **ostatní Windows**, **příkazové okno**.  
   
-6.  Nakonec odešlete výpisu vlákna do [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), spolu s popis co jste dělali při začal být zmrazené sady Visual Studio.
+6. Nakonec odešlete výpisu vlákna do [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), spolu s popis co jste dělali při začal být zmrazené sady Visual Studio.
 

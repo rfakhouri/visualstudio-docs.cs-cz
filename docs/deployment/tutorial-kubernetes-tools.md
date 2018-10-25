@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942930"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Začínáme s Kubernetes nástroje sady Visual Studio
 
@@ -90,21 +90,21 @@ Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nains
 
    ![Snímek obrazovky publikovat položku nabídky](media/k8s-tools-publish-project.png)
 
-1. V **publikovat** obrazovce **Container Registry** jako publikovat cílit a postupujte podle pokynů k výběru vašeho registru kontejneru. Pokud ještě nemáte registr kontejnerů, zvolte **vytvořit nový registr kontejneru Azure** si ji vytvořit v sadě Visual Studio. Další informace najdete v tématu [kterého chcete kontejner publikovat do služby Azure Container Registry](#publish-your-container-to-azure-container-registry).
+2. V **publikovat** obrazovce **Container Registry** jako publikovat cílit a postupujte podle pokynů k výběru vašeho registru kontejneru. Pokud ještě nemáte registr kontejnerů, zvolte **vytvořit nový registr kontejneru Azure** si ji vytvořit v sadě Visual Studio. Další informace najdete v tématu [kterého chcete kontejner publikovat do služby Azure Container Registry](#publish-your-container-to-azure-container-registry).
 
    ![Snímek obrazovky výběru publikovat cílová obrazovka](media/k8s-tools-publish-to-acr.png)
 
-1. Zpět v Průzkumníku řešení klikněte pravým tlačítkem na váš *řešení* a klikněte na tlačítko **publikování ve službě Azure AKS**.
+3. Zpět v Průzkumníku řešení klikněte pravým tlačítkem na váš *řešení* a klikněte na tlačítko **publikování ve službě Azure AKS**.
 
    ![Snímek obrazovky publikovat položku nabídky Azure AKS](media/k8s-tools-publish-solution.png)
 
-1. Zvolte předplatné a AKS cluster, spolu s ACR Publikovat profil, který jste právě vytvořili. Pak klikněte na tlačítko **OK**.
+4. Zvolte předplatné a AKS cluster, spolu s ACR Publikovat profil, který jste právě vytvořili. Pak klikněte na tlačítko **OK**.
 
    ![Snímek obrazovky publikovat na obrazovku AKS](media/k8s-tools-publish-to-aks.png)
 
    Tím přejdete **publikování ve službě Azure AKS** obrazovky.
 
-1.  Zvolte **nakonfigurovat Helm** odkaz Aktualizovat příkazovým řádkem použitým k instalaci grafům helmu na serveru.
+5. Zvolte **nakonfigurovat Helm** odkaz Aktualizovat příkazovým řádkem použitým k instalaci grafům helmu na serveru.
 
    ![Snímek obrazovky konfigurace Helm odkaz](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ Chcete-li to provést, musíte nejprve zkontrolujte, že všechno, co jste nains
 
    ![Konfigurace snímek Helm obrazovka](media/k8s-tools-helm-configure-screen.png)
 
-1. Až budete připravení nasadit, klikněte na tlačítko **publikovat** tlačítko pro publikování aplikace pro AKS.
+6. Až budete připravení nasadit, klikněte na tlačítko **publikovat** tlačítko pro publikování aplikace pro AKS.
 
    ![Snímek obrazovky publikovat do Azure AKS obrazovky](media/k8s-tools-publish-screen.png)
 

@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35cae638c5838d098632ff244545acc749400a24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5abb716bd562b6bd82b430f6b94251153a9abbe3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934701"
 ---
 # <a name="best-practices-and-examples-sal"></a>Doporučené postupy a příklady (poznámky SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tady jsou některé způsoby, jak získat maximum z zdrojového kódu anotace jazyka (SAL) a vyhnout se některé běžné problémy.  
   
-## <a name="in"></a>_Ne\_  
+## <a name="in"></a>\_V\_
  Pokud funkce by měl k zápisu do elementu, použijte `_Inout_` místo `_In_`. To platí zejména v případech automatizované převod starší makra na SAL. Před SAL, mnoho programátorů použít makra jako komentáře, makra, které byly pojmenovány `IN`, `OUT`, `IN_OUT`, nebo varianty tyto názvy. Přestože doporučujeme, abyste převedli na SAL tato makra, také doporučujeme vám buďte opatrní při jejich převodu protože kód byl změněn, protože byla zapsána původní prototypu a staré – makro může už odrážejí, co kód dělá. Buďte opatrní hlavně o `OPTIONAL` komentář – makro, protože je často umístěny nesprávně – například na straně nesprávné čárku.  
   
 ```cpp  
@@ -50,8 +50,8 @@ void Func2(_Inout_ PCHAR p1)
 }  
 ```  
   
-## <a name="opt"></a>_opt –\_  
- Pokud volající není povoleno a zajistěte tak předání ukazatel s hodnotou null, použijte `_In_` nebo `_Out_` místo `_In_opt_` nebo `_Out_opt_`. To platí i pro funkce, která ověří jeho parametry a vrátí chybu, pokud má hodnotu NULL, pokud by neměl být. I když mají funkci zkontrolovat její parametr Neočekávaná hodnota NULL a vrátí bez výpadku je vhodné obranné kódování, neznamená, že parametr poznámky můžou být nepovinné typu (_*Xxx*_opt –\_).  
+## <a name="opt"></a>\_Odhlásit se\_  
+ Pokud volající není povoleno a zajistěte tak předání ukazatel s hodnotou null, použijte `_In_` nebo `_Out_` místo `_In_opt_` nebo `_Out_opt_`. To platí i pro funkce, která ověří jeho parametry a vrátí chybu, pokud má hodnotu NULL, pokud by neměl být. I když mají funkci zkontrolovat její parametr Neočekávaná hodnota NULL a vrátí bez výpadku je vhodné obranné kódování, neznamená, že parametr poznámky můžou být nepovinné typu (\_*Xxx*_opt –\_).  
   
 ```cpp  
   
@@ -69,10 +69,10 @@ void Func2(_Out_ int *p1)
   
 ```  
   
-## <a name="predefensive-and-postdefensive"></a>_Pre_defensive\_ a _Post_defensive\_  
+## <a name="predefensive-and-postdefensive"></a>\_Pre_defensive\_ a \_Post_defensive\_  
  Pokud funkce se zobrazí na hranici vztahu důvěryhodnosti, doporučujeme použít `_Pre_defensive_` poznámky.  "Obrany" modifikátor upravuje určité poznámky a uvést, že v místě volání, rozhraní by měly být porovnány výhradně, ale v těle implementace by měl předpokládat, že může být předány nesprávné parametry. V takovém případě `_In_ _Pre_defensive_` je upřednostňována na hranici vztahu důvěryhodnosti k označení, že i když volající dojde k chybě, pokud se ji pokusí předat hodnotu NULL, tělo funkce bude analyzován, jakoby parametr může mít hodnotu NULL a všechny pokusy o zrušení referenční ukazatele, aniž byste nejdřív kontroly hodnoty NULL budou označeny.  A `_Post_defensive_` poznámky je také k dispozici pro použití v zpětná volání, kde důvěryhodná strana je předpokládá se, že volající a nedůvěryhodný kód je volána kód.  
   
-## <a name="outwrites"></a>_Out_writes\_  
+## <a name="outwrites"></a>\_Out_writes\_  
  Následující příklad ukazuje běžné zneužití `_Out_writes_`.  
   
 ```cpp  
@@ -106,7 +106,7 @@ void Func3(_Out_writes_(size) PSTR pb,
   
 ```  
   
-## <a name="out-pstr"></a>_Out –\_ PSTR  
+## <a name="out-pstr"></a>\_Navýšení kapacity\_ PSTR  
  Použití `_Out_ PSTR` je téměř vždy nesprávná. To je interpretován jako výstupní parametr, který odkazuje na vyrovnávací paměti pro znaky a je zakončený hodnotou NULL.  
   
 ```cpp  
@@ -121,7 +121,7 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
   
  Poznámka, jako jsou `_In_ PCSTR` je běžné a užitečné. Odkazuje na vstupní řetězec, který má ukončení hodnotou NULL, protože podmínkou pro `_In_` umožňuje rozpoznávání řetězec zakončený hodnotou NULL.  
   
-## <a name="in-wchar-p"></a>_In –\_ WCHAR * p  
+## <a name="in-wchar-p"></a>\_V\_ WCHAR * p  
  `_In_ WCHAR* p` říká, že se vstupní ukazatel `p` , která odkazuje na jeden znak. Ale ve většině případů to není pravděpodobně specifikace, která je určena. Místo toho co je pravděpodobně určený je specifikace pole zakončené znakem NULL; k tomuto účelu použijte `_In_ PWSTR`.  
   
 ```cpp  
@@ -152,7 +152,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
   
 ```  
   
-## <a name="outrange"></a>_Out_range\_  
+## <a name="outrange"></a>\_Out_range\_  
  Pokud parametr je ukazatel a express rozsah hodnota elementu, který je odkazováno na ukazatel, použít `_Deref_out_range_` místo `_Out_range_`. V následujícím příkladu, rozsahu * pcbFilled je vyjádřena, ne pcbFilled.  
   
 ```cpp  
@@ -175,7 +175,7 @@ void Func2(
   
  `_Deref_out_range_(0, cbSize)` není nezbytně nutné pro některé nástroje, protože ho jde odvodit z `_Out_writes_to_(cbSize,*pcbFilled)`, ale je zde uvedené pro úplnost.  
   
-## <a name="wrong-context-in-when"></a>Chybném kontextu v _doba\_  
+## <a name="wrong-context-in-when"></a>Nesprávný kontext \_při\_  
  Další běžnou chybou je pro účely vyhodnocení po stavu předběžné podmínky. V následujícím příkladu `_Requires_lock_held_` je podmínkou.  
   
 ```cpp  
@@ -192,7 +192,7 @@ int Func2(_In_ MyData *p, int flag);
   
  Výraz `result` odkazuje na hodnotu po stavu, která není k dispozici v předběžné stavu.  
   
-## <a name="true-in-success"></a>Hodnota TRUE v _Success\_  
+## <a name="true-in-success"></a>Hodnota TRUE v \_úspěch\_  
  Pokud funkce uspěje, pokud vrácená hodnota je nenulový, použijte `return != 0` jako podmínka pro úspěch místo `return == TRUE`. NonZero nutně neznamená ekvivalence na skutečnou hodnotu, která poskytuje kompilátor pro `TRUE`. Parametr `_Success_` je výraz a tyto výrazy jsou vyhodnocovány jako ekvivalentní: `return != 0`, `return != false`, `return != FALSE`, a `return` bez parametrů nebo porovnání.  
   
 ```cpp  

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d69167189c24d2a78a5ba02a34f6d95268d72e5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950133"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Vytvoření vazby objektů jako zdroje dat v sadě Visual Studio
 
@@ -137,7 +137,7 @@ Uložte data zpět do databáze předáním hodnoty z objektu do objektu TableAd
 Visual Studio vytvoří dbdirect – metody, které mohou být provedeny přímo na databázi. Tyto metody nevyžadují, aby objekty DataSet nebo DataTable.
 
 |TableAdapter dbdirect – metody|Popis|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Přidá nové záznamy k databázi a zajistěte tak předání hodnot jednotlivých sloupců jako parametry metod.|
 |`TableAdapter.Update`|Aktualizace existujících záznamů v databázi. Metoda aktualizace trvá sloupec původní a nové hodnoty jako parametry metod. Původní hodnoty se používají pro vyhledání záznamu původní a nové hodnoty se používají k aktualizaci záznamu.<br /><br /> `TableAdapter.Update` Metoda slouží také k odsouhlasení provedením změn v datové sadě zpět do databáze, <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, nebo pole <xref:System.Data.DataRow>označují jako parametry metody.|
 |`TableAdapter.Delete`|Odstraní existující záznamy z databáze založené na původní hodnoty ve sloupcích předané jako parametry metod.|

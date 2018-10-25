@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949230"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Porozumění hodnotám dat instrumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ ms.locfileid: "49298880"
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Metoda instrumentace vkládá kód na začátek a konec cílového funkcí v profilované binární soubor a před a po každé volání těmito funkcemi dalších funkcí. Vložený kód zaznamenává následující:  
+  Metoda instrumentace vkládá kód na začátek a konec cílového funkcí v profilované binární soubor a před a po každé volání těmito funkcemi dalších funkcí. Vložený kód zaznamenává následující:  
   
--   Interval mezi předchozí a tato událost kolekce.  
+- Interval mezi předchozí a tato událost kolekce.  
   
--   Určuje, zda operační systém byla provedena operace během intervalu. Například operačního systému může číst nebo zapsat na disk nebo přepínače mezi cílovým vláknem a jiné vlákno v jiném procesu.  
+- Určuje, zda operační systém byla provedena operace během intervalu. Například operačního systému může číst nebo zapsat na disk nebo přepínače mezi cílovým vláknem a jiné vlákno v jiném procesu.  
   
- **Požadavky**  
+  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- V každém intervalu rekonstruuje analýzy profiler zásobníku volání, která byla k dispozici na konci interval. Zásobník volání je seznam funkcí, které jsou aktivní na procesoru v bodě v čase. Jenom jednu funkci (aktuální funkci) spouští kód; ostatní funkce jsou řetěz volání funkce, jejichž výsledkem volání na aktuální funkci (zásobník volání).  
+  V každém intervalu rekonstruuje analýzy profiler zásobníku volání, která byla k dispozici na konci interval. Zásobník volání je seznam funkcí, které jsou aktivní na procesoru v bodě v čase. Jenom jednu funkci (aktuální funkci) spouští kód; ostatní funkce jsou řetěz volání funkce, jejichž výsledkem volání na aktuální funkci (zásobník volání).  
   
- Pro každou funkci v zásobníku volání během intervalu zaznamenávání, profiler analýzy přidá interval do jedné nebo více hodnot čtyři dat pro funkci. Analýza přidá interval na hodnotu data pro funkce na základě dvou kritérií:  
+  Pro každou funkci v zásobníku volání během intervalu zaznamenávání, profiler analýzy přidá interval do jedné nebo více hodnot čtyři dat pro funkci. Analýza přidá interval na hodnotu data pro funkce na základě dvou kritérií:  
   
--   Určuje, zda došlo k v kódu funkce nebo v intervalu *podřízené funkce* (funkce, která byla volána funkce).  
+- Určuje, zda došlo k v kódu funkce nebo v intervalu *podřízené funkce* (funkce, která byla volána funkce).  
   
--   Určuje, zda událost operačního systému došlo k chybě v intervalu.  
+- Určuje, zda událost operačního systému došlo k chybě v intervalu.  
   
- Hodnoty dat pro interval rozsah funkce nebo data jsou s názvem *uplynulý včetně*, *uplynulý výhradní*, *aplikace včetně*, a  *Výhradní čas aplikace*:  
+  Hodnoty dat pro interval rozsah funkce nebo data jsou s názvem *uplynulý včetně*, *uplynulý výhradní*, *aplikace včetně*, a  *Výhradní čas aplikace*:  
   
--   Uplynulý včetně hodnotu data jsou přidány všechny intervaly funkce.  
+- Uplynulý včetně hodnotu data jsou přidány všechny intervaly funkce.  
   
--   Pokud interval došlo k chybě v kódu funkce a není ve funkci podřízené, interval je přidána do uplynulý výhradní datový typ funkce.  
+- Pokud interval došlo k chybě v kódu funkce a není ve funkci podřízené, interval je přidána do uplynulý výhradní datový typ funkce.  
   
--   Pokud nedošlo k události operačního systému v intervalu, interval je přidána do aplikace včetně hodnotu data.  
+- Pokud nedošlo k události operačního systému v intervalu, interval je přidána do aplikace včetně hodnotu data.  
   
--   Pokud událost operačního systému nedošlo k v intervalu a intervalu došlo k přímé provádění kódu funkce (to znamená, ho nedošlo k ve funkci podřízené), interval se přidá do aplikace výhradní hodnoty data.  
+- Pokud událost operačního systému nedošlo k v intervalu a intervalu došlo k přímé provádění kódu funkce (to znamená, ho nedošlo k ve funkci podřízené), interval se přidá do aplikace výhradní hodnoty data.  
   
- Nástroje pro profilaci sestavy shrnují celkové hodnoty funkcí v relaci profilování a procesy, vlákna a binární soubory z relace.  
+  Nástroje pro profilaci sestavy shrnují celkové hodnoty funkcí v relaci profilování a procesy, vlákna a binární soubory z relace.  
   
 ## <a name="elapsed-inclusive-values"></a>Uplynulý včetně hodnoty  
  Celkový čas, který byl stráven spouštěním funkce a její podřízené funkce.  

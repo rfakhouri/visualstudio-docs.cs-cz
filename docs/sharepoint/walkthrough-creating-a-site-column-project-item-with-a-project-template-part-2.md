@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942072"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružení šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony k vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -48,15 +48,15 @@ ms.locfileid: "42626013"
   
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
--   Podporované edice systému Windows, SharePoint a Visual Studio.
+- Podporované edice systému Windows, SharePoint a Visual Studio.
   
--   Visual Studio SDK. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
+  Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
--   Průvodce pro šablony projektů a položek v sadě Visual Studio. Další informace najdete v tématu [postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md) a <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
+- Průvodce pro šablony projektů a položek v sadě Visual Studio. Další informace najdete v tématu [postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md) a <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
   
--   Sloupce webu ve službě SharePoint. Další informace najdete v tématu [sloupce](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- Sloupce webu ve službě SharePoint. Další informace najdete v tématu [sloupce](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Seznámení s komponentami Průvodce
  Průvodce předváděnou v tomto názorném postupu obsahuje několik součástí. Následující tabulka popisuje tyto komponenty.  
@@ -72,11 +72,11 @@ ms.locfileid: "42626013"
 ## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto návodu, budete muset přidat různé projekty do řešení SiteColumnProjectItem, které jste vytvořili v [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Projekt WPF. Budete implementovat <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a definovat Průvodce uživatelského rozhraní v tomto projektu.  
+- Projekt WPF. Budete implementovat <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a definovat Průvodce uživatelského rozhraní v tomto projektu.  
   
--   Projekt knihovny tříd, který definuje příkazů služby SharePoint. Tento projekt musí cílit na rozhraní.NET Framework 3.5.  
+- Projekt knihovny tříd, který definuje příkazů služby SharePoint. Tento projekt musí cílit na rozhraní.NET Framework 3.5.  
   
- Začněte postup vytvořením projektů.  
+  Začněte postup vytvořením projektů.  
   
 #### <a name="to-create-the-wpf-project"></a>Vytvoření projektu WPF
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626013"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Vytvoření modelu průvodce, podpisové správce a ID příkazů služby SharePoint
  Přidání kódu do projektu ProjectTemplateWizard implementovat následující součásti v ukázce:  
   
--   Identifikátory příkazů služby SharePoint. Tyto řetězce identifikovat příkazů služby SharePoint, které používá průvodce. Dále v tomto názorném postupu přidáte kód do projektu SharePointCommands provádět příkazy.  
+- Identifikátory příkazů služby SharePoint. Tyto řetězce identifikovat příkazů služby SharePoint, které používá průvodce. Dále v tomto názorném postupu přidáte kód do projektu SharePointCommands provádět příkazy.  
   
--   Průvodce datového modelu.  
+- Průvodce datového modelu.  
   
--   Podepisování vedoucí projektu.  
+- Podepisování vedoucí projektu.  
   
- Další informace o těchto součástech naleznete v tématu [seznámení se s komponentami průvodce](#wizardcomponents).  
+  Další informace o těchto součástech naleznete v tématu [seznámení se s komponentami průvodce](#wizardcomponents).  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>Chcete-li definovat ID příkazů služby SharePoint
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626013"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>K otestování průvodce v sadě Visual Studio  
   
-1.  V experimentální instanci sady Visual Studio na panelu nabídek zvolte **souboru** > **nový** > **projektu**.  
+1. V experimentální instanci sady Visual Studio na panelu nabídek zvolte **souboru** > **nový** > **projektu**.  
   
-2.  Rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzel (v závislosti na jazyk, který podporuje šablony projektu), Rozbalit **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
+2. Rozbalte **Visual C#** uzlu nebo **jazyka Visual Basic** uzel (v závislosti na jazyk, který podporuje šablony projektu), Rozbalit **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
   
-3.  V seznamu šablon projektu vyberte **sloupce webu**, pojmenujte projekt **SiteColumnWizardTest**a klikněte na tlačítko **OK** tlačítko.  
+3. V seznamu šablon projektu vyberte **sloupce webu**, pojmenujte projekt **SiteColumnWizardTest**a klikněte na tlačítko **OK** tlačítko.  
   
-4.  Ověřte, že kód ve druhé instanci aplikace Visual Studio zastaví na zarážce, kterou jste nastavili dříve v `RunStarted` metody.  
+4. Ověřte, že kód ve druhé instanci aplikace Visual Studio zastaví na zarážce, kterou jste nastavili dříve v `RunStarted` metody.  
   
-5.  Pokračovat v ladění projektu výběrem **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **pokračovat**.  
+5. Pokračovat v ladění projektu výběrem **F5** klíče nebo na panelu nabídek, výběrem **ladění** > **pokračovat**.  
   
-6.  V **Průvodce přizpůsobením SharePoint**, zadejte adresu URL webu, který chcete použít pro ladění a klikněte na tlačítko **Další** tlačítko.  
+6. V **Průvodce přizpůsobením SharePoint**, zadejte adresu URL webu, který chcete použít pro ladění a klikněte na tlačítko **Další** tlačítko.  
   
-7.  Na druhé stránce **Průvodce přizpůsobením SharePoint**, proveďte následující výběr:  
+7. Na druhé stránce **Průvodce přizpůsobením SharePoint**, proveďte následující výběr:  
   
-    -   V **typ** klikněte na položku **logická**.  
+   - V **typ** klikněte na položku **logická**.  
   
-    -   V **skupiny** klikněte na položku **vlastní sloupce logická**.  
+   - V **skupiny** klikněte na položku **vlastní sloupce logická**.  
   
-    -   V **název** zadejte **tento sloupec Logická**a klikněte na tlačítko **Dokončit** tlačítko.  
+   - V **název** zadejte **tento sloupec Logická**a klikněte na tlačítko **Dokončit** tlačítko.  
   
      V **Průzkumníku řešení**, zobrazí se nový projekt a obsahuje položku projektu s názvem **pole1**, a sady Visual Studio otevře projektu *Elements.xml* souboru v editoru.  
   
-8.  Ověřte, že *Elements.xml* obsahuje hodnoty, které jste zadali v průvodci.  
+8. Ověřte, že *Elements.xml* obsahuje hodnoty, které jste zadali v průvodci.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>K otestování sloupce webu ve službě SharePoint  
   

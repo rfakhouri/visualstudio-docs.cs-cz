@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938263"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
 
@@ -132,10 +132,10 @@ LSP neobsahuje specifikaci o tom, jak poskytnout zabarvení textu pro jazyky. Po
 
 4. Vytvoření *.pkgdef* soubor a přidá řádek podobný tomuto:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Klikněte pravým tlačítkem na požadované soubory, vyberte **vlastnosti**. Změnit **sestavení** akce **obsahu** a **zahrnout do VSIX** vlastnost na hodnotu true.
 
@@ -295,40 +295,40 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
 
 1. Přidání souboru JSON (například *MockLanguageExtensionSettings.json*) ve vašem projektu, který obsahuje nastavení a jejich výchozí hodnoty. Příklad:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Klikněte pravým tlačítkem na soubor JSON a vyberte **vlastnosti**. Změnit **sestavení** akce "Obsah" a "zahrnout do VSIX' vlastnost na hodnotu true.
 
 3. Implementace oddíly ConfigurationSections a vrátí seznam předpon pro nastavení definované v souboru JSON (v aplikaci Visual Studio Code, to by namapovat na název oddílu konfigurace v souboru package.json):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Soubor .pkgdef přidejte do projektu (Přidat nový textový soubor a změňte příponu souboru .pkgdef). Soubor pkgdef by měl obsahovat tyto informace:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Klikněte pravým tlačítkem na soubor .pkgdef a vyberte **vlastnosti**. Změnit **sestavení** akce **obsahu** a **zahrnout do VSIX** vlastnost na hodnotu true.
 
 6. Otevřete *source.extension.vsixmanifest* a přidejte prostředek **Asset** kartu:
 
-  ![Upravit prostředek balíčku vspackage](media/lsp-add-vspackage-asset.png)
+   ![Upravit prostředek balíčku vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Typ**: Microsoft.VisualStudio.VsPackage
-  * **Zdroj**: soubor v systému souborů
-  * **Cesta**: [cesta k vaší *.pkgdef* souborů]
+   * **Typ**: Microsoft.VisualStudio.VsPackage
+   * **Zdroj**: soubor v systému souborů
+   * **Cesta**: [cesta k vaší *.pkgdef* souborů]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Uživatel upravuje nastavení pro pracovní prostor
 
@@ -336,16 +336,16 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
 2. Uživatel přidá soubor v *.vs* složku s názvem *VSWorkspaceSettings.json*.
 3. Uživatel přidá řádek do *VSWorkspaceSettings.json* soubor pro třídu setting server poskytuje. Příklad:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
-Diagnostické trasování je možné zapnout na výstup všech zpráv mezi klientem a serverem, který může být užitečné při ladění problémů.  Pokud chcete povolit diagnostické trasování, postupujte takto:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
+   Diagnostické trasování je možné zapnout na výstup všech zpráv mezi klientem a serverem, který může být užitečné při ladění problémů.  Pokud chcete povolit diagnostické trasování, postupujte takto:
 
-1. Otevření nebo vytvoření souboru nastavení pracovního prostoru *VSWorkspaceSettings.json* (viz "Uživatel upravuje nastavení pro pracovní prostor").
-2. Přidejte následující řádek v souboru nastavení json:
+4. Otevření nebo vytvoření souboru nastavení pracovního prostoru *VSWorkspaceSettings.json* (viz "Uživatel upravuje nastavení pro pracovní prostor").
+5. Přidejte následující řádek v souboru nastavení json:
 
 ```json
 {

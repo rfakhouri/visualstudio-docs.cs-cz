@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928812"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření určitého dokumentu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet, když jakýkoliv dokument je otevřen.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778104"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Vytvoření projektu dokumentu aplikace Word.  
+- Vytvoření projektu dokumentu aplikace Word.  
   
--   Přidání textu do dokumentu, který je hostovaný v návrháři aplikace Visual Studio.  
+- Přidání textu do dokumentu, který je hostovaný v návrháři aplikace Visual Studio.  
   
--   Psaní kódu, který používá objektový model aplikace Word se při otevření přidat text do přizpůsobeného dokumentu.  
+- Psaní kódu, který používá objektový model aplikace Word se při otevření přidat text do přizpůsobeného dokumentu.  
   
--   Vytváření a spouštění projektů a otestovat ho.  
+- Vytváření a spouštění projektů a otestovat ho.  
   
--   Čištění projektu k odstranění nepotřebných sestavení souborů a nastavení zabezpečení z vývojového počítače.  
+- Čištění projektu k odstranění nepotřebných sestavení souborů a nastavení zabezpečení z vývojového počítače.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  

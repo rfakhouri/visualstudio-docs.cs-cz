@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933544"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Zapište kód pro obslužnou rutinu události zobrazení tlačítka s obrázkem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následujícím způsobem:  
   
--   Když uživatel vybere toto tlačítko, program otevře **otevřít soubor** dialogové okno.  
+- Když uživatel vybere toto tlačítko, program otevře **otevřít soubor** dialogové okno.  
   
--   Pokud uživatel otevře soubor s obrázkem, program zobrazí v ovládacím prvku PictureBox daný obrázek.  
+- Pokud uživatel otevře soubor s obrázkem, program zobrazí v ovládacím prvku PictureBox daný obrázek.  
   
- Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnosti, kterou chcete, zvolte klávesu TAB a vyberte ji. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.  
+  Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnosti, kterou chcete, zvolte klávesu TAB a vyberte ji. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) nebo [kurz 1: vytvoření prohlížeče obrázků v jazyce C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Psaní kódu pro zobrazení obslužné rutiny události obrázku tlačítka  
   

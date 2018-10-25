@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938601"
 ---
 # <a name="graphics-pipeline-stages"></a>Fáze zřetězení grafiky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ V okně fáze zřetězení grafiky pomáhá pochopit, jak je transformovat volá
 ### <a name="links-to-related-graphics-objects"></a>Odkazy na související grafických objektů  
  Někdy další kontext je potřeba zjistit, proč volání draw komunikuje s zřetězení grafiky určitým způsobem. Pro usnadnění tohoto další kontext najít odkazy okna fáze zřetězení grafiky na jeden nebo více objektů, které poskytnete další kontext související co se děje v zřetězení grafiky.  
   
--   V Direct3D 12 tento objekt je obvykle seznam příkazů.  
+- V Direct3D 12 tento objekt je obvykle seznam příkazů.  
   
--   V Direct3D 11 tento objekt je obvykle kontextu zařízení grafiky.  
+- V Direct3D 11 tento objekt je obvykle kontextu zařízení grafiky.  
   
- Tyto odkazy jsou součástí aktuálního podpisu událostí grafiky, který se nachází v levém horním rohu okna fáze zřetězení grafiky. Postupovat podle některého z těchto odkazů prozkoumat další podrobnosti o objektu.  
+  Tyto odkazy jsou součástí aktuálního podpisu událostí grafiky, který se nachází v levém horním rohu okna fáze zřetězení grafiky. Postupovat podle některého z těchto odkazů prozkoumat další podrobnosti o objektu.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Zobrazení a ladění kódu shaderu  
  Můžete prozkoumat a ladění kódu pro vrchol, trupu, domény, geometrie a pixel shadery pomocí ovládacích prvků na konci jejich odpovídajících fází v okně fáze zřetězení.  

@@ -16,12 +16,12 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eacde73ded992eb72396cdb5f84dc01b145cf874
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949263"
 ---
 # <a name="command-design"></a>Návrh příkazu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,15 +48,15 @@ Při přidání příkazu do VSPackage, musíte zadat, kam se má zobrazit, kdy�
 ### <a name="command-organization"></a>Příkaz organizace  
  Prostředí umístí příkazů podle skupiny, priority a nabídky.  
   
--   Skupiny jsou logické kolekce související příkazy, například, **Vyjmout**, **kopírování**, a **vložit** skupinu příkazů. Skupiny jsou příkazy, které se zobrazují v nabídkách.  
+- Skupiny jsou logické kolekce související příkazy, například, **Vyjmout**, **kopírování**, a **vložit** skupinu příkazů. Skupiny jsou příkazy, které se zobrazují v nabídkách.  
   
--   Priorita určuje pořadí, ve kterém se zobrazují jednotlivé příkazy ve skupině v nabídce.  
+- Priorita určuje pořadí, ve kterém se zobrazují jednotlivé příkazy ve skupině v nabídce.  
   
--   Nabídky fungují jako kontejnery pro skupiny.  
+- Nabídky fungují jako kontejnery pro skupiny.  
   
- Prostředí predefines některé příkazy, skupiny a nabídek. Další informace najdete v tématu [výchozí příkaz, skupiny a umístění nástrojů](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  Prostředí predefines některé příkazy, skupiny a nabídek. Další informace najdete v tématu [výchozí příkaz, skupiny a umístění nástrojů](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Příkaz je možné přiřadit ke skupině primární. Určuje pozici příkazu v hlavní nabídce struktuře a v primární skupině **vlastní** dialogové okno. Příkaz může objevit ve více skupinách; příkaz může být například v hlavní nabídce, v místní nabídce a na panelu nástrojů. Další informace najdete v tématu [jak balíčky VSPackages přidat prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Příkaz je možné přiřadit ke skupině primární. Určuje pozici příkazu v hlavní nabídce struktuře a v primární skupině **vlastní** dialogové okno. Příkaz může objevit ve více skupinách; příkaz může být například v hlavní nabídce, v místní nabídce a na panelu nástrojů. Další informace najdete v tématu [jak balíčky VSPackages přidat prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Směrování příkazů  
  Proces směrování příkazů pro rozšíření VSPackages a volání se liší od procesu volání metod na instance objektů.  

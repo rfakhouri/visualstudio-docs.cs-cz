@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929527"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ Vizuální návrhová plocha, volá se zobrazí návrhář tříd *diagram tří
 ### <a name="type-resolution-issues"></a>Typ řešení problémů  
  Návrhář tříd nemusí být možné přeložit typy z následujících důvodů:  
   
--   Typ není v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Typ není v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Typ není ve správném oboru, takže ho nejde najít návrhář tříd. Ujistěte se, že kód není chybí `using`, `imports`, nebo `#include` příkazu. Ujistěte se také, že nebyly vyjme typ (nebo související typ) z oboru názvů, ve kterém bylo původně umístěná.  
+- Typ není ve správném oboru, takže ho nejde najít návrhář tříd. Ujistěte se, že kód není chybí `using`, `imports`, nebo `#include` příkazu. Ujistěte se také, že nebyly vyjme typ (nebo související typ) z oboru názvů, ve kterém bylo původně umístěná.  
   
--   Typ neexistuje (nebo má zakomentované). Chcete-li tuto chybu opravit, ujistěte se, že nejsou označené jako komentář nebo odstranit typ.  
+- Typ neexistuje (nebo má zakomentované). Chcete-li tuto chybu opravit, ujistěte se, že nejsou označené jako komentář nebo odstranit typ.  
   
--   Typ je umístěn v knihovně odkazuje direktivu #import. Možných řešení je ruční přidání generovaný kód (soubor .tlh) #include – direktiva v souboru hlaviček.  
+- Typ je umístěn v knihovně odkazuje direktivu #import. Možných řešení je ruční přidání generovaný kód (soubor .tlh) #include – direktiva v souboru hlaviček.  
   
- Chyba se pravděpodobně chcete zobrazit pro řešení problému s typem je **kód nemohl být nalezen jeden nebo více obrazců v diagramu tříd '\<element > "**. Tato chybová zpráva nemusí znamenat, že je váš kód v chybě. Označuje, že jste byli pouze tento návrhář tříd nemůže zobrazit váš kód. Vyzkoušejte následující míry.  
+  Chyba se pravděpodobně chcete zobrazit pro řešení problému s typem je **kód nemohl být nalezen jeden nebo více obrazců v diagramu tříd '\<element > "**. Tato chybová zpráva nemusí znamenat, že je váš kód v chybě. Označuje, že jste byli pouze tento návrhář tříd nemůže zobrazit váš kód. Vyzkoušejte následující míry.  
   
--   Ujistěte se, že typ existuje. Ujistěte se, že nejsou neúmyslně zakomentované nebo odstranili zdrojový kód.  
+- Ujistěte se, že typ existuje. Ujistěte se, že nejsou neúmyslně zakomentované nebo odstranili zdrojový kód.  
   
--   Ujistěte se, že návrhář tříd podporuje typ, který jste zadali. Zobrazit [omezení pro prvky kódu C++](#limitations).  
+- Ujistěte se, že návrhář tříd podporuje typ, který jste zadali. Zobrazit [omezení pro prvky kódu C++](#limitations).  
   
--   Došlo k pokusu o přeložení typu. Typ může být v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Došlo k pokusu o přeložení typu. Typ může být v projektu nebo sestavení, který neodkazuje projekt, který obsahuje diagram třídy. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení obsahující typ. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Ujistěte se, že typ je ve správném oboru tak, aby ji mohli najít návrhář tříd. Ujistěte se, že kód není chybí `using`, `imports`, nebo `#include` příkazu. Ujistěte se také, že nebyly vyjme typ (nebo související typ) z oboru názvů, ve kterém bylo původně umístěná.  
+- Ujistěte se, že typ je ve správném oboru tak, aby ji mohli najít návrhář tříd. Ujistěte se, že kód není chybí `using`, `imports`, nebo `#include` příkazu. Ujistěte se také, že nebyly vyjme typ (nebo související typ) z oboru názvů, ve kterém bylo původně umístěná.  
   
 ### <a name="troubleshooting-other-error-messages"></a>Řešení potíží s další chybové zprávy  
  Pomoc při řešení problémů s chybami a upozorněními můžete najít na veřejných fórech Microsoft Developer Network (MSDN). Zobrazit [návrháře fórum Visual Studio třídy](http://go.microsoft.com/fwlink/?linkid=160754).  

@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939903"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;pole&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,44 +52,44 @@ Určuje informace o dokumentaci, včetně popisu, pole nebo člena, který je de
  `type`  
  Volitelné. Datový typ pole. Typ může být jeden z následujících akcí:  
   
--   Zadejte jazyka ECMAScript specifikací ECMAScript 5, třeba `Number` a `Object`.  
+- Zadejte jazyka ECMAScript specifikací ECMAScript 5, třeba `Number` a `Object`.  
   
--   Modelu DOM, jako objekt `HTMLElement`, `Window`, a `Document`.  
+- Modelu DOM, jako objekt `HTMLElement`, `Window`, a `Document`.  
   
--   Funkce jazyka JavaScript konstruktoru.  
+- Funkce jazyka JavaScript konstruktoru.  
   
- `integer`  
- Volitelné. Pokud `type` je `Number`, určuje, zda je pole celé číslo. Nastavte na `true` k označení, že pole je celé číslo; v opačném případě nastavte na `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
+  `integer`  
+  Volitelné. Pokud `type` je `Number`, určuje, zda je pole celé číslo. Nastavte na `true` k označení, že pole je celé číslo; v opačném případě nastavte na `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
   
- `domElement`  
- Volitelné. Tento atribut je zastaralá; `type` atribut má přednost před tento atribut. Tento atribut určuje, zda je pole zdokumentovaných prvek modelu DOM. Nastavte na `true` k určení, že pole je prvek modelu DOM; v opačném případě nastavte na `false`. Pokud `type` není nastaven atribut a `domElement` je nastavena na `true`, technologie IntelliSense jsou považovány za zdokumentovaných pole `HTMLElement` při dokončování příkazů.  
+  `domElement`  
+  Volitelné. Tento atribut je zastaralá; `type` atribut má přednost před tento atribut. Tento atribut určuje, zda je pole zdokumentovaných prvek modelu DOM. Nastavte na `true` k určení, že pole je prvek modelu DOM; v opačném případě nastavte na `false`. Pokud `type` není nastaven atribut a `domElement` je nastavena na `true`, technologie IntelliSense jsou považovány za zdokumentovaných pole `HTMLElement` při dokončování příkazů.  
   
- `mayBeNull`  
- Volitelné. Určuje, jestli dokument pole lze nastavit na hodnotu null. Nastavte na `true` k označení, že pole může být nastaven na hodnotu null; jinak vrátí hodnotu, nastavte na `false`. Výchozí hodnota je `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
+  `mayBeNull`  
+  Volitelné. Určuje, jestli dokument pole lze nastavit na hodnotu null. Nastavte na `true` k označení, že pole může být nastaven na hodnotu null; jinak vrátí hodnotu, nastavte na `false`. Výchozí hodnota je `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
   
- `elementType`  
- Volitelné. Pokud `type` je `Array`, tento atribut určuje typ prvků v poli.  
+  `elementType`  
+  Volitelné. Pokud `type` je `Array`, tento atribut určuje typ prvků v poli.  
   
- `elementInteger`  
- Volitelné. Pokud `type` je `Array` a `elementType` je `Number`, tento atribut určuje, zda jsou prvky v poli celých čísel. Nastavte na `true` k označení, který prvků v poli jsou celá čísla; v opačném případě nastavte na `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
+  `elementInteger`  
+  Volitelné. Pokud `type` je `Array` a `elementType` je `Number`, tento atribut určuje, zda jsou prvky v poli celých čísel. Nastavte na `true` k označení, který prvků v poli jsou celá čísla; v opačném případě nastavte na `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
   
- `elementDomElement`  
- Volitelné. Tento atribut je zastaralá; `elementType` atribut má přednost před tento atribut. Pokud `type` je `Array`, tento atribut určuje, zda prvků v poli jsou prvky modelu DOM. Nastavte na `true` k určení, které prvky jsou prvky modelu DOM; v opačném případě nastavte na `false`. Pokud `elementType` není nastaven atribut a `elementDomElement` je nastavena na `true`, technologie IntelliSense zpracovává každý prvek v poli jako `HTMLElement` při dokončování příkazů.  
+  `elementDomElement`  
+  Volitelné. Tento atribut je zastaralá; `elementType` atribut má přednost před tento atribut. Pokud `type` je `Array`, tento atribut určuje, zda prvků v poli jsou prvky modelu DOM. Nastavte na `true` k určení, které prvky jsou prvky modelu DOM; v opačném případě nastavte na `false`. Pokud `elementType` není nastaven atribut a `elementDomElement` je nastavena na `true`, technologie IntelliSense zpracovává každý prvek v poli jako `HTMLElement` při dokončování příkazů.  
   
- `elementMayBeNull`  
- Volitelné. Pokud `type` je `Array`, určuje, zda prvků v poli může být nastavena na hodnotu null. Nastavte na `true` k označení, že prvků v poli může být nastaven na hodnotu null; jinak vrátí hodnotu, nastavte na `false`. Výchozí hodnota je `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
+  `elementMayBeNull`  
+  Volitelné. Pokud `type` je `Array`, určuje, zda prvků v poli může být nastavena na hodnotu null. Nastavte na `true` k označení, že prvků v poli může být nastaven na hodnotu null; jinak vrátí hodnotu, nastavte na `false`. Výchozí hodnota je `false`. Tento atribut není používá sada Visual Studio k poskytování informací technologie IntelliSense.  
   
- `helpKeyword`  
- Volitelné. Klíčové slovo nápovědy klávesy F1.  
+  `helpKeyword`  
+  Volitelné. Klíčové slovo nápovědy klávesy F1.  
   
- `locid`  
- Volitelné. Identifikátor lokalizace informace o poli. Identifikátor je buď členem, nebo ID odpovídá `name` hodnotu v sadě zprávy určené OpenAjax metadat atributu. Typ identifikátoru závisí na formátu určeného v [ \<umístění >](../ide/loc-javascript.md) značky.  
+  `locid`  
+  Volitelné. Identifikátor lokalizace informace o poli. Identifikátor je buď členem, nebo ID odpovídá `name` hodnotu v sadě zprávy určené OpenAjax metadat atributu. Typ identifikátoru závisí na formátu určeného v [ \<umístění >](../ide/loc-javascript.md) značky.  
   
- `value`  
- Volitelné. Určuje kód, který by se mělo vyhodnotit pro použití technologií IntelliSense místo samotný kód funkce. Pro `<field>`, tento atribut je podporován pro funkce konstruktoru, ale není podporovaná pro literály objektů. Pomocí tohoto atributu je poskytnout informace o typu při typ pole není definován. Například můžete použít `value=’1’` považovat typ pole jako číslo.  
+  `value`  
+  Volitelné. Určuje kód, který by se mělo vyhodnotit pro použití technologií IntelliSense místo samotný kód funkce. Pro `<field>`, tento atribut je podporován pro funkce konstruktoru, ale není podporovaná pro literály objektů. Pomocí tohoto atributu je poskytnout informace o typu při typ pole není definován. Například můžete použít `value=’1’` považovat typ pole jako číslo.  
   
- `description`  
- Volitelné. Popis pro pole.  
+  `description`  
+  Volitelné. Popis pro pole.  
   
 ## <a name="remarks"></a>Poznámky  
  `name` Atribut je vyžadován, když jste dokumentace pole v funkce konstruktoru. Pro všechny další scénáře, všechny atributy pro `<field>` element jsou volitelné.  

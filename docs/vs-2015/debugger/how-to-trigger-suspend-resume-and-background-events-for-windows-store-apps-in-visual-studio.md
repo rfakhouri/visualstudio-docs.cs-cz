@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938380"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Jak aktivovat události pozastavení a obnovení a události na pozadí pro aplikace pro Windows Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) �
   
  [Úlohy na pozadí trigger](#BKMK_Trigger_background_tasks)  
   
--   [Aktivační událost úlohy pozadí ze standardní ladicí relaci](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Aktivační událost úlohy pozadí ze standardní ladicí relaci](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Aktivuje úlohu na pozadí, když není aplikace spuštěna](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Aktivuje úlohu na pozadí, když není aplikace spuštěna](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Aktivovat události proces správy životního cyklu a úloh z nainstalovaných aplikací na pozadí](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Aktivovat události proces správy životního cyklu a úloh z nainstalovaných aplikací na pozadí](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnostika chyb aktivace úlohy na pozadí](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnostika chyb aktivace úlohy na pozadí](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Aktivační proces správy životního cyklu události  
  Windows může pozastavení aplikace, když uživatel přejde od nebo když Windows vstupuje do stavu snížené spotřeby energie. Můžete reagovat `Suspending` události uložte příslušné aplikace a uživatelská data do trvalého úložiště a uvolnění prostředků. Při obnovení aplikace ze **pozastaveno** stavu, přešel do **systémem** stavu a bude pokračovat od kdy byl při bylo pozastaveno. Můžete reagovat `Resuming` událostí k obnovení nebo obnovit stav aplikace a uvolnit prostředky.  

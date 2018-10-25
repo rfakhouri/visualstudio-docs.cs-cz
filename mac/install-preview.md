@@ -1,5 +1,5 @@
 ---
-title: Instalace Preview verzí
+title: Nainstalovat verzi Preview
 description: Pokyny k aktualizaci sady Visual Studio pro Mac a přístup k preview verze.
 author: conceptdev
 ms.author: crdun
@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623958"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991533"
 ---
-# <a name="installing-preview-releases"></a>Instalace Preview verzí
+# <a name="install-a-preview-release"></a>Nainstalovat verzi Preview
 
-Před oficiálním vydání nové verze sady Visual Studio pro Mac, vydání ve verzi preview. Verze preview dává možnost vyzkoušet si nové funkce a získat nejnovější opravy chyb, než jsou plně součástí produktu.
+Před oficiálním vydání nové verze sady Visual Studio pro Mac, je k dispozici ve verzi preview. Verze preview dává možnost vyzkoušet si nové funkce a získat nejnovější opravy chyb, než jsou plně součástí produktu.
 
 Předběžné verze sady Visual Studio pro Mac se distribuují jako aktualizace, a nikoli prostřednictvím samostatný soubor ke stažení. Visual Studio for Mac obsahuje tři aktualizační kanály, jak je popsáno v [aktualizovat](update.md) článku: Stable, Beta a alfa.
 

@@ -3,23 +3,23 @@ layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Pomocí nástrojů data v sadě Visual Studio pro vývoj řešení pro data
-description: Další informace o nástrojích pro řešení pro data v sadě Visual Studio.
+title: Pomocí nástrojů data v sadě Visual Studio a vyvíjet řešení pro data
+description: Informace o nástrojích datových řešení v sadě Visual Studio.
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948405"
 ---
-# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Pomocí nástrojů data v sadě Visual Studio pro vývoj řešení pro data
+# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Pomocí nástrojů data v sadě Visual Studio a vyvíjet řešení pro data
 
-Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a testování pomocí serveru SQL Server, Azure Data Lake nebo Hadoop řešení data.
+Zjistěte, jak pomocí nástrojů data v sadě Visual Studio můžete vyvíjet a testovat datová řešení pomocí systému SQL Server, Azure Data Lake nebo Hadoop.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -33,7 +33,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace o sadě Visual Studio a nástroje a rozhraní API rozhraní .NET Framework podporu pro vývoj aplikací dat</h3>
+                        <h3>Další informace o sadě Visual Studio a rozhraní .NET Framework&#39;s nástroje a rozhraní API pro podporu vývoji datových aplikací</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace o návrhu, nasazení a údržbu databáze s SQL Server Data Tools</h3>
+                        <h3>Další informace o navrhování, nasazování a správu databází pomocí SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace o vývoji řešení pro velká data skoro v reálném čase s Azure streamování Analytics</h3>
+                        <h3>Další informace o vývoji řešení pro velké objemy dat téměř v reálném čase pomocí Azure Stream Analytics</h3>
                     </div>
                 </div>
             </div>

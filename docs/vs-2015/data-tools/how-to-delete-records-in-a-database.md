@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938614"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Postupy: Odstranění záznamů z databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Můžete z databáze odstranit záznamy, použít `TableAdapter.Update` metoda n
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Chcete-li odstranit záznamy v databázi pomocí TableAdapter.Update – metoda  
   
--   Odstranění záznamů z požadovaný <xref:System.Data.DataTable> odstraněním <xref:System.Data.DataRow> objekty z tabulky. Další informace najdete v tématu [postupy: odstranění řádků z DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Po odstranění řádků z <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metody. Můžete řídit objem dat se aktualizovat předáním celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>. Následující kód ukazuje, jak odstranit záznam z <xref:System.Data.DataTable> a následně zavolat `TableAdapter.Update` metodu pro komunikaci změnu a z databáze odstranit řádek. (Tento příklad používá databázi Northwind `Region` tabulky.)  
+- Odstranění záznamů z požadovaný <xref:System.Data.DataTable> odstraněním <xref:System.Data.DataRow> objekty z tabulky. Další informace najdete v tématu [postupy: odstranění řádků z DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Po odstranění řádků z <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metody. Můžete řídit objem dat se aktualizovat předáním celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>. Následující kód ukazuje, jak odstranit záznam z <xref:System.Data.DataTable> a následně zavolat `TableAdapter.Update` metodu pro komunikaci změnu a z databáze odstranit řádek. (Tento příklad používá databázi Northwind `Region` tabulky.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Pokud vaše aplikace používá objekty k uložení dat v aplikaci, můžete přímo z databáze odstranit data objektu TableAdapter dbdirect – metody. Volání `Delete` metoda odebere záznamy z databáze na základě hodnot parametru předaného.  
+  Pokud vaše aplikace používá objekty k uložení dat v aplikaci, můžete přímo z databáze odstranit data objektu TableAdapter dbdirect – metody. Volání `Delete` metoda odebere záznamy z databáze na základě hodnot parametru předaného.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Chcete-li odstranit záznamy v databázi pomocí TableAdapter.delete – metoda  
   

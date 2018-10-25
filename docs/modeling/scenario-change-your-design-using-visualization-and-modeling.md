@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942475"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -82,7 +82,7 @@ Další informace o Team Foundation Server naleznete v tématu:
 Následující tabulka popisuje role, které tyto nástroje mohou hrát při více a v různých fázích životního cyklu vývoje softwaru:
 
 ||**Modelování požadavků uživatelů**|**Modelování obchodních procesů**|**Architektura systému a Design**|**Vizualizace kódu & průzkum**|**Ověření**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |Diagram jazyka specifického pro doménu (DSL)|Ano|Ano|Ano|||
 |Diagram závislostí, ověřování vrstvy|||Ano|Ano|Ano|
 |Mapy kódu|||Ano|Ano|Ano|
@@ -145,7 +145,7 @@ Než týmy vrátí změny, ověří kód proti testům a návrhu spuštěním se
 Společnost dinner Now musí odhadnout náklady na splnění nového požadavku. To zčásti závisí na tom, jak moc tato změna ovlivní ostatní části systému. Aby pomohl ostatním pochopit, jeden z vývojářů aplikace večeře nyní z existujícího kódu vytvoří tyto mapy a diagramy:
 
 |**Mapování nebo diagramu**|**Ukazuje**|
-|------------------------|---------------|
+|-|-|
 |*Mapy kódu*<br /><br /> Další informace:<br /><br /> - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)<br />- [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Závislosti a jiné vztahy v kódu.<br /><br /> Například web Dinner Now může začít kontrolou map kódu sestavení přehledné informace o sestavení a jejich závislosti. Mohou se ponořit do mapy pro prozkoumání oborů názvů a třídy v těchto sestaveních.<br /><br /> Společnost dinner Now může také vytváření map prozkoumat určité oblasti a další druhy vztahů v kódu. Používají Průzkumníka řešení najít a vybrat oblasti a vztahy, které je zajímají.|
 |*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu|
 
@@ -166,14 +166,14 @@ Společnost dinner Now musí odhadnout náklady na splnění nového požadavku.
  K popisu změn jiných částí systému, jako je například součástí nebo interakcí, může tým kreslit tyto prvky na Tabule. Mohou také nakreslit následující diagramy v aplikaci Visual Studio tak, aby podrobnosti lze zachytit, spravovat a srozumitelné pro oba týmy:
 
 |**Diagramy**|**Popisuje**|
-|------------------|-------------------|
+|-|-|
 |*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu.|
 
 ### <a name="ValidatingCode"></a> Udržujte kód v souladu s návrhem
  Společnost dinner Now musí zajistit, že aktualizovaný kód zůstane konzistentní s návrhem. Vytvářejí diagramy závislostí, které popisují vrstvy funkčnosti v systému, určují povolené závislosti mezi nimi a přidružují řešení artefakty k těmto vrstvám.
 
 |**Diagram**|**Popisuje**|
-|-----------------|-------------------|
+|-|-|
 |*Diagram závislostí*<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Závislost diagram organizuje a mapuje artefakty v řešení sady Visual Studio účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|
 
  Například následující diagram závislostí popisuje závislosti mezi vrstvami a počet artefaktů, které jsou spojené s každou vrstvou:
@@ -330,7 +330,7 @@ Mapa ukazuje, že třída PaymentApprover je nyní v oboru názvů DinnerNow.Bus
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům
 
 |**Diagram**|**Popisuje**|
-|-----------------|-------------------|
+|-|-|
 |Diagram závislostí|Logická architektura systému. Pomocí ověřování závislostí se ujistěte, že kód zůstane konzistentní s návrhem.<br /><br /> Chcete-li usnadnit identifikaci existujících dependencys nebo zamýšlený dependencys, vytvořte si mapu kódu a seskupte související položky. Chcete-li vytvořit diagram závislostí, naleznete v tématu:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)|
 |Diagram tříd (založený na kódu)|Existující třídy v kódu pro konkrétní projekt.<br /><br /> Chcete-li vizualizovat a upravit existující třídu v kódu, použijte nástroj Návrhář tříd.<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
@@ -369,11 +369,11 @@ Diagram třídy má následující hlavní funkce:
 
 - *Přidružení* označuje určitý druh vztahu mezi dvěma Klasifikátory.
 
-    - *Agregace* je přidružení, které označuje sdílené vlastnictví mezi Klasifikátory.
+  - *Agregace* je přidružení, které označuje sdílené vlastnictví mezi Klasifikátory.
 
-    - A *složení* je přidružení, které označuje vztah část celek mezi Klasifikátory.
+  - A *složení* je přidružení, které označuje vztah část celek mezi Klasifikátory.
 
-     Chcete-li zobrazit souhrnných hodnot nebo složení, nastavte **agregace** vlastnost pro přidružení. **Sdílené** zobrazuje agregace a **složené** zobrazuje sestavení.
+    Chcete-li zobrazit souhrnných hodnot nebo složení, nastavte **agregace** vlastnost pro přidružení. **Sdílené** zobrazuje agregace a **složené** zobrazuje sestavení.
 
 - A *závislost* znamená, že změna definice jednoho třídění může změnit definice jiného třídění.
 
@@ -399,7 +399,7 @@ Jako výchozí bod pro zkoumání a probírání existujících tříd můžete 
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům
 
 |**Diagram**|**Popis**|
-|-----------------|---------------------|
+|-|-|
 |Diagram závislostí|Definujte logickou architekturu systému souvislosti se třídami.<br /><br /> Pomocí ověřování závislostí se ujistěte, že kód zůstane konzistentní s návrhem.<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> K identifikaci tříd, jejich vztahy a jejich metod, vytvořte mapu kódu, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -440,13 +440,13 @@ Diagram závislostí má následující hlavní funkce:
 
      Číslo ve vrstvě zobrazuje počet artefaktů, které jsou spojeny s vrstvou. Tyto artefakty mohou být obory názvů, projekty, třídy, metody a tak dále. Při interpretaci počtu artefaktů ve vrstvě mějte na paměti následující:
 
-    - Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.
+  - Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.
 
-         Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.
+       Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.
 
-    - Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.
+  - Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.
 
-     Chcete-li zobrazit artefakty, které jsou propojeny s vrstvou, klikněte pravým tlačítkem na závislost a potom klikněte na tlačítko **zobrazit odkazy** otevřete **Průzkumník vrstev**.
+    Chcete-li zobrazit artefakty, které jsou propojeny s vrstvou, klikněte pravým tlačítkem na závislost a potom klikněte na tlačítko **zobrazit odkazy** otevřete **Průzkumník vrstev**.
 
 - A *závislost* znamená, že jedna vrstva může použít funkci v jiné vrstvě, ale ne naopak. A *obousměrná závislost* znamená, že jedna vrstva může použít funkci v jiné vrstvě a naopak.
 
@@ -473,13 +473,13 @@ Diagramy závislosti umožňují:
 #### <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům
 
 |**Diagram**|**Popis**|
-|-----------------|---------------------|
+|-|-|
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> Chcete-li vytvořit vrstvy, Generovat mapu kódu a potom seskupte položky na mapě jako potenciální vrstvy. Přetáhněte skupiny z mapy do diagram závislostí.<br /><br /> Další informace:<br /><br /> - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Externí zdroje
 
 |**Kategorie**|**Odkazy**|
-|------------------|---------------|
+|-|-|
 |**Fóra**|- [Visual Studio Visualization & Modeling nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Viz také:

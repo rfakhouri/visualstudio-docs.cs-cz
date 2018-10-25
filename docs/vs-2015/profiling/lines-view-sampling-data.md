@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a972d529b93445c1c66e9418b7d8f3e068b005c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932985"
 ---
 # <a name="lines-view---sampling-data"></a>Zobrazení řádků – vzorkování dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49289936"
   
  Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz. Příkaz je identifikován následující:  
   
--   Zdrojový soubor, který obsahuje Function – příkaz  
+- Zdrojový soubor, který obsahuje Function – příkaz  
   
--   Funkce, která obsahuje příkaz.  
+- Funkce, která obsahuje příkaz.  
   
--   Zdrojový řádek, ve kterém začíná příkaz.  
+- Zdrojový řádek, ve kterém začíná příkaz.  
   
--   Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
+- Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
   
--   Řádku zdroje, u které končí příkaz.  
+- Řádku zdroje, u které končí příkaz.  
   
--   Znak ve zdrojovém řádku, kdy příkaz skončí.  
+- Znak ve zdrojovém řádku, kdy příkaz skončí.  
   
- Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
+  Sloupec název řádek obsahuje seřaditelné zřetězení těchto dat identifikátor.  
   
- Podle definice příkazu nevolá dalších funkcí. Proto jsou uvedeny pouze výhradní hodnoty.  
+  Podle definice příkazu nevolá dalších funkcí. Proto jsou uvedeny pouze výhradní hodnoty.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  

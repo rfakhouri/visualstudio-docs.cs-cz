@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b9a49ee6a59870d37676e2ca969e99a1516658
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941734"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -61,8 +61,8 @@ Protože tyto položky nejsou uložené v registru globální, existují zvláš
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-  > [!NOTE]
-  > `<config>` odpovídá instanci sady Visual Studio, která chcete procházet.
+   > [!NOTE]
+   > `<config>` odpovídá instanci sady Visual Studio, která chcete procházet.
 
 Zobrazí se výzva k zadání názvu hive, který se stane názvem izolované hive. Když tak učiníte, byste měli přejít registru v izolované hive, který jste vytvořili.
 

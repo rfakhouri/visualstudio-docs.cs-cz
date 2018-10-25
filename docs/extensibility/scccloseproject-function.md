@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: abb0cd825b6b09b5fdb7ad37f8066151ee42d3fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938094"
 ---
 # <a name="scccloseproject-function"></a>Scccloseproject – funkce
 Tato funkce se zavře projekt knec konkrétní relace.  
@@ -53,4 +53,4 @@ SCCRTN SccCloseProject (
 ## <a name="see-also"></a>Viz také:  
  [Funkce modulu plug-in API zdrojového ovládacího prvku](../extensibility/source-control-plug-in-api-functions.md)   
  [Sccopenproject –](../extensibility/sccopenproject-function.md)   
- [Sccinitialize –](../extensibility/sccinitialize-function.md)
+ [SccInitialize](../extensibility/sccinitialize-function.md)

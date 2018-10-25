@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949640"
 ---
 # <a name="create-options-pages"></a>Vytvoření stránky Možnosti
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spravovaného balíčku rozhraní .NET framework, třídy odvozené z <xref:Microsoft.VisualStudio.Shell.DialogPage> rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí tak, že přidáte **možnosti** stránky v části **nástroje** nabídky.  
@@ -47,17 +47,17 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spravovaného bal
 ## <a name="implement-dialogpage-class"></a>Implementace třídy DialogPage třídy  
  Objekt, který poskytuje na VSPackage provádění <xref:Microsoft.VisualStudio.Shell.DialogPage>-odvozený typ může využívat následující zděděné funkce:  
   
--   Výchozí uživatelské rozhraní okna.  
+- Výchozí uživatelské rozhraní okna.  
   
--   A výchozí mechanismus trvalosti, které jsou k dispozici buď pokud <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> aplikován na třídu, nebo pokud <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> je nastavena na `true` pro <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> , která je použita na třídu.  
+- A výchozí mechanismus trvalosti, které jsou k dispozici buď pokud <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> aplikován na třídu, nebo pokud <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> je nastavena na `true` pro <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> , která je použita na třídu.  
   
--   Podpora automatizace.  
+- Podpora automatizace.  
   
- Minimální požadavky pro implementaci objekt **možnosti nástrojů** stránky <xref:Microsoft.VisualStudio.Shell.DialogPage> , je přidání veřejné vlastnosti.  
+  Minimální požadavky pro implementaci objekt **možnosti nástrojů** stránky <xref:Microsoft.VisualStudio.Shell.DialogPage> , je přidání veřejné vlastnosti.  
   
- Pokud třída správně zaregistrovaný jako **možnosti nástrojů** stránce poskytovatele, pak jeho veřejné vlastnosti jsou k dispozici na **možnosti** část **nástroje** nabídce ve formuláři mřížku vlastností.  
+  Pokud třída správně zaregistrovaný jako **možnosti nástrojů** stránce poskytovatele, pak jeho veřejné vlastnosti jsou k dispozici na **možnosti** část **nástroje** nabídce ve formuláři mřížku vlastností.  
   
- Všechny tyto funkce výchozí lze přepsat. Například k vytváření sofistikovanějších uživatelského rozhraní vyžaduje pouze výchozí implementaci přepsání <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+  Všechny tyto funkce výchozí lze přepsat. Například k vytváření sofistikovanějších uživatelského rozhraní vyžaduje pouze výchozí implementaci přepsání <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Příklad  
  Dále je jednoduchý "Hello world" implementace stránky možnosti. Přidáním následujícího kódu do projektu výchozí vytvořených šablonou sady Visual Studio balíček s **příkazu nabídky** zaškrtnutou možnost adekvátní vám ukáže funkci stránky možnost.  

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942397"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogové okno Editor sad pravidel (starší verze)
 Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ Toto téma popisuje, jak používat **editoru nastavte pravidlo** dialogové okn
   
  Výrazy podporují následující operátory:  
   
--   Relační operátory: ==, =,! =  
+- Relační operátory: ==, =,! =  
   
--   Relační operátory: <, \<=, >, > =  
+- Relační operátory: <, \<=, >, > =  
   
--   Aritmetické operátory: +, -, *, /, MOD  
+- Aritmetické operátory: +, -, *, /, MOD  
   
--   Logické operátory: A, & &, OR, &#124; &#124;, ne,!  
+- Logické operátory: A, & &, OR, &#124; &#124;, ne,!  
   
--   Bitové operátory: &&#124;  
+- Bitové operátory: &&#124;  
   
- Priorita operátorů výraz následuje pravidla priorit operátor C#.  
+  Priorita operátorů výraz následuje pravidla priorit operátor C#.  
   
- Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Zastavení a aktualizace funkcí  
  **Potom akce:** a **Else akce:** výrazy podporují **zastaví** a **aktualizace** funkce. Použít **zastaví** funkci, zadejte **Zastavit** do **pak akce:** nebo **Else akce:** textového pole. **Zastaví** akce způsobí spuštění sady pravidel se okamžitě zastavit a ovládací prvek vrátí volajícímu kódu. Můžete použít **aktualizace** funkce s vpřed řetězení.  

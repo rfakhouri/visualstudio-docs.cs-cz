@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949305"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Řešení potíží s chybějící VSPackage nebo některá z jeho závislostí  
   
-1.  Pro spravovaný kód Ujistěte se, že cesty odkazů jsou správné.  
+1. Pro spravovaný kód Ujistěte se, že cesty odkazů jsou správné.  
   
-    1.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
+   1.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-    2.  Vyberte **odkazy** kartu **stránky vlastností** dialogové okno a ujistěte se, že všechny cesty mají správný. Alternativně můžete použít **prohlížeče objektů** a vyhledejte odkazované objekty.  
+   2.  Vyberte **odkazy** kartu **stránky vlastností** dialogové okno a ujistěte se, že všechny cesty mají správný. Alternativně můžete použít **prohlížeče objektů** a vyhledejte odkazované objekty.  
   
-         Pro spravovaný kód, můžete použít [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) zobrazíte podrobnosti o načtení sestavení se nezdařilo.  
+        Pro spravovaný kód, můžete použít [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) zobrazíte podrobnosti o načtení sestavení se nezdařilo.  
   
-2.  Nespravovaný kód, najít identifikátor CLSID VSPackage v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzlu registru CLSID:  
+2. Nespravovaný kód, najít identifikátor CLSID VSPackage v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uzlu registru CLSID:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<verze >* \CLSID  
   
- Ujistěte se, že položka InprocServer32 má správnou cestu knihovny dll balíčku VSPackage.  
+   Ujistěte se, že položka InprocServer32 má správnou cestu knihovny dll balíčku VSPackage.  
   
 ## <a name="see-also"></a>Viz také  
  [Balíčky VSPackage](../extensibility/internals/vspackages.md)

@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948765"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Přepište metody srovnatelných typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202823"
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, přepište <xref:System.Object.Equals%2A>. Pokud svůj oblíbený programovací jazyk podporuje přetížení operátoru, zadejte následující operátory:
 
--   op_Equality
+- op_Equality
 
--   op_inequality –
+- op_inequality –
 
--   op_LessThan
+- op_LessThan
 
--   op_GreaterThan
+- op_GreaterThan
 
- V jazyce C#, tokeny, které se používají k vyjádření tyto operátory jsou následující: ==,! =, \<, a >.
+  V jazyce C#, tokeny, které se používají k vyjádření tyto operátory jsou následující: ==,! =, \<, a >.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Je bezpečné potlačit upozornění tohoto pravidla při porušení zásad je způsobeno chybějící operátory a svůj oblíbený programovací jazyk nepodporuje přetěžování, stejně jako v případě v jazyce Visual Basic .NET. Je také bezpečně potlačení upozornění pro toto pravidlo, když se aktivuje na operátory rovnosti jiné než op_Equality Pokud zjistíte, že implementace operátorů nemá smysl v kontextu vašich aplikací. Nicméně byste měli vždy přes op_Equality a == – operátor Pokud přepíšete metodu Object.Equals.

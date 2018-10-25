@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6ca9fd11e56631061d86c35f9e6bd686b8750b50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928656"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 
@@ -51,11 +51,11 @@ TextTransform [<options>] <templateName>
 ### <a name="parameters"></a>Parametry
 
 |**Argument**|**Popis**|
-|------------------|---------------------|
+|-|-|
 |`templateName`|Určuje název souboru šablony, který chcete transformovat.|
 
 |**Možnost**|**Popis**|
-|----------------|---------------------|
+|-|-|
 |**-out** \<název souboru >|Soubor, ke kterému je zapsán výstup transformace.|
 |**-r** \<sestavení >|Používá se pro kompilaci a spuštění textové šablony sestavení.|
 |**-u** \<oboru názvů >|Obor názvů, který se používá pro kompilaci šablony.|
@@ -68,7 +68,7 @@ TextTransform [<options>] <templateName>
 ## <a name="related-topics"></a>Související témata
 
 |Úloha|Téma|
-|----------|-----------|
+|-|-|
 |Generování souborů v řešení sady Visual Studio.|[Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Procesory direktiv pro transformaci zdrojích dat zápisu.|[Přizpůsobení transformace textu T4](../modeling/customizing-t4-text-transformation.md)|
 |Zápis hostitele šablonování textu, který umožňuje vyvolat textových šablon z vaší aplikace.|[Zpracování textových šablon pomocí vlastního hostitele](../modeling/processing-text-templates-by-using-a-custom-host.md)|

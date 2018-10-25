@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939264"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Přidání vyhledávání do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete přidat stejný integraci vyhledávacích funkcí, které se zobrazí jinde v sadě Visual Studio. Tato funkce zahrnuje následující funkce:  
   
--   Vyhledávací pole, která je vždy umístěny v vlastní oblast panelu nástrojů.  
+- Vyhledávací pole, která je vždy umístěny v vlastní oblast panelu nástrojů.  
   
--   Indikátor průběhu, který je jako překryvný obrázek na vyhledávací pole samotného.  
+- Indikátor průběhu, který je jako překryvný obrázek na vyhledávací pole samotného.  
   
--   Možnost zobrazit výsledky jako při zadávání jednotlivých znaků (rychlé vyhledávání), nebo až po stiskněte klávesu Enter (vyhledávání na vyžádání).  
+- Možnost zobrazit výsledky jako při zadávání jednotlivých znaků (rychlé vyhledávání), nebo až po stiskněte klávesu Enter (vyhledávání na vyžádání).  
   
--   Seznam, který ukazuje podmínky, u kterých jste hledáte jako poslední.  
+- Seznam, který ukazuje podmínky, u kterých jste hledáte jako poslední.  
   
--   Možnost filtrovat hledání podle konkrétních polí nebo aspektů hledání cíle.  
+- Možnost filtrovat hledání podle konkrétních polí nebo aspektů hledání cíle.  
   
- Podle tohoto postupu se dozvíte, jak provádět následující úlohy:  
+  Podle tohoto postupu se dozvíte, jak provádět následující úlohy:  
   
 1.  Vytvořte projekt VSPackage.  
   

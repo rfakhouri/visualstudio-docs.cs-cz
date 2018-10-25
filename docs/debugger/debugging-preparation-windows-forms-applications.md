@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951064"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Příprava na ladění: Formulářová aplikace Windows
 Šablona projektu Windows Forms vytvoří aplikace modelu Windows Forms. Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je jednoduché. Další informace najdete v tématu [vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
@@ -47,23 +47,23 @@ ms.locfileid: "44282805"
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Chcete-li ladit aplikace C#, F # nebo Visual Basic Windows Forms  
   
-1.  Otevřete projekt v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1. Otevřete projekt v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-2.  Podle potřeby vytvořte zarážky.  
+2. Podle potřeby vytvořte zarážky.  
   
-     Protože aplikace Windows Forms jsou založené na událostech, vaše zarážky přejde do kódu obslužné rutiny události nebo do metody volané kódem obslužné rutiny události. Typické události, ve které chcete umístit zarážky zahrnují:  
+    Protože aplikace Windows Forms jsou založené na událostech, vaše zarážky přejde do kódu obslužné rutiny události nebo do metody volané kódem obslužné rutiny události. Typické události, ve které chcete umístit zarážky zahrnují:  
   
-    1.  Události související s ovládacím prvkem, jako je například klikněte na Enter, atd.  
+   1. Události související s ovládacím prvkem, jako je například klikněte na Enter, atd.  
   
-    2.  Události související s aplikací při spuštění a vypnutí, jako je zatížení, aktivováno atd.  
+   2. Události související s aplikací při spuštění a vypnutí, jako je zatížení, aktivováno atd.  
   
-    3.  Fokus a události ověřování.  
+   3. Fokus a události ověřování.  
   
-     Další informace najdete v tématu [vytváření obslužných rutin událostí ve Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
+      Další informace najdete v tématu [vytváření obslužných rutin událostí ve Windows Forms](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms).  
   
-3.  Na **ladění** nabídky, klikněte na tlačítko **Start**.  
+3. Na **ladění** nabídky, klikněte na tlačítko **Start**.  
   
-4.  Ladění pomocí technik popsaných v [základy ladicího programu](../debugger/getting-started-with-the-debugger.md).  
+4. Ladění pomocí technik popsaných v [základy ladicího programu](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   

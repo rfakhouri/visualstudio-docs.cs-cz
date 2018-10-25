@@ -17,27 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933180"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Návod: Vytvoření vazby k datům ze služby v projektu doplňku VSTO
   Vytvoření vazby dat k ovládacím prvkům hostitele v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky do dokumentu aplikace Microsoft Office Word, svázat ovládací prvky dat načtených z obsahu služby MSDN a reagovat na události v době běhu.  
   
- **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro Word 2010. Další informace najdete v tématu [dostupné funkce podle aplikace systému Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro Word 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Tento návod znázorňuje následující úlohy:  
   
--   Přidání <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládacího prvku do dokumentu za běhu.  
+- Přidání <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládacího prvku do dokumentu za běhu.  
   
--   Vytvoření vazby <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládacího prvku k datům z webové služby.  
+- Vytvoření vazby <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládacího prvku k datům z webové služby.  
   
--   Reakce na <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> události <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládacího prvku.  
+- Reakce na <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> události <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ovládacího prvku.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  

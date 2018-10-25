@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935390"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Konfigurace brány Windows Firewall pro vzdálené ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Toto téma popisuje postup konfigurace brány firewall pro povolení vzdáleného ladění na počítačích, na kterých běží tyto operační systémy:  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8 nebo 8.1  
+- Windows 8 nebo 8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008 (R2)  
+- Windows Server 2008 (R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- Pokud v síti, na kterém jsou ladění není chráněné bránou firewall, tato konfigurace je zbytečné. V opačném případě počítače, který je hostitelem aplikace Visual Studio a vzdáleného počítače, který má být laděn vyžadovat změny konfigurace brány firewall.  
+  Pokud v síti, na kterém jsou ladění není chráněné bránou firewall, tato konfigurace je zbytečné. V opačném případě počítače, který je hostitelem aplikace Visual Studio a vzdáleného počítače, který má být laděn vyžadovat změny konfigurace brány firewall.  
   
- **Protokol IPSec** Pokud síť vyžaduje tuto komunikaci se provádí pomocí protokolu IPSec, je nutné otevřít další porty na hostitelském počítači Visual Studio, tak vzdálenému počítači.  
+  **Protokol IPSec** Pokud síť vyžaduje tuto komunikaci se provádí pomocí protokolu IPSec, je nutné otevřít další porty na hostitelském počítači Visual Studio, tak vzdálenému počítači.  
   
- **Webový Server** Pokud ladíte vzdáleného webového serveru, je nutné otevřít další port na vzdáleném počítači.  
+  **Webový Server** Pokud ladíte vzdáleného webového serveru, je nutné otevřít další port na vzdáleném počítači.  
   
- Všimněte si, že oba počítače nemají běžet stejný operační systém. Například v počítači s Visual Studio můžete spustit Windows 10 a vzdáleného počítače můžete spustit systém Windows Server 2012 R2.  
+  Všimněte si, že oba počítače nemají běžet stejný operační systém. Například v počítači s Visual Studio můžete spustit Windows 10 a vzdáleného počítače můžete spustit systém Windows Server 2012 R2.  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Konfigurace brány Windows Firewall v počítači aplikace Visual Studio  
  Pokyny ke konfiguraci brány Windows firewall se mírně liší v různých operačních systémech. Na Windows 7 nebo Windows Server 2008, slovo **program** slouží; v systému Windows 8 a 8.1, Windows 10 a Windows Server 2012, slovo **aplikace** se používá.  V následujícím postupu použijeme slovo **aplikace**.  

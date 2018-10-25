@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948761"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Návod: Přidání přijímačů událostí funkce
   Přijímače událostí funkcí jsou metody, které jsou spuštěny při jedné z následujících událostí související s funkcí ve službě SharePoint:
 
--   Instalace součásti.
+- Instalace součásti.
 
--   Se funkce aktivuje.
+- Se funkce aktivuje.
 
--   Funkce je deaktivováno.
+- Funkce je deaktivováno.
 
--   Funkce se odebere.
+- Funkce se odebere.
 
- Tento návod ukazuje, jak přidat přijímače událostí funkcí v projektu služby SharePoint. To demonstruje následující úkoly:
+  Tento návod ukazuje, jak přidat přijímače událostí funkcí v projektu služby SharePoint. To demonstruje následující úkoly:
 
--   Vytvoření prázdného projektu pomocí příjemce událostí funkce.
+- Vytvoření prázdného projektu pomocí příjemce událostí funkce.
 
--   Zpracování **FeatureDeactivating** metody.
+- Zpracování **FeatureDeactivating** metody.
 
--   Přidání oznámení do seznamu oznámení pomocí objektového modelu projektu SharePoint.
+- Přidání oznámení do seznamu oznámení pomocí objektového modelu projektu SharePoint.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:

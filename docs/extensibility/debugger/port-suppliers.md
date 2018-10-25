@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948223"
 ---
 # <a name="port-suppliers"></a>Dodavatelé portů
 V architektuře ladicího programu *dodavatele portu*:  
   
--   Je obsažen podle serveru a poskytuje porty na požadavek na tomto serveru.  
+- Je obsažen podle serveru a poskytuje porty na požadavek na tomto serveru.  
   
--   Můžete přidávat a odebírat porty z nadřazeného serveru.  
+- Můžete přidávat a odebírat porty z nadřazeného serveru.  
   
--   Můžete zobrazit výčet všechny porty, který má zadaný na serveru.  
+- Můžete zobrazit výčet všechny porty, který má zadaný na serveru.  
   
--   Je reprezentován [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní, která je registrována pomocí sady Visual Studio prostřednictvím registru. Toto rozhraní lze získat voláním [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- Je reprezentován [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní, která je registrována pomocí sady Visual Studio prostřednictvím registru. Toto rozhraní lze získat voláním [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje výchozí dodavatele portu a výchozí port. Pokud je nutné implementovat port. Tento vlastní port, dodavatel port. Tento vlastní port také nutné implementovat zadat vlastní porty.  
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje výchozí dodavatele portu a výchozí port. Pokud je nutné implementovat port. Tento vlastní port, dodavatel port. Tento vlastní port také nutné implementovat zadat vlastní porty.  
   
 ## <a name="see-also"></a>Viz také:  
  [Servery](../../extensibility/debugger/servers-visual-studio-sdk.md)   

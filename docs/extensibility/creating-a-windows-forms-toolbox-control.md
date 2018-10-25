@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936035"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms panel nástrojů
 Šablona položky ovládacího prvku Windows Forms panel nástrojů, který je součástí aplikace Visual Studio Extensibility Tools (VS SDK) umožňuje vytvořit ovládací prvek, který je automaticky přidán do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření ovládacího prvku jednoduchého čítače, které můžete distribuovat ostatním uživatelům.  
@@ -209,7 +209,7 @@ ms.locfileid: "39498708"
      Čítač obnoví **0**.  
   
 ## <a name="next-steps"></a>Další kroky  
- Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName.vsix* v * \bin\debug\* složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete *VSIX* soubor k síti nebo na web. Když uživatel otevře *VSIX* soubor, ovládací prvek je nainstalován a přidali do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát *VSIX* do souboru [galerii sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webová stránka, aby uživatelé mohli najít tak, že přejdete v **nástroje**  >  **Rozšíření a aktualizace** dialogového okna.  
+ Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName.vsix* v <em>\bin\debug\* složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete *.vsix</em> soubor k síti nebo na web. Když uživatel otevře *VSIX* soubor, ovládací prvek je nainstalován a přidali do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát *VSIX* do souboru [galerii sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webová stránka, aby uživatelé mohli najít tak, že přejdete v **nástroje**  >  **Rozšíření a aktualizace** dialogového okna.  
   
 ## <a name="see-also"></a>Viz také:  
  [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

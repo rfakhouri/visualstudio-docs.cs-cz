@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942826"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Všechna první písmena velká  
  Mena všech slov velká je styl, ve kterém jsou první písmena většinu nebo všechny slov v rámci frázi velkými písmeny. V sadě Visual Studio se používá mena všech slov velká pro mnoho položek, včetně:  
   
--   **Popisy tlačítek.** Příklad: "náhled vybrané položky"  
+- **Popisy tlačítek.** Příklad: "náhled vybrané položky"  
   
--   **Záhlaví sloupců.** Příklad: "systém odpovědi"  
+- **Záhlaví sloupců.** Příklad: "systém odpovědi"  
   
--   **Položky nabídky.** Příklad: "Uložit vše"  
+- **Položky nabídky.** Příklad: "Uložit vše"  
   
- Při použití mena všech slov velká, toto jsou pokyny pro kdy velké první písmeno slova a kdy je nechat, malá písmena:  
+  Při použití mena všech slov velká, toto jsou pokyny pro kdy velké první písmeno slova a kdy je nechat, malá písmena:  
   
 |Velká písmena|Komentáře a příklady|  
 |---------------|---------------------------|  

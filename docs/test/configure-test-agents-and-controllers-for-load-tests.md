@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942982"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurace testovacích agentů a testovací kontrolery pro spouštění zátěžových testů
 
@@ -35,25 +35,25 @@ Architektura simulace zátěže se skládá z klientské aplikace Visual Studio,
 
 Tato architektura přináší následující výhody:
 
--   Možnost škálovat generování zátěže přidáváním dalších testovacích agentů k testovacímu kontroléru.
+- Možnost škálovat generování zátěže přidáváním dalších testovacích agentů k testovacímu kontroléru.
 
--   Pružnost při instalaci softwaru klientu, testovacího kontroléru a testovacího agentu na stejném počítači i různých počítačích. Příklad:
+- Pružnost při instalaci softwaru klientu, testovacího kontroléru a testovacího agentu na stejném počítači i různých počítačích. Příklad:
 
-     **Místní konfigurace:**
+   **Místní konfigurace:**
 
-    -   Počítač 1: Visual Studio, kontrolér, agent.
+  - Počítač 1: Visual Studio, kontrolér, agent.
 
-     ![Místní počítače pomocí řadiče a agentů](./media/load-test-configa.png)
+    ![Místní počítače pomocí řadiče a agentů](./media/load-test-configa.png)
 
-     **Typická Vzdálená konfigurace:**
+    **Typická Vzdálená konfigurace:**
 
-    -   Počítač 1 a 2: Visual Studio (více testerů může používat stejný kontrolér).
+  - Počítač 1 a 2: Visual Studio (více testerů může používat stejný kontrolér).
 
-    -   Počítač 3: Kontrolér (může mít nainstalovány také agenty).
+  - Počítač 3: Kontrolér (může mít nainstalovány také agenty).
 
-    -   Počítač 4 n: Agent nebo agenty přidružené ke kontroleru na počítač 3.
+  - Počítač 4 n: Agent nebo agenty přidružené ke kontroleru na počítač 3.
 
-     ![Vzdálené počítače pomocí řadiče a agentů](./media/load-test-configb.png)
+    ![Vzdálené počítače pomocí řadiče a agentů](./media/load-test-configb.png)
 
 Přestože testovací kontrolér obvykle spravuje několik testovacích agentů, jeden agent může být přidružen pouze k jednomu kontroléru. Každý testovací agent může být sdílen týmem vývojářů. Tato architektura umožňuje snadno zvýšit počet testovacích agentů a generovat tak větší zátěž.
 

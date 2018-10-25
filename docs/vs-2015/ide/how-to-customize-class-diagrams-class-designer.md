@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950973"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Postupy: Přizpůsobení diagramů tříd (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete př
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Zobrazení skrytých vztahů  
   
-1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
+1. Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
-2.  Klikněte pravým tlačítkem na typ se skrytým přidružením nebo dědičností.  
+2. Klikněte pravým tlačítkem na typ se skrytým přidružením nebo dědičností.  
   
- Klikněte na tlačítko **zobrazit všechny členy** pro Asociační čáry a klikněte na **zobrazit základní třídu** nebo **Zobrazit odvozené třídy** u čar dědičnosti.  
+   Klikněte na tlačítko **zobrazit všechny členy** pro Asociační čáry a klikněte na **zobrazit základní třídu** nebo **Zobrazit odvozené třídy** u čar dědičnosti.  
   
 ##  <a name="RemoveCodeAndShape"></a> Odebrání tvaru z diagramu tříd  
  Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu typu. Odebrání tvarů typu z diagramu tříd ovlivní pouze tento diagram: základní kód definující typ a ostatní diagramy, které typ zobrazují, ovlivněny nejsou.  

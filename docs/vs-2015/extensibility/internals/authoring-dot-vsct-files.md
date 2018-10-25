@@ -15,12 +15,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b860e279696b4f8c325995ecd09fe257621adab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941331"
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Soubory Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,159 +86,159 @@ Tento dokument ukazuje, jak vytvářet souboru .vsct přidání položek nabídk
   
 ##### <a name="to-define-ui-elements"></a>Chcete-li definovat prvky uživatelského rozhraní  
   
-1.  Pokud definujete nové nabídky, podnabídky, místní nabídky nebo panely nástrojů, přidejte `Menus` elementu `Commands` element. Pak pro jednotlivé nabídky, který se má vytvořit, přidejte [nabídky](../../extensibility/menu-element.md) element `Menus` element.  
+1. Pokud definujete nové nabídky, podnabídky, místní nabídky nebo panely nástrojů, přidejte `Menus` elementu `Commands` element. Pak pro jednotlivé nabídky, který se má vytvořit, přidejte [nabídky](../../extensibility/menu-element.md) element `Menus` element.  
   
-     Nastavte `guid` a `id` atributy `Menu` element a pak nastavte `type` atribut na typ, který chcete nabídky. Můžete také nastavit `priority` atribut vytvořit relativní umístění v nabídce v nadřazené skupině.  
+    Nastavte `guid` a `id` atributy `Menu` element a pak nastavte `type` atribut na typ, který chcete nabídky. Můžete také nastavit `priority` atribut vytvořit relativní umístění v nabídce v nadřazené skupině.  
   
-    > [!NOTE]
-    >  `priority` Atribut se nedá použít u kontextové nabídky a panely nástrojů.  
+   > [!NOTE]
+   >  `priority` Atribut se nedá použít u kontextové nabídky a panely nástrojů.  
   
-2.  Všechny příkazy v integrovaném vývojovém prostředí sady Visual Studio musí být hostovány příkaz skupin, které jsou přímo podřízené nabídek a panelů nástrojů. Pokud přidáváte nové nabídky nebo panely nástrojů rozhraní IDE, tyto musí obsahovat novou skupinu příkazů. Můžete také přidat skupinu příkazů do existující nabídky a panely nástrojů tak, aby vaše příkazy můžete vizuálně seskupit.  
+2. Všechny příkazy v integrovaném vývojovém prostředí sady Visual Studio musí být hostovány příkaz skupin, které jsou přímo podřízené nabídek a panelů nástrojů. Pokud přidáváte nové nabídky nebo panely nástrojů rozhraní IDE, tyto musí obsahovat novou skupinu příkazů. Můžete také přidat skupinu příkazů do existující nabídky a panely nástrojů tak, aby vaše příkazy můžete vizuálně seskupit.  
   
-     Když přidáte novou skupinu příkazů, musíte nejdřív vytvořit `Groups` prvek a potom přidejte do ní [skupiny](../../extensibility/group-element.md) – element pro každou skupinu příkazů.  
+    Když přidáte novou skupinu příkazů, musíte nejdřív vytvořit `Groups` prvek a potom přidejte do ní [skupiny](../../extensibility/group-element.md) – element pro každou skupinu příkazů.  
   
-     Nastavte `guid` a `id` atributy každého `Group` element a pak nastavte `priority` atribut vytvořit relativní pozici v nabídce nadřazené skupiny. Další informace najdete v tématu [vytvoření opakovaně použitelného skupiny z tlačítka](../../extensibility/creating-reusable-groups-of-buttons.md).  
+    Nastavte `guid` a `id` atributy každého `Group` element a pak nastavte `priority` atribut vytvořit relativní pozici v nabídce nadřazené skupiny. Další informace najdete v tématu [vytvoření opakovaně použitelného skupiny z tlačítka](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
-3.  Pokud přidáváte nové příkazy rozhraní IDE, přidejte `Buttons` elementu `Commands` elementu. Pak pro každý příkaz, přidejte [tlačítko](../../extensibility/button-element.md) elementu `Buttons` element.  
+3. Pokud přidáváte nové příkazy rozhraní IDE, přidejte `Buttons` elementu `Commands` elementu. Pak pro každý příkaz, přidejte [tlačítko](../../extensibility/button-element.md) elementu `Buttons` element.  
   
-    1.  Nastavte `guid` a `id` atributy každého `Button` element a pak nastavte `type` atribut na typ, který chcete tlačítko. Můžete také nastavit `priority` atribut vytvořit relativní pozici příkazu v nadřazené skupině.  
+   1. Nastavte `guid` a `id` atributy každého `Button` element a pak nastavte `type` atribut na typ, který chcete tlačítko. Můžete také nastavit `priority` atribut vytvořit relativní pozici příkazu v nadřazené skupině.  
   
-        > [!NOTE]
-        >  Použití `type="button"` pro standardní příkazy a tlačítka na panely nástrojů.  
+      > [!NOTE]
+      >  Použití `type="button"` pro standardní příkazy a tlačítka na panely nástrojů.  
   
-    2.  V `Button` elementu, přidat [řetězce](../../extensibility/strings-element.md) element, který obsahuje [ButtonText](../../extensibility/buttontext-element.md) elementu a [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element poskytuje textový popisek pro položku nabídky nebo popisu tlačítka pro tlačítko toolbar. `CommandName` Element poskytuje název příkazu, pro použití v příkazu dobře.  
+   2. V `Button` elementu, přidat [řetězce](../../extensibility/strings-element.md) element, který obsahuje [ButtonText](../../extensibility/buttontext-element.md) elementu a [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element poskytuje textový popisek pro položku nabídky nebo popisu tlačítka pro tlačítko toolbar. `CommandName` Element poskytuje název příkazu, pro použití v příkazu dobře.  
   
-    3.  Pokud váš příkaz ikonu, vytvořte [ikonu](../../extensibility/icon-element.md) element v `Button` elementu a nastavte jeho `guid` a `id` atributů `Bitmap` – element pro ikonu.  
+   3. Pokud váš příkaz ikonu, vytvořte [ikonu](../../extensibility/icon-element.md) element v `Button` elementu a nastavte jeho `guid` a `id` atributů `Bitmap` – element pro ikonu.  
   
-        > [!NOTE]
-        >  Tlačítka panelu nástrojů musí mít ikony.  
+      > [!NOTE]
+      >  Tlačítka panelu nástrojů musí mít ikony.  
   
-     Další informace najdete v tématu [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+      Další informace najdete v tématu [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
-4.  Pokud některý z vašich příkazů vyžadují ikony, přidejte [rastrové obrázky](../../extensibility/bitmaps-element.md) elementu `Commands` elementu. Obnovte pro jednotlivé ikony [rastrový obrázek](../../extensibility/bitmap-element.md) elementu `Bitmaps` elementu. To je, kde zadáte umístění prostředku rastrového obrázku. Další informace najdete v tématu [přidávání ikon k příkazům nabídky](../../extensibility/adding-icons-to-menu-commands.md).  
+4. Pokud některý z vašich příkazů vyžadují ikony, přidejte [rastrové obrázky](../../extensibility/bitmaps-element.md) elementu `Commands` elementu. Obnovte pro jednotlivé ikony [rastrový obrázek](../../extensibility/bitmap-element.md) elementu `Bitmaps` elementu. To je, kde zadáte umístění prostředku rastrového obrázku. Další informace najdete v tématu [přidávání ikon k příkazům nabídky](../../extensibility/adding-icons-to-menu-commands.md).  
   
- Můžete se spolehnout na struktuře vztahy k nadřazeným položkám správně umístit Většina nabídek, skupiny a příkazy. Pro příkaz velmi velké sady nebo když nabídky, skupiny nebo příkazu musí být uvedena na více místech, doporučujeme, že zadáte příkaz umístění.  
+   Můžete se spolehnout na struktuře vztahy k nadřazeným položkám správně umístit Většina nabídek, skupiny a příkazy. Pro příkaz velmi velké sady nebo když nabídky, skupiny nebo příkazu musí být uvedena na více místech, doporučujeme, že zadáte příkaz umístění.  
   
 ##### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>Chcete-li využívají vztahy k nadřazeným položkám umístí prvky uživatelského rozhraní v rozhraní IDE  
   
-1.  Pro typické vztahy k nadřazeným položkám, vytvořte `Parent` element v každé `Menu`, `Group`, a `Command` element, který je definován v balíčku.  
+1. Pro typické vztahy k nadřazeným položkám, vytvořte `Parent` element v každé `Menu`, `Group`, a `Command` element, který je definován v balíčku.  
   
-     Cílem `Parent` je prvek nabídky nebo skupinu, která bude obsahovat nabídky, skupiny nebo příkaz.  
+    Cílem `Parent` je prvek nabídky nebo skupinu, která bude obsahovat nabídky, skupiny nebo příkaz.  
   
-    1.  Nastavte `guid` atribut název `GuidSymbol` element, který definuje sadu příkazů. Pokud cílový element není součástí vašeho balíčku, jak je definováno v odpovídajícím souboru .vsct použijte identifikátor guid pro tuto sadu příkazů.  
+   1.  Nastavte `guid` atribut název `GuidSymbol` element, který definuje sadu příkazů. Pokud cílový element není součástí vašeho balíčku, jak je definováno v odpovídajícím souboru .vsct použijte identifikátor guid pro tuto sadu příkazů.  
   
-    2.  Nastavte `id` atribut tak, aby odpovídaly `id` atribut target nabídky nebo skupiny. Seznam nabídek a skupiny, které jsou přístupné pomocí sady Visual Studio, naleznete v tématu [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2.  Nastavte `id` atribut tak, aby odpovídaly `id` atribut target nabídky nebo skupiny. Seznam nabídek a skupiny, které jsou přístupné pomocí sady Visual Studio, naleznete v tématu [identifikátory GUID a ID sady Visual Studio nabídky](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) nebo [identifikátory GUID a ID sady Visual Studio panely nástrojů](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
- Pokud máte velký počet prvků uživatelského rozhraní, umístíte do integrovaného vývojového prostředí, nebo pokud máte prvky, které by se měla objevit na více místech, definovat jejich umístění v [commandplacements –](../../extensibility/commandplacements-element.md) elementu, jak je znázorněno v následujícím postupu.  
+   Pokud máte velký počet prvků uživatelského rozhraní, umístíte do integrovaného vývojového prostředí, nebo pokud máte prvky, které by se měla objevit na více místech, definovat jejich umístění v [commandplacements –](../../extensibility/commandplacements-element.md) elementu, jak je znázorněno v následujícím postupu.  
   
 ##### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>Použití příkazu umístění umístí prvky uživatelského rozhraní v rozhraní IDE  
   
-1.  Po `Commands` elementu, přidejte `CommandPlacements` elementu.  
+1. Po `Commands` elementu, přidejte `CommandPlacements` elementu.  
   
-2.  V `CommandPlacements` elementu, přidejte `CommandPlacement` – element pro každou nabídku, skupinu nebo příkaz umístit.  
+2. V `CommandPlacements` elementu, přidejte `CommandPlacement` – element pro každou nabídku, skupinu nebo příkaz umístit.  
   
-     Každý `CommandPlacement` element nebo `Parent` element umístí jednu nabídku, skupinu nebo příkaz na jednom místě integrovaného vývojového prostředí. Prvek uživatelského rozhraní může mít pouze jednu nadřazenou položku, ale může mít více umístění příkazu. Umístit do víc umístění prvku uživatelského rozhraní, přidejte `CommandPlacement` – element pro každé umístění.  
+    Každý `CommandPlacement` element nebo `Parent` element umístí jednu nabídku, skupinu nebo příkaz na jednom místě integrovaného vývojového prostředí. Prvek uživatelského rozhraní může mít pouze jednu nadřazenou položku, ale může mít více umístění příkazu. Umístit do víc umístění prvku uživatelského rozhraní, přidejte `CommandPlacement` – element pro každé umístění.  
   
-3.  Nastavte `guid` a `id` atributy každého `CommandPlacement` element hostování nabídky nebo skupině, stejně jako by pro `Parent` elementu. Můžete také nastavit `priority` atribut vytvořit relativní pozice prvku uživatelského rozhraní.  
+3. Nastavte `guid` a `id` atributy každého `CommandPlacement` element hostování nabídky nebo skupině, stejně jako by pro `Parent` elementu. Můžete také nastavit `priority` atribut vytvořit relativní pozice prvku uživatelského rozhraní.  
   
- Můžete kombinovat umístění podle vztahy k nadřazeným položkám a příkaz umístění. Pro příkaz velmi velké sady, ale doporučujeme použít pouze příkaz umístění.  
+   Můžete kombinovat umístění podle vztahy k nadřazeným položkám a příkaz umístění. Pro příkaz velmi velké sady, ale doporučujeme použít pouze příkaz umístění.  
   
 ### <a name="adding-specialized-behaviors"></a>Přidání specializované chování  
  Můžete použít [CommandFlag](../../extensibility/command-flag-element.md) prvky k úpravě chování nabídek a příkazů, například, chcete-li změnit jejich vzhled a viditelnost. Může také ovlivnit, pokud je příkaz viditelný pomocí [visibilityconstraints –](../../extensibility/visibilityconstraints-element.md), nebo přidat pomocí klávesové zkratky [klávesové zkratky](../../extensibility/keybindings-element.md). Určité typy nabídek a příkazů již vestavěné chování specializovaný.  
   
 ##### <a name="to-add-specialized-behaviors"></a>Chcete-li přidat specializované chování  
   
-1.  Chcete-li prvek uživatelského rozhraní viditelná pouze v určitých uživatelského rozhraní kontextech, například při načtení řešení, použijte omezení viditelnosti.  
+1. Chcete-li prvek uživatelského rozhraní viditelná pouze v určitých uživatelského rozhraní kontextech, například při načtení řešení, použijte omezení viditelnosti.  
   
-    1.  Po `Commands` elementu, přidejte `VisibilityConstraints` elementu.  
+   1.  Po `Commands` elementu, přidejte `VisibilityConstraints` elementu.  
   
-    2.  Pro každou položku uživatelského rozhraní pro omezení, přidejte [visibilityitem –](../../extensibility/visibilityitem-element.md) elementu.  
+   2.  Pro každou položku uživatelského rozhraní pro omezení, přidejte [visibilityitem –](../../extensibility/visibilityitem-element.md) elementu.  
   
-    3.  Pro každou `VisibilityItem` element, nastaven `guid` a `id` atributů, které mají v nabídce, skupiny, nebo příkaz a pak nastavte `context` atribut kontextu uživatelského rozhraní, který chcete, jak jsou definovány v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy. Další informace najdete v tématu [visibilityitem – Element](../../extensibility/visibilityitem-element.md).  
+   3.  Pro každou `VisibilityItem` element, nastaven `guid` a `id` atributů, které mají v nabídce, skupiny, nebo příkaz a pak nastavte `context` atribut kontextu uživatelského rozhraní, který chcete, jak jsou definovány v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy. Další informace najdete v tématu [visibilityitem – Element](../../extensibility/visibilityitem-element.md).  
   
-2.  Pokud chcete nastavit viditelnost nebo dostupnost položky uživatelského rozhraní v kódu, použijte nejméně jeden z následujících příznaků příkazů:  
+2. Pokud chcete nastavit viditelnost nebo dostupnost položky uživatelského rozhraní v kódu, použijte nejméně jeden z následujících příznaků příkazů:  
   
-    -   DefaultDisabled  
+   - DefaultDisabled  
   
-    -   DefaultInvisible  
+   - DefaultInvisible  
   
-    -   DynamicItemStart  
+   - DynamicItemStart  
   
-    -   DynamicVisibility  
+   - DynamicVisibility  
   
-    -   NoShowOnMenuController  
+   - NoShowOnMenuController  
   
-    -   NotInTBList  
-  
-     Další informace najdete v tématu [Command Flag – Element](../../extensibility/command-flag-element.md).  
-  
-3.  Chcete-li změnit způsob, jakým se zobrazí element nebo dynamicky měnit její vzhled, použijte jednu nebo více z následujících příznaků příkazů:  
-  
-    -   AlwaysCreate  
-  
-    -   CommandWellOnly  
-  
-    -   DefaultDocked  
-  
-    -   DontCache  
-  
-    -   DynamicItemStart  
-  
-    -   FixMenuController  
-  
-    -   IconAndText  
-  
-    -   PICT  
-  
-    -   StretchHorizontally  
-  
-    -   TextMenuUseButton  
-  
-    -   TextChanges  
-  
-    -   Typu TextOnly  
+   - NotInTBList  
   
      Další informace najdete v tématu [Command Flag – Element](../../extensibility/command-flag-element.md).  
   
-4.  Chcete-li změnit, jak prvek reaguje při přijetí příkazů, použijte nejméně jeden z následujících příznaků příkazů:  
+3. Chcete-li změnit způsob, jakým se zobrazí element nebo dynamicky měnit její vzhled, použijte jednu nebo více z následujících příznaků příkazů:  
   
-    -   AllowParams  
+   - AlwaysCreate  
   
-    -   CaseSensitive  
+   - CommandWellOnly  
   
-    -   CommandWellOnly  
+   - DefaultDocked  
   
-    -   Kláves  
+   - DontCache  
   
-    -   NoAutoComplete  
+   - DynamicItemStart  
   
-    -   NoButtonCustomize  
+   - FixMenuController  
   
-    -   NoKeyCustomize  
+   - IconAndText  
   
-    -   NoToolbarClose  
+   - PICT  
   
-    -   PostExec  
+   - StretchHorizontally  
   
-    -   RouteToDocs  
+   - TextMenuUseButton  
   
-    -   TextIsAnchorCommand  
+   - TextChanges  
+  
+   - Typu TextOnly  
   
      Další informace najdete v tématu [Command Flag – Element](../../extensibility/command-flag-element.md).  
   
-5.  Závislé nabídky klávesové zkratky připojit k nabídky nebo položky v nabídce, přidat znak ampersand ('a ') v `ButtonText` – element pro nabídky nebo položky nabídky. Znak, který následuje ampersand je aktivní klávesové zkratky při otevření nadřazené nabídky.  
+4. Chcete-li změnit, jak prvek reaguje při přijetí příkazů, použijte nejméně jeden z následujících příznaků příkazů:  
   
-6.  Chcete-li připojit nezávislé na nabídku klávesovou zkratku k příkazu, použijte [klávesové zkratky](../../extensibility/keybindings-element.md). Další informace najdete v tématu [keybinding – Element](../../extensibility/keybinding-element.md).  
+   - AllowParams  
   
-7.  Chcete-li lokalizovat text nabídky, použijte `LocCanonicalName` elementu. Další informace najdete v tématu [Strings – Element](../../extensibility/strings-element.md).  
+   - CaseSensitive  
   
- Některé typy nabídek a tlačítko zahrnovat specializovaná chování. Následující tabulka popisuje některé speciální nabídky a typy tlačítek. U jiných typů, najdete v článku `types` atribut popisy v [Menu Element](../../extensibility/menu-element.md), [Button Element](../../extensibility/button-element.md), a [Combo – Element](../../extensibility/combo-element.md).  
+   - CommandWellOnly  
   
- Pole se seznamem  
- Pole se seznamem je rozevírací seznam, který jde použít na panelu nástrojů. Pokud chcete přidat pole se seznamem v uživatelském rozhraní, vytvořte [combos –](../../extensibility/combos-element.md) prvek `Commands` elementu. Obnovte `Combos` element `Combo` – element pro každé pole se seznamem pro přidání. `Combo` elementy mají stejné atributy a podřízené objekty jako `Button` elementy a můžou taky `DefaultWidth` a `idCommandList` atributy. `DefaultWidth` Atribut nastavuje šířku v pixelech a `idCommandList` atribut body pro ID příkazu, který se používá k naplnění pole se seznamem. Další informace najdete v tématu `Combo` element dokumentaci.  
+   - Kláves  
   
- MenuController  
- Kontroleru nabídky je tlačítko, které má šipku vedle sebe. Kliknutím na šipku otevřete seznam. Přidání kontroleru nabídky do uživatelského rozhraní, vytvořit `Menu` elementu a nastavte jeho `type` atribut **MenuController** nebo **MenuControllerLatched**, v závislosti na chování, které chcete. K naplnění kontroleru nabídky, nastavte ji jako nadřazený `Group` elementu. Kontroleru nabídky se zobrazí všechny podřízené dané skupiny v rozevíracím seznamu.  
+   - NoAutoComplete  
+  
+   - NoButtonCustomize  
+  
+   - NoKeyCustomize  
+  
+   - NoToolbarClose  
+  
+   - PostExec  
+  
+   - RouteToDocs  
+  
+   - TextIsAnchorCommand  
+  
+     Další informace najdete v tématu [Command Flag – Element](../../extensibility/command-flag-element.md).  
+  
+5. Závislé nabídky klávesové zkratky připojit k nabídky nebo položky v nabídce, přidat znak ampersand ('a ') v `ButtonText` – element pro nabídky nebo položky nabídky. Znak, který následuje ampersand je aktivní klávesové zkratky při otevření nadřazené nabídky.  
+  
+6. Chcete-li připojit nezávislé na nabídku klávesovou zkratku k příkazu, použijte [klávesové zkratky](../../extensibility/keybindings-element.md). Další informace najdete v tématu [keybinding – Element](../../extensibility/keybinding-element.md).  
+  
+7. Chcete-li lokalizovat text nabídky, použijte `LocCanonicalName` elementu. Další informace najdete v tématu [Strings – Element](../../extensibility/strings-element.md).  
+  
+   Některé typy nabídek a tlačítko zahrnovat specializovaná chování. Následující tabulka popisuje některé speciální nabídky a typy tlačítek. U jiných typů, najdete v článku `types` atribut popisy v [Menu Element](../../extensibility/menu-element.md), [Button Element](../../extensibility/button-element.md), a [Combo – Element](../../extensibility/combo-element.md).  
+  
+   Pole se seznamem  
+   Pole se seznamem je rozevírací seznam, který jde použít na panelu nástrojů. Pokud chcete přidat pole se seznamem v uživatelském rozhraní, vytvořte [combos –](../../extensibility/combos-element.md) prvek `Commands` elementu. Obnovte `Combos` element `Combo` – element pro každé pole se seznamem pro přidání. `Combo` elementy mají stejné atributy a podřízené objekty jako `Button` elementy a můžou taky `DefaultWidth` a `idCommandList` atributy. `DefaultWidth` Atribut nastavuje šířku v pixelech a `idCommandList` atribut body pro ID příkazu, který se používá k naplnění pole se seznamem. Další informace najdete v tématu `Combo` element dokumentaci.  
+  
+   MenuController  
+   Kontroleru nabídky je tlačítko, které má šipku vedle sebe. Kliknutím na šipku otevřete seznam. Přidání kontroleru nabídky do uživatelského rozhraní, vytvořit `Menu` elementu a nastavte jeho `type` atribut **MenuController** nebo **MenuControllerLatched**, v závislosti na chování, které chcete. K naplnění kontroleru nabídky, nastavte ji jako nadřazený `Group` elementu. Kontroleru nabídky se zobrazí všechny podřízené dané skupiny v rozevíracím seznamu.  
   
 ## <a name="see-also"></a>Viz také  
  [Rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)   

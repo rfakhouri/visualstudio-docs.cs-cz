@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941994"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Úpravy sekvenčních diagramů UML pomocí rozhraní API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Aktualizuje se interakce a její rozložení  
  Při aktualizaci interakci vždy ukončit operaci aktualizací rozložení pomocí jedné z následujících metod:  
   
--   `ISequenceDiagram.UpdateShapePositions()` Upraví pozice tvary, které nedávno bylo vloženo nebo přesunout a jejich sousedních tvarů.  
+- `ISequenceDiagram.UpdateShapePositions()` Upraví pozice tvary, které nedávno bylo vloženo nebo přesunout a jejich sousedních tvarů.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` Překreslí celý diagram. Parametr slouží k určení přemístění životnosti nebo zprávy.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` Překreslí celý diagram. Parametr slouží k určení přemístění životnosti nebo zprávy.  
   
- To je zvlášť důležité při vložení nových elementů nebo přesunout existující prvky. Nebudou do správné polohy v diagramu, dokud jste provedli jednu z těchto operací. Potřebujete pouze volání jednoho z těchto operací jednou na konci řady změn.  
+  To je zvlášť důležité při vložení nových elementů nebo přesunout existující prvky. Nebudou do správné polohy v diagramu, dokud jste provedli jednu z těchto operací. Potřebujete pouze volání jednoho z těchto operací jednou na konci řady změn.  
   
- Chcete-li zabránit bemusing uživatel, který provádí vrácení zpět po příkazu, použijte `ILinkedUndoTransaction` uzavřete změny a finální `Layout()` nebo `UpdateShapePositions()` operace. Příklad:  
+  Chcete-li zabránit bemusing uživatel, který provádí vrácení zpět po příkazu, použijte `ILinkedUndoTransaction` uzavřete změny a finální `Layout()` nebo `UpdateShapePositions()` operace. Příklad:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

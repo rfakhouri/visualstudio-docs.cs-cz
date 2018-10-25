@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942891"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Návod: Vytvoření vícevrstvé datové aplikace
 *N-vrstvá* datové aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logické vrstvy, nebo *úrovně*. Rozdělení komponent aplikace do samostatných vrstev zvyšuje udržovatelnost a škálovatelnost aplikace. Dělá to tak, že umožněno snadnější přijímání nových technologií, které lze použít u jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvu, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstvy přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, jako je například ověřování a ověřování. Datová vrstva obsahuje relační databáze. N-vrstvá aplikace obvykle ukládá citlivé informace do vrstvy přístupu k datům z střední vrstvy, aby se zachovala izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).
@@ -73,7 +73,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
  Prvním krokem tohoto průvodce je k vytváření řešení a dva projekty knihovny tříd. První třídy knihovny obsahuje datovou sadu (generované typy `DataSet` třídy a datové tabulky, které uchovávají data, aplikace). Tento projekt slouží jako vrstva entity dat aplikace a je obvykle umístěn ve střední vrstvě. Datová sada vytvoří počáteční datová sada a automaticky odděluje kód do knihovny dvou tříd.
 
 > [!NOTE]
->  Nezapomeňte před kliknutím na správně název projektu a řešení **OK**. To usnadní vám k dokončení tohoto návodu.
+> Nezapomeňte před kliknutím na správně název projektu a řešení **OK**. To usnadní vám k dokončení tohoto návodu.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Vytvoření n-vrstvého řešení a knihovny tříd DataEntityTier
 
@@ -106,7 +106,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
  Dalším krokem je vytvoření typové datové sady. Typové datové sady vytvořené pomocí třídy datové sady (včetně `DataTables` třídy) a `TableAdapter` třídy v jednom projektu. (Všechny třídy jsou generovány, do jediného souboru.) Když oddělíte datové sady a TableAdapters do různých projektů, je třída datovou sadu, která je přesunut do jiného projektu, byste museli opustit `TableAdapter` třídy v původní projekt. Proto se v projektu, který bude obsahovat nakonec objekty TableAdapter (DataAccessTier projekt) vytvořte datovou sadu. Vytvořte datovou sadu s použitím **Průvodce konfigurací zdroje dat**.
 
 > [!NOTE]
->  Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o tom, jak nastavit ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
+> Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o tom, jak nastavit ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Vytvoření datové sady
 
@@ -129,7 +129,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 6.  Pokud databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a klikněte na tlačítko **Další**.
 
     > [!NOTE]
-    >  Pokud jste vybrali lokálního databázového souboru (místo připojování k serveru SQL Server) může být vyzváni, pokud budete chtít přidat soubor do projektu. Zvolte **Ano** přidáte databázový soubor do projektu.
+    > Pokud jste vybrali lokálního databázového souboru (místo připojování k serveru SQL Server) může být vyzváni, pokud budete chtít přidat soubor do projektu. Zvolte **Ano** přidáte databázový soubor do projektu.
 
 7.  Vyberte **Další** na **uložit připojovací řetězec do konfiguračního souboru aplikace** stránky.
 
@@ -144,20 +144,20 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Oddělení objektů TableAdapter od objektu DataSet
 
-1.  Dvakrát klikněte na panel **NorthwindDataSet.xsd** v **Průzkumníka řešení** otevření datové sady v **Návrhář Dataset**.
+1. Dvakrát klikněte na panel **NorthwindDataSet.xsd** v **Průzkumníka řešení** otevření datové sady v **Návrhář Dataset**.
 
-2.  Vyberte prázdnou oblast v návrháři.
+2. Vyberte prázdnou oblast v návrháři.
 
-3.  Vyhledejte **projektu DataSet** uzlu **vlastnosti** okna.
+3. Vyhledejte **projektu DataSet** uzlu **vlastnosti** okna.
 
-4.  V **projektu DataSet** seznamu vyberte **DataEntityTier**.
+4. V **projektu DataSet** seznamu vyberte **DataEntityTier**.
 
-5.  Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
+5. Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
 
- Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (`DataAccessTier`) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnosti (`DataEntityTier`) obsahuje typové datové sady: *NorthwindDataSet.Dataset.Designer.vb* (nebo  *NorthwindDataSet.Dataset.Designer.cs*).
+   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (`DataAccessTier`) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnosti (`DataEntityTier`) obsahuje typové datové sady: *NorthwindDataSet.Dataset.Designer.vb* (nebo  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.
+> Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.
 
 ## <a name="create-a-new-service-application"></a>Vytvoření nové aplikace služby
 Tento návod ukazuje, jak k vrstvě přístupu k datům s využitím služby WCF, takže vytvoření nové aplikace služby WCF.
@@ -224,7 +224,7 @@ Tento návod ukazuje, jak k vrstvě přístupu k datům s využitím služby WCF
  Teď, když datová vrstva obsahuje metody, které se vrátí data, vytvářet metody v datové službě dovoluje volat metody ve vrstvě přístupu k datům.
 
 > [!NOTE]
->  Pro projekty jazyka C#, je nutné přidat odkaz na `System.Data.DataSetExtensions` sestavení pro následující kód pro kompilaci.
+> Pro projekty jazyka C#, je nutné přidat odkaz na `System.Data.DataSetExtensions` sestavení pro následující kód pro kompilaci.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Vytvoření funkcí GetCustomers a GetOrders v datové službě
 
@@ -323,7 +323,7 @@ Nastavíme **PresentationTier** projekt jako projekt po spuštění pro řešen�
 3.  Vyberte **Service1** a zvolte **OK**.
 
     > [!NOTE]
-    >  Pokud máte několik služeb, které na počítač, vyberte službu, kterou jste vytvořili dříve v tomto názorném postupu (službu, která obsahuje `GetCustomers` a `GetOrders` metody).
+    > Pokud máte několik služeb, které na počítač, vyberte službu, kterou jste vytvořili dříve v tomto názorném postupu (službu, která obsahuje `GetCustomers` a `GetOrders` metody).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Přidání ovládacích prvků DataGridView do formuláře a zobrazení dat vrácených datovou službou
  Poté, co přidáte odkaz na službu do datové služby **zdroje dat** okno se automaticky načtou data, která je vrácena službou.
@@ -361,7 +361,7 @@ Nastavíme **PresentationTier** projekt jako projekt po spuštění pro řešen�
 Výchozí hodnota pro `maxReceivedMessageSize` není dostatečně velký pro uložení dat načtených z `Customers` a `Orders` tabulky. V následujícím postupu zvýšíte hodnotu 6553600. Můžete změnit hodnoty na straně klienta, která automaticky aktualizuje odkaz na službu.
 
 > [!NOTE]
->  Nižší výchozí velikost je určena k omezení rizika útoky na dostupnost služby (DoS). Další informace naleznete v tématu <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> Nižší výchozí velikost je určena k omezení rizika útoky na dostupnost služby (DoS). Další informace naleznete v tématu <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Zvýšení hodnoty maxReceivedMessageSize
 

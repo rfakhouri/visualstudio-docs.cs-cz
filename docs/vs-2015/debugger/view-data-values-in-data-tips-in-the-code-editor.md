@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949887"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Zobrazení hodnot dat v datových tipech v editoru kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ DataTips poskytují pohodlný způsob, jak zobrazit informace o proměnných ve 
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>K zobrazení datového tipu (pouze v režimu přerušení)  
   
-1.  V okně zdroje umístěte ukazatel myši nad všechny proměnné v aktuálním oboru.  
+1. V okně zdroje umístěte ukazatel myši nad všechny proměnné v aktuálním oboru.  
   
-     Zobrazí se DataTip.  
+    Zobrazí se DataTip.  
   
-    > [!NOTE]
-    >  Datových tipech jsou vždy vyhodnoceny v kontextu, kde je spuštění pozastaveno, a ne je ukazatel myši. Pokud je ukazatel myši nad proměnnou v jiné funkce se stejným názvem jako proměnná, která je v aktuálním kontextu, zobrazí se jako hodnotu proměnné v aktuálním kontextu hodnotu proměnné v jiné funkci.  
+   > [!NOTE]
+   >  Datových tipech jsou vždy vyhodnoceny v kontextu, kde je spuštění pozastaveno, a ne je ukazatel myši. Pokud je ukazatel myši nad proměnnou v jiné funkce se stejným názvem jako proměnná, která je v aktuálním kontextu, zobrazí se jako hodnotu proměnné v aktuálním kontextu hodnotu proměnné v jiné funkci.  
   
-2.  DataTip zmizí při odebrání ukazatel myši. Pro Připnutí DataTip tak, aby zůstane otevřený, klikněte na tlačítko **připojit ke zdroji** ikonu, nebo  
+2. DataTip zmizí při odebrání ukazatel myši. Pro Připnutí DataTip tak, aby zůstane otevřený, klikněte na tlačítko **připojit ke zdroji** ikonu, nebo  
   
-    -   Klikněte pravým tlačítkem na proměnnou a pak klikněte na **připojit ke zdroji**.  
+   - Klikněte pravým tlačítkem na proměnnou a pak klikněte na **připojit ke zdroji**.  
   
      Připnuté DataTip ukončí po ukončení relace ladění.  
   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927798"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrace operací pro přípony názvů souborů
 Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňované akce, ke které dochází, když uživatel pokliká soubor. To upřednostňovaný akce je spojena se slovesem, například aplikaci, která odpovídá akci.  
@@ -28,17 +28,17 @@ Přidružení příponu názvu souboru pomocí aplikace je obecně upřednostňo
 ## <a name="register-standard-verbs"></a>Zaregistrovat standardní příkazy  
  Operační systém rozpozná standardní následující příkazy:  
   
--   Otevřít  
+- Otevřít  
   
--   Upravit  
+- Upravit  
   
--   Přehrát  
+- Přehrát  
   
--   Tisk  
+- Tisk  
   
--   Náhled  
+- Náhled  
   
- Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevření *.htm* souboru zobrazí v prohlížeči, že úpravy *.htm* začne editoru HTML soubor. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
+  Kdykoli je to možné, zaregistrujte standardní příkaz. Nejběžnější je sloveso otevřít. Použijte příkaz upravit jenom v případě, že je vymazat rozdíl mezi otevřením souboru a úpravy souboru. Například otevření *.htm* souboru zobrazí v prohlížeči, že úpravy *.htm* začne editoru HTML soubor. Standardní příkazy jsou lokalizovány s národním prostředím operačního systému.  
   
 > [!NOTE]
 >  Při registraci standardní příkazy, nenastavujte výchozí hodnotu pro klíč otevřete. Výchozí hodnota obsahuje řetězec zobrazení v nabídce. Operační systém poskytuje tento řetězec pro standardní příkazy.  

@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937886"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní při návrh
 ## <a name="document-outline-window"></a>Osnova dokumentu – okno  
  Okno osnovy dokumentu v Návrháři XAML umožňuje provádět tyto úkoly:  
   
--   Zobrazte hierarchickou strukturu všech prvků na návrhové ploše.  
+- Zobrazte hierarchickou strukturu všech prvků na návrhové ploše.  
   
--   Vyberte elementy tak, aby možno upravovat (přesunout je kolem v hierarchii, je upravovat návrhovou plochu, nastavit jejich vlastnosti v okně Vlastnosti a tak dále). Další informace najdete v tématu [práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md)  
+- Vyberte elementy tak, aby možno upravovat (přesunout je kolem v hierarchii, je upravovat návrhovou plochu, nastavit jejich vlastnosti v okně Vlastnosti a tak dále). Další informace najdete v tématu [práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md)  
   
--   Vytvářet a upravovat šablony pro prvky, které jsou ovládací prvky.  
+- Vytvářet a upravovat šablony pro prvky, které jsou ovládací prvky.  
   
--   Pomocí místní nabídky pro vybrané elementy. Stejnou nabídku je také k dispozici pro vybrané elementy na návrhovou plochu.  
+- Pomocí místní nabídky pro vybrané elementy. Stejnou nabídku je také k dispozici pro vybrané elementy na návrhovou plochu.  
   
- Chcete-li zobrazit okno osnovy dokumentu, na panelu nabídek zvolte **zobrazení**, **ostatní Windows**, **Osnova dokumentu**.  
+  Chcete-li zobrazit okno osnovy dokumentu, na panelu nabídek zvolte **zobrazení**, **ostatní Windows**, **Osnova dokumentu**.  
   
- ![Osnova dokumentu – okno](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Osnova dokumentu – okno](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Jedná se o možnostech dostupných v okně Osnova dokumentu:  
+  Jedná se o možnostech dostupných v okně Osnova dokumentu:  
   
- **Osnova dokumentu**  
- Hlavní zobrazení v okně Osnova dokumentu zobrazí hierarchii dokumentu ve stromové struktuře. Hierarchickou povahu Osnova dokumentu můžete použít k prozkoumání dokumentu na různých úrovních podrobností a k uzamčení nebo skrytí prvků jednotlivě nebo ve skupinách.  
+  **Osnova dokumentu**  
+  Hlavní zobrazení v okně Osnova dokumentu zobrazí hierarchii dokumentu ve stromové struktuře. Hierarchickou povahu Osnova dokumentu můžete použít k prozkoumání dokumentu na různých úrovních podrobností a k uzamčení nebo skrytí prvků jednotlivě nebo ve skupinách.  
   
- **Zobrazit/skrýt**  
- Zobrazí nebo skryje prvky návrhové plochy, které odpovídají položkám v Osnova dokumentu. Použití **zobrazit/skrýt** tlačítka, který zobrazí symbol oka, když se zobrazí, nebo stiskněte kombinaci kláves CTRL + H skrýt elementy a SHIFT + CTRL + H k jejich zobrazení.  
+  **Zobrazit/skrýt**  
+  Zobrazí nebo skryje prvky návrhové plochy, které odpovídají položkám v Osnova dokumentu. Použití **zobrazit/skrýt** tlačítka, který zobrazí symbol oka, když se zobrazí, nebo stiskněte kombinaci kláves CTRL + H skrýt elementy a SHIFT + CTRL + H k jejich zobrazení.  
   
- **Zamknout/odemknout**  
- Uzamyká nebo odemyká prvky návrhové plochy, které odpovídají položkám v Osnova dokumentu. Uzamčené elementy se nedá upravit. Použití **Zamknout/odemknout** tlačítka, které budou zobrazovat ikona zámku symbol v případě, že nebo stiskněte kombinaci kláves CTRL + L prvkům zámek a CTRL + SHIFT + L odemčení.  
+  **Zamknout/odemknout**  
+  Uzamyká nebo odemyká prvky návrhové plochy, které odpovídají položkám v Osnova dokumentu. Uzamčené elementy se nedá upravit. Použití **Zamknout/odemknout** tlačítka, které budou zobrazovat ikona zámku symbol v případě, že nebo stiskněte kombinaci kláves CTRL + L prvkům zámek a CTRL + SHIFT + L odemčení.  
   
- **Obnovit obor na pageRoot**  
- Osnova dokumentu možnosti v horní části okna Osnova dokumentu, který zobrazuje symbol šipku nahoru, vrátí do předchozího oboru. Přesouvání rozsahu směrem nahoru platí pouze v případě, že jste v rámci stylu nebo šablony.  
+  **Obnovit obor na pageRoot**  
+  Osnova dokumentu možnosti v horní části okna Osnova dokumentu, který zobrazuje symbol šipku nahoru, vrátí do předchozího oboru. Přesouvání rozsahu směrem nahoru platí pouze v případě, že jste v rámci stylu nebo šablony.  
   
 ## <a name="properties-window"></a>Vlastnosti – okno  
  V okně Vlastnosti vám umožní nastavit hodnoty vlastností v ovládacích prvcích. Zde je, jak to funguje:  

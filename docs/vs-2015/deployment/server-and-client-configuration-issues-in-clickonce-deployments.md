@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948938"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
  Některé webové servery může blokovat soubory s příponami .mdf, .dll a .config. Aplikace pro systém Windows obvykle zahrnují soubory pomocí některé z těchto rozšíření. Pokud se uživatel pokusí spustit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikaci, která přistupuje k zablokování souborů na webovém serveru, bude výsledkem chyba. Místo odblokování všechny přípony souborů, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] publikuje každý soubor aplikace s příponou ".deploy" ve výchozím nastavení. Správce proto potřebuje nakonfigurovat webový server k odblokování tři soubory s následujícími příponami:  
   
--   .Application  
+- .Application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
+  Ale můžete tuto možnost zakážete zrušením zaškrtnutí **použít příponu ".deploy"** možnost [dialogové okno publikování možnosti](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), v takovém případě musíte nakonfigurovat webový server k odblokování všechny přípony souborů použít v aplikaci.  
   
- Budete muset nakonfigurovat .manifest .application a .deploy, například pokud používáte IIS, kde jste dosud nenainstalovali [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], nebo pokud používáte jiný webový server (např. Apache).  
+  Budete muset nakonfigurovat .manifest .application a .deploy, například pokud používáte IIS, kde jste dosud nenainstalovali [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], nebo pokud používáte jiný webový server (např. Apache).  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce a Secure Sockets Layer (SSL)  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace bude fungovat přes protokol SSL, s výjimkou případů, kdy aplikace Internet Explorer vyvolá řádku o certifikát SSL. Řádku tento příkaz může být je aktivována v případě, že něco špatného certifikát, jako je například, když nejsou shodné názvy webů nebo certifikátu vypršela. Chcete-li [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fungovat připojení přes protokol SSL, ujistěte se, že certifikát je aktuální, a že data certifikátu odpovídá data lokality.  
@@ -122,11 +122,11 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
  Pokud nasadíte pomocí serveru služby IIS, spusťte inetmgr.exe a přidat nové typy souborů pro výchozí webové stránky:  
   
--   Pro rozšíření .application a .manifest typ MIME by měl být "application/x-ms aplikace." Pro ostatní typy souborů by měl být typu MIME "application/octet-stream."  
+- Pro rozšíření .application a .manifest typ MIME by měl být "application/x-ms aplikace." Pro ostatní typy souborů by měl být typu MIME "application/octet-stream."  
   
--   Pokud vytvoříte typ MIME s příponou "*" a "application/octet-stream" typ MIME bude možné soubory typu odblokuje soubor ke stažení. (Ale blokované soubor, který nejde stáhnout typy, jako jsou soubory .aspx a .asmx.)  
+- Pokud vytvoříte typ MIME s příponou "*" a "application/octet-stream" typ MIME bude možné soubory typu odblokuje soubor ke stažení. (Ale blokované soubor, který nejde stáhnout typy, jako jsou soubory .aspx a .asmx.)  
   
- Konkrétní pokyny ke konfiguraci typy MIME ve Windows serveru najdete znalostní báze Microsoft Knowledge Base KB326965, "IIS 6.0 nemá není sloužit neznámé typy MIME" v [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Konkrétní pokyny ke konfiguraci typy MIME ve Windows serveru najdete znalostní báze Microsoft Knowledge Base KB326965, "IIS 6.0 nemá není sloužit neznámé typy MIME" v [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Mapování typu obsahu  
  Při publikování přes protokol HTTP, typu obsahu (označované také jako typ MIME) pro soubor .application by měl být "application/x-ms aplikace." Pokud máte [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] nainstalovaná na serveru, se nastaví pro vás automaticky. Pokud to není nainstalován, pak budete muset vytvořit přidružení typu MIME pro [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] virtuální kořenový adresář aplikace (nebo celý server).  

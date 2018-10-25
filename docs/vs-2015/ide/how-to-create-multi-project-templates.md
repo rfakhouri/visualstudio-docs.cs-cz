@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950846"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Postupy: Vytváření šablon vícenásobného projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ ms.locfileid: "49256565"
   
  Víceprojektové šablony musí obsahovat následující položky zkomprimovány do souboru ZIP:  
   
--   Kořenový soubor .vstemplate pro celý víceprojektové šabloně. Tento kořenový soubor .vstemplate obsahuje metadata, která **nový projekt** dialogové okno zobrazí a určuje, kde se mají hledat soubory .vstemplate pro projekty v této šabloně. Tento soubor musí být umístěn v kořenovém adresáři souboru ZIP.  
+- Kořenový soubor .vstemplate pro celý víceprojektové šabloně. Tento kořenový soubor .vstemplate obsahuje metadata, která **nový projekt** dialogové okno zobrazí a určuje, kde se mají hledat soubory .vstemplate pro projekty v této šabloně. Tento soubor musí být umístěn v kořenovém adresáři souboru ZIP.  
   
--   Jednu nebo více složek, které obsahují soubory, které jsou požadovány pro dokončení šablony projektu. To zahrnuje všechny soubory kódu pro projekt a soubor .vstemplate pro projekt.  
+- Jednu nebo více složek, které obsahují soubory, které jsou požadovány pro dokončení šablony projektu. To zahrnuje všechny soubory kódu pro projekt a soubor .vstemplate pro projekt.  
   
- Soubor ZIP víceprojektové šablony, který má dva projekty může mít například následující soubory a adresáře:  
+  Soubor ZIP víceprojektové šablony, který má dva projekty může mít například následující soubory a adresáře:  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- Kořenový soubor .vstemplate víceprojektové šablony se liší od jednoprojektové šablony následujícími způsoby:  
+  Kořenový soubor .vstemplate víceprojektové šablony se liší od jednoprojektové šablony následujícími způsoby:  
   
--   `Type` Atribut `VSTemplate` element obsahuje hodnotu `ProjectGroup`. Příklad:  
+- `Type` Atribut `VSTemplate` element obsahuje hodnotu `ProjectGroup`. Příklad:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   `TemplateContent` Obsahuje element `ProjectCollection` element, který má jeden nebo více `ProjectTemplateLink` prvky, které definují cesty souborech .vstemplate zahrnutých projektů. Příklad:  
+- `TemplateContent` Obsahuje element `ProjectCollection` element, který má jeden nebo více `ProjectTemplateLink` prvky, které definují cesty souborech .vstemplate zahrnutých projektů. Příklad:  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- Víceprojektové šablony také chovat jinak než běžné šablony. Víceprojektové šablony mají následující jedinečné vlastnosti:  
+  Víceprojektové šablony také chovat jinak než běžné šablony. Víceprojektové šablony mají následující jedinečné vlastnosti:  
   
--   Jednotlivé projekty ve víceprojektové šabloně nelze přiřadit názvy **nový projekt** dialogové okno. Místo toho použijte `ProjectName` atribut na `ProjectTemplateLink` element zadejte název pro každý projekt. Další informace najdete v prvním příkladu v následující části.  
+- Jednotlivé projekty ve víceprojektové šabloně nelze přiřadit názvy **nový projekt** dialogové okno. Místo toho použijte `ProjectName` atribut na `ProjectTemplateLink` element zadejte název pro každý projekt. Další informace najdete v prvním příkladu v následující části.  
   
--   Víceprojektové šablony může obsahovat projekty, které jsou napsány v různých jazycích, ale samotné šablony celý může být uvedena pouze v jedné kategorii pomocí `ProjectType` elementu.  
+- Víceprojektové šablony může obsahovat projekty, které jsou napsány v různých jazycích, ale samotné šablony celý může být uvedena pouze v jedné kategorii pomocí `ProjectType` elementu.  
   
 ### <a name="to-create-a-multi-project-template"></a>K vytváření šablon vícenásobného projektu  
   

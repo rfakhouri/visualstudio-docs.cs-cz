@@ -1,5 +1,5 @@
 ---
-title: Návrhář postupu provádění - CorrelationScope Návrhář aktivity
+title: Návrhář postupu provádění – Návrhář aktivity Correlationscope
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,46 +12,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d1da881dfb7f7a8c063b94e49198d1b299b2e47b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942046"
 ---
 # <a name="correlationscope-activity-designer"></a>Návrhář aktivity CorrelationScope
 
-**CorrelationScope** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.CorrelationScope> aktivity, která nabízí implicitní správu podřízené aktivity zasílání zpráv pomocí <xref:System.ServiceModel.Activities.CorrelationHandle> objektu.
+**CorrelationScope** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.CorrelationScope> aktivitu, která poskytuje implicitní správu podřízených aktivit zasílání zpráv pomocí <xref:System.ServiceModel.Activities.CorrelationHandle> objektu.
 
-## <a name="the-correlationscope-activity"></a>CorrelationScope aktivity
+## <a name="the-correlationscope-activity"></a>Aktivity CorrelationScope
 
-<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> Určuje vlastnost <xref:System.ServiceModel.Activities.CorrelationHandle> používat ke správě podřízené aktivity zasílání zpráv. <xref:System.ServiceModel.Activities.Send> a <xref:System.ServiceModel.Activities.Receive> aktivity obsažené v <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> jsou nakonfigurovány pro použití <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> vlastnost obsahující <xref:System.ServiceModel.Activities.CorrelationScope> aktivita k provedení korelace.
+<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> Určuje vlastnost <xref:System.ServiceModel.Activities.CorrelationHandle> používá ke správě podřízených aktivit zasílání zpráv. <xref:System.ServiceModel.Activities.Send> a <xref:System.ServiceModel.Activities.Receive> aktivity obsažené v <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> jsou nakonfigurovány pro použití <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> vlastnosti nadřazeného <xref:System.ServiceModel.Activities.CorrelationScope> aktivita k provedení korelace.
 
-### <a name="use-the-correlationscope-activity-designer"></a>Použití návrháře CorrelationScope aktivity
+### <a name="use-the-correlationscope-activity-designer"></a>Použití aktivity Correlationscope
 
-**CorrelationScope** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů** karty na levé straně návrháře pracovních postupů. Případně vyberte možnost **sada nástrojů** z **zobrazení** nabídky, nebo klikněte na tlačítko **Ctrl**+**Alt** + **X**.
+**CorrelationScope** návrháře aktivit najdete v **zasílání zpráv** kategorii **nástrojů**, který přistupuje po kliknutí **nástrojů** karty na levé straně návrháře postupu provádění. Můžete také vybrat **nástrojů** z **zobrazení** nabídky nebo stisknutím klávesy **Ctrl**+**Alt** + **X**.
 
-**CorrelationScope** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů. Tím se vytvoří <xref:System.ServiceModel.Activities.CorrelationScope> aktivitu výchozí **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **CorrelationScope** Návrhář aktivity nebo v **DisplayName** pole **vlastnosti** okno.
+**CorrelationScope** návrháře aktivit můžete přetáhnout z **nástrojů** a vyřadit na povrch návrháře postupu provádění. Tím se vytvoří <xref:System.ServiceModel.Activities.CorrelationScope> aktivity s výchozím **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Můžete upravovat v záhlaví **CorrelationScope** Návrhář aktivity nebo **DisplayName** pomocí boxingu **vlastnosti** okno.
 
-K určení <xref:System.ServiceModel.Activities.CorrelationHandle> používá podřízené aktivity zasílání zpráv, vyberte tlačítko se třemi tečkami vedle položky **CorrelatesWith** pole **vlastnosti** okna zobrazte **výraz Editor** dialogové okno. Tuto vlastnost lze nastavit také na plochu návrháře aktivit.
+Chcete-li určit <xref:System.ServiceModel.Activities.CorrelationHandle> používají podřízené aktivity zasílání zpráv, vyberte tlačítko se třemi tečkami vedle **CorrelatesWith** pole v **vlastnosti** okno k zobrazení **výraz Editor** dialogové okno. Tuto vlastnost můžete také nastavit na plochu návrháře aktivit.
 
-Vyřazení jejich designeru v rámci aktivity obor v korelaci jsou určené **textu** pole v rámci **CorrelationScope** designer.
+Aktivity s rozsahem v rámci korelace jsou určeny umístěním jejich návrháře v rámci **tělo** pole v rámci **CorrelationScope** návrháře.
 
 ### <a name="the-correlationscope-properties"></a>Vlastnosti CorrelationScope
 
-Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.CorrelationScope> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit buď v **vlastnosti** okno nebo na plochu návrháře pracovních postupů a často v obou.
+Následující tabulka ukazuje <xref:System.ServiceModel.Activities.CorrelationScope> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v **vlastnosti** okně nebo na povrchu návrháře postupu provádění a často v obou.
 
 |Název vlastnosti|Požadováno|Použití|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné popisný název <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Určuje, <xref:System.ServiceModel.Activities.CorrelationHandle> používat ke správě podřízené aktivity zasílání zpráv. Pokud není nastavena tato vlastnost <xref:System.ServiceModel.Activities.CorrelationScope> vytvoří implicitní <xref:System.ServiceModel.Activities.CorrelationHandle> automaticky.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Určuje aktivity v rámci oboru korelaci.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné jméno <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Určuje, <xref:System.ServiceModel.Activities.CorrelationHandle> používá ke správě podřízených aktivit zasílání zpráv. Pokud tuto vlastnost nenastavíte <xref:System.ServiceModel.Activities.CorrelationScope> vytvoří implicitní <xref:System.ServiceModel.Activities.CorrelationHandle> automaticky.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Určuje aktivity v rámci rozsahu korelace.|
 
 ## <a name="see-also"></a>Viz také:
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Přijímat](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Odeslat](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

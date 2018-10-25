@@ -13,12 +13,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b391c11fe47914df9c7b3ab1af12d8cbb5a55d9c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b44c9d400f5983feeada9557a79de9df50cfe8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934350"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,94 +62,94 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
 ##  <a name="BKMK_RunAddin"></a> Jak mohu spustit kód doplňku v sadě VSPackage?  
  Přidejte kód se obvykle běží v jednom ze dvou způsobů:  
   
--   Aktivované pomocí příkazu nabídky (kód je v `IDTCommandTarget.Exec` metoda)  
+- Aktivované pomocí příkazu nabídky (kód je v `IDTCommandTarget.Exec` metoda)  
   
--   Automaticky při spuštění (kód je v `OnConnection` obslužné rutiny události.)  
+- Automaticky při spuštění (kód je v `OnConnection` obslužné rutiny události.)  
   
- Můžete provádět stejné akce v sadě VSPackage. Tady je postup pro přidání kódu doplňku v metodě zpětného volání:  
+  Můžete provádět stejné akce v sadě VSPackage. Tady je postup pro přidání kódu doplňku v metodě zpětného volání:  
   
 #### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementace příkazu nabídky v sadě VSPackage  
   
-1.  Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky. (Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1. Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky. (Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu >* Package.cs.)  
+2. Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  <em>\<název projektu ></em>Package.cs.)  
   
-3.  Přidejte následující `using` příkazy do souboru:  
+3. Přidejte následující `using` příkazy do souboru:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:  
+4. Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Přidejte kód, který doplněk došlo v jeho `IDTCommandTarget.Exec` metoda. Například tady je kód, který přidává nové podokno, které má **výstup** okno a vypíše "Některé Text" v novém podokně.  
+5. Přidejte kód, který doplněk došlo v jeho `IDTCommandTarget.Exec` metoda. Například tady je kód, který přidává nové podokno, které má **výstup** okno a vypíše "Některé Text" v novém podokně.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  Sestavte a spusťte tento projekt. Stiskněte F5 nebo vyberte **Start** na **ladění** nástrojů. V experimentální instanci sady Visual Studio **nástroje** nabídka má tlačítko s názvem **název mé příkazu**. Pokud zvolíte toto tlačítko, slova **některé Text** by se měla objevit v **výstup** podokno okna. (Možná budete muset otevřít **výstup** okna.)  
+6. Sestavte a spusťte tento projekt. Stiskněte F5 nebo vyberte **Start** na **ladění** nástrojů. V experimentální instanci sady Visual Studio **nástroje** nabídka má tlačítko s názvem **název mé příkazu**. Pokud zvolíte toto tlačítko, slova **některé Text** by se měla objevit v **výstup** podokno okna. (Možná budete muset otevřít **výstup** okna.)  
   
- Je také možné váš kód spustit při spuštění. Tento postup se obecně nedoporučuje pro rozšíření VSPackage. Pokud příliš mnoho přípon se pokusí načíst při spuštění sady Visual Studio, může být výrazně delší čas spuštění. Je doporučeno automaticky načíst sady VSPackage jenom v případě, že se nesplní nějaká podmínka (např. řešení otevírané).  
+   Je také možné váš kód spustit při spuštění. Tento postup se obecně nedoporučuje pro rozšíření VSPackage. Pokud příliš mnoho přípon se pokusí načíst při spuštění sady Visual Studio, může být výrazně delší čas spuštění. Je doporučeno automaticky načíst sady VSPackage jenom v případě, že se nesplní nějaká podmínka (např. řešení otevírané).  
   
- Tento postup ukazuje, jak spustit kód doplňku v sadě VSPackage, která načte automaticky při otevření řešení:  
+   Tento postup ukazuje, jak spustit kód doplňku v sadě VSPackage, která načte automaticky při otevření řešení:  
   
 #### <a name="to-autoload-a-vspackage"></a>K autoload VSPackage  
   
-1.  Vytvořte projekt VSIX s položkou projektu balíček Visual Studio. (Pokyny k tomu najdete v článku [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Stačí přidat elementy **balíček Visual Studio** místo položky projektu.) Pojmenujte projekt VSIX **TestAutoload**.  
+1. Vytvořte projekt VSIX s položkou projektu balíček Visual Studio. (Pokyny k tomu najdete v článku [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Stačí přidat elementy **balíček Visual Studio** místo položky projektu.) Pojmenujte projekt VSIX **TestAutoload**.  
   
-2.  Otevřete TestAutoloadPackage.cs. Vyhledejte řádek, ve kterém je deklarována třída balíčku:  
+2. Otevřete TestAutoloadPackage.cs. Vyhledejte řádek, ve kterém je deklarována třída balíčku:  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  Nad tímto řádkem se sadu atributů. Přidejte tento atribut:  
+3. Nad tímto řádkem se sadu atributů. Přidejte tento atribut:  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  Nastavit zarážku `Initialize()` metoda a spusťte ladění (F5).  
+4. Nastavit zarážku `Initialize()` metoda a spusťte ladění (F5).  
   
-5.  V experimentální instanci aplikace otevřete projekt. By se měly načíst sady VSPackage, a musí být vaše zarážka dosažena.  
+5. V experimentální instanci aplikace otevřete projekt. By se měly načíst sady VSPackage, a musí být vaše zarážka dosažena.  
   
- Můžete zadat jiných kontextech, ve kterých se mají načíst vaše VSPackage pomocí pole <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Další informace najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
+   Můžete zadat jiných kontextech, ve kterých se mají načíst vaše VSPackage pomocí pole <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Další informace najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
   
 ## <a name="how-can-i-get-the-dte-object"></a>Jak získat objekt DTE  
  Pokud se váš doplněk nezobrazí uživatelského rozhraní – například příkazy nabídek, tlačítek panelu nástrojů nebo okna nástrojů – je možné využít kód jako-je tak dlouho, jak získat objekt DTE automation z sady VSPackage. Tady je způsob:  
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Chcete-li získat objekt DTE z VSPackage  
   
-1.  V projektu VSIX pomocí šablony položky balíčku Visual Studio, vyhledejte  *\<název projektu >* Package.cs souboru. Toto je třída, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package>; může pomoci při práci s aplikací Visual Studio. V takovém případě použijte jeho <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu.  
+1. V projektu VSIX pomocí šablony položky balíčku Visual Studio, vyhledejte  <em>\<název projektu ></em>Package.cs souboru. Toto je třída, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package>; může pomoci při práci s aplikací Visual Studio. V takovém případě použijte jeho <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu.  
   
-2.  Přidejte tyto `using` příkazy:  
+2. Přidejte tyto `using` příkazy:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  Najít `Initialize` metody. Tato metoda zpracovává příkaz, který jste zadali v Průvodci balíčkem. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> získat objekt DTE:  
+3. Najít `Initialize` metody. Tato metoda zpracovává příkaz, který jste zadali v Průvodci balíčkem. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> získat objekt DTE:  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- Až budete mít <xref:EnvDTE.DTE> objektu automatizace, zbytek kódu doplňku můžete přidat do projektu. Pokud potřebujete <xref:EnvDTE80.DTE2> objektu, můžete provést totéž.  
+   Až budete mít <xref:EnvDTE.DTE> objektu automatizace, zbytek kódu doplňku můžete přidat do projektu. Pokud potřebujete <xref:EnvDTE80.DTE2> objektu, můžete provést totéž.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>Jak změním příkazů nabídky a tlačítka panelu nástrojů v mé doplňku na VSPackage styl?  
  Rozšíření VSPackage pomocí souboru .vsct vytvořit většinu příkazů nabídky, panely nástrojů, tlačítka na panelu nástrojů a dalších uživatelského rozhraní. **Vlastního příkazu** šablony položky projektu poskytuje možnost vytvořit příkaz na **nástroje** nabídky. Další informace najdete v tématu [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).  
@@ -164,91 +164,91 @@ Nyní jsou zastaralé doplňky. Chcete-li nové rozšíření sady Visual Studio
   
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Vložit kód pro správu okna z doplňku na VSPackage  
   
-1.  Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.  
+1. Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.  
   
-2.  Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu >* Package.cs.)  
+2. Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  <em>\<název projektu ></em>Package.cs.)  
   
-3.  Přidejte tyto `using` příkazy:  
+3. Přidejte tyto `using` příkazy:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:  
+4. Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Přidejte kód z tohoto doplňku. Například tady je kód, který přidá nový úkol **seznamu úkolů**uvádí počet úloh a odstraní jeden úkol.  
+5. Přidejte kód z tohoto doplňku. Například tady je kód, který přidá nový úkol **seznamu úkolů**uvádí počet úloh a odstraní jeden úkol.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)   
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));   
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)   
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));   
   
-        TaskList tl = (TaskList)dte.ToolWindows.TaskList;   
-        askItem tlItem;   
+       TaskList tl = (TaskList)dte.ToolWindows.TaskList;   
+       askItem tlItem;   
   
-        // Add a couple of tasks to the Task List.   
-        tlItem = tl.TaskItems.Add(" ", " ", "Test task 1.",    
-            vsTaskPriority.vsTaskPriorityHigh, vsTaskIcon.vsTaskIconUser,   
-            true, "", 10, true, true);  
-        tlItem = tl.TaskItems.Add(" ", " ", "Test task 2.",   
-            vsTaskPriority.vsTaskPriorityLow, vsTaskIcon.vsTaskIconComment, true, "", 20, true,true);  
+       // Add a couple of tasks to the Task List.   
+       tlItem = tl.TaskItems.Add(" ", " ", "Test task 1.",    
+           vsTaskPriority.vsTaskPriorityHigh, vsTaskIcon.vsTaskIconUser,   
+           true, "", 10, true, true);  
+       tlItem = tl.TaskItems.Add(" ", " ", "Test task 2.",   
+           vsTaskPriority.vsTaskPriorityLow, vsTaskIcon.vsTaskIconComment, true, "", 20, true,true);  
   
-        // List the total number of task list items after adding the new task items.  
-        System.Windows.Forms.MessageBox.Show("Task Item 1 description: "+tl.TaskItems.Item(2).Description);  
-        System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
+       // List the total number of task list items after adding the new task items.  
+       System.Windows.Forms.MessageBox.Show("Task Item 1 description: "+tl.TaskItems.Item(2).Description);  
+       System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
   
-        // Remove the second task item. The items list in reverse numeric order.   
-        System.Windows.Forms.MessageBox.Show("Deleting the second task item");  
-        tl.TaskItems.Item(2).Delete();  
-        System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
-    }  
-    ```  
+       // Remove the second task item. The items list in reverse numeric order.   
+       System.Windows.Forms.MessageBox.Show("Deleting the second task item");  
+       tl.TaskItems.Item(2).Delete();  
+       System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
+   }  
+   ```  
   
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Jak můžu spravovat projekty a řešení v sadě VSPackage?  
  Pokud váš doplněk spravuje projekty a řešení, měl by kód doplňku fungovat v sadě VSPackage. Například tento postup ukazuje, jak přidat kód, který získá spouštěný projekt.  
   
-1.  Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.  
+1. Vytvoření balíčku VSPackage, která obsahuje příkaz nabídky, stejně jako [Jak můžu začít vyvíjet rozšíření VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) části.  
   
-2.  Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  *\<název projektu >* Package.cs.)  
+2. Otevřete soubor, který obsahuje definici sady VSPackage. (V projektu jazyka C#, má  <em>\<název projektu ></em>Package.cs.)  
   
-3.  Přidejte tyto `using` příkazy:  
+3. Přidejte tyto `using` příkazy:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:  
+4. Najít `MenuItemCallback` metody. Přidejte volání do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zobrazíte <xref:EnvDTE80.DTE2> objektu:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Přidejte kód z tohoto doplňku. Například následující kód získá název projektu při spuštění v řešení. (Řešení vícenásobného projektu musí být otevřený po spuštění tohoto balíčku.)  
+5. Přidejte kód z tohoto doplňku. Například následující kód získá název projektu při spuštění v řešení. (Řešení vícenásobného projektu musí být otevřený po spuštění tohoto balíčku.)  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));   
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));   
   
-        SolutionBuild2 sb = (SolutionBuild2)dte.Solution.SolutionBuild;   
-        Project startupProj;   
-        string msg = "";  
+       SolutionBuild2 sb = (SolutionBuild2)dte.Solution.SolutionBuild;   
+       Project startupProj;   
+       string msg = "";  
   
-        foreach (String item in (Array)sb.StartupProjects)   
-        {  
-            msg += item;   
-        }  
-        System.Windows.Forms.MessageBox.Show("Solution startup Project: "+msg);   
-        startupProj = dte.Solution.Item(msg);   
-        System.Windows.Forms.MessageBox.Show("Full name of solution's startup project: "+"/n"+startupProj.FullName);   
-    }  
-    ```  
+       foreach (String item in (Array)sb.StartupProjects)   
+       {  
+           msg += item;   
+       }  
+       System.Windows.Forms.MessageBox.Show("Solution startup Project: "+msg);   
+       startupProj = dte.Solution.Item(msg);   
+       System.Windows.Forms.MessageBox.Show("Full name of solution's startup project: "+"/n"+startupProj.FullName);   
+   }  
+   ```  
   
 ## <a name="how-do-i-set-keyboard-shortcuts-in-a-vspackage"></a>Nastavení klávesové zkratky v sadě VSPackage  
  Můžete použít `<KeyBindings>` prvek souboru .vsct. V následujícím příkladu, klávesové zkratky pro příkaz `idCommand1` Alt + A a klávesovou zkratku pro příkaz `idCommand2` je kombinace kláves Ctrl + Alt + A. Všimněte si, že syntaxe pro názvy klíčů.  

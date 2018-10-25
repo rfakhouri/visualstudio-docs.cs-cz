@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: cd7f1f36374f3411b5a76f5df5e3e25bb52df230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948632"
 ---
 # <a name="t4-assembly-directive"></a>T4 – direktiva Assembly
 
@@ -34,11 +34,11 @@ V době návrhu textové šablony sady Visual Studio `assembly` načte direktiva
 
  Název sestavení by měl být jeden z následujících názvů:
 
--   Silný název sestavení v mezipaměti GAC, například `System.Xml.dll`. Můžete také použít dlouhou, například `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Další informace naleznete v tématu <xref:System.Reflection.AssemblyName>.
+- Silný název sestavení v mezipaměti GAC, například `System.Xml.dll`. Můžete také použít dlouhou, například `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Další informace naleznete v tématu <xref:System.Reflection.AssemblyName>.
 
--   Absolutní cesta k sestavení
+- Absolutní cesta k sestavení
 
- Můžete použít `$(variableName)` syntaxi odkazovat na proměnné sady Visual Studio, jako `$(SolutionDir)`, a `%VariableName%` na referenční proměnné prostředí. Příklad:
+  Můžete použít `$(variableName)` syntaxi odkazovat na proměnné sady Visual Studio, jako `$(SolutionDir)`, a `%VariableName%` na referenční proměnné prostředí. Příklad:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -49,21 +49,21 @@ V době návrhu textové šablony sady Visual Studio `assembly` načte direktiva
 ## <a name="standard-assemblies"></a>Standardní sestavení
  Následující sestavení se načítají automaticky, takže pro ně nemusíte psát direktivy sestavení:
 
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`
 
--   `System.dll`
+- `System.dll`
 
--   `WindowsBase.dll`
+- `WindowsBase.dll`
 
- Pokud používáte vlastní direktivu, může procesor direktiv načíst další sestavení. Pokud například píšete šablony pro jazyk domény (DSL), nemusíte psát direktivy sestavení pro následující sestavení:
+  Pokud používáte vlastní direktivu, může procesor direktiv načíst další sestavení. Pokud například píšete šablony pro jazyk domény (DSL), nemusíte psát direktivy sestavení pro následující sestavení:
 
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`
 
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
 
--   Sestavení obsahující váš kód DSL
+- Sestavení obsahující váš kód DSL
 
 ## <a name="msbuild"></a> Používání vlastností projektu v nástroji MSBuild a sadě Visual Studio
  Visual Studio makra, například $ (SolutionDir), nefungují v nástroji MSBuild. Chcete-li transformovat šablony v sestavovacím počítači, je nutné místo toho použít vlastnosti projektu.
@@ -82,7 +82,6 @@ V době návrhu textové šablony sady Visual Studio `assembly` načte direktiva
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  Tuto vlastnost projektu nyní můžete použít v textových šablonách, které se správně transformují jak v sadě Visual Studio, tak v nástroji MSBuild:

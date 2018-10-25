@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933440"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura doplňků VSTO
   Doplňků VSTO vytvořené pomocí nástroje Office developer tools v sadě Visual Studio máte architektury funkce, které zdůrazňují stabilitu a zabezpečení a povolte je těsná spolupráce s Microsoft Office. Toto téma popisuje následující aspekty doplňků VSTO:  
   
--   [Vysvětlení doplňků VSTO](#UnderstandingAddIns)  
+- [Vysvětlení doplňků VSTO](#UnderstandingAddIns)  
   
--   [Součástí doplňků VSTO](#AddinComponents)  
+- [Součástí doplňků VSTO](#AddinComponents)  
   
--   [Jak fungují doplňků VSTO pomocí aplikace Microsoft Office](#HowAddinsWork)  
+- [Jak fungují doplňků VSTO pomocí aplikace Microsoft Office](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Obecné informace o vytváření doplňků VSTO najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+  Obecné informace o vytváření doplňků VSTO najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Vysvětlení doplňků VSTO  
  Při použití nástroje Office developer tools v sadě Visual Studio k vytvoření doplňku VSTO můžete vytvořit sestavení spravovaného kódu, který je načten pomocí aplikace Microsoft Office. Po sestavení je načteno, doplňku VSTO můžou reagovat na události, které jsou vyvolány v aplikaci (například když uživatel klikne položku nabídky). Doplněk VSTO můžete také volat do objektového modelu automatizovat a rozšířit aplikace a můžou používat kterýkoli z třídy v [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  

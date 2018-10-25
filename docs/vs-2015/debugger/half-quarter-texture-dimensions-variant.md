@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950391"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Varianta dimenze polovině/textury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Snižuje rozměrů textury na textury, které nejsou cíle vykreslování.
 ## <a name="remarks"></a>Poznámky  
  Rozměry textury jsou zmenšeny na všechna volání `ID3D11Device::CreateTexture2D` , který vytváří zdrojovou texturu. Konkrétně je snížení rozměrů textury při D3D11_TEXTURE2D_DESC objekt předaný v `pDesc` popisuje textury, který se používá vykreslování; který je:  
   
--   Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.  
+- Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.  
   
--   Člen MiscFlags nemá příznak D3D11_RESOURCE_MISC_TILE_POOL nebo nastaví příznak D3D11_RESOURCE_MISC_TILED (vedle sebe prostředky nelze změnit velikost).  
+- Člen MiscFlags nemá příznak D3D11_RESOURCE_MISC_TILE_POOL nebo nastaví příznak D3D11_RESOURCE_MISC_TILED (vedle sebe prostředky nelze změnit velikost).  
   
--   Formát textura je podporovaný jako cíl vykreslování – podle D3D11_FORMAT_SUPPORT_RENDER_TARGET – což je vyžadováno pro omezení velikosti textury. Podporují se také formátů BC1, BC2 a BC3, a i když nejsou podporovány jako cíle vykreslování.  
+- Formát textura je podporovaný jako cíl vykreslování – podle D3D11_FORMAT_SUPPORT_RENDER_TARGET – což je vyžadováno pro omezení velikosti textury. Podporují se také formátů BC1, BC2 a BC3, a i když nejsou podporovány jako cíle vykreslování.  
   
- Pokud je počáteční údaje poskytnuté aplikací, škáluje Tato varianta data textury, která mají odpovídající velikost, předtím, než vytvoří textury. Pokud počáteční data je zadaný ve formátu komprimovanými například BC1, BC2 nebo BC3, je dekódovat, škálovat a znovu kódován předtím, než se používá k vytvoření menších textury. (Povaze založené na blocích komprese znamená, že proces velmi dekódování škálování – kódování téměř vždy způsobí nižší kvality obrázku, než když textury komprimovanými nevygeneruje škálovaná verze textury, který nebyl dříve zakódován.)  
+  Pokud je počáteční údaje poskytnuté aplikací, škáluje Tato varianta data textury, která mají odpovídající velikost, předtím, než vytvoří textury. Pokud počáteční data je zadaný ve formátu komprimovanými například BC1, BC2 nebo BC3, je dekódovat, škálovat a znovu kódován předtím, než se používá k vytvoření menších textury. (Povaze založené na blocích komprese znamená, že proces velmi dekódování škálování – kódování téměř vždy způsobí nižší kvality obrázku, než když textury komprimovanými nevygeneruje škálovaná verze textury, který nebyl dříve zakódován.)  
   
- Pokud mapy mip jsou povolené pro textury, varianty snižuje počet úrovní mip odpovídajícím způsobem – jeden méně při horizontálním škálování poloviční velikost nebo dvě méně při škálování na velikost čtvrtletí.  
+  Pokud mapy mip jsou povolené pro textury, varianty snižuje počet úrovní mip odpovídajícím způsobem – jeden méně při horizontálním škálování poloviční velikost nebo dvě méně při škálování na velikost čtvrtletí.  
   
 ## <a name="example"></a>Příklad  
  Tato varianta změní velikost textury v době běhu před voláním `CreateTexture2D`. Nedoporučujeme tento přístup pro produkční kód, protože reklamy textury využívat více místa na disku a další krok může zvýšit dobu načítání v aplikaci – zejména pro komprimované textury, které vyžadují významné výpočetní prostředky ke kódování. Namísto toho doporučujeme změnit velikost vašeho textury v režimu offline, a to pomocí editoru obrázků nebo obrázků procesor, který je součástí vašeho kanálu sestavení. Tyto přístupy snížit požadavky na místo na disku a eliminuje režijní náklady na modul runtime ve vaší aplikaci a poskytují více času na zpracování, aby uchováváte nejlepší kvality obrázku během zmenšení nebo komprese vaše textury.  

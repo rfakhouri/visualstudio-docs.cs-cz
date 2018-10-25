@@ -13,12 +13,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dab39c5718b8872df5e81281ba9dda886ebf313
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941201"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testování částí stávajících aplikací C++ pomocí Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,118 +60,118 @@ Doporučujeme, před změnou existující aplikace, zkontrolujte, že na něm do
   
 ###  <a name="staticLink"></a> Změna testovaného kódu na statickou knihovnu  
   
--   Pokud musí testy používat členy Neexportované testovaného projektu a testovaný projekt je sestaven jako dynamická knihovna, zvažte jeho převod na statickou knihovnu.  
+- Pokud musí testy používat členy Neexportované testovaného projektu a testovaný projekt je sestaven jako dynamická knihovna, zvažte jeho převod na statickou knihovnu.  
   
-    1.  V Průzkumníku řešení zvolte v místní nabídce testovaného projektu **vlastnosti**. Otevře se okno s vlastnostmi projektu.  
+  1.  V Průzkumníku řešení zvolte v místní nabídce testovaného projektu **vlastnosti**. Otevře se okno s vlastnostmi projektu.  
   
-    2.  Zvolte **vlastnosti konfigurace**, **Obecné**.  
+  2.  Zvolte **vlastnosti konfigurace**, **Obecné**.  
   
-    3.  Nastavte **typ konfigurace** k **statická knihovna (.lib)**.  
+  3.  Nastavte **typ konfigurace** k **statická knihovna (.lib)**.  
   
- Pokračujte postupem [připojení testů k souborům objektů nebo knihoven](#objectRef).  
+  Pokračujte postupem [připojení testů k souborům objektů nebo knihoven](#objectRef).  
   
 ###  <a name="projectRef"></a> Odkazování na exportované funkce z testovacího projektu  
   
--   Pokud Testovaný projekt exportuje funkce, které chcete testovat, můžete přidat odkaz na projekt kódu z testovacího projektu.  
+- Pokud Testovaný projekt exportuje funkce, které chcete testovat, můžete přidat odkaz na projekt kódu z testovacího projektu.  
   
-    1.  Vytvoření testovacího projektu C++.  
+  1.  Vytvoření testovacího projektu C++.  
   
-        1.  Na **souboru** nabídce zvolte **nový**, **projektu**, **Visual C++, testovací**, **projekt testu jednotek C++**.  
+      1.  Na **souboru** nabídce zvolte **nový**, **projektu**, **Visual C++, testovací**, **projekt testu jednotek C++**.  
   
-    2.  V Průzkumníku řešení zvolte v místní nabídce testovaného projektu **odkazy**. Otevře se okno s vlastnostmi projektu.  
+  2.  V Průzkumníku řešení zvolte v místní nabídce testovaného projektu **odkazy**. Otevře se okno s vlastnostmi projektu.  
   
-    3.  Vyberte **společné vlastnosti**, **rámec a odkazy**a klikněte na tlačítko **přidat nový odkaz** tlačítko.  
+  3.  Vyberte **společné vlastnosti**, **rámec a odkazy**a klikněte na tlačítko **přidat nový odkaz** tlačítko.  
   
-    4.  Vyberte **projekty**a pak Testovaný projekt.  
+  4.  Vyberte **projekty**a pak Testovaný projekt.  
   
-         Zvolte **přidat** tlačítko.  
+       Zvolte **přidat** tlačítko.  
   
-    5.  Ve vlastnostech testovacího projektu přidejte umístění testovaného projektu do adresáře Include.  
+  5.  Ve vlastnostech testovacího projektu přidejte umístění testovaného projektu do adresáře Include.  
   
-         Zvolte **vlastnosti konfigurace**, **adresáře VC ++**, **adresáře souborů k zahrnutí**.  
+       Zvolte **vlastnosti konfigurace**, **adresáře VC ++**, **adresáře souborů k zahrnutí**.  
   
-         Zvolte **upravit**a poté přidejte hlavní adresář testovaného projektu.  
+       Zvolte **upravit**a poté přidejte hlavní adresář testovaného projektu.  
   
- Přejděte na [psaní jednotkových testů](#addTests).  
+  Přejděte na [psaní jednotkových testů](#addTests).  
   
 ###  <a name="objectRef"></a> Připojení testů k souborům objektů nebo knihoven  
   
--   Pokud testovaný kód neexportuje funkce, které chcete testovat, můžete přidat výstup **.obj** nebo **lib** souboru do závislostí testovacího projektu.  
+- Pokud testovaný kód neexportuje funkce, které chcete testovat, můžete přidat výstup **.obj** nebo **lib** souboru do závislostí testovacího projektu.  
   
-    1.  Vytvoření testovacího projektu C++.  
+  1.  Vytvoření testovacího projektu C++.  
   
-        1.  Na **souboru** nabídce zvolte **nový**, **projektu**, **Visual C++, testovací**, **projekt testu jednotek C++**.  
+      1.  Na **souboru** nabídce zvolte **nový**, **projektu**, **Visual C++, testovací**, **projekt testu jednotek C++**.  
   
-    2.  V Průzkumníku řešení zvolte v místní nabídce testovaného projektu **vlastnosti**. Otevře se okno s vlastnostmi projektu.  
+  2.  V Průzkumníku řešení zvolte v místní nabídce testovaného projektu **vlastnosti**. Otevře se okno s vlastnostmi projektu.  
   
-    3.  Zvolte **vlastnosti konfigurace**, **Linkeru**, **vstup**, **Další závislosti**.  
+  3.  Zvolte **vlastnosti konfigurace**, **Linkeru**, **vstup**, **Další závislosti**.  
   
-         Zvolte **upravit**a přidejte názvy **.obj** nebo **lib** soubory. Nepoužívejte úplné cesty k souborům.  
+       Zvolte **upravit**a přidejte názvy **.obj** nebo **lib** soubory. Nepoužívejte úplné cesty k souborům.  
   
-    4.  Zvolte **vlastnosti konfigurace**, **Linkeru**, **Obecné**, **další adresáře knihoven**.  
+  4.  Zvolte **vlastnosti konfigurace**, **Linkeru**, **Obecné**, **další adresáře knihoven**.  
   
-         Zvolte **upravit**a přidejte cestu k adresáři **.obj** nebo **lib** soubory. Cesta je obvykle ve složce sestavení testovaného projektu.  
+       Zvolte **upravit**a přidejte cestu k adresáři **.obj** nebo **lib** soubory. Cesta je obvykle ve složce sestavení testovaného projektu.  
   
-    5.  Zvolte **vlastnosti konfigurace**, **adresáře VC ++**, **adresáře souborů k zahrnutí**.  
+  5.  Zvolte **vlastnosti konfigurace**, **adresáře VC ++**, **adresáře souborů k zahrnutí**.  
   
-         Zvolte **upravit**a poté přidejte hlavní adresář testovaného projektu.  
+       Zvolte **upravit**a poté přidejte hlavní adresář testovaného projektu.  
   
- Přejděte na [psaní jednotkových testů](#addTests).  
+  Přejděte na [psaní jednotkových testů](#addTests).  
   
 ###  <a name="sameProject"></a> Přidání jednotkových testů do stejného projektu  
   
-1.  Úprava vlastností projektu kódu produktu k zahrnovaly hlavičkové soubory a soubory knihoven, které jsou požadovány pro testování částí.  
+1. Úprava vlastností projektu kódu produktu k zahrnovaly hlavičkové soubory a soubory knihoven, které jsou požadovány pro testování částí.  
   
-    1.  V Průzkumníku řešení v místní nabídce testovaného projektu zvolte Vlastnosti. Otevře se okno s vlastnostmi projektu.  
+   1.  V Průzkumníku řešení v místní nabídce testovaného projektu zvolte Vlastnosti. Otevře se okno s vlastnostmi projektu.  
   
-    2.  Zvolte **vlastnosti konfigurace**, **adresáře VC ++**.  
+   2.  Zvolte **vlastnosti konfigurace**, **adresáře VC ++**.  
   
-    3.  Upravte adresáře Include a Library:  
+   3.  Upravte adresáře Include a Library:  
   
-        |||  
-        |-|-|  
-        |**Adresáře souborů k zahrnutí**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|  
-        |**Adresáře knihoven**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|  
+       |||  
+       |-|-|  
+       |**Adresáře souborů k zahrnutí**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|  
+       |**Adresáře knihoven**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|  
   
-2.  Přidáte soubor testu jednotek C++:  
+2. Přidáte soubor testu jednotek C++:  
   
-    -   V Průzkumníku řešení v místní nabídce projektu zvolte **přidat**, **nová položka**a klikněte na tlačítko **Jednotkový Test C++**.  
+   -   V Průzkumníku řešení v místní nabídce projektu zvolte **přidat**, **nová položka**a klikněte na tlačítko **Jednotkový Test C++**.  
   
- Přejděte na [psaní jednotkových testů](#addTests).  
+   Přejděte na [psaní jednotkových testů](#addTests).  
   
 ##  <a name="addTests"></a> Zápis testů jednotek  
   
-1.  Do každého souboru kódu jednotkového testu přidejte `#include` příkaz pro záhlaví testovaného projektu.  
+1. Do každého souboru kódu jednotkového testu přidejte `#include` příkaz pro záhlaví testovaného projektu.  
   
-2.  Přidejte testovací třídy a metody do souborů s kódy testu jednotek. Příklad:  
+2. Přidejte testovací třídy a metody do souborů s kódy testu jednotek. Příklad:  
   
-    ```cpp  
-    #include "stdafx.h"  
-    #include "CppUnitTest.h"  
-    #include "MyProjectUnderTest.h"  
-    using namespace Microsoft::VisualStudio::CppUnitTestFramework;  
-    namespace MyTest  
-    {  
-      TEST_CLASS(MyTests)  
-      {  
-      public:  
-          TEST_METHOD(MyTestMethod)  
-          {  
-              Assert::AreEqual(MyProject::Multiply(2,3), 6);  
-          }  
-      };  
-    }  
-    ```  
+   ```cpp  
+   #include "stdafx.h"  
+   #include "CppUnitTest.h"  
+   #include "MyProjectUnderTest.h"  
+   using namespace Microsoft::VisualStudio::CppUnitTestFramework;  
+   namespace MyTest  
+   {  
+     TEST_CLASS(MyTests)  
+     {  
+     public:  
+         TEST_METHOD(MyTestMethod)  
+         {  
+             Assert::AreEqual(MyProject::Multiply(2,3), 6);  
+         }  
+     };  
+   }  
+   ```  
   
- Další informace najdete v tématu [testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
+   Další informace najdete v tématu [testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c).  
   
 ## <a name="run-the-tests"></a>Spustit testy  
   
-1.  Na **zobrazení** nabídce zvolte **ostatní Windows**, **Průzkumník testů**.  
+1. Na **zobrazení** nabídce zvolte **ostatní Windows**, **Průzkumník testů**.  
   
-2.  V Průzkumníku testů, zvolte **spustit všechny**.  
+2. V Průzkumníku testů, zvolte **spustit všechny**.  
   
- Další informace najdete v tématu [rychlý Start: vývoj řízených testů pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md).
+   Další informace najdete v tématu [rychlý Start: vývoj řízených testů pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md).
 
 
 

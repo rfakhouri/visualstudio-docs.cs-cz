@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac0eb6ee06d22eefb3b402df74ae4bf9735ff9c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941175"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Přidání ovládacích prvků do dokumentů Office za běhu
   Můžete přidat ovládací prvky do dokumentu Microsoft Office Word a sešit aplikace Microsoft Office Excel za běhu. Můžete také odebrat je za běhu. Ovládací prvky, které můžete přidat nebo odebrat za běhu se nazývají *dynamické ovládací prvky*.  
@@ -39,13 +39,13 @@ ms.locfileid: "35676042"
 
  Toto téma popisuje následující:  
 
--   [Spravovat ovládacích prvků za běhu pomocí kolekce ovládacích prvků](#ControlsCollection).  
+- [Spravovat ovládacích prvků za běhu pomocí kolekce ovládacích prvků](#ControlsCollection).  
 
--   [Přidání hostitelských ovládacích prvků do dokumentů](#HostControls).  
+- [Přidání hostitelských ovládacích prvků do dokumentů](#HostControls).  
 
--   [Přidání ovládacích prvků Windows Forms do dokumentů](#WindowsForms).  
+- [Přidání ovládacích prvků Windows Forms do dokumentů](#WindowsForms).  
 
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak to: Přidání ovládacích prvků do dokumentu plochu za běhu?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak to: Přidání ovládacích prvků do dokumentu plochu za běhu?](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> Spravovat ovládacích prvků za běhu pomocí kolekce ovládacích prvků  
  Pokud chcete přidat, získat nebo odebrání ovládacích prvků za běhu, použijte pomocné metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> a <xref:Microsoft.Office.Tools.Word.ControlCollection> objekty.  
@@ -82,19 +82,19 @@ ms.locfileid: "35676042"
 ##  <a name="HostControls"></a> Přidání hostitelských ovládacích prvků do dokumentů  
  Když přidáte do dokumentů prostřednictvím kódu programu hostitelské ovládací prvky je nutné zadat název, který jednoznačně identifikuje ovládací prvek a musíte určit, kde chcete-li přidat ovládací prvek v dokumentu. Konkrétní pokyny naleznete v následujících tématech:  
 
--   [Postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
 
--   [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
 
--   [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
--   [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
--   [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
- Další informace o hostitelských ovládacích prvcích najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
+  Další informace o hostitelských ovládacích prvcích najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
 
- Po uložení a pak zavření dokumentu z jejich události jsou odpojené všechny dynamicky generovaný hostitelské ovládací prvky a mohly být ztraceny jejich data vazbu funkce. Přidejte kód do svého řešení k opětovnému vytvoření hostitelské ovládací prvky, když znovu otevřete dokument. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Po uložení a pak zavření dokumentu z jejich události jsou odpojené všechny dynamicky generovaný hostitelské ovládací prvky a mohly být ztraceny jejich data vazbu funkce. Přidejte kód do svého řešení k opětovnému vytvoření hostitelské ovládací prvky, když znovu otevřete dokument. Další informace najdete v tématu [uchování dynamických ovládacích prvků v dokumentech systému Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
 
 > [!NOTE]  
 >  Nejsou zadány pomocné metody pro následující hostování ovládacích prvků, protože tyto ovládací prvky nemohou být přidány do dokumentů prostřednictvím kódu programu: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, a <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
@@ -110,36 +110,36 @@ ms.locfileid: "35676042"
 ### <a name="add-custom-controls"></a>Přidání vlastních ovládacích prvků  
  Pokud chcete přidat <xref:System.Windows.Forms.Control> , která není podporována k dispozici pomocné metody, jako jsou vlastní uživatelský ovládací prvek, pomocí následujících metod:  
 
--   Pro aplikaci Excel, použijte jednu z <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> objektu.  
+- Pro aplikaci Excel, použijte jednu z <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> objektu.  
 
--   Pro Word, použijte jednu z <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Word.ControlCollection> objektu.  
+- Pro Word, použijte jednu z <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Word.ControlCollection> objektu.  
 
- Chcete-li přidat ovládací prvek, předejte <xref:System.Windows.Forms.Control>, umístění pro ovládací prvek a s názvem, který jednoznačně identifikuje ovládací prvek `AddControl` metoda. `AddControl` Metoda vrátí objekt, který definuje, jak ovládací prvek komunikuje s listem nebo dokumentu. `AddControl` Metoda vrátí hodnotu <xref:Microsoft.Office.Tools.Excel.ControlSite> (pro aplikace Excel) nebo <xref:Microsoft.Office.Tools.Word.ControlSite> objektu (pro aplikaci Word).  
+  Chcete-li přidat ovládací prvek, předejte <xref:System.Windows.Forms.Control>, umístění pro ovládací prvek a s názvem, který jednoznačně identifikuje ovládací prvek `AddControl` metoda. `AddControl` Metoda vrátí objekt, který definuje, jak ovládací prvek komunikuje s listem nebo dokumentu. `AddControl` Metoda vrátí hodnotu <xref:Microsoft.Office.Tools.Excel.ControlSite> (pro aplikace Excel) nebo <xref:Microsoft.Office.Tools.Word.ControlSite> objektu (pro aplikaci Word).  
 
- Následující příklad kódu ukazuje, jak používat <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> způsob, jak dynamicky přidat vlastní uživatelský ovládací prvek do listu v projektu aplikace Excel úrovni dokumentu. V tomto příkladu je název uživatelského ovládacího prvku `UserControl1`a <xref:Microsoft.Office.Interop.Excel.Range> jmenuje `range1`. Pokud chcete použít tento příklad, spusťte jej z `Sheet` *n* třídy v projektu.  
+  Následující příklad kódu ukazuje, jak používat <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> způsob, jak dynamicky přidat vlastní uživatelský ovládací prvek do listu v projektu aplikace Excel úrovni dokumentu. V tomto příkladu je název uživatelského ovládacího prvku `UserControl1`a <xref:Microsoft.Office.Interop.Excel.Range> jmenuje `range1`. Pokud chcete použít tento příklad, spusťte jej z `Sheet` *n* třídy v projektu.  
 
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
- [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
+  [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
+  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
 
 ### <a name="use-members-of-custom-controls"></a>Použití vlastních ovládacích prvků členů  
  Po použití jedné z `AddControl` metody pro přidání ovládacího prvku na listu nebo dokumentu, můžete teď mít dva objekty jiného ovládacího prvku:  
 
--   <xref:System.Windows.Forms.Control> , Který představuje vlastní ovládací prvek.  
+- <xref:System.Windows.Forms.Control> , Který představuje vlastní ovládací prvek.  
 
--   `ControlSite`, `OLEObject`, Nebo `OLEControl` objekt, který představuje ovládací prvek po byl přidán do listu nebo dokumentu.  
+- `ControlSite`, `OLEObject`, Nebo `OLEControl` objekt, který představuje ovládací prvek po byl přidán do listu nebo dokumentu.  
 
- Mnoho vlastností a metod jsou sdíleny mezi těmito ovládacími prvky. Je důležité, že tyto členy přistupujete prostřednictvím příslušný ovládací prvek:  
+  Mnoho vlastností a metod jsou sdíleny mezi těmito ovládacími prvky. Je důležité, že tyto členy přistupujete prostřednictvím příslušný ovládací prvek:  
 
--   Chcete-li přístup ke členům, které patří pouze do vlastního ovládacího prvku, použijte <xref:System.Windows.Forms.Control>.  
+- Chcete-li přístup ke členům, které patří pouze do vlastního ovládacího prvku, použijte <xref:System.Windows.Forms.Control>.  
 
--   Chcete-li přístup ke členům, které jsou sdíleny ovládací prvky, použijte `ControlSite`, `OLEObject`, nebo `OLEControl` objektu.  
+- Chcete-li přístup ke členům, které jsou sdíleny ovládací prvky, použijte `ControlSite`, `OLEObject`, nebo `OLEControl` objektu.  
 
- Pokud přistupujete ke sdílenému členu z <xref:System.Windows.Forms.Control>, může selhat bez upozornění a oznámení, nebo může vytvořit neplatný výsledky. Vždy použít metody nebo vlastnosti `ControlSite`, `OLEObject`, nebo `OLEControl` objekt Pokud potřebujete metoda nebo vlastnost není k dispozici, teprve pak by vám odkaz <xref:System.Windows.Forms.Control>.  
+  Pokud přistupujete ke sdílenému členu z <xref:System.Windows.Forms.Control>, může selhat bez upozornění a oznámení, nebo může vytvořit neplatný výsledky. Vždy použít metody nebo vlastnosti `ControlSite`, `OLEObject`, nebo `OLEControl` objekt Pokud potřebujete metoda nebo vlastnost není k dispozici, teprve pak by vám odkaz <xref:System.Windows.Forms.Control>.  
 
- Například i <xref:Microsoft.Office.Tools.Excel.ControlSite> třídy a <xref:System.Windows.Forms.Control> třídy `Top` vlastnost. Chcete-li získat nebo nastavit vzdálenost mezi horní části ovládacího prvku a horním okrajem dokumentu, použijte <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.ControlSite>, nikoli <xref:System.Windows.Forms.Control.Top%2A> vlastnost <xref:System.Windows.Forms.Control>.  
+  Například i <xref:Microsoft.Office.Tools.Excel.ControlSite> třídy a <xref:System.Windows.Forms.Control> třídy `Top` vlastnost. Chcete-li získat nebo nastavit vzdálenost mezi horní části ovládacího prvku a horním okrajem dokumentu, použijte <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> vlastnost <xref:Microsoft.Office.Tools.Excel.ControlSite>, nikoli <xref:System.Windows.Forms.Control.Top%2A> vlastnost <xref:System.Windows.Forms.Control>.  
 
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
- [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
+  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
+  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
 
 ## <a name="see-also"></a>Viz také:  
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
