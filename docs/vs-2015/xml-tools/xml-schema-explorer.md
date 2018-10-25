@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845872"
 ---
 # <a name="xml-schema-explorer"></a>Průzkumník schémat XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,44 +29,44 @@ Průzkumníka schémat XML je součástí sady Microsoft Visual Studio a Editor 
   
  Průzkumníka schémat XML lze provádět následující akce:  
   
--   Získejte rychlý přehled o sadě schémat.  
+- Získejte rychlý přehled o sadě schémat.  
   
--   Procházení a přejděte strom.  
+- Procházení a přejděte strom.  
   
--   Proveďte – klíčové slovo a specifické pro schéma vyhledávání. Další informace najdete v tématu [hledání sady schématu](../xml-tools/searching-the-schema-set.md).  
+- Proveďte – klíčové slovo a specifické pro schéma vyhledávání. Další informace najdete v tématu [hledání sady schématu](../xml-tools/searching-the-schema-set.md).  
   
--   Přidat do zobrazení grafu nebo zobrazení obsahu Modle výsledky hledání  
+- Přidat do zobrazení grafu nebo zobrazení obsahu Modle výsledky hledání  
   
--   Seřaďte podle pořadí dokumentů, typ nebo název stromu. Další informace najdete v tématu [řazení, filtrování a seskupování](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
+- Seřaďte podle pořadí dokumentů, typ nebo název stromu. Další informace najdete v tématu [řazení, filtrování a seskupování](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
   
--   Otevření editoru XML a přejděte do umístění kódu v souboru XSD. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).  
+- Otevření editoru XML a přejděte do umístění kódu v souboru XSD. Další informace najdete v tématu [integrace s editorem XML](../xml-tools/integration-with-xml-editor.md).  
   
--   Generovat ukázkový soubor XML pro globální prvky.  
+- Generovat ukázkový soubor XML pro globální prvky.  
   
- Průzkumníka schémat XML poskytuje hierarchická zobrazení schématu nastavit pomocí stromového zobrazení. Průzkumníka schémat XML také poskytuje vyhledávání, filtrování, navigace a řazení. Pro přístup k Průzkumníka schémat XML, proveďte jednu z následujících akcí:  
+  Průzkumníka schémat XML poskytuje hierarchická zobrazení schématu nastavit pomocí stromového zobrazení. Průzkumníka schémat XML také poskytuje vyhledávání, filtrování, navigace a řazení. Pro přístup k Průzkumníka schémat XML, proveďte jednu z následujících akcí:  
   
--   Pokud používáte [zobrazení Start](../xml-tools/start-view.md), klikněte na tlačítko **Průzkumníka schémat XML** odkaz.  
+- Pokud používáte [zobrazení Start](../xml-tools/start-view.md), klikněte na tlačítko **Průzkumníka schémat XML** odkaz.  
   
--   Pokud používáte [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení modelu obsahu](../xml-tools/content-model-view.md) a uzlů ve vašem pracovním prostoru, použijte v místní nabídce vyberte Průzkumníka schémat XML.  
+- Pokud používáte [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení modelu obsahu](../xml-tools/content-model-view.md) a uzlů ve vašem pracovním prostoru, použijte v místní nabídce vyberte Průzkumníka schémat XML.  
   
--   Můžete také vybrat Explorerfrom schématu XML **zobrazení** nabídky.  
+- Můžete také vybrat Explorerfrom schématu XML **zobrazení** nabídky.  
   
--   Můžete přistupovat Explorerfrom schématu XML soubor .vb, který má literál XML Visual Basic přidružené k souboru XSD. Abychom viděli toto schéma, nastavte v Průzkumník schémat XML, klikněte pravým tlačítkem na uzel XML v literálu XML nebo import oboru názvů XML a vyberte **zobrazit v Průzkumníkovi schémat** příkazu. Další informace najdete v tématu [integrace z literálů XML s Průzkumníkem schémat XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
+- Můžete přistupovat Explorerfrom schématu XML soubor .vb, který má literál XML Visual Basic přidružené k souboru XSD. Abychom viděli toto schéma, nastavte v Průzkumník schémat XML, klikněte pravým tlačítkem na uzel XML v literálu XML nebo import oboru názvů XML a vyberte **zobrazit v Průzkumníkovi schémat** příkazu. Další informace najdete v tématu [integrace z literálů XML s Průzkumníkem schémat XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
   
 ## <a name="tree-view"></a>Stromové zobrazení  
  Průzkumníka schémat XML zobrazí informace o sadě předem kompilovaných schématu ve stromové struktuře. Stromové struktury je uspořádaný následujícím způsobem:  
   
--   Na nejvyšší úrovni je schéma, nastavte uzel.  
+- Na nejvyšší úrovni je schéma, nastavte uzel.  
   
--   Na druhé úrovni obsahuje obory názvů.  
+- Na druhé úrovni obsahuje obory názvů.  
   
--   Na třetí úrovni obsahuje soubory.  
+- Na třetí úrovni obsahuje soubory.  
   
--   Čtvrtý úrovni obsahuje globální uzly. To může zahrnovat prvky, skupiny, komplexní typy, jednoduché typy, atributy, skupiny atributů a `include`, `import`, a `redefine` příkazy.  
+- Čtvrtý úrovni obsahuje globální uzly. To může zahrnovat prvky, skupiny, komplexní typy, jednoduché typy, atributy, skupiny atributů a `include`, `import`, a `redefine` příkazy.  
   
- Následuje příklad stromové struktury:  
+  Následuje příklad stromové struktury:  
   
- ![Průzkumník schémat XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![Průzkumník schémat XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>Výběr a aktivace  
  Pokud chcete zvýraznit a vyberte uzel, klikněte na jednou Průzkumník schémat.  

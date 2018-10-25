@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867374"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ Výběrem příslušné klávesové zkratky máte v sadě Visual Studio snazší
   
 ##  <a name="bkmk_TextEditor"></a> Textový Editor  
   
-|Příkazy|Klávesové zkratky|  
-|--------------|------------------------|  
-|Edit.BreakLine|Enter<br /><br /> or<br /><br /> Shift+Enter|  
-|Edit.CharLeft|Šipka doleva|  
-|Edit.CharLeftExtend|Shift + šipka doleva|  
-|Edit.CharLeftExtendColumn|Shift + Alt + šipka doleva|  
-|Edit.CharRight|Šipka doprava|  
-|Edit.CharRightExtend|Shift + šipka doprava|  
-|Edit.CharRightExtendColumn|Shift + Alt + šipka doprava|  
-|Edit.CharTranspose|Ctrl+T|  
-|Edit.ClearBookmarks|Ctrl+K, Ctrl+L|  
-|Edit.CollapseAllOutlining|Ctrl+M, Ctrl+A|  
-|Edit.CollapseCurrentRegion|Ctrl+M, Ctrl+S|  
-|Edit.CollapseTag|Ctrl+M, Ctrl+T|  
-|Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O|  
-|Edit.CommentSelection|Ctrl+K, Ctrl+C|  
-|Edit.CompleteWord|Ctrl + mezerník<br /><br /> or<br /><br /> Alt + šipka doprava|  
-|Edit.CopyParameterTip|Ctrl+Shift+Alt+C|  
-|Edit.DecreaseFilterLevel|Alt+,|  
-|Edit.DeleteBackwards|Backspace<br /><br /> or<br /><br /> Shift+Bkspce|  
-|Edit.DeleteHorizontalWhiteSpace|Ctrl+K, Ctrl+\|  
-|Edit.DocumentEnd|Ctrl+End|  
-|Edit.DocumentEndExtend|Ctrl+Shift+End|  
-|Edit.DocumentStart|Ctrl+Home|  
-|Edit.DocumentStartExtend|Ctrl+Shift+Home|  
-|Edit.ExpandAllOutlining|Ctrl+M, Ctrl+X|  
-|Edit.ExpandCurrentRegion|Ctrl+M, Ctrl+E|  
-|Edit.FormatDocument|Ctrl+K, Ctrl+D|  
-|Edit.FormatSelection|Ctrl+K, Ctrl+F|  
-|Edit.GotoBrace|Ctrl+]|  
-|Edit.GotoBraceExtend|Ctrl+Shift+]|  
-|Edit.HideSelection|Ctrl+M, Ctrl+H|  
-|Edit.IncreaseFilterLevel|Alt+.|  
-|Edit.IncrementalSearch|Ctrl+I|  
-|Edit.InsertTab|Tabulátor|  
-|Edit.LineCut|Ctrl+L|  
-|Edit.LineDelete|Ctrl+Shift+L|  
-|Edit.LineDown|Šipka dolů|  
-|Edit.LineDownExtend|Shift + šipka dolů|  
-|Edit.LineDownExtendColumn|Shift +Alt + šipka dolů|  
-|Edit.LineEnd|End|  
-|Edit.LineEndExtend|Shift+End|  
-|Edit.LineEndExtendColumn|Shift+Alt+End|  
-|Edit.LineOpenAbove|Ctrl+Enter|  
-|Edit.LineOpenBelow|Ctrl+Shift+Enter|  
-|Edit.LineStart|Domů|  
-|Edit.LineStartExtend|Shift+Home|  
-|Edit.LineStartExtendColumn|Shift+Alt+Home|  
-|Edit.LineTranspose|Shift+Alt+T|  
-|Edit.LineUp|Šipka nahoru|  
-|Edit.LineUpExtend|Shift + šipka nahoru|  
-|Edit.LineUpExtendColumn|Shift + Alt + šipka nahoru|  
-|Edit.ListMembers|Ctrl+J|  
-|Edit.MakeLowercase|Ctrl+U|  
-|Edit.MakeUppercase|Ctrl+Shift+U|  
-|Edit.MoveSelectedLinesDown|Alt + šipka dolů|  
-|Edit.MoveSelectedLinesUp|Alt + šipka nahoru|  
-|Edit.NextHighlightedReference|Ctrl + Shift + šipka dolů|  
-|Edit.OvertypeMode|Insert|  
-|Edit.PageDown|PgDn|  
-|Edit.PageDownExtend|Shift+PgDn|  
-|Edit.PageUp|PgUp|  
-|Edit.PageUpExtend|Shift+PgUp|  
-|Edit.ParameterInfo|Ctrl + Shift + mezerník|  
-|Edit.PasteParameterTip|Ctrl+Shift+Alt+P|  
-|Edit.PeekBackward|Ctrl+Alt+-|  
-|Edit.PeekDefinition|Alt+F12|  
-|Edit.PeekForward|Ctrl+Alt+=|  
-|Edit.PreviousHighlightedReference|Ctrl + Shift + šipka nahoru|  
-|Edit.QuickInfo|Ctrl+K, Ctrl+I|  
-|Edit.ReverseIncrementalSearch|Ctrl+Shift+I|  
-|Edit.ScrollLineDown|Ctrl + šipka dolů|  
-|Edit.ScrollLineUp|Ctrl + šipka nahoru|  
-|Edit.SelectCurrentWord|Ctrl+W|  
-|Edit.SelectionCancel|Escape|  
-|Edit.SelectToLastGoBack|Ctrl+=|  
-|Edit.ShowCodeLensMenu|Alt+`|  
-|Edit.StopHidingCurrent|Ctrl+M, Ctrl+U|  
-|Edit.StopOutlining|Ctrl+M, Ctrl+P|  
-|Edit.SwapAnchor|Ctrl+K, Ctrl+A|  
-|Edit.TabLeft|Shift+Tab|  
-|Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L|  
-|Edit.ToggleBookmark|Ctrl+K, Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl + Alt + mezerník|  
-|Edit.ToggleOutliningExpansion|Ctrl+M, Ctrl+M|  
-|Edit.ToggleTaskListShortcut|Ctrl+K, Ctrl+H|  
-|Edit.ToggleWordWrap|Ctrl+E, Ctrl+W|  
-|Edit.UncommentSelection|Ctrl+K, Ctrl+U|  
-|Edit.ViewBottom|Ctrl+PgDn|  
-|Edit.ViewBottomExtend|Ctrl+Shift+PgDn|  
-|Edit.ViewTop|Ctrl+PgUp|  
-|Edit.ViewTopExtend|Ctrl+Shift+PgUp|  
-|Edit.ViewWhiteSpace|Ctrl+R, Ctrl+W|  
-|Edit.WordDeleteToEnd|Ctrl+Delete|  
-|Edit.WordDeleteToStart|Ctrl+Backspace|  
-|Edit.WordNext|Ctrl + šipka doprava|  
-|Edit.WordNextExtend|Ctrl + Shift + šipka doprava|  
-|Edit.WordNextExtendColumn|Ctrl + Shift + Alt + šipka doprava|  
-|Edit.WordPrevious|Ctrl + šipka doleva|  
-|Edit.WordPreviousExtend|Ctrl + Shift + šipka doleva|  
-|Edit.WordPreviousExtendColumn|Ctrl + Shift + Alt + šipka doleva|  
-|Edit.WordTranspose|Ctrl+Shift+T|  
-|EditorContextMenus.CodeWindow.ExecuteInInteractive|Alt+Enter|  
-|EditorContextMenus.CodeWindow.ExecuteLineInInteractive|Alt+'|  
-|OtherContextMenus.HTMLContext.ViewinPageInspector|Ctrl+K, Ctrl+G|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
-|TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
+|                             Příkazy                              |                  Klávesové zkratky                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          Edit.BreakLine                           |     Enter<br /><br /> or<br /><br /> Shift+Enter      |
+|                           Edit.CharLeft                           |                      Šipka doleva                       |
+|                        Edit.CharLeftExtend                        |                   Shift + šipka doleva                    |
+|                     Edit.CharLeftExtendColumn                     |                 Shift + Alt + šipka doleva                  |
+|                          Edit.CharRight                           |                      Šipka doprava                      |
+|                       Edit.CharRightExtend                        |                   Shift + šipka doprava                   |
+|                    Edit.CharRightExtendColumn                     |                 Shift + Alt + šipka doprava                 |
+|                        Edit.CharTranspose                         |                        Ctrl+T                         |
+|                        Edit.ClearBookmarks                        |                    Ctrl+K, Ctrl+L                     |
+|                     Edit.CollapseAllOutlining                     |                    Ctrl+M, Ctrl+A                     |
+|                    Edit.CollapseCurrentRegion                     |                    Ctrl+M, Ctrl+S                     |
+|                         Edit.CollapseTag                          |                    Ctrl+M, Ctrl+T                     |
+|                    Edit.CollapsetoDefinitions                     |                    Ctrl+M, Ctrl+O                     |
+|                       Edit.CommentSelection                       |                    Ctrl+K, Ctrl+C                     |
+|                         Edit.CompleteWord                         | Ctrl + mezerník<br /><br /> or<br /><br /> Alt + šipka doprava |
+|                       Edit.CopyParameterTip                       |                   Ctrl+Shift+Alt+C                    |
+|                     Edit.DecreaseFilterLevel                      |                         Alt+,                         |
+|                       Edit.DeleteBackwards                        |   Backspace<br /><br /> or<br /><br /> Shift+Bkspce   |
+|                  Edit.DeleteHorizontalWhiteSpace                  |                    Ctrl+K, Ctrl+\                     |
+|                         Edit.DocumentEnd                          |                       Ctrl+End                        |
+|                      Edit.DocumentEndExtend                       |                    Ctrl+Shift+End                     |
+|                        Edit.DocumentStart                         |                       Ctrl+Home                       |
+|                     Edit.DocumentStartExtend                      |                    Ctrl+Shift+Home                    |
+|                      Edit.ExpandAllOutlining                      |                    Ctrl+M, Ctrl+X                     |
+|                     Edit.ExpandCurrentRegion                      |                    Ctrl+M, Ctrl+E                     |
+|                        Edit.FormatDocument                        |                    Ctrl+K, Ctrl+D                     |
+|                       Edit.FormatSelection                        |                    Ctrl+K, Ctrl+F                     |
+|                          Edit.GotoBrace                           |                        Ctrl+]                         |
+|                       Edit.GotoBraceExtend                        |                     Ctrl+Shift+]                      |
+|                        Edit.HideSelection                         |                    Ctrl+M, Ctrl+H                     |
+|                     Edit.IncreaseFilterLevel                      |                         Alt+.                         |
+|                      Edit.IncrementalSearch                       |                        Ctrl+I                         |
+|                          Edit.InsertTab                           |                          Tabulátor                          |
+|                           Edit.LineCut                            |                        Ctrl+L                         |
+|                          Edit.LineDelete                          |                     Ctrl+Shift+L                      |
+|                           Edit.LineDown                           |                      Šipka dolů                       |
+|                        Edit.LineDownExtend                        |                   Shift + šipka dolů                    |
+|                     Edit.LineDownExtendColumn                     |                 Shift +Alt + šipka dolů                  |
+|                           Edit.LineEnd                            |                          End                          |
+|                        Edit.LineEndExtend                         |                       Shift+End                       |
+|                     Edit.LineEndExtendColumn                      |                     Shift+Alt+End                     |
+|                        Edit.LineOpenAbove                         |                      Ctrl+Enter                       |
+|                        Edit.LineOpenBelow                         |                   Ctrl+Shift+Enter                    |
+|                          Edit.LineStart                           |                         Domů                          |
+|                       Edit.LineStartExtend                        |                      Shift+Home                       |
+|                    Edit.LineStartExtendColumn                     |                    Shift+Alt+Home                     |
+|                        Edit.LineTranspose                         |                      Shift+Alt+T                      |
+|                            Edit.LineUp                            |                       Šipka nahoru                        |
+|                         Edit.LineUpExtend                         |                    Shift + šipka nahoru                     |
+|                      Edit.LineUpExtendColumn                      |                  Shift + Alt + šipka nahoru                   |
+|                         Edit.ListMembers                          |                        Ctrl+J                         |
+|                        Edit.MakeLowercase                         |                        Ctrl+U                         |
+|                        Edit.MakeUppercase                         |                     Ctrl+Shift+U                      |
+|                    Edit.MoveSelectedLinesDown                     |                    Alt + šipka dolů                     |
+|                     Edit.MoveSelectedLinesUp                      |                     Alt + šipka nahoru                      |
+|                   Edit.NextHighlightedReference                   |                 Ctrl + Shift + šipka dolů                 |
+|                         Edit.OvertypeMode                         |                        Insert                         |
+|                           Edit.PageDown                           |                         PgDn                          |
+|                        Edit.PageDownExtend                        |                      Shift+PgDn                       |
+|                            Edit.PageUp                            |                         PgUp                          |
+|                         Edit.PageUpExtend                         |                      Shift+PgUp                       |
+|                        Edit.ParameterInfo                         |                  Ctrl + Shift + mezerník                  |
+|                      Edit.PasteParameterTip                       |                   Ctrl+Shift+Alt+P                    |
+|                         Edit.PeekBackward                         |                      Ctrl+Alt+-                       |
+|                        Edit.PeekDefinition                        |                        Alt+F12                        |
+|                         Edit.PeekForward                          |                      Ctrl+Alt+=                       |
+|                 Edit.PreviousHighlightedReference                 |                  Ctrl + Shift + šipka nahoru                  |
+|                          Edit.QuickInfo                           |                    Ctrl+K, Ctrl+I                     |
+|                   Edit.ReverseIncrementalSearch                   |                     Ctrl+Shift+I                      |
+|                        Edit.ScrollLineDown                        |                    Ctrl + šipka dolů                    |
+|                         Edit.ScrollLineUp                         |                     Ctrl + šipka nahoru                     |
+|                      Edit.SelectCurrentWord                       |                        Ctrl+W                         |
+|                       Edit.SelectionCancel                        |                        Escape                         |
+|                      Edit.SelectToLastGoBack                      |                        Ctrl+=                         |
+|                       Edit.ShowCodeLensMenu                       |                        ALT +\`                         |
+|                      Edit.StopHidingCurrent                       |                    Ctrl+M, Ctrl+U                     |
+|                        Edit.StopOutlining                         |                    Ctrl+M, Ctrl+P                     |
+|                          Edit.SwapAnchor                          |                    Ctrl+K, Ctrl+A                     |
+|                           Edit.TabLeft                            |                       Shift+Tab                       |
+|                      Edit.ToggleAllOutlining                      |                    Ctrl+M, Ctrl+L                     |
+|                        Edit.ToggleBookmark                        |                    Ctrl+K, Ctrl+K                     |
+|                     Edit.ToggleCompletionMode                     |                    Ctrl + Alt + mezerník                     |
+|                   Edit.ToggleOutliningExpansion                   |                    Ctrl+M, Ctrl+M                     |
+|                    Edit.ToggleTaskListShortcut                    |                    Ctrl+K, Ctrl+H                     |
+|                        Edit.ToggleWordWrap                        |                    Ctrl+E, Ctrl+W                     |
+|                      Edit.UncommentSelection                      |                    Ctrl+K, Ctrl+U                     |
+|                          Edit.ViewBottom                          |                       Ctrl+PgDn                       |
+|                       Edit.ViewBottomExtend                       |                    Ctrl+Shift+PgDn                    |
+|                           Edit.ViewTop                            |                       Ctrl+PgUp                       |
+|                        Edit.ViewTopExtend                         |                    Ctrl+Shift+PgUp                    |
+|                        Edit.ViewWhiteSpace                        |                    Ctrl+R, Ctrl+W                     |
+|                       Edit.WordDeleteToEnd                        |                      Ctrl+Delete                      |
+|                      Edit.WordDeleteToStart                       |                    Ctrl+Backspace                     |
+|                           Edit.WordNext                           |                   Ctrl + šipka doprava                    |
+|                        Edit.WordNextExtend                        |                Ctrl + Shift + šipka doprava                 |
+|                     Edit.WordNextExtendColumn                     |              Ctrl + Shift + Alt + šipka doprava               |
+|                         Edit.WordPrevious                         |                    Ctrl + šipka doleva                    |
+|                      Edit.WordPreviousExtend                      |                 Ctrl + Shift + šipka doleva                 |
+|                   Edit.WordPreviousExtendColumn                   |               Ctrl + Shift + Alt + šipka doleva               |
+|                        Edit.WordTranspose                         |                     Ctrl+Shift+T                      |
+|        EditorContextMenus.CodeWindow.ExecuteInInteractive         |                       Alt+Enter                       |
+|      EditorContextMenus.CodeWindow.ExecuteLineInInteractive       |                         Alt+'                         |
+|         OtherContextMenus.HTMLContext.ViewinPageInspector         |                    Ctrl+K, Ctrl+G                     |
+|   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
+| TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a> Diagram činností UML  
   

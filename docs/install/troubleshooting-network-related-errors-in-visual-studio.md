@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865776"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
@@ -55,19 +55,19 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
 
 - Pokud chcete použít výchozí pověření s proxy serverem, můžete provádět následující akce:
 
-    1. Najít **devenv.exe.config** (konfigurační soubor devenv.exe) v: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** nebo **% ProgramFiles (x86) %\Microsoft Vizuální Studio\2017\Enterprise\Common7\IDE**.
+  1. Najít **devenv.exe.config** (konfigurační soubor devenv.exe) v: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** nebo **% ProgramFiles (x86) %\Microsoft Vizuální Studio\2017\Enterprise\Common7\IDE**.
 
-    1. V konfiguračním souboru najít `<system.net>` blokovat a následně přidejte následující kód:
+  2. V konfiguračním souboru najít `<system.net>` blokovat a následně přidejte následující kód:
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
+      Je třeba vložit adresu proxy serveru správná pro vaši síť v `proxyaddress="<http://<yourproxy:port#>`.
 
-    NEBO
+     NEBO
 
 - Také postupujte podle pokynů [jak se připojit přes ověřený proxy server webové](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) blogový příspěvek, který ukazuje, jak přidat kód, který vám umožní používat proxy server.
 
@@ -109,8 +109,8 @@ Povolte připojení pro následující adresy URL:
 
 - &#42;. nuget.org (pro připojení NuGet)
 
- > [!NOTE]
- > Soukromě vlastněných že nuget serverové adresy URL nemusí být zahrnuté v tomto seznamu. Můžete vyhledat servery NuGet, které používáte v % APPData%\Nuget\NuGet.Config.
+  > [!NOTE]
+  > Soukromě vlastněných že nuget serverové adresy URL nemusí být zahrnuté v tomto seznamu. Můžete vyhledat servery NuGet, které používáte v % APPData%\Nuget\NuGet.Config.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

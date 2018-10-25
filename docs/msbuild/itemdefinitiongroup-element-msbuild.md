@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 650b550b21f239f382bb464078ee766920262309
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 09aa3046c66b9b4beb825dad8e8bc648d50851d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887186"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup – element (MSBuild)
 `ItemDefinitionGroup` Prvek umožňuje definovat sadu definice položek, které jsou hodnoty metadat, které se použijí u všech položek v projektu, ve výchozím nastavení. ItemDefinitionGroup – nahrazuje nutnost používat [createitem – úloha](../msbuild/createitem-task.md) a [CreateProperty – úloha](../msbuild/createproperty-task.md). Další informace najdete v tématu [definice položek](../msbuild/item-definitions.md).  
@@ -59,9 +59,9 @@ ms.locfileid: "39079846"
 
 ### <a name="parent-elements"></a>Nadřazené prvky  
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
+| Prvek | Popis |
+| - | - |
+| [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
 
 ## <a name="example"></a>Příklad  
  Následující příklad kódu definuje dvě položky metadat, stiskem n, m v ItemDefinitionGroup –. V tomto příkladu je použít výchozí metadat "m" k položce "i", protože metadata "m" není explicitně určené položky "i". Výchozí metadat "n" však není použít k položce "i", protože metadata "n" je již definován položky "i".  

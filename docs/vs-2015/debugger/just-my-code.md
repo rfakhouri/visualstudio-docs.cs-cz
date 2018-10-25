@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833756"
 ---
 # <a name="just-my-code"></a>Pouze můj kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
  Ladicí program považuje na můj kód ovlivňují také tři atributy:  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> dává pokyn ladicímu programu, že kód, který se použije k není můj kód.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> dává pokyn ladicímu programu, že kód, který se použije k není můj kód.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> Skryje kód z ladicího programu, i v případě, že funkce pouze můj kód je vypnutý.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> Skryje kód z ladicího programu, i v případě, že funkce pouze můj kód je vypnutý.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> sdělí ladicímu programu, chcete-li si kód, který se použije, místo krokování s vnořením do kódu.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> sdělí ladicímu programu, chcete-li si kód, který se použije, místo krokování s vnořením do kódu.  
   
- Veškerý kód, se považuje za uživatelského kódu.  
+  Veškerý kód, se považuje za uživatelského kódu.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Chování  
  Když je **Krokovat s vnořením** (Klávesová zkratka: F11) neuživatelský kód, ladicí program přes kód do dalšího příkazu uživatele. Pokud jste **Krokovat s Vystoupením** (klávesnice: Shift + F11), ladicí program se spustí na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
@@ -80,17 +80,17 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
  Ve výchozím nastavení ladicí program bude považovat za tyto funkce bude neuživatelský kód v zásobníku volání systému windows:  
   
--   Funkce s odstraněnými příslušnými daty zdroj informací v jejich soubor symbolů.  
+- Funkce s odstraněnými příslušnými daty zdroj informací v jejich soubor symbolů.  
   
--   Funkce, kde soubory symbolů znamenat, že neexistuje žádný zdrojový soubor odpovídá rámce zásobníku.  
+- Funkce, kde soubory symbolů znamenat, že neexistuje žádný zdrojový soubor odpovídá rámce zásobníku.  
   
--   Funkcí zadaných v `*.natjmc` soubory `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
+- Funkcí zadaných v `*.natjmc` soubory `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
   
- **Krokování**  
+  **Krokování**  
   
- Ve výchozím nastavení, podle pouze funkce `*.natstepfilter` soubory `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky jsou považovány za neuživatelský kód.  
+  Ve výchozím nastavení, podle pouze funkce `*.natstepfilter` soubory `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky jsou považovány za neuživatelský kód.  
   
- Můžete vytvořit svoje vlastní `.natstepfilter` a `.natjmc` přizpůsobit posílení a chování okna zásobník volání `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+  Můžete vytvořit svoje vlastní `.natstepfilter` a `.natjmc` přizpůsobit posílení a chování okna zásobník volání `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Chování  
  Když je **Krokovat s vnořením** (Klávesová zkratka: F11) neuživatelský kód z uživatelského kódu, ladicí program při krokování kódu na další řádek kódu uživatele. Pokud jste **Krokovat s Vystoupením** (klávesnice: Shift + F11), ladicí program se spustí na další řádek kódu uživatele. Pokud nebude nalezen žádný uživatelský kód, provádění pokračuje, dokud aplikace ukončí, dosaženo zarážky nebo dojde k výjimce.  
@@ -103,11 +103,11 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Přizpůsobení chování  
  Můžete zadat funkce převezme seznam jako neuživatelský kód v kroku `*.natstepfilter` soubory.  
   
--   Zadat neuživatelský kód pro všechny uživatele počítače Visual Studio, přidejte soubor .natstepfilter `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
+- Zadat neuživatelský kód pro všechny uživatele počítače Visual Studio, přidejte soubor .natstepfilter `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
   
--   Zadat neuživatelském kódu pro jednotlivé uživatele, přidejte soubor .natstepfilter `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` složky.  
+- Zadat neuživatelském kódu pro jednotlivé uživatele, přidejte soubor .natstepfilter `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` složky.  
   
- .natstepfilter soubory jsou soubory xml touto syntaxí:  
+  .natstepfilter soubory jsou soubory xml touto syntaxí:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,11 +135,11 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení chování zásobníku volání  
  Můžete zadat moduly, zdrojové soubory a funkce považovat za neuživatelský kód v zásobnících volání zadáním v `*.natjmc` soubory.  
   
--   Zadat neuživatelský kód pro všechny uživatele počítače Visual Studio, přidejte soubor .natjmc `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
+- Zadat neuživatelský kód pro všechny uživatele počítače Visual Studio, přidejte soubor .natjmc `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` složky.  
   
--   Zadat neuživatelském kódu pro jednotlivé uživatele, přidejte soubor .natjmc `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` složky.  
+- Zadat neuživatelském kódu pro jednotlivé uživatele, přidejte soubor .natjmc `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` složky.  
   
- .natjmc soubory jsou soubory xml touto syntaxí:  
+  .natjmc soubory jsou soubory xml touto syntaxí:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -197,19 +197,19 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
  Ladicí program jazyka JavaScript automaticky rozděluje tyto typy kódu:  
   
--   Skript, který je proveden předáním řetězce hostitelské `eval` funkce je klasifikován tak **MyCode**.  
+- Skript, který je proveden předáním řetězce hostitelské `eval` funkce je klasifikován tak **MyCode**.  
   
--   Skript, který je proveden tím, že předáte řetězec `Function` konstruktor je klasifikován tak **LibraryCode**.  
+- Skript, který je proveden tím, že předáte řetězec `Function` konstruktor je klasifikován tak **LibraryCode**.  
   
--   Skript, který je součástí odkaz na rozhraní, jako je například WinJS nebo sady Azure SDK, je klasifikován tak **LibraryCode**.  
+- Skript, který je součástí odkaz na rozhraní, jako je například WinJS nebo sady Azure SDK, je klasifikován tak **LibraryCode**.  
   
--   Skript, který je proveden tím, že předáte řetězec `setTimeout`, `setImmediate`, nebo `setInterval` funkce je klasifikován tak **UnrelatedCode**.  
+- Skript, který je proveden tím, že předáte řetězec `setTimeout`, `setImmediate`, nebo `setInterval` funkce je klasifikován tak **UnrelatedCode**.  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Určuje jiné uživatele a neuživatelský kód pro všechny projekty jazyka JavaScript Visual Studio.  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Určuje jiné uživatele a neuživatelský kód pro všechny projekty jazyka JavaScript Visual Studio.  
   
- Můžete upravit výchozí klasifikace a klasifikovat určité soubory a adresy URL podle přidejte do ní soubor .json `mycode.json` ke kořenové složce projektu.  
+  Můžete upravit výchozí klasifikace a klasifikovat určité soubory a adresy URL podle přidejte do ní soubor .json `mycode.json` ke kořenové složce projektu.  
   
- Jiný kód je klasifikován tak **MyCode**.  
+  Jiný kód je klasifikován tak **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Chování  
   
@@ -234,30 +234,30 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
 ###  <a name="BKMK_JS_Exception_behavior"></a> Výjimka chování  
  Pokud dojde k neošetřené výjimce v:  
   
--   **MyCode** nebo **LibraryCode** kód, ladicí program vždy přeruší.  
+- **MyCode** nebo **LibraryCode** kód, ladicí program vždy přeruší.  
   
--   **UnrelatedCode** kódu, a **MyCode** nebo **LibraryCode** kódu je v zásobníku volání, přerušení ladicího programu.  
+- **UnrelatedCode** kódu, a **MyCode** nebo **LibraryCode** kódu je v zásobníku volání, přerušení ladicího programu.  
   
- Pokud první příležitosti výjimky jsou povolené pro výjimku v dialogovém okně výjimky a je vyvolána výjimka **LibraryCode** nebo **UnrelatedCode** kódu:  
+  Pokud první příležitosti výjimky jsou povolené pro výjimku v dialogovém okně výjimky a je vyvolána výjimka **LibraryCode** nebo **UnrelatedCode** kódu:  
   
--   Pokud je výjimka ošetřena, nedojde k narušení ladicího programu.  
+- Pokud je výjimka ošetřena, nedojde k narušení ladicího programu.  
   
--   Pokud výjimka není zpracována, ladicí program přeruší.  
+- Pokud výjimka není zpracována, ladicí program přeruší.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Přizpůsobení pouze můj kód  
  Ke kategorizaci uživatelů a neuživatelský kód pro jeden projekt sady Visual Studio, přidejte do ní soubor .json `mycode.json` ke kořenové složce projektu.  
   
  Klasifikace se provádějí v uvedeném pořadí:  
   
-1.  Výchozí klasifikace  
+1. Výchozí klasifikace  
   
-2.  Klasifikacích v `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` souboru  
+2. Klasifikacích v `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` souboru  
   
-3.  Klasifikacích v `mycode. json` souboru aktuálního projektu.  
+3. Klasifikacích v `mycode. json` souboru aktuálního projektu.  
   
- Každý krok klasifikace přepíše předchozí kroky. Soubor .json není nutné vypsat všechny páry klíč-hodnota a **MyCode**, **knihovny**, a **Unrelated** hodnoty mohou být prázdné pole.  
+   Každý krok klasifikace přepíše předchozí kroky. Soubor .json není nutné vypsat všechny páry klíč-hodnota a **MyCode**, **knihovny**, a **Unrelated** hodnoty mohou být prázdné pole.  
   
- Soubory .json kódu použijte následující syntaxi:  
+   Soubory .json kódu použijte následující syntaxi:  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ Vývojáři, kteří používají jazycích rozhraní .NET Framework obeznámeni
   
  Změňte hodnotu na jednu z těchto klíčových slov:  
   
--   `MyCode`  klasifikuje skriptu jako **MyCode**.  
+- `MyCode`  klasifikuje skriptu jako **MyCode**.  
   
--   `Library`  klasifikuje skriptu jako **LibraryCode**.  
+- `Library`  klasifikuje skriptu jako **LibraryCode**.  
   
--   `Unrelated`  klasifikuje skriptu jako **UnrelatedCode**.  
+- `Unrelated`  klasifikuje skriptu jako **UnrelatedCode**.  
   
- **MyCode, knihovny a nemá vztah**  
+  **MyCode, knihovny a nemá vztah**  
   
- **MyCode**, **knihovny**, a **Unrelated** zadejte páry klíč-hodnota adresy URL nebo soubory, které chcete zahrnout do klasifikace:  
+  **MyCode**, **knihovny**, a **Unrelated** zadejte páry klíč-hodnota adresy URL nebo soubory, které chcete zahrnout do klasifikace:  
   
 |||  
 |-|-|  

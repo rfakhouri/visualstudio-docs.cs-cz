@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851108"
 ---
 # <a name="call-hierarchy"></a>Hierarchie volání
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ Hierarchie volání umožňuje procházet váš kód zobrazením všechna volán
  ![Hierarchie volání s jedním uzlem otevřené](../../ide/reference/media/onenode.png "OneNode")  
 Hierarchie volání – okno  
   
--   Pokud rozbalíte **volání do** uzlu, všechny členy, že se zobrazují volání vybraného členu.  
+- Pokud rozbalíte **volání do** uzlu, všechny členy, že se zobrazují volání vybraného členu.  
   
--   Pokud rozbalíte **volání z** se zobrazí uzel, všechny členy, které jsou volány vybraného členu.  
+- Pokud rozbalíte **volání z** se zobrazí uzel, všechny členy, které jsou volány vybraného členu.  
   
- Každý z těchto členů poduzlu do potom rozbalte **volání do** a **volání z** uzly. Díky tomu můžete přejít do zásobníku volání, jak je znázorněno na následujícím obrázku.  
+  Každý z těchto členů poduzlu do potom rozbalte **volání do** a **volání z** uzly. Díky tomu můžete přejít do zásobníku volání, jak je znázorněno na následujícím obrázku.  
   
- ![Otevřít více uzlů hierarchie volání](../../ide/media/multiplenodes.png "MultipleNodes")  
-Hierarchie volání – okno  
+  ![Otevřít více uzlů hierarchie volání](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Hierarchie volání – okno  
   
- Pro členy, které jsou definovány jako virtuální nebo abstraktní **název metody přepsání** uzel se objeví. Pro členy rozhraní **název metody implementuje** uzel se objeví. Tyto uzly rozšíření se zobrazí na stejné úrovni jako **volání do** a **volání z** uzly.  
+  Pro členy, které jsou definovány jako virtuální nebo abstraktní **název metody přepsání** uzel se objeví. Pro členy rozhraní **název metody implementuje** uzel se objeví. Tyto uzly rozšíření se zobrazí na stejné úrovni jako **volání do** a **volání z** uzly.  
   
- **Obor vyhledávání** na panelu nástrojů obsahuje možnosti pro **Moje řešení**, **aktuální projekt**, a **aktuální dokument**.  
+  **Obor vyhledávání** na panelu nástrojů obsahuje možnosti pro **Moje řešení**, **aktuální projekt**, a **aktuální dokument**.  
   
- Když vyberete podřízeného člena v **hierarchie volání** podokně se stromovým zobrazením:  
+  Když vyberete podřízeného člena v **hierarchie volání** podokně se stromovým zobrazením:  
   
--   **Hierarchie volání** podokně podrobností se zobrazí všechny řádky kódu, ve kterém tento podřízený člen je volána z nadřazeného člena.  
+- **Hierarchie volání** podokně podrobností se zobrazí všechny řádky kódu, ve kterém tento podřízený člen je volána z nadřazeného člena.  
   
--   **Okno Definice kódu**, pokud otevřete, zobrazí kód pro vybraného členu. Toto okno je k dispozici v jazyce C# a C++. Další informace o tomto okně najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).  
+- **Okno Definice kódu**, pokud otevřete, zobrazí kód pro vybraného členu. Toto okno je k dispozici v jazyce C# a C++. Další informace o tomto okně najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  Hierarchie volání nenajde metoda odkazy na skupinu obsahující místa, kde se přidá jako obslužná rutina události metodu, nebo je přiřazená delegáta. Pokud chcete najít všechny odkazy na metodu, můžete použít **najít všechny odkazy** příkazu.  

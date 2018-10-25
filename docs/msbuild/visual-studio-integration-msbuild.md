@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875473"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace se sadou Visual Studio (MSBuild)
 Visual Studio hostuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a sestavení spravovaných projektů. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je zodpovědné za projekt, téměř každý projekt ve [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát může být úspěšně použit v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], i když byl autorem jiný nástroj a má vlastní proces sestavení projektu.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Vnitroprocesové kompilátory  
  Pokud je to možné, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se pokusí použít verzi v procesu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru pro zajištění zvýšeného výkonu. (Nevztahuje se na [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Aby to fungovalo správně musí být splněny následující podmínky:  
   
--   V cíli projektu, musí být úkol s názvem `Vbc` pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty.  
+- V cíli projektu, musí být úkol s názvem `Vbc` pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty.  
   
--   `UseHostCompilerIfAvailable` Parametr úkolu musí být nastaven na hodnotu true.  
+- `UseHostCompilerIfAvailable` Parametr úkolu musí být nastaven na hodnotu true.  
   
 ## <a name="design-time-intellisense"></a>Technologie IntelliSense v době návrhu  
  Chcete-li získat podporu technologie IntelliSense [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] předtím, než sestavení vygeneruje výstupné sestavení, musí být splněny následující podmínky:  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Překlad odkazů  
  Referenční řešení je proces vyhledání skutečných sestavení pomocí referenčních položek uložených v souboru projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musí spustit řešení odkazu pro zobrazení detailních vlastnosti pro každý odkaz v **vlastnosti** okna. Následující seznam popisuje tři typy odkazů a jejich výsledek.  
   
--   Odkazy na sestavení:  
+- Odkazy na sestavení:  
   
-     Projektový systém volá cíl s dobře známým názvem `ResolveAssemblyReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ReferencePath`. Každá z těchto položek by měla mít specifikaci položky (hodnota `Include` atribut položky) obsahující úplnou cestu k odkazu. Položky by měly mít všechna metadata ze vstupních položek prošla kromě následujících nových metadat:  
+   Projektový systém volá cíl s dobře známým názvem `ResolveAssemblyReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ReferencePath`. Každá z těchto položek by měla mít specifikaci položky (hodnota `Include` atribut položky) obsahující úplnou cestu k odkazu. Položky by měly mít všechna metadata ze vstupních položek prošla kromě následujících nových metadat:  
   
-    -   `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
+  - `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
   
-    -   `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
+  - `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
   
-    -   `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] adresáře.  
+  - `ResolvedFrom`, pokud bylo vyřešeno z nastavte na "{TargetFrameworkDirectory}" [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] adresáře.  
   
--   Odkazy modelu COM:  
+- Odkazy modelu COM:  
   
-     Projektový systém volá cíl s dobře známým názvem `ResolveCOMReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ComReferenceWrappers`. Každá z těchto položek by měla mít specifikaci obsahující úplnou cestu ke zprostředkovatelům sestavení pro odkaz COM. Položky by měly mít všechna metadata ze vstupních položek předaných, kromě nových metadat s názvem `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
+   Projektový systém volá cíl s dobře známým názvem `ResolveCOMReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `ComReferenceWrappers`. Každá z těchto položek by měla mít specifikaci obsahující úplnou cestu ke zprostředkovatelům sestavení pro odkaz COM. Položky by měly mít všechna metadata ze vstupních položek předaných, kromě nových metadat s názvem `CopyLocal`, která udává, zda sestavení má být zkopírováno do výstupní složky, nastavte na hodnotu true nebo false.  
   
--   Nativní odkazy  
+- Nativní odkazy  
   
-     Projektový systém volá cíl s dobře známým názvem `ResolveNativeReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `NativeReferenceFile`. Položky by měly mít všechna metadata ze vstupních položek prošla kromě nových metadat s názvem `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
+   Projektový systém volá cíl s dobře známým názvem `ResolveNativeReferences`. Tento cíl by měl vytvářet položky s názvem položky typu `NativeReferenceFile`. Položky by měly mít všechna metadata ze vstupních položek prošla kromě nových metadat s názvem `OriginalItemSpec`, obsahující specifikace původní položky odkazu.  
   
 ## <a name="performance-shortcuts"></a>Klávesové zkratky výkonu  
  Pokud spustíte ladění v rozhraní Visual Studia (buď volbou klávesy F5 nebo výběrem **ladění** > **spustit ladění** na řádku nabídek), proces sestavení použije rychlou aktualizaci ke zlepšení výkon. V některých případech, kde přizpůsobená sestavení vytvoří soubory, které zase získají sestavení kontrola rychlé aktualizace nesprávně identifikuje změněné soubory. Projekty, které vyžadují důkladnější kontroly aktualizací můžete vypnout rychlé kontroly nastavením proměnné prostředí `DISABLEFASTUPTODATECHECK=1`. Alternativně projekty můžete nastavit to jako vlastnost MSBuild v projektu nebo v souboru, který importuje.  

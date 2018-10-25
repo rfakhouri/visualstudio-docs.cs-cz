@@ -14,23 +14,23 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094c59f1ef7acd1105cdefc4f556a50fb7e8a161
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851026"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Použití **VsPerf** nástroj příkazového řádku:  
   
-1.  Profilování aplikací Windows Store z příkazového řádku sady Visual Studio na něm není nainstalované na zařízení.  
+1. Profilování aplikací Windows Store z příkazového řádku sady Visual Studio na něm není nainstalované na zařízení.  
   
-2.  Profil aplikace klasické pracovní plochy systému Windows 8 a Windows Server 2012 využívajících metoda profilování vzorkování.  
+2. Profil aplikace klasické pracovní plochy systému Windows 8 a Windows Server 2012 využívajících metoda profilování vzorkování.  
   
- Další informace o možnostech profilování, naleznete v tématu [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+   Další informace o možnostech profilování, naleznete v tématu [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  Toto téma popisuje možnosti, které můžete používat `vsperf.exe` nástroj příkazového řádku. Téma obsahuje následující části:  

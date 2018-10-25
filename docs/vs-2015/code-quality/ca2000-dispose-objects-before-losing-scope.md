@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857858"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Uvolňujte objekty před ztrátou oboru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190876"
   
  V metodě OpenPort2 jsou deklarovány dva objekty SerialPort a jsou nastaveny na hodnotu null:  
   
--   Objekt `tempPort`, který se používá k testování toho, zda operace metody proběhly úspěšně.  
+- Objekt `tempPort`, který se používá k testování toho, zda operace metody proběhly úspěšně.  
   
--   Objekt `port`, který se používá pro návratovou hodnotu metody.  
+- Objekt `port`, který se používá pro návratovou hodnotu metody.  
   
- Objekt `tempPort` je vytvořen a otevřen v rámci bloku `try` a jakákoli jiná požadovaná činnost je vykonána v rámci stejného bloku `try`. Na konci bloku `try` je otevřený port přiřazen objektu `port`, který bude vrácen, a objekt `tempPort` je nastaven na hodnotu `null`.  
+  Objekt `tempPort` je vytvořen a otevřen v rámci bloku `try` a jakákoli jiná požadovaná činnost je vykonána v rámci stejného bloku `try`. Na konci bloku `try` je otevřený port přiřazen objektu `port`, který bude vrácen, a objekt `tempPort` je nastaven na hodnotu `null`.  
   
- Blok `finally` ověřuje hodnotu `tempPort`. Pokud hodnota není null, operace se v rámci metody nezdařila a blok `tempPort` je uzavřen, aby bylo možné zajistit uvolnění jakýchkoli prostředků. Vrácený objekt portu bude obsahovat otevřený objekt SerialPort, pokud byly operace metody úspěšné, nebo bude mít hodnotu null, pokud se operace nezdaří.  
+  Blok `finally` ověřuje hodnotu `tempPort`. Pokud hodnota není null, operace se v rámci metody nezdařila a blok `tempPort` je uzavřen, aby bylo možné zajistit uvolnění jakýchkoli prostředků. Vrácený objekt portu bude obsahovat otevřený objekt SerialPort, pokud byly operace metody úspěšné, nebo bude mít hodnotu null, pokud se operace nezdaří.  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>Příklad  
  Ve výchozím nastavení jsou všechny aritmetické operátory kompilátoru [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ověřovány v rámci přetečení. Proto může jakákoli aritmetická operace jazyka Visual Basic vyvolat výjimku <xref:System.OverflowException>. To může vést k neočekávaným případům porušování pravidel, jako je například CA2000. Například následující funkce CreateReader1 ohlásí porušení pravidla CA2000, protože kompilátor jazyka Visual Basic generuje dodatečnou instrukci kontroly přetečení, jež může vyvolat výjimku, která může způsobit, že StreamReader nebude odstraněn.  

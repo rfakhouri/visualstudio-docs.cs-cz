@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95b0b2dfd85f1184dc81c2c395d902d50626f7f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827273"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Nasazení aplikací pro Windows Store ze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
  Nasazení funkce sady Visual Studio vytvoří a zaregistruje aplikace Windows Store, které jsou vytvořeny pomocí sady Visual Studio na cílovém zařízení. Přesně jak registraci aplikace závisí na tom cílové zařízení pro místní nebo vzdálené:  
   
--   Pokud jsou cílem místní počítač s Visual Studio, Visual Studio registruje aplikaci ze složky jeho sestavení.  
+- Pokud jsou cílem místní počítač s Visual Studio, Visual Studio registruje aplikaci ze složky jeho sestavení.  
   
--   Pokud jsou cílem vzdáleného zařízení, Visual Studio zkopíruje soubory potřebné ke vzdálenému počítači a zaregistruje na tomto zařízení aplikaci.  
+- Pokud jsou cílem vzdáleného zařízení, Visual Studio zkopíruje soubory potřebné ke vzdálenému počítači a zaregistruje na tomto zařízení aplikaci.  
   
- Nasazení je automaticky při ladění aplikace v sadě Visual Studio s použitím **spustit ladění** možnost (klávesnice: F5) nebo **spustit bez ladění** možnost (klávesnice: CTRL + F5). Aplikaci můžete nasadit také ručně. Ruční nasazení je užitečná v následujících scénářích:  
+  Nasazení je automaticky při ladění aplikace v sadě Visual Studio s použitím **spustit ladění** možnost (klávesnice: F5) nebo **spustit bez ladění** možnost (klávesnice: CTRL + F5). Aplikaci můžete nasadit také ručně. Ruční nasazení je užitečná v následujících scénářích:  
   
--   Ad-hoc testování na místním nebo vzdáleném počítači.  
+- Ad-hoc testování na místním nebo vzdáleném počítači.  
   
--   Nasazení aplikace, který spustí jiné aplikace, kterou chcete ladit.  
+- Nasazení aplikace, který spustí jiné aplikace, kterou chcete ladit.  
   
--   Nasazení aplikace, která bude laděn, kdy byla spuštěna jiná aplikace nebo metody.  
+- Nasazení aplikace, která bude laděn, kdy byla spuštěna jiná aplikace nebo metody.  
   
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  V tomto tématu se dozvíte:  
@@ -78,33 +78,33 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
 #### <a name="to-specify-a-remote-device"></a>K určení vzdáleného zařízení  
   
-1.  Na stránce vlastností ladění projektu při spuštění zadejte název nebo IP adresa cíle vzdálené nasazení.  
+1. Na stránce vlastností ladění projektu při spuštění zadejte název nebo IP adresa cíle vzdálené nasazení.  
   
-2.  Chcete-li otevřít stránky vlastnosti ladění, vyberte projekt v Průzkumníku řešení a klikněte na tlačítko **vlastnosti** z místní nabídky.  
+2. Chcete-li otevřít stránky vlastnosti ladění, vyberte projekt v Průzkumníku řešení a klikněte na tlačítko **vlastnosti** z místní nabídky.  
   
-3.  Klikněte na tlačítko **ladění** uzlu v okně Vlastnosti stránky.  
+3. Klikněte na tlačítko **ladění** uzlu v okně Vlastnosti stránky.  
   
-4.  Můžete zadat název nebo IP adresa vzdáleného zařízení, nebo můžete zvolit ze zařízení **vyberte připojení vzdáleného ladicího programu** dialogové okno.  
+4. Můžete zadat název nebo IP adresa vzdáleného zařízení, nebo můžete zvolit ze zařízení **vyberte připojení vzdáleného ladicího programu** dialogové okno.  
   
-     ![Dialogové okno Vyberte připojení vzdáleného ladicího programu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
+    ![Dialogové okno Vyberte připojení vzdáleného ladicího programu](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
-     **Vyberte připojení vzdáleného ladicího programu** dialogové okno zobrazí zařízení, na podsíti místní sítě a zařízení, která je přímo připojený k počítači Visual Studio pomocí kabelu Ethernet.  
+    **Vyberte připojení vzdáleného ladicího programu** dialogové okno zobrazí zařízení, na podsíti místní sítě a zařízení, která je přímo připojený k počítači Visual Studio pomocí kabelu Ethernet.  
   
- **Určení vzdáleného zařízení na stránce projektu JavaScript nebo Visual C++**  
+   **Určení vzdáleného zařízení na stránce projektu JavaScript nebo Visual C++**  
   
- ![C&#43; &#43; vlastnosti pro vzdálené ladění projektu](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
+   ![C&#43; &#43; vlastnosti pro vzdálené ladění projektu](../debugger/media/vsrun-cpp-projprop-remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Zvolte **vzdálený ladicí program** z **ladicí program ke spuštění** seznamu.  
+5. Zvolte **vzdálený ladicí program** z **ladicí program ke spuštění** seznamu.  
   
-2.  Zadejte síťový název vzdáleného zařízení **název počítače** pole. Nebo můžete použít na šipku dolů v rozevíracím seznamu vyberte zařízení, v dialogovém okně vyberte připojení vzdáleného ladicího programu.  
+6. Zadejte síťový název vzdáleného zařízení **název počítače** pole. Nebo můžete použít na šipku dolů v rozevíracím seznamu vyberte zařízení, v dialogovém okně vyberte připojení vzdáleného ladicího programu.  
   
- **Určení vzdáleného zařízení na stránce projektu Visual C# a Visual Basic**  
+   **Určení vzdáleného zařízení na stránce projektu Visual C# a Visual Basic**  
   
- ![Spravovat vlastnosti projektu pro vzdálené ladění](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
+   ![Spravovat vlastnosti projektu pro vzdálené ladění](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Zvolte **vzdálený počítač** z **cílové zařízení** seznamu.  
+7. Zvolte **vzdálený počítač** z **cílové zařízení** seznamu.  
   
-2.  Zadejte síťový název vzdáleného zařízení **vzdálený počítač** pole nebo klikněte na tlačítko **najít** pro výběr zařízení z **vyberte připojení vzdáleného ladicího programu** dialogové okno.  
+8. Zadejte síťový název vzdáleného zařízení **vzdálený počítač** pole nebo klikněte na tlačítko **najít** pro výběr zařízení z **vyberte připojení vzdáleného ladicího programu** dialogové okno.  
   
 ##  <a name="BKMK_Deployment_options"></a> Možnosti nasazení  
  Můžete nastavit následující možnosti nasazení na stránky vlastnosti ladění projektu při spuštění.  
@@ -114,16 +114,16 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
   
  Chcete-li odebrat výjimku zpětnou smyčku sítě z ní:  
   
--   Na stránce vlastností jazyka C# a VB ladění, zrušte **povolit zpětnou smyčku sítě** zaškrtávací políčko.  
+- Na stránce vlastností jazyka C# a VB ladění, zrušte **povolit zpětnou smyčku sítě** zaškrtávací políčko.  
   
--   Na stránce vlastností jazyka JavaScript a ladění, nastavte **povolit zpětnou smyčku sítě** hodnota, která se **ne**.  
+- Na stránce vlastností jazyka JavaScript a ladění, nastavte **povolit zpětnou smyčku sítě** hodnota, která se **ne**.  
   
- **Nespouštět, ale ladit můj kód při spuštění (C# a VB) / spustit aplikaci (JavaScript a C++)**  
- Ke konfiguraci nasazení na automatické spuštění relace ladění při spuštění aplikace:  
+  **Nespouštět, ale ladit můj kód při spuštění (C# a VB) / spustit aplikaci (JavaScript a C++)**  
+  Ke konfiguraci nasazení na automatické spuštění relace ladění při spuštění aplikace:  
   
--   Na stránce vlastností jazyka C# a VB ladění zkontrolujte, **nespouštět, ale ladit můj kód při spuštění** zaškrtávací políčko.  
+- Na stránce vlastností jazyka C# a VB ladění zkontrolujte, **nespouštět, ale ladit můj kód při spuštění** zaškrtávací políčko.  
   
--   Na stránce vlastností jazyka JavaScript a ladění, nastavte **spustit aplikaci** hodnota, která se **Ano**.  
+- Na stránce vlastností jazyka JavaScript a ladění, nastavte **spustit aplikaci** hodnota, která se **Ano**.  
   
 ## <a name="see-also"></a>Viz také  
  [Spouštění aplikací ze sady Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

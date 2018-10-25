@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950664"
 ---
 # <a name="troubleshooting-broken-references"></a>Řešení potíží s poškozenými odkazy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pokud vaše aplikace se pokusí použít poškozený odkaz, je vygenerována chyba výjimky. Nebylo možné najít odkazovaná součást je primární aktivační událost pro chybu, ale existuje několik situací ve kterých lze považovat za odkazem nefunkční. Tyto instance jsou uvedeny v následujícím seznamu:  
   
--   Cesta odkazu projekt je nesprávné nebo neúplné.  
+- Cesta odkazu projekt je nesprávné nebo neúplné.  
   
--   Odkazovaný soubor se odstranil.  
+- Odkazovaný soubor se odstranil.  
   
--   Odkazovaný soubor byl přejmenován.  
+- Odkazovaný soubor byl přejmenován.  
   
--   Připojení k síti nebo ověřování se nezdařilo.  
+- Připojení k síti nebo ověřování se nezdařilo.  
   
--   Odkazuje na komponentu modelu COM, který není nainstalován v počítači.  
+- Odkazuje na komponentu modelu COM, který není nainstalován v počítači.  
   
- Toto jsou řešení těchto problémů.  
+  Toto jsou řešení těchto problémů.  
   
 > [!NOTE]
 >  Soubory v sestavení je odkazováno pomocí absolutní cesty v souboru projektu. Proto je možné pro uživatele, kteří pracují v prostředí vývoj chybí odkazovaná sestavení svého místního prostředí. Aby nedocházelo k těmto chybám, je lepší v těchto případech pro přidání odkazů typu projekt projekt. Další informace najdete v tématu [NIB postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) a [programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

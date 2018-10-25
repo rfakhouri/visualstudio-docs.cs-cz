@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811578"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Průvodce publikováním (vývoj pro Office v sadě Visual Studio)
   Použití **Průvodce publikováním** Pokud chcete zkopírovat soubory řešení do zadaného umístění, vytvořte soubory manifestu a vytvoření instalačního programu.  
@@ -41,13 +41,13 @@ ms.locfileid: "35675906"
   
  Zadejte umístění jako cesta k disku, sdílené složky, FTP nebo adresa URL webu, nebo klikněte na tlačítko **Procházet** tlačítko Procházet pro umístění. Cesta může být v těchto formátů:  
   
--   Relativní nebo absolutní cesta ve standardním Windows, například formátování *C:\Deploy\MyApplication* nebo *\MyApplication*.  
+- Relativní nebo absolutní cesta ve standardním Windows, například formátování *C:\Deploy\MyApplication* nebo *\MyApplication*.  
   
--   Cestu (Universal Naming Convention), jako například  *\\\ServerName\MyApplication\\*.  
+- Cestu (Universal Naming Convention), jako například  *\\\ServerName\MyApplication\\*.  
   
--   Adresa URL webového serveru, jako http://www.microsoft.com/MyApplication.  
+- Adresa URL webového serveru, jako http://www.microsoft.com/MyApplication.  
   
- Ve výchozím nastavení, je umístění pro publikování *http://localhost/projectname/* Pokud máte nainstalovanou službu IIS, nebo adresáři publish\ Pokud tak učiníte nebyla nainstalována služba IIS.  
+  Ve výchozím nastavení, je umístění pro publikování *http://localhost/projectname/* Pokud máte nainstalovanou službu IIS, nebo adresáři publish\ Pokud tak učiníte nebyla nainstalována služba IIS.  
   
 > [!NOTE]  
 >  Pokud cílový počítač se systémem Windows Vista některé další aspekty. Musíte být správcem počítači se systémem Windows Vista možnost místního publikování. Kromě toho výchozí umístění je vždy *publikovat\\*  adresáře, bez ohledu na to, zda máte nainstalovanou službu IIS.  

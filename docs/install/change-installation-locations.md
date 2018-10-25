@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b3ce1b0b0bc646f6a4d28031be51920da776cd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 887ebca8645ab30d6d284433baf58451ab10b80c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869376"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Změna umístění instalací sady Visual Studio 2017
 
@@ -28,29 +28,29 @@ Tady je způsob.
 
 1. Při instalaci sady Visual Studio, zvolte **možnosti instalace** kartu.
 
-  ![Změna umístění instalace sady Visual Studio 2017 –](media/installation-options-by-location.png "Změna umístění instalace")
+   ![Změna umístění instalace sady Visual Studio 2017 –](media/installation-options-by-location.png "Změna umístění instalace")
 
-  > [!IMPORTANT]
-  > Pokud pozastavení instalace a později ji obnovit, Visual Studio převezme tam, kde skončila. Jinými slovy jeho průběh instalace se vztahuje na co je ponecháno na stažení a instalaci a nespustí se od předchozího počtu.
+   > [!IMPORTANT]
+   > Pokud pozastavení instalace a později ji obnovit, Visual Studio převezme tam, kde skončila. Jinými slovy jeho průběh instalace se vztahuje na co je ponecháno na stažení a instalaci a nespustí se od předchozího počtu.
 
 2. V **Visual Studio IDE** části, přijměte výchozí nastavení. To nainstaluje základním produktu a obsahuje soubory, které jsou specifické pro tuto verzi sady Visual Studio.
 
- > [!IMPORTANT]
- > Pokud je systémového disku SSD (SOLID-State drive), zde jeho proč doporučujeme přijmout výchozí umístění na systémovou jednotku: při vývoji v sadě Visual Studio, čtení a zápis do velké množství souborů, což zvyšuje úroveň vstupně-výstupní aktivitu disku.  Doporučujeme zvolit nejrychlejší jednotky pro zpracování zátěže.
+   > [!IMPORTANT]
+   > Pokud je systémového disku SSD (SOLID-State drive), zde jeho proč doporučujeme přijmout výchozí umístění na systémovou jednotku: při vývoji v sadě Visual Studio, čtení a zápis do velké množství souborů, což zvyšuje úroveň vstupně-výstupní aktivitu disku.  Doporučujeme zvolit nejrychlejší jednotky pro zpracování zátěže.
 
-2. V **mezipaměť pro stahování** části, rozhodněte, zda chcete zachovat mezipaměť pro stahování a poté zaškrtněte nebo zrušte zaškrtnutí políčka **zachovat mezipaměť pro stahování** odpovídajícím způsobem. <br><br>Pokud nechcete zachovat mezipaměť pro stahování, umístění se používá jenom dočasně. Tato akce, nebude mít vliv na a odstraňovat soubory z předchozí instalace. (Chcete-li vyčistit všechny instalační balíčky, je třeba upravit předchozí instalace zvlášť.)
+3. V **mezipaměť pro stahování** části, rozhodněte, zda chcete zachovat mezipaměť pro stahování a poté zaškrtněte nebo zrušte zaškrtnutí políčka **zachovat mezipaměť pro stahování** odpovídajícím způsobem. <br><br>Pokud nechcete zachovat mezipaměť pro stahování, umístění se používá jenom dočasně. Tato akce, nebude mít vliv na a odstraňovat soubory z předchozí instalace. (Chcete-li vyčistit všechny instalační balíčky, je třeba upravit předchozí instalace zvlášť.)
 
-3. V **mezipaměť pro stahování** části, určete taky jednotku, kam chcete uložit instalační soubory a manifesty. <br><br>Pokud vyberete úlohy "Vývoj desktopových aplikací pomocí C++", dočasně požadovaná velikost je 1.58 GB na systémovou jednotku, která je uvolněna poté, co nejdříve po dokončení instalace.
+4. V **mezipaměť pro stahování** části, určete taky jednotku, kam chcete uložit instalační soubory a manifesty. <br><br>Pokud vyberete úlohy "Vývoj desktopových aplikací pomocí C++", dočasně požadovaná velikost je 1.58 GB na systémovou jednotku, která je uvolněna poté, co nejdříve po dokončení instalace.
 
- > [!NOTE]
- > Soubory jsou nejprve stáhne do dočasné složky na systémovou jednotku a byl později smazán po sady Visual Studio ověří a přesune je do složky mezipaměti pro stahování. Pokud se rozhodnete zachovat mezipaměť pro stahování na jinou jednotku, Visual Studio stále potřebuje místo na disku, které se rovná velikosti mezipaměti pro stahování na systémovou jednotku.
- > [!IMPORTANT]
- > Umístění se nastaví pomocí při první instalaci a není možné později změnit z uživatelského rozhraní instalačního programu. Místo toho je potřeba [použít parametry příkazového řádku](use-command-line-parameters-to-install-visual-studio.md) přesunout do mezipaměti pro stahování
+   > [!NOTE]
+   > Soubory jsou nejprve stáhne do dočasné složky na systémovou jednotku a byl později smazán po sady Visual Studio ověří a přesune je do složky mezipaměti pro stahování. Pokud se rozhodnete zachovat mezipaměť pro stahování na jinou jednotku, Visual Studio stále potřebuje místo na disku, které se rovná velikosti mezipaměti pro stahování na systémovou jednotku.
+   > [!IMPORTANT]
+   > Umístění se nastaví pomocí při první instalaci a není možné později změnit z uživatelského rozhraní instalačního programu. Místo toho je potřeba [použít parametry příkazového řádku](use-command-line-parameters-to-install-visual-studio.md) přesunout do mezipaměti pro stahování
 
-4. V **sdílené komponenty, nástroje a sady SDK** části, určete taky jednotku, ve které chcete ukládat soubory, které jsou sdíleny instalace sady Visual Studio vedle sebe. Sady SDK a nástroje, které umožní instalačního programu sady Visual Studio změňte umístění instalace také uložené v tomto adresáři.
+5. V **sdílené komponenty, nástroje a sady SDK** části, určete taky jednotku, ve které chcete ukládat soubory, které jsou sdíleny instalace sady Visual Studio vedle sebe. Sady SDK a nástroje, které umožní instalačního programu sady Visual Studio změňte umístění instalace také uložené v tomto adresáři.
 
- > [!NOTE]
- > Je několik nástrojů a sad SDK, které mají různá pravidla na, kde může být jsou nainstalované. Tyto nástroje a sady SDK stále se nainstaluje na systémovou jednotku i v případě zvolte jiné umístění.)
+   > [!NOTE]
+   > Je několik nástrojů a sad SDK, které mají různá pravidla na, kde může být jsou nainstalované. Tyto nástroje a sady SDK stále se nainstaluje na systémovou jednotku i v případě zvolte jiné umístění.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

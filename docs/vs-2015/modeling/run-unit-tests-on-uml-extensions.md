@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873666"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Spouštění testování částí v rozšířeních UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 K udržení stabilní prostřednictvím po sobě jdoucích změn kódu, doporučujeme, abyste zápis testů jednotek a provádět jako součást procesu regulárního sestavení. Další informace najdete v tématu [svůj kód testu jednotek](../test/unit-test-your-code.md). Nastavení testů pro rozšíření modelování Visual Studio, budete potřebovat několik důležitých informací. V souhrnu:  
   
--   [Nastavení testu jednotek pro rozšíření VSIX](#Host)  
+- [Nastavení testu jednotek pro rozšíření VSIX](#Host)  
   
-     Spusťte testy s hostitelského adaptéru VS IDE. Předpona každou metodu testu `[HostType("VS IDE")]`. Spuštění tohoto hostitelského adaptéru [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] při spuštění testů.  
+   Spusťte testy s hostitelského adaptéru VS IDE. Předpona každou metodu testu `[HostType("VS IDE")]`. Spuštění tohoto hostitelského adaptéru [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] při spuštění testů.  
   
--   [Přístup k DTE a modelstore modelu](#DTE)  
+- [Přístup k DTE a modelstore modelu](#DTE)  
   
-     Obvykle budete muset otevřít modelu a jeho diagramy a přístup `IModelStore` inicializace testu.  
+   Obvykle budete muset otevřít modelu a jeho diagramy a přístup `IModelStore` inicializace testu.  
   
--   [Otevření diagramu modelu](#Opening)  
+- [Otevření diagramu modelu](#Opening)  
   
-     Můžete přetypovat `EnvDTE.ProjectItem` do a z `IDiagramContext`.  
+   Můžete přetypovat `EnvDTE.ProjectItem` do a z `IDiagramContext`.  
   
--   [Provádění změn ve vlákně uživatelského rozhraní](#UiThread)  
+- [Provádění změn ve vlákně uživatelského rozhraní](#UiThread)  
   
-     Testy, které provádět změny v úložišti modelu se musí provádět ve vlákně uživatelského rozhraní. Můžete použít `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` to.  
+   Testy, které provádět změny v úložišti modelu se musí provádět ve vlákně uživatelského rozhraní. Můžete použít `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` to.  
   
--   [Testování příkazy, gesta a další součásti MEF](#MEF)  
+- [Testování příkazy, gesta a další součásti MEF](#MEF)  
   
-     K testování komponent MEF, musí explicitně připojit jejich importované vlastností hodnoty.  
+   K testování komponent MEF, musí explicitně připojit jejich importované vlastností hodnoty.  
   
- Tyto body jsou podrobně uvedeno v následující části.  
+  Tyto body jsou podrobně uvedeno v následující části.  
   
- Ukázka rozšíření UML jednotek testování najdete na galerii vzorových příkladů kódu na [UML – rychlé položku pomocí textu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Ukázka rozšíření UML jednotek testování najdete na galerii vzorových příkladů kódu na [UML – rychlé položku pomocí textu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Požadavky  
  Zobrazit [požadavky](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

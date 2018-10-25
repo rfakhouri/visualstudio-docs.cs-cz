@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841101"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Tato stránka obsahuje podrobné informace, které vám pomůžou s instalací *
   
 #### <a name="to-install-or-uninstall-help-content"></a>Instalace nebo odinstalace obsahu nápovědy  
   
-1.  Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabídky vyberte možnosti **pomáhají**, **přidat nebo odebrat obsah nápovědy**.  
+1. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabídky vyberte možnosti **pomáhají**, **přidat nebo odebrat obsah nápovědy**.  
   
-2.  Na **spravovat obsah** karty **Microsoft Help Viewer**, vyberte zdroj instalace obsahu nápovědy.  
+2. Na **spravovat obsah** karty **Microsoft Help Viewer**, vyberte zdroj instalace obsahu nápovědy.  
   
-3.  Pokud hledáte konkrétní kolekci nápovědy, zadejte název nebo klíčové slovo v **hledání** textové pole a poté stiskněte klávesu **Enter**.  
+3. Pokud hledáte konkrétní kolekci nápovědy, zadejte název nebo klíčové slovo v **hledání** textové pole a poté stiskněte klávesu **Enter**.  
   
-4.  Vedle názvu kolekce nápovědy, které chcete, aby, zvolte **přidat** nebo **odebrat** odkaz.  
+4. Vedle názvu kolekce nápovědy, které chcete, aby, zvolte **přidat** nebo **odebrat** odkaz.  
   
-5.  Klikněte na tlačítko **aktualizace** tlačítko.  
+5. Klikněte na tlačítko **aktualizace** tlačítko.  
   
- Další informace o tom, jak nainstalovat nebo nasadit offline nápovědu najdete v článku [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).  
+   Další informace o tom, jak nainstalovat nebo nasadit offline nápovědu najdete v článku [pomáhají Příručka pro správce prohlížeč](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Kontrola aktualizací Service Release a aktualizací produktů  
  Vzhledem k tomu, že ne všechna rozšíření jsou kompatibilní, Visual Studio neprovádí automatický upgrade rozšíření při upgradu z předchozí verze. Je třeba přeinstalovat rozšíření od [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) nebo od vydavatele softwaru.  

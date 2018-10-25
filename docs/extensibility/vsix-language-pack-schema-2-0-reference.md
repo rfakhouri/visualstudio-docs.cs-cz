@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855808"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX language pack schema 2.0 – referenční informace
 
@@ -34,6 +34,7 @@ Kořenový element souboru language pack je `<PackageLanguagePackManifest>`, s a
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest – element
 
 V rámci `<PackageLanguagePackManifest>` element musí existovat následující element:
+
 |Název|Popis|
 |-----------|-----------------|
 |`<Metadata>`| Obsahující element pro všechna metadata lokalizovaných balíčků
@@ -41,6 +42,7 @@ V rámci `<PackageLanguagePackManifest>` element musí existovat následující 
 ### <a name="metadata-element"></a>Metadata – element
 
 V rámci `<Metadata>` prvek může mít následující prvky:
+
 |Název|Popis|
 |-----------|-----------------|
 |`<DisplayName>`|Lokalizovaný název rozšíření k instalaci|

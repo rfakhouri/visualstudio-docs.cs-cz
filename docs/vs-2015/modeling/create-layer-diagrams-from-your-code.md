@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833483"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Vytváření diagramů vrstev z kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ Můžete vizualizovat váš softwarový systém logické architektury vysoké ú
 > [!NOTE]
 >  Pro určité druhy artefaktů nelze provádět zpětnou analýzu žádných závislostí. Zpětnou analýzou například nebudou získány žádné závislosti z vrstvy nebo do ní, když je propojena s textovým souborem. Pokud chcete zobrazit, které artefakty mají závislosti, které je možné provádět zpětnou analýzu, otevřete místní nabídku pro jednu nebo více vrstev a klikněte na tlačítko **zobrazit odkazy**. V **Průzkumník vrstev**, zkontrolujte **podporuje ověřování** sloupce. Závislosti se nebudou provést zpětnou analýzu pro artefakty, u kterých tento sloupec zobrazuje **False**.  
   
--   Vyberte jednu nebo více vrstev, otevřete místní nabídku pro vybranou vrstvu a klikněte na tlačítko **generovat závislosti**.  
+- Vyberte jednu nebo více vrstev, otevřete místní nabídku pro vybranou vrstvu a klikněte na tlačítko **generovat závislosti**.  
   
- Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto závislosti lze upravit, aby odpovídaly zamýšlenému návrhu.  
+  Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto závislosti lze upravit, aby odpovídaly zamýšlenému návrhu.  
   
 ##  <a name="EditDependencies"></a> Úprava vrstev a závislostí za účelem zobrazení zamýšleného návrhu  
  Chcete-li zobrazit popis změn, které máte v plánu provést v systému nebo v požadované architektuře, upravte diagram vrstev:  

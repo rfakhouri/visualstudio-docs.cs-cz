@@ -16,12 +16,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a8975e53d690f4f2e13b08ccf290492955c49b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2129dcb4f8be717ab37c5e220b2d4b65f3b16698
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840828"
 ---
 # <a name="vsct-xml-schema-reference"></a>XML schéma VSCT – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Poskytuje tabulku elementy schématu tabulky kompilátoru příkaz, povolené po
   
  Všechny hodnoty GUID a ID musí být definován pomocí symbolické názvy. Tyto názvy mohou být definovány v souborech hlaviček nebo VSCT \<symboly > oddíly. Symbolické názvy musí být místní, zahrnuté prostřednictvím \<zahrnout > elementy, nebo odkazovaná \<Extern > elementy. Symbolický název je importován z hlavičky souboru zadaného v \<Extern > elementu, jestliže postupuje jednoduchý vzorec #define hodnota symbolu. Hodnota může být další symbol, tak dlouho, dokud tento symbol byla dříve definovaná. Identifikátor GUID definice musí mít formát OLE nebo C++. ID hodnoty mohou být desítkové číslice nebo šestnáctkové číslice, před kterými je 0 x, jak je znázorněno v následující řádky:  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xCB, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xCB, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- Komentáře XML mohou být použity, ale operace round-trip grafické uživatelské rozhraní (GUI) nástroje může zrušit je. Obsah \<Poznámka > elementy zaručeno udržovat bez ohledu na formát.  
+  Komentáře XML mohou být použity, ale operace round-trip grafické uživatelské rozhraní (GUI) nástroje může zrušit je. Obsah \<Poznámka > elementy zaručeno udržovat bez ohledu na formát.  
   
 ## <a name="schema-hierarchy"></a>Hierarchie schémat  
  Souboru .vsct má následující hlavní prvky.  

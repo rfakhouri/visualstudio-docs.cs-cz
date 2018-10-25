@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58967c87b86eff8ab00e343ee872637e18ee57ed
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1d254ebc5d1dad42527ec2ef3b6acee242976207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876435"
 ---
 # <a name="get-project-properties"></a>Získání vlastností projektu
 Tento návod ukazuje, jak vlastnosti projektu zobrazí v panelu nástrojů.  
@@ -29,11 +29,11 @@ Tento návod ukazuje, jak vlastnosti projektu zobrazí v panelu nástrojů.
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Vytvořte projekt VSIX a přidání panelu nástrojů  
   
-1.  Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projekt s názvem `ProjectPropertiesExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.  
+1. Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projekt s názvem `ProjectPropertiesExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.  
   
-2.  Přidání panelu nástrojů přidejte šablonu vlastního panelu nástrojů položku s názvem `ProjectPropertiesToolWindow`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C#** > **rozšiřitelnost** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby `ProjectPropertiesToolWindow.cs`. Další informace o tom, jak vytvořit vlastního okna nástroje najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Přidání panelu nástrojů přidejte šablonu vlastního panelu nástrojů položku s názvem `ProjectPropertiesToolWindow`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C#** > **rozšiřitelnost** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby `ProjectPropertiesToolWindow.cs`. Další informace o tom, jak vytvořit vlastního okna nástroje najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Sestavte řešení a ověřte, že se zkompiluje bez chyb.  
+3. Sestavte řešení a ověřte, že se zkompiluje bez chyb.  
   
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Chcete-li zobrazit vlastnosti projektu v panelu nástrojů  
   

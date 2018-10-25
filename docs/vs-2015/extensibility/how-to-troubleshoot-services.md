@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826621"
 ---
 # <a name="how-to-troubleshoot-services"></a>Postupy: odstraňování potíží se službami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Existuje několik běžných problémů, které se mohou vyskytnout při pokusu o získání služby:  
   
--   Služba není zaregistrována [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Služba není zaregistrována [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Typ rozhraní a ne typ služby, je požadována služba.  
+- Typ rozhraní a ne typ služby, je požadována služba.  
   
--   VSPackage žádosti o služby nebyl umístěn.  
+- VSPackage žádosti o služby nebyl umístěn.  
   
--   Chybný zprostředkovatel se používá.  
+- Chybný zprostředkovatel se používá.  
   
- Pokud požadovanou službu nelze získat, volání <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> , vrátí hodnotu null. Test pro null by měla vždy po žádosti služby:  
+  Pokud požadovanou službu nelze získat, volání <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> , vrátí hodnotu null. Test pro null by měla vždy po žádosti služby:  
   
 ```csharp  
 IVsActivityLog log =   

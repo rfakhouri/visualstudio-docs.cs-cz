@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816050"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Postupy: vytvoření nastavení testu pro distribuovaný zátěžový test
 
@@ -124,7 +124,7 @@ Postupujte podle těchto kroků k vytvoření a odebrání nastavení testu v r�
      **Adaptéry diagnostických dat pro zátěžové testy**
 
     |Adaptér diagnostiky dat|Použití v zátěžových testech|Související téma|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |**Klient Proxy ASP.NET pro IntelliTrace a dopad testu:** tento server proxy umožňuje shromažďovat informace o voláních http z klienta na webový server pro adaptéry diagnostických dat IntelliTrace a dopad testu.|![Informační ikona](../test/media/vc364f4.gif)<br /><br /> Pokud nemáte specifickou potřebu shromažďovat informace o systému pro počítače testovacího agenta, nezahrnujte tento adaptér. **Upozornění:** nedoporučujeme používat adaptér IntelliTrace v zátěžových testech kvůli problémům, k nimž dochází kvůli velkému množství dat, která je shromažďována. <br /><br /> Údaje o vlivu testu nejsou při použití zátěžových testů shromažďovány.||
     |**IntelliTrace:** můžete nakonfigurovat informace o specifickém diagnostickém trasování, která je uložena v souboru protokolu. Soubor protokolu má příponou *.tdlog*. Při spuštění testu a testovací krok nezdaří, můžete vytvořit chybu. Soubor protokolu, který obsahuje diagnostické trasování je automaticky připojen k této chybě. Data sbírána do souboru protokolu zvyšují efektivitu ladění zkrácením doby potřebné k reprodukci a diagnostice chyby v kódu. Z tohoto protokolu souboru místní relace můžete znovu vytvořit na jiném počítači. Tím se snižuje riziko, že není možné reprodukovat chyby.<br /><br /> Další informace najdete v tématu [data IntelliTrace shromažďování](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona důležité](../test/media/vc364f3.gif)<br /><br /> Nedoporučujeme používat adaptér IntelliTrace v zátěžových testech kvůli problémům, k nimž dochází kvůli velkému množství dat, která jsou shromažďována a zaznamenána. Měli byste se pokusit použít adaptér IntelliTrace pouze v zátěžových testech, které neběží dlouho a nepoužívají spoustu testovacích agentů.|[Postupy: shromažďování dat IntelliTrace pro ladění složitých problémů](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler technologie ASP.NET:** můžete vytvořit nastavení testu, které zahrnuje profilování technologie ASP.NET, které shromažďuje údaje o výkonu webových aplikací ASP.NET.|Adaptér diagnostiky dat profiler technologie ASP.NET profily procesu Internetové informační služby (IIS), nebude fungovat proti vývojovému webovému serveru. Chcete-li Profilovat webu v zátěžovém testu, budete muset nainstalovat testovacího agenta na počítači, na kterém běží služby IIS na. Testovací agent nebude generovat zatížení, ale bude pouze agenta do kolekce. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).|[Postupy: Konfigurace služby ASP.NET profiler pro zátěžové testy pomocí nastavení testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|

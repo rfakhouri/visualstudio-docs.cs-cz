@@ -14,33 +14,33 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1661788c010d55586413060d1e79b3630fa2d89e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f90a844d3e4e4d02a2e2eddd64e62d8fce59407c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825293"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Určení umístění souboru se symboly z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbolu, jako jsou názvy funkcí a čísla řádků, vyžaduje přístup k soubory symbolů (PDB) PROFILOVANÉHO komponent a souborů systému Windows. Soubory symbolů se vytvoří při kompilaci komponentu. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automaticky vyhledá soubory symbolů v následujících umístěních:  
   
--   Cesty zadané **/symbolpath** možnost nebo v **_NT_SYMBOL_PATH** proměnné prostředí.  
+- Cesty zadané **/symbolpath** možnost nebo v **_NT_SYMBOL_PATH** proměnné prostředí.  
   
--   Přesné místní cesta kde byl zkompilován komponentu.  
+- Přesné místní cesta kde byl zkompilován komponentu.  
   
--   Adresář obsahující soubor dat profilování (.vsp nebo .vsps).  
+- Adresář obsahující soubor dat profilování (.vsp nebo .vsps).  
   
- Společnost Microsoft poskytuje soubory s příponou .pdb pro spoustu jejích produktů online na serveru symbolů. Pokud počítač, který používáte pro vytváření sestav je připojený k Internetu, VSPerfReport připojí k serveru symbolů online automaticky vyhledat informace o symbolech a uložte soubory do místního úložiště.  
+  Společnost Microsoft poskytuje soubory s příponou .pdb pro spoustu jejích produktů online na serveru symbolů. Pokud počítač, který používáte pro vytváření sestav je připojený k Internetu, VSPerfReport připojí k serveru symbolů online automaticky vyhledat informace o symbolech a uložte soubory do místního úložiště.  
   
- Zadejte umístění souborů symbolů a úložišti Microsoft symbol server následujícími způsoby:  
+  Zadejte umístění souborů symbolů a úložišti Microsoft symbol server následujícími způsoby:  
   
--   Nastavte **_NT_SYMBOL_PATH** proměnné prostředí.  
+- Nastavte **_NT_SYMBOL_PATH** proměnné prostředí.  
   
--   Přidat **/symbolpath** možnost příkazového řádku VSPerfReport.  
+- Přidat **/symbolpath** možnost příkazového řádku VSPerfReport.  
   
- Můžete také použít obě tyto metody.  
+  Můžete také použít obě tyto metody.  
   
 > [!NOTE]
 >  Pokud [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md). Stále musíte nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.  
@@ -49,13 +49,13 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   
 #### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>Můžete konfigurovat použití Windows serveru symbolů  
   
-1.  V případě potřeby vytvořte adresář pro uložení souborů symbolů místně.  
+1. V případě potřeby vytvořte adresář pro uložení souborů symbolů místně.  
   
-2.  Použijte následující syntax k nastavení **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost VSPerfReport/symbolpath:  
+2. Použijte následující syntax k nastavení **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost VSPerfReport/symbolpath:  
   
-     **SRV\***  *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
-     kde *LocalStore* je cesta k místnímu adresáři, který jste vytvořili.  
+    kde *LocalStore* je cesta k místnímu adresáři, který jste vytvořili.  
   
 ## <a name="specifying-component-symbol-files"></a>Určení souborů symbolů komponenty  
  Profilování nástroje hledá soubory the.pdb komponent, které chcete do profilu do jejich původního umístění, které jsou uloženy v součásti nebo ve složce, která obsahuje soubor dat profilování. Můžete zadat jiné umístění pro hledání tak, že přidáte jednu nebo více cest k **_NT_SYMBOL_PATH** nebo **/symbolpath** možnost. Samostatné cesty oddělte středníkem.  

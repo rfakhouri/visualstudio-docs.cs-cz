@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850805"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
@@ -478,12 +478,13 @@ Pravidla formátu je jednoduché, takže tato část popisuje pouze atributy, kt
 
 `PageTemplate` Atribut definuje, jak se pravidlo zobrazilo v **stránky vlastností** dialogového okna. Atribut může mít jednu z těchto hodnot:
 
-|Atribut|Popis|
-|-|-|
-`generic`|Všechny vlastnosti jsou zobrazeny na jedné stránce v části kategorie záhlaví<br/>Pravidlo může být viditelné pro `Project` a `PropertySheet` kontextů, ale ne `File`.<br/><br/> Příklad: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
-`tool`|Kategorie jsou uvedeny jako podstránky.<br/>Pravidlo může být viditelný ve všech kontextech: `Project`, `PropertySheet` a `File`.<br/>Toto pravidlo je viditelná ve vlastnostech projektu pouze v případě, že projekt obsahuje položky, které `ItemType` definované v `Rule.DataSource`, pokud je součástí názvu pravidla `ProjectTools` skupiny položek.<br/><br/>Příklad: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|Na stránce se zobrazí jako součást stránky ladění.<br/>Kategorie jsou aktuálně ignorovány.<br/>Název pravidla musí odpovídat objektu ladění MEF Spouštěč `ExportDebugger` atribut.<br/><br/>Příklad: `$(VCTargetsPath)` \\ *1033*\\*ladicí program\_místní\_windows.xml*
-*Vlastní*| Vlastní šablony. Název šablony by měl odpovídat `ExportPropertyPageUIFactoryProvider` atribut `PropertyPageUIFactoryProvider` objekt MEF. Zobrazit **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Příklad: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Atribut | Popis |
+|------------| - |
+| `generic` | Všechny vlastnosti jsou zobrazeny na jedné stránce v části kategorie záhlaví<br/>Pravidlo může být viditelné pro `Project` a `PropertySheet` kontextů, ale ne `File`.<br/><br/> Příklad: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
+| `tool` | Kategorie jsou uvedeny jako podstránky.<br/>Pravidlo může být viditelný ve všech kontextech: `Project`, `PropertySheet` a `File`.<br/>Toto pravidlo je viditelná ve vlastnostech projektu pouze v případě, že projekt obsahuje položky, které `ItemType` definované v `Rule.DataSource`, pokud je součástí názvu pravidla `ProjectTools` skupiny položek.<br/><br/>Příklad: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | Na stránce se zobrazí jako součást stránky ladění.<br/>Kategorie jsou aktuálně ignorovány.<br/>Název pravidla musí odpovídat objektu ladění MEF Spouštěč `ExportDebugger` atribut.<br/><br/>Příklad: `$(VCTargetsPath)` \\ *1033*\\*ladicí program\_místní\_windows.xml* |
+| *custom* | Vlastní šablony. Název šablony by měl odpovídat `ExportPropertyPageUIFactoryProvider` atribut `PropertyPageUIFactoryProvider` objekt MEF. Zobrazit **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Příklad: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Pokud toto pravidlo používá některé ze šablon na základě mřížky vlastností, můžete těmto rozšiřujícím bodům vlastností:
 

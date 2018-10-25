@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850357"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu
   Když chráníte část dokumentu, zabránit uživatelům v měnit nebo odstraňovat obsah v této části dokumentu. Existuje několik způsobů, jak může ochrana částí dokumentu aplikace Microsoft Office Word s použitím ovládacích prvků obsahu:  
   
--   Budete moci chránit obsah ovládacího prvku.  
+- Budete moci chránit obsah ovládacího prvku.  
   
--   Můžete chránit část dokumentu, který není v obsahu prvku.  
+- Můžete chránit část dokumentu, který není v obsahu prvku.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ##  <a name="EditDeleteControl"></a> Ochrana obsahu ovládacího prvku  
  Můžete zabránit uživatelům v úpravách nebo odstraňování ovládací prvek obsahu nastavením vlastností ovládacího prvku v projektu úrovni dokumentu v době návrhu nebo za běhu.  

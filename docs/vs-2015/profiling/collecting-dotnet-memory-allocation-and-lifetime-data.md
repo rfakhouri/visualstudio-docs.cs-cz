@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844572"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Nástroje pro profilaci podporují kolekci alokaci paměti .NET a data o životním cyklu objektu, která vám pomůže zjistit problémy s výkonem souvisejících s pamětí ve vaší aplikaci.  
   
--   Data o přidělování paměti .NET zahrnuje velikost a počet objektů paměti rozhraní .NET Framework, které byly přiděleny.  
+- Data o přidělování paměti .NET zahrnuje velikost a počet objektů paměti rozhraní .NET Framework, které byly přiděleny.  
   
--   Data o životním cyklu objektu zahrnuje velikost a počet objektů paměti rozhraní .NET Framework, které byly získány zpět v tři generace uvolňování paměti kolekce.  
+- Data o životním cyklu objektu zahrnuje velikost a počet objektů paměti rozhraní .NET Framework, které byly získány zpět v tři generace uvolňování paměti kolekce.  
   
- **Požadavky**  
+  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. Aplikace Windows Store také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -64,9 +64,9 @@ ms.locfileid: "49245554"
 ## <a name="common-tasks"></a>Obecné úlohy  
  Můžete zadat další možnosti v _relace výkonu_**stránky vlastností** dialogovému oknu relace výkonu. Chcete-li otevřít toto dialogové okno:  
   
--   V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a potom klikněte na tlačítko **vlastnosti**.  
+- V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a potom klikněte na tlačítko **vlastnosti**.  
   
- Úkoly v následující tabulce popisují možnosti, které můžete určit _relace výkonu_**stránky vlastností** dialogové okno při shromažďování dat paměti .NET.  
+  Úkoly v následující tabulce popisují možnosti, které můžete určit _relace výkonu_**stránky vlastností** dialogové okno při shromažďování dat paměti .NET.  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  

@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853828"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,26 +30,26 @@ Můžete povolit element, který má přetahovat do jiného, z panelu nástrojů
   
  Direktiva sloučení elementů (EMD) určuje, co se stane, když jeden prvek modelu *sloučené* na jiný prvek modelu. To se stane, když:  
   
--   Uživatel přetáhne z panelu nástrojů do diagramu nebo obrazce.  
+- Uživatel přetáhne z panelu nástrojů do diagramu nebo obrazce.  
   
--   Uživatel vytvoří element s použitím přidat nabídku v Průzkumníku nebo obrazce oddílu.  
+- Uživatel vytvoří element s použitím přidat nabídku v Průzkumníku nebo obrazce oddílu.  
   
--   Uživatel přesune na jiné položky z jednoho plavecké dráhy.  
+- Uživatel přesune na jiné položky z jednoho plavecké dráhy.  
   
--   Uživatel vloží prvek.  
+- Uživatel vloží prvek.  
   
--   Váš program kód volá direktiva sloučení elementů.  
+- Váš program kód volá direktiva sloučení elementů.  
   
- I když operace vytváření se může zdát, že se liší od operace kopírování, skutečně fungují stejně. Když se přidá prvek, například z panelu nástrojů prototyp ho se replikuje. Prototyp se sloučí do modelu stejným způsobem jako prvky, které byly zkopírovány z jiné části modelu.  
+  I když operace vytváření se může zdát, že se liší od operace kopírování, skutečně fungují stejně. Když se přidá prvek, například z panelu nástrojů prototyp ho se replikuje. Prototyp se sloučí do modelu stejným způsobem jako prvky, které byly zkopírovány z jiné části modelu.  
   
- Odpovědnost EMD se rozhodnout, jak objekt nebo skupinu objektů by měly být sloučeny do konkrétních místech v modelu. Konkrétně se rozhodne, jaký relace by měl vytvořit instanci propojení skupině sloučené do modelu. Můžete také upravit, můžete nastavit vlastnosti a vytvořit další objekty.  
+  Odpovědnost EMD se rozhodnout, jak objekt nebo skupinu objektů by měly být sloučeny do konkrétních místech v modelu. Konkrétně se rozhodne, jaký relace by měl vytvořit instanci propojení skupině sloučené do modelu. Můžete také upravit, můžete nastavit vlastnosti a vytvořit další objekty.  
   
- ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge")  
-Role direktiva sloučení elementů  
+  ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge")  
+  Role direktiva sloučení elementů  
   
- Při definování vztah obsažení, vygenerovaný automaticky EMD. Toto výchozí nastavení EMD vytvoří instanci relace, když uživatelé přidají nové podřízené instance pro nadřazenou. Tyto výchozí EMDs, můžete upravit třeba tak, že přidáte vlastní kód.  
+  Při definování vztah obsažení, vygenerovaný automaticky EMD. Toto výchozí nastavení EMD vytvoří instanci relace, když uživatelé přidají nové podřízené instance pro nadřazenou. Tyto výchozí EMDs, můžete upravit třeba tak, že přidáte vlastní kód.  
   
- Můžete také přidat vlastní EMDs v definici DSL a umožnit přetáhněte nebo vložte různé kombinace sloučené a přijímající třídy.  
+  Můžete také přidat vlastní EMDs v definici DSL a umožnit přetáhněte nebo vložte různé kombinace sloučené a přijímající třídy.  
   
 ## <a name="defining-an-element-merge-directive"></a>Definování direktivě sloučení elementů  
  Direktivy sloučení elementů můžete přidat doménové třídy, vztahy domén, tvary, konektory a diagramy. Můžete přidat nebo je vyhledat v Průzkumník DSL pod přijímající doménové třídy. Přijímací třída je doménová třída elementu, který je už v modelu a do které se sloučí element nové nebo zkopírovaný.  
@@ -60,19 +60,19 @@ Role direktiva sloučení elementů
   
  Existují dva druhy slučovací direktiva:  
   
--   A **proces sloučení** direktiva určuje vztahy, které by měly být propojeny nový prvek do stromové struktury.  
+- A **proces sloučení** direktiva určuje vztahy, které by měly být propojeny nový prvek do stromové struktury.  
   
--   A **vpřed sloučit** – direktiva přesměruje nový prvek na jiný přijímací element, obvykle nadřazenou položku.  
+- A **vpřed sloučit** – direktiva přesměruje nový prvek na jiný přijímací element, obvykle nadřazenou položku.  
   
- Můžete přidat vlastní kód direktivy sloučení:  
+  Můžete přidat vlastní kód direktivy sloučení:  
   
--   Nastavte **používá vlastní přijetí** přidání vlastního kódu k určení, zda by měly být konkrétní instanci prvku indexování sloučeny do cílového elementu. Když uživatel přetáhne z panelu nástrojů, "neplatný" ukazatel ukazuje, pokud váš kód zakazuje sloučení.  
+- Nastavte **používá vlastní přijetí** přidání vlastního kódu k určení, zda by měly být konkrétní instanci prvku indexování sloučeny do cílového elementu. Když uživatel přetáhne z panelu nástrojů, "neplatný" ukazatel ukazuje, pokud váš kód zakazuje sloučení.  
   
-     Například můžete umožnit sloučení pouze v případě přijímací element je v určitém stavu.  
+   Například můžete umožnit sloučení pouze v případě přijímací element je v určitém stavu.  
   
--   Nastavte **používá vlastní sloučení** přidat poskytnout vlastní kód, který definuje změny provedené na model, při provádění sloučení.  
+- Nastavte **používá vlastní sloučení** přidat poskytnout vlastní kód, který definuje změny provedené na model, při provádění sloučení.  
   
-     Například můžete nastavit vlastnosti v elementu sloučené s použitím dat z nové místo v modelu.  
+   Například můžete nastavit vlastnosti v elementu sloučené s použitím dat z nové místo v modelu.  
   
 > [!NOTE]
 >  Pokud píšete kód vlastní sloučení, ovlivní pouze sloučení, které se provádí pomocí této EMD. Pokud existují další EMDs, které sloučení stejného typu objektu, nebo pokud je jiný vlastní kód, který vytvoří tyto objekty bez použití EMD, nebude vliv kódem vlastní sloučení.  
@@ -86,57 +86,57 @@ Role direktiva sloučení elementů
   
 #### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>Umožňuje uživatelům vytvořit prvek a konektor ve stejnou dobu  
   
-1.  Vytvořit nový DSL pomocí **minimální jazykový** šablonu řešení.  
+1. Vytvořit nový DSL pomocí **minimální jazykový** šablonu řešení.  
   
-     Když spustíte tento DSL, umožňuje vám vytvořit obrazců a konektorů mezi tvary. Nelze přetáhnout nový **ExampleElement** tvaru z panelu nástrojů do existujícího tvaru.  
+    Když spustíte tento DSL, umožňuje vám vytvořit obrazců a konektorů mezi tvary. Nelze přetáhnout nový **ExampleElement** tvaru z panelu nástrojů do existujícího tvaru.  
   
-2.  Umožňuje uživatelům sloučit elementy do `ExampleElement` tvary, vytvořte nový EMD v `ExampleElement` doménové třídy:  
+2. Umožňuje uživatelům sloučit elementy do `ExampleElement` tvary, vytvořte nový EMD v `ExampleElement` doménové třídy:  
   
-    1.  V **Průzkumník DSL**, rozbalte **doménovými třídami**. Klikněte pravým tlačítkem na `ExampleElement` a potom klikněte na tlačítko **přidat nové direktiva sloučení elementů**.  
+   1.  V **Průzkumník DSL**, rozbalte **doménovými třídami**. Klikněte pravým tlačítkem na `ExampleElement` a potom klikněte na tlačítko **přidat nové direktiva sloučení elementů**.  
   
-    2.  Ujistěte se, že **podrobnosti DSL** tak, aby si můžete zobrazit podrobnosti nové EMD je otevřeno, okno. (Nabídka: **zobrazení**, **jiných Windows**, **podrobnosti DSL**.)  
+   2.  Ujistěte se, že **podrobnosti DSL** tak, aby si můžete zobrazit podrobnosti nové EMD je otevřeno, okno. (Nabídka: **zobrazení**, **jiných Windows**, **podrobnosti DSL**.)  
   
-3.  Nastavte **indexování třídy** v okně podrobností DSL, chcete-li definovat, jaké třídy prvků může být sloučeny do `ExampleElement` objekty.  
+3. Nastavte **indexování třídy** v okně podrobností DSL, chcete-li definovat, jaké třídy prvků může být sloučeny do `ExampleElement` objekty.  
   
-     V tomto příkladu vyberte `ExampleElements`tak, aby uživatel nové prvky můžete přetáhnout do existující prvky.  
+    V tomto příkladu vyberte `ExampleElements`tak, aby uživatel nové prvky můžete přetáhnout do existující prvky.  
   
-     Všimněte si, že třída indexování bude název EMD v Průzkumník DSL.  
+    Všimněte si, že třída indexování bude název EMD v Průzkumník DSL.  
   
-4.  V části **pracovat sloučení vytvořením odkazů**, přidejte dvě cesty:  
+4. V části **pracovat sloučení vytvořením odkazů**, přidejte dvě cesty:  
   
-    1.  Jedna cesta odkazuje na model nadřazené nového elementu. Výraz cesty, které budete muset zadat prochází z existující prvek nahoru vztah obsažení nadřízeného modelu. Také definuje roli v nový odkaz, ke kterému se přiřadí nový prvek. Cesta je následujícím způsobem:  
+   1. Jedna cesta odkazuje na model nadřazené nového elementu. Výraz cesty, které budete muset zadat prochází z existující prvek nahoru vztah obsažení nadřízeného modelu. Také definuje roli v nový odkaz, ke kterému se přiřadí nový prvek. Cesta je následujícím způsobem:  
   
-         `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`  
+       `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`  
   
-    2.  Jiné cesty propojí nový prvek do existujícího prvku. Výraz cesty určuje referenční vztah a role, ke kterému se přiřadí nový prvek. Tato cesta je následujícím způsobem:  
+   2. Jiné cesty propojí nový prvek do existujícího prvku. Výraz cesty určuje referenční vztah a role, ke kterému se přiřadí nový prvek. Tato cesta je následujícím způsobem:  
   
-         `ExampleElementReferencesTargets.Sources`  
+       `ExampleElementReferencesTargets.Sources`  
   
-     Nástroj navigace cestu slouží k vytvoření jednotlivé cesty:  
+      Nástroj navigace cestu slouží k vytvoření jednotlivé cesty:  
   
-    1.  V části **pracovat sloučení vytvořením odkazů na cestách**, klikněte na tlačítko  **\<přidat cestu >**.  
+   3. V části **pracovat sloučení vytvořením odkazů na cestách**, klikněte na tlačítko  **\<přidat cestu >**.  
   
-    2.  Klikněte na rozevírací šipku napravo od položky seznamu. Zobrazení stromu se zobrazí.  
+   4. Klikněte na rozevírací šipku napravo od položky seznamu. Zobrazení stromu se zobrazí.  
   
-    3.  Rozbalte uzly ve stromu na formulář, který chcete zadat cestu.  
+   5. Rozbalte uzly ve stromu na formulář, který chcete zadat cestu.  
   
-5.  Otestujte DSL:  
+5. Otestujte DSL:  
   
-    1.  Stisknutím klávesy F5 znovu sestavte a spusťte řešení.  
+   1.  Stisknutím klávesy F5 znovu sestavte a spusťte řešení.  
   
-         Opětovné sestavení bude trvat déle než obvykle, protože generovaný kód se budou aktualizovat z textové šablony tak, aby odpovídal na novou definici DSL.  
+        Opětovné sestavení bude trvat déle než obvykle, protože generovaný kód se budou aktualizovat z textové šablony tak, aby odpovídal na novou definici DSL.  
   
-    2.  Když experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] má začít, otevřete soubor modelu tohoto kódu DSL. Vytvořte některé prvky příklad.  
+   2.  Když experimentální instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] má začít, otevřete soubor modelu tohoto kódu DSL. Vytvořte některé prvky příklad.  
   
-    3.  Přetáhněte z **příklad elementu** nástroj na existující obrazec.  
+   3.  Přetáhněte z **příklad elementu** nástroj na existující obrazec.  
   
-         Zobrazí se nový tvar a je propojený s existující obrazec s konektorem.  
+        Zobrazí se nový tvar a je propojený s existující obrazec s konektorem.  
   
-    4.  Zkopírujte existující tvar. Vyberte jiný tvar a vložit.  
+   4.  Zkopírujte existující tvar. Vyberte jiný tvar a vložit.  
   
-         Je vytvořena kopie okraje prvního tvaru.  Má nový název a je propojený obrazec s konektorem.  
+        Je vytvořena kopie okraje prvního tvaru.  Má nový název a je propojený obrazec s konektorem.  
   
- Všimněte si následujících z tohoto postupu:  
+   Všimněte si následujících z tohoto postupu:  
   
 -   Vytvořením direktivy sloučení elementů, můžete povolit všechny třídy element tak, aby přijímal jakýkoli jiný. EMD se vytvoří v přijímající třídy domény a přijaté doménová třída je uveden v **Index – třída** pole.  
   
@@ -214,11 +214,11 @@ Role direktiva sloučení elementů
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Příklad: Přidání vlastní sloučení kódu do EMD  
  Ve vlastní sloučení kódu můžete definovat, co se stane, když uživatel přetáhne nástroj nebo vloží do elementu. Existují dva způsoby, jak definovat vlastní sloučení:  
   
-1.  Nastavte **používá vlastní sloučit** a zadejte požadovaný kód. Kód nahradí kód vygenerovaný sloučení. Tuto možnost použijte, pokud chcete úplně předefinovat význam sloučení.  
+1. Nastavte **používá vlastní sloučit** a zadejte požadovaný kód. Kód nahradí kód vygenerovaný sloučení. Tuto možnost použijte, pokud chcete úplně předefinovat význam sloučení.  
   
-2.  Přepsat `MergeRelate` metoda a volitelně také `MergeDisconnect` metoda. Chcete-li to provést, je nutné nastavit **Generates Double Derived** vlastnost doménové třídy. Váš kód může volat kód vygenerovaný sloučení v základní třídě. Tuto možnost použijte, pokud chcete provádět další operace po provedení sloučení.  
+2. Přepsat `MergeRelate` metoda a volitelně také `MergeDisconnect` metoda. Chcete-li to provést, je nutné nastavit **Generates Double Derived** vlastnost doménové třídy. Váš kód může volat kód vygenerovaný sloučení v základní třídě. Tuto možnost použijte, pokud chcete provádět další operace po provedení sloučení.  
   
- Tyto přístupy ovlivní pouze sloučení, která se provádí na základě této EMD. Pokud chcete mít vliv na všechny způsoby, ve kterých můžete vytvořit sloučené element, alternativou je definování `AddRule` na vztah obsažení a `DeleteRule` na sloučené doménové třídy. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+   Tyto přístupy ovlivní pouze sloučení, která se provádí na základě této EMD. Pokud chcete mít vliv na všechny způsoby, ve kterých můžete vytvořit sloučené element, alternativou je definování `AddRule` na vztah obsažení a `DeleteRule` na sloučené doménové třídy. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
 #### <a name="to-override-mergerelate"></a>Chcete-li přepsat MergeRelate  
   
@@ -263,21 +263,21 @@ Role direktiva sloučení elementů
   
 #### <a name="to-write-custom-merge-code"></a>Vytvoření vlastní sloučení kódu  
   
-1.  V **Dsl\Generated Code\DomainClasses.cs**, zkontrolujte metody s názvem `MergeRelate`. Tyto metody vytvoří propojení mezi nového elementu a existující model.  
+1. V **Dsl\Generated Code\DomainClasses.cs**, zkontrolujte metody s názvem `MergeRelate`. Tyto metody vytvoří propojení mezi nového elementu a existující model.  
   
-     Také zkontrolovat metody s názvem `MergeDisconnect`. Tyto metody odpojit z modelu prvek po odstranění.  
+    Také zkontrolovat metody s názvem `MergeDisconnect`. Tyto metody odpojit z modelu prvek po odstranění.  
   
-2.  V **Průzkumník DSL**vyberte nebo vytvořte direktivě sloučení elementů, které chcete přizpůsobit. V **podrobnosti DSL** okno, nastavte **používá vlastní sloučit**.  
+2. V **Průzkumník DSL**vyberte nebo vytvořte direktivě sloučení elementů, které chcete přizpůsobit. V **podrobnosti DSL** okno, nastavte **používá vlastní sloučit**.  
   
-     Když tuto možnost nastavíte **proces sloučení** a **vpřed sloučit** možnosti jsou ignorovány. Svůj kód se místo toho použít.  
+    Když tuto možnost nastavíte **proces sloučení** a **vpřed sloučit** možnosti jsou ignorovány. Svůj kód se místo toho použít.  
   
-3.  Znovu sestavte řešení. Bude trvat déle než obvykle, protože generovaný kód soubory se budou aktualizovat z modelu.  
+3. Znovu sestavte řešení. Bude trvat déle než obvykle, protože generovaný kód soubory se budou aktualizovat z modelu.  
   
-     Zobrazí se chybové zprávy. Klikněte dvakrát na chybové zprávy, zobrazí se pokyny v generovaném kódu. Tyto pokyny vás vyzve k zadání dvě metody, `MergeRelate` *YourDomainClass* a `MergeDisconnect` *YourDomainClass*  
+    Zobrazí se chybové zprávy. Klikněte dvakrát na chybové zprávy, zobrazí se pokyny v generovaném kódu. Tyto pokyny vás vyzve k zadání dvě metody, `MergeRelate` *YourDomainClass* a `MergeDisconnect` *YourDomainClass*  
   
-4.  Metody zapsat definicí částečné třídy v samostatném souboru kódu. Příklady, které ho zkontrolovat dříve by měla navrhovat, co potřebujete.  
+4. Metody zapsat definicí částečné třídy v samostatném souboru kódu. Příklady, které ho zkontrolovat dříve by měla navrhovat, co potřebujete.  
   
- Vlastní slučovat kód nebude mít vliv na kód, který vytvoří objekty a vztahy přímo, a to nebude mít vliv na ostatní EMDs. Chcete-li mít jistotu, že další změny jsou implementovány bez ohledu na to, jak vytvořit prvek, zvažte zápis `AddRule` a `DeleteRule` místo. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+   Vlastní slučovat kód nebude mít vliv na kód, který vytvoří objekty a vztahy přímo, a to nebude mít vliv na ostatní EMDs. Chcete-li mít jistotu, že další změny jsou implementovány bez ohledu na to, jak vytvořit prvek, zvažte zápis `AddRule` a `DeleteRule` místo. Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="redirecting-a-merge-operation"></a>Přesměrování operaci sloučení  
  Dopředné slučovací direktiva přesměruje cíl operace sloučení. Nový cíl je obvykle vkládání nadřazené počáteční cíle.  

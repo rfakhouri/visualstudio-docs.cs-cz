@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889604"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Používání atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,71 +32,71 @@ Toto téma obsahuje seznam veřejných členů náležících `Microsoft::Visual
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [Vytvoření testovací třídy a metody](#BKMK_Create_test_classes_and_methods)  
+- [Vytvoření testovací třídy a metody](#BKMK_Create_test_classes_and_methods)  
   
--   [Inicializace a vyčištění](#BKMK_Initialize_and_cleanup)  
+- [Inicializace a vyčištění](#BKMK_Initialize_and_cleanup)  
   
-    -   [Testovací metody](#BKMK_Test_methods)  
+  -   [Testovací metody](#BKMK_Test_methods)  
   
-    -   [Testovací třídy](#BKMK_Test_classes)  
+  -   [Testovací třídy](#BKMK_Test_classes)  
   
-    -   [Test moduly](#BKMK_Test_modules)  
+  -   [Test moduly](#BKMK_Test_modules)  
   
--   [Vytvořte atributy testu](#BKMK_Create_test_attributes)  
+- [Vytvořte atributy testu](#BKMK_Create_test_attributes)  
   
-    -   [Atributy testovací metody](#BKMK_Test_method_attributes)  
+  - [Atributy testovací metody](#BKMK_Test_method_attributes)  
   
-    -   [Atributy třídy testu](#BKMK_Test_class_attributes)  
+  - [Atributy třídy testu](#BKMK_Test_class_attributes)  
   
-    -   [Atributy modulu testu](#BKMK_Test_module_attributes)  
+  - [Atributy modulu testu](#BKMK_Test_module_attributes)  
   
-    -   [Předem definované atributy](#BKMK_Pre_defined_attributes)  
+  - [Předem definované atributy](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [Obecné nepodmíněné výrazy](#BKMK_General_Asserts)  
+  - [Obecné nepodmíněné výrazy](#BKMK_General_Asserts)  
   
-        -   [Jsou si rovny](#BKMK_General_Are_Equal)  
+    -   [Jsou si rovny](#BKMK_General_Are_Equal)  
   
-        -   [Nejsou stejné](#BKMK_General_Are_Not_Equal)  
+    -   [Nejsou stejné](#BKMK_General_Are_Not_Equal)  
   
-        -   [Stejné](#BKMK_General_Are_Same)  
+    -   [Stejné](#BKMK_General_Are_Same)  
   
-        -   [Se neshodují](#BKMK_General_Are_Not_Same)  
+    -   [Se neshodují](#BKMK_General_Are_Not_Same)  
   
-        -   [Má hodnotu Null.](#BKMK_General_Is_Null)  
+    -   [Má hodnotu Null.](#BKMK_General_Is_Null)  
   
-        -   [Není rovno hodnotě Null](#BKMK_General_Is_Not_Null)  
+    -   [Není rovno hodnotě Null](#BKMK_General_Is_Not_Null)  
   
-        -   [Má hodnotu True](#BKMK_General_Is_True)  
+    -   [Má hodnotu True](#BKMK_General_Is_True)  
   
-        -   [Má hodnotu False](#BKMK_General_Is_False)  
+    -   [Má hodnotu False](#BKMK_General_Is_False)  
   
-        -   [Selhání](#BKMK_General_Fail)  
+    -   [Selhání](#BKMK_General_Fail)  
   
-    -   [Kontrolních příkazů prostředí Windows Runtime](#BKMK_WinRT_Asserts)  
+  - [Kontrolních příkazů prostředí Windows Runtime](#BKMK_WinRT_Asserts)  
   
-        -   [Jsou si rovny](#BKMK_WinRT_Are_Equal)  
+    -   [Jsou si rovny](#BKMK_WinRT_Are_Equal)  
   
-        -   [Stejné](#BKMK_WinRT_Are_Same)  
+    -   [Stejné](#BKMK_WinRT_Are_Same)  
   
-        -   [Nejsou stejné](#BKMK_WinRT_Are_Not_Equal)  
+    -   [Nejsou stejné](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [Se neshodují](#BKMK_WinRT_Are_Not_Same)  
+    -   [Se neshodují](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [Má hodnotu Null.](#BKMK_WinRT_Is_Null)  
+    -   [Má hodnotu Null.](#BKMK_WinRT_Is_Null)  
   
-        -   [Není rovno hodnotě Null](#BKMK_WinRT_Is_Not_Null)  
+    -   [Není rovno hodnotě Null](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [Výjimka nepodmíněné výrazy](#BKMK_Exception_Asserts)  
+  - [Výjimka nepodmíněné výrazy](#BKMK_Exception_Asserts)  
   
-        -   [Očekávané výjimky](#BKMK_Expect_Exception)  
+    - [Očekávané výjimky](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [Protokolovací nástroj](#BKMK_Logger)  
+    - [Protokolovací nástroj](#BKMK_Logger)  
   
-        -   [Zapsat zprávu](#BKMK_Write_Message)  
+    - [Zapsat zprávu](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

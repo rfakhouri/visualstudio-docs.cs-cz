@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825112"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Propojení případu použití testy  
   
-1.  V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. V [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vytvořit požadavek a základní sadu testů v něm. Další informace o to udělat najdete v tématu [testování aplikace](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Je požadavek, který vytvoříte pracovní položku v [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Může být uživatelský scénář, požadavek nebo případ použití pracovní položky, v závislosti na šabloně procesu, který váš projekt používá s [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Další informace najdete v tématu [sledování práce pomocí Visual Studio Team Services nebo Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Propojte pracovní položky požadavku na jeden nebo více případy použití v modelu.  
+2. Propojte pracovní položky požadavku na jeden nebo více případy použití v modelu.  
   
-     Diagram případu použití, klikněte pravým tlačítkem na případu použití a pak klikněte na **odkaz na pracovní položku**. Další informace najdete v tématu [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).  
+    Diagram případu použití, klikněte pravým tlačítkem na případu použití a pak klikněte na **odkaz na pracovní položku**. Další informace najdete v tématu [propojení prvků modelu a pracovních položek](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Přidejte do testovací sady, testovací případy, které ověřují případy použití.  
+3. Přidejte do testovací sady, testovací případy, které ověřují případy použití.  
   
- Obvykle každé uživatelské scénáře nebo požadavky pracovní položky se propojit několik případů použití ve vašem modelu a každý případ použití se propojit s několika uživatelské scénáře nebo požadavky. Je to proto, že každý uživatelský scénář nebo požadavek zahrnuje sadu úloh, které vývoj několik případů použití. V rané fázi iterace projektu, byste třeba vytvořit základní uživatelský scénář, ve kterém můžete vybrat položky z katalogu a ho doručit zákazník. V pozdější iterace může být sdělení, že uživatel platí při dokončení pořadí a dodavatel obdrží peněz po odešle zboží.  Každý scénář přidá klauzuli neplatná následná případu použití pořadí zboží.  
+   Obvykle každé uživatelské scénáře nebo požadavky pracovní položky se propojit několik případů použití ve vašem modelu a každý případ použití se propojit s několika uživatelské scénáře nebo požadavky. Je to proto, že každý uživatelský scénář nebo požadavek zahrnuje sadu úloh, které vývoj několik případů použití. V rané fázi iterace projektu, byste třeba vytvořit základní uživatelský scénář, ve kterém můžete vybrat položky z katalogu a ho doručit zákazník. V pozdější iterace může být sdělení, že uživatel platí při dokončení pořadí a dodavatel obdrží peněz po odešle zboží.  Každý scénář přidá klauzuli neplatná následná případu použití pořadí zboží.  
   
- Můžete vytvořit samostatné odkazy z požadavky do klauzule neplatná následná napsáním těchto klauzulí v samostatných komentáře na diagramu případu použití. Můžete každý komentář k propojení s pracovní položkou požadavku a propojit komentář v diagramu případu použití.  
+   Můžete vytvořit samostatné odkazy z požadavky do klauzule neplatná následná napsáním těchto klauzulí v samostatných komentáře na diagramu případu použití. Můžete každý komentář k propojení s pracovní položkou požadavku a propojit komentář v diagramu případu použití.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Základní testy na typy požadavků  
  Typy, které je, třídy, rozhraní a výčty, požadavky na modelu popisují koncepty a vztahy z hlediska jak myslíte, že uživatelé a komunikovat o své firmě. Vyloučí typy týká pouze interních návrhu systému.  

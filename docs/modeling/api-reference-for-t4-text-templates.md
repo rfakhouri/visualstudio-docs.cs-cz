@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8af5f4496356b3fa349b514a4158149d6a96d684
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: c5770cc071e8d981b3410db6165b5bf1ed6ef350
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834003"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referenční dokumentace k rozhraní API pro textové šablony T4
 
@@ -23,7 +23,7 @@ Rozhraní API Šablonování Text vám umožňuje vyvolávat a přizpůsobovat t
 ## <a name="namespaces"></a>Jmenné prostory
 
 |Obor názvů|Účel|
-|---------------|-------------|
+|-|-|
 |<xref:Microsoft.VisualStudio.TextTemplating>|Obsahuje třídy pro funkce transformace textu šablony. Modul transformace textové šablony je integrován do sady Visual Studio a převádí soubory textových šablon do vygenerovaných textových výstupních souborů.|
 |<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|Poskytuje text související s modely UML a jazyky specifické pro doménu, jako je přístup k Visual Studio ModelBus zařízení pro transformaci.|
 |<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Poskytuje přístup ke službě šablonování textu v sadě Visual Studio.|

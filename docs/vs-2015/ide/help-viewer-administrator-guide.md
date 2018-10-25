@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871287"
 ---
 # <a name="help-viewer-administrator-guide"></a>Příručka správce Help Vieweru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
   
  Požadavky:  
   
--   Klientské počítače musí mít přístup k Internetu.  
+- Klientské počítače musí mít přístup k Internetu.  
   
--   Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.  
+- Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.  
   
- Upozornění:  
+  Upozornění:  
   
--   Výchozí zdroj pro nápovědu bude stále Online.  
+- Výchozí zdroj pro nápovědu bude stále Online.  
   
-    > [!TIP]
-    >  Výchozí zdroj pro nápovědu můžete změnit úpravou klíče registru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Výchozí zdroj pro nápovědu můžete změnit úpravou klíče registru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
   
--   Klienti se pořád výzva k instalaci základního obsahu nápovědy při prvním spuštění sady Visual Studio. Tuto výzvu můžete zakázat úpravou klíče registru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
+- Klienti se pořád výzva k instalaci základního obsahu nápovědy při prvním spuštění sady Visual Studio. Tuto výzvu můžete zakázat úpravou klíče registru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
 ### <a name="example"></a>Příklad  
  Následující příklad instaluje obsah v angličtině pro sadu Visual Studio ke klientskému počítači.  
@@ -78,47 +78,47 @@ Aplikace Help Viewer umožňuje spravovat místní instalace nápovědy pro sí�
   
  Požadavky:  
   
--   Na počítači, který nainstaluje sadu obsahu musí mít přístup k Internetu.  
+- Na počítači, který nainstaluje sadu obsahu musí mít přístup k Internetu.  
   
--   Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.  
+- Uživatelé musí mít práva správce k aktualizaci, přidání nebo odebrání místního obsahu nápovědy po jeho instalaci.  
   
-    > [!TIP]
-    >  Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartu spravovat obsah v Help Viewer. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartu spravovat obsah v Help Viewer. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
   
- Upozornění:  
+  Upozornění:  
   
--   Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartu spravovat obsah v Help Viewer. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
+- Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartu spravovat obsah v Help Viewer. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
   
--   Výchozí zdroj pro nápovědu bude stále Online.  
+- Výchozí zdroj pro nápovědu bude stále Online.  
   
--   Klienti se pořád výzva k instalaci základního obsahu nápovědy při prvním spuštění sady Visual Studio. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
+- Klienti se pořád výzva k instalaci základního obsahu nápovědy při prvním spuštění sady Visual Studio. Další informace najdete v tématu [správce obsahu nápovědy přepíše](../ide/help-content-manager-overrides.md).  
   
 ### <a name="create-the-content-set"></a>Vytvoření sady obsahu  
  Než budete moct vytvořit základní sadu obsahu, musíte nejprve odinstalovat veškerý místní obsah sady Visual Studio na cílovém počítači.  
   
 ##### <a name="to-uninstall-local-help"></a>Odinstalování místní nápovědy  
   
-1.  V okně Help Viewer zvolte **spravovat obsah** kartu.  
+1. V okně Help Viewer zvolte **spravovat obsah** kartu.  
   
-2.  V části **dostupná dokumentace**, přejděte do sady dokumentů Visual Studio.  
+2. V části **dostupná dokumentace**, přejděte do sady dokumentů Visual Studio.  
   
-3.  Zvolte **odebrat** u každé podpoložky.  
+3. Zvolte **odebrat** u každé podpoložky.  
   
-4.  Zvolte **Start** odinstalace  
+4. Zvolte **Start** odinstalace  
   
-5.  Přejděte do *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 a ověřte, zda složka obsahuje pouze soubor catalogType.xml.  
+5. Přejděte do *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 a ověřte, zda složka obsahuje pouze soubor catalogType.xml.  
   
- Jakmile jste odebrali všechny dříve nainstalované místní nápovědy aplikace Visual Studio obsah, jste připraveni stáhnout základní sadu obsahu.  
+   Jakmile jste odebrali všechny dříve nainstalované místní nápovědy aplikace Visual Studio obsah, jste připraveni stáhnout základní sadu obsahu.  
   
 ##### <a name="to-download-the-content"></a>Ke stažení obsahu  
   
-1.  V okně Help Viewer zvolte **spravovat obsah** kartu.  
+1. V okně Help Viewer zvolte **spravovat obsah** kartu.  
   
-2.  V části **dostupná dokumentace**, přejděte do sad dokumentace, kterou chcete stáhnout a klikněte na tlačítko **přidat**.  
+2. V části **dostupná dokumentace**, přejděte do sad dokumentace, kterou chcete stáhnout a klikněte na tlačítko **přidat**.  
   
-3.  Zvolte **Start**.  
+3. Zvolte **Start**.  
   
- Dále je třeba zabalit obsah balíčku, takže je možné nasadit do klientských počítačů.  
+   Dále je třeba zabalit obsah balíčku, takže je možné nasadit do klientských počítačů.  
   
 ##### <a name="to-package-the-content"></a>Do balíčku obsahu  
   

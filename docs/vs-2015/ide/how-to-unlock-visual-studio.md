@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942878"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odemknout Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Můžete si vyzkoušet Visual Studio zdarma až po dobu 30 dnů. Při přihlašo
   
  Tato zpráva znamená, že vaše předplatné může být stále platná, licenci, kterou token Visual Studio používá k zajištění aktuálnosti vaše předplatné se aktualizují a je prošlá kvůli jednomu z následujících důvodů:  
   
-1.  Nepoužili sady Visual Studio nebo měli bez připojení k Internetu pro určité časové období prodloužit.  
+1. Nepoužili sady Visual Studio nebo měli bez připojení k Internetu pro určité časové období prodloužit.  
   
-2.  Odhlásili jste se od sady Visual Studio.  
+2. Odhlásili jste se od sady Visual Studio.  
   
- Předtím, než půjde zastaralé token licence, zobrazí Visual Studio nejprve varovnou zprávu s výzvou, abyste znovu zadejte svoje přihlašovací údaje.  
+   Předtím, než půjde zastaralé token licence, zobrazí Visual Studio nejprve varovnou zprávu s výzvou, abyste znovu zadejte svoje přihlašovací údaje.  
   
- Pokud není znovu zadat přihlašovací údaje tokenu se začne přejít zastaralé. Pokud k tomu dojde, dialogové okno nastavení účtu zjistíte, kolik dní zbývá před plně vyprší platnost tokenu. Po vypršení platnosti tokenu, je potřeba znovu zadat přihlašovací údaje pro tento účet nebo licenci s jinou metodu výše, než budete pokračovat, pomocí sady Visual Studio.  
+   Pokud není znovu zadat přihlašovací údaje tokenu se začne přejít zastaralé. Pokud k tomu dojde, dialogové okno nastavení účtu zjistíte, kolik dní zbývá před plně vyprší platnost tokenu. Po vypršení platnosti tokenu, je potřeba znovu zadat přihlašovací údaje pro tento účet nebo licenci s jinou metodu výše, než budete pokračovat, pomocí sady Visual Studio.  
   
 > [!IMPORTANT]
 >  Pokud používáte Visual Studio po delší dobu v prostředích s omezením nebo bez připojení k Internetu, by měl použít kód product key k odemknutí sady Visual Studio, aby se předešlo výpadkům.  

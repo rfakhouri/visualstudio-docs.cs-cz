@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5895f71635262e7f55e13f36b921e00b0d62047f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864280"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementujte správně metody serializace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ Nejnovější dokumentaci k sadě Visual Studio 2017, najdete v části [CA2238:
 ## <a name="rule-description"></a>Popis pravidla  
  Metoda je určený obslužnou rutinu události serializace s použitím jedné z následujících atributů událost serializace:  
   
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>  
   
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>  
   
- Obslužné rutiny událostí serializace vyžadovat jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, vrátí `void`a mít `private` viditelnost.  
+  Obslužné rutiny událostí serializace vyžadovat jeden parametr typu <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, vrátí `void`a mít `private` viditelnost.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Chcete-li opravit porušení tohoto pravidla, opravte podpis, návratový typ nebo viditelnost obslužné rutiny události serializace.  

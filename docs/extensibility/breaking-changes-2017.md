@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826489"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -59,13 +59,14 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 > [INSTALLDIR] tady odkazuje na kořenový adresář instalace sady Visual Studio. *VSIXInstaller.exe* se to automaticky vyplní, ale k psaní kódu, vlastní nasazení, přečtěte si prosím [vyhledání sady Visual Studio](locating-visual-studio.md).
 
 * Sestavení, které byly nainstalovány pouze do GAC:
-  * Tato sestavení jsou teď nainstalované v adresáři * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Tyto složky jsou součástí definovaných cest proces sady Visual Studio.
+  * Tato sestavení jsou teď nainstalované v adresáři <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Tyto složky jsou součástí definovaných cest proces sady Visual Studio.
+
 * Sestavení, které byly nainstalovány do cesty – testování a do mezipaměti GAC:
   * Kopie v mezipaměti GAC byl odebrán z instalačního programu.
   * A *.pkgdef* soubor se přidal k určení základní záznam kódu pro sestavení.
 
     Příklad:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
   * Váš kód bude moct vyhledat sestavení sady Visual Studio core.
   * Zvažte použití *.pkgdef* soubor v případě potřeby zadejte cestu k sestavení.
 * Pokud vaše rozšíření běží mimo proces sady Visual Studio:
-  * Vezměte v úvahu hledáte Visual Studio core sestavení v rámci * [INSTALLDIR] \Common7\IDE\*, *[INSTALLDIR] \Common7\IDE\PublicAssemblies* nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*použitím překladač konfigurační soubor nebo sestavení.
+  * Vezměte v úvahu hledáte Visual Studio core sestavení v rámci <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*použitím překladač konfigurační soubor nebo sestavení.
 
 ## <a name="change-reduce-registry-impact"></a>Změn: Registru dopad
 

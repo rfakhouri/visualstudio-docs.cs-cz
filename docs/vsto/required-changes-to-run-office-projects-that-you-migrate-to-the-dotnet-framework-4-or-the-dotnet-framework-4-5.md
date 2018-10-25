@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883474"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Požadované změny pro spouštění projektů Office migrovaných na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud cílové rozhraní projektu pro Office se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později z dřívější verze rozhraní .NET Framework, je třeba provést následující úkoly a ujistěte se, že můžete řešení spustit na vývojovém počítači a v počítačích koncových uživatelů:  
   
--   Odeberte <xref:System.Security.SecurityTransparentAttribute> z projektu, pokud jste upgradovali ze sady Visual Studio 2008.  
+- Odeberte <xref:System.Security.SecurityTransparentAttribute> z projektu, pokud jste upgradovali ze sady Visual Studio 2008.  
   
--   Provést **Vyčistit** příkaz v sadě Visual Studio, abyste mohli spustit nebo ladit projekt ve vývojovém počítači.  
+- Provést **Vyčistit** příkaz v sadě Visual Studio, abyste mohli spustit nebo ladit projekt ve vývojovém počítači.  
   
--   Aktualizace rozhraní .NET Framework pro projekt požadovaných součástí.  
+- Aktualizace rozhraní .NET Framework pro projekt požadovaných součástí.  
   
--   Koncoví uživatelé nutné přeinstalovat také řešení, pokud jste ho předtím nasadili s použitím technologie ClickOnce, než můžete změnit cílovou architekturu.  
+- Koncoví uživatelé nutné přeinstalovat také řešení, pokud jste ho předtím nasadili s použitím technologie ClickOnce, než můžete změnit cílovou architekturu.  
   
- Další informace o těchto úloh najdete v tématu odpovídající oddílech.  
+  Další informace o těchto úloh najdete v tématu odpovídající oddílech.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Odebrat atribut SecurityTransparent z projektů, které upgradujete ze sady Visual Studio 2008  
  Pokud upgradujete projekt sady Office v sadě Visual Studio 2008 a cílovou architekturu projektu následně změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, je nutné odebrat <xref:System.Security.SecurityTransparentAttribute> z projektu. Visual Studio nebude odstraněn tento atribut automaticky. Pokud tento atribut neodstraníte, obdržíte chybovou zprávu při kompilaci projektu.  

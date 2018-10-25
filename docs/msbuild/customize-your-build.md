@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4fa433a3eb2318c36545a285cfd57386c169eb2
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857585"
 ---
 # <a name="customize-your-build"></a>Přizpůsobení sestavení
 
@@ -46,13 +46,13 @@ Například Kdybyste chtěli povolit všechny projekty pro přístup k nového R
 1. Vytvořte nový soubor v kořenové složce úložiště volána *Directory.Build.props*.
 2. Přidejte následující kód XML do souboru.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. Spusťte nástroj MSBuild. Váš projekt importů existující *Microsoft.Common.props* a *cílů Microsoft.Common.targets* najít soubor a naimportujte ho.
 
 ### <a name="search-scope"></a>Obor vyhledávání

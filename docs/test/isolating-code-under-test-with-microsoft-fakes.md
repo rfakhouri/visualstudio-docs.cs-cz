@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 685927147d2b2ce45c450b46eea6070cc77c5aad
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2cba207c3d1ef202082c5a10905273eb07910b28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823812"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí Napodobenin Microsoft
 
@@ -163,7 +163,6 @@ Předpokládejme, že vaše komponenta obsahuje volání `DateTime.Now`:
     {
        return DateTime.Now.Year;
     }
-
 ```
 
 Při testování chcete překrýt `Now` vlastnost, protože skutečná verze neprakticky vrací jinou hodnotu při každém volání.

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb7cb76c471681fe49e5ea6957cd94f9829c64db
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 255121bb7dd504ecd96d05fb6257c3b2edeb96ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816960"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Návod: Načtení dat uložených v mezipaměti ze sešitu na serveru
   Tento návod ukazuje, jak načíst data z datové sady, které se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění pomocí aplikace Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.  
@@ -33,17 +33,17 @@ ms.locfileid: "35676008"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Definování datové sady, který obsahuje data z *AdventureWorksLT* databáze.  
+- Definování datové sady, který obsahuje data z *AdventureWorksLT* databáze.  
   
--   Vytvoření instance datové sady v projektu sešitu aplikace Excel a projektu konzolové aplikace.  
+- Vytvoření instance datové sady v projektu sešitu aplikace Excel a projektu konzolové aplikace.  
   
--   Vytváření <xref:Microsoft.Office.Tools.Excel.ListObject> , která je vázaná k datové sadě v sešitu a naplnění <xref:Microsoft.Office.Tools.Excel.ListObject> s daty při otevření sešitu.  
+- Vytváření <xref:Microsoft.Office.Tools.Excel.ListObject> , která je vázaná k datové sadě v sešitu a naplnění <xref:Microsoft.Office.Tools.Excel.ListObject> s daty při otevření sešitu.  
   
--   Přidání datovou sadu do mezipaměti dat v sešitu.  
+- Přidání datovou sadu do mezipaměti dat v sešitu.  
   
--   Čtení dat z datové sady v mezipaměti do datové sady v konzolové aplikaci, bez spuštění Excelu.  
+- Čtení dat z datové sady v mezipaměti do datové sady v konzolové aplikaci, bez spuštění Excelu.  
   
- I když Tento názorný průvodce předpokládá, že používáte kód ve svém vývojovém počítači, kód jsme vám ukázali v rámci tohoto návodu je možné na server, který nemá nainstalovanou aplikaci Excel.  
+  I když Tento názorný průvodce předpokládá, že používáte kód ve svém vývojovém počítači, kód jsme vám ukázali v rámci tohoto návodu je možné na server, který nemá nainstalovanou aplikaci Excel.  
   
 > [!NOTE]  
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -93,29 +93,29 @@ ms.locfileid: "35676008"
   
 ### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Typové datové sady definovat v projektu knihovny tříd  
   
-1.  V **Průzkumníka řešení**, klikněte na tlačítko **AdventureWorksDataSet** projektu.  
+1. V **Průzkumníka řešení**, klikněte na tlačítko **AdventureWorksDataSet** projektu.  
   
-2.  Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
+2. Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
   
-3.  Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
+3. Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-4.  Klikněte na tlačítko **databáze**a potom klikněte na tlačítko **Další**.  
+4. Klikněte na tlačítko **databáze**a potom klikněte na tlačítko **Další**.  
   
-5.  Pokud máte existující připojení k databázi AdventureWorksLT, vyberte toto připojení a klikněte na tlačítko **Další**.  
+5. Pokud máte existující připojení k databázi AdventureWorksLT, vyberte toto připojení a klikněte na tlačítko **Další**.  
   
-     V opačném případě klikněte na tlačítko **nové připojení**a použít **přidat připojení** dialogové okno pro vytvoření nového připojení. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).  
+    V opačném případě klikněte na tlačítko **nové připojení**a použít **přidat připojení** dialogové okno pro vytvoření nového připojení. Další informace najdete v tématu [přidat nové připojení](../data-tools/add-new-connections.md).  
   
-6.  V **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.  
+6. V **uložit připojovací řetězec do konfiguračního souboru aplikace** klikněte na **Další**.  
   
-7.  V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **produkt (SalesLT)**.  
+7. V **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** a vyberte **produkt (SalesLT)**.  
   
-8.  Klikněte na tlačítko **Dokončit**.  
+8. Klikněte na tlačítko **Dokončit**.  
   
-     *AdventureWorksLTDataSet.xsd* přidá soubor **AdventureWorksDataSet** projektu. Tento soubor definuje následující položky:  
+    *AdventureWorksLTDataSet.xsd* přidá soubor **AdventureWorksDataSet** projektu. Tento soubor definuje následující položky:  
   
-    -   Typové datové sady s názvem `AdventureWorksLTDataSet`. Tato datová sada představuje obsah tabulky produktů v databázi AdventureWorksLT.  
+   - Typové datové sady s názvem `AdventureWorksLTDataSet`. Tato datová sada představuje obsah tabulky produktů v databázi AdventureWorksLT.  
   
-    -   TableAdapter s názvem `ProductTableAdapter`. Této třídy TableAdapter lze číst a zapisovat data `AdventureWorksLTDataSet`. Další informace najdete v tématu [TableAdapter – přehled](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+   - TableAdapter s názvem `ProductTableAdapter`. Této třídy TableAdapter lze číst a zapisovat data `AdventureWorksLTDataSet`. Další informace najdete v tématu [TableAdapter – přehled](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
      Obě tyto objekty použijete později v tomto názorném postupu.  
   
@@ -236,44 +236,44 @@ ms.locfileid: "35676008"
   
 ### <a name="retrieve-data-from-the-cached-dataset"></a>Načtení dat z datové sady v mezipaměti  
   
-1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DataReader** projektu a klikněte na tlačítko **přidat odkaz**.  
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DataReader** projektu a klikněte na tlačítko **přidat odkaz**.  
   
-2.  Na **.NET** kartu, vyberte možnost **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
+2. Na **.NET** kartu, vyberte možnost **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
   
-3.  Klikněte na tlačítko **OK**.  
+3. Klikněte na tlačítko **OK**.  
   
-4.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DataReader** projektu a klikněte na tlačítko **přidat odkaz**.  
+4. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **DataReader** projektu a klikněte na tlačítko **přidat odkaz**.  
   
-5.  Na **projekty** kartu, vyberte možnost **AdventureWorksDataSet**a klikněte na tlačítko **OK**.  
+5. Na **projekty** kartu, vyberte možnost **AdventureWorksDataSet**a klikněte na tlačítko **OK**.  
   
-6.  Otevřít *Program.cs* nebo *Module1.vb* souboru v editoru kódu.  
+6. Otevřít *Program.cs* nebo *Module1.vb* souboru v editoru kódu.  
   
-7.  Přidejte následující **pomocí** (pro C#) nebo **importy** (pro jazyk Visual Basic) příkaz do horní části souboru kódu.  
+7. Přidejte následující **pomocí** (pro C#) nebo **importy** (pro jazyk Visual Basic) příkaz do horní části souboru kódu.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
   
-8.  Přidejte následující kód, který `Main` metody. Tento kód deklaruje následující objekty:  
+8. Přidejte následující kód, který `Main` metody. Tento kód deklaruje následující objekty:  
   
-    -   Instance `AdventureWorksLTDataSet` typ, který je definován v **AdventureWorksDataSet** projektu.  
+   - Instance `AdventureWorksLTDataSet` typ, který je definován v **AdventureWorksDataSet** projektu.  
   
-    -   Cesta k sešitu AdventureWorksReport ve složce sestavení **AdventureWorksReport** projektu.  
+   - Cesta k sešitu AdventureWorksReport ve složce sestavení **AdventureWorksReport** projektu.  
   
-    -   A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objektu, který chcete použít pro přístup k mezipaměti dat v sešitu.  
+   - A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objektu, který chcete použít pro přístup k mezipaměti dat v sešitu.  
   
-        > [!NOTE]  
-        >  Následující kód předpokládá, že sešit je uložen pod *.xlsx* rozšíření. Pokud sešit v projektu má jiné rozšíření, změňte cestu podle potřeby.  
+     > [!NOTE]  
+     >  Následující kód předpokládá, že sešit je uložen pod *.xlsx* rozšíření. Pokud sešit v projektu má jiné rozšíření, změňte cestu podle potřeby.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
   
 9. Přidejte následující kód, který `Main` metoda po kódu přidaném v předchozím kroku. Tento kód provede následující:  
   
-    -   Používá <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> vlastnost <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> pro přístup k datové sady v mezipaměti v sešitu.  
+   - Používá <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> vlastnost <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> pro přístup k datové sady v mezipaměti v sešitu.  
   
-    -   Čte data z datové sady v mezipaměti do místní datové sady.  
+   - Čte data z datové sady v mezipaměti do místní datové sady.  
   
-    -   Zobrazí počet řádků v místní datové sady, potvrďte, že obsahuje data.  
+   - Zobrazí počet řádků v místní datové sady, potvrďte, že obsahuje data.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
      [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]  

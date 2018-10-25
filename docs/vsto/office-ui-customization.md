@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836760"
 ---
 # <a name="office-ui-customization"></a>Přizpůsobení uživatelského rozhraní systému Office
   Můžete přizpůsobit uživatelské rozhraní (UI) aplikace Microsoft Office s použitím nástroje Office developer tools v sadě Visual Studio. Toto téma popisuje funkce uživatelského rozhraní, které můžete přizpůsobit v následujících částech:  
@@ -61,13 +61,13 @@ ms.locfileid: "35676569"
   
  Vývojářské nástroje balíku Office v sadě Visual Studio poskytuje dva různé způsoby přizpůsobení podokna úloh:  
   
--   Přidání podokna akcí do přizpůsobení na úrovni dokumentu. Ve výchozím nastavení zobrazí se na pravé straně aplikace napravo od dokumentu podokno akcí. Na levé straně, horní nebo dolní části dokumentu však lze rovněž zobrazit podokno akcí.  
+- Přidání podokna akcí do přizpůsobení na úrovni dokumentu. Ve výchozím nastavení zobrazí se na pravé straně aplikace napravo od dokumentu podokno akcí. Na levé straně, horní nebo dolní části dokumentu však lze rovněž zobrazit podokno akcí.  
   
--   Můžete přidat vlastního podokna úloh do doplňku VSTO. Uživatelům můžete ukotvit vlastní podokna úloh do jiné straně okna aplikace nebo vlastní podokna úloh, můžete přetáhnout do libovolného umístění v okně.  
+- Můžete přidat vlastního podokna úloh do doplňku VSTO. Uživatelům můžete ukotvit vlastní podokna úloh do jiné straně okna aplikace nebo vlastní podokna úloh, můžete přetáhnout do libovolného umístění v okně.  
   
- Podokna akcí a vlastních podoken úloh nakonfigurovánu hostováním širokou škálu ovládacích prvků pro pomoc s úkoly, jako je například zadávání dat uživatelům. Ve srovnání s skupiny pásu karet, podokna akcí a vlastních podoken úloh poskytují mnohem větší oblasti obsahovat text a ovládací prvky.  
+  Podokna akcí a vlastních podoken úloh nakonfigurovánu hostováním širokou škálu ovládacích prvků pro pomoc s úkoly, jako je například zadávání dat uživatelům. Ve srovnání s skupiny pásu karet, podokna akcí a vlastních podoken úloh poskytují mnohem větší oblasti obsahovat text a ovládací prvky.  
   
- Další informace o podoknech akcí najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md). Další informace o vlastních podoknech úloh najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
+  Další informace o podoknech akcí najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md). Další informace o vlastních podoknech úloh najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Vlastní uživatelské rozhraní pásu karet  
  Můžete přizpůsobit uživatelské rozhraní pásu karet na funkci, která přidáte do aplikace sady Office. Na pásu karet je způsob, jak uspořádat související příkazy (ve formuláři ovládací prvky), aby byly snadněji najít. Můžete vytvořit vlastní karty pásu karet a skupiny můžete uživatelům udělit přístup k funkcím, které poskytujete ve vašem řešení. Většina funkcí, které byly přístupné prostřednictvím nabídek a panelů nástrojů v dřívějších verzích systému Microsoft Office je teď přístupný pomocí pásu karet.  

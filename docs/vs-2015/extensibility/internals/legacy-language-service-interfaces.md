@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837240"
 ---
 # <a name="legacy-language-service-interfaces"></a>Rozhraní služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Pro konkrétní programovací jazyk může být pouze jedna instance služby jaz
   
  Rozhraní služeb jazyka core můžete implementovat v libovolném počtu samostatné třídy. Běžným přístupem je však implementovat následující rozhraní do jedné třídy:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (volitelné)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (volitelné)  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Na všech jazykových služeb musí implementovat rozhraní. Poskytuje informace o vaší služby jazyka, jako je například lokalizovaný název jazyka, přípony názvů souborů, který je přidružený k službě jazyka a jak načíst colorizer.  
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Na všech jazykových služeb musí implementovat rozhraní. Poskytuje informace o vaší služby jazyka, jako je například lokalizovaný název jazyka, přípony názvů souborů, který je přidružený k službě jazyka a jak načíst colorizer.  
   
 ## <a name="additional-language-service-interfaces"></a>Rozhraní služeb další jazyk  
  Jiná rozhraní lze zadat ve vaší službě jazyka. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] požádá o samostatnou instanci tato rozhraní pro každou instanci textové vyrovnávací paměti. Proto se každá z těchto rozhraní by měly implementovat na vlastní objekt. V následující tabulce jsou uvedeny rozhraní, které vyžadují jednu instanci a instanci vyrovnávací paměti textu.  

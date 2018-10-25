@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858885"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Začínáme s programováním doplňků VSTO
   Doplňky VSTO můžete použít k automatizaci aplikace Microsoft Office, rozšíření funkcí aplikace a přizpůsobení uživatelského rozhraní (UI) aplikace. Informace o porovnání doplňků VSTO pro jiné druhy řešení pro Office můžete vytvořit pomocí sady Visual Studio najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -60,34 +60,34 @@ ms.locfileid: "35675880"
 ## <a name="customize-the-user-interface-of-applications"></a>Přizpůsobení uživatelského rozhraní aplikací  
  Existuje několik různých způsobů přizpůsobení uživatelského rozhraní hostitelské aplikace pomocí doplňku VSTO:  
   
--   Excelu a Wordu můžete přidat spravovaných ovládacích prvků do dokumentů. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+- Excelu a Wordu můžete přidat spravovaných ovládacích prvků do dokumentů. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
--   Na pásu karet můžete přizpůsobit, pokud aplikace podporuje. Další informace najdete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
+- Na pásu karet můžete přizpůsobit, pokud aplikace podporuje. Další informace najdete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
   
--   Pokud aplikace podporuje, můžete vytvořit vlastního podokna úloh. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
+- Pokud aplikace podporuje, můžete vytvořit vlastního podokna úloh. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
   
--   Pro aplikaci Outlook můžete vytvořit vlastní formulář regionu. Další informace najdete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
+- Pro aplikaci Outlook můžete vytvořit vlastní formulář regionu. Další informace najdete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
--   Pro všechny aplikace Microsoft Office můžete zobrazit Windows Forms v doplňku VSTO.  
+- Pro všechny aplikace Microsoft Office můžete zobrazit Windows Forms v doplňku VSTO.  
   
- Další informace o tom, jak přizpůsobit aplikace uživatelského rozhraní systému Microsoft Office, naleznete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+  Další informace o tom, jak přizpůsobit aplikace uživatelského rozhraní systému Microsoft Office, naleznete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
   
 ## <a name="next-steps"></a>Další kroky  
  Informace o vytváření doplňků VSTO, najdete v následujících návodech:  
   
--   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Návod: Vytvoření vašeho prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [Návod: Vytvoření vašeho prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
- Tyto kurzy vám představí vývojářské nástroje balíku Office v sadě Visual Studio a programovací model pro doplňky VSTO.  
+  Tyto kurzy vám představí vývojářské nástroje balíku Office v sadě Visual Studio a programovací model pro doplňky VSTO.  
   
- Seznam témat, která vás provede některé běžné úlohy v projektech pro systém Office naleznete v tématu [běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md).  
+  Seznam témat, která vás provede některé běžné úlohy v projektech pro systém Office naleznete v tématu [běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   

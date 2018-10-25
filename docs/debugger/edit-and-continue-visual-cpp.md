@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867699"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C++)
 Můžete upravit a pokračovat v projektech Visual C++. Zobrazit [podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md) informace o omezení operace upravit a pokračovat.
@@ -41,17 +41,17 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
 > [!IMPORTANT]
 > Nastavení požadovaná sestavení a další informace o kompatibilitě funkce najdete v tématu [C++ upravit a pokračovat v sadě Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-1.  Pokud jste v relaci ladění, zastavte ladění (**Shift + F5**).
+1. Pokud jste v relaci ladění, zastavte ladění (**Shift + F5**).
 
 2. Na **nástroje** nabídce zvolte **možnosti**.
   
-3.  V **možnosti** dialogu **ladění > Obecné**.
+3. V **možnosti** dialogu **ladění > Obecné**.
 
-4.  Pokud chcete povolit, vyberte **Povolit Editovat a pokračovat**. Pokud chcete zakázat, zrušte zaškrtnutí políčka.
+4. Pokud chcete povolit, vyberte **Povolit Editovat a pokračovat**. Pokud chcete zakázat, zrušte zaškrtnutí políčka.
   
-5.  V **upravit a pokračovat** skupině, zaškrtněte nebo zrušte zaškrtnutí **Povolit nativní editovat a pokračovat** zaškrtávací políčko.  
+5. V **upravit a pokračovat** skupině, zaškrtněte nebo zrušte zaškrtnutí **Povolit nativní editovat a pokračovat** zaškrtávací políčko.  
   
- Změna tohoto nastavení má vliv na všechny projekty, které pracujete. Není nutné znovu sestavit aplikaci po změně tohoto nastavení. Pokud vytváříte aplikaci z příkazového řádku nebo ze souboru pravidel, ale ladit v prostředí sady Visual Studio, stále můžete upravit a pokračovat Pokud nastavíte **/zi** možnost.  
+   Změna tohoto nastavení má vliv na všechny projekty, které pracujete. Není nutné znovu sestavit aplikaci po změně tohoto nastavení. Pokud vytváříte aplikaci z příkazového řádku nebo ze souboru pravidel, ale ladit v prostředí sady Visual Studio, stále můžete upravit a pokračovat Pokud nastavíte **/zi** možnost.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak explicitní použití změn kódu  
  V jazyce Visual C++ můžete použít kód změny v dva způsoby, jak upravit a pokračovat. Změny kódu lze použít implicitně, když zvolíte příkazu ke spuštění, nebo explicitně, pomocí **použít změny kódu** příkazu.  
@@ -65,11 +65,11 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
   
  Zastavit provádění změn kódu:  
   
--   Na **ladění** nabídce zvolte **zastavit provádění změn kódu**.  
+- Na **ladění** nabídce zvolte **zastavit provádění změn kódu**.  
   
- Tato položka nabídky je viditelná pouze v případě, že se aplikují změny kódu.  
+  Tato položka nabídky je viditelná pouze v případě, že se aplikují změny kódu.  
   
- Pokud zvolíte tuto možnost, žádná ze změn kódu není potvrzena.  
+  Pokud zvolíte tuto možnost, žádná ze změn kódu není potvrzena.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Obnovení bodu provádění  
  Některé změny kódu může způsobit bod provádění přesunout do nového umístění, pokud funkce upravit a pokračovat se vztahuje změny. Upravit a pokračovat umístí bod provádění co nejpřesněji, ale výsledky nemusí být správný ve všech případech.  

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844509"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Návod: Rozšíření typu položky projektu SharePoint
   Můžete použít **Model Připojení obchodních dat** položku projektu pro vytvoření modelu služby připojení dat obchodní (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí tuto položku projektu data v modelu se uživatelům nezobrazí. Musíte také vytvořit externí seznam na Sharepointu a umožňují uživatelům zobrazovat data.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626143"
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
--   Podporované vydání systému Microsoft Windows, SharePoint a Visual Studio.  
+- Podporované vydání systému Microsoft Windows, SharePoint a Visual Studio.  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
+  Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
--   Služba BDC v [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Další informace najdete v tématu [architektura BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- Služba BDC v [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Další informace najdete v tématu [architektura BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   Schéma XML pro modely služby BDC. Další informace najdete v tématu [Infrastruktura modelu služby BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- Schéma XML pro modely služby BDC. Další informace najdete v tématu [Infrastruktura modelu služby BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto návodu, musíte vytvořit dva projekty:  
   
--   Projekt VSIX k vytvoření balíčku VSIX k nasazení rozšíření položky projektu.  
+- Projekt VSIX k vytvoření balíčku VSIX k nasazení rozšíření položky projektu.  
   
--   Projekt knihovny tříd, který implementuje rozšíření položky projektu.  
+- Projekt knihovny tříd, který implementuje rozšíření položky projektu.  
   
- Začněte postup vytvořením projektů.  
+  Začněte postup vytvořením projektů.  
   
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX  
   

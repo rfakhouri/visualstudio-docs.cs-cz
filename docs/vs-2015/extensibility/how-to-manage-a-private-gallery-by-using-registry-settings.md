@@ -16,12 +16,12 @@ ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec96812041ce6d86857dbd53414f5120ccf5a524
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 020754fb1ddb020e120ba11e8aa3ec8d97206603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852294"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Postupy: Správa privátní galerie s použitím nastavení registru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories` Klíč odkazuje na galerii má být povolena nebo zakázána. Galerie Visual Studio a Galerie vzorových příkladů použijte následující úložiště identifikátory GUID:  
   
--   Galerie Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Galerie Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Galerie ukázek: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Galerie ukázek: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- `Disabled` Hodnota je volitelná. Galerie je ve výchozím nastavení povolené.  
+  `Disabled` Hodnota je volitelná. Galerie je ve výchozím nastavení povolené.  
   
- `Priority` Hodnota určuje pořadí, ve kterém jsou uvedeny v galeriích v dialogovém okně Možnosti. Galerie Visual Studio má prioritu 10 a Galerie vzorových příkladů má prioritu 20. Spustit privátní galerie s prioritou 100. Pokud několik galeriích mají stejnou hodnotu priority, pořadí, ve kterém jsou uvedeny je dáno hodnoty jejich lokalizované `DisplayName` atributy.  
+  `Priority` Hodnota určuje pořadí, ve kterém jsou uvedeny v galeriích v dialogovém okně Možnosti. Galerie Visual Studio má prioritu 10 a Galerie vzorových příkladů má prioritu 20. Spustit privátní galerie s prioritou 100. Pokud několik galeriích mají stejnou hodnotu priority, pořadí, ve kterém jsou uvedeny je dáno hodnoty jejich lokalizované `DisplayName` atributy.  
   
- `Protocol` Hodnota je povinná pro galerie na základě Atom nebo na Sharepointu.  
+  `Protocol` Hodnota je povinná pro galerie na základě Atom nebo na Sharepointu.  
   
- Buď `DisplayName`, nebo obojí `DisplayNameResourceID` a `DisplayNamePackageGuid`, musí být zadán. Pokud jsou všechny zadané, pak bude `DisplayNameResourceID` a `DisplayNamePackageGuid` pár se používá.  
+  Buď `DisplayName`, nebo obojí `DisplayNameResourceID` a `DisplayNamePackageGuid`, musí být zadán. Pokud jsou všechny zadané, pak bude `DisplayNameResourceID` a `DisplayNamePackageGuid` pár se používá.  
   
 ## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Zakázání Galerie sady Visual Studio pomocí souboru .pkgdef  
  Můžete zakázat Galerie v souboru .pkgdef. Zakáže následující položku Galerie sady Visual Studio:  

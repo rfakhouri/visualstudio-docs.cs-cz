@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813619"
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,11 +132,11 @@ Zobrazení grafu poskytuje grafické znázornění schématu globální uzlů a 
   
  Zvětšení lze řídit následujícími způsoby:  
   
--   Podržením klávesy CTRL a otáčení kolečka myši, když myš je přesunutá na plochu grafu.  
+- Podržením klávesy CTRL a otáčení kolečka myši, když myš je přesunutá na plochu grafu.  
   
--   Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.  
+- Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.  
   
- Posuvník přiblížení je neprůhledný, když vyberte ho, podržte ukazatel myši nad, nebo pomocí kombinace kláves CTRL kolečko myši pro přiblížení; v jinou dobu je transparentní.  
+  Posuvník přiblížení je neprůhledný, když vyberte ho, podržte ukazatel myši nad, nebo pomocí kombinace kláves CTRL kolečko myši pro přiblížení; v jinou dobu je transparentní.  
   
 ## <a name="xml-editor-integration"></a>Integrace editoru XML  
  Můžete přepínat vpřed a zpět mezi zobrazení grafu a Editor souborů XML tak, že kliknete na uzel a pomocí kontextové nabídky zobrazení kódu.  

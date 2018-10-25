@@ -9,66 +9,66 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822784"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generovat pole, vlastnost nebo místní proměnné v sadě Visual Studio
 
-Generování kódu platí pro:
+Tato generace kód platí pro:
 
 - C#
 
 - Visual Basic
 
-**Co:** umožňuje okamžitě generování kódu pro dříve nedeklarované pole, vlastnost nebo místní.
+**Co:** umožňuje okamžitě generování kódu pro dříve nedeklarovaný pole, vlastnost nebo místní.
 
-**Kdy:** zavést nové pole, vlastnost nebo místní během psaní a chcete správně, automaticky deklarovat.
+**Kdy:** představují nové pole, vlastnosti nebo místní při psaní a chcete správně, automaticky deklarovat.
 
-**Důvod:** pole, vlastnost nebo místní může deklarovat před použitím, ale tato funkce bude generovat deklaraci a zadejte automaticky.
+**Důvod, proč:** můžete deklarovat pole, vlastnost nebo místní než ho začnete využívat, ale tato funkce bude generovat deklarace a zadejte automaticky.
 
 ## <a name="how-to"></a>Postupy
 
-1. Umístěte kurzor na řádek níž se nachází červenou vlnovkou. Červenou vlnovkou určuje pole, místní nebo vlastnost, která ještě neexistuje.
+1. Umístěte kurzor na řádek níž se nachází červená vlnovka. Červená vlnovka určuje pole, místní nebo vlastnost, která ještě neexistuje.
 
    - C#:
 
-    ![Zvýrazněný kód C#](media/field-highlight-cs.png)
+       ![Zvýrazněný kód jazyka C#](media/field-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Zvýrazněný kód jazyka Visual Basic](media/field-highlight-vb.png)
+       ![Zvýrazněný kód jazyka Visual Basic](media/field-highlight-vb.png)
 
-1. Dále proveďte jednu z následujících akcí:
+2. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
-   - **Myš**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
-     - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+   - **Myši**
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
 
-    ![Vytvoření náhledu pole nebo vlastnost nebo místní](media/field-preview-cs.png)
+      ![Generování pole/vlastnosti/místní funkce ve verzi preview](media/field-preview-cs.png)
 
-1. Vyberte jednu z možností generování z rozevírací nabídky.
+3. Vyberte jednu z generování možností z rozevírací nabídky.
 
    > [!TIP]
-   > Použití **zobrazení náhledu změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , budou provedeny před provedením váš výběr.
+   > Použití **náhled změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , který bude proveden před zvolení požadované možnosti.
 
-   Pole, vlastnost nebo místní je vytvořen s typem odvodit z jeho použití.
+   Pole, vlastnost nebo místní se vytvoří s typem odvodit z jeho využití.
 
    - C#:
 
-      ![Generovat výsledek metody C#](media/field-result-cs.png)
+       ![Generovat výsledek metody jazyka C#](media/field-result-cs.png)
 
    - Visual Basic:
 
-      ![Generovat výsledek metody jazyka Visual Basic](media/field-result-vb.png)
+       ![Generovat výsledek metody VB](media/field-result-vb.png)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Generování kódu](../code-generation-in-visual-studio.md)
 - [Náhled změn](../../ide/preview-changes.md)

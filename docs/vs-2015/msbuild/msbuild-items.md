@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851930"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,13 +100,13 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 ##  <a name="BKMK_Wildcards"></a> Použití zástupných znaků k určení položek  
  Můžete použít **, \*, a? zástupné znaky jako vstupy pro sestavení namísto vypisování každého souboru zvlášť zadat skupiny souborů.  
   
--   Na? zástupný znak odpovídá jednomu znaku.  
+- Na? zástupný znak odpovídá jednomu znaku.  
   
--   * Zástupný znak odpovídá nula nebo více znaků.  
+- * Zástupný znak odpovídá nula nebo více znaků.  
   
--   ** Sekvence znaků zástupný znak odpovídá část cesty.  
+- ** Sekvence znaků zástupný znak odpovídá část cesty.  
   
- Například můžete zadat všechny soubory .cs do adresáře, který obsahuje soubor projektu s použitím následující element v souboru projektu.  
+  Například můžete zadat všechny soubory .cs do adresáře, který obsahuje soubor projektu s použitím následující element v souboru projektu.  
   
 ```  
 <CSFile Include="*.cs"/>  

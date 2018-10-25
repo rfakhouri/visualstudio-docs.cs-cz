@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856168"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
@@ -63,11 +63,11 @@ Potom spusťte zaváděcího nástroje sloužící k instalaci instalačního pr
 
 1. Z vaší **stáhne** složky, dvakrát klikněte na panel zaváděcí nástroj, který odpovídá nebo se podobá následující soubory:
 
-  * **vs_enterprise.exe** pro Visual Studio Enterprise
-  * **vs_professional.exe** for Visual Studio Professional
-  * **vs_community.exe** pro Visual Studio Community  <br><br>
+   * **vs_enterprise.exe** pro Visual Studio Enterprise
+   * **vs_professional.exe** for Visual Studio Professional
+   * **vs_community.exe** pro Visual Studio Community  <br><br>
 
-  Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
+   Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
 
 2. Požádáme vás potvrďte Microsoft [licenční podmínky](https://visualstudio.microsoft.com/license-terms/) a Microsoft [prohlášení o zásadách](https://privacy.microsoft.com/privacystatement). Klikněte na tlačítko **pokračovat**.
 
@@ -79,7 +79,7 @@ Po dokončení instalace instalační program vám pomůže ho svou instalaci p�
 
 1. Najít úlohu, kterou chcete v **instalaci sady Visual Studio** obrazovky.
 
- ![Vyberte úlohu instalačním programu sady Visual Studio 2017](../install/media/install-visual-studio-community.png)
+   ![Vyberte úlohu instalačním programu sady Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
      Například zvolte úlohu "Vývoj desktopových aplikací .NET". Obsahuje výchozí základní editor, který obsahuje základní podporu pro více než 20 jazycích, schopnost otevírat a upravovat kód z libovolné složky bez nutnosti vytvářet projekt, editaci kódu a integrované správy zdrojového kódu.
 
@@ -130,15 +130,17 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
 
 ## <a name="step-8---start-developing"></a>Krok 8: začít s vývojem
 
-1. Po dokončení instalace sady Visual Studio, klikněte na tlačítko **spuštění** tlačítko [začít s vývojem pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md).
+1. Po dokončení instalace sady Visual Studio, klikněte na tlačítko **spuštění** tlačítko, abyste mohli začít vyvíjet pomocí sady Visual Studio.
 
 2. Klikněte na tlačítko **souboru**a potom klikněte na tlačítko **nový projekt**.
 
-3. Vyberte typ projektu. <br><br>
-   Například [sestavení aplikace v jazyce C++](../ide/getting-started-with-cpp-in-visual-studio.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C++** a pak vyberte typ projektu jazyka C++, který má být sestaveno. <br><br>
-   K [sestavení aplikace s C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C#** a pak vyberte typ projektu jazyka C#, který má být sestaveno.
+3. Vyberte typ projektu.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+   Například [sestavení aplikace v jazyce C++](../ide/getting-started-with-cpp-in-visual-studio.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C++** a pak vyberte typ projektu jazyka C++, který má být sestaveno.
+
+   K [sestavení C# aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C#** a pak vyberte C# typ, který chcete sestavit projekt.
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Viz také:
 

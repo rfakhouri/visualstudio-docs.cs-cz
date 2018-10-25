@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853179"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Vzájemná izolace částí aplikace pomocí zástupných procedury za účelem testování částí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  Vložení rozhraní používá následující pravidlo:  
   
--   Kód jakékoli součásti aplikace by nikdy neměl explicitně odkazovat na třídu v jiné součásti, deklarace nebo v `new` příkazu. Místo toho by měly být proměnné a parametry deklarovány pomocí rozhraní. Instance součástí by měly by vytvořeny pouze kontejnerem součásti.  
+- Kód jakékoli součásti aplikace by nikdy neměl explicitně odkazovat na třídu v jiné součásti, deklarace nebo v `new` příkazu. Místo toho by měly být proměnné a parametry deklarovány pomocí rozhraní. Instance součástí by měly by vytvořeny pouze kontejnerem součásti.  
   
-     „Součást“ v tomto případě představuje třídu nebo skupinu tříd, které společně vyvíjíte a aktualizujete. Součást obvykle představuje kód v jednom projektu sady Visual Studio. Není příliš důležité oddělit třídy v rámci jedné součásti, protože jsou aktualizovány ve stejnou dobu.  
+   „Součást“ v tomto případě představuje třídu nebo skupinu tříd, které společně vyvíjíte a aktualizujete. Součást obvykle představuje kód v jednom projektu sady Visual Studio. Není příliš důležité oddělit třídy v rámci jedné součásti, protože jsou aktualizovány ve stejnou dobu.  
   
-     Rovněž není až tak důležité oddělit součásti od tříd s poměrně stabilní platformou, jako je například System.dll. Vytvoření rozhraní pro všechny tyto třídy by zbytečně zatěžovalo váš kód.  
+   Rovněž není až tak důležité oddělit součásti od tříd s poměrně stabilní platformou, jako je například System.dll. Vytvoření rozhraní pro všechny tyto třídy by zbytečně zatěžovalo váš kód.  
   
- Kód StockAnalyzer lze proto zlepšit oddělením od součásti StockFeed pomocí rozhraní, jako je například toto:  
+  Kód StockAnalyzer lze proto zlepšit oddělením od součásti StockFeed pomocí rozhraní, jako je například toto:  
   
 ```csharp  
 public interface IStockFeed  

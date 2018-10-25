@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3525cb3f983495cc11403c1fcb419de43c5059
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 59ec7e9df4088c21820fa5fec319ab3e4ac10f78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853225"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > návrháře aktivit
 
@@ -38,7 +38,7 @@ ms.locfileid: "47857838"
 Následující tabulka ukazuje <xref:System.Activities.Statements.ExistsInCollection%601> vlastnosti a popisuje, jak se používají v Návrháři:
 
 |Název vlastnosti|Požadováno|Použití|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.ExistsInCollection%601> aktivity. Výchozí hodnota je ExistsInCollection < Int32\>. I když <xref:System.Activities.Activity.DisplayName%2A> hodnota není bezpodmínečně nutné, je osvědčeným postupem je použití jednoho.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Hodnota TRUE|Položky v kolekci\<T >. Tato položka je typu *T*, která je typu *TypeArgument*. Chcete-li určit položku, zadejte výraz jazyka Visual Basic v mřížce vlastností.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Hodnota TRUE|Kolekce, ve které chcete zkontrolovat, jestli položka existuje. Tato kolekce je typu **rozhraní ICollection < TypeArgument\>.** Chcete-li určit kolekci, zadejte výraz jazyka Visual Basic v mřížce vlastností.|

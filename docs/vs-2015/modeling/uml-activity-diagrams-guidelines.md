@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: de4ea9890f6a39fa263129f3a0df9559ae9ab479
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81fcc0c4d747a59f287bc12e7413c5ccab204f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874446"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramy činnosti UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
  Diagram činnosti můžete použít k mnoha účelům:  
   
--   K popisu obchodních procesů nebo toku práce mezi uživateli a systému. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- K popisu obchodních procesů nebo toku práce mezi uživateli a systému. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
--   K popisu kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+- K popisu kroky v případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   K popisu metody, funkce nebo operace v softwaru. Další informace najdete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
+- K popisu metody, funkce nebo operace v softwaru. Další informace najdete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
- Náčrt diagramu aktivit vám může pomoct vylepšit proces. Pokud bude velmi složité ukáže jako diagram existujícímu procesu, můžete zvážit, jak může zjednodušit proces.  
+  Náčrt diagramu aktivit vám může pomoct vylepšit proces. Pokud bude velmi složité ukáže jako diagram existujícímu procesu, můžete zvážit, jak může zjednodušit proces.  
   
- Referenční informace o prvcích v diagramech aktivit najdete v tématu [diagramy činnosti UML: referenční](../modeling/uml-activity-diagrams-reference.md).  
+  Referenční informace o prvcích v diagramech aktivit najdete v tématu [diagramy činnosti UML: referenční](../modeling/uml-activity-diagrams-reference.md).  
   
 ##  <a name="Relationships"></a> Vztah k jiným diagramům  
  Pokud si nakreslíte diagramu činnosti popisující obchodních procesů nebo způsobem, ve kterém uživatelé vašeho systému, lze nakreslit diagram případu použití a různých zobrazení stejné informace. V diagramu případu použití nakreslete akcí, které případy použití. Poskytněte stejné názvy jako odpovídající akce případy použití. Přináší výhody zobrazení případu použití, můžete:  
   
--   Zobrazit jeden diagram jak větší akce/svědectví se skládají z menších pomocí vztahu zahrnuje.  
+- Zobrazit jeden diagram jak větší akce/svědectví se skládají z menších pomocí vztahu zahrnuje.  
   
--   Každý případ akce/použití připojení explicitně na uživatele nebo externí systémy, které jsou zahrnuté v jeho spuštění.  
+- Každý případ akce/použití připojení explicitně na uživatele nebo externí systémy, které jsou zahrnuté v jeho spuštění.  
   
--   Nakreslete ohraničení kolem případy akce/použití nepodporuje systém nebo každou hlavní součást.  
+- Nakreslete ohraničení kolem případy akce/použití nepodporuje systém nebo každou hlavní součást.  
   
- Můžete také nakreslit diagram aktivity k popisu podrobný návrh softwaru operace.  
+  Můžete také nakreslit diagram aktivity k popisu podrobný návrh softwaru operace.  
   
- V diagramu činnosti můžete zobrazit tok dat předávaných mezi akcemi. Naleznete v části [popisující toku dat](#DataFlows). Ale diagramu činnosti nepopisuje struktury data. K tomuto účelu můžete nakreslit diagram tříd UML. Informace naleznete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
+  V diagramu činnosti můžete zobrazit tok dat předávaných mezi akcemi. Naleznete v části [popisující toku dat](#DataFlows). Ale diagramu činnosti nepopisuje struktury data. K tomuto účelu můžete nakreslit diagram tříd UML. Informace naleznete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
   
 ##  <a name="BasicSteps"></a> Základní postup pro vytvoření diagramů aktivit  
  Podrobné pokyny k vytvoření všech diagramů modelování jsou popsány v [modelů a diagramů UML upravit](../modeling/edit-uml-models-and-diagrams.md).  
@@ -112,18 +112,18 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
   
  Použití diagramů aktivit **akce** a **konektory** k popisu vašeho systému nebo aplikace jako řadu objektů akce s ovládacím prvkem postupně toku z jedné akce na další.  
   
--   Vytvoření **akce** (1) pro každou hlavní úkol, který se provádí pomocí uživatele, systém nebo obojí ve spolupráci.  
+- Vytvoření **akce** (1) pro každou hlavní úkol, který se provádí pomocí uživatele, systém nebo obojí ve spolupráci.  
   
-    > [!NOTE]
-    >  Pokuste Popsat algoritmus s několika akce nebo proces. Můžete použít **volání akce chování** definovat všechny akce podrobněji v samostatném diagramu, jak je popsáno v [popisující dílčí aktivity se volání akce chování](#Subactivities).  
+  > [!NOTE]
+  >  Pokuste Popsat algoritmus s několika akce nebo proces. Můžete použít **volání akce chování** definovat všechny akce podrobněji v samostatném diagramu, jak je popsáno v [popisující dílčí aktivity se volání akce chování](#Subactivities).  
   
--   Ujistěte se, že název každé akce jasně Určuje, co obvykle dosahuje.  
+- Ujistěte se, že název každé akce jasně Určuje, co obvykle dosahuje.  
   
--   Odkaz akce v sekvenci s **konektory** (2).  
+- Odkaz akce v sekvenci s **konektory** (2).  
   
--   Každá akce končí před začátkem další akce v toku řízení. Pokud budete chtít obsahují popis akcí, které se překrývají, použijte **Forku uzel** jak je popsáno v části [souběžných toků](#Concurrent).  
+- Každá akce končí před začátkem další akce v toku řízení. Pokud budete chtít obsahují popis akcí, které se překrývají, použijte **Forku uzel** jak je popsáno v části [souběžných toků](#Concurrent).  
   
- I když diagram popisuje posloupnost akcí, nepopisuje jak akce, které provádějí, nebo jak řízení je předáno z jednoho akce na další. Pokud pomocí diagramu představují obchodní proces, ovládací prvek mohla být předána, třeba když jeden uživatel odešle e-mailovou zprávu na jiný. Pokud používáte diagramu pro reprezentaci návrh softwaru, ovládací prvek mohla být předána podle normálního toku provádění z jeden příkaz na další.  
+  I když diagram popisuje posloupnost akcí, nepopisuje jak akce, které provádějí, nebo jak řízení je předáno z jednoho akce na další. Pokud pomocí diagramu představují obchodní proces, ovládací prvek mohla být předána, třeba když jeden uživatel odešle e-mailovou zprávu na jiný. Pokud používáte diagramu pro reprezentaci návrh softwaru, ovládací prvek mohla být předána podle normálního toku provádění z jeden příkaz na další.  
   
 ### <a name="describing-decisions-and-loops"></a>Popis rozhodnutí a smyčky  
   
@@ -171,11 +171,11 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 ### <a name="swimlanes"></a>Plaveckých drah  
  Někdy je vhodné uspořádat akce aktivity do plochy na různé objekty nebo organizační role, které provádějí akce. Tyto oblasti jsou obvykle uspořádány do sloupců a jsou volány *plaveckých drah*.  
   
--   Použít čáry nebo obdélníky z **jednoduché obrazce** část sady nástrojů pro kreslení plaveckých drah nebo v jiných oblastech.  
+- Použít čáry nebo obdélníky z **jednoduché obrazce** část sady nástrojů pro kreslení plaveckých drah nebo v jiných oblastech.  
   
--   Chcete-li označit každý plavecké dráhy, vytvořte komentář a nastavte jeho **Transparent** vlastnost **True**.  
+- Chcete-li označit každý plavecké dráhy, vytvořte komentář a nastavte jeho **Transparent** vlastnost **True**.  
   
- Jednoduché obrazce není součástí modelu UML a nezobrazují v Průzkumníku modelů UML.  
+  Jednoduché obrazce není součástí modelu UML a nezobrazují v Průzkumníku modelů UML.  
   
 ##  <a name="DataFlows"></a> Popis toku dat  
  Popíšete data vstupující do a z aktivity v jednom ze dvou způsobů:  
@@ -277,16 +277,16 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Popis toku dat do a z dílčích aktivity  
  Popíšete dat odesílaných do a z dílčích aktivit, stejně jako použití parametrů v softwaru.  
   
--   Vytvoření vstupní a výstupní spojky (1) na chování jako volá akci pro jednotlivá data, která prochází do nebo z něj akce. Název každé z nich odpovídajícím způsobem.  
+- Vytvoření vstupní a výstupní spojky (1) na chování jako volá akci pro jednotlivá data, která prochází do nebo z něj akce. Název každé z nich odpovídajícím způsobem.  
   
--   V diagramu dílčí činnosti, vytvořte **uzel parametru aktivity** (2) pro každý vstupní a výstupní kód pin na volání akce. Dejte každého uzlu se stejným názvem jako jeho odpovídajícího špendlíku.  
+- V diagramu dílčí činnosti, vytvořte **uzel parametru aktivity** (2) pro každý vstupní a výstupní kód pin na volání akce. Dejte každého uzlu se stejným názvem jako jeho odpovídajícího špendlíku.  
   
-    > [!NOTE]
-    >  Některý uzel parametr aktivity se podobá uzel objektu. Jaký typ uzlu, který chcete zkontrolovat, klikněte pravým tlačítkem na uzel a potom klikněte na **vlastnosti**. Typ uzlu je zobrazený v záhlaví okna Vlastnosti.  
+  > [!NOTE]
+  >  Některý uzel parametr aktivity se podobá uzel objektu. Jaký typ uzlu, který chcete zkontrolovat, klikněte pravým tlačítkem na uzel a potom klikněte na **vlastnosti**. Typ uzlu je zobrazený v záhlaví okna Vlastnosti.  
   
--   V diagramu činnosti dílčí nakreslete konektory, které znázorňuje tok objektů do nebo ven z každého uzlu parametru aktivity.  
+- V diagramu činnosti dílčí nakreslete konektory, které znázorňuje tok objektů do nebo ven z každého uzlu parametru aktivity.  
   
- ![Vážou na mapě chování volání na parametry aktivity](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
+  ![Vážou na mapě chování volání na parametry aktivity](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
 ###  <a name="Postcondition"></a> Definování vstupních a předpoklady  
  Můžete použít **místní vstupních** a **místní předpoklady** vlastnosti k určení podrobně výsledku akce. Tyto vlastnosti popisují vliv akce bez popisující, jak dosáhnout efekt.  
@@ -389,45 +389,45 @@ V sadě Visual Studio můžete nakreslit diagram aktivity popisující obchodní
 ### <a name="selection-and-transformation"></a>Výběr a transformace  
  Můžete určit, že jsou transformovány objekty v tok, který objekt, vybrali, nebo obojí. Tok, který objekt je tok do nebo z kódu pin nebo uzel objektu.  
   
--   Transformace popisuje, jak jsou objekty zadávání tok převést na jiného typu.  
+- Transformace popisuje, jak jsou objekty zadávání tok převést na jiného typu.  
   
--   Výběr popisuje, jak pouze některé objekty zadávání toku se přenáší přijímající akce.  
+- Výběr popisuje, jak pouze některé objekty zadávání toku se přenáší přijímající akce.  
   
- Příklad ukazuje transformace. První akcí v diagramu 1 vytváří PSČ nebo PSČ na výstupní spojky. To je připojen k vstupní kód pin na druhou akci. Ale druhou akci očekává, že adresu plně zadaný. Převod z jednoho typu na jiný je zadán v druhou aktivitu vyhledávání adresu. To se odkazuje z vlastnosti transformace toku objektu. Aktivita vyhledávání adresa obsahuje jeden uzel parametr aktivity pro příchozí poštovní směrovací číslo místa a další uzel parametr aktivity pro odchozí úplnou adresu.  
+  Příklad ukazuje transformace. První akcí v diagramu 1 vytváří PSČ nebo PSČ na výstupní spojky. To je připojen k vstupní kód pin na druhou akci. Ale druhou akci očekává, že adresu plně zadaný. Převod z jednoho typu na jiný je zadán v druhou aktivitu vyhledávání adresu. To se odkazuje z vlastnosti transformace toku objektu. Aktivita vyhledávání adresa obsahuje jeden uzel parametr aktivity pro příchozí poštovní směrovací číslo místa a další uzel parametr aktivity pro odchozí úplnou adresu.  
   
- ![Objekt transformace do jiného diagramu definované](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
+  ![Objekt transformace do jiného diagramu definované](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")  
   
- Transformace nebo výběr můžete zadat dvěma způsoby:  
+  Transformace nebo výběr můžete zadat dvěma způsoby:  
   
--   Připojte komentář k vstupní nebo výstupní kód pin.  
+- Připojte komentář k vstupní nebo výstupní kód pin.  
   
-    -   K rozlišení tohoto popisu od obecné komentáře můžete začít komentář <\<**transformace**>> nebo <\<**výběr**>>.  
+  -   K rozlišení tohoto popisu od obecné komentáře můžete začít komentář <\<**transformace**>> nebo <\<**výběr**>>.  
   
--   Zadejte transformace nebo výběr podrobně v diagramu samostatné činnosti.  
+- Zadejte transformace nebo výběr podrobně v diagramu samostatné činnosti.  
   
-    -   Pokud použijete tuto metodu, připojte komentář také, aby vymazat pro čtenáře definovala transformace.  
+  -   Pokud použijete tuto metodu, připojte komentář také, aby vymazat pro čtenáře definovala transformace.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Chcete-li určit transformace nebo výběr v diagramu samostatné činnosti  
   
-1.  Vytvořte nový Diagram aktivity, ve které chcete popisovat tok transformace nebo výběru.  
+1. Vytvořte nový Diagram aktivity, ve které chcete popisovat tok transformace nebo výběru.  
   
-    -   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, přejděte na **přidat**, klikněte na tlačítko **nová položka**a potom klikněte na tlačítko **Diagram činnosti**. Poskytnout vhodný název pro tok transformace nebo výběr diagramu. Klikněte na tlačítko **přidat**.  
+   -   V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt, přejděte na **přidat**, klikněte na tlačítko **nová položka**a potom klikněte na tlačítko **Diagram činnosti**. Poskytnout vhodný název pro tok transformace nebo výběr diagramu. Klikněte na tlačítko **přidat**.  
   
-2.  V novém diagramu:  
+2. V novém diagramu:  
   
-    1.  Vytvořte dva uzly parametru činností, jeden pro vstupního toku a jeden pro výstup.  
+   1.  Vytvořte dva uzly parametru činností, jeden pro vstupního toku a jeden pro výstup.  
   
-    2.  Vytvoření akcí, které jsou propojeny s toky objektů. To ukazuje, jak transformace nebo výběr funguje.  
+   2.  Vytvoření akcí, které jsou propojeny s toky objektů. To ukazuje, jak transformace nebo výběr funguje.  
   
-3.  V jakékoli diagram, ve které chcete použít transformace nebo výběr:  
+3. V jakékoli diagram, ve které chcete použít transformace nebo výběr:  
   
-    1.  Vytvořte tok, který objekt, to znamená, že konektor do nebo z vstupní nebo výstupní spojky, uzel objektu nebo uzlu parametru aktivity.  
+   1.  Vytvořte tok, který objekt, to znamená, že konektor do nebo z vstupní nebo výstupní spojky, uzel objektu nebo uzlu parametru aktivity.  
   
-    2.  Klikněte pravým tlačítkem na objekt tok a pak klikněte na tlačítko **vlastnosti**.  
+   2.  Klikněte pravým tlačítkem na objekt tok a pak klikněte na tlačítko **vlastnosti**.  
   
-    3.  V **transformace** nebo **výběr** vlastnosti, vyberte diagram, ve kterém jste zadali tok transformace nebo výběru.  
+   3.  V **transformace** nebo **výběr** vlastnosti, vyberte diagram, ve kterém jste zadali tok transformace nebo výběru.  
   
- Můžete také definovat výběru pro objekt uzlu a na jednotlivých vstupní a výstupní spojky. Definujte výběr aktivitu, stejně jako v předchozím postupu a poté nastavte **výběr** vlastnost uzel objektu nebo vstupní nebo výstupní kód pin.  
+   Můžete také definovat výběru pro objekt uzlu a na jednotlivých vstupní a výstupní spojky. Definujte výběr aktivitu, stejně jako v předchozím postupu a poté nastavte **výběr** vlastnost uzel objektu nebo vstupní nebo výstupní kód pin.  
   
 ## <a name="see-also"></a>Viz také  
  [Úpravy modelů a diagramů UML](../modeling/edit-uml-models-and-diagrams.md)   

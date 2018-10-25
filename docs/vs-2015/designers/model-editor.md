@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844082"
 ---
 # <a name="model-editor"></a>Editor modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Transformace objektu nastavením jeho vlastností  
   
-1.  V **vyberte** režimu, vyberte objekt, který chcete transformovat. Překrytí wireframe udává, že objekt je vybrán.  
+1. V **vyberte** režimu, vyberte objekt, který chcete transformovat. Překrytí wireframe udává, že objekt je vybrán.  
   
-2.  V **vlastnosti** okno, zadejte hodnoty **otočení**, **škálování**, a **překlad** vlastnosti.  
+2. V **vlastnosti** okno, zadejte hodnoty **otočení**, **škálování**, a **překlad** vlastnosti.  
   
-    > [!IMPORTANT]
-    >  Pro **otočení** vlastnost, zadejte úhel otočení kolem každé ze tří OS. Otáčení probíhá postupně. Ujistěte se tedy, že je otáčení správně naplánováno nejprve podle osy x, poté y a poté z.  
+   > [!IMPORTANT]
+   >  Pro **otočení** vlastnost, zadejte úhel otočení kolem každé ze tří OS. Otáčení probíhá postupně. Ujistěte se tedy, že je otáčení správně naplánováno nejprve podle osy x, poté y a poté z.  
   
- Použitím nástrojů modelování můžete vytvářet transformace rychle, ale nikoli přesně. Nastavením vlastností objektu můžete určit transformace přesně, ale nikoli rychle. Doporučujeme použít nástroje modelování tak, abyste se dostali „dostatečně blízko“ k požadovaným transformacím, a poté doladit hodnoty vlastností.  
+   Použitím nástrojů modelování můžete vytvářet transformace rychle, ale nikoli přesně. Nastavením vlastností objektu můžete určit transformace přesně, ale nikoli rychle. Doporučujeme použít nástroje modelování tak, abyste se dostali „dostatečně blízko“ k požadovaným transformacím, a poté doladit hodnoty vlastností.  
   
- Pokud nechcete použít manipulátory, můžete povolit režim volného tvaru. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **manipulace ve volném tvaru** chcete povolit (nebo zakázat) režim volného tvaru. V režimu volného tvaru můžete začít manipulaci v libovolném bodě plochy návrhu namísto bodu manipulátoru. V režimu volného tvaru můžete omezit změny některých os zamčením těch, které nechcete změnit. Na **režim editoru modelů** nástrojů, zvolte libovolnou kombinaci **zámek X**, **zámek Y**, a **zámek Z** tlačítka.  
+   Pokud nechcete použít manipulátory, můžete povolit režim volného tvaru. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **manipulace ve volném tvaru** chcete povolit (nebo zakázat) režim volného tvaru. V režimu volného tvaru můžete začít manipulaci v libovolném bodě plochy návrhu namísto bodu manipulátoru. V režimu volného tvaru můžete omezit změny některých os zamčením těch, které nechcete změnit. Na **režim editoru modelů** nástrojů, zvolte libovolnou kombinaci **zámek X**, **zámek Y**, a **zámek Z** tlačítka.  
   
- Může být výhodné pracovat s objekty pomocí přichycení k mřížce. Na **režim editoru modelů** nástrojů, zvolte **Přichytit** chcete povolit (nebo zakázat) přichycení k mřížce. Pokud je povolena možnost přichycení k mřížce, jsou přednastaveny omezené přírůstky pro posunutí, otočení a změnu velikosti.  
+   Může být výhodné pracovat s objekty pomocí přichycení k mřížce. Na **režim editoru modelů** nástrojů, zvolte **Přichytit** chcete povolit (nebo zakázat) přichycení k mřížce. Pokud je povolena možnost přichycení k mřížce, jsou přednastaveny omezené přírůstky pro posunutí, otočení a změnu velikosti.  
   
 ### <a name="working-with-the-pivot-point"></a>Práce s bodem otáčení  
  Bod otáčení objektu definuje jeho střed rotace a změnu měřítka. Bod otáčení objektu můžete změnit, abyste změnili způsob, jak je objekt ovlivněn transformacemi rotace a měřítka. Na **režim editoru modelů** nástrojů, zvolte **režim Pivotu** chcete povolit (nebo zakázat) režim pivotu. Pokud je povolen režim pivotu, zobrazí se v bodu otáčení vybraného projektu indikátor malé osy. Pak můžete použít **překlad** a **otočení** nástroje pro manipulaci s bodem otáčení.  
@@ -191,11 +191,11 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-subdivide-faces"></a>Rozdělení ploch  
   
-1.  V režimu výběru plochy vyberte plochy, které chcete rozdělit. Protože rozdělení vytváří nová data hrany, rozdělení všech ploch současně poskytuje konzistentnější výsledky, když plochy sousedí.  
+1. V režimu výběru plochy vyberte plochy, které chcete rozdělit. Protože rozdělení vytváří nová data hrany, rozdělení všech ploch současně poskytuje konzistentnější výsledky, když plochy sousedí.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **rozdělit**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **nástroje**, **rozdělit**.  
   
- Můžete také triangulovat plochy, sloučit objekty a převést mnohoúhelníkové výběry do nových objektů. Triangulace vytvoří další hrany, takže jiné než trojúhelníkové plochy jsou převedeny na optimální počet trojúhelníků; neposkytuje však další podrobnosti o geometrii. Slučování kombinuje vybrané objekty do jednoho objektu. Nové objekty je možné vytvořit pomocí mnohoúhelníkového výběru.  
+   Můžete také triangulovat plochy, sloučit objekty a převést mnohoúhelníkové výběry do nových objektů. Triangulace vytvoří další hrany, takže jiné než trojúhelníkové plochy jsou převedeny na optimální počet trojúhelníků; neposkytuje však další podrobnosti o geometrii. Slučování kombinuje vybrané objekty do jednoho objektu. Nové objekty je možné vytvořit pomocí mnohoúhelníkového výběru.  
   
 ##### <a name="to-triangulate-a-face"></a>Postup triangulace plochy  
   
@@ -259,13 +259,13 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Vytvoření hierarchie objektů na stejné úrovni  
   
-1.  V **vyberte** režimu, vyberte dvě nebo více objektů. Vytvoří se zástupný objekt, který se stane jejich nadřazeným objektem.  
+1. V **vyberte** režimu, vyberte dvě nebo více objektů. Vytvoří se zástupný objekt, který se stane jejich nadřazeným objektem.  
   
-2.  Na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **vytvořit skupinu**.  
+2. Na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **vytvořit skupinu**.  
   
- Editor modelů používá k identifikaci prvního vybraného objektu, který se stane nadřazeným, bílý objekt wireframe. Ostatní objekty ve výběru mají modrý objekt wireframe. Ve výchozím nastavení nejsou uzly zástupných symbolů zobrazeny. Chcete-li zobrazit uzly zástupných symbolů, na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **zobrazit uzly zástupných symbolů**. S uzly zástupných symbolů můžete pracovat stejně jako při práci s objekty bez zástupných symbolů.  
+   Editor modelů používá k identifikaci prvního vybraného objektu, který se stane nadřazeným, bílý objekt wireframe. Ostatní objekty ve výběru mají modrý objekt wireframe. Ve výchozím nastavení nejsou uzly zástupných symbolů zobrazeny. Chcete-li zobrazit uzly zástupných symbolů, na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **zobrazit uzly zástupných symbolů**. S uzly zástupných symbolů můžete pracovat stejně jako při práci s objekty bez zástupných symbolů.  
   
- Odebrat přidružení nadřazený podřízený mezi dvěma objekty, vyberte podřízený objekt a potom na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **Odpojit od nadřazeného**. Pokud odpojíte od podřízeného objektu nadřazený, podřízený objekt se stane kořenovým objektem scény.  
+   Odebrat přidružení nadřazený podřízený mezi dvěma objekty, vyberte podřízený objekt a potom na **editoru modelů** nástrojů, zvolte **skripty**, **Správa scén**, **Odpojit od nadřazeného**. Pokud odpojíte od podřízeného objektu nadřazený, podřízený objekt se stane kořenovým objektem scény.  
   
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky  
   

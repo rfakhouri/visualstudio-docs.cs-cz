@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865723"
 ---
 # <a name="secure-deployment"></a>Bezpečné nasazení
   Při vytváření řešení pro Office se automaticky aktualizuje vývojovém počítači povolíte kód v projektu pro spuštění. Ale když nasadíte řešení, je nutné zadat důkazy, na kterém chcete založit rozhodnutí o důvěryhodnosti řešení s certifikátem podepisování, nebo pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] výzvy klíč vztah důvěryhodnosti. Další informace najdete v tématu [zajištění důvěryhodnosti řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -35,17 +35,17 @@ ms.locfileid: "35675666"
 ## <a name="prevent-office-solutions-from-running-code"></a>Zabránit spuštění kódu řešení pro systém Office  
  Správcům umožňuje zabránit spuštěného na počítači všechna řešení pro Office v registru. Když řešení pro Office, který má rozšíření se spravovaným kódem se otevře, Visual Studio Tools for Office runtime kontroly, zda položka s názvem `Disabled` existuje pod jednou z následujících klíčů registru v počítači:  
   
--   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **Nenachází**  
+- **Nenachází**  
   
- Chcete-li zabránit spuštění kódu řešení pro systém Office, vytvořte `Disabled` položku jeden nebo oba z těchto klíčů registru a zadejte jednu z následujících datových typů a hodnot pro `Disabled`:  
+  Chcete-li zabránit spuštění kódu řešení pro systém Office, vytvořte `Disabled` položku jeden nebo oba z těchto klíčů registru a zadejte jednu z následujících datových typů a hodnot pro `Disabled`:  
   
--   REG_SZ nebo REG_EXPAND_SZ, který je nastaven na libovolný řetězec než "0" (nula).  
+- REG_SZ nebo REG_EXPAND_SZ, který je nastaven na libovolný řetězec než "0" (nula).  
   
--   REG_DWORD, která je nastavena na jakoukoli jinou hodnotu než 0 (nula).  
+- REG_DWORD, která je nastavena na jakoukoli jinou hodnotu než 0 (nula).  
   
- Pokud chcete povolit řešení Office spuštění kódu, nastavte oba `Disabled` položky na hodnotu 0 (nula), nebo odstraňte položky registru.  
+  Pokud chcete povolit řešení Office spuštění kódu, nastavte oba `Disabled` položky na hodnotu 0 (nula), nebo odstraňte položky registru.  
   
 ## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   

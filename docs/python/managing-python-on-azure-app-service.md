@@ -1,7 +1,7 @@
 ---
-title: Konfigurace Pythonu ve službě Azure App Service
+title: Konfigurace Pythonu ve službě Azure App Service (Windows)
 description: Postup instalace překladače a knihoven Pythonu ve službě Azure App Service a konfiguraci webové aplikace správně odkazovat na tomto interpretu.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 96c3ce9a8272493b66607ab9513ce1bb7f46817e
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228900"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459865"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Jak nastavit prostředí Pythonu ve službě Azure App Service
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak nastavit prostředí Pythonu ve službě Azure App Service (Windows)
 
 > [!Important]
-> Společnost Microsoft plánuje přestat používat rozšíření Pythonu pro službu App Service, jak je popsáno v tomto článku ve prospěch přímé nasazení do služby App Service v Linuxu. Rozšíření se i nadále fungovat do té doby. Nasazení do služby App Service v Linuxu najdete v tématu [vytvoření webové aplikace v Pythonu ve službě Azure App Service v Linuxu](/azure/app-service/containers/quickstart-python).
+> Microsoft se nepoužívá rozšíření Pythonu pro službu App Service na Windows, jak je popsáno v tomto článku ve prospěch přímé nasazení do [App Service v Linuxu](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) je jako nabídka platforma jako služba pro webové aplikace, ať už jsou weby přístupných prostřednictvím prohlížeče, rozhraní REST API, používat vlastní klienty nebo událost aktivuje zpracování. App Service podporuje použití Pythonu k implementaci aplikace.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 882d2c8d0dec5e4673b24436067bd6255c2052be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853152"
 ---
 # <a name="the-dsltexttransform-command"></a>Příkaz DslTextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ DslTextTransform.cmd je skript, který volá TextTransform.exe a spustí pomocí
   
  Jako vstup pro DslTextTransform.cmd lze zadat následující argumenty:  
   
--   Výstupní adresář projektu s modelem domény.  
+- Výstupní adresář projektu s modelem domény.  
   
--   Výstupní adresář projektu definice návrháře.  
+- Výstupní adresář projektu definice návrháře.  
   
--   Umístění souboru textové šablony.  
+- Umístění souboru textové šablony.  
   
- DslTextTransform.cmd zpracovává zadaný textový soubor šablony pomocí procesorů pro direktivy výchozí a sestavení. Pokud vytvoříte vlastní procesory direktiv, můžete vytvořit vlastní dávkový soubor, který volá TextTransform.exe. V tomto souboru služby batch můžete zadat sestavení a přidružené vlastní procesory direktiv.
+  DslTextTransform.cmd zpracovává zadaný textový soubor šablony pomocí procesorů pro direktivy výchozí a sestavení. Pokud vytvoříte vlastní procesory direktiv, můžete vytvořit vlastní dávkový soubor, který volá TextTransform.exe. V tomto souboru služby batch můžete zadat sestavení a přidružené vlastní procesory direktiv.
 
 
 

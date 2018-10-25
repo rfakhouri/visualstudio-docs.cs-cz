@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813983"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testovací kontrolér a testovací agent požadavky pro zátěžové testování
 
@@ -31,7 +31,7 @@ Testovací kontrolér a testovací počítače agenta mají určité hardwarové
 V následující tabulce jsou uvedeny doporučené požadavky na hardware pro nasazení test kontroléru a testovacích agentů.
 
 |**Konfigurace**|**Komponenta**|**CPU**|**HD**|**Paměť**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |< 500 virtuálních uživatelů|Testovací agent|2,6 GHz|10 GB|2 GB|
 |< 1000 virtuálních uživatelů|Testovací agent|Dvoujádrový procesor 2,6 GHz|10 GB|2 GB|
 |N x 1000 virtuálních uživatelů|Testovací agent|Horizontální navýšení kapacity na N agentů každý s duálním procesorem 2,6 Ghz|10GB|2GB|

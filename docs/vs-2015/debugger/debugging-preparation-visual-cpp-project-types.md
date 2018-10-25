@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa800b52f1477fa55caaab606d5fb1e87ead147d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868575"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: typy projektů jazyka Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
   
  [Projekty Win32](#BKMK_Win32_Projects)  
   
--   [Chcete-li ladit aplikace jazyka C nebo C++ Win32](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [Chcete-li ladit aplikace jazyka C nebo C++ Win32](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [K ručnímu nastavení konfigurace ladění](#BKMK_To_manually_set_a_Debug_configuration)  
+- [K ručnímu nastavení konfigurace ladění](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Aplikace Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Aplikace Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> Doporučené nastavení vlastností  
  Určité vlastnosti měly být nastaveny stejným způsobem jako pro všechny nespravované ladění scénářů. Následující tabulky obsahují doporučené nastavení vlastností. Nastavení, které tu nejsou uvedené, mohou lišit mezi typy nespravovaného jiného projektu. Další informace najdete v tématu [nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -84,25 +84,25 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> K ručnímu nastavení konfigurace ladění  
   
-1.  Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.  
+1. Na **zobrazení** nabídky, klikněte na tlačítko **stránky vlastností**.  
   
-2.  Klikněte na tlačítko **vlastnosti konfigurace** uzlu otevřete ho, pokud ještě není  
+2. Klikněte na tlačítko **vlastnosti konfigurace** uzlu otevřete ho, pokud ještě není  
   
-3.  Vyberte **Obecné**a nastavte hodnotu **výstup** řádku do **ladění**.  
+3. Vyberte **Obecné**a nastavte hodnotu **výstup** řádku do **ladění**.  
   
-4.  Otevřít **C/C++** uzel a vyberte možnost **Obecné**.  
+4. Otevřít **C/C++** uzel a vyberte možnost **Obecné**.  
   
-     V **ladění** řádek zadejte typ ladění informace generované kompilátorem. Je možné hodnoty zahrnují **databázi programu (/Zi)** nebo **databáze programu pro upravit a pokračovat (/ZI)**.  
+    V **ladění** řádek zadejte typ ladění informace generované kompilátorem. Je možné hodnoty zahrnují **databázi programu (/Zi)** nebo **databáze programu pro upravit a pokračovat (/ZI)**.  
   
-5.  Vyberte **optimalizace**a **optimalizace** řádek, vyberte **zakázáno (/ 0d)** z rozevíracího seznamu.  
+5. Vyberte **optimalizace**a **optimalizace** řádek, vyberte **zakázáno (/ 0d)** z rozevíracího seznamu.  
   
-     Optimalizovaný kód je těžší ladit, protože generované pokyny neodpovídají přímo ke zdrojovému kódu. Pokud zjistíte, že váš program obsahuje chybu, která se zobrazí pouze v optimalizovaném kódu, můžete zapnout toto nastavení, ale mějte na paměti, že kód zobrazený v okně zpětného překladu je generován z optimalizovaného zdrojového, který se nemusí shodovat se zobrazí ve zdrojových oknech. Funkce, jako je například krokování mohou zobrazit zarážky a provádění bodů nesprávně.  
+    Optimalizovaný kód je těžší ladit, protože generované pokyny neodpovídají přímo ke zdrojovému kódu. Pokud zjistíte, že váš program obsahuje chybu, která se zobrazí pouze v optimalizovaném kódu, můžete zapnout toto nastavení, ale mějte na paměti, že kód zobrazený v okně zpětného překladu je generován z optimalizovaného zdrojového, který se nemusí shodovat se zobrazí ve zdrojových oknech. Funkce, jako je například krokování mohou zobrazit zarážky a provádění bodů nesprávně.  
   
-6.  Otevřít **Linkeru** uzel a vyberte možnost **ladění**. V prvním **generovat** řádek, vyberte **Ano (/ DEBUG)** z rozevíracího seznamu. Vždy nastavte při ladění.  
+6. Otevřít **Linkeru** uzel a vyberte možnost **ladění**. V prvním **generovat** řádek, vyberte **Ano (/ DEBUG)** z rozevíracího seznamu. Vždy nastavte při ladění.  
   
- Další informace najdete v tématu[nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+   Další informace najdete v tématu[nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
- [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)  
  **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] aplikace Windows Forms. Další informace najdete v tématu [postupy: vytvoření projektu aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  

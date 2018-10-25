@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813893"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete přizpůsobit vzhled a chování v okně Vlastnosti. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.
@@ -28,11 +28,11 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
  **Popis**. Popis doménová vlastnost, která se zobrazí na dvou místech:
 
--   V dolní části okna vlastnosti, když uživatel vybere vlastnost. Slouží k vysvětlení uživatel, co představuje vlastnost.
+- V dolní části okna vlastnosti, když uživatel vybere vlastnost. Slouží k vysvětlení uživatel, co představuje vlastnost.
 
--   V kódu generovaného programu. Pokud používáte zařízení dokumentaci k extrakci dokumentace k rozhraní API, zobrazí se jako popis této vlastnosti v rozhraní API.
+- V kódu generovaného programu. Pokud používáte zařízení dokumentaci k extrakci dokumentace k rozhraní API, zobrazí se jako popis této vlastnosti v rozhraní API.
 
- **Kategorie**. Kategorie je záhlaví v okně Vlastnosti.
+  **Kategorie**. Kategorie je záhlaví v okně Vlastnosti.
 
 ## <a name="exposing-style-features"></a>Vystavení stylu funkce
  Některé z dynamických funkcí grafické prvky může být reprezentován nebo *vystavený* jako vlastnosti domény. Funkce, která byla vystavena tímto způsobem je možné aktualizovat podle uživatele a další snadno aktualizovat pomocí kódu programu.
@@ -67,67 +67,67 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Přeposílat vlastnost z jiného elementu
 
-1.  Vytvoření [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení, které obsahuje alespoň dvě třídy, které v tomto příkladu se nazývají **knihy** a **Autor**. Měla by existovat relace mezi buď typu **knihy** a **Autor**.
+1. Vytvoření [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení, které obsahuje alespoň dvě třídy, které v tomto příkladu se nazývají **knihy** a **Autor**. Měla by existovat relace mezi buď typu **knihy** a **Autor**.
 
-     Násobnost zdrojové role (roli na **knihy** na straně) musí být 0.. 1 nebo 1..1, tak že každý **knihy** má jeden **Autor**.
+    Násobnost zdrojové role (roli na **knihy** na straně) musí být 0.. 1 nebo 1..1, tak že každý **knihy** má jeden **Autor**.
 
-2.  V **Průzkumník DSL**, klikněte pravým tlačítkem na **knihy** doménové třídy a pak klikněte na tlačítko **přidat nové DomainTypeDescriptor**.
+2. V **Průzkumník DSL**, klikněte pravým tlačítkem na **knihy** doménové třídy a pak klikněte na tlačítko **přidat nové DomainTypeDescriptor**.
 
-     Uzel s názvem **cesty popisovačů vlastnosti vlastní** je zobrazen **popisovači vlastního typu** uzlu.
+    Uzel s názvem **cesty popisovačů vlastnosti vlastní** je zobrazen **popisovači vlastního typu** uzlu.
 
-3.  Klikněte pravým tlačítkem myši **popisovači vlastního typu** uzlu a pak klikněte na tlačítko **přidat nové PropertyPath**.
+3. Klikněte pravým tlačítkem myši **popisovači vlastního typu** uzlu a pak klikněte na tlačítko **přidat nové PropertyPath**.
 
-     Nová cesta vlastnosti je zobrazen **cesty popisovačů vlastnosti vlastní** uzlu.
+    Nová cesta vlastnosti je zobrazen **cesty popisovačů vlastnosti vlastní** uzlu.
 
-4.  Vyberte novou vlastnost cestu a **vlastnosti** okno, nastavte **cesta k vlastnosti** cestu prvek odpovídající modelu.
+4. Vyberte novou vlastnost cestu a **vlastnosti** okno, nastavte **cesta k vlastnosti** cestu prvek odpovídající modelu.
 
-     Kliknutím na šipku dolů napravo od této vlastnosti můžete upravit cestu ve stromovém zobrazení. Další informace o cestách domény, najdete v části [syntaxe cesty domény](../modeling/domain-path-syntax.md). Jakmile ji upravila cesta by měl vypadat podobně jako **BookReferencesAuthor.Author/! Autor**.
+    Kliknutím na šipku dolů napravo od této vlastnosti můžete upravit cestu ve stromovém zobrazení. Další informace o cestách domény, najdete v části [syntaxe cesty domény](../modeling/domain-path-syntax.md). Jakmile ji upravila cesta by měl vypadat podobně jako **BookReferencesAuthor.Author/! Autor**.
 
-5.  Nastavte **vlastnost** k **název** doménovou vlastnost elementu **Autor**.
+5. Nastavte **vlastnost** k **název** doménovou vlastnost elementu **Autor**.
 
-6.  Nastavte **zobrazovaný název** k **vytvářet název**.
+6. Nastavte **zobrazovaný název** k **vytvářet název**.
 
-7.  Transformovat všechny šablony, sestavte a spusťte DSL.
+7. Transformovat všechny šablony, sestavte a spusťte DSL.
 
-8.  V diagramu modelu vytvořit knize, autor a propojte je pomocí vztahu odkazu. Vybrat element knihy a v okně Vlastnosti byste měli vidět jméno autora vlastnostem knihy. Změna názvu propojené Autor nebo propojit různé autor knihy a podívejte se, že jméno autora knihu mění.
+8. V diagramu modelu vytvořit knize, autor a propojte je pomocí vztahu odkazu. Vybrat element knihy a v okně Vlastnosti byste měli vidět jméno autora vlastnostem knihy. Změna názvu propojené Autor nebo propojit různé autor knihy a podívejte se, že jméno autora knihu mění.
 
 ## <a name="custom-property-editors"></a>Editory vlastní vlastnost
  V okně Vlastnosti poskytuje vhodné výchozí nastavení prostředí pro typ každá vlastnost domain pro úpravy. Například pro výčtový typ, uživateli se zobrazí rozevírací seznam a pro číselné hodnoty, může uživatel zadat číslic. To platí jenom pro předdefinované typy. Při zadání externí typ, uživatel bude moct zobrazit hodnoty vlastnosti, ale nikoli upravovat.
 
  Můžete však zadat následující editory a typy:
 
-1.  Jiný editor, který se používá k typu standard. Můžete například zadat cestu editor souborů pro vlastnosti typu string.
+1. Jiný editor, který se používá k typu standard. Můžete například zadat cestu editor souborů pro vlastnosti typu string.
 
-2.  Externí typ pro vlastnost domain a editor pro něj.
+2. Externí typ pro vlastnost domain a editor pro něj.
 
-3.  .NET editoru, jako je například editor cesta k souboru, nebo můžete vytvořit vlastní vlastnosti editor.
+3. .NET editoru, jako je například editor cesta k souboru, nebo můžete vytvořit vlastní vlastnosti editor.
 
-     Převod mezi externí a typem, jako je například řetězec, který má výchozí editor.
+    Převod mezi externí a typem, jako je například řetězec, který má výchozí editor.
 
- V DSL *externí* je libovolný typ, který není součástí jednoduché typy (například logické hodnoty nebo Int32) nebo řetězec.
+   V DSL *externí* je libovolný typ, který není součástí jednoduché typy (například logické hodnoty nebo Int32) nebo řetězec.
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Chcete-li definovat doménová vlastnost, která má typ externího
 
-1.  V **Průzkumníka řešení**, přidejte odkaz na sestavení (DLL) obsahující externí typ, **Dsl** projektu.
+1. V **Průzkumníka řešení**, přidejte odkaz na sestavení (DLL) obsahující externí typ, **Dsl** projektu.
 
-     Sestavení může být sestavení .NET, nebo vámi zadané sestavení.
+    Sestavení může být sestavení .NET, nebo vámi zadané sestavení.
 
-2.  Přidat typ, který má **typy domén** seznamu, pokud jste tak již neučinili.
+2. Přidat typ, který má **typy domén** seznamu, pokud jste tak již neučinili.
 
-    1.  Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.
+   1.  Otevřete DslDefinition.dsl a v **Průzkumník DSL**, klikněte pravým tlačítkem na kořenový uzel a potom klikněte na tlačítko **přidat novou externí typ**.
 
-         Nový záznam se zobrazí v části **typy domén** uzlu.
+        Nový záznam se zobrazí v části **typy domén** uzlu.
 
-        > [!WARNING]
-        >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.
+       > [!WARNING]
+       >  Položka nabídky není na uzlu root DSL **typy domén** uzlu.
 
-    2.  V okně Vlastnosti nastavte název a obor názvů nového typu.
+   2.  V okně Vlastnosti nastavte název a obor názvů nového typu.
 
-3.  Doménová vlastnost, která přidejte do doménové třídy obvyklým způsobem.
+3. Doménová vlastnost, která přidejte do doménové třídy obvyklým způsobem.
 
-     V okně Vlastnosti vyberte z rozevíracího seznamu v externí **typ** pole.
+    V okně Vlastnosti vyberte z rozevíracího seznamu v externí **typ** pole.
 
- V této fázi se uživatelé můžou zobrazovat hodnoty vlastnosti, ale nemůžou ho upravovat. Zobrazené hodnoty jsou získány z `ToString()` funkce. Můžete napsat programový kód, který nastavuje hodnotu vlastnosti, například v příkazu nebo pravidlo.
+   V této fázi se uživatelé můžou zobrazovat hodnoty vlastnosti, ale nemůžou ho upravovat. Zobrazené hodnoty jsou získány z `ToString()` funkce. Můžete napsat programový kód, který nastavuje hodnotu vlastnosti, například v příkazu nebo pravidlo.
 
 ### <a name="setting-a-property-editor"></a>Nastavení editoru vlastností
  Přidáte atribut typu CLR pro vlastnost domain, v následujícím tvaru:
@@ -136,7 +136,6 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Atribut u vlastnosti můžete nastavit pomocí **vlastní atribut** záznam v okně Vlastnosti.
@@ -173,11 +172,11 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
  Definice editoru zápisem, která je odvozena z třídy <xref:System.Drawing.Design.UITypeEditor>. Vaše třída musí přepsat:
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, chcete-li komunikovat s uživatelem a aktualizujte hodnotu vlastnosti.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, chcete-li komunikovat s uživatelem a aktualizujte hodnotu vlastnosti.
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, chcete-li určit, zda editoru se otevře dialogové okno nebo rozevírací nabídky.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, chcete-li určit, zda editoru se otevře dialogové okno nebo rozevírací nabídky.
 
- Můžete také zadat grafická reprezentace hodnotu vlastnosti, která se zobrazí v mřížce vlastností. Chcete-li to provést, přepište `GetPaintValueSupported`, a `PaintValue`.  Další informace naleznete v tématu <xref:System.Drawing.Design.UITypeEditor>.
+  Můžete také zadat grafická reprezentace hodnotu vlastnosti, která se zobrazí v mřížce vlastností. Chcete-li to provést, přepište `GetPaintValueSupported`, a `PaintValue`.  Další informace naleznete v tématu <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 >  Přidejte kód v samostatném souboru kódu v **Dsl** projektu.
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  Chcete-li použít tento editor, nastavte **vlastní atribut** vlastnosti domény:
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Další informace naleznete v tématu <xref:System.Drawing.Design.UITypeEditor>.
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  Definujte třídu, která je odvozena z <xref:System.ComponentModel.TypeConverter>. Přidejte kód v samostatném souboru v **Dsl** projektu. Příklad:
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Viz také

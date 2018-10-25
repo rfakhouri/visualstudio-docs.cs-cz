@@ -18,12 +18,12 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ece8d5de78ff5910d2624479c2d79eaa827b4759
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861992"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramy případů použití UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,31 +36,31 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
  Díky diagramu případu použití můžete diskutovat a sdělovat:  
   
--   Scénáře v které systému nebo aplikace komunikuje se lidé, organizace nebo externích systémů.  
+- Scénáře v které systému nebo aplikace komunikuje se lidé, organizace nebo externích systémů.  
   
--   Cíle, které pomůže tyto objekty actor dosáhnout.  
+- Cíle, které pomůže tyto objekty actor dosáhnout.  
   
--   Rozsah vašeho systému.  
+- Rozsah vašeho systému.  
   
- Diagram případu použití nezobrazuje podrobnosti o použití: pouze shrnuje některé z relací mezi případy použití, objekty actor a systémy. Zejména diagram nezobrazuje pořadí, ve kterém jsou kroky provést k dosažení cílů každému případu použití. Popíšete tyto podrobnosti v jiných diagramů a dokumenty, které můžete propojit s každému případu použití. Další informace najdete v tématu [popisující případy použití podrobně](#Details) v tomto tématu.  
+  Diagram případu použití nezobrazuje podrobnosti o použití: pouze shrnuje některé z relací mezi případy použití, objekty actor a systémy. Zejména diagram nezobrazuje pořadí, ve kterém jsou kroky provést k dosažení cílů každému případu použití. Popíšete tyto podrobnosti v jiných diagramů a dokumenty, které můžete propojit s každému případu použití. Další informace najdete v tématu [popisující případy použití podrobně](#Details) v tomto tématu.  
   
- Popisy, které zadáte pro případy použití použije několik výrazů souvisejících k doméně, ve kterém funguje v systému, jako jsou prodej, nabídky, zákazníků a tak dále. Je důležité, abyste jasně definovat tyto podmínky a jejich vztahy a můžete to udělat pomocí diagramu tříd UML. Další informace najdete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
+  Popisy, které zadáte pro případy použití použije několik výrazů souvisejících k doméně, ve kterém funguje v systému, jako jsou prodej, nabídky, zákazníků a tak dále. Je důležité, abyste jasně definovat tyto podmínky a jejich vztahy a můžete to udělat pomocí diagramu tříd UML. Další informace najdete v tématu [diagramů tříd UML: pokyny](../modeling/uml-class-diagrams-guidelines.md).  
   
- Případy použití řešení pouze v funkční požadavky na systém. Další požadavky, jako je například obchodní pravidla, kvalitu služby požadavky a omezení implementace musí reprezentovat samostatně. Architektura a interních detailů musí být také popsána samostatně. Další informace o tom, jak definovat požadavky uživatelů najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+  Případy použití řešení pouze v funkční požadavky na systém. Další požadavky, jako je například obchodní pravidla, kvalitu služby požadavky a omezení implementace musí reprezentovat samostatně. Architektura a interních detailů musí být také popsána samostatně. Další informace o tom, jak definovat požadavky uživatelů najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
- Příkladů použitých v tomto tématu se vztahují na webovou stránku, na kterém zákazníci mohou objednat jídlo z místní restaurací.  
+  Příkladů použitých v tomto tématu se vztahují na webovou stránku, na kterém zákazníci mohou objednat jídlo z místní restaurací.  
   
- ![Prvky v diagramu případu použití](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
+  ![Prvky v diagramu případu použití](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
   
--   *Objektu actor* (1) je třída osoby, organizace, zařízení nebo externí softwarová součást, která komunikuje s vašeho systému. Příklad actors jsou **zákazníka**, **restaurace**, **teplotní snímač**, **Authorizer platební karty.**  
+- *Objektu actor* (1) je třída osoby, organizace, zařízení nebo externí softwarová součást, která komunikuje s vašeho systému. Příklad actors jsou **zákazníka**, **restaurace**, **teplotní snímač**, **Authorizer platební karty.**  
   
--   A *případ použití* akce, které provádí jeden nebo více objektů actor ve snaze o konkrétní cíl představuje (2). Vzorové případy použití jsou **objednávka jídla**, **nabídka aktualizace**, **zpracování platby**.  
+- A *případ použití* akce, které provádí jeden nebo více objektů actor ve snaze o konkrétní cíl představuje (2). Vzorové případy použití jsou **objednávka jídla**, **nabídka aktualizace**, **zpracování platby**.  
   
-     Na diagramu případu použití jsou případy použití přidružené (3) s objektů actor, které jsou provedeny.  
+   Na diagramu případu použití jsou případy použití přidružené (3) s objektů actor, které jsou provedeny.  
   
--   Vaše *systému (4)* je cokoli, co při vývoji. Může být malé softwarová součást, jehož actors jsou jenom další softwarové komponenty; nebo může být hotové aplikace; nebo může být velký sada distribuované aplikace nasazené přes mnoho počítačů a zařízení. Příklad subsystémy jsou **jídla řazení webu**, **jídla doručování obchodní**, **webu verze 2**.  
+- Vaše *systému (4)* je cokoli, co při vývoji. Může být malé softwarová součást, jehož actors jsou jenom další softwarové komponenty; nebo může být hotové aplikace; nebo může být velký sada distribuované aplikace nasazené přes mnoho počítačů a zařízení. Příklad subsystémy jsou **jídla řazení webu**, **jídla doručování obchodní**, **webu verze 2**.  
   
-     Diagram případu použití lze zobrazit, které případy použití jsou podporovány vašeho systému nebo jeho subsystémy.  
+   Diagram případu použití lze zobrazit, které případy použití jsou podporovány vašeho systému nebo jeho subsystémy.  
   
 ##  <a name="BasicSteps"></a> Základní postup pro vytvoření diagramy případů použití  
   
@@ -173,31 +173,31 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
  ![Příklad zobrazující násobnost n: n použití](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
--   Na stav, že několik objektů actor stejné třídy dá využít jeden výskyt případu použití, nastavení násobnosti na konci přidružení objektu actor **1..\*** .  
+- Na stav, že několik objektů actor stejné třídy dá využít jeden výskyt případu použití, nastavení násobnosti na konci přidružení objektu actor ** 1... \\***.  
   
-     Na obrázku dá využít jeden nebo více restaurace v plnění stejné objednávka jídla.  
+   Na obrázku dá využít jeden nebo více restaurace v plnění stejné objednávka jídla.  
   
--   Chcete-li zobrazit, že každý objekt actor se můžete zúčastnit ve stejnou dobu v několika výskytů případu použití, nastavení násobnosti na konci případu použití přidružení k **\***.  
+- Chcete-li zobrazit, že každý objekt actor se můžete zúčastnit ve stejnou dobu v několika výskytů případu použití, nastavení násobnosti na konci případu použití přidružení k **\\***.  
   
-     Na obrázku může každý restaurace pracovat na splnění pořadí více než jeden po druhém.  
+   Na obrázku může každý restaurace pracovat na splnění pořadí více než jeden po druhém.  
   
 ##### <a name="to-set-multiplicities-on-an-association"></a>Nastavení násobnosti na přidružení  
   
-1.  Klikněte pravým tlačítkem na přidružení a potom klikněte na tlačítko **vlastnosti**.  
+1. Klikněte pravým tlačítkem na přidružení a potom klikněte na tlačítko **vlastnosti**.  
   
-2.  Rozbalte buď **první Role** nebo **druhá Role**.  
+2. Rozbalte buď **první Role** nebo **druhá Role**.  
   
-     *Role* znamená, že element na jednom konci přidružení.  
+    *Role* znamená, že element na jednom konci přidružení.  
   
-3.  Nastavte vlastnost Multiplicity výběrem ze seznamu:  
+3. Nastavte vlastnost Multiplicity výběrem ze seznamu:  
   
-    -   **1** podílí každý odkaz na stav tohoto přesně jednu instanci této role.  
+   - **1** podílí každý odkaz na stav tohoto přesně jednu instanci této role.  
   
-    -   **1..\***  do stavu, který jeden nebo více instancí této role, které jsou součástí každého odkazu.  
+   - **1..\\*** stav, který jeden nebo více instancí této role, které jsou součástí každého odkazu.  
   
-    -   **0..1** stanovit účast je dobrovolná.  
+   - **0..1** stanovit účast je dobrovolná.  
   
-    -   **\*** na stav, který se nula nebo víc instancí této role, na které se účastní odkazu.  
+   - **\\*** do stavu, který nula nebo víc instancí této role, na které se účastní odkazu.  
   
 > [!NOTE]
 >  Mnoho týmů Neumísťujte násobnost informace na diagramy případů použití, byste museli opustit násobnosti na výchozí hodnotu 1. Místo toho poskytují informace v popisy případy použití. V takovém případě se skryjí všechny násobnosti v diagramech případů použití.  
@@ -223,23 +223,23 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
 ##  <a name="Details"></a> Případy použití podrobně popisují  
  Představuje případ použití:  
   
--   Cílem prvek "actor" v systému, jako například **koupit pokrmu**; a  
+- Cílem prvek "actor" v systému, jako například **koupit pokrmu**; a  
   
--   Jeden nebo více *scénáře*, to znamená pořadí kroků provést při sledování cíle, například: {**objednávka jídla, platit, poskytování**}. Kromě úspěch scénářů, mohou existovat několik výjimek nebo chyby scénáře, jako například **odmítl platební karty**.  
+- Jeden nebo více *scénáře*, to znamená pořadí kroků provést při sledování cíle, například: {**objednávka jídla, platit, poskytování**}. Kromě úspěch scénářů, mohou existovat několik výjimek nebo chyby scénáře, jako například **odmítl platební karty**.  
   
- Případ použití můžete popsané v různé úrovně podrobností. V rané fázi návrhu stačí pouze na název v diagramu případu použití.  Později může být napsán Podrobnější popisy scénářů.  
+  Případ použití můžete popsané v různé úrovně podrobností. V rané fázi návrhu stačí pouze na název v diagramu případu použití.  Později může být napsán Podrobnější popisy scénářů.  
   
- V sadě Visual Studio Ultimate můžete popsat případu použití několika způsoby, které je možné použít samostatně nebo společně:  
+  V sadě Visual Studio Ultimate můžete popsat případu použití několika způsoby, které je možné použít samostatně nebo společně:  
   
--   Propojení případu použití s jiný diagram nebo diagramy v projektu.  
+- Propojení případu použití s jiný diagram nebo diagramy v projektu.  
   
-    -   Diagram činnosti pomáhá vysvětlit složitější procesu tam, kde jsou smyčky a větve paralelních vláken. Můžete také zobrazit tok dat mezi částmi tohoto procesu. Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+  -   Diagram činnosti pomáhá vysvětlit složitější procesu tam, kde jsou smyčky a větve paralelních vláken. Můžete také zobrazit tok dat mezi částmi tohoto procesu. Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
   
-    -   Sekvenční diagram vám vysvětlují komplexní řadu interakcí mezi různé objekty actor. Také vám pomůže ho zobrazit, co se stane v systému v reakci na každý případ použití. Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
+  -   Sekvenční diagram vám vysvětlují komplexní řadu interakcí mezi různé objekty actor. Také vám pomůže ho zobrazit, co se stane v systému v reakci na každý případ použití. Další informace najdete v tématu [sekvenční diagramy UML: pokyny](../modeling/uml-sequence-diagrams-guidelines.md).  
   
--   Propojení případu použití stránky Onenotu, části nebo odstavce, která případ použití podrobně popisuje.  
+- Propojení případu použití stránky Onenotu, části nebo odstavce, která případ použití podrobně popisuje.  
   
--   Propojení případu použití s Wordový dokument, ve kterém vám text, snímky obrazovky, a tak dále se popisují scénáře případu použití. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- Propojení případu použití s Wordový dokument, ve kterém vám text, snímky obrazovky, a tak dále se popisují scénáře případu použití. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
 #### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Propojení případu použití diagramu nebo soubor ve stejném řešení  
   
@@ -333,13 +333,13 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
  Všimněte si, že tyto zásady vytváření názvů při použití diagramu činnosti:  
   
--   Název aktivity celý je stejný jako včetně případu použití.  
+- Název aktivity celý je stejný jako včetně případu použití.  
   
--   Akce v diagramu činnosti mají stejné názvy jako zahrnutou případy použití.  
+- Akce v diagramu činnosti mají stejné názvy jako zahrnutou případy použití.  
   
- Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
+  Další informace najdete v tématu [diagramy činnosti UML: pokyny](../modeling/uml-activity-diagrams-guidelines.md).  
   
- ![Použijte kroky v případu ukazuje diagram propojenou aktivitu](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
+  ![Použijte kroky v případu ukazuje diagram propojenou aktivitu](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
 ###  <a name="Inheritance"></a> Sdílení cílů s generalizace  
  Pomocí relaci generalizace ukazují, že *specializované* případem použití je konkrétní způsob, jak dosáhnout cílů jiným vyjádřena *Obecné* případu použití. Otevřít šipky směřovat v obecnější případu použití.  
@@ -383,26 +383,26 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
 ##### <a name="to-separate-a-use-case-into-main-and-extending-parts"></a>Chcete rozdělit do hlavní a rozšiřování části případu použití  
   
-1.  Vytvoření a název nového rozšíření případu použití.  
+1. Vytvoření a název nového rozšíření případu použití.  
   
-2.  Vytvoření **rozšířit** vztahu se šipkou ukazující na rozšířenému případu použití.  
+2. Vytvoření **rozšířit** vztahu se šipkou ukazující na rozšířenému případu použití.  
   
-    1.  Klikněte na tlačítko **rozšířit** na panelu nástrojů.  
+   1.  Klikněte na tlačítko **rozšířit** na panelu nástrojů.  
   
-    2.  Klikněte na rozšíření případu použití (**registrovat nové uživatele** v příkladu).  
+   2.  Klikněte na rozšíření případu použití (**registrovat nové uživatele** v příkladu).  
   
-    3.  Klikněte na tlačítko rozšířenému případu použití (**přihlášení** v příkladu).  
+   3.  Klikněte na tlačítko rozšířenému případu použití (**přihlášení** v příkladu).  
   
-        > [!NOTE]
-        >  Vyhněte se vytváření smyčku vztahů rozšířit v diagramu. Je nesprávný pro případ použití bude rozšíření sebe sama.  
+       > [!NOTE]
+       >  Vyhněte se vytváření smyčku vztahů rozšířit v diagramu. Je nesprávný pro případ použití bude rozšíření sebe sama.  
   
-3.  Pokud jste již vytvořili scénáře pro rozšířenému případu použití, přesuňte příslušné kroky do scénáře rozšíření.  
+3. Pokud jste již vytvořili scénáře pro rozšířenému případu použití, přesuňte příslušné kroky do scénáře rozšíření.  
   
-4.  Popis rozšíření (**registrovat nové uživatele** v příkladu) by měl obsahovat podrobnosti o where v hlavní scénáře použití tato hodnota se vrátí a za jakých okolností. Si ho představit jako změnu popis hlavních případu.  
+4. Popis rozšíření (**registrovat nové uživatele** v příkladu) by měl obsahovat podrobnosti o where v hlavní scénáře použití tato hodnota se vrátí a za jakých okolností. Si ho představit jako změnu popis hlavních případu.  
   
- Případ použití rozšíření představuje kroky scénáře, které by jinak byly součástí scénáře nejčastěji. Scénář a cílem rozšíření budou vždy číst v kontextu případ využívá proto, že nemají být užitečné nezávisle na sobě.  
+   Případ použití rozšíření představuje kroky scénáře, které by jinak byly součástí scénáře nejčastěji. Scénář a cílem rozšíření budou vždy číst v kontextu případ využívá proto, že nemají být užitečné nezávisle na sobě.  
   
- Oddělení si rozšíření může být užitečné pro popis těchto situacích:  
+   Oddělení si rozšíření může být užitečné pro popis těchto situacích:  
   
 -   Existují další účastníky, kteří se podílejí pouze v případě použití rozšíření. Správce je potřeba Schválit registraci zákazníka na webové stránce.  
   
@@ -415,17 +415,17 @@ V sadě Visual Studio, můžete nakreslit *diagramu případu použití* slouž�
   
 #### <a name="to-draw-a-subsystem-boundary"></a>Chcete-li nakreslit hranice podsystému  
   
-1.  Na panelu nástrojů klikněte na tlačítko **subsystému**, pak klikněte na tlačítko diagram.  
+1. Na panelu nástrojů klikněte na tlačítko **subsystému**, pak klikněte na tlačítko diagram.  
   
-     Subsystém se zobrazí v diagramu.  
+    Subsystém se zobrazí v diagramu.  
   
-2.  Přetahováním rohů subsystému a upravte jeho velikost.  
+2. Přetahováním rohů subsystému a upravte jeho velikost.  
   
-3.  Přetáhněte existující případů použití do nebo z něj subsystému a upravte jeho obsah.  
+3. Přetáhněte existující případů použití do nebo z něj subsystému a upravte jeho obsah.  
   
- \- nebo –  
+   \- nebo –  
   
- Chcete-li vytvořit nový případ použití přímo v subsystému, klikněte na tlačítko **případ použití** v sadě nástrojů klikněte do subsystému.  
+   Chcete-li vytvořit nový případ použití přímo v subsystému, klikněte na tlačítko **případ použití** v sadě nástrojů klikněte do subsystému.  
   
 > [!NOTE]
 >  **Predmety** vlastnost způsobu použití určuje, jaké subsystém je obsažena v.  

@@ -21,23 +21,23 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ac795c2068a27d673b6c603d4ef8c7d3be056cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0898b20ae61feaef79a4923211ac47b902c61e76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826428"
 ---
 # <a name="concurrency-visualizer"></a>Vizualizér souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 POZNÁMKA:]
 >  Vizualizátor souběžnosti je volitelné rozšíření pro Visual Studio. Vizualizátor souběžnosti a kolekce nástrojů pro Concurrency Visualizer můžete stáhněte z následující odkazy:  
->   
->  -   Stáhněte si [Vizualizátor souběžnosti](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) rozšíření.  
-> -   Stáhněte si [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
->   
->      [Concurrency Visualizer nástroje příkazového řádku (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umožňuje shromažďovat trasování z příkazového řádku, který se zobrazí ve vizualizátoru souběžnosti pro Visual Studio 2015. Nástroj můžete použít na počítačích, které nemají nainstalovanou sadu Visual Studio.  
+> 
+> - Stáhněte si [Vizualizátor souběžnosti](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) rozšíření.  
+>   -   Stáhněte si [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
+> 
+>   [Concurrency Visualizer nástroje příkazového řádku (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) umožňuje shromažďovat trasování z příkazového řádku, který se zobrazí ve vizualizátoru souběžnosti pro Visual Studio 2015. Nástroj můžete použít na počítačích, které nemají nainstalovanou sadu Visual Studio.  
   
  Vizualizátor souběžnosti můžete zobrazit, jak vaše aplikace s více podprocesy provádí. Zobrazení v Concurrency Visualizer poskytují grafická, tabulková a textová data, která zobrazují časové vztahy mezi vlákny v programu a systém jako celek. Vizualizátor souběžnosti můžete použít k vyhledání problémových míst výkonu, procesoru nízkého využití, kolize vlákna, migrace vlákna přes jádro, zpoždění synchronizace, rozhraní DirectX aktivity, míst překrytí I/O a dalších informací. Zobrazení obsahují data, která můžete reagovat propojením jejich grafického výstupu na volání zásobníků a zdrojový kód.  
   

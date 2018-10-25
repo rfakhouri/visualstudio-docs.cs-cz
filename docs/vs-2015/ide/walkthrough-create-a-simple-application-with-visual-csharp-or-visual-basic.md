@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851683"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s použitím jazyka Visual C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 #### <a name="to-change-the-color-theme-of-the-ide"></a>Změna barevného motivu prostředí IDE  
   
-1.  Otevřít **možnosti** dialogové okno kliknutím **nástroje** nabídce v horní části a pak **možnosti...** položka.  
+1. Otevřít **možnosti** dialogové okno kliknutím **nástroje** nabídce v horní části a pak **možnosti...** položka.  
   
-     ![Možnosti příkazu v nabídce Nástroje](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")  
+    ![Možnosti příkazu v nabídce Nástroje](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")  
   
-2.  Změnit **barevný motiv** k **tmavě**, pak klikněte na tlačítko **OK**.  
+2. Změnit **barevný motiv** k **tmavě**, pak klikněte na tlačítko **OK**.  
   
-     ![Motiv tmavé barvy vybrané](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE Darkthemeoptionsdlgbox")  
+    ![Motiv tmavé barvy vybrané](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE Darkthemeoptionsdlgbox")  
   
- Barvy v systému Visual Studio by měly odpovídat následujícímu obrázku:  
+   Barvy v systému Visual Studio by měly odpovídat následujícímu obrázku:  
   
- ![Integrované vývojové prostředí s tmavý motiv](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
+   ![Integrované vývojové prostředí s tmavý motiv](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
   
- Barevný motiv použit pro obrázky ve zbývající části tohoto návodu je světlý motiv. Další informace o úpravách rozhraní IDE naleznete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   Barevný motiv použit pro obrázky ve zbývající části tohoto návodu je světlý motiv. Další informace o úpravách rozhraní IDE naleznete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ##  <a name="BKMK_CreateApp"></a> Vytvoření jednoduché aplikace  
   
@@ -81,67 +81,67 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 ##### <a name="to-create-the-wpf-project"></a>Vytvoření projektu WPF  
   
-1.  Vytvořte nový projekt. V panelu nabídky zvolte **souboru**, **nový**, **projektu...** .  
+1. Vytvořte nový projekt. V panelu nabídky zvolte **souboru**, **nový**, **projektu...** .  
   
-     ![Na panelu nabídek zvolte soubor, nový, projekt](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
+    ![Na panelu nabídek zvolte soubor, nový, projekt](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
   
-     Můžete také zadat **nový projekt** v **Snadné spuštění** pole stejnou věc udělat.  
+    Můžete také zadat **nový projekt** v **Snadné spuštění** pole stejnou věc udělat.  
   
-     ![V dialogovém okně Snadné spuštění zadat nový projekt](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE QuickLaunchNewProjectsmall")  
+    ![V dialogovém okně Snadné spuštění zadat nový projekt](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE QuickLaunchNewProjectsmall")  
   
-2.  Výběrem v levém podokně vyberte šablonu aplikace WPF Visual C# nebo Visual Basic **nainstalováno**, **šablony**, **Visual C#**, **Windows**, například a následným výběrem aplikace WPF v prostředním podokně.  Projekt pojmenujte HelloWPFApp v dolní části dialogového okna Nový projekt.  
+2. Výběrem v levém podokně vyberte šablonu aplikace WPF Visual C# nebo Visual Basic **nainstalováno**, **šablony**, **Visual C#**, **Windows**, například a následným výběrem aplikace WPF v prostředním podokně.  Projekt pojmenujte HelloWPFApp v dolní části dialogového okna Nový projekt.  
   
-     ![Vytvoření projektu WPF Visual Basic, HelloWPFApp](../ide/media/exploreide-newprojectvb.png "ExploreIDE NewProjectVB")  
+    ![Vytvoření projektu WPF Visual Basic, HelloWPFApp](../ide/media/exploreide-newprojectvb.png "ExploreIDE NewProjectVB")  
   
-     NEBO  
+    NEBO  
   
-     ![Vytvoření a Visual C&#35; projekt WPF, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE NewProjectcsharp")  
+    ![Vytvoření a Visual C&#35; projekt WPF, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE NewProjectcsharp")  
   
- Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení a **Průzkumníka řešení** zobrazuje různé soubory. Návrhář WPF ukazuje v rozděleném zobrazení návrhové a XAML přehled souboru MainWindow.xaml. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení.  Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. (Další informace najdete v tématu [WPF Designer pro Windows Forms vývojáři](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)). Následující položky se zobrazí v **Průzkumníka řešení**:  
+   Visual Studio vytvoří projekt aplikace HelloWPFApp a řešení a **Průzkumníka řešení** zobrazuje různé soubory. Návrhář WPF ukazuje v rozděleném zobrazení návrhové a XAML přehled souboru MainWindow.xaml. Můžete snímků rozdělovač, abyste viděli víc nebo míň buď zobrazení.  Můžete zobrazit pouze vizuální zobrazení nebo pouze zobrazení XAML. (Další informace najdete v tématu [WPF Designer pro Windows Forms vývojáři](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)). Následující položky se zobrazí v **Průzkumníka řešení**:  
   
- Obrázek 5: Položky projektu  
+   Obrázek 5: Položky projektu  
   
- ![Průzkumník řešení se soubory HelloWPFApp načíst](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE HelloWPFAppFiles")  
+   ![Průzkumník řešení se soubory HelloWPFApp načíst](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE HelloWPFAppFiles")  
   
- Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnosti** okna (v **zobrazení** nabídky), můžete zobrazit a změnit možnosti položek projektu, ovládacích prvků a dalších položek v aplikaci. Pomocí vlastností projektu a stránek vlastností můžete zobrazit a změnit možnosti projektů a řešení.  
+   Poté, co jste projekt vytvořili, jej můžete upravit. S použitím **vlastnosti** okna (v **zobrazení** nabídky), můžete zobrazit a změnit možnosti položek projektu, ovládacích prvků a dalších položek v aplikaci. Pomocí vlastností projektu a stránek vlastností můžete zobrazit a změnit možnosti projektů a řešení.  
   
 ##### <a name="to-change-the-name-of-mainwindowxaml"></a>Změna názvu souboru MainWindow.xaml  
   
-1.  V následujícím postupu pojmenujete okno MainWindow konkrétněji. V **Průzkumníka řešení**, vyberte soubor MainWindow.xaml. By se měla zobrazit **vlastnosti** okna, ale pokud ne, zvolte **zobrazení** nabídky a **okně s vlastnostmi** položky. Změnit **název_souboru** vlastnost `Greetings.xaml`.  
+1. V následujícím postupu pojmenujete okno MainWindow konkrétněji. V **Průzkumníka řešení**, vyberte soubor MainWindow.xaml. By se měla zobrazit **vlastnosti** okna, ale pokud ne, zvolte **zobrazení** nabídky a **okně s vlastnostmi** položky. Změnit **název_souboru** vlastnost `Greetings.xaml`.  
   
-     ![Okno vlastností se zvýrazněným názvem souboru](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE FilenameinPropertiesWindow")  
+    ![Okno vlastností se zvýrazněným názvem souboru](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE FilenameinPropertiesWindow")  
   
-     **Průzkumník řešení** ukazuje, že název souboru je nyní Greetings.xaml, a pokud rozbalte soubor MainWindow.xaml uzlu (o vložení fokus v uzlu a stisknutím klávesy šipka vpravo), zobrazí se název souboru MainWindow.xaml.vb nebo MainWindow.xaml.cs je nyní Greetings.XAML.vb, případně Greetings.xaml.cs. Souboru s tímto kódem je vnořená v uzlu souboru .xaml lze zobrazit, že jsou velmi úzce souvisí k sobě navzájem.  
+    **Průzkumník řešení** ukazuje, že název souboru je nyní Greetings.xaml, a pokud rozbalte soubor MainWindow.xaml uzlu (o vložení fokus v uzlu a stisknutím klávesy šipka vpravo), zobrazí se název souboru MainWindow.xaml.vb nebo MainWindow.xaml.cs je nyní Greetings.XAML.vb, případně Greetings.xaml.cs. Souboru s tímto kódem je vnořená v uzlu souboru .xaml lze zobrazit, že jsou velmi úzce souvisí k sobě navzájem.  
   
-    > [!WARNING]
-    >  Tato změna způsobí chybu, kterou zjistíte později během ladění a opravování.  
+   > [!WARNING]
+   >  Tato změna způsobí chybu, kterou zjistíte později během ladění a opravování.  
   
-2.  V **Průzkumníka řešení**, otevřete soubor Greetings.xaml v Návrháři (stisknutím klávesy Enter během uzel má fokus) a klikněte do záhlaví okna pomocí myši.  
+2. V **Průzkumníka řešení**, otevřete soubor Greetings.xaml v Návrháři (stisknutím klávesy Enter během uzel má fokus) a klikněte do záhlaví okna pomocí myši.  
   
-3.  V **vlastnosti** okna, změňte hodnotu **Title** vlastnost `Greetings`.  
+3. V **vlastnosti** okna, změňte hodnotu **Title** vlastnost `Greetings`.  
   
- V záhlaví okna souboru MainWindow.xaml je nyní napsáno Greetings.  
+   V záhlaví okna souboru MainWindow.xaml je nyní napsáno Greetings.  
   
 ### <a name="design-the-user-interface-ui"></a>Návrh uživatelského rozhraní (UI)  
  Nyní do této aplikace přidáme tři typy ovládacích prvků: ovládací prvek TextBlock, dva ovládací prvky RadioButton a ovládací prvek Button.  
   
 ##### <a name="to-add-a-textblock-control"></a>Přidání ovládacího prvku TextBlock  
   
-1.  Otevřít **nástrojů** okno výběrem **zobrazení** nabídky a **nástrojů** položky.  
+1. Otevřít **nástrojů** okno výběrem **zobrazení** nabídky a **nástrojů** položky.  
   
-2.  V **nástrojů**, vyhledejte ovládací prvek TextBlock.  
+2. V **nástrojů**, vyhledejte ovládací prvek TextBlock.  
   
-     ![Panel nástrojů s zvýrazněný ovládací prvek TextBlock](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE TextBlockToolbox")  
+    ![Panel nástrojů s zvýrazněný ovládací prvek TextBlock](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE TextBlockToolbox")  
   
-3.  Přidejte ovládací prvek TextBlock do návrhové plochy výběrem položky TextBlock a jeho přetažením na návrhové ploše v okně.  Vycentrujte v horní části okna.  
+3. Přidejte ovládací prvek TextBlock do návrhové plochy výběrem položky TextBlock a jeho přetažením na návrhové ploše v okně.  Vycentrujte v horní části okna.  
   
- Okno aplikace by mělo vypadat jako na následujícím obrázku:  
+   Okno aplikace by mělo vypadat jako na následujícím obrázku:  
   
- Obrázek 7: Okno Greetings s ovládacím prvkem TextBlock  
+   Obrázek 7: Okno Greetings s ovládacím prvkem TextBlock  
   
- ![TextBlock – ovládací prvek na formuláři Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
+   ![TextBlock – ovládací prvek na formuláři Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
   
- Značka XAML by měla vypadat následovně:  
+   Značka XAML by měla vypadat následovně:  
   
 ```  
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
@@ -149,55 +149,55 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 ##### <a name="to-customize-the-text-in-the-text-block"></a>Úprava textu v textovém bloku  
   
-1.  V XAML zobrazení najděte značku pro TextBlock a změňte atributu Text: `Text=”Select a message option and then choose the Display button.”`  
+1. V XAML zobrazení najděte značku pro TextBlock a změňte atributu Text: `Text=”Select a message option and then choose the Display button.”`  
   
-2.  Pokud ovládacím prvku TextBlock v návrhovém zobrazení podle Nerozbaluje, zvětšete TextBlock – ovládací prvek (s použitím zobrazily úchyty na okrajích) tak, aby zobrazil celý text.  
+2. Pokud ovládacím prvku TextBlock v návrhovém zobrazení podle Nerozbaluje, zvětšete TextBlock – ovládací prvek (s použitím zobrazily úchyty na okrajích) tak, aby zobrazil celý text.  
   
-3.  Uložte změny stisknutím Ctrl + s nebo pomocí **souboru** položky nabídky.  
+3. Uložte změny stisknutím Ctrl + s nebo pomocí **souboru** položky nabídky.  
   
- V dalším kroku přidejte dva [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) ovládací prvky do formuláře.  
+   V dalším kroku přidejte dva [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) ovládací prvky do formuláře.  
   
 ##### <a name="to-add-radio-buttons"></a>Přidání přepínačů  
   
-1.  V **nástrojů**, vyhledejte ovládací prvek RadioButton.  
+1. V **nástrojů**, vyhledejte ovládací prvek RadioButton.  
   
-     ![Okno nástrojů s vybraným ovládacím prvkem RadioButton](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE RadioButtonToolbox")  
+    ![Okno nástrojů s vybraným ovládacím prvkem RadioButton](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE RadioButtonToolbox")  
   
-2.  Přidejte dva ovládací prvky RadioButton návrhu surface výběr položek ovládacího prvku RadioButton a jeho přetažením na okno na návrhové ploše dvakrát a přesunete tlačítka (tak, že je vyberete a pomocí šipkových kláves) tak, aby tlačítek se zobrazí vedle sebe v ovládacím prvku TextBlock ovládací prvek.  
+2. Přidejte dva ovládací prvky RadioButton návrhu surface výběr položek ovládacího prvku RadioButton a jeho přetažením na okno na návrhové ploše dvakrát a přesunete tlačítka (tak, že je vyberete a pomocí šipkových kláves) tak, aby tlačítek se zobrazí vedle sebe v ovládacím prvku TextBlock ovládací prvek.  
   
-     Okno aplikace by mělo vypadat takto:  
+    Okno aplikace by mělo vypadat takto:  
   
-     Obrázek 8: Přepínače v okně Greetings.  
+    Obrázek 8: Přepínače v okně Greetings.  
   
-     ![Greetings formuláře s textblock a dvě radiobuttons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE Greetingswithradiobuttons")  
+    ![Greetings formuláře s textblock a dvě radiobuttons](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE Greetingswithradiobuttons")  
   
-3.  V **vlastnosti** okně levém ovládacího prvku RadioButton přepište **název** vlastností (vlastnost v horní části **vlastnosti** okno) k `RadioButton1`.  Ujistěte se, že jste zvolili ovládací prvek RadioButton a nikoli na pozadí mřížky na formuláři. pole s typem okna vlastností. název pole by mělo být uvedeno RadioButton.  
+3. V **vlastnosti** okně levém ovládacího prvku RadioButton přepište **název** vlastností (vlastnost v horní části **vlastnosti** okno) k `RadioButton1`.  Ujistěte se, že jste zvolili ovládací prvek RadioButton a nikoli na pozadí mřížky na formuláři. pole s typem okna vlastností. název pole by mělo být uvedeno RadioButton.  
   
-4.  V **vlastnosti** okno pravého ovládacího prvku RadioButton, změna **název** vlastnost `RadioButton2`a potom uložte změny stisknutím Ctrl + s nebo pomocí **souboru**položky nabídky.  Ujistěte se, že je vybraný ovládací prvek RadioButton před změnou a ukládání.  
+4. V **vlastnosti** okno pravého ovládacího prvku RadioButton, změna **název** vlastnost `RadioButton2`a potom uložte změny stisknutím Ctrl + s nebo pomocí **souboru**položky nabídky.  Ujistěte se, že je vybraný ovládací prvek RadioButton před změnou a ukládání.  
   
- Nyní můžete zadat text k zobrazení u obou ovládacích prvků RadioButton. Následující postup aktualizuje **obsahu** vlastnost ovládacího prvku RadioButton.  
+   Nyní můžete zadat text k zobrazení u obou ovládacích prvků RadioButton. Následující postup aktualizuje **obsahu** vlastnost ovládacího prvku RadioButton.  
   
 ##### <a name="to-add-display-text-for-each-radio-button"></a>Přidání textu k zobrazení u obou přepínačů  
   
-1.  Na návrhové ploše otevřete místní nabídku ovládacího prvku radiobutton1 stisknutím pravého tlačítka myši při výběru ovládacího prvku RadioButton1, vyberte možnost **upravit Text**a pak zadejte `Hello`.  
+1. Na návrhové ploše otevřete místní nabídku ovládacího prvku radiobutton1 stisknutím pravého tlačítka myši při výběru ovládacího prvku RadioButton1, vyberte možnost **upravit Text**a pak zadejte `Hello`.  
   
-2.  Otevřete místní nabídku ovládacího prvku RadioButton2 stisknutím pravého tlačítka myši při výběru ovládacího prvku RadioButton2, vyberte možnost **upravit Text**a pak zadejte `Goodbye`.  
+2. Otevřete místní nabídku ovládacího prvku RadioButton2 stisknutím pravého tlačítka myši při výběru ovládacího prvku RadioButton2, vyberte možnost **upravit Text**a pak zadejte `Goodbye`.  
   
- Je poslední prvek uživatelského rozhraní, které přidáte [tlačítko](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) ovládacího prvku.  
+   Je poslední prvek uživatelského rozhraní, které přidáte [tlačítko](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) ovládacího prvku.  
   
 ##### <a name="to-add-the-button-control"></a>Přidání ovládacího prvku tlačítka  
   
-1.  V **nástrojů**, vyhledejte **tlačítko** ovládací prvek a pak přidat na návrhovou plochu pod ovládací prvky RadioButton tlačítka a jeho přetažením na formulář v nástrojích pro zobrazení návrhu.  
+1. V **nástrojů**, vyhledejte **tlačítko** ovládací prvek a pak přidat na návrhovou plochu pod ovládací prvky RadioButton tlačítka a jeho přetažením na formulář v nástrojích pro zobrazení návrhu.  
   
-2.  V XAML zobrazení, změňte hodnotu **obsahu** ovládacího prvku tlačítko z `Content=”Button”` k `Content=”Display”`a následně změny uložte (Ctrl + s nebo použití **souboru** nabídky).  
+2. V XAML zobrazení, změňte hodnotu **obsahu** ovládacího prvku tlačítko z `Content=”Button”` k `Content=”Display”`a následně změny uložte (Ctrl + s nebo použití **souboru** nabídky).  
   
-     Kód by měl vypadat podobně jako v následujícím příkladu: `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`  
+    Kód by měl vypadat podobně jako v následujícím příkladu: `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`  
   
- Okno aplikace by mělo vypadat jako na následujícím obrázku.  
+   Okno aplikace by mělo vypadat jako na následujícím obrázku.  
   
- Obrázek 9: Konečné uživatelské rozhraní aplikace Greetings  
+   Obrázek 9: Konečné uživatelské rozhraní aplikace Greetings  
   
- ![S popisky ovládacích prvků formuláře Greetings](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE Greetingswithconrollabels")  
+   ![S popisky ovládacích prvků formuláře Greetings](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>Přidání kódu k tlačítku Zobrazit  
  Po spuštění aplikace se zobrazí okno se zprávou poté, co uživatel poprvé zvolí přepínač a následně klikne **zobrazení** tlačítko. Objeví se jedno okno se zprávou pro Hello a druhé se zprávou pro Goodbye. Pro vytvoření tohoto chování je nutné do události Button_Click v souboru Greetings.xaml.vb, případně Greetings.xaml.cs, přidat kód.  
@@ -260,25 +260,25 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 ##### <a name="to-start-debugging-and-find-the-error"></a>Spuštění ladění a vyhledání chyby  
   
-1.  Spusťte ladicí program výběrem **ladění**, pak **spustit ladění**.  
+1. Spusťte ladicí program výběrem **ladění**, pak **spustit ladění**.  
   
-     ![Spuštění ladění příkaz v nabídce ladění](../ide/media/exploreide-startdebugging.png "ExploreIDE StartDebugging")  
+    ![Spuštění ladění příkaz v nabídce ladění](../ide/media/exploreide-startdebugging.png "ExploreIDE StartDebugging")  
   
-     Zobrazí se dialogové okno označující, že došlo k výjimce IOException: Nelze najít zdroj „mainwindow.xaml“.  
+    Zobrazí se dialogové okno označující, že došlo k výjimce IOException: Nelze najít zdroj „mainwindow.xaml“.  
   
-2.  Zvolte **OK** tlačítko a následně ukončete ladicí program.  
+2. Zvolte **OK** tlačítko a následně ukončete ladicí program.  
   
-     ![Zastavit ladění příkaz v nabídce ladění](../ide/media/exploreide-stopdebugging.png "ExploreIDE StopDebugging")  
+    ![Zastavit ladění příkaz v nabídce ladění](../ide/media/exploreide-stopdebugging.png "ExploreIDE StopDebugging")  
   
- Jsme přejmenovali soubor Mainwindow.xaml na Greetings.xaml na začátku tohoto názorného postupu, ale kód stále odkazuje na soubor Mainwindow.xaml jako spouštěcího identifikátoru URI pro aplikace, takže projekt nemůže spustit.  
+   Jsme přejmenovali soubor Mainwindow.xaml na Greetings.xaml na začátku tohoto názorného postupu, ale kód stále odkazuje na soubor Mainwindow.xaml jako spouštěcího identifikátoru URI pro aplikace, takže projekt nemůže spustit.  
   
 ##### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Určení souboru Greetings.xaml jako spouštěcího identifikátoru URI  
   
-1.  V **Průzkumníka řešení**, otevřete soubor App.xaml (C# projekt) nebo Application.XAML (v projektu jazyka Visual Basic) v zobrazení XAML (nemůže být otevřen v návrhovém zobrazení), výběr souboru a stisknutím klávesy Enter nebo double že na něj kliknete.  
+1. V **Průzkumníka řešení**, otevřete soubor App.xaml (C# projekt) nebo Application.XAML (v projektu jazyka Visual Basic) v zobrazení XAML (nemůže být otevřen v návrhovém zobrazení), výběr souboru a stisknutím klávesy Enter nebo double že na něj kliknete.  
   
-2.  Změna `StartupUri="MainWindow.xaml"` k `StartupUri="Greetings.xaml"`a následně změny uložte pomocí Ctrl + s.  
+2. Změna `StartupUri="MainWindow.xaml"` k `StartupUri="Greetings.xaml"`a následně změny uložte pomocí Ctrl + s.  
   
- Spuštění ladicího programu znovu (stisknutím klávesy F5). Měli byste vidět okno Greetings aplikace.  
+   Spuštění ladicího programu znovu (stisknutím klávesy F5). Měli byste vidět okno Greetings aplikace.  
   
 ### <a name="to-debug-with-breakpoints"></a>Ladění se zarážkami  
  Přidáním zarážek lze otestovat kód během ladění. Zarážky lze přidat zvolením **ladění** v hlavní nabídce pak **Přepnout zarážku** nebo kliknutím do levého okraje editoru vedle řádku kódu, kde chcete, aby se zarážka objevila.  
@@ -322,19 +322,19 @@ V tomto návodu se seznámíte s mnoha nástroji, dialogovými okny a návrh�
   
 ##### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Vyčištění souborů řešení a sestavení verze pro vydání  
   
-1.  V hlavní nabídce vyberte **sestavení**, pak **Vyčistit řešení** k odstranění pomocných a výstupních souborů, které byly během předchozích sestavení vytvořeny.  To není nezbytné, ale jeho vyčistí výstupy sestavení ladění.  
+1. V hlavní nabídce vyberte **sestavení**, pak **Vyčistit řešení** k odstranění pomocných a výstupních souborů, které byly během předchozích sestavení vytvořeny.  To není nezbytné, ale jeho vyčistí výstupy sestavení ladění.  
   
-     ![Příkaz Vyčistit řešení v nabídce sestavení](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
+    ![Příkaz Vyčistit řešení v nabídce sestavení](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
   
-2.  Změňte nastavení sestavení aplikace hellowpfapp z **ladění** k **vydání** pomocí ovládacího prvku rozevíracího seznamu na panelu nástrojů (stavu "Ladění" aktuálně).  
+2. Změňte nastavení sestavení aplikace hellowpfapp z **ladění** k **vydání** pomocí ovládacího prvku rozevíracího seznamu na panelu nástrojů (stavu "Ladění" aktuálně).  
   
-     ![Standardní panel nástrojů verze vybraná](../ide/media/exploreide-releaseversion.png "ExploreIDE ReleaseVersion")  
+    ![Standardní panel nástrojů verze vybraná](../ide/media/exploreide-releaseversion.png "ExploreIDE ReleaseVersion")  
   
-3.  Sestavte řešení výběrem **sestavení**, pak **sestavit řešení** nebo stiskněte klávesu F6.  
+3. Sestavte řešení výběrem **sestavení**, pak **sestavit řešení** nebo stiskněte klávesu F6.  
   
-     ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
+    ![Sestavit řešení – příkaz v nabídce sestavení](../ide/media/exploreide-buildsolution.png "ExploreIDE BuildSolution")  
   
- Blahopřejeme k dokončení tohoto návodu! Můžete najít .exe vytvořeným v adresáři řešení a projektu (...\HelloWPFApp\HelloWPFApp\bin\Release\\). Pokud budete chtít projít Další příklady, přečtěte si téma [ukázky sady Visual Studio](../ide/visual-studio-samples.md).  
+   Blahopřejeme k dokončení tohoto návodu! Můžete najít .exe vytvořeným v adresáři řešení a projektu (...\HelloWPFApp\HelloWPFApp\bin\Release\\). Pokud budete chtít projít Další příklady, přečtěte si téma [ukázky sady Visual Studio](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Co je nového v sadě Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   

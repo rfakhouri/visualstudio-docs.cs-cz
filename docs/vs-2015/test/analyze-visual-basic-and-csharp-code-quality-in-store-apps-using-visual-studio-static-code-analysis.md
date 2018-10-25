@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828699"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu jazyka Visual Basic a C# v aplikacích pro Store pomocí sady Visual Studio statické analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ##  <a name="BKMK_Run"></a> Spuštění analýzy kódu  
  Spuštění analýzy kódu pro řešení sady Visual Studio:  
   
--   Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.  
+- Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.  
   
- Automaticky spustit analýzu kódu pokaždé, když vytváříte projekt:  
+  Automaticky spustit analýzu kódu pokaždé, když vytváříte projekt:  
   
-1.  Klikněte pravým tlačítkem na název projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.  
+1. Klikněte pravým tlačítkem na název projektu v Průzkumníku řešení a klikněte na tlačítko **vlastnosti**.  
   
-2.  Na stránce vlastností projektu zvolte **analýzy kódu** a klikněte na tlačítko **povolit analýzu kódu na sestavení (definuje konstantu úloze CODEANALYSIS)**.  
+2. Na stránce vlastností projektu zvolte **analýzy kódu** a klikněte na tlačítko **povolit analýzu kódu na sestavení (definuje konstantu úloze CODEANALYSIS)**.  
   
- Toto řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.  
+   Toto řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.  
   
- ![Okno Analýza kódu](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Okno Analýza kódu](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analýza a řešení upozornění analýzy kódu  
  Pokud chcete analyzovat konkrétního upozornění, klikněte na název upozornění v okně analýzy kódu. Upozornění se rozbalí a zobrazí podrobné informace o problému.  
@@ -80,15 +80,15 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
   
  Chcete-li potlačit upozornění:  
   
-1.  Pokud se zobrazí podrobné informace, klikněte na název upozornění a rozbalte ho.  
+1. Pokud se zobrazí podrobné informace, klikněte na název upozornění a rozbalte ho.  
   
-2.  Zvolte **akce** odkaz v dolní části upozornění.  
+2. Zvolte **akce** odkaz v dolní části upozornění.  
   
-3.  Přejděte na **potlačit zprávu** a zvolte buď **zdroje v** nebo **v souboru potlačení**.  
+3. Přejděte na **potlačit zprávu** a zvolte buď **zdroje v** nebo **v souboru potlačení**.  
   
-    -   **Ve zdroji** vloží `SuppressMessage` atributů ve zdrojovém souboru nad metodami, které upozornění vygenerovalo. Díky tomu potlačení bude lepší dostupnost.  
+   - **Ve zdroji** vloží `SuppressMessage` atributů ve zdrojovém souboru nad metodami, které upozornění vygenerovalo. Díky tomu potlačení bude lepší dostupnost.  
   
-    -   **V souboru potlačení** přidá `SuppressMessage` atribut **GlobalSuppressions.cs** souboru projektu. To může usnadnit správu potlačení. Všimněte si, že `SuppressMessage` atribut přidán do **GlobalSuppression.cs** také cílí na metodu, která vygeneruje upozornění. Nepotlačuje upozornění globálně.  
+   - **V souboru potlačení** přidá `SuppressMessage` atribut **GlobalSuppressions.cs** souboru projektu. To může usnadnit správu potlačení. Všimněte si, že `SuppressMessage` atribut přidán do **GlobalSuppression.cs** také cílí na metodu, která vygeneruje upozornění. Nepotlačuje upozornění globálně.  
   
      Vaše rozhodnutí, jestli se má potlačit upozornění ve zdrojovém souboru nebo v souboru potlačení závisí na styl psaní kódu a potřebám.  
   

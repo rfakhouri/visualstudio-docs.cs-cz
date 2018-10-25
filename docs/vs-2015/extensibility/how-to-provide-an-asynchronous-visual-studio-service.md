@@ -10,12 +10,12 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1938a3a8b5b0eb3c0cc7b062d6d43c4e869397eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851969"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: poskytovat služby asynchronní aplikace Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,11 +89,11 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
 ## <a name="registering-a-service"></a>Registrace služby  
  Chcete-li zaregistrovat služby, přidejte <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do balíčku, který poskytuje služby. Existují dva rozdíly v registraci synchronní služby:  
   
--   Pokud jste autoloading balíček, je nutné přidat <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad hodnotu atributu. Další informace o rozšíření VSPackages autoloading najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
+- Pokud jste autoloading balíček, je nutné přidat <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad hodnotu atributu. Další informace o rozšíření VSPackages autoloading najdete v tématu [načítání rozšíření VSPackages](../extensibility/loading-vspackages.md).  
   
--   Je nutné přidat **AllowsBackgroundLoading = true** pole <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Další informace o PackageRegistrationAttribute najdete v tématu [registrace a zrušení registrace rozšíření VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
+- Je nutné přidat **AllowsBackgroundLoading = true** pole <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Další informace o PackageRegistrationAttribute najdete v tématu [registrace a zrušení registrace rozšíření VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
- Tady je příklad z AsyncPackage registraci asynchronní služby::  
+  Tady je příklad z AsyncPackage registraci asynchronní služby::  
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

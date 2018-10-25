@@ -16,12 +16,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ed245a1d26be951f6cada4b8ae58c158102d190
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 22dcd12eb366504ee1e7cdd19970ffe9913241bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862915"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Vytvoření balíčku Instalační služby systému Windows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,30 +31,30 @@ Datové jednotky modelu Instalační služby systému Windows. Místo psaní skr
 ## <a name="database-entries"></a>Položky databáze  
  K instalaci VSPackage balíček Instalační služby systému Windows musí obsahovat položky databáze k provádění následujících úloh:  
   
--   Hledat systému k vyhledání verze [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje vašeho balíčku VSPackage (pomocí tabulek Instalační služby systému Windows, které zahrnují AppSearch CompLocator, RegLocator, DrLocator a podpis).  
+- Hledat systému k vyhledání verze [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podporuje vašeho balíčku VSPackage (pomocí tabulek Instalační služby systému Windows, které zahrnují AppSearch CompLocator, RegLocator, DrLocator a podpis).  
   
--   Zrušit instalaci, pokud žádné podporovanou verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je nainstalovaná, nebo pokud jiné požadavky na systém ze sady VSPackage není splněná (pomocí tabulky LaunchCondition).  
+- Zrušit instalaci, pokud žádné podporovanou verzi [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] je nainstalovaná, nebo pokud jiné požadavky na systém ze sady VSPackage není splněná (pomocí tabulky LaunchCondition).  
   
--   Instalace balíčku VSPackage a závislé soubory (pomocí adresáře, komponenty a soubor tabulky).  
+- Instalace balíčku VSPackage a závislé soubory (pomocí adresáře, komponenty a soubor tabulky).  
   
--   Přidejte do registru (pomocí tabulky registru) odpovídajícími informacemi pro sady VSPackage.  
+- Přidejte do registru (pomocí tabulky registru) odpovídajícími informacemi pro sady VSPackage.  
   
--   Integrace sady VSPackage v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] voláním **/Setup devenv.exe** (pomocí tabulky CustomAction).  
+- Integrace sady VSPackage v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] voláním **/Setup devenv.exe** (pomocí tabulky CustomAction).  
   
- Další informace najdete v tématu [Instalační služby systému Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Další informace najdete v tématu [Instalační služby systému Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Instalační program nástroje  
  Různé nástroje třetích stran instalace nabízejí vývojové prostředí pro balíčky Instalační služby systému Windows. Dva bezplatné nástroje vám budou následující:  
   
--   InstallShield Limited Edition  
+- InstallShield Limited Edition  
   
-     Pomocí sady Visual Studio můžete získat omezenou verzi InstallShield **nový projekt** dialogového okna. Rozbalte **ostatní typy projektů** a pak vyberte **instalace a nasazení**. Vyberte šablonu InstallShield.  
+   Pomocí sady Visual Studio můžete získat omezenou verzi InstallShield **nový projekt** dialogového okna. Rozbalte **ostatní typy projektů** a pak vyberte **instalace a nasazení**. Vyberte šablonu InstallShield.  
   
--   Sada nástrojů XML pro Instalační službu systému Windows  
+- Sada nástrojů XML pro Instalační službu systému Windows  
   
-     Sada nástrojů sestavení balíčky Instalační služby systému Windows ze zdrojových souborů XML. Sada nástrojů je projekt open source Microsoftu. Stáhněte si zdrojový kód a spustitelné soubory z [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
+   Sada nástrojů sestavení balíčky Instalační služby systému Windows ze zdrojových souborů XML. Sada nástrojů je projekt open source Microsoftu. Stáhněte si zdrojový kód a spustitelné soubory z [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
- Pro komerční produkty, které se integrují do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pomocí [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], naleznete v tématu [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Pro komerční produkty, které se integrují do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pomocí [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], naleznete v tématu [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
   
 ## <a name="see-also"></a>Viz také  
  [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

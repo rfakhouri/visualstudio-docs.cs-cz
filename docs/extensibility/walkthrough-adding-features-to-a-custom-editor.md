@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873016"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Návod: Přidání funkcí do vlastního editoru
 Po vytvoření vlastního editoru můžete k němu přidat další funkce.  
@@ -126,34 +126,34 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 ## <a name="robust-programming"></a>Robustní programování  
   
--   Je vytvořena instance editoru, když volá rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. Pokud editor podporuje několik zobrazení `CreateEditorInstance` vytvoří data dokumentu a zobrazit objekty dokumentu. Pokud už je datový objekt dokumentu otevřít, nenulovým `punkDocDataExisting` je předána hodnota `IVsEditorFactory::CreateEditorInstance`. Vaše implementace objektu factory editoru musí zjistit, zda je existující objekt data dokumentu kompatibilní pomocí dotazu pro příslušné rozhraní. Další informace najdete v tématu [podpora více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md).  
+- Je vytvořena instance editoru, když volá rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. Pokud editor podporuje několik zobrazení `CreateEditorInstance` vytvoří data dokumentu a zobrazit objekty dokumentu. Pokud už je datový objekt dokumentu otevřít, nenulovým `punkDocDataExisting` je předána hodnota `IVsEditorFactory::CreateEditorInstance`. Vaše implementace objektu factory editoru musí zjistit, zda je existující objekt data dokumentu kompatibilní pomocí dotazu pro příslušné rozhraní. Další informace najdete v tématu [podpora více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md).  
   
--   Pokud používáte zjednodušený postup pro vkládání, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> rozhraní.  
+- Pokud používáte zjednodušený postup pro vkládání, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> rozhraní.  
   
--   Pokud se rozhodnete použít aktivace na místě, implementace následujících rozhraní:  
+- Pokud se rozhodnete použít aktivace na místě, implementace následujících rozhraní:  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  `IOleInPlaceComponent` Rozhraní se používá pro zabránění OLE 2 slučování nabídek.  
+  > [!NOTE]
+  >  `IOleInPlaceComponent` Rozhraní se používá pro zabránění OLE 2 slučování nabídek.  
   
-     Vaše `IOleCommandTarget` implementace zpracovává příkazy, jako **Vyjmout**, **kopírování**, a **vložit**. Při implementaci `IOleCommandTarget`, rozhodněte, jestli váš editor vyžaduje vlastní *.vsct* souboru definovat vlastní struktury příkaz nabídky nebo pokud jej můžete implementovat standardní příkazy určené [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Obvykle editory použít a rozšířit rozhraní IDE nabídky a definovat jejich vlastní panely nástrojů. Často je však nutné definovat vlastní specifické příkazy kromě pomocí rozhraní IDE sady standardních příkazů editoru. Musí deklarovat používá standardní příkazy a potom definovat, nových příkazů, kontextové nabídky, nejvyšší úrovně nabídky a panely nástrojů v editoru *.vsct* souboru. Je-li vytvořit místní aktivace editoru implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> a definovat nabídek a panelů nástrojů editoru v *.vsct* souboru namísto použití OLE 2 slučování nabídek.  
+   Vaše `IOleCommandTarget` implementace zpracovává příkazy, jako **Vyjmout**, **kopírování**, a **vložit**. Při implementaci `IOleCommandTarget`, rozhodněte, jestli váš editor vyžaduje vlastní *.vsct* souboru definovat vlastní struktury příkaz nabídky nebo pokud jej můžete implementovat standardní příkazy určené [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Obvykle editory použít a rozšířit rozhraní IDE nabídky a definovat jejich vlastní panely nástrojů. Často je však nutné definovat vlastní specifické příkazy kromě pomocí rozhraní IDE sady standardních příkazů editoru. Musí deklarovat používá standardní příkazy a potom definovat, nových příkazů, kontextové nabídky, nejvyšší úrovně nabídky a panely nástrojů v editoru *.vsct* souboru. Je-li vytvořit místní aktivace editoru implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> a definovat nabídek a panelů nástrojů editoru v *.vsct* souboru namísto použití OLE 2 slučování nabídek.  
   
--   Aby se zabránilo nakupení v uživatelském rozhraní příkaz nabídky, používejte stávajících příkazů v integrovaném vývojovém prostředí před inventing nových příkazů. Sdílené příkazy jsou definovány v *SharedCmdDef.vsct* a *ShellCmdDef.vsct*. Tyto soubory jsou nainstalovány ve výchozím nastavení v podadresáři VisualStudioIntegration\Common\Inc vaše [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalace.  
+- Aby se zabránilo nakupení v uživatelském rozhraní příkaz nabídky, používejte stávajících příkazů v integrovaném vývojovém prostředí před inventing nových příkazů. Sdílené příkazy jsou definovány v *SharedCmdDef.vsct* a *ShellCmdDef.vsct*. Tyto soubory jsou nainstalovány ve výchozím nastavení v podadresáři VisualStudioIntegration\Common\Inc vaše [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalace.  
   
--   `ISelectionContainer` můžete vyjádřit jednu i více výběrů. Každý vybraný objekt je implementovaný jako `IDispatch` objektu.  
+- `ISelectionContainer` můžete vyjádřit jednu i více výběrů. Každý vybraný objekt je implementovaný jako `IDispatch` objektu.  
   
--   Implementuje rozhraní IDE `IOleUndoManager` jako služby přístupné <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> nebo jako objekt, který se dá vytvořit instance prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Váš editor implementuje `IOleUndoUnit` rozhraní pro každou `Undo` akce.  
+- Implementuje rozhraní IDE `IOleUndoManager` jako služby přístupné <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> nebo jako objekt, který se dá vytvořit instance prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Váš editor implementuje `IOleUndoUnit` rozhraní pro každou `Undo` akce.  
   
--   Existují dvě místa vlastního editoru můžete zveřejnit objekty automatizace:  
+- Existují dvě místa vlastního editoru můžete zveřejnit objekty automatizace:  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>Viz také:  
  [Přispívání do modelu automatizace](../extensibility/internals/contributing-to-the-automation-model.md)   

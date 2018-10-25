@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819092"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools v sadě Visual Studio
 Entity Framework je objektově relační mapování technologie, která umožňuje vývojářům .NET pro práci s relačními daty pomocí objektů specifických pro doménu. Díky tomu není nutná většina kódu pro přístup k datům, který vývojáři obvykle musí vytvářet. Entity Framework je doporučené objektově relační mapování (ORM určené) modelování technologie pro nové aplikace .NET.
@@ -28,16 +28,16 @@ Jsou nainstalované nástroje Entity Framework jako součást **ukládání a zp
 
 Toto jsou konkrétní nástroje, které tvoří rozhraní Entity Framework tools v sadě Visual Studio:
 
--   Můžete použít [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] návrháře** (**návrháři entit**) pro vizuální vytvoření a úprava entit, přidružení, mapování a vztahy dědičnosti. **Návrháři entit** také vygeneruje [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] nebo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kódu na objektové vrstvě.
+- Můžete použít [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] návrháře** (**návrháři entit**) pro vizuální vytvoření a úprava entit, přidružení, mapování a vztahy dědičnosti. **Návrháři entit** také vygeneruje [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] nebo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kódu na objektové vrstvě.
 
--   Můžete použít  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] průvodce** vygenerujte konceptuálního modelu z existující databáze a přidejte informace o připojení databáze do vaší aplikace.
+- Můžete použít  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] průvodce** vygenerujte konceptuálního modelu z existující databáze a přidejte informace o připojení databáze do vaší aplikace.
 
--   Můžete použít **vytvořením databáze** nejprve vytvořte Koncepční model a pak vytvořit databázi, která podporuje model.
+- Můžete použít **vytvořením databáze** nejprve vytvořte Koncepční model a pak vytvořit databázi, která podporuje model.
 
--   Můžete použít **aktualizace modelu průvodce** aktualizovat konceptuální model, úložiště modelu a mapování, když se provedly změny do databáze.
+- Můžete použít **aktualizace modelu průvodce** aktualizovat konceptuální model, úložiště modelu a mapování, když se provedly změny do databáze.
 
-    > [!NOTE]
-    >  Od verze Visual Studio 2010, Entity Framework tools nepodporují [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > [!NOTE]
+  >  Od verze Visual Studio 2010, Entity Framework tools nepodporují [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Nástroje pro generování nebo upravit *edmx* souboru. To *edmx* soubor obsahuje informace, které popisují konceptuálního modelu, model úložiště a mapování mezi nimi. Další informace najdete v tématu [EDMX](https://docs.microsoft.com/ef/ef6/).
 
@@ -45,12 +45,12 @@ Nástroje pro generování nebo upravit *edmx* souboru. To *edmx* soubor obsahuj
 
 ## <a name="related-topics"></a>Související témata
 
-|Název|Popis|
-|-----------|-----------------|
-|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Popisuje způsob použití [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] nástroje, které [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] poskytuje k vytváření aplikací.|
-|[Model EDM (Entity Data Model)](/dotnet/framework/data/adonet/entity-data-model)|Obsahuje odkazy a informace pro práci s daty, která používá aplikace založené na [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|
-|[Dokumentace Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started)|Poskytuje index videa, kurzy a pokročilé dokumentací a pomohou vám využít na maximum Entity Framework.|
-|[ASP.NET 5 aplikace pro novou databázi](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Popisuje, jak vytvořit novou aplikaci ASP.NET 5 pomocí Entity Frameworku 7.|
+| Název | Popis |
+| - | - |
+| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Popisuje způsob použití [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] nástroje, které [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] poskytuje k vytváření aplikací. |
+| [Model EDM (Entity Data Model)](/dotnet/framework/data/adonet/entity-data-model) | Obsahuje odkazy a informace pro práci s daty, která používá aplikace založené na [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |
+| [Dokumentace Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started) | Poskytuje index videa, kurzy a pokročilé dokumentací a pomohou vám využít na maximum Entity Framework. |
+| [ASP.NET 5 aplikace pro novou databázi](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Popisuje, jak vytvořit novou aplikaci ASP.NET 5 pomocí Entity Frameworku 7. |
 
 ## <a name="see-also"></a>Viz také:
 

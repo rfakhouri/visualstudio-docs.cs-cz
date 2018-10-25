@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864670"
 ---
 # <a name="extend-projects"></a>Rozšíření projektů
 Projekty a řešení se způsoby, kterými Visual Studio slouží k uspořádání kódu a zdrojové soubory do jednotek pro kompilaci a nasazení. Můžete najít další informace o projektech v [projekty (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -36,7 +36,7 @@ Projekty a řešení se způsoby, kterými Visual Studio slouží k uspořádán
  Popisuje, jak vytvořit vlastní projektový systém.  
   
  [Ukládání dat v souborech projektu](../extensibility/saving-data-in-project-files.md)  
- Vysvětluje, jak přidat do projektu (*.* Proj *) soubory.  
+ Vysvětluje, jak přidat do projektu (<em>.</em> Proj *) soubory.  
   
  [Ověření podtypů projektu za běhu](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Vysvětluje, jak ověřit podtyp projektu za běhu.  

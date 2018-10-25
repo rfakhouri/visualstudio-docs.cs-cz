@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857676"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verz
 ## <a name="framework-targeting-features"></a>Funkce cílení rozhraní  
  Cílení rozhraní zahrnuje následující funkce:  
   
--   Když otevřete projekt, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] můžete automaticky upgradovat nebo ponechat cíl tak, jak je.  
+- Když otevřete projekt, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] můžete automaticky upgradovat nebo ponechat cíl tak, jak je.  
   
--   Když vytvoříte projekt, můžete určit verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , kterou chcete cílit.  
+- Když vytvoříte projekt, můžete určit verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , kterou chcete cílit.  
   
--   Můžete změnit verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] existující projekt cílí.  
+- Můžete změnit verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] existující projekt cílí.  
   
--   Můžete cílit na jinou verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v různé projekty ve stejném řešení.  
+- Můžete cílit na jinou verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] v různé projekty ve stejném řešení.  
   
--   Při změně verze [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , který je projekt cílen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] provede všechny potřebné změny odkazů a konfiguračních souborů.  
+- Při změně verze [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , který je projekt cílen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] provede všechny potřebné změny odkazů a konfiguračních souborů.  
   
- Když pracujete na projektu, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio dynamicky provádí následující změny vývojové prostředí, následujícím způsobem:  
+  Když pracujete na projektu, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio dynamicky provádí následující změny vývojové prostředí, následujícím způsobem:  
   
--   Filtruje položky **nový projekt** dialogovém okně **přidat novou položku** dialogovém okně **přidat nový odkaz** dialogovém okně a **přidat odkaz na službu** kde vynechává volby, které nejsou dostupné v cílených verzích.  
+- Filtruje položky **nový projekt** dialogovém okně **přidat novou položku** dialogovém okně **přidat nový odkaz** dialogovém okně a **přidat odkaz na službu** kde vynechává volby, které nejsou dostupné v cílených verzích.  
   
--   Filtruje vlastní ovládací prvky v **nástrojů** a odeberte ty, které nejsou dostupné v cílených verzích zobrazil pouze nejnovější ovládací prvky, když jsou k dispozici více ovládacích prvků.  
+- Filtruje vlastní ovládací prvky v **nástrojů** a odeberte ty, které nejsou dostupné v cílených verzích zobrazil pouze nejnovější ovládací prvky, když jsou k dispozici více ovládacích prvků.  
   
--   Filtruje nabídku technologie IntelliSense, která vynechává funkce jazyka, které nejsou dostupné v cílených verzích.  
+- Filtruje nabídku technologie IntelliSense, která vynechává funkce jazyka, které nejsou dostupné v cílených verzích.  
   
--   Filtruje vlastnosti v **vlastnosti** okno, aby byly vynechány ty, které nejsou dostupné v cílených verzích.  
+- Filtruje vlastnosti v **vlastnosti** okno, aby byly vynechány ty, které nejsou dostupné v cílených verzích.  
   
--   Filtruje možnosti nabídky, aby byly vynechány možnosti, které nejsou dostupné v cílených verzích.  
+- Filtruje možnosti nabídky, aby byly vynechány možnosti, které nejsou dostupné v cílených verzích.  
   
--   V případě sestavení používá verzi kompilátoru a možnosti kompilátoru, které jsou vhodné pro cílovou verzi.  
+- V případě sestavení používá verzi kompilátoru a možnosti kompilátoru, které jsou vhodné pro cílovou verzi.  
   
 > [!NOTE]
 >  Cílení rozhraní není zárukou, že vaše aplikace bude pracovat správně. Je nutné otestovat vaši aplikaci a ujistit se, že běží před cílovou verzi. Nelze zaměřit verze systému, které jsou starší než .NET Framework 2.0.  

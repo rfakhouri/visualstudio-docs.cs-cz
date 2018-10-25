@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851592"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definování profilu pro rozšíření UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
   
  Můžete definovat vlastní profily k přizpůsobení a rozšíření UML na vlastní obchodní oblast nebo architekturu. Příklad:  
   
--   Pokud často definujete webové stránky, můžete definovat vlastní profil, který obsahuje stereotyp "Webové stránky", který lze použít na třídy v diagramech tříd. Může pak použít diagramy tříd k plánování webu. Každá třída «Webová stránka» by měla další vlastnosti pro obsah stránky, styl a tak dále.  
+- Pokud často definujete webové stránky, můžete definovat vlastní profil, který obsahuje stereotyp "Webové stránky", který lze použít na třídy v diagramech tříd. Může pak použít diagramy tříd k plánování webu. Každá třída «Webová stránka» by měla další vlastnosti pro obsah stránky, styl a tak dále.  
   
--   Pokud vyvíjíte bankovní software, můžete definovat profil, který poskytuje stereotyp "Účet". Může pak použít diagramy tříd k definování různých typů účtu a zobrazení vztahů mezi nimi.  
+- Pokud vyvíjíte bankovní software, můžete definovat profil, který poskytuje stereotyp "Účet". Může pak použít diagramy tříd k definování různých typů účtu a zobrazení vztahů mezi nimi.  
   
- Ke svému týmu můžete distribuovat vlastní profily. Každý člen týmu může nainstalovat váš profil. Díky tomu mohou upravovat a vytvářet modely, které používají jeho stereotypy.  
+  Ke svému týmu můžete distribuovat vlastní profily. Každý člen týmu může nainstalovat váš profil. Díky tomu mohou upravovat a vytvářet modely, které používají jeho stereotypy.  
   
 > [!NOTE]
 >  Pokud aplikujete Stereotypy profilu v modelu, že upravujete a pak model sdílíte s ostatními lidmi, se musí ve svých počítačích instalovat stejný profil. V opačném případě nebudou moci zobrazit Stereotypy, které jste už použili.  
@@ -83,56 +83,56 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Definování profilu v nové rozšíření aplikace Visual Studio  
   
-1.  Vytvořte projekt rozšíření aplikace Visual Studio.  
+1. Vytvořte projekt rozšíření aplikace Visual Studio.  
   
-    > [!NOTE]
-    >  Je třeba mít nainstalovanou [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k použití tohoto postupu.  
+   > [!NOTE]
+   >  Je třeba mít nainstalovanou [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] k použití tohoto postupu.  
   
-    1.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+   1.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-    2.  V **nový projekt** dialogovém okně **nainstalované šablony**, rozbalte **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a potom klikněte na tlačítko  **Projekt VSIX**. Název projektu a klikněte na tlačítko **OK**.  
+   2.  V **nový projekt** dialogovém okně **nainstalované šablony**, rozbalte **Visual C#**, klikněte na tlačítko **rozšiřitelnost**a potom klikněte na tlačítko  **Projekt VSIX**. Název projektu a klikněte na tlačítko **OK**.  
   
-2.  Přidejte profil do projektu.  
+2. Přidejte profil do projektu.  
   
-    -   V Průzkumníku řešení klikněte pravým tlačítkem na projekt, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**. V dialogovém okně vyhledejte soubor profilu.  
+   -   V Průzkumníku řešení klikněte pravým tlačítkem na projekt, přejděte na **přidat**a potom klikněte na tlačítko **existující položku**. V dialogovém okně vyhledejte soubor profilu.  
   
-3.  Nastavte soubor profilu **kopírovat do výstupního** vlastnost.  
+3. Nastavte soubor profilu **kopírovat do výstupního** vlastnost.  
   
-    1.  V Průzkumníku řešení klikněte pravým tlačítkem myši na soubor profilu a potom klikněte na tlačítko **vlastnosti**.  
+   1.  V Průzkumníku řešení klikněte pravým tlačítkem myši na soubor profilu a potom klikněte na tlačítko **vlastnosti**.  
   
-    2.  V okně Vlastnosti nastavte **kopírovat do výstupního adresáře** vlastnost **vždy Kopírovat**.  
+   2.  V okně Vlastnosti nastavte **kopírovat do výstupního adresáře** vlastnost **vždy Kopírovat**.  
   
-4.  V Průzkumníku řešení otevřete `source.extension.vsixmanifest`.  
+4. V Průzkumníku řešení otevřete `source.extension.vsixmanifest`.  
   
-     Soubor se otevře v editoru manifestu rozšíření.  
+    Soubor se otevře v editoru manifestu rozšíření.  
   
-5.  Na **prostředky** stránce, přidejte řádek s popisem profilu:  
+5. Na **prostředky** stránce, přidejte řádek s popisem profilu:  
   
-    -   Klikněte na tlačítko **nové**. Nastavte pole v **přidat nové aktivum** dialogové okno následujícím způsobem.  
+   -   Klikněte na tlačítko **nové**. Nastavte pole v **přidat nové aktivum** dialogové okno následujícím způsobem.  
   
-    -   Nastavte **typ** do `Microsoft.VisualStudio.UmlProfile`  
+   -   Nastavte **typ** do `Microsoft.VisualStudio.UmlProfile`  
   
-         To však není jednou z možností rozevíracího seznamu. Tento název zadejte z klávesnice.  
+        To však není jednou z možností rozevíracího seznamu. Tento název zadejte z klávesnice.  
   
-    -   Klikněte na tlačítko **soubor v systému souborů** a vyberte název souboru profilu, například `MyProfile.profile`  
+   -   Klikněte na tlačítko **soubor v systému souborů** a vyberte název souboru profilu, například `MyProfile.profile`  
   
-6.  Sestavte projekt.  
+6. Sestavte projekt.  
   
-7.  **Chcete-li ladit tento profil**, stiskněte klávesu F5.  
+7. **Chcete-li ladit tento profil**, stiskněte klávesu F5.  
   
-     Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřete projekt modelování. V Průzkumníku UML vyberte kořenový prvek modelu a v okně Vlastnosti, vyberte svůj profil. Potom vyberte prvky uvnitř modelu a nastavte Stereotypy, které jste pro ně definována.  
+    Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřete projekt modelování. V Průzkumníku UML vyberte kořenový prvek modelu a v okně Vlastnosti, vyberte svůj profil. Potom vyberte prvky uvnitř modelu a nastavte Stereotypy, které jste pro ně definována.  
   
-8.  **Extrahování VSIX pro nasazení**  
+8. **Extrahování VSIX pro nasazení**  
   
-    1.  V Průzkumníku Windows otevřete složku **.\bin\Debug** nebo **.\bin\Release** najít **VSIX** souboru. Jedná se [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] souboru rozšíření. Může být nainstalován v počítači a odeslán ostatním uživatelům aplikace Visual Studio.  
+   1.  V Průzkumníku Windows otevřete složku **.\bin\Debug** nebo **.\bin\Release** najít **VSIX** souboru. Jedná se [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] souboru rozšíření. Může být nainstalován v počítači a odeslán ostatním uživatelům aplikace Visual Studio.  
   
-    2.  Chcete-li nainstalovat rozšíření:  
+   2.  Chcete-li nainstalovat rozšíření:  
   
-        1.  Dvakrát klikněte `.vsix` souboru. Instalační služba rozšíření Visual Studio se spustí.  
+       1.  Dvakrát klikněte `.vsix` souboru. Instalační služba rozšíření Visual Studio se spustí.  
   
-        2.  Restartujte všechny instance sady Visual Studio, na kterých běží.  
+       2.  Restartujte všechny instance sady Visual Studio, na kterých běží.  
   
- Následující alternativní postup lze použít pro malá rozšíření, pokud jste nenainstalovali [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+   Následující alternativní postup lze použít pro malá rozšíření, pokud jste nenainstalovali [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>Definování rozšíření profilu bez použití Visual Studio SDK  
   
@@ -348,24 +348,24 @@ Můžete definovat *profilu UML* k přizpůsobení prvků standardního modelu p
  Při otevření modelu UML se zobrazí následující chyba: **VS1707: následující profily nelze načíst, protože došlo k chybě serializace: MyProfile.profile**  
  1.  Ověřte správnost základní syntaxe XML souboru .profile.  
   
-2.  Zajistěte, aby byl každý název Monikeru v/ProfileName/nodename formuláři. ProfileName je hodnota atributu name v kořenovém uzlu profilu. NodeName je hodnota atributu name metatřídy, externalType nebo enumerationType.  
+2. Zajistěte, aby byl každý název Monikeru v/ProfileName/nodename formuláři. ProfileName je hodnota atributu name v kořenovém uzlu profilu. NodeName je hodnota atributu name metatřídy, externalType nebo enumerationType.  
   
-3.  Zkontrolujte syntaxi je podle postupu popsaného tady a jak je ukázáno v _jednotky_**: \Program Files\Microsoft sady Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. Zkontrolujte syntaxi je podle postupu popsaného tady a jak je ukázáno v _jednotky_**: \Program Files\Microsoft sady Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  Odinstalujte vadné rozšíření. Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
+4. Odinstalujte vadné rozšíření. Na **nástroje** nabídky, klikněte na tlačítko **rozšíření a aktualizace**.  
   
-    -   Pokud rozšíření nezobrazí, viz další položka.  
+   -   Pokud rozšíření nezobrazí, viz další položka.  
   
-5.  Znovu soubor VSIX a otevřete ho v Průzkumníku Windows opětovně nainstalovat. Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Znovu soubor VSIX a otevřete ho v Průzkumníku Windows opětovně nainstalovat. Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Rozšíření se nezobrazí ve Správci rozšíření, ale když se pokusíte znovu nainstalovat, zobrazí se následující zpráva: **rozšíření je již nainstalován na všech podporovaných produktů.**  
- 1.  Odeberte soubor rozšíření z podsložky *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [verze]  
+   Rozšíření se nezobrazí ve Správci rozšíření, ale když se pokusíte znovu nainstalovat, zobrazí se následující zpráva: **rozšíření je již nainstalován na všech podporovaných produktů.**  
+   1.  Odeberte soubor rozšíření z podsložky *LocalAppData*\Microsoft\VisualStudio\\\Extensions\ [verze]  
   
-    -   Chcete-li zobrazit *LocalAppData*, je nutné nastavit zobrazit skryté soubory a složky v kartě Zobrazení možností složky Windows Explorer.  
+   -   Chcete-li zobrazit *LocalAppData*, je nutné nastavit zobrazit skryté soubory a složky v kartě Zobrazení možností složky Windows Explorer.  
   
-    -   *LocalAppData* je obvykle v C:\Users\\*uživatelské jméno*\AppData\Local\  
+   -   *LocalAppData* je obvykle v C:\Users\\*uživatelské jméno*\AppData\Local\  
   
-2.  Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Restartujte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Viz také  
  [Přidávání stereotypů k elementům modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md)   

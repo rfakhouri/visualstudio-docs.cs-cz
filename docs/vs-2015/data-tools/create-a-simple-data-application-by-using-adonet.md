@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824279"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, provedete zák
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li vytvořit aplikaci, budete potřebovat:  
   
--   Visual Studio Community Edition.  
+- Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB.  
+- SQL Server Express LocalDB.  
   
--   Malá ukázková databáze, kterou vytvoříte podle postupu v [vytvoření databáze SQL pomocí skriptu](../data-tools/create-a-sql-database-by-using-a-script.md).  
+- Malá ukázková databáze, kterou vytvoříte podle postupu v [vytvoření databáze SQL pomocí skriptu](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   Připojovací řetězec pro databázi, jakmile ho nastavíte. Tuto hodnotu lze najít otevřením **Průzkumník objektů systému SQL Server**, otevřete místní nabídku pro databázi, že vyberete **vlastnosti**a přechodem na **ConnectionString** vlastnost.  
+- Připojovací řetězec pro databázi, jakmile ho nastavíte. Tuto hodnotu lze najít otevřením **Průzkumník objektů systému SQL Server**, otevřete místní nabídku pro databázi, že vyberete **vlastnosti**a přechodem na **ConnectionString** vlastnost.  
   
- Toto téma předpokládá, že ovládáte základní funkce integrovaného vývojového prostředí sady Visual Studio a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, Vložit tlačítka a další ovládací prvky na tyto formuláře, nastavit vlastnosti těchto ovládacích prvků a kódovat jednoduché události . Pokud si nejste seznámení s těmito úkoly, doporučujeme provést [Začínáme s Visual C# a Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) před započetím tohoto tématu.  
+  Toto téma předpokládá, že ovládáte základní funkce integrovaného vývojového prostředí sady Visual Studio a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, Vložit tlačítka a další ovládací prvky na tyto formuláře, nastavit vlastnosti těchto ovládacích prvků a kódovat jednoduché události . Pokud si nejste seznámení s těmito úkoly, doporučujeme provést [Začínáme s Visual C# a Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) před započetím tohoto tématu.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Nastavení ukázkové databáze  
  Vzorové databáze pro Tento názorný postup se skládá z tabulek Customer a Orders. Tabulky zpočátku neobsahují žádná data, ale přidáte data při spuštění aplikace, kterou vytvoříte. Databáze má také pět jednoduchých uložených procedur. [Vytvoření databáze SQL pomocí skriptu](../data-tools/create-a-sql-database-by-using-a-script.md) obsahuje skript Transact-SQL, který vytvoří tabulky, primární a cizí klíče, omezení a uložené procedury.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> Vytvoření formulářů a přidání ovládacích prvků  
   
-1.  Vytvoření projektu aplikace Windows Forms a pojmenujte ho SimpleDataApp.  
+1. Vytvoření projektu aplikace Windows Forms a pojmenujte ho SimpleDataApp.  
   
-     Visual Studio vytvoří projekt a několik souborů, včetně prázdný formulář Windows s názvem Form1.  
+    Visual Studio vytvoří projekt a několik souborů, včetně prázdný formulář Windows s názvem Form1.  
   
-2.  Přidejte do projektu dva formuláře Windows, tak, aby měl tři formuláře a dejte jim následující názvy:  
+2. Přidejte do projektu dva formuláře Windows, tak, aby měl tři formuláře a dejte jim následující názvy:  
   
-    -   Navigace  
+   -   Navigace  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  U každého formuláře přidejte textová pole, tlačítka a další ovládací prvky, které se zobrazují na následujících obrázcích. Pro každý ovládací prvek nastavte vlastnosti, které jsou popsány v tabulce.  
+3. U každého formuláře přidejte textová pole, tlačítka a další ovládací prvky, které se zobrazují na následujících obrázcích. Pro každý ovládací prvek nastavte vlastnosti, které jsou popsány v tabulce.  
   
-    > [!NOTE]
-    >  Skupinový rámeček a ovládací prvky popisku přehlednosti, ale nepoužívají se v kódu.  
+   > [!NOTE]
+   >  Skupinový rámeček a ovládací prvky popisku přehlednosti, ale nepoužívají se v kódu.  
   
- **Navigační formulář**  
+   **Navigační formulář**  
   
- ![Dialogové okno navigační](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![Dialogové okno navigační](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Ovládací prvky formuláře Navigation|Vlastnosti|  
 |--------------------------------------|----------------|  

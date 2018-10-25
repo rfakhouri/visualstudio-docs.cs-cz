@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812163"
 ---
 # <a name="network-usage"></a>Využití sítě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
 ## <a name="collecting-network-tool-data"></a>Shromažďování dat v síti nástroj  
  Měli byste spustit **sítě** nástroj s otevřít projekt aplikace Visual Studio na počítači aplikace Visual Studio.  
   
-1.  Otevřete projekt v sadě Visual Studio.  
+1. Otevřete projekt v sadě Visual Studio.  
   
-2.  V nabídce klikněte na tlačítko **ladění / Profiler výkonu...** . Zvolte **sítě**a klikněte na tlačítko **Start**.  
+2. V nabídce klikněte na tlačítko **ladění / Profiler výkonu...** . Zvolte **sítě**a klikněte na tlačítko **Start**.  
   
-3.  Nástroj pro sítě začne shromažďování provoz protokolu HTTP vaší aplikace.  
+3. Nástroj pro sítě začne shromažďování provoz protokolu HTTP vaší aplikace.  
   
-     Při spouštění vaší aplikace, souhrnné zobrazení v levém podokně automaticky zobrazí seznam zachycených operace HTTP. Vyberte položku na souhrnné zobrazení zobrazíte další informace najdete v podokně podrobností v pravém podokně.  
+    Při spouštění vaší aplikace, souhrnné zobrazení v levém podokně automaticky zobrazí seznam zachycených operace HTTP. Vyberte položku na souhrnné zobrazení zobrazíte další informace najdete v podokně podrobností v pravém podokně.  
   
-4.  Zvolte **Zastavit** zavřít aplikaci.  
+4. Zvolte **Zastavit** zavřít aplikaci.  
   
- V okně sestavy by měl vypadat přibližně takto:  
+   V okně sestavy by měl vypadat přibližně takto:  
   
- ![V okně sítě](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![V okně sítě](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analýza dat  
  Když vaše aplikace spuštěna, nebo i po zavření aplikace výběrem některé síťové operace zobrazí v souhrnném zobrazení můžete analyzovat zachycená data protokolu HTTP.  

@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827971"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Vytváření a konfigurace členů typů (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
 #### <a name="to-open-the-class-details-window"></a>Otevření okna podrobností třídy  
   
-1.  Klikněte pravým tlačítkem na jakékoli třídy v diagramu na zobrazení místní nabídky.  
+1. Klikněte pravým tlačítkem na jakékoli třídy v diagramu na zobrazení místní nabídky.  
   
-2.  V místní nabídce klikněte na tlačítko **okno podrobností třídy**.  
+2. V místní nabídce klikněte na tlačítko **okno podrobností třídy**.  
   
- – nebo -  
+   – nebo -  
   
 -   Přejděte na **ostatní Windows** v nabídce zobrazení a pak klikněte na tlačítko **podrobností třídy**.  
   
@@ -194,31 +194,31 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
  Řádky parametru obsahují následující položky:  
   
--   **Jméno**  
+- **Jméno**  
   
-     **Název** sloupců na řádku parametru zobrazí název parametru. Tento název se také zobrazí v **název** vlastností v okně Vlastnosti. Tuto buňku můžete použít ke změně názvu jakéhokoli parametru, který má oprávnění pro čtení i zápis.  
+   **Název** sloupců na řádku parametru zobrazí název parametru. Tento název se také zobrazí v **název** vlastností v okně Vlastnosti. Tuto buňku můžete použít ke změně názvu jakéhokoli parametru, který má oprávnění pro čtení i zápis.  
   
-     Odkazuje na název parametru zobrazí název parametru, pokud **název** sloupec je příliš úzký, aby se zobrazil celý název.  
+   Odkazuje na název parametru zobrazí název parametru, pokud **název** sloupec je příliš úzký, aby se zobrazil celý název.  
   
--   **Typ**  
+- **Typ**  
   
-     **Typ parametru** buňky používá technologii Intellisense, která vám umožní vybrat si ze seznamu všech typů dostupných v aktuálním projektu nebo v odkazovaných projektech.  
+   **Typ parametru** buňky používá technologii Intellisense, která vám umožní vybrat si ze seznamu všech typů dostupných v aktuálním projektu nebo v odkazovaných projektech.  
   
--   **Modifikátor**  
+- **Modifikátor**  
   
-     **Modifikátor** buňku na řádku parametru přijímá a zobrazuje nový modifikátor parametru. Pokud chcete zadat nový parametr modifikátoru, pomocí rozevíracího seznamu vyberte z **žádný**, **ref**, **si**, nebo **params** v C# a **ByVal**, **ByRef**, nebo **ParamArray** v jazyce VB.  
+   **Modifikátor** buňku na řádku parametru přijímá a zobrazuje nový modifikátor parametru. Pokud chcete zadat nový parametr modifikátoru, pomocí rozevíracího seznamu vyberte z **žádný**, **ref**, **si**, nebo **params** v C# a **ByVal**, **ByRef**, nebo **ParamArray** v jazyce VB.  
   
--   **Shrnutí**  
+- **Shrnutí**  
   
-     **Souhrn** buňku na řádku parametru umožňuje zadávání komentářů kódu, které se zobrazí v IntelliSense při zadání parametru do editoru kódu.  
+   **Souhrn** buňku na řádku parametru umožňuje zadávání komentářů kódu, které se zobrazí v IntelliSense při zadání parametru do editoru kódu.  
   
--   **\<Přidat parametr >**  
+- **\<Přidat parametr >**  
   
-     Poslední řádek parametru členu obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   Poslední řádek parametru členu obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Vlastnosti parametru v okně Vlastnosti**  
+  **Vlastnosti parametru v okně Vlastnosti**  
   
- V okně Vlastnosti zobrazí stejné vlastnosti parametru v okně podrobností třídy: **název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.  
+  V okně Vlastnosti zobrazí stejné vlastnosti parametru v okně podrobností třídy: **název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.  
   
 > [!NOTE]
 >  Chcete-li přidat parametr do delegáta, přečtěte si téma [vytváření členů](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
   
  Všechny buňky v okně podrobností třídy jsou editovatelné, s několika výjimkami:  
   
--   Celý typ je jen pro čtení, když, například se nachází v odkazovaném sestavení (viz [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Při výběru tvaru v Návrháři tříd, okno podrobností třídy zobrazí jeho detaily ve stavu jen pro čtení.  
+- Celý typ je jen pro čtení, když, například se nachází v odkazovaném sestavení (viz [zobrazení jen pro čtení informací (návrhář tříd)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Při výběru tvaru v Návrháři tříd, okno podrobností třídy zobrazí jeho detaily ve stavu jen pro čtení.  
   
--   V případě indexerů je název jen pro čtení a zbytek (typ, modifikátor, shrnutí) je editovatelný.  
+- V případě indexerů je název jen pro čtení a zbytek (typ, modifikátor, shrnutí) je editovatelný.  
   
--   V okně podrobností třídy mají všechny obecné typy parametry jen pro čtení. Chcete-li změnit obecný parametr, upravte jeho zdrojový kód.  
+- V okně podrobností třídy mají všechny obecné typy parametry jen pro čtení. Chcete-li změnit obecný parametr, upravte jeho zdrojový kód.  
   
--   Název parametru typu, který je definován na obecném typu, je jen pro čtení.  
+- Název parametru typu, který je definován na obecném typu, je jen pro čtení.  
   
--   Když je kód typu porušen (nelze jej analyzovat), okno podrobností třídy zobrazí obsah typu jen pro čtení.  
+- Když je kód typu porušen (nelze jej analyzovat), okno podrobností třídy zobrazí obsah typu jen pro čtení.  
   
- **Okno podrobností třídy a zdrojový kód**  
+  **Okno podrobností třídy a zdrojový kód**  
   
--   Kliknutím pravým tlačítkem myši na tvar v okně podrobností třídy (nebo Návrhář tříd) a následným kliknutím na příkaz Zobrazit kód můžete zobrazit zdrojový kód. Otevře se soubor zdrojového kódu a zobrazení se posune na vybraný prvek.  
+- Kliknutím pravým tlačítkem myši na tvar v okně podrobností třídy (nebo Návrhář tříd) a následným kliknutím na příkaz Zobrazit kód můžete zobrazit zdrojový kód. Otevře se soubor zdrojového kódu a zobrazení se posune na vybraný prvek.  
   
--   Změna zdrojového kódu se okamžitě projeví v zobrazení informací podpisu v okně Návrhář třídy a Podrobnosti třídy. Pokud je okno podrobností třídy v daném okamžiku zavřeno, nové informace se zobrazí při příštím otevření okna.  
+- Změna zdrojového kódu se okamžitě projeví v zobrazení informací podpisu v okně Návrhář třídy a Podrobnosti třídy. Pokud je okno podrobností třídy v daném okamžiku zavřeno, nové informace se zobrazí při příštím otevření okna.  
   
--   Když je kód typu porušen (nelze jej analyzovat), okno podrobností třídy zobrazí obsah typu jen pro čtení.  
+- Když je kód typu porušen (nelze jej analyzovat), okno podrobností třídy zobrazí obsah typu jen pro čtení.  
   
- **Funkce schránky v okně podrobností třídy**  
+  **Funkce schránky v okně podrobností třídy**  
   
- Z okna podrobností třídy můžete kopírovat nebo vyjímat pole či řádky a vkládat je do jiného typu. Řádek můžete vyjmout, pouze pokud je jen pro čtení. Po vložení řádku okno podrobností třídy přiřadí nový název (odvozený od názvu zkopírovaného řádku), aby nedošlo ke konfliktu.  
+  Z okna podrobností třídy můžete kopírovat nebo vyjímat pole či řádky a vkládat je do jiného typu. Řádek můžete vyjmout, pouze pokud je jen pro čtení. Po vložení řádku okno podrobností třídy přiřadí nový název (odvozený od názvu zkopírovaného řádku), aby nedošlo ke konfliktu.  
   
 ##  <a name="ReadOnlyInfo"></a> Zobrazení informací jen pro čtení  
  Návrhář tříd a okno podrobností třídy mohou zobrazit typy (a členy typů) pro:  
   
--   projekt, který obsahuje diagram třídy  
+- projekt, který obsahuje diagram třídy  
   
--   projekt odkazovaný z projektu, který obsahuje diagram třídy  
+- projekt odkazovaný z projektu, který obsahuje diagram třídy  
   
--   sestavení odkazované z projektu, který obsahuje diagram třídy  
+- sestavení odkazované z projektu, který obsahuje diagram třídy  
   
- V posledních dvou případech je odkazovaná entita (typ nebo člen) v diagramu tříd, který ji reprezentuje, jen pro čtení.  
+  V posledních dvou případech je odkazovaná entita (typ nebo člen) v diagramu tříd, který ji reprezentuje, jen pro čtení.  
   
- Celý projekt nebo jeho části, například jednotlivé soubory, mohou být jen pro čtení. Většina běžných případů, ve kterých projekt nebo jeden z jeho souborů, je jen pro čtení, jsou takové, kdy se projekt nachází v rámci správy zdrojového kódu (a není rezervován), existuje v externím sestavení nebo když operační systém považuje soubory za soubory jen pro čtení.  
+  Celý projekt nebo jeho části, například jednotlivé soubory, mohou být jen pro čtení. Většina běžných případů, ve kterých projekt nebo jeden z jeho souborů, je jen pro čtení, jsou takové, kdy se projekt nachází v rámci správy zdrojového kódu (a není rezervován), existuje v externím sestavení nebo když operační systém považuje soubory za soubory jen pro čtení.  
   
- **Správa zdrojového kódu**  
+  **Správa zdrojového kódu**  
   
- Protože diagram tříd je uložen jako soubor v projektu, je třeba projekt rezervovat, aby se uložily všechny změny, které provedete v okně Návrhář tříd nebo okně podrobností třídy.  
+  Protože diagram tříd je uložen jako soubor v projektu, je třeba projekt rezervovat, aby se uložily všechny změny, které provedete v okně Návrhář tříd nebo okně podrobností třídy.  
   
- **Projekty jen pro čtení**  
+  **Projekty jen pro čtení**  
   
- Projekt může být jen pro čtení z jiného důvodu než pro správu zdrojového kódu. Při zavírání projektu se zobrazí dialogové okno s dotazem, zda chcete přepsat soubor projektu, zahodit změny (bez uložení) nebo zrušit operaci zavření. Pokud zvolíte přepsání, soubory projektu jsou přepsány a nastaveny pro čtení i zápis. Je přidán nový soubor diagramu tříd.  
+  Projekt může být jen pro čtení z jiného důvodu než pro správu zdrojového kódu. Při zavírání projektu se zobrazí dialogové okno s dotazem, zda chcete přepsat soubor projektu, zahodit změny (bez uložení) nebo zrušit operaci zavření. Pokud zvolíte přepsání, soubory projektu jsou přepsány a nastaveny pro čtení i zápis. Je přidán nový soubor diagramu tříd.  
   
- **Typy jen pro čtení**  
+  **Typy jen pro čtení**  
   
- Pokud se pokusíte uložit projekt obsahující typ, jehož soubor zdrojového kódu je jen pro čtení, **uložení souboru jen pro čtení** se zobrazí dialogové okno, které nabízí možnost uložit soubor pod novým názvem nebo nové umístění nebo přepsat soubor jen pro čtení . Pokud soubor přepíšete, nová kopie již není jen pro čtení.  
+  Pokud se pokusíte uložit projekt obsahující typ, jehož soubor zdrojového kódu je jen pro čtení, **uložení souboru jen pro čtení** se zobrazí dialogové okno, které nabízí možnost uložit soubor pod novým názvem nebo nové umístění nebo přepsat soubor jen pro čtení . Pokud soubor přepíšete, nová kopie již není jen pro čtení.  
   
- Pokud soubor s kódem obsahuje chybu syntaxe, tvary zobrazující kód v daném souboru budou dočasně jen pro čtení, dokud chyba syntaxe nebude opravena. Tvary v tomto stavu zobrazí červený text a červenou ikonu, která zobrazí popisek s textem „Soubor zdrojového kódu obsahuje chybu analýzy“.  
+  Pokud soubor s kódem obsahuje chybu syntaxe, tvary zobrazující kód v daném souboru budou dočasně jen pro čtení, dokud chyba syntaxe nebude opravena. Tvary v tomto stavu zobrazí červený text a červenou ikonu, která zobrazí popisek s textem „Soubor zdrojového kódu obsahuje chybu analýzy“.  
   
- Odkazovaný typ (například typ rozhraní .NET Framework), který existuje v rámci jiného uzlu projektu nebo uzlu odkazovaného sestavení, je na návrhové ploše Návrháře tříd uveden jako jen pro čtení. Místní typ, který existuje v projektu, jež chcete otevřít, je pro čtení i zápis a jeho tvar na návrhové ploše Návrháře tříd je takto označen.  
+  Odkazovaný typ (například typ rozhraní .NET Framework), který existuje v rámci jiného uzlu projektu nebo uzlu odkazovaného sestavení, je na návrhové ploše Návrháře tříd uveden jako jen pro čtení. Místní typ, který existuje v projektu, jež chcete otevřít, je pro čtení i zápis a jeho tvar na návrhové ploše Návrháře tříd je takto označen.  
   
- Indexery jsou pro čtení i zápis v kódu a v okně podrobností třídy, ale název indexeru je jen pro čtení.  
+  Indexery jsou pro čtení i zápis v kódu a v okně podrobností třídy, ale název indexeru je jen pro čtení.  
   
- Částečné metody nelze upravovat pomocí Návrháře tříd nebo v okně podrobností třídy; k úpravám je nutné použít Editor kódu.  
+  Částečné metody nelze upravovat pomocí Návrháře tříd nebo v okně podrobností třídy; k úpravám je nutné použít Editor kódu.  
   
- Nativní kód C++ nelze upravovat pomocí Návrháře tříd nebo v okně podrobností třídy; k úpravám je nutné použít Editor kódu.  
+  Nativní kód C++ nelze upravovat pomocí Návrháře tříd nebo v okně podrobností třídy; k úpravám je nutné použít Editor kódu.  
   
 ## <a name="related-topics"></a>Související témata  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837557"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Můžete změnit chování některé standardní příkazy, které jsou automati
   
  Stručně řečeno, úprava příkazu:  
   
-1.  [Zjistit, jaké příkazy lze upravit](#what).  
+1. [Zjistit, jaké příkazy lze upravit](#what).  
   
-2.  [Vytvořit deklaraci částečné třídy příslušný příkaz set](#extend).  
+2. [Vytvořit deklaraci částečné třídy příslušný příkaz set](#extend).  
   
-3.  [Přepsání metody ProcessOnStatus a ProcessOnMenu](#override) pro příkaz.  
+3. [Přepsání metody ProcessOnStatus a ProcessOnMenu](#override) pro příkaz.  
   
- Toto téma vysvětluje postup.  
+   Toto téma vysvětluje postup.  
   
 > [!NOTE]
 >  Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Psaní kódu metod  
  Následující fragmenty jsou často užitečné v rámci těchto metod:  
   
--   `this.CurrentSelection`. Obrazec, který klikli pravým tlačítkem myši uživatele je vždy součástí tohoto seznamu obrazců a konektorů. Pokud uživatel klikne na prázdnou část diagramu, diagramu je jediným členem seznamu.  
+- `this.CurrentSelection`. Obrazec, který klikli pravým tlačítkem myši uživatele je vždy součástí tohoto seznamu obrazců a konektorů. Pokud uživatel klikne na prázdnou část diagramu, diagramu je jediným členem seznamu.  
   
--   `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.  
+- `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` -uživatel nevybrali více tvarů  
+- `this.IsSingleSelection()` -uživatel nevybrali více tvarů  
   
--   `this.SingleSelection` – vybraný tvar nebo diagram, který klikli pravým tlačítkem myši uživatele  
+- `this.SingleSelection` – vybraný tvar nebo diagram, který klikli pravým tlačítkem myši uživatele  
   
--   `shape.ModelElement as MyLanguageElement` -prvku modelu reprezentovány ve tvaru.  
+- `shape.ModelElement as MyLanguageElement` -prvku modelu reprezentovány ve tvaru.  
   
- Další informace o tom, jak přejít z elementu a o tom, jak vytvořit objekty a propojení najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Další informace o tom, jak přejít z elementu a o tom, jak vytvořit objekty a propojení najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.ComponentModel.Design.MenuCommand>   

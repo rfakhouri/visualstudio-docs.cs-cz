@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824396"
 ---
 # <a name="animations-for-visual-studio"></a>Animace pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178422"
   
 #### <a name="do-not"></a>Ne:  
   
--   Použít malé pohybů plb typu (pohyb v malé náklady), preferují sníží (zesvětlí) a změny v průběhu přesouvání objektů.  
+- Použít malé pohybů plb typu (pohyb v malé náklady), preferují sníží (zesvětlí) a změny v průběhu přesouvání objektů.  
   
--   Použití animací probíhat přes velké části plochy obrazovky. Bez ohledu na velikost je tento styl animace rušivé uživateli.  
+- Použití animací probíhat přes velké části plochy obrazovky. Bez ohledu na velikost je tento styl animace rušivé uživateli.  
   
--   Použití animací, které nesouvisí se objekt, který uživatel právě fokus na nebo interakci s.  
+- Použití animací, které nesouvisí se objekt, který uživatel právě fokus na nebo interakci s.  
   
--   Použití animací vyžadující interakci uživatele resetovat stav, jako je například vynucení uživatele blikající oznámení, aby bylo možné ho zastavit blikat reagovat. Interakce s nimi žádným způsobem by měla stačit zrušit je.  
+- Použití animací vyžadující interakci uživatele resetovat stav, jako je například vynucení uživatele blikající oznámení, aby bylo možné ho zastavit blikat reagovat. Interakce s nimi žádným způsobem by měla stačit zrušit je.  
   
- Další informace o aplikacích pro tyto osvědčené postupy najdete v tématu [animace vzory](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Další informace o aplikacích pro tyto osvědčené postupy najdete v tématu [animace vzory](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Animace metriky  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178422"
 ### <a name="overview"></a>Přehled  
  Animace v sadě Visual Studio mají sloužit konkrétní funkci a není překážkou snížení produktivity uživatelů. Obecné animace vlastnosti dodržovat patří:  
   
--   Malé a nerušivý  
+- Malé a nerušivý  
   
--   Fyzická a realistické  
+- Fyzická a realistické  
   
--   Tlumeném a současně lákavé  
+- Tlumeném a současně lákavé  
   
--   Rychlé a efektivní  
+- Rychlé a efektivní  
   
--   Volný, ne hurried  
+- Volný, ne hurried  
   
- Následující obrázek znázorňuje styly animace doporučené pro použití v sadě Visual Studio. Například fade žádná animace a drobným animace / setmění se nejčastěji používají. Omezené aplikace pohybu animace například rozbalte a smlouvy, poloha změny a otáčení X a Y.  
+  Následující obrázek znázorňuje styly animace doporučené pro použití v sadě Visual Studio. Například fade žádná animace a drobným animace / setmění se nejčastěji používají. Omezené aplikace pohybu animace například rozbalte a smlouvy, poloha změny a otáčení X a Y.  
   
- ![Doporučuje se animace, styly pro Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
+  ![Doporučuje se animace, styly pro Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
   
- **Doporučené animace styly pro sadu Visual Studio**  
+  **Doporučené animace styly pro sadu Visual Studio**  
   
 #### <a name="appear-and-disappear"></a>Zobrazí a zmizí  
  V tomto modelu přepne element z viditelné mimo zobrazení a zpět bez přechodu animace:  
@@ -363,65 +363,65 @@ ms.locfileid: "49178422"
   
 #### <a name="tab-open"></a>Otevřete kartu  
   
--   Style: Zobrazí  
+- Style: Zobrazí  
   
--   Doba trvání: Nula sekund  
+- Doba trvání: Nula sekund  
   
- ![Karta otevřít animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
+  ![Karta otevřít animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
   
 #### <a name="tab-close"></a>Zavřete kartu  
   
--   Styl: Změnit pozice X  
+- Styl: Změnit pozice X  
   
--   Doba trvání: 200 MS  
+- Doba trvání: 200 MS  
   
- ![Karta zavřít animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
+  ![Karta zavřít animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
   
 #### <a name="tab-reorder"></a>Změnit pořadí karty  
   
--   Styl: Změnit pozice X  
+- Styl: Změnit pozice X  
   
--   Doba trvání: 200 MS  
+- Doba trvání: 200 MS  
   
- ![Kartě animace přesunout v pořadí v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
+  ![Kartě animace přesunout v pořadí v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
   
 #### <a name="close-floating-document"></a>Zavřít dokument s plovoucí desetinnou čárkou  
   
--   Style: Zobrazí  
+- Style: Zobrazí  
   
--   Doba trvání: 200 MS  
+- Doba trvání: 200 MS  
   
- ![Plovoucí dokument animace v sadě Visual Studio Zavřít](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
+  ![Plovoucí dokument animace v sadě Visual Studio Zavřít](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>Okno přechod stavu  
   
--   Style: Pro zajištění konzistence s ostatními okny, umožňují definovat animace zavřít dokument aktuálního operačního systému.  
+- Style: Pro zajištění konzistence s ostatními okny, umožňují definovat animace zavřít dokument aktuálního operačního systému.  
   
--   Doba trvání: 200 MS  
+- Doba trvání: 200 MS  
   
- ![Okno stavu přechodu animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
+  ![Okno stavu přechodu animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>Otevřete nabídku  
   
--   Style: vysouvaly  
+- Style: vysouvaly  
   
--   Doba trvání: 200 MS  
+- Doba trvání: 200 MS  
   
- ![Nabídka animace otevřít v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
+  ![Nabídka animace otevřít v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
   
 #### <a name="menu-close"></a>Zavřete nabídku  
   
--   Style: Fade-out  
+- Style: Fade-out  
   
--   Doba trvání: 200 MS  
+- Doba trvání: 200 MS  
   
- ![Nabídka zavřít animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
+  ![Nabídka zavřít animace v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Zobrazit okno nástroje automatického schovávání  
   
--   Style: Zobrazí  
+- Style: Zobrazí  
   
--   Doba trvání: Nula sekund  
+- Doba trvání: Nula sekund  
   
- ![Automatické&#45;skrýt animace okno nástroje v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
+  ![Automatické&#45;skrýt animace okno nástroje v sadě Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
 

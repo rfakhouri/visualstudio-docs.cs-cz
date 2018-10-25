@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b83fbf98143511bac19bef1fb2b528c71517a55f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823006"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Zpracování nezabezpečené specifikace DTD
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -26,10 +27,12 @@ ms.locfileid: "45546782"
 |Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
- Pokud používáte nezabezpečené <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instance nebo odkaz na externí entity zdroje, analyzátor může přijmout nedůvěryhodné vstupní tak zveřejnit citlivé informace, které útočníci.
+
+Pokud používáte nezabezpečené <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instance nebo odkaz na externí entity zdroje, analyzátor může přijmout nedůvěryhodné vstupní tak zveřejnit citlivé informace, které útočníci.
 
 ## <a name="rule-description"></a>Popis pravidla
- A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:
+
+A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnosti dokumentu, podle definice [World Wide Web Consortium (W3C) značky XML (Extensible Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo vyhledá vlastnosti a instance, kde je nedůvěryhodná data přijat upozornit vývojáře o potenciál [informacím](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:
 
 - Je zapnutá DtdProcessing <xref:System.Xml.XmlReader> instanci, která přeloží externí entity XML pomocí <xref:System.Xml.XmlUrlResolver>.
 
@@ -43,7 +46,7 @@ ms.locfileid: "45546782"
 
 - <xref:System.Xml.XmlReader> je vytvořen s nezabezpečené výchozí nastavení nebo hodnoty.
 
- Ve všech těchto případech je výsledek stejný: obsah buď soubor systému nebo síťových sdílených složek z počítače, kde je zpracování souboru XML se zveřejní pro útočníka, který pak mohou být použity jako vektor DoS.
+Ve všech těchto případech je výsledek stejný: obsah buď soubor systému nebo síťových sdílených složek z počítače, kde je zpracování souboru XML se zveřejní pro útočníka, který pak mohou být použity jako vektor DoS.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -55,23 +58,24 @@ ms.locfileid: "45546782"
 
 - Ujistěte se, že <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> vlastnost <xref:System.Data.DataViewManager> přiřazena z důvěryhodného zdroje.
 
- Rozhraní .NET 3.5 a starší
+**Rozhraní .NET 3.5 a starší**
 
 - Zakázat zpracování DTD, pokud pracujete se sekvenčním nedůvěryhodných zdrojů tak, že nastavíte <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> vlastnost **true** .
 
 - Pomocí třídy XmlTextReader má vyžádané dědičnosti úplný vztah důvěryhodnosti.
 
- Rozhraní .NET 4 a novější
+**Rozhraní .NET 4 a novější**
 
 - Nedoporučujeme povolovat DtdProcessing, pokud pracujete s nedůvěryhodných zdrojů tak, že nastavíte <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> vlastnost **zakázat** nebo **Ignorovat**.
 
 - Zajistěte, aby metoda Load() XmlReader instance ve všech případech InnerXml.
 
 > [!NOTE]
->  Toto pravidlo může vykazovat některé platné instance XmlSecureResolver počet falešně pozitivních výsledků. Pracujeme na řešení tohoto problému mid 2016.
+> Toto pravidlo může vykazovat některé platné instance XmlSecureResolver počet falešně pozitivních výsledků.
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
- Pokud si nejste jisti, že vstup je znám jako z důvěryhodného zdroje, nepotlačujte pravidlo z tohoto upozornění.
+
+Pokud si nejste jisti, že vstup je znám jako z důvěryhodného zdroje, nepotlačujte pravidlo z tohoto upozornění.
 
 ## <a name="pseudo-code-examples"></a>Příklady pseudo kódu
 

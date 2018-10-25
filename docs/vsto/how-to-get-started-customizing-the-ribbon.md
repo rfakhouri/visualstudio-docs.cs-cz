@@ -18,64 +18,64 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838338"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Postupy: Začínáme s přizpůsobením pásu karet
-  Chcete-li přizpůsobit na pásu karet z aplikace Microsoft Office, přidejte **pásu karet (vizuálního návrháře)** nebo **pásu karet (XML)** položku do projektu Office.  
+  Přizpůsobení pásu karet aplikace Microsoft Office, přidejte **pás karet (vizuální návrhář)** nebo **pásu karet (XML)** položky projektu sady Office.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Chcete-li přidat pásu karet do projektu  
   
-1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
+1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.  
   
-2.  V **přidat novou položku** dialogové okno, vyberte **pásu karet (vizuálního návrháře)** nebo **pásu karet (XML)**. Další informace o těchto šablon najdete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
+2. V **přidat novou položku** dialogu **pás karet (vizuální návrhář)** nebo **pásu karet (XML)**. Další informace o těchto šablon naleznete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
   
-3.  V **název** zadejte název pro položku pásu karet.  
+3. V **název** zadejte název položky pásu karet.  
   
-     Názvy nesmí obsahovat následující znaky:  
+    Názvy nesmí obsahovat následující znaky:  
   
-    -   Křížku (#)  
+   -   Křížek (#)  
   
-    -   Procent (%)  
+   -   Procent (%)  
   
-    -   Ampersand (&)  
+   -   Ampersand (&)  
   
-    -   Znak hvězdičky (*)  
+   -   Hvězdička (*)  
   
-    -   Svislé čáry (|)  
+   -   Svislá čára (|)  
   
-    -   Zpětné lomítko (\\)  
+   -   Zpětné lomítko (\\)  
   
-    -   Dvojtečkou (:)  
+   -   Dvojtečka (:)  
   
-    -   Dvojité uvozovky (")  
+   -   Dvojité uvozovky (")  
   
-    -   Menší než (\<)  
+   -   Menší než (\<)  
   
-    -   Větší než (>)  
+   -   Větší než (>)  
   
-    -   Otazník (?)  
+   -   Otazník (?)  
   
-    -   Předat dál lomítko (/)  
+   -   Vpřed lomítko (/)  
   
-    -   Počáteční nebo koncové mezery ("")  
+   -   Úvodní a koncové mezery ("")  
   
-    -   Názvy vyhrazené pro Windows nebo DOS například ("nul", "aux", "con", "com1", "lpt1" a tak dále)  
+   -   Názvy vyhrazené pro Windows nebo DOS, jako je například ("nul", "aux", "con", "com1", "lpt1" a tak dále)  
   
-4.  Click **OK**.  
+4. Klikněte na tlačítko **OK**.  
   
- Položka pásu karet se zobrazí v **Průzkumníku řešení**. Informace o dalších krocích, najdete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
+   Položky pásu karet se zobrazí v **Průzkumníka řešení**. Informace o dalších krocích, najdete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Návrhář pásu karet](../vsto/ribbon-designer.md)   
- [Kódu XML pásu karet](../vsto/ribbon-xml.md)   
+ [Pás karet – XML](../vsto/ribbon-xml.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   

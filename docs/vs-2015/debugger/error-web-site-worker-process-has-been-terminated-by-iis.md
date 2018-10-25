@@ -21,12 +21,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ed595d5c6bf23e6c9525c1043a74592c3fb48e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45ade231d24fe5e544110ed338abb935adbf423f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857572"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Chyba: Pracovní proces webu byl ukončen službou IIS.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,33 +37,33 @@ Ladicí program zastavení provádění kódu na webu. Internetové informační
   
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>Ke konfiguraci služby IIS 7 umožňuje pracovního procesu pokračovat  
   
-1.  Otevřít **nástroje pro správu** okna.  
+1. Otevřít **nástroje pro správu** okna.  
   
-    1.  Klikněte na tlačítko **Start**a klikněte na tlačítko **ovládací panely**.  
+   1.  Klikněte na tlačítko **Start**a klikněte na tlačítko **ovládací panely**.  
   
-    2.  V **ovládací panely**, zvolte **přepnout do klasického zobrazení**, v případě potřeby a potom dvakrát klikněte na panel **nástroje pro správu**.  
+   2.  V **ovládací panely**, zvolte **přepnout do klasického zobrazení**, v případě potřeby a potom dvakrát klikněte na panel **nástroje pro správu**.  
   
-2.  V **nástroje pro správu** okna, dvakrát klikněte na panel **Správce Internetové informační služby (IIS)**.  
+2. V **nástroje pro správu** okna, dvakrát klikněte na panel **Správce Internetové informační služby (IIS)**.  
   
-     Otevře se Správce služby IIS.  
+    Otevře se Správce služby IIS.  
   
-3.  V **připojení** podokně rozbalte \<název počítače > uzel v případě potřeby.  
+3. V **připojení** podokně rozbalte \<název počítače > uzel v případě potřeby.  
   
-4.  V části \<název počítače > uzel, klikněte na tlačítko **fondy aplikací**.  
+4. V části \<název počítače > uzel, klikněte na tlačítko **fondy aplikací**.  
   
-5.  V **fondy aplikací** seznamu, klikněte pravým tlačítkem na název fondu vaše aplikace spuštěná v a pak klikněte na tlačítko **Upřesnit nastavení**.  
+5. V **fondy aplikací** seznamu, klikněte pravým tlačítkem na název fondu vaše aplikace spuštěná v a pak klikněte na tlačítko **Upřesnit nastavení**.  
   
-6.  V **Upřesnit nastavení** dialogové okno vyhledejte **Model procesu** části a proveďte jednu z následujících akcí:  
+6. V **Upřesnit nastavení** dialogové okno vyhledejte **Model procesu** části a proveďte jednu z následujících akcí:  
   
-    -   Nastavte **povolený příkaz Ping** k **False**.  
+   - Nastavte **povolený příkaz Ping** k **False**.  
   
-    -   Nastavte **maximální prodleva příkazu Ping** na hodnotu, která je větší než 90 sekund.  
+   - Nastavte **maximální prodleva příkazu Ping** na hodnotu, která je větší než 90 sekund.  
   
      Nastavení **povolený příkaz Ping** k **False** zabraňuje kontroluje, zda pracovní proces je pořád spuštěný a zachová pracovní proces aktivní, dokud jej nezastavíte laděného procesu služby IIS. Nastavení **maximální prodleva příkazu Ping** velké hodnoty umožňuje pokračovat v monitorování pracovní proces služby IIS.  
   
-7.  Klikněte na tlačítko **OK** zavřete **Upřesnit nastavení** dialogové okno.  
+7. Klikněte na tlačítko **OK** zavřete **Upřesnit nastavení** dialogové okno.  
   
-8.  Zavřete Správce služby IIS a **nástroje pro správu** okna.  
+8. Zavřete Správce služby IIS a **nástroje pro správu** okna.  
   
 ## <a name="see-also"></a>Viz také  
  [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)

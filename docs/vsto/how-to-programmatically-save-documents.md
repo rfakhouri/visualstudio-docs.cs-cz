@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00ad8f91e738cb98aeba93b69cb47c6ab644aa3f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883470"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Postupy: ukládání dokumentů prostřednictvím kódu programu
   Existuje několik způsobů k uložení dokumentů Microsoft Office Word. Dokument lze uložit beze změny název dokumentu nebo ukládáte dokument s novým názvem.  
@@ -39,12 +39,12 @@ ms.locfileid: "35675677"
   
 ### <a name="to-save-the-active-document"></a>Uložení aktivního dokumentu  
   
-1.  Volání <xref:Microsoft.Office.Interop.Word._Document.Save%2A> metodu pro aktivní dokument. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.  
+1. Volání <xref:Microsoft.Office.Interop.Word._Document.Save%2A> metodu pro aktivní dokument. Pokud chcete použít tento příklad kódu, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídu ve vašem projektu.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-     [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
+    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
+    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
   
- Pokud si nejste jisti, zda je dokument, který chcete uložit aktivní dokument, je můžete na něj odkazovat pomocí jeho názvu.  
+   Pokud si nejste jisti, zda je dokument, který chcete uložit aktivní dokument, je můžete na něj odkazovat pomocí jeho názvu.  
   
 ### <a name="to-save-a-document-specified-by-name"></a>Chcete-li uložit dokument určený název  
   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888408"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Vystavení vlastností v okně Vlastnosti
 Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny provedené pro tyto vlastnosti se projeví v **vlastnosti** okna.  
@@ -33,72 +33,72 @@ Tento návod poskytuje veřejné vlastnosti objektu **vlastnosti** okna. Změny 
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>K vystavení vlastností v okně Vlastnosti  
   
-1.  Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projekt s názvem `MyObjectPropertiesExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.  
+1. Každé rozšíření sady Visual Studio spustí nasazení projektu VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projekt s názvem `MyObjectPropertiesExtension`. Můžete najít šablonu projektu VSIX v **nový projekt** dialogového okna v části **Visual C#** > **rozšiřitelnost**.  
   
-2.  Přidání panelu nástrojů přidejte šablonu vlastního panelu nástrojů položku s názvem `MyToolWindow`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C#** > **rozšiřitelnost** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby *MyToolWindow.cs*. Další informace o tom, jak vytvořit vlastního okna nástroje najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Přidání panelu nástrojů přidejte šablonu vlastního panelu nástrojů položku s názvem `MyToolWindow`. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. V **dialogového okna Přidat novou položku**, přejděte na stránku **položky Visual C#** > **rozšiřitelnost** a vyberte **vlastního panelu nástrojů**. V **název** pole v dolní části dialogového okna, změňte název souboru, aby *MyToolWindow.cs*. Další informace o tom, jak vytvořit vlastního okna nástroje najdete v tématu [vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Otevřít *MyToolWindow.cs* a přidejte následující příkaz using:  
+3. Otevřít *MyToolWindow.cs* a přidejte následující příkaz using:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  Nyní přidejte následující pole na `MyToolWindow` třídy.  
+4. Nyní přidejte následující pole na `MyToolWindow` třídy.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  Přidejte následující kód, který `MyToolWindow` třídy.  
+5. Přidejte následující kód, který `MyToolWindow` třídy.  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     `TrackSelection` Používá vlastnost `GetService` získat `STrackSelection` službu, která poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> rozhraní. `OnToolWindowCreated` Obslužné rutiny události a `SelectList` metoda společně vytvoření seznamu vybrané objekty, který obsahuje pouze nástroj okno podokna samotného objektu. `UpdateSelection` Metoda říká **vlastnosti** okno k zobrazení veřejné vlastnosti podokno okna nástrojů.  
+    `TrackSelection` Používá vlastnost `GetService` získat `STrackSelection` službu, která poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> rozhraní. `OnToolWindowCreated` Obslužné rutiny události a `SelectList` metoda společně vytvoření seznamu vybrané objekty, který obsahuje pouze nástroj okno podokna samotného objektu. `UpdateSelection` Metoda říká **vlastnosti** okno k zobrazení veřejné vlastnosti podokno okna nástrojů.  
   
-6.  Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.  
+6. Sestavte projekt a spusťte ladění. Experimentální instanci sady Visual Studio by se zobrazit.  
   
-7.  Pokud **vlastnosti** okno se nezobrazuje, otevřete ho stisknutím kombinace kláves **F4**.  
+7. Pokud **vlastnosti** okno se nezobrazuje, otevřete ho stisknutím kombinace kláves **F4**.  
   
-8.  Otevřít **MyToolWindow** okna. Najdete ho v **zobrazení** > **ostatní Windows**.  
+8. Otevřít **MyToolWindow** okna. Najdete ho v **zobrazení** > **ostatní Windows**.  
   
-     Otevře se okno a veřejné vlastnosti podokno okna se zobrazí v **vlastnosti** okna.  
+    Otevře se okno a veřejné vlastnosti podokno okna se zobrazí v **vlastnosti** okna.  
   
 9. Změnit **titulek** vlastnost v **vlastnosti** okno **vlastnosti mého objekt**.  
   

@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839203"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Návrh tabulky příkazů XML (. Soubory Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz polo�
 ## <a name="differences-between-ctc-and-vsct-files"></a>Rozdíly mezi soubory .ctc a .vsct  
  Význam za značky XML v souboru .vsct jsou stejné jako ty v aktuální zastaralý formát souboru .ctc, jejich implementace je trochu jiná.  
   
--   Nové  **\<extern >** značka je, kde můžete odkazovat na jiné soubory .h ke kompilaci, třeba kroky týkající se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nástrojů.  
+- Nové  **\<extern >** značka je, kde můžete odkazovat na jiné soubory .h ke kompilaci, třeba kroky týkající se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nástrojů.  
   
--   Zatímco .vsct soubory podpory **/ include** prohlášení, stejně jako soubory .ctc, také nabízí nový \< **import >** elementu. Rozdíl je, **/ include** přináší **všechny** informací, ale \< **import >** přináší pouze názvy.  
+- Zatímco .vsct soubory podpory **/ include** prohlášení, stejně jako soubory .ctc, také nabízí nový \< **import >** elementu. Rozdíl je, **/ include** přináší **všechny** informací, ale \< **import >** přináší pouze názvy.  
   
--   Zatímco .ctc soubory vyžadují soubor hlaviček, ve kterém definujete preprocesor – direktivy, jeden není vyžadováno pro soubory .vsct. Místo toho umístit vaše direktivy do tabulky symbolů umístěny v  **\<Symbol >** prvky, které jsou umístěné v dolní části souboru .vsct.  
+- Zatímco .ctc soubory vyžadují soubor hlaviček, ve kterém definujete preprocesor – direktivy, jeden není vyžadováno pro soubory .vsct. Místo toho umístit vaše direktivy do tabulky symbolů umístěny v  **\<Symbol >** prvky, které jsou umístěné v dolní části souboru .vsct.  
   
--   Funkce souborů .vsct  **\<Poznámka >** značky, které umožňuje vložit jakékoli informace o rádi používáte, jako jsou poznámky nebo dokonce i obrázky.  
+- Funkce souborů .vsct  **\<Poznámka >** značky, které umožňuje vložit jakékoli informace o rádi používáte, jako jsou poznámky nebo dokonce i obrázky.  
   
--   Hodnoty jsou uloženy jako atributy v položce.  
+- Hodnoty jsou uloženy jako atributy v položce.  
   
--   Příkaz příznaky lze uložit jednotlivě nebo nad sebou.  Technologie IntelliSense, však nelze použít u skládaných příkaz příznaky. Další informace o příznaků příkazů najdete v článku [Command Flag – Element](../../extensibility/command-flag-element.md).  
+- Příkaz příznaky lze uložit jednotlivě nebo nad sebou.  Technologie IntelliSense, však nelze použít u skládaných příkaz příznaky. Další informace o příznaků příkazů najdete v článku [Command Flag – Element](../../extensibility/command-flag-element.md).  
   
--   Můžete zadat více typů, jako je například rozdělení rozevírací seznamy, combos – atd.  
+- Můžete zadat více typů, jako je například rozdělení rozevírací seznamy, combos – atd.  
   
--   Ověření není GUID.  
+- Ověření není GUID.  
   
--   Každý prvek uživatelského rozhraní obsahuje řetězec, který představuje text, který se zobrazí s ním.  
+- Každý prvek uživatelského rozhraní obsahuje řetězec, který představuje text, který se zobrazí s ním.  
   
--   Nadřazené je volitelný. Pokud tento parametr vynechán, se používá hodnotu "Skupina neznámý".  
+- Nadřazené je volitelný. Pokud tento parametr vynechán, se používá hodnotu "Skupina neznámý".  
   
--   Ikona argument je nepovinný.  
+- Ikona argument je nepovinný.  
   
--   Soubor rastrového obrázku části – stejně jako .ctc, s tím rozdílem, že teď můžete zadat název souboru prostřednictvím href, který bude i vsct.exe kompilátor v době kompilace.  
+- Soubor rastrového obrázku části – stejně jako .ctc, s tím rozdílem, že teď můžete zadat název souboru prostřednictvím href, který bude i vsct.exe kompilátor v době kompilace.  
   
--   ResID – původní ID prostředku rastrového obrázku je možné a stále funguje stejně jako v .ctc soubory.  
+- ResID – původní ID prostředku rastrového obrázku je možné a stále funguje stejně jako v .ctc soubory.  
   
--   HRef – novou metodu, která vám umožní zadat název souboru prostředku rastrového obrázku. Předpokládá, že se používají všechny, tak můžete vynechat využité části. Kompilátor vyhledá první místních prostředků pro soubor, pak na žádné čisté sdílené složky a všechny prostředky definované /I přepínačem.  
+- HRef – novou metodu, která vám umožní zadat název souboru prostředku rastrového obrázku. Předpokládá, že se používají všechny, tak můžete vynechat využité části. Kompilátor vyhledá první místních prostředků pro soubor, pak na žádné čisté sdílené složky a všechny prostředky definované /I přepínačem.  
   
--   Klávesové zkratky – Nepotřebujete k určení emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.  
+- Klávesové zkratky – Nepotřebujete k určení emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.  
   
--   Keychord – byla vyřazena. Nový formát je klíč1, Mod1, klic2, Mod2.  Můžete zadat znak, šestnáctkové číslo nebo konstantu VK.  
+- Keychord – byla vyřazena. Nový formát je klíč1, Mod1, klic2, Mod2.  Můžete zadat znak, šestnáctkové číslo nebo konstantu VK.  
   
- Nový kompilátor, vsct.exe, zkompiluje .ctc a .vsct soubory. Staré ctc.exe kompilátoru, ale bude rozpoznat ani kompilaci souborů .vsct.  
+  Nový kompilátor, vsct.exe, zkompiluje .ctc a .vsct soubory. Staré ctc.exe kompilátoru, ale bude rozpoznat ani kompilaci souborů .vsct.  
   
- Můžete převést existující soubor .cto do souboru .vsct vsct.exe kompilátoru. Další informace o tom, naleznete v tématu [postupy: vytvoření. Vsct soubor z existující. Technologický ředitel souboru](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Můžete převést existující soubor .cto do souboru .vsct vsct.exe kompilátoru. Další informace o tom, naleznete v tématu [postupy: vytvoření. Vsct soubor z existující. Technologický ředitel souboru](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Prvky souborů .vsct  
  Příkaz Tabulka obsahuje následující hierarchie a prvky:  

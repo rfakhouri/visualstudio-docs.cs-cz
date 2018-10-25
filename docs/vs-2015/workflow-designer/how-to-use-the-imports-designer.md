@@ -14,25 +14,25 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 776fbd9ba58268adb16957c732b96a7c8303b213
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875493"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Postupy: používání návrháře importů
 Návrhář importů umožňuje zadejte obory názvů pro typy, které budete používat ve výrazech. Podobně jako **importuje** nebo **pomocí** klíčových slov v jazyce Visual Basic .NET a C#, určení obory názvů v Návrhář importů umožňují jednoduše zadejte v výraz a ne plně kvalifikovaný název typu Název typu verze.  
   
  Návrhář importů jsou reaguje na obě změny v uživatelském rozhraní a změny provedené při uložení pracovního postupu. Při uložení pracovního postupu, obory názvů může být automaticky přidán do návrháře importů. Patří mezi ně například:  
   
--   Obory názvů pro všechny typy použité v deklaracích proměnných a argumentů.  
+- Obory názvů pro všechny typy použité v deklaracích proměnných a argumentů.  
   
--   Obory názvů pro všechny typy použité ve výrazech.  
+- Obory názvů pro všechny typy použité ve výrazech.  
   
--   Všechny ostatní obory názvů potřebné pro serializaci pracovního postupu (například oborů názvů používaných ve vlastní aktivity v pracovním postupu).  
+- Všechny ostatní obory názvů potřebné pro serializaci pracovního postupu (například oborů názvů používaných ve vlastní aktivity v pracovním postupu).  
   
- Při uložení pracovní postup, můžete si všimnout, že některé obory názvů, který jste odstranili ručně jsou automaticky znovu přidat do návrháře importů z důvodu pravidla popsaná v předchozím seznamu.  
+  Při uložení pracovní postup, můžete si všimnout, že některé obory názvů, který jste odstranili ručně jsou automaticky znovu přidat do návrháře importů z důvodu pravidla popsaná v předchozím seznamu.  
   
 ### <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Přidání nového oboru názvů na seznam importovaných oborů názvů  
   

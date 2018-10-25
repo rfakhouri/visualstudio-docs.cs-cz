@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824179"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Návod: Zobrazení QuickInfo popisky
 Rychlé informace je funkce technologie IntelliSense, která zobrazuje podpisy metod a popisy, když se uživatel přesune ukazatel myši název metody. Založený na jazyce funkce, jako je rychlé informace lze implementovat definováním identifikátory, pro které chcete poskytnout QuickInfo popisy a následného vytvoření popisu, ve kterém chcete zobrazit obsah. Rychlé informace lze definovat v kontextu jazykové služby, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a zobrazit rychlé informace pro právě tento typ nebo můžete zobrazit rychlé informace pro existující typ obsahu (jako je například "text"). Tento návod ukazuje, jak zobrazit rychlé informace pro typ obsahu "text".  
   
  Příklad rychlých informací v tomto názorném postupu zobrazí popisky, když uživatel přesune ukazatel myši název metody. Tento návrh je potřeba implementovat tyto čtyři rozhraní:  
   
--   zdrojové rozhraní  
+- zdrojové rozhraní  
   
--   zdrojové rozhraní poskytovatele  
+- zdrojové rozhraní poskytovatele  
   
--   kontroler rozhraní  
+- kontroler rozhraní  
   
--   rozhraní poskytovatele řadiče  
+- rozhraní poskytovatele řadiče  
   
- Zprostředkovatele zdroje a řadiče jsou součásti Managed Extensibility Framework (MEF) a zodpovídají za export tříd zdroje a kontroler a importu služby zprostředkovatelé, jako <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, která vytvoří text popisku vyrovnávací paměť a <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, která aktivuje QuickInfo relace.  
+  Zprostředkovatele zdroje a řadiče jsou součásti Managed Extensibility Framework (MEF) a zodpovídají za export tříd zdroje a kontroler a importu služby zprostředkovatelé, jako <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, která vytvoří text popisku vyrovnávací paměť a <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, která aktivuje QuickInfo relace.  
   
- V tomto příkladu zdroj QuickInfo používá pevně zakódovaný seznamu popisů a názvů metody, ale v úplné implementací, služba jazyka a dokumentace k jazyku odpovídají za poskytování obsahu.  
+  V tomto příkladu zdroj QuickInfo používá pevně zakódovaný seznamu popisů a názvů metody, ale v úplné implementací, služba jazyka a dokumentace k jazyku odpovídají za poskytování obsahu.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Spouští se v sadě Visual Studio 2015, není nutné nainstalovat sadu Visual Studio SDK ze služby Stažení softwaru. Je zahrnutý jako volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později. Další informace najdete v tématu [instalace sady Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

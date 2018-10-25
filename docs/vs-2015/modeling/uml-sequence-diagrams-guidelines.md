@@ -26,12 +26,12 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 529f36b476158e7333cf03210dec94ec8bab4ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869155"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Sekvenční diagramy UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
 ##  <a name="Using"></a> Pomocí sekvenčních diagramech UML  
  Sekvenční diagramy můžete použít pro různé účely na různých úrovních podrobností programu. Typické situace pro nakreslení sekvenčního diagramu jsou následující:  
   
--   Pokud máte diagram případu použití, který shrnuje uživatelé vašeho systému a své cíle, můžete nakreslit sekvenční diagramy k popisu interakci hlavní součásti systému pro splnění cíle každému případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Pokud máte diagram případu použití, který shrnuje uživatelé vašeho systému a své cíle, můžete nakreslit sekvenční diagramy k popisu interakci hlavní součásti systému pro splnění cíle každému případu použití. Další informace najdete v tématu [diagramy případů použití UML: pokyny](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Pokud jste našli zprávy odeslané na rozhraní komponenty, můžete nakreslit sekvenční diagramy k popisu interakci vnitřních částí komponenty k dosažení výsledku, vyžaduje se pro příchozí zprávy. Další informace najdete v tématu [diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md).  
+- Pokud jste našli zprávy odeslané na rozhraní komponenty, můžete nakreslit sekvenční diagramy k popisu interakci vnitřních částí komponenty k dosažení výsledku, vyžaduje se pro příchozí zprávy. Další informace najdete v tématu [diagramy komponent UML: pokyny](../modeling/uml-component-diagrams-guidelines.md).  
   
- Vytvoření diagramů pořadí má několik výhod:  
+  Vytvoření diagramů pořadí má několik výhod:  
   
--   Můžete snadno zobrazit, jak jsou úlohy distribuované mezi komponentami.  
+- Můžete snadno zobrazit, jak jsou úlohy distribuované mezi komponentami.  
   
--   Můžete identifikovat vzory interakcí, které ztěžují aktualizaci softwaru.  
+- Můžete identifikovat vzory interakcí, které ztěžují aktualizaci softwaru.  
   
 ## <a name="relationship-to-other-diagrams"></a>Vztah k jiným diagramům  
  Sekvenční diagramy UML spolu s jinými diagramy můžete použít několika způsoby.  
@@ -90,17 +90,17 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
   
 #### <a name="to-create-a-sequence-diagram"></a>Chcete-li vytvořit sekvenční diagram  
   
-1.  Na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
+1. Na **architektura** nabídky, klikněte na tlačítko **nové UML nebo diagramu vrstev**.  
   
-2.  V části **šablony**, klikněte na tlačítko **sekvenční Diagram UML**.  
+2. V části **šablony**, klikněte na tlačítko **sekvenční Diagram UML**.  
   
-3.  Pojmenujte diagram.  
+3. Pojmenujte diagram.  
   
-4.  V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořte nový projekt modelování**a potom klikněte na tlačítko **OK**.  
+4. V **přidat k projektu modelování**, vyberte existující projekt modelování z řešení, nebo **vytvořte nový projekt modelování**a potom klikněte na tlačítko **OK**.  
   
-     Zobrazí se nový diagram sekvence **sekvenční Diagram** sady nástrojů. Sada nástrojů obsahuje požadované prvky a konektory.  
+    Zobrazí se nový diagram sekvence **sekvenční Diagram** sady nástrojů. Sada nástrojů obsahuje požadované prvky a konektory.  
   
- ![Části sekvenčního diagramu](../modeling/media/uml-sequence.png "UML_Sequence")  
+   ![Části sekvenčního diagramu](../modeling/media/uml-sequence.png "UML_Sequence")  
   
 #### <a name="to-draw-a-sequence-diagram"></a>Chcete-li nakreslit sekvenční diagram  
   
@@ -143,15 +143,15 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Můžete zobrazit a upravit text podpis zprávy  
   
--   Cílovou životnost musí být svázán nebo mapovány na typy pro text podpis viditelný. K provedení této úlohy, proveďte jednu z následujících kroků:  
+- Cílovou životnost musí být svázán nebo mapovány na typy pro text podpis viditelný. K provedení této úlohy, proveďte jednu z následujících kroků:  
   
-    -   Klikněte pravým tlačítkem na životnost a klikněte na tlačítko **vytvořit třídu**.  
+  - Klikněte pravým tlačítkem na životnost a klikněte na tlačítko **vytvořit třídu**.  
   
-         -nebo-  
+     -nebo-  
   
-    -   Vyberte životnosti, stiskněte klávesu **F4**a potom v **vlastnosti** okno, nastavte **typ** vlastnost do existujícího typu nebo zadejte název nového typu. Klikněte pravým tlačítkem na popisek zprávy a klikněte na tlačítko **operace vytvoření**.  
+  - Vyberte životnosti, stiskněte klávesu **F4**a potom v **vlastnosti** okno, nastavte **typ** vlastnost do existujícího typu nebo zadejte název nového typu. Klikněte pravým tlačítkem na popisek zprávy a klikněte na tlačítko **operace vytvoření**.  
   
-     Podpis text se zobrazí pod popiskem zprávy. Teď můžete upravit text podpis. Další informace najdete v tématu [třídy a životnosti](#ClassesAndLifelines).  
+    Podpis text se zobrazí pod popiskem zprávy. Teď můžete upravit text podpis. Další informace najdete v tématu [třídy a životnosti](#ClassesAndLifelines).  
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Ke zlepšení rozložení sekvenční diagram  
   
@@ -227,21 +227,21 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
   
  Životnosti může představovat jednu z těchto úrovní podrobností:  
   
--   Objekty v kódu programu, kterých existuje, nebo kterou vyvíjíte.  
+- Objekty v kódu programu, kterých existuje, nebo kterou vyvíjíte.  
   
--   Komponenty nebo jejich. Tyto dílčí součásti, obvykle vynechání fasády, proxy servery a další mechanismy výkonu.  
+- Komponenty nebo jejich. Tyto dílčí součásti, obvykle vynechání fasády, proxy servery a další mechanismy výkonu.  
   
--   Váš systém a externích objektů aktor  
+- Váš systém a externích objektů aktor  
   
- Zprávy mohou představovat jednu z těchto úrovní podrobností:  
+  Zprávy mohou představovat jednu z těchto úrovní podrobností:  
   
--   Software zprávy v programovém kódu v rozhraní API nebo webové rozhraní.  
+- Software zprávy v programovém kódu v rozhraní API nebo webové rozhraní.  
   
--   Transakce nebo dílčí transakce, například mezi uživateli a systému, nebo mezi kódem a databáze.  
+- Transakce nebo dílčí transakce, například mezi uživateli a systému, nebo mezi kódem a databáze.  
   
--   Případy použití – hlavní interakce mezi uživateli a systému.  
+- Případy použití – hlavní interakce mezi uživateli a systému.  
   
- Zda zkoumáte existující kód nebo popisující nový návrh, je často užitečné pro kreslení a diskutovat o méně podrobné zobrazení.  
+  Zda zkoumáte existující kód nebo popisující nový návrh, je často užitečné pro kreslení a diskutovat o méně podrobné zobrazení.  
   
 ## <a name="describing-variations"></a>Popis změn  
  Diagram znázorňuje jeden typická posloupnost událostí. Pokud chcete zobrazit alternativní možnosti, jako je například scénáře selhání, můžete použít kteroukoli z těchto možností:  
@@ -275,18 +275,18 @@ V sadě Visual Studio, můžete nakreslit *sekvenční diagram* k zobrazení int
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Vytvořte životnost z existujícího typu  
   
--   Třída, komponenty nebo rozhraní z Průzkumníku modelů UML přetáhněte do sekvenčního diagramu.  
+- Třída, komponenty nebo rozhraní z Průzkumníku modelů UML přetáhněte do sekvenčního diagramu.  
   
-     \- nebo –  
+   \- nebo –  
   
-    1.  Klikněte pravým tlačítkem na třídu, komponenty nebo rozhraní na jeho odpovídající diagramu a potom klikněte na tlačítko **vytvořit životnost**.  
+  1. Klikněte pravým tlačítkem na třídu, komponenty nebo rozhraní na jeho odpovídající diagramu a potom klikněte na tlačítko **vytvořit životnost**.  
   
-    2.  V **vytvořit životnost** dialogovém okně vyberte sekvenčního diagramu a potom klikněte na tlačítko **OK**.  
+  2. V **vytvořit životnost** dialogovém okně vyberte sekvenčního diagramu a potom klikněte na tlačítko **OK**.  
   
      Zobrazí se nové životnosti s názvem instance, jehož typ je typ, kterou jste přetáhli.  
   
-    > [!NOTE]
-    >  Tato akce tolikrát, kolikrát chcete, můžete opakovat. Tím se vytvoří životnosti s názvy jiné instance.  
+  > [!NOTE]
+  >  Tato akce tolikrát, kolikrát chcete, můžete opakovat. Tím se vytvoří životnosti s názvy jiné instance.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Chcete-li změnit typ životnosti  
   

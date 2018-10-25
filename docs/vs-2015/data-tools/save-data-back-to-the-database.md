@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829637"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215160"
   
 Datová sada je kopie v paměti data. Pokud upravíte, tato data, je vhodné tyto změny uložit zpět do databáze. Můžete to udělat jedním ze tří způsobů:  
   
--   Voláním jedné z `Update` metody třídy TableAdapter  
+- Voláním jedné z `Update` metody třídy TableAdapter  
   
--   Voláním jedné z metod TableAdapter DBDirect  
+- Voláním jedné z metod TableAdapter DBDirect  
   
--   Zavoláním metody UpdateAll na `TableAdapterManager` , který sada Visual Studio generuje pro vás, když je objekt dataset obsahuje tabulek, které jsou spojené s jinými tabulkami v datové sadě  
+- Zavoláním metody UpdateAll na `TableAdapterManager` , který sada Visual Studio generuje pro vás, když je objekt dataset obsahuje tabulek, které jsou spojené s jinými tabulkami v datové sadě  
   
- Pokud datová sada tabulky vaše data svázat s ovládacími prvky na formuláři Windows nebo XAML stránce, architektura datové vazby vykonává všechnu práci za vás.  
+  Pokud datová sada tabulky vaše data svázat s ovládacími prvky na formuláři Windows nebo XAML stránce, architektura datové vazby vykonává všechnu práci za vás.  
   
- Pokud jste obeznámeni s objekty TableAdapter, můžete přejít přímo na jednu z těchto témat:  
+  Pokud jste obeznámeni s objekty TableAdapter, můžete přejít přímo na jednu z těchto témat:  
   
 |Téma|Popis|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  Aby se zabránilo narušení předčasné omezení můžete dočasně pozastavit aktualizace omezení. Tato stránka slouží dvěma účelům:  
   
--   Chyba zabraňuje vyvolané po dokončení aktualizace jeden sloupec, ale nebyly spuštěny jiné aktualizace.  
+- Chyba zabraňuje vyvolané po dokončení aktualizace jeden sloupec, ale nebyly spuštěny jiné aktualizace.  
   
--   Ta brání určitá aktualizace události nebudou vyvolány (události, které se často používají pro ověření).  
+- Ta brání určitá aktualizace události nebudou vyvolány (události, které se často používají pro ověření).  
   
- Po dokončení aktualizace se můžete znovu povolit kontroly omezení, která také znovu povolí aktualizace události a jejich vyvolá.  
+  Po dokončení aktualizace se můžete znovu povolit kontroly omezení, která také znovu povolí aktualizace události a jejich vyvolá.  
   
 > [!NOTE]
 >  Ve Windows Forms, architektuře vazby dat, která je integrována do objektu datagrid pozastaví omezení kontroly až fokus přesunete mimo řádek, a není nutné explicitně volat <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, nebo <xref:System.Data.DataRow.CancelEdit%2A> metody.  
@@ -177,33 +177,33 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  Pokud se změny odráží aktuální stav zdroje dat, musíte už udržovat tyto informace. Obvykle jsou k dispozici dvakrát když jsou synchronizované datová sada a zdroj:  
   
--   Ihned po informace jste načetli do datové sady, například při čtení dat ze zdroje.  
+- Ihned po informace jste načetli do datové sady, například při čtení dat ze zdroje.  
   
--   Po odeslání změn z datové sady ke zdroji dat (ale ne dřív, protože by přijít o informace o změně, který je potřeba k odeslání změn do databáze).  
+- Po odeslání změn z datové sady ke zdroji dat (ale ne dřív, protože by přijít o informace o změně, který je potřeba k odeslání změn do databáze).  
   
- Můžete potvrdit čekající změny do datové sady pomocí volání <xref:System.Data.DataSet.AcceptChanges%2A> metody. Obvykle <xref:System.Data.DataSet.AcceptChanges%2A> je volána v průběhu následujících časech ve vaší aplikaci.  
+  Můžete potvrdit čekající změny do datové sady pomocí volání <xref:System.Data.DataSet.AcceptChanges%2A> metody. Obvykle <xref:System.Data.DataSet.AcceptChanges%2A> je volána v průběhu následujících časech ve vaší aplikaci.  
   
--   Po načtení datové sady. Načtení datové sady pomocí volání objektu TableAdapter `Fill` metoda pak adaptér pro vás automaticky provádí změny. Ale pokud načíst datovou sadu sloučením jinému objektu dataset do ní, pak budete muset provést změny ručně.  
+- Po načtení datové sady. Načtení datové sady pomocí volání objektu TableAdapter `Fill` metoda pak adaptér pro vás automaticky provádí změny. Ale pokud načíst datovou sadu sloučením jinému objektu dataset do ní, pak budete muset provést změny ručně.  
   
-    > [!NOTE]
-    >  Adaptér můžete zabránit automaticky potvrzování změny při volání `Fill` metodu tak, že nastavíte `AcceptChangesDuringFill` vlastnosti adaptéru `false`. Pokud je nastavena na `false`, pak bude <xref:System.Data.DataRow.RowState%2A> každého řádku, který je vložen během výplň je nastavena na <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  Adaptér můžete zabránit automaticky potvrzování změny při volání `Fill` metodu tak, že nastavíte `AcceptChangesDuringFill` vlastnosti adaptéru `false`. Pokud je nastavena na `false`, pak bude <xref:System.Data.DataRow.RowState%2A> každého řádku, který je vložen během výplň je nastavena na <xref:System.Data.DataRowState>.  
   
--   Po odeslání změn datové sady na jiný proces, jako jsou webové služby XML.  
+- Po odeslání změn datové sady na jiný proces, jako jsou webové služby XML.  
   
-    > [!CAUTION]
-    >  Provádění změn tímto způsobem se odstraní všechny informace o změně. Není změny provést až po můžete dokončit, provádění operací, které vyžadují vaše aplikace vědět, jaké změny byly provedeny v datové sadě.  
+  > [!CAUTION]
+  >  Provádění změn tímto způsobem se odstraní všechny informace o změně. Není změny provést až po můžete dokončit, provádění operací, které vyžadují vaše aplikace vědět, jaké změny byly provedeny v datové sadě.  
   
- Tato metoda provede následující akce:  
+  Tato metoda provede následující akce:  
   
--   Zapíše <xref:System.Data.DataRowVersion> verze záznamu do jeho <xref:System.Data.DataRowVersion> verze a přepíše původní verze.  
+- Zapíše <xref:System.Data.DataRowVersion> verze záznamu do jeho <xref:System.Data.DataRowVersion> verze a přepíše původní verze.  
   
--   Odebere všechny řádky kde <xref:System.Data.DataRow.RowState%2A> je nastavena na <xref:System.Data.DataRowState>.  
+- Odebere všechny řádky kde <xref:System.Data.DataRow.RowState%2A> je nastavena na <xref:System.Data.DataRowState>.  
   
--   Nastaví <xref:System.Data.DataRow.RowState%2A> vlastnosti záznamu, <xref:System.Data.DataRowState>.  
+- Nastaví <xref:System.Data.DataRow.RowState%2A> vlastnosti záznamu, <xref:System.Data.DataRowState>.  
   
- <xref:System.Data.DataSet.AcceptChanges%2A> Metoda je k dispozici ve třech úrovních. Můžete volat na <xref:System.Data.DataRow> změny objektu na potvrzení pro právě tento řádek. Můžete ji volat i na <xref:System.Data.DataTable> objekt potvrďte všechny řádky v tabulce. Nakonec můžete volat na <xref:System.Data.DataSet> objekt potvrďte všechny probíhající změny ve všech záznamech všech tabulek datové sadě.  
+  <xref:System.Data.DataSet.AcceptChanges%2A> Metoda je k dispozici ve třech úrovních. Můžete volat na <xref:System.Data.DataRow> změny objektu na potvrzení pro právě tento řádek. Můžete ji volat i na <xref:System.Data.DataTable> objekt potvrďte všechny řádky v tabulce. Nakonec můžete volat na <xref:System.Data.DataSet> objekt potvrďte všechny probíhající změny ve všech záznamech všech tabulek datové sadě.  
   
- Následující tabulka popisuje, jaké změny jsou potvrzeny na co objektu, že metoda je volána na základě.  
+  Následující tabulka popisuje, jaké změny jsou potvrzeny na co objektu, že metoda je volána na základě.  
   
 |Metoda|Výsledek|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  Můžete ověřit data několika způsoby:  
   
--   V obchodní vrstvě, přidáním kódu do vaší aplikace ověřit data. Tato datová sada je pohromadě, můžete to provést. Datová sada obsahuje některé z výhod back-end ověřování, jako je například schopnost ověřit změny, jak se změna hodnoty řádků a sloupců. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).  
+- V obchodní vrstvě, přidáním kódu do vaší aplikace ověřit data. Tato datová sada je pohromadě, můžete to provést. Datová sada obsahuje některé z výhod back-end ověřování, jako je například schopnost ověřit změny, jak se změna hodnoty řádků a sloupců. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).  
   
--   V prezentační vrstvě podle Přidání ověření do formuláře. Další informace najdete v tématu [ověřování uživatelského vstupu ve Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- V prezentační vrstvě podle Přidání ověření do formuláře. Další informace najdete v tématu [ověřování uživatelského vstupu ve Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   V datech back-endu, díky odesílání dat do zdroje dat – například databáze a díky kterému jej následně přijímal nebo odmítal data. Při práci s databází, která má pokročilé funkce pro ověřování dat a poskytuje informace o chybě, to může být praktický, protože data bez ohledu na to, odkud můžete ověřit. Tento přístup však nemusí podle požadavků ověřování konkrétní aplikace. Kromě toho s ověření dat zdroje dat může způsobit řadu zpátečních cest ke zdroji dat, v závislosti na tom, jak vaše aplikace usnadňuje řešení chyb ověřování vyvolané back-endu.  
+- V datech back-endu, díky odesílání dat do zdroje dat – například databáze a díky kterému jej následně přijímal nebo odmítal data. Při práci s databází, která má pokročilé funkce pro ověřování dat a poskytuje informace o chybě, to může být praktický, protože data bez ohledu na to, odkud můžete ověřit. Tento přístup však nemusí podle požadavků ověřování konkrétní aplikace. Kromě toho s ověření dat zdroje dat může způsobit řadu zpátečních cest ke zdroji dat, v závislosti na tom, jak vaše aplikace usnadňuje řešení chyb ověřování vyvolané back-endu.  
   
-    > [!IMPORTANT]
-    >  Při použití dat příkazech <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Je osvědčeným postupem je vždy používejte parametrizovaných dotazů nebo uložených procedur, pokud je to možné. Další informace najdete v tématu [přehled zneužije skriptů](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Při použití dat příkazech <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType>, pečlivě zkontrolujte informace, které se odesílají z klienta před předáním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) změněné nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo poškození databáze. Před přenosem vstupu uživatele na databázi vždy ověřte, že informace platné. Je osvědčeným postupem je vždy používejte parametrizovaných dotazů nebo uložených procedur, pokud je to možné. Další informace najdete v tématu [přehled zneužije skriptů](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Po provedení změn v datové sadě, můžete přenést změny do zdroje dat. Nejčastěji to provedete voláním `Update` metody třídy TableAdapter (nebo datový adaptér). Metoda cyklicky projde každý záznam v tabulce dat, určuje, jaký typ aktualizace je povinný (aktualizace, vložení nebo odstranění), pokud existuje, a poté je spuštěn příslušný příkaz.  
+  Po provedení změn v datové sadě, můžete přenést změny do zdroje dat. Nejčastěji to provedete voláním `Update` metody třídy TableAdapter (nebo datový adaptér). Metoda cyklicky projde každý záznam v tabulce dat, určuje, jaký typ aktualizace je povinný (aktualizace, vložení nebo odstranění), pokud existuje, a poté je spuštěn příslušný příkaz.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Přenosu aktualizací do zdroje dat.  
  Jako ilustraci, jak jsou provedeny aktualizace Předpokládejme, že vaše aplikace používá datovou sadu, která obsahuje jednu datovou tabulku. Aplikace načte dva řádky z databáze. Po načtení tabulka v paměti dat vypadá například takto:  

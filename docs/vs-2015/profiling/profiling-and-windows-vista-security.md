@@ -17,25 +17,25 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 567640eafb3886d51469447eba31e439ca150618
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836980"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilace a zabezpečení systému Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 V závislosti na tom [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] přístupová oprávnění uživatelů nastavení, které správce má k dispozici, individuální uživatel může mít oprávnění zabezpečení, chcete-li Profilovat procesy v tomto počítači. Následující příklady znázorňují možné rozdíly mezi uživateli:  
   
--   Někteří uživatelé mohou přístup k rozšířeným funkcím profilace, pokud správce nastavil ovladač a spouštění služby.  
+- Někteří uživatelé mohou přístup k rozšířeným funkcím profilace, pokud správce nastavil ovladač a spouštění služby.  
   
--   Uživatelé domény mohou přistupovat k pouze profilace vzorku.  
+- Uživatelé domény mohou přistupovat k pouze profilace vzorku.  
   
--   Někteří uživatelé mohou odepřít přístup k profilaci a všem ostatním uživatelům.  
+- Někteří uživatelé mohou odepřít přístup k profilaci a všem ostatním uživatelům.  
   
- Další informace najdete v tématu Možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Další informace najdete v tématu Možnosti správce v [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ## <a name="cross-session-profiling"></a>Profilace mezi relacemi  
  *Mezi relacemi profilace* je schopnost Profilovat proces, na kterém běží v jiné přihlašovací relace. Například většina služeb spuštěné v relaci 0, a uživatelé nemůžou spouštět přímo v relaci 0. S použitím **připojit k procesu** tlačítko na panelu nástrojů prohlížeče výkonu nebo / attach možnost příkazového řádku nástroje VSPerfCmd, můžete provádět profilaci většina procesů v různých přihlašovacích relacích.  

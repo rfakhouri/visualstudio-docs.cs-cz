@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857845"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime instalace scénáře
   Můžete nainstalovat Visual Studio 2010 Tools for Office runtime třemi způsoby:  
   
--   Při instalaci sady Visual Studio.  
+- Při instalaci sady Visual Studio.  
   
--   Při instalaci aplikace Microsoft Office.  
+- Při instalaci aplikace Microsoft Office.  
   
--   Když instalujete Visual Studio 2010 Tools for Office runtime redistributable.  
+- Když instalujete Visual Studio 2010 Tools for Office runtime redistributable.  
   
- Součásti modulu runtime, které jsou nainstalovány, závisí na konfiguraci počítače a instalačního scénáře.  
+  Součásti modulu runtime, které jsou nainstalovány, závisí na konfiguraci počítače a instalačního scénáře.  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>Součásti modulu runtime, které jsou nainstalovány v každém scénáři instalace  
  Visual Studio 2010 Tools for Office runtime má tři komponenty: zavaděče řešení Office, rozšíření Office pro rozhraní .NET Framework 3.5 a rozšíření Office pro [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější. Při instalaci modulu runtime, je vždy nainstalován zavaděče řešení Office. Instalace rozšíření Office pro rozhraní .NET Framework, závisí na konfiguraci počítače a instalačního scénáře. Pokud některé z rozšíření Office nejde nainstalovat při první instalaci modulu runtime, modul runtime automaticky nainstaluje chybějící rozšíření Office později, pokud jsou splněny některé požadavky. Tato funkce modulu runtime se nazývá *na požádání nainstalovat*.  
@@ -39,7 +39,7 @@ ms.locfileid: "35676012"
  Následující tabulka uvádí, které součásti modulu runtime jsou nainstalovány ve výchozím nastavení v každém scénáři instalace modulu runtime. Později se zobrazí další informace o jednotlivých scénářů.  
   
 |Scénáře instalace modulu runtime|Zavaděče řešení Office|Rozšíření Office pro rozhraní .NET Framework 3.5|Rozšíření Office pro [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Rozšíření Office pro [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |S [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] a novější|Ano|Ano, pokud je již nainstalováno rozhraní .NET Framework 3.5.|Ano|Ano|  
 |s [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Ano|Ano, pokud je již nainstalováno rozhraní .NET Framework 3.5.|Ne|Ne|  
 |S Office 2010 Service Pack 1 (SP1) nebo novější|Ano|Ano, pokud je již nainstalováno rozhraní .NET Framework 3.5.|Ano, pokud [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] je již nainstalována.|Ne|  

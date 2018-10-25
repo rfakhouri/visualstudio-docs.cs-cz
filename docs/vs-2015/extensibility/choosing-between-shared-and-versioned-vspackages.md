@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859928"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Volba mezi sdíleným a verzovaným rozšířením VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Různé verze sady Visual Studio můžou existovat společně na stejném počí
 ## <a name="binary-compatibility"></a>Binární kompatibilita  
  Obecně platí binární kompatibilitu umožňuje rozšíření VSPackages nativního kódu byly vyvinuty v sadě starších verzích sady Visual Studio ke spuštění v pozdějších verzích sady Visual Studio. Nicméně existují tři důležité výjimky:  
   
--   Pokud vaše VSPackage závisí na konkrétní verzi modulu common language runtime a pak ho musíte určit, kterou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží.  
+- Pokud vaše VSPackage závisí na konkrétní verzi modulu common language runtime a pak ho musíte určit, kterou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] běží.  
   
--   VSPackage může mít závislost na konkrétní funkce jiné VSPackage nebo jiného produktu. V důsledku toho můžete spustit sady VSPackage, pouze pokud je splněna závislost.  
+- VSPackage může mít závislost na konkrétní funkce jiné VSPackage nebo jiného produktu. V důsledku toho můžete spustit sady VSPackage, pouze pokud je splněna závislost.  
   
--   VSPackage by mohly mít dopad opravu zabezpečení v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualizace service pack nebo novější verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. V takových případech VSPackage vyvinuté pomocí starší verze [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] nemusí spouštět ve verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po opravu zabezpečení. Můžete však sestavte svůj balíček pomocí novější verze znovu a ho také spustit v dřívějších verzích.  
+- VSPackage by mohly mít dopad opravu zabezpečení v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualizace service pack nebo novější verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. V takových případech VSPackage vyvinuté pomocí starší verze [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] nemusí spouštět ve verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] po opravu zabezpečení. Můžete však sestavte svůj balíček pomocí novější verze znovu a ho také spustit v dřívějších verzích.  
   
- Spravovaná rozšíření VSPackages musí být sestaveny pomocí verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] , které odpovídají cílovou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  Spravovaná rozšíření VSPackages musí být sestaveny pomocí verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] , které odpovídají cílovou verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Kromě plánování binární kompatibilitu pro vaše binární soubory balíčku VSPackage, můžete také by měl zvažte řešení a projektu formátů souborů. Pokud vaše VSPackage vytvoří nový typ projektu, musíte se rozhodnout, zda lze spustit v pouze jednu verzi nebo ve více verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [upgrade projektů vlastní](../misc/upgrading-custom-projects.md).  
+  Kromě plánování binární kompatibilitu pro vaše binární soubory balíčku VSPackage, můžete také by měl zvažte řešení a projektu formátů souborů. Pokud vaše VSPackage vytvoří nový typ projektu, musíte se rozhodnout, zda lze spustit v pouze jednu verzi nebo ve více verzích [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Další informace najdete v tématu [upgrade projektů vlastní](../misc/upgrading-custom-projects.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

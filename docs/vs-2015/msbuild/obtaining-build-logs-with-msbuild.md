@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811747"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Získávání protokolů o sestavení pomocí nástroje MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ S použitím přepínače pomocí nástroje MSBuild, můžete určit, kolik data
 ## <a name="setting-the-level-of-detail"></a>Nastavení úrovně podrobností  
  Při vytváření projektu pomocí nástroje MSBuild bez zadání úroveň podrobností protokolu výstupu zobrazí následující informace:  
   
--   Chyby, varování a zprávy, které jsou klasifikovány jako vysoce důležité.  
+- Chyby, varování a zprávy, které jsou klasifikovány jako vysoce důležité.  
   
--   Některé události stavu.  
+- Některé události stavu.  
   
--   Souhrn sestavení.  
+- Souhrn sestavení.  
   
- S použitím **/verbosity** (**/v**) přepnout, můžete řídit, jak velký objem dat se zobrazí ve výstupu protokolu. S řešením problémů, použijte úroveň podrobností buď `detailed` (`d`) nebo `diagnostic` (`diag`), který poskytuje informace na maximum.  
+  S použitím **/verbosity** (**/v**) přepnout, můžete řídit, jak velký objem dat se zobrazí ve výstupu protokolu. S řešením problémů, použijte úroveň podrobností buď `detailed` (`d`) nebo `diagnostic` (`diag`), který poskytuje informace na maximum.  
   
- Proces sestavení může být pomalejší, při nastavení **/verbosity** k `detailed` a dokonce i pomalejší, při nastavení **/verbosity** k `diagnostic`.  
+  Proces sestavení může být pomalejší, při nastavení **/verbosity** k `detailed` a dokonce i pomalejší, při nastavení **/verbosity** k `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

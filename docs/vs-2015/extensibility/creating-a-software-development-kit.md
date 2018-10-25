@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851994"
 ---
 # <a name="creating-a-software-development-kit"></a>Vytvoření sady SDK (Software Development Kit)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49268345"
   
  Existují dva druhy sad SDK:  
   
--   Sady SDK platformy jsou povinné součásti pro vývoj aplikací pro platformu. Například [!INCLUDE[win81](../includes/win81-md.md)] SDK je vyžadována k vývoji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace.  
+- Sady SDK platformy jsou povinné součásti pro vývoj aplikací pro platformu. Například [!INCLUDE[win81](../includes/win81-md.md)] SDK je vyžadována k vývoji [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikace.  
   
--   Rozšíření sady SDK jsou volitelné součásti, které rozšiřují platformu, ale nejsou povinné pro vývoj aplikací pro danou platformu.  
+- Rozšíření sady SDK jsou volitelné součásti, které rozšiřují platformu, ale nejsou povinné pro vývoj aplikací pro danou platformu.  
   
- Následující části popisují obecné infrastruktury sady SDK a jak vytvořit sadu SDK platformy a sady extension SDK.  
+  Následující části popisují obecné infrastruktury sady SDK a jak vytvořit sadu SDK platformy a sady extension SDK.  
   
--   [Sady SDK platformy](#PlatformSDKs)  
+- [Sady SDK platformy](#PlatformSDKs)  
   
--   [Rozšíření sady SDK](#ExtensionSDKs)  
+- [Rozšíření sady SDK](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> Sady SDK platformy  
  Sady SDK platformy jsou nezbytné pro vývoj aplikací pro platformu. Například [!INCLUDE[win81](../includes/win81-md.md)] SDK je vyžadována k vývoji aplikací pro [!INCLUDE[win81](../includes/win81-md.md)].  

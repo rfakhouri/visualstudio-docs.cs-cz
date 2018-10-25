@@ -16,12 +16,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd93f4e0f2d9cca4d7fd12f9c69733655cb99127
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fffb77788a4ac88f2ee607dd989de8c7aab8aebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821921"
 ---
 # <a name="custom-colorable-items"></a>Vlastní položky, které lze zabarvit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová 
   
 ## <a name="implementing-custom-colorable-items"></a>Implementace vlastních položek které lze zabarvit  
   
-1.  Definujte, co musí barevně zvýrazněné v jazyce, třeba – klíčové slovo, operátor a identifikátor.  
+1. Definujte, co musí barevně zvýrazněné v jazyce, třeba – klíčové slovo, operátor a identifikátor.  
   
-2.  Vytvořte výčet těchto položek, které lze zabarvit.  
+2. Vytvořte výčet těchto položek, které lze zabarvit.  
   
-3.  Přiřaďte typy tokenů vrátil z analyzátor a skener s výčtové hodnoty.  
+3. Přiřaďte typy tokenů vrátil z analyzátor a skener s výčtové hodnoty.  
   
-     Hodnoty, představující typy tokenů může být například stejné hodnoty, které lze zabarvit vlastní položky výčtu.  
+    Hodnoty, představující typy tokenů může být například stejné hodnoty, které lze zabarvit vlastní položky výčtu.  
   
-4.  Ve vaší implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda ve vaší <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> objektu, naplnění seznamu atributy s hodnotami z vaší vlastní, které lze zabarvit položky výčtu odpovídající typy tokenů vrátil analyzátor a skener.  
+4. Ve vaší implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda ve vaší <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> objektu, naplnění seznamu atributy s hodnotami z vaší vlastní, které lze zabarvit položky výčtu odpovídající typy tokenů vrátil analyzátor a skener.  
   
-5.  Ve stejné třídě, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní, implementujte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> rozhraní a jeho dvě metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5. Ve stejné třídě, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní, implementujte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> rozhraní a jeho dvě metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
-6.  Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> rozhraní.  
+6. Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> rozhraní.  
   
-7.  Pokud chcete zajistit podporu barvu 24-bit nebo vysoké hodnoty, implementovat taky <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní.  
+7. Pokud chcete zajistit podporu barvu 24-bit nebo vysoké hodnoty, implementovat taky <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní.  
   
-8.  V objektu služby jazyka, vytvořte seznam, který obsahuje vaše <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> objekty, pro které lze zabarvit položky můžete určit analyzátor a skener.  
+8. V objektu služby jazyka, vytvořte seznam, který obsahuje vaše <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> objekty, pro které lze zabarvit položky můžete určit analyzátor a skener.  
   
-     Každá položka v seznamu můžete přistupovat pomocí odpovídající hodnotu z výčtu vlastní, které lze zabarvit položky. Použijte hodnoty výčtu jako index do seznamu. Nikdy je nevyužili první položku v seznamu, protože výchozí text odpovídá stylu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vždy zpracovává samotný. To se může kompenzovat vložením které lze zabarvit položky zástupný text na začátku seznamu.  
+    Každá položka v seznamu můžete přistupovat pomocí odpovídající hodnotu z výčtu vlastní, které lze zabarvit položky. Použijte hodnoty výčtu jako index do seznamu. Nikdy je nevyužili první položku v seznamu, protože výchozí text odpovídá stylu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] vždy zpracovává samotný. To se může kompenzovat vložením které lze zabarvit položky zástupný text na začátku seznamu.  
   
 9. Ve vaší implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metody, vrátí počet položek, které ve vaší vlastní, které lze zabarvit položky seznamu.  
   
 10. Ve vaší implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodu, vrací požadovaná které lze zabarvit položku ze seznamu.  
   
- Příklad toho, jak implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní, naleznete v tématu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+    Příklad toho, jak implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní, naleznete v tématu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>Viz také  
  [Model služby starší verze jazyka](../../extensibility/internals/model-of-a-legacy-language-service.md)   

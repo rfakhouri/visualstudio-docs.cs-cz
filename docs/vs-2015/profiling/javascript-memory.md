@@ -28,12 +28,12 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531590495cf31f0a173b9dfc1dbc995a9fb73364
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0d1d45caa7f5bfe275cd851711dfbc9a8186d74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814938"
 ---
 # <a name="javascript-memory"></a>Paměti jazyka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
  Analyzátor paměti jazyka JavaScript můžete využít tyto věci:  
   
--   Vám pomůžou rychle najít paměti problémy využití ve vaší aplikaci kdy se klade důraz nejdůležitější data.  
+- Vám pomůžou rychle najít paměti problémy využití ve vaší aplikaci kdy se klade důraz nejdůležitější data.  
   
-     Získání těchto dat ve snímku souhrny, které ukazují rozdíly mezi dvěma snímky a poskytují odkazy na podrobnější zobrazení.  
+   Získání těchto dat ve snímku souhrny, které ukazují rozdíly mezi dvěma snímky a poskytují odkazy na podrobnější zobrazení.  
   
--   Zadejte zobrazení dominantních objektů, typy a kořenové adresáře, které vám pomůžou izolovat problémy.  
+- Zadejte zobrazení dominantních objektů, typy a kořenové adresáře, které vám pomůžou izolovat problémy.  
   
--   Snižte-užitečné informace v datech haldy jazyka JavaScript.  
+- Snižte-užitečné informace v datech haldy jazyka JavaScript.  
   
-     Objekty, které nejsou vytvořené přímo v kódu vaší aplikace automaticky filtrují. Data můžete také filtrovat podle názvu objektu.  
+   Objekty, které nejsou vytvořené přímo v kódu vaší aplikace automaticky filtrují. Data můžete také filtrovat podle názvu objektu.  
   
- Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
- V tomto tématu:  
+  V tomto tématu:  
   
- [Spustit analýzu paměti jazyka JavaScript](#Run)   
- [Zkontrolujte využití paměti](#Check)   
- [Zjištění nevracení paměti](#Isolate)   
- [Zobrazení souhrnu využití paměti za provozu](#LiveMemory)   
- [Zobrazit souhrn snímku](#SnapshotSummary)   
- [Zobrazit podrobnosti o snímku](#SnapshotDetails)   
- [Zobrazit snímek diff](#SnapshotDiff)   
- [Zobrazit objekty podle dominantního objektu](#FoldObjects)   
- [Filtrování dat podle identifikátoru](#Filter)   
- [Najít objekt ve stromu objektů](#ShowInRootsView)   
- [Zobrazit odkazy na sdílené objekty](#References)   
- [Zobrazit předdefinované objekty](#BuiltInValues)   
- [Uložit soubory relací diagnostiky](#Save)   
- [Přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands)   
- [Tipy k identifikaci problémů s pamětí](#Tips)  
+  [Spustit analýzu paměti jazyka JavaScript](#Run)   
+  [Zkontrolujte využití paměti](#Check)   
+  [Zjištění nevracení paměti](#Isolate)   
+  [Zobrazení souhrnu využití paměti za provozu](#LiveMemory)   
+  [Zobrazit souhrn snímku](#SnapshotSummary)   
+  [Zobrazit podrobnosti o snímku](#SnapshotDetails)   
+  [Zobrazit snímek diff](#SnapshotDiff)   
+  [Zobrazit objekty podle dominantního objektu](#FoldObjects)   
+  [Filtrování dat podle identifikátoru](#Filter)   
+  [Najít objekt ve stromu objektů](#ShowInRootsView)   
+  [Zobrazit odkazy na sdílené objekty](#References)   
+  [Zobrazit předdefinované objekty](#BuiltInValues)   
+  [Uložit soubory relací diagnostiky](#Save)   
+  [Přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands)   
+  [Tipy k identifikaci problémů s pamětí](#Tips)  
   
 ##  <a name="Run"></a> Spustit analýzu paměti jazyka JavaScript  
  Analyzátor paměti můžete použít, když máte funkční aplikaci Windows Store, otevřete v sadě Visual Studio nebo nainstalovat na počítač, na kterém běží [!INCLUDE[win8](../includes/win8-md.md)] nebo novější.  
@@ -133,31 +133,31 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 ##  <a name="Isolate"></a> Zjištění nevracení paměti  
  Tyto kroky obsahují pracovního postupu, které můžou pomoct efektivněji používat analýzu paměti jazyka JavaScript. Tyto kroky může být užitečné, pokud se domníváte, že se vaše aplikace může nevracení paměti. Kurz vás provede procesem identifikaci nevracení paměti v aplikaci funkční, najdete v tématu [návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Otevření aplikace v sadě Visual Studio.  
+1. Otevření aplikace v sadě Visual Studio.  
   
-2.  Spusťte analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spustit analýzu paměti jazyka JavaScript](#Run).  
+2. Spusťte analýzu paměti jazyka JavaScript. Další informace najdete v tématu [spustit analýzu paměti jazyka JavaScript](#Run).  
   
-3.  Spuštění vaší aplikace prostřednictvím scénář, který chcete testovat. Například scénář může zahrnovat velké mutace modelu DOM, při načtení konkrétní stránky, nebo při spuštění aplikace.  
+3. Spuštění vaší aplikace prostřednictvím scénář, který chcete testovat. Například scénář může zahrnovat velké mutace modelu DOM, při načtení konkrétní stránky, nebo při spuštění aplikace.  
   
-4.  Opakujte tento scénář 1 – 4 dalších místech.  
+4. Opakujte tento scénář 1 – 4 dalších místech.  
   
-    > [!TIP]
-    >  Opakováním testovací scénář několikrát, může pomoci, ujistěte se, že inicializace práci je možné filtrovat mimo výsledky.  
+   > [!TIP]
+   >  Opakováním testovací scénář několikrát, může pomoci, ujistěte se, že inicializace práci je možné filtrovat mimo výsledky.  
   
-5.  Přepněte do aplikace Visual Studio (stisknutím klávesy Alt + Tab).  
+5. Přepněte do aplikace Visual Studio (stisknutím klávesy Alt + Tab).  
   
-6.  Pořídit snímek haldy směrného plánu výběrem **trvat snímek haldy**.  
+6. Pořídit snímek haldy směrného plánu výběrem **trvat snímek haldy**.  
   
-     Následující obrázek znázorňuje příklad snímek směrného plánu.  
+    Následující obrázek znázorňuje příklad snímek směrného plánu.  
   
-     ![Snímek směrného plánu](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Snímek směrného plánu](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  Pro přesnější kontrolu nad časování snímky, můžete použít [přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands) příkaz v kódu.  
+   > [!TIP]
+   >  Pro přesnější kontrolu nad časování snímky, můžete použít [přidružit zdrojového kódu s daty o využití paměti](#JSConsoleCommands) příkaz v kódu.  
   
-7.  Přepnout do vaší aplikace a opakujte scénář testování (pouze jednou znovu).  
+7. Přepnout do vaší aplikace a opakujte scénář testování (pouze jednou znovu).  
   
-8.  Přepněte do aplikace Visual Studio a vytvořte druhý snímek.  
+8. Přepněte do aplikace Visual Studio a vytvořte druhý snímek.  
   
 9. Přepnout do vaší aplikace a opakujte scénář testování (pouze jednou znovu).  
   
@@ -171,11 +171,11 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
 11. Třetí snímek zvolte odkaz na jedno z rozdílové zobrazení:  
   
-    -   Velikost rozdílové haldy (levý odkaz pod velikost haldy). Text odkazu zobrazuje rozdíl mezi velikost haldy aktuální snímek a velikost haldy z předchozího snímku.  
+    - Velikost rozdílové haldy (levý odkaz pod velikost haldy). Text odkazu zobrazuje rozdíl mezi velikost haldy aktuální snímek a velikost haldy z předchozího snímku.  
   
-    -   Počet rozdílové objektů (pravém odkaz pod počet objektů). Text odkazu zobrazuje dvě hodnoty (například +1858 /-1765): první hodnota je číslo nové objekty přidané od předchozího snímku, a druhá hodnota je počet objektů odebraných od předchozího snímku.  
+    - Počet rozdílové objektů (pravém odkaz pod počet objektů). Text odkazu zobrazuje dvě hodnoty (například +1858 /-1765): první hodnota je číslo nové objekty přidané od předchozího snímku, a druhá hodnota je počet objektů odebraných od předchozího snímku.  
   
-     Tyto odkazy otevřít zobrazení podrobností rozdílové snímku typy v haldě, seřazené podle uchovávané velikosti nebo počet objektů, v závislosti na tom, které jste otevřeli.  
+      Tyto odkazy otevřít zobrazení podrobností rozdílové snímku typy v haldě, seřazené podle uchovávané velikosti nebo počet objektů, v závislosti na tom, které jste otevřeli.  
   
 12. Vyberte jednu z následujících **oboru** možnosti vám pomůže identifikovat problémy s pamětí použití filtru:  
   
@@ -244,29 +244,29 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
  V podrobném zobrazení snímku můžete zkontrolovat výběrem možnosti z panelu nástrojů dat o využití paměti podle dominantního objektu, root nebo typu:  
   
--   **Typy**. Ukazuje instanci počet a celkovou velikost objektů v haldě, seskupené podle typu objektu. Ve výchozím nastavení ty jsou seřazené podle počtu instancí.  
+- **Typy**. Ukazuje instanci počet a celkovou velikost objektů v haldě, seskupené podle typu objektu. Ve výchozím nastavení ty jsou seřazené podle počtu instancí.  
   
-    > [!TIP]
-    >  Obvykle rozdílových zobrazeních typů na objekt haldy jsou nejužitečnější zobrazení pro identifikaci nevracení paměti; Tato zobrazení nabízejí **oboru** filtr vám pomůže identifikovat přes objekty vlevo.  
+  > [!TIP]
+  >  Obvykle rozdílových zobrazeních typů na objekt haldy jsou nejužitečnější zobrazení pro identifikaci nevracení paměti; Tato zobrazení nabízejí **oboru** filtr vám pomůže identifikovat přes objekty vlevo.  
   
--   **Kořeny**. Nachází hierarchické zobrazení objektů z kořenové objekty prostřednictvím podřízené odkazy. Ve výchozím nastavení podřízené uzly jsou seřazené podle uchovávané velikosti sloupce, s největší v horní části.  
+- **Kořeny**. Nachází hierarchické zobrazení objektů z kořenové objekty prostřednictvím podřízené odkazy. Ve výchozím nastavení podřízené uzly jsou seřazené podle uchovávané velikosti sloupce, s největší v horní části.  
   
--   **Dominantní objekty**. Zobrazí seznam objektů v haldě, které mají exkluzivní odkazy na jiné objekty. Dominantní objekty jsou seřazené podle uchovávané velikosti.  
+- **Dominantní objekty**. Zobrazí seznam objektů v haldě, které mají exkluzivní odkazy na jiné objekty. Dominantní objekty jsou seřazené podle uchovávané velikosti.  
   
-    > [!TIP]
-    >  Když odeberete dominantního objektu z paměti, získáte zpět všechny paměti, který uchovává objekt. Pro několik aplikací zobrazení dominantních objektů může pomoci objasnit paměti uchovávané velikosti, protože můžete prozkoumat kompletní objekt řetězce odkazů.  
+  > [!TIP]
+  >  Když odeberete dominantního objektu z paměti, získáte zpět všechny paměti, který uchovává objekt. Pro několik aplikací zobrazení dominantních objektů může pomoci objasnit paměti uchovávané velikosti, protože můžete prozkoumat kompletní objekt řetězce odkazů.  
   
- Všechny tři zobrazení zobrazit podobné typy hodnot, včetně:  
+  Všechny tři zobrazení zobrazit podobné typy hodnot, včetně:  
   
--   **Identifikátory**. Název, který nejlépe identifikuje objekt. Například pro prvky jazyka HTML podrobnosti snímku zobrazit hodnota atributu ID, pokud používá.  
+- **Identifikátory**. Název, který nejlépe identifikuje objekt. Například pro prvky jazyka HTML podrobnosti snímku zobrazit hodnota atributu ID, pokud používá.  
   
--   **Typ**. Typ objektu (například prvek odkazu HTML nebo div element).  
+- **Typ**. Typ objektu (například prvek odkazu HTML nebo div element).  
   
--   **Velikost**. Velikost objektu, nikoli včetně velikosti všechny odkazované objekty.  
+- **Velikost**. Velikost objektu, nikoli včetně velikosti všechny odkazované objekty.  
   
--   **Uchovávané velikosti**. Velikost objektu včetně velikosti všech podřízených objektů, které mají bez nadřazených. Pro účely praktické Toto je množství paměti, které uchovávají objektem, takže při odstranění objektu uvolnit zadaného množství paměti.  
+- **Uchovávané velikosti**. Velikost objektu včetně velikosti všech podřízených objektů, které mají bez nadřazených. Pro účely praktické Toto je množství paměti, které uchovávají objektem, takže při odstranění objektu uvolnit zadaného množství paměti.  
   
--   **Počet**. Počet instancí objektů. Tato hodnota se zobrazí jenom v zobrazení typů.  
+- **Počet**. Počet instancí objektů. Tato hodnota se zobrazí jenom v zobrazení typů.  
   
 ##  <a name="SnapshotDiff"></a> Zobrazit snímek diff  
  V analyzátoru paměti JavaScriptu můžete porovnat snímku s předchozím snímkem v rozdílových zobrazeních snímku.  
@@ -281,22 +281,22 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
   
  V okně snímek diff zobrazení dominantních objektů, typy a kořenové adresáře jsou stejné jako v [zobrazit podrobnosti snímku](#SnapshotDetails) okna. Snímek diff zobrazuje stejné informace jako podrobnosti snímku, s následující hodnoty:  
   
--   **Rozdíl velikosti**. Rozdíl mezi velikost objektu v aktuálním snímku a jeho velikost v předchozím snímkem, nezahrnuje velikost všechny odkazované objekty.  
+- **Rozdíl velikosti**. Rozdíl mezi velikost objektu v aktuálním snímku a jeho velikost v předchozím snímkem, nezahrnuje velikost všechny odkazované objekty.  
   
--   **Rozdíl velikosti uchovávají**. Rozdíl uchovávané velikosti objektu v aktuálním snímku a jeho uchovávané velikosti v předchozím snímkem. Uchovávané velikosti zahrnuje velikost objektů včetně velikosti všech jeho podřízených objektů, které mají bez nadřazených. V zájmu praktické uchovávané velikosti je množství paměti, které uchovávají objektem, takže při odstranění objektu uvolnit zadaného množství paměti.  
+- **Rozdíl velikosti uchovávají**. Rozdíl uchovávané velikosti objektu v aktuálním snímku a jeho uchovávané velikosti v předchozím snímkem. Uchovávané velikosti zahrnuje velikost objektů včetně velikosti všech jeho podřízených objektů, které mají bez nadřazených. V zájmu praktické uchovávané velikosti je množství paměti, které uchovávají objektem, takže při odstranění objektu uvolnit zadaného množství paměti.  
   
- Chcete-li filtrovat rozdílové informace mezi snímky, vyberte jednu z **oboru** filtrů v horní části rozdílové zobrazení.  
+  Chcete-li filtrovat rozdílové informace mezi snímky, vyberte jednu z **oboru** filtrů v horní části rozdílové zobrazení.  
   
--   **Objekty přetrvávající ze snímku č\<číslo >**. Tento filtr ukazuje rozdíl mezi objekty do haldy přidávají nebo odebírají z haldy ve srovnání s referenčním snímkem a předchozí snímek. Například, pokud snímku souhrn zobrazuje +205 /-195 v počet objektů, tento filtr se seznámíte deset objekty, které byly přidány, ale neodeberou.  
+- **Objekty přetrvávající ze snímku č\<číslo >**. Tento filtr ukazuje rozdíl mezi objekty do haldy přidávají nebo odebírají z haldy ve srovnání s referenčním snímkem a předchozí snímek. Například, pokud snímku souhrn zobrazuje +205 /-195 v počet objektů, tento filtr se seznámíte deset objekty, které byly přidány, ale neodeberou.  
   
-    > [!TIP]
-    >  K zobrazení velmi užitečné informace v tomto filtru, postupujte podle kroků popsaných v [izolovat nevracení paměti](#Isolate).  
+  > [!TIP]
+  >  K zobrazení velmi užitečné informace v tomto filtru, postupujte podle kroků popsaných v [izolovat nevracení paměti](#Isolate).  
   
--   **Objekty přidané mezi snímek č\<číslo > a #\<číslo >**. Tento filtr zobrazí všechny objekty do haldy z předchozího snímku.  
+- **Objekty přidané mezi snímek č\<číslo > a #\<číslo >**. Tento filtr zobrazí všechny objekty do haldy z předchozího snímku.  
   
--   **Všechny objekty ve snímku č\<číslo >**. Toto nastavení filtru není odfiltrovat všechny objekty do haldy.  
+- **Všechny objekty ve snímku č\<číslo >**. Toto nastavení filtru není odfiltrovat všechny objekty do haldy.  
   
- Chcete-li zobrazit odkazy na objekty, které se neshodují. aktuální **oboru** filtr, vyberte **zobrazit neshodné odkazy** v seznamu nastavení ![nastavení rozevírací&#45;dolů seznam v analyzátoru paměti ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") v pravém horním rohu podokna. Pokud povolíte toto nastavení, neodpovídající odkazy se zobrazí s textem šedá.  
+  Chcete-li zobrazit odkazy na objekty, které se neshodují. aktuální **oboru** filtr, vyberte **zobrazit neshodné odkazy** v seznamu nastavení ![nastavení rozevírací&#45;dolů seznam v analyzátoru paměti ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") v pravém horním rohu podokna. Pokud povolíte toto nastavení, neodpovídající odkazy se zobrazí s textem šedá.  
   
 > [!TIP]
 >  Doporučujeme, abyste postupovali podle kroků v [izolovat nevracení paměti](#Isolate) a pak použít objekty zbyly **oboru** filtr k identifikaci objektů, které jsou nevrácení paměti.  
@@ -339,19 +339,19 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio, kter
 ##  <a name="JSConsoleCommands"></a> Přidružit zdrojového kódu s daty o využití paměti  
  Snažte se určit části kódu, který má problém s paměti, použijte následující metody:  
   
--   Hledat názvy tříd a ID pro elementy modelu DOM do podrobností a rozdílové zobrazení.  
+- Hledat názvy tříd a ID pro elementy modelu DOM do podrobností a rozdílové zobrazení.  
   
--   Vyhledejte řetězcové hodnoty na podrobnosti a rozdílové zobrazení, které mohou být přidruženy zdrojového kódu.  
+- Vyhledejte řetězcové hodnoty na podrobnosti a rozdílové zobrazení, které mohou být přidruženy zdrojového kódu.  
   
--   Použití [vyhledání objektu v rámci stromů objektů](#ShowInRootsView) příkazu nahoru stromem objektů. To může pomoct identifikovat přidružený zdrojový kód.  
+- Použití [vyhledání objektu v rámci stromů objektů](#ShowInRootsView) příkazu nahoru stromem objektů. To může pomoct identifikovat přidružený zdrojový kód.  
   
--   Přidání příkazů analyzátoru paměti pro váš zdrojový kód.  
+- Přidání příkazů analyzátoru paměti pro váš zdrojový kód.  
   
- Ve zdrojovém kódu můžete použít následující příkazy:  
+  Ve zdrojovém kódu můžete použít následující příkazy:  
   
--   `console.takeHeapSnapshot` pořídí snímek haldy, které se zobrazí v analyzátoru paměti JavaScriptu. Tento příkaz je jedním z [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` pořídí snímek haldy, které se zobrazí v analyzátoru paměti JavaScriptu. Tento příkaz je jedním z [příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` Nastaví uživatele mark (inverzní trojúhelník), který se zobrazí na časové ose grafu paměti v souhrnném zobrazení, zatímco je aplikace spuštěna. Tento příkaz má jeden argument řetězec, který popisuje události a se zobrazí jako popisek v grafu paměti. Tento popis nesmí překročit 100 znaků.  
+- `performance.mark` Nastaví uživatele mark (inverzní trojúhelník), který se zobrazí na časové ose grafu paměti v souhrnném zobrazení, zatímco je aplikace spuštěna. Tento příkaz má jeden argument řetězec, který popisuje události a se zobrazí jako popisek v grafu paměti. Tento popis nesmí překročit 100 znaků.  
   
 > [!TIP]
 >  Použití `console.takeHeapSnapshot` pro urychlení analýzy při opakování scénáře využití paměti.  

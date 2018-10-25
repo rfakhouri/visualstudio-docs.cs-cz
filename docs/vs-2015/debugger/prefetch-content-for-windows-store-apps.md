@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1da34d2baba519f9b8fa8cfde5756e8fccdfe7b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211442"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868726"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Předběžné načtení obsahu pro aplikace pro Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Platí pouze pro Windows] (.. /Image/windows_only_content.png "windows_only_cont
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>Chcete-li vynutit předběžné načtení z ContentPrefetcher zadané prostředky  
  Tento postup předpokládá, že jste už nastavení funkce ContentPrefetcher a zadat identifikátory URI obsahu přednačtení v projektu aplikace. Chcete-li vynutit předběžné načtení obsahu, pokud zadané prostředky jsou nové nebo upravené, budete muset spuštění a zastavení aplikace, než se rozhodnete **předběžné načítání aplikací pro aktivační událost Windows Store** příkazu. Je-li spustit aplikaci nejprve zaregistrovat identifikátory URI. **Aktivovat předběžné načítání aplikací pro Windows Store** příkaz pak vynutí ContentPrefetcher ke stažení obsahu a přidat ho do mezipaměti. Při dalším spuštění aplikace můžete předpokládat, že obsah se předem načtou.  
   
-1.  Spustí aplikaci pro registraci předběžné načtení obsahu identifikátory URI v aplikaci. Na **ladění** nabídce zvolte **spustit ladění** (Klávesová zkratka: F5).  
+1. Spustí aplikaci pro registraci předběžné načtení obsahu identifikátory URI v aplikaci. Na **ladění** nabídce zvolte **spustit ladění** (Klávesová zkratka: F5).  
   
-2.  Na **ladění** nabídce zvolte **Zastavit ladění** (Klávesová zkratka: Shift + F5).  
+2. Na **ladění** nabídce zvolte **Zastavit ladění** (Klávesová zkratka: Shift + F5).  
   
-3.  Na **ladění** nabídce zvolte **jiné cíle ladění** a klikněte na tlačítko **předběžné načítání aplikací pro aktivační událost Windows Store**.  
+3. Na **ladění** nabídce zvolte **jiné cíle ladění** a klikněte na tlačítko **předběžné načítání aplikací pro aktivační událost Windows Store**.  
   
- Teď můžete ladit, testování nebo analyzovat aplikace s využitím předem načteného webových prostředků.  
+   Teď můžete ladit, testování nebo analyzovat aplikace s využitím předem načteného webových prostředků.  
   
 > [!NOTE]
 >  Tento postup opakujte, pokaždé, když přidáváte nebo odebíráte Zadaný webový obsah.  

@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7d15c1991ee70a0b1a163c8968e42fe450b7919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833515"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu 
   
  Stručně řečeno kroky probíhají v projektu DslPackage následujícím způsobem:  
   
-1.  [Příkaz v Commands.vsct deklarovat](#VSCT)  
+1. [Příkaz v Commands.vsct deklarovat](#VSCT)  
   
-2.  [Aktualizovat číslo verze balíčku v Package.tt](#version). Budete muset udělat při každé změně Commands.vsct  
+2. [Aktualizovat číslo verze balíčku v Package.tt](#version). Budete muset udělat při každé změně Commands.vsct  
   
-3.  [Zápis metod ve třídě CommandSet](#CommandSet) zviditelnit příkazu a definovat, co chcete provést příkaz.  
+3. [Zápis metod ve třídě CommandSet](#CommandSet) zviditelnit příkazu a definovat, co chcete provést příkaz.  
   
- Ukázky najdete v tématu [Visualization and Modeling SDK webu](http://go.microsoft.com/fwlink/?LinkID=185579).  
+   Ukázky najdete v tématu [Visualization and Modeling SDK webu](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
 >  Můžete také upravit chování některé existující příkazy, jako je vyjmutí, vložení, Vybrat vše a tisk přepsáním metody v CommandSet.cs. Další informace najdete v tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
@@ -45,15 +45,15 @@ Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu 
   
  V tomto tématu použijte metodu, pokud:  
   
-1.  Můžete definovat příkazy v nabídkách než místní nabídce klikněte pravým tlačítkem.  
+1. Můžete definovat příkazy v nabídkách než místní nabídce klikněte pravým tlačítkem.  
   
-2.  Můžete definovat konkrétní seskupení příkazů v nabídce.  
+2. Můžete definovat konkrétní seskupení příkazů v nabídce.  
   
-3.  Nechcete povolit ostatním uživatelům rozšíření DSL, své vlastní příkazy.  
+3. Nechcete povolit ostatním uživatelům rozšíření DSL, své vlastní příkazy.  
   
-4.  Chcete definovat jeden příkaz.  
+4. Chcete definovat jeden příkaz.  
   
- V opačném případě zvažte použití metody rozhraní MEF pro definovat příkazy. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+   V opačném případě zvažte použití metody rozhraní MEF pro definovat příkazy. Další informace najdete v tématu [rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ##  <a name="VSCT"></a> Příkaz v Commands.Vsct deklarovat  
  Příkazy nabídky jsou deklarovány v DslPackage\Commands.vsct. Tyto definice zadejte popisky, které položky nabídky a kde jsou uvedeny v nabídkách.  
@@ -226,21 +226,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
  Následující fragmenty jsou často užitečné při OnStatus metody:  
   
--   `this.CurrentSelection`. Obrazec, který klikli pravým tlačítkem myši uživatele je vždy součástí tohoto seznamu. Pokud uživatel klikne na prázdnou část diagramu, diagramu je jediným členem seznamu.  
+- `this.CurrentSelection`. Obrazec, který klikli pravým tlačítkem myši uživatele je vždy součástí tohoto seznamu. Pokud uživatel klikne na prázdnou část diagramu, diagramu je jediným členem seznamu.  
   
--   `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.  
+- `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` -uživatel nevybrali více objektů  
+- `this.IsSingleSelection()` -uživatel nevybrali více objektů  
   
--   `this.SingleSelection` – vybraný tvar nebo diagram, který klikli pravým tlačítkem myši uživatele  
+- `this.SingleSelection` – vybraný tvar nebo diagram, který klikli pravým tlačítkem myši uživatele  
   
--   `shape.ModelElement as MyLanguageElement` -prvku modelu reprezentovány ve tvaru.  
+- `shape.ModelElement as MyLanguageElement` -prvku modelu reprezentovány ve tvaru.  
   
- Ujistěte se, v rámci obecných pokynů, `Visible` vlastnost závisí na vybrané a ujistěte se, `Enabled` vlastnosti závisí na stavu vybraných elementů.  
+  Ujistěte se, v rámci obecných pokynů, `Visible` vlastnost závisí na vybrané a ujistěte se, `Enabled` vlastnosti závisí na stavu vybraných elementů.  
   
- Metodu OnStatus nesmí změnit stav Store.  
+  Metodu OnStatus nesmí změnit stav Store.  
   
 ### <a name="define-what-the-command-does"></a>Definujte, co dělá příkaz  
  Pro každý příkaz definovat `OnMenu...` metodu, která provádí požadované akce, když uživatel klepne na příkaz nabídky.  
@@ -338,29 +338,29 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>Poradce při potížích  
  **Příkaz v nabídce nezobrazí:**  
   
--   Příkaz se zobrazí jenom v ladění instance sady Visual Studio, dokud nenainstalujete balíček DSL. Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
+- Příkaz se zobrazí jenom v ladění instance sady Visual Studio, dokud nenainstalujete balíček DSL. Další informace najdete v tématu [nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
   
--   Ujistěte se, že je experimentální vzorku správnou příponu názvu souboru pro tento DSL. Pokud chcete zkontrolovat příponu názvu souboru, otevřete DslDefinition.dsl v instanci hlavní aplikace Visual Studio. V Průzkumníku DSL, klikněte pravým tlačítkem na uzel Editor a pak klikněte na vlastnosti. V okně Vlastnosti zkontrolujte vlastnost FileExtension.  
+- Ujistěte se, že je experimentální vzorku správnou příponu názvu souboru pro tento DSL. Pokud chcete zkontrolovat příponu názvu souboru, otevřete DslDefinition.dsl v instanci hlavní aplikace Visual Studio. V Průzkumníku DSL, klikněte pravým tlačítkem na uzel Editor a pak klikněte na vlastnosti. V okně Vlastnosti zkontrolujte vlastnost FileExtension.  
   
--   Měli jste [zvýší číslo verze balíčku](#version)?  
+- Měli jste [zvýší číslo verze balíčku](#version)?  
   
--   Nastavte zarážku na začátku OnStatus metodu. Ji by měl přerušit, když kliknete pravým tlačítkem na libovolnou část diagramu.  
+- Nastavte zarážku na začátku OnStatus metodu. Ji by měl přerušit, když kliknete pravým tlačítkem na libovolnou část diagramu.  
   
-     **Není volána metoda OnStatus**:  
+   **Není volána metoda OnStatus**:  
   
-    -   Ujistěte se, že identifikátory GUID a ID v kódu CommandSet shodovat s hodnotami v části symboly Commands.vsct.  
+  -   Ujistěte se, že identifikátory GUID a ID v kódu CommandSet shodovat s hodnotami v části symboly Commands.vsct.  
   
-    -   Commands.vsct Ujistěte se, že identifikátor GUID a ID v každé nadřazený uzel identifikovat správné nadřazené skupiny.  
+  -   Commands.vsct Ujistěte se, že identifikátor GUID a ID v každé nadřazený uzel identifikovat správné nadřazené skupiny.  
   
-    -   V příkazovém řádku aplikace Visual Studio zadejte devenv/Setup exp /rootsuffix. Potom restartujte instanci ladění aplikace Visual Studio.  
+  -   V příkazovém řádku aplikace Visual Studio zadejte devenv/Setup exp /rootsuffix. Potom restartujte instanci ladění aplikace Visual Studio.  
   
--   Projděte skrze OnStatus metodu k ověření tohoto příkazu. Viditelné a příkaz. Povolena je nastaveno na hodnotu true.  
+- Projděte skrze OnStatus metodu k ověření tohoto příkazu. Viditelné a příkaz. Povolena je nastaveno na hodnotu true.  
   
- **Nesprávné nabídce text se zobrazí, nebo příkazu se zobrazí ve špatné místo**:  
+  **Nesprávné nabídce text se zobrazí, nebo příkazu se zobrazí ve špatné místo**:  
   
--   Ujistěte se, že je kombinací identifikátoru GUID a ID jedinečné pro tento příkaz.  
+- Ujistěte se, že je kombinací identifikátoru GUID a ID jedinečné pro tento příkaz.  
   
--   Ujistěte se, že jste odinstalovali starší verze balíčku.  
+- Ujistěte se, že jste odinstalovali starší verze balíčku.  
   
 ## <a name="see-also"></a>Viz také  
  [Psaní kódu pro úpravu jazyka specifického pro doménu specifického](../modeling/writing-code-to-customise-a-domain-specific-language.md)   

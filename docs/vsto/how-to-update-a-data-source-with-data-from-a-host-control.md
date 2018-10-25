@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839762"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Postupy: aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku
   Můžete vytvořit vazbu hostitelského ovládacího prvku do zdroje dat a aktualizovat zdroj dat změny provedené u dat v ovládacím prvku. V tomto procesu existují dva hlavní kroky:  
   
-1.  Aktualizujte zdroj dat v paměti změněných dat v ovládacím prvku. Obvykle je zdroje dat v paměti <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, nebo jiný datový objekt.  
+1. Aktualizujte zdroj dat v paměti změněných dat v ovládacím prvku. Obvykle je zdroje dat v paměti <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, nebo jiný datový objekt.  
   
-2.  Aktualizujte databázi s změněná data ve zdroji dat v paměti. To platí jenom v případě, že zdroj dat je připojený k back-end databáze, jako je například databáze systému SQL Server nebo Microsoft Office Access.  
+2. Aktualizujte databázi s změněná data ve zdroji dat v paměti. To platí jenom v případě, že zdroj dat je připojený k back-end databáze, jako je například databáze systému SQL Server nebo Microsoft Office Access.  
   
- Další informace o hostitelské ovládací prvky a datové vazby, naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md) a [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Další informace o hostitelské ovládací prvky a datové vazby, naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md) a [vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Aktualizace zdroje dat v paměti  
  Ve výchozím nastavení hostitelské ovládací prvky, které umožňují jednoduché datové vazby (jako je například ovládací prvky obsahu na dokumentu aplikace Word nebo pojmenované oblasti ovládacího prvku na listu aplikace Excel) bez uložení změn dat do zdroje dat v paměti. To znamená když koncový uživatel změní hodnotu v ovládacím prvku hostitele a pak přejde mimo ovládací prvek, nová hodnota v ovládacím prvku není automaticky uloženy do zdroje dat.  
@@ -57,14 +57,14 @@ ms.locfileid: "35676584"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Chcete-li nastavit ovládací prvek se automaticky aktualizovat zdroj dat v paměti pomocí kódu  
   
-1.  Použít režim System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> objekt, který váže ovládací prvek na zdroj dat. Existují dvě možnosti pro aktualizaci zdroje dat:  
+1. Použít režim System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> objekt, který váže ovládací prvek na zdroj dat. Existují dvě možnosti pro aktualizaci zdroje dat:  
   
-    -   Aktualizace zdroje dat, když ovládací prvek je ověřen, nastavte tuto vlastnost na System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+   - Aktualizace zdroje dat, když ovládací prvek je ověřen, nastavte tuto vlastnost na System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   Pokud chcete aktualizovat zdroj dat při změně hodnoty vlastnosti vázané na data ovládacího prvku, nastavte tuto vlastnost na System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+   - Pokud chcete aktualizovat zdroj dat při změně hodnoty vlastnosti vázané na data ovládacího prvku, nastavte tuto vlastnost na System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
-        > [!NOTE]  
-        >  Možnost System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged se nevztahují na hostitelské ovládací prvky aplikace Word, protože slovo nemá nabídka dokumentů – nebo ovládací prvek – změna oznámení. Tato možnost je však možné pro ovládací prvky Windows Forms v dokumentech aplikace Word.  
+     > [!NOTE]  
+     >  Možnost System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged se nevztahují na hostitelské ovládací prvky aplikace Word, protože slovo nemá nabídka dokumentů – nebo ovládací prvek – změna oznámení. Tato možnost je však možné pro ovládací prvky Windows Forms v dokumentech aplikace Word.  
   
      Následující příklad nastaví <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek se automaticky aktualizovat zdroj dat při změně hodnoty v ovládacím prvku. Tento příklad předpokládá, že máte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek s názvem `namedRange1` s jeho <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost vázána na pole ve zdroji dat.  
   

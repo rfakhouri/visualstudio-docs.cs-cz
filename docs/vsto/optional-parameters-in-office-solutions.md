@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882571"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Volitelné parametry v řešeních pro systém Office
   Mnoho metod v objektové modely aplikací sady Microsoft Office přijmout volitelné parametry. Pokud používáte Visual Basic pro vývoj řešení pro Office v sadě Visual Studio, nemáte předat hodnotu pro volitelné parametry, protože jsou automaticky použity výchozí hodnoty pro každý parametr chybí. Ve většině případů můžete vynechat volitelné parametry v projektech Visual C#. Ale nejde vynechat volitelné **ref** parametry `ThisDocument` tříd v projektech aplikace Word úrovni dokumentu.  
@@ -57,19 +57,19 @@ ms.locfileid: "35675652"
   
  Při volání metody `ThisDocument` třídy, postupujte podle následujících pokynů:  
   
--   Přijměte výchozí hodnotu volitelně **ref** parametr, předejte `missing` proměnnou na parametr. `missing` Proměnná je automaticky definovaný v projektech Visual C# Office a bude mu přiřazena hodnota <xref:System.Type.Missing> v kódu generovaném projektu.  
+- Přijměte výchozí hodnotu volitelně **ref** parametr, předejte `missing` proměnnou na parametr. `missing` Proměnná je automaticky definovaný v projektech Visual C# Office a bude mu přiřazena hodnota <xref:System.Type.Missing> v kódu generovaném projektu.  
   
--   Zadat vlastní hodnotu pro volitelný **ref** deklarovat objekt, který je přiřazen k hodnotě, kterou chcete zadat parametr a objekt předat parametr.  
+- Zadat vlastní hodnotu pro volitelný **ref** deklarovat objekt, který je přiřazen k hodnotě, kterou chcete zadat parametr a objekt předat parametr.  
   
- Následující příklad kódu ukazuje, jak volat <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metodu tak, že zadáte hodnotu *ignoreUppercase* parametr a přijímat výchozí hodnota pro ostatní parametry.  
+  Následující příklad kódu ukazuje, jak volat <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> metodu tak, že zadáte hodnotu *ignoreUppercase* parametr a přijímat výchozí hodnota pro ostatní parametry.  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- Pokud chcete napsat kód, který se vynechá volitelné **ref** parametry metody v `ThisDocument` třídy, můžete také volat stejnou metodu na <xref:Microsoft.Office.Interop.Word.Document> vrácený <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> vlastnost a vynechat možnost parametry z metody. Můžete to provést, protože <xref:Microsoft.Office.Interop.Word.Document> rozhraní, nikoli třída.  
+  Pokud chcete napsat kód, který se vynechá volitelné **ref** parametry metody v `ThisDocument` třídy, můžete také volat stejnou metodu na <xref:Microsoft.Office.Interop.Word.Document> vrácený <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> vlastnost a vynechat možnost parametry z metody. Můžete to provést, protože <xref:Microsoft.Office.Interop.Word.Document> rozhraní, nikoli třída.  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Další informace o parametrech typu hodnoty a odkazu, naleznete v tématu [předávání argumentů podle hodnoty a podle reference &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro jazyk Visual Basic) a [předávat parametry &#40;C&#35; Průvodce programováním pro&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+  Další informace o parametrech typu hodnoty a odkazu, naleznete v tématu [předávání argumentů podle hodnoty a podle reference &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro jazyk Visual Basic) a [předávat parametry &#40;C&#35; Průvodce programováním pro&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   

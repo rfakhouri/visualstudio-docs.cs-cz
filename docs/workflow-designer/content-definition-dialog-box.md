@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870770"
 ---
 # <a name="content-definition-dialog-box"></a>Dialogové okno Definice obsahu
 
-**Obsahu definice** dialogové okno v Návrháři pracovních postupů slouží ke konfiguraci **obsahu** vlastnosti <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, a <xref:System.ServiceModel.Activities.ReceiveReply> aktivity. Další informace o návrháře aktivit, které používají toto políčko, najdete v článku [odeslat](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), a [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) témata.
+**Definici obsahu** dialogové okno se používá v Návrháři pracovních postupů ke konfiguraci **obsahu** vlastnosti <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, a <xref:System.ServiceModel.Activities.ReceiveReply> aktivity. Další informace o návrháři aktivit, které používají toto políčko, najdete v článku [odeslat](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), a [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) témata.
 
-Následující tabulka popisuje prvky uživatelského rozhraní (UI) **inicializovat korelace** dialogové okno:
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **inicializace korelace** dialogové okno:
 
 |Prvek uživatelského rozhraní (UI)|Popis|
-|----------------|-----------------|
-|**Zpráva**|Určuje zprávu, která obsah s **zprávy data** výraz textového pole a zadejte pomocí **typ zprávy** rozevíracího seznamu. Ve výchozím nastavení **obsahu definice** používá <xref:System.ServiceModel.Activities.ReceiveMessageContent>, která očekává <xref:System.ServiceModel.Channels.Message> nebo zprávu smlouvy type v rámci služby definice pracovního postupu.|
-|**Parametry**|Klikněte **parametry** přepínač použít <xref:System.ServiceModel.Activities.ReceiveParametersContent>, která očekává kontraktu dat. Použít mřížku dat nastavit obecné kolekce <xref:System.Activities.OutArgument> jejichž hodnoty jsou přiřazeny k proměnné parametry v aktuálním pracovním postupu dvojice klíč/hodnota.|
+|-|-----------------|
+|**Zpráva**|Určuje zprávu, která obsahu s **zprávy data** výraz textové pole a typu pomocí **typ zprávy** rozevíracího seznamu. Ve výchozím nastavení **definici obsahu** používá <xref:System.ServiceModel.Activities.ReceiveMessageContent>, která očekává <xref:System.ServiceModel.Channels.Message> nebo zprávy smlouvy typu v definici služby pracovního postupu.|
+|**Parametry**|Klikněte na tlačítko **parametry** přepínač použít <xref:System.ServiceModel.Activities.ReceiveParametersContent>, který očekává, že data smlouvy. Můžete nastavit obecné kolekce datové mřížce <xref:System.Activities.OutArgument> jehož hodnoty jsou přiřazeny k parametry proměnné jsou v aktuálním pracovním postupu dvojic klíč/hodnota.|
 
-**Obsahu definice** dialogové okno používá **odeslat**, **Receive**, **ReceiveAndSendReply**, a  **SendAndReceiveReply** Designer. K nim přistupovat je podobný v každém případě a Receive případě zde slouží k znázorňují postup.
+**Definici obsahu** dialogové okno používá **odeslat**, **Receive**, **ReceiveAndSendReply**, a  **SendAndReceiveReply** návrháře. Přístup k nim je podobné jako v každém případě a případ Receive se zde používá k znázorňují postup.
 
-**Receive** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Receive> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> Receive. Vyberte **Receive** Návrhář aktivity a klikněte na tlačítko se třemi tečkami vedle textu u (obsah) **obsahu** vlastnost mřížku vlastností pro **obsahu definice**dialogové okno se objeví.
+**Receive** návrháře aktivit můžete přetáhnout z **nástrojů** a vyřadit na povrch návrháře postupu provádění bez ohledu na to aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Receive> aktivity s výchozím <xref:System.Activities.Activity.DisplayName%2A> Receive. Vyberte **Receive** návrháře aktivit a klikněte na tlačítko se třemi tečkami vedle textu u (obsah) **obsahu** v mřížce vlastností pro vlastnost **definici obsahu**dialogového okna.
 
-Obsah lze zadat v rámci **zpráva** část <xref:System.ServiceModel.Activities.ReceiveMessageContent> aktivity nebo uvnitř **parametr** část <xref:System.ServiceModel.Activities.ReceiveParametersContent> aktivity.
+Obsah se dá nastavit v rámci **zpráva** v části <xref:System.ServiceModel.Activities.ReceiveMessageContent> aktivity nebo v rámci **parametr** v části <xref:System.ServiceModel.Activities.ReceiveParametersContent> aktivity.
 
 ## <a name="see-also"></a>Viz také:
 

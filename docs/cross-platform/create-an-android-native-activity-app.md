@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: a94490c60a8b2ccb4513cf3c6c5c9d0de1a6f392
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0b8a2622c0b4d55376ecb0f3bc6641d41c524962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845425"
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace s NativeActivity pro Android
 Při instalaci Visual C++ pro vývoj mobilních řešení napříč platformami možnost Visual Studio 2015 je možné vytvořit plně funkční aplikace Android Native Activity. Android Kit pro nativní vývoj (NDK) je sada nástrojů, která umožňuje provádět většinu aplikace pro Android pomocí čistého kódu C/C++. Nějaký kód Java JNI funguje jako spojovacího kódu C/C++ pracovat s Androidem umožňuje. Sada Android NDK zavedena možnost vytvářet aplikace Native Activity s Android API úrovně 9. Nativní kód aktivity se používá pro vytvoření hry a grafické náročné aplikace, které používají OpenGL nebo Unreal Engine. Toto téma vás provede vytvořením jednoduché aplikace s Nativeactivity, který využívá OpenGL. Další témata projdete developer životní cyklus úpravy, sestavování, ladění a nasazování Nativeactivity kódu.  
@@ -34,19 +34,19 @@ Při instalaci Visual C++ pro vývoj mobilních řešení napříč platformami 
   
 #### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Otevřít Visual Studio. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.  
+1. Otevřít Visual Studio. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.  
   
-2.  V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++** > **různé platformy**a klikněte na tlačítko **Aplikace s Nativeactivity (Android)** šablony.  
+2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++** > **různé platformy**a klikněte na tlačítko **Aplikace s Nativeactivity (Android)** šablony.  
   
-3.  Dejte aplikaci s názvem jako `MyAndroidApp`a klikněte na tlačítko **OK**.  
+3. Dejte aplikaci s názvem jako `MyAndroidApp`a klikněte na tlačítko **OK**.  
   
-     ![Vytvoření projektu Nativeactivity](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
+    ![Vytvoření projektu Nativeactivity](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio vytvoří nové řešení a otevře se Průzkumník řešení.  
+    Visual Studio vytvoří nové řešení a otevře se Průzkumník řešení.  
   
-     ![Aktivity projektu v Průzkumníku řešení](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Aktivity projektu v Průzkumníku řešení](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- Nové řešení aplikace Android Native Activity obsahuje dva projekty:  
+   Nové řešení aplikace Android Native Activity obsahuje dva projekty:  
   
 -   `MyAndroidApp.NativeActivity` obsahuje odkazy na a spojovacího kódu pro svoji aplikaci spouštět jako nativní aktivita v Androidu. Implementace vstupních bodů ze spojovacího kódu jsou v *main.cpp*. Předkompilované hlavičky jsou v *soubor pch.h*. Tento projekt aplikace Nativeactivity je zkompilován do sdílené knihovny *.so* souboru, který převezme balícího projektu.  
   

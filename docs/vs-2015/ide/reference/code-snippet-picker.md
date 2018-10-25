@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845293"
 ---
 # <a name="code-snippet-picker"></a>Sběrač fragmentů kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49213301"
   
  Postup zobrazení **Sběrač fragmentů kódu** se liší podle jazyka, který používáte.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Klikněte pravým tlačítkem na požadované místo v editoru kódu zobrazit místní nabídku a vyberte **Vložit fragment**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Klikněte pravým tlačítkem na požadované místo v editoru kódu zobrazit místní nabídku a vyberte **Vložit fragment**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Klikněte pravým tlačítkem na požadované místo v editoru kódu pro zobrazení v místní nabídce a klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Klikněte pravým tlačítkem na požadované místo v editoru kódu pro zobrazení v místní nabídce a klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] – **Sběrač fragmentů kódu** není k dispozici.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] – **Sběrač fragmentů kódu** není k dispozici.  
   
--   Visual F # – **Sběrač fragmentů kódu** není k dispozici.  
+- Visual F # – **Sběrač fragmentů kódu** není k dispozici.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] --Klikněte pravým tlačítkem na požadované místo v editoru kódu zobrazit místní nabídku a klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] --Klikněte pravým tlačítkem na požadované místo v editoru kódu zobrazit místní nabídku a klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
   
--   XML – klikněte pravým tlačítkem na požadované místo v editoru kódu a zobrazit místní nabídku, klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
+- XML – klikněte pravým tlačítkem na požadované místo v editoru kódu a zobrazit místní nabídku, klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
   
--   HTML – klikněte pravým tlačítkem na požadované místo v editoru kódu a zobrazit místní nabídku, klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
+- HTML – klikněte pravým tlačítkem na požadované místo v editoru kódu a zobrazit místní nabídku, klikněte na tlačítko **Vložit fragment** nebo **obklopit fragmentem**.  
   
--   SQL - klikněte pravým tlačítkem na požadované místo v editoru kódu a zobrazit místní nabídku, klikněte na tlačítko **Vložit fragment**.  
+- SQL - klikněte pravým tlačítkem na požadované místo v editoru kódu a zobrazit místní nabídku, klikněte na tlačítko **Vložit fragment**.  
   
- Ve většině vývojářské jazyky sady Visual Studio, můžete použít **Správce fragmentů kódů** do složky, které chcete přidat **seznamu složek** , který **Sběrač fragmentů kódu** hledá XML soubory fragmentu kódu. Můžete také vytvořit vlastní fragmenty kódu pro přidání do seznamu. Další informace najdete v tématu [návod: Vytvoření fragmentu kódu](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Ve většině vývojářské jazyky sady Visual Studio, můžete použít **Správce fragmentů kódů** do složky, které chcete přidat **seznamu složek** , který **Sběrač fragmentů kódu** hledá XML soubory fragmentu kódu. Můžete také vytvořit vlastní fragmenty kódu pro přidání do seznamu. Další informace najdete v tématu [návod: Vytvoření fragmentu kódu](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  Název položky  

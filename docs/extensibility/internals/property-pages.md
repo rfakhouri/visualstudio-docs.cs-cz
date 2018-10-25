@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42638d9ae5467ec3b8cf8341a170b9b7eca9e86e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878879"
 ---
 # <a name="property-pages"></a>Stránky vlastností
 Uživatelé mohou zobrazit a změnit závislé na konfiguraci a - nezávisle vlastnosti projektu pomocí stránky vlastností. A **stránky vlastností** tlačítko je dostupné v **vlastnosti** okně nebo na panelu nástrojů Průzkumník řešení pro objekty, které poskytují zobrazení stránky vlastností vybraného objektu. Stránky vlastností jsou vytvořeny pomocí prostředí a jsou k dispozici pro projekty a řešení. Může, ale také být k dispozici pro položky projektu, které používají závislé na konfiguraci vlastností. Tato funkce mohou být použity, pokud soubory v rámci projektu vyžadují různé přepínače kompilátor správně sestavila.  
@@ -41,46 +41,46 @@ Dialogové okno stránky vlastností projektu s pole formátu a stromové strukt
   
  K dispozici pouze dvě kategorie nejvyšší úrovně na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stránky vlastností:  
   
--   Společná nastavení, které zobrazuje informace o nezávislé na konfiguraci pro vybraný objekt nebo objekty. V důsledku toho pokud je vybrána jedna společná nastavení podkategorie, možnosti konfigurace, platformy a nástroje Configuration Manager v horní části dialogového okna nejsou k dispozici.  
+- Společná nastavení, které zobrazuje informace o nezávislé na konfiguraci pro vybraný objekt nebo objekty. V důsledku toho pokud je vybrána jedna společná nastavení podkategorie, možnosti konfigurace, platformy a nástroje Configuration Manager v horní části dialogového okna nejsou k dispozici.  
   
--   Vlastnosti konfigurace, který obsahuje informace o závislé na konfiguraci s parametry sestavení, ladění a optimalizace pro řešení nebo projektu.  
+- Vlastnosti konfigurace, který obsahuje informace o závislé na konfiguraci s parametry sestavení, ladění a optimalizace pro řešení nebo projektu.  
   
- Nelze vytvořit žádné další kategorie nejvyšší úrovně, ale nechcete zobrazit jeden z nich ve vaší implementaci můžete `IVsPropertyPage`. Pokud například nemáte žádné vlastnosti nezávislé na konfiguraci pro zobrazení objektu, můžete nechcete zobrazit společná nastavení kategorie. Zobrazit společná nastavení, pokud `ISpecifyPropertyPages` je implementována z objektu položky Procházet a vlastnosti konfigurace, Pokud implementujete `ISpecifyPropertyPages` v konfigurační objekt (objekt implementace `IVsCfg`, `IVsProjectCfg`a související rozhraní).  
+  Nelze vytvořit žádné další kategorie nejvyšší úrovně, ale nechcete zobrazit jeden z nich ve vaší implementaci můžete `IVsPropertyPage`. Pokud například nemáte žádné vlastnosti nezávislé na konfiguraci pro zobrazení objektu, můžete nechcete zobrazit společná nastavení kategorie. Zobrazit společná nastavení, pokud `ISpecifyPropertyPages` je implementována z objektu položky Procházet a vlastnosti konfigurace, Pokud implementujete `ISpecifyPropertyPages` v konfigurační objekt (objekt implementace `IVsCfg`, `IVsProjectCfg`a související rozhraní).  
   
- Každá kategorie zobrazeným pod kategorií nejvyšší úrovně představuje stránku samostatné vlastnost. Kategorie a podkategorie položky k dispozici v dialogovém okně se určují podle vaší implementace `ISpecifyPropertyPages` a `IVsPropertyPage`.  
+  Každá kategorie zobrazeným pod kategorií nejvyšší úrovně představuje stránku samostatné vlastnost. Kategorie a podkategorie položky k dispozici v dialogovém okně se určují podle vaší implementace `ISpecifyPropertyPages` a `IVsPropertyPage`.  
   
- `IDispatch` objekty pro položky v zásobník pro výběr, které mají vlastnosti, který se má zobrazit na implementace stránky vlastností `ISpecifyPropertyPages` výčet seznam ID tříd. ID třídy jsou předány jako proměnné `ISpecifyPropertyPages` a slouží k vytvoření instance na stránkách vlastností. Seznam ID třídy je předán také `IVsPropertyPage` vytvořit strukturu stromu na levé straně dialogového okna. Stránky vlastností pak předejte informace zpět `IDispatch` objekt, který implementuje `ISpecifyPropertyPages` a vyplní informace pro každou stránku.  
+  `IDispatch` objekty pro položky v zásobník pro výběr, které mají vlastnosti, který se má zobrazit na implementace stránky vlastností `ISpecifyPropertyPages` výčet seznam ID tříd. ID třídy jsou předány jako proměnné `ISpecifyPropertyPages` a slouží k vytvoření instance na stránkách vlastností. Seznam ID třídy je předán také `IVsPropertyPage` vytvořit strukturu stromu na levé straně dialogového okna. Stránky vlastností pak předejte informace zpět `IDispatch` objekt, který implementuje `ISpecifyPropertyPages` a vyplní informace pro každou stránku.  
   
- Vlastnosti objektu procházení se načítají pomocí `IDispatch` pro každý objekt v zásobník pro výběr.  
+  Vlastnosti objektu procházení se načítají pomocí `IDispatch` pro každý objekt v zásobník pro výběr.  
   
- Implementace `Help::DisplayTopicFromF1Keyword` ve vaší VSPackage poskytuje funkce pro tlačítko Nápověda.  
+  Implementace `Help::DisplayTopicFromF1Keyword` ve vaší VSPackage poskytuje funkce pro tlačítko Nápověda.  
   
- Další informace najdete v tématu `IDispatch` a `ISpecifyPropertyPages`v knihovně MSDN.  
+  Další informace najdete v tématu `IDispatch` a `ISpecifyPropertyPages`v knihovně MSDN.  
   
- Druhého typu stránky vlastností zobrazí hostitelů ukázky formuláře mřížky vlastností, jak je znázorněno na následujícím snímku obrazovky.  
+  Druhého typu stránky vlastností zobrazí hostitelů ukázky formuláře mřížky vlastností, jak je znázorněno na následujícím snímku obrazovky.  
   
- ![Stránky vlastností VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
-Dialogové okno stránky vlastností pomocí mřížky vlastností  
+  ![Stránky vlastností VC](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  Dialogové okno stránky vlastností pomocí mřížky vlastností  
   
- Rozhraní `IVSMDPropertyBrowser` a `IVSMDPropertyGrid` (deklarované v vsmanaged.h) slouží k vytvoření a naplnění mřížky vlastností v rámci dialogového okna nebo okno.  
+  Rozhraní `IVSMDPropertyBrowser` a `IVSMDPropertyGrid` (deklarované v vsmanaged.h) slouží k vytvoření a naplnění mřížky vlastností v rámci dialogového okna nebo okno.  
   
- Architektura projekty podstatně změnila od minulých verzí nástroje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Zejména je aktivní pojem kterého projektu se změnil. V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], neexistuje žádný koncept aktivního projektu. V předchozím vývojových prostředích aktivní projekt je projekt, který sestavovat a nasazovat příkazy by ve výchozím nastavení bez ohledu na kontextu. Nyní, řešení ovládací prvky a řeší, která sestavení a nasazení příkazy platí pro projekty, které.  
+  Architektura projekty podstatně změnila od minulých verzí nástroje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Zejména je aktivní pojem kterého projektu se změnil. V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], neexistuje žádný koncept aktivního projektu. V předchozím vývojových prostředích aktivní projekt je projekt, který sestavovat a nasazovat příkazy by ve výchozím nastavení bez ohledu na kontextu. Nyní, řešení ovládací prvky a řeší, která sestavení a nasazení příkazy platí pro projekty, které.  
   
- Co byla dříve aktivní projekt je nyní zaznamenána v jednom ze tří způsobů:  
+  Co byla dříve aktivní projekt je nyní zaznamenána v jednom ze tří způsobů:  
   
--   Spouštěný projekt  
+- Spouštěný projekt  
   
-     Můžete zadat projekt nebo projekty z řešení vlastností, který bude spuštěn, když uživatel stiskne klávesu F5 nebo vybere spuštění v nabídce sestavení. Toto funguje ve staré aktivní projekt v tom smyslu, že její název se zobrazí v Průzkumníku řešení tučné písmo s podobným způsobem.  
+   Můžete zadat projekt nebo projekty z řešení vlastností, který bude spuštěn, když uživatel stiskne klávesu F5 nebo vybere spuštění v nabídce sestavení. Toto funguje ve staré aktivní projekt v tom smyslu, že její název se zobrazí v Průzkumníku řešení tučné písmo s podobným způsobem.  
   
-     Projekt po spuštění můžete načíst jako vlastnost v modelu automatizace voláním `DTE.Solution.SolutionBuild.StartupProjects`. V sadě VSPackage zavoláte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager` je dostupný jako služba ve `QueryService` na SID_SVsSolutionBuildManager. Další informace najdete v tématu [objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md) a [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
+   Projekt po spuštění můžete načíst jako vlastnost v modelu automatizace voláním `DTE.Solution.SolutionBuild.StartupProjects`. V sadě VSPackage zavoláte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager` je dostupný jako služba ve `QueryService` na SID_SVsSolutionBuildManager. Další informace najdete v tématu [objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md) a [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
   
--   Konfigurace aktivního řešení sestavení  
+- Konfigurace aktivního řešení sestavení  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] má konfiguraci aktivního řešení, k dispozici v modelu automatizace implementací `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfigurace řešení je kolekce, která obsahuje jednu konfiguraci projektu pro každý projekt v řešení (každý projekt může mít více konfigurací na více platforem s odlišnými názvy). Další informace týkající se stránky vlastností tohoto řešení najdete v tématu [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
+   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] má konfiguraci aktivního řešení, k dispozici v modelu automatizace implementací `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfigurace řešení je kolekce, která obsahuje jednu konfiguraci projektu pro každý projekt v řešení (každý projekt může mít více konfigurací na více platforem s odlišnými názvy). Další informace týkající se stránky vlastností tohoto řešení najdete v tématu [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
   
--   Aktuálně vybraný projekt  
+- Aktuálně vybraný projekt  
   
-     Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> metodu pro načtení hierarchie projektu a položky projektu nebo vybraných položek. Z DTE, můžete využít `SelectedItems.SelectedItem.Project` a `SelectedItems.SelectedItem.ProjectItem` metody. Zde je ukázkový kód v rámci těchto položek v samotném [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dokumenty.  
+   Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> metodu pro načtení hierarchie projektu a položky projektu nebo vybraných položek. Z DTE, můžete využít `SelectedItems.SelectedItem.Project` a `SelectedItems.SelectedItem.ProjectItem` metody. Zde je ukázkový kód v rámci těchto položek v samotném [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dokumenty.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   

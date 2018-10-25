@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843402"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Výběr instalačního adresáře pro balíček VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ V systému souborů uživatele musí být VSPackage a jeho podpůrné soubory. U
   
  [Správa rozšíření VSPackages](../../extensibility/managing-vspackages.md) označuje, že položky registru řídí umístění [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] skutečně hledá na VSPackage satelitní knihovny DLL. Nicméně [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se pokouší načíst satelitní knihovny DLL v podadresáři s názvem hodnoty LCID, v uvedeném pořadí:  
   
-1.  Výchozí LCID (VS LCID \1033 například pro angličtinu)  
+1. Výchozí LCID (VS LCID \1033 například pro angličtinu)  
   
-2.  Výchozí LCID dílčího výchozí.  
+2. Výchozí LCID dílčího výchozí.  
   
-3.  Výchozí systémové nastavení LCID.  
+3. Výchozí systémové nastavení LCID.  
   
-4.  Výchozí systémové nastavení LCID s dílčího výchozí.  
+4. Výchozí systémové nastavení LCID s dílčího výchozí.  
   
-5.  USA Angličtina (. \1033 nebo. \0x409).  
+5. USA Angličtina (. \1033 nebo. \0x409).  
   
- Pokud vaše knihovna DLL balíčku VSPackage zahrnuje prostředky a SatelliteDll\DllName registru vstupních bodů, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , pokusí se načíst ve výše uvedeném pořadí.  
+   Pokud vaše knihovna DLL balíčku VSPackage zahrnuje prostředky a SatelliteDll\DllName registru vstupních bodů, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , pokusí se načíst ve výše uvedeném pořadí.  
   
 ## <a name="see-also"></a>Viz také  
  [Volba mezi sdíleným a Verzovaným rozšířením VSPackages](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
