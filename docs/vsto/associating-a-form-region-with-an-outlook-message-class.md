@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891996"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050259"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
   Můžete určit oblast formuláře zobrazit podle přidružení oblasti formuláře k třídě zpráv každé položky, položky, které aplikace Microsoft Office Outlook. Například pokud se chcete připojit k dolnímu okraji položky pošty oblasti formuláře, můžete přidružit oblasti formuláře s `IPM.Note` třída zprávy.  
@@ -111,7 +111,7 @@ ms.locfileid: "49891996"
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Název formuláře a zpráva přehled tříd](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Jak spolu fungují formulářů aplikace Outlook a položek](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Název formuláře a zpráva přehled tříd](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Jak spolu fungují formulářů aplikace Outlook a položek](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   

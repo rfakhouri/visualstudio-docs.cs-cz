@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945543"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050297"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 
@@ -49,7 +49,8 @@ Následuje několik příkladů:
 |Odpovídá žádnému nebo více výskytům předcházejícího výrazu (odpovídá co nejméně znakům)|*?|`e.*?e` odpovídá "ee" ve "slově feeder" ale ne "eede".|
 |Odpovídá jeden nebo více výskytům předcházejícího výrazu (odpovídá co nejméně znakům)|+?|`e.+?e` odpovídá "ente" a "erprise" ve slově "enterprise", ale ne celému slovu "enterprise".|
 |Ukotvení řetězce shody na začátek řetězce nebo řádku|^|`^car` odpovídá slovu "car" pouze, pokud se nachází na začátku řádku.|
-|Ukotvení řetězce shody na konec řádku|\r?$|`End\r?$` odpovídá "end" pouze pokud je zobrazeno na konci řádku.|
+|Ukotvení řetězce shody na konec řádku|\r?$|`end\r?$` odpovídá "end" pouze pokud je zobrazeno na konci řádku.|
+|Ukotvení řetězce shody na konec souboru|$|`end$` odpovídá "end" pouze pokud je zobrazeno na konci souboru.|
 |Odpovídá jakémukoli jednomu znaku v sadě|[abc]|`b[abc]` odpovídá "ba", "bb" a "bc".|
 |Odpovídá jakémukoli znaku v rozsahu znaků|[a-f]|`be[n-t]` odpovídá "bet" v "between", "ben" v "beneath" a "bes" ve "beside", ale ne "below".|
 |Zachytí a implicitně očísluje výraz v závorkách|()|`([a-z])X\1` porovnává "s aXa" a "bXb", ale nikoli "aXb". "\1" se vztahuje k první skupině výrazů "[a-z]".|
@@ -58,8 +59,8 @@ Následuje několik příkladů:
 |Odpovídá výrazu před nebo jednomu za symbolem.|&#124;|`(sponge\|mud) bath` odpovídá "výrazům relaxační koupel" a "bahenní koupel".|
 |Řídicí znak po zpětném lomítku| \\ |`\^` odpovídá znaku ^.|
 |Určení počtu výskytů předchozího znaku nebo skupiny|{x}, kde x je počet výskytů|`x(ab){2}x` odpovídá "xababx" a `x(ab){2,3}x` odpovídá "xababx" a "xabababx" ale ne "xababababx".|
-|Odpovídá textu ve třídě znaků Unicode, kde "X" je číslo sady Unicode. Další informace o třídách znaků Unicode naleznete v tématu<br /><br /> [Vlastnosti znaků Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` odpovídá "T" a "D" v "Thomas Doe".|
-|Porovná hranici slova|`\b` (Mimo třídu znaků určuje \b hranici slova a uvnitř znak třídy určuje znak backspace).|`\bin` odpovídá "in" v "inside" ale ne "pinto".|
+|Odpovídá textu ve třídě znaků Unicode. Další informace o třídách znaků Unicode naleznete v tématu<br /><br /> [Vlastnosti znaků Unicode Standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, kde "X" je číslo sady Unicode.|`\p{Lu}` odpovídá "T" a "D" v "Thomas Doe".|
+|Porovná hranici slova|\b (mimo třídu znaků `\b` určuje hranici slova a uvnitř třídy znaků `\b` Určuje znak backspace.)|`\bin` odpovídá "in" v "inside" ale ne "pinto".|
 |Odpovídá konci řádku (to znamená zalomení řádku a nový řádek).|\r?\n|`End\r?\nBegin` odpovídá "End" a "Begin" pouze, když je "End" posledním řetězcem v řádku a "Begin" je první řetězec v následujícím řádku.|
 |Odpovídá libovolnému alfanumerickému znaku|\w|`a\wd` odpovídá "Přidat" a "a1d", ale ne "a d".|
 |Odpovídá jakémukoli prázdnému znaku.|(?([^\r\n])\s)|`Public\sInterface` odpovídá slovnímu "Veřejné rozhraní".|

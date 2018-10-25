@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883351"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050180"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
 
@@ -38,7 +38,7 @@ Publikuje rozšíření na webu Marketplace. Rozšíření může být rozšíř
 |datová část (povinné) | Buď cestu k datové části publikování nebo odkaz má použít jako "Další informace o adresu URL". |
 |publishManifest (povinné) | Cesta k publikování manifestu soubor se má použít. |
 |ignoreWarnings | Seznam upozornění ignorovat při publikování rozšíření. Tato upozornění se zobrazují jako zprávy příkazového řádku při publikování rozšíření. (například "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken | Osobní přístupový Token, který se používá k ověření vydavatele. Pokud se nezadá, je na token pat získaných z přihlášeného uživatele. |
+|personalAccessToken | Personal Access Token PAT, který se používá k ověření vydavatele. Pokud se nezadá, je na token PAT získaných z přihlášeného uživatele. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"

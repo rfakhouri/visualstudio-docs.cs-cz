@@ -1,6 +1,6 @@
 ---
 title: Instalace testovacích agentů a kontrolerů testů
-ms.date: 07/06/2018
+ms.date: 10/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3e024772e9deb5f391e057c3c66e505637765e1d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370962"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050089"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalace testovacích agentů a kontrolerů testů
 
@@ -55,6 +55,9 @@ Podle následující tabulky můžete kombinovat různé verze TFS, Microsoft Te
 | 2015: nové instalace | 2013 | 2013 | 2013 |
 | 2015: upgrade z 2013 nebo s novou instalací | 2015 | 2013 | 2013 |
 | 2013 | 2015 | 2013 | 2013 |
+
+> [!NOTE]
+> Scénáře správy testovacího prostředí v TFS 2018 a DevOps služby Azure jsou zastaralé. Další informace najdete v části [poznámky k verzi TFS 2018](/visualstudio/releasenotes/tfs2018-relnotes#--removing-support-for-lab-center-and-automated-testing-flows-in-microsoft-test-manager).
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Upgrade z Visual Studio 2013 testovacích agentů
 

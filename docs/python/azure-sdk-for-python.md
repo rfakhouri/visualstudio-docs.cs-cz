@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100923"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050219"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
@@ -39,7 +39,7 @@ Můžete také postupovat [instalace Pythonu a sady SDK](https://docs.microsoft.
 
 [Sady Azure SDK for středisko pro vývojáře Python](https://docs.microsoft.com/python/azure/?view=azure-python) má také některé užitečné zdroje informací, včetně počtu kurzy:
 
-- Vytváření webových aplikací ve službě App Service Azuyre na Linux(/azure/app-service/containers/quickstart-python).
+- [Vytváření webových aplikací ve službě Azuyre App Service v Linuxu](/azure/app-service/containers/quickstart-python).
 - [Úložiště objektů BLOB](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [Úložiště tabulek](/azure/cosmos-db/table-storage-how-to-use-python)
 - [Fronta úložiště](/azure/storage/storage-python-how-to-use-queue-storage)

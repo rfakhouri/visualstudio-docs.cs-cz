@@ -1,8 +1,8 @@
 ---
-title: 'Kurz: Ladění nativního a spravovaného kódu (smíšený režim)'
-description: Zjistěte, jak ladit nativní knihovny DLL z aplikace .NET Core nebo rozhraní .NET Framework pomocí ladění ve smíšeném režimu
+title: 'Kurz: Ladění spravovaného a nativního kódu (ve smíšeném režimu)'
+description: Zjistěte, jak ladit nativní knihovnu DLL z aplikace .NET Core nebo .NET Framework pomocí ladění ve smíšeném režimu
 ms.custom: ''
-ms.date: 04/27/2018
+ms.date: 10/24/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
@@ -16,60 +16,60 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1f34f6af0a98e71f5feb910f84e8d67ada051ae9
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 97ad3b6e112a05db817f7a522c3865893d439fd7
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057034"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050323"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Kurz: Ladění nativního a spravovaného kódu v sadě Visual Studio
+# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Kurz: Ladění spravovaného a nativního kódu ve stejné relaci ladění
 
-Visual Studio umožňuje povolit více než jeden typ ladicí program při ladění, která se nazývá ladění ve smíšeném režimu. V tomto kurzu nastavíte možnosti ladění spravovaná a nativní kód v rámci jedné relace ladění. Tento kurz ukazuje, jak k ladění nativního kódu ze spravované aplikace, ale můžete také provést zpětného, a [ladění spravovaného kódu z nativní aplikace](../debugger/how-to-debug-in-mixed-mode.md). Ladicí program podporuje i jiné typy ladění ve smíšeném režimu, jako je například ladění [Python a nativní kód](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) a používání ladicího programu skript v typy aplikací, jako je například technologie ASP.NET.
+Visual Studio umožňuje povolit více než jeden typ ladicího programu během ladění, která se nazývá ladění ve smíšeném režimu. V tomto kurzu nastavujete možnosti pro ladění spravovaného a nativního kódu v jedné relaci ladění. Tento kurz ukazuje postupy při ladění nativního kódu ze spravovaných aplikací, ale můžete také provést opačný a [ladění spravovaného kódu z nativní aplikace](../debugger/how-to-debug-in-mixed-mode.md). Ladicí program podporuje ladění ve smíšeném režimu, jako je ladění jiných typů také [Python a nativní kód](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) a pomocí ladicího programu skriptu v typech aplikací, jako je například technologie ASP.NET.
 
 V tomto kurzu se naučíte:
 
 > [!div class="checklist"]
-> * Vytvoření jednoduchého nativní knihovny DLL
-> * Vytvoření jednoduché aplikace .NET Core nebo rozhraní .NET Framework pro volání knihovny DLL
+> * Vytvoření jednoduché nativní knihovny DLL
+> * Vytvořte jednoduchou aplikaci .NET Core nebo .NET Framework pro volání knihovny DLL
 > * Spuštění ladicího programu
-> * Stiskněte tlačítko zarážky ve spravované aplikaci
+> * Na zarážku ve spravované aplikaci
 > * Krok do nativního kódu
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio a **vývoj aplikací s jazykem C++** zatížení.
+* Musíte mít nainstalovanou sadu Visual Studio a **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
 
-    Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránky instalaci zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-    Pokud potřebujete nainstalovat úlohu, ale Visual Studio už máte, klikněte v dialogovém okně **Nový projekt** v levém podokně na odkaz **Otevřít instalační program pro Visual Studio**. Spustí se instalační program pro Visual Studio. Zvolte úlohu **Vývoj aplikací Node.js** a pak zvolte **Změnit**.
+    Pokud potřebujete nainstalovat úlohu, ale Visual Studio už máte, klikněte v dialogovém okně **Nový projekt** v levém podokně na odkaz **Otevřít instalační program pro Visual Studio**. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
 
-* Je také nutné mít buď **vývoj aplikací .NET** zatížení nebo **.NET Core křížové vývoj platformy** zatížení nainstalovaná, v závislosti na typ aplikace, které chcete vytvořit.
+* Musíte také mít **vývoj desktopových aplikací .NET** úlohy nebo **.NET Core pro vývoj napříč platformami** nainstalovaná úloha, v závislosti na typu aplikace, které chcete vytvořit.
 
-## <a name="create-a-simple-native-dll"></a>Vytvoření jednoduchého nativní knihovny DLL
+## <a name="create-a-simple-native-dll"></a>Vytvoření jednoduché nativní knihovny DLL
 
-1. V sadě Visual Studio, vyberte **soubor** > **nový** > **projektu**.
+1. V sadě Visual Studio, zvolte **souboru** > **nový** > **projektu**.
 
-1. V **nový projekt** dialogovém okně vyberte **Visual C++**, **Obecné** z části nainstalovaných šablon a potom v prostředním podokně vyberte **prázdný projekt** .
+1. V **nový projekt** dialogového okna zvolte **Visual C++**, **jiných** z části nainstalovaných šablon a potom v prostředním podokně vyberte **prázdný projekt** .
 
-1. V **název** zadejte **ladění režimu Mixed** a klikněte na tlačítko **OK**.
+1. V **název** zadejte **Mixed_Mode_Debugging** a klikněte na tlačítko **OK**.
 
     Visual Studio vytvoří prázdný projekt, který se zobrazí v Průzkumníku řešení v pravém podokně.
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem myši **zdrojové soubory** uzlu v jazyce C++ projektu a potom vyberte **přidat** > **nová položka**a potom vyberte **C++ soubor ()**. Zadejte název souboru **Mixed Mode.cpp**a zvolte **přidat**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na **zdrojové soubory** uzel v C++ projektu a klikněte na tlačítko **přidat** > **nová položka**a pak vyberte **C++ souboru (.cpp)**. Zadejte název souboru **Mixed_Mode.cpp**a zvolte **přidat**.
 
-    Visual Studio přidá nový soubor C++.
+    Visual Studio přidá nový soubor jazyka C++.
 
-1. Zkopírujte následující kód do *Mixed Mode.cpp*:
+1. Zkopírujte následující kód do *Mixed_Mode.cpp*:
 
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. V Průzkumníku řešení klikněte pravým tlačítkem myši **soubory hlaviček** uzlu v jazyce C++ projektu a potom vyberte **přidat** > **nová položka**a potom vyberte  **Soubor (hlaviček)**. Zadejte název souboru **Mixed Mode.h**a zvolte **přidat**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na **hlavičkové soubory** uzel v C++ projektu a klikněte na tlačítko **přidat** > **nová položka**a pak vyberte  **Soubor hlaviček (.h)**. Zadejte název souboru **Mixed_Mode.h**a zvolte **přidat**.
 
-    Visual Studio přidá nový soubor záhlaví.
+    Visual Studio přidá nový soubor hlaviček.
 
-1. Zkopírujte následující kód do *Mixed Mode.h*:
+1. Zkopírujte následující kód do *Mixed_Mode.h*:
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -84,38 +84,41 @@ V tomto kurzu se naučíte:
     #endif
     ```
 
-1. Na panelu nástrojů ladění vyberte **ladění** konfigurace a **libovolný procesor** jako platformu, nebo pro .NET Core, vyberte **x64** jako platformu.
+1. Vyberte z panelu nástrojů ladění **ladění** konfigurace a **x86** nebo **x64** jako platformu (pro .NET Core, který se vždy spouští v 64bitovém režimu, vyberte **x64**  jako platformu).
 
-    > [!NOTE]
-    > Na .NET Core, zvolte **x64** jako platformu. .NET core se vždycky spustí v režimu 64-bit, je to nezbytné.
+1. V Průzkumníku řešení klikněte pravým tlačítkem myši na uzel projektu (**Mixed_Mode_Debugging**) a zvolte **vlastnosti**.
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu (**ladění režimu Mixed**) a zvolte **vlastnosti**.
+    > [!IMPORTANT]
+    > Konfigurace vlastností jazyka C++ je podle platformy. Proto při přepínání z jednoho do jiné (x86 k x64 nebo naopak), je musí také nastavit vlastnosti pro novou konfiguraci. (Na stránce vlastností, ověřte **x64** nebo **Win32** je nastaven jako platformu v horní části stránky.)
 
-1. V **vlastnosti** vyberte **vlastnosti konfigurace** > **Linkeru** > **Upřesnit**, a potom v **žádný vstupní bod** rozevíracího seznamu vyberte **ne**. Pak použijte nastavení.
+1. V **vlastnosti** zvolte **vlastnosti konfigurace** > **Linkeru** > **Upřesnit**, a pak v **bez vstupního bodu** rozevíracího seznamu, ujistěte se, že **č** je vybrána. Pokud potřebujete změnit nastavení pro **ne**, klikněte na tlačítko **použít**.
 
-1. V **vlastnosti** vyberte **vlastnosti konfigurace** > **Obecné**a potom vyberte **dynamická knihovna (DLL)** z **typ konfigurace** pole. Pak použijte nastavení.
+1. V **vlastnosti** zvolte **vlastnosti konfigurace** > **Obecné**a pak vyberte **dynamická knihovna (.dll)** z **typ konfigurace** pole. Pak použijte nastavení.
 
-    ![Přepnout na nativní knihovny DLL](../debugger/media/mixed-mode-set-as-native-dll.png)
+    ![Přepnout na nativní knihovnu DLL](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Klikněte pravým tlačítkem na projekt a zvolte **ladění** > **sestavení**.
+1. Klikněte pravým tlačítkem na projekt a zvolte **sestavení**.
 
     Projekt by se měl sestavit bez chyb.
 
-## <a name="create-a-simple-net-framework-or-net-core-app-to-call-the-dll"></a>Vytvoření jednoduché aplikace rozhraní .NET Framework nebo .NET Core volání knihovny DLL
+## <a name="create-a-simple-net-framework-or-net-core-app-to-call-the-dll"></a>Vytvoření jednoduché aplikace rozhraní .NET Framework nebo .NET Core pro volání knihovny DLL
 
-1. V sadě Visual Studio, vyberte **soubor** > **nový** > **projektu**.
+1. V sadě Visual Studio, zvolte **souboru** > **nový** > **projektu**.
+
+    > [!NOTE]
+    > I když můžete také přidat nový spravovaný projekt do řešení pomocí projektu C++, místo vytvoření nového řešení, jsme se to provedete zde pro podporu většímu množství ladění scénářů.
 
 1. Vyberte šablonu pro kód aplikace.
 
-    Pro rozhraní .NET Framework v **nový projekt** dialogovém okně vyberte **Visual C#**, **Windows Desktop** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Konzole aplikace (rozhraní .NET Framework)**.
+    Pro rozhraní .NET Framework v **nový projekt** dialogového okna zvolte **Visual C#**, **Windows Desktop** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Aplikace konzoly (.NET Framework)**.
 
-    Pro .NET Core v **nový projekt** dialogovém okně vyberte **Visual C#**, **.NET Core** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Konzole aplikace (.NET Core)**.
+    Pro .NET Core v **nový projekt** dialogového okna zvolte **Visual C#**, **.NET Core** z části nainstalovaných šablon a potom v prostředním podokně vyberte  **Aplikace (.NET Core) konzoly**.
 
 1. V **název** zadejte **Mixed_Mode_Calling_App** a klikněte na tlačítko **OK**.
 
     Visual Studio vytvoří projekt konzoly, která se zobrazí v Průzkumníku řešení v pravém podokně.
 
-1. V *Program.cs*, ve výchozím kódu nahraďte následujícím kódem:
+1. V *Program.cs*, nahraďte kód následujícím kódem:
 
     ```csharp
     using System;
@@ -128,9 +131,9 @@ V tomto kurzu se naučíte:
             // Replace the file path shown here with the
             // file path on your computer. For .NET Core, the typical (default) path
             // for a 64-bit DLL might look like this:
-            // C:\Users\username\source\repos\Mixed-Mode-Debugging\x64\Debug\Mixed-Mode-Debugging.dll
-            // Here, we show a typical path for a DLL targeting the **Any CPU** option.
-            [DllImport(@"C:\Users\username\source\repos\Mixed-Mode-Debugging\Debug\Mixed-Mode-Debugging.dll", EntryPoint =
+            // C:\Users\username\source\repos\Mixed_Mode_Debugging\x64\Debug\Mixed_Mode_Debugging.dll
+            // Here, we show a typical path for a DLL targeting the **x86** option.
+            [DllImport(@"C:\Users\username\source\repos\Mixed_Mode_Debugging\Debug\Mixed_Mode_Debugging.dll", EntryPoint =
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
@@ -143,31 +146,33 @@ V tomto kurzu se naučíte:
     }
     ```
 
-## <a name="configure-mixed-mode-debugging-net-framework"></a>Konfigurace ladění (rozhraní .NET Framework) ve smíšeném režimu
+1. V novém kódu aktualizujte cestu k souboru do cesty pro knihovnu DLL, kterou jste vytvořili (viz komentáře ke kódu). Ujistěte se, že nahradíte *uživatelské jméno* zástupný symbol.
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na spravovaný **Mixed_Mode_Calling_App** projektu a zvolte **nastavit jako spouštěný projekt**.
+## <a name="configure-mixed-mode-debugging-net-framework"></a>Konfigurace ve smíšeném režimu ladění (.NET Framework)
 
-1. Klikněte pravým tlačítkem na spravovaný **Mixed_Mode_Calling_App** projektu a potom vyberte **vlastnosti**a potom zvolte **ladění** v levém podokně. Vyberte **povolit ladění nativního kódu**a pak zavřete stránku vlastností a uložte změny.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na spravovanou **Mixed_Mode_Calling_App** projekt a zvolte **nastavit jako spouštěný projekt**.
+
+1. Klikněte pravým tlačítkem na spravovanou **Mixed_Mode_Calling_App** projektu a klikněte na tlačítko **vlastnosti**a klikněte na tlačítko **ladění** v levém podokně. Vyberte **povolit ladění nativního kódu**a pak zavřete stránku vlastností a uložte změny.
 
     ![Povolit ladění ve smíšeném režimu](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-## <a name="configure-mixed-mode-debugging-net-core"></a>Konfigurace ladění (.NET Core) ve smíšeném režimu
+## <a name="configure-mixed-mode-debugging-net-core"></a>Konfigurace ve smíšeném režimu ladění (.NET Core)
 
-Ve většině verzí aplikace Visual Studio 2017, musíte povolit ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core pomocí *launchSettings.json* souboru místo **vlastnosti** stránky. Ke sledování uživatelského rozhraní aktualizace pro tuto funkci, najdete v části to [potíže Githubu](https://github.com/dotnet/project-system/issues/1125).
+Ve většině verzí sady Visual Studio 2017, musíte povolit ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core pomocí *launchSettings.json* souborů namísto **vlastnosti** stránky. Pokud chcete sledovat aktualizace uživatelského rozhraní pro tuto funkci, najdete v tomto [problém Githubu](https://github.com/dotnet/project-system/issues/1125).
 
-1. Otevřete *launchSettings.json* v soubor *vlastnosti* složky. Ve výchozím nastavení můžete najít soubor v tomto umístění.
+1. Otevřít *launchSettings.json* soubor *vlastnosti* složky. Ve výchozím nastavení najdete v tomto umístění souboru.
 
     *C:\Users\<uživatelské jméno > \source\repos\Mixed_Mode_Calling_App\Properties*
 
-    Pokud soubor neexistuje, otevřete vlastnosti projektu (klikněte pravým tlačítkem na spravovaný **Mixed_Mode_Calling_App** projektu v Průzkumníku řešení a vyberte **vlastnosti**). Změňte dočasné v **ladění** kartě a sestavte projekt. Vrátit zpět změny, která jste udělali.
+    Pokud soubor není k dispozici, otevřete vlastnosti projektu (klikněte pravým tlačítkem na spravovanou **Mixed_Mode_Calling_App** projektu v Průzkumníku řešení a vyberte **vlastnosti**). Změňte dočasné v **ladění** kartu a sestavte projekt. Vrátit se provedené změny.
 
-1. V *lauchsettings.json* soubor, přidejte následující vlastnost:
+1. V *lauchsettings.json* přidejte následující vlastnost:
 
     ```csharp
     "nativeDebugging": true
     ```
 
-    Ano například souboru může vypadat následovně:
+    Například může tedy váš soubor vypadat nějak takto:
 
     ```csharp
     {
@@ -180,39 +185,39 @@ Ve většině verzí aplikace Visual Studio 2017, musíte povolit ladění ve sm
     }
     ```
 
-## <a name="set-a-breakpoint-and-start-the-debugger"></a>Nastavit zarážky a spuštění ladicího programu
+## <a name="set-a-breakpoint-and-start-the-debugger"></a>Nastavte zarážku a spuštění ladicího programu
 
-1. Otevřete v projektu jazyka C# *Program.cs* a kliknutím na levém okraji nastavit zarážky následující řádek kódu:
+1. V C# projekt, otevřete *Program.cs* a nastavte zarážku v následující řádek kódu kliknutím do levého okraje:
 
     ```csharp
     int result = Multiply(7, 7);
     ```
 
-    Červené kolečko se zobrazí na levém okraji indikující, že jste si nastavili zarážku.
+    Na levém okraji k označení, že je nastavena zarážka se zobrazí červený kruh.
 
-1. Stiskněte klávesu **F5** (**ladění** > **spustit ladění**) ke spuštění ladicího programu.
+1. Stisknutím klávesy **F5** (**ladění** > **spustit ladění**) spuštění ladicího programu.
 
-    Ladicí program se pozastaví na zarážce, kterou nastavíte. Žlutá šipka označuje, kde je momentálně pozastaven ladicího programu.
+    Ladicí program pozastavení na zarážce, kterou jste nastavili. Žlutá šipka označuje, kde je nyní pozastavena ladicím programu.
 
 ## <a name="step-into-native-code"></a>Krok do nativního kódu
 
-1. Při pozastavená ve spravované aplikaci, stiskněte klávesu **F11** (**ladění** > **Krokovat s vnořením**).
+1. Během pozastavení ve spravované aplikaci, stiskněte klávesu **F11** (**ladění** > **Krokovat s vnořením**).
 
-    Otevře se soubor hlaviček s nativním kódem a zobrazí žlutý šipku, kde je pozastaven ladicího programu.
+    Otevře se soubor hlaviček s nativním kódem a uvidíte žlutou šipku, kde je pozastavena ladicím programu.
 
     ![Krok do nativního kódu](../debugger/media/mixed-mode-step-into-native-code.png)
 
-    Teď můžete provádět akce podobně jako sada a dosáhl zarážky a zkontrolovat proměnné.
+    Teď můžete provádět akce podobně jako sada a dosažení zarážky a kontrolovat proměnné.
 
-1. Podržte ukazatel nad proměnné zobrazíte jejich hodnotu.
+1. Najeďte myší proměnné zobrazíte jejich hodnoty.
 
-1. Podívejte se na **automobily** a **místní hodnoty –** windows proměnné a jejich hodnoty.
+1. Podívejte se na **automatické hodnoty** a **lokální** windows zobrazit proměnné a jejich hodnoty.
 
-    Při pozastavena v ladicím programu, můžete použít jiné funkce ladicího programu, jako **sledovat** okno a **zásobníkem volání** okno.
+    Během pozastavení v ladicím programu, můžete použít další funkce ladicího programu, jako **Watch** okno a **zásobník volání** okna.
 
-1. Stiskněte klávesu **F11** znovu, aby ladicí program jeden řádek záloh.
+1. Stisknutím klávesy **F11** znovu, aby ladicí program jeden řádek záloh.
 
-1. Stiskněte klávesu **Shift + F11** (**ladění** > **Krokovat s Vystoupením**) a pokračovat v provádění aplikace pozastavit znovu ve spravované aplikaci.
+1. Stisknutím klávesy **Shift + F11** (**ladění** > **Krokovat s Vystoupením**) a pokračovat v provádění aplikace znovu pozastavit ve spravované aplikaci.
 
 1. Pokud chcete pokračovat v aplikaci, stiskněte **F5**.
 
@@ -220,7 +225,7 @@ Ve většině verzí aplikace Visual Studio 2017, musíte povolit ladění ve sm
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste zjistili, jak k ladění nativního kódu ze spravované aplikace povolením ladění ve smíšeném režimu. Přehled dalších funkcí ladicího programu najdete v následujícím článku:
+V tomto kurzu jste zjistili, jak k ladění nativního kódu ze spravovaných aplikací tím, že ladění ve smíšeném režimu. Přehled o další funkce ladicího programu najdete v následujícím článku:
 
 > [!div class="nextstepaction"]
 > [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

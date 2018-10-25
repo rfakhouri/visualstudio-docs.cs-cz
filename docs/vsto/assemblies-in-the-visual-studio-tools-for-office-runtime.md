@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676575"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050206"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Sestavení v nástrojích Visual Studio Tools pro systém Office runtime
   Když vytvoříte projekt sady Office, Visual Studio automaticky přidá odkazy na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sestavení, které se používají pro zvolený typ projektu a cílové rozhraní .NET Framework projektu. Existují různých sestaveních v rozšířeních Office pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Další informace o rozšířeních sady Office naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -59,7 +59,7 @@ ms.locfileid: "35676575"
 |Microsoft.Office.Tools.Word.v9.0.dll|Poskytuje hostitelských položek a hostitelských ovládacích prvků pro řešení aplikace Word. Další informace najdete v tématu [automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.v9.0.dll|Poskytuje následující typy:<br /><br /> – [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) třídu, která poskytuje možnosti vázání dat pro hostitelské ovládací prvky v úrovni dokumentu přizpůsobení.<br />-Další typy, které jsou součástí sady Visual Studio Tools for Office runtime infrastrukturu a není určena pro použití přímo v kódu.|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Poskytuje následující typy:<br /><br /> – <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Atribut a <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> rozhraní, které vám umožní mezipaměti datové objekty v přizpůsobení na úrovni dokumentu. Další informace najdete v tématu [ukládat data do mezipaměti](../vsto/caching-data.md).<br />– Výjimky, které mohou být vyvolány Visual Studio Tools for Office runtime.<br />-Další typy, které jsou součástí sady Visual Studio Tools for Office runtime infrastrukturu a není určena pro použití přímo v kódu.|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Poskytuje <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> rozhraní, které můžete implementovat, abyste spusťte další instalační kroky jako poslední krok instalační program ClickOnce pro řešení Office. Další informace najdete v tématu [nasazení řešení Advanced Office](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02).|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Poskytuje <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> rozhraní, které můžete implementovat, abyste spusťte další instalační kroky jako poslední krok instalační program ClickOnce pro řešení Office. Další informace najdete v tématu [nasazení řešení Advanced Office](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Poskytuje následující typy:<br /><br /> – <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Třídy, který můžete použít k připojování do dokumentů prostřednictvím kódu programu vlastního nastavení sestavení a pro přístup k data uložená v mezipaměti v dokumentech. Další informace najdete v tématu [spravovat dokumenty na serveru s použitím třídy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Několik tříd, které představují hierarchii uložené v mezipaměti dat v přizpůsobení na úrovni dokumentu. Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Poskytuje následující typy:<br /><br /> -Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry a Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList třídy, které vám umožní vytvořit uživatele zařazení položky seznamu zajištění důvěryhodnosti pro Office řešení, které jsou cíleny rozhraní .NET Framework 3.5.<br />-Další typy, které jsou součástí sady Visual Studio Tools for Office runtime infrastrukturu a není určena pro použití přímo v kódu.|  
   

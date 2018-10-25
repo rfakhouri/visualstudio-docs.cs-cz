@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138921"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050362"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -33,9 +33,9 @@ Při instalaci sady Visual Studio 2017 z příkazového řádku, můžete použ�
 
 Možnosti příkazového řádku se používají ve spojení s zaváděcí nástroj instalační program, který je soubor malé (přibližně 1MB), který zahájí proces stahování. Zaváděcí nástroj je první spustitelný soubor, který se spustí, když si stáhnete z webu Visual Studio. Chcete-li získat přímý odkaz na nejnovější verzi bootstrapper pro edici produktu, které chcete instalovat pomocí následujících odkazů:
 
-* [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
-* [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="list-of-command-line-parameters"></a>Seznam parametrů příkazového řádku
 
@@ -149,7 +149,7 @@ Každá operace vygeneruje několik souborů protokolu v `%TEMP%` adresáře, kt
 
 ## <a name="see-also"></a>Viz také:
 
-* [Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017](command-line-parameter-examples.md)
-* [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Automatizace instalace sady Visual Studio souborem odpovědí](automated-installation-with-response-file.md)
-* [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md)
+- [Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017](command-line-parameter-examples.md)
+- [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Automatizace instalace sady Visual Studio souborem odpovědí](automated-installation-with-response-file.md)
+- [ID pracovního vytížení a komponenta Visual Studio 2017](workload-and-component-ids.md)
