@@ -13,12 +13,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f9bff7fe1508094474b7067237e8c0b6620605
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca4fd95664d45c480557b8a00d503550327c60ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833028"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -356,13 +356,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Všechna první písmena velká  
  Mena všech slov velká je styl, ve kterém jsou první písmena většinu nebo všechny slov v rámci frázi velkými písmeny. V sadě Visual Studio se používá mena všech slov velká pro mnoho položek, včetně:  
   
--   **Popisy tlačítek.** Příklad: "náhled vybrané položky"  
+- **Popisy tlačítek.** Příklad: "náhled vybrané položky"  
   
--   **Záhlaví sloupců.** Příklad: "systém odpovědi"  
+- **Záhlaví sloupců.** Příklad: "systém odpovědi"  
   
--   **Položky nabídky.** Příklad: "Uložit vše"  
+- **Položky nabídky.** Příklad: "Uložit vše"  
   
- Při použití mena všech slov velká, toto jsou pokyny pro kdy velké první písmeno slova a kdy je nechat, malá písmena:  
+  Při použití mena všech slov velká, toto jsou pokyny pro kdy velké první písmeno slova a kdy je nechat, malá písmena:  
   
 |Velká písmena|Komentáře a příklady|  
 |---------------|---------------------------|  

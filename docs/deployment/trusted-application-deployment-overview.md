@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848784"
 ---
 # <a name="trusted-application-deployment-overview"></a>Důvěryhodné Přehled nasazení aplikace
 Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, které se zvýšenými oprávněními pomocí technologie Trusted Application Deployment.  
@@ -51,21 +51,21 @@ Toto téma obsahuje přehled o tom, jak nasadit [!INCLUDE[ndptecclick](../deploy
   
  Větší organizace jsou často dvě samostatné entity vydavatele a nástroje pro nasazení:  
   
--   Vydavatel je skupina, která vytvoří [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
+- Vydavatel je skupina, která vytvoří [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
--   Modul pro nasazení je skupina, obvykle oddělení informačních technologií (IT), která distribuuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace na podnikové stolní počítače.  
+- Modul pro nasazení je skupina, obvykle oddělení informačních technologií (IT), která distribuuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace na podnikové stolní počítače.  
   
 Musíte následujícím postupem využít výhod nasazení důvěryhodné aplikace:  
   
-1.  Získání certifikátu pro vydavatele.  
+1. Získání certifikátu pro vydavatele.  
   
-2.  Do úložiště Důvěryhodní vydavatelé na všechny klienty přidejte vydavatele.  
+2. Do úložiště Důvěryhodní vydavatelé na všechny klienty přidejte vydavatele.  
   
-3.  Vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
+3. Vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
-4.  Podepsat manifest nasazení pomocí certifikátu vydavatele.  
+4. Podepsat manifest nasazení pomocí certifikátu vydavatele.  
   
-5.  Publikování nasazení aplikace do klientských počítačů.  
+5. Publikování nasazení aplikace do klientských počítačů.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Získání certifikátu pro vydavatele  
  Digitální certifikáty jsou základní součástí Microsoft Authenticode ověřování a zabezpečení systému. Authenticode je standardní součástí operačního systému Windows. Všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace musí být podepsané digitálním certifikátem, bez ohledu na to, zda se účastní v Trusted Application Deployment. Úplné vysvětlení fungování Authenticode s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], naleznete v tématu [ClickOnce and Authenticode](../deployment/clickonce-and-authenticode.md).  

@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817870"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Můžete napsat vlastního hostitele, který zpracovává textových šablon. Z�
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Použití nástroje jazyka specifického pro doménu k vygenerování procesoru direktiv, který je založen na modelu domény  
   
-1.  Vytváření řešení jazyka specifického pro doménu, která má následující vlastnosti:  
+1. Vytváření řešení jazyka specifického pro doménu, která má následující vlastnosti:  
   
-    -   Název: DSLMinimalTest  
+   - Název: DSLMinimalTest  
   
-    -   Šablona řešení: minimální jazykový  
+   - Šablona řešení: minimální jazykový  
   
-    -   Přípona souboru: min  
+   - Přípona souboru: min  
   
-    -   Název společnosti: Fabrikam  
+   - Název společnosti: Fabrikam  
   
      Další informace o vytváření řešení jazyka specifického pro doménu, najdete v části [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
+2. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
-    > [!IMPORTANT]
-    >  Tento krok vygeneruje procesoru direktiv a přidá klíč pro něj v registru.  
+   > [!IMPORTANT]
+   >  Tento krok vygeneruje procesoru direktiv a přidá klíč pro něj v registru.  
   
-3.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
+3. Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
-     Druhou instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otevře.  
+    Druhou instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] otevře.  
   
-4.  V experimentální sestavení v **Průzkumníka řešení**, poklikejte na soubor **sample.min**.  
+4. V experimentální sestavení v **Průzkumníka řešení**, poklikejte na soubor **sample.min**.  
   
-     Soubor se otevře v návrháři. Všimněte si, že model má dva prvky, ExampleElement1 a ExampleElement2 a propojení mezi nimi.  
+    Soubor se otevře v návrháři. Všimněte si, že model má dva prvky, ExampleElement1 a ExampleElement2 a propojení mezi nimi.  
   
-5.  Zavřete druhou instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Zavřete druhou instanci [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Uložte řešení a pak zavřete návrháře jazyka specifického pro doménu.  
+6. Uložte řešení a pak zavřete návrháře jazyka specifického pro doménu.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Připojení vlastního hostitele textových šablon k procesoru direktiv  
  Jakmile vygenerujete procesor direktiv, připojíte procesoru direktiv a vlastního hostitele textových šablon, které jste vytvořili [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835253"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelování aplikace&#39;s architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Požadavky na model poskytuje tyto základní údaje:  
   
--   Poskytované rozhraní. Poskytované rozhraní obsahuje seznam služeb nebo operací, které systém nebo komponenta musí poskytnout uživatelům, ať už jsou lidské uživatele nebo další softwarové komponenty.  
+- Poskytované rozhraní. Poskytované rozhraní obsahuje seznam služeb nebo operací, které systém nebo komponenta musí poskytnout uživatelům, ať už jsou lidské uživatele nebo další softwarové komponenty.  
   
--   Požadovaná rozhraní. Požadované rozhraní obsahuje seznam služeb nebo operací, které můžete použít systém nebo komponenty. V některých případech bude možné navrhnout všechny tyto služby jako součást vlastní systému. V ostatních případech zejména v případě, že součást, kterou můžete kombinovat s jinými součástmi v řadě konfigurací, navrhujete požadované rozhraní se nastavit externí aspekty.  
+- Požadovaná rozhraní. Požadované rozhraní obsahuje seznam služeb nebo operací, které můžete použít systém nebo komponenty. V některých případech bude možné navrhnout všechny tyto služby jako součást vlastní systému. V ostatních případech zejména v případě, že součást, kterou můžete kombinovat s jinými součástmi v řadě konfigurací, navrhujete požadované rozhraní se nastavit externí aspekty.  
   
--   Kvalita požadavků na služby. Výkon, zabezpečení, odolnosti a další cíle a omezení, které musí splnit systému.  
+- Kvalita požadavků na služby. Výkon, zabezpečení, odolnosti a další cíle a omezení, které musí splnit systému.  
   
- Model požadavků se zapíše z pohledu uživatele vašeho systému, ať už jsou lidé, případně další softwarové komponenty. Které znají nic vnitřní fungování systému. Vaším cílem v architektuře modelu naopak je popíšou vnitřní činnost a ukážou, jak vyhovují uživatelů potřebuje.  
+  Model požadavků se zapíše z pohledu uživatele vašeho systému, ať už jsou lidé, případně další softwarové komponenty. Které znají nic vnitřní fungování systému. Vaším cílem v architektuře modelu naopak je popíšou vnitřní činnost a ukážou, jak vyhovují uživatelů potřebuje.  
   
- Pokud oddělíte požadavků a architektury modelů je užitečné, protože usnadňuje požadavky s uživateli. Pomáhá také Refaktorovat návrhu a zvážit alternativní architektury, při zachování požadavky beze změny.  
+  Pokud oddělíte požadavků a architektury modelů je užitečné, protože usnadňuje požadavky s uživateli. Pomáhá také Refaktorovat návrhu a zvážit alternativní architektury, při zachování požadavky beze změny.  
   
- Požadavky a architektury modely můžete oddělit dva alternativní způsoby:  
+  Požadavky a architektury modely můžete oddělit dva alternativní způsoby:  
   
--   Uložily do stejného řešení, ale jiné projekty. Zobrazí se jako samostatných modelů v Průzkumníku modelů UML. Různí členové týmu mohou pracovat souběžně na modely. Omezené druhy trasování lze vytvořit mezi modely.  
+- Uložily do stejného řešení, ale jiné projekty. Zobrazí se jako samostatných modelů v Průzkumníku modelů UML. Různí členové týmu mohou pracovat souběžně na modely. Omezené druhy trasování lze vytvořit mezi modely.  
   
--   Vytvořte z nich ve stejném modelu UML, ale v různých balíčcích. To usnadňuje trasování závislosti mezi modely, ale zabrání víc než jedna osoba najednou pracovat v modelu. Kromě toho modelu velmi velké bude trvat déle načíst do sady Visual Studio. Tento přístup je proto méně vhodná pro velké projekty.  
+- Vytvořte z nich ve stejném modelu UML, ale v různých balíčcích. To usnadňuje trasování závislosti mezi modely, ale zabrání víc než jedna osoba najednou pracovat v modelu. Kromě toho modelu velmi velké bude trvat déle načíst do sady Visual Studio. Tento přístup je proto méně vhodná pro velké projekty.  
   
- Množství podrobností, které byste měli umístit do požadavky nebo Architektonický model závisí na škálování projektu a velikost a rozmístění týmu. Malý tým na krátké projektu je možné dát další než zobrazení diagramu tříd obchodních konceptů a některé vzory návrhu; velký projekt distribuovat napříč více než jedné oblasti, bude nutné výrazně více podrobností.  
+  Množství podrobností, které byste měli umístit do požadavky nebo Architektonický model závisí na škálování projektu a velikost a rozmístění týmu. Malý tým na krátké projektu je možné dát další než zobrazení diagramu tříd obchodních konceptů a některé vzory návrhu; velký projekt distribuovat napříč více než jedné oblasti, bude nutné výrazně více podrobností.  
   
 ##  <a name="BigDecisions"></a> Vzorech architektury  
  V rané fázi vývoje budete muset zvolit hlavní technologie a prvky, na kterých závisí návrhu. Oblasti, ve kterých se musí provádět tyto možnosti patří:  
   
--   Základní technologické volby, jako je například výběr mezi databází a systém souborů a možností volby mezi aplikace v síti a webovému klientovi a tak dále.  
+- Základní technologické volby, jako je například výběr mezi databází a systém souborů a možností volby mezi aplikace v síti a webovému klientovi a tak dále.  
   
--   Volby architektury, jako je například možností volby mezi Windows Workflow Foundation nebo ADO.NET Entity Framework.  
+- Volby architektury, jako je například možností volby mezi Windows Workflow Foundation nebo ADO.NET Entity Framework.  
   
--   Integrace metody se nemusíte rozhodovat, například mezi enterprise service bus nebo kanál typu point-to-point.  
+- Integrace metody se nemusíte rozhodovat, například mezi enterprise service bus nebo kanál typu point-to-point.  
   
- Tyto možnosti jsou často určené kvalitu požadavků služby, jako je škálovatelnost a flexibilitu a můžete provést předtím, než jsou známé podrobné požadavky. V rozsáhlém systému se důrazně vzájemně propojené konfigurace hardwaru a softwaru.  
+  Tyto možnosti jsou často určené kvalitu požadavků služby, jako je škálovatelnost a flexibilitu a můžete provést předtím, než jsou známé podrobné požadavky. V rozsáhlém systému se důrazně vzájemně propojené konfigurace hardwaru a softwaru.  
   
- Vámi provedeném výběru vliv na způsob používání a interpretace Architektonický model. Například v systému, která používá databázi, asociace v diagramu tříd může představovat vztahů nebo cizí klíče v databázi, že v systému, který je založen na soubory XML, přidružení může znamenat křížové odkazy, které používají XPath. V distribuovaném systému může představovat zprávy v sekvenčním diagramu zprávy v přenosové; samostatná aplikace může představovat volání funkce.  
+  Vámi provedeném výběru vliv na způsob používání a interpretace Architektonický model. Například v systému, která používá databázi, asociace v diagramu tříd může představovat vztahů nebo cizí klíče v databázi, že v systému, který je založen na soubory XML, přidružení může znamenat křížové odkazy, které používají XPath. V distribuovaném systému může představovat zprávy v sekvenčním diagramu zprávy v přenosové; samostatná aplikace může představovat volání funkce.  
   
 ##  <a name="Components"></a> Komponenty a jejich rozhraní  
  Hlavní doporučení v této části jsou následující:  
   
--   Vytvoření diagramů komponent k zobrazení hlavních částí systému.  
+- Vytvoření diagramů komponent k zobrazení hlavních částí systému.  
   
--   Nakreslete závislosti mezi komponentami nebo jejich rozhraní a zobrazit strukturu systému.  
+- Nakreslete závislosti mezi komponentami nebo jejich rozhraní a zobrazit strukturu systému.  
   
--   Pomocí rozhraní do komponent k zobrazení služeb, které poskytuje jednotlivé komponenty, nebo vyžaduje.  
+- Pomocí rozhraní do komponent k zobrazení služeb, které poskytuje jednotlivé komponenty, nebo vyžaduje.  
   
--   Ve velkých návrhu můžete kreslit samostatných diagramech k rozložení jednotlivých komponent do menších částí.  
+- Ve velkých návrhu můžete kreslit samostatných diagramech k rozložení jednotlivých komponent do menších částí.  
   
- Tyto body jsou rozpracovaného ve zbytku této části.  
+  Tyto body jsou rozpracovaného ve zbytku této části.  
   
 ### <a name="components"></a>Součásti  
  Střed zobrazení modelu architektury jsou diagramů komponent, které zobrazení hlavních částí systému a jak jsou závislé na sebe navzájem. Další informace o diagramech komponent najdete v tématu [diagramy komponent UML: referenční](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Strukturované architektura se vymazat uspořádání závislostí, ve kterých jsou splněny tyto podmínky:  
   
--   Neexistují žádné smyčky v mapě kódu.  
+- Neexistují žádné smyčky v mapě kódu.  
   
--   Součásti lze uspořádat do vrstev, ve kterých každý závislost přejde z komponenty v jedné vrstvě součásti v dalším. Všechny závislosti mezi jakékoli dvě vrstvy přejděte ve stejném směru.  
+- Součásti lze uspořádat do vrstev, ve kterých každý závislost přejde z komponenty v jedné vrstvě součásti v dalším. Všechny závislosti mezi jakékoli dvě vrstvy přejděte ve stejném směru.  
   
- Můžete zobrazit závislosti mezi komponentami přímo, nebo můžete zobrazit závislosti mezi povinné a k dispozici rozhraní, které jsou připojené k součástem. To s využitím rozhraní, můžete definovat, jaké operace se používají v jednotlivých závislostí. Obvykle jsou uvedeny závislosti mezi komponentami, když jsou nejprve vykreslit diagramy a pak nahrazuje závislosti mezi rozhraními, jak přidat další informace. Obě verze jsou popsaná níž správný software, ale verze rozhraní poskytuje podrobnější než u předchozí verze.  
+  Můžete zobrazit závislosti mezi komponentami přímo, nebo můžete zobrazit závislosti mezi povinné a k dispozici rozhraní, které jsou připojené k součástem. To s využitím rozhraní, můžete definovat, jaké operace se používají v jednotlivých závislostí. Obvykle jsou uvedeny závislosti mezi komponentami, když jsou nejprve vykreslit diagramy a pak nahrazuje závislosti mezi rozhraními, jak přidat další informace. Obě verze jsou popsaná níž správný software, ale verze rozhraní poskytuje podrobnější než u předchozí verze.  
   
- Správa závislostí je nejdůležitější pro provozní údržby software. Diagramy součástí by měly odrážet všechny závislosti ve vašem kódu. Pokud kód již existuje, ujistěte se, že všechny závislosti jsou zobrazeny v diagramech. Pokud kód je vyvíjena, ujistěte se, že v diagramu komponent neobsahuje závislosti, které nejsou plánované. Vám pomůžou zjistit závislosti v kódu, můžete vygenerovat diagramy vrstev. Vám pomohou zajistit, že jsou splněné omezení plánované závislosti, můžete ověření kódu oproti diagramům vrstev. Další informace najdete v tématu [diagramy vrstev: referenční](../modeling/layer-diagrams-reference.md).  
+  Správa závislostí je nejdůležitější pro provozní údržby software. Diagramy součástí by měly odrážet všechny závislosti ve vašem kódu. Pokud kód již existuje, ujistěte se, že všechny závislosti jsou zobrazeny v diagramech. Pokud kód je vyvíjena, ujistěte se, že v diagramu komponent neobsahuje závislosti, které nejsou plánované. Vám pomůžou zjistit závislosti v kódu, můžete vygenerovat diagramy vrstev. Vám pomohou zajistit, že jsou splněné omezení plánované závislosti, můžete ověření kódu oproti diagramům vrstev. Další informace najdete v tématu [diagramy vrstev: referenční](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Rozhraní  
  Umístěním rozhraní na vaše komponenty můžete oddělit a pojmenujte hlavních skupin operací, které jsou poskytovány jednotlivých komponent. Součástí webové prodejní systém může mít například rozhraní, přes které zákazníci zakoupit zboží, rozhraní, přes který dodavatelé aktualizaci jejich katalogy a třetí rozhraní prostřednictvím systému spravuje.  
@@ -146,17 +146,17 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Pokud definujete i k dispozici a požadovaná rozhraní díky tomu můžete oddělit komponentu přímo od ostatních návrhu, tak, aby tyto postupy můžete použít:  
   
--   Umístěte komponentu do testovací prostředí, ve kterém jsou okolního komponenty simulováno testovací prostředí.  
+- Umístěte komponentu do testovací prostředí, ve kterém jsou okolního komponenty simulováno testovací prostředí.  
   
--   Vývoj vaší komponentě nezávisle na ostatních součástí.  
+- Vývoj vaší komponentě nezávisle na ostatních součástí.  
   
--   Znovu použijte komponentu v jiných kontextech párování jeho rozhraní pro různé součásti.  
+- Znovu použijte komponentu v jiných kontextech párování jeho rozhraní pro různé součásti.  
   
- Pokud chcete definovat seznam operací v rozhraní, můžete vytvořit další zobrazení rozhraní v diagramu tříd UML. Chcete-li to provést, vyhledejte rozhraní v Průzkumníku modelů UML a přetáhnout do diagramu tříd. Pak může přidání operací do rozhraní.  
+  Pokud chcete definovat seznam operací v rozhraní, můžete vytvořit další zobrazení rozhraní v diagramu tříd UML. Chcete-li to provést, vyhledejte rozhraní v Průzkumníku modelů UML a přetáhnout do diagramu tříd. Pak může přidání operací do rozhraní.  
   
- Operace v rozhraní UML může představovat žádným způsobem, ve kterém může být vyvolána chování součásti. To může představovat požadavek webové služby, signál nebo interakce určitého druhu nebo volání funkce rozhraní běžné programu.  
+  Operace v rozhraní UML může představovat žádným způsobem, ve kterém může být vyvolána chování součásti. To může představovat požadavek webové služby, signál nebo interakce určitého druhu nebo volání funkce rozhraní běžné programu.  
   
- Pokud chcete zjistit, jaké operace přidat, vytvořte sekvenční diagramy zobrazit, jak komponenty komunikovat mezi sebou. Zobrazit [interakce mezi komponentami](#Interactions). Každá z těchto sekvenčních diagramů ukazuje interakce, ke kterým dochází v případě použití v odlišných. Tímto způsobem můžete postupně přidat na seznam operací v jednotlivých komponent rozhraní při seznamování s případy použití.  
+  Pokud chcete zjistit, jaké operace přidat, vytvořte sekvenční diagramy zobrazit, jak komponenty komunikovat mezi sebou. Zobrazit [interakce mezi komponentami](#Interactions). Každá z těchto sekvenčních diagramů ukazuje interakce, ke kterým dochází v případě použití v odlišných. Tímto způsobem můžete postupně přidat na seznam operací v jednotlivých komponent rozhraní při seznamování s případy použití.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Rozložení komponentu do částí  
  Můžete použít postup popsaný v předchozích částech pro jednotlivé komponenty.  
@@ -169,32 +169,32 @@ K zajištění, že softwarový systém nebo aplikace splňuje uživatelů potř
   
  Části použijte v následujících situacích:  
   
--   Návrhu nadřazené komponenty musíte vždycky použít typ komponenty na straně. Proto z část je nedílnou součástí návrhu nadřazené komponenty.  
+- Návrhu nadřazené komponenty musíte vždycky použít typ komponenty na straně. Proto z část je nedílnou součástí návrhu nadřazené komponenty.  
   
--   Nadřazené komponenty nemá žádné konkrétní existence své vlastní. Například můžete mít koncepční komponenty s názvem prezentační vrstva, která představuje kolekci skutečné komponent, které zpracovávají zobrazení a interakce uživatelů.  
+- Nadřazené komponenty nemá žádné konkrétní existence své vlastní. Například můžete mít koncepční komponenty s názvem prezentační vrstva, která představuje kolekci skutečné komponent, které zpracovávají zobrazení a interakce uživatelů.  
   
- Použijte samostatné součásti, které jsou přístupné prostřednictvím požadovaná rozhraní v těchto situacích:  
+  Použijte samostatné součásti, které jsou přístupné prostřednictvím požadovaná rozhraní v těchto situacích:  
   
--   Vyžadování součást je možné kombinovat prostřednictvím svých rozhraní poskytuje různé součásti v době běhu.  
+- Vyžadování součást je možné kombinovat prostřednictvím svých rozhraní poskytuje různé součásti v době běhu.  
   
--   Návrh je tak, aby ho by bylo možné snadno nahradit jiným jednoho poskytovatele.  
+- Návrh je tak, aby ho by bylo možné snadno nahradit jiným jednoho poskytovatele.  
   
- Použití požadovaná rozhraní je obvykle vhodnější použít části. I když návrhu může trvat déle, výsledný systému je flexibilnější. Je také usnadňuje testování součástí samostatně. To umožňuje méně párování v jejich vývojových plánů.  
+  Použití požadovaná rozhraní je obvykle vhodnější použít části. I když návrhu může trvat déle, výsledný systému je flexibilnější. Je také usnadňuje testování součástí samostatně. To umožňuje méně párování v jejich vývojových plánů.  
   
 ##  <a name="Interactions"></a> Interakce mezi součástmi  
  Hlavní doporučení v této části jsou následující:  
   
--   Identifikování případů použití vašeho systému.  
+- Identifikování případů použití vašeho systému.  
   
--   Pro každý případ použití kreslit diagramy jeden nebo více zobrazíte jak součástí systému na příjem požadovaného výsledku dosáhnout díky spolupráci mezi sebou a s uživateli. Obvykle se jedná, sekvenční diagramy a diagramy činnosti.  
+- Pro každý případ použití kreslit diagramy jeden nebo více zobrazíte jak součástí systému na příjem požadovaného výsledku dosáhnout díky spolupráci mezi sebou a s uživateli. Obvykle se jedná, sekvenční diagramy a diagramy činnosti.  
   
--   Pomocí rozhraní můžete určit zprávy přijaté službou jednotlivých komponent.  
+- Pomocí rozhraní můžete určit zprávy přijaté službou jednotlivých komponent.  
   
--   Popisuje účinky operací v rozhraní.  
+- Popisuje účinky operací v rozhraní.  
   
--   Postup opakujte pro každou komponentu znázorňující způsob interakce jejích částí.  
+- Postup opakujte pro každou komponentu znázorňující způsob interakce jejích částí.  
   
- Například ve webové prodejní systému může být model požadavků definovat nákup zákazníka jako případ použití. Můžete vytvořit sekvenční diagram zobrazíte interakcí, že zákazník má s komponentami v prezentační vrstvě a k zobrazení interakce, ke kterým mají s datového skladu a komponenty monitorování účtů.  
+  Například ve webové prodejní systému může být model požadavků definovat nákup zákazníka jako případ použití. Můžete vytvořit sekvenční diagram zobrazíte interakcí, že zákazník má s komponentami v prezentační vrstvě a k zobrazení interakce, ke kterým mají s datového skladu a komponenty monitorování účtů.  
   
 ### <a name="identifying-the-initiating-events"></a>Identifikace zahájení události  
  Práci prováděnou Většina softwarových systémů můžete pohodlně rozdělit podle odpovědi, které poskytuje různé vstupy nebo události. Zahájení události může být jeden z následujících událostí:  

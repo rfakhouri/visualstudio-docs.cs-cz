@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833653"
 ---
 # <a name="visualize-code"></a>Vizualizace kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k vám pomůže pochopit stávající kód a popisují vaši aplikaci. To vám umožní vizuálně zjistit, jak mohou změny ovlivnit kód a pomůže vám to posoudit práci a rizika vyplývající z těchto změn. Příklad:  
   
--   Pochopení vztahů v kódu, vizuálně mapování těchto relací.  
+- Pochopení vztahů v kódu, vizuálně mapování těchto relací.  
   
--   K popisu architektury systému a byl kód zachován konzistentní s návrhem, vytváření diagramů vrstev a ověření kódu proti tyto diagramy.  
+- K popisu architektury systému a byl kód zachován konzistentní s návrhem, vytváření diagramů vrstev a ověření kódu proti tyto diagramy.  
   
--   K popisu třídy, struktury, vytvoření diagramů tříd.  
+- K popisu třídy, struktury, vytvoření diagramů tříd.  
   
--   Model a různé aspekty systému, kreslit diagramy jazyka UML (Unified Modeling). Například lze modelovat součásti systému, typy, interakce a procesy.  
+- Model a různé aspekty systému, kreslit diagramy jazyka UML (Unified Modeling). Například lze modelovat součásti systému, typy, interakce a procesy.  
   
- Tyto nástroje také umožňují snadněji komunikovat s lidmi, které jsou součástí vašeho projektu. Například můžete použít diagramy tříd UML vytvoření společný glosář pro diskuze o systém s účastníky projektu, uživateli a členy týmu.  
+  Tyto nástroje také umožňují snadněji komunikovat s lidmi, které jsou součástí vašeho projektu. Například můžete použít diagramy tříd UML vytvoření společný glosář pro diskuze o systém s účastníky projektu, uživateli a členy týmu.  
   
- Které verze sady Visual Studio podporují jednotlivé funkce najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  Které verze sady Visual Studio podporují jednotlivé funkce najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>Co chcete udělat?  
   

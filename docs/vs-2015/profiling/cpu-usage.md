@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876513"
 ---
 # <a name="cpu-usage"></a>Využití procesoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Když budete potřebovat zjistit problémy s výkonem ve vaší aplikaci, je dob
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
   
-1.  V sadě Visual Studio, nastavte konfigurace řešení na **vydání** a zvolte cíl nasazení.  
+1. V sadě Visual Studio, nastavte konfigurace řešení na **vydání** a zvolte cíl nasazení.  
   
-     ![Vyberte verzi a místní počítač](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Vyberte verzi a místní počítač](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Spuštění aplikace **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
+   -   Spuštění aplikace **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
   
-    -   Spuštění aplikace v místním počítači nejlépe replikuje provádění nainstalované aplikace.  
+   -   Spuštění aplikace v místním počítači nejlépe replikuje provádění nainstalované aplikace.  
   
-    -   Pokud shromažďujete data ze vzdáleného zařízení, spusťte aplikaci přímo v zařízení a ne pomocí připojení ke vzdálené ploše.  
+   -   Pokud shromažďujete data ze vzdáleného zařízení, spusťte aplikaci přímo v zařízení a ne pomocí připojení ke vzdálené ploše.  
   
-    -   Pro aplikace Windows Phone, shromažďovat data přímo z **zařízení** poskytuje nejaktuálnější data.  
+   -   Pro aplikace Windows Phone, shromažďovat data přímo z **zařízení** poskytuje nejaktuálnější data.  
   
-2.  Na **ladění** nabídce zvolte **Profiler výkonu...** .  
+2. Na **ladění** nabídce zvolte **Profiler výkonu...** .  
   
-3.  Zvolte **využití procesoru** a klikněte na tlačítko **Start**.  
+3. Zvolte **využití procesoru** a klikněte na tlačítko **Start**.  
   
-     ![Zvolte využití procesoru](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Zvolte využití procesoru](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Při spuštění aplikace, klikněte na tlačítko **získat maximální počet**. Počkejte asi sekundy po výstupu se zobrazí, a pak zvolte **získat maximální číslo asynchronní**. Čekání mezi kliknutí na tlačítko vytvoří je jednodušší oddělit tlačítko klikněte rutiny v diagnostickou sestavu.  
+4. Při spuštění aplikace, klikněte na tlačítko **získat maximální počet**. Počkejte asi sekundy po výstupu se zobrazí, a pak zvolte **získat maximální číslo asynchronní**. Čekání mezi kliknutí na tlačítko vytvoří je jednodušší oddělit tlačítko klikněte rutiny v diagnostickou sestavu.  
   
-5.  Až na druhém řádku výstupu se zobrazí, zvolte **zastavit shromažďování** v Centru pro výkon a Diagnostika.  
+5. Až na druhém řádku výstupu se zobrazí, zvolte **zastavit shromažďování** v Centru pro výkon a Diagnostika.  
   
- ![Zastavit shromažďování dat CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Zastavit shromažďování dat CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Nástroj využití CPU analyzuje data a zobrazí sestavu.  
+   Nástroj využití CPU analyzuje data a zobrazí sestavu.  
   
- ![Sestava CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Sestava CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analýza sestavy využití procesoru  
   

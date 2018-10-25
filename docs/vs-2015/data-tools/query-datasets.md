@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890566"
 ---
 # <a name="query-datasets"></a>Datové sady dotazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
   
  Následující příklady kódu ukazují, jak procházet nahoru a dolů vztahy v typových datových sadách. Příklady použití kód zadali <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) a vygenerovaný `FindBy` *PrimaryKey* (`FindByCustomerID`) metody pro vyhledání požadovaný řádek a vrácení souvisejících záznamů. V příkladech kompilace a spuštění správně pouze v případě, že máte:  
   
--   Instance datovou sadu s názvem `NorthwindDataSet` s `Customers` tabulky.  
+- Instance datovou sadu s názvem `NorthwindDataSet` s `Customers` tabulky.  
   
--   `Orders` Tabulky.  
+- `Orders` Tabulky.  
   
--   Relace s názvem `FK_Orders_Customers`týkající se dvěma tabulkami, které jsou k dispozici obor kódu  
+- Relace s názvem `FK_Orders_Customers`týkající se dvěma tabulkami, které jsou k dispozici obor kódu  
   
- Kromě toho obou tabulek muset být naplněný daty pro záznamy, které se mají vrátit.  
+  Kromě toho obou tabulek muset být naplněný daty pro záznamy, které se mají vrátit.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Vrátit podřízené záznamy vybraný nadřazený záznam  
   

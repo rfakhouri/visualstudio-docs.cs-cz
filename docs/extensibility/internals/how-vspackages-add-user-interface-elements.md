@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839112"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak balíčky VSPackages přidávají prvky uživatelského rozhraní
 Můžete přidat prvky uživatelského rozhraní (UI), například nabídky, panely nástrojů a nástrojů systému windows, do sady Visual Studio prostřednictvím VSPackage *.vsct* souboru.  
@@ -90,15 +90,15 @@ Můžete přidat prvky uživatelského rozhraní (UI), například nabídky, pan
 #### <a name="menus"></a>Nabídky  
  Každou nabídku je definován jako [Menu element](../../extensibility/menu-element.md) v `Menus` oddílu. Nabídky musí mít `guid`, `id`, a `priority` atributy a `Parent` element a také následující doplňkové atributy a podřízené položky:  
   
--   A `type` atribut, který určuje, zda by měl zobrazit v nabídce v integrovaném vývojovém prostředí jako typ nabídky nebo panelu nástrojů.  
+- A `type` atribut, který určuje, zda by měl zobrazit v nabídce v integrovaném vývojovém prostředí jako typ nabídky nebo panelu nástrojů.  
   
--   A [Strings – element](../../extensibility/strings-element.md) , která obsahuje [ButtonText – element](../../extensibility/buttontext-element.md), který určuje název nabídky v integrovaném vývojovém prostředí a [CommandName – element](../../extensibility/commandname-element.md), který určuje název, který je používané **příkaz** okna pro přístup k nabídce.  
+- A [Strings – element](../../extensibility/strings-element.md) , která obsahuje [ButtonText – element](../../extensibility/buttontext-element.md), který určuje název nabídky v integrovaném vývojovém prostředí a [CommandName – element](../../extensibility/commandname-element.md), který určuje název, který je používané **příkaz** okna pro přístup k nabídce.  
   
--   Volitelné příznaky. A [CommandFlag element](../../extensibility/command-flag-element.md) může objevit v definici nabídce můžete změnit její vzhled nebo chování v integrovaném vývojovém prostředí.  
+- Volitelné příznaky. A [CommandFlag element](../../extensibility/command-flag-element.md) může objevit v definici nabídce můžete změnit její vzhled nebo chování v integrovaném vývojovém prostředí.  
   
- Každý `Menu` element musí mít skupinu jako jeho nadřazeným prvkem, pokud není prvek ukotvitelné jako je například panel nástrojů. Ukotvitelné nabídka je vlastní nadřazený objekt. Další informace o nabídkách a hodnoty pro `type` atributu naleznete v tématu [Menu element](../../extensibility/menu-element.md) dokumentaci.  
+  Každý `Menu` element musí mít skupinu jako jeho nadřazeným prvkem, pokud není prvek ukotvitelné jako je například panel nástrojů. Ukotvitelné nabídka je vlastní nadřazený objekt. Další informace o nabídkách a hodnoty pro `type` atributu naleznete v tématu [Menu element](../../extensibility/menu-element.md) dokumentaci.  
   
- Následující příklad ukazuje, které se zobrazí na řádku nabídek sady Visual Studio, vedle položky nabídky **nástroje** nabídky.  
+  Následující příklad ukazuje, které se zobrazí na řádku nabídek sady Visual Studio, vedle položky nabídky **nástroje** nabídky.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos –  
  Combos – jsou definovány v `Combos` oddílu. Každý `Combo` element reprezentuje pole rozevíracího seznamu v integrovaném vývojovém prostředí. Pole se seznamem může nebo nemusí být zapisovat i jiní uživatelé, závisí na hodnotě `type` atribut pole se seznamem. Combos – mají stejné prvky a chování, které tlačítka mají a může mít také následující doplňkové atributy:  
   
--   A `defaultWidth` atribut, který určuje šířka v pixelech.  
+- A `defaultWidth` atribut, který určuje šířka v pixelech.  
   
--   `idCommandList` Atribut, který určuje seznam, který obsahuje položky, které se zobrazí v seznamu. Seznam příkazů musí být deklarována ve stejném `GuidSymbol` uzel, který obsahuje pole se seznamem.  
+- `idCommandList` Atribut, který určuje seznam, který obsahuje položky, které se zobrazí v seznamu. Seznam příkazů musí být deklarována ve stejném `GuidSymbol` uzel, který obsahuje pole se seznamem.  
   
- Následující příklad definuje prvek pole se seznamem.  
+  Následující příklad definuje prvek pole se seznamem.  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  Následující pravidla určují, jak položku může volat jinou položku jako jeho nadřazený objekt.  
   
 |Prvek|Definované v této části tabulky příkazů|Mohou být obsaženy (jako nadřazená nebo podle umístění v `CommandPlacements` části nebo obojí)|Může obsahovat (označované jako nadřazená)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |Skupina|[Groups – element](../../extensibility/groups-element.md), rozhraní IDE, ostatní rozšíření VSPackages|Nabídka, skupiny, přímo s příslušnou položkou|Příkazy, nabídky a skupiny|  
 |Nabídka|[Menus – element](../../extensibility/menus-element.md), rozhraní IDE, ostatní rozšíření VSPackages|1 *n* skupiny|0 na *n* skupiny|  
 |Panel nástrojů|[Menus – element](../../extensibility/menus-element.md), rozhraní IDE, ostatní rozšíření VSPackages|Přímo s příslušnou položkou|0 na *n* skupiny|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Vzhled elementu rozhraní  
  Důležité informace pro výběr a umístění prvků příkazu jsou následující:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nabízí mnoho prvků uživatelského rozhraní, které se zobrazují odlišně v závislosti na umístění.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nabízí mnoho prvků uživatelského rozhraní, které se zobrazují odlišně v závislosti na umístění.  
   
--   Prvek uživatelského rozhraní, který je definován pomocí `DefaultInvisible` příznak se nezobrazí v integrovaném vývojovém prostředí, pokud to není buď zobrazí jeho implementace VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodu, nebo ve spojení s konkrétním kontextu uživatelského rozhraní v `VisibilityConstraints` oddílu.  
+- Prvek uživatelského rozhraní, který je definován pomocí `DefaultInvisible` příznak se nezobrazí v integrovaném vývojovém prostředí, pokud to není buď zobrazí jeho implementace VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metodu, nebo ve spojení s konkrétním kontextu uživatelského rozhraní v `VisibilityConstraints` oddílu.  
   
--   Úspěšně umístěné příkaz se nemusí zobrazit. Toto je vzhledem k tomu, že rozhraní IDE automaticky skryje nebo zobrazí některé příkazy, v závislosti na rozhraní, které sady VSPackage má (nebo ne) implementováno. Například na VSPackage provádění některých sestavení rozhraní položky související s buildem nabídky způsobí, že má být zobrazen automaticky.  
+- Úspěšně umístěné příkaz se nemusí zobrazit. Toto je vzhledem k tomu, že rozhraní IDE automaticky skryje nebo zobrazí některé příkazy, v závislosti na rozhraní, které sady VSPackage má (nebo ne) implementováno. Například na VSPackage provádění některých sestavení rozhraní položky související s buildem nabídky způsobí, že má být zobrazen automaticky.  
   
--   Použití `CommandWellOnly` příznak v definici prvku uživatelského rozhraní znamená, že příkaz lze přidat pouze pomocí vlastního nastavení.  
+- Použití `CommandWellOnly` příznak v definici prvku uživatelského rozhraní znamená, že příkaz lze přidat pouze pomocí vlastního nastavení.  
   
--   Příkazy mohou být k dispozici pouze v určitých uživatelského rozhraní kontextech, například pouze v případě, že po integrovaného vývojového prostředí v návrhovém zobrazení, zobrazí se dialogové okno.  
+- Příkazy mohou být k dispozici pouze v určitých uživatelského rozhraní kontextech, například pouze v případě, že po integrovaného vývojového prostředí v návrhovém zobrazení, zobrazí se dialogové okno.  
   
--   Způsobí některé prvky uživatelského rozhraní, který se má zobrazit v integrovaném vývojovém prostředí, musí implementovat jedno nebo více rozhraní nebo napsat kód.  
+- Způsobí některé prvky uživatelského rozhraní, který se má zobrazit v integrovaném vývojovém prostředí, musí implementovat jedno nebo více rozhraní nebo napsat kód.  
   
 ## <a name="see-also"></a>Viz také:  
  [Rozšíření nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)

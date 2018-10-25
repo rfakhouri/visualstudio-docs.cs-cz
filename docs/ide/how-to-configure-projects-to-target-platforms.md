@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb1b28615593758b0a34425be9e9a5aef11d406b
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847978"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 
@@ -59,11 +59,11 @@ Jsou aktualizovány vlastnosti pro všechny projekty, které se zaměřují 64bi
 
 Provedení tohoto úkolu se liší v závislosti na programovacím jazyku, který používáte. V následujících tématech pro další informace:
 
--   Pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
+- Pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektů, naleznete v tématu [/Platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
--   Pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektů, naleznete v tématu [stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektů, naleznete v tématu [stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
--   Pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektů, naleznete v tématu [/CLR (kompilace modulu Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
+- Pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektů, naleznete v tématu [/CLR (kompilace modulu Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>Viz také:
 

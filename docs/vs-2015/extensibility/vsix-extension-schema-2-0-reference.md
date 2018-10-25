@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893874"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX Extension Schema 2.0 – referenční informace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
 ### <a name="assets-element"></a>Element prostředky  
  Tento prvek obsahuje seznam `<Asset>` prezentované značky pro každý prvek rozšíření nebo obsahu, kterou tento balíček.  
   
--   `<Asset>` – Tento prvek obsahuje následující atributy a elementy:  
+- `<Asset>` – Tento prvek obsahuje následující atributy a elementy:  
   
-    -   `Type` – Toto je typ rozšíření nebo obsah reprezentovaný tímto prvkem. Každý `<Asset>` element musí mít jeden `Type`, ale více `<Asset>` elementy může mít stejný `Type`. Tento atribut by měl být reprezentován jako plně kvalifikovaný název, podle konvence oboru názvů. Známé typy jsou:  
+  - `Type` – Toto je typ rozšíření nebo obsah reprezentovaný tímto prvkem. Každý `<Asset>` element musí mít jeden `Type`, ale více `<Asset>` elementy může mít stejný `Type`. Tento atribut by měl být reprezentován jako plně kvalifikovaný název, podle konvence oboru názvů. Známé typy jsou:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Můžete vytvořit vlastní typy a přiřadit jedinečné názvy. Za běhu v sadě Visual Studio můžete kód výčet a tyto vlastní typy přístup prostřednictvím Správce rozšíření pro rozhraní API.  
+       Můžete vytvořit vlastní typy a přiřadit jedinečné názvy. Za běhu v sadě Visual Studio můžete kód výčet a tyto vlastní typy přístup prostřednictvím Správce rozšíření pro rozhraní API.  
   
-    -   Cesta – relativní cesta k souboru nebo složky v rámci balíčku, který obsahuje prostředek.  
+  - Cesta – relativní cesta k souboru nebo složky v rámci balíčku, který obsahuje prostředek.  
   
-    -   `AnyAttribute*` – Neuzavřenou množinu atributy, které bude přístupné za běhu jako slovník dvojice název hodnota.  
+  - `AnyAttribute*` – Neuzavřenou množinu atributy, které bude přístupné za běhu jako slovník dvojice název hodnota.  
   
-         `<AnyElement>*` – Všechny Strukturovaný obsah je povolen mezi `<Asset>` začínají i končí značky. Všechny prvky jsou vystaveny jako seznam objektů XmlElement. Rozšíření VSIX, můžete definovat strukturovaných metadata specifická pro typ v souboru manifestu a výčet za běhu.  
+     `<AnyElement>*` – Všechny Strukturovaný obsah je povolen mezi `<Asset>` začínají i končí značky. Všechny prvky jsou vystaveny jako seznam objektů XmlElement. Rozšíření VSIX, můžete definovat strukturovaných metadata specifická pro typ v souboru manifestu a výčet za běhu.  
   
 ### <a name="sample-manifest"></a>Ukázka manifestu  
   

@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862174"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Postupy: Tvorba šablon položek s více soubory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Šablony položek může zadat jenom jednu položku, ale někdy položky skládá z více souborů. Například šablonu položky formulářů Windows v jazyce Visual Basic vyžaduje následující tři soubory:  
   
--   Soubor .vb, který obsahuje kód pro formulář.  
+- Soubor .vb, který obsahuje kód pro formulář.  
   
--   A. Designer.vb, který obsahuje informace o návrháři formuláře.  
+- A. Designer.vb, který obsahuje informace o návrháři formuláře.  
   
--   Soubor .resx, který obsahuje vložené prostředky pro formulář.  
+- Soubor .resx, který obsahuje vložené prostředky pro formulář.  
   
- Šablony položek s více soubory vyžadují parametry zajistit správné přípony názvů se používají při vytvoření položky v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pokud vytvoříte pomocí šablony položky **exportovat šablonu** průvodce, tyto parametry jsou automaticky generovány a žádné další úpravy je povinný. Následující postup vysvětluje, jak používat parametry a ověřte, že jsou správné přípony názvů vytvořen.  
+  Šablony položek s více soubory vyžadují parametry zajistit správné přípony názvů se používají při vytvoření položky v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pokud vytvoříte pomocí šablony položky **exportovat šablonu** průvodce, tyto parametry jsou automaticky generovány a žádné další úpravy je povinný. Následující postup vysvětluje, jak používat parametry a ověřte, že jsou správné přípony názvů vytvořen.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Ruční vytvoření šablony položek s více soubory  
   

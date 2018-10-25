@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811008"
 ---
 # <a name="source-control-integration-essentials"></a>Základy integrace správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ ms.locfileid: "49232351"
   
  K implementaci modulu plug-in pomocí rozhraní API pro zdrojový ovládací prvek modulu Plug-in správy zdrojového kódu, postupujte podle těchto kroků:  
   
-1.  Vytvořit knihovnu DLL, která implementuje funkcí zadaných v [moduly plug-in správy zdrojových kódů](../../extensibility/source-control-plug-ins.md).  
+1. Vytvořit knihovnu DLL, která implementuje funkcí zadaných v [moduly plug-in správy zdrojových kódů](../../extensibility/source-control-plug-ins.md).  
   
-2.  Zaregistruje knihovnu DLL tak, že položky registru, jak je popsáno v [postupy: Instalace modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
+2. Zaregistruje knihovnu DLL tak, že položky registru, jak je popsáno v [postupy: Instalace modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).  
   
-3.  Vytvořit pomocné rutiny uživatelského rozhraní a zobrazit ji po zobrazení výzvy zdrojový balíček adaptér ovládací prvek ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] komponenta, která zpracovává funkce správy zdrojového kódu pomocí ovládacího prvku moduly plug-in zdrojového kódu).  
+3. Vytvořit pomocné rutiny uživatelského rozhraní a zobrazit ji po zobrazení výzvy zdrojový balíček adaptér ovládací prvek ( [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] komponenta, která zpracovává funkce správy zdrojového kódu pomocí ovládacího prvku moduly plug-in zdrojového kódu).  
   
- Další informace najdete v tématu [vytváření modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/creating-a-source-control-plug-in.md).  
+   Další informace najdete v tématu [vytváření modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/creating-a-source-control-plug-in.md).  
   
 ## <a name="source-control-vspackage"></a>Ovládací prvek zdroje balíčku VSPackage  
  Implementace balíčku VSPackage správy zdrojového kódu umožňuje vyvíjet přizpůsobené náhrada za [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zdrojového ovládacího prvku uživatelského rozhraní. Tento přístup poskytuje úplnou kontrolu nad integrace správy zdrojového kódu, ale vyžaduje, aby poskytoval prvky uživatelského rozhraní a implementaci rozhraní pro řízení zdroje, které by jinak poskytované v rámci modulu plug-in přístup.  
   
  Pokud chcete implementovat balíčku VSPackage správy zdrojového kódu, musíte mít:  
   
-1.  Vytvořte a zaregistrujte vlastní ovládací prvek zdroje balíčku VSPackage, jak je popsáno v [registrace a výběr](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+1. Vytvořte a zaregistrujte vlastní ovládací prvek zdroje balíčku VSPackage, jak je popsáno v [registrace a výběr](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-2.  Nahraďte výchozí zdrojový ovládací prvek uživatelského rozhraní vlastního uživatelského rozhraní. Zobrazit [vlastní uživatelské rozhraní](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
+2. Nahraďte výchozí zdrojový ovládací prvek uživatelského rozhraní vlastního uživatelského rozhraní. Zobrazit [vlastní uživatelské rozhraní](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).  
   
-3.  Zadejte symboly, které se dá použít a zpracování **Průzkumníka řešení** piktogram události. Zobrazit [piktogramů](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
+3. Zadejte symboly, které se dá použít a zpracování **Průzkumníka řešení** piktogram události. Zobrazit [piktogramů](../../extensibility/internals/glyph-control-source-control-vspackage.md).  
   
-4.  Zpracování událostí dotazu upravit a uložit dotaz, jak je znázorněno v [dotaz upravit dotaz uložit](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
+4. Zpracování událostí dotazu upravit a uložit dotaz, jak je znázorněno v [dotaz upravit dotaz uložit](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).  
   
- Další informace najdete v tématu [vytváření VSPackage ovládací prvek zdroje](../../extensibility/internals/creating-a-source-control-vspackage.md).  
+   Další informace najdete v tématu [vytváření VSPackage ovládací prvek zdroje](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Přehled](../../extensibility/internals/source-control-integration-overview.md)   

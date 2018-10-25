@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907245"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Nasazení rozšíření pro modelování vrstev
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Ostatní uživatelé sady Visual Studio můžete nainstalovat rozšíření, kte
   
 #### <a name="to-install-the-extension"></a>Chcete-li nainstalovat rozšíření  
   
-1.  V projektu, který obsahuje **source.vsix.manifest**, otevřete **bin\\ \***  v Průzkumníku souborů.  
+1. V projektu, který obsahuje **source.vsix.manifest**, otevřete **bin\\\\*** v Průzkumníku souborů.  
   
-2.  Kopírovat  **\*VSIX** soubor do počítače, na kterém chcete nainstalovat rozšíření.  
+2. Kopírovat  **\*VSIX** soubor do počítače, na kterém chcete nainstalovat rozšíření.  
   
-3.  V cílovém počítači dvakrát klikněte na soubor *.vsix v Průzkumníku Windows.  
+3. V cílovém počítači dvakrát klikněte na soubor *.vsix v Průzkumníku Windows.  
   
-     Otevře se instalátor VSIX.  
+    Otevře se instalátor VSIX.  
   
 #### <a name="to-uninstall-the-extension"></a>Chcete-li odinstalovat rozšíření  
   

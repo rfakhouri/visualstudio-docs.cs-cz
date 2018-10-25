@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862759"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními pro služby jazyka a editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
   
  Tady jsou některé základní typy rozšíření editoru:  
   
--   Okraje a posuvníky  
+- Okraje a posuvníky  
   
--   Značky  
+- Značky  
   
--   Vylepšení  
+- Vylepšení  
   
--   Možnosti  
+- Možnosti  
   
--   IntelliSense  
+- IntelliSense  
   
- Další informace o bodech rozšíření editoru, najdete v části [služba jazyka a editoru Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md).  
+  Další informace o bodech rozšíření editoru, najdete v části [služba jazyka a editoru Rozšiřovací body](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Nasazení rozšíření editoru  
  V sadě Visual Studio nasadit rozšíření editoru přidáte soubor metadat s názvem source.extension.vsixmanifest k řešení, sestavit řešení, a následným přidáním kopii binárních souborů a manifest ve složce, která se označuje do sady Visual Studio. Soubor manifestu definuje základních faktů o rozšíření (například názvu, autora, verze a typu obsahu). Další informace o souboru manifestu VSIX a tom, jak nasadit rozšíření najdete v tématu [přesouvání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

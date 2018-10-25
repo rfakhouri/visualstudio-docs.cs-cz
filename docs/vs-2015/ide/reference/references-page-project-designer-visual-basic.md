@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859054"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Stránka Odkazy, návrhář projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Použití **odkazy** stránku **Návrháře projektu** ke správě odkazy, webov
   
 > [!NOTE]
 >  Při systém projektu nalezení odkaz na sestavení, systém vyřeší odkaz vyhledáváním v následujících umístěních, v uvedeném pořadí:  
->   
->  1.  Složky projektu. Soubory složky projektu se zobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** není v platnosti.  
-> 2.  Složky, které jsou určené v **cesty odkazů** dialogové okno.  
-> 3.  Složky, které zobrazí soubory v **přidat odkaz** dialogové okno.  
-> 4.  Složku obj projektu. (Když přidáte do svého projektu odkaz modelu COM, jeden nebo více sestavení mohou být přidány do projektu složku obj.)  
+> 
+> 1. Složky projektu. Soubory složky projektu se zobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** není v platnosti.  
+>    2.  Složky, které jsou určené v **cesty odkazů** dialogové okno.  
+>    3.  Složky, které zobrazí soubory v **přidat odkaz** dialogové okno.  
+>    4.  Složku obj projektu. (Když přidáte do svého projektu odkaz modelu COM, jeden nebo více sestavení mohou být přidány do projektu složku obj.)  
   
  **Odkazy**  
  Tento seznam obsahuje všechny odkazy v projektu použít nebo se nepoužívá.  

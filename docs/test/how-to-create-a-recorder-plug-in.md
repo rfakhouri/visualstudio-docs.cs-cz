@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909769"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Postupy: vytvoření modulu Plugin rekordéru
 
@@ -87,11 +87,11 @@ Následující postupy popisují, jak vytvořit základní kód pro rekordér mo
 
 ### <a name="deploy-the-recorder-plug-in"></a>Nasazení modulu plug-in rekordéru
 
-Po kompilaci modulu plug-in rekordéru, je potřeba umístit výslednou knihovnu DLL jedním ze dvou umístění:
+Po kompilaci modulu plug-in rekordéru, umístěte výslednou knihovnu DLL jedním ze dvou umístění:
 
--   *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *% ProgramFiles (x86) %\Microsoft Visual Studio\\[verze]\\\Common7\IDE\PrivateAssemblies\WebTestPlugins [verze]*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* verze *> \WebTestPlugins*
+- *\WebTestPlugins %USERPROFILE%\Documents\Visual studio [verze]*
 
 > [!WARNING]
 > Po zkopírování modulu plug-in rekordéru do jednoho ze dvou umístění, musíte restartovat Visual Studio k registraci modulu plug-in rekordéru.
@@ -113,8 +113,8 @@ Po kompilaci modulu plug-in rekordéru, je potřeba umístit výslednou knihovnu
     >
     > Důvodem je-li změnit kód na některý z modulů plug-in a vytvořit novou verzi knihovny DLL **(verze = 0.0.0.0)**, ale modul plug-in stále odkazuje původní verzi modulu plug-in. Chcete-li tento problém, postupujte podle těchto kroků:
     >
-    > 1.  Webový výkon a projekt zátěžového testu zobrazí se v odkazech zobrazí upozornění. Odeberte a znovu přidejte odkaz na knihovnu DLL Doplňku.
-    > 2.  Odeberte doplněk z vašeho testu nebo vhodného místa a znovu ho přidejte.
+    > 1. Webový výkon a projekt zátěžového testu zobrazí se v odkazech zobrazí upozornění. Odeberte a znovu přidejte odkaz na knihovnu DLL Doplňku.
+    > 2. Odeberte doplněk z vašeho testu nebo vhodného místa a znovu ho přidejte.
 
 ## <a name="example"></a>Příklad
 
@@ -123,7 +123,7 @@ Tento příklad ukazuje, jak vytvořit přizpůsobené záznamníku testu výkon
 > [!NOTE]
 > Úplný seznam vzorového kódu je umístěn v dolní části tohoto tématu.
 
- **Revize ukázkového kódu**
+**Revize ukázkového kódu**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Procházením skrze výsledek vyhledáte první stránku s ReportSession
 

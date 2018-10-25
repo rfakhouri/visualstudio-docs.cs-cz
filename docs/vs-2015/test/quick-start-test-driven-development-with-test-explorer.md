@@ -13,12 +13,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831689"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Spouštění jednotkových testů pomocí Průzkumníku testů  
   
-1.  Vytvořte jednotkové testy používající vybrané testovací rozhraní podle vlastního výběru.  
+1. Vytvořte jednotkové testy používající vybrané testovací rozhraní podle vlastního výběru.  
   
-     Například vytvořit test používající rozhraní MSTest:  
+    Například vytvořit test používající rozhraní MSTest:  
   
-    1.  Vytvoření testovacího projektu.  
+   1.  Vytvoření testovacího projektu.  
   
-         V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++** a klikněte na tlačítko **Test**.  
+        V **nový projekt** dialogového okna rozbalte **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++** a klikněte na tlačítko **Test**.  
   
-         Vyberte **projekt testu jednotek**.  
+        Vyberte **projekt testu jednotek**.  
   
-    2.  Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.  
+   2.  Zapište každý Jednotkový test jako metodu. Předpona každou metodu testu `[TestMethod]` atribut.  
   
-2.  Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
+2. Je-li jednotlivé testy nemají žádné závislosti, které brání spuštění v libovolném pořadí, zapněte paralelní provádění testů s ![USTIT&#95;parallelicon&#45;malé](../test/media/ute-parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný ke spuštění všech testů.  
   
-3.  V panelu nabídky zvolte **testovací**, **spustit jednotkové testy**, **všechny testy**.  
+3. V panelu nabídky zvolte **testovací**, **spustit jednotkové testy**, **všechny testy**.  
   
-     Řešení je sestaveno a testy spuštěny.  
+    Řešení je sestaveno a testy spuštěny.  
   
-     Průzkumník testů otevře a zobrazí souhrn výsledků.  
+    Průzkumník testů otevře a zobrazí souhrn výsledků.  
   
- **Pokud chcete zobrazit úplný seznam testů:** zvolit **Zobrazit vše** v každé kategorii.  
+   **Pokud chcete zobrazit úplný seznam testů:** zvolit **Zobrazit vše** v každé kategorii.  
   
- **Pokud chcete zobrazit podrobnosti výsledku testu:** vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.  
+   **Pokud chcete zobrazit podrobnosti výsledku testu:** vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.  
   
- **Přejít na kód testu:** klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.  
+   **Přejít na kód testu:** klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.  
   
- **Ladění testu:** otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.  
+   **Ladění testu:** otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.  
   
 > [!IMPORTANT]
 >  Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.  
@@ -77,61 +77,61 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
   
 #### <a name="creating-the-test-and-method"></a>Vytvoření testu a – metoda  
   
-1.  Vytvořte projekt knihovny tříd Visual C#. Tento projekt bude obsahovat kód, který chceme dodat. V tomto příkladu je pojmenována `MyMath`.  
+1. Vytvořte projekt knihovny tříd Visual C#. Tento projekt bude obsahovat kód, který chceme dodat. V tomto příkladu je pojmenována `MyMath`.  
   
-2.  Vytvoření testovacího projektu.  
+2. Vytvoření testovacího projektu.  
   
-    -   V **nový projekt** dialogovém okně zvolte **Visual C#**, **testovací** a klikněte na tlačítko **projekt testu jednotek**.  
+   -   V **nový projekt** dialogovém okně zvolte **Visual C#**, **testovací** a klikněte na tlačítko **projekt testu jednotek**.  
   
-         ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+        ![Nové projekty kódu a testování](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  Napište základní testovací metodu. Ověřte výsledek pro určitý vstup:  
+3. Napište základní testovací metodu. Ověřte výsledek pro určitý vstup:  
   
-    ```csharp  
+   ```csharp  
   
-    [TestMethod]  
-    public void BasicRooterTest()  
-    {  
-      // Create an instance to test:  
-      Rooter rooter = new Rooter();  
-      // Define a test input and output value:  
-      double expectedResult = 2.0;  
-      double input = expectedResult * expectedResult;  
-      // Run the method under test:  
-      double actualResult = rooter.SquareRoot(input);  
-      // Verify the result:  
-      Assert.AreEqual(expectedResult, actualResult,  
-          delta: expectedResult / 100);  
-    }  
-    ```  
+   [TestMethod]  
+   public void BasicRooterTest()  
+   {  
+     // Create an instance to test:  
+     Rooter rooter = new Rooter();  
+     // Define a test input and output value:  
+     double expectedResult = 2.0;  
+     double input = expectedResult * expectedResult;  
+     // Run the method under test:  
+     double actualResult = rooter.SquareRoot(input);  
+     // Verify the result:  
+     Assert.AreEqual(expectedResult, actualResult,  
+         delta: expectedResult / 100);  
+   }  
+   ```  
   
-4.  Generovat metodu testu.  
+4. Generovat metodu testu.  
   
-    1.  Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat**, **nový typ**.  
+   1.  Umístěte kurzor na `Rooter`a pak v místní nabídce zvolte **generovat**, **nový typ**.  
   
-    2.  V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je `MyMath`.  
+   2.  V **generovat nový typ** dialogové okno, nastavte **projektu** do projektu knihovny tříd. V tomto příkladu je `MyMath`.  
   
-    3.  Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat**, **Pahýl metody**.  
+   3.  Umístěte kurzor na `SquareRoot`a pak v místní nabídce zvolte **generovat**, **Pahýl metody**.  
   
-5.  Spusťte Jednotkový test.  
+5. Spusťte Jednotkový test.  
   
-    1.  Na **testovací** nabídce zvolte **spustit jednotkové testy**, **všechny testy**.  
+   1.  Na **testovací** nabídce zvolte **spustit jednotkové testy**, **všechny testy**.  
   
-         Toto řešení je sestaveno a spuštěno.  
+        Toto řešení je sestaveno a spuštěno.  
   
-         Průzkumník testů otevře a zobrazí výsledky.  
+        Průzkumník testů otevře a zobrazí výsledky.  
   
-         Test je zobrazen **neúspěšné testy**.  
+        Test je zobrazen **neúspěšné testy**.  
   
-6.  Vyberte název testu.  
+6. Vyberte název testu.  
   
-     Podrobnosti testu se zobrazí v dolní části Průzkumníku testů.  
+    Podrobnosti testu se zobrazí v dolní části Průzkumníku testů.  
   
-7.  Vyberte položky v oblasti **trasování zásobníku** zobrazíte, pokud se test nezdařil.  
+7. Vyberte položky v oblasti **trasování zásobníku** zobrazíte, pokud se test nezdařil.  
   
- ![Testování jednotek Test Explorer zobrazující se nezdařilo. ](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![Testování jednotek Test Explorer zobrazující se nezdařilo. ](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- V tomto okamžiku jste vytvořili test a prázdnou metodu, kterou upravíte tak, aby byl test úspěšný.  
+   V tomto okamžiku jste vytvořili test a prázdnou metodu, kterou upravíte tak, aby byl test úspěšný.  
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po každé změně Ujistěte se, všechny testy úspěšné.  
   

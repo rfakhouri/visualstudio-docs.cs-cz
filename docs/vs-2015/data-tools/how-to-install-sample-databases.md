@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881715"
 ---
 # <a name="how-to-install-sample-databases"></a>Postupy: Instalace ukázkových databází
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ Mnoho příkladů dat vyžaduje možnost připojení k Northwind, Pubs a Adventu
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>K instalaci ukázkové databáze Northwind pro aplikaci Microsoft Access  
   
-1.  V aplikaci Microsoft Access 2010 nebo novější, vyhledání online šablon Northwind a zvolte **ukázkovou databázi Desktop Northwind 2007**.  
+1. V aplikaci Microsoft Access 2010 nebo novější, vyhledání online šablon Northwind a zvolte **ukázkovou databázi Desktop Northwind 2007**.  
   
-2.  V aplikaci Microsoft Access uložte soubor databáze jako Northwind.accdb.  
+2. V aplikaci Microsoft Access uložte soubor databáze jako Northwind.accdb.  
   
- Nové rozšíření pro databáze aplikace Access je .accdb. Zobrazit [programování dat pomocí aplikace Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Připojení k databázi Northwind pomocí přístupu najdete v tématu [postupy: připojení k databázi Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+   Nové rozšíření pro databáze aplikace Access je .accdb. Zobrazit [programování dat pomocí aplikace Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Připojení k databázi Northwind pomocí přístupu najdete v tématu [postupy: připojení k databázi Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
   
 ## <a name="net-framework-security"></a>Zabezpečení rozhraní .NET Framework  
  Ukázkové databáze slouží pouze pro ilustraci a nemusí nutně používat osvědčené postupy zabezpečení.  

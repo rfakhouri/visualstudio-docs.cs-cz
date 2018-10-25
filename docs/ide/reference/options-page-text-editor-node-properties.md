@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929202"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 Tento dokument popisuje některé stránky (nebo kolekce vlastností), které jsou přidruženy **textový Editor** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu `Properties` kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
@@ -29,7 +29,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
  `DTE.Properties("TextEditor", "General")`
 
 |Název položky vlastnosti|Hodnota|Popis|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Pokud `True`, stiskněte escape při výběru způsobí, že kurzor přesunout do kterého byla spuštěna akce, která vytvořila tento výběr. `False` Přesune kurzor na konec výběru.|
 |DragNDropTextEditing|Get/Set (Boolean)|Určuje, zda lze při operacích kopírování nebo vyjmutí a vložení vybranou oblast textu přetáhnout v dokumentu z jednoho místa do jiného.|
 |HorizontalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje vodorovný posuvník.|
@@ -48,7 +48,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
  `PlainText` Možnosti editoru ovlivňují nastavení editoru při úpravě textových souborů. Každý programovací jazyk a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíček má své vlastní zvláštní **textový Editor** nastavení. Například k zobrazení nebo změna [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] použít nastavení editoru `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Pro **skript SQL** použít nastavení editoru `DTE.Properties("TextEditor", "SQL ")`.
 
 |Název položky vlastnosti|Hodnota|Popis|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Určuje, zda se automaticky zobrazí dostupný seznam členů, když uživatel zadá za odkaz na proměnnou tečku.|
 |AutoListParams|Get/Set (Boolean)|Určuje, zda se automaticky zobrazí popis seznamu argumentů, když uživatel zadá za název funkce závorku (.|
 |HideAdvancedMembers|Get/Set (Boolean)|Určuje, zda se mají v seznamech doplňování výrazů vypisovat všechny členy nebo pouze nejpoužívanější.|

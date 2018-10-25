@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908915"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Vytvoření jazyka specifického pro doménu (DSL) pomocí specializovaný [!INC
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>K vytváření řešení jazyka specifického pro doménu  
   
-1.  Spusťte průvodce nástroje DSL.  
+1. Spusťte průvodce nástroje DSL.  
   
-    1.  Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
+   1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.  
   
-    2.  **Nový projekt** zobrazí se dialogové okno.  
+   2. **Nový projekt** zobrazí se dialogové okno.  
   
-    3.  V části **typy projektů**, rozbalte **ostatní typy projektů** uzel a klikněte na tlačítko **rozšiřitelnost**.  
+   3. V části **typy projektů**, rozbalte **ostatní typy projektů** uzel a klikněte na tlačítko **rozšiřitelnost**.  
   
-    4.  Klikněte na tlačítko **návrháře jazyka specifického pro doménu**.  
+   4. Klikněte na tlačítko **návrháře jazyka specifického pro doménu**.  
   
-    5.  V **název** zadejte název řešení. Klikněte na tlačítko **OK**.  
+   5. V **název** zadejte název řešení. Klikněte na tlačítko **OK**.  
   
-         **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.  
+       **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.  
   
-        > [!NOTE]
-        >  Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.  
+      > [!NOTE]
+      >  Název, který zadáte nejlépe, by měl být platný Visual C# identifikátor, protože může být použit pro generování kódu.  
   
-     ![Vytvoření dialogového okna DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![Vytvoření dialogového okna DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Zvolte šablonu DSL.  
+2. Zvolte šablonu DSL.  
   
-     Na **vybrat možnosti jazyka specifického pro doménu** stránky, vyberte jednu z šablon řešení, jako **minimální jazykový**. Zvolte šablonu, která se podobá DSL, který chcete vytvořit.  
+    Na **vybrat možnosti jazyka specifického pro doménu** stránky, vyberte jednu z šablon řešení, jako **minimální jazykový**. Zvolte šablonu, která se podobá DSL, který chcete vytvořit.  
   
-     Další informace o šablonách řešení, najdete v části [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Další informace o šablonách řešení, najdete v části [výběr šablony řešení jazyka specifického pro doménu](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Zadejte příponu názvu souboru na **přípona souboru** stránky. By měl být jedinečný ve vašem počítači a ve všech počítačích, na kterém chcete nainstalovat DSL. Zobrazí se zpráva **žádné aplikace ani editory sady Visual Studio toto rozšíření využít**.  
+3. Zadejte příponu názvu souboru na **přípona souboru** stránky. By měl být jedinečný ve vašem počítači a ve všech počítačích, na kterém chcete nainstalovat DSL. Zobrazí se zpráva **žádné aplikace ani editory sady Visual Studio toto rozšíření využít**.  
   
-    -   Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabídky sady SDK.  
+   -   Pokud přípona názvu souboru jste použili v předchozí experimentální DSL, která plně nenainstalovali, můžete vymazat jejich odhlašování pomocí **resetovat experimentální instanci** nástroj, který se nachází v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nabídky sady SDK.  
   
-    -   Pokud jiný [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která používá tuto příponu souboru plně nainstalovaný v počítači, zvažte jeho odinstalaci. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
+   -   Pokud jiný [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozšíření, která používá tuto příponu souboru plně nainstalovaný v počítači, zvažte jeho odinstalaci. Na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
   
-4.  Zkontrolujte a v případě potřeby upravit, pole na zbývajících stránkách průvodce. Pokud jste s nastavením spokojeni, klikněte na tlačítko **Dokončit**. Další informace o nastaveních, která najdete v tématu [stránky průvodce Návrhář DSL](#settings).  
+4. Zkontrolujte a v případě potřeby upravit, pole na zbývajících stránkách průvodce. Pokud jste s nastavením spokojeni, klikněte na tlačítko **Dokončit**. Další informace o nastaveních, která najdete v tématu [stránky průvodce Návrhář DSL](#settings).  
   
-     Průvodce vytvoří řešení, která má dva projekty, které jsou pojmenovány **Dsl** a **DslPackage**.  
+    Průvodce vytvoří řešení, která má dva projekty, které jsou pojmenovány **Dsl** a **DslPackage**.  
   
-    > [!NOTE]
-    >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.  
+   > [!NOTE]
+   >  Pokud se zobrazí zpráva, která vás upozorní, není ke spuštění textové šablony z nedůvěryhodných zdrojů, klikněte na tlačítko **OK**. Můžete nastavit tato zpráva se zobrazí znovu.  
   
 ##  <a name="settings"></a> Na stránkách průvodce návrhářem DSL  
  Můžete nechat několik polí nezmění z výchozí hodnoty. Nicméně Ujistěte se, že pole přípona souboru je nastavit.  

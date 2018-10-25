@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96dc292712a04b7a1049400b908bf5f678b63df3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857449"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu. Model může 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generování kódu vaší aplikace z modelu  
  Nejjednodušší způsob, jak generovat kód je pomocí textových šablon. Kód lze generovat ve stejném [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení, ve kterém můžete zachovat modelu. Další informace naleznete v tématu:  
   
--   [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)  
+- [Generování souborů z modelu UML](../modeling/generate-files-from-a-uml-model.md)  
   
--   [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- Tato metoda je snadno použitelná postupně. Začněte s aplikaci, která se dá použít jenom pro konkrétní případ a zvolit několik částí, které chcete z modelu se liší. Přejmenujte zdrojové soubory z těchto částí, takže budou soubory textových šablon (.tt). V tomto okamžiku zdrojové soubory .cs automaticky se vygeneruje z soubory šablon, aplikace bude fungovat jako předtím.  
+  Tato metoda je snadno použitelná postupně. Začněte s aplikaci, která se dá použít jenom pro konkrétní případ a zvolit několik částí, které chcete z modelu se liší. Přejmenujte zdrojové soubory z těchto částí, takže budou soubory textových šablon (.tt). V tomto okamžiku zdrojové soubory .cs automaticky se vygeneruje z soubory šablon, aplikace bude fungovat jako předtím.  
   
- Potom může trvat jednu část kódu a nahraďte výraz šablony textu, který čte model a generuje část zdrojového souboru. Nejméně jedna hodnota modelu by měl generovat původního zdroje, takže můžete znovu spustit aplikaci a bude fungovat jako předtím. Po otestování hodnoty jiný model, můžete přesunout vložit výrazy šablony do jiné části kódu.  
+  Potom může trvat jednu část kódu a nahraďte výraz šablony textu, který čte model a generuje část zdrojového souboru. Nejméně jedna hodnota modelu by měl generovat původního zdroje, takže můžete znovu spustit aplikaci a bude fungovat jako předtím. Po otestování hodnoty jiný model, můžete přesunout vložit výrazy šablony do jiné části kódu.  
   
- Tato metoda přírůstkové znamená, že generování kódu je obvykle přístup s nízkým rizikem. Výsledná aplikace obvykle provádět téměř stejně ručně psanou verze.  
+  Tato metoda přírůstkové znamená, že generování kódu je obvykle přístup s nízkým rizikem. Výsledná aplikace obvykle provádět téměř stejně ručně psanou verze.  
   
- Ale pokud byste začali s existující aplikaci, můžete zjistit, že velké množství refaktoring, je potřeba oddělit různé chování, které se řídí modelem tak, aby může být nejrůznější nezávisle na sobě. Doporučujeme posoudit tento aspekt aplikace při odhadnout náklady na váš projekt.  
+  Ale pokud byste začali s existující aplikaci, můžete zjistit, že velké množství refaktoring, je potřeba oddělit různé chování, které se řídí modelem tak, aby může být nejrůznější nezávisle na sobě. Doporučujeme posoudit tento aspekt aplikace při odhadnout náklady na váš projekt.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurace vaší aplikace z modelu  
  Pokud chcete definovat různé chování vaší aplikace v době běhu, nemůžete použít generování kódu, který generuje zdrojový kód, předtím, než bude uložena zkompilovaná aplikace. Místo toho můžete navrhnout vaše aplikace se má načíst model UML nebo DSL a odpovídajícím způsobem měnit své chování. Další informace naleznete v tématu:  
   
--   [Čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md)  
+- [Čtení modelu UML v programovém kódu](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- Tuto metodu lze použít také postupně, ale existuje více práce na začátku. Budete muset napsat kód, který bude načíst model a nastavit rozhraní, které umožňuje její hodnoty dostupná pro proměnné částí. Vytváření proměnných části Obecné je nákladnější než generování kódu.  
+  Tuto metodu lze použít také postupně, ale existuje více práce na začátku. Budete muset napsat kód, který bude načíst model a nastavit rozhraní, které umožňuje její hodnoty dostupná pro proměnné částí. Vytváření proměnných části Obecné je nákladnější než generování kódu.  
   
- Obecná aplikace obvykle provádí méně dobře než její konkrétní protějšky. Pokud je výkon velmi důležitý, by měl obsahovat svůj plán projektu posouzení rizika.  
+  Obecná aplikace obvykle provádí méně dobře než její konkrétní protějšky. Pokud je výkon velmi důležitý, by měl obsahovat svůj plán projektu posouzení rizika.  
   
 ## <a name="developing-a-derived-application"></a>Vývoj odvozené aplikace  
  Můžou být užitečné následující obecné pokyny.  

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872795"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu.
@@ -24,26 +24,26 @@ Můžete vytvořit nebo nakonfigurovat částí aplikace z modelu.
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generování kódu vaší aplikace z modelu
  Nejjednodušší způsob, jak generovat kód je pomocí textových šablon. Generování kódu ve stejném řešení sady Visual Studio, ve kterém můžete zachovat modelu. Další informace naleznete v tématu:
 
--   [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
--   [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)
+- [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)
 
- Tato metoda je snadno použitelná postupně. Začněte s aplikaci, která se dá použít jenom pro konkrétní případ a zvolit několik částí, které chcete z modelu se liší. Přejmenujte zdrojové soubory z těchto částí, takže budou soubory textových šablon (.tt). V tomto okamžiku zdrojové soubory .cs automaticky se vygeneruje z soubory šablon, aplikace bude fungovat jako předtím.
+  Tato metoda je snadno použitelná postupně. Začněte s aplikaci, která se dá použít jenom pro konkrétní případ a zvolit několik částí, které chcete z modelu se liší. Přejmenujte zdrojové soubory z těchto částí, takže budou soubory textových šablon (.tt). V tomto okamžiku zdrojové soubory .cs automaticky se vygeneruje z soubory šablon, aplikace bude fungovat jako předtím.
 
- Potom může trvat jednu část kódu a nahraďte výraz šablony textu, který čte model a generuje část zdrojového souboru. Nejméně jedna hodnota modelu by měl generovat původního zdroje, takže můžete znovu spustit aplikaci a bude fungovat jako předtím. Po otestování hodnoty jiný model, můžete přesunout vložit výrazy šablony do jiné části kódu.
+  Potom může trvat jednu část kódu a nahraďte výraz šablony textu, který čte model a generuje část zdrojového souboru. Nejméně jedna hodnota modelu by měl generovat původního zdroje, takže můžete znovu spustit aplikaci a bude fungovat jako předtím. Po otestování hodnoty jiný model, můžete přesunout vložit výrazy šablony do jiné části kódu.
 
- Tato metoda přírůstkové znamená, že generování kódu je obvykle přístup s nízkým rizikem. Výsledná aplikace obvykle provádět téměř stejně ručně psanou verze.
+  Tato metoda přírůstkové znamená, že generování kódu je obvykle přístup s nízkým rizikem. Výsledná aplikace obvykle provádět téměř stejně ručně psanou verze.
 
- Ale pokud byste začali s existující aplikaci, můžete zjistit, že velké množství refaktoring, je potřeba oddělit různé chování, které se řídí modelem tak, aby může být nejrůznější nezávisle na sobě. Doporučujeme posoudit tento aspekt aplikace při odhadnout náklady na váš projekt.
+  Ale pokud byste začali s existující aplikaci, můžete zjistit, že velké množství refaktoring, je potřeba oddělit různé chování, které se řídí modelem tak, aby může být nejrůznější nezávisle na sobě. Doporučujeme posoudit tento aspekt aplikace při odhadnout náklady na váš projekt.
 
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurace vaší aplikace z modelu
  Pokud chcete definovat různé chování vaší aplikace v době běhu, nemůžete použít generování kódu, který generuje zdrojový kód, předtím, než bude uložena zkompilovaná aplikace. Místo toho můžete navrhnout vaše aplikace se má načíst model a odpovídajícím způsobem měnit své chování. Další informace naleznete v tématu:
 
--   [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
- Tuto metodu lze použít také postupně, ale existuje více práce na začátku. Budete muset napsat kód, který bude načíst model a nastavit rozhraní, které umožňuje její hodnoty dostupná pro proměnné částí. Vytváření proměnných části Obecné je nákladnější než generování kódu.
+  Tuto metodu lze použít také postupně, ale existuje více práce na začátku. Budete muset napsat kód, který bude načíst model a nastavit rozhraní, které umožňuje její hodnoty dostupná pro proměnné částí. Vytváření proměnných části Obecné je nákladnější než generování kódu.
 
- Obecná aplikace obvykle provádí méně dobře než její konkrétní protějšky. Pokud je výkon velmi důležitý, by měl obsahovat svůj plán projektu posouzení rizika.
+  Obecná aplikace obvykle provádí méně dobře než její konkrétní protějšky. Pokud je výkon velmi důležitý, by měl obsahovat svůj plán projektu posouzení rizika.
 
 ## <a name="developing-a-derived-application"></a>Vývoj odvozené aplikace
  Můžou být užitečné následující obecné pokyny.

@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894440"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Postupy: vytvoření Atom pro privátní galerii
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Můžete vytvořit kanál Atom (RSS) do umístění v intranetu, která obsahuje
 ## <a name="creating-an-atom-feed"></a>Vytváření Atom informačního kanálu  
  Vytvořit jako soukromou galerii informačního kanálu Atom, nejdřív shromážděte rozšíření (soubory VSIX) do složky. Můžete je uspořádat do podsložky potřebujete. Budete také potřebovat následující prostředky:  
   
--   Soubor atom.xml díky rozšíření k dispozici jako privátní galerie. Informace o tom, jak připojit soubor atom.xml **rozšíření a aktualizace**, naleznete v tématu [privátní Galerie](../extensibility/private-galleries.md).  
+- Soubor atom.xml díky rozšíření k dispozici jako privátní galerie. Informace o tom, jak připojit soubor atom.xml **rozšíření a aktualizace**, naleznete v tématu [privátní Galerie](../extensibility/private-galleries.md).  
   
--   Složka, která obsahuje všechny soubory obrázků, které se extrahují z rozšíření (například snímky obrazovky). Soubor atom.xml obsahuje relativní odkazy na tyto Image tak, aby byly k dispozici v **rozšíření a aktualizace**.  
+- Složka, která obsahuje všechny soubory obrázků, které se extrahují z rozšíření (například snímky obrazovky). Soubor atom.xml obsahuje relativní odkazy na tyto Image tak, aby byly k dispozici v **rozšíření a aktualizace**.  
   
- Předpokládejme například, že jste shromáždili následující dvě rozšíření do složky:  
+  Předpokládejme například, že jste shromáždili následující dvě rozšíření do složky:  
   
--   Template_Wizard_239.VSIX, což je prázdná šablona projektu VSIX.  
+- Template_Wizard_239.VSIX, což je prázdná šablona projektu VSIX.  
   
--   SelectionHighlight.vsix, což je nástroj, zvýrazněte všechny instance vybrané aplikace Word.  
+- SelectionHighlight.vsix, což je nástroj, zvýrazněte všechny instance vybrané aplikace Word.  
   
- Obsah souboru atom.xml by vypadat podobně jako v následujícím příkladu:  
+  Obsah souboru atom.xml by vypadat podobně jako v následujícím příkladu:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

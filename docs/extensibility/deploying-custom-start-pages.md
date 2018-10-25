@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926459"
 ---
 # <a name="deploy-custom-start-pages"></a>Nasazení vlastní úvodní stránky
 
@@ -42,17 +42,17 @@ Při vytváření úvodní stránku pomocí šablony projektu úvodní stránky 
 
  K vytvoření VSIX nasazení bez použití šablony projektu úvodní stránku, nejprve vytvořte *VSIX* soubor úvodní stránky v některém z těchto způsobů:
 
--   Přidáním vlastní úvodní stránku soubory do prázdný projekt VSIX. Další informace najdete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).
+- Přidáním vlastní úvodní stránku soubory do prázdný projekt VSIX. Další informace najdete v tématu [šablonou projektu VSIX](../extensibility/vsix-project-template.md).
 
--   Tím, že ručně vytvoříte *VSIX* souboru. Chcete-li vytvořit *VSIX* soubor ručně:
+- Tím, že ručně vytvoříte *VSIX* souboru. Chcete-li vytvořit *VSIX* soubor ručně:
 
-    1.  Vytvořte *extension.vsixmanifest* souboru a *[Content_Types] .xml* souboru do nové složky. Další informace najdete v tématu [anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+  1.  Vytvořte *extension.vsixmanifest* souboru a *[Content_Types] .xml* souboru do nové složky. Další informace najdete v tématu [anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  V Průzkumníku Windows, klikněte pravým tlačítkem na složku, která obsahuje příslušné dva soubory XML, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko komprimovanou složku (metoda ZIP). Přejmenovat výsledný *ZIP* do souboru *Filename.vsix*, kde název_souboru je název redistribuovatelného souboru, který nainstaluje balíček.
+  2.  V Průzkumníku Windows, klikněte pravým tlačítkem na složku, která obsahuje příslušné dva soubory XML, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko komprimovanou složku (metoda ZIP). Přejmenovat výsledný *ZIP* do souboru *Filename.vsix*, kde název_souboru je název redistribuovatelného souboru, který nainstaluje balíček.
 
- Pro Visual Studio k rozpoznání úvodní stránku `Content Element` musí obsahovat manifestu VSIX `CustomExtension Element` , který má `Type` atribut nastaven na `"StartPage"`. Úvodní stránka rozšíření, nainstalované prostřednictvím VSIX nasazení se zobrazí v **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti stránce jako **[nainstalované rozšíření]** *Název rozšíření*.
+  Pro Visual Studio k rozpoznání úvodní stránku `Content Element` musí obsahovat manifestu VSIX `CustomExtension Element` , který má `Type` atribut nastaven na `"StartPage"`. Úvodní stránka rozšíření, nainstalované prostřednictvím VSIX nasazení se zobrazí v **přizpůsobit úvodní stránku** seznamu **spuštění** možnosti stránce jako **[nainstalované rozšíření]** *Název rozšíření*.
 
- Pokud váš balíček úvodní stránka obsahuje sestavení, je nutné přidat vazbu cesta k registraci tak, aby při spuštění sady Visual Studio jsou k dispozici. Provedete to tak, ujistěte se, že obsahuje balíček *.pkgdef* soubor, který obsahuje následující informace.
+  Pokud váš balíček úvodní stránka obsahuje sestavení, je nutné přidat vazbu cesta k registraci tak, aby při spuštění sady Visual Studio jsou k dispozici. Provedete to tak, ujistěte se, že obsahuje balíček *.pkgdef* soubor, který obsahuje následující informace.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ Při vytváření úvodní stránku pomocí šablony projektu úvodní stránky 
      Znamená to Visual Studio a podívejte se na nové umístění úvodní stránku.
 
 ## <a name="file-copy-deployment"></a>Nasazení kopírování souborů
- Není nutné vytvářet *VSIX* uvést pro nasazení vlastní úvodní stránky. Místo toho můžete zkopírovat kód a podpůrné soubory přímo do daného uživatele * \StartPages\* složky. **Přizpůsobit úvodní stránku** seznamu **spuštění** možnosti stránce seznamy každý *.xaml* soubor v této složce, společně s cestu – například *% USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{název souboru} .xaml*. Pokud vaše úvodní stránka obsahuje odkazy na soukromá sestavení, musí je zkopírujte a vložte je do * \PrivateAssemblies\* složky.
+ Není nutné vytvářet *VSIX* uvést pro nasazení vlastní úvodní stránky. Místo toho můžete zkopírovat kód a podpůrné soubory přímo do daného uživatele <em>\StartPages\* složky. **Přizpůsobit úvodní stránku</em>*  seznamu **spuštění** možnosti stránce seznamy každý *.xaml* soubor v této složce, společně s cestu – například *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{název souboru} .xaml*. Pokud vaše úvodní stránka obsahuje odkazy na soukromá sestavení, musí je zkopírujte a vložte je do * \PrivateAssemblies\* složky.
 
  Pro úvodní stránku, kterou jste vytvořili bez balení v distribuci *VSIX* souborů, doporučujeme použít základní soubor strategie kopírování, například dávkový skript, nebo jiná nasazení technologie, která vám umožní soubory umístit do požadované adresáře.
 

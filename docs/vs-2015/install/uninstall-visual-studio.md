@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25fbfec12299cecf265437baa04a3dd86093f30b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ec83128682a874a5491d62762b424045f11c4b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849850"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Tato stránka vás provede odinstalací sady Visual Studio 2015, starší verzi 
 ##  <a name="uninstalling"></a>   
 #### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Odinstalace sady Visual Studio pomocí metody "standard" odinstalace  
   
-1.  V **ovládací panely**na **programy a funkce** zvolte edici produktu, kterou chcete odinstalovat a pak zvolte **změnu**.  
+1. V **ovládací panely**na **programy a funkce** zvolte edici produktu, kterou chcete odinstalovat a pak zvolte **změnu**.  
   
-2.  V Průvodci instalací zvolte **odinstalovat**, zvolte **Ano**a pak postupujte podle pokynů v průvodci.  
+2. V Průvodci instalací zvolte **odinstalovat**, zvolte **Ano**a pak postupujte podle pokynů v průvodci.  
   
- Tento standard nebo výchozí, způsob zachová některé položky, které se při první instalaci sady Visual Studio původně nainstalovaná (třeba Microsoft .NET Framework, Microsoft distribuovatelné součásti Visual C++, Microsoft SQL Server atd.).   Tyto položky zůstávají nainstalované, protože na nich závisí řada dalších aplikací. Ale pokud byste chtěli moc je odebrat, vyberte jejich položky na **programy a funkce**a pak je postupně odeberte.  
+   Tento standard nebo výchozí, způsob zachová některé položky, které se při první instalaci sady Visual Studio původně nainstalovaná (třeba Microsoft .NET Framework, Microsoft distribuovatelné součásti Visual C++, Microsoft SQL Server atd.).   Tyto položky zůstávají nainstalované, protože na nich závisí řada dalších aplikací. Ale pokud byste chtěli moc je odebrat, vyberte jejich položky na **programy a funkce**a pak je postupně odeberte.  
   
 #### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Odinstalace sady Visual Studio a všech dalších souvisejících souborů (to znamená, že odinstalace téměř všeho)  
   
@@ -66,18 +66,18 @@ Tato stránka vás provede odinstalací sady Visual Studio 2015, starší verzi 
   
 #### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Chcete-li vrátit předchozí verzi nebo verzi aplikace Visual Studio  
   
-1.  Odinstalace sady Visual Studio pomocí některé z metod uvedených v tomto tématu.  
+1. Odinstalace sady Visual Studio pomocí některé z metod uvedených v tomto tématu.  
   
-    > [!WARNING]
-    >  Odinstalace aktuální vydané verze sady Visual Studio (nebo aktualizace sady Visual Studio) a potom instalaci předchozí verze nemusí fungovat podle očekávání.  
-    >   
-    >  Výsledek závisí na tom, kterou verzi nebo verzi sady Visual Studio nainstalujete, které verze komponent jsou nainstalované, které nainstalované produkty můžou mít závislosti buď verzi nástroje Visual Studio nebo její součásti a nakonec na jaké dřívější verze sady Visual Studio, které chcete nainstalovat nebo přeinstalovat.  Kvůli všem těmto proměnným standardní odinstalace bude často zachová komponenty, které nemusí fungovat s předchozími verzemi sady Visual Studio nebo verzí.  
-    >   
-    >  Proto pro dosažení nejlepších výsledků doporučujeme použít [nástroje Visual Studio Uninstaller](https://github.com/Microsoft/VisualStudioUninstaller/releases).  
+   > [!WARNING]
+   >  Odinstalace aktuální vydané verze sady Visual Studio (nebo aktualizace sady Visual Studio) a potom instalaci předchozí verze nemusí fungovat podle očekávání.  
+   >   
+   >  Výsledek závisí na tom, kterou verzi nebo verzi sady Visual Studio nainstalujete, které verze komponent jsou nainstalované, které nainstalované produkty můžou mít závislosti buď verzi nástroje Visual Studio nebo její součásti a nakonec na jaké dřívější verze sady Visual Studio, které chcete nainstalovat nebo přeinstalovat.  Kvůli všem těmto proměnným standardní odinstalace bude často zachová komponenty, které nemusí fungovat s předchozími verzemi sady Visual Studio nebo verzí.  
+   >   
+   >  Proto pro dosažení nejlepších výsledků doporučujeme použít [nástroje Visual Studio Uninstaller](https://github.com/Microsoft/VisualStudioUninstaller/releases).  
   
-2.  Nainstalujte nebo přeinstalujte předchozí verzi sady Visual Studio, kterou chcete použít.  
+2. Nainstalujte nebo přeinstalujte předchozí verzi sady Visual Studio, kterou chcete použít.  
   
- I v případě, že můžete nainstalovat předchozí verzi sady Visual Studio, instalační program může přesto pokusit použít novější verzi nebo pokud je k dispozici. Podrobnější informace najdete v článku [postupy: instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tématu.  
+   I v případě, že můžete nainstalovat předchozí verzi sady Visual Studio, instalační program může přesto pokusit použít novější verzi nebo pokud je k dispozici. Podrobnější informace najdete v článku [postupy: instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tématu.  
   
 ## <a name="see-also"></a>Viz také  
  [Instalace sady Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

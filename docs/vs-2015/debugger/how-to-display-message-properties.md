@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a58396756456d025f978ca101076c921d4d2772
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 948edbfbef7d3de0ace7c6e33e88d63dadc4dee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897444"
 ---
 # <a name="how-to-display-message-properties"></a>Postupy: Zobrazení vlastností zpráv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Další informace o zprávě uvedené v [zobrazení zpráv](../debugger/messages
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>Chcete-li otevřít dialogové okno vlastností zpráv  
   
-1.  Vyberte zprávu ze stromu se zobrazí v zobrazení zpráv.  
+1. Vyberte zprávu ze stromu se zobrazí v zobrazení zpráv.  
   
-2.  Z **zobrazení** nabídce zvolte **vlastnosti**.  
+2. Z **zobrazení** nabídce zvolte **vlastnosti**.  
   
- Dialogová okna vlastnosti nejsou modální, takže můžete kliknout na jiné položce v zobrazení oken a dialogových oken se zobrazí informace na vybranou položku.
+   Dialogová okna vlastnosti nejsou modální, takže můžete kliknout na jiné položce v zobrazení oken a dialogových oken se zobrazí informace na vybranou položku.
 
 
 

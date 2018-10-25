@@ -13,12 +13,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850656"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio a Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Xamarin je platforma pro vývoj mobilních aplikací pro vytváření nativních
   
  Tato dokumentace vám pomůže vyhodnotit všechny možnosti služby **Visual Studio s Xamarinem** k vytváření těchto možností.  
   
--   Začněte s [nastavení a instalaci](../cross-platform/setup-and-install.md), proces, který bude trvat delší dobu (obvykle 2 – 4 hodin v závislosti na rychlosti připojení k Internetu, co jste již nainstalovali a možností, které zvolíte).  
+- Začněte s [nastavení a instalaci](../cross-platform/setup-and-install.md), proces, který bude trvat delší dobu (obvykle 2 – 4 hodin v závislosti na rychlosti připojení k Internetu, co jste již nainstalovali a možností, které zvolíte).  
   
--   Zatímco instalační programy jsou spuštěny, je možné [přečtěte si víc o vývoj mobilních řešení s využitím kódu Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) které zjistíte informace o povaze Xamarin, porovnat Xamarin.Forms k nativním uživatelským rozhraním a další.  
+- Zatímco instalační programy jsou spuštěny, je možné [přečtěte si víc o vývoj mobilních řešení s využitím kódu Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) které zjistíte informace o povaze Xamarin, porovnat Xamarin.Forms k nativním uživatelským rozhraním a další.  
   
--   Až se instalace dokončí, [ověření prostředí Xamarinu](../cross-platform/verify-your-xamarin-environment.md).  
+- Až se instalace dokončí, [ověření prostředí Xamarinu](../cross-platform/verify-your-xamarin-environment.md).  
   
--   Dokončit tak, že přejdete v průběhu kurzu [základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
+- Dokončit tak, že přejdete v průběhu kurzu [základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
   
- Můžete pracovat se všemi funkcemi Xamarin prostřednictvím [libovolná edice sady Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional a Enterprise). Všimněte si také, že od 31. března 2016 Xamarin je součástí všech edic sady Visual Studio 2015 a už vyžaduje samostatnou licenci. Visual Studio 2013, můžete nainstalovat Xamarin samostatně, jako [nastavení a instalaci](../cross-platform/setup-and-install.md) téma popisuje.  
+  Můžete pracovat se všemi funkcemi Xamarin prostřednictvím [libovolná edice sady Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional a Enterprise). Všimněte si také, že od 31. března 2016 Xamarin je součástí všech edic sady Visual Studio 2015 a už vyžaduje samostatnou licenci. Visual Studio 2013, můžete nainstalovat Xamarin samostatně, jako [nastavení a instalaci](../cross-platform/setup-and-install.md) téma popisuje.  
   
 > [!NOTE]
 >  Tyto pokyny popisují konfiguraci počítače nejjednodušší a nejjednodušší pro ty, které mají Windows a Visual Studio na pozadí. S touto konfigurací celkové prostředí vývoje je jednodušší, protože je potřeba jenom komunikovat s počítači Mac použít simulátor iOS a připojené zařízení. Pokud místo toho pocházet z Mac na pozadí, doporučujeme, abyste spuštění sady Visual Studio uvnitř Parallels VMWare nebo pomocí Xamarin Studio Community. Odkazovat na [instalační program, instalace a ověření pro uživatele počítačů Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) pokyny.  

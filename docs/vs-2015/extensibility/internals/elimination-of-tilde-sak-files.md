@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824305"
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění souborů ~SAK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Zdrojový ovládací prvek modulu Plug-in API 1.2 ~ SAK soubory byly nahrazeny p
 ## <a name="sak-files"></a>~ Souborů SAK  
  Visual Studio .NET 2003 vytvoření dočasných souborů s předponou ~ SAK. Tyto soubory se používají k určení, jestli podporuje modul plug-in správy zdrojového kódu:  
   
--   MSSCCPRJ. SCC souboru.  
+- MSSCCPRJ. SCC souboru.  
   
--   Více (sdílené) rezervace.  
+- Více (sdílené) rezervace.  
   
- Pro moduly plug-in, které podporují pokročilé funkce, které jsou k dispozici v rozhraní API 1.2 zdrojový ovládací prvek modulu Plug-in rozhraní IDE dokáže tyto možnosti bez vytvoření dočasných souborů pomocí nové možnosti, příznaky a funkce, které jsou podrobně popsané v následujících částech.  
+  Pro moduly plug-in, které podporují pokročilé funkce, které jsou k dispozici v rozhraní API 1.2 zdrojový ovládací prvek modulu Plug-in rozhraní IDE dokáže tyto možnosti bez vytvoření dočasných souborů pomocí nové možnosti, příznaky a funkce, které jsou podrobně popsané v následujících částech.  
   
 ## <a name="new-capability-flags"></a>Nové příznaky funkcí  
  `SCC_CAP_SCCFILE`  

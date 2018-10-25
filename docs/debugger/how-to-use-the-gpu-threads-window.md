@@ -20,37 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825335"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Postupy: Použití okna vláken GPU
 V okně vlákna GPU můžete prozkoumat a práce s vlákny, která běží na grafickém procesoru v aplikaci, kterou ladíte. Další informace o aplikacích, které běží na GPU, naleznete v tématu [přehled modelu C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  Okna vláken GPU obsahuje tabulku, ve kterém každý řádek představuje sadu vlákna GPU, které mají stejné hodnoty ve všech sloupců. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete označit příznakem, odznačit, ukotvit (Pozastavit) a uvolnit vlákna (pokračovat) z okna vláken GPU. Tyto sloupce se zobrazí v okně vlákna GPU:  
   
--   Sloupec příznaku, ve kterém můžete označit vlákno, kterému chcete věnovat zvláštní pozornost.  
+- Sloupec příznaku, ve kterém můžete označit vlákno, kterému chcete věnovat zvláštní pozornost.  
   
--   Aktuální vlákno sloupec, ve kterém žlutá šipka označuje aktuální vlákno.  
+- Aktuální vlákno sloupec, ve kterém žlutá šipka označuje aktuální vlákno.  
   
--   **Počet vláken** sloupec, který zobrazuje počet vláken ve stejném umístění.  
+- **Počet vláken** sloupec, který zobrazuje počet vláken ve stejném umístění.  
   
--   **Řádku** sloupec, který zobrazuje řádek kódu, kde je každá skupina vlákna umístěna.  
+- **Řádku** sloupec, který zobrazuje řádek kódu, kde je každá skupina vlákna umístěna.  
   
--   **Adresu** sloupec, který zobrazuje adresu instrukce, kde je každá skupina vlákna umístěna. Ve výchozím nastavení je tento sloupec skrytý.  
+- **Adresu** sloupec, který zobrazuje adresu instrukce, kde je každá skupina vlákna umístěna. Ve výchozím nastavení je tento sloupec skrytý.  
   
--   **Umístění** sloupec, který je umístěním ve zdrojovém kódu.  
+- **Umístění** sloupec, který je umístěním ve zdrojovém kódu.  
   
--   **Stav** sloupec, který ukazuje, zda vlákno je aktivní, zablokování, není spuštěné nebo dokončení.  
+- **Stav** sloupec, který ukazuje, zda vlákno je aktivní, zablokování, není spuštěné nebo dokončení.  
   
--   **Dlaždici** sloupec, který zobrazuje indexu dlaždice pro podprocesy v řádku.  
+- **Dlaždici** sloupec, který zobrazuje indexu dlaždice pro podprocesy v řádku.  
   
- Záhlaví tabulky zobrazí pole a vlákno se zobrazí.  
+  Záhlaví tabulky zobrazí pole a vlákno se zobrazí.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Chcete-li zobrazit okna vláken GPU  
   

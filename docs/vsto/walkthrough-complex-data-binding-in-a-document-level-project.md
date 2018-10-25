@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841881"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Návod: Rozšířené datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o rozšířené datové vazby v projektech na úrovni dokumentu. Více buněk v listu aplikace Microsoft Office Excel můžete vázat na pole v databázi Northwind SQL serveru.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781667"
   
  Tento návod znázorňuje následující úlohy:  
   
--   Přidání zdroje dat do sešitu projektu.  
+- Přidání zdroje dat do sešitu projektu.  
   
--   Přidání ovládacích prvků vázaných na data na listu.  
+- Přidání ovládacích prvků vázaných na data na listu.  
   
--   Ukládají se změny dat zpět do databáze.  
+- Ukládají se změny dat zpět do databáze.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
@@ -67,25 +67,25 @@ ms.locfileid: "38781667"
   
 ### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
+1. Pokud **zdroje dat** okno se nezobrazuje, zobrazit ho tím, na panelu nabídek, výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**.  
   
-2.  Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
+2. Zvolte **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Vyberte **databáze** a potom klikněte na tlačítko **Další**.  
+3. Vyberte **databáze** a potom klikněte na tlačítko **Další**.  
   
-4.  Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
+4. Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
   
-5.  Po připojení se vyberete nebo vytvoříte, klikněte na tlačítko **Další**.  
+5. Po připojení se vyberete nebo vytvoříte, klikněte na tlačítko **Další**.  
   
-6.  Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
+6. Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
   
-7.  Rozbalte **tabulky** uzlu **databázové objekty** okna.  
+7. Rozbalte **tabulky** uzlu **databázové objekty** okna.  
   
-8.  Zaškrtněte políčko vedle položky **zaměstnanci** tabulky.  
+8. Zaškrtněte políčko vedle položky **zaměstnanci** tabulky.  
   
 9. Klikněte na tlačítko **Dokončit**.  
   
- Průvodce přidá **zaměstnanci** tabulky **zdroje dat** okna. Také přidá typové datové sady do projektu, který se zobrazuje **Průzkumníka řešení**.  
+   Průvodce přidá **zaměstnanci** tabulky **zdroje dat** okna. Také přidá typové datové sady do projektu, který se zobrazuje **Průzkumníka řešení**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Přidání ovládacích prvků na list  
  Na listu se zobrazí **zaměstnanci** tabulky při otevření sešitu. Uživatelé budou moci měnit data a pak klepnutím na tlačítko Uložit tyto změny zpět do databáze.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781667"
   
 ### <a name="to-add-a-button"></a>Přidání tlačítka  
   
-1.  Z **běžné ovládací prvky** karty **nástrojů**, přidat <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **A4** listu.  
+1. Z **běžné ovládací prvky** karty **nástrojů**, přidat <xref:System.Windows.Forms.Button> ovládacího prvku do buňky **A4** listu.  
   
- Dalším krokem je přidání textu k tlačítku po otevření sešitu.  
+   Dalším krokem je přidání textu k tlačítku po otevření sešitu.  
   
 ## <a name="initialize-the-control"></a>Inicializovat ovládací prvek  
  Přidejte text pro tlačítko v <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> obslužné rutiny události.  
   
 ### <a name="to-initialize-the-control"></a>Chcete-li inicializovat ovládací prvek  
   
-1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Sheet1.vb** nebo **Sheet1.cs**a potom klikněte na tlačítko **zobrazit kód** v místní nabídce.  
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na **Sheet1.vb** nebo **Sheet1.cs**a potom klikněte na tlačítko **zobrazit kód** v místní nabídce.  
   
-2.  Přidejte následující kód, který `Sheet1_Startup` metodu a nastavit text pro b tak`utton`.  
+2. Přidejte následující kód, který `Sheet1_Startup` metodu a nastavit text pro b tak`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Jenom v C#, přidejte obslužnou rutinu události pro <xref:System.Windows.Forms.Control.Click> událost, abyste `Sheet1_Startup` metody.  
+3. Jenom v C#, přidejte obslužnou rutinu události pro <xref:System.Windows.Forms.Control.Click> událost, abyste `Sheet1_Startup` metody.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Teď přidejte kód pro zpracování <xref:System.Windows.Forms.Control.Click> událost tlačítka.  
+   Teď přidejte kód pro zpracování <xref:System.Windows.Forms.Control.Click> událost tlačítka.  
   
 ## <a name="save-changes-to-the-database"></a>Uložte změny do databáze  
  Všechny změny se provedly pro data existují pouze v místní datové sady, dokud jsou explicitně uložena zpět do databáze.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781667"
   
 ### <a name="to-add-new-rows"></a>Chcete-li přidat nové řádky  
   
-1.  Zvolte buňky uvnitř seznamu objektů.  
+1. Zvolte buňky uvnitř seznamu objektů.  
   
-     Zobrazí se nový řádek v dolní části seznamu s hvězdičkou (**\***) do první buňky nový řádek.  
+    Zobrazí se nový řádek v dolní části seznamu s hvězdičkou (**\\***) do první buňky nový řádek.  
   
-2.  V prázdném řádku, přidejte následující informace.  
+2. V prázdném řádku, přidejte následující informace.  
   
-    |EmployeeID|Příjmení|Jméno|Název|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Šmídová|Šu|Prodejní manažer|  
+   |EmployeeID|Příjmení|Jméno|Název|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Šmídová|Šu|Prodejní manažer|  
   
 ### <a name="to-delete-rows"></a>Chcete-li odstranit řádky  
   

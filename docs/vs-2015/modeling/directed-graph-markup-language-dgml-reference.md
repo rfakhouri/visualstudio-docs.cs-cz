@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a09bf3bc22ce74dc316c75b877231bbc3222655c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886263"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,278 +32,278 @@ Orientovaný jazyka přímého značení grafů (DGML) popisuje informace, kter�
 ##  <a name="DGML"></a> Syntaxe jazyka DGML  
  Následující tabulka popisuje typy prvků, které se používají v jazyce DGML:  
   
--   `<DirectedGraph></DirectedGraph>`  
+- `<DirectedGraph></DirectedGraph>`  
   
-     Tento prvek je kořenovým prvkem dokumentu mapy (.dgml) kód. V rámci tohoto prvku jsou všechny ostatní prvky jazyka DGML.  
+   Tento prvek je kořenovým prvkem dokumentu mapy (.dgml) kód. V rámci tohoto prvku jsou všechny ostatní prvky jazyka DGML.  
   
-     Následující seznam popisuje volitelné atributy, které lze vložit:  
+   Následující seznam popisuje volitelné atributy, které lze vložit:  
   
-     `Background` – Barva pozadí s mapou  
+   `Background` – Barva pozadí s mapou  
   
-     `BackgroundImage` -Umístění soubor obrázku, který se použije jako pozadí s mapou.  
+   `BackgroundImage` -Umístění soubor obrázku, který se použije jako pozadí s mapou.  
   
-     `GraphDirection` – Když je na mapě nastaven na stromové rozložení (`Sugiyama`), uspořádá uzly tak, aby většina propojení tok v zadaném směru: `TopToBottom`, `BottomToTop`, `LeftToRight`, nebo `RightToLeft`. Zobrazit [změnit rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+   `GraphDirection` – Když je na mapě nastaven na stromové rozložení (`Sugiyama`), uspořádá uzly tak, aby většina propojení tok v zadaném směru: `TopToBottom`, `BottomToTop`, `LeftToRight`, nebo `RightToLeft`. Zobrazit [změnit rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `Layout` – Nastavte mapování na následující rozložení: `None`, `Sugiyama` (stromové rozložení), `ForceDirected` (rychlé clustery), nebo `DependencyMatrix`. Zobrazit [změnit rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+   `Layout` – Nastavte mapování na následující rozložení: `None`, `Sugiyama` (stromové rozložení), `ForceDirected` (rychlé clustery), nebo `DependencyMatrix`. Zobrazit [změnit rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `NeighborhoodDistance` – Když na mapě nastaven na stromové rozložení nebo rychlé clustery, zobrazit pouze ty uzly, které mají zadaný počet (1-7) propojení z vybraných uzlů. Zobrazit [změnit rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+   `NeighborhoodDistance` – Když na mapě nastaven na stromové rozložení nebo rychlé clustery, zobrazit pouze ty uzly, které mají zadaný počet (1-7) propojení z vybraných uzlů. Zobrazit [změnit rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" Background="Blue" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          ...  
-       </Nodes>  
-       <Links>  
-          ...  
-       </Links>  
-       <Categories>  
-          ...  
-       </Categories>  
-       <Properties>  
-          ...  
-       </Properties>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" Background="Blue" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        ...  
+     </Nodes>  
+     <Links>  
+        ...  
+     </Links>  
+     <Categories>  
+        ...  
+     </Categories>  
+     <Properties>  
+        ...  
+     </Properties>  
+  </DirectedGraph>  
+  ```  
   
--   `<Nodes></Nodes>`  
+- `<Nodes></Nodes>`  
   
-     Tento volitelný prvek obsahuje seznam `<Node/>` prvky, které definují uzly na mapě. Další informace najdete v tématu `<Node/>` elementu.  
+   Tento volitelný prvek obsahuje seznam `<Node/>` prvky, které definují uzly na mapě. Další informace najdete v tématu `<Node/>` elementu.  
   
-    > [!NOTE]
-    >  Při odkazování nedefinovaného uzlu v `<Link/>` vytvoří element, mapy `<Node/>` element automaticky.  
+  > [!NOTE]
+  >  Při odkazování nedefinovaného uzlu v `<Link/>` vytvoří element, mapy `<Node/>` element automaticky.  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node ... />  
-       </Nodes>  
-       <Links>  
-          <Link ... />  
-       </Links>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node ... />  
+     </Nodes>  
+     <Links>  
+        <Link ... />  
+     </Links>  
+  </DirectedGraph>  
+  ```  
   
--   `<Node/>`  
+- `<Node/>`  
   
-     Tento prvek definuje jeden uzel. Zobrazí se v rámci `<Nodes><Nodes/>` element seznamu.  
+   Tento prvek definuje jeden uzel. Zobrazí se v rámci `<Nodes><Nodes/>` element seznamu.  
   
-     Tento prvek musí obsahovat následující atributy:  
+   Tento prvek musí obsahovat následující atributy:  
   
-     `Id` – Jedinečný název uzlu a výchozí hodnota `Label` atribut, pokud žádný samostatný `Label` je zadán atribut. Tento název musí odpovídat `Source` nebo `Target` atribut odkazu, který na ni odkazuje.  
+   `Id` – Jedinečný název uzlu a výchozí hodnota `Label` atribut, pokud žádný samostatný `Label` je zadán atribut. Tento název musí odpovídat `Source` nebo `Target` atribut odkazu, který na ni odkazuje.  
   
-     Následující seznam popisuje některé volitelné atributy, které lze vložit:  
+   Následující seznam popisuje některé volitelné atributy, které lze vložit:  
   
-     `Label` – Na zobrazovaný název uzlu.  
+   `Label` – Na zobrazovaný název uzlu.  
   
-     Atributy stylu. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+   Atributy stylu. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category` – Název kategorie, který identifikuje prvky sdílející tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
+   `Category` – Název kategorie, který identifikuje prvky sdílející tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
   
-     `Property` – Název vlastnosti identifikující prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
+   `Property` – Název vlastnosti identifikující prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
   
-     `Group` – Pokud uzel obsahuje další uzly, nastavte tento atribut `Expanded` nebo `Collapsed` zobrazení nebo skrytí jejich obsahu. Musí existovat `<Link/>` element, který zahrnuje `Category="Contains"` atribut a specifikuje nadřazený uzel jako zdrojový uzel a podřízený uzel jako cílový uzel. Zobrazit [seskupit elementy kódu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
+   `Group` – Pokud uzel obsahuje další uzly, nastavte tento atribut `Expanded` nebo `Collapsed` zobrazení nebo skrytí jejich obsahu. Musí existovat `<Link/>` element, který zahrnuje `Category="Contains"` atribut a specifikuje nadřazený uzel jako zdrojový uzel a podřízený uzel jako cílový uzel. Zobrazit [seskupit elementy kódu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
   
-     `Visibility` – Nastavte tento atribut na `Visible`, `Hidden`, nebo `Collapsed`. Používá `System.Windows.Visibility`. Zobrazit [skrýt nebo zobrazit uzlům a propojením](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
+   `Visibility` – Nastavte tento atribut na `Visible`, `Hidden`, nebo `Collapsed`. Používá `System.Windows.Visibility`. Zobrazit [skrýt nebo zobrazit uzlům a propojením](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
   
-     `Reference` – Nastavte tento atribut na připojení k dokumentu nebo adrese URL. Zobrazit [propojit dokumenty nebo adresy URL s prvky kódu a odkazy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
+   `Reference` – Nastavte tento atribut na připojení k dokumentu nebo adrese URL. Zobrazit [propojit dokumenty nebo adresy URL s prvky kódu a odkazy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Student" Category="Person" />  
-          <Node Id="Passenger" Label="Instructor" Category="Person" />  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-       </Nodes>  
-       <Links>  
-          <Link ... />  
-       </Links>  
-       <Categories>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-       </Categories>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Student" Category="Person" />  
+        <Node Id="Passenger" Label="Instructor" Category="Person" />  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+     </Nodes>  
+     <Links>  
+        <Link ... />  
+     </Links>  
+     <Categories>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+     </Categories>  
+  </DirectedGraph>  
+  ```  
   
--   `<Links></Links>`  
+- `<Links></Links>`  
   
-     Tento prvek obsahuje seznam `<Link>` prvky, které definují propojení mezi uzly. Další informace najdete v tématu `<Link/>` elementu.  
+   Tento prvek obsahuje seznam `<Link>` prvky, které definují propojení mezi uzly. Další informace najdete v tématu `<Link/>` elementu.  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Links>  
-          <Link ... />  
-       </Links>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Links>  
+        <Link ... />  
+     </Links>  
+  </DirectedGraph>  
+  ```  
   
--   `<Link/>`  
+- `<Link/>`  
   
-     Tento prvek definuje jedno propojení, které připojuje zdrojový uzel k cílovému uzlu. Zobrazí se v rámci `<Links></Links>` element seznamu.  
+   Tento prvek definuje jedno propojení, které připojuje zdrojový uzel k cílovému uzlu. Zobrazí se v rámci `<Links></Links>` element seznamu.  
   
-    > [!NOTE]
-    >  Pokud tento prvek odkazuje na nedefinovaný uzel, mapy dokumentu automaticky vytvoří uzel, který má zadané atributy, pokud existuje.  
+  > [!NOTE]
+  >  Pokud tento prvek odkazuje na nedefinovaný uzel, mapy dokumentu automaticky vytvoří uzel, který má zadané atributy, pokud existuje.  
   
-     Tento prvek musí obsahovat následující atributy:  
+   Tento prvek musí obsahovat následující atributy:  
   
-     `Source` – Zdrojový uzel propojení  
+   `Source` – Zdrojový uzel propojení  
   
-     `Target` – Cílový uzel propojení  
+   `Target` – Cílový uzel propojení  
   
-     Následující seznam popisuje některé volitelné atributy, které lze vložit:  
+   Následující seznam popisuje některé volitelné atributy, které lze vložit:  
   
-     `Label` – Na zobrazovaný název odkazu  
+   `Label` – Na zobrazovaný název odkazu  
   
-     Atributy stylu. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+   Atributy stylu. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category` – Název kategorie, který identifikuje prvky sdílející tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
+   `Category` – Název kategorie, který identifikuje prvky sdílející tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
   
-     `Property` – Název vlastnosti identifikující prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
+   `Property` – Název vlastnosti identifikující prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Student" Category="Person" />  
-          <Node Id="Passenger" Label="Instructor" Category="Person" />  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-       </Nodes>  
-       <Links>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-          <Link Source="Driver" Target="Car" Label="Passed" Stroke="Black" Background="Green" Category="PassedTest" />  
-          <Link Source="Driver" Target="Truck" Label="Failed" Stroke="Black" Background="Red" Category="PassedTest" />  
-       </Links>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Student" Category="Person" />  
+        <Node Id="Passenger" Label="Instructor" Category="Person" />  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+     </Nodes>  
+     <Links>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+        <Link Source="Driver" Target="Car" Label="Passed" Stroke="Black" Background="Green" Category="PassedTest" />  
+        <Link Source="Driver" Target="Truck" Label="Failed" Stroke="Black" Background="Red" Category="PassedTest" />  
+     </Links>  
+  </DirectedGraph>  
+  ```  
   
--   `<Categories></Categories>`  
+- `<Categories></Categories>`  
   
-     Tento prvek obsahuje seznam `<Category/>` elementy. Další informace najdete v tématu `<Category/>` elementu.  
+   Tento prvek obsahuje seznam `<Category/>` elementy. Další informace najdete v tématu `<Category/>` elementu.  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Categories>  
-           <Category ... />  
-       </Categories>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Categories>  
+         <Category ... />  
+     </Categories>  
+  </DirectedGraph>  
+  ```  
   
--   `<Category/>`  
+- `<Category/>`  
   
-     Tento prvek definuje `Category` atribut, který identifikuje prvky sdílející tento atribut. A `Category` atribut slouží k uspořádání elementů mapy, poskytování sdílených atributů prostřednictvím dědičnosti nebo definování dalších metadat.  
+   Tento prvek definuje `Category` atribut, který identifikuje prvky sdílející tento atribut. A `Category` atribut slouží k uspořádání elementů mapy, poskytování sdílených atributů prostřednictvím dědičnosti nebo definování dalších metadat.  
   
-     Tento prvek musí obsahovat následující atributy:  
+   Tento prvek musí obsahovat následující atributy:  
   
-     `Id` – Jedinečný název kategorie a výchozí hodnota `Label` atribut, pokud žádný samostatný `Label` je zadán atribut.  
+   `Id` – Jedinečný název kategorie a výchozí hodnota `Label` atribut, pokud žádný samostatný `Label` je zadán atribut.  
   
-     Následující seznam popisuje některé volitelné atributy, které lze vložit:  
+   Následující seznam popisuje některé volitelné atributy, které lze vložit:  
   
-     `Label` -– Popisný název kategorie.  
+   `Label` -– Popisný název kategorie.  
   
-     `BasedOn` -Nadřazené kategorie, ze kterého `<Category/>` aktuálního elementu dědí.  
+   `BasedOn` -Nadřazené kategorie, ze kterého `<Category/>` aktuálního elementu dědí.  
   
-     V příkladu tohoto prvku `FailedTest` kategorie dědí její `Stroke` atribut z `PassedTest` kategorie. Přečtěte si část "vytvořit hierarchické kategorie" v [mapy kódu přizpůsobit úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+   V příkladu tohoto prvku `FailedTest` kategorie dědí její `Stroke` atribut z `PassedTest` kategorie. Přečtěte si část "vytvořit hierarchické kategorie" v [mapy kódu přizpůsobit úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     Kategorie rovněž poskytují některé základní šablony chování, které řídí vzhled uzlů a propojení, při jejich zobrazení na mapě. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+   Kategorie rovněž poskytují některé základní šablony chování, které řídí vzhled uzlů a propojení, při jejich zobrazení na mapě. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Driver" Category="Person" />  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-          <Node Id="Passenger" Category="Person" />  
-       </Nodes>  
-       <Links>  
-          <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
-          <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
-       </Links>  
-       <Categories>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-          <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
-          <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
-       </Categories>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Driver" Category="Person" />  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+        <Node Id="Passenger" Category="Person" />  
+     </Nodes>  
+     <Links>  
+        <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
+        <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
+     </Links>  
+     <Categories>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+        <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
+        <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
+     </Categories>  
+  </DirectedGraph>  
+  ```  
   
--   `<Properties></Properties>`  
+- `<Properties></Properties>`  
   
-     Tento prvek obsahuje seznam `<Property/>` elementy. Další informace najdete v tématu `<Property/>` elementu.  
+   Tento prvek obsahuje seznam `<Property/>` elementy. Další informace najdete v tématu `<Property/>` elementu.  
   
-     Příklad:  
+   Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Properties>  
-           <Property ... />  
-       </Properties>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Properties>  
+         <Property ... />  
+     </Properties>  
+  </DirectedGraph>  
+  ```  
   
--   `<Property/>`  
+- `<Property/>`  
   
-     Tento prvek definuje `Property` atribut, který můžete použít pro přiřazení hodnoty k libovolnému DGML element nebo atribut, včetně kategorií a dalších vlastností.  
+   Tento prvek definuje `Property` atribut, který můžete použít pro přiřazení hodnoty k libovolnému DGML element nebo atribut, včetně kategorií a dalších vlastností.  
   
-     Tento prvek musí obsahovat následující atributy:  
+   Tento prvek musí obsahovat následující atributy:  
   
-    -   `Id` – Jedinečný název vlastnosti a výchozí hodnota `Label` atribut, pokud žádný samostatný `Label` je zadán atribut.  
+  - `Id` – Jedinečný název vlastnosti a výchozí hodnota `Label` atribut, pokud žádný samostatný `Label` je zadán atribut.  
   
-    -   `DataType` -Typ dat uložených ve vlastnosti  
+  - `DataType` -Typ dat uložených ve vlastnosti  
   
-     Pokud chcete, aby vlastnost zobrazila v **vlastnosti** okno, použijte `Label` vlastnosti a určit tak zobrazovaný název vlastnosti.  
+    Pokud chcete, aby vlastnost zobrazila v **vlastnosti** okno, použijte `Label` vlastnosti a určit tak zobrazovaný název vlastnosti.  
   
-     Zobrazit [přiřadit kategorie pro prvky kódu a odkazy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).  
+    Zobrazit [přiřadit kategorie pro prvky kódu a odkazy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).  
   
-     Příklad:  
+    Příklad:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Driver" Category="Person" DrivingAge="18"/>  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-          <Node Id="Passenger" Category="Person" />  
-       </Nodes>  
-       <Links>  
-          <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
-          <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
-       </Links>  
-       <Categories>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-          <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
-          <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
-       </Categories>  
-       <Properties>  
-           <Property Id="DrivingAge" Label="Driving Age" DataType="System.Int32" />  
-       </Properties>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Driver" Category="Person" DrivingAge="18"/>  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+        <Node Id="Passenger" Category="Person" />  
+     </Nodes>  
+     <Links>  
+        <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
+        <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
+     </Links>  
+     <Categories>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+        <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
+        <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
+     </Categories>  
+     <Properties>  
+         <Property Id="DrivingAge" Label="Driving Age" DataType="System.Int32" />  
+     </Properties>  
+  </DirectedGraph>  
+  ```  
   
 ###  <a name="AddAlias"></a> Aliasy pro běžně používané cesty  
  Nahrazení běžně používaných cest aliasy pomáhá zmenšit velikost souboru .dgml a snižuje čas potřebný k načtení nebo uložení souboru. Chcete-li vytvořit alias, přidejte `<Paths></Paths>` část na konec souboru .dgml. V této části, přidejte `<Path/>` prvek, který chcete definovat jako alias pro cestu:  

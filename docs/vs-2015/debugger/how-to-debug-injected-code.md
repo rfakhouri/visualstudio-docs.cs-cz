@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819781"
 ---
 # <a name="how-to-debug-injected-code"></a>Postupy: Ladění vloženého kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ POZNÁMKA:]
   
  Pomocí atributů může výrazně zjednodušit programování C++. Další informace najdete v tématu [koncepty](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Některé atributy jsou interpretovány kompilátorem přímo. Ostatní atributy vloží kód do zdroje program, který kompilátor pak zkompiluje. Tato vloženého kódu díky programování usnadnit tím, že snižuje množství kódu, který musíte napsat. V některých případech však chyba může způsobit selhání při provádění vloženého kódu aplikace. Pokud k tomu dojde, budete pravděpodobně chtít podívat na vložený kód. Visual Studio poskytuje dva způsoby, jak vidíte vloženého kódu:  
   
--   Můžete zobrazit kódu injektovaného do **zpětný překlad** okna.  
+- Můžete zobrazit kódu injektovaného do **zpětný překlad** okna.  
   
--   Pomocí [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), můžete vytvořit sloučené zdrojový soubor, který obsahuje původní a vloženého kódu.  
+- Pomocí [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), můžete vytvořit sloučené zdrojový soubor, který obsahuje původní a vloženého kódu.  
   
- **Zpětný překlad** okno zobrazuje instrukcí sestavení jazyka, které odpovídají zdrojový kód a kód vložený atributy. Kromě toho **zpětný překlad** okna můžete zobrazit poznámky zdrojového kódu.  
+  **Zpětný překlad** okno zobrazuje instrukcí sestavení jazyka, které odpovídají zdrojový kód a kód vložený atributy. Kromě toho **zpětný překlad** okna můžete zobrazit poznámky zdrojového kódu.  
   
 ### <a name="to-turn-on-source-annotation"></a>Chcete-li ve zdrojové poznámky  
   

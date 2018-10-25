@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 119c896313adb94524417cde73624987dd96e279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891827"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Klávesové zkratky v Blendu
+
 ## <a name="project-shortcuts"></a>Klávesové zkratky projektu
 
 |Provedete to tak|Postup|
@@ -46,7 +47,7 @@ ms.locfileid: "38977991"
 |Vyjmout|**CTRL**+**X**|
 |Kopírovat|**CTRL**+**C**|
 |Vložit|**CTRL**+**V**|
-|Odstranit|**Odstranit**|
+|Odstranit|**Delete**|
 |Najít text (zobrazení XAML nebo JavaScript – editor jenom)|**CTRL**+**F**|
 |Najde další výskyt text (zobrazení XAML nebo JavaScript – editor jenom)|**F3** nebo **Ctrl**+**H**|
 

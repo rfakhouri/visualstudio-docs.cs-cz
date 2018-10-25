@@ -16,12 +16,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 141b0966c3b7d53bf1084b3ea9ac466bbc92d0bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903709"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,59 +31,59 @@ ms.locfileid: "49222401"
 ## <a name="shell-responsibilities"></a>Odpovědnosti prostředí  
  Prostředí má následující klíčové odpovědnosti:  
   
--   Podpora (prostřednictvím rozhraní modelu COM) základní prvky uživatelského rozhraní (UI). Patří mezi ně výchozí nabídky a panely nástrojů, okna rámce dokumentu nebo podřízená okna rozhraní více dokumentů (MDI) a rámce okna nástrojů a podporu dokování.  
+- Podpora (prostřednictvím rozhraní modelu COM) základní prvky uživatelského rozhraní (UI). Patří mezi ně výchozí nabídky a panely nástrojů, okna rámce dokumentu nebo podřízená okna rozhraní více dokumentů (MDI) a rámce okna nástrojů a podporu dokování.  
   
--   Zachování seznam všechny aktuálně otevřené dokumenty v tabulce spuštěných dokumentů (r...) za účelem koordinace trvalost dokumenty a zaručuje, že daný jeden dokument nelze otevřít více než jedním způsobem, nebo nekompatibilní způsoby.  
+- Zachování seznam všechny aktuálně otevřené dokumenty v tabulce spuštěných dokumentů (r...) za účelem koordinace trvalost dokumenty a zaručuje, že daný jeden dokument nelze otevřít více než jedním způsobem, nebo nekompatibilní způsoby.  
   
--   Podpora rozhraní směrování příkazů a zpracování příkazu `IOleCommandTarget`.  
+- Podpora rozhraní směrování příkazů a zpracování příkazu `IOleCommandTarget`.  
   
--   Načítání rozšíření VSPackages ve vhodných chvílích. Zpoždění načítání VSPackage je nezbytné ke zlepšení výkonu prostředí.  
+- Načítání rozšíření VSPackages ve vhodných chvílích. Zpoždění načítání VSPackage je nezbytné ke zlepšení výkonu prostředí.  
   
--   Správa určité sdílené služby, jako například <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, která poskytuje funkce pro základní prostředí, a <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, který poskytuje základní oddílová funkce.  
+- Správa určité sdílené služby, jako například <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, která poskytuje funkce pro základní prostředí, a <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, který poskytuje základní oddílová funkce.  
   
--   Správa souborů řešení (.sln). Řešení obsahují skupiny souvisejících projektů, podobně jako soubory pracovního prostoru (.dsw) v aplikaci Visual C++ 6.0.  
+- Správa souborů řešení (.sln). Řešení obsahují skupiny souvisejících projektů, podobně jako soubory pracovního prostoru (.dsw) v aplikaci Visual C++ 6.0.  
   
--   Sledování prostředí celý výběr, kontextu a měny. Prostředí sleduje následující typy položek:  
+- Sledování prostředí celý výběr, kontextu a měny. Prostředí sleduje následující typy položek:  
   
-    -   Aktuální projekt  
+  -   Aktuální projekt  
   
-    -   Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  -   Aktuální položku projektu nebo ID aktuální položky <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`  
+  -   Aktuální výběr **vlastnosti** okno nebo `SelectionContainer`  
   
-    -   Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů  
+  -   Kontextu uživatelského rozhraní ID nebo CmdUIGuids, které řídí, zda se příkazy, nabídky a panely nástrojů  
   
-    -   Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný  
+  -   Aktuálně aktivní prvky, jako jsou aktivní okno, dokument a vhodný  
   
-    -   Atributy kontextu uživatele, které řídí, dynamická Nápověda  
+  -   Atributy kontextu uživatele, které řídí, dynamická Nápověda  
   
- Prostředí také zprostředkovává komunikaci mezi nainstalovaných rozšíření VSPackages a službami. Podporuje základní funkce prostředí a je zpřístupní pro všechny balíčky VSPackages integrováno v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Tyto základní funkce zahrnují následující položky:  
+  Prostředí také zprostředkovává komunikaci mezi nainstalovaných rozšíření VSPackages a službami. Podporuje základní funkce prostředí a je zpřístupní pro všechny balíčky VSPackages integrováno v [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Tyto základní funkce zahrnují následující položky:  
   
--   **O** dialogové okno pole a na úvodní obrazovce  
+- **O** dialogové okno pole a na úvodní obrazovce  
   
--   **Přidat nový a přidat existující položku** dialogová okna  
+- **Přidat nový a přidat existující položku** dialogová okna  
   
--   **Zobrazení tříd** okno a **prohlížeče objektů**  
+- **Zobrazení tříd** okno a **prohlížeče objektů**  
   
--   **Odkazy na** dialogové okno  
+- **Odkazy na** dialogové okno  
   
--   **Osnova dokumentu** okna  
+- **Osnova dokumentu** okna  
   
--   **Dynamická nápověda** okna  
+- **Dynamická nápověda** okna  
   
--   **Najít** a **nahradit**  
+- **Najít** a **nahradit**  
   
--   **Otevřete projekt** a **otevřít soubor** dialogová okna na **nový** nabídky  
+- **Otevřete projekt** a **otevřít soubor** dialogová okna na **nový** nabídky  
   
--   **Možnosti** dialogové okno na **nástroje** nabídky  
+- **Možnosti** dialogové okno na **nástroje** nabídky  
   
--   **Vlastnosti** okna  
+- **Vlastnosti** okna  
   
--   **Průzkumník řešení**  
+- **Průzkumník řešení**  
   
--   **Seznam úkolů** okna  
+- **Seznam úkolů** okna  
   
--   **Panel nástrojů**  
+- **Panel nástrojů**  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

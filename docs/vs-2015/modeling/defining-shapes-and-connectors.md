@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812943"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definování obrazců a konektorů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Existuje několik typů základní tvary, které můžete použít k zobrazení 
 ##  <a name="shapeTypes"></a> Základní typy obrazců a konektorů  
  DSL diagram ukazuje kolekci *tvary* vzájemně propojena těmito řádky nebo *konektory*.  Obvykle, ale ne vždy:  
   
--   Tvary jsou viditelné reprezentace prvky modelu.  
+- Tvary jsou viditelné reprezentace prvky modelu.  
   
--   Konektory představují vztahy odkazu.  
+- Konektory představují vztahy odkazu.  
   
--   Diagram představuje instanci kořenovém modelu.  
+- Diagram představuje instanci kořenovém modelu.  
   
--   Vkládání vztahy mezi elementy modelu jsou uvedeny ve členství ve skupině. Například prvků, která představuje součást porty jsou vložené v komponentě.  
+- Vkládání vztahy mezi elementy modelu jsou uvedeny ve členství ve skupině. Například prvků, která představuje součást porty jsou vložené v komponentě.  
   
- Tyto modely nejsou vynucená, ale jsou silněji podporovány. Při návrhu DSL berte v úvahu, který návrh vztahů obsažení by měl být ovlivněno způsob, jak mají být k dispozici modelu na obrazovce. Naopak referenční stavy by měly odrážet koncepty obchodní domény.  
+  Tyto modely nejsou vynucená, ale jsou silněji podporovány. Při návrhu DSL berte v úvahu, který návrh vztahů obsažení by měl být ovlivněno způsob, jak mají být k dispozici modelu na obrazovce. Naopak referenční stavy by měly odrážet koncepty obchodní domény.  
   
- K dispozici jsou následující typy tvarů:  
+  K dispozici jsou následující typy tvarů:  
   
 |Obrazec typu|Popis|  
 |----------------|-----------------|  

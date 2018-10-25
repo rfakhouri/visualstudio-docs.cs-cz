@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892776"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Ovládací prvky Windows Forms na dokumenty Office – přehled
   Ovládací prvky Windows Forms jsou objekty, které mohou uživatelé komunikovat s a zadejte skript nebo manipulaci s daty. V projektech na úrovni dokumentu pro aplikaci Microsoft Office Excel a Microsoft Office Word můžete přidat ovládací prvky Windows Forms k dokumentu nebo sešitu ve vašem projektu v době návrhu nebo prostřednictvím kódu programu přidáte těchto ovládacích prvků za běhu. Tyto ovládací prvky můžete programově přidat otevřeného dokumentu nebo listu za běhu v doplňku VSTO pro Excel nebo Word.  
@@ -52,25 +52,25 @@ ms.locfileid: "35675908"
  V dokumentu.  
  -   Pokud chcete zobrazit ovládací prvky 100 % času.  
   
--   Pokud chcete, aby uživatelé pro zadávání dat přímo v dokumentu, například v založené na formulářích dokumenty, kde je uzamčen na úpravy plochu.  
+- Pokud chcete, aby uživatelé pro zadávání dat přímo v dokumentu, například v založené na formulářích dokumenty, kde je uzamčen na úpravy plochu.  
   
--   Když chcete ovládacích prvků pro zobrazení tato data v dokumentu. Například při přidávání tlačítek do jednotlivých řádků seznamu objektů, je by představám souladu s každou položku seznamu.  
+- Když chcete ovládacích prvků pro zobrazení tato data v dokumentu. Například při přidávání tlačítek do jednotlivých řádků seznamu objektů, je by představám souladu s každou položku seznamu.  
   
- V podokně Akce nebo vlastního podokna úloh.  
- -   Pokud chcete poskytovat kontextové informace pro uživatele.  
+  V podokně Akce nebo vlastního podokna úloh.  
+  -   Pokud chcete poskytovat kontextové informace pro uživatele.  
   
--   Když chcete pouze výsledky se zobrazí v dokumentu a ne ovládací prvky dotazu a data.  
+- Když chcete pouze výsledky se zobrazí v dokumentu a ne ovládací prvky dotazu a data.  
   
--   Pokud chcete zajistit, že nejsou zobrazeny ovládací prvky s dokumentem.  
+- Pokud chcete zajistit, že nejsou zobrazeny ovládací prvky s dokumentem.  
   
--   Pokud chcete zajistit, že ovládací prvky nejsou v konfliktu za dokumentu.  
+- Pokud chcete zajistit, že ovládací prvky nejsou v konfliktu za dokumentu.  
   
- Ve formuláři Windows.  
- -   Pokud chcete určit velikost uživatelského rozhraní.  
+  Ve formuláři Windows.  
+  -   Pokud chcete určit velikost uživatelského rozhraní.  
   
--   Pokud chcete zabránit uživatelům ve skryjete nebo odstranění ovládacích prvků.  
+- Pokud chcete zabránit uživatelům ve skryjete nebo odstranění ovládacích prvků.  
   
--   Pokud chcete získat vstupy od uživatele a zabrání uživateli v teď zrovna nic nedělá v dokumentu, dokud přijetí vstupu.  
+- Pokud chcete získat vstupy od uživatele a zabrání uživateli v teď zrovna nic nedělá v dokumentu, dokud přijetí vstupu.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Přidání ovládacích prvků Windows Forms prostřednictvím kódu programu  
  Můžete přidat ovládací prvky Windows Forms do dokumentů aplikace Word a sešitů aplikace Excel v době běhu. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Poskytuje pomocné metody pro přidání většiny běžných ovládacích prvků Windows Forms. Tyto pomocné metody vám umožňují rychle přidat ovládacích prvků do dokumentů Office a přístup funkčnost ovládacího prvku Windows Forms a funkcím souvisejícím s Office těchto ovládacích prvků.  
@@ -134,13 +134,13 @@ ms.locfileid: "35675908"
   
  Při přidání ovládacího prvku do dokumentu aplikace Word v době běhu, můžete zadat požadovaný styl rozložení nového ovládacího prvku s použitím různých `Add` \< *třídu ovládacího prvku*> přetížení metody <xref:Microsoft.Office.Tools.Word.ControlCollection> třídy:  
   
--   Přidání ovládacího prvku v textu, použijte přetížení, která přijímá <xref:Microsoft.Office.Interop.Word.Range> , která určuje umístění ovládacího prvku.  
+- Přidání ovládacího prvku v textu, použijte přetížení, která přijímá <xref:Microsoft.Office.Interop.Word.Range> , která určuje umístění ovládacího prvku.  
   
--   Přidání ovládacího prvku jako obrazec s plovoucí desetinnou čárkou, použijte přetížení, která přijímá souřadnice levého a horního ovládacího prvku.  
+- Přidání ovládacího prvku jako obrazec s plovoucí desetinnou čárkou, použijte přetížení, která přijímá souřadnice levého a horního ovládacího prvku.  
   
- Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Pokud otevřete šablonu aplikace Word v návrháři aplikace Visual Studio, protože Visual Studio otevře šablonu v nemusí zobrazovat nevložená ovládací prvky na této šabloně **normální** zobrazení. Chcete-li zobrazit ovládací prvky, změňte zobrazení tak, aby **rozložení při tisku**.  
+  Pokud otevřete šablonu aplikace Word v návrháři aplikace Visual Studio, protože Visual Studio otevře šablonu v nemusí zobrazovat nevložená ovládací prvky na této šabloně **normální** zobrazení. Chcete-li zobrazit ovládací prvky, změňte zobrazení tak, aby **rozložení při tisku**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Ovládací prvky mimo tělo hlavního dokumentu  
  Ovládací prvky Windows Forms nejsou podporovány v záhlaví nebo zápatí stránky, nebo v rámci vnořeného dokumentu.  

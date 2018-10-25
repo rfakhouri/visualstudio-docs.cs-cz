@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823759"
 ---
 # <a name="image-service-and-catalog"></a>Služba bitových kopií a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Visual Studio Image a Image katalog zavedena v sadě Visual Studio 2015.  
@@ -32,46 +32,46 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
   
  Proč přijmout službu image?  
   
--   Vždy získáte nejnovější "perfektním vzhledem" image ze sady Visual Studio  
+- Vždy získáte nejnovější "perfektním vzhledem" image ze sady Visual Studio  
   
--   Můžete odesílat projekty a používat vlastní Image  
+- Můžete odesílat projekty a používat vlastní Image  
   
--   Není potřeba testovat vaše image, pokud Windows přidá nový Škálování DPI  
+- Není potřeba testovat vaše image, pokud Windows přidá nový Škálování DPI  
   
--   Řešení původní architektury překážek, se kterými ve vaší implementace  
+- Řešení původní architektury překážek, se kterými ve vaší implementace  
   
- Nástrojů sady Visual Studio shell, před a za používání služby bitové kopie:  
+  Nástrojů sady Visual Studio shell, před a za používání služby bitové kopie:  
   
- ![Image Service před a po](../extensibility/media/image-service-before-and-after.png "Image Service před a po ní")  
+  ![Image Service před a po](../extensibility/media/image-service-before-and-after.png "Image Service před a po ní")  
   
 ## <a name="how-it-works"></a>Jak to funguje
  Služba bitových kopií, můžete zadat rastrovými obrázky image, která je vhodná pro všechny podporované architektury uživatelského rozhraní:  
   
--   WPF: BitmapSource  
+- WPF: BitmapSource  
   
--   WinForms: System.Drawing.Bitmap  
+- WinForms: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- Vývojový diagram služby Image  
+  Vývojový diagram služby Image  
   
- ![Image Service vývojový Diagram](../extensibility/media/image-service-flow-diagram.png "obrázku vývojový Diagram služby")  
+  ![Image Service vývojový Diagram](../extensibility/media/image-service-flow-diagram.png "obrázku vývojový Diagram služby")  
   
- **Obrázek monikery**  
+  **Obrázek monikery**  
   
- Moniker bitové kopie (nebo moniker short) je identifikátor GUID a ID pár, který jednoznačně identifikuje prostředek obrázku nebo seznam prostředků obrázků v knihovně obrázků.  
+  Moniker bitové kopie (nebo moniker short) je identifikátor GUID a ID pár, který jednoznačně identifikuje prostředek obrázku nebo seznam prostředků obrázků v knihovně obrázků.  
   
- **Známé monikery**  
+  **Známé monikery**  
   
- Sada obrázků monikery obsaženým v katalogu obrázků Visual Studio a veřejně použitelnost podle jakékoli součásti sady Visual Studio nebo rozšíření.  
+  Sada obrázků monikery obsaženým v katalogu obrázků Visual Studio a veřejně použitelnost podle jakékoli součásti sady Visual Studio nebo rozšíření.  
   
- **Soubory manifestu obrázků**  
+  **Soubory manifestu obrázků**  
   
- Manifestu obrázků (*.imagemanifest*) soubory jsou soubory XML, které definují sadu prostředky obrázků, zástupných názvů, které představují tyto prostředky a skutečné bitové kopie nebo bitové kopie, které představují každého prostředku. Manifesty Image můžete definovat samostatné obrázky nebo bitové kopie jsou uvedené pro stále podporuje starší verze uživatelského rozhraní. Kromě toho jsou atributy, které je možné nastavit na prostředku nebo na jednotlivých obrázků za každý prostředek změnit, kdy a jak tyto prostředky jsou zobrazené.  
+  Manifestu obrázků (*.imagemanifest*) soubory jsou soubory XML, které definují sadu prostředky obrázků, zástupných názvů, které představují tyto prostředky a skutečné bitové kopie nebo bitové kopie, které představují každého prostředku. Manifesty Image můžete definovat samostatné obrázky nebo bitové kopie jsou uvedené pro stále podporuje starší verze uživatelského rozhraní. Kromě toho jsou atributy, které je možné nastavit na prostředku nebo na jednotlivých obrázků za každý prostředek změnit, kdy a jak tyto prostředky jsou zobrazené.  
   
- **Schéma manifestu obrázků**  
+  **Schéma manifestu obrázků**  
   
- Manifest kompletní obrázek vypadá takto:  
+  Manifest kompletní obrázek vypadá takto:  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  Jedná se o klíčových místa k použití zástupných názvů v panelu nástrojů. Postupujte podle pokynů pro každou:  
   
-1.  Na kartě okna nástroje když karty získat dostatečně malá, (používá se také v **Ctrl**+**kartu** přepínač okna).  
+1. Na kartě okna nástroje když karty získat dostatečně malá, (používá se také v **Ctrl**+**kartu** přepínač okna).  
   
-     Přidejte následující řádek do konstruktoru pro třídu, která je odvozena z **ToolWindowPane** typu:  
+    Přidejte následující řádek do konstruktoru pro třídu, která je odvozena z **ToolWindowPane** typu:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  Příkaz pro otevření okna nástrojů.  
+2. Příkaz pro otevření okna nástrojů.  
   
-     V *.vsct* soubor balíčku, panel nástrojů příkazového tlačítka Upravit:  
+    V *.vsct* soubor balíčku, panel nástrojů příkazového tlačítka Upravit:  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **Použití zástupných názvů bitové kopie v existující panelu nástrojů**  
+   **Použití zástupných názvů bitové kopie v existující panelu nástrojů**  
   
- Aktualizace existujícího okna nástroje použít obraz monikery je podobný postup pro vytvoření nového okna nástroje.  
+   Aktualizace existujícího okna nástroje použít obraz monikery je podobný postup pro vytvoření nového okna nástroje.  
   
- Jedná se o klíčových místa k použití zástupných názvů v panelu nástrojů. Postupujte podle pokynů pro každou:  
+   Jedná se o klíčových místa k použití zástupných názvů v panelu nástrojů. Postupujte podle pokynů pro každou:  
   
-1.  Na kartě okna nástroje když karty získat dostatečně malá, (používá se také v **Ctrl**+**kartu** přepínač okna).  
+3. Na kartě okna nástroje když karty získat dostatečně malá, (používá se také v **Ctrl**+**kartu** přepínač okna).  
   
-    1.  Odebrat tyto řádky (pokud existují) v konstruktoru pro třídu, která je odvozena z **ToolWindowPane** typu:  
+   1.  Odebrat tyto řádky (pokud existují) v konstruktoru pro třídu, která je odvozena z **ToolWindowPane** typu:  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  Viz krok #1 "Použití zástupných názvů bitové kopie v novém okně nástroje?" výše uvedené části.  
+   2.  Viz krok #1 "Použití zástupných názvů bitové kopie v novém okně nástroje?" výše uvedené části.  
   
-2.  Příkaz pro otevření okna nástrojů.  
+4. Příkaz pro otevření okna nástrojů.  
   
-    -   Viz krok #2 "Použití zástupných názvů bitové kopie v novém okně nástroje?" výše uvedené části.  
+   -   Viz krok #2 "Použití zástupných názvů bitové kopie v novém okně nástroje?" výše uvedené části.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Použití zástupných názvů image v souboru .vsct  
  Aktualizace vašeho *.vsct* souboru, jak je uvedeno ve níže uvedené komentářem řádky:  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Jak se port bude systém projektu?  
  **Jak dodávat ImageMonikers pro projekt**  
   
-1.  Implementace **VSHPROPID_SupportsIconMonikers** na projektu **IVsHierarchy**a vrátí hodnotu true.  
+1. Implementace **VSHPROPID_SupportsIconMonikers** na projektu **IVsHierarchy**a vrátí hodnotu true.  
   
-2.  Implementovat buď **VSHPROPID_IconMonikerImageList** (pokud použili původní projekt **VSHPROPID_IconImgList**) nebo **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (pokud použili původní projekt  **VSHPROPID_IconHandle** a **VSHPROPID_OpenFolderIconHandle**).  
+2. Implementovat buď **VSHPROPID_IconMonikerImageList** (pokud použili původní projekt **VSHPROPID_IconImgList**) nebo **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (pokud použili původní projekt  **VSHPROPID_IconHandle** a **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  Změňte implementaci původní VSHPROPIDs u ikon, vytvořit "starší" verze ikony, pokud Rozšiřovací body o ně požádat. **IVsImageService2** poskytuje funkce potřebné k získání těchto ikon  
+3. Změňte implementaci původní VSHPROPIDs u ikon, vytvořit "starší" verze ikony, pokud Rozšiřovací body o ně požádat. **IVsImageService2** poskytuje funkce potřebné k získání těchto ikon  
   
- **Další požadavky pro VB / C# projekt digitálních**  
+   **Další požadavky pro VB / C# projekt digitálních**  
   
- Implementovat pouze **VSHPROPID_SupportsIconMonikers** Pokud zjistíte, že je váš projekt **nejkrajnější flavor**. V opačném případě skutečné nejkrajnější charakter nemusí podporovat monikery image ve skutečnosti a základní flavor může efektivně "skrytí" přizpůsobené Image.  
+   Implementovat pouze **VSHPROPID_SupportsIconMonikers** Pokud zjistíte, že je váš projekt **nejkrajnější flavor**. V opačném případě skutečné nejkrajnější charakter nemusí podporovat monikery image ve skutečnosti a základní flavor může efektivně "skrytí" přizpůsobené Image.  
   
- **Použití zástupných názvů bitové kopie v systému CPS**  
+   **Použití zástupných názvů bitové kopie v systému CPS**  
   
- Nastavení vlastních imagí v systému CPS (Common Project System) to provést ručně nebo pomocí šablony položky, který je součástí sady SDK rozšíření systému projektu.  
+   Nastavení vlastních imagí v systému CPS (Common Project System) to provést ručně nebo pomocí šablony položky, který je součástí sady SDK rozšíření systému projektu.  
   
- **Pomocí rozšíření systému projektu sady SDK**  
+   **Pomocí rozšíření systému projektu sady SDK**  
   
- Postupujte podle pokynů na adrese [zadejte vlastní ikony pro typ typem projektu/položky](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) přizpůsobení Image CPS. Další informace o prohlášení CPS najdete [dokumentace k rozšiřitelnosti systém projektů Visual Studia](https://github.com/Microsoft/VSProjectSystem)  
+   Postupujte podle pokynů na adrese [zadejte vlastní ikony pro typ typem projektu/položky](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) přizpůsobení Image CPS. Další informace o prohlášení CPS najdete [dokumentace k rozšiřitelnosti systém projektů Visual Studia](https://github.com/Microsoft/VSProjectSystem)  
   
- **Ručně pomocí ImageMonikers**  
+   **Ručně pomocí ImageMonikers**  
   
-1.  Implementujte a exportujte **IProjectTreeModifier** rozhraní v systému projektu.  
+4. Implementujte a exportujte **IProjectTreeModifier** rozhraní v systému projektu.  
   
-2.  Určení, které **KnownMoniker** nebo moniker vlastní image, kterou chcete použít.  
+5. Určení, které **KnownMoniker** nebo moniker vlastní image, kterou chcete použít.  
   
-3.  V **ApplyModifications** metoda, proveďte následující někde v metodě před vrácením nového stromu, podobně jako následujícím příkladu:  
+6. V **ApplyModifications** metoda, proveďte následující někde v metodě před vrácením nového stromu, podobně jako následujícím příkladu:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  Pokud vytváříte nové větve, můžete nastavit vlastní Image předáním požadované monikery do metody NewTree, podobně jako následujícím příkladu:  
+7. Pokud vytváříte nové větve, můžete nastavit vlastní Image předáním požadované monikery do metody NewTree, podobně jako následujícím příkladu:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Jak převést skutečné obrázku na základě moniker obrázku?  
  **Je potřeba podporovat HIMAGELISTs**  
   
  Pokud je již existujícího obrázku pro kód, který chcete aktualizovat používat služba bitových kopií, ale jsou omezené aktivitami rozhraní API, které vyžadují předávání kolem seznamy obrázků, stále získáte výhody služby bitové kopie. Pokud chcete vytvořit na základě moniker obrázku, podle následujících pokynů k vytvoření manifestu z existující monikery.  
   
-1.  Spustit **ManifestFromResources** nástroj, předají se jí obrázku. Tím se vygeneruje manifest pro pruh.  
+1. Spustit **ManifestFromResources** nástroj, předají se jí obrázku. Tím se vygeneruje manifest pro pruh.  
   
-    -   Doporučeno: Zadejte název jiné výchozí manifest tak, aby odpovídala jeho využití.  
+   -   Doporučeno: Zadejte název jiné výchozí manifest tak, aby odpovídala jeho využití.  
   
-2.  Pokud používáte pouze **KnownMonikers**, proveďte následující kroky:  
+2. Pokud používáte pouze **KnownMonikers**, proveďte následující kroky:  
   
-    -   Nahradit \<Imagí > manifestu se \<image / >.  
+   -   Nahradit \<Imagí > manifestu se \<image / >.  
   
-    -   Odebrat všechny subimage ID (cokoli s \<imagestrip name > _ ##).  
+   -   Odebrat všechny subimage ID (cokoli s \<imagestrip name > _ ##).  
   
-    -   Doporučeno: přejmenujte AssetsGuid symbol a symbol pruhu image tak, aby odpovídala jeho využití.  
+   -   Doporučeno: přejmenujte AssetsGuid symbol a symbol pruhu image tak, aby odpovídala jeho využití.  
   
-    -   Nahraďte každé **ContainedImage**identifikátor GUID s $(ImageCatalogGuid), nahraďte každé **ContainedImage**ID s $(\<moniker >) a přidejte externí = "true" atribut pro každý **ContainedImage**  
+   -   Nahraďte každé **ContainedImage**identifikátor GUID s $(ImageCatalogGuid), nahraďte každé **ContainedImage**ID s $(\<moniker >) a přidejte externí = "true" atribut pro každý **ContainedImage**  
   
-        -   \<moniker > by měla být nahrazena **KnownMoniker** odpovídající image, ale s "KnownMonikers." odebrat z názvu.  
+       -   \<moniker > by měla být nahrazena **KnownMoniker** odpovídající image, ale s "KnownMonikers." odebrat z názvu.  
   
-    -   Přidat < Import Manifest="$(ManifestFolder)\\< nainstalovat relativní cestu k domovskému adresáři na *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> do horní části \<symboly > oddílu.  
+   -   Přidat < Import Manifest="$(ManifestFolder)\\< nainstalovat relativní cestu k domovskému adresáři na *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> do horní části \<symboly > oddílu.  
   
-        -   Relativní cesta se určuje podle umístění nasazení, které jsou definované v nastavení pro vytváření pro manifest.  
+       -   Relativní cesta se určuje podle umístění nasazení, které jsou definované v nastavení pro vytváření pro manifest.  
   
-3.  Spustit **ManifestToCode** nástroj pro generování obálky tak, aby měl monikeru může použít k dotazování na obrázek službu obrázku existující kód.  
+3. Spustit **ManifestToCode** nástroj pro generování obálky tak, aby měl monikeru může použít k dotazování na obrázek službu obrázku existující kód.  
   
-    -   Doporučeno: Zadejte jiný než výchozí názvy obálky a obory názvů tak, aby odpovídaly jejich použití.  
+   -   Doporučeno: Zadejte jiný než výchozí názvy obálky a obory názvů tak, aby odpovídaly jejich použití.  
   
-4.  Toto všechno dělat přidá, instalační program pro vytváření a nasazování a dalších změn kódu pro práci s služba bitových kopií a nové soubory.  
+4. Toto všechno dělat přidá, instalační program pro vytváření a nasazování a dalších změn kódu pro práci s služba bitových kopií a nové soubory.  
   
- Ukázka manifestu včetně interních i externích imagí, které chcete zobrazit, co by měl vypadat jako:  
+   Ukázka manifestu včetně interních i externích imagí, které chcete zobrazit, co by měl vypadat jako:  
   
 ```xml  
 <?xml version="1.0"?>  

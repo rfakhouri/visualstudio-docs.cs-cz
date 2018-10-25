@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868427"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Prvky izolovaného prostředí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Můžete upravit nastavení registru, nastavení za běhu a vstupní bod aplikac
 ## <a name="run-time-settings"></a>Nastavení za běhu  
  Když uživatel spustí aplikaci, která izolovaného prostředí, volá vstupní bod spuštění z prostředí sady Visual Studio. Nastavení aplikace jsou definovány při spuštění aplikace, následujícím způsobem:  
   
-1.  Prostředí sady Visual Studio kontroluje pro konkrétní klíče registru aplikace. Pokud je nastavení pro klíč zadaný ve volání na začátku vstupní bod, tato hodnota přepíše hodnotu v registru.  
+1. Prostředí sady Visual Studio kontroluje pro konkrétní klíče registru aplikace. Pokud je nastavení pro klíč zadaný ve volání na začátku vstupní bod, tato hodnota přepíše hodnotu v registru.  
   
-2.  Pokud bod registru ani položka parametr určuje hodnotu nastavení a potom je použita výchozí hodnota pro nastavení.  
+2. Pokud bod registru ani položka parametr určuje hodnotu nastavení a potom je použita výchozí hodnota pro nastavení.  
   
- Když uživatel spustí aplikaci z příkazového řádku, všechny přepínače příkazového řádku jsou předány do prostředí nástroje Visual Studio, které je zpracovává stejným způsobem, který provede Devenv. Další informace o přepínačích Devenv najdete v tématu [přepínače příkazového řádku nástroje Devenv](../ide/reference/devenv-command-line-switches.md) a [přepínače příkazového řádku nástroje Devenv pro vývoj rozšíření VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Další informace o způsobu balíček zaregistruje přepínače příkazového řádku najdete v tématu [přidáním přepínače příkazového řádku](../extensibility/adding-command-line-switches.md).  
+   Když uživatel spustí aplikaci z příkazového řádku, všechny přepínače příkazového řádku jsou předány do prostředí nástroje Visual Studio, které je zpracovává stejným způsobem, který provede Devenv. Další informace o přepínačích Devenv najdete v tématu [přepínače příkazového řádku nástroje Devenv](../ide/reference/devenv-command-line-switches.md) a [přepínače příkazového řádku nástroje Devenv pro vývoj rozšíření VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Další informace o způsobu balíček zaregistruje přepínače příkazového řádku najdete v tématu [přidáním přepínače příkazového řádku](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>Vstupní bod Start  
  Soubor Appenvstub.dll obsahuje vstupní body při přístupu k izolované prostředí. Při spuštění aplikace, které volá vstupní bod Appenvstub.dll Start.  

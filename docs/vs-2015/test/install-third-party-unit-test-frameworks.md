@@ -13,12 +13,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900901"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalace systémů testů jednotek od třetích stran
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,34 +34,34 @@ Visual Studio Test Explorer můžete spustit libovolné jednotky rozhraní testo
   
 ### <a name="installing-from-visual-studio"></a>Instalace ze sady Visual Studio  
   
-1.  Zvolte **nástroje** ve standardní nabídce a klikněte na tlačítko **rozšíření a aktualizace**.  
+1. Zvolte **nástroje** ve standardní nabídce a klikněte na tlačítko **rozšíření a aktualizace**.  
   
-2.  Rozbalte **Online**, **Galerie sady Visual Studio**, **nástroje**. Zvolte **testování**.  
+2. Rozbalte **Online**, **Galerie sady Visual Studio**, **nástroje**. Zvolte **testování**.  
   
-3.  Procházejte seznamem a najít rozhraní framework.  
+3. Procházejte seznamem a najít rozhraní framework.  
   
-4.  Vyberte rozhraní a zvolte **Stáhnout**.  
+4. Vyberte rozhraní a zvolte **Stáhnout**.  
   
- Další informace najdete v části [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+   Další informace najdete v části [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ### <a name="installing-from-the-web"></a>Instalace z webu  
  Pokud znáte rozhraní, které vás zajímají:  
   
-1.  Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) na webu MSDN.  
+1. Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) na webu MSDN.  
   
-2.  Zadejte název rozhraní v **najít** pole.  
+2. Zadejte název rozhraní v **najít** pole.  
   
-3.  Zvolte rozhraní v seznamu výsledků na stránku Galerie Visual Studio pro nástroj.  
+3. Zvolte rozhraní v seznamu výsledků na stránku Galerie Visual Studio pro nástroj.  
   
- Můžete procházet seznam architektur společně s další testovací nástroje:  
+   Můžete procházet seznam architektur společně s další testovací nástroje:  
   
-1.  Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) na webu MSDN.  
+4. Otevřít [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) na webu MSDN.  
   
-2.  Zvolte **Procházet**.  
+5. Zvolte **Procházet**.  
   
-3.  V **kategorie** seznamu, rozbalte **nástroje** uzlu a pak zvolte **testování**.  
+6. V **kategorie** seznamu, rozbalte **nástroje** uzlu a pak zvolte **testování**.  
   
-4.  Výběr architektury v seznamu výsledků na stránku Galerie Visual Studio pro nástroj.  
+7. Výběr architektury v seznamu výsledků na stránku Galerie Visual Studio pro nástroj.  
   
 ## <a name="see-also"></a>Viz také  
  [Testování částí kódu](../test/unit-test-your-code.md)

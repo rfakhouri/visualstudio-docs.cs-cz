@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918880"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UWP
 Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o síťových operacích pomocí provádí [Windows.Web.Http API](/uwp/api/windows.web.http). Analýza dat vám může pomoct vyřešit problémy, jako jsou problémy přístupu a ověřování, nesprávné použití mezipaměti a špatné zobrazení a stáhnout výkonu.  
@@ -28,19 +28,19 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
 ## <a name="collect-network-tool-data"></a>Shromažďovat data nástroj sítě.  
  Měli byste spustit **sítě** nástroj s otevřít projekt aplikace Visual Studio na počítači aplikace Visual Studio.  
   
-1.  Otevřete projekt v sadě Visual Studio.  
+1. Otevřete projekt v sadě Visual Studio.  
   
-2.  V nabídce klikněte na tlačítko **ladění / Profiler výkonu**. Zvolte **sítě**a klikněte na tlačítko **Start**.  
+2. V nabídce klikněte na tlačítko **ladění / Profiler výkonu**. Zvolte **sítě**a klikněte na tlačítko **Start**.  
   
-3.  Nástroj pro sítě začne shromažďování provoz protokolu HTTP vaší aplikace.  
+3. Nástroj pro sítě začne shromažďování provoz protokolu HTTP vaší aplikace.  
   
-     Při spouštění vaší aplikace, souhrnné zobrazení v levém podokně automaticky zobrazí seznam zachycených operace HTTP. Vyberte položku na souhrnné zobrazení zobrazíte další informace najdete v podokně podrobností v pravém podokně.  
+    Při spouštění vaší aplikace, souhrnné zobrazení v levém podokně automaticky zobrazí seznam zachycených operace HTTP. Vyberte položku na souhrnné zobrazení zobrazíte další informace najdete v podokně podrobností v pravém podokně.  
   
-4.  Zvolte **Zastavit** zavřít aplikaci.  
+4. Zvolte **Zastavit** zavřít aplikaci.  
   
- V okně sestavy by měl vypadat přibližně takto:  
+   V okně sestavy by měl vypadat přibližně takto:  
   
- ![V okně sítě](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![V okně sítě](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>Analýza dat  
  Když vaše aplikace spuštěna, nebo i po zavření aplikace výběrem některé síťové operace zobrazí v souhrnném zobrazení můžete analyzovat zachycená data protokolu HTTP.  

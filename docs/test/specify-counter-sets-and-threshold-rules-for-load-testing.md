@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879834"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu
 
@@ -38,7 +38,7 @@ Je důležité přidat servery v rámci testu do seznamu počítačů, na které
 ## <a name="tasks"></a>Úlohy
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Správa sad čítačů pro zátěžový test:** po vytvoření zátěžového testu můžete upravit sady čítače v editoru zátěžového testu. Správa sad čítačů zahrnuje výběr sadu počítačů, ze kterých chcete shromažďovat data o výkonu a přiřazení sadu čítačů, které mají být shromažďovány z jednotlivých počítačů. Můžete spravovat čítače v editoru zátěžového testu.|-   [Postupy: Správa sad čítačů](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Přidání sad čítačů k zátěžovému testu:** když vytvoříte zátěžový test pomocí **nového Průvodce zátěžovým testem**, můžete přidat počáteční sadu čítačů. Ty nabízejí sadu předdefinovaných sad čítačů pro zátěžové testy. Po vytvoření zátěžového testu můžete přidat nové čítače do existujících sad čítačů pomocí editoru zátěžového testu.|-   [Postupy: přidání čítačů do sad čítačů](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Postupy: Přidání vlastních sad čítačů](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Zadejte mezního pravidla pomocí čítačů pro zátěžový test:** pravidlo mezní hodnoty je pravidlo, které je nastavena na jednotlivé čítače na sledování využití systémových prostředků během zátěžového testu. Definice sady čítače obsahují předdefinované prahovou hodnotu pravidla pro mnoho klíčových čítačů výkonu. Mezní pravidla v zátěžových testech porovnávají hodnotu čítače výkonu s konstantní hodnotou nebo jinou hodnotou čítače výkonu.|-   [Postupy: Přidání mezního pravidla](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ Vyberte příslušnou hodnotu **vzorkovací frekvence** vlastnost v zátěžové
 Následují některé pokyny pro vzorkovací frekvence.
 
 |Doba trvání zátěžového testu|Doporučené vzorkovací frekvence|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 hodina|5 sekund|
 |1−8 hodin|15 sekund|
 |8−24 hodin|30 sekund|

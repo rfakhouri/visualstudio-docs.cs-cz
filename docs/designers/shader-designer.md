@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847627"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 
@@ -31,7 +31,7 @@ Můžete použít **návrháře shaderu** k vytvoření vlastní vizuálních ef
 **Návrháře shaderu** podporuje tyto formáty shaderu:
 
 |Název formátu|Přípona souboru|Podporované operace (zobrazení, úpravy, Export)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Orientovaný graf shaderu jazyka|*.dgsl*|Zobrazení pro úpravy|
 |Shader HLSL (zdrojového kódu)|*.hlsl*|Export|
 |Shader HLSL (bajtového kódu)|*.CSO*|Export|
@@ -177,7 +177,7 @@ Další informace o tom, jak exportovat shader, naleznete v tématu [postupy: ex
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
 
 |Příkaz|Klávesové zkratky|
-|-------------|------------------------|
+|-------------| - |
 |Přepnout na **vyberte** režimu|**CTRL**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Přepnout na **přiblížení** režimu|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Přepnout na **Pan** režimu|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|

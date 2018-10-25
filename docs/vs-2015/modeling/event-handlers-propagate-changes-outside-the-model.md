@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823694"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ V produktu Visualization and Modeling SDK, můžete definovat obslužné rutiny 
   
 ### <a name="to-define-a-store-event"></a>Chcete-li definovat událost úložiště  
   
-1.  Vyberte typ události, ke které chcete monitorovat. Chcete-li zobrazit úplný seznam, podívejte se na vlastnosti <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Každou vlastnost odpovídá typu události. Nejčastěji používané události, které typy jsou:  
+1. Vyberte typ události, ke které chcete monitorovat. Chcete-li zobrazit úplný seznam, podívejte se na vlastnosti <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Každou vlastnost odpovídá typu události. Nejčastěji používané události, které typy jsou:  
   
-    -   `ElementAdded` – aktivuje, pokud prvek modelu, vztah odkazu, obrazec nebo spojnici se vytvoří.  
+   -   `ElementAdded` – aktivuje, pokud prvek modelu, vztah odkazu, obrazec nebo spojnici se vytvoří.  
   
-    -   ElementPropertyChanged – aktivuje, když hodnota `Normal` doménovou vlastnost se změní. Událost se aktivuje jenom v případě, že novém i starém hodnoty nejsou shodné. Události nejde použít u vypočtené a vlastní vlastnosti úložiště.  
+   -   ElementPropertyChanged – aktivuje, když hodnota `Normal` doménovou vlastnost se změní. Událost se aktivuje jenom v případě, že novém i starém hodnoty nejsou shodné. Události nejde použít u vypočtené a vlastní vlastnosti úložiště.  
   
-         Ho nejde použít u vlastnosti rolí, které odpovídají vztah odkazy. Místo toho použijte `ElementAdded` monitorování doménového vztahu.  
+        Ho nejde použít u vlastnosti rolí, které odpovídají vztah odkazy. Místo toho použijte `ElementAdded` monitorování doménového vztahu.  
   
-    -   `ElementDeleted` – aktivuje po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.  
+   -   `ElementDeleted` – aktivuje po prvku modelu, relace, obrazec nebo spojnici byl odstraněn. Budete k němu přístup hodnoty vlastností elementu, ale nebude mít žádné vztahy s ostatními prvky.  
   
-2.  Přidat definici částečné třídy pro _YourDsl_**DocData** v samostatném souboru kódu v **DslPackage** projektu.  
+2. Přidat definici částečné třídy pro _YourDsl_**DocData** v samostatném souboru kódu v **DslPackage** projektu.  
   
-3.  Psaní kódu události jako metody, jako v následujícím příkladu. Může to být `static`, pokud chcete získat přístup k `DocData`.  
+3. Psaní kódu události jako metody, jako v následujícím příkladu. Může to být `static`, pokud chcete získat přístup k `DocData`.  
   
-4.  Přepsat `OnDocumentLoaded()` zaregistrovat obslužnou rutinu. Pokud máte více než jednu obslužnou rutinu, můžete je zaregistrovat vše na jednom místě.  
+4. Přepsat `OnDocumentLoaded()` zaregistrovat obslužnou rutinu. Pokud máte více než jednu obslužnou rutinu, můžete je zaregistrovat vše na jednom místě.  
   
- Umístění registrační kód není důležité. `DocView.LoadView()` je alternativního umístění.  
+   Umístění registrační kód není důležité. `DocView.LoadView()` je alternativního umístění.  
   
 ```  
 using System;  

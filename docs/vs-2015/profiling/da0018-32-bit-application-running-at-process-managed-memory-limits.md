@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928760"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: 32bitová aplikace spuštěná v limitech paměti spravovaného procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Id pravidla | DA0018 |
   
  Pokud zatížení nadměrné spravované paměti je nějaký problém, vezměte v úvahu některé z těchto možností:  
   
--   Optimalizace využití aplikace prostředků spravované paměti  
+- Optimalizace využití aplikace prostředků spravované paměti  
   
-     -nebo-  
+   -nebo-  
   
--   kroků obdobná architektury omezení na maximální velikost virtuální paměti 32bitového procesu  
+- kroků obdobná architektury omezení na maximální velikost virtuální paměti 32bitového procesu  
   
- Optimalizovat využití prostředků, spravované paměti aplikace, shromažďujte data o přidělování spravované paměti v běh profilování přidělení paměti .NET. Zkontrolujte [zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md) sestav k pochopení způsobu přidělení paměti aplikace.  
+  Optimalizovat využití prostředků, spravované paměti aplikace, shromažďujte data o přidělování spravované paměti v běh profilování přidělení paměti .NET. Zkontrolujte [zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md) sestav k pochopení způsobu přidělení paměti aplikace.  
   
- Použití [zobrazení doby života objektu](../profiling/object-lifetime-view.md) pro určení, které programových datech objekty jsou zbývajících do generace a potom uvolnit z něj.  
+  Použití [zobrazení doby života objektu](../profiling/object-lifetime-view.md) pro určení, které programových datech objekty jsou zbývajících do generace a potom uvolnit z něj.  
   
- Použití [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md) k určení postupu provádění, jejímž výsledkem těchto přidělení.  
+  Použití [přidělení – zobrazení](../profiling/dotnet-memory-allocations-view.md) k určení postupu provádění, jejímž výsledkem těchto přidělení.  
   
- Další informace o tom, jak zlepšit výkon kolekce uvolnění paměti, naleznete v tématu rozhraní .NET Framework technického článku, [základní informace o uvolňování paměti a typech výkonu](http://go.microsoft.com/fwlink/?LinkId=177946) na webové stránce MSDN.  
+  Další informace o tom, jak zlepšit výkon kolekce uvolnění paměti, naleznete v tématu rozhraní .NET Framework technického článku, [základní informace o uvolňování paměti a typech výkonu](http://go.microsoft.com/fwlink/?LinkId=177946) na webové stránce MSDN.  
   
- K získání architektury osvobození od omezení virtuální paměti na velikosti části privátní adresní prostor procesu, zkuste spustit tento 32bitový proces na 64bitovém počítači.  32bitový proces na 64bitovém počítači můžete získat až 4 GB přidělené virtuální paměti.  
+  K získání architektury osvobození od omezení virtuální paměti na velikosti části privátní adresní prostor procesu, zkuste spustit tento 32bitový proces na 64bitovém počítači.  32bitový proces na 64bitovém počítači můžete získat až 4 GB přidělené virtuální paměti.  
   
- 64-bit proces běží na 64bitovém počítači můžete získat až do 8 TB virtuální paměti. Vezměte v úvahu opětovné kompilaci aplikací ke spuštění jako nativní 64bitové aplikace. Toto pravidlo je pouze pro informaci a nemusí potřebovat nápravné opatření.
+  64-bit proces běží na 64bitovém počítači můžete získat až do 8 TB virtuální paměti. Vezměte v úvahu opětovné kompilaci aplikací ke spuštění jako nativní 64bitové aplikace. Toto pravidlo je pouze pro informaci a nemusí potřebovat nápravné opatření.
 
 
 

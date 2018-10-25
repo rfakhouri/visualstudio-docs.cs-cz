@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912965"
 ---
 # <a name="using-saved-intellitrace-data"></a>Použití dat uložených nástrojem IntelliTrace
 Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění ladění od souboru protokolu IntelliTrace (.iTrace). Tento soubor může obsahovat události související s výkonem, výjimky, vlákna, kroky testu, moduly a další systémové informace, že nástroj IntelliTrace zaznamenává za běhu aplikace.
@@ -159,25 +159,25 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Spuštění ladění s ID korelace SharePoint
 
-1.  Zkopírujte ID korelace SharePoint z jeho zdroje.
+1. Zkopírujte ID korelace SharePoint z jeho zdroje.
 
-     Příklad:
+    Příklad:
 
-     ![IntelliTrace &#45; chyba SharePoint &#45; ID korelace](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; chyba SharePoint &#45; ID korelace](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  Otevřete soubor .iTrace, potom přejděte na stránku **analýzy** a zadejte ID korelace SharePoint ke kontrole odpovídající webový požadavek a zaznamenané události.
+2. Otevřete soubor .iTrace, potom přejděte na stránku **analýzy** a zadejte ID korelace SharePoint ke kontrole odpovídající webový požadavek a zaznamenané události.
 
-     ![Protokol IntelliTrace &#45; ID korelace SharePoint zadat](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Protokol IntelliTrace &#45; ID korelace SharePoint zadat](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  V části **události požadavku**, prozkoumejte události. Počínaje shora, události se zobrazí v pořadí, v jakém k nim došlo.
+3. V části **události požadavku**, prozkoumejte události. Počínaje shora, události se zobrazí v pořadí, v jakém k nim došlo.
 
-    1.  Zvolte událost zobrazíte její podrobnosti.
+   1. Zvolte událost zobrazíte její podrobnosti.
 
-    2.  Zvolte **spustit ladění** spustit ladění na místě, kde k události došlo.
+   2. Zvolte **spustit ladění** spustit ladění na místě, kde k události došlo.
 
-     ![Soubor protokolu IntelliTrace &#45; zobrazení webový požadavek &#43; události](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![Soubor protokolu IntelliTrace &#45; zobrazení webový požadavek &#43; události](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- Zobrazí se tyto typy událostí SharePoint spolu s událostmi IntelliTrace:
+   Zobrazí se tyto typy událostí SharePoint spolu s událostmi IntelliTrace:
 
 -   **Události uživatelského profilu**
 
@@ -199,28 +199,28 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Spuštění ladění z nezpracované výjimky
 
-1.  Vyberte Identifikátor korelace služby SharePoint pro výjimku. Výjimky jsou seskupeny dle typu a zásobníku volání.
+1. Vyberte Identifikátor korelace služby SharePoint pro výjimku. Výjimky jsou seskupeny dle typu a zásobníku volání.
 
-2.  (Volitelné) Rozbalte **zásobník volání** zobrazíte zásobník volání pro skupinu výjimek.
+2. (Volitelné) Rozbalte **zásobník volání** zobrazíte zásobník volání pro skupinu výjimek.
 
-3.  Zvolte **ladit výjimku** pro spuštění ladění v místě, kde a kdy k výjimce došlo.
+3. Zvolte **ladit výjimku** pro spuštění ladění v místě, kde a kdy k výjimce došlo.
 
-     ![Protokol IntelliTrace &#45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Protokol IntelliTrace &#45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- Návod, naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).
+   Návod, naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Seznam vláken
  Prozkoumejte zaznamenaná vlákna spuštěná v cílovém procesu. Můžete spustit ladění od první platné události IntelliTrace ve zvoleném vlákně.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Pro spuštění ladění od konkrétního vlákna
 
-1.  V části **seznam vláken**, zvolte vlákno.
+1. V části **seznam vláken**, zvolte vlákno.
 
-2.  V dolní části **seznam vláken**, zvolte **spustit ladění**. Můžete také dvakrát kliknout na vlákno.
+2. V dolní části **seznam vláken**, zvolte **spustit ladění**. Můžete také dvakrát kliknout na vlákno.
 
-     Pro spuštění ladění od začátku aplikace, klikněte dvakrát na **hlavní vlákno**. Zobrazit [funkce IntelliTrace](../debugger/intellitrace-features.md).
+    Pro spuštění ladění od začátku aplikace, klikněte dvakrát na **hlavní vlákno**. Zobrazit [funkce IntelliTrace](../debugger/intellitrace-features.md).
 
- Data vláken vytvořená uživatelem mohou být užitečnější než vlákna, která serveru vytváří a spravuje pro webovou aplikaci hostovanou službu IIS.
+   Data vláken vytvořená uživatelem mohou být užitečnější než vlákna, která serveru vytváří a spravuje pro webovou aplikaci hostovanou službu IIS.
 
 |**Sloupec**|**Ukazuje,**|
 |----------------|-------------------|

@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812982"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Postupy: Instalace modulu Plug-in správy zdrojového kódu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Vytvoření ovládacího prvku zdroj modulu plug-in zahrnuje tři kroky:
 ## <a name="how-an-ide-locates-the-dll"></a>Jak integrované vývojové prostředí vyhledává knihovny DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Integrovaném vývojovém prostředí má dva způsoby jak najít zdroj řídit knihovnu DLL modulu plug-in:  
   
--   Vyhledání modulu plug-in správy zdrojového kódu výchozí a k němu připojit bezobslužně.  
+- Vyhledání modulu plug-in správy zdrojového kódu výchozí a k němu připojit bezobslužně.  
   
--   Hledání všechny registrované zdroje moduly plug-in správy, ze kterého uživatel vybere jeden  
+- Hledání všechny registrované zdroje moduly plug-in správy, ze kterého uživatel vybere jeden  
   
- Najít knihovnu DLL jako první, integrovaném vývojovém prostředí vypadá podklíči HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider pro položku ProviderRegKey. Hodnota této položky se odkazuje na jiný podklíči. Rozhraní IDE pak vyhledá položku s názvem SccServerPath v druhé podklíče pod klíčem HKEY_LOCAL_MACHINE. Hodnota této položky odkazuje na knihovnu DLL integrovaného vývojového prostředí.  
+  Najít knihovnu DLL jako první, integrovaném vývojovém prostředí vypadá podklíči HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider pro položku ProviderRegKey. Hodnota této položky se odkazuje na jiný podklíči. Rozhraní IDE pak vyhledá položku s názvem SccServerPath v druhé podklíče pod klíčem HKEY_LOCAL_MACHINE. Hodnota této položky odkazuje na knihovnu DLL integrovaného vývojového prostředí.  
   
 > [!NOTE]
 >  Rozhraní IDE se nenačte knihovny DLL z relativní cesty (například.\NewProvider.DLL). Je nutné zadat úplnou cestu k souboru DLL (například c:\Providers\NewProvider.DLL). To tím, že zabrání načítání knihoven DLL modulu plug-in neoprávněným nebo zosobněného posiluje zabezpečení rozhraní IDE.  
   
- Vyhledejte knihovnu DLL v druhý způsob, vypadá integrovaného vývojového prostředí pro všechny položky v podklíči HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders *.* Každá položka má název a hodnotu. Rozhraní IDE zobrazí seznam tyto názvy uživateli *.* Když uživatel vybere název, najde integrovaného vývojového prostředí pro vybraný název, který odkazuje na podklíč hodnotu. Hledat položky s názvem SccServerPath v tomto podklíči pod klíčem HKEY_LOCAL_MACHINE. Hodnota této položky odkazuje na správný knihovny DLL rozhraní IDE.  
+ Vyhledejte knihovnu DLL v druhý způsob, vypadá integrovaného vývojového prostředí pro všechny položky v podklíči HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders<em>.</em> Každá položka má název a hodnotu. Rozhraní IDE zobrazí seznam tyto názvy uživateli<em>.</em> Když uživatel vybere název, najde integrovaného vývojového prostředí pro vybraný název, který odkazuje na podklíč hodnotu. Hledat položky s názvem SccServerPath v tomto podklíči pod klíčem HKEY_LOCAL_MACHINE. Hodnota této položky odkazuje na správný knihovny DLL rozhraní IDE.  
   
  Modul plug-in správy zdrojového kódu musí podporovat oba způsoby jak najít knihovnu DLL a v důsledku toho nastavte ProviderRegKey, přepíše jakékoli předchozí nastavení. Důležitější je ho musí sám přidat do seznamu InstalledSccProviders, uživatel může mít celou řadu které plug-in správy zdrojových kódů k použití.  
   

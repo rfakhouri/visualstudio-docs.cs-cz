@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 039e9a43e3ab6af5db399aa32722c698014256c9
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926732"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -47,10 +47,10 @@ Tato generace kód platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-     - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na prázdný řádek ve třídě.
 
    ![Generovat konstruktor ve verzi preview](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Tato generace kód platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-     - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s výběrem.
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s výběrem.
 
-     ![Generovat konstruktor ve verzi preview](media/constructor2-preview-cs.png)
+      ![Generovat konstruktor ve verzi preview](media/constructor2-preview-cs.png)
 
 1. Vyberte **generovat konstruktor 'TypeName(...).**  z rozevírací nabídky.
 
@@ -97,24 +97,24 @@ Tato generace kód platí pro:
 
    - C#:
 
-    ![Zvýrazněný kód jazyka C#](media/constructor-highlight-cs.png)
+       ![Zvýrazněný kód jazyka C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Zvýrazněný kód jazyka Visual Basic](media/constructor-highlight-vb.png)
+       ![Zvýrazněný kód jazyka Visual Basic](media/constructor-highlight-vb.png)
 
-1. Dále proveďte jednu z následujících akcí:
+2. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-     - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
 
-    ![Generovat konstruktor ve verzi preview](media/constructor-preview-cs.png)
+      ![Generovat konstruktor ve verzi preview](media/constructor-preview-cs.png)
 
-1. Vyberte **generovat konstruktor v "*TypeName*"** z rozevírací nabídky.
+3. Vyberte **generovat konstruktor v "*TypeName*"** z rozevírací nabídky.
 
    > [!TIP]
    > Použití **náhled změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , který bude proveden před zvolení požadované možnosti.
@@ -123,32 +123,32 @@ Tato generace kód platí pro:
 
    - C#:
 
-      ![Generovat výsledek metody jazyka C#](media/constructor-result-cs.png)
+       ![Generovat výsledek metody jazyka C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Generovat výsledek metody VB](media/constructor-result-vb.png)
+       ![Generovat výsledek metody VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Přidání parametru do existující konstruktoru (C# jenom)
 
 1. Přidání parametru k existující volání konstruktoru.
 
-1. Umístěte kurzor na řádek níž se nachází červená vlnovka, která jste použili konstruktor, který ještě neexistuje.
+2. Umístěte kurzor na řádek níž se nachází červená vlnovka, která jste použili konstruktor, který ještě neexistuje.
 
     ![Generovat konstruktor zvýraznění](media/constructor4-highlight-cs.png)
 
-1. Dále proveďte jednu z následujících akcí:
+3. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-     - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Červená vlnovka ukazatel myši a klikněte ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
 
-    ![Generovat konstruktor ve verzi preview](media/constructor4-preview-cs.png)
+      ![Generovat konstruktor ve verzi preview](media/constructor4-preview-cs.png)
 
-1. Vyberte **přidat parametr "TypeName(...).**  z rozevírací nabídky.
+4. Vyberte **přidat parametr "TypeName(...).**  z rozevírací nabídky.
 
    Parametr se přidá do konstruktoru, s jeho typ odvozený z jeho využití.
 
@@ -167,10 +167,10 @@ Můžete také přidat parametr do existující metodu. Další informace najdet
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-     - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s přidání parametru.
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s přidání parametru.
 
    ![Generovat konstruktor ve verzi preview](media/constructor5-preview-cs.png)
 

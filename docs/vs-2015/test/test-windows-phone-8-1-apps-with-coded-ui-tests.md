@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890139"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování aplikací pro UPW a aplikací pro Windows Phone 8.1 pomocí programových testů uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
 
 [Jak vytvořit kódované testy uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW)?](#uwpapps)
   
-1.  Přidáte nový projekt programového testu UI k řešení s aplikací pro Windows Phone.  
+1. Přidáte nový projekt programového testu UI k řešení s aplikací pro Windows Phone.  
   
-     ![Vytvořte nový kódovaný test uživatelského rozhraní pro Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![Vytvořte nový kódovaný test uživatelského rozhraní pro Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  Zvolte upravit mapování uživatelského rozhraní pomocí nástroje vlasového kříže.  
+2. Zvolte upravit mapování uživatelského rozhraní pomocí nástroje vlasového kříže.  
   
-     ![Vygenerování programového uživatelského rozhraní testu pomocí křížové&#45;vlasy nástroj. ](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![Vygenerování programového uživatelského rozhraní testu pomocí křížové&#45;vlasy nástroj. ](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  Pomocí nástroje nitkového kříže vyberte aplikaci, a potom zkopírujte hodnotu pro aplikace **AutomationId** vlastnost, která se později použijí ke spuštění aplikace v testu.  
+3. Pomocí nástroje nitkového kříže vyberte aplikaci, a potom zkopírujte hodnotu pro aplikace **AutomationId** vlastnost, která se později použijí ke spuštění aplikace v testu.  
   
-     ![Zkopírujte hodnotu AutomationId aplikace](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![Zkopírujte hodnotu AutomationId aplikace](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  V emulátoru spusťte aplikaci a pomocí nástroje nitkového kříže vyberte ovládací prvek tlačítko. Pak přidejte ovládací prvek tlačítko v mapování ovládacího prvku uživatelského rozhraní.  
+4. V emulátoru spusťte aplikaci a pomocí nástroje nitkového kříže vyberte ovládací prvek tlačítko. Pak přidejte ovládací prvek tlačítko v mapování ovládacího prvku uživatelského rozhraní.  
   
-     ![Použít různé&#45;nástroje kříž ovládací prvky mapy](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![Použít různé&#45;nástroje kříž ovládací prvky mapy](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  Přidání ovládacího prvku textového pole do mapování ovládacích prvků uživatelského rozhraní, opakujte předchozí krok.  
+5. Přidání ovládacího prvku textového pole do mapování ovládacích prvků uživatelského rozhraní, opakujte předchozí krok.  
   
-     ![Použít různé&#45;ovládacího prvku textbox vlasů nástroj a mapy](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![Použít různé&#45;ovládacího prvku textbox vlasů nástroj a mapy](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  Generovat kód pro vytvoření kódu pro změny mapování ovládacího prvku uživatelského rozhraní.  
+6. Generovat kód pro vytvoření kódu pro změny mapování ovládacího prvku uživatelského rozhraní.  
   
-     ![Generování kódu z Tvůrce](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![Generování kódu z Tvůrce](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  Pomocí nástroje nitkového kříže vyberte ovládací prvek textového pole a pak vyberte **Text** vlastnost.  
+7. Pomocí nástroje nitkového kříže vyberte ovládací prvek textového pole a pak vyberte **Text** vlastnost.  
   
-     ![Vyberte vlastnost Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![Vyberte vlastnost Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  Přidáte kontrolní výraz. Použije v testu k ověření, že hodnota je správná.  
+8. Přidáte kontrolní výraz. Použije v testu k ověření, že hodnota je správná.  
   
-     ![Přidat kontrolní výraz testu](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![Přidat kontrolní výraz testu](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. Přidejte a generujte kód pro metodu assert.  
   
@@ -223,37 +223,37 @@ Pomocí tohoto průvodce použijte k vytvoření testů uživatelského rozhran�
   
 11. V Průzkumníku řešení otevřete soubor CodedUITest1.cs nebo CodedUITest1.vb. Nyní můžete přidat kód do metody codeduttestmethod1 pro akce potřebné ke spuštění testu. Pomocí ovládacích prvků, které byly přidány do mapy UIMap přidání kódu:  
   
-    1.  Spusťte aplikaci Windows Phone pomocí vlastnosti ID automatizace, který jste zkopírovali do schránky dříve:  
+    1. Spusťte aplikaci Windows Phone pomocí vlastnosti ID automatizace, který jste zkopírovali do schránky dříve:  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Přidejte gesto pro klepnutí na ovládací prvek tlačítka:  
+    2. Přidejte gesto pro klepnutí na ovládací prvek tlačítka:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  Ověřte, že volání metody assert, která byla automaticky vygenerována, přichází po spuštění aplikace a klepněte na gesto na tlačítku:  
+    3. Ověřte, že volání metody assert, která byla automaticky vygenerována, přichází po spuštění aplikace a klepněte na gesto na tlačítku:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     Po přidání kódu by měla testovací metoda CodedUITestMethod1 vypadat takto:  
+       Po přidání kódu by měla testovací metoda CodedUITestMethod1 vypadat takto:  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Otázka: Jak vytvořím programové testy uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW)  
  **A**: v závislosti na platformě, kde testování vaší aplikace pro UPW, vytvořte projekt programového testu uživatelského rozhraní v jednom z těchto způsobů:  
   
--   Aplikace pro UPW spuštěné na místním počítači se spustí jako Store app. Abyste to mohli otestovat, je nutné použít **projekt programového uživatelského rozhraní testu (Windows)** šablony. Vyhledejte tuto šablonu, když vytvoříte nový projekt, přejděte **Windows**, **univerzální** uzlu. Nebo můžete přejít na **Windows**, **Windows 8**, **Windows** uzlu.  
+- Aplikace pro UPW spuštěné na místním počítači se spustí jako Store app. Abyste to mohli otestovat, je nutné použít **projekt programového uživatelského rozhraní testu (Windows)** šablony. Vyhledejte tuto šablonu, když vytvoříte nový projekt, přejděte **Windows**, **univerzální** uzlu. Nebo můžete přejít na **Windows**, **Windows 8**, **Windows** uzlu.  
   
--   Aplikace pro UPW běžící na mobilním zařízení nebo emulátoru se spustí jako aplikaci pro telefon. Abyste to mohli otestovat, je nutné použít **projekt programového uživatelského rozhraní testu (Windows Phone)** šablony. Vyhledejte tuto šablonu, když vytvoříte nový projekt, přejděte **Windows**, **univerzální** uzlu. Nebo můžete přejít na **Windows**, **Windows 8**, **Windows Phone** uzlu.  
+- Aplikace pro UPW běžící na mobilním zařízení nebo emulátoru se spustí jako aplikaci pro telefon. Abyste to mohli otestovat, je nutné použít **projekt programového uživatelského rozhraní testu (Windows Phone)** šablony. Vyhledejte tuto šablonu, když vytvoříte nový projekt, přejděte **Windows**, **univerzální** uzlu. Nebo můžete přejít na **Windows**, **Windows 8**, **Windows Phone** uzlu.  
   
- Po vytvoření projektu pro vytváření testu zůstává stejná jako předtím.  
+  Po vytvoření projektu pro vytváření testu zůstává stejná jako předtím.  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Dotaz: lze vybrat ovládací prvky, které jsou mimo emulátor?  
  **A**: Ne, Tvůrce nebude rozpoznat.  

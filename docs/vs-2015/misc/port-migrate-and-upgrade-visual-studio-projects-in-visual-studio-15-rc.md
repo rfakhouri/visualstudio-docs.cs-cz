@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a9a57cacc8d8d37c13e7380f5b68c800c5c31075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee4eb0490e68f2ea4f83c728ed684b1e939467b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893741"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>Přenos, migrace a Upgrade projektů sady Visual Studio v sadě Visual Studio &quot;15&quot; RC
 Když přesunete na novější verzi sady Visual Studio, budete chtít vědět, pokud je nutné upravit některé z řešení, projektů, souborů a další prostředky, které jste vytvořili v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], nebo [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] před spuštěním buď [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. Tato stránka vám může pomoct s ním. 
@@ -88,19 +88,19 @@ Když přesunete na novější verzi sady Visual Studio, budete chtít vědět, 
 ## <a name="troubleshooting-project-compatibility-issues"></a>Řešení potíží s kompatibilitou projektu  
  Zde jsou některé kroky, které můžete dělat, když projekt nelze otevřít v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]:  
   
--   Pokud se pokusíte otevřít projekt, který není podporován v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a pro který není nainstalována odpovídající verze sady Visual Studio, může se zobrazit zpráva, že typ projektu není podporován a typu projektu může být uvedené v  **Zkontrolovat změny projektu a řešení** dialogové okno pod **nepodporované projekty**. Pokud chcete tento problém vyřešit, otevřete stránku programů a funkcí v Windows **ovládací panely**vyberte **sady Visual Studio**a klikněte na tlačítko **změnu**, **opravy** . Následně lze chybějící verzi nainstalovat.  
+- Pokud se pokusíte otevřít projekt, který není podporován v [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] nebo [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a pro který není nainstalována odpovídající verze sady Visual Studio, může se zobrazit zpráva, že typ projektu není podporován a typu projektu může být uvedené v  **Zkontrolovat změny projektu a řešení** dialogové okno pod **nepodporované projekty**. Pokud chcete tento problém vyřešit, otevřete stránku programů a funkcí v Windows **ovládací panely**vyberte **sady Visual Studio**a klikněte na tlačítko **změnu**, **opravy** . Následně lze chybějící verzi nainstalovat.  
   
--   Pokud se pokusíte otevřít projekt aplikace klasické pracovní plochy v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], dojde k chybě a zobrazí se jedna z následujících zpráv: "Tato verze sady Visual Studio podporuje pouze [!INCLUDE[win81](../includes/win81-md.md)] aplikace" nebo "Tento projekt není kompatibilní s aktuální verzí sady Visual Studio." [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] je omezen na vývoj, testování a nasazení aplikací pro Windows Store pro Windows 8.1. K otevření projektu aplikace klasické pracovní plochy je nutné použít edici systému Visual Studio, která tento typ projektu podporuje.  
+- Pokud se pokusíte otevřít projekt aplikace klasické pracovní plochy v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], dojde k chybě a zobrazí se jedna z následujících zpráv: "Tato verze sady Visual Studio podporuje pouze [!INCLUDE[win81](../includes/win81-md.md)] aplikace" nebo "Tento projekt není kompatibilní s aktuální verzí sady Visual Studio." [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] je omezen na vývoj, testování a nasazení aplikací pro Windows Store pro Windows 8.1. K otevření projektu aplikace klasické pracovní plochy je nutné použít edici systému Visual Studio, která tento typ projektu podporuje.  
   
-     Další informace o vydáních sady Visual Studio najdete v tématu [produkty Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)  
+   Další informace o vydáních sady Visual Studio najdete v tématu [produkty Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=254332)  
   
--   Pokud se pokusíte otevřít projekt aplikace Windows Store v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, dojde k chybě. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop nelze použít k vytváření aplikací pro Windows Store. Pokud chcete vytvářet aplikace pro Windows Store, můžete také nainstalovat [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Nebo pokud chcete vyvíjet aplikace pro všechny platformy Microsoft a web, vyzkoušejte sadu Visual Studio Professional 2013.  
+- Pokud se pokusíte otevřít projekt aplikace Windows Store v [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop, dojde k chybě. [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop nelze použít k vytváření aplikací pro Windows Store. Pokud chcete vytvářet aplikace pro Windows Store, můžete také nainstalovat [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]. Nebo pokud chcete vyvíjet aplikace pro všechny platformy Microsoft a web, vyzkoušejte sadu Visual Studio Professional 2013.  
   
--   Vyžaduje-li projekt funkce, které jsou specifické pro [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], ho nelze otevřít v dřívější verzi.  
+- Vyžaduje-li projekt funkce, které jsou specifické pro [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], ho nelze otevřít v dřívější verzi.  
   
--   Pokud používáte [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a chcete otevřít projekt, který byl vytvořen v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], bude pravděpodobně možné systém projektu upravit tak začlenil funkce systému [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Informace o tom, jak to provést, najdete v tématu [provádění vlastní projekty podporující verze](../misc/making-custom-projects-version-aware.md).  
+- Pokud používáte [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a chcete otevřít projekt, který byl vytvořen v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], bude pravděpodobně možné systém projektu upravit tak začlenil funkce systému [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Informace o tom, jak to provést, najdete v tématu [provádění vlastní projekty podporující verze](../misc/making-custom-projects-version-aware.md).  
   
- Další informace o odstraňování potíží, najdete v článku [Kompatibilita sady Visual Studio 2013](http://support.microsoft.com/kb/2863286) článku znalostní BÁZE.  
+  Další informace o odstraňování potíží, najdete v článku [Kompatibilita sady Visual Studio 2013](http://support.microsoft.com/kb/2863286) článku znalostní BÁZE.  
   
 ##  <a name="file"></a> Soubory  
  Následující seznam určuje, zda [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] podporuje všechny typy souborů, zda můžete otevřít soubor v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a Visual Studio 2010 SP1, a určuje, zda je třeba jej pro zajištění kompatibilitě upravit.  

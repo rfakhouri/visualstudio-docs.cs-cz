@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844081"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ V jazyka specifického pro doménu (DSL) vytvořené pomocí [!INCLUDE[vsprvs](.
   
  Ve výchozím nastavení když uživatel zkopíruje prvky do schránky, tyto prvky jsou zkopírovány také:  
   
--   Vloženého následníků vybraných elementů. (To znamená, elementy, které jsou cílem vkládání vztahy, které jsou zdrojem na zkopíruje prvky.)  
+- Vloženého následníků vybraných elementů. (To znamená, elementy, které jsou cílem vkládání vztahy, které jsou zdrojem na zkopíruje prvky.)  
   
--   Propojení vztahů mezi zkopírované elementy.  
+- Propojení vztahů mezi zkopírované elementy.  
   
- Toto pravidlo aplikuje rekurzivně zkopírované elementy a odkazy.  
+  Toto pravidlo aplikuje rekurzivně zkopírované elementy a odkazy.  
   
- ![Zkopírovat a vložit prvky](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+  ![Zkopírovat a vložit prvky](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- Serializovat a uložená v zkopírované elementy a odkazy <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), která je umístěna do schránky.  
+  Serializovat a uložená v zkopírované elementy a odkazy <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), která je umístěna do schránky.  
   
- Obrázek zkopírované elementy je také umístěná do schránky. To umožňuje uživateli vkládat do jiných aplikací, jako je Word.  
+  Obrázek zkopírované elementy je také umístěná do schránky. To umožňuje uživateli vkládat do jiných aplikací, jako je Word.  
   
- Uživatel můžete vložit zkopírované elementy na cíl, který může přijmout prvky podle definici DSL. V DSL generován ze šablony řešení komponenty, například uživatele můžete vložit portů do komponenty, ale ne do diagramu; a můžete vložit součásti do diagramu, ale ne na jiných komponent.  
+  Uživatel můžete vložit zkopírované elementy na cíl, který může přijmout prvky podle definici DSL. V DSL generován ze šablony řešení komponenty, například uživatele můžete vložit portů do komponenty, ale ne do diagramu; a můžete vložit součásti do diagramu, ale ne na jiných komponent.  
   
 ## <a name="customizing-copy-and-paste-behavior"></a>Úpravy, kopírování a vložení chování  
  Další informace o přizpůsobení modelu pomocí kódu programu najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
@@ -227,15 +227,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  Existují tři hodnoty:  
   
--   Nejsou rozšířena kopírování  
+- Nejsou rozšířena kopírování  
   
--   Šíření kopírování propojení pouze - vloženého skupině novou kopii tohoto odkazu se odkazovat na existující prvek na druhém konci odkazu.  
+- Šíření kopírování propojení pouze - vloženého skupině novou kopii tohoto odkazu se odkazovat na existující prvek na druhém konci odkazu.  
   
--   Šíření kopírování propojení a Aktér opačné role - zkopírovaný skupina obsahuje kopii elementu na druhém konci odkazu.  
+- Šíření kopírování propojení a Aktér opačné role - zkopírovaný skupina obsahuje kopii elementu na druhém konci odkazu.  
   
- ![Účinek kopírování s PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+  ![Účinek kopírování s PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
- Změna, kterou bude mít vliv na elementy a obrázek, který se zkopíruje.  
+  Změna, kterou bude mít vliv na elementy a obrázek, který se zkopíruje.  
   
 ## <a name="programming-copy-and-paste-behavior"></a>Programování kopírování a vložení chování  
  Mnoho aspektů DSL chování s ohledem na kopírování, vložení, vytváření a odstraňování objektů se řídí instance <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , který je s velkou provázaností do diagramu. Můžete změnit chování vašeho kódu DSL odvozením vlastních tříd z <xref:Microsoft.VisualStudio.Modeling.ElementOperations> a přepsáním <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> vlastnosti diagramu třídy.  
@@ -249,13 +249,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 #### <a name="to-define-your-own-elementoperations"></a>Chcete-li definovat vlastní ElementOperations  
   
-1.  V novém souboru ve vašem projektu DSL, vytvořte třídu, která je odvozena od <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.  
+1. V novém souboru ve vašem projektu DSL, vytvořte třídu, která je odvozena od <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.  
   
-2.  Přidáte definici částečné třídy pro třídu diagramu. Název této třídy lze najít v **Dsl\GeneratedCode\Diagrams.cs**.  
+2. Přidáte definici částečné třídy pro třídu diagramu. Název této třídy lze najít v **Dsl\GeneratedCode\Diagrams.cs**.  
   
-     V diagramu tříd, přepište <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> vrátit instanci vaší ElementOperations podtřídy. Měli byste vrátit stejnou instanci při každém volání.  
+    V diagramu tříd, přepište <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> vrátit instanci vaší ElementOperations podtřídy. Měli byste vrátit stejnou instanci při každém volání.  
   
- Přidejte tento kód v souboru vlastního kódu v projektu DslPackage:  
+   Přidejte tento kód v souboru vlastního kódu v projektu DslPackage:  
   
 ```csharp  
   

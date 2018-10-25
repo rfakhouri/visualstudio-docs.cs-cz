@@ -1,5 +1,5 @@
 ---
-title: Návrhář postupu provádění – dialogové okno inicializovat korelace
+title: Návrhář postupu provádění – dialogové okno Inicializace korelace
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,27 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906231"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Dialogové okno Inicializace korelace
 
-**Inicializovat korelace** dialogové okno se používá v Návrháři pracovních postupů, chcete-li upravit <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. Další informace najdete v tématu [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
+**Inicializace korelace** dialogové okno se používá v Návrháři pracovních postupů k úpravě <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity. Další informace najdete v tématu [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).
 
-Následující tabulka popisuje prvky uživatelského rozhraní (UI) **inicializovat korelace** dialogové okno:
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **inicializace korelace** dialogové okno:
 
 |Prvek uživatelského rozhraní (UI)|Popis|
-|----------------|-----------------|
-|**Korelace**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelace k chybě při inicializaci.|
-|**Inicializace na**|Dvojice klíč/hodnota, která obsahuje data k chybě při inicializaci. Tato hodnota odpovídá <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost. Příkladem dvojici platný klíč/hodnota je klíč s názvem "OrderID" spárovaný s proměnné s názvem OrderID.|
+|-|-----------------|
+|**Korelace**|<xref:System.ServiceModel.Activities.CorrelationHandle> Korelace inicializace.|
+|**Inicializovat na**|Dvojice klíč/hodnota, která obsahuje data k inicializaci. Tato hodnota odpovídá <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost. Příklad dvojici klíč/hodnota platná je klíč s názvem "OrderID" párována s proměnnou s názvem OrderID.|
 
-## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Spusťte inicializaci korelace dialogových oken
+## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Chcete-li spustit dialogové okno Inicializace korelace
 
-Klikněte na tlačítko **zobrazení** na **InitializeCorrelation** aktivity návrháře nebo vyberte <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity v Návrháři pracovních postupů. Potom klikněte na tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost v tabulce vlastností.
+Klikněte na tlačítko **zobrazení** na **InitializeCorrelation** aktivity návrháře nebo vyberte <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity v Návrháři pracovních postupů. Klikněte tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> vlastnost v mřížce vlastností.
 
 ## <a name="see-also"></a>Viz také:
 

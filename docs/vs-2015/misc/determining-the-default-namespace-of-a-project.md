@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c37c6f69c52677c1bd029f5e6c60d15313425abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950947"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Určení výchozí Namespace projektu
 Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], pokud `CustomToolNamespace` je nastavena na vstupní soubor, pak hodnota `CustomToolNamespace` změní hodnotu výchozí obor názvů parametr předán <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> metoda. V opačném případě `wszDefaultNamespace` byl předán parametr `Generate` se vždy rovná kořenového oboru názvů. Další informace o oborech názvů najdete v tématu [klíčová slova Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
@@ -28,11 +28,11 @@ Pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], pokud `CustomToolNamespace` je
   
  Výjimkou z tohoto pravidla vyvolá se v případě řetězec hierarchie obsahuje složka webových odkazů. Například pokud:  
   
--   FolderC byly složka webových odkazů, obor názvů by **CL9. FolderC**.  
+- FolderC byly složka webových odkazů, obor názvů by **CL9. FolderC**.  
   
--   FolderB byly složka webových odkazů, obor názvů by **CL9. FolderB.FolderC**.  
+- FolderB byly složka webových odkazů, obor názvů by **CL9. FolderB.FolderC**.  
   
- To znamená že obor názvů používá následující formát:  
+  To znamená že obor názvů používá následující formát:  
   
 ```  
 rootNamespace.webReferenceFolder.containedFolder.containedFolder ...  

@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909052"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ Univerzální platforma Windows a naše jednoho jádra Windows můžete spustit 
   
  Tady je seznam softwaru, které potřebujete:  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Ujistěte se, že jsou v seznamu volitelných funkcí nástroje vývoj univerzálních aplikací Windows. Bez těchto nástrojů nebudete moct vytvářet univerzální aplikace.  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Ujistěte se, že jsou v seznamu volitelných funkcí nástroje vývoj univerzálních aplikací Windows. Bez těchto nástrojů nebudete moct vytvářet univerzální aplikace.  
   
- Po instalaci tohoto softwaru, je nutné [povolit zařízení s Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) pro vývoj. (Už nepotřebujete licenci vývojáře pro každé zařízení s Windows 10.)  
+  Po instalaci tohoto softwaru, je nutné [povolit zařízení s Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) pro vývoj. (Už nepotřebujete licenci vývojáře pro každé zařízení s Windows 10.)  
   
- **Podpora Windows 8.1 a Windows 7**  
+  **Podpora Windows 8.1 a Windows 7**  
   
- Pokud vyberete možnost vyvíjet aplikace pro Universal Windows pomocí sady Visual Studio 2015 na platformě jiné než Windows 10, jsou omezení:  
+  Pokud vyberete možnost vyvíjet aplikace pro Universal Windows pomocí sady Visual Studio 2015 na platformě jiné než Windows 10, jsou omezení:  
   
--   Windows 8.1: Nelze spustit aplikaci místně (pouze na vzdáleném zařízení Windows 10). Můžete použít emulátory v sadě Visual Studio, ale ne simulátor.  
+- Windows 8.1: Nelze spustit aplikaci místně (pouze na vzdáleném zařízení Windows 10). Můžete použít emulátory v sadě Visual Studio, ale ne simulátor.  
   
--   Windows 7: Nelze spustit aplikaci místně (pouze na vzdáleném zařízení Windows 10). V sadě Visual Studio nelze buď použít emulátory ani simulátor.  
+- Windows 7: Nelze spustit aplikaci místně (pouze na vzdáleném zařízení Windows 10). V sadě Visual Studio nelze buď použít emulátory ani simulátor.  
   
- Návrhář XAML můžete použít pouze pokud je Vývojová platforma Windows 10.  
+  Návrhář XAML můžete použít pouze pokud je Vývojová platforma Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Univerzální aplikace pro Windows  
  Zvolte si jazyk oblíbeným vývojovým v jazycích C#, Visual Basic, C++ nebo JavaScript, který chcete [vytvoření aplikace pro Universal Windows pro zařízení s Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Nebo si pusťte video [Toto úvodní video](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  

@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19e93423dc1437a41d4e15dd67fa669fb1cee5e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 69bd6ac15bcaa08800177df92eb8a40e8109d6b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823681"
 ---
 # <a name="ribbon-xml"></a>Pás karet – XML
   Položky pásu karet (XML) umožňuje přizpůsobit pás karet pomocí XML. Pomocí položky pásu karet (XML), pokud chcete přizpůsobit pás karet tak, aby položky pásu karet (vizuální návrhář) nepodporuje. Porovnání můžete dělat s každou položku najdete v tématu [přehled pásu karet](../vsto/Ribbon-overview.md).  
@@ -41,11 +41,11 @@ ms.locfileid: "35676064"
 ## <a name="add-a-ribbon-xml-item-to-a-project"></a>Přidání položky pásu karet (XML) do projektu  
  Můžete přidat **pásu karet (XML)** položky do jakéhokoli projektu Office z **přidat novou položku** dialogové okno. Následující soubory sady Visual Studio automaticky přidá do vašeho projektu:  
   
--   Souboru XML pásu karet. Tento soubor definuje uživatelské rozhraní (UI) pásu karet. Tento soubor slouží k přidání prvků uživatelského rozhraní, jako jsou karty, skupiny a ovládací prvky. Podrobnosti najdete v tématu [odkaz na soubor kódu XML pásu karet](#RibbonDescriptorFile) dále v tomto tématu.  
+- Souboru XML pásu karet. Tento soubor definuje uživatelské rozhraní (UI) pásu karet. Tento soubor slouží k přidání prvků uživatelského rozhraní, jako jsou karty, skupiny a ovládací prvky. Podrobnosti najdete v tématu [odkaz na soubor kódu XML pásu karet](#RibbonDescriptorFile) dále v tomto tématu.  
   
--   Soubor kódu pásu karet. Tento soubor obsahuje *pásu karet třídy*. Tato třída má název, který jste zadali pro **pásu karet (XML)** položky v **přidat novou položku** dialogové okno. Aplikace Microsoft Office pomocí instance této třídy můžete načíst vlastní pás karet. Podrobnosti najdete v tématu [pásu karet – přehled tříd](#RibbonExtensionClass) dále v tomto tématu.  
+- Soubor kódu pásu karet. Tento soubor obsahuje *pásu karet třídy*. Tato třída má název, který jste zadali pro **pásu karet (XML)** položky v **přidat novou položku** dialogové okno. Aplikace Microsoft Office pomocí instance této třídy můžete načíst vlastní pás karet. Podrobnosti najdete v tématu [pásu karet – přehled tříd](#RibbonExtensionClass) dále v tomto tématu.  
   
- Ve výchozím nastavení, přidejte tyto soubory vlastní skupinu k **Add-Ins** kartu na pásu karet.  
+  Ve výchozím nastavení, přidejte tyto soubory vlastní skupinu k **Add-Ins** kartu na pásu karet.  
   
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Zobrazit vlastní pás karet v aplikaci Microsoft Office  
  Po přidání **pásu karet (XML)** položky do projektu, je nutné přidat kód pro **ThisAddin**, **ThisWorkbook**, nebo **ThisDocument** třídy který přepíše `CreateRibbonExtensibilityObject` třídu metodu a vrátí kódu XML pásu karet aplikace sady Office.  
@@ -83,18 +83,18 @@ ms.locfileid: "35676064"
 ###  <a name="CallBackMethods"></a> Definování metod zpětného volání  
  Definujte svoje metody zpětného volání ve třídě pásu karet v soubor kódu pásu karet. Metoda zpětného volání má několik požadavků:  
   
--   Musí být deklarován jako veřejná.  
+- Musí být deklarován jako veřejná.  
   
--   Název musí odpovídat názvu metody zpětného volání, který jste přiřadili do ovládacího prvku v souboru XML pásu karet.  
+- Název musí odpovídat názvu metody zpětného volání, který jste přiřadili do ovládacího prvku v souboru XML pásu karet.  
   
--   Podpis typu metody zpětného volání, která je k dispozici pro přidružený ovládací prvek pásu karet se musí shodovat jeho podpis.  
+- Podpis typu metody zpětného volání, která je k dispozici pro přidružený ovládací prvek pásu karet se musí shodovat jeho podpis.  
   
- Úplný seznam podpisy metod zpětného volání pro ovládací prvky pásu karet, najdete v článku technické [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio neposkytuje podporu technologie IntelliSense pro metody zpětného volání, které vytvoříte v soubor kódu pásu karet. Pokud vytvoříte metody zpětného volání, která neodpovídá platný podpis, kompilací kódu, ale nic dojde, když uživatel klikne ovládací prvek.  
+  Úplný seznam podpisy metod zpětného volání pro ovládací prvky pásu karet, najdete v článku technické [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio neposkytuje podporu technologie IntelliSense pro metody zpětného volání, které vytvoříte v soubor kódu pásu karet. Pokud vytvoříte metody zpětného volání, která neodpovídá platný podpis, kompilací kódu, ale nic dojde, když uživatel klikne ovládací prvek.  
   
- Mají všechny metody zpětného volání <xref:Microsoft.Office.Core.IRibbonControl> parametr, který představuje ovládací prvek, který volá metodu. Tento parametr můžete znovu použít stejnou metodu zpětného volání pro více ovládacích prvků. Následující příklad kódu ukazuje **onAction** metody zpětného volání, která provádí různé úlohy v závislosti na tom, které ovládacího prvku uživatel klikne na tlačítko.  
+  Mají všechny metody zpětného volání <xref:Microsoft.Office.Core.IRibbonControl> parametr, který představuje ovládací prvek, který volá metodu. Tento parametr můžete znovu použít stejnou metodu zpětného volání pro více ovládacích prvků. Následující příklad kódu ukazuje **onAction** metody zpětného volání, která provádí různé úlohy v závislosti na tom, které ovládacího prvku uživatel klikne na tlačítko.  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
- [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
+  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
+  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
 ##  <a name="RibbonDescriptorFile"></a> Odkaz na soubor XML pásu karet  
  Můžete definovat vaše vlastní pás karet tak, že přidání prvků a atributů do souboru XML pásu karet. Ve výchozím souboru XML pásu karet obsahuje následující kód XML.  
@@ -142,7 +142,7 @@ ms.locfileid: "35676064"
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|`GetCustomUI`|Vrátí obsah souboru XML pásu karet. Aplikace Microsoft Office volat tuto metodu za účelem získání řetězec XML, který definuje uživatelské rozhraní vlastní pás karet. Tato metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Poznámka:** `GetCustomUI` by měla být implementována pouze pro vrácení obsahu souboru XML pásu karet; nesmí sloužit k inicializaci doplňku VSTO.   Konkrétně se by se neměl pokoušet zobrazit dialogová okna nebo v jiných oknech vaše `GetCustomUI` implementace. Vlastní pás karet v opačném případě nemusí chovat správně. Pokud je třeba spustit kód, který inicializuje doplňku VSTO, přidejte kód, který `ThisAddIn_Startup` obslužné rutiny události.|  
+|`GetCustomUI`|Vrátí obsah souboru XML pásu karet. Aplikace Microsoft Office volat tuto metodu za účelem získání řetězec XML, který definuje uživatelské rozhraní vlastní pás karet. Tato metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Poznámka:** `GetCustomUI` by měla být implementována pouze pro vrácení obsahu souboru XML pásu karet; nesmí sloužit k inicializaci doplňku VSTO. Konkrétně se by se neměl pokoušet zobrazit dialogová okna nebo v jiných oknech vaše `GetCustomUI` implementace. Vlastní pás karet v opačném případě nemusí chovat správně. Pokud je třeba spustit kód, který inicializuje doplňku VSTO, přidejte kód, který `ThisAddIn_Startup` obslužné rutiny události.|  
 |`OnLoad`|Přiřazuje <xref:Microsoft.Office.Core.IRibbonControl> parametr `Ribbon` pole. Aplikace Microsoft Office tuto metodu volat, když se načítají vlastní pás karet. Toto pole můžete použít a dynamicky aktualizovat vlastní pás karet. Další informace najdete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 1 ze 3)](http://msdn.microsoft.com/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Volá `GetCustomUI` metoda získat obsah souboru XML pásu karet.|  
   

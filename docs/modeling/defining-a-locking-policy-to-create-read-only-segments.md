@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828673"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 Rozhraní API neměnnosti sady Visual Studio Visualization and Modeling SDK umožňuje aplikaci uzamknout část nebo celý model jazyka specifického pro doménu (DSL), aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Zámku hodnoty
  Zámky lze nastavit na Store, oddílu nebo jednotlivé ModelElement. Je na zámků `Flags` výčet: zkombinováním hodnot pomocí "&#124;".
 
--   Zámky ModelElement vždy zahrnovat zámky jeho oddílu.
+- Zámky ModelElement vždy zahrnovat zámky jeho oddílu.
 
--   Zámky oddílu vždy zahrnovat zámky Store.
+- Zámky oddílu vždy zahrnovat zámky Store.
 
- Nelze nastavit zámek na oddíl nebo úložiště a současně zakázat zámek na jednotlivý element.
+  Nelze nastavit zámek na oddíl nebo úložiště a současně zakázat zámek na jednotlivý element.
 
 |Hodnota|To znamená pokud `IsLocked(Value)` má hodnotu true|
-|-----------|------------------------------------------|
+|-|-|
 |Žádné|Bez omezení.|
 |Vlastnost|Vlastnosti domény prvků nelze změnit. To se nevztahuje na vlastnosti, které jsou generovány podle role doménové třídy v relaci.|
 |Přidejte|Nelze vytvořit nové prvky a odkazy v oddílu nebo úložiště.<br /><br /> Nevztahuje se na `ModelElement`.|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  Abyste měli jistotu, že uživatelé mohou vždy odstranit prvky, i v případě, že volání jiného kódu `SetLocks(Lock.Delete):`

@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927200"
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Vis
 ## <a name="uses-of-the-vsix-project-template"></a>Použití šablony projektu VSIX  
  Šablona projektu VSIX má dvě hlavní využití:  
   
--   K nasazení šablony projektů, šablony položek a další rozšíření, které ještě nemají podporu VSIX.  
+- K nasazení šablony projektů, šablony položek a další rozšíření, které ještě nemají podporu VSIX.  
   
--   Zabalit výstupy několik rozšíření do balíčku jedno nasazení.  
+- Zabalit výstupy několik rozšíření do balíčku jedno nasazení.  
   
- Není nutné použít šablonu projektu VSIX k nasazení rozšíření VSPackages nebo jiných typů rozšíření, které už mají podporu VSIX.  
+  Není nutné použít šablonu projektu VSIX k nasazení rozšíření VSPackages nebo jiných typů rozšíření, které už mají podporu VSIX.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Vytvoření balíčku rozšíření v projektu VSIX prázdný  
  Můžete zabalit existující rozšíření nebo rozšíření, která ještě nemá podporu obalením v prázdný projekt VSIX VSIX. Rozšíření bude zabalena musí být typu, který je podporován [VSIX schématu](../extensibility/vsix-extension-schema-2-0-reference.md).  

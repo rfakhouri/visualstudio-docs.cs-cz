@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823525"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Přehled Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ V této části se dozvíte více o funkcích nástroje Visual Studio Tools pro 
 ## <a name="superior-debugging"></a>Nadřazené ladění  
  Výkonný ladicí program sady Visual Studio se připojte k vaše hra Unity, chcete-li ladit skripty jazyka C# a knihovny DLL bez ohledu na to, zda je spuštěna samostatná nebo v Unity editoru. Můžete použít všechny funkce pro ladění, které očekáváte, že ze sady Visual Studio.  
   
--   Zarážky, včetně podmíněné zarážky.  
+- Zarážky, včetně podmíněné zarážky.  
   
--   Vyhodnocujte složité výrazy v okně kukátko.  
+- Vyhodnocujte složité výrazy v okně kukátko.  
   
--   Kontrola a změny hodnotu proměnné a argumenty.  
+- Kontrola a změny hodnotu proměnné a argumenty.  
   
--   K podrobnostem složité objekty a datových struktur.  
+- K podrobnostem složité objekty a datových struktur.  
   
- Vaše hra Unity můžete dokonce i ladění spuštěn na jiném počítači v síti.  
+  Vaše hra Unity můžete dokonce i ladění spuštěn na jiném počítači v síti.  
   
 ## <a name="productivity"></a>Zvýšení produktivity  
  Kromě zavedené produktivitu sady Visual Studio pro psaní a refaktoring kódu v jazyce C# Visual Studio Tools for Unity poskytuje navíc pro zvýšení produktivity pro vývojáře Unity.  

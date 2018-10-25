@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d759a587057550930271a91205f278704c4cbc21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a0db7986d42b61b65241a8487bc1a595de4f655
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827945"
 ---
 # <a name="hlsl-shader-debugger"></a>Ladicí program shaderu HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
   
  Ladicí program HLSL je však aktuálně omezen následujícími způsoby:  
   
--   Ladicí program HLSL nepodporuje edit-and-continue, ale můžete provádět změny vašeho shadery a pak znovu vygenerovat snímek pro zobrazení výsledků.  
+- Ladicí program HLSL nepodporuje edit-and-continue, ale můžete provádět změny vašeho shadery a pak znovu vygenerovat snímek pro zobrazení výsledků.  
   
--   Není možné současně ladit aplikaci a její kód shaderu. Můžete však mezi nimi přepínat.  
+- Není možné současně ladit aplikaci a její kód shaderu. Můžete však mezi nimi přepínat.  
   
--   K oknu kukátka můžete přidat proměnné a registry, ale výrazy nejsou podporovány.  
+- K oknu kukátka můžete přidat proměnné a registry, ale výrazy nejsou podporovány.  
   
- Nicméně ladicí program HLSL poskytuje lepší ladění více odpovídající CPU, které by jinak nebylo možné.  
+  Nicméně ladicí program HLSL poskytuje lepší ladění více odpovídající CPU, které by jinak nebylo možné.  
   
 ## <a name="hlsl-shader-edit--apply"></a>Použít & Upravit HLSL Shader  
  Ladicí program shaderu HLSL nepodporuje Upravit & pokračovat stejným způsobem, který provede ladicí program procesoru, protože spouštěcí model GPU neumožňuje shaderu stavu vrátit. Místo toho podporuje ladicí program HLSL & použít, což vám umožní upravit HLSL zdrojové soubory a klikněte na tlačítko Upravit **použít** se znova vygenerovat snímek projevily provedené změny. Kód shaderu. změny se ukládají do samostatného souboru zachovat integritu vašeho projektu původní zdrojový soubor HLSL, ale jakmile budete spokojeni se změnami můžete **zkopírovat do...** pro kopírování změny do svého projektu. Pomocí této funkce můžete rychle iterovat kód shaderu, který obsahuje chyby a eliminovat opětovné nákladnou sestavení a zachycení kroky z vaší HLSL ladění pracovního postupu.  
@@ -67,18 +67,18 @@ Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže por
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Spuštění ladicího programu HLSL z okna Historie pixelů grafiky  
   
-1.  V **historie pixelů grafiky** okna rozbalte volání draw spojené se shaderem, který chcete ladit. Každé volání draw může odpovídat více primitivům.  
+1. V **historie pixelů grafiky** okna rozbalte volání draw spojené se shaderem, který chcete ladit. Každé volání draw může odpovídat více primitivům.  
   
-2.  V podrobnostech volání draw rozbalte primitivum, jehož výsledný příspěvek barvy naznačuje chybu v kódu shaderu. Pokud na chyby poukazuje více primitiv, vyberte první primitivum, aby nedošlo ke hromadění chyb, které mohou ztížit diagnostiku problému.  
+2. V podrobnostech volání draw rozbalte primitivum, jehož výsledný příspěvek barvy naznačuje chybu v kódu shaderu. Pokud na chyby poukazuje více primitiv, vyberte první primitivum, aby nedošlo ke hromadění chyb, které mohou ztížit diagnostiku problému.  
   
-3.  V podrobnostech primitiva zvolte, jestli se má ladit **Vertex Shader** nebo **Pixel Shader**. Pokud máte podezření, že pixel shader je správný, ale generuje nesprávný příspěvek barvy, protože vertex shader mu předává nesprávné konstanty, proveďte ladění funkce vertex shader. V opačném případě proveďte ladění funkce pixel shader.  
+3. V podrobnostech primitiva zvolte, jestli se má ladit **Vertex Shader** nebo **Pixel Shader**. Pokud máte podezření, že pixel shader je správný, ale generuje nesprávný příspěvek barvy, protože vertex shader mu předává nesprávné konstanty, proveďte ladění funkce vertex shader. V opačném případě proveďte ladění funkce pixel shader.  
   
-     Napravo od vybraného shaderu zvolte **spustit ladění**, která se zobrazí jako malá zelená šipka.  
+    Napravo od vybraného shaderu zvolte **spustit ladění**, která se zobrazí jako malá zelená šipka.  
   
-    > [!NOTE]
-    >  Tento vstupní bod do ladicího programu HLSL ladí buď vlákno funkce pixel shader, které odpovídá zvolenému volání draw, primitivu a pixelu, nebo vlákna funkce vertex shader, jejichž výsledky jsou interpolovány voláním draw, primitivem a pixelem, které jste vybrali. U funkcí vertex shader můžete dále upřesnit vstupní bod do určitého vrcholu rozbalením podrobností funkce vertex shader.  
+   > [!NOTE]
+   >  Tento vstupní bod do ladicího programu HLSL ladí buď vlákno funkce pixel shader, které odpovídá zvolenému volání draw, primitivu a pixelu, nebo vlákna funkce vertex shader, jejichž výsledky jsou interpolovány voláním draw, primitivem a pixelem, které jste vybrali. U funkcí vertex shader můžete dále upřesnit vstupní bod do určitého vrcholu rozbalením podrobností funkce vertex shader.  
   
- Příklady o tom, jak použít ladicí program HLSL k ladění chyb shaderu naleznete v tématu [příklady](../debugger/graphics-diagnostics-examples.md) nebo v návodech v části Viz také.  
+   Příklady o tom, jak použít ladicí program HLSL k ladění chyb shaderu naleznete v tématu [příklady](../debugger/graphics-diagnostics-examples.md) nebo v návodech v části Viz také.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

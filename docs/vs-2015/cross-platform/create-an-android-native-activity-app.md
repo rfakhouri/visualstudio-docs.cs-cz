@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899926"
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace s NativeActivity pro Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ Při instalaci Visual C++ pro vývoj mobilních řešení napříč platformami 
   
 #### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Otevřít Visual Studio. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
+1. Otevřít Visual Studio. V panelu nabídky zvolte **souboru**, **nový**, **projektu**.  
   
-2.  V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++**, **různé platformy**a klikněte na tlačítko  **Aplikace s Nativeactivity (Android)** šablony.  
+2. V **nový projekt** dialogovém okně **šablony**, zvolte **Visual C++**, **různé platformy**a klikněte na tlačítko  **Aplikace s Nativeactivity (Android)** šablony.  
   
-3.  Dejte aplikaci s názvem jako `MyAndroidApp`a klikněte na tlačítko **OK**.  
+3. Dejte aplikaci s názvem jako `MyAndroidApp`a klikněte na tlačítko **OK**.  
   
-     ![Vytvoření projektu Nativeactivity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![Vytvoření projektu Nativeactivity](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio vytvoří nové řešení a otevře se Průzkumník řešení.  
+    Visual Studio vytvoří nové řešení a otevře se Průzkumník řešení.  
   
-     ![Aktivity projektu v Průzkumníku řešení](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![Aktivity projektu v Průzkumníku řešení](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- Nové řešení aplikace Android Native Activity obsahuje dva projekty:  
+   Nové řešení aplikace Android Native Activity obsahuje dva projekty:  
   
 -   **MyAndroidApp.NativeActivity** obsahuje odkazy na a spojovacího kódu pro svoji aplikaci spouštět jako nativní aktivita v Androidu. Implementace vstupních bodů ze spojovacího kódu jsou v main.cpp. Soubor pch.h jsou předkompilované hlavičky. Tento projekt aplikace Nativeactivity je zkompilován do sdílené knihovny soubor .so, který převezme balícího projektu.  
   

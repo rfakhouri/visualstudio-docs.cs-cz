@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867179"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Postupy: zamykání listů
   Funkce ochrany v aplikaci Microsoft Office Excel pomáhá zabránit uživatelům a kód v úpravách objektů v listu. Ve výchozím nastavení všechny buňky jsou zamknuté po zapnutí ochrany.  
@@ -39,11 +39,11 @@ ms.locfileid: "35676598"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>K ochraně listu v Návrháři  
   
-1.  V **změny** skupinu **revize** klikněte na tlačítko **Zamknout list**.  
+1. V **změny** skupinu **revize** klikněte na tlačítko **Zamknout list**.  
   
-     **Zamknout list** zobrazí se dialogové okno. Můžete nastavit heslo a volitelně zadat určité akce, které uživatelé můžou provádět s listem, jako je formát buňky nebo vložit řádky.  
+    **Zamknout list** zobrazí se dialogové okno. Můžete nastavit heslo a volitelně zadat určité akce, které uživatelé můžou provádět s listem, jako je formát buňky nebo vložit řádky.  
   
- Můžete také povolit uživatelům upravovat konkrétní rozsahy v chráněném listů.  
+   Můžete také povolit uživatelům upravovat konkrétní rozsahy v chráněném listů.  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>Povolit úpravy v konkrétní oblasti  
   

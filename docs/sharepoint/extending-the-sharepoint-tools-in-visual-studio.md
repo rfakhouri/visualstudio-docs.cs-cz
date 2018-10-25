@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890670"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Rozšíření nástrojů SharePoint v sadě Visual Studio
   Nástroje služby SharePoint v sadě Visual Studio požadavkům mnoha scénářů vývoje aplikace. Však můžete narazit na případy, kdy neposkytují funkce, které vyžadují vy nebo ostatní vývojáři. V těchto případech můžete rozšířit nástroje služby SharePoint k vytvoření funkce, které potřebujete.
@@ -38,11 +38,11 @@ ms.locfileid: "42625921"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru
  V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** okně zobrazíte mnoho součástí jednoho nebo více místních webů služby SharePoint v hierarchickém stromovém zobrazení. Můžete rozšířit také **připojení služby SharePoint** uzel následujícími způsoby:
 
--   Přidáním vlastních uzlů. To je užitečné, pokud chcete zobrazit součásti Sharepointové weby, které nejsou zobrazeny ve výchozím nastavení.
+- Přidáním vlastních uzlů. To je užitečné, pokud chcete zobrazit součásti Sharepointové weby, které nejsou zobrazeny ve výchozím nastavení.
 
--   Rozšířením existujících uzlů. Například můžete přidat nový podřízený uzel do existujícího uzlu, nebo můžete přidat položky místní nabídky k uzlu a provádět úlohy, když vývojář klikne na položku nabídky.
+- Rozšířením existujících uzlů. Například můžete přidat nový podřízený uzel do existujícího uzlu, nebo můžete přidat položky místní nabídky k uzlu a provádět úlohy, když vývojář klikne na položku nabídky.
 
- Další informace najdete v tématu [rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Další informace najdete v tématu [rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Požadavky na vývojový počítač
  Jak vytvořit rozšíření pro nástroje služby SharePoint, vývojový počítač musí splňovat stejné požadavky na vytváření řešení služby SharePoint v sadě Visual Studio.

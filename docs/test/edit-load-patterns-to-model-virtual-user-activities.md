@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862499"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -56,32 +56,32 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
  Vzor zatížení kroku lze použít ke zvýšení zatížení na serveru nebo serverech při spuštění testu zatížení tak, abyste viděli, jak se mění výkon zvýšením zvýšení zatížení uživatele. Například, pokud chcete zobrazit, jak váš server nebo servery fungují jako zátěž uživatelů zvýší na 2 000 uživatelů, může spustit 10 hodinový zátěžový test pomocí vzor zatížení kroku, který má následující vlastnosti:
 
--   **Počáteční počet uživatelů**: 100
+- **Počáteční počet uživatelů**: 100
 
--   **Maximální počet uživatelů**: 2000
+- **Maximální počet uživatelů**: 2000
 
--   **Doba trvání kroku (sekundy)**: víc než 1 800
+- **Doba trvání kroku (sekundy)**: víc než 1 800
 
--   **Doba (v sekundách) doběhu kroku**: 20
+- **Doba (v sekundách) doběhu kroku**: 20
 
--   **Krok počtu uživatelů**: 100
+- **Krok počtu uživatelů**: 100
 
- Tato nastavení spuštění zátěžového testu po dobu 30 minut (1800 sekund) na uživatele načte 100, 200, 300 a až 2 000 uživatelů. **Doba náběhu kroku** vlastnost je stojí za zvláštní pozornost, protože se jedná pouze jeden z těchto vlastností, které nejsou k dispozici pro výběr v **Průvodce novým zátěžovým testem**. Tato vlastnost umožňuje zvýšení z jednoho kroku do druhého (například z 100 až 200 uživatelů) dochází postupně místo okamžitě. V tomto příkladu uživatelské zatížení by se zvýšilo ze 100 na 200 uživatelů po dobu 20 sekund (zvýšení pěti uživatelů každou sekundu). Další informace najdete v tématu [postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Tato nastavení spuštění zátěžového testu po dobu 30 minut (1800 sekund) na uživatele načte 100, 200, 300 a až 2 000 uživatelů. **Doba náběhu kroku** vlastnost je stojí za zvláštní pozornost, protože se jedná pouze jeden z těchto vlastností, které nejsou k dispozici pro výběr v **Průvodce novým zátěžovým testem**. Tato vlastnost umožňuje zvýšení z jednoho kroku do druhého (například z 100 až 200 uživatelů) dochází postupně místo okamžitě. V tomto příkladu uživatelské zatížení by se zvýšilo ze 100 na 200 uživatelů po dobu 20 sekund (zvýšení pěti uživatelů každou sekundu). Další informace najdete v tématu [postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Cílově zaměřeného vzoru zátížení
 
  Cílově zaměřeného vzoru se podobá vzoru kroku ale přizpůsobí uživatelské zatížení na základě prahových hodnot čítačů výkonu a úpravy zatížení pravidelné uživatele. Založeno na cíli zatížení jsou užitečné pro širokou škálu různé účely:
 
--   Maximalizace výstup z agentů: měření klíč omezení metrika agenta pro maximalizaci výstup agentů. Obvykle je procesoru; Však mohou být také paměti.
+- Maximalizace výstup z agentů: měření klíč omezení metrika agenta pro maximalizaci výstup agentů. Obvykle je procesoru; Však mohou být také paměti.
 
--   Dosažením určité úrovně cílový prostředek, obvykle využití procesoru, na cílovém serveru, pak měření propustnosti na této úrovni. To umožňuje provést porovnání pro spuštění propustnosti přiřazena konzistentní úroveň využití prostředků na serveru.
+- Dosažením určité úrovně cílový prostředek, obvykle využití procesoru, na cílovém serveru, pak měření propustnosti na této úrovni. To umožňuje provést porovnání pro spuštění propustnosti přiřazena konzistentní úroveň využití prostředků na serveru.
 
--   Oslovení cílové úrovni propustnosti na serveru.
+- Oslovení cílové úrovni propustnosti na serveru.
 
- V následující tabulce ukazuje příklad cílově zaměřeného vzoru s následujícím nastavením vlastnosti:
+  V následující tabulce ukazuje příklad cílově zaměřeného vzoru s následujícím nastavením vlastnosti:
 
 |Skupina vlastností|Vlastnost|Hodnota|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Čítač výkonu|Kategorie|Procesor|
 |Čítač výkonu|Počítače|ContosoServer1|
 |Čítač výkonu|Čítač|% Času procesoru|
@@ -109,7 +109,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 ## <a name="tasks"></a>Úlohy
 
 |Úlohy|Související témata|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Určení vzoru počáteční zatížení pro zátěžový test:** při vytváření zátěžového testu s použitím **nového Průvodce zátěžovým testem**, vyberte vzor zatížení.|-   [Vzor zatížení změňte na](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Úprava vzoru zatížení pro zátěžový test:** po vytvoření zátěžového testu můžete upravit ve vzoru zatížení **editoru zátěžového testu**.|-   [Postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Určení, zda virtuálních uživatelů v vašeho zátěžového testu scénáři by měl obsahovat data ve webové mezipaměti:** můžete změnit **procentuální podíl nových uživatelů** vlastnost ovlivňují způsob, ve kterém zátěžový test simuluje webové ukládání do mezipaměti, který by byla prováděna ve webovém prohlížeči pro virtuálního uživatele.|-   [Postupy: určení procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

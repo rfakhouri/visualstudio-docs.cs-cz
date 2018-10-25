@@ -20,12 +20,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2584c3cdd60c130183e09d2a809ff0ee1621856d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868843"
 ---
 # <a name="localizing-menu-commands"></a>Lokalizace příkazů nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,48 +37,48 @@ Můžete zadat lokalizovaný text nabídky a panelu nástrojů příkazy ve vytv
 ## <a name="localizing-command-names"></a>Lokalizace názvů příkazů  
  V balíčcích VSPackage příkazy nabídky a tlačítka panelu nástrojů jsou definovány v souboru .vsct.  
   
-1.  V **Průzkumníka řešení**, změňte název souboru .vsct z *filename*.vsct k *filename*.en-US.vsct.  
+1. V **Průzkumníka řešení**, změňte název souboru .vsct z *filename*.vsct k *filename*.en-US.vsct.  
   
-2.  Vytvořte kopii *filename*.en-US.vsct pro každý lokalizovaný jazyk.  
+2. Vytvořte kopii *filename*.en-US.vsct pro každý lokalizovaný jazyk.  
   
-     Název každé kopie *filename*. *Národní prostředí*.vsct, kde *národní prostředí* je název konkrétní jazykové verze. Seznam hodnot název jazykové verze, najdete v části [ID národního prostředí přiřazené společností Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
+    Název každé kopie *filename*. *Národní prostředí*.vsct, kde *národní prostředí* je název konkrétní jazykové verze. Seznam hodnot název jazykové verze, najdete v části [ID národního prostředí přiřazené společností Microsoft](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx).  
   
-     Tyto *filename*. *Národní prostředí*soubory .vsct bude obsahovat text lokalizované nabídky pro svůj balíček.  
+    Tyto *filename*. *Národní prostředí*soubory .vsct bude obsahovat text lokalizované nabídky pro svůj balíček.  
   
-3.  Otevřete každý *filename*. *Národní prostředí*souboru .vsct lokalizovat text.  
+3. Otevřete každý *filename*. *Národní prostředí*souboru .vsct lokalizovat text.  
   
-    1.  Upravit [ButtonText](../extensibility/buttontext-element.md) elementu hodnoty podle potřeby pro konkrétní jazyk.  
+   1. Upravit [ButtonText](../extensibility/buttontext-element.md) elementu hodnoty podle potřeby pro konkrétní jazyk.  
   
-    2.  Pokud zadáte lokalizované ikony, upravte [rastrový obrázek](../extensibility/bitmap-element.md) hodnoty tak, aby odkazoval na cílové soubory.  
+   2. Pokud zadáte lokalizované ikony, upravte [rastrový obrázek](../extensibility/bitmap-element.md) hodnoty tak, aby odkazoval na cílové soubory.  
   
-     Následující příklad ukazuje angličtinu a slovenštinu text tlačítka pro příkaz pro otevření panelu nástrojů Průzkumník řady stromu.  
+      Následující příklad ukazuje angličtinu a slovenštinu text tlačítka pro příkaz pro otevření panelu nástrojů Průzkumník řady stromu.  
   
-     [FamilyTree.en US.vsct]  
+      [FamilyTree.en US.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [FamilyTree.es ES.vsct]  
+    [FamilyTree.es ES.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localizing-other-text-resources"></a>Lokalizace prostředků jiných Text  
  Text prostředků než názvy příkazů jsou definovány v souborech prostředky (RESX).  

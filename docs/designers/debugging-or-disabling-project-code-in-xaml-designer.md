@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: da27e119c26a304f2b49f641509c87f15535cc0c
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816775"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Ladění nebo zakázání kódu projektu v Návrháři XAML
 
@@ -94,7 +94,7 @@ Když kód projektu je zakázaný, sada Visual Studio zobrazí zástupné symbol
 
 V Návrháři XAML můžete změnit možnosti zobrazení ovládacího prvku můžete zobrazit jenom ovládacích prvků platformy ze sady Windows SDK. Toto může vylepšit spolehlivost tohoto návrháře XAML.
 
-Chcete-li změnit možnosti zobrazení ovládacího prvku, klikněte na ikonu v levé dolní části okna návrháře a pak vyberte **možnosti zobrazení ovládacího prvku** tlačítka:
+Chcete-li změnit možnosti zobrazení ovládacího prvku, klikněte na ikonu v levé dolní části okna návrháře a potom vyberte možnosti v části **možnosti zobrazení ovládacího prvku**:
 
 ![Možnosti zobrazení ovládacího prvku](../designers/media/control_display_options.png)
 

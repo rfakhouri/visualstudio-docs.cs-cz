@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901317"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Začínáme s rozšířeními service a editoru jazyka
 Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnující například sbalování, párování složených závorek, technologie IntelliSense a návrhy, programovacího jazyka nebo jakýkoli typ obsahu. Můžete také přizpůsobit vzhled a chování editoru sady Visual Studio, například text barevné zvýrazňování, okrajů, vylepšení a další vizuální prvky. Můžete také definovat vlastní typ obsahu a definujte vzhled a chování textové zobrazení, ve kterých se zobrazí váš obsah.  
@@ -44,17 +44,17 @@ Rozšíření editoru slouží k přidání služby jazykové vlastnosti zahrnuj
   
  Tady jsou některé základní typy rozšíření editoru:  
   
--   Okraje a posuvníky  
+- Okraje a posuvníky  
   
--   Značky  
+- Značky  
   
--   Vylepšení  
+- Vylepšení  
   
--   Možnosti  
+- Možnosti  
   
--   IntelliSense  
+- IntelliSense  
   
- Další informace o bodech rozšíření editoru, najdete v části [Rozšiřovací body služby a editoru jazyka](../extensibility/language-service-and-editor-extension-points.md).  
+  Další informace o bodech rozšíření editoru, najdete v části [Rozšiřovací body služby a editoru jazyka](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Nasazení rozšíření editoru  
  V sadě Visual Studio nasadit rozšíření editoru tak, že přidáte soubor metadat s názvem *source.extension.vsixmanifest* k řešení, sestavení řešení a následným přidáním kopii binárních souborů a manifest ve složce, která se označuje do sady Visual Studio. Soubor manifestu definuje základních faktů o rozšíření (například názvu, autora, verze a typu obsahu). Další informace o souboru manifestu VSIX a tom, jak nasadit rozšíření najdete v tématu [rozšíření sady Visual Studio příjemce](../extensibility/shipping-visual-studio-extensions.md).  

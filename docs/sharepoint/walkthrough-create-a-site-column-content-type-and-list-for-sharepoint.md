@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900121"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupce webu služby SharePoint, nebo *pole*– stejně jako typ obsahu, který používá sloupce webu. Také ukazuje, jak vytvořit seznam, který používá nového typu obsahu.  
   
  Tento návod zahrnuje následující úlohy:  
   
--   [Vytváření sloupců webu vlastní](#BKMK_CreatingCustSiteCols).  
+- [Vytváření sloupců webu vlastní](#BKMK_CreatingCustSiteCols).  
   
--   [Vytváří se vlastní typ obsahu](#BKMK_CreateCustContType).  
+- [Vytváří se vlastní typ obsahu](#BKMK_CreateCustContType).  
   
--   [Vytvoření seznamu](#BKMK_CreateList).  
+- [Vytvoření seznamu](#BKMK_CreateList).  
   
--   [Vytvoření seznamu](#BKMK_CreateList).  
+- [Vytvoření seznamu](#BKMK_CreateList).  
   
--   [Testování aplikace](#BKMK_TestApp).  
+- [Testování aplikace](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  

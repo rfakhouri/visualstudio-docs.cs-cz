@@ -32,12 +32,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5c208478147e0b264165383df7deea23720c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867894"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ Pokud ladíte aplikace knihovny MFC, může být užitečné tyto techniky ladě
   
  [Zjišťování nevracení paměti v prostředí MFC](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [Sledování přidělení paměti](#BKMK_Tracking_memory_allocations)  
+- [Sledování přidělení paměti](#BKMK_Tracking_memory_allocations)  
   
--   [Povolení diagnostiky paměti](#BKMK_Enabling_memory_diagnostics)  
+- [Povolení diagnostiky paměti](#BKMK_Enabling_memory_diagnostics)  
   
--   [Pořizování snímků paměti](#BKMK_Taking_memory_snapshots)  
+- [Pořizování snímků paměti](#BKMK_Taking_memory_snapshots)  
   
--   [Statistika paměti zobrazení](#BKMK_Viewing_memory_statistics)  
+- [Statistika paměti zobrazení](#BKMK_Viewing_memory_statistics)  
   
--   [Vypíše aktuální objekt](#BKMK_Taking_object_dumps)  
+- [Vypíše aktuální objekt](#BKMK_Taking_object_dumps)  
   
-    -   [Interpretace paměti výpisy stavu systému](#BKMK_Interpreting_memory_dumps)  
+  - [Interpretace paměti výpisy stavu systému](#BKMK_Interpreting_memory_dumps)  
   
-    -   [Vypíše přizpůsobení objektu](#BKMK_Customizing_object_dumps)  
+  - [Vypíše přizpůsobení objektu](#BKMK_Customizing_object_dumps)  
   
-     [Zmenšení velikosti knihovny MFC ladění sestavení](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+    [Zmenšení velikosti knihovny MFC ladění sestavení](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [Vytvoření aplikace knihovny MFC s ladicími informacemi pro vybrané moduly](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+  - [Vytvoření aplikace knihovny MFC s ladicími informacemi pro vybrané moduly](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> Afxdebugbreak –  
  Knihovna MFC poskytuje speciální [afxdebugbreak –](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) funkce pro pevné zakódování zarážky ve zdrojovém kódu:  
@@ -145,62 +145,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **K povolení nebo zakázání Diagnostika paměti**  
   
--   Volání funkce globální [afxenablememorytracking –](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) k zapnutí nebo vypnutí diagnostiky paměti alokátoru. Protože Diagnostika paměti jsou standardně povoleny v knihovně ladění, budete obvykle používat této funkce dočasně vypnout, což zvyšuje rychlost provádění programu a snižuje diagnostický výstup.  
+- Volání funkce globální [afxenablememorytracking –](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) k zapnutí nebo vypnutí diagnostiky paměti alokátoru. Protože Diagnostika paměti jsou standardně povoleny v knihovně ladění, budete obvykle používat této funkce dočasně vypnout, což zvyšuje rychlost provádění programu a snižuje diagnostický výstup.  
   
- **Chcete-li vybrat konkrétní paměti diagnostické funkce s afxmemdf –**  
+  **Chcete-li vybrat konkrétní paměti diagnostické funkce s afxmemdf –**  
   
--   Pokud chcete přesnější kontrolu nad paměti diagnostické funkce, můžete selektivně zapnout diagnostické funkce jednotlivých paměti zapnout a vypnout tak, že nastavíte hodnotu globální proměnné knihovny MFC [afxmemdf –](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Tato proměnná může mít následující hodnoty podle specifikace výčtového typu **afxmemdf –**.  
+- Pokud chcete přesnější kontrolu nad paměti diagnostické funkce, můžete selektivně zapnout diagnostické funkce jednotlivých paměti zapnout a vypnout tak, že nastavíte hodnotu globální proměnné knihovny MFC [afxmemdf –](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Tato proměnná může mít následující hodnoty podle specifikace výčtového typu **afxmemdf –**.  
   
-    |Hodnota|Popis|  
-    |-----------|-----------------|  
-    |**allocmemdf –**|Zapněte diagnostiku paměti alokátoru (výchozí).|  
-    |**delayFreeMemDF**|Zpoždění uvolnění paměti při volání metody `delete` nebo `free` až do ukončení programu. To způsobí, že program k přidělení maximální množství paměti.|  
-    |**checkAlwaysMemDF**|Volání [afxcheckmemory –](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) pokaždé, když je paměť přidělena nebo uvolněna.|  
+  |Hodnota|Popis|  
+  |-----------|-----------------|  
+  |**allocmemdf –**|Zapněte diagnostiku paměti alokátoru (výchozí).|  
+  |**delayFreeMemDF**|Zpoždění uvolnění paměti při volání metody `delete` nebo `free` až do ukončení programu. To způsobí, že program k přidělení maximální množství paměti.|  
+  |**checkAlwaysMemDF**|Volání [afxcheckmemory –](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) pokaždé, když je paměť přidělena nebo uvolněna.|  
   
-     Tyto hodnoty můžete použít v kombinaci pomocí provádí operace logického operátoru OR, jak je znázorněno zde:  
+   Tyto hodnoty můžete použít v kombinaci pomocí provádí operace logického operátoru OR, jak je znázorněno zde:  
   
-    ```cpp  
-    afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
-    ```  
+  ```cpp  
+  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
+  ```  
   
- [V tomto tématu](#BKMK_In_this_topic)  
+  [V tomto tématu](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Pořizování snímků paměti  
   
-1.  Vytvoření [cmemorystate –](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objektu a volání [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) členskou funkci. Tím se vytvoří první snímek paměti.  
+1. Vytvoření [cmemorystate –](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objektu a volání [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) členskou funkci. Tím se vytvoří první snímek paměti.  
   
-2.  Poté, co váš program provede jeho operace přidělování a navracení zpět paměti, vytvořte další `CMemoryState` objektu a volání `Checkpoint` pro daný objekt. Načte druhý snímek využití paměti.  
+2. Poté, co váš program provede jeho operace přidělování a navracení zpět paměti, vytvořte další `CMemoryState` objektu a volání `Checkpoint` pro daný objekt. Načte druhý snímek využití paměti.  
   
-3.  Vytvořte třetí `CMemoryState` objektu a volání jeho [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) členská funkce, jako argumenty zadání předchozích dvou `CMemoryState` objekty. Pokud je rozdíl mezi dvěma stavy paměti, `Difference` funkce vrátí nenulovou hodnotu. To znamená, že, které dosud bylo zrušeno některé bloky paměti.  
+3. Vytvořte třetí `CMemoryState` objektu a volání jeho [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) členská funkce, jako argumenty zadání předchozích dvou `CMemoryState` objekty. Pokud je rozdíl mezi dvěma stavy paměti, `Difference` funkce vrátí nenulovou hodnotu. To znamená, že, které dosud bylo zrušeno některé bloky paměti.  
   
-     Tento příklad ukazuje, jak kód funguje:  
+    Tento příklad ukazuje, jak kód funguje:  
   
-    ```  
-    // Declare the variables needed  
-    #ifdef _DEBUG  
-        CMemoryState oldMemState, newMemState, diffMemState;  
-        oldMemState.Checkpoint();  
-    #endif  
+   ```  
+   // Declare the variables needed  
+   #ifdef _DEBUG  
+       CMemoryState oldMemState, newMemState, diffMemState;  
+       oldMemState.Checkpoint();  
+   #endif  
   
-        // Do your memory allocations and deallocations.  
-        CString s("This is a frame variable");  
-        // The next object is a heap object.  
-       CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
+       // Do your memory allocations and deallocations.  
+       CString s("This is a frame variable");  
+       // The next object is a heap object.  
+      CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
   
-    #ifdef _DEBUG  
-        newMemState.Checkpoint();  
-        if( diffMemState.Difference( oldMemState, newMemState ) )  
-        {  
-            TRACE( "Memory leaked!\n" );  
-        }  
-    #endif  
-    ```  
+   #ifdef _DEBUG  
+       newMemState.Checkpoint();  
+       if( diffMemState.Difference( oldMemState, newMemState ) )  
+       {  
+           TRACE( "Memory leaked!\n" );  
+       }  
+   #endif  
+   ```  
   
-     Všimněte si, že se výpisy paměti kontrola uváděn v závorkách `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blokuje tak, aby se kompilují pouze v ladicí verze aplikace.  
+    Všimněte si, že se výpisy paměti kontrola uváděn v závorkách `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blokuje tak, aby se kompilují pouze v ladicí verze aplikace.  
   
-     Teď, když víte, existuje nevracení paměti, můžete použít jiné členské funkce [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , který vám pomůže ho najít.  
+    Teď, když víte, existuje nevracení paměti, můžete použít jiné členské funkce [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , který vám pomůže ho najít.  
   
- [V tomto tématu](#BKMK_In_this_topic)  
+   [V tomto tématu](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Statistika paměti zobrazení  
  [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) funkce zkoumá dva objekty stavu paměti a zjišťuje všechny objekty není zrušeno přidělení haldy mezi stavy začátek a konec. Poté, co jste pořídili snímky paměti a jejich porovnání pomocí `CMemoryState::Difference`, můžete volat [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) zobrazíte informace o objektech, které dosud bylo zrušeno.  
@@ -424,72 +424,72 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Zmenšení velikosti knihovny MFC ladění sestavení  
  Informace o ladění pro rozsáhlé aplikace knihovny MFC může trvat až velké množství místa na disku. Jeden z následujících postupů můžete použít ke zmenšení velikosti:  
   
-1.  Znovu sestavit pomocí knihovny MFC [/Z7, / zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) možnost, namísto **/Z7**. Tyto možnosti vytvoření souboru databáze (PDB) jednoduchý program, který obsahuje informace o ladění pro celou knihovnu, snižují redundanci a úspora místa.  
+1. Znovu sestavit pomocí knihovny MFC [/Z7, / zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) možnost, namísto **/Z7**. Tyto možnosti vytvoření souboru databáze (PDB) jednoduchý program, který obsahuje informace o ladění pro celou knihovnu, snižují redundanci a úspora místa.  
   
-2.  Opětovné sestavení knihovny MFC bez ladicích informací (žádné [/Z7, / zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) možnost). V takovém případě chybějící informace o ladění zabrání pomocí většina funkcí ladicího programu v rámci kódu knihovny MFC, ale protože knihovny MFC jsou již důkladně ladit, nemusí to být problém.  
+2. Opětovné sestavení knihovny MFC bez ladicích informací (žádné [/Z7, / zi, /ZI (formát informací o ladění)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) možnost). V takovém případě chybějící informace o ladění zabrání pomocí většina funkcí ladicího programu v rámci kódu knihovny MFC, ale protože knihovny MFC jsou již důkladně ladit, nemusí to být problém.  
   
-3.  Vytvoření vlastní aplikace s ladicími informacemi pro vybrané moduly pouze, jak je popsáno níže.  
+3. Vytvoření vlastní aplikace s ladicími informacemi pro vybrané moduly pouze, jak je popsáno níže.  
   
- [V tomto tématu](#BKMK_In_this_topic)  
+   [V tomto tématu](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Vytvoření aplikace knihovny MFC s ladicími informacemi pro vybrané moduly  
  Vytváření vybrané moduly s knihovnami MFC ladění umožňuje používat krokování a jiných ladění zařízení v těchto modulech. Tento postup využívá i ladění a vydání režimy Visual C++ makefile, tedy vyžadovala změny podle následujících kroků (a také provedete "sestavit vše znovu" nezbytné, pokud je nutné použít úplné sestavení pro vydání).  
   
-1.  V Průzkumníku řešení vyberte projekt.  
+1. V Průzkumníku řešení vyberte projekt.  
   
-2.  Z **zobrazení** nabídce vyberte možnost **stránky vlastností**.  
+2. Z **zobrazení** nabídce vyberte možnost **stránky vlastností**.  
   
-3.  Nejprve vytvoříte novou konfiguraci projektu.  
+3. Nejprve vytvoříte novou konfiguraci projektu.  
   
-    1.  V  **\<Projekt > stránky vlastností** dialogové okno, klikněte na tlačítko **nástroje Configuration Manager** tlačítko.  
+   1.  V  **\<Projekt > stránky vlastností** dialogové okno, klikněte na tlačítko **nástroje Configuration Manager** tlačítko.  
   
-    2.  V [dialogové okno nástroje Configuration Manager](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >**.  
+   2.  V [dialogové okno nástroje Configuration Manager](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), vyhledejte svůj projekt v mřížce. V **konfigurace** sloupci vyberte  **\<nový … >**.  
   
-    3.  V [dialogové okno Nový projekt konfigurace](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), zadejte název pro novou konfiguraci, jako je například "Částečné Debug", **název konfigurace projektu** pole.  
+   3.  V [dialogové okno Nový projekt konfigurace](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), zadejte název pro novou konfiguraci, jako je například "Částečné Debug", **název konfigurace projektu** pole.  
   
-    4.  V **Kopírovat nastavení z** klikněte na položku **vydání**.  
+   4.  V **Kopírovat nastavení z** klikněte na položku **vydání**.  
   
-    5.  Klikněte na tlačítko **OK** zavřete **nové konfigurace projektu**dialogové okno.  
+   5.  Klikněte na tlačítko **OK** zavřete **nové konfigurace projektu**dialogové okno.  
   
-    6.  Zavřít **nástroje Configuration Manager** dialogové okno.  
+   6.  Zavřít **nástroje Configuration Manager** dialogové okno.  
   
-4.  Nyní nastavíte možnosti pro celý projekt.  
+4. Nyní nastavíte možnosti pro celý projekt.  
   
-    1.  V **stránky vlastností** dialogovém okně **vlastnosti konfigurace** složky, vyberte **Obecné** kategorie.  
+   1.  V **stránky vlastností** dialogovém okně **vlastnosti konfigurace** složky, vyberte **Obecné** kategorie.  
   
-    2.  V mřížce nastavení projektu rozbalte **výchozí nastavení projektu** (v případě potřeby).  
+   2.  V mřížce nastavení projektu rozbalte **výchozí nastavení projektu** (v případě potřeby).  
   
-    3.  V části **výchozí nastavení projektu**, Najít **použít knihovnu MFC**. V pravém sloupci mřížky se zobrazí aktuální nastavení. Klikněte na aktuální nastavení a změňte ji na **použít knihovnu MFC ve statické knihovně**.  
+   3.  V části **výchozí nastavení projektu**, Najít **použít knihovnu MFC**. V pravém sloupci mřížky se zobrazí aktuální nastavení. Klikněte na aktuální nastavení a změňte ji na **použít knihovnu MFC ve statické knihovně**.  
   
-    4.  V levém podokně **stránky vlastností** dialogovém okně Otevřít **C/C++** a pak zvolte položku **preprocesor**. V mřížce vlastností najít **Definice preprocesoru** a nahradit "NDEBUG" s "_DEBUG".  
+   4.  V levém podokně **stránky vlastností** dialogovém okně Otevřít **C/C++** a pak zvolte položku **preprocesor**. V mřížce vlastností najít **Definice preprocesoru** a nahradit "NDEBUG" s "_DEBUG".  
   
-    5.  V levém podokně **stránky vlastností** dialogovém okně Otevřít **Linkeru** a pak zvolte položku **vstup** kategorie. V mřížce vlastností najít **Další závislosti**. V **Další závislosti** nastavení, zadejte "NAFXCWD. LIB"a"Knihovny runtime LIBCMT."  
+   5.  V levém podokně **stránky vlastností** dialogovém okně Otevřít **Linkeru** a pak zvolte položku **vstup** kategorie. V mřížce vlastností najít **Další závislosti**. V **Další závislosti** nastavení, zadejte "NAFXCWD. LIB"a"Knihovny runtime LIBCMT."  
   
-    6.  Klikněte na tlačítko **OK** nové možnosti sestavení uložte a zavřete **stránky vlastností** dialogové okno.  
+   6.  Klikněte na tlačítko **OK** nové možnosti sestavení uložte a zavřete **stránky vlastností** dialogové okno.  
   
-5.  Z **sestavení** nabídce vyberte možnost **znovu sestavit**. Odebere všechny informace o ladění z modulů, ale nemá vliv na knihovně MFC.  
+5. Z **sestavení** nabídce vyberte možnost **znovu sestavit**. Odebere všechny informace o ladění z modulů, ale nemá vliv na knihovně MFC.  
   
-6.  Teď musíte přidat informace o ladění zpět do vybrané moduly ve vaší aplikaci. Mějte na paměti, že můžete nastavit zarážky a provádět jiné funkce ladicího programu pouze v modulech, které jste zkompilovali s ladicími informacemi. Pro každý soubor projektu, ve které chcete zahrnout informace o ladění, proveďte následující kroky:  
+6. Teď musíte přidat informace o ladění zpět do vybrané moduly ve vaší aplikaci. Mějte na paměti, že můžete nastavit zarážky a provádět jiné funkce ladicího programu pouze v modulech, které jste zkompilovali s ladicími informacemi. Pro každý soubor projektu, ve které chcete zahrnout informace o ladění, proveďte následující kroky:  
   
-    1.  V Průzkumníku řešení otevřete **zdrojové soubory** složky umístěna ve složce projektu.  
+   1.  V Průzkumníku řešení otevřete **zdrojové soubory** složky umístěna ve složce projektu.  
   
-    2.  Vyberte soubor, který chcete nastavit informace o ladění.  
+   2.  Vyberte soubor, který chcete nastavit informace o ladění.  
   
-    3.  Z **zobrazení** nabídce vyberte možnost **stránky vlastností**.  
+   3.  Z **zobrazení** nabídce vyberte možnost **stránky vlastností**.  
   
-    4.  V **stránky vlastností** dialogovém okně **nastavení konfigurace** složku, otevřete **C/C++** vyberte složku **Obecné** kategorie.  
+   4.  V **stránky vlastností** dialogovém okně **nastavení konfigurace** složku, otevřete **C/C++** vyberte složku **Obecné** kategorie.  
   
-    5.  V mřížce vlastností najít **formát informací o ladění.**  
+   5.  V mřížce vlastností najít **formát informací o ladění.**  
   
-    6.  Klikněte na tlačítko **formát informací o ladění** nastavení a vyberte požadovanou možnost (obvykle **/zi**) pro ladicí informace.  
+   6.  Klikněte na tlačítko **formát informací o ladění** nastavení a vyberte požadovanou možnost (obvykle **/zi**) pro ladicí informace.  
   
-    7.  Pokud používáte aplikace vygenerované průvodcem aplikací nebo mít předkompilované hlavičky, budete muset nebo vypnout předkompilovaných hlaviček zkompilujte je znovu před kompilací ostatní moduly. Jinak zobrazí se upozornění C4650 a chybovou zprávou C2855. Předkompilované hlavičky můžete vypnout tak, že změníte **vytvořit/použít předkompilovanou hlavičku** nastavení  **\<projektu > vlastnosti** dialogové okno (**vlastnosti konfigurace**  složce **C/C++** podsložku, **předkompilované hlavičky** kategorie).  
+   7.  Pokud používáte aplikace vygenerované průvodcem aplikací nebo mít předkompilované hlavičky, budete muset nebo vypnout předkompilovaných hlaviček zkompilujte je znovu před kompilací ostatní moduly. Jinak zobrazí se upozornění C4650 a chybovou zprávou C2855. Předkompilované hlavičky můžete vypnout tak, že změníte **vytvořit/použít předkompilovanou hlavičku** nastavení  **\<projektu > vlastnosti** dialogové okno (**vlastnosti konfigurace**  složce **C/C++** podsložku, **předkompilované hlavičky** kategorie).  
   
-7.  Z **sestavení** nabídce vyberte možnost **sestavení** k opětovnému sestavení soubory projektu, které jsou zastaralé.  
+7. Z **sestavení** nabídce vyberte možnost **sestavení** k opětovnému sestavení soubory projektu, které jsou zastaralé.  
   
- Jako alternativu ke techniky popsané v tomto tématu, můžete zadat jednotlivé možnosti pro každý soubor externí soubor pravidel. Pokud chcete propojit s knihovnami MFC ladění, v takovém případě musíte definovat [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) příznak pro každý modul. Pokud chcete používat verzi knihovny MFC, je nutné definovat NDEBUG. Další informace o psaní externí soubory pravidel najdete v článku [NMake – odkaz](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
+   Jako alternativu ke techniky popsané v tomto tématu, můžete zadat jednotlivé možnosti pro každý soubor externí soubor pravidel. Pokud chcete propojit s knihovnami MFC ladění, v takovém případě musíte definovat [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) příznak pro každý modul. Pokud chcete používat verzi knihovny MFC, je nutné definovat NDEBUG. Další informace o psaní externí soubory pravidel najdete v článku [NMake – odkaz](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
   
- [V tomto tématu](#BKMK_In_this_topic)  
+   [V tomto tématu](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění jazyka Visual C++](../debugger/debugging-native-code.md)

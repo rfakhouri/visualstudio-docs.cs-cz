@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 689a9fee79b570fc73cebff0b7c8e99439975c1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863625"
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,87 +62,87 @@ Kroky v [prvního postupu](../ide/how-to-create-item-templates.md#export_templat
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>K povolení šablony položky, který se má použít v projektu úložiště  
   
-1.  Postupujte podle kroků v postupu výše pro export šablony položky.  
+1. Postupujte podle kroků v postupu výše pro export šablony položky.  
   
-2.  Extrahujte soubor .vstemplate ze souboru .zip, který byl zkopírován do... \Users\\*uživatelské jméno*\Documents\Visual Studio *verze*\Templates\ItemTemplates\ (nebo **exportované šablony**) složky.  
+2. Extrahujte soubor .vstemplate ze souboru .zip, který byl zkopírován do... \Users\\*uživatelské jméno*\Documents\Visual Studio *verze*\Templates\ItemTemplates\ (nebo **exportované šablony**) složky.  
   
-3.  Otevřete soubor .vstemplate v sadě Visual Studio.  
+3. Otevřete soubor .vstemplate v sadě Visual Studio.  
   
-4.  Pro Windows 8.1 ukládání projektu C#, v souboru .vstemplate přidejte následující kód XML v rámci otevírací a zavírací `<TemplateData>` značky: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4. Pro Windows 8.1 ukládání projektu C#, v souboru .vstemplate přidejte následující kód XML v rámci otevírací a zavírací `<TemplateData>` značky: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
   
-     Úložiště projektu C++ Windows 8.1 používá hodnotu `WinRT-Native-6.3`. Windows 10 a jinými typy projektů naleznete v tématu [templategroupid – Element (šablony sady Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Úložiště projektu C++ Windows 8.1 používá hodnotu `WinRT-Native-6.3`. Windows 10 a jinými typy projektů naleznete v tématu [templategroupid – Element (šablony sady Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-     Následující příklad ukazuje celý obsah souboru .vstemplate po řádku kódu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` do něj byl přidán. V tomto příkladu je specifické pro projekty jazyka C#. Můžete upravit <ProjectTpe> a \< [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md)> prvků, které mají určit další typy jazyka a projektu.  
+    Následující příklad ukazuje celý obsah souboru .vstemplate po řádku kódu XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` do něj byl přidán. V tomto příkladu je specifické pro projekty jazyka C#. Můžete upravit <ProjectTpe> a \< [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md)> prvků, které mají určit další typy jazyka a projektu.  
   
-    ```xml  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
-      <TemplateData>  
-        <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
-        <Name>MyItemStoreTemplate</Name>  
-        <Description>This is an example itemtemplate</Description>  
-        <ProjectType>CSharp</ProjectType>  
-        <SortOrder>10</SortOrder>  
-        <Icon>__TemplateIcon.ico</Icon>  
-        <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
-      </TemplateData>  
-      <TemplateContent>  
-        <References />  
-        <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
-        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
+     <TemplateData>  
+       <DefaultName>MyItemStoreTemplate.xaml</DefaultName>  
+       <Name>MyItemStoreTemplate</Name>  
+       <Description>This is an example itemtemplate</Description>  
+       <ProjectType>CSharp</ProjectType>  
+       <SortOrder>10</SortOrder>  
+       <Icon>__TemplateIcon.ico</Icon>  
+       <TemplateGroupID>WinRT-Managed</TemplateGroupID>  
+     </TemplateData>  
+     <TemplateContent>  
+       <References />  
+       <ProjectItem SubType="Designer" TargetFileName="$fileinputname$.xaml" ReplaceParameters="true">MyItemTemplate.xaml</ProjectItem>  
+       <ProjectItem SubType="Code" TargetFileName="$fileinputname$.xaml.cs" ReplaceParameters="true">MyItemTemplate.xaml.cs</ProjectItem>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     Další možné templategroupid – hodnoty, najdete v části [templategroupid – Element (šablony sady Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)). Odkaz na kompletní .vstemplate naleznete v tématu [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)  
+    Další možné templategroupid – hodnoty, najdete v části [templategroupid – Element (šablony sady Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)). Odkaz na kompletní .vstemplate naleznete v tématu [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)  
   
-5.  V sadě Visual Studio uložte soubor .vstemplate a zavřete ho.  
+5. V sadě Visual Studio uložte soubor .vstemplate a zavřete ho.  
   
-6.  Zkopírujte a vložte soubor .vstemplate zpět do souboru .zip, který je umístěný v... \Users\\*uživatelské jméno*\Documents\Visual Studio *verze*\Templates\ItemTemplates\ složky.  
+6. Zkopírujte a vložte soubor .vstemplate zpět do souboru .zip, který je umístěný v... \Users\\*uživatelské jméno*\Documents\Visual Studio *verze*\Templates\ItemTemplates\ složky.  
   
-     Pokud **kopírovat soubor** dialogové okno se zobrazí, zvolte **kopírovat a nahradit** možnost.  
+    Pokud **kopírovat soubor** dialogové okno se zobrazí, zvolte **kopírovat a nahradit** možnost.  
   
- Teď můžete přidat položku založenou na této šabloně [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projektu pomocí **přidat novou položku** dialogové okno.  
+   Teď můžete přidat položku založenou na této šabloně [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projektu pomocí **přidat novou položku** dialogové okno.  
   
- Další informace o názvy parametrů najdete v tématu [parametry šablony](../ide/template-parameters.md).  
+   Další informace o názvy parametrů najdete v tématu [parametry šablony](../ide/template-parameters.md).  
   
 ### <a name="to-enable-templates-for-specific-project-sub-types"></a>K povolení šablony pro konkrétní dílčí typy projektů  
   
-1.  Vývojové prostředí umožňuje zpřístupnit položky projektu z dialogového okna Přidat položku pro určité projekty. Tímto postupem můžete zpřístupnit vlastní položky pro Windows, Web, Office nebo databázových projektů.  
+1. Vývojové prostředí umožňuje zpřístupnit položky projektu z dialogového okna Přidat položku pro určité projekty. Tímto postupem můžete zpřístupnit vlastní položky pro Windows, Web, Office nebo databázových projektů.  
   
-     ProjectType – element vyhledejte v souboru .vstemplate šablony položky.  
+    ProjectType – element vyhledejte v souboru .vstemplate šablony položky.  
   
-     Přidat [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) element ihned po ProjectType – element.  
+    Přidat [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) element ihned po ProjectType – element.  
   
-2.  Textová hodnota elementu nastavena na jednu z následujících hodnot:  
+2. Textová hodnota elementu nastavena na jednu z následujících hodnot:  
   
-    1.  Windows  
+   1. Windows  
   
-    2.  Office  
+   2. Office  
   
-    3.  Databáze  
+   3. Databáze  
   
-    4.  Web  
+   4. Web  
   
-     Příklad: `<ProjectSubType>Database</ProjectSubType>`.  
+      Příklad: `<ProjectSubType>Database</ProjectSubType>`.  
   
-     Následující příklad ukazuje šablonu položky k dispozici pro projekty sady Office.  
+      Následující příklad ukazuje šablonu položky k dispozici pro projekty sady Office.  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
-        <TemplateData>  
-            <Name>Class</Name>  
-            <Description>An empty class file</Description>  
-            <Icon>Class.ico</Icon>  
-            <ProjectType>CSharp</ProjectType>  
-            <ProjectSubType>Office</ProjectSubType>  
-            <DefaultName>Class.cs</DefaultName>  
-        </TemplateData>  
-        <TemplateContent>  
-            <ProjectItem>Class1.cs</ProjectItem>  
-        </TemplateContent>  
-    </VSTemplate>  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Item" Version="2.0.0">  
+       <TemplateData>  
+           <Name>Class</Name>  
+           <Description>An empty class file</Description>  
+           <Icon>Class.ico</Icon>  
+           <ProjectType>CSharp</ProjectType>  
+           <ProjectSubType>Office</ProjectSubType>  
+           <DefaultName>Class.cs</DefaultName>  
+       </TemplateData>  
+       <TemplateContent>  
+           <ProjectItem>Class1.cs</ProjectItem>  
+       </TemplateContent>  
+   </VSTemplate>  
   
-    ```  
+   ```  
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Ruční vytvoření šablony položky bez použití průvodce Exportovat šablonu  
   

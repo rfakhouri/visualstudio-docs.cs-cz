@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862356"
 ---
 # <a name="how-to-stop-code-changes"></a>Postupy: Zastavení změn kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Upravit a pokračovat je právě aplikování změn kódu, můžete zastavit ope
   
 ### <a name="to-stop-applying-code-changes"></a>Zastavit provádění změn kódu  
   
--   Zvolte **zastavit provádění změn kódu** z **ladění** nabídky.  
+- Zvolte **zastavit provádění změn kódu** z **ladění** nabídky.  
   
- Tato položka nabídky je viditelná pouze v případě, že se aplikují změny kódu.  
+  Tato položka nabídky je viditelná pouze v případě, že se aplikují změny kódu.  
   
- Pokud zvolíte tuto možnost, žádná ze změn kódu není potvrzena.  
+  Pokud zvolíte tuto možnost, žádná ze změn kódu není potvrzena.  
   
 ## <a name="see-also"></a>Viz také  
  [Upravit a pokračovat](../debugger/edit-and-continue.md)   

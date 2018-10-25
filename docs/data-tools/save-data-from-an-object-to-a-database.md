@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d5e118e4d998a5abf87920ee54401bf53d4adfa
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 210d7ade5e54f9f76e40eaf577e7818db85176e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897885"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metody můžete uložit data v objektech k databázi (například `TableAdapter.Insert`). Další informace najdete v tématu [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
@@ -35,7 +35,7 @@ Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metod
 >  Při konfiguraci objektu typu TableAdapter, hlavního dotazu musí poskytnout dostatek informací, `DBDirect` metody, který se má vytvořit. Například pokud objektu TableAdapter je konfigurován pro dotazování na data z tabulky, která nemá sloupec primárního klíče definované, se nevygeneruje žádný `DBDirect` metody.
 
 |TableAdapter dbdirect – metody|Popis|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Přidá nové záznamy do databáze a umožňuje vám a zajistěte tak předání hodnot jednotlivých sloupců jako parametry metod.|
 |`TableAdapter.Update`|Aktualizace existujících záznamů v databázi. `Update` Metoda má sloupec původní a nové hodnoty jako parametry metod. Původní hodnoty se používají pro vyhledání záznamu původní a nové hodnoty se používají k aktualizaci záznamu.<br /><br /> `TableAdapter.Update` Metoda slouží také k synchronizaci změn v datové sadě zpět do databáze pomocí <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, nebo pole <xref:System.Data.DataRow>označují jako parametry metody.|
 |`TableAdapter.Delete`|Odstraní existující záznamy z databáze založené na původní hodnoty ve sloupcích předané jako parametry metod.|

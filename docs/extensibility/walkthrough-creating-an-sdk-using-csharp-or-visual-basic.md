@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835149"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
 V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu SDK jednoduché matematické knihovny a pak balíček sady SDK jako Visual Studio Extension (VSIX). Dokončíte následující postupy:  
@@ -31,29 +31,29 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
 ##  <a name="createClassLibrary"></a> Chcete-li vytvořit komponentu SimpleMath Windows Runtime  
   
-1.  V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.  
+1. V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.  
   
-2.  V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**, zvolte **Windows Store** uzel a klikněte na tlačítko **součástprostředíWindowsRuntime** šablony.  
+2. V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**, zvolte **Windows Store** uzel a klikněte na tlačítko **součástprostředíWindowsRuntime** šablony.  
   
-3.  V **název** zadejte **SimpleMath**a klikněte na tlačítko **OK** tlačítko.  
+3. V **název** zadejte **SimpleMath**a klikněte na tlačítko **OK** tlačítko.  
   
-4.  V **Průzkumníka řešení**, otevřete místní nabídku **SimpleMath** uzel projektu a klikněte na tlačítko **vlastnosti**.  
+4. V **Průzkumníka řešení**, otevřete místní nabídku **SimpleMath** uzel projektu a klikněte na tlačítko **vlastnosti**.  
   
-5.  Přejmenovat **Class1.cs** k **Arithmetic.cs** a aktualizovat ho tak, aby odpovídala následující kód:  
+5. Přejmenovat **Class1.cs** k **Arithmetic.cs** a aktualizovat ho tak, aby odpovídala následující kód:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  V **Průzkumníka řešení**, otevřete místní nabídku **řešení "SimpleMath"** uzel a klikněte na tlačítko **nástroje Configuration Manager**.  
+6. V **Průzkumníka řešení**, otevřete místní nabídku **řešení "SimpleMath"** uzel a klikněte na tlačítko **nástroje Configuration Manager**.  
   
-     **Nástroje Configuration Manager** zobrazí se dialogové okno.  
+    **Nástroje Configuration Manager** zobrazí se dialogové okno.  
   
-7.  V **konfigurace aktivního řešení** klikněte na položku **vydání**.  
+7. V **konfigurace aktivního řešení** klikněte na položku **vydání**.  
   
-8.  V **konfigurace** sloupce, ověřte, že **SimpleMath** řádek je nastavena na **vydání**a klikněte na tlačítko **Zavřít** tlačítko tak, aby přijímal Změňte.  
+8. V **konfigurace** sloupce, ověřte, že **SimpleMath** řádek je nastavena na **vydání**a klikněte na tlačítko **Zavřít** tlačítko tak, aby přijímal Změňte.  
   
-    > [!IMPORTANT]
-    >  Sada SDK pro komponentu SimpleMath obsahuje pouze jednu konfiguraci. Tato konfigurace musí být sestavení pro vydání, nebo aplikace, které používají součást nebudou předávat certifikaci[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
+   > [!IMPORTANT]
+   >  Sada SDK pro komponentu SimpleMath obsahuje pouze jednu konfiguraci. Tato konfigurace musí být sestavení pro vydání, nebo aplikace, které používají součást nebudou předávat certifikaci[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
   
 9. V **Průzkumníka řešení**, otevřete místní nabídku **SimpleMath** uzel projektu a klikněte na tlačítko **sestavení**.  
   
@@ -154,23 +154,23 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
 ##  <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd  
   
-1.  V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.  
+1. V panelu nabídky zvolte **souboru** > **nový** > **nový projekt**.  
   
-2.  V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **Windows Store** uzlu.  
+2. V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **Windows Store** uzlu.  
   
-3.  Zvolte **prázdnou aplikaci** šablony, pojmenujte projekt **ArithmeticUI**a klikněte na tlačítko **OK** tlačítko.  
+3. Zvolte **prázdnou aplikaci** šablony, pojmenujte projekt **ArithmeticUI**a klikněte na tlačítko **OK** tlačítko.  
   
-4.  V **Průzkumníka řešení**, otevřete místní nabídku **ArithmeticUI** projektu a klikněte na tlačítko **přidat** > **odkaz**.  
+4. V **Průzkumníka řešení**, otevřete místní nabídku **ArithmeticUI** projektu a klikněte na tlačítko **přidat** > **odkaz**.  
   
-5.  V seznamu typů odkazů, rozbalte **Windows**a klikněte na tlačítko **rozšíření**.  
+5. V seznamu typů odkazů, rozbalte **Windows**a klikněte na tlačítko **rozšíření**.  
   
-6.  V podokně podrobností vyberte **jednoduché matematické SDK** rozšíření.  
+6. V podokně podrobností vyberte **jednoduché matematické SDK** rozšíření.  
   
-     Zobrazí se další informace o vaši sadu SDK. Můžete použít **. Další informace** odkaz k otevření https://msdn.microsoft.com/, jak jste zadali v souboru SDKManifest.xml dříve v tomto návodu.  
+    Zobrazí se další informace o vaši sadu SDK. Můžete použít **. Další informace** odkaz k otevření https://msdn.microsoft.com/, jak jste zadali v souboru SDKManifest.xml dříve v tomto návodu.  
   
-7.  V **správce odkazů** dialogové okno, vyberte **jednoduché matematické SDK** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.  
+7. V **správce odkazů** dialogové okno, vyberte **jednoduché matematické SDK** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.  
   
-8.  V panelu nabídky zvolte **zobrazení** > **prohlížeče objektů**.  
+8. V panelu nabídky zvolte **zobrazení** > **prohlížeče objektů**.  
   
 9. V **Procházet** klikněte na položku **jednoduchých matematických**.  
   
@@ -239,7 +239,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
      Správný výsledek se zobrazí.  
   
- Úspěšně jste vytvořili a používat sady SDK rozšíření.  
+    Úspěšně jste vytvořili a používat sady SDK rozšíření.  
   
 ## <a name="see-also"></a>Viz také:  
  [Návod: Vytvoření sady SDK pomocí jazyka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

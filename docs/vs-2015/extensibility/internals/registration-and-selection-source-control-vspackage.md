@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818756"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrace a výběr (balíček VSPackage správy zdrojového kódu)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Ovládací prvek zdroje balíčku VSPackage musí být zaregistrovaný k vystave
 ### <a name="registry-entries"></a>Položky registru  
  Zdrojový ovládací prvek balíček potřebuje tři soukromé identifikátory GUID:  
   
--   Identifikátor GUID balíčku: Toto je hlavní identifikátor GUID pro balíček, který obsahuje implementaci ovládacího prvku zdroje (nazývané ID_Package v této části).  
+- Identifikátor GUID balíčku: Toto je hlavní identifikátor GUID pro balíček, který obsahuje implementaci ovládacího prvku zdroje (nazývané ID_Package v této části).  
   
--   Identifikátor GUID správy zdrojového kódu: Toto je identifikátor GUID pro správu verzí používá k registraci ve službě Visual Studio pomocí zástupných procedur ovládací prvek zdroje balíčku VSPackage a slouží také jako kontextu uživatelského rozhraní příkaz identifikátor GUID. Službu správy zdrojových kódů GUID je zaregistrovaný pod správou zdrojových kódů identifikátor GUID. V tomto příkladu se nazývá modul správy zdrojových kódů GUID ID_SccProvider.  
+- Identifikátor GUID správy zdrojového kódu: Toto je identifikátor GUID pro správu verzí používá k registraci ve službě Visual Studio pomocí zástupných procedur ovládací prvek zdroje balíčku VSPackage a slouží také jako kontextu uživatelského rozhraní příkaz identifikátor GUID. Službu správy zdrojových kódů GUID je zaregistrovaný pod správou zdrojových kódů identifikátor GUID. V tomto příkladu se nazývá modul správy zdrojových kódů GUID ID_SccProvider.  
   
--   Zdrojový ovládací prvek služby GUID: Jedná se o privátní službu GUID používá sada Visual Studio (nazývané SID_SccPkgService v této části). Kromě toho zdrojový balíček ovládací prvek musí definovat jiné identifikátory GUID pro balíčky VSPackages, okna nástrojů, a tak dále.  
+- Zdrojový ovládací prvek služby GUID: Jedná se o privátní službu GUID používá sada Visual Studio (nazývané SID_SccPkgService v této části). Kromě toho zdrojový balíček ovládací prvek musí definovat jiné identifikátory GUID pro balíčky VSPackages, okna nástrojů, a tak dále.  
   
- Následující položky registru musí být provedené balíčku VSPackage správy zdrojového kódu:  
+  Následující položky registru musí být provedené balíčku VSPackage správy zdrojového kódu:  
   
 |Název klíče|Položky|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ Ovládací prvek zdroje balíčku VSPackage musí být zaregistrovaný k vystave
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] načtení balíčku VSPackage správy zdrojového kódu při provádění kterékoli z následujících operací:  
   
--   Otevření řešení (Pokud je řešení pod správou zdrojových kódů).  
+- Otevření řešení (Pokud je řešení pod správou zdrojových kódů).  
   
-     Při otevření řešení nebo projekt pod správou zdrojových kódů, rozhraní IDE způsobí, že správy zdrojového kódu VSPackage, která byla určena pro příslušné řešení, který se má načíst.  
+   Při otevření řešení nebo projekt pod správou zdrojových kódů, rozhraní IDE způsobí, že správy zdrojového kódu VSPackage, která byla určena pro příslušné řešení, který se má načíst.  
   
--   Některé příkazy ze zdrojového balíčku VSPackage provádějí.  
+- Některé příkazy ze zdrojového balíčku VSPackage provádějí.  
   
- Ovládací prvek zdroje balíčku VSPackage by se měly načíst všechny součásti, které potřebuje pouze v případě, že se ve skutečnosti má být použita (jinak známé jako zpožděného načtení).  
+  Ovládací prvek zdroje balíčku VSPackage by se měly načíst všechny součásti, které potřebuje pouze v případě, že se ve skutečnosti má být použita (jinak známé jako zpožděného načtení).  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Vzájemná záměna automatické řešení na základě balíčku VSPackage  
  Ručně odkládacího souboru správy zdrojového kódu rozšíření VSPackages prostřednictvím [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **možnosti** dialogového okna **správy zdrojových kódů** kategorie. Automatické řešení balíčků založená na vzájemné záměny znamená, že zdroj balíčku ovládací prvek, který je určený pro konkrétní řešení je automaticky nastaven na aktivní při otevření tohoto řešení. Každý balíček ovládací prvek zdroje by měly implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zpracovává přepínání mezi oba zdroje moduly plug-in správy (implementace rozhraní API modulu Plug-in zdroje ovládacího prvku) a balíčků VSPackage správy zdrojového kódu.  
@@ -76,15 +76,15 @@ Ovládací prvek zdroje balíčku VSPackage musí být zaregistrovaný k vystave
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio uživatelského rozhraní pro výběr balíčku a přepínání  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje uživatelské rozhraní pro balíčku VSPackage správy zdrojového kódu a výběr modulu plug-in v **možnosti** dialogového okna **správy zdrojových kódů** kategorie. Umožňuje uživateli vybrat aktivní plug-in správy zdrojových kódů nebo VSPackage. Rozevírací seznam obsahuje:  
   
--   Všechny nainstalované balíčky správy zdrojového kódu  
+- Všechny nainstalované balíčky správy zdrojového kódu  
   
--   Všechny nainstalované moduly plug-in programu zdrojového ovládacího prvku  
+- Všechny nainstalované moduly plug-in programu zdrojového ovládacího prvku  
   
--   "Žádná" možnost, která zakáže zdrojového kódu  
+- "Žádná" možnost, která zakáže zdrojového kódu  
   
- Je viditelný pouze v uživatelském rozhraní podle výběru ovládacího prvku aktivní zdrojové. Výběr balíčku VSPackage skryje uživatelské rozhraní pro předchozí VSPackage a zobrazuje uživatelské rozhraní pro nový uzel. Aktivní VSPackage je vybrána na základě jednotlivých uživatelů. Pokud má několik kopií [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] otevřete souběžně, potenciálně každé z nich můžete použít jiné aktivní VSPackage. Pokud více uživatelům přihlášení do stejného počítače, každý uživatel může mít samostatné instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] otevřete, každý s jinou aktivní VSPackage. Pokud více instancí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zavřou uživatelem, správy zdrojového kódu VSPackage, který byl aktivní pro poslední otevřít řešení stane výchozí zdrojového balíčku VSPackage nastavit aktivní při restartování.  
+  Je viditelný pouze v uživatelském rozhraní podle výběru ovládacího prvku aktivní zdrojové. Výběr balíčku VSPackage skryje uživatelské rozhraní pro předchozí VSPackage a zobrazuje uživatelské rozhraní pro nový uzel. Aktivní VSPackage je vybrána na základě jednotlivých uživatelů. Pokud má několik kopií [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] otevřete souběžně, potenciálně každé z nich můžete použít jiné aktivní VSPackage. Pokud více uživatelům přihlášení do stejného počítače, každý uživatel může mít samostatné instance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] otevřete, každý s jinou aktivní VSPackage. Pokud více instancí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zavřou uživatelem, správy zdrojového kódu VSPackage, který byl aktivní pro poslední otevřít řešení stane výchozí zdrojového balíčku VSPackage nastavit aktivní při restartování.  
   
- Na rozdíl od předchozích verzí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], restartování integrovaného vývojového prostředí již není jediným způsobem, jak přepnout balíčků VSPackage správy zdrojového kódu. Výběr balíčku VSPackage je automatické. Přepínání balíčky vyžaduje oprávnění uživatele Windows (ne správce nebo Power Users).  
+  Na rozdíl od předchozích verzí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], restartování integrovaného vývojového prostředí již není jediným způsobem, jak přepnout balíčků VSPackage správy zdrojového kódu. Výběr balíčku VSPackage je automatické. Přepínání balíčky vyžaduje oprávnění uživatele Windows (ne správce nebo Power Users).  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

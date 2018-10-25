@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824422"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analýza spotřeby energie v aplikacích pro Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Visual Studio **spotřeba energie** profiler pomáhá analyzovat spotřebu energ
   
  Profiler spotřeba energie používá tyto definice *power* a *energie*:  
   
--   *Napájení* opatření množství síly potřebné se používá k provedení práce, která se provádí v časovém intervalu. Elektrické věd, je standardní jednotkou výkonu *watt*, který je definován jako rychlost, jakou práce provádí, když jeden Ampér – měrná aktuální toků prostřednictvím rozdílem v elektrickém potenciálu o velikosti jednoho voltu. V **spotřeby energie** grafu, jsou jednotky zobrazeny v miliwattech **mW** jsou 1/1 000 wattu.  
+- *Napájení* opatření množství síly potřebné se používá k provedení práce, která se provádí v časovém intervalu. Elektrické věd, je standardní jednotkou výkonu *watt*, který je definován jako rychlost, jakou práce provádí, když jeden Ampér – měrná aktuální toků prostřednictvím rozdílem v elektrickém potenciálu o velikosti jednoho voltu. V **spotřeby energie** grafu, jsou jednotky zobrazeny v miliwattech **mW** jsou 1/1 000 wattu.  
   
-     Všimněte si, že výkon má směr (množství práce se v čase může zvýšit nebo snížit) a rychlost (velikost zvýšení nebo snížení množství práce).  
+   Všimněte si, že výkon má směr (množství práce se v čase může zvýšit nebo snížit) a rychlost (velikost zvýšení nebo snížení množství práce).  
   
--   *Energie* opatření dosáhl celkové množství výkonu, smyslu kapacity nebo potenciálu, jako v případě kapacity baterií, nebo smyslu celkového množství výkonu vynaloženého za určitou dobu. Jednotkou energie je watthodina, tedy výkon jednoho wattu konstantně působící po jednu hodinu. V **souhrn energie**, jsou jednotky zobrazeny v miliwatthodinách **MWh**.  
+- *Energie* opatření dosáhl celkové množství výkonu, smyslu kapacity nebo potenciálu, jako v případě kapacity baterií, nebo smyslu celkového množství výkonu vynaloženého za určitou dobu. Jednotkou energie je watthodina, tedy výkon jednoho wattu konstantně působící po jednu hodinu. V **souhrn energie**, jsou jednotky zobrazeny v miliwatthodinách **MWh**.  
   
- ![Kapacita energie výkon použít, celkového množství energie použité](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Kapacita energie výkon použít, celkového množství energie použité](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Například plně nabitá baterie v tabletu uchovává určité množství energie. Při využívání této energie pro provádění úloh, jako je například komunikace po síti, výpočty hodnot nebo zobrazování grafického obsahu, se výkon spotřebovává různou rychlostí. Pro libovolné časové období se celkové množství spotřebovaného výkonu poměřuje také energií.  
+  Například plně nabitá baterie v tabletu uchovává určité množství energie. Při využívání této energie pro provádění úloh, jako je například komunikace po síti, výpočty hodnot nebo zobrazování grafického obsahu, se výkon spotřebovává různou rychlostí. Pro libovolné časové období se celkové množství spotřebovaného výkonu poměřuje také energií.  
   
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Určit scénáře s uživatelskými značkami  
  Můžete přidat *uživatelské značky* do vlastních profilovacích dat. Chcete-li usnadníte identifikaci oblastí na časové ose.  
@@ -65,8 +65,8 @@ Visual Studio **spotřeba energie** profiler pomáhá analyzovat spotřebu energ
  Jakmile se metoda spustí, uživatelská značka je spolu se zprávou přidána do profilových dat.  
   
 > [!NOTE]
->  -   Obor názvů Windows.Foundation.Diagnostics.loggingchannel implementuje [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) rozhraní (předpokládané podobě [rozhraní System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) v C# a VB). Aby se zabránilo nevrácení prostředků operačního systému, volejte [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() v C# a VB) po dokončení protokolovacího kanálu.  
-> -   Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.  
+> - Obor názvů Windows.Foundation.Diagnostics.loggingchannel implementuje [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) rozhraní (předpokládané podobě [rozhraní System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) v C# a VB). Aby se zabránilo nevrácení prostředků operačního systému, volejte [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() v C# a VB) po dokončení protokolovacího kanálu.  
+>   -   Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.  
   
  Viz ukázku Windows SDK [ukázka LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) příklady.  
   
@@ -86,9 +86,9 @@ if (performance && performance.mark) {
  Pro získání kvalitních odhadů je vhodné provést profilaci využití energie aplikací na zařízení s nízkou spotřebou, které je napájeno bateriemi. Protože aplikaci Visual Studio nelze na většině z těchto zařízení spustit, bude třeba k tomuto zařízení pomocí nástrojů Visual Studio Remote Tools připojit počítač, na kterém aplikace Visual Studio běží. Pro připojení ke vzdálenému zařízení je třeba nakonfigurovat jak projekt aplikace Visual Studio, tak vzdálené zařízení. Zobrazit [aplikace Windows Store spustit ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md) Další informace.  
   
 > [!TIP]
->  -   Nedoporučujeme provádět energetickou profilaci na simulátoru Windows Store ani na počítači, na kterém běží aplikace Visual Studio. Profilace přímo na příslušném zařízení poskytuje mnohem realističtější data.  
-> -   Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.  
-> -   Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).  
+> - Nedoporučujeme provádět energetickou profilaci na simulátoru Windows Store ani na počítači, na kterém běží aplikace Visual Studio. Profilace přímo na příslušném zařízení poskytuje mnohem realističtější data.  
+>   -   Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.  
+>   -   Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Shromažďování dat o energetickém profilu vaší aplikace  
   
@@ -112,15 +112,15 @@ if (performance && performance.mark) {
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Shromažďování dat o energetickém profilu nainstalované aplikace  
  Nástroj Spotřeba energie lze spustit pouze v aplikacích pro Windows Store 8.1, které jsou spouštěny z řešení aplikace Visual Studio nebo jsou instalovány z Windows Store. Pokud je řešení otevřené v sadě Visual Studio, je výchozí cíl **spouštěný projekt**. Zacílení nainstalované aplikace:  
   
-1.  Zvolte **změnit cíl** a klikněte na tlačítko **nainstalovaná aplikace**.  
+1. Zvolte **změnit cíl** a klikněte na tlačítko **nainstalovaná aplikace**.  
   
-2.  Z **vybrat nainstalované balíčky aplikací** , zvolte cíl.  
+2. Z **vybrat nainstalované balíčky aplikací** , zvolte cíl.  
   
-3.  Zvolte **spotřeba energie** na stránce Centrum diagnostiky.  
+3. Zvolte **spotřeba energie** na stránce Centrum diagnostiky.  
   
-4.  Zvolte **Start** spuštění profilování.  
+4. Zvolte **Start** spuštění profilování.  
   
- Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.  
+   Pokud chcete profilaci zastavit, přepněte zpět do sady Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.  
   
 ##  <a name="BKMK_Analyze_energy_profile_data"></a> Analýza dat energetického profilu  
  Data energetického profilu se zobrazují v okně dokumentu aplikace Visual Studio:  

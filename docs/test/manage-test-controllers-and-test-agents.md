@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926589"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
@@ -52,7 +52,7 @@ Můžete chtít přidat testovacího agenta na jiný kontroler testů nebo bude 
       2. Zadejte heslo **heslo**.
 
         |**Informace o důležitých uživatelském účtu**|
-        |--------------------------------------------|
+        |-|
         |-Null hesla nejsou pro uživatelské účty podporována.|
         |– Pokud chcete použít IntelliTrace collector nebo emulaci sítě, musí být uživatelský účet členem skupiny Administrators.|
         |– Pokud je uživatelské jméno agenta není ve službě agenta, pokusí se ho přidat, což vyžaduje oprávnění testovacího kontroléru.|
@@ -115,7 +115,7 @@ Testovací agent musí být nastavena do stavu offline, než je možné odebrat.
 Stav testovacího agenta může být jedna z následujících hodnot:
 
 |Stav|Popis|
-|------------|-----------------|
+|-|-----------------|
 |Spouštění testů|Spouštění testů|
 |Připraven|K dispozici pro spuštění testů nebo sběr dat a diagnostiky|
 |V režimu offline|Není k dispozici pro spuštění testů nebo sběr dat a diagnostiky|
@@ -141,7 +141,7 @@ Stav a další nastavení pro testovacího agenta pomocí následujících postu
 1. Změňte následující vlastnosti testovacího agenta podle potřeby:
 
 |Vlastnost testovacího agenta|Popis|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Vážení**|Slouží k distribuci zatížení při použití testovacích agentů s různými úrovněmi výkonnosti. Například testovací agent s vážením 100 obdrží dvakrát zatížení než testovací Agent s vážením 50.|
 |**Přepínání IP**|Slouží ke konfiguraci přepínání IP. Přepínání protokolu IP umožňuje agentovi testu odesílání požadavků na server pomocí rozsahu IP adres. To simuluje volání, které pocházejí z různých klientských počítačů.<br /><br /> Přepínání IP je důležité, pokud vaše zkušební zatížení přistupuje k webové farmy. Většina Vyrovnávání zatížení vytvoří spřažení mezi klientem a konkrétní webový server s použitím IP adresy klienta. Pokud všechny požadavky zdá, že pocházejí z jednoho klienta, nebude nástroj pro vyrovnávání zatížení vyrovnávat zatížení. K dosažení dobré rovnováhy zatížení ve webové farmě, ujistěte se, že požadavky pocházejí z rozsahu IP adres. **Poznámka:** můžete určit síťový adaptér, nebo použijte **(všechny nepřiřazené)** automaticky vybrat jeden, který není aktuálně používán. <br /><br /> Pokud chcete použít funkci přepínání IP, musí být spuštěna služba Visual Studio Test Agent jako uživatel ve skupině Administrators pro daný počítač agenta. Tento uživatel je vybrán během instalace agenta, ale můžete změnit úpravou vlastností služby a restartováním.<br /><br /> Pokud chcete ověřit, že přepínání IP pracuje správně, povolit protokolování na webovém serveru služby IIS, ověřte, že požadavky pocházejí z IP adres, které jste nakonfigurovali pomocí funkce protokolování služby IIS.|
 |**Atributy**|Sada párů název/hodnota, které lze použít ve výběru agenta testu. Test může například vyžadovat konkrétní operační systém. Můžete přidat atributy na **role** kartu vašeho testovacího souboru s nastavením a slouží k výběru testovacího agenta, který má shodné atributy. Pokud chcete spustit test ve více počítačích, vytvořte atribut v roli nastavení testu, který je nakonfigurován ke spuštění testů a potom nakonfigurujte odpovídající atribut na každého testovacího agenta, který chcete použít v této roli... **Poznámka:** toto nastavení dostupná jenom pro testovací agenty, které jsou registrované pomocí testovacího kontroléru, který není registrovaný k projektu, protože tyto atributy se používají v nastavení testu pro sadu Visual Studio.|

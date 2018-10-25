@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840691"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Určení prvního cíle k sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
   
 #### <a name="to-specify-one-initial-target"></a>Chcete-li určit jeden počáteční cíl  
   
--   Zadejte výchozí cíl v `InitialTargets` atribut `Project` elementu. Příklad:  
+- Zadejte výchozí cíl v `InitialTargets` atribut `Project` elementu. Příklad:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- Můžete zadat více než jeden počáteční cíl v `InitialTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
+  Můžete zadat více než jeden počáteční cíl v `InitialTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Chcete-li zadat více než jeden počáteční cíl  
   
@@ -53,11 +53,11 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definuj
   
 #### <a name="to-specify-one-default-target"></a>Chcete-li zadat jeden výchozí cíl  
   
--   Zadejte výchozí cíl v `DefaultTargets` atribut `Project` elementu. Příklad:  
+- Zadejte výchozí cíl v `DefaultTargets` atribut `Project` elementu. Příklad:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- Můžete zadat více než jeden výchozí cíl v `DefaultTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
+  Můžete zadat více než jeden výchozí cíl v `DefaultTargets` atribut seznam cílů v pořadí a použitím středníkem oddělte každý cíl. Cíle v seznamu se spustí sekvenčně.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>Chcete-li zadat více než jeden výchozí cíl  
   

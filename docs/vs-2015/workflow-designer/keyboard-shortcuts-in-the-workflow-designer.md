@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895337"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v návrháři postupu provádění
 Všechny základní funkce [!INCLUDE[wfd1](../includes/wfd1-md.md)] přístupná pomocí klávesnice.  
@@ -49,29 +49,29 @@ Všechny základní funkce [!INCLUDE[wfd1](../includes/wfd1-md.md)] přístupná
 ### <a name="flowchart"></a>Vývojový diagram  
  Následující seznam uvádí gesta použitý k vytvoření vývojový diagram pomocí klávesnice. Stejně jako v zbytek [!INCLUDE[wfd2](../includes/wfd2-md.md)], aktivity jsou přidány na plochu návrháře zkratky globální sada nástrojů, opatřeného [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Chcete-li přesunout aktivitu, vyberte aktivitu a pomocí kláves se šipkami do jiného umístění.  
+- Chcete-li přesunout aktivitu, vyberte aktivitu a pomocí kláves se šipkami do jiného umístění.  
   
--   Pokud chcete změnit velikost vývojového diagramu, přesune aktivitu za aktuální ohraničení vývojový diagram pomocí kláves se šipkami. Vývojový diagram se velikost automaticky.  
+- Pokud chcete změnit velikost vývojového diagramu, přesune aktivitu za aktuální ohraničení vývojový diagram pomocí kláves se šipkami. Vývojový diagram se velikost automaticky.  
   
--   Chcete-li nastavit aktivitu jako počáteční uzel, použijte **nastavit jako StartNode** příkazu v místní nabídce.  
+- Chcete-li nastavit aktivitu jako počáteční uzel, použijte **nastavit jako StartNode** příkazu v místní nabídce.  
   
--   Připojení aktivity:  
+- Připojení aktivity:  
   
-    1.  Vyberte zdrojová aktivita tabulátor do aktivity.  
+  1.  Vyberte zdrojová aktivita tabulátor do aktivity.  
   
-    2.  Stiskněte kombinaci kláves CTRL + E, M tolikrát, kolikrát podle potřeby přesuňte fokus klávesnice na cílovou aktivitu.  
+  2.  Stiskněte kombinaci kláves CTRL + E, M tolikrát, kolikrát podle potřeby přesuňte fokus klávesnice na cílovou aktivitu.  
   
-    3.  Stiskněte kombinaci kláves CTRL + E, S přidat cílová aktivita do výběru.  
+  3.  Stiskněte kombinaci kláves CTRL + E, S přidat cílová aktivita do výběru.  
   
-    4.  Stiskněte kombinaci kláves CTRL + E, F, přidání konektoru ze zdroje do cíle.  
+  4.  Stiskněte kombinaci kláves CTRL + E, F, přidání konektoru ze zdroje do cíle.  
   
- Poznámky o připojení pomocí klávesnice aktivity:  
+  Poznámky o připojení pomocí klávesnice aktivity:  
   
--   Několik připojení současně lze vytvořit tak, že přidáte další aktivity do výběru před stisknutím kláves CTRL + E, f Připojení jsou provedeny v pořadí, aktivity byly přidány do výběru.  
+- Několik připojení současně lze vytvořit tak, že přidáte další aktivity do výběru před stisknutím kláves CTRL + E, f Připojení jsou provedeny v pořadí, aktivity byly přidány do výběru.  
   
--   Pokud nemůže být připojen pár aktivity, například pokud zdrojová aktivita již má odchozí připojení, další připojení mezi aktivitami ve výběru probíhají stále kdykoli je to možné.  
+- Pokud nemůže být připojen pár aktivity, například pokud zdrojová aktivita již má odchozí připojení, další připojení mezi aktivitami ve výběru probíhají stále kdykoli je to možné.  
   
--   Když **FlowDecision** je zahrnutá ve výběru a **FlowDecision** nemá žádná odchozí konektory, konektor je umístěn na **True** větve.  
+- Když **FlowDecision** je zahrnutá ve výběru a **FlowDecision** nemá žádná odchozí konektory, konektor je umístěn na **True** větve.  
   
 ### <a name="expression-editing"></a>Úpravy výrazů  
  Ve výchozím nastavení, výchozí klávesové zkratky pro [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] úprav textu v editoru výrazů v použít [!INCLUDE[wfd2](../includes/wfd2-md.md)], s těmito omezeními:  

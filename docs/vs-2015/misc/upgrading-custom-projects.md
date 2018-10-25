@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: douge
-ms.openlocfilehash: 1eceaee51778e9eafa6d81f819a17a25377b2841
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12b99770a7ab884e077ad6ba051a35d6e5316a49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844676"
 ---
 # <a name="upgrading-custom-projects"></a>Upgrade vlastních projektů
 Pokud změníte informací uchovávaných v souboru projektu mezi různými verzemi sady Visual Studio, produktu, je nutné pro podporu upgradu váš soubor projektu ze staré na novou verzi. Pro podporu upgradu, která umožňuje vás k účasti **Průvodce převodu Visual Studio**, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní. Toto rozhraní obsahuje pouze mechanismus k dispozici pro upgrade kopírování. Upgrade projektu se stane, jako součást řešení otevře. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Rozhraní je implementováno objekt pro vytváření projektu, nebo by měl být dosažitelný alespoň z objekt pro vytváření projektu.  
@@ -65,31 +65,31 @@ Pokud změníte informací uchovávaných v souboru projektu mezi různými verz
   
 #### <a name="to-implement-ivsprojectupgrade"></a>K implementaci IVsProjectUpgrade  
   
-1.  Když se uživatel pokusí otevřít projekt, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> metoda je volána metodou prostředí po otevření projektu a před žádný jiný uživatel můžete provést akce na projektu. Pokud uživatel měl byl již výzva k upgradu řešení, pak bude <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> příznak je předáno `grfUpgradeFlags` parametru. Pokud uživatel otevře projekt přímo, takový tak, jak pomocí **přidat existující projekt** příkaz, pak bude <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> příznak nebude zadán, využije a projekt musí zobrazit výzvu uživateli pro upgrade.  
+1. Když se uživatel pokusí otevřít projekt, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> metoda je volána metodou prostředí po otevření projektu a před žádný jiný uživatel můžete provést akce na projektu. Pokud uživatel měl byl již výzva k upgradu řešení, pak bude <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> příznak je předáno `grfUpgradeFlags` parametru. Pokud uživatel otevře projekt přímo, takový tak, jak pomocí **přidat existující projekt** příkaz, pak bude <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS> příznak nebude zadán, využije a projekt musí zobrazit výzvu uživateli pro upgrade.  
   
-2.  V reakci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> volání, projekt musí být vyhodnocen, zda soubor projektu se upgraduje. Pokud projekt není nutné upgradovat projekt na novou verzi, pak můžete jednoduše vrátit <xref:Microsoft.VisualStudio.VSConstants.S_OK> příznak.  
+2. V reakci <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> volání, projekt musí být vyhodnocen, zda soubor projektu se upgraduje. Pokud projekt není nutné upgradovat projekt na novou verzi, pak můžete jednoduše vrátit <xref:Microsoft.VisualStudio.VSConstants.S_OK> příznak.  
   
-3.  Pokud projekt je potřeba upgradovat projekt na novou verzi, pak musíte určit, zda soubor projektu je možné upravovat prostřednictvím volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> metoda a předání hodnotou <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> pro `rgfQueryEdit` parametru. Projekt se pak musí provést následující kroky:  
+3. Pokud projekt je potřeba upgradovat projekt na novou verzi, pak musíte určit, zda soubor projektu je možné upravovat prostřednictvím volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> metoda a předání hodnotou <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> pro `rgfQueryEdit` parametru. Projekt se pak musí provést následující kroky:  
   
-    -   Pokud `VSQueryEditResult` hodnotu vrácenou v `pfEditCanceled` parametr je <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>, pak upgradu můžete pokračovat, protože soubor projektu lze zapsat.  
+   -   Pokud `VSQueryEditResult` hodnotu vrácenou v `pfEditCanceled` parametr je <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult>, pak upgradu můžete pokračovat, protože soubor projektu lze zapsat.  
   
-    -   Pokud `VSQueryEditResult` hodnotu vrácenou v `pfEditCanceled` parametr je <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a `VSQueryEditResult` má hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> bit sady, pak <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> musí, vrátí hodnotu neúspěch, protože uživatelé by se měly vyřešit oprávnění vydat sami. Projekt by potom postupujte takto:  
+   -   Pokud `VSQueryEditResult` hodnotu vrácenou v `pfEditCanceled` parametr je <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a `VSQueryEditResult` má hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> bit sady, pak <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> musí, vrátí hodnotu neúspěch, protože uživatelé by se měly vyřešit oprávnění vydat sami. Projekt by potom postupujte takto:  
   
-         Ohlaste chybu uživatele voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>. a vraťte se <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> kód chyby <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.  
+        Ohlaste chybu uživatele voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>. a vraťte se <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> kód chyby <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.  
   
-    -   Pokud `VSQueryEditResult` hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a `VSQueryEditResultFlags` má hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> bit sady, pak soubor projektu by měl být rezervován voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>,...).  
+   -   Pokud `VSQueryEditResult` hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a `VSQueryEditResultFlags` má hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> bit sady, pak soubor projektu by měl být rezervován voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>,...).  
   
-4.  Pokud <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> volání v souboru projektu způsobí, že soubor, který má být rezervován a nejnovější verzi, která se má načíst a potom projekt a projekt znovu načíst. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Metoda je volána znovu, jakmile se vytvoří další instance projektu. V této druhé volání lze zapsat soubor projektu na disk. doporučuje se, že projekt uložení kopie souboru projektu ve starším formátu s. PŮVODNÍ rozšíření, proveďte jeho upgrade potřebné změny a uložte soubor projektu v novém formátu. Znovu, pokud libovolná součást procesu upgradu se nezdaří, metoda musíte uvést selhání tak, že vrací <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>. To způsobí, že projekt tak, aby nenačte v Průzkumníkovi řešení.  
+4. Pokud <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> volání v souboru projektu způsobí, že soubor, který má být rezervován a nejnovější verzi, která se má načíst a potom projekt a projekt znovu načíst. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Metoda je volána znovu, jakmile se vytvoří další instance projektu. V této druhé volání lze zapsat soubor projektu na disk. doporučuje se, že projekt uložení kopie souboru projektu ve starším formátu s. PŮVODNÍ rozšíření, proveďte jeho upgrade potřebné změny a uložte soubor projektu v novém formátu. Znovu, pokud libovolná součást procesu upgradu se nezdaří, metoda musíte uvést selhání tak, že vrací <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>. To způsobí, že projekt tak, aby nenačte v Průzkumníkovi řešení.  
   
-     Je důležité pochopit, dokončení procesu, který se nachází v prostředí pro případ, ve kterém volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> – metoda (zadáte třeba hodnotu jen) vrátí <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> příznaky.  
+    Je důležité pochopit, dokončení procesu, který se nachází v prostředí pro případ, ve kterém volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> – metoda (zadáte třeba hodnotu jen) vrátí <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags> příznaky.  
   
-5.  Uživatel se pokusí otevřít soubor projektu.  
+5. Uživatel se pokusí otevřít soubor projektu.  
   
-6.  Prostředí volá vaši <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementace.  
+6. Prostředí volá vaši <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementace.  
   
-7.  Pokud <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> vrátí `true`, pak volání prostředí vaší <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementace.  
+7. Pokud <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> vrátí `true`, pak volání prostředí vaší <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> implementace.  
   
-8.  Prostředí volá vaši <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> implementace otevřete soubor a inicializovat objekt projektu, například Project1.  
+8. Prostředí volá vaši <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> implementace otevřete soubor a inicializovat objekt projektu, například Project1.  
   
 9. Prostředí volá vaši `IVsProjectUpgrade::UpgradeProject` implementace k určení, zda soubor projektu je potřeba upgradovat.  
   
@@ -99,28 +99,28 @@ Pokud změníte informací uchovávaných v souboru projektu mezi různými verz
   
 12. Vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> volání implementace `IVsQueryEditQuerySave::QueryEditFiles` (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags>).  
   
- Toto volání může způsobit, že novou kopii souboru projektu jej rezervovat a načíst nejnovější verzi, a také potřeba znovu načíst soubor projektu. V tomto okamžiku jeden ze dvou kroků situace:  
+    Toto volání může způsobit, že novou kopii souboru projektu jej rezervovat a načíst nejnovější verzi, a také potřeba znovu načíst soubor projektu. V tomto okamžiku jeden ze dvou kroků situace:  
   
--   Pokud je zpracovat vlastní opakované načtení projektu, pak prostředí volá vaši <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> implementace (VSITEMID_ROOT). Když obdržíte toto volání, znovu načíst první instance vašeho projektu (Project1) a pokračovat v upgradu souboru projektu. Prostředí ví zpracování vlastní opakované načtení projektu, pokud se vrátíte `true` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>).  
+- Pokud je zpracovat vlastní opakované načtení projektu, pak prostředí volá vaši <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> implementace (VSITEMID_ROOT). Když obdržíte toto volání, znovu načíst první instance vašeho projektu (Project1) a pokračovat v upgradu souboru projektu. Prostředí ví zpracování vlastní opakované načtení projektu, pokud se vrátíte `true` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>).  
   
--   Pokud nezpracovávají vlastní opakované načtení projektu, pak se vrátit `false` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>). V takovém případě před <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>([QEF_ForceEdit_NoPrompting](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True), [QEF_DisallowInMemoryEdits](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True),) vrátí prostředí vytvoří další nové, instance projektu, například "project2" jako následující:  
+- Pokud nezpracovávají vlastní opakované načtení projektu, pak se vrátit `false` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>). V takovém případě před <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>([QEF_ForceEdit_NoPrompting](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True), [QEF_DisallowInMemoryEdits](assetId:///T:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags?qualifyHint=False&autoUpgrade=True),) vrátí prostředí vytvoří další nové, instance projektu, například "project2" jako následující:  
   
-    1.  Prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> na váš první projekt objekt, Project1, tedy umístit tento objekt v neaktivním stavu.  
+  1.  Prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> na váš první projekt objekt, Project1, tedy umístit tento objekt v neaktivním stavu.  
   
-    2.  Prostředí volá vaši `IVsProjectFactory::CreateProject` implementace vytvořit druhou instanci projektu "project2".  
+  2.  Prostředí volá vaši `IVsProjectFactory::CreateProject` implementace vytvořit druhou instanci projektu "project2".  
   
-    3.  Prostředí volá vaši `IPersistFileFormat::Load` implementace otevřete soubor a inicializovat druhý objekt projektu "project2".  
+  3.  Prostředí volá vaši `IPersistFileFormat::Load` implementace otevřete soubor a inicializovat druhý objekt projektu "project2".  
   
-    4.  Prostředí volá `IVsProjectUpgrade::UpgradeProject` podruhé k určení, zda objekt projektu by měl upgradovat. Ale tento přišla na nový, druhé instance projektu "project2". Jedná se o projekt, který je v řešení otevřen.  
+  4.  Prostředí volá `IVsProjectUpgrade::UpgradeProject` podruhé k určení, zda objekt projektu by měl upgradovat. Ale tento přišla na nový, druhé instance projektu "project2". Jedná se o projekt, který je v řešení otevřen.  
   
-        > [!NOTE]
-        >  V instanci, která svůj první projekt Project1, se umístí do neaktivního stavu, pak musí vracet <xref:Microsoft.VisualStudio.VSConstants.S_OK> z prvního volání vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementace. Zobrazit [základního projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) implementace `IVsProjectUpgrade::UpgradeProject`.  
+      > [!NOTE]
+      >  V instanci, která svůj první projekt Project1, se umístí do neaktivního stavu, pak musí vracet <xref:Microsoft.VisualStudio.VSConstants.S_OK> z prvního volání vaše <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementace. Zobrazit [základního projektu](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) implementace `IVsProjectUpgrade::UpgradeProject`.  
   
-    5.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> a předejte hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> pro `rgfQueryEdit` parametru.  
+  5.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> a předejte hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> pro `rgfQueryEdit` parametru.  
   
-    6.  Vrátí prostředí <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a upgradu můžete pokračovat, protože soubor projektu lze zapsat.  
+  6.  Vrátí prostředí <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult> a upgradu můžete pokračovat, protože soubor projektu lze zapsat.  
   
- Pokud chcete upgradovat, vrátí <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> z `IVsProjectUpgrade::UpgradeProject`. Pokud žádný upgrade je nezbytné nebo jste vybrali možnost upgrade, zpracovávat `IVsProjectUpgrade::UpgradeProject` volat jako no-op. Pokud se vrátíte <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, zástupný uzel je přidán do řešení pro váš projekt.  
+  Pokud chcete upgradovat, vrátí <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> z `IVsProjectUpgrade::UpgradeProject`. Pokud žádný upgrade je nezbytné nebo jste vybrali možnost upgrade, zpracovávat `IVsProjectUpgrade::UpgradeProject` volat jako no-op. Pokud se vrátíte <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, zástupný uzel je přidán do řešení pro váš projekt.  
   
 ## <a name="see-also"></a>Viz také  
  [Průvodce převodu Visual Studio](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   

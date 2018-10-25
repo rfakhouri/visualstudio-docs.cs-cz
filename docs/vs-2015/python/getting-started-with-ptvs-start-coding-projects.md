@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 40322ffaed98e2254fa09592be3c3eda52acc999
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8e0bd339d8e7b6d145cc9a916dafc2be9fc975e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845781"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>Začínáme s PTVS: Začínáme kódovat (projekty)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Nástroje Python Tools pro Visual Studio (PTVS) pomáhá spravovat váš kód.
  
 - Definujte hranice součástí. Pokud máte více komponent ve vaší aplikaci, můžete umístit každý z nich testovacího projektu. Tyto nakonec jde nasadit na různé servery, vytvořené pomocí jiné sestavení nebo nastavení ladění nebo může dokonce zapsány pomocí jiného jazyka, které podporuje Visual Studio, například C++ nebo Node.js 
  
- Existuje několik šablon projektů, které vám pomůžou začít. Pokud již máte kódu v Pythonu, kteří by chtěli pracovat na, z existujícího kódu Průvodce vám pomůže vytvořit projekt, který obsahuje všechny soubory. Více webových projektů existují pro několik oblíbených architektur. Další šablony jsou k dispozici v balíčku ukázek PTVS. Existují možnosti, jak zajistit Zadaná webová šablony pracovat s další architektury. Šablonu aplikace Pythonu je vyčistit, prázdný projekt. Existuje jeden modul, které vám pomůžou začít. 
+  Existuje několik šablon projektů, které vám pomůžou začít. Pokud již máte kódu v Pythonu, kteří by chtěli pracovat na, z existujícího kódu Průvodce vám pomůže vytvořit projekt, který obsahuje všechny soubory. Více webových projektů existují pro několik oblíbených architektur. Další šablony jsou k dispozici v balíčku ukázek PTVS. Existují možnosti, jak zajistit Zadaná webová šablony pracovat s další architektury. Šablonu aplikace Pythonu je vyčistit, prázdný projekt. Existuje jeden modul, které vám pomůžou začít. 
  
- Sada Visual Studio zobrazí vaše projekty otevřít v okně Průzkumník řešení, včetně všech souborů, cesty pro hledání a prostředí Pythonu. K přidání nových položek, vyberte složku vašeho projektu a zvolte Přidat a pak novou položku v kontextové nabídce (stiskněte tlačítko vpravo ukazatele). Vyberte libovolnou položku v dialogovém okně, přizpůsobit název položky a přidejte položku do projektu. 
+  Sada Visual Studio zobrazí vaše projekty otevřít v okně Průzkumník řešení, včetně všech souborů, cesty pro hledání a prostředí Pythonu. K přidání nových položek, vyberte složku vašeho projektu a zvolte Přidat a pak novou položku v kontextové nabídce (stiskněte tlačítko vpravo ukazatele). Vyberte libovolnou položku v dialogovém okně, přizpůsobit název položky a přidejte položku do projektu. 
  
- Vám může přetažením do Průzkumníka řešení. Pokud jste již zkopírovat soubory do adresářové struktuře projektu, můžete zobrazit všechny soubory v horní části Průzkumníku řešení. Pak můžete vybrat položky, které chcete přidat a v místní nabídce zvolte možnost zahrnout v projektu. 
+  Vám může přetažením do Průzkumníka řešení. Pokud jste již zkopírovat soubory do adresářové struktuře projektu, můžete zobrazit všechny soubory v horní části Průzkumníku řešení. Pak můžete vybrat položky, které chcete přidat a v místní nabídce zvolte možnost zahrnout v projektu. 
  
- Můžete sledovat tyto pokyny ve velmi krátké [videa youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
+  Můžete sledovat tyto pokyny ve velmi krátké [videa youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
  
 ## <a name="see-also"></a>Viz také 
  [Dokumentace ke službě Wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS Začínáme a Deep Dive videa](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

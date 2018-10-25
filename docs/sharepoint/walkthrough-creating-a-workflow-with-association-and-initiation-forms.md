@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873874"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
   Tento návod ukazuje, jak vytvořit základní sekvenční pracovní postup, který zahrnuje použití formuláře pro asociaci a. Jedná se o ASPX formuláře, které umožňují parametry se mají přidat do pracovního postupu, pokud je první související (formulář přidružení) správcem služby SharePoint a při spuštění pracovního postupu uživatelem (inicializační formulář).  
   
  Tento návod popisuje scénář, kdy uživatel chce vytvořit schvalovací pracovní postup pro vyúčtování, který má následující požadavky:  
   
--   Když pracovní postup přidružen se seznamem, správce se zobrazí výzva s formulář přidružení kde vstupem limitem pro vyúčtování.  
+- Když pracovní postup přidružen se seznamem, správce se zobrazí výzva s formulář přidružení kde vstupem limitem pro vyúčtování.  
   
--   Zaměstnanci nahrát jejich vyúčtování seznamu Sdílené dokumenty, spustit pracovní postup a zadejte výdajů celkem inicializační formulář pracovního postupu.  
+- Zaměstnanci nahrát jejich vyúčtování seznamu Sdílené dokumenty, spustit pracovní postup a zadejte výdajů celkem inicializační formulář pracovního postupu.  
   
--   Pokud vyúčtování celkový počet zaměstnanců překračuje limit předdefinovaného správce, se vytvoří úkol k nadřízenému ke schválení vyúčtování. Pokud zaměstnance výdajů sestavy součet je menší než nebo rovna omezení výdajů, zprávu o schvalovány automaticky zapsat do seznamu historie pracovního postupu.  
+- Pokud vyúčtování celkový počet zaměstnanců překračuje limit předdefinovaného správce, se vytvoří úkol k nadřízenému ke schválení vyúčtování. Pokud zaměstnance výdajů sestavy součet je menší než nebo rovna omezení výdajů, zprávu o schvalovány automaticky zapsat do seznamu historie pracovního postupu.  
   
- Tento návod znázorňuje následující úlohy:  
+  Tento návod znázorňuje následující úlohy:  
   
--   Vytvoření projektu sekvenční pracovní postup definice seznamu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Vytvoření projektu sekvenční pracovní postup definice seznamu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Vytvoření plánu pracovního postupu.  
+- Vytvoření plánu pracovního postupu.  
   
--   Zpracování události aktivit pracovního postupu.  
+- Zpracování události aktivit pracovního postupu.  
   
--   Vytvoření formuláře pro asociaci a přidružení pracovního postupu.  
+- Vytvoření formuláře pro asociaci a přidružení pracovního postupu.  
   
--   Přidružení pracovního postupu.  
+- Přidružení pracovního postupu.  
   
--   Ruční spuštění pracovního postupu.  
+- Ruční spuštění pracovního postupu.  
   
 > [!NOTE]  
 >  I když tento návod používá projekt sekvenčního pracovního postupu, proces je stejný pro pracovní postupy stavu počítače.  

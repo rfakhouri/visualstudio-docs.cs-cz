@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833600"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analýza využití procesoru v univerzální aplikace pro Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování dat o využití procesoru  
  ![Spustit sestavení pro vydání aplikace v simulátoru](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  V sadě Visual Studio, nastavte cíl nasazení na **simulátor** a konfigurace řešení **vydání**.  
+1. V sadě Visual Studio, nastavte cíl nasazení na **simulátor** a konfigurace řešení **vydání**.  
   
-    -   Spuštění aplikace v simulátoru umožňuje snadno přepínat mezi aplikací a rozhraní IDE sady Visual Studio.  
+   -   Spuštění aplikace v simulátoru umožňuje snadno přepínat mezi aplikací a rozhraní IDE sady Visual Studio.  
   
-    -   Tuto aplikaci spustíte v **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
+   -   Tuto aplikaci spustíte v **vydání** režim poskytuje lepší přehled aplikace skutečný výkon vaší aplikace.  
   
-2.  Na **ladění** nabídce zvolte **Profiler výkonu...** .  
+2. Na **ladění** nabídce zvolte **Profiler výkonu...** .  
   
-3.  V Centru pro výkon a diagnostiku, zvolte **využití procesoru** a klikněte na tlačítko **Start**.  
+3. V Centru pro výkon a diagnostiku, zvolte **využití procesoru** a klikněte na tlačítko **Start**.  
   
-     ![Spuštění diagnostické relace CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Spuštění diagnostické relace CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Při spuštění aplikace, klikněte na tlačítko **získat maximální počet**. Počkejte asi sekundy po výstupu se zobrazí, a pak zvolte **získat maximální číslo asynchronní**. Čekání mezi kliknutí na tlačítko vytvoří je jednodušší oddělit tlačítko klikněte rutiny v diagnostickou sestavu.  
+4. Při spuštění aplikace, klikněte na tlačítko **získat maximální počet**. Počkejte asi sekundy po výstupu se zobrazí, a pak zvolte **získat maximální číslo asynchronní**. Čekání mezi kliknutí na tlačítko vytvoří je jednodušší oddělit tlačítko klikněte rutiny v diagnostickou sestavu.  
   
-5.  Až na druhém řádku výstupu se zobrazí, zvolte **zastavit shromažďování** v Centru pro výkon a Diagnostika.  
+5. Až na druhém řádku výstupu se zobrazí, zvolte **zastavit shromažďování** v Centru pro výkon a Diagnostika.  
   
- ![Zastavit shromažďování dat CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Zastavit shromažďování dat CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Nástroj využití CPU analyzuje data a zobrazí sestavu.  
+   Nástroj využití CPU analyzuje data a zobrazí sestavu.  
   
- ![Sestava CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Sestava CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analýza sestavy využití procesoru  
   

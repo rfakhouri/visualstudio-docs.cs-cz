@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889357"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Testy jednotek řízené daty
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můž
   
  Toto téma obsahuje následující oddíly:  
   
--   [Testované metody](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [Testované metody](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Vytvoření zdroje dat](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Vytvoření zdroje dat](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Přidání TestContext pro třídu testu](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Přidání TestContext pro třídu testu](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Zápis testovací metody](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Zápis testovací metody](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Zadání atribut](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Zadání atribut](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Pomocí TestContext.DataRow pro přístup k datům](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Pomocí TestContext.DataRow pro přístup k datům](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Spuštění testu a zobrazení výsledků](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Spuštění testu a zobrazení výsledků](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- Vytvoření testu jednotek řízené daty zahrnuje následující kroky:  
+  Vytvoření testu jednotek řízené daty zahrnuje následující kroky:  
   
 1.  Vytvořte zdroj dat, který obsahuje hodnoty, které můžete použít testovací metody. Zdroj dat může být libovolný typ, který je registrován v počítači, na kterém běží test.  
   
@@ -61,17 +61,17 @@ Pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód, můž
 ##  <a name="BKMK_The_method_under_test"></a> Testované metody  
  Jako příklad předpokládejme, že jsme vytvořili:  
   
-1.  Volá se řešení `MyBank` , který přijme a zpracuje transakce pro různé typy účtů.  
+1. Volá se řešení `MyBank` , který přijme a zpracuje transakce pro různé typy účtů.  
   
-2.  Projekt v `MyBank` volá `BankDb` , který spravuje transakce pro účty.  
+2. Projekt v `MyBank` volá `BankDb` , který spravuje transakce pro účty.  
   
-3.  Třída nazývá `Maths` v `DbBank` projekt, který provádí matematické funkce zajistit, že všechny transakce je výhodné banky.  
+3. Třída nazývá `Maths` v `DbBank` projekt, který provádí matematické funkce zajistit, že všechny transakce je výhodné banky.  
   
-4.  Projekt s názvem testování částí `BankDbTests` otestovat chování `BankDb` komponenty.  
+4. Projekt s názvem testování částí `BankDbTests` otestovat chování `BankDb` komponenty.  
   
-5.  Testování částí třídu s názvem `MathsTests` ověření chování `Maths` třídy.  
+5. Testování částí třídu s názvem `MathsTests` ověření chování `Maths` třídy.  
   
- Testujeme metody v `Maths` , který přidá dvou celých čísel pomocí smyčka:  
+   Testujeme metody v `Maths` , který přidá dvou celých čísel pomocí smyčka:  
   
 ```  
 public int AddIntegers(int first, int second)  

@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887420"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Omezení ladění WCF
 Existují tři způsoby, můžete začít ladění služby WCF:  
   
--   Ladění procesu klienta, která volá službu. Ladicí program do služby. Služba nemusí být ve stejném řešení jako klientské aplikace.  
+- Ladění procesu klienta, která volá službu. Ladicí program do služby. Služba nemusí být ve stejném řešení jako klientské aplikace.  
   
--   Ladění procesu klienta, který odešle požadavek do služby. Služba musí být součástí vašeho řešení.  
+- Ladění procesu klienta, který odešle požadavek do služby. Služba musí být součástí vašeho řešení.  
   
--   Použijete **připojit k procesu** k připojení ke službě, na kterém aktuálně běží. Ladění začíná v službě.  
+- Použijete **připojit k procesu** k připojení ke službě, na kterém aktuálně běží. Ladění začíná v službě.  
   
- Toto téma popisuje omezení na uvedené scénáře.  
+  Toto téma popisuje omezení na uvedené scénáře.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Omezení krokování s vnořením do služby  
  Chcete-li do služby z klientských aplikací, které ladíte, musí být splněny následující podmínky:  
@@ -61,19 +61,19 @@ Existují tři způsoby, můžete začít ladění služby WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Omezení na automatické připojení ke službě  
  Automatické připojení ke službě má následující omezení:  
   
--   Služba musí být součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení ladění.  
+- Služba musí být součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení ladění.  
   
--   Musí být služba hostována. Může být součástí projektu webové stránky (systém souborů a HTTP), projekt webové aplikace (systém souborů a HTTP) nebo projekt knihovny služby WCF. Projekty knihovny služby WCF může být služba knihovny nebo knihovny služby pracovního postupu.  
+- Musí být služba hostována. Může být součástí projektu webové stránky (systém souborů a HTTP), projekt webové aplikace (systém souborů a HTTP) nebo projekt knihovny služby WCF. Projekty knihovny služby WCF může být služba knihovny nebo knihovny služby pracovního postupu.  
   
--   Služba musí být vyvolána z klienta WCF.  
+- Služba musí být vyvolána z klienta WCF.  
   
--   Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:  
+- Pomocí následujícího kódu v souboru Web.config nebo app.config musí být povoleno ladění:  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>S vlastním hostováním  
  A *služby v místním prostředí* je služba WCF, která není spuštěna služba IIS, hostitel služby WCF nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojový Server. Informace o tom, jak ladit v místním prostředí služby najdete v tématu [postupy: ladění služby WCF s místním](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  

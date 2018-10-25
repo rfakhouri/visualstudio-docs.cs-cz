@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63a4844f83961b2d060f9f9a574e0aaeb44991a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2cfbc1f3fd18b14891ecac825545bbdaeddad039
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830189"
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Ve Vizualizátor souběžnosti značky jsou ikony, které představují událost
 ## <a name="known-sources-of-markers"></a>Známých zdrojů značek  
  Jakýkoli poskytovatel trasování událostí pro Windows můžete generovat značky, tak dlouho, dokud poskytovateli dodržuje určitá omezení. Můžete nakonfigurovat tak, aby naslouchala na další událost zdroje pro značky Vizualizátor souběžnosti. Ve výchozím nastavení naslouchá na tyto zdroje událostí:  
   
--   [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md)  
+- [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md)  
   
--   [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
--   [Tok dat](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [Tok dat](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
--   [Paralelní LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [Paralelní LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
--   [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
--   [Podpora značek scénáře](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [Podpora značek scénáře](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
- Na kartě značky můžete použít [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno k zobrazení nebo skrytí značek z různých zdrojů ve Vizualizátor souběžnosti a vy můžete filtrovat podle značky na základě důležitosti a kategorie.  
+  Na kartě značky můžete použít [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno k zobrazení nebo skrytí značek z různých zdrojů ve Vizualizátor souběžnosti a vy můžete filtrovat podle značky na základě důležitosti a kategorie.  
   
 ## <a name="markers-from-eventsource"></a>Značky z EventSource  
  Vizualizátor souběžnosti můžete také zobrazit událostí EventSource.  Další informace najdete v tématu [vizualizace událostí EventSource v podobě značek](../profiling/visualizing-eventsource-events-as-markers.md).  

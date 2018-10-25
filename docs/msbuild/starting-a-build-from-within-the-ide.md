@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850058"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Spuštění sestavení z integrovaného vývojového prostředí
 Musíte použít vlastní systémy <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> ke spuštění sestavení. Tento článek popisuje důvody pro tento požadavek a popisuje proceduru.  
-  
+
 ## <a name="parallel-builds-and-threads"></a>Paralelní sestavení a vlákna  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umožňuje paralelní sestavení, která vyžaduje pro přístup ke společným prostředkům zprostředkování. Systémy projektu mohou spouštět sestavení asynchronně, ale tyto systémy nesmí volat funkce sestavení ze volání je k dispozici zpětných správcem sestavení.  
-  
+
  Pokud systém projektu změní proměnné prostředí, je nutné nastavit NodeAffinity sestavení na OutOfProc. Tento požadavek znamená, že nemůžete použít objekty hostitel, protože vyžadují uzel uvnitř procesu.  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>Pomocí IVSBuildManagerAccessor  
  Následující kód obsahuje metodu, která bude systém projektu můžete použít ke spuštění sestavení:  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

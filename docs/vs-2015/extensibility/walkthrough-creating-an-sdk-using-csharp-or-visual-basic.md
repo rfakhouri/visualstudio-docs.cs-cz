@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215602"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824266"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
 ##  <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd  
   
-1.  V panelu nabídky zvolte **souboru**, **nový**, **nový projekt**.  
+1. V panelu nabídky zvolte **souboru**, **nový**, **nový projekt**.  
   
-2.  V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **Windows Store** uzlu.  
+2. V seznamu šablon rozbalte **Visual C#** nebo **jazyka Visual Basic**a klikněte na tlačítko **Windows Store** uzlu.  
   
-3.  Zvolte **prázdnou aplikaci** šablony, pojmenujte projekt **ArithmeticUI**a klikněte na tlačítko **OK** tlačítko.  
+3. Zvolte **prázdnou aplikaci** šablony, pojmenujte projekt **ArithmeticUI**a klikněte na tlačítko **OK** tlačítko.  
   
-4.  V **Průzkumníka řešení**, otevřete místní nabídku **ArithmeticUI** projektu a klikněte na tlačítko **přidat**, **odkaz**.  
+4. V **Průzkumníka řešení**, otevřete místní nabídku **ArithmeticUI** projektu a klikněte na tlačítko **přidat**, **odkaz**.  
   
-5.  V seznamu typů odkazů, rozbalte **Windows**a klikněte na tlačítko **rozšíření**.  
+5. V seznamu typů odkazů, rozbalte **Windows**a klikněte na tlačítko **rozšíření**.  
   
-6.  V podokně podrobností vyberte **jednoduché matematické SDK** rozšíření.  
+6. V podokně podrobností vyberte **jednoduché matematické SDK** rozšíření.  
   
-     Zobrazí se další informace o vaši sadu SDK. Můžete použít **. Další informace** odkaz k otevření http://www.msdn.microsoft.com, jak jste zadali v souboru SDKManifest.xml dříve v tomto návodu.  
+    Zobrazí se další informace o vaši sadu SDK. Můžete použít **. Další informace** odkaz k otevření http://www.msdn.microsoft.com, jak jste zadali v souboru SDKManifest.xml dříve v tomto návodu.  
   
-7.  V **správce odkazů** dialogové okno, vyberte **jednoduché matematické SDK** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.  
+7. V **správce odkazů** dialogové okno, vyberte **jednoduché matematické SDK** zaškrtněte políčko a klikněte na tlačítko **OK** tlačítko.  
   
-8.  V panelu nabídky zvolte **zobrazení**, **prohlížeče objektů**.  
+8. V panelu nabídky zvolte **zobrazení**, **prohlížeče objektů**.  
   
 9. V **Procházet** klikněte na položku **jednoduchých matematických**.  
   
@@ -176,7 +176,7 @@ V tomto podrobném návodu se dozvíte, jak pomocí Visual C# vytvořit na sadu 
   
      Správný výsledek se zobrazí.  
   
- Úspěšně jste vytvořili a používat sady SDK rozšíření.  
+    Úspěšně jste vytvořili a používat sady SDK rozšíření.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření sady SDK pomocí jazyka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 97e6e72a7de4a9da7dc5086a2fecaea2b378b553
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813541"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Postupy: implementace Windows Communication Foundation smlouvy operaci (starší verze)
 Toto téma popisuje, jak implementovat [!INCLUDE[indigo1](../includes/indigo1-md.md)] smlouvy operace pomocí starší verze [!INCLUDE[wfd1](../includes/wfd1-md.md)] , který cílí [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,31 +26,31 @@ Toto téma popisuje, jak implementovat [!INCLUDE[indigo1](../includes/indigo1-md
   
 ### <a name="to-implement-a-wcf-contract-operation"></a>Implementace operace kontraktu WCF  
   
-1.  Dvakrát klikněte **ReceiveActivity** aktivity v Návrháři nebo klikněte na tři tečky vedle položky **ServiceOperationInfo** vlastnost v **vlastnosti** podokně.  
+1. Dvakrát klikněte **ReceiveActivity** aktivity v Návrháři nebo klikněte na tři tečky vedle položky **ServiceOperationInfo** vlastnost v **vlastnosti** podokně.  
   
-2.  Proveďte jednu z těchto akcí:  
+2. Proveďte jednu z těchto akcí:  
   
-    -   Klikněte na tlačítko **přidat smlouvy** v pravém horním rohu dialogového okna. Tím se vytvoří nový [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontrakt a operace pro vás.  
+   - Klikněte na tlačítko **přidat smlouvy** v pravém horním rohu dialogového okna. Tím se vytvoří nový [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontrakt a operace pro vás.  
   
-         -nebo-  
+      -nebo-  
   
-    -   Klikněte na tlačítko **Import** v pravém horním rohu dialogového okna. [Procházet a vybrat typ dialogovému oknu rozhraní .NET (starší verze)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) otevře. Vyhledejte sestavení nebo projekt, který obsahuje kontrakt, který chcete. Zvolte smlouvu a klikněte na tlačítko **OK**.  
+   - Klikněte na tlačítko **Import** v pravém horním rohu dialogového okna. [Procházet a vybrat typ dialogovému oknu rozhraní .NET (starší verze)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) otevře. Vyhledejte sestavení nebo projekt, který obsahuje kontrakt, který chcete. Zvolte smlouvu a klikněte na tlačítko **OK**.  
   
      Po vytvoření nebo importovat kontrakt, můžete přidat nové operace s touto smlouvou importované nebo vytvořené. Pokud chcete přidat novou operaci, zvolte smlouvu a klikněte na tlačítko **přidat operaci** v pravém horním rohu dialogového okna. Po dokončení operace přidávání, pokračujte krokem 3.  
   
-3.  Vyberte operaci, kterou chcete přidružit **ReceiveActivity** aktivity. Definice operace můžete upravit tak, že změníte název operace, parametry, vlastnosti a nastavení oprávnění.  
+3. Vyberte operaci, kterou chcete přidružit **ReceiveActivity** aktivity. Definice operace můžete upravit tak, že změníte název operace, parametry, vlastnosti a nastavení oprávnění.  
   
-     Chcete-li změnit název, zadejte nový název do **název operace** textového pole.  
+    Chcete-li změnit název, zadejte nový název do **název operace** textového pole.  
   
-     Klikněte na tlačítko **parametry** kartu pro přístup k parametrů operace zobrazíte. Můžete změnit název, typ nebo směr parametru a přidání nebo odstranění parametrů operace.  
+    Klikněte na tlačítko **parametry** kartu pro přístup k parametrů operace zobrazíte. Můžete změnit název, typ nebo směr parametru a přidání nebo odstranění parametrů operace.  
   
-     Klikněte na tlačítko **vlastnosti** kartu pro přístup k funkcím operace ochrany úrovně a podporovaných zpráv exchange operace.  
+    Klikněte na tlačítko **vlastnosti** kartu pro přístup k funkcím operace ochrany úrovně a podporovaných zpráv exchange operace.  
   
-     Klikněte na tlačítko **oprávnění** kartu k určení, které skupiny můžou implementovat operace.  
+    Klikněte na tlačítko **oprávnění** kartu k určení, které skupiny můžou implementovat operace.  
   
-4.  Klikněte na tlačítko **OK** a **ReceiveActivity** aktivity se zobrazí název operace pro operace, která implementuje.  
+4. Klikněte na tlačítko **OK** a **ReceiveActivity** aktivity se zobrazí název operace pro operace, která implementuje.  
   
-5.  Umístit aktivity pracovního postupu, který se chystáte použít k provedení této operace v rámci **ReceiveActivity** aktivity.  
+5. Umístit aktivity pracovního postupu, který se chystáte použít k provedení této operace v rámci **ReceiveActivity** aktivity.  
   
 ## <a name="see-also"></a>Viz také  
  [Zvolte dialogové okno operaci (starší verze)](../workflow-designer/choose-operation-dialog-box-legacy.md)   

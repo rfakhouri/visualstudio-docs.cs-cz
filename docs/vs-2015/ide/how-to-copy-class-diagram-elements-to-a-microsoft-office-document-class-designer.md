@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923209"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Postupy: Kopírování elementů diagramu tříd do dokumentu sady Microsoft Office (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Tvary můžete zkopírovat z diagramu tříd .NET (s příponou .cd) do jiné do
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Pro zkopírování všech prvků v diagramu tříd  
   
-1.  Klikněte pravým tlačítkem na plochu diagramu a zvolte **Vybrat vše**. (Klávesnice: **Ctrl + A**)  
+1. Klikněte pravým tlačítkem na plochu diagramu a zvolte **Vybrat vše**. (Klávesnice: **Ctrl + A**)  
   
-2.  Na **upravit** nabídce vyberte možnost **Kopírovat obrázek**.  
+2. Na **upravit** nabídce vyberte možnost **Kopírovat obrázek**.  
   
- Můžete také zvolit **kopírování** místo **Kopírovat obrázek**. **Kopírování** zkopíruje bitové kopie jako regulární rastrový obrázek. **Kopírovat obrázek** zkopíruje image jako vektor obrázek, který je lepší pro většinu aplikací Office.  
+   Můžete také zvolit **kopírování** místo **Kopírovat obrázek**. **Kopírování** zkopíruje bitové kopie jako regulární rastrový obrázek. **Kopírovat obrázek** zkopíruje image jako vektor obrázek, který je lepší pro většinu aplikací Office.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: tisk diagramů tříd (návrhář tříd)](../ide/how-to-print-class-diagrams-class-designer.md)   

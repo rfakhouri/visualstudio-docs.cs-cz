@@ -4,12 +4,12 @@ hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
-ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831026"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -63,7 +63,7 @@ ms.locfileid: "47443616"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Novinky v sadě Visual Studio 2017</h3>
+                                    <h3>Co&#39;nového v sadě Visual Studio 2017</h3>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ Node.js</a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Vyzkoušejte si rychlé zprovoznění během 5 minut</h3>
-                                                <h4>Sestavení "Hello, World" v jazyce podle vašeho výběru.</h4>
+                                                <h4>Sestavení &quot;Hello, World&quot; v jazyce podle vašeho výběru.</h4>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">

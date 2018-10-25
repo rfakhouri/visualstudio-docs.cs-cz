@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863887"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883351"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
 
@@ -33,12 +33,12 @@ VsixPublisher.exe je nástroj příkazového řádku pro publikování rozšíř
 
 Publikuje rozšíření na webu Marketplace. Rozšíření může být rozšíření vsix, soubor exe nebo msi nebo odkaz. Pokud rozšíření se stejnou verzí již existuje, přepíše rozšíření. Pokud rozšíření ještě neexistuje, vytvoří nové rozšíření.
 
-|Možnosti příkazu                    |Popis  |
+|Možnosti příkazu |Popis |
 |---------|---------|
-|datová část (povinné)                 |  Buď cestu k datové části publikování nebo odkaz má použít jako "Další informace o adresu URL".      |
-|publishManifest (povinné)         |  Cesta k publikování manifestu soubor se má použít.       |
-|ignoreWarnings                     |  Seznam upozornění ignorovat při publikování rozšíření. Tato upozornění se zobrazují jako zprávy příkazového řádku při publikování rozšíření. (například "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  Osobní přístupový Token, který se používá k ověření vydavatele. Pokud se nezadá, je na token pat získaných z přihlášeného uživatele.       |
+|datová část (povinné) | Buď cestu k datové části publikování nebo odkaz má použít jako "Další informace o adresu URL". |
+|publishManifest (povinné) | Cesta k publikování manifestu soubor se má použít. |
+|ignoreWarnings | Seznam upozornění ignorovat při publikování rozšíření. Tato upozornění se zobrazují jako zprávy příkazového řádku při publikování rozšíření. (například "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccesToken | Osobní přístupový Token, který se používá k ověření vydavatele. Pokud se nezadá, je na token pat získaných z přihlášeného uživatele. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Vytvoří vydavatele na webu Marketplace. Vydavateli protokoluje také do počítače pro budoucí akce (například odstranění a publikování rozšíření).
 
-|Možnosti příkazu                    |Popis  |
+|Možnosti příkazu |Popis |
 |---------|---------|
-|displayName (povinné)             |  Zobrazovaný název vydavatele.      |
-|Název_vydavatele (povinné)           |  Název vydavatele (například identifikátor).      |
-|personalAccessToken (povinné)     |  Osobní přístupový Token, který se používá k ověření vydavatele.      |
-|shortDescription                   |  Krátký popis vydavatele (ne soubor).       |
-|longDescription                    |  Dlouhý popis vydavatele (ne soubor).      |
+|displayName (povinné) | Zobrazovaný název vydavatele. |
+|Název_vydavatele (povinné) | Název vydavatele (například identifikátor). |
+|personalAccessToken (povinné) | Osobní přístupový Token, který se používá k ověření vydavatele. |
+|shortDescription | Krátký popis vydavatele (ne soubor). |
+|longDescription | Dlouhý popis vydavatele (ne soubor). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Odstraní vydavatele na webu Marketplace.
 
-|Možnosti příkazu                    |Popis  |
+|Možnosti příkazu |Popis |
 |---------|---------|
-|Název_vydavatele (povinné)           |  Název vydavatele (například identifikátor).      |
-|personalAccessToken (povinné)     |  Osobní přístupový Token, který se používá k ověření vydavatele.      |
+|Název_vydavatele (povinné) | Název vydavatele (například identifikátor). |
+|personalAccessToken (povinné) | Osobní přístupový Token, který se používá k ověření vydavatele. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Odstraní rozšíření z webu Marketplace.
 
-|Možnosti příkazu                    |Popis  |
+|Možnosti příkazu |Popis |
 |---------|---------|
-|extensionName (povinné)           |  Název rozšíření odstranit.      |
-|Název_vydavatele (povinné)           |  Název vydavatele (například identifikátor).      |
-|personalAccessToken                |  Osobní přístupový Token, který se používá k ověření vydavatele. Pokud se nezadá, je na token pat získaných z přihlášeného uživatele.     |
+|extensionName (povinné) | Název rozšíření odstranit. |
+|Název_vydavatele (povinné) | Název vydavatele (například identifikátor). |
+|personalAccessToken | Osobní přístupový Token, který se používá k ověření vydavatele. Pokud se nezadá, je na token pat získaných z přihlášeného uživatele. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Vydavatel přihlásí k počítači.
 
-|Možnosti příkazu                    |Popis  |
+|Možnosti příkazu |Popis |
 |---------|---------|
-|personalAccessToken (povinné      |  Osobní přístupový Token, který se používá k ověření vydavatele.      |
-|Název_vydavatele (povinné)           |  Název vydavatele (například identifikátor).      |
-|Přepsat                          |  Určuje, že se nový osobní přístupový token má se přepsat libovolného existujícího vydavatele.     |
+|personalAccessToken (povinné | Osobní přístupový Token, který se používá k ověření vydavatele. |
+|Název_vydavatele (povinné) | Název vydavatele (například identifikátor). |
+|Přepsat | Určuje, že se nový osobní přístupový token má se přepsat libovolného existujícího vydavatele. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Protokoly vydavatele z počítače.
 
-|Možnosti příkazu                    |Popis  |
+|Možnosti příkazu |Popis |
 |---------|---------|
-|Název_vydavatele (povinné)           |  Název vydavatele (například identifikátor).      |
-|ignoreMissingPublisher             |  Určuje, že nástroj by měl nevygeneruje chybu, pokud zadaný vydavatel není již přihlášeni.     |
+|Název_vydavatele (povinné) | Název vydavatele (například identifikátor). |
+|ignoreMissingPublisher | Určuje, že nástroj by měl nevygeneruje chybu, pokud zadaný vydavatel není již přihlášeni. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

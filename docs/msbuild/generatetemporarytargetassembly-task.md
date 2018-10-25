@@ -20,29 +20,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f771d71d6475ac9835ec21b36b44ce3cd131ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5d4b5ee29ed19f121c6da357fa20242f6762e51c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892945"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Generatetemporarytargetassembly – úloha
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Úloh generuje sestavení, pokud se alespoň jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] stránky v projektu odkazuje na typ, který je deklarován místně v daném projektu. Generované sestavení se odebere po dokončení procesu sestavení, nebo pokud proces sestavení se nezdaří.  
   
 ## <a name="task-parameters"></a>Parametry úlohy  
   
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`AssemblyName`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje krátký název sestavení, které se generuje pro projekt a je také název cílového sestavení, který je dočasně generován. Například, pokud projekt vygeneruje [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] spustitelný soubor, jehož název je *WinExeAssembly.exe*, **AssemblyName** parametr má hodnotu **WinExeAssembly**.|  
-|`CompileTargetName`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje název [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] cíl, který se používá ke generování sestavení ze souborů zdrojového kódu. Typická hodnota **CompileTargetName** je **CoreCompile**.|  
-|`CompileTypeName`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje typ kompilaci, která se provádí v cíli, která je zadána **CompileTargetName** parametru. Pro **CoreCompile** cíl, tato hodnota je **kompilaci**.|  
-|`CurrentProject`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje úplnou cestu [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] soubor projektu pro projekt, který vyžaduje dočasné cílového sestavení.|  
-|`GeneratedCodeFiles`|Volitelné **[] ITaskItem** parametru.<br /><br /> Určuje seznam spravovaného kódu specifické pro jazyk soubory, které byly vytvořeny [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) úloh.|  
-|`IntermediateOutputPath`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje adresář, generovaný dočasné cílového sestavení.|  
-|`MSBuildBinPath`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje umístění *MSBuild.exe*, která se vyžaduje pro kompilaci dočasné cílového sestavení.|  
-|`ReferencePath`|Volitelné **[] ITaskItem** parametru.<br /><br /> Určuje seznam sestavení, cestu a název souboru, který je odkazováno dle typy, které jsou kompilovány do sestavení dočasný cílový.|  
-|`ReferencePathTypeName`|Vyžaduje **řetězec** parametru.<br /><br /> Určuje parametr, který je používán cíl kompilace (**CompileTargetName**) parametr, který určuje seznam odkazů na sestavení (**ReferencePath**). Odpovídající hodnota je **ReferencePath**.|  
+| Parametr | Popis |
+|--------------------------| - |
+| `AssemblyName` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje krátký název sestavení, které se generuje pro projekt a je také název cílového sestavení, který je dočasně generován. Například, pokud projekt vygeneruje [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] spustitelný soubor, jehož název je *WinExeAssembly.exe*, **AssemblyName** parametr má hodnotu **WinExeAssembly**. |
+| `CompileTargetName` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje název [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] cíl, který se používá ke generování sestavení ze souborů zdrojového kódu. Typická hodnota **CompileTargetName** je **CoreCompile**. |
+| `CompileTypeName` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje typ kompilaci, která se provádí v cíli, která je zadána **CompileTargetName** parametru. Pro **CoreCompile** cíl, tato hodnota je **kompilaci**. |
+| `CurrentProject` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje úplnou cestu [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] soubor projektu pro projekt, který vyžaduje dočasné cílového sestavení. |
+| `GeneratedCodeFiles` | Volitelné **[] ITaskItem** parametru.<br /><br /> Určuje seznam spravovaného kódu specifické pro jazyk soubory, které byly vytvořeny [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) úloh. |
+| `IntermediateOutputPath` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje adresář, generovaný dočasné cílového sestavení. |
+| `MSBuildBinPath` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje umístění *MSBuild.exe*, která se vyžaduje pro kompilaci dočasné cílového sestavení. |
+| `ReferencePath` | Volitelné **[] ITaskItem** parametru.<br /><br /> Určuje seznam sestavení, cestu a název souboru, který je odkazováno dle typy, které jsou kompilovány do sestavení dočasný cílový. |
+| `ReferencePathTypeName` | Vyžaduje **řetězec** parametru.<br /><br /> Určuje parametr, který je používán cíl kompilace (**CompileTargetName**) parametr, který určuje seznam odkazů na sestavení (**ReferencePath**). Odpovídající hodnota je **ReferencePath**. |
   
 ## <a name="remarks"></a>Poznámky  
  První fáze kompilace kódu, který běží podle [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), zkompiluje [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] soubory do binárního formátu. V důsledku toho kompilátor musí seznam odkazovaných sestavení, které obsahují typy, které jsou používány [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] soubory. Nicméně pokud [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] soubor používá typ, který je definován ve stejném projektu, odpovídající sestavení pro tento projekt není vytvořeno, dokud sestavení projektu. Proto se odkaz na sestavení nelze zadat při prvním průchodu kód kompilace.  

@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844702"
 ---
 # <a name="switchlttgt-activity-designer"></a>Přepínač&lt;T&gt; návrháře aktivit
 <xref:System.Activities.Statements.Switch%601> Aktivita vyhodnotí zadaný výraz a spustí aktivita z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z vyhodnocení.  
@@ -50,11 +50,11 @@ ms.locfileid: "49244761"
   
  Chcete-li odstranit případ 2 způsoby:  
   
-1.  Vyberte tento případ a odstraňte ho.  
+1. Vyberte tento případ a odstraňte ho.  
   
-2.  Vyberte velikosti písmen, klikněte pravým tlačítkem a zobrazit kontextovou nabídku a vyberte **odstranit**.  
+2. Vyberte velikosti písmen, klikněte pravým tlačítkem a zobrazit kontextovou nabídku a vyberte **odstranit**.  
   
- Všimněte si, že je nutné vybrat případ samotný ho odstranit. Výběr a odstraněním aktivity v případě odstraní pouze aktivity tomu tak není.  
+   Všimněte si, že je nutné vybrat případ samotný ho odstranit. Výběr a odstraněním aktivity v případě odstraní pouze aktivity tomu tak není.  
   
 ## <a name="see-also"></a>Viz také  
  [Tok řízení](../workflow-designer/control-flow-activity-designers.md)

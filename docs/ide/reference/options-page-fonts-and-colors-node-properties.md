@@ -13,19 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf39d9a01794e34a50d81489214bb006e4c6448
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05724c81b9983414c4e0c86870b630e29c33ade3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926576"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Stránka Možnosti, vlastnosti uzlu Písmo a barvy
-Tento dokument popisuje vlastnosti písma a barev pro okno nástroje, které je registrované k vyskytovat v části **písma a barev** v **prostředí** kategorii **možnosti** Dialogové okno. To podporuje dynamické povaha skupiny colorable položek, které můžete změnit, pokud jsou VSPackages nainstalována nebo odinstalována.
+Tento dokument popisuje vlastnosti písma a barvy pro panel nástrojů, která je zaregistrovaná a může se zobrazí v rámci **písma a barvy** v **prostředí** kategorii **možnosti** Dialogové okno. Tento atribut podporuje dynamické povaze skupiny, které lze zabarvit položek, které můžete změnit, pokud budou instalovat nebo odinstalovat rozšíření VSPackages.
 
- V následující části je příkladem okno registrovaný typ a vlastnosti, které jsou k dispozici pro každé okno.
+ Následující část popisuje příklad typ registrované okna a vlastnosti, které jsou k dispozici pro každé okno.
 
-## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Textového editoru nebo tiskárny nebo dialogová okna a nástroje systému Windows
+## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Textový Editor nebo tiskárnu nebo dialogových oken a nástroj pro Windows
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
  -nebo-
@@ -37,14 +37,14 @@ Tento dokument popisuje vlastnosti písma a barev pro okno nástroje, které je 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
 |Název položky vlastnosti|Hodnota|Popis|
-|------------------------|-----------|-----------------|
-|FontFamily|Get/Set (String)|Název písma, který chcete použít, například "Nové Kurýrní."|
-|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|A <xref:EnvDTE.vsFontCharSet> hodnotu, určení typu znakovou sadu chcete použít, například hebrejština nebo ruština.|
-|Velikost písma|Get/Set (krátký)|Velikost písma pro použití v bodech. Například 10 a 12.|
+| - |-----------|-----------------|
+|fontFamily|Získá nebo nastaví (String)|Název písma, které chcete použít, jako je například "New Kurýrní."|
+|FontCharacterSet|Získá nebo nastaví (<xref:EnvDTE.vsFontCharSet>)|A <xref:EnvDTE.vsFontCharSet> hodnotu určující typ znakovou sadu, jako je například hebrejština nebo ruština.|
+|Velikost písma|Získá nebo nastaví (krátký)|Velikost písma pro použití v bodech. Například 10 nebo 12.|
 
 ## <a name="see-also"></a>Viz také
 
-- [Ovládání možnosti nastavení](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Určení názvů vlastností položky na stránkách možnosti](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Řízení nastavení možností](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Určování názvů položky vlastností na stránkách možností](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Stránka Možnosti, vlastnosti uzlu Prostředí](../../ide/reference/options-page-environment-node-properties.md)
 - [Stránka Možnosti, vlastnosti uzlu Textový editor](../../ide/reference/options-page-text-editor-node-properties.md)

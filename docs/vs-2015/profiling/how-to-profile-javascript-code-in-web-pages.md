@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99e0f201ab1c61999eae1e54efb4eaf4fc475f4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1fd8a4e06db5eb56b8f218ee8e1667d8eb59632
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872106"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Postupy: profilování kódu JavaScript ve webových stránkách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ ms.locfileid: "49176472"
   
 > [!WARNING]
 >  Chcete-li Profilovat jazyk JavaScript v aplikacích pro Windows Store, naleznete v následujících tématech:  
->   
->  -   [Časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [časování funkcí jazyka JavaScript na vzdáleném zařízení](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
-> -   [Analýza dat časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
-> -  
+> 
+> - [Časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [časování funkcí jazyka JavaScript na vzdáleném zařízení](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+>   -   [Analýza dat časování funkcí jazyka JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+>   -  
   
  Průvodce Profilováním můžete použít k vytvoření relace výkonu. Určete metody instrumentace a potom určete možnost na stránce instrumentace dialogové okno Vlastnosti relace výkonu profilace jazyka JavaScript.  
   

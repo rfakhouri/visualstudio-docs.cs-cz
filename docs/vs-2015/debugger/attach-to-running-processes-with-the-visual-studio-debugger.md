@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825685"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Tato funkce slouží k ladění aplikací, které běží na místním nebo vzd�
 
 1. V sadě Visual Studio, vyberte **ladění / připojit k procesu** (nebo stiskněte klávesu **CTRL + ALT + P**).
 
-2.  V **připojit k procesu** dialogovém okně vyberte příslušný typ připojení z **přenosu** seznamu. **Výchozí** je správné nastavení ve většině případů.
+2. V **připojit k procesu** dialogovém okně vyberte příslušný typ připojení z **přenosu** seznamu. **Výchozí** je správné nastavení ve většině případů.
 
-    **Přenosu** nastavení zůstává mezi relacemi ladění. 
+   **Přenosu** nastavení zůstává mezi relacemi ladění. 
   
-3.  Použití **kvalifikátor** pole se seznamem zvolte název vzdáleného počítače pomocí jedné z následujících metod:  
+3. Použití **kvalifikátor** pole se seznamem zvolte název vzdáleného počítače pomocí jedné z následujících metod:  
   
-    1.  Zadejte název do **kvalifikátor** pole se seznamem.
+   1. Zadejte název do **kvalifikátor** pole se seznamem.
     
-        >**Poznámka:** Pokud v dalších krocích se nemůžete připojit, pomocí názvu vzdáleného počítače, použijte IP adresu. (Číslo portu může automaticky zobrazit po výběru procesu. Můžete také zadat ho ručně. Na následující ilustraci 4020 je výchozí port pro vzdálené ladění.)  
+      >**Poznámka:** Pokud v dalších krocích se nemůžete připojit, pomocí názvu vzdáleného počítače, použijte IP adresu. (Číslo portu může automaticky zobrazit po výběru procesu. Můžete také zadat ho ručně. Na následující ilustraci 4020 je výchozí port pro vzdálené ladění.)  
   
-    2.  Klikněte na šipku rozevíracího seznamu, který je připojen k **kvalifikátor** a z rozevíracího seznamu vyberte název počítače.  
+   2. Klikněte na šipku rozevíracího seznamu, který je připojen k **kvalifikátor** a z rozevíracího seznamu vyberte název počítače.  
   
-    3.  Klikněte na tlačítko **najít** vedle**kvalifikátor** seznamu a otevře **vyberte připojení vzdáleného ladicího programu** dialogové okno. **Vyberte připojení vzdáleného ladicího programu** dialogové okno obsahuje všechna zařízení, které jsou na vaší místní podsíti a zařízení, která je přímo připojeno k počítači pomocí kabelu Ethernet. Klikněte na počítač nebo zařízení a potom klikněte na tlačítko **vyberte**. 
+   3. Klikněte na tlačítko **najít** vedle**kvalifikátor** seznamu a otevře **vyberte připojení vzdáleného ladicího programu** dialogové okno. **Vyberte připojení vzdáleného ladicího programu** dialogové okno obsahuje všechna zařízení, které jsou na vaší místní podsíti a zařízení, která je přímo připojeno k počítači pomocí kabelu Ethernet. Klikněte na počítač nebo zařízení a potom klikněte na tlačítko **vyberte**. 
   
-     **Kvalifikátor** nastavení zůstává mezi relacemi ladění pouze v případě, že dojde k úspěšnému připojení ladění u tohoto kvalifikátoru.
+      **Kvalifikátor** nastavení zůstává mezi relacemi ladění pouze v případě, že dojde k úspěšnému připojení ladění u tohoto kvalifikátoru.
      
-4.  Klikněte na tlačítko **aktualizovat**.
+4. Klikněte na tlačítko **aktualizovat**.
 
-      **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Nicméně obsah nejsou vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů kliknutím **aktualizovat**. 
+     **Procesy k dispozici** seznam se automaticky zobrazí při otevření **procesy** dialogové okno. Procesy můžete spouštět a zastavovat na pozadí při otevřeném dialogovém okně. Nicméně obsah nejsou vždy aktuální. Můžete aktualizovat seznam kdykoli zobrazit aktuální seznam procesů kliknutím **aktualizovat**. 
      
-4.  V **připojit k procesu** dialogovém okně vyhledejte program, který chcete připojit z **procesy k dispozici** seznamu.  
+5. V **připojit k procesu** dialogovém okně vyhledejte program, který chcete připojit z **procesy k dispozici** seznamu.  
   
-     Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.
+    Pokud je proces spuštěn pod účtem jiného uživatele, vyberte **Zobrazit procesy všech uživatelů** zaškrtávací políčko.
      
-5.  Klikněte na tlačítko **připojit**.  
+6. Klikněte na tlačítko **připojit**.  
 
 ## <a name="additional-info"></a>Další informace
 
@@ -164,21 +164,21 @@ V některých místní ladění scénářích můžete ladit v sadě Visual Stud
   
  **Získání konkrétních informací o Proč se nepodařilo připojit typ kódu**  
   
-1.  Odpojte od procesu. Na **ladění** nabídky, klikněte na tlačítko **Odpojit vše**.  
+1. Odpojte od procesu. Na **ladění** nabídky, klikněte na tlačítko **Odpojit vše**.  
   
-2.  Znovu připojte k procesu, vyberte pouze jeden typ kódu.  
+2. Znovu připojte k procesu, vyberte pouze jeden typ kódu.  
   
-    1.  V **připojit k procesu** dialogového okna, vyberte v procesu **procesy k dispozici** seznamu.  
+   1. V **připojit k procesu** dialogového okna, vyberte v procesu **procesy k dispozici** seznamu.  
   
-    2.  Klikněte na tlačítko **vyberte**.  
+   2. Klikněte na tlačítko **vyberte**.  
   
-    3.  V **vybrat typ kódu** dialogovém okně vyberte **ladit tyto typy kódu** a typ kódu, který se nepodařilo připojit. Vymazání veškerého dalšího kódu.  
+   3. V **vybrat typ kódu** dialogovém okně vyberte **ladit tyto typy kódu** a typ kódu, který se nepodařilo připojit. Vymazání veškerého dalšího kódu.  
   
-    4.  Klikněte na tlačítko **OK**. **Vybrat typ kódu** zavře dialogové okno.  
+   4. Klikněte na tlačítko **OK**. **Vybrat typ kódu** zavře dialogové okno.  
   
-    5.  V **připojit k procesu** dialogové okno, klikněte na tlačítko **připojit**.  
+   5. V **připojit k procesu** dialogové okno, klikněte na tlačítko **připojit**.  
   
-     Tentokrát připojení zcela selže a dostanete konkrétní chybovou zprávu.  
+      Tentokrát připojení zcela selže a dostanete konkrétní chybovou zprávu.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění více procesů](../debugger/debug-multiple-processes.md)   
