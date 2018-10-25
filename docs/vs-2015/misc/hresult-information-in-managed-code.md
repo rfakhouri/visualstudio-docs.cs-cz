@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911847"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informace o HRESULT ve spravovaném kódu
 Interakce mezi spravovaným kódem a modelu COM může způsobit potíže, pokud nedojde k vrácené hodnoty HRESULT.  
   
  V rozhraní modelu COM můžete přehrát návratovou hodnotu HRESULT pracovníci v těchto rolích:  
   
--   Poskytování informací o chybách (například <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
+- Poskytování informací o chybách (například <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
   
--   Poskytovat informace o stavu týkající se chování normální programu.  
+- Poskytovat informace o stavu týkající se chování normální programu.  
   
- Když COM volá do spravovaného kódu, může způsobit HRESULTs tyto problémy:  
+  Když COM volá do spravovaného kódu, může způsobit HRESULTs tyto problémy:  
   
--   Funkce modelu COM, které vracejí hodnoty HRESULT menší než nula (Kódy selhání) generovat výjimky.  
+- Funkce modelu COM, které vracejí hodnoty HRESULT menší než nula (Kódy selhání) generovat výjimky.  
   
--   Metody modelu COM, které pravidelně vrací dva nebo více různých úspěch kódy, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> nebo <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, nemůže být rozlišující.  
+- Metody modelu COM, které pravidelně vrací dva nebo více různých úspěch kódy, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> nebo <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, nemůže být rozlišující.  
   
- Protože mnoho [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] buď vrátí hodnoty HRESULT menší než nula nebo návratové kódy různých úspěch, funkce modelu COM [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sestavení vzájemné spolupráce být napsán tak, aby podpisy metod jsou zachovány. Všechny [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] spolupráce metody jsou `int` typu. Spolupráce vrstvy bez změny a bez generování událostí výjimky se předaly hodnoty HRESULT.  
+  Protože mnoho [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] buď vrátí hodnoty HRESULT menší než nula nebo návratové kódy různých úspěch, funkce modelu COM [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sestavení vzájemné spolupráce být napsán tak, aby podpisy metod jsou zachovány. Všechny [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] spolupráce metody jsou `int` typu. Spolupráce vrstvy bez změny a bez generování událostí výjimky se předaly hodnoty HRESULT.  
   
- Protože funkce modelu COM vrátí HRESULT spravované metodě, která ho zavolá, musí volání metody zkontrolujte HRESULT a vyvolat výjimky podle potřeby.  
+  Protože funkce modelu COM vrátí HRESULT spravované metodě, která ho zavolá, musí volání metody zkontrolujte HRESULT a vyvolat výjimky podle potřeby.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Zpracování výsledky HRESULTs vracené z modelu COM pro spravovaný kód  
  Když zavoláte rozhraní modelu COM ze spravovaného kódu, zkontrolujte hodnotu HRESULT a vyvolat výjimku, pokud je to nutné. <xref:Microsoft.VisualStudio.ErrorHandler> Třída obsahuje <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> do něho předaný metodě, která se vyvolá výjimka modelu COM, v závislosti na hodnotu HRESULT.  

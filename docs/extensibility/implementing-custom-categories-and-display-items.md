@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dbb6744b925dac1bfa91a73024ef14ef9ad29ac
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894635"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementovat vlastní kategorie a zobrazení položek
 VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) prostřednictvím vlastní kategorie a zobrazit položky.
@@ -32,82 +32,82 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 
  Chcete-li implementovat vlastní **kategorie** nebo **zobrazení položek**, VSPackage musí:
 
--   Vytvořte nebo Identifikujte kategorií v registru.
+- Vytvořte nebo Identifikujte kategorií v registru.
 
-     Implementace rozhraní IDE **písma a barvy** stránku vlastností používá tyto informace se správně dotázat služba podporující dané kategorie.
+   Implementace rozhraní IDE **písma a barvy** stránku vlastností používá tyto informace se správně dotázat služba podporující dané kategorie.
 
--   Vytvořte nebo Identifikujte skupin (volitelné) v registru.
+- Vytvořte nebo Identifikujte skupin (volitelné) v registru.
 
-     Může být užitečné k definování skupiny, která představuje sjednocení dvou nebo více kategorií. Pokud skupina je definována, rozhraní IDE automaticky sloučí podkategorie a distribuuje zobrazení položek v rámci skupiny.
+   Může být užitečné k definování skupiny, která představuje sjednocení dvou nebo více kategorií. Pokud skupina je definována, rozhraní IDE automaticky sloučí podkategorie a distribuuje zobrazení položek v rámci skupiny.
 
--   Implementace podpora integrované vývojové prostředí.
+- Implementace podpora integrované vývojové prostředí.
 
--   Zpracování změn písma a barvy.
+- Zpracování změn písma a barvy.
 
- Informace najdete v tématu [přístup uložená nastavení písem a barev](../extensibility/accessing-stored-font-and-color-settings.md).
+  Informace najdete v tématu [přístup uložená nastavení písem a barev](../extensibility/accessing-stored-font-and-color-settings.md).
 
 ## <a name="to-create-or-identify-categories"></a>K vytvoření nebo určení kategorie
 
--   Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\ `<Category>`]*
 
-     *\<Kategorie >* je nelokalizovaný název kategorie.
+   *\<Kategorie >* je nelokalizovaný název kategorie.
 
--   Naplnění registru pomocí dvou hodnot:
+- Naplnění registru pomocí dvou hodnot:
 
-    |Název|Typ|Data|Popis|
-    |----------|----------|----------|-----------------|
-    |Kategorie|REG_SZ|GUID|Identifikátor GUID vytvořit pro identifikaci kategorii.|
-    |Balíček|REG_SZ|GUID|Identifikátor GUID služby VSPackage, která podporuje kategorii.|
+  |Název|Typ|Data|Popis|
+  |----------|----------|----------|-----------------|
+  |Kategorie|REG_SZ|GUID|Identifikátor GUID vytvořit pro identifikaci kategorii.|
+  |Balíček|REG_SZ|GUID|Identifikátor GUID služby VSPackage, která podporuje kategorii.|
 
- Služba uvedený v registru musí poskytovat implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> pro odpovídající kategorii.
+  Služba uvedený v registru musí poskytovat implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> pro odpovídající kategorii.
 
 ## <a name="to-create-or-identify-groups"></a>Vytvořte nebo Identifikujte skupiny
 
--   Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\*  \<skupiny >*]*
+- Vytvořit zvláštní druh položky registru kategorie *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<verze sady Visual Studio >*\FontAndColors\\*  \<skupiny >*]*
 
-     *\<skupiny >* je nelokalizovaný název skupiny.
+   *\<skupiny >* je nelokalizovaný název skupiny.
 
--   Naplnění registru pomocí dvou hodnot:
+- Naplnění registru pomocí dvou hodnot:
 
-    |Název|Typ|Data|Popis|
-    |----------|----------|----------|-----------------|
-    |Kategorie|REG_SZ|GUID|Identifikujte skupinu vytvoří identifikátor GUID.|
-    |Balíček|REG_SZ|GUID|Identifikátor GUID služby, která podporuje kategorii.|
+  |Název|Typ|Data|Popis|
+  |----------|----------|----------|-----------------|
+  |Kategorie|REG_SZ|GUID|Identifikujte skupinu vytvoří identifikátor GUID.|
+  |Balíček|REG_SZ|GUID|Identifikátor GUID služby, která podporuje kategorii.|
 
- Služba uvedený v registru musí poskytovat implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> pro příslušné skupiny.
+  Služba uvedený v registru musí poskytovat implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> pro příslušné skupiny.
 
 ## <a name="to-implement-ide-support"></a>K implementaci podpora integrované vývojové prostředí
 
--   Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, který vrátí buď <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> rozhraní nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> rozhraní IDE pro každou **kategorie** nebo skupině zadaným identifikátorem GUID.
+- Implementace <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider.GetObject%2A>, který vrátí buď <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> rozhraní nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> rozhraní IDE pro každou **kategorie** nebo skupině zadaným identifikátorem GUID.
 
--   Pro každý **kategorie** podporuje, VSPackage implementuje samostatnou instanci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> rozhraní.
+- Pro každý **kategorie** podporuje, VSPackage implementuje samostatnou instanci <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> rozhraní.
 
--   Metody implementovány pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> nezajistil integrované vývojové prostředí s:
+- Metody implementovány pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> nezajistil integrované vývojové prostředí s:
 
-    -   Seznamy **zobrazení položek** v **kategorie.**
+  -   Seznamy **zobrazení položek** v **kategorie.**
 
-    -   Lokalizovatelné názvy **zobrazení položek**.
+  -   Lokalizovatelné názvy **zobrazení položek**.
 
-    -   Zobrazení informací pro každého člena **kategorie**.
+  -   Zobrazení informací pro každého člena **kategorie**.
 
-    > [!NOTE]
-    >  Každý **kategorie** musí obsahovat alespoň jeden **položky zobrazení**.
+  > [!NOTE]
+  >  Každý **kategorie** musí obsahovat alespoň jeden **položky zobrazení**.
 
--   Využívá integrovaného vývojového prostředí <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> rozhraní definovat sjednocení několik kategorií.
+- Využívá integrovaného vývojového prostředí <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> rozhraní definovat sjednocení několik kategorií.
 
-     Jeho implementace poskytuje integrované vývojové prostředí s:
+   Jeho implementace poskytuje integrované vývojové prostředí s:
 
-    -   Seznam **kategorie** , která tvoří danou skupinu.
+  -   Seznam **kategorie** , která tvoří danou skupinu.
 
-    -   Přístup k instancím typu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> podporuje každý **kategorie** v rámci skupiny.
+  -   Přístup k instancím typu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> podporuje každý **kategorie** v rámci skupiny.
 
-    -   Názvy zdrojů lokalizovatelných skupin.
+  -   Názvy zdrojů lokalizovatelných skupin.
 
--   Aktualizuje se rozhraní IDE:
+- Aktualizuje se rozhraní IDE:
 
-     Rozhraní IDE ukládá do mezipaměti informace o **písma a barvy** nastavení. Proto po jakékoliv úpravě rozhraní IDE **písma a barvy** konfigurace, doporučuje se ujistěte se, že mezipaměť je aktuální.
+   Rozhraní IDE ukládá do mezipaměti informace o **písma a barvy** nastavení. Proto po jakékoliv úpravě rozhraní IDE **písma a barvy** konfigurace, doporučuje se ujistěte se, že mezipaměť je aktuální.
 
- Aktualizace mezipaměti se provádí prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> rozhraní a může být provedena globálně, nebo jenom na vybraných položek.
+  Aktualizace mezipaměti se provádí prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> rozhraní a může být provedena globálně, nebo jenom na vybraných položek.
 
 ## <a name="to-handle-font-and-color-changes"></a>Pro případ změn písma a barvy
  Pro podporu správně zabarvení textu, který zobrazí VSPackage, zabarvení služba podporující sady VSPackage musí odpovědět na uživatelem iniciované změny provedené **písma a barvy** stránku vlastností. VSPackage provádí toto:

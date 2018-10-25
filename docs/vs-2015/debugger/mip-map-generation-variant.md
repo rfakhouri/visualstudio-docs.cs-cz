@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b56c4830c61ea0484d19195ab230fcd297a8588
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e983022764bc8a790987e3e0dc6045eea098a2ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913836"
 ---
 # <a name="mip-map-generation-variant"></a>Varianta generování mipmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,19 +36,19 @@ Umožňuje mapy mip na textury, které nejsou cíle vykreslování.
 ## <a name="remarks"></a>Poznámky  
  Generování Mipmap je vynucena všechna volání `ID3D11Device::CreateTexture2D` , který vytváří zdrojovou texturu. Konkrétně je nucen generování Mipmap, když D3D11_TEXTUR2D_DESC objekt předaný v `pDesc` popisuje neměnné prostředek shaderu; který je:  
   
--   Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.  
+- Člen BindFlags má pouze D3D11_BIND_SHADER_RESOURCE příznak nastaven.  
   
--   Využití člen je nastavený na D3D11_USAGE_DEFUALT nebo D3D11_USAGE_IMMUTABLE.  
+- Využití člen je nastavený na D3D11_USAGE_DEFUALT nebo D3D11_USAGE_IMMUTABLE.  
   
--   Člen CPUAccessFlags je nastavený na hodnotu 0 (žádný přístup procesoru).  
+- Člen CPUAccessFlags je nastavený na hodnotu 0 (žádný přístup procesoru).  
   
--   Člen SampleDesc má jeho Count – člen nastavena na hodnotu 1 (žádné více ukázka Anti-Aliasing (MSAA)).  
+- Člen SampleDesc má jeho Count – člen nastavena na hodnotu 1 (žádné více ukázka Anti-Aliasing (MSAA)).  
   
--   Člen MipLevels je nastavený na hodnotu 1 (žádné existující Mipmap).  
+- Člen MipLevels je nastavený na hodnotu 1 (žádné existující Mipmap).  
   
- Když je počáteční údaje poskytnuté aplikací, formátu textury musí podporovat automatické Mipmap generování – podle D3D11_FORMAT_SUPPORT_MIP_AUTOGEN – Pokud formát není BC1, BC2 nebo BC3; v opačném případě se nezmění textury a žádné mapy mip jsou generovány, pokud je zadaný počáteční data.  
+  Když je počáteční údaje poskytnuté aplikací, formátu textury musí podporovat automatické Mipmap generování – podle D3D11_FORMAT_SUPPORT_MIP_AUTOGEN – Pokud formát není BC1, BC2 nebo BC3; v opačném případě se nezmění textury a žádné mapy mip jsou generovány, pokud je zadaný počáteční data.  
   
- Pokud mapy mip byly automaticky generovány pro textury, volání `ID3D11Device::CreateShaderResourceView` jsou upraveny během přehrávání používat řetěz mip během vzorkování textury.  
+  Pokud mapy mip byly automaticky generovány pro textury, volání `ID3D11Device::CreateShaderResourceView` jsou upraveny během přehrávání používat řetěz mip během vzorkování textury.  
   
 ## <a name="example"></a>Příklad  
  **Generování Mipmap** variant možné reprodukovat pomocí kódu takto:  

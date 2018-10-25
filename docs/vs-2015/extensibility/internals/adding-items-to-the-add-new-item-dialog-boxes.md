@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894232"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Přidávání položek do dialogových oken Přidat novou položku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ Proces přidávání položek do **přidat novou položku** spustí dialogové o
 ## <a name="filtering-project-items"></a>Filtrování položek projektu  
  `IVsFilterAddProjectItemDlg2` poskytuje pro filtrování ve stromu (levé podokno) a soubory projektu (pravé podokno) prvků následujícími způsoby:  
   
--   Lokalizované názvy (titulky zobrazují v dialogovém okně, které jsou obsaženy v souboru .vsdir) poskytované `IVsFilterAddProjectItemDlg`.  
+- Lokalizované názvy (titulky zobrazují v dialogovém okně, které jsou obsaženy v souboru .vsdir) poskytované `IVsFilterAddProjectItemDlg`.  
   
--   Skutečné názvy souborů a složek na disku (Nelokalizováno – žádný soubor .vsdir) poskytované `IVsFilterAddProjectItemDlg`.  
+- Skutečné názvy souborů a složek na disku (Nelokalizováno – žádný soubor .vsdir) poskytované `IVsFilterAddProjectItemDlg`.  
   
--   Podle kategorie, poskytuje `IVsFilterAddProjectItemDlg2`.  
+- Podle kategorie, poskytuje `IVsFilterAddProjectItemDlg2`.  
   
- Chcete-li filtrovat podle kategorie, zadejte řetězec kategorie pro položky v souboru .vsdir, jako je například "Webový formulář" nebo "Klienta item" v jazyce Visual Basic. Kódu dialogového okna pak načte kategorie klasifikace z projektový soubor a předává je na vás. Tyto informace můžete předat do vaší implementace `IVsFilterAddProjectItemDlg2` k filtrování **přidat novou položku** dialogové okno podle kategorií. Můžete také filtrovat položky pro webové stránky nebo jako klient případy aplikaci Win32. Kromě toho můžete identifikovat [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] položky označené jako Microsoft Foundation Classes (MFC) nebo položky aktivní šablony knihovny (ATL). Při určování tyto položky můžete systém projektu tak, aby systém je možné filtrovat podle kategorií a klasifikací definovat své vlastní klasifikace.  
+  Chcete-li filtrovat podle kategorie, zadejte řetězec kategorie pro položky v souboru .vsdir, jako je například "Webový formulář" nebo "Klienta item" v jazyce Visual Basic. Kódu dialogového okna pak načte kategorie klasifikace z projektový soubor a předává je na vás. Tyto informace můžete předat do vaší implementace `IVsFilterAddProjectItemDlg2` k filtrování **přidat novou položku** dialogové okno podle kategorií. Můžete také filtrovat položky pro webové stránky nebo jako klient případy aplikaci Win32. Kromě toho můžete identifikovat [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] položky označené jako Microsoft Foundation Classes (MFC) nebo položky aktivní šablony knihovny (ATL). Při určování tyto položky můžete systém projektu tak, aby systém je možné filtrovat podle kategorií a klasifikací definovat své vlastní klasifikace.  
   
- Pokud implementujete tuto funkci filtru, nemají mapování tabulky všechny položky, který by měl být skrytý. Můžete jednoduše klasifikovat položky do typů a vložit klasifikace projektový soubor nebo soubory. Potom můžete skrýt, některá z položek, které mají určité klasifikace prostřednictvím implementace rozhraní. Tímto způsobem můžete vytvořit položky v **přidat novou položku** dynamické dialogové okno pole na základě stavu v rámci projektu.  
+  Pokud implementujete tuto funkci filtru, nemají mapování tabulky všechny položky, který by měl být skrytý. Můžete jednoduše klasifikovat položky do typů a vložit klasifikace projektový soubor nebo soubory. Potom můžete skrýt, některá z položek, které mají určité klasifikace prostřednictvím implementace rozhraní. Tímto způsobem můžete vytvořit položky v **přidat novou položku** dynamické dialogové okno pole na základě stavu v rámci projektu.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

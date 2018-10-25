@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898145"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Procházení kódu s ladicím programem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
   
  Tady jsou některé podrobnosti o chování **Krokovat s vnořením**:  
   
--   U volání vnořené funkce **Krokovat s vnořením** přejde k nejhlouběji vnořené funkci. Pokud používáte **Krokovat s vnořením** na volání, například `Func1(Func2())`, ladicí program vstoupí do funkce `Func2`.  
+- U volání vnořené funkce **Krokovat s vnořením** přejde k nejhlouběji vnořené funkci. Pokud používáte **Krokovat s vnořením** na volání, například `Func1(Func2())`, ladicí program vstoupí do funkce `Func2`.  
   
--   Ladicí program ve skutečnosti provede příkazy kódu spíše než fyzické řádky. Například `if` klauzule může být napsána na jednom řádku:  
+- Ladicí program ve skutečnosti provede příkazy kódu spíše než fyzické řádky. Například `if` klauzule může být napsána na jednom řádku:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Když přejdete na tomto řádku, ladicí program zpracuje podmínku jako jeden krok a následek jako jiný (v tomto příkladu je podmínka pravdivá).  
+   Když přejdete na tomto řádku, ladicí program zpracuje podmínku jako jeden krok a následek jako jiný (v tomto příkladu je podmínka pravdivá).  
   
- Vizuální trasování zásobníku volání při krokování do funkce, najdete v článku [mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Vizuální trasování zásobníku volání při krokování do funkce, najdete v článku [mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Krokovat kód, přeskakuje se funkce  
  Při spouštění kódu v ladicím programu, často se zjistíte, že není nutné zobrazit, co se děje v určitou funkci (nezáleží ji nebo ji znát funguje, jako jsou dobře otestovaný knihovny kódu). Pomocí těchto příkazů můžete přeskočit prostřednictvím kódu (funkce spustit, samozřejmě, ale přeskočí ladicí program přes ně).  
@@ -146,20 +146,20 @@ Seznamte se s příkazy a klávesové zkratky pro navigaci kódu v ladicím prog
   
 > [!CAUTION]
 >  Nastavení dalšího příkazu způsobí, že čítač programu můžete přejít přímo do nového umístění. Použijte tento příkaz opatrně:  
->   
->  -   Pokyny mezi body staré a nové spuštění nebudou provedeny.  
-> -   Pokud přesunete bod spuštění zpět, nebudou intervenující pokyny vráceny vrátit zpět.  
-> -   Přesunutí dalšího příkazu do jiné funkce nebo rozsahu obvykle za následek poškození zásobníku volání, což způsobí runtime chybu nebo výjimku. Při přesunutí dalšího příkazu do jiného oboru, ladicí program otevře dialogové okno s upozorněním a dává vám možnost zrušit operaci. V jazyce Visual Basic nemůžete přesunout do jiného oboru nebo funkce další příkaz.  
-> -   V nativním kódu C++ Pokud máte kontroly za běhu povoleno, nastavení dalšího příkazu může způsobit výjimku, která je vyvolána, když spuštění dosáhne konce metody.  
-> -   Když upravit a pokračovat je povoleno, **nastavit další příkaz** nezdaří, pokud jste provedli změny, které upravit a pokračovat nemůže ihned opětovně mapovat. Tato situace může nastat, například, pokud se po úpravě kódu v bloku catch. Pokud k tomu dojde, zobrazí se vám chybová zpráva s oznámením, že operace není podporována.  
-  
+> 
+> - Pokyny mezi body staré a nové spuštění nebudou provedeny.  
+>   -   Pokud přesunete bod spuštění zpět, nebudou intervenující pokyny vráceny vrátit zpět.  
+>   -   Přesunutí dalšího příkazu do jiné funkce nebo rozsahu obvykle za následek poškození zásobníku volání, což způsobí runtime chybu nebo výjimku. Při přesunutí dalšího příkazu do jiného oboru, ladicí program otevře dialogové okno s upozorněním a dává vám možnost zrušit operaci. V jazyce Visual Basic nemůžete přesunout do jiného oboru nebo funkce další příkaz.  
+>   -   V nativním kódu C++ Pokud máte kontroly za běhu povoleno, nastavení dalšího příkazu může způsobit výjimku, která je vyvolána, když spuštění dosáhne konce metody.  
+>   -   Když upravit a pokračovat je povoleno, **nastavit další příkaz** nezdaří, pokud jste provedli změny, které upravit a pokračovat nemůže ihned opětovně mapovat. Tato situace může nastat, například, pokud se po úpravě kódu v bloku catch. Pokud k tomu dojde, zobrazí se vám chybová zpráva s oznámením, že operace není podporována.  
+> 
 > [!NOTE]
 >  Ve spravovaném kódu nelze přesunout další příkaz za následujících podmínek:  
->   
->  -   Další příkaz je v jiné metody než aktuální příkaz.  
-> -   Ladění bylo zahájeno pomocí Just-In-Time ladění.  
-> -   Probíhá akce callstack unwind.  
-> -   Byla vyvolána výjimka System.StackOverflowException or System.Threading.ThreadAbortException.  
+> 
+> - Další příkaz je v jiné metody než aktuální příkaz.  
+>   -   Ladění bylo zahájeno pomocí Just-In-Time ladění.  
+>   -   Probíhá akce callstack unwind.  
+>   -   Byla vyvolána výjimka System.StackOverflowException or System.Threading.ThreadAbortException.  
   
  Následující příkaz nelze nastavit, pokud vaše aplikace právě aktivně běží. Pokud chcete nastavit další příkaz, musí být ladicí program v režimu pozastavení.  
   

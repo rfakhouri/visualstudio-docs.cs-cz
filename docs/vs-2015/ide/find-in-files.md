@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902136"
 ---
 # <a name="find-in-files"></a>Najít v souborech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Najít v souborech ** umožňuje vyhledávat zadané sady souborů. Nalezených 
   
 ### <a name="to-display-find-in-files"></a>Chcete-li zobrazit najít v souborech  
   
-1.  V panelu nabídky zvolte **upravit**, **najít a nahradit**.  
+1. V panelu nabídky zvolte **upravit**, **najít a nahradit**.  
   
-2.  Zvolte **najít v souborech**.  
+2. Zvolte **najít v souborech**.  
   
- Pokud chcete zrušit operaci hledání, stiskněte klávesy CTRL + BREAK.  
+   Pokud chcete zrušit operaci hledání, stiskněte klávesy CTRL + BREAK.  
   
 > [!NOTE]
 >  Nástroj Najít a nahradit neprohledává adresáře s `Hidden` nebo `System` sadu atributů.  

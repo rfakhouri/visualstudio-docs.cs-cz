@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911632"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
   
  Uspořádat okna následujícími způsoby:  
   
--   Připnete také okna windows vlevo na kartu.  
+- Připnete také okna windows vlevo na kartu.  
   
--   Okna dokování karet pro úpravy snímků.  
+- Okna dokování karet pro úpravy snímků.  
   
--   Ukotvení oken nástrojů k okraji rámečku v rozhraní IDE.  
+- Ukotvení oken nástrojů k okraji rámečku v rozhraní IDE.  
   
--   Plovoucí dokument nebo nástroje okna přes nebo mimo rozhraní IDE.  
+- Plovoucí dokument nebo nástroje okna přes nebo mimo rozhraní IDE.  
   
--   Skryjte panel nástrojů k okraji rozhraní IDE.  
+- Skryjte panel nástrojů k okraji rozhraní IDE.  
   
--   Zobrazení oken na různých monitorech.  
+- Zobrazení oken na různých monitorech.  
   
--   Obnovení umístění okna do výchozího rozložení nebo uložené vlastní rozložení.  
+- Obnovení umístění okna do výchozího rozložení nebo uložené vlastní rozložení.  
   
- Okna nástroje dokument lze uspořádat přetažením pomocí příkazů na **okno** nabídky a kliknutím pravým tlačítkem myši záhlaví okna, které uspořádáváte.  
+  Okna nástroje dokument lze uspořádat přetažením pomocí příkazů na **okno** nabídky a kliknutím pravým tlačítkem myši záhlaví okna, které uspořádáváte.  
   
 > [!NOTE]
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

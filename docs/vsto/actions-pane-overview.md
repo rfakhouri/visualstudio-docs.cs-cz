@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908343"
 ---
 # <a name="actions-pane-overview"></a>Přehled podokna akcí
   Podokna akcí je přizpůsobitelnou **akcích dokumentu** podokna úloh, které je připojené k určitým dokumentem aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. V podokně Akce je umístěn uvnitř podokna úloh Office spolu s jiná podokna integrované úlohy, jako **XML použitého jako zdroj** podokna úloh v aplikaci Excel nebo **styly a formátování** podokna úloh v aplikaci Word. Ovládací prvky Windows Forms a ovládacích prvků WPF můžete použít k návrhu uživatelského rozhraní podokna akcí.
@@ -48,16 +48,16 @@ ms.locfileid: "35676503"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Přidání více ovládacích prvků do podokna akcí  
  Když přidáte více ovládacích prvků do podokna akcí, by měl seskupení ovládacích prvků do uživatelského ovládacího prvku a poté přidejte uživatelský ovládací prvek <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost. Tento proces zahrnuje následující kroky:  
 
-1.  Vytvoření uživatelského rozhraní (UI) podokna akcí tak, že přidáte **ovládacího prvku podokna akcí** nebo **uživatelský ovládací prvek** položky do projektu. Obě tyto položky zahrnují vlastních formulářů Windows <xref:System.Windows.Forms.UserControl> třídy. **Ovládacího prvku podokna akcí** a **uživatelský ovládací prvek** položky jsou ekvivalentní; jediným rozdílem je jejich název.  
+1. Vytvoření uživatelského rozhraní (UI) podokna akcí tak, že přidáte **ovládacího prvku podokna akcí** nebo **uživatelský ovládací prvek** položky do projektu. Obě tyto položky zahrnují vlastních formulářů Windows <xref:System.Windows.Forms.UserControl> třídy. **Ovládacího prvku podokna akcí** a **uživatelský ovládací prvek** položky jsou ekvivalentní; jediným rozdílem je jejich název.  
 
-2.  Přidání ovládacích prvků Windows Forms do <xref:System.Windows.Forms.UserControl> pomocí návrháře nebo napsáním kódu.  
+2. Přidání ovládacích prvků Windows Forms do <xref:System.Windows.Forms.UserControl> pomocí návrháře nebo napsáním kódu.  
 
-    > [!NOTE]  
-    >  Můžete také přidat ovládací prvky WPF do podokna akcí tak, že přidáte WPF <xref:System.Windows.Controls.UserControl> do formulářů Windows <xref:System.Windows.Forms.UserControl>. Další informace najdete v tématu [řídí použití WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Můžete také přidat ovládací prvky WPF do podokna akcí tak, že přidáte WPF <xref:System.Windows.Controls.UserControl> do formulářů Windows <xref:System.Windows.Forms.UserControl>. Další informace najdete v tématu [řídí použití WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
-3.  Přidá do ovládacích prvků, které jsou obsaženy v instanci vlastního uživatelského ovládacího prvku `ActionsPane` pole `ThisWorkbook` (pro aplikace Excel) nebo `ThisDocument` (pro aplikaci Word) třídy v projektu.  
+3. Přidá do ovládacích prvků, které jsou obsaženy v instanci vlastního uživatelského ovládacího prvku `ActionsPane` pole `ThisWorkbook` (pro aplikace Excel) nebo `ThisDocument` (pro aplikaci Word) třídy v projektu.  
 
- Příklady, které ukazují tento proces v další podrobnosti najdete v tématu [postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+   Příklady, které ukazují tento proces v další podrobnosti najdete v tématu [postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
 ## <a name="hide-the-actions-pane"></a>Skrýt podokno akcí  
  I když <xref:Microsoft.Office.Tools.ActionsPane> třída nemá <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metoda a <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> vlastnost, nelze odebrat podokna akcí z uživatelského rozhraní pomocí všechny členy skupiny <xref:Microsoft.Office.Tools.ActionsPane> třídu. Volání <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metody nebo nastavení <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> vlastnost **false** skryje pouze ovládací prvky v podokně Akce; neskrývá podokna úloh.  

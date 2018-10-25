@@ -32,12 +32,12 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894024"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
  **Můžete namapovat závislostí pro kód v těchto jazycích**:  
   
--   Visual C# .NET nebo Visual Basic .NET v řešení nebo sestavení (.dll nebo .exe)  
+- Visual C# .NET nebo Visual Basic .NET v řešení nebo sestavení (.dll nebo .exe)  
   
--   Nativní nebo spravovaný kód C nebo C++ v projektech Visual C++, soubory hlaviček (.h nebo `#include`), nebo binární soubory  
+- Nativní nebo spravovaný kód C nebo C++ v projektech Visual C++, soubory hlaviček (.h nebo `#include`), nebo binární soubory  
   
--   Projekty X ++ a sestavení z modulů .NET pro aplikace Microsoft Dynamics AX  
+- Projekty X ++ a sestavení z modulů .NET pro aplikace Microsoft Dynamics AX  
   
- **Poznámka:** pro projekty než C# nebo Visual Basic .NET, jsou méně možností pro spuštění mapy kódu nebo při přidávání položek do existující mapy kódu. Nelze například klikněte pravým tlačítkem na objekt v textovém editoru projekt jazyka C++ a přidejte ho do mapy kódu. Můžete však přetáhněte a umístěte kód jednotlivé prvky nebo soubory z Průzkumníka řešení, zobrazení tříd a prohlížeče objektů.  
+  **Poznámka:** pro projekty než C# nebo Visual Basic .NET, jsou méně možností pro spuštění mapy kódu nebo při přidávání položek do existující mapy kódu. Nelze například klikněte pravým tlačítkem na objekt v textovém editoru projekt jazyka C++ a přidejte ho do mapy kódu. Můžete však přetáhněte a umístěte kód jednotlivé prvky nebo soubory z Průzkumníka řešení, zobrazení tříd a prohlížeče objektů.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>K zobrazení celkové závislostí ve vašem řešení  
   
@@ -122,51 +122,51 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
 ###  <a name="OverviewSource"></a> Zobrazení závislostí ve vašem řešení  
   
-1.  Na **architektura** nabídce zvolte **Generovat mapu kódu pro řešení**.  
+1. Na **architektura** nabídce zvolte **Generovat mapu kódu pro řešení**.  
   
-     ![Generování příkazu mapy kódu](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![Generování příkazu mapy kódu](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     Můžete získat mapu, která ukazuje sestavení nejvyšší úrovně a souhrnná propojení mezi nimi. Širší agregační odkaz, další závislosti představuje.  
+    Můžete získat mapu, která ukazuje sestavení nejvyšší úrovně a souhrnná propojení mezi nimi. Širší agregační odkaz, další závislosti představuje.  
   
-2.  Použití **legendy** položky kódu (jako jsou třídy, metody a vlastnosti) a typy vztahů (například dědí z tlačítka na panelu nástrojů mapy kódu zobrazit nebo skrýt seznam ikony typu projektu (například testování, webové a projektu Phone), Implementuje a volání).  
+2. Použití **legendy** položky kódu (jako jsou třídy, metody a vlastnosti) a typy vztahů (například dědí z tlačítka na panelu nástrojů mapy kódu zobrazit nebo skrýt seznam ikony typu projektu (například testování, webové a projektu Phone), Implementuje a volání).  
   
-     ![Horní&#45;grafu závislostí na úrovni sestavení](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![Horní&#45;grafu závislostí na úrovni sestavení](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     Tento příklad řešení obsahuje složky řešení (**testy** a **součásti**), projekty testů, webové projekty a sestavení. Ve výchozím nastavení, zobrazí všechny vztahy členství ve skupině jako *skupiny*, které můžete rozbalit nebo sbalit. **Externích typů** skupina obsahuje všechno mimo řešení, včetně závislostí platformy. Externí sestavení obsahuje pouze položky, které jsou používány. Ve výchozím nastavení jsou na mapě přehlednost skryté systému základní typy.  
+    Tento příklad řešení obsahuje složky řešení (**testy** a **součásti**), projekty testů, webové projekty a sestavení. Ve výchozím nastavení, zobrazí všechny vztahy členství ve skupině jako *skupiny*, které můžete rozbalit nebo sbalit. **Externích typů** skupina obsahuje všechno mimo řešení, včetně závislostí platformy. Externí sestavení obsahuje pouze položky, které jsou používány. Ve výchozím nastavení jsou na mapě přehlednost skryté systému základní typy.  
   
-3.  Chcete přejít k podrobnostem do objektu map, rozbalte skupiny, které představují projekty a sestavení. Můžete rozbalit vše, co stisknutím kombinace kláves **CTRL + A** vybrat všechny uzly a poté výběrem **skupiny**, **Rozbalit** z místní nabídky.  
+3. Chcete přejít k podrobnostem do objektu map, rozbalte skupiny, které představují projekty a sestavení. Můžete rozbalit vše, co stisknutím kombinace kláves **CTRL + A** vybrat všechny uzly a poté výběrem **skupiny**, **Rozbalit** z místní nabídky.  
   
-     ![Že rozšíření všech skupin v mapě kódu](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![Že rozšíření všech skupin v mapě kódu](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  To však nemusí být užitečná pro velká řešení. Ve skutečnosti pro komplexní řešení, omezení paměti může bránit že rozšíření všech skupin. Místo toho pokud chcete zobrazit uvnitř jednotlivých uzlů, rozbalte ho. Přesuňte ukazatel myši nad uzel a potom klikněte na dvojitou šipku (šipku) jakmile se zobrazí.  
+4. To však nemusí být užitečná pro velká řešení. Ve skutečnosti pro komplexní řešení, omezení paměti může bránit že rozšíření všech skupin. Místo toho pokud chcete zobrazit uvnitř jednotlivých uzlů, rozbalte ho. Přesuňte ukazatel myši nad uzel a potom klikněte na dvojitou šipku (šipku) jakmile se zobrazí.  
   
-     ![Rozbalení uzlu na mapě kódu](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![Rozbalení uzlu na mapě kódu](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     Nebo pomocí klávesnice podle pak vyberete požadovanou položku a pak stisknete klávesu plus (**+**). Prozkoumat hlubší úrovně kódu, totéž proveďte pro obory názvů, typy a členy.  
+    Nebo pomocí klávesnice podle pak vyberete požadovanou položku a pak stisknete klávesu plus (**+**). Prozkoumat hlubší úrovně kódu, totéž proveďte pro obory názvů, typy a členy.  
   
-    > [!TIP]
-    >  Další informace o práci s kódem mapuje pomocí myši, klávesnice a dotykového ovládání, naleznete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
+   > [!TIP]
+   >  Další informace o práci s kódem mapuje pomocí myši, klávesnice a dotykového ovládání, naleznete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
   
-5.  Pro zjednodušení mapy a zaměřte se na jednotlivé části, zvolte **filtry** na panelu nástrojů Mapa kódu a vyberte jenom typy uzlů a propojení se zajímáte. Lze například skrýt kontejnery složku řešení a sestavení.  
+5. Pro zjednodušení mapy a zaměřte se na jednotlivé části, zvolte **filtry** na panelu nástrojů Mapa kódu a vyberte jenom typy uzlů a propojení se zajímáte. Lze například skrýt kontejnery složku řešení a sestavení.  
   
-     ![Zjednodušení mapy pomocí filtrování kontejnery](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![Zjednodušení mapy pomocí filtrování kontejnery](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     Na mapě můžete také zjednodušit skryjete nebo odebrání jednotlivých skupin a položek z mapy, bez ovlivnění původního kódu řešení.  
+    Na mapě můžete také zjednodušit skryjete nebo odebrání jednotlivých skupin a položek z mapy, bez ovlivnění původního kódu řešení.  
   
-6.  Pokud chcete zobrazit vztahy mezi položkami, vyberte je v objektu map. Barvy odkazy označují typů vztahu, jak je znázorněno **legendy** podokně.  
+6. Pokud chcete zobrazit vztahy mezi položkami, vyberte je v objektu map. Barvy odkazy označují typů vztahu, jak je znázorněno **legendy** podokně.  
   
-     ![Zobrazení závislostí napříč vaším řešením](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![Zobrazení závislostí napříč vaším řešením](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     V tomto příkladu fialové odkazy jsou volání tečkovaná odkazy jsou odkazy a světle modrá odkazy jsou přístup k poli. Zelená může se jednat o dědičnosti, nebo může být *agregovat odkazy* označující více než jeden typ vztahu (nebo *kategorie*).  
+    V tomto příkladu fialové odkazy jsou volání tečkovaná odkazy jsou odkazy a světle modrá odkazy jsou přístup k poli. Zelená může se jednat o dědičnosti, nebo může být *agregovat odkazy* označující více než jeden typ vztahu (nebo *kategorie*).  
   
-    > [!TIP]
-    >  Pokud se zobrazí zelená propojení, nemusí to znamenat, že není právě vztah dědičnosti. Může také být volání metody, ale ty jsou skryta vztah dědičnosti. Pokud chcete zobrazit konkrétní typy odkazů, pomocí zaškrtávacích políček v **filtry** podokně typy nepotřebujete.  
+   > [!TIP]
+   >  Pokud se zobrazí zelená propojení, nemusí to znamenat, že není právě vztah dědičnosti. Může také být volání metody, ale ty jsou skryta vztah dědičnosti. Pokud chcete zobrazit konkrétní typy odkazů, pomocí zaškrtávacích políček v **filtry** podokně typy nepotřebujete.  
   
-7.  Pokud chcete získat další informace o položce nebo propojení, přesuňte ukazatel myši dojde k jeho zvýraznění její popisek. Zobrazí podrobnosti o prvek kódu nebo kategorií, které představuje odkaz.  
+7. Pokud chcete získat další informace o položce nebo propojení, přesuňte ukazatel myši dojde k jeho zvýraznění její popisek. Zobrazí podrobnosti o prvek kódu nebo kategorií, které představuje odkaz.  
   
-     ![Zobrazení kategorií relace](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![Zobrazení kategorií relace](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  Chcete-li zkontrolovat položky závislosti reprezentované souhrnným odkazem, nejprve vyberte odkaz a pak otevřete místní nabídku. Zvolte **zobrazit přispívající vazby** (nebo **zobrazit přispívající vazby na nové mapě kódu**). To rozbalí skupiny na obou koncích spojení a zobrazí pouze položky a závislosti, které se účastní v odkazu.  
+8. Chcete-li zkontrolovat položky závislosti reprezentované souhrnným odkazem, nejprve vyberte odkaz a pak otevřete místní nabídku. Zvolte **zobrazit přispívající vazby** (nebo **zobrazit přispívající vazby na nové mapě kódu**). To rozbalí skupiny na obou koncích spojení a zobrazí pouze položky a závislosti, které se účastní v odkazu.  
   
 9. Chcete-li se zaměřit na konkrétní části mapy, můžete nadále odebrat položky, které nepotřebujete. Například zobrazit podrobné informace o zobrazení tříd a členů, jednoduše filtrovat všechny uzly oboru názvů v **filtry** podokně.  
   
@@ -184,7 +184,7 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
   
      ![Vyberte položky, které chcete zobrazit vztahy](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- Viz také:  
+    Viz také:  
   
 -   [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -304,11 +304,11 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 ###  <a name="Troubleshooting"></a> Řešení potíží s mapování pro kód jazyka C a C++  
  Tyto položky nejsou podporovány pro kód jazyka C a C++:  
   
--   Základní typy se nezobrazují na mapách, které obsahují nadřazené hierarchie.  
+- Základní typy se nezobrazují na mapách, které obsahují nadřazené hierarchie.  
   
--   Většina **zobrazit** položky nabídky není k dispozici pro kód jazyka C a C++.  
+- Většina **zobrazit** položky nabídky není k dispozici pro kód jazyka C a C++.  
   
- Tyto problémy může dojít při vytváření map kódu pro kód jazyka C a C++:  
+  Tyto problémy může dojít při vytváření map kódu pro kód jazyka C a C++:  
   
 |**Problém**|**Možná příčina**|**Řešení**|  
 |---------------|------------------------|--------------------|  
@@ -324,23 +324,23 @@ Pokud chcete pochopit závislosti ve vašem kódu, Vizualizujte si je vytvořen�
 ##  <a name="RenderMoreQuickly"></a> Ujistěte se, kód, který rychleji vykreslení mapy  
  Při prvním generování mapu, Visual Studio indexuje všechny závislosti, které nalezne. Tento proces může trvat nějakou dobu, zvláště pro velká řešení, ale zlepší výkon později. Pokud se změní kód, sada Visual Studio znovu indexuje pouze aktualizovaný kód. Chcete-li minimalizovat čas potřebný pro mapování na dokončení vykreslování, zvažte následující:  
   
--   [Mapování závislostí, které vás zajímají.](#SeeSpecificSource)  
+- [Mapování závislostí, které vás zajímají.](#SeeSpecificSource)  
   
--   Před generováním mapy pro kompletní řešení snižte Rozsah řešení.  
+- Před generováním mapy pro kompletní řešení snižte Rozsah řešení.  
   
--   Vypnout automatické sestavení pro řešení s **přeskočení buildu** tlačítko na panelu nástrojů mapy kódu.  
+- Vypnout automatické sestavení pro řešení s **přeskočení buildu** tlačítko na panelu nástrojů mapy kódu.  
   
--   Vypnout automatické přidávání nadřazených položek s **zahrnout nadřazené položky** tlačítko na panelu nástrojů mapy kódu.  
+- Vypnout automatické přidávání nadřazených položek s **zahrnout nadřazené položky** tlačítko na panelu nástrojů mapy kódu.  
   
--   Upravte soubor mapy kódu přímo na odebrání uzlů a odkazů, které nepotřebujete. Změna mapování neovlivní základní kód. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+- Upravte soubor mapy kódu přímo na odebrání uzlů a odkazů, které nepotřebujete. Změna mapování neovlivní základní kód. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![Tlačítka pro přeskočení buildu a zahrnout nadřazené položky](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![Tlačítka pro přeskočení buildu a zahrnout nadřazené položky](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- I když Visual Studio můžete spustit s 1 GB paměti, doporučujeme, že váš počítač měl alespoň 2 GB paměti pro zabránilo dlouhým prodlevám, když Visual Studio vytváří index kódu a generuje mapy.  
+  I když Visual Studio můžete spustit s 1 GB paměti, doporučujeme, že váš počítač měl alespoň 2 GB paměti pro zabránilo dlouhým prodlevám, když Visual Studio vytváří index kódu a generuje mapy.  
   
- Může trvat déle vytvářet mapy nebo přidávat položky do mapy z Průzkumníku řešení, když položka projektu **kopírovat do výstupního adresáře** je nastavena na **vždy Kopírovat**. To může způsobit problémy s přírůstkovým sestavením a opakovaným sestavením projektu aplikací Visual Studio. Chcete-li zvýšit výkon, změňte tuto vlastnost na **kopírovat, pokud je novější** nebo `PreserveNewest`. Zobrazit [přírůstková sestavení](../msbuild/incremental-builds.md).  
+  Může trvat déle vytvářet mapy nebo přidávat položky do mapy z Průzkumníku řešení, když položka projektu **kopírovat do výstupního adresáře** je nastavena na **vždy Kopírovat**. To může způsobit problémy s přírůstkovým sestavením a opakovaným sestavením projektu aplikací Visual Studio. Chcete-li zvýšit výkon, změňte tuto vlastnost na **kopírovat, pokud je novější** nebo `PreserveNewest`. Zobrazit [přírůstková sestavení](../msbuild/incremental-builds.md).  
   
- Dokončení mapování se zobrazí závislosti pouze pro kód úspěšně sestaven. Pokud dojde k chybám sestavení některých součástí, tyto chyby se zobrazí na mapě. Ujistěte se, že součást skutečně sestaví a má závislosti, než provedete rozhodnutí o architektuře založené na mapě.  
+  Dokončení mapování se zobrazí závislosti pouze pro kód úspěšně sestaven. Pokud dojde k chybám sestavení některých součástí, tyto chyby se zobrazí na mapě. Ujistěte se, že součást skutečně sestaví a má závislosti, než provedete rozhodnutí o architektuře založené na mapě.  
   
 ##  <a name="SavingExporting"></a> Sdílet mapy kódu  
   

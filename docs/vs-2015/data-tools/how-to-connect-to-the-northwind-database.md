@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897627"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>Postupy: Připojení k databázi Northwind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ Jak se dozvíte, jak k vytvoření databázové aplikace pomocí sady Visual Stu
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>Vytvoření datového připojení k databázi Northwind (SQL Server)  
   
-1.  Na **zobrazení** nabídce zvolte **Průzkumníka serveru**/**Průzkumník databáze**.  
+1. Na **zobrazení** nabídce zvolte **Průzkumníka serveru**/**Průzkumník databáze**.  
   
-2.  V **Průzkumníka serveru**/**Průzkumník databáze**, otevřete místní nabídku pro **datová připojení** a zvolte **přidat připojení**.  
+2. V **Průzkumníka serveru**/**Průzkumník databáze**, otevřete místní nabídku pro **datová připojení** a zvolte **přidat připojení**.  
   
-     Po zvolení **přidat připojení**– buď **zvolit zdroj dat** dialogové okno nebo **přidat připojení** se zobrazí dialogové okno.  
+    Po zvolení **přidat připojení**– buď **zvolit zdroj dat** dialogové okno nebo **přidat připojení** se zobrazí dialogové okno.  
   
-3.  Pokud **zvolit zdroj dat** dialogové okno se zobrazí, vyberte **Microsoft SQL Server**a klikněte na tlačítko **OK**.  
+3. Pokud **zvolit zdroj dat** dialogové okno se zobrazí, vyberte **Microsoft SQL Server**a klikněte na tlačítko **OK**.  
   
-     Pokud **přidat připojení** zobrazí se dialogové okno a **zdroj dat** není **Microsoft SQL Server (SqlClient)**, zvolte **změnu** tlačítko Otevřít **změnit zdroj dat** dialogu **Microsoft SQL Server**a klikněte na tlačítko **OK** tlačítko.  
+    Pokud **přidat připojení** zobrazí se dialogové okno a **zdroj dat** není **Microsoft SQL Server (SqlClient)**, zvolte **změnu** tlačítko Otevřít **změnit zdroj dat** dialogu **Microsoft SQL Server**a klikněte na tlačítko **OK** tlačítko.  
   
-4.  V **název serveru** seznamu, zadejte název serveru, na kterém je umístěna databáze Northwind.  
+4. V **název serveru** seznamu, zadejte název serveru, na kterém je umístěna databáze Northwind.  
   
-5.  V závislosti na požadavcích vaší verzi SQL serveru a databáze Northwind, zvolte **použít ověřování Windows** nebo zvolte **použít ověřování SQL serveru** a zadejte uživatelské jméno a heslo pro přihlášení k počítači se systémem SQL Server.  
+5. V závislosti na požadavcích vaší verzi SQL serveru a databáze Northwind, zvolte **použít ověřování Windows** nebo zvolte **použít ověřování SQL serveru** a zadejte uživatelské jméno a heslo pro přihlášení k počítači se systémem SQL Server.  
   
-6.  Zvolte databázi Northwind v **vyberte nebo zadejte název databáze** seznamu.  
+6. Zvolte databázi Northwind v **vyberte nebo zadejte název databáze** seznamu.  
   
-7.  Zvolte **Test připojení** k ověření připojení k databázi Northwind.  
+7. Zvolte **Test připojení** k ověření připojení k databázi Northwind.  
   
-8.  Zvolte **OK**.  
+8. Zvolte **OK**.  
   
-     Přidání datového připojení k databázi Northwind k **Průzkumníka serveru**/**Průzkumník databáze**.  
+    Přidání datového připojení k databázi Northwind k **Průzkumníka serveru**/**Průzkumník databáze**.  
   
- Kromě připojení k vzdálené instanci databáze systému SQL Server, můžete také připojit přímo k skutečné soubory, které obsahují databáze. To umožňuje přidat databázové soubory přímo do projektu, kde můžete nasadit jako součást aplikace. Aktuálně jsou podporovány následujícím lokálním databázovým souborům: databázové soubory SQL Server Compact (SDF) [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] a databázové soubory SQL Server Express (.mdf) a soubory databáze Microsoft Access (MDB nebo ACCDB).  
+   Kromě připojení k vzdálené instanci databáze systému SQL Server, můžete také připojit přímo k skutečné soubory, které obsahují databáze. To umožňuje přidat databázové soubory přímo do projektu, kde můžete nasadit jako součást aplikace. Aktuálně jsou podporovány následujícím lokálním databázovým souborům: databázové soubory SQL Server Compact (SDF) [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] a databázové soubory SQL Server Express (.mdf) a soubory databáze Microsoft Access (MDB nebo ACCDB).  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>Vytvoření datového připojení k databázi Northwind – soubor databáze systému SQL Server (MDF)  
   

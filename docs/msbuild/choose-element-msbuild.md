@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895467"
 ---
 # <a name="choose-element-msbuild"></a>Choose – element (MSBuild)
 Vyhodnotí jako podřízené prvky k výběru jedné sadě `ItemGroup` elementy a/nebo `PropertyGroup` prvky k vyhodnocení.  
@@ -64,11 +64,11 @@ Vyhodnotí jako podřízené prvky k výběru jedné sadě `ItemGroup` elementy 
 
 ### <a name="parent-elements"></a>Nadřazené prvky  
 
-|Prvek|Popis|  
-|-------------|-----------------|  
-|[jinak](../msbuild/otherwise-element-msbuild.md)|Určuje blok kódu, které budou spuštěny, pokud podmínky všech `When` prvky vyhodnotit `false`.|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
-|[Kdy](../msbuild/when-element-msbuild.md)|Určuje možné blok kódu `Choose` vybrat element.|  
+| Prvek | Popis |
+| - | - |
+| [jinak](../msbuild/otherwise-element-msbuild.md) | Určuje blok kódu, které budou spuštěny, pokud podmínky všech `When` prvky vyhodnotit `false`. |
+| [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
+| [Kdy](../msbuild/when-element-msbuild.md) | Určuje možné blok kódu `Choose` vybrat element. |
 
 ## <a name="remarks"></a>Poznámky  
  `Choose`, `When`, A `Otherwise` elementy se používají společně poskytují způsob, jak vybrat jednu část kódu k provedení počet možných alternativy. Další informace najdete v tématu [podmíněné konstrukce](../msbuild/msbuild-conditional-constructs.md).  

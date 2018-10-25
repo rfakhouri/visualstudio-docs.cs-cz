@@ -17,23 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192b78df4f0d1f579fb9a08c913c84e5a1e2fc71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34013c0b896f47e919a105680d18812aaba60dd0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906985"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Neutrální jazyky zdrojů pro lokalizaci
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute> Třída určuje jazykovou verzi zdrojů, součástí hlavní sestavení. Tento atribut slouží jako vylepšení výkonu, tak, aby <xref:System.Resources.ResourceManager> objekt nehledá prostředky, které jsou součástí hlavní sestavení.
+<xref:System.Resources.NeutralResourcesLanguageAttribute> Třída určuje jazykovou verzi prostředků zahrnuté v hlavním sestavení. Tento atribut se používá jako vylepšení výkonu, tak, aby <xref:System.Resources.ResourceManager> objekt neprohledává za prostředky, které jsou zahrnuty v hlavním sestavení.
 
- Následující kód ukazuje, jak nastavit jazyk neutrální prostředky. Kód mohou být umístěny ve skriptu sestavení nebo v souboru AssemblyInfo.vb nebo AssemblyInfo.cs.
+ Následující kód ukazuje, jak nastavit jazyk neutrální prostředky. Kód je možné použít ve skriptu sestavení nebo v souboru AssemblyInfo.vb nebo AssemblyInfo.cs.
 
 ```vb
 ' Set neutral resources language for assembly.
 <Assembly: NeutralResourcesLanguageAttribute("en")>
-
 ```
 
 ```csharp
@@ -41,7 +40,7 @@ ms.locfileid: "31943290"
 [assembly: NeutralResourcesLanguageAttribute("en")]
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:System.Resources.ResourceManager>
 - [Představení mezinárodních aplikací založených na prostředí .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)

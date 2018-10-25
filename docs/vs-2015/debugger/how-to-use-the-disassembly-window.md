@@ -30,12 +30,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907583"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Postupy: Použití okna zpětného překladu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +46,23 @@ Tato funkce je dostupná jenom v případě, že je povoleno ladění na úrovni
   
  Kromě pokyny sestavení **zpětný překlad** okna můžete zobrazit následující volitelné informace:  
   
--   Adresa paměti, kde se nachází každou instrukci. Pro nativní aplikace Toto je skutečná adresa paměti. Visual Basic, C# nebo spravovaný kód je posun od začátku této funkce.  
+- Adresa paměti, kde se nachází každou instrukci. Pro nativní aplikace Toto je skutečná adresa paměti. Visual Basic, C# nebo spravovaný kód je posun od začátku této funkce.  
   
--   Zdrojový kód, ze kterého je odvozen kódu sestavení.  
+- Zdrojový kód, ze kterého je odvozen kódu sestavení.  
   
--   Kód bajtů – znázornění bajtu skutečný nebo instrukce jazyka MSIL.  
+- Kód bajtů – znázornění bajtu skutečný nebo instrukce jazyka MSIL.  
   
--   Názvy symbolů pro adresy paměti.  
+- Názvy symbolů pro adresy paměti.  
   
--   Čísla řádků zdrojového kódu.  
+- Čísla řádků zdrojového kódu.  
   
- Instrukcí sestavení jazyka se skládají z klávesových zkratek, které jsou zkratky pro instrukcí názvy a symboly, které představují proměnné, registry a konstanty. Každou instrukci strojového jazyka je reprezentován symbolické jeden jazyk sestavení, obvykle následovaného jednou nebo více proměnných, registry nebo konstanty.  
+  Instrukcí sestavení jazyka se skládají z klávesových zkratek, které jsou zkratky pro instrukcí názvy a symboly, které představují proměnné, registry a konstanty. Každou instrukci strojového jazyka je reprezentován symbolické jeden jazyk sestavení, obvykle následovaného jednou nebo více proměnných, registry nebo konstanty.  
   
- Pokud nelze číst jazyku sestavení a chcete využívat všech výhod v okně zpětný překlad, projděte si dobré adresáře na programovací jazyk sestavení. Jazyk sestavení programování je nad rámec co jsme adresy v tomto stručném úvodu v okně zpětný překlad.  
+  Pokud nelze číst jazyku sestavení a chcete využívat všech výhod v okně zpětný překlad, projděte si dobré adresáře na programovací jazyk sestavení. Jazyk sestavení programování je nad rámec co jsme adresy v tomto stručném úvodu v okně zpětný překlad.  
   
- Protože kód sestavení spoléhá na registrech procesoru, nebo v případě spravovaného kódu, registruje modul common language runtime, ale bude často užitečné použít okno zpětný překlad ve spojení s oknem registrů, které umožňuje zkoumat registru obsah.  
+  Protože kód sestavení spoléhá na registrech procesoru, nebo v případě spravovaného kódu, registruje modul common language runtime, ale bude často užitečné použít okno zpětný překlad ve spojení s oknem registrů, které umožňuje zkoumat registru obsah.  
   
- Pravděpodobně se nikdy máte touha nebo potřebujete zobrazíte pokyny strojového kódu v jejich a číselné formuláře, nikoli jazyk sestavení. Ale pokud chcete udělat, je použití okna paměť pro tento účel nebo zvolte kód bajtů z místní nabídky v okně zpětný překlad.  
+  Pravděpodobně se nikdy máte touha nebo potřebujete zobrazíte pokyny strojového kódu v jejich a číselné formuláře, nikoli jazyk sestavení. Ale pokud chcete udělat, je použití okna paměť pro tento účel nebo zvolte kód bajtů z místní nabídky v okně zpětný překlad.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

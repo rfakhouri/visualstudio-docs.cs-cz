@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905932"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Nabídek a příkazů pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196505"
   
  **Panel nástrojů obecné pokyny:**  
   
--   Každý panel nástrojů má 24 pixelů v běžných ovládacích prvků (úchytu, přetečení).  
+- Každý panel nástrojů má 24 pixelů v běžných ovládacích prvků (úchytu, přetečení).  
   
--   Tlačítko panelu nástrojů je 22 pixelů na šířku, včetně odsazení. Nastavování ikonu tlačítka rozdělení přidá další 11 pixelů šířky.  
+- Tlačítko panelu nástrojů je 22 pixelů na šířku, včetně odsazení. Nastavování ikonu tlačítka rozdělení přidá další 11 pixelů šířky.  
   
--   Duplikace příkazy mezi panely nástrojů je povolen.  
+- Duplikace příkazy mezi panely nástrojů je povolen.  
   
- **Panely nástrojů konkrétní dokumenty** zobrazí, když určitý typ souboru je aktivní a zmizet, když se stane aktivním jiným typem souboru.  
+  **Panely nástrojů konkrétní dokumenty** zobrazí, když určitý typ souboru je aktivní a zmizet, když se stane aktivním jiným typem souboru.  
   
--   Panely nástrojů konkrétní dokumenty nesmí mít více než 12 tlačítka.  
+- Panely nástrojů konkrétní dokumenty nesmí mít více než 12 tlačítka.  
   
--   Celková šířka panelu nástrojů nesmí překročit 300 pixelů.  
+- Celková šířka panelu nástrojů nesmí překročit 300 pixelů.  
   
--   Každý typ souboru může mít jeden integrovaném panelu nástrojů nebo jeden konkrétní dokumenty globální nástrojů, ale ne obojí.  
+- Každý typ souboru může mít jeden integrovaném panelu nástrojů nebo jeden konkrétní dokumenty globální nástrojů, ale ne obojí.  
   
- **Panely nástrojů kontextové** zobrazí, když v určitém kontextu je nastavit a zpravidla zůstávají aktivní, delší dobu.  
+  **Panely nástrojů kontextové** zobrazí, když v určitém kontextu je nastavit a zpravidla zůstávají aktivní, delší dobu.  
   
--   Tlačítko limit pro všechny panely nástrojů specifickým pro kontext je 18.  
+- Tlačítko limit pro všechny panely nástrojů specifickým pro kontext je 18.  
   
--   Pokud se většina uživatelů nebude využívat konzistentně příkazy tento panel nástrojů, když je aktivní kontext, není s kontextem Přidružte tento panel nástrojů.  
+- Pokud se většina uživatelů nebude využívat konzistentně příkazy tento panel nástrojů, když je aktivní kontext, není s kontextem Přidružte tento panel nástrojů.  
   
--   Ujistěte se, že panelu nástrojů zmizí při ukončení kontextu. Žádná z těchto panelů nástrojů by se zobrazit při spuštění.  
+- Ujistěte se, že panelu nástrojů zmizí při ukončení kontextu. Žádná z těchto panelů nástrojů by se zobrazit při spuštění.  
   
- **Panely nástrojů s žádný kontext** nikdy nezobrazí automaticky. Tyto záznamy ukazují, pouze když uživatel aktivuje je. Ponechte maximální šířka pod 200 pixelů.  
+  **Panely nástrojů s žádný kontext** nikdy nezobrazí automaticky. Tyto záznamy ukazují, pouze když uživatel aktivuje je. Ponechte maximální šířka pod 200 pixelů.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Obecné organizace a prostředí definované skupiny  
  Použijte existující sdílené příkazy, pro skupinu příkazů a nabídek. Pokud nový příkaz musí být definován, pokuste se umístit ve stávající skupině sdílené příkazu. Pokud nové skupiny musí být definován, pokusí se jeho následné uložení do existující sdílené nabídky blízko skupinu souvisejícím příkazem před vytvořením nového nabídek nejvyšší úrovně. Tím se snižuje složitost příkaz přitom zajistit konzistentní příkaz umístění v integrovaném vývojovém prostředí.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196505"
   
  Při definování klávesové zkratky, postupujte podle těchto pravidel:  
   
--   **Použití ovládacího prvku (Ctrl) a klíče sekvence – funkce (Fn).**  
+- **Použití ovládacího prvku (Ctrl) a klíče sekvence – funkce (Fn).**  
   
--   **Zachovat často používané klávesové zkratky.** Zachovat nejpopulárnější klávesové zkratky.  
+- **Zachovat často používané klávesové zkratky.** Zachovat nejpopulárnější klávesové zkratky.  
   
--   **Klávesové zkratky pro editory usnadňují typu.** Klávesové zkratky – typ svázat s příkazy, že vývojáři nepotřebuje většinu při psaní kódu. Například **Edit.InvokeSmartTag** musí mít rychlé místní klíč jako Ctrl +/ a ne Alt + Shift + F10.  
+- **Klávesové zkratky pro editory usnadňují typu.** Klávesové zkratky – typ svázat s příkazy, že vývojáři nepotřebuje většinu při psaní kódu. Například **Edit.InvokeSmartTag** musí mít rychlé místní klíč jako Ctrl +/ a ne Alt + Shift + F10.  
   
--   **Snažte se o konzistentně s motivem klávesové zkratky.**  
+- **Snažte se o konzistentně s motivem klávesové zkratky.**  
   
--   **Postupujte podle pokynů Windows k určení, které modifikační klávesy využívat.** Pomocí kombinace kláves Ctrl pro příkazy, které mají ve velkém měřítku účinky, jako je například příkazy, které platí pro celý dokument. Pomocí kombinace klávesy Shift pro příkazy, které rozšířit nebo doplnit akce standardní klávesovou zkratku. Nepoužívejte kombinace kláves Ctrl + Alt.  
+- **Postupujte podle pokynů Windows k určení, které modifikační klávesy využívat.** Pomocí kombinace kláves Ctrl pro příkazy, které mají ve velkém měřítku účinky, jako je například příkazy, které platí pro celý dokument. Pomocí kombinace klávesy Shift pro příkazy, které rozšířit nebo doplnit akce standardní klávesovou zkratku. Nepoužívejte kombinace kláves Ctrl + Alt.  
   
--   **Odeberte nadbytečné klávesové zkratky.** Pokud máte starší verzi funkce, zvažte odebrání klávesových zkratek, které se používají s extrémně infrequency (méně než 10 pokusech z dat programu CEIP) nebo střední infrequency (méně než 100krát z dat programu CEIP), pokud přístupový klíč poskytuje rychlý přístup k ten samý příkaz. Příklad: C Alt a H, otevře se obsah nápovědy /.  
+- **Odeberte nadbytečné klávesové zkratky.** Pokud máte starší verzi funkce, zvažte odebrání klávesových zkratek, které se používají s extrémně infrequency (méně než 10 pokusech z dat programu CEIP) nebo střední infrequency (méně než 100krát z dat programu CEIP), pokud přístupový klíč poskytuje rychlý přístup k ten samý příkaz. Příklad: C Alt a H, otevře se obsah nápovědy /.  
   
- Není k dispozici jednoduchý způsob, jak zkontrolovat dostupnost místní. Pokud chcete přidat zástupce, postupujte podle těchto kroků:  
+  Není k dispozici jednoduchý způsob, jak zkontrolovat dostupnost místní. Pokud chcete přidat zástupce, postupujte podle těchto kroků:  
   
 1.  Zkontrolujte seznam [klávesové zkratky v sadě Visual Studio 2013](http://visualstudioshortcuts.com/2013/) k určení, jestli jsou podobné příkazy do skupiny jenom s.  
   

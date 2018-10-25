@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896136"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Návod: Identifikace problémů s výkonem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
   
 ## <a name="prerequisites"></a>Požadavky  
   
--   Zprostředkující Principy jazyka C#.  
+- Zprostředkující Principy jazyka C#.  
   
--   Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md).  
+- Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech.  
+  Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Profilace pomocí metody vzorkování  
  Vzorkování je metodu profilace, podle kterého procesu dotyčný pravidelně dotazovaní určit aktivní funkce. Výsledná data poskytuje přehled o četnosti dotyčný funkce byla vrcholu zásobníku volání při procesu je Vzorkovaná.  
@@ -139,29 +139,29 @@ Tento návod ukazuje, jak chcete-li Profilovat aplikaci identifikovat problémy 
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>K analýze instrumentovanou profilaci výsledky  
   
-1.  Časová osa grafu **Souhrn** zobrazení sestava ukazuje využití procesoru v programu za celou dobu profilování spuštění. Operace exportu dat musí být velké ve špičce nebo při na pravé straně grafu. Můžete filtrovat relace výkonu zobrazit a analyzovat pouze data, která byla shromážděna do operace exportu. Kliknutím vlevo od čárky v grafu, kde začíná operace exportu data. Klikněte znovu na pravé straně operace. Pak klikněte na tlačítko **filtrovat podle výběru** v seznamu odkazů na pravé straně na časové ose.  
+1. Časová osa grafu **Souhrn** zobrazení sestava ukazuje využití procesoru v programu za celou dobu profilování spuštění. Operace exportu dat musí být velké ve špičce nebo při na pravé straně grafu. Můžete filtrovat relace výkonu zobrazit a analyzovat pouze data, která byla shromážděna do operace exportu. Kliknutím vlevo od čárky v grafu, kde začíná operace exportu data. Klikněte znovu na pravé straně operace. Pak klikněte na tlačítko **filtrovat podle výběru** v seznamu odkazů na pravé straně na časové ose.  
   
-     **Kritickou cestu** stromové zobrazení, která <xref:System.String.Concat%2A> metodu, která je volána metodou PeopleTrax.Form1.ExportData spotřebovává vysoké procento času. Protože **System.String.Concat** je také v horní části **funkce s nejvíce individuální práce** seznamu omezení času stráveného ve funkci je pravděpodobně bod optimalizace.  
+    **Kritickou cestu** stromové zobrazení, která <xref:System.String.Concat%2A> metodu, která je volána metodou PeopleTrax.Form1.ExportData spotřebovává vysoké procento času. Protože **System.String.Concat** je také v horní části **funkce s nejvíce individuální práce** seznamu omezení času stráveného ve funkci je pravděpodobně bod optimalizace.  
   
-2.  Dvakrát klikněte na panel **System.String.Concat** v některém z souhrnné tabulky zobrazíte další informace najdete v zobrazení detailů funkce.  
+2. Dvakrát klikněte na panel **System.String.Concat** v některém z souhrnné tabulky zobrazíte další informace najdete v zobrazení detailů funkce.  
   
-3.  Uvidíte, PeopleTrax.Form1.ExportData je jedinou metodou, která volá Concat. Klikněte na tlačítko **PeopleTrax.Form1.ExportData** v **volání funkce** seznam a vyberte metodu je jako cílové zobrazení detailů funkce.  
+3. Uvidíte, PeopleTrax.Form1.ExportData je jedinou metodou, která volá Concat. Klikněte na tlačítko **PeopleTrax.Form1.ExportData** v **volání funkce** seznam a vyberte metodu je jako cílové zobrazení detailů funkce.  
   
-4.  Zkontrolujte metodu v okně zobrazení kódu funkce. Všimněte si, že neexistují žádné literálu volání **System.String.Concat**. Místo toho existuje několik použití += operandu, které kompilátor nahradí volání **System.String.Concat**. Všechny změny na řetězec v rozhraní .NET Framework způsobit, že nový řetězec mají být přiděleny. Zahrnuje rozhraní .NET Framework <xref:System.Text.StringBuilder> třídu, která je optimalizovaná pro zřetězení řetězců  
+4. Zkontrolujte metodu v okně zobrazení kódu funkce. Všimněte si, že neexistují žádné literálu volání **System.String.Concat**. Místo toho existuje několik použití += operandu, které kompilátor nahradí volání **System.String.Concat**. Všechny změny na řetězec v rozhraní .NET Framework způsobit, že nový řetězec mají být přiděleny. Zahrnuje rozhraní .NET Framework <xref:System.Text.StringBuilder> třídu, která je optimalizovaná pro zřetězení řetězců  
   
-5.  Nahraďte tento problémové oblasti optimalizovaný kód, přidejte do projektu PeopleTrax OPTIMIZED_EXPORTDATA jako symbol podmíněné kompilace.  
+5. Nahraďte tento problémové oblasti optimalizovaný kód, přidejte do projektu PeopleTrax OPTIMIZED_EXPORTDATA jako symbol podmíněné kompilace.  
   
-6.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt peopletrax – a pak klikněte na tlačítko **vlastnosti**.  
+6. V Průzkumníku řešení klikněte pravým tlačítkem na projekt peopletrax – a pak klikněte na tlačítko **vlastnosti**.  
   
-     Zobrazí se formulář vlastnosti PeopleTrax projektu.  
+    Zobrazí se formulář vlastnosti PeopleTrax projektu.  
   
-7.  Klikněte na tlačítko **sestavení** kartu.  
+7. Klikněte na tlačítko **sestavení** kartu.  
   
-8.  V **symboly podmíněné kompilace** textového pole, typ **OPTIMIZED_EXPORTDATA**.  
+8. V **symboly podmíněné kompilace** textového pole, typ **OPTIMIZED_EXPORTDATA**.  
   
 9. Zavře formulář. vlastnosti projektu a zvolte **Uložit vše** po zobrazení výzvy.  
   
- Když spustíte aplikaci znovu spustit, zobrazí se označené vylepšení výkonu. Se doporučuje spustit relaci profilování, ani když se uživatel viditelné vylepšení výkonu. Kontrola dat po vyřešení problému je důležité, protože prvním problémem může být skryl nějaký jiný problém.  
+   Když spustíte aplikaci znovu spustit, zobrazí se označené vylepšení výkonu. Se doporučuje spustit relaci profilování, ani když se uživatel viditelné vylepšení výkonu. Kontrola dat po vyřešení problému je důležité, protože prvním problémem může být skryl nějaký jiný problém.  
   
 ## <a name="see-also"></a>Viz také  
  [Přehledy](../profiling/overviews-performance-tools.md)   

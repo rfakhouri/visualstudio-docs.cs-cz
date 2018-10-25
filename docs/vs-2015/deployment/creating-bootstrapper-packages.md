@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910924"
 ---
 # <a name="creating-bootstrapper-packages"></a>Vytváření balíčků zaváděcího nástroje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ Instalační program je obecný instalační program, který můžete konfigurov
   
  Vytvoření balíčku zaváděcího nástroje musíte zadat redistribuovatelný balíček ve formě souboru EXE nebo MSI do generátoru manifestu zaváděcího nástroje. Generátor manifestu zaváděcího nástroje potom vytvoří následující soubory:  
   
--   Manifest produktu product.xml obsahující všechny jazykově nezávislá metadata pro balíček. Toto obsahuje metadata společná pro všechny lokalizované verze distribuovatelné součásti.  
+- Manifest produktu product.xml obsahující všechny jazykově nezávislá metadata pro balíček. Toto obsahuje metadata společná pro všechny lokalizované verze distribuovatelné součásti.  
   
--   Manifest balíčku package.xml, který obsahuje metadata pro konkrétní jazyk; obvykle obsahuje lokalizované chybové zprávy. Komponenta musí mít alespoň jeden manifest balíčku pro každou lokalizovanou verzi dané komponenty.  
+- Manifest balíčku package.xml, který obsahuje metadata pro konkrétní jazyk; obvykle obsahuje lokalizované chybové zprávy. Komponenta musí mít alespoň jeden manifest balíčku pro každou lokalizovanou verzi dané komponenty.  
   
- Po vytvoření těchto souborů uložte soubor manifestu produktu do složky s názvem pro vlastní zaváděcí nástroj. Soubor manifestu balíčku přejde do složky s názvem pro národní prostředí. Například pokud soubor manifestu balíčku je pro anglickou distribuci, uložte soubor do složky s názvem en. Tento proces opakujte pro každé národní prostředí, jako je například ja pro japonské písmo a de pro němčinu. Konečný vlastní balíček zaváděcího nástroje může mít následující strukturu složek.  
+  Po vytvoření těchto souborů uložte soubor manifestu produktu do složky s názvem pro vlastní zaváděcí nástroj. Soubor manifestu balíčku přejde do složky s názvem pro národní prostředí. Například pokud soubor manifestu balíčku je pro anglickou distribuci, uložte soubor do složky s názvem en. Tento proces opakujte pro každé národní prostředí, jako je například ja pro japonské písmo a de pro němčinu. Konečný vlastní balíček zaváděcího nástroje může mít následující strukturu složek.  
   
- `CustomBootstrapperPackage`  
+  `CustomBootstrapperPackage`  
   
- `product.xml`  
+  `product.xml`  
   
- `CustomBootstrapper.msi`  
+  `CustomBootstrapper.msi`  
   
- `de`  
+  `de`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `en`  
+  `en`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `ja`  
+  `ja`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- Nakonec zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [postupy: vytvoření balíčku zaváděcího nástroje lokalizované](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Nakonec zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [postupy: vytvoření balíčku zaváděcího nástroje lokalizované](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

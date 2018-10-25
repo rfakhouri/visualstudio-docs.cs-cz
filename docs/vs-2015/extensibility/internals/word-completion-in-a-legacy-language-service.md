@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910794"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Dokončování slov ve službě starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Dokončování slov vyplní chybějící znaky na částečně napsaného slova.
   
 ## <a name="implementation-steps"></a>Postup implementace  
   
-1.  Když uživatel vybere **dokončit slovo** z **IntelliSense** nabídce <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> příkazu se odesílají službě jazyka.  
+1. Když uživatel vybere **dokončit slovo** z **IntelliSense** nabídce <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> příkazu se odesílají službě jazyka.  
   
-2.  <xref:Microsoft.VisualStudio.Package.ViewFilter> Zachytí třídy příkazu a volání <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodu parse důvod <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter> Zachytí třídy příkazu a volání <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodu parse důvod <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source> Třídy volání a pak <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu k získání seznamu dokončování slov je to možné a pak zobrazí seznam slov v popisu tlačítka pomocí <xref:Microsoft.VisualStudio.Package.CompletionSet> třídy.  
+3. <xref:Microsoft.VisualStudio.Package.Source> Třídy volání a pak <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodu k získání seznamu dokončování slov je to možné a pak zobrazí seznam slov v popisu tlačítka pomocí <xref:Microsoft.VisualStudio.Package.CompletionSet> třídy.  
   
-     Pokud existuje pouze jeden odpovídající aplikace <xref:Microsoft.VisualStudio.Package.Source> třídy dokončí slovo.  
+    Pokud existuje pouze jeden odpovídající aplikace <xref:Microsoft.VisualStudio.Package.Source> třídy dokončí slovo.  
   
- Případně Pokud skener vrací hodnotu aktivační událost <xref:Microsoft.VisualStudio.Package.TokenTriggers> při první znak identifikátoru se <xref:Microsoft.VisualStudio.Package.Source> třídy to zjistí a volá <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodu parse důvod <xref:Microsoft.VisualStudio.Package.ParseReason>. V tomto případě musíte analyzátor zjištění přítomnosti tohoto znaku výběru člena a poskytnout seznam členů.  
+   Případně Pokud skener vrací hodnotu aktivační událost <xref:Microsoft.VisualStudio.Package.TokenTriggers> při první znak identifikátoru se <xref:Microsoft.VisualStudio.Package.Source> třídy to zjistí a volá <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodu parse důvod <xref:Microsoft.VisualStudio.Package.ParseReason>. V tomto případě musíte analyzátor zjištění přítomnosti tohoto znaku výběru člena a poskytnout seznam členů.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>Povolení podpory pro dokončit slovo  
  Povolení podpory pro sadu dokončování slov `CodeSense` s názvem parametr předaný <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atribut uživatele přidružené k balíčku jazyka. Tím se nastaví <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> vlastnost <xref:Microsoft.VisualStudio.Package.LanguagePreferences> třídy.  

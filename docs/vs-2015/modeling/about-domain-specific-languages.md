@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894518"
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Na rozdíl od pro obecné účely jazyka, jako je C# nebo UML jazyka specifické
   
  Vaše podnikání a váš projekt také řešit speciální sadu koncepty, které by mohly být popsané společně s DSL. Můžete například definovat DSL pro jednu z těchto aplikací:  
   
--   Plán cesty navigace na webu.  
+- Plán cesty navigace na webu.  
   
--   Vzájemné propojení diagramy pro elektronických komponent.  
+- Vzájemné propojení diagramy pro elektronických komponent.  
   
--   Sítě dopravní pásy a zpracování zařízení pro letišti sobě.  
+- Sítě dopravní pásy a zpracování zařízení pro letišti sobě.  
   
- Při návrhu DSL, můžete definovat *doménové třídy* pro všechny důležité koncepty v doméně, třeba webové stránky, lamp nebo letiště stolu vrácení se změnami. Můžete definovat *vztahy domén* jako hypertextový odkaz, při přenosu nebo dopravní pás koncepty propojit dohromady.  
+  Při návrhu DSL, můžete definovat *doménové třídy* pro všechny důležité koncepty v doméně, třeba webové stránky, lamp nebo letiště stolu vrácení se změnami. Můžete definovat *vztahy domén* jako hypertextový odkaz, při přenosu nebo dopravní pás koncepty propojit dohromady.  
   
- Vytvoření uživatelů tohoto kódu DSL *modely.* Modely jsou *instance* nástroje DSL. Například popisují konkrétní webovou stránku nebo její konkrétní zařízení nebo sobě systém v určitém letišti zpracování.  
+  Vytvoření uživatelů tohoto kódu DSL *modely.* Modely jsou *instance* nástroje DSL. Například popisují konkrétní webovou stránku nebo její konkrétní zařízení nebo sobě systém v určitém letišti zpracování.  
   
- Vaši uživatelé mohou zobrazit model, jako diagram nebo formulář Windows. Modely lze také zobrazit ve formátu XML, jak jsou uložené. Při definování DSL definujete, jak se zobrazují instance každé doménové třídy a relace na obrazovce uživatele. Typické DSL se zobrazí kolekce ikon nebo obdélníky propojené pomocí šipky.  
+  Vaši uživatelé mohou zobrazit model, jako diagram nebo formulář Windows. Modely lze také zobrazit ve formátu XML, jak jsou uložené. Při definování DSL definujete, jak se zobrazují instance každé doménové třídy a relace na obrazovce uživatele. Typické DSL se zobrazí kolekce ikon nebo obdélníky propojené pomocí šipky.  
   
- Následující obrázek znázorňuje malé modelu v graficky DSL:  
+  Následující obrázek znázorňuje malé modelu v graficky DSL:  
   
- ![Řada stromu modelu Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Řada stromu modelu Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Co můžete dělat s DSL  
  Typická aplikace DSL je generování programového kódu nebo jiné artefakty. Při definování vašeho DSL, můžete definovat *textových šablon* , který čtení modelu DSL a generování textových souborů.  

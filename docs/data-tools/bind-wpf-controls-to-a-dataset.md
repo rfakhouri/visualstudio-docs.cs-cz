@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917516"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 
@@ -58,15 +58,15 @@ Předchozí znalosti následujících konceptů je také užitečné, ale nejsou
 
 Vytvořte nový projekt WPF pro zobrazení záznamů produktu.
 
-1.  Spusťte sadu Visual Studio.
+1. Spusťte sadu Visual Studio.
 
-2.  Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
+2. Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
-3.  Rozbalte **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **Windows**.
+3. Rozbalte **jazyka Visual Basic** nebo **Visual C#** a pak vyberte **Windows**.
 
-4.  Vyberte **aplikace WPF** šablony projektu.
+4. Vyberte **aplikace WPF** šablony projektu.
 
-5.  V **název** zadejte **AdventureWorksProductsEditor** a pak vyberte **OK**.
+5. V **název** zadejte **AdventureWorksProductsEditor** a pak vyberte **OK**.
 
    Visual Studio vytvoří projekt AdventureWorksProductsEditor.
 
@@ -126,23 +126,23 @@ Chcete-li datovou sadu naplnit data, použijte `Fill` metodu `ProductTableAdapte
 
 Přidání několika tlačítek do okna tak, že upravíte XAML ve WPF Designer. Dále v tomto názorném postupu přidáte kód, který umožňuje uživatelům posouvat prostřednictvím a uložte změny záznamů produkty pomocí těchto tlačítek.
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel *souboru MainWindow.xaml*.
+1. V **Průzkumníka řešení**, dvakrát klikněte na panel *souboru MainWindow.xaml*.
 
-     Otevře se okno v **Návrhář WPF**.
+    Otevře se okno v **Návrhář WPF**.
 
-2.  V [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] návrháře, přidejte následující kód mezi `<Grid>` značky:
+2. V [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] návrháře, přidejte následující kód mezi `<Grid>` značky:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Sestavte projekt.
+3. Sestavte projekt.
 
 ## <a name="create-data-bound-controls"></a>Vytvoření ovládacích prvků vázaných na data
 
@@ -249,5 +249,5 @@ Po dokončení tohoto návodu, můžete vyzkoušet následující související 
 ## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Přehled datových vazeb](/dotnet/framework/wpf/data/data-binding-overview)

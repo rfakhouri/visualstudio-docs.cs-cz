@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901551"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Testování jednotek kódu jazyka Visual C# v Store app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
   
 > [!NOTE]
 >  Visual Studio Community, Enterprise. a Professional nabízí další funkce pro testování částí.  
->   
->  -   Použijte libovolné rozhraní testování částí třetích stran a open source, který byl vytvořen adaptér doplněk pro aplikaci Microsoft Test Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro testy.  
-> -   Spusťte testy po každém sestavení.  
-> -   VS Enterprise také obsahuje Microsoft Fakes, izolované rozhraní pro spravovaný kód, který vám umožní zaměřit testů na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.  
->   
->  Další informace najdete v tématu [ověřování kódu pomocí testování částí](http://msdn.microsoft.com/library/dd264975.aspx) v knihovně MSDN.  
+> 
+> - Použijte libovolné rozhraní testování částí třetích stran a open source, který byl vytvořen adaptér doplněk pro aplikaci Microsoft Test Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro testy.  
+>   -   Spusťte testy po každém sestavení.  
+>   -   VS Enterprise také obsahuje Microsoft Fakes, izolované rozhraní pro spravovaný kód, který vám umožní zaměřit testů na váš vlastní kód nahrazením testovací kód pro systém a funkce třetích stran.  
+> 
+>   Další informace najdete v tématu [ověřování kódu pomocí testování částí](http://msdn.microsoft.com/library/dd264975.aspx) v knihovně MSDN.  
   
 ##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  [Vytvoření řešení a projektu testování částí](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Několik testů projektu do projektu aplikace  
   
-1.  Přidáte odkaz na aplikaci matematické výrazy RooterTests projektu.  
+1. Přidáte odkaz na aplikaci matematické výrazy RooterTests projektu.  
   
-    1.  V Průzkumníku řešení zvolte **RooterTests** projektu a klikněte na tlačítko **přidat odkaz...**  v místní nabídce.  
+   1.  V Průzkumníku řešení zvolte **RooterTests** projektu a klikněte na tlačítko **přidat odkaz...**  v místní nabídce.  
   
-    2.  Na **přidat odkaz - RooterTests** dialogového okna rozbalte **řešení** a zvolte **projekty**. Vyberte **matematické výrazy** položky.  
+   2.  Na **přidat odkaz - RooterTests** dialogového okna rozbalte **řešení** a zvolte **projekty**. Vyberte **matematické výrazy** položky.  
   
-         ![Přidat odkaz na projekt matematické výrazy](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![Přidat odkaz na projekt matematické výrazy](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  Přidat sadu pomocí příkazu soubor UnitTest1.cs:  
+2. Přidat sadu pomocí příkazu soubor UnitTest1.cs:  
   
-    1.  Otevřít **UnitTest1.cs**.  
+   1.  Otevřít **UnitTest1.cs**.  
   
-    2.  Přidejte tento kód níže `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` řádku:  
+   2.  Přidejte tento kód níže `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` řádku:  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  Přidáte test, který používá funkci Rooter. Přidejte následující kód, který **UnitTest1.cpp**:  
+3. Přidáte test, který používá funkci Rooter. Přidejte následující kód, který **UnitTest1.cpp**:  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  Sestavte řešení.  
+4. Sestavte řešení.  
   
-     Nový test se zobrazí v Průzkumníku testů v **nespuštěné testy** uzlu.  
+    Nový test se zobrazí v Průzkumníku testů v **nespuštěné testy** uzlu.  
   
-5.  V Průzkumníku testů, zvolte **spustit všechny**.  
+5. V Průzkumníku testů, zvolte **spustit všechny**.  
   
-     ![Základní Test prošel](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![Základní Test prošel](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.  
+   Máte nastavení testu a kódové projekty a ověřit, že je možné spustit testy, na kterých běží funkce v projektu kódu. Teď můžete začít psát skutečné testů a kódu.  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Využívejte iterativní posílit testy a daly se předat  
   
@@ -256,70 +256,70 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro třídy V
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> Ladit test chybou  
   
-1.  Přidat jiného testu k **UnitTest1.cs**:  
+1. Přidat jiného testu k **UnitTest1.cs**:  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  V Průzkumníku testů, zvolte **spustit všechny**.  
+2. V Průzkumníku testů, zvolte **spustit všechny**.  
   
-     Test se nezdaří. Zvolte název testu v aplikaci Test Explorer. Neplatnost kontrolního výrazu je zvýrazněn. Zpráva o selhání je viditelný v podokně podrobností Test Explorer.  
+    Test se nezdaří. Zvolte název testu v aplikaci Test Explorer. Neplatnost kontrolního výrazu je zvýrazněn. Zpráva o selhání je viditelný v podokně podrobností Test Explorer.  
   
-     ![NegativeRangeTests nepovedlo](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![NegativeRangeTests nepovedlo](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  Chcete-li zjistit, proč se test nezdaří, kroku pomocí funkce:  
+3. Chcete-li zjistit, proč se test nezdaří, kroku pomocí funkce:  
   
-    1.  Nastavit zarážku na začátku `SquareRoot` funkce.  
+   1.  Nastavit zarážku na začátku `SquareRoot` funkce.  
   
-    2.  V místní nabídce neúspěšných testů, zvolte **ladit vybrané testy**.  
+   2.  V místní nabídce neúspěšných testů, zvolte **ladit vybrané testy**.  
   
-         Při spuštění se zastaví na zarážce, krokovat kód.  
+        Při spuštění se zastaví na zarážce, krokovat kód.  
   
-    3.  Přidejte kód do metody Rooter pro zachycení výjimky:  
+   3.  Přidejte kód do metody Rooter pro zachycení výjimky:  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  V Průzkumníku testů zvolte **spustit všechny** testovací metoda opravené a ujistěte se, že nebyla zavedena regrese.  
+   1.  V Průzkumníku testů zvolte **spustit všechny** testovací metoda opravené a ujistěte se, že nebyla zavedena regrese.  
   
- Všechny testy jsou nyní úspěšné.  
+   Všechny testy jsou nyní úspěšné.  
   
- ![Všechny testy byly úspěšné](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![Všechny testy byly úspěšné](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a> Refaktorování kódu  
  **Zjednodušení centrální výpočtu ve funkci SquareRoot.**  

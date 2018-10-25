@@ -9,12 +9,12 @@ description: Zjistěte, jak získat a spravovat kódy product key v předplatný
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900849"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Používání kódů product key v předplatných sady Visual Studio
 
@@ -79,11 +79,11 @@ Jenom předplatitelé s aktivním předplatným můžete stahovat produkty a dek
 
 
 Uplatnit kód product key:
-1.  Přihlaste se k předplatnému sady Visual Studio.  Musíte být přihlášeni ke stažení produktů nebo deklarací identity kódy product key.
-2.  Klikněte na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartu.
-3.  Kódy Product Key abecedním pořadí podle názvu produktu.  Můžete buď přejděte dolů na název požadovaného produktu nebo vyhledejte si ho pomocí panelu hledání v horní části stránky.
-    > [!div class="mx-imgBorder"]
-    > ![Vyhledejte kód Product Key](_img\product-keys\visio-product-key-cropped.png)
+1. Přihlaste se k předplatnému sady Visual Studio.  Musíte být přihlášeni ke stažení produktů nebo deklarací identity kódy product key.
+2. Klikněte na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartu.
+3. Kódy Product Key abecedním pořadí podle názvu produktu.  Můžete buď přejděte dolů na název požadovaného produktu nebo vyhledejte si ho pomocí panelu hledání v horní části stránky.
+   > [!div class="mx-imgBorder"]
+   > ![Vyhledejte kód Product Key](_img/product-keys/visio-product-key-cropped.png)
 
 V tomto příkladu používáme panelu hledání vyhledejte kód product key pro Visio 2010.
 Jak je vidět, existuje několik verzí aplikace Visio 2010, které jsou uvedeny.  Jeden klíč už byl vyžádaný pro Visio Standard 2010 a Visio Premium 2010 a obě mají čtyři kódy zbývající.  Klíče, které byly nárokován jsou oba klíče maloobchodního prodeje a jsou zobrazeny na stránce.  Všimněte si, že můžete zaznamenat poznámku o uplatněné kódy v **poznámky** sloupce.  To můžete použít ve spojení s datem ve **Claimed** sloupec, který chcete sledovat, jste uplatnili klíče.  Například může dělat poznámky při aktivaci instalaci produktu pomocí klíče.

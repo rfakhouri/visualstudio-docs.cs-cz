@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906920"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura balíčku VSPackage (balíček VSPackage správy zdrojového kódu)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Zdrojový ovládací prvek balíčku SDK poskytuje pokyny pro vytvoření VSPack
   
  Sémantika VSPackage patří:  
   
--   Rozhraní k implementaci tím, že se VSPackage ( `IVsPackage` rozhraní)  
+- Rozhraní k implementaci tím, že se VSPackage ( `IVsPackage` rozhraní)  
   
--   Implementace příkazu uživatelského rozhraní (.vsct souborů a provádění <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní)  
+- Implementace příkazu uživatelského rozhraní (.vsct souborů a provádění <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní)  
   
--   Registrace balíčku VSPackage pomocí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Registrace balíčku VSPackage pomocí [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- Ovládací prvek zdroje balíčku VSPackage musí komunikovat s těmito jiné [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entity:  
+  Ovládací prvek zdroje balíčku VSPackage musí komunikovat s těmito jiné [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] entity:  
   
--   Projekty  
+- Projekty  
   
--   Editory  
+- Editory  
   
--   Řešení  
+- Řešení  
   
--   Windows  
+- Windows  
   
--   Spuštění tabulky dokumentů  
+- Spuštění tabulky dokumentů  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Prostředí služby Visual Studio, které mohou být využívány  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

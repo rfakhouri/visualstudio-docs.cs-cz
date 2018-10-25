@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6139187ec619ac1825cc56f801035bc4f719854b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915669"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: poskytování asynchronní služby sady Visual Studio
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, by měl vytvořit asynchronní služby a načíst balíček ve vlákně na pozadí. K tomuto účelu můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> spíše než <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronní metody.
@@ -104,11 +104,11 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
 ## <a name="register-a-service"></a>Registrace služby  
  Chcete-li zaregistrovat služby, přidejte <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do balíčku, který poskytuje služby. Různé registraci synchronní služby, je nutné Ujistěte se, že balíček a služba podporuje asynchronní načítání:
   
--   Je nutné přidat **AllowsBackgroundLoading = true** pole <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> k zajištění balíčku můžete pro další informace o PackageRegistrationAttribute inicializují asynchronně, naleznete v tématu [zaregistrovat a zrušení registrace rozšíření VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
+- Je nutné přidat **AllowsBackgroundLoading = true** pole <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> k zajištění balíčku můžete pro další informace o PackageRegistrationAttribute inicializují asynchronně, naleznete v tématu [zaregistrovat a zrušení registrace rozšíření VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
--   Je nutné přidat **IsAsyncQueryable = true** pole <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> zajistit instance služby mohou být inicializovány asynchronně.
+- Je nutné přidat **IsAsyncQueryable = true** pole <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> zajistit instance služby mohou být inicializovány asynchronně.
 
- Tady je příklad `AsyncPackage` s registrací asynchronní služby:
+  Tady je příklad `AsyncPackage` s registrací asynchronní služby:
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

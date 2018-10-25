@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915809"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte komponenty na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.  
@@ -48,26 +48,26 @@ ms.locfileid: "42634735"
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
--   Podporované edice systému Windows, SharePoint a Visual Studio.  
+- Podporované edice systému Windows, SharePoint a Visual Studio.  
   
--   Visual Studio SDK. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Visual Studio SDK. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
+  Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
--   Použití objektového modelu serveru pro službu SharePoint. Další informace najdete v tématu [pomocí objektového modelu SharePoint Foundation na straně serveru](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Použití objektového modelu serveru pro službu SharePoint. Další informace najdete v tématu [pomocí objektového modelu SharePoint Foundation na straně serveru](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Webové části v řešení služby SharePoint. Další informace najdete v tématu [přehled webových částí](http://go.microsoft.com/fwlink/?LinkId=177803).  
+- Webové části v řešení služby SharePoint. Další informace najdete v tématu [přehled webových částí](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
 ## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto návodu, je nutné vytvořit tři projekty:  
   
--   Projekt VSIX k vytvoření balíčku VSIX k nasazení rozšíření.  
+- Projekt VSIX k vytvoření balíčku VSIX k nasazení rozšíření.  
   
--   Projekt knihovny tříd, který implementuje rozšíření. Tento projekt musí cílit na rozhraní .NET Framework 4.5.  
+- Projekt knihovny tříd, který implementuje rozšíření. Tento projekt musí cílit na rozhraní .NET Framework 4.5.  
   
--   Projekt knihovny tříd, který definuje vlastní příkazy služby SharePoint. Tento projekt musí cílit na rozhraní.NET Framework 3.5.  
+- Projekt knihovny tříd, který definuje vlastní příkazy služby SharePoint. Tento projekt musí cílit na rozhraní.NET Framework 3.5.  
   
- Začněte postup vytvořením projektů.  
+  Začněte postup vytvořením projektů.  
   
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX  
   

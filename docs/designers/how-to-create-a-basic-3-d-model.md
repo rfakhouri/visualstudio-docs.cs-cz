@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913446"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Postupy: vytvoření základního 3D modelu
 
@@ -42,37 +42,37 @@ Tento článek popisuje způsob použití Editoru modelů pro vytvoření zákla
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>K vytvoření 3D modelu zjednodušené domu
 
-1.  Vytvoření 3D modelu, se kterým chcete pracovat. Informace o tom, jak přidat modelu do projektu naleznete v části Začínáme v [editoru modelů](../designers/model-editor.md).
+1. Vytvoření 3D modelu, se kterým chcete pracovat. Informace o tom, jak přidat modelu do projektu naleznete v části Začínáme v [editoru modelů](../designers/model-editor.md).
 
-2.  Přidáte datové krychle do scény. V **nástrojů** okně v části **tvary**vyberte **datové krychle** a přesuňte jej na návrhovou plochu.
+2. Přidáte datové krychle do scény. V **nástrojů** okně v části **tvary**vyberte **datové krychle** a přesuňte jej na návrhovou plochu.
 
-3.  Přepnout výběr pro rozpoznávání tváře. Na panelu nástrojů editoru modelů **tváří vybrat**.
+3. Přepnout výběr pro rozpoznávání tváře. Na panelu nástrojů editoru modelů **tváří vybrat**.
 
-4.  Rozdělit horní části datové krychle. V režimu výběru ploch zvolte krychli jednou aktivovat pro výběr a klikněte na tlačítko horní část datové krychle a vyberte hlavní rozpoznávání tváře. Na panelu nástrojů editoru modelů **rozdělit plochu**. Tento postup přidá nové vrcholy k hornímu okraji datové krychle, která ho rozdělit do čtyř oddílů stejně velké.
+4. Rozdělit horní části datové krychle. V režimu výběru ploch zvolte krychli jednou aktivovat pro výběr a klikněte na tlačítko horní část datové krychle a vyberte hlavní rozpoznávání tváře. Na panelu nástrojů editoru modelů **rozdělit plochu**. Tento postup přidá nové vrcholy k hornímu okraji datové krychle, která ho rozdělit do čtyř oddílů stejně velké.
 
-     ![Má dělí horní části datové krychle](../designers/media/gfx_model_demo_house_subdiv.png)
+    ![Má dělí horní části datové krychle](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Vyloučit sociálními sousední datové krychle – například front-end a pravé straně datové krychle. V režimu výběru ploch zvolte datovou krychli jednou aktivovat pro výběr a klikněte na tlačítko straně datové krychle. Stiskněte a podržte **Ctrl** klíče, zvolte jinou stranu krychle sousedícího se na straně nejprve vyberete a pak zvolte na panelu nástrojů editoru modelů **vyloučit plochu**.
+5. Vyloučit sociálními sousední datové krychle – například front-end a pravé straně datové krychle. V režimu výběru ploch zvolte datovou krychli jednou aktivovat pro výběr a klikněte na tlačítko straně datové krychle. Stiskněte a podržte **Ctrl** klíče, zvolte jinou stranu krychle sousedícího se na straně nejprve vyberete a pak zvolte na panelu nástrojů editoru modelů **vyloučit plochu**.
 
-     ![Strany krychle mít vyňaty.](../designers/media/gfx_model_demo_house_extrude.png)
+    ![Strany krychle mít vyňaty.](../designers/media/gfx_model_demo_house_extrude.png)
 
-6.  Rozšiřte jednu extrusions. Vyberte jednu z plochy, které jste právě vyňaty a zvolte na panelu nástrojů editoru modelů **přeložit** nástroj a ve stejném směru jako vytlačení přesunout manipulátor překladu.
+6. Rozšiřte jednu extrusions. Vyberte jednu z plochy, které jste právě vyňaty a zvolte na panelu nástrojů editoru modelů **přeložit** nástroj a ve stejném směru jako vytlačení přesunout manipulátor překladu.
 
-     ![Straně krychle má další vyňaty.](../designers/media/gfx_model_demo_house_extend.png)
+    ![Straně krychle má další vyňaty.](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Triangulovat modelu. Na panelu nástrojů editoru modelů **Upřesnit** > **nástroje** > **Triangulovat**.
+7. Triangulovat modelu. Na panelu nástrojů editoru modelů **Upřesnit** > **nástroje** > **Triangulovat**.
 
-8.  Vytvoření stříška dům. Přepnout do režimu výběru okrajů výběrem **vyberte Edge** na panelu nástrojů editoru modelů a datové krychle aktivovat, klikněte na tlačítko. Stiskněte a podržte **Ctrl** klíče při výběru hran, která jsou zobrazena zde:
+8. Vytvoření stříška dům. Přepnout do režimu výběru okrajů výběrem **vyberte Edge** na panelu nástrojů editoru modelů a datové krychle aktivovat, klikněte na tlačítko. Stiskněte a podržte **Ctrl** klíče při výběru hran, která jsou zobrazena zde:
 
-     ![Hrany, které budou tvořit ve špičce stropu](../designers/media/gfx_model_demo_house_edges.png)
+    ![Hrany, které budou tvořit ve špičce stropu](../designers/media/gfx_model_demo_house_edges.png)
 
-     Když vyberete okrajů, na panelu nástrojů editoru modelů, zvolte **přeložit** nástroje a poté přesuňte směrem nahoru k vytvoření stříška dům manipulátor překladu.
+    Když vyberete okrajů, na panelu nástrojů editoru modelů, zvolte **přeložit** nástroje a poté přesuňte směrem nahoru k vytvoření stříška dům manipulátor překladu.
 
- Zjednodušené house modelu je dokončeno. Tady je znovu finálního modelu s plochým stínováním použít:
+   Zjednodušené house modelu je dokončeno. Tady je znovu finálního modelu s plochým stínováním použít:
 
- ![Dokončené modelu zjednodušené house](../designers/media/gfx_model_demo_house_final.png)
+   ![Dokončené modelu zjednodušené house](../designers/media/gfx_model_demo_house_final.png)
 
- V dalším kroku můžete tento 3D model použití shaderu. Informace najdete v tématu [postupy: použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   V dalším kroku můžete tento 3D model použití shaderu. Informace najdete v tématu [postupy: použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Viz také:
 

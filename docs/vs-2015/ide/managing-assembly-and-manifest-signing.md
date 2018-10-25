@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909676"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Správa sestavení a podepsání manifestu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ Podepisování silným názvem poskytuje softwarová součást globálně jedine
 ## <a name="asset-types-and-signing"></a>Typy prostředků a podepisování  
  Můžete podepisovat manifesty aplikace a sestavení .NET. Patří mezi ně například:  
   
--   spustitelné soubory (.exe)  
+- spustitelné soubory (.exe)  
   
--   manifesty aplikací (. exe.manifest)  
+- manifesty aplikací (. exe.manifest)  
   
--   manifesty nasazení (.application)  
+- manifesty nasazení (.application)  
   
--   sdílené komponenty sestavení (.dll)  
+- sdílené komponenty sestavení (.dll)  
   
- Následující typy prostředků, musíte se přihlásit:  
+  Následující typy prostředků, musíte se přihlásit:  
   
-1.  Sestavení, pokud chcete nasadit do globální mezipaměti sestavení (GAC).  
+1. Sestavení, pokud chcete nasadit do globální mezipaměti sestavení (GAC).  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty aplikace a nasazení. Visual Studio umožňuje podepisování ve výchozím nastavení v případě těchto aplikací.  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesty aplikace a nasazení. Visual Studio umožňuje podepisování ve výchozím nastavení v případě těchto aplikací.  
   
-3.  Primární spolupracující sestavení, které se používají pro interoperabilitu COM. Nástroj TLBIMP vynucuje silné názvy při vytváření primárních sestavení vzájemné spolupráce z knihovny typů modelu COM.  
+3. Primární spolupracující sestavení, které se používají pro interoperabilitu COM. Nástroj TLBIMP vynucuje silné názvy při vytváření primárních sestavení vzájemné spolupráce z knihovny typů modelu COM.  
   
- Obecně neměli podepisovat spustitelné soubory. Silný název komponenty nemůže odkazovat na komponenty bez silným názvem, který je nasazen s aplikací. Uživatel spustitelné soubory aplikace Visual Studio, ale místo toho podepíše manifest aplikace, která odkazuje na spustitelný soubor s názvem slabé. Neměli byste obecně, podepisování součásti, které jsou privátní pro vaši aplikaci, protože podepisování může to ztížit Spravovat závislosti.  
+   Obecně neměli podepisovat spustitelné soubory. Silný název komponenty nemůže odkazovat na komponenty bez silným názvem, který je nasazen s aplikací. Uživatel spustitelné soubory aplikace Visual Studio, ale místo toho podepíše manifest aplikace, která odkazuje na spustitelný soubor s názvem slabé. Neměli byste obecně, podepisování součásti, které jsou privátní pro vaši aplikaci, protože podepisování může to ztížit Spravovat závislosti.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Podepsání sestavení v sadě Visual Studio  
  Podepsání aplikace nebo komponenty pomocí **podepisování** karty v okně Vlastnosti projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo typ **vlastnosti projektu** v **Snadné spuštění** okna, nebo stiskněte klávesovou zkratku ALT + ENTER uvnitř **Průzkumníka řešení** okno). Vyberte **podepisování** kartu a potom vyberte **podepsat sestavení** zaškrtávací políčko.  

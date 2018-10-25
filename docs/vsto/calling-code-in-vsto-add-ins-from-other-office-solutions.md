@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5403b1945739c39392ba31006ad932a7eccda4ff
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904645"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Volání kódu v doplňcích VSTO z jiných řešení pro Office
   Objekt můžete zveřejnit v doplňku VSTO pro ostatní řešení, včetně jiných řešení pro Microsoft Office. To je užitečné, pokud váš doplněk VSTO poskytuje službu, kterou chcete povolit použití jiných řešení. Například pokud máte doplňku VSTO pro Microsoft Office Excel, která provádí výpočty finančních dat z webové služby, jiná řešení provádět tyto výpočty pomocí volání do doplňku VSTO pro Excel za běhu.  
@@ -63,24 +63,24 @@ ms.locfileid: "39511522"
   
  Doporučeným způsobem, jak vystavit [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) rozhraní je provést následující kroky:  
   
-1.  Definujte rozhraní, který deklaruje členy, které chcete zpřístupnit další řešení. Toto rozhraní můžete definovat v projektu doplňku VSTO. Můžete ale chtít definovat toto rozhraní v projektu knihovny samostatné třídy, pokud chcete vystavit třídy, která se bez VBA řešení tak, aby řešení, které volají doplňku VSTO může odkazovat na rozhraní bez odkazování na projekt doplňku VSTO.  
+1. Definujte rozhraní, který deklaruje členy, které chcete zpřístupnit další řešení. Toto rozhraní můžete definovat v projektu doplňku VSTO. Můžete ale chtít definovat toto rozhraní v projektu knihovny samostatné třídy, pokud chcete vystavit třídy, která se bez VBA řešení tak, aby řešení, které volají doplňku VSTO může odkazovat na rozhraní bez odkazování na projekt doplňku VSTO.  
   
-2.  Použít <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut k tomuto rozhraní a nastavte tento atribut **true**.  
+2. Použít <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut k tomuto rozhraní a nastavte tento atribut **true**.  
   
-3.  Upravte třídu pro implementaci tohoto rozhraní.  
+3. Upravte třídu pro implementaci tohoto rozhraní.  
   
-4.  Použít <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribut do vaší třídy a nastavte tento atribut **žádný** hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceType> výčtu.  
+4. Použít <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribut do vaší třídy a nastavte tento atribut **žádný** hodnotu <xref:System.Runtime.InteropServices.ClassInterfaceType> výčtu.  
   
-5.  Pokud chcete zpřístupnit tuto třídu klientům mimo proces, budete pravděpodobně potřebovat provést následující kroky:  
+5. Pokud chcete zpřístupnit tuto třídu klientům mimo proces, budete pravděpodobně potřebovat provést následující kroky:  
   
-    -   Odvodit třídu z <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Další informace najdete v tématu [vystavit třídy klientům mimo proces](#outofproc).  
+   -   Odvodit třídu z <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Další informace najdete v tématu [vystavit třídy klientům mimo proces](#outofproc).  
   
-    -   Nastavte **zaregistrovat pro interoperabilitu COM** vlastnost v projektu, ve kterém definujete rozhraní. Tato vlastnost je nutné pouze v případě, že chcete povolit klientům používat časná vazba provést volání do doplňku VSTO.  
+   -   Nastavte **zaregistrovat pro interoperabilitu COM** vlastnost v projektu, ve kterém definujete rozhraní. Tato vlastnost je nutné pouze v případě, že chcete povolit klientům používat časná vazba provést volání do doplňku VSTO.  
   
- Následující příklad kódu ukazuje `AddInUtilities` třídy s `ImportData` metodu, která je možné vyvolat v jiných řešení. Tento kód v rámci větší názorného postupu najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Následující příklad kódu ukazuje `AddInUtilities` třídy s `ImportData` metodu, která je možné vyvolat v jiných řešení. Tento kód v rámci větší názorného postupu najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
- [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
- [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
+   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
+   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
 ### <a name="expose-classes-to-vba"></a>Vystavení třídy pro jazyk VBA  
  Při provádění kroků, které jste zadali výše pro kód VBA může volat pouze metody, které deklarujete v rozhraní. VBA kód nelze volat všechny ostatní metody ve třídě, včetně metod, které vaše třída získává ze základní třídy, jako <xref:System.Object>.  
@@ -105,13 +105,13 @@ ms.locfileid: "39511522"
 ## <a name="access-objects-from-other-solutions"></a>Přístup k objektům z jiných řešení  
  Volání vystavené objektu v doplňku VSTO, proveďte následující kroky v řešení pro klienta:  
   
-1.  Získejte <xref:Microsoft.Office.Core.COMAddIn> objekt, který reprezentuje zveřejněné doplňku VSTO. Klienti mohou přistupovat ke všem Add in k dispozici VSTO pomocí `Application.COMAddIns` vlastnost v modelu objektu hostitele aplikace Office.  
+1. Získejte <xref:Microsoft.Office.Core.COMAddIn> objekt, který reprezentuje zveřejněné doplňku VSTO. Klienti mohou přistupovat ke všem Add in k dispozici VSTO pomocí `Application.COMAddIns` vlastnost v modelu objektu hostitele aplikace Office.  
   
-2.  Přístup k vlastnosti COMAddIn.Object <xref:Microsoft.Office.Core.COMAddIn> objektu. Tato vlastnost vrátí objekt vystavené z doplňku VSTO.  
+2. Přístup k vlastnosti COMAddIn.Object <xref:Microsoft.Office.Core.COMAddIn> objektu. Tato vlastnost vrátí objekt vystavené z doplňku VSTO.  
   
-3.  Volejte členy zveřejněné objektu.  
+3. Volejte členy zveřejněné objektu.  
   
- Způsob, jak použít návratová hodnota vlastnosti COMAddIn.Object se liší pro klienty VBA a jiných VBA. Klientům mimo proces dodatečný kód je nezbytný, aby se zabránilo možné časování.  
+   Způsob, jak použít návratová hodnota vlastnosti COMAddIn.Object se liší pro klienty VBA a jiných VBA. Klientům mimo proces dodatečný kód je nezbytný, aby se zabránilo možné časování.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Přístup k objektům z jazyka VBA řešení  
  Následující příklad kódu ukazuje, jak používat VBA pro volání metody, který je zveřejněný prostřednictvím doplňku VSTO. Toto makro VBA volá metodu s názvem `ImportData` , který je definován v VSTO doplňku, který je pojmenován **ExcelImportData**. Tento kód v rámci větší názorného postupu najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  

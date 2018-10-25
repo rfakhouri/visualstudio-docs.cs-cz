@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897768"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogové okno Vybrat podmínku (starší verze)
 Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v starší [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Použijte starší [!INCLUDE[wfd2](../includes/wfd2-md.md)] potřeba cílit na platformu [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] nebo [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  **Vyberte podmínku** dialogovému oknu slouží k výběru podmínky deklarativního pravidla pro přiřazení vlastnosti stavu aktivity. Tyto podmínky pravidla jsou vystaveny jako vlastnosti na těchto aktivitách out-of-box Windows Workflow Foundation:  
   
--   [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [Aktivitou typu ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- Informace o tom, jak získat přístup **vyberte podmínku** dialogovém okně naleznete v tématu [postupy: vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Informace o tom, jak získat přístup **vyberte podmínku** dialogovém okně naleznete v tématu [postupy: vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte podmínku** dialogové okno.  
+  Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte podmínku** dialogové okno.  
   
 |Prvek uživatelského rozhraní (UI)|Popis|  
 |----------------|-----------------|  

@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898821"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Pomocí sady Visual Studio for Mac Tools for Unity
 
@@ -33,31 +33,31 @@ Herní engine Unity vysílá zprávy do třídy MonoBehaviour. skripty, což vý
 
 Visual Studio for Mac Tools for Unity však rozšiřuje funkčnost technologie IntelliSense pro zprávy Unity. To umožňuje snadno implementovat zprávy Unity skripty třídy MonoBehaviour a pomáhá při učení Unity API. Použití technologie IntelliSense pro zprávy Unity:
 
-1.  Umístěte kurzor na nový řádek do těla třídy, která je odvozena z třídy MonoBehaviour.
+1. Umístěte kurzor na nový řádek do těla třídy, která je odvozena z třídy MonoBehaviour.
 
-2.  Begin zadáním názvu Unity zprávy, jako například `OnTriggerEnter`.
+2. Begin zadáním názvu Unity zprávy, jako například `OnTriggerEnter`.
 
-3.  Jednou písmena "**ovolit**" jste zadali, se zobrazí v seznamu návrhů IntelliSense.
+3. Jednou písmena "**ovolit**" jste zadali, se zobrazí v seznamu návrhů IntelliSense.
 
-  ![Používání atributu IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Používání atributu IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  Výběr v seznamu lze změnit třemi způsoby:
+4. Výběr v seznamu lze změnit třemi způsoby:
 
-    * S **nahoru** a **dolů** klávesy se šipkami.
+   * S **nahoru** a **dolů** klávesy se šipkami.
 
-    * Po kliknutí myší na požadovanou položku.
+   * Po kliknutí myší na požadovanou položku.
 
-    * Pokud budete pokračovat k zadání názvu požadované položky.
+   * Pokud budete pokračovat k zadání názvu požadované položky.
 
-5.  Technologie IntelliSense můžete vložit vybrané zprávy Unity všechny potřebné parametry včetně:
+5. Technologie IntelliSense můžete vložit vybrané zprávy Unity všechny potřebné parametry včetně:
 
-    * Stisknutím klávesy **kartu**.
+   * Stisknutím klávesy **kartu**.
 
-    * Stisknutím klávesy **vrátit**.
+   * Stisknutím klávesy **vrátit**.
 
-    * Dvojitým kliknutím na vybranou položku.
+   * Dvojitým kliknutím na vybranou položku.
 
-  ![Vložit zprávu Unity v IntelliSense](media/using-vsmac-tools-unity-image3.png)
+   ![Vložit zprávu Unity v IntelliSense](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>Přidání nové Unity soubory a složky
 
@@ -93,22 +93,22 @@ Projekty Unity můžete ladit pomocí sady Visual Studio pro Mac.
 
 Spuštění ladění:
 
-1.  Připojení sady Visual Studio k Unity po kliknutí **Přehrát** tlačítko nebo typ **příkaz + Return**, nebo **F5**.
+1. Připojení sady Visual Studio k Unity po kliknutí **Přehrát** tlačítko nebo typ **příkaz + Return**, nebo **F5**.
 
-  ![Kliknutím na tlačítko Přehrát v sadě Visual Studio](media/using-vsmac-tools-unity-image5.png)
+   ![Kliknutím na tlačítko Přehrát v sadě Visual Studio](media/using-vsmac-tools-unity-image5.png)
 
-2.  Přepnout na Unity a kliknutím **Přehrát** tlačítko spustit hry v editoru.
+2. Přepnout na Unity a kliknutím **Přehrát** tlačítko spustit hry v editoru.
 
-  ![Kliknutím na tlačítko Přehrát v Unity](media/using-vsmac-tools-unity-image6.png)
+   ![Kliknutím na tlačítko Přehrát v Unity](media/using-vsmac-tools-unity-image6.png)
 
-3.  Neopravňují hry v Unity editoru připojeny k sadě Visual Studio budou všechny zarážky, došlo k pozastavení provádění hry a otevřete řádek kódu, kde hru zarážce v sadě Visual Studio pro Mac.
+3. Neopravňují hry v Unity editoru připojeny k sadě Visual Studio budou všechny zarážky, došlo k pozastavení provádění hry a otevřete řádek kódu, kde hru zarážce v sadě Visual Studio pro Mac.
 
 ### <a name="stop-debugging"></a>Zastavit ladění
 
 Chcete zastavit ladění:
 
-1.  Klikněte na tlačítko **Zastavit** v sadě Visual Studio pro Mac, nebo stiskněte tlačítko **Shift + příkaz + Return**.
+1. Klikněte na tlačítko **Zastavit** v sadě Visual Studio pro Mac, nebo stiskněte tlačítko **Shift + příkaz + Return**.
 
-  ![Klikněte na tlačítko Zastavit ve Visual Studiu](media/using-vsmac-tools-unity-image7.png)
+   ![Klikněte na tlačítko Zastavit ve Visual Studiu](media/using-vsmac-tools-unity-image7.png)
 
 Další informace o ladění v sadě Visual Studio for Mac najdete v tématu [pomocí ladicího programu](https://docs.microsoft.com/visualstudio/mac/debugging).

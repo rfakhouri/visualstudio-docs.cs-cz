@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915591"
 ---
 # <a name="signing-vsix-packages"></a>Podepisování balíčků VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Rozšíření sestavení není nutné před jejich spuštěním v sadě Visual S
   
 #### <a name="to-use-the-vsixsigntool"></a>Použít VSIXSignTool  
   
-1.  Přidejte do projektu VSIX.  
+1. Přidejte do projektu VSIX.  
   
-2.  Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení vyberte **přidat &#124; spravovat balíčky NuGet**.  Další informace o NuGet a přidání NuGet balíčků naleznete v tématu [NuGet přehled](http://docs.nuget.org/) a [spravovat NuGet balíčky pomocí dialogového okna](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
+2. Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení vyberte **přidat &#124; spravovat balíčky NuGet**.  Další informace o NuGet a přidání NuGet balíčků naleznete v tématu [NuGet přehled](http://docs.nuget.org/) a [spravovat NuGet balíčky pomocí dialogového okna](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
   
-3.  Vyhledejte VSIXSignTool z VisualStudioExtensibility a nainstalujte balíček NuGet.  
+3. Vyhledejte VSIXSignTool z VisualStudioExtensibility a nainstalujte balíček NuGet.  
   
-4.  Nyní můžete spustit VSIXSignTool z umístění místního balíčky projektu. Najdete nápovědu k příkazovému řádku nástroje pro podepisování scénář (VSIXSignTool.exe /?).  
+4. Nyní můžete spustit VSIXSignTool z umístění místního balíčky projektu. Najdete nápovědu k příkazovému řádku nástroje pro podepisování scénář (VSIXSignTool.exe /?).  
   
- Třeba když chcete přihlásit s heslem chráněná soubor certifikátu:  
+   Třeba když chcete přihlásit s heslem chráněná soubor certifikátu:  
   
- /F přihlašování VSIXSignTool.exe \<Soubor_certifikátu > /p \<heslo > \<VSIXfile >  
+   /F přihlašování VSIXSignTool.exe \<Soubor_certifikátu > /p \<heslo > \<VSIXfile >  
   
 ## <a name="see-also"></a>Viz také  
  [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

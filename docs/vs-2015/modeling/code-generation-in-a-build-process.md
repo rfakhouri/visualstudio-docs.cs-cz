@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907921"
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ Transformace textu se provede před všemi ostatními úlohami v procesu sestav
 
 V `AfterTransform`, lze odkazovat na seznamy souborů:
 
--   GeneratedFiles – seznam souborů zapsaných procesem. U souborů, které přepsaly existující soubory určené jen pro čtení, bude mít %(GeneratedFiles.ReadOnlyFileOverwritten) hodnotu true. Tyto soubory lze rezervovat ze správy zdrojového kódu.
+- GeneratedFiles – seznam souborů zapsaných procesem. U souborů, které přepsaly existující soubory určené jen pro čtení, bude mít %(GeneratedFiles.ReadOnlyFileOverwritten) hodnotu true. Tyto soubory lze rezervovat ze správy zdrojového kódu.
 
--   NonGeneratedFiles – seznam souborů určených jen pro čtení, které nebyly přepsány.
+- NonGeneratedFiles – seznam souborů určených jen pro čtení, které nebyly přepsány.
 
- Lze například definovat úlohu, která rezervuje GeneratedFiles.
+  Lze například definovat úlohu, která rezervuje GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath a OutputFileName
 
@@ -255,7 +255,6 @@ Makra sady Visual Studio, například $(SolutionDir), nefungují v nástroji MS
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Nyní můžete vlastnost projektu použít v direktivách assembly a include:

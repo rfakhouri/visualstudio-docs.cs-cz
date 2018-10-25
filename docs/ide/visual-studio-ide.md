@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751bf673cd16e50c68aff1eb5d27247cdcd1ca01
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907518"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
@@ -94,7 +94,7 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
 - [Přejít k definici](../ide/go-to-and-peek-definition.md)
 
-  Funkce Přejít k definici přejdete přímo do umístění, kde je funkce nebo typ definován.
+   Funkce Přejít k definici přejdete přímo do umístění, kde je funkce nebo typ definován.
 
    ![Přejít k definici](../ide/media/go-to-definition-menu.png)
 
@@ -112,14 +112,14 @@ Pojďme začít a vytvořit nový, jednoduchý program.
 
    ![Soubor > Nový projekt v řádku nabídek](../ide/media/file-new-project-menu.png)
 
-1. **Nový projekt** dialogové okno zobrazí několik projektů *šablony*. Šablona obsahuje základní souborů a nastavení potřebných pro typ daného projektu. Zvolte **.NET Core** kategorie v části **Visual C#** a klikněte na tlačítko **Konzolová aplikace (.NET Core)** šablony. V **název** textového pole, typ **HelloWorld**a pak vyberte **OK** tlačítko.
+2. **Nový projekt** dialogové okno zobrazí několik projektů *šablony*. Šablona obsahuje základní souborů a nastavení potřebných pro typ daného projektu. Zvolte **.NET Core** kategorie v části **Visual C#** a klikněte na tlačítko **Konzolová aplikace (.NET Core)** šablony. V **název** textového pole, typ **HelloWorld**a pak vyberte **OK** tlačítko.
 
    ![Šablona aplikace .NET core](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio vytvoří projekt. To je jednoduchá aplikace "Hello World", která volá <xref:System.Console.WriteLine?displayProperty=nameWithType> metodu pro zobrazení řetězcový literál "Hello World!" v okně konzoly (výstup programu).
 
-  > [!NOTE]
-  > Pokud se nezobrazí **.NET Core** kategorie, je nutné nainstalovat **vývoj pro různé platformy .NET Core** pracovního vytížení. Chcete-li to provést, zvolte **otevřít instalační program Visual Studio** odkaz v levé dolní části **nový projekt** dialogového okna. Jakmile se instalační program sady Visual Studio otevře, posuňte se dolů a vyberte **vývoj pro různé platformy .NET Core** úlohy a pak vyberte **změnit**.
+   > [!NOTE]
+   > Pokud se nezobrazí **.NET Core** kategorie, je nutné nainstalovat **vývoj pro různé platformy .NET Core** pracovního vytížení. Chcete-li to provést, zvolte **otevřít instalační program Visual Studio** odkaz v levé dolní části **nový projekt** dialogového okna. Jakmile se instalační program sady Visual Studio otevře, posuňte se dolů a vyberte **vývoj pro různé platformy .NET Core** úlohy a pak vyberte **změnit**.
 
    Po chvíli, by měl vypadat přibližně takto:
 
@@ -127,21 +127,21 @@ Pojďme začít a vytvořit nový, jednoduchý program.
 
    Kód jazyka C# pro vaši aplikaci se zobrazí v okně editoru, což zabírá většinu prostoru. Všimněte si, že text je automaticky barevně zvýrazněné k označení různých částí kódu, jako jsou klíčová slova a typy. Kromě toho malé, svislé přerušované čáry v kódu označují, které složené závorky odpovídat mezi sebou a čísla řádků vám pomohou vyhledat kód později. Můžete také malé, zabalený mínus bloky kódu rozbalíte nebo sbalíte. Tento kód funkce osnovy vám umožňuje skrýt kód, který už nebudete potřebovat, a usnadnit tak minimalizovat zbytečné soubory na obrazovce. Soubory projektu jsou uvedeny na pravé straně v okně **Průzkumníka řešení**.
 
-  ![Visual Studio integrované vývojové prostředí s červená pole](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![Visual Studio integrované vývojové prostředí s červená pole](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  K dispozici další nabídky a panely nástrojů, ale teď přejdeme teď.
+   K dispozici další nabídky a panely nástrojů, ale teď přejdeme teď.
 
-1. Nyní spusťte aplikaci. To lze provést výběrem **spustit bez ladění** z **ladění** nabídky na řádku nabídek. Můžete také stisknout klávesu **Ctrl**+**F5**.
+3. Nyní spusťte aplikaci. To lze provést výběrem **spustit bez ladění** z **ladění** nabídky na řádku nabídek. Můžete také stisknout klávesu **Ctrl**+**F5**.
 
-  ![Ladit > Spustit bez ladění nabídky](../ide/media/overview-start-without-debugging.png)
+   ![Ladit > Spustit bez ladění nabídky](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!**. Nyní máte funkční aplikaci.
+   Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello World!**. Nyní máte funkční aplikaci.
 
-  ![Okno konzoly](../ide/media/overview-console-window.png)
+   ![Okno konzoly](../ide/media/overview-console-window.png)
 
-1. Zavřete okno konzoly stisknutím libovolné klávesy na klávesnici.
+4. Zavřete okno konzoly stisknutím libovolné klávesy na klávesnici.
 
-1. Přidejme do aplikace další kód. Přidejte následující kód jazyka C# před řádek, který říká `Console.WriteLine("Hello World!");`:
+5. Přidejme do aplikace další kód. Přidejte následující kód jazyka C# před řádek, který říká `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Pojďme začít a vytvořit nový, jednoduchý program.
 
    Tento kód zobrazí **jak se jmenuješ?** v okně konzoly a potom počká, dokud uživatel zadá nějaký text, za nímž následuje **Enter** klíč.
 
-1. Změňte řádek, který říká `Console.WriteLine("Hello World!");` v následujícím kódu:
+6. Změňte řádek, který říká `Console.WriteLine("Hello World!");` v následujícím kódu:
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Znovu spusťte aplikaci tak, že vyberete **ladění** > **spustit bez ladění** nebo stisknutím klávesy **Ctrl**+**F5**.
+7. Znovu spusťte aplikaci tak, že vyberete **ladění** > **spustit bez ladění** nebo stisknutím klávesy **Ctrl**+**F5**.
 
    Visual Studio znovu sestaví aplikaci a otevře se okno konzoly a vás vyzve k zadání název vaší.
 
-1. Zadejte název v okně konzoly a stisknutím klávesy **Enter**.
+8. Zadejte název v okně konzoly a stisknutím klávesy **Enter**.
 
    ![Vstup okno konzoly](media/overview-console-input.png)
 
-1. Stisknutím jakékoli klávesy zavřete okno konzoly a zastavit spuštěný program.
+9. Stisknutím jakékoli klávesy zavřete okno konzoly a zastavit spuštěný program.
 
 ## <a name="use-refactoring-and-intellisense"></a>Refaktoring a technologie IntelliSense
 
@@ -174,11 +174,11 @@ Nejprve přejmenujme `name` proměnné:
 
 1. Dvakrát klikněte `name` proměnnou, která ho vyberte.
 
-1. Zadejte nový název proměnné, **uživatelské jméno**.
+2. Zadejte nový název proměnné, **uživatelské jméno**.
 
    Všimněte si, že šedé pole se zobrazí kolem proměnnou a žárovky se zobrazí na okraji.
 
-1. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](quick-actions.md). Vyberte **přejmenovat "název" na "username"**.
+3. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](quick-actions.md). Vyberte **přejmenovat "název" na "username"**.
 
    ![Přejmenujte akci v sadě Visual Studio](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Nejprve přejmenujme `name` proměnné:
 
    ![Animovaný obrázek gif zobrazující refaktoring pro přejmenování v sadě Visual Studio](media/rename-refactoring.gif)
 
-1. Nyní Pojďme se podívat na IntelliSense. Pod řádek, který říká `Console.WriteLine($"\nHello {username}!");`, typ **data a času nyní = data a času.**.
+4. Nyní Pojďme se podívat na IntelliSense. Pod řádek, který říká `Console.WriteLine($"\nHello {username}!");`, typ **data a času nyní = data a času.**.
 
    Pole zobrazuje jako objekty její členové <xref:System.DateTime> třídy. Popis aktuálně vybraného člena se navíc zobrazí v rámci samostatného pole.
 
    ![Seznam členů IntelliSense v sadě Visual Studio](media/intellisense-list-members.png)
 
-1. Vyberte člena s názvem **nyní**, což je vlastnost třídy, dvojitým kliknutím na ni nebo stisknutím klávesy **kartu**. Dokončení řádek kódu tak, že přidáte středníkem **;**.
+5. Vyberte člena s názvem **nyní**, což je vlastnost třídy, dvojitým kliknutím na ni nebo stisknutím klávesy **kartu**. Dokončení řádek kódu tak, že přidáte středníkem **;**.
 
-1. Pod ním zadejte nebo zkopírujte následující řádky kódu:
+6. Pod ním zadejte nebo zkopírujte následující řádky kódu:
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Nejprve přejmenujme `name` proměnné:
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> se mírně liší na <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> v tom, že po vytiskne nepřidá znakem ukončení řádku. To znamená, že další část textu, které je odesláno výstup vytiskne na stejném řádku. Myší nad každá z těchto metod v kódu zobrazíte jejich popis.
 
-1. V dalším kroku použijeme refaktoring znovu provést trochu stručnější kód. Klikněte na proměnnou `now` v řádku `DateTime now = DateTime.Now;`.
+7. V dalším kroku použijeme refaktoring znovu provést trochu stručnější kód. Klikněte na proměnnou `now` v řádku `DateTime now = DateTime.Now;`.
 
    Všimněte si, že malou ikonu šroubovák se zobrazí na okraji na daném řádku.
 
-1. Klikněte na ikonu šroubovák návrhy, které nabízí Visual Studio. V takovém případě se zobrazuje [dočasná proměnná na řádku](reference/inline-temporary-variable.md) odebrat jediného řádku kódu bez změny chování celkový refaktorování:
+8. Klikněte na ikonu šroubovák návrhy, které nabízí Visual Studio. V takovém případě se zobrazuje [dočasná proměnná na řádku](reference/inline-temporary-variable.md) odebrat jediného řádku kódu bez změny chování celkový refaktorování:
 
    ![Vložené dočasné proměnné refaktoring v sadě Visual Studio](media/inline-temporary-variable-refactoring.png)
 
-1. Klikněte na tlačítko **dočasná proměnná na řádku** Refaktorovat kód.
+9. Klikněte na tlačítko **dočasná proměnná na řádku** Refaktorovat kód.
 
-1. Spusťte program znovu stisknutím klávesy **Ctrl**+**F5**. Výstup bude vypadat přibližně takto:
+10. Spusťte program znovu stisknutím klávesy **Ctrl**+**F5**. Výstup bude vypadat přibližně takto:
 
    ![Okno konzoly s výstup programu](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Uživatelské rozhraní sady Visual Studio, včetně změn si můžete přizpůs
 
 1. V panelu nabídky zvolte **nástroje** > **možnosti** otevřít **možnosti** dialogového okna.
 
-1. Na **prostředí** > **Obecné** stránka Možnosti, změna **barevný motiv** výběru **tmavě**a klikněte na tlačítko **OK**.
+2. Na **prostředí** > **Obecné** stránka Možnosti, změna **barevný motiv** výběru **tmavě**a klikněte na tlačítko **OK**.
 
    Barva motivu pro celý integrovaného vývojového prostředí se změní na **tmavě**.
 

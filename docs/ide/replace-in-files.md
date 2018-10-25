@@ -16,95 +16,95 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899328"
 ---
 # <a name="replace-in-files"></a>Nahradit v souborech
 
-**Nahradit v souborech** umožňuje hledat kód zadanou sadu souborů pro řetězec nebo výraz a změnit některé nebo všechny nalezených shod. Nebyla nalezena shoda a akcí provedených jsou uvedeny v **Najít výsledky** vybrán v okně **způsobit možnosti**.
+**Nahradit v souborech** umožňuje vyhledávání kódu zadané sady souborů pro řetězec nebo výraz a změnit některé nebo všechny nalezených shod. Nalezených shod a akcí provedených jsou uvedeny v **výsledky hledání** vybraný v interval **způsobit možnosti**.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídky se zobrazí se mohou lišit od těch popsaných v **pomoci** v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, vyberte **nástroje** > **nastavení importu a exportu**a potom zvolte **obnovit nastavení**.
+> Dialogová okna a příkazy nabídek, zobrazí se mohou lišit od těch popsaných v **pomáhají** v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, zvolte **nástroje** > **nastavení importu a exportu**a klikněte na tlačítko **obnovit všechna nastavení**.
 
-K zobrazení můžete použít některou z následujících metod **nahradit v souborech** v **najít a nahradit** okno.
+Můžete použít některý z následujících metod k zobrazení **nahradit v souborech** v **najít a nahradit** okna.
 
 ## <a name="to-display-replace-in-files"></a>Chcete-li zobrazit nahradit v souborech
 
-1. Na **upravit** nabídky, rozbalte položku **najít a nahradit**.
+1. Na **upravit** nabídky, rozbalte **najít a nahradit**.
 
-1. Zvolte **nahradit v souborech**.
+2. Zvolte **nahradit v souborech**.
 
    – nebo –
 
-  Pokud **najít a nahradit** , je již otevřeno, na panelu nástrojů vyberte **nahradit v souborech**.
+   Pokud **najít a nahradit** , je již otevřeno, na panelu nástrojů zvolte **nahradit v souborech**.
 
 ## <a name="find-what"></a>Najít
 
-Vyhledat nový textový řetězec nebo výraz, zadejte do pole. Chcete-li vyhledávat libovolné 20 řetězce, které jste hledali naposledy, otevřete rozevírací seznam a zvolte řetězec. Zvolte sousedním **Tvůrce** tlačítko, pokud chcete použít jeden nebo více regulární výrazy v hledanému řetězci. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+K vyhledání nový textový řetězec nebo výraz, zadejte do pole. Chcete-li vyhledávat libovolné 20 řetězců, které jste hledali naposledy, otevřete rozevírací seznam a zvolte řetězec. Zvolte sousedních **Tvůrce výrazů** tlačítko, pokud chcete použít jeden nebo více regulární výrazy ve vyhledávaném řetězci. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
-> **Tvůrce** tlačítko bude povoleno pouze pokud jste vybrali **pomocí regulárních výrazů** pod **najít možnosti**.
+> **Tvůrce výrazů** tlačítko bude povoleno pouze pokud jste vybrali **pomocí regulárních výrazů** pod **možnosti hledání**.
 
 ## <a name="replace-with"></a>Nahraďte
 
-Nahradit instance řetězce do **najít** pole s jiným řetězcem, zadejte náhradní řetězec v **nahradit za** pole. Odstranění instance řetězce do **najít** pole, to pole ponechat prázdné. Otevřete seznamu zobrazíte 20 řetězců, pro které jste naposledy vyhledávat. Zvolte sousedním **Tvůrce** tlačítko, pokud chcete použít jeden nebo více regulární výrazy v náhradní řetězec. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+K nahrazení výskytů řetězce v **najít** jiným řetězcem, zadejte v řetězci pro nahrazení **nahradit** pole. Chcete-li odstranit výskytů řetězce v **najít** pole, toto pole nechat prázdné. Otevřete seznam pro zobrazení 20 řetězců, u kterých je prohledán jako poslední. Zvolte sousedních **Tvůrce výrazů** tlačítko, pokud chcete použít jeden nebo více regulárních výrazů v řetězci pro nahrazení. Další informace najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="look-in"></a>Oblast hledání
 
-Možnost výběru z **naleznete v** rozevíracího seznamu určuje, zda **nahradit v souborech** vyhledá pouze v aktuálně aktivních soubory nebo vyhledá všechny soubory uložené v rámci určitých složek. Vyberte ze seznamu obor vyhledávání, zadejte cestu ke složce nebo klikněte na **Procházet (...)**  tlačítko pro zobrazení **zvolte složky výsledků hledání** dialogové okno pole a zvolte skupinu složek, které chcete vyhledat. Můžete také zadat cestu přímo do **Hledat v** pole.
+Možnost výběru z **Hledat v** rozevíracího seznamu určuje, zda **nahradit v souborech** vyhledá pouze v současné době aktivní soubory, nebo vyhledá všechny soubory uložené v určitých složkách. Vyberte obor hledání v seznamu, zadejte cestu ke složce nebo klikněte na tlačítko **Procházet (...)**  tlačítka pro zobrazení **zvolit složky pro hledání** dialogového okna a vyberte sadu složek k prohledání. Můžete také zadat přímo do cesty **Hledat v** pole.
 
 > [!NOTE]
-> Pokud **Hledat v** možnost způsobí, že jste k vyhledání souboru, který máte rezervován od správy zdrojového kódu, prohledají se jenom verze tohoto souboru, který byl stažen do místního počítače.
+> Pokud **Hledat v** zaškrtnutou možnost způsobí, že vám umožní vyhledávat soubor, který jste rezervovali ve správě zdrojového kódu, je prohledána pouze verze tohoto souboru, který byl stažen do místního počítače.
 
 ## <a name="find-options"></a>Možnosti hledání
 
-Můžete rozbalit nebo sbalit **najít možnosti** části. Následující možnosti může být vybrána nebo vymazána:
+Můžete rozbalit nebo sbalit **možnosti hledání** oddílu. Následující možnosti můžete vybrané nebo zrušeno:
 
-**Malá a velká písmena**
+**Rozlišovat velikost písmen**
 
-Při výběru, **výsledky hledání** windows zobrazí pouze instance **najít** řetězec, který se splní podle obsahu a podle případu. Například vyhledejte "MyObject" s **malá a velká písmena** vybrané bude vracet "MyObject", ale ne "myobject" nebo "MYOBJECT."
+Při výběru **výsledky hledání** windows budou zobrazovat jenom instance **najít** řetězec, který budou odpovídat podle obsahu a případem. Například vyhledejte "MyObject" s **rozlišovat velikost písmen** vybrané se vrátí "MyObject" ale ne "myobject" nebo "MYOBJECT."
 
-**Celá slova**
+**Pouze celá slova**
 
-Při výběru, **Najít výsledky** windows zobrazí pouze instance **najít** řetězec, který se splní v celá slova. Například vyhledejte "MyObject" vrátí "MyObject", ale ne "CMyObject" nebo "MyObjectC."
+Pokud je vybráno, **výsledky hledání** windows budou zobrazovat jenom instance **najít** řetězec, který se shodují v celá slova. Například vyhledejte "MyObject" vrátí "MyObject", ale není "CMyObject" nebo "MyObjectC."
 
 **Používání regulárních výrazů**
 
-Když toto políčko zaškrtnuto, můžete použít speciální zápisy definovat strukturu textu v **najít** nebo **nahraďte** textových polí. Seznam těchto zápisy, naleznete v části [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Když je toto políčko zaškrtnuto, můžete použít speciální zápisy k definování vzorů textu v **najít** nebo **nahraďte** textová pole. Seznam těchto zápisy najdete v tématu [použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 **Podívejte se na tyto typy souborů**
 
-Tento seznam uvádí typy souborů, pokud chcete hledat v **Hledat v** adresáře. Pokud toto pole ponecháte prázdné, všechny soubory v **Hledat v** prohledávaných adresářů. Vyberte libovolnou položku v seznamu a zadejte předkonfigurované vyhledávací řetězec, který zjistí tyto konkrétní typy souborů.
+Tento seznam uvádí typy souborů pro hledání prostřednictvím v **Hledat v** adresáře. Pokud je toto pole necháte prázdné, všechny soubory v **Hledat v** budou prohledány adresáře. Vyberte libovolnou položku v seznamu a zadejte předkonfigurované vyhledávací řetězec, který najdete tyto konkrétní typy souborů.
 
-## <a name="result-options"></a>Možnosti výsledku
+## <a name="result-options"></a>Možnosti výsledků
 
-Můžete rozbalit nebo sbalit **způsobit možnosti** části. Následující možnosti může být vybrána nebo vymazána:
+Můžete rozbalit nebo sbalit **způsobit možnosti** oddílu. Následující možnosti můžete vybrané nebo zrušeno:
 
 **Najít výsledky 1** okna
 
-Pokud vybraná, výsledky hledání aktuální nahradí obsah **najít 1 výsledky** okno. Toto okno se automaticky otevře a zobrazí výsledky hledání. Otevřete toto okno ručně, vyberte **ostatní okna** z **zobrazení** nabídky a zvolte **najít 1 výsledky**.
+Pokud je vybráno, výsledky aktuální hledání nahradí obsah **Najít výsledky 1** okna. Toto okno se automaticky otevře a zobrazí výsledky hledání. Ručně otevřete toto okno, vyberte **ostatní Windows** z **zobrazení** nabídku a zvolte **Najít výsledky 1**.
 
 **Najít výsledky 2** okna
 
-Pokud vybraná, výsledky hledání aktuální nahradí obsah **najít 2 výsledky** okno. Toto okno se automaticky otevře a zobrazí výsledky hledání. Otevřete toto okno ručně, vyberte **ostatní okna** z **zobrazení** nabídky a zvolte **najít 2 výsledky**.
+Pokud je vybráno, výsledky aktuální hledání nahradí obsah **Najít výsledky 2** okna. Toto okno se automaticky otevře a zobrazí výsledky hledání. Ručně otevřete toto okno, vyberte **ostatní Windows** z **zobrazení** nabídku a zvolte **Najít výsledky 2**.
 
 **Zobrazit pouze názvy souborů**
 
-Když toto políčko zaškrtnuto, **Najít výsledky** windows seznamu úplné názvů a cest pro všechny soubory, které obsahují řetězec pro hledání. Ale výsledky neobsahují řádek kódu, kde se zobrazí řetězec. Toto zaškrtávací políčko je dostupné pro **hledání v souborech** pouze.
+Když je toto políčko zaškrtnuto, **výsledky hledání** windows seznamu úplné názvy dnů a cesty pro všechny soubory, které obsahují hledaný řetězec. Výsledky jsou však na řádek kódu, kde se zobrazí řetězec. Toto zaškrtávací políčko je dostupné pro **najít v souborech** pouze.
 
-**Nechte změněné soubory otevřené po Replace všechny**
+**Ponechat změněné soubory otevřené po Nahradit vše**
 
-Při výběru, otevřete všechny soubory zůstanou ve kterých náhrady byly provedeny, abyste mohli vrátit zpět nebo uložte změny. Omezení paměti může být omezen počet souborů, které může zůstat otevřené po operaci nahrazení.
+Při výběru, otevřete všechny soubory zůstanou ve kterých nahrazení byly provedeny, můžete vrátit zpět nebo uložte změny. Omezení paměti může být omezen počet souborů, které může zůstat otevřené po operaci nahradit.
 
 > [!CAUTION]
-> Můžete použít **vrátit zpět** pouze u souborů, které zůstávají otevřený pro úpravy. Pokud tuto možnost nevyberete, soubory, které už nebyly otevřete pro úpravy zůstanou uzavřené a ne **vrátit zpět** možnost nebude k dispozici v těchto souborů.
+> Můžete použít **zpět** pouze u souborů, které zůstanou otevřené pro úpravy. Pokud tato možnost není vybraná, soubory, které ještě nebyly otevřete pro úpravy zůstanou uzavřené a ne **zpět** možnost je k dispozici v těchto souborech.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Najít a nahradit text](../ide/finding-and-replacing-text.md)
-- [Hledání v souborech](../ide/find-in-files.md)
+- [Vyhledání a nahrazení textu](../ide/finding-and-replacing-text.md)
+- [Najít v souborech](../ide/find-in-files.md)
 - [Příkazy sady Visual Studio](../ide/reference/visual-studio-commands.md)

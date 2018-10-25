@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911249"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Postupy: přístup k vestavěné písma a barev ccheme
 Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schéma písma a barvy, který je spojen s okno editoru. Toto schéma prostřednictvím můžete přistupovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.
 
  Pokud chcete použít integrované písma a barvy schéma, musíte VSPackage:
 
--   Definujte kategorie pro použití s výchozí služba písma a barvy.
+- Definujte kategorie pro použití s výchozí služba písma a barvy.
 
--   Zaregistrujte si kategorie ve výchozí server písma a barvy.
+- Zaregistrujte si kategorie ve výchozí server písma a barvy.
 
--   Doporučte rozhraní IDE, že konkrétní okno používá integrované zobrazit položky a kategorie pomocí <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> rozhraní.
+- Doporučte rozhraní IDE, že konkrétní okno používá integrované zobrazit položky a kategorie pomocí <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> rozhraní.
 
- Integrované vývojové prostředí používá výsledný kategorie jako popisovač okna. Název kategorie se zobrazí v **zobrazit nastavení pro:** v rozevíracím seznamu **písma a barvy** stránku vlastností.
+  Integrované vývojové prostředí používá výsledný kategorie jako popisovač okna. Název kategorie se zobrazí v **zobrazit nastavení pro:** v rozevíracím seznamu **písma a barvy** stránku vlastností.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Chcete-li definovat kategorie pomocí integrované písmo a barvy
 
@@ -67,15 +67,15 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schém
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>K zahájení používání nástroje poskytované systémem písma a barvy
 
-1.  Vytvoření instance <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> rozhraní jako součást implementace okna a inicializace.
+1. Vytvoření instance <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> rozhraní jako součást implementace okna a inicializace.
 
-2.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodu k získání instance <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> rozhraní odpovídá aktuální <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance.
+2. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodu k získání instance <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> rozhraní odpovídá aktuální <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance.
 
-3.  Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dvakrát.
+3. Volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dvakrát.
 
-    -   Volání s jednou `VSEDITPROPID_ViewGeneral_ColorCategory`jako argument.
+   - Volání s jednou `VSEDITPROPID_ViewGeneral_ColorCategory`jako argument.
 
-    -   Volání s jednou `VSEDITPROPID_ViewGeneral_FontCategory` jako argument.
+   - Volání s jednou `VSEDITPROPID_ViewGeneral_FontCategory` jako argument.
 
      Toto nastaví a poskytuje výchozí písmo a barvy služby jako vlastnost okna.
 

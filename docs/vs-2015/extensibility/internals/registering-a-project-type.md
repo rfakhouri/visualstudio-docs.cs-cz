@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911328"
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Když vytvoříte nový typ projektu, je nutné vytvořit položky registru, kte
   
  Položka nabídky odkazuje na prostředek, který používá k načtení informací o nabídce integrovaného vývojového prostředí. Když tato data byly sloučeny do nabídky databáze, stejný klíč se přidají v části MenusMerged registru. Sady VSPackage neměli měnit nic části MenusMerged přímo. V poli Data v následující tabulce jsou tři čárkami oddělených pole. První pole určuje úplnou cestu souboru prostředků nabídky:  
   
--   Pokud první pole je vynechán, prostředku nabídky je načten z satelitní knihovny DLL, které jsou označeny identifikátorem GUID balíčku VSPackage.  
+- Pokud první pole je vynechán, prostředku nabídky je načten z satelitní knihovny DLL, které jsou označeny identifikátorem GUID balíčku VSPackage.  
   
- Druhé pole určuje Identifikátor prostředku nabídky typu CTMENU:  
+  Druhé pole určuje Identifikátor prostředku nabídky typu CTMENU:  
   
--   Pokud je zadané ID prostředku, a cesta k souboru poskytl první parametr, prostředku nabídky je načten z úplnou cestu k souboru.  
+- Pokud je zadané ID prostředku, a cesta k souboru poskytl první parametr, prostředku nabídky je načten z úplnou cestu k souboru.  
   
--   Pokud je zadané ID prostředku, ale je cesta k souboru, prostředku nabídky je načten z satelitní knihovny DLL.  
+- Pokud je zadané ID prostředku, ale je cesta k souboru, prostředku nabídky je načten z satelitní knihovny DLL.  
   
--   Pokud je k dispozici úplnou cestu k souboru a vynechá ID prostředku, soubor, který se má načíst má být soubor technický ředitel.  
+- Pokud je k dispozici úplnou cestu k souboru a vynechá ID prostředku, soubor, který se má načíst má být soubor technický ředitel.  
   
- Poslední pole určuje číslo verze CTMENU prostředku. V nabídce můžete sloučit znovu tak, že změníte číslo verze.  
+  Poslední pole určuje číslo verze CTMENU prostředku. V nabídce můžete sloučit znovu tak, že změníte číslo verze.  
   
 |Název|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907050"
 ---
 # <a name="find-code-using-go-to-commands"></a>Vyhledání kódu pomocí příkazu Přejít
 
@@ -27,10 +27,10 @@ Visual Studio **přejít na** příkazy provádějí cílené hledání kódu v�
 
 ## <a name="how-to-use-it"></a>Jak jej používat
 
-Vstup        | Funkce
+Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Stisknutím klávesy **Ctrl**+**T** nebo **Ctrl**+**,**
-**Myši**    | Vyberte **upravit** > **přejít na** > **ejít na vše**
+**Myši** | Vyberte **upravit** > **přejít na** > **ejít na vše**
 
 Malé okno se zobrazí v horní části přímo z editoru kódu.
 
@@ -56,7 +56,7 @@ Chcete-li zúžit hledání tak, aby konkrétní typ prvku kódu, můžete do vy
 
 Předpona | Ikona | Zástupce | Popis
 :-: | - | - | -
-:| ![Ikona řádku](media/gotoall-line-icon.png) | **CTRL**+**G**         | Přejít na zadaný počet řádků
+:| ![Ikona řádku](media/gotoall-line-icon.png) | **CTRL**+**G** | Přejít na zadaný počet řádků
 f| ![Soubory ikony](media/gotoall-files-icon.png) | **CTRL**+**1**, **Ctrl**+**F** | Přejděte do zadaného souboru
 r| ![Ikona poslední soubory](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **Ctrl**+**R** | Přejděte k souboru zadané, naposledy navštívené
 t| ![Ikona typy](media/gotoall-types-icon.png) | **CTRL**+**1**, **Ctrl**+**T** | Přejděte na zadaný typ.
@@ -85,8 +85,8 @@ Vyberte ikonu ozubeného kolečka ![Ikona ozubeného kolečka](media/gotoall_gea
 Nastavení | Popis
 ------- | ---
 Použít kartu náhledu | Okamžitě zobrazit na vybranou položku na kartě preview rozhraní IDE
-Zobrazit podrobnosti    | V okně zobrazovat project, soubor, řádek a souhrnné informace z komentářů k dokumentaci
-Zarovnat okno na střed   | Přesuňte toto okno do středu horní části editoru kódu místo pravé horní části
+Zobrazit podrobnosti | V okně zobrazovat project, soubor, řádek a souhrnné informace z komentářů k dokumentaci
+Zarovnat okno na střed | Přesuňte toto okno do středu horní části editoru kódu místo pravé horní části
 
 ## <a name="see-also"></a>Viz také:
 

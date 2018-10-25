@@ -1,5 +1,5 @@
 ---
-title: Čas přerušení | Microsoft Docs
+title: Čas přerušení | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac7152ec663a0a7b7bbbeee5c30a38885623cb9
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0d0959f5e2725401424d0231ccd286b7835a7315
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894388"
 ---
 # <a name="preemption-time"></a>Čas přerušení
-Tyto segmenty v časové ose jsou přidruženy k blokování čas, který je zařazený do kategorie jako předkupní. Tuto kategorii znamená, že vlákno je přepnuta se z jednoho z těchto důvodů:  
+Tyto segmenty na časové ose jsou přidruženy k blokování, který je zařazený do kategorie jako ztracený čas. Tato kategorie znamená, že je vlákno přepnutí z jednoho z těchto důvodů:  
   
--   Plánovač ho nahradit pomocí vyšší priorita vlákna.  
+- Plánovač se nahrazuje použití vyšší priorita vlákna.  
   
--   Quantum provádění vlákna platnost a byly jiná vlákna připravena ke spouštění.  
+- Kvantové doby provádění vlákna vypršela platnost a byly jiná vlákna připravená ke spuštění.  
   
- Během této doby vlákno zablokoval z důvodu čekání jádra, který je jako předkupní počítání vizualizér souběžnosti. Segmenty předkupní spustit v případě, že vlákno se posune mimo logická jádra a koncovou při daném vláknu obnoví spuštění.  
+  Během této doby je blokovaná společností Důvod čekání jádra, která Vizualizátor souběžnosti se počítá jako ztracený vlákno. Ztracený segmenty spustit, když vlákno je vložena mimo logické jádro a ukončit, pokud bylo vlákno pokračuje v provádění.  
   
- Popisek pro segment zrušeny zobrazí název procesu nebo vláken, která způsobila, že předkupní. Ale to neznamená, že proces nebo podproces, který převzal ve skutečnosti spustili po celou dobu preempted.  
+  Popis pro segment dojde ke zrušení zobrazí název procesu nebo vlákna, která způsobila ztracený. Nicméně to neznamená, že proces nebo vlákno, které převzal skutečně spustila v průběhu preempted období.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

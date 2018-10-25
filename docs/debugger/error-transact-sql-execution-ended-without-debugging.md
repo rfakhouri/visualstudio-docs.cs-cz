@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1bc4de5e9ef0830f69b60d773a59411c4b691454
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894752"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Chyba: Spuštění Transact-SQL skončilo bez ladění.
 Tato chyba nastane, pokud se pokoušíte ladit příkazů jazyka Transact-SQL nebo proceduru SQLCLR a ladicí program nepřijímá zprávy ladění z SQL serveru.  
@@ -31,21 +31,21 @@ Tato chyba nastane, pokud se pokoušíte ladit příkazů jazyka Transact-SQL ne
   
  Zahrnuté jsou dva účty:  
   
--   Uživatelský účet, který je účet aplikací [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] běží.  
+- Uživatelský účet, který je účet aplikací [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] běží.  
   
--   Účet připojení je identita používaná pro připojení k systému SQL Server. Toto není nutně stejné jako identita, která je spuštěná sada Visual Studio, jako kdyby je připojení pomocí ověřování SQL.  
+- Účet připojení je identita používaná pro připojení k systému SQL Server. Toto není nutně stejné jako identita, která je spuštěná sada Visual Studio, jako kdyby je připojení pomocí ověřování SQL.  
   
- SQL ladění vyžaduje, aby účet aplikace musí odpovídat účtu připojení, nebo správce systému.  
+  SQL ladění vyžaduje, aby účet aplikace musí odpovídat účtu připojení, nebo správce systému.  
   
- Pokud používáte přihlašovací jméno SQL jako programu sa, účet aplikace musí být instalační program systému SQL Server jako správce systému. Ve výchozím nastavení, správci na počítači systému SQL server běží se na správce systému SQL Server.  
+  Pokud používáte přihlašovací jméno SQL jako programu sa, účet aplikace musí být instalační program systému SQL Server jako správce systému. Ve výchozím nastavení, správci na počítači systému SQL server běží se na správce systému SQL Server.  
   
- Chcete-li opravit tuto chybu, potřebujete:  
+  Chcete-li opravit tuto chybu, potřebujete:  
   
--   Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: nastavit SQL Server oprávnění pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: nastavit SQL Server oprávnění pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
--   Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
+- Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
   
--   Poraďte se správcem vaší sítě nebo databáze.  
+- Poraďte se správcem vaší sítě nebo databáze.  
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladění SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   

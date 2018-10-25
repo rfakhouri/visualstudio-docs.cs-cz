@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896936"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapování závislostí pomocí map kódu
 
@@ -138,15 +138,15 @@ Pokud chcete zobrazit všechny závislosti ve vašem řešení:
 
 10. Dalším způsobem, abyste se mohli zaměřit na mapě komplexní řešení je Generovat mapu s novým obsahující vybrané položky z existujícího mapování. Uložení **Ctrl** při výběru položky, měli byste se zaměřit na, otevřete místní nabídku a zvolte **nový graf z výběru**.
 
-   ![Zobrazit vybrané položky na nové mapě kódu](../modeling/media/codemapsshowonnewmap.png)
+    ![Zobrazit vybrané položky na nové mapě kódu](../modeling/media/codemapsshowonnewmap.png)
 
 11. Obsahující kontext se přenesou na novou mapu. Skrýt složky řešení a všechny kontejnery, které nechcete zjistit, **filtry** podokně.
 
-   ![Filtrovat kontejnery pro zjednodušení zobrazení](../modeling/media/codemapsexpandnewgroups.png)
+    ![Filtrovat kontejnery pro zjednodušení zobrazení](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Rozbalit skupiny a vyberte položky v objektu map, chcete-li zobrazit vztahy.
 
-   ![Vyberte položky, které chcete-li zobrazit vztahy](../modeling/media/codemapsviewnewrelationships.png)
+    ![Vyberte položky, které chcete-li zobrazit vztahy](../modeling/media/codemapsviewnewrelationships.png)
 
 Viz také:
 
@@ -242,7 +242,7 @@ Předpokládejme, že máte přezkoumání kódu provést některé soubory s pr
 
 - [Video: porozumění celkové koncepci kódu pomocí map kódu Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
-- [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)
 - [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

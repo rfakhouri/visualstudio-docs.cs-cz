@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910625"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 
@@ -173,7 +173,7 @@ Pokud píšete událost, která aktualizuje ve storu:
 Každý typ události odpovídá kolekci v Store.EventManagerDirectory. Můžete přidat nebo odebrat obslužných rutin událostí v okamžiku, ale je obvykle při načtení dokumentu je přidat.
 
 |`EventManagerDirectory` Název vlastnosti|Při spuštění|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Je vytvořena instance třídy domény, doménového vztahu, tvaru, konektoru nebo diagramu.|
 |ElementDeleted|Prvek modelu se odebral z adresáře element obchodu a není už zdroj nebo cíl žádné relace. Prvku není odstraněn z paměti, ale se uchovávají v případě budoucího vrácení zpět.|
 |ElementEventsBegun|Vyvolána na konci vnější transakci.|

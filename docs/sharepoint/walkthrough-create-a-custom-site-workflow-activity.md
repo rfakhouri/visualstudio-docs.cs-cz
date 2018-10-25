@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894167"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Návod: Vytvoření vlastní pracovní postup aktivity webu
   Tento návod ukazuje, jak vytvořit vlastní aktivitu pro pracovní postup na úrovni serveru pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Pracovní postupy na úrovni serveru platí pro celý web, nikoli pouze seznam na webu.) Vlastní aktivita vytvoří zálohu seznam oznámení a pak do něj zkopíruje obsah seznam oznámení.  
   
  Tento návod demonstruje následující úkoly:  
   
--   Vytvoření pracovního postupu úrovni webu.  
+- Vytvoření pracovního postupu úrovni webu.  
   
--   Vytváří se vlastní pracovní aktivitu.  
+- Vytváří se vlastní pracovní aktivitu.  
   
--   Vytváření a odstraňování Sharepointového seznamu.  
+- Vytváření a odstraňování Sharepointového seznamu.  
   
--   Kopírování položky z jednoho seznamu do jiného.  
+- Kopírování položky z jednoho seznamu do jiného.  
   
--   Zobrazení seznamu na panelu Rychlé spuštění.  
+- Zobrazení seznamu na panelu Rychlé spuštění.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  

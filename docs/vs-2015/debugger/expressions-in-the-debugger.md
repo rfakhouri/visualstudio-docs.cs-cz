@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914310"
 ---
 # <a name="expressions-in-the-debugger"></a>Výrazy v ladicím programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Vnitřní funkce ladicího programu:  
   
--   Je zaručeno bezpečné: provádění vnitřní funkce ladicího programu nebude poškodit proces, který je právě laděna.  
+- Je zaručeno bezpečné: provádění vnitřní funkce ladicího programu nebude poškodit proces, který je právě laděna.  
   
--   Jsou povoleny v všechny výrazy, dokonce i ve scénářích, kde nejsou povolené vedlejší efekty a vyhodnocení funkce.  
+- Jsou povoleny v všechny výrazy, dokonce i ve scénářích, kde nejsou povolené vedlejší efekty a vyhodnocení funkce.  
   
--   Práce ve scénářích, kde nejsou volání normální funkce je to možné, jako je ladění s minimálním výpisem.  
+- Práce ve scénářích, kde nejsou volání normální funkce je to možné, jako je ladění s minimálním výpisem.  
   
- Vnitřní funkce ladicího programu můžete také nastavit vyhodnocování výrazů pohodlnější. Například `strncmp(str, “asd”)` je mnohem jednodušší psaní v podmínku zarážky než `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Vnitřní funkce ladicího programu můžete také nastavit vyhodnocování výrazů pohodlnější. Například `strncmp(str, “asd”)` je mnohem jednodušší psaní v podmínku zarážky než `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Oblast|Vnitřní funkce|  
 |----------|-------------------------|  

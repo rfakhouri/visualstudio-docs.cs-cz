@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b68330e4cfb8e1d403caa1c48d26ad29aacc19f7
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897170"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: sestavení stejných zdrojových souborů s různými možnostmi
 Při sestavování projektů často kompilaci stejné komponenty s možnostmi jiné sestavení. Můžete například vytvořit sestavení pro ladění pomocí informací o symbolu nebo sestavení pro vydání se žádné informace o symbolech, ale s povolenými optimalizacemi. Nebo můžete vytvořit projektu pro spuštění na konkrétní platformě, jako je například x86 nebo [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. V těchto případech se většina možností sestavení zůstat stejná; řízení konfigurace sestavení se změní jenom pár možností. S [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], použijete k vytvoření konfigurace sestavení různé vlastnosti a podmínky.  
@@ -68,23 +68,23 @@ Při sestavování projektů často kompilaci stejné komponenty s možnostmi ji
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Chcete-li zadat více než jednu vlastnost projektu na příkazovém řádku  
   
--   Použít **– vlastnost** nebo **-p** přepínač vícekrát s vlastností a hodnot vlastností, nebo použijte jednu **– vlastnost** nebo **-p** přepnutí a víc vlastností oddělujte středníkem (;). Příklad:  
+- Použít **– vlastnost** nebo **-p** přepínač vícekrát s vlastností a hodnot vlastností, nebo použijte jednu **– vlastnost** nebo **-p** přepnutí a víc vlastností oddělujte středníkem (;). Příklad:  
   
-    ```cmd  
-    msbuild file.proj -p:Flavor=Debug;Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug;Platform=x86  
+  ```  
   
-    or
+  or
   
-    ```cmd  
-    msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
+  ```  
   
- Proměnné prostředí jsou také považovány za vlastnosti a jsou automaticky součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Další informace o použití proměnných prostředí najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Proměnné prostředí jsou také považovány za vlastnosti a jsou automaticky součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Další informace o použití proměnných prostředí najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Hodnota vlastnosti, který je zadán v příkazovém řádku má přednost před jakoukoli hodnotu, která je nastavena pro stejnou vlastnost v souboru projektu, a hodnota v souboru projektu má přednost před hodnota v proměnné prostředí.  
+  Hodnota vlastnosti, který je zadán v příkazovém řádku má přednost před jakoukoli hodnotu, která je nastavena pro stejnou vlastnost v souboru projektu, a hodnota v souboru projektu má přednost před hodnota v proměnné prostředí.  
   
- Toto chování můžete změnit pomocí `TreatAsLocalProperty` atribut ve značce projektu. Pro názvy vlastností, které jsou uvedeny se tento atribut hodnota vlastnosti, který je zadán v příkazovém řádku nemá přednost před hodnota v souboru projektu. Příklad najdete dále v tomto tématu.  
+  Toto chování můžete změnit pomocí `TreatAsLocalProperty` atribut ve značce projektu. Pro názvy vlastností, které jsou uvedeny se tento atribut hodnota vlastnosti, který je zadán v příkazovém řádku nemá přednost před hodnota v souboru projektu. Příklad najdete dále v tomto tématu.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu projektu "Hello World" obsahuje dvě nové vlastnosti skupiny, které slouží k vytvoření sestavení pro ladění a sestavení pro vydání.  

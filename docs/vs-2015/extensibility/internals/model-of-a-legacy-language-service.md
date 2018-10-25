@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907700"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model služby starší verze jazyka
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Služba jazyka definuje prvky a funkce pro konkrétní jazyk a slouží k poskyt
 ## <a name="a-minimal-language-service"></a>Minimální jazykový služby  
  Nejzákladnější language service obsahuje následující dva objekty:  
   
--   *Jazyková služba* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní. Jazyk služba má informace o jazyce, včetně názvu, přípony názvů souborů, Správce oken kódu a colorizer.  
+- *Jazyková služba* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní. Jazyk služba má informace o jazyce, včetně názvu, přípony názvů souborů, Správce oken kódu a colorizer.  
   
--   *Colorizer* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní.  
+- *Colorizer* implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní.  
   
- Následující koncepční nákres znázorňuje model služby základního jazyka.  
+  Následující koncepční nákres znázorňuje model služby základního jazyka.  
   
- ![Obrázek modelu služby jazyka](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Základní jazyk modelu služby  
+  ![Obrázek modelu služby jazyka](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Základní jazyk modelu služby  
   
- Hostitelé okna dokumentu *dokumentu zobrazení* editoru, v tomto případě [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] základní editor. Zobrazení dokumentu a textové vyrovnávací paměti jsou vlastněny editoru. Tyto objekty pracovat [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prostřednictvím okna specializované dokumentu volána *okno kódu*. Okno kódu je součástí <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objekt, který je vytvořen a řídí integrovaného vývojového prostředí.  
+  Hostitelé okna dokumentu *dokumentu zobrazení* editoru, v tomto případě [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] základní editor. Zobrazení dokumentu a textové vyrovnávací paměti jsou vlastněny editoru. Tyto objekty pracovat [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prostřednictvím okna specializované dokumentu volána *okno kódu*. Okno kódu je součástí <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objekt, který je vytvořen a řídí integrovaného vývojového prostředí.  
   
- Při načítání souboru s příponou dané editoru vyhledá služba jazyka, které jsou přidružené k rozšíření a předá do něj okna kódu voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> metody. Tato služba vrátí hodnotu jazyka *Správce oken kód*, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> rozhraní.  
+  Při načítání souboru s příponou dané editoru vyhledá služba jazyka, které jsou přidružené k rozšíření a předá do něj okna kódu voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> metody. Tato služba vrátí hodnotu jazyka *Správce oken kód*, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> rozhraní.  
   
- Následující tabulka obsahuje přehled objekty v modelu.  
+  Následující tabulka obsahuje přehled objekty v modelu.  
   
 |Součást|Objekt|Funkce|  
 |---------------|------------|--------------|  

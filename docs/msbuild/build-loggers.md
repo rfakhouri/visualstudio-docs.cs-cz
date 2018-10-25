@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cbbcbc57d07eaf6273545f5520e461c7578977
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894284"
 ---
 # <a name="build-loggers"></a>Protokolovací nástroje sestavení
 Protokolovací nástroje poskytují způsob, jak můžete upravit výstupní sestavení a zobrazení zprávy, chyby nebo upozornění v reakci na události v konkrétním sestavení. Každý protokolovacího nástroje je implementován jako třída rozhraní .NET, která implementuje <xref:Microsoft.Build.Framework.ILogger> rozhraní, která je definována v *Microsoft.Build.Framework.dll* sestavení.  
   
  Existují dvě metody, které můžete použít při implementaci protokolovač:  
   
--   Implementace <xref:Microsoft.Build.Framework.ILogger> rozhraní přímo.  
+- Implementace <xref:Microsoft.Build.Framework.ILogger> rozhraní přímo.  
   
--   Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Logger>, který je definován v *Microsoft.Build.Utilities.dll* sestavení. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> a poskytuje výchozí implementaci některých <xref:Microsoft.Build.Framework.ILogger> členy.  
+- Odvodit třídu z pomocná třída <xref:Microsoft.Build.Utilities.Logger>, který je definován v *Microsoft.Build.Utilities.dll* sestavení. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> a poskytuje výchozí implementaci některých <xref:Microsoft.Build.Framework.ILogger> členy.  
   
- Toto téma vysvětluje, jak napsat jednoduchý protokolovací nástroj, který je odvozen z <xref:Microsoft.Build.Utilities.Logger>, a zobrazí zprávy v konzole v reakci na určité události sestavení.  
+  Toto téma vysvětluje, jak napsat jednoduchý protokolovací nástroj, který je odvozen z <xref:Microsoft.Build.Utilities.Logger>, a zobrazí zprávy v konzole v reakci na určité události sestavení.  
   
 ## <a name="register-for-events"></a>Zaregistrovat se na události  
  Účelem protokolovací nástroj je shromažďování informací o průběhu sestavení udávaný modul sestavení a potom nahlásit těchto informací užitečným způsobem. Všechny Protokolovací nástroje musí přepsat <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> metodu, která je, kde se registruje protokolovací nástroj pro události. V tomto příkladu protokolovací nástroj zaregistruje <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, a <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> události.  

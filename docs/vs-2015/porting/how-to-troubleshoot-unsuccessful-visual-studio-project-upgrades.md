@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911600"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Postupy: Řešení potíží spojených s neúspěšným upgradem projektu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ Někdy Visual Studio nemůže převést plně projektu ze starší verze [!INCLU
   
 #### <a name="to-resolve-incorrect-references"></a>Chcete-li vyřešit nesprávné odkazy  
   
-1.  V textovém editoru otevřete soubor projektu.  
+1. V textovém editoru otevřete soubor projektu.  
   
-2.  Otevřete vlastnosti projektu.  
+2. Otevřete vlastnosti projektu.  
   
-3.  Vyberte správné **Cílová architektura** hodnotu. Alternativně můžete změnit hodnotu `<TargetFrameworkVersion>` element přímo v souboru projektu.  
+3. Vyberte správné **Cílová architektura** hodnotu. Alternativně můžete změnit hodnotu `<TargetFrameworkVersion>` element přímo v souboru projektu.  
   
- Pokud chcete, aby projektu pro spuštění v upgradovaný [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze, musíte aktualizovat odkazy na projekt a aktualizujte také některé `Imports` nebo `Using` příkazy, které volají odkazy. Pokud váš projekt je načten v integrovaném vývojovém prostředí, můžete aktualizovat odkazy pomocí **Průzkumníka řešení** nebo **správce odkazů** dialogové okno.  
+   Pokud chcete, aby projektu pro spuštění v upgradovaný [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze, musíte aktualizovat odkazy na projekt a aktualizujte také některé `Imports` nebo `Using` příkazy, které volají odkazy. Pokud váš projekt je načten v integrovaném vývojovém prostředí, můžete aktualizovat odkazy pomocí **Průzkumníka řešení** nebo **správce odkazů** dialogové okno.  
   
 ## <a name="see-also"></a>Viz také  
  [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

@@ -16,49 +16,49 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8e35b16d10bf59b4ae8c91de2a5281d540c0e67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d835ddc84fae24130035f0664d446a73b7ac3f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897703"
 ---
 # <a name="debugging-legacy-workflows"></a>Ladění starších verzí pracovních postupů
 Pokud používáte starší [!INCLUDE[wfd1](../includes/wfd1-md.md)] v [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] sestavit [!INCLUDE[wf](../includes/wf-md.md)] aplikace, že target.NET rozhraní Framework 3.0 nebo 3.5, můžete ladit vaše pracovní postupy, jako ostatní programy nastavením zarážek, připojení k procesům a kontrole vláken a Zásobník volání. Máte také možnost vzdáleného ladění.  
   
 > [!NOTE]
 >  Pokud instalaci a odinstalaci na svém počítači více verzí sady Visual Studio, ladění WF3 může selhat s jedním ze dvou následujících možností:  
->   
->  -   Nejsou vaše zarážky.  
-> -   Zobrazí se následující zpráva:  
->   
->  **Nepodařilo se zahájit ladění na webovém serveru. Ladicí program není správně nainstalován.  Nelze ladit požadovaný typ kódu.  Spusťte instalační program pro nainstalování nebo opravení ladicího programu.**  
->   
->  Pokud některý z těchto scénářů dojde při ladění v rozhraní .NET Framework 3.0 nebo 3.5 pracovních postupů, proveďte opravu instalace sady Visual Studio.  
+> 
+> - Nejsou vaše zarážky.  
+>   -   Zobrazí se následující zpráva:  
+> 
+>   **Nepodařilo se zahájit ladění na webovém serveru. Ladicí program není správně nainstalován.  Nelze ladit požadovaný typ kódu.  Spusťte instalační program pro nainstalování nebo opravení ladicího programu.**  
+> 
+>   Pokud některý z těchto scénářů dojde při ladění v rozhraní .NET Framework 3.0 nebo 3.5 pracovních postupů, proveďte opravu instalace sady Visual Studio.  
   
  [!INCLUDE[wf2](../includes/wf2-md.md)] se integruje s následující standardní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ladění systému windows:  
   
--   **Zarážka**: funguje podle očekávání, ale zadejte aktivitu pro název funkce.  
+- **Zarážka**: funguje podle očekávání, ale zadejte aktivitu pro název funkce.  
   
--   **Zásobník volání**: upravené poskytují přehled aktivit, které jste spustili v instanci pracovního postupu. Položky **zásobník volání** jsou první hloubka vyhledávání provedení aktivity. Klikněte dvakrát na záznam, tím přesuňte fokus na vybranou aktivitou.  
+- **Zásobník volání**: upravené poskytují přehled aktivit, které jste spustili v instanci pracovního postupu. Položky **zásobník volání** jsou první hloubka vyhledávání provedení aktivity. Klikněte dvakrát na záznam, tím přesuňte fokus na vybranou aktivitou.  
   
--   **Vlákna**: poskytuje instance ID instance pracovního postupu, který je právě laděna.  
+- **Vlákna**: poskytuje instance ID instance pracovního postupu, který je právě laděna.  
   
- Visual Studio pro Windows Workflow Foundation nepodporuje následující funkce ladění:  
+  Visual Studio pro Windows Workflow Foundation nepodporuje následující funkce ladění:  
   
--   Podmíněné zarážky na návrhové ploše.  
+- Podmíněné zarážky na návrhové ploše.  
   
--   Rychlé kukátko.  
+- Rychlé kukátko.  
   
--   Nastavení dalšího příkazu.  
+- Nastavení dalšího příkazu.  
   
--   Spusťte ke kurzoru.  
+- Spusťte ke kurzoru.  
   
--   Upravit a pokračovat.  
+- Upravit a pokračovat.  
   
--   Ladění just-in-time.  
+- Ladění just-in-time.  
   
--   Ladění ve smíšeném režimu.  
+- Ladění ve smíšeném režimu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Spuštění ladicího programu sady Visual Studio pro programovací model Windows Workflow Foundation (starší verze)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  

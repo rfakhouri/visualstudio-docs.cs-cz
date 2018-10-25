@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896833"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procházení a změna uspořádání map kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ Změna uspořádání položek na mapách kódu, aby se daly snadněji číst a 
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Přidání propojení mezi stávající elementy kódu  
   
-1.  Vyberte požadovaný prvek zdrojového kódu. Panel nástrojů se zobrazí nad prvek kódu.  
+1. Vyberte požadovaný prvek zdrojového kódu. Panel nástrojů se zobrazí nad prvek kódu.  
   
-     ![Panel nástrojů grafu závislostí](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Panel nástrojů grafu závislostí](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Na panelu nástrojů zvolte ikonu první **vytvořit nové propojení z tohoto uzlu na který následně uzel, který můžete kliknout na další**.  
+2. Na panelu nástrojů zvolte ikonu první **vytvořit nové propojení z tohoto uzlu na který následně uzel, který můžete kliknout na další**.  
   
-3.  Vyberte cílový prvek kódu. Zobrazí se propojení mezi elementy dvou kódu.  
+3. Vyberte cílový prvek kódu. Zobrazí se propojení mezi elementy dvou kódu.  
   
- \- nebo –  
+   \- nebo –  
   
-1.  Vyberte požadovaný prvek zdrojového kódu na mapě.  
+4. Vyberte požadovaný prvek zdrojového kódu na mapě.  
   
-2.  Pokud máte nainstalovaný myš, přesuňte ukazatel myši mimo hranice mapy.  
+5. Pokud máte nainstalovaný myš, přesuňte ukazatel myši mimo hranice mapy.  
   
-3.  Otevřete místní nabídku prvku kódu a zvolte **upravit**, **přidat**, **obecný odkaz**.  
+6. Otevřete místní nabídku prvku kódu a zvolte **upravit**, **přidat**, **obecný odkaz**.  
   
-4.  Na kartě a vyberte cílový prvek kódu pro odkaz.  
+7. Na kartě a vyberte cílový prvek kódu pro odkaz.  
   
-5.  Stisknutím klávesy **vrátit**.  
+8. Stisknutím klávesy **vrátit**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Přidání komentáře k existující uzel na mapě  

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5bd49d550cb03e8234c8740ea8c0f605ed721c2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896338"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Nastavení projektu pro konfiguraci ladění jazyka C#
 Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **stránky vlastností** okna, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** okna.  
@@ -37,15 +37,15 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C# v **str�
   
 ##  <a name="BKMK_Debug_tab"></a> Ladění kartu  
   
-|**Nastavení**|**Popis**|  
-|-----------------|---------------------|  
-|**Konfigurace**|Nastaví režim pro kompilaci aplikace. Zvolte mezi **aktivní (ladění)**, **ladění**, **vydání**, **všechny konfigurace**.|  
-|**Spustit akci**|Tato skupina ovládacích prvků určuje akci, která bude vytvářena při výběru spuštění v nabídce ladění.<br /><br /> -   **Spustit projekt** je výchozí nastavení a spuštění projektu po spuštění pro ladění. Další informace najdete v tématu [výběr spouštěného projektu](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Spustit externí program** umožňuje spuštění a připojení k programu, který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Další informace najdete v tématu [připojení ke spuštění programu](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
-|**Argumenty příkazového řádku**|Určuje argumenty příkazového řádku pro program k ladění. Název příkazu je zadané ve spuštění programu externí název programu. Pokud se spouštěcí akce nastavená na Otevřít adresu URL, nelze zadat argumenty příkazového řádku.|  
-|**Pracovní adresář**|Určuje pracovní adresář laděného programu. V [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], pracovní adresář je adresář spuštění aplikace z \bin\debug ve výchozím nastavení.|  
-|**Použití vzdáleného počítače**|Název vzdáleného počítače kde bude aplikace spuštěna, pro účely ladění nebo [název serveru Msvsmon](../debugger/remote-debugging.md). Umístění souboru exe ve vzdáleném počítači, je určené vlastností výstupní cestu ve složce vlastnosti konfigurace sestavení kategorie. Umístění musí být sdíleném adresáři na vzdáleném počítači.|
-|**Povolit ladění nespravovaného kódu**|Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace.|  
-|**Povolit ladění SQL serveru**|Umožňuje ladění objektů databáze systému SQL Server.|  
+| **Nastavení** | **Popis** |
+|-------------------------------------| - |
+| **Konfigurace** | Nastaví režim pro kompilaci aplikace. Zvolte mezi **aktivní (ladění)**, **ladění**, **vydání**, **všechny konfigurace**. |
+| **Spustit akci** | Tato skupina ovládacích prvků určuje akci, která bude vytvářena při výběru spuštění v nabídce ladění.<br /><br /> -   **Spustit projekt** je výchozí nastavení a spuštění projektu po spuštění pro ladění. Další informace najdete v tématu [výběr spouštěného projektu](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Spustit externí program** umožňuje spuštění a připojení k programu, který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Další informace najdete v tématu [připojení ke spuštění programu](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace. |
+| **Argumenty příkazového řádku** | Určuje argumenty příkazového řádku pro program k ladění. Název příkazu je zadané ve spuštění programu externí název programu. Pokud se spouštěcí akce nastavená na Otevřít adresu URL, nelze zadat argumenty příkazového řádku. |
+| **Pracovní adresář** | Určuje pracovní adresář laděného programu. V [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], pracovní adresář je adresář spuštění aplikace z \bin\debug ve výchozím nastavení. |
+| **Použití vzdáleného počítače** | Název vzdáleného počítače kde bude aplikace spuštěna, pro účely ladění nebo [název serveru Msvsmon](../debugger/remote-debugging.md). Umístění souboru exe ve vzdáleném počítači, je určené vlastností výstupní cestu ve složce vlastnosti konfigurace sestavení kategorie. Umístění musí být sdíleném adresáři na vzdáleném počítači. |
+| **Povolit ladění nespravovaného kódu** | Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace. |
+| **Povolit ladění SQL serveru** | Umožňuje ladění objektů databáze systému SQL Server. |
   
 ##  <a name="BKMK_Build_tab"></a> Vytvořit kartu  
   

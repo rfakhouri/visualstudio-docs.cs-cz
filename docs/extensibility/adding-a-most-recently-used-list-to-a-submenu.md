@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916523"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Přidat že naposledy použitou seznamu do podnabídky
 Tento návod vychází z ukázky v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)a ukazuje, jak přidat dynamický seznam do podnabídky. V seznamu dynamického tento balíček je základem pro vytvoření seznamu naposledy (použitých).  
@@ -38,9 +38,9 @@ Tento návod vychází z ukázky v [přidání podnabídky do nabídky](../exten
   
 ## <a name="create-an-extension"></a>Vytvořit rozšíření  
   
--   Postupujte podle pokynů v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md) Vytvoření podnabídky, která se mění v následujících postupech.  
+- Postupujte podle pokynů v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md) Vytvoření podnabídky, která se mění v následujících postupech.  
   
- V postupech v tomto názorném postupu se předpokládá, že je název sady VSPackage `TopLevelMenu`, což je název, který se používá v [přidání nabídky na řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  V postupech v tomto názorném postupu se předpokládá, že je název sady VSPackage `TopLevelMenu`, což je název, který se používá v [přidání nabídky na řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Vytvoření příkazu dynamické položky seznamu  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907479"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny pro řešení ImmutableArrays
 
@@ -82,7 +82,6 @@ Můžete implementovat analyzátor jazyka Visual Basic, který cílí na kód ja
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Začít nový řádek v této metody a typu "kontextu." Pokud chcete zobrazit seznam doplňování technologie IntelliSense.  Můžete zobrazit v seznamu pro doplňování existuje několik instancí `Register...` metody pro zpracování různých druhů událostí.  Například první z nich, `RegisterCodeBlockAction`, volání zpět do kódu pro blok, což je obvykle kód mezi složenými závorkami.  Registrace pro blok také zavolá zpět do kódu pro inicializátor pole, hodnota atributu nebo hodnota volitelného parametru.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Zástupné procedury na odvozené členy.** Nyní umístěte blikající kurzor editoru v identifikátoru `CodeFixProvider` a stiskněte klávesu **Ctrl**+**.** (tečka) se zakázaným o provedení této abstraktní základní třídy.  Tím se vygeneruje vlastnost a metodu pro vás.

@@ -20,15 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 250a22c29c359ac099df237bd9a33e4522ee39ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899783"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -44,21 +45,21 @@ ms.locfileid: "49287273"
 
  Následující typy nejsou prozkoumat toto pravidlo:
 
--   Typy hodnot
+- Typy hodnot
 
--   Abstraktní typy
+- Abstraktní typy
 
--   Výčty
+- Výčty
 
--   Delegáty
+- Delegáty
 
--   Typy generované kompilátoru pole
+- Typy generované kompilátoru pole
 
--   Typy, které se nedá vytvořit instance, které definují `static` (`Shared` v jazyce Visual Basic) metody pouze.
+- Typy, které se nedá vytvořit instance, které definují `static` (`Shared` v jazyce Visual Basic) metody pouze.
 
- Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> na sestavení, které se právě analyzuje, toto pravidlo nedojde na žádné konstruktory, které jsou označeny jako `internal` protože nemůže určit, zda pole se používá jiným `friend` sestavení.
+  Pokud použijete <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> na sestavení, které se právě analyzuje, toto pravidlo nedojde na žádné konstruktory, které jsou označeny jako `internal` protože nemůže určit, zda pole se používá jiným `friend` sestavení.
 
- I když toto omezení v nelze vyřešit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analýzy kódu, externí samostatné FxCop se vrátí na interní konstruktory každý `friend` sestavení je k dispozici v analýze.
+  I když toto omezení v nelze vyřešit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analýzy kódu, externí samostatné FxCop se vrátí na interní konstruktory každý `friend` sestavení je k dispozici v analýze.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, typ odeberte nebo přidejte kód, který ji používá. Pokud typ obsahuje pouze statické metody, přidejte jeden z následujících na typ pro zabránění kompilátoru generování výchozí veřejný konstruktor instance:
@@ -70,32 +71,32 @@ ms.locfileid: "49287273"
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Je bezpečné potlačit upozornění tohoto pravidla. Doporučujeme vám, že je potlačení tohoto upozornění v těchto situacích:
 
--   Třída je vytvořená prostřednictvím reflexe pozdní vazby metod, jako <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- Třída je vytvořená prostřednictvím reflexe pozdní vazby metod, jako <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   Modul runtime se automaticky vytvoří třídu nebo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Například třídy, které implementují <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> nebo <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- Modul runtime se automaticky vytvoří třídu nebo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Například třídy, které implementují <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> nebo <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   Třídy je předán jako parametr obecného typu, který má nové omezení. Například následující příklad vyvolá toto pravidlo.
+- Třídy je předán jako parametr obecného typu, který má nové omezení. Například následující příklad vyvolá toto pravidlo.
 
-    ```csharp
-    internal class MyClass
-    {
-        public DoSomething()
-        {
-        }
-    }
-    public class MyGeneric<T> where T : new()
-    {
-        public T Create()
-        {
-            return new T();
-        }
-    }
-    // [...]
-    MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
-    mc.Create();
-    ```
+  ```csharp
+  internal class MyClass
+  {
+      public DoSomething()
+      {
+      }
+  }
+  public class MyGeneric<T> where T : new()
+  {
+      public T Create()
+      {
+          return new T();
+      }
+  }
+  // [...]
+  MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
+  mc.Create();
+  ```
 
- V takových situacích doporučujeme že potlačení tohoto upozornění.
+  V takových situacích doporučujeme že potlačení tohoto upozornění.
 
 ## <a name="related-rules"></a>Související pravidla
  [CA1811: Vyhněte se nevolanému místnímu kódu](../code-quality/ca1811-avoid-uncalled-private-code.md)

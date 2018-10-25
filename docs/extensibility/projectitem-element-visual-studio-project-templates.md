@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899952"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem – element (šablony projektů Visual Studio)
 Určuje soubor, který je součástí šablony projektu.  
@@ -53,14 +53,14 @@ Určuje soubor, který je součástí šablony projektu.
   
 ### <a name="attributes"></a>Atributy  
   
-|Atribut|Popis|  
-|---------------|-----------------|  
-|`TargetFileName`|Nepovinný atribut.<br /><br /> Určuje název a cesta k položce projektu, když je projekt vytvořen z šablony. Tento atribut je užitečné pro vytvoření adresářové struktury liší od adresářovou strukturu v šabloně *ZIP* souboru, nebo k vytvoření názvu položky pomocí nahrazení parametru.|  
-|`ReplaceParameters`|Nepovinný atribut.<br /><br /> Logická hodnota určující, zda položka má hodnoty parametrů, které musí být nahrazen, když je projekt vytvořen z šablony. Výchozí hodnota je `false`.|  
-|`OpenInEditor`|Nepovinný atribut.<br /><br /> Logická hodnota, která určuje, zda položka by měl být otevřen v jeho příslušných editoru v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] při vytvoření projektu ze šablony.<br /><br /> `OpenInWebBrowser` a `OpenInHelpBrowser` atributy se ignorují u položky s `OpenInEditor` hodnotu `true`.<br /><br /> Výchozí hodnota je `false`.|  
-|`OpenInWebBrowser`|Nepovinný atribut.<br /><br /> Logická hodnota, která určuje, zda položky by měla otevřít webový prohlížeč při vytvoření projektu ze šablony.<br /><br /> Pouze soubory HTML a textové soubory, které jsou místní pro projekt lze otevřít ve webovém prohlížeči. Externí adresy URL nelze otevřít pomocí tohoto atributu.<br /><br /> Výchozí hodnota je `false`.|  
-|`OpenInHelpBrowser`|Nepovinný atribut.<br /><br /> Logická hodnota, která určuje, zda položka by měl být otevřen v aplikaci Help viewer, když je projekt vytvořen z šablony.<br /><br /> Pouze soubory HTML a textové soubory, které jsou místní pro projekt lze otevřít v prohlížeči. Externí adresy URL nelze otevřít pomocí tohoto atributu.<br /><br /> Výchozí hodnota je `false`.|  
-|`OpenOrder`|Nepovinný atribut.<br /><br /> Určuje číselnou hodnotu, která představuje pořadí, položky se otevřou v jejich příslušných editorech. Všechny hodnoty musí být násobky 10. Položky s vyšší `OpenOrder` hodnoty jsou otevřen jako první.|  
+| Atribut | Popis |
+|---------------------| - |
+| `TargetFileName` | Nepovinný atribut.<br /><br /> Určuje název a cesta k položce projektu, když je projekt vytvořen z šablony. Tento atribut je užitečné pro vytvoření adresářové struktury liší od adresářovou strukturu v šabloně *ZIP* souboru, nebo k vytvoření názvu položky pomocí nahrazení parametru. |
+| `ReplaceParameters` | Nepovinný atribut.<br /><br /> Logická hodnota určující, zda položka má hodnoty parametrů, které musí být nahrazen, když je projekt vytvořen z šablony. Výchozí hodnota je `false`. |
+| `OpenInEditor` | Nepovinný atribut.<br /><br /> Logická hodnota, která určuje, zda položka by měl být otevřen v jeho příslušných editoru v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] při vytvoření projektu ze šablony.<br /><br /> `OpenInWebBrowser` a `OpenInHelpBrowser` atributy se ignorují u položky s `OpenInEditor` hodnotu `true`.<br /><br /> Výchozí hodnota je `false`. |
+| `OpenInWebBrowser` | Nepovinný atribut.<br /><br /> Logická hodnota, která určuje, zda položky by měla otevřít webový prohlížeč při vytvoření projektu ze šablony.<br /><br /> Pouze soubory HTML a textové soubory, které jsou místní pro projekt lze otevřít ve webovém prohlížeči. Externí adresy URL nelze otevřít pomocí tohoto atributu.<br /><br /> Výchozí hodnota je `false`. |
+| `OpenInHelpBrowser` | Nepovinný atribut.<br /><br /> Logická hodnota, která určuje, zda položka by měl být otevřen v aplikaci Help viewer, když je projekt vytvořen z šablony.<br /><br /> Pouze soubory HTML a textové soubory, které jsou místní pro projekt lze otevřít v prohlížeči. Externí adresy URL nelze otevřít pomocí tohoto atributu.<br /><br /> Výchozí hodnota je `false`. |
+| `OpenOrder` | Nepovinný atribut.<br /><br /> Určuje číselnou hodnotu, která představuje pořadí, položky se otevřou v jejich příslušných editorech. Všechny hodnoty musí být násobky 10. Položky s vyšší `OpenOrder` hodnoty jsou otevřen jako první. |
   
 ### <a name="child-elements"></a>Podřízené prvky  
  Žádné  
@@ -91,27 +91,27 @@ Určuje soubor, který je součástí šablony projektu.
   
 ### <a name="to-rename-files-with-parameters"></a>Přejmenujte soubory s parametry  
   
-1.  Použijte následující kód XML v *.vstemplate* souboru:  
+1. Použijte následující kód XML v *.vstemplate* souboru:  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  Otevřete soubor projektu (*.vbproj* pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu) v textovém editoru nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Otevřete soubor projektu (*.vbproj* pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu) v textovém editoru nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Vyhledejte řádek v souboru projektu, který vypadá podobně jako následující kód XML:  
+3. Vyhledejte řádek v souboru projektu, který vypadá podobně jako následující kód XML:  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  Řádek kódu nahraďte následující kód XML:  
+4. Řádek kódu nahraďte následující kód XML:  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     Pokud je projekt je vytvořen z této šablony, názvu souboru bude vycházet zadaný název uživatele v **nový projekt** dialogovém okně se všemi problematické znaky a byly odebrány mezery. Další informace najdete v tématu [parametry šablony](../ide/template-parameters.md).  
+    Pokud je projekt je vytvořen z této šablony, názvu souboru bude vycházet zadaný název uživatele v **nový projekt** dialogovém okně se všemi problematické znaky a byly odebrány mezery. Další informace najdete v tématu [parametry šablony](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablona projektu pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikace.  

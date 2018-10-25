@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894815"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
 
@@ -164,30 +164,30 @@ Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následují
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Registrace procesoru direktiv nastavením klíče registru
 
-1.  Spustit `regedit`.
+1. Spustit `regedit`.
 
-2.  V editoru registru přejděte na
+2. V editoru registru přejděte na
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Pokud chcete nainstalovat procesor direktiv v experimentální verzi sady Visual Studio, "za"11.0"vložte"Exp".
+    Pokud chcete nainstalovat procesor direktiv v experimentální verzi sady Visual Studio, "za"11.0"vložte"Exp".
 
-3.  Přidejte klíč registru, který má stejný název jako třída procesoru direktiv.
+3. Přidejte klíč registru, který má stejný název jako třída procesoru direktiv.
 
-    -   Ve stromové struktuře registru klikněte pravým tlačítkem **DirectiveProcessors** uzlu, přejděte na **nový**a potom klikněte na tlačítko **klíč**.
+   -   Ve stromové struktuře registru klikněte pravým tlačítkem **DirectiveProcessors** uzlu, přejděte na **nový**a potom klikněte na tlačítko **klíč**.
 
-4.  V novém uzlu přidejte podle následujících tabulek řetězcové hodnoty Class a CodeBase nebo Assembly.
+4. V novém uzlu přidejte podle následujících tabulek řetězcové hodnoty Class a CodeBase nebo Assembly.
 
-    1.  Klikněte pravým tlačítkem na uzel, který jste vytvořili, přejděte na **nový**a potom klikněte na tlačítko **řetězcovou hodnotu**.
+   1.  Klikněte pravým tlačítkem na uzel, který jste vytvořili, přejděte na **nový**a potom klikněte na tlačítko **řetězcovou hodnotu**.
 
-    2.  Upravte název hodnoty.
+   2.  Upravte název hodnoty.
 
-    3.  Dvakrát klikněte na název a upravte data.
+   3.  Dvakrát klikněte na název a upravte data.
 
- Pokud vlastní procesor direktiv není v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:
+   Pokud vlastní procesor direktiv není v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:
 
 |Název|Typ|Data|
-|----------|----------|----------|
+|-|-|-|
 |(Výchozí)|REG_SZ|(hodnota nenastavena)|
 |Třída|REG_SZ|**\<Název Namespace >. \<Název třídy >**|
 |CodeBase|REG_SZ|**\<Vaše cesta >\\< název vašeho sestavení\>**|
@@ -195,7 +195,7 @@ Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následují
  Pokud je sestavení v mezipaměti GAC, měly by podklíče registru vypadat podle následující tabulky:
 
 |Název|Typ|Data|
-|----------|----------|----------|
+|-|-|-|
 |(Výchozí)|REG_SZ|(hodnota nenastavena)|
 |Třída|REG_SZ|\<**Váš plně kvalifikovaný název třídy**>|
 |Assembly|REG_SZ|\<**Název vašeho sestavení v GAC**>|

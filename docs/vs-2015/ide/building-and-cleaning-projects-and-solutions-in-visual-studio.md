@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912029"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Sestavování a čištění projektů a řešení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ Pomocí postupů v tomto tématu můžete vytvářet, znovu sestavit nebo vyčis
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Sestavit pouze projekt po spuštění a jeho závislosti  
   
-1.  V panelu nabídky zvolte **nástroje**, **možnosti**.  
+1. V panelu nabídky zvolte **nástroje**, **možnosti**.  
   
-2.  V **možnosti** dialogového okna rozbalte **projekty a řešení** uzel a klikněte na tlačítko **sestavíte a spustíte** stránky.  
+2. V **možnosti** dialogového okna rozbalte **projekty a řešení** uzel a klikněte na tlačítko **sestavíte a spustíte** stránky.  
   
-     **Sestavení a spuštění projektů a řešení, možnosti** zobrazí se dialogové okno.  
+    **Sestavení a spuštění projektů a řešení, možnosti** zobrazí se dialogové okno.  
   
-3.  Vyberte **pouze při spuštění sestavit projekty a závislosti** zaškrtávací políčko.  
+3. Vyberte **pouze při spuštění sestavit projekty a závislosti** zaškrtávací políčko.  
   
-     Když je toto políčko zaškrtnuto, pouze aktuální spouštěcí projekt a jeho závislosti jsou vytvořeny při proveďte některý z následujících kroků:  
+    Když je toto políčko zaškrtnuto, pouze aktuální spouštěcí projekt a jeho závislosti jsou vytvořeny při proveďte některý z následujících kroků:  
   
-    -   V panelu nabídky zvolte **ladění**, **Start** (F5).  
+   - V panelu nabídky zvolte **ladění**, **Start** (F5).  
   
-    -   V panelu nabídky zvolte **sestavení**, **sestavit řešení** (CTRL + SHIFT + B).  
+   - V panelu nabídky zvolte **sestavení**, **sestavit řešení** (CTRL + SHIFT + B).  
   
      Když toto políčko zaškrtnuté, všechny projekty, jejich závislosti a soubory řešení jsou vytvořeny při spuštění některou z předchozích příkazů. Ve výchozím nastavení je toto políčko zaškrtnuté.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Sestavit jenom vybrané projektu Visual C++  
   
-1.  Zvolte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektu a pak na panelu nabídek zvolte **sestavení**, **projektu pouze**a jeden z následujících příkazů:  
+1. Zvolte [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektu a pak na panelu nabídek zvolte **sestavení**, **projektu pouze**a jeden z následujících příkazů:  
   
-    -   **Jenom Build** *ProjectName*  
+   - **Jenom Build** *ProjectName*  
   
-    -   **Znovu sestavit pouze** *ProjectName*  
+   - **Znovu sestavit pouze** *ProjectName*  
   
-    -   **Vyčistit pouze** *ProjectName*  
+   - **Vyčistit pouze** *ProjectName*  
   
-    -   **Pouze propojit** *ProjectName*  
+   - **Pouze propojit** *ProjectName*  
   
      Platí pouze pro tyto příkazy [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projekt, který jste zvolili, bez vytváření, nové sestavení, čištění nebo propojení všechny závislosti projektu nebo soubory řešení. V závislosti na vaší verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], **projektu pouze** podnabídky může obsahovat další příkazy.  
   

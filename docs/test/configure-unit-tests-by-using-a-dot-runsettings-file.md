@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cfff2f5a040ce309e05afff1dc93954eb59db9dd
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903553"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek s použitím *s příponou .runsettings* souboru
 
@@ -164,7 +164,7 @@ Následující části podrobně popisují prvky *s příponou .runsettings* sou
 **RunConfiguration** element může obsahovat následující prvky:
 
 |Uzel|Výchozí|Hodnoty|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||Adresář, kde jsou umístěny výsledky testů.|
 |**Parametr targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Toto nastavení určuje verzi rozhraní testování částí pro zjištění a provedení testů. Může se lišit od verze platformy .NET, kterou jste zadali ve vlastnostech sestavení projektu testování částí.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ Pokud chcete používat parametry testovacího běhu, přidejte privátní <xref
 Tato nastavení jsou specifická pro testovací adaptér, který spouští testovací metody, které mají <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atribut.
 
 |Konfigurace|Výchozí|Hodnoty|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|false|V sadě Visual Studio 2012 se k němu rychlejší a lépe škálovatelný optimalizované adaptér MSTest. Některé rysy chování sady, jako například pořadí, ve kterém jsou testy spuštěny, nemusí být přesně stejné jako v předchozích edicích sady Visual Studio. Nastavte tuto hodnotu na **true** aby používala starší testovací adaptér.<br /><br />Například můžete použít toto nastavení, pokud máte *app.config* souboru určeného pro testování částí.<br /><br />Doporučujeme zvážit refaktoring testů, aby bylo možné použít novější adaptér.|
 |**IgnoreTestImpact**|false|Funkce dopadu testu upřednostňuje při spuštění testů prostřednictvím adaptéru MSTest nebo nástroje Microsoft Test Manager testy, které jsou ovlivněny nedávnými změnami. Toto nastavení funkci deaktivuje. Další informace najdete v tématu [které testy je třeba spustit od předchozího sestavení](https://msdn.microsoft.com/library/dd286589).|
 |**Soubor_nastavení**||Můžete určit soubor nastavení testu pro použití s zde adaptér MSTest. Můžete také určit soubor nastavení testu tak, že vyberete **testování** > **nastavení testu** > **vybrat soubor nastavení testu**.<br /><br />Pokud chcete zadat tuto hodnotu, je nutné také nastavit **ForcedlegacyMode** k **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

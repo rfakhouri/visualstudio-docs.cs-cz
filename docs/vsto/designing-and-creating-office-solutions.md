@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917178"
 ---
 # <a name="design-and-create-office-solutions"></a>Návrh a vytvoření řešení pro systém Office
   Visual Studio obsahuje šablony projektů, které můžete použít k vytvoření několika různých typů řešení pro systém Office. Tato část dokumentace popisuje šablony projektů a obsahuje pokyny k vytváření projektů Office. Informace o tom, jak implementovat kód a přizpůsobení uživatelského rozhraní, po vytvoření projektu naleznete v tématu [řešení pro vývoj Office](../vsto/developing-office-solutions.md).  
@@ -41,19 +41,19 @@ ms.locfileid: "35676016"
 ## <a name="choose-a-net-framework-version"></a>Zvolte verzi rozhraní .NET Framework  
  Po výběru typu projektu, která nejlépe vyhovuje vašim požadavkům, můžete zvolit, kterou verzi rozhraní .NET Framework pro použití v procesu vývoje. Můžete cílit na následující verze rozhraní .NET Framework v projektech Office:  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- Verze rozhraní .NET Framework, který jste vybrali pro váš projekt se vyžaduje v počítačích koncových uživatelů pro spuštění řešení. Například pokud váš projekt cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] se vyžaduje v počítačích koncových uživatelů. V tomto příkladu řešení nespustí, pokud pouze rozhraní .NET Framework 3.5 je nainstalovaný na počítačích koncových uživatelů.  
+  Verze rozhraní .NET Framework, který jste vybrali pro váš projekt se vyžaduje v počítačích koncových uživatelů pro spuštění řešení. Například pokud váš projekt cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] se vyžaduje v počítačích koncových uživatelů. V tomto příkladu řešení nespustí, pokud pouze rozhraní .NET Framework 3.5 je nainstalovaný na počítačích koncových uživatelů.  
   
- Pokud provádíte migraci projektu doplňku VSTO, který cílí na rozhraní .NET Framework 3.5, sada Visual Studio změní cílovou architekturu projektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novějším v závislosti na verzi Office, kterou jste nainstalovali.  
+  Pokud provádíte migraci projektu doplňku VSTO, který cílí na rozhraní .NET Framework 3.5, sada Visual Studio změní cílovou architekturu projektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novějším v závislosti na verzi Office, kterou jste nainstalovali.  
   
- Ale po sady Visual Studio změní cílovou architekturu, můžete potřebovat upravit kód ve vašem projektu, pokud používá určité funkce. Další informace o tom, jak změnit cílovou architekturu, naleznete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Další informace o změnách možná budete muset provést ve vašem projektu, naleznete v tématu [řešení pro systém Office migrovat na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  Ale po sady Visual Studio změní cílovou architekturu, můžete potřebovat upravit kód ve vašem projektu, pokud používá určité funkce. Další informace o tom, jak změnit cílovou architekturu, naleznete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Další informace o změnách možná budete muset provést ve vašem projektu, naleznete v tématu [řešení pro systém Office migrovat na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
- Pokud Visual Studio změní cílového rozhraní .NET Framework pro váš projekt a jsou pomocí technologie ClickOnce k nasazení svého řešení, ujistěte se, že vyberete odpovídající verzi rozhraní .NET Framework v **požadavky** dialogové okno. Tento výběr nezmění automaticky, když změníte cílový rámec pro váš projekt. Další informace najdete v tématu [postupy: instalace požadovaných součástí v počítačích koncových uživatelů, které spouštějí řešení Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Pokud Visual Studio změní cílového rozhraní .NET Framework pro váš projekt a jsou pomocí technologie ClickOnce k nasazení svého řešení, ujistěte se, že vyberete odpovídající verzi rozhraní .NET Framework v **požadavky** dialogové okno. Tento výběr nezmění automaticky, když změníte cílový rámec pro váš projekt. Další informace najdete v tématu [postupy: instalace požadovaných součástí v počítačích koncových uživatelů, které spouštějí řešení Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
 >  Nelze cíleny na rozhraní.NET Framework 3.5 nebo starší v projektech Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office vytvořené pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] vyžadují funkce, které byly poprvé představeny v [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  

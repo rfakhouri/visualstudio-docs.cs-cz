@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913862"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Přesuňte volání nespravovaných kódů do třídy NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228868"
 ## <a name="rule-description"></a>Popis pravidla
  Metody vyvolání platformy, jako jsou ty, které jsou označeny pomocí <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atribut nebo metody, které jsou definovány pomocí `Declare` – klíčové slovo v [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], přístup k nespravovanému kódu. Tyto metody by měly být v jednom z následujících tříd:
 
--   **NativeMethods** – Tato třída nepotlačuje procházení zásobníku oprávnění pro nespravovaný kód. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nesmí použít pro tuto třídu.) Tato třída je pro metody, které lze použít kdekoli, protože procházení zásobníku se provede.
+- **NativeMethods** – Tato třída nepotlačuje procházení zásobníku oprávnění pro nespravovaný kód. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nesmí použít pro tuto třídu.) Tato třída je pro metody, které lze použít kdekoli, protože procházení zásobníku se provede.
 
--   **SafeNativeMethods** – Tato třída potlačí procházení zásobníku oprávnění pro nespravovaný kód. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> platí pro tuto třídu.) Tato třída je pro metody, které jsou bezpečné pro každého, kdo k volání. Volající tyto metody není nutné provádět úplnou kontrolu, abyste měli jistotu, že využití je bezpečná, protože jsou neškodné pro jakýkoli volající metody.
+- **SafeNativeMethods** – Tato třída potlačí procházení zásobníku oprávnění pro nespravovaný kód. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> platí pro tuto třídu.) Tato třída je pro metody, které jsou bezpečné pro každého, kdo k volání. Volající tyto metody není nutné provádět úplnou kontrolu, abyste měli jistotu, že využití je bezpečná, protože jsou neškodné pro jakýkoli volající metody.
 
--   **UnsafeNativeMethods** – Tato třída potlačí procházení zásobníku oprávnění pro nespravovaný kód. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> platí pro tuto třídu.) Tato třída je pro metody, které mohou být nebezpečné. Jakýkoli volající tyto metody musíte provést úplnou kontrolu, abyste měli jistotu, že využití je bezpečná, protože se provede bez procházení zásobníku.
+- **UnsafeNativeMethods** – Tato třída potlačí procházení zásobníku oprávnění pro nespravovaný kód. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> platí pro tuto třídu.) Tato třída je pro metody, které mohou být nebezpečné. Jakýkoli volající tyto metody musíte provést úplnou kontrolu, abyste měli jistotu, že využití je bezpečná, protože se provede bez procházení zásobníku.
 
- Tyto třídy jsou deklarovány jako `internal` (`Friend`, v jazyce Visual Basic) a deklarujete soukromého konstruktoru, aby se zabránilo bránit vytváření nových instancí. Metody v těchto tříd by měla být `static` a `internal` (`Shared` a `Friend` v jazyce Visual Basic).
+  Tyto třídy jsou deklarovány jako `internal` (`Friend`, v jazyce Visual Basic) a deklarujete soukromého konstruktoru, aby se zabránilo bránit vytváření nových instancí. Metody v těchto tříd by měla být `static` a `internal` (`Shared` a `Friend` v jazyce Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  Chcete-li opravit porušení tohoto pravidla, přesuňte metodu na příslušné **NativeMethods** třídy. Pro většinu aplikací, přesun volání nespravovaných kódů do novou třídu s názvem **NativeMethods** je dostatečná.

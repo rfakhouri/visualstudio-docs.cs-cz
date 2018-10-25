@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915773"
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Rozhraní pro konfiguraci
   
  Několik poznámek týkajících se na předchozím obrázku:  
   
--   `IDispatch` je označen jako volitelné v objektu konfigurace. Konkrétně je volitelný, aby rozhraní konfigurace v objektu Procházet.  
+- `IDispatch` je označen jako volitelné v objektu konfigurace. Konkrétně je volitelný, aby rozhraní konfigurace v objektu Procházet.  
   
--   `IVsDebuggableProjectCfg` je označen jako volitelný v objekt konfigurace, ale je vyžadováno pro podporu ladění.  
+- `IVsDebuggableProjectCfg` je označen jako volitelný v objekt konfigurace, ale je vyžadováno pro podporu ladění.  
   
--   `IVsProjectCfg2` je označen jako volitelný v objekt konfigurace, ale je potřeba pro podporu seskupování výstup.  
+- `IVsProjectCfg2` je označen jako volitelný v objekt konfigurace, ale je potřeba pro podporu seskupování výstup.  
   
--   `Config Provider` Objekt je označen jako objekt volitelné, ale možnost je tam, kde na jeho implementaci. Objekt může implementovat na objekt projektu nebo na samostatném objektu.  
+- `Config Provider` Objekt je označen jako objekt volitelné, ale možnost je tam, kde na jeho implementaci. Objekt může implementovat na objekt projektu nebo na samostatném objektu.  
   
--   `IVsCfgProvider2` je potřeba pro podporu platforem a úpravu konfigurace. `IVsCfgProvider` Stačí, pokud není implementace, které tuto funkci.  
+- `IVsCfgProvider2` je potřeba pro podporu platforem a úpravu konfigurace. `IVsCfgProvider` Stačí, pokud není implementace, které tuto funkci.  
   
--   Některé z těchto objektů je vidět na obrázku jako samostatné objekty je možné kombinovat do stejné třídy, kde je to praktické podle požadavků konkrétního návrhu. V dalších tématech v této části ale objekty a rozhraní přidružené k těmto objektům probereme podle scénáře uvedené v diagramu.  
+- Některé z těchto objektů je vidět na obrázku jako samostatné objekty je možné kombinovat do stejné třídy, kde je to praktické podle požadavků konkrétního návrhu. V dalších tématech v této části ale objekty a rozhraní přidružené k těmto objektům probereme podle scénáře uvedené v diagramu.  
   
--   Některé objekty jsou implementovány samostatně. Projekt a sestavení řešení, například probíhat v samostatných vláknech a objekt, který chcete spravovat život sestavení odděleně od objektu popisující konfiguraci sestavení.  
+- Některé objekty jsou implementovány samostatně. Projekt a sestavení řešení, například probíhat v samostatných vláknech a objekt, který chcete spravovat život sestavení odděleně od objektu popisující konfiguraci sestavení.  
   
- Další informace o rozhraní objekt konfigurace a objekt konfigurace poskytovatele rozhraní na předchozím obrázku, naleznete v tématu [objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md). Kromě toho [konfigurace projektu pro sestavení](../../extensibility/internals/project-configuration-for-building.md) poskytuje další informace o rozhraní Configuration Builder a objekt závislosti sestavení a [konfigurace projektu pro správu nasazení](../../extensibility/internals/project-configuration-for-managing-deployment.md) Dále popisuje rozhraní připojené ke konfiguraci nástroje pro nasazení a nasazení objekty závislosti. Nakonec [konfigurace projektu pro výstup](../../extensibility/internals/project-configuration-for-output.md) popisuje rozhraní výstupní skupinu a výstupní objekt a použijte stránky vlastností k zobrazení a nastavit vlastnosti závislé na konfiguraci.  
+  Další informace o rozhraní objekt konfigurace a objekt konfigurace poskytovatele rozhraní na předchozím obrázku, naleznete v tématu [objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md). Kromě toho [konfigurace projektu pro sestavení](../../extensibility/internals/project-configuration-for-building.md) poskytuje další informace o rozhraní Configuration Builder a objekt závislosti sestavení a [konfigurace projektu pro správu nasazení](../../extensibility/internals/project-configuration-for-managing-deployment.md) Dále popisuje rozhraní připojené ke konfiguraci nástroje pro nasazení a nasazení objekty závislosti. Nakonec [konfigurace projektu pro výstup](../../extensibility/internals/project-configuration-for-output.md) popisuje rozhraní výstupní skupinu a výstupní objekt a použijte stránky vlastností k zobrazení a nastavit vlastnosti závislé na konfiguraci.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

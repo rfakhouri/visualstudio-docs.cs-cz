@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895740"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy vrstev: Referenční dokumentace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
   
  Pomocí diagramu vrstev můžete provádět následující úlohy:  
   
--   Komunikaci existující, nebo určený logickou architekturu systému.  
+- Komunikaci existující, nebo určený logickou architekturu systému.  
   
--   Zjištění konfliktu mezi váš stávající kód a zamýšlenou architekturu.  
+- Zjištění konfliktu mezi váš stávající kód a zamýšlenou architekturu.  
   
--   Vizualizujte dopad změn na zamýšlenou architekturu. při refaktorování, aktualizovat nebo vyvíjí vašeho systému.  
+- Vizualizujte dopad změn na zamýšlenou architekturu. při refaktorování, aktualizovat nebo vyvíjí vašeho systému.  
   
--   Posílení zamýšlenou architekturu během vývoje a údržba kódu včetně ověření pomocí vrácení se změnami a operací sestavení.  
+- Posílení zamýšlenou architekturu během vývoje a údržba kódu včetně ověření pomocí vrácení se změnami a operací sestavení.  
   
- Toto téma popisuje elementy, které můžete použít na diagramu vrstvy. Podrobné informace o tom, jak vytvořit a kreslit diagramy vrstev, přečtěte si [diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  Toto téma popisuje elementy, které můžete použít na diagramu vrstvy. Podrobné informace o tom, jak vytvořit a kreslit diagramy vrstev, přečtěte si [diagramy vrstev: pokyny](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Diagramy vrstev čtení  
  ![Elementů v diagramech vrstev](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ V sadě Visual Studio, můžete použít *diagram vrstev* můžete vizualizovat 
 ##  <a name="Explorer"></a> Průzkumník vrstev  
  Můžete propojit s každou vrstvu artefaktů ve vašem řešení, jako jsou projekty, třídy, obory názvů, soubory projektu a jiné části vašeho softwaru. Číslo ve vrstvě zobrazuje počet artefaktů, které jsou spojeny s vrstvou. Ale při čtení počtu artefaktů ve vrstvě mějte na paměti následující:  
   
--   Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.  
+- Pokud vrstva odkazuje na artefakt, který obsahuje jiné artefakty, ale vrstva není propojena přímo s jiným artefaktem, pak číslo obsahuje pouze propojené artefakty. Jiné artefakty jsou však zahrnuty do analýzy během ověřování vrstvy.  
   
-     Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.  
+   Pokud je vrstva například spojena s jedním oborem názvů, pak počet propojených artefaktů je 1, přestože obor názvů obsahuje třídy. Pokud vrstva obsahuje rovněž propojení s jednotlivými třídami v oboru názvů, bude počet zahrnovat propojené třídy.  
   
--   Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.  
+- Pokud například vrstva obsahuje jiné vrstvy, které jsou spojeny s artefakty, pak je vrstva kontejneru také propojena s těmito artefakty, i když číslo vrstvy kontejneru tyto artefakty neobsahuje.  
   
- Další informace o propojení vrstvami a artefakty naleznete v tématu:  
+  Další informace o propojení vrstvami a artefakty naleznete v tématu:  
   
--   [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy vrstev: Pokyny](../modeling/layer-diagrams-guidelines.md)  
   
--   [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Vytváření diagramů vrstev z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Prozkoumat propojených artefaktů  
   

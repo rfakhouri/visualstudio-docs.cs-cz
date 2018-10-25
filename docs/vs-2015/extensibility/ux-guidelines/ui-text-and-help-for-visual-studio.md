@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908235"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Text uživatelského rozhraní a nápovědu k sadě Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303811"
   
  Toto řešení umožňuje čtyři předpoklady, které by mohly způsobit chyby:  
   
--   Tlačítko Nápověda v dialogovém okně je **IDHELP** (9).  
+- Tlačítko Nápověda v dialogovém okně je **IDHELP** (9).  
   
--   Dialogové okno vypadá správně, když je skrytý na tlačítko Nápověda.  
+- Dialogové okno vypadá správně, když je skrytý na tlačítko Nápověda.  
   
--   Dialogové okno nenahrazuje jeho návrat winproc.  
+- Dialogové okno nenahrazuje jeho návrat winproc.  
   
--   Dialogové okno není vložené uvnitř jiného dialogového okna.  
+- Dialogové okno není vložené uvnitř jiného dialogového okna.  
   
- Pokud dialogové okno se nachází v rámci msenv a nepoužívá **VBDialogBoxParam**, prozkoumat využití **VBDialogBoxParam** před implementací vlastní obslužné rutiny.  
+  Pokud dialogové okno se nachází v rámci msenv a nepoužívá **VBDialogBoxParam**, prozkoumat využití **VBDialogBoxParam** před implementací vlastní obslužné rutiny.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Dialogová okna, které jsou vytvořené pomocí jiných balíčků  
  Můžete implementovat svoje vlastní řešení pro dialogová okna, které se nacházejí mimo msenv. Pro třídy sdílené dialogového okna v vašeho balíčku VSPackage zvažte přechod na tlačítko na záhlaví okna nebo implementace obslužné rutiny pro každý dialogového okna. Následující kód představuje kostru implementace k vám pomůžou začít:  

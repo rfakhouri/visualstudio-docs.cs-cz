@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25143390085ec0b4d7ab56e0fef9920d7d5eceb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914541"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definování obslužné rutiny odkazu pracovní položky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,11 +92,11 @@ Můžete vytvořit rozšíření integrace sady Visual Studio, který reaguje, k
 ### <a name="import-the-work-item-namespace"></a>Import Namespace pracovní položky  
  Ve vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu **odkazy**, přidejte odkazy na následující sestavení:  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
--   Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
   
- Ve svém kódu programu importujte následující obory názvů:  
+  Ve svém kódu programu importujte následující obory názvů:  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -282,21 +282,21 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
   
  kde:  
   
--   Identifikátor URI serveru bude:  
+- Identifikátor URI serveru bude:  
   
-     `http://tfServer:8080/tfs/projectCollection`  
+   `http://tfServer:8080/tfs/projectCollection`  
   
-     Je důležité v případě `projectCollection`.  
+   Je důležité v případě `projectCollection`.  
   
--   `RepositoryGuid` můžete získat z připojení TFS:  
+- `RepositoryGuid` můžete získat z připojení TFS:  
   
-    ```csharp  
-    TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
-    RepositoryGuid= tpc.InstanceId;  
+  ```csharp  
+  TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
+  RepositoryGuid= tpc.InstanceId;  
   
-    ```  
+  ```  
   
- Další informace o referencích naleznete v tématu [připojení referenčních řetězců k UML model prvky](../modeling/attach-reference-strings-to-uml-model-elements.md).  
+  Další informace o referencích naleznete v tématu [připojení referenčních řetězců k UML model prvky](../modeling/attach-reference-strings-to-uml-model-elements.md).  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore?displayProperty=fullName>   

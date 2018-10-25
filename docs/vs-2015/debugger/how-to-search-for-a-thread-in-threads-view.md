@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed11edadca2f5e5e521eda824ece5ab735814125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912172"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Postupy: Hledání vlákna v zobrazení vláken
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,24 +30,24 @@ Můžete vyhledat konkrétního vlákna v zobrazení vláken pomocí jeho ID neb
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>Hledání vlákna v zobrazení vláken  
   
-1.  Uspořádat okna tak tohoto nástroje Spy ++ a aktivní [zobrazení vláken](../debugger/threads-view.md) okna jsou viditelné.  
+1. Uspořádat okna tak tohoto nástroje Spy ++ a aktivní [zobrazení vláken](../debugger/threads-view.md) okna jsou viditelné.  
   
-2.  Z **hledání** nabídce zvolte **najít vlákno**.  
+2. Z **hledání** nabídce zvolte **najít vlákno**.  
   
-     [Dialogové okno vlákna hledání](../debugger/thread-search-dialog-box.md) otevře.  
+    [Dialogové okno vlákna hledání](../debugger/thread-search-dialog-box.md) otevře.  
   
-3.  Zadejte ID vlákna nebo řetězce modulu, jako kritéria hledání.  
+3. Zadejte ID vlákna nebo řetězce modulu, jako kritéria hledání.  
   
-4.  Zrušte zaškrtnutí všech polí, u kterých nechcete k určení hodnot.  
+4. Zrušte zaškrtnutí všech polí, u kterých nechcete k určení hodnot.  
   
-    > [!TIP]
-    >  Chcete-li najít všechna vlákna vlastní modul, zrušte **vlákna** textové pole a typ modulu název v **modulu** pole. Pak pomocí **najít další** pokračujte hledání vláken.  
+   > [!TIP]
+   >  Chcete-li najít všechna vlákna vlastní modul, zrušte **vlákna** textové pole a typ modulu název v **modulu** pole. Pak pomocí **najít další** pokračujte hledání vláken.  
   
-5.  Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
+5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-6.  Klikněte na tlačítko **OK**.  
+6. Klikněte na tlačítko **OK**.  
   
- Pokud se najde odpovídající vlákno je zvýrazněn v okně zobrazení vláken.
+   Pokud se najde odpovídající vlákno je zvýrazněn v okně zobrazení vláken.
 
 
 

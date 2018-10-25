@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896325"
 ---
 # <a name="xml-editor"></a>Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236870"
   
 XML Editor je založena na [!INCLUDE[msCoName](../includes/msconame-md.md)] textový Editor sady Visual Studio a zahrnuje další podporu pro jazyky XML. XML Editor obsahuje následující funkce:  
   
--   Kontrola syntaxe XML 1.0.  
+- Kontrola syntaxe XML 1.0.  
   
--   Ověření schématu během psaní.  
+- Ověření schématu během psaní.  
   
--   Podporu fragmenty kódu jazyka XML, včetně generované schématu fragmentů kódu.  
+- Podporu fragmenty kódu jazyka XML, včetně generované schématu fragmentů kódu.  
   
--   Podpora pro definice typu dokumentu (DTD).  
+- Podpora pro definice typu dokumentu (DTD).  
   
--   Podpora pro jazyk (XSD) schématu definice schématu XML.  
+- Podpora pro jazyk (XSD) schématu definice schématu XML.  
   
--   Vytvoření schématu XML z instance dokumentu XML.  
+- Vytvoření schématu XML z instance dokumentu XML.  
   
--   Převod DTD nebo XML-Data Reduced (XDR) schématu do schématu XML.  
+- Převod DTD nebo XML-Data Reduced (XDR) schématu do schématu XML.  
   
--   Kontrola syntaxe XSLT 1.0.  
+- Kontrola syntaxe XSLT 1.0.  
   
--   Zdokumentujte, osnovy, tak, aby prvky můžete rozbalit a sbalit.  
+- Zdokumentujte, osnovy, tak, aby prvky můžete rozbalit a sbalit.  
   
--   Integrace s [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md). To poskytuje hierarchická zobrazení schémat XML.  
+- Integrace s [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md). To poskytuje hierarchická zobrazení schémat XML.  
   
- XML Editor je vyvolána dobře známé přípony, jako jsou XML, XSD, XSL a .config. Také vyvolá se v jakékoli neznámé příponu Pokud soubor je pravděpodobně obsahuje kód XML. Můžete také otevřít libovolný soubor v editoru XML pomocí **otevřít v programu** možnost a Editor souborů XML výběrem ze seznamu.  
+  XML Editor je vyvolána dobře známé přípony, jako jsou XML, XSD, XSL a .config. Také vyvolá se v jakékoli neznámé příponu Pokud soubor je pravděpodobně obsahuje kód XML. Můžete také otevřít libovolný soubor v editoru XML pomocí **otevřít v programu** možnost a Editor souborů XML výběrem ze seznamu.  
   
 ## <a name="express-editions"></a>Edice Express  
  Následující funkce editoru XML nejsou k dispozici v edicích Express aplikace Visual Studio:  

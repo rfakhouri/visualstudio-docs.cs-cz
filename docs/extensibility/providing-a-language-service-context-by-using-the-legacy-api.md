@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9daef780847da99463811a9c10399102dc7b808
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909955"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Poskytuje kontext služby jazyka pomocí starší verze rozhraní API
 Existují dvě možnosti pro službu jazyka poskytnout uživatelům pomocí kontextu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor: Zadejte text značky kontextu, nebo zadejte všechny místní uživatele. Rozdíly mezi jednotlivými jsou uvedeny zde.  
@@ -35,20 +35,20 @@ Existují dvě možnosti pro službu jazyka poskytnout uživatelům pomocí kont
   
  Existují dva různé způsoby, jak implementovat `IVsLanguageContextProvider`:  
   
--   Zadejte klíčové slovo do kontejneru a kontext dat  
+- Zadejte klíčové slovo do kontejneru a kontext dat  
   
-     Při volání editor k aktualizaci kontejneru kontextu, předejte příslušná klíčová slova a atributy a pak se vraťte `S_OK`. Tuto hodnotu nastaví editor zachovat – klíčové slovo a atribut kontextu, spíše než poskytují klíčové slovo na pozici kurzoru do kontejneru objektů a dat v kontextu.  
+   Při volání editor k aktualizaci kontejneru kontextu, předejte příslušná klíčová slova a atributy a pak se vraťte `S_OK`. Tuto hodnotu nastaví editor zachovat – klíčové slovo a atribut kontextu, spíše než poskytují klíčové slovo na pozici kurzoru do kontejneru objektů a dat v kontextu.  
   
--   Získat klíčové slovo from – klíčové slovo na pozici kurzoru  
+- Získat klíčové slovo from – klíčové slovo na pozici kurzoru  
   
-     Při volání editor k aktualizaci kontejneru a kontext dat, předejte příslušné atributy a pak se vraťte `E_FAIL`. Tuto hodnotu nastaví editor zachovat svoje atributy v kontejneru a kontextu, ale aktualizovat kontejner objektů a dat souvislosti s klíčovým slovem na pozici kurzoru.  
+   Při volání editor k aktualizaci kontejneru a kontext dat, předejte příslušné atributy a pak se vraťte `E_FAIL`. Tuto hodnotu nastaví editor zachovat svoje atributy v kontejneru a kontextu, ale aktualizovat kontejner objektů a dat souvislosti s klíčovým slovem na pozici kurzoru.  
   
- Následující diagram ukazuje, jak se poskytuje kontext pro službu jazyka, který implementuje `IVsLanguageContextProvider`.  
+  Následující diagram ukazuje, jak se poskytuje kontext pro službu jazyka, který implementuje `IVsLanguageContextProvider`.  
   
- ![Obrázek LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-Kontext pro služby jazyka  
+  ![Obrázek LangServiceImplementation2](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  Kontext pro služby jazyka  
   
- Jak je vidět v diagramu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní text editor má kontejner kontext k němu připojená. Tento kontejner objektů a dat kontextu odkazuje na tři samostatné kontext kontejnery objektů a dat: služba jazyka, výchozí editor a text značky. Na jazykové služby a text značky kontext kontejnery objektů a dat obsahovat atributy a klíčová slova jazyka služby, pokud <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> rozhraní je implementováno a text značky Pokud <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> rozhraní je implementováno. Pokud jste neimplementuje některou z těchto rozhraní, editor poskytuje kontext pro klíčové slovo na pozici kurzoru v kontejneru a výchozí editor kontext.  
+  Jak je vidět v diagramu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní text editor má kontejner kontext k němu připojená. Tento kontejner objektů a dat kontextu odkazuje na tři samostatné kontext kontejnery objektů a dat: služba jazyka, výchozí editor a text značky. Na jazykové služby a text značky kontext kontejnery objektů a dat obsahovat atributy a klíčová slova jazyka služby, pokud <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> rozhraní je implementováno a text značky Pokud <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> rozhraní je implementováno. Pokud jste neimplementuje některou z těchto rozhraní, editor poskytuje kontext pro klíčové slovo na pozici kurzoru v kontejneru a výchozí editor kontext.  
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>Kontext pokyny pro editorů a návrhářů  
  Návrháři a editory, musíte zadat obecné – klíčové slovo pro editoru nebo návrháře oken. To se provádí tak, aby tématu nápovědy obecný, ale vhodné, se zobrazí pro Návrhář nebo editor, když uživatel stiskne **F1**. Editor musí kromě toho zadejte aktuální – klíčové slovo na pozici kurzoru nebo zadat podmínku klíče na základě aktuálního výběru. To se provádí, aby odkazovala na téma nápovědy pro text nebo prvek uživatelského rozhraní nebo vybrané zobrazí, když uživatel stiskne **F1**. Návrhář poskytuje kontext pro položky vybrané v návrháři, jako je například tlačítko na formuláři. Návrháři a editory musí také připojit ke službě jazyka jak je uvedeno v [Základy služby starší verze jazyka](../extensibility/internals/legacy-language-service-essentials.md).

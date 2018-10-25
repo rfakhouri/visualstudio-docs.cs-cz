@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894466"
 ---
 # <a name="navigate-code"></a>Vyhledání kódu
 
@@ -65,10 +65,10 @@ Chcete-li skrýt navigační panel, změňte **navigační panel** možnost **v�
 
 Vyhledá všechny odkazy na vybraný prvek v řešení. Můžete to zkontrolovat možné vedlejší účinky z velkých refaktoring, nebo k ověření kódu "neaktivní". Stisknutím klávesy **F8** pro přechod mezi výsledky. Další informace najdete v tématu [najít odkazy ve vašem kódu](finding-references.md).
 
-Vstup        | Funkce
+Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Umístit textový kurzor někam název typu a stiskněte klávesu **Shift**+**F12**
-**Myši**    | Vyberte **najít všechny odkazy** v místní nabídce
+**Myši** | Vyberte **najít všechny odkazy** v místní nabídce
 
 ## <a name="reference-highlighting"></a>Zvýraznění odkazů
 
@@ -104,37 +104,37 @@ Další informace o těchto příkazech v [vyhledávání kódu pomocí příkaz
 
 Přejít k definici přejdete na definici vybraného prvku. Další informace najdete v tématu [přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md).
 
-Vstup        | Funkce
+Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Umístit textový kurzor někam název typu a stiskněte klávesu **F12**
-**Myši**    | Klikněte pravým tlačítkem na název typu a vyberte **přejít k definici** nebo stiskněte klávesu **Ctrl** a klikněte na název typu (nové sady Visual Studio 2017 verze 15.4)
+**Myši** | Klikněte pravým tlačítkem na název typu a vyberte **přejít k definici** nebo stiskněte klávesu **Ctrl** a klikněte na název typu (nové sady Visual Studio 2017 verze 15.4)
 
 ## <a name="peek-definition"></a>Náhled definice
 
 Náhled definice zobrazí definici vybraného prvku v okně bez navigaci pryč z aktuální umístění v editoru kódu. Další informace najdete v tématu [postupy: zobrazení a úpravy kódu s použitím definice operace Peek](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) a [přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md).
 
-Vstup        | Funkce
+Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Umístit textový kurzor někam název typu a stiskněte klávesu **Alt**+**F12**
-**Myši**    | Klikněte pravým tlačítkem na název typu a vyberte **funkce Náhled definice** nebo stiskněte klávesu **Ctrl** a klikněte na název typu (Pokud máte **Otevřít definici v zobrazení náhledu** zaškrtnutým políčkem)
+**Myši** | Klikněte pravým tlačítkem na název typu a vyberte **funkce Náhled definice** nebo stiskněte klávesu **Ctrl** a klikněte na název typu (Pokud máte **Otevřít definici v zobrazení náhledu** zaškrtnutým políčkem)
 
 ## <a name="go-to-implementation"></a>Přejít k implementaci
 
 Přejít k implementaci můžete přejít ze základní třídy nebo typ, který jeho implementace. Pokud existuje víc implementací, uvidíte je uvedené v **výsledky hledáni symbolu** okno:
 
-Vstup        | Funkce
+Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Umístit textový kurzor někam název typu a stiskněte klávesu **Ctrl**+**F12**
-**Myši**    | Klikněte pravým tlačítkem na název typu a vyberte **přejít k implementaci**
+**Myši** | Klikněte pravým tlačítkem na název typu a vyberte **přejít k implementaci**
 
 ## <a name="call-hierarchy"></a>Hierarchie volání
 
 Můžete zobrazit volání do a z metody v [hierarchie volání okno](../ide/reference/call-hierarchy.md):
 
-Vstup        | Funkce
+Vstup | Funkce
 ------------ | ---
 **Klávesnice** | Umístit textový kurzor někam název typu a stiskněte klávesu **Ctrl**+**K**, **Ctrl**+**T**
-**Myši**    | Klikněte pravým tlačítkem na název člena a vyberte **zobrazit hierarchii volání**
+**Myši** | Klikněte pravým tlačítkem na název člena a vyberte **zobrazit hierarchii volání**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Další metodou a metodou předchozí příkazy (Visual Basic)
 

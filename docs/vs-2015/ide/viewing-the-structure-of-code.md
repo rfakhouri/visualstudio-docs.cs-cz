@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901642"
 ---
 # <a name="viewing-the-structure-of-code"></a>Zobrazení struktury kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Hierarchie volání – okno
   
  Můžete filtrovat, co byste chtěli zobrazit **prohlížeče objektů**. Pomocí rozevíracího seznamu v horní části okna, můžete zvolit z následujících možností:  
   
--   Jakékoli rozhraní .NET Framework  
+- Jakékoli rozhraní .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   Aktivní řešení  
+- Aktivní řešení  
   
--   Vlastní sada komponent  
+- Vlastní sada komponent  
   
- Vlastní komponenty mohou zahrnovat spustitelné soubory spravovaného kódu, sestavení knihovny, knihovny typů a souborů .ocx. Není možné přidat vlastní komponenty C++. Vlastní nastavení se ukládají do adresáře aplikace Visual Studio uživatele, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+  Vlastní komponenty mohou zahrnovat spustitelné soubory spravovaného kódu, sestavení knihovny, knihovny typů a souborů .ocx. Není možné přidat vlastní komponenty C++. Vlastní nastavení se ukládají do adresáře aplikace Visual Studio uživatele, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
   
- Levém podokně **prohlížeče objektů** zobrazuje fyzické kontejnery, jako jsou komponenty rozhraní .NET Framework a modelu COM. Můžete rozbalit uzly kontejneru pro zobrazení, které obsahují obory názvů a potom rozbalte obory názvů do zobrazení typů, které obsahují. Když vyberete typ, jeho členy (jako je například vlastnosti a metody) jsou uvedeny v pravém podokně. Pravém dolním podokně zobrazí podrobné informace o vybrané položce.  
+  Levém podokně **prohlížeče objektů** zobrazuje fyzické kontejnery, jako jsou komponenty rozhraní .NET Framework a modelu COM. Můžete rozbalit uzly kontejneru pro zobrazení, které obsahují obory názvů a potom rozbalte obory názvů do zobrazení typů, které obsahují. Když vyberete typ, jeho členy (jako je například vlastnosti a metody) jsou uvedeny v pravém podokně. Pravém dolním podokně zobrazí podrobné informace o vybrané položce.  
   
- Konkrétní položku můžete vyhledat pomocí **hledání** pole v horní části okna. Hledání jsou malá a velká písmena. V levém podokně se zobrazí výsledky hledání. Vymazat hledání, zvolte **hledání vymazání** (tlačítko vedle X) **hledání** pole.  
+  Konkrétní položku můžete vyhledat pomocí **hledání** pole v horní části okna. Hledání jsou malá a velká písmena. V levém podokně se zobrazí výsledky hledání. Vymazat hledání, zvolte **hledání vymazání** (tlačítko vedle X) **hledání** pole.  
   
- **Prohlížeče objektů** sleduje provedené výběry kde se můžete dostat mimo váš výběr pomocí **vpřed** a **zpět** tlačítka na panelu nástrojů.  
+  **Prohlížeče objektů** sleduje provedené výběry kde se můžete dostat mimo váš výběr pomocí **vpřed** a **zpět** tlačítka na panelu nástrojů.  
   
- Můžete použít **prohlížeče objektů** výběrem položky (sestavení, oboru názvů, typ nebo člen) a zvolením přidat odkaz na sestavení k otevřenému řešení **přidat odkaz** tlačítko na panelu nástrojů.  
+  Můžete použít **prohlížeče objektů** výběrem položky (sestavení, oboru názvů, typ nebo člen) a zvolením přidat odkaz na sestavení k otevřenému řešení **přidat odkaz** tlačítko na panelu nástrojů.  
   
 ### <a name="object-browser-settings"></a>Nastavení prohlížeče objektů  
  S použitím **nastavení prohlížeče objektů** tlačítko na panelu nástrojů můžete určit jednu z následujících zobrazení.  

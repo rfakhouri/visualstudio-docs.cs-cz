@@ -1,5 +1,5 @@
 ---
-title: Cvwriteflag – funkce | Microsoft Docs
+title: Cvwriteflag – funkce | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 371be943dc062c5c3b5aac7f59493aa5f4f53002
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897145"
 ---
 # <a name="cvwriteflag-function"></a>Cvwriteflag – funkce
-Zapíše příznak vizualizér souběžnosti trasovacího souboru.  
+Příznak, který zapisuje do souboru trasování vizualizátoru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -72,23 +72,23 @@ HRESULT CvWriteFlagExVA(
  Kategorie.  
   
  `level`  
- Úroveň význam.  
+ Úroveň důležitosti.  
   
  `pMarkerSeries`  
- Kontext řady platný značky. Nemůže mít hodnotu NULL.  
+ Platné značky řady kontextu. Nemůže mít hodnotu NULL.  
   
  `pMessage`  
- Řetězec formátu zpráv. Nemůže mít hodnotu NULL.  
+ Řetězec formátu zprávy. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, pokud zpráva je úspěšně zapsána. Kód chyby v případě, že byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  
   
  **Unicode:** cvwriteflagexw –, cvwriteflagexvw –  
   
- **ANSI:** cvwriteflagexa –, cvwriteflagexva –  
+ <strong>ANSI:</strong>cvwriteflagexa –, cvwriteflagexva –  
   
 ## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

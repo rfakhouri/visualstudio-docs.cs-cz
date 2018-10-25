@@ -18,12 +18,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912887"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Návod: Analýza spravovaného kódu na výskyt závad v kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,81 +98,81 @@ V tomto podrobném návodu analyzovat spravovaný projekt závad v kódu pomocí
   
 4.  Chcete-li opravit upozornění použijte následující:  
   
--   [CA1014: Označte sestavení pomocí atributu CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'ukázka' by měla být označena CLSCompliantAttribute a jeho hodnota by měla mít hodnotu true.  
+- [CA1014: Označte sestavení pomocí atributu CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 'ukázka' by měla být označena CLSCompliantAttribute a jeho hodnota by měla mít hodnotu true.  
   
-    -   Přidejte kód `using``System;` soubor AssemblyInfo.cs.  
+  -   Přidejte kód `using``System;` soubor AssemblyInfo.cs.  
   
-         V dalším kroku přidejte kód `[assembly: CLSCompliant(true)]` na konec souboru AssemblyInfo.cs.  
+       V dalším kroku přidejte kód `[assembly: CLSCompliant(true)]` na konec souboru AssemblyInfo.cs.  
   
-         Sestavte projekt znovu.  
+       Sestavte projekt znovu.  
   
--   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné demo(String)  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné demo(String)  
   
-    -   Přidejte konstruktor `public demo (String s) : base(s) { }` do třídy `demo`.  
+  -   Přidejte konstruktor `public demo (String s) : base(s) { }` do třídy `demo`.  
   
--   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné ukázkové (String, výjimka)  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné ukázkové (String, výjimka)  
   
-    -   Přidejte konstruktor `public demo (String s, Exception e) : base(s, e) { }` do třídy `demo`.  
+  -   Přidejte konstruktor `public demo (String s, Exception e) : base(s, e) { }` do třídy `demo`.  
   
--   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: chráněné ukázka (SerializationInfo, StreamingContext)  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: chráněné ukázka (SerializationInfo, StreamingContext)  
   
-    -   Přidejte kód `using System.Runtime.Serialization;` na začátek souboru Class1.cs.  
+  -   Přidejte kód `using System.Runtime.Serialization;` na začátek souboru Class1.cs.  
   
-         V dalším kroku přidejte konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
+       V dalším kroku přidejte konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
   
-         Sestavte projekt znovu.  
+       Sestavte projekt znovu.  
   
--   [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné demo()  
+- [CA1032: Implementujte standardní konstruktory výjimky](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: přidejte následující konstruktor k této třídě: veřejné demo()  
   
-    -   Přidejte konstruktor `public demo () : base() { }` do třídy `demo` **.**  
+  -   Přidejte konstruktor `public demo () : base() { }` do třídy `demo` **.**  
   
-         Sestavte projekt znovu.  
+       Sestavte projekt znovu.  
   
--   [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých oboru názvů názvu 'testCode' pomocí změny na "TestCode".  
+- [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých oboru názvů názvu 'testCode' pomocí změny na "TestCode".  
   
-    -   Změna velikosti písmen názvů `testCode` k `TestCode`.  
+  -   Změna velikosti písmen názvů `testCode` k `TestCode`.  
   
--   [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých název typu 'ukázku"změnou"Ukázka".  
+- [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých název typu 'ukázku"změnou"Ukázka".  
   
-    -   Název členu, který chcete změnit `Demo`.  
+  -   Název členu, který chcete změnit `Demo`.  
   
--   [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých název člena 'item' pomocí změny na "Položka".  
+- [CA1709: Identifikátory by měly být správně formátováno](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Opravte použití malých a velkých název člena 'item' pomocí změny na "Položka".  
   
-    -   Název členu, který chcete změnit `Item`.  
+  -   Název členu, který chcete změnit `Item`.  
   
--   [CA1710: Identifikátory by měly mít správnou příponu](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: přejmenování 'testCode.demo"tak, že končí 'Exception'.  
+- [CA1710: Identifikátory by měly mít správnou příponu](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: přejmenování 'testCode.demo"tak, že končí 'Exception'.  
   
-    -   Změnit název třídy a jejích konstruktorů k `DemoException`.  
+  -   Změnit název třídy a jejích konstruktorů k `DemoException`.  
   
--   [CA2210: Sestavení by měly mít platné silné názvy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): "ManagedDemo" podepsat klíče silného názvu.  
+- [CA2210: Sestavení by měly mít platné silné názvy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): "ManagedDemo" podepsat klíče silného názvu.  
   
-    -   Na **projektu** nabídky, klikněte na tlačítko **ManagedDemo vlastnosti**.  
+  -   Na **projektu** nabídky, klikněte na tlačítko **ManagedDemo vlastnosti**.  
   
-         Zobrazí vlastnosti projektu.  
+       Zobrazí vlastnosti projektu.  
   
-         Klikněte na tlačítko **podepisování**.  
+       Klikněte na tlačítko **podepisování**.  
   
-         Vyberte **podepsat sestavení** zaškrtávací políčko.  
+       Vyberte **podepsat sestavení** zaškrtávací políčko.  
   
-         V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >**.  
+       V **vybrat soubor klíče název řetězce** seznamu vyberte  **\<nový … >**.  
   
-         **Vytvořit klíč se silným názvem** zobrazí se dialogové okno.  
+       **Vytvořit klíč se silným názvem** zobrazí se dialogové okno.  
   
-         V **název souboru klíče**, zadejte TestKey.  
+       V **název souboru klíče**, zadejte TestKey.  
   
-         Zadejte heslo a potom klikněte na tlačítko **OK**.  
+       Zadejte heslo a potom klikněte na tlačítko **OK**.  
   
-         Na **souboru** nabídky, klikněte na tlačítko **uložit vybrané položky**a pak zavřete stránku vlastností.  
+       Na **souboru** nabídky, klikněte na tlačítko **uložit vybrané položky**a pak zavřete stránku vlastností.  
   
-         Sestavte projekt znovu.  
+       Sestavte projekt znovu.  
   
--   [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Přidejte atribut [Serializable] na typ 'ukázka' protože tento typ implementuje ISerializable.  
+- [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Přidejte atribut [Serializable] na typ 'ukázka' protože tento typ implementuje ISerializable.  
   
-    -   Přidat `[Serializable ()]` atribut třídy `demo`.  
+  -   Přidat `[Serializable ()]` atribut třídy `demo`.  
   
-         Sestavte projekt znovu.  
+       Sestavte projekt znovu.  
   
- Po dokončení změny souboru Class1.cs by měl vypadat nějak takto:  
+  Po dokončení změny souboru Class1.cs by měl vypadat nějak takto:  
   
 ```  
 //CodeAnalysisManagedDemo  
@@ -202,17 +202,17 @@ namespace TestCode
   
 #### <a name="to-exclude-code-defect-warnings"></a>Chcete-li vyloučit upozornění vad kódu  
   
-1.  Pro každý zbývající upozornění postupujte takto:  
+1. Pro každý zbývající upozornění postupujte takto:  
   
-    1.  V okně analýzy kódu vyberte upozornění.  
+   1. V okně analýzy kódu vyberte upozornění.  
   
-    2.  Zvolte **akce**, klikněte na tlačítko **potlačit zprávu**a klikněte na tlačítko **v souboru potlačení projektu**.  
+   2. Zvolte **akce**, klikněte na tlačítko **potlačit zprávu**a klikněte na tlačítko **v souboru potlačení projektu**.  
   
-     Další informace najdete v tématu [postupy: potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Další informace najdete v tématu [postupy: potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
-2.  Sestavte projekt znovu.  
+2. Sestavte projekt znovu.  
   
-     Projekt se sestaví bez žádná upozornění ani chyby.
+    Projekt se sestaví bez žádná upozornění ani chyby.
 
 
 
