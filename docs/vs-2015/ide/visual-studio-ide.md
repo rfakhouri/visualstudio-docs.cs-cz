@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852710"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio – sada IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Pokud chcete zjistit, o nových funkcích v sadě Visual Studio 2015, najdete v 
 
  Textový editor, je vysoce interaktivní (Pokud chcete, aby se) s mnoha produktivitu funkcí, které vám pomůžou pište lepší kód rychleji. Funkce se liší podle jazyka a není nutné použít některý z nich (typu "Editor" v Snadné spuštění) k zapnutí nebo vypnutí funkce: některé běžné pro zvýšení produktivity jsou:
 
-1.  [Refaktoring](../ide/refactoring-in-visual-studio.md) zahrnuje operace, jako jsou inteligentní přejmenováním proměnné, Přesun vybrané řádky kódu do samostatné funkce, přesunutí kódu do jiných umístění, redordering parametry funkce a další.
+1. [Refaktoring](../ide/refactoring-in-visual-studio.md) zahrnuje operace, jako jsou inteligentní přejmenováním proměnné, Přesun vybrané řádky kódu do samostatné funkce, přesunutí kódu do jiných umístění, redordering parametry funkce a další.
 
-2.  *Technologie IntelliSense* se o zastřešující pojem pro sadu oblíbených funkcí, které zobrazí typ informace o kódu přímo v editoru a v některých případech se zapisují malé části kódu za vás. Je to jako mít základní dokumentaci vložené v editoru, což vám ušetří nebudou muset vyhledat informace o typu v okně samostatného nápovědy. Funkce technologie IntelliSense se liší podle jazyka. Další informace najdete v tématu [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md), [specifické pro jazyk Visual Basic IntelliSense ](../ide/visual-basic-specific-intellisense.md). Některé funkce technologie IntelliSense při práci na následujícím obrázku:
+2. *Technologie IntelliSense* se o zastřešující pojem pro sadu oblíbených funkcí, které zobrazí typ informace o kódu přímo v editoru a v některých případech se zapisují malé části kódu za vás. Je to jako mít základní dokumentaci vložené v editoru, což vám ušetří nebudou muset vyhledat informace o typu v okně samostatného nápovědy. Funkce technologie IntelliSense se liší podle jazyka. Další informace najdete v tématu [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [technologie IntelliSense jazyka JavaScript](../ide/javascript-intellisense.md), [specifické pro jazyk Visual Basic IntelliSense ](../ide/visual-basic-specific-intellisense.md). Některé funkce technologie IntelliSense při práci na následujícím obrázku:
 
-     ![Seznam členů sady Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Seznam členů sady Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  **Podtržení vlnovkou** vás upozorní na chyby nebo potenciální problémy v kódu v reálném čase při psaní, což vám umožní vyřešit okamžitě bez čekání na chybu během doby kompilace a spuštění zjišťování. Pokud najedete myší vlnovka, zobrazí se další informace o této chybě. Žárovky může také zobrazit na levém okraji s návrhy k vyřešení chyby. Další informace najdete v tématu [rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md).
+3. **Podtržení vlnovkou** vás upozorní na chyby nebo potenciální problémy v kódu v reálném čase při psaní, což vám umožní vyřešit okamžitě bez čekání na chybu během doby kompilace a spuštění zjišťování. Pokud najedete myší vlnovka, zobrazí se další informace o této chybě. Žárovky může také zobrazit na levém okraji s návrhy k vyřešení chyby. Další informace najdete v tématu [rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md).
 
-     ![Žárovka s najedete myší](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Žárovka s najedete myší](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [Záložky](../ide/setting-bookmarks-in-code.md) vám umožní rychle přejít na konkrétní řádky v souborech, které jsou aktivně pracuje na.
+4. [Záložky](../ide/setting-bookmarks-in-code.md) vám umožní rychle přejít na konkrétní řádky v souborech, které jsou aktivně pracuje na.
 
-5.  [Hierarchie volání](../ide/reference/call-hierarchy.md) okno může být vyvolána v místní nabídce editoru textu k zobrazení metody, které zavolat a volat jazykem, metoda za blikajícím kurzorem.
+5. [Hierarchie volání](../ide/reference/call-hierarchy.md) okno může být vyvolána v místní nabídce editoru textu k zobrazení metody, které zavolat a volat jazykem, metoda za blikajícím kurzorem.
 
-6.  **Code Lens** umožňuje najít odkazy a změny kódu, propojené chyby, pracovní položky, revize kódu a testy jednotek, to vše bez opuštění editoru. Další informace najdete v tématu [nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md).
+6. **Code Lens** umožňuje najít odkazy a změny kódu, propojené chyby, pracovní položky, revize kódu a testy jednotek, to vše bez opuštění editoru. Další informace najdete v tématu [nalezení změn kódu a další historie](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-7.  **Definice operace Peek** okno zobrazí vložené definice metody nebo typ bez navigaci pryč z aktuální kontext. Toto okno teď funguje i pro XAML, příliš.
+7. **Definice operace Peek** okno zobrazí vložené definice metody nebo typ bez navigaci pryč z aktuální kontext. Toto okno teď funguje i pro XAML, příliš.
 
-8.  **Přejít k definici** možnost místní nabídky přejít přímo na místě, kde je definována funkce nebo objektu. Další příkazy pro navigaci jsou k dispozici také kliknutím pravým tlačítkem myši v editoru.
+8. **Přejít k definici** možnost místní nabídky přejít přímo na místě, kde je definována funkce nebo objektu. Další příkazy pro navigaci jsou k dispozici také kliknutím pravým tlačítkem myši v editoru.
 
 9. Související nástroje [prohlížeče objektů](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), umožňuje vám umožní zkontrolovat .NET nebo prostředí Windows Runtime sestavení ve vašem systému chcete podívat, jaké jsou typy obsahují a jaké metody a vlastnosti obsahují tyto typy.
 
      ![Prohlížeč objektů prohlížeči a zobrazí objekt System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
- Většina položek v nabídce Úpravy a zobrazení nabídky se vztahuje k editoru kódu nějakým způsobem. Další informace o editoru, najdete v části [psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md) a [úpravy kódu](https://www.visualstudio.com/features/ide-vs).
+   Většina položek v nabídce Úpravy a zobrazení nabídky se vztahuje k editoru kódu nějakým způsobem. Další informace o editoru, najdete v části [psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md) a [úpravy kódu](https://www.visualstudio.com/features/ide-vs).
 
 ## <a name="compiling-and-building-your-code"></a>Kompilování a sestavování svého kódu
 

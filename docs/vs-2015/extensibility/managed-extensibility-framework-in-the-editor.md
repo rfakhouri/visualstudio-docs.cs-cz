@@ -15,12 +15,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 65e3c544fc5e571368afb9872e6e13fda128e79a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877579"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Rozhraní Managed Extensibility Framework v editoru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Editor je sestavena pomocí Managed Extensibility Framework (MEF) komponenty. M�
 ### <a name="component-parts-and-composition-containers"></a>Součásti a složení kontejnery  
  Součást je třída nebo člen třídy, která můžete provést jednu (nebo obojí) z následujících akcí:  
   
--   Využívat jiné komponenty  
+- Využívat jiné komponenty  
   
--   Využívat jiné komponenty  
+- Využívat jiné komponenty  
   
- Představte si třeba nákupní aplikaci, která má komponentu pořadí položka, která závisí na produktu dostupnost dat inventáře komponenta skladu. V podmínkách MEF, součást inventáře můžete *exportovat* produktu dostupnost dat a může část položky pořadí *importovat* data. Část položky pořadí a části inventáře nemusíte vědět o sobě navzájem; *kontejner kompozic rozhraní MEF* (získaný od hostitele aplikace) je zodpovědná za údržbu sadu exporty a řešení exportuje a importuje.  
+  Představte si třeba nákupní aplikaci, která má komponentu pořadí položka, která závisí na produktu dostupnost dat inventáře komponenta skladu. V podmínkách MEF, součást inventáře můžete *exportovat* produktu dostupnost dat a může část položky pořadí *importovat* data. Část položky pořadí a části inventáře nemusíte vědět o sobě navzájem; *kontejner kompozic rozhraní MEF* (získaný od hostitele aplikace) je zodpovědná za údržbu sadu exporty a řešení exportuje a importuje.  
   
- Kontejner kompozic <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, obvykle vlastní hostitel. Kontejner kompozic udržuje *katalogu* exportované součásti.  
+  Kontejner kompozic <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, obvykle vlastní hostitel. Kontejner kompozic udržuje *katalogu* exportované součásti.  
   
 ### <a name="exporting-and-importing-component-parts"></a>Export a import součástí  
  Všechny funkce, můžete exportovat, tak dlouho, dokud je implementovaný jako veřejnou třídu nebo veřejného člena třídy (vlastnosti nebo metody). Není nutné odvozovat vaše součást z <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Místo toho je nutné přidat <xref:System.ComponentModel.Composition.ExportAttribute> atribut pro třídu nebo člen třídy, která chcete exportovat. Tento atribut určuje *kontraktu* které jiné součásti můžete importovat část vaší funkce.  

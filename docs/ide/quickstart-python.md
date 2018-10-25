@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131983"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877111"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý start: Vytvoření první webové aplikace v Pythonu pomocí sady Visual Studio
 
@@ -124,19 +124,19 @@ Nyní jste připraveni přidat bitového kódu implementovat minimální webové
 
     ![Nastavení spouštěcího souboru pro projekt v Průzkumníku řešení](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**. Vyberte **ladění** kartu a nastavit **číslo portu** vlastnost `4449`. Tento krok zajistí, že Visual Studio spustí prohlížeč s `localhost:4449` tak, aby odpovídaly `app.run` argumenty v kódu.
+2. Klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**. Vyberte **ladění** kartu a nastavit **číslo portu** vlastnost `4449`. Tento krok zajistí, že Visual Studio spustí prohlížeč s `localhost:4449` tak, aby odpovídaly `app.run` argumenty v kódu.
 
-1. Vyberte **ladit > Spustit bez ladění** (**Ctrl**+**F5**), který uloží změny do souborů aplikace a spustí se.
+3. Vyberte **ladit > Spustit bez ladění** (**Ctrl**+**F5**), který uloží změny do souborů aplikace a spustí se.
 
-1. Zobrazí se okno příkazového řádku se zprávou "* používané https://localhost:4449/", a mělo by se otevřít okno prohlížeče `localhost:4449` tam, kde se zobrazí zpráva "Hello, Python!" Požadavek na získání se zobrazí také v příkazovém okně se stavem 200.
+4. Zobrazí se okno příkazového řádku se zprávou "* používané <https://localhost:4449/>", a mělo by se otevřít okno prohlížeče `localhost:4449` tam, kde se zobrazí zpráva "Hello, Python!" Požadavek na získání se zobrazí také v příkazovém okně se stavem 200.
 
     Pokud se prohlížeč nespustí automaticky, spustit libovolný prohlížeč a přejděte do `localhost:4449`.
 
     Pokud se zobrazí pouze Python interaktivního prostředí v příkazovém okně nebo na obrazovce stručně bliká tohoto okna, ujistěte se, že jste nastavili *app.py* jako spouštěcí soubor v kroku 1 výše.
 
-1. Přejděte do `localhost:4449/hello` otestujte, jestli dekoratér pro `/hello` prostředku taky funguje. Požadavek na získání znovu, zobrazí se v příkazovém okně se stavem 200. Nebojte se pokusí zjistit, že v příkazovém okně zobrazí stavový kód 404 některé další také adresu URL.
+5. Přejděte do `localhost:4449/hello` otestujte, jestli dekoratér pro `/hello` prostředku taky funguje. Požadavek na získání znovu, zobrazí se v příkazovém okně se stavem 200. Nebojte se pokusí zjistit, že v příkazovém okně zobrazí stavový kód 404 některé další také adresu URL.
 
-1. Zavřete příkazové okno a zastavte tak aplikace a potom zavřete okno prohlížeče.
+6. Zavřete příkazové okno a zastavte tak aplikace a potom zavřete okno prohlížeče.
 
 **Otázka: Jaký je rozdíl mezi příkaz Spustit bez ladění a spustit ladění?**
 

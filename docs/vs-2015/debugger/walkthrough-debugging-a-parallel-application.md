@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823655"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Návod: Ladění paralelní aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-create-the-sample-project"></a>K vytvoření ukázkového projektu  
   
-1.  V sadě Visual Studio na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
+1. V sadě Visual Studio na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
   
-2.  V **nainstalované šablony** podokně, vyberte buď Visual C#, Visual Basic nebo Visual C++. Pro spravované jazyky, ujistěte se, že [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] se zobrazí v seznamu rozhraní.  
+2. V **nainstalované šablony** podokně, vyberte buď Visual C#, Visual Basic nebo Visual C++. Pro spravované jazyky, ujistěte se, že [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] se zobrazí v seznamu rozhraní.  
   
-3.  Vyberte **konzolovou aplikaci** a potom klikněte na tlačítko **OK**. Zůstat v konfiguraci ladění, což je výchozí hodnota.  
+3. Vyberte **konzolovou aplikaci** a potom klikněte na tlačítko **OK**. Zůstat v konfiguraci ladění, což je výchozí hodnota.  
   
-4.  Otevřete soubor kódu .cpp, .cs nebo .vb v projektu. Odstraňte její obsah, chcete-li vytvořit prázdný soubor kódu.  
+4. Otevřete soubor kódu .cpp, .cs nebo .vb v projektu. Odstraňte její obsah, chcete-li vytvořit prázdný soubor kódu.  
   
-5.  Vložte následující kód pro zvolený jazyk do souboru prázdný kód.  
+5. Vložte následující kód pro zvolený jazyk do souboru prázdný kód.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Na **souboru** nabídky, klikněte na tlačítko **Uložit vše**.  
+6. Na **souboru** nabídky, klikněte na tlačítko **Uložit vše**.  
   
-2.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.  
+7. Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.  
   
-     Všimněte si, že existují čtyři volání `Debugger.Break` (`DebugBreak` v C++ ukázce) proto není potřeba vložit zarážky; jednoduše spuštěním aplikace způsobí jeho přerušení v ladicím programu až čtyřikrát.  
+    Všimněte si, že existují čtyři volání `Debugger.Break` (`DebugBreak` v C++ ukázce) proto není potřeba vložit zarážky; jednoduše spuštěním aplikace způsobí jeho přerušení v ladicím programu až čtyřikrát.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Použití paralelních zásobníků okna: zobrazení vlákna  
  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**. Počkejte první zarážce.  
@@ -153,33 +153,33 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Chcete-li pokračovat v provádění, dokud třetí zarážku  
   
-1.  Provádění pokračovat, dokud třetí dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
+1. Provádění pokračovat, dokud třetí dosažení zarážky, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
   
-     Při více vláken jsou ve stejné metody, ale nebyla na začátek zásobníku volání metody, metoda se zobrazí v různých polí. Příklad na aktuální zarážce je S.L, který v sobě obsahuje tři vlákna a zobrazí se tří polí. Dvakrát klikněte na panel j.  
+    Při více vláken jsou ve stejné metody, ale nebyla na začátek zásobníku volání metody, metoda se zobrazí v různých polí. Příklad na aktuální zarážce je S.L, který v sobě obsahuje tři vlákna a zobrazí se tří polí. Dvakrát klikněte na panel j.  
   
-     ![Cesta provedení v okna paralelní zásobníky](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Cesta provedení v okna paralelní zásobníky](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Všimněte si, že S.L je tak, abyste viděli, kde se zobrazí tučně ve dvou polích. Pokud chcete zobrazit volání do S.L rámce, který a které snímků je volání, klikněte na tlačítko **přepnout zobrazení metody** tlačítko na panelu nástrojů. Následující obrázek znázorňuje přehled metody **paralelní zásobníky** okna.  
+    Všimněte si, že S.L je tak, abyste viděli, kde se zobrazí tučně ve dvou polích. Pokud chcete zobrazit volání do S.L rámce, který a které snímků je volání, klikněte na tlačítko **přepnout zobrazení metody** tlačítko na panelu nástrojů. Následující obrázek znázorňuje přehled metody **paralelní zásobníky** okna.  
   
-     ![Zobrazení metody v okna paralelní zásobníky](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Zobrazení metody v okna paralelní zásobníky](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Všimněte si, jak diagramu neseskupené na vybrané metodě a umístěna do své vlastní pole uprostřed zobrazení. Volané a volající zobrazí v horní a dolní části. Klikněte na tlačítko **přepnout zobrazení metody** tlačítka opustit tento režim.  
+    Všimněte si, jak diagramu neseskupené na vybrané metodě a umístěna do své vlastní pole uprostřed zobrazení. Volané a volající zobrazí v horní a dolní části. Klikněte na tlačítko **přepnout zobrazení metody** tlačítka opustit tento režim.  
   
-     Nabídku **paralelní zásobníky** okno má také následující další položky.  
+    Nabídku **paralelní zásobníky** okno má také následující další položky.  
   
-    -   **Hexadecimální zobrazení** přepíná čísel v popiscích mezi desetinných míst a šestnáctkové číslo.  
+   - **Hexadecimální zobrazení** přepíná čísel v popiscích mezi desetinných míst a šestnáctkové číslo.  
   
-    -   **Načíst informace o symbolech** a **nastavení symbolu** otevřete příslušné dialogových oknech.  
+   - **Načíst informace o symbolech** a **nastavení symbolu** otevřete příslušné dialogových oknech.  
   
-    -   **Přejít ke zdrojovému kódu** a **přejít na zpětný překlad** přejděte v editoru na vybrané metody.  
+   - **Přejít ke zdrojovému kódu** a **přejít na zpětný překlad** přejděte v editoru na vybrané metody.  
   
-    -   **Zobrazit externí kód** zobrazí všechny snímky, i když nejsou v uživatelském kódu. Vyzkoušejte si to chcete zobrazit diagram rozšířit, aby odpovídala další snímky (která může být neaktivní, protože nemáte symboly pro ně).  
+   - **Zobrazit externí kód** zobrazí všechny snímky, i když nejsou v uživatelském kódu. Vyzkoušejte si to chcete zobrazit diagram rozšířit, aby odpovídala další snímky (která může být neaktivní, protože nemáte symboly pro ně).  
   
      Pokud máte velké diagramy a přejdete na další zarážku, můžete zobrazení tak, aby automaticky přejít na aktivní blok zásobníku aktuálního vlákna; To znamená, že vlákno, které první narazí zarážku. V **paralelní zásobníky** okno, ujistěte se, že **automaticky přejít na aktuální rámec zásobníku** nachází na panelu nástrojů.  
   
      ![Automatické procházení v okna paralelní zásobníky](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Než budete pokračovat, v **paralelní zásobníky** okno, přejděte úplně vlevo a úplně dolů.  
+2. Než budete pokračovat, v **paralelní zásobníky** okno, přejděte úplně vlevo a úplně dolů.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Chcete-li pokračovat v provádění, dokud čtvrtý zarážku  
   

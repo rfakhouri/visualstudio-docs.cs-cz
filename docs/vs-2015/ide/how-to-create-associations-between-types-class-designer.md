@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856792"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Postupy: vytvoření asociací mezi typy (návrhář tříd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Asociační čáry v Návrháři tříd zobrazují vztah tříd v diagramu. Asoc
   
 ### <a name="to-change-the-name-of-an-association"></a>Změna názvu přidružení  
   
--   Na ploše diagramu klikněte na popisek asociační linky a upravte jej.  
+- Na ploše diagramu klikněte na popisek asociační linky a upravte jej.  
   
- \- nebo –  
+  \- nebo –  
   
 1.  Klikněte na tvar, který obsahuje vlastnost zobrazenou jako přidružení.  
   

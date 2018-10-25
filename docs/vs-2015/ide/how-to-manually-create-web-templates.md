@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880751"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Postupy: Ruční vytvoření webových šablon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ Vytvoření šablony webu se liší od vytvoření jiných typů šablon. Proto�
   
 ### <a name="to-manually-create-a-web-template"></a>Ruční vytvoření webových šablon  
   
-1.  Vytvoření webového projektu.  
+1. Vytvoření webového projektu.  
   
-2.  Upravit nebo odstranit soubory v projektu nebo přidejte nové soubory do projektu.  
+2. Upravit nebo odstranit soubory v projektu nebo přidejte nové soubory do projektu.  
   
-3.  Vytvořte soubor XML a uložit pomocí příponu názvu souboru .vstemplate ve stejném adresáři jako váš projekt. Nepřidávejte jej do projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Vytvořte soubor XML a uložit pomocí příponu názvu souboru .vstemplate ve stejném adresáři jako váš projekt. Nepřidávejte jej do projektu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Autor XML souboru .vstemplate k poskytování metadat šablony projektu. Další informace podívejte se na příklad v následující části.  
+4. Autor XML souboru .vstemplate k poskytování metadat šablony projektu. Další informace podívejte se na příklad v následující části.  
   
-5.  Vyhledejte `ProjectType` prvku v souboru .vstemplate a nastavte hodnotu na text `Web`.  
+5. Vyhledejte `ProjectType` prvku v souboru .vstemplate a nastavte hodnotu na text `Web`.  
   
-6.  Následující `ProjectType` elementu, přidejte `ProjectSubType` elementu a nastaví hodnotu text pro programovací jazyk šablony. Programovací jazyk může být jeden z následujících hodnot:  
+6. Následující `ProjectType` elementu, přidejte `ProjectSubType` elementu a nastaví hodnotu text pro programovací jazyk šablony. Programovací jazyk může být jeden z následujících hodnot:  
   
-    -   CSharp  
+   - CSharp  
   
-    -   VisualBasic  
+   - VisualBasic  
   
      Příklad:  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  Vyberte soubory v šabloně (to zahrnuje soubor .vstemplate), klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Soubory jsou komprimována do souboru .zip.  
+7. Vyberte soubory v šabloně (to zahrnuje soubor .vstemplate), klikněte pravým tlačítkem na výběr, klikněte na tlačítko **odeslat**a potom klikněte na tlačítko **komprimovaná složka (metoda ZIP)**. Soubory jsou komprimována do souboru .zip.  
   
-8.  Vložit soubor ZIP šablony [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adresář šablon projektu. Ve výchozím nastavení je tento adresář Documents\Visual Studio *verze*\My exportované šablony\\.  
+8. Vložit soubor ZIP šablony [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adresář šablon projektu. Ve výchozím nastavení je tento adresář Documents\Visual Studio *verze*\My exportované šablony\\.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje soubor .vstemplate základní pro Šablona webového projektu.  

@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894050"
 ---
 # <a name="format-specifiers-in-c"></a>Specifikátory formátu v jazyce C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomoc�
   
 > [!NOTE]
 >  Visual Studio nativní ladicí program změní na novém ladicím modulu. Jako součást této změně přidání některých nových specifikátorů formátu a některých jejich starých verzí byly odebrány. Starší ladicí program je stále používán, když provedete spolupráce (smíšená nativní a spravovaná) ladění s C + +/ CLI. Následující části v tomto tématu uvádí specifikátory formátu pro každý ladicí stroj.  
->   
->  -   [Specifikátory formátu](#BKMK_Visual_Studio_2012_format_specifiers) popisuje specifikátory formátu v novém ladicím modulu.  
-> -   [Specifikátory formátu pro interop ladění s C + +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) popisuje specifikátory formátu staršího modulu pro ladění.  
+> 
+> - [Specifikátory formátu](#BKMK_Visual_Studio_2012_format_specifiers) popisuje specifikátory formátu v novém ladicím modulu.  
+>   -   [Specifikátory formátu pro interop ladění s C + +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) popisuje specifikátory formátu staršího modulu pro ladění.  
   
 ## <a name="using-format-specifiers"></a>Použití specifikátorů formátu  
  Pokud máte následující kód:  

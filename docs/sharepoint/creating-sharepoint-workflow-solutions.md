@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892308"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Vytváření řešení pracovního postupu služby SharePoint
 
@@ -70,25 +70,25 @@ Další informace o SharePoint, naleznete v tématu [Microsoft produktů a techn
 
  Existují dva typy aktivit:
 
--   *Jednoduché aktivity* provedení jedné jednotky práce, například jako ", než 1 den" nebo "spuštění webové služby."
+- *Jednoduché aktivity* provedení jedné jednotky práce, například jako ", než 1 den" nebo "spuštění webové služby."
 
--   *Složené aktivity* obsahují další aktivity, například podmíněné aktivity může obsahovat dvě větve.
+- *Složené aktivity* obsahují další aktivity, například podmíněné aktivity může obsahovat dvě větve.
 
- Oba typy aktivit jsou k dispozici v **nástrojů**.
+  Oba typy aktivit jsou k dispozici v **nástrojů**.
 
- Aktivity mohou mít vlastnosti, metody a události. Použití **vlastnosti** okna můžete nastavit vlastnosti aktivity.
+  Aktivity mohou mít vlastnosti, metody a události. Použití **vlastnosti** okna můžete nastavit vlastnosti aktivity.
 
- Můžete také vytvořit vlastní aktivitu. Další informace najdete v tématu [návod: vytvoření pracovního postupu aktivity vlastního webu](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Můžete také vytvořit vlastní aktivitu. Další informace najdete v tématu [návod: vytvoření pracovního postupu aktivity vlastního webu](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Aktivity jsou uspořádány do následujících kartách v **nástrojů**:
+  Aktivity jsou uspořádány do následujících kartách v **nástrojů**:
 
--   **Pracovní postup Sharepointu**
+- **Pracovní postup Sharepointu**
 
--   **V3.0 pracovního postupu Windows**
+- **V3.0 pracovního postupu Windows**
 
--   **Windows Workflow v3.5**
+- **Windows Workflow v3.5**
 
- Ne všechny aktivity pracovního postupu core jsou podporované službou SharePoint. Další informace najdete v tématu [přehled pracovního postupu aktivit pro Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Ne všechny aktivity pracovního postupu core jsou podporované službou SharePoint. Další informace najdete v tématu [přehled pracovního postupu aktivit pro Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>Aktivity pracovního postupu služby SharePoint
  **Pracovního postupu služby SharePoint** karty obsahují specializované aktivity pro použití v [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Tyto aktivity zjednoduší a zefektivní vývoje pracovních postupů životního cyklu dokumentů. Další informace o aktivitách, které jsou uvedeny v **pracovního postupu služby SharePoint** kartu, najdete v článku [přehled pracovního postupu aktivit pro Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Další informace o SharePoint, naleznete v tématu [Microsoft produktů a techn
 
  Existují čtyři typy formulářů, které lze použít v pracovním postupu:
 
--   Přidružení
+- Přidružení
 
--   Zahájení
+- Zahájení
 
--   Úpravy
+- Úpravy
 
--   Úloha
+- Úloha
 
- Z těchto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zahrnuje šablony položek pro formuláře pro asociaci a. Příklad *formulář přidružení* je ten, který umožňuje správci nainstalovat pracovního postupu zadejte parametry, které se vztahují k pracovnímu postupu, jako je nastavený limit útraty pro pracovní postup výdajů. Příklad *inicializační formulář* je ten, který umožňuje uživateli pracovního postupu výdajů zadejte velikost strávený do pracovního postupu. Další informace o těchto typech formuláře, naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Z těchto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zahrnuje šablony položek pro formuláře pro asociaci a. Příklad *formulář přidružení* je ten, který umožňuje správci nainstalovat pracovního postupu zadejte parametry, které se vztahují k pracovnímu postupu, jako je nastavený limit útraty pro pracovní postup výdajů. Příklad *inicializační formulář* je ten, který umožňuje uživateli pracovního postupu výdajů zadejte velikost strávený do pracovního postupu. Další informace o těchto typech formuláře, naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Vlastnosti položky
  Pomocí vlastností položky v seznamu nebo knihovny služby SharePoint může také shromažďovat informace od uživatelů. Soubor hlavní kód (Workflow1.cs nebo Workflow1.vb) deklaruje instanci Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties třídy s názvem `workflowProperties`. Použití `workflowProperties` objektu pro přístup k vlastnostem knihovna nebo seznam v kódu. Příklad najdete v tématu [návod: vytváření a ladění řešení pracovního postupu služby SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

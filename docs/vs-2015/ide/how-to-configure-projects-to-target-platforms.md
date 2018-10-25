@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843051"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ ms.locfileid: "49294512"
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Ke konfiguraci projektu cílit na 64bitové platformě  
   
-1.  V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
+1. V panelu nabídky zvolte **sestavení**, **nástroje Configuration Manager**.  
   
-2.  V **platformou aktivního řešení** seznamu, zvolte 64bitovou platformu pro řešení do cíle a klikněte na tlačítko **Zavřít** tlačítko.  
+2. V **platformou aktivního řešení** seznamu, zvolte 64bitovou platformu pro řešení do cíle a klikněte na tlačítko **Zavřít** tlačítko.  
   
-    1.  Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.  
+   1.  Pokud se nezobrazí platforma, která chcete v **platformou aktivního řešení** klikněte na položku **nový**.  
   
-         **Nová platforma řešení** zobrazí se dialogové okno.  
+        **Nová platforma řešení** zobrazí se dialogové okno.  
   
-    2.  V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.  
+   2.  V **zadejte nebo vyberte novou platformu** klikněte na položku **x64**.  
   
-        > [!NOTE]
-        >  Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.  
+       > [!NOTE]
+       >  Pokud vaše konfigurace zadejte nový název, bude pravděpodobně nutné upravit nastavení v **Návrháře projektu** pro zaměření na správnou platformu.  
   
-    3.  Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.  
+   3.  Pokud chcete tato nastavení zkopírovat z aktuální konfiguraci platformy, vyberte jej a klikněte na tlačítko **OK** tlačítko.  
   
- Jsou aktualizovány vlastnosti pro všechny projekty, které se zaměřují 64bitové platformě a optimalizují se další sestavení projektu pro 64bitové platformy.  
+   Jsou aktualizovány vlastnosti pro všechny projekty, které se zaměřují 64bitové platformě a optimalizují se další sestavení projektu pro 64bitové platformy.  
   
 ## <a name="targeting-platforms-in-the-project-designer"></a>Cílení na platformy v Návrháři projektu  
  Návrhář projektu také poskytuje způsob, jak určené pro různé platformy s projektem. Pokud vyberete některou z platforem zahrnuté v seznamu **nová platforma řešení** dialogové okno pro vaše řešení nebude fungovat, můžete vytvořit vlastní název a upravte nastavení v **Návrhář projektu**  pro zaměření na správnou platformu.  

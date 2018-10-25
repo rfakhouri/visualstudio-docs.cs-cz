@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893673"
 ---
 # <a name="t4-import-directive"></a>T4 – direktiva Import
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Standardní importy  
  Následující obor názvů se importuje automaticky, takže pro něj není nutné psát direktivu importu:  
   
--   `System`  
+- `System`  
   
- Pokud použijete vlastní direktivu, může navíc procesor direktiv importovat některé obory názvů automaticky.  
+  Pokud použijete vlastní direktivu, může navíc procesor direktiv importovat některé obory názvů automaticky.  
   
- Pokud například píšete šablony pro jazyk domény (DSL), nemusíte psát direktivy importu pro následující obory názvů:  
+  Pokud například píšete šablony pro jazyk domény (DSL), nemusíte psát direktivy importu pro následující obory názvů:  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   Obor názvů vašeho kódu DSL  
+- Obor názvů vašeho kódu DSL  
   
 ## <a name="see-also"></a>Viz také  
  [T4 – direktiva Assembly](../modeling/t4-assembly-directive.md)

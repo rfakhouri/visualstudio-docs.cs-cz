@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843532"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Návod: Změna formátování listů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje základy používání zaškrtávacích políček na list aplikace Microsoft Office Excel Změna formátování. Nástroje pro vývoj pro Office v sadě Visual Studio použije k vytvoření a přidání kódu do projektu. Výsledek jako úplnou vzorovou najdete v ukázce ovládací prvky aplikace Excel v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -101,24 +101,24 @@ ms.locfileid: "38778367"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Chcete-li přidat text do ovládacího prvku NamedRange  
   
-1.  Z **ovládací prvky Excelu** kartu na panelu nástrojů přetáhněte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do buňky **B9**.  
+1. Z **ovládací prvky Excelu** kartu na panelu nástrojů přetáhněte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do buňky **B9**.  
   
-2.  Ověřte, že **$B$ 9** se zobrazí v upravitelné textové pole a buňka **B9** zaškrtnuto. Pokud není, klikněte na buňku **B9** ji vyberte.  
+2. Ověřte, že **$B$ 9** se zobrazí v upravitelné textové pole a buňka **B9** zaškrtnuto. Pokud není, klikněte na buňku **B9** ji vyberte.  
   
-3.  Klikněte na tlačítko **OK**.  
+3. Klikněte na tlačítko **OK**.  
   
-4.  Buňka **B9** stane oblast s názvem `NamedRange1`.  
+4. Buňka **B9** stane oblast s názvem `NamedRange1`.  
   
-     Není by na listu, ale `NamedRange1` se zobrazí v **pole název** (přímo nad list na levé straně) při buňky **B9** zaškrtnuto.  
+    Není by na listu, ale `NamedRange1` se zobrazí v **pole název** (přímo nad list na levé straně) při buňky **B9** zaškrtnuto.  
   
-5.  Ujistěte se, že **NamedRange1** je viditelný v objektu název seznamu **vlastnosti** okna a změnit následující vlastnosti:  
+5. Ujistěte se, že **NamedRange1** je viditelný v objektu název seznamu **vlastnosti** okna a změnit následující vlastnosti:  
   
-    |Vlastnost|Hodnota|  
-    |--------------|-----------|  
-    |**Jméno**|**textFont**|  
-    |**Hodnota2**|**Klikněte na zaškrtávací políčko, chcete-li změnit formátování tento text.**|  
+   |Vlastnost|Hodnota|  
+   |--------------|-----------|  
+   |**Jméno**|**textFont**|  
+   |**Hodnota2**|**Klikněte na zaškrtávací políčko, chcete-li změnit formátování tento text.**|  
   
- Dále napište kód k formátování textu, pokud je vybrána možnost.  
+   Dále napište kód k formátování textu, pokud je vybrána možnost.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Pokud je vybrána možnost formátování textu  
  V této části napíšete kód tak, že když uživatel vybere možnost formátování, se změní na formát textu v listu.  

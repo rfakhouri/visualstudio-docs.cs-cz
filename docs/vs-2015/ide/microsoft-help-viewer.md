@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820093"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,21 +63,21 @@ Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v mís
   
  Panel nástrojů v okně aplikace Help Viewer obsahuje následující tlačítka:  
   
--   **Zobrazit téma v obsahu** tlačítko zobrazí umístění tématu **obsah** kartu.  
+- **Zobrazit téma v obsahu** tlačítko zobrazí umístění tématu **obsah** kartu.  
   
--   **Přidat k oblíbeným položkám** tlačítko přidá aktivní téma **Oblíbené položky** kartu.  
+- **Přidat k oblíbeným položkám** tlačítko přidá aktivní téma **Oblíbené položky** kartu.  
   
--   **Najdete v tématu** tlačítko zvýrazní hledaný text v aktivním tématu.  
+- **Najdete v tématu** tlačítko zvýrazní hledaný text v aktivním tématu.  
   
--   **Tisk** tlačítko vytiskne nebo zobrazí náhled aktivního tématu.  
+- **Tisk** tlačítko vytiskne nebo zobrazí náhled aktivního tématu.  
   
--   **Možnosti prohlížeče** tlačítko zobrazí nastavení, například jak velikost zobrazovaného textu, počet výsledků hledání se vraťte, počet témat, chcete-li zobrazit v historii a zda chcete zjišťovat aktualizace online.  
+- **Možnosti prohlížeče** tlačítko zobrazí nastavení, například jak velikost zobrazovaného textu, počet výsledků hledání se vraťte, počet témat, chcete-li zobrazit v historii a zda chcete zjišťovat aktualizace online.  
   
--   **Spravovat obsah** tlačítko umožňuje **spravovat obsah** aktivní kartou.  
+- **Spravovat obsah** tlačítko umožňuje **spravovat obsah** aktivní kartou.  
   
--   Kliknutím na malý trojúhelník otevřete seznam karet, včetně karet s tématy a **spravovat obsah** kartu. Můžete provést některé z těchto karet aktivní, zvolte ji.  
+- Kliknutím na malý trojúhelník otevřete seznam karet, včetně karet s tématy a **spravovat obsah** kartu. Můžete provést některé z těchto karet aktivní, zvolte ji.  
   
- Spodní část okna aplikace Help Viewer obsahuje informace o celkovou velikost čekajících souborů ke stažení, množství místa na disku, které požadují a množství místa na disku, který je k dispozici. Tato oblast také obsahuje informace o chybách, které mohly nastat a odkaz, který je možné aktualizovat nainstalovaný obsah, pokud jsou k dispozici aktualizace.  
+  Spodní část okna aplikace Help Viewer obsahuje informace o celkovou velikost čekajících souborů ke stažení, množství místa na disku, které požadují a množství místa na disku, který je k dispozici. Tato oblast také obsahuje informace o chybách, které mohly nastat a odkaz, který je možné aktualizovat nainstalovaný obsah, pokud jsou k dispozici aktualizace.  
   
 ## <a name="see-also"></a>Viz také  
  [Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)   

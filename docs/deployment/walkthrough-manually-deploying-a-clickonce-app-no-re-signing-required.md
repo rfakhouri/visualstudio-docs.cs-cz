@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875096"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli
 Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a pak mu přidělte zákazníkovi k publikování a nasazení, zákazník tradičně museli aktualizovat manifest nasazení a znovu podepsat. Který je stále upřednostňuje ve většině případů, rozhraní .NET Framework 3.5 vám umožní vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení, která je možné nasadit pomocí zákazníky bez nutnosti znovu vygenerovat nový manifest nasazení. Další informace najdete v tématu [ClickOnce – nasazení aplikace pro testování a produkční servery bez opětovného podepsání](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -48,36 +48,36 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>K nasazení aplikace ClickOnce s více nasazení a přizpůsobení prostředí značce podporu pomocí Mage.exe  
   
-1.  Otevřete příkazový řádek sady Visual Studio nebo [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] příkazový řádek a přejděte do adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] soubory.  
+1. Otevřete příkazový řádek sady Visual Studio nebo [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] příkazový řádek a přejděte do adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] soubory.  
   
-2.  Vytvořte adresář po aktuální verzi vašeho nasazení. Pokud je to poprvé, že nasazujete aplikaci, bude pravděpodobně zvolíte **1.0.0.0**.  
+2. Vytvořte adresář po aktuální verzi vašeho nasazení. Pokud je to poprvé, že nasazujete aplikaci, bude pravděpodobně zvolíte **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Verze vašeho nasazení může být liší od verze souborů aplikace.  
+   > [!NOTE]
+   >  Verze vašeho nasazení může být liší od verze souborů aplikace.  
   
-3.  Vytvořte podadresář s názvem **bin** a zkopírujte všechny soubory aplikací, včetně spustitelných souborů, sestavení, prostředky a datové soubory.  
+3. Vytvořte podadresář s názvem **bin** a zkopírujte všechny soubory aplikací, včetně spustitelných souborů, sestavení, prostředky a datové soubory.  
   
-4.  Generovat manifest aplikace pomocí volání Mage.exe.  
+4. Generovat manifest aplikace pomocí volání Mage.exe.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Podepsat manifest aplikace pomocí digitálního certifikátu.  
+5. Podepsat manifest aplikace pomocí digitálního certifikátu.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Generovat manifest nasazení pomocí volání *Mage.exe*. Ve výchozím nastavení *Mage.exe* označí vaši [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení jako nainstalovaná aplikace, takže ji můžete spustit online a offline. Aby byla aplikace k dispozici pouze v případě, že uživatel je online, použijte `-i` argument s hodnotou `f`. Protože tato aplikace bude využívat funkci nasazení na více, vyloučit `-providerUrl` argument *Mage.exe*. (Ve verzích rozhraní .NET Framework verze 3.5, s výjimkou `-providerUrl` pro offline aplikace bude mít za následek chybu.)  
+6. Generovat manifest nasazení pomocí volání *Mage.exe*. Ve výchozím nastavení *Mage.exe* označí vaši [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení jako nainstalovaná aplikace, takže ji můžete spustit online a offline. Aby byla aplikace k dispozici pouze v případě, že uživatel je online, použijte `-i` argument s hodnotou `f`. Protože tato aplikace bude využívat funkci nasazení na více, vyloučit `-providerUrl` argument *Mage.exe*. (Ve verzích rozhraní .NET Framework verze 3.5, s výjimkou `-providerUrl` pro offline aplikace bude mít za následek chybu.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  Uživatel manifest nasazení.  
+7. Uživatel manifest nasazení.  
   
-8.  Zadejte všechny soubory s konkrétním zákazníkem, který se nasadit aplikaci ve své síti.  
+8. Zadejte všechny soubory s konkrétním zákazníkem, který se nasadit aplikaci ve své síti.  
   
 9. V tomto okamžiku zákazník musí podepsat manifest nasazení pomocí vlastní certifikát vygenerovaný sám sebou. Například pokud zákazník pracuje pro společnost s názvem společnosti Adventure Works, si můžete vygenerovat certifikát podepsaný svým držitelem pomocí *MakeCert.exe* nástroj. Pak pomocí *Pvk2pfx.exe* nástroj ke sloučení souborů vytvořených databázovým *MakeCert.exe* do souboru PFX, který může být předán *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Když vytvoříte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>K nasazení aplikace ClickOnce s více nasazení a přizpůsobení prostředí značce podporu pomocí MageUI.exe  
   
-1.  Otevřete příkazový řádek sady Visual Studio nebo [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] příkazový řádek a přejděte do adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] soubory.  
+1. Otevřete příkazový řádek sady Visual Studio nebo [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] příkazový řádek a přejděte do adresáře, ve kterém budete ukládat vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] soubory.  
   
-2.  Vytvořte podadresář s názvem **bin** a zkopírujte všechny soubory aplikací, včetně spustitelných souborů, sestavení, prostředky a datové soubory.  
+2. Vytvořte podadresář s názvem **bin** a zkopírujte všechny soubory aplikací, včetně spustitelných souborů, sestavení, prostředky a datové soubory.  
   
-3.  Vytvořte podadresář s názvem aktuální verzi vašeho nasazení. Pokud je to poprvé, že nasazujete aplikaci, bude pravděpodobně zvolíte **1.0.0.0**.  
+3. Vytvořte podadresář s názvem aktuální verzi vašeho nasazení. Pokud je to poprvé, že nasazujete aplikaci, bude pravděpodobně zvolíte **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Verze vašeho nasazení může být liší od verze souborů aplikace.  
+   > [!NOTE]
+   >  Verze vašeho nasazení může být liší od verze souborů aplikace.  
   
-4.  Přesunout \\ **bin** adresář do adresáře, který jste vytvořili v kroku 2.  
+4. Přesunout \\ **bin** adresář do adresáře, který jste vytvořili v kroku 2.  
   
-5.  Spusťte nástroj pro grafické *MageUI.exe*.  
+5. Spusťte nástroj pro grafické *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Vytvořit nový manifest aplikace tak, že vyberete **souboru**, **nový**, **Manifest aplikace** z nabídky.  
+6. Vytvořit nový manifest aplikace tak, že vyberete **souboru**, **nový**, **Manifest aplikace** z nabídky.  
   
-7.  Ve výchozím **název** kartu, zadejte název a verzi číslo tohoto nasazení. Navíc zadat hodnotu **vydavatele**, který se použije jako název složky pro propojení místní aplikace v nabídce Start při nasazení.  
+7. Ve výchozím **název** kartu, zadejte název a verzi číslo tohoto nasazení. Navíc zadat hodnotu **vydavatele**, který se použije jako název složky pro propojení místní aplikace v nabídce Start při nasazení.  
   
-8.  Vyberte **možnosti aplikace** kartě a klikněte na tlačítko **použít Manifest aplikace pro informace o vztahu důvěryhodnosti**. Tato možnost vám umožní třetích stran branding pro to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
+8. Vyberte **možnosti aplikace** kartě a klikněte na tlačítko **použít Manifest aplikace pro informace o vztahu důvěryhodnosti**. Tato možnost vám umožní třetích stran branding pro to [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
 9. Vyberte **soubory** kartě a klikněte na tlačítko **Procházet** vedle **adresáře aplikace** textového pole.  
   

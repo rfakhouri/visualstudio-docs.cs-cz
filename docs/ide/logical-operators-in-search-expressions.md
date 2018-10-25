@@ -1,5 +1,5 @@
 ---
-title: Logické operátory a pokročilé operátory ve vyhledávacích výrazech
+title: Logické operátory a rozšířené operátory ve vyhledávacích výrazech
 ms.date: 11/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -13,51 +13,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de351e019c4daacc61bbbdd2757b0f0d9a46e584
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2c189afe9051d0f85c7f5f24a928d475d0eaca9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942838"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872847"
 ---
-# <a name="logical-and-advanced-operators-in-search-expressions"></a>Rozšířené a logické operátory ve vyhledávacích výrazech
+# <a name="logical-and-advanced-operators-in-search-expressions"></a>Logické a rozšířené operátory ve vyhledávacích výrazech
 
-Logické operátory a operátory rozšířeného vyhledávání můžete použít upřesněte hledání obsahu nápovědy v **Prohlížeč nápovědy**.
+Můžete použít logické operátory a operátory rozšířeného hledání upřesněte hledání obsahu nápovědy v **aplikace Help Viewer**.
 
 ## <a name="logical-operators"></a>Logické operátory
 
-Logické operátory určit, jak více podmínek vyhledávání by měla být kombinovány v vyhledávací dotaz. Následující tabulka uvádí logických operátorů AND, OR a není a v BLÍZKOSTI.
+Logické operátory určují, jak více podmínek vyhledávání by měly být kombinované vyhledávacího dotazu. Následující tabulka uvádí logické operátory AND, OR a není a BLÍZKOSTI.
 
 |K vyhledání|Použití|Příklad|Výsledek|
 |-------------------|---------|-------------|------------|
-|Oba termíny ve stejném článku|AND|DIB a palety|Témata, které obsahují "dib" a "palety".|
-|Buď termín v článku|NEBO|rastrové nebo vektoru|Témata, které obsahují "rastrových" nebo "vector".|
-|První výraz bez druhý výraz ve stejném článku|NENÍ|"operační systém" není DOS|Témata, které obsahují "operační systém", ale ne "DOS".|
-|Obě podmínky, zavřete společně v článku|V BLÍZKOSTI|uživatel TÉMĚŘ jádra|Témata, které obsahují "user" v blízkosti "jádra".|
+|Oba výrazy ve stejném článku|AND|DIB a palety|Témata, které obsahují "dib" a "palety".|
+|Buď výraz v článku|NEBO|rastrové vektoru OR|Témata, které obsahují "rastrové" nebo "vektorové".|
+|První výraz bez druhý výraz ve stejném článku|NOT|"operační systém" není DOS|Témata, které obsahují "operační systém", ale ne "DOS".|
+|Oba výrazy blízko sebe v článku|V BLÍZKOSTI|uživatel TÉMĚŘ jádra|Témata, která obsahují "user" v blízkosti "jádra".|
 
 > [!IMPORTANT]
-> Logické operátory je nutné zadat velkými písmeny pro vyhledávací rozpoznány.
+> Logické operátory je nutné zadat velkými písmeny pro vyhledávače rozpoznány.
 
 ## <a name="advanced-operators"></a>Pokročilí operátoři
 
-Operátory rozšířeného vyhledávání upřesněte hledání obsahu zadáním kde v článku hledání hledaný termín. Následující tabulka popisuje čtyři operátory k dispozici rozšířené vyhledávání.
+Operátory rozšířeného hledání upřesněte hledání pro obsah tak, že zadáte umístění v článku hledat hledaný termín. Následující tabulka popisuje čtyři operátory rozšířeného vyhledávání k dispozici.
 
 |K vyhledání|Použití|Příklad|Výsledek|
 |-------------------|---------|-------------|------------|
-|Termín v název článku|`title:`|`title:binaryreader`|Témata, které obsahují "binaryreader" v jejich názvy.|
-|Termín v příklad kódu|`code:`|`code:readdouble`|Témata, které obsahují "readdouble" v příkladu kódu.|
-|Termín v Příkladem konkrétní programovací jazyk|`code:vb:`|`code:vb:string`|Témata obsahující "řetězec v příklad kódu jazyka Visual Basic.|
-|Článek, který je přidružen konkrétní index klíčové slovo|`keyword:`|`keyword:readbyte`|Témata, které jsou spojeny s klíčovým slovem "readbyte" index.|
+|Výraz v název článku|`title:`|`title:binaryreader`|Témata, které obsahují "binaryreader" v názvech.|
+|Termín v příkladu kódu|`code:`|`code:readdouble`|Témata, které obsahují "readdouble" v příkladu kódu.|
+|Výraz v příklad konkrétní programovací jazyk|`code:vb:`|`code:vb:string`|Témata, které obsahují "string" v příkladu kódu jazyka Visual Basic.|
+|Článek, který je spojen s klíčovým slovem konkrétního indexu|`keyword:`|`keyword:readbyte`|Témata, které jsou spojeny s klíčovým slovem "readbyte" index.|
 
 > [!IMPORTANT]
-> Je nutné zadat operátory rozšířeného vyhledávání s posledním dvojtečkou a žádné použité místo před dvojtečkou pro vyhledávacího webu rozpoznány.
+> Je nutné zadat operátory rozšířeného vyhledávání konečné dvojtečku žádné použité mezeru před dvojtečku pro vyhledávací web rozpoznány.
 
 ### <a name="programming-languages-for-code-examples"></a>Programovací jazyky pro příklady kódu
 
-Můžete použít `code:` operátor hledání obsahu o všech několik programovacích jazyků. Vrátí příklady pro konkrétní programovací jazyk, použijte jednu z následujících hodnot programovací jazyk:
+Můžete použít `code:` operátor hledání obsahu o všech různých programovacích jazyků. Pokud chcete vrátit příklady pro konkrétní programovací jazyk, použijte jednu z následujících hodnot programovací jazyk:
 
-|Programovací jazyk|Syntaxe vyhledávání – operátor|
-|--------------------|---------|
+|Programovací jazyk|Syntaxe hledání – operátor|
+| - |---------|
 |Visual Basic|`code:vb`<br/>`code:visualbasic`|
 |C#|`code:c#`<br/>`code:csharp`|
 |C++|`code:cpp`<br/>`code:c++`<br/>`code:cplusplus`|
@@ -66,9 +66,9 @@ Můžete použít `code:` operátor hledání obsahu o všech několik programov
 |XAML|`code:xaml`|
 
 > [!NOTE]
-> `code:` Operátor vyhledá pouze obsah, který je označen s popiskem programovací jazyk, a obsah, který je obecně označeny jako kód.
+> `code:` Operátor vyhledá pouze obsah, který je označen popiskem, programovací jazyk, na rozdíl od obsah, který je obecně označeny jako kód.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: vyhledávání témat](how-to-search-for-topics.md)
 - [Microsoft Help Viewer 2.2](microsoft-help-viewer.md)

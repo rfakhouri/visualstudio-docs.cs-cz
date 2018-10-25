@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886393"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Slovník vizuálního jazyka pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio používá společný jazyk visual k objasnění konceptů, které
   
  **Obecné pokyny**  
   
--   Tyto koncepty visual je nutné použít konzistentně s jejich definice slovníku. Jinak riskujete matoucí uživatelé, kteří očekávají, že společné prvky mít konzistentní význam.  
+- Tyto koncepty visual je nutné použít konzistentně s jejich definice slovníku. Jinak riskujete matoucí uživatelé, kteří očekávají, že společné prvky mít konzistentní význam.  
   
--   Zvolte pouze nejrelevantnější nebo důležité koncepty pro použití ve vaší ikony, tak, aby trénováním zřetelný a snadné je rozlišit.  
+- Zvolte pouze nejrelevantnější nebo důležité koncepty pro použití ve vaší ikony, tak, aby trénováním zřetelný a snadné je rozlišit.  
   
--   Použijte pouze jednu nebo dvě koncepce každé Image.  
+- Použijte pouze jednu nebo dvě koncepce každé Image.  
   
--   Další strategie pro navrhování ikony, naleznete v tématu [ikonu návrhu](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
+- Další strategie pro navrhování ikony, naleznete v tématu [ikonu návrhu](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).  
   
- **Přejděte do části:**  
+  **Přejděte do části:**  
   
 1.  [Koncepty A – Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

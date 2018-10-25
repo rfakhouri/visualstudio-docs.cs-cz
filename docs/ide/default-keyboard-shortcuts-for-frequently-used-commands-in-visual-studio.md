@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843195"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio
 
@@ -26,7 +26,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="build"></a>Sestavení
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl + Shift + B** [Global]|
 |Build.Cancel|**Ctrl + Break** [Global]|
 |Build.Compile|**CTRL + F7** [Global]|
@@ -35,7 +35,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="debug"></a>Ladit
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**CTRL + B** [Global]|
 |Debug.BreakAll|**Ctrl + Alt + Break** [Global]|
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [Global]|
@@ -55,7 +55,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="edit"></a>Upravit
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Zadejte** [Text Editor, Návrhář sestav, Windows Forms Designer]<br /><br /> nebo **Shift + Enter** [Text Editor]|
 |Edit.CollapseToDefinitions|**CTRL + M**, **Ctrl + O** [Text Editor]|
 |Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [Text Editor]|
@@ -106,7 +106,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="file"></a>Soubor
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**ALT + F4** [Global]|
 |File.NewFile|**CTRL + N** [Global]|
 |File.NewProject|**Ctrl + Shift + N** [Global]|
@@ -122,26 +122,26 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="project"></a>Projekt
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Shift + Alt + A** [Global]|
 |Project.AddNewItem|**Ctrl + Shift + A** [Global]|
 
 ## <a name="refactor"></a>Refaktorovat
 
 |Příkaz|Klávesová zkratka [Context]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**CTRL + R, Ctrl + M** [Global]|
 
 ## <a name="tools"></a>Nástroje
 
 |Příkaz|Klávesová zkratka [Context]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl + Alt + P** [Global]|
 
 ## <a name="view"></a>Zobrazit
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl + Shift + C** [Global]|
 |View.EditLabel|**F2** [Global]|
 |View.ErrorList|**CTRL +\\, Ctrl + E** [Global]<br /><br /> nebo **Ctrl +\\, E** [Global]|
@@ -162,7 +162,7 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 ## <a name="window"></a>Okno
 
 |Příkazy|Klávesové zkratky [kontexty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [Global]|
 |Window.CloseDocumentWindow|**CTRL + F4** [Global]|
 |Window.NextDocumentWindow|**CTRL + F6** [Global]|

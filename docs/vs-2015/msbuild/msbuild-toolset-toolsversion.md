@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851826"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k ses
 ## <a name="toolset-implementation"></a>Implementace sady nástrojů  
  Implementujte sadu nástrojů tak, že vyberete cesty různých nástrojů, cíle a úlohy, které tvoří sadu nástrojů. Nástroje v sadu nástrojů, která definuje MSBuild přicházet z těchto zdrojů:  
   
--   Složku rozhraní.NET Framework.  
+- Složku rozhraní.NET Framework.  
   
--   Další spravované nástroje.  
+- Další spravované nástroje.  
   
- Spravované nástroje zahrnují ResGen.exe a TlbImp.exe.  
+  Spravované nástroje zahrnují ResGen.exe a TlbImp.exe.  
   
- Nástroj MSBuild poskytuje dva způsoby přístupu k sady nástrojů:  
+  Nástroj MSBuild poskytuje dva způsoby přístupu k sady nástrojů:  
   
--   Pomocí vlastností sady nástrojů  
+- Pomocí vlastností sady nástrojů  
   
--   S použitím <xref:Microsoft.Build.Utilities.ToolLocationHelper> metody  
+- S použitím <xref:Microsoft.Build.Utilities.ToolLocationHelper> metody  
   
- Vlastnosti nástrojů pro zadání cesty nástroje. Nástroj MSBuild používá hodnoty `ToolsVersion` atributu v souboru projektu vyhledejte odpovídající klíče registru a poté použije informace v klíči registru pro nastavení vlastností sady nástrojů. Například pokud `ToolsVersion` má hodnotu `12.0`, MSBuild nastaví vlastnosti sady nástrojů podle tohoto klíče registru: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Vlastnosti nástrojů pro zadání cesty nástroje. Nástroj MSBuild používá hodnoty `ToolsVersion` atributu v souboru projektu vyhledejte odpovídající klíče registru a poté použije informace v klíči registru pro nastavení vlastností sady nástrojů. Například pokud `ToolsVersion` má hodnotu `12.0`, MSBuild nastaví vlastnosti sady nástrojů podle tohoto klíče registru: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Toto jsou vlastnosti sady nástrojů:  
+  Toto jsou vlastnosti sady nástrojů:  
   
--   `MSBuildToolsPath` Určuje cestu k MSBuild binární soubory.  
+- `MSBuildToolsPath` Určuje cestu k MSBuild binární soubory.  
   
--   `SDK40ToolsPath` Určuje cestu k další spravované nástroje pro MSBuild 4.x (které by mohly být 4.0 nebo 4.5).  
+- `SDK40ToolsPath` Určuje cestu k další spravované nástroje pro MSBuild 4.x (které by mohly být 4.0 nebo 4.5).  
   
--   `SDK35ToolsPath` Určuje cestu k další spravované nástroje pro MSBuild 3.5.  
+- `SDK35ToolsPath` Určuje cestu k další spravované nástroje pro MSBuild 3.5.  
   
- Alternativně můžete určit sadu nástrojů prostřednictvím kódu programu pomocí volání metody <xref:Microsoft.Build.Utilities.ToolLocationHelper> třídy. Třída zahrnuje tyto metody:  
+  Alternativně můžete určit sadu nástrojů prostřednictvím kódu programu pomocí volání metody <xref:Microsoft.Build.Utilities.ToolLocationHelper> třídy. Třída zahrnuje tyto metody:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> vrátí cestu ke složce rozhraní .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> vrátí cestu ke složce rozhraní .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> vrátí cestu k souboru ve složce rozhraní .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> vrátí cestu k souboru ve složce rozhraní .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> vrátí cestu spravovaných nástroje složky.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> vrátí cestu spravovaných nástroje složky.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> vrátí cestu souboru, který je obvykle umístěn ve složce Nástroje pro spravované.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> vrátí cestu souboru, který je obvykle umístěn ve složce Nástroje pro spravované.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> vrátí cestu nástroje sestavení.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> vrátí cestu nástroje sestavení.  
   
 ### <a name="sub-toolsets"></a>Dílčí sady nástrojů  
  Jak je popsáno výše v tomto tématu, nástroj MSBuild používá klíč registru pro zadání cesty základní nástroje. Pokud klíč podklíč, nástroj MSBuild používá pro zadání cesty dílčí, který obsahuje další nástroje. V takovém případě sada nástrojů je definována kombinací definice vlastností, které jsou definovány v obou klíčů.  
@@ -107,19 +107,19 @@ Nástroj MSBuild používá sada nástrojů pro úkoly, cíle a nástrojů k ses
   
  Dílčí sady nástrojů aktivní, z nichž se nachází `VisualStudioVersion` vlastnost sestavení. Tato vlastnost může mít jednu z těchto hodnot:  
   
--   "10.0" Určuje dílčí rozhraní .NET Framework 4  
+- "10.0" Určuje dílčí rozhraní .NET Framework 4  
   
--   "11.0" Určuje dílčí rozhraní .NET Framework 4.5  
+- "11.0" Určuje dílčí rozhraní .NET Framework 4.5  
   
--   "12,0" Určuje dílčí rozhraní .NET Framework 4.5.1  
+- "12,0" Určuje dílčí rozhraní .NET Framework 4.5.1  
   
- Sub – sady nástrojů 10.0 a 11.0 je třeba použít pomocí parametru ToolsVersion 4.0. V novějších verzích by měl odpovídat dílčí verze a ToolsVersion.  
+  Sub – sady nástrojů 10.0 a 11.0 je třeba použít pomocí parametru ToolsVersion 4.0. V novějších verzích by měl odpovídat dílčí verze a ToolsVersion.  
   
- Během sestavení, nástroj MSBuild automaticky zjistí a nastaví výchozí hodnoty `VisualStudioVersion` vlastnosti, pokud je ještě není definované.  
+  Během sestavení, nástroj MSBuild automaticky zjistí a nastaví výchozí hodnoty `VisualStudioVersion` vlastnosti, pokud je ještě není definované.  
   
- Přetížení pro poskytuje nástroj MSBuild `ToolLocationHelper` metody, které aplikacím dodávají `VisualStudioVersion` výčtu hodnotu jako parametr  
+  Přetížení pro poskytuje nástroj MSBuild `ToolLocationHelper` metody, které aplikacím dodávají `VisualStudioVersion` výčtu hodnotu jako parametr  
   
- Dílčí sady nástrojů byla zavedena v rozhraní .NET Framework 4.5.  
+  Dílčí sady nástrojů byla zavedena v rozhraní .NET Framework 4.5.  
   
 ## <a name="see-also"></a>Viz také  
  [Standardní a vlastní konfigurace sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md)   

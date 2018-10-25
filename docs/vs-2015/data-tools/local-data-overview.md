@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885574"
 ---
 # <a name="local-data-overview"></a>Přehled lokálních dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Při vývoji datových aplikací, je obvykle vhodné použít místní kopii dat
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Vytvořte projekt databáze SQL serveru tak, že kliknete na uzel řešení v Průzkumníku řešení a zvolíte **přidat &#124; nový projekt**.  V levém podokně vyberte **systému SQL Server &#124; databáze** projektu a klikněte na tlačítko OK. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu databáze pro import souboru místní databáze a vyvíjet aplikace, která se připojuje k databázi vytvořené v projektu. Vhodné při vývoji a upravit schéma databáze ve stejnou dobu, kterou vyvíjíte aplikaci.  
+- Vytvořte projekt databáze SQL serveru tak, že kliknete na uzel řešení v Průzkumníku řešení a zvolíte **přidat &#124; nový projekt**.  V levém podokně vyberte **systému SQL Server &#124; databáze** projektu a klikněte na tlačítko OK. V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu databáze pro import souboru místní databáze a vyvíjet aplikace, která se připojuje k databázi vytvořené v projektu. Vhodné při vývoji a upravit schéma databáze ve stejnou dobu, kterou vyvíjíte aplikaci.  
   
-     ![Import databáze do projektu databáze](../data-tools/media/raddata-import-database-into-database-project.png "raddata importovat databázi do projektu databáze")  
+   ![Import databáze do projektu databáze](../data-tools/media/raddata-import-database-into-database-project.png "raddata importovat databázi do projektu databáze")  
   
--   Pokud vytváříte novou databázi, nejprve přidat **soubor databáze založené na službě** do vašeho projektu (**projektu &#124; přidat novou položku)**. Tím se vytvoří nový soubor MDF, který je připojen k výchozí instanci systému SQL Server na místním počítači, který ve výchozím nastavení je \MSSQLocalDB (localdb). Databáze by se zobrazit v Průzkumníku serveru. Rozbalte uzel a klikněte pravým tlačítkem na uzly pro přidání nové databázové objekty, jako například tabulky, zobrazení, funkce a tak dále.  
+- Pokud vytváříte novou databázi, nejprve přidat **soubor databáze založené na službě** do vašeho projektu (**projektu &#124; přidat novou položku)**. Tím se vytvoří nový soubor MDF, který je připojen k výchozí instanci systému SQL Server na místním počítači, který ve výchozím nastavení je \MSSQLocalDB (localdb). Databáze by se zobrazit v Průzkumníku serveru. Rozbalte uzel a klikněte pravým tlačítkem na uzly pro přidání nové databázové objekty, jako například tabulky, zobrazení, funkce a tak dále.  
   
- Další informace o SQL serveru Express LocalDB, naleznete v tématu [představení LocalDB, vylepšení SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) a [LocalDB: kde je Moje databáze?](http://go.microsoft.com/fwlink/?LinkId=234376) na webu společnosti Microsoft.  
+  Další informace o SQL serveru Express LocalDB, naleznete v tématu [představení LocalDB, vylepšení SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) a [LocalDB: kde je Moje databáze?](http://go.microsoft.com/fwlink/?LinkId=234376) na webu společnosti Microsoft.  
   
- Následující tabulka obsahuje odkazy na témata, která popisují, jak připojit aplikace k místním datům:  
+  Následující tabulka obsahuje odkazy na témata, která popisují, jak připojit aplikace k místním datům:  
   
 |Téma|Popis|  
 |-----------|-----------------|  

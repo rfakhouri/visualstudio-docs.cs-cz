@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812930"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,13 +129,13 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
  Applicationpresents uživatele s tři verze záznamu:  
   
--   Aktuální záznam v databázi  
+- Aktuální záznam v databázi  
   
--   Původní záznam, který je načten do datové sady  
+- Původní záznam, který je načten do datové sady  
   
--   Navrhovaných změn v datové sadě  
+- Navrhovaných změn v datové sadě  
   
- Uživatel je pak možné přepsat databázi navrhovaných verzí, nebo také aktualizaci zrušit a aktualizovat datovou sadu s novými hodnotami z databáze.  
+  Uživatel je pak možné přepsat databázi navrhovaných verzí, nebo také aktualizaci zrušit a aktualizovat datovou sadu s novými hodnotami z databáze.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Povolit zpracování chyb souběžnosti  
   

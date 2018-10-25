@@ -11,23 +11,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f1763f7688dcb74781688e31af856fe531e69c8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874667"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka
+
 V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následujícím způsobem:
 
--   Když uživatel vybere toto tlačítko, program otevře <xref:System.Windows.Forms.OpenFileDialog> pole.
+- Když uživatel vybere toto tlačítko, program otevře <xref:System.Windows.Forms.OpenFileDialog> pole.
 
--   Pokud uživatel otevře soubor s obrázkem, program zobrazí tento obrázek <xref:System.Windows.Forms.PictureBox>.
+- Pokud uživatel otevře soubor s obrázkem, program zobrazí tento obrázek <xref:System.Windows.Forms.PictureBox>.
 
- Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnost chcete, zvolte **kartu** stisknutím klávesy. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.
+Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnost chcete, zvolte **kartu** stisknutím klávesy. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.
 
- ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx). Toto video používá starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx). Toto video používá starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Vytvoření kódu pro zobrazení obslužné rutiny události obrázku tlačítka
 
@@ -35,12 +36,11 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následu
 
 2.  Typ `i` na prázdném řádku mezi dvěma závorkami `{ }`. (V jazyce Visual Basic zadejte na prázdném řádku mezi `Private Sub...` a `End Sub`.) **IntelliSense** otevře se okno, jak je znázorněno na následujícím obrázku.
 
-     ![Technologie IntelliSense s Visual C&#35; kód](../ide/media/express_ifintellisense.png)
-**IntelliSense** s kódem Visual C#
+     ![Technologie IntelliSense s Visual C&#35; kódu](../ide/media/express_ifintellisense.png)
 
 3.  **IntelliSense** okno by mělo zvýrazňovat slovo `if`. (Pokud ne, zadejte malé `f`, a to bude.) Všimněte si, jak trochu *popisek* políčko vedle možnosti **IntelliSense** s popisem, zobrazí se okno **fragment kódu pro příkaz**. (V jazyce Visual Basic popis tlačítka také uvádí, že to je fragment kódu, ale s mírně odlišným zněním.) Chcete-li použít tento fragment, proto zvolte **kartu** klíče pro vložení `if` do kódu. Klikněte na tlačítko **kartu** klíč znovu pro použití `if` fragment kódu. (Pokud jste zvolili jinam a **IntelliSense** okno zmizelo, smažte vše přes `i` a znovu jej napište a **IntelliSense** znovu otevře se okno.)
 
-     ![Visual C&#35; kód](../ide/media/express_highlighttrue.png) kódem jazyka Visual C#
+     ![Visual C&#35; kódu](../ide/media/express_highlighttrue.png)
 
 4.  Pak pomocí technologie IntelliSense k zadání dalšího kódu k otevření **otevřít soubor** dialogové okno. Pokud uživatel vybral **OK** tlačítka, ovládací prvek PictureBox načte soubor, který uživatel vybral. Následující kroky ukazují, jak zadat kód, a přestože je to mnoho kroků, je pouze několik klávesových úhozů:
 
@@ -53,16 +53,13 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následu
     3.  Zadejte tečku (`.`) (mnoho programátorů to tečku.) Protože jste zadali tečku ihned po **openFileDialog1**, **IntelliSense** otevře se okno vyplněné se všemi **OpenFileDialog** vlastnostmi a metodami komponenty. Jedná se o stejné vlastnosti, které se zobrazují v **vlastnosti** okno, když je vyberete v **Návrháře formulářů Windows**. Můžete také metody, které říct komponentě, aby provedla věci (jako je otevření dialogového okna).
 
         > [!NOTE]
-        >  **IntelliSense** můžete v okně zobrazí vlastnosti a metody. Pokud chcete zjistit, co je zobrazeno, podívejte se na ikonu na levé straně každé položky v **IntelliSense** okna. Vidíte obrázek bloku vedle každé metody a obrázek klíče (nebo spanner) vedle jednotlivých vlastností. Je zde také ikona blesku vedle každé události. Tyto obrázky se zobrazí takto.
+        > **IntelliSense** můžete v okně zobrazí vlastnosti a metody. Pokud chcete zjistit, co je zobrazeno, podívejte se na ikonu na levé straně každé položky v **IntelliSense** okna. Vidíte obrázek bloku vedle každé metody a obrázek klíče (nebo spanner) vedle jednotlivých vlastností. Je zde také ikona blesku vedle každé události. Tyto obrázky se zobrazí takto.
 
          ![Ikona metody](../ide/media/express_iconmethod.png)
-**metoda** ikonu
 
          ![Ikona vlastnost](../ide/media/express_iconproperty.png)
-**vlastnost** ikonu
 
          ![Ikona události](../ide/media/express_iconevent.png)
-**události** ikonu
 
     4.  Začněte zadáním `ShowDialog` (malá a velká písmena nejsou důležitá pro technologii IntelliSense). `ShowDialog()` Metoda se zobrazí **otevřít soubor** dialogové okno. Poté, co okno zvýraznilo **ShowDialog**, zvolte **kartu** klíč. Můžete také zvýraznit "ShowDialog" a zvolte **F1** klíč pro něj zobrazit nápovědu.
 
@@ -71,14 +68,14 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následu
     5.  Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` by měl nyní vypadat takto: "openFileDialog1.ShowDialog()".
 
         > [!NOTE]
-        >  Metody jsou důležitou součástí každého programu a tento kurz ukázal několik způsobů, jak používat metody. Můžete volat metodu komponenty, které sděluje, má něco udělat, jako jste volali **OpenFileDialog** komponenty `ShowDialog()` metody. Můžete vytvořit vlastní metody, aby váš program prováděl akce, jako vytváříte nyní, volá se, `showButton_Click()` metodu, která otevře dialogové okno a obrázek, když uživatel vybere tlačítko.
+        > Metody jsou důležitou součástí každého programu a tento kurz ukázal několik způsobů, jak používat metody. Můžete volat metodu komponenty, které sděluje, má něco udělat, jako jste volali **OpenFileDialog** komponenty `ShowDialog()` metody. Můžete vytvořit vlastní metody, aby váš program prováděl akce, jako vytváříte nyní, volá se, `showButton_Click()` metodu, která otevře dialogové okno a obrázek, když uživatel vybere tlačítko.
 
     6.  Pro jazyk Visual C# přidejte mezeru a pak přidejte dva symboly rovná se (`==`). V jazyce Visual Basic přidejte mezeru a pak používat jediný symbol rovnítka (`=`). (Visual C# a Visual Basic používá odlišné operátory rovnosti.)
 
     7.  Přidejte další mezeru. Jakmile provedete, jiné **IntelliSense** otevře se okno. Začněte zadáním `DialogResult` a zvolte **kartu** klíč a přidejte ji.
 
         > [!NOTE]
-        >  Při psaní kódu pro volání metody, někdy vrací hodnotu. V takovém případě **OpenFileDialog** komponenty <xref:System.Windows.Forms.CommonDialog.ShowDialog> metoda vrátí hodnotu <xref:System.Windows.Forms.DialogResult> hodnotu. DialogResult je zvláštní hodnota, která zjistíte, co se stalo v dialogovém okně. **OpenFileDialog** komponenta může vést k výběru uživatele **OK** nebo **zrušit**, takže jeho `ShowDialog()` metoda vrátí buď `DialogResult.OK` nebo `DialogResult.Cancel`.
+        > Při psaní kódu pro volání metody, někdy vrací hodnotu. V takovém případě **OpenFileDialog** komponenty <xref:System.Windows.Forms.CommonDialog.ShowDialog> metoda vrátí hodnotu <xref:System.Windows.Forms.DialogResult> hodnotu. DialogResult je zvláštní hodnota, která zjistíte, co se stalo v dialogovém okně. **OpenFileDialog** komponenta může vést k výběru uživatele **OK** nebo **zrušit**, takže jeho `ShowDialog()` metoda vrátí buď `DialogResult.OK` nebo `DialogResult.Cancel`.
 
     8.  Zadejte tečku k otevření hodnotu DialogResult **IntelliSense** okna. Zadejte písmeno `O` a zvolte **kartu** klíče pro vložení **OK**.
 

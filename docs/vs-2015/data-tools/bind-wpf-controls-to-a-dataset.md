@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892997"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
  Tento návod znázorňuje následující úlohy:  
   
--   Vytvoření aplikace WPF a datové sady, který je generován z dat z ukázkové databáze AdventureWorksLT.  
+- Vytvoření aplikace WPF a datové sady, který je generován z dat z ukázkové databáze AdventureWorksLT.  
   
--   Vytvoření sady ovládacích prvků vázaných na data přetažením tabulku dat z **zdroje dat** okna do okna Návrháře WPF.  
+- Vytvoření sady ovládacích prvků vázaných na data přetažením tabulku dat z **zdroje dat** okna do okna Návrháře WPF.  
   
--   Vytváření tlačítek, procházet záznamy produktů vpřed a zpět.  
+- Vytváření tlačítek, procházet záznamy produktů vpřed a zpět.  
   
--   Vytvoření tlačítka, který uloží změny, které uživatelé provádět na záznamy produktu do tabulky dat a podkladový zdroj dat.  
+- Vytvoření tlačítka, který uloží změny, které uživatelé provádět na záznamy produktu do tabulky dat a podkladový zdroj dat.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Přístup ke spuštěné instanci systému SQL Server nebo SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webových stránkách CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Přístup ke spuštěné instanci systému SQL Server nebo SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webových stránkách CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:  
+  Předchozí znalosti následujících konceptů je také užitečné, ale nejsou vyžadovány k dokončení návodu:  
   
--   Datových sad a TableAdapters. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) a [TableAdapter – přehled](../data-tools/tableadapter-overview.md).  
+- Datových sad a TableAdapters. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) a [TableAdapter – přehled](../data-tools/tableadapter-overview.md).  
   
--   Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Práce s WPF Designer. Další informace najdete v tématu [WPF a Silverlight Návrhář přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Datové vazby WPF. Další informace najdete v tématu [přehled datových vazeb](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Vytvoření projektu  
  Vytvořte nový projekt WPF. Projekt se zobrazí záznamy produktů.  

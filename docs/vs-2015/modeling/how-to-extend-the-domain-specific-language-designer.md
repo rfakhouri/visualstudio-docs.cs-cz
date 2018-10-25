@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878554"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření návrháře jazyka specifického pro doménu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ Můžete provést rozšíření návrháře, který použijete k úpravám defin
   
  Nasazení rozšíření do hlavní [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]a do jiných počítačů, postupujte podle těchto kroků:  
   
-1.  V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\*\\\*.VSIX  
+1. V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\*\\\*.VSIX  
   
-2.  Zkopírujte tento soubor do cílového počítače a v Průzkumníku Windows (nebo Průzkumníka souborů), poklepejte na něj.  
+2. Zkopírujte tento soubor do cílového počítače a v Průzkumníku Windows (nebo Průzkumníka souborů), poklepejte na něj.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otevře Správce rozšíření pro potvrzení, že je nainstalovaná rozšíření.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otevře Správce rozšíření pro potvrzení, že je nainstalovaná rozšíření.  
   
- Toto rozšíření odinstalovat, postupujte podle těchto kroků:  
+   Toto rozšíření odinstalovat, postupujte podle těchto kroků:  
   
-1.  v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
+3. v [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]na **nástroje** nabídky, klikněte na tlačítko **Správce rozšíření**.  
   
-2.  Vyberte požadované rozšíření a odstranit ji.  
+4. Vyberte požadované rozšíření a odstranit ji.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Přidání příkazu v místní nabídce  
  Chcete-li příkaz místní nabídky, se zobrazí na povrchu návrháře DSL nebo v okně Průzkumník DSL, zápis připomínající následující třídy.  

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854900"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Přidání místní proměnné v sadě Visual Studio
 
@@ -36,23 +36,23 @@ Tato generace kód platí pro:
 
    - C#:
 
-    ![Zvýrazněný kód jazyka C#](media/local-highlight-cs.png)
+       ![Zvýrazněný kód jazyka C#](media/local-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Zvýrazněný kód jazyka Visual Basic](media/local-highlight-vb.png)
+       ![Zvýrazněný kód jazyka Visual Basic](media/local-highlight-vb.png)
 
-1. Dále proveďte jednu z následujících akcí:
+2. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
    - **Myši**
-     - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-     - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
+      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s červená vlnovka.
 
    ![Zavést místní náhled](media/local-preview-cs.png)
 
-1. Vyberte **zavést místní pro (všechny výskyty) "*výraz*"** z rozevírací nabídky.
+3. Vyberte **zavést místní pro (všechny výskyty) "*výraz*"** z rozevírací nabídky.
 
    > [!TIP]
    > Použití **náhled změn** odkaz v dolní části okna náhledu [zobrazíte všechny změny](../../ide/preview-changes.md) , který bude proveden před zvolení požadované možnosti.
@@ -61,11 +61,11 @@ Tato generace kód platí pro:
 
    - C#:
 
-      ![Implementovat rozhraní výsledek C#](media/local-result-cs.png)
+       ![Implementovat rozhraní výsledek C#](media/local-result-cs.png)
 
    - Visual Basic:
 
-      ![Implementovat rozhraní výsledek VB](media/local-result-vb.png)
+       ![Implementovat rozhraní výsledek VB](media/local-result-vb.png)
 
    > [!NOTE]
    > Můžete použít **.. nástroji výskytů...**  nahraďte každý výskyt vybraného výrazu, ne jenom jeden konkrétně zdůraznily možnost nabídky.

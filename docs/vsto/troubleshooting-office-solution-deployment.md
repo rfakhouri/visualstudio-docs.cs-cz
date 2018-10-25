@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886000"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Řešení potíží s nasazením řešení pro systém Office
   Toto téma obsahuje informace o tom, jak řešit běžné problémy, které se mohou vyskytnout při nasazení řešení Office.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774650"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Změna názvu sestavení způsobí, že je v konfliktu  
  Pokud změníte **název sestavení** hodnota v **aplikace** stránku **Návrháře projektu** po nasazení řešení již, slouží k úpravě nástroje pro publikování Instalační balíček na některou *Setup.exe* souborů a dva manifesty nasazení. Pokud nasadíte dva soubory manifestu, může dojít k následující podmínky:  
   
--   Pokud koncový uživatel nainstaluje obě verze, aplikace bude načten obou Add-ins VSTO.  
+- Pokud koncový uživatel nainstaluje obě verze, aplikace bude načten obou Add-ins VSTO.  
   
--   Pokud doplňku VSTO byl nainstalován předtím, než došlo ke změně názvu sestavení, koncový uživatel nikdy přijímat aktualizace.  
+- Pokud doplňku VSTO byl nainstalován předtím, než došlo ke změně názvu sestavení, koncový uživatel nikdy přijímat aktualizace.  
   
- Aby se zabránilo těchto podmínek, neměňte řešení **název sestavení** hodnota po nasazení řešení.  
+  Aby se zabránilo těchto podmínek, neměňte řešení **název sestavení** hodnota po nasazení řešení.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Zkontrolujte, zda aktualizace trvá moc dlouho  
  Visual Studio 2010 Tools for Office runtime obsahuje položky registru, která správcům umožňuje nastavit hodnotu časového limitu pro stahování manifestů a řešení.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774650"
  Rozhraní .NET Framework, můžete přidat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]a primární spolupracující sestavení Office do instalačního balíčku jako požadavky, které jsou nasazené v rámci řešení pro Office. Informace o postupu instalace primárních sestavení vzájemné spolupráce naleznete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) a [postupy: sestavení primární spolupráce Office nainstalovat](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Publikovat pomocí "Localhost" může způsobit problémy s instalací  
- Při použití "http://localhost" jako umístění publikování nebo instalaci řešení na úrovni dokumentu, **Průvodce publikováním** nebude tak řetězec převést na název skutečné počítače. V takovém případě řešení musí být nainstalováno ve vývojovém počítači. Chcete-li nasazené řešení používají službu IIS na vývojovém počítači, místo localhost použijte plně kvalifikovaný název pro všechna místa protokolu HTTP/HTTPS nebo FTP.  
+ Při použití "<http://localhost>" jako umístění publikování nebo instalaci řešení na úrovni dokumentu, **Průvodce publikováním** nebude tak řetězec převést na název skutečné počítače. V takovém případě řešení musí být nainstalováno ve vývojovém počítači. Chcete-li nasazené řešení používají službu IIS na vývojovém počítači, místo localhost použijte plně kvalifikovaný název pro všechna místa protokolu HTTP/HTTPS nebo FTP.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>V mezipaměti sestavení nejsou načtena místo aktualizované sestavení  
  Zavaděč sestavení rozhraní .NET Framework Fusion načte kopii sestavení v mezipaměti, když výstupní cesta projektu je ve sdílené síti, je sestavení podepsáno pomocí silného názvu a nedojde ke změně verze sestavení vlastního nastavení. Při aktualizaci sestavení, které splňuje tyto podmínky, aktualizace se už nebude při příštím spuštění projektu, protože je načtena kopie v mezipaměti.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774650"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Chcete-li stáhnout sestavení namísto načítání kopie v mezipaměti  
   
-1.  V panelu nabídky zvolte **projektu**, _ProjectName_**vlastnosti**.  
+1. V panelu nabídky zvolte **projektu**, _ProjectName_**vlastnosti**.  
   
-2.  Na **aplikace** zvolte **informace o sestavení**.  
+2. Na **aplikace** zvolte **informace o sestavení**.  
   
-3.  V prvním **verze sestavení** , zadejte hvězdičku (\*) a klikněte na tlačítko **OK** tlačítko.  
+3. V prvním **verze sestavení** , zadejte hvězdičku (\*) a klikněte na tlačítko **OK** tlačítko.  
   
- Po změně verze sestavení, můžete pokračovat k podepsání sestavení silným názvem a Fusion načte nejnovější verzi vlastního nastavení.  
+   Po změně verze sestavení, můžete pokračovat k podepsání sestavení silným názvem a Fusion načte nejnovější verzi vlastního nastavení.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Instalace selže, pokud identifikátor URI obsahuje znaky, které nejsou US-ASCII  
  Při publikování řešení Office na umístění protokolu HTTP/HTTPS nebo FTP, cesta nemůže obsahovat libovolné znaky Unicode, které nejsou v US-ASCII. Tyto znaky může způsobit nekonzistentní chování v instalačním programu. Používejte US-ASCII znaky pro cestu instalace.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774650"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Došlo k nezachycené výjimce nebo metoda chyby při instalaci řešení nebyl nalezen  
  Při instalaci Office řešení pomocí otevření manifestu nasazení ( *.vsto* souboru), může se zobrazit Office aplikace, dokumentu nebo sešitu, chybové zprávy byly splněny následující podmínky:  
   
--   Metoda nebyla nalezena.  
+- Metoda nebyla nalezena.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Došlo k nezachycené výjimce.  
+- Došlo k nezachycené výjimce.  
   
- Chcete-li tyto chybové zprávy, nainstalujte řešení spuštěním instalačního programu.  
+  Chcete-li tyto chybové zprávy, nainstalujte řešení spuštěním instalačního programu.  
   
- Při instalaci řešení bez nutnosti spuštění instalačního programu Instalační program nebude kontrolovat nebo instalace požadovaných součástí. Instalační program zkontroluje požadavky na správnou verzi a nainstaluje je podle potřeby.  
+  Při instalaci řešení bez nutnosti spuštění instalačního programu Instalační program nebude kontrolovat nebo instalace požadovaných součástí. Instalační program zkontroluje požadavky na správnou verzi a nainstaluje je podle potřeby.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Manifest klíče registru pro doplňky změnit, jakmile je vytvořen projekt InstallShield Limited Edition  
  Klíč registru manifestu, který je součástí instalace doplňku VSTO program někdy změny z *.vsto* k *. dll.manifest* při sestavení projekt InstallShield Limited Edition.  

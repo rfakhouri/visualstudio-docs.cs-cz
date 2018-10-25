@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879113"
 ---
 # <a name="performance-session-properties"></a>Vlastnosti výkonnostní relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, j
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Vytváření **relace výkonu** spuštěním **Průvodce výkonem** nebo ručně vytvořit relaci. **Relace výkonu** se zobrazí v **prohlížeč výkonu** po **relace výkonu** se vytvořil.  
+  Vytváření **relace výkonu** spuštěním **Průvodce výkonem** nebo ručně vytvořit relaci. **Relace výkonu** se zobrazí v **prohlížeč výkonu** po **relace výkonu** se vytvořil.  
   
- Chcete-li zobrazit **relace výkonu** vlastnosti, vyberte název relace v **prohlížeč výkonu**, pravým tlačítkem myši a potom vyberte **vlastnosti**.  
+  Chcete-li zobrazit **relace výkonu** vlastnosti, vyberte název relace v **prohlížeč výkonu**, pravým tlačítkem myši a potom vyberte **vlastnosti**.  
   
- Relace výkonu má následující stránky vlastností:  
+  Relace výkonu má následující stránky vlastností:  
   
 ## <a name="general"></a>Obecné  
  Tato nastavení umožňují vybrat metoda pro přidání kolekce objektů .NET a data o životním cyklu a k určení umístění výchozí sestavy profilování a pojmenování konvence.  
@@ -59,17 +59,17 @@ A **relace výkonu** vám umožní nakonfigurovat nastavení, která určují, j
 ## <a name="sampling"></a>Vzorkování  
  Tato nastavení umožňují vybrat interval vzorkování událostí a vzorkování při vzorkování se používá jako metodu profilace. Událost vzorku se používá ke shromažďování dat profilování v zadaném intervalu. Například pokud je událost vzorku hodinových cyklů a interval vzorkování je nastavený na 10 000 000 pak data profilace se shromažďují pro za každých 10 milionů hodinových cyklů. Následující čtyři typy ukázkové události jsou k dispozici:  
   
--   Hodinových cyklů - procesoru vázán problémy  
+- Hodinových cyklů - procesoru vázán problémy  
   
--   Problémy související s stránkování – paměť  
+- Problémy související s stránkování – paměť  
   
--   Systém volá - pro vstupně-výstupní operace související s problémy  
+- Systém volá - pro vstupně-výstupní operace související s problémy  
   
--   Čítače výkonu – problémy výkonu na nízké úrovni  
+- Čítače výkonu – problémy výkonu na nízké úrovni  
   
--   Další ukázkové události lze upravit podle dostupných čítačů výkonu  
+- Další ukázkové události lze upravit podle dostupných čítačů výkonu  
   
- Další informace najdete v tématu [jak: Zvolte událostí vzorkování](../profiling/how-to-choose-sampling-events.md)  
+  Další informace najdete v tématu [jak: Zvolte událostí vzorkování](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>binární  
  Tato nastavení umožňují určit, jestli chcete přemístit instrumentované binární soubor do jiného umístění. Například pokud profilujete My.DLL a rozhodnou přemístit instrumentované binární soubor se vytvoří záložní kopie My.DLL s názvem My.Orig.DLL. Následně se mění My.DLL vložíte-li testy, shromažďovat data. Pokud se rozhodnete přemístit instrumentované binární soubor, původní binární soubor se nepřejmenuje a instrumentovaný binární soubor je zkopírován do zadaného umístění pro použití během instrumentace.  

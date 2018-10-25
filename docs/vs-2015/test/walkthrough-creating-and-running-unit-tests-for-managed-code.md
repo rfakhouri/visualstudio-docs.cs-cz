@@ -19,12 +19,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874498"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Postupy: Vytváření a spouštění testů jednotek pro spravovaný kód
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,17 +39,17 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
   
  [Vytvoření testovací třídy](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
   
--   [Požadavky na testovací třídu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
+- [Požadavky na testovací třídu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
   
- [Vytvoření první testovací metody](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
+  [Vytvoření první testovací metody](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
   
--   [Požadavky na testovací metodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
+- [Požadavky na testovací metodu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
   
- [Sestavení a spuštění testu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
+  [Sestavení a spuštění testu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
   
- [Oprava kódu a znovu spustit testy](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
+  [Oprava kódu a znovu spustit testy](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
   
- [Použití jednotkových testů ke zlepšení kódu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
+  [Použití jednotkových testů ke zlepšení kódu](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
 >  Tento návod používá rozhraní testování částí Microsoft pro spravovaný kód. Průzkumník testů může také spouštět testy z jednotky třetí strany rozhraní pro testování, které mají adaptéry pro Průzkumník testů. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)  
@@ -63,37 +63,37 @@ Tento návod vás postupně provede vytváření, spouštění a přizpůsobení
   
 ##  <a name="BKMK_Prepare_the_walkthrough"></a> Příprava návodu  
   
-1.  Otevřít Visual Studio.  
+1. Otevřít Visual Studio.  
   
-2.  Na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
+2. Na **souboru** nabídky, přejděte k **nový** a potom klikněte na tlačítko **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+    **Nový projekt** zobrazí se dialogové okno.  
   
-3.  V části **nainstalované šablony**, klikněte na tlačítko **Visual C#**.  
+3. V části **nainstalované šablony**, klikněte na tlačítko **Visual C#**.  
   
-4.  V seznamu typů aplikací, klikněte na tlačítko **knihovny tříd**.  
+4. V seznamu typů aplikací, klikněte na tlačítko **knihovny tříd**.  
   
-5.  V **název** zadejte `Bank` a potom klikněte na tlačítko **OK**.  
+5. V **název** zadejte `Bank` a potom klikněte na tlačítko **OK**.  
   
-    > [!NOTE]
-    >  Pokud již název "Banka" používán, zvolte jiný název projektu.  
+   > [!NOTE]
+   >  Pokud již název "Banka" používán, zvolte jiný název projektu.  
   
-     Nový projekt banka se vytvoří a zobrazí v Průzkumníku řešení se soubor Class1.cs je otevřen v editoru kódu.  
+    Nový projekt banka se vytvoří a zobrazí v Průzkumníku řešení se soubor Class1.cs je otevřen v editoru kódu.  
   
-    > [!NOTE]
-    >  Pokud soubor Class1.cs není otevřen v editoru kódu, dvakrát klikněte na soubor Class1.cs v Průzkumníku řešení otevřete.  
+   > [!NOTE]
+   >  Pokud soubor Class1.cs není otevřen v editoru kódu, dvakrát klikněte na soubor Class1.cs v Průzkumníku řešení otevřete.  
   
-6.  Zkopírujte zdrojový kód z [ukázkový projekt pro vytvoření testů jednotek](../test/sample-project-for-creating-unit-tests.md).  
+6. Zkopírujte zdrojový kód z [ukázkový projekt pro vytvoření testů jednotek](../test/sample-project-for-creating-unit-tests.md).  
   
-7.  Nahraďte původní obsah souboru Class1.cs kódem z [ukázkový projekt pro vytvoření testů jednotek](../test/sample-project-for-creating-unit-tests.md).  
+7. Nahraďte původní obsah souboru Class1.cs kódem z [ukázkový projekt pro vytvoření testů jednotek](../test/sample-project-for-creating-unit-tests.md).  
   
-8.  Uložte soubor jako BankAccount.cs  
+8. Uložte soubor jako BankAccount.cs  
   
 9. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
- Nyní máte projekt s názvem banka. Obsahuje zdrojový kód pro testování a nástroje a otestovat ho s. Obor názvů pro banku, **BankAccountNS**, obsahuje veřejnou třídu **BankAccount**, jejíž metody budete testovat v následujících postupech.  
+   Nyní máte projekt s názvem banka. Obsahuje zdrojový kód pro testování a nástroje a otestovat ho s. Obor názvů pro banku, **BankAccountNS**, obsahuje veřejnou třídu **BankAccount**, jejíž metody budete testovat v následujících postupech.  
   
- V tomto rychlém startu se zaměříme na `Debit` metody. MD metoda je volána, když jsou peníze účtu a obsahuje následující kód:  
+   V tomto rychlém startu se zaměříme na `Debit` metody. MD metoda je volána, když jsou peníze účtu a obsahuje následující kód:  
   
 ```csharp  
 // method under test  
@@ -171,52 +171,52 @@ using BankAccountNS;
 ###  <a name="BKMK_Test_class_requirements"></a> Požadavky na testovací třídu  
  Minimální požadavky na testovací třídu jsou následující:  
   
--   `[TestClass]` Atribut je požadován v testování části Microsoft framework pro spravovaný kód pro libovolnou třídu obsahující metody jednotkového testu, které chcete spustit v aplikaci Test Explorer.  
+- `[TestClass]` Atribut je požadován v testování části Microsoft framework pro spravovaný kód pro libovolnou třídu obsahující metody jednotkového testu, které chcete spustit v aplikaci Test Explorer.  
   
--   Každá testovací metoda, která má být spuštěna Průzkumníkem testů musí mít `[TestMethod]`atribut.  
+- Každá testovací metoda, která má být spuštěna Průzkumníkem testů musí mít `[TestMethod]`atribut.  
   
- Můžete mít další třídy v projektu testů jednotek, které nemají `[TestClass]` atribut který může mít jiné metody v testovacích třídách, které nemají `[TestMethod]` atribut. Ve vašich testovacích metodách můžete použít tyto třídy a metody.  
+  Můžete mít další třídy v projektu testů jednotek, které nemají `[TestClass]` atribut který může mít jiné metody v testovacích třídách, které nemají `[TestMethod]` atribut. Ve vašich testovacích metodách můžete použít tyto třídy a metody.  
   
 ##  <a name="BKMK_Create_the_first_test_method"></a> Vytvoření první testovací metody  
  V tomto postupu, napíšeme v testování částí, metody, které ověří chování `Debit` metodu `BankAccount` třídy. Metoda je uvedena výše.  
   
  Analýzou testované metody ověříme, že existují aspoň tři typy chování, které je potřeba zkontrolovat:  
   
-1.  Metoda vyvolá [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Pokud je hodnota debetní větší než zůstatek na účtu.  
+1. Metoda vyvolá [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Pokud je hodnota debetní větší než zůstatek na účtu.  
   
-2.  Vyvolá také `ArgumentOutOfRangeException` Pokud debetní velikost je menší než nula.  
+2. Vyvolá také `ArgumentOutOfRangeException` Pokud debetní velikost je menší než nula.  
   
-3.  Pokud kontroly v 1.) a 2.) jsou splněny, metoda odečte požadovanou částku od zůstatku účtu.  
+3. Pokud kontroly v 1.) a 2.) jsou splněny, metoda odečte požadovanou částku od zůstatku účtu.  
   
- V prvním testu ověříme, že platná částka (která je menší než zůstatek na účtu a je větší než nula) stáhne z účtu objektu správnou velikost.  
+   V prvním testu ověříme, že platná částka (která je menší než zůstatek na účtu a je větší než nula) stáhne z účtu objektu správnou velikost.  
   
 #### <a name="to-create-a-test-method"></a>Vytvoření testovací metody  
   
-1.  Přidat using `BankAccountNS;` příkazu do souboru BankAccountTests.cs.  
+1. Přidat using `BankAccountNS;` příkazu do souboru BankAccountTests.cs.  
   
-2.  Přidejte následující metodu do `BankAccountTests` třídy:  
+2. Přidejte následující metodu do `BankAccountTests` třídy:  
   
-    ```csharp  
-    // unit test code  
-    [TestMethod]  
-    public void Debit_WithValidAmount_UpdatesBalance()  
-    {  
-        // arrange  
-        double beginningBalance = 11.99;  
-        double debitAmount = 4.55;  
-        double expected = 7.44;  
-        BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);  
+   ```csharp  
+   // unit test code  
+   [TestMethod]  
+   public void Debit_WithValidAmount_UpdatesBalance()  
+   {  
+       // arrange  
+       double beginningBalance = 11.99;  
+       double debitAmount = 4.55;  
+       double expected = 7.44;  
+       BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);  
   
-        // act  
-        account.Debit(debitAmount);  
+       // act  
+       account.Debit(debitAmount);  
   
-        // assert  
-        double actual = account.Balance;  
-        Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");  
-    }  
-    ```  
+       // assert  
+       double actual = account.Balance;  
+       Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");  
+   }  
+   ```  
   
- Metoda je velmi jednoduchá. Doporučujeme nastavit nový `BankAccount` objekt s počáteční zůstatek a potom zrušit platnou částku. Používáme rozhraní testování částí Microsoft pro spravovaný kód <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> metodu k ověření, že je konečný zůstatek, co očekávat.  
+   Metoda je velmi jednoduchá. Doporučujeme nastavit nový `BankAccount` objekt s počáteční zůstatek a potom zrušit platnou částku. Používáme rozhraní testování částí Microsoft pro spravovaný kód <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> metodu k ověření, že je konečný zůstatek, co očekávat.  
   
 ###  <a name="BKMK_Test_method_requirements"></a> Požadavky na testovací metodu  
  Testovací metoda musí splňovat následující požadavky:  
@@ -242,7 +242,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Oprava kódu a znovu spustit testy  
  **Analýza výsledků testování**  
   
- Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEquals` metoda, zpráva zobrazí očekávaným ((**očekávaná\<*XXX*>** parametr) a co vlastně přijatých ( **Skutečné\<*YYY* >** parametr). Očekávali jsme zůstatek zůstatku, ale místo toho se zvýšila množství stažení.  
+ Výsledek testu obsahuje zprávu s popisem chyby. Pro `AreEquals` metoda, zpráva zobrazí očekávaným ((<strong>očekávaná\<*XXX*></strong>parametr) a co vlastně přijatých ( **Skutečné\<*YYY* >** parametr). Očekávali jsme zůstatek zůstatku, ale místo toho se zvýšila množství stažení.  
   
  Přezkoumání kódu ukazuje, že Jednotkový test proběhl úspěšně chybu. Množství stažení se přidá do zůstatek na účtu, když by měl být odečtena.  
   
@@ -271,13 +271,13 @@ m_balance -= amount;
   
  Po vytvoření testovací metody pro potvrzení, že platná částka se správně odečte v `Debit` metody jsme můžete zapnout zbývajícími případy původní analýzy:  
   
-1.  Metoda vyvolá `ArgumentOutOfRangeException` Pokud debetní velikost je větší než zůstatek na účtu.  
+1. Metoda vyvolá `ArgumentOutOfRangeException` Pokud debetní velikost je větší než zůstatek na účtu.  
   
-2.  Vyvolá také `ArgumentOutOfRangeException` Pokud debetní velikost je menší než nula.  
+2. Vyvolá také `ArgumentOutOfRangeException` Pokud debetní velikost je menší než nula.  
   
- **Vytvoření testovacích metod**  
+   **Vytvoření testovacích metod**  
   
- První pokus o vytvoření testovací metody pro řešení těchto problémů, vypadá slibně:  
+   První pokus o vytvoření testovací metody pro řešení těchto problémů, vypadá slibně:  
   
 ```csharp  
 //unit test method  
@@ -300,21 +300,21 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
  Používáme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> atribut k vyhodnocení, že byla vyvolána správná výjimka. Atribut způsobí, že se test nezdaří, pokud `ArgumentOutOfRangeException` je vyvolána výjimka. Spuštění testu s kladnými i negativní `debitAmount` hodnoty a následná dočasná změna testované vyvolána obecná výjimka metody <xref:System.ApplicationException> když velikost je menší než nula ukazuje správné chování testu. K otestování případu, kdy vybíraná hodnota je větší než zůstatek, vše, co musíme udělat je:  
   
-1.  Vytvořit novou testovací metodu s názvem `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
+1. Vytvořit novou testovací metodu s názvem `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
-2.  Zkopírovat tělo metody z `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` do nové metody.  
+2. Zkopírovat tělo metody z `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` do nové metody.  
   
-3.  Nastavte `debitAmount` na číslo větší než zůstatek na účtu.  
+3. Nastavte `debitAmount` na číslo větší než zůstatek na účtu.  
   
- **Spustit testy**  
+   **Spustit testy**  
   
- Spuštění těchto dvou metod s různými hodnotami parametru `debitAmount` ukazuje, že testy vhodně ověřují zbývající případy. Spuštění všech tří testů potvrzuje, že všechny případy původní analýzy jsou správně pokryty.  
+   Spuštění těchto dvou metod s různými hodnotami parametru `debitAmount` ukazuje, že testy vhodně ověřují zbývající případy. Spuštění všech tří testů potvrzuje, že všechny případy původní analýzy jsou správně pokryty.  
   
- **Pokračování analýzy**  
+   **Pokračování analýzy**  
   
- Dvě poslední metody testování jsou však také poněkud problematické. Není možné si být určité která podmínka testovaného kódu byla vyvolána při provádění těchto testů. Nějaký způsob odlišení těchto dvou podmínek by být užitečné. Jako jsme přemýšlení o tomto problému další, je zřejmé, že znalost, která podmínka porušení by zvýšila důvěru v testech. Tyto informace by také pravděpodobně mohla být užitečná pro produkční mechanismus, který zpracovává výjimku vyvolanou testovanou metodou. Generování dalších informací, vyvolá metoda výjimku pomáhá všech zúčastněných, ale `ExpectedException` atribut nedokáže s takovou informací...  
+   Dvě poslední metody testování jsou však také poněkud problematické. Není možné si být určité která podmínka testovaného kódu byla vyvolána při provádění těchto testů. Nějaký způsob odlišení těchto dvou podmínek by být užitečné. Jako jsme přemýšlení o tomto problému další, je zřejmé, že znalost, která podmínka porušení by zvýšila důvěru v testech. Tyto informace by také pravděpodobně mohla být užitečná pro produkční mechanismus, který zpracovává výjimku vyvolanou testovanou metodou. Generování dalších informací, vyvolá metoda výjimku pomáhá všech zúčastněných, ale `ExpectedException` atribut nedokáže s takovou informací...  
   
- Testované metody znova podíváme, vidíme oba podmíněné příkazy používají `ArgumentOutOfRangeException` konstruktor, který přebírá název argumentu, který jako parametr:  
+   Testované metody znova podíváme, vidíme oba podmíněné příkazy používají `ArgumentOutOfRangeException` konstruktor, který přebírá název argumentu, který jako parametr:  
   
 ```csharp  
 throw new ArgumentOutOfRangeException("amount");  
@@ -353,13 +353,13 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
  V testovací metodě nejprve odeberte `ExpectedException` atribut. Místo toho jsme zachyťte vyvolanou výjimku a ověřte, že byla vyvolána ve správném podmíněném příkazu. Však musí nyní rozhodneme mezi dvěma možnostmi, jak ověřit zbývající podmínky. Například v `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` metodu, můžete provést jednu z následujících akcí:  
   
--   Vyhodnotit, že `ActualValue` vlastnosti výjimky (druhý parametr `ArgumentOutOfRangeException` konstruktoru) je větší než počáteční zůstatek. Tato možnost vyžaduje otestování `ActualValue` vlastnosti výjimky proti `beginningBalance` proměnných testovací metody a taky vyžaduje pak ověřte, že `ActualValue` je větší než nula.  
+- Vyhodnotit, že `ActualValue` vlastnosti výjimky (druhý parametr `ArgumentOutOfRangeException` konstruktoru) je větší než počáteční zůstatek. Tato možnost vyžaduje otestování `ActualValue` vlastnosti výjimky proti `beginningBalance` proměnných testovací metody a taky vyžaduje pak ověřte, že `ActualValue` je větší než nula.  
   
--   Vyhodnocení, že zpráva (třetí parametr konstruktoru) obsahuje `DebitAmountExceedsBalanceMessage` definované v `BankAccount` třídy.  
+- Vyhodnocení, že zpráva (třetí parametr konstruktoru) obsahuje `DebitAmountExceedsBalanceMessage` definované v `BankAccount` třídy.  
   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda v rozhraní testování částí Microsoft umožňuje ověřit druhou možnost bez nutnosti výpočtů potřebných v první možnosti.  
+  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> Metoda v rozhraní testování částí Microsoft umožňuje ověřit druhou možnost bez nutnosti výpočtů potřebných v první možnosti.  
   
- Druhý pokus revize metody `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` může vypadat například takto:  
+  Druhý pokus revize metody `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` může vypadat například takto:  
   
 ```csharp  
 [TestMethod]  
@@ -387,15 +387,15 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
  Při opakovaném testování testovacích metod s různými hodnotami, dojde k následujícím skutečnostem:  
   
-1.  Pokud jsme zachycení správné chyby pomocí assert kde `debitAmount` , který je větší než zůstatek na účtu `Contains` předá assert, výjimka bude ignorována a proto testovací metoda skončí úspěchem. Toto je chování, které chceme.  
+1. Pokud jsme zachycení správné chyby pomocí assert kde `debitAmount` , který je větší než zůstatek na účtu `Contains` předá assert, výjimka bude ignorována a proto testovací metoda skončí úspěchem. Toto je chování, které chceme.  
   
-2.  Při použití `debitAmount` , která je menší než 0, vyhodnocení selže, protože je vrácena nesprávná chybová zpráva. Vyhodnocení také selže, pokud je zavedena dočasná `ArgumentOutOfRange` výjimky na jiném místě testované metody. Toto chování je také vhodné.  
+2. Při použití `debitAmount` , která je menší než 0, vyhodnocení selže, protože je vrácena nesprávná chybová zpráva. Vyhodnocení také selže, pokud je zavedena dočasná `ArgumentOutOfRange` výjimky na jiném místě testované metody. Toto chování je také vhodné.  
   
-3.  Pokud `debitAmount` je hodnota platná (to znamená, menší než zůstatek, ale větší než nula, žádná výjimka je zachycena, proto nikdy zachycuje assert. Testovací metoda skončí úspěchem. To není správné, protože chceme, aby testovací metoda selhat, pokud není vyvolána žádná výjimka.  
+3. Pokud `debitAmount` je hodnota platná (to znamená, menší než zůstatek, ale větší než nula, žádná výjimka je zachycena, proto nikdy zachycuje assert. Testovací metoda skončí úspěchem. To není správné, protože chceme, aby testovací metoda selhat, pokud není vyvolána žádná výjimka.  
   
- Třetí fakt je chybou v testovací metodě. Pokus o vyřešení problému se nám přidat <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> uplatnit na konci testovací metody pro zpracování případu, kdy není vyvolána žádná výjimka.  
+   Třetí fakt je chybou v testovací metodě. Pokus o vyřešení problému se nám přidat <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> uplatnit na konci testovací metody pro zpracování případu, kdy není vyvolána žádná výjimka.  
   
- Ale opakované ukazuje, že test nyní selže, pokud k zachycení správné výjimky. Příkaz catch zruší výjimku a metoda pokračuje v provádění, selhání nově přidaného. Chcete-li vyřešit tento problém, přidáme `return` příkazem za `StringAssert`. Opakované potvrdí, že jsme vyřešili naše problémy. Konečná verze `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` vypadá následovně:  
+   Ale opakované ukazuje, že test nyní selže, pokud k zachycení správné výjimky. Příkaz catch zruší výjimku a metoda pokračuje v provádění, selhání nově přidaného. Chcete-li vyřešit tento problém, přidáme `return` příkazem za `StringAssert`. Opakované potvrdí, že jsme vyřešili naše problémy. Konečná verze `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` vypadá následovně:  
   
 ```csharp  
 [TestMethod]  

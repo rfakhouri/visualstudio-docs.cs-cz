@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892789"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Když vytvoříte projekt testů v sadě Microsoft Visual Studio, nejnovější 
   
  Jednotky můžete vytvořit projekty testů, které cílí určité verze rozhraní .NET Framework. Cílová verze musí být 3.5 nebo novější a nemůže být verze klienta. Visual Studio umožňuje následující základní podporu pro testování částí, které cílí určité verze:  
   
--   Můžete vytvářet projekty testů jednotek a cílit na konkrétní verzi rozhraní .NET Framework.  
+- Můžete vytvářet projekty testů jednotek a cílit na konkrétní verzi rozhraní .NET Framework.  
   
--   Můžete spustit testy jednotek, které se zaměřují na konkrétní verzi rozhraní .NET Framework ze sady Visual Studio na svém místním počítači.  
+- Můžete spustit testy jednotek, které se zaměřují na konkrétní verzi rozhraní .NET Framework ze sady Visual Studio na svém místním počítači.  
   
--   Jednotkové testy můžete spustit pomocí MSTest.exe z příkazového řádku, které se zaměřují na konkrétní verzi rozhraní .NET Framework.  
+- Jednotkové testy můžete spustit pomocí MSTest.exe z příkazového řádku, které se zaměřují na konkrétní verzi rozhraní .NET Framework.  
   
--   Jednotkové testy můžete spustit na agentu sestavení jako součást sestavení.  
+- Jednotkové testy můžete spustit na agentu sestavení jako součást sestavení.  
   
- **Testování aplikací pro SharePoint**  
+  **Testování aplikací pro SharePoint**  
   
- Funkce uvedené výše také umožňují zápis testů jednotek a testů integrace pro aplikace SharePoint pomocí sady Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] vývoj aplikací služby SharePoint pomocí sady Visual Studio, naleznete v tématu [vytvořit řešení služby SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [sestavování a ladění řešení služby SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) a [ověření a ladění služby SharePoint Kód](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Funkce uvedené výše také umožňují zápis testů jednotek a testů integrace pro aplikace SharePoint pomocí sady Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] vývoj aplikací služby SharePoint pomocí sady Visual Studio, naleznete v tématu [vytvořit řešení služby SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [sestavování a ladění řešení služby SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) a [ověření a ladění služby SharePoint Kód](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
- **Omezení**  
+  **Omezení**  
   
- Když míříte znovu používat starší verze rozhraní .NET Framework testovací projekty se vztahují následující omezení:  
+  Když míříte znovu používat starší verze rozhraní .NET Framework testovací projekty se vztahují následující omezení:  
   
--   V rozhraní .NET Framework 3.5 cílení na více verzí se podporuje pro projekty testů, které obsahují pouze jednotkové testy. Rozhraní .NET Framework 3.5 nepodporuje jakýkoli jiný typ testu, jako je například programový test uživatelského rozhraní nebo zatížení. Změnu cíle je blokované pro typy testů kromě testů jednotek.  
+- V rozhraní .NET Framework 3.5 cílení na více verzí se podporuje pro projekty testů, které obsahují pouze jednotkové testy. Rozhraní .NET Framework 3.5 nepodporuje jakýkoli jiný typ testu, jako je například programový test uživatelského rozhraní nebo zatížení. Změnu cíle je blokované pro typy testů kromě testů jednotek.  
   
--   Spuštění testů, které cílí na starší verzi rozhraní .NET Framework je podporováno pouze v výchozího hostitelského adaptéru. Nepodporuje se v adaptéru hostitele technologie ASP.NET. Aplikace ASP.NET, které je nutné spustit v kontextu serveru ASP.NET Development Server musí být kompatibilní s aktuální verzí rozhraní .NET Framework.  
+- Spuštění testů, které cílí na starší verzi rozhraní .NET Framework je podporováno pouze v výchozího hostitelského adaptéru. Nepodporuje se v adaptéru hostitele technologie ASP.NET. Aplikace ASP.NET, které je nutné spustit v kontextu serveru ASP.NET Development Server musí být kompatibilní s aktuální verzí rozhraní .NET Framework.  
   
--   Podpora shromažďování dat je zakázané při spuštění testů, které podporují cílení na více verzí rozhraní .NET Framework 3.5. Spustit pokrytí kódu pomocí nástroje příkazového řádku sady Visual Studio.  
+- Podpora shromažďování dat je zakázané při spuštění testů, které podporují cílení na více verzí rozhraní .NET Framework 3.5. Spustit pokrytí kódu pomocí nástroje příkazového řádku sady Visual Studio.  
   
--   Na vzdáleném počítači nelze spustit testy jednotek, které používají rozhraní .NET Framework 3.5.  
+- Na vzdáleném počítači nelze spustit testy jednotek, které používají rozhraní .NET Framework 3.5.  
   
--   Nelze cílit testů jednotek pro starší verze klienta architektury.  
+- Nelze cílit testů jednotek pro starší verze klienta architektury.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Znovu cílení na konkrétní verzi rozhraní .NET Framework pro projekty testů částí Visual Basic  
   

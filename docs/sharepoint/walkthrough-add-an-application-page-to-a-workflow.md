@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866893"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Návod: Přidání stránky aplikace do pracovního postupu
   Tento návod ukazuje, jak přidat stránku aplikace, která zobrazuje data odvozená z pracovního postupu do projektu pracovního postupu. Je nástavbou projektu je popsáno v tématu [návod: vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Tento návod demonstruje následující úkoly:
 
--   Přidání stránky ASPX aplikace do projektu pracovního postupu služby SharePoint.
+- Přidání stránky ASPX aplikace do projektu pracovního postupu služby SharePoint.
 
--   Získání dat z projektu pracovního postupu a manipulaci.
+- Získání dat z projektu pracovního postupu a manipulaci.
 
--   Zobrazení dat v tabulce na stránce aplikace.
+- Zobrazení dat v tabulce na stránce aplikace.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Požadavky
  K dokončení tohoto návodu budete potřebovat následující komponenty:
@@ -305,23 +305,23 @@ ms.locfileid: "43774585"
 
 #### <a name="to-test-the-application-page"></a>Otestování stránky aplikace
 
-1.  Zvolte **F5** klíč ke spuštění a nasazení projektu SharePoint.
+1. Zvolte **F5** klíč ke spuštění a nasazení projektu SharePoint.
 
-2.  Zvolte **Domů** tlačítko a klikněte na tlačítko **sdílené dokumenty** odkaz na panelu Rychlé spuštění a zobrazit seznam sdílených dokumentů na webu služby SharePoint.
+2. Zvolte **Domů** tlačítko a klikněte na tlačítko **sdílené dokumenty** odkaz na panelu Rychlé spuštění a zobrazit seznam sdílených dokumentů na webu služby SharePoint.
 
-3.  K reprezentaci vyúčtování pro účely tohoto příkladu, nahrát několik nových dokumentů do seznam dokumentů výběrem **dokumenty** odkaz na **LibraryTools** kartě v horní části stránky a potom kliknete  **Nahrát dokument o** tlačítko na pásu karet.
+3. K reprezentaci vyúčtování pro účely tohoto příkladu, nahrát několik nových dokumentů do seznam dokumentů výběrem **dokumenty** odkaz na **LibraryTools** kartě v horní části stránky a potom kliknete  **Nahrát dokument o** tlačítko na pásu karet.
 
-4.  Po odeslání některé dokumenty instance pracovního postupu výběrem **knihovny** odkaz na **LibraryTools** kartě v horní části stránky a pak zvolíte **nastavení knihovny**tlačítko na pásu karet.
+4. Po odeslání některé dokumenty instance pracovního postupu výběrem **knihovny** odkaz na **LibraryTools** kartě v horní části stránky a pak zvolíte **nastavení knihovny**tlačítko na pásu karet.
 
-5.  V **nastavení knihovny dokumentů** zvolte **nastavení pracovního postupu** odkaz v **oprávnění a správa** oddílu.
+5. V **nastavení knihovny dokumentů** zvolte **nastavení pracovního postupu** odkaz v **oprávnění a správa** oddílu.
 
-6.  V **nastavení pracovního postupu** zvolte **přidat pracovní postup** odkaz.
+6. V **nastavení pracovního postupu** zvolte **přidat pracovní postup** odkaz.
 
-7.  V **přidat pracovní postup** zvolte **ExpenseReport - Workflow1** pracovního postupu, zadejte název pracovního postupu, jako například **ExpenseTest**a klikněte na tlačítko **Další** tlačítko.
+7. V **přidat pracovní postup** zvolte **ExpenseReport - Workflow1** pracovního postupu, zadejte název pracovního postupu, jako například **ExpenseTest**a klikněte na tlačítko **Další** tlačítko.
 
-     Zobrazí se formulář přidružení pracovního postupu. Sestava se používá částka omezení výdajů.
+    Zobrazí se formulář přidružení pracovního postupu. Sestava se používá částka omezení výdajů.
 
-8.  Vyplňte formulář přidružení **1000** do **Limit pro automatické schvalování** pole a klikněte na tlačítko **přidružení pracovního postupu** tlačítko.
+8. Vyplňte formulář přidružení **1000** do **Limit pro automatické schvalování** pole a klikněte na tlačítko **přidružení pracovního postupu** tlačítko.
 
 9. Zvolte **domácí** tlačítko pro návrat na domovskou stránku služby SharePoint.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774585"
 
 14. Opakujte kroky 13. 11 pomocí jiných dokumentů v seznamu sdílených dokumentů. (Přesný počet dokumentů není důležité.)
 
-15. Zobrazit na stránce souhrnu aplikace expense sestavy tak, že otevřete následující adresu URL ve webovém prohlížeči: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Zobrazit na stránce souhrnu aplikace expense sestavy tak, že otevřete následující adresu URL ve webovém prohlížeči: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Na stránce souhrnné sestavy výdajů uvádí všechny sestavy výdajů, který překročil přidělenou velikost, hodnota, kterou překročení jej a celkovou velikost pro všechny sestavy.
 

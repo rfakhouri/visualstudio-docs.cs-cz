@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285997"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872277"
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ V sadě Visual Studio vám pomůže modelu vám pomůžou pochopit a změnit sys
 ## <a name="how-to-use-models"></a>Použití modelů  
  Modely můžou pomoct několika způsoby:  
   
--   Kreslení diagramů modelování vám objasnění konceptů, které jsou součástí požadavků, architektury a návrhu vysoké úrovně. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
+- Kreslení diagramů modelování vám objasnění konceptů, které jsou součástí požadavků, architektury a návrhu vysoké úrovně. Další informace najdete v tématu [modelování uživatelských požadavků](../modeling/model-user-requirements.md).  
   
--   Práce s modely můžete zveřejnit nekonzistence v požadavcích.  
+- Práce s modely můžete zveřejnit nekonzistence v požadavcích.  
   
--   Komunikace s modely vám umožňuje komunikovat, důležité koncepty menší ambiguously přirozeným jazykem. Další informace najdete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
+- Komunikace s modely vám umožňuje komunikovat, důležité koncepty menší ambiguously přirozeným jazykem. Další informace najdete v tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md).  
   
--   Modely někdy slouží ke generování kódu nebo jiných artefaktů, jako je například databázová schémata nebo dokumenty. Například modelování součástí [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] se generují z modelu.  Další informace najdete v tématu [vygenerovat a nakonfigurovat aplikace z modelů](../modeling/generate-and-configure-your-app-from-models.md).  
+- Modely někdy slouží ke generování kódu nebo jiných artefaktů, jako je například databázová schémata nebo dokumenty. Například modelování součástí [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] se generují z modelu.  Další informace najdete v tématu [vygenerovat a nakonfigurovat aplikace z modelů](../modeling/generate-and-configure-your-app-from-models.md).  
   
- Modely v nejrůznějších procesy, extreme agility na vysokou procedury můžete použít.  
+  Modely v nejrůznějších procesy, extreme agility na vysokou procedury můžete použít.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>Použití modelů ke snížení nejednoznačnosti  
  Modelovací jazyk je nejednoznačný méně než přirozený jazyk a je určený k vyjádření nápady obvykle vyžadují při vývoji softwaru.  

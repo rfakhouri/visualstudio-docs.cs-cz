@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ffb4e98ce8589f20d4a0253ce675e546f15ae4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867258"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Přidání kontroleru nabídky do panelu nástrojů
 Tento návod vychází [přidat panel nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) návod a ukazuje, jak přidat kontroleru nabídky do panelu nástrojů okno nástrojů. Zde uvedených kroků můžete použít také na panel nástrojů, který je vytvořen v [přidat panel nástrojů](../extensibility/adding-a-toolbar.md) návodu.  
@@ -34,82 +34,82 @@ Tento návod vychází [přidat panel nástrojů do panelu nástrojů](../extens
   
 ## <a name="create-a-menu-controller"></a>Vytvoření kontroleru nabídky  
   
-1.  Postupujte podle postupů popsaných v [přidat panel nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) vytvořit panel nástrojů s panelem nástrojů.  
+1. Postupujte podle postupů popsaných v [přidat panel nástrojů do panelu nástrojů](../extensibility/adding-a-toolbar-to-a-tool-window.md) vytvořit panel nástrojů s panelem nástrojů.  
   
-2.  V *TWTestCommandPackage.vsct*, přejděte do části symboly. V guidsymbol – element s názvem **guidTWTestCommandPackageCmdSet**, deklarujte kontroler vaší nabídky, skupina kontroleru nabídky a tři položky nabídky.  
+2. V *TWTestCommandPackage.vsct*, přejděte do části symboly. V guidsymbol – element s názvem **guidTWTestCommandPackageCmdSet**, deklarujte kontroler vaší nabídky, skupina kontroleru nabídky a tři položky nabídky.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  V části nabídky po poslední položka nabídky definujte jako nabídka kontroleru nabídky.  
+3. V části nabídky po poslední položka nabídky definujte jako nabídka kontroleru nabídky.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     `TextChanges` a `TextIsAnchorCommand` příznaky musí být zahrnut umožňuje kontroleru nabídky tak, aby odrážely posledních vybraný příkaz.  
+    `TextChanges` a `TextIsAnchorCommand` příznaky musí být zahrnut umožňuje kontroleru nabídky tak, aby odrážely posledních vybraný příkaz.  
   
-4.  Ve skupinách části po poslední záznam skupiny přidáte skupinu nabídek kontroleru.  
+4. Ve skupinách části po poslední záznam skupiny přidáte skupinu nabídek kontroleru.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     Nastavením kontroleru nabídky jako nadřazený všechny příkazy umístěn v této skupině se zobrazí v kontroleru nabídky. `priority` Atribut je vynechán, který nastaví na výchozí hodnotu 0, protože se jedná pouze skupiny na kontroleru nabídky.  
+    Nastavením kontroleru nabídky jako nadřazený všechny příkazy umístěn v této skupině se zobrazí v kontroleru nabídky. `priority` Atribut je vynechán, který nastaví na výchozí hodnotu 0, protože se jedná pouze skupiny na kontroleru nabídky.  
   
-5.  V části tlačítka po poslední položka tlačítko přidáte element přepínače pro každou z položek nabídky.  
+5. V části tlačítka po poslední položka tlačítko přidáte element přepínače pro každou z položek nabídky.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  V tomto okamžiku můžete si prohlédnout kontroleru nabídky. Sestavte projekt a spusťte ladění. Měli byste vidět experimentální instanci aplikace.  
+6. V tomto okamžiku můžete si prohlédnout kontroleru nabídky. Sestavte projekt a spusťte ladění. Měli byste vidět experimentální instanci aplikace.  
   
-    1.  Na **zobrazení / ostatní Windows** nabídce otevřete **testovací třídy ToolWindow**.  
+   1. Na **zobrazení / ostatní Windows** nabídce otevřete **testovací třídy ToolWindow**.  
   
-    2.  Kontroleru nabídky se zobrazí na panelu nástrojů v okně nástroje.  
+   2. Kontroleru nabídky se zobrazí na panelu nástrojů v okně nástroje.  
   
-    3.  Klikněte na šipku na pravé straně kontroleru nabídky se zobrazí tři možné příkazy.  
+   3. Klikněte na šipku na pravé straně kontroleru nabídky se zobrazí tři možné příkazy.  
   
-     Všimněte si, že po kliknutí na příkaz, názvu kontroleru nabídky mění k zobrazení tohoto příkazu. V další části přidáme kód pro aktivaci těchto příkazů.  
+      Všimněte si, že po kliknutí na příkaz, názvu kontroleru nabídky mění k zobrazení tohoto příkazu. V další části přidáme kód pro aktivaci těchto příkazů.  
   
 ## <a name="implement-the-menu-controller-commands"></a>Implementace příkazy kontroleru nabídky  
   

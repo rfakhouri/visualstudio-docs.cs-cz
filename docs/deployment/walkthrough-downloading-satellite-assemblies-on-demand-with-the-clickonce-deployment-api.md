@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 506495f8be0b552f35bed0610e9fb43a77efb151
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883026"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce
 Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelitních sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikací pro jazykovou verzi, než je výchozí jazykovou verzi aplikace.  
@@ -45,24 +45,24 @@ Aplikace Windows Forms lze nastavit pro více jazykových verzí pomocí satelit
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Chcete-li stáhnout satelitních sestavení na vyžádání  
   
-1.  Přidejte následující kód do vaší aplikace, které chcete povolit stahování satelitních sestavení na vyžádání.  
+1. Přidejte následující kód do vaší aplikace, které chcete povolit stahování satelitních sestavení na vyžádání.  
   
-     [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-     [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
+    [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
   
-2.  Generování satelitních sestavení pro vaši aplikaci s použitím [Resgen.exe (Generátor zdrojových souborů)](/dotnet/framework/tools/resgen-exe-resource-file-generator) nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Generování satelitních sestavení pro vaši aplikaci s použitím [Resgen.exe (Generátor zdrojových souborů)](/dotnet/framework/tools/resgen-exe-resource-file-generator) nebo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Generovat manifest aplikace, nebo otevřete existující manifest aplikace s použitím *MageUI.exe*. Další informace o tomto nástroji najdete v tématu [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
+3. Generovat manifest aplikace, nebo otevřete existující manifest aplikace s použitím *MageUI.exe*. Další informace o tomto nástroji najdete v tématu [MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-4.  Klikněte na tlačítko **soubory** kartu.  
+4. Klikněte na tlačítko **soubory** kartu.  
   
-5.  Klikněte na tlačítko **tlačítko se třemi tečkami** tlačítko (**...** ) a vyberte adresář obsahující sestavení vaší aplikace a soubory, včetně satelitní sestavení generována pomocí *Resgen.exe*. (Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je identifikátor jazyka ve formátu RFC 1766.)  
+5. Klikněte na tlačítko **tlačítko se třemi tečkami** tlačítko (**...** ) a vyberte adresář obsahující sestavení vaší aplikace a soubory, včetně satelitní sestavení generována pomocí *Resgen.exe*. (Satelitní sestavení bude mít název ve tvaru  *\<isoCode > \ApplicationName.resources.dll*, kde \<isoCode > je identifikátor jazyka ve formátu RFC 1766.)  
   
-6.  Klikněte na tlačítko **naplnit** na přidání souborů do vašeho nasazení.  
+6. Klikněte na tlačítko **naplnit** na přidání souborů do vašeho nasazení.  
   
-7.  Vyberte **volitelné** zaškrtávací políčko pro každé satelitní sestavení.  
+7. Vyberte **volitelné** zaškrtávací políčko pro každé satelitní sestavení.  
   
-8.  Nastavte pole skupiny pro každou satelitní sestavení pro jeho identifikátor jazyka ISO. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`. To vám umožní kód, který jste přidali v kroku 1, chcete-li stáhnout příslušného satelitního sestavení, v závislosti na uživatele <xref:System.Threading.Thread.CurrentUICulture%2A> nastavení vlastnosti.  
+8. Nastavte pole skupiny pro každou satelitní sestavení pro jeho identifikátor jazyka ISO. Například by pro japonské satelitní sestavení, zadejte název skupiny stažení `ja-JP`. To vám umožní kód, který jste přidali v kroku 1, chcete-li stáhnout příslušného satelitního sestavení, v závislosti na uživatele <xref:System.Threading.Thread.CurrentUICulture%2A> nastavení vlastnosti.  
   
 ## <a name="next-steps"></a>Další kroky  
  V produkčním prostředí, budete pravděpodobně muset odebrat řádek v příkladu kódu, který nastaví <xref:System.Threading.Thread.CurrentUICulture%2A> na určitou hodnotu, protože klientské počítače budou mít správnou hodnotu ve výchozím nastavení. Pokud vaše aplikace běží na počítači japonské klienta, například <xref:System.Threading.Thread.CurrentUICulture%2A> bude `ja-JP` ve výchozím nastavení. Pokud tuto hodnotu nastavíte prostřednictvím kódu programu je dobrým způsobem, jak testovat satelitní sestavení před nasazením aplikace.  

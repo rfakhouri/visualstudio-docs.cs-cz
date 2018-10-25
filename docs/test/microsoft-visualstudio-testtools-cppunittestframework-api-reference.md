@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820262"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -29,72 +29,73 @@ Hlavičky a knihovny lib cesty se automaticky nakonfigurují v nativní testovac
 ##  <a name="In_this_topic"></a> V tomto tématu
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [Vytvoření testovací třídy a metody](#create_test_classes_and_methods)
+- [Vytvoření testovací třídy a metody](#create_test_classes_and_methods)
 
--   [Inicializace a vyčištění](#Initialize_and_cleanup)
+- [Inicializace a vyčištění](#Initialize_and_cleanup)
 
-    -   [Testovací metody](#test_methods)
+  -   [Testovací metody](#test_methods)
 
-    -   [Testovací třídy](#test_classes)
+  -   [Testovací třídy](#test_classes)
 
-    -   [Test moduly](#test_modules)
+  -   [Test moduly](#test_modules)
 
--   [Vytvořte atributy testu](#create_test_attributes)
+- [Vytvořte atributy testu](#create_test_attributes)
 
-    -   [Atributy testovací metody](#test_method_attributes)
+  - [Atributy testovací metody](#test_method_attributes)
 
-    -   [Atributy třídy testu](#test_class_attributes)
+  - [Atributy třídy testu](#test_class_attributes)
 
-    -   [Atributy modulu testu](#test_module_attributes)
+  - [Atributy modulu testu](#test_module_attributes)
 
-    -   [Předem definované atributy](#pre_defined_attributes)
+  - [Předem definované atributy](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [Obecné nepodmíněné výrazy](#general_asserts)
+  - [Obecné nepodmíněné výrazy](#general_asserts)
 
-        -   [Jsou si rovny](#general_are_equal)
+    -   [Jsou si rovny](#general_are_equal)
 
-        -   [Nejsou stejné](#general_are_not_equal)
+    -   [Nejsou stejné](#general_are_not_equal)
 
-        -   [Stejné](#general_are_same)
+    -   [Stejné](#general_are_same)
 
-        -   [Se neshodují](#general_are_not_same)
+    -   [Se neshodují](#general_are_not_same)
 
-        -   [Má hodnotu Null.](#general_is_null)
+    -   [Má hodnotu Null.](#general_is_null)
 
-        -   [Není rovno hodnotě Null](#general_is_not_null)
+    -   [Není rovno hodnotě Null](#general_is_not_null)
 
-        -   [Má hodnotu True](#general_is_True)
+    -   [Má hodnotu True](#general_is_True)
 
-        -   [Má hodnotu False](#general_is_false)
+    -   [Má hodnotu False](#general_is_false)
 
-        -   [Selhání](#general_Fail)
+    -   [Selhání](#general_Fail)
 
-    -   [Kontrolních příkazů prostředí Windows Runtime](#winrt_asserts)
+  - [Kontrolních příkazů prostředí Windows Runtime](#winrt_asserts)
 
-        -   [Jsou si rovny](#winrt_are_equal)
+    -   [Jsou si rovny](#winrt_are_equal)
 
-        -   [Stejné](#winrt_are_same)
+    -   [Stejné](#winrt_are_same)
 
-        -   [Nejsou stejné](#winrt_are_not_equal)
+    -   [Nejsou stejné](#winrt_are_not_equal)
 
-        -   [Se neshodují](#winrt_are_not_same)
+    -   [Se neshodují](#winrt_are_not_same)
 
-        -   [Má hodnotu Null.](#winrt_is_null)
+    -   [Má hodnotu Null.](#winrt_is_null)
 
-        -   [Není rovno hodnotě Null](#winrt_is_not_null)
+    -   [Není rovno hodnotě Null](#winrt_is_not_null)
 
-    -   [Výjimka nepodmíněné výrazy](#exception_asserts)
+  - [Výjimka nepodmíněné výrazy](#exception_asserts)
 
-        -   [Očekávané výjimky](#expect_exception)
+    - [Očekávané výjimky](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [Protokolovací nástroj](#logger)
+    - [Protokolovací nástroj](#logger)
 
-        -   [Zapsat zprávu](#write_message)
-    -    [Příklad použití](#example)
+    - [Zapsat zprávu](#write_message)
+
+  - [Příklad použití](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  Definuje *methodName* jako testovací metody. `TEST_METHOD` musí být deklarována v rámci metody třídy.
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  Definuje *methodName* jako metodu, která se spustí před spuštěním jednotlivých testovacích metod. `TEST_METHOD_INITIALIZE` můžete definovat pouze jednou v testovací třídě a musí být definován v testovací třídě.
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  Definuje *methodName* jako metodu, která se spustí po spuštění jednotlivých testovacích metod. `TEST_METHOD_CLEANUP` můžete definovat pouze jednou v testovací třídě a musí být definován v oboru třídy testu.

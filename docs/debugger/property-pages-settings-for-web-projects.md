@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5584d5c5f971231712fb79f4ad40d330dd659b33
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: e859f94f9ed86b7e94c6a30153cece18663f337f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868492"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Nastavení stránek vlastností pro webové projekty
 Můžete změnit nastavení vlastností pro konfiguraci ladění webu v **stránky vlastností** dialogové okno, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>Složka s vlastnostmi konfigurace (kategorie možnosti spuštění)  
   
-|**Nastavení**|**Popis**|  
-|-----------------|---------------------|  
-|**Spustit akci**|Pod nadpisem, že možnosti skupiny vztahuje k spuštění aplikace.|  
-|**Na aktuální stránce**|Určuje aktuální stránku jako výchozí bod pro ladění.|  
-|**Konkrétní stránka:**|Určuje webové stránky, kde chcete začít ladění.|  
-|**Spusťte externí program:**|Určuje příkaz pro spuštění programu, že který chcete ladit.|  
-|**Argumenty příkazového řádku:**|Určuje argumenty pro příkaz zadaný výše.|  
-|**Pracovní adresář:**|Určuje pracovní adresář laděného programu. V [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], pracovním adresářem je adresář spuštění aplikace z \bin\debug ve výchozím nastavení.|  
-|**Počáteční adresa URL**|Určuje umístění webové aplikace, kterou chcete ladit.|  
-|**Neotevírat stránku. Počkat na požadavek od externí aplikace**|Uvádí, že čekat požadavek od externí aplikace. Tato možnost se nespustí, Internet Explorer nebo jiná aplikace. Připraví pouze pro ladění, když je volána aplikací.|  
-|**Server**|Záhlaví, že možnosti skupiny vztahuje k serveru, který se má použít.|  
-|**Použít výchozí webový server**|Uvádí, že chcete používat výchozí webový server.|  
-|**Použít vlastní server**|Umožňuje zadat základní adresu URL pro použití jako server.|  
-|**Ladicí programy**|Pod nadpisem, že možnosti skupiny vztahuje na typ ladění udělat.|  
-|**Ladění ASP.NET**|Umožňuje ladění ASP napsané pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojovou platformu. Je nutné zadat adresu URL v **otevřít adresu URL**.|  
-|**Ladění nativního kódu**|Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace.|  
-|**Ladění SQL serveru**|Umožňuje ladění objektů databáze systému SQL Server.|  
-|**Ladění aplikací Silverlight**|Umožňuje ladit z komponent technologie Silverlight.|  
+| **Nastavení** | **Popis** |
+| - | - |
+| **Spustit akci** | Pod nadpisem, že možnosti skupiny vztahuje k spuštění aplikace. |
+| **Na aktuální stránce** | Určuje aktuální stránku jako výchozí bod pro ladění. |
+| **Konkrétní stránka:** | Určuje webové stránky, kde chcete začít ladění. |
+| **Spusťte externí program:** | Určuje příkaz pro spuštění programu, že který chcete ladit. |
+| **Argumenty příkazového řádku:** | Určuje argumenty pro příkaz zadaný výše. |
+| **Pracovní adresář:** | Určuje pracovní adresář laděného programu. V [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], pracovním adresářem je adresář spuštění aplikace z \bin\debug ve výchozím nastavení. |
+| **Počáteční adresa URL** | Určuje umístění webové aplikace, kterou chcete ladit. |
+| **Neotevírat stránku. Počkat na požadavek od externí aplikace** | Uvádí, že čekat požadavek od externí aplikace. Tato možnost se nespustí, Internet Explorer nebo jiná aplikace. Připraví pouze pro ladění, když je volána aplikací. |
+| **Server** | Záhlaví, že možnosti skupiny vztahuje k serveru, který se má použít. |
+| **Použít výchozí webový server** | Uvádí, že chcete používat výchozí webový server. |
+| **Použít vlastní server** | Umožňuje zadat základní adresu URL pro použití jako server. |
+| **Ladicí programy** | Pod nadpisem, že možnosti skupiny vztahuje na typ ladění udělat. |
+| **Ladění ASP.NET** | Umožňuje ladění ASP napsané pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojovou platformu. Je nutné zadat adresu URL v **otevřít adresu URL**. |
+| **Ladění nativního kódu** | Umožňuje ladit volání nativního (nespravovaného) kódu Win32 z vaší spravované aplikace. |
+| **Ladění SQL serveru** | Umožňuje ladění objektů databáze systému SQL Server. |
+| **Ladění aplikací Silverlight** | Umožňuje ladit z komponent technologie Silverlight. |
   
 ## <a name="see-also"></a>Viz také  
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)
+ [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

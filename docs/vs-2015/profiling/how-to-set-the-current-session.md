@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cce4be924b1defcd840fe2f23019d27d22ebf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee114498abec5146e9f63d9f98112e80fc140c35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826848"
 ---
 # <a name="how-to-set-the-current-session"></a>Postupy: nastavení aktuální relace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Můžete otevřít více výkonnostních relací v **prohlížeč výkonu**a pak
   
  **Požadavky**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Po nastavení relace jako aktuální relaci, kliknutím na **spuštění** na **prohlížeč výkonu** nástrojů se spustí aktuální relaci profilace.  
+  Po nastavení relace jako aktuální relaci, kliknutím na **spuštění** na **prohlížeč výkonu** nástrojů se spustí aktuální relaci profilace.  
   
 ### <a name="to-set-current-performance-session"></a>Nastavení aktuální výkonnostní relace  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826983"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby usnadnění přístupu od společnosti Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Microsoft usiluje o usnadnění svých produktů a služeb pro každodenní pou�
 ##  <a name="hearing"></a> Zákaznický servis pro osoby s poškozením sluchu  
  Pokud jste osoby neslyšící či s vadou sluchu, úplný přístup k produktům a zákaznickým službám společnosti Microsoft je k dispozici prostřednictvím služby textového telefonu (TTY/TDD):  
   
--   Zákaznický servis obraťte se na Microsoft Sales Information Center na (800) 892-5234 6:30:00 až 17:30:00 tichomořského času, pondělí až pátek kromě svátků.  
+- Zákaznický servis obraťte se na Microsoft Sales Information Center na (800) 892-5234 6:30:00 až 17:30:00 tichomořského času, pondělí až pátek kromě svátků.  
   
--   Technická podpora ve Spojených státech amerických Kontaktujte Microsoft Product Support Services na (800) 892-5234 mezi 6:00:00 a 18:00:00 tichomořského času, pondělí až pátek kromě svátků. V Kanadě, volání (905) 568-9641 8:00:00 až 20:00:00 východního času, pondělí až pátek kromě svátků.  
+- Technická podpora ve Spojených státech amerických Kontaktujte Microsoft Product Support Services na (800) 892-5234 mezi 6:00:00 a 18:00:00 tichomořského času, pondělí až pátek kromě svátků. V Kanadě, volání (905) 568-9641 8:00:00 až 20:00:00 východního času, pondělí až pátek kromě svátků.  
   
- Služby podpory společnosti Microsoft jsou v souladu s cenami, podmínky a ujednání v místě v době, kdy se služba používá.  
+  Služby podpory společnosti Microsoft jsou v souladu s cenami, podmínky a ujednání v místě v době, kdy se služba používá.  
   
 ##  <a name="moreinfo"></a> Další informace  
  Další informace o tom, jak počítačové technologie pro usnadnění pomáhají zlepšit život osobám s postižením, naleznete v tématu [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  

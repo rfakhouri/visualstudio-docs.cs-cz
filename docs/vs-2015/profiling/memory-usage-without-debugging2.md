@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892334"
 ---
 # <a name="memory-usage-without-debugging"></a>Využití paměti bez ladění
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete použít **využití paměti** nástroje bez ladění můžete provádět následující  
   
--   Sledování vaší aplikace paměti při vývoji scénáři použít přímo v sadě Visual Studio.  
+- Sledování vaší aplikace paměti při vývoji scénáři použít přímo v sadě Visual Studio.  
   
--   Vytvořte podrobný snímek stavu paměti aplikace.  
+- Vytvořte podrobný snímek stavu paměti aplikace.  
   
--   Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
+- Porovnejte snímky k nalezení původní příčiny problémů s pamětí.  
   
- Toto téma popisuje, jak pomocí nástroje využití paměti analýza XAML Universal Windows app. Pokud chcete analyzovat využití paměti ve Windows Universal apps, které používají jazyk JavaScript a HTML, naleznete v tématu [analýza využití paměti (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Toto téma popisuje, jak pomocí nástroje využití paměti analýza XAML Universal Windows app. Pokud chcete analyzovat využití paměti ve Windows Universal apps, které používají jazyk JavaScript a HTML, naleznete v tématu [analýza využití paměti (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Spuštění diagnostické relace využití paměti  
   
@@ -76,13 +76,13 @@ Můžete použít **využití paměti** nástroje bez ladění můžete provád�
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Zobrazení snímku využití paměti  
  Pomocí zobrazení snímku v nových oknech sady Visual Studio otevřete podrobné sestavy. Existují dva druhy zobrazení snímku:  
   
--   A [snímku podrobnosti sestavy](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) ukazuje typy a instance v jeden snímek.  
+- A [snímku podrobnosti sestavy](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) ukazuje typy a instance v jeden snímek.  
   
--   A [rozdíl (rozdíl) sestavy snímků](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) porovnává typy a instance v dvěma snímky.  
+- A [rozdíl (rozdíl) sestavy snímků](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) porovnává typy a instance v dvěma snímky.  
   
- ![Zobrazit odkazy na pořízení snímku](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Zobrazit odkazy na pořízení snímku](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Číslované položky obrázku zobrazení snímku jsou odkazy, které otevřete zobrazení sestav využití paměti.  
+  Číslované položky obrázku zobrazení snímku jsou odkazy, které otevřete zobrazení sestav využití paměti.  
   
 |||  
 |-|-|  

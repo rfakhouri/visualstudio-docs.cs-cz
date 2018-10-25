@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851059"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Rychlé zahájení: Analýza kódu pro C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na 
   
  Spuštění analýzy kódu pro řešení:  
   
--   Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.  
+- Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.  
   
- Chcete-li spustit analýzu kódu na projektu:  
+  Chcete-li spustit analýzu kódu na projektu:  
   
--   V Průzkumníku řešení vyberte název projektu.  
+- V Průzkumníku řešení vyberte název projektu.  
   
--   Na **sestavení** nabídce zvolte **spustit analýzu kódu na** *název projektu*.  
+- Na **sestavení** nabídce zvolte **spustit analýzu kódu na** *název projektu*.  
   
- Projekt nebo řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.  
+  Projekt nebo řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.  
   
 ##  <a name="BKMK_Analyze"></a> Analýza a řešení upozornění analýzy kódu  
  Pokud chcete analyzovat konkrétního upozornění, vyberte záhlaví upozornění v okně analýzy kódu. Upozornění rozšíří a zobrazte další informace o problému. Pokud je to možné, analýza kódu zobrazuje čísla řádků a analýzy logiku, která vedla k upozornění. Podrobné informace o upozornění, včetně možná řešení problému zvolte id upozornění chcete zobrazit téma nápovědy v knihovně MSND zprávy.  
@@ -106,13 +106,13 @@ Zlepšit kvalitu vaší aplikace při spuštění analýzy kódu pravidelně na 
   
  Chcete-li potlačit upozornění:  
   
-1.  Pokud se zobrazí podrobné informace, vyberte název upozornění a rozbalte ho.  
+1. Pokud se zobrazí podrobné informace, vyberte název upozornění a rozbalte ho.  
   
-2.  Zvolte **akce** odkaz v dolní části upozornění.  
+2. Zvolte **akce** odkaz v dolní části upozornění.  
   
-3.  Zvolte **potlačit zprávu** a klikněte na tlačítko **zdroje v**.  
+3. Zvolte **potlačit zprávu** a klikněte na tlačítko **zdroje v**.  
   
- Potlačení zprávy vloží `#pragma warning (disable:` *WarningId* `)` , který potlačí případná upozornění pro řádek kódu.  
+   Potlačení zprávy vloží `#pragma warning (disable:` *WarningId* `)` , který potlačí případná upozornění pro řádek kódu.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Vytváření pracovních položek pro kód upozornění analýzy  
  Funkce sledování pracovní položky můžete použít k protokolování chyb z Visual Studia. Chcete-li tuto funkci používat, musí připojit k instanci serveru Team Foundation Server.  

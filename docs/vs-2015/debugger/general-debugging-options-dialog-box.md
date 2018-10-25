@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854322"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Obecné, ladění, dialogové okno Možnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ ms.locfileid: "49306888"
  **Použít spravovaný režim kompatibility**  
  Nahradí výchozí modul ladění pomocí starší verze, chcete-li povolit tyto scénáře:  
   
--   Používáte jiný jazyk rozhraní .NET Framework než C#, VB nebo F #, který obsahuje vlastní vyhodnocení výrazu (to zahrnuje C + +/ CLI).  
+- Používáte jiný jazyk rozhraní .NET Framework než C#, VB nebo F #, který obsahuje vlastní vyhodnocení výrazu (to zahrnuje C + +/ CLI).  
   
--   Chcete povolit funkce upravit a pokračovat pro projekty v jazyce C++ při ladění ve smíšeném režimu.  
+- Chcete povolit funkce upravit a pokračovat pro projekty v jazyce C++ při ladění ve smíšeném režimu.  
   
- Všimněte si, že zvolíte kompatibility spravovaného režimu zakáže některé funkce, které jsou implementovány pouze ve výchozím ladicím modulu.  
+  Všimněte si, že zvolíte kompatibility spravovaného režimu zakáže některé funkce, které jsou implementovány pouze ve výchozím ladicím modulu.  
   
- **Použít režim kompatibility nativní**  
- Pokud je vybraná tato možnost, ladicí program používá nativní ladicí program sady Visual Studio 2010 místo nové nativní ladicí program.  
+  **Použít režim kompatibility nativní**  
+  Pokud je vybraná tato možnost, ladicí program používá nativní ladicí program sady Visual Studio 2010 místo nové nativní ladicí program.  
   
- Tuto možnost by měla používat při ladění kódu .NET, C++, protože nového modulu pro ladění nepodporuje vyhodnocování výrazů .NET C++. Povolení nativní režim kompatibility zakáže však řadu funkcí, které závisí na aktuální implementace ladicí program k provozu. Například starý modul nemá mnoho vizualizéry pro předdefinované typy, jako jsou `std::string` v projektech Visual Studio 2015.   Chcete zajistit optimální práci ladění v těchto případech použijte projektů Visual Studio 2013.  
+  Tuto možnost by měla používat při ladění kódu .NET, C++, protože nového modulu pro ladění nepodporuje vyhodnocování výrazů .NET C++. Povolení nativní režim kompatibility zakáže však řadu funkcí, které závisí na aktuální implementace ladicí program k provozu. Například starý modul nemá mnoho vizualizéry pro předdefinované typy, jako jsou `std::string` v projektech Visual Studio 2015.   Chcete zajistit optimální práci ladění v těchto případech použijte projektů Visual Studio 2013.  
   
- **Použít starší verze vyhodnocovače výrazů C# a VB**  
- Ladicí program použije vyhodnocovače výrazů Visual Studio 2013 C# /VB místo vyhodnocovače výrazů Visual Studio 2015 roslynu.  
+  **Použít starší verze vyhodnocovače výrazů C# a VB**  
+  Ladicí program použije vyhodnocovače výrazů Visual Studio 2013 C# /VB místo vyhodnocovače výrazů Visual Studio 2015 roslynu.  
   
- **Upozornit při opakovaném použití vlastních vizualizérů ladění s potenciálně nebezpečnými procesy (pouze spravované)**  
- Visual Studio vás upozorní, když používáte vlastní vizualizér, na kterém běží kód v procesu laděného procesu, protože by mohl být spuštěn nebezpečný kód.  
+  **Upozornit při opakovaném použití vlastních vizualizérů ladění s potenciálně nebezpečnými procesy (pouze spravované)**  
+  Visual Studio vás upozorní, když používáte vlastní vizualizér, na kterém běží kód v procesu laděného procesu, protože by mohl být spuštěn nebezpečný kód.  
   
- **Povolit přidělování haldy při ladění Windows (pouze nativní)**  
- Umožňuje haldy ladění systému windows k vylepšení diagnostiky haldy. Povolením této možnosti bude mít vliv na výkon ladění.  
+  **Povolit přidělování haldy při ladění Windows (pouze nativní)**  
+  Umožňuje haldy ladění systému windows k vylepšení diagnostiky haldy. Povolením této možnosti bude mít vliv na výkon ladění.  
   
- **Povolit ladění uživatelských rozhraní nástroje pro XAML**  
- Live Visual Tree a Live prozkoumejte vlastnost windows se zobrazí při spuštění ladění (F5) typ projektu podporovaná. Další informace najdete v tématu [vlastnosti kontrolovat XAML při ladění](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Povolit ladění uživatelských rozhraní nástroje pro XAML**  
+  Live Visual Tree a Live prozkoumejte vlastnost windows se zobrazí při spuštění ladění (F5) typ projektu podporovaná. Další informace najdete v tématu [vlastnosti kontrolovat XAML při ladění](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Zobrazit náhled vybraných elementů v dynamickém vizuálním stromu**  
- Prvek XAML, jehož kontext je vybraná také vybraný v **Live Visual Tree** okna.  
+  **Zobrazit náhled vybraných elementů v dynamickém vizuálním stromu**  
+  Prvek XAML, jehož kontext je vybraná také vybraný v **Live Visual Tree** okna.  
   
- **Zobrazit nástroje runtime v aplikaci**  
- Ukazuje, **Live Visual Tree** příkazy na panelu nástrojů v hlavním okně aplikace XAML, která je právě laděna. Tato možnost byla zavedena v aplikaci Visual Studio 2015 Update 2.  
+  **Zobrazit nástroje runtime v aplikaci**  
+  Ukazuje, **Live Visual Tree** příkazy na panelu nástrojů v hlavním okně aplikace XAML, která je právě laděna. Tato možnost byla zavedena v aplikaci Visual Studio 2015 Update 2.  
   
- **Při ladění povolit diagnostické nástroje**  
- **Diagnostické nástroje** při ladění, zobrazí se okno. Další informace najdete v tématu [integrované v ladicím programu profilace](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Při ladění povolit diagnostické nástroje**  
+  **Diagnostické nástroje** při ladění, zobrazí se okno. Další informace najdete v tématu [integrované v ladicím programu profilace](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **Zobrazit časem, který uplynul při ladění**  
- V okně kódu zobrazí uplynulý čas dané metody volání při ladění.  
+  **Zobrazit časem, který uplynul při ladění**  
+  V okně kódu zobrazí uplynulý čas dané metody volání při ladění.  
   
- **Povolit operaci upravit a pokračovat**  
- Můžete použít upravit a pokračovat funkce při ladění.  
+  **Povolit operaci upravit a pokračovat**  
+  Můžete použít upravit a pokračovat funkce při ladění.  
   
- **Povolit nativní upravit a pokračovat**  
- Můžete použít upravit a pokračovat funkce při ladění nativního kódu C++. Další informace najdete v tématu [upravit a pokračovat (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Povolit nativní upravit a pokračovat**  
+  Můžete použít upravit a pokračovat funkce při ladění nativního kódu C++. Další informace najdete v tématu [upravit a pokračovat (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Použít změny při pokračování (jenom nativní)**  
- Visual Studio automaticky zkompiluje a použije změny nezpracovaných kódu, které jste provedli, když budete pokračovat procesu ze stavu pozastavení. Pokud není vybrána, můžete použít změny pomocí položky "Použít změny kódu" v nabídce ladění.  
+  **Použít změny při pokračování (jenom nativní)**  
+  Visual Studio automaticky zkompiluje a použije změny nezpracovaných kódu, které jste provedli, když budete pokračovat procesu ze stavu pozastavení. Pokud není vybrána, můžete použít změny pomocí položky "Použít změny kódu" v nabídce ladění.  
   
- **Upozornit na starý kód (pouze nativní)**  
- Získáte upozornění na starý kód.  
+  **Upozornit na starý kód (pouze nativní)**  
+  Získáte upozornění na starý kód.  
   
- **Povolit předkompilování (pouze nativní)**  
- Předkompilace je povolen.  
+  **Povolit předkompilování (pouze nativní)**  
+  Předkompilace je povolen.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)

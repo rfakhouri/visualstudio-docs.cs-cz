@@ -18,29 +18,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 082fe68979ea7ae6a0c0655b7731aa8c7c9f3ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838761"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Návod: Vytvoření datové služby WCF s WPF a Entity Framework
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , která je hostována v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci a pak k němu přístup z aplikace Windows Forms.
 
 V tomto návodu jste:
 
--   Vytvoření webové aplikace na hostitele [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Vytvoření webové aplikace na hostitele [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Vytvoření [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , která představuje `Customers` tabulky v databázi Northwind.
+- Vytvoření [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , která představuje `Customers` tabulky v databázi Northwind.
 
--   Vytvoření [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Vytvoření [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Vytvořit klientskou aplikaci a přidejte odkaz na [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Vytvořit klientskou aplikaci a přidejte odkaz na [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
--   Vytvořit datovou vazbu na službu a vygenerovat uživatelské rozhraní
+- Vytvořit datovou vazbu na službu a vygenerovat uživatelské rozhraní
 
--   Volitelně přidat do aplikace možnosti filtrování
+- Volitelně přidat do aplikace možnosti filtrování
 
 ## <a name="prerequisites"></a>Požadavky
 Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
@@ -66,7 +66,7 @@ V prvním kroku přidáte webový projekt pro hostování služby.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>K vytvoření webového projektu
+### <a name="to-create-the-web-project"></a>K vytvoření webového projektu
 
 1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
@@ -78,7 +78,7 @@ V prvním kroku přidáte webový projekt pro hostování služby.
 
 V dalším kroku vytvoříte [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] , která představuje `Customers` tabulky v databázi Northwind.
 
-#### <a name="to-create-the-entity-data-model"></a>Vytvoření modelu Entity Data Model
+### <a name="to-create-the-entity-data-model"></a>Vytvoření modelu Entity Data Model
 
 1.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.
 
@@ -101,12 +101,12 @@ V dalším kroku vytvoříte [!INCLUDE[adonet_edm](../data-tools/includes/adonet
 6.  Pokud databáze vyžaduje heslo, zvolte **Ano, zahrnout citlivá data v připojovacím řetězci** přepínač a klikněte na tlačítko **Další** tlačítko.
 
     > [!NOTE]
-    >  Pokud se zobrazí dialogové okno, vyberte **Ano** k uložení souboru do projektu.
+    > Pokud se zobrazí dialogové okno, vyberte **Ano** k uložení souboru do projektu.
 
 7.  Na **zvolíte verzi** zvolte **Entity Framework 5.0** přepínač a klikněte na tlačítko **Další** tlačítko.
 
     > [!NOTE]
-    >  Pokud chcete používat nejnovější verzi Entity Framework 6 služby WCF, budete muset nainstalovat balíček zprostředkovatele NuGet pro rozhraní WCF Data Services Entity Framework. Zobrazit [pomocí WCF Data Services – 5.6.0 s Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
+    > Pokud chcete používat nejnovější verzi Entity Framework 6 služby WCF, budete muset nainstalovat balíček zprostředkovatele NuGet pro rozhraní WCF Data Services Entity Framework. Zobrazit [pomocí WCF Data Services – 5.6.0 s Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky** uzlu, vyberte **zákazníkům** zaškrtněte políčko a klikněte na tlačítko **Dokončit** tlačítko.
 
@@ -114,7 +114,7 @@ V dalším kroku vytvoříte [!INCLUDE[adonet_edm](../data-tools/includes/adonet
 
 V dalším kroku vytvoříte a otestujete datovou službu.
 
-#### <a name="to-create-the-data-service"></a>Vytvoření datové služby
+### <a name="to-create-the-data-service"></a>Vytvoření datové služby
 
 1.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.
 
@@ -141,7 +141,7 @@ V dalším kroku vytvoříte a otestujete datovou službu.
      Data v reprezentaci XML `Customers` tabulky se zobrazí.
 
     > [!NOTE]
-    >  V některých případech bude aplikace Internet Explorer chybně interpretovat data jako informační kanál RSS. Zkontrolujte, zda je zakázána možnost zobrazení informačních kanálů RSS. Další informace najdete v tématu [řešení potíží s odkazy na služby](../data-tools/troubleshooting-service-references.md).
+    > V některých případech bude aplikace Internet Explorer chybně interpretovat data jako informační kanál RSS. Zkontrolujte, zda je zakázána možnost zobrazení informačních kanálů RSS. Další informace najdete v tématu [řešení potíží s odkazy na služby](../data-tools/troubleshooting-service-references.md).
 
 8.  Zavřete okno prohlížeče.
 
@@ -152,7 +152,7 @@ V dalších krocích vytvoříte klientskou aplikaci Windows Forms k používán
 
  V prvním kroku přidejte projekt aplikace Windows Forms a k řešení a nastavit jako spouštěný projekt.
 
-#### <a name="to-create-the-client-application"></a>Vytvoření klientské aplikace
+### <a name="to-create-the-client-application"></a>Vytvoření klientské aplikace
 
 1.  Na panelu nabídek zvolte soubor, **přidat** > **nový projekt**.
 
@@ -166,7 +166,7 @@ V dalších krocích vytvoříte klientskou aplikaci Windows Forms k používán
 
 V dalším kroku přidáte odkaz na službu [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] ve webovém projektu.
 
-#### <a name="to-add-a-service-reference"></a>Přidání odkazu na službu
+### <a name="to-add-a-service-reference"></a>Přidání odkazu na službu
 
 1.  V panelu nabídky zvolte **projektu** > **přidat odkaz na službu**.
 
@@ -178,7 +178,7 @@ V dalším kroku přidáte odkaz na službu [!INCLUDE[ss_data_service](../data-t
 
 V dalším kroku nakonfigurujte zdroj dat a povolují datové vazby ve službě.
 
-#### <a name="to-enable-data-binding-to-the-service"></a>Vytvoření datové vazby na službu
+### <a name="to-enable-data-binding-to-the-service"></a>Vytvoření datové vazby na službu
 
 1.  V panelu nabídky zvolte **zobrazení** > **ostatní Windows** > **zdroje dat**.
 
@@ -192,61 +192,60 @@ V dalším kroku nakonfigurujte zdroj dat a povolují datové vazby ve službě.
 
 V dalším kroku vytvoříte uživatelské rozhraní, která zobrazí data ze služby.
 
-#### <a name="to-create-the-user-interface"></a>Vytvoření uživatelského rozhraní
+### <a name="to-create-the-user-interface"></a>Vytvoření uživatelského rozhraní
 
-1.  V **zdroje dat** okno, otevřete místní nabídku pro **zákazníkům** uzlu a zvolte **kopírování**.
+1. V **zdroje dat** okno, otevřete místní nabídku pro **zákazníkům** uzlu a zvolte **kopírování**.
 
-2.  V **Form1.vb** nebo **Form1.cs** návrháři formuláře, otevřete místní nabídku a zvolte **vložit**.
+2. V **Form1.vb** nebo **Form1.cs** návrháři formuláře, otevřete místní nabídku a zvolte **vložit**.
 
-     A <xref:System.Windows.Forms.DataGridView> ovládací prvek, <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> součásti jsou přidány do formuláře.
+    A <xref:System.Windows.Forms.DataGridView> ovládací prvek, <xref:System.Windows.Forms.BindingSource> komponenty a <xref:System.Windows.Forms.BindingNavigator> součásti jsou přidány do formuláře.
 
-3.  Zvolte **CustomersDataGridView** ovládací prvek a pak v **vlastnosti** okno sady **ukotvení** vlastnost **vyplnit**.
+3. Zvolte **CustomersDataGridView** ovládací prvek a pak v **vlastnosti** okno sady **ukotvení** vlastnost **vyplnit**.
 
-4.  V **Průzkumníka řešení**, otevřete místní nabídku **Form1** uzlu a zvolte **zobrazit kód** a po otevření editoru kódu přidejte následující `Imports` nebo `Using`příkazu v horní části souboru:
+4. V **Průzkumníka řešení**, otevřete místní nabídku **Form1** uzlu a zvolte **zobrazit kód** a po otevření editoru kódu přidejte následující `Imports` nebo `Using`příkazu v horní části souboru:
 
-    ```vb
-    Imports NorthwindClient.ServiceReference1
-    ```
+   ```vb
+   Imports NorthwindClient.ServiceReference1
+   ```
 
-    ```csharp
-    using NorthwindClient.ServiceReference1;
-    ```
+   ```csharp
+   using NorthwindClient.ServiceReference1;
+   ```
 
-5.  Přidejte následující kód, který `Form1_Load` obslužné rutiny události:
+5. Přidejte následující kód, který `Form1_Load` obslužné rutiny události:
 
-    ```vb
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            Dim proxy As New NorthwindEntities _
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
-            Me.CustomersBindingSource.DataSource = proxy.Customers
-        End Sub
-    ```
+   ```vb
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+           Dim proxy As New NorthwindEntities _
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
+           Me.CustomersBindingSource.DataSource = proxy.Customers
+       End Sub
+   ```
 
-    ```csharp
-    private void Form1_Load(object sender, EventArgs e)
-    {
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
-    this.CustomersBindingSource.DataSource = proxy.Customers;
-    }
+   ```csharp
+   private void Form1_Load(object sender, EventArgs e)
+   {
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
+   this.CustomersBindingSource.DataSource = proxy.Customers;
+   }
+   ```
 
-    ```
+6. V **Průzkumníka řešení**, otevřete místní nabídku **NorthwindCustomers.svc** soubor a zvolte **zobrazit v prohlížeči**. Otevře se aplikace Internet Explorer a zobrazí schématu XML pro službu.
 
-6.  V **Průzkumníka řešení**, otevřete místní nabídku **NorthwindCustomers.svc** soubor a zvolte **zobrazit v prohlížeči**. Otevře se aplikace Internet Explorer a zobrazí schématu XML pro službu.
+7. Zkopírujte adresu URL z panelu Adresa aplikace Internet Explorer.
 
-7.  Zkopírujte adresu URL z panelu Adresa aplikace Internet Explorer.
-
-8.  V kódu, který jste přidali v kroku 4, vyberte `http://localhost:53161/NorthwindCustomers.svc/` a nahraďte ji právě zkopírovanou adresu URL.
+8. V kódu, který jste přidali v kroku 4, vyberte `http://localhost:53161/NorthwindCustomers.svc/` a nahraďte ji právě zkopírovanou adresu URL.
 
 9. V panelu nabídky zvolte **ladění** > **spustit ladění** ke spuštění aplikace. Se zobrazí informace o zákaznících.
 
- Nyní máte funkční aplikaci, která zobrazuje seznam zákazníků ze služby NorthwindCustomers. Pokud chcete zobrazit další data ve službě, můžete upravit [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] mohli přidat další tabulky z databáze Northwind.
+   Nyní máte funkční aplikaci, která zobrazuje seznam zákazníků ze služby NorthwindCustomers. Pokud chcete zobrazit další data ve službě, můžete upravit [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] mohli přidat další tabulky z databáze Northwind.
 
 V dalším volitelném kroku se dozvíte, jak filtrovat data, která je vrácena službou.
 
 ## <a name="adding-filtering-capabilities"></a>Přidání možností filtrování
  V tomto kroku přizpůsobíte aplikaci k filtrování dat podle města zákazníka.
 
-#### <a name="to-add-filtering-by-city"></a>Přidání filtrování podle města
+### <a name="to-add-filtering-by-city"></a>Přidání filtrování podle města
 
 1.  V **Průzkumníka řešení**, otevřete místní nabídku **Form1.vb** nebo **Form1.cs** uzlu a zvolte **otevřete**.
 

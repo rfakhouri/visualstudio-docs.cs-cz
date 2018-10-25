@@ -20,12 +20,12 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba454162cb9116dc1d2946a5c136b377354d7d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852177"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy tříd UML: Pokyny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  ![Třída, výčet a rozhraní](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
   
--   Použití **třídy** (1) pro reprezentaci dat nebo objektových typů pro většinu účelů.  
+- Použití **třídy** (1) pro reprezentaci dat nebo objektových typů pro většinu účelů.  
   
--   Použití **rozhraní** (2) v kontextu, ve kterém je třeba rozlišovat mezi čistým rozhraním a konkrétními třídami, které mají interní implementace. Toto rozlišení je užitečné, pokud je účelem diagramu popsat implementaci softwaru. Je méně vhodné, pokud jsou modelována pasivní data nebo pokud jsou definovány koncepty použité k popisu požadavků uživatele.  
+- Použití **rozhraní** (2) v kontextu, ve kterém je třeba rozlišovat mezi čistým rozhraním a konkrétními třídami, které mají interní implementace. Toto rozlišení je užitečné, pokud je účelem diagramu popsat implementaci softwaru. Je méně vhodné, pokud jsou modelována pasivní data nebo pokud jsou definovány koncepty použité k popisu požadavků uživatele.  
   
--   Použití **výčet** (3) pro reprezentaci typu, který má omezený počtem literálových hodnot, například `Stop` a `Go`.  
+- Použití **výčet** (3) pro reprezentaci typu, který má omezený počtem literálových hodnot, například `Stop` a `Go`.  
   
-    -   Přidejte do výčtu literálové hodnoty. Každé přidělte odlišný název.  
+  -   Přidejte do výčtu literálové hodnoty. Každé přidělte odlišný název.  
   
-    -   V případě potřeby lze rovněž každé literálové hodnotě poskytnout číselnou hodnotu. Otevřete místní nabídku pro literál ve výčtu, zvolte **vlastnosti**a potom zadejte číslo v **hodnotu** pole **vlastnosti** okna.  
+  -   V případě potřeby lze rovněž každé literálové hodnotě poskytnout číselnou hodnotu. Otevřete místní nabídku pro literál ve výčtu, zvolte **vlastnosti**a potom zadejte číslo v **hodnotu** pole **vlastnosti** okna.  
   
- Každému typu zadejte jedinečný název.  
+  Každému typu zadejte jedinečný název.  
   
 ### <a name="getting-types-from-other-diagrams"></a>Získávání typů z ostatních diagramů  
  Do diagramu tříd UML lze zobrazit typy z jiného diagramu.  
@@ -166,7 +166,7 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
   
  Můžete zobrazit její vlastnosti, otevřete místní nabídku pro atribut nebo operaci a klikněte na tlačítko **vlastnosti**. Vlastnosti se zobrazí v **vlastnosti** okna.  
   
- Chcete-li zobrazit vlastnosti parametrů operace zobrazíte, zvolte **[...]** v **parametry** vlastnost. Zobrazí se nové dialogové okno vlastností.  
+ Chcete-li zobrazit vlastnosti parametrů operace zobrazíte, zvolte <strong>[...]</strong> v **parametry** vlastnost. Zobrazí se nové dialogové okno vlastností.  
   
  Podrobné informace o všech vlastnostech, které lze nastavit, lze nalézt v tématech:  
   
@@ -177,15 +177,15 @@ V sadě Visual Studio, můžete použít *diagram tříd UML* pro popis datovýc
 ### <a name="types-of-attributes-and-operations"></a>Typy atributů a operací  
  Každý *typ* atributu nebo operace a každý typ parametru může být jedna z následujících akcí:  
   
--   **(žádné)**  – Můžete ponechat typ nespecifikovaný v signatuře vynecháním předcházející dvojtečky (`:`).  
+- **(žádné)**  – Můžete ponechat typ nespecifikovaný v signatuře vynecháním předcházející dvojtečky (`:`).  
   
--   Jeden ze standardních primitivních typů: **logická**, **celé číslo**, **řetězec**.  
+- Jeden ze standardních primitivních typů: **logická**, **celé číslo**, **řetězec**.  
   
--   Typ, který je definován v modelu.  
+- Typ, který je definován v modelu.  
   
--   Parametrizovaná hodnota typu šablony zapsaná jako Template\<parametr >. Zobrazit [typy šablon](#Templates).  
+- Parametrizovaná hodnota typu šablony zapsaná jako Template\<parametr >. Zobrazit [typy šablon](#Templates).  
   
- Lze rovněž napsat název typu, který ještě nebyl v modelu definován. Zobrazí se název v části **nespecifikované typy** v Průzkumníku modelů UML.  
+  Lze rovněž napsat název typu, který ještě nebyl v modelu definován. Zobrazí se název v části **nespecifikované typy** v Průzkumníku modelů UML.  
   
 > [!NOTE]
 >  Pokud bude v modelu následně definována třída nebo rozhraní tohoto názvu, budou se starší atributy a operace stále odkazovat na prvek v seznamu Nespecifikované typy. Pokud je chcete změnit, aby se odkazovaly na novou třídu, je nutné u každého atributu a operace obnovit typ vybráním nové třídy z rozevírací nabídky.  
@@ -343,15 +343,15 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Některé vlastnosti jednotlivých rolí jsou v diagramu přímo viditelné. Jsou to tyto:  
   
--   Název role. Zobrazí se na správném konci asociace v diagramu. V diagramu nebo v, můžete ho nastavit **vlastnosti** okna.  
+- Název role. Zobrazí se na správném konci asociace v diagramu. V diagramu nebo v, můžete ho nastavit **vlastnosti** okna.  
   
--   **Násobnost**, která má výchozí hodnotu **1**. Toto se rovněž na diagramu zobrazí blízko odpovídajícího konce asociace.  
+- **Násobnost**, která má výchozí hodnotu **1**. Toto se rovněž na diagramu zobrazí blízko odpovídajícího konce asociace.  
   
--   **Agregace**. Zobrazí se ve tvaru kosočtverce na jednom konci spojnice. Tím lze naznačit, že instance agregačních rolí vlastní nebo obsahují instance jiných.  
+- **Agregace**. Zobrazí se ve tvaru kosočtverce na jednom konci spojnice. Tím lze naznačit, že instance agregačních rolí vlastní nebo obsahují instance jiných.  
   
--   **Jedná o navigaci**. Pokud je hodnota true pouze u jedné role, zobrazí se v jejím směru šipka. Toto lze použít k indikaci směru spojení a databázových relací v softwaru.  
+- **Jedná o navigaci**. Pokud je hodnota true pouze u jedné role, zobrazí se v jejím směru šipka. Toto lze použít k indikaci směru spojení a databázových relací v softwaru.  
   
- Podrobnosti o těchto a dalších vlastnostech naleznete v tématu [vlastnosti přidružení v UML diagramech tříd](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
+  Podrobnosti o těchto a dalších vlastnostech naleznete v tématu [vlastnosti přidružení v UML diagramech tříd](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
   
 ### <a name="navigability"></a>Navigace  
  Po zakreslení má asociace na jednom konci šipku, což označuje, že asociace je provázána v tomto směru. To je užitečné, pokud diagram tříd reprezentuje softwarové třídy a asociace reprezentují ukazatele nebo odkazy. Pokud je však diagram tříd použit k reprezentaci entit a vztahů nebo obchodních konceptů, není použití navigace relevantní. V takovém případě je lepší použít zakreslení asociací bez šipek. Můžete to provést nastavením **Is Navigable** vlastnost na obou stranách asociace na hodnotu True. Abychom to usnadnili, si můžete stáhnout vzorový kód [modelování UML domény](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).  
@@ -368,13 +368,13 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ##  <a name="Inheritance"></a> Dědičnost  
  Použití **dědičnosti** nástroj k vytvoření následujících vztahů:  
   
--   A *generalizace* vztah mezi specializovaným typem a obecným typem  
+- A *generalizace* vztah mezi specializovaným typem a obecným typem  
   
-     \- nebo –  
+   \- nebo –  
   
--   A *realizace* vztah mezi třídou a, který implementuje rozhraní.  
+- A *realizace* vztah mezi třídou a, který implementuje rozhraní.  
   
- Ve vztazích dědičnosti nelze vytvořit smyčky.  
+  Ve vztazích dědičnosti nelze vytvořit smyčky.  
   
 ### <a name="generalization"></a>Generalizace  
  Generalizace znamená to, že specializované nebo odvozené typy dědí atributy, operace a asociace obecného nebo základního typu.  
@@ -385,17 +385,17 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ##### <a name="to-override-an-operations-definition-in-a-specializing-type"></a>Přepsání definice operace ve specializovaném typu  
   
-1.  Klikněte na relaci generalizace.  
+1. Klikněte na relaci generalizace.  
   
-     Zobrazí se zvýrazněně a v její blízkosti se objeví značka Akce.  
+    Zobrazí se zvýrazněně a v její blízkosti se objeví značka Akce.  
   
-2.  Klikněte na značku akce a potom klikněte na tlačítko **přepsat operace**.  
+2. Klikněte na značku akce a potom klikněte na tlačítko **přepsat operace**.  
   
-     **Přepsat operace** zobrazí se dialogové okno.  
+    **Přepsat operace** zobrazí se dialogové okno.  
   
-3.  Vyberte operace, které chcete zobrazit ve specializovaném typu, a pak klikněte na tlačítko **OK**.  
+3. Vyberte operace, které chcete zobrazit ve specializovaném typu, a pak klikněte na tlačítko **OK**.  
   
- Operace, které jste vybrali, se nyní zobrazí ve specializovaném typu.  
+   Operace, které jste vybrali, se nyní zobrazí ve specializovaném typu.  
   
 ### <a name="realization"></a>Realizace  
  Realizace znamená, že třída implementuje atributy a operace zadané rozhraním. Rozhraní je na konci spojnice se šipkou.  
@@ -417,23 +417,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-create-a-template-type"></a>Vytvoření typu šablony  
   
-1.  Vytvořte třídu nebo rozhraní. To bude váš typ šablony. Vhodně jej pojmenujte například `Dictionary`.  
+1. Vytvořte třídu nebo rozhraní. To bude váš typ šablony. Vhodně jej pojmenujte například `Dictionary`.  
   
-2.  Otevřete místní nabídku pro nový typ a klikněte na tlačítko **vlastnosti**.  
+2. Otevřete místní nabídku pro nový typ a klikněte na tlačítko **vlastnosti**.  
   
-3.  V **vlastnosti** okna, klikněte na tlačítko **[...]**  v **parametry šablony** pole.  
+3. V **vlastnosti** okna, klikněte na tlačítko **[...]**  v **parametry šablony** pole.  
   
-     **Editor kolekce parametrů šablony** zobrazí se dialogové okno.  
+    **Editor kolekce parametrů šablony** zobrazí se dialogové okno.  
   
-4.  Zvolte **přidat**.  
+4. Zvolte **přidat**.  
   
-5.  Nastavte vlastnost name na název parametru pro typ šablony, například `Key`.  
+5. Nastavte vlastnost name na název parametru pro typ šablony, například `Key`.  
   
-6.  Nastavte **druh parametru**. Výchozí hodnota je **třídy**.  
+6. Nastavte **druh parametru**. Výchozí hodnota je **třídy**.  
   
-7.  Pokud chcete parametr Přijmout pouze odvozené třídy určité základní třídy, nastavte **hodnota s omezením** na základní třídu, která chcete.  
+7. Pokud chcete parametr Přijmout pouze odvozené třídy určité základní třídy, nastavte **hodnota s omezením** na základní třídu, která chcete.  
   
-8.  Přidejte tolik parametrů, kolik potřebujete, klikněte na tlačítko **OK**.  
+8. Přidejte tolik parametrů, kolik potřebujete, klikněte na tlačítko **OK**.  
   
 9. Typům šablony přidejte atributy a operace, jako byste to udělali u tříd.  
   
@@ -443,9 +443,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
      Můžete použít parametr, jehož druh je **celé číslo** jako vazbu v násobnosti. Například může použít parametr maximálního celého čísla pro definici násobnosti atributu jako `[0..max]`.  
   
- Pokud jste vytvořili typy šablon, lze je použít pro definici vazeb šablony:  
+   Pokud jste vytvořili typy šablon, lze je použít pro definici vazeb šablony:  
   
- ![Třída vázaná v šabloně slovníku](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
+   ![Třída vázaná v šabloně slovníku](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
   
 #### <a name="to-use-a-template-type"></a>Použití typu šablony  
   

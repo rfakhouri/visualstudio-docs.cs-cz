@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831715"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generování souborů z modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Z modelu UML můžete generovat kód programu, schémata, dokumenty, prostředky
   
  Existují tři hlavní scénáře:  
   
--   [Generování souborů z příkazu nabídky](#Command) nebo gesta. Můžete definovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkaz, který je k dispozici v modelech UML.  
+- [Generování souborů z příkazu nabídky](#Command) nebo gesta. Můžete definovat [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] příkaz, který je k dispozici v modelech UML.  
   
--   [Generování souborů z aplikace](#Application). Můžete psát aplikace, která čte modely UML a generuje soubory.  
+- [Generování souborů z aplikace](#Application). Můžete psát aplikace, která čte modely UML a generuje soubory.  
   
--   [Generuje se při návrhu](#Design). Pomocí modelu můžete definovat některé funkce vaší aplikace a generovat kód, prostředky, a tak dále v rámci vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.  
+- [Generuje se při návrhu](#Design). Pomocí modelu můžete definovat některé funkce vaší aplikace a generovat kód, prostředky, a tak dále v rámci vaší [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] řešení.  
   
- Toto téma končí diskusi o [použití generování textu](#What). Další informace najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
+  Toto téma končí diskusi o [použití generování textu](#What). Další informace najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md).  
   
 ##  <a name="Command"></a> Generování souborů z příkazu nabídky  
  Můžete použít předzpracování textové šablony v rámci příkazu nabídky UML. V rámci kódu textové šablony, nebo v samostatné částečné třídy si můžete přečíst model, který je zobrazit v diagramu.  
   
  Další informace o těchto funkcích najdete v následujících tématech:  
   
--   [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [Definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [Generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [Procházení modelu UML](../modeling/navigate-the-uml-model.md)  
+- [Procházení modelu UML](../modeling/navigate-the-uml-model.md)  
   
- Přístup ukázáno v následujícím příkladu je vhodný pro generování textu z jednoho modelu při zahájení operace z jednoho z diagramech modelů. Ke zpracování modelu v samostatné kontextu, zvažte použití [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) pro přístup k modelu a jeho elementy.  
+  Přístup ukázáno v následujícím příkladu je vhodný pro generování textu z jednoho modelu při zahájení operace z jednoho z diagramech modelů. Ke zpracování modelu v samostatné kontextu, zvažte použití [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) pro přístup k modelu a jeho elementy.  
   
 ### <a name="example"></a>Příklad  
  Chcete-li spustit tento příklad, vytvořte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) projektu. Název projektu, který se používá v tomto příkladu je `VdmGenerator`. V **source.extension.vsixmanifest** souboru, klikněte na tlačítko **přidat obsah** a nastavte je v poli Typ **Komponenta MEF** a zdrojovou cestu odkazující na aktuální projekt. Další informace o tom, jak nastavit tento typ projektu, naleznete v tématu [definování příkazu nabídky v diagramu modelování](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>Nastavit řešení sady Visual Studio pro účely tohoto příkladu  
   
-1.  Vytvoření diagramu tříd UML v projektu modelování v novém řešení.  
+1. Vytvoření diagramu tříd UML v projektu modelování v novém řešení.  
   
-    1.  V **architektura** nabídky, klikněte na tlačítko **nový Diagram**.  
+   1.  V **architektura** nabídky, klikněte na tlačítko **nový Diagram**.  
   
-    2.  Vyberte **Diagram tříd UML**.  
+   2.  Vyberte **Diagram tříd UML**.  
   
-    3.  Postupujte podle pokynů k vytvoření nového řešení a modelování projektu.  
+   3.  Postupujte podle pokynů k vytvoření nového řešení a modelování projektu.  
   
-    4.  Přidáte některé třídy do diagramu přetažením nástroj třída UML z panelu nástrojů.  
+   4.  Přidáte některé třídy do diagramu přetažením nástroj třída UML z panelu nástrojů.  
   
-    5.  Uložte soubor.  
+   5.  Uložte soubor.  
   
-2.  Vytvoření projektu jazyka C# nebo Visual Basic ve stejném řešení.  
+2. Vytvoření projektu jazyka C# nebo Visual Basic ve stejném řešení.  
   
-    -   V Průzkumníku řešení klikněte pravým tlačítkem na řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**. V části **nainstalované šablony**, klikněte na tlačítko **jazyka Visual Basic** nebo **Visual C#,** a pak vyberte typ projektu, jako je například **konzolovou aplikaci**.  
+   -   V Průzkumníku řešení klikněte pravým tlačítkem na řešení, přejděte na **přidat**a potom klikněte na tlačítko **nový projekt**. V části **nainstalované šablony**, klikněte na tlačítko **jazyka Visual Basic** nebo **Visual C#,** a pak vyberte typ projektu, jako je například **konzolovou aplikaci**.  
   
-3.  C# nebo Visual Basic projektu přidáte soubor s prostým textem. Tento soubor bude obsahovat kód, který je sdílen, pokud chcete zadat několik textových šablon.  
+3. C# nebo Visual Basic projektu přidáte soubor s prostým textem. Tento soubor bude obsahovat kód, který je sdílen, pokud chcete zadat několik textových šablon.  
   
-    -   V Průzkumníku řešení klikněte pravým tlačítkem na projekt, přejděte na **přidat**a potom klikněte na tlačítko **nová položka**. Vyberte **textový soubor**.  
+   - V Průzkumníku řešení klikněte pravým tlačítkem na projekt, přejděte na **přidat**a potom klikněte na tlačítko **nová položka**. Vyberte **textový soubor**.  
   
      Vložte text, který je uvedené v následující části.  
   
-4.  C# nebo Visual Basic projektu přidáte soubor textové šablony.  
+4. C# nebo Visual Basic projektu přidáte soubor textové šablony.  
   
-    -   V Průzkumníku řešení klikněte pravým tlačítkem na projekt, přejděte na **přidat**a potom klikněte na tlačítko **nová položka**. Vyberte **textové šablony**.  
+   - V Průzkumníku řešení klikněte pravým tlačítkem na projekt, přejděte na **přidat**a potom klikněte na tlačítko **nová položka**. Vyberte **textové šablony**.  
   
      Vložte kód, který následuje do souboru textové šablony.  
   
-5.  Uložte soubor textové šablony.  
+5. Uložte soubor textové šablony.  
   
-6.  Prozkoumejte kód v souboru pobočkách. Měl by obsahovat třídu pro každou třídu modelu UML v modelu.  
+6. Prozkoumejte kód v souboru pobočkách. Měl by obsahovat třídu pro každou třídu modelu UML v modelu.  
   
-    1.  V projektu jazyka Visual Basic, klikněte na tlačítko **zobrazit všechny soubory** v panelu nástrojů Průzkumníka řešení.  
+   1.  V projektu jazyka Visual Basic, klikněte na tlačítko **zobrazit všechny soubory** v panelu nástrojů Průzkumníka řešení.  
   
-    2.  Rozbalte uzel soubor šablony v Průzkumníku řešení.  
+   2.  Rozbalte uzel soubor šablony v Průzkumníku řešení.  
   
 #### <a name="content-of-the-shared-text-file"></a>Obsah sdílený textového souboru  
  V tomto příkladu soubor se nazývá SharedTemplateCode.txt a je ve stejné složce jako textové šablony.  

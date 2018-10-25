@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853165"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Řešení potíží s výjimkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvolána, když [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Určuje, že zpráva není správně zabezpečené nebo nebude bylo manipulováno. Dojde k chybě nejčastěji Pokud jsou splněny všechny následující podmínky:  
@@ -48,35 +48,35 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> výjimka je vyvol
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Pokud chcete vytvořit vlastní službu vazeb pro služby WCF hostované uvnitř serveru ASP.NET Development Server  
   
-1.  Otevřete soubor Web.config pro službu WCF, která vygenerovala výjimku.  
+1. Otevřete soubor Web.config pro službu WCF, která vygenerovala výjimku.  
   
-2.  Zadejte následující informace do souboru Web.config.  
+2. Zadejte následující informace do souboru Web.config.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Uložte a zavřete soubor Web.config.  
+3. Uložte a zavřete soubor Web.config.  
   
-4.  Kód služby WCF nebo Web změňte hodnotu koncového bodu takto:  
+4. Kód služby WCF nebo Web změňte hodnotu koncového bodu takto:  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Tím se zajistí, že služba používá vlastní vazby.  
+    Tím se zajistí, že služba používá vlastní vazby.  
   
-5.  Přidejte odkaz na službu ve webové aplikaci, která přistupuje k službě. (V **přidat odkaz na službu** dialogovém okně přidejte odkaz na službu, jako jste to udělali s původní služby, který se generuje výjimku.)  
+5. Přidejte odkaz na službu ve webové aplikaci, která přistupuje k službě. (V **přidat odkaz na službu** dialogovém okně přidejte odkaz na službu, jako jste to udělali s původní služby, který se generuje výjimku.)  
   
- Provedením následujících kroků zakázat zabezpečení NTLM, když pracujete s odkaz na službu WCF.  
+   Provedením následujících kroků zakázat zabezpečení NTLM, když pracujete s odkaz na službu WCF.  
   
 > [!IMPORTANT]
 >  Vypnutí zabezpečení NTLM se nedoporučuje a může představovat bezpečnostní hrozbu.  

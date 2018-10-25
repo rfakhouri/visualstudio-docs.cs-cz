@@ -9,12 +9,12 @@ description: Přihlášení může selhat, pokud se používají aliasy nebo pop
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854465"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k předplatná sady Visual Studio může selhat, pokud aliasy using
 
@@ -116,10 +116,10 @@ Po přiřazení předplatného je k odběrateli, dostanou e-mail s požadavkem n
 1. Přejděte do https://my.visualstudio.coma klikněte na tlačítko **vytvořit nový účet Microsoft**.
 
 2. Vyplňte pole:
-    - Zadejte e-mailovou adresu, který obdržel Uvítacího e-mailu v Someone@example.com pole
-    - Vytvořit heslo
-    - Zvolte nastavení propagační akce
-    - Klikněte na tlačítko **další**
+   - Zadejte e-mailovou adresu, který obdržel Uvítacího e-mailu v Someone@example.com pole
+   - Vytvořit heslo
+   - Zvolte nastavení propagační akce
+   - Klikněte na tlačítko **další**
 
 3. Proveďte kroky ověření a klikněte na tlačítko **Další**.
 
@@ -141,10 +141,10 @@ Bylo přiřazeno předplatné sady Visual Studio a mohou směrováni pro přihl�
 2. Klikněte na tlačítko Vytvořit nový Account Microsoft na pravé straně
 
 3. Vyplňte formulář:
-    - Použijte váš firemní e-mailovou adresu v someone@example.com pole
-    - Zadejte heslo
-    - Vyberte preferovaný propagační akce
-    - Klikněte na tlačítko Další
+   - Použijte váš firemní e-mailovou adresu v someone@example.com pole
+   - Zadejte heslo
+   - Vyberte preferovaný propagační akce
+   - Klikněte na tlačítko Další
 
 4. Dokončete ověření účtu
 

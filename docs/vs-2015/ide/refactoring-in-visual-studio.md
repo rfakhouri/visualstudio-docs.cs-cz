@@ -14,27 +14,27 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce995687f304579c7a4f3a95b971dcc86e28f050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878034"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refaktoring v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Refaktoring je proces upravovat kód, aby byla jednodušší udržovat, pochopit a rozšířit, ale bez změny jeho chování. Některé běžné *refaktoring* patří:  
   
-1.  rozdělení do menších dlouhé funkce  
+1. rozdělení do menších dlouhé funkce  
   
-2.  přejmenováním proměnné, typy, funkce nebo parametry  
+2. přejmenováním proměnné, typy, funkce nebo parametry  
   
-3.  Změna pořadí parametrů  
+3. Změna pořadí parametrů  
   
-4.  odebrání nebo změna řazení direktiv using  
+4. odebrání nebo změna řazení direktiv using  
   
- Protože logiku Refaktoring je úzce vázané na syntaxi jazyka, každá služba jazyka v sadě Visual Studio poskytuje své vlastní nástroje pro refaktoring. Další informace naleznete na následujících stránkách:  
+   Protože logiku Refaktoring je úzce vázané na syntaxi jazyka, každá služba jazyka v sadě Visual Studio poskytuje své vlastní nástroje pro refaktoring. Další informace naleznete na následujících stránkách:  
   
 ### <a name="refactoring-in-c"></a>Refaktoring v jazyce C#  
  [Refaktoring (C#)](../csharp-ide/refactoring-csharp.md)  

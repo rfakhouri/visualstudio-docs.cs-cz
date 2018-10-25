@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829466"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programového kódu a další soubory v projektu sady Visual Studio. Obvykle píšete šablony tak, aby se lišily kód, který se generují podle dat z *modelu*. Model je soubor nebo databázi, která obsahuje základní informace o podle požadavků vaší aplikace.
@@ -40,103 +40,102 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Chcete-li vytvořit šablonu T4 doby návrhu v sadě Visual Studio
 
-1.  Vytvořit projekt sady Visual Studio, nebo otevřete existující.
+1. Vytvořit projekt sady Visual Studio, nebo otevřete existující.
 
-     Třeba na **souboru** nabídce zvolte **nový** > **projektu**.
+    Třeba na **souboru** nabídce zvolte **nový** > **projektu**.
 
-2.  Přidejte do projektu soubor textové šablony a přiřaďte jí název, který má příponu **.tt**.
+2. Přidejte do projektu soubor textové šablony a přiřaďte jí název, který má příponu **.tt**.
 
-     Chcete-li to provést, v **Průzkumníka řešení**, v místní nabídce projektu zvolte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno Vyberte **textové šablony** v prostředním podokně.
+    Chcete-li to provést, v **Průzkumníka řešení**, v místní nabídce projektu zvolte **přidat** > **nová položka**. V **přidat novou položku** dialogové okno Vyberte **textové šablony** v prostředním podokně.
 
-     Všimněte si, že **Custom Tool** vlastnost souboru je **TextTemplatingFileGenerator**.
+    Všimněte si, že **Custom Tool** vlastnost souboru je **TextTemplatingFileGenerator**.
 
-3.  Otevřete soubor. Bude již obsahovat následující direktivy:
+3. Otevřete soubor. Bude již obsahovat následující direktivy:
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     Pokud jste přidali šablony, která má [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekt, bude atribut language "`VB`".
+    Pokud jste přidali šablony, která má [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekt, bude atribut language "`VB`".
 
-4.  Přidejte nějaký text na konci souboru. Příklad:
+4. Přidejte nějaký text na konci souboru. Příklad:
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  Uložte soubor.
+5. Uložte soubor.
 
-     Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na tlačítko **OK**.
+    Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na tlačítko **OK**.
 
-6.  V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.
+6. V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.
 
-    > [!NOTE]
-    >  Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.
+   > [!NOTE]
+   >  Pokud váš projekt je projekt jazyka Visual Basic, musíte kliknout na **zobrazit všechny soubory** Chcete-li zobrazit výstupní soubor.
 
 ### <a name="regenerating-the-code"></a>Opětovné generování kódu
  Šablonu se spustí, generování pomocný soubor v některém z následujících případech:
 
--   Šablonu upravit a potom změňte fokus na jiné okno Visual Studio.
+- Šablonu upravit a potom změňte fokus na jiné okno Visual Studio.
 
--   Uložte šablonu.
+- Uložte šablonu.
 
--   Klikněte na tlačítko **Transformovat všechny šablony** v **sestavení** nabídky. To se transformovat všechny šablony v řešení sady Visual Studio.
+- Klikněte na tlačítko **Transformovat všechny šablony** v **sestavení** nabídky. To se transformovat všechny šablony v řešení sady Visual Studio.
 
--   V **Průzkumníka řešení**, v místní nabídce libovolného souboru, zvolte **spustit vlastní nástroj**. Tuto metodu použijte k transformaci podmnožinu vybrané šablony.
+- V **Průzkumníka řešení**, v místní nabídce libovolného souboru, zvolte **spustit vlastní nástroj**. Tuto metodu použijte k transformaci podmnožinu vybrané šablony.
 
- Projekt sady Visual Studio můžete také nastavit tak, že šablony jsou spouštěny, když jste změnili datových souborů, které čtou. Další informace najdete v tématu [kód znovu se generuje automaticky](#Regenerating).
+  Projekt sady Visual Studio můžete také nastavit tak, že šablony jsou spouštěny, když jste změnili datových souborů, které čtou. Další informace najdete v tématu [kód znovu se generuje automaticky](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Generování textu proměnlivé
  Textové šablony umožňují odlišit obsah generovaný soubor pomocí kódu programu.
 
 #### <a name="to-generate-text-by-using-program-code"></a>Vygenerování textu pomocí kódu programu
 
-1.  Změnit obsah `.tt` souboru:
+1. Změnit obsah `.tt` souboru:
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. Uložte soubor .tt a zkontrolujte soubor .txt generované znovu. Vypíše druhých mocnin čísla od 0 do 10.
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   Všimněte si, že příkazy jsou uzavřený do složených závorek `<#...#>`a jedním umístěním pro výrazy `<#=...#>`. Další informace najdete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).
 
-    ```
-
-2.  Uložte soubor .tt a zkontrolujte soubor .txt generované znovu. Vypíše druhých mocnin čísla od 0 do 10.
-
- Všimněte si, že příkazy jsou uzavřený do složených závorek `<#...#>`a jedním umístěním pro výrazy `<#=...#>`. Další informace najdete v tématu [vytvoření textové šablony T4](../modeling/writing-a-t4-text-template.md).
-
- Pokud píšete generování kódu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` by měl obsahovat směrnice `language="VB"`. `"C#"` je výchozí nastavení.
+   Pokud píšete generování kódu [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `template` by měl obsahovat směrnice `language="VB"`. `"C#"` je výchozí nastavení.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Ladění textové šablony T4 návrhu
  Ladění textové šablony:
 
--   Vložit `debug="true"` do `template` směrnice. Příklad:
+- Vložit `debug="true"` do `template` směrnice. Příklad:
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   Nastavte zarážky v šabloně v stejně, jako byste to udělali pro běžné kód.
+- Nastavte zarážky v šabloně v stejně, jako byste to udělali pro běžné kód.
 
--   Zvolte **ladit šablonu T4** z místní nabídky souboru textové šablony v Průzkumníku řešení.
+- Zvolte **ladit šablonu T4** z místní nabídky souboru textové šablony v Průzkumníku řešení.
 
- Šablona se spustí a zastaví na zarážce. Můžete prozkoumat proměnné a krokovat kód obvyklým způsobem.
+  Šablona se spustí a zastaví na zarážce. Můžete prozkoumat proměnné a krokovat kód obvyklým způsobem.
 
 > [!TIP]
 >  `debug="true"` Díky generovaný kód přesněji namapovat na textové šablony, vložením další řádek číslování direktivy do vygenerovaného kódu. Ponecháte-li vyzkoušet, zarážky může přestat běžet v chybném stavu.
@@ -203,13 +202,13 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 ### <a name="structuring-text-templates"></a>Strukturování textových šablon
  Jak dobrým zvykem často Představujeme oddělují kód šablony do dvou částí:
 
--   Konfigurace nebo část shromažďování dat, která nastavuje hodnoty v proměnné, ale nemůže obsahovat textové bloky. V předchozím příkladu, tato část je inicializace `properties`.
+- Konfigurace nebo část shromažďování dat, která nastavuje hodnoty v proměnné, ale nemůže obsahovat textové bloky. V předchozím příkladu, tato část je inicializace `properties`.
 
-     V části "modelu" to se někdy nazývá protože sestaví model v obchodě a obvykle přečte soubor modelu.
+   V části "modelu" to se někdy nazývá protože sestaví model v obchodě a obvykle přečte soubor modelu.
 
--   Generování textu část (`foreach(...){...}` v příkladu), který používá hodnoty proměnné.
+- Generování textu část (`foreach(...){...}` v příkladu), který používá hodnoty proměnné.
 
- To není nezbytné oddělení, ale je styl, což usnadňuje čtení šablony díky snížení složitosti části, který obsahuje text.
+  To není nezbytné oddělení, ale je styl, což usnadňuje čtení šablony díky snížení složitosti části, který obsahuje text.
 
 ## <a name="reading-files-or-other-sources"></a>Čtení souborů nebo jiných zdrojů
  Pro přístup k souboru modelu nebo databáze, můžete použít kód šablony sestavení, jako je například System.XML. Pokud chcete získat přístup na tato sestavení, je třeba vložit direktivy takovéto:
@@ -236,7 +235,6 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>Otevření souboru se relativní cesta
@@ -244,7 +242,6 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  Můžete napsat, například:
@@ -256,7 +253,6 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  Můžete také použít `this.Host.TemplateFile`, který identifikuje název aktuálnímu souboru šablony.
@@ -287,7 +282,6 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -326,37 +320,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Chcete-li převést existující soubor do šablony návrhu
 
-1.  Do projektu sady Visual Studio, přidejte soubor typu, který chcete vygenerovat, například `.cs`, `.vb`, nebo `.resx` souboru.
+1. Do projektu sady Visual Studio, přidejte soubor typu, který chcete vygenerovat, například `.cs`, `.vb`, nebo `.resx` souboru.
 
-2.  Vyzkoušejte nový soubor, abyste měli jistotu, že funguje.
+2. Vyzkoušejte nový soubor, abyste měli jistotu, že funguje.
 
-3.  V Průzkumníku řešení změnit příponu názvu souboru na **.tt**.
+3. V Průzkumníku řešení změnit příponu názvu souboru na **.tt**.
 
-4.  Ověřte následující vlastnosti **.tt** souboru:
+4. Ověřte následující vlastnosti **.tt** souboru:
 
-    |||
-    |-|-|
-    |**Vlastní nástroj =**|**TextTemplatingFileGenerator**|
-    |**Akce sestavení =**|**None**|
 
-5.  Na začátek souboru vložte následující řádky:
+   | | |
+   |-|-|
+   | **Vlastní nástroj =** | **TextTemplatingFileGenerator** |
+   | **Akce sestavení =** | **None** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     Pokud chcete zadat generování kódu šablony v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], nastavte `language` atribut `"VB"` místo `"C#"`.
+5. Na začátek souboru vložte následující řádky:
 
-     Nastavte `extension` atribut příponu názvu souboru pro typ souboru, který chcete vygenerovat, například `.cs`, `.resx`, nebo `.xml`.
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  Uložte soubor.
+    Pokud chcete zadat generování kódu šablony v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], nastavte `language` atribut `"VB"` místo `"C#"`.
 
-     Pomocné soubor je vytvořen, se zadanou příponou. Její vlastnosti jsou správné pro typ souboru. Například **akce sestavení** by být vlastnost souboru .cs **kompilaci**.
+    Nastavte `extension` atribut příponu názvu souboru pro typ souboru, který chcete vygenerovat, například `.cs`, `.resx`, nebo `.xml`.
 
-     Ověřte, že vygenerovaný soubor obsahuje obsah jako původní soubor.
+6. Uložte soubor.
 
-7.  Identifikujte část souboru, který chcete měnit. Například na součást, která se zobrazí pouze za určitých podmínek nebo součást, která se opakuje, nebo kde konkrétní hodnoty liší. Vložit generování kódu. Uložte soubor a ověřte, že je správně vygenerován pomocný soubor. Tento krok opakujte.
+    Pomocné soubor je vytvořen, se zadanou příponou. Její vlastnosti jsou správné pro typ souboru. Například **akce sestavení** by být vlastnost souboru .cs **kompilaci**.
+
+    Ověřte, že vygenerovaný soubor obsahuje obsah jako původní soubor.
+
+7. Identifikujte část souboru, který chcete měnit. Například na součást, která se zobrazí pouze za určitých podmínek nebo součást, která se opakuje, nebo kde konkrétní hodnoty liší. Vložit generování kódu. Uložte soubor a ověřte, že je správně vygenerován pomocný soubor. Tento krok opakujte.
 
 ## <a name="guidelines-for-code-generation"></a>Pokyny pro generování kódu
  Podrobnosti najdete na [pokyny pro textové šablony T4 zápis](../modeling/guidelines-for-writing-t4-text-templates.md).
@@ -364,7 +360,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>Další kroky
 
 |Další krok|Téma|
-|---------------|-----------|
+|-|-|
 |Programujte a laďte pokročilé textové šablony s kódem, který používá pomocných funkcí, zahrnuté soubory a externí data.|[Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)|
 |Generování dokumenty ze šablon v době běhu.|[Generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |Spuštění generování textu mimo sadu Visual Studio.|[Generování souborů pomocí nástroje TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|

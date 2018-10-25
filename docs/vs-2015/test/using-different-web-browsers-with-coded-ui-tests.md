@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893231"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
   
  **Požadavky**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Operační systémy:  
+- Operační systémy:  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Verze webového prohlížeče:  
+- Verze webového prohlížeče:  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Windows Internet Explorer 10  
+  -   Windows Internet Explorer 10  
   
-    -   Podporované verze prohlížečů Mozilla Firefox a Google Chrome, přejděte [zde](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  -   Podporované verze prohlížečů Mozilla Firefox a Google Chrome, přejděte [zde](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
--   Nainstalujte [součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+- Nainstalujte [součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- **Co je podporováno ve všech webových prohlížečích?**  
+  **Co je podporováno ve všech webových prohlížečích?**  
   
--   [Přidání vlastního kódu pro řízení funkcí](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) například vlastnosti, vyhledávání a podprocesy přehrávání.  
+- [Přidání vlastního kódu pro řízení funkcí](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) například vlastnosti, vyhledávání a podprocesy přehrávání.  
   
--   Automaticky otevíraná okna a dialogová okna  
+- Automaticky otevíraná okna a dialogová okna  
   
--   [Spustit základní JavaScript bez návratového typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [Spustit základní JavaScript bez návratového typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   Hledat oblasti odolnosti (pomocí inteligentní shody) a [vylepšení výkonu](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- Hledat oblasti odolnosti (pomocí inteligentní shody) a [vylepšení výkonu](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Proč bych měl používat programové testy UI napříč několika typy webových prohlížečů?  
  Při testování webové aplikace pomocí různých typů webových prohlížečů můžete lépe emulovat zkušenosti vašich uživatelů s uživatelským rozhraním na různých prohlížečích. Aplikace může například obsahovat ovládací prvek nebo kód v aplikaci Internet Explorer, který není kompatibilní s jinými webovými prohlížeči. Spuštěním programových testů UI na různých prohlížečích můžete objevit a opravit jakýkoliv problém předtím, než ovlivní vaše zákazníky.  
@@ -74,16 +74,16 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
   
 #### <a name="installing-selenium-components"></a>Instalace součástí Selenium  
   
-1.  Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.  
+1. Na **nástroje** nabídce zvolte **rozšíření a aktualizace**.  
   
-2.  V dialogovém okně rozšíření a aktualizace vyhledejte `Selenium components for Cross Browser Testing`.  
+2. V dialogovém okně rozšíření a aktualizace vyhledejte `Selenium components for Cross Browser Testing`.  
   
-3.  Zvýrazněte rozšíření a zvolte možnost **Stáhnout**.  
+3. Zvýrazněte rozšíření a zvolte možnost **Stáhnout**.  
   
-    > [!TIP]
-    >  Můžete také stáhnout součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče z [tady](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > [!TIP]
+   >  Můžete také stáhnout součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče z [tady](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Další informace o vytváření a používání kódované UI testy, naleznete v tématu [vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+   Další informace o vytváření a používání kódované UI testy, naleznete v tématu [vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
 ### <a name="enable-debugging"></a>Povolení ladění  
  Chcete-li povolit ladění webové aplikace, je nutné dokončit následující možnosti konfigurace:  
@@ -106,29 +106,29 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
  *Co dalšího mohu vědět?*  
  **Poznámky**  
   
--   ![Prerequsite](../test/media/prereq.png "požadavky") webový prohlížeč Apple Safari není podporován.  
+- ![Prerequsite](../test/media/prereq.png "požadavky") webový prohlížeč Apple Safari není podporován.  
   
--   ![Prerequsite](../test/media/prereq.png "požadavky") akce spuštění webového prohlížeče musí být součástí programového testu uživatelského rozhraní.  
+- ![Prerequsite](../test/media/prereq.png "požadavky") akce spuštění webového prohlížeče musí být součástí programového testu uživatelského rozhraní.  
   
-     Pokud je již webový prohlížeč otevřen a chcete v něm spustit příslušné kroky, aniž byste používali aplikaci Internet Explorer, přehrávání selže. Je proto vhodné zahrnout spuštění webového prohlížeče jako součást programových testů UI.  
+   Pokud je již webový prohlížeč otevřen a chcete v něm spustit příslušné kroky, aniž byste používali aplikaci Internet Explorer, přehrávání selže. Je proto vhodné zahrnout spuštění webového prohlížeče jako součást programových testů UI.  
   
--   ![Prerequsite](../test/media/prereq.png "požadavky") prohlížeče automatizace specifické podle akce uživatelského rozhraní, jako je maximalizace, minimalizace a obnovení se nepodporuje.  
+- ![Prerequsite](../test/media/prereq.png "požadavky") prohlížeče automatizace specifické podle akce uživatelského rozhraní, jako je maximalizace, minimalizace a obnovení se nepodporuje.  
   
- **Tipy**  
+  **Tipy**  
   
--   ![Tip](../test/media/tip.png "Tip") můžete nakonfigurovat výstup do obsahoval snímky obrazovky v kódovaných protokolech UI. Chcete-li tak učinit, musíte provést některá nastavení konfigurace v souboru QTAgent32.exe.config. Ve výchozím nastavení je tento soubor nainstalován v následujícím umístění:  
+- ![Tip](../test/media/tip.png "Tip") můžete nakonfigurovat výstup do obsahoval snímky obrazovky v kódovaných protokolech UI. Chcete-li tak učinit, musíte provést některá nastavení konfigurace v souboru QTAgent32.exe.config. Ve výchozím nastavení je tento soubor nainstalován v následujícím umístění:  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     Nastavte následující hodnoty:  
+   Nastavte následující hodnoty:  
   
-    -   `EqtTraceLevel` v `system.diagnostics` oddílu.  
+  - `EqtTraceLevel` v `system.diagnostics` oddílu.  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         Nastavíte-li hodnotu 3 nebo vyšší, budou snímky obrazovky pořízeny pro každou akci. Pokud je hodnota nastavena na 1 nebo 2, budou snímky obrazovky pořízeny pouze pro chybové akce.  
+     Nastavíte-li hodnotu 3 nebo vyšší, budou snímky obrazovky pořízeny pro každou akci. Pokud je hodnota nastavena na 1 nebo 2, budou snímky obrazovky pořízeny pouze pro chybové akce.  
   
-     Další informace najdete v tématu [analýza programových testů pomocí programového uživatelského rozhraní protokolů testů](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+    Další informace najdete v tématu [analýza programových testů pomocí programového uživatelského rozhraní protokolů testů](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
 ## <a name="external-resources"></a>Externí zdroje  
   

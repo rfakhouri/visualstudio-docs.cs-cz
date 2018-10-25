@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878580"
 ---
 # <a name="comparing-properties-and-items"></a>Porovnávání vlastností a položek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,27 +90,27 @@ Vlastnosti nástroje MSBuild a položek se používají k předávání informac
 ## <a name="property-and-item-evaluation-order"></a>Vlastnosti a položky pořadí vyhodnocování  
  Během fáze vyhodnocení sestavení importované soubory jsou součástí sestavení v pořadí, v jakém jsou uvedeny. Vlastnosti a položky jsou definovány v tři průchody v následujícím pořadí:  
   
--   Vlastnosti jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.  
+- Vlastnosti jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.  
   
--   Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.  
+- Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.  
   
--   Položky jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.  
+- Položky jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny.  
   
- Během fáze spuštění sestavení vlastností a položek, které jsou definovány v rámci cíle jsou vyhodnocovány společně v jedné fáze v pořadí, v jakém jsou uvedeny.  
+  Během fáze spuštění sestavení vlastností a položek, které jsou definovány v rámci cíle jsou vyhodnocovány společně v jedné fáze v pořadí, v jakém jsou uvedeny.  
   
- Ale to není celý příběh. Když je definována vlastnost, definice položky nebo položky, jeho hodnota se vyhodnocuje. Chyba při vyhodnocování výrazu rozšíří řetězec, který určuje hodnotu parametru. Řetězec rozbalení je závislé na fázi sestavení. Tady je podrobnější pořadí vyhodnocování vlastností a položek:  
+  Ale to není celý příběh. Když je definována vlastnost, definice položky nebo položky, jeho hodnota se vyhodnocuje. Chyba při vyhodnocování výrazu rozšíří řetězec, který určuje hodnotu parametru. Řetězec rozbalení je závislé na fázi sestavení. Tady je podrobnější pořadí vyhodnocování vlastností a položek:  
   
--   Během fáze vyhodnocení sestavení:  
+- Během fáze vyhodnocení sestavení:  
   
-    -   Vlastnosti jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností jsou spuštěny. Hodnoty vlastností ve formě $(PropertyName) rozbaleny v rámci výrazů. Hodnota vlastnosti je nastavena na rozbalené výraz.  
+  -   Vlastnosti jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností jsou spuštěny. Hodnoty vlastností ve formě $(PropertyName) rozbaleny v rámci výrazů. Hodnota vlastnosti je nastavena na rozbalené výraz.  
   
-    -   Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností byl rozbalen ve výrazech. Metadata hodnoty jsou nastaveny na rozbalené výrazy.  
+  -   Definice položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Funkce vlastností byl rozbalen ve výrazech. Metadata hodnoty jsou nastaveny na rozbalené výrazy.  
   
-    -   Typy položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Hodnoty položek ve formuláři @(ItemType) rozbaleny. Transformace položky jsou také rozšířit. Funkce vlastností a hodnot už rozšířily ve výrazech. Hodnoty položky seznamu a metadata jsou nastaveny na rozbalené výrazy.  
+  -   Typy položek jsou definovány a upravovat v pořadí, ve kterém jsou uvedeny. Hodnoty položek ve formuláři @(ItemType) rozbaleny. Transformace položky jsou také rozšířit. Funkce vlastností a hodnot už rozšířily ve výrazech. Hodnoty položky seznamu a metadata jsou nastaveny na rozbalené výrazy.  
   
--   Během fáze spuštění sestavení:  
+- Během fáze spuštění sestavení:  
   
-    -   Vlastnosti a položky, které jsou definovány v rámci cíle jsou vyhodnocovány společně v pořadí, v jakém jsou uvedeny. Vlastnosti funkcí se spustí a hodnoty vlastností jsou rozbaleny v rámci výrazů. Hodnoty položek a transformace položky jsou také rozšířit. Hodnoty vlastností, hodnoty položek typu a hodnoty metadat jsou nastaveny na rozbalené výrazy.  
+  -   Vlastnosti a položky, které jsou definovány v rámci cíle jsou vyhodnocovány společně v pořadí, v jakém jsou uvedeny. Vlastnosti funkcí se spustí a hodnoty vlastností jsou rozbaleny v rámci výrazů. Hodnoty položek a transformace položky jsou také rozšířit. Hodnoty vlastností, hodnoty položek typu a hodnoty metadat jsou nastaveny na rozbalené výrazy.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Malý vliv pořadí vyhodnocování  
  Vyhodnocení vlastnosti v fáze vyhodnocení sestavení předchází vyhodnocení položky. Vlastnosti však může mít hodnoty, které se zobrazují závisí na hodnoty položek. Vezměte v úvahu následující skript.  

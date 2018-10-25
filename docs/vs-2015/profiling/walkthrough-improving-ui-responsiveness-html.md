@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893374"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Návod: Zvýšení rychlosti odezvy uživatelského rozhraní (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Tento názorný postup vás provede procesem identifikace a řešení potíží 
   
 ### <a name="analyzing-performance-data"></a>Analýza údajů o výkonu  
   
-1.  Na **ladění** nástrojů v **spustit ladění** seznamu, vyberte jednu z emulátory Windows Phone nebo **simulátor**.  
+1. Na **ladění** nástrojů v **spustit ladění** seznamu, vyberte jednu z emulátory Windows Phone nebo **simulátor**.  
   
-2.  Na **ladění** nabídce zvolte **výkon a Diagnostika**.  
+2. Na **ladění** nabídce zvolte **výkon a Diagnostika**.  
   
-3.  V **dostupných nástrojů**, zvolte **rychlosti odezvy uživatelského rozhraní HTML**a klikněte na tlačítko **Start**.  
+3. V **dostupných nástrojů**, zvolte **rychlosti odezvy uživatelského rozhraní HTML**a klikněte na tlačítko **Start**.  
   
-     V tomto kurzu budete se připojuje se profiler na spouštěný projekt. Informace o další možnosti, jako je připojení profileru k nainstalované aplikace, najdete v části [rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md).  
+    V tomto kurzu budete se připojuje se profiler na spouštěný projekt. Informace o další možnosti, jako je připojení profileru k nainstalované aplikace, najdete v části [rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md).  
   
-     Při spuštění profileru, může se zobrazit řízení uživatelských účtů, ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
+    Při spuštění profileru, může se zobrazit řízení uživatelských účtů, ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
   
-4.  Ve spuštěné aplikaci vyberte **čekání na hodnoty** a počkejte asi 10 sekund. Ověřte, že tlačítko text a barvu aktualizovat přibližně jednou za sekundu.  
+4. Ve spuštěné aplikaci vyberte **čekání na hodnoty** a počkejte asi 10 sekund. Ověřte, že tlačítko text a barvu aktualizovat přibližně jednou za sekundu.  
   
-5.  Ze spuštěné aplikaci přepněte do sady Visual Studio (Alt + Tab).  
+5. Ze spuštěné aplikaci přepněte do sady Visual Studio (Alt + Tab).  
   
-6.  Zvolte **zastavit shromažďování**.  
+6. Zvolte **zastavit shromažďování**.  
   
-     Profiler informace zobrazí na nové kartě v sadě Visual Studio. Když se podíváte na využití procesoru a vizuální propustnost (FPS) dat, mohli snadno identifikovat trendy několik:  
+    Profiler informace zobrazí na nové kartě v sadě Visual Studio. Když se podíváte na využití procesoru a vizuální propustnost (FPS) dat, mohli snadno identifikovat trendy několik:  
   
-    -   Zvýší využití procesoru výrazně po přibližně 3 sekund (při stisknutí **čekání na hodnoty** tlačítko) a zobrazuje vymazat vzor událostí (konzistentní kombinaci skriptování, stylu a události vykreslování) od této chvíle v.  
+   - Zvýší využití procesoru výrazně po přibližně 3 sekund (při stisknutí **čekání na hodnoty** tlačítko) a zobrazuje vymazat vzor událostí (konzistentní kombinaci skriptování, stylu a události vykreslování) od této chvíle v.  
   
-    -   Vizuální propustnost není ovlivněná a snímků za Sekundu zůstává na 60 v průběhu (to znamená, nejsou žádné vynechaných rámce).  
+   - Vizuální propustnost není ovlivněná a snímků za Sekundu zůstává na 60 v průběhu (to znamená, nejsou žádné vynechaných rámce).  
   
      Podívejme se na část typický graf využití procesoru a zjistěte, co aplikace dělá v tomto období vysoké aktivity.  
   
-7.  Vyberte druhou část jedné až dvou uprostřed graf využití procesoru (buď kliknutím a přetažením nebo pomocí kláves tab a šipka). Následující obrázek znázorňuje graf využití procesoru po provedení výběru. Nesdílené oblast je výběr.  
+7. Vyberte druhou část jedné až dvou uprostřed graf využití procesoru (buď kliknutím a přetažením nebo pomocí kláves tab a šipka). Následující obrázek znázorňuje graf využití procesoru po provedení výběru. Nesdílené oblast je výběr.  
   
-     ![Graf využití procesoru](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Graf využití procesoru](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Zvolte **přiblížit**.  
+8. Zvolte **přiblížit**.  
   
-     Grafu se změní a zobrazí vybrané období podrobněji. Následující obrázek znázorňuje graf využití procesoru po přiblížit. (Konkrétní data se můžou lišit, ale bude obecný vzor zřejmý.)  
+    Grafu se změní a zobrazí vybrané období podrobněji. Následující obrázek znázorňuje graf využití procesoru po přiblížit. (Konkrétní data se můžou lišit, ale bude obecný vzor zřejmý.)  
   
-     ![V zobrazení v měřítku](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![V zobrazení v měřítku](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Podrobnosti časové osy ve spodní části podokna ukazuje příklad podrobnosti pro vybrané období.  
+    Podrobnosti časové osy ve spodní části podokna ukazuje příklad podrobnosti pro vybrané období.  
   
-     ![Podrobnosti časové osy](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Podrobnosti časové osy](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Události v časové ose podrobnosti potvrzení viditelné trendy v graf využití procesoru: obsahuje mnoho událostí probíhat přes krátkou dobu. Zobrazení podrobností časová osa ukazuje, že tyto události jsou `Timer`, `Layout`, a `Paint` události.  
+    Události v časové ose podrobnosti potvrzení viditelné trendy v graf využití procesoru: obsahuje mnoho událostí probíhat přes krátkou dobu. Zobrazení podrobností časová osa ukazuje, že tyto události jsou `Timer`, `Layout`, a `Paint` události.  
   
 9. Pomocí místní nabídky (nebo kliknutím pravým tlačítkem) mezi `Timer` událostí ve spodní části podokna a zvolte **filtru na události**. Následující obrázek znázorňuje příklad podrobnosti typické pro jeden z `Timer` události v této aplikaci test.  
   

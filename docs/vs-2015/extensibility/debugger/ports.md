@@ -16,27 +16,27 @@ ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f637c348295e709698d710016c80aa717613a068
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4915dc5131cedbdc368c4c9d651e98c2302aceba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884014"
 ---
 # <a name="ports"></a>Porty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Z hlediska architektury ladicího programu **port**:  
   
--   Je kontejner pro sadu procesy běží na serveru. Port může například představovat připojení k zařízení sériový kabel systémem Windows CE nebo k počítači připojenému bez – model DCOM. Jeden speciální port, volá se na místní port, obsahuje všechny procesy spuštěné na místním počítači.  
+- Je kontejner pro sadu procesy běží na serveru. Port může například představovat připojení k zařízení sériový kabel systémem Windows CE nebo k počítači připojenému bez – model DCOM. Jeden speciální port, volá se na místní port, obsahuje všechny procesy spuštěné na místním počítači.  
   
--   Můžete identifikovat podle názvu nebo identifikátor.  
+- Můžete identifikovat podle názvu nebo identifikátor.  
   
--   Můžete vytvořit výčet všech procesů spuštěných na portu a spuštění a ukončení tyto procesy.  
+- Můžete vytvořit výčet všech procesů spuštěných na portu a spuštění a ukončení tyto procesy.  
   
--   Je reprezentován [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní, která je vytvořena předáním [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argument [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+- Je reprezentován [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní, která je vytvořena předáním [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argument [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje výchozí port, který zpracovává všechny založené na Windows procesy, nativní a spravované. Port. Tento vlastní port musí být implementované připojení se externí zařízení, které nejsou založené na Windows. Slouží k poskytování těchto vlastní porty, dodavatel port. Tento vlastní port musí také být implementována.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poskytuje výchozí port, který zpracovává všechny založené na Windows procesy, nativní a spravované. Port. Tento vlastní port musí být implementované připojení se externí zařízení, které nejsou založené na Windows. Slouží k poskytování těchto vlastní porty, dodavatel port. Tento vlastní port musí také být implementována.  
   
 ## <a name="see-also"></a>Viz také  
  [Servery](../../extensibility/debugger/servers-visual-studio-sdk.md)   

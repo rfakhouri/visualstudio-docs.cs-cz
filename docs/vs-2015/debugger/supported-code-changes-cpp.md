@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840984"
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu
 ##  <a name="BKMK_Unsupported_changes"></a> Nepodporované změny  
  Následující změny C/C++ nemohou být provedeny během relace ladění:  
   
--   Většina změn globální nebo statická data.  
+- Většina změn globální nebo statická data.  
   
--   Změny spustitelné soubory, které jsou zkopírovány z jiného počítače a nebyl sestaven místně.  
+- Změny spustitelné soubory, které jsou zkopírovány z jiného počítače a nebyl sestaven místně.  
   
--   Změny na datový typ, které ovlivňují rozložení objektu, například datové členy třídy.  
+- Změny na datový typ, které ovlivňují rozložení objektu, například datové členy třídy.  
   
--   Přidání více než 64 kB nový kód nebo data.  
+- Přidání více než 64 kB nový kód nebo data.  
   
--   Přidání proměnné, které vyžadují konstruktor v okamžiku před ukazatele na instrukci.  
+- Přidání proměnné, které vyžadují konstruktor v okamžiku před ukazatele na instrukci.  
   
--   Změny, které ovlivňují kód, který vyžaduje inicializace za běhu.  
+- Změny, které ovlivňují kód, který vyžaduje inicializace za běhu.  
   
--   Přidání obslužných rutin výjimek, v některých případech.  
+- Přidání obslužných rutin výjimek, v některých případech.  
   
--   Změny v souborech prostředků.  
+- Změny v souborech prostředků.  
   
--   Změny kódu v souborech jen pro čtení.  
+- Změny kódu v souborech jen pro čtení.  
   
--   Změny kódu bez odpovídajícího souboru PDB.  
+- Změny kódu bez odpovídajícího souboru PDB.  
   
--   Změny kódu, který nemá žádný soubor objektu.  
+- Změny kódu, který nemá žádný soubor objektu.  
   
- Pokud jeden z těchto změn a pokuste se použít změny kódu, chyby nebo upozornění se zobrazí v **výstup** okna.  
+  Pokud jeden z těchto změn a pokuste se použít změny kódu, chyby nebo upozornění se zobrazí v **výstup** okna.  
   
--   Upravit a pokračovat se neaktualizuje statických knihoven. Pokud provedete změny ve statické knihovně, provádění pokračuje ve starší verzi a žádné upozornění.  
+- Upravit a pokračovat se neaktualizuje statických knihoven. Pokud provedete změny ve statické knihovně, provádění pokračuje ve starší verzi a žádné upozornění.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Nepodporované scénáře  
  Upravit a pokračovat pro C/C++ není k dispozici v následujících scénářích ladění:  

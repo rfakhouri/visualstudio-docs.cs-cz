@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840100"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Postupy: Přizpůsobení slovníku Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Analýza kódu používá integrované slovník ke kontrole identifikátory v k�
 ## <a name="custom-dictionary-elements"></a>Vlastní slovník elementů  
  Můžete změnit chování slovníku analýzy kódu tak, že přidáte podmínky jako vnitřní text z následujících elementů ve slovníku:  
   
--   [Slovník/slova/rozpoznán nebo Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [Slovník/slova/rozpoznán nebo Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [Slovník/slova/nebyl rozpoznán nebo Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [Slovník/slova/nebyl rozpoznán nebo Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
--   [Slovník/slova nebo zastaralé/termín [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Slovník/slova nebo zastaralé/termín [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
--   [Slovník/slova/složeného/termín [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Slovník/slova/složeného/termín [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [Slovník/slova/DiscreteExceptions/termín](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [Slovník/slova/DiscreteExceptions/termín](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [Slovník/zkratky/CasingExceptions/zkratka](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Slovník/zkratky/CasingExceptions/zkratka](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Slovník/slova/rozpoznán nebo Word  
  Aby byly termín, který v seznamu podmínek, které identifikuje analýzy kódu jako správně zadány, přidejte výraz jako vnitřní text prvku/slova/Recognized/slovo. Podmínky v elementech/slova/Recognized/slovo nerozlišují malá a velká písmena.  
@@ -154,11 +154,11 @@ Analýza kódu používá integrované slovník ke kontrole identifikátory v k�
   
  Zahrnout navrhovaný termín alternativní upozornění, zadejte alternativní v atributu PreferredAlternate prvku termín. Hodnota atributu může být prázdný, pokud nechcete navrhnout alternativu.  
   
--   Nepoužívané termín ve slovníku/slova nebo zastaralé funkce nebo termín element není malá a velká písmena.  
+- Nepoužívané termín ve slovníku/slova nebo zastaralé funkce nebo termín element není malá a velká písmena.  
   
--   Hodnota atributu PreferredAlternate je velká a malá písmena. Pomocí pascalcase pro složené alternativ.  
+- Hodnota atributu PreferredAlternate je velká a malá písmena. Pomocí pascalcase pro složené alternativ.  
   
- **Příklad**  
+  **Příklad**  
   
 ```  
 <Dictionary>  
@@ -189,11 +189,11 @@ Analýza kódu používá integrované slovník ke kontrole identifikátory v k�
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Slovník/slova/složeného/termín [@CompoundAlternate]  
  Integrované slovník identifikuje termíny, které se jako jeden, diskrétní podmínky spíše než složené termín. Zahrnout termín, který seznam termínů, které identifikuje analýzy kódu jako složené slovo a zadejte správné použití malých a velkých termín, přidejte výraz jako vnitřní text prvku slovníku/slova/složeného/termín. V atributu CompoundAlternate prvku termín zadejte jednotlivá slova, které tvoří složené termín podle prvního písmena jednotlivých slov (pascalcase). Všimněte si, že výraz zadaný ve vnitřním textu je automaticky přidán do seznamu slovníku/slova/DiscreteExceptions.  
   
--   Nepoužívané termín ve slovníku/slova nebo zastaralé funkce nebo termín element není malá a velká písmena.  
+- Nepoužívané termín ve slovníku/slova nebo zastaralé funkce nebo termín element není malá a velká písmena.  
   
--   Hodnota atributu PreferredAlternate je velká a malá písmena. Pomocí pascalcase pro složené alternativ.  
+- Hodnota atributu PreferredAlternate je velká a malá písmena. Pomocí pascalcase pro složené alternativ.  
   
- **Příklad**  
+  **Příklad**  
   
 ```  
 <Dictionary>  

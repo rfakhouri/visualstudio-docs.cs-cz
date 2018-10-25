@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878060"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systém projektu služby SharePoint v sadě Visual Studio můžete rozšířit tak, že vytvoříte svůj vlastní projekt typy položek. V tomto návodu vytvoříte položku projektu, který lze přidat do projektu služby SharePoint pro vytvoření vlastní akce na Sharepointovém webu. Vlastní akce ho přidá položku nabídky **Akce webu** nabídku z webu služby SharePoint.  
   
  Tento návod demonstruje následující úkoly:  
   
--   Vytváření rozšíření pro Visual Studio, který definuje nový typ položky projektu služby SharePoint pro vlastní akci. Nový typ položky projektu implementuje několik vlastních funkcí:  
+- Vytváření rozšíření pro Visual Studio, který definuje nový typ položky projektu služby SharePoint pro vlastní akci. Nový typ položky projektu implementuje několik vlastních funkcí:  
   
-    -   Místní nabídka, která slouží jako výchozí bod pro další úlohy související s položkou projektu, jako je například zobrazení návrháře pro vlastní akce v sadě Visual Studio.  
+  -   Místní nabídka, která slouží jako výchozí bod pro další úlohy související s položkou projektu, jako je například zobrazení návrháře pro vlastní akce v sadě Visual Studio.  
   
-    -   Kód, který se spustí, když vývojáři změní některé její vlastnosti položky projektu a projekt, který jej obsahuje.  
+  -   Kód, který se spustí, když vývojáři změní některé její vlastnosti položky projektu a projekt, který jej obsahuje.  
   
-    -   Vlastní ikony, který se zobrazí vedle položky projektu v **Průzkumníka řešení**.  
+  -   Vlastní ikony, který se zobrazí vedle položky projektu v **Průzkumníka řešení**.  
   
--   Vytvoření šablony položky sady Visual Studio pro položku projektu.  
+- Vytvoření šablony položky sady Visual Studio pro položku projektu.  
   
--   Vytváření balíčku rozšíření Visual Studio (VSIX) k nasazení šablony položky projektu a sestavení rozšíření.  
+- Vytváření balíčku rozšíření Visual Studio (VSIX) k nasazení šablony položky projektu a sestavení rozšíření.  
   
--   Ladění a testování položky projektu.  
+- Ladění a testování položky projektu.  
   
- Toto je samostatný návodu. Po dokončení tohoto návodu, můžete zvýšit položky projektu tak, že přidáte průvodce k šabloně položky. Další informace najdete v tématu [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Toto je samostatný návodu. Po dokončení tohoto návodu, můžete zvýšit položky projektu tak, že přidáte průvodce k šabloně položky. Další informace najdete v tématu [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  Můžete si stáhnout ukázky z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635327"
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
--   Podporované vydání systému Microsoft Windows, SharePoint a Visual Studio.
+- Podporované vydání systému Microsoft Windows, SharePoint a Visual Studio.
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Tento návod používá **projekt VSIX** šablony v sadě SDK k vytvoření balíčku VSIX k nasazení položky projektu. Další informace najdete v tématu [rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
+  Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
--   Vlastní akce v Sharepointu. Další informace najdete v tématu [vlastní akce](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Vlastní akce v Sharepointu. Další informace najdete v tématu [vlastní akce](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Šablony položek v sadě Visual Studio. Další informace najdete v tématu [vytváření projektů a šablon položek](/visualstudio/ide/creating-project-and-item-templates).  
+- Šablony položek v sadě Visual Studio. Další informace najdete v tématu [vytváření projektů a šablon položek](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Vytváření projektů
  K dokončení tohoto návodu, budete muset vytvořit tři projekty:  
   
--   Projekt VSIX. Tento projekt vytvoří balíčku VSIX k nasazení položky projektu služby SharePoint.  
+- Projekt VSIX. Tento projekt vytvoří balíčku VSIX k nasazení položky projektu služby SharePoint.  
   
--   Projekt šablony položky. Tento projekt vytvoří šablonu položky, který slouží k přidání položky projektu služby SharePoint do projektu služby SharePoint.  
+- Projekt šablony položky. Tento projekt vytvoří šablonu položky, který slouží k přidání položky projektu služby SharePoint do projektu služby SharePoint.  
   
--   Projekt knihovny tříd. Tento projekt implementuje rozšíření sady Visual Studio, která definuje chování položky projektu služby SharePoint.  
+- Projekt knihovny tříd. Tento projekt implementuje rozšíření sady Visual Studio, která definuje chování položky projektu služby SharePoint.  
   
- Začněte postup vytvořením projektů.  
+  Začněte postup vytvořením projektů.  
   
 #### <a name="to-create-the-vsix-project"></a>Vytvoření projektu VSIX  
   

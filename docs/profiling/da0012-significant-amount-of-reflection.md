@@ -1,5 +1,5 @@
 ---
-title: 'DA0012: Vysoký objem odrazů | Microsoft Docs'
+title: 'Da0012: vysoký Objem odrazů | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,29 +15,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5a5982fd194f86d2cfe2b63a564c0ce1ce90f8a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 191edf9cc6a3dc9ff177b075e2967cb328afc9c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893920"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Vysoký objem odrazů
+
 |||  
 |-|-|  
-|Id pravidla|DA0012|  
+|Id pravidla|DA0012 VYSOKÝ|  
 |Kategorie|Použití rozhraní .NET framework|  
 |Metod profilace|Vzorkování|  
-|Zpráva|Vám může být pomocí reflexe nadměrně. Je náročná operace.|  
+|Zpráva|Budete pravděpodobně používáte nadměrně reflexi. Je náročná operace.|  
 |Typ pravidla|Upozornění|  
-  
+
 ## <a name="cause"></a>příčina  
- Volání metody System.Reflection například metodu InvokeMember a GetMember nebo typ metody, jako je například MemberInvoke jsou podstatnou část data profilování. Pokud je to možné, zvažte nahrazení tyto metody časná vazba metody závislá sestavení.  
-  
+ Volání metody System.Reflection například metodu InvokeMember a GetMember nebo typ metody, jako je například MemberInvoke je podstatnou část dat profilování. Pokud je to možné, zvažte nahrazení tyto metody s časná vazba metod závislá sestavení.  
+
 ## <a name="rule-description"></a>Popis pravidla  
- Reflexe je flexibilní zařízení rozhraní .NET Framework, který slouží k provedení pozdní vazba vaší aplikace na závislé sestavení, spuštění nebo k vytvoření a dynamicky provedení nové typy během spuštění. Tyto postupy však může snížit výkon, pokud jsou často používají nebo volat v úzkou smyčky.  
-  
- Další informace najdete v tématu [reflexe a pozdní vazby](http://go.microsoft.com/fwlink/?LinkId=177826) části kapitoly 5 – vylepšení spravované výkon kódu v zvýšení výkonu aplikací .NET a škálovatelnost objem Microsoft Patterns and Practices Library na webu MSDN.  
-  
-## <a name="how-to-investigate-a-warning"></a>Jak prozkoumat upozornění  
- Klikněte dvakrát na zprávy v okně Seznam chyb, přejděte na [zobrazení podrobností funkce](../profiling/function-details-view.md) profilování data. Zkontrolujte volání funkcí System.Type nebo System.Reflection metody k vyhledání v částech programu, které nejčastěji se vyskytující využívají rozhraní API reflexe .NET. Vyhněte se použití metody, které vracejí metadata. Pokud výkon vaší aplikace je důležité, vám může být potřeba nepoužívejte pozdní vazby a vytváření typů dynamicky za běhu.
+ Reflexe je flexibilní rozhraní .NET Framework, který slouží k provádění pozdní vazba vaší aplikace na závislé sestavení za běhu nebo k vytvoření a dynamicky za běhu spusťte nové typy zařízení. Tyto postupy však může snížit výkon, pokud jsou často používané nebo volat v těsné smyčky.  
+
+ Další informace najdete v tématu [reflexe a pozdní vazby](http://go.microsoft.com/fwlink/?LinkId=177826) část kapitola 5 – vylepšení spravovaných výkon kódu objemu zlepšení výkonu aplikace .NET a škálovatelnosti Microsoft Patterns and Practices Knihovna na webové stránce MSDN.  
+
+## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění  
+ Dvakrát klikněte na zprávu v okně Seznam chyb, přejděte [zobrazení podrobností funkce](../profiling/function-details-view.md) dat profilování. Zkontrolujte volání funkce System.Type nebo System.Reflection metody, která najdete v částech programu, které nejčastěji použití rozhraní API reflexe .NET. Vyhněte se použití metod, které vracejí metadata. Když je nejdůležitější výkon vaší aplikace, můžete potřebovat nepoužívejte pozdní vazby a dynamické vytváření typů v době běhu.

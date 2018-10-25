@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861576"
 ---
 # <a name="refactor-python-code"></a>Refaktorování kódu Pythonu
 
@@ -30,27 +30,27 @@ Visual Studio obsahuje několik příkazů pro automaticky transformaci a čišt
 ## <a name="rename"></a>přejmenování
 
 1. Klikněte pravým tlačítkem na identifikátor, který chcete přejmenovat a vyberte **přejmenovat**, nebo umístěte blikající kurzor do identifikátoru a vyberte **upravit** > **Refaktorovat**  >  **Přejmenovat** příkazu nabídky (**F2**).
-1. V **přejmenovat** dialogové okno, které se zobrazí, zadejte nový název pro identifikátor, vyberte **OK**:
+2. V **přejmenovat** dialogové okno, které se zobrazí, zadejte nový název pro identifikátor, vyberte **OK**:
 
-  ![Přejmenovat výzva k zadání nového názvu identifikátor](media/code-refactor-rename-1.png)
+   ![Přejmenovat výzva k zadání nového názvu identifikátor](media/code-refactor-rename-1.png)
 
-1. V dalším dialogovém okně vyberte soubory a instancí ve vašem kódu, pro kterou chcete použít přejmenování; Vyberte všechny jednotlivé instance na konkrétní změně ve verzi preview:
+3. V dalším dialogovém okně vyberte soubory a instancí ve vašem kódu, pro kterou chcete použít přejmenování; Vyberte všechny jednotlivé instance na konkrétní změně ve verzi preview:
 
-  ![Přejmenování dialogového okna a vyberte umístění pro použití změn](media/code-refactor-rename-2.png)
+   ![Přejmenování dialogového okna a vyberte umístění pro použití změn](media/code-refactor-rename-2.png)
 
-1. Vyberte **použít** provést změny souborů se zdrojovým kódem. (Tato akce může být vrátit zpět.)
+4. Vyberte **použít** provést změny souborů se zdrojovým kódem. (Tato akce může být vrátit zpět.)
 
 ## <a name="extract-method"></a>Extrahování metody
 
 1. Vyberte řádky kódu nebo výraz, který se extrahuje do samostatné metodě.
-1. Vyberte **upravit** > **Refaktorovat** > **extrahovat metodu** příkaz nabídky nebo typ **Ctrl** + **R** > **M**.
-1. V dialogovém okně, které se zobrazí zadejte nový název metody, uveďte, kam extrahujte ho do a vyberte všechny proměnné uzavření. Proměnné není vybrána pro uzavření jsou převedena na argumenty metody:
+2. Vyberte **upravit** > **Refaktorovat** > **extrahovat metodu** příkaz nabídky nebo typ **Ctrl** + **R** > **M**.
+3. V dialogovém okně, které se zobrazí zadejte nový název metody, uveďte, kam extrahujte ho do a vyberte všechny proměnné uzavření. Proměnné není vybrána pro uzavření jsou převedena na argumenty metody:
 
-  ![Extrahovat metodu dialogového okna](media/code-refactor-extract-method-1.png)
+   ![Extrahovat metodu dialogového okna](media/code-refactor-extract-method-1.png)
 
-1. Vyberte **OK** a kód je odpovídajícím způsobem upravit:
+4. Vyberte **OK** a kód je odpovídajícím způsobem upravit:
 
-  ![Účinek extrahování metody](media/code-refactor-extract-method-2.png)
+   ![Účinek extrahování metody](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Přidat import
 

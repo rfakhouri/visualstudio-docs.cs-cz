@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228410"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872067"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Přidání dat interakce vrstev z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ Profilování interakce vrstev poskytuje další informace o spuštění s úsp�
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Příklad aplikace klasické pracovní plochy Windows pro profilaci  
   
-1.  Otevřete okno příkazového řádku s oprávněními správce. Klikněte na tlačítko **Start**, přejděte na **všechny programy**a pak na **Příslušenství**. Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na tlačítko **spustit jako správce**.  
+1. Otevřete okno příkazového řádku s oprávněními správce. Klikněte na tlačítko **Start**, přejděte na **všechny programy**a pak na **Příslušenství**. Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na tlačítko **spustit jako správce**.  
   
-2.  Inicializace proměnných prostředí TIP a profilování rozhraní .NET. Zadejte následující příkazy:  
+2. Inicializace proměnných prostředí TIP a profilování rozhraní .NET. Zadejte následující příkazy:  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  Spusťte profiler. Zadejte následující příkaz:  
+3. Spusťte profiler. Zadejte následující příkaz:  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  Spusťte aplikaci pomocí VSPerfCmd. Zadejte následující příkaz:  
+4. Spusťte aplikaci pomocí VSPerfCmd. Zadejte následující příkaz:  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  Výkon aplikace ke shromažďování dat profilování a poté ukončete aplikaci běžným způsobem.  
+5. Výkon aplikace ke shromažďování dat profilování a poté ukončete aplikaci běžným způsobem.  
   
-6.  Vyčistěte proměnné prostředí pro popis TLAČÍTKA. Zadejte následující příkaz:  
+6. Vyčistěte proměnné prostředí pro popis TLAČÍTKA. Zadejte následující příkaz:  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- Další informace najdete v tématu [profilování aplikací samostatného](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Další informace najdete v tématu [profilování aplikací samostatného](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Profilace služeb  
  Do profilu služby, včetně [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikací, použijte **VSPerfClrEnv /GlobalInteractionOn** možnost nastavit proměnné prostředí a **VSPerfClrEnv /GlobalInteractionOff** možností jejich odebrání.  
@@ -95,33 +95,33 @@ Profilování interakce vrstev poskytuje další informace o spuštění s úsp�
   
 ##### <a name="profiling-a-windows-service-example"></a>Příklad služby Windows pro profilaci  
   
-1.  V případě potřeby nainstalujte službu.  
+1. V případě potřeby nainstalujte službu.  
   
-2.  Otevřete okno příkazového řádku s oprávněními správce. Klikněte na tlačítko **Start**, přejděte na **všechny programy**a pak na **Příslušenství**. Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na tlačítko **spustit jako správce**.  
+2. Otevřete okno příkazového řádku s oprávněními správce. Klikněte na tlačítko **Start**, přejděte na **všechny programy**a pak na **Příslušenství**. Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na tlačítko **spustit jako správce**.  
   
-3.  Inicializujte proměnné prostředí profilování rozhraní .NET. Zadejte následující příkaz:  
+3. Inicializujte proměnné prostředí profilování rozhraní .NET. Zadejte následující příkaz:  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  Inicializujte proměnné prostředí TIP. Zadejte následující příkaz  
+4. Inicializujte proměnné prostředí TIP. Zadejte následující příkaz  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  Restartujte počítač a zaregistrovat proměnné prostředí.  
+5. Restartujte počítač a zaregistrovat proměnné prostředí.  
   
-6.  Otevřete okno příkazového řádku s oprávněními správce.  
+6. Otevřete okno příkazového řádku s oprávněními správce.  
   
-7.  Spusťte profiler. Zadejte následující příkaz:  
+7. Spusťte profiler. Zadejte následující příkaz:  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  V případě potřeby spusťte službu.  
+8. V případě potřeby spusťte službu.  
   
 9. Připojení profileru ke službě. Zadejte následující příkaz:  
   
@@ -143,11 +143,11 @@ Profilování interakce vrstev poskytuje další informace o spuštění s úsp�
   
 13. Restartujte počítač a zaregistrovat proměnné prostředí nezaškrtnuté.  
   
- Další informace naleznete v jednom z následujících témat:  
+    Další informace naleznete v jednom z následujících témat:  
   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [Profilace služeb](../profiling/command-line-profiling-of-services.md)  
+    [Profilace služeb](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Přidání dat interakce vrstev stránek pomocí VSPerfASPNETCmd  
  Nástroj příkazového řádku příkaz VSPerfASPNETCmd vám umožní snadno profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] webové aplikace. Ve srovnání s **VSPerfCmd** nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Tyto funkce VSPerfASPNETCmd shromažďování dat interakce vrstev výjimečně usnadňují.  

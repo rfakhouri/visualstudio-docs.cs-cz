@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299413"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827728"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Používání atributu DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  Použití výrazů v DebuggerDisplay může vést k následujícím problémům:  
   
--   Vyhodnocování výrazů je nejvíce náročná operace v ladicím programu a tento výraz je vyhodnocen pokaždé, když se zobrazí. To může způsobit problémy s výkonem v krokování kódu. Složitý výraz, který se používá k zobrazení hodnoty v kolekci nebo seznam například může být velmi pomalé. když je velký počet prvků.  
+- Vyhodnocování výrazů je nejvíce náročná operace v ladicím programu a tento výraz je vyhodnocen pokaždé, když se zobrazí. To může způsobit problémy s výkonem v krokování kódu. Složitý výraz, který se používá k zobrazení hodnoty v kolekci nebo seznam například může být velmi pomalé. když je velký počet prvků.  
   
--   Chyba při vyhodnocování výrazu jazyka aktuální rámec zásobníku a ne vyhodnocení jazyk, ve kterém byla vytvořená výraz jsou výrazy vyhodnocovány. To může způsobit nepředvídatelné výsledky, když jsou různé jazyky.  
+- Chyba při vyhodnocování výrazu jazyka aktuální rámec zásobníku a ne vyhodnocení jazyk, ve kterém byla vytvořená výraz jsou výrazy vyhodnocovány. To může způsobit nepředvídatelné výsledky, když jsou různé jazyky.  
   
--   Vyhodnocení výrazu můžete změnit stav aplikace. Například výraz, který nastaví hodnotu vlastnosti mění hodnotu vlastnosti v provádění kódu.  
+- Vyhodnocení výrazu můžete změnit stav aplikace. Například výraz, který nastaví hodnotu vlastnosti mění hodnotu vlastnosti v provádění kódu.  
   
- Jeden způsob, jak snížit možné potíže vyhodnocení výrazu je tak, že vytvoříte privátní vlastnost, která provádí operace a vrátí hodnotu typu string. Atributu DebuggerDisplay lze následně zobrazí hodnota této vlastnosti privátní. Následující příklad implementuje tento model:  
+  Jeden způsob, jak snížit možné potíže vyhodnocení výrazu je tak, že vytvoříte privátní vlastnost, která provádí operace a vrátí hodnotu typu string. Atributu DebuggerDisplay lze následně zobrazí hodnota této vlastnosti privátní. Následující příklad implementuje tento model:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

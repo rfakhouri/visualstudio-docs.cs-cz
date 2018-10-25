@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862083"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ Ne všichni vývojáři, kteří vytvářejí nasazení ClickOnce v plánu nasad
   
  Existují tři způsoby, že zákazník může podepsat manifest nasazení v této situaci:  
   
-1.  Zákazník může použít platný certifikát vydaný certifikační autoritou (CA).  
+1. Zákazník může použít platný certifikát vydaný certifikační autoritou (CA).  
   
-2.  Jako variantou tento přístup můžete zákazníka k podepsání manifestu nasazení pomocí certifikátu podepsaného svým držitelem. Nevýhodou je, že by aplikace mají zobrazovat slova "Neznámého vydavatele", když uživateli se zobrazí výzva, jestli ji chtějí mít nainstalovanou. Výhodou je, že zabrání v menších zákazníci museli ztrácet čas a peníze, vyžaduje se pro certifikát vydaný certifikační autoritou.  
+2. Jako variantou tento přístup můžete zákazníka k podepsání manifestu nasazení pomocí certifikátu podepsaného svým držitelem. Nevýhodou je, že by aplikace mají zobrazovat slova "Neznámého vydavatele", když uživateli se zobrazí výzva, jestli ji chtějí mít nainstalovanou. Výhodou je, že zabrání v menších zákazníci museli ztrácet čas a peníze, vyžaduje se pro certifikát vydaný certifikační autoritou.  
   
-3.  A konečně Vývojář můžete zahrnout vlastní certifikát podepsaný svým držitelem instalační balíček. To představuje potenciální problémy s identitou aplikace uvedené dříve v tomto tématu.  
+3. A konečně Vývojář můžete zahrnout vlastní certifikát podepsaný svým držitelem instalační balíček. To představuje potenciální problémy s identitou aplikace uvedené dříve v tomto tématu.  
   
- Nevýhodou metodu instalace nasazení projektu je nutné k vytvoření vlastního nasazení aplikace vynakládat čas a prostředky.  
+   Nevýhodou metodu instalace nasazení projektu je nutné k vytvoření vlastního nasazení aplikace vynakládat čas a prostředky.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Jste zákazník generovat Manifest nasazení  
  Třetí strategií je to možné nasazení je předat pouze soubory aplikace a manifest aplikace vypnout zákazníka. V tomto scénáři zákazník zodpovídá za použití sady SDK rozhraní .NET Framework pro vygenerování a podepsání manifestu nasazení.  

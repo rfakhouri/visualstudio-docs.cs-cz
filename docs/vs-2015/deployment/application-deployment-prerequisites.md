@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890988"
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ K zajištění, že vaše aplikace se nainstaluje a úspěšně spuštěn, je nu
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Spuštění a nasazení ClickOnce  
  Před instalací aplikace na klientském počítači [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se zaměřuje klienta a ujistěte se, že mají určité požadavky uvedenými v manifestu aplikace. Patří mezi ně například:  
   
--   Minimální požadovaná verze common language runtime, který je zadán jako závislost sestavení v manifestu aplikace.  
+- Minimální požadovaná verze common language runtime, který je zadán jako závislost sestavení v manifestu aplikace.  
   
--   Minimální požadovaná verze operačního systému Windows požadované aplikací, jak je uvedeno v aplikaci manifestu pomocí `<osVersionInfo>` elementu. (Viz [ \<závislost > Element](../deployment/dependency-element-clickonce-application.md))  
+- Minimální požadovaná verze operačního systému Windows požadované aplikací, jak je uvedeno v aplikaci manifestu pomocí `<osVersionInfo>` elementu. (Viz [ \<závislost > Element](../deployment/dependency-element-clickonce-application.md))  
   
--   Minimální verze všech sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC), jak jsou určené deklarace závislost sestavení v manifestu sestavení.  
+- Minimální verze všech sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC), jak jsou určené deklarace závislost sestavení v manifestu sestavení.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rozpozná chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rozpozná chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Chcete-li změnit hodnoty v manifestech vygenerovat pomocí nástrojů, jako [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a MageUI.exe, budete muset upravit manifest aplikace v textovém editoru a nové podepsání manifestů aplikace a nasazení. Další informace najdete v tématu [postupy: opětovné podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  

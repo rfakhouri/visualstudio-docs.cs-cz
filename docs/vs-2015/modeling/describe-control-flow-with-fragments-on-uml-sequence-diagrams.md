@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836863"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Popis toku řízení pomocí fragmentů v sekvenčních diagramech UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ V sekvenčním diagramu UML *kombinované fragmenty* umožňují zobrazit smyčk
   
 #### <a name="to-create-a-combined-fragment"></a>K vytvoření kombinovaného fragmentu  
   
-1.  Vyberte jednu zprávu nebo s posloupností zpráv, všechny začíná stejné výskyt životnosti nebo spuštění.  
+1. Vyberte jednu zprávu nebo s posloupností zpráv, všechny začíná stejné výskyt životnosti nebo spuštění.  
   
-    > [!NOTE]
-    >  Pokud vyberete více než jedna zpráva, že musí tvořit bez přerušení pořadí.  
+   > [!NOTE]
+   >  Pokud vyberete více než jedna zpráva, že musí tvořit bez přerušení pořadí.  
   
-2.  Klikněte pravým tlačítkem na zprávy, přejděte na **obklopit fragmentem**a potom klikněte na typ kombinovaného fragmentu, můžete se například **Alt kombinovat Fragment**.  
+2. Klikněte pravým tlačítkem na zprávy, přejděte na **obklopit fragmentem**a potom klikněte na typ kombinovaného fragmentu, můžete se například **Alt kombinovat Fragment**.  
   
-     Zobrazí se nové kombinovaného fragmentu. Určuje typ, který jste vybrali, jako například kombinovaného fragmentu záhlaví **Alt**.  
+    Zobrazí se nové kombinovaného fragmentu. Určuje typ, který jste vybrali, jako například kombinovaného fragmentu záhlaví **Alt**.  
   
-     Uvnitř kombinovaného fragmentu je fragment, která obsahuje zprávy, které jste vybrali.  
+    Uvnitř kombinovaného fragmentu je fragment, která obsahuje zprávy, které jste vybrali.  
   
- Můžete přidat další interakce operandy pro některé druhy kombinovaného fragmentu.  
+   Můžete přidat další interakce operandy pro některé druhy kombinovaného fragmentu.  
   
- Po změně uspořádání zpráv do kombinovaného fragmentu, zvolte **změnit uspořádání rozložení** v místní nabídce pro změnu velikosti kombinovaného fragmentu rámce.  
+   Po změně uspořádání zpráv do kombinovaného fragmentu, zvolte **změnit uspořádání rozložení** v místní nabídce pro změnu velikosti kombinovaného fragmentu rámce.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Chcete-li přidat nový operand interakce do kombinovaného fragmentu  
   
-1.  Klikněte pravým tlačítkem na prázdné místo uvnitř operand interakce (2), mimo všechny obsažené fragment a pod nadpisem kombinovaného fragmentu.  
+1. Klikněte pravým tlačítkem na prázdné místo uvnitř operand interakce (2), mimo všechny obsažené fragment a pod nadpisem kombinovaného fragmentu.  
   
-2.  Přejděte na **přidat**.  
+2. Přejděte na **přidat**.  
   
-3.  Klikněte na tlačítko **interakce Operand před**, nebo **Operand interakce po**.  
+3. Klikněte na tlačítko **interakce Operand před**, nebo **Operand interakce po**.  
   
-4.  Můžete taky přidat zprávy uvnitř nové operand interakce pomocí nástrojů, zprávy, nebo zkopírováním a vložením existující zprávy.  
+4. Můžete taky přidat zprávy uvnitř nové operand interakce pomocí nástrojů, zprávy, nebo zkopírováním a vložením existující zprávy.  
   
- Můžete nastavit **Guard** vlastnost operand interakce popisují podmínky, ve kterých se provádějí zprávy dovnitř. Například v **smyčky** kombinovat fragment, vám pomůže ochranného zařízení zadat podmínky, během které smyčky pokračuje. V **Alt** kombinovat fragment, můžete zadat samostatné podmínku pro každý operand interakce.  
+   Můžete nastavit **Guard** vlastnost operand interakce popisují podmínky, ve kterých se provádějí zprávy dovnitř. Například v **smyčky** kombinovat fragment, vám pomůže ochranného zařízení zadat podmínky, během které smyčky pokračuje. V **Alt** kombinovat fragment, můžete zadat samostatné podmínku pro každý operand interakce.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>Chcete-li nastavit guard operand interakce  
   
-1.  Klikněte do prázdného místa v operandu interakce (2), mimo všechny obsažené fragment.  
+1. Klikněte do prázdného místa v operandu interakce (2), mimo všechny obsažené fragment.  
   
-     Ohraničení výběru se zobrazí kolem operand interakce a kolem podmínku.  
+    Ohraničení výběru se zobrazí kolem operand interakce a kolem podmínku.  
   
-     Záhlaví **vlastnosti** okno zobrazuje **interakce Operand**.  
+    Záhlaví **vlastnosti** okno zobrazuje **interakce Operand**.  
   
-2.  Zadejte podmínku.  
+2. Zadejte podmínku.  
   
-     Podmínka se zobrazí v horní části fragmentu (4).  
+    Podmínka se zobrazí v horní části fragmentu (4).  
   
- Můžete nastavit vlastnosti některé druhy kombinované fragmenty.  
+   Můžete nastavit vlastnosti některé druhy kombinované fragmenty.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Nastavit nebo zobrazit vlastnosti kombinovaného fragmentu  
   

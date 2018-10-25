@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887588"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nevyvolávejte výjimky v neočekávaných umístěních
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284684"
 ## <a name="rule-description"></a>Popis pravidla
  Metody, které není předpokládáno vyvolání výjimky lze označit následujícím způsobem:
 
--   Metody Get vlastnosti
+- Metody Get vlastnosti
 
--   Metody přístupových objektů události
+- Metody přístupových objektů události
 
--   Metody Equals
+- Metody Equals
 
--   Metody GetHashCode
+- Metody GetHashCode
 
--   Metody ToString
+- Metody ToString
 
--   Statické konstruktory
+- Statické konstruktory
 
--   Finalizační metody
+- Finalizační metody
 
--   Metody Dispose
+- Metody Dispose
 
--   Operátory rovnosti
+- Operátory rovnosti
 
--   Implicitní přetypování operátory
+- Implicitní přetypování operátory
 
- Následující části popisují tyto typy metody.
+  Následující části popisují tyto typy metody.
 
 ### <a name="property-get-methods"></a>Metody Get vlastnosti
  Vlastnosti jsou v podstatě inteligentních polí. Proto by se měly chovat jako pole co největší míře. Pole nevyvolají výjimky a ani by měly vlastnosti. Pokud je vlastnost, která vyvolá výjimku, zvažte jeho metodu.
@@ -91,22 +92,22 @@ ms.locfileid: "49284684"
 ### <a name="equals-methods"></a>Metody Equals
  Následující **rovná** metody by neměla vyvolávat výjimky:
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- **Rovná** metoda by měla vrátit `true` nebo `false` namísto vyvolání výjimky. Například pokud se rovná se předá dva typy neodpovídající měla by jenom vrátit `false` namísto vyvolání <xref:System.ArgumentException>.
+  **Rovná** metoda by měla vrátit `true` nebo `false` namísto vyvolání výjimky. Například pokud se rovná se předá dva typy neodpovídající měla by jenom vrátit `false` namísto vyvolání <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Metody GetHashCode
  Následující **GetHashCode** metody obvykle by neměla vyvolávat výjimky:
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **Metoda GetHashCode** by vždy vrátit hodnotu. V opačném případě může dojít ke ztrátě položky v zatřiďovací tabulce.
+  **Metoda GetHashCode** by vždy vrátit hodnotu. V opačném případě může dojít ke ztrátě položky v zatřiďovací tabulce.
 
- Verze **GetHashCode** trvají může vyvolat argument <xref:System.ArgumentException>. Ale **Object.GetHashCode** by nikdy nevyvolají výjimku.
+  Verze **GetHashCode** trvají může vyvolat argument <xref:System.ArgumentException>. Ale **Object.GetHashCode** by nikdy nevyvolají výjimku.
 
 ### <a name="tostring-methods"></a>Metody ToString
  Ladicí program používá <xref:System.Object.ToString%2A?displayProperty=fullName> usnadňují zobrazení informací o objektech ve formátu řetězce. Proto **ToString** by neměly měnit stav objektu a jeho by neměla vyvolávat výjimky.

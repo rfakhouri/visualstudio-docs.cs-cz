@@ -1,5 +1,5 @@
 ---
-title: Nahraditelné parametry | Microsoft Docs
+title: Nahraditelné parametry | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -18,81 +18,81 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879295"
 ---
 # <a name="replaceable-parameters"></a>Nahraditelné parametry
-  Nahraditelné parametry, nebo *tokeny*, dá se použít uvnitř soubory projektu zadat hodnoty pro položky řešení služby SharePoint, jejichž skutečnými hodnotami nejsou známá v době návrhu. Jsou to podobně jako u standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](/visualstudio/ide/template-parameters).  
+  Nahraditelné parametry, nebo *tokeny*, je možné zadat hodnoty pro položky řešení služby SharePoint, skutečné hodnoty nejsou známá v době návrhu v souborech projektu. Jsou to funkce podobná standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Formát tokenu
- Tokeny nezačíná a nekončí znak dolaru ($). Při nasazení, použití tokenů jsou nahrazeny skutečnými hodnotami při projektu je zabalené do balíčku řešení služby SharePoint (*WSP* souboru). Například token **$SharePoint.Package.Name$** může vyřešit řetězec "Test SharePoint balíček".  
+ Tokeny začínají i končí znakem dolaru ($). Při nasazení, použití tokenů jsou nahradit skutečnými hodnotami při projektu je zabalená do balíčku řešení služby SharePoint (*.wsp* souboru). Například token **$SharePoint.Package.Name$** vyřešit na řetězec "Balíček SharePoint".  
   
 ## <a name="token-rules"></a>Token pravidla
- Následující pravidla platí při tokenů:  
+ Následující pravidla platí pro tokeny:  
   
--   Tokeny lze zadat kdekoli v řádku.  
+- Tokeny se dá nastavit kdekoli v řádku.  
   
--   Tokeny nemůže zahrnovat více řádků.  
+- Tokeny nemůžou zahrnovat více řádků.  
   
--   Stejný token může být zadán více než jednou na stejném řádku a ve stejném souboru.  
+- Stejný token může být zadán více než jednou na stejném řádku a ve stejném souboru.  
   
--   Na stejném řádku je možné zadat jiný tokeny.  
+- Různé tokeny je možné zadat na stejném řádku.  
   
- Tokeny, které se neřídí tato pravidla jsou ignorovány a nezpůsobovalo neustálé upozornění nebo chyby.  
+  Tokeny, které se neřídí tato pravidla jsou ignorovány a za následek upozornění nebo chyby.  
   
- Okamžitě po transformaci manifestu se provádí nahrazení tokeny pomocí řetězcových hodnot. Tato nahrazení umožňuje uživateli upravit manifestu šablony s tokeny.  
+  Nahrazení tokeny pomocí řetězcové hodnoty se provádí ihned po manifestu transformace. Toto nahrazení umožňuje uživateli upravit manifestu šablony s tokeny.  
   
-### <a name="token-name-resolution"></a>Token překlad
- Ve většině případů token přeloží na konkrétní hodnotu bez ohledu na to, kde se nachází. Ale pokud token je spojena s balíčku nebo funkce, je token hodnota závisí na kterém se nachází. Například pokud je funkce v balíčku pak se token `$SharePoint.Package.Name$` přeloží na hodnotu "Balíček A." Pokud stejné funkce je v balíčku B, pak `$SharePoint.Package.Name$` přeloží na "Balíček B."  
+### <a name="token-name-resolution"></a>Název tokenu řešení
+ Ve většině případů token přeloží na určitou hodnotu bez ohledu na to, kde se nachází. Ale pokud token má vztah k balíčku nebo funkce, hodnota tokenu závisí na ve kterém je obsažená. Například pokud je funkce v balíček pak se token `$SharePoint.Package.Name$` překládá na hodnotu "Balíček A." Pokud tatáž funkce je v balíček B, pak `$SharePoint.Package.Name$` přeloží na "Balíček B."  
   
 ## <a name="tokens-list"></a>Seznam tokenů
  V následující tabulce jsou uvedeny dostupné tokeny.  
   
 |Název|Popis|  
 |----------|-----------------|  
-|$SharePoint.Project.FileName$|Obsahující název souboru, jako je třeba projektu *NewProj.csproj*.|  
-|$SharePoint.Project.FileNameWithoutExtension$|Název souboru obsahujícího projekt bez přípony názvu souboru. Například "NewProj".|  
-|$SharePoint.Project.AssemblyFullName$|Zobrazovaný název (silný název) obsahující projekt výstupu sestavení.|  
-|$SharePoint.Project.AssemblyFileName$|Název projektu obsahující výstupu sestavení.|  
-|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Název projektu obsahující výstupu sestavení bez přípony názvu souboru.|  
-|$SharePoint.Project.AssemblyPublicKeyToken$|Token veřejného klíče obsahující projektu výstupu sestavení, převedeno na řetězec. (16 znaků v "x2" šestnáctkovém formátu.)|  
+|$SharePoint.Project.FileName$|Název nadřazeného souboru, jako jsou například projektu *NewProj.csproj*.|  
+|$SharePoint.Project.FileNameWithoutExtension$|Název obsahující soubor projektu bez přípony názvu souboru. Například "NewProj".|  
+|$SharePoint.Project.AssemblyFullName$|Zobrazovaný název (silný název) obsahující projekt výstupního sestavení.|  
+|$SharePoint.Project.AssemblyFileName$|Název nadřazeného projektu výstupního sestavení.|  
+|$SharePoint.Project.AssemblyFileNameWithoutExtension$|Název projektu, která obsahuje výstupní sestavení bez přípony názvu souboru.|  
+|$SharePoint.Project.AssemblyPublicKeyToken$|Token veřejného klíče z nadřazeného projektu výstupní sestavení, převedeno na řetězec. (16 znaků v "x2" šestnáctkovém formátu.)|  
 |$SharePoint.Package.Name$|Název obsahující balíček.|  
 |$SharePoint.Package.FileName$|Název souboru definice obsahující balíček.|  
-|$SharePoint.Package.FileNameWithoutExtension$|Název definiční soubor obsahující balíčku (bez přípony).|  
-|$SharePoint.Package.Id$|ID služby SharePoint obsahující balíček. Pokud funkce se používá ve více než jeden balíček, tato hodnota se změní.|  
-|$SharePoint.Feature.FileName$|Název definice soubor obsahující funkce, jako například *Feature1.feature*.|  
-|$SharePoint.Feature.FileNameWithoutExtension$|Název souboru bez přípony názvu souboru definice funkce.|  
-|$SharePoint.Feature.DeploymentPath$|Název složky, která obsahuje funkci v balíčku. Tento token rovná vlastnost "Cesta pro nasazení" v Návrháři funkce. Příkladem hodnoty je, "Project1_Feature1".|  
-|$SharePoint.Feature.Id$|ID služby SharePoint obsahující funkce. Tento token, jako se všechny funkce úrovně tokeny, lze použít pouze pomocí souborů zahrnutých v balíčku pomocí funkce, není přidal přímo do balíčku mimo funkci.|  
-|$SharePoint.ProjectItem.Name$|Název položky projektu (není její název souboru), jako získaných z **ISharePointProjectItem.Name**.|  
-|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Typ odpovídající kvalifikovaný název sestavení [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] tokenu. Formát [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] je malá písmena a odpovídá formátu Guid.ToString("D") (tedy xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
-|$SharePoint.Type. \<GUID >. Úplný název$|Úplný název typu odpovídající identifikátor GUID v tokenu. Formát identifikátoru GUID je malá písmena a odpovídá formátu Guid.ToString("D") (tedy xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Package.FileNameWithoutExtension$|Název souboru definice balíčku obsahující (bez přípony).|  
+|$SharePoint.Package.Id$|Sharepointové ID nadřazeného balíčku. Pokud funkce se používá ve více než jeden balíček, tato hodnota se změní.|  
+|$SharePoint.Feature.FileName$|Název souboru definice nadřazeného funkcí, jako například *Feature1.feature*.|  
+|$SharePoint.Feature.FileNameWithoutExtension$|Název souboru definice funkce bez přípony názvu souboru.|  
+|$SharePoint.Feature.DeploymentPath$|Název složky, která obsahuje funkci v balíčku. Tento token odpovídá vlastnosti "Cesta nasazení" v Návrháři funkce. Příkladem hodnoty je "Project1_Feature1".|  
+|$SharePoint.Feature.Id$|Sharepointové ID funkce obsahující. Tento token, protože všechny tokeny úroveň funkcí, mohou být používány pouze soubory obsažené v balíčku prostřednictvím funkce, ne přímo do balíčku přidat mimo funkci.|  
+|$SharePoint.ProjectItem.Name$|Název položky projektu (nikoli jeho název souboru), jako získané z **ISharePointProjectItem.Name**.|  
+|$SharePoint.Type. \<GUID >. AssemblyQualifiedName$|Kvalifikovaný název sestavení odpovídající typ [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] tokenu. Formát [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] je malá písmena a odpovídá Guid.ToString("D") formátu (to znamená, že tomuto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
+|$SharePoint.Type. \<GUID >. Jméno a příjmení$|Úplný název typu odpovídající identifikátor GUID v tokenu. Formát čísla GUID je malá písmena a odpovídá Guid.ToString("D") formátu (to znamená, že tomuto: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|  
   
-## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Přidejte rozšíření do seznamu tokenu nahrazení souboru rozšíření
- Tokeny teoreticky se dá použít ve všech souborů, které patří do projektu služby SharePoint položky zahrnuté v balíčku, ve výchozím nastavení, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] hledání pro tokeny pouze v soubory balíčku, manifestu soubory a soubory, které mají následující přípony:  
+## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>Přidejte rozšíření do seznamu přípon souborů náhradních tokenů
+ Tokeny lze teoreticky podle všech souborů, které patří do projektu služby SharePoint položky obsažené v balíčku, ve výchozím nastavení, ale [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vyhledá tokeny pouze v balíčku soubory, soubory manifestu a soubory, které mají následující přípony:  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+- ASCX  
   
--   ASPX  
+- ASPX  
   
--   Webová část  
+- Webová část  
   
--   DWP  
+- DWP  
   
- Tato rozšíření jsou definovány `<TokenReplacementFileExtensions>` element v souboru Microsoft.VisualStudio.SharePoint.targets umístěný v... \\< soubory programu\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools složky.  
+  Tato rozšíření jsou definovány `<TokenReplacementFileExtensions>` element v souboru Microsoft.VisualStudio.SharePoint.targets umístěné v... \\< programové soubory\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools složky.  
   
- Můžete ale přidat další přípony souborů do seznamu. Přidat `<TokenReplacementFileExtensions>` element pro všechny PropertyGroup v souboru projektu služby SharePoint, který je definován před \<Import > souboru cíle služby SharePoint.  
+  Dodatečné přípony souborů můžou, ale přidat do seznamu. Přidat `<TokenReplacementFileExtensions>` element na jakékoli PropertyGroup v souboru projektu služby SharePoint, který je definován před \<Import > souboru cíle služby SharePoint.  
   
 > [!NOTE]  
->  Protože tokenu nahrazení dojde po kompiluje projektu, doporučujeme nepřidávat příponám souborů pro typy souborů, které jsou kompilovány, jako například *.cs*, *VB* nebo *RESX*. Tokeny nahrazená pouze v souborech, které nejsou zkompilovat.  
+>  Protože náhradních tokenů dochází po kompilaci projektu, neměli byste přidávat přípony souborů pro typy souborů, které jsou kompilovány jako *.cs*, *.vb* nebo *RESX*. Tokeny jsou nahrazena jenom v souborech, které nejsou zkompilovány.  
   
- Chcete-li například přidat přípony názvů souborů (*.myextension* a *.yourextension*) do seznamu přípon názvů souborů tokenu nahrazení by přidejte následující do projektu (*.csproj* ) souboru:  
+ Například, chcete-li přidat přípony názvů souborů (*.myextension* a *.yourextension*) do seznamu přípon názvů souborů náhradních tokenů, přidejte následující příkaz pro projekt (*.csproj* ) souboru:  
   
 ```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -107,7 +107,7 @@ ms.locfileid: "37120367"
 </PropertyGroup>  
 ```  
   
- Můžete přidat rozšíření přímo k cílům (*.targets*) souboru. Však přidání rozšíření mění seznamu rozšíření pro všechny projekty SharePoint zabalené místního systému, nejen vlastní. Toto rozšíření může být vhodné, pokud jste jediným vývojáře v systému, nebo pokud to vyžadují většina vašich projektů. Ale protože je specifické pro systém, tento přístup není přenosné a proto se doporučuje, přidejte libovolná rozšíření, do souboru projektu místo.  
+ Rozšíření můžete přidat přímo do cíle (*.targets*) soubor. Ale přidání rozšíření mění seznamu rozšíření pro všechny projekty SharePoint zabalené v místním systému, ne jenom vlastní. Toto rozšíření může být vhodné, jsou výhradní pro vývojáře v systému nebo pokud to vyžaduje většina vašich projektů. Ale protože je specifické pro systém, tento přístup není přenosný a proto je vhodné přidat žádná rozšíření do souboru projektu místo.  
   
 ## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
