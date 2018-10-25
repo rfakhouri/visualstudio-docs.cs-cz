@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837760"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253539"
   
  Následující příklady ilustrují, kdy můžete spustit sestavení pomocí příkazového řádku MSBuild namísto rozhraní IDE sady Visual Studio.  
   
--   Visual Studio není nainstalována.  
+- Visual Studio není nainstalována.  
   
--   Chcete použít 64bitovou verzi nástroje MSBuild. Tato verze nástroje MSBuild je obvykle nepotřebná, ale umožňuje MSBuild přístup k více paměti.  
+- Chcete použít 64bitovou verzi nástroje MSBuild. Tato verze nástroje MSBuild je obvykle nepotřebná, ale umožňuje MSBuild přístup k více paměti.  
   
--   Chcete spustit sestavení ve více procesech. Můžete však použít rozhraní IDE k dosažení stejného výsledku v projektech v jazyce C++ a C#.  
+- Chcete spustit sestavení ve více procesech. Můžete však použít rozhraní IDE k dosažení stejného výsledku v projektech v jazyce C++ a C#.  
   
--   Chcete změnit systém sestavení. Například můžete chtít povolit následující akce:  
+- Chcete změnit systém sestavení. Například můžete chtít povolit následující akce:  
   
-    -   Předběžné zpracujte soubory, než dosáhnou kompilátoru.  
+  -   Předběžné zpracujte soubory, než dosáhnou kompilátoru.  
   
-    -   Zkopírujte výstupy sestavení na jiné místo.  
+  -   Zkopírujte výstupy sestavení na jiné místo.  
   
-    -   Vytvořte komprimované soubory z výstupů sestavení.  
+  -   Vytvořte komprimované soubory z výstupů sestavení.  
   
-    -   Proveďte krok následného zpracování. Můžete například chtít razítko sestavení s jinou verzí.  
+  -   Proveďte krok následného zpracování. Můžete například chtít razítko sestavení s jinou verzí.  
   
- V integrovaném vývojovém prostředí sady Visual Studio můžete napsat kód, ale spustit sestavení pomocí nástroje MSBuild. Jako další alternativu můžete sestavit kód v rozhraní IDE na vývojovém počítači, ale pomocí příkazového řádku MSBuild sestavit kód, který je integrován od více vývojářů.  
+  V integrovaném vývojovém prostředí sady Visual Studio můžete napsat kód, ale spustit sestavení pomocí nástroje MSBuild. Jako další alternativu můžete sestavit kód v rozhraní IDE na vývojovém počítači, ale pomocí příkazového řádku MSBuild sestavit kód, který je integrován od více vývojářů.  
   
 > [!NOTE]
 >  Team Foundation Build můžete použít k automatické kompilaci, testování, nasazení aplikace. Systém sestavení může automaticky spouštět sestavení, pokud vývojáři vrácení kódu se změnami (například jako součást strategie Nepřetržitá integrace) nebo podle plánu (například noční sestavení ověřovacího testu sestavení). Team Foundation Build kompiluje kód pomocí nástroje MSBuild. Další informace najdete v tématu [sestavte aplikaci](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Toto jsou některé z výhod cílení na více verzí:  
   
--   Můžete vyvíjet aplikace, které jsou cíleny na starší verze rozhraní .NET Framework, například verze 2.0, 3.0 a 3.5.  
+- Můžete vyvíjet aplikace, které jsou cíleny na starší verze rozhraní .NET Framework, například verze 2.0, 3.0 a 3.5.  
   
--   Můžete cílit rozhraní než .NET Framework, například Silverlight.  
+- Můžete cílit rozhraní než .NET Framework, například Silverlight.  
   
--   Můžete cílit *profil rozhraní*, což je předdefinovaná podmnožina cílového rozhraní framework.  
+- Můžete cílit *profil rozhraní*, což je předdefinovaná podmnožina cílového rozhraní framework.  
   
--   Pokud bude vydána aktualizace service pack pro aktuální verzi rozhraní .NET Framework, může ji zaměřit.  
+- Pokud bude vydána aktualizace service pack pro aktuální verzi rozhraní .NET Framework, může ji zaměřit.  
   
--   Cílení na více verzí zaručuje, že aplikace používá pouze funkce, které jsou k dispozici v cílové architektury a platformy.  
+- Cílení na více verzí zaručuje, že aplikace používá pouze funkce, které jsou k dispozici v cílové architektury a platformy.  
   
- Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md).  
+  Další informace najdete v tématu [cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>Související témata  
   

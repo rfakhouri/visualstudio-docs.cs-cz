@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831812"
 ---
 # <a name="core-interfaces"></a>Základní rozhraní
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicího p
 ## <a name="discussion"></a>Diskuse  
  Tato rozhraní primárně slouží k vytvoření ladicího stroje (DE). Seřazené zde podle kategorií:  
   
--   [Zarážky](#Breakpoints)  
+- [Zarážky](#Breakpoints)  
   
--   [Kontexty](#Contexts)  
+- [Kontexty](#Contexts)  
   
--   [Jádro serveru](#CoreServer)  
+- [Jádro serveru](#CoreServer)  
   
--   [Ladicí stroje](#DebugEngines)  
+- [Ladicí stroje](#DebugEngines)  
   
--   [Dokumenty](#Documents)  
+- [Dokumenty](#Documents)  
   
--   [Události](#Events)  
+- [Události](#Events)  
   
--   [Výrazy](#Expressions)  
+- [Výrazy](#Expressions)  
   
--   [Paměť](#Memory)  
+- [Paměť](#Memory)  
   
--   [Moduly](#Modules)  
+- [Moduly](#Modules)  
   
--   [Porty](#Ports)  
+- [Porty](#Ports)  
   
--   [Procesy](#Processes)  
+- [Procesy](#Processes)  
   
--   [Programy](#Programs)  
+- [Programy](#Programs)  
   
--   [Vlastnosti](#Properties)  
+- [Vlastnosti](#Properties)  
   
--   [Bloky zásobníku](#StackFrames)  
+- [Bloky zásobníku](#StackFrames)  
   
--   [Vlákna](#Threads)  
+- [Vlákna](#Threads)  
   
--   [Vizualizérů typů](#TypeVisualizers)  
+- [Vizualizérů typů](#TypeVisualizers)  
   
- Entity, které můžete implementovat rozhraní jsou:  
+  Entity, které můžete implementovat rozhraní jsou:  
   
--   Ladicí stroj (DE)  
+- Ladicí stroj (DE)  
   
--   Dodavatele portu (PS)  
+- Dodavatele portu (PS)  
   
--   Chyba při vyhodnocování výrazu (EE)  
+- Chyba při vyhodnocování výrazu (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Zarážky  
  Tato rozhraní se vztahují k provádění a sledování zarážky.  
