@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908239"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Ladění balíčku nainstalované aplikace v aplikaci Visual Studio (UPW)
 
@@ -78,18 +78,18 @@ Při ladění balíčku nainstalované aplikace na vzdáleném počítači poprv
 
      Pokud se nemůžete připojit pomocí názvu počítače (po zvolení **Start**), místo toho použijte IP adresu. Použijte IP adresu pro XBox, HoloLens a IoT zařízení.
 
-5. Zvolte, jak ověřit tak, že vyberete možnost v **režim ověřování**.
+6. Zvolte, jak ověřit tak, že vyberete možnost v **režim ověřování**.
 
     Pro většinu aplikací, ponechte výchozí hodnotu, **univerzální (nešifrovaný protokol)**.
 
-6. Vyberte název aplikace, kterou chcete ladit v rámci **systémem** nebo **neběží** a zvolte **Start** nebo (pro spouštění aplikací) **připojit**.
+7. Vyberte název aplikace, kterou chcete ladit v rámci **systémem** nebo **neběží** a zvolte **Start** nebo (pro spouštění aplikací) **připojit**.
 
      Pokud vyberete **nespouštět, ale ladit můj kód při spuštění**, to způsobí, že ladicí program sady Visual Studio k připojení k balíčku aplikace při spuštění po jednom vlastní. Toto je účinný způsob, jak ladit ovládací prvek cesty z [různých spuštění metody](/windows/uwp/xbox-apps/automate-launching-uwp-apps), jako je protokol aktivace pomocí vlastních parametrů.
 
      Při ladění balíčku nainstalované aplikace na připojeném XBox, HoloLens a IoT zařízení poprvé, Visual Studio nainstaluje správnou verzi vzdáleného ladicího programu pro cílové zařízení. Tato operace může trvat něco času a zobrazí se zpráva ``Starting remote debugger`` když tohle se děje.
 
      > [!NOTE]
-> V přítomné, XBox nebo zařízení HoloLens se aplikace restartuje s ladicím programem připojen, pokud je již spuštěna.
+   > V přítomné, XBox nebo zařízení HoloLens se aplikace restartuje s ladicím programem připojen, pokud je již spuštěna.
 
 Informace o rozšířené možnosti pro vzdálené nasazení aplikací pro UWP najdete v článku [UPW apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) pro nasazení a ladění. 
   
