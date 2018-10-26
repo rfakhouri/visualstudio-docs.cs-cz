@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d18e7c2e4c57e867cac47d0c8927eadbc357286
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 350ff6d481c3f7cffc47519a252b1cb65d2748ba
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923092"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143174"
 ---
 # <a name="walkthrough-building-an-application"></a>Postupy: Sestavení aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
   
 3.  Zvolte **sestavení** stránky a pak na **potlačit upozornění** zadejte číslo upozornění `1762`.  
   
-     ![Vytvořit stránku, Návrhář projektu](../ide/media/buildwalk-csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")  
+     ![Vytvořit stránku, Návrhář projektu](../ide/media/buildwalk-csharpsuppresswarnings.png "BuildWalk_CsharpSuppressWarnings")  
   
      Další informace najdete v tématu [stránku sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -162,7 +162,7 @@ V tomto návodu se seznámíte se podrobněji seznamujete s několik možností,
   
 3. Na **kompilaci** stránky, vyberte **zakázat všechna upozornění** zaškrtávací políčko.  
   
-    ![Stránka kompilovat, Návrhář projektu](../ide/media/buildwalk-vbsupresswarnings.png "BuildWalk_VBSupressWarnings")  
+    ![Stránka kompilovat, Návrhář projektu](../ide/media/buildwalk-vbsuppresswarnings.png "BuildWalk_VBSuppressWarnings")  
   
     Další informace najdete v tématu [Konfigurace upozornění v jazyce Visual Basic](../ide/configuring-warnings-in-visual-basic.md).  
   

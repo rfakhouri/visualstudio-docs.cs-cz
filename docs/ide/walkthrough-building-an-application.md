@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942215"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143187"
 ---
 # <a name="walkthrough-build-an-application"></a>Návod: Sestavení aplikace
 
@@ -100,7 +100,7 @@ Je můžete dočasně skrýt některé varovné zprávy během sestavení a nene
 
 1. Zvolte **sestavení** stránky a pak na **potlačit upozornění** zadejte číslo upozornění **0168**.
 
-     ![Vytvořit stránku, Návrhář projektu](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Vytvořit stránku, Návrhář projektu](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Další informace najdete v tématu [stránku sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +120,7 @@ Je můžete dočasně skrýt některé varovné zprávy během sestavení a nene
 
 3. Na **kompilaci** stránky, vyberte **zakázat všechna upozornění** zaškrtávací políčko.
 
-     ![Stránka kompilovat, Návrhář projektu](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Stránka kompilovat, Návrhář projektu](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Další informace najdete v tématu [Konfigurace upozornění v jazyce Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 

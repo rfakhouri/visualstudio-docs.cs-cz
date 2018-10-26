@@ -7,7 +7,6 @@ ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
-- VS.ToolsOptionsPag.Environment.Web_Browser
 - VS.ToolsOptionsPages.Environment.Web_Browser
 helpviewer_keywords:
 - browsers, customizing
@@ -25,48 +24,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f8dc8fb781e75116dbdcb6e316981225f32439
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947115"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143161"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webový prohlížeč, prostředí, dialogové okno Možnosti
-Nastaví možnosti pro interní webový prohlížeč a aplikaci Internet Explorer. Chcete-li získat přístup k tohoto dialogového okna, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **prostředí** složky a vyberte **webový prohlížeč**.
+Nastaví možnosti pro interní webový prohlížeč a aplikaci Internet Explorer. Chcete-li získat přístup k tomuto dialogovému oknu, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **prostředí** a pak zvolte položku **webový prohlížeč**.
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, vyberte v nabídce Nástroje pro nastavení importu a exportu. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte nastavení importu a exportu v nabídce Nástroje. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 > [!IMPORTANT]
-> Otevření určité soubory nebo součásti, z webu může spustit kód na váš počítač.
+> Otevírání určité soubory nebo součásti z webu může spustit kód ve vašem počítači.
 
 
 ## <a name="home-page"></a>Domovská stránka
- Nastaví stránce se zobrazí v případě, že otevřete webový prohlížeč IDE.
+ Nastaví na stránce se zobrazí, když otevřete webový prohlížeč integrované vývojové prostředí.
 
-## <a name="search-page"></a>Stránka vyhledávání
- Umožňuje určit stránky hledání interní webového prohlížeče. Toto umístění se může lišit od stránky hledání používané instance aplikace Internet Explorer iniciované mimo integrované vývojové prostředí (IDE).
+## <a name="search-page"></a>Stránka hledání
+ Umožňuje určit stránku vyhledávání pro interní webový prohlížeč. Toto umístění se může lišit od hledání stránky, používané instancí aplikace Internet Explorer inicioval mimo integrované vývojové prostředí (IDE).
 
-## <a name="view-source-in"></a>Zobrazit zdroj v
- Nastaví editor použitý k otevření webové stránky, když zvolíte **zobrazit zdroj** na stránce z interní webového prohlížeče.
+## <a name="view-source-in"></a>Zobrazit zdrojový kód v
+ Nastaví editor používá k otevření webové stránky, když zvolíte **zobrazit zdroj** na stránce z interní webový prohlížeč.
 
--   **Editor zdroj** vyberte zobrazení zdroje ve [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+-   **Editor zdrojového kódu** vyberte zobrazení zdroje v [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **HTML editor** vyberte zobrazení zdroje ve [Návrhář HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravám webové stránky v jednom ze dvou zobrazení: zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
+-   **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
 
--   **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu libovolný editor, který zvolíte, například Notepad.exe.
+-   **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Možnosti aplikace Internet Explorer
-Klikněte na tlačítko změnit možnosti pro Internet Explorer v **vlastnosti Internetu** dialogové okno. Změny provedené v tomto dialogovém vliv na interní webový prohlížeč i instance aplikace Internet Explorer iniciované mimo prostředí Visual Studio IDE (například z nabídky Start).
+Kliknutím můžete změnit možnosti aplikace Internet Explorer pro **vlastnosti Internetu** dialogové okno. Změny provedené v tomto dialogovém vliv na interní webový prohlížeč i instancí aplikace Internet Explorer inicioval mimo rozhraní IDE sady Visual Studio (například z nabídky Start).
 
 > [!NOTE]
-> Použití **procházet s** dialogové okno Nahradit Visual Studio interní webový prohlížeč s prohlížečem podle svého výběru. Dialogové okno Procházet s dostanete v nabídce klikněte pravým tlačítkem nebo kontextu systému, například soubor HTML ve vašem projektu.
+> Použití **procházet s** dialogové okno k nahrazení interní webový prohlížeč sady Visual Studio pomocí prohlížeče podle vašeho výběru. V dialogovém okně Procházet s můžete přistupovat z klikněte pravým tlačítkem nebo kontextu nabídku, například soubor HTML ve vašem projektu.
 
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
-- [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
+- [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
 - [Návrhář HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

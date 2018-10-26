@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4ed54d3b87944491539e6bc7f127cbf10913d46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818689"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143265"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí podle dokumentu C++ Core Guidelines šachovnice
 
@@ -128,10 +128,10 @@ Tato makra odpovídají sady pravidel a rozšířit místo oddělený seznam č�
 Kompilátor jazyka Microsoft Visual C++ má omezenou podporu pro GSL potlačení atributu. Slouží k potlačení upozornění na výrazu a příkazy bloku uvnitř funkce.
 
 ```cpp
-// Supress only warnings from the 'r.11' rule in expression.
+// Suppress only warnings from the 'r.11' rule in expression.
 [[gsl::suppress(r.11)]] new int;
 
-// Supress all warnings from the 'r' rule group (resource management) in block.
+// Suppress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
 {
     new int;
