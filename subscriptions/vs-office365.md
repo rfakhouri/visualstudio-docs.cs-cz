@@ -9,12 +9,12 @@ description: Další informace o benefitech služeb Office 365 součástí někt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908389"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244460"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 v předplatných sady Visual Studio
 
@@ -25,15 +25,24 @@ Vytvořte optimální práci. Kdekoli práce s aplikacemi, které se aktualizuj�
 Postupujte podle těchto kroků ke stažení a aktivace služeb Office 365:
 1. Přihlaste se k předplatnému sady Visual Studio Enterprise.  
 2. Klikněte na **stáhne** kartu.
-3. Zobrazí se vám seznam vybrané soubory ke stažení. V seznamu Office zvolte **Office Professional Plus 2019**
-0. Zobrazí dva seznamy.  Výpis pro Office 365 je ten druhý.  Ověřte, zda první a poslední rozevírací seznamy, které určují typ architektury a média, přečíst **UNK** a **okna**v uvedeném pořadí.   
-0. Instalace Office 365, budete potřebovat kód product key.  Klikněte na **Get klíč** odkaz v části druhý výpis.
-0. Nabídka okna se zobrazí všechny klíče, které jste již deklarována.  Chcete-li získat nový klíč, klikněte na tlačítko **uplatnit kód**.
+3. Zobrazí se vám seznam vybrané soubory ke stažení. V seznamu Office zvolte **Office 365**. 
+   > [!div class="mx-imgBorder"]
+   > ![Stažení sady Office 365](_img/vs-office365/vs-office365-downloads.png)
+0. Instalace Office 365, budete potřebovat kód product key.  Klikněte na **Get klíč** odkaz v seznamu služeb Office 365.
+   > [!div class="mx-imgBorder"]
+   > ![Kód Product Key získat Office 365](_img/vs-office365/vs-office365-get-key.png)
+0. Nabídka okna se zobrazí všechny klíče, které jste již deklarována stejně jako ty, které jsou k dispozici.  Chcete-li získat nový klíč, klikněte na tlačítko **uplatnit kód** pod **Office Professional Pllus 2019** výpis.
+   > [!div class="mx-imgBorder"]
+   > ![Kód Product Key Office 365 deklarace identity](_img/vs-office365/vs-office365-claim-key.png)
 0. Záznam na klíč, který jste právě nárokován. (Můžete se kdykoli vrátit do tohoto seznamu a znovu zobrazit.)
 0. Nabídka okno zavřete.
 0. Klikněte na tlačítko **Stáhnout** tlačítko. 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 Start Download](_img/vs-office365/vs-office365-download-button.png)
 0. Přihlaste se pomocí svého účtu Microsoft. (Pokud už jste přihlášení, klikněte na tlačítko **Další**.)
 0. Zadejte kód product key, země nebo oblast a jazyk a pak klikněte na tlačítko **Další**.
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 zadejte kód Product Key](_img/vs-office365/vs-office365-enter-key.png)
 0. Klikněte na tlačítko **Další** znovu.
 0. Klikněte na tlačítko **nainstalovat** k instalaci aplikací Office. 
 
@@ -54,7 +63,7 @@ Pokud máte v plánu pro vývoj aplikací pro Office, bude potřeba aktivovat v�
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Microsoft s hodnotou Professional (MVP), ředitel oblasti (RD), MCT Software a služby, představte si, Microsoft Partner Network.* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Microsoft s hodnotou Professional (MVP), ředitel oblasti (RD), MCT Software a služby, představte si, Microsoft Partner Network.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

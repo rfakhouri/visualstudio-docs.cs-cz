@@ -2,7 +2,7 @@
 title: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 description: Zjistěte, jak vytvořit webovou aplikaci ASP.NET Core v sadě Visual Studio s C#, krok za krokem.
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284047"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244486"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Kurz: Začínáme s C# a ASP.NET Core v sadě Visual Studio
 
 V tomto kurzu o vývoji C# s využitím ASP.NET Core pomocí sady Visual Studio budete vytvoření webové aplikace v C# ASP.NET Core, provést změny, prozkoumat některé funkce integrovaného vývojového prostředí a pak spusťte aplikaci.
 
+## <a name="before-you-begin"></a>Než začnete
+
+### <a name="install-visual-studio"></a>Instalace sady Visual Studio
+
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+
+### <a name="update-visual-studio"></a>Aktualizace sady Visual Studio
+
+Pokud jste již nainstalovali aplikaci Visual Studio, ujistěte se, že používáte nejnovější verzi. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizace Visual Studio 2017 na nejnovější verzi](../install/update-visual-studio.md) stránky.
+
+### <a name="choose-your-theme-optional"></a>Zvolte motiv (volitelné)
+
+V tomto kurzu zahrnuje snímky obrazovky, použít tmavý motiv. Pokud nepoužíváte tmavý motiv, ale chtěli, najdete v článku [přizpůsobit IDE sady Visual Studio a Editor](quickstart-personalize-the-ide.md) stránku a zjistěte, jak.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -46,7 +58,7 @@ Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, můžet
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
 
-1. Vyberte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
+1. Vyberte **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. (V závislosti na nastavení zobrazení může být potřeba stránku posunout, aby ji.)
 
    ![Vyberte odkaz otevřít instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ Pokud se nezobrazí **webové aplikace ASP.NET Core** šablony projektu, můžet
 1. Ověřte, že **ASP.NET Core 2.1** se zobrazí v horní nabídce rozevíracího seznamu. Potom kliknutím na možnost **OK**.
 
    ![Dialogové okno nové webové aplikace ASP.NET Core](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > Pokud nevidíte **ASP.NET Core 2.0** nebo později z hlavní nabídky rozevíracího seznamu, ujistěte se, že používáte nejnovější verzi sady Visual Studio. Další informace o tom, jak aktualizovat vaši instalaci, najdete v článku [aktualizace Visual Studio 2017 na nejnovější verzi](../install/update-visual-studio.md) stránky.
 
 ### <a name="about-your-solution"></a>Informace o řešení
 

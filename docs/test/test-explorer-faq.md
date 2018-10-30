@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775101"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244382"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775101"
 **Do vyhledávacího pole Průzkumníka testů již není filtr "Cesta k souboru".**
 
 Filtr cesty souboru v **Průzkumník testů** vyhledávacího pole byla odebrána v sadě Visual Studio 2017 verze 15.7 preview 3. Tato funkce má málo využívaných a Průzkumník testů může načíst testovací metody rychlejší vyloučením tuto funkci. Pokud se tato změna přerušení tok vývoj, dejte nám prosím vědět zasláním svého názoru na [komunity vývojářů](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Odebrání nedokumentované rozhraní
+**Některá rozhraní API související s už nejsou k dispozici v aplikaci Visual Studio 2019. Co se změnilo?**
+V aplikaci Visual Studio 2019 se odeberou některé testovacího okna rozhraní API, které byly dříve označeny veřejné, ale nebyly nikdy oficiálně popsané. Označí se jako "zastaralé" v sadě Visual Studio 2017 poskytnout programu rozšíření včasného varování. Naši znalostní bázi měl velmi málo rozšíření nalezena tato rozhraní API a s nimi provádějí závislost. Patří mezi ně `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken`, a `SearchFilterTokenType`. Pokud se tato změna ovlivní vaše rozšíření, dejte nám vědět, vyplňte chybu na [komunity vývojářů](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Testovací adaptér referenční dokumentace pro NuGet
 **V sadě Visual Studio 2017 verze 15.8 mé testy se zjistí, ale nemusíte spouštět.**

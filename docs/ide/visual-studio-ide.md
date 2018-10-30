@@ -1,6 +1,6 @@
 ---
 title: Přehled sady Visual Studio 2017
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907518"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244447"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
 
-Visual Studio je k dispozici pro Windows a Mac. [Visual Studio pro Mac](/visualstudio/mac/) má mnoho stejných funkcí jako Visual Studio 2017 a je optimalizovaná pro vývoj multiplatformní a mobilní aplikace.
+Visual Studio je k dispozici pro Windows a Mac. [Visual Studio pro Mac](/visualstudio/mac/) má mnoho stejných funkcí jako Visual Studio 2017 a je optimalizovaná pro vývoj multiplatformní a mobilní aplikace. Tento článek se týká Windows verze sady Visual Studio 2017.
 
-Tento přehled článek se zaměřuje na Visual Studio 2017 pro Windows. To vás seznámí s základní funkce integrovaného vývojového prostředí. Provedeme některé kroky můžete provést pomocí sady Visual Studio, včetně vytváření Jednoduchý projekt pomocí [IntelliSense](using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu proměnné během provádění programu. Provedeme také si na různá okna nástrojů.
+Existují 3 edicích sady Visual Studio 2017: Community, Professional a Enterprise. V tématu [porovnání Visual Studio 2017 integrovanými vývojovými prostředími](https://visualstudio.microsoft.com/vs/compare/) Další informace o funkcích, které jsou podporované v každé edici.
+
+Tomto přehledovém článku vás seznámí s základní funkce integrovaného vývojového prostředí. Provedeme některé kroky můžete provést pomocí sady Visual Studio, včetně vytváření Jednoduchý projekt pomocí [IntelliSense](using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu proměnné během provádění programu. Provedeme také si na různá okna nástrojů.
 
 ## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
 

@@ -2,7 +2,7 @@
 title: Začínáme s konzolové aplikace jazyka C# v sadě Visual Studio
 description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Studio, krok za krokem.
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859507"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244369"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Kurz: Začínáme s aplikaci konzoly C# v sadě Visual Studio
 
@@ -61,11 +61,7 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
 ## <a name="create-a-c-console-calculator-app"></a>Vytvoření aplikace "C# konzoly Kalkulačka"
 
-1. Otevřít Visual Studio 2017 a v horní nabídce vyberte příkaz **souboru** > **nový** > **projektu**.
-
-1. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka C#** a klikněte na tlačítko **.NET Core**. V prostředním podokně vyberte **Konzolová aplikace (.NET Core)**. Potom zadejte název souboru *Kalkulačka*.
-
-1. Zadejte nebo vložte následující kód do editoru kódu:
+1. Po vytvoření  **C# konzolovou aplikaci**, zadejte nebo vložte následující kód do editoru kódu:
 
     ```csharp
     using System;
