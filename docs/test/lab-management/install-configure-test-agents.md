@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e024772e9deb5f391e057c3c66e505637765e1d
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050089"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219026"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalace testovacích agentů a kontrolerů testů
 
@@ -44,9 +44,9 @@ Tyto instalační programy jsou dostupné jako soubory ISO pro snadnou instalaci
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Kompatibilní verze serveru TFS, Microsoft Test Manager, testovacího kontroléru a testovacího agenta
 
-Podle následující tabulky můžete kombinovat různé verze TFS, Microsoft Test Manager (MTM), testovacího kontroléru a testovacího agenta:
+Podle následující tabulky můžete kombinovat různé verze TFS, Microsoft Test Manager, testovacího kontroléru a testovacího agenta:
 
-| TFS | MTM s centra testovacích prostředí | Kontroler | Agent |
+| TFS | Nástroje Microsoft Test Manager pomocí centra testovacích prostředí | Kontroler | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: upgrade z 2015 nebo s novou instalací | 2017 | 2017 | 2017 |
 | 2017: upgrade z 2015 nebo s novou instalací | 2017 | 2013 update 5 | 2013 update 5 |

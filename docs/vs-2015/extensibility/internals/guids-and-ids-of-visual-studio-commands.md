@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868572"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219825"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identifikátory GUID a ID příkazů sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
   
 -   Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve které je podtrženo P.  
   
-     Znaky, které předchází znak '&' v názvech položek nabídky se zobrazí jako podtržené. Ale .vsct soubory jsou zapsány ve formátu XML, který používá znak 'a' označuje speciální znaky a vyžaduje, že musí být zadán znak, který je zobrazený jako&amp;". Proto se v souboru .vsct **P**rint příkazu se zobrazí jako "&amp;tisk".  
+     Znaky, které předchází znak '&' v názvech položek nabídky se zobrazí jako podtržené. Ale .vsct soubory jsou zapsány ve formátu XML, který používá znak 'a' označuje speciální znaky a vyžaduje, že musí být zadán znak, který je zobrazený jako&amp;". Proto se v souboru .vsct **tisk** příkazu se zobrazí jako "&amp;tisk".  
   
 -   Příkazy, které mají dynamický text, například **Uložit** *aktuální Filename*a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.  
   

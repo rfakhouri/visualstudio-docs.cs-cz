@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892997"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219793"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 2.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.  
   
-     **Konfigurace zdroje dat**otevře se průvodce.  
+     **Konfigurace zdroje dat** otevře se průvodce.  
   
 3.  Na **zvolte typ zdroje dat** stránce **databáze**a potom klikněte na tlačítko **Další**.  
   
@@ -122,7 +122,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 2.  V návrháři, klikněte pravým tlačítkem myši **Fill,GetData()** dotazu a vyberte **konfigurovat**.  
   
-     **Konfigurace TableAdapter**otevře se průvodce.  
+     **Konfigurace TableAdapter** otevře se průvodce.  
   
 3.  V **zadejte příkaz SQL** stránce, přidejte následující klauzule WHERE po `SELECT` příkaz v textovém poli.  
   

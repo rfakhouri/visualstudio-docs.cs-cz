@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a4f5a7497e24ccd8e769198938dbd20a6bdf0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284554"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219728"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
   
 2.  Pojmenujte projekt `ReadingXML`.  
   
-3.  Vyberte **aplikace Windows**a pak vyberte**OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **ReadingXML** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -74,7 +74,7 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
   
 1.  Na **projektu** nabídce vyberte možnost**přidat novou položku**.  
   
-2.  Vyberte **soubor XML**, pojmenujte soubor `authors.xml`a pak vyberte**přidat**.  
+2.  Vyberte **soubor XML**, pojmenujte soubor `authors.xml`a pak vyberte **přidat**.  
   
      Soubor XML načte do návrháře a je připravený pro úpravy.  
   
@@ -187,7 +187,7 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
   
 2.  Z [sady nástrojů, karta Data](../ide/reference/toolbox-data-tab.md), přetáhněte **datovou sadu** do **Form1**.  
   
-3.  V **přidat datovou sadu** dialogu **netypovou datovou sadu**a pak vyberte**OK**.  
+3.  V **přidat datovou sadu** dialogu **netypovou datovou sadu**a pak vyberte **OK**.  
   
      **DataSet1** se přidá do panelu komponent.  
   
@@ -232,7 +232,7 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
   
 #### <a name="to-test-the-form"></a>K otestování formuláře  
   
-1.  Vyberte**F5** ke spuštění aplikace.  
+1.  Vyberte **F5** ke spuštění aplikace.  
   
 2.  Vyberte **XML pro čtení** tlačítko.  
   

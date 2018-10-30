@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 199d871851a03b7fe97c640a9efa70c01c2b8c5c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143434"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220118"
 ---
 # <a name="link-task"></a>odkaz – úloha
 Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objektových souborů Common Object File Format (COFF) a knihovny, které chcete vytvořit spustitelný soubor (*.exe*) soubor nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
@@ -67,7 +67,7 @@ Zabalí nástroj linker Visual C++ *link.exe*. Nástroj linker propojení objekt
   
      Určuje atributy, které budou umístěny do `dependency` části souboru manifestu.  
   
-     Další informace najdete v tématu [/MANIFESTDEPENDENCY (určení závislostí manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Viz také [konfiguračních souborů vydavatele](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files).  
+     Další informace najdete v tématu [/MANIFESTDEPENDENCY (určení závislostí manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Viz také [konfiguračních souborů vydavatele](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).  
   
 -   **AdditionalOptions**  
   

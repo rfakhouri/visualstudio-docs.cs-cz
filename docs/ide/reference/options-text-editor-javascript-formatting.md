@@ -8,18 +8,21 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.New_Lines
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.Spacing
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c2f89aa578aa8b2c3c9ea4d033a5cff66a238e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cd4f166bc8b90db4012296c8d81c1d89e1b5eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800617"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219754"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Možnosti, textový editor, JavaScript, formátování
 Použití **formátování** stránku **možnosti** dialogové okno Nastavení možností pro formátování kódu v editoru kódu. Pro přístup k této stránce, na panelu nabídek zvolte **nástroje**, **možnosti**a potom rozbalte **textový Editor**, **JavaScript**a **Formátování**.
@@ -49,7 +52,7 @@ Použití **formátování** stránku **možnosti** dialogové okno Nastavení m
 |**Umístit levou složenou závorku na nový řádek pro řídicí bloky**|Pokud je vybraná tato možnost, Editor kódu přesune levou složenou závorku, přidružené řídicí blok (například `if` a `while` řídicí bloky) na nový řádek.|
 
 ## <a name="spacing"></a>Mezery
- Tyto možnosti určují, jak budou vkládány mezery v **zdroj**zobrazení.
+ Tyto možnosti určují, jak budou vkládány mezery v **zdroj** zobrazení.
 
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
 
@@ -64,4 +67,4 @@ Použití **formátování** stránku **možnosti** dialogové okno Nastavení m
 
 ## <a name="see-also"></a>Viz také
 
-- [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)
+- [Obecné, Prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md)

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844509"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220323"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Návod: Rozšíření typu položky projektu SharePoint
   Můžete použít **Model Připojení obchodních dat** položku projektu pro vytvoření modelu služby připojení dat obchodní (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí tuto položku projektu data v modelu se uživatelům nezobrazí. Musíte také vytvořit externí seznam na Sharepointu a umožňují uživatelům zobrazovat data.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844509"
   
 5.  V **název** zadejte **SharePointProjectTestBDC**a klikněte na tlačítko **OK** tlačítko.  
   
-6.  Průvodce přizpůsobením SharePoint zadejte adresu URL webu, který chcete použít pro ladění, zvolte **nasadit jako řešení farmy**a klikněte na tlačítko **Dokončit**tlačítko.  
+6.  Průvodce přizpůsobením SharePoint zadejte adresu URL webu, který chcete použít pro ladění, zvolte **nasadit jako řešení farmy**a klikněte na tlačítko **Dokončit** tlačítko.  
   
 7.  Otevřete místní nabídku projektu SharePointProjectTestBDC, vyberte možnost **přidat**a klikněte na tlačítko **nová položka**.  
   

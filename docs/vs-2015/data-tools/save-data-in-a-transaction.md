@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874641"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219299"
 ---
 # <a name="save-data-in-a-transaction"></a>Ukládání dat do transakce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 2.  Pojmenujte projekt **SavingDataInATransactionWalkthrough**.  
   
-3.  Vyberte **aplikace Windows**a pak vyberte**OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -61,7 +61,7 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte**Další**.  
+3.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte **Další**.  
   
 4.  Na **vyberte datové připojení**obrazovky proveďte následující:  
   
@@ -71,13 +71,13 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
     -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno a vytvořte připojení k databázi Northwind.  
   
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte**Další**.  
+5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.  
   
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovky, vyberte**Další**.  
+6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovky, vyberte **Další**.  
   
 7.  Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.  
   
-8.  Vyberte `Customers` a `Orders` tabulky a pak vyberte**Dokončit**.  
+8.  Vyberte `Customers` a `Orders` tabulky a pak vyberte **Dokončit**.  
   
      **NorthwindDataSet** se přidá do vašeho projektu a `Customers` a `Orders` tabulky se zobrazí v **zdroje dat** okna.  
   
@@ -103,7 +103,7 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 1.  Na **projektu** nabídce vyberte možnost**přidat odkaz**.  
   
-2.  Vyberte **System.Transactions**(na **.NET** kartu) a pak vyberte**OK**.  
+2.  Vyberte **System.Transactions**(na **.NET** kartu) a pak vyberte **OK**.  
   
      Odkaz na **System.Transactions** se přidá do projektu.  
   
@@ -161,7 +161,7 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 #### <a name="to-run-the-application"></a>Ke spuštění aplikace  
   
--   Vyberte**F5** ke spuštění aplikace.  
+-   Vyberte **F5** ke spuštění aplikace.  
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

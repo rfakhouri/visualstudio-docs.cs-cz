@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e1779ab1d39a28e750cab757c94717d496b98ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a1393f45c46709e4085d7e170265b92c6e00266
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231652"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219481"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vazbu vyhledávacích dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Při zobrazování dat ve Windows Forms, můžete vybrat z existujících ovlád
 3.  Z **sestavení** nabídce zvolte **sestavit řešení**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Vytvoření zdroje dat z databáze  
- Tento krok vytváří zdroj dat pomocí **konfigurace zdroje dat**průvodce, na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o instalaci ukázkové databáze Northwind naleznete v tématu [instalace SQL serveru, ukázkové databáze](../data-tools/install-sql-server-sample-databases.md).  
+ Tento krok vytváří zdroj dat pomocí **konfigurace zdroje dat** průvodce, na základě `Customers` a `Orders` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o instalaci ukázkové databáze Northwind naleznete v tématu [instalace SQL serveru, ukázkové databáze](../data-tools/install-sql-server-sample-databases.md).  
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   

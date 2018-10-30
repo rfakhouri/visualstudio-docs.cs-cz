@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834517"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220144"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.  
@@ -42,7 +42,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
 2.  Na **ladění** nabídce zvolte **Profiler výkonu**.  
   
-     Pokud chcete změnit cíl analýzy profileru, zvolte**změnit cíl**.  
+     Pokud chcete změnit cíl analýzy profileru, zvolte **změnit cíl**.  
   
      ![Změnit cíl analýzy](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   

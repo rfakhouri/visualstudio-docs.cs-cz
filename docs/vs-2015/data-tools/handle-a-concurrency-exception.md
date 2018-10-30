@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812930"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220414"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 3.  V **šablony** vyberte **aplikace Windows**.  
   
-4.  Pojmenujte projekt `ConcurrencyWalkthrough`a pak vyberte**OK**.  
+4.  Pojmenujte projekt `ConcurrencyWalkthrough`a pak vyberte **OK**.  
   
      Visual Studio přidá projekt do **Průzkumníka řešení** a zobrazí nový formulář v návrháři.  
   
@@ -96,7 +96,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 5.  Rozbalte **tabulky** uzel a vyberte `Customers` tabulky. Výchozí název pro tuto datovou sadu by měl být `NorthwindDataSet`.  
   
-6.  Vyberte**Dokončit** na datovou sadu přidat do projektu.  
+6.  Vyberte **Dokončit** na datovou sadu přidat do projektu.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Vytvoření ovládacího prvku DataGridView vázaný na data  
  V této části vytvoříte <xref:System.Windows.Forms.DataGridView> přetažením **zákazníkům** položky **zdroje dat** okna do formuláře Windows.  
@@ -107,7 +107,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 2.  V **zdroje dat** okna, rozbalte **NorthwindDataSet** uzlu a pak vyberte **zákazníkům** tabulky.  
   
-3.  Vyberte šipku dolů na uzel tabulky a pak vyberte **DataGridView**v rozevíracím seznamu.  
+3.  Vyberte šipku dolů na uzel tabulky a pak vyberte **DataGridView** v rozevíracím seznamu.  
   
 4.  Přetáhněte tabulku na prázdnou oblast formuláře.  
   
@@ -118,7 +118,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-test-the-form"></a>K otestování formuláře  
   
-1.  Vyberte**F5** ke spuštění aplikace  
+1.  Vyberte **F5** ke spuštění aplikace  
   
      Formulář se zobrazí s <xref:System.Windows.Forms.DataGridView> ovládacím prvkem, který je naplněný daty z `Customers` tabulky.  
   
@@ -192,7 +192,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 #### <a name="to-test-the-form"></a>K otestování formuláře  
   
-1.  Vyberte**F5** ke spuštění aplikace.  
+1.  Vyberte **F5** ke spuštění aplikace.  
   
 2.  Po zobrazení formuláře necháte spuštěné a přejděte do integrovaného vývojového prostředí sady Visual Studio.  
   
@@ -215,8 +215,8 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
      Došlo k chybě souběžnosti se vyvolá a zobrazí se okno se zprávou.  
   
-10. Výběr**ne** zruší aktualizace a aktualizace datové sady s hodnotami, které jsou aktuálně v databázi. Výběr**Ano** navrhovanou hodnotu zapisuje do databáze.  
+10. Výběr **ne** zruší aktualizace a aktualizace datové sady s hodnotami, které jsou aktuálně v databázi. Výběr **Ano** navrhovanou hodnotu zapisuje do databáze.
   
-## <a name="see-also"></a>Viz také  
- [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Viz také
 
+- [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

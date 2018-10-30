@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830662"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219156"
 ---
 # <a name="options-text-editor-general"></a>Možnosti, textový editor, obecné
 
@@ -94,14 +94,6 @@ Pokud je vybráno, zobrazí svislý okraj podél levého okraje editoru textová
 ### <a name="indicator-margin"></a>Okraj indikátoru
 
 Pokud je vybráno, zobrazí svislý okraj mimo levého okraje editoru textová oblast. Po kliknutí na toto rozpětí, zobrazí ikonu a popis, který se vztahují na text. Zarážky nebo úloha klávesové zkratky seznamu se zobrazí v okraj indikátoru. Informace o okraj indikátoru nevytiskne.
-
-### <a name="vertical-scroll-bar"></a>Svislý posuvník.
-
-Pokud je vybráno, zobrazí svislý posuvník, který umožňuje nahoru a dolů k zobrazení elementy, které spadají mimo oblast zobrazení editoru. Pokud svislé posuvníky nejsou k dispozici, můžete Page Up, Page Down a klíče kurzor posouvat.
-
-### <a name="horizontal-scroll-bar"></a>Vodorovný posuvník
-
-Pokud je vybráno, zobrazí vodorovný posuvník, který umožňuje ze strany na stranu přejděte do zobrazení elementy, které spadají mimo oblast zobrazení editoru. Pokud vodorovné posuvníky nedostupné, můžete přejít kurzor klíče.
 
 ### <a name="highlight-current-line"></a>Zvýraznit aktuální řádek
 

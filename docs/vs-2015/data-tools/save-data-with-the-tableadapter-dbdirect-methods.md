@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220808"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219715"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí metod TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 2.  Pojmenujte projekt **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Vyberte **aplikace Windows**a thenselect**OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **TableAdapterDbDirectMethodsWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -70,13 +70,13 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
-1.  Na **Data** nabídce vyberte možnost**zobrazit zdroje dat**.  
+1.  Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.  
   
 2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte**Další**.  
+3.  Na **zvolte typ zdroje dat** obrazovky, vyberte **databáze**a pak vyberte **Další**.  
   
-4.  Na **vyberte datové připojení**obrazovky, proveďte jednu z následujících akcí:  
+4.  Na **vyberte datové připojení** obrazovky, proveďte jednu z následujících akcí:  
   
     -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.  
   
@@ -84,13 +84,13 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
     -   Vyberte **nové připojení** ke spuštění **přidat/změnit připojení** dialogové okno.  
   
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte**Další**.  
+5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.  
   
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace**obrazovky, vyberte **Další**.  
+6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace** obrazovky, vyberte **Další**.  
   
-7.  Na **zvolte vaše databázové objekty**obrazovky, rozbalte **tabulky** uzlu.  
+7.  Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.  
   
-8.  Vyberte `Region` tabulku a pak vyberte**Dokončit**.  
+8.  Vyberte `Region` tabulku a pak vyberte **Dokončit**.  
   
      **NorthwindDataSet** se přidá do vašeho projektu a `Region` se zobrazí v tabulce **zdroje dat** okna.  
   
@@ -117,7 +117,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Přidat kód pro vkládání nových záznamů do databáze  
   
-1.  Vyberte**InsertButton** vytvořit obslužnou rutinu události pro událost click a otevřete formulář v editoru kódu.  
+1.  Vyberte **InsertButton** vytvořit obslužnou rutinu události pro událost click a otevřete formulář v editoru kódu.  
   
 2.  Nahradit `InsertButton_Click` obslužné rutiny události s následujícím kódem:  
   
@@ -135,7 +135,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Chcete-li přidat kód k odstranění záznamů z databáze  
   
-1.  Vyberte**DeleteButton** vytvořit obslužnou rutinu události pro událost click a otevřete formulář v editoru kódu.  
+1.  Vyberte **DeleteButton** vytvořit obslužnou rutinu události pro událost click a otevřete formulář v editoru kódu.  
   
 2.  Nahradit `DeleteButton_Click` obslužné rutiny události s následujícím kódem:  
   
@@ -146,7 +146,7 @@ Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL 
   
 #### <a name="to-run-the-application"></a>Ke spuštění aplikace  
   
--   Vyberte**F5** ke spuštění aplikace.  
+-   Vyberte **F5** ke spuštění aplikace.  
   
 -   Vyberte **vložit** tlačítko a ověřte, že nový záznam se zobrazí v mřížce.  
   

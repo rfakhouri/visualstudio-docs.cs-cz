@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0941d1f08060bcc0c8889b3038d491dc91d1a7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270614"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220401"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Běžný scénář, kdy aplikace se má zobrazit vybraná data ve formuláři. M
   
 -   Vytvoření a konfigurace zdroje dat ve vaší aplikaci se **konfigurace zdroje dat** průvodce.  
   
--   Typ rozevírací položky v nastavení **zdroje dat**okna.  
+-   Typ rozevírací položky v nastavení **zdroje dat** okna.  
   
 -   Vytváření ovládacích prvků, které data zobrazit přetažením položek z **zdroje dat** okna do formuláře.  
   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933557"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219884"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Návod: Ladění vícevláknové aplikace v sadě Visual Studio pomocí okna vlákna
 Visual Studio poskytuje **vlákna** prvky si můžete usnadnit ladění aplikací s více vlákny rozhraní okna a jinými uživateli. Tento kurz ukazuje způsob použití **vlákna** okno a **umístění ladění** nástrojů. Informace o dalších nástrojů, naleznete v tématu [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md). Tento kurz trvá jenom několik minut, ale jeho dokončení se můžete seznámit s funkcemi pro ladění aplikací s více vlákny.   
@@ -37,7 +37,7 @@ Pokud chcete začít tento kurz, potřebujete projekt aplikace s více vlákny. 
   
      **Nový projekt** zobrazí se dialogové okno.  
   
-2.  V **typu projektu**s poli, klikněte na jazyk podle vašeho výběru: **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++**.  
+2.  V **typy projektů** klikněte na jazyk podle svého výběru: **jazyka Visual Basic**, **Visual C#** , nebo **Visual C++**.  
   
 3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci**.  
   

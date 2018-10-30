@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865359"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219910"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostika problémů po nasazení pomocí technologie IntelliTrace
 
@@ -44,7 +44,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
 
 Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaralý a potom se odeberou. Ladění webových aplikací ASP.NET po nasazení, použijte jednu z následujících metod:
 
-* Pro nasazení do Azure, použijte [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* Pro nasazení do Azure, použijte [Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Pokud budete muset použít nástroje IntelliTrace, otevřete projekt v sadě Visual Studio a načítání souborů symbolů z odpovídající sestavení. Můžete načíst soubory symbolů z **moduly** okno nebo tím, že nakonfigurujete symboly v **nástroje** > **možnosti** > **ladění**   >  **Symboly**.
 

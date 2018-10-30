@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213245"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217860"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalace ukázkových databází systému SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Ukázkové databáze jsou užitečné pro experimentování s dotazy SQL a LINQ,
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Obnovení databáze ze souboru .bak v sadě Visual Studio  
   
-1.  Při zálohování databáze Microsoft SQL Server, výsledek je soubor .bak. Chcete-li .bak souboru použitelné znovu jako soubor databáze, musí být *obnovit*. V hlavní nabídce vyberte**zobrazení** > **Průzkumník objektů systému SQL Server**. Pokud ho nevidíte, může být potřeba ji nainstalovat. Přejděte na **ovládací panely** > **programy a funkce**vyhledejte Microsoft Visual Studio 2015 a klikněte na tlačítko **změnu** tlačítko. Když v okně instalačního programu se zobrazí seznam nainstalovaných komponent, vyberte **Průzkumník objektů systému SQL Server**zaškrtněte políčko a potom pokračovat v instalaci.  
+1.  Při zálohování databáze Microsoft SQL Server, výsledek je soubor .bak. Chcete-li .bak souboru použitelné znovu jako soubor databáze, musí být *obnovit*. V hlavní nabídce vyberte **zobrazení** > **Průzkumník objektů systému SQL Server**. Pokud ho nevidíte, může být potřeba ji nainstalovat. Přejděte na **ovládací panely** > **programy a funkce**vyhledejte Microsoft Visual Studio 2015 a klikněte na tlačítko **změnu** tlačítko. Když v okně instalačního programu se zobrazí seznam nainstalovaných komponent, vyberte **Průzkumník objektů systému SQL Server** zaškrtněte políčko a potom pokračovat v instalaci.  
   
 2.  V Průzkumníku objektů SQL serveru, klikněte pravým tlačítkem na libovolný databázovém stroji SQL serveru (například localdb) a vyberte**nový dotaz**.  
   

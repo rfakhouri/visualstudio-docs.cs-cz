@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea8f8ff1354ac2729c7c11b6ff575b90837af66
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188564"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220066"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Postupy: Upgrade projektů ve Visual C++ na Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [průvodce Visual C++ přenosem a upgradováním](https://docs.microsoft.com/en-us/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+Nejnovější dokumentaci pro sadu Visual Studio 2017 najdete v tématu [průvodce Visual C++ přenosem a upgradováním](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 Při prvním otevření projektu Visual C++, který byl vytvořen v dřívější verzi sady Visual Studio, které může zobrazit výzva k aktualizaci projektu. Zpráva s dotazem, zda chcete provést upgrade na nejnovější verzi kompilátoru jazyka Visual C++ a knihoven. Možnosti pro upgrade závisí na verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , která byla použita k vytvoření projektu.  
   

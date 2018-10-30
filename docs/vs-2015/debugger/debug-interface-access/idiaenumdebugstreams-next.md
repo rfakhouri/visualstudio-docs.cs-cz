@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1bfc0f31770fa327f0991f459ee8637d7347732
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6381ed30d93078e79f5108cf14642b0eda3ea0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813957"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219702"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Načte zadaný počet datové proudy debug v pořadí výčtu.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
    ULONG*                    pceltFetched  
@@ -42,7 +42,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] **T**má počet datových proudů ladění enumerátor, který se má načíst.  
+ [in] Počet datových proudů ladění enumerátor, který se má načíst.  
   
  rgelt  
  [out] Vrátí pole [idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objekty, které představují ladění streamuje načítají.  

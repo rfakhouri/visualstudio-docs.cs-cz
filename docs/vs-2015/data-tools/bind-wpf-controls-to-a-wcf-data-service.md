@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812423"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220375"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 3.  Změňte název na `AdventureWorksModel.edmx`a klikněte na tlačítko **přidat**.  
   
-     **Modelu Entity Data Model**otevře se průvodce.  
+     **Modelu Entity Data Model** otevře se průvodce.  
   
 4.  Na **výběr obsahu modelu** klikněte na **Generovat z databáze**a klikněte na tlačítko **Další**.  
   
@@ -161,7 +161,7 @@ V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky váza
   
 6.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.  
   
-     **Konfigurace zdroje dat**otevře se průvodce.  
+     **Konfigurace zdroje dat** otevře se průvodce.  
   
 7.  V **zvolte typ zdroje dat** stránky v průvodci vyberte **služby**a potom klikněte na tlačítko **Další**.  
   

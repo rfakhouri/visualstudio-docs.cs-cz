@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843389"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220172"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Hierarchická aktualizace * se vztahuje k procesu ukládání aktualizovaná dat
   
 1.  Vytvořte obslužnou rutinu události pro `OrdersBindingSource.AddingNew` událostí.  
   
-    -   Otevřít **Form1** v návrhovém zobrazení, vyberte**OrdersBindingSource** v panelu komponent vyberte **události** v **vlastnosti** okně a dvakrát klikněte **AddingNew** událostí.  
+    -   Otevřít **Form1** v návrhovém zobrazení, vyberte **OrdersBindingSource** v panelu komponent vyberte **události** v **vlastnosti** okně a dvakrát klikněte **AddingNew** událostí.  
   
 2.  Přidat řádek kódu, který volá obslužná rutina události `CustomersBindingSource.EndEdit` metody. Kód v `OrdersBindingSource_AddingNew` obslužné rutiny události by měl vypadat takto:  
   

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822098"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219637"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Vytvoření vazby klávesové zkratky a položkami nabídky
 K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí přidat položku *.vsct* souborů pro balíček. Toto téma vysvětluje, jak namapovat na vlastní tlačítka, položka nabídky nebo panelu nástrojů příkazu Klávesové zkratky a použít mapování klávesnice v editoru výchozí nebo omezit na vlastní editor.  
@@ -45,7 +45,7 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
 4. Zkuste různé kombinace kláves, dokud nenaleznete, která není namapována.  
   
    > [!NOTE]
-   >  Klávesové zkratky, které používají **Alt** může otevřít nabídku a ne přímo provedení příkazu. Proto **aktuálně používá místní** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje **Alt**. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.  
+   >  Klávesové zkratky, které používají **Alt** může otevřít nabídku a ne přímo provedení příkazu. Proto **zkratku aktuálně používá** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje **Alt**. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.  
   
    Následující postup předpokládá, že máte existující balíčku VSPackage pomocí příkazu nabídky. Pokud potřebujete pomoc, to provedete, podívejte se na [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -78,7 +78,7 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
   
    Ve většině případů **Shift** by neměl bez druhý modifikátor použít, protože již stisknutím klávesy způsobí, že většina alfanumerické klíčů na typ symbolu nebo velké písmeno.  
   
-   Virtuální klíč kódy umožňují přístup ke speciální klávesy, které nemají znak spojený s nimi, například funkční klávesy a **Backspace** klíč. Další informace najdete v tématu [virtuální klíč kódy](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Virtuální klíč kódy umožňují přístup ke speciální klávesy, které nemají znak spojený s nimi, například funkční klávesy a **Backspace** klíč. Další informace najdete v tématu [virtuální klíč kódy](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Chcete-li příkaz k dispozici v sadě Visual Studio editoru, nastavte `editor` atribut `guidVSStd97`.  
   

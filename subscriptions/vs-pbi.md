@@ -9,12 +9,12 @@ description: Další informace o předplatné Power BI Pro, které jsou součás
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894557"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219533"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -80,7 +80,7 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
 | Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI|
 | Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD).    Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD).  Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
@@ -92,9 +92,24 @@ Odpověď: benefit je zdarma, ale aktivace používá stejný systém používá
 - Platební karty.  Pokud zadáte číslo kreditní karty, vaše karta žádné poplatky. 
 - Faktury.  Pokud vyberete jako typ platby "Faktury", není nutné zadat číslo platební karty.  Můžete také nastavit interval na "roční".  Tímto způsobem, dostanete e-mail oznamující, pro vás připravený fakturu.  Fakturovaná částka bude být 0.00 $.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>Dotaz: lze použít Power BI Pro benefit zahrnuté v předplatném v produkčním prostředí?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Otázka: je Power BI Pro benefit zahrnuté v licencích Moje předplatné pro použití v produkčním prostředí?
 Odpověď: Ano.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Otázka: Při pokusu o aktivaci Power BI Pro, zobrazí se zpráva, "Už máte účet prostřednictvím práce".  Použití výhody
+Odpověď: Ano.  Zpráva označuje, že jste přihlášení k doméně, která už má aktivní klienty Office 365, na kterých nejste správcem.  Chcete-li přidat do tenanta Power BI Pro, musíte být správcem tohoto tenanta.  Chcete-li vyřešit tento problém, postupujte podle těchto kroků můžete vytvořit vlastního tenanta.
+1.  Když se zobrazí zpráva, že už máte účet prostřednictvím práce, klikněte na tlačítko **vytvořit nový účet**.
+
+2.  Na další obrazovce zadejte svoje kontaktní informace a klikněte na **Další**.
+
+3.  Vytvořte ID uživatele a heslo.  Abyste mohli využívat bezplatné nabídky, ujistěte se, že vyberete **. onmicrosoft.com** jako doména. Klikněte na tlačítko **vytvořit Můj účet**.
+    > [!div class="mx-imgBorder"]
+    > ![Výhoda Pro Power BI vytvořit ID uživatele v soukromé tenanta](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  Zbývající kroky v procesu jsou shodné s hodnotami uvedenými v těle článku, počínaje krokem 6.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>Dotaz: jsem v doméně státní správy.  Můžete použít výhody? 
+Odpověď: Ne.  Power BI Pro benefit nelze přidat do klientů v doméně státní správy. 
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Power BI Pro?
@@ -103,3 +118,6 @@ Odpověď: Ano.
     - Prozkoumejte nejčastější problémy, získejte pomoc od komunity nebo odeslat lístek podpory na [stránku podpory](https://powerbi.microsoft.com/support/).
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Další kroky
+Power BI Pro výhodu si aktivujete, navštivte [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

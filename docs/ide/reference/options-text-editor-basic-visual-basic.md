@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823874"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218922"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Rozšířené možnosti, textový Editor, Basic (Visual Basic)
 **VB konkrétní** stránce vlastností **základní** složky **textový Editor** složky **možnosti** (**nástroje** nabídky) dialogové okno obsahuje následující vlastnosti:
@@ -71,16 +71,6 @@ Textový editor označuje visual oboru postupy. Řádek je vykreslen v *.vb* zdr
 **Automatické vložení členů rozhraní a MustOverride**
 
 Pokud jste se zavázali `Implements` příkaz nebo `Inherits` příkaz pro třídu, textový editor vloží prototypy pro členy, které musí být implementován nebo jeho přepsána, v uvedeném pořadí.
-
-**Zobrazit oddělovače řádků procedury**
-
-Textový editor označuje visual oboru postupy. Řádek je vykreslena ve zdrojových souborech .vb vašeho projektu v umístěních uvedených v následující tabulce:
-
-|Umístění ve zdrojovém souboru .vb|Příklad umístění řádku|
-| - | - |
-|Po uzavření bloku deklarace konstruktoru|– Na konci třída, struktura, modul, rozhraní nebo výčet<br />-After vlastnost, funkce nebo procedury sub<br />-Není mezi get a set klauzule ve vlastnosti|
-|Po sadu konstrukce jeden řádek|-After příkazy pro import, před definici typu v souboru třídy<br />-After proměnné deklarované ve třídě, před všechny postupy|
-|Po jeden řádek deklarací (deklarace mimo blok úrovně)|-Následující příkazy pro import, dědí příkazy deklarace proměnných, deklarace události, delegát deklarace a příkazy deklarovat knihovny DLL|
 
 **Povolit návrhy oprav**
 

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926539"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220157"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Příkazy identifikátory GUID a ID sady Visual Studio
 Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí (IDE) sady Visual Studio jsou definovány v souborech .vsct, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +57,7 @@ Hodnoty GUID a ID příkazů součástí integrovaného vývojového prostředí
   
 -   Položky nabídky, které obsahují podrženého znaku, například **tisk** příkaz **souboru** nabídka, ve kterém *P* podtržené.  
   
-     Znaky, které předchází znak ampersand (&) znaků v názvech položek nabídky se zobrazí jako podtržené. Ale *.vsct* soubory jsou zapsány ve formátu XML, který používá znak ampersand (&) k označení speciální znaky a vyžaduje, že musí být zadán znak ampersand, který se má zobrazit jako  *&amp;amp;*. Proto v *.vsct* souboru **P**rint příkazu se zobrazí jako  *&amp;amp; Tisk*.  
+     Znaky, které předchází znak ampersand (&) znaků v názvech položek nabídky se zobrazí jako podtržené. Ale *.vsct* soubory jsou zapsány ve formátu XML, který používá znak ampersand (&) k označení speciální znaky a vyžaduje, že musí být zadán znak ampersand, který se má zobrazit jako  *&amp;amp;*. Proto v *.vsct* souboru **tisk** příkazu se zobrazí jako  *&amp;amp; Tisk*.  
   
 -   Příkazy, které mají dynamický text, například **Uložit** \<aktuální Filename\>a dynamicky generované položky nabídky, jako je například položky na **poslední soubory** seznamu.  
   

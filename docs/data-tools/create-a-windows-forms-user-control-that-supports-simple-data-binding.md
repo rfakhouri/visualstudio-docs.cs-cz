@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b6bf3a790d1e6d8d4165bb489176010a43e7c19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5bffba1b2de64c142dd70990fb74429ad40269a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925072"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220092"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje jednoduchou datovou vazbu
 
@@ -122,7 +122,7 @@ Pro jednoduché ovládací prvky tuto podporu vázání dat, implementujte <xref
 
 ## <a name="create-a-data-source-from-your-database"></a>Vytvoření zdroje dat z databáze
 
-Tento krok používá **konfigurace zdroje dat**průvodce k vytvoření zdroje dat na základě `Customers` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o instalaci ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
+Tento krok používá **konfigurace zdroje dat** průvodce k vytvoření zdroje dat na základě `Customers` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o instalaci ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 

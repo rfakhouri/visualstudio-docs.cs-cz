@@ -13,14 +13,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126549"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219092"
 ---
-# <a name="packagejson-configuration"></a>Konfigurace souboru Package.JSON
+# <a name="packagejson-configuration"></a>Konfigurace package.json
 
 Pokud vyvíjíte aplikace v Node.js s velkým množstvím balíčky npm, není nic neobvyklého, když dojde k upozornění a chyby při sestavení projektu, pokud jeden nebo více balíčků se aktualizovala. V některých případech se už nepoužívá výsledky konfliktu verze nebo verze balíčku. Tady je několik tipů, které vám pomohou nakonfigurovat vaše [package.json](https://docs.npmjs.com/files/package.json) souboru a pochopit, co se děje při zobrazení upozornění a chyby. Toto není kompletní pokyny k *package.json* a se zaměřuje pouze na Správa verzí balíčků npm.
 
@@ -28,7 +28,7 @@ Systém správy verzí balíčků npm se přísná pravidla. Formát verze násl
 
     [major].[minor].[patch]
 
-Řekněme, že máte ve své aplikaci s verzí 5.2.1 balíček. 5 je hlavní verze, je dílčí verze 2 a 1 opravy.
+Řekněme, že máte ve své aplikaci s verzí 5.2.1 balíček. Hlavní verze je 5, dílčí verze je 2 a opravy je 1.
 
 * V hlavní verze aktualizace balíček obsahuje nové funkce, které jsou zpětně nekompatibilní, který je, rozbíjející změny.
 * Vedlejší verze aktualizace, byly přidány nové funkce do balíčku, které jsou zpětně kompatibilní se staršími verzemi balíčku.

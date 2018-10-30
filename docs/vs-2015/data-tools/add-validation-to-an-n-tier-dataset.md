@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7b9955cf71b1d8862274d4b3501cee35ddd080f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212379"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220531"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Přidávání ověřování do vícevrstvé datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ End Sub
   
 3.  Přidejte kód pro ověření, že `e.ProposedValue` obsahuje data, která splňují požadavky aplikace. Pokud navrhovaná hodnota není přijatelná, nastavte sloupec, aby označoval, že obsahuje chybu.  
   
-     Následující příklad kódu ověřuje, **množství** sloupec obsahuje více než 0. Pokud**množství** je menší než nebo rovna 0, sloupec je nastaven na chybu. `Else` Klauzule vymaže chybu, pokud**množství** je větší než 0. Kód v obslužné rutině události měnící sloupec by měl vypadat takto:  
+     Následující příklad kódu ověřuje, **množství** sloupec obsahuje více než 0. Pokud **množství** je menší než nebo rovna 0, sloupec je nastaven na chybu. `Else` Klauzule vymaže chybu, pokud **množství** je větší než 0. Kód v obslužné rutině události měnící sloupec by měl vypadat takto:  
   
     ```vb  
     If (e.Column.ColumnName = Me.QuantityColumn.ColumnName) Then  

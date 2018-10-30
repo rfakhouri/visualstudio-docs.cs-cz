@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 604c9834594c14e8c1cc6b2c310f96cb68321931
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825685"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220001"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Tato funkce slouží k ladění aplikací, které běží na místním nebo vzd�
   
    2. Klikněte na šipku rozevíracího seznamu, který je připojen k **kvalifikátor** a z rozevíracího seznamu vyberte název počítače.  
   
-   3. Klikněte na tlačítko **najít** vedle**kvalifikátor** seznamu a otevře **vyberte připojení vzdáleného ladicího programu** dialogové okno. **Vyberte připojení vzdáleného ladicího programu** dialogové okno obsahuje všechna zařízení, které jsou na vaší místní podsíti a zařízení, která je přímo připojeno k počítači pomocí kabelu Ethernet. Klikněte na počítač nebo zařízení a potom klikněte na tlačítko **vyberte**. 
+   3. Klikněte na tlačítko **najít** vedle **kvalifikátor** seznamu a otevře **vyberte připojení vzdáleného ladicího programu** dialogové okno. **Vyberte připojení vzdáleného ladicího programu** dialogové okno obsahuje všechna zařízení, které jsou na vaší místní podsíti a zařízení, která je přímo připojeno k počítači pomocí kabelu Ethernet. Klikněte na počítač nebo zařízení a potom klikněte na tlačítko **vyberte**. 
   
       **Kvalifikátor** nastavení zůstává mezi relacemi ladění pouze v případě, že dojde k úspěšnému připojení ladění u tohoto kvalifikátoru.
      

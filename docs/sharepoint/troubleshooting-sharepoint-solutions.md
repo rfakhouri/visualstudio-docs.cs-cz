@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928955"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219780"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Řešení potíží s řešeními služby SharePoint
   S těmito problémy nebo výstrah může dojít při ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu. Další informace najdete v tématu [ladění řešení pracovního postupu služby SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -136,7 +136,7 @@ ms.locfileid: "49928955"
   
 -   Nainstalujte [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Ujistěte se, že máte přístup správce k webu SharePoint. Další informace najdete v tématu [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] Online článku [přiřadit nebo odebrat správce aplikací služeb v produktu SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
+-   Ujistěte se, že máte přístup správce k webu SharePoint. Další informace najdete v tématu [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] Online článku [přiřadit nebo odebrat správce aplikací služeb v produktu SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Lokality odstranění webové události nedochází v projektu příjemce událostí
  Když vytvoříte projekt příjemce událostí a výběru určitých webových událostí jako "Web se odstraňuje", události se nikdy neprovádí.  

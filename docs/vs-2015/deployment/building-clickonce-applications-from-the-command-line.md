@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836785"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220014"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ V [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], můžete ses
   
 5. Typ `msbuild /target:publish`.  
   
-   Výše uvedené kroky vytvoří úplný [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení aplikace v podsložce projektu s názvem P**ublikovat**. CmdLineDemo.application je [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasazení. Složka CmdLineDemo_1.0.0.0 obsahuje soubory CmdLineDemo.exe a CmdLineDemo.exe.manifest [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace. Setup.exe je zaváděcí nástroj, který ve výchozím nastavení je nastavena k instalaci [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX obsahuje distribuovatelné součásti pro [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Toto je celá sada soubory, které potřebujete k nasazení vaší aplikace prostřednictvím webu nebo název UNC nebo disk CD/DVD.  
+   Výše uvedené kroky vytvoří úplný [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] nasazení aplikace v podsložce s názvem projektu **publikovat**. CmdLineDemo.application je [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu nasazení. Složka CmdLineDemo_1.0.0.0 obsahuje soubory CmdLineDemo.exe a CmdLineDemo.exe.manifest [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest aplikace. Setup.exe je zaváděcí nástroj, který ve výchozím nastavení je nastavena k instalaci [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX obsahuje distribuovatelné součásti pro [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Toto je celá sada soubory, které potřebujete k nasazení vaší aplikace prostřednictvím webu nebo název UNC nebo disk CD/DVD.  
   
 ## <a name="publishing-properties"></a>Vlastnosti publikování  
  Při publikování aplikace ve výše uvedených postupů následující vlastnosti jsou vloženy do souboru projektu pomocí Průvodce publikováním. Tyto vlastnosti přímo ovlivňují způsob, jakým [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikace se vytvářejí.  

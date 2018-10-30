@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4dd3e3b44bfdf9a3c9f0f144d984d1408046e80
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143330"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220258"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 **Písma a barvy** stránku **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barvy režim pro různé prvky uživatelského rozhraní v integrovaném vývojovém prostředí (IDE). Toto dialogové okno se zpřístupní po kliknutí **Nástroje / možnosti**a pak vyberete **prostředí / písma a barvy**. Pokud se tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.
@@ -142,7 +142,7 @@ ms.locfileid: "50143330"
 |**Klíčové slovo**|Klíčová slova pro daný jazyk, které jsou vyhrazené. Příklad: třídy a oboru názvů.|
 |**Adresa paměti**|Barva textu slouží k zobrazení sloupce Adresa uvnitř **paměti** okna.|
 |**Paměť změněna**|Barva textu slouží k zobrazení změněná data uvnitř **paměti** okna.|
-|**Data paměti**|Barva textu slouží k zobrazení dat uvnitř M**zašifrování** okna.|
+|**Data paměti**|Barva textu slouží k zobrazení dat uvnitř **paměti** okna.|
 |**Paměť není čitelná**|Barva textu slouží k zobrazení nečitelná paměť oblastí v rámci **paměti** okna.|
 |**Číslo**|Číslo v kódu, který představuje skutečný číselnou hodnotu.|
 |**– Operátor**|Operátory, jako například +, -, a! =.|

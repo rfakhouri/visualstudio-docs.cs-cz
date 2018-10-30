@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbde5651c66582b7d0536be906358d3a4446f587
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240432"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220271"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliasy příkazů sady Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "49240432"
   
 Aliasy umožňují pro zadání příkazu do **najít/příkaz** pole nebo **příkaz** okno zkrácením text potřebné ke spuštění příkazu. Například místo zadávání `>File.OpenFile` zobrazíte **otevřít soubor** dialogové okno, můžete použít předdefinované alias `>of`.  
   
- Typ `alias` v **příkaz**okno zobrazí seznam aktuálních aliasů a jejich definice. Typ `>cls` vymazat obsah **příkaz** okna. Pokud chcete zobrazit jako alias pro ke konkrétnímu příkazu, zadejte `alias <command name>`.  
+ Typ `alias` v **příkaz** okno zobrazí seznam aktuálních aliasů a jejich definice. Typ `>cls` vymazat obsah **příkaz** okna. Pokud chcete zobrazit jako alias pro ke konkrétnímu příkazu, zadejte `alias <command name>`.  
   
  Můžete snadno vytvořit vlastní alias pro jeden z příkazů sady Visual Studio (s nebo bez argumentů). Příklad syntaxe pro aliasy `File.NewFile MyFile.txt` je `alias MyAlias File.NewFile MyFile.txt`. Můžete odstranit jeden z vašich aliasů `alias <alias name> /delete`  
   

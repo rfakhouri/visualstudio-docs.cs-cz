@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919361"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220219"
 ---
 # <a name="active-script-debugging-overview"></a>Přehled ladění aktivních skriptů
 Rozhraními aktivního ladění skriptu povolit ladění jazykově neutrální, nezávislá na hostitele a podporují širokou škálu vývojových prostředích.  
@@ -33,31 +33,30 @@ Obrázek 1
   
  V podčásti níže jsou popsány každý klíčovou součástí aktivního ladění a jeho přidružené rozhraní. Nicméně než budete pokračovat, musí být definován několik klíčových konceptů aktivního ladění:  
   
- Hostitelské aplikace  
+ **Hostitelské aplikace**  
  Aplikace, který je hostitelem skriptu strojům a poskytuje skriptovatelný sadu objektů (nebo "object model").  
   
- modul jazyka  
+ **modul jazyka**  
  Komponenta, která poskytuje analýzu, spuštění a ladění abstrakce pro konkrétní jazyk.  
   
- ladicí program integrovaného vývojového prostředí  
+ **ladicí program integrovaného vývojového prostředí**  
  Aplikace, která poskytuje ladění uživatelského rozhraní tím, že komunikuje s hostiteli aplikace a jazyk moduly.  
   
- Správce ladění počítače  
- Komponenta, která udržuje registr laditelné aplikace zpracovává.  
+ **Správce ladění počítač** komponenty, která udržuje registr laditelné aplikace zpracovává.  
   
- Správce ladění procesu  
+ **Správce ladění procesu**  
  Komponenta, která udržuje stromu laditelné dokumenty pro konkrétní aplikaci, sleduje běžící vlákna a tak dále.  
   
- Kontext dokumentu  
+ **Kontext dokumentu**  
  Kontext dokumentu je abstrakcí představující konkrétní rozsah ve zdrojovém kódu hostitelský dokument.  
   
- Kontext kódu  
+ **Kontext kódu**  
  Kontext kódu představuje určité místo v spuštěním kódu modulu jazyka ("virtuální instrukce ukazatel".)  
   
- místní výraz  
+ **místní výraz**  
  Konkrétním kontextu (například rámec zásobníku) ve kterém může být výrazy vyhodnoceny pomocí modulu jazyka.  
   
- procházení objektů  
+ **procházení objektů**  
  Strukturovaná, nezávislým na jazyku reprezentace objektu název, typ, hodnotu a dílčí objekty, které jsou vhodné pro implementaci "okna kukátka" uživatelské rozhraní.  
   
  Níže je uveden přehled jednotlivých klíčových komponent aktivního ladění a odpovídající, přidružené rozhraní, za nímž následuje podrobnosti o těchto rozhraní.  

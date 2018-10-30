@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833990"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219494"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Vytvoření instance projektu pomocí objektů pro vytváření projektů
 Typů projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] použít *objekt pro vytváření projektu* pro vytvoření instancí objektů projektu. Objekt pro vytváření projektu je podobná objekt pro vytváření tříd standardní cocreatable objektů COM. Nicméně objekty projektu nejsou cocreatable; mohou být vytvořeny pouze pomocí objekt pro vytváření projektu.  
@@ -27,8 +27,6 @@ Typů projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] p
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Volá objekt pro vytváření projektů v vašeho balíčku VSPackage implementovat, pokud uživatel načte existující projekt nebo vytvoří nový projekt v integrovaném vývojovém prostředí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nový objekt projektu poskytuje integrované vývojové prostředí s dostatek informací k naplnění **Průzkumníka řešení**. Nový objekt projektu také poskytuje požadovaná rozhraní pro podporu všechny příslušné akce uživatelského rozhraní inicializuje v integrovaném vývojovém prostředí.  
   
  Můžete implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní ve třídě ve vašem projektu. Obvykle se nachází v jeho vlastní modul.  
-  
- Příklad implementace `IVsProjectFactory` rozhraní najdete v tématu *PrjFac.cpp*, který je součástí [základního projektu](https://www.microsoft.com/download/details.aspx?id=55984) ukázka adresáře.  
   
  Projekty, které podporují agregaci vlastník musí zachovat klíčem vlastníka v jejich souboru projektu. Když <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metoda je volána v projektu s klíčem vlastníka, vlastnictví projektu převede na objekt pro vytváření projektu GUID pak zavolá jeho vlastníka klíč `CreateProject` metody v této výrobě projektu provedete skutečné vytváření.  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823499"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218896"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Vytvoření parametrizovaných dotazů TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Parametrický dotaz vrací data, která splňuje podmínky klauzuli WHERE v dota
   
 1. Otevřete formulář v nástrojích pro **Návrháře formulářů Windows**.  
   
-2. Na **Data** nabídce vyberte možnost**přidat dotaz**nebo**inteligentní značky dat**.  
+2. Na **Data** nabídce vyberte možnost **přidat dotaz** nebo **inteligentní značky dat**.  
   
    > [!NOTE]
-   >  Pokud **přidat dotaz** není k dispozici na **Data** nabídku, vyberte ovládací prvek na formuláři, zobrazí zdroj dat, které chcete přidat Parametrizace do. Například, pokud data ve formuláři se zobrazí <xref:System.Windows.Forms.DataGridView> ovládací prvek, vyberte ji. Pokud formulář pro zobrazení dat v jednotlivých ovládacích prvků, vyberte libovolný ovládací prvek vázaný na data.  
+   > Pokud **přidat dotaz** není k dispozici na **Data** nabídku, vyberte ovládací prvek na formuláři, zobrazí zdroj dat, které chcete přidat Parametrizace do. Například, pokud data ve formuláři se zobrazí <xref:System.Windows.Forms.DataGridView> ovládací prvek, vyberte ji. Pokud formulář pro zobrazení dat v jednotlivých ovládacích prvků, vyberte libovolný ovládací prvek vázaný na data.  
   
 3. V **tabulky zdroje dat vyberte** oblasti, vyberte tablethat, kterou chcete přidat Parametrizace do.  
   
@@ -82,7 +82,7 @@ Parametrický dotaz vrací data, která splňuje podmínky klauzuli WHERE v dota
   
 5. V **Text dotazu** zadejte dotaz, který používá parametry.  
   
-6. Vyberte**OK**.  
+6. Vyberte **OK**.  
   
     Ovládací prvek pro vstupní parametr a s **zatížení** tlačítko se přidá na formulář v nástrojích <xref:System.Windows.Forms.ToolStrip> ovládacího prvku.  
   
@@ -105,7 +105,7 @@ Parametrický dotaz vrací data, která splňuje podmínky klauzuli WHERE v dota
   
 1.  V **Návrhář Dataset**, vyberte dotaz TableAdapter, které je potřeba přijmout hodnoty null parametrů.  
   
-2.  V **vlastnosti** okně**parametry**. Stiskněte klávesu se třemi tečkami (**...** ) tlačítko Otevřít **Editor kolekce parametrů**.  
+2.  V **vlastnosti** okně **parametry**. Stiskněte klávesu se třemi tečkami (**...** ) tlačítko Otevřít **Editor kolekce parametrů**.  
   
 3.  Vyberte parametr, který povoluje hodnoty null a nastavte **AllowDbNull** vlastnost `true`.  
   

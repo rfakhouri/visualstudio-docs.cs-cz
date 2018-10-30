@@ -1,7 +1,7 @@
 ---
 title: Použití soubor requirements.txt, který ke správě požadavků balíčku
-description: Soubor requirements.txt, který můžete použít ke správě závislostí projektu. Pokud se zobrazí projekt obsahující soubor requirements.txt, můžete snadno nainstalovat tyto závislosti v jednom kroku.
-ms.date: 06/27/2018
+description: Soubor requirements.txt, který popisuje závislosti projektu. Pokud se zobrazí projekt obsahující soubor requirements.txt, můžete snadno nainstalovat tyto závislosti v jednom kroku.
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efefda9fb5eb863550684511a5c0834f5d43f7fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100910"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218423"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Správa požadované balíčky pomocí souboru requirements.txt
 
-Pokud sdílíte projekt s ostatními, použití sestavovacího systému nebo v plánu nasadit na jakékoli jiné umístění, které je potřeba obnovit prostředí, budete muset zadat externí balíčky, které projekt vyžaduje. Doporučuje se použít [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), který obsahuje seznam příkazů pro pip, který instaluje požadované verze závislé balíčky.
+Pokud projekt sdílet s ostatními, systém sestavení nebo plán projektu zkopírovat do jiného umístění, které je potřeba obnovit prostředí, budete muset zadat externí balíčky, které projekt vyžaduje. Doporučuje se použít [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), který obsahuje seznam příkazů pro pip, který instaluje požadované verze závislé balíčky. Příkaz nejběžnější je `pip freeze > requirements.txt`, která zaznamenává prostředí aktuální seznam balíčků do *souboru requirements.txt*.
 
 Technicky vzato některý název souboru může sloužit ke sledování požadavků (s použitím `-r <full path to file>` při instalaci balíčku), ale Visual Studio poskytuje specifické podpoře pro *souboru requirements.txt*:
 
@@ -65,7 +65,7 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-### <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také:
 
 - [Správa prostředí Pythonu v sadě Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)

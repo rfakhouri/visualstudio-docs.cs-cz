@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da159ae0fcb4347052efcea5d0dbd24d5ccd8f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39152256"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219234"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizace existující aplikace pro MSBuild 15
 
@@ -40,7 +40,7 @@ Mechanismus pro změnu projektu nástroje MSBuild předejít z centrálního um�
 
 #### <a name="use-nuget-packages-preferred"></a>Použití balíčků NuGet (upřednostňováno)
 
-Tyto pokyny předpokládají, že používáte [odkazy na NuGet PackageReference – vizuální styl](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files).
+Tyto pokyny předpokládají, že používáte [odkazy na NuGet PackageReference – vizuální styl](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
 
 Změňte soubory projektu MSBuild sestavení odkazovat z balíčků NuGet. Zadejte `ExcludeAssets=runtime` NuGet říct, že sestavení jsou potřeba pouze v době sestavení a by neměl být zkopírován do výstupního adresáře.
 

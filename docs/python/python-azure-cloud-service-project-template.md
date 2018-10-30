@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a9daea659f1a19919da31ea57946a7b287e6c040
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: da1ee8b930ad7e7366f2f0702be2ef3a538009f5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468322"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219676"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro Python
 
@@ -25,7 +25,7 @@ Visual Studio poskytuje šablony, které vám pomůžou začít s vytváření c
 
 A [Cloudová služba](https://docs.microsoft.com/azure/cloud-services/) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každý provádí koncepčně samostatné úlohy, ale můžete samostatně replikovat napříč podle potřeby škálování virtuálních počítačů. Webové role poskytují hostování pro front-endové webové aplikace. Pokud Python obavy, webová architektura, která podporuje s rozhraním WSGI můžete použít pro zapsání takové aplikace (podporuje [Šablona webového projektu](python-web-application-project-templates.md)). Role pracovního procesu jsou určené pro dlouho běžící procesy, které nemají možnost zasahovat přímo uživatelům. Obvykle využívají pomocí balíčků v rámci balíčku "azure", která se instaluje s [ `pip install azure` ](http://pypi.org/project/azure).
 
-Tento článek obsahuje podrobnosti o šabloně projektu a další podporu v sadě Visual Studio 2017 (starší verze se podobné, ale několik rozdílů). Další informace o práci s Azure v Pythonu, přejděte [středisko pro vývojáře Python](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+Tento článek obsahuje podrobnosti o šabloně projektu a další podporu v sadě Visual Studio 2017 (starší verze se podobné, ale několik rozdílů). Další informace o práci s Azure v Pythonu, přejděte [středisko pro vývojáře Python](https://docs.microsoft.com/python/azure/?view=azure-python).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 

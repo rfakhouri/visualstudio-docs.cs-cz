@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174394"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220336"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat na formulář v nástrojích pro aplikace Windows, upravte údaje a odeslat aktualizovaná data zpět do databáze. Tento návod vytvoří formulář, který zobrazuje data ze dvou souvisejících tabulek a ukazuje, jak upravovat záznamy a změny uložit zpět do databáze. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.
@@ -86,7 +86,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 1.  Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.
 
-2.  V **zdroje dat** okně**přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
+2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
 
 3.  Na **zvolte typ zdroje dat** obrazovky, vyberte **databáze**a pak vyberte **Další**.
 
@@ -102,7 +102,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace**vyberte **Další**.
 
-7.  Na **zvolte vaše databázové objekty**obrazovky, rozbalte **tabulky** uzlu.
+7.  Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.
 
 8.  Vyberte **zákazníkům** a **objednávky** tabulky a pak vyberte **Dokončit**.
 

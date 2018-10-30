@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928708"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220105"
 ---
 # <a name="properties-of-image-shapes"></a>Vlastnosti obrazových obrazců
+
 Obrazce obrázku můžete použít k určení, jak se zobrazí ve vygenerovaném návrháři doménovými třídami. Definování obrazce obrázku tak, že nastavíte `Image` vlastnost třídy do souboru předdefinované. Podporují se následující formáty:
 
 - GIF
@@ -38,11 +39,11 @@ Obrazce obrázku můžete použít k určení, jak se zobrazí ve vygenerovaném
 
 - ve formátu PNG
 
-  Ve výchozím nastavení, soubory Návrháře prostředků, jako jsou obrázky, jsou umístěny v **prostředky**složky **Dsl** projektu.
+Ve výchozím nastavení, soubory Návrháře prostředků, jako jsou obrázky, jsou umístěny v **prostředky** složky **Dsl** projektu.
 
-  Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Obrazce obrázku mají vlastnosti, které jsou uvedeny v následující tabulce.
+Obrazce obrázku mají vlastnosti, které jsou uvedeny v následující tabulce.
 
 |Vlastnost|Popis|Výchozí|
 |-|-|-|

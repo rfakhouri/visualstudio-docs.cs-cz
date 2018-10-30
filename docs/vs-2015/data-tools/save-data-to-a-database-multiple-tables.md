@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234478"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218400"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
   
 2.  Pojmenujte projekt `UpdateMultipleTablesWalkthrough`.  
   
-3.  Vyberte **aplikace Windows**a pak vyberte**OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Vyberte **aplikace Windows**a pak vyberte **OK**. Další informace najdete v tématu [klientské aplikace](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **UpdateMultipleTablesWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -81,7 +81,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
   
 2.  V **zdroje dat** okně**přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.  
   
-3.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte**Další**.  
+3.  Na **zvolte typ zdroje dat**obrazovky, vyberte **databáze**a pak vyberte **Další**.  
   
 4.  Na **vyberte datové připojení**obrazovky proveďte následující:  
   
@@ -91,9 +91,9 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
   
     -   Vyberte **nové připojení** otevřít **přidat/změnit připojení** dialogové okno.  
   
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte**Další**.  
+5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.  
   
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace**vyberte**Další**.  
+6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace**vyberte **Další**.  
   
 7.  Na **zvolte vaše databázové objekty**obrazovky, rozbalte **tabulky** uzlu.  
   
@@ -127,7 +127,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
      A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode aktualizovat databázi  
- Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům** a **objednávky** objekty TableAdapter. Ve výchozím nastavení, obslužná rutina události**Uložit** tlačítko<xref:System.Windows.Forms.BindingNavigator> je přidán do formuláře kód k odeslání aktualizací do databáze. Tento postup upravuje kód k odesílání aktualizací ve správném pořadí. Tím se eliminuje možnost vyvolání chyby referenční integrity. Kód také implementuje obalením volání update v bloku try-catch – zpracování chyb. Můžete upravit kód tak, aby odpovídaly potřebám vaší aplikace.  
+ Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům** a **objednávky** objekty TableAdapter. Ve výchozím nastavení, obslužná rutina události **Uložit** tlačítko<xref:System.Windows.Forms.BindingNavigator> je přidán do formuláře kód k odeslání aktualizací do databáze. Tento postup upravuje kód k odesílání aktualizací ve správném pořadí. Tím se eliminuje možnost vyvolání chyby referenční integrity. Kód také implementuje obalením volání update v bloku try-catch – zpracování chyb. Můžete upravit kód tak, aby odpovídaly potřebám vaší aplikace.  
   
 > [!NOTE]
 >  Tento návod pro přehlednost nepoužívá transakce. Pokud chcete aktualizovat dvě nebo více souvisejících tabulek, ale obsahovat veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zaručuje, že všechny související změny do databáze úspěšní, než se změny potvrdí. Další informace najdete v tématu [transakce a souběžnost](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
   
 #### <a name="to-test-the-application"></a>Testování aplikace  
   
-1.  Vyberte**F5**.  
+1.  Vyberte **F5**.  
   
 2.  Některé změny dat z jednoho nebo více záznamů v každé tabulce.  
   

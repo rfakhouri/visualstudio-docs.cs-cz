@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853516"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220297"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -127,7 +127,7 @@ Můžete zjistit, kolik lidí změnilo kódu a kolik změny byly provedeny v hla
 
 ### <a name="find-when-your-code-was-branched"></a>Najít, pokud byl váš kód rozvětvených
 
-K vyhledání, pokud byl váš kód rozvětvených, přejděte na svůj kód v podřízené větve. Vyberte **změny** ukazatel nebo stisknutím klávesy**Alt**+**6**:
+K vyhledání, pokud byl váš kód rozvětvených, přejděte na svůj kód v podřízené větve. Vyberte **změny** ukazatel nebo stisknutím klávesy **Alt**+**6**:
 
 ![CodeLens: Vyhledání, pokud byl váš kód rozvětvených](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Použití klávesnice:
 
 4. Stisknutím klávesy **kartu** přejdete **zobrazit nastavení pro** seznamu a potom stiskněte klávesu **šipka dolů** vyberte **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Dotaz: lze přesunout funkce CodeLens `head`zobrazení s nahoru?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Otázka: Lze přesunout pohotové zobrazení funkce CodeLens?
 
 **O:** Ano, zvolte ![Dock ikonu](../ide/media/codelensdockwindow.png) k dokování CodeLens jako okna.
 

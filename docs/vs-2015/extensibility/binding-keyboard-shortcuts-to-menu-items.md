@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812709"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220040"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Vytváření vazeb mezi klávesovými zkratkami a položkami nabídky
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí př
   
 3. V **stiskněte klávesovou zkratku** zadejte klávesovou zkratku, kterou chcete použít.  
   
-    Pokud zástupce se už používá v sadě Visual Studio **aktuálně používá místní** poli se zobrazí příkaz, který aktuálně volá klávesovou zkratku.  
+    Pokud zástupce se už používá v sadě Visual Studio **zkratku aktuálně používá** poli se zobrazí příkaz, který aktuálně volá klávesovou zkratku.  
   
 4. Zkuste různé kombinace kláves, dokud nenaleznete, která není namapována.  
   
    > [!NOTE]
-   >  Klávesové zkratky, které používají ALT může otevřít nabídku a ne přímo provedení příkazu. Proto **aktuálně používá místní** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje ALT. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.  
+   >  Klávesové zkratky, které používají ALT může otevřít nabídku a ne přímo provedení příkazu. Proto **zkratku aktuálně používá** pole nesmí být prázdný, když zadáte zástupce, který zahrnuje ALT. Můžete ověřit, že zástupce není otevřete nabídku podle uzavírací **možnosti** dialogové okno a potom stisknutím kláves.  
   
    Následující postup předpokládá, že máte existující balíčku VSPackage pomocí příkazu nabídky. Pokud potřebujete pomoc, to provedete, podívejte se na [vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md).  
   

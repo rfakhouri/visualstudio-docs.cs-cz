@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925498"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219520"
 ---
 # <a name="memory-windows"></a>Okna paměti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Paměti** okno poskytuje přehled o místo v paměti, který používá vaše aplikace. **Watch** okně **QuickWatch** dialogovém okně **automatické hodnoty** okně a **místní hodnoty** v okně zobrazí obsah proměnné, které jsou uložené na konkrétní umístění v paměti. Ale **paměti** v okně se zobrazí obrázek ve velkém měřítku. Tento náhled může být vhodné pro zkoumání velkých časti dat (vyrovnávací paměti nebo velké řetězce, například), který není zobrazit i v jiných oknech. Ale **paměti** okno není omezena pouze na zobrazení dat. Zobrazí se všechno, co v místo v paměti, zda obsah se data, kód nebo náhodného bits uvolňování paměti v nepřiřazené paměti.  
   
- **Paměti** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti**dialogovém okně**ladění** uzlu. **Paměti** okno není k dispozici pro skript nebo SQL, které jsou jazyky, které nedokáže rozpoznat koncept paměti.  
+ **Paměti** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti** dialogovém okně**ladění** uzlu. **Paměti** okno není k dispozici pro skript nebo SQL, které jsou jazyky, které nedokáže rozpoznat koncept paměti.  
   
 ## <a name="opening-a-memory-window"></a>Otevřete okno paměti  
   
