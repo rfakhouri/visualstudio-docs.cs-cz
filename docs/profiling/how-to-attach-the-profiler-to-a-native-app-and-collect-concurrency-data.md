@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d71a5eaaf37b5707ef8722399d33e96f1259e4f0
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277005"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220492"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Postupy: připojení profileru k nativní samostatné aplikaci a shromažďování dat souběžnosti pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vláknu příkazového řádku nástrojů pro profilaci k připojení profileru k běžící nativní samostatné aplikaci (C/C++) a shromažďovat data kolizí.  
@@ -33,7 +33,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
   
      [Nástroj VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**  
   
-     V následující tabulce můžete použít některou z možností **/start:concurrency**možnost.  
+     V následující tabulce můžete použít některou z možností **/start:concurrency** možnost.  
   
     |Možnost|Popis|  
     |------------|-----------------|  
@@ -45,7 +45,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
   
 2.  Připojení profileru k cílové aplikaci tak, že zadáte následující příkaz:  
   
-     **Nástroj VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}    
+     **Nástroj VSPerfCmd**[/ attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}  
   
      `PID` Určuje ID procesu cílové aplikace. ID všech spuštěných procesů lze zobrazit ve Správci úloh Windows.  
   
@@ -73,4 +73,4 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
   
 2.  Vypněte profiler zadáním následujícího příkazu:  
   
-     **Nástroj VSPerfCmd** [ /Shutdown  ](../profiling/shutdown.md)
+     **Nástroj VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
