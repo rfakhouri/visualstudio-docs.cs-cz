@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917099"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672948"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Řešení potíží s chybami v řešeních pro systém Office
   Při provádění následujících úloh při vývoji řešení pro systém Office v sadě Visual Studio se můžete setkat s problémy:  
@@ -124,7 +124,7 @@ ms.locfileid: "49917099"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Další informace o rozhraních událostí v sestavení PIA sady Office naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Další informace o rozhraních událostí v sestavení PIA sady Office naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office](/previous-versions/office/office-12//ms247299(v=office.12)).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Nelze odkaz Office PIA tříd v projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  V projektech, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], ve výchozím nastavení nebude kompilovat kód, který odkazuje na třídu, která je definována v Office PIA. Třídy v sestavení PIA použít zásady vytváření názvů *objectname*třídy, jako například <xref:Microsoft.Office.Interop.Word.DocumentClass> a <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Například následující kód z projektu doplňku VSTO pro Word, nebude kompilovat.  

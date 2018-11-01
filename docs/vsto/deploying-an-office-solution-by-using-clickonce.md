@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673065"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Vaše řešení pro Office v méně kroků můžete nasadit, když použijete ClickOnce. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*MSI*) je-li více než jeden uživatel vaše řešení bude používat ve stejném počítači.  
@@ -86,7 +86,7 @@ ms.locfileid: "49859366"
 9. Pokud vaše řešení cílí na rozhraní .NET Framework 4.5, také vybrat **Visual Studio 2010 Tools for Office Runtime** zaškrtávací políčko.  
 
     > [!NOTE]  
-    >  Ve výchozím nastavení toto zaškrtávací políčko nezobrazuje. Aby se toto zaškrtávací políčko zobrazilo, je nutné vytvořit balíček zaváděcího nástroje. Zobrazit [vytvoření balíčku zaváděcího nástroje pro Office 2013 VSTO doplněk pomocí Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Ve výchozím nastavení toto zaškrtávací políčko nezobrazuje. Aby se toto zaškrtávací políčko zobrazilo, je nutné vytvořit balíček zaváděcího nástroje. Zobrazit [vytvoření balíčku zaváděcího nástroje pro Office 2013 VSTO doplněk pomocí Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).  
 
 10. V části **Zadejte prosím umístění pro nainstalování součástí**, zvolte jednu z možností, které se zobrazí a klikněte na tlačítko **OK** tlačítko.  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859366"
 |Kód chyby|Definice|  
 |----------------|----------------|  
 |0|Řešení bylo úspěšně nainstalováno či odinstalováno nebo se zobrazila nápověda nástroje VSTOInstaller.|  
-|-100|Jeden nebo více parametrů příkazového řádku není platných nebo byly nastaveny více než jedenkrát. Další informace, zadejte "vstoinstaller /?" nebo se podívejte [vytvoření vlastního instalátoru pro řešení ClickOnce Office](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Jeden nebo více parametrů příkazového řádku není platných nebo byly nastaveny více než jedenkrát. Další informace, zadejte "vstoinstaller /?" nebo se podívejte [vytvoření vlastního instalátoru pro řešení ClickOnce Office](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Jeden nebo více parametrů příkazového řádku není platná. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|  
 |-200|Identifikátor URI manifestu nasazení není platná. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|  
 |-201|Řešení nelze nainstalovat, protože manifest nasazení není platná. Zobrazit [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859366"
 ## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Publikování řešení pro systém Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Postupy: Instalace řešení ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [Postupy: publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Vytvoření vlastního instalátoru pro řešení office ClickOnce](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Postupy: publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [Postupy: Instalace řešení ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [Postupy: publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Vytvoření vlastního instalátoru pro řešení office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

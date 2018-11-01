@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 3e38fb09f77d7c00d2764ca181a604b3e25c264b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672974"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
@@ -128,4 +128,4 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 
 - [A tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md)
 - [Klávesové zkratky (služby Azure DevOps a TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog tipů a triků Visual Studio](http://blogs.msdn.com/b/zainnab)
+- [Blog tipů a triků Visual Studio](https://blogs.msdn.com/b/zainnab)

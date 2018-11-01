@@ -4,12 +4,12 @@ hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
-ms.openlocfilehash: b7816ba239b0624aaf46792bcb0c62aefa4809c4
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244356"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672866"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -685,7 +685,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833086">
+                                <a href="/visualstudio/azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

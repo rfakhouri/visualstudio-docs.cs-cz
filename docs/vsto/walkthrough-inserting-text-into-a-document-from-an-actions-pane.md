@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862187"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671856"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Návod: Vložení textu do dokumentu z podokna akcí
   Tento návod ukazuje, jak vytvořit podokna akcí v dokumentu aplikace Microsoft Office Word. V podokně Akce obsahuje dva ovládací prvky, shromažďovat vstup a odešlete textu do dokumentu.  
@@ -178,14 +178,14 @@ ms.locfileid: "49862187"
 ## <a name="next-steps"></a>Další kroky  
  Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Vytvořte podokna akcí v aplikaci Excel. Další informace najdete v tématu [postupy: Přidání podokna akcí k Excelovým sešitům](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Vytvořte podokna akcí v aplikaci Excel. Další informace najdete v tématu [postupy: Přidání podokna akcí k Excelovým sešitům](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
 -   Vytvoření vazby dat k ovládacím prvkům v podokně Akce. Další informace najdete v tématu [návod: vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)   
  [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Postupy: Přidání podokna akcí k Excelovým sešitům](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [Postupy: Přidání podokna akcí k Excelovým sešitům](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [Postupy: Správa rozložení ovládacích prvků v podoknech akcí](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)  
   

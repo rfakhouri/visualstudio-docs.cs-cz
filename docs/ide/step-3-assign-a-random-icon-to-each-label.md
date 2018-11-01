@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 593d778247e3c1e6b9a09358c82b5fd7139cfbb9
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672909"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony
 Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna náročné. Abyste tomu předešli, přiřaďte ikony náhodně k ovládacím prvkům popisku ve formuláři pomocí `AssignIconsToSquares()` metody.
@@ -47,9 +47,9 @@ Pokud se ikony každou hru zobrazí ve stejných buňkách, není to zrovna nár
 
      První řádek převede **ovládací prvek** proměnné pro popisek s názvem **iconLabel**. Následující řádek, který je `if` příkaz, který zkontroluje, ujistěte se, že převod pracovali. Pokud byl převod úspěšný, příkazy `if` příkaz spustit. (Jak si pravděpodobně pamatujete z předchozích tutoriálů, `if` prohlášení se používá k vyhodnocení libovolné podmínky.) První řádek `if` příkaz vytvoří proměnnou s názvem **nahodneCislo** , která obsahuje náhodné číslo, které odpovídá jedné z položek v seznamu ikon. K tomu použije <xref:System.Random.Next> metodu <xref:System.Random> objekt, který jste vytvořili dříve. `Next` Metoda vrátí náhodné číslo. Tento řádek také používá <xref:System.Collections.Generic.List%601.Count> vlastnost **ikony** seznamu k určení rozsahu, ze kterého se náhodné číslo vybere. Další řádek přiřadí jednu ikony položky seznamu <xref:System.Windows.Forms.Label.Text> popisku. Komentovaný řádek je vysvětlen později v tomto tématu. Nakonec poslední řádek v `if` příkaz odebere ze seznamu ikonu, která byla přidána do formuláře.
 
-     Nezapomeňte, že pokud si nejste jisti, co dělá některá část kódu, můžete umístit ukazatel myši nad prvek kódu a přečíst si zobrazený popisek. Můžete také krokovat po řádcích kódu, zatímco je program spuštěn pomocí ladicího programu sady Visual Studio. Zobrazit [jak na to: krokování s ladicím programem v sadě Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx) nebo [Navigovat prostřednictvím kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md) Další informace.
+     Nezapomeňte, že pokud si nejste jisti, co dělá některá část kódu, můžete umístit ukazatel myši nad prvek kódu a přečíst si zobrazený popisek. Můžete také krokovat po řádcích kódu, zatímco je program spuštěn pomocí ladicího programu sady Visual Studio. Zobrazit [jak na to: krokování s ladicím programem v sadě Visual Studio?](https://msdn.microsoft.com/vstudio/ee672313.aspx) nebo [Navigovat prostřednictvím kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md) Další informace.
 
-3.  Pokud chcete zaplnit hrací plochu ikonami, je potřeba volat `AssignIconsToSquares()` metoda co nejdříve po spuštění programu. Pokud používáte jazyk Visual C#, přidejte příkaz pod volání `InitializeComponent()` metodu **Form1**_konstruktor_, aby formulář volal vaši novou metodu pro vlastní nastavení, než se zobrazí. Konstruktory jsou volány při vytváření nového objektu, například třídy nebo struktury. Zobrazit [konstruktory (C# programováním)](http://msdn.microsoft.com/library/ace5hbzh.aspx) nebo [použijte konstruktory a destruktory](http://msdn.microsoft.com/library/2z08e49e.aspx) v jazyce Visual Basic pro další informace.
+3.  Pokud chcete zaplnit hrací plochu ikonami, je potřeba volat `AssignIconsToSquares()` metoda co nejdříve po spuštění programu. Pokud používáte jazyk Visual C#, přidejte příkaz pod volání `InitializeComponent()` metodu **Form1**_konstruktor_, aby formulář volal vaši novou metodu pro vlastní nastavení, než se zobrazí. Konstruktory jsou volány při vytváření nového objektu, například třídy nebo struktury. Zobrazit [konstruktory (C# programováním)](/dotnet/csharp/programming-guide/classes-and-structs/constructors) nebo [použijte konstruktory a destruktory](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\)) v jazyce Visual Basic pro další informace.
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671804"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka
 
@@ -28,7 +28,7 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následu
 
 Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnost chcete, zvolte **kartu** stisknutím klávesy. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.
 
-![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx). Toto video používá starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). Toto video používá starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Vytvoření kódu pro zobrazení obslužné rutiny události obrázku tlačítka
 
@@ -48,7 +48,7 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
 
     2.  **IntelliSense** okno se otevře a zobrazí **openFileDialog1**. Zvolte **kartu** stisknutím klávesy. (V jazyce Visual Basic začíná počátečním velkým písmenem, takže se zobrazí **OpenFileDialog1**. Ujistěte se, že **OpenFileDialog1** je vybrán.)
 
-         Další informace o `OpenFileDialog`, naleznete v tématu [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
+         Další informace o `OpenFileDialog`, naleznete v tématu [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
     3.  Zadejte tečku (`.`) (mnoho programátorů to tečku.) Protože jste zadali tečku ihned po **openFileDialog1**, **IntelliSense** otevře se okno vyplněné se všemi **OpenFileDialog** vlastnostmi a metodami komponenty. Jedná se o stejné vlastnosti, které se zobrazují v **vlastnosti** okno, když je vyberete v **Návrháře formulářů Windows**. Můžete také metody, které říct komponentě, aby provedla věci (jako je otevření dialogového okna).
 
@@ -63,7 +63,7 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
 
     4.  Začněte zadáním `ShowDialog` (malá a velká písmena nejsou důležitá pro technologii IntelliSense). `ShowDialog()` Metoda se zobrazí **otevřít soubor** dialogové okno. Poté, co okno zvýraznilo **ShowDialog**, zvolte **kartu** klíč. Můžete také zvýraznit "ShowDialog" a zvolte **F1** klíč pro něj zobrazit nápovědu.
 
-         Další informace o `ShowDialog()` metodu, najdete v článku [metody ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).
+         Další informace o `ShowDialog()` metodu, najdete v článku [metody ShowDialog](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
     5.  Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` by měl nyní vypadat takto: "openFileDialog1.ShowDialog()".
 
@@ -79,7 +79,7 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
 
     8.  Zadejte tečku k otevření hodnotu DialogResult **IntelliSense** okna. Zadejte písmeno `O` a zvolte **kartu** klíče pro vložení **OK**.
 
-         Další informace o DialogResult najdete v tématu [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).
+         Další informace o DialogResult najdete v tématu [DialogResult](<xref:System.Windows.Forms.DialogResult>).
 
         > [!NOTE]
         >  První řádek kódu by měl být úplný. Pro jazyk Visual C# to mělo být jako následující.

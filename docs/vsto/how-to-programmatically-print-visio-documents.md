@@ -16,36 +16,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6beed729ed670d5f34c645575795b625e03e9583
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257502"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671219"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Postupy: tisk dokumentů aplikace Visio prostřednictvím kódu programu
-  Můžete vytisknout dokončení dokument aplikace Microsoft Office Visio nebo pouze konkrétní stránky.  
+  Můžete vytisknout úplné dokumentu aplikace Microsoft Office Visio nebo pouze konkrétní stránku.  
   
- Podrobnosti o tiskové metod najdete v tématu referenční dokumentaci VBA pro [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) metoda a [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) – metoda .  
+ Podrobné informace o tiskových metodách, naleznete v referenční dokumentaci VBA pro [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) metoda a [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) – metoda .  
   
 ## <a name="print-a-visio-document"></a>Tisk dokumentů aplikace Visio  
   
-### <a name="to-print-a-complete-document"></a>Tisk dokončení dokumentu  
+### <a name="to-print-a-complete-document"></a>K vytištění celého dokumentu  
   
 -   Volání `Microsoft.Office.Interop.Visio.Document.Print` metodu `Microsoft.Office.Interop.Visio.Document` objekt, který chcete vytisknout.  
   
-     Následující příklad kódu Vytiskne aktivní dokument. Pokud chcete použít v tomto příkladu, spustit kód `ThisAddIn` třídy ve vašem projektu.  
+     Následující příklad kódu zobrazí aktivní dokument. Pokud chcete použít tento příklad, spusťte kód z `ThisAddIn` třídu ve vašem projektu.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#8)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#8](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#8)]  
   
-## <a name="print-a-page-of-a-visio-document"></a>Tisk – stránka dokumentů aplikace Visio  
+## <a name="print-a-page-of-a-visio-document"></a>Vytisknout stránku dokumentů aplikace Visio  
   
 ### <a name="to-print-a-page-of-a-document"></a>K tisku stránky z dokumentu  
   
 -   Volání `Microsoft.Office.Interop.Visio.Pages.Print` metodu `Microsoft.Office.Interop.Visio.Pages` objekt, který chcete vytisknout.  
   
-     Následující příklad kódu se vytiskne na první stránku aktivní dokument. Pokud chcete použít v tomto příkladu, spustit kód `ThisAddIn` třídy ve vašem projektu.  
+     Následující příklad kódu zobrazí první stránka aktivní dokument. Pokud chcete použít tento příklad, spusťte kód z `ThisAddIn` třídu ve vašem projektu.  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#9)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#9)]  

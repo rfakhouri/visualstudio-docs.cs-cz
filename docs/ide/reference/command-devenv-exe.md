@@ -1,5 +1,5 @@
 ---
-title: – Příkaz (devenv.exe)
+title: -Command (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1d6d2c5355fbce44bbb97a33e21ad623997ddceb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703743"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670803"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 Provede zadaný příkaz po spuštění [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE).
@@ -30,15 +30,15 @@ devenv /command CommandName
 ```
 
 ## <a name="arguments"></a>Arguments
- `CommandName` Vyžaduje se. Úplný název [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] příkaz nebo jeho alias uzavřena v uvozovkách. Další informace o příkazu a alias syntaxi najdete v tématu [příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md).
+ `CommandName` Povinné. Úplný název [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] příkaz nebo jeho alias uzavřený v dvojitých uvozovkách. Další informace o syntaxi příkazů a aliasů naleznete v tématu [příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Poznámky
- Po dokončení spuštění prostředí IDE provede příkaz s názvem. Pokud chcete použít tento přepínač, rozhraní IDE nejsou zobrazeny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] – úvodní stránka při spuštění.
+ Po dokončení spuštění IDE spustí pojmenovaný příkaz. Pokud použijete tento přepínač, rozhraní IDE nezobrazí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] úvodní stránku při spuštění.
 
- Pokud doplněk zpřístupní příkaz, můžete tento přepínač pro spuštění add-in z příkazového řádku. Další informace najdete v tématu [postupy: řízení doplňky s použitím správce Add-In](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
+ Pokud doplněk vystavuje příkaz, můžete použít tento přepínač se spustit doplněk z příkazového řádku. Další informace najdete v tématu [postupy: řízení doplňků pomocí Správce doplňků](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 
 ## <a name="example"></a>Příklad
- Tento příklad spustí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a automaticky spustí makro otevřených souborů oblíbených položek.
+ Tento příklad spustí aplikaci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a automaticky spustí makro otevřít oblíbené soubory.
 
 ```cmd
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"

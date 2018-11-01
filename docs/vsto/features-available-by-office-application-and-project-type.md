@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672453"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Zadejte dostupné funkce podle aplikace systému Office a projektu
   Visual Studio obsahuje několik typů šablon projektů, které podporují různé obchodní scénáře pro aplikace Microsoft Office, včetně následujících typů:  
@@ -62,9 +62,9 @@ ms.locfileid: "49929852"
 |Vystavení objektu v doplňku VSTO pro ostatní řešení pro Microsoft Office.|Add-in projekty VSTO.|[Volání kódu v doplňcích VSTO z jiných řešení pro Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |Následující hostitelské ovládací prvky:<br /><br /> -Grafu<br />-ListObject<br />-NamedRange<br />– Ovládací prvky obsahu<br />– Záložky|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO pro Word a Excel.|[Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)|  
 |Následující hostitelské ovládací prvky:<br /><br /> – Xmlmappedrange –<br />-XMLNode<br />– XmlNodes –|Projekty na úrovni dokumentu.|[Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)|  
-|Nasazení více projekty.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Nasazení více řešení pro systém Office v jeden instalační program ClickOnce](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|Nasazení více projekty.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Nasazení více řešení pro systém Office v jeden instalační program ClickOnce](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Oblastí formulářů aplikace Outlook.|Add-in projekty VSTO pro Outlook.|[Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)|  
-|Akce po nasazení.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Zkopírujte dokument do počítače koncového uživatele po dokončení instalace ClickOnce](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|Akce po nasazení.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO.|[Návod: Zkopírujte dokument do počítače koncového uživatele po dokončení instalace ClickOnce](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |Přizpůsobení pásu karet.|Projekty na úrovni dokumentu.<br /><br /> Add-in projekty VSTO v následujících aplikacích:<br /><br /> – Excel<br />-InfoPath (InfoPath 2013 a InfoPath 2010 jenom)<br />-Aplikace outlook<br />-PowerPoint<br />– Projekt<br />-Aplikace Visio<br />-Aplikace Word|[Přehled pásu karet](../vsto/ribbon-overview.md)|  
 |Návrhář Visual dokumentu.|Projekty na úrovni dokumentu.|[Projekty pro Office v prostředí Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

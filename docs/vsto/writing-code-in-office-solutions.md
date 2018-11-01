@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675854"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670985"
 ---
 # <a name="write-code-in-office-solutions"></a>Psaní kódu v řešeních pro systém Office
   Existují některé aspekty psaní kódu v projektech Office, které se liší od ostatních typů projektů v sadě Visual Studio. Mnohé z těchto rozdílů jsou týkající se způsobu, jakým Office – objektové modely jsou přístupné pro spravovaný kód. Další rozdíly v návrhu projektů Office souvisejí.  
@@ -62,7 +62,7 @@ ms.locfileid: "35675854"
  Sestavení PIA sady Office nejsou vyžadovány v počítačích koncových uživatelů ke spuštění řešení pro systém Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější. Další informace najdete v tématu [návrhu a vytvořte řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>Použít typy v sestavení primární spolupráce  
- Sestavení PIA sady Office obsahovat kombinaci typů, které zveřejňují objektový model aplikace Office a další infrastrukturu typy, které nejsou určeny k použití přímo ve vašem kódu. Přehled typů v sestavení PIA sady Office naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
+ Sestavení PIA sady Office obsahovat kombinaci typů, které zveřejňují objektový model aplikace Office a další infrastrukturu typy, které nejsou určeny k použití přímo ve vašem kódu. Přehled typů v sestavení PIA sady Office naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).  
   
  Vzhledem k tomu, že typy v sestavení PIA sady Office odpovídají typům v modelech objektů založené na modelu COM, je často způsob, jak používat tyto typy liší od jiné spravované typy. Způsob volání metody, které mají volitelné parametry v sestavení primární spolupráce Office, například závisí na programovací jazyk, který používáte ve vašem projektu. Další informace naleznete v následujících tématech:  
   

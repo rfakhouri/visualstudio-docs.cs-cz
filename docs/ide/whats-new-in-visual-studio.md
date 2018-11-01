@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029105"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673027"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -212,7 +212,7 @@ Nového pomocníka výjimky umožňuje zobrazit vaše výjimka informace na pře
 
 ![Dialog nového pomocníka výjimky v sadě Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Další informace najdete v tématu [pomocí nového pomocníka výjimky v sadě Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blogový příspěvek.
+Další informace najdete v tématu [pomocí nového pomocníka výjimky v sadě Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) blogový příspěvek.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Snímky a zpětného kroku IntelliTrace
 
@@ -264,7 +264,7 @@ Univerzální platforma Windows (UPW) je platforma aplikací pro Windows 10. Mů
 
 Zvolte si jazyk oblíbeným vývojovým&mdash;z jazyka C#, Visual Basic, C++ nebo JavaScript&mdash;k vytvoření aplikace pro univerzální platformu Windows pro zařízení s Windows 10. Visual Studio 2017 obsahuje šablony aplikace UPW pro každý jazyk, který umožňuje vytvořit jeden projekt pro všechna zařízení. Po dokončení práce můžete vytvořit balíček aplikace a odeslat ji na Microsoft Store ze sady Visual Studio k aplikaci dostat k zákazníkům na všechna zařízení s Windows 10.
 
-**Nové ve verzi 15.5**: Visual Studio 2017 verze 15.5 poskytuje nejlepší podpora pro Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update přináší také celou řadu vylepšení pro vývojáře na UPW. Tady jsou některé z největších změn: 
+**Nové ve verzi 15.5**: Visual Studio 2017 verze 15.5 poskytuje nejlepší podpora pro Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update přináší také celou řadu vylepšení pro vývojáře na UPW. Tady jsou některé z největších změn: 
 
 * **Podpora pro .NET Standard 2.0**<br/>Kromě zjednodušené aplikace nasazení Windows 10 Fall Creators Update je první verze Windows 10 k zajištění podpory .NET Standard 2.0. Efektivně [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) je referenční implementace v knihovně základních tříd, které můžete implementovat libovolnou platformu .NET. Cílem .NET Standard je k tomu, aby co nejrychleji pro vývojáře na platformě .NET a sdílejte kód na libovolné platformě .NET, kterou si pro práci na.
 * **To nejlepší z UPW a prostředí Win32**<br/>Vylepšili jsme platformu Windows 10 s [přemostění na Desktop](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) Chcete vylepšit Windows 10 pro všechny vývojáře na platformě .NET, zda je jejich aktuální fokus na UPW, WPF, Windows Forms nebo Xamarin. Pomocí nového typu aplikace balení projektu v sadě Visual Studio 2017 verze 15.5 můžete vytvořit balíčky aplikací pro Windows pro projekty WPF nebo Windows Forms, stejně jako pro projekty UWP. Po aplikaci zabalit, všechny aplikace pro Windows 10, získáte výhody nasazení a mít možnost distribuovat přes Microsoft Store (pro zákaznické aplikace) nebo Microsoft Store pro firmy a vzdělávání. Protože zabalené aplikace mají přístup k úplné surface UPW rozhraní API a rozhraní API systému Win32 ve stolním počítači, můžete nyní modernizovat aplikace WPF a Windows Forms postupně pomocí funkcí rozhraní API pro UPW a Windows 10. Kromě toho může obsahovat vaše komponenty Win32 ve svých aplikacích UPW, které bylo možné ve stolním počítači se všemi funkcemi Win32.
@@ -285,7 +285,7 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
 ![Editor oprávnění pro Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
-### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
+### <a name="visual-studio-tools-for-xamarin"></a>Nástroje sady Visual Studio pro Xamarin
 
 **Nové ve verzi 15.4**: Xamarin Live umožňuje vývojářům nepřetržitě nasazovat, testování a ladit své aplikace přímo na zařízeních s Androidem a iOS. Po stažení Xamarin Live Player&mdash;k dispozici v App Store nebo Google Play&mdash;můžete spárovat své zařízení se sadou Visual Studio a zásadně zlepšit způsob, jak sestavovat mobilní aplikace. Tato funkce je teď zahrnutá v sadě Visual Studio a jde povolit v nabídce **Nástroje** > **Možnosti** > **Xamarin** > **Jiné** > **Povolit Xamarin Live Player**.
 

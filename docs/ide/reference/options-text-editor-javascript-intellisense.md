@@ -1,6 +1,6 @@
 ---
 title: Možnosti, textový editor, JavaScript, IntelliSense
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,54 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ca451f4585e57c430456412e1811ddb56d8adf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 742d6394975b6920218579e1b4652bb2e99c479c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670777"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Možnosti, textový editor, JavaScript, IntelliSense
-Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastavení, které ovlivňují chování technologie IntelliSense pro JavaScript. Můžete přistupovat **IntelliSense** stránky výběrem **nástroje**, **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**,  **JavaScript**, **technologie IntelliSense.**
+Použití **IntelliSense** stránku **možnosti** dialogové okno Upravit nastavení, které ovlivňují chování technologie IntelliSense pro JavaScript. Můžete přistupovat **IntelliSense** stránky výběrem **nástroje** > **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**  >  **JavaScript** > **technologie IntelliSense.**
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 **IntelliSense** stránka obsahuje následující části:
 
-## <a name="validation"></a>Ověřování
- Pomocí těchto možností můžete nastavit předvolby toho, jak editor kódu JavaScript validuje syntaxi v dokumentu.
-
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- **Zobrazit syntaktické chyby**
-
- Pokud toto políčko není zaškrtnuto, nezobrazuje editor kódu JavaScript žádné chyby syntaxe. To je užitečné, pokud pracujete s kódem, který jste nenapsali a nehodláte opravovat chyby syntaxe.
-
- Pokud je toto políčko zaškrtnuto, máte možnost vybrat si **zobrazit chyby jako upozornění** zaškrtávací políčko.
-
- **Zobrazit chyby jako upozornění**
-
- Je-li toto políčko zaškrtnuto, zobrazují se chyby kódu JavaScript jako upozornění a nikoli jako chyby v seznamu chyb.
-
- **Stáhnout vzdálené odkazy (např. http://) pro soubory v ostatních souborech projektu**
-
- Pokud je toto políčko zaškrtnuto a soubor s kódem JavaScript je otevřen mimo kontext projektu, stáhne Visual Studio vzdálené soubory jazyka JavaScript odkazované v tomto souboru za účelem získání informací technologie IntelliSense. Při výběru této možnosti se soubory stáhnou, pokud je vložíte jako referenci do souboru s kódem JavaScript.
-
-> [!NOTE]
-> Pro webové projekty se ve výchozím nastavení stáhnou vzdálené soubory v projektu.
-
-
 ## <a name="statement-completion"></a>Doplňování výrazů
  Tyto možnosti slouží ke změně chování při doplňování výrazů technologie IntelliSense.
 
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
- **Pouze použijte tabulátor nebo enter k potvrzení**
+### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+ **Pouze použijte tabulátor nebo Enter k potvrzení**
 
- Je-li toto políčko zaškrtnuto, doplňuje editor kódu JavaScript příkazy položkami vybranými v seznamu doplňování až po stisknutí klávesy Tab nebo Enter. Pokud není zaškrtnuto, mohou se příkazy doplňovat vybranými položkami také při použití jiných znaků, jako je tečka, čárka, dvojtečka, levá závorka a levá složená závorka ({).
+ Když toto políčko zaškrtnete, připojí editor kódu JavaScript příkazy položkami vybranými v seznamu doplňování až poté, co vyberete **kartu** nebo **Enter** klíč. Když zrušíte zaškrtnutí tohoto políčka, jiné znaky – například období, čárka, dvojtečka, levou (otevírací) a levou složenou závorku ({}) – lze také se příkazy doplňovat vybranými položkami.
 
 ## <a name="references"></a>Odkazy
  Pomocí těchto možností lze určit typy souborů .js technologie IntelliSense, které jsou v oboru pro různé typy projektů jazyka JavaScript. Reference IntelliSense se zpravidla používají k zajištění podpory IntelliSense pro globální objekty. Tato stránka navíc umožňuje nastavit pořadí načítání skriptů, které musejí být načteny při spuštění, a přidat soubory s rozšířením IntelliSense.
 
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+### <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
  **Referenční skupiny**
 
  Tato možnost určuje typ referenční skupiny. Jsou podporovány tři referenční skupiny:
@@ -87,6 +65,15 @@ Tato možnost určuje pořadí, v jakém se soubory načítají do kontextu jaz
 **Přidat odkaz na aktuální skupinu**
 
 Tato možnost poskytuje způsob, jak přidat další soubory .js technologie IntelliSense vyhledáním příslušných souborů.
+
+**Stáhnout vzdálené odkazy (např. http://) pro soubory v ostatních souborech projektu**
+
+Když je toto políčko zaškrtnuto a máte soubor jazyka JavaScript, který je otevřen mimo kontext projektu, stáhne Visual Studio vzdálené soubory jazyka JavaScript odkazované v tomto souboru za účelem získání informací technologie IntelliSense. Pokud je vybraná tato možnost, budou staženy soubory, pokud je vložíte jako referenci do souboru s kódem JavaScript.
+
+> [!NOTE]
+> Pro webové projekty se ve výchozím nastavení stáhnou vzdálené soubory v projektu.
+
+
 
 ## <a name="see-also"></a>Viz také
 

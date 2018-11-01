@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073738"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671986"
 ---
 # <a name="visual-studio-product-feedback"></a>Názor na produkt Visual Studio
 
@@ -54,7 +54,7 @@ Služby odborné pomoci společnosti Microsoft se řídí aktuálními cenami, t
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>Chci Zapojte se do komunity vývojářů
 
-Pokud chcete sdílet vaše otázky a odpovědi s ostatními vývojáři, použijte [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com) lokality, [DISKUZNÍ fóra MSDN](http://social.msdn.microsoft.com/Forums/home), nebo [StackOverflow](http://stackoverflow.com/). Můžete také zobrazit kód od jiných vývojářů a sdílet své vlastní příklady na [ukázky kódu vývojáře](http://code.msdn.microsoft.com/) lokality.
+Pokud chcete sdílet vaše otázky a odpovědi s ostatními vývojáři, použijte [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com) lokality, [DISKUZNÍ fóra MSDN](https://social.msdn.microsoft.com/Forums/home), nebo [StackOverflow](http://stackoverflow.com/). Můžete také zobrazit kód od jiných vývojářů a sdílet své vlastní příklady na [ukázky kódu vývojáře](https://code.msdn.microsoft.com/) lokality.
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>Chci Pomozte nám vylepšit dokumentaci k sadě Visual Studio
 

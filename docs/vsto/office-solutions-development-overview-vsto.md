@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842661"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672623"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Přehled vývoje řešení pro Office (VSTO)
   Pomocí aplikace Microsoft Office jako front-endu řešení, můžete využít známé uživatelské rozhraní aplikace Microsoft Office a nástrojů, jako jsou funkce zpracování textu ve Wordu, funkce pro analýzu dat aplikace Excel a funkcím pro správu e-mailu aplikace Outlook . Můžete vyvíjet řešení v sadě Visual Studio k přizpůsobení aplikace Office a přidejte konkrétní funkce, které potřebujete pro své podnikové procesy. Například můžete zapnout Word do smlouvy generátor, který sestaví kontrakty si již existující částí, které mohou být provedeny upravovatelného nebo nejde upravit. Pomocí aplikace Excel můžete vytvořit přizpůsobené pro různé projekty listu aplikace automatizované rozpočtu. Uživatelům můžete taky využít řešení pro systém office v režimu offline, což je komplexní řešení více praktické, než by se použily, pokud používáte architekturu založenou na web.  
@@ -83,7 +83,7 @@ ms.locfileid: "49842661"
  Použít ClickOnce nebo instalační služby systému Windows k nasazení řešení, které vytvoříte pomocí nástrojů pro vývoj pro Office v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. ClickOnce – nasazení umožňuje vytvářet řešení automatických aktualizací, které mohou být nainstalovány a spuštění vyžadují minimální interakci uživatele. Instalační služby systému Windows (*MSI*) soubory mohou být snadno distribuovat do počítače koncového uživatele, nebo distribuována pomocí Systems Management Server (SMS). Další informace o nasazení řešení VSTO Office najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ### <a name="install-prerequisites"></a>Instalace požadovaných součástí  
- Koncoví uživatelé mohli spustit řešení můžete vytvořit pomocí nástrojů pro vývoj pro Office v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], jejich počítače musí mít nainstalovány některé požadované součásti. Pokud vaše řešení nasadit, s použitím technologie ClickOnce nebo vytvořením souboru Instalační služby systému Windows, tyto požadavky lze nainstalovat v rámci řešení. Další informace najdete v tématu [požadavky řešení Office na nasazení](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) a [postupy: instalace požadovaných součástí na počítačích koncových uživatelů, které spouštějí řešení Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+ Koncoví uživatelé mohli spustit řešení můžete vytvořit pomocí nástrojů pro vývoj pro Office v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], jejich počítače musí mít nainstalovány některé požadované součásti. Pokud vaše řešení nasadit, s použitím technologie ClickOnce nebo vytvořením souboru Instalační služby systému Windows, tyto požadavky lze nainstalovat v rámci řešení. Další informace najdete v tématu [požadavky řešení Office na nasazení](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) a [postupy: instalace požadovaných součástí na počítačích koncových uživatelů, které spouštějí řešení Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 ### <a name="security"></a>Zabezpečení  
  Zabezpečení pro řešení pro systém Office VSTO jsou vynuceny řadu kontroluje, zda [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] při instalaci a načtení řešení. Mezi tyto kontroly patří ověření, zda je umístění manifestu nasazení důvěryhodné nebo určuje, zda je důvěryhodný certifikát použitý k podepsání manifestu nasazení. Další informace najdete v tématu [řešení pro systém Office zabezpečení](../vsto/securing-office-solutions.md).  

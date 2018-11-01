@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 5dfa0ad9b27b94c472feabc0e202bd9eee58f08d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670907"
 ---
 # <a name="grant-trust-to-documents"></a>Zajistit jeho důvěryhodnost do dokumentů
   Úrovni dokumentu projekt má stejné požadavky na zabezpečení jako projekty na úrovni aplikace: podepisování manifestů s certifikátem nebo kliknutím na výzvu vztahu důvěryhodnosti. Kromě toho dokumentem nebo sešitem, musí být umístěn v adresáři, který je určený jako důvěryhodného umístění.  
@@ -44,7 +44,7 @@ ms.locfileid: "49073438"
   
 -   I když samotný dokument je důvěryhodný pro používání důvěryhodných umístění, další oprávnění jsou nutná k přizpůsobení důvěřovat. Můžete udělit úplný vztah důvěryhodnosti k přizpůsobení pomocí podepisování manifestů s certifikátem, klepnutím na výzvu vztahu důvěryhodnosti nebo instalací řešení Office tak, aby *Program Files* adresáře.  
   
--   Můžete ukládat dokumentem nebo sešitem, řešení úrovni dokumentu ve stejném adresáři jako sestavení nebo v jiném adresáři. Například dokument může nacházet na serveru SharePoint server a sestavení nebyly nalezeny ve sdílené síti. Další informace najdete v tématu [postupy: publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Můžete ukládat dokumentem nebo sešitem, řešení úrovni dokumentu ve stejném adresáři jako sestavení nebo v jiném adresáři. Například dokument může nacházet na serveru SharePoint server a sestavení nebyly nalezeny ve sdílené síti. Další informace najdete v tématu [postupy: publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Viz také:  
  [Zajistit jeho důvěryhodnost do řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)   

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671090"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Osvědčené postupy při vývoji pro modelu COM, VSTO a VBA doplňky sady Office
   Pokud vyvíjíte modelu COM, VSTO nebo VBA doplňky pro Office, dodržujte doporučené postupy vývoje popsaných v tomto článku.   To vám pomůže zajistit:
@@ -39,12 +39,12 @@ Pokud vaše řešení používá rozhraní .NET 4.0 nebo novější, použijte v
 Pokud vaše řešení používá starší verzi rozhraní .NET, doporučujeme aktualizovat vaše řešení, aby používalo rozhraní .NET 4.0 nebo novější. Pomocí rozhraní .NET 4.0 nebo novější snižuje požadavky na modul runtime na novější verze systému Windows.
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>Vyhněte se v závislosti na konkrétní verze sady Office  
-Pokud vaše řešení používá funkce, které jsou k dispozici v novějších verzích Office, ověřte, zda funkce existuje (Pokud je to možné, na úrovni funkcí) za běhu (například používání výjimek zpracování nebo kontrolou verze). Ověřit minimální verze, místo konkrétních verzí, pomocí rozhraní API podporované v objektovém modelu, jako [Application.Version vlastnost](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx). Nedoporučujeme, protože ty můžete změnit mezi instalací, prostředí a verzí spoléhat na Office binární metadat instalačními cestami a klíče registru.
+Pokud vaše řešení používá funkce, které jsou k dispozici v novějších verzích Office, ověřte, zda funkce existuje (Pokud je to možné, na úrovni funkcí) za běhu (například používání výjimek zpracování nebo kontrolou verze). Ověřit minimální verze, místo konkrétních verzí, pomocí rozhraní API podporované v objektovém modelu, jako [Application.Version vlastnost](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>). Nedoporučujeme, protože ty můžete změnit mezi instalací, prostředí a verzí spoléhat na Office binární metadat instalačními cestami a klíče registru.
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Povolit používání 32bitová verze a 64bitová verze Office   
 Výchozí cíl sestavení by měly podporovat (x86) 32bitové a 64bitové (x64), pokud vaše řešení závisí na knihovny, které jsou dostupné jenom pro konkrétní bitové verze. Přijetí, zejména v prostředích velký objem dat roste 64bitovou verzi systému Office. Podporuje 32bitové i 64bitové usnadňuje uživatelům přechod mezi 32bitové a 64bitové verze systému Office.
 
-Když píšete kód VBA, použití 64-bit deklarovat příkazy a převod proměnné podle potřeby. Dále ověřte, že dokumenty lze sdílet mezi uživateli, kteří používají 32bitové nebo 64bitové verze Office tím, že poskytuje kód pro každý bitové verze. Další informace najdete v tématu [64bitovým kompilátorem jazyka Visual Basic for applications – přehled](https://msdn.microsoft.com/library/office/gg264421.aspx).
+Když píšete kód VBA, použití 64-bit deklarovat příkazy a převod proměnné podle potřeby. Dále ověřte, že dokumenty lze sdílet mezi uživateli, kteří používají 32bitové nebo 64bitové verze Office tím, že poskytuje kód pro každý bitové verze. Další informace najdete v tématu [64bitovým kompilátorem jazyka Visual Basic for applications – přehled](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview).
 
 ## <a name="support-restricted-environments"></a>Podporu prostředí s omezeným přístupem   
 Vaše řešení, neměli byste potřebovat oprávnění správce nebo uživatel účtu ke zvýšení úrovně oprávnění. Kromě toho řešení neměl záviset na nastavení nebo změna:

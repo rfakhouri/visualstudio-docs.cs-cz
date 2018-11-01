@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671700"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Vývoj pro Office a SharePoint v sadě Visual Studio
   Můžete rozšířit vytvořením jednoduché aplikace Microsoft Office a SharePoint nebo doplněk, že uživatelé stahovat z [Office Store](https://store.office.com/) nebo organizace katalogu nebo vytvořením řešení založené na rozhraní .NET Framework, které uživatelé nainstalovat počítač.  
@@ -45,7 +45,7 @@ ms.locfileid: "35676596"
 ##  <a name="Apps"></a> Vytváření doplňků pro Office a SharePoint  
  Office 2013 a SharePoint 2013 zavést nový doplněk model, který pomáhá vytvářet, distribuovat a finančně zhodnotit doplňky, které rozšiřují Office a SharePoint.  Tyto doplňky můžete spustit v Office nebo SharePoint Online a mohou uživatelé komunikovat s nimi z mnoha zařízení.  
   
- Zjistěte, jak používat nové [modelu doplňku Office](https://msdn.microsoft.com/library/office/jj220082.aspx) rozšířit možnosti Office pro uživatele.  
+ Zjistěte, jak používat nové [modelu doplňku Office](/office/dev/add-ins/overview/office-add-ins) rozšířit možnosti Office pro uživatele.  
   
  Tyto doplňky mají malé pracovníkům v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  Abyste mohli začít, použijte nástroje Office Developer Tools v sadě Visual Studio nebo jednoduchý webový nástroj s dřívějším kódovým Napa Office 365 vývojářské nástroje, které vám umožní vytvářet projekty, psát kód a spusťte doplňky v prohlížeči.  
   
@@ -64,8 +64,8 @@ ms.locfileid: "35676596"
   
 |Chcete-li|Další informace naleznete v tématu|  
 |--------|---------|  
-|Další informace o doplňků Office a následně vytvořit jeden.|[Doplňky pro Office](http://msdn.microsoft.com/office/dn448457)|  
-|Porovnejte různé způsoby, ve kterém můžete rozšířit Office a rozhodnout, zda by měl používat aplikaci nebo doplněk aplikace Office.|[Plán pro doplňky Office, VSTO a VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|Další informace o doplňků Office a následně vytvořit jeden.|[Doplňky pro Office](/office/dev/add-ins/publish/publish)|  
+|Porovnejte různé způsoby, ve kterém můžete rozšířit Office a rozhodnout, zda by měl používat aplikaci nebo doplněk aplikace Office.|[Plán pro doplňky Office, VSTO a VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Vytvoření doplňku Sharepointu  
  K rozšíření Sharepointu pro vaše uživatele, sestavení doplňku Sharepointu. Je v podstatě malé, snadné použití, samostatné aplikace, která řeší uživatele nebo obchodní potřebu.  
@@ -80,9 +80,9 @@ ms.locfileid: "35676596"
   
 |Chcete-li|Další informace naleznete v tématu|  
 |--------|---------|  
-|Další informace o doplňcích služby SharePoint a následně vytvořit jeden.|[Doplňky pro SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|Porovnejte doplňků pro SharePoint s tradiční řešení služby SharePoint.|[SharePoint Add-ins ve srovnání s řešeními služby SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Zvolte, jestli se má sestavení doplňku Sharepointu nebo řešení služby SharePoint.|[Rozhodování, zda doplňky Sharepointu a řešení služby SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|Další informace o doplňcích služby SharePoint a následně vytvořit jeden.|[Doplňky pro SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|  
+|Porovnejte doplňků pro SharePoint s tradiční řešení služby SharePoint.|[SharePoint Add-ins ve srovnání s řešeními služby SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
+|Zvolte, jestli se má sestavení doplňku Sharepointu nebo řešení služby SharePoint.|[Rozhodování, zda doplňky Sharepointu a řešení služby SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> Vytvoření doplňku VSTO  
  Vytvoření VSTO doplňku sady Office 2007 nebo Office 2010 nebo Office 2013 a Office 2016 rozšířit nad rámec, jaké jsou možnosti s doplňky sady Office. Doplňky VSTO spustit pouze na ploše. Uživatelé mají k instalaci doplňků VSTO, budete obvykle obtížnější na nasazení a podporu.  Ale doplňku VSTO je možné integrovat lépe se sadou Office. Například jej přidat karty a ovládací prvky na pásu karet Office a provádět Pokročilá automatizace úlohy, například slučování dokumentů nebo úpravy grafů. Můžete využít rozhraní .NET Framework a pracovat s objekty Office pomocí jazyka C# a Visual Basic.  
@@ -95,8 +95,8 @@ ms.locfileid: "35676596"
   
 |Chcete-li|Číst|  
 |--------|----------|  
-|Porovnejte různé způsoby, ve kterém můžete rozšířit Office a rozhodnout, zda by měl používat doplňku VSTO nebo doplněk aplikace Office.|[Plán pro doplňky Office, VSTO a VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Vytvoření doplňku VSTO.|[Vytváření doplňků VSTO pomocí sady Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|Porovnejte různé způsoby, ve kterém můžete rozšířit Office a rozhodnout, zda by měl používat doplňku VSTO nebo doplněk aplikace Office.|[Plán pro doplňky Office, VSTO a VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
+|Vytvoření doplňku VSTO.|[Vytváření doplňků VSTO pomocí sady Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|  
   
 ##  <a name="Solutions"></a> Vytvoření řešení služby SharePoint  
  Vytvoření řešení služby SharePoint k cílení na SharePoint Foundation 2010 a SharePoint Server 2010 nebo k rozšíření SharePoint 2013 a SharePoint 2016 způsoby rámec toho, jaké jsou možnosti s doplňku Sharepointu.  
@@ -107,7 +107,7 @@ ms.locfileid: "35676596"
   
 |Chcete-li|Další informace naleznete v tématu|  
 |--------|---------|  
-|Porovnání řešení služby SharePoint pomocí Sharepointových doplňků.|[SharePoint Add-ins ve srovnání s řešeními služby SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|Porovnání řešení služby SharePoint pomocí Sharepointových doplňků.|[SharePoint Add-ins ve srovnání s řešeními služby SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |Vytvoření řešení služby SharePoint.|[Vytvoření řešení služby SharePoint](../sharepoint/create-sharepoint-solutions.md)|  
   
   

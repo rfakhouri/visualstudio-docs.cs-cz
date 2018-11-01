@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3933400c1cf8ecd27c1c2f1a9bb0328dfa80d1e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671284"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Návody pro zabezpečení a nasazení
   Následující témata ukazují, jak můžete nastavit zásady zabezpečení umožňující spuštění řešení, a nasazení řešení Office.  
@@ -36,25 +36,25 @@ ms.locfileid: "35675876"
  Vysvětluje, jak nakonfigurovat [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] důvěryhodný dotaz na ovládací prvek, zda koncovým uživatelům se zobrazí možnost instalace řešení pro systém Office.  
   
 ## <a name="deployment-topics"></a>Témata týkající se nasazení  
- [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
+ [Postupy: publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  Poskytuje informace o tom, jak používat **Průvodce publikováním** nebo **publikovat** stránky Návrháře projektu k publikování řešení pro systém Office.  
   
- [Postupy: publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [Postupy: publikování řešení Office úrovni dokumentu na SharePoint serveru s použitím technologie ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
  Popisuje postup nasazení na SharePoint server.  
   
- [Postupy: Instalace řešení ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
+ [Postupy: Instalace řešení ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
  Popisuje kroky pro instalaci řešení pro systém Office spuštěním instalačního programu, který je generován během procesu publikování. Otevřete soubor manifestu nasazení; nebo otevření přizpůsobeného dokumentu nebo sešitu.  
   
- [Postupy: instalace požadovaných součástí na počítačích koncových uživatelů, které spouštějí řešení Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
+ [Postupy: instalace požadovaných součástí na počítačích koncových uživatelů, které spouštějí řešení Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
  Popisuje, jak můžete vytvořit instalační program, který kontroluje požadavky před instalací komponenty řešení.  
   
- [Postupy: Příprava služby IIS k nasazení řešení pro systém Office](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
+ [Postupy: Příprava služby IIS k nasazení řešení pro systém Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  Popisuje postup konfigurace v Internetové informační služby (IIS) typ MIME pro manifest nasazení.  
   
- [Postupy: aktualizace nasazené řešení pro systém Office](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [Postupy: aktualizace nasazené řešení pro systém Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  Poskytuje informace o tom, jak aktualizovat řešení Office s použitím **Průvodce publikováním**.  
   
- [Postupy: změnit cestu instalace řešení pro Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
+ [Postupy: změnit cestu instalace řešení pro Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  Poskytuje informace o tom, jak změnit cestu instalace řešení pro Office.  
   
 ## <a name="related-sections"></a>Související oddíly  

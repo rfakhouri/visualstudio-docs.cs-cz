@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673078"
 ---
 # <a name="create-outlook-form-regions"></a>Vytváření oblastí formulářů aplikace Outlook
   Oblasti formuláře můžete použít k přizpůsobení formulářů aplikace Microsoft Office Outlook. Visual Studio poskytuje pokročilé nástroje, které usnadňují návrh, vývoj a ladění oblasti formuláře.  
@@ -60,7 +60,7 @@ ms.locfileid: "49866425"
   
 - Zobrazit vlastní uživatelské rozhraní v podokně čtení a kontroly.  
   
-  Další informace najdete v tématu [přizpůsobit stránky formuláře a oblasti formulářů](http://msdn.microsoft.com/library/office/ff869060.aspx).  
+  Další informace najdete v tématu [přizpůsobit stránky formuláře a oblasti formulářů](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).  
   
 ##  <a name="Adding"></a> Přidání oblasti formuláře Outlooku do projektu  
  Můžete použít **novou oblast formuláře Outlooku** Průvodce navrhnout novou oblast formuláře nebo import oblasti formuláře, která je navržená v Outlooku. Také pokud máte oblasti formuláře, který jste použili v jiném projektu doplňku VSTO pro Outlook, můžete využít vaše stávající oblast formuláře.  

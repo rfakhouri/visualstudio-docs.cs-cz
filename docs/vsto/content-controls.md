@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940226"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672896"
 ---
 # <a name="content-controls"></a>Ovládací prvky obsahu
   Ovládací prvky obsahu poskytují způsob, jak můžete na dokumentech návrhu a šablony, které mají tyto funkce:  
@@ -81,7 +81,7 @@ ms.locfileid: "49940226"
  Existují devět různé typy ovládacích prvků obsahu, které přidáte do dokumentů. Většina ovládací prvky obsahu mají odpovídající typ v <xref:Microsoft.Office.Tools.Word> oboru názvů. Můžete také použít obecný <xref:Microsoft.Office.Tools.Word.ContentControl>, což může představovat všechny dostupné ovládací prvky obsahu. Názorný postup ukazuje, jak využívat všechny dostupné ovládací prvky obsahu, najdete v části [návod: vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Sestavení bloku Galerie  
- Galerie stavebních bloků umožňuje uživatelům vybrat ze seznamu *stavební bloky dokumentu* vložit do dokumentu. Dokument stavební blok je část obsahu, který se vytvořil pro použití více než jednou, jako je například běžné titulní stránky, naformátovanou tabulku nebo hlavičku. Další informace najdete v tématu <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Další informace o stavebních bloků, naleznete v tématu [co je nového pro vývojáře v aplikaci Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Galerie stavebních bloků umožňuje uživatelům vybrat ze seznamu *stavební bloky dokumentu* vložit do dokumentu. Dokument stavební blok je část obsahu, který se vytvořil pro použití více než jednou, jako je například běžné titulní stránky, naformátovanou tabulku nebo hlavičku. Další informace najdete v tématu <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Další informace o stavebních bloků, naleznete v tématu [co je nového pro vývojáře v aplikaci Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
   
 ### <a name="check-box"></a>Zaškrtávací políčko  
  Zaškrtávací políčko poskytuje uživatelské rozhraní, která představuje binární stav: zaškrtnuto nebo ne.  

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676607"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670869"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
   Nástroje Microsoft Office developer tools v sadě Visual Studio můžete použít k vytvoření aplikací rozhraní .NET Framework, které rozšiřují Office. Tyto aplikace se také nazývají *řešení pro systém Office*.  
@@ -108,10 +108,10 @@ ms.locfileid: "35676607"
  [Části vývoj aplikace Microsoft Office v knihovně MSDN](http://go.microsoft.com/fwlink/?LinkId=149870)  
  Oblasti v knihovně MSDN, kde můžete vyhledat články a referenční dokumentaci o vývoji řešení pro několik verzí systému Office (nezávislé na vývoj pro Office pomocí sady Visual Studio).  
   
- [Vývoj aplikací v sadě Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Vývoj aplikací v sadě Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  Obsahuje odkazy na témata, která popisují, jak můžete pomocí sady Visual Studio pro návrh, vývoj, ladění a nasazování webových aplikací, webových služeb XML a tradiční klientské aplikace.  
   
- [Programování v rozhraní .NET framework v sadě Visual Studio](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Programování v rozhraní .NET framework v sadě Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  Tento článek popisuje vývoj aplikací s použitím rozhraní .NET Framework v jazyce Visual Basic a Visual C#.  
   
   

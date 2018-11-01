@@ -1,6 +1,6 @@
 ---
 title: Možnosti, textový editor, C#, upřesnit
-ms.date: 11/04/2016
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356740"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670712"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 
@@ -36,7 +36,7 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
 
 - Umístit nejdřív direktivy "System", při řazení direktiv Using
 
-   Pokud je vybráno, **odebrat a seřadit direktivy using** příkaz v nabídce seřadí klikněte pravým tlačítkem `using` direktivy a místa obory názvů "Systém" v horní části seznamu
+   Pokud je vybráno, **odebrat a seřadit direktivy using** příkaz v nabídce seřadí klikněte pravým tlačítkem `using` direktivy a místa obory názvů "Systém" v horní části seznamu.
 
    Před řazením:
 
@@ -89,9 +89,10 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
    using System.Linq;
    ```
    
-- Přidání direktivy using pro typy v referenční sestavení a balíčky NuGet 
+- Navrhnout použití typů v sestaveních reference 
+- Navrhnout použití typů v balíčcích NuGet 
 
-   Při výběru [rychlá akce](../quick-actions.md) je k dispozici pro instalaci balíčku NuGet a přidejte `using` směrnice pro neodkazovaný typy.
+   Když tyto možnosti jsou vybrané, [rychlá akce](../quick-actions.md) je k dispozici pro instalaci balíčku NuGet a přidejte `using` směrnice pro neodkazovaný typy.
 
    ![Rychlé akce pro instalaci balíčku NuGet v sadě Visual Studio](media/nuget-lightbulb.png)
   
@@ -106,6 +107,16 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
 - Po otevření souborů vstoupit do režimu sbalování
 
    Pokud je vybráno, automaticky popisuje, jak soubor kódu, který vytvoří sbalitelnou bloky kódu. Při prvním otevření souboru #regions bloky a bloky neaktivního kódu sbalte.
+
+- Zobrazit oddělovače řádků procedury
+
+   Textový editor označuje visual oboru postupy. Řádek je vykreslen v *.vb* zdrojové soubory vašeho projektu v umístěních uvedených v následující tabulce:
+
+   |Umístění ve zdrojovém souboru .vb|Příklad umístění řádku|
+   |---------------------------------|------------------------------|
+   |Po uzavření bloku deklarace konstruktoru|– Na konci třída, struktura, modul, rozhraní nebo výčet<br />-After vlastnost, funkce nebo procedury sub<br />-Není mezi get a set klauzule ve vlastnosti|
+   |Po sadu konstrukce jeden řádek|-After příkazy pro import, před definici typu v souboru třídy<br />-After proměnné deklarované ve třídě, před všechny postupy|
+   |Po jeden řádek deklarací (deklarace mimo blok úrovně)|-Následující příkazy pro import, dědí příkazy deklarace proměnných, deklarace události, delegát deklarace a příkazy deklarovat knihovny DLL|
 
 ## <a name="editor-help"></a>Nápověda k editoru
 

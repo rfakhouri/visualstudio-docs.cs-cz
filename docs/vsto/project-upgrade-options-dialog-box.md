@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676605"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671934"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Projekt upgradu, dialogové okno Možnosti
   Použití **upgradovat projekt** stránky můžete zadat, zda sada Visual Studio automaticky změní projekty doplňku VSTO pro cílení na verzi Office, která je nainstalována na vývojovém počítači.  
@@ -37,6 +37,6 @@ ms.locfileid: "35676605"
   
 ## <a name="see-also"></a>Viz také:  
  [Upgrade a migrace řešení Office](../vsto/upgrading-and-migrating-office-solutions.md)   
- [Postupy: řešení pro systém Office upgradu](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
+ [Postupy: řešení pro systém Office upgradu](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

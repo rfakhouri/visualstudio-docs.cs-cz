@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e945dbafbf7107b616a654d952bd8690bf72788a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4d315a00f527953500b47095ee4080b4eafd4cc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672714"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publikovat stranu, Návrhář projektů (vývoj pro Office v sadě Visual Studio)
   **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení.  
@@ -32,7 +32,7 @@ ms.locfileid: "49904710"
  Pro přístup k této stránce, vyberte projekt v **Průzkumníka řešení**a potom na **projektu** nabídce zvolte *Projectname* **vlastnosti** . Pokud **publikovat** stránka se nezobrazí, zvolte **publikovat** kartu.  
   
 > [!NOTE]  
->  Můžete také nastavit umístění pro publikování **Průvodce publikováním**. Další informace najdete v tématu [postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Můžete také nastavit umístění pro publikování **Průvodce publikováním**. Další informace najdete v tématu [postupy: publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Umístění složky pro publikování (webový server, ftp server nebo cesta k souboru)**  
@@ -55,7 +55,7 @@ ms.locfileid: "49904710"
   
  Instalační soubory jsou v umístění vzhledem k dokumentu nebo instalační program, například s možností CD, ponechte toto pole prázdné.  
   
- Tato hodnota lze přiřadit později microsoftem nebo správcem. Další informace najdete v tématu [jak: změnit cestu instalace řešení pro Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Tato hodnota lze přiřadit později microsoftem nebo správcem. Další informace najdete v tématu [jak: změnit cestu instalace řešení pro Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Požadované součásti**  
  Požadavky lze zahrnout pomocí instalačního programu nebo stažen na vyžádání během instalace.  
@@ -113,6 +113,6 @@ ms.locfileid: "49904710"
 ## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Požadavky řešení Office na nasazení](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Požadavky řešení Office na nasazení](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   
