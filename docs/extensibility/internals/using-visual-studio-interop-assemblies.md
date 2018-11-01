@@ -51,7 +51,7 @@ Visual Studio sestavení vzájemné spolupráce povolit spravované aplikace pro
 > [!NOTE]
 >  Snížit výkon, výjimky, které slouží k označení neobvyklého podmínky. Podmínky, které dochází často, by měly být zpracovávaný vložené, místo vyvolaná výjimka.  
   
-## <a name="iunknown-parameters-passed-as-type-void"></a>Parametry IUnknown předány jako typ void **  
+## <a name="iunknown-parameters-passed-as-type-void"></a>Parametry IUnknown předány jako typ void**  
  Vyhledejte [parametry, které jsou definovány jako typ out] `void **` v modelu COM rozhraní, ale které jsou definovány jako `[``iid_is``]` v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypu.  
   
  V některých případech vygeneruje rozhraní modelu COM `IUnknown` objekt a rozhraní COM pak předá ji jako typ `void **`. Tato rozhraní jsou zvlášť důležité, protože pokud proměnnou je definován jako [out] v IDL, pak se `IUnknown` objekt je odkaz počítá s `AddRef` metoda. Nevrácená paměť systému nastane, pokud objekt není správně zpracovat.  
