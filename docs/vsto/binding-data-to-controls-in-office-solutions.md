@@ -22,11 +22,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676005"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744866"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office
   Můžete svázat ovládací prvky Windows Forms a *hostování ovládacích prvků* na dokumentu aplikace Microsoft Office Word nebo list aplikace Microsoft Office Excel ke zdroji dat, ovládací prvky automaticky zobrazovat data. Vytvoření vazby dat k ovládacím prvkům v projektech na úrovni aplikace i na úrovni dokumentu.  

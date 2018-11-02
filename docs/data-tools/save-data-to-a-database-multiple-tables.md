@@ -18,22 +18,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9fd3051aae78f6f0440c637137ea5a04f726df8c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220336"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750825"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
+
 Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat na formulář v nástrojích pro aplikace Windows, upravte údaje a odeslat aktualizovaná data zpět do databáze. Tento návod vytvoří formulář, který zobrazuje data ze dvou souvisejících tabulek a ukazuje, jak upravovat záznamy a změny uložit zpět do databáze. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.
 
- Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Update` metody třídy TableAdapter. Při přetažení tabulky z **zdroje dat** okna do formuláře, kód, který je potřeba k uložení dat se automaticky přidá. Žádné další tabulky, které jsou přidány k formuláři vyžadují ruční přidání tohoto kódu. Tento návod ukazuje, jak přidat kód pro uložení aktualizací z více než jedné tabulky.
+Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Update` metody třídy TableAdapter. Při přetažení tabulky z **zdroje dat** okna do formuláře, kód, který je potřeba k uložení dat se automaticky přidá. Žádné další tabulky, které jsou přidány k formuláři vyžadují ruční přidání tohoto kódu. Tento návod ukazuje, jak přidat kód pro uložení aktualizací z více než jedné tabulky.
 
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- Úlohy v tomto návodu zahrnují:
+Úlohy v tomto návodu zahrnují:
 
 -   Vytvoření nového **formulářová aplikace Windows** projektu.
 
@@ -48,6 +49,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
 -   Úprava kódu pro odesílání aktualizovaná data v datové sadě zpět do databáze.
 
 ## <a name="prerequisites"></a>Požadavky
+
 Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
 
 1.  Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V **instalační program sady Visual Studio**, jako součást můžete nainstalovat SQL Server Express LocalDB **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
@@ -65,9 +67,8 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
        Po chvilce dotaz doběhnutí a vytvořit databázi Northwind.
 
 ## <a name="create-the-windows-forms-application"></a>Vytvoření aplikace Windows Forms
- Prvním krokem je vytvoření **formulářová aplikace Windows**. Přiřazení názvu projektu během tohoto kroku je volitelné, ale. poskytneme mu název protože uložíme také projekt později.
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows forms
+Prvním krokem je vytvoření **formulářová aplikace Windows**. Přiřazení názvu projektu během tohoto kroku je volitelné, ale. poskytneme mu název protože uložíme také projekt později.
 
 1. V sadě Visual Studio na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
@@ -80,9 +81,8 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
      **UpdateMultipleTablesWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.
 
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat
- Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
+Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.
 
@@ -109,18 +109,18 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
      **NorthwindDataSet** se přidá do vašeho projektu a tabulky se zobrazí v **zdroje dat** okna.
 
 ## <a name="set-the-controls-to-be-created"></a>Můžete nastavit řízení, který se má vytvořit
- V tomto návodu, data v `Customers` tabulka se **podrobnosti** rozložení, ve kterém se zobrazí data v jednotlivých ovládacích prvků. Data z `Orders` tabulka se **mřížky** rozložení, které se zobrazí v <xref:System.Windows.Forms.DataGridView> ovládacího prvku.
 
-#### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Chcete-li nastavit typ přetažení pro položky v okně zdrojů dat.
+V tomto návodu, data v `Customers` tabulka se **podrobnosti** rozložení, ve kterém se zobrazí data v jednotlivých ovládacích prvků. Data z `Orders` tabulka se **mřížky** rozložení, které se zobrazí v <xref:System.Windows.Forms.DataGridView> ovládacího prvku.
+
+### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Chcete-li nastavit typ přetažení pro položky v okně zdrojů dat.
 
 1.  V **zdroje dat** okna, rozbalte **zákazníkům** uzlu.
 
 2.  Na **zákazníkům** uzlu, vyberte **podrobnosti** ovládací prvek seznamu můžete změnit kontrolu **zákazníkům** tabulky do jednotlivých ovládacích prvků. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Vytvoření formuláře vázané na data
- Můžete vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okna do formuláře.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Vytvoření ovládacích prvků vázaných na data ve formuláři
+Můžete vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okna do formuláře.
 
 1.  Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.
 
@@ -129,17 +129,18 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 2.  Přetáhněte související **objednávky** uzlu z **zdroje dat** okna do **Form1**.
 
     > [!NOTE]
-    >  Související **objednávky** uzel se nachází pod **Fax** sloupce a je podřízený uzel **zákazníkům** uzlu.
+    > Související **objednávky** uzel se nachází pod **Fax** sloupce a je podřízený uzel **zákazníkům** uzlu.
 
      A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. `OrdersTableAdapter` a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.
 
 ## <a name="add-code-to-update-the-database"></a>Přidejte kód k aktualizaci databáze
- Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům** a **objednávky** objekty TableAdapter. Ve výchozím nastavení, obslužná rutina události **Uložit** tlačítko<xref:System.Windows.Forms.BindingNavigator> je přidán do formuláře kód k odeslání aktualizací do databáze. Tento postup upravuje kód k odesílání aktualizací ve správném pořadí. Tím se eliminuje možnost vyvolání chyby referenční integrity. Kód také implementuje obalením volání update v bloku try-catch – zpracování chyb. Můžete upravit kód tak, aby odpovídaly potřebám vaší aplikace.
+
+Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům** a **objednávky** objekty TableAdapter. Ve výchozím nastavení, obslužná rutina události **Uložit** tlačítko<xref:System.Windows.Forms.BindingNavigator> je přidán do formuláře kód k odeslání aktualizací do databáze. Tento postup upravuje kód k odesílání aktualizací ve správném pořadí. Tím se eliminuje možnost vyvolání chyby referenční integrity. Kód také implementuje obalením volání update v bloku try-catch – zpracování chyb. Můžete upravit kód tak, aby odpovídaly potřebám vaší aplikace.
 
 > [!NOTE]
->  Tento návod pro přehlednost nepoužívá transakce. Pokud chcete aktualizovat dvě nebo více souvisejících tabulek, ale obsahovat veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zaručuje, že všechny související změny do databáze úspěšní, než se změny potvrdí. Další informace najdete v tématu [transakce a souběžnost](/dotnet/framework/data/adonet/transactions-and-concurrency).
+> Tento návod pro přehlednost nepoužívá transakce. Pokud chcete aktualizovat dvě nebo více souvisejících tabulek, ale obsahovat veškerou logiku aktualizací v rámci transakce. Transakce je proces, který zaručuje, že všechny související změny do databáze úspěšní, než se změny potvrdí. Další informace najdete v tématu [transakce a souběžnost](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
-#### <a name="to-add-update-logic-to-the-application"></a>Chcete-li přidat logiku aktualizací do aplikace
+### <a name="to-add-update-logic-to-the-application"></a>Chcete-li přidat logiku aktualizací do aplikace
 
 1.  Vyberte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator>. Otevře se Editor kódu `bindingNavigatorSaveItem_Click` obslužné rutiny události.
 
@@ -150,16 +151,13 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 ## <a name="test-the-application"></a>Testování aplikace
 
-#### <a name="to-test-the-application"></a>Testování aplikace
-
-1.  Vyberte **F5**.
+1.  Stisknutím klávesy **F5**.
 
 2.  Některé změny dat z jednoho nebo více záznamů v každé tabulce.
 
 3.  Vyberte **Uložit** tlačítko.
 
 4.  Zkontrolujte hodnoty v databázi a ověřte, že se změny uložily.
-
 
 ## <a name="see-also"></a>Viz také:
 

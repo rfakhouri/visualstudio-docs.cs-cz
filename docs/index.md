@@ -4,12 +4,12 @@ hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
-ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d458683758916e78d3773b2700fb9ab2ae3acd39
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672866"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750712"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -308,7 +308,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Ladit</h3>
-                                                    <p>Prošetřete a vyřešte problémy s vaším kódem.</p>
+                                                    <p>Prověřte a opravte chyby ve vašem kódu.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,7 +402,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Zlepšení výkonu</h3>
+                                                    <h3>Měření výkonu</h3>
                                                     <p>Identifikujte kritické body a optimalizovat výkon kódu pomocí diagnostických nástrojů.
                                                     </p>
                                                 </div>

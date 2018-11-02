@@ -2,7 +2,7 @@
 title: Publikování aplikace v Node.js do služby App Service pro Linux
 description: Můžete publikovat aplikace Node.js, které jsou vytvořené v sadě Visual Studio do služby App Service pro Linux v Azure
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924958"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750764"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikování aplikace v Node.js do Azure (App Linux Service)
 
@@ -42,15 +42,19 @@ V tomto kurzu se naučíte:
 
 1. Vytvořit nové TypeScript Express aplikace s použitím **souboru** > **nový projekt** dialogové okno.
 
+1. V části **TypeScript** uzlu, vyberte **aplikaci základní Node.js Express 4**.
+
     ![Vytvoření nové aplikace TypeScript Express](../javascript/media/azure-ts-express-app.png)
 
-2. Stisknutím klávesy **F5** k vytvoření a spuštění aplikace a ujistěte se, že všechno běží podle očekávání.
+1. Klikněte na tlačítko **OK** pro vytvoření projektu v sadě Visual Studio.
 
-3. Vyberte **souboru** > **přidat do správy zdrojových kódů** k vytvoření místního úložiště Git pro projekt.
+1. Stisknutím klávesy **F5** k vytvoření a spuštění aplikace a ujistěte se, že všechno běží podle očekávání.
+
+1. Vyberte **souboru** > **přidat do správy zdrojových kódů** k vytvoření místního úložiště Git pro projekt.
 
     V tomto okamžiku Node.js app using architekturu Express a napsaných v TypeScript funguje a vráceny se změnami do místní správy zdrojového kódu.
 
-4. Upravte projekt podle potřeby před pokračováním na další kroky.
+1. Upravte projekt podle potřeby před pokračováním na další kroky.
 
 ## <a name="push-code-from-visual-studio-to-github"></a>Předejte kód ze sady Visual Studio do Githubu
 
@@ -111,7 +115,7 @@ Chcete-li nastavte GitHub pro Visual Studio:
 
 9. Vyberte úložiště a větve k publikování a pak vyberte **OK**.
 
-    ![Publikování do služby App Service pro Linux](../javascript/media/azure-repo-and-branch.png)
+    ![Publikování do App Service pro Linux](../javascript/media/azure-repo-and-branch.png)
 
     **Možnosti nasazení** během synchronizace se zobrazí stránka.
 

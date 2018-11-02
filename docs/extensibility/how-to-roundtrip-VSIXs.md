@@ -1,30 +1,30 @@
 ---
-title: 'Postupy: zpětná rozšíření pro Visual Studio | Dokumentace Microsoftu'
-ms.custom: ''
+title: Jak zpětná rozšíření
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498682"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750729"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: provést rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
 
-Tento dokument vysvětluje, jak vytvořit projekty rozšiřitelnosti přenosu mezi Visual Studio 2015 a Visual Studio 2017. Po dokončení tohoto upgradu, projekt bude moct otevírat, sestavení, nainstalovat a spustit v sadě Visual Studio 2015 a Visual Studio 2017.  Jako odkaz, nějaké rozšíření, které se dají zpátečního převodu mezi Visual Studio 2015 a Visual Studio 2017 najdete [tady](https://github.com/Microsoft/VSSDK-Extensibility-Samples) v příklady rozšíření společnosti Microsoft.
+Tento dokument vysvětluje, jak vytvořit projekty rozšiřitelnosti přenosu mezi Visual Studio 2015 a Visual Studio 2017. Po dokončení tohoto upgradu, projekt bude moct otevírat, sestavení, nainstalovat a spustit v sadě Visual Studio 2015 a Visual Studio 2017. Jako odkaz, nějaké rozšíření, které se dají zpátečního převodu mezi Visual Studio 2015 a Visual Studio 2017 najdete v [ukázky rozšiřitelnosti VS SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 Pokud chcete pouze na sestavení v sadě Visual Studio 2017, ale má výstup VSIX ke spuštění v sadě Visual Studio 2015 a Visual Studio 2017, pak se podívejte [dokumentu migrace rozšíření](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
->**Poznámka:** z důvodu změn v sadě Visual Studio mezi verzemi, nebudou fungovat některé věci, které fungovaly v jedné verze jiného. Ujistěte se, že se pokoušíte získat přístup k funkce jsou dostupné v obou verzích nebo rozšíření bude mít neočekávané výsledky.
+> [!NOTE]
+> Z důvodu změn v sadě Visual Studio mezi verzemi nefungují některé věci, které fungovaly v jedné verzi v jiném. Zkontrolujte, že se pokoušíte získat přístup k funkce jsou dostupné v obou verzích nebo rozšíření bude mít neočekávané výsledky.
 
 Tady je přehled kroků, které dokončíte v tomto dokumentu ho zpátečního převodu VSIX:
 
@@ -57,13 +57,13 @@ Dále v tomto dokumentu jsme se vloží příkazy podmíněné importu v k vaš�
 Pokud váš projekt obsahuje *project.json* souboru:
 
 * Poznamenejte si odkazy v *project.json*.
-* Z **Průzkumníka řešení**, odstranit *project.json* soubor z projektu.
-    * Tato akce odstraní *project.json* souboru a jeho odebrání z projektu.
-* Přidáte že odkazy na NuGet zpátky do projektu.
+* Z **Průzkumníka řešení**, odstranit *project.json* soubor z projektu. Tím se odstraní *project.json* souboru a odebere z projektu.
+* Přidáte že odkazy na NuGet zpátky do projektu:
     * Klikněte pravým tlačítkem na **řešení** a zvolte **spravovat balíčky NuGet pro řešení**.
-    * Visual Studio automaticky vytvoří *souboru packages.config* souboru pro vás
+    * Visual Studio automaticky vytvoří *souboru packages.config* souboru za vás.
 
->**Poznámka:** Pokud váš projekt obsahoval EnvDTE balíčky, může potřebovat přidat kliknutím pravým tlačítkem na **odkazy** výběr **přidat odkaz na** a přidejte příslušný odkaz.  Pomocí balíčků NuGet může vytvořit chyby při pokusu o svůj projekt sestavit.
+> [!NOTE]
+> Pokud váš projekt obsahoval EnvDTE balíčky, může potřebovat přidat kliknutím pravým tlačítkem na **odkazy** výběr **přidat odkaz na** a přidejte příslušný odkaz.  Pomocí balíčků NuGet může vytvořit chyby při pokusu o svůj projekt sestavit.
 
 ## <a name="add-appropriate-build-tools"></a>Přidat nástroje pro sestavení
 
@@ -113,7 +113,8 @@ Chcete-li to provést ručně:
 
 * Soubor uložte a zavřete.
 
->**Poznámka:** Pokud budete chtít dosáhnout pomocí návrháře VSIX v sadě Visual Studio 2017, budete muset ručně upravit požadované verze, jestli je kompatibilní se všemi verzemi sady Visual Studio 2017.  Je to proto, že návrhář vloží minimální verze jako aktuální verze sady Visual Studio (například 15.0.26208.0).  Ale protože jiní uživatelé mohou mít starší verzi, můžete ručně upravit na 15.0.
+> [!NOTE]
+> Pokud budete chtít dosáhnout pomocí návrháře VSIX v sadě Visual Studio 2017, musíte ručně upravit požadované verze zajistit, že je kompatibilní se všemi verzemi sady Visual Studio 2017.  Je to proto, že návrhář vloží minimální verze jako aktuální verze sady Visual Studio (například 15.0.26208.0).  Ale protože jiní uživatelé mohou mít starší verzi, můžete ručně upravit na 15.0.
 
 Váš soubor manifestu v tomto okamžiku by měl vypadat přibližně takto:
 
@@ -139,7 +140,8 @@ Důrazně doporučujeme mít odkaz na upravenou .csproj otevřít v průběhu to
 
 * Přidejte následující značku `<VsixType>v3</VsixType>` do vlastností skupiny.
 
->**Poznámka:** se doporučuje přidat níže `<OutputType></OutputType>` značky.
+> [!NOTE]
+> Doporučuje se přidat níže `<OutputType></OutputType>` značky.
 
 ### <a name="3-add-the-debugging-properties"></a>3. Přidání vlastnosti ladění
 
@@ -211,4 +213,5 @@ V tomto okamžiku by měl být projektu připravení sestavit VSIXv3, který mů
 
 ![Najít rozšíření VSIX](media/finding-a-VSIX-example.png)
 
->**Poznámka:** Pokud váš projekt přestane reagovat s touto zprávou **otevírání souboru**vynutit ukončení sady Visual Studio, přejděte do adresáře projektu, zobrazit skryté složky a odstranit *.vs* složky.
+> [!NOTE]
+> Pokud váš projekt přestane reagovat s touto zprávou **otevírání souboru**vynutit ukončení sady Visual Studio, přejděte do adresáře projektu, zobrazit skryté složky a odstranit *.vs* složky.

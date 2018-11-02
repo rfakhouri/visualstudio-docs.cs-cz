@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676486"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744935"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikace pro řešení pro systém Office
   Manifest aplikace je soubor XML, který popisuje sestavení, která jsou načtena do jediného řešení Microsoft Office. Pomocí nástroje pro vývoj aplikace Microsoft Office v sadě Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikace definované v manifestu schéma [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest) odkaz.  
@@ -30,7 +30,7 @@ ms.locfileid: "35676486"
 |Prvek|Popis|Atributy|  
 |-------------|-----------------|----------------|  
 |[&#60;sestavení&#62; Element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/assembly-element-clickonce-deployment)|Požadováno. Element nejvyšší úrovně.|**ManifestVersion**|  
-|[&#60;Vlastnost assemblyIdentity&#62; Element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment)|Požadováno. Identifikuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] primární sestavení aplikace.|**Jméno**<br /><br /> **Verze**<br /><br /> **PublicKeyToken**<br /><br /> **Vlastnost ProcessorArchitecture**<br /><br /> **Jazyk**|  
+|[&#60;Vlastnost assemblyIdentity&#62; Element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment)|Požadováno. Identifikuje [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] primární sestavení aplikace.|**Jméno**<br /><br /> **version**<br /><br /> **PublicKeyToken**<br /><br /> **Vlastnost ProcessorArchitecture**<br /><br /> **Jazyk**|  
 |[&#60;trustInfo&#62; Element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/trustinfo-element-clickonce-application)|Identifikuje požadavky na zabezpečení aplikace.|Žádné|  
 |[&#60;vstupní bod&#62; Element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/entrypoint-element-clickonce-application)|Požadováno. Určuje vstupní bod aplikace kód pro spuštění.|**Jméno**<br /><br /> **dependencyName**<br /><br /> **customHostSpecified**|  
 |[&#60;závislost&#62; Element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/dependency-element-clickonce-deployment)|Požadováno. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést.|Žádné|  
@@ -90,7 +90,7 @@ ms.locfileid: "35676486"
 |[&#60;Popis&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro doplňky VSTO. Ukládá popis, který se zobrazí v seznamu nainstalovaných programů.|Žádné|  
 |[&#60;formRegions&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro aplikaci Outlook doplňků VSTO, které zahrnují oblasti formuláře.|Žádné|  
 |[&#60;formRegion&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|Vyžaduje se jenom pro aplikaci Outlook doplňků VSTO, které zahrnují oblasti formuláře.|**Jméno**|  
-|[&#60;vstoruntime –&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Požadováno. Popisuje konkrétní verzi nástroje Visual Studio Tools for Office runtime, který podporuje řešení pro Office.|**Vydání verze**<br /><br /> **Verze**<br /><br /> **supportUrl**|  
+|[&#60;vstoruntime –&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Požadováno. Popisuje konkrétní verzi nástroje Visual Studio Tools for Office runtime, který podporuje řešení pro Office.|**Vydání verze**<br /><br /> **version**<br /><br /> **supportUrl**|  
   
 ## <a name="remarks"></a>Poznámky  
  Můžete ručně upravit aplikace a manifesty nasazení v řešeních pro systém Office. Později, musíte znovu podepsat aplikaci a manifesty nasazení s použitím Manifest Generation and Editing Tool (*mage.exe* a *mageui.exe*). Další informace najdete v tématu [postupy: Opětovné podepisování manifestů aplikace a nasazení](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
