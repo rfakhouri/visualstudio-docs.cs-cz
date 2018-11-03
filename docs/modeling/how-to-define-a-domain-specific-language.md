@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860640"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967529"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
@@ -213,7 +213,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
 ##### <a name="to-test-the-new-domain-classes"></a>K testování nových tříd domény
 
-1.  **Klikněte na možnost Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení pro generování kódu návrháře DSL. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+1.  **Klikněte na možnost Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení pro generování kódu návrháře DSL. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 ke spuštění nové instance sady Visual Studio v experimentálním režimu. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru tohoto kódu DSL.
 

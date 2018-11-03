@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4b584495ee4848a3c01ebe63ee30b5bc52b0ff34
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895636"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967425"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 
@@ -322,4 +322,4 @@ Dopředné slučovací direktiva můžete vytvořit v modelu řešení. Pokud ko
 
 - [Navigace v modelu a aktualizace modelu v kódu programu](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md)
-- [Ukázka diagramy okruh DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Ukázka diagramy okruh DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

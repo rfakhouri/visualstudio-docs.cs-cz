@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820771"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966935"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novinky pro programátory ve Visual Studiu
 
@@ -40,7 +40,7 @@ Prostředí pro vytváření změnil provádět ověřování závislostí zjist
 
 Nyní uvidíte dopad změny okamžitě v výsledky analýzy zadání stávajícího kódu v řešení pokaždé, když uložíte diagram. Nemusíte už čekat na dokončení příkazu "Ověřte závislosti".
 
-Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Byly odebrány návrhářů UML
 
@@ -61,7 +61,7 @@ Ale podporují pro vizualizaci architektury .NET a C++ kód je k dispozici prost
 
 Pokud jste uživatelem významné návrhářů UML, můžete nadále při rozhodování o alternativní nástroj pro vaše potřeby UML, použijte Visual Studio 2015 nebo starší verze.
 
-Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

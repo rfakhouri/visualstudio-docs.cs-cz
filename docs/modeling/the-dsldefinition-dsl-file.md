@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898548"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967516"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 
@@ -298,7 +298,7 @@ V tomto příkladu InPort je podtřídou třídy ComponentPort a nemá vztah Com
 Při zápisu jazyka C# pro tento model, můžete přejít přes odkaz v jednom kroku pomocí vlastnost, která generuje relace na každém tříd, které se týká:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 Ale je potřeba udělat i směrování explicitně v cestě syntaxi. Kvůli tomuto požadavku můžete snadněji přistupovat zprostředkující odkaz. Následující kód provede směrování z odkazu na komponentu:
@@ -581,6 +581,6 @@ Mapy konektorů může také obsahovat mapy dekoratérů.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)
 - [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)

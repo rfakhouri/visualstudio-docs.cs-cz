@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8e439ae8cb73b8fdaf1bce514370a736cbd0b238
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0265146f5b8d03c7b3ac5f2b08b0cb384c3e45a5
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822342"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967100"
 ---
 # <a name="properties-of-decorators"></a>Vlastnosti dekorátorů
 Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se mohou objevit na obrazců a konektorů v diagramu. Následující tabulky popisují vlastnosti pro tři druhy dekoratér. Některé vlastnosti se zobrazí pouze na obrazec dekoratéry nebo pouze na konektor dekorátory.
@@ -68,4 +68,4 @@ Dekorátory jsou ikony, text nebo Rozbalit/sbalit dvojité šipky, které se moh
 
 ## <a name="see-also"></a>Viz také
 
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

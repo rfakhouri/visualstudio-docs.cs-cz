@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885654"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967321"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 
 Toto téma vysvětluje základní koncepty při definování a používání jazyka specifického pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.
 
 > [!NOTE]
-> V sadě Visual Studio 2017 SDK transformace textové šablony a Visual Studio SDK modelování jsou nainstalovány automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> V sadě Visual Studio 2017 SDK transformace textové šablony a Visual Studio SDK modelování jsou nainstalovány automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -112,7 +112,7 @@ Všimněte si, že následující aspekty nové řešení:
 1.  Klikněte na tlačítko **Transformovat všechny šablony** v **Průzkumníka řešení** nástrojů. To obnoví většinu zdrojový kód z DslDefinition.dsl.
 
     > [!NOTE]
-    > Vždy, když změníte *DslDefinition.dsl*, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
+    > Vždy, když změníte *DslDefinition.dsl*, musíte kliknout na **Transformovat všechny šablony** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat Transformovat všechny šablony](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2.  Stisknutím klávesy **F5**, nebo **ladění** nabídky, klikněte na tlačítko **spustit ladění**.
 

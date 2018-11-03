@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871742"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966840"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v sadě Visual Studio, vám umožní navrhnout jazyka specifického pro doménu a potom generovat vše, co uživatelé musí mít k vytváření modelů, které jsou založeny na jazyce.
@@ -79,4 +79,4 @@ Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v
 ## <a name="see-also"></a>Viz také
 
 - [Experimentální instance](../extensibility/the-experimental-instance.md)
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9ae270e9a3a6c7b313d7bf811205b183f8c77fb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913927"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967412"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu (DSL), tak, aby vaši uživatelé můžou provádět úlohy, které se týkají vašeho DSL. Příkazy se zobrazují v nabídce kontextu (místní), po kliknutí pravým tlačítkem myši v diagramu. Příkaz můžete definovat tak, aby se zobrazí jenom v nabídce za určitých okolností. Například můžete provést příkaz viditelné pouze v případě, že uživatel klikne na určité typy prvek nebo prvky v konkrétní stavy.
@@ -362,6 +362,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Postupy: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md)
-- [Ukázkový kód: diagramy okruh](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Ukázkový kód: diagramy okruh](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

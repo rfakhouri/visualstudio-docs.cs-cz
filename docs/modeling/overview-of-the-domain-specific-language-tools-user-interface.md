@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6196f8b8a058424732469ff954d607e00c97d396
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54ba969e06f3bd951556f8d8f347977419fc015
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819768"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966489"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Přehled uživatelského rozhraní Jazykových nástrojů specifických pro doménu
 Při prvním otevření nástroje jazyka specifického pro doménu (DSL Tools) řešení v sadě Visual Studio, uživatelské rozhraní bude vypadat podobně jako na následujícím obrázku.
@@ -51,5 +51,5 @@ Při prvním otevření nástroje jazyka specifického pro doménu (DSL Tools) �
 ## <a name="see-also"></a>Viz také
 
 - [Přehled Nástrojů DSL](../modeling/overview-of-domain-specific-language-tools.md)
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md)

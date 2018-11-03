@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89cd2f7ff1be28ac9d96578ba5ce57f653cc65e
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: e8946647c67c2949523411cc7be43463798d47c9
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750907"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966801"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Začínáme s analyzátory Roslyn
 
@@ -37,5 +37,6 @@ Pomocí analyzátorů kódu za provozu, na základě projektu v sadě Visual Stu
 ## <a name="see-also"></a>Viz také:
 
 - [Přehled analyzátory Roslyn](../code-quality/roslyn-analyzers-overview.md)
+- [Referenční verze balíčku platformy kompilátoru .NET](roslyn-version-support.md)
 - [Další dokumentace na webu GitHub OSS](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [Pravidla FxCop implementováno s analyzátory Roslyn na Githubu](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

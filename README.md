@@ -13,10 +13,10 @@ Dokumentace pro Visual Basic a Visual C# jsou umístěné v samostatné úloži�
 
 ## <a name="contributing-to-the-documentation"></a>Přispívání do dokumentace
 
-Přispívání do této dokumentace, najdete v tématu [využité průvodce](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Přispívání do této dokumentace, najdete v tématu [využité průvodce](CONTRIBUTING.md).
 Vítáme vaše příspěvky a Pomozte nám vylepšit dokumentaci sady Visual Studio. Všechny články v tomto úložišti pomocí markdown specifický pro GitHub.
 
-Některé oblasti funkcí sady Visual Studio mají jejich vlastních složek v tomto úložišti, jako například **ladicí program** témata týkající se ladění, **ide** témata týkající se sady Visual Studio interaktivní vývojové prostředí (IDE), a atd. **/Media** podsložku v každé složky obsahuje soubory s obrázky pro témata. [Využité průvodce](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md) obsahuje další informace.
+Některé oblasti funkcí sady Visual Studio mají jejich vlastních složek v tomto úložišti, jako například **ladicí program** témata týkající se ladění, **ide** témata týkající se sady Visual Studio interaktivní vývojové prostředí (IDE), a atd. **/Media** podsložku v každé složky obsahuje soubory s obrázky pro témata. [Využité průvodce](CONTRIBUTING.md) obsahuje další informace.
 
 Tento projekt přijímá [Microsoft kód chování pro Open Source](https://opensource.microsoft.com/codeofconduct/). Další informace najdete v článku [kódu k pravidlům chování](https://opensource.microsoft.com/codeofconduct/faq/) nebo se obraťte na [ opencode@microsoft.com ](mailto:opencode@microsoft.com) s případnými dotazy nebo připomínky.
 

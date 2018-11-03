@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e316caa9ededbb7db40490fcbcc10ec4f760497d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f9abc191bdecce244581e7427116b05427de215
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903748"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966736"
 ---
 # <a name="properties-of-swimlanes"></a>Vlastnosti drah
 Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svislý nebo vodorovný oblasti diagramu. Můžete definovat další obrazce, která se zobrazí uvnitř plaveckých drah. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md). Další informace o tom, jak pomocí těchto vlastností najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -54,4 +54,4 @@ Plaveckých drah můžete přidat do diagramu. Plaveckých drah rozdělit svisl�
 
 ## <a name="see-also"></a>Viz také
 
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

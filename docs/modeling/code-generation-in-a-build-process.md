@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409801"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967113"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generování kódu v procesu sestavení
 
-[Transformace textu](../modeling/code-generation-and-t4-text-templates.md) lze vyvolat jako součást [proces sestavení](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) řešení sady Visual Studio. Některé úlohy sestavení se specializují na transformaci textu. Úlohy sestavení T4 spouštějí textové šablony návrhu a rovněž kompilují textové šablony běhu (předzpracované).
+[Transformace textu](../modeling/code-generation-and-t4-text-templates.md) lze vyvolat jako součást [proces sestavení](/azure/devops/pipelines/index) řešení sady Visual Studio. Některé úlohy sestavení se specializují na transformaci textu. Úlohy sestavení T4 spouštějí textové šablony návrhu a rovněž kompilují textové šablony běhu (předzpracované).
 
 V závislosti na tom, který stroj sestavení používáte, jsou určité rozdíly v tom, co úlohy sestavení mohou provádět. Při sestavování řešení v sadě Visual Studio textové šablony můžete přístup k rozhraní API Visual Studio (EnvDTE) Pokud [hostspecific = "true"](../modeling/t4-template-directive.md) atribut je nastaven. To ale neplatí při sestavování řešení z příkazového řádku nebo při inicializaci sestavení na serveru pomocí sady Visual Studio. V těchto případech provádí sestavení nástroj MSBuild a používá se jiný hostitel T4.
 
@@ -33,7 +33,7 @@ Pokud chcete povolit úlohy sestavení na vašem vývojovém počítači, instal
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Pokud [váš server sestavení](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) se spustí na počítači, na kterém není nainstalována sada Visual Studio, zkopírujte následující soubory do počítače sestavení z vývojového počítače. Nahraďte nejnovější čísla verzí pro "*".
+Pokud [váš server sestavení](/azure/devops/pipelines/agents/agents) se spustí na počítači, na kterém není nainstalována sada Visual Studio, zkopírujte následující soubory do počítače sestavení z vývojového počítače. Nahraďte nejnovější čísla verzí pro "*".
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -236,7 +236,7 @@ V textové šabloně nastavte `hostspecific` v direktivě šablony. Použití [p
 The project folder is: <#= ProjectFolder #>
 ```
 
-V procesoru direktiv lze zavolat [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+V procesoru direktiv lze zavolat [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

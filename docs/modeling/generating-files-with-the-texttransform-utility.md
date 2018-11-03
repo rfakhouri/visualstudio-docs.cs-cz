@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6572ef97027466fa97c254664327f2f77b4ea7f2
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928656"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967077"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 
@@ -62,7 +62,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory >|Adresář, který obsahuje textové šablony, který je součástí zadané textové šablony.|
 |**-P** \<referencepath >|Adresář pro vyhledávání sestavení zadaných v rámci textové šablony nebo pro použití **- r** možnost.<br /><br /> Například pokud chcete zahrnout sestavení pro rozhraní API sady Visual Studio, použijte<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName >!\< Název třídy >! \<assemblyName&#124;codeBase >|Název, úplný název typu a sestavení, který slouží ke zpracování vlastních direktiv v textové šabloně procesoru direktiv.|
-|**-a** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Zadejte hodnotu parametru pro procesor direktiv. Pokud zadáte pouze název parametru a hodnota, bude parametr k dispozici všechny procesory direktiv. Pokud chcete zadat procesor direktiv, parametr je k dispozici pouze do určeným procesorem. Pokud zadáte název direktivy, parametr je k dispozici pouze v případě, že zadané – direktiva se zpracovává.<br /><br /> Chcete-li přístup hodnoty parametrů z procesoru direktiv nebo textové šablony, použijte [ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx). V textové šabloně, patří `hostspecific` v direktivě šablony a vyvolat zprávu na `this.Host`. Příklad:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zadávejte vždy "!" označí, i v případě, že vynecháte volitelné procesoru a názvů direktiv. Příklad:<br /><br /> `-a !!param!value`|
+|**-a** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Zadejte hodnotu parametru pro procesor direktiv. Pokud zadáte pouze název parametru a hodnota, bude parametr k dispozici všechny procesory direktiv. Pokud chcete zadat procesor direktiv, parametr je k dispozici pouze do určeným procesorem. Pokud zadáte název direktivy, parametr je k dispozici pouze v případě, že zadané – direktiva se zpracovává.<br /><br /> Chcete-li přístup hodnoty parametrů z procesoru direktiv nebo textové šablony, použijte [ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)). V textové šabloně, patří `hostspecific` v direktivě šablony a vyvolat zprávu na `this.Host`. Příklad:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zadávejte vždy "!" označí, i v případě, že vynecháte volitelné procesoru a názvů direktiv. Příklad:<br /><br /> `-a !!param!value`|
 |**-h**|Poskytuje nápovědu.|
 
 ## <a name="related-topics"></a>Související témata

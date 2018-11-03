@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f537388d439c401df13e955db18e661863dc5ebf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21b0ecfc26728fa4692a07eaa1e2e43ecdcf9cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820847"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967139"
 ---
 # <a name="properties-of-port-shapes"></a>Vlastnosti obrazců portů
 Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném návrháři.
@@ -57,4 +57,4 @@ Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném n
 
 ## <a name="see-also"></a>Viz také
 
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

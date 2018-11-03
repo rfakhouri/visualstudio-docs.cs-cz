@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0bd6a73028f644ba7dcf53d1d83b1352a0f81405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 431dad2f87fdd5857c91b39152d7f119945c0867
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824203"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966509"
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu. Například `Person` doménová třída může mít vlastnosti `Name` a `BirthDate`. V definici DSL vlastnosti domény patří do domény pole třídy v diagramu a v rámci doménové třídy v Průzkumníku DSL. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).
@@ -52,4 +52,4 @@ A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu
 
 ## <a name="see-also"></a>Viz také
 
-- [Glosář nástrojů jazyka specifického pro doménu](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosář nástrojů jazyka specifického pro doménu](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
