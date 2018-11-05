@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a25658482fb29d31c19f3c63ed8222503188f6c7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a353caf4781a2c321a8a0b385e023686ca78cde
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673511"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000101"
 ---
-# <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Přístup k Azure Virtual Machines z Průzkumníka serveru
+# <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Přístup ke službě Azure Virtual Machines z Průzkumníka serveru
 
 Pokud máte virtuální počítače hostované v Azure, můžete k nim přistupovat v Průzkumníku serveru. Musíte nejdřív se přihlásit ke svému předplatnému Azure pro zobrazení vašich mobilních službách. Pro přihlášení, otevřete místní nabídku pro uzel Azure v Průzkumníku serveru a zvolte **připojit se k Microsoft Azure**.
 

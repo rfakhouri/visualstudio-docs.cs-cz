@@ -1,24 +1,24 @@
 ---
-title: Vytvoření pravidel nástroje Analýza kódu vlastní nastavení v sadě Visual Studio
-ms.date: 04/04/2018
+title: Vytvoření sady pravidel analýzy vlastního kódu
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884183"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000213"
 ---
 # <a name="customize-a-rule-set"></a>Přizpůsobení sady pravidel
 
@@ -69,6 +69,44 @@ Můžete také vytvořit nový soubor sady pravidel z **nový soubor** dialogov�
    Nová sada pravidel je vybrán v **spustit tuto sadu pravidel** seznamu.
 
 6. Vyberte **otevřete** otevřete novou sadu pravidel v editoru sad pravidel.
+
+### <a name="rule-precedence"></a>Priorita pravidla
+
+- Pokud je uvedené dva stejné pravidlo nebo víckrát v pravidle nastavit s jinou závažností, kompilátor vygeneruje chybu. Příklad:
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- Pokud je uvedené dva stejné pravidlo nebo vícekrát v pravidle nastavit s *stejné* závažnost, může zobrazit následující upozornění v **seznam chyb**:
+
+   **CA0063: nepovedlo se načíst soubor sady pravidel '\[vaše] .ruleset ' nebo jeden z jeho závislých pravidlo nastavit soubory. Soubor neodpovídá schématu sady pravidel.**
+
+- Pokud sada pravidel obsahuje podřízeným pravidlem nastavení s použitím **zahrnout** značky i podřízené a nadřazené sady pravidel seznamu stejné pravidlo, ale s jinou závažností, pak závažnost v nadřazené sadě pravidel má přednost. Příklad:
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
 
 ## <a name="name-and-description"></a>Název a popis
 

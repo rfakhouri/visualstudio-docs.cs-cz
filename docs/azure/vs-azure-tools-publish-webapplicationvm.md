@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: b75c23e989c0b0c5401aab56667d443b4aa0cd4d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 827a558c61a402ad5dadcea608a50af3883f88b4
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673387"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000092"
 ---
-# <a name="publish-webapplicationvm-windows-powershell-script"></a>Publikování – WebApplicationVM (skript Windows Powershellu)
+# <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (skript Windows PowerShellu)
 Nasadí webovou aplikaci k virtuálnímu počítači. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
 
 ```

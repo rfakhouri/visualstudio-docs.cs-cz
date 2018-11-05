@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f3d0a3499257a72d500774f00824150f88757823
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 62f95253b894e27cce7131bf387aacb5dd0f6903
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673510"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000268"
 ---
-# <a name="set-up-named-authentication-credentials"></a>Nastavení přihlašovacích údajů pro ověřování s názvem
+# <a name="set-up-named-authentication-credentials"></a>Nastavení pojmenovaných přihlašovacích údajů pro ověřování
 
 K publikování aplikace do Azure nebo k monitorování existující cloudovou službu Visual Studio vyžaduje přihlašovací údaje pro ověření požadavků ve službě Azure, a to ID vašeho předplatného Azure a platný certifikát X.509 v3 s klíčem alespoň 2 048 bitů. Zadáte tyto přihlašovací údaje pomocí kteréhokoliv z následujících metod:
 

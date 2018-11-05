@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c65dbc0f5a7d064d3752e47314345a0fb714b13
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 160fe5a4de39aec5d29d981202bcfb791b763d12
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673384"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000098"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Příprava k publikování nebo nasazení cloudové služby v sadě Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Příprava na publikování nebo nasazení cloudové služby v sadě Visual Studio
 
 Chcete-li publikovat projekt cloudové služby, musíte nastavit tyto služby jak je popsáno v tomto článku:
 
@@ -71,7 +71,7 @@ Pokud jste vytvořili cloudové služby pomocí sady Visual Studio **přidat př
 
 Pokud jste vytvořili cloudové služby na webu Azure portal, postupujte podle stejných kroků v [vytvoření účtu úložiště ze sady Visual Studio](#create-a-storage-account-from-visual-studio) ale vyberte existující účet, spíše než vytvářet novou. Visual Studio pak aktualizuje konfiguraci za vás.
 
-Chcete-li konfigurovat nastavení ručně, použijte stránky vlastností v sadě Visual Studio na příslušné roli v projektu cloudové služby (pravým tlačítkem myši na roli a vyberte **vlastnosti**). Další informace najdete v tématu [konfigurace připojovacího řetězce k účtu úložiště](https://docs.microsoft.com/azure/vs-azure-tools-multiple-services-project-configurations#configuring-a-connection-string-to-a-storage-account).
+Chcete-li konfigurovat nastavení ručně, použijte stránky vlastností v sadě Visual Studio na příslušné roli v projektu cloudové služby (pravým tlačítkem myši na roli a vyberte **vlastnosti**). Další informace najdete v tématu [konfigurace připojovacího řetězce k účtu úložiště](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>Informace o přístupových klíčů
 

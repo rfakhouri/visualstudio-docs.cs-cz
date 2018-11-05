@@ -10,19 +10,19 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120676"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000723"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3807"></a>3.8.0.7
  Vydáno 20. září 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Ladicí program:**
@@ -31,7 +31,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3806"></a>3.8.0.6
  Vydáno 27. srpna 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Integrace:**
@@ -40,7 +40,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3805"></a>3.8.0.5
  vydáno 20. srpna 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Integrace:**
@@ -49,13 +49,13 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3804"></a>3.8.0.4
  Vydáno 14. srpna 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Vyhodnocení:**
 
     -   Přidání podpory pro hodnoty ukazatele.
-    
+
     -   Přidání podpory pro obecné metody.
 
 ### <a name="bug-fixes"></a>Opravy chyb
@@ -66,7 +66,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3803"></a>3.8.0.3
  Vydáno 24. července 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Generování projektu:**
@@ -75,24 +75,24 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3802"></a>3.8.0.2
  Vydáno 7. července 2018
- 
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Generování projektu:**
 
     -   Přechodné alternativní řešení pro chyby výkonu Unity: při vytváření projektů do mezipaměti MonoIslands.
-    
+
 ## <a name="3801"></a>3.8.0.1
  Vydáno 26. června 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Ladění:**
 
     -   Přidání podpory pro příkazy UserLog a UserBreak.
-    
+
     -   Podpora přidání opožděné načtení typu (optimalizace síťová latence odezvy zatížení a ladicí program).
-       
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Vyhodnocení:**
@@ -101,19 +101,19 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="3800"></a>3.8.0.0
  Vydáno 30. května 2018
- 
+
 ### <a name="new-features"></a>Nové funkce
 
 -   **Ladění:**
 
     -   Přidání podpory pro zobrazení proměnné v asynchronní konstrukce.
-    
+
     -   Přidání podpory pro vnořené typy zpracování, při nastavení zarážek, aby se zabránilo upozornění s kompilátoru konstrukce.
-    
+
 -   **Integrace:**
 
     -   Přidání podpory pro gramatik textmate shadery (úlohy pro C++ je už je nepotřebujete pro zabarvení kódu shaderu).
-    
+
 ### <a name="bug-fixes"></a>Opravy chyb
 
 -   **Generování projektu:**
@@ -137,15 +137,15 @@ Protokol změn Visual Studio Tools for Unity.
 -   **Ladění:**
 
     -   Přidání podpory pro iniciovat organizovaně, což ladění (ladění více hráči nebo editoru pomocí stejné relaci sady Visual Studio).
-    
+
     -   Přidání podpory pro Android USB player ladění.
-    
+
     -   Přidání podpory pro UPW/endem IL2CPP player ladění.
 
 -   **Vyhodnocení:**
 
     -   Přidání podpory pro šestnáctkové specifikátorů.
-    
+
     -   Vylepšené sledování okno hodnocení.
 
 ### <a name="bug-fixes"></a>Opravy chyb
@@ -841,9 +841,9 @@ Protokol změn Visual Studio Tools for Unity.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
--   Opravte zpracování motivů aplikace Visual Studio. Dříve, dialogová okna na černé motivy může zobrazovat prázdný, (připojení problémy [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) a [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)).
+-   Opravte zpracování motivů aplikace Visual Studio. Dialogová okna na černé motivy dříve, může zobrazovat prázdný.
 
--   Oprava Unity zablokování při připojování ladicího programu během rekompilace Unity (připojit problémy [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) a [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)).
+-   Zablokování Unity stanovit při připojování ladicího programu během rekompilace Unity.
 
 -   Oprava zarážky při ladění vzdáleného editory nebo hráči zkompilovány v jiném systému.
 
@@ -853,7 +853,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   Opravte zpracování obor proměnné v ladicím programu, aby se zabránilo živé proměnné, které se zobrazují mimo rozsah.
 
--   Oprava vyhledávání statické členy v pořadí vyhodnocování výrazů ladicího programu (připojit problém [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)).
+-   Opravte vyhledávání statické členy v pořadí vyhodnocování výrazů ladicího programu.
 
 -   Opravte zobrazení typů v pořadí vyhodnocování výrazů ladicího programu k zobrazení statická pole a vlastnosti.
 

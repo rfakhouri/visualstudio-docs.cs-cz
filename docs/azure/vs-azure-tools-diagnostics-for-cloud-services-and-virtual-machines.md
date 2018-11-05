@@ -1,26 +1,23 @@
 ---
 title: Nastavení diagnostiky pro Azure Cloud Services a virtual machines | Dokumentace Microsoftu
 description: Zjistěte, jak nastavení diagnostiky pro ladění Azure cloude services a virtual machines (VM) v sadě Visual Studio.
-documentationcenter: na
-author: mikejo
+author: ghogen
 manager: douge
-editor: ''
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
-ms.service: multiple
-ms.devlang: dotnet
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: multiple
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: c80c879a3a059af1a01a0b03dd4e0c26d6ffec5a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 171f46efbcec7d21b281058475466f536899aa2b
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673520"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000519"
 ---
-# <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Nastavení diagnostiky pro Azure Cloud Services a virtual machines
+# <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Nastavení diagnostiky pro službu Azure Cloud Services a virtuální počítače
 Když budete potřebovat k řešení cloudové služby Azure nebo na virtuálním počítači, můžete použít Visual Studio snadněji nastavení Azure Diagnostics. Diagnostika zaznamená systémová data a data protokolování na virtuální počítače a instance virtuálních počítačů, na kterých běží vaše Cloudová služba. Diagnostická data se přenesou do účtu úložiště, kterou zvolíte. Další informace o diagnostice protokolování v Azure, najdete v článku [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
 V tomto článku ukážeme, jak pomocí sady Visual Studio k zapnutí a nastavení Azure Diagnostics před a po nasazení. Naučte se nastavení diagnostiky Azure na virtuálních počítačích, vyberte typy shromažďovat diagnostické informace a postup zobrazení informace po shromáždění zpracovat.

@@ -1,26 +1,23 @@
 ---
 title: Použití nástroje Emulator Express ke spouštění a ladění cloudové služby Azure v místním počítači | Dokumentace Microsoftu
 description: Použití nástroje Emulator Express ke spouštění a ladění cloudové služby na místním počítači
-documentationcenter: n/a
-author: mikejo
+author: mikejo5000
 manager: douge
-editor: ''
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
-ms.workload: na
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 4322da27ed09bb71b8724f53fc34a0b3653086f7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 955095af8bf587b39595be7ca6f332e2ac85b212
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673395"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000778"
 ---
-# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Použití nástroje Emulator Express ke spouštění a ladění cloudové služby Azure v místním počítači
+# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Spuštění a ladění cloudové služby Azure na místním počítači pomocí expresního emulátoru
 Podle použití nástroje Emulator Express, může testování a ladění cloudovou službu bez spuštění sady Visual Studio jako správce. Můžete nastavit nastavení projektu pro použití Emulator Express nebo úplný emulátor, v závislosti na požadavcích vaší cloudové služby. Další informace o úplný emulátor, naleznete v tématu [spuštění aplikace Azure v emulátoru Compute](/azure/storage/common/storage-use-emulator).
 
 ## <a name="using-emulator-express-in-visual-studio"></a>Pomocí expresní emulátor v sadě Visual Studio

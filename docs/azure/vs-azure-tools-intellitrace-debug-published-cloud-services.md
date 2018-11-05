@@ -1,27 +1,24 @@
 ---
 title: Ladění publikování Azure cloudové služby pomocí IntelliTrace a sady Visual Studio | Dokumentace Microsoftu
 description: Zjistěte, jak ladění cloudové služby pomocí IntelliTrace a sady Visual Studio
-documentationcenter: n/a
-author: mikejo
+author: mikejo5000
 manager: douge
-editor: ''
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
+ms.topic: conceptual
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: a66923de21f50acb078d10955587f672d9a2a171
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 492c3ab06bc2a9c832e2eea476a14dfaeba44fcc
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673489"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000249"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Ladění publikované Azure cloudové služby pomocí IntelliTrace a sady Visual Studio
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Ladění publikované cloudové služby Azure pomocí sady Visual Studio a nástroje IntelliTrace
 Pomocí nástroje IntelliTrace můžete protokolovat podrobné ladicí informace pro instanci role při spuštění v Azure. Pokud je potřeba najít příčinu problému, můžete protokoly IntelliTrace ke krokování kódu ze sady Visual Studio, jako kdyby byly spuštěné v Azure. Nástroj IntelliTrace zaznamenává v důsledku toho klíčů provádění kódu a dat prostředí, když vaše aplikace Azure běží jako cloudová služba v Azure a umožňuje přehrát zaznamenaná data ze sady Visual Studio. 
 
 Můžete použít nástroj IntelliTrace, pokud máte nainstalované Visual Studio Enterprise a vaše aplikace Azure cílí rozhraní .NET Framework 4 nebo novější. Nástroj IntelliTrace shromažďuje informace o Azure role. Virtuální počítače pro tyto role ke spuštění vždy 64bitové operační systémy.

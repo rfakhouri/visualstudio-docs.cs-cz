@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e8d42f86aa072c81f676353e7319d58a1fc17bf9
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 22a355938422959a750f153190552aad6116d96e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673509"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000143"
 ---
-# <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publikování – WebApplicationWebSite (skript Windows Powershellu)
+# <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (skript Windows PowerShellu)
 ## <a name="syntax"></a>Syntaxe
 Webový projekt se publikuje na web Azure. Skript vytvoří požadované prostředky ve vašem předplatném Azure, pokud ještě neexistují.
 

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 86801d96a0884bd9ca73f2b1cb066d2ad947c95a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 28a94b9ecc868168437957f838994f1c766b6d85
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673337"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000849"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: migrace a publikovat webovou aplikaci do cloudové služby Azure ze sady Visual Studio
 

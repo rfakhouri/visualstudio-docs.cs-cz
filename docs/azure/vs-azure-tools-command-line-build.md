@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: ef345310c31b95ab13b8e175d8810598d3cf7b09
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3934d93355cd652b5da09886e3c7afa5d406119a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673370"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000548"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Sestavování projektů Azure z příkazového řádku
 Microsoft Build Engine (MSBuild) můžete vytvářet produkty v prostředích sestavení testovacího prostředí, kde není nainstalovaná sada Visual Studio. Nástroj MSBuild používá formát XML pro soubory projektu, které je rozšiřitelný a plně podporovaný microsoftem. Pomocí nástroje MSBuild formát souboru, můžete popsat, co položky musí být vytvořená pro jeden nebo více platformách a konfiguracích.

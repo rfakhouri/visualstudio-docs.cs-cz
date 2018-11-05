@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aef833e6257b288283644ffdc9ea4458f332b27
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459813"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000120"
 ---
 # <a id="top"> </a> Visual Studio Image v Azure
 
@@ -34,8 +34,8 @@ Image pro aktuální hlavní verze, Visual Studio 2017 a Visual Studio 2015, naj
 
 | Prodejní verze                                              | Edice                     |     Verze produktu     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Sady Visual Studio 2017: Nejnovější verzi (verze 15.8)                    |    Organizace, Community     |      Verze 15.8.4     |
-| Visual Studio 2017: Nejnovější verze Preview (verzi 15.9, Preview 2) |    Organizace, Community     |      Verzi 15.9       |
+| Sady Visual Studio 2017: Nejnovější verzi (verze 15.8)                    |    Organizace, Community     |      Verze 15.8.7     |
+| Visual Studio 2017: Nejnovější verze Preview (verzi 15.9 ve verzi Preview 5) |    Organizace, Community     |      Verzi 15.9       |
 |         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.18    |
 |   Sady Visual Studio 2015: Nejnovější verzi (aktualizace 3)                      |    Organizace, Community     |  Verze 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Žádné             | (Platnost pro obsluhu) |

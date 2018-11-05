@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 6048e68a56fb68e8cb87306ed2dcf3b164f8e410
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 5e2c89b0e45d5432f08c03d3a4b4b38647b72848
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673350"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000701"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Přidání služby Azure storage pomocí připojených služeb sady Visual Studio
 Pomocí sady Visual Studio, můžete připojit cokoli z následujícího do služby Azure Storage s použitím **přidání připojené služby** dialogové okno:

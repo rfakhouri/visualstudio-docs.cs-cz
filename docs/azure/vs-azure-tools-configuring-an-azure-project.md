@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: ac81b2ff055f5ccb181c544023c88511169b0531
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53f7ecc53b78e4a474fb153feebed648f2aa6ca8
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673481"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000354"
 ---
-# <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurace projektu Azure cloud service pomocí sady Visual Studio
+# <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurace projektu cloudové služby Azure v sadě Visual Studio
 Projekt Azure cloud service, můžete nakonfigurovat v závislosti na vašich požadavcích pro daný projekt. Můžete nastavit vlastnosti projektu v těchto kategoriích:
 
 - **Publikovat do cloudového Azure** – můžete nastavit vlastnosti a ujistěte se, že není možné omylem odstranit existující cloudové služby nasadit do Azure.

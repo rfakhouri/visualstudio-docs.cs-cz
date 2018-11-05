@@ -1,24 +1,21 @@
 ---
 title: Testování výkonu cloudové služby | Dokumentace Microsoftu
 description: Testování výkonu cloudové služby pomocí profileru sady Visual Studio
-documentationcenter: n/a
-author: mikejo
+author: mikejo5000
 manager: douge
-editor: ''
 ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
-ms.workload: na
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 8af82c8e0e4010e50425a5e3af2a9b24402cbe6d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: cd846d58ed6f9236b2fd0942f8caf7755a6ff993
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673524"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000584"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testování výkonu cloudové služby
 ## <a name="overview"></a>Přehled

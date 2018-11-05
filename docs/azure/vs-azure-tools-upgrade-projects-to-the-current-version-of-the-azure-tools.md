@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 1bb499b1f5bb96985ef87c68d79dc1a47ce9979f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8d8b5ac6beb6cfb7b40f3f09fded3fef365652a4
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673375"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000429"
 ---
-# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Postup při upgradu projektů na aktuální verzi nástroje Azure pro sadu Visual Studio
+# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Postup upgradu projektů na aktuální verzi nástrojů Azure pro Visual Studio
 ## <a name="overview"></a>Přehled
 Po instalaci aktuální verze sady nástrojů Azure (nebo předchozí verze, která je novější než 1.6) verze všechny projekty, které byly vytvořeny pomocí nástroje Azure před 1.6 (Listopad 2011) se automaticky upgraduje poté, co je otevřete. Pokud jste vytvořili projekty pomocí 1.6 (Listopad 2011) verzi těchto nástrojů a ještě tuto verzi nainstalovat, můžete tyto projekty otevřít ve starší verzi a můžete rozhodnout později, jestli se má provést upgrade.
 

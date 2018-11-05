@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: fb3e70f724e91826751b59dc4ab93d753ec4d10a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 26e61a38295726147655c357e700178d957f1b00
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673326"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000290"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Správa rolí v cloudových službách Azure pomocí sady Visual Studio
 Po vytvoření cloudové služby Azure, můžete k němu přidat nové role nebo z něj odebrat existující role. Můžete také naimportovat existující projekt a převeďte jej na roli. Můžete například importovat webové aplikace ASP.NET a určit ji jako webová role.

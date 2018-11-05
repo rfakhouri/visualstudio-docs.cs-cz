@@ -1,25 +1,22 @@
 ---
 title: Optimalizace kódu Azure v sadě Visual Studio | Dokumentace Microsoftu
 description: Zjistěte, o tom, jak Azure kódu pomocí nástroje optimalizace v sadě Visual Studio byl kód, robustní a lepší výkon.
-documentationcenter: na
-author: cawa
-manager: paulyuk
-editor: ''
+author: ghogen
+manager: douge
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
-ms.service: multiple
-ms.devlang: dotnet
-ms.topic: article
-ms.tgt_pltfrm: na
+ms.topic: conceptual
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
-ms.author: cawa
-ms.openlocfilehash: 6fe7aa7e2b75a576aa60c3cd559346487ed3fac5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.author: ghogen
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: b87ffdb32c1b6934a32dbdffdf6c8702e79fc271
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673342"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000663"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimalizace kódu Azure
 Pokud programujete aplikace, které využívají Microsoft Azure, existují některé postupy psaní kódu, které byste měli postupovat, která pomáhá zabránit problémům s aplikací škálovatelnost, chování a výkon v cloudovém prostředí. Společnost Microsoft poskytuje nástroj Azure analýzy kódu, který rozpozná a některé z těchto problémů obvykle zjistil identifikuje a pomáhá vám je vyřešit. Můžete stáhnout nástroj v sadě Visual Studio prostřednictvím balíčku NuGet.

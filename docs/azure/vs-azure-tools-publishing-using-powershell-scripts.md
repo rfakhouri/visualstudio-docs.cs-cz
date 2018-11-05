@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 4ff17c33c56227520e4a1491275d1489383a1eea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 5ee9ca92533e19b1c845242efda49aee410d264a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673484"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000746"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Použití skriptů Windows Powershellu k publikování do vývojových a testovacích prostředí
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Použití skriptů PowerShellu k publikování do vývojových a testovacích prostředí
 
 Při vytváření webové aplikace v sadě Visual Studio, můžete vygenerovat skript prostředí Windows PowerShell, který můžete později použít k automatickému publikování vašeho webu do Azure jako webovou aplikaci ve službě Azure App Service nebo virtuální počítač. Můžete upravit a rozšířit skript Windows Powershellu v editoru sady Visual Studio tak, aby vyhovoval vašim požadavkům nebo můžete skript integrovat s existující sestavení, testování a publikování skripty.
 

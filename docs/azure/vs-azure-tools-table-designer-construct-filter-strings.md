@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 0b0c6954729c92382cb11ea0b7b5a4b7e9922b77
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ccba0314e51116b58aa44bd25309b921c47c8799
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673515"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000589"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>Vytváření řetězce filtru pro Návrhář tabulky
+# <a name="constructing-filter-strings-for-the-table-designer"></a>Vytváření filtračních řetězců pro Návrháře tabulky
 ## <a name="overview"></a>Přehled
 Jak filtrovat data v tabulce Azure, který se zobrazí v sadě Visual Studio **návrháře tabulky**, sestavit řetězec filtru a zadejte do pole filtru. Přesná syntaxe filtru je definována služby WCF Data Services je podobná klauzuli WHERE příkazu SQL, ale je odeslána do služby Table service prostřednictvím požadavku HTTP. **Návrháře tabulky** zpracovává správné kódování, tak k filtrování hodnotu požadované vlastnosti, byste třeba zadat název vlastnosti, operátor porovnání, hodnotu pro kritéria a volitelně, logická hodnota operátoru do pole filtru. Není potřeba zahrnují možnost dotazu $filter, jako kdybyste se generuje adresu URL a dotaz tabulku prostřednictvím [Reference k REST API služby Storage](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 

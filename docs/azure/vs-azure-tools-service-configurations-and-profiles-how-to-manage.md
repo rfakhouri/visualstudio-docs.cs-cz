@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ab53f038d926785726c90c7e8136c0680ea9fb41
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1b520edc52c21d3edfc03b7e501a838eabe775ff
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673526"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000852"
 ---
-# <a name="how-to-manage-service-configurations-and-profiles"></a>Jak spravovat konfigurace služeb a profily
+# <a name="how-to-manage-service-configurations-and-profiles"></a>Postup správy konfigurací a profilů služby
 ## <a name="overview"></a>Přehled
 Při publikování cloudové služby Visual Studio ukládá informace o konfiguraci dva druhy konfigurační soubory: Konfigurace a profily. Konfigurace služby (.cscfg soubory) ukládat nastavení prostředí nasazení pro cloudovou službu Azure. Při správě služby cloud services, Azure využívá tyto konfigurační soubory. Na druhé straně profily (soubory .azurePubxml) úložiště nastavení publikování pro cloudové služby. Tato nastavení jsou záznamy o volbách, když použijete Průvodce publikováním a používají místně pomocí sady Visual Studio. Toto téma vysvětluje, jak pracovat s oběma typy konfiguračních souborů.
 
@@ -58,7 +58,7 @@ Můžete také otevřít **spravovat konfigurace** dialogové okno stránky vlas
     Název konfiguračního souboru služby se změnilo v projektu Azure v Průzkumníku řešení.
 
 ### <a name="to-change-a-service-configuration"></a>Chcete-li změnit konfiguraci služby
-* Pokud chcete změnit konfiguraci služby, otevřete místní nabídku pro konkrétní role, které chcete změnit v projektu Azure a pak vyberte **vlastnosti**. V tématu [postupy: Konfigurace rolí pro cloudové služby Azure pomocí sady Visual Studio](https://docs.microsoft.com/azure/vs-azure-tools-configure-roles-for-cloud-service) Další informace.
+* Pokud chcete změnit konfiguraci služby, otevřete místní nabídku pro konkrétní role, které chcete změnit v projektu Azure a pak vyberte **vlastnosti**. V tématu [postupy: Konfigurace rolí pro cloudové služby Azure pomocí sady Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) Další informace.
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Ujistěte se, kombinace různých nastavení s použitím profilů
 Když použijete profil, můžete automaticky vyplnit **Průvodce publikováním** s různými kombinacemi nastavení pro různé účely. Například může mít jeden profil pro ladění a další položku pro verzi sestavení. V takovém případě vaše **ladění** profilu bude mít **IntelliTrace** povolené a **ladění** vybranou, konfiguraci a **vydání** profil by obsahovat **IntelliTrace** zakázána a **vydání** vybranou konfiguraci. Různé profily můžete také použít k nasazení služby pomocí jiného účtu úložiště.

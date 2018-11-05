@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755921"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000226"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup ohlášení problému se sadou Visual Studio 2017
 
@@ -125,7 +125,7 @@ Od verze Visual Studio 2017 verze 15.5, je nový pracovní postup k poskytován�
 
 Pokud nechcete nebo nemůžete použít Visual Studio Pokud chcete nahlásit problém, je pravděpodobné, že problém již oznámen a publikování řešení na [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com/) stránky.
 
-Pokud nemají problém do sestavy, ale chcete poskytnout názor na produkt či návrh, je místo, kde, příliš. Další informace najdete v tématu [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) stránky.
+Pokud nemáte problém nahlásit, ale chcete navrhnout funkci, je místo, kde, příliš. Další informace najdete v tématu [navrhnout funkci](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) stránky.
 
 ## <a name="see-also"></a>Viz také:
 

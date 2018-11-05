@@ -1,5 +1,5 @@
 ---
-title: Nastavení vodopádu | Nástroj pro testování Microsoft IntelliTest Developer
+title: Vodopádové nastavení | Nástroj pro testování Microsoft IntelliTest Developer
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,24 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec6364b3d130ab3ca333838c7e1b6eb2fdcb4a3d
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 27eb9b7e3cda7c05515f5a7413b067dce2b8567e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815048"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000397"
 ---
 # <a name="settings-waterfall"></a>Vodopádové nastavení
 
-Koncept vodopádu nastavení znamená, že může uživatel zadat nastavení na **sestavení**, **přípojka**, a **zkoumání** úroveň:
+Koncept vodopádové nastavení znamená, že uživatel může zadat nastavení na **sestavení**, **testovacího přípravku**, a **zkoumání** úroveň:
 
-* Sestavení – [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
-* Přípojka - [PexClass](attribute-glossary.md#pexclass)
+* Sestavení - [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
+* Testovací přípravek - [PexClass](attribute-glossary.md#pexclass)
 * Zkoumání - [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
 
-Nastavení zadané **sestavení** úroveň vliv na všechny příslušenství a zkoumání v rámci této položky assembly. Zadaný v nastavení **přípojka** úroveň vliv na všechny explorations v rámci této přípojka. Podřízené nastavení win&mdash;Pokud je nastavení definované v **sestavení** a **přípojka** úrovně, **přípojka** nastavení se používá.
+Zadaný v nastavení **sestavení** úroveň ovlivňují všechny komunikací a zkoumání v rámci tohoto sestavení. Zadaný v nastavení **testovacího přípravku** úroveň ovlivňují všechny průzkumů v rámci této testovací přípravek. Nastavení win podřízené&mdash;Pokud nastavení je definován na **sestavení** a **testovacího přípravku** úrovně, **testovacího přípravku** nastavení jsou použita.
 
-Všimněte si, že některá nastavení jsou specifické pro **sestavení** úroveň nebo **přípojka** úroveň.
+Všimněte si, že některá nastavení jsou specifická pro **sestavení** úroveň nebo **testovacího přípravku** úroveň.
 
 **Příklad**
 
@@ -48,6 +48,6 @@ namespace MyTests
 }
 ```
 
-## <a name="got-feedback"></a>Zpětné vazby máte?
+## <a name="got-feedback"></a>Máte nějakou zpětnou vazbu?
 
-Vystavení vašich nápadů a funkce požadavky na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Publikovat své nápady a funkce na požadavky [komunity vývojářů](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).

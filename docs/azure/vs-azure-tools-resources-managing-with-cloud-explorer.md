@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 43898f330ed58863bdf7b14c6574a2b09e795043
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: db2127cbca42f158fa10617ceac04976fdbfcaf3
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673488"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000750"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Spravovat prostředky přidružené k účtům Azure v Průzkumníku cloudu sady Visual Studio
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Správa prostředků přidružených k účtům Azure v Průzkumníkovi cloudu sady Visual Studio
 
 Průzkumník cloudu umožňuje zobrazit vaše prostředky Azure a skupiny prostředků, zkoumání jejich vlastností a provádění klíčových vývojářských diagnostiky úkonů ze sady Visual Studio. 
 
