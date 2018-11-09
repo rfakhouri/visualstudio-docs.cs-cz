@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220144"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221045"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>Další informace  
   
--   Sledování [toto video](http://channel9.msdn.com/Events/Build/2013/3-316) z konference Build 2013 o Profiler odezvy uživatelského rozhraní.  
+-   Sledování [toto video](https://channel9.msdn.com/Events/Build/2013/3-316) z konference Build 2013 o Profiler odezvy uživatelského rozhraní.  
   
--   Přečtěte si tipy ke zvýšení výkonu pro aplikace UPW vytvořené pro Windows pomocí jazyka JavaScript. Další informace najdete v tématu [osvědčené postupy z hlediska výkonu pro aplikace pro UPW pomocí jazyka JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Přečtěte si tipy ke zvýšení výkonu pro aplikace UPW vytvořené pro Windows pomocí jazyka JavaScript. Další informace najdete v tématu [osvědčené postupy z hlediska výkonu pro aplikace pro UPW pomocí jazyka JavaScript](/previous-versions/windows/apps/hh465194\(v\=win.10\)).  
   
--   Informace o modelu provádění kódu s jedním vláknem a výkonu najdete v tématu [provádění kódu](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+-   Informace o modelu provádění kódu s jedním vláknem a výkonu najdete v tématu [provádění kódu](/previous-versions/windows/apps/hh781217\(v\=win.10\)).  
   
 ## <a name="see-also"></a>Viz také:  
  [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)
