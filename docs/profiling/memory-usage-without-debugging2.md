@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827727"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220772"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analýza využití paměti bez ladicího programu sady Visual Studio
 Můžete použít **využití paměti** nástroje bez ladění můžete provádět následující  
@@ -204,5 +204,5 @@ Můžete použít **využití paměti** nástroje bez ladění můžete provád�
  [Paměti jazyka JavaScript](../profiling/javascript-memory.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)  
- [Osvědčené postupy z hlediska výkonu pro aplikace pro UPW pomocí jazyka C++, C# a Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Osvědčené postupy z hlediska výkonu pro aplikace pro UPW pomocí jazyka C++, C# a Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnostika problémů s pamětí pomocí nového nástroje využití paměti v aplikaci Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
