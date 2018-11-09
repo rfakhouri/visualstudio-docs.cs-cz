@@ -11,12 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667922"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220804"
 ---
 # <a name="remote-r-service-for-linux"></a>Vzdálená služba R pro Linux
 
@@ -108,7 +108,7 @@ V obou případech vzdálený počítač musí mít jednu z těchto balíčků p
 
 ### <a name="windows-subsystem-for-linux-wsl"></a>Subsystém Windows pro Linux (WSL)
 
-1. Postupujte podle pokynů WSL buď [Windows 10](https://msdn.microsoft.com/commandline/wsl/install-win10) nebo [systému Windows Server](https://msdn.microsoft.com/en-us/commandline/wsl/install-on-server).
+1. Postupujte podle pokynů WSL buď [Windows 10](/windows/wsl/install-win10#install-the-windows-subsystem-for-linux) nebo [systému Windows Server](/windows/wsl/install-on-server#enable-the-windows-subsystem-for-linux-wsl).
 1. Spusťte prostředí bash ve Windows a postupujte podle předchozích pokynů [Ubuntu fyzické počítače](#physical-ubuntu-computer) s jednou výjimkou. Krok 3, spusťte službu pomocí příkazu `rtvsd`místo toho protože WSL aktuálně nepodporuje systemd/systemctl rozhraní.
 
 ### <a name="local-or-remote-docker-container-clean-build"></a>Místním nebo vzdáleném kontejneru Dockeru (čisté sestavení)

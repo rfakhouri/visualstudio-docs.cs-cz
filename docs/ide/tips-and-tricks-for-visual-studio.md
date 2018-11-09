@@ -1,6 +1,6 @@
 ---
 title: Visual Studio klávesové zkratky
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e38fb09f77d7c00d2764ca181a604b3e25c264b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672974"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220850"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
@@ -73,6 +73,11 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 
 |Příkaz|Zástupce|Dostupnost verze|
 |-|-|-|
+|Přejít na vše|**Ctrl**+**T**|
+|Přejít na poslední soubory|**CTRL**+**T**,**R**|
+|Více blikající kurzor o více body vložení|**CTRL**+**Alt**+**klikněte na**|
+|Více blikající kurzor o přidat odpovídající výběr|**SHIFT**+**Alt**+**in**|
+|Formátovat dokument|**CTRL**+**K**,**D**|Visual Studio 2017 verze 15.8|
 |Režim návrhu technologie IntelliSense|**CTRL**+**Alt**+**místo** (přepnutí)||
 |Vynutit zobrazení IntelliSense|**CTRL**+**J**||
 |Rychlé akce|**CTRL**+**.**||
@@ -95,6 +100,9 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 |Navigace mezi více okny definice operace Peek|**CTRL**+**Alt** + **-** a **Ctrl**+**Alt**+**=**||
 |Navigace mezi více výsledky operace Peek|**F8** a **Shift**+**F8**||
 |Přepnout mezi oknem editoru kódu a oknem Náhled definice|**SHIFT**+**Esc**||
+|Přejít na nadřazený blok|**CTRL**+**Alt**+**UpArrow**|
+|Přejít na další/předchozí problém|**ALT**+**PgUp**/**PAGE DOWN**|
+|Kontextové nabídky navigace|**ALT**+**`**|
 
 ## <a name="toolbars"></a>Panely nástrojů
 
