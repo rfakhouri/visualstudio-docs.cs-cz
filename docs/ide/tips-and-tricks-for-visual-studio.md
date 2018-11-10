@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348940"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220850"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
@@ -22,9 +22,6 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 
 > [!TIP]
 > Klávesové zkratky uvedené jsou pouze podmnožinu dostupných klávesových zkratek. Úplný seznam najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-> [!NOTE]
-> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [běžných klávesových zkratek v sadě Visual Studio pro Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Správa oken
 
@@ -139,5 +136,4 @@ Můžete přejít v sadě Visual Studio snadněji pomocí klávesové zkratky v 
 
 - [A tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md)
 - [Klávesové zkratky (služby Azure DevOps a TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Blog tipů a triků Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
-- [Běžné klávesové zkratky v sadě Visual Studio pro Mac](/visualstudio/mac/keyboard-shortcuts)
+- [Blog tipů a triků Visual Studio](https://blogs.msdn.com/b/zainnab)
