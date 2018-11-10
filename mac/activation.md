@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624167"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294653"
 ---
 # <a name="enable-subscription"></a>Povolit odběr
 
@@ -43,3 +43,7 @@ V současné době neexistuje žádný způsob, jak využít kód product key pr
 > Visual Studio 2017 for Mac Professional nebo Enterprise předplatné aktivovat, musíte být připojeni k Internetu při přihlášení.
 
 Pokud jste si koupili Visual Studio Enterprise 2017 for Mac pro počítače bez připojení k Internetu, můžete dál používat Visual Studio pro Mac bez aktivace, ale Xamarin Inspector Xamarin Profiler a nesmí být funkce vložená sestavení k dispozici.
+
+## <a name="see-also"></a>Viz také:
+
+- [Přihlaste se k sadě Visual Studio (ve Windows)](/visualstudio/ide/signing-in-to-visual-studio)

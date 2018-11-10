@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228858"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295680"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac prohlídku
 
@@ -56,13 +56,13 @@ Je to, kde soubory pro zdrojový kód, prostředky, uživatelské rozhraní a z�
 Další informace o použití projekty a řešení v sadě Visual Studio pro Mac, najdete v článku [projekty a řešení](projects-and-solutions.md) článku.
 
 ## <a name="assembly-references"></a>Odkazy na sestavení
- 
+
 Odkazy na sestavení pro každý projekt jsou k dispozici ve složce odkazy:
 
 ![Složka s odkazy v oblasti řešení](media/ide-tour-image19.png)
 
 Další odkazy jsou přidána pomocí **upravit odkazy** dialogové okno, které se zobrazí na něj poklikejte na složku odkazy nebo tak, že vyberete **upravit odkazy** na jeho místní nabídky akce:
- 
+
 ![Odkazy na dialogové okno Upravit](media/ide-tour-image20.png)
 
 Další informace o používání odkazů v sadě Visual Studio pro Mac, najdete v článku [Správa odkazů v projektu](managing-references-in-a-project.md) článku.
@@ -93,7 +93,7 @@ Další informace o datové vizualizace ladicího programu, najdete [vizualizace
 
 ## <a name="version-control"></a>Správa verzí
 
-Visual Studio pro Mac se integruje s systémy správy zdrojového kódu Git a Subversion. Projekty v rámci správy zdrojového kódu, jsou označeny větev uvedená vedle názvu řešení: 
+Visual Studio pro Mac se integruje s systémy správy zdrojového kódu Git a Subversion. Projekty v rámci správy zdrojového kódu, jsou označeny větev uvedená vedle názvu řešení:
 
 ![Název větve k označení projekt pod správou zdrojových kódů](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Soubory s nepotvrzené změny mít anotaci na jejich ikonami v podokně řešen�
 ![Nepotvrzené soubory v oblasti řešení](media/ide-tour-image23.png)
 
 Další informace o používání správy verzí v sadě Visual Studio, najdete v článku [verzí](version-control.md) článku.
+
+## <a name="see-also"></a>Viz také:
+
+- [Visual Studio IDE (ve Windows)](/visualstudio/ide/visual-studio-ide)

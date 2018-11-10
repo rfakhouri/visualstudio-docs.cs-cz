@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820459"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348744"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Součásti musí být globálně zaregistrovaní a proto může způsobit nežádoucí vedlejší účinky mezi aplikacemi se překrývají. Tato situace není obecně problém v aplikacích .NET Framework protože komponenty jsou naprosto izolované k aplikaci nebo jsou kompatibilní se vedle sebe. Visual Studio umožňuje nasadit izolované komponenty modelu COM na Windows XP nebo novější operační systém.  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] poskytuje snadné a bezpečné mechanismus pro nasazení aplikací .NET. Nicméně pokud vaše aplikace používá starší verzi komponenty modelu COM, je potřeba provést další kroky pro jejich nasazení. Toto téma popisuje, jak nasadit izolované součásti COM a odkazovat na nativní součásti (například z jazyka Visual Basic 6.0 nebo Visual C++).  
   
- Další informace o nasazení izolované komponenty modelu COM, najdete v části "zjednodušení nasazení aplikací s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a modelu COM bez registrace" v [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Další informace o nasazení izolované komponenty modelu COM, naleznete v tématu [zjednodušit nasazení aplikace s ClickOnce a modelu COM bez registrace](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).
   
 ## <a name="registration-free-com"></a>COM bez registrace  
  COM bez registrace je nová technologie pro nasazení a aktivace izolované komponenty modelu COM. Funguje tak, že vložíte všechny komponenty knihovny typů a registrační informace, které je obvykle nainstalován do systémového registru do souboru XML s názvem manifestu, uloženy ve stejné složce jako aplikace.  

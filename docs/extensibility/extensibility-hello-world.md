@@ -1,5 +1,5 @@
 ---
-title: Hello World | Dokumentace Microsoftu
+title: Kurz Hello World rozšíření | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356753"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349462"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Vytvořit své první rozšíření: Hello World
 
@@ -30,6 +30,9 @@ V procesu, se dozvíte, jak:
 V tomto příkladu použijete Visual C# můžete přidat že vlastní tlačítko s názvem "Řekněme, že Hello World!" který vypadá takto:
 
 ![Příkaz Hello World](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> Tento článek se týká k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [návod rozšíření v sadě Visual Studio pro Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough).
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -133,6 +136,6 @@ Byste měli vidět výstup z vlastního příkazu, v tomto případě dialogové
 
 Teď, když znáte základy práce se rozšíření produktu Visual Studio, zde je, kde můžete další informace:
 
-* [Začněte vyvíjet rozšíření aplikace Visual Studio](starting-to-develop-visual-studio-extensions.md) – ukázky, kurzy. a publikování vašeho rozšíření.
+* [Začněte vyvíjet rozšíření aplikace Visual Studio](starting-to-develop-visual-studio-extensions.md) – ukázky, kurzy. a publikování rozšíření
 * [Co je nového ve Visual Studio 2017 SDK](what-s-new-in-the-visual-studio-2017-sdk.md) – nové funkce rozšíření v sadě Visual Studio 2017
 * [V sadě Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) – další podrobnosti o rozšíření produktu Visual Studio

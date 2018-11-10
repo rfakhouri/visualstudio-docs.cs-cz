@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910963"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296239"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružte jej k šabloně položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony přidáte novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -306,7 +306,7 @@ ms.locfileid: "49910963"
   
 13. V **popis** zadejte **otevře web SharePoint Developer Center**.  
   
-14. V **URL** zadejte **http://msdn.microsoft.com/sharepoint/default.aspx**a klikněte na tlačítko **Dokončit** tlačítko.  
+14. V **URL** zadejte **https://docs.microsoft.com/sharepoint/dev/** a klikněte na tlačítko **Dokončit** tlačítko.  
   
      Visual Studio přidá položku s názvem **CustomAction1** projekt a otevře *Elements.xml* souboru v editoru. Ověřte, že *Elements.xml* obsahuje hodnoty, které jste zadali v průvodci.  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910963"
   
      **Nastavení seznamu** se zobrazí stránka.  
   
-4.  V části **komunikace** záhlaví v horní části stránky, zvolte **středisko pro vývojáře služby SharePoint** propojení, ověřte, že v prohlížeči se otevře web http://msdn.microsoft.com/sharepoint/default.aspxa pak ukončete prohlížeč.  
+4.  V části **komunikace** záhlaví v horní části stránky, zvolte **středisko pro vývojáře služby SharePoint** propojení, ověřte, že v prohlížeči se otevře web https://docs.microsoft.com/sharepoint/dev/a pak ukončete prohlížeč.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Čištění vývojového počítače
  Po dokončení testování položku projektu, odeberte šablony položky projektu z experimentální instanci sady Visual Studio.  

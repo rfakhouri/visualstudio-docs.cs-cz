@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889994"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295901"
 ---
 # <a name="develop-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typu projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvků na webu. Seznam dostupných typů projektu naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis prvků a vlastností projektu služby SharePoint.  
   
- Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) a [vytváření Sharepointových doplňků](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ Informace o SharePoint 2013 a doplňky pro SharePoint, naleznete v tématu [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) a [vytváření Sharepointových doplňků](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).  
   
 ## <a name="elements-of-a-sharepoint-project"></a>Prvky projektu služby SharePoint
  Uzly v rámci projektu služby SharePoint jsou označovány jako *položek Sharepointového*. Položky služby SharePoint mohou obsahovat také jeden nebo více podsouborů, označované jako *soubory položek Sharepointového*, jako například [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] konfigurační soubory, formuláře .aspx a další.  
@@ -97,10 +97,10 @@ ms.locfileid: "49889994"
   
 |Název vlastnosti|Popis|  
 |-------------------|-----------------|  
-|Akce sestavení|Určuje, jak soubor souvisí s procesy sestavení a nasazení. Další informace najdete v tématu [vlastnosti souboru](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Kopírovat do výstupního adresáře|Určuje, zda zdrojové soubory budou zkopírovány do výstupního adresáře. Může být jedna z následujících hodnot:<br /><br /> -   *Nekopírovat*<br />-   *Vždy kopírovat*<br />-   *Kopírovat, pokud je novější*<br /><br /> Další informace najdete v tématu [vlastnosti souboru](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Vlastní nástroj|Určuje název nástroje, pokud existuje, který transformuje soubor v době návrhu a umístí výstup transformace do jiného souboru. Například datovou sadu (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) soubor má vlastní výchozí nástroj. Další informace najdete v tématu [vlastnosti souboru](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Custom Tool Namespace|Obor názvů, do kterého je zkopírován výstup vlastního nástroje. Další informace najdete v tématu [vlastnosti souboru](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Akce sestavení|Určuje, jak soubor souvisí s procesy sestavení a nasazení. Další informace najdete v tématu [vlastnosti souboru](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Kopírovat do výstupního adresáře|Určuje, zda zdrojové soubory budou zkopírovány do výstupního adresáře. Může být jedna z následujících hodnot:<br /><br /> -   *Nekopírovat*<br />-   *Vždy kopírovat*<br />-   *Kopírovat, pokud je novější*<br /><br /> Další informace najdete v tématu [vlastnosti souboru](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Vlastní nástroj|Určuje název nástroje, pokud existuje, který transformuje soubor v době návrhu a umístí výstup transformace do jiného souboru. Například datovou sadu (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) soubor má vlastní výchozí nástroj. Další informace najdete v tématu [vlastnosti souboru](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
+|Custom Tool Namespace|Obor názvů, do kterého je zkopírován výstup vlastního nástroje. Další informace najdete v tématu [vlastnosti souboru](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|  
 |Umístění nasazení|Plně kvalifikovanou cestu souboru na Sharepointovém serveru. Tato cesta se skládá z kořene nasazení a cesty nasazení podvlastností.|  
 |Cesta nasazení|Relativní cesta souboru v souboru SharePoint Server, jako je například Workflow1\\. Plně kvalifikovanou cestu k souboru se vytváří zřetězením *cesty nasazení* hodnotu na konec objektu *kořen nasazení* hodnotu.<br /><br /> Výběrem hodnoty z *RootFile* pro *typ nasazení* změny vlastností *kořen nasazení* vlastnost \<SharePointRoot >\\výsledkem plně kvalifikovanou cestu z \<SharePointRoot > \Workflow1\\. Další informace najdete v tématu [balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Kořen nasazení|řetězec. Kořenové složky, kde je soubor nasazen na serveru SharePoint. Například \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Hodnota *kořen nasazení* vlastnost je určena *typ nasazení* nastavení.|  

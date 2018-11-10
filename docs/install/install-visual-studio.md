@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856168"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349686"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
 Vítá vás nový způsob, jak nainstalovat sadu Visual Studio! V naší nejnovější verzi My jsme usnadnili si můžete vybrat a instalace jen těch funkcí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém, než kdy dřív.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [instalace sady Visual Studio pro Mac](/visualstudio/mac/installation).
 
 Chcete vědět více o tom, co je nového v této verzi? Najdete v našich [poznámky k verzi](/visualstudio/releasenotes/vs2017-relnotes).
 
@@ -149,4 +152,4 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
 * [Odinstalace sady Visual Studio 2017](uninstall-visual-studio.md)
 * [Vytvoření offline instalace sady Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Instalační program a instalace sady Visual Studio pro Mac](/visualstudio/mac/installation)
+* [Instalace sady Visual Studio pro Mac](/visualstudio/mac/installation)

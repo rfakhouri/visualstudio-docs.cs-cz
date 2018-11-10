@@ -12,20 +12,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: df3fbccff1bd76954b153c4c3159e1d65527e90b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42623907"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349286"
 ---
 # <a name="code-style-preferences"></a>Předvolby stylu kódu
 
-Pro projekty jazyka C# a Visual Basic lze nastavit předvolby stylu kódu tak, že otevřete **možnosti** dialogové **nástroje** nabídky. V **možnosti** dialogu **textový Editor** > [**jazyka C#** nebo **základní**] > **styl kódu**  >  **Obecné**. Možnostmi nastavenými v tomto okně platí pouze v místním počítači.
+Pro projekty jazyka C# a Visual Basic lze nastavit předvolby stylu kódu tak, že otevřete **možnosti** dialogové **nástroje** nabídky. V **možnosti** dialogu **textový Editor** > [**C#** nebo **základní**] > **styl kódu**  >  **Obecné**. Možnostmi nastavenými v tomto okně platí pouze v místním počítači.
 
 Každá položka v seznamu zobrazí náhled předvoleb při výběru:
 
 ![Možnosti stylu kódu](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [chování editoru v sadě Visual Studio pro Mac](/visualstudio/mac/editor-behavior).
 
 ## <a name="preference-and-severity"></a>Priority a závažnosti
 
@@ -39,7 +42,7 @@ Nastavení stylu kódu pro .NET je také možné spravovat pomocí [EditorConfig
 
 V sadě Visual Studio 2017 verze 15,8 a vyšší můžete nakonfigurovat **formátovat dokument** příkazu (**upravit** > **Upřesnit**  >  **Formátovat dokument**) v souboru provést čištění dalšího kódu, například odebrat a seřadit direktivy using nebo použít předvolby stylu kódu. Můžete definovat nastavení, které chcete, aby **formátovat dokument** použít [stránka možností formátování](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
-Kód čištění respektuje konfiguraci v nastavení *.editorconfig* souboru nebo ve kterém chybí dané pravidlo nebo soubor, nastavení **nástroje** > **možnosti**  >  **Textový Editor** > **jazyka C#** > [**styl kódu** nebo **formátování**].
+Kód čištění respektuje konfiguraci v nastavení *.editorconfig* souboru nebo ve kterém chybí dané pravidlo nebo soubor, nastavení **nástroje** > **možnosti**  >  **Textový Editor**  >  **C#** > [**styl kódu** nebo **formátování**].
 
 Poprvé spustíte **formátovat dokument** příkaz v sadě Visual Studio 2017, žlutý informační panel zobrazí výzvu, mohli konfigurovat svá nastavení vyčištění kódu.
 
@@ -50,3 +53,4 @@ Poprvé spustíte **formátovat dokument** příkaz v sadě Visual Studio 2017, 
 
 - [Rychlé akce](../ide/quick-actions.md)
 - [EditorConfig nastavení konvence psaní kódu .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Chování editoru (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176184"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349345"
 ---
 # <a name="working-with-xml-data"></a>Práce s daty XML
 
@@ -50,11 +50,11 @@ Visual Studio podporuje ladění šablon stylů XSLT. Pomocí ladicího programu
 
 [Ladění XSLT](../xml-tools/debugging-xslt.md) popisuje, jak ladit pomocí ladicího programu sady Visual Studio šablony stylů.
 
-[Reference na standardy XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.
+[Reference na standardy XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.
 
 [Vytvoření a konfigurace datové sady v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) obsahuje vysvětlení návrhových nástrojů pro vytváření datových sad.
 
-[Webové služby XML ve spravovaném kódu](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) Tento článek popisuje postup vytvoření a nasazení webových služeb XML a jak získat přístup k webové služby XML.
+[Webové služby XML ve spravovaném kódu](/previous-versions/visualstudio/visual-studio-2008/xy59yt45\(v\=vs.90\)) Tento článek popisuje postup vytvoření a nasazení webových služeb XML a jak získat přístup k webové služby XML.
 
 ## <a name="see-also"></a>Viz také:
 

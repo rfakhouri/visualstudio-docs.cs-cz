@@ -7,17 +7,17 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542430"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295927"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Připojování k Team Foundation – správa verzí
 
 > [!NOTE]
-> **Poznámka:**: podpora správy verzí Team Foundation je aktuálně ve verzi preview a některé funkce není dosud plně funkční. Jsme rádi, zpětnou vazbu od vás na všechny problémy na [komunity vývojářů](https://developercommunity.visualstudio.com/spaces/41/index.html). Další změny jsou stále chystá!
+> Podpora Team Foundation – správa verzí je aktuálně ve verzi preview a některé funkce není dosud plně funkční. Jsme rádi, zpětnou vazbu od vás na všechny problémy na [komunity vývojářů](https://developercommunity.visualstudio.com/spaces/41/index.html). Další změny jsou stále chystá!
 
 Úložiště Azure poskytuje dva modely správy verzí: Git, který je distribuován správy verzí a Team Foundation verze ovládacího prvku (TFVC), což je centralizovaná správa verzí. Tento článek obsahuje přehled a výchozí bod pro TFVC pomocí sady Visual Studio pro Mac.
 
@@ -29,9 +29,9 @@ ms.locfileid: "46542430"
 
 ## <a name="installation"></a>Instalace
 
-V sadě Visual Studio pro Mac, zvolte **sady Visual Studio > rozšíření...**  z nabídky. V **Galerie** kartu, vyberte možnost **verzí > správy verzí Team Foundation serveru TFS a VSTS** a klikněte na tlačítko **instalace...** :
+V sadě Visual Studio pro Mac, zvolte **sady Visual Studio > rozšíření** z nabídky. V **Galerie** kartu, vyberte možnost **verzí > správy verzí Team Foundation serveru TFS a VSTS** a klikněte na tlačítko **nainstalovat**:
 
-  ![Správce rozšíření](media/tfvc-install.png)
+![Správce rozšíření](media/tfvc-install.png)
 
 Postupujte podle pokynů k instalaci rozšíření. Po instalaci ji restartujte integrované vývojové prostředí.
 
@@ -39,27 +39,27 @@ Postupujte podle pokynů k instalaci rozšíření. Po instalaci ji restartujte 
 
 Aktualizace rozšíření TFVC probíhají pravidelně. Přístup k aktualizace, zvolte **sady Visual Studio > rozšíření...**  z nabídky a vybereme **aktualizace** kartu. Vyberte požadované rozšíření v seznamu a stisknutím klávesy **aktualizace** tlačítka:
 
-  ![Aktualizace zobrazení Správce rozšíření](media/tfvc-update.png)
+![Aktualizace zobrazení Správce rozšíření](media/tfvc-update.png)
 
 Stisknutím klávesy **nainstalovat** v dalším dialogovém okně starý balíček odinstalovat a nainstalovat nové.
 
-Informace o tom, co je nového v jednotlivých verzích, najdete v článku [poznámky k verzi](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
+Informace o tom, co je nového v jednotlivých verzích, najdete v článku [poznámky k verzi](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
 
 ## <a name="using-the-add-in"></a>Pomocí doplňku
 
 Po instalaci rozšíření, vyberte **verzí > TFS/Azure DevOps > Otevřít ze vzdáleného úložiště** položky nabídky.
 
-  ![Položka nabídky otevřít rozšíření](media/tfvc-source-control-explorer-devops.png)
+![Položka nabídky otevřít rozšíření](media/tfvc-source-control-explorer-devops.png)
 
 Zvolte buď VSTS nebo Team Foundation Server, a začít pracovat se stisknutím klávesy **pokračovat**:
 
-  ![Připojení k serveru](media/tfvc-choose-server-type-devops.png)
+![Připojení k serveru](media/tfvc-choose-server-type-devops.png)
 
 ### <a name="azure-repos-authentication"></a>Ověřování Azure úložišť
 
 Když vyberete projekt, který je hostitelem úložiště Azure, budete vyzváni k zadání podrobnosti o vašem účtu Microsoft:
 
-  ![Spojte se s Azure úložišť](media/tfvc-vsts-login.png)
+![Spojte se s Azure úložišť](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>Ověřování serveru TFS
 
@@ -71,7 +71,7 @@ Pro připojení k TFS, zadejte podrobnosti o serveru a přihlašovací údaje ú
 
 Jakmile byli jste úspěšně ověřeni, zobrazí se seznam úložišť, které jsou přidružené k účtu v **otevřít ze správy zdrojových kódů** dialogové okno:
 
-  ![Otevřít ze správy zdrojových kódů dialogové okno s projekty, zobrazí](media/tfvc-vsts-projects.png)
+![Otevřít ze správy zdrojových kódů dialogové okno s projekty, zobrazí](media/tfvc-vsts-projects.png)
 
 Toto dialogové okno je uspořádaný s následující uzly:
 
@@ -188,3 +188,7 @@ Při pokusu o [vytvořit nový pracovní prostor](#creating-a-new-workspace), se
 - Zákaz použití neplatné znaky v názvu pracovního prostoru.
 - Název musí být menší než 64 znaků.
 - Místní cesta nemůže využívat ostatní pracovní prostory.
+
+## <a name="see-also"></a>Viz také:
+
+- [Vývoj a sdílení kódu v TFVC pomocí sady Visual Studio (Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

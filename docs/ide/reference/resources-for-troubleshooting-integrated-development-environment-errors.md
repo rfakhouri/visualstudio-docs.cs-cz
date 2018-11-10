@@ -95,16 +95,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176538"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349281"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Prostředky pro odstraňování chyb integrovaného vývojového prostředí
 
 Ne všechny chybové zprávy mají konkrétní související téma nápovědy. Informace v chybové zprávě není vám pomůžou vyřešit problém, naleznete další prostředky, například články znalostní báze, fóra nebo odbornou pomoc.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [řešení potíží s Visual Studio for Mac](/visualstudio/mac/troubleshooting).
 
 ## <a name="knowledge-base-articles"></a>Články znalostní báze
 
@@ -123,3 +126,4 @@ Pokud jste ještě další dotazy po vyzkoušení jiných zdrojů, můžete kont
 ## <a name="see-also"></a>Viz také:
 
 * [Řešení potíží s související se sítí nebo chyby proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [Řešení potíží (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 8652b73b9bd7e414a989a1b711238126a742290f
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624008"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296460"
 ---
 # <a name="refactoring"></a>Refaktoring
 
@@ -20,25 +20,25 @@ Refaktoring vytváří znamenala základ kódu, takže použitelný, čitelný a
 
 Visual Studio pro Mac integrace roslyn společnosti Microsoft open-source platformy kompilátoru .NET, umožňuje více operací refaktoringu.
 
-## <a name="renaming"></a>Přejmenování 
+## <a name="renaming"></a>Přejmenování
 
 *Přejmenovat* refaktoring příkaz lze použít na libovolný identifikátor kódu (například název třídy, název vlastnosti atd.) a vyhledejte všechny výskyty daného identifikátoru je změnit. Přejmenování symbolu, klepněte na něj pravým tlačítkem myši a zvolte **Refaktorovat > přejmenujte**, nebo **Cmd + R** vazba klíče:
 
 ![Přejmenování položky nabídky](media/refactoring-renaming1.png)
 
-To bude zvýrazněte symbolu a všechny odkazy na něj. Když začnete psát název nové automaticky změní všechny odkazy ve vašem kódu a mohou signalizovat vaše dokončení přejmenování stisknutím kombinace kláves **Enter**:
+To klade důraz na symbol a všechny odkazy na něj. Když začnete psát název nové automaticky změní všechny odkazy ve vašem kódu a mohou signalizovat vaše dokončení přejmenování stisknutím kombinace kláves **Enter**:
 
- ![Přejmenování a identifikátor](media/refactoring-renaming2.png)
+![Přejmenování a identifikátor](media/refactoring-renaming2.png)
 
 ## <a name="context-actions"></a>Kontext akce
 
-Kontext akce umožňují kontrolovat veškerý kód jazyka C# a zobrazit všechny možnosti refaktoringu. 
+Kontext akce umožňují kontrolovat veškerý kód jazyka C# a zobrazit všechny možnosti refaktoringu.
 
 **Vyřešit** a **Refaktorovat** kontext položky jsou sloučeny do jediné *Rychlá oprava...*  položku, zobrazí se všechny dostupné akce kontextu:
 
 ![Zobrazit kontext položky](media/refactoring-context-action.png)
 
-Najetí myší nad kontext akce, které vám poskytne náhled co budou přidány nebo odstraněny z vašeho kódu.
+Najetí myší nad kontext akce, které poskytuje náhled co budou přidány nebo odstraněny z vašeho kódu.
 
 Alternativně můžete stisknout **Alt + Enter** kdekoli v kódu:
 
@@ -46,11 +46,11 @@ Alternativně můžete stisknout **Alt + Enter** kdekoli v kódu:
 
 Pokud chcete povolit tyto možnosti, musíte vybrat *povolit zdrojovou analýzu otevřených souborů* v možnostech **Visual Studio for Mac > Předvolby > textový Editor > zdrojová analýza**:
 
- ![Povolení zdrojová analýza](media/refactoring-options.png)
+![Povolení zdrojová analýza](media/refactoring-options.png)
 
 Existuje více než 100 možných akcí, které mohou být navržena, které jsou povolené nebo zakázané tak, že přejdete do **Visual Studio for Mac > Předvolby > zdrojová analýza > C# > Akce kódu** a výběr nebo unselecting políčko vedle položky akce:
 
- ![Zdrojová analýza C# akce](media/refactoring-image3a.png)
+![Zdrojová analýza C# akce](media/refactoring-image3a.png)
 
 ### <a name="common-context-actions"></a>Běžné akce kontextu
 
@@ -85,7 +85,6 @@ Operaci refaktoringu extrahovat metodu umožňuje vytvořit novou metodu extraho
 
 3. Chcete-li vybrat novou metodu kterého mají být umístěny ve vašem kódu pomocí kláves se šipkami.
 
-
 #### <a name="encapsulate-field"></a>Zapouzdření pole
 
 Zapouzdřit pole operace umožňuje vytvoření vlastnosti z existujícího pole a aktualizuje váš kód tak, aby odkazovaly na nově vytvořený vlastnost. Vytvořením vlastnost, která zapouzdřuje pole jsou zákaz přímý přístup k veřejné pole, to znamená, že další objekty nelze změnit.
@@ -95,16 +94,19 @@ Tato akce provede následující:
 * Modifikátor přístupu se změní na soukromý.
 * Generuje metodu getter a setter pro pole (Pokud je toto pole je jen pro čtení, v takovém případě se pouze vytvoří getter).
 
-
 ## <a name="source-analysis"></a>Zdrojová analýza
 
-Zdrojová analýza analyzuje podtržení potenciální chyby a porušení stylu kódu v reálném čase a poskytuje automatické opravy jako kontext akce. 
+Zdrojová analýza analyzuje podtržení potenciální chyby a porušení stylu kódu v reálném čase a poskytuje automatické opravy jako kontext akce.
 
 Můžete zobrazit všechny výsledky analýzy zdroje pro jakýkoli soubor v okamžiku, zobrazením posuvníku na pravé straně textového editoru:
 
- ![Boční panel analýzy zdroje](media/refactoring-image4a.png)
+![Boční panel analýzy zdroje](media/refactoring-image4a.png)
 
-Pokud kliknete na kolečko v horní části, můžete iterovat každý návrh s nejvyšší závažností problémy zobrazeno prvních. Najede myší jednotlivé výsledek nebo řádek zobrazí problém můžete vyřešit pomocí kontextové akce:
+Pokud kliknete na kolečko v horní části, můžete iterovat každý návrh s nejvyšší závažností problémy zobrazeno prvních. Problém můžete vyřešit pomocí kontextu akce najede myší jednotlivé výsledek nebo řádek zobrazí:
 
- ![Zdrojová položka analýzy](media/refactoring-image5.png)
+![Zdrojová položka analýzy](media/refactoring-image5.png)
 
+## <a name="see-also"></a>Viz také:
+
+- [Rychlé akce (Visual Studio na Windows)](/visualstudio/ide/quick-actions)
+- [Refaktorování kódu (Visual Studio na Windows)](/visualstudio/ide/refactoring-in-visual-studio)

@@ -5,14 +5,14 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836343"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294900"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Instalační program sady Visual Studio for Mac Tools for Unity
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Instalace sady Visual Studio for Mac Tools for Unity
 
 Tato část vysvětluje, jak začít používat Visual Studio for Mac Tools pro Unity.
 
@@ -20,7 +20,7 @@ Tato část vysvětluje, jak začít používat Visual Studio for Mac Tools pro 
 
 ### <a name="unity-bundled-installation"></a>Instalace balíčků Unity
 
-Počínaje Unity 2018.1, Visual Studio for Mac je výchozí C# integrované vývojové prostředí pro Unity a je součástí Pomocníka pro stáhnout Unity a také nástroj pro instalaci Unity rozbočovače. Stáhněte si Unity [store.unity.com](https://store.unity.com/).
+Počínaje Unity 2018.1, Visual Studio for Mac je výchozí C# integrovaného vývojového prostředí (IDE) pro Unity a je součástí Pomocníka pro stáhnout Unity a také nástroj pro instalaci Unity centra. Stáhněte si Unity [store.unity.com](https://store.unity.com/).
 
 Během instalace Ujistěte se, že Visual Studio pro Mac se změnami seznam součástí k instalaci pomocí Unity:
 

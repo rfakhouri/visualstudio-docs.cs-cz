@@ -16,18 +16,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780540"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349621"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Postupy: zobrazení karty Vývojář na pásu karet
   Pro přístup **Developer** kartu na pásu karet aplikace sady Office, je nutné nakonfigurovat ji k zobrazení této karty, protože se nezobrazuje ve výchozím nastavení. Například můžete musíte zobrazit kartu, pokud chcete přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> k přizpůsobení úrovni dokumentu pro aplikaci Word.  
   
 > [!NOTE]  
->  Tyto pokyny platí pro Office 2010 nebo novější pouze aplikací. Pokud chcete zobrazit tuto kartu v systému Microsoft Office 2007, přečtěte si následující verzi tohoto tématu [postupy: zobrazení karty Vývojář na pásu karet](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx).  
+>  Tyto pokyny platí pro Office 2010 nebo novější pouze aplikací. Pokud chcete zobrazit tuto kartu v systému Microsoft Office 2007, přečtěte si následující verzi tohoto tématu [postupy: zobrazení karty Vývojář na pásu karet](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   

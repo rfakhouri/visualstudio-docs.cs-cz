@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: f014eb4782fabce6517009e448d5878dd66700c7
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42623916"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295940"
 ---
 # <a name="introduction-to-azure-functions"></a>Úvod do služby Azure Functions
 
-Azure functions je způsob, jak vytvářet a spouštět založený na událostech fragmenty kódu – – funkce – – v cloudu, aniž byste museli explicitně zřizovat nebo spravovat infrastrukturu. Další informace o službě Azure Functions najdete v tématu [dokumentaci ke službě Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
+Azure functions je způsob, jak vytvářet a spouštět založený na událostech fragmenty kódu – – funkce – – v cloudu, aniž byste museli explicitně zřizovat nebo spravovat infrastrukturu. Další informace o službě Azure Functions najdete v tématu [dokumentaci ke službě Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Požadavky
 
@@ -26,12 +26,12 @@ Vytvoření a nasazení služby functions budete potřebovat předplatné Azure,
 
 ## <a name="creating-your-first-azure-functions-project"></a>Vytvoření prvního projektu Azure Functions
 
-1. V sadě Visual Studio pro Mac, vyberte **soubor > nové řešení...** . 
+1. V sadě Visual Studio pro Mac, vyberte **soubor > Nový řešení**.
 2. V dialogu Nový projekt, vyberte šablonu Azure Functions v části **Cloud > Obecné** a klikněte na tlačítko **Další**:
 
     ![Dialogové okno nového projektu s možností Azure functions](media/azure-functions-image1.png)
 
-3. Vyberte počáteční šablonu Azure Functions, kterou chcete použít, zadejte název vaší funkce a klikněte na tlačítko **Další**. 
+3. Vyberte počáteční šablonu Azure Functions, kterou chcete použít, zadejte název vaší funkce a klikněte na tlačítko **Další**.
 
     ![Dialogové okno Nový projekt zobrazuje šablony Azure functions](media/azure-functions-image2.png)
 
@@ -49,9 +49,9 @@ Visual Studio pro Mac vytvoří projekt .NET Standard s výchozí funkce zahrnut
 
 Nový projekt obsahuje následující soubory:
 
-* **vaše funkce name.cs** – Tato třída obsahuje často používaný kód pro funkci, kterou jste vybrali. Obsahuje **FunctionName** atribut s názvem funkce a aktivační události atribut, který určuje, co spustí – funkce (např.) požadavek HTTP). Další informace o funkci metodu, najdete [referenční informace pro vývojáře Azure Functions C#](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library) článku.
-* **Host.JSON** – tento soubor popisuje možnosti globální konfiguraci pro hostitele funkce. Příklad souboru a informace o dostupných nastaveních pro tento soubor najdete v tématu [referenční materiály k host.json pro Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-host-json).
-* **Local.Settings.JSON** – tento soubor obsahuje veškeré nastavení spouštění služby functions místně. Tato nastavení jsou používány nástrojů Azure Functions Core. Další informace najdete v tématu [souboru místní nastavení](https://docs.microsoft.com/azure/azure-functions/functions-run-local#local-settings-file) v článku o Azure Functions Core Tools.
+* **vaše funkce name.cs** – Tato třída obsahuje často používaný kód pro funkci, kterou jste vybrali. Obsahuje **FunctionName** atribut s názvem funkce a aktivační události atribut, který určuje, co spustí – funkce (např.) požadavek HTTP). Další informace o funkci metodu, najdete [referenční informace pro vývojáře Azure Functions C#](/azure/azure-functions/functions-dotnet-class-library) článku.
+* **Host.JSON** – tento soubor popisuje možnosti globální konfiguraci pro hostitele funkce. Příklad souboru a informace o dostupných nastaveních pro tento soubor najdete v tématu [referenční materiály k host.json pro Azure Functions](/azure/azure-functions/functions-host-json).
+* **Local.Settings.JSON** – tento soubor obsahuje veškeré nastavení spouštění služby functions místně. Tato nastavení jsou používány nástrojů Azure Functions Core. Další informace najdete v tématu [souboru místní nastavení](/azure/azure-functions/functions-run-local#local-settings-file) v článku o Azure Functions Core Tools.
 
 Teď, když jste vytvořili nový projekt Azure Functions v sadě Visual Studio pro Mac, můžete otestovat na výchozí funkci aktivovanou protokolem HTTP z místního počítače.
 
@@ -63,9 +63,9 @@ Díky podpoře Azure Functions v sadě Visual Studio for Mac můžete testovat a
 
     ![Spuštění ladění tlačítko v sadě visual studio pro mac](media/azure-functions-run.png)
 
-1. Spuštění projektu spustí místní ladění funkce Azure functions a otevře se nové okno terminálu, jak je znázorněno na následujícím obrázku: 
+1. Spuštění projektu spustí místní ladění funkce Azure functions a otevře se nové okno terminálu, jak je znázorněno na následujícím obrázku:
 
-    ![výstup v okně terminálu zobrazující – funkce](media/azure-functions-terminal.png) 
+    ![výstup v okně terminálu zobrazující – funkce](media/azure-functions-terminal.png)
 
     Zkopírujte adresu URL z výstupu.
 
@@ -87,11 +87,11 @@ Díky podpoře Azure Functions v sadě Visual Studio for Mac můžete testovat a
 
     Seznam šablon funkce Azure Functions jsou součástí [dostupné funkce šablony](#available-function-templates) oddílu.
 
-Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt aplikace funkcí. Každá funkce v projektu může mít jinou aktivační událost, ale funkce musí mít přesně jeden trigger. Další informace najdete v tématu [aktivace Azure Functions a vazby koncepty](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt aplikace funkcí. Každá funkce v projektu může mít jinou aktivační událost, ale funkce musí mít přesně jeden trigger. Další informace najdete v tématu [aktivace Azure Functions a vazby koncepty](/azure/azure-functions/functions-triggers-bindings).
 
 ## <a name="publish-to-azure"></a>Publikování do Azure
 
-1. Klikněte pravým tlačítkem na název projektu a vyberte **publikovat > Publikovat do Azure...** : ![Publikovat v nabídce azure možnost](media/azure-functions-image5.png)
+1. Klikněte pravým tlačítkem na název projektu a vyberte **publikovat > Publikovat do Azure**: ![publikovat v nabídce azure možnost](media/azure-functions-image5.png)
 2. Pokud už jste připojili Azure účtu sady Visual Studio pro Mac seznam dostupných aplikací, služeb se zobrazují. Pokud jste ještě přihlášeni, budete vyzváni k tomu.
 3. Z **publikovat do služby Azure App Service** dialogového okna, můžete vybrat stávající službu app service nebo vytvořte novou kliknutím **nový**.
 4. V **vytvořit novou službu App Service** dialogovém okně nastavení: ![publikovat v nabídce azure možnost](media/azure-functions-image7.png)
@@ -100,8 +100,8 @@ Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt
     |---------|---------|
     |**Název služby App Service**|Globálně jedinečný název identifikující novou aplikaci function app.|
     |**Předplatné**|Předplatné Azure používat.|
-    |**[Skupina prostředků](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)**|Název skupiny prostředků, ve kterém chcete vytvořit aplikaci function app. Zvolte **+** vytvořit novou skupinu prostředků.|
-    |**[Plán služby](https://docs.microsoft.com/azure/azure-functions/functions-scale)**|Vybrat existující plán nebo vytvořte vlastní plán. Vyberte umístění v oblasti vaší blízkosti nebo v blízkosti jiných služeb vaší funkce přístupu.|
+    |**[Skupina prostředků](/azure/azure-resource-manager/resource-group-overview)**|Název skupiny prostředků, ve kterém chcete vytvořit aplikaci function app. Zvolte **+** vytvořit novou skupinu prostředků.|
+    |**[Plán služby](/azure/azure-functions/functions-scale)**|Vybrat existující plán nebo vytvořte vlastní plán. Vyberte umístění v oblasti vaší blízkosti nebo v blízkosti jiných služeb vaší funkce přístupu.|
 
     > [!CAUTION]
     > Je chyba v 7.6 verzi sady Visual Studio for Mac, která způsobí, že publikování nezdaří s chybou zřizování při pokusu vytvořit plán s vlastní službu **ceny** nastavena na **spotřeby**. Tato chyba bude opravena v další vydané verzi služby.
@@ -113,7 +113,7 @@ Výše uvedený postup slouží k přidání dalších funkcí pro váš projekt
 6. Klikněte na tlačítko **vytvořit** k vytvoření aplikace function app a související prostředky v Azure s těmito nastaveními a nasadí kód projektu funkce.
 
 7. Můžete být vyzváni se dialogové okno během publikování informací do "Aktualizace funkcí verze na Azure". Klikněte na tlačítko **Ano**:
- 
+
     ![Publikování nabídky azure](media/azure-functions-image12.png)
 
 > [!CAUTION]
@@ -139,7 +139,7 @@ Je jedním z důležitých nastavení budete muset nastavit `FUNCTIONS_EXTENSION
 
 ## <a name="available-function-templates"></a>K dispozici funkce šablon
 
-- **Aktivační událost Githubu** – reakce na události, ke kterým dochází ve svých úložištích Githubu. Další informace najdete v tématu [Azure Functions článku na Githubu](https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function)
+- **Aktivační událost Githubu** – reakce na události, ke kterým dochází ve svých úložištích Githubu. Další informace najdete v tématu [Azure Functions článku na Githubu](/azure/azure-functions/functions-create-github-webhook-triggered-function)
     - Komentátor Githubu – tato funkce se spustí, když přijme webhook Githubu pro problém nebo o přijetí změn žádost a přidá komentář.
     - WebHook Githubu – tato funkce se spustí, když přijme webhook Githubu.
 
@@ -150,16 +150,16 @@ Je jedním z důležitých nastavení budete muset nastavit `FUNCTIONS_EXTENSION
     - Aktivační událost HTTP s parametry
 
 
-- **Časovač** – provádění úkolů čištění nebo jiných dávkových úkolů podle předdefinovaného plánu. Tato šablona má dvě pole: název a plánu, což je výraz CRONU pole. Další informace najdete v tématu [Azure functions článek na čas](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function)
+- **Časovač** – provádění úkolů čištění nebo jiných dávkových úkolů podle předdefinovaného plánu. Tato šablona má dvě pole: název a plánu, což je výraz CRONU pole. Další informace najdete v tématu [Azure functions článek na čas](/azure/azure-functions/functions-create-scheduled-function)
 
 
-- **Aktivační událost fronty** – to je funkce, která bude reagovat na zprávy přicházející do fronty Azure Storage. Kromě názvu funkce přebírá Tato šablona **cesta** (název fronty, ze kterého se bude číst zpráva) a účet úložiště **připojení** (název nastavení aplikace s úložiště připojovací řetězec účtu). Další informace najdete v tématu [článek funkce Azure Queue Storage](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Aktivační událost fronty** – to je funkce, která bude reagovat na zprávy přicházející do fronty Azure Storage. Kromě názvu funkce přebírá Tato šablona **cesta** (název fronty, ze kterého se bude číst zpráva) a účet úložiště **připojení** (název nastavení aplikace s úložiště připojovací řetězec účtu). Další informace najdete v tématu [článek funkce Azure Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Aktivační události služby blob** – když se přidají do kontejneru objektů BLOB Azure Storage procesu. Kromě názvu funkce přijímá tato šablona také vlastnost cesty a připojení. Vlastnost path je cesta v účtu úložiště, kterou bude trigger monitorovat. Účet připojení je název nastavení aplikace, které obsahuje připojovací řetězec účtu úložiště. Další informace najdete v tématu [článku úložiště objektů Blob v Azure functions](https://docs.microsoft.com/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Aktivační události služby blob** – když se přidají do kontejneru objektů BLOB Azure Storage procesu. Kromě názvu funkce přijímá tato šablona také vlastnost cesty a připojení. Vlastnost path je cesta v účtu úložiště, kterou bude trigger monitorovat. Účet připojení je název nastavení aplikace, které obsahuje připojovací řetězec účtu úložiště. Další informace najdete v tématu [článku úložiště objektů Blob v Azure functions](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **Obecný WebHook** – Toto je jednoduchá funkce, která se spustí pokaždé, když přijme požadavek z jakékoli služby, která podporuje webhooky. Další informace najdete v tématu [Azure functions článek na obecný webhook](https://docs.microsoft.com/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **Obecný WebHook** – Toto je jednoduchá funkce, která se spustí pokaždé, když přijme požadavek z jakékoli služby, která podporuje webhooky. Další informace najdete v tématu [Azure functions článek na obecný webhook](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Odolná služba functions Orchestrace** – Durable Functions umožňují napsat stavové funkce v prostředí bez serveru. Rozšíření spravuje stav, kontrolní body a restartuje za vás. Další informace najdete v tématu příručky Azure functions na [Durable functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview).
+- **Odolná služba functions Orchestrace** – Durable Functions umožňují napsat stavové funkce v prostředí bez serveru. Rozšíření spravuje stav, kontrolní body a restartuje za vás. Další informace najdete v tématu příručky Azure functions na [Durable functions](/azure/azure-functions/durable-functions-overview).
 
 - **Změnu velikosti obrázků** – tato funkce vytvoří Image změněnou velikostí pokaždé, když se do kontejneru přidá objekt blob. Šablona má cestu a připojovací řetězec pro aktivační událost, malý obrázek výstupu a výstup střední image.
 

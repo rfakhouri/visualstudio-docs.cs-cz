@@ -15,16 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0760c101ce669dc2e44527ea18b8f213a12df973
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d4e178bce3b1a74174d59b9fde701ef2d7645b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817740"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348654"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 
 Tato stránka vás provede odinstalací sady Visual Studio, naší integrované sady nástrojů podporujících produktivitu pro vývojáře.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [odinstalujte Visual Studio for Mac](/visualstudio/mac/uninstall).
 
 1. Najdete instalační program sady Visual Studio v počítači.
 
@@ -33,7 +36,7 @@ Tato stránka vás provede odinstalací sady Visual Studio, naší integrované 
      ![Instalační program sady Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "vyhledejte instalační program sady Microsoft Visual Studio")
 
    > [!NOTE]
-   >   V některých počítačích může instalační program sady Visual Studio uvedené pod písmenem **"M"** jako **instalační program Visual Studio**.<br/><br/> Alternativně můžete najít instalační program sady Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   > V některých počítačích může instalační program sady Visual Studio uvedené pod písmenem **"M"** jako **instalační program Visual Studio**.<br/><br/> Alternativně můžete najít instalační program sady Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. Klikněte na tlačítko spustit instalační program, klikněte na tlačítko ![ikonu podrobností](media/vs2017uninstall-UninstallIcon.png "vyberte ikonu Možnosti") ikonu a pak klikněte na tlačítko **odinstalovat**.
 

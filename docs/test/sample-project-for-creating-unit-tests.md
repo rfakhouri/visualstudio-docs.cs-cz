@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379771"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293444"
 ---
 # <a name="sample-code-for-testing"></a>Ukázkový kód pro testování
 
@@ -27,7 +27,7 @@ Tento vzorový kód obsahuje třídu, *BankAccount*, pomocí různých metod, kt
 Kód se používá v následujících návodech:
 
 - [Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Tento názorný postup vás provede kroky k vytvoření a přizpůsobení testů jednotek, je spustit a podívejte se na výsledky testu.
-- [Použijte nástroj příkazového řádku test](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). V tomto názorném postupu použijete *MSTest.exe* příkazový řádek pro spuštění testů a zobrazení výsledků.
+- [Použijte nástroj příkazového řádku test](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). V tomto názorném postupu použijete *MSTest.exe* příkazový řádek pro spuštění testů a zobrazení výsledků.
 
 ## <a name="sample-code"></a>Ukázkový kód
 
@@ -135,4 +135,4 @@ Pro práci s tímto kódem, nejprve vytvořte projekt pro něj v aplikaci Visual
 ## <a name="see-also"></a>Viz také:
 
 - [Návod: Vytvoření a spuštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-- [Návod: Použití nástroje příkazového řádku test](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+- [Návod: Použití nástroje příkazového řádku test](https://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

@@ -4,19 +4,19 @@ description: Procházení a Správa prostředků úložiště pomocí Průzkumn�
 author: ghogen
 manager: douge
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: bace670073072e5330af913b897ae477fb0ce528
+ms.openlocfilehash: 00229cd88ddcab4d2d59ae40202620c374415e4b
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000178"
+ms.locfileid: "51003364"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procházení a správa prostředků úložiště pomocí Průzkumníka serveru
 
@@ -219,7 +219,7 @@ Můžete přizpůsobit sadu entit, které se zobrazí v tabulce v případě, ž
 1. Po dokončení sestavení dotazu, zavřete dialogové okno. Výsledný text formulář dotazu se zobrazí v textovém poli jako filtr datových služeb WCF.
 1. Spusťte dotaz, vyberte ikonu zelený trojúhelník.
 
-Můžete také filtrovat data entity, které se zobrazí v Návrháři tabulek Pokud zadáte řetězec filtru služeb WCF Data Services přímo do textového pole filtru. Tento typ řetězce je podobná klauzuli WHERE příkazu SQL, ale je odeslána na server jako požadavek HTTP. Informace o tom, jak vytvářet řetězce filtru najdete v tématu [Constructing řetězce filtru pro návrháře tabulky](vs-azure-tools-table-designer-construct-filter-strings.md).
+Můžete také filtrovat data entity, které se zobrazí v Návrháři tabulek Pokud zadáte řetězec filtru služeb WCF Data Services přímo do textového pole filtru. Tento typ řetězce je podobná klauzuli WHERE příkazu SQL, ale je odeslána na server jako požadavek HTTP. Informace o tom, jak vytvářet řetězce filtru najdete v tématu [Constructing řetězce filtru pro návrháře tabulky](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings).
 
 Následující obrázek znázorňuje příklad řetězce platný filtr:
 

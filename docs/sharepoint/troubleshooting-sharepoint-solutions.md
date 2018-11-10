@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219780"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296044"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Řešení potíží s řešeními služby SharePoint
-  S těmito problémy nebo výstrah může dojít při ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu. Další informace najdete v tématu [ladění řešení pracovního postupu služby SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
+  S těmito problémy nebo výstrah může dojít při ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu. Další informace najdete v tématu [ladění řešení pracovního postupu služby SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Omezení tokenu v izolovaném prostoru vizuální webové části
  Vizuální webové části v řešení v izolovaném prostoru nemůže zpracovat standardní tokeny, například $SPUrl, který podporuje modul runtime služby SharePoint. V důsledku toho adresa URL není vyřešený a pokud se na ni můžete odkazovat přímo v prvku skriptu, jako v následujícím příkladu není možné zobrazit náhled obsahu v návrhovém zobrazení v Návrháři vizuální webové části:  
@@ -105,7 +105,7 @@ ms.locfileid: "50219780"
  Žádné  
   
 ### <a name="resolution"></a>Rozlišení  
- K tomuto problému dochází kvůli nesprávné hodnotě v **cesta** vlastnost pro nastavení definice lokality webtemp soubor, třeba *webtemp_SiteDefinitionProject1.xml*. V **cesta** vlastnost souboru webtemp umístěna ve složce **umístění nasazení**, změňte 1033 na odpovídající národní prostředí [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Například použití japonské národní prostředí změňte hodnotu na 1041. Další informace najdete v tématu [ID národního prostředí přiřazené společností Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561) na webové stránce MSDN.  
+ K tomuto problému dochází kvůli nesprávné hodnotě v **cesta** vlastnost pro nastavení definice lokality webtemp soubor, třeba *webtemp_SiteDefinitionProject1.xml*. V **cesta** vlastnost souboru webtemp umístěna ve složce **umístění nasazení**, změňte 1033 na odpovídající národní prostředí [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Například použití japonské národní prostředí změňte hodnotu na 1041. Další informace najdete v tématu [ID národního prostředí přiřazené společností Microsoft](http://go.microsoft.com/fwlink/?LinkID=165561).  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>Zobrazí se chyba při nasazení projektu pracovního postupu na vyčištění systému
  K tomuto problému dochází, pokud provádíte nasazení projektu pracovního postupu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] čisté systému. Vyčistit systém je počítač, který obsahuje novou instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a SharePoint, ale žádné projekty nasazené pracovního postupu.  

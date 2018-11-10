@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384237"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349098"
 ---
 # <a name="find-and-replace-text"></a>Vyhledání a nahrazení textu
 
@@ -93,6 +93,9 @@ Součást sady můžete definovat jako obor hledání výběrem **upravit sadu v
 
 ## <a name="multi-caret-selection"></a>Výběr více blikajícího kurzoru
 
+> [!NOTE]
+> Tato část se týká sady Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [běr bloku](/visualstudio/mac/block-selection).
+
 **Novinka v sadě Visual Studio 2017 verze 15.8**
 
 Použití *více blikající kurzor o výběr* provádět stejné úpravy ve dvou nebo více míst ve stejnou dobu. Například můžete vložit stejný text nebo změnit stávající text v několika umístěních ve stejnou dobu.
@@ -130,3 +133,4 @@ Některé příkazy jsou také k dispozici na **upravit** nabídky v části **v
 
 - [Použití regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refaktorování kódu v sadě Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Výběr bloku (Visual Studio for Mac)](/visualstudio/mac/block-selection)

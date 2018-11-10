@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774913"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295966"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio
 
@@ -235,13 +235,13 @@ Pokud chcete ručně vytvořit balíčku VSIX pro rozšíření nástrojů služ
 
 4.  Upravte soubor extension.vsixmanifest:
 
-    -   Přidat `Microsoft.VisualStudio.MefComponent` element v rámci `Assets` element a pak nastavte hodnotu nový prvek do relativní cestu sestavení, který implementuje rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).
+    -   Přidat `Microsoft.VisualStudio.MefComponent` element v rámci `Assets` element a pak nastavte hodnotu nový prvek do relativní cestu sestavení, který implementuje rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Pokud vaše rozšíření obsahuje příkaz SharePoint, která volá do objektového modelu serveru pro službu SharePoint, přidejte `Microsoft.VisualStudio.Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cestu sestavení, který implementuje příkaz serveru SharePoint v balíčku souboru VSIX. Další informace najdete v tématu [Asset – Element (VSX schéma)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    -   Pokud vaše rozšíření obsahuje příkaz SharePoint, která volá do objektového modelu serveru pro službu SharePoint, přidejte `Microsoft.VisualStudio.Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cestu sestavení, který implementuje příkaz serveru SharePoint v balíčku souboru VSIX. Další informace najdete v tématu [Asset – Element (VSX schéma)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Pokud vaše rozšíření obsahuje šablonu projektu nebo šablony položky, přidejte `ProjectTemplate` nebo `ItemTemplate` element v rámci `Assets` elementu. Nastavte hodnotu nový prvek do relativní cesty ke složce, která obsahuje šablonu v balíčku souboru VSIX. Další informace najdete v tématu [ProjectTemplate – Element (VSX schéma)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1) a [ItemTemplate – Element (VSX schéma)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).
+    -   Pokud vaše rozšíření obsahuje šablonu projektu nebo šablony položky, přidejte `ProjectTemplate` nebo `ItemTemplate` element v rámci `Assets` elementu. Nastavte hodnotu nový prvek do relativní cesty ke složce, která obsahuje šablonu v balíčku souboru VSIX. Další informace najdete v tématu [ProjectTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) a [ItemTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Pokud vaše rozšíření obsahuje vlastního průvodce šablony projektu nebo šablony položky, přidejte `Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cesta k sestavení v balíčku souboru VSIX a potom nastavte `AssemblyName` atribut sestavení úplný název (včetně verze, jazykovou verzi a token veřejného klíče). Další informace najdete v tématu [Element Dependency (schéma VSX)](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    -   Pokud vaše rozšíření obsahuje vlastního průvodce šablony projektu nebo šablony položky, přidejte `Assembly` element v rámci `Assets` elementu. Nastavte hodnotu nového elementu na relativní cesta k sestavení v balíčku souboru VSIX a potom nastavte `AssemblyName` atribut sestavení úplný název (včetně verze, jazykovou verzi a token veřejného klíče). Další informace najdete v tématu [Element Dependency (schéma VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Příklad
 

@@ -1,7 +1,7 @@
 ---
 title: 'Chyba: Spuštění Transact-SQL skončilo bez ladění. | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/08/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,38 +17,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bc4de5e9ef0830f69b60d773a59411c4b691454
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894752"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348997"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Chyba: Spuštění Transact-SQL skončilo bez ladění.
-Tato chyba nastane, pokud se pokoušíte ladit příkazů jazyka Transact-SQL nebo proceduru SQLCLR a ladicí program nepřijímá zprávy ladění z SQL serveru.  
+
+Tato chyba nastane, pokud se snažíte ladit příkazů jazyka Transact-SQL nebo proceduru SQLCLR a ladicí program nebude přijímat zprávy ladění z SQL serveru.  
   
- Může to být kvůli potížím se sítí nebo na problémy na serveru SQL Server, ale nejpravděpodobnější příčinou je problém oprávnění.  
+Tento problém může být kvůli potížím se sítí nebo na problémy na serveru SQL Server, ale nejpravděpodobnější příčinou je problém oprávnění.  
   
- Zahrnuté jsou dva účty:  
+Zahrnuté jsou dva účty:  
   
 - Uživatelský účet, který je účet aplikací [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] běží.  
   
-- Účet připojení je identita používaná pro připojení k systému SQL Server. Toto není nutně stejné jako identita, která je spuštěná sada Visual Studio, jako kdyby je připojení pomocí ověřování SQL.  
+- Účet připojení je identita používaná pro připojení k systému SQL Server. Tento účet není nutně stejné jako identita, která je spuštěná sada Visual Studio, jako kdyby je připojení pomocí ověřování SQL.  
   
-  SQL ladění vyžaduje, aby účet aplikace musí odpovídat účtu připojení, nebo správce systému.  
+  SQL ladění vyžaduje, aby účet aplikace musí odpovídat účtu připojení nebo správce systému.  
   
-  Pokud používáte přihlašovací jméno SQL jako programu sa, účet aplikace musí být instalační program systému SQL Server jako správce systému. Ve výchozím nastavení, správci na počítači systému SQL server běží se na správce systému SQL Server.  
+  Pokud používáte s názvem účtu SQL jako programu sa, účet aplikace musí být nastavení systému SQL Server jako správce systému. Ve výchozím nastavení jsou správci na počítači, na kterém běží SQL server na správce systému SQL Server.  
   
   Chcete-li opravit tuto chybu, potřebujete:  
   
-- Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: nastavit SQL Server oprávnění pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+  - Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: nastavit SQL Server oprávnění pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
-- Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
+  - Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
   
-- Poraďte se správcem vaší sítě nebo databáze.  
+  - Poraďte se správcem vaší sítě nebo databáze.  
   
-## <a name="see-also"></a>Viz také  
- [Nastavení ladění SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
- [Postupy: nastavení oprávnění serveru SQL pro ladění](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
- [Vzdálené ladění](../debugger/remote-debugging.md)
+## <a name="see-also"></a>Viz také
+
+- [Nastavení ladění SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
+- [Postupy: nastavení oprávnění serveru SQL pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
+- [Vzdálené ladění](../debugger/remote-debugging.md)

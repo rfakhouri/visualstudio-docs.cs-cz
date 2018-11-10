@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: Správa zalamování řádků v editoru'
-ms.date: 11/04/2016
+title: Zalamování řádků
+ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,16 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6fc38d1ee5a8e5543675700c35cc0cb298aefad9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42624144"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349111"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 
 Můžete nastavit a zrušit **zalamování** možnost. Když nastavíte tuto možnost, zobrazí se na další řádek část dlouhý řádek, který přesahuje aktuální šířku okna editoru kódu. Pokud tato možnost vybrána, například pro usnadnění použití číslování řádků, můžete posouvat doprava a zobrazit konce dlouhé řádky.
+
+> [!NOTE]
+> Toto téma se vztahuje pouze k sadě Visual Studio ve Windows. Visual Studio pro Mac v současné době nepodporuje zalamování řádků.
 
 ## <a name="to-set-word-wrap-preferences"></a>Nastavení aplikace word wrap předvoleb
 

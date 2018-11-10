@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919738"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296434"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Kurz: Začínáme s Azure Functions
 
@@ -44,12 +44,10 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
     ![pojmenování a vytvoření projektu funkce azure functions](media/azure-functions-lab-image2.png)
 
-5. Rozbalte uzly v **oblasti řešení**. Výchozí šablona projektu zahrnuje NuGet odkazy na celou řadu balíčky Azure WebJobs, jakož i balíček Newtonsoft.Json. 
+5. Rozbalte uzly v **oblasti řešení**. Výchozí šablona projektu zahrnuje NuGet odkazy na celou řadu balíčky Azure WebJobs, jakož i balíček Newtonsoft.Json.
 
-     Existují tři soubory:  
-        - **Host.JSON** pro popis globální konfiguraci možností pro hostitele  
-        - **Local.Settings.JSON** ke konfiguraci nastavení služby.  
-        - Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.  
+     Jsou také tři soubory:- **host.json** pro popis globální možnosti konfigurace pro hostitele - **local.settings.json** ke konfiguraci nastavení služby.
+        - Šablona projektu také vytvoří výchozí HttpTrigger. Pro účely tohoto testovacího prostředí, měli byste odstranit **HttpTrigger.cs** soubor z projektu.
 
     Otevřít **local.settings.json**. Použije se výchozí s tím, že dvě nastavení prázdný připojovacího řetězce.
 
@@ -58,7 +56,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>Cvičení 2: Vytvoření účtu služby Azure storage
 
 1. Přihlaste se k účtu Azure na [ https://portal.azure.com ](https://portal.azure.com).
- 
+
 1. V části **Oblíbené** části se nachází na levé straně obrazovky vyberte **účty úložiště**:
 
     ![sekce Oblíbené položky účty úložiště Azure Portalu zobrazující](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>Příklad 3: Vytváření a ladění funkce Azure functions
 
-1. Nyní jste připraveni začít přidávat nějaký kód. Při práci s knihovnou tříd rozhraní .NET, Azure Functions jsou přidány jako statické metody. Z **oblasti řešení**, klikněte pravým tlačítkem myši **AzureFunctions** uzel projektu a vyberte **Přidat > přidat funkci...** :
+1. Nyní jste připraveni začít přidávat nějaký kód. Při práci s knihovnou tříd rozhraní .NET, Azure Functions jsou přidány jako statické metody. Z **oblasti řešení**, klikněte pravým tlačítkem myši **AzureFunctions** uzel projektu a vyberte **Přidat > přidat funkci**:
 
     ![Přidat možnost – Funkce](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
         return x + y;
     }
     ```
-1. Projděme si definici metody jeden po druhém. 
-    
+1. Projděme si definici metody jeden po druhém.
+
     První věc, kterou uvidíte je **FunctionName** atribut, který označí tuto metodu jako funkce Azure functions. Atribut označí veřejného názvu funkce. Název nemusí odpovídat názvu skutečné metoda.
 
     ![Nové spuštění metodu s atributem FunctionName zvýrazněnou](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
     ![Adresa URL rozhraní API funkce Azure](media/azure-functions-lab-image20.png)
 
-1. Zarážka by měly aktivovat okamžitě. Webový požadavek prochází funkce a se teď dají ladit. Najedete myší **x** proměnnou můžete zobrazit její hodnotu. 
+1. Zarážka by měly aktivovat okamžitě. Webový požadavek prochází funkce a se teď dají ladit. Najedete myší **x** proměnnou můžete zobrazit její hodnotu.
 
     ![Zarážka spuštěna](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ V tomto testovacím prostředí budete zjistěte, jak začít vytvářet funkce 
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>Cvičení 5: Práce s tabulkami Azure storage
 
-Služby, které vytváříte často, může být mnohem složitější než co jsme dosud vytvořili a vyžadují značné množství času a/nebo infrastrukturu pro spuštění. V tom případě možná pro vás bude platit tak, aby přijímal požadavky, které jsou zařazeny do fronty pro zpracování, jakmile budou k dispozici prostředky, které Azure Functions poskytuje podporu pro. V jiných případech budete chtít ukládat data centrálně. Tabulky Azure Storage umožňují udělat rychle. 
+Služby, které vytváříte často, může být mnohem složitější než co jsme dosud vytvořili a vyžadují značné množství času a/nebo infrastrukturu pro spuštění. V tom případě možná pro vás bude platit tak, aby přijímal požadavky, které jsou zařazeny do fronty pro zpracování, jakmile budou k dispozici prostředky, které Azure Functions poskytuje podporu pro. V jiných případech budete chtít ukládat data centrálně. Tabulky Azure Storage umožňují udělat rychle.
 
 1. Přidat třídu níže **Add.cs**. Má přejít v oboru názvů, ale mimo existující třídy.
 
@@ -332,7 +330,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
 
 1. Vraťte se do prohlížeče aktualizovat žádost pro stejnou adresu URL. Tentokrát uvidíte chybu **procesu** metody. Je to proto, že kód se pokouší přidat řádek do tabulky Azure Table Storage pomocí oddílu a řádku kombinace kláves, která již existuje.
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ Služby, které vytváříte často, může být mnohem složitější než co j
 1. Vraťte se na **Visual Studio for Mac** a ukončení relace ladění.
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

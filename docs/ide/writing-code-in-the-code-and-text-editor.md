@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624087"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349072"
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
 Editor sady Visual Studio poskytuje mnoho funkcí, které usnadňují zápis a správu vašeho kódu a text. Můžete rozbalit nebo sbalit různé bloky kódu pomocí osnovy. Další informace o kódu pomocí technologie IntelliSense, **prohlížeče objektů**a hierarchii volání. Kód můžete najít pomocí funkcí **přejít na**, **přejít k definici**, a **najít všechny odkazy**. Můžete vložit bloky kódu pomocí fragmentů kódu a může generovat kód pomocí funkcí **Generovat z využití**. Pokud jste editoru sady Visual Studio před nikdy nepoužívali, přečtěte si téma [úpravy kódu](https://visualstudio.microsoft.com/vs/features/ide/) a získejte rychlý přehled.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [Editor zdrojového kódu (Visual Studio for Mac)](/visualstudio/mac/source-editor).
 
 Zobrazí se váš kód v několika různými způsoby. Ve výchozím nastavení **Průzkumníka řešení** zobrazuje váš kód uspořádané podle souborů. Můžete kliknout na **zobrazení tříd** karta v dolní části okna, chcete-li zobrazit kód uspořádané podle třídy.
 
@@ -87,6 +90,7 @@ Další informace o přizpůsobení editoru, najdete v části [přizpůsobit ed
 
 ## <a name="see-also"></a>Viz také:
 
+- [Editor zdrojového kódu (Visual Studio for Mac)](/visualstudio/mac/source-editor)
 - [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
 - [Začínáme s C++ v sadě Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Začínáme s C# a technologie ASP.NET v sadě Visual Studio](../ide/tutorial-csharp-aspnet-core.md)

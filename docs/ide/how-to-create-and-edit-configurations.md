@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808789"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348523"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Postupy: vytvoření a úprava konfigurací
 
 Můžete vytvořit několik konfigurací sestavení řešení. Například můžete nakonfigurovat sestavení pro ladění, testerům můžete najít a opravit problémy, a můžete nakonfigurovat různé druhy sestavení, které můžete distribuovat do různých zákazníků.
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [vytvoření a úprava konfigurací v sadě Visual Studio pro Mac](/visualstudio/mac/create-and-edit-configurations).
 
 ## <a name="create-build-configurations"></a>Vytvoření konfigurace sestavení
 
@@ -127,3 +128,4 @@ V **nástroje Configuration Manager** dialogové okno, můžete použít **konfi
 - [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)
 - [Sestavení a vyčištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Správa vlastností projektu a řešení](managing-project-and-solution-properties.md)
+- [Vytvoření a úprava konfigurací (Visual Studio for Mac)](/visualstudio/mac/create-and-edit-configurations)

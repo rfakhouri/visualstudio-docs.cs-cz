@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942943"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296473"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -62,7 +62,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-Aplikace ASP.NET Core vytvoří webový server v jeho hlavní metoda konfigurací a spuštění hostitele prostřednictvím instance [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Tato Tvůrce poskytuje metody, které umožňují hostitele nakonfigurovat. V aplikaci šablony jsou použité následující konfigurace:
+Aplikace ASP.NET Core vytvoří webový server v jeho hlavní metoda konfigurací a spuštění hostitele prostřednictvím instance [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Tato Tvůrce poskytuje metody, které umožňují hostitele nakonfigurovat. V aplikaci šablony jsou použité následující konfigurace:
 
 * `UseKestrel`: Určuje, že Kestrel server budou používat aplikaci
 * `UseContentRoot(Directory.GetCurrentDirectory())`: Používá kořenové složce webového projektu jako uživatel root obsahu aplikace při spuštění aplikace z této složky
@@ -108,7 +108,7 @@ Tato třída při spuštění musí vždycky dodržovat následující pravidla:
 
 `ConfigureServices` Metoda definuje služby, které budou používat vaši aplikaci.
 
-`Configure` Lze sestavit pomocí kanálu požadavku [Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware). Toto jsou komponenty použité v rámci kanálu určité aplikace technologie ASP.NET pro zpracování požadavků a odpovědí. HTTP kanál se skládá z počtu požadavek delegátů, volá se v sekvenci. Všem delegátům možné zpracovat žádost o samotné nebo předat do další delegáta.
+`Configure` Lze sestavit pomocí kanálu požadavku [Middleware](/aspnet/core/fundamentals/middleware). Toto jsou komponenty použité v rámci kanálu určité aplikace technologie ASP.NET pro zpracování požadavků a odpovědí. HTTP kanál se skládá z počtu požadavek delegátů, volá se v sekvenci. Všem delegátům možné zpracovat žádost o samotné nebo předat do další delegáta.
 
 Delegáty lze nakonfigurovat pomocí `Run`,`Map`, a `Use` metody `IApplicationBuilder`, ale `Run` metoda se nikdy neměl volat další delegáta a musí použít značka na konci vašeho kanálu.
 
@@ -126,7 +126,7 @@ Otevřete prohlížeč zvolíte a zadejte `http://localhost:5000/`a nahraďte `5
 
 ![prohlížeč zobrazující text](media/asp-net-core-image7.png)
 
-## <a name="adding-a-controller"></a>Přidání Kontroleru
+## <a name="adding-a-controller"></a>Přidání kontroleru
 
 Aplikace ASP.NET Core pomocí vzoru návrhu Model-View-Controller (MVC) k poskytování logické rozdělení povinností mezi jednotlivé části aplikace. MVC se skládá z následujících akcí:
 
@@ -134,7 +134,7 @@ Aplikace ASP.NET Core pomocí vzoru návrhu Model-View-Controller (MVC) k poskyt
 - **Zobrazení**: zobrazí aplikace uživatelské rozhraní (což se často stává datový model).
 - **Kontroler**: třída, která zpracovává požadavky na prohlížeč, odpoví na vstup uživatele a interakce.
 
-Další informace o používání MVC najdete [přehled ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/overview) průvodce.
+Další informace o používání MVC najdete [přehled ASP.NET Core MVC](/aspnet/core/mvc/overview) průvodce.
 
 Chcete-li přidat kontroler, postupujte takto:
 
@@ -233,6 +233,6 @@ Ujistěte se, že všechny čtyři kroky úspěšně zajistit úspěšné instal
 
 Tato příručka poskytl úvod do ASP.NET Core. Popisuje, je, kdy se má použít a poskytuje informace o používání v aplikaci Visual Studio pro Mac.
 Další informace o dalších krocích odsud najdete v následujících příručkách:
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) dokumentace.
-- [Vytváření back-endových služeb pro nativní mobilní aplikace](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), který ukazuje, jak sestavit služby REST pro aplikace na platformě Xamarin.Forms pomocí ASP.NET Core.
+- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) dokumentace.
+- [Vytváření back-endových služeb pro nativní mobilní aplikace](/aspnet/core/mobile/native-mobile-backend), který ukazuje, jak sestavit služby REST pro aplikace na platformě Xamarin.Forms pomocí ASP.NET Core.
 - [ASP.NET Core praktických cvičení](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).

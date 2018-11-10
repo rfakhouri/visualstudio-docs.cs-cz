@@ -1,5 +1,5 @@
 ---
-title: Profilace zátěžových testů ASP.NET | Microsoft Docs
+title: Profilace zátěžových testů ASP.NET | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 03d6b6ec8cc244329bd46b73eebd21bdadef6a33
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 688b98baeec86b932e187cf27cd4661d45acf526
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254723"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220304"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profil ASP.NET zátěžových testů
-Můžete shromáždit profilace data z automatizované [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] webové testy, které jste spustili projekty ASP.NET – webové servery. Můžete shromáždit vzorkování a úroveň dat interakce. Další informace naleznete v následujících tématech:  
+Můžete shromažďovat data z profilování automatizované [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] webové testy, které běží na webové servery projekty ASP.NET. Můžete shromažďovat vzorkování a úroveň dat interakce. Další informace naleznete v následujících tématech:  
   
- [(NIB) Postupy: spuštění relace výkonu na webovou aplikaci z Editor testu výkonnosti webu](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
+ [(NIB) Postupy: spuštění relace výkonu ve webové aplikaci z editoru testu výkonnosti webu](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
   
- [Postupy: Konfigurace služby ASP.NET Profiler pro zátěžové testy s využitím testovacích nastavení v sadě Visual Studio](http://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
+ [Postupy: Konfigurace ASP.NET Profiler pro zátěžové testy pomocí nastavení testu v sadě Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
   
 ## <a name="see-also"></a>Viz také:  
- [Pochopení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)   
+ [Vysvětlení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)   
  [Použití pravidel výkonu k analýze dat](../profiling/using-performance-rules-to-analyze-data.md)   
- [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)   
+ [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)   
  [Zobrazení interakcí vrstev](../profiling/tier-interactions-view.md)

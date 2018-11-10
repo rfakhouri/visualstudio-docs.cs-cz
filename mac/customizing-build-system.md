@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624152"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296304"
 ---
 # <a name="customizing-the-build-system"></a>Přizpůsobení procesu sestavení
 
-Nástroj MSbuild je modul sestavení s vyvinutý microsoftem, který umožňuje vytváření primárně aplikací .NET. Mono framework obsahuje také vlastní implementace společnosti Microsoft Build Engine, volá **xbuild**. Ale xbuild byla ukončena, používat MSBuild na všechny operační systémy.
+Nástroj MSbuild je modul sestavení s vyvinutý microsoftem, který umožňuje vytváření primárně aplikací .NET. Mono framework obsahuje také vlastní implementace společnosti Microsoft Build Engine, volá **xbuild**. Ale xbuild byla ukončena používat MSBuild na všechny operační systémy.
 
-**Nástroj MSbuild** slouží především pro jako systém sestavení pro projekty v sadě Visual Studio pro Mac. 
+**Nástroj MSbuild** slouží především pro jako systém sestavení pro projekty v sadě Visual Studio pro Mac.
 
-Nástroj MSBuild funguje tak, že trvá sadu vstupů, jako je například zdrojové soubory a přemění je na výstupů, jako je například spustitelné soubory. Tento výstup dosahuje vyvoláním nástrojů, jako je kompilátor. 
-
+Nástroj MSBuild funguje tak, že trvá sadu vstupů, jako je například zdrojové soubory a přemění je na výstupů, jako je například spustitelné soubory. Tento výstup dosahuje vyvoláním nástrojů, jako je kompilátor.
 
 ## <a name="msbuild-file"></a>Soubor MSBuild
 
-Nástroj MSBuild používá soubor XML s názvem souboru projektu, který definuje *položky* , které jsou součástí vašeho projektu (například obrázek prostředky) a *vlastnosti* potřebné k sestavení projektu. Tento soubor projektu bude mít vždy příponu souboru končí na `proj`, jako například `.csproj` pro projekty jazyka C#. 
+Nástroj MSBuild používá soubor XML s názvem souboru projektu, který definuje *položky* , které jsou součástí vašeho projektu (například obrázek prostředky) a *vlastnosti* potřebné k sestavení projektu. Tento soubor projektu bude mít vždy příponu souboru končí na `proj`, jako například `.csproj` pro projekty jazyka C#.
 
 ### <a name="viewing-the-msbuild-file"></a>V souboru nástroje MSBuild
 
@@ -61,7 +60,7 @@ Existují dva základní datové typy v nástroji MSBuild: *položky* a *vlastno
 
 Vlastnosti jsou páry klíč/hodnota, které se používají k ukládání nastavení, která ovlivňují kompilace, jako jsou možnosti kompilátoru.
 
-Jsou nastavené pomocí PropertyGroup a může obsahovat libovolný počet PropertiesGroups, který může obsahovat libovolný počet vlastností. 
+Jsou nastavené pomocí PropertyGroup a může obsahovat libovolný počet PropertiesGroups, který může obsahovat libovolný počet vlastností.
 
 PropertyGroup pro jednoduchou konzolovou aplikaci může například vypadat jako následující kód XML:
 
@@ -83,7 +82,7 @@ Vlastnosti lze odkazovat z výrazů pomocí `$()` syntaxe. Například `$(Foo)` 
 
 Položky poskytují způsob řešení problémů s vstupy do systému sestavení, jako jsou uvedeny nebo nastaví a obvykle představují soubory. Každá položka má položku *typ*, položku *specifikace*a volitelné libovolného *metadat*. Všimněte si, že nástroj MSBuild nepracuje na jednotlivé položky trvá u všech položek zadaný typ označuje položku *nastavení*
 
-Položky jsou vytvořeny prohlášením `ItemGroup`. Může existovat libovolný počet ItemGroups, který může obsahovat libovolný počet položek. 
+Položky jsou vytvořeny prohlášením `ItemGroup`. Může existovat libovolný počet ItemGroups, který může obsahovat libovolný počet položek.
 
 Například následující fragment kódu vytvoří spuštění obrazovky pro iOS. Spusťte obrazovky obsahují typ sestavení `BundleResource`, s specifikace jako cestu k bitové kopii:
 
@@ -104,5 +103,5 @@ Například následující fragment kódu vytvoří spuštění obrazovky pro iO
 
 Další informace o nástroji MSBuild podrobněji lze použít v následujících zdrojích:
 
-* [MSDN – přehled](https://msdn.microsoft.com/library/dd393574.aspx)
-* [MSDN – koncepce](https://msdn.microsoft.com/library/dd637714.aspx)
+* [Přehled nástroje MSBuild](/visualstudio/msbuild/msbuild)
+* [Koncepty nástroje MSBuild](/visualstudio/msbuild/msbuild-concepts)

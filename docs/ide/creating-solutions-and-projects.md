@@ -17,18 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813814"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349634"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
 *Projekty* jsou logické kontejnery ve Visual Studiu, která obsahovat položky potřebné k sestavení aplikace, jako jsou soubory zdrojového kódu, rastrové obrázky, ikony a odkazy na komponent a služeb. Když vytvoříte nový projekt, vytvoří Visual Studio *řešení* tak, aby obsahovala projektu. Pokud chcete, můžete přidat pak dalších nových nebo existujících projektů do řešení. Řešení může také obsahovat soubory, které nejsou připojené do žádného konkrétního projektu.
 
 ![Hierarchie řešení nebo projektu](./media/vside-proj-soln.png)
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [vytvářet projekty v sadě Visual Studio pro Mac](/visualstudio/mac/create-new-projects).
 
 Řešení a projekty můžete zobrazit v okně nástroje **Průzkumníka řešení**. Následující snímek obrazovky ukazuje příklad řešení v **Průzkumníka řešení** (**BikeSharing.Xamarin UPW**), který obsahuje dva projekty: **BikeSharing.Clients.Core** a **BikeSharing.Clients.Windows**. Každý projekt obsahuje více souborů, složek a odkazy. Je název projektu tučným písmem *spouštěný projekt*; to znamená, že projekt, který se spustí při spuštění aplikace. Můžete určit, který projekt je projekt po spuštění.
 
@@ -39,7 +42,7 @@ Přestože lze vytvořit projekt sami tak, že přidáte soubory potřebné k n�
 Který říká, řešení a projekty není nutné pro vývoj aplikací v sadě Visual Studio. Můžete otevřít také pouze kód, který jste naklonovali z Gitu nebo stáhli jinde. Další informace najdete v tématu [vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 > [!NOTE]
-> Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, zvolte **nástroje**, **nastavení importu a exportu**a pak Zvolte **obnovit všechna nastavení**.
+> Popisy v tomto tématu jsou založeny na Visual Studio Community edition. Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch zde popsaných v závislosti na vašem nastavení nebo verzi systému Visual Studio. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, zvolte **nástroje** > **nastavení importu a exportu**a klikněte na tlačítko **obnovit všechna nastavení**.
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Vytvoření projektu ze šablony projektu
 
@@ -138,3 +141,4 @@ Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **m
 - [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)
 - [Otevřít zdroj úložiště Microsoftu na Githubu](https://github.com/Microsoft)
 - [Ukázky kódu vývojáře](https://code.msdn.microsoft.com/)
+- [Vytváření projektů (Visual Studio for Mac)](/visualstudio/mac/create-new-projects)

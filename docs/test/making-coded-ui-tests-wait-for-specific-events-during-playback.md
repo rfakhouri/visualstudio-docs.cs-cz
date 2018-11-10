@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faee56676329d9dd70f189eeddac82bba680a1d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912783"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295121"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Ujistěte se, programové testy UI čekání na konkrétní události při přehrávání
 
@@ -25,7 +25,7 @@ Programové přehrávání testů uživatelského rozhraní webu můžete dát p
  Visual Studio Enterprise
 
 > [!TIP]
-> Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programového testu UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programového testu UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 
  **UITestControl.WaitForControlXXX() metody**
@@ -113,4 +113,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 - [Návod: Vytváření, úpravy a údržba programového uživatelského rozhraní testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Anatomie programového testu uživatelského rozhraní](../test/anatomy-of-a-coded-ui-test.md)
 - [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programového testu UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+- [Postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programového testu UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

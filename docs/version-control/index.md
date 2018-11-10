@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Správa verzí v sadě Visual Studio | VSTS a TFS
-description: Průvodce Začínáme se správou verzí v sadě Viual Studio
+title: Správa verzí
+description: Průvodce Začínáme se správou verzí v sadě Visual Studio
 keywords: VSTS, TFS, Správa verzí
 author: steved0x
 ms.manager: douge
@@ -12,23 +12,24 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: e37645f8960aae54907dffeb0bcb88848d9cd63f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 3640fba7d1ca3993841adb94dfdd08bc7d405e9b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320576"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348159"
 ---
 # <a name="version-control-in-visual-studio"></a>Správa verzí v sadě Visual Studio
 
 Systémy správy verzí můžete sledovat změny kódu v čase. Při provádění změn, systém správy verzí pořídí snímek vašich souborů. Systém správy verzí ukládá snímky trvale, takže pokud ho potřebujete ji můžete odvolat později. Visual Studio poskytuje [Git](/azure/devops/repos/git/index?view=vsts) a [Team Foundation verze ovládacího prvku (TFVC)](/azure/devops/repos/tfvc/index?view=vsts). Při rozhodování mezi těmito dvěma systémy, najdete v článku [výběr správné správy verzí pro projekt](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
+
 Git je systém správy verzí nejčastěji používané ještě dnes a se rychle mění na standard pro správu verzí. Git je distribuovaný systém správy verzí, což znamená, že vaše místní kopie kódu je úložiště úplnou verzi ovládacího prvku. Zkontrolujte tyto plně funkční místní úložiště, které usnadňují vzdálenou nebo offline práci. Potvrďte svou práci místně a pak sesynchronizujete své úložiště s kopií na serveru. Toto paradigma se liší od centralizované správy verzí ve kterém klienti musí provést synchronizaci kódu serveru před vytvořením nové verze kódu.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/azure/devops/git/what-is-git">
+        <a href="/azure/devops/git/what-is-git">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -46,7 +47,7 @@ Git je systém správy verzí nejčastěji používané ještě dnes a se rychle
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -56,7 +57,7 @@ Git je systém správy verzí nejčastěji používané ještě dnes a se rychle
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Seznámení s Gitem s použitím sady Visual Studio</h3>
+                        <h3>Seznámení s Gitem v sadě Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@ Git je systém správy verzí nejčastěji používané ještě dnes a se rychle
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/clone">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -107,7 +108,7 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
         </a>
     </li>
     <li>
-        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -125,7 +126,7 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
         </a>
     </li>
    <li>
-        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -144,9 +145,9 @@ Team Foundation – správa verzí (TFVC) je centralizovaný systém správy ver
     </li>
 </ul>
 
-
 ## <a name="resources"></a>Prostředky
 
 - [Kniha pro Git](https://git-scm.com/book/en/v2)
 - [Naplánujte si migraci na Git](https://docs.microsoft.com/azure/devops/git/centralized-to-git)
 - [Migrace od TFVC ke Gitu](https://docs.microsoft.com/azure/devops/git/migrate-from-tfvc-to-git)
+- [Správa verzí (Visual Studio for Mac)](/visualstudio/mac/version-control)

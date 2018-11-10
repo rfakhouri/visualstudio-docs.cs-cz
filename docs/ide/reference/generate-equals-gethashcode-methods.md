@@ -1,5 +1,5 @@
 ---
-title: Generování přepisů metod jazyka C# Equals a GetHashCode v sadě Visual Studio
+title: Generovat C# Equals a GetHashCode – metoda přepsání
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903111"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295706"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Generování přepisů metod Equals a GetHashCode v sadě Visual Studio
 
@@ -36,17 +36,20 @@ Tato generace kód platí pro:
 
 ## <a name="how-to"></a>Postupy
 
-1. Umístěte kurzor vaše deklaraci typu.
+1. Umístěte kurzor někam na řádek vaše deklaraci typu.
 
    ![Zvýrazněný kód](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > Proveďte není dvojitým kliknutím vyberte název typu, nebo možnost nabídky nebude k dispozici. Právě umístěte kurzor někam na řádek.
+
 1. Dále proveďte jednu z následujících akcí:
 
-   - **Klávesnice**
-      - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
-   - **Myši**
-      - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
-      - Klikněte na ![Žárovka](media/bulb-cs.png) ikona, která se zobrazí u levého okraje, pokud textový kurzor na řádek s deklaraci typu.
+   - Stisknutím klávesy **Ctrl**+**.** aktivační událost **rychlé akce a Refaktoringy** nabídky.
+
+   - Klikněte pravým tlačítkem a vyberte **rychlé akce a Refaktoringy** nabídky.
+
+   - Klikněte na ![šroubovák](../media/screwdriver-icon.png) ikona, která se zobrazí na levém okraji.
 
    ![Generovat přepsání ve verzi preview](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ Tato generace kód platí pro:
     ![Generovat přepsání dialogového okna](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > Můžete také generovat operátory z tohoto dialogového okna pomocí zaškrtávacích políček pod seznam členů.
+    > Můžete také generovat operátory z tohoto dialogového okna pomocí zaškrtávacího políčka v dolní části dialogového okna.
 
-   Equals a GetHashCode přepsání jsou generovány pomocí výchozí implementace.
+   `Equals` a `GetHashCode` metody jsou generovány pomocí výchozí implementace.
 
    ![Generovat výsledek – metoda](media/overrides-result-cs.png)
 

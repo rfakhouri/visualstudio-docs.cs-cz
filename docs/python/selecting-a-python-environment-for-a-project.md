@@ -1,7 +1,7 @@
 ---
-title: Výběr interpretu Pythonu a prostředí pro projekt
-description: Jak přiřadit prostředí Pythonu pro projekt sady Visual Studio, a navíc pokyny k vytvoření virtuálních prostředí.
-ms.date: 06/27/2018
+title: Vyberte interpret Pythonu a prostředí pro projekt
+description: Jak vybrat prostředí Python nebo interpretu pro projekt sady Visual Studio, včetně Anaconda a virtuální prostředí.
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101131"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349449"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Jak přiřadit prostředí Pythonu, ve kterém se používá pro projekt
+# <a name="how-to-select-a-python-environment-for-a-project"></a>Jak vybrat prostředí Pythonu pro projekt
 
-Veškerý kód v projektu Pythonu běží v kontextu konkrétní prostředí. Visual Studio také používá pro ladění, import a dokončování členů, kontrola syntaxe a další úlohy, které vyžadují prostředí daného prostředí.
+Veškerý kód v projektu Pythonu běží v kontextu konkrétní prostředí, jako je například globální prostředí Pythonu, Anaconda prostředí, do virtuálního prostředí nebo prostředí conda. Prostředí sady Visual Studio také používá pro ladění, import a dokončování členů, kontrola syntaxe a další úlohy, které vyžadují jazykovými službami, které jsou specifické pro verzi Pythonu a sady nainstalované balíčky.
 
 Všechny nové projekty Pythonu v sadě Visual Studio jsou původně nakonfigurovány pro použití výchozí globální prostředí, které se zobrazí pod **prostředí Pythonu** uzel v **Průzkumníka řešení**:
 
@@ -42,7 +42,7 @@ V místní nabídce **prostředí Pythonu** uzel poskytuje také další příka
 | --- | --- |
 | **Přidat virtuální prostředí** | Spustí proces vytváření nové virtuální prostředí v projektu. Zobrazit [vytvořit virtuální prostředí](#create-a-virtual-environment). |
 | **Přidat existující virtuální prostředí** | Výzva k výběru složky obsahující virtuální prostředí a přidá ji do seznamu **prostředí Pythonu**, ale ne aktivovat. Zobrazit [aktivovat existující virtuální prostředí](#activate-an-existing-virtual-environment). |
-| **Vytvořit prostředí Conda** | Přepne **prostředí Pythonu** *okno* ve kterém zadáte název prostředí a jeho základní překladač. |
+| **Vytvořit prostředí Conda** | Přepne **prostředí Pythonu** *okno* ve kterém zadáte název prostředí a jeho základní překladač. Zobrazit [prostředí Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 
 ## <a name="use-virtual-environments"></a>Použití virtuálního prostředí
 

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624151"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296447"
 ---
 # <a name="working-with-git"></a>Práce s Gitem
 
@@ -24,7 +24,7 @@ Následující obrázek ukazuje možnosti poskytovaný sadou Visual Studio for M
 
 ![Položka nabídky ovládací prvek verze](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>Nabízená a vyžádaná instalace 
+## <a name="push-and-pull"></a>Nabízená a vyžádaná instalace
 
 Odesílání a stahování jsou dvě nejběžnější akce v rámci Git. Pokud chcete synchronizovat změny provedené jinými uživateli do vzdáleného úložiště, musíte **o přijetí změn** z něj. To se provádí v sadě Visual Studio pro Mac tak, že vyberete **verzí > aktualizace řešení**.
 
@@ -54,11 +54,11 @@ Tyto rutiny umožňují následující akce:
 
     ![Karta protokolu](media/version-control-gitLog.png)
 
-* **Sloučení** – to je možné, pokud máte konfliktu při slučování při práci. Zobrazí vizuální znázornění změny, které vás a ostatní vývojáři a díky tomu můžete kombinovat čistě oba oddíly kódu. 
+* **Sloučení** – to je možné, pokud máte konfliktu při slučování při práci. Zobrazí vizuální znázornění změny, které vás a ostatní vývojáři a díky tomu můžete kombinovat čistě oba oddíly kódu.
 
-## <a name="switching-branches"></a>Přepínání větví 
+## <a name="switching-branches"></a>Přepínání větví
 
-Ve výchozím nastavení, se nazývá první větev vytvořená v úložišti **hlavní** větve. Není technicky nic jiného mezi hlavní větve a jakékoli jiné, ale hlavní větev je ten, který je nejčastěji považovat za v vývojové týmy "live" nebo "produkční" větve.
+Ve výchozím nastavení, se nazývá první větev vytvořená v úložišti **hlavní** větve. Není technicky nic jiného mezi hlavní větve a jakékoli jiné, ale hlavní větev je ten, který je nejčastěji považovat za v vývojové týmy "live" nebo "produkční" větve.
 
 Nezávislé řádku vývoje mohou vytvořit větvení Master (nebo jakékoli větve, k tomuto účelu). To poskytuje novou verzi hlavní větve v bodě v čase, umožňující vývoj bez ohledu na jejich, co je "live". Použití větví tímto způsobem se často používá pro funkce ve vývoji softwaru
 
@@ -80,7 +80,7 @@ Zobrazit aktuální větve v oblasti řešení, vedle názvu projektu:
 
  ![Aktuální větve, které jsou zobrazeny v oblasti řešení](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>Kontrola a potvrzení 
+## <a name="reviewing-and-committing"></a>Kontrola a potvrzení
 
 Zkontrolovat změny v souborech, použít změny, viny, protokol a sloučit kartách na jednotlivých dokumentů, které jsou znázorněné výše v tomto tématu.
 
@@ -90,8 +90,12 @@ Zkontrolujte všechny změny ve vašem projektu tak, že přejdete na **verzí >
 
 To umožňuje zobrazení všech změn v každém souboru projektu se možnost vrátit zpět, vytvořit opravu nebo použití.
 
-Chcete-li zapsat soubor do vzdáleného úložiště, stiskněte **potvrzení změn...** , zadejte zprávu potvrzení a potvrďte tlačítkem potvrzení:
+Chcete-li zapsat soubor do vzdáleného úložiště, stiskněte **potvrzení**, zadejte zprávu potvrzení a potvrďte tlačítkem potvrzení:
 
 ![Potvrzují se soubor](media/version-control-gitCommit.png)
 
 Jakmile máte potvrzené změny, jejich doručování do vzdáleného úložiště, chcete-li umožnit dalším uživatelům k jejich zobrazení.
+
+## <a name="see-also"></a>Viz také:
+
+* [Sdílení kódu pomocí sady Visual Studio 2017 a Azure úložišť Git](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

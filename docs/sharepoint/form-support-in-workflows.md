@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908779"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296187"
 ---
 # <a name="form-support-in-workflows"></a>Podpora formulářů v pracovních postupech
-  Čtyři typy formulářů lze použít v pracovní postup: přidružení, inicializace, úloh a úpravy. Tyto typy formuláře může být založen na formulář ASPX nebo formuláře aplikace InfoPath. Úroveň podpory, který [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje pro konkrétní formulář závisí na několika faktorech, které jsou popsány v následujících tabulkách. Další informace o typech formuláře pracovního postupu najdete v tématu [Přehled formuláře pracovního postupu](http://go.microsoft.com/fwlink/?LinkId=185228) na webové stránce MSDN.  
+  Čtyři typy formulářů lze použít v pracovní postup: přidružení, inicializace, úloh a úpravy. Tyto typy formuláře může být založen na formulář ASPX nebo formuláře aplikace InfoPath. Úroveň podpory, který [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje pro konkrétní formulář závisí na několika faktorech, které jsou popsány v následujících tabulkách. Další informace o typech formuláře pracovního postupu najdete v tématu [Přehled formuláře pracovního postupu](http://go.microsoft.com/fwlink/?LinkId=185228).  
   
 ## <a name="xml-refactoring"></a>Refaktoring XML
  Když přidáte ASPX přidružení nebo inicializační formulář k [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] položky projektu pracovního postupu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] automaticky refactors XML v pracovním postupu *Elements.xml* souboru se má zachovat atributu, který odkazuje na přidružení nebo odstranění inicializační formulář synchronizované pokaždé, když se aktualizuje název nebo nasazení cestu formuláře nebo formuláře. Ale při použití jiných typů formuláře v pracovním postupu, jako je například formuláři úkolu nebo úpravy *Elements.xml* souboru není Refaktorovat.  

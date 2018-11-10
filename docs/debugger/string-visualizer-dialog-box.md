@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274310"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349085"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Zobrazení řetězců ve vizualizéru řetězce v sadě Visual Studio
 
@@ -43,9 +43,9 @@ Otevřete vizualizéru řetězce, musí být pozastaveno během ladění. Podrž
 
 ## <a name="view-string-visualizer-data"></a>Zobrazení data vizualizéru řetězce
 
-V okně vizualizéru řetězce **výraz** poli se zobrazí proměnné nebo výrazu najedete, a **hodnotu** pole zobrazí hodnotu řetězce. 
+V okně vizualizéru řetězce **výraz** poli se zobrazí proměnné nebo výrazu najedete, a **hodnotu** pole zobrazí hodnotu řetězce.
 
-Prázdnou hodnotu **hodnotu** znamená, že nemůže rozpoznat zvolené vizualizéru řetězce. Například **XML vizualizér** zobrazí prázdnou hodnotu **hodnotu** pro textový řetězec s žádné značky XML nebo řetězec formátu JSON. 
+Prázdnou hodnotu **hodnotu** znamená, že nemůže rozpoznat zvolené vizualizéru řetězce. Například **XML vizualizér** zobrazí prázdnou hodnotu **hodnotu** pro textový řetězec s žádné značky XML nebo řetězec formátu JSON.
 
 K zobrazení řetězce, které nemůže rozpoznat zvolené vizualizéru, zvolte **Vizualizátor textu**. **Vizualizátor textu** zobrazuje prostý text.
 
@@ -67,5 +67,7 @@ Zobrazí se ve správném formátu řetězec ve formátu HTML jakoby vykreslení
 
 ![HTML vizualizér řetězce](../debugger/media/dbg-string-visualizers-html.png "HTML vizualizér řetězce")
 
-## <a name="see-also"></a>Viz také:  
- [Vytváření vlastních vizualizérů (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>Viz také:
+
+- [Vytváření vlastních vizualizérů (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Vizualizace dat v sadě Visual Studio pro Mac](/visualstudio/mac/data-visualizations)

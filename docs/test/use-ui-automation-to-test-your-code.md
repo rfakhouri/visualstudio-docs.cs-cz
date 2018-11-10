@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371079"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296070"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -402,7 +402,7 @@ K získání a nastavení konkrétní hodnoty vlastností ovládacího prvku už
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Pro získání nebo nastavení vlastnosti přímo z ovládacích prvků uživatelského rozhraní testu
 
-Pomocí ovládacích prvků, které jsou odvozeny z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, jako například [HTML](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) nebo [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), můžete získat nebo nastavit jejich hodnoty vlastností přímo. Následující kód ukazuje několik příkladů:
+Pomocí ovládacích prvků, které jsou odvozeny z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, jako například [HTML](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) nebo [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), můžete získat nebo nastavit jejich hodnoty vlastností přímo. Následující kód ukazuje několik příkladů:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +443,7 @@ Programové testy uživatelského rozhraní pomocí protokolů z programových t
 
 - [Spuštění testů v procesu sestavení](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Postupy: nastavení testovacího agenta pro spouštění testů komunikujících s plochou](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Postupy: nastavení testovacího agenta pro spouštění testů komunikujících s plochou](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Přidání podpory pro vlastní ovládací prvky:** programového uživatelského rozhraní testovací rozhraní nepodporuje všechna možná uživatelská rozhraní a nemusí podporovat uživatelské rozhraní, které chcete testovat. Například nelze vytvořit okamžitě programový test UI uživatelského rozhraní pro aplikaci Microsoft Excel. Můžete však vytvořit rozšíření programového uživatelského rozhraní testování rozhraní, která bude podporovat vlastní ovládací prvek.
 

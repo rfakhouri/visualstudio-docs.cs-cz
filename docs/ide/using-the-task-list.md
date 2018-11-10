@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612698"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349390"
 ---
 # <a name="use-the-task-list"></a>Použití seznamu úkolů
 
 Použít **seznamu úkolů** ke sledování komentářů kódu, které používají tokeny jako `TODO` a `HACK`, nebo vlastní tokeny a ke správě klávesových zkratek, které můžete přejít přímo do předdefinovaného místa v kódu. Klikněte na položku v seznamu a přejděte do umístění ve zdrojovém kódu.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [úkolů komentáře (Visual Studio for Mac)](/visualstudio/mac/task-comments).
 
 ## <a name="the-task-list-window"></a>Okno Seznam úkolů
 
@@ -104,3 +107,4 @@ Procházet zástupce v kódu, zvolit zástupce v seznamu a klikněte na tlačít
 ## <a name="see-also"></a>Viz také:
 
 - [Úloha seznamu prostředí, dialogové okno Možnosti](../ide/reference/task-list-environment-options-dialog-box.md)
+- [Komentáře k úkolu (Visual Studio for Mac)](/visualstudio/mac/task-comments)

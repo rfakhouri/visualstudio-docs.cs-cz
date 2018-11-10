@@ -12,16 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 539e6c95dd16e091b7f0ff2cf792a9f8b2fa416b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000226"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348332"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup ohlášení problému se sadou Visual Studio 2017
 
 Pokud dochází k potížím s Visual Studio chcete vědět o něm. Tady je postup, chcete nahlásit problém, který chcete [komunity vývojářů](https://developercommunity.visualstudio.com/) tak, aby nám můžete diagnostikovat a opravit ho.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [jak chcete nahlásit problém v sadě Visual Studio pro Mac](/visualstudio/mac/report-a-problem).
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>Ohlásit problém s použitím sady Visual Studio
 

@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění ve smíšeném režimu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182673"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295472"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Postupy: ladění ve smíšeném režimu
 Následující postupy popisují, jak povolit ladění spravovaného a nativního kódu společně, označované také jako pracující v kombinovaném režimu ladění. Existují dva scénáře ladění ve smíšeném režimu:  
@@ -58,9 +58,12 @@ Pokud nemáte přístup k projektu volání aplikace, můžete ladit knihovnu DL
    
 1. Vyberte **ladění** kartu a potom vyberte **povolit ladění nativního kódu**.
    
-1. Použití **souboru** > **uložit vybrané položky** nebo **Ctrl + S** uložte změny.
+1. Zavřete jeho stránku vlastností a uložte změny.
 
    ![Povolit ladění nativního kódu](../debugger/media/dbg-mixed-mode-from-csharp.png "povolit ladění nativního kódu")
   
+>[!NOTE]
+>Ve většině verzí sady Visual Studio 2017, je nutné použít *launchSettings.json* souboru místo vlastnosti projektu pro povolení ladění ve smíšeném režimu pro nativní kód v aplikaci .NET Core. Podrobnosti najdete v tématu [ladění spravovaného a nativního kódu](../debugger/how-to-debug-managed-and-native-code.md).
+
 ## <a name="see-also"></a>Viz také:  
  [Postupy: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md)

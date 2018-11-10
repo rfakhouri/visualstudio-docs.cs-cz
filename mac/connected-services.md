@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623932"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295173"
 ---
 # <a name="connected-services-walkthrough"></a>Názorný postup připojené služby
 
@@ -18,8 +18,7 @@ Připojené služby pracovního postupu přináší pracovními postupy Azure po
 
 Tento návod ukazuje, jak přidat službu back-endu Azure, která přináší datové úložiště v cloudu, ověřování a odesílání nabízených oznámení do aplikace Xamarin.Forms Přenosná knihovna tříd (PCL) napříč platformami.
 
-
-1.  Začněte tím, že poklikáte na **připojené služby** uzlu v řešení, kterým se zobrazí **Galerie služby**.
+1. Začněte tím, že poklikáte na **připojené služby** uzlu v řešení, kterým se zobrazí **Galerie služby**.
   Toto je seznam všech dostupných služeb pro typ aplikace. Vyberte službu (například **mobilní back-end pomocí služby Azure App Service**) kliknutím na ni.
 
     [![Uzel připojených služeb v sadě Visual Studio pro Mac](media/connected-services-image001-sml.png "uzel připojené služby v sadě Visual Studio pro Mac")](media/connected-services-image001.png#lightbox)
@@ -71,4 +70,8 @@ Nová služba vyžaduje následující parametry:
 -   **Skupina prostředků** – způsob, jak nebo uspořádání všech vašich prostředků Azure pro projekt. Možnost použít existující nebo vytvořte novou. Pokud je toto první služby Azure, vytvořte novou.
 -   **Plánování služby** – Určuje umístění a náklady na všechny prostředky, které ji používají. Možnost použít existující nebo vytvořte novou. Pokud je toto první služby Azure, použijte výchozí hodnotu nebo vytvořte novou úroveň free (F1).
 
-Přejděte [dokumentace ke službě Azure App Service](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/) Další informace.
+Přejděte [dokumentace k Mobile apps](/azure/app-service-mobile/) Další informace.
+
+## <a name="see-also"></a>Viz také:
+
+- [Připojené služby (Visual Studio na Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

@@ -4,38 +4,25 @@ items:
   expanded: true
 - name: Publikování do Azure
   items:
-  - name: Publikování aplikace ASP.NET Core do Azure
-    href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
-  - name: Publikování webové aplikace seznamu úkolů .NET do Azure
-    href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
-  - name: Publikování funkcí Azure Functions
-    href: /azure/azure-functions/functions-develop-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-  - name: Průběžné nasazování do Azure pomocí sady Visual Studio a Gitu s ASP.NET Core
-    href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
-  - name: Průběžné nasazování do Azure pomocí Azure Pipelines
-    href: /azure/devops/pipelines/get-started-yaml?view=vsts
+  - name: Publikování cloudové služby
+    href: vs-azure-tools-publishing-a-cloud-service.md
+  - name: Publikování pomocí integrovaného vývojového prostředí (IDE) sady Visual Studio
+    href: vs-azure-tools-publish-azure-application-wizard.md
+  - name: Publikování powershellového skriptu
+    href: vs-azure-tools-publishing-using-powershell-scripts.md
   - name: Publikování webové aplikace ASP.NET na virtuální počítač Azure
     href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+  - name: Publikování webové aplikace do Azure Cloud Services
+    href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
   expanded: true
 - name: Připojení ke službám Azure
   items:
   - name: Přidání služby Azure Storage
     href: vs-azure-tools-connected-services-storage.md
-  - name: Přidání služby Azure Key Vault
-    href: /azure/key-vault/vs-key-vault-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   - name: Přidání služby Azure Active Directory (AD)
     href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-  - name: Přidání služby Cognitive Services
-    href: cognitive-services-connected-services.yml
-    items:
-    - name: Analýza textu
-      href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Vyhledávání Bingu
-      href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Rozpoznávání obličeje
-      href: /azure/cognitive-services/face/vs-face-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Počítačové zpracování obrazu
-      href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+  - name: Přidání služeb Mobile Services
+    href: vs-azure-tools-connected-services-add-mobile-services.md
   expanded: false
 - name: Vývoj pro Azure Cloud Services
   items:
@@ -59,11 +46,11 @@ items:
       href: vs-azure-tools-configuring-an-azure-project.md
     - name: Konfigurace projektu Azure za účelem použití více konfigurací služby
       href: vs-azure-tools-multiple-services-project-configurations.md
-    - name: Postup upgradu projektů na aktuální verzi nástrojů Azure
+    - name: Upgrade projektů na aktuální verzi nástrojů Azure
       href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
   - name: Testování a ladění cloudové služby
     items:
-    - name: Ladění cloudové služby nebo virtuálního počítače Azure v sadě Visual Studio
+    - name: Ladění cloudové služby nebo virtuálního počítače Azure
       href: vs-azure-tools-debug-cloud-services-virtual-machines.md
     - name: Různé způsoby ladění cloudové služby Azure
       href: vs-azure-tools-debugging-cloud-services-overview.md
@@ -99,7 +86,7 @@ items:
     items:
     - name: Začínáme s Průzkumníkem služby Storage
       href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Konfigurace a použití emulátoru úložiště v sadě Visual Studio
+    - name: Konfigurace a použití emulátoru úložiště
       href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Vytváření filtračních řetězců pro Návrháře tabulky
       href: vs-azure-tools-table-designer-construct-filter-strings.md
@@ -120,9 +107,9 @@ items:
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
   - name: Přístup ke službě Azure Virtual Machines z Průzkumníka serveru
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: c0c4a4085432d18eed9b46b767069f18df39df8a
+ms.openlocfilehash: 32d3d25dce14c40fb4d080d6467696695e9aec99
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000826"
+ms.locfileid: "51003741"

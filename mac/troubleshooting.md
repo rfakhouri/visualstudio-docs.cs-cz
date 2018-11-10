@@ -1,17 +1,17 @@
 ---
-title: Visual Studio for Mac Poradce při potížích
+title: Řešení potíží
 description: Běžné problémy a řešení pro Visual Studio pro Mac.
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624297"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294640"
 ---
 # <a name="troubleshooting"></a>Poradce při potížích
 
@@ -23,11 +23,11 @@ Protokoly můžete najít tak, že přejdete na **Nápověda > otevřít adresá
 
 ## <a name="viewing-exceptions"></a>Zobrazení výjimky
 
-Když byla zachycena výjimka, zobrazí se bublin k výjimce. Chcete-li zobrazit další podrobnosti, vyberte **zobrazit podrobnosti o** tlačítka:
+Při zachycení výjimky, zobrazí se bublinu výjimky. Chcete-li zobrazit další podrobnosti, vyberte **zobrazit podrobnosti o** tlačítka:
 
 ![Zobrazit další podrobnosti o výjimce](media/troubleshooting-image2.png)
 
-Bude se zobrazovat **zobrazit podrobnosti** dialogového okna, poskytuje další informace týkající se výjimky:
+Zobrazí se **zobrazit podrobnosti** dialogového okna, poskytuje další informace týkající se výjimky:
 
 ![Dialogové okno pro zobrazení podrobností](media/troubleshooting-image3.png)
 
@@ -45,4 +45,8 @@ Důležité části dialogového okna, která jsou číslována výše jsou podr
 10. Ve výchozím nastavení, je nastavené na co **ladit jenom kód projektu** nastavena možnost v nastavení ladicího programu. Zaškrtnutím tohoto políčka vám umožní všechny neuživatelský kód sbalit do jednoho řádku v stacktrace.
 11. Tlačítka kopírování zkopírujete `exception.ToString()` výstup do schránky.
 
-Všimněte si, že některé z těchto oddílů budou zobrazeny pouze pokud výjimka obsahuje vnitřní výjimku.
+Všimněte si, že některé z těchto oddílů se zobrazují pouze pokud výjimka obsahuje vnitřní výjimku.
+
+## <a name="see-also"></a>Viz také:
+
+- [Prostředky pro odstraňování chyb integrovaného vývojového prostředí (Visual Studio na Windows)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d181891fb36645e4f246aa0c2238c12ea1dc4903
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854283"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296005"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Vytváření šablon položek a projektů pro položky projektu SharePoint
   Při definování vlastního typu položky projektu služby SharePoint můžete přidružit ho šabloně položky nebo šablony projektu. Toto přidružení umožňuje ostatním vývojářům použít položku projektu v sadě Visual Studio. Můžete také vytvořit průvodce pro šablony.
@@ -42,7 +42,7 @@ ms.locfileid: "49854283"
 |Požadovaný soubor|Popis|
 |-------------------|-----------------|
 |*.Spdata* souboru|Tento soubor XML určuje obsah a výchozí chování položky projektu. Tento soubor musí být součástí šablony položky. Další informace o obsahu *.spdata* soubory, naleznete v tématu [referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).|
-|A *.vstemplate* souboru.|Tento soubor poskytuje informace potřebné k zobrazení šablony v sadě Visual Studio **přidat novou položku** dialogové okno a vytvoření položky projektu z šablony. Tento soubor musí být součástí šablony položky. Další informace najdete v tématu [soubory metadat šablony Visual Studio](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|A *.vstemplate* souboru.|Tento soubor poskytuje informace potřebné k zobrazení šablony v sadě Visual Studio **přidat novou položku** dialogové okno a vytvoření položky projektu z šablony. Tento soubor musí být součástí šablony položky. Další informace najdete v tématu [soubory metadat šablony Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Sestavení rozšíření sady Visual Studio, který implementuje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> rozhraní.|Toto sestavení definuje chování položky projektu. Toto sestavení musí být součástí balíčku souboru VSIX pomocí šablony položky. Další informace najdete v tématu [definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md) a [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).|
 
  V následující tabulce jsou uvedeny některé nejběžnější volitelné soubory, které mohou být zahrnuty v šabloně položky. Některé typy položek projektu může vyžadovat další soubory, které tu nejsou uvedené.
@@ -66,7 +66,7 @@ ms.locfileid: "49854283"
 
 |Požadovaný soubor|Popis|
 |-------------------|-----------------|
-|A *.vstemplate* souboru|Tento soubor poskytuje informace potřebné k zobrazení šablony v sadě Visual Studio **nový projekt** dialogové okno a vytvoření projektu ze šablony. Další informace najdete v tématu [soubory metadat šablony Visual Studio](http://msdn.microsoft.com/en-us/129d59b5-7f9c-4daf-9832-eaedb3c4c961).|
+|A *.vstemplate* souboru|Tento soubor poskytuje informace potřebné k zobrazení šablony v sadě Visual Studio **nový projekt** dialogové okno a vytvoření projektu ze šablony. Další informace najdete v tématu [soubory metadat šablony Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |A *.csproj* nebo *.vbproj* souboru|Jedná se o soubor projektu. Definuje obsah a nastavení konfigurace projektu.|
 |*Package.Package*|Tento soubor definuje balíček pro nasazení pro projekt. Při použití návrháře balíčků k přizpůsobení balíčku řešení pro váš projekt sady Visual Studio ukládá data o balíčku pro řešení v tomto souboru.<br /><br /> Při vytváření vlastní šablona projektu služby SharePoint, doporučujeme vám, že složku zahrnujete pouze minimální požadovaný obsah v *Package.package* souboru a konfiguraci balíčku řešení pomocí rozhraní API v <xref:Microsoft.VisualStudio.SharePoint.Packages> obor názvů v rozšíření, která je přidružená k šabloně projektu. Pokud to uděláte, šablony projektu je chráněný před budoucí změny struktury *Package.package* souboru. Příklad, který ukazuje, jak vytvořit *Package.package* obsah souboru s pouze minimálním předpokladem naleznete v tématu [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Pokud chcete změnit *Package.package* souboru přímo, můžete ověřit obsah pomocí schématu v *% Program Files (Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd x86)%\Microsoft* .|
 |*Package.Template.xml*|Tento soubor poskytuje základ pro řešení soubor manifestu (*manifest.xml*) balíčku řešení služby SharePoint (*.wsp*), který je generován z projektu. Pokud chcete zadat některé rysy chování sady, který není určený k jejich změně uživatelé typu projektu, můžete přidat obsah do tohoto souboru. Další informace najdete v tématu [stavebním blokem: řešení](http://go.microsoft.com/fwlink/?LinkId=169186) a [řešení schématu](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Při vytváření balíčku řešení z projektu sady Visual Studio sloučí obsah *Package.package* a *Package.Template.xml* soubor manifestu souborů do řešení. Další informace o vytváření balíčků řešení najdete v tématu [postupy: vytvoření balíčku řešení SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|

@@ -1,6 +1,6 @@
 ---
 title: Funkce pro usnadnění přístupu sady Visual Studio
-description: Další informace o usnadnění funkcí a nástrojů, které pomáhají vytvořit operačního systému Windows a sada Visual Studio developer více přístupná pro všechny uživatele, včetně osobám s postižením.
+description: Další informace o funkcí usnadnění a nástrojů, které vám pomohou zajistit operačního systému Windows a sady Visual Studio developer přístupnější pro všechny uživatele, včetně osobám s postižením.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,46 +14,48 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943696"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348718"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 
 > [!TIP]
-> Další informace o nejnovějších aktualizacích usnadnění přístupu najdete v tématu [vylepšení přístupnosti v Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) příspěvku na blogu.
+> Další informace o nedávných aktualizacích usnadnění přístupu, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
 
-Kromě funkcí a nástrojů usnadnění v systému Windows následující funkce aby Visual Studio přístupnější pro osoby s postižením:
+Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistěte se, Visual Studio přístupnější pro osoby s postižením:
 
--   Tlačítko a textové rozšíření nástrojů
+-   Rozšíření nástrojů tlačítko a text
 
--   Možnosti velikosti textu v editorech
+-   Možnosti změnit velikost textu v editorech
 
 -   Přizpůsobení barev v editorech
 
--   Úprava klávesových zkratek
+-   Přizpůsobení klávesové zkratky
 
--   Automatické dokončování metod a parametrů
+-   Automatické dokončování pro metody a parametrů
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [usnadnění pro Visual Studio for Mac](/visualstudio/mac/accessibility).
 
 > [!IMPORTANT]
-> Informace v této části se vztahují pouze na uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech amerických. Pokud jste tento produkt získali mimo Spojené státy, můžete použít kartu pobočky informace, která byla součástí vašeho softwarového balíčku, nebo můžete navštívit [stránku Kontakt pro systém Microsoft Support](http://support.microsoft.com/ContactUs) a klikněte na  **Vyhledejte po celém světě Microsoft pobočky** propojení (v dolní části stránky). Tato stránka obsahuje seznam telefonních čísel a adres pro Microsoft služby podpory. Obraťte se na vaší pobočky a zjistěte, jestli typy produktů a služeb, které jsou popsané v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.
+> Informace v této části se vztahují jenom na uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech. Pokud jste získali mimo Spojené státy tento produkt, můžete použít kartu pobočka informace, která byla součástí vašeho softwarového balíčku nebo můžete navštívit [kontaktujte nás stránku pro společnosti Microsoft Support](http://support.microsoft.com/ContactUs) a klikněte na tlačítko  **Vyhledejte po celém světě Microsoft pobočky** odkaz (v dolní části stránky). Tato stránka poskytuje seznam telefonních čísel a adres společnosti Microsoft služby podpory. Můžete se obrátit na pobočku společnosti a zjistěte, zda typy produktů a služeb, které jsou popsány v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.
 
+Další informace naleznete v následujících tématech:
 
- Další informace naleznete v následujících tématech:
-
--   [Postupy: Možnosti usnadnění sada IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Postupy: Sada IDE usnadnění](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
 -   [Postupy: výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Rady a tipy k usnadnění přístupu](../../ide/reference/accessibility-tips-and-tricks.md)
+-   [A tipy k přístupnosti](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [Postupy: Změna písma a barvy](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Usnadnění produkty a služby společnosti Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+- [Produkty a služby od Microsoftu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

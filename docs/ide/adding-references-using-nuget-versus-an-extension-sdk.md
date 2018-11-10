@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858472"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349475"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Přidání odkazů pomocí nástroje NuGet a sady extension SDK
 
-Balíček pro použití v rámci projektů sady Visual Studio můžete zadat prostřednictvím rozšíření NuGet sady Visual Studio, nebo (SDK) software development kit. Zadáním popisu vašeho nového podobnosti a rozdíly mezi dva mechanismy, v tomto tématu vám můžou pomoct vybrat ten nejlepší pro vaše úlohy.
+Balíček pro použití v rámci projektů sady Visual Studio můžete zadat pomocí NuGet nebo (SDK) software development kit. Zadáním popisu vašeho nového podobnosti a rozdíly mezi dva mechanismy, tento článek vám můžou pomoct vybrat ten nejlepší pro vaše úlohy.
 
 - NuGet je open source systém správy balíčků, který slouží ke zjednodušení procesu začlenění knihoven do řešení projekt. Další informace najdete v tématu [dokumentace pro NuGet](/nuget).
 
@@ -27,7 +27,6 @@ Balíček pro použití v rámci projektů sady Visual Studio můžete zadat pro
 ## <a name="which-mechanism-should-i-use"></a>Které mechanismus mám použít?
 
 Následující tabulka vám pomůže porovnat odkazující funkcí sady SDK odkazující funkcí NuGet.
-
 
 | Funkce | Podpora v sadě SDK | Poznámky k sady SDK | Podpora NuGet | Poznámky k NuGet |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ Následující tabulka vám pomůže porovnat odkazující funkcí sady SDK odka
 ## <a name="see-also"></a>Viz také:
 
 - [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
+- [Správa odkazů v projektu (Visual Studio for Mac)](/visualstudio/mac/managing-references-in-a-project)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826528"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348672"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro řešení problémů.  
@@ -44,7 +44,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 3. Zkontrolujte položky registru VSPackage.  
   
-    Další informace najdete v tématu [registrace rozšíření VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd) a [Správa balíčky VSPackages](../extensibility/managing-vspackages.md).  
+    Další informace najdete v tématu [registrace rozšíření VSPackages](registering-and-unregistering-vspackages.md) a [Správa balíčky VSPackages](../extensibility/managing-vspackages.md).  
   
 4. Otevřít **výstup** okno instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , které se nedaří načíst sady VSPackage. Informace o proč sady VSPackage nedaří se načíst může být zobrazen v tomto okně.  
   

@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542491"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348331"
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
 Můžete přizpůsobit a optimalizovat vaše zkušenosti s vývojem v sadě Visual Studio, pokud jste nastavili svůj účet přizpůsobení přihlášením do integrovaného vývojového prostředí.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [přihlášení k sadě Visual Studio pro Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Proč se bych se měl(a) přihlásit do aplikace Visual Studio?
 
@@ -68,3 +71,5 @@ Pokud se vyskytnou potíže při přihlašování, najdete [účtů podpory](htt
 
 * [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)
+* [Přihlaste se (Visual Studio for Mac)](/visualstudio/mac/signing-in)
+* [Aktivace (Visual Studio for Mac)](/visualstudio/mac/activation)

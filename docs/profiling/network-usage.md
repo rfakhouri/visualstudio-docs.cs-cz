@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918880"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220785"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UWP
 Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o síťových operacích pomocí provádí [Windows.Web.Http API](/uwp/api/windows.web.http). Analýza dat vám může pomoct vyřešit problémy, jako jsou problémy přístupu a ověřování, nesprávné použití mezipaměti a špatné zobrazení a stáhnout výkonu.  
@@ -23,7 +23,7 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
  Nástroj pro sítě podporuje pouze aplikace UWP. Jiné platformy nejsou v tuto chvíli nepodporuje.  
   
 > [!NOTE]
->  Úplný popis nástroj sítě, naleznete v tématu [Představujeme nástroje Visual Studio vaší sítě](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Úplný popis nástroj sítě, naleznete v tématu [Představujeme nástroje Visual Studio vaší sítě](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Shromažďovat data nástroj sítě.  
  Měli byste spustit **sítě** nástroj s otevřít projekt aplikace Visual Studio na počítači aplikace Visual Studio.  
@@ -75,6 +75,6 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
 ## <a name="see-also"></a>Viz také:  
  [Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio blog: Představení sady Visual Studio sítě inspektoru](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Video pro kanál 9: VS diagnostické nástroje - Profiler nové sítě](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Video pro kanál 9: VS diagnostické nástroje - Profiler nové sítě](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

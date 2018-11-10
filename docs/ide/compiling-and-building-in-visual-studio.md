@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863618"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349130"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilace a sestavení v sadě Visual Studio
 
-Spuštění sestavení vytvoří sestavení a aplikací spustitelných souborů ze zdrojového kódu v libovolném bodě během cyklu vývoje. Proces sestavení je obecně velmi podobné napříč mnoha různých typech projektů jako je například Windows, ASP.NET, mobilní aplikace a další. Proces sestavení je také velmi podobné napříč programovacími jazyky, jako je C#, Visual Basic, C++ a F #.
+Při sestavování zdrojového kódu se jádro sestavení vytvoří sestavení a spustitelný soubor aplikace. Proces sestavení je obecně velmi podobné napříč mnoha různých typech projektů jako je například Windows, ASP.NET, mobilní aplikace a další. Proces sestavení je také podobné jako napříč programovacími jazyky, jako C#, Visual Basic, C++, a F#.
 
-Podle častým sestavováním kódu, můžete rychle identifikovat chyby kompilace, jako je nesprávná syntaxe, překlepy v klíčových slovech a neshody typu. Můžete také rychle rozpoznat a opravit chyby za běhu, jako jsou logické a sémantické chyby častým sestavováním a spouštěním ladicí verze kódu.
+Podle častým sestavováním kódu, můžete rychle identifikovat chyby kompilace, jako je nesprávná syntaxe, překlepy v klíčových slovech a neshody typu. Můžete také zjistit a opravit chyby za běhu, jako jsou logické a sémantické chyby, sestavováním a spouštěním ladicí verze kódu.
 
-Úspěšné sestavení je v podstatě ověření, že zdrojový kód aplikace obsahuje správnou syntaxi a že byly vyřešeny všechny statické odkazy na knihovny, sestavení a další komponenty. Tímto se vytvoří spustitelný soubor aplikace, které můžete testovat pro správné fungování v obou [ladicí prostředí](../debugger/index.md) a s celou řadou ručních a automatizovaných testů, které [ověření kvality kódu](../test/improve-code-quality.md). Jakmile aplikace byly plně testovány, můžete pak kompilaci verze vydání k nasazení na vaše zákazníky. Úvod k tomuto procesu najdete v tématu [názorný postup: Tvorba aplikace](../ide/walkthrough-building-an-application.md).
+Úspěšné sestavení ověří, že zdrojový kód aplikace obsahuje správnou syntaxi a, umí přeložit všechny statické odkazy na knihovny, sestavení a další komponenty. Je vytvořen spustitelný soubor aplikace, které můžete testovat pro správné fungování v obou [ladicí prostředí](../debugger/index.md) a s celou řadou ručních a automatizovaných testů, které [ověření kvality kódu](../test/improve-code-quality.md). Jakmile aplikace byly plně testovány, můžete kompilaci verze vydání k nasazení na vaše zákazníky. Úvod k tomuto procesu najdete v tématu [názorný postup: Tvorba aplikace](../ide/walkthrough-building-an-application.md).
 
 Pro vytvoření aplikace můžete použít některý z následujících metod: integrované vývojové prostředí sady Visual Studio, nástroje příkazového řádku MSBuild a kanály Azure:
 
@@ -37,6 +37,9 @@ Pro vytvoření aplikace můžete použít některý z následujících metod: i
 | Kanály Azure | -Automatizujte proces sestavení jako součást kanálu průběžné integrace a doručování.<br />-Použijte automatizované testy s každým sestavením.<br />-Využívejte skoro neomezené cloudové prostředky pro procesy sestavení.<br />-Upravte pracovní postup sestavení a vytvořit aktivity sestavení, chcete-li provést hluboce přizpůsobené úkoly.|
 
 Dokumentace v této části platí další podrobnosti o procesu sestavení na základě integrovaného vývojového prostředí. Další informace o dalších metodách, naleznete v tématu [MSBuild](../msbuild/msbuild.md) a [kanály Azure](/azure/devops/pipelines/index?view=vsts)v uvedeném pořadí.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [kompilace a sestavení v sadě Visual Studio pro Mac](/visualstudio/mac/compiling-and-building).
 
 ## <a name="overview-of-building-from-the-ide"></a>Přehled vytváření v prostředí IDE
 
@@ -57,3 +60,4 @@ Odtud můžete prozkoumat celou řadu dalších úloh:
 ## <a name="see-also"></a>Viz také:
 
 - [Sestavení (kompilace) webu projektů](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [Kompilace a sestavení (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)

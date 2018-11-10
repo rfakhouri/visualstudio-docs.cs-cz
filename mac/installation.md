@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934610"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294991"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>Instalační program a instalace sady Visual Studio pro Mac
+# <a name="set-up-and-install-visual-studio-for-mac"></a>Nastavte nahoru a instalace sady Visual Studio pro Mac
 
 ## <a name="setup"></a>Instalace
 
@@ -86,7 +86,6 @@ Pro práci se systémem iOS v sadě Visual Studio potřebujete následující:
 > [!NOTE]
 > Pokud jste zvolili neinstaluje platformu nebo nástroj při původní instalaci (zrušením výběru ho v kroku #6), musíte spustit [instalační program](https://visualstudio.microsoft.com/vs/) znovu Pokud budete chtít později přidat komponenty.
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalace sady Visual Studio pro Mac za bránou firewall nebo proxy serverem
 
 Instalace sady Visual Studio pro Mac za bránou firewall, některé koncové body musí být přístupné umožní se soubory ke stažení potřebné nástroje a aktualizací softwaru.
@@ -104,7 +103,6 @@ Instalace sady Visual Studio for Mac umožňuje začít psát kód pro vaše apl
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [Zřizování zařízení](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(pro spuštění vaší aplikace na zařízení).
 
-
 ### <a name="android"></a>Android
 
 1. [Pomocí Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
@@ -114,3 +112,7 @@ Instalace sady Visual Studio for Mac umožňuje začít psát kód pro vaše apl
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikace .NET core, ASP.NET Core webových aplikací, vývoj her pro Unity
 
 Další úlohy, najdete [úlohy](workloads.md) stránky.
+
+## <a name="see-also"></a>Viz také:
+
+- [Instalace sady Visual Studio 2017 (ve Windows)](/visualstudio/install/install-visual-studio)

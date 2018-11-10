@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 5a7519a9b1ff9716c60f0ad0db3969880a269049
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991533"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295069"
 ---
 # <a name="install-a-preview-release"></a>Nainstalovat verzi Preview
 
@@ -24,7 +24,7 @@ Většina verze preview budou dostupné prostřednictvím i **Beta** a **alfa** 
 
 Pokud chcete nainstalovat verzi preview sady Visual Studio pro Mac, postupujte následovně:
 
-1. Přejděte na **sady Visual Studio > vyhledat aktualizace...** .
+1. Přejděte na **sady Visual Studio > vyhledat aktualizace**.
 2. V poli se seznamem aktualizací kanálu vyberte **Beta**.
 3. Vyberte **přepínač kanál** tlačítko k přepnutí na vybraný kanál a zahájit stahování nějaké nové aktualizace.
 4. Vyberte **restartovat a nainstalovat aktualizace** tlačítko Spustit instalaci aktualizací.

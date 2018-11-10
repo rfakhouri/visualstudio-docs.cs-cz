@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: c1c5783134b39feac0ae89d6a1b2680b0668f815
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 0b63161781f281b08e7603b3fec4a58223b1f63e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624412"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294432"
 ---
 # <a name="block-selection"></a>Výběr bloku
 
@@ -18,4 +18,8 @@ Visual Studio for Mac umožňuje jednoduché vybrat, vyjmutí, kopírování a v
 
 Výběr bloku se dá upravit také nutné změnit text na více řádků najednou. O výběr bloku nulové šířky je možné umístit stříška u velkého počtu řádků najednou a umožňuje psaní identické textu na více řádků:
 
- ![Výběr bloku a přidávání textu](media/source-editor-image16.png)
+![Výběr bloku a přidávání textu](media/source-editor-image16.png)
+
+# <a name="see-also"></a>Viz také:
+
+- [Vyberte více blikajícího kurzoru pro Visual Studio (ve Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

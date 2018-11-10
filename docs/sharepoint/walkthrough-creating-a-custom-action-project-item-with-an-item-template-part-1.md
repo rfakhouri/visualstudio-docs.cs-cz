@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878060"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296122"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systém projektu služby SharePoint v sadě Visual Studio můžete rozšířit tak, že vytvoříte svůj vlastní projekt typy položek. V tomto návodu vytvoříte položku projektu, který lze přidat do projektu služby SharePoint pro vytvoření vlastní akce na Sharepointovém webu. Vlastní akce ho přidá položku nabídky **Akce webu** nabídku z webu služby SharePoint.  
@@ -298,7 +298,7 @@ ms.locfileid: "49878060"
   
 1.  V **Průzkumníka řešení**, otevřete místní nabídku **source.extension.vsixmanifest** souboru v projektu CustomActionProjectItem a klikněte na tlačítko **otevřete**.  
   
-     Visual Studio otevře soubor v editoru manifestu. Soubor source.extension.vsixmanifest je základem pro soubor extension.vsixmanifest, které vyžadují všechny balíčky VSIX. Další informace o tomto souboru najdete v tématu [odkaz 1.0 schématu rozšíření VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio otevře soubor v editoru manifestu. Soubor source.extension.vsixmanifest je základem pro soubor extension.vsixmanifest, které vyžadují všechny balíčky VSIX. Další informace o tomto souboru najdete v tématu [odkaz 1.0 schématu rozšíření VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  V **název produktu** zadejte **vlastní položky projektu akce**.  
   
@@ -313,7 +313,7 @@ ms.locfileid: "49878060"
 6.  V **typ** klikněte na položku **Microsoft.VisualStudio.ItemTemplate**.  
   
     > [!NOTE]  
-    >  Tato hodnota odpovídá `ItemTemplate` element v souboru extension.vsixmanifest. Tento prvek určuje podsložce v balíčku souboru VSIX, který obsahuje šablonu položky projektu. Další informace najdete v tématu [ItemTemplate – Element (VSX schéma)](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0).  
+    >  Tato hodnota odpovídá `ItemTemplate` element v souboru extension.vsixmanifest. Tento prvek určuje podsložce v balíčku souboru VSIX, který obsahuje šablonu položky projektu. Další informace najdete v tématu [ItemTemplate – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).  
   
 7.  V **zdroj** klikněte na položku **projekt v aktuálním řešení**.  
   
@@ -326,7 +326,7 @@ ms.locfileid: "49878060"
 10. V **typ** klikněte na položku **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  Tato hodnota odpovídá `MefComponent` element v souboru extension.vsixmanifest. Tento prvek určuje název sestavení rozšíření v balíčku souboru VSIX. Další informace najdete v tématu [MEFComponent – Element (VSX schéma)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).  
   
 11. V **zdroj** klikněte na položku **projekt v aktuálním řešení**.  
   
@@ -420,7 +420,7 @@ ms.locfileid: "49878060"
     -   V `UrlAction` element, nastaven `Url` atribut jako v následujícím příkladu:  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  Zvolte **F5** klíč.  
@@ -430,7 +430,7 @@ ms.locfileid: "49878060"
     > [!NOTE]  
     >  Pokud **ladění skriptů zakázáno** dialogové okno se zobrazí, zvolte **Ano** tlačítka pokračovat v ladění projektu.  
   
-4.  Na **Akce webu** nabídce zvolte **středisko pro vývojáře služby SharePoint**, ověřte, že v prohlížeči se otevře web http://msdn.microsoft.com/sharepoint/default.aspxa pak zavřete webový prohlížeč.  
+4.  Na **Akce webu** nabídce zvolte **středisko pro vývojáře služby SharePoint**, ověřte, že v prohlížeči se otevře web https://docs.microsoft.com/sharepoint/dev/a pak zavřete webový prohlížeč.  
   
 ## <a name="clean-up-the-development-computer"></a>Vyčištění vývojovém počítači
  Po dokončení testování položku projektu, odeberte šablony položky projektu z experimentální instanci sady Visual Studio.  

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42623915"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294016"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Vytváření a úpravy vlastního souboru EditorConfig
 
 V sadě Visual Studio pro Mac, můžete přidat [EditorConfig](http://editorconfig.org/) soubor do projektu nebo řešení, které vynucují konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. Nastavení deklarované v souboru EditorConfig přednost před globální sady Visual Studio pro Mac nastavení textového editoru. Pomocí EditorConfig souborů v rámci projektu nebo základ kódu vám umožní nastavit vaši kódování styl, předvoleb a upozornění pro váš projekt. Protože soubor je součástí vašeho základu kódu, usnadňuje pro všechny uživatele na dodržují kódování údajů projektu, bez ohledu na to, které používají editoru kódu nebo prostředí IDE.
 
-[EditorConfig](http://editorconfig.org/) souborů jsou podporovány v mnohé editory Integrovaná vývojová prostředí a kód, včetně sady Visual Studio 2017. 
+[EditorConfig](http://editorconfig.org/) souborů jsou podporovány v mnohé editory Integrovaná vývojová prostředí a kód, včetně sady Visual Studio 2017.
 
 ## <a name="supported-settings"></a>Podporovaná nastavení
 
@@ -33,15 +33,15 @@ Editor v sadě Visual Studio for Mac podporuje základní sadu [EditorConfig vla
 - `insert_final_newline`
 - `root`
 
-EditorConfig podporuje také [konvence kódování](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) v jazyce C#.
+EditorConfig podporuje také [konvence kódování](/visualstudio/ide/editorconfig-code-style-settings-reference) v jazyce C#.
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>Přidejte do projektu soubor EditorConfig
 
 ### <a name="adding-a-new-editorconfig-file"></a>Když přidáte nový soubor EditorConfig
 
-1. Otevřete projekt v sadě Visual Studio pro Mac. Vyberte řešení nebo projekt uzel, který chcete přidat EditorConfig soubor. Přidání souboru do adresáře řešení .editorconfig nastavení platí pro všechny projekty v řešení. 
+1. Otevřete projekt v sadě Visual Studio pro Mac. Vyberte řešení nebo projekt uzel, který chcete přidat EditorConfig soubor. Přidání souboru do adresáře řešení .editorconfig nastavení platí pro všechny projekty v řešení.
 
-2. Klikněte pravým tlačítkem na uzel a vyberte možnost **Přidat > Nový soubor...** Chcete-li otevřít **nový soubor** dialogové okno:
+2. Klikněte pravým tlačítkem na uzel a vyberte možnost **Přidat > Nový soubor** otevřít **nový soubor** dialogové okno:
 
     ![Položky nabídky obsahu](media/editorconfig-image0.png)
 
@@ -76,13 +76,13 @@ EditorConfig podporuje také [konvence kódování](https://docs.microsoft.com/v
 
 ### <a name="adding-an-existing-editorconfig-file"></a>Přidání stávajícího souboru EditorConfig
 
-Pokud pracujete s projektem nebo řešení, která již obsahuje `.editorconfig` souboru, nic, musíte udělat v aplikaci nastavení. Všechny nové řádky kódu se formátují podle nastavení EditorConfig. 
+Pokud pracujete s projektem nebo řešení, která již obsahuje `.editorconfig` souboru, nic, musíte udělat v aplikaci nastavení. Všechny nové řádky kódu se formátují podle nastavení EditorConfig.
 
 Můžete chtít znovu použít existující `.editorconfig` souboru ve vašem projektu. Chcete-li přidat existující soubor, postupujte takto:
 
-1. Klikněte pravým tlačítkem na složku, chcete ho přidat do a vyberte **Přidat > Přidat soubory...** .
+1. Klikněte pravým tlačítkem na složku, chcete ho přidat do a vyberte **Přidat > Přidat soubory**.
 
-2. Přejděte do adresáře požadovaný soubor. 
+2. Přejděte do adresáře požadovaný soubor.
 
 3. Soubory začínající `.` (například `.editorconfig`) jsou skryté soubory v systému macOS, takže stiskněte **Command + Shift +.** Chcete-li `.editorconfig` souborů viditelné.
 
@@ -104,9 +104,7 @@ Tak, aby odrážely nastavení z `.editorconfig` souboru, vyberte uzel řešení
 
 ## <a name="editing-an-editorconfig-file"></a>Úpravy souboru EditorConfig
 
-
 Zadejte nastavení, které jsou vysvětleny níže použijeme předchozí příklad pomocí souborů EditorConfig jednoduchý soubor rozložení:
-
 
 ```EditorConfig
 # This file is the top-most EditorConfig file
@@ -123,7 +121,7 @@ trim_trailing_whitespace = false
 csharp_new_line_before_open_brace = none
 ```
 
-Nastavení `root` k `true` označí příznakem tento soubor jako soubor nejvrchnější základu kódu a výše `.editorconfig` soubory v projektu budou ignorovány, jak je vysvětleno v [přepsat nastavení EditorConfig](#override-editorconfig-settings) oddílu.
+Nastavení `root` k `true` označí tento soubor jako soubor nejvrchnější základu kódu a výše `.editorconfig` soubory v projektu jsou ignorovány, jak je vysvětleno v [přepsat nastavení EditorConfig](#override-editorconfig-settings) oddílu.
 
 Každý oddíl je označen čtverec (**[] č.**) složené závorky a určuje informace o typech souborů, by se týkají následující vlastnosti.
 
@@ -137,11 +135,11 @@ V předchozím příkladu některá nastavení se použijí na všechny soubory 
 
 ![Po použití nastavení editorconfig](media/editorconfig-image5.png)
 
-Další informace o dostupných nastaveních EditorConfig, najdete v článku [nastavení konvence pro EditorConfig psaní kódu .NET](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) článku a [nepodporuje vlastnosti](http://editorconfig.org/#supported-properties) části na oficiální dokumentaci.
+Další informace o dostupných nastaveních EditorConfig, najdete v článku [nastavení konvence pro EditorConfig psaní kódu .NET](/visualstudio/ide/editorconfig-code-style-settings-reference) článku a [nepodporuje vlastnosti](http://editorconfig.org/#supported-properties) části na oficiální dokumentaci.
 
 ## <a name="override-editorconfig-settings"></a>Přepsat nastavení EditorConfig
 
-Je možné mít víc než jeden `.editorconfig` souboru v každé řešení. Visual Studio pro Mac čtení `.editorconfig` soubory shora dolů v řešení, přidávání a přepsání nastavení jako jeho nepovede. To znamená, že v nastavení `.editorconfig` _nejbližší_ při úpravě souboru bude mít přednost. Nastavení pocházejí ze `.editorconfig` souborové složce (pokud existuje), pak bude `.editorconfig` v nadřazené složce (pokud existuje, který) atd. dokud nenajde `root=true`.  
+Je možné mít víc než jeden `.editorconfig` souboru v každé řešení. Visual Studio pro Mac čtení `.editorconfig` soubory shora dolů v řešení, přidávání a přepsání nastavení jako jeho nepovede. To znamená, že v nastavení `.editorconfig` _nejbližší_ při úpravě souboru bude mít přednost. Nastavení pocházejí ze `.editorconfig` souborové složce (pokud existuje), pak bude `.editorconfig` v nadřazené složce (pokud existuje, který) atd. dokud nenajde `root=true`.
 
 Pokud chcete zajistit, aby _žádné_ nastavení z jakékoli vyšší úrovně `.editorconfig` soubory aplikují i na této části základu kódu, přidejte `root=true` vlastnost k hornímu okraji nižší úrovně `.editorconfig` souboru:
 
@@ -149,3 +147,7 @@ Pokud chcete zajistit, aby _žádné_ nastavení z jakékoli vyšší úrovně `
 # top-most EditorConfig file
 root = true
 ```
+
+## <a name="see-also"></a>Viz také:
+
+- [Vytvořit nastavení vlastního editoru pomocí řešení EditorConfig (Visual Studio na Windows)](/visualstudio/ide/create-portable-custom-editor-options)

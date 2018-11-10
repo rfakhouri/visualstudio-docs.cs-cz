@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623930"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295192"
 ---
 # <a name="working-with-subversion"></a>Práce s úložištěm Subversion
 
@@ -50,7 +50,10 @@ To umožňuje zobrazení všech změn v každém souboru projektu s možností v
 
 Zapsat do souboru do vzdáleného úložiště, stiskněte klávesu potvrzení..., zadejte zprávu potvrzení, a potvrďte tlačítkem potvrzení:
 
-
 ![Potvrzují se soubor](media/version-control-svnCommit.png)
 
 Tento tok odešle změny do úložiště, které vytvářejí Nová revize všechny provedené změny.
+
+## <a name="see-also"></a>Viz také:
+
+- [Nastavení úložiště Subversion](set-up-subversion-repository.md)

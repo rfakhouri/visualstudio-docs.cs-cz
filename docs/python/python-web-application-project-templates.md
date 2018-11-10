@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219845"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349332"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
 Python v sadě Visual Studio podporuje vytváření webových projektů v Bottle, Flask a Django architektur pomocí šablon projektů a Spouštěč ladění, který může být nakonfigurovaný pro zpracování různých platforem. Tyto šablony zahrnují *souboru requirements.txt* soubor pro deklaraci potřebné závislosti. Při vytváření projektu z jednoho z těchto šablon, Visual Studio zobrazí výzvu k instalaci těchto balíčků (viz [instalovat požadavky projektu](#install-project-requirements) dále v tomto článku).
 
-Lze také použít obecný **webový projekt** šablony pro jiné architektury, jako jsou pyramidového diagramu. V takovém případě se žádná rozhraní se instalují s šablony. Místo toho nainstalujte potřebné balíčky do prostředí používáte pro projekt (viz [prostředí Pythonu spravovat](managing-python-environments-in-visual-studio.md)).
+Lze také použít obecný **webový projekt** šablony pro jiné architektury, jako jsou pyramidového diagramu. V takovém případě se žádná rozhraní se instalují s šablony. Místo toho nainstalujte potřebné balíčky do prostředí používáte pro projekt (viz [okno prostředí Pythonu – karta balíček](python-environments-window-tab-reference.md#packages-tab)).
 
 Informace o nasazení webové aplikace v Pythonu do Azure najdete v tématu [publikovat do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

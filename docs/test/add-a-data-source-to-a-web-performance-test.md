@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930710"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295095"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -24,7 +24,7 @@ Vytvoření vazby dat, poskytující různé hodnoty pro stejný test, napříkl
 
  ![Vazba dat do testu výkonnosti webu](../test/media/web_test_databinding_conceptual.png)
 
- Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – výchozí stránku, červenou stránku a modrou stránku. Výchozí stránka obsahuje na přepínač pro výběr červeného nebo modrého tlačítka a tlačítka Odeslat. Další dvě *.aspx* stránky jsou velmi jednoduché. Jeden má popisek s názvem červený a druhý má popisek s názvem modrý. Pokud zvolíte odeslání na výchozí stránce, zobrazíme jednu z ostatních stránek. Můžete stáhnout [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ukázkový nebo stačí postupovat podle vlastní webové aplikace.
+ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – výchozí stránku, červenou stránku a modrou stránku. Výchozí stránka obsahuje na přepínač pro výběr červeného nebo modrého tlačítka a tlačítka Odeslat. Další dvě *.aspx* stránky jsou velmi jednoduché. Jeden má popisek s názvem červený a druhý má popisek s názvem modrý. Pokud zvolíte odeslání na výchozí stránce, zobrazíme jednu z ostatních stránek. Můžete stáhnout [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ukázkový nebo stačí postupovat podle vlastní webové aplikace.
 
  ![Spuštění webové aplikace, které má být testována](../test/media/web_test_databinding_runwebapp.png)
 
