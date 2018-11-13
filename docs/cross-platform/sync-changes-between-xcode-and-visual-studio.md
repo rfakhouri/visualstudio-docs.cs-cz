@@ -32,7 +32,7 @@ Microsoft Visual C++ pro vývoj mobilních řešení pro komponentu zahrnuje vzd
 ### <a name="open-in-xcode"></a>Otevřít v Xcodu
  Otevřete projekt v XCode ze sady Visual Studio na **vzdálený počítač** podnabídky, zvolte **otevřít v Xcodu** otevřít zvolený projekt na spárovaném vzdáleném počítači. Vcremote server slouží k XCode na počítači Mac otevřete a přejděte do dočasného adresáře na počítači Mac, který obsahuje kopii projektu vytvoří. Visual Studio se zobrazí dialogové okno zobrazující dočasný adresář pro projekt používá. Akce prováděné na vzdáleném počítači jsou také uvedeny v **výstup** okna v sadě Visual Studio. Neuvidíte, budete muset vybrat **vzdálený počítač Visual C++** v **zobrazit výstup z:** rozevírací seznam v horní části **výstup** okna.
 
- ![V okně výstupu se zobrazí akce vzdáleného počítače. ] (../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
+ ![V okně výstupu se zobrazí akce vzdáleného počítače. ](../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")
 
  Všechny nástroje XCode na počítači Mac, slouží k úpravě kódu a prostředků, scénářů a akce. V sadě Visual Studio je váš projekt aplikace pro iOS opatřen poznámkou "Otevřít v XCode" k označení, že mohou být provedeny změny ve vzdáleném počítači. Po dokončení úprav můžete stahování ze vzdáleného počítače nebo přírůstkové načítat vzdálené příkazy pro kopírování změn zpět do projektu sady Visual Studio.
 

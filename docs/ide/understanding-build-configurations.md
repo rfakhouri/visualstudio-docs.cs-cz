@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901187"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349046"
 ---
 # <a name="understand-build-configurations"></a>Principy konfigurací sestavení
 
 Můžete ukládat různé konfigurace vlastností řešení a projektu pro použití v různé druhy sestavení. Chcete-li vytvořit, vyberte, upravit nebo odstranit konfiguraci, můžete použít **nástroje Configuration Manager**. Pokud chcete soubor otevřít, v řádku nabídek, zvolte **sestavení** > **nástroje Configuration Manager**, nebo zadejte **konfigurace** v **Snadné spuštění**pole. Můžete také použít **konfigurace řešení** seznamu **standardní** panelu nástrojů vyberte konfiguraci nebo otevřít **nástroje Configuration Manager**.
+
+> [!NOTE]
+> Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [konfigurace v sadě Visual Studio pro Mac sestavení](/visualstudio/mac/configurations).
 
 > [!NOTE]
 > Pokud nemůže najít řešení, konfigurace nastavení na panelu nástrojů a nemůžou přistupovat **nástroje Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] můžou vztahovat. vývojové nastavení. Další informace najdete v tématu [postupy: Správa konfigurací s použitými nastaveními vývojáře jazyka Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -51,7 +54,7 @@ Každá položka **projektu kontexty** pole v konfiguraci řešení představuje
 
 > [!NOTE]
 > Při definování nové konfigurace řešení a vyberte **vytvořit nové konfigurace projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky přiřadí novou konfiguraci pro všechny projekty. Podobně když definovat nová platforma řešení a vyberete **vytvořit nové platformy projektu** zaškrtávací políčko [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky přiřadí novou platformu pro všechny projekty. Také pokud chcete přidat projekt, který cílí na novou platformu, Visual Studio přidá tuto platformu na seznam platformy řešení a přiřadí ji do všech projektů.
-> 
+>
 > Pořád můžete upravit nastavení pro každý projekt.
 
 Konfigurace aktivního řešení také poskytuje kontext do rozhraní IDE. Například pokud pracujete na projektu a konfigurace určuje, že dojde k jeho sestavení pro mobilní zařízení, **nástrojů** zobrazí pouze položky, které lze použít v projektu mobilních zařízení.
@@ -92,3 +95,4 @@ Konfigurace aktivního řešení také poskytuje kontext do rozhraní IDE. Např
 - [Řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md)
 - [Reference sestavení C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)
+- [Sestavení konfigurací (Visual Studio for Mac)](/visualstudio/mac/configurations)

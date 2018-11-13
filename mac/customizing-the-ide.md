@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 9f33892dc4caef726763c6ab7513ac1e44e7e47e
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624420"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349608"
 ---
 # <a name="customizing-the-ide"></a>Přizpůsobení integrovaného vývojového prostředí
 
@@ -20,9 +20,9 @@ Visual Studio for Mac je možné přizpůsobit mnoha různými způsoby, uživat
 
 ![Zobrazení tmavý motiv](media/customizing-the-ide-image7a.png)
 
-Motivy můžete přepnout v sadě Visual Studio pro Mac tak, že přejdete do **sady Visual Studio > Předvolby... > prostředí > vizuální styl** a výběrem požadované motiv z **motiv uživatelského rozhraní** rozevírací seznam, jak je znázorněno na následujícím obrázku:
+Motivy můžete přepnout v sadě Visual Studio pro Mac tak, že přejdete do **sady Visual Studio > Předvolby > prostředí > vizuální styl** a výběrem požadované motiv z **motiv uživatelského rozhraní** rozevíracího seznamu , jak je znázorněno na následujícím obrázku:
 
- ![Výběr tmavý motiv](media/customizing-the-ide-image7b.png)
+![Výběr tmavý motiv](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Lokalizace
 
@@ -43,8 +43,7 @@ Visual Studio for Mac je lokalizovaná v těchto 14 jazycích, bude moct být p�
 * Španělština
 * Turečtina
 
-Chcete-li změnit jazyk, zobrazí Visual Studio pro Mac, přejděte do **sady Visual Studio > Předvolby... > prostředí > vizuální styl** a vyberte požadovaný jazyk ze **jazyk uživatelského rozhraní**rozevíracího seznamu, jak je znázorněno na následujícím obrázku:
-
+Chcete-li změnit jazyk, zobrazí Visual Studio pro Mac, přejděte do **sady Visual Studio > Předvolby > prostředí > vizuální styl** a vyberte požadovaný jazyk ze **jazyk uživatelského rozhraní**rozevíracího seznamu, jak je znázorněno na následujícím obrázku:
 
 ![Výběr jazyka](media/customizing-the-ide-image11a.png)
 
@@ -52,22 +51,21 @@ Chcete-li změnit jazyk, zobrazí Visual Studio pro Mac, přejděte do **sady Vi
 
 Informace o panelu Autor umožňuje přidat relevantní informace o sobě, jako je například vaše jméno, e-mailovou adresu vlastníka autorských práv pro práci, vaše společnost a ochranné:
 
- ![Upravte část informace o autorovi](media/customizing-the-ide-image9a.png)
+![Upravte část informace o autorovi](media/customizing-the-ide-image9a.png)
 
 Tyto informace slouží k naplnění standardní soubor hlaviček, jako je například licenci, který můžete přidat do nových souborů:
 
- ![Standardní možnosti záhlaví](media/customizing-the-ide-image8a.png)
-
+![Standardní možnosti záhlaví](media/customizing-the-ide-image8a.png)
 
 Vyplní **název** a **e-mailu** pole se použijí ve všech potvrzeních změn, které se provádí prostřednictvím správy verzí v sadě Visual Studio pro Mac. Pokud nebyla zadána tato pole, Visual Studio for Mac vyzve vás k tomu při pokusu o použití správy verzí.
 
 ## <a name="key-bindings"></a>Klávesové zkratky
 
-Klávesové zkratky umožňují přizpůsobit vývojového prostředí, takže můžete přesunout efektivněji v rámci sady Visual Studio pro Mac. Poskytuje známých klávesové zkratky pro mnoho oblíbenými prostředími IDE, jako je Visual Studio (Windows), ReSharper, Visual Studio Code a Xcode.
+Klávesové zkratky umožňují přizpůsobit vývojového prostředí, takže můžete přesunout efektivněji v rámci sady Visual Studio pro Mac. Poskytuje známých klávesové zkratky pro mnoho oblíbenými prostředími IDE, jako jsou sady Visual Studio (ve Windows), ReSharper, Visual Studio Code a Xcode.
 
-Klávesové zkratky můžete nastavit tak, že přejdete do **sady Visual Studio > Předvolby... > prostředí > vazeb klíče**vidíte na následujícím obrázku:
+Klávesové zkratky můžete nastavit tak, že přejdete do **sady Visual Studio > Předvolby > prostředí > vazeb klíče**vidíte na následujícím obrázku:
 
- ![Nastavení vazeb klíče](media/customizing-the-ide-image10a.png)
+![Nastavení vazeb klíče](media/customizing-the-ide-image10a.png)
 
 Odsud můžete vyhledat kombinace klávesová zkratka, zobrazit konfliktní vazby, přidat nové vazby a upravit existující vazby.
 
@@ -85,7 +83,7 @@ Při otevření jakékoli nové řešení nebo souboru v sadě Visual Studio pro
 
 Visual Studio for Mac obsahuje ladicí systém, který obsahuje další informace, nástroje a navigační pomůcky, všechny z nich můžete získat přístup tak, že přejdete na **zobrazení > panely** položky nabídky a výběrem panel Přidat:
 
- ![Vyberte nový panel](media/customizing-the-ide-image3a.png)
+![Vyberte nový panel](media/customizing-the-ide-image3a.png)
 
 Systém může také otevřít automaticky různé příkazy, jako **najít v souborech** (Cmd Shift + + F) příkaz, který otevře odpojená panel výsledků hledání.
 
@@ -97,8 +95,7 @@ Ladicí systém může skryté a uzavřel přepínačů v pravém horním rohu k
 
 ![Skrytí a zavírání dotyková zařízení](media/customizing-the-ide-image5a.png)
 
-Automaticky skrývaná dotyková zařízení jsou ukotven k okraji pracovního prostoru, díky kterým jsou snadno přístupné při jsou povinné. Ukazatel myši panel se ho znovu a při výběru myši a klávesnice, zůstane bude skrytá.
-
+Automaticky skrytá dotyková zařízení jsou ukotven k okraji pracovního prostoru, díky kterým jsou snadno přístupné při jsou povinné. Ukazatel myši panel zobrazí znovu a při výběru myši a klávesnice, zůstane bude skrytá.
 
 ### <a name="organizing-layouts"></a>Uspořádání rozložení
 
@@ -110,23 +107,26 @@ Stav otevřít dotyková zařízení je reprezentován *rozložení*. Rozvržen�
 
 Je vždy jeden aktivní rozložení a všechny změny provedené v případě rozložení, jako je přidání nebo změna umístění panel se změní pouze aktivní rozložení. Po zavření sady Visual Studio pro Mac, mají provedené změny se neuloží.
 
-
-Nicméně je možné vytvořit nové rozložení pomocí **zobrazení > Uložit aktuální rozložení...**  položky nabídky. Vaše aktuální rozložení se přidá do nabídky tak, aby můžete zvolit kdykoli:
+Nicméně je možné vytvořit nové rozložení pomocí **zobrazení > Uložit aktuální rozložení** položky nabídky. Vaše aktuální rozložení se přidá do nabídky tak, aby můžete zvolit kdykoli:
 
 ![Uložit aktuální rozložení](media/customizing-the-ide-image6a.png)
 
 ### <a name="side-by-side-editing-support"></a>Podpora úpravy vedle sebe
 
-Visual Studio for Mac umožňuje otevřít textové editory – souběžně nebo mít jako odpojené plovoucí okno editoru.
+Visual Studio for Mac umožňuje otevřených textových editorů vedle sebe nebo mít jako odpojené plovoucí okno editoru.
 
 režim 2 sloupce lze povolit prostřednictvím položky nabídky zobrazení tak, že vyberete **zobrazení > sloupce > 2 sloupce editoru**, nebo přetažením kartu editor k jednomu z okrajů oblasti editoru:
 
- ![Režim vedle sebe dva sloupce](media/customizing-the-ide-sbs.png)
+![Režim vedle sebe dva sloupce](media/customizing-the-ide-sbs.png)
 
 Editor karty můžete přetáhnout mimo oblast dokumentu, vytvoření plovoucí okna editoru. Toto okno s plovoucí desetinnou čárkou také podporuje editory vedle sebe a může obsahovat několik karet editoru:
 
- ![Vytvořte nový časový interval](media/customizing-the-ide-sbs1.png)
+![Vytvořte nový časový interval](media/customizing-the-ide-sbs1.png)
 
- ![Dva sloupce – souběžně s další záložky](media/customizing-the-ide-sbs2.png)
+![Dva sloupce souběžně s další záložky](media/customizing-the-ide-sbs2.png)
 
 Chcete-li vrátit k jedné otevřít editor, vyberte **zobrazení > > 1 sloupce sloupce editoru**.
+
+## <a name="see-also"></a>Viz také:
+
+- [Přizpůsobit Visual Studio IDE (ve Windows)](/visualstudio/ide/personalizing-the-visual-studio-ide)

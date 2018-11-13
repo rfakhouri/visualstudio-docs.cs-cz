@@ -10,27 +10,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e48d777332c63859f84f56425c786b430018d1f
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34547995"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348536"
 ---
 # <a name="debugging-xslt"></a>Ladění XSLT
 
-Ladicí program Visual Studio můžete použít k ladění XSLT. Ladicí program podporuje nastavení zarážek, zobrazení stavů provádění XSLT, a tak dále.
+Ladicí program sady Visual Studio můžete použít k ladění XSLT. Ladicí program podporuje můžete nastavovat zarážky, zobrazení stavů provedení transformace XSLT, a tak dále.
 
 > [!NOTE]
-> Ladicí program XSLT je dostupná pouze v edici Enterprise systému Visual Studio 2017.
+> Ladicí program XSLT je pouze v edici Enterprise sady Visual Studio 2017 k dispozici.
 
-## <a name="xslt-profiler"></a>XSLT profileru
+## <a name="xslt-profiler"></a>XSLT profiler
 
-[XSLT profileru](../xml-tools/xslt-profiler.md) je nástroj, který umožňuje vývojářům měřit, hodnocení a cíle problémy související s výkonem v kódu XSLT vytvořením podrobné sestavy pro zvýšení výkonu XSLT.
+[XSLT profiler](../xml-tools/xslt-profiler.md) je nástroj, který umožňuje vývojářům měřit, vyhodnotit a řešit problémy související s výkonem v XSLT kódu tak, že vytvoříte podrobné sestavy o výkonu XSLT.
 
 ## <a name="related-sections"></a>Související oddíly
 
-- [Úprava šablony stylů XSLT](../xml-tools/editing-xslt-style-sheets.md) popisuje postup úpravy stylů pomocí editoru XML.
-- [Aspekty zabezpečení při práci s daty XML](../xml-tools/security-considerations-when-working-with-xml-data.md) popisuje problémy zabezpečení, které potřebujete vědět o při práci editoru XML nebo XSLT ladicího programu.
+- [Úpravy šablon stylů XSLT](../xml-tools/editing-xslt-style-sheets.md) popisuje použití editoru XML k úpravě šablony stylů.
+- [Aspekty zabezpečení při práci s daty XML](../xml-tools/security-considerations-when-working-with-xml-data.md) popisuje problémy se zabezpečením, které je potřeba vědět o při práci v editoru XML a v ladicím programu XSLT.
 - [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) zavádí ladicího programu sady Visual Studio.
-- [Referenční dokumentace XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) poskytuje referenčního materiálu pro XSLT prvky a funkce.
+- [Odkaz na XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) poskytuje referenční materiál pro elementy XSLT a funkce.

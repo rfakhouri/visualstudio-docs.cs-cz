@@ -24,7 +24,7 @@ Okno historie pixelů grafiky ve Visual Studio Graphics Analyzer vám pomůže p
   
  Toto je okno historie pixelu:  
   
- ![Pixel, s třemi Direct3D – události v historii. ] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Pixel, s třemi Direct3D – události v historii. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Principy okno historie pixelu  
  Pomocí historie pixelů, můžete analyzovat, jak je konkrétní pixelů cíle vykreslení ovlivňován Direct3D – události během rámce. Lze přesně určit vykreslování problém pro konkrétní Direct3D – události, i když následující události – nebo následné primitiv v stejné události – nadále změnit je poslední barva hodnota. Například mohou být pixel vykresluje nesprávně a pak zakódován o jiné, poloprůhledné bod, takže jejich barvy jsou obsahuje tyto údaje společně framebuffer. Tento druh problému by bylo obtížné diagnostikovat, jestli jste měli pouze poslední obsah na cílovou vykreslení vás.  
@@ -42,9 +42,9 @@ Okno historie pixelů grafiky ve Visual Studio Graphics Analyzer vám pomůže p
   
 |Ikona|Důvod k vyloučení|  
 |----------|--------------------------|  
-|![Ikona selhání testu hloubka. ] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Pixel se vyloučilo, protože se nepovedlo hloubka test.|  
-|![Ikona selhání testu Nůžkovité. ] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Pixel se vyloučilo, protože se jí nepovedlo Nůžkovité test.|  
-|![Ikona selhání testu vzorníku. ] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Pixel se vyloučilo, protože se nepovedlo vzorníku test.|  
+|![Ikona selhání testu hloubka. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Pixel se vyloučilo, protože se nepovedlo hloubka test.|  
+|![Ikona selhání testu Nůžkovité. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Pixel se vyloučilo, protože se jí nepovedlo Nůžkovité test.|  
+|![Ikona selhání testu vzorníku. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Pixel se vyloučilo, protože se nepovedlo vzorníku test.|  
   
 ### <a name="draw-call-exclusion"></a>Kreslení volání vyloučení  
  Pokud všechny primitiv při kreslení volání jsou vyloučeny z ovlivňující cíl vykreslení, protože jejich selhání testu, volání kreslení nelze rozšířit a která odpovídá důvod pro vyloučení, zobrazí se ikona vedle sebe. Důvody pro vyloučení kreslení volání připomínají důvody pro primitivní vyloučení, a jejich ikony jsou podobné.  

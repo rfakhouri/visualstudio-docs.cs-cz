@@ -73,9 +73,9 @@ První věc, kterou vzít v úvahu při používání stylů pro ovládací prvk
   
 -   Vstupní pole by měla být dimenzovány pro zobrazení celého obsahu, ne na šířku okna, ve kterém jsou uvedeny ani libovolně odpovídala délce dlouhé pole, třeba cestu. Délka mohlo by to znamenat uživateli omezení jde o tom, kolik znaky jsou povoleny v poli.  
   
-     ![Nesprávný vstupní pole délky: není pravděpodobné, že název bude takto dlouhé. ] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Nesprávný vstupní pole délky: není pravděpodobné, že název bude takto dlouhé.
+     ![Nesprávný vstupní pole délky: není pravděpodobné, že název bude takto dlouhé. ](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl")<br />Nesprávný vstupní pole délky: není pravděpodobné, že název bude takto dlouhé.
   
-     ![Opravte délka vstupní pole: vstupní pole je rozumné šířku pro očekávaný obsah. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Opravte délka vstupní pole: vstupní pole je rozumné šířku pro očekávaný obsah.
+     ![Opravte délka vstupní pole: vstupní pole je rozumné šířku pro očekávaný obsah. ](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Opravte délka vstupní pole: vstupní pole je rozumné šířku pro očekávaný obsah.
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pole se seznamem a rozevírací seznamy  
 Pro typické interakce chování, postupujte [Windows Desktop pokyny pro rozevírací seznamy a pole se seznamem](/windows/desktop/uxguide/ctrl-drop).  
@@ -89,9 +89,9 @@ Pro typické interakce chování, postupujte [Windows Desktop pokyny pro rozeví
 #### <a name="layout"></a>Rozložení  
 Pole se seznamem a rozevírací seznamy by měl být dimenzovány pro zobrazení celého obsahu, ne na šířku okna, ve kterém jsou uvedeny ani libovolně odpovídala délce dlouhé pole, třeba cestu.  
   
-![Nesprávný: šířka rozevíracího seznamu je příliš dlouhý pro obsah, který se zobrazí. ] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Nesprávný: šířka rozevíracího seznamu je příliš dlouhý pro obsah, který se zobrazí.
+![Nesprávný: šířka rozevíracího seznamu je příliš dlouhý pro obsah, který se zobrazí. ](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707 03_IncorrectDropDownLayout")<br />Nesprávný: šířka rozevíracího seznamu je příliš dlouhý pro obsah, který se zobrazí.
   
-![Správné: rozevíracího seznamu přizpůsoben pro povolit pro růst překladu, ale dlouhé zbytečně. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Správné: rozevíracího seznamu přizpůsoben pro povolit pro růst překladu, ale dlouhé zbytečně. 
+![Správné: rozevíracího seznamu přizpůsoben pro povolit pro růst překladu, ale dlouhé zbytečně. ](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Správné: rozevíracího seznamu přizpůsoben pro povolit pro růst překladu, ale dlouhé zbytečně. 
   
 ###  <a name="BKMK_CheckBoxes"></a> Zaškrtávací políčka  
 Chování typické interakce, postupujte [pokyny pro Windows Desktop pro zaškrtávací políčka](/windows/desktop/uxguide/ctrl-check-boxes).  
@@ -108,9 +108,9 @@ Chování typické interakce, postupujte [pokyny pro Windows Desktop pro zaškrt
   
 -   Zarovnejte zaškrtávací políčka se standardními hodnotami první řádek textu.  
   
-     ![Nesprávný: zaškrtávací políčko je na střed textu. ] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Nesprávný: zaškrtávací políčko je na střed textu.
+     ![Nesprávný: zaškrtávací políčko je na střed textu. ](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign")<br />Nesprávný: zaškrtávací políčko je na střed textu.
   
-     ![Správné: zaškrtávací políčko je v souladu s první řádek textu. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Správné: zaškrtávací políčko je v souladu s první řádek textu.
+     ![Správné: zaškrtávací políčko je v souladu s první řádek textu. ](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Správné: zaškrtávací políčko je v souladu s první řádek textu.
   
 ###  <a name="BKMK_RadioButtons"></a> Přepínací tlačítka  
 Chování typické interakce, postupujte [pokyny pro Windows Desktop pro přepínací tlačítka](/windows/desktop/uxguide/ctrl-radio-buttons).  
@@ -346,9 +346,9 @@ Ovládací prvky zobrazení stromu by měl odpovídat rozšíření návrh použ
 #### <a name="selection"></a>Výběr  
 Když je vybrán uzel ve stromovém zobrazení, zvýraznění by měl rozšířit na celou šířku ovládací prvek stromového zobrazení. Díky tomu uživatelé se tak jasně identifikovat položky, které jste vybrali. Výběr barvy by měly odrážet aktuální motiv sady Visual Studio.  
   
-![Správné: zvýraznění z vybraného uzlu odpovídá celé jeho šířce ovládací prvek stromového zobrazení. ] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Správné: zvýraznění z vybraného uzlu odpovídá celé jeho šířce ovládací prvek stromového zobrazení.
+![Správné: zvýraznění z vybraného uzlu odpovídá celé jeho šířce ovládací prvek stromového zobrazení. ](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />Správné: zvýraznění z vybraného uzlu odpovídá celé jeho šířce ovládací prvek stromového zobrazení.
   
-![Chyba: zvýraznění z vybraného uzlu nevejde celé jeho šířce ovládací prvek stromového zobrazení. ] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Chyba: zvýraznění z vybraného uzlu nevejde celé jeho šířce ovládací prvek stromového zobrazení.
+![Chyba: zvýraznění z vybraného uzlu nevejde celé jeho šířce ovládací prvek stromového zobrazení. ](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />Chyba: zvýraznění z vybraného uzlu nevejde celé jeho šířce ovládací prvek stromového zobrazení.
   
 #### <a name="icons"></a>Ikony  
 Ikony by měla sloužit pouze v ovládacích prvcích stromů zobrazení Pokud podílí na vizuální určení rozdílů mezi položkami. Obecně platí ikony, které byste měli použít pouze ve heterogenní seznamy, ve kterých ikony nesou informaci k rozlišení mezi typy prvků. V homogenní seznamu pomocí ikon, často se dají považovat za šumu a mělo by se vyhnout. V takovém případě ikona skupiny (nadřazené) sdělí typem položek v něm. Výjimkou z tohoto pravidla by Pokud ikonu je dynamický a slouží k určení stavu.  
@@ -356,14 +356,14 @@ Ikony by měla sloužit pouze v ovládacích prvcích stromů zobrazení Pokud p
 #### <a name="scroll-bars"></a>Posuvníky  
 Posuvníky vždy skryt, pokud se obsah vešel ovládací prvek stromového zobrazení. Je přijatelné pro posuvníky se seznamy skrytých nebo poloprůhledného posuvného okna a zobrazí, když okno obsahující stromové zobrazení má fokus nebo při přechodu ze stromu zobrazení samotný.  
   
-![Protože obsah překročil omezení ovládací prvek stromového zobrazení, zobrazí se i vodorovné a svislé posuvníky. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Protože obsah překročil omezení ovládací prvek stromového zobrazení, zobrazí se i vodorovné a svislé posuvníky.
+![Protože obsah překročil omezení ovládací prvek stromového zobrazení, zobrazí se i vodorovné a svislé posuvníky. ](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Protože obsah překročil omezení ovládací prvek stromového zobrazení, zobrazí se i vodorovné a svislé posuvníky.
   
 ###  <a name="BKMK_TreeViewInteractions"></a> Stromové zobrazení interakce  
   
 #### <a name="context-menus"></a>Kontextové nabídky  
 Uzel stromu zobrazení může odhalit podnabídky možnosti v kontextové nabídce. Obvykle k tomu dojde, když uživatel má klikli pravým tlačítkem myši položku nebo stisknutím klávesy nabídky na Windows klávesnice s zvolené položky. Je důležité, že uzel získá fokus a je vybrán. To pomáhá uživateli určit která položka patří podnabídky.  
   
-![Byla vybrána položka, která se má generovat fokus místní nabídky zisky upozornit uživatele, která položka. ] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Byla vybrána položka, která se má generovat fokus místní nabídky zisky upozornit uživatele, která položka.
+![Byla vybrána položka, která se má generovat fokus místní nabídky zisky upozornit uživatele, která položka. ](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />Byla vybrána položka, která se má generovat fokus místní nabídky zisky upozornit uživatele, která položka.
   
 #### <a name="keyboard"></a>Klávesnice  
 Ve stromovém zobrazení by měla poskytnout možnost vybrat položky a rozbalení/sbalení uzlů pomocí klávesnice. Tím se zajistí, že splňuje navigace naše požadavky na usnadnění přístupu.  

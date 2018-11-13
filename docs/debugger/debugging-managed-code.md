@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179476"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
@@ -52,7 +52,7 @@ Tento článek popisuje ladění ve smíšeném režimu aplikací. To znamená, 
 [Chyba: Ladění není možné, protože v systému je povolen ladicí program protokolu Kernel.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
 Popisuje chybová zpráva, která nastane, pokud se pokusíte ladit spravovaný kód na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], nebo systém Windows NT, který se spustil v režimu ladění.
 
-[Optimalizace a ladění JIT](../debugger/jit-optimization-and-debugging.md)  
+[Optimalizace a ladění za běhu](../debugger/jit-optimization-and-debugging.md)  
 Popisuje účinky optimalizace JIT pro ladění.
 
 [Ladění LINQ a DLINQ](../debugger/debugging-linq.md)  

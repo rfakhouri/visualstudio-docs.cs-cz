@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120352"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561644"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověření uživatelů v Django
 
@@ -152,24 +152,30 @@ Následující kroky postupu tok ověřování a popisují součástí projektu,
 
 1. Pokud chcete zkontrolovat, zda je ověřený uživatel oprávnění pro přístup k určitým prostředkům, potřebujete získat uživatelská oprávnění z databáze. Další informace najdete v tématu [pomocí ověřování systému Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django docs).
 
-1. Super uživatel nebo správce, zejména je oprávnění pro přístup k vestavěné rozhraní správce Django pomocí relativní adresy URL "/admin/" a "/ admin/doc /". Chcete-li tato rozhraní, otevřete projekt Django *urls.py* a komentářů z následující položky:
+1. Super uživatel nebo správce, zejména je oprávnění pro přístup k vestavěné rozhraní správce Django pomocí relativní adresy URL "/admin/" a "/ admin/doc /". Chcete-li tato rozhraní, postupujte takto:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Instalovat balíček Pythonu docutils do vašeho prostředí. Je skvělý způsob, jak to provést pro přidání "docutils" vaší *souboru requirements.txt* soubor, pak v **Průzkumníka řešení**, rozbalte projekt, rozbalte **prostředí Pythonu** uzlu, pak Klikněte pravým tlačítkem na prostředí, které používáte vyberte **instalovat z requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Otevření projektu Django *urls.py* a odeberte výchozí komentářů z následující položky:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Po restartování aplikace, můžete přejít na "/admin/" a "/ admin/doc /" a provádět úkoly jako je vytvořit další uživatelské účty.
+    1. V projektu Django *settings.py* souboru, přejděte `INSTALLED_APPS` kolekce a přidejte `'django.contrib.admindocs'`.
 
-    ![Rozhraní správce Django](media/django/step05-administrator-interface.png)
+    1. Po restartování aplikace, můžete přejít na "/admin/" a "/ admin/doc /" a provádět úkoly, jako je vytvoření dalších uživatelských účtů.
+
+        ![Rozhraní správce Django](media/django/step05-administrator-interface.png)
 
 1. Poslední část pro tok ověřování odhlášení. Jak je vidět v *loginpartial.html*, **Odhlásit** odkaz jednoduše se příspěvek na relativní adresu URL "/ přihlášení", který zařizuje služba předdefinovaných zobrazení `django.contrib.auth.views.logout`. Toto zobrazení nezobrazuje žádné uživatelské rozhraní a právě přejde na domovské stránce (jak je znázorněno v *urls.py* pro "^ odhlášení$" vzor). Pokud chcete zobrazit stránka odhlášení, nejprve změňte vzor adresy URL pro přidání vlastnosti "template_name" a odeberte vlastnost "next_page":
 
