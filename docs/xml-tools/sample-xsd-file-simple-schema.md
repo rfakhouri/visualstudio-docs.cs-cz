@@ -1,5 +1,5 @@
 ---
-title: 'Ukázkový soubor XSD: Schéma jednoduchý'
+title: 'Ukázkový soubor XSD: Jednoduché schéma'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -17,9 +17,9 @@ ms.contentlocale: cs-CZ
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572696"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Ukázkový soubor XSD: jednoduchý schématu
+# <a name="sample-xsd-file-simple-schema"></a>Ukázkový soubor XSD: jednoduché schéma
 
-Následující soubor XSD se používá v různých příklady v dokumentaci k Návrhář schématu XSD. Tento soubor je schéma pořadí jednoduché nákupu.
+Následující soubor XSD se používá v různých příkladů v dokumentaci k Návrhář schématu XSD. Tento soubor je jednoduchý nákupní pořadí schématu.
 
 ```xml
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"

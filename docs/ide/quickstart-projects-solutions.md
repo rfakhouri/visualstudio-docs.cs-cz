@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624383"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607800"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Seznamte se s projekty a řešení
 
@@ -100,7 +100,7 @@ Prázdný projekt máme. Přidejme souboru kódu.
    }
    ```
 
-   Není nutné pochopit, co kód dělá, ale pokud chcete, můžete program spustit a zobrazit vytiskne okno dnešní datum konzoly (nebo standardní výstup).
+   Není nutné pochopit, co kód dělá, ale pokud chcete, můžete program spustit stisknutím kombinace kláves **Ctrl**+**F5** a podívejte se, že vytiskne okno dnešní datum konzoly (nebo standardní výstup).
 
 ## <a name="add-a-second-project"></a>Přidáte druhý projekt
 
@@ -148,7 +148,7 @@ Chceme použít testovací projekt nové jednotky k otestování v metodě **Qui
 
    Zobrazí se vám červený "podtržení" v části některý kód. Opravíme tuto chybu tak, že projekt testů [sestavení typu friend](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) k **QuickDate** projektu.
 
-1. Zpátky **QuickDate** projekt, otevřete *Calendar.cs* souboru, pokud ještě není otevřený a přidejte následující [pomocí příkazu](/dotnet/csharp/language-reference/keywords/using-statement) a <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut na vyřešte chybu v testovém projektu.
+1. Zpátky **QuickDate** projekt, otevřete *Calendar.cs* souboru, pokud ještě není otevřený a přidejte následující [pomocí příkazu](/dotnet/csharp/language-reference/keywords/using-statement) a <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut do horní části souboru, chcete-li vyřešit chybu v testovém projektu.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ Chceme použít testovací projekt nové jednotky k otestování v metodě **Qui
 
 ## <a name="project-properties"></a>Vlastnosti projektu
 
-Řádek v souboru kódu jazyka C#, která obsahuje <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut odkazuje na název sestavení (název souboru) **QuickTest** projektu. Název sestavení nemusí být vždy stejný jako název projektu. Chcete-li najít název sestavení projektu, otevřete vlastnosti projektu.
+Na řádku *Calendar.cs* soubor, který obsahuje <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut odkazuje na název sestavení (název souboru) **QuickTest** projektu. Název sestavení nemusí být vždy stejný jako název projektu. Chcete-li najít název sestavení projektu, otevřete vlastnosti projektu.
 
 1. V **Průzkumníka řešení**, vyberte **QuickTest** projektu. V nabídce klepněte pravým tlačítkem nebo kontextu vyberte **vlastnosti**, nebo stačí stisknout kombinaci kláves **Alt**+**Enter**.
 
-   *Stránky vlastností* pro projekt otevřít v **aplikace** kartu. Stránky vlastností obsahují různá nastavení pro projekt. Všimněte si, že název sestavení **QuickTest** projekt je skutečně "QuickTest". Pokud byste chtěli změnit, je to, kde by změna. Potom, když sestavíte testovací projekt, název výsledného spustitelného souboru změní z *QuickTest.exe* na cokoli, co jste zvolili.
+   *Stránky vlastností* pro projekt otevřít v **aplikace** kartu. Stránky vlastností obsahují různá nastavení pro projekt. Všimněte si, že název sestavení **QuickTest** projekt je skutečně "QuickTest". Pokud chcete změnit, toto je tam, kde by, která dělají. Potom, když sestavíte testovací projekt, název výsledný binární soubor změní z *QuickTest.dll* na cokoli, co jste zvolili.
 
    ![Vlastnosti projektu](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ Chceme použít testovací projekt nové jednotky k otestování v metodě **Qui
 ## <a name="next-steps"></a>Další kroky
 
 Pokud chcete zkontrolovat, že je funkční testování částí, zvolte **testování** > **spustit** > **všechny testy** z řádku nabídek. Zobrazí se okno **Průzkumníka testů** otevře a měli byste vidět, který **TestGetCurrentDate** testovací průchody.
+
+![Test Explorer text v sadě Visual Studio zobrazuje úspěch](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> Pokud **Průzkumník testů** nebude automaticky otevřené, otevřete ho kliknutím **testovací** > **Windows** > **Průzkumník testů** z řádku nabídek.
 
 ## <a name="see-also"></a>Viz také:
 

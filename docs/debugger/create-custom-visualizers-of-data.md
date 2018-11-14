@@ -1,7 +1,7 @@
 ---
-title: Vytváření vlastních Vizualizérů dat | Dokumentace Microsoftu
+title: Vytvoření vlastních dat vizualizéry | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 11/07/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -21,68 +21,68 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859bf6493a06663a8977898ffa07d600b826d458
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854309"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607819"
 ---
-# <a name="create-custom-visualizers-of-data"></a>Vytváření vlastních Vizualizérů dat
- Vizualizéry jsou součástí [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] uživatelské rozhraní ladicího programu. A *vizualizéru* vytvoří dialogové okno nebo jiné rozhraní pro zobrazení proměnné nebo objektu způsobem, který je vhodný k jeho datovému typu. Například HTML vizualizér interpretuje řetězec ve formátu HTML a výsledek zobrazí, jak se bude zobrazovat v okně prohlížeče; rastrový obrázek vizualizéru interpretuje struktura rastrový obrázek a zobrazí obrázek, který představuje. Některé vizualizéry umožňují snadno změnit také zobrazit data.
+# <a name="create-custom-data-visualizers"></a>Vytvoření vlastních dat vizualizéry 
+ A *vizualizéru* je součástí [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] uživatelské rozhraní ladicího programu, který se zobrazí proměnné nebo objektu způsobem odpovídajícím k jeho datovému typu. Například HTML vizualizér interpretuje řetězec ve formátu HTML a výsledek zobrazí, jak se bude zobrazovat v okně prohlížeče. Rastrový obrázek vizualizéru interpretuje struktura rastrový obrázek a zobrazí obrázek, který představuje. Některé vizualizéry umožňují měnit také zobrazit data.
 
- [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Ladicí program obsahuje šest standardní vizualizéry. Toto jsou text, HTML, XML a JSON vizualizátory, nástroje pro všechny z nich pracovat na řetězcových objektů; vizualizéru stromu WPF, pro zobrazení vlastností objektu WPF vizuálního stromu; a vizualizér datasetu, který se dá použít pro objekty datové sady, zobrazení dat a DataTable. Další vizualizéry může být v budoucnosti k dispozici ke stažení od společnosti Microsoft a jsou k dispozici od třetích stran a komunity. Kromě toho můžete napsat vlastní vizualizéry a nainstalovat je do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ladicího programu.
+ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Ladicí program obsahuje šest standardní vizualizéry. Text, HTML, XML a JSON vizualizéry pracovat na řetězcových objektů. Vizualizéru stromu WPF zobrazuje vlastnosti objektu WPF vizuálního stromu. Vizualizér datasetu funguje pro objekty datové sady, zobrazení dat a DataTable. 
+
+Další vizualizéry může být k dispozici ke stažení od Microsoftu, třetích stran a komunity. Můžete také napsat vlastní vizualizéry a nainstalovat je do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ladicího programu.
+
+V ladicím programu, vizualizéru reprezentované ikonou lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Vizualizéru ikonu"). Můžete vybrat ikonu **datového tipu**, ladicí program **Watch** okno, nebo **QuickWatch** dialogové okno a potom vyberte příslušné vizualizér pro odpovídající objekt.
+
+## <a name="write-custom-visualizers"></a>Zápis vlastních vizualizérech
 
  > [!NOTE]
- > Pokud chcete vytvořit vlastní vizualizér pro nativní kód, naleznete v tématu [nativní vizualizér SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) vzorku. V aplikacích UPW a Windows 8.x nejsou podporovány vlastní vizualizéry.
+ > Pokud chcete vytvořit vlastní vizualizér pro nativní kód, naleznete v tématu [nativní vizualizér SQLite](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer) vzorku. Vlastní vizualizátory se nepodporují pro aplikace UPW a Windows 8.x.
 
- V ladicím programu, vizualizéry jsou reprezentovány s ikonou lupy ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Vizualizéru ikonu"). Když se zobrazí ikona lupy v **datového tipu**, v okně ladicího programu, jako je **Watch** okna, nebo v **QuickWatch** dialogové okno, můžete kliknout na ikonu lupy Vyberte odpovídající datový typ odpovídající objekt vizualizéru.
+Můžete napsat vlastní vizualizér pro všechny spravované třídy s výjimkou objektu <xref:System.Object> a <xref:System.Array>.  
+  
+Architektura vizualizéru ladicí program má dvě části:  
+  
+- *Ladicího programu na straně* běží v rámci ladicího programu sady Visual Studio a vytvoří a zobrazí vizualizátor uživatelského rozhraní.  
+  
+- *Na straně laděného procesu* běží v rámci procesu ladění sady Visual Studio ( *laděného procesu*). Datový objekt k vizualizaci (například objekt String) neexistuje v laděném procesu. Na straně laděného procesu odešle objekt straně ladicí program zobrazí v uživatelském rozhraní, které vytvoříte.  
 
-## <a name="overview-of-custom-visualizers"></a>Přehled vlastních vizualizérech
+Na straně ladicí program přijímá objekt dat ze *zprostředkovatele objektu* , který implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> rozhraní. Na straně laděného procesu odešle objekt prostřednictvím *zdroj objektu*, který je odvozen z <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. 
 
-Můžete napsat vlastní vizualizér pro všechny spravované třídy s výjimkou objektu <xref:System.Object> nebo <xref:System.Array>.  
+Objekt zprostředkovatele můžete také odesílat data zpět do zdroje objektu, který umožňuje zápis vizualizéru, lze upravovat data. Můžete přepsat zprostředkovatele objektu ke komunikaci s vyhodnocovací filtr výrazů a zdroj objektu.  
   
- Architektura vizualizéru ladicí program má dvě části:  
+Straně laděného procesu ladicího programu na straně a komunikují prostřednictvím <xref:System.IO.Stream> metody, které serializaci dat objektů do <xref:System.IO.Stream> a deserializaci <xref:System.IO.Stream> zpět do datového objektu.  
+
+Můžete napsat vizualizéru pro obecný typ pouze v případě, že typ je otevřeného typu. Toto omezení je stejné jako omezení při použití `DebuggerTypeProxy` atribut. Podrobnosti najdete v tématu [používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
-- *Ladicího programu na straně* běží v rámci ladicího programu sady Visual Studio. Ladicí program na straně kód vytvoří a zobrazí uživatelské rozhraní pro vaše vizualizér.  
+Důležité informace o zabezpečení může mít vlastní vizualizéry. Zobrazit [hlediska zabezpečení vizualizéru](../debugger/visualizer-security-considerations.md).  
   
-- *Na straně laděného procesu* běží v rámci procesu ladění sady Visual Studio ( *laděného procesu*).  
-  
-  Datový objekt, který chcete vizualizovat (objekt String, například) neexistuje v laděném procesu. K odeslání dat objektu na stranu ladicí program, který potom můžete zobrazit pomocí uživatelského rozhraní, které vytvoříte, má na straně laděného procesu.  
-  
-  Na straně ladicí program přijímá tímto datovým objektem. Chcete-li vizualizovat z *zprostředkovatele objektu* , který implementuje <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> rozhraní. Na straně laděného procesu odešle datový objekt prostřednictvím *zdroj objektu*, který je odvozen z <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Objekt zprostředkovatele můžete také odeslat data zpět do zdroje objektu, která umožňuje zápis vizualizéru, který upravuje, jakož i zobrazí, data. Zprostředkovatele objektu může být potlačena za účelem mluvit vyhodnocovací filtr výrazů a proto zdrojového objektu  
-  
-  Na straně laděného procesu a ladicí program na straně mezi sebou komunikovat prostřednictvím <xref:System.IO.Stream>. Metody jsou k dispozici k serializaci dat objektů do <xref:System.IO.Stream> a deserializaci <xref:System.IO.Stream> zpět do datového objektu.  
-  
-  Kód na straně laděného procesu je zadán pomocí atributu DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
-  
-  K vytvoření vizualizátor uživatelského rozhraní na straně ladicího programu, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> a přepsat <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodu pro zobrazení rozhraní.  
-  
-  Můžete použít <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> k zobrazení formuláře Windows, dialogová okna a ovládací prvky z vašich vizualizér.  
-  
-  Podpora pro obecné typy je omezená. Můžete napsat vizualizér pro cíl, který je obecný typ, pouze pokud je otevřený typ obecného typu. Toto omezení je stejné jako omezení při použití `DebuggerTypeProxy` atribut. Podrobnosti najdete v tématu [používání atributu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
-  
-  Důležité informace o zabezpečení může mít vlastní vizualizéry. Zobrazit [hlediska zabezpečení Vizualizéru](../debugger/visualizer-security-considerations.md).  
-  
-  Následující postupy poskytnout souhrnný přehled, co je potřeba provést k vytvoření vizualizéru. Podrobnější vysvětlení najdete v tématu [návod: zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+Následující kroky poskytnout základní přehled o vytváření vizualizér. Podrobné pokyny najdete v tématu [návod: zápis vizualizéru v C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) nebo [návod: zápis vizualizéru v jazyce Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Chcete-li vytvořit vedlejší ladicího programu  
   
+K vytvoření vizualizátor uživatelského rozhraní na straně ladicího programu, můžete vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>a přepsat <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodu pro zobrazení rozhraní. Můžete použít <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> k zobrazení formuláře Windows, dialogová okna a ovládací prvky ve vaší vizualizátoru.  
+  
 1.  Použití <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> metody k získání vizualizovanému objektu na straně ladicího programu.  
   
-2.  Vytvořte třídu, která dědí z <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
+1.  Vytvořte třídu, která dědí z <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
   
-3.  Přepsat <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodu pro zobrazení rozhraní. Použití <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> metody k zobrazení formuláře Windows, dialogová okna a ovládací prvky jako součást rozhraní.  
+1.  Přepsat <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodu pro zobrazení rozhraní. Použití <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> metody k zobrazení formuláře Windows, dialogová okna a ovládací prvky ve vašem rozhraní.  
   
-4.  Použít <xref:System.Diagnostics.DebuggerVisualizerAttribute>, že mu poskytneme vizualizéru (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
+4.  Použít <xref:System.Diagnostics.DebuggerVisualizerAttribute>, předá vizualizér pro zobrazení (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
   
 ### <a name="to-create-the-debuggee-side"></a>Chcete-li vytvořit na straně laděného procesu  
   
-1.  Použít <xref:System.Diagnostics.DebuggerVisualizerAttribute>, že mu poskytneme vizualizéru (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) a objektový zdroj (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Vynecháte-li objektový zdroj, použije se výchozí objekt zdroj  
+Zadejte kód na straně laděného procesu pomocí <xref:System.Diagnostics.DebuggerVisualizerAttribute>.  
   
-2.  Pokud chcete vaše vizualizéru být schopni upravit datové objekty, stejně jako zobrazované, budete muset přepsat `TransferData` nebo `CreateReplacementObject` metody ze <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.   
+1.  Použít <xref:System.Diagnostics.DebuggerVisualizerAttribute>, že mu poskytneme vizualizéru (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) a objektový zdroj (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Vynecháte-li objektový zdroj, použije vizualizéru výchozí zdroj objektu.  
   
-## <a name="in-this-section"></a>V tomto oddílu
+1.  Aby mohl vizualizéru upravit stejně jako objekty data zobrazení, přepsání `TransferData` nebo `CreateReplacementObject` metody ze <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.   
+  
+## <a name="see-also"></a>Viz také:
   
  [Návod: Zápis vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
@@ -92,7 +92,6 @@ Můžete napsat vlastní vizualizér pro všechny spravované třídy s výjimko
   
  [Postupy: Testování a ladění vizualizéru](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
- [Referenční dokumentace k rozhraní API vizualizéru](../debugger/visualizer-api-reference.md)  
+ [Referenční dokumentace rozhraní API vizualizéru](../debugger/visualizer-api-reference.md)  
   
-## <a name="related-sections"></a>Související oddíly  
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)

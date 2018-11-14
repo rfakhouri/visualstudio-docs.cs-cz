@@ -22,4 +22,4 @@ ms.locfileid: "34571930"
 Příklad soubory v této části se používají v dokumentaci k Návrhář schématu XSD.
 
 > [!NOTE]
-> Příklady společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi.
+> Vzorové společnosti, organizace, produkty, názvy domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné jejich spojení se skutečnou společností, organizaci, produktu, název domény, e-mailovou adresu, loga, osoby, místa nebo události je určena ji vyvozovat.

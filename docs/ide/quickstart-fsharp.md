@@ -1,6 +1,6 @@
 ---
-title: 'Rychlý start: Vytvoření webové služby ASP.NET Core v jazyce F #'
-description: 'Zjistěte, jak vytvořit webovou službu ASP.NET Core v sadě Visual Studio s jazykem F #, krok za krokem.'
+title: 'Rychlý start: Vytvoření webové služby ASP.NET Core vF#'
+description: Zjistěte, jak vytvořit webovou službu ASP.NET Core v sadě Visual Studio s F#, krok za krokem.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
@@ -20,9 +20,9 @@ ms.contentlocale: cs-CZ
 ms.lasthandoff: 08/29/2018
 ms.locfileid: "43231270"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Rychlý start: Použití sady Visual Studio k vytvoření vaší první webové služby ASP.NET Core v jazyce F #
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Rychlý start: Použití sady Visual Studio k vytvoření vaší první webové služby ASP.NET Core vF#
 
-V tomto úvodu 5 až 10 minut do F # v sadě Visual Studio vytvoříte webovou aplikaci ASP.NET Core F #.
+V tomto úvodu 5 až 10 minut na F# v sadě Visual Studio vytvoříte F# webová aplikace ASP.NET Core.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -34,7 +34,7 @@ Nejprve vytvoříte projekt webového rozhraní API ASP.NET Core. Typ projektu j
 
 2. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-3. V **nový projekt** dialogové okno, v levém podokně rozbalte **Visual F #**, klikněte na tlačítko **webové**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, klikněte na tlačítko **OK**.
+3. V **nový projekt** dialogové okno, v levém podokně rozbalte **Visual F#** , klikněte na tlačítko **webové**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, klikněte na tlačítko **OK**.
 
      Pokud se nezobrazí **.NET Core** kategorii šablony projektu, zvolte **otevřít instalační program Visual Studio** odkaz v levém podokně. Spustí se instalační program pro Visual Studio. Zvolte **vývoj pro ASP.NET a web** úloh, klikněte na tlačítko **změnit**.
 
@@ -46,7 +46,7 @@ Nejprve vytvoříte projekt webového rozhraní API ASP.NET Core. Typ projektu j
 
 1. V **Průzkumníka řešení** nástrojů, rozbalte **řadiče** složky, klikněte na tlačítko **ValuesController.fs** ho otevřete v editoru.
 
-   ![Průzkumník řešení se složkou řadiče rozbalení v projektu webového rozhraní API F #](../ide/media/hello-world-fs-sln-explorer.png)
+   ![Průzkumník řešení se složkou řadiče rozbalení v F# projekt webového rozhraní API](../ide/media/hello-world-fs-sln-explorer.png)
 
 2. V dalším kroku změnit `Get()` člen bude následující:
 
@@ -57,7 +57,7 @@ Nejprve vytvoříte projekt webového rozhraní API ASP.NET Core. Typ projektu j
        ActionResult<string[]>(values)
    ```
 
-Kód je jednoduché. Pole F # hodnot, které je vázán na `values` název a potom předá do rozhraní ASP.NET Core MVC jako `ActionResult`. ASP.NET Core se postará o zbytek za vás.
+Kód je jednoduché. F# Pole hodnot je vázán na `values` název a potom předá do rozhraní ASP.NET Core MVC jako `ActionResult`. ASP.NET Core se postará o zbytek za vás.
 
 V editoru, by měl vypadat jako tento:
 
@@ -73,9 +73,9 @@ Webový prohlížeč se teď budou zobrazovat JSON odpovídající jste zadali d
 
 ## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o F #, ASP.NET Core a integrovaném vývojovém prostředí sady Visual Studio. Pokud chcete zobrazit aplikaci spuštěnou na veřejný server, vyberte na následující tlačítko.
+Blahopřejeme k dokončení tohoto rychlého startu! Věříme, že jste se dozvěděli něco o F#, ASP.NET Core a integrovaném vývojovém prostředí sady Visual Studio. Pokud chcete zobrazit aplikaci spuštěnou na veřejný server, vyberte na následující tlačítko.
 
 > [!div class="nextstepaction"]
 > [Nasaďte aplikaci do služby Azure App Service](../deployment/quickstart-deploy-to-azure.md)
 
-Další informace o jazyce F #, projděte si oficiální [Průvodce jazykem F #](/dotnet/fsharp/index).
+Další informace o F#, projděte si oficiální [ F# průvodce](/dotnet/fsharp/index).

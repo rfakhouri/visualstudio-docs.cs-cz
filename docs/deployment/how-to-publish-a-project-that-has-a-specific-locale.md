@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ca121a8f8a68ca7a036b14c0f0c2bd6d1a84ff00
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281972"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607585"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: publikování projektu s konkrétním národním
 Není, že aplikace obsahuje součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která se má několik projektů a potom publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředí než "en", nezapomeňte nastavit `localeString` v makru tak, aby odpovídaly národní prostředí, který používáte (pro příklad, "de" nebo "de-DE").  
@@ -49,7 +49,7 @@ Není, že aplikace obsahuje součásti, které mají různá národní prostře
     Module PublishSpecificCulture  
         Sub PublishProjectFirstProjectWithEnLocale()  
             ' Note: You should publish projects by using the IDE at least once  
-            ' before you use this macro. Items such as the certficate and the   
+            ' before you use this macro. Items such as the certificate and the   
             ' security zone must be set.  
             Dim localeString As String = "en"  
   

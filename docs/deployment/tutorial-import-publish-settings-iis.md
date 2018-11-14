@@ -49,7 +49,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 1. Na počítači se systémem Visual Studio, zvolte **souboru** > **nový projekt**.
 
-1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
+1. V části **Visual C#**  nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně zvolte buď **webová aplikace ASP.NET (.NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na tlačítko **OK**.
 
     Pokud nevidíte zadaný projekt šablony, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Viz požadavky v tomto článku k identifikaci požadované úlohy sady Visual Studio, které je nutné nainstalovat.
 

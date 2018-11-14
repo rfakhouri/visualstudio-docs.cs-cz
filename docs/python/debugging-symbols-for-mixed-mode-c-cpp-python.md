@@ -1,7 +1,7 @@
 ---
 title: Symboly pro ladění ve smíšeném režimu Python/C++
 description: Jak Visual Studio poskytuje možnost načíst symboly pro dokončení C++ ve smíšeném režimu a ladění pro Python.
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 519bfd5610b420472502407792dbff3ea1ebedd2
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 1b5b50d08876b9b106a836c0302a99dc7efe5204
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050129"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607637"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Instalace interpretů Pythonu symboly pro ladění
 

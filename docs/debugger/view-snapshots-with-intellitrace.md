@@ -1,5 +1,5 @@
 ---
-title: Zobrazit snímky pomocí nástroje IntelliTrace
+title: Zobrazení snímků s IntelliTrace
 description: Kontrola stavu historických aplikace pomocí zpětného kroku IntelliTrace
 ms.custom: ''
 ms.date: 09/20/2018

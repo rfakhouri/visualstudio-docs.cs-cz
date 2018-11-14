@@ -1,5 +1,5 @@
 ---
-title: 'Ukázkový soubor XSD: vztahy'
+title: 'Ukázkový soubor XSD: relace'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -17,9 +17,9 @@ ms.contentlocale: cs-CZ
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572771"
 ---
-# <a name="sample-xsd-file-relationships"></a>Ukázkový soubor XSD: vztahy
+# <a name="sample-xsd-file-relationships"></a>Ukázkový soubor XSD: relace
 
-Následující soubor XSD se používá v různých příklady v dokumentaci k Návrhář schématu XSD. Tento soubor je schéma pořadí nákupu s poznámky a dokumentaci.
+Následující soubor XSD se používá v různých příkladů v dokumentaci k Návrhář schématu XSD. Tento soubor je nákupní pořadí schématu poznámky a dokumentaci.
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">

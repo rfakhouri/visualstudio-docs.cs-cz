@@ -15,7 +15,7 @@ ms.openlocfilehash: e05dd0e01254bf1222a8a7de497b11ec2a808bfb
 ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/18/2018
+ms.lasthandoff: 09/19/2018
 ms.locfileid: "46136382"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Nejčastější dotazy ohledně FxCop a FxCop analyzátory

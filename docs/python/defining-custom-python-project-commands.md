@@ -1,7 +1,7 @@
 ---
 title: Jak definovat vlastní příkazy pro projekty v Pythonu
 description: Ukazuje, jak upravit soubory projektu a cíle přidat vlastní příkazy místní nabídky projektu Pythonu v sadě Visual Studio. Příkazy můžete vyvolat na spustitelné programy, skripty, moduly, vložené fragmenty kódu a pip.
-ms.date: 06/27/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008320"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607845"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definovat vlastní příkazy pro projekty v Pythonu
 
@@ -146,12 +146,12 @@ Všechny hodnoty atributů jsou malá a velká písmena.
 | --- | --- | --- |
 | TargetType | Ano | Určuje, co obsahuje atribut Target a způsobu jejich použití spolu s argumenty atributu:<ul><li>**spustitelný soubor**: spuštění spustitelného souboru s názvem v cíli, připojením hodnoty v argumentech, jako kdyby zadali přímo na příkazovém řádku. Hodnota musí obsahovat pouze název programu bez argumentů.</li><li>**skript**: Spusťte *python.exe* s názvem souboru v cíli, a potom s hodnotou v argumentech.</li><li>**modul**: Spusťte `python -m` za nímž následuje název modulu v cíli, a potom s hodnotou v argumentech.</li><li>**kód**: spuštění kódu vložené obsažených v cíli. Hodnota argumenty se ignoruje.</li><li>**PIP**: Spusťte `pip` pomocí příkazu v cíli, za nímž následuje argumenty; je ExecuteIn nastavená na "výstupní", ale předpokládá pip `install` příkazů a používá cíl jako název balíčku.</li></ul> |
 | Cíl | Ano | Název souboru, název modulu, kód nebo příkazu pip používat, v závislosti na TargetType. |
-| Arguments | Nepovinné | Určuje řetězec argumentů (pokud existuje) pro cíl. Všimněte si, že pokud TargetType je `script`, argumenty uvedeny v programu Python, ne *python.exe*. Ignorovat `code` TargetType. |
+| Arguments | volitelná, | Určuje řetězec argumentů (pokud existuje) pro cíl. Všimněte si, že pokud TargetType je `script`, argumenty uvedeny v programu Python, ne *python.exe*. Ignorovat `code` TargetType. |
 | ExecuteIn | Ano | Určuje prostředí, ve kterém chcete spustit příkaz:<ul><li>**Konzola**: (výchozí) spustí cíl a argumenty jako v případě, že se zadají přímo na příkazovém řádku. Okno příkazového řádku se zobrazí, zatímco cílem běží, pak je automaticky uzavřeny.</li><li>**consolepause**: stejné jako konzoly, ale čeká keypress před zavřením okna.</li><li>**výstup**: cíl spuštění a zobrazuje výsledky v **výstup** okna v sadě Visual Studio. Pokud TargetType je "pip", Visual Studio používá cíl jako název balíčku a připojí argumenty.</li><li>**REPL**: cíl spuštění [interaktivní Python](python-interactive-repl-in-visual-studio.md) okno; volitelný zobrazovaný název se používá pro záhlaví okna.</li><li>**žádný**: chová se stejně jako konzola.</li></ul>|
-| WorkingDirectory | Nepovinné | Složka, ve kterém chcete spustit příkaz. |
-| ErrorRegex<br>WarningRegEx | Nepovinné | Použít pouze, když je ExecuteIn `output`. Regulární výraz, pomocí které sady Visual Studio analyzuje výstup zobrazíte chyby a upozornění v příkazu zadat obě hodnoty jeho **seznam chyb** okna. Pokud není zadán, příkaz nemá vliv **seznam chyb** okna. Očekává, že další informace o jaké Visual Studio, najdete v části [skupin zachycení pojmenované](#named-capture-groups-for-regular-expressions). |
-| RequiredPackages | Nepovinné | Seznam všech požadavků balíčku pro příkaz ve stejném formátu jako [ *souboru requirements.txt* ](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Spustit Pylintu** příkazu, například určuje `pylint>=1.0.0`. Před spuštěním příkazu, Visual Studio kontroluje, zda jsou nainstalovány všechny balíčky v seznamu. Visual Studio používá k instalaci všechny chybějící balíčky pip. |
-| Prostředí | Nepovinné | Řetězec proměnné prostředí k definování před spuštěním příkazu. Každou proměnnou používá formulář \<NAME > =\<hodnota > v případě více proměnných oddělených středníky. Proměnná s více hodnotami musí být obsažen v jednoduché nebo dvojité uvozovky, stejně jako v "NAME = VALUE1; HODNOTA2 ". |
+| WorkingDirectory | volitelná, | Složka, ve kterém chcete spustit příkaz. |
+| ErrorRegex<br>WarningRegEx | volitelná, | Použít pouze, když je ExecuteIn `output`. Regulární výraz, pomocí které sady Visual Studio analyzuje výstup zobrazíte chyby a upozornění v příkazu zadat obě hodnoty jeho **seznam chyb** okna. Pokud není zadán, příkaz nemá vliv **seznam chyb** okna. Očekává, že další informace o jaké Visual Studio, najdete v části [skupin zachycení pojmenované](#named-capture-groups-for-regular-expressions). |
+| RequiredPackages | volitelná, | Seznam všech požadavků balíčku pro příkaz ve stejném formátu jako [ *souboru requirements.txt* ](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Spustit Pylintu** příkazu, například určuje `pylint>=1.0.0`. Před spuštěním příkazu, Visual Studio kontroluje, zda jsou nainstalovány všechny balíčky v seznamu. Visual Studio používá k instalaci všechny chybějící balíčky pip. |
+| Prostředí | volitelná, | Řetězec proměnné prostředí k definování před spuštěním příkazu. Každou proměnnou používá formulář \<NAME > =\<hodnota > v případě více proměnných oddělených středníky. Proměnná s více hodnotami musí být obsažen v jednoduché nebo dvojité uvozovky, stejně jako v "NAME = VALUE1; HODNOTA2 ". |
 
 #### <a name="named-capture-groups-for-regular-expressions"></a>Skupiny pojmenované sběr dat pro regulární výrazy
 
