@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2997ae4658abc383a0b9e506fc7d8ea19bffce2a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907037"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645156"
 ---
 # <a name="devenv-command-line-switches"></a>Přepínače příkazového řádku nástroje devenv
 
@@ -31,9 +31,9 @@ DEVENV umožňuje nastavit různé možnosti pro integrované vývojové prostř
 
 ## <a name="devenv-switch-syntax"></a>Syntaxe přepínač nástroje devenv
 
-Ve výchozím nastavení příkazy nástroje devenv předat nástroji devenv.com přepínače. Nástroj devenv.com poskytuje výstup prostřednictvím datových proudů standardní systém, jako například `stdout` a `stderr`. Nástroj určuje příslušné přesměrování vstupů/výstupů v případě, že zaznamenává výstup, třeba do souboru .txt.
+Příkazy, které začínají `devenv` jsou zpracovávány `devenv.com` nástroj, který dodává výstup prostřednictvím standardního systému datových proudů, jako například `stdout` a `stderr`. Nástroj určuje příslušné přesměrování vstupů/výstupů v případě, že zaznamenává výstup, třeba do souboru .txt.
 
-Na druhé straně příkazy, které začínají `devenv.exe` můžete použít stejné přepínače, ale nástroj devenv.com přeskočí.
+Na druhé straně příkazy, které začínají `devenv.exe` můžete použít stejné přepínače, ale `devenv.com` nástroj přeskočí. Pomocí `devenv.exe` přímo bránil výstup na konzole.
 
 Syntaxe pravidla pro `devenv` přepínače se podobají těm pro další nástroje pro příkazový řádek DOSU. Následující syntaxe pravidla se vztahují na všechny `devenv` přepínače a jejich argumenty:
 
@@ -45,7 +45,7 @@ Syntaxe pravidla pro `devenv` přepínače se podobají těm pro další nástro
 
 - Pokud první argument je soubor, který není řešení nebo projektu, tento soubor se otevře ve vhodném editoru v nové instanci integrovaného vývojového prostředí.
 
-- Když zadáte název souboru projektu namísto názvu souboru řešení `devenv` příkaz vyhledá v nadřazené složce souboru projektu, který má stejný název souboru řešení. Například příkaz `devenv /build myproject1.vbproj` vyhledá nadřazené složky pro soubor řešení s názvem "myproject1.sln".
+- Když zadáte název souboru projektu namísto názvu souboru řešení `devenv` příkaz vyhledá v nadřazené složce souboru projektu, který má stejný název souboru řešení. Například příkaz `devenv myproject1.vbproj /build` vyhledá nadřazené složky pro soubor řešení s názvem "myproject1.sln".
 
     > [!NOTE]
     > Jeden a pouze jeden soubor řešení, která odkazuje na tento projekt se musí nacházet v nadřazené složky. Pokud nadřazená složka neobsahuje žádný soubor řešení, která odkazuje na tento projekt, nebo pokud nadřazená složka obsahuje dva nebo více souborů řešení, které na ni odkazují, pak se vytvoří soubor dočasné řešení.
@@ -78,12 +78,12 @@ Následující přepínače příkazového řádku se nezobrazují integrovaném
 
 |Přepínač příkazového řádku|Popis|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|Zobrazí nápovědu pro devenv přepínače v **okno příkazového řádku**.<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|Sestaví zadané řešení nebo projekt podle konfigurace zadané řešení.<br /><br /> **/ Build myproj.csproj nástroje devenv**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|Odstraní všechny soubory vytvořené příkazem k sestavení, aniž by to ovlivnilo zdrojové soubory.<br /><br /> **DEVENV myproj.csproj / clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Sestaví řešení a spolu se soubory, které jsou nezbytné pro nasazení podle konfigurace řešení.<br /><br /> **DEVENV myproj.csproj / deploy**|
+|[/?](../../ide/reference/q-devenv-exe.md)|Zobrazí nápovědu pro devenv přepínače v **okno příkazového řádku**.<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|Sestaví zadané řešení nebo projekt podle konfigurace zadané řešení.<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|Odstraní všechny soubory vytvořené příkazem k sestavení, aniž by to ovlivnilo zdrojové soubory.<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Sestaví řešení a spolu se soubory, které jsou nezbytné pro nasazení podle konfigurace řešení.<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|Porovná dva soubory. Přebírá čtyři parametry: Zdrojovýsoubor, Cílovýsoubor, SourceDisplayName (volitelné), TargetDisplayName (volitelné).|
-|[/Out](../../ide/reference/out-devenv-exe.md)|Umožňuje zadat soubor, který chcete zobrazovat chyby při sestavování.<br /><br /> **/ Build myproj.csproj DEVENV/out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|Umožňuje zadat soubor, který chcete zobrazovat chyby při sestavování.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projekt k sestavení, vyčištění nebo nasazení. Tento přepínač můžete použít pouze v případě, že jste zadali také/Build, / rebuild, / clean nebo / deploy – přepínač.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Určuje konfiguraci projektu k vytvoření buildu nebo nasazení. Tento přepínač lze použít pouze v případě, že jste zadali také přepínač/Project.|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Čistí a poté sestaví zadané řešení nebo projekt podle konfigurace zadané řešení.|

@@ -16,12 +16,12 @@ ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 190945cb0d3b56310d5fe98ec3e2ec9fee4375a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2bfb98e5e0a72917ffbaeeea184a68b5c3dc4de
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884027"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645117"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ int GetTypesByName(
  Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
   
 ## <a name="remarks"></a>Poznámky  
- Pro obecné typy, název, který má si vyhledejte "seznamu\<int >" nebo "seznamu\<int, int >" by "Seznam". Pokud se zobrazí v několika modulů, typů se stejným názvem `ppEnum` parametru bude obsahovat všechny kopie. Je nutné použít [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) a odlišují podle `guidModule` parametru.  
+ Pro obecné typy, název, který má si vyhledejte "seznamu\<int >" nebo "seznamu\<int, int >" by "Seznam". Pokud se zobrazí v několika modulů, typů se stejným názvem `ppEnum` parametr bude obsahovat všechny kopie. Je nutné použít [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) a odlišují podle `guidModule` parametru.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje, jak pro tuto metodu implementovat **CDebugSymbolProvider** objekt, který zveřejňuje [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) rozhraní.  

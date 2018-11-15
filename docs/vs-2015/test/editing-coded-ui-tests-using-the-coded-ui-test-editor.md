@@ -80,7 +80,7 @@ Editor programového testu uživatelského rozhraní umožňuje snadno upravovat
   
  Úpravy vlastností akce uživatelského rozhraní v **akce uživatelského rozhraní** podokně rozbalte položku testovací metoda, která obsahuje akce uživatelského rozhraní, který chcete upravit vlastnosti pro vybrané akce uživatelského rozhraní a potom upravte vlastnosti pomocí okna Vlastnosti.  
   
- Například pokud server není k dispozici a máte akce uživatelského rozhraní související s webovým prohlížečem, který uvádí **přejít na webovou stránku "<http://Contoso1/default.aspx’>**, můžete změnit adresu URL `‘ http://Contoso2/default.aspx’`.  
+ Například pokud server není k dispozici a máte akce uživatelského rozhraní související s webovým prohlížečem, který uvádí **přejít na webovou stránku "<http://Contoso1/default.aspx’>**, můžete změnit adresu URL `‘http://Contoso2/default.aspx’`.  
   
  ![Vlastnosti ovládacího prvku](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Úpravy vlastností ovládacích prvků  

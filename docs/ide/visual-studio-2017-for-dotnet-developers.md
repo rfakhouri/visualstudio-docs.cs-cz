@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928344"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645143"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -46,7 +46,7 @@ Tady jsou oblíbené klávesové zkratky sady Visual Studio:
 | **CTRL**+**.** (také **Alt**+**zadejte** v profil jazyka C#) | Rychlé akce a refaktoringy | Zobrazit, jaký kód opravy, jsou k dispozici na ukazatel pozice nebo kód výběr akce pro generování kódu, refaktoring nebo jiných rychlé akce |
 | **Ctrl**+**D** | Duplicitní řádek | Duplikuje řádku kódu, který se kurzor nachází (k dispozici v **Visual Studio 2017 verze 15.6** a novější) |
 | **SHIFT**+**Alt**+**+**/**-** | Rozbalit/Sbalit výběr | Rozbalíte nebo sbalíte aktuální výběr v editoru (k dispozici v **Visual Studio 2017 verze 15.5** a novější) |
-| **CTRL** + **Alt** + **.** | Vložit další odpovídající blikajícího kurzoru | Přidá výběr a blikající kurzor na dalším místě, která odpovídá aktuální výběr (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
+| **SHIFT** + **Alt** + **.** | Vložit další odpovídající blikajícího kurzoru | Přidá výběr a blikající kurzor na dalším místě, která odpovídá aktuální výběr (k dispozici v **Visual Studio 2017 verze 15.8** a novější) |
 | **Ctrl**+**Q** | Snadné spuštění | Hledat všechna nastavení sady Visual Studio |
 | **F5** | Spustit ladění | Spuštění ladění aplikace |
 | **Ctrl**+**F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |
