@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191318"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782476"
 ---
 # <a name="autos-and-locals-windows"></a>Automatické hodnoty a místní hodnoty Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "49191318"
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Jaké proměnné zobrazí v okně Automatické hodnoty?  
- Můžete použít **automatické hodnoty** okna v kódu jazyka C#, Visual Basic a C++. **Automatické hodnoty** okno nepodporuje jazyk JavaScript nebo F #.  
+ Můžete použít **automatické hodnoty** okna v kódu jazyka C#, Visual Basic a C++. **Automatické hodnoty** okno nepodporuje jazyk JavaScript nebo F#.  
   
  V jazyce C# a Visual Basic **automatické hodnoty** v okně se zobrazí všechny proměnné použité v aktuální nebo předchozí řádku. Například pokud deklarace čtyři proměnné a jejich nastavení následujícím způsobem:  
   

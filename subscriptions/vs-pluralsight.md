@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
 ms.topic: Get-Started-Article
-description: Další informace o předplatné školení Pluralsight, který je součástí vašeho předplatného sady Visual Studio.
+description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912003"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826695"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -79,13 +79,13 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 |         Visual Studio Professional (standardní a roční cloudové)          | VL, Azure, maloobchodního prodeje |   3 měsíce    | Ne<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    VL maloobchodního prodeje     |   3 měsíce    | Ne<sup>2</sup> |
 |                      Předplatné MSDN Platforms (Standard)                       |    VL maloobchodního prodeje     |   3 měsíce    | Ne<sup>2</sup> |
-|                     Visual Studio Dev Essentials                     |        NENÍ K DISPOZICI         |   3 měsíce    |       Ne       |
+|                     Visual Studio Dev Essentials                     |        NENÍ K DISPOZICI         |   1 měsíc    |       Ne       |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       NENÍ K DISPOZICI       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       NENÍ K DISPOZICI       |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.* 
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.*
 
-<sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit. Viz nejčastější dotazy níže pro další podrobnosti.  Po vypršení platnosti předplatného Pluralsight mohou mít nárok na 12měsíční přístup k 50 vybraných kurzů Pluralsight v jednom ze tří oblastí studie.*
+<sup>2</sup> * výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit. 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
@@ -105,9 +105,7 @@ Odpověď: Ano, jako předplatitel sady Visual Studio získáte přístup k expe
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Otázka: co se stane, když Moje předplatné Pluralsight vyprší?
-Odpověď: na konci platnosti vašeho bezplatného předplatného Pluralsight máte dvě možnosti:
-- Získáte bezplatný přístup na 12 měsíců (zkontrolujte [způsobilosti tabulky](#eligibility) tabulky ověřte, zda je vaše předplatné oprávnění) omezená sada 50 kurzů v jedné z těchto klíčových oblastí, včetně: vývoj aplikací v cloudu AI, machine learning a data. a DevOps v cloudu. Podívejte se na e-mail od Pluralsightu chcete uplatnit nárok na bezplatný přístup po vypršení platnosti. Zobrazí se [seznam kurzů](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit) k dispozici v rámci každé částečné knihovny.
-- Můžete se rozhodnout, které dává vám přístup k jejich kurz katalogu při zakoupení předplatného přímo od společnosti Pluralsight poskytujeme 10 % slevu.  Obraťte se prosím na [Pluralsight](http://www.pluralsight.com) úplné podrobnosti.
+Odpověď: na konci platnosti vašeho bezplatného předplatného Pluralsight můžete koupit předplatné přímo od společnosti Pluralsight.  Obraťte se prosím na [Pluralsight](http://www.pluralsight.com) úplné podrobnosti.
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Otázka: Moje společnost obnoví svoje předplatné sady Visual Studio prostřednictvím smlouvy Enterprise. Resetovat výhody pro Pluralsight?
 Odpověď: Ne.  Výhody pro Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.  To platí pro všechny nákupním kanálům, včetně maloobchodní prodej, cloud a nákupy – svazek licencí (Multilicence).
@@ -116,3 +114,6 @@ Odpověď: Ne.  Výhody pro Pluralsight je jedno použití pouze vázané na už
 -  [Centrum pro nápovědu Pluralsight](https://help.pluralsight.com/help) poskytuje pomoc s kurzy Pluralsight trvá nebo na webu Pluralsight.
 -  Potřebujete pomoc se prodeje, předplatnými, účty a fakturací pro předplatná sady Visual Studio, obraťte se na Visual Studio [podpora předplatných](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Máte dotaz k Visual Studio IDE, DevOps služby Azure nebo jiných produktů Visual Studio nebo služeb?  Navštivte [Visual Studio – podpora](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Další kroky
+Po vytvoření účtu, jste připravení začít školení.  Navštivte [ https://www.pluralsight.com ](http://www.pluralsight.com) a klepněte na **přihlášení** v pravém horním rohu stránky a spusťte nový kurz nebo vraťte se do kurzu již probíhá. 

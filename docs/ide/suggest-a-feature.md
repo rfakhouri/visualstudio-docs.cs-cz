@@ -1,23 +1,23 @@
 ---
-title: Navrhnout funkci pro sadu Visual Studio
+title: 'Přehled: Navrhnout funkci pro sadu Visual Studio'
 description: Popisuje návrhy jsou na komunity vývojářů, jak provádět návrh a použití návrhy společností Microsoft v rámci plánu sady Visual Studio
-ms.date: 09/20/2018
+ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
-author: Seiyer
+author: seaniyer
 ms.author: seiyer
-manager: shve
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf14f613dba6b1b7f3230c19570fc93c47374e8
-ms.sourcegitcommit: 7081de442666c0cfb0986f6bf5d02d42916fed3b
+ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403761"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826689"
 ---
-# <a name="suggest-a-feature"></a>Navrhnout funkci
+# <a name="overview-suggest-a-feature"></a>Přehled: Navrhnout funkci
 
 Zavedli jsme zcela novém hávu pro návrhy na funkce spolu s aktuálním možnost nahlásit potíže [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com). Toto je nový způsob, jakým lze oprávněn spolupracovat přímo s pracovního postupu vytváření sady Visual Studio.
 
@@ -42,54 +42,66 @@ Různé stavy, které jsou spojené s návrhy funkcí, jsou uvedeny níže, spol
 ![Nový stav doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/New.jpg)
 
 **Nové** znamená, že návrh byl nově hlášená z vy nebo někdo jiný. Nic se nestalo na něm ještě. Přední řádek provede některé předběžné kontroly. abyste měli jistotu, že jsme můžete pokračovat dále. Očekávat, že od nás uslyšíte v asi pěti pracovních dní naše další kroky.
+
 - - -
 
 ![V rámci kontroly stavu doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/UnderReview.jpg)
 
 **Probíhá kontrola** označuje, že funkce návrh byl zařazen pro stanovení priority. Můžeme určit prioritu funkcí vám naše širší komunity vývojářů nejlepší poměr taky s ohledem plán do budoucna.
 
-I když nemůžeme vykonávat váš návrh nové funkce hned, budeme nadále monitorovat svůj nápad přibližně 90 dní, aby komunita vám pomohli se rozhodnout a pak proveďte rozhodnutí v dalších krocích.
+I v případě, že nemohli okamžitě vykonávat váš návrh nové funkce, budeme nadále monitorovat svůj nápad přibližně 90 dní, aby komunita vám pomohli se rozhodnout a pak proveďte rozhodnutí v dalších krocích.
+
 - - -
 
 ![Na stav plán doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/OnRoadmap.jpg)
 
-**V plánu** znamená, že váš návrh funkce má vliv široké komunity a pomůžou vylepšit produkt. Můžeme do našeho plánu přiděleného času pro něj. Budeme vás o průběhu.
+**V plánu** znamená, že váš návrh funkce má vliv široké komunity a pomůžou vylepšit produkt. Čas jsme jste pro něj přidělené do našeho plánu. Budeme vás o průběhu.
+
 - - -
 
 ![Potřebujete více informací o stavu pro návrhy na komunity vývojářů](../ide/media/SuggestStates/NeedMoreInfo.jpg)
 
 Návrh funkce označené **potřebovat další informace o** znamená, že budeme potřebovat další podrobnosti nám lépe pochopit svůj návrh. Zkontrolujte komentáře, kde požádáme o další informace, které pomůžou lépe pochopit.
+
 - - -
+
 ![Uzavřeno – jiný produkt stav doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/ClosedOtherProduct.jpg)
 
-**Uzavřeno – jiný produkt** znamená, že se nám nepodařilo vyřešit váš návrh funkce v současnosti, protože se nevztahuje na byla nahlášena pro produkt. Však poskytujeme podrobnosti na níž mohou sdílet svůj návrh nové funkce pro produkt.
+**Uzavřeno – jiný produkt** znamená, že nemohli vyřešit váš návrh funkce v současnosti, protože se nevztahuje na byla nahlášena pro produkt. Však poskytujeme podrobnosti na níž mohou sdílet svůj návrh nové funkce pro produkt.
+
 - - -
+
 ![Uzavřeno – duplicitní stav doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/ClosedDuplicate.jpg)
 
 **Uzavřeno – duplicitní** označuje, že někdo jiný již navrhl stejné funkce. Zkontrolujte komentáře na odkaz na stávající návrh funkce k dispozici. Hlasování a komentáře byly sloučeny do původního návrhu. Postupujte podle původního návrhu.
+
 - - -
+
 ![Uzavřeno – není k dispozici dostatek informací o stavu doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
 
-**Uzavřeno – není k dispozici dostatek informací o** označuje, že po několika opakovaných pokusech, jsme neobdrželi dostatek informací, které váš návrh funkce plně nerozumí. Máme nový návrh funkce zavřete, jak se nám nepodařilo provádět žádnou další akci v této fázi.
+**Uzavřeno – není k dispozici dostatek informací o** označuje, že po několika opakovaných pokusech, jsme neobdrželi dostatek informací, které váš návrh funkce plně nerozumí. Máme nový návrh funkce zavřete, jakmile vás budeme moct provádět žádnou další akci v této fázi.
 
 Najít informace, které jsme hledali? Můžete vyžádat a znovu aktivujte-the-ticket, pokud máte další informace.
+
 - - -
 
 ![Dokončeno – ve verzi Preview stav doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/CompletedPreview.jpg)
 
 **Dokončeno – ve verzi Preview** označuje, že jsme implementovali funkci je navrženo. Můžete stáhnout verzi preview sady Visual Studio, která obsahuje váš návrh pomocí odkazu uvedeného v komentářích.
+
 - - -
 
 ![Dokončení - Release stav doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/CompletedRelease.jpg)
 
-**Dokončení - Release** označuje, že váš návrh nové funkce byly vydány v nejnovější aktualizace produktu. Aktualizace sady Visual Studio si můžete stáhnout pomocí odkazu uvedeného v komentářích. 
+**Dokončení - Release** označuje, že váš návrh nové funkce byly vydány v nejnovější aktualizace produktu. Aktualizace sady Visual Studio si můžete stáhnout pomocí odkazu uvedeného v komentářích.
+
 - - -
 
 ## <a name="faq"></a>Nejčastější dotazy
 
 ### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>Proč nelze zobrazit svůj nápad User Voice v komunitě vývojářů?
 
-Nové funkce návrhy ze staré fóru User Voice migroval do komunity vývojářů v závislosti na dopadu na širší komunity a priority silniční mapu jako náš produkt. Pokud se domníváte, že jsme nebyla provedena migrace váš návrh, přidejte ho jako nový návrh pro komunity vývojářů.
+Nové funkce návrhy ze staré fóru User Voice migroval do komunity vývojářů v závislosti na dopadu na širší komunity a priority silniční mapu jako náš produkt. Pokud se domníváte, že vám jsme to nevyšlo migrace váš návrh, přidejte ho jako nový návrh pro komunity vývojářů.
 
 ### <a name="why-have-the-votes-not-been-carried-over-from-user-voice"></a>Proč nebyly hlasy přeneseny z User Voice?
 
@@ -107,6 +119,6 @@ Hlasování systému přes User Voice funguje jinak než hlasy v komunitě vývo
 
 ### <a name="how-long-can-i-expect-actions-to-take"></a>Jak dlouho můžou očekávat akcí?
 
-Jsme připravení plně doporučením vaší funkce a provádění akcí cenné zkušenosti poskytovat našim zákazníkům. Akce pro návrhy mají určenou prioritu podle dopadu na širší komunity. I když nemůžeme osobně odpovědět na každé návrh, prosím být jistí, že vaše zpětná vazba získá správný tým a pečlivě vyhodnotit.
+Máme plně se jim doporučením vaší funkce a provádění akcí cenné zkušenosti poskytovat našim zákazníkům. Akce pro návrhy mají určenou prioritu podle dopadu na širší komunity. I v případě, že jsme nemůže reagovat osobně na každé návrh, zajistíme, že vaše zpětná vazba získá správný tým a pečlivě vyhodnotit.
 
 Doba odezvy závisí na stavu, ve kterém vaše zpětná vazba nachází. Přečtěte si prosím vysvětlení stavů v tomto dokumentu o doby odezvy.
