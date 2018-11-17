@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: f64c2748688f06e5f0f7035b1a98bc93d7a6a61c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9d1842cd36256912e65bd8cbe5d9146266034ab6
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348112"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826693"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 
@@ -20,53 +20,35 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="/media/common/i_categorize.svg" alt="What is debugging?">
+                            </div>
                         </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Začínáme s ladicím programem</h3>
+                        <div class="cardText">
+                            <h3>Co je ladění?</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/write-better-code-with-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_code_edit.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Ladění pro naprosté začátečníky</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Další informace k ladění</h3>
+                        <h3>Zápis C# kódu s méně chyb.</h3>
                     </div>
                 </div>
             </div>
@@ -84,7 +66,48 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Podívejte se na Video o používání ladicího programu</h3>
+                        <h3>Podívejte se na video o používání ladicího programu</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Prostředí sady Visual Studio ladění pomocí zprovoznění během 5 minut</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_road-map.svg" alt="Road map">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Podívejte se, co můžete dělat ladicího programu</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+        <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-managed">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt=".NET">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Ladění C# nebo aplikace Visual Basic</h3>
                     </div>
                 </div>
             </div>
@@ -92,17 +115,94 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/remote-debugging">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace o vzdáleném ladění</h3>
+                        <h3>Ladění aplikací v C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-aspnet">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="ASP.NET">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Ladění aplikace ASP.NET</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Seznamte se blíž s kurzy</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="Absolute beginners">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Průvodce absolutní začátečníky</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="Learn to use the debugger">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Zjistěte, jak pomocí ladicího programu</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_debug.svg" alt="Tips and tricks">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Tipy a triky pro ladicí program</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +216,7 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -134,65 +234,11 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="Debug Azure">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Ladit živé aplikace Azure App Service</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Ladicí program tipy a triky</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Ladění vícevláknových aplikací</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Podívejte se, co&#39;nového v ladicím programu</h3>
                     </div>
                 </div>
             </div>

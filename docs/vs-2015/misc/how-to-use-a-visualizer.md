@@ -26,14 +26,14 @@ helpviewer_keywords:
 - visualizers, about visualizers
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: cdf4c9b3a2ea8dc1322a10799f7f7051b71e035c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306511"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721918"
 ---
 # <a name="how-to-use-a-visualizer"></a>Postupy: Použití vizualizéru
 Chcete-li zobrazit obsah proměnné nebo objektu způsobem, který má smysl pro typ dat můžete použít vizualizéru. Můžete použít vizualizéry z **DataTips**, **Watch** okna, **automatické hodnoty** okna, nebo **místní hodnoty** okno.  
