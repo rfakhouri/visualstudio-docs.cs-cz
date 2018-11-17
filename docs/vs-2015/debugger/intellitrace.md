@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912978"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737219"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Věnovat méně času laděním aplikace, zaznamenávejte a trasujte historii pr
 |||  
 |-|-|  
 |**Podporované**|-Jazyka Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br />     Můžete ladit většinu aplikací, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 a 64bitové aplikace.<br />     Ladění aplikací SharePoint pomocí nástroje IntelliTrace naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Chcete-li ladit aplikace pro Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění publikované cloudové služby pomocí nástroje IntelliTrace a sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248).|  
-|**Omezená podpora**|– Aplikace F # na experimentální bázi<br />– Aplikace Windows Store podporované pouze pro události|  
+|**Omezená podpora**|- F# aplikace na experimentální bázi<br />– Aplikace Windows Store podporované pouze pro události|  
 |**Nepodporuje se**|-C++, ostatní jazyky a skript<br />– Windows Services, Silverlight, Xbox nebo [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplikace|  
   
 > [!NOTE]

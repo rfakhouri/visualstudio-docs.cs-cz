@@ -18,12 +18,12 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ddedec50fd9c5f90245a64c5cfe839edd67d3aa8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299114"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722822"
 ---
 # <a name="visual-studio-administrator-guide"></a>Příručka administrátora sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

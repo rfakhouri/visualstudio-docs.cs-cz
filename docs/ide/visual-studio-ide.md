@@ -13,38 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244447"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826801"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
 Visual Studio *integrovaného vývojového prostředí* je creative odrazový, můžete použít k úpravám, ladit a sestavovat kód a pak publikujete aplikaci. Integrované vývojové prostředí (IDE) je plně funkční program, který lze použít pro mnoho aspektů vývoje softwaru. Kromě standardní editor a ladicího programu, že většina integrovanými vývojovými prostředími poskytnout, Visual Studio obsahuje kompilátory, nástroje dokončování kódu, grafičtí návrháři pro a mnoho dalších funkcí, které usnadňují proces vývoje softwaru.
 
-Visual Studio je k dispozici pro Windows a Mac. [Visual Studio pro Mac](/visualstudio/mac/) má mnoho stejných funkcí jako Visual Studio 2017 a je optimalizovaná pro vývoj multiplatformní a mobilní aplikace. Tento článek se týká Windows verze sady Visual Studio 2017.
-
-Existují 3 edicích sady Visual Studio 2017: Community, Professional a Enterprise. V tématu [porovnání Visual Studio 2017 integrovanými vývojovými prostředími](https://visualstudio.microsoft.com/vs/compare/) Další informace o funkcích, které jsou podporované v každé edici.
-
-Tomto přehledovém článku vás seznámí s základní funkce integrovaného vývojového prostředí. Provedeme některé kroky můžete provést pomocí sady Visual Studio, včetně vytváření Jednoduchý projekt pomocí [IntelliSense](using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu proměnné během provádění programu. Provedeme také si na různá okna nástrojů.
-
-## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
-
-Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalovat do vašeho systému.
-
-Modulární instalačního programu umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny funkce potřebné pro programovací jazyk nebo platformu dáváte přednost. Postupovat podle kroků pro [vytvoření programu](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** úloh během instalace.
-
-![Úlohy pro vývoj pro různé platformy .NET core v instalační program sady Visual Studio](../ide/media/dotnet-core-cross-platform-workload.png)
-
-Při prvním spuštění aplikace Visual Studio, můžete volitelně [přihlášení](signing-in-to-visual-studio.md) pomocí účtu Microsoft nebo pracovní nebo školní účet.
-
-## <a name="tour-of-the-ide"></a>Prohlídka integrovaného vývojového prostředí
-
-Získáte základní vizuální přehled o Visual Studio, následující obrázek ukazuje Visual Studio s otevřít projekt a několika okny nástrojů klíče, které budete pravděpodobně používat:
-
 ![Prostředí IDE sady Visual Studio](../ide/media/visualstudioide.png)
+
+Tento obrázek ukazuje sady Visual Studio s otevřít projekt a několika okny nástrojů klíče, které budete pravděpodobně používat:
 
 - [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](quickstart-projects-solutions.md).
 
@@ -54,7 +36,13 @@ Získáte základní vizuální přehled o Visual Studio, následující obráze
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (vpravo dole) umožňuje sledování pracovních položek a sdílet s ostatními kód pomocí technologie pro řízení verze, například [Git](https://git-scm.com/) a [Team Foundation verze ovládacího prvku (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
-### <a name="popular-productivity-features"></a>Oblíbené pro zvýšení produktivity
+## <a name="editions"></a>Edice
+
+Visual Studio je k dispozici pro Windows a Mac. [Visual Studio pro Mac](/visualstudio/mac/) má mnoho stejných funkcí jako Visual Studio 2017 a je optimalizovaná pro vývoj multiplatformní a mobilní aplikace. Tento článek se týká Windows verze sady Visual Studio 2017.
+
+Existují 3 edicích sady Visual Studio 2017: Community, Professional a Enterprise. V tématu [porovnání Visual Studio 2017 integrovanými vývojovými prostředími](https://visualstudio.microsoft.com/vs/compare/) Další informace o funkcích, které jsou podporované v každé edici.
+
+## <a name="popular-productivity-features"></a>Oblíbené pro zvýšení produktivity
 
 Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produktivnější při vývoji softwaru, patří:
 
@@ -106,9 +94,19 @@ Mezi oblíbené funkce v sadě Visual Studio, které vám umožní být produkti
 
    ![Náhled definice](../ide/media/peek-definition.png)
 
+## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
+
+Tomto přehledovém článku vás provede vytvořením jednoduchého projektu a zkusit některé z akcí můžete provést pomocí sady Visual Studio, jako je změna barevného motivu pomocí [IntelliSense](using-intellisense.md) jako podpory kódování a ladění aplikace zobrazíte hodnotu Proměnná během provádění programu. Abyste mohli začít, [Stáhnout Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalovat do vašeho systému.
+
+Modulární instalačního programu umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny funkce potřebné pro programovací jazyk nebo platformu dáváte přednost. Postupovat podle kroků pro [vytvoření programu](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** úloh během instalace.
+
+![Úlohy pro vývoj pro různé platformy .NET core v instalační program sady Visual Studio](../ide/media/dotnet-core-cross-platform-workload.png)
+
+Při prvním spuštění aplikace Visual Studio, můžete volitelně [přihlášení](signing-in-to-visual-studio.md) pomocí účtu Microsoft nebo pracovní nebo školní účet.
+
 ## <a name="create-a-program"></a>Vytvoření programu
 
-Pojďme začít a vytvořit nový, jednoduchý program.
+Pojďme začít a vytvořit jednoduchý program.
 
 1. Otevřít Visual Studio. V nabídce zvolte **souboru** > **nový** > **projektu**.
 
@@ -276,7 +274,7 @@ Pokud jste připraveni začít do další kód, jeden z následujících šablon
 
 - [Vytvoření první aplikace webového jazyka C# pomocí sady Visual Studio](quickstart-aspnet-core.md)
 
-- [Vytvoření první aplikace webové F # pomocí sady Visual Studio](quickstart-fsharp.md)
+- [Pomocí sady Visual Studio k vytvoření vaší první F# webové aplikace](quickstart-fsharp.md)
 
 - [Vytvořte svoji první aplikaci Node.js pomocí sady Visual Studio](quickstart-nodejs.md)
 
