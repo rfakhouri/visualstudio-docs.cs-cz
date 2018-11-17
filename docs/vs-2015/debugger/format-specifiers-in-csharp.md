@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6abc97117af62732f659ca469ab757d1ff1cdcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 330a32b20eeab172ebf36e49f16e79aa936a1bdc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281187"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754170"
 ---
 # <a name="format-specifiers-in-c"></a>Specifikátory formátu v jazyce C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomoc�
 |Specifikátor|Formát|Původní hodnota Watch|Zobrazí|  
 |---------------|------------|--------------------------|--------------|  
 |ac|Vynucení vyhodnocení výrazu. To může být užitečné, když je vypnutý implicitní vyhodnocování vlastností a implicitních volání funkcí. Zobrazit [vedlejší efekty a výrazy](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Zpráva "implicitní vyhodnocení funkce vypnul uživatel"|\<Hodnota >|  
-|d|desítkové celé číslo|0x0065|101|  
+|d|Desítkové celé číslo|0x0065|101|  
 |dynamické odkazy|Zobrazí zadaný objekt pomocí dynamického zobrazení|Zobrazí všechny členy objektu, včetně dynamického zobrazení|Zobrazí pouze dynamické zobrazení|  
 |h|Šestnáctkové celé číslo|61541|0x0000F065|  
 |NQ|řetězec s žádné uvozovky|"String"|Moje řetězec|  

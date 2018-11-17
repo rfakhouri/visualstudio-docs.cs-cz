@@ -1,5 +1,5 @@
 ---
-title: 'Příprava ladění: C#, F # a Visual Basic typy projektů | Dokumentace Microsoftu'
+title: 'Příprava ladění: C#, F#a typy projektů jazyka Visual Basic | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -25,26 +25,26 @@ helpviewer_keywords:
 - debugger, settings by project type
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 721d1571052c9e3acbf13e68e90bbfe3413b1b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274908"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800234"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Příprava ladění: typy projektů jazyka C#, F# a Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Témata v této části popisují, jak pro ladění jazyka C#, F # a [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] vytvořil typů projektů [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektu.  
+Témata v této části popisují, jak ladit C#, F#, a [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] vytvořil typů projektů [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektu.  
   
  Všimněte si, že tyto typy projektů, které vytvářejí knihovny DLL jako jejich výstup, byly seskupeny do [ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md) z důvodu běžné funkce sdílejí.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Doporučené nastavení vlastností](../debugger/managed-debugging-recommended-property-settings.md)  
- Tato část popisuje nastavení doporučených vlastností spojené s laděním pro projekty jazyka C#, F # a Visual Basic.  
+ Tato část popisuje nastavení doporučených vlastností spojené s laděním C#, F#, projekty a Visual Basic.  
   
  [Formulářové aplikace Windows](../debugger/debugging-preparation-windows-forms-applications.md)  
  Popisuje projekt aplikace Windows a poskytuje pokyny pro ladění, změnu výchozí konfigurace ladění a spouštění aplikací mimo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a připojení k němu.  

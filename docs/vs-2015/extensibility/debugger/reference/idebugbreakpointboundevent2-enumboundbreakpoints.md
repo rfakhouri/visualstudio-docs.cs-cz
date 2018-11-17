@@ -17,12 +17,12 @@ ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fda34a49bfa88c7c84b03cbbae611bc62fcff873
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0cd3a74c7d9f3b2a7bc76874c3f64afb44ca277
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878619"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746148"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Vytvoří čítač zarážek, které byly vázané na této události.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT EnumBoundBreakpoints(   
+HRESULT EnumBoundBreakpoints(   
    IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumBoundBreakpoints(   
+int EnumBoundBreakpoints(   
    out IEnumDebugBoundBreakpoints2 ppEnum  
 );  
 ```  

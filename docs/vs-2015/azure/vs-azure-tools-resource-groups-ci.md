@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791602"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Průběžná integrace služby Azure DevOps pomocí projekty nasazení skupiny prostředků Azure
 K nasazení šablony Azure, můžete provádět úlohy v různých fázích: sestavení, testování, kopírovat do Azure (tzv. "Přípravného") a nasaďte šablonu. Existují dva různé způsoby nasazování šablon ke službám Azure DevOps. Obě metody poskytují stejné výsledky, proto zvolte ten, který nejlépe vyhovuje požadavkům vašeho pracovního postupu.
@@ -131,7 +131,7 @@ Následující postup vás provede kroky potřebnými ke konfiguraci průběžn�
 
 1. Upravte svůj kanál služby Azure DevOps sestavení přidat že dvě nové kroky sestavení. Vyberte kanál sestavení v rámci **definice sestavení** kategorie a klikněte na tlačítko **upravit** odkaz.
    
-   ![Upravit definici sestavení][12]
+   ![Úprava definice sestavení][12]
 2. Přidat nové kroky sestavení k sestavení pomocí kanálu **přidat krok sestavení...** tlačítko.
    
    ![Přidejte krok sestavení][13]

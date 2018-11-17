@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816680"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826840"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
-Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce.  
+Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
   
 ##  <a name="BKMK_Overview"></a> Nastavení zarážek ve zdrojovém kódu  
  Můžete nastavit zarážku na kterýkoli řádek spustitelného kódu. Například v následujícím kódu C#, můžete nastavit zarážku na deklaraci proměnné `for` smyčku, nebo žádný kód uvnitř `for` smyčky. Deklarace oboru názvů nebo třídy, nebo v podpisu metody nelze nastavit zarážku.  
@@ -235,8 +235,8 @@ Když vyberete **podmíněný výraz**, můžete si vybrat mezi dvě podmínky: 
  >- Pro nativní kód ladicí program nezahrne hodnocení první podmínku, která má být změněna, takže nebude zarážce při prvním hodnocení. 
  >- Pro spravovaný kód, ladicí program narazí na zarážku při prvním hodnocení po **při změně** zaškrtnuto.  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Pomocí ID objektů v podmíněných výrazech (C# a F # jenom)  
- Existují situace, kdy budete chtít sledovat chování s určitým objektem. Můžete třeba chtít zjistit, proč objekt byl vložen do kolekce více než jednou. V jazyce C# a F #, můžete vytvořit objekt ID pro určité instance [referenční typy](/dotnet/csharp/language-reference/keywords/reference-types)a jejich použití v podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Pomocí ID objektů v podmíněných výrazech (C# a F# jenom)  
+ Existují situace, kdy budete chtít sledovat chování s určitým objektem. Můžete třeba chtít zjistit, proč objekt byl vložen do kolekce více než jednou. V C# a F#, můžete vytvořit objekt ID pro určité instance [referenční typy](/dotnet/csharp/language-reference/keywords/reference-types)a jejich použití v podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  
 
 **Chcete-li vytvořit ID objektu:** 
   
@@ -305,5 +305,7 @@ V části **podmínky** v **nastavení zarážek** okně **filtr**a pak zadejte 
 Zarážky s trasováním zobrazují jako červené kosočtverce na levém okraji zdrojového kódu a **zarážky** systému windows. 
   
 ## <a name="see-also"></a>Viz také:  
-[Řešení potíží s body přerušení v ladicím programu sady Visual Studio](../debugger/troubleshooting-breakpoints.md)  
-[Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)
+ [Co je ladění?](../debugger/what-is-debugging.md)  
+ [Psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [První pohled na ladění](../debugger/debugger-feature-tour.md)  
+ [Řešení potíží s body přerušení v ladicím programu sady Visual Studio](../debugger/troubleshooting-breakpoints.md)  
