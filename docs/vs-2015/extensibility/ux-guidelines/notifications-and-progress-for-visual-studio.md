@@ -13,12 +13,12 @@ ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8494878dfc1760717e8e01b408822ea5dd1ea6cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5787d6ce0eddd8d0f9229c54694f30f055c61ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724383"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Oznámení a postup pro Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -265,7 +265,7 @@ ms.locfileid: "49247998"
   
  **Team Explorer globální neurčitého průběhu panelu**  
   
-##### <a name="dialogs"></a>Dialogová okna  
+##### <a name="dialogs"></a>Dialogy  
  Dialogová okna může obsahovat jakýkoli z typů zavaděč průběh. Indikátory průběhu můžou být párována s zasílání zpráv i v kombinaci s více úrovněmi indikaci průběhu představují detailní a dílčí procesy.  
   
  ![Dialogové okno s více typy indikátor průběhu](../../extensibility/ux-guidelines/media/0903-11-dialog.png "0903 11_Dialog")  

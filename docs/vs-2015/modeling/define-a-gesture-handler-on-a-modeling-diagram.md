@@ -12,15 +12,15 @@ helpviewer_keywords:
 - UML - extending, drag and drop
 ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812969"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722184"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definování obslužné rutiny gest v diagramu modelování
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -305,7 +305,7 @@ V sadě Visual Studio můžete definovat příkazy, které jsou prováděny, kdy
   
         ```  
         IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
+          targetIShape.Element.GetModelStore();   
         ```  
   
     -   Chcete-li získat přístup k hostiteli a poskytovateli služby:  

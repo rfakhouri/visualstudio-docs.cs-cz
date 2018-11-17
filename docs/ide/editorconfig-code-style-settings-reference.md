@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967542"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769755"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -35,7 +35,7 @@ Najdete na konci tohoto článku [souboru .editorconfig příklad](#example-edit
 
 Existují tři podporované .NET kódování konvence kategorie:
 
-- [Jazykové konvence](#language-conventions)
+- [Styly kódu jazyka](#language-code-styles)
 
    Pravidla týkající se jazyka C# nebo Visual Basic. Například můžete zadat pravidla ohledně použití `var` nebo explicitních typů, při definování proměnných nebo preferují s výrazem v těle členy.
 
@@ -47,13 +47,13 @@ Existují tři podporované .NET kódování konvence kategorie:
 
    Pravidla týkající se názvů prvků kódu. Například můžete určit, že `async` musí metod končí slovem "Async".
 
-## <a name="language-conventions"></a>Jazykové konvence
+## <a name="language-code-styles"></a>Styly kódu jazyka
 
-Pravidla pro vytváření názvů jazyka mít následující formát:
+Pravidla pro jazyk kódu stylů mít následující formát:
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-Pro každé pravidlo vytváření názvů jazyka, musíte zadat buď **true** (preferovat tímto stylem) nebo **false** (nepreferovat tímto stylem) a **závažnost**. Závažnost určuje úroveň výkonu pro tento styl.
+Pro každé pravidlo stylu kódu jazyka, musíte zadat buď **true** (preferovat tímto stylem) nebo **false** (nepreferovat tímto stylem) a **závažnost**. Závažnost určuje úroveň výkonu pro tento styl.
 
 Následující tabulka uvádí možné závažnost hodnoty a jejich důsledky:
 
@@ -65,7 +65,7 @@ Závažnost | Efekt
 `warning` | Při porušení tohoto pravidla stylu zobrazení upozornění kompilátoru.
 `error` | Při porušení tohoto pravidla stylu, zobrazit chybu kompilátoru.
 
-Následující seznam uvádí jazyka povolená pravidla konvence:
+Následující seznam uvádí jazyka povolená nastavení stylu kódu:
 
 - Nastavení stylu kódu .NET
     - ["This." a "Me." kvalifikátory](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

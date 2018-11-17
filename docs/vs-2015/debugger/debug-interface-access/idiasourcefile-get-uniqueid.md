@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSourceFile::get_uniqueId method
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b8262f5ce29478d8de63ad8b5ce4f2740c458f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adfd0bbdd7b6fd29261541f71f718862b96f7f5f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938276"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739802"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Načte hodnotu klíče jednoduché celé číslo, které jsou jedinečné pro tu
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp#  
-HRESULT get_uniqueId (   
+HRESULT get_uniqueId (   
    DWORD* pRetVal  
 );  
 ```  

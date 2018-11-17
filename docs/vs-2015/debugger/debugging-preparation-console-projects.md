@@ -20,15 +20,15 @@ helpviewer_keywords:
 - console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d268495f21ca9b4869d4c084d3fd6982d842e6c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78cdf137f4804b2cdad26a21daf2dc34592ed774
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825910"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722925"
 ---
 # <a name="debugging-preparation-console-projects"></a>Příprava ladění: projekty konzoly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Příprava na ladění projektu konzoly je podobný připravuje se ladit projekt
  [Ladění nativního kódu](../debugger/debugging-native-code.md)   
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
  [Typy projektů Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#, F # a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)
 
