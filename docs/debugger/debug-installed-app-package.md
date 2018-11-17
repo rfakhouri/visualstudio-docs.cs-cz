@@ -1,7 +1,7 @@
 ---
-title: Ladění balíčku nainstalované aplikace (UPW) | Dokumentace Microsoftu
+title: Ladit nainstalovaný balíček aplikace UPW | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
-ms.date: 07/17/2017
+ms.date: 11/07/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -21,82 +21,84 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 331fd642001f1e6217736185d4b3bbbd7f56923e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908239"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784413"
 ---
-# <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Ladění balíčku nainstalované aplikace v aplikaci Visual Studio (UPW)
+# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Ladit nainstalovaný balíček aplikace UWP v sadě Visual Studio
 
-Kliknutím můžete ladit všechny balíčky nainstalované aplikace **ladit > jiné cíle ladění > Ladit nainstalovaný balíček aplikace**. Tato metoda ladění je k dispozici pro univerzální aplikace Windows (UPW) na těchto zařízeních:
+Visual Studio dokáže ladit nainstalované balíčky aplikací univerzální platformy Windows (UPW) na počítače s Windows 10 a Xbox, HoloLens a IoT zařízení. 
 
-* Windows 10 (není podporováno na telefonech)
-* XBox
-* HoloLens
-* IoT
+>[!NOTE]
+>Visual Studio, ladění pro nainstalované aplikace UPW se nepodporuje na telefonech.
+   
+Další informace o ladění aplikací pro UWP, najdete v blogových příspěvků na [ladění nainstalované balíčky aplikací](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) a [vytváření univerzálních aplikací pro Windows (UPW)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
-Další informace o těchto funkcích najdete v blogovém příspěvku o aktualizacích pro [ladění nainstalované balíčky aplikací](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) a v příspěvku na [vytváření univerzálních aplikací pro Windows (UPW)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>Ladit aplikaci UPW nainstalované na místním počítači
 
-## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Ladění nainstalovaného balíčku aplikace nebo aplikace spuštěné na místním počítači nebo zařízení
-
-1. Pomocí projektu UPW otevřít v sadě Visual Studio, klikněte na tlačítko **ladit > jiné cíle ladění > Ladit nainstalovaný balíček aplikace**.
-
-2. Vyberte buď **místního počítače** nebo **zařízení**.
-
-     Pokud se rozhodnete **zařízení**, počítač musí být fyzicky připojen k zařízení s Windows 10.
-
-     ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
-
-     Aktuálně spuštěné nainstalované aplikace balíčků se zobrazí v části **systémem** uzlu. Nainstalované balíčky aplikací, které neběží zobrazit až za **neběží**.
-
-3. Vyberte název aplikace, kterou chcete ladit v rámci **systémem** nebo **neběží** a zvolte **Start** nebo, pokud je aplikace spuštěna, zvolte **připojit**.
-
-     Pokud vyberete **nespouštět, ale ladit můj kód při spuštění**, to způsobí, že ladicí program sady Visual Studio k připojení k vaší aplikace při spuštění po jednom vlastní. Toto je účinný způsob, jak ladit ovládací prvek cesty z [různých spuštění metody](/windows/uwp/xbox-apps/automate-launching-uwp-apps), jako je protokol aktivace pomocí vlastních parametrů.
+1. V sadě Visual Studio, vyberte **ladění** > **jiné cíle ladění** > **ladit nainstalovaný balíček aplikace**.
+   
+1. V **ladit nainstalovaný balíček aplikace** dialogového okna, v části **typ připojení**vyberte **místního počítače**.
+   
+1. V části **nainstalované balíčky aplikací**, vyberte aplikaci, kterou chcete ladit, nebo zadejte jeho název do pole Hledat. Nainstalované aplikace běžící mimo balíčky zobrazí v části **neběží**, a jsou spuštěné aplikace v rámci **systémem**. 
+   
+   ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
+   
+1. V případě potřeby změňte typ kódu v rámci **ladit tento typ kódu**a vyberte další možnosti. 
+   - Vyberte **nespouštět, ale ladit můj kód při spuštění** pro spuštění ladění při spuštění aplikace. Spouští se ladění při spuštění aplikace je účinný způsob, jak ladit ovládací prvek cesty z [různých spuštění metody](/windows/uwp/xbox-apps/automate-launching-uwp-apps), jako je protokol aktivace pomocí vlastních parametrů.
+   
+1. Vyberte **Start**, nebo pokud aplikace běží, vyberte **připojit**.
 
 > [!NOTE]
-> Visual Studio můžete také připojit k libovolnému spuštěného procesu aplikace UPW tak, že vyberete **ladění**a potom **připojit k procesu**. Připojení ke spuštěnému procesu nevyžaduje původní projekt sady Visual Studio, ale načítají se symboly procesu pomůžou výrazně při ladění procesu, který není nutné původní kód.
+> Můžete připojit také všechny spuštěné UPW nebo jiný proces aplikace tak, že vyberete **ladění** > **připojit k procesu** v sadě Visual Studio. Není nutné se připojit ke spuštěnému procesu původní projekt sady Visual Studio, ale načítají se symboly aplikace pomůže výrazně při ladění procesu, který není nutné původní kód. Zobrazit [určit symboly a zdrojové soubory v ladicím programu](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
-## <a name="remote"></a> Ladění aplikace nainstalována nebo spuštěna ve vzdáleném počítači 
+## <a name="remote"></a> Ladit aplikaci UPW nainstalovaný na vzdáleném počítači nebo zařízení
 
-Při ladění balíčku nainstalované aplikace na vzdáleném počítači poprvé, Visual Studio nainstaluje správná verze nástrojů remote Tools for cílové zařízení. Počítače s Windows 10, XBox, HoloLens a IoT zařízení, musí být cílové zařízení.
+Prvním spuštění sady Visual Studio ladí aplikaci UPW nainstalovanou na zařízení s Windows 10 nebo vzdáleného post Tvůrce příslušného počítače aktualizace Windows 10, nainstaluje nástroje vzdálené ladění na cílovém zařízení. 
 
-1. Na zařízení s Windows 10, povolte [vývojářský režim](/windows/uwp/get-started/enable-your-device-for-development).
+1. [Povolení režimu pro vývojáře](/windows/uwp/get-started/enable-your-device-for-development) na počítači aplikace Visual Studio a vzdálené zařízení nebo počítače.
+   
+1. Pokud se chcete připojit ke vzdálenému počítači se systémem Windows 10 Update pre tvůrce, [ručně nainstalovat a spustit vzdálený ladicí program](../debugger/remote-debugging.md) na vzdáleném počítači.
+   
+1. Na počítači, Visual Studio, vyberte **ladění** > **jiné cíle ladění** > **ladit nainstalovaný balíček aplikace**.
+   
+1. V **ladit nainstalovaný balíček aplikace** dialogového okna, v části **typ připojení**vyberte **vzdálený počítač** nebo **zařízení**.
+   
+   Pokud vyberete **zařízení**, počítač musí být fyzicky připojen k zařízení s Windows 10.
+   
+   Pro vzdálený počítač, pokud se nezobrazí adresu počítače vedle **adresu**vyberte **změnu**. 
+      
+   1. V **připojení ke vzdálené** dialogového okna do pole **adresu**, zadejte název nebo IP adresu počítače, které se chcete připojit.
+      
+      ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
+      
+      Pokud ladicí program nemůže připojit ke vzdálenému počítači pomocí názvu počítače, použijte IP adresu. Použijte IP adresu pro Xbox, HoloLens a IoT zařízení.
+   1. Vyberte možnost ověřování vedle **režim ověřování**.
+      
+      Pro většinu aplikací, ponechte výchozí hodnotu, **univerzální (nešifrovaný protokol)**.
+   1. Vyberte **vyberte**. 
 
-2. Pokud se chcete připojit k vzdálenému počítači spuštěná verze pre Tvůrce aktualizace Windows 10, nejprve ručně [nainstalovat a spustit vzdálený ladicí program](../debugger/remote-debugging.md).
+1. V části **nainstalované balíčky aplikací**, vyberte aplikaci, kterou chcete ladit, nebo zadejte jeho název do pole Hledat. Nainstalované aplikace běžící mimo balíčky zobrazí v části **neběží**, a jsou spuštěné aplikace v rámci **systémem**. 
+   
+1. V případě potřeby změňte typ kódu v rámci **ladit tento typ kódu**a vyberte další možnosti. 
+   - Vyberte **nespouštět, ale ladit můj kód při spuštění** pro spuštění ladění při spuštění aplikace. Spouští se ladění při spuštění aplikace je účinný způsob, jak ladit ovládací prvek cesty z [různých spuštění metody](/windows/uwp/xbox-apps/automate-launching-uwp-apps), jako je protokol aktivace pomocí vlastních parametrů.
+   
+1. Vyberte **Start**, nebo pokud aplikace běží, vyberte **připojit**.
 
-     Pro XBox, HoloLens a IoT zařízení a zařízení Windows s Windows 10 Creators Update není nutné ručně nainstalujte vzdálený ladicí program. Nástroje remote tools se automaticky nainstaluje při nasazování aplikace.
+Při zahájení ladění balíčku nainstalované aplikace na připojeném Xbox, HoloLens a IoT zařízení poprvé, Visual Studio nainstaluje správnou verzi vzdáleného ladicího programu pro cílové zařízení. Instalace vzdáleného ladicího programu může trvat nějakou dobu a zpráva **spouští se vzdálený ladicí program** , zobrazí se děje.
 
-3. Klikněte na tlačítko **ladit > jiné cíle ladění > Ladit nainstalovaný balíček aplikace**.
+>[!NOTE]
+>V současné době Xbox nebo HoloLens zařízení restartuje aplikaci v ladicím programu připojená, pokud byl již spuštěn.
 
-4. V prvním rozevíracím seznamu zvolte **vzdálený počítač**.
-
-5. Zadejte název nebo IP adresu, kterou chcete připojit k počítači.
-
-     ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
-
-     Pokud se nemůžete připojit pomocí názvu počítače (po zvolení **Start**), místo toho použijte IP adresu. Použijte IP adresu pro XBox, HoloLens a IoT zařízení.
-
-6. Zvolte, jak ověřit tak, že vyberete možnost v **režim ověřování**.
-
-    Pro většinu aplikací, ponechte výchozí hodnotu, **univerzální (nešifrovaný protokol)**.
-
-7. Vyberte název aplikace, kterou chcete ladit v rámci **systémem** nebo **neběží** a zvolte **Start** nebo (pro spouštění aplikací) **připojit**.
-
-     Pokud vyberete **nespouštět, ale ladit můj kód při spuštění**, to způsobí, že ladicí program sady Visual Studio k připojení k balíčku aplikace při spuštění po jednom vlastní. Toto je účinný způsob, jak ladit ovládací prvek cesty z [různých spuštění metody](/windows/uwp/xbox-apps/automate-launching-uwp-apps), jako je protokol aktivace pomocí vlastních parametrů.
-
-     Při ladění balíčku nainstalované aplikace na připojeném XBox, HoloLens a IoT zařízení poprvé, Visual Studio nainstaluje správnou verzi vzdáleného ladicího programu pro cílové zařízení. Tato operace může trvat něco času a zobrazí se zpráva ``Starting remote debugger`` když tohle se děje.
-
-     > [!NOTE]
-   > V přítomné, XBox nebo zařízení HoloLens se aplikace restartuje s ladicím programem připojen, pokud je již spuštěna.
-
-Informace o rozšířené možnosti pro vzdálené nasazení aplikací pro UWP najdete v článku [UPW apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) pro nasazení a ladění. 
+Další informace o vzdálené nasazení aplikací pro UWP, naleznete v tématu [nasazení a ladění aplikací pro UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) a [aplikací pro UWP ladění na vzdálených počítačích](run-windows-store-apps-on-a-remote-machine.md). 
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Ladění v sadě Visual Studio](../debugger/index.md)  
  [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)  
  [Vzdálené ladění](../debugger/remote-debugging.md)  
  [Konfigurace brány firewall ve Windows pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [Přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md)  
- [Chyby při vzdáleném ladění a jejich řešení](../debugger/remote-debugging-errors-and-troubleshooting.md)
+ [Chyby a řešení potíží se vzdáleným laděním](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], variable evaluation
 ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914310"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722234"
 ---
 # <a name="expressions-in-the-debugger"></a>Výrazy v ladicím programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Ladicího programu sady Visual Studio obsahuje hodnotitele výrazu, které pracu
   
  Následující části obsahují podrobné informace o výrazy v různých jazycích.  
   
-## <a name="f-expressions-are-not-supported"></a>Výrazy jazyka F # se nepodporují.  
- Výrazy jazyka F # se nerozpoznaly. Pokud ladíte kód F #, budete muset před vstupem do ladicího programu okně nebo dialogovém okně pole výrazy přeložit výrazech do syntaxe jazyka C#. Pokud je překlad výrazů z jazyka F # do jazyka C#, nezapomeňte mějte na paměti, že jazyk C# používá `==` operátor testovat rovnost, zatímco F # používá jedné `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#výrazy nejsou podporovány.  
+ F#výrazy nejsou rozpoznány. Pokud ladíte F# kódu, musíte převést vaše výrazů do C# syntaxe před vstupem do ladicího programu okně nebo dialogovém okně pole výrazy. Při překlad výrazů od F# k C#, nezapomeňte mějte na paměti, C# používá `==` operátor testovat rovnost, zatímco F# používá jedné `=`.  
   
 ## <a name="c-expressions"></a>Výrazy jazyka C++  
  Informace o použití kontextu operátory s výrazy v jazyce C++, naleznete v tématu [kontextu – operátor (C++)](../debugger/context-operator-cpp.md).  
