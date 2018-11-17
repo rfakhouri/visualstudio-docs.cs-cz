@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637494"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826814"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Postupy: migrace projektů rozšíření do sady Visual Studio 2017
 
@@ -63,7 +63,7 @@ Pokud chcete mít jistotu, že uživatele instalace sady Visual Studio obsahuje 
 * Zajištění `InstallationTarget` zahrnuje 15.0.
 * Přidáte požadavky pro instalaci požadované (jak je znázorněno v následujícím příkladu).
   * Doporučujeme, abyste že zadáte jenom ID komponenty pro požadavky na instalaci.
-  * V části na konci tohoto dokumentu [pokyny k identifikaci ID součástí](#finding-component-ids).
+  * V části na konci tohoto dokumentu [pokyny k identifikaci ID součástí](#find-component-ids).
 
 Příklad:
 

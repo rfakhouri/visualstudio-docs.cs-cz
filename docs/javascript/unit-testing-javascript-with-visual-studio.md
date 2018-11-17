@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219377"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766541"
 ---
 # <a name="unit-testing-in-nodejs"></a>Testování jednotek v Node.js
 
@@ -33,7 +33,7 @@ Podporované architektury jsou:
 > [!WARNING]
 > Problém v pásky aktuálně zabraňuje pásku testy spuštění. Pokud [žádosti o přijetí změn #361](https://github.com/substack/tape/pull/361) se sloučí, by měl být problém vyřešen.
 
-Pokud vaše oblíbená architektura není podporovaná, najdete v článku [přidání podpory pro rozhraní testování částí](#addingFramework) informace o přidání podpory. 
+Pokud vaše oblíbená architektura není podporovaná, najdete v článku [přidání podpory pro rozhraní testování částí](#addingFramework) informace o přidání podpory.
 
 ## <a name="write-unit-tests"></a>Zápis testů jednotek
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> Pokud dojde k chybě, což indikuje, že *vstest.console.exe* nemůže být nalezen, ujistěte se, že jste otevřeli Developer Command Prompt a nejsou pravidelně příkazový řádek. 
+> Pokud dojde k chybě, což indikuje, že *vstest.console.exe* nemůže být nalezen, ujistěte se, že jste otevřeli Developer Command Prompt a nejsou pravidelně příkazový řádek.
 
 ## <a name="addingFramework"></a>Přidání podpory pro rozhraní testování částí
 
@@ -149,7 +149,7 @@ Pro dobré a příklad `find_tests` a `run_tests` implementace rozhraní v testo
 K dispozici testovacích architektur zjišťování dochází při spuštění sady Visual Studio. Pokud architektura se přidá, když běží Visual Studio, restartujte Visual Studio ke zjištění rozhraní framework. Ale není nutné restartovat při provádění změn pro implementaci.
 
 ## <a name="unit-tests-in-other-project-types"></a>Testování částí v jiné typy projektů
-Nejste omezeni pouze do projektu Node.js zápis testů jednotek. Po přidání vlastností TestFramework a TestRoot C# nebo VB projektu, tyto testy se vytvořil výčet a ji můžete spustit pomocí okna Průzkumníka testů.
+Nejste omezeni pouze do projektu Node.js zápis testů jednotek. Po přidání vlastnosti TestFramework a TestRoot k libovolnému C# nebo projektu jazyka Visual Basic, tyto testy se vytvořil výčet a ji můžete spustit pomocí okna Průzkumníka testů.
 
 Chcete-li povolit, klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení, zvolte **uvolnit projekt**a klikněte na tlačítko **upravit projekt**. Potom v souboru projektu přidejte následující dva elementy do vlastností skupiny.
 
