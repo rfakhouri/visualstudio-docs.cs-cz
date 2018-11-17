@@ -17,12 +17,12 @@ ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9525c31475f12040ca50c4aa0d24b126f94f80be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878567"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749112"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -83,21 +83,21 @@ public struct BP_LOCATION {
  [Jenom C++] Obsahuje [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) strukturu Pokud `bpLocationType`  =  `BPLT_RESOLUTION`.  
   
  `unionmember1`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
  `unionmember2`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
  `unionmember3`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
  `unionmember4`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
 ## <a name="remarks"></a>Poznámky  
  Tato struktura je členem skupiny [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) a [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
   
- [Jenom v C#] `unionmemberX` Členy se interpretují podle následující tabulky. Podívejte se dolů levém sloupci `bpLocationType` hodnotu pak nahlédnout další sloupce, které chcete zjistit, co jednotlivé `unionmemberX` člen představuje a zařazování `unionmemberX` odpovídajícím způsobem. Podívejte se na příklad pro způsob, jak interpretovat součástí tato struktura v jazyce C#.  
+ [C# pouze] `unionmemberX` Členy se interpretují podle následující tabulky. Podívejte se dolů levém sloupci `bpLocationType` hodnotu pak nahlédnout další sloupce, které chcete zjistit, co jednotlivé `unionmemberX` člen představuje a zařazování `unionmemberX` odpovídajícím způsobem. Podívejte se na příklad pro způsob, jak interpretovat součástí tato struktura v jazyce C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

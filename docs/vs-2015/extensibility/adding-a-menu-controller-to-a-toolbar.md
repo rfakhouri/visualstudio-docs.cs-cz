@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830948"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771538"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Přidání kontroleru nabídky do panelu nástrojů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,15 +122,15 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
 1.  V TWTestCommandPackageGuids.cs přidejte po příkazu existující identifikátory ID příkazu pro vaše položky nabídky tři.  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  V TWTestCommand.cs přidejte následující kód v horní části třídy TWTestCommand.  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  V konstruktoru TWTestCommand po posledním volání `AddCommand` metodu, přidejte kód pro směrování událostí pro každý příkaz prostřednictvím stejné obslužné rutiny.  
@@ -145,7 +145,7 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -157,7 +157,7 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
 4.  Přidejte obslužnou rutinu události do třídy TWTestCommand Označit vybrané příkazu, kontrolovaný.  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -170,7 +170,7 @@ Tento návod vychází [přidání panelu nástrojů do panelu nástrojů](../ex
 5.  Přidáte obslužnou rutinu události, která zobrazí prvek MessageBox, když uživatel vybere příkaz na kontroleru nabídky:  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
