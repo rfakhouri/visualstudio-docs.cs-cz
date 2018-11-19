@@ -1,6 +1,6 @@
 ---
 title: Umožní sadě Visual Studio vám pomohou při psaní C# kódu s méně chyb
-description: Porozumíte, jak použít ladicí program k ladění aplikace
+description: Naučte se psát lepší kód s méně chyb
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561996"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948956"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Psali lepší C# kódu pomocí sady Visual Studio
 
@@ -166,7 +166,7 @@ Tady je několik důležitých tipů pro zpracování výjimek:
     }
     ```
 
-* Neznámé metody, které obsahují ve vaší aplikaci najdete v dokumentaci, jaké výjimky metodu je pravděpodobně vyvolá výjimku. To může být důležité informace pro zpracování chyb správné a pro ladění vaší aplikace.
+* Neznámé funkce, které zahrnují ve své aplikaci expecially ty interakci s externími daty (například webové žádosti) najdete v dokumentaci, jaké výjimky funkce je pravděpodobně vyvolá výjimku. To může být důležité informace pro zpracování chyb správné a pro ladění vaší aplikace.
 
 Ukázkovou aplikaci, opravte `SerializationException` v `GetJsonData` metodu tak, že změníte `4o` k `40`.
 
@@ -217,7 +217,10 @@ Po restartování, ladicí program pozastaví na `assert` příkaz, protože vý
 
 ![Vyhodnocení překládá na hodnotu false](../debugger/media/write-better-code-using-assert.png)
 
-`assert` Chyby se říká, že dojde k nějakému problému, které potřebujete k prozkoumání. `assert` můžete pokrývají množství scénářů, ve kterém se nutně výjimku. V tomto příkladu uživatel neuvidí výjimku (v jiných scénářích `NullReferenceException` může dojít k) a `null` přidá hodnotu jako `firstname` ve vaší databázi. Může to způsobit potíže později (například se zobrazí ve výstupu konzoly) a může být obtížnější, chcete-li ladit.
+`assert` Chyby se říká, že dojde k nějakému problému, které potřebujete k prozkoumání. `assert` můžete pokrývají množství scénářů, ve kterém se nutně výjimku. V tomto příkladu uživatel neuvidí výjimku a `null` přidá hodnotu jako `firstname` v seznamu záznamů. Může to způsobit potíže později (například se zobrazí ve výstupu konzoly) a může být obtížnější, chcete-li ladit.
+
+> [!NOTE]
+> V situacích, kdy zavoláte metodu na `null` hodnotu, `NullReferenceException` výsledky. Obvykle chcete se vyhnout použití `try/catch` bloku pro obecné výjimky, to znamená, výjimku, která se neváže na konkrétní knihovnu funkce. Libovolný objekt může vyvolat `NullReferenceException`. Pokud si nejste jisti, naleznete v dokumentaci k funkci knihovny.
 
 Během procesu ladění, je vhodné zachovat konkrétní `assert` příkaz, dokud nebude vědět, budete muset nahraďte skutečný kód opravy. Řekněme, že se že rozhodnete, že uživatel může dojít k výjimce v sestavení pro vydání aplikace. V takovém případě musíte Refaktorovat kód, abyste měli jistotu, že vaše aplikace nebude závažnou výjimku nebo mít za následek některých chyb. Ano tento kód opravit, nahraďte následující kód:
 
@@ -276,7 +279,7 @@ Chyby jiného druhu zahrnují neefektivní kód, který způsobí, že vaše apl
 
 ## <a name="sample-code"></a> Ukázkový kód
 
-Následující kód obsahuje chyby, které můžete vyřešit pomocí integrovaného vývojového prostředí sady Visual Studio. Tady aplikace je jednoduchá aplikace, která simuluje získávání dat JSON z některé operace, deserializaci datového objektu a aktualizuje jednoduché databáze v paměti s novými daty.
+Následující kód obsahuje chyby, které můžete vyřešit pomocí integrovaného vývojového prostředí sady Visual Studio. Tady aplikace je jednoduchá aplikace, která simuluje získávání dat JSON z některé operace, deserializaci datového objektu a jednoduchý seznam se aktualizuje s novými daty.
 
 ```csharp
 using System;

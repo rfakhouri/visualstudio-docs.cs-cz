@@ -1,5 +1,5 @@
 ---
-title: Analyzátory Roslyn v sadě Visual Studio
+title: Analýza kódu pomocí analyzátorů Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511419"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948839"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Přehled analyzátory pro .NET Compiler Platform
 
-Visual Studio 2017 obsahuje integrovanou sadu .NET Compiler Platform analyzátory, které analýza kódu C# nebo Visual Basic během psaní. Jako balíček NuGet můžete nainstalovat další analyzátory jako rozšíření sady Visual Studio nebo na základě jednotlivých projektů. Podívejte se na styl kódu, kvalitu kódu a udržovatelnosti, návrh kódu a další problémy analyzátory.
+Visual Studio 2017 obsahuje integrovanou sadu .NET Compiler Platform analyzátory, které analýza kódu C# nebo Visual Basic během psaní. Podívejte se na styl kódu, kvalitu kódu a udržovatelnosti, návrh kódu a další problémy analyzátory. Jako balíček NuGet můžete nainstalovat další analyzátory jako rozšíření sady Visual Studio nebo na základě jednotlivých projektů.
 
 Pokud analyzátor se objevila porušení pravidel, jsou hlášeny v editoru kódu jako *podtržení* problematického kódu a v **seznam chyb**.
 

@@ -1,5 +1,5 @@
 ---
-title: -Debugexe – (devenv.exe)
+title: -DebugExe (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07dfcbb6064d0f1043c0621534b953a5f5c63e82
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1badcaba6f6461f6a2c6b73580d8d12c50481c2b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704951"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948774"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
-Otevře zadaný spustitelný soubor chcete ladit.
+Otevře zadaný spustitelný soubor k ladění.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,10 +35,10 @@ Devenv /debugexe ExecutableFile
 
  Požadováno. Název a cesta k souboru .exe.
 
- Pokud soubor .exe nebyl nalezen nebo pokud neexistuje, je nezobrazí žádná upozornění nebo chyby a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spustí běžným způsobem.
+ Pokud soubor .exe se nenašel nebo neexistuje, je zobrazovat žádná upozornění ani chyby a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spustí běžným způsobem.
 
 ## <a name="remarks"></a>Poznámky
- Všechny řetězce následující `ExecutableFile` parametru jsou předány na daný soubor jako argumenty.
+ Všechny řetězce po `ExecutableFile` parametru jsou předány do tohoto souboru jako argumenty.
 
 ## <a name="example"></a>Příklad
  Následující příklad otevře soubor `MyApplication.exe` pro ladění.
@@ -49,4 +49,4 @@ Devenv.exe /debugexe MyApplication.exe
 
 ## <a name="see-also"></a>Viz také
 
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

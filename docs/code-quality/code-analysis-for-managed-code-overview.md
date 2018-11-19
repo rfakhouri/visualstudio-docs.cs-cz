@@ -1,5 +1,5 @@
 ---
-title: Analýza kódu pro spravovaný kód v sadě Visual Studio
+title: Analýza statického kódu pro spravovaný kód
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320810"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948423"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Přehled analýzy kódu pro spravovaný kód
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Přehled statické analýzy kódu pro spravovaný kód v sadě Visual Studio
 
-Visual Studio 2017 analyzuje spravovaný kód dvěma způsoby: pomocí starší verze *FxCop* statické analýzy spravovaných sestavení a s .NET Compiler Platform *analyzátory*. Toto téma popisuje FxCop statickou analýzu kódu. Další informace o analýze kódu s použitím .NET Compiler Platform analyzátory, najdete v článku [analyzátory Roslyn přehled](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 můžete provést analýzu kódu spravovaného kódu dvěma způsoby: pomocí *FxCop* statické analýzy spravovaných sestavení a s další moderní *analyzátory Roslyn*. Toto téma popisuje FxCop statickou analýzu kódu. Další informace o analýze kódu pomocí analyzátorů kódu, naleznete v tématu [analyzátory Roslyn přehled](../code-quality/roslyn-analyzers-overview.md).
 
 Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí informace o sestaveních, jako jsou porušení programování a návrhu pravidel stanoví pokyny pro návrh rozhraní Microsoft .NET Framework.
 

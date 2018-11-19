@@ -21,19 +21,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e6d04064b9912fbd0592fcaeffd179016ef38c1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0a11d8eceec682e37f9bf34c79980c37880bdbe6
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944538"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948488"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
-Spuštění sady Visual Studio a načte proměnné prostředí do **adresáře VC ++** dialogové okno.
+Visual Studio spustí a načte proměnné prostředí do **adresáře VC ++** dialogové okno.
 
 > [!NOTE]
-> Tento přepínač. je nainstalovaná se systémem **vývoj aplikací s jazykem C++** zatížení.
+> Tento přepínač je nainstalován se sadou **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,12 +43,12 @@ Devenv /useenv
 
 ## <a name="example"></a>Příklad
 
-V následujícím příkladu spustí Visual Studio a načte proměnné prostředí do **adresáře VC ++** dialogové okno.
+Následující příklad spustí Visual Studio a načte proměnné prostředí do **adresáře VC ++** dialogové okno.
 
 ```shell
 Devenv.exe /useenv
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-* [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+* [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

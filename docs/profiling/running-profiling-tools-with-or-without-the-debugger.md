@@ -1,7 +1,7 @@
 ---
-title: Spuštění nástroje pro profilaci s nebo bez ladicího programu | Dokumentace Microsoftu
+title: Spustit profilování nástroje s nebo bez ladicího programu | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -10,122 +10,112 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: adb0180d892f34374ce58db3a4830fb7e5c21f10
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220980"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948709"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
-Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (například **využití procesoru** a **využití paměti**) můžete spustit s nebo bez ladicího programu. Výkon bez ladicího programu nástroje jsou určeny ke spuštění na verzi konfigurace, zatímco integrované v ladicím programu nástroje jsou určeny ke spuštění na konfiguraci ladění.  
 
-Můžete použít profilovací nástroje bez ladicího programu s Windows 7 a novější. Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s ladicím programem (**diagnostické nástroje** okno).
-  
-## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Má spustit nástroj, s nebo bez ladicího programu?  
- Nástroje integrované v ladicím programu Sledování výkonu umožňují dělat spoustu věcí, které nelze nástroje bez ladicího programu, například nastavit zarážky a zkontrolovat hodnoty proměnných. Bez ladicího programu nástroje vám poskytnou prostředí, který je blíž k uživatelům vydané aplikace zobrazí.  
-  
- Tady je pár otázek, které vám můžou pomoct rozhodnout, jaký druh nástroj je nejvhodnější pro vaše účely:  
-  
-1.  Byl nalezen problém najít, když se vyvinula aplikaci, nebo se jednalo ve vydané verzi?  
-  
-     Pokud se problém, který se zabývají byl nalezen během vývoje, pravděpodobně není nutné ke spuštění nástroje pro sledování výkonu v sestavení pro vydání. Pokud byl nalezen v prodejní verzi, by měl reprodukujte problém s konfiguraci vydané verze a následně se rozhodnete, zda by ladicí program nápovědy pro další zkoumání.  
-  
-2.  Zpracování potíže způsobené náročnou na procesor  
-  
-     Mnoho problémů jsou z důvodu problémů s výkonem externí například soubor vstupně-výstupních operací nebo rychlost odezvy sítě, takže neprovádějte velký rozdíl, ať už spouštíte nástroje Sledování výkonu s nebo bez ladicího programu. Pokud je váš problém způsobený volání náročnou na procesor, rozdíl mezi konfiguracemi vydání a ladění může být značné a měli byste pravděpodobně zkontrolujte-li tento problém existuje před použitím nástroje integrované v ladicím programu v sestavení pro vydání  
-  
-3.  Je třeba přesně měřit výkon, nebo je přijatelné přibližný počet?  
-  
-     Ladění sestavení chybí některé optimalizace, které poskytují buildy vydaných verzí, například vkládání volání funkce a konstanty, čištění nevyužitých kódu cesty a ukládání proměnné takovým způsobem, který nelze použít pro ladicí program. Na samotný ladicí program změní časy výkon, protože provede některé operace, které jsou nezbytné pro ladění (například zachycení výjimky a události načtení modulu). Optimalizace ladicí program nespadá, ale stále může být užitečné při porovnání s ostatních relativních mír provedené při ladění jsou méně přesné čísla výkon v nástrojích pro integrované v ladicím programu. Jsou mnohem přesnější čísla výkonu pro konfiguraci vydání nástroje bez ladicího programu.
-  
+Visual Studio nabízí celou řadu měření výkonu a nástroje pro profilaci. Některé nástroje, jako je **využití procesoru** a **využití paměti**, můžete spustit s nebo bez ladicího programu a na verze nebo konfigurace sestavení pro ladění. **Profiler výkonu** nástroje, jako je **časová osa aplikace** můžete spustit na ladění nebo vydání verze sestavení. Integrované v ladicím programu nástroje, jako je **diagnostické nástroje** okno a **události** kartu spustit jenom během relace ladění.  
+
+>[!NOTE]
+>Můžete použít nástroje pro sledování výkonu bez ladicího programu s Windows 7 a novější. Je potřeba spustit profilování nástroje integrované v ladicím programu systému Windows 8 nebo novější.
+
+Jiné – ladicí program **Profiler výkonu** a integrovaný ladicí program **diagnostické nástroje** poskytují různé informace a prostředí. Nástroje integrované v ladicím programu ukazují, zarážky a hodnoty proměnných. Bez ladicího programu nástroje vám poskytnou výsledky blíž k činnosti koncového uživatele. 
+
+Abychom pomohli, rozhodněte, které nástroje a výsledky použití, zvažte následující body:
+
+- Problémy s výkonem externí, jako je soubor vstupně-výstupních operací nebo problémů se sítí rychlost odezvy, nebude hledat v ladicím programu nebo ladicího programu nástroje mnohem liší. 
+- Pro potíže způsobené službou volání náročnou na procesor může být značné výkonu rozdíly mezi sestaveními pro vydání a ladění. Zkontrolujte, jestli existuje problém ve verzi sestavení. 
+- Pokud k problému dochází pouze během sestavení pro ladění, pravděpodobně není nutné ke spuštění nástroje bez ladicího programu. Problémy sestavení pro vydání, rozhodněte, zda ladicí program tools pomůže o pomoc. 
+- Sestavení pro vydání poskytují optimalizaci, jako je vkládání volání funkce a konstanty, vyřazování cesty nevyužité kódu a uložení proměnné takovým způsobem, který nelze použít pro ladicí program. Čísla výkon v nástrojích pro integrované v ladicím programu jsou méně přesný, protože ladicí sestavení chybí tyto optimalizace. 
+- Stejně jako operace nezbytné ladicí program jako zachycení výjimky a události načtení modulu se změní na samotný ladicí program doby výkonu. 
+- Sestavení pro vydání údaje o výkonu **Profiler výkonu** nástroje jsou přesné a přesné. Výsledky nástroje integrované v ladicím programu jsou zvláště užitečná pro porovnání s další měření spojené s laděním.
+
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďování dat profilace během ladění  
- Následující část se zabývá místním ladění. Můžete získat informace o ladění na zařízení nebo vzdálené ladění, v dalších částech.  
+
+Při spuštění ladění v sadě Visual Studio tak, že vyberete **ladění** > **spustit ladění** nebo stiskněte **F5**, **Diagnostickénástroje** ve výchozím nastavení se zobrazí okno. Chcete-li jej spustit ručně, vyberte **ladění** > **Windows** > **zobrazit diagnostické nástroje**. **Diagnostické nástroje** okno s informacemi o událostech, proces, využití paměti a procesoru.  
+
+![Diagnostické nástroje](../profiling/media/diagnostictools-update1.png "diagnostické nástroje")  
+
+- Použití **nastavení** ikonu na panelu nástrojů vyberte, jestli se má zobrazit **využití paměti**, **Analýza uživatelského prostředí**, a **využití procesoru**. 
   
-1. Otevřete projekt, který chcete ladit, pak klikněte na **ladění** > **spustit ladění** (nebo **Start** na panelu nástrojů nebo **F5**).  
+- Vyberte **nastavení** v **nastavení** rozevírací nabídku, která otevře **diagnostických stránky vlastností nástroje** víc možností. 
   
-2. Okno **Diagnostické nástroje** se zobrazí automaticky (pokud jste ho nevypnuli). Otevřete okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.  
+- Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat nástroje IntelliTrace v sadě Visual Studio **nástroje** > **možnosti** > **IntelliTrace**.  
   
-3. Scénáře, pro které chcete shromažďovat data pro spuštění.  
+Diagnostické relace končí, když zastavíte ladění.  
   
-    Při spuštění relace, zobrazí se informace o události, proces, využití paměti a procesoru.  
+Můžete také zobrazit **diagnostické nástroje** pro vzdálené ladění cíle. Pro vzdálené ladění a profilování musí být vzdálený ladicí program sady Visual Studio nainstalované a spuštěné na vzdálené cílové. 
+- Pro vzdálené ladění a profilování aplikace klasické pracovní plochy projektů, naleznete v tématu [vzdálené ladění](../debugger/remote-debugging.md). 
+- Vzdálené ladění a profilování aplikací pro UWP, naleznete v tématu [aplikací pro UWP ladění na vzdálených počítačích](../debugger/run-windows-store-apps-on-a-remote-machine.md). 
+
+### <a name="the-events-tab"></a>Na kartě události
+
+Během relace ladění **události** karty **diagnostické nástroje** okně zobrazí diagnostické události, ke kterým dochází. Předpony kategorií: **zarážku**, **souboru**, a jiné, vám umožní rychle vyhledat v seznamu kategorie, nebo přeskočit kategorie nezáleží.  
   
-    Následující grafické ukazuje **diagnostické nástroje** okna v aplikaci Visual Studio 2015 Update 1:  
-  
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
-  
-4. Můžete zvolit, zda chcete zobrazit **využití paměti** nebo **využití procesoru** (nebo obojí) se **vyberte nástroje** nastavení na panelu nástrojů. Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat nástroje IntelliTrace v **nástroje** > **možnosti** > **IntelliTrace**.  
-  
-5. Diagnostické relace končí, když zastavíte ladění.  
-  
-   Visual Studio 2015 Update 1 **diagnostické nástroje** okno usnadňuje pro soustředit na události, které vás zajímají.   Názvy událostí se teď zobrazují s předponami kategorie (**gesta**, **výstup programu**, **zarážku**, **soubor**atd) tak, aby se rychle Vyhledejte v seznamu pro danou kategorii nebo přeskočit kategorie, které vám nezáleží.  
-  
-   V okně nyní obsahuje pole pro hledání, abyste našli konkrétní řetězec kdekoli v seznamu událostí. Například následující obrázek znázorňuje výsledky hledání řetězce "instalaci", který odpovídá čtyři události:  
-  
-   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
-  
-   Můžete také filtrovat události a zobrazení v okně. V **filtr** rozevírací seznam, dokáže kontrolovat nebo zrušte zaškrtnutí políčka konkrétní kategorie události:. Názvy kategorií jsou stejné jako názvy předponu.  
-  
-   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
-  
-   Další informace najdete v tématu [vyhledávání a filtrování na kartě události okna diagnostické nástroje](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
-  
+Použití **filtr** rozevírací seznam můžete filtrovat události a zobrazení výběrem nebo zrušením výběru konkrétní kategorie události. 
+
+![Filtr diagnostických událostí](../profiling/media/diagnosticeventfilter.png "filtr diagnostických událostí")  
+
+Pomocí vyhledávacího pole najít konkrétní řetězec v seznamu událostí. Tady jsou výsledky hledání pro řetězec "name", který odpovídá čtyři události:  
+
+![Vyhledávání diagnostických událostí](../profiling/media/diagnosticseventsearch.png "prohledávání diagnostických událostí")  
+
+Další informace najdete v tématu [vyhledávání a filtrování na kartě události okna diagnostické nástroje](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
+
 ## <a name="collect-profiling-data-without-debugging"></a>Shromažďování dat profilace bez ladění  
- Některé nástroje pro profilaci vyžadují oprávnění správce pro spuštění. Visual Studio můžete spustit jako správce, nebo můžete spustit nástroje jako správce, když spustíte diagnostické relace.  
+
+Pokud chcete shromažďovat data o výkonu bez ladění, můžete spustit **Profiler výkonu** nástroje. Některé z nástrojů pro profilaci vyžadují oprávnění správce pro spuštění. Visual Studio můžete spustit jako správce nebo nástroje můžete spustit jako správce, když spustíte diagnostické relace.  
+   
+1. Projekt otevřít v sadě Visual Studio, vyberte **ladění** > **Profiler výkonu**, nebo stiskněte klávesu **Alt**+**F2**.  
+   
+1. Na stránce diagnostiky spouštění vyberte jeden nebo víc nástrojů ke spuštění. Zobrazí se pouze nástroje, které platí pro typ projektu, operační systém a programovací jazyk. Vyberte **zobrazit všechny nástroje** také zobrazit nástroje, které jsou pro tuto relaci diagnostiky zakázáno. Zde je, jak může vypadat vaše volby pro aplikace pro UPW v jazyce C#:  
+   
+   ![Vyberte diagnostické nástroje](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+   
+1. Chcete-li spustit diagnostické relace, vyberte **Start**.  
+   
+   Je spuštěna relace některé nástroje grafy dat v reálném čase zobrazit na stránce diagnostické nástroje.  
+   
+    ![Shromažďování dat o výkonu a diagnostiky](../profiling/media/pdhub_collectdata.png "centra shromažďování dat")  
+   
+1. Chcete-li ukončit relaci diagnostiky, vyberte **zastavit shromažďování**.  
+   
+   Analyzovaná data zobrazí na **sestavy** stránky.  
   
-1. Otevřete projekt v sadě Visual Studio.  
+Můžete uložit sestavy a otevřete je z **naposledy otevřené relace** seznamu na stránce spustit diagnostické nástroje.  
+
+![Otevřete soubor uloženou diagnostiku relace](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
-2. Na **ladění** nabídce zvolte **Profiler výkonu** (Klávesová zkratka: **Alt**+**F2**).  
-  
-3. Na stránce diagnostiky spuštění zvolte jeden nebo víc nástrojů ke spuštění v relaci. Zobrazí se pouze nástroje, které platí pro typ projektu, operační systém a programovací jazyk. Pokud si zvolíte diagnostický nástroj, jsou zakázané výběry pro nástroje, které nemůže běžet ve stejné relaci diagnostiky. Zde je, jak může vypadat vaše volby pro aplikace pro UPW v jazyce C#:  
-  
-    ![Vyberte diagnostické nástroje](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
-  
-4. Chcete-li spustit diagnostické relace, klikněte na tlačítko **Start**.  
-  
-5. Spuštění scénářů, pro které chcete shromažďovat data.  
-  
-    Při spuštění relace, některé nástroje grafy dat v reálném čase zobrazit na stránce spustit diagnostické nástroje.  
-  
-    ![Shromažďovat data o výkonu a Diagnostika Úvo](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
-  
-6. Chcete-li ukončit relaci diagnostiky, klikněte na tlačítko **zastavit shromažďování**.  
-  
-   Když zastavíte shromažďování dat v relaci diagnostiky, data se analyzují a sestavy se zobrazí na stránce diagnostiky.  
-  
-   Můžete také otevřít relaci .diagnostic uložené soubory ze seznamu posledních otevřených na diagnostických nástrojů úvodní stránka.  
-  
-   ![Otevřete soubor uloženou diagnostiku relace](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
-  
-## <a name="the-profiling-report"></a>Sestava profilace  
+### <a name="the-profiling-report"></a>Sestava profilace  
  ![Diagnostické nástroje sestavy](../profiling/media/diag_report.png "DIAG_Report")  
   
 |||  
 |-|-|  
 |![1. krok](../profiling/media/procguid_1.png "ProcGuid_1")|Časová osa ukazuje délku relace profilace, aktivační události životního cyklu aplikace a uživatelské značky.|  
 |![2. krok](../profiling/media/procguid_2.png "ProcGuid_2")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
-|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Nástroj zobrazí jeden nebo více hlavní grafy. Pokud diagnostické relace je vytvořena pomocí různých nástrojů, jsou zobrazeny všechny hlavní grafy.|  
-|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Můžete rozbalovat a sbalovat jednotlivé grafy.|  
-|![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Pokud data obsahují informace z různých nástrojů, podrobnosti o nástroj je shromažďovat v rámci karty.|  
-|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení se filtruje podle vybrané oblasti na časové ose.|  
+|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Každý nástroj pro diagnostiku zobrazuje jeden nebo více hlavní grafy. Pokud diagnostické relace má více než jeden nástroj, jsou zobrazeny všechny jejich hlavní grafy.|  
+|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Můžete rozbalovat a sbalovat jednotlivých nástrojích jednotlivé grafy.|  
+|![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Pokud data obsahují více než jeden nástroj, jsou podrobnosti k nástroji shromažďovat v rámci karty.|  
+|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Dolní polovinu sestavy zobrazuje podrobná zobrazení pro jednotlivé nástroje. Zobrazení můžete filtrovat výběrem oblastí na časové ose.|  
   
-## <a name="set-the-analysis-target-to-another-device"></a>Nastavte cíl analýzy na jiném zařízení  
- Kromě spuštění vaší aplikace z projektu sady Visual Studio, můžete také spustit diagnostické relace na alternativní cíle. Můžete například chtít diagnostikovat problémy s výkonem na verzi aplikace, která byla nainstalovaná z App Store Windows.  
+## <a name="run-diagnostic-sessions-on-installed-or-running-apps"></a>Spouštět aplikace nainstalována nebo spuštěna relace diagnostiky 
+
+ Kromě spuštění vaší aplikace z projektu sady Visual Studio, můžete také spustit diagnostické relace na alternativní cíle. Můžete například chtít diagnostikovat problémy s výkonem v aplikaci, která byla nainstalovaná z App Store Windows.  
   
  ![Zvolte cíl analýzy diagnostické nástroje](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
- Můžete spustit aplikace, které jsou na zařízení nainstalovaná, nebo diagnostické nástroje můžete připojit k některé aplikace, které jsou již spuštěny. Pokud zvolíte **spuštění aplikace** nebo **nainstalovaná aplikace**, vyberte aplikaci ze seznamu, který zjistí aplikace na cíli zadané nasazení.  
+ Můžete spustit aplikace, které jsou již nainstalovány nebo připojit diagnostické nástroje pro aplikace a procesy, které jsou již spuštěny. Když vyberete **spuštěná aplikace** nebo **nainstalovaná aplikace**, vyberte aplikaci ze seznamu, který najde v zadaném nasazení cílové aplikace. Tento cíl může být místní nebo vzdáleném počítači. 
   
  ![Zvolte spuštěné nebo nainstalovanou aplikaci pro účely diagnostiky](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")  
   
- Pokud zvolíte **aplikace Internet Explorer**, zadejte adresu URL a můžete změnit cíl nasazení telefon.  
-  
- ![Zadejte adresu url pro zobrazení v aplikaci Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
-  
-## <a name="remote-debugging"></a>Vzdálené ladění  
- Spouštění diagnostické relace na vzdálené počítače nebo tabletu vyžaduje, aby Visual Studio Remote Tools na vzdálené cílové nainstalovaná a spuštěná. Aplikace klasické pracovní plochy, naleznete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  Pro aplikace pro UPW, naleznete v tématu [aplikací pro UWP spuštění na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
-  
-## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogy a články MSDN od vývojového týmu diagnostiky  
+## <a name="see-also"></a>Viz také:
+
+Následují blogy a články MSDN od vývojového týmu diagnostiky:  
  [Zpravodaj MSDN Magazine: Analýza výkonu při ladění v sadě Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
  [Zpravodaj MSDN Magazine: Dokážete rychleji diagnostikovat problémy pomocí IntelliTrace](https://msdn.microsoft.com/magazine/dn973014.aspx)

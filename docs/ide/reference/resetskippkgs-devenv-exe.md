@@ -1,5 +1,5 @@
 ---
-title: -Resetskippkgs – (devenv.exe)
+title: -ResetSkipPkgs (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbf7a601213c3c02cc35f2d9453eee6b1d39c43e
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5f797b6228124da8d8a998a6647dcfd9195ea92c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704496"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948066"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
-Vymaže všechny možnosti tak, aby přeskočil načítání přidaných do VSPackages uživatelé chtějí předejít přetížení problém VSPackages a potom spustí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Vymaže všechny možnosti, chcete-li přeskočit načítání přidané do balíků VSPackages uživatelé chtějí předejít problém rozšíření VSPackages a pak spustí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -31,10 +31,10 @@ Devenv /ResetSkipPkgs
 ```
 
 ## <a name="remarks"></a>Poznámky
- Přítomnost značku SkipLoading zakáže načítání VSPackage; vymazání značky znovu povolí načítání VSPackage.
+ Přítomnost značky SkipLoading zakáže načítání VSPackage; vymazává se značka znovu povolí načítání sady VSPackage.
 
 ## <a name="example"></a>Příklad
- Následující příklad vymaže všechny SkipLoading značky.
+ Následující příklad odebere všechny značky SkipLoading.
 
 ```cmd
 Devenv.exe /ResetSkipPkgs
@@ -42,4 +42,4 @@ Devenv.exe /ResetSkipPkgs
 
 ## <a name="see-also"></a>Viz také
 
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

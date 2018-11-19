@@ -1,5 +1,5 @@
 ---
-title: Instalační program přepínač devenv.exe
+title: přepínač instalací devenv.exe
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,16 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f3d78ebb63434df38735bdf24e9d4fcba8f172c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eca577c0e4646821262c953cf48256937eed386c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942940"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948371"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
-/ Setup přepínače příčiny sloučení prostředků metadata, která popisuje nabídek, panely nástrojů a příkaz skupin, ze všech dostupných VSPackages sady Visual Studio.
+Přepnout / Setup způsobí, že Visual Studio ke sloučení resource metadata, která popisuje nabídky, panely nástrojů a příkaz skupin, ze všech dostupných rozšíření VSPackages.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,19 +30,19 @@ devenv /setup
 
 ## <a name="remarks"></a>Poznámky
 
-Tento přepínač nezadávaly žádné argumenty. `devenv /setup` Příkaz je obvykle zadána jako poslední krok procesu instalace. Použití `/setup` přepínač nespustí Visual Studio.
+Tento přepínač nepřijímá žádné argumenty. `devenv /setup` Příkaz je obvykle poskytnuta jako poslední krok z procesu instalace. Použití `/setup` přepínače sady Visual Studio nespustí.
 
 > [!NOTE]
-> Je nutné spustit `devenv` jako správce, aby bylo možné používat `/setup` přepínače.
+> Je nutné spustit `devenv` jako správce, aby bylo možné používat `/setup` přepnout.
 
 ## <a name="example"></a>Příklad
 
-Tento příklad ukazuje poslední krok v instalaci verze sady Visual Studio, která zahrnuje VSPackages.
+Tento příklad ukazuje poslední krok při instalaci verze sady Visual Studio, která zahrnuje balíčky VSPackages.
 
 ```shell
 devenv /setup
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

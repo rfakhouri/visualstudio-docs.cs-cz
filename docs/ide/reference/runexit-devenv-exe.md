@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2ce262b219b46d543389ac6a8ae8d71466419f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dff2f028c94013df4f69e9aca244f98c307d2782
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944437"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948228"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
-Zkompiluje a běží na zadaný projekt nebo řešení a poté uzavře integrované vývojové prostředí (IDE).
+Zkompiluje a spustí zadaný projekt nebo řešení a potom jej zavře integrovaného vývojového prostředí (IDE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,21 +33,21 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="arguments"></a>Arguments
  `SolutionName`
 
- Požadováno. Úplná cesta a název souboru, řešení.
+ Požadováno. Úplná cesta a název souboru řešení.
 
  `ProjectName`
 
  Požadováno. Úplná cesta a název souboru projektu.
 
 ## <a name="remarks"></a>Poznámky
- Zkompiluje a spustí na zadaný projekt nebo řešení podle nastavení zadaných pro konfiguraci aktivním řešení. Tento přepínač minimalizuje IDE při projekt nebo řešení běží a toto okno zavře IDE po projekt nebo řešení dokončení běhu.
+ Zkompiluje a spustí zadaný projekt nebo řešení podle nastavení nakonfigurovaného pro konfiguraci aktivního řešení. Tento přepínač minimalizuje rozhraní IDE při projekt nebo řešení je spustit a ho ukončí rozhraní IDE po projekt nebo řešení po dokončení jeho běhu.
 
--   Uzavřete řetězců, které obsahují mezery v uvozovkách.
+-   Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.
 
--   Souhrnné informace, včetně chyb, můžete zobrazit v **příkaz** okno, nebo v jakékoli souboru protokolu zadaný `/out` přepínače.
+-   Souhrnné informace, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.
 
 ## <a name="example"></a>Příklad
- Tento příklad spustí řešení `MySolution` v minimalizovaném okně IDE pomocí konfigurace aktivní nasazení a poté uzavře rozhraní IDE.
+ Tento příklad spustí řešení `MySolution` v minimalizovaném okně integrovaného vývojového prostředí pomocí konfigurace aktivního nasazení a poté ukončí rozhraní IDE.
 
 ```
 devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
@@ -55,8 +55,8 @@ devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\P
 
 ## <a name="see-also"></a>Viz také
 
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
-- [Nebo spusťte (devenv.exe)](../../ide/reference/run-devenv-exe.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
+- [Nebo spuštění (devenv.exe)](../../ide/reference/run-devenv-exe.md)
 - [/ Sestavení (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/ Sestavení (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

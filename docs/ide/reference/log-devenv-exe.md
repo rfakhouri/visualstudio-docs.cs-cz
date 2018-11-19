@@ -1,5 +1,5 @@
 ---
-title: -Protokolu (devenv.exe)
+title: -Log (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3373f1e1a23ae0373a9c49a39a924398ebe143e0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fb33eedf322009cfd5602c481bce36beb4126a9b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704769"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948390"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
-Zaznamená veškerou aktivitu do souboru protokolu pro řešení potíží. Tento soubor se zobrazí po jste jste volali metodu `devenv /log` alespoň jednou. Ve výchozím nastavení je soubor protokolu:
+Zaznamená veškerou aktivitu do souboru protokolu pro řešení potíží. Tento soubor se zobrazí poté, co jste volat `devenv /log` alespoň jednou. Ve výchozím nastavení je soubor protokolu:
 
- *Data aplikací %* \Microsoft\VisualStudio\\*verze*\ActivityLog.xml
+ *% APPDATA %* \Microsoft\VisualStudio\\*verze*\ActivityLog.xml
 
- kde *verze* je verzi sady Visual Studio. Ale můžete určit jiný název a cesta k souboru.
+ kde *verze* je verze sady Visual Studio. Můžete ale zadat jiný název a cesta k souboru.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,8 +37,8 @@ Devenv /log Path\NameOfLogFile
 ## <a name="remarks"></a>Poznámky
  Tento přepínač musí být uvedeny na konci příkazového řádku po všech ostatních přepínačích.
 
- Protokol je zapsán pro všechny instance sady Visual Studio, který jste volat pomocí přepínače/log. Ho nebude protokolu instancí sady Visual Studio, která jste volána bez přepínač.
+ Protokol je zapsán pro všechny instance sady Visual Studio, které jste voláno s přepínačem/log. To není protokolu instance sady Visual Studio, který jste vyvolán bez přepínače.
 
 ## <a name="see-also"></a>Viz také
 
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

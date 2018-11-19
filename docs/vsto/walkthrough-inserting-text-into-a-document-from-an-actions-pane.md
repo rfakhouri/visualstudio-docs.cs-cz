@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671856"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948722"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Návod: Vložení textu do dokumentu z podokna akcí
   Tento návod ukazuje, jak vytvořit podokna akcí v dokumentu aplikace Microsoft Office Word. V podokně Akce obsahuje dva ovládací prvky, shromažďovat vstup a odešlete textu do dokumentu.  
@@ -145,7 +145,7 @@ ms.locfileid: "50671856"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  V jazyce C# je nutné přidat obslužnou rutinu události pro kliknutí na tlačítko. Tento kód v můžete umístit `InsertTextControl` konstruktor po volání `IntializeComponent`. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  V jazyce C# je nutné přidat obslužnou rutinu události pro kliknutí na tlačítko. Tento kód v můžete umístit `InsertTextControl` konstruktor po volání `InitializeComponent`. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   

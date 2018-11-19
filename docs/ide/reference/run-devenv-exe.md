@@ -1,5 +1,5 @@
 ---
-title: -Spustit (devenv.exe)
+title: -Run (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,15 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e10b12729ed8f547c2658c0f4ce6ece84a12dbe
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2efa616bab79f4d41ddf53a08c5a3628f47e3524
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704626"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948410"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
-Zkompiluje a spustí na zadaný projekt nebo řešení.
+Zkompiluje a spustí zadaný projekt nebo řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,21 +36,21 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="arguments"></a>Arguments
  `SolutionName`
 
- Požadováno. Úplná cesta a název souboru, řešení.
+ Požadováno. Úplná cesta a název souboru řešení.
 
  `ProjectName`
 
  Požadováno. Úplná cesta a název souboru projektu.
 
 ## <a name="remarks"></a>Poznámky
- Zkompiluje a spustí na zadaný projekt nebo řešení podle nastavení zadaných pro konfiguraci aktivním řešení. Tento přepínač spustí integrované vývojové prostředí (IDE) a zůstane aktivní po projekt nebo řešení dokončení běhu.
+ Zkompiluje a spustí zadaný projekt nebo řešení podle nastavení nakonfigurovaného pro konfiguraci aktivního řešení. Tento přepínač spuštění integrovaného vývojového prostředí (IDE) a zůstane aktivní po projekt nebo řešení po dokončení jeho běhu.
 
--   Uzavřete řetězců, které obsahují mezery v uvozovkách.
+-   Uzavření řetězců, které obsahují mezery v dvojitých uvozovkách.
 
--   Souhrnné informace, včetně chyb, můžete zobrazit v **příkaz** okno, nebo v jakékoli souboru protokolu zadaný `/out` přepínače.
+-   Souhrnné informace, včetně chyb, lze zobrazit v **příkaz** okna, nebo do jakéhokoli souboru protokolu zadaný `/out` přepnout.
 
 ## <a name="example"></a>Příklad
- Tento příklad spustí řešení `MySolution` pomocí konfigurace aktivní nasazení.
+ Tento příklad spustí řešení `MySolution` pomocí konfigurace aktivního nasazení.
 
 ```cmd
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
@@ -58,8 +58,8 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
 
 ## <a name="see-also"></a>Viz také
 
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/ Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)
 - [/ Sestavení (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/ Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/ Sestavení (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

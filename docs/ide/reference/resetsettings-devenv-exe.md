@@ -1,6 +1,6 @@
 ---
-title: -Resetsettings – (devenv.exe)
-ms.date: 11/04/2016
+title: -ResetSettings (devenv.exe)
+ms.date: 11/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3d3a6ef558b510cfde716716daf97a549fbba4
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703984"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948060"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-Obnoví výchozí nastavení sady Visual Studio a Visual Studio IDE automaticky spustí. Volitelně můžete do určeného obnoví nastavení *vssettings* souboru.
+Obnoví výchozí nastavení sady Visual Studio a automaticky spustí rozhraní IDE sady Visual Studio. Volitelně obnoví nastavení zadaného *vssettings* souboru.
 
-Výchozí nastavení určuje profil, který byl vybrán při byla první spuštění sady Visual Studio.
+Výchozí nastavení jsou určena podle profilu, který byl vybrán při prvním spuštění sady Visual Studio.
+
+> [!TIP]
+> Zjistěte, jak resetovat nastavení pomocí integrovaného vývojového prostředí (IDE), najdete v článku [Resetovat nastavení](../synchronized-settings-in-visual-studio.md#reset-settings).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,23 +40,24 @@ Devenv /ResetSettings SettingsFile
 
 `SettingsFile`
 
-Úplná cesta a název *vssettings* souboru chcete použít pro Visual Studio.
+Úplná cesta a název *vssettings* souboru do sady Visual Studio.
 
-Chcete-li obnovit profil obecná nastavení pro vývoj, použijte `General`.
+K obnovení profilu Obecné vývojové nastavení použijte `General`.
 
 ## <a name="remarks"></a>Poznámky
 
-Pokud žádné `SettingsFile` je zadán, zobrazí se výzva k výběru kolekce výchozí nastavení při dalším spuštění sady Visual Studio.
+Pokud ne `SettingsFile` není zadána, budete vyzváni k výběru výchozí kolekce nastavení při příštím spuštění aplikace Visual Studio.
 
 ## <a name="example"></a>Příklad
 
-Následující příkazový řádek aplikuje nastavení uložené v souboru `MySettings.vssettings`.
+Následující příkazový řádek použije nastavení uložená v souboru `MySettings.vssettings`.
 
 ```cmd
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Přizpůsobení sady Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
-- [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)
+- [Resetovat nastavení](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [Přizpůsobení prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
+- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
