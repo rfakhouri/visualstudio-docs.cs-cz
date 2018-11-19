@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561995"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826658"
 ---
 # <a name="what-is-debugging"></a>Co je ladění?
 
@@ -49,7 +49,7 @@ Ladicí program je to důležitý nástroj, můžete najít a opravit chyby ve s
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít ladění pomocí sady Visual Studio a tom, jak psát kód s méně chyb.
+V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít ladění pomocí sady Visual Studio a tom, jak psát kód s méně chyb. Tento článek ukazuje C# příklady kódu, ale konceptů platí pro všechny jazyky podporované v aplikaci Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md)

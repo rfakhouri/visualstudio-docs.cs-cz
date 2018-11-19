@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561670"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826775"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Zjistěte, jak ladit pomocí sady Visual Studio
 
@@ -297,7 +297,7 @@ V tomto kurzu se naučíte:
 
     Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážka určuje, kde má Visual Studio spuštěný kód pozastavit, abyste mohli zkontrolovat hodnoty proměnných či chování paměti, nebo abyste zjistili, jestli se nějaká větev kódu spouští. 
 
-6. Stisknutím klávesy **F5** nebo **spustit ladění** tlačítko, aplikace se spustí, a ladicí program běží na řádek kódu, kde nastavit zarážku.
+2. Stisknutím klávesy **F5** nebo **spustit ladění** tlačítko, aplikace se spustí, a ladicí program běží na řádek kódu, kde nastavit zarážku.
 
     ![Nastavte a použijte zarážku](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
 ## <a name="navigate-code-using-run-to-click"></a>Vyhledání kódu pomocí běžet do kliknutí
 
-5. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` – metoda (`std::cout` v jazyce C++) v `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png " RunToClick") se zobrazí na levé straně.
+1. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` – metoda (`std::cout` v jazyce C++) v `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png " RunToClick") se zobrazí na levé straně.
 
      ![Použít Run to Click funkce](../debugger/media/get-started-run-to-click.png "běžet do kliknutí")
 
    > [!NOTE]
    > **Běžet do kliknutí** je novinkou systémů tlačítko [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Pokud nevidíte tlačítko zelenou šipku, použijte **F11** v tomto příkladu místo toho k přechodu na správném místě ladicí program.
 
-6. Klikněte na tlačítko **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Klikněte na tlačítko **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Pomocí tohoto tlačítka je podobné nastavení dočasné zarážky. **Běžet do kliknutí** je užitečné pro rychlé navigace v rámci viditelné oblasti kódu aplikace (můžete kliknout na jakékoli otevření souboru).
 
@@ -447,4 +447,4 @@ Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečněj
 V tomto kurzu jste zjistili, jak spustit ladicí program, krokovat kód a můžete kontrolovat proměnné. Můžete chtít získat podrobný přehled funkcí ladicího programu spolu s odkazy na další informace.
 
 > [!div class="nextstepaction"]
-> [Tipy a triky pro ladicí program](../debugger/debugger-tips-and-tricks.md)
+> [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

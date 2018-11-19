@@ -43,15 +43,15 @@ helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b066ed3171ebd59d5c921fc795b1478bb9d2df32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925393"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765958"
 ---
 # <a name="using-breakpoints"></a>Použití zarážek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,8 +171,8 @@ Můžete nastavit zarážky, pokud chcete zastavit spuštění ladicího program
   
    Podmínka může být libovolný platný výraz, který je rozpoznán v ladicím programu. Další informace o zobrazení platných výrazů naleznete v tématu [výrazy v ladicím programu](../debugger/expressions-in-the-debugger.md).  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Pomocí ID objektů v podmínky zarážky (C# a F #)  
- Existují situace, kdy budete chtít sledovat chování konkrétního objektu. můžete třeba chtít zjistit, proč byl objekt vložen více než jednou do kolekce. V jazyce C# a F #, můžete vytvořit objekt ID pro určité instance [referenční typy](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) a jejich použití v podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  Pokud chcete vytvořit ID objektu, postupujte takto:  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Pomocí ID objektů v podmínky zarážky (C# a F#)  
+ Existují situace, kdy budete chtít sledovat chování konkrétního objektu. můžete třeba chtít zjistit, proč byl objekt vložen více než jednou do kolekce. V C# a F#, můžete vytvořit objekt ID pro určité instance [referenční typy](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) a jejich použití v podmínky zarážky. ID objektu je generována modulem common language runtime (CLR) ladění služeb a přidružená k objektu.  Pokud chcete vytvořit ID objektu, postupujte takto:  
   
 1. Nastavte zarážku v kódu nějakou dobu, po vytvoření objektu.  
   

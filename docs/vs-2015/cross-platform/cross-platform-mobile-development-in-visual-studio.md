@@ -13,12 +13,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fae40230a75816653e8d06ab9ec7ed4f894d3fa0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63f057d635682e9552f392e73a5c2ad67f96d66f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194100"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765376"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Vytvářejte aplikace pro zařízení s Androidem, iOS a Windows pomocí sady Vi
 |[Další informace o sadě Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|  
   
 ###  <a name="AndroidHTML"></a> Cíl Android, iOS a Windows z jediného základu kódu  
- Můžete vytvářet nativní aplikace pro Android, iOS a Windows pomocí C# nebo F # (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte Visual Studio 2015, vyberte **vlastní** možnosti v instalačním programu a zaškrtněte políčko v oblasti **mobilních řešení pro různé platformy > C# / .NET (Xamarin)**. Můžete také začít s [instalační program Xamarin](https://www.xamarin.com/download), které jsou potřebné k instalaci Xamarin pro Visual Studio 2013.  
+ Můžete vytvářet nativní aplikace pro Android, iOS a Windows s použitím C# nebo F# (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte Visual Studio 2015, vyberte **vlastní** možnosti v instalačním programu a zaškrtněte políčko v oblasti **mobilních řešení pro různé platformy > C# / .NET (Xamarin)**. Můžete také začít s [instalační program Xamarin](https://www.xamarin.com/download), které jsou potřebné k instalaci Xamarin pro Visual Studio 2013.  
   
  Pokud už máte nainstalovanou sadu Visual Studio 2015, spusťte instalační program z **ovládací panely > programy a funkce** a vyberte stejné **vlastní** možnost pro Xamarin, jak je uvedeno výše.  
   

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79657c6ce53bf1111eec37c1548ea3d4c61d3394
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766280"
 ---
 # <a name="debugger-settings-and-preparation"></a>Nastavení ladicího programu a příprava
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Tato část popisuje nastavení vlastnosti související s ladicího programu a 
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Nastavení projektu ladicího programu](../debugger/debugger-project-settings.md)  
- Vysvětluje, jak k určení nastavení ladicího programu, jak nastavit debug a release konfigurace a postupy při správě symbolů a zdrojového kódu. Popisuje také odpovídající nastavení projektu pro C++, C#, F # a konfiguraci ladění jazyka Visual Basic, jakož i webové projekty.  
+ Vysvětluje, jak k určení nastavení ladicího programu, jak nastavit debug a release konfigurace a postupy při správě symbolů a zdrojového kódu. Také popisuje odpovídající nastavení projektu jazyka C++, C#, F#a konfiguraci ladění jazyka Visual Basic, jakož i webové projekty.  
   
  [Ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md)  
  Popisuje nastavení doporučené projektu pro ladění projektů knihovny DLL, jak ladit z projektu knihovny DLL, jak ladit ve smíšeném režimu a ladění knihovny ovládacích prvků webové spravovaného kódu.  

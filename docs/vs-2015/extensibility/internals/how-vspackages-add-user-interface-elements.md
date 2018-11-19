@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872444"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753376"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak balíčky VSPackages přidávají prvky uživatelského rozhraní
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -189,7 +189,7 @@ priority="0x0100" type="Menu">
 </Combos>  
 ```  
   
-##### <a name="bitmaps"></a>Rastrové obrázky  
+##### <a name="bitmaps"></a>Bitmapy  
  Musí obsahovat příkazy, které se zobrazí spolu s ikonou `Icon` element, který odkazuje na rastrový obrázek pomocí jeho identifikátoru GUID a ID. Každý rastrového obrázku je definován jako [rastrový obrázek Element](../../extensibility/bitmap-element.md) v `Bitmaps` oddílu. Pouze požadované atributy `Bitmap` definice jsou `guid` a `href`, která odkazuje na zdrojový soubor. Pokud zdrojový soubor pruh prostředků **usedList** atribut je také potřeba, seznam dostupných imagí v pruhu. Další informace najdete v tématu [rastrový obrázek Element](../../extensibility/bitmap-element.md) dokumentaci.  
   
 ### <a name="parenting"></a>Správa nadřazených  
