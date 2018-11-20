@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000120"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001214"
 ---
 # <a id="top"> </a> Visual Studio Image v Azure
 
@@ -34,14 +34,13 @@ Image pro aktuální hlavní verze, Visual Studio 2017 a Visual Studio 2015, naj
 
 | Prodejní verze                                              | Edice                     |     Verze produktu     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Sady Visual Studio 2017: Nejnovější verzi (verze 15.8)                    |    Organizace, Community     |      Verze 15.8.7     |
-| Visual Studio 2017: Nejnovější verze Preview (verzi 15.9 ve verzi Preview 5) |    Organizace, Community     |      Verzi 15.9       |
+| Sady Visual Studio 2017: Nejnovější verzi (verzi 15.9)                    |    Organizace, Community     |      Verze 15.9.0     |
 |         Visual Studio 2017: RTW                              |    Organizace, Community     |      Verze 15.0.18    |
 |   Sady Visual Studio 2015: Nejnovější verzi (aktualizace 3)                      |    Organizace, Community     |  Verze 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Žádné             | (Platnost pro obsluhu) |
 
 > [!NOTE]
-> V souladu s Microsoft zásady obsluhy původně vydaná verze (RTW) sady Visual Studio 2015 vypršela pro obsluhu. Visual Studio 2015 Update 3 je jediný zbývající verze nabízí pro produktovou řadu Visual Studio 2015.
+> V souladu s Microsoft zásady obsluhy původně vydaná verze (RTW) sady Visual Studio 2015 vypršela pro obsluhu. Visual Studio 2015 Update 3 je jediný zbývající verze nabízí pro produktovou řadu Visual Studio 2015.  Kromě toho od verze Visual Studio 2017 verze 15.9 vydání, jste ukončili jsme nejnovější preview imagí, které zahrnuty verze Preview verzi 15.9.
 
 Další informace najdete v tématu [zásad údržby aplikace Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
 

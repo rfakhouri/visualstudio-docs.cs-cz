@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: a5b1175caf0ac7f6654fbe20b5300327679eccbc
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294289"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001175"
 ---
 # <a name="build-actions"></a>Akce sestavení
 
@@ -28,3 +28,7 @@ Některé nejběžnější akce sestavení pro projekty jazyka C# jsou:
 Je možné vybrat více než jeden soubor v Průzkumníku řešení, což vám umožní nastavit akci sestavení do více souborů najednou.
 
 K dispozici je také akce sestavení pro konkrétní projekty. Projekty Xamarin.iOS mají **BundleResource** akce, která se přidá soubor do sady prostředků aplikace v rámci sestavení. Informace o akcích Xamarin.Android konkrétní sestavení najdete v [proces sestavení](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions) průvodce.
+
+## <a name="see-also"></a>Viz také:
+
+- [Vytvoření akce (Visual Studio na Windows)](/visualstudio/ide/build-actions)

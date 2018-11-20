@@ -1,7 +1,7 @@
 ---
 title: Kurz – další Django v sadě Visual Studio, krok 6
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně funkce šablony Polls – webový projekt Django, například vlastní nastavení pro správu.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143473"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001253"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Krok 6: Použijte šablony Polls – webový projekt Django
 
