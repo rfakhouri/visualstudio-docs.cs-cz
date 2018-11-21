@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180175"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257196"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Ladění v době návrhu v sadě Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Ladění v době návrhu v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
 V některých případech můžete chtít ladit kód v návrhu čas místo, když je spuštěná aplikace. Můžete provést pomocí **okamžité** okna. Pokud chcete ladit kód XAML, který pracuje jiný kód, jako je například data vazební kód, můžete použít **ladění** > **připojit k procesu** to udělat.
   
@@ -32,7 +32,7 @@ V některých případech můžete chtít ladit kód v návrhu čas místo, kdy�
 
 Můžete použít Visual Studio **okamžité** okno ke spuštění funkce nebo podprogramu, zatímco aplikace není spuštěna. Pokud funkce nebo podprogram obsahuje zarážku, sada Visual Studio přeruší běh v odpovídajícím bodě. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Tato funkce je volána ladění v době návrhu.  
 
-V následujícím příkladu je v jazyce Visual Basic, ale **okamžité** okna je podporováno také v aplikacích jazyka C# a C++.
+V následujícím příkladu je v jazyce Visual Basic. Použití **okamžité** okno v době návrhu je podporováno také v C#, C++, a F# aplikací.
   
 1.  Vložte následující kód do konzolové aplikace jazyka Visual Basic:  
   

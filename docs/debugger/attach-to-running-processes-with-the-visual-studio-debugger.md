@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843259"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257339"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ladicího programu sady Visual Studio ke spuštěným procesům
 Ladicí program sady Visual Studio můžete připojit ke spuštěnému procesu na místním nebo vzdáleném počítači. Poté, co je proces spuštěn, vybrat **ladění** > **připojit k procesu** nebo stiskněte klávesu **Ctrl**+**Alt** + **P** ve Visual Studiu a použít **připojit k procesu** dialogové okno připojit ladicí program k procesu.
@@ -153,7 +153,7 @@ Pro některé typy aplikací, jako jsou aplikace pro univerzální aplikace pro 
 
 Ladicí program připojil kód napsaný v jazyce C++, musí kód generovat `DebuggableAttribute`. Můžete přidat to do kódu automaticky díky propojení s [/assemblydebug](/cpp/build/reference/assemblydebug-add-debuggableattribute) – možnost linkeru.
 
-Pro ladění skriptů na straně klienta musí být ladění skriptů povoleno v prohlížeči. Pro ladění skriptů na straně klienta v Chrome, zvolte **komponenty Webkit** psaní kódu a v závislosti na typu aplikace, budete muset spustit prohlížeče v režimu ladění (typ `chrome.exe --remote-debugging-port=9222` z příkazového řádku).
+Pro ladění skriptů na straně klienta musí být ladění skriptů povoleno v prohlížeči. Pro ladění skriptů na straně klienta v Chrome, zvolte **komponenty Webkit** psaní kódu a v závislosti na typu aplikace, je nutné zavřít všechny instance chromu a spuštění prohlížeče v režimu ladění (typ `chrome.exe --remote-debugging-port=9222` z příkazového řádku).
 
 Chcete-li rychle vybrat běžící proces pro připojení, v sadě Visual Studio, zadejte **Ctrl**+**Alt**+**P**a pak zadejte první písmeno Název procesu.
 

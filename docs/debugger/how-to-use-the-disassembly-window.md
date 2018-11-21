@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671141"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257040"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Zobrazit zpětný překlad kódu v ladicím programu sady Visual Studio
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Zobrazit zpětný překlad kódu v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 
 **Zpětný překlad** okno zobrazuje kódu sestavení odpovídajícího pokynů vytvořeným kompilátorem. Pokud ladíte spravovaný kód, tyto pokyny k sestavení odpovídají na nativní kód vytvořený kompilátorem Just-in-Time (JIT), ne Microsoft intermediate language (MSIL) vytvořený kompilátorem Visual Studio.  
   
@@ -41,7 +41,7 @@ Tato funkce dostupná pouze pokud je povoleno ladění na úrovni adres. Není k
 
 Kromě pokyny sestavení **zpětný překlad** okna můžete zobrazit následující volitelné informace:  
   
-- Adresa paměti, kde se nachází každou instrukci. U nativních aplikací je skutečná adresa paměti. V jazyce Visual Basic C#, nebo spravovaný kód, je posun od začátku této funkce.  
+- Adresa paměti, kde se nachází každou instrukci. U nativních aplikací je skutečná adresa paměti. V jazyce Visual Basic nebo C#, je posun od začátku této funkce.  
   
 - Zdrojový kód, ze kterého je odvozen kódu sestavení.  
   

@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295758"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257274"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>Kurz: Ladění spravovaného a nativního kódu ve stejné relaci ladění
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Kurz: Ladění C# a C++ ve stejné relaci ladění
 
 Visual Studio vám umožňuje povolit více než jeden typ ladicího programu v relaci ladění, která se nazývá ladění ve smíšeném režimu. V tomto kurzu zjistíte, jak ladění spravovaného a nativního kódu v jedné relaci ladění. 
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612672"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257365"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -80,7 +80,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
 1. Musíte mít nainstalovanou sadu Visual Studio a buď. **.NET desktop development** úlohy nebo. **.NET Core pro vývoj napříč platformami** nainstalovaná úloha, v závislosti na typu aplikace, které chcete vytvořit.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
     Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **nástroje** > **stažení nástrojů a funkcí**. Spustí se instalační program pro Visual Studio. Vyberte. **.NET desktop development** (nebo. **.NET Core pro vývoj napříč platformami**) úloh, klikněte na tlačítko **změnit**.
 
@@ -325,11 +325,11 @@ Když najdete oblasti kódu s problémem, který pomocí ladicího programu k pr
 * Zkontrolujte, jestli vaše aplikace spouští kód, který očekáváte. (Například v ukázkové aplikaci očekávali jsme kód pro příkaz switch postup nastavení typu galaxy nestandardní, ale aplikace přeskočeno kódu z důvodu překlep.)
 
 > [!TIP]
-> Pomocí ladicího programu můžete najít chyby. Ladicí nástroj pomůže hledat chyby *za vás* pouze v případě, že zná záměru kódu. Nástroj lze pouze vědět záměru kódu, pokud vás jako na vývojáři express tohoto záměru. Zápis [testování částí](../test/improve-code-quality.md) je, jak to udělat.
+> Pomocí ladicího programu můžete najít chyby. Ladicí nástroj pomůže hledat chyby *za vás* pouze v případě, že zná záměru kódu. Nástroj lze pouze vědět záměru kódu, pokud vás jako na vývojáři express tohoto záměru. Zápis [testování částí](../test/improve-code-quality.md) je, jak to udělat. 
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít učit, jak ladit pomocí sady Visual Studio.
+V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít dostávat další informace o ladicím programu.
 
 > [!div class="nextstepaction"]
 > [Další informace k ladění pomocí sady Visual Studio](../debugger/getting-started-with-the-debugger.md)

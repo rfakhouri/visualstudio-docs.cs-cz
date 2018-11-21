@@ -21,20 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926186"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257248"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Výrazy v ladicím programu sady Visual Studio
 Ladicího programu sady Visual Studio obsahuje hodnotitele výrazu, které pracují při zadání výrazu v **QuickWatch** dialogovém okně **Watch** okna, nebo **okamžité** okna. Vyhodnocení výrazu jsou také v práci **zarážky** okno a mnoha dalších místech v ladicím programu.
   
- Následující části obsahují podrobné informace o výrazy v různých jazycích.  
+ V následujících částech se popisuje omezení vyhodnocení výrazu pro jazyky podporované v aplikaci Visual Studio.
   
-## <a name="f-expressions-are-not-supported"></a>Výrazy jazyka F # se nepodporují.  
- Výrazy jazyka F # se nerozpoznaly. Pokud ladíte kód F #, budete muset před vstupem do ladicího programu okně nebo dialogovém okně pole výrazy přeložit výrazech do syntaxe jazyka C#. Pokud je překlad výrazů z jazyka F # do jazyka C#, nezapomeňte mějte na paměti, že jazyk C# používá `==` operátor testovat rovnost, zatímco F # používá jedné `=`.  
+## <a name="f-expressions-are-not-supported"></a>F#výrazy nejsou podporovány.  
+ F#výrazy nejsou rozpoznány. Pokud ladíte F# kódu, musíte převést vaše výrazů do C# syntaxe před vstupem do ladicího programu okně nebo dialogovém okně pole výrazy. Při překlad výrazů od F# k C#, nezapomeňte mějte na paměti, C# používá `==` operátor testovat rovnost, zatímco F# používá jedné `=`.  
   
 ## <a name="c-expressions"></a>Výrazy jazyka C++  
  Informace o použití kontextu operátory s výrazy v jazyce C++, naleznete v tématu [kontextu – operátor (C++)](../debugger/context-operator-cpp.md).  

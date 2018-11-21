@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612724"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257352"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Další tipy pro vyšší produktivitu a triky pro ladicí program v sadě Visual Studio
 
@@ -145,7 +145,7 @@ Vyberte operaci v souhrnné zobrazení zobrazte další podrobnosti.
 
 Další informace najdete v tématu [využití sítě](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Seznamte se s jak ladicí program připojí k vaší aplikaci
+## <a name="modules_window"></a> Seznamte se s jak ladicí program připojí k vaší aplikaci (C#, C++, Visual Basic, F#)
 
 Připojit k vaší běžící aplikaci, ladicí program načte soubory symbolů (PDB) vygenerovat pro přesně stejný build aplikaci, kterou se pokoušíte ladit. V některých případech může být užitečné trochu znalost soubory symbolů. Můžete prozkoumat, jak Visual Studio načte soubory symbolů pomocí **moduly** okna.
 

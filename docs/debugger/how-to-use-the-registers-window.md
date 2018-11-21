@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551844"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257166"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Zobrazit hodnoty registrace a použití okna registry v ladicím programu sady Visual Studio
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Zobrazit hodnoty registrace a použití okna registry v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrovni adres v **možnosti** dialogovém okně **ladění** uzlu **Obecné** kategorie.  
   
  **Zaregistruje** okně se zobrazí obsah registru. Pokud uchováváte **zaregistruje** okna průběhu prostřednictvím programu open, můžete zobrazit registr hodnoty změnit, jak se spustí váš kód. Hodnoty, které se změnily nedávno se zobrazí červeně. Můžete upravit hodnot registru. Další informace najdete v tématu [postupy: Úprava hodnoty zaregistrovat](../debugger/how-to-edit-a-register-value.md).  

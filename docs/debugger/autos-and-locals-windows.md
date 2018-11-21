@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826704"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257209"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty
 
 **Automatické hodnoty** a **lokální** windows zobrazovat hodnoty proměnných během ladění. Systému windows jsou k dispozici pouze během relace ladění. **Automatické hodnoty** okno zobrazuje proměnné používané kolem aktuálního zarážku. **Lokální** okno zobrazuje proměnné definované v místním rozsahem, což je obvykle aktuální funkci nebo metodu. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md) a [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
+
+ **Automatické hodnoty** není k dispozici pro interval C#, kód jazyka Visual Basic, C++ a Python, ale ne pro JavaScript nebo F#.
   
 Chcete-li otevřít **automatické hodnoty** okně během ladění, **ladění** > **Windows** > **automatické hodnoty**, nebo stisknutím klávesy **Ctrl**+**Alt**+**V** > **A**.  
 
@@ -71,9 +73,7 @@ Nastavte zarážku a spusťte ladění. Při dosažení zarážky, pozastaví pr
 
 ![Panel nástrojů umístění ladění](../debugger/media/debuglocationtoolbar.png "panelu nástrojů umístění ladění")
 
-## <a name="bkmk_whatvariables"></a> Proměnné v okně Automatické hodnoty
-
- **Automatické hodnoty** není k dispozici pro interval C#, Visual Basic a C++ kódu, ale ne pro jazyk JavaScript nebo F#.
+## <a name="bkmk_whatvariables"></a> Proměnné v okně Automatické hodnoty (C#, C++, Visual Basic, Python)
 
  Zobrazit jiné proměnné v jazycích různý kód **automatické hodnoty** okna.
 

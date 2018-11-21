@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348888"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257235"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Zobrazení zásobníku volání a použití okna zásobník volání v ladicím programu
 
@@ -103,7 +103,7 @@ V sadě Visual Studio Enterprise (pouze) můžete zobrazit map kódu pro zásobn
 
 ![Zobrazit zásobník volání na mapě kódu](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Zobrazení zpětného překladu funkce v zásobníku volání  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Zobrazení zpětného překladu funkce v zásobníku volání (C#, C++, Visual Basic, F#) 
   
 -   V **zásobník volání** okna, klikněte pravým tlačítkem na funkci, jejíž zpětně přeložený kód chcete zobrazit a vybrat **přejít na zpětný překlad**.    
 
@@ -111,7 +111,8 @@ V sadě Visual Studio Enterprise (pouze) můžete zobrazit map kódu pro zásobn
   
 -   Klikněte pravým tlačítkem **zásobník volání** okna a nastavení nebo vymazat **zobrazit \<**  _informace, které mají_ **>**.  
   
-## <a name="bkmk_symbols"></a> Načtení symbolů pro modul
+## <a name="bkmk_symbols"></a> Načtení symbolů pro modul (C#, C++, Visual Basic, F#)
+
 V **zásobník volání** okno, které můžete načíst symboly ladění pro kód, který nemá aktuálně načtené symboly. Tyto symboly mohou být v rozhraní .NET Framework nebo systémové symboly stažené ze serverů Microsoft veřejnými symboly nebo symboly v symbolické cestě v počítači, který ladíte.  
   
 Zobrazit [zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

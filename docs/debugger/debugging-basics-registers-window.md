@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f43e8708573a2fdd11a1c667a69bc1767ecda3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278826"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257053"
 ---
-# <a name="about-the-registers-window-in-visual-studio"></a>Informace o okně registr v sadě Visual Studio
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informace o okně registr v sadě Visual Studio (C#, C++, Visual Basic, F#)
+
 **Zaregistruje** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti** dialogovém okně **ladění** uzlu.  
   
  Registry jsou speciální umístění v rámci procesoru (CPU), které se používají k ukládání dat, která procesor aktivně pracuje na malé části. Kompilace a interpretace zdrojový kód generuje pokyny, které přesouvají data z paměti do registrů a zpět, podle potřeby. Přístup k datům v registrech, je velmi rychlé zpracování ve srovnání s přístup k datům v paměti, takže kód, který umožňuje procesor zachovat data v registru a opakovaně k němu přístup se obvykle provádějí rychleji než kód, který vyžaduje procesor, který se neustále načtení a uvolnění registrů. Aby bylo snazší pro kompilátor zachovat data v registrech a provádět další optimalizace, by měl neměli používat globální proměnné a závisí na místních proměnných co nejvíc. Kód napsaný tímto způsobem se říká, že máte dobré místo odkazu. V některých jazycích, jako je C/C++ programátor můžete deklarovat proměnnou registru, který instruuje kompilátor, aby zkuste nejlépe, mějte na proměnné registru za všech okolností. Další informace najdete v tématu [zaregistrovat – klíčové slovo](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
