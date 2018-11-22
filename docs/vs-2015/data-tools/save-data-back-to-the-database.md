@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829637"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281846"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Datová sada je kopie v paměti data. Pokud upravíte, tato data, je vhodné tyt
 ## <a name="two-stage-updates"></a>Dvoufázová aktualizace  
  Aktualizace zdroje dat je dvoustupňový proces. Prvním krokem je aktualizace datové sady pomocí nové záznamy, změněné záznamy nebo odstraněné záznamy. Pokud vaše aplikace posílá nikdy tyto změny zpět do zdroje dat, pak budete mít k aktualizaci.  
   
- Pokud odešlete změny zpět do databáze, druhý krok je požadován. Pokud nepoužíváte ovládacích prvků vázaných na data, budete muset ručně volat metodu aktualizace stejný TableAdapter (nebo datový adaptér), který jste použili při naplnění datové sady. Pro přesun dat z jednoho zdroje dat do jiné nebo aktualizaci více zdrojů dat ale můžete použít také jiný adaptéry, například. Pokud se nepoužívají vytváření datových vazeb a ukládají změny pro tabulky v relaci, budete muset ručně vytvořit instanci proměnné automaticky generované třídy TableAdapterManager a poté zavolejte metodu jeho UdpateAll.  
+ Pokud odešlete změny zpět do databáze, druhý krok je požadován. Pokud nepoužíváte ovládacích prvků vázaných na data, budete muset ručně volat metodu aktualizace stejný TableAdapter (nebo datový adaptér), který jste použili při naplnění datové sady. Pro přesun dat z jednoho zdroje dat do jiné nebo aktualizaci více zdrojů dat ale můžete použít také jiný adaptéry, například. Pokud se nepoužívají vytváření datových vazeb a ukládají změny pro tabulky v relaci, budete muset ručně vytvořit instanci proměnné třídy TableAdapterManager automaticky generované a poté zavolejte metodu jeho UpdateAll.  
   
  ![Aktualizace datové sady Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace  
