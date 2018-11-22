@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967113"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281820"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generování kódu v procesu sestavení
 
@@ -136,7 +136,7 @@ Systém správy zdrojového kódu není nijak integrován. Můžete však přida
 
 Pokud chcete určit, že se soubory určené jen pro čtení mají přepisovat, vložte tuto vlastnost:
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 Dokud tento krok následného zpracování neupravíte, při přepsání souboru se do seznamu chyb zaprotokoluje upozornění.
 

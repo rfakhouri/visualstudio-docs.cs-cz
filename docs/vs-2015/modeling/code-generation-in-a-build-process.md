@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907921"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281807"
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,7 +137,7 @@ Systém správy zdrojového kódu není nijak integrován. Můžete však přida
 
 Pokud chcete určit, že se soubory určené jen pro čtení mají přepisovat, vložte tuto vlastnost:
 
-`<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 Dokud tento krok následného zpracování neupravíte, při přepsání souboru se do seznamu chyb zaprotokoluje upozornění.
 

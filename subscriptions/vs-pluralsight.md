@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 73f23b57b51b7ceb0a2d059e9d559036a721995c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826695"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281781"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -85,7 +85,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 
 <sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.*
 
-<sup>2</sup> * výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit. 
+<sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.*
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
