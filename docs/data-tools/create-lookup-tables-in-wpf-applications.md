@@ -18,14 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924197"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305478"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
+
 Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje ovládací prvek, který se zobrazí informace z jedné datové tabulky na základě hodnoty pole cizího klíče v druhé tabulce. Můžete vytvořit vyhledávací tabulku přetažením hlavního uzlu nadřazené tabulky nebo v objektu **zdroje dat** okna do ovládacího prvku, který je již vázán na sloupec nebo vlastnosti v související podřízené tabulce.
 
 Předpokládejme například tabulku `Orders` v prodejní databázi. Každý záznam v `Orders` obsahuje tabulku `CustomerID` , která označuje, který zákazník objednávku vystavil. `CustomerID` Je cizí klíč odkazující na záznam zákazníka v `Customers` tabulky. Při zobrazení seznamu objednávek z `Orders` tabulky, můžete zobrazovaný název skutečných zákazníků místo `CustomerID`. Protože název zákazníka se `Customers` tabulky, je potřeba vytvořit vyhledávací tabulky pro zobrazované jméno zákazníka. Používá tabulky vyhledávání `CustomerID` hodnotu `Orders` záznam se má přejít relace a vrátí jméno zákazníka.
@@ -41,7 +42,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
     -   Objekty. Další informace najdete v tématu [svázat objekty v sadě Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
-    >  Než vytvoříte vyhledávací tabulky, musí existovat dvě souvisejících tabulky nebo objekty jako zdroj dat pro projekt.
+    > Než vytvoříte vyhledávací tabulky, musí existovat dvě souvisejících tabulky nebo objekty jako zdroj dat pro projekt.
 
 2.  Otevřít **Návrhář WPF**a ujistěte se, že návrhář obsahuje kontejner, který je platný cíl pro položky v **zdroje dat** okna.
 
@@ -52,7 +53,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
 4.  Rozbalte uzly v **zdroje dat** okna, dokud se nezobrazí nadřazená tabulka nebo objekt a související podřízené tabulky nebo objektu.
 
     > [!NOTE]
-    >  Související podřízené tabulky nebo objektu je uzel, který se zobrazí jako jeden podřízený uzel v rámci nadřazené tabulky nebo objektu.
+    > Související podřízené tabulky nebo objektu je uzel, který se zobrazí jako jeden podřízený uzel v rámci nadřazené tabulky nebo objektu.
 
 5.  Klikněte na rozevírací nabídku pro podřízený uzel a vyberte **podrobnosti**.
 
@@ -67,12 +68,12 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
     -   **ListView**
 
         > [!NOTE]
-        >  Pokud **ListBox** nebo **ListView** ovládací prvek se nezobrazí v seznamu těchto ovládacích prvků můžete přidat do seznamu. Informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+        > Pokud **ListBox** nebo **ListView** ovládací prvek se nezobrazí v seznamu těchto ovládacích prvků můžete přidat do seznamu. Informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     -   Vlastní ovládací prvek, který je odvozen od <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
-        >  Pro informace o tom, jak přidat vlastní ovládací prvky pro seznam ovládacích prvků můžete určit pro položky v **zdroje dat** okna, naleznete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+        > Pro informace o tom, jak přidat vlastní ovládací prvky pro seznam ovládacích prvků můžete určit pro položky v **zdroje dat** okna, naleznete v tématu [přidání vlastních ovládacích prvků do okna zdroje dat](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 8.  Přetáhněte podřízený uzel z **zdroje dat** okna do kontejneru v Návrháře WPF. (V předchozím příkladu je podřízený uzel **objednávky** uzlu.)
 

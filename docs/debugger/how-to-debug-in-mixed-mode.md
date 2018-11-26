@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1cd8d727bc42e5c812b1df6fb966412ffa53ed06
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295472"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305556"
 ---
-# <a name="how-to-debug-in-mixed-mode"></a>Postupy: ladění ve smíšeném režimu
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Postupy: ladění ve smíšeném režimu (C#, C++, Visual Basic)
+
 Následující postupy popisují, jak povolit ladění spravovaného a nativního kódu společně, označované také jako pracující v kombinovaném režimu ladění. Existují dva scénáře ladění ve smíšeném režimu:  
   
 - Aplikace, který volá knihovnu DLL je napsaná v nativním kódu a spravované knihovny DLL. 

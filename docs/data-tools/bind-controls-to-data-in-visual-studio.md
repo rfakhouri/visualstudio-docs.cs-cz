@@ -1,5 +1,5 @@
 ---
-title: Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
+title: Vytvoření vazby ovládacích prvků k datům
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,21 +15,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4e27f5ce9536e7128330ebe932709a9be408b7e
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923014"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305260"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio
+
 Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládacím prvkům. Můžete vytvořit tyto ovládací prvky vázané na data přetažením položek z **zdroje dat** okno na návrhovou plochu nebo ovládacích prvků na plochu v sadě Visual Studio.
 
- Toto téma popisuje zdroje dat, které můžete použít k vytvoření ovládacích prvků vázaných na data. Také popisuje některé obecné úkoly při vytváření datových vazeb. Další konkrétní podrobnosti o tom, jak vytvořit ovládací prvky vázané na data, najdete v části [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) a [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+Toto téma popisuje zdroje dat, které můžete použít k vytvoření ovládacích prvků vázaných na data. Také popisuje některé obecné úkoly při vytváření datových vazeb. Další konkrétní podrobnosti o tom, jak vytvořit ovládací prvky vázané na data, najdete v části [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) a [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 ## <a name="data-sources"></a>Zdroje dat
- V kontextu vytváření datových vazeb zdroj dat představuje data v paměti, která může být vázaný na uživatelské rozhraní. V praxi může být zdrojem dat třídu Entity Framework, datové sady, koncový bod služby, která jsou zapouzdřena v objektu proxy .NET, LINQ na třídy SQL, nebo libovolný objekt .NET nebo kolekce. Některé zdroje dat umožňují vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okno, zatímco jiné zdroje dat. to nejde. Následující tabulka uvádí, jaké zdroje dat nejsou podporovány.
 
+V kontextu vytváření datových vazeb zdroj dat představuje data v paměti, která může být vázaný na uživatelské rozhraní. V praxi může být zdrojem dat třídu Entity Framework, datové sady, koncový bod služby, která jsou zapouzdřena v objektu proxy .NET, LINQ na třídy SQL, nebo libovolný objekt .NET nebo kolekce. Některé zdroje dat umožňují vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okno, zatímco jiné zdroje dat. to nejde. Následující tabulka uvádí, jaké zdroje dat nejsou podporovány.
 
 | Zdroj dat | Podpora přetažení myší v **Návrhář formulářů Windows** | Podpora přetažení myší v **Návrhář WPF** | Podpora přetažení myší v **Silverlight Designer** |
 | - | - | - | - |
@@ -40,19 +41,21 @@ Uživatelům vaší aplikace můžete zobrazit data pomocí vazby dat k ovládac
 | Objekt | Ano | Ano | Ano |
 | SharePoint | Ano | Ano | Ano |
 
- 1. Generovat pomocí modelu **modelu Entity Data Model** průvodce, potom tyto objekty přetáhnout do návrháře.
+1. Generovat pomocí modelu **modelu Entity Data Model** průvodce, potom tyto objekty přetáhnout do návrháře.
 
- 2. LINQ na třídy SQL se nezobrazí v **zdroje dat** okna. Můžete však přidat nový zdroj dat objektu, který je založen na LINQ třídy SQL a potom tyto objekty přetáhnout do návrháře k vytvoření ovládacích prvků vázaných na data. Další informace najdete v tématu [návod: vytvoření třídy LINQ to SQL (O R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. LINQ na třídy SQL se nezobrazí v **zdroje dat** okna. Můžete však přidat nový zdroj dat objektu, který je založen na LINQ třídy SQL a potom tyto objekty přetáhnout do návrháře k vytvoření ovládacích prvků vázaných na data. Další informace najdete v tématu [návod: vytvoření třídy LINQ to SQL (O R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>okno Zdroje dat
- Zdroje dat jsou k dispozici pro váš projekt jako položky **zdroje dat** okna. Toto okno je viditelný, nebo k ní z **zobrazení** nabídky, když návrhovou plochu formuláře je aktivní okno ve vašem projektu. Můžete přetáhnout položky z tohoto okna, chcete-li vytvořit ovládací prvky vázané na podkladová data a můžete taky nakonfigurovat zdroje dat kliknutím pravým tlačítkem myši.
 
- ![okno Zdroje dat](../data-tools/media/raddata-data-sources-window.png)
+Zdroje dat jsou k dispozici pro váš projekt jako položky **zdroje dat** okna. Toto okno se zobrazí po návrhové ploše formuláře je aktivní okno v projektu nebo ji (v otevřeném projektu) můžete otevřít výběrem **zobrazení** > **ostatní Windows**  >   **Zdroje dat**. Můžete přetáhnout položky z tohoto okna, chcete-li vytvořit ovládací prvky vázané na podkladová data a můžete taky nakonfigurovat zdroje dat kliknutím pravým tlačítkem myši.
 
- Pro každý datový typ, který se zobrazí **zdroje dat** okně výchozí ovládací prvek je vytvořen při přetažení položky do návrháře. Před přetažením položky z **zdroje dat** okna, můžete změnit ovládací prvek, který je vytvořen. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+![okno Zdroje dat](../data-tools/media/raddata-data-sources-window.png)
+
+Pro každý datový typ, který se zobrazí **zdroje dat** okně výchozí ovládací prvek je vytvořen při přetažení položky do návrháře. Před přetažením položky z **zdroje dat** okna, můžete změnit ovládací prvek, který je vytvořen. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Úkoly při vytvoření vazby ovládacích prvků na data
- Následující tabulka uvádí některé z nejčastějších úloh, je provést k vytvoření vazby ovládacích prvků k datům.
+
+Následující tabulka uvádí některé z nejčastějších úloh, je provést k vytvoření vazby ovládacích prvků k datům.
 
 |Úloha|Další informace|
 |----------| - |

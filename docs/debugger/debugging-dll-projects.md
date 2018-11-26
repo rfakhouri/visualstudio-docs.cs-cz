@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607624"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305309"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>Ladění knihovny DLL v sadě Visual Studio
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Ladění knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
 Knihovny DLL (dynamic link library) je knihovna, která obsahuje kód a data, která mohou využívat více než jednu aplikaci. Můžete použít Visual Studio k vytvoření, sestavení, konfiguraci a ladění knihoven DLL. 
 
@@ -35,7 +35,7 @@ Knihovny DLL (dynamic link library) je knihovna, která obsahuje kód a data, kt
 
 Následující šablony projektů Visual Studio můžete vytvořit knihovny DLL:
 
-- C#nebo knihovny tříd jazyka Visual Basic 
+- C#, Visual Basic nebo F# knihovna tříd 
 - C#a Visual Basic Windows Forms Knihovna ovládacích prvků (WCF) 
 - C++ dynamická knihovna (DLL)
 
@@ -113,7 +113,6 @@ Aplikace, který volá knihovnu DLL může být:
 - Nachází se na webu a přístup prostřednictvím adresy URL.  
 - Webová aplikace s webovou stránku, která knihovnu DLL.  
   
-
 Chcete-li ladit knihovnu DLL z volající aplikace, můžete:  
   
 - Projekt pro volající aplikaci otevřít a spustit ladění tak, že vyberete **ladění** > **spustit ladění** nebo stiskněte **F5**.  
@@ -131,7 +130,7 @@ Během ladění, můžete použít **moduly** okno ověření knihovny DLL a *.e
 Můžete použít **okamžité** okna k vyhodnocení funkcí knihovny DLL nebo metody v době návrhu. **Okamžité** okno hraje roli aplikace pro volajícího. 
 
 >[!NOTE]
->Můžete použít **okamžité** okno v době návrhu s většinu typů projektu. Se aktuálně nepodporuje pro .NET Core, SQL a webové projekty.
+>Můžete použít **okamžité** okno v době návrhu s většinu typů projektu. Není podporována pro skript, SQL a webové projekty.
 
 Například chcete-li otestovat metodu s názvem `Test` ve třídě `Class1`:
 

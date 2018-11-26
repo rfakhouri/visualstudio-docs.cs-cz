@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: d73c38086ded0f9aa2a5eb05edcc569feb35c5bf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750809"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305621"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 
@@ -109,7 +109,7 @@ Dále vytvořte datovou sadu s názvem **NorthwindDataSet**:
 
 V této části vytvoříte <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> přetažením **zákazníkům** položky **zdroje dat** okna do formuláře Windows.
 
-1. Na **Data** nabídce zvolte **zobrazit zdroje dat** otevřít **okna zdroje dat**.
+1. Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, zvolte **zobrazit zdroje dat**.
 
 2. V **zdroje dat** okna, rozbalte **NorthwindDataSet** uzlu a pak vyberte **zákazníkům** tabulky.
 

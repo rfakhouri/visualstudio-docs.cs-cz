@@ -23,18 +23,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56b85f96815fca34330f57f6b653c497f21a835b
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750796"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305712"
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 
 *Hierarchická aktualizace* odkazuje na proces ukládání aktualizovaná data (z datové sady s dvěma nebo více souvisejícími tabulkami) do databáze při zachování pravidla referenční integrity. *Referenční integritu* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integritu, který vynutí vytvoření záznam zákazníka předtím, než pro zákazníka objednávky, který se má vytvořit.  Další informace o relacích v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md).
 
-Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta je Visual Studio vygeneruje třídy, takže není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Při přetažení tabulky z okna zdrojů dat na formuláři Windows nebo na stránce WPF, Visual Studio přidá proměnnou typu TableAdapterManager do formuláře nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [objekty TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+Hierarchická aktualizace funkce používá `TableAdapterManager` ke správě `TableAdapter`ve typové datové sady. `TableAdapterManager` Komponenta je Visual Studio vygeneruje třídy, takže není součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Při přetažení tabulky z **zdroje dat** okno na stránku formuláře Windows nebo WPF, Visual Studio přidá proměnnou typu TableAdapterManager formulář nebo stránky a vidět ji v Návrháři v panelu komponent. Podrobné informace o `TableAdapterManager` třídy, najdete v části odkaz TableAdapterManager [objekty TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
 Ve výchozím nastavení datová sada považuje za související tabulky "pouze, vztahy" to znamená, že nebude vynutit omezení cizího klíče. Toto nastavení v době návrhu lze upravit pomocí **Návrhář Dataset**. Vyberte řádek vztah mezi dvěma tabulkami, abyste vyvolali **vztah** dialogové okno. Zde provedené změny se určit, jak `TableAdapterManager` chová při odeslání změn v souvisejících tabulkách zpět do databáze.
 
@@ -65,7 +65,7 @@ Nastavení pořadí provádění aktualizací sady pořadí jednotlivých vlož�
 > [!NOTE]
 > Je důležité pochopit, že je vše zahrnuto pořadí aktualizace. To znamená když se aktualizace prováděly, vložení a pak odstranění jsou prováděny pro všechny tabulky v datové sadě.
 
-Chcete-li nastavit `UpdateOrder` vlastnost Po přetažení položky z [okna zdroje dat](add-new-data-sources.md) do formuláře, vyberte `TableAdapterManager` v podokně komponent a pak nastavte `UpdateOrder` vlastnost v **vlastnosti** okna.
+Chcete-li nastavit `UpdateOrder` vlastnost Po přetažení položky z [okna zdroje dat](add-new-data-sources.md#data-sources-window) do formuláře, vyberte `TableAdapterManager` v podokně komponent a pak nastavte `UpdateOrder` vlastnost v **vlastnosti** okna.
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Vytvořit záložní kopii datové sady, než se pustíte do hierarchické aktualizace
 

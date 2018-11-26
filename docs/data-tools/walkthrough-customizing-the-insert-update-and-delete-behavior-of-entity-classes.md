@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174971"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305530"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení insert, update a chování při odstraňování tříd entit
 
@@ -108,7 +108,7 @@ Vytvoření LINQ na třídy SQL, které jsou mapovány na databázových tabulek
 
 3.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení UpdatingwithSProcsWalkthrough** k sestavení projektu.
 
-4.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+4.  Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
 5.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
 

@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b38ac26a07965dc5408c1da1c655a010b6a788
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e4533d2bffffa7456f5e6ecc2d6c9291f80d5159
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266185"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305153"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Postupy: ladění z projektu knihovny DLL v sadě Visual Studio
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Postupy: ladění z projektu knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
 Jedním ze způsobů k ladění projektu knihovny DLL je volající aplikace zadejte ve vlastnostech projektu knihovny DLL. Potom spustíte ladění z projektu knihovny DLL, samotného. Pro tuto metodu za účelem fungovat musí volat stejné knihovny DLL ve stejném umístění jako ta, kterou nakonfigurujete. Pokud aplikace vyhledá a načte jinou verzi knihovny DLL, tuto verzi nesmí obsahovat vaše zarážky. Další způsoby ladění knihoven DLL najdete v tématu [projektů knihovny DLL ladění](../debugger/debugging-dll-projects.md).
   

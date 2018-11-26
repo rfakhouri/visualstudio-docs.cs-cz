@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750758"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305543"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 
@@ -81,7 +81,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat
 
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+1.  Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
 2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.
 

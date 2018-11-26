@@ -1,6 +1,8 @@
 ---
-title: Nástroje datové sady v sadě Visual Studio
-ms.date: 11/04/2016
+title: Nástroje datové sady
+ms.date: 11/21/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -45,16 +47,14 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582457"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304984"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Nástroje datové sady v sadě Visual Studio
 
@@ -63,7 +63,7 @@ ms.locfileid: "39582457"
 
 A `DataSet` objekt je objekt v paměti, která je v podstatě zkrácené databáze. Obsahuje `DataTable`, `DataColumn`, a `DataRow` objekty, ve kterých můžete ukládat a upravit data z jedné nebo víc databází, aniž byste museli udržovat otevřené připojení. Datovou sadu uchovává informace o změny dat, takže aktualizace můžete sledovat a odesílá zpět do databáze, když vaše aplikace bude znovu připojeny.
 
-Datové sady a související třídy jsou definovány v *System.Data* oboru názvů v knihovně tříd rozhraní .NET Framework. Můžete vytvářet a upravovat datové sady dynamicky v kódu pomocí technologie ADO.NET. Dokumentace v této části ukazuje, jak pracovat s datovými sadami pomocí návrháře sady Visual Studio. Datové sady, které jsou vytvořeny pomocí návrhářů **TableAdapter** objekty k interakci s databází. Použití datových sad, které jsou vytvořené prostřednictvím kódu programu **DataAdapter** objekty. Informace o vytváření datových sad prostřednictvím kódu programu najdete v tématu [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Datové sady a související třídy jsou definovány v <xref:System.Data?displayProperty=fullName> oboru názvů v knihovně tříd rozhraní .NET Framework. Můžete vytvářet a upravovat datové sady dynamicky v kódu pomocí technologie ADO.NET. Dokumentace v této části ukazuje, jak pracovat s datovými sadami pomocí návrháře sady Visual Studio. Datové sady, které jsou vytvořeny pomocí návrhářů **TableAdapter** objekty k interakci s databází. Použití datových sad, které jsou vytvořené prostřednictvím kódu programu **DataAdapter** objekty. Informace o vytváření datových sad prostřednictvím kódu programu najdete v tématu [adaptéry a čtečky dat](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Pokud vaše aplikace je potřeba jenom číst data z databáze a nebude provádět aktualizace, přidá nebo odstraní, obvykle můžete získat lepší výkon pomocí `DataReader` objektu k načtení dat do obecného `List` nebo jiný objekt kolekce. Pokud je zobrazení dat, je můžete vytvořte datovou vazbu uživatelského rozhraní do kolekce.
 
@@ -71,13 +71,13 @@ Pokud vaše aplikace je potřeba jenom číst data z databáze a nebude provád�
 
 Visual Studio poskytuje nástroje ke zjednodušení práce s datovými sadami. Je základní pracovní postup začátku do konce:
 
-- Použití **zdroj dat** okno pro vytvoření nové datové sady z jednoho nebo více zdrojů dat. Použití **Návrhář Dataset** konfigurace datové sady a nastavte jeho vlastnosti. Například musíte zadat tabulky ze zdroje dat chcete zahrnout a které sloupce z každé tabulky. Pečlivě kvůli úspoře množství paměti, které se vyžaduje datové sady. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Použití [okna zdroje dat](add-new-data-sources.md#data-sources-window) k vytvoření nové datové sady z jednoho nebo více zdrojů dat. Použití **Návrhář Dataset** konfigurace datové sady a nastavte jeho vlastnosti. Například musíte zadat tabulky ze zdroje dat chcete zahrnout a které sloupce z každé tabulky. Pečlivě kvůli úspoře množství paměti, které se vyžaduje datové sady. Další informace najdete v tématu [vytvoření a konfigurace datové sady](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
 - Zadejte relace mezi tabulkami, tak, že jsou správně zpracovány cizí klíče. Další informace najdete v tématu [vyplnění datové sady s použitím objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
 
 - Použití **Průvodce nastavením TableAdapter** k určení dotazu nebo uložené procedury, které naplňuje datovou sadu a jaké operace databáze (update, delete a podobně) k implementaci. Další informace najdete v těchto tématech:
 
-    - [Vyplnění datové sady s použitím objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
     - [Úprava dat v datových sadách](../data-tools/edit-data-in-datasets.md)
 

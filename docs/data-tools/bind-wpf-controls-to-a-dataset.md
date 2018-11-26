@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43b262344965091cf7599a9e1b2c43d6bcdb94f2
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917516"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305725"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 
@@ -74,31 +74,31 @@ Vytvořte nový projekt WPF pro zobrazení záznamů produktu.
 
 Předtím, než budete moct vytvořit ovládací prvky vázané na data, musíte definovat datový model pro vaši aplikaci a přidejte ji tak **zdroje dat** okna. V tomto návodu vytvoříte datovou sadu pro použití jako datového modelu.
 
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+1. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
-     **Zdroje dat** otevře se okno.
+   **Zdroje dat** otevře se okno.
 
-2.  V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
+2. V **zdroje dat** okna, klikněte na tlačítko **přidat nový zdroj dat**.
 
-     **Konfigurace zdroje dat** otevře se průvodce.
+   **Konfigurace zdroje dat** otevře se průvodce.
 
-3.  Na **zvolte typ zdroje dat** stránce **databáze**a potom klikněte na tlačítko **Další**.
+3. Na **zvolte typ zdroje dat** stránce **databáze**a potom klikněte na tlačítko **Další**.
 
-4.  Na **vyberte databázový Model** stránce **datovou sadu**a potom klikněte na tlačítko **Další**.
+4. Na **vyberte databázový Model** stránce **datovou sadu**a potom klikněte na tlačítko **Další**.
 
-5.  Na **vyberte datové připojení** stránky, vyberte jednu z následujících možností:
+5. Na **vyberte datové připojení** stránky, vyberte jednu z následujících možností:
 
-    - Pokud připojení dat k ukázkové databáze AdventureWorksLT je k dispozici v rozevíracím seznamu, vyberte ji a pak klikněte na tlačítko **Další**.
+   - Pokud připojení dat k ukázkové databáze AdventureWorksLT je k dispozici v rozevíracím seznamu, vyberte ji a pak klikněte na tlačítko **Další**.
 
-    - Klikněte na tlačítko **nové připojení**a vytvořte připojení k databázi AdventureWorksLT.
+   - Klikněte na tlačítko **nové připojení**a vytvořte připojení k databázi AdventureWorksLT.
 
-6.  Na **uložit připojovací řetězec do souboru konfigurace aplikace** stránky, vyberte **Ano, uložit připojení jako** zaškrtněte políčko a potom klikněte na tlačítko **Další**.
+6. Na **uložit připojovací řetězec do souboru konfigurace aplikace** stránky, vyberte **Ano, uložit připojení jako** zaškrtněte políčko a potom klikněte na tlačítko **Další**.
 
-7.  Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky**a pak vyberte **produkt (SalesLT)** tabulky.
+7. Na **zvolte vaše databázové objekty** stránce, rozbalte **tabulky**a pak vyberte **produkt (SalesLT)** tabulky.
 
-8.  Klikněte na tlačítko **Dokončit**.
+8. Klikněte na tlačítko **Dokončit**.
 
-     Visual Studio přidá nový `AdventureWorksLTDataSet.xsd` soubor do projektu a přidá odpovídající **AdventureWorksLTDataSet** položkou **zdroje dat** okna. `AdventureWorksLTDataSet.xsd` Soubor definuje typové datové sady s názvem `AdventureWorksLTDataSet` a s názvem objektu typu TableAdapter `ProductTableAdapter`. Dále v tomto názorném postupu použijete `ProductTableAdapter` naplnění dataset s daty a uložte změny zpět do databáze.
+   Visual Studio přidá nový `AdventureWorksLTDataSet.xsd` soubor do projektu a přidá odpovídající **AdventureWorksLTDataSet** položkou **zdroje dat** okna. `AdventureWorksLTDataSet.xsd` Soubor definuje typové datové sady s názvem `AdventureWorksLTDataSet` a s názvem objektu typu TableAdapter `ProductTableAdapter`. Dále v tomto názorném postupu použijete `ProductTableAdapter` naplnění dataset s daty a uložte změny zpět do databáze.
 
 9. Sestavte projekt.
 
@@ -106,21 +106,21 @@ Předtím, než budete moct vytvořit ovládací prvky vázané na data, musíte
 
 Chcete-li datovou sadu naplnit data, použijte `Fill` metodu `ProductTableAdapter`. Ve výchozím nastavení `Fill` metoda výplně `ProductDataTable` v `AdventureWorksLTDataSet` se všechny řádky dat z tabulky Product. Můžete upravit tuto metodu za účelem vrátí pouze podmnožinu řádků. V tomto návodu, změnit `Fill` metoda vrátí pouze řádky pro produkty, které mají fotografie.
 
-1.  V **Průzkumníka řešení**, dvakrát klikněte *AdventureWorksLTDataSet.xsd* souboru.
+1. V **Průzkumníka řešení**, dvakrát klikněte *AdventureWorksLTDataSet.xsd* souboru.
 
      Otevře se Návrhář datových sad.
 
-2.  V návrháři, klikněte pravým tlačítkem myši **vyplnit**, **GetData()** dotazu a vyberte **konfigurovat**.
+2. V návrháři, klikněte pravým tlačítkem myši **vyplnit**, **GetData()** dotazu a vyberte **konfigurovat**.
 
      **Konfigurace TableAdapter** otevře se průvodce.
 
-3.  V **zadejte příkaz SQL** stránce, přidejte následující klauzule WHERE po `SELECT` příkaz v textovém poli.
+3. V **zadejte příkaz SQL** stránce, přidejte následující klauzule WHERE po `SELECT` příkaz v textovém poli.
 
     ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4.  Klikněte na tlačítko **Dokončit**.
+4. Klikněte na tlačítko **Dokončit**.
 
 ## <a name="define-the-user-interface"></a>Definování uživatelského rozhraní
 
@@ -148,11 +148,11 @@ Přidání několika tlačítek do okna tak, že upravíte XAML ve WPF Designer.
 
 Vytvořte ovládací prvky zobrazující záznamy o zákaznících přetažením `Product` tabulce **zdroje dat** okno do Návrháře WPF.
 
-1.  V **zdroje dat** okna, klikněte na rozevírací nabídku **produktu** uzel a vyberte možnost **podrobnosti**.
+1. V **zdroje dat** okna, klikněte na rozevírací nabídku **produktu** uzel a vyberte možnost **podrobnosti**.
 
-2.  Rozbalte **produktu** uzlu.
+2. Rozbalte **produktu** uzlu.
 
-3.  V tomto příkladu některá pole se nezobrazí, takže klikněte na rozevírací nabídku vedle následujících uzlů a vyberte **žádný**:
+3. V tomto příkladu některá pole se nezobrazí, takže klikněte na rozevírací nabídku vedle následujících uzlů a vyberte **žádný**:
 
     - ProductCategoryID
 
@@ -164,40 +164,40 @@ Vytvořte ovládací prvky zobrazující záznamy o zákaznících přetažením
 
     - ModifiedDate
 
-4.  Klikněte na rozevírací nabídku vedle položky **thumbnailphoto nastavuje** uzel a vyberte možnost **Image**.
+4. Klikněte na rozevírací nabídku vedle položky **thumbnailphoto nastavuje** uzel a vyberte možnost **Image**.
 
     > [!NOTE]
     > Ve výchozím nastavení, položky v **zdroje dat** okno, které představují obrázky mají jejich výchozího ovládacího prvku nastavte na **žádný**. Je to proto, že obrázky jsou uloženy jako pole bajtů v databázích a pole bajtů může obsahovat cokoli od jednoduchých pole bajtů na spustitelný soubor velké aplikace.
 
-5.  Z **zdroje dat** okno, přetáhněte **produktu** uzlů na řádek mřížky pod řádkem, který obsahuje tlačítka.
+5. Z **zdroje dat** okno, přetáhněte **produktu** uzlů na řádek mřížky pod řádkem, který obsahuje tlačítka.
 
      Generuje XAML, který definuje sadu ovládacích prvků, které jsou vázány na data v sadě Visual Studio **produkty** tabulky. Také generuje kód, který načte data. Další informace o vygenerovaný XAML a kódu, naleznete v tématu [ovládací prvky WPF vytvoření vazby k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-6.  V návrháři, klepněte na textové pole vedle položky **ID produktu** popisek.
+6. V návrháři, klepněte na textové pole vedle položky **ID produktu** popisek.
 
-7.  V **vlastnosti** okna, vyberte zaškrtávací políčko vedle položky **IsReadOnly** vlastnost.
+7. V **vlastnosti** okna, vyberte zaškrtávací políčko vedle položky **IsReadOnly** vlastnost.
 
 ## <a name="navigate-product-records"></a>Přejděte záznamy produktů
 
 Přidejte kód, který umožňuje uživatelům procházet záznamy produktu s použitím **\<** a **>** tlačítka.
 
-1.  V Návrháři dvakrát klikněte **<** tlačítko na plochu okna.
+1. V Návrháři dvakrát klikněte **<** tlačítko na plochu okna.
 
      Visual Studio otevře soubor kódu na pozadí a vytvoří novou `backButton_Click` obslužné rutiny události pro <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí.
 
-2.  Upravit `Window_Loaded` obslužná rutina události, takže `ProductViewSource`, `AdventureWorksLTDataSet`, a `AdventureWorksLTDataSetProductTableAdapter` jsou mimo metodu a dostupné pro celý formulář. Deklarovat pouze tyto globální do formuláře a přiřaďte je v rámci `Window_Loaded` obslužná rutina události je podobný následujícímu:
+2. Upravit `Window_Loaded` obslužná rutina události, takže `ProductViewSource`, `AdventureWorksLTDataSet`, a `AdventureWorksLTDataSetProductTableAdapter` jsou mimo metodu a dostupné pro celý formulář. Deklarovat pouze tyto globální do formuláře a přiřaďte je v rámci `Window_Loaded` obslužná rutina události je podobný následujícímu:
 
      [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
      [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
 
-3.  Přidejte následující kód, který `backButton_Click` obslužné rutiny události:
+3. Přidejte následující kód, který `backButton_Click` obslužné rutiny události:
 
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
 
-4.  Vraťte se do návrháře a dvojím kliknutím **>** tlačítko.
+4. Vraťte se do návrháře a dvojím kliknutím **>** tlačítko.
 
-5.  Přidejte následující kód, který `nextButton_Click` obslužné rutiny události:
+5. Přidejte následující kód, který `nextButton_Click` obslužné rutiny události:
 
      [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
      [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
@@ -206,11 +206,11 @@ Přidejte kód, který umožňuje uživatelům procházet záznamy produktu s po
 
 Přidejte kód, který umožňuje uživatelům ukládat změny produktu záznamů pomocí **uložit změny** tlačítko.
 
-1.  V Návrháři dvakrát klikněte **uložit změny** tlačítko.
+1. V Návrháři dvakrát klikněte **uložit změny** tlačítko.
 
      Visual Studio otevře soubor kódu na pozadí a vytvoří novou `saveButton_Click` obslužné rutiny události pro <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí.
 
-2.  Přidejte následující kód, který `saveButton_Click` obslužné rutiny události:
+2. Přidejte následující kód, který `saveButton_Click` obslužné rutiny události:
 
      [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]
      [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]
@@ -222,7 +222,7 @@ Přidejte kód, který umožňuje uživatelům ukládat změny produktu záznam�
 
 Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat záznamy produktů.
 
-1.  Stisknutím klávesy **F5**.
+1. Stisknutím klávesy **F5**.
 
      Aplikace vytvoří a spustí. Ověřte následující:
 
@@ -230,13 +230,13 @@ Sestavte a spusťte aplikaci. Ověřte, že můžete zobrazit a aktualizovat zá
 
     - Můžete kliknout **>** nebo **<** tlačítka Procházet další záznamy produktu.
 
-2.  V jednom produktu záznamy, změnit **velikost** hodnotu a potom klikněte na tlačítko **uložit změny**.
+2. V jednom produktu záznamy, změnit **velikost** hodnotu a potom klikněte na tlačítko **uložit změny**.
 
-3.  Ukončete aplikaci a restartujte aplikaci stisknutím klávesy **F5** v sadě Visual Studio.
+3. Ukončete aplikaci a restartujte aplikaci stisknutím klávesy **F5** v sadě Visual Studio.
 
-4.  Přejděte k záznamu produktu, který jste změnili a ověřte, že změny trvalý.
+4. Přejděte k záznamu produktu, který jste změnili a ověřte, že změny trvalý.
 
-5.  Ukončete aplikaci.
+5. Ukončete aplikaci.
 
 ## <a name="next-steps"></a>Další kroky
 

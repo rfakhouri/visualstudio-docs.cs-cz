@@ -12,20 +12,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <addIn> element
 - addin element
 - <addin> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d2ab0264452630892d492946462fbf9ad1639d0
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262379"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304464"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;doplněk&gt; – element (vývoj pro Office v sadě Visual Studio)
-  **Doplněk** element `vstav3` obor názvů obsahuje informace, které jsou specifické pro doplňky Microsoft Office VSTO a úpravy na úrovni dokumentů vyvinuté pomocí sady Visual Studio.  
+  **Doplněk** elementu `vstav3` obor názvů obsahuje informace, které jsou specifické pro Microsoft Office, VSTO doplňků a přizpůsobení na úrovni dokumentu byly vyvinuty v sadě Visual Studio.  
 
 ## <a name="syntax"></a>Syntaxe  
 
@@ -52,28 +52,28 @@ ms.locfileid: "34262379"
 ```  
 
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- **Doplněk** element `vstav3` obor názvů obsahuje informace o řešení Office a aplikaci Microsoft Office. Tento element musí být v oboru názvů následující: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Podřízené elementy musí být také v tomto oboru názvů.  
+ **Doplněk** elementu `vstav3` obor názvů obsahuje informace o řešení pro Office a aplikace Microsoft Office. Tento element musí být v následujícím oboru názvů: `vstav3=urn:schemas-microsoft-com:vsta.v3`. Podřízené elementy musí být také v tomto oboru názvů.  
 
- `addin` Element nemá žádné atributy.  
+ `addin` Prvek nemá žádné atributy.  
 
  `addin` Element má následující podřízené prvky.  
 
 ### <a name="entrypoints"></a>entryPoints  
- Požadováno. **EntryPoints** element je popsaná v [ &#60;entryPoints&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Požadováno. **EntryPoints** element je popsána v [ &#60;entryPoints&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
 
 ### <a name="update"></a>Aktualizace  
- Požadováno. **Aktualizace** element je popsaná v [ &#60;aktualizace&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
+ Požadováno. **Aktualizovat** element je popsána v [ &#60;aktualizovat&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).  
 
 ### <a name="postactions"></a>postactions –  
- Volitelné. **Postactions –** element je popsaná v [ &#60;postactions –&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
+ Volitelné. **Postactions –** element je popsána v [ &#60;postactions –&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).  
 
 ### <a name="application"></a>aplikace  
- Požadováno. **Aplikace** element je popsaná v [ &#60;aplikace&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
+ Požadováno. **Aplikace** element je popsána v [ &#60;aplikace&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).  
 
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
 
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje **doplněk** element v úrovni dokumentu Office řešení, které je nasazeno pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje, **doplněk** prvek v řešení pro Office úrovni dokumentu, který se nasazuje s použitím [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Kód  
 
@@ -137,7 +137,7 @@ ms.locfileid: "34262379"
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
 
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje **doplněk** element v řešení Office úrovni aplikace, které je nasazeno pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje, **doplněk** prvek v řešení pro Office úrovni aplikace, které je nasazeno pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
 
 ### <a name="code"></a>Kód  
 
@@ -192,7 +192,7 @@ ms.locfileid: "34262379"
 </vstav3:addIn>  
 ```  
 
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  

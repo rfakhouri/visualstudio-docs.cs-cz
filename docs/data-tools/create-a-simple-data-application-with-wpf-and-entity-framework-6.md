@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822069"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305608"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace s použitím WPF a Entity Framework 6
 
@@ -116,7 +116,7 @@ Je možné psát vlastní kód vázání dat, ale je mnohem jednodušší nechte
         </Grid.RowDefinitions>
     ```
 
-5.  Nyní otevřete *souboru MainWindow.xaml* tak, aby se vám zobrazuje v návrháři. To způsobí, že **zdroje dat** okna vedle nezobrazí jako možnost na okraji okna sady Visual Studio **nástrojů**. Klikněte na kartu pro otevření okna nebo jinak stisknutím klávesy **Shift**+**Alt**+**D** nebo zvolte **zobrazení**  >  **Jiných Windows** > **zdroje dat**. Budeme zobrazit každou vlastnost v třídě zákazníci vlastní jednotlivé textové pole. Nejprve, klikněte na šipku v **zákazníkům** – pole se seznamem a vyberte **podrobnosti**. Potom přetáhněte uzel na prostřední část návrhové ploše tak, aby návrháři ví, že chcete, aby přejděte v prostředním. Pokud někam ho nezaložili můžete později ručně v XAML řádku. Ve výchozím nastavení ovládací prvky jsou umístěny ve svislém směru v elementu mřížky, ale v tomto okamžiku je možné uspořádat je však chcete ve formuláři. Například může mít smysl umístit **název** textového pole v horní části výše adresu. Ukázková aplikace pro účely tohoto článku změní pořadí polí a uspořádá do dvou sloupců.
+5.  Nyní otevřete *souboru MainWindow.xaml* tak, aby prohlížíte v návrháři. To způsobí, že **zdroje dat** okna vedle nezobrazí jako možnost na okraji okna sady Visual Studio **nástrojů**. Klikněte na kartu pro otevření okna nebo jinak stisknutím klávesy **Shift**+**Alt**+**D** nebo zvolte **zobrazení**  >  **Jiných Windows** > **zdroje dat**. Budeme zobrazit každou vlastnost v třídě zákazníci vlastní jednotlivé textové pole. Nejprve, klikněte na šipku v **zákazníkům** – pole se seznamem a vyberte **podrobnosti**. Potom přetáhněte uzel na prostřední část návrhové ploše tak, aby návrháři ví, že chcete, aby přejděte v prostředním. Pokud někam ho nezaložili můžete později ručně v XAML řádku. Ve výchozím nastavení ovládací prvky jsou umístěny ve svislém směru v elementu mřížky, ale v tomto okamžiku je možné uspořádat je však chcete ve formuláři. Například může mít smysl umístit **název** textového pole v horní části výše adresu. Ukázková aplikace pro účely tohoto článku změní pořadí polí a uspořádá do dvou sloupců.
 
      ![Vazba zdroje dat zákazníků na jednotlivých ovládacích prvků](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 

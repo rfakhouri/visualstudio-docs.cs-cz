@@ -20,14 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce84c4acdc2cf4324c76dbbf7fe0b39ca9715b3c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2fe24d79fed27892a46b8534e0e39b2f60075c8b
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279092"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304425"
 ---
-# <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Postupy: ladění spustitelného souboru, který není součástí řešení sady Visual Studio
+# <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Postupy: ladění spustitelného souboru, který není součástí řešení sady Visual Studio (C#, C++, Visual Basic, F#)
+
 V některých případech můžete chtít ladit spustitelný soubor (soubor .exe), který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. To může být spustitelný soubor vytvořený mimo sadu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo spustitelný soubor obdrželi od někoho jiného.  
   
 Obvyklá odpověď na tento problém je spuštění spustitelného souboru mimo sadu Visual Studio a připojit se k němu pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicího programu. Další informace najdete v tématu [připojení k běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: db8059cf34c2de9a52cda18dd09ce6040bf8d841
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7de5cbfe7de8919143cd30517c18f9e5ad6ba598
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937899"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305244"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje komplexní datovou vazbu
 
@@ -51,9 +51,9 @@ V tomto návodu se dozvíte, jak:
 
 - Vytvoření datové sady [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
 
-- Nastavte **zákazníkům** tabulku v [okna zdroje dat](add-new-data-sources.md) používat nový komplexní ovládací prvek.
+- Nastavte **zákazníkům** tabulku v [okna zdroje dat](add-new-data-sources.md#data-sources-window) používat nový komplexní ovládací prvek.
 
-- Přidat nový ovládací prvek z jeho přetažením **okna zdroje dat** do **Form1**.
+- Přidat nový ovládací prvek z jeho přetažením **zdroje dat** okna do **Form1**.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -118,7 +118,7 @@ Pro komplexní ovládací prvky, že vazba dat podpory, můžete implementovat <
 
 Použití **konfigurace zdroje dat** průvodce k vytvoření zdroje dat na základě `Customers` tabulky v ukázkové databázi Northwind:
 
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
+1.  Chcete-li otevřít **zdroje dat** okno na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat**.
 
 2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **konfigurace zdroje dat** průvodce.
 

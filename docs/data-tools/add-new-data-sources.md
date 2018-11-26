@@ -1,6 +1,6 @@
 ---
 title: Přidat nové zdroje dat
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666628"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304607"
 ---
 # <a name="add-new-data-sources"></a>Přidat nové zdroje dat
 
@@ -43,7 +43,16 @@ Vytvoření a úprava zdroje dat pomocí **Průvodce konfigurací zdroje dat** v
 
 ![Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png)
 
-Po vytvoření zdroje dat se zobrazí v **zdroje dat** panel nástrojů (**Shift**+**Alt**+**D**nebo **zobrazení** > **jiných Windows** > **zdroj dat**). Můžete přetáhnout zdroje dat z **zdroje dat** okno na návrhovou plochu formuláře nebo ovládacího prvku. To způsobí, že často používaný kód chcete vygenerovat, která zobrazí data z úložiště dat. Následující obrázek ukazuje datovou sadu, která byla vyřazena, do formuláře Windows. Pokud vyberete **F5** na aplikaci, v ovládacích prvcích ve formuláři se zobrazí data z databáze.
+## <a name="data-sources-window"></a>okno Zdroje dat
+
+Po vytvoření zdroje dat se zobrazí v **zdroje dat** panelu nástrojů.
+
+> [!TIP]
+> Chcete-li otevřít **zdroje dat** okno, ujistěte se, že váš projekt je otevřít a stiskněte klávesu **Shift**+**Alt**+**D**nebo zvolte **zobrazení** > **ostatní Windows** > **zdroje dat**.
+
+Můžete přetáhnout zdroje dat z **zdroje dat** okno na návrhovou plochu formuláře nebo ovládacího prvku. To způsobí, že často používaný kód chcete vygenerovat, která zobrazí data z úložiště dat.
+
+Následující obrázek ukazuje datovou sadu, která byla vyřazena, do formuláře Windows. Pokud vyberete **F5** na aplikaci, v ovládacích prvcích ve formuláři se zobrazí data z databáze.
 
 ![Operace přetažení zdroje dat](../data-tools/media/raddata-data-source-drag-operation.png)
 

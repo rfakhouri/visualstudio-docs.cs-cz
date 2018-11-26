@@ -1,5 +1,5 @@
 ---
-title: Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio – část 1 | Dokumentace Microsoftu
+title: Vytvoření vazby ovládacích prvků WPF k datům – část 1
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942904"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305335"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 
@@ -51,7 +51,6 @@ Můžete přetáhnout položky **zdroje dat** jenom na platné cíle přetažen�
 Při přetažení položky z **zdroje dat** okna [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)], sada Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , který definuje nový ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na zdroj dat). U některých zdrojů dat sady Visual Studio také generuje kód v souboru kódu na pozadí, který vyplní daty zdroj s daty.
 
 Následující tabulce jsou uvedeny [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] a kód, který sada Visual Studio generuje pro každý typ zdroje dat **zdroje dat** okna.
-
 
 | Zdroj dat | Generování souboru XAML, který váže ovládací prvek na zdroj dat | Generování kódu, který vyplní daty zdroj dat |
 | - | - | - |
@@ -101,7 +100,7 @@ Sada Visual Studio generuje jazyk XAML, který provede následující akce:
 Při přetažení objektu nebo vlastnosti z **zdroje dat** do okna návrháře Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , která vytvoří ovládací prvek vázaný na data (nebo naváže existující ovládací prvek na objekt či vlastnost). Visual Studio však nevygeneruje kód pro vyplnění objektu daty. Tento kód musíte napsat sami.
 
 > [!NOTE]
->  Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Jejich can'tbe vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Vlastní třídy musí být veřejný a ve výchozím nastavení, mít konstruktor bez parametrů. Jejich can'tbe vnořené třídy, které mají v syntaxi "tečku". Další informace najdete v tématu [XAML a vlastní třídy pro WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , který provede následující akce:
 

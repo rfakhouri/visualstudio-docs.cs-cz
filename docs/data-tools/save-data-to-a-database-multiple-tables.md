@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fd3051aae78f6f0440c637137ea5a04f726df8c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 3930df0deb4e61838b2fe2b5e35bb6956bc41ba4
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750825"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305686"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 
@@ -40,7 +40,7 @@ Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Up
 
 -   Vytvoření a konfigurace zdroje dat ve vaší aplikaci se [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png).
 
--   Ovládací prvky položek v nastavení [okna zdroje dat](add-new-data-sources.md). Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+-   Ovládací prvky položek v nastavení [okna zdroje dat](add-new-data-sources.md#data-sources-window). Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 -   Vytváření ovládacích prvků vázaných na data přetažením položek z **zdroje dat** okna do formuláře.
 
@@ -52,9 +52,9 @@ Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Up
 
 Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
 
-1.  Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V **instalační program sady Visual Studio**, jako součást můžete nainstalovat SQL Server Express LocalDB **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
+1. Pokud nemáte SQL Server Express LocalDB, nainstalujte ji z [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo prostřednictvím **instalační program sady Visual Studio**. V **instalační program sady Visual Studio**, jako součást můžete nainstalovat SQL Server Express LocalDB **ukládání a zpracování dat** úlohy, nebo jako jednotlivých komponent.
 
-2.  Instalace ukázkové databáze Northwind pomocí následujících kroků:
+2. Instalace ukázkové databáze Northwind pomocí následujících kroků:
 
     1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okna. (Průzkumník objektů systému SQL Server je nainstalován jako součást **ukládání a zpracování dat** úlohy v instalačním programu sady Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na instanci LocalDB a vyberte **nový dotaz**.
 
@@ -84,13 +84,15 @@ Prvním krokem je vytvoření **formulářová aplikace Windows**. Přiřazení 
 
 Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.
+1. Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.
 
-2.  V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
+   **Zdroje dat** otevře se okno.
 
-3.  Na **zvolte typ zdroje dat** obrazovky, vyberte **databáze**a pak vyberte **Další**.
+2. V **zdroje dat** okně **přidat nový zdroj dat** spustit **Průvodce konfigurací zdroje dat**.
 
-4.  Na **vyberte datové připojení** obrazovky, proveďte jednu z následujících akcí:
+3. Na **zvolte typ zdroje dat** obrazovky, vyberte **databáze**a pak vyberte **Další**.
+
+4. Na **vyberte datové připojení** obrazovky, proveďte jednu z následujících akcí:
 
     -   Pokud je připojení dat k ukázkové databázi Northwind k dispozici v rozevíracím seznamu, vyberte je.
 
@@ -98,13 +100,13 @@ Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvo
 
     -   Vyberte **nové připojení** otevřít **přidat/změnit připojení** dialogové okno.
 
-5.  Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.
+5. Pokud vaše databáze vyžaduje heslo, vyberte možnost zahrnutí důvěrných osobních údajů a pak vyberte **Další**.
 
-6.  Na **uložit připojovací řetězec do konfiguračního souboru aplikace**vyberte **Další**.
+6. Na **uložit připojovací řetězec do konfiguračního souboru aplikace**vyberte **Další**.
 
-7.  Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.
+7. Na **zvolte vaše databázové objekty** obrazovky, rozbalte **tabulky** uzlu.
 
-8.  Vyberte **zákazníkům** a **objednávky** tabulky a pak vyberte **Dokončit**.
+8. Vyberte **zákazníkům** a **objednávky** tabulky a pak vyberte **Dokončit**.
 
      **NorthwindDataSet** se přidá do vašeho projektu a tabulky se zobrazí v **zdroje dat** okna.
 
@@ -114,19 +116,19 @@ V tomto návodu, data v `Customers` tabulka se **podrobnosti** rozložení, ve k
 
 ### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Chcete-li nastavit typ přetažení pro položky v okně zdrojů dat.
 
-1.  V **zdroje dat** okna, rozbalte **zákazníkům** uzlu.
+1. V **zdroje dat** okna, rozbalte **zákazníkům** uzlu.
 
-2.  Na **zákazníkům** uzlu, vyberte **podrobnosti** ovládací prvek seznamu můžete změnit kontrolu **zákazníkům** tabulky do jednotlivých ovládacích prvků. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+2. Na **zákazníkům** uzlu, vyberte **podrobnosti** ovládací prvek seznamu můžete změnit kontrolu **zákazníkům** tabulky do jednotlivých ovládacích prvků. Další informace najdete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Vytvoření formuláře vázané na data
 
 Můžete vytvořit ovládací prvky vázané na data přetažením položek z **zdroje dat** okna do formuláře.
 
-1.  Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.
+1. Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.
 
      Ovládací prvky vázaných dat pomocí popisků se zobrazí ve formuláři, spolu s pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.
 
-2.  Přetáhněte související **objednávky** uzlu z **zdroje dat** okna do **Form1**.
+2. Přetáhněte související **objednávky** uzlu z **zdroje dat** okna do **Form1**.
 
     > [!NOTE]
     > Související **objednávky** uzel se nachází pod **Fax** sloupce a je podřízený uzel **zákazníkům** uzlu.
@@ -142,22 +144,22 @@ Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům
 
 ### <a name="to-add-update-logic-to-the-application"></a>Chcete-li přidat logiku aktualizací do aplikace
 
-1.  Vyberte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator>. Otevře se Editor kódu `bindingNavigatorSaveItem_Click` obslužné rutiny události.
+1. Vyberte **Uložit** tlačítko <xref:System.Windows.Forms.BindingNavigator>. Otevře se Editor kódu `bindingNavigatorSaveItem_Click` obslužné rutiny události.
 
-2.  Nahraďte kód v obslužné rutině události pro volání `Update` metody související objekty TableAdapter. Následující kód nejprve vytvoří tři tabulky dočasných dat pro uložení aktualizované informace pro každý <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added>, a <xref:System.Data.DataRowState.Modified>). Aktualizace jsou spuštěny ve správném pořadí. Kód by měl vypadat nějak takto:
+2. Nahraďte kód v obslužné rutině události pro volání `Update` metody související objekty TableAdapter. Následující kód nejprve vytvoří tři tabulky dočasných dat pro uložení aktualizované informace pro každý <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added>, a <xref:System.Data.DataRowState.Modified>). Aktualizace jsou spuštěny ve správném pořadí. Kód by měl vypadat nějak takto:
 
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
 ## <a name="test-the-application"></a>Testování aplikace
 
-1.  Stisknutím klávesy **F5**.
+1. Stisknutím klávesy **F5**.
 
-2.  Některé změny dat z jednoho nebo více záznamů v každé tabulce.
+2. Některé změny dat z jednoho nebo více záznamů v každé tabulce.
 
-3.  Vyberte **Uložit** tlačítko.
+3. Vyberte **Uložit** tlačítko.
 
-4.  Zkontrolujte hodnoty v databázi a ověřte, že se změny uložily.
+4. Zkontrolujte hodnoty v databázi a ověřte, že se změny uložily.
 
 ## <a name="see-also"></a>Viz také:
 
