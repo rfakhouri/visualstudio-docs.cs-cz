@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219156"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388791"
 ---
 # <a name="options-text-editor-general"></a>Možnosti, textový editor, obecné
 
 Toto dialogové okno umožňuje měnit globální nastavení pro kód a text editoru sady Visual Studio. Chcete-li zobrazit toto dialogové okno, vyberte **možnosti** na **nástroje** nabídky, rozbalte **textový Editor** složku a pak vyberte **Obecné**.
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Nastavení
 

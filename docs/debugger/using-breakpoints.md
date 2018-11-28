@@ -1,7 +1,7 @@
 ---
 title: Používání zarážek v ladicím programu sady Visual Studio | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826840"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389134"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
@@ -50,6 +50,8 @@ Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji p
  Můžete nastavit zarážku na kterýkoli řádek spustitelného kódu. Například v následujícím kódu C#, můžete nastavit zarážku na deklaraci proměnné `for` smyčku, nebo žádný kód uvnitř `for` smyčky. Deklarace oboru názvů nebo třídy, nebo v podpisu metody nelze nastavit zarážku.  
 
  Pokud chcete nastavit zarážku ve zdrojovém kódu, klikněte v levém okraji vedle řádku kódu. Můžete také vybrat řádku a stisknutím klávesy **F9**vyberte **ladění** > **Přepnout zarážku**, nebo klikněte pravým tlačítkem a vyberte **zarážku**  >  **Vložit zarážku**. Zarážka se zobrazí jako červená tečka na levém okraji.  
+
+V C# automaticky zvýrazněný kód, zarážky a aktuální provádění řádky. Pro kód C++ můžete zapnout zvýraznění zarážky a aktuální řádky tak, že vyberete **nástroje** (nebo **ladění**) > **možnosti**  >   **Ladění** >  **zvýraznit celý řádek zdrojového kódu pro zarážky a aktuální příkaz (pouze C++)**. 
   
  ![Nastavit zarážku](../debugger/media/basicbreakpoint.png "základní zarážku")  
   

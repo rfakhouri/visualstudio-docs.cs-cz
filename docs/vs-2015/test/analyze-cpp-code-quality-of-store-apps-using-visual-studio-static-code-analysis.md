@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e140f2e1066f6e2025491517106d27f6955d871b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863786"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389095"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                       [C6270](../code-quality/c6270.md)                        |                                   Chybí Argument typu Float pro formátování funkce                                   |
 |                       [C6271](../code-quality/c6271.md)                        |                                       Nadbytečný Argument pro formátování funkce                                       |
 |                       [C6272](../code-quality/c6272.md)                        |                                     Argument než typu Float pro formátování funkce                                     |
-|                       [C6273](../code-quality/c6273.md)                        |                                    Argumen jiných než celých čísel pro formátování funkce                                     |
+|                       [C6273](../code-quality/c6273.md)                        |                                    Pro naformátování funkce Argument jiných než celých čísel                                     |
 |                       [C6274](../code-quality/c6274.md)                        |                                   Argument bez znaků pro formátování funkce                                   |
 |                       [C6276](../code-quality/c6276.md)                        |                                              Neplatné přetypování řetězce                                              |
 |                       [C6277](../code-quality/c6277.md)                        |                                          Neplatné volání funkce CreateProcess                                           |
@@ -178,7 +178,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                      [C28215](../code-quality/c28215.md)                       |                    Typefix nelze použít pro parametr, který již poznámku typefix obsahuje                    |
 |                      [C28216](../code-quality/c28216.md)                       |        Poznámka checkreturn se vztahuje pouze k následným podmínkám specifických parametrů funkcí.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Pro funkci Počet parametrů anotace neodpovídá nalezeným na souboru             |
-|                      [C28218](../code-quality/c28218.md)                       |             Pro funkce paramteer parametr poznámky se neshoduje s nalezeným na souboru              |
+|                      [C28218](../code-quality/c28218.md)                       |             Pro parametr funkce parametr poznámky se neshoduje s nalezeným na souboru              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Očekávaný člen výčtu pro okomentování parametru v poznámce                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Očekáván celočíselný výraz pro okomentování parametru v poznámce                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Řetězcový výraz očekávaný pro parametr v poznámce                         |

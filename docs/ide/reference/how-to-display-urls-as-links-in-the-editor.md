@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177708"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388527"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Postupy: Zobrazení adres URL ve formě odkazů v editoru
 
@@ -31,12 +31,7 @@ Můžete mít editoru kódu považovat Uniform Resource Locator (URL) ve vašem 
 
 -   Pokus o otevření webu uvedené když jste **Ctrl**+**klikněte na tlačítko** na odkaz. Ve výchozím nastavení zobrazí se v interní webový prohlížeč na webu.
 
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-## <a name="procedure"></a>Postup
-
-### <a name="to-display-urls-as-links"></a>Pro zobrazení adresy URL jako odkazy
+## <a name="display-urls-as-links"></a>Zobrazení adres URL jako odkazů
 
 1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 

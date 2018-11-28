@@ -15,36 +15,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3d7977fde404570808f0ee2d6514249a5e73286a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747492"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388847"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Postupy: Zobrazení čísel řádků v editoru
-Můžete zobrazit nebo skrýt řádku číslování ve vašem kódu.
 
-> [!NOTE]
-> V závislosti na nastavení active dialogových oken a příkazy nabídky, které se zobrazují mohou lišit od těch, které jsou zde popsány. Chcete-li změnit nastavení, otevřete **nástroje / Import a Export nastavení**. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
-
+Můžete zobrazit nebo skrýt číslování řádku ve váš kód.
 
 ## <a name="display-line-numbers-in-code"></a>Zobrazení čísel řádků v kódu
- Čísla řádků nejsou přidány do vašeho kódu; jsou jenom pro referenci. Pokud chcete, aby čísla řádků tisknout, v **tisku** dialogové okno, vyberte **zahrnout čísla řádků** zaškrtávací políčko.
 
-#### <a name="to-display-line-numbers-in-code"></a>K zobrazení čísel řádků v kódu
+Čísla řádků nejsou přidány do kódu; jsou to pouze pro referenci. Pokud chcete tisknout čísla řádků **tisk** dialogové okno, vyberte **zahrnutí čísel řádků** zaškrtávací políčko.
 
-1.  Na řádku nabídek zvolte **nástroje**, **možnosti**. Rozbalte **textového editoru** uzel a pak vyberte buď uzel pro jazyk, který používáte, nebo **všechny jazyky** zapnout čísla řádků ve všech jazycích. Nebo můžete zadat **číslo řádku** v **Snadné spuštění** pole.
+### <a name="to-display-line-numbers-in-code"></a>Zobrazení čísel řádků v kódu
+
+1.  V panelu nabídky zvolte **nástroje**, **možnosti**. Rozbalte **textový Editor** uzlu a pak vyberte uzel pro jazyk používáte, nebo **všechny jazyky** chcete zapnout čísla řádků ve všech jazycích. Nebo můžete zadat **číslo řádku** v **Snadné spuštění** pole.
 
 2.  Vyberte **čísla řádků** zaškrtávací políčko.
 
-    ![Možnosti pro zobrazení čísla řádků v editoru](../../ide/reference/media/vs_displaylinenumbers.png)
+    ![Možnosti pro zobrazení čísel řádků v editoru](../../ide/reference/media/vs_displaylinenumbers.png)
 
 > [!NOTE]
-> V závislosti na váš jazyk nebo nastavení, možná budete muset vybrat **zobrazit všechna nastavení** zaškrtávací políčko **možnosti** dialogové okno a odhalit **všechny jazyky** dílčí uzlu.
+> V závislosti na jazyku nebo nastavení, možná budete muset vybrat **zobrazit všechna nastavení** zaškrtávací políčko **možnosti** dialogové okno zobrazit **všechny jazyky** podřízený uzel.
 
-
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)
 - [Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)

@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673328"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388631"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Možnosti, textový Editor, XAML, různé
+
 Použití **různé** stránky vlastností k určení, jak jsou formátovány elementů a atributů v dokumentech XAML. Chcete-li otevřít **možnosti** dialogovém okně klikněte na tlačítko **nástroje** nabídky a pak klikněte na tlačítko **možnosti**. Pro přístup **různé** vlastnost stránce, rozbalte **textový Editor** > **XAML** > **různé**uzlu.
 
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
-
 ## <a name="auto-insert"></a>Automatické vkládání
- Pomocí tohoto nastavení můžete řídit, kdy značky a nabídky jsou automaticky generovány.
+
+Pomocí tohoto nastavení můžete řídit, kdy značky a nabídky jsou automaticky generovány.
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ Použití **různé** stránky vlastností k určení, jak jsou formátovány el
 |**Čárky k oddělení parametrů MarkupExtension**|Určuje, zda čárky jsou generovány, pokud více než jeden parametr typu v rozšíření značek.|
 
 ## <a name="errors-and-warnings"></a>Chyby a upozornění
- Pomocí tohoto nastavení můžete řídit, kdy chyby a upozornění jsou automaticky generovány. Další informace najdete v tématu [XAML chyby a upozornění](../../designers/xaml-errors-warnings.md).
+
+Pomocí tohoto nastavení můžete řídit, kdy chyby a upozornění jsou automaticky generovány. Další informace najdete v tématu [XAML chyby a upozornění](../../designers/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Viz také:
 

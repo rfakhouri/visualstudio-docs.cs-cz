@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948423"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389309"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Přehled statické analýzy kódu pro spravovaný kód v sadě Visual Studio
 
@@ -51,7 +51,7 @@ Pravidla analýzy kódu pro spravovaný kód jsou seskupena do [sad pravidel](..
 Je-source potlačení varování implementováno skrze vlastní atributy. Pro potlačení varování je zapotřebí, přidejte atribut `SuppressMessage` ke zdrojovému kódu, jak je znázorněno v následujícím příkladu:
 
 ```csharp
-[System.Diagnosis.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]
 Public class MyClass
 {
    // code

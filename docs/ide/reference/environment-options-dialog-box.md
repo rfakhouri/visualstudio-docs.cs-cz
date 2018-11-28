@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930541"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388764"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogové okno Možnosti prostředí
+
 Můžete použít na stránkách **prostředí** složky **možnosti** dialogové okno nastavit jak některé prvky integrovaného vývojového prostředí (IDE), zobrazení a chování. Stránky prostředí, v řádku nabídek, výběrem dostanete **nástroje**, **možnosti**a pak vyberete **prostředí**.
-
-> [!NOTE]
-> V závislosti na aktivním nastavení a použité edici sady Visual Studio se dialogová okna a příkazy nabídek, které se zobrazují ve vašem počítači, mohou lišit od popisu v nápovědě. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 |Pokud chcete|Další informace naleznete v tématu|
 | - |---------|
@@ -45,6 +42,6 @@ Můžete použít na stránkách **prostředí** složky **možnosti** dialogov�
 |Zjistit, jak nastavit možnosti pro úkoly a seznamy úkolů|[Seznam úkolů, Prostředí, dialogové okno Možnosti](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |Změnit výchozí domovskou a vyhledávací stránku, změnit systémový editor zdrojového kódu a nakonfigurovat možnosti aplikace Internet Explorer|[Webový prohlížeč, Prostředí, dialogové okno Možnosti](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Dialogové okno Možnosti](../../ide/reference/options-dialog-box-visual-studio.md)

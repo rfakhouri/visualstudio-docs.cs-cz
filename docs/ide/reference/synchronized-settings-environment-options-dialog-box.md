@@ -1,6 +1,6 @@
 ---
-title: Dialogové okno Synchronizovaná nastavení, Prostředí, Možnosti
-ms.date: 11/04/2016
+title: Odkazy na možnosti účty
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,17 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa23853b425bf45543f2bb42614ca6057b791ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dadf81f386ef93fab5a3f6c4cebf9969d0a6f23
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942751"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388462"
 ---
-# <a name="synchronized-settings-environment-options-dialog-box"></a>Dialogové okno Synchronizovaná nastavení, Prostředí, Možnosti
+# <a name="accounts-environment-options-dialog-box"></a>Účty, prostředí, dialogové okno Možnosti
 
-Tato stránka slouží k určení, zda synchronizace (přemístit) nastavení mezi více počítačů. Další informace najdete v tématu [synchronizovaná nastavení](../../ide/synchronized-settings-in-visual-studio.md).
+Tato stránka slouží k určení, jestli se má nastavení synchronizovat napříč různými počítači. Další informace najdete v tématu [synchronizovaná nastavení](../../ide/synchronized-settings-in-visual-studio.md).
 
-### <a name="see-also"></a>Viz také
+### <a name="see-also"></a>Viz také:
 
-- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+- [Synchronizace nastavení mezi více počítačů](../synchronized-settings-in-visual-studio.md)
+- [Nastavení prostředí](../environment-settings.md)
+- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)

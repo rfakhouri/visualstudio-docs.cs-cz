@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567a7f0eeb0fcf68d37dc38a484c3a8db15f3c40
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbdb15d5f6bc10d203924272fa6239a12df460d4
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942523"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388777"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Nastavení importu a exportu, prostředí, dialogové okno Možnosti
 
-Tato stránka slouží k určení, kde je uložený soubor nastavení uživatele a jestli se má použít soubor nastavení týmu. Další informace o nastavení najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
+Tato stránka slouží k určení, kde je uložený soubor nastavení uživatele a jestli se má použít soubor týmového nastavení. Další informace o nastavení najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-### <a name="see-also"></a>Viz také
+### <a name="see-also"></a>Viz také:
 
 - [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

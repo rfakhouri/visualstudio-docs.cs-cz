@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830051"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388105"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Postupy: publikování aplikace WPF s povolenými vizuálními styly
 Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závislosti na motiv uživatelem. Ve výchozím nastavení nejsou povoleny vizuální styly pro aplikace Windows Presentation Foundation (WPF), takže je potřeba povolit ručně. Povolení vizuálních stylů pro aplikace WPF a pak tuto aplikaci publikovat řešení způsobí chybu. Toto téma popisuje, jak vyřešit tuto chybu a proces pro publikování aplikace WPF s povolenými vizuálními styly. Další informace o vizuálních stylů, najdete v části [vizuální styly přehled](/windows/desktop/Controls/visual-styles-overview). Další informace o chybové zprávě naleznete v tématu [řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -39,7 +39,11 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
      Ve výchozím nastavení nejsou povoleny vizuální styly.  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      Následující postupy ukazují, jak otevřít soubor manifestu, který je přidružený k projektu.  
@@ -78,7 +82,18 @@ Vizuální styly povolit vzhled běžných ovládacích prvků do měnit v závi
      Tato konfigurace XML popisuje sestavení, která obsahuje ovládací prvky, které podporují vizuální styly.  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  V programu Poznámkový blok, klikněte na tlačítko **souboru**a potom klikněte na tlačítko **uložit jako**.  

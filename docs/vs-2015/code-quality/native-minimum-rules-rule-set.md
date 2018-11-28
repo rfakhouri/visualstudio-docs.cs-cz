@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722096852b3712a5f7a7f58f2a322cdf3ef4a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca97fa7d4e3b78077e50a2039647afd5c380ebd3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842492"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389423"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Sada pravidel Nativní minimální pravidla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |                       [C6270](../code-quality/c6270.md)                        |                                   Chybí Argument typu Float pro formátování funkce                                   |
 |                       [C6271](../code-quality/c6271.md)                        |                                       Nadbytečný Argument pro formátování funkce                                       |
 |                       [C6272](../code-quality/c6272.md)                        |                                     Argument než typu Float pro formátování funkce                                     |
-|                       [C6273](../code-quality/c6273.md)                        |                                    Argumen jiných než celých čísel pro formátování funkce                                     |
+|                       [C6273](../code-quality/c6273.md)                        |                                    Pro naformátování funkce Argument jiných než celých čísel                                     |
 |                       [C6274](../code-quality/c6274.md)                        |                                   Argument bez znaků pro formátování funkce                                   |
 |                       [C6276](../code-quality/c6276.md)                        |                                              Neplatné přetypování řetězce                                              |
 |                       [C6277](../code-quality/c6277.md)                        |                                          Neplatné volání funkce CreateProcess                                           |
@@ -108,7 +108,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |                      [C28215](../code-quality/c28215.md)                       |                    Typefix nelze použít pro parametr, který již poznámku typefix obsahuje                    |
 |                      [C28216](../code-quality/c28216.md)                       |        Poznámka checkreturn se vztahuje pouze k následným podmínkám specifických parametrů funkcí.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Pro funkci Počet parametrů anotace neodpovídá nalezeným na souboru             |
-|                      [C28218](../code-quality/c28218.md)                       |             Pro funkce paramteer parametr poznámky se neshoduje s nalezeným na souboru              |
+|                      [C28218](../code-quality/c28218.md)                       |             Pro parametr funkce parametr poznámky se neshoduje s nalezeným na souboru              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Očekávaný člen výčtu pro okomentování parametru v poznámce                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Očekáván celočíselný výraz pro okomentování parametru v poznámce                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Řetězcový výraz očekávaný pro parametr v poznámce                         |

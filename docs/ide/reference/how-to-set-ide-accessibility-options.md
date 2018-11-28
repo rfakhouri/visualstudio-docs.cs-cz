@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909793"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388423"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 
@@ -27,10 +27,10 @@ ms.locfileid: "49909793"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje funkce, které usnadňují pro uživatele, kteří mají ke čtení a pro uživatele, kteří mají omezenou pohyblivostí k zápisu. Tyto funkce patří změna velikost a barvu textu v editorech, změna velikosti textu a tlačítka na panely nástrojů a automatické dokončování pro parametry, metody a další.
 
- Kromě toho [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje typech klávesnic, které nejčastěji zadávané znaky přístupnější. Můžete také přizpůsobit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+Kromě toho [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje typech klávesnic, které nejčastěji zadávané znaky přístupnější. Můžete také přizpůsobit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Další informace najdete v tématu [určení a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [Resetovat nastavení](../environment-settings.md#reset-settings).
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editory, dialogová okna a okna nástrojů
 

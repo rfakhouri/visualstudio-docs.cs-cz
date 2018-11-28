@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948060"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388664"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ Obnoví výchozí nastavení sady Visual Studio a automaticky spustí rozhraní 
 Výchozí nastavení jsou určena podle profilu, který byl vybrán při prvním spuštění sady Visual Studio.
 
 > [!TIP]
-> Zjistěte, jak resetovat nastavení pomocí integrovaného vývojového prostředí (IDE), najdete v článku [Resetovat nastavení](../synchronized-settings-in-visual-studio.md#reset-settings).
+> Zjistěte, jak resetovat nastavení pomocí integrovaného vývojového prostředí (IDE), najdete v článku [Resetovat nastavení](../environment-settings.md#reset-settings).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>Viz také:
 
-- [Resetovat nastavení](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [Nastavení prostředí](../environment-settings.md)
 - [Přizpůsobení prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 - [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)

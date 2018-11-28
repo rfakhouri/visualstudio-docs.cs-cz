@@ -2,7 +2,7 @@
 title: Umožní sadě Visual Studio vám pomohou při psaní C# kódu s méně chyb
 description: Naučte se psát lepší kód s méně chyb
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948956"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389374"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>Psali lepší C# kódu pomocí sady Visual Studio
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Oprava chyb napsáním lépe C# kódu pomocí sady Visual Studio
 
 Ladění kódu může být časově – a někdy náročný – úloh. Může zabrat určitý čas zjistěte, jak efektivní ladění. Výkonné prostředí IDE, jako je Visual Studio můžete usnadní to mnohem jednodušší. Integrované vývojové prostředí můžou pomoct při ladění kódu rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout získat holistický pohled ladění procesu, tak budete vědět, kdy použít analyzátor kódu a kdy se má použít ladicí program a kdy se má použít jiné nástroje.
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e295bc8c09f41c4c1c77b216a9d91d0644d2d24e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831923"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388540"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX extension schema 2.0 – referenční informace
 Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 tato schématu podporuje přidávání vlastních typů a atributů.  Je možné rozšířit schéma manifestu. Manifestu zaváděcího programu ignoruje XML elementů a atributů, které ho nerozumí.  
@@ -130,7 +130,11 @@ Soubor manifestu VSIX nasazení popisuje obsah balíčku VSIX. Formát souboru s
         -   Jedna verze # - jenom určená verze.  
   
         > [!IMPORTANT]
-        >  Verze 2.0 VSIX schématu byla zavedena v sadě Visual Studio 2012. Pro toto schéma používají, musíte mít Visual Studio 2012 nebo později na počítači nainstalovaný a použít VSIXInstaller.exe, které jsou součástí tohoto produktu. Můžete cílit starší verze sady Visual Studio s Visual Studio 2012 nebo novější VSIXInstaller, ale pouze pomocí novější verze Instalační služby.  
+        >  Verze 2.0 VSIX schématu byla zavedena v sadě Visual Studio 2012. Pro toto schéma používají, musíte mít Visual Studio 2012 nebo později na počítači nainstalovaný a použít VSIXInstaller.exe, které jsou součástí tohoto produktu. Můžete cílit starší verze sady Visual Studio s Visual Studio 2012 nebo novější VSIXInstaller, ale pouze pomocí novější verze Instalační služby. 
+        
+        Čísla verzí Visual Studio 2017 najdete na [sady Visual Studio čísla sestavení a data vydání](../install/visual-studio-build-numbers-and-release-dates.md).
+        
+        Po vyjádření verze pro Visual Studio 2017 verze, podverze by měla být vždy **0**. Například Visual Studio 2017 verze 15.3.26730.0 by měl být vyjádřen jako [15.0.26730.0,16.0). Toto je pouze požadované pro čísla verzí sady Visual Studio 2017.
   
     -   `AnyAttribute*` – `<InstallationTarget>` Element umožňuje neuzavřenou množinu atributů, která je vystavena za běhu jako slovník dvojice název hodnota.  
   

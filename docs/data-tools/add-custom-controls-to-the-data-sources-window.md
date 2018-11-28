@@ -19,21 +19,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c685e4c94f185992b26e8cd14c09301064c93493
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: ae05111b1a075515d8011daaf8626e5da7f506e1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305517"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389079"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdrojů dat
 
 Při přetažení položky z **zdroje dat** okno na návrhovou plochu vytvoříte ovládací prvek vázaný na data, můžete vybrat typ ovládacího prvku, který vytvoříte. Každá položka v okně se rozevírací seznam, který se zobrazí ovládací prvky, které můžete vybrat z. Sadu ovládacích prvků, které jsou spojené s každou položku je určeno typem dat položky. Pokud ovládací prvek, který chcete vytvořit v seznamu nezobrazí, můžete podle pokynů v tomto tématu přidejte ovládací prvek do seznamu.
 
 Další informace o výběru ovládacích prvků vázaných na data pro vytvoření pro položky v **zdroje dat** okna, naleznete v tématu [nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="customize-the-bindable-controls-list"></a>Přizpůsobení seznamu s možností vazby ovládacích prvků
 

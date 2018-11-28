@@ -33,19 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae8fd7cf7acb27fd528c306c0d6a57955c6fe8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 3009f32adeb70dd376d7116280de6e3e1b557e7a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "50143382"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388920"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazování dokumentů v integrovaném vývojovém prostředí (IDE) a spravovat externí změny dokumentů a souborů. Toto dialogové okno se zpřístupní po kliknutí **možnosti** na **nástroje** nabídky a následným výběrem **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** se nezobrazují v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.
-
-> [!NOTE]
-> Dostupné možnosti v dialogových oknech, názvy a umístění příkazů, které vidíte, mohou lišit od informací uvedených v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 **Znovu použít aktuální okno dokumentu, je-li uložit**
 

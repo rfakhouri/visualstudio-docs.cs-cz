@@ -18,21 +18,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3930df0deb4e61838b2fe2b5e35bb6956bc41ba4
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305686"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388816"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 
 Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat na formulář v nástrojích pro aplikace Windows, upravte údaje a odeslat aktualizovaná data zpět do databáze. Tento návod vytvoří formulář, který zobrazuje data ze dvou souvisejících tabulek a ukazuje, jak upravovat záznamy a změny uložit zpět do databáze. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.
 
 Data můžete uložit ve vaší aplikaci zpět do databáze pomocí volání `Update` metody třídy TableAdapter. Při přetažení tabulky z **zdroje dat** okna do formuláře, kód, který je potřeba k uložení dat se automaticky přidá. Žádné další tabulky, které jsou přidány k formuláři vyžadují ruční přidání tohoto kódu. Tento návod ukazuje, jak přidat kód pro uložení aktualizací z více než jedné tabulky.
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 Úlohy v tomto návodu zahrnují:
 

@@ -1,7 +1,7 @@
 ---
 title: Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257378"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389173"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -182,7 +182,7 @@ Při sestavení projektu v prostředí Visual Studio IDE se standardem **laděn�
   
   - *\<Projekt > .pdb* 
     
-     *\<Projekt > pdb* soubor uchovává všechny informace o ladění pro projektu *.exe* souboru a je *\debug* podadresáře.  *\<Projekt > pdb* soubor obsahuje úplné informace o ladění, včetně funkčních prototypů, nejen informace o typu uvedené v *VC\<x > pdb*. 
+    *\<Projekt > pdb* soubor uchovává všechny informace o ladění pro projektu *.exe* souboru a je *\debug* podadresáře. *\<Projekt > pdb* soubor obsahuje úplné informace o ladění, včetně funkčních prototypů, nejen informace o typu uvedené v *VC\<x > pdb*. 
   
   Oba *VC\<x > pdb* a  *\<Projekt > pdb* soubory umožňují přírůstkové aktualizace. Linker také vloží cestu k *PDB* soubory *.exe* nebo *.dll* soubor, který vytvoří.  
   

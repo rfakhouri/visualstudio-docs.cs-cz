@@ -16,19 +16,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854075"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389497"
 ---
-# <a name="configure-service-reference-dialog-box"></a>Dialogové okno Nastavit odkaz na službu
+# <a name="configure-service-reference-dialog-box"></a>Nastavit odkaz na službu – dialogové okno
 
 **Nastavit odkaz na službu** dialogové okno umožňuje konfigurovat chování služby Windows Communication Foundation (WCF).
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 Pro přístup **nastavit odkaz na službu** dialogové okno, klikněte pravým tlačítkem na službu odkazovat v **Průzkumníku řešení** a zvolte **nastavit odkaz na službu**. Dialogové okno se můžete dostat taky kliknutím **Upřesnit** tlačítko **Add Service Reference Dialog Box**.
 
@@ -104,7 +101,7 @@ Pro přístup **nastavit odkaz na službu** dialogové okno, klikněte pravým t
 
 > [!NOTE]
 > Tato možnost by měl používat pouze pro projekty, které cílí na verzi 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
-> 
+>
 > [!NOTE]
 > **Přidat webový odkaz** tlačítko je k dispozici pouze při **nastavit odkaz na službu** zobrazí dialogové okno z **Add Service Reference Dialog Box**.
 

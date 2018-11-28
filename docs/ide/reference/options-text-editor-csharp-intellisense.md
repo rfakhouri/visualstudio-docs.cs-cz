@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672482"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389254"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Možnosti, textový editor, C#, IntelliSense
 
 Použití **IntelliSense** možnosti stránky pro úpravu nastavení, která ovlivňují chování technologie IntelliSense pro C#. Chcete-li získat přístup k této stránce Možnosti, zvolte **nástroje** > **možnosti**a klikněte na tlačítko **textový Editor**  >  **C#**  >  **IntelliSense**.
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 **IntelliSense** stránka možností obsahuje následující možnosti:
 
@@ -86,7 +83,7 @@ Použití **IntelliSense** možnosti stránky pro úpravu nastavení, která ovl
 
 ## <a name="show-name-suggestions"></a>Zobrazit název návrhy
 
-   Automatický objekt název dokončení provádí pro členy, které jste nedávno vybrali. 
+Automatický objekt název dokončení provádí pro členy, které jste nedávno vybrali.
 
 ## <a name="see-also"></a>Viz také:
 

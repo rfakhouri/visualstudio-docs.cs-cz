@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a40553cd3f547dfa2b5297c898fabbd9664496
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ce7cf5cf0534a0e989b65d6e67451fe2a7c496ab
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281833"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388902"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Zobrazení vláken ve vizualizátoru souběžnosti
 
@@ -80,7 +80,7 @@ Zkontrolujte pracovní rovnováhu mezi vlákny, které jsou zahrnuty v paraleln�
   
 Pokud pouze jedno vlákno provádí v bodě v čase, aplikace nemusí být plně využít souběžnosti v systému. Časová osa grafu můžete použít k prozkoumání závislosti mezi vlákny a časové vztahy mezi blokování a zablokovat vlákna. Chcete-li uspořádat vlákna, vyberte vlákno a vyberte nahoru nebo dolů na panelu nástrojů. 
 
-Skrýt vlákna, které nejsou provádějící práce nebo zcela bylo zablokováno, protože jejich statistiky nejsou relevantní a můžete clog sestavy. Skrýt vlákna výběrem jejich názvy a pak vyberete **skrýt vybraná vlákna** nebo **Skrýt vše kromě vybraných vláken** ikon na panelu nástrojů. Chcete-li identifikovat vlákna, které chcete skrýt, vyberte **Souhrn podle vláken** odkaz v levé dolní části. Můžete skrýt, které mají žádná aktivita vláken **Souhrn podle vláken** grafu. 
+Skrýt vlákna, která nejsou provádějící práce nebo zcela bylo zablokováno, protože jejich statistiky nejsou relevantní a můžete clog sestavy. Skrýt vlákna výběrem jejich názvy a pak vyberete **skrýt vybraná vlákna** nebo **Skrýt vše kromě vybraných vláken** ikon na panelu nástrojů. Chcete-li identifikovat vlákna, které chcete skrýt, vyberte **Souhrn podle vláken** odkaz v levé dolní části. Můžete skrýt, které mají žádná aktivita vláken **Souhrn podle vláken** grafu. 
 
 ### <a name="thread-execution-details"></a>Podrobnosti spuštění vlákna  
 Chcete-li získat podrobnější informace o provádění segmentu, vyberte bod na zelený segment časové osy. Vizualizátor souběžnosti zobrazí černé blikajícího kurzoru nad vybraný bod a zobrazuje svůj zásobník volání na **aktuální** kartu v dolním podokně. Můžete vybrat několik bodů na segment spuštění.  

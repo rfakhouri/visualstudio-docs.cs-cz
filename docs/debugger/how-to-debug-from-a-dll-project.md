@@ -1,7 +1,7 @@
 ---
 title: 'Postupy: ladění z projektu knihovny DLL | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 05/24/2018
+ms.date: 10/10/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4533d2bffffa7456f5e6ecc2d6c9291f80d5159
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305153"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388251"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Postupy: ladění z projektu knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 

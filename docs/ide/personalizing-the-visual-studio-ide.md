@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348692"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388722"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení prostředí IDE sady Visual Studio
 
@@ -22,6 +22,10 @@ Přizpůsobit Visual Studio v různé způsoby, jak nejlépe podporují vlastní
 
 > [!NOTE]
 > Toto téma se vztahuje k sadě Visual Studio ve Windows. Visual Studio pro Mac, najdete v části [přizpůsobení sady Visual Studio pro Mac IDE](/visualstudio/mac/customizing-the-ide).
+
+## <a name="default-settings"></a>Výchozí nastavení
+
+Můžete zvolit výchozí kolekce nastavení, která optimalizuje Visual Studio pro váš typ vývoje. Další informace najdete v tématu [nastavení prostředí](environment-settings.md).
 
 ## <a name="general-environment-options"></a>Možnosti Obecné prostředí
 
@@ -62,6 +66,7 @@ Můžete přizpůsobit **nástroje** nabídky ke spuštění externích nástroj
 
 ## <a name="see-also"></a>Viz také:
 
+- [Nastavení prostředí](environment-settings.md)
 - [Visual Studio IDE – přehled](../ide/visual-studio-ide.md)
 - [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Přizpůsobení sady Visual Studio pro Mac integrovaného vývojového prostředí](/visualstudio/mac/customizing-the-ide)

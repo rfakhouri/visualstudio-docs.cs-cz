@@ -22,19 +22,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908421"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389212"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 
 ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvoříte aplikaci Windows, který načítá XML data do datové sady. Datová sada se následně zobrazí <xref:System.Windows.Forms.DataGridView> ovládacího prvku. Nakonec schématu XML na základě obsahu souboru XML se zobrazí v textovém poli.
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 

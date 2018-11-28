@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73f23b57b51b7ceb0a2d059e9d559036a721995c
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281781"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389108"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -39,11 +39,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
    > [!div class="mx-imgBorder"]
    > ![Aktivovat výhody pro Pluralsight](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. Budete přesměrováni na stránku Pluralsight, která je zahrnutá ve prospěch s vaším předplatným sady Visual Studio.  V tomto příkladu aktivujeme výhoda, opatřeného členství v programu Visual Studio Dev Essentials. Klikněte na tlačítko **aktivaci vaší výhody**.
-   > [!div class="mx-imgBorder"]
-   > ![Cílová stránka Pluralsight VSDE](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. Na stránce aktivace:
+3. Budete přesměrováni na stránku Pluralsight, která je zahrnutá ve prospěch s vaším předplatným sady Visual Studio.  
    - Zadejte kontaktní údaje ve formuláři
    - Klikněte na zaškrtávací políčko pro přijetí podmínek použití a ochrana osobních údajů zásad
    - Klikněte na tlačítko **vyjadřuji souhlas výhodou, aktivujte**.

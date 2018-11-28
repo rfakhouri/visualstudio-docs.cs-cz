@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd0d7b14c26038c57ce175abcff383ad9de5cf3
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43225045"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389011"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Sada pravidel Nativní minimální pravidla
 Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůležitější problémy v nativním kódu, včetně možných bezpečnostních děr a selhání aplikace. Měli byste zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše nativní projekty.
@@ -37,7 +37,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C6270](../code-quality/c6270.md)|Chybí Argument typu Float pro formátování funkce|
 |[C6271](../code-quality/c6271.md)|Nadbytečný Argument pro formátování funkce|
 |[C6272](../code-quality/c6272.md)|Argument než typu Float pro formátování funkce|
-|[C6273](../code-quality/c6273.md)|Argumen jiných než celých čísel pro formátování funkce|
+|[C6273](../code-quality/c6273.md)|Pro naformátování funkce Argument jiných než celých čísel|
 |[C6274](../code-quality/c6274.md)|Argument bez znaků pro formátování funkce|
 |[C6276](../code-quality/c6276.md)|Neplatné přetypování řetězce|
 |[C6277](../code-quality/c6277.md)|Neplatné volání funkce CreateProcess|
@@ -102,7 +102,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C28215](../code-quality/c28215.md)|Typefix nelze použít pro parametr, který již poznámku typefix obsahuje|
 |[C28216](../code-quality/c28216.md)|Poznámka checkreturn se vztahuje pouze k následným podmínkám specifických parametrů funkcí.|
 |[C28217](../code-quality/c28217.md)|Pro funkci Počet parametrů anotace neodpovídá nalezeným na souboru|
-|[C28218](../code-quality/c28218.md)|Pro funkce paramteer parametr poznámky se neshoduje s nalezeným na souboru|
+|[C28218](../code-quality/c28218.md)|Pro parametr funkce parametr poznámky se neshoduje s nalezeným na souboru|
 |[C28219](../code-quality/c28219.md)|Očekávaný člen výčtu pro okomentování parametru v poznámce|
 |[C28220](../code-quality/c28220.md)|Očekáván celočíselný výraz pro okomentování parametru v poznámce|
 |[C28221](../code-quality/c28221.md)|Řetězcový výraz očekávaný pro parametr v poznámce|

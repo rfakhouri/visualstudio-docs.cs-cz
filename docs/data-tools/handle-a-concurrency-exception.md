@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d73c38086ded0f9aa2a5eb05edcc569feb35c5bf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305621"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388735"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 
@@ -64,9 +64,6 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
     3. Vložte skript T-SQL do editoru dotazů a klikněte na tlačítko **Execute** tlačítko.
 
        Po chvilce dotaz doběhnutí a vytvořit databázi Northwind.
-
-> [!NOTE]
-> Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
 

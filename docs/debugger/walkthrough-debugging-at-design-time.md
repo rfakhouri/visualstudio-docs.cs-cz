@@ -1,7 +1,7 @@
 ---
-title: Ladění v době návrhu – Visual Studio | Dokumentace Microsoftu
+title: Ladění v době návrhu v sadě Visual Studio | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 02/21/2018
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -17,90 +17,94 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7a9dea23cfdd473d149989686ab0d7d30a4cc50d
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257196"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388882"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Ladění v době návrhu v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
-V některých případech můžete chtít ladit kód v návrhu čas místo, když je spuštěná aplikace. Můžete provést pomocí **okamžité** okna. Pokud chcete ladit kód XAML, který pracuje jiný kód, jako je například data vazební kód, můžete použít **ladění** > **připojit k procesu** to udělat.
-  
-### <a name="debug-at-design-time-using-the-immediate-window"></a>Ladění v době návrhu pomocí okna Příkazy  
+Postup ladění kódu v době návrhu namísto při aplikace běží, můžete použít **okamžité** okna. 
 
-Můžete použít Visual Studio **okamžité** okno ke spuštění funkce nebo podprogramu, zatímco aplikace není spuštěna. Pokud funkce nebo podprogram obsahuje zarážku, sada Visual Studio přeruší běh v odpovídajícím bodě. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Tato funkce je volána ladění v době návrhu.  
+Postup ladění kódu XAML za aplikace z Návrháře XAML, jako je například data vazební kód, můžete použít **ladění** > **připojit k procesu**.
+  
+## <a name="use-the-immediate-window"></a>Použijte příkazové podokno  
 
-V následujícím příkladu je v jazyce Visual Basic. Použití **okamžité** okno v době návrhu je podporováno také v C#, C++, a F# aplikací.
-  
-1.  Vložte následující kód do konzolové aplikace jazyka Visual Basic:  
-  
-    ```vb  
-    Module Module1  
-  
-        Sub Main()  
-            MySub()  
-        End Sub  
-  
-        Function MyFunction() As Decimal  
-            Static i As Integer  
-            i = i + 1  
-            Dim s As String  
-  
-            s = "Add Breakpoint here"  
-            Return 4  
-        End Function  
-  
-        Sub MySub()  
-            MyFunction()  
-        End Sub  
-    End Module  
-    ```  
-  
-2.  Nastavit zarážku na řádek s informacemi, `s="Add BreakPoint Here"`.  
-  
-3.  Otevřít **okamžité** okno (**ladění** > **Windows** > **okamžité**) a zadejte následující příkaz v okno: `?MyFunction<enter>`  
-  
-4.  Ověřte, že byla zarážka dosažena a zásobník volání je přesné.  
-  
-5.  Na **ladění** nabídky, klikněte na tlačítko **pokračovat**a ověřte, že jste stále v režimu návrhu.  
-  
-6.  Zadejte následující příkaz v **okamžité** okno: `?MyFunction<enter>`  
-  
-7.  Zadejte následující příkaz v **okamžité** okno: `?MySub<enter>`  
-  
-8.  Ověřte, že zarážce a zkontrolujte hodnotu statická proměnná `i` v **lokální** okna. Měl by mít hodnotu 3.  
-  
-9. Ověřte, zda je přesné zásobníku volání.  
-  
-10. Na **ladění** nabídky, klikněte na tlačítko **pokračovat**a ověřte, že jste stále v režimu návrhu.  
+Můžete použít Visual Studio **okamžité** okna spuštění funkce nebo podprogram bez spuštění vaší aplikace. Pokud funkce nebo podprogram obsahuje zarážku, sada Visual Studio přeruší na zarážce. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Tato funkce se nazývá *ladění v době návrhu*.  
 
-## <a name="debug-at-design-time-from-the-xaml-designer"></a>Ladění v době návrhu v Návrháři XAML
+V následujícím příkladu je v jazyce Visual Basic. Můžete také použít **okamžité** okno v době návrhu v C#, F#a aplikací v jazyce C++.
 
-Může být užitečné při ladění kódu na pozadí z Návrháře XAML v některých scénářích vazby deklarativní data.
+1. Následující kód vložte do prázdné konzolové aplikace jazyka Visual Basic:  
+   
+   ```vb  
+   Module Module1
+   
+       Sub Main()
+           MySub()
+       End Sub
+   
+       Function MyFunction() As Decimal
+           Static i As Integer
+           i = i + 1
+           Return i
+       End Function
+   
+       Sub MySub()
+           MyFunction()
+   
+       End Sub
+   End Module
+   ```  
+   
+1. Nastavit zarážku na řádku **End Function**.  
+   
+1. Otevřít **okamžité** okna tak, že vyberete **ladění** > **Windows** > **okamžité**. Typ `?MyFunction` , a poté stiskněte klávesu **Enter**.   
+   
+   Zarážka je dosaženo a hodnota **MáFunkce** v **lokální** je okno **1**. Když je aplikace v režimu pozastavení můžete prozkoumat zásobník volání a dalších oknech ladění. 
+   
+1. Vyberte **pokračovat** na panelu nástrojů sady Visual Studio. Ukončení aplikace a **1** se vrátí v **okamžité** okna. Ujistěte se, že jste stále v režimu návrhu.  
+   
+1. Typ `?MyFunction` v **okamžité** znovu okno a stiskněte klávesu **Enter**. Zarážka je dosaženo a hodnota **MáFunkce** v **lokální** je okno **2**. 
+   
+1. Nevybírejte **pokračovat**, typ `?MySub()` v **okamžité** okno a poté stiskněte klávesu **Enter**. Zarážka je dosaženo a hodnota **MáFunkce** v **lokální** je okno **3**. Když je aplikace v režimu pozastavení můžete zkoumat stav aplikace. 
+   
+1. Vyberte **pokračovat**. Zarážka je dosaženo znovu a hodnota **MáFunkce** v **lokální** je okno **2**. **Okamžité** vrátí okno **výraz byl vyhodnocen a nemá žádnou hodnotu**.
+   
+1. Vyberte **pokračovat** znovu. Ukončení aplikace a **2** se vrátí v **okamžité** okna. Ujistěte se, že jste stále v režimu návrhu.
+   
+1. Vymazat obsah **okamžité** okna, klikněte pravým tlačítkem a vyberte **Vymazat vše**. 
 
-1. Ve vašem projektu, přidejte novou stránku XAML, jako například *temp.xaml*. Nová stránka XAML nechte prázdné. 
+## <a name="attach-to-an-app-from-the-xaml-designer"></a>Připojit k aplikaci z Návrháře XAML
 
-1. Kompilaci vašeho řešení.
+V některých scénářích vazby deklarativní data může pomoct k ladění kódu na pozadí v Návrháři XAML.
 
-1. Otevřít *temp.xaml*, což způsobí načtení návrháře (*UwpSurface.exe* v aplikaci UWP, nebo *XDesProc.exe*), můžete k němu připojit v dalších krocích. 
-
-1. Otevřete novou instanci sady Visual Studio. V nové instanci, otevřete **připojit k procesu** dialogové okno (**ladění** > **připojit k procesu**), můžete nastavit **připojit k** pole pro typ správný kód, jako například **spravovaného kódu (CoreCLR)** nebo zadejte správný kód v závislosti na vaší verzi rozhraní .NET. Vyberte správný proces návrháře ze seznamu a zvolte **připojit**.
-
-    Pro UPW projekty cílené na sestavení 16299 nebo novější, je proces návrháře *UwpSurface.exe*. Pro WPF nebo UWP verzím 16299 proces návrháře je *XDesProc.exe*.
-
-1. Během připojena k procesu, přepněte do projektu, otevřete ve kterém chcete ladit kód a nastavte zarážku.
-
-1. Nakonec otevřete stránku, která obsahuje kód XAML, který obsahuje datové vazby.
-
-    Například můžete nastavit zarážku v kódu konvertor typu pro následující XAML, který váže objektech TextBlock v době návrhu.
-
+1. V projektu sady Visual Studio, přidejte novou stránku XAML, jako například *temp.xaml*. Nová stránka XAML nechte prázdné. 
+   
+1. Sestavte řešení.
+   
+1. Otevřít *temp.xaml*, což způsobí načtení návrháře XAML *XDesProc.exe*, nebo *UwpSurface.exe* v aplikaci UWP. 
+   
+1. Otevřete novou instanci sady Visual Studio. V nové instanci vyberte **ladění** > **připojit k procesu**. 
+   
+1. V **připojit k procesu** dialogovém okně Návrhář zpracovat od **procesy k dispozici** seznamu.
+   
+   Pro UPW cílení na Windows sestavení 16299 nebo novější, je proces návrháře *UwpSurface.exe*. Pro WPF nebo UWP verzím 16299, proces návrháře je *XDesProc.exe*.
+   
+1. Ujistěte se, že **připojit k** je nastaveno na typ správný kód pro vaši verzi .NET, jako například **spravovaného kódu (CoreCLR)**. 
+   
+1. Vyberte **připojit**.
+   
+1. Zatímco připojen k procesu, přepněte na jiné instanci sady Visual Studio a nastavit zarážky, ve kterém chcete ladit kód vaší aplikace.
+   
+   Například můžete nastavit zarážku v kódu konvertor typu pro následující XAML, který váže objektech TextBlock v době návrhu.
+   
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
    Když se stránka načte, zarážka se projeví.
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
