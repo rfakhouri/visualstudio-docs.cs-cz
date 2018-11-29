@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: 171f46efbcec7d21b281058475466f536899aa2b
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 2553adf10e2617a43d4e78ded22314088927e348
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000519"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459734"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Nastavení diagnostiky pro službu Azure Cloud Services a virtuální počítače
 Když budete potřebovat k řešení cloudové služby Azure nebo na virtuálním počítači, můžete použít Visual Studio snadněji nastavení Azure Diagnostics. Diagnostika zaznamená systémová data a data protokolování na virtuální počítače a instance virtuálních počítačů, na kterých běží vaše Cloudová služba. Diagnostická data se přenesou do účtu úložiště, kterou zvolíte. Další informace o diagnostice protokolování v Azure, najdete v článku [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -303,5 +303,5 @@ Metody **RoleEntryPoint** jsou volány v kontextu WAIISHost.exe není ve služb�
 V **vlastnosti** okno, nastaveno **kopírovat do výstupního adresáře** vlastnost **vždy Kopírovat**.
 
 ## <a name="next-steps"></a>Další kroky
-Další informace o diagnostice protokolování v Azure najdete v tématu [povolení diagnostiky v Azure Cloud Services a virtual machines](/azure/cloud-services/cloud-services-dotnet-diagnostics.md) a [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
+Další informace o diagnostice protokolování v Azure najdete v tématu [povolení diagnostiky v Azure Cloud Services a virtual machines](/azure/cloud-services/cloud-services-dotnet-diagnostics) a [povolit protokolování diagnostiky pro webové aplikace ve službě Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 

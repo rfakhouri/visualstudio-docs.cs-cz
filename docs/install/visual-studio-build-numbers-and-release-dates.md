@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/19/2018
+ms.date: 11/27/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 19223bf7c2a0c1645842aa57476af283f3e0d1f1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 9231e198d09aefdb3d36669685d419defcdce0ce
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257326"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459740"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 čísla sestavení a data vydání
 
@@ -84,35 +84,35 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 | 15.6.0 verze preview 7 | Náhled | 2. března 2018 | 15.6.27428.1 |
 | 15.6.0 verze preview 6 | Náhled | 23. února 2018 | 15.6.27421.1 |
 | 15.0.10 | Vydaná verze | 21. února 2018 | 15.0.26228.28 |
-| 15.5.7 | Vydaná verze | 20. února 2018 | 15.5.27130.2036 |
+| 15.5.7 | Vydaná verze | 20. února 2018 | 15.0.27130.2036 |
 | 15.6.0 verze preview 5 | Náhled | 14. února 2018 | 15.6.27413.0 |
 | 15.6.0 verze preview 4 | Náhled | 7. února 2018 | 15.6.27406.0 |
 | 15.0.9 | Vydaná verze | 2. února 2018 | 15.0.26228.23 |
-| 15.5.6 | Vydaná verze | 29. ledna 2018 | 15.5.27130.2027 |
-| 15.5.5 | Vydaná verze | 25. ledna 2018 | 15.5.27130.2026 |
+| 15.5.6 | Vydaná verze | 29. ledna 2018 | 15.0.27130.2027 |
+| 15.5.5 | Vydaná verze | 25. ledna 2018 | 15.0.27130.2026 |
 | 15.6.0 verze preview 3 | Náhled | 25. ledna 2018 | 15.6.27323.2 |
-| 15.5.4 | Vydaná verze | 16. ledna 2018 | 15.5.27130.2024 |
+| 15.5.4 | Vydaná verze | 16. ledna 2018 | 15.0.27130.2024 |
 | 15.6.0 verze preview 2 | Náhled | 10. ledna 2018 | 15.6.27309.0 |
-| 15.5.3 | Vydaná verze |  9. ledna 2018 | 15.5.27130.2020 |
+| 15.5.3 | Vydaná verze |  9. ledna 2018 | 15.0.27130.2020 |
 | 15.0.8 | Vydaná verze |  9. ledna 2018 | 15.0.26228.21 |
-| 15.5.2 | Vydaná verze | 14. prosince 2017 | 15.5.27130.2010 |
+| 15.5.2 | Vydaná verze | 14. prosince 2017 | 15.0.27130.2010 |
 | 15.6.0 verze preview 1 | Náhled | 14. prosince 2017 | 15.6.27205.2004 |
-| 15.5.1 | Vydaná verze | 7. prosince 2017 | 15.5.27130.2003 |
+| 15.5.1 | Vydaná verze | 7. prosince 2017 | 15.0.27130.2003 |
 | 15.6.0 verze preview 1 | Náhled | 7. prosince 2017 | 15.6.27205.0 |
 | 15.0.7 | Vydaná verze | 6. prosince 2017 | 15.0.26228.18 |
-| 15.5 | Vydaná verze | 4. prosince 2017 | 15.5.27130.0 |
-| 15.5.0 ve verzi preview 5 | Náhled | 30. listopadu 2017 | 15.5.27128.1 |
-| 15.4.5 | Vydaná verze | 27. listopadu 2017 | 15.4.27004.2010 |
-| 15.5.0 ve verzi preview 4 | Náhled | 14. listopadu 2017 | 15.5.27110.0 |
-| 15.4.4 | Vydaná verze | 14. listopadu 2017 | 15.4.27004.2009 |
+| 15.5 | Vydaná verze | 4. prosince 2017 | 15.0.27130.0 |
+| 15.5.0 ve verzi preview 5 | Náhled | 30. listopadu 2017 | 15.0.27128.1 |
+| 15.4.5 | Vydaná verze | 27. listopadu 2017 | 15.0.27004.2010 |
+| 15.5.0 ve verzi preview 4 | Náhled | 14. listopadu 2017 | 15.0.27110.0 |
+| 15.4.4 | Vydaná verze | 14. listopadu 2017 | 15.0.27004.2009 |
 | 15.0.6 | Vydaná verze | 14. listopadu 2017 | 15.0.26228.17 |
-| 15.4.3 | Vydaná verze | 8. listopadu 2017 | 15.4.27004.2008 |
-| 15.5.0 ve verzi preview 3 | Náhled | 6. listopadu 2017 | 15.5.27102.0 |
-| 15.4.2 | Vydaná verze | 31. října 2017 | 15.4.27004.2006 |
-| 15.5.0 ve verzi preview 2 | Náhled | 23. října 2017 | 15.5.27019.1 |
-| 15.4.1 | Vydaná verze | 19. října 2017 | 15.4.27004.2005 |
+| 15.4.3 | Vydaná verze | 8. listopadu 2017 | 15.0.27004.2008 |
+| 15.5.0 ve verzi preview 3 | Náhled | 6. listopadu 2017 | 15.0.27102.0 |
+| 15.4.2 | Vydaná verze | 31. října 2017 | 15.0.27004.2006 |
+| 15.5.0 ve verzi preview 2 | Náhled | 23. října 2017 | 15.0.27019.1 |
+| 15.4.1 | Vydaná verze | 19. října 2017 | 15.0.27004.2005 |
 | 15.5 ve verzi preview 1 | Náhled | 11. října 2017 | 15.0.27009.1 |
-| 15.4 | Vydaná verze | 9. října 2017 | 15.0.27004.20002 |
+| 15.4 | Vydaná verze | 9. října 2017 | 15.0.27004.2002 |
 | 15.4 ve verzi preview 6 | Náhled | 9. října 2017| 15.0.27004.20002 |
 | 15.4 ve verzi preview 5 | Náhled | 6. října 2017 | 15.0.27004.2000 |
 | 15.4 ve verzi preview 4 | Náhled | 2. října 2017 | 15.0.26929.2 |
@@ -127,7 +127,7 @@ Následující tabulka uvádí data čísla a uvolnění sestavení pro Visual S
 | 15.3.1 | Vydaná verze | 18. srpna 2017 | 15.0.26730.08 |
 | 15.3.1 ve verzi preview 1 | Náhled | 18. srpna 2017 | 15.0.26730.08 |
 | 15.3.1  | Vydaná verze | 18. srpna 2017 | 15.0.26730.08 |
-| 15.4 ve verzi preview 1 | Náhled | 24. srpna 2017 | 15.4.26823.1 |
+| 15.4 ve verzi preview 1 | Náhled | 24. srpna 2017 | 15.0.26823.1 |
 | 15.3 | Vydaná verze | 14. srpna 2017 | 15.0.26730.3 |
 | 15.3 verze preview 7.1 | Náhled | 11. srpna 2017 | 15.0.26730.3 |
 | 15.3 verze preview 7 | Náhled | 1. srpna 2017 | 15.0.26730.0 |

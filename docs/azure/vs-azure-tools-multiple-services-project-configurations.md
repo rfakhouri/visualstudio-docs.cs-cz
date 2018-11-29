@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 9314f89dc6720e95db7a86eed541d555549d76cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e4dfa7276c217a7cf17203f6ac84bb0ce5585f94
+ms.sourcegitcommit: e03b7a4cab26fbc792f368e3c6b4ca4a03caa786
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000485"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52459709"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurace projektu Azure v sadě Visual Studio za účelem použití více konfigurací služby
 
@@ -29,7 +29,7 @@ Nastavení konfigurace jsou spravovaná a upravit v sadě Visual Studio pomocí 
 
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
-Informace o základní schémata pro definici služby a služby konfigurační soubory, najdete v článku [.csdef XML schématu](/azure/cloud-services/schema-csdef-file.md) a [.cscfg XML schématu](/azure/cloud-services/schema-cscfg-file.md) článků. Další informace o konfiguraci služby najdete v tématu [jak konfigurovat Cloud Services](/azure/cloud-services/cloud-services-how-to-configure-portal).
+Informace o základní schémata pro definici služby a služby konfigurační soubory, najdete v článku [.csdef XML schématu](/azure/cloud-services/schema-csdef-file) a [.cscfg XML schématu](/azure/cloud-services/schema-cscfg-file) článků. Další informace o konfiguraci služby najdete v tématu [jak konfigurovat Cloud Services](/azure/cloud-services/cloud-services-how-to-configure-portal).
 
 
 ## <a name="configuration-page"></a>Stránka Konfigurace
@@ -77,7 +77,7 @@ Pro nové nebo existující připojovací řetězce, vyberte **...** * na pravé
 1. Výběr **ručně zadali přihlašovací údaje** umožňuje zadat název účtu a klíč přímo pomocí informací na webu Azure Portal. Zkopírování klíče účtu:
     1. Přejděte na účet úložiště na Azure portal a vyberte **Správa klíčů**.
     1. Pokud chcete zkopírovat klíč účtu, přejděte na účet úložiště na webu Azure portal vyberte **Nastavení > přístupové klíče**, potom pomocí tlačítka pro kopírování zkopírujte primární přístupový klíč do schránky.
-1. Vyberte jednu z možností připojení. **Zadejte vlastní koncové body** se zeptá, abyste zadali konkrétní adresy URL pro objekty BLOB, tabulky a zařadí do fronty. Vlastní koncové body umožňují jeho používání [vlastních domén](/azure/storage/blobs/storage-custom-domain-name.md) a řízení přístupu k více přesně. Zobrazit [nakonfigurování připojovacích řetězců Azure Storage](/azure/storage/common/storage-configure-connection-string).
+1. Vyberte jednu z možností připojení. **Zadejte vlastní koncové body** se zeptá, abyste zadali konkrétní adresy URL pro objekty BLOB, tabulky a zařadí do fronty. Vlastní koncové body umožňují jeho používání [vlastních domén](/azure/storage/blobs/storage-custom-domain-name) a řízení přístupu k více přesně. Zobrazit [nakonfigurování připojovacích řetězců Azure Storage](/azure/storage/common/storage-configure-connection-string).
 1. Vyberte **OK**, pak **soubor > Uložit** se aktualizovat konfiguraci s nový připojovací řetězec.
 
 Při publikování aplikace do Azure, znovu, vyberte konfiguraci služby, které obsahuje připojovací řetězec účtu úložiště Azure. Po publikování aplikace ověřte, že aplikace funguje podle očekávání pro služby Azure storage.
