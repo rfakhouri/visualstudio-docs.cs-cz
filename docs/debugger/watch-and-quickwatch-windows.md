@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826788"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621640"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Podívejte se na proměnných s oknech kukátka a Rychlé kukátko 
 
 Při ladění, můžete použít **Watch** windows a **QuickWatch** sledovat proměnné a výrazy. Systému windows jsou k dispozici pouze během relace ladění.
 
 **Sledování** windows můžete zobrazit několika proměnných v době během ladění. **QuickWatch** dialogové okno zobrazí jednu proměnnou najednou a musí být uzavřeny předtím, než můžete pokračovat v ladění.
+
+Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md) a [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Sledujte proměnné okno kukátka
 
@@ -279,5 +281,5 @@ Sledovat `a` proměnné
 
 ## <a name="see-also"></a>Viz také:
  [Co je ladění?](../debugger/what-is-debugging.md)  
- [Psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Oprava chyb napsáním lépe C# kódu](../debugger/write-better-code-with-visual-studio.md)  
  [Nejdřív se podívejte na ladění](../debugger/debugger-feature-tour.md) [ladicího programu systému windows](../debugger/debugger-windows.md)

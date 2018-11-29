@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9c2a2d1ff1aeda2f9df0f496176a134e7a27e559
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380561"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621484"
 ---
 # <a name="load-test-results-summary-overview"></a>Přehled souhrnu výsledků zátěžového testu
 
@@ -127,7 +127,7 @@ Systém části zdroje testu obsahuje seznam počítačů, které podporují sad
 
 ## <a name="errors"></a>Chyby
 
-V oddílu chyby obsahuje seznam všech chyb, ke kterým došlo během zátěžového testu. Zobrazí se typ a podtyp chyby, počty a poslední zprávy. Můžete také otevřít chybu **chyby** tabulky a prozkoumejte další podrobnosti pro danou chybu. Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md) a [postupy: Analýza chyb s použitím panelu čítačů](../test/how-to-analyze-errors-using-the-counters-panel.md).
+V oddílu chyby obsahuje seznam všech chyb, ke kterým došlo během zátěžového testu. Zobrazí se typ a podtyp chyby, počty a poslední zprávy. Můžete také otevřít chybu **chyby** tabulky a prozkoumejte další podrobnosti pro danou chybu. Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Můžete sbalit a kliknutím na šipku nalevo od názvu oddílu rozbalením tohoto oddílu.

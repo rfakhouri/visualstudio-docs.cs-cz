@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826732"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621523"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Procházení kódu s ladicím programu sady Visual Studio
 
-Ladicí program sady Visual Studio můžete procházet kód pro kontrolu stavu aplikace a zobrazit jeho spuštění toku. Klávesové zkratky, příkazy ladění, zarážky a další funkce můžete rychle dostali k kód, který chcete prověřit. Seznámení se s navigačními příkazy ladicího programu a zkratky umožňuje rychlejší a snazší najít a řešení potíží v aplikacích.  Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md) a [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
+Ladicí program sady Visual Studio můžete procházet kód pro kontrolu stavu aplikace a zobrazit jeho spuštění toku. Klávesové zkratky, příkazy ladění, zarážky a další funkce můžete rychle dostali k kód, který chcete prověřit. Seznámení se s navigačními příkazy ladicího programu a zkratky umožňuje rychlejší a snazší najít a řešení potíží v aplikacích.  Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md) a [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
   
 ## <a name="basic-debugging"></a>Základní ladění  
 
@@ -187,5 +187,5 @@ Načtení symbolů společnosti Microsoft, naleznete v tématu [konfigurovat um�
 
 ## <a name="see-also"></a>Viz také:
  [Co je ladění?](../debugger/what-is-debugging.md)  
- [Psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
+ [Oprava chyb napsáním lépe C# kódu](../debugger/write-better-code-with-visual-studio.md)  
  [První pohled na ladění](../debugger/debugger-feature-tour.md) 

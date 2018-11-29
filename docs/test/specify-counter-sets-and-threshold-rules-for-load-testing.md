@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6ab7d05c5c26cef7c6479f52438cadec7f3124a
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879834"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621497"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu
 
@@ -42,7 +42,7 @@ Je důležité přidat servery v rámci testu do seznamu počítačů, na které
 |**Správa sad čítačů pro zátěžový test:** po vytvoření zátěžového testu můžete upravit sady čítače v editoru zátěžového testu. Správa sad čítačů zahrnuje výběr sadu počítačů, ze kterých chcete shromažďovat data o výkonu a přiřazení sadu čítačů, které mají být shromažďovány z jednotlivých počítačů. Můžete spravovat čítače v editoru zátěžového testu.|-   [Postupy: Správa sad čítačů](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Přidání sad čítačů k zátěžovému testu:** když vytvoříte zátěžový test pomocí **nového Průvodce zátěžovým testem**, můžete přidat počáteční sadu čítačů. Ty nabízejí sadu předdefinovaných sad čítačů pro zátěžové testy. Po vytvoření zátěžového testu můžete přidat nové čítače do existujících sad čítačů pomocí editoru zátěžového testu.|-   [Postupy: přidání čítačů do sad čítačů](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Postupy: Přidání vlastních sad čítačů](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Zadejte mezního pravidla pomocí čítačů pro zátěžový test:** pravidlo mezní hodnoty je pravidlo, které je nastavena na jednotlivé čítače na sledování využití systémových prostředků během zátěžového testu. Definice sady čítače obsahují předdefinované prahovou hodnotu pravidla pro mnoho klíčových čítačů výkonu. Mezní pravidla v zátěžových testech porovnávají hodnotu čítače výkonu s konstantní hodnotou nebo jinou hodnotou čítače výkonu.|-   [Postupy: Přidání mezního pravidla](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Přiřadit popisné názvy počítačů, které čítačem jsou mapovány sady:** můžete přidat značky počítače, které vám umožní použít popisným názvem počítače. Značky jsou zobrazeny v **mapování sady čítačů** uzel pro strom v editoru zátěžového testu. Důležitější, značky se zobrazí v sestavy aplikace Excel, které pomáhají zúčastněné strany identifikovat jakou roli má počítač v zátěžovém testu, například "Server1 Web v lab2" nebo "SQL Server2 Phoenixu".<br /><br /> Další informace najdete v tématu [sestavy zátěžové testy s výsledky pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md).|-   [Postupy: Přidání značek počítače do mapování sad čítačů](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**Přiřadit popisné názvy počítačů, které čítačem jsou mapovány sady:** můžete přidat značky počítače, které vám umožní použít popisným názvem počítače. Značky jsou zobrazeny v **mapování sady čítačů** uzel pro strom v editoru zátěžového testu. Důležitější, značky se zobrazí v sestavy aplikace Excel, které pomáhají zúčastněné strany identifikovat jakou roli má počítač v zátěžovém testu, například "Server1 Web v lab2" nebo "SQL Server2 Phoenixu".<br /><br /> Další informace najdete v tématu [sestavy zátěžové testy s výsledky pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Použití sad čítačů
 

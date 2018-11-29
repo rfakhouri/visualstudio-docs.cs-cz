@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c743cebadebfd7ae72b78953ba8ead9ec3981981
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840633"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621377"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analýza aktivity virtuálních uživatelů zátěžového testu v podrobném zobrazení Analyzéru zátěžového testu
 
@@ -29,7 +29,7 @@ ms.locfileid: "49840633"
  **Podrobnosti** zobrazení zobrazí **graf aktivity virtuálního uživatele**, který se používá k vizuální analýza jednotlivého virtuálního uživatele nebyla během zátěžového testu. **Graf aktivity virtuálního uživatele** vám umožní vidět vzory aktivity uživatelů, vzory zátěže, korelovat Nezdařená nebo pomalá testy a zobrazit žádosti pomocí další aktivity virtuálního uživatele. **Graf aktivity virtuálního uživatele** můžete také vám pomáhají určit, provozní špičky ve využití procesoru, drops požadavků za sekundu, a co testy nebo stránky, které byly spuštěny během špičky a drops.
 
 > [!NOTE]
-> Před spuštěním zátěžového testu, pro kterou chcete použít **graf podrobností aktivity virtuálního uživatele**, musíte ověřit, že **úložiště podrobností časování** je nastavena na  **AllIndividualDetails** možnost pomocí editoru zátěžových testů výkonu. Další informace najdete v tématu [postupy: nastavení shromažďování veškerých podrobností a zpřístupnění grafu aktivity virtuálního uživatele](../test/how-to-configure-load-tests-to-collect-full-details.md).
+> Před spuštěním zátěžového testu, pro kterou chcete použít **graf podrobností aktivity virtuálního uživatele**, musíte ověřit, že **úložiště podrobností časování** je nastavena na  **AllIndividualDetails** možnost pomocí editoru zátěžových testů výkonu.
 
  **Panel podrobné legendy**
 
@@ -55,7 +55,6 @@ ms.locfileid: "49840633"
 
 |Úlohy|Související témata|
 |-|-|
-|**Konfigurace vašeho zátěžového testu pro graf aktivity virtuálního uživatele:** před spuštěním zátěžového testu, který chcete zobrazit data aktivity virtuálního uživatele na, je nutné nejprve nakonfigurovat nastavení vlastností zátěžových testů.|-   [Postupy: nastavení shromažďování veškerých podrobností a zpřístupnění grafu aktivity virtuálního uživatele](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |**Spuštění zátěžového testu:** po vytvoření zátěžového testu a jeho nakonfigurování ke shromažďování dat aktivity virtuálních uživatelů, musíte spustit test, dokud se nedokončí v abyste mohli zobrazit **graf aktivity virtuálního uživatele**.||
 |**Prohlédněte si výsledky testu zatížení, které obsahují data aktivity virtuálního uživatele:** po byly vytvořeny, konfigurovány a po dokončení jeho běhu zátěžového testu můžete zobrazit data aktivity virtuálního uživatele pomocí **graf aktivity virtuálního uživatele** .|-   [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**Izolace potíží s výkonem v zátěžových testech:** můžete použít **graf aktivity virtuálního uživatele** a určit tak problémy s výkonem v zátěžovém testu.|-   [Návod: Izolace potíží s pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 6f470a8afcd0ae1886cc5b4cb8ff6f28d7a936df
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607800"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621436"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Seznamte se s projekty a řešení
 
@@ -176,7 +176,7 @@ Na řádku *Calendar.cs* soubor, který obsahuje <xref:System.Runtime.CompilerSe
 
 Pokud chcete zkontrolovat, že je funkční testování částí, zvolte **testování** > **spustit** > **všechny testy** z řádku nabídek. Zobrazí se okno **Průzkumníka testů** otevře a měli byste vidět, který **TestGetCurrentDate** testovací průchody.
 
-![Test Explorer text v sadě Visual Studio zobrazuje úspěch](media/quickstart-projects-test-explorer.png)
+![Průzkumník testů v sadě Visual Studio zobrazuje předaný testu](media/quickstart-projects-test-explorer.png)
 
 > [!TIP]
 > Pokud **Průzkumník testů** nebude automaticky otevřené, otevřete ho kliknutím **testovací** > **Windows** > **Průzkumník testů** z řádku nabídek.

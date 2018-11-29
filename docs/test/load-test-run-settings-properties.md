@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009315e2bd07cd62115c1f9130473a8c0c8d4a47
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817384"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621575"
 ---
 # <a name="load-test-run-settings-properties"></a>Vlastnosti nastavení běhu zátěžového testu
 
@@ -42,7 +42,7 @@ Parametry spuštění zátěžového testu určují celou řadu dalších nastav
 |Vlastnost|Definice|
 |-|----------------|
 |**Maximální počet protokolů testu**|Určuje maximální počet protokolů testu lze pro zátěžový test uložit. Při zadání hodnoty pro maximální počet protokolů testu je dosaženo, zátěžového testu se zastaví shromažďování protokolů. Proto se v protokolech neshromáždí na začátku testu není konec. Zátěžový test bude nadále spouštět, dokud se nedokončí.|
-|**Pro dokončené testy uložit frekvenci protokolování**|Určuje frekvenci, s jakou se zapíše protokol testu. Číslo označuje, že jedno vzdálené každý zadaný počet testů, které se uloží do protokolu testu. Například zadáte hodnotu 10 Určuje, že desetinu, dvacáté, třicetiny a tak dále, se zapíšou do protokolu testu. Nastavením této hodnoty na 0 určuje, že se uloží protokolů testu.<br /><br /> Další informace najdete v tématu [postupy: určení frekvence ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Pro dokončené testy uložit frekvenci protokolování**|Určuje frekvenci, s jakou se zapíše protokol testu. Číslo označuje, že jedno vzdálené každý zadaný počet testů, které se uloží do protokolu testu. Například zadáte hodnotu 10 Určuje, že desetinu, dvacáté, třicetiny a tak dále, se zapíšou do protokolu testu. Nastavením této hodnoty na 0 určuje, že se uloží protokolů testu.|
 |**Selhání testu uložit protokol**|Logická hodnota, která určuje, zda-li ukládání protokolů testování selhání testu v rámci zátěžového testu. Výchozí hodnota je `True`.<br /><br /> Další informace najdete v tématu [postupy: určení, zda jsou selhání testu ukládána do protokolů testování](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  Další informace najdete v tématu [nastavení upravit zátěžového testu protokolování](../test/modify-load-test-logging-settings.md).

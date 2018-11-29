@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 867e586b5a50dee47a86d8a57a978f51ee0d0c3b
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909691"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621364"
 ---
 # <a name="modify-load-test-logging-settings"></a>Úprava nastavení protokolování zátěžového testu
 
@@ -25,13 +25,8 @@ Výsledek dokončeného zátěžového testu obsahuje vzorky čítače výkonu a
 
 |Úloha|Související témata|
 |-|-----------------------|
-|**Určete, jak často k uložení protokolů při spuštění zátěžového testu:** můžete určit, jak často má být protokol testu při spuštění zátěžového testu.|-   [Postupy: určení frekvence ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**Uložení protokolů, pokud zátěžový test selže:** můžete určit, jestli chcete při každém selhání testu uložit protokol testu.|-   [Postupy: určení, zda jsou selhání testu ukládána do protokolů testování](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Nastavit maximální velikost souboru protokolu:** můžete upravit konfigurační soubor XML, který je přidružený k službě kontroleru testů zadat maximální velikost souboru chcete použít pro soubor protokolu.|[Postupy: určení maximální velikosti souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
-
-## <a name="related-tasks"></a>Související úlohy
-
-Související vlastností je **úložiště podrobností časování**. Další informace najdete v tématu [postupy: nastavení shromažďování veškerých podrobností a zpřístupnění grafu aktivity virtuálního uživatele](../test/how-to-configure-load-tests-to-collect-full-details.md).
 
 ## <a name="see-also"></a>Viz také:
 

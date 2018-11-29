@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 563e7c859c7800d543cd19e444b2fda8363a17c6
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870052"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621222"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
 
@@ -82,7 +82,6 @@ V následující tabulce jsou uvedeny předdefinované grafy, které jsou k disp
 |**Zobrazit čítače v grafech:** přidáte různé druhy dat k zátěžovému testu výsledků graf tak, že čítače v grafu.|-   [Postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Přiblížit na grafy:** po dokončení zátěžového testu můžete použít přiblížení pruhy pro přiblížení či posune do oblasti grafu. Podle přiblížit, můžete zkoumat data, která byla vygenerována během spuštění jemnější podrobně zátěžového testu.|-   [Postupy: přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Rozložení grafů vedle sebe:** můžete uspořádat grafy výsledků zátěžového testu v některém z několika způsoby. Až čtyři grafy můžete dlaždici.||
-|**Upravení vzhledu vykreslení čítače výkonu v grafu:** zobrazování možnosti čáry pro čítače výkonu v grafu můžete změnit. To zahrnuje barvu a styl čáry. Navíc můžete určit, zda chcete automaticky nebo ručně zadat, jaký rozsah, který chcete použít pro vykreslení čítače výkonu.|-   [Postupy: Zadejte možnosti pro čítače grafů grafu](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**Vytváření vlastních grafů:** můžete navrhovat grafy, které zobrazí konkrétní informace o výsledcích zátěžového testu. Navrhněte vlastní graf tak, že zadáte počítadla testu zatížení, které se zobrazí grafu.|-   [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Exportovat data čítače výkonu v grafu:** můžete exportovat data grafu do aplikace Microsoft Excel s použitím **exportovat Data grafu do aplikace Excel** tlačítko **Analyzéru zátěžového testu** nástrojů při nacházíte **grafy** zobrazení.||
 

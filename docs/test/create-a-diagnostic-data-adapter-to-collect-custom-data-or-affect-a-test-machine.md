@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e0a7815b57fa49239a0895e6733a13c5c83e99e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71cee1bb598c6d2bf59b0e664f5f3560ae1fd0ee
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860888"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621104"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Vytvoření adaptéru diagnostických dat pro shromáždění vlastních dat nebo ovlivnění testovacího počítače
 
@@ -28,16 +28,13 @@ Pokud používáte testy ze sady Visual Studio, musíte nastavit tyto jako aktiv
 
 ## <a name="tasks"></a>Úlohy
 
- Následující témata vám pomohou s vytvořením Adaptérů diagnostiky dat:
+Následující témata vám pomohou s vytvořením Adaptérů diagnostiky dat:
 
 |Úlohy|Související témata|
 |-|-----------------------|
 |**Vytvoření adaptéru diagnostiky dat:** vytvořit adaptér diagnostických dat vytvořením knihovny tříd a pak použít API adaptéru diagnostiky dat ke shromažďování informací, že chcete nebo ovlivnění testovacího systému, který používáte ke spuštění testů.|-   [Postupy: vytvoření adaptéru diagnostických dat](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**Instalace vlastního adaptéru diagnostiky dat:** nainstalujete adaptér diagnostických dat nebo adaptér poskytnutý někým jiným, zkopírováním do správného adresáře.|-   [Postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
 |**Výběr vlastního adaptéru diagnostiky dat pro použití jsou spuštěny:** adaptéru diagnostických dat, pro který má použít pro nastavení testu, můžete vybrat tak, aby adaptér se používá při spuštění testů.|-   [Shromažďování diagnostických dat při testování (Azure testovací plány)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Shromažďování diagnostických dat v manuálních testů (Azure testovací plány)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-|**Konfigurace, co adaptér diagnostiky dat dělá:** můžete nakonfigurovat nastavení pro kontrolu akcí adaptéru diagnostických dat v konkrétních nastaveních testu.|-   [Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
 
 ## <a name="see-also"></a>Viz také:
 
-- [Ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)

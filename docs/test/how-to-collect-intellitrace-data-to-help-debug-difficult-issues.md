@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 593540e125980e245142052648a5a9d8894234fd
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321148"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621549"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: shromažďování dat IntelliTrace pro ladění složitých problémů
 
@@ -101,7 +101,7 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testu po
 11. (Volitelné) Zvolte **Upřesnit** kartu. V dalším kroku vyberte šipku vedle položky **maximální množství místa na disku pro záznam** a vyberte maximální velikost, kterou chcete pro tento soubor IntelliTrace povolit.
 
     > [!NOTE]
-    > Pokud velikost pro záznam zvětšíte, může dojít k problému s vypršením času při ukládání tohoto záznamu společně s výsledky testů. Další informace o tom, jak zvýšit hodnoty časového limitu pro adaptéry diagnostiky dat naleznete v tématu [postupy: zabránění vypršení časových limitů u adaptérů diagnostických dat](../test/how-to-prevent-time-outs-for-diagnostic-data-adapters.md).
+    > Pokud velikost pro záznam zvětšíte, může dojít k problému s vypršením času při ukládání tohoto záznamu společně s výsledky testů.
 
 12. Pokud používáte Microsoft Test Manager, zvolte **Uložit**. Pokud používáte Visual Studio, zvolte **OK**. Nastavení technologie IntelliTrace je nyní nakonfigurováno a uloženo pro nastavení testů.
 

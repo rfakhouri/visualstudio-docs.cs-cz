@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 658a51ffddb8d5cf84b921a7172c11e4fa7a566e
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861914"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621562"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Postupy: vytvoření sestavy zátěžových testů výkonu pomocí aplikace Microsoft Excel
 
@@ -45,7 +45,7 @@ Na následujícím obrázku je příklad sestavy, která zobrazuje korelaci mezi
 Sestavy aplikace Excel mohou být generovány v **Analyzéru zátěžového testu**, s použitím **vytvořit sestavu aplikace Excel** tlačítko na panelu nástrojů nebo z aplikace Excel s použitím **sestava zátěžového testu** možnost **zátěžový Test** karty **Office** pásu karet.
 
 > [!NOTE]
-> Pokud přidáte komentáře do zátěžového testu se zobrazí v sestavě aplikace Excel. Další informace najdete v tématu [postupy: přidávání komentářů během analýzy dokončeného zátěžového testu](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Pokud chcete přidat komentáře k zátěžovému testu, se zobrazí v sestavě aplikace Excel.
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>Ke generování sestav porovnání zátěžových testů pomocí aplikace Excel
 

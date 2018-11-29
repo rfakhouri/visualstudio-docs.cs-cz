@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b395d845e53e8d9632cce27ae0714e9bc0a87d26
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834278"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621338"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Sestava zátěžové testy s výsledky pro porovnávání testů a analýzu trendů
 
@@ -33,7 +33,7 @@ Definice sestav jsou uloženy v databázi zátěžového testu. Při uložení s
 Soubor tabulky můžete také sdílet se zúčastněnými stranami, tak, aby zúčastněné strany není potřeba připojení k databázi pro zobrazení sestavy.
 
 > [!NOTE]
-> Pokud přidáte komentáře do zátěžového testu se zobrazí v sestavě aplikace Excel. Další informace najdete v tématu [postupy: přidávání komentářů během analýzy dokončeného zátěžového testu](../test/how-to-add-comments-on-a-completed-load-test.md).
+> Pokud chcete přidat komentáře k zátěžovému testu, se zobrazí v sestavě aplikace Excel.
 
 ## <a name="tasks"></a>Úlohy
 

@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389374"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621588"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Oprava chyb napsáním lépe C# kódu pomocí sady Visual Studio
 
-Ladění kódu může být časově – a někdy náročný – úloh. Může zabrat určitý čas zjistěte, jak efektivní ladění. Výkonné prostředí IDE, jako je Visual Studio můžete usnadní to mnohem jednodušší. Integrované vývojové prostředí můžou pomoct při ladění kódu rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout získat holistický pohled ladění procesu, tak budete vědět, kdy použít analyzátor kódu a kdy se má použít ladicí program a kdy se má použít jiné nástroje.
+Ladění kódu může být časově – a někdy náročný – úloh. Může zabrat určitý čas zjistěte, jak efektivně ladit, ale výkonné prostředí IDE, jako je Visual Studio může být vaše úloha mnohem snazší. Integrované vývojové prostředí můžou pomoct při ladění kódu rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout získat holistický pohled ladění procesu, tak budete vědět, kdy použít analyzátor kódu a kdy se má použít ladicí program a kdy se má použít jiné nástroje.  
 
 V tomto článku se budeme mluvit o využívání rozhraní IDE pro produktivitu vaší relace ladění. Jsme dotykového ovládání na několik úloh, jako například:
 
