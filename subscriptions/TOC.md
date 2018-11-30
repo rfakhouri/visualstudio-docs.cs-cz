@@ -58,7 +58,7 @@
 ###### [Nalezení vašeho primárního kontaktu](find-primary-contact.md)
 #### [V případě MPSA](mpsa.md)
 #### [ cloudových předplatných](cloud-admin.md)
-#### [Video k onboardingu](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [Video k onboardingu](https://youtu.be/plSu6fpi7UI)
 ### [Použití Portálu pro správu](using-admin-portal.md)
 #### [Přiřazení předplatných](assign-license.md)
 #### [Opětovné odeslání e-mailů k zadáním](resend-assignment-email.md)

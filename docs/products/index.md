@@ -5,12 +5,12 @@ title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
-ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
+ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44339668"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52712877"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,37 +42,18 @@ ms.locfileid: "44339668"
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Služby Azure DevOps">
+                                <a href="/visualstudio/mac" title="Visual Studio pro Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Služby Azure DevOps</h3>
-                                                    <p>Zvyšte svou produktivitu týmu pomocí agilní nástroje a sestavy. Sestavení, testování a nasazení projektů ze správy zdrojového kódu pomocí moderních nástrojů CI/CD.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Team Foundation Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Team Foundation Server</h3>
-                                                    <p>Instalovat, upgradovat a spravovat místní nasazení.</p>
+                                                    <h3>Visual Studio for Mac</h3>
+                                                    <p>Vytvářejte aplikace a hry pomocí Mac, pro cloud, iOS, Android, macOS a přenosná zařízení.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,25 +73,6 @@ ms.locfileid: "44339668"
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
                                                     <p>Bohaté možnosti úprav a ladění na stovkách jazyků v systémech MacOS, Linux a Windows</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/visualstudio/mac" title="Visual Studio pro Mac">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Visual Studio for Mac</h3>
-                                                    <p>Vytvářejte aplikace a hry pomocí Mac, pro cloud, iOS, Android, macOS a přenosná zařízení.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,10 +117,49 @@ ms.locfileid: "44339668"
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/azure/devops/" title="Služby Azure DevOps">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Služby Azure DevOps</h3>
+                                                    <p>Zvyšte svou produktivitu týmu pomocí agilní nástroje a sestavy. Sestavení, testování a nasazení projektů ze správy zdrojového kódu pomocí moderních nástrojů CI/CD.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/" title="Azure DevOps Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Server</h3>
+                                                    <p>Instalovat, upgradovat a spravovat místní nasazení.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
+        <p>Visual Studio Team Services byl přejmenovaný serverem Azure DevOps a Team Foundation Server (TFS) byl přejmenován Azure DevOps serveru. Zobrazit <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">co se stalo s Visual Studio Team Services?</a> a <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server je teď Azure DevOps Server</a>.</p>
     </div>
 </div>
