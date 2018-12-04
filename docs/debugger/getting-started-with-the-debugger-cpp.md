@@ -1,12 +1,12 @@
 ---
-title: Další informace k ladění C# kódu pomocí ladicího programu sady Visual Studio
+title: Další informace k ladění pomocí ladicího programu sady Visual Studio C++
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
-ms.date: 11/27/2018
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 dev_langs:
-- CSharp
+- C++
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821302"
+ms.locfileid: "52825463"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Kurz: Zjistěte, jak ladit C# kódu pomocí sady Visual Studio
+# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Kurz: Další informace k ladění kódu jazyka C++ pomocí sady Visual Studio
 
-Tento článek obsahuje představení funkcí v ladicím programu sady Visual Studio podrobného návodu. Pokud jste *ladění aplikace*, obvykle to znamená, že spustíte aplikaci s připojeným ladícím nástrojem. Když toto provedete, ladicí program poskytuje mnoho způsobů, jak zjistit, co kód dělá, při spuštění. Můžete procházet kódem a podívejte se na hodnoty uložené v proměnné, můžete nastavit hodinky na proměnné zobrazíte, když se změní hodnoty, můžete prozkoumat cesta provedení kódu naleznete v tématu, jestli větev kódu je spuštěná, a tak dále. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) a [opravovat chyby napsáním lépe C# kód](../debugger/write-better-code-with-visual-studio.md) před provedením tohoto článku.
+Tento článek obsahuje představení funkcí v ladicím programu sady Visual Studio podrobného návodu. Pokud potřebujete vyšší úroveň zobrazení funkcí ladicího programu, [prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md). Pokud jste *ladění aplikace*, obvykle to znamená, že spustíte aplikaci s připojeným ladícím nástrojem. Když toto provedete, ladicí program poskytuje mnoho způsobů, jak zjistit, co kód dělá, při spuštění. Můžete procházet kódem a podívejte se na hodnoty uložené v proměnné, můžete nastavit hodinky na proměnné zobrazíte, když se změní hodnoty, můžete prozkoumat cesta provedení kódu naleznete v tématu, jestli větev kódu je spuštěná, a tak dále. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
 
 | | |
 |---------|---------|
 | ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, která zobrazuje podobný postup. |
-
-I když je ukázková aplikace C#, většinu funkcí platí pro C++, Visual Basic, F#, Pythonu, JavaScriptu a jinými jazyky podporovanými sady Visual Studio (F# nepodporuje Edit-and-continue. F#a nepodporuje jazyk JavaScript **automatické hodnoty** okno). Snímky obrazovky jsou v jazyce C#.
 
 V tomto kurzu se naučíte:
 
@@ -42,126 +40,124 @@ V tomto kurzu se naučíte:
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj desktopových aplikací .NET** pracovního vytížení.
+* Musíte mít nainstalovanou sadu Visual Studio 2017 a **vývoj desktopových aplikací pomocí C++** pracovního vytížení.
 
     Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Vyberte. **.NET desktop development** úloh, klikněte na tlačítko **změnit**.
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno (vyberte **souboru**  >  **Nové** > **projektu**). Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
 1. V sadě Visual Studio, zvolte **soubor > Nový projekt**.
 
-2. V části **Visual C#** , zvolte **Windows Desktop**a potom v prostředním podokně vyberte **konzolovou aplikaci**.
+2. V části **Visual C++**, zvolte **Windows Desktop**a potom v prostředním podokně vyberte **Konzolová aplikace Windows**.
 
-    Pokud se nezobrazí **konzolovou aplikaci** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte *vývoj desktopových aplikací .NET** úloh, klikněte na tlačítko **změnit**.
+    Pokud se nezobrazí **Konzolová aplikace Windows** šablony projektu, klikněte na tlačítko **otevřít instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací pomocí C++** úloh, klikněte na tlačítko **změnit**.
 
 3. Zadejte název, například **get spuštění – ladění** a klikněte na tlačítko **OK**.
 
     Visual Studio vytvoří projekt.
 
-4. V *Program.cs*, nahraďte následující kód
+4. V *get spuštění debugging.cpp*, nahraďte následující kód
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace get_started_debugging
+    ```c++
+    int main()
     {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
+        return 0;
     }
     ```
 
     s tímto kódem:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```c++
+    #include "pch.h"
 
-    public class Shape
+    #include <string>
+    #include <vector>
+    #include <iostream>
+
+    class Shape
     {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
+        int privateX = 0;
+        int privateY = 0;
+        int privateHeight = 0;
+        int privateWidth = 0;
+
+        int getX() const { return privateX; }
+        void setX(int value) { privateX = value; }
+
+        int getY() const { return privateY; }
+        void setY(int value) { privateY = value; }
+
+        int getHeight() const { return privateHeight; }
+        void setHeight(int value) { privateHeight = value; }
+
+        int getWidth() const { return privateWidth; }
+        void setWidth(int value) { privateWidth = value; }
+
+        public:
         // Virtual method
-        public virtual void Draw()
+        virtual void Draw()
         {
-            Console.WriteLine("Performing base class drawing tasks");
+            std::wcout << L"Performing base class drawing tasks" << std::endl;
         }
-    }
+    };
 
-    class Circle : Shape
+    class Circle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
+        // Code to draw a circle...
+        std::wcout << L"Drawing a circle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Rectangle : Shape
+    class Rectangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
+        // Code to draw a rectangle...
+        std::wcout << L"Drawing a rectangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Triangle : Shape
+    class Triangle : public Shape
     {
-        public override void Draw()
+        public:
+        void Draw() override
         {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
+        // Code to draw a triangle...
+        std::wcout << L"Drawing a trangle" << std::endl;
+        Shape::Draw();
         }
-    }
+    };
 
-    class Program
+    int main(std::vector<std::wstring> &args)
     {
-        static void Main(string[] args)
+        auto shapes = std::vector<Shape*>
         {
+            new Rectangle(),
+            new Triangle(),
+            new Circle()
+        };
 
-            var shapes = new List<Shape>
-            {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
-            }
-
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+        for (auto shape : shapes)
+        {
+            shape->Draw();
         }
-
     }
 
     /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
+    Drawing a rectangle
+    Performing base class drawing tasks
+    Drawing a triangle
+    Performing base class drawing tasks
+    Drawing a circle
+    Performing base class drawing tasks
     */
     ```
 
@@ -171,7 +167,7 @@ V tomto kurzu se naučíte:
 
      **F5** spustí aplikaci se ladicí program připojen k aplikaci zpracování, ale v tuto chvíli jsme neprovedli nic zvláštního prozkoumat kód. Proto pouze načítání aplikace a zobrazí výstup konzoly.
 
-    ```cmd
+    ```
     Drawing a rectangle
     Performing base class drawing tasks
     Drawing a triangle
@@ -186,9 +182,9 @@ V tomto kurzu se naučíte:
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Nastavte zarážku a spuštění ladicího programu
 
-1. V `foreach` smyčku z `Main` fungovat, nastavte zarážku kliknutím na levém okraji následující řádek kódu:
+1. V `for` smyčku z `main` fungovat, nastavte zarážku kliknutím na levém okraji následující řádek kódu:
 
-    `shape.Draw()`
+    `shape->Draw()`
 
     Se zobrazí červený kruh, kde nastavit zarážku.
 
@@ -196,7 +192,7 @@ V tomto kurzu se naučíte:
 
 2. Stisknutím klávesy **F5** nebo **spustit ladění** tlačítko! [ Spuštění ladění] (.. "Spustit ladění", aplikace spustí /Debugger/Media/dbg-Tour-Start-Debugging.PNG a ladicí program běží na řádek kódu, kde nastavit zarážku.
 
-    ![Nastavte a použijte zarážku](../debugger/media/get-started-set-breakpoint.gif)
+    ![Nastavte a použijte zarážku](../debugger/media/get-started-set-breakpoint-cpp.gif)
 
     Žlutá šipka označuje příkaz na které ladicí program pozastaví, což také pozastaví provádění aplikace na stejném místě (Tento příkaz nebyl dosud proveden).
 
@@ -208,23 +204,23 @@ V tomto kurzu se naučíte:
 
 Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem, jak získat rychlé při spuštění aplikace v ladicím programu (ekvivalentní příkazy jako je například nabídka příkazy jsou uvedeny v závorkách).
 
-1. Během pozastavení v `shape.Draw` volání metody `Main` metody, stiskněte klávesu **F11** (nebo zvolte **ladění > Krokovat s vnořením**) pro přechod do kódu pro `Rectangle` třídy.
+1. Během pozastavení v `shape->Draw` volání metody `main` funkci, stiskněte klávesu **F11** (nebo zvolte **ladění > Krokovat s vnořením**) pro přechod do kódu pro `Rectangle` třídy.
 
-     ![Můžete krokovat s vnořením kód F11](../debugger/media/get-started-f11.png "F11 Krokovat s vnořením")
+     ![Můžete krokovat s vnořením kód F11](../debugger/media/get-started-f11-cpp.png "F11 Krokovat s vnořením")
 
      Je F11 **Krokovat s vnořením** příkazu a posune jeden příkaz spuštění aplikace v čase. F11 je dobrým způsobem, jak prozkoumat provádění toku v nejvíce podrobností. (Rychlejší procházení kódu, ukážeme vám několik možností také.) Ve výchozím nastavení, ladicí program přeskočí neuživatelském kódu (Pokud potřebujete další podrobnosti, [pouze můj kód](../debugger/just-my-code.md)).
 
-2. Stisknutím klávesy **F10** (nebo zvolte **ladit > Krokovat s přeskočením**) několikrát, dokud ladicí program se zastaví na `base.Draw` volání metody a poté stiskněte klávesu **F10** ještě jednou.
+2. Stisknutím klávesy **F10** (nebo zvolte **ladit > Krokovat s přeskočením**) několikrát, dokud ladicí program se zastaví na `Shape::Draw` volání metody a poté stiskněte klávesu **F10** ještě jednou.
 
-     ![F10 můžete krokovat s přeskočením kód](../debugger/media/get-started-step-over.png "F10 Krokovat s přeskočením")
+     ![F10 můžete krokovat s přeskočením kód](../debugger/media/get-started-step-over-cpp.png "F10 Krokovat s přeskočením")
 
-     Všimněte si, že tento čas, který ladicí program Nekrokovat s vnořením do `Draw` metody základní třídy (`Shape`). **F10** přejde ladicí program bez krokování do funkce nebo metody v kódu vaší aplikace (kód stále provádí). Stisknutím klávesy F10 na `base.Draw` volání metody (místo **F11**), jsme přeskočil implementační kód pro `base.Draw` (které možná jsme nejsou nyní zájem).
+     Všimněte si, že tento čas, který ladicí program Nekrokovat s vnořením do `Draw` metody základní třídy (`Shape`). **F10** přejde ladicí program bez krokování do funkce nebo metody v kódu vaší aplikace (kód stále provádí). Stisknutím klávesy F10 na `Shape::Draw` volání metody (místo **F11**), jsme přeskočil implementační kód pro `Draw` v základní třídě (který možná nás zajímá není nyní).
 
 ## <a name="navigate-code-using-run-to-click"></a>Vyhledání kódu pomocí běžet do kliknutí
 
-1. V editoru kódu, přejděte dolů a najeďte myší `Console.WriteLine` metoda ve `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png "RunToClick")se zobrazí na levé straně.
+1. V editoru kódu, přejděte dolů a najeďte myší `std::cout` v `Triangle` třídy do zelené **běžet do kliknutí** tlačítko ![běžet do kliknutí](../debugger/media/dbg-tour-run-to-click.png "RunToClick") Zobrazí se na levé straně.
 
-     ![Použít Run to Click funkce](../debugger/media/get-started-run-to-click.png "běžet do kliknutí")
+     ![Použít Run to Click funkce](../debugger/media/get-started-run-to-click-cpp.png "běžet do kliknutí")
 
    > [!NOTE]
    > **Běžet do kliknutí** je novinkou systémů tlačítko [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Pokud nevidíte tlačítko zelenou šipku, použijte **F11** v tomto příkladu místo toho k přechodu na správném místě ladicí program.
@@ -233,7 +229,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
     Pomocí tohoto tlačítka je podobné nastavení dočasné zarážky. **Běžet do kliknutí** je užitečné pro rychlé navigace v rámci viditelné oblasti kódu aplikace (můžete kliknout na jakékoli otevření souboru).
 
-    Ladicí program přejde `Console.WriteLine` implementace metody pro `Triangle` třídy.
+    Ladicí program přejde `std::cout` implementace metody pro `Triangle` třídy.
 
     Během pozastavení, si všimnete překlep! Je zadáno chybně výstupu "Kreslení trangle". Jsme tady ho můžou opravit při spuštění aplikace v ladicím programu.
 
@@ -241,7 +237,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
 1. Klikněte na tlačítko do "Kreslení trangle" a zadejte opravu, změna "trangle" na "trojúhelník".
 
-1. Stisknutím klávesy **F11** jednou a můžete zobrazit znovu přejde ladicí program.
+1. Stisknutím klávesy **F11** jednou, se zobrazí zpráva, že kód je opětovné kompilaci, a pak přejde ladicí program znovu.
 
     > [!NOTE]
     > V závislosti na tom, jaký typ kódu upravit v ladicím programu může se zobrazit zpráva upozornění. V některých případech kód potřeba překompilovat, než budete moct pokračovat.
@@ -254,7 +250,7 @@ Většinou, klávesové zkratky tady používáme, protože je dobrým způsobem
 
      Tento příkaz pokračuje v provádění aplikace (a přejde ladicí program) až do aktuálního funkce vrátí.
 
-     Měli byste se vrátit `foreach` smyčky v `Main` – metoda.
+     Měli byste se vrátit `for` smyčky v `main` – metoda.
 
 ## <a name="restart-your-app-quickly"></a>Rychlé restartování aplikace
 
@@ -262,39 +258,35 @@ Klikněte na tlačítko **restartovat** ![restartovat aplikaci](../debugger/medi
 
 Když stisknete klávesu **restartovat**, šetří čas a zastavuje se aplikace a restartování ladicího programu. Ladicí program pozastaví na první zarážce, kterou dosáhnete spuštěním kódu.
 
-Ladicí program se znovu zastaví na zarážce, nastavíte na `shape.Draw()` metody.
+Ladicí program se znovu zastaví na zarážce, nastavíte na `shape->Draw()` metody.
 
 ## <a name="inspect-variables-with-data-tips"></a>Kontrolovat proměnné s datových tipech
 
 Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečnějších funkce ladicího programu, a to různými způsoby. Při pokusu o ladění chyby se často, pokoušíte zjistit, zda jsou proměnné ukládání hodnot, které očekáváte, že ho, aby v určitou dobu.
 
-1. Během pozastavení na `shape.Draw()` metoda, najeďte myší `shape` objektu a zobrazit jeho výchozí hodnota vlastnosti, což je typ objektu `Rectangle`.
+1. Během pozastavení na `shape->Draw()` metoda, najeďte myší `shapes` kontejneru (vektorový objekt) a zobrazit její hodnotu vlastnosti výchozí `size` vlastnosti zobrazující `size=3`.
 
-1. Rozbalte `shape` objektu zobrazíte její vlastnosti, jako `Height` vlastnost, která má hodnotu 0.
+1. Rozbalte `shapes` objektu zobrazíte všechny její vlastnosti, jako je například první index pole `[0]`, který má adresu paměti.
 
-1. Stisknutím klávesy **F10** (nebo **ladění** > **Krokovat s přeskočením**) několikrát k iteraci v rámci jednou `foreach` smyčku pozastavení znovu na `shape.Draw()`.
+    Objekty zobrazení jejich vlastností můžete dále rozšířit.
 
-1. Najeďte myší tvar objektu znovu ale tentokrát uvidíte, že máte nového objektu s typem `Triangle`.
+1. Rozbalte první index `[0]` zobrazíte `privateHeight` vlastnosti obdélníku.
 
-     ![Zobrazení datového tipu](../debugger/media/get-started-data-tip.gif "zobrazení popisu dat.")
+     ![Zobrazení datového tipu](../debugger/media/get-started-data-tip-cpp.png "zobrazení popisu dat.")
 
-    Často při ladění, chcete rychle zkontrolovat hodnoty vlastností pro proměnné, chcete-li zobrazit, jestli jsou jejich ukládání hodnoty, které očekáváte, že je pro uložení, a datových tipech jsou dobrým způsobem, jak to udělat.
+     Často při ladění, chcete rychle zkontrolovat hodnoty vlastností pro objekty a datové tipy jsou dobrým způsobem, jak to udělat.
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Kontrolovat proměnné s okna Automatické hodnoty a místní hodnoty
 
 1. Podívejte se na **automatické hodnoty** okno v dolní části editoru kódu.
 
-    Pokud se zavře, otevřete ho během pozastavení v ladicím programu výběrem **ladění** > **Windows** > **automatické hodnoty**.
+     ![Kontrolovat proměnné v okně Automatické hodnoty](../debugger/media/get-started-autos-window-cpp.png "okno Automatické hodnoty")
 
-1. Rozbalte `shapes` objektu.
+    V **automatické hodnoty** okně se zobrazí proměnné a jejich aktuální hodnoty. Pro jazyk C++ **automatické hodnoty** okno zobrazuje proměnné v předchozí tři řádky kódu.
 
-     ![Kontrolovat proměnné v okně Automatické hodnoty](../debugger/media/get-started-autos-window.png "okno Automatické hodnoty")
+2. Dále, podívejte se na **lokální** okno na kartě vedle **automatické hodnoty** okna.
 
-    V **automatické hodnoty** okně se zobrazí proměnné a jejich aktuální hodnoty. **Automatické hodnoty** okně se zobrazí všechny proměnné používané v aktuálním řádkem nebo předchozí řádku (v dokumentaci pro konkrétní jazyk chování).
-
-1. Dále, podívejte se na **lokální** okno na kartě vedle **automatické hodnoty** okna.
-
-    **Lokální** v okně se zobrazí proměnné, které jsou v aktuálním [oboru](https://www.wikipedia.org/wiki/Scope_(computer_science)), to znamená, aktuální kontext spuštění.
+    **Lokální** v okně se zobrazí proměnné, které jsou v aktuálním [oboru](https://www.wikipedia.org/wiki/Scope_(computer_science)), to znamená, aktuálním kontextu spuštění kódu.
 
 ## <a name="set-a-watch"></a>Nastavení sledování
 
@@ -306,15 +298,13 @@ Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečněj
 
 ## <a name="examine-the-call-stack"></a>Prozkoumat zásobník volání
 
-1. Během pozastavení v `foreach` opakovat, klikněte na tlačítko **zásobník volání** okna, která je ve výchozím nastavení, otevřete v pravém dolním podokně.
+1. Během pozastavení v `for` opakovat, klikněte na tlačítko **zásobník volání** okna, která je ve výchozím nastavení, otevřete v pravém dolním podokně.
 
-    Pokud se zavře, otevřete ho během pozastavení v ladicím programu výběrem **ladění** > **Windows** > **zásobník volání**.
+2. Klikněte na tlačítko **F11** několikrát, dokud se nezobrazí pozastavení v ladicím programu `Shape::Draw` metodu `Rectangle` třídy v editoru kódu. Podívejte se na **zásobník volání** okna.
 
-2. Klikněte na tlačítko **F11** několikrát, dokud se nezobrazí pozastavení v ladicím programu `Base.Draw` metodu `Triangle` třídy v editoru kódu. Podívejte se na **zásobník volání** okna.
+    ![Prozkoumat zásobník volání](../debugger/media/get-started-call-stack-cpp.png "ExamineCallStack")
 
-    ![Prozkoumat zásobník volání](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    **Zásobník volání** okno zobrazuje pořadí, ve kterém jsou získávání volány metody a funkce. Na horní zobrazený řádek zobrazuje aktuální funkci ( `Triangle.Draw` metody v této aplikaci). Druhý řádek ukazuje, že `Triangle.Draw` byla volána `Main` metody a tak dále.
+    **Zásobník volání** okno zobrazuje pořadí, ve kterém jsou získávání volány metody a funkce. Na horní zobrazený řádek zobrazuje aktuální funkci ( `Rectangle::Draw` metoda v tomto příkladu). Druhý řádek ukazuje, že `Rectangle::Draw` byla volána `main` funkce a tak dále.
 
    > [!NOTE]
    > **Zásobník volání** okno je podobné ladění perspektivy v některých prostředí IDE, jako je Eclipse.
@@ -327,11 +317,11 @@ Funkce, které umožňují kontrolovat proměnné jsou jedním z nejužitečněj
 
 ## <a name="change-the-execution-flow"></a>Změna toku provádění
 
-1. Pomocí ladicího programu v pozastavena `Circle.Draw` volání metody, pomocí myši a zkopírovat žlutá šipka (spuštění ukazatele) na levé straně a přesunout žlutou šipku na jeden řádek nahoru `Console.WriteLine` volání metody.
+1. Pomocí ladicího programu v pozastavena `Shape::Draw` volání metody, pomocí myši a zkopírovat žlutá šipka (spuštění ukazatele) na levé straně a přesunout žlutou šipku na jeden řádek nahoru `std::cout` volání metody.
 
 1. Stisknutím klávesy **F11**.
 
-    Znovu spustí ladicí program `Console.WriteLine` – metoda (vidíte to v okně výstup konzoly).
+    Znovu spustí ladicí program `std::cout` – metoda (vidíte to v okně výstup konzoly).
 
     Změnou provádění toku můžete provést kroky, jako je test cesty spuštění odlišný kód nebo znovu spustit kód bez restartování ladicího programu.
 

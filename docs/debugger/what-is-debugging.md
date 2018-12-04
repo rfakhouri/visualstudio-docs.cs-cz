@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b156f5519fd60bdc5059863b087a3553ac8c086c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621235"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821445"
 ---
 # <a name="what-is-debugging"></a>Co je ladění?
 
@@ -25,7 +25,7 @@ Ladicí program sady Visual Studio je mocný nástroj. Předtím, než vám uká
 
 ## <a name="debugger-vs-debugging"></a>Ladicí program a ladění
 
-Termín *ladění* může znamenat spoustu různých věcí, ale většina doslova znamená odebrání Service bus v kódu. Nyní existuje mnoho způsobů, jak to provést. Například můžete ladit naskenováním kódu hledá překlepy nebo pomocí nástroje code analyzer. Pomocí profileru výkonu může být ladění kódu. Nebo může být ladění pomocí *ladicí program*.
+Termín *ladění* může znamenat spoustu různých věcí, ale většina doslova znamená odebrání chyb z uživatelského kódu. Nyní existuje mnoho způsobů, jak to provést. Například můžete ladit naskenováním kódu hledá překlepy nebo pomocí nástroje code analyzer. Pomocí profileru výkonu může být ladění kódu. Nebo může být ladění pomocí *ladicí program*.
 
 Ladicí program je velmi specializované vývojářský nástroj, který připojí k vaší běžící aplikaci a umožňuje vám umožní zkontrolovat váš kód. V dokumentaci k ladění pro Visual Studio to je obvykle co myslíme, když říkáme "ladění".
 

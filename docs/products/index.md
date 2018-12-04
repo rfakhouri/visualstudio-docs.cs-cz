@@ -5,12 +5,12 @@ title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
-ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52712877"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821354"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -160,6 +160,6 @@ ms.locfileid: "52712877"
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services byl přejmenovaný serverem Azure DevOps a Team Foundation Server (TFS) byl přejmenován Azure DevOps serveru. Zobrazit <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">co se stalo s Visual Studio Team Services?</a> a <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server je teď Azure DevOps Server</a>.</p>
+        <p>Nahrazuje Azure DevOps služby Visual Studio Team Services a Team Foundation Server (TFS) byl přejmenován Azure DevOps serveru. Zobrazit <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">co se stalo s Visual Studio Team Services?</a> a <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server je teď Azure DevOps Server</a>.</p>
     </div>
 </div>

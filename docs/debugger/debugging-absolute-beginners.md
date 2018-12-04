@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257365"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821367"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -244,7 +244,7 @@ V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
     ![Chyba syntaxe](../debugger/media/beginners-no-definition.png)
 
-    I když jsme si nastavili každý galaxy s objektem typu `GType` (který má `MGType` vlastnost), ladicí program nemůže rozpoznat `theGalaxy` objekt jako objekt typu `GType`. Co se děje? Budete chtít projít veškerý kód, který nastaví typ galaxy. Když toto provedete, uvidíte, že `GType` třídy jednoznačně má vlastnost `MyGType`, ale něco není správný. Chybová zpráva týkající se `object` naznačuje; se ukázalo k interpretu jazyk zdá být objekt typu typ `object` místo objektu typu `GType`.
+    I když jsme si nastavili každý galaxy s objektem typu `GType` (který má `MyGType` vlastnost), ladicí program nemůže rozpoznat `theGalaxy` objekt jako objekt typu `GType`. Co se děje? Budete chtít projít veškerý kód, který nastaví typ galaxy. Když toto provedete, uvidíte, že `GType` třídy jednoznačně má vlastnost `MyGType`, ale něco není správný. Chybová zpráva týkající se `object` naznačuje; se ukázalo k interpretu jazyk zdá být objekt typu typ `object` místo objektu typu `GType`.
 
 1. Procházení kódu související s galaxy typ nastavení, najdete `GalaxyType` vlastnost `Galaxy` třída zadaná jako `object` místo `GType`.
 
