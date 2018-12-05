@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c743cebadebfd7ae72b78953ba8ead9ec3981981
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621377"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896091"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analýza aktivity virtuálních uživatelů zátěžového testu v podrobném zobrazení Analyzéru zátěžového testu
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 **Graf aktivity virtuálního uživatele**
 
- ![Graf aktivity virtuálního uživatele](../test/media/virtual_actchart.png)
+![Graf aktivity virtuálního uživatele](../test/media/virtual_actchart.png)
 
- **Podrobnosti** zobrazení zobrazí **graf aktivity virtuálního uživatele**, který se používá k vizuální analýza jednotlivého virtuálního uživatele nebyla během zátěžového testu. **Graf aktivity virtuálního uživatele** vám umožní vidět vzory aktivity uživatelů, vzory zátěže, korelovat Nezdařená nebo pomalá testy a zobrazit žádosti pomocí další aktivity virtuálního uživatele. **Graf aktivity virtuálního uživatele** můžete také vám pomáhají určit, provozní špičky ve využití procesoru, drops požadavků za sekundu, a co testy nebo stránky, které byly spuštěny během špičky a drops.
+**Podrobnosti** zobrazení zobrazí **graf aktivity virtuálního uživatele**, který se používá k vizuální analýza jednotlivého virtuálního uživatele nebyla během zátěžového testu. **Graf aktivity virtuálního uživatele** vám umožní vidět vzory aktivity uživatelů, vzory zátěže, korelovat Nezdařená nebo pomalá testy a zobrazit žádosti pomocí další aktivity virtuálního uživatele. **Graf aktivity virtuálního uživatele** můžete také vám pomáhají určit, provozní špičky ve využití procesoru, drops požadavků za sekundu, a co testy nebo stránky, které byly spuštěny během špičky a drops.
 
 > [!NOTE]
 > Před spuštěním zátěžového testu, pro kterou chcete použít **graf podrobností aktivity virtuálního uživatele**, musíte ověřit, že **úložiště podrobností časování** je nastavena na  **AllIndividualDetails** možnost pomocí editoru zátěžových testů výkonu.

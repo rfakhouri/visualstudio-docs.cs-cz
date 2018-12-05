@@ -2,7 +2,7 @@
 title: Co je nového v sadě Visual Studio 2017
 description: Informace o nových funkcích v sadě Visual Studio 2017.
 ms.custom: ''
-ms.date: 11/13/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607871"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895766"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -386,3 +386,4 @@ Pokud chcete provést návrh, o jak jsme vylepšení sady Visual Studio, nebo Da
 * [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
 * [Co je nového v Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Co je nového v sadě Visual Studio pro Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Co je nového ve Visual Studio 2019](whats-new-visual-studio-2019.md)

@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380691"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895610"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Postupy: ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word
 
 Sestavy zátěžového testu aplikace Microsoft Word můžete vytvořit ručně zkopírováním a vložením dat ze souhrnného zobrazení výsledky zátěžového testu a zobrazení grafů. Při kopírování dat, která jsou uvedena v souhrnném zobrazení a zobrazení grafů, jsou tato data použita ve formátu HTML.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Můžete zkopírovat prostý text z tabulkového zobrazení a kopie obrazovek ze zobrazení podrobností o do aplikace Microsoft Word, ale není použit ve formátu HTML a bude vyžadovat další formátování a úpravy.

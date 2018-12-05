@@ -9,12 +9,12 @@ description: Další informace o předplatné školení Pluralsight, který je s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389108"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895350"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -44,7 +44,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
    - Klikněte na zaškrtávací políčko pro přijetí podmínek použití a ochrana osobních údajů zásad
    - Klikněte na tlačítko **vyjadřuji souhlas výhodou, aktivujte**.
      > [!div class="mx-imgBorder"]
-     > ![Aktivace výhody pro Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Aktivace výhody pro Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Výhody pro Pluralsight podmínky](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926589"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895285"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
 Pokud chcete použít Visual Studio pro vzdálené spuštění testů, distribuci testů mezi více počítačů nebo spuštění zátěžových testů, je nutné nakonfigurovat testovací kontrolér, testovací agenty a soubor nastavení testu. Toto téma popisuje, jak spravovat testovací kontroléry a testovací agenty po instalaci a konfiguraci poprvé.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Pokud používáte Microsoft Test Manager ke spuštění testů v testovacím prostředí, můžete spravovat testovací kontroléry a jejich agenty pomocí **správce řadičů testů** v **centra testovacích prostředí** pro nástroj Microsoft Test Manager. Toto téma platí pouze v případě, že používáte sadu Visual Studio ke spuštění testů.
 

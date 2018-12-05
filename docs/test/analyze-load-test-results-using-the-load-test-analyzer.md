@@ -12,16 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e09a29fa56707a9a357776a595ae89f6aabdaf94
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 92685b4ed7f3ea9bfbaaad70d3bb61786bcc82a0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621430"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896663"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů pomocí Analyzéru zátěžového testu
 
-Nalezení problémových míst, identifikovat chyby a měřit zlepšení ve vaší aplikaci, když použijete **Analyzéru zátěžového testu**. Analýza výsledků zátěžových testů v těchto způsobů:
+Nalezení problémových míst, identifikovat chyby a měřit zlepšení ve vaší aplikaci, když použijete **Analyzéru zátěžového testu**.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Analýza výsledků zátěžových testů v těchto způsobů:
 
 -   Sledujte zátěžový test, když je spuštěn.
 

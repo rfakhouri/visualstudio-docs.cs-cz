@@ -1,5 +1,5 @@
 ---
-title: Shromažďování diagnostických údajů pomocí nastavení testů v sadě Visual Studio
+title: Shromažďování diagnostických údajů pomocí nastavení testů
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865346"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895207"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Shromažďování diagnostických údajů pomocí nastavení testů
 
@@ -32,6 +32,8 @@ Můžete použít *nastavení testu* v sadě Visual Studio ke sběru dat navíc 
 -   Shromažďovat data IntelliTrace pro izolování nereprodukovatelných chyb
 
 Adaptéry diagnostických dat lze také použít ke změně chování testovacího počítače. Test nastavení v sadě Visual Studio, například může emulovat různá problémová místa síťové topologie a vyhodnotit výkon aplikace vašeho týmu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>Použít nastavení testu pomocí sady Visual Studio
 

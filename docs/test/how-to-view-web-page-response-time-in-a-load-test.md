@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821835"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895259"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: zobrazení doby odezvy webové stránky v zátěžovém testu pomocí Analyzéru zátěžového testu
 
 Čas potřebný pro každou webovou stránku pro načtení se označuje jako *doba odezvy*. Když vytvoříte test výkonnosti webu, můžete nastavit cílovou dobu odpovědi pro každý požadavek webové stránky v testu výkonnosti webu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu, bude možné analyzovat následující informace pro každou stránku:
 
@@ -36,8 +38,6 @@ Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu,
 -   Analýza odezvy webové stránky v zobrazení grafů
 
 ## <a name="view-response-time-data-in-a-table"></a>Zobrazit data o době odezvy v tabulce
-
-### <a name="to-view-response-time-data-in-a-table"></a>Chcete-li zobrazit data o době odezvy v tabulce
 
 1. V **Analyzéru zátěžového testu**, zvolte **tabulky** na panelu nástrojů, abyste měli jistotu, že se zobrazí mřížku tabulky.
 
@@ -70,7 +70,7 @@ Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu,
 
 V grafu zobrazíte změny v průběhu času během zátěžového testu můžete také zobrazit data o době odezvy. To je obzvláště užitečné, pokud vaše vzor zatížení zvýší při spuštění testů (například pokud používáte vzor zatížení kroku). Další informace najdete v tématu [vzory zatížení úpravy aktivity virtuálního uživatele modelu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-### <a name="to-view-response-time-data-in-a-graph"></a>Chcete-li zobrazit data o době odezvy v grafu
+Chcete-li zobrazit data o době odezvy v grafu:
 
 1. V **Analyzéru zátěžového testu**, zvolte **grafy** na panelu nástrojů, abyste měli jistotu, že se zobrazí grafu.
 

@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909769"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895831"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Postupy: vytvoření modulu Plugin rekordéru
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umožňuje upravovat test výkonnosti webu zaznamenané. Změna nastane po zvolení **Zastavit** v **rekordéru testu výkonnosti webu** nástrojů, ale před test uložením a zobrazením v editoru testu výkonnosti webu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Modul plug-in rekordéru umožňuje provádění vlastní korelace dynamických parametrů. S funkcí vestavěné korelace testy výkonnosti webu rozpoznávají dynamické parametry na webu nahrávání po dokončení nebo při použití **povýšit dynamické parametry na parametry webového testu** na **Web Editor testu výkonnosti** nástrojů. Nicméně integrovaná v detekce funkce nenajde vždy všechny dynamické parametry. Například nenajde ID relace, které obvykle svou hodnotu mění mezi 5 až 30 minut. Proto budete muset ručně provést proces korelace.
 
