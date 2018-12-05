@@ -19,13 +19,17 @@ items:
     href: quickstart-debug-aspnet.md
 - name: Kurzy
   items:
-  - name: Informace o ladění pomocí sady Visual Studio
+  - name: Naučte se ladit kód v C#
     href: getting-started-with-the-debugger.md
+  - name: Naučte se ladit kód v C++
+    href: getting-started-with-the-debugger-cpp.md
+  - name: Naučte se ladit kód ve Visual Basicu
+    href: getting-started-with-the-debugger-vb.md
   - name: Spouštění kódu Pythonu v ladicím programu...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Ladění živé aplikace Azure
     href: debug-live-azure-applications.md
-  - name: Ladění kódu jazyka C# a C++
+  - name: Ladění kódu v jazyce C# i C++
     href: how-to-debug-managed-and-native-code.md
   - name: Kontrola předchozích stavů aplikace
     href: view-historical-application-state.md
@@ -836,9 +840,9 @@ items:
   items:
   - name: Novinky v ladicím programu sady Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 03b91cd33994c5fbc49a8ae3a5ace1bbac611e4a
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621601"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821393"
