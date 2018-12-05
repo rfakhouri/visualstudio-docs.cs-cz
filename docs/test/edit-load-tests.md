@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178410"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895389"
 ---
 # <a name="edit-load-tests"></a>Úpravy zátěžových testů
 
 Zátěžové testy spouštět testy výkonnosti webů nebo testů jednotek simulace mnoha uživatelů přistupujících na server ve stejnou dobu. Zátěžový test umožňuje přístup k datům zátěže a výkonu aplikace. Zátěžový test lze nakonfigurovat pro emulaci rozličných podmínek zátěže, jako je uživatelská zátěž nebo typ sítě.
 
-> [!NOTE]
-> Zátěžové testování je k dispozici pouze v edici Enterprise sady Visual Studio 2017.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Zátěžový test je definován *scénáře*, *sady čítačů*, a *parametry běhu*. Na následujícím obrázku vysvětluje rozdíly mezi [scénáře](../test/edit-load-test-scenarios.md), [sady čítačů](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md), a [parametry běhu](../test/load-test-run-settings-properties.md):
 
 ![Architektura zátěžového testu](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>Požadavky na software
+
+Projekty testů webového výkonu a zatížení jsou dostupné jenom v edici Enterprise systému Visual Studio.
 
 ## <a name="edit-load-test-scenario-settings"></a>Upravit nastavení scénáře zátěžového testu
 

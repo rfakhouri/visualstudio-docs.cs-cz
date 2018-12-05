@@ -1,5 +1,5 @@
 ---
-title: Konfigurace a platformy pro programové testy UI v aplikaci Visual Studio
+title: Konfigurace a platformy pro programové testy UI
 ms.date: 2015-10-04
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b56f83a7a1ec74235e66f18e8134f72bfd14a2ef
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e4eb09bf1b5477c609dc2b9e3b1502274bc9b931
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295914"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894376"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí
 
@@ -25,8 +25,9 @@ V následující tabulce jsou uvedeny podporované konfigurace a platformy pro p
 > [!NOTE]
 > Programový test UI musí mít stejná oprávnění jako testovaná aplikace.
 
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Požadavky**
+**Požadavky**
 
 -   Visual Studio Enterprise
 

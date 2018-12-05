@@ -1,5 +1,5 @@
 ---
-title: Ujistěte se, kódované UI testy počkejte určitých událostí v sadě Visual Studio
+title: Ujistěte se, kódované UI testy čekat na konkrétní události
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295121"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894765"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Ujistěte se, programové testy UI čekání na konkrétní události při přehrávání
 
 Programové přehrávání testů uživatelského rozhraní webu můžete dát pokyn testů čekala určitých událostí pravděpodobnější, jako je okno se zobrazí indikátor průběhu signalizující zmizí a tak dále. K tomuto účelu použijte vhodnou metodu UITestControl.WaitForControlXXX() jak je popsáno v následující tabulce. Příklad programový test UI, který čeká na povolit pomocí ovládacího prvku <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metody, naleznete v tématu [návod: vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Požadavky**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**Požadavky**
+
+Visual Studio Enterprise
 
 > [!TIP]
 > Můžete také přidat zpoždění před akcí pomocí editoru programového testu UI. Další informace najdete v tématu [postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programového testu UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
+**UITestControl.WaitForControlXXX() metody**
 
- **UITestControl.WaitForControlXXX() metody**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+Čeká se na ovládací prvek bude připravené tak, aby přijímal myši a klávesnice. Modul implicitně volá tato rozhraní API pro všechny akce čekat pro ovládací prvek bude připravené před provedením jakékoli operace. Nicméně v některých esoterických scénáři, budete muset provést explicitní volání konstruktoru.
 
- Čeká se na ovládací prvek bude připravené tak, aby přijímal myši a klávesnice. Modul implicitně volá tato rozhraní API pro všechny akce čekat pro ovládací prvek bude připravené před provedením jakékoli operace. Nicméně v některých esoterických scénáři, budete muset provést explicitní volání konstruktoru.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+Čeká na ovládací prvek povolena, když Průvodce provádí nějaké asynchronní ověření vstupu tím, že volání na server. Například může metoda čekat **Další** tlačítko průvodce bude (povoleno). Příklad této metody, naleznete v tématu [návod: vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- Čeká na ovládací prvek povolena, když Průvodce provádí nějaké asynchronní ověření vstupu tím, že volání na server. Například může metoda čekat **Další** tlačítko průvodce bude (povoleno). Příklad této metody, naleznete v tématu [návod: vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+Čeká se na ovládací prvek se zobrazí v Uživatelském rozhraní. Například očekáváte dialogovým oknem chyby po dokončení ověření parametry aplikace. Čas potřebný pro ověření je proměnná. Tuto metodu můžete použít čekat dialog s chybou.
 
- Čeká se na ovládací prvek se zobrazí v Uživatelském rozhraní. Například očekáváte dialogovým oknem chyby po dokončení ověření parametry aplikace. Čas potřebný pro ověření je proměnná. Tuto metodu můžete použít čekat dialog s chybou.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+Čeká se na ovládací prvek zmizí z uživatelského rozhraní. Například může čekat indikátor průběhu zmizí.
 
- Čeká se na ovládací prvek zmizí z uživatelského rozhraní. Například může čekat indikátor průběhu zmizí.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+Počká zadanou vlastnost ovládacího prvku má zadanou hodnotu. Je třeba počkat stavový text změnit na **provádí**.
 
- Počká zadanou vlastnost ovládacího prvku má zadanou hodnotu. Je třeba počkat stavový text změnit na **provádí**.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+Počká zadanou vlastnost ovládacího prvku má opakem zadanou hodnotu. Například můžete čekat textové pole pro nesmí být jen pro čtení, to znamená, upravovat.
 
- Počká zadanou vlastnost ovládacího prvku má opakem zadanou hodnotu. Například můžete čekat textové pole pro nesmí být jen pro čtení, to znamená, upravovat.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- Čeká zadanou predikát vrátí bude `true`. To lze použít pro operace komplexní čekání (například nebo podmínky) na daný ovládací prvek. Například můžete počkat, dokud je stavový text **Succeeded** nebo **neúspěšné** jak je znázorněno v následujícím kódu:
+Čeká zadanou predikát vrátí bude `true`. To lze použít pro operace komplexní čekání (například nebo podmínky) na daný ovládací prvek. Například můžete počkat, dokud je stavový text **Succeeded** nebo **neúspěšné** jak je znázorněno v následujícím kódu:
 
 ```csharp
 

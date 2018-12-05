@@ -1,26 +1,24 @@
 ---
-title: 'Výhody podpory priority v předplatných: Visual Studio | Dokumentace Microsoftu'
+title: Výhoda komunity vývojářů v předplatné sady Visual Studio | Dokumentace Microsoftu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: Další informace o benefitech prioritní podpora součástí předplatných sady Visual Studio.
+description: Další informace o benefitech komunity vývojářů, které jsou součástí předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866737"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896650"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Prioritní podpora na předplatná sady Visual Studio
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Podpora komunity pro vývojáře v předplatných sady Visual Studio
 
-Výhoda prioritní podporu poskytuje přístup k různým podporu komunitní fóra, ve kterém můžete vyhledávat stávající příspěvky nebo dotázán na nový.  Pokud se v komunitě neobjeví odpověď na svoji otázku do dvou dnů, tým podpory společnosti Microsoft poskytne odpověď.
-
-Předplatitelé s vybraným předplatným sady Visual Studio mají nárok na prioritní podporu ve přes velký počet fóra, které pokrývají celou řadu témat.  Kliknutím na odkazy níže přejdete přímo na fóra.  
+Ve prospěch komunity vývojářů poskytuje přístup k různým podporu komunitní fóra, ve kterém můžete vyhledávat stávající příspěvky nebo dotázán na nový. Kliknutím na odkazy níže přejdete přímo na fóra.  
 
 ## <a name="included-forums"></a>Zahrnuté fóra
 

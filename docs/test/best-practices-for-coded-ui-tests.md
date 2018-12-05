@@ -1,5 +1,5 @@
 ---
-title: Osvědčené postupy pro programové testy uživatelského rozhraní v sadě Visual Studio
+title: Doporučené postupy pro programové testy UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,68 +11,70 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283273"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896014"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Osvědčené postupy pro programové testy uživatelského rozhraní
 
-Toto téma popisuje některé doporučení pro vývoj programové testy uživatelského rozhraní.
+Toto téma popisuje několik doporučení pro vývoj programové testy uživatelského rozhraní.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>Osvědčené postupy
 
-Pomocí následujících pokynů pro vytvoření flexibilní programového testu uživatelského rozhraní.
+Pomocí následujících pokynů k vytvoření flexibilní programový test uživatelského rozhraní.
 
--   Použití **Tvůrce programového testu uživatelského rozhraní** kdykoli je to možné.
+-   Použití **Tvůrce programového testu UI** kdykoli je to možné.
 
--   Nelze změnit *UIMap.designer.cs* souboru přímo. Pokud upravíte soubor, přepíšou se změny do souboru.
+-   Neprovádějte žádné změny *UIMap.designer.cs* přímo soubor. Pokud změníte soubor, změny do souboru budou přepsány.
 
--   Jako posloupnost zaznamenaná metod vytvořte svůj test. Další informace o tom, jak záznam metodu, najdete v části [vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md).
+-   Vytvoření testu jako posloupnost nahrané metody. Další informace o tom, jak zaznamenat metodu, najdete v části [vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md).
 
--   Každý záznam metoda by měla fungovat na jednu stránku, formulář nebo dialogové okno. Vytvoření nové metody testu pro každou novou stránku, formulář nebo dialogové okno.
+-   Každý zaznamenanou metodu by měl fungovat na jednu stránku, formulář nebo dialogové okno. Vytvoření nové metody testu pro každou novou stránku, formulář nebo dialogové okno.
 
--   Když vytvoříte metodu, použijte název smysluplný metoda místo výchozí název. Nějaký výstižný název pomáhá identifikovat cílem této metody.
+-   Při vytváření metody, použijte název smysluplné metoda místo výchozí název. Smysluplný název pomáhá identifikovat cílem této metody.
 
--   Pokud je to možné, omezte jednotlivé metody zaznamenané na méně než 10 akce. Tento přístup modulární usnadňuje nahradit metodu, pokud se změní uživatelského rozhraní.
+-   Pokud je to možné, omezte každý zaznamenanou metodu na míň než 10 akce. Tento přístup modulární usnadňuje nahraďte metodu, pokud se změní uživatelské rozhraní.
 
--   Vytvořte každý assertion pomocí **Tvůrce programového testu uživatelského rozhraní**, který automaticky přidá metodu assertion k *UIMap.Designer.cs* souboru.
+-   Vytvoření s použitím každého kontrolního výrazu **Tvůrce programového testu UI**, která automaticky přidá metodu kontrolního výrazu k *UIMap.Designer.cs* souboru.
 
--   Pokud se změní uživatelské rozhraní (UI), znovu zaznamenejte zkušební metody nebo metody assertion nebo znovu zaznamenat ovlivněných části existující metodu test.
+-   Pokud se změní uživatelské rozhraní (UI), znovu nahrávat testovací metody nebo výrazu metody nebo znovu nahrávat ovlivněné oddíly stávající testovací metody.
 
--   Vytvoření samostatné <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> soubor pro každý modul v aplikaci v rámci testu. Další informace najdete v tématu [testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md).
+-   Vytvořit samostatnou <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> soubor pro každý modul v testované aplikaci. Další informace najdete v tématu [testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   V aplikaci v testu používat smysluplný názvy při vytváření ovládacích prvků uživatelského rozhraní. Pomocí názvů smysluplný poskytuje názvy ovládacích prvků automaticky generované větší přehlednost a použitelnost.
+-   V testované aplikaci, použijte smysluplné názvy při vytváření ovládacích prvků uživatelského rozhraní. Pomocí smysluplné názvy poskytuje větší přehlednost a použitelnost k automaticky vygenerovanému ovládacímu prvku názvy.
 
--   Pokud vytváříte kontrolní výrazy ve psaní kódu s použitím rozhraní API, vytvořte metodu pro každý assertion v části <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> třída, která je v *UIMap.cs* souboru. Provést kontrolní výraz, volejte tuto metodu z testovací metodu.
+-   Kontrolní výrazy při vytváření kódu pomocí rozhraní API, vytvořte metodu pro každého kontrolního výrazu v části <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> třídu, která je v *UIMap.cs* souboru. K provedení kontrolního výrazu, lze tuto metodu volejte z testovací metody.
 
--   Pokud jsou přímo psaní kódu s použitím rozhraní API, použijte vlastnosti a metody ve třídách vygenerovaných *UIMap.Designer.cs* souborů ve vašem kódu tolik, jako je možné. Tyto třídy bude práci jednodušší a spolehlivější a vám pomůže zvýšit produktivitu.
+-   Pokud píšete kód přímo s rozhraním API, použijte vlastnosti a metody do třídy vygenerované v *UIMap.Designer.cs* souborů ve vašem kódu tak, jak můžete. Tyto třídy provede svou práci, jednodušší a spolehlivější a vám pomohou být produktivnější.
 
-Programové testy uživatelského rozhraní automaticky přizpůsobí se jí mnoho změn v uživatelském rozhraní. Pokud například prvku uživatelského rozhraní došlo ke změně pozice nebo barvu, ve většině případů programového testu uživatelského rozhraní stále zjistí správné elementu.
+Programové testy uživatelského rozhraní automaticky přizpůsobit mnoho změn v uživatelském rozhraní. Pokud například prvek uživatelského rozhraní došlo ke změně umístění a barvy, ve většině případů programový test UI najít správný element.
 
-Během spuštění testu jsou umístěny ovládacích prvků uživatelského rozhraní pomocí rozhraní testování pomocí sadu vlastností vyhledávání. Vlastností vyhledávání se použijí pro různé třídy ovládacího prvku v definicích vytvořené **Tvůrce programového testu uživatelského rozhraní** v *UIMap.Designer.cs* souboru. Dvojice název hodnota názvů vlastností a hodnoty vlastností, které lze použít k identifikaci ovládacího prvku, jako například obsahovat vlastností vyhledávání <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>, a <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> vlastností ovládacího prvku. Pokud jsou stejné jako vlastnosti vyhledávání, programového testu UI úspěšně najít ovládací prvek v uživatelském rozhraní. Změnu vlastností vyhledávání programové testy uživatelského rozhraní mají inteligentní shodu algoritmus, který použije heuristiku k nalezení ovládací prvky a systému windows v uživatelském rozhraní. Pokud došlo ke změně uživatelského rozhraní, je možné upravit vlastnosti vyhledávání elementů dříve zjištěné a ujistěte se, že jsou nalezeny.
+Během testovacího běhu jsou umístěny ovládacích prvků uživatelského rozhraní v rámci testovacího rozhraní s použitím sady vlastností vyhledávání. Vlastnosti hledání se použijí ke každé třídě ovládacího prvku v definicích vytvořené **Tvůrce programového testu UI** v *UIMap.Designer.cs* souboru. Vlastnosti hledání obsahují páry název hodnota názvů vlastností a hodnot vlastností, které slouží k identifikaci ovládacího prvku, například <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>, a <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> vlastnosti ovládacího prvku. Pokud jsou beze změny vlastnosti vyhledávání, programový test uživatelského rozhraní úspěšně najít ovládací prvek v uživatelském rozhraní. Pokud se změní vlastnosti hledání, musí programové testy UI inteligentní shody algoritmus, který použije heuristiku k nalezení ovládací prvky a windows v uživatelském rozhraní. Pokud došlo ke změně uživatelského rozhraní, je možné upravit vlastnosti hledání dříve zjištěné prvků, abyste měli jistotu, že se nenachází.
 
-## <a name="if-your-user-interface-changes"></a>Pokud se změní uživatelské rozhraní
+## <a name="if-your-user-interface-changes"></a>Pokud se změní vaše uživatelské rozhraní
 
-Uživatelská rozhraní se často mění během vývoje. Zde jsou některé způsoby, aby se snížil dopad tyto změny:
+Uživatelské rozhraní se často měnit během vývoje. Tady jsou některé způsoby, aby se snížil dopad těchto změn:
 
--   Najít zaznamenaná metodu, která odkazuje na tento ovládací prvek a použít **Tvůrce programového testu uživatelského rozhraní** znovu zaznamenat akce pro tuto metodu. Můžete přepsat existující akce pro metodu stejný název.
+-   Najít zaznamenanou metodu, která odkazuje na tento ovládací prvek a použít **Tvůrce programového testu UI** na opakovat záznam akce pro tuto metodu. Přepsat existující akce můžete použít stejný název pro metodu.
 
--   Pokud má ovládací prvek kontrolní výraz, který již není platný:
+-   Pokud má ovládací prvek, který již není platný kontrolní výraz:
 
     -   Odstraníte metodu, která obsahuje kontrolní výraz.
 
-    -   Odeberte volání této metody z metody testu.
+    -   Odeberte volání této metody z testovací metody.
 
-    -   Přidat nové assertion přetažením tlačítko kříž do ovládacího prvku uživatelského rozhraní, otevřete mapy uživatelského rozhraní a přidejte nové kontrolní výraz.
+    -   Přidat kontrolní výraz nové přetažením nitkového kříže tlačítko na ovládací prvek uživatelského rozhraní, otevřete v mapování uživatelského rozhraní a přidat nový kontrolní výraz.
 
-Další informace o tom, jak záznam programové testy uživatelského rozhraní, najdete v části [automatizace uživatelského rozhraní použijte k testování kódu](../test/use-ui-automation-to-test-your-code.md).
+Další informace o tom, jak zaznamenat programové testy UI, naleznete v tématu [automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Pokud proces na pozadí musí až po dokončení testu můžete pokračovat
 
-Možná bude muset počkat, dokud nebude tento proces se dokončeno předtím, než můžete pokračovat v další akce uživatelského rozhraní. K tomu můžete použít <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> má počkat, než pokračuje test, jako v následujícím příkladu:
+Budete muset počkat, dokud se proces dokončí, než budete pokračovat s další akce uživatelského rozhraní. K tomu můžete použít <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> čekat, než test pokračuje, jako v následujícím příkladu:
 
 ```csharp
 // Set the playback to wait for all threads to finish
@@ -90,6 +92,6 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
-- [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)
+- [Vytváření programových testů UI](../test/use-ui-automation-to-test-your-code.md)
 - [Testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

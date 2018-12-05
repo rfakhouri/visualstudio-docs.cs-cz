@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b43cc3acbbff70124685229e33362cfd9b30561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908798"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896520"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Postupy: Přidání a odstranění čítačů pro grafy ve výsledcích zátěžového testu
 
 Můžete použít **čítače** panel k přidání čítačů výkonu do grafu.
 
- ![Přidání čítačů do grafu](../test/media/ltest_selectcounter.png)
+![Přidání čítačů do grafu](../test/media/ltest_selectcounter.png)
 
- **Aspekty Interval vzorkování čítače výkonu**
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Zvolte hodnotu **vzorkovací frekvence** vlastnost v zátěžovém testu běhu na základě délky zátěžového testu. Menší vzorkovací frekvence, jako je například výchozí hodnota pěti sekund, vyžaduje více místa v databázi výsledků zátěžového testu. Pro delší zátěžové testy vzorkovací frekvence snižuje množství dat, která shromažďujete. Další informace najdete v tématu [postupy: určení vzorkovací frekvence](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+**Aspekty Interval vzorkování čítače výkonu**
 
- Zde jsou uvedeny pokyny pro vzorkovací frekvence:
+Zvolte hodnotu **vzorkovací frekvence** vlastnost v zátěžovém testu běhu na základě délky zátěžového testu. Menší vzorkovací frekvence, jako je například výchozí hodnota pěti sekund, vyžaduje více místa v databázi výsledků zátěžového testu. Pro delší zátěžové testy vzorkovací frekvence snižuje množství dat, která shromažďujete. Další informace najdete v tématu [postupy: určení vzorkovací frekvence](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+
+Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 
 |Doba trvání zátěžového testu|Doporučená frekvence vzorkování|
 |-|-----------------------------|
@@ -39,11 +41,11 @@ Můžete použít **čítače** panel k přidání čítačů výkonu do grafu.
 |8 - 24 hodin|30 sekund|
 |> 24 hodin|60 sekund|
 
- **Důležité informace týkající se včetně podrobnosti časování pro shromažďování dat**
+**Důležité informace týkající se včetně podrobnosti časování pro shromažďování dat**
 
- V nastavení testu v editoru zátěžových testů s názvem existuje vlastnost **úložiště podrobností časování**. Pokud **úložiště podrobností časování** vlastnost je povolená, pak čas ke spuštění každé jednotlivé testy, transakce a stránky během zátěžového testu uložen v úložišti výsledků zátěžového testu. To umožňuje 90. percentil. a 95. percentil dat zobrazený v **Analyzéru zátěžového testu** v tabulkách testy, transakce a stránky.
+V nastavení testu v editoru zátěžových testů s názvem existuje vlastnost **úložiště podrobností časování**. Pokud **úložiště podrobností časování** vlastnost je povolená, pak čas ke spuštění každé jednotlivé testy, transakce a stránky během zátěžového testu uložen v úložišti výsledků zátěžového testu. To umožňuje 90. percentil. a 95. percentil dat zobrazený v **Analyzéru zátěžového testu** v tabulkách testy, transakce a stránky.
 
- Existují dvě volby pro povolení **úložiště podrobností časování** vlastnosti v vlastností parametrů spuštění s názvem **StatisticsOnly** a **AllIndividualDetails**. Obě možnosti všechny individuální testy, stránky a transakce jsou časovány a data percentilu se vypočtou z jednotlivých dat časování. Rozdíl je, že u **StatisticsOnly** ihned poté, co byla vypočtena data pro percentil, možnost jednotlivá časová data odstraněna z úložiště. To snižuje množství místa potřebné v úložišti použijete podrobnosti časování. Pokročilí uživatelé mohou však chtít zpracovat podrobná data časování jiným způsobem, pomocí nástroje SQL. Pokud tomu tak, **AllIndividualDetails** by měl být použit, tak, aby podrobná data časování byla k dispozici pro zpracování. Navíc pokud nastavíte vlastnost na **AllIndividualDetails**, pak lze analyzovat aktivity virtuálního uživatele pomocí **aktivity virtuálního uživatele** graf **Analyzéru zátěžového testu** po dokončení zátěžového testu. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+Existují dvě volby pro povolení **úložiště podrobností časování** vlastnosti v vlastností parametrů spuštění s názvem **StatisticsOnly** a **AllIndividualDetails**. Obě možnosti všechny individuální testy, stránky a transakce jsou časovány a data percentilu se vypočtou z jednotlivých dat časování. Rozdíl je, že u **StatisticsOnly** ihned poté, co byla vypočtena data pro percentil, možnost jednotlivá časová data odstraněna z úložiště. To snižuje množství místa potřebné v úložišti použijete podrobnosti časování. Pokročilí uživatelé mohou však chtít zpracovat podrobná data časování jiným způsobem, pomocí nástroje SQL. Pokud tomu tak, **AllIndividualDetails** by měl být použit, tak, aby podrobná data časování byla k dispozici pro zpracování. Navíc pokud nastavíte vlastnost na **AllIndividualDetails**, pak lze analyzovat aktivity virtuálního uživatele pomocí **aktivity virtuálního uživatele** graf **Analyzéru zátěžového testu** po dokončení zátěžového testu. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
 Množství místa potřebné v úložišti výsledků zátěžového testu k ukládání dat s podrobnosti časování může být značné, zejména pro delší zkoušky zatížení. Také čas pro ukládání těchto dat v úložišti výsledků zátěžového testu na konci zátěžového testu je delší, protože tato data jsou uložena v agentech zátěžového testu, dokud zátěžový test neskončí. Po dokončení zátěžového testu jsou data uložena do úložiště. Ve výchozím nastavení **úložiště podrobností časování** je povolena vlastnost. Pokud je to problém pro testovací prostředí, můžete chtít nastavit **úložiště podrobností časování** k **žádný**.
 

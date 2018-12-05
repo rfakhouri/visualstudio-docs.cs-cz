@@ -1,5 +1,5 @@
 ---
-title: Pomocí graf aktivity virtuálního uživatele pro zátěžové testy v sadě Visual Studio
+title: Pomocí graf aktivity virtuálního uživatele pro zátěžové testy
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295787"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895922"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele
 
@@ -24,17 +24,7 @@ V tomto podrobném návodu se dozvíte, jak izolovat chyby, ke kterým došlo u 
 
 Graf aktivity virtuálního uživatele vám umožňuje vizualizovat aktivitu virtuálního uživatele, který je spojen se zátěžovým testem. Každý řádek v tabulce představuje jednotlivého virtuálního uživatele. Přesně co jednotlivé virtuální uživatele se provádí během testu zobrazí graf aktivity virtuálního uživatele. To umožňuje izolovat problémy s výkonem tím, že zobrazíte vzory aktivity uživatelů, vzory zátěže, korelovat Nezdařená nebo pomalá testy a žádostí pomocí další aktivity virtuálního uživatele. Graf aktivity virtuálního uživatele je k dispozici pouze po načtení po dokončení.
 
-V tomto návodu dokončíte následující úkoly:
-
--   Zjistěte, jak použít následující nástroje přidružené graf aktivity virtuálního uživatele:
-
-    -   Použití **přiblížení na dobu** nástroj pro určení konkrétního časového období na graf, který chcete analyzovat.
-
-    -   Použití **podrobné legendy** panelu a **filtrování výsledků** panelu použít filtrování grafu tak, aby pomáhají izolovat problémy.
-
--   Graf aktivity virtuálního uživatele použijte k analýze, který u konkrétních virtuálních uživatelů došlo k chybě a zobrazit podrobnosti o chybě problematického typu.
-
-Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -47,8 +37,6 @@ Další informace najdete v tématu [analýza aktivity virtuálních uživatelů
     -   [Vytvoření a spuštění zátěžového testu](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otevřete řešení ColorWebApp vytvořili v předchozí návody
-
-### <a name="open-the-solution"></a>Otevřete řešení
 
 1.  Spusťte sadu Visual Studio.
 

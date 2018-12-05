@@ -1,5 +1,5 @@
 ---
-title: Testování aplikací pro SharePoint pomocí programových testů uživatelského rozhraní v sadě Visual Studio
+title: Testování aplikací pro SharePoint pomocí programových testů uživatelského rozhraní
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379709"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895441"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint pomocí programových testů uživatelského rozhraní
 
 Zahrnutí programových testů UI v aplikaci SharePoint slouží k ověření, že celá aplikace včetně jeho ovládacích prvků uživatelského rozhraní pracuje správně. Programové testy uživatelského rozhraní můžete také ověřit, hodnoty a logiku v uživatelském rozhraní.
 
 Další informace o výhodách používání programové testy UI, naleznete v tématu [automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **Požadavky**
 

@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d9fea16d1131ce45b8273d53a3db4a88989d1c91
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621196"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895428"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analýza mezních pravidel v zátěžových testech pomocí Analyzéru zátěžového testu
 
 Mezní pravidla jsou přidruženy konkrétních čítačů výkonu a narušení naznačují, že čítač výkonu překročil nebo klesl pod hodnotou. Při spuštění zátěžového testu můžete analyzovat porušení pravidla prahové hodnoty, které jste dřív nastavili.
 
 Pokud došlo k porušení zásad, **mezních hodnot** hypertextového odkazu se zobrazí na **Analyzéru zátěžového testu** stavový řádek a určuje počet porušení zásad, ke kterým došlo. Můžete zvolit hypertextový odkaz na zobrazení tabulky porušení prahové hodnoty. Můžete také zobrazit porušení prahové hodnoty v **čítače** okna a v grafu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>Zobrazení překročení mezní hodnoty v tabulce
 

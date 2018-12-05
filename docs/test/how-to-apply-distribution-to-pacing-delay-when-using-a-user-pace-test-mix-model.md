@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204073"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896186"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Postupy: použít rozdělení na zpoždění pro kroku model kombinace testů uživatele stimulace
 
 Po vytvoření zátěžového testu s použitím **nového Průvodce zátěžovým testem**, chcete-li změnit vlastnosti ve scénáři podle potřebám a cílům testování můžete použít Editor zátěžového testu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Použít rozdělení na zpoždění stimulace** je nastavena pomocí **vlastnosti** okna. Vlastnosti scénáře zátěžového testu se upravit pomocí editoru zátěžových testů.
 

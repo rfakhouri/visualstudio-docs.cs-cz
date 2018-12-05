@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: c01633f4814326867d7c7e43e345f4faf052622f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924977"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894778"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Nastavit jedinečnou vlastnost automatizace pro ovládacích prvků UPW pro účely testování
 
 Pokud chcete spustit programové testy UI pro aplikace UWP založené na XAML, musí být každý ovládací prvek identifikován jedinečnou vlastnost automatizace. Můžete přiřadit jedinečné vlastnosti automatizace založená na typu ovládacího prvku XAML v aplikaci.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>Statické definice XAML
 
@@ -43,7 +45,7 @@ Nastavte **AutomationProperties.Name** k **ButtonY** pomocí **obsahu** vlastnos
 Nastavte **AutomationProperties.AutomationId** k **ButtonX** explicitně v XAML pro ovládací prvek.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Nastavte **AutomationProperties.Name** k **ButtonY** explicitně v XAML pro ovládací prvek.

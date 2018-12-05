@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645182"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895597"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu
 
@@ -30,6 +30,8 @@ Některé webové servery používají dynamické parametry pro zpracování ně
 -   Hodnoty dynamického parametru nastavené jako řetězec dotazu nebo formulář Parametry post. Tyto jsou zpracovány prostřednictvím zjišťování dynamického parametru po zaznamenání testu výkonnosti webu.
 
 Některé typy dynamických parametrů nejsou zjištěny. Nerozpoznaný dynamický parametr způsobí, že váš test výkonnosti webu dojde k chybě při jeho spuštění, protože se dynamické hodnoty budou pravděpodobně lišit při každém spuštění testu. Správně zpracovat tyto parametry, můžete přidat pravidla extrakce k dynamickým parametrům v testech výkonu webu ručně.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>Vytvoření a spuštění webové aplikace s dynamickými parametry
 

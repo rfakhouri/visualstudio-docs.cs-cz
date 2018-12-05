@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851605"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895311"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: vytvoření adaptéru diagnostických dat
 
 Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy pomocí sady Visual Studio a potom přidat do knihovny tříd poskytuje Visual Studio Enterprise API adaptéru diagnostických dat. Veškeré informace, které chcete, aby jako datový proud nebo soubor, který chcete odeslat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> poskytovaného rámcem, při zpracování událostí, které jsou aktivovány v průběhu testovacího běhu. Datové proudy nebo soubory odeslané <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> jsou uloženy jako přílohy k výsledkům testu po dokončení testu. Pokud vytvoříte chybu z těchto výsledků testování nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], soubory se také s chybou propojen.
 
- Můžete vytvořit adaptér diagnostických dat, který má vliv na počítači, kde probíhají testy, nebo počítač, který je součástí prostředí, který používáte ke spuštění aplikace v rámci testu. Například shromažďování souborů na testovacím počítači, ve kterém jsou testy spustit nebo shromažďování souborů na počítač, který je v roli webového serveru pro vaši aplikaci.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Adaptér diagnostických dat můžete dát popisný název, který se zobrazí při vytvoření nastavení testu pomocí nástroje Microsoft Test Manager nebo pomocí sady Visual Studio. Test nastavení umožňují definovat, které role počítače budou spouštět určité adaptéry diagnostických dat ve vašem prostředí při spuštění testů. Můžete také nakonfigurovat adaptéry diagnostických dat při vytvoření nastavení testu. Můžete například vytvořit adaptér diagnostických dat, který shromažďuje vlastní protokoly z webového serveru. Když vytvoříte nastavení testu, můžete vybrat spustit tento adaptér diagnostických dat na počítači nebo počítačích, které provádějí tuto roli webového serveru a můžete upravovat konfiguraci pro vaše nastavení testu k získání pouze posledních tří protokolů, které byly vytvořeny. Další informace o nastaveních testu naleznete v tématu [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
+Můžete vytvořit adaptér diagnostických dat, který má vliv na počítači, kde probíhají testy, nebo počítač, který je součástí prostředí, který používáte ke spuštění aplikace v rámci testu. Například shromažďování souborů na testovacím počítači, ve kterém jsou testy spustit nebo shromažďování souborů na počítač, který je v roli webového serveru pro vaši aplikaci.
 
- Události jsou vyvolány při spuštění testů tak, aby adaptér diagnostických dat můžete v tomto okamžiku provádět úlohy v testu.
+Adaptér diagnostických dat můžete dát popisný název, který se zobrazí při vytvoření nastavení testu pomocí nástroje Microsoft Test Manager nebo pomocí sady Visual Studio. Test nastavení umožňují definovat, které role počítače budou spouštět určité adaptéry diagnostických dat ve vašem prostředí při spuštění testů. Můžete také nakonfigurovat adaptéry diagnostických dat při vytvoření nastavení testu. Můžete například vytvořit adaptér diagnostických dat, který shromažďuje vlastní protokoly z webového serveru. Když vytvoříte nastavení testu, můžete vybrat spustit tento adaptér diagnostických dat na počítači nebo počítačích, které provádějí tuto roli webového serveru a můžete upravovat konfiguraci pro vaše nastavení testu k získání pouze posledních tří protokolů, které byly vytvořeny. Další informace o nastaveních testu naleznete v tématu [shromažďování diagnostických informací pomocí nastavení testu](../test/collect-diagnostic-information-using-test-settings.md).
+
+Události jsou vyvolány při spuštění testů tak, aby adaptér diagnostických dat můžete v tomto okamžiku provádět úlohy v testu.
 
 > [!IMPORTANT]
 > Tyto události mohou být vyvolány v různých vláknech, zvláště když máte testy spuštěné ve více počítačích. Proto musíte znát možné problémy s tvorbou vláken a nikoli neúmyslně poškodit vnitřní data vlastního adaptéru. Ujistěte se, že váš adaptér diagnostických dat je bezpečné pro vlákna.
 
- Následuje částečný seznam klíčových událostí, které můžete použít při vytváření adaptéru diagnostických dat. Úplný seznam diagnostických dat adaptéru událostí naleznete v abstraktní <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> třídy.
+Následuje částečný seznam klíčových událostí, které můžete použít při vytváření adaptéru diagnostických dat. Úplný seznam diagnostických dat adaptéru událostí naleznete v abstraktní <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> třídy.
 
 |Událost|Popis|
 |-|-----------------|
@@ -44,9 +46,9 @@ Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy p
 > [!NOTE]
 > Po dokončení manuálního testu adaptér diagnostických dat jsou odesílány žádné další události kolekce. Když se znovu spustí test, bude mít nový identifikátor testovacího případu. Pokud uživatel obnoví test při zkoušce (která vyvolává <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> událostí), nebo změny testovací krok výsledek, žádná událost kolekce dat je odeslána do adaptéru diagnostických dat, ale identifikátor testovacího případu zůstává stejný. K určení, zda byla obnovena testovacího případu, musíte sledovat identifikátor testovacího případu v adaptéru diagnostických dat.
 
- Pomocí následujícího postupu vytvořte adaptér diagnostických dat, který shromažďuje datový soubor, který je založen na informacích, které konfigurujete při vytvoření nastavení testu.
+Pomocí následujícího postupu vytvořte adaptér diagnostických dat, který shromažďuje datový soubor, který je založen na informacích, které konfigurujete při vytvoření nastavení testu.
 
- Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního konfiguračního editoru, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního konfiguračního editoru, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
 

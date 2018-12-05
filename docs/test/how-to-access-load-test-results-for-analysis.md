@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175670"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896442"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Postupy: přístup k analýze výsledků zátěžového testu
 
 Když spustíte zátěžový test z editoru zátěžových testů, výsledky zátěžového testu se automaticky otevře a spuštění zátěžového testu se zobrazí v **Analyzéru zátěžového testu**. Při spuštění zátěžového testu z příkazového řádku, je nutné ručně přejít výsledky zátěžového testu.
 
 Výsledek testu zatížení pro dokončený test zatížení obsahuje ukázky čítače výkonu a informace o chybách, které byly pravidelně shromažďovány z testovaných počítačů. V průběhu spuštění zátěžového testu lze shromažďovat velké množství vzorků čítačů výkonu. Množství shromážděných dat o výkonu závisí na délce zkoušky, intervalu vzorkování, počtu testovaných počítačů, počtu shromažďovaných čítačů, sběračích dat, které jsou nakonfigurovány a úrovní protokolování. Pro velký zátěžový test může množství shromážděných dat o výkonu snadno dosáhnout několika gigabajtů. Další informace najdete v tématu [testovací kontrolery a testovací agenty](configure-test-agents-and-controllers-for-load-tests.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>Pro přístup k výsledku zátěžového testu
 

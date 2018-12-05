@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c2a2d1ff1aeda2f9df0f496176a134e7a27e559
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621484"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895012"
 ---
 # <a name="load-test-results-summary-overview"></a>Přehled souhrnu výsledků zátěžového testu
 
 Po spuštění zátěžového testu můžete zobrazit souhrn zátěžového testu rychle porozumět výsledky. Souhrn zátěžového testu poskytuje klíče výsledky kompaktní a snadno přečíst formátu. Můžete také vytisknout souhrnem zátěžového testu. Je to vhodné pro použití při komunikaci výsledky účastníkům. Souhrn zátěžového testu je také výchozí zobrazení při otevření výsledku zátěžového testu z dříve spuštěném zátěžovém testu. Další informace najdete v tématu [postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Souhrnné zobrazení](../test/media/ltest_summaryview.png)
+![Souhrnné zobrazení](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>Souhrn zátěžového testu
 

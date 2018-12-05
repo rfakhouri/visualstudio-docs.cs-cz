@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381908"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895324"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Postupy: výběr aktivního parametru spuštění pro zátěžový test
 
 Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit vlastnosti scénářů pro splnění potřebám a cílům testování.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Zátěžový test může obsahovat jeden nebo více *parametry běhu* které představují sadu vlastností ovlivňujících způsob běhu zátěžového testu. Parametry spuštění jsou uspořádány podle kategorií v **vlastnosti** okna. Zátěžový test při svém spuštění používá parametry spuštění, které jsou aktuálně nastaveny jako aktivní.
 
@@ -31,8 +33,6 @@ Pokud zátěžový test obsahuje pouze jeden parametr spuštění uzel v rámci 
 V **editoru zátěžových testů**, aktivní parametry běhu je identifikován podle přípony "[Active]".
 
 ## <a name="select-the-active-run-setting"></a>Vyberte aktivního parametru spuštění
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Chcete-li vybrat aktivní parametry běhu v zátěžovém testu
 
 1.  Otevřete zátěžový test.
 

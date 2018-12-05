@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176759"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896468"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Úpravy poměru testů určující typy webových prohlížečů ve scénáři zátěžového testu
 
 *Kombinace prohlížečů* poskytuje způsob, jak simulovat zatížení více realisticky v případě zkušebního scénáře. Zatížení je generováno pomocí heterogenní kombinace prohlížečů místo jednoho jediného webového prohlížeče. Můžete vytvořit užší odhad prohlížečů, které budou použity s vašimi aplikacemi.
 
- Kombinace prohlížečů určuje pravděpodobnost, že virtuální uživatel spustí typ konkrétní webové prohlížeče ve scénáři testu zatížení. Když vytvoříte zátěžový test, můžete simulovat, zatížení je generováno pomocí více než jeden webový prohlížeč. Když přidáte typ webového prohlížeče do kombinaci ze sady webových prohlížečů, které jsou k dispozici, sadu přidružená záhlaví pro vybraný webový prohlížeč se přidá do každého požadavku HTTP, který se odešle podle testu výkonnosti webu.
+Kombinace prohlížečů určuje pravděpodobnost, že virtuální uživatel spustí typ konkrétní webové prohlížeče ve scénáři testu zatížení. Když vytvoříte zátěžový test, můžete simulovat, zatížení je generováno pomocí více než jeden webový prohlížeč. Když přidáte typ webového prohlížeče do kombinaci ze sady webových prohlížečů, které jsou k dispozici, sadu přidružená záhlaví pro vybraný webový prohlížeč se přidá do každého požadavku HTTP, který se odešle podle testu výkonnosti webu.
 
- Kombinace prohlížečů funguje stejně jako jiné kombinace možností. Typ webového prohlížeče náhodně souvisí s virtuálního uživatele, založené na kombinaci prohlížečů. Spuštění testů daného uživatele na konkrétní webový prohlížeč, podle pravděpodobnost, že jste zadali v kombinaci.
+Kombinace prohlížečů funguje stejně jako jiné kombinace možností. Typ webového prohlížeče náhodně souvisí s virtuálního uživatele, založené na kombinaci prohlížečů. Spuštění testů daného uživatele na konkrétní webový prohlížeč, podle pravděpodobnost, že jste zadali v kombinaci.
 
- Po zadání kombinace prohlížečů, můžete později přidat a odebrat typy webových prohlížečů na kombinaci. Distribuce kombinace prohlížečů můžete také změnit pomocí kombinace ovládacího prvku. Kombinace řízení umožňuje snadno upravit kombinace prohlížečů ve scénáři.
+Po zadání kombinace prohlížečů, můžete později přidat a odebrat typy webových prohlížečů na kombinaci. Distribuce kombinace prohlížečů můžete také změnit pomocí kombinace ovládacího prvku. Kombinace řízení umožňuje snadno upravit kombinace prohlížečů ve scénáři.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>Přidat nové prohlížeče do scénáře
 

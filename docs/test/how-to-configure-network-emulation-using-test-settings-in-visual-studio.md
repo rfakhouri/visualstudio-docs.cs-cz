@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829284"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896299"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace emulace sítě s využitím testovacích nastavení v sadě Visual Studio
 
@@ -24,7 +24,9 @@ Můžete nakonfigurovat adaptér diagnostických dat a otestujte aplikaci v růz
 > [!WARNING]
 > Pokud spustíte testy na skutečné síti, která je pomalejšího typu než síť, kterou emulujete, test bude stále spuštěn pomocí pomalejší rychlosti sítě. Emulace můžete pouze zpomalit síťové prostředí, ne zrychlit.
 
- Následující postup popisuje konfiguraci emulace sítě z editoru konfigurace. Tento postup platí pro editor konfigurace v nástroji Microsoft Test Manager a sady Visual Studio.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Následující postup popisuje konfiguraci emulace sítě z editoru konfigurace. Tento postup platí pro editor konfigurace v nástroji Microsoft Test Manager a sady Visual Studio.
 
 > [!NOTE]
 > Adaptér diagnostických dat síťové emulace platí pouze pro nastavení testu Visual Studio. Pro nastavení testu v nástroji Microsoft Test Manager se nepoužívá.
@@ -34,9 +36,9 @@ Pro emulaci sítě musíte použít účet, který má oprávnění správce. Po
 > [!NOTE]
 > Účet Network Service, což je výchozí účet pro testovacího agenta, není členem skupiny administrators.
 
- **Skutečná emulace sítě**
+**Skutečná emulace sítě**
 
- Visual Studio používá pro všechny typy testu skutečnou síťovou softwarovou emulaci. Patří sem zátěžové testy. Skutečná emulace sítě simuluje stavy sítě prostřednictvím přímé manipulace se síťovými pakety. Emulátor skutečné sítě může emulovat chování drátové i bezdrátové sítě pomocí spolehlivého fyzického propojení, jako je Ethernet. Následující atributy sítě jsou začleněny do emulace sítě:
+Visual Studio používá pro všechny typy testu skutečnou síťovou softwarovou emulaci. Patří sem zátěžové testy. Skutečná emulace sítě simuluje stavy sítě prostřednictvím přímé manipulace se síťovými pakety. Emulátor skutečné sítě může emulovat chování drátové i bezdrátové sítě pomocí spolehlivého fyzického propojení, jako je Ethernet. Následující atributy sítě jsou začleněny do emulace sítě:
 
 - Časem přenosu v síti (čekací doba)
 
@@ -50,12 +52,13 @@ Pro emulaci sítě musíte použít účet, který má oprávnění správce. Po
 
 - Šíření chyb.
 
-  Skutečná emulace sítě také poskytuje flexibilitu při filtrování síťových paketů na základě IP adresy nebo protokoly, například TCP, UDP a ICMP.
+Skutečná emulace sítě také poskytuje flexibilitu při filtrování síťových paketů na základě IP adresy nebo protokoly, například TCP, UDP a ICMP.
 
-  Skutečná emulace sítě umožňuje založené na síti vývojářům a testerům emulovat požadované zkušební prostředí, hodnotit výkon, odhadnout účinky změn nebo rozhodovat o optimalizaci technologie. Srovnání s vrstvami testovacího hardwaru je skutečná emulace sítě mnohem levnější a pružnější řešení.
+Skutečná emulace sítě umožňuje založené na síti vývojářům a testerům emulovat požadované zkušební prostředí, hodnotit výkon, odhadnout účinky změn nebo rozhodovat o optimalizaci technologie. Srovnání s vrstvami testovacího hardwaru je skutečná emulace sítě mnohem levnější a pružnější řešení.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Konfigurace emulace sítě pro nastavení testu
- Před provedením kroků v tomto postupu je nutné otevřít nastavení testů ze sady Visual Studio a vyberte **dat a diagnostiky** stránky.
+
+Před provedením kroků v tomto postupu je nutné otevřít nastavení testů ze sady Visual Studio a vyberte **dat a diagnostiky** stránky.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Konfigurace emulace sítě pro nastavení testu
 

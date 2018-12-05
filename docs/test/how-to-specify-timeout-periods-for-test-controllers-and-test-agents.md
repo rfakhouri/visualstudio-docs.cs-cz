@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827932"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895688"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Postupy: nastavení časových limitů pro testovací kontroléry a testovací agenty
 
 Testovací kontrolér a testovací agent mají několik nastavení časového limitu, které určují, jak dlouho musí čekat na odpovědi od sebe nebo od zdroje dat, než oznámí chybu. Za určitých okolností může být nutné upravit hodnoty časového limitu podle potřeb vaší topologie nebo jiných problémů prostředí. Chcete-li upravit hodnoty časového limitu, upravte konfigurační soubor XML, který je spojen s testovacím kontrolérem nebo agentem, jak je popsáno v následující postupy.
 
- Chcete-li upravit testovací kontrolér nebo testovacího agenta různá nastavení časového limitu, upravte následující konfigurační soubory pomocí názvů klíčů a hodnot v tabulkách:
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+Chcete-li upravit testovací kontrolér nebo testovacího agenta různá nastavení časového limitu, upravte následující konfigurační soubory pomocí názvů klíčů a hodnot v tabulkách:
 
 -   Testovací kontrolér: *QTController.exe.config*
 

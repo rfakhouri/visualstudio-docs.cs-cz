@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370728"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895337"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Přiřazení rolí na testovací kontrolér a testovací agent
 
 Tento návod ukazuje, jak vytvořit a nakonfigurovat nastavení testu používající testovací kontrolér a testovací agent pro distribuci testování v několika počítačích pomocí sady Visual Studio. Kromě toho tento návod ukazuje, jak přidat adaptéry diagnostických do nastavení testu.
 
-V tomto návodu dokončíte následující úkoly:
-
--   Vytvořte nastavení testu.
-
--   Přiřazení rolí na testovací kontrolér a testovací agenty.
-
--   Přiřazení diagnostiky a datového adaptéru k nastavení testu.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>Požadavky
 

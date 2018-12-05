@@ -1,5 +1,5 @@
 ---
-title: Parametry spuštění zátěžového testu v sadě Visual Studio
+title: Parametry spuštění zátěžového testu
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 009315e2bd07cd62115c1f9130473a8c0c8d4a47
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621575"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895493"
 ---
 # <a name="load-test-run-settings-properties"></a>Vlastnosti nastavení běhu zátěžového testu
 
 Parametry spuštění zátěžového testu určují celou řadu dalších nastavení, včetně doby trvání testu, úroveň podrobností shromažďování výsledků a sady čítačů, které se shromažďují za běhu testu. Pro každý zátěžový test lze vytvořit a uložit několik parametrů spuštění a následně při spouštění testu zvolit jedno konkrétní nastavení. Při vytváření vašeho testu zatížení pomocí doplňuje počáteční parametry spuštění zátěžového testu **nového Průvodce zátěžovým testem**.
 
- Následující tabulky popisují různé vlastnosti parametrů spuštění zátěžového testu. Tyto vlastnosti lze upravit tak, aby splňovaly konkrétní požadavky zátěžového testu.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Další informace najdete v tématu [konfigurovat zátěžovým testem nastavení](../test/configure-load-test-run-settings.md).
+Následující tabulky popisují různé vlastnosti parametrů spuštění zátěžového testu. Tyto vlastnosti lze upravit tak, aby splňovaly konkrétní požadavky zátěžového testu.
+
+Další informace najdete v tématu [konfigurovat zátěžovým testem nastavení](../test/configure-load-test-run-settings.md).
 
 ## <a name="general-properties"></a>Obecné vlastnosti
 

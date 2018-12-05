@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950014"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895454"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Správa výsledků zátěžových testů v úložiště výsledků testu zátěže
 
 Při spuštění zátěžových testů v mohou být uloženy všechny informace shromážděné během spuštění zátěžového testu *úložiště výsledků testu zátěže*, což je databáze SQL. Úložiště výsledků zátěžového testu obsahují data čítače výkonu a veškeré informace o zaznamenaných chybách. Databáze úložiště výsledků je vytvořena instalačním programem řadiče, nebo vytvořena automaticky při prvním místním spuštění zátěžového testu. Pro místní spuštění databáze se vytvoří automaticky pokud neexistuje schéma zátěžového testu.
 
- Pokud změníte připojovací řetězec úložiště kontroleru výsledků použít jiný server, musí mít nový server *loadtestresultsrepository.sql* spustit skript k vytvoření schématu.
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise obsahuje čítače pojmenované sady, které shromažďují společné čítače výkonu, které jsou založeny na technologii. Tyto sady jsou užitečné při analýze serveru IIS, serveru ASP.NET nebo SQL server. Všechna data shromážděná pomocí sady čítačů je uložen v úložišti výsledků zátěžového testu.
+Pokud změníte připojovací řetězec úložiště kontroleru výsledků použít jiný server, musí mít nový server *loadtestresultsrepository.sql* spustit skript k vytvoření schématu.
+
+Visual Studio Enterprise obsahuje čítače pojmenované sady, které shromažďují společné čítače výkonu, které jsou založeny na technologii. Tyto sady jsou užitečné při analýze serveru IIS, serveru ASP.NET nebo SQL server. Všechna data shromážděná pomocí sady čítačů je uložen v úložišti výsledků zátěžového testu.
 
 > [!IMPORTANT]
 > Existuje rozdíl mezi sadou čítačů a daty čítačů výkonu. Sada čítačů jsou metadata. Definuje skupinu čítačů výkonu, které by měly být shromažďovány z počítače, který provádí určité role, jako je například IIS nebo SQL Server. Sada čítačů je součástí definice zkušebního zatížení. Data čítače výkonu jsou shromažďovány na základě na sady čítačů, mapování čítače nastaveny na určitý počítač a vzorkovací frekvenci.

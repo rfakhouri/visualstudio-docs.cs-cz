@@ -1,6 +1,6 @@
 ---
 title: Automatizované testy uživatelského rozhraní
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296070"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896637"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
 Automatizované testy, které ovládají aplikaci prostřednictvím jejího uživatelského rozhraní (UI) jsou označovány jako *programové testy UI* (CUITs) v sadě Visual Studio. Tyto testy zahrnují funkční testování ovládacích prvků uživatelského rozhraní. Umožňují ověřit, že celá aplikace včetně uživatelského rozhraní, funguje správně. Programové testy uživatelského rozhraní jsou obzvláště užitečná, pokud je ověření nebo jiná logika v uživatelském rozhraní, například na webové stránce. Používají se také často k automatizaci existujícího manuálního testu.
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 Jak je znázorněno na následujícím obrázku, může být typické vývojové prostředí, kde na začátku můžete jednoduše svou aplikaci a klikněte na tlačítko prostřednictvím ovládacích prvků uživatelského rozhraní k ověření, že všechno správně funguje. Potom můžete rozhodnout vytváření automatizovaných testů, takže není nutné a pokračujte v testování aplikace ručně. V závislosti na konkrétní funkce testování ve vaší aplikaci můžete napsat kód pro funkční testování nebo pro test integrace, který může nebo nemusí obsahovat testování na úrovni uživatelského rozhraní. Pokud chcete získat přímo přístup spustí nějakou obchodní logiku, může kód testu jednotek. Ale za určitých okolností může být vhodné zahrnout testování různých ovládacích prvků uživatelského rozhraní v aplikaci. Programový test UI můžete ověřit, že změny v kódu neovlivní funkčnost aplikace.
 

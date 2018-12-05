@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862096"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894570"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Postupy: nastavení testovacího agenta pro spouštění testů komunikujících s plochou
 
 Pokud chcete spustit automatizované testy, které spolupracují s plochou, musíte nastavit vašeho agenta ke spuštění jako proces místo jako služba. Například pokud chcete spustit programový test UI vzdáleně pomocí testovacího kontroléru a testovacího agenta nebo chcete spustit test a zachytit video zaznamenané při spuštění, musíte vytvořit agenta pro spuštění jako proces. Při přiřazení agentů k rolím v nastavení testu pomocí sady Visual Studio nebo přiřazení agentů k rolím v prostředí s použitím nástroje Microsoft Test Manager, je nutné změnit nastavení pro všechny agenty přiřazené k rolím, které musí provádět interakci s plochou.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > Pokud používáte Microsoft Test Manager k nastavení testovacího prostředí, instalaci testovacího agenta. Můžete určit **Průvodci vytvořením prostředí** chcete nakonfigurovat některý z role, které chcete spustit kódované testy uživatelského rozhraní.

@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380665"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894466"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Postupy: vytvoření testu webové služby
 
 Test výkonnosti webu můžete použít k otestování webové služby. S použitím **vložit žádost o** a **vložit žádost webové služby** možnosti, můžete přizpůsobit jednotlivé požadavky v **editoru testu výkonnosti webu** najít web stránky služby. Tyto stránky obvykle nejsou zobrazení ve webové aplikaci. Pro přístup k těmto stránkám je tedy nutné přizpůsobit požadavek.
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 Následující postupy používají webovou službu, která je obsažena v sadě Commerce Starter Kit. Můžete ji stáhnout [ASP.NET commerce starter kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
- **Požadavky**
+**Požadavky**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>K otestování webové služby
 

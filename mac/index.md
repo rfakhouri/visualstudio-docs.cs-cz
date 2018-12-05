@@ -3,14 +3,14 @@ title: Představení sady Visual Studio pro Mac
 description: Tento článek obsahuje představení funkcí sady Visual Studio pro Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624298"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895675"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Představení sady Visual Studio pro Mac
 
@@ -26,13 +26,16 @@ Zahrnuje funkce, jako jsou bohaté editoru, ladění, platformu nativní integra
 
 Tento článek zjišťování různých oddílů sady Visual Studio pro Mac a nabízí funkce, které usnadňují výkonný nástroj pro vytváření multiplatformních aplikací.
 
+> [!TIP]
+> 2019 Visual Studio pro Mac ve verzi preview je teď k dispozici pro testování. Postupujte podle těchto [pokyny k instalaci](install-preview.md) a podívejte se [prohlídka integrovaného vývojového prostředí](ide-tour.md).
+
 ## <a name="installation"></a>Instalace
 
-Postupujte podle pokynů [instalace](installation.md) průvodce ke stažení a instalaci sady Visual Studio pro Mac.
+Postupujte podle pokynů [instalace](install-preview.md) průvodce ke stažení a instalaci sady Visual Studio pro Mac.
 
 ## <a name="language-support"></a>Podpora jazyků
 
-Visual Studio for Mac podporuje vývoj v jazyce C# a F #, ve výchozím nastavení.
+Visual Studio for Mac podporuje vývoj v C# a F#, ve výchozím nastavení.
 
 ### <a name="c"></a>C#
 
@@ -40,7 +43,7 @@ C# je jazyk nejčastěji používané k vytvoření aplikace pro různé platfor
 
 ### <a name="f"></a>F#
 
-F # je silně typovaných funkcionální programovací jazyk navržený pro běh na rozhraní .NET. Je k dispozici jako programovací jazyk sady Visual Studio pro Mac na Android, Mac OS a iOS. Další informace o používání jazyka F # a chcete-li zobrazit ukázky vytvořené v jazyce, najdete [F #](https://developer.xamarin.com/guides/cross-platform/fsharp/) vodítka.
+F#slouží ke spuštění v rozhraní .NET silného typu funkcionální programovací jazyk. Je k dispozici jako programovací jazyk sady Visual Studio pro Mac na Android, Mac OS a iOS. Další informace o používání F# a pokud chcete zobrazit ukázky vytvořené v jazyce, přejděte [ F# ](https://developer.xamarin.com/guides/cross-platform/fsharp/) vodítka.
 
 ## <a name="platform-support"></a>Podpora platforem
 

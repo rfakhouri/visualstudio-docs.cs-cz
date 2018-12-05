@@ -1,5 +1,5 @@
 ---
-title: Poměr testů pro scénář zátěžového testu v sadě Visual Studio
+title: Poměr testů pro scénář testování zatížení
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179512"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895987"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Úpravy poměru testů určit, které webového výkonu, jednotek a programové testy uživatelského rozhraní mají být zahrnuty do scénáře zátěžového testu
 
 *Poměr testů* scénáře je kombinací výběr webového výkonu a testy jednotek, které jsou součástí scénáře a distribuce těchto testů ve scénáři. Distribuce je nastavení, které určíte pro pravděpodobnost, že určitého testu bude vybrán ve virtuálních uživatelů během spuštění testu zatížení.
 
- Po přidání sady testů k zátěžovému testu *poměr testů* kombinovat funguje stejně jako jiné možnosti. Virtuálních uživatelů náhodně vybere test, založený na pravděpodobnost, že jste zadali v kombinaci. Například pokud máte dva testy, každý 50 procent v kombinaci, nový virtuální uživatel zvolí pro spuštění prvního testu přibližně polovinu času. V kombinaci rozdělení 50/50 Pokud jeden test je dlouhý a další je krátký, pochází větší zatížení z dlouhého testu.
+Po přidání sady testů k zátěžovému testu *poměr testů* kombinovat funguje stejně jako jiné možnosti. Virtuálních uživatelů náhodně vybere test, založený na pravděpodobnost, že jste zadali v kombinaci. Například pokud máte dva testy, každý 50 procent v kombinaci, nový virtuální uživatel zvolí pro spuštění prvního testu přibližně polovinu času. V kombinaci rozdělení 50/50 Pokud jeden test je dlouhý a další je krátký, pochází větší zatížení z dlouhého testu.
 
- Po přidání testy na kombinaci, můžete ho odebrat. Distribuce poměru testů můžete také změnit pomocí kombinace ovládacího prvku. Kombinace řízení umožňuje snadno upravit distribuci testů ve scénáři.
+Po přidání testy na kombinaci, můžete ho odebrat. Distribuce poměru testů můžete také změnit pomocí kombinace ovládacího prvku. Kombinace řízení umožňuje snadno upravit distribuci testů ve scénáři.
 
 > [!NOTE]
 > Distribuce je míru pravděpodobnosti, že určitého testu bude vybrán ve virtuálních uživatelů během spuštění testu zatížení. Distribuce je vyjádřený v procentech. Proto součet čísel distribuce pro všechny testy, které jsou obsaženy ve scénáři je 100. Například pokud scénář obsahuje pouze jeden test, distribuce pro tento test je 100 % jeho obsahu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Přidejte nové testy do kombinace testů v existující scénář
 

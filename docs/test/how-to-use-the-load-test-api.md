@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4dfb5c79f2423ba25f16edadd70ee879ca966356
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282741"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894394"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Postupy: použití rozhraní API zátěžového testu
 
 Visual Studio podporuje zátěžového testu moduly plug-in kterých můžete ovládací prvek nebo vylepšit zátěžového testu. Test zatížení moduly plug-in jsou uživatelem definované třídy, které implementují <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> součástí rozhraní <xref:Microsoft.VisualStudio.TestTools.LoadTesting> oboru názvů. Zátěžového testu pro moduly plug-in povolit ovládacího prvku vlastní zátěžového testu, jako jsou například přerušování zátěžového testu při splnění prahové hodnoty čítače nebo chyba. Pomocí vlastností na <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> definována třída získat nebo nastavit parametry testu zatížení z uživatelského kódu. Použití událostí na <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> třídy připojit delegáty pro oznámení, když je spuštěn zátěžový test.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > Ke kontrole použijte prohlížeč objektů <xref:Microsoft.VisualStudio.TestTools.LoadTesting> oboru názvů. Editory Visual C# i Visual Basic nabízí podporu technologie IntelliSense pro kódování s třídami v oboru názvů.

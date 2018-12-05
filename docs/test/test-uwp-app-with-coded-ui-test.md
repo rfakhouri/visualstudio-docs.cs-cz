@@ -12,16 +12,18 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676066"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895961"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Vytvoření programového uživatelského rozhraní testu aplikace pro UPW
 
 Tento článek vysvětluje, jak vytvořit programový test uživatelského rozhraní pro aplikace univerzální platformy Windows (UPW).
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-uwp-app-to-test"></a>Vytvoření aplikace pro UPW pro testování
 

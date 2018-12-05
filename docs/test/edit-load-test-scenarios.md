@@ -1,5 +1,5 @@
 ---
-title: Úpravy scénářů zátěžových testů v sadě Visual Studio
+title: Scénáře testování zatížení
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837136"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896533"
 ---
 # <a name="edit-load-test-scenarios"></a>Úpravy scénářů zátěžových testů
 
 Zátěžový test *scénář* Určuje vzor zatížení, kombinaci testů, kombinace prohlížečů a kombinaci sítí. Scénáře jsou důležité, protože umožňují konfigurace testů k simulaci reálné, komplexní úlohy.
 
 Například můžete testovat server e-commerce s internetovým front-endu používá stovky souběžných zákazníci už průběhu mnoha rychlosti připojení a s různými prohlížeči. Stejný web může mít také funkci správy, které používají interní zaměstnanci k aktualizaci produktů a zobrazování statistických údajů. Tito interní uživatelé by obvykle přistupovali k webu pomocí stejného prohlížeče a vysokorychlostního připojení LAN. Je vhodné zapouzdřit vlastnosti těchto dvou různých skupin uživatelů v různých situacích. Každý scénář může obsahovat typ virtuálního uživatele. V takovém případě můžete provést do scénáře zátěžového testu představovat virtuální zákazníky a jiný scénář provádět představovat virtuální interní uživatele webu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>Součásti scénáře
 

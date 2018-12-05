@@ -1,5 +1,5 @@
 ---
-title: Určení typů virtuálních sítí ve scénáři zátěžového testu v sadě Visual Studio
+title: Určení typů virtuálních sítí ve scénáři zátěžového testu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380225"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894674"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Určení typů virtuálních sítí ve scénáři zátěžového testu
 
 *Kombinace sítí* poskytuje způsob, jak simulovat zatížení více realisticky v případě zkušebního scénáře. Zatížení je generováno pomocí heterogenní kombinace typů sítí místo jednoho jediného typu sítě. Můžete vytvořit užší odhad jak koncoví uživatelé pracují s vašimi aplikacemi.
 
- Určuje pravděpodobnost, že virtuální uživatel spustí kombinaci sítí danou *sítě profilu*. Profil sítě je simulace šířky pásma sítě v aplikační vrstvě. Není to simulovat latence.
+Určuje pravděpodobnost, že virtuální uživatel spustí kombinaci sítí danou *sítě profilu*. Profil sítě je simulace šířky pásma sítě v aplikační vrstvě. Není to simulovat latence.
 
- Když vytvoříte zátěžový test, můžete simulovat tak, že zatížení je právě generován prostřednictvím více než jeden typ připojení k síti. Mix sítě nabízí několik typů sítí. Jsou simulované různých sítí. Při výběru možnosti, jako `Cable-DSL 1.5Mbps`, čekací dobu jsou vloženy do testů pro simulaci vybrané šířky pásma.
+Když vytvoříte zátěžový test, můžete simulovat tak, že zatížení je právě generován prostřednictvím více než jeden typ připojení k síti. Mix sítě nabízí několik typů sítí. Jsou simulované různých sítí. Při výběru možnosti, jako `Cable-DSL 1.5Mbps`, čekací dobu jsou vloženy do testů pro simulaci vybrané šířky pásma.
 
- Poměr sítí funguje stejně jako jiné kombinace možností. Typ sítě je vybraný náhodně přidružené s virtuálního uživatele, založené na kombinaci sítí. Tento uživatel testy pomocí určitý typ sítě, podle pravděpodobnosti, kterou jste zadali v kombinaci.
+Poměr sítí funguje stejně jako jiné kombinace možností. Typ sítě je vybraný náhodně přidružené s virtuálního uživatele, založené na kombinaci sítí. Tento uživatel testy pomocí určitý typ sítě, podle pravděpodobnosti, kterou jste zadali v kombinaci.
 
- Po zadání kombinace sítě můžete přidávat a odebírat typy sítě. Můžete také změnit rozdělení kombinaci sítí pomocí ovládacího prvku kombinace.
+Po zadání kombinace sítě můžete přidávat a odebírat typy sítě. Můžete také změnit rozdělení kombinaci sítí pomocí ovládacího prvku kombinace.
 
- Kombinace řízení umožňuje snadno upravit distribuci sítí ve scénáři.
+Kombinace řízení umožňuje snadno upravit distribuci sítí ve scénáři.
 
- Další informace najdete v tématu [o ovládacím prvku kombinace](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+Další informace najdete v tématu [o ovládacím prvku kombinace](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>Skutečná emulace sítě
 
- Visual Studio používá softwarových skutečná emulace sítě pro všechny typy testu včetně zátěžových testů. Skutečná emulace sítě simuluje stavy sítě prostřednictvím přímé manipulace se síťovými pakety. Emulátor skutečné sítě může emulovat chování drátové i bezdrátové sítě pomocí spolehlivého fyzického propojení, jako je Ethernet. Následující atributy sítě jsou začleněny do emulace sítě:
+Visual Studio používá softwarových skutečná emulace sítě pro všechny typy testu včetně zátěžových testů. Skutečná emulace sítě simuluje stavy sítě prostřednictvím přímé manipulace se síťovými pakety. Emulátor skutečné sítě může emulovat chování drátové i bezdrátové sítě pomocí spolehlivého fyzického propojení, jako je Ethernet. Následující atributy sítě jsou začleněny do emulace sítě:
 
 -   Časem přenosu v síti (čekací doba)
 

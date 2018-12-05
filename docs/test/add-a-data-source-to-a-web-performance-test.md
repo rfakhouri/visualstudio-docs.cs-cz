@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295095"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896104"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
 Vytvoření vazby dat, poskytující různé hodnoty pro stejný test, například, poskytují různé hodnoty do formuláře Parametry post.
 
- ![Vazba dat do testu výkonnosti webu](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – výchozí stránku, červenou stránku a modrou stránku. Výchozí stránka obsahuje na přepínač pro výběr červeného nebo modrého tlačítka a tlačítka Odeslat. Další dvě *.aspx* stránky jsou velmi jednoduché. Jeden má popisek s názvem červený a druhý má popisek s názvem modrý. Pokud zvolíte odeslání na výchozí stránce, zobrazíme jednu z ostatních stránek. Můžete stáhnout [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ukázkový nebo stačí postupovat podle vlastní webové aplikace.
+![Vazba dat do testu výkonnosti webu](../test/media/web_test_databinding_conceptual.png)
 
- ![Spuštění webové aplikace, které má být testována](../test/media/web_test_databinding_runwebapp.png)
+Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – výchozí stránku, červenou stránku a modrou stránku. Výchozí stránka obsahuje na přepínač pro výběr červeného nebo modrého tlačítka a tlačítka Odeslat. Další dvě *.aspx* stránky jsou velmi jednoduché. Jeden má popisek s názvem červený a druhý má popisek s názvem modrý. Pokud zvolíte odeslání na výchozí stránce, zobrazíme jednu z ostatních stránek. Můžete stáhnout [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) ukázkový nebo stačí postupovat podle vlastní webové aplikace.
 
- Řešení by měl také obsahovat testu výkonnosti webu, který prochází stránkami webové aplikace.
+![Spuštění webové aplikace, které má být testována](../test/media/web_test_databinding_runwebapp.png)
 
- ![Řešení s testu výkonnosti webu](../test/media/web_test_databinding_solution.png)
+Řešení by měl také obsahovat testu výkonnosti webu, který prochází stránkami webové aplikace.
+
+![Řešení s testu výkonnosti webu](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>Vytvoření databáze SQL
 

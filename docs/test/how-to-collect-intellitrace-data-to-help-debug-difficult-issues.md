@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 593540e125980e245142052648a5a9d8894234fd
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621549"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894635"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: shromažďování dat IntelliTrace pro ladění složitých problémů
 
 Můžete nakonfigurovat adaptér diagnostických dat pro technologii IntelliTrace lze shromažďovat informace o specifickém diagnostickém trasování v Visual Stdio. Testy mohou tento adaptér používat. Test může shromažďovat podstatné diagnostické události aplikace, které může vývojář později použít pro trasování skrze kód a nalezení příčiny chyby. Adaptér diagnostiky dat pro technologii IntelliTrace lze použít pro manuální, nebo automatizované testy.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > Technologie IntelliTrace pracuje pouze v aplikaci, která je napsána ve spravovaném kódu. Pokud testujete webovou aplikaci, která jako klienta používá prohlížeč, neměli byste povolit IntelliTrace pro klienta v nastavení testu protože není k dispozici pro trasovacího žádný spravovaný kód. V takovém případě můžete nastavit prostředí a shromažďovat IntelliTrace data vzdáleně na webovém serveru.
@@ -32,7 +34,7 @@ IntelliTrace data jsou uložena v souboru, který má příponu *.iTrace*. Při 
 > [!NOTE]
 > Adaptér diagnostiky dat pro technologii IntelliTrace nevytvoří soubor IntelliTrace, pokud test proběhne úspěšně. Soubor se uloží pouze při selhání testovacího případu nebo při odeslání hlášení o chybě.
 
- Data shromažďovaná do souboru IntelliTrace zvyšují efektivitu ladění zkrácením doby potřebné k reprodukci a diagnostice chyby v kódu. Navíc vzhledem k tomu, že soubor IntelliTrace lze sdílet s jinou osobou, která může replikovat místní relaci ve svém počítači, se snižuje pravděpodobnost, že chyby nebudou reprodukovatelné.
+Data shromažďovaná do souboru IntelliTrace zvyšují efektivitu ladění zkrácením doby potřebné k reprodukci a diagnostice chyby v kódu. Navíc vzhledem k tomu, že soubor IntelliTrace lze sdílet s jinou osobou, která může replikovat místní relaci ve svém počítači, se snižuje pravděpodobnost, že chyby nebudou reprodukovatelné.
 
 > [!NOTE]
 > Pokud v nastaveních testů povolíte technologii IntelliTrace, nebude fungovat shromažďování dat o pokrytí kódu.
@@ -40,7 +42,7 @@ IntelliTrace data jsou uložena v souboru, který má příponu *.iTrace*. Při 
 > [!WARNING]
 > Adaptér diagnostiky dat pro technologii IntelliTrace funguje díky instrumentaci spravovaného procesu, která musí být provedena po načtení testů pro testovací běh. Pokud již byl proces, který chcete sledovat, spuštěn, nebudou shromážděny žádné soubory IntelliTrace, protože proces již probíhá. To lze obejít ověřením, že se proces před načtením testů ukončil. Poté po načtení testů nebo spuštění prvního testu spusťte proces.
 
- Následující postup popisuje, jak nakonfigurovat data IntelliTrace, která chcete shromažďovat. Tento postup platí pro editor konfigurace v nástroji Microsoft Test Manager a nastavení testu dialogové okno v sadě Visual Studio.
+Následující postup popisuje, jak nakonfigurovat data IntelliTrace, která chcete shromažďovat. Tento postup platí pro editor konfigurace v nástroji Microsoft Test Manager a nastavení testu dialogové okno v sadě Visual Studio.
 
 > [!NOTE]
 > Uživatelský účet pro testovacího agenta, který je používán k shromažďování dat IntelliTrace, musí být členem skupiny administrátorů. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).

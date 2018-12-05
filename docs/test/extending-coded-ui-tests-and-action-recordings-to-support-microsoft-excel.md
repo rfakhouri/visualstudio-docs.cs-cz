@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 97d49c44a2ab7b81a0241366ec9cc6e74401d6f5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbf4d89fc0a32501a2ea275c5168969dd2a0fd19
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180487"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894115"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Rozšíření programových testů UI a záznamů akcí
 
 Testovací rozhraní pro programové testy uživatelského rozhraní a zaznamenávání akcí nepodporuje každé uživatelské rozhraní. To nemusí podporovat konkrétní uživatelské rozhraní, které chcete testovat. Například nelze vytvořit okamžitě programový test uživatelského rozhraní nebo záznam akce pro tabulky Microsoft Excel. Můžete však vytvořit vlastní rozšíření programového uživatelského rozhraní pro testování, která podporuje vaše konkrétní uživatelské rozhraní s využitím rozšíření programových testů uživatelského rozhraní.
 
 ![Architektura Test uživatelského rozhraní](../test/media/ui_testarch.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="sample-extension-to-test-microsoft-excel"></a>Ukázka rozšíření k testování aplikace Microsoft Excel
 

@@ -1,16 +1,17 @@
 ---
 title: Visual Studio for Mac prohlídku
 description: Visual Studio for Mac obsahuje integrované vývojové prostředí pro vytváření aplikací .NET v systému macOS, včetně webů ASP.NET Core a projekty Xamarin pro iOS, Android, Mac a Xamarin.Forms.
+zone_pivot_groups: mac-ide-version
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295680"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895792"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac prohlídku
 
@@ -24,7 +25,25 @@ Tento článek se věnuje různých oddílů sady Visual Studio pro Mac, poskytu
 
 Visual Studio for Mac je uspořádaný do několika oddílů pro správu souborů aplikace a nastavení, vytvoření kódu aplikace a ladění.
 
-## <a name="welcome-screen"></a>Úvodní obrazovka
+::: zone pivot="vsmac2019"
+
+## <a name="visual-studio-for-mac-2019-start-window"></a>Visual Studio for Mac 2019 Start okna
+
+> [!TIP]
+> Visual Studio 2019 pro Mac ve verzi preview je [k dispozici ke stažení](install-preview.md) a testování.
+
+Při spuštění sady Visual Studio pro Mac 2019 ve verzi preview nové uživatelům se zobrazí okno přihlášení. Přihlaste se pomocí svého účtu Microsoft k aktivaci placenou licenci (pokud nějakou máte) nebo odkaz na předplatná Azure. Stisknutím klávesy **přeskočit** a později přihlásit přes **sady Visual Studio > přihlaste** položky nabídky:
+
+![Přihlaste se ke svému účtu Microsoft](media/ide-tour-2019-start-signin.png)
+
+Přihlášených uživatelů se zobrazí nové _časový interval pro spuštění_, která zobrazuje seznam posledních projektů a tlačítka Otevřít existující projekt nebo vytvořte novou:
+
+![Výběr z nedávných projektů, nebo vytvořit něco nového](media/ide-tour-2019-start-projects.png)
+
+::: zone-end
+::: zone pivot="vsmac2017"
+
+## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>Úvodní obrazovka v sadě Visual Studio pro Mac 2017
 
 Při spuštění, zobrazí Visual Studio pro Mac *úvodní obrazovka*:
 
@@ -36,6 +55,8 @@ Na úvodní obrazovce obsahuje následující části:
 - **Začínáme se službou** – poskytuje rychlý přístup k užitečným tématům pro vývojáře, Začínáme se sadou Visual Studio pro Mac.
 - **Poslední řešení** – poskytuje rychlý přístup k naposledy otevřeným řešení, jakož i praktické tlačítka pro otevření nebo vytvoření projektů.
 - **Novinky pro vývojáře** – informační kanál, který udržuje je aktuální na nejnovější informace o Microsoft Developer.
+
+::: zone-end
 
 ## <a name="solutions-and-projects"></a>Řešení a projekty
 

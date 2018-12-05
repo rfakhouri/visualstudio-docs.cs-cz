@@ -1,5 +1,5 @@
 ---
-title: Povolení programového testování uživatelského rozhraní ovládacích prvků v sadě Visual Studio
+title: Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153560"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895948"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
 
 Implementaci podpory programových testů UI framework provádět více možností intenzivního testování ovládacího prvku. Zvýšení úrovně podpory můžete přidat postupně. Začněte tím, že podpora záznam a přehrávání a vlastnosti ověřování. Následně vytvářejte a povolit Tvůrce programového testu uživatelského rozhraní pro rozpoznávání vlastností vlastního ovládacího prvku. Zadejte vlastní třídy pro přístup k těmto vlastnostem generovaného kódu. Může také pomoct programového uživatelského rozhraní testu Tvůrce zachycení akce způsobem, který je blíž k příslušnému záměru akce, které je zaznamenáváno.
 
 ![CUIT&#95;úplné](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Podpora ověření záznam a přehrávání a vlastnost implementací usnadnění přístupu
 

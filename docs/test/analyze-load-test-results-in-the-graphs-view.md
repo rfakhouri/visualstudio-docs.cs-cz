@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 563e7c859c7800d543cd19e444b2fda8363a17c6
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621222"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895077"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
 
 Výsledky zátěžového testu se zobrazí jako data v několika různých podoken.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Chcete-li zobrazit výsledky testů jako grafy, zvolte **grafy** na **zátěžový test** nástrojů. Každé jednotlivé grafu se zobrazí v panelu s názvem grafu zobrazí v horní části stránky v rozevíracím seznamu. K zobrazení různých graf na panelu, vyberte název jiného grafu ze seznamu.
 

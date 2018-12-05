@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b395d845e53e8d9632cce27ae0714e9bc0a87d26
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621338"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895025"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Sestava zátěžové testy s výsledky pro porovnávání testů a analýzu trendů
 
-Můžete generovat sestavy zátěžového testu aplikace Microsoft Excel, které jsou založeny na dvou nebo více výsledcích testu. K dispozici jsou dva typy sestav zátěžových testů:
+Můžete generovat sestavy zátěžového testu aplikace Microsoft Excel, které jsou založeny na dvou nebo více výsledcích testu.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+K dispozici jsou dva typy sestav zátěžových testů:
 
 - Spustit porovnání&mdash;této sestavy je ve skutečnosti dvě sestavy, které zobrazují vedle sebe porovnání dat pomocí tabulek a sloupcových grafů.
 
