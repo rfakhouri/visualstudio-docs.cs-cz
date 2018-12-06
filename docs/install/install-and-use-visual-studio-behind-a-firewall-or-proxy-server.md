@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2636bed20da5af32e011b39cf262349d42ddda55
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 6fbea07aee311bd1548397f4b3d475e4819523df
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349566"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954185"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -55,7 +55,7 @@ Vzhledem k tomu, že instalační program sady Visual Studio stáhne soubory z r
 | VisualStudio.microsoft.com | Dokumentace k umístění |
 | docs.microsoft.com | Dokumentace k umístění |
 | msdn.microsoft.com | Dokumentace k umístění |
-| www.microsoft.com | Dokumentace k umístění |
+| WWW\.webu microsoft.com | Dokumentace k umístění |
 | \*. windows.net | Místo přihlášení |
 | \*. microsoftonline.com | Místo přihlášení |
 | \*. live.com | Místo přihlášení |
@@ -72,9 +72,9 @@ Vzhledem k tomu, že instalační program sady Visual Studio stáhne soubory z r
 | download.unity3d.com | Vývoj her pomocí Unity (Unity) |
 | netstorage.unity3d.com | Vývoj her pomocí Unity (Unity) |
 | dl.google.com | Vývoj mobilních aplikací pomocí jazyka JavaScript (sady Android SDK a sada NDK, emulátor) <br /><br />Vývoj mobilních aplikací pomocí .NET (sady Android SDK a sada NDK, emulátor) |
-| www.incredibuild.com | Vývoj her v C++ (IncrediBuild) |
+| WWW\.incredibuild.com | Vývoj her v C++ (IncrediBuild) |
 | incredibuildvs2017i.azureedge.net | Vývoj her v C++ (IncrediBuild) |
-| www.python.org | Vývoj v jazyce Python (Python) <br /><br />Pro datové vědy a analytické aplikace (Python) |
+| WWW\.python.org | Vývoj v jazyce Python (Python) <br /><br />Pro datové vědy a analytické aplikace (Python) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Použijte sadu Visual Studio a službami Azure

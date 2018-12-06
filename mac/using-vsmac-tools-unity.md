@@ -1,16 +1,16 @@
 ---
 title: Pomocí sady Visual Studio for Mac Tools for Unity
 description: Tato příručka popisuje, jak pomocí sady Visual Studio for Mac Tools pro Unity rozšíření
-author: dantogno
-ms.author: v-davian
+author: johmil
+ms.author: therealjohn
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: d1cf502c171c5743baacfcfb241321e3f82503f7
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348927"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52953951"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Pomocí sady Visual Studio for Mac Tools for Unity
 

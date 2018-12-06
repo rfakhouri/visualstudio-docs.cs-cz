@@ -9,20 +9,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
+ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379635"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52954081"
 ---
-# <a name="install-third-party-unit-test-frameworks"></a>Instalace systémů testů jednotek od třetích stran
+# <a name="install-unit-test-frameworks"></a>Nainstalujte rozhraní pro testování částí
 
 Visual Studio Test Explorer můžete spustit libovolné jednotky rozhraní testování, který byl vyvinut rozhraní adaptér pro Průzkumníka. Instalační program rozhraní Framework nainstalují binární soubory a přidá šablony projektů Visual Studio pro jazyky, které podporuje. Při vytváření projektu se šablonou rozhraní zaregistrován pomocí Průzkumníka testů. Řešení sady Visual Studio může obsahovat projektů testů jednotek, které používají různá rozhraní a, který cílí na různé jazyky. Průzkumník testů provádí s nimi všechny.
 
-## <a name="acquire-third-party-frameworks"></a>Získání rozhraní třetích stran
+[MSTest](getting-started-with-unit-testing.md) je rozhraní pro testování poskytovaný sadou Visual Studio a je ve výchozím nastavení nainstalované s Visual Studio.
 
-Můžete stáhnout a nainstalovat mnoha rozhraní pro testování jednotky třetí strany, pomocí Správce rozšíření sady Visual Studio nebo z webu Visual Studio Marketplace. Rozhraní můžete také stáhnout z jiných webů, jako je web rozhraní framework.
+## <a name="acquire-frameworks"></a>Získání rozhraní
+
+Můžete stáhnout a nainstalovat rozhraní pro testování jednotky třetí strany, pomocí Správce rozšíření sady Visual Studio nebo z [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Rozhraní můžete také stáhnout z jiných webů, jako je web rozhraní framework.
 
 ### <a name="install-from-visual-studio"></a>Instalace ze sady Visual Studio
 
@@ -64,7 +66,7 @@ Aktualizace na nejnovější stabilní testovací adaptér, který má lepší p
 
 1. Otevřete Správce balíčků Nuget pro řešení tak, že přejdete do **nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet pro řešení**.
 
-2. Klikněte na **aktualizace** kartu a vyhledat NUnit a xUnit testování adaptéry, které jsou nainstalovány.
+2. Klikněte na **aktualizace** kartu a vyhledejte xUnit, MSTest nebo NUnit testování adaptéry, které jsou nainstalovány.
 
 3. Vyberte jednotlivé adaptéry testu a pak v rozevírací nabídce vyberte nejnovější stabilní verzi.
 
