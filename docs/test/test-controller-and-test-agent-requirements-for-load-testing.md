@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceb3ecde3941a12b7113ede04b5f7dda841c7816
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813983"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894726"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Testovací kontrolér a testovací agent požadavky pro zátěžové testování
 
 Některé typy včetně částí, výkonu webu, zátěžových testů a ručních testů jsou integrované do sady Visual Studio. Visual Studio umožňuje uživatelům aplikace Visual Studio Application Lifecycle Management ke spuštění testů na vzdálených počítačích pomocí testovacího kontroléru a jednoho nebo více agentů. Zobrazit [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>Požadavky na hardware a software
 

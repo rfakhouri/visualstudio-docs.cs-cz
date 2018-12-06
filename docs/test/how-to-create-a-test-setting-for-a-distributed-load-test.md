@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296083"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895467"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Postupy: vytvoření nastavení testu pro distribuovaný zátěžový test
 
 Konfigurace *nastavení testu* pro zátěžové testy, abyste mohli distribuce těchto testů mezi více počítačů pomocí testovacích agentů a řadičů testu. Můžete také nakonfigurovat nastavení testu *adaptéry diagnostických dat*, který určuje typy dat, která chcete shromažďovat nebo způsob, jak ovlivnit testovací počítače při spuštění zátěžových testů ze sady Visual Studio.
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 Například můžete použít adaptér diagnostiky dat Profiler technologie ASP.NET ke shromažďování rozdělení práce kódu. Navíc adaptéry diagnostických dat slouží k simulaci potenciálních slabých míst v testovacím počítači nebo snížení dostupné systémové paměti.
 
