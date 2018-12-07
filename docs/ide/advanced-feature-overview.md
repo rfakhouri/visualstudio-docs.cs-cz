@@ -1,5 +1,6 @@
 ---
 title: Pokročilých funkcích sady Visual Studio 2017
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9452e732458a91ce5cc3eea505c7ab3e6dec1774
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863645"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062661"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
 
@@ -66,7 +67,7 @@ Visual Studio můžete použít k sestavení aplikací a her pro Windows, macOS 
 
 - Sestavení [.NET Core](/dotnet/core/) aplikací pro Windows, macOS a Linux.
 
-- Vytváření mobilních aplikací pro iOS, Android a Windows v C# a F # s použitím [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
+- Vytvářejte mobilní aplikace pro iOS, Android a Windows v C# a F# pomocí [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
 - Používejte standardní webové technologie&mdash;HTML, CSS a JavaScriptu&mdash;můžete vytvářet mobilní aplikace pro iOS, Android a Windows s použitím [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 

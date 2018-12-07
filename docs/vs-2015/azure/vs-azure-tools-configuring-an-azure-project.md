@@ -1,5 +1,5 @@
 ---
-title: Konfigurace projektu Azure cloud service pomocí sady Visual Studio | Dokumentace Microsoftu
+title: Konfigurace projektu cloudové služby Azure
 description: Zjistěte, jak nakonfigurovat projekt cloudové služby Azure v sadě Visual Studio, v závislosti na vašich požadavcích pro daný projekt.
 author: ghogen
 manager: douge
@@ -11,25 +11,25 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 7417bc117de7dc472f413dd9145944cad2d48bb4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: e117eb436ff1cf37740e97ee1889bc1bf063db94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003345"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051378"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurace projektu cloudové služby Azure v sadě Visual Studio
 Projekt Azure cloud service, můžete nakonfigurovat v závislosti na vašich požadavcích pro daný projekt. Můžete nastavit vlastnosti projektu v těchto kategoriích:
 
 - **Publikovat do cloudového Azure** – můžete nastavit vlastnosti a ujistěte se, že není možné omylem odstranit existující cloudové služby nasadit do Azure.
 - **Spuštění nebo ladění cloudové služby na místním počítači** – můžete vybrat konfiguraci služby, kterou chcete použít a určit, jestli chcete spustit emulátor úložiště Azure.
-- **Ověřit balíček cloudové služby, když se vytvoří** – se můžete rozhodnout používat zpracovávat všechna upozornění jako chyby tak, aby bylo možné zajistit, že balíček cloudové služby nasadí bez problémů. 
+- **Ověřit balíček cloudové služby, když se vytvoří** – se můžete rozhodnout používat zpracovávat všechna upozornění jako chyby tak, aby bylo možné zajistit, že balíček cloudové služby nasadí bez problémů.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Postup konfigurace projektu Azure cloud service
 1. Otevřete nebo vytvořte projekt cloudové služby v sadě Visual Studio
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a v místní nabídce vyberte **vlastnosti**.
-   
+
 1. Na stránce vlastností projektu, vyberte **vývoj** kartu.
 
     ![Nabídku vlastností projektu](./media/vs-azure-tools-configuring-an-azure-project/solution-explorer-project-properties-menu.png)
@@ -48,4 +48,3 @@ Projekt Azure cloud service, můžete nakonfigurovat v závislosti na vašich po
 
 ## <a name="next-steps"></a>Další kroky
 - [Konfigurace projektu Azure v použití několika konfigurací služby](vs-azure-tools-multiple-services-project-configurations.md)
-

@@ -1,5 +1,5 @@
 ---
-title: Příkazy sady Visual Studio
+title: Příkazy
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,32 +14,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879001"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063458"
 ---
 # <a name="visual-studio-commands"></a>Příkazy sady Visual Studio
+
 Příkazy sady Visual Studio umožňují spuštění příkazu z **příkaz** okně **okamžité** okna, nebo **najít/příkaz** pole. V obou případech znak větší (`>`) se používá k označení, že je má následovat příkaz a ne operace hledání nebo ladění.
 
- Úplný seznam příkazů a jejich syntaxi můžete najít **klávesnice, možnosti prostředí** dialogové okno.
+Úplný seznam příkazů a jejich syntaxi můžete najít **klávesnice, možnosti prostředí** dialogové okno.
 
- Řídicí znak pro příkazy sady Visual Studio je znak stříšky (^), což znamená, že okamžitě následující znak je interpretován doslovně a ne jako řídicí znak. To slouží k vložení uvozovek ("), mezer, úvodních lomítek, střížek nebo jakýmikoli literálními znaky parametru nebo hodnotě switch s výjimkou názvů switchů. Například
+Řídicí znak pro příkazy sady Visual Studio je znak stříšky (^), což znamená, že okamžitě následující znak je interpretován doslovně a ne jako řídicí znak. To slouží k vložení uvozovek ("), mezer, úvodních lomítek, střížek nebo jakýmikoli literálními znaky parametru nebo hodnotě switch s výjimkou názvů switchů. Například
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- Stříška funguje stejně, ať už se jedná o vnitřní nebo vnější uvozovky. Pokud poslední znak na řádku stříška, je ignorován.
+Stříška funguje stejně, ať už se jedná o vnitřní nebo vnější uvozovky. Pokud poslední znak na řádku stříška, je ignorován.
 
- V lokalizovaných verzích rozhraní IDE lze zadat názvy příkazů v původním jazyce rozhraní IDE nebo v angličtině. Například můžete zadat buď `File.NewFile` nebo `Fichier.NouveauFichier` ve francouzském prostředí IDE, chcete-li spustit tak stejný příkaz.
+V lokalizovaných verzích rozhraní IDE lze zadat názvy příkazů v původním jazyce rozhraní IDE nebo v angličtině. Například můžete zadat buď `File.NewFile` nebo `Fichier.NouveauFichier` ve francouzském prostředí IDE, chcete-li spustit tak stejný příkaz.
 
- Mnoho příkazů má aliasy. Seznam příkazových aliasů naleznete v tématu [aliasy příkazů aplikace Visual Studio](../../ide/reference/visual-studio-command-aliases.md).
+Mnoho příkazů má aliasy. Seznam příkazových aliasů naleznete v tématu [aliasy příkazů aplikace Visual Studio](../../ide/reference/visual-studio-command-aliases.md).
 
- Následující příkazy přijmou argumenty a/nebo přepínače.
-
+Následující příkazy přijmou argumenty a/nebo přepínače.
 
 | Název příkazu | Popis |
 | - | - |
@@ -69,7 +69,7 @@ Příkazy sady Visual Studio umožňují spuštění příkazu z **příkaz** ok
 | [Nastavit aktuální rámec zásobníku](../../ide/reference/set-current-stack-frame-command.md) | Umožňuje zobrazit konkrétní rámec zásobníku. |
 | [Nastavit aktuální vlákno](../../ide/reference/set-current-thread-command.md) | Umožňuje zobrazit konkrétní vlákno. |
 | [Nastavit základ](../../ide/reference/set-radix-command.md) | Určuje počet bajtů, které mají zobrazit. |
-| [Prostředí shell](../../ide/reference/shell-command.md) | Spouští programy v rámci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jako by byl proveden příkaz z příkazového řádku. |
+| [Prostředí](../../ide/reference/shell-command.md) | Spouští programy v rámci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jako by byl proveden příkaz z příkazového řádku. |
 | [Příkaz ShowWebBrowser (Zobrazit webový prohlížeč)](../../ide/reference/showwebbrowser-command.md) | Zobrazí adresu URL zadanou v okně webového prohlížeče buď v rámci integrovaného vývojového prostředí (IDE) nebo mimo prostředí IDE. |
 | [Start](../../ide/reference/start-command.md) | Spustí proces ladění a umožňuje určit způsob zpracování chyb. |
 | [Cesta](../../ide/reference/symbol-path-command.md) | Nastaví seznam adresářů pro ladicí program pro hledání symbolů. |

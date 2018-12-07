@@ -1,5 +1,5 @@
 ---
-title: 'Přehled: Navrhnout funkci pro sadu Visual Studio'
+title: Návrhy funkcí
 description: Popisuje návrhy jsou na komunity vývojářů, jak provádět návrh a použití návrhy společností Microsoft v rámci plánu sady Visual Studio
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 3bdc2521020b1b354108e3130c7efa66d7c15394
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826689"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053370"
 ---
 # <a name="overview-suggest-a-feature"></a>Přehled: Navrhnout funkci
 
 Zavedli jsme zcela novém hávu pro návrhy na funkce spolu s aktuálním možnost nahlásit potíže [komunity vývojářů v aplikaci Visual Studio](https://developercommunity.visualstudio.com). Toto je nový způsob, jakým lze oprávněn spolupracovat přímo s pracovního postupu vytváření sady Visual Studio.
 
-Až doteď uživatelům aplikace Visual Studio použili fóru User Voice pro návrh nové nápady týkající se funkcí. *Navrhnout funkci* prostředí v komunitě vývojářů umožňuje přechod na fóru User Voice do jedné platformy za váš názor, který zaujme přímo s týmy produktu Visual Studio.  
+Až doteď uživatelům aplikace Visual Studio použili fóru User Voice pro návrh nové nápady týkající se funkcí. *Navrhnout funkci* prostředí v komunitě vývojářů umožňuje přechod na fóru User Voice do jedné platformy za váš názor, který zaujme přímo s týmy produktu Visual Studio.
 
 Migrovali jsme počáteční sadu nápady z fóru User Voice do komunity vývojářů. Migrace byla provedena podle dopadu komunity zpětnou vazbu a naše priority plán produktu. Pokud jste čekali zobrazíte tady návrh, který jsme si asi nevšimli, můžete ho přidat do komunity vývojářů.
 
 ## <a name="votes"></a>Hlasy
 
-Hlasování systému přes User Voice funguje jinak než hlasy v komunitě vývojářů. A udržovat tak integritu počty hlas komunity vývojářů a vyhněte se zkosení hlasů, jsme výrazně zobrazit počty hlas User Voice jako značku vedle jednotlivých funkcí návrh. I další hlasovat o doporučeních v rozšířené komunity vývojářů, vaše nové počty hlasování se zobrazí samostatně z počty hlas User Voice.  
+Hlasování systému přes User Voice funguje jinak než hlasy v komunitě vývojářů. A udržovat tak integritu počty hlas komunity vývojářů a vyhněte se zkosení hlasů, jsme výrazně zobrazit počty hlas User Voice jako značku vedle jednotlivých funkcí návrh. I další hlasovat o doporučeních v rozšířené komunity vývojářů, vaše nové počty hlasování se zobrazí samostatně z počty hlas User Voice.
 
 ## <a name="user-voice"></a>User Voice
 
@@ -77,7 +77,7 @@ Návrh funkce označené **potřebovat další informace o** znamená, že budem
 
 - - -
 
-![Uzavřeno – není k dispozici dostatek informací o stavu doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![Uzavřeno – není k dispozici dostatek informací o stavu doporučení týkající se komunity vývojářů](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 **Uzavřeno – není k dispozici dostatek informací o** označuje, že po několika opakovaných pokusech, jsme neobdrželi dostatek informací, které váš návrh funkce plně nerozumí. Máme nový návrh funkce zavřete, jakmile vás budeme moct provádět žádnou další akci v této fázi.
 

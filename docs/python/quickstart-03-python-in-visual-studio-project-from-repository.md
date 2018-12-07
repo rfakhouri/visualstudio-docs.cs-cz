@@ -1,22 +1,23 @@
 ---
 title: Rychlý start – klonování úložiště kódu v Pythonu
 description: V tomto rychlém startu vytvoříte projekt Python v sadě Visual Studio naklonováním úložiště koans Python pomocí Visual Studio Team Explorer.
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281686"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068390"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý start: Klonování úložiště kódu v Pythonu v sadě Visual Studio
 
@@ -57,7 +58,7 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 
 1. Stisknutím klávesy **Ctrl**+**F5** nebo vyberte **ladění** > **spustit bez ladění** ke spuštění programu. Pokud se zobrazí **FileNotFoundError** pro *koans.txt*, zkontrolujte pracovní adresář, nastavení, jak je popsáno v předchozím kroku.
 
-1. Když se program spustí úspěšně, zobrazí chybu kontrolní výraz na řádku 17 *python3/koans/about_asserts.py*. Je to záměr: program navrženy tak, aby Python tím, že můžete opravit všechny úmyslné chyby. (Další podrobnosti se nachází na [Ruby Koans](http://rubykoans.com/), který která vychází z Pythonu Koans.)
+1. Když se program spustí úspěšně, zobrazí chybu kontrolní výraz na řádku 17 *python3/koans/about_asserts.py*. Je to záměr: program navrženy tak, aby Python tím, že můžete opravit všechny úmyslné chyby. (Další podrobnosti se nachází na [Ruby Koans](https://rubykoans.com/), který která vychází z Pythonu Koans.)
 
     ![První výstup z programu koans Pythonu](media/koans-output.png)
 

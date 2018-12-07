@@ -1,6 +1,6 @@
 ---
-title: Formátování kódu v Pythonu
-description: Jak automaticky formátovat kód Python v sadě Visual Studio, včetně mezer, příkazy, zabalení a komentáře.
+title: Formátování kódu Pythonu
+description: Visual Studio může automaticky formátovat kód Python včetně mezer, příkazy, zabalení a komentáře.
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219546"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052190"
 ---
 # <a name="format-python-code"></a>Formátování kódu Pythonu
 
@@ -29,7 +30,7 @@ Možnosti se nastavují pomocí **nástroje** > **možnosti** > **textový Edito
 
 ![Python v sadě Visual Studio možnosti formátování](media/options-editor-formatting.png)
 
-Možnosti formátování ve výchozím nastavení jsou nastavené tak, aby odpovídaly nadmnožinu [průvodce správným stylem období 8](http://www.python.org/dev/peps/pep-0008/). **Obecné** kartu určuje při formátování se aplikuje; nastavení na třech kartách jsou popsány v tomto článku.
+Možnosti formátování ve výchozím nastavení jsou nastavené tak, aby odpovídaly nadmnožinu [průvodce správným stylem období 8](https://www.python.org/dev/peps/pep-0008/). **Obecné** kartu určuje při formátování se aplikuje; nastavení na třech kartách jsou popsány v tomto článku.
 
 [Podpora Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md) přidá také užitečné [ **vyplnit odstavec komentáře** ](#fill-comment-paragraph-command) příkaz **upravit**  >   **Pokročilé** nabídky, jak je popsáno v další části.
 

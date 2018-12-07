@@ -1,16 +1,16 @@
 ---
 title: Instalační program sady Visual Studio for Mac Tools for Unity
 description: Nastavení a instalaci nástrojů Unity pro použití v sadě Visual Studio pro Mac
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4fa1be72f389da415c01cc685e2c73fd9d55e618
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 9a661e3cae151e4d6199fd2a588ebd62e098de6c
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52953925"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027325"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Instalace sady Visual Studio for Mac Tools for Unity
 

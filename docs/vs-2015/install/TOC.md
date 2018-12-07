@@ -12,5 +12,3 @@
 ## [Postupy: Upgrade ze zkušební edice sady Visual Studio](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [Postupy: Vyhledání kódu Product key sady Visual Studio](how-to-locate-the-visual-studio-product-key.md)
 ## [Výjimky ze zásad životního cyklu sady Visual Studio](visual-studio-lifecycle-policy-exceptions.md)
-# [Instalace sady Visual Studio 2017](install-visual-studio-15-preview-5.md)
-## [Úpravy sady Visual Studio 2017](modify-visual-studio-15-preview-5.md)

@@ -1,6 +1,6 @@
 ---
 title: Nainstalovat sadu Visual Studio 2015 | Dokumentace Microsoftu
-ms.custom: ''
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 2552af00acdcb490c5f54f642fdfcdc3588d22e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789990"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055164"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 

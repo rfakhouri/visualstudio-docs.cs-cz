@@ -1,5 +1,5 @@
 ---
-title: Generování kódu, kompilace a konvence pojmenování ve Microsoft Fakes pro sadu Visual Studio
+title: Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926017"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058308"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 
@@ -272,7 +272,7 @@ attribute of the Assembly element in the .fakes:
 
 Následující pravidla jsou aplikována rekurzivně:
 
--   Jelikož napodobeniny používají C# ke generování sestavení Fakes, jakýkoli znak, který vyprodukuje neplatný token jazyka C# je převeden na "_" (podtržítko).
+-   Jelikož napodobeniny používají C# ke generování sestavení Fakes, jakýkoli znak, který vyprodukuje neplatný C# token je převeden na "_" (podtržítko).
 
 -   Jestliže výsledný název koliduje se členem deklarovaného typu, se používá schéma číslování přidáním čítač dvěma číslicemi, začínající od 01.
 

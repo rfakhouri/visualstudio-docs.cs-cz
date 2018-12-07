@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Help Viewer tabulka obsahu
+title: Pomocí aplikace Help Viewer obsah
 ms.date: 11/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -17,42 +17,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7d9ae19cb2a37c6fbf6595a7f3a39895d22190
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86e334fac2fca09514dd4adaf4a05fac0accc11f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945750"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063406"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Postupy: hledání témat v obsahu
 
-V **obsah** kartě obsahu (obsah) můžete použít k nalezení informací. Obsah je rozevírací seznam obsahující všechny témat v nainstalované knih. Usnadnění informace o tom, jak procházet obsahu najdete v tématu [klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md).
+V **obsah** kartu, můžete použít obsah (TOC) k nalezení informací o. Obsah je rozšiřitelný seznam, který obsahuje všechna témata v nainstalovaných knihách. Usnadnění informace o tom, jak procházení obsahu naleznete v tématu [klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md).
 
 > [!IMPORTANT]
-> Obor témat v obsahu k dispozici, závisí na filtr, který jste vybrali.
+> Rozsah témat dostupných v obsahu závisí na filtru, který jste vybrali.
 
 ## <a name="filter-the-toc"></a>Filtrování obsahu
 
-Můžete filtrovat TOC Chcete-li zúžit rozsah témata, které se zobrazují v **obsah** kartě. Názvy se zobrazí v seznamu, pouze v případě, že obsahují kořenovém termín, který zadáte. Například pokud zadáte "řešení potíží" jako filtr, pouze tituly, které obsahují "řešení potíží s" nebo "řešení potíží" zobrazí. Uzly, jejichž názvy neobsahují termín jsou sbaleny do jednoho uzlu se třemi tečkami (**...** ).
+Můžete filtrovat-li zúžit rozsah témat, která se zobrazí v obsahu **obsah** kartu. Zobrazí v seznamu jenom v případě, že obsahují kořen termínu, který zadáte. Například pokud zadáte "problém" jako filtr, pouze produkty, které obsahují text "problém" nebo "problém" zobrazí. Uzly, jejichž nadpisy neobsahují daný výraz, jsou sbaleny do jednoho uzlu se třemi tečkami (**...** ).
 
-1.  Vyberte **obsah** kartě.
+1.  Zvolte **obsah** kartu.
 
-2.  V **filtru obsah** textové pole, zadejte termín.
+2.  V **filtrovat obsahy** text zadejte termín.
 
 > [!NOTE]
-> Pokud filtr trvá dlouhou dobu spuštění, můžete zobrazit výsledky rychleji pomocí `title:` operátor rozšířené vyhledávání.
+> Pokud filtru trvá dlouhou dobu spuštění, můžete zobrazit výsledky rychleji pomocí `title:` operátoru pro rozšířené hledání.
 
-## <a name="synchronize-a-topic-with-the-toc"></a>Synchronizovat téma s obsahu
+## <a name="synchronize-a-topic-with-the-toc"></a>Synchronizace tématu s obsahem
 
-Pokud jste otevřeli pomocí indexu nebo funkce fulltextového vyhledávání téma, můžete určit, kde se toto téma je v obsahu synchronizace obsahu s okna tématu.
+Pokud jste otevřeli téma pomocí rejstříku nebo funkcí fulltextového vyhledávání, můžete určit, kde je v tomto tématu v obsahu pomocí synchronizace obsahu s oknem tématu.
 
 1.  Zobrazte téma.
 
-2.  Klikněte **tématu zobrazit v obsah** na panelu nástrojů nebo stiskněte tlačítko **Ctrl**+**S**.
+2.  Klikněte na tlačítko **zobrazit téma v obsahu** tlačítko na panelu nástrojů nebo stisknete klávesu **Ctrl**+**S**.
 
-     **Obsah** kartě otevře a zobrazí v tématu umístění v obsahu.
+     **Obsah** kartě se otevře a zobrazí se umístění tématu v obsahu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Postupy: hledání témat v rejstříku](../ide/how-to-find-topics-in-the-index.md)
 - [Postupy: vyhledávání témat](../ide/how-to-search-for-topics.md)

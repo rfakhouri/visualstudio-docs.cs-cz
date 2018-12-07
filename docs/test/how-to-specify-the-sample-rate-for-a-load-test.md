@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: určení vzorkovací frekvence pro spuštění zátěžového testu v sadě Visual Studio'
+title: 'Postupy: Určení vzorkovací frekvence v parametrech běhu zátěžového testu'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: b022b4648931bf0e403df589d37cb086fb2a9c2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896780"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053046"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Postupy: určení vzorkovací frekvence pro spuštění zátěžového testu
 

@@ -1,5 +1,5 @@
 ---
-title: Testování jednotek v sadě Visual Studio
+title: Testování částí
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e9bb75c6d7265ca66ccc0922e2d26deaa4d7857a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b38d68d9883325d0654d476a869887bf8dc48a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874836"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057076"
 ---
 # <a name="unit-test-your-code"></a>Testování částí kódu
 

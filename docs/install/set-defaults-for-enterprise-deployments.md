@@ -1,5 +1,5 @@
 ---
-title: Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
+title: Výchozí nastavení v případě podnikového nasazení
 description: Další informace o zásadách domény a dalších operací konfigurace pro podniková nasazení sady Visual Studio.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
@@ -17,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5689a273ac5f80b3468b9020825b980b88966e3b
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 167e69120ba8426acd4bc8a0e9e2e0cc42479444
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139213"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064780"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio 2017
 
 Můžete nastavit zásady registru, které ovlivňují nasazení sady Visual Studio. Tyto zásady jsou globální pro nový instalační program a ovlivnit:
 

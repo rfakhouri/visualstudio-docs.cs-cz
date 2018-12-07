@@ -1,6 +1,6 @@
 ---
-title: Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikací pro UWP | Dokumentace Microsoftu
-ms.custom: ''
+title: Aktivační události pozastavení, obnovení a události na pozadí při ladění UPW | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280009"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054658"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikací pro UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **proces správy životního cyklu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, pokračování a ukončení aplikace v reakci na akce uživatelů a stav zařízení. Při ladění, zakáže Windows tyto aktivační události. Toto téma popisuje, jak vyvolat tyto události v ladicím programu.  

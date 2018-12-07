@@ -1,19 +1,19 @@
 ---
 title: Pomocí rozhraní .NET 4.x v Unity
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 ms.date: 08/29/2018
 ms.topic: conceptual
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: cbcd033548dd87aa12ccb303d5c43abc6d0f44f6
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954159"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027364"
 ---
 # <a name="using-net-4x-in-unity"></a>Pomocí rozhraní .NET 4.x v Unity
 

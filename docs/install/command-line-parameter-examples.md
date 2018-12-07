@@ -1,5 +1,5 @@
 ---
-title: Příklady parametrů příkazového řádku pro instalaci sady Visual Studio
+title: Příklady parametrů příkazového řádku pro instalaci
 description: Přizpůsobení těchto příkladech, chcete-li vytvořit vlastní instalaci sady Visual Studio z příkazového řádku.
 ms.date: 11/14/2018
 ms.technology: vs-acquisition
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b40b228ce04a83622f739d22b15c9ab126aade3f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 0f16d4935f53fc6c87a03e0ebbf27dd65c407df8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803809"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062632"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 

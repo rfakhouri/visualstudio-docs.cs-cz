@@ -1,6 +1,6 @@
 ---
-title: Vybrat umístění instalace v sadě Visual Studio 2017
-description: Zjistěte, jak snížit nároky na instalaci na systémovou jednotku tak, že změníte umístění mezipaměti pro stahování, sdílených komponent, sady SDK a nástroje na jiné jednotky.
+title: Výběr umístění instalací
+description: Zjistěte, jak snížit nároky na instalaci sady Visual Studio na systémovou jednotku tak, že změníte umístění mezipaměti pro stahování, sdílených komponent, sady SDK a nástroje na jiné jednotky.
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 72a8224bfadb4d2c1e06122e5ebf91ffcead6864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295030"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059032"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>Vybrat umístění instalace v sadě Visual Studio 2017
 

@@ -1,14 +1,9 @@
 ---
-title: Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++ | Dokumentace Microsoftu
-ms.custom: ''
+title: Aplikace Store analýza statického kódu C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
@@ -16,85 +11,72 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389095"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064151"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analýza kvality kódu aplikací pro Store pomocí sady Visual Studio statickou analýzu kódu C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
- Nástroj pro analýzu kódu v edicích express sady Visual Studio prozkoumá váš kód pro sadu běžné problémy a porušování programovacím vhodné. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód. Analýzy kódu můžete také vyhledat chyby v kódu, které je obtížné vyhledat pomocí testování. Spuštění nástroje Analýza kódu v pravidelných intervalech během procesu vývoje můžete zvýšit tak kvalitu dokončené aplikace.  
+ Nástroj pro analýzu kódu v edicích express sady Visual Studio prozkoumá váš kód pro sadu běžné problémy a porušování programovacím vhodné. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory v konkrétním kódu, které jsou platné, ale přesto vytvořit problémy pro vy nebo ostatní uživatelé, kteří používají váš kód. Analýzy kódu můžete také vyhledat chyby v kódu, které je obtížné vyhledat pomocí testování. Spuštění nástroje Analýza kódu v pravidelných intervalech během procesu vývoje můžete zvýšit tak kvalitu dokončené aplikace.
 
 > [!NOTE]
->  V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít plnou funkčnost nástroje code analysis. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.  
+> V sadě Visual Studio Ultimate, Visual Studio Premium a Visual Studio Professional můžete použít plnou funkčnost nástroje code analysis. Zobrazit [analýza kvality aplikace pomocí nástrojů pro analýzu kódu](http://msdn.microsoft.com/library/dd264897.aspx) v knihovně MSDN.
 
-## <a name="in-this-topic"></a>V tomto tématu  
- Informace o:  
+##  <a name="BKMK_Run"></a> Spuštění analýzy kódu
+ Spuštění analýzy kódu pro řešení sady Visual Studio:
 
- [Spuštění analýzy kódu](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)  
+- Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.
 
- [Analýza a řešení upozornění analýzy kódu](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Analyze)  
+  Automaticky spustit analýzu kódu pokaždé, když vytváříte projekt:
 
- [Potlačení upozornění analýzy kódu](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Suppress)  
+1. Vyberte název projektu v Průzkumníku řešení a pak zvolte **vlastnosti**.
 
- [Vyhledávání a filtrování výsledků analýzy kódu](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Search)  
+2. Na stránce vlastností projektu zvolte **analýzy kódu** a klikněte na tlačítko **povolit analýzu kódu pro C/C++ při sestavení**.
 
- [Upozornění analýzy kódu C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md#Warnings)  
+   Toto řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.
 
-##  <a name="BKMK_Run"></a> Spuštění analýzy kódu  
- Spuštění analýzy kódu pro řešení sady Visual Studio:  
+   ![Okno Analýza kódu](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-- Na **sestavení** nabídce zvolte **spustit analýzu kódu na řešení**.  
+##  <a name="BKMK_Analyze"></a> Analýza a řešení upozornění analýzy kódu
+ Pokud chcete analyzovat konkrétního upozornění, vyberte záhlaví upozornění v okně analýzy kódu. Upozornění se rozbalí a zobrazí podrobné informace o problému. Pokud je to možné, analýza kódu se zobrazí řádku číslo a analýza logiku, která vedla k upozornění.
 
-  Automaticky spustit analýzu kódu pokaždé, když vytváříte projekt:  
+ ![Upozornění analýzy kódu pro rozbalení](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
-1. Vyberte název projektu v Průzkumníku řešení a pak zvolte **vlastnosti**.  
+ Při rozšiřování upozornění jsou zvýrazněné řádky kódu, který způsobil toto upozornění v editoru kódu sady Visual Studio.
 
-2. Na stránce vlastností projektu zvolte **analýzy kódu** a klikněte na tlačítko **povolit analýzu kódu pro C/C++ při sestavení**.  
+ ![Zvýrazněný zdrojový kód](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
-   Toto řešení je zkompilován a spuštění analýzy kódu. Výsledky se zobrazí v okně analýzy kódu.  
-
-   ![Okno Analýza kódu](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")  
-
-##  <a name="BKMK_Analyze"></a> Analýza a řešení upozornění analýzy kódu  
- Pokud chcete analyzovat konkrétního upozornění, vyberte záhlaví upozornění v okně analýzy kódu. Upozornění se rozbalí a zobrazí podrobné informace o problému. Pokud je to možné, analýza kódu se zobrazí řádku číslo a analýza logiku, která vedla k upozornění.  
-
- ![Upozornění analýzy kódu pro rozbalení](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")  
-
- Při rozšiřování upozornění jsou zvýrazněné řádky kódu, který způsobil toto upozornění v editoru kódu sady Visual Studio.  
-
- ![Zvýrazněný zdrojový kód](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")  
-
- Po zjištění problému ho mohli vyřešit ve vašem kódu. Pak znovu spusťte analýzu kódu, abyste měli jistotu, že již nezobrazuje upozornění v okně analýzy kódu, a nová upozornění, že jste kód opravili správně nebyla vyvolána.  
+ Po zjištění problému ho mohli vyřešit ve vašem kódu. Pak znovu spusťte analýzu kódu, abyste měli jistotu, že již nezobrazuje upozornění v okně analýzy kódu, a nová upozornění, že jste kód opravili správně nebyla vyvolána.
 
 > [!TIP]
->  Můžete znovu spustit analýzu kódu v okně analýzy kódu. Zvolte **analyzovat** tlačítko a pak zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.  
+>  Můžete znovu spustit analýzu kódu v okně analýzy kódu. Zvolte **analyzovat** tlačítko a pak zvolte obor analýzy. Můžete znovu spustit analýzu na celé řešení nebo vybraný projekt.
 
-##  <a name="BKMK_Suppress"></a> Potlačení upozornění analýzy kódu  
- Existují situace, kdy byste se mohli rozhodnot Neopravovat upozornění analýzy kódu. Můžete se rozhodnout, že řešení upozornění vyžaduje příliš mnoho nahrávání ve vztahu k pravděpodobnost, že problém vzniknou v žádné Skutečná implementace kódu. Nebo může domnívat, že je nevhodná pro konkrétní kontext, který se používá v tomto upozornění analýzy. Jednotlivá upozornění můžete potlačit tak, aby se nebude zobrazovat v okně analýzy kódu.  
+##  <a name="BKMK_Suppress"></a> Potlačení upozornění analýzy kódu
+ Existují situace, kdy byste se mohli rozhodnot Neopravovat upozornění analýzy kódu. Můžete se rozhodnout, že řešení upozornění vyžaduje příliš mnoho nahrávání ve vztahu k pravděpodobnost, že problém vzniknou v žádné Skutečná implementace kódu. Nebo může domnívat, že je nevhodná pro konkrétní kontext, který se používá v tomto upozornění analýzy. Jednotlivá upozornění můžete potlačit tak, aby se nebude zobrazovat v okně analýzy kódu.
 
- Chcete-li potlačit upozornění:  
+ Chcete-li potlačit upozornění:
 
-1. Pokud se zobrazí podrobné informace, rozbalte název upozornění.  
+1. Pokud se zobrazí podrobné informace, rozbalte název upozornění.
 
-2. Zvolte **akce** odkaz v dolní části upozornění.  
+2. Zvolte **akce** odkaz v dolní části upozornění.
 
-3. Zvolit **potlačit zprávu** a klikněte na tlačítko **zdroje v**.  
+3. Zvolit **potlačit zprávu** a klikněte na tlačítko **zdroje v**.
 
-   Potlačení zprávy vloží `#pragma(warning:` *WarningId* `)` , který potlačí případná upozornění pro řádek kódu.  
+   Potlačení zprávy vloží `#pragma(warning:` *WarningId* `)` , který potlačí případná upozornění pro řádek kódu.
 
-##  <a name="BKMK_Search"></a> Vyhledávání a filtrování výsledků analýzy kódu  
- Můžete hledat dlouhé seznamy varovné zprávy a upozornění v řešení vícenásobného projektu můžete filtrovat.  
+##  <a name="BKMK_Search"></a> Vyhledávání a filtrování výsledků analýzy kódu
+ Můžete hledat dlouhé seznamy varovné zprávy a upozornění v řešení vícenásobného projektu můžete filtrovat.
 
- ![Hledání a filtrování v okně analýzy kódu](../test/media/ca-searchfilter.png "CA_SearchFilter")  
+ ![Hledání a filtrování v okně analýzy kódu](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Upozornění analýzy kódu C++  
- Analýza kódu vyvolává následující upozornění pro kód C++:  
+##  <a name="Warnings"></a> Upozornění analýzy kódu C++
+ Analýza kódu vyvolává následující upozornění pro kód C++:
 
 
 |                                      Pravidlo                                      |                                                  Popis                                                  |
@@ -135,7 +117,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null na typech bez ukazatele                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               Vlastnost MustCheck na typ Void                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Velikost vyrovnávací paměti na typech bez ukazatele nebo pole                                      |
-| [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
+| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Null Neshoda v přístupu přes ukazatel nula                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           K zápisu na konstantě                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Návratová hodnota použita na předpokladu                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        NULL byl ukončen na typech bez ukazatele                                         |
@@ -146,12 +128,12 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                       [C6516](../code-quality/c6516.md)                        |                                          Atribut nemá žádné vlastnosti                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Platná velikost pro vyrovnávací paměť bez možnosti čtení                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný                                      |
-| [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Neplatná Poznámka: hodnota vlastnosti 'NeedsRelease' musí být Ano nebo ne                   |
-| [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
+| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Neplatná Poznámka: hodnota vlastnosti 'NeedsRelease' musí být Ano nebo ne                   |
+| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Neplatná velikost řetězce přistoupit přes ukazatel                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Typ řetězec neplatné velikosti                                            |
-| [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
+| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Neplatná velikost parametru řetězce                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Neplatná velikost řetězce-nedosažitelná oblast                                    |
-| [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
+| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Typ vyrovnávací paměti pro řetězec neplatné velikosti                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Neplatná Poznámka: vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Nerozpoznaný styl řetězce formátu                                        |
 |                       [C6540](../code-quality/c6540.md)                        | Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec  |
@@ -212,7 +194,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                      [C28254](../code-quality/c28254.md)                       |                               (dynamic_cast <>) není v anotacích podporována                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Chyba syntaxe v poznámce byl nalezen ve funkci pro anotaci                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Byla nalezena chyba syntaxe v podmíněné poznámce pro vnitřní anotaci                 |
-| [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Výsledné hodnoty seznamů musí být konstanty.                                     |
+| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Výsledné hodnoty seznamů musí být konstanty.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Poznámky v funkce byla nalezena chyba syntaxe v poznámkách.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      Poznámka pro funkci, je parametr při zkoumání nekonzistentní s deklarací funkce      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Pro funkci nejsou konzistentní s deklarací funkce                     |
@@ -235,4 +217,3 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 |                      [C28305](../code-quality/c28305.md)                       |                                Zjistila se chyba při analýze tokenu.                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  Poznámka popisuje situaci, která není podmíněně použitelná.                   |
 |                      [C28351](../code-quality/c28351.md)                       |         Poznámka popisuje, kde dynamickou hodnotu (proměnnou) nelze použít v podmínce.          |
-

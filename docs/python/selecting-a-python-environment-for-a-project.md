@@ -1,6 +1,6 @@
 ---
 title: Vyberte interpret Pythonu a prostředí pro projekt
-description: Jak vybrat prostředí Python nebo interpretu pro projekt sady Visual Studio, včetně Anaconda a virtuální prostředí.
+description: Konkrétně můžete vybrat prostředí Pythonu, včetně Anaconda a virtuální prostředí, platí pro konkrétní projekt.
 ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7ed10b25c17958fffbe0abab09973515fb43958
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349449"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062532"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Jak vybrat prostředí Pythonu pro projekt
 

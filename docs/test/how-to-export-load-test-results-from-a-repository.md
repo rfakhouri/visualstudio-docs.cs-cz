@@ -1,5 +1,5 @@
 ---
-title: Exportovat výsledky zátěžových testů v sadě Visual Studio
+title: Export výsledků zátěžového testu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0219b2acaab32da72639c088046bf4d19620808
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894324"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057162"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Postupy: Export zátěžový test výsledků z úložiště
 

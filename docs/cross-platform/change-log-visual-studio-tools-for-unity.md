@@ -1,24 +1,60 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Windows) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 129e7fa7691d0e03f44190de83d07bd09c4f2f5f
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954211"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068377"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Protokol změn Visual Studio Tools for Unity.
+
+## <a name="3903"></a>3.9.0.3
+ vydáno 28. listopadu 2018
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Oprava problémů projekt znovu načíst a technologii intellisense při přidávání nebo odebírání skripty, které jsou umístěné v úplně první projekt.
+
+## <a name="3902"></a>3.9.0.2
+ vydáno 19. listopadu 2018
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+    -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
+
+## <a name="3901"></a>3.9.0.1
+ Vydáno 15. listopadu 2018
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Oprava Unity modulu plug-in aktivace byla vyberete jiný výchozí editor.
+
+## <a name="3900"></a>3.9.0.0
+ Vydáno 13. listopadu 2018
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
 
 ## <a name="3807"></a>3.8.0.7
  Vydáno 20. září 2018
@@ -27,7 +63,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   **Ladicí program:**
 
-    -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
+    -   (Přeneseny zpět z 3.9.0.2) Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
 
 ## <a name="3806"></a>3.8.0.6
  Vydáno 27. srpna 2018
@@ -71,7 +107,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   **Generování projektu:**
 
-    -   Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
+    -   (Přeneseny zpět z 3.9.0.0) Alternativní řešení pro chybu Unity výkonu, která byla opravena Unity vrácena zpět.
 
 ## <a name="3802"></a>3.8.0.2
  Vydáno 7. července 2018

@@ -1,5 +1,5 @@
 ---
-title: Používání regulárních výrazů v sadě Visual Studio | Dokumentace Microsoftu
+title: Používání regulárních výrazů
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,12 +24,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906712"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059428"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,4 +78,3 @@ Následuje několik příkladů:
 |                                                                                                            Odpovídá řetězci v uvozovkách                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Odpovídá jakémukoli řetězci v jednoduchých nebo dvojitých uvozovkách.                                                     |
 |                                                                                                             Shoda s šestnáctkovým číslem                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Odpovídá "0xc67f", ale ne "0xc67fc67f".                                                           |
 |                                                                                                             Odpovídá celým nebo desetinným a desetinných míst                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Odpovídá "1,333".                                                                      |
-

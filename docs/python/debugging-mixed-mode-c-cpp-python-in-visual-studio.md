@@ -1,6 +1,6 @@
 ---
 title: Ve smíšeném režimu ladění pro Python
-description: Postup ladění současně C++ a Python v sadě Visual Studio, včetně krokování mezi prostředími, zobrazení hodnot a vyhodnocení výrazů.
+description: Ladění současně C++ a Python v sadě Visual Studio, včetně krokování mezi prostředími, zobrazení hodnot a vyhodnocení výrazů.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607832"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052232"
 ---
 # <a name="debug-python-and-c-together"></a>Společně ladění Pythonu a C++
 
@@ -35,7 +36,7 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 - Zobrazit Python reprezentace objektů v nativní rámce a naopak
 - Ladění v kontextu projektu Pythonu nebo projektu jazyka C++
 
-![Ladění ve smíšeném režimu](media/mixed-mode-debugging.png)
+![Ladění ve smíšeném režimu pro Python v sadě Visual Studio](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
@@ -96,7 +97,7 @@ Pro všechny předchozí verze sady Visual Studio, s přímým přístupem ve sm
 
 **Zásobník volání** okno zobrazuje nativní i proloženy přechodů mezi těmito dvěma označené rámce zásobníků Pythonu:
 
-![Kombinované volání zásobníku](media/mixed-mode-debugging-call-stack.png)
+![Zásobník volání kombinované pomocí ladění ve smíšeném režimu](media/mixed-mode-debugging-call-stack.png)
 
 Přechody se zobrazí jako **[externí kód]**, bez zadání směr přechodu je, pokud **nástroje** > **možnosti**  >  **Ladění** > **Obecné** > **povolit volbu pouze vlastní kód** je možnost nastavená.
 
@@ -110,11 +111,11 @@ Při použití **Krokovat s vnořením** (**F11**) nebo **Krokovat s Vystoupení
 
 Při aktivním je nativní rámec (C nebo C++) své místní proměnné zobrazí v ladicím programu **lokální** okna. V nativní rozšiřující moduly Pythonu, mnoho z těchto proměnných jsou typu `PyObject` (což je definice typu `_object`), nebo několik dalších základních typů Pythonu (viz seznam níže). V kombinovaném režimu ladění, tyto hodnoty k dispozici další podřízený uzel s názvem **[zobrazení Pythonu]**. Po rozbalení tento uzel zobrazuje reprezentace Python proměnné, shodné s co se zobrazí-li místní proměnná odkazuje na stejný objekt nacházel v rámci Python. Podřízené položky tohoto uzlu se upravovat.
 
-![Zobrazení Pythonu](media/mixed-mode-debugging-python-view.png)
+![Zobrazení Pythonu v okně místních hodnot](media/mixed-mode-debugging-python-view.png)
 
 Tuto funkci zakázat, klikněte pravým tlačítkem kamkoli **lokální** okno a přepnout **Python** > **zobrazit uzly zobrazení Pythonu** nabídky:
 
-![Povoluje zobrazení Pythonu](media/mixed-mode-debugging-enable-python-view.png)
+![Povoluje zobrazení Pythonu v okně místních hodnot](media/mixed-mode-debugging-enable-python-view.png)
 
 C typy, které zobrazují **[zobrazení Pythonu]** uzly (je-li povoleno):
 
@@ -143,11 +144,11 @@ Možnost alternativního (a vyšší), je splnění [období 3123](https://www.p
 
 Podobně jako v předchozí části, můžete povolit **[C++ zobrazení]** nativní hodnoty v **lokální** okno, když je aktivní blok Python. Tato funkce není povolená ve výchozím nastavení, takže zapnete ho kliknutím pravým tlačítkem myši v **lokální** okno a přepnete **Python** > **zobrazit uzly zobrazení C++** nabídky možnost.
 
-![Povoluje zobrazení C++](media/mixed-mode-debugging-enable-cpp-view.png)
+![Povolení C++ zobrazení v okně místních hodnot](media/mixed-mode-debugging-enable-cpp-view.png)
 
 **[C++ zobrazení]** uzel poskytuje reprezentaci podkladová struktura jazyka C/C++ pro hodnoty, na co se zobrazí v je nativní rámec stejné. Příklad ukazuje instanci `_longobject` (pro který `PyLongObject` je definice typu) pro Python dlouhé celé číslo který se pokusí odvodit typy pro nativní třídy, které jste vytvořili sami. Podřízené položky tohoto uzlu se upravovat.
 
-![Zobrazení jazyka C++](media/mixed-mode-debugging-cpp-view.png)
+![C++ zobrazení v okně místních hodnot](media/mixed-mode-debugging-cpp-view.png)
 
 Pokud je pole podřízeného objektu typu `PyObject`, nebo jednoho z jiných podporované typy, pak má **[zobrazení Pythonu]** reprezentace uzel (pokud jsou povolené tyto reprezentace), což umožňuje přejít objekt grafů where odkazy nejsou přímo zveřejněné Python.
 

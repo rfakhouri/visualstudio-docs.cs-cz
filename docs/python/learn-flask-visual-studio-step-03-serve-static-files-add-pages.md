@@ -1,5 +1,6 @@
 ---
-title: Kurz – další Flask v sadě Visual Studio, krok 3
+title: Přečtěte si kurz na Flask v sadě Visual Studio kroku 3, statické soubory a stránky
+titleSuffix: ''
 description: Názorný postup základy Flask v rámci projektů sady Visual Studio, konkrétně představením toho, jak doručování statických souborů, přidání stránky do aplikace a používat šablonu dědičnosti
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775753"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065022"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
 

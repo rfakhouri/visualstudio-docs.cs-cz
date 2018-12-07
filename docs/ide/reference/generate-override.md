@@ -1,5 +1,5 @@
 ---
-title: Generovat přepsání metody v sadě Visual Studio
+title: Generování přepisu – metoda
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919062"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063639"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Generovat přepsání v sadě Visual Studio
 

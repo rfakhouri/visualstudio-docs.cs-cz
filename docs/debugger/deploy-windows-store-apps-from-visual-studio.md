@@ -1,6 +1,6 @@
 ---
-title: Nasazení aplikací pro UWP ze sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
+title: Nasazení aplikací pro UWP | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726314"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056808"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Nasazení aplikací pro UPW ze sady Visual Studio
 

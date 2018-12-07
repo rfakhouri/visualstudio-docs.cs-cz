@@ -1,5 +1,6 @@
 ---
-title: Práce s Pythonu pro tento kurz, 0, krok instalace
+title: Python v sadě Visual Studio kroku výukového programu 0, instalace
+titleSuffix: ''
 description: Krok 0 (požadavky na instalaci) core názorný postup práce s využitím Pythonu v sadě Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5593de7de87244b9ee38a26a0688f4ffe5931c10
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5096d0789f8f3c84c041591918af73cc230fe16d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219663"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064440"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalace podpory Pythonu v sadě Visual Studio
 

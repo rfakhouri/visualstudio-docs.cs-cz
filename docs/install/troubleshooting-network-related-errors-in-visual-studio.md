@@ -1,5 +1,5 @@
 ---
-title: Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
+title: Řešení potíží s chybami sítě nebo proxy serveru
 description: Řešení chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
 ms.custom: ''
 ms.date: 02/12/2018
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672311"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047613"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 

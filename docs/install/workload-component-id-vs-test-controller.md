@@ -1,5 +1,6 @@
 ---
 title: ID pracovního vytížení a komponenta Visual Studio Test Controller 2017
+titleSuffix: ''
 description: Rozdělení automatizovaných testů mezi více počítačů pomocí ID pracovního vytížení a komponenta Visual Studio
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: de9dae76799080baf773600cea7155162c9fe618
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607521"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048444"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 součástí adresáře
 

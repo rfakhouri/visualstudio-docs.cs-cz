@@ -1,6 +1,6 @@
 ---
-title: Ladění aplikací pro UWP – Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
+title: Ladění aplikací pro UWP | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 01/17/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 628c847817db073daeed3cd6c04b1722502e80ca
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511528"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064018"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Ladit aplikace pro Universal Windows (UPW) v sadě Visual Studio
 
@@ -34,4 +34,4 @@ Ladicí program sady Visual Studio poskytuje úplnou podporu pro ladění aplika
 
   
 ## <a name="see-also"></a>Viz také  
- [Analýza kvality kódu pomocí statické analýzy kódu](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+ [Analýza kvality kódu pomocí analýzy statického kódu](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)

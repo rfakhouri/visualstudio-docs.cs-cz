@@ -1,7 +1,7 @@
 ---
 title: Míra využití paměti v aplikacích
 description: Vyhledání nevrácené paměti a neefektivní paměti během ladění pomocí diagnostické nástroje integrované v ladicím programu.
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861407"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052074"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>Využití paměti profilu v sadě Visual Studio
+# <a name="measure-memory-usage-in-visual-studio"></a>Míra využití paměti v aplikaci Visual Studio
 Vyhledání nevrácené paměti a neefektivní paměti během ladění s integrovaný ladicí program **využití paměti** nástroj pro diagnostiku. Umožňuje nástroj využití paměti, můžete provést jeden nebo více *snímky* spravovaný a nativní paměti haldy pro lepší porozumění tomu dopad využití paměti typy objektů. Můžete shromažďovat snímky technologie .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
   
  Následující grafické ukazuje **diagnostické nástroje** okno (k dispozici v aplikaci Visual Studio 2015 Update 1 a novější):  

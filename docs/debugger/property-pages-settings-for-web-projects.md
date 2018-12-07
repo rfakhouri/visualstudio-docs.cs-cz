@@ -1,6 +1,6 @@
 ---
-title: Nastavení stránek vlastností pro webové projekty | Dokumentace Microsoftu
-ms.custom: ''
+title: Nastavení vlastností pro webové projekty | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e859f94f9ed86b7e94c6a30153cece18663f337f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbe5ab8d863cbf77647bde8b8d7da69d9c4823e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868492"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064216"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Nastavení stránek vlastností pro webové projekty
 Můžete změnit nastavení vlastností pro konfiguraci ladění webu v **stránky vlastností** dialogové okno, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.  

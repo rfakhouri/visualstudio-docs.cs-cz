@@ -1,6 +1,6 @@
 ---
-title: Zobrazení hodnoty registru v ladicím programu sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
+title: Zobrazení hodnoty registru v ladicím programu | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389322"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058438"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Zobrazení hodnoty registru v okně registr (C#, C++, Visual Basic, F#)
 

@@ -1,5 +1,5 @@
 ---
-title: Průzkumník testů sady Visual Studio – nejčastější dotazy
+title: Průzkumník testů – nejčastější dotazy
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 49df84c5e852cfc282b6d679faf621669cf08148
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296333"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055261"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
 
@@ -123,7 +123,7 @@ Namísto použití rozšíření adaptérů testů, jsou nutné k použití bal�
 Poslední projekty testů UPW zadejte vlastnosti sestavení testovací platformy, která umožňuje lepší výkon pro identifikaci testovací aplikace. Pokud máte projektu testů UPW, který byl inicializován před Visual Studio verze 15.7, může se zobrazit tato chyba v **výstup** > **testy**:
 
 **System.AggregateException: Došlo k jedné nebo více chybám. ---> System.InvalidOperationException: následující TestContainer nebyl nalezen {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
-  
+
 Chcete-li vyřešit tuto chybu:
 
 - Aktualizujte vlastnost sestavení projektu testů pomocí následujícího kódu:

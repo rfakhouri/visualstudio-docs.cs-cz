@@ -1,5 +1,5 @@
 ---
-title: Přidání služby Azure Storage pomocí připojených služeb v sadě Visual Studio | Dokumentace Microsoftu
+title: Přidání služby Azure Storage pomocí připojených služeb
 description: Přidání služby Azure Storage do vaší aplikace pomocí dialogu Visual Studio přidání připojené služby
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 63b796d9c514602a40f15b5725c07b1b89787df1
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b48bef55908000e2febe4d4c1312a41c2442f3ff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003171"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055968"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Přidání služby Azure storage pomocí připojených služeb sady Visual Studio
 Pomocí sady Visual Studio, můžete připojit cokoli z následujícího do služby Azure Storage s použitím **přidání připojené služby** dialogové okno:
@@ -25,9 +25,9 @@ Pomocí sady Visual Studio, můžete připojit cokoli z následujícího do slu�
 - Mobilní služby back-end .NET
 - Webové stránky ASP.NET nebo služby
 - Služba ASP.NET Core
-- Služba Azure WebJob 
+- Služba Azure WebJob
 
-Funkce připojené služby do vašeho projektu přidá potřebné odkazy a připojovací kód a odpovídajícím způsobem upraví konfigurační soubory. 
+Funkce připojené služby do vašeho projektu přidá potřebné odkazy a připojovací kód a odpovídajícím způsobem upraví konfigurační soubory.
 
 Po dokončení **přidání připojené služby** dialogové okno automaticky zobrazí dokumentaci s podrobným rozpisem kroků nutné začít pracovat s úložištěm objektů blob, fronty a tabulky.
 
@@ -35,36 +35,36 @@ Po dokončení **přidání připojené služby** dialogové okno automaticky zo
 1. Otevřete projekt v sadě Visual Studio
 
 1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **připojené služby** uzel a v místní nabídce a vyberte **přidat připojenou službu**.
-   
+
     ![Přidat Azure připojené služby](./media/vs-azure-tools-connected-services-storage/IC796702.png)
 
 1. V **připojené služby** stránce **cloudové úložiště se službou Azure Storage**.
-   
+
     ![Přidání služby Azure Storage](./media/vs-azure-tools-connected-services-storage/add-azure-storage.png)
 
 1. V **služby Azure Storage** dialogového okna, vyberte existující účet úložiště a vyberte **přidat**.
-   
+
     Pokud potřebujete vytvořit účet úložiště, přejděte k dalšímu kroku. V opačném případě přejděte ke kroku 6.
-    
+
     ![Přidat existující účet úložiště do projektu](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
-1. Chcete-li vytvořit účet úložiště: 
-   
+1. Chcete-li vytvořit účet úložiště:
+
    1. Vyberte **vytvořit nový účet úložiště** v dolní části dialogového okna.
 
    1. Vyplňte **vytvořit účet úložiště** dialogového okna a vyberte **vytvořit**.
-      
+
        ![Nový účet úložiště Azure](./media/vs-azure-tools-connected-services-storage/create-storage-account.png)
-      
+
    1. Když **služby Azure Storage** se zobrazí dialogové okno, v seznamu se zobrazí nový účet úložiště. V seznamu vyberte nový účet úložiště a vyberte **přidat**.
 
 1. Úložiště připojené služby se zobrazí v části **odkazy na služby** uzlu projektu.
-   
+
 ## <a name="how-your-project-is-modified"></a>Jak se váš projekt změnil
-Po dokončení dialogové okno sady Visual Studio přidá odkazy a změní některé konfigurační soubory. Konkrétní změny závisí na typu projektu: 
+Po dokončení dialogové okno sady Visual Studio přidá odkazy a změní některé konfigurační soubory. Konkrétní změny závisí na typu projektu:
 
 - Projekt ASP.NET – [co se stalo – projekty ASP.NET](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- Projekt ASP.NET Core – [co se stalo – projekty ASP.NET 5](http://go.microsoft.com/fwlink/p/?LinkId=513124) 
+- Projekt ASP.NET Core – [co se stalo – projekty ASP.NET 5](http://go.microsoft.com/fwlink/p/?LinkId=513124)
 - Projekt cloudové služby (webové role a role pracovního procesu) - [co se stalo – projekty cloudových služeb](http://go.microsoft.com/fwlink/p/?LinkId=516965)
 - Projektu úlohy WebJob - [co se stalo – projekty webové úlohy](/azure/visual-studio/vs-storage-webjobs-what-happened)
 

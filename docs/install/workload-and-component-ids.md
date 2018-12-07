@@ -1,5 +1,6 @@
 ---
-title: ID pracovního vytížení a komponenta Visual Studio 2017
+title: ID úloh a komponent sady Visual Studio
+titleSuffix: ''
 description: Použití pracovního vytížení a komponenta ID pro instalaci sady Visual Studio pomocí příkazového řádku, nebo jako závislost v manifestu VSIX
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 96332b767f2bc44561358880c392cb6d96db297b
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: edf5eb09d00bc2814dbc5a8b616459fa8566556c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607468"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063299"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID pracovního vytížení a komponenta Visual Studio 2017
 

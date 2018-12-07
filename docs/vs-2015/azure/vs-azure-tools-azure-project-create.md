@@ -1,5 +1,5 @@
 ---
-title: Vytvoření projektu Azure cloud service pomocí sady Visual Studio | Dokumentace Microsoftu
+title: Vytvoření projektu Azure cloud service
 description: Naučte se vytvořit projekt Azure cloud service pomocí sady Visual Studio
 author: ghogen
 manager: douge
@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8149f60440becb3c7a8d0dc08b2a1a9c00fb171a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 43944856f05afe8b7236d9ea7d6468164dd1f2cb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003360"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062600"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Vytvoření projektu Azure cloud service pomocí sady Visual Studio
 Nástroje Azure pro sadu Visual Studio poskytuje šablony projektu, který vám umožní vytvářet [cloudové služby Azure](/azure/cloud-services/cloud-services-choose-me), což je jednoduchá služby Azure pro obecné účely. Po vytvoření projektu sady Visual Studio umožňuje nakonfigurovat, ladit a nasadit cloudovou službu Azure.
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>Kroky pro vytvoření projektu Azure cloud service v sadě Visual Studio
-Tato část vás provede vytvořením projektu cloudové služby Azure v sadě Visual Studio s jeden nebo více webových rolí.  
+Tato část vás provede vytvořením projektu cloudové služby Azure v sadě Visual Studio s jeden nebo více webových rolí.
 
 1. Spusťte Visual Studio jako správce.
 
@@ -34,7 +34,7 @@ Tato část vás provede vytvořením projektu cloudové služby Azure v sadě V
 
 1. Určete, která verze rozhraní .NET Framework, kterou chcete použít k vývoji projektu.
 
-1. Zadejte název a umístění pro váš projekt a název řešení. 
+1. Zadejte název a umístění pro váš projekt a název řešení.
 
 1. Vyberte **OK**.
 
@@ -48,8 +48,8 @@ Tato část vás provede vytvořením projektu cloudové služby Azure v sadě V
 
 Projekt sady Visual Studio v Azure má přiřazení k roli projekty v řešení. Projekt obsahuje také *definiční soubor služby* a *konfigurační soubor služby*:
 
-- **Definiční soubor služby** -určuje nastavení běhového prostředí pro aplikace, včetně toho, jaké role jsou povinné, koncové body a velikost virtuálního počítače. 
-- **Konfigurační soubor služby** – nakonfiguruje, kolik instancí role jsou spouštění a hodnoty k nastavení určenému pro roli. 
+- **Definiční soubor služby** -určuje nastavení běhového prostředí pro aplikace, včetně toho, jaké role jsou povinné, koncové body a velikost virtuálního počítače.
+- **Konfigurační soubor služby** – nakonfiguruje, kolik instancí role jsou spouštění a hodnoty k nastavení určenému pro roli.
 
 Další informace o těchto souborech najdete v tématu [nakonfigurovat role cloudové služby Azure pomocí sady Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md).
 

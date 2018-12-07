@@ -1,5 +1,6 @@
 ---
-title: Kurz – další Django v sadě Visual Studio, krok 5
+title: Přečtěte si kurz Django v sadě Visual Studio, kroku 5, ověřování
+titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně funkce ověřování podle šablony webového projektu Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001227"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064070"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověření uživatelů v Django
 

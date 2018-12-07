@@ -1,6 +1,8 @@
 ---
-title: Vzdálené ladění ASP.NET na počítači vzdálené služby IIS | Dokumentace Microsoftu
-ms.custom: remotedebugging
+title: Vzdálené ladění ASP.NET na počítači se službou IIS
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826503"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065555"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění ASP.NET na počítači vzdálené služby IIS
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.

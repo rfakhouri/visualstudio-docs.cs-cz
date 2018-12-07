@@ -1,6 +1,6 @@
 ---
-title: Generování testů jednotek pro kód pomocí funkce IntelliTest v sadě Visual Studio
-ms.date: 2015-10-05
+title: Generování testů jednotek pro kód pomocí funkce IntelliTest
+ms.date: 10/05/2015
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4aefb4aebe65503620f866955f7cbd62e33b3940
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294159"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052352"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů jednotek pro kód pomocí funkce IntelliTest
+
 Inteligentní testování vám umožní prozkoumat kód .NET a vygenerovat testovací data a sady testování částí. Pro každý příkaz v kódu se generuje zkušební vstup, který tento příkaz spustí. Pro každou podmíněnou větev v kódu se provede Případová analýza. Například `if` kontrolní, kontrolní výrazy a všechny operace, které můžou vyvolat výjimku. Této analýzy se generují testovací data pro parametrizovaný test části metod, vytváření testů jednotek s vysokým pokrytím kódu používá.
 
- Při spuštění IntelliTest můžete snadno zobrazit, jaké testy se nedaří a přidejte všechny nezbytné kód a opravte je. Můžete vybrat, které z vygenerované testy k uložení do testovacího projektu poskytnout sadu regrese. Po provedení změny kódu, znovu spusťte IntelliTest pro synchronizaci vygenerované testy se změnami kódu.
+Při spuštění IntelliTest můžete snadno zobrazit, jaké testy se nedaří a přidejte všechny nezbytné kód a opravte je. Můžete vybrat, které z vygenerované testy k uložení do testovacího projektu poskytnout sadu regrese. Po provedení změny kódu, znovu spusťte IntelliTest pro synchronizaci vygenerované testy se změnami kódu.
 
 ## <a name="availability-and-extensions"></a>Dostupnost a rozšíření
 
@@ -36,7 +37,8 @@ Inteligentní testování vám umožní prozkoumat kód .NET a vygenerovat testo
 * Nepodporuje x64 konfigurace.
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Prozkoumejte: Použití IntelliTest dá prozkoumat kód a generování testů jednotek
- Generování testů jednotek, vaše typy musí být veřejné. V opačném případě [vytvořit testy jednotek](#NoRun) první před jejich vytvořením.
+
+Generování testů jednotek, vaše typy musí být veřejné. V opačném případě [vytvořit testy jednotek](#NoRun) první před jejich vytvořením.
 
 1.  Otevřete řešení v sadě Visual Studio. Pak otevřete soubor třídy, která obsahuje metody, které chcete testovat.
 

@@ -1,22 +1,22 @@
 ---
-title: Ladění publikování Azure cloudové služby pomocí IntelliTrace a sady Visual Studio | Dokumentace Microsoftu
+title: Ladění publikování Azure cloud service s použitím technologie IntelliTrace
 description: Zjistěte, jak ladění cloudové služby pomocí IntelliTrace a sady Visual Studio
 author: mikejo5000
 manager: douge
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
 ms.topic: conceptual
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: 492c3ab06bc2a9c832e2eea476a14dfaeba44fcc
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 20c8ac64707c6305b8677c8567855bb7c7e37491
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000249"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061663"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Ladění publikované cloudové služby Azure pomocí sady Visual Studio a nástroje IntelliTrace
 Pomocí nástroje IntelliTrace můžete protokolovat podrobné ladicí informace pro instanci role při spuštění v Azure. Pokud je potřeba najít příčinu problému, můžete protokoly IntelliTrace ke krokování kódu ze sady Visual Studio, jako kdyby byly spuštěné v Azure. Nástroj IntelliTrace zaznamenává v důsledku toho klíčů provádění kódu a dat prostředí, když vaše aplikace Azure běží jako cloudová služba v Azure a umožňuje přehrát zaznamenaná data ze sady Visual Studio. 

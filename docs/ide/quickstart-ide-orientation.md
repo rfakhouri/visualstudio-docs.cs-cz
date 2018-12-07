@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
-ms.translationtype: MT
+ms.openlocfilehash: a410c3e6f4ad4d078b63dd9b77391dc5e86b4e21
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624201"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027312"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio
 
@@ -105,10 +105,10 @@ By se vyskytnou potíže při použití sady Visual Studio, nebo pokud máte ná
 Jsme se zabývali jenom některé funkce sady Visual Studio k seznámit s uživatelským rozhraním. Chcete-li podrobněji:
 
 > [!div class="nextstepaction"]
-> [Další informace o editoru kódu](../ide/quickstart-editor.md)
+> [Další informace o editoru kódu](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Seznamte se s projekty a řešení](../ide/quickstart-projects-solutions.md)
+> [Seznamte se s projekty a řešení](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Viz také:
 

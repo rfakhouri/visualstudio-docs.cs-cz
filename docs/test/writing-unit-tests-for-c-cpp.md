@@ -1,5 +1,5 @@
 ---
-title: Zápis testů jednotek pro C/C++ v sadě Visual Studio
+title: Zápis testů jednotek pro C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879219"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053741"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 

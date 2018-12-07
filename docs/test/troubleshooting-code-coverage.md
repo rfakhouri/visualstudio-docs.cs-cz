@@ -1,5 +1,5 @@
 ---
-title: Poradce při potížích s pokrytím kódu v sadě Visual Studio
+title: Poradce při potížích s pokrytím kódu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6224e03e4aafe152107a8fa7da56dc6bd8def1e3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2651a84ae3c621237f34ff1667da6ecbacf0923a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380548"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055099"
 ---
 # <a name="troubleshoot-code-coverage"></a>Řešení problémů s pokrytím kódu
 

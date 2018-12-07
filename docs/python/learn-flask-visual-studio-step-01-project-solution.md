@@ -1,6 +1,7 @@
 ---
-title: Kurz – další Flask v sadě Visual Studio, krok 1
-description: Názorný postup základy Flask v rámci projektů sady Visual Studio.
+title: Přečtěte si kurz na Flask v sadě Visual Studio kroku 1, Flask základy
+titleSuffix: ''
+description: Názorný postup základy Flask v rámci projektů sady Visual Studio, včetně požadavků, Git a virtuální prostředí.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029063"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066636"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Kurz: Začínáme s architektury Flask webů v sadě Visual Studio
 

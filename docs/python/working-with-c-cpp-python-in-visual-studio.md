@@ -1,5 +1,5 @@
 ---
-title: Práce s C++ a Python
+title: Tvorba rozšíření C++ pro Python
 description: Návod k vytvoření rozšíření C++ pro Python s pomocí sady Visual Studio, CPython a PyBind11, včetně ladění ve smíšeném režimu.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 237d3dcbe3f6413d2a68f25af3ac6eb6357e3bf8
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001305"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053474"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -404,7 +405,7 @@ Existuje široká škála způsob, jak vytvořit rozšíření Pythonu, jak je p
 | --- | --- | --- | --- | --- |
 | Moduly rozšíření jazyka C/C++ pro CPython | 1991 | Standardní knihovna | [Rozsáhlé dokumentace a kurzy](https://docs.python.org/3/c-api/). Úplnou kontrolu. | Kompilace, přenositelnost, odkazovat na správu. Vysoká znalostní báze C. |
 | [PyBind11](https://github.com/pybind/pybind11) (doporučeno pro jazyk C++) | 2015 |  | Odlehčený, pouze záhlaví knihovny pro vytváření vazeb Pythonu z existujícího kódu C++. Několik závislostí. PyPy kompatibility. | Novější, méně až po zralé. Silná použití jazyka C ++ 11. Krátký seznam podporovaných kompilátory (je součástí sady Visual Studio). |
-| Cython (Recommnded pro jazyk C) | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Jako v Pythonu. Vysoce vyspělé. Vysoký výkon. | Kompilace, novou syntaxi, nové sady nástrojů. |
+| Cython (Recommnded pro jazyk C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Jako v Pythonu. Vysoce vyspělé. Vysoký výkon. | Kompilace, novou syntaxi, nové sady nástrojů. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funguje s téměř každou kompilátorem jazyka C++. | Rozsáhlý a komplexní sadu knihoven; obsahuje mnoho řešení pro staré kompilátory. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Žádné kompilace širokou dostupnost. | Přístup k a mutace struktury C náročné a náchylné k chybám. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generovat vazby pro řadu jazyků najednou. | Pokud Python je jediný cíl nadměrnému zatížení. |

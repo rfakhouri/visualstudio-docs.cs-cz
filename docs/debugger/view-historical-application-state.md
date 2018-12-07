@@ -1,7 +1,7 @@
 ---
 title: Zobrazit předchozí stav aplikace pomocí nástroje IntelliTrace
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+description: Zjistěte, jak dělat jeho snímky a zobrazení snímků pomocí zpětného kroku IntelliTrace
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846860"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060142"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio
 
@@ -96,9 +96,9 @@ V tomto kurzu se naučíte:
 
 V režimu pouze události IntelliTrace umožňuje aktivovat historické ladění na ladicí program kroků a zarážek. Ale IntelliTrace zaznamená pouze data v **lokální** a **automatické hodnoty** windows, pokud se systému windows jsou otevřené a zaznamená pouze data, která je rozbalená a v zobrazení. V režimu jen pro události které není často nutné ucelený pohled proměnných a komplexních objektů. Kromě toho výraz hodnocení a zobrazení dat v **Watch** okno není podporováno. 
 
-V režimu události a snímky IntelliTrace zaznamená celý snímek procesu aplikace, včetně složitých objektů. V řádku kódu můžete zobrazit stejné informace, jako kdyby byly zastavení na zarážce (a nezáleží, jestli byly dříve rozvíjeny informace). Vyhodnocení výrazu je také podporované při prohlížení snímku.  
+V režimu události a snímky IntelliTrace zaznamená celý snímek procesu aplikace, včetně složitých objektů. V řádku kódu můžete zobrazit stejné informace, jako kdyby byly zastavení na zarážce (a nezáleží, jestli byly dříve rozvíjeny informace). Vyhodnocení výrazu je také podporované při prohlížení snímku.  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>Co je dopad na výkon této funkce? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>Co je dopad na výkon této funkce? 
 
 Dopad na celkový výkon taktování závisí na vaší aplikace. Nároky na pořízení snímku je přibližně 30 ms. Když se pořídí snímek, Rozvětvená proces aplikací a rozvětveného kopírování je pozastaveno. Při zobrazení snímku sady Visual Studio se připojuje k rozvětveného kopii procesu. U jednotlivých snímků sady Visual Studio zkopíruje pouze tabulky stránky a pro kopírování na zápis na stránkách. Pokud objektů na haldě změnit mezi ladicí program se přidružené snímky, tabulky příslušné stránky se pak zkopíruje, výsledkem je minimální paměti náklady. Pokud sada Visual Studio zjistí, že není dostatek paměti k vytvoření snímku, nepřijímá jeden.
  

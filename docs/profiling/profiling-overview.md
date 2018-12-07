@@ -1,6 +1,6 @@
 ---
-title: Profilace přehled – Visual Studio | Dokumentace Microsoftu
-ms.custom: mvc
+title: Přehled nástrojů pro měření výkonu | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844117"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059532"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Přehled profilace v sadě Visual Studio
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Přehled nástrojů pro měření výkonu v sadě Visual Studio
 
 Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za určitou dobu, jako je čas, který spustíte svou aplikaci. Můžete zobrazit stav aplikace v různých fázích během provádění kódu nebo provedení a dodatečně analyzovat výkon vaší aplikace.
 

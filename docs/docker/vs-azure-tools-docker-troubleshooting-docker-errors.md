@@ -1,27 +1,25 @@
 ---
-title: Řešení potíží s chybami klienta Dockeru na Windows s použitím sady Visual Studio | Dokumentace Microsoftu
+title: Řešení potíží s chybami klienta Docker ve Windows | Dokumentace Microsoftu
 description: Řešení problémů, které zaznamenáte při používání sady Visual Studio k vytvoření a nasazení webové aplikace do Docker ve Windows pomocí sady Visual Studio 2017.
 services: azure-container-service
-documentationcenter: na
 author: devinb
 manager: douge
-editor: ''
+ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.service: multiple
 ms.devlang: dotnet
-ms.topic: article
-ms.tgt_pltfrm: na
+ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: devinb
-ms.openlocfilehash: f72fb2bec3b863bff7d2fbd3e598f6ff5721d39c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 2981beecdda6d078941539a5044c13c670ecd646
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673396"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062836"
 ---
-# <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Řešení potíží s Visual Studio 2017 vývoj aplikací pomocí Dockeru
+# <a name="troubleshoot-visual-studio-2017-development-with-docker"></a>Řešení potíží při vývoji v sadě Visual Studio 2017 pomocí Dockeru
 
 Když pracujete se sadou Visual Studio Tools for Docker, může dojít k potížím při sestavování nebo ladění aplikace. Níže jsou některé běžné kroků pro řešení potíží.
 

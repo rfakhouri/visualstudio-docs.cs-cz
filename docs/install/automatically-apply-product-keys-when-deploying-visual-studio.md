@@ -1,5 +1,5 @@
 ---
-title: Automatické použití kódů Product Key při nasazení sady Visual Studio
+title: Automatické použití kódů product key
 description: Zjistěte, jak prostřednictvím kódu programu použití kódů product key při nasazení sady Visual Studio.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fea2ffa8fd81a5012c89289df36d7f698fb60c4e
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: a69291e48bd5a452bdb8be8bf38faddf2e6c37b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138713"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064576"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatické použití kódů Product Key při nasazení sady Visual Studio
 

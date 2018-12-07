@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: určení verze rozhraní .NET Framework pro ladění | Dokumentace Microsoftu'
-ms.custom: ''
+title: Určení verze rozhraní .NET Framework pro ladění | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15792a8ecbc538bdbf5516d480abde4903fbd8d3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304881"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056005"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Postupy: určení verze rozhraní .NET Framework pro ladění (C#, Visual Basic, F#)
 

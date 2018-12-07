@@ -1,6 +1,6 @@
 ---
-title: 'Návod: Ladění formuláře Windows | Dokumentace Microsoftu'
-ms.custom: ''
+title: Ladění formuláře Windows | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349163"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066753"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Návod: Ladění formuláře systému Windows
 Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikací. Model Windows Form vytvoří standardní aplikaci systému Windows. Tuto rekapitulaci lze dokončit pomocí jazyků Visual Basic, C# nebo C++.  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 468c4c54a16aeb69f518b9530a48616b35869bad
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826801"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027416"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Vítejte v prostředí IDE sady Visual Studio
 
@@ -28,7 +28,7 @@ Visual Studio *integrovaného vývojového prostředí* je creative odrazový, m
 
 Tento obrázek ukazuje sady Visual Studio s otevřít projekt a několika okny nástrojů klíče, které budete pravděpodobně používat:
 
-- [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](quickstart-projects-solutions.md).
+- [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](../get-started/tutorial-projects-solutions.md).
 
 - [Okno editoru](../ide/writing-code-in-the-code-and-text-editor.md) (System center), kde budete pravděpodobně tráví většinu svého času zobrazí obsah souboru. Toto je, kde můžete upravit kódu nebo navrhnout uživatelské rozhraní, jako je například okno s tlačítka a textová pole.
 
@@ -264,9 +264,9 @@ Další informace o dalších způsobech mohli přizpůsobit integrovaného výv
 
 Prozkoumejte další Visual Studio na základě společně s některou z těchto úvodní články:
 
-- Seznamte se v editoru kódu v [zjistěte, jak pomocí editoru kódu](quickstart-editor.md)
+- Seznamte se v editoru kódu v [zjistěte, jak pomocí editoru kódu](../get-started/tutorial-editor.md)
 
-- Zjistěte, jak Visual Studio uspořádá kód v [přečtěte si víc o projekty a řešení](quickstart-projects-solutions.md)
+- Zjistěte, jak Visual Studio uspořádá kód v [přečtěte si víc o projekty a řešení](../get-started/tutorial-projects-solutions.md)
 
 Pokud jste připraveni začít do další kód, jeden z následujících šablon rychlý start specifické pro jazyk je dobré další krok:
 

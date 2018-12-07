@@ -1,24 +1,45 @@
 ---
 title: Protokol změn (Visual Studio Tools for Unity, Mac) | Dokumentace Microsoftu
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: johmil
-ms.author: therealjohn
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 20cd6088bbe0626a62b09e3943ef46703742f567
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027234"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Protokol změn (Visual Studio Tools for Unity, Mac)
 Protokol změn Visual Studio Tools for Unity.
+
+## <a name="1700"></a>1.7.0.0
+ Vydáno 13. listopadu 2018
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Ladicí program:**
+
+    -   Přidat další informace o klientech (IP, název počítače) v dialogovém okně připojit.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Ladicí program:**
+
+     -   Oprava vzájemné zablokování v knihovně používaný ke komunikaci s modulem Unity a ladicí program, nastavení sady Visual Studio nebo Unity ukotvit, zejména v případě dosažení "Připojit k Unity" nebo restartování hry.
+     
+-   **Integrace:**
+
+     -   Oprava Unity modulu plug-in aktivace byla vyberete jiný výchozí editor.
+     
+     -   Oprava vytvoření šablony souboru Unity.
 
 ## <a name="1602"></a>1.6.0.2
  Vydáno 24. července 2018

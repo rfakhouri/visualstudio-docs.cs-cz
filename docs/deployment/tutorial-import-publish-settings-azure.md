@@ -1,6 +1,6 @@
 ---
 title: Publikování do Azure pomocí importu nastavení publikování
-ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+description: Vytváření a import profilu publikování k nasazení aplikace v sadě Visual Studio do služby Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4b0e4ea963f20199267f32a8c87440c8cc350b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808318"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058491"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -40,7 +40,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 * Musíte mít nainstalovanou sadu Visual Studio 2017 a **ASP.NET** a. **NET Framework** úlohy pro vývoj. Pro aplikace .NET Core, musíte také. **.NET Core** pracovního vytížení.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 * Vytvoření služby Azure App Service. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 

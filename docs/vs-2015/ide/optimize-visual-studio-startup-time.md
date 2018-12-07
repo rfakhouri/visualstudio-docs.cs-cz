@@ -1,5 +1,5 @@
 ---
-title: Optimalizace spouštění sady Visual Studio | Dokumentace Microsoftu
+title: Optimalizace času spuštění | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/15/2016
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4112edc991581444e2cfe81aeb25698f69899f82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a17b8955d6c81c182523a7616f927eabd8703632
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283540"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53050171"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimalizace spouštění sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ V ideálním případě sady Visual Studio by měl vždy spustit co nejrychleji.
 
 ## <a name="control-startup-behavior"></a>Řízení chování při spuštění
 
-Aby prodloužení času spuštění sady Visual Studio "15" nevyužívá během spouštění, načítání rozšíření metodiky zatížení na vyžádání. To znamená, že rozšíření neotevírat ihned poté, co Visual Studio spustí, ale místo toho otevřít asynchronně účtujeme podle potřeby po spuštění. Protože okna nástrojů ponechány otevřené v předchozí relaci sady Visual Studio může zhoršit dobu spuštění, Visual Studio otevře okna nástrojů inteligentnější způsobem, aby se zabránilo dopadu na dobu spuštění.
+Aby se zabránilo rozšíření čas spuštění, Visual Studio 2017 nevyužívá během spouštění, načítání rozšíření metodiky zatížení na vyžádání. To znamená, že rozšíření neotevírat ihned poté, co Visual Studio spustí, ale místo toho otevřít asynchronně účtujeme podle potřeby po spuštění. Protože okna nástrojů ponechány otevřené v předchozí relaci sady Visual Studio může zhoršit dobu spuštění, Visual Studio otevře okna nástrojů inteligentnější způsobem, aby se zabránilo dopadu na dobu spuštění.
 
 Pokud sada Visual Studio zjistí pomalé spouštění, zobrazí se místní zpráva, upozorní vás do okna rozšíření nebo nástroj, který je příčinou zpomalení. Zprávy také obsahuje odkaz **spravovat výkon sady Visual Studio** dialogové okno, které obsahuje nástroje a rozšíření windows, které mají vliv na výkon při spuštění. Toto dialogové okno umožňuje změnit nastavení okna nástroje a rozšíření pro zvýšení výkonu při spuštění.
 
@@ -53,5 +53,3 @@ Pokud panel nástrojů je zpomalení při spuštění sady Visual Studio, může
 ![Spravovat výkon sady Visual Studio – okna nástrojů](../ide/media/vside-perfdialog-toolwindows.PNG "spravovat výkon sady Visual Studio – oken nástrojů")
 
 Pokud později změníte své rozhodnutí, můžete některé z těchto možností v vrátit **spravovat výkon sady Visual Studio** dialogové okno. Chcete-li otevřít **spravovat výkon sady Visual Studio** dialogové okno, v panelu nabídky zvolte **pomáhají**, **spravovat výkon sady Visual Studio**.
-
-

@@ -1,5 +1,6 @@
 ---
-title: Práce s Pythonu pro tento kurz, krok 2, zápis a spouštění kódu
+title: Python v sadě Visual Studio kurz – krok 2, zápis a spouštění kódu
+titleSuffix: ''
 description: Krok 2 průvodce základní funkce Pythonu v sadě Visual Studio, včetně úprav kódu a spuštění projektu.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 780e829591a63573599bafe7c729def7b6384342
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219416"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054797"
 ---
 # <a name="step-2-write-and-run-code"></a>Krok 2: Zápis a spouštění kódu
 

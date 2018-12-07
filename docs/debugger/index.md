@@ -1,18 +1,19 @@
 ---
 layout: LandingPage
-title: Ladění aplikací v sadě Visual Studio | Dokumentace Microsoftu
+title: Ladění aplikací | Dokumentace Microsoftu
 description: Zjistěte, jak používat Visual Studio 2017 k ladění aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: de0edba7396ceb75ce6a367a57d98e22fd43a83b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948254"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048603"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 
@@ -107,7 +108,7 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Ladění C# nebo aplikace Visual Basic</h3>
+                        <h3>Ladění aplikací v C# nebo Visual Basicu</h3>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 ---
 title: Šablony webové aplikace Python
-description: Přehled šablon sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Bottle, Flask a Django, včetně konfigurace ladění a publikování do služby Azure App Service.
+description: Visual Studio poskytuje šablony pro webové aplikace Python pomocí rozhraní Bottle, Flask a Django; podpora zahrnuje konfigurace ladění a publikování do služby Azure App Service.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349332"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068325"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -34,7 +35,7 @@ Vytvoření projektu ze šablony pomocí **souboru** > **nový** > **projektu**.
 
 Obecné **webový projekt** šablonu, již bylo zmíněno dříve, poskytuje pouze prázdný projekt sady Visual Studio se žádný kód a žádné předpoklady, než se projektu Pythonu. Podrobnosti o **Azure Cloud Service** šablony, najdete v článku [projekty služeb cloudu Azure pro Python](python-azure-cloud-service-project-template.md).
 
-Všechny šablony jsou založené na webové architektury Bottle, Flask a Django a spadají do tří skupin Obecné, jak je popsáno v následujících částech. Aplikace vytvořené pomocí některé z těchto šablon obsahovat dostatečný kód ke spuštění a ladění aplikace místně. Každé z nich také poskytuje nezbytné [objekt aplikace s rozhraním WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) pro použití s produkční webové servery.
+Všechny šablony jsou založené na webové architektury Bottle, Flask a Django a spadají do tří skupin Obecné, jak je popsáno v následujících částech. Aplikace vytvořené pomocí některé z těchto šablon obsahovat dostatečný kód ke spuštění a ladění aplikace místně. Každé z nich také poskytuje nezbytné [objekt aplikace s rozhraním WSGI](https://www.python.org/dev/peps/pep-3333/) (python.org) pro použití s produkční webové servery.
 
 ### <a name="blank-group"></a>Prázdná skupina
 

@@ -1,5 +1,6 @@
 ---
-title: Práce s Pythonu pro tento kurz, krok 6, práce s Gitem
+title: Python v sadě Visual Studio kurz – krok 6, práce s Gitem
+titleSuffix: ''
 description: Krok 6 Průvodce základní jazyka Python v sadě Visual Studio, věnovaných funkcím souvisejícím s Git sady Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e958046bb5574cb1a9b9799482fa3c96c203b013
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6c23a1d9835b7b065f24536c89a8f0befb03717c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219403"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054473"
 ---
 # <a name="step-6-work-with-git"></a>Krok 6: Práce s Gitem
 

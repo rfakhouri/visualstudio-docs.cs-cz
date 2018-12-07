@@ -10,12 +10,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.openlocfilehash: cd846d58ed6f9236b2fd0942f8caf7755a6ff993
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 86222da7c7eb3615b7c57e68d5733973b3d570fd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000584"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053958"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testování výkonu cloudové služby
 ## <a name="overview"></a>Přehled
@@ -54,7 +54,7 @@ Při použití profiler může shromažďovat data, při spuštění cloudové s
 Obvykle simulovat zatížení pro test cloudových služeb v rámci normální nebo podmínek vysoké zátěže.
 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilace cloudové služby v Azure
-Při publikování cloudové služby v sadě Visual Studio můžete Profilovat službu a nastavení profilování, které vám poskytnou informace, které chcete. Pro každou instanci role spuštění relace profilování. Další informace o tom, jak publikovat službu ze sady Visual Studio najdete v tématu [publikování do cloudové služby Azure ze sady Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx).
+Při publikování cloudové služby v sadě Visual Studio můžete Profilovat službu a nastavení profilování, které vám poskytnou informace, které chcete. Pro každou instanci role spuštění relace profilování. Další informace o tom, jak publikovat službu ze sady Visual Studio najdete v tématu [publikování do cloudové služby Azure ze sady Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 Další informace o výkonu profilace v sadě Visual Studio najdete v tématu [Průvodce začátečníka profilací výkonu](https://msdn.microsoft.com/library/azure/ms182372.aspx) a [Analýza výkonu aplikace pomocí nástrojů pro profilaci](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
 
@@ -107,7 +107,7 @@ Relace profilování se vytvoří pro každou instanci role v cloudové službě
 4. K zobrazení různých zobrazení sestavy v seznamu aktuální zobrazení, zvolte typ zobrazení, které chcete. Další informace najdete v tématu [zobrazeních sestav nástrojů pro profilaci](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Další kroky
-[Ladění cloudové služby](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Ladění cloudové služby](vs-azure-tools-debug-cloud-services-virtual-machines.md)
 
-[Publikování do cloudové služby Azure ze sady Visual Studio](https://msdn.microsoft.com/library/azure/ee460772.aspx)
+[Publikování do cloudové služby Azure ze sady Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)
 
