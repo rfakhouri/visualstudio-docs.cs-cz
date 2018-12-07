@@ -1,22 +1,23 @@
 ---
 title: Ladění kódu v Pythonu na vzdálených Linuxových počítačích
-description: Jak používat Visual Studio pro ladění kódu v Pythonu běží na vzdálených Linuxových počítačích, včetně potřebný postup konfigurace, zabezpečení a řešení potíží.
-ms.date: 10/15/2018
+description: Ladění kódu v Pythonu běží na vzdálených Linuxových počítačích, včetně potřebný postup konfigurace, zabezpečení a řešení potíží pomocí sady Visual Studio.
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 4c14fb14a8941895fab473952908e6aefa2e2f14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356766"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067943"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Vzdálené ladění kódu v Pythonu v Linuxu
 
@@ -106,7 +107,7 @@ V následujícím postupu jsme nastavení jednoduché zarážky zastavit vzdále
 
 1. Visual Studio dojde k přepnutí do režimu ladění, zatímco skript stále běží na vzdáleném počítači, poskytuje všechny běžné [ladění](debugging-python-in-visual-studio.md) možnosti. Například nastavte zarážku na `if guess < number:` řádku, pak přepnutí na vzdáleném počítači a zadejte jiné odhad. Až tak učiníte, Visual Studio na váš místní počítač zastaví na zarážce, zobrazí místní proměnné a tak dále:
 
-    ![Dosažení zarážky](media/remote-debugging-breakpoint-hit.png)
+    ![Visual Studio pozastaví ladění při dosažení zarážky](media/remote-debugging-breakpoint-hit.png)
 
 1. Při zastavení ladění sady Visual Studio se odpojí z programu, který zůstane spuštěný na vzdáleném počítači. ptvsd taky dál naslouchání pro připojení ladicí programy, takže můžete znovu připojit k procesu kdykoli znovu.
 

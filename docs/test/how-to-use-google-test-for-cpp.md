@@ -1,5 +1,5 @@
 ---
-title: Jak používat Google Test pro C++ v sadě Visual Studio
+title: Jak používat Google Test pro C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a047b7d46aa2fe325baa4fee7459bb822e3b1bea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 704d842aaf3ea5e3075939e4d52b042a4128b810
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138630"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060388"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak používat Google Test pro C++ v sadě Visual Studio
 V **Visual Studio 2017 verze 15.5** a později, Google Test je integrována do integrovaného vývojového prostředí sady Visual Studio jako součást výchozí **Desktop Development with C++** pracovního vytížení. Pokud chcete ověřit, jestli je nainstalovaný na počítači, otevřete instalační program sady Visual Studio a vyhledejte Google Test v seznamu součástí úlohy:
@@ -48,13 +48,3 @@ Nyní jste připraveni pro zápis a spouštění testů Google. Najdete v člán
 
 ## <a name="see-also"></a>Viz také:
 [Zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md)
-
-
-
-
-
-
-
-
-
-

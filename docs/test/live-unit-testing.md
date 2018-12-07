@@ -1,5 +1,5 @@
 ---
-title: Live Unit Testing v sadě Visual Studio
+title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42624143"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066207"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing pomocí sady Visual Studio 2017
 
@@ -81,7 +81,7 @@ Konfigurovatelných možností, které patří:
 - Adresáře, ve kterém k uložení trvalá data.
 
 - Možnost odstranit všechny trvalá data. To je užitečné, když Live Unit Testing je chovat nepředvídatelnými nebo neočekávané způsobem, což naznačuje, že došlo k poškození trvalá data.
-   
+
 - Interval, po jejímž uplynutí testovacího případu vyprší časový limit; Výchozí hodnota je 30 sekund.
 
 - Maximální počet testovacích procesů, které vytvoří Live Unit Testing.
@@ -203,4 +203,3 @@ Také vám pomůže následující atributy z Live Unit Testing vyloučit jednot
 - [Blogu Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Nejčastější dotazy k funkci Live Unit Testing](live-unit-testing-faq.md)
 - [Video pro kanál 9: Live Unit Testing v sadě Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
-

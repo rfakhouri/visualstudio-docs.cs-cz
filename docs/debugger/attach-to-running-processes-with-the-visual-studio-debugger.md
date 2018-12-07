@@ -1,6 +1,6 @@
 ---
-title: Připojení ke spuštěným procesům pomocí ladicího programu v sadě Visual Studio | Dokumentace Microsoftu
-ms.custom: H1Hack27Feb2017
+title: Připojení ke spuštěným procesům pomocí ladicího programu | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389186"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068458"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ladicího programu sady Visual Studio ke spuštěným procesům
 Ladicí program sady Visual Studio můžete připojit ke spuštěnému procesu na místním nebo vzdáleném počítači. Poté, co je proces spuštěn, vybrat **ladění** > **připojit k procesu** nebo stiskněte klávesu **Ctrl**+**Alt** + **P** ve Visual Studiu a použít **připojit k procesu** dialogové okno připojit ladicí program k procesu.

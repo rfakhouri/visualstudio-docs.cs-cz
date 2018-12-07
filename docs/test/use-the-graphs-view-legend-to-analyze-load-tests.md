@@ -1,5 +1,5 @@
 ---
-title: Použití legendy zobrazení grafů k analýze zátěžových testů v sadě Visual Studio
+title: Použití legendy zobrazení grafů k analýze zátěžových testů
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e379cd3f05063424a7db9905611fa86467bee2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896078"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067191"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Použití legendy zobrazení grafů k analýze zátěžových testů
 

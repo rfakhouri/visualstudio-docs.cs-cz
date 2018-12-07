@@ -1,6 +1,6 @@
 ---
-title: Nastavení pro konfiguraci ladění jazyka C++ projektu | Dokumentace Microsoftu
-ms.custom: ''
+title: Nastavení projektu pro konfiguraci ladění jazyka C++
+ms.custom: seodec18
 ms.date: 11/26/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b333dca8f717cbd8e1172ed00b4a044aafeed857
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389653"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066895"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka C++
 Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visual C++ v **stránky vlastností** dialogové okno, jak je popsáno v [postupy: nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.  

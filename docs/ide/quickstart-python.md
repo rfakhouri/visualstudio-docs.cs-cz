@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: bd31ee397f0398c15fd315b43486b6be5d7d3855
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219273"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062306"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý start: Vytvoření první webové aplikace v Pythonu pomocí sady Visual Studio
 
@@ -66,11 +66,11 @@ Tady můžete následujícím postupem ji nainstalovat do výchozí "globálníh
 
 1. Do vyhledávacího pole zadejte "flask" a vyberte **flask instalace pip z PyPI**. Přijměte všechny vyzve k zadání oprávnění správce a podívejte se **výstup** okna v sadě Visual Studio pro průběh. (Výzva pro zvýšení oprávnění se stane, když se nachází v rámci chráněnou oblast složce balíčků pro globální prostředí, jako jsou *C:\Program Files*.)
 
-    ![Instalace knihovny Flask](media/quickstart-python-03-install-package.png)
+    ![Instalace knihovny Flask pomocí pip install](media/quickstart-python-03-install-package.png)
 
 1. Po instalaci, zobrazí se v prostředí v knihovně **Průzkumníka řešení**, což znamená, že, které lze využít v kódu Pythonu.
 
-    ![Nainstalovanou knihovnu Flask](media/quickstart-python-04-package-installed.png)
+    ![Nainstalovanou knihovnu Flask a zobrazení v Průzkumníku řešení](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > Místo instalace knihovny do globálního prostředí, vývojáři obvykle "virtuální prostředí vytvořte" ve kterém k instalaci knihoven pro konkrétní projekt. Šablony sady Visual Studio obvykle nabízejí tuto možnost, jak je popsáno v [rychlý start – vytvoření projektu Pythonu pomocí šablony](../python/quickstart-02-python-in-visual-studio-project-from-template.md).

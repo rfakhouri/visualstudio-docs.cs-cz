@@ -1,5 +1,5 @@
 ---
-title: Refaktorování kódu v sadě Visual Studio | Dokumentace Microsoftu
+title: Refaktoring
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eb752f7be0e7ca8e0006787ba03f9bb4725c27b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348953"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066009"
 ---
 # <a name="refactor-code"></a>Refaktorování kódu
 

@@ -1,5 +1,5 @@
 ---
-title: Aliasy příkazů sady Visual Studio
+title: Aliasy příkazů
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a74bc2bc38befe81ec3a26c5da4819dbe1c66148
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513530"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056435"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliasy příkazů sady Visual Studio
 
@@ -101,7 +101,7 @@ Následující tabulka obsahuje seznam předdefinované aliasy příkazů sady V
 |Tisk souboru|Tisk|File.Print|
 |Okno vlastností|Vlastnosti|View.PropertiesWindow|
 |Zastavit|q|Debug.StopDebugging|
-|Znovu:|znovu:|Edit.Redo|
+|Znovu:|Znovu:|Edit.Redo|
 |Registr – okno|registr|Debug.Registers|
 |Spustit ke kurzoru|RTC|Debug.RunToCursor|
 |Uložit vybrané položky|Uložit|File.SaveSelectedItems|
@@ -131,4 +131,4 @@ Následující tabulka obsahuje seznam předdefinované aliasy příkazů sady V
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)

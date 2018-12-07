@@ -1,5 +1,5 @@
 ---
-title: Spravovat výsledky zátěžového testu v sadě Visual Studio
+title: Spravovat výsledky zátěžového testu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895454"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067113"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Správa výsledků zátěžových testů v úložiště výsledků testu zátěže
 

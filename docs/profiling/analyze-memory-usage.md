@@ -1,6 +1,6 @@
 ---
-title: Analýza využití paměti v aplikaci Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
+title: Analýza využití paměti
+ms.custom: seodec18
 ms.date: 01/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8971f26881e522c81f2c111098f09a94133072d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fb854bcbb60dcde1358fe6128466b98780e559c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948912"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065746"
 ---
 # <a name="analyze-memory-usage"></a>Analýza využití paměti
 Použijte integrovaný ladicí program **využití paměti** diagnostický nástroj k vyhledání nevrácené paměti a využití paměti neefektivní. Umožňuje nástroj využití paměti, můžete provést jeden nebo více *snímky* spravovaný a nativní paměti haldy. Můžete shromažďovat snímky aplikací .NET, ASP.NET, nativní nebo smíšený režim (.NET a nativní).  

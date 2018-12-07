@@ -1,5 +1,6 @@
 ---
-title: Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem | Dokumentace Microsoftu
+title: Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
+titleSuffix: ''
 description: Projděte si adresy URL domén, porty a protokoly, které může být vhodné přidat na seznam povolených nebo otevřít, pokud vaše organizace používá Brána firewall nebo proxy server
 ms.custom: ''
 ms.date: 07/10/2018
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fbea07aee311bd1548397f4b3d475e4819523df
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: 977dc2927e95988b98acc28eb6b0198d0c27b90a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954185"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057757"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 

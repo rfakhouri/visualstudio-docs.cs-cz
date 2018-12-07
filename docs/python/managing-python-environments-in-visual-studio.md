@@ -1,7 +1,7 @@
 ---
 title: Správa prostředí Pythonu a interprety
 description: Použijte okno prostředí Pythonu ke správě globální, virtuální a prostředí conda, instalace interpretů Pythonu a balíčky a přiřazení prostředí do projektů sady Visual Studio.
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349358"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063206"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Pythonu v sadě Visual Studio
 
@@ -57,7 +57,9 @@ V obou případech **prostředí Pythonu** okna se zobrazí vedle **Průzkumník
 
 Visual Studio vyhledá nainstalovaných globální prostředí pomocí registru (následující [období 514](https://www.python.org/dev/peps/pep-0514/)), společně s virtuálními prostředími, která a prostředí conda (naleznete v tématu [typy prostředí](#types-of-environments)). Pokud nevidíte očekávanému prostředí v seznamu, přečtěte si téma [ručně identifikovat existující prostředí](#manually-identify-an-existing-environment).
 
-Když v seznamu vyberte prostředí, sada Visual Studio zobrazí na různých vlastností a příkazy pro toto prostředí **přehled** kartu. Například je vidět na obrázku výše, je umístění na překladač *C:\Python36-32*. Přepnout na různých záložkách například pomocí rozevíracího seznamu pod seznamem prostředí **balíčky**, a **IntelliSense**. Tyto karty jsou popsány v [odkaz na kartě okno prostředí Pythonu](python-environments-window-tab-reference.md).
+Když v seznamu vyberte prostředí, sada Visual Studio zobrazí na různých vlastností a příkazy pro toto prostředí **přehled** kartu. Například je vidět na obrázku výše, je umístění na překladač *C:\Python36-32*. Čtyř příkazů v dolní části **přehled** kartu každý otevřete příkazový řádek s překladač systémem. Další informace najdete v tématu [kartu odkaz na okno prostředí Pythonu – přehled](python-environments-window-tab-reference.md#overview-tab).
+
+Přepnout na různých záložkách například pomocí rozevíracího seznamu pod seznamem prostředí **balíčky**, a **IntelliSense**. Tyto karty jsou také popsány v [odkaz na kartě okno prostředí Pythonu](python-environments-window-tab-reference.md).
 
 Výběr prostředí se nezmění jejich vztah na všechny projekty. Výchozího prostředí se zobrazí v tučné písmo v seznamu, je ten, který sada Visual Studio používá pro všechny nové projekty. Pokud chcete použít jiné prostředí pomocí nových projektů, použijte **nastavit výchozí prostředí pro nové projekty** příkazu. V rámci projektu můžete vždy vyberte konkrétní prostředí. Další informace najdete v tématu [vyberte prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 

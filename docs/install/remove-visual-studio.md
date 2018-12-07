@@ -1,5 +1,6 @@
 ---
-title: Odebrat sady Visual Studio 2017 | Dokumentace Microsoftu
+title: Odebrání sady Visual Studio
+titleSuffix: ''
 description: Zjistěte, jak úplně odebrat sady Visual Studio z vašeho počítače, krok za krokem.
 ms.custom: ''
 ms.date: 09/12/2017
@@ -21,14 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: 234a4dc712bc272d96ff5d3212833451e4df95ec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382763"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061129"
 ---
-# <a name="remove-visual-studio"></a>Odebrání sady Visual Studio
+# <a name="remove-visual-studio-2017"></a>Odebrat sady Visual Studio 2017
 
 Pokud dojde k závažné chybě a nelze opravit nebo odinstalovat Visual Studio, můžete spustit `InstallCleanup.exe` nástroj pro odebrání instalační soubory a informace o produktu pro všechny nainstalované instance sady Visual Studio 2017 a novější. Spuštění tohoto nástroje je třeba udělat jako poslední možnost, pokud opravit nebo odinstalovat navrácení služeb po a odinstalovat funkce z jiné instalace sady Visual Studio nebo jiné produkty, které je potřeba opravit.
 

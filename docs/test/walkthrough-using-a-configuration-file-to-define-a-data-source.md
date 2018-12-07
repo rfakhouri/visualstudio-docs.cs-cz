@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Použití konfiguračního souboru k definování zdroje dat v sadě Visual Studio'
+title: 'Návod: Použití konfiguračního souboru k definování zdroje dat'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d01fd3551ee94cef178cb840742721db58a360
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d329e1aedb5b81c2be2d52614e4c540ecb8ef8aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821614"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066990"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 

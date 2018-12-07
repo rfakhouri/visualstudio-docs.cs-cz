@@ -1,5 +1,5 @@
 ---
-title: Vytvoření modulu Plugin v sadě Visual Studio pro zátěžový Test
+title: Vytvoření modulu Plugin pro zátěžový Test
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896728"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064715"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Postupy: vytvoření modulu Plugin pro zátěžový test
 

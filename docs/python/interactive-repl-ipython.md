@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219247"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067800"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Použití Ipythonu v interaktivním okně
 
@@ -79,9 +80,9 @@ V tomto návodu, byste měli mít [Anaconda](https://www.continuum.io) prostřed
 
 8. Chcete-li zobrazit grafy mimo **interaktivní** okna spuštění kódu namísto použití **ladění** > **spustit bez ladění** příkazu.
 
-IPython má mnoho dalších užitečných funkcí jako je například uvození prostředí systému a nahrazení proměnné zachytávání výstupu, např. Odkazovat [IPython dokumentaci](http://ipython.org/documentation.html) Další informace.
+IPython má mnoho dalších užitečných funkcí jako je například uvození prostředí systému a nahrazení proměnné zachytávání výstupu, např. Odkazovat [IPython dokumentaci](https://ipython.org/documentation.html) Další informace.
 
-### <a name="see-also"></a>Viz také:
+## <a name="see-also"></a>Viz také:
 
 - Chcete-li použít Jupyter snadno a bez instalace, zkuste bezplatnou [poznámkových bloků Azure hostovaná služba](https://notebooks.azure.com/) , který umožňuje zachovat a sdílení vašich poznámkových bloků s ostatními.
 

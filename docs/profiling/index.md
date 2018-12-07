@@ -1,22 +1,23 @@
 ---
 layout: LandingPage
-title: Profilace aplikací pomocí sady Visual Studio | Microsoft Docs
-description: Zjistěte, jak používat Visual Studio 2017 profilu výkon vaší aplikací, služeb a nástrojů v jazyk podle vašeho výběru.
+title: Měření výkonu aplikace pomocí profilace | Dokumentace Microsoftu
+description: Zjistěte, jak pomocí sady Visual Studio 2017 Profilovat jejich výkon aplikací, služeb a nástrojů v jazyce podle vašeho výběru.
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267683"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065542"
 ---
-# <a name="profiling-in-visual-studio"></a>Profilace v sadě Visual Studio
+# <a name="measure-app-performance-in-visual-studio"></a>Měřit výkon aplikace v sadě Visual Studio
 
-Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využití procesoru a další problémy na úrovni aplikace. Pomocí těchto nástrojů můžete shromažďování dat (třeba hodnoty proměnných, volání funkcí a události) v čase, které spustíte aplikaci v ladicím programu. Můžete zobrazit stav aplikací v různých okamžicích během provádění kódu. 
+Profilace a Diagnostika nástroje pomáhají diagnostikovat paměť a využití procesoru a dalších problémů na úrovni aplikací. Pomocí těchto nástrojů můžete shromažďování dat (třeba hodnoty proměnných, volání funkce a událostí) za čas, kdy spustíte svou aplikaci v ladicím programu. Můžete zobrazit stav vaší aplikace v různých fázích během provádění kódu. 
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -30,7 +31,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Prohlídka funkce profileru</h3>
+                        <h3>Prohlídka funkce Profiler</h3>
                     </div>
                 </div>
             </div>
@@ -48,7 +49,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Začínáme s diagnostické nástroje (využití procesoru)</h3>
+                        <h3>Začínáme s nástroji diagnostiky (využití procesoru)</h3>
                     </div>
                 </div>
             </div>
@@ -120,7 +121,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analýza využití sítě (aplikace UWP)</h3>
+                        <h3>Analýza využití sítě (aplikace pro UPW)</h3>
                     </div>
                 </div>
             </div>
@@ -156,7 +157,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analýza spotřeby energie (aplikace UWP)</h3>
+                        <h3>Analýza spotřeby energie (aplikace pro UPW)</h3>
                     </div>
                 </div>
             </div>
@@ -174,7 +175,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Zjistit, jaká&#39;s nového v nástrojích pro profilaci</h3>
+                        <h3>Podívejte se, co&#39;nového v nástrojích pro profilaci</h3>
                     </div>
                 </div>
             </div>

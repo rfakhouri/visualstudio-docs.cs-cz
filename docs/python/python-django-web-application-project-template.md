@@ -1,6 +1,6 @@
 ---
 title: Šablona webového projektu Django pro Python
-description: Přehled šablon sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Django.
+description: Visual Studio poskytují komplexní šablony pro rychlé vytváření webových aplikací Django pomocí Pythonu.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607429"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066519"
 ---
 # <a name="django-web-project-template"></a>Šablona webového projektu Django
 
@@ -50,19 +51,19 @@ Konzole pro správu Django se přistupuje přes různé příkazy na **projektu*
 
 - **Otevřete prostředí Django**: otevře prostředí v kontextu vaší aplikace, která umožňuje pracovat s vašimi modely:
 
-    ![Konzola](media/template-django-console-shell.png)
+    ![Výsledky příkazu Otevřít prostředí Django](media/template-django-console-shell.png)
 
 - **Django synchronizace DB**: spustí `manage.py syncdb` v **interaktivní** okno:
 
-    ![Konzola](media/template-django-console-sync-db.png)
+    ![Výsledek příkazu Django synchronizace DB](media/template-django-console-sync-db.png)
 
 - **Shromažďovat statické**: spustí `manage.py collectstatic --noinput` zkopírovat všechny statické soubory do cesta zadaná položkou `STATIC_ROOT` ve vašich *settings.py*.
 
-    ![Konzola](media/template-django-console-collect-static.png)
+    ![Výsledek shromažďování statických příkazu](media/template-django-console-collect-static.png)
 
 - **Ověření**: spustí `manage.py validate`, která hlásí chyby ověření v nainstalované modely určené `INSTALLED_APPS` v vaše *settings.py*:
 
-    ![Konzola](media/template-django-console-validate.png)
+    ![Výsledek příkazu ověřit](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>Viz také:
 

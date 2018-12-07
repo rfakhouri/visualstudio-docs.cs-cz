@@ -1,5 +1,5 @@
 ---
-title: Příprava k publikování nebo nasazení cloudové služby v sadě Visual Studio | Dokumentace Microsoftu
+title: Příprava k publikování nebo nasazení cloudové služby
 description: Další postupy pro nastavení účtu služby pro cloud a úložiště a nakonfigurovat svoji aplikaci Azure.
 author: ghogen
 manager: douge
@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d7643d87f60b953b9c0928571036c7890e4d11f0
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 4b0ac752e65530d98b680d7e2e4a9095639423e7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063348"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Příprava na publikování nebo nasazení cloudové služby v sadě Visual Studio
 
 Chcete-li publikovat projekt cloudové služby, musíte nastavit tyto služby jak je popsáno v tomto článku:
 
-* A **Cloudová služba** ke spuštění vaší rolí v prostředí Azure a 
+* A **Cloudová služba** ke spuštění vaší rolí v prostředí Azure a
 * A **účtu úložiště** , která poskytuje přístup ke službám Blob, Queue a Table.
 
 ## <a name="create-a-cloud-service"></a>Vytvořit cloudovou službu

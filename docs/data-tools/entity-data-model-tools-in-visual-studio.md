@@ -1,5 +1,5 @@
 ---
-title: Entity Framework Tools v sadě Visual Studio
+title: Entity Framework Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819092"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066794"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools v sadě Visual Studio
+
 Entity Framework je objektově relační mapování technologie, která umožňuje vývojářům .NET pro práci s relačními daty pomocí objektů specifických pro doménu. Díky tomu není nutná většina kódu pro přístup k datům, který vývojáři obvykle musí vytvářet. Entity Framework je doporučené objektově relační mapování (ORM určené) modelování technologie pro nové aplikace .NET.
 
 Entity Framework Tools jsou určeny pro vám pomůže vytvářet aplikace Entity Framework (EF). Úplnou dokumentaci rozhraní Entity Framework je tady: [EF Core a EF 6](/ef/).
 
 Pomocí Entity Framework Tools můžete vytvářet *koncepčního modelu* z existující databáze a pak graficky vizualizovat a upravit koncepčního modelu. Nebo můžete graficky nejprve vytvořte Koncepční model a pak vytvořte databázi, která podporuje model. V obou případech můžete automaticky aktualizovat váš model, pokud základní změny databáze a automatickému generování kódu na objektové vrstvě pro vaši aplikaci. Generování databáze a objektové vrstvě generování kódu jsou přizpůsobitelné.
 
-Jsou nainstalované nástroje Entity Framework jako součást **ukládání a zpracování dat** úlohy v instalačním programu sady Visual Studio. Můžete také nainstalovat jako součást indvidual pod **sad SDK, knihoven a architektur** kategorie.
+Jsou nainstalované nástroje Entity Framework jako součást **ukládání a zpracování dat** úlohy v instalačním programu sady Visual Studio. Můžete také nainstalovat v rámci jednotlivých součástí **sad SDK, knihoven a architektur** kategorie.
 
 Toto jsou konkrétní nástroje, které tvoří rozhraní Entity Framework tools v sadě Visual Studio:
 
@@ -37,7 +38,7 @@ Toto jsou konkrétní nástroje, které tvoří rozhraní Entity Framework tools
 - Můžete použít **aktualizace modelu průvodce** aktualizovat konceptuální model, úložiště modelu a mapování, když se provedly změny do databáze.
 
   > [!NOTE]
-  >  Od verze Visual Studio 2010, Entity Framework tools nepodporují [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
+  > Od verze Visual Studio 2010, Entity Framework tools nepodporují [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
 Nástroje pro generování nebo upravit *edmx* souboru. To *edmx* soubor obsahuje informace, které popisují konceptuálního modelu, model úložiště a mapování mezi nimi. Další informace najdete v tématu [EDMX](https://docs.microsoft.com/ef/ef6/).
 

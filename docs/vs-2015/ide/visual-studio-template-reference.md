@@ -1,5 +1,5 @@
 ---
-title: Referenční dokumentace šablony sady Visual Studio | Dokumentace Microsoftu
+title: Referenční informace k šablonám | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,36 +17,30 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 825bc17d12b7a688e17a5957996b9fa9a1484e38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90fabf75d3e36d635a512a925e8ec32895b03ef2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249935"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059918"
 ---
 # <a name="visual-studio-template-reference"></a>Referenční dokumentace šablony sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Následující odkazy obsahují referenční informace o různých aspektů [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektů a položek.  
-  
-## <a name="in-this-section"></a>V tomto oddílu  
- [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
- Popisuje elementy XML používané v souborech .vstemplate.  
-  
- [Parametry šablony](../ide/template-parameters.md)  
- Obsahuje popis parametrů, které jsou k dispozici pro šablony projektů a položek.  
-  
- <xref:Microsoft.VisualStudio.TemplateWizard>  
- Popisuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a souvisejících typů.  
-  
-## <a name="related-sections"></a>Související oddíly  
- [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)  
-  
- [Postupy: Vytváření šablon položek](../ide/how-to-create-item-templates.md)  
-  
- [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)  
-  
+Následující odkazy obsahují referenční informace o různých aspektů [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] šablony projektů a položek.
+
+## <a name="in-this-section"></a>V tomto oddílu
+ [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md) popisuje elementy XML používané v souborech .vstemplate.
+
+ [Parametry šablony](../ide/template-parameters.md) obsahuje popis parametrů, které jsou k dispozici pro šablony projektů a položek.
+
+ <xref:Microsoft.VisualStudio.TemplateWizard> Popisuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a souvisejících typů.
+
+## <a name="related-sections"></a>Související oddíly
+ [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)
+
+ [Postupy: Vytváření šablon položek](../ide/how-to-create-item-templates.md)
+
+ [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)
+
  [Postupy: Vytváření startovních sad](../ide/how-to-create-starter-kits.md)
-
-
-

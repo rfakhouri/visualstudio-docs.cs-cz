@@ -1,5 +1,5 @@
 ---
-title: Extrahovat rozhraní refaktoring se v sadě Visual Studio
+title: Rozhraní refaktoring extrahovat
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849878"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061653"
 ---
 # <a name="extract-an-interface-refactoring"></a>Rozhraní refaktoring extrahovat
 

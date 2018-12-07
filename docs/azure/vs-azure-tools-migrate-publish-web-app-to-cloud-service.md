@@ -1,22 +1,22 @@
 ---
-title: Jak migrovat a publikovat webovou aplikaci do cloudové služby Azure z Visual Studia | Dokumentace Microsoftu
+title: Jak migrovat a publikovat webovou aplikaci do cloudové služby Azure
 description: Další informace o migraci a publikování vašich webových aplikací na cloudové služby Azure pomocí sady Visual Studio
 author: ghogen
 manager: douge
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.prod: visual-studio-dev15
 ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 28a94b9ecc868168437957f838994f1c766b6d85
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 221200938db7f0501081d0d1d4152292634e6bfa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000849"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055793"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: migrace a publikovat webovou aplikaci do cloudové služby Azure ze sady Visual Studio
 

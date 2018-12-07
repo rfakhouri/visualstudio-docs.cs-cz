@@ -1,5 +1,5 @@
 ---
-title: Testování vývoj řízený testy s použitím Průzkumníka testů v sadě Visual Studio
+title: Vývoj řízený testy s použitím Průzkumníka testů
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837084"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062901"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testovací řízeného rozvoje pomocí Průzkumníka testů
 

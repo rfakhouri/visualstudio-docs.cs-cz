@@ -1,5 +1,5 @@
 ---
-title: Visual Studio klávesové zkratky
+title: Klávesové zkratky
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: a2b2c520a98d1bc3fa9d162889794ed1524d7d82
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348940"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062267"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 

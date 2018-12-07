@@ -1,5 +1,5 @@
 ---
-title: Testování částí pro obecné metody v sadě Visual Studio
+title: Testy jednotek pro obecné metody
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb93e9b2d99c33c30b1478466f0cd8fa39388371
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ced33798841a732773310a902c0d51568bc36fe7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295582"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067557"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednotek pro obecné metody
 

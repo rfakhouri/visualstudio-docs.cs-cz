@@ -1,5 +1,6 @@
 ---
 title: Nainstalovat Visual Studio Build Tools do kontejneru
+titleSuffix: ''
 description: Zjistěte, jak nainstalovat Visual Studio Build Tools do kontejneru Windows pro podporu kontinuální integrace a pracovní postupy průběžné doručování (CI/CD).
 ms.custom: ''
 ms.date: 04/18/2018
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: f8f739be182a137728240eb0884bd6d536879f02
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411011"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068148"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 

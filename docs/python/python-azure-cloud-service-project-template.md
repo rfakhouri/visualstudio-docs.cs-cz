@@ -1,6 +1,6 @@
 ---
 title: Šablona projektu Azure cloud service pro Python
-description: Přehled šablon sady Visual Studio pro Azure cloud services, které jsou napsané v Pythonu, včetně nasazení role, závislosti a řešení potíží.
+description: Visual Studio poskytuje šablony pro Azure cloud services, které jsou napsané v Pythonu, včetně nasazení role, závislosti a řešení potíží.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,22 +8,23 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 1bcb8123ace6f4671f2127ba80377ef88891bdc8
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 5eafbf0b24e464e81447c0677d53096032343580
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607728"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068523"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro Python
 
 Visual Studio poskytuje šablony, které vám pomůžou začít s vytváření cloudových služeb Azure pomocí Pythonu.
 
-A [Cloudová služba](https://docs.microsoft.com/azure/cloud-services/) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každý provádí koncepčně samostatné úlohy, ale můžete samostatně replikovat napříč podle potřeby škálování virtuálních počítačů. Webové role poskytují hostování pro front-endové webové aplikace. Pokud Python obavy, webová architektura, která podporuje s rozhraním WSGI můžete použít pro zapsání takové aplikace (podporuje [Šablona webového projektu](python-web-application-project-templates.md)). Role pracovního procesu jsou určené pro dlouho běžící procesy, které nemají možnost zasahovat přímo uživatelům. Obvykle využívají pomocí balíčků v rámci balíčku "azure", která se instaluje s [ `pip install azure` ](http://pypi.org/project/azure).
+A [Cloudová služba](https://docs.microsoft.com/azure/cloud-services/) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každý provádí koncepčně samostatné úlohy, ale můžete samostatně replikovat napříč podle potřeby škálování virtuálních počítačů. Webové role poskytují hostování pro front-endové webové aplikace. Pokud Python obavy, webová architektura, která podporuje s rozhraním WSGI můžete použít pro zapsání takové aplikace (podporuje [Šablona webového projektu](python-web-application-project-templates.md)). Role pracovního procesu jsou určené pro dlouho běžící procesy, které nemají možnost zasahovat přímo uživatelům. Obvykle využívají pomocí balíčků v rámci balíčku "azure", která se instaluje s [ `pip install azure` ](https://pypi.org/project/azure).
 
 Tento článek obsahuje podrobnosti o šabloně projektu a další podporu v sadě Visual Studio 2017 (starší verze se podobné, ale několik rozdílů). Další informace o práci s Azure v Pythonu, přejděte [středisko pro vývojáře Python](https://docs.microsoft.com/python/azure/?view=azure-python).
 

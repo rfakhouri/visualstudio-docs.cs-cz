@@ -1,5 +1,6 @@
 ---
 title: ID pracovního vytížení a komponenta Visual Studio Enterprise 2017
+titleSuffix: ''
 description: Použití pracovního vytížení a komponenta ID pro instalaci sady Visual Studio pomocí příkazového řádku nebo v závislosti na VSIX manifest
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 665ee631f7b57fc409c45b0879e2457c52f55a04
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607975"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063163"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Složka komponenty Visual Studio Enterprise 2017
 

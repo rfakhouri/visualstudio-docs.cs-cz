@@ -1,6 +1,6 @@
 ---
-title: Co&#39;nového v sadě Visual Studio 2015 | Dokumentace Microsoftu
-ms.custom: ''
+title: Co je nového ve Visual Studiu 2015 | Dokumentace Microsoftu
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000255"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062435"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -269,6 +269,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
  Poslat zamračeného smajlíka, nejprve, jak je popsáno výše. V dialogovém okně, která se otevře můžete označení vaší zpětné vazby pomocí jedné z výchozí značky nebo vytvořte vlastní značku. Značky pomáhají směrovat váš názor na odpovídající týmu. V **zvolit některou kategorii** rozevírací seznam, vyberte možnost, která představuje problém při vytváření sestav a postupujte podle kroků k reprodukci problému. Podrobné pokyny o tom, jak pomocí sady Visual Studio feedback sestavy jsou k dispozici. Další informace najdete v tématu [sady Visual Studio odeslat pokyny se usmívejte](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Viz také
+
 * [Vytváření aplikací pro různé platformy pomocí Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Vytvářejte multiplatformní mobilní aplikace s jazykem Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)

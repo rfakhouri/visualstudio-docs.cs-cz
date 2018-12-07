@@ -1,16 +1,17 @@
 ---
 layout: HubPage
-title: Dokumentace ke službě Container vývojové nástroje
+title: Dokumentace k dockeru kontejneru vývojové nástroje
 description: Zjistěte, jak k vytváření a správě kontejnerových aplikací a služeb. Získejte dokumentaci, ukázkový kód, kurzy a další.
 ms.topic: hub-page
+ms.custom: seodec18
 featureFlags:
 - clicktale
-ms.openlocfilehash: fceea4bbdd3f0964c95cd5d94a3b6a1fbe78c1bc
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: a8d4f46c733ba9518a1c53d83e676ff955b59b71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000188"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067230"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -134,7 +135,7 @@ ms.locfileid: "51000188"
                                                 <div class="cardText">
                                                     <h3>Jiné weby</h3>
                                                     <ul class="noBullet">
-                                                        <li><a class="barLink" href="http://wwww.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Docker pro Windows</a></li>
+                                                        <li><a class="barLink" href="http://www.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">Docker pro Windows</a></li>
                                                         <li><a class="barLink" href="https://kubernetes.io"><img src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" alt="">Kubernetes</a></li>
                                                         <li><a class="barLink" href="https://helm.sh"><img src="media/helm-logo.png" alt="">Příkaz Helm</a></li>
                                                     </ul>

@@ -1,5 +1,5 @@
 ---
-title: Porovnání výsledků zátěžových testů v sadě Visual Studio
+title: Porovnání výsledků zátěžového testu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895025"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066441"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Sestava zátěžové testy s výsledky pro porovnávání testů a analýzu trendů
 

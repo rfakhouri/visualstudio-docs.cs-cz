@@ -1,5 +1,5 @@
 ---
-title: Přizpůsobení editoru Visual Studio
+title: Přizpůsobení editoru
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a397932e23386356757ca96dc86dee7222947431
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e7643da4819d88282b5588bc97020f769301c483
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446141"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065083"
 ---
 # <a name="customize-the-editor"></a>Přizpůsobení editoru
 
-Můžete přizpůsobit, formátování, karty, písma a barvy, IntelliSense a řadu dalších funkcí textový editor, pro všechny jazyky, nebo pro konkrétní programovací jazyk. Témata v této části ukazují, jak provést některé toto vlastní nastavení.
+Můžete přizpůsobit formátování karty, písma a barvy, technologie IntelliSense a mnoha dalších funkcích služby textový editor, všechny jazyky, nebo pro konkrétní programovací jazyk. Témata v této části ukazují, jak provádět některé tyto úpravy.
 
 ## <a name="options-dialog-box"></a>Možnosti – dialogové okno
 
-Další informace o možnosti textového editoru, najdete v části [dialogové okno možností textového editoru](../ide/reference/text-editor-options-dialog-box.md).
+Další informace o možnosti textového editoru, najdete v části [dialogové okno Možnosti textového editoru](../ide/reference/text-editor-options-dialog-box.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)
+- [Rychlý start: Přizpůsobení integrovaného vývojového prostředí Visual Studio a editor](../ide/quickstart-personalize-the-ide.md)
 - [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Nastavení záložek v kódu](../ide/setting-bookmarks-in-code.md)
 - [Obecné, prostředí, dialogové okno Možnosti](../ide/reference/general-environment-options-dialog-box.md)

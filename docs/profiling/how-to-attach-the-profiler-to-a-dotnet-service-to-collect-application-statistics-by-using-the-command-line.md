@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: připojení Profiler ke službě .NET ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: Připojení profileru ke službě .NET ke shromažďování statistik aplikace
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5202e84c4ca5d1d42ec6987f59cd60dd98a0582b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7347824b56a6bcf4a12f8f8bd8bf4d5389280d1b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934954"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067502"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: připojení profileru ke službě .NET ke shromažďování statistik aplikace pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] služby nástroje příkazového řádku nástroje pro profilaci k připojení profileru k rozhraní .NET Framework a shromáždit statistiky výkonu pomocí metody vzorkování.  

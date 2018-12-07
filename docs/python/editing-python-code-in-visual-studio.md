@@ -1,6 +1,6 @@
 ---
-title: Úpravy kódu v Pythonu
-description: Úpravy Python v sadě Visual Studio nabízí IntelliSense, fragmenty kódu a navigačním funkcím, formátování, linting, a refaktoring.
+title: Úprava kódu v Pythonu
+description: Visual Studio pro Python, poskytuje bohaté možnosti technologie IntelliSense, fragmenty kódu a navigačním funkcím, formátování, linting, a refaktoringu.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001266"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062813"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
@@ -44,7 +45,7 @@ Kvůli zvýšení výkonu, technologie IntelliSense v **Visual Studio 2017 verze
 
 Dokončení se zobrazí jako příkazy, identifikátory a jiná slova, které může správně zadány na aktuální pozici v editoru. Co se zobrazí v seznamu je na základě kontextu a je filtrováno, aby byly vynechány možnosti nesprávné nebo rušivě. Dokončení se často spouštějí zadáním jiné příkazy (například `import`) a operátory (včetně tečky), ale můžete ho kdykoli zobrazit na zadáním **Ctrl**+**J**  >  **Místo**.
 
-![Dokončování členů](media/code-editing-completions-simple.png)
+![Dokončování členů v editoru sady Visual Studio](media/code-editing-completions-simple.png)
 
 Při otevření seznamu dokončení můžete vyhledat dokončení můžete určit pomocí kláves se šipkami, myši, nebo když budete pokračovat, zadejte. Při psaní nebo několik písmen. v seznamu další filtr, který zobrazuje pravděpodobné dokončení. Klávesové zkratky můžete také použít jako:
 
@@ -54,27 +55,27 @@ Při otevření seznamu dokončení můžete vyhledat dokončení můžete urči
 
 Příklady:
 
-![Dokončování členů s filtrováním](media/code-editing-completion-filtering.png)
+![Dokončování členů s filtrováním v editoru sady Visual Studio](media/code-editing-completion-filtering.png)
 
 Dokončování členů se automaticky zobrazit, když zadáte tečku po proměnné nebo hodnotu společně s metodami a atributy možných typů. Pokud proměnná může být více než jeden typ, seznam obsahuje všechny možnosti ze všech typů, další informace, které označují, typy, které podporují každou doplňování. Tam, kde všechny možné typy podporuje dokončování, zobrazí se bez poznámek.
 
-![Dokončování členů o více typech](media/code-editing-completion-types.png)
+![Dokončování členů o více typech v editoru sady Visual Studio](media/code-editing-completion-types.png)
 
 Ve výchozím nastavení se nezobrazují "dunder" členy (počáteční a koncové s dvojitým podtržítkem členů). Obecně platí tito členové by neměl být k nim přistupuje přímo. Pokud budete potřebovat, ale zadáte počáteční dvojitým podtržítkem přidá tyto dokončování do seznamu:
 
-![Dokončování členů privátní](media/code-editing-completion-dunder.png)
+![Dokončování soukromých členů v editoru sady Visual Studio](media/code-editing-completion-dunder.png)
 
 `import` a `from ... import` příkazy zobrazení seznamu modulů, které mohou být naimportovány. S `from ... import`, seznam obsahuje členy, které lze importovat z zadaný modul.
 
-![Dokončení importu](media/code-editing-completion-import.png)
+![Importovat dokončení v editoru sady Visual Studio](media/code-editing-completion-import.png)
 
 `raise` a `except` příkazů zobrazit seznam tříd, které mohou být typy chyb. V seznamu nemusí obsahovat všechny uživatelem definované výjimky, ale vám pomůže rychle najít vhodnou předdefinované výjimky:
 
-![Dokončení výjimky](media/code-editing-completion-exception.png)
+![Dokončení výjimky v editoru sady Visual Studio](media/code-editing-completion-exception.png)
 
 Zadáním spustí dekoratér a ukazuje potenciální dekorátory. Mnoho z těchto položek nejsou použitelné jako dekoratéry; v dokumentaci knihovny k určení, které chcete použít.
 
-![Dokončení dekoratéru](media/code-editing-completion-decorator.png)
+![Dokončení dekoratéru v editoru sady Visual Studio](media/code-editing-completion-decorator.png)
 
 > [!Tip]
 > Můžete provádět konfiguraci chování dokončování prostřednictvím **nástroje** > **možnosti** > **textový Editor**  >   **Python** > **Advanced**. Mezi tyto **filtrovat seznam podle hledaného řetězce** platí filtrování průběžně zobrazovanými návrhy dokončení (výchozí je zaškrtnuté políčko), a **dokončování členů zobrazí IK členů** se zobrazí pouze dokončování, které jsou podporovány všechny možné typy (výchozí nastavení je zaškrtnuté políčko). Zobrazit [možnosti - výsledky dokončení](python-support-options-and-settings-in-visual-studio.md#completion-results).
@@ -123,7 +124,7 @@ Použití **spustit Mypy** příkazu pro tento kód generuje následující chyb
 
 Při psaní kódu, který volá funkci, signaturám se zobrazí, když zadáte otevírání `(` a zobrazí dostupné informace o dokumentaci a parametrů. Můžete provést také zobrazí s **Ctrl**+**Shift**+**místo** uvnitř funkce volání. Informace zobrazené závisí na dokumentaci řetězce ve zdrojovém kódu funkce, ale zahrnuje všechny výchozí hodnoty.
 
-![Nápověda k podpisu](media/code-editing-signature-help.png)
+![Nápovědu k signatuře v editoru sady Visual Studio](media/code-editing-signature-help.png)
 
 > [!Tip]
 > Chcete-li zakázat signaturám, přejděte na **nástroje** > **možnosti** > **textový Editor** > **Python**  >  **Obecné** a zrušte zaškrtnutí **dokončování** > **informace o parametrech**.
@@ -132,17 +133,17 @@ Při psaní kódu, který volá funkci, signaturám se zobrazí, když zadáte o
 
 Ukazatel myši přesunout ukazatel myši identifikátor zobrazí popisek rychlé informace. V závislosti na identifikátor může zobrazit rychlé informace možných hodnot nebo typy, všechny dostupné dokumentaci, návratové typy a umístění definice:
 
-![Rychlé informace](media/code-editing-quick-info.png)
+![Rychlé informace v editoru sady Visual Studio](media/code-editing-quick-info.png)
 
 ### <a name="code-coloring"></a>Barevné zvýraznění kódu
 
 Barevné zvýraznění kódu na základě informací z analýzy kódu na barvu proměnné, příkazy a jiných částí kódu. Například proměnné, které odkazují na moduly nebo třídy se může zobrazit jinou barvou, než funkce nebo jiné hodnoty a názvy parametrů se zobrazí v jinou barvou, než místní nebo globální proměnné. (Ve výchozím nastavení, nejsou zobrazeny funkce tučně):
 
-![Barevné zvýraznění kódu](media/code-editing-code-coloring.png)
+![Kódu a barevné zvýrazňování syntaxe ve Visual Studiu](media/code-editing-code-coloring.png)
 
 Chcete-li přizpůsobit barvy, přejděte na **nástroje** > **možnosti** > **prostředí** > **písma a barvy** a upravit **Python** položky **zobrazení položek** seznamu:
 
-![Možnosti písma a barvy](media/code-editing-customize-colors.png)
+![Možnosti písma a barev v sadě Visual Studio](media/code-editing-customize-colors.png)
 
 > [!Tip]
 > Pokud chcete zakázat barevného zvýraznění kódu, přejděte na **nástroje** > **možnosti** > **textový Editor** > **Python**  >  **Upřesnit** a zrušte zaškrtnutí **různé možnosti** > **barva názvy na základě typu**. Zobrazit [možnosti - různé možnosti](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
@@ -181,7 +182,7 @@ Výběrem tento kód a klepnutím **obklopit fragmentem** příkaz zobrazí sezn
 
 Můžete zobrazit fragmenty kódu k dispozici v **Správce fragmentů kódů**otevřené pomocí **nástroje** > **Správce fragmentů kódů** příkaz nabídky a výběr **Python** jako jazyk:
 
-![Správce fragmentů kódů](media/code-editing-code-snippets-manager.png)
+![Správce fragmentů kódů v sadě Visual Studio](media/code-editing-code-snippets-manager.png)
 
 Vytvoření vlastní fragmenty kódu najdete v tématu [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
 
@@ -195,7 +196,7 @@ Podpora Pythonu v sadě Visual Studio obsahuje několik způsob, jak rychle navi
 
 Na navigačním panelu se zobrazí v horní části okna editoru a zahrnuje dvě úrovně seznam definic. Vlevo rozevírací seznam obsahuje třídy nejvyšší úrovně a definice funkcí v aktuálním souboru. správné rozevíracího seznamu zobrazí seznam definic v rámci oboru, zobrazí na levé straně. Při pohybu v editoru seznamu aktualizuje a zobrazí aktuální kontext a můžete také vybrat položku z těchto seznamů můžete přejít přímo k.
 
-![Navigační panel](media/code-editing-navigation-bar.png)
+! [Navigační panel] v sadě Visual Studio editor(media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Chcete-li skrýt navigační panel, přejděte na **nástroje** > **možnosti** > **textový Editor** > **Python**  >  **Obecné** a zrušte zaškrtnutí **nastavení** > **navigační panel**.
@@ -204,7 +205,7 @@ Na navigačním panelu se zobrazí v horní části okna editoru a zahrnuje dvě
 
 **Přejít k definici** rychle přejde z použití identifikátoru (jako je název funkce, třídy nebo proměnná), ke zdrojovému kódu níž byl definován. Vyvolání identifikátor pravým tlačítkem a výběrem **přejít k definici** nebo tím, že blikající kurzor umístíte identifikátor a stisknutím klávesy **F12**. Funguje na kód a externí knihovny za předpokladu, že zdrojový kód je k dispozici. Pokud není k dispozici, zdrojový kód knihovny **přejít k definici** přejde do příslušné `import` příkaz pro odkaz na modul, nebo zobrazí chybu.
 
-![Přejít k definici](media/code-editing-go-to-definition.png)
+![Příkaz Přejít k definici v sadě Visual Studio](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Přejděte na
 
@@ -212,7 +213,7 @@ Na navigačním panelu se zobrazí v horní části okna editoru a zahrnuje dvě
 
 Poklepáním na libovolný název, nebo jeho výběru pomocí šipkových kláves a **Enter**, přejde k definici identifikátoru.
 
-![Přejděte na](media/code-editing-navigate-to.png)
+![Přejděte na příkaz v sadě Visual Studio](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Najít všechny odkazy
 

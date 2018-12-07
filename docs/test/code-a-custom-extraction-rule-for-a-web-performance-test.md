@@ -1,5 +1,5 @@
 ---
-title: Kódování vlastního pravidla extrakce pro test výkonnosti webu v sadě Visual Studio
+title: Vytvoření vlastního pravidla extrakce pro test výkonnosti webu
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9452df28719dc86e9b43b7f8770787b846c04669
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895363"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066675"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Kód vlastního pravidla extrakce pro test výkonnosti webu
 

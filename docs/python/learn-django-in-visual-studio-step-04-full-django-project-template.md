@@ -1,5 +1,6 @@
 ---
-title: Kurz – další Django v sadě Visual Studio, krok 4
+title: Přečtěte si kurz Django v sadě Visual Studio kroku 4, Šablona webového projektu
+titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně funkcím, které poskytuje šablony webového projektu Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001201"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065458"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Použití úplné šablony webového projektu Django
 

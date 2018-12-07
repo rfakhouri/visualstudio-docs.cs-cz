@@ -1,5 +1,5 @@
 ---
-title: Správa testovacích kontrolérů a testovacích agentů v sadě Visual Studio
+title: Správa kontrolerů testů a testovacích agentů
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895285"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059493"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 

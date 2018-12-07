@@ -1,6 +1,6 @@
 ---
-title: Jak mohu zachovat fokus při procházení programem? | Dokumenty Microsoft
-ms.custom: ''
+title: Zachovat fokus při procházení Moje aplikace | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 509e169c7ede0d96882fa2c97eaf7b2c6eb78afb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d140617aed2e6d5310587ec9388b107404398a95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280906"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064508"
 ---
-# <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Jak mohu zachovat fokus při procházení programem?
+# <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>Jak můžete zachovat fokus při procházení Moje aplikace?
 ## <a name="description"></a>Popis  
  Program má problém Aktivace okna. Krokování pomocí programu v ladicím programu dochází ke kolizím s Moje schopnost reprodukujte problém, protože program spouštím ztrácí fokus. Existuje způsob, abyste tomu předešli?  
   

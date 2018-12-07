@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IDE | Dokumentace Microsoftu
-ms.custom: ''
+title: Visual Studio 2015 | Dokumentace Microsoftu
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852710"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062480"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio – sada IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio slouží k vytvoření mnoha typech aplikací, od jednoduchého ú
 
 - Hry a aplikace náročné na grafiku pro širokou škálu zařízení Windows, včetně Xbox, pomocí rozhraní DirectX.
 
-Visual Studio ve výchozím nastavení poskytuje podporu pro C#, C a C++, JavaScript, F # a Visual Basic. Visual Studio funguje a také integrace s aplikací třetích stran, jako je Unity prostřednictvím [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozšíření a Apache Cordova prostřednictvím [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Můžete rozšířit Visual Studio sami tak, že vytvoříte vlastní nástroje, které se prováděly specializované úkoly.
+Visual Studio ve výchozím nastavení poskytuje podporu pro C#, C a C++, JavaScript, F#a Visual Basic. Visual Studio funguje a také integrace s aplikací třetích stran, jako je Unity prostřednictvím [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) rozšíření a Apache Cordova prostřednictvím [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42). Můžete rozšířit Visual Studio sami tak, že vytvoříte vlastní nástroje, které se prováděly specializované úkoly.
 
 Pokud jste Visual Studio před nepoužívali, seznamte se se základy s naší [získat začít vyvíjet pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md) kurzy a návody.
 
@@ -108,7 +108,7 @@ Pokud chcete zjistit, o nových funkcích v sadě Visual Studio 2015, najdete v 
  Další informace najdete v tématu [návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 
 ## <a name="writing-navigating-and-understanding-code"></a>Vytváření, procházení a porozumění kódu
- Pokud jste vývojář, je okno editoru, bude pravděpodobně strávíte tady většinu svého času. Visual Studio obsahuje editory pro C#, C++, Visual Basic, JavaScript, XML, HTML, CSS a F # a třetím stranám Nabídka modulu plug-in editory (a kompilátory) pro mnoho dalších jazyků.
+ Pokud jste vývojář, je okno editoru, bude pravděpodobně strávíte tady většinu svého času. Visual Studio obsahuje editory pro C#, C++, Visual Basic, JavaScript, XML, HTML, CSS, a F#, a třetích stran nabízejí modulu plug-in editory (a kompilátory) pro mnoho dalších jazyků.
 
  Kliknutím můžete upravit jednotlivé soubory v textovém editoru **souboru &#124; otevřít &#124; souboru.** Chcete-li upravit soubory v otevřeném projektu, klikněte na název souboru v Průzkumníku řešení. Obarvené kódu a barevné schéma můžete přizpůsobit tak, že zadáte "Barvy" Snadné spuštění. Máte spoustu textového editoru s kartami windows otevřete najednou. Každé okno můžete rozdělit nezávisle na sobě. Do textového editoru můžete také spustit v celoobrazovkovém režimu.
 

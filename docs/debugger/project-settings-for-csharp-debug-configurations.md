@@ -1,6 +1,6 @@
 ---
-title: Nastavení pro konfiguraci ladění jazyka C# projektu | Dokumentace Microsoftu
-ms.custom: ''
+title: Nastavení pro projektu C# ladění config | Dokumentace Microsoftu
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388968"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059269"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Nastavení projektu pro konfiguraci ladění jazyka C#
 

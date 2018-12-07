@@ -1,5 +1,6 @@
 ---
-title: Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
+title: Vytvoření uživatelského rozhraní – Blend for Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890139"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059857"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 
@@ -122,4 +123,4 @@ Pomocí tohoto panelu zobrazení a úprav vlastností objektu. Můžete je také
 - [Vložení ovládacích prvků a změna jejich chování](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)
 - [Animace objektů](../designers/animate-objects-in-xaml-designer.md)
 - [Kreslení tvarů a cest](../designers/draw-shapes-and-paths.md)
-- [Návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+- [Návrh XAML v sadě Visual Studio a Blend pro Visual Studio](../designers/designing-xaml-in-visual-studio.md)

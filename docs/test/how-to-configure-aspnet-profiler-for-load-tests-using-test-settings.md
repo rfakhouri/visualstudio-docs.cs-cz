@@ -1,5 +1,5 @@
 ---
-title: Konfigurace technologie ASP.NET Profiler pro zátěžové testy v sadě Visual Studio
+title: Konfigurace technologie ASP.NET Profiler pro zátěžové testy
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 197a6c4a743f5f30e060950413b7e2214fb91b36
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895194"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068419"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace služby ASP.NET profiler pro zátěžové testy pomocí nastavení testu v sadě Visual Studio
 

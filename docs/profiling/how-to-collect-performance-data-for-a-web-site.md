@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835981"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064294"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat o výkonu pro webový server
 
@@ -79,11 +79,11 @@ Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!
 
 5. V **jaká adresa URL nebo cesta se spustí webovou aplikaci** na třetí stránce průvodce zadejte adresu URL na domovskou stránku aplikace a potom klikněte na tlačítko **Další**.
 
-   - Pro server (IIS) na základě webové stránky, zadejte adresu URL jako **<http://localhost/MySite/default.aspx>**. To způsobí, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace v místním počítači v kořenovém adresáři aplikace MySite určených k profilaci a stránku default.aspx dané lokality ke spuštění v aplikaci Internet Explorer spustit relaci.
+   - Pro server (IIS) na základě webové stránky, zadejte adresu URL jako **< `http://localhost/MySite/default.aspx` >**. To způsobí, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace v místním počítači v kořenovém adresáři aplikace MySite určených k profilaci a stránku default.aspx dané lokality ke spuštění v aplikaci Internet Explorer spustit relaci.
 
-   - Pro soubor založené na webu, zadejte umístění, například soubor / / / / /**c:\WebSites\MySite\default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace umístěné v c:\webSites\MySite určených k profilaci a na stránce http://localhost:nnnn/MySite/default.aspx ke spuštění v aplikaci Internet Explorer spustit relaci.
+   - Pro soubor založené na webu, zadejte umístění, například soubor / / / / /**c:\WebSites\MySite\default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace umístěné v c:\webSites\MySite určených k profilaci a na stránce `http://localhost:nnnn/MySite/default.aspx` ke spuštění v aplikaci Internet Explorer spustit relaci.
 
-   - Pro externí servery, které chcete sbírat dat jazyka JavaScript, zadejte adresu URL, třeba http://www.contoso.com.
+   - Pro externí servery, které chcete sbírat dat jazyka JavaScript, zadejte adresu URL, třeba `http://www.contoso.com`.
 
      Další informace o zobrazení stránky vlastností [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] cílový binární soubor.
 

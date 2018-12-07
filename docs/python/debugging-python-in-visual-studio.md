@@ -1,6 +1,6 @@
 ---
 title: Ladění kódu v Pythonu
-description: Názorný postup funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
+description: Visual Studio poskytují bohatá podpora ladění pro kód Python, včetně nastavení zarážek, krokování, kontrolu hodnoty, prohlížení výjimek a ladění v interaktivním okně.
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101157"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068432"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -87,27 +88,27 @@ Při zastavení v ladicím programu, můžete zkontrolovat a změnit hodnoty pro
 
 Chcete-li zobrazit hodnotu pomocí **DataTips**, stačí najet myší přes všechny proměnné v editoru. Můžete kliknout na hodnotu a změňte ji:
 
-![Datové tipy v ladicím programu](media/debugging-quick-tips.png)
+![DataTips zobrazující v ladicím programu sady Visual Studio](media/debugging-quick-tips.png)
 
 **Automatické hodnoty** okno (**ladění** > **Windows** > **automatické hodnoty**) obsahuje proměnné a výrazy, které blíží aktuální příkaz. Dvojitým kliknutím na sloupec hodnoty nebo vyberte a stiskněte **F2** upravte hodnotu:
 
-![Okno Automatické hodnoty v ladicím programu](media/debugging-autos-window.png)
+![Okno Automatické hodnoty v ladicím programu sady Visual Studio](media/debugging-autos-window.png)
 
 **Lokální** okno (**ladění** > **Windows** > **lokální**) zobrazí všechny proměnné, které jsou v aktuální obor, který lze upravovat znovu:
 
-![Okno místních hodnot v ladicím programu](media/debugging-locals-window.png)
+![Okno místních hodnot v ladicím programu sady Visual Studio](media/debugging-locals-window.png)
 
 Pro další použití v **automatické hodnoty** a **lokální**, naleznete v tématu [kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty](../debugger/autos-and-locals-windows.md).
 
 **Watch** systému windows (**ladění** > **Windows** > **Watch**  >   **Podívejte se na 1 až 4**) vám umožní zadat libovolné výrazy Pythonu a zobrazit výsledky. Výrazy jsou již znovu pro každý krok:
 
-![Okno kukátka v ladicím programu](media/debugging-watch-window.png)
+![Podívejte se na okno v ladicím programu sady Visual Studio](media/debugging-watch-window.png)
 
 Pro další použití v **Watch**, naleznete v tématu [nastavení sledování u proměnných v oknech kukátka a Rychlé kukátko](../debugger/watch-and-quickwatch-windows.md).
 
 Při kontrole řetězcovou hodnotu (`str`, `unicode`, `bytes`, a `bytearray` jsou všechny považovány za řetězce k tomuto účelu), s ikonou lupy se zobrazí na pravé straně hodnoty. Kliknutím na ikonu se zobrazí hodnota řetězec bez uvozovek v dialogovém okně automaticky otevírané okno s zabalení a posouvání, což je užitečné pro dlouhé řetězce. Kromě toho na tlačítko se šipkou rozevíracího seznamu na ikonu vám umožní vybrat prostý text, HTML, XML a JSON vizualizace:
 
-![Řetězec vizualizérech](media/debugging-string-visualizers.png)
+![Řetězec vizualizéry v ladicím programu sady Visual Studio](media/debugging-string-visualizers.png)
 
 HTML, XML a JSON vizualizace zobrazí ve windows samostatné automaticky otevírané okno se zobrazeními zvýrazňování a stromu syntaxe.
 
@@ -115,13 +116,13 @@ HTML, XML a JSON vizualizace zobrazí ve windows samostatné automaticky otevír
 
 Pokud dojde k chybě ve svém programu během ladění, ale pro něj nemáte obslužnou rutinu výjimky, ladicí program přeruší místě výjimku:
 
-![Výjimka automaticky otevíraného okna](media/debugging-exception-popup.png)
+![Automaticky otevírané okno výjimky v ladicím programu sady Visual Studio](media/debugging-exception-popup.png)
 
 V tomto okamžiku můžete kontrolovat stav programu, včetně zásobníku volání. Ale pokud se pokusíte krokovat kód, výjimka dál vyvolávána, dokud se buď zpracovává nebo ukončení programu.
 
 **Ladění** > **Windows** > **nastavení výjimek** příkaz nabídky zobrazí okno, ve kterém můžete rozbalit **Pythonu Výjimky**:
 
-![Okno výjimky](media/debugging-exception-settings.png)
+![Okno výjimky v ladicím programu sady Visual Studio](media/debugging-exception-settings.png)
 
 Zaškrtávací políčko u každé výjimce ovládací prvky, zda ladicí program *vždy* přestane fungovat, když je vyvolána. Toto políčko zaškrtněte, pokud chcete přerušit častěji pro určité výjimky.
 
@@ -133,7 +134,7 @@ Ke konfiguraci výjimky, které nejsou uvedené v tomto seznamu, klikněte na tl
 
 Ve výchozím nastavení spustí ladicí program programu pomocí standardní Spouštěč Pythonu, bez argumentů příkazového řádku a žádné jiné speciální cesty nebo podmínky. Možnosti spuštění jsou změnit prostřednictvím vlastnosti ladění projektu přistupovat kliknutím pravým tlačítkem myši na projekt v **Průzkumníka řešení**, kde vyberou **vlastnosti**a výběr **ladění**  kartu.
 
-![Vlastnosti ladění projektu](media/debugging-project-properties.png)
+![Vlastnosti ladění projektu v ladicím programu sady Visual Studio](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Možnosti režimu spuštění
 

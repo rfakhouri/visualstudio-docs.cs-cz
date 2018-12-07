@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Import výsledků zátěžového testu do úložiště v sadě Visual Studio'
+title: 'Postupy: Import výsledků zátěžového testu do úložiště'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 80bb7f0998dd8ee1bc46105892e0e6f4e23b74c1
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4f4b62f13a78ae716fd7bfe4e1a158450590a864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895064"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065983"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Postupy: Import výsledků zátěžového testu do úložiště
 
