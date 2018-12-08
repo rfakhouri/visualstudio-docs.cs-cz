@@ -1,5 +1,5 @@
 ---
-title: Jak migrovat a publikovat webovou aplikaci do cloudové služby Azure z Visual Studia | Dokumentace Microsoftu
+title: Jak migrovat a publikovat webovou aplikaci do cloudové služby Azure
 description: Další informace o migraci a publikování vašich webových aplikací na cloudové služby Azure pomocí sady Visual Studio
 author: ghogen
 manager: douge
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c122b54a4e22285678d13213cc73d6492baba629
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: dd81e33d34cd3e61c01e62f941edd074304499be
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003363"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53072789"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: migrace a publikovat webovou aplikaci do cloudové služby Azure ze sady Visual Studio
 
@@ -59,7 +59,7 @@ Pokud máte připojovací řetězec pro vaši webovou aplikaci, která použív�
 1. Vytvořte nezbytné cloudové účty služeb a úložiště ve vašem předplatném Azure podle pokynů na [Příprava k publikování nebo nasazení aplikace Azure ze sady Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. V sadě Visual Studio, klikněte pravým tlačítkem na projekt aplikace a vyberte **publikování ve službě Microsoft Azure...**  (která se liší od příkazu "Publikovat...".).
 1. V **publikování aplikaci Azure** , který se zobrazí, přihlaste se pomocí účtu s předplatným Azure a vyberte **Další >**.
-1. V **Nastavení > Obecná nastavení** kartu, vyberte cílovou cloudovou službou od **Cloudovou službu** rozevíracího seznamu, spolu s vybrané prostředí a konfiguracemi. 
+1. V **Nastavení > Obecná nastavení** kartu, vyberte cílovou cloudovou službou od **Cloudovou službu** rozevíracího seznamu, spolu s vybrané prostředí a konfiguracemi.
 1. V **Nastavení > Upřesnit nastavení**, vyberte účet úložiště, který chcete použít, vyberte možnost **Další >**.
 1. V **diagnostiky**, vyberte, jestli chcete posílat informace do Application Insights.
 1. Vyberte **Další >** Chcete-li zobrazit souhrn, zvolte **publikovat** ke spuštění nasazení.
