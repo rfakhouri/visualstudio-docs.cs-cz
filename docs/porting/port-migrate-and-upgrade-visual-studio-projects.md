@@ -1,5 +1,5 @@
 ---
-title: Přenos, migrace a Upgrade projektů
+title: Přenos, migrace a upgrade projektů
 description: Referenční informace pro podporu projektů vytvořených v dřívějších verzích sady Visual Studio a jak Visual Studio rozhodne, když je potřeba migrovat projekt v sadě Visual Studio 2017.
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: bc472b8b4d1792df4d93414cfb62c4e4aa5f96cb
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027403"
+ms.locfileid: "53067058"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2017
 
@@ -94,6 +94,8 @@ Tyto změny jednosměrné může zahrnovat změnu `ToolsVersion` vlastnost v sou
 Pokud chcete zachovat maximální kompatibilitu s projekty vytvořené ve starších verzích, Visual Studio 2017 obsahuje nezbytné sady nástrojů MSBuild pro podporu `ToolsVersion` 15, 14, 12 a 4. Projekty, které používají některá z těchto `ToolsVersion` hodnot by měl mít za následek úspěšné sestavení. (Na základě práv subjektů, znovu na tom, jestli se Visual Studio 2017 podporuje typ projektu vůbec, jak je popsáno v [cílení platformy nebo Kompatibilita](/visualstudio/productinfo/vs2017-compatibility-vs).)
 
 V tomto kontextu dotaz přirozeně, zda by měl akci k ruční aktualizaci nebo migrovat projekt na novější `ToolsVersion` hodnotu. Tato změna není nutný a pravděpodobně vygeneruje všechny chyby a upozornění, které je třeba opravit a získat projekt znovu sestavit. Kromě toho pokud Visual Studio klesne podporu pro konkrétní `ToolsVersion` v budoucnu, pak otevřete projekt spustí proces migrace projektu konkrétně, protože `ToolsVersion` je třeba hodnotu změnit. V takovém případě subsystém pro konkrétní projekt typu ví, přesně co je potřeba změnit a můžete provádět tyto změny automaticky, jak je popsáno výše v tomto článku.
+
+# <a name="next-steps"></a>Další kroky
 
 Přečtěte si další informace v následujících článcích:
 

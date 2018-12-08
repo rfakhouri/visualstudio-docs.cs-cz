@@ -1,5 +1,6 @@
 ---
-title: Přenos, migrace a Upgrade projektů
+title: Přenos, migrace a upgrade projektů v sadě Visual Studio. 2019 Preview
+titleSuffix: ''
 description: Referenční informace pro podporu projektů vytvořených v dřívějších verzích sady Visual Studio a jak Visual Studio Určuje, kdy migrovat projekt v sadě Visual Studio Preview 2019.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev16
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: cf5535f5587c26ed685eab4718fc2f5466a6c44f
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
-ms.translationtype: HT
+ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027502"
+ms.locfileid: "53058660"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Migrace a upgrade odkaz na projekt pro Visual Studio 2019 Preview
 
@@ -103,6 +104,8 @@ Tyto změny jednosměrné může zahrnovat změnu `ToolsVersion` vlastnost v sou
 Pokud chcete zachovat maximální kompatibilitu s projekty vytvořené ve starších verzích, Visual Studio 2019 Preview obsahuje nezbytné sady nástrojů MSBuild pro podporu `ToolsVersion` 15, 14, 12 a 4. Projekty, které používají některá z těchto `ToolsVersion` hodnot by měl mít za následek úspěšné sestavení. (Na základě práv subjektů, znovu, určuje, zda se ve verzi Preview. 2019 Visual Studio podporuje typ projektu vůbec, jak je popsáno na [cílení platformy nebo Kompatibilita](/visualstudio/releases/2019/compatibility).)
 
 V tomto kontextu dotaz přirozeně, zda by měl akci k ruční aktualizaci nebo migrovat projekt na novější `ToolsVersion` hodnotu. Tato změna není nutný a pravděpodobně vygeneruje všechny chyby a upozornění, které je třeba opravit a získat projekt znovu sestavit. Kromě toho pokud Visual Studio klesne podporu pro konkrétní `ToolsVersion` v budoucnu, pak otevřete projekt spustí proces migrace projektu konkrétně, protože `ToolsVersion` je třeba hodnotu změnit. V takovém případě subsystém pro konkrétní projekt typu ví, přesně co je potřeba změnit a můžete provádět tyto změny automaticky, jak je popsáno výše v tomto článku.
+
+## <a name="next-steps"></a>Další kroky
 
 Přečtěte si další informace v následujících článcích:
 
