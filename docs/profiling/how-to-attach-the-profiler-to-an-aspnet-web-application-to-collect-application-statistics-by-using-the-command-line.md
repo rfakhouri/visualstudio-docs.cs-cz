@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: připojení Profiler k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: Připojení profileru k ASP.NET jsme aplikaci ke shromažďování statistik aplikace
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9f1bddaa4e606602a7ccba291a47c0048f1d9af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32197d50bbc9826261584ba18b5b83f8519b7a38
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855362"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063820"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Postupy: připojení profileru k webové aplikaci ASP.NET ke shromažďování statistik aplikace pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k webové aplikaci ASP.NET a shromáždit statistiky výkonu pomocí metody vzorkování.  

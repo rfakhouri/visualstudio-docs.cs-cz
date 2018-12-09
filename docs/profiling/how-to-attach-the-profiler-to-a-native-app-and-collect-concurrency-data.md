@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: připojení Profiler k nativní samostatné aplikaci a shromažďování dat souběžnosti pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: Připojení profileru k nativní aplikaci a shromažďování dat souběžnosti
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220492"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067042"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Postupy: připojení profileru k nativní samostatné aplikaci a shromažďování dat souběžnosti pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vláknu příkazového řádku nástrojů pro profilaci k připojení profileru k běžící nativní samostatné aplikaci (C/C++) a shromažďovat data kolizí.  

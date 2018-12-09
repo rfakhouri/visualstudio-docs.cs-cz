@@ -1,5 +1,5 @@
 ---
-title: Vytvořit nastavení testu pro distribuovaný zátěžový Test v sadě Visual Studio
+title: Vytvořit nastavení testu pro distribuovaný zátěžový Test
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 69ce0f2504741c0bc48df0245202cdf0eefee20f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895467"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063313"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Postupy: vytvoření nastavení testu pro distribuovaný zátěžový test
 

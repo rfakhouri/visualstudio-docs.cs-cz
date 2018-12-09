@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: připojení Profiler ke službě .NET ke shromažďování dat paměti pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: Připojení profileru ke službě .NET ke shromažďování dat paměti
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 951ae4790b6c1d3a4936a5badf141aec9485489c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd51a323ca369b30dcba32d3f480756d3e95f1f6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831052"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052725"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Postupy: připojení profileru ke službě .NET ke shromažďování dat paměti pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] služby a shromažďování dat paměti. Můžete shromažďovat data o počtu a velikosti přidělení paměti a může také shromažďovat data o životnosti objektů v paměti.  

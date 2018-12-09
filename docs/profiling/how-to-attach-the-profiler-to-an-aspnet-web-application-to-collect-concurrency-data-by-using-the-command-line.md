@@ -1,6 +1,6 @@
 ---
-title: 'Postupy: připojení Profiler k webové aplikaci ASP.NET ke shromažďování dat souběžnosti pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: Připojení profileru k aplikaci ASP.NET ke shromažďování dat cncurrency
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c18b96f794f8317dacc890345ae544765bcb204
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c806150acf8fb37ab7e3fd36a879a6c1273b015a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831702"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063354"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: připojení profileru k webové aplikaci ASP.NET ke shromažďování dat souběžnosti pomocí příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k připojení profileru k aplikaci ASP.NET a shromažďování dat souběžnosti procesů a vláken.  
