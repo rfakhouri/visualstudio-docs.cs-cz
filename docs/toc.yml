@@ -6,9 +6,9 @@ items:
   - name: O sadě Visual Studio 2017
     href: ide/visual-studio-ide.md
   - name: O editoru kódu
-    href: ide/quickstart-editor.md
+    href: get-started/tutorial-editor.md
   - name: O projektech a řešeních
-    href: ide/quickstart-projects-solutions.md
+    href: get-started/tutorial-projects-solutions.md
   - name: Další funkce sady Visual Studio
     href: ide/advanced-feature-overview.md
   expanded: true
@@ -180,6 +180,8 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: Přenos, migrace a upgrade projektů
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+      - name: Přenos, migrace a upgrade projektů v sadě Visual Studio 2019 Preview
+        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: Správa vlastností projektu a řešení
         href: ide/managing-project-and-solution-properties.md
       - name: Správa odkazů v projektu
@@ -243,6 +245,8 @@ items:
       items:
       - name: Přizpůsobení úloh sestavení a ladění
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Připojení k projektu nebo úložišti
+      href: ide/connect-team-project.md
     - name: Použití editoru
       href: ide/writing-code-in-the-code-and-text-editor.md
       items:
@@ -911,8 +915,10 @@ items:
         href: ide/reference/signing-page-project-designer.md
     - name: Stránky vlastností, JavaScript
       href: ide/reference/property-pages-javascript.md
-    - name: Okno vlastností
+    - name: Vlastnosti – okno
       href: ide/reference/properties-window.md
+    - name: Referenční dokumentace k Team Exploreru
+      href: ide/reference/team-explorer-reference.md
     - name: Sada nástrojů
       href: ide/reference/toolbox.md
       items:
@@ -1127,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Kontaktujte nás
     href: ide/talk-to-us.md
-ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895545"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027442"
