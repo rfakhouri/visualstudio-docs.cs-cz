@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050259"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248030"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook
   Můžete určit oblast formuláře zobrazit podle přidružení oblasti formuláře k třídě zpráv každé položky, položky, které aplikace Microsoft Office Outlook. Například pokud se chcete připojit k dolnímu okraji položky pošty oblasti formuláře, můžete přidružit oblasti formuláře s `IPM.Note` třída zprávy.  
@@ -48,7 +48,7 @@ ms.locfileid: "50050259"
  Můžete také zadat názvy vlastní třídy zpráv. Vlastní třídy zpráv identifikovat vlastních formulářů, které definujete v Outlooku.  
   
 > [!NOTE]  
->  Pro nahrazení a nahradit všechno formuláře oblasti můžete zadat nový název třídy vlastní zprávu. Nemusíte použít název třídy zpráv existujícího vlastního formuláře. Název třídy vlastní zprávu musí být jedinečný. Zajistěte, aby byl název jedinečný jedním ze způsobů je použít zásady vytváření názvů podobný následujícímu: \< *StandardMessageClassName*>.\< *Společnosti*>.\< *MessageClassName*> (například: `IPM.Note.Contoso.MyMessageClass`).  
+>  Pro nahrazení a nahradit všechno formuláře oblasti můžete zadat nový název třídy vlastní zprávu. Nemusíte použít název třídy zpráv existujícího vlastního formuláře. Název třídy vlastní zprávu musí být jedinečný. Jeden způsob, jak zajistit, že název je jedinečný, je použít zásady vytváření názvů podobný následujícímu: \<*StandardMessageClassName*>.\< *Společnosti*>.\< *MessageClassName*> (například: `IPM.Note.Contoso.MyMessageClass`).  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Přidružení oblasti formuláře k třídě zpráv aplikace Outlook  
  Přidružení oblasti formuláře k třídu zpráv dvěma způsoby:  
@@ -60,7 +60,7 @@ ms.locfileid: "50050259"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Pomocí Průvodce novou oblast formuláře Outlooku  
  Na poslední stránce **novou oblast formuláře Outlooku** průvodce, můžete vybrat standardní třídy zpráv a zadejte název vlastní třídy zpráv, které chcete přidružit k oblasti formuláře.  
   
- Standardní třídy zpráv nejsou k dispozici, pokud se oblast formuláře je určena k nahrazení celý formulář nebo výchozí stránku formuláře. Můžete zadat názvy tříd standardní zprávu pouze u formulářů, přidejte novou stránku do formuláře nebo které jsou připojeny k dolní části formuláře. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+ Standardní třídy zpráv nejsou k dispozici, pokud se oblast formuláře je určena k nahrazení celý formulář nebo výchozí stránku formuláře. Můžete zadat názvy tříd standardní zprávu pouze u formulářů, přidejte novou stránku do formuláře nebo které jsou připojeny k dolní části formuláře. Další informace najdete v tématu [jak: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
  Chcete-li zahrnout jednu nebo více tříd vlastní zprávu, zadejte jména manažerů v **které vlastní třídy zpráv budou zobrazovat tuto oblast formuláře?** pole.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "50050259"
   
 - Nezahrnují standardní třídy zpráv Outlooku, jako je například "IPM. Poznámka:"nebo"IPM. Obraťte se na". Zahrňte pouze vlastní třídy zpráv, jako je například "IPM. Note.Contoso".  
   
-- Nezadávejte třída základní zprávy samostatně (například: "IPM").  
+- Nezadávejte třída základní zprávy samostatně (například: "PM").  
   
 - Není delší než 256 znaků pro každý název třídy zpráv.  
   
@@ -95,11 +95,11 @@ ms.locfileid: "50050259"
   
 - Pro vlastní třídy zpráv, použijte název třídy úplného zprávy (třeba: "IPM. Note.Contoso").  
   
-- Nezadávejte třída základní zprávy samostatně (například: "IPM").  
+- Nezadávejte třída základní zprávy samostatně (například: "PM").  
   
 - Není delší než 256 znaků pro každý název třídy zpráv.  
   
-- Pokud se oblast formuláře nahradí celý formulář nebo výchozí stránku formuláře nezahrnují názvy standardní třídy zpráv. Můžete zadat názvy tříd standardní zprávu pouze u formulářů, přidejte novou stránku do formuláře nebo které jsou připojeny k dolní části formuláře. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+- Pokud se oblast formuláře nahradí celý formulář nebo výchozí stránku formuláře nezahrnují názvy standardní třídy zpráv. Můžete zadat názvy tříd standardní zprávu pouze u formulářů, přidejte novou stránku do formuláře nebo které jsou připojeny k dolní části formuláře. Další informace najdete v tématu [jak: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
   Visual Studio ověří formát názvů tříd zpráv při sestavování projektu.  
   

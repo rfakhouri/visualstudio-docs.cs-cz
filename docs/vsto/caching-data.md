@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], about caching data
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d106209accb5c67d6b9ab24a15aa7edd79d11be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846886"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248115"
 ---
 # <a name="cache-data"></a>Data v mezipaměti
   Datové objekty v přizpůsobení na úrovni dokumentu můžete mezipaměti tak, aby data přístupná v režimu offline, nebo bez otevření aplikace Microsoft Office Word nebo Microsoft Office Excel. Pro ukládání do mezipaměti objekt objekt musí mít datový typ, který splňuje určité požadavky. Mnoho běžných typů dat v rozhraní .NET Framework splňovat tyto požadavky, včetně <xref:System.String>, <xref:System.Data.DataSet>, a <xref:System.Data.DataTable>.  
@@ -31,9 +31,9 @@ ms.locfileid: "49846886"
   
  Existují dva způsoby přidání objektu do datové mezipaměti:  
   
-- Přidání objektu do datové mezipaměti po sestavení řešení, použije <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut deklarace objektu. Další informace najdete v tématu [jak: mezipaměti dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+- Přidání objektu do datové mezipaměti po sestavení řešení, použije <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut deklarace objektu. Další informace najdete v tématu [jak: Mezipaměť dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
-- Chcete-li programově přidat objektu do datové mezipaměti v době běhu, použijte `StartCaching` metoda hostitele položky, například `ThisDocument` nebo `ThisWorkbook` třídy. Další informace najdete v tématu [jak: zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
+- Chcete-li programově přidat objektu do datové mezipaměti v době běhu, použijte `StartCaching` metoda hostitele položky, například `ThisDocument` nebo `ThisWorkbook` třídy. Další informace najdete v tématu [jak: Zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
   Po přidání objektu do datové mezipaměti můžete používat a upravovat data uložená v mezipaměti bez spuštění aplikace Word nebo Excel. Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).  
   
@@ -79,7 +79,7 @@ ms.locfileid: "49846886"
 ## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Zachovat změny uložené v mezipaměti dat v chráněném heslem dokumenty  
  Pokud jste do mezipaměti datových objektů v dokumentu, který je chráněný heslem, změny dat v mezipaměti nejsou uloženy. Změny můžete uložit do data uložená v mezipaměti tak, že přepíšete dvěma způsoby. Přepsat tyto metody dočasně odebrat ochranu, když je dokument uložen a pak znovu použít ochranu po uložení operace se dokončila.  
   
- Další informace najdete v tématu [postupy: do mezipaměti ukládat data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+ Další informace najdete v tématu [jak: Mezipaměti dat v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Zamezeno ztrátě dat při přidání hodnoty null do datové mezipaměti  
  Při přidání objektů do mezipaměti dat všech objektů uložených v mezipaměti, musí se inicializovat non-**null** hodnota předtím, než je dokument uložit a zavřít. Pokud libovolný objekt v mezipaměti má **null** hodnotu, pokud se dokument uloží a zavřeli, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] se automaticky odeberou všechny uložené v mezipaměti objektů z mezipaměti dat.  
@@ -87,9 +87,9 @@ ms.locfileid: "49846886"
  Pokud chcete přidat objekt se **null** hodnotu do datové mezipaměti s použitím <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut v době návrhu, můžete použít <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídě pro inicializaci dat uložených v mezipaměti objektů před otevřením dokumentu. To je užitečné, pokud chcete inicializovat data uložená v mezipaměti na serveru aplikace Word nebo Excel nainstalována, než dokument je otevřen v koncový uživatel. Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: mezipaměti dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Postupy: zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Postupy: do mezipaměti ukládat data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Návod: Vytvoření hlavního podrobný vztah pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Postupy: Mezipaměť dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Postupy: Zdroj dat v dokumentu systému Office do mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [Postupy: Data v mezipaměti v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Návod: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

@@ -1,5 +1,6 @@
 ---
 title: Sestavení v nástrojích Visual Studio Tools pro systém Office runtime
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050206"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248108"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Sestavení v nástrojích Visual Studio Tools pro systém Office runtime
   Když vytvoříte projekt sady Office, Visual Studio automaticky přidá odkazy na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sestavení, které se používají pro zvolený typ projektu a cílové rozhraní .NET Framework projektu. Existují různých sestaveních v rozšířeních Office pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Další informace o rozšířeních sady Office naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -30,7 +31,7 @@ ms.locfileid: "50050206"
   
 |Název sestavení|Popis|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|Poskytuje následující typy:<br /><br /> -Typy pro vytváření vlastních nastavení pásu karet a inteligentní značky. **Poznámka:** inteligentní značky jsou zastaralé v [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] a [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Typy pro Tvorba podoken akcí v přizpůsobeních na úrovni dokumentu a vlastních podoken úloh v doplňků VSTO.|  
+|Microsoft.Office.Tools.Common.dll|Poskytuje následující typy:<br /><br /> -Typy pro vytváření vlastních nastavení pásu karet a inteligentní značky. **Poznámka:**      Inteligentní značky jsou zastaralé v [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] a [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />-Typy pro Tvorba podoken akcí v přizpůsobeních na úrovni dokumentu a vlastních podoken úloh v doplňků VSTO.|  
 |Microsoft.Office.Tools.Excel.dll|Poskytuje rozhraní, které představují hostitelských položek a hostitelských ovládacích prvků pro projekty aplikace Excel a podpůrné typy. Další informace najdete v tématu [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.dll|Poskytuje typy, které můžete použít k vytvoření vlastního formuláře oblastí v doplňcích VSTO pro Outlook.|  
 |Microsoft.Office.Tools.Word.dll|Poskytuje rozhraní, které představují hostitelských položek a hostitelských ovládacích prvků pro projekty aplikace Word a podpůrné typy. Další informace najdete v tématu [automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md).|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050206"
   
 |Název sestavení|Popis|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|Poskytuje následující typy:<br /><br /> -Microsoft.Office.Tools.AddIn základní třídu pro doplňky VSTO.<br />– Třídy pro vytváření vlastních nastavení pásu karet a inteligentní značky. **Poznámka:** inteligentní značky jsou zastaralé v [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] a [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />– Třídy pro tvorbu podokna akcí v přizpůsobeních na úrovni dokumentu a vlastních podoken úloh v doplňcích VSTO.|  
+|Microsoft.Office.Tools.Common.v9.0.dll|Poskytuje následující typy:<br /><br /> -Microsoft.Office.Tools.AddIn základní třídu pro doplňky VSTO.<br />– Třídy pro vytváření vlastních nastavení pásu karet a inteligentní značky. **Poznámka:**      Inteligentní značky jsou zastaralé v [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] a [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].<br />– Třídy pro tvorbu podokna akcí v přizpůsobeních na úrovni dokumentu a vlastních podoken úloh v doplňcích VSTO.|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|Poskytuje hostitelských položek a hostitelských ovládacích prvků pro řešení pro aplikaci Excel. Další informace najdete v tématu [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|Poskytuje třídy, které můžete použít k vytvoření vlastního formuláře oblastí v doplňcích VSTO pro Outlook.|  
 |Microsoft.Office.Tools.Word.v9.0.dll|Poskytuje hostitelských položek a hostitelských ovládacích prvků pro řešení aplikace Word. Další informace najdete v tématu [automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md).|  

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - data binding, controls
 - Office applications [Office development in Visual Studio], data binding
 - controls, data binding
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744866"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248017"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office
   Můžete svázat ovládací prvky Windows Forms a *hostování ovládacích prvků* na dokumentu aplikace Microsoft Office Word nebo list aplikace Microsoft Office Excel ke zdroji dat, ovládací prvky automaticky zobrazovat data. Vytvoření vazby dat k ovládacím prvkům v projektech na úrovni aplikace i na úrovni dokumentu.  
@@ -37,7 +37,7 @@ ms.locfileid: "50744866"
   
  Windows Forms a hostitelských ovládacích prvků pomocí vazby modelu Windows Forms dat, který podporuje obě *jednoduchou datovou vazbu* a *rozšířené datové vazby* ke zdrojům dat, jako jsou datové sady a data tabulky. Podrobnější informace o modelu vazby dat ve Windows Forms, naleznete v tématu [svázat Data a Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak využívat i databáze dat v Excelu?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Využití dat z databáze v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## <a name="simple-data-binding"></a>Jednoduchá vazba dat  
  Jednoduchá vazba dat existuje, když vlastnosti ovládacího prvku je vázán na jeden datový prvek, jako jsou hodnoty v tabulce dat. Například <xref:Microsoft.Office.Tools.Excel.NamedRange> má ovládací prvek <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost, která může být vázaný na pole v datové sadě. Při změně pole v datové sadě, změní se také hodnotu v pojmenovaném rozsahu. Hostování všech ovládacích prvků, s výjimkou <xref:Microsoft.Office.Tools.Word.XMLNodes> řídit, podporovat jednoduchou datovou vazbu. <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek je kolekce, a proto nepodporuje vytváření datových vazeb.  
@@ -49,7 +49,7 @@ ms.locfileid: "50744866"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]  
   
- Návody, které ukazuje, jednoduché datové vazby, naleznete v tématu [návod: jednoduché datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) pro projekt úrovni dokumentu a [návod: jednoduché datové vazby v projektu doplňku VSTO ](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) projektu doplňku VSTO.  
+ Návody, které ukazuje, jednoduché datové vazby, naleznete v tématu [názorný postup: Jednoduché datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) pro projekt úrovni dokumentu a [názorný postup: Jednoduché datové vazby v projektu doplňku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) projektu doplňku VSTO.  
   
 ## <a name="complex-data-binding"></a>Rozšířené datové vazby  
  Rozšířené datové vazby existuje, když vlastnosti ovládacího prvku je vázán na více než jeden prvek dat, jako je například více sloupců v datové tabulce. <xref:Microsoft.Office.Tools.Excel.ListObject> Ovládací prvek pro Excel je pouze hostitelského ovládacího prvku, který podporuje komplexní datovou vazbu. Existují také mnoho ovládacích prvků Windows Forms, které podporují rozšířené datové vazby, jako je například <xref:System.Windows.Forms.DataGridView> ovládacího prvku.  
@@ -61,7 +61,7 @@ ms.locfileid: "50744866"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]  
   
- Postupy, které popisují rozšířené datové vazby, naleznete v tématu [návod: rozšířené datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) pro projekt úrovni dokumentu a [návod: rozšířené datové vazby v projektu doplňku VSTO ](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) projektu doplňku VSTO.  
+ Postupy, které popisují rozšířené datové vazby, naleznete v tématu [názorný postup: Rozšířené datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) pro projekt úrovni dokumentu a [názorný postup: Rozšířené datové vazby v projektu doplňku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) projektu doplňku VSTO.  
   
 ## <a name="display-data-in-documents-and-workbooks"></a>Zobrazení dat v dokumentech a sešity  
  V projektech na úrovni dokumentu, můžete použít **zdroje dat** okno a snadno přidat ovládací prvky vázané na data do dokumentů nebo sešitů, stejně jako použijte pro model Windows Forms. Další informace o používání **zdroje dat** okna, naleznete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) a [přidat nové zdroje dat](../data-tools/add-new-data-sources.md).  
@@ -76,15 +76,15 @@ ms.locfileid: "50744866"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Vytvoření vazby dat v projektech na úrovni dokumentu v době návrhu  
  Následující témata ukazují příklady vazba dat v době návrhu:  
   
--   [Postupy: naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [Postupy: Naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [Postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [Postupy: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [Postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [Postupy: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [Postupy: naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [Postupy: Naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [Postupy: procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [Postupy: Procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Vytvoření vazby dat v projekty doplňků VSTO  
  V doplňku VSTO projektů můžete přidat ovládací prvky pouze za běhu. Následující témata ukazují příklady vazba dat za běhu:  
@@ -100,12 +100,12 @@ ms.locfileid: "50744866"
   
  Není potřeba explicitně aktualizovat zdroj dat v paměti, když provádíte pomocí rozšířené datové vazby <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku. V takovém případě změny jsou automaticky odeslány do zdroje dat v paměti bez dalšího kódu.  
   
- Další informace najdete v tématu [postupy: aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Další informace najdete v tématu [jak: Aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Jak využívat I: dat z databáze v aplikaci Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)   
+ [Postup: Využití dat z databáze v aplikaci Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)   
  [Windows Forms a datové vazby](/dotnet/framework/winforms/data-binding-and-windows-forms)   
- [Postupy: vytvoření jednoduše vázaného ovládacího prvku ve formuláři Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
+ [Postupy: Vytvoření jednoduše vázaného ovládacího prvku ve formuláři Windows](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
  [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)    
  [Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    

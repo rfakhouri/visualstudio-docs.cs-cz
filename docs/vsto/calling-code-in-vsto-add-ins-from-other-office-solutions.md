@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904645"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248095"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Volání kódu v doplňcích VSTO z jiných řešení pro Office
   Objekt můžete zveřejnit v doplňku VSTO pro ostatní řešení, včetně jiných řešení pro Microsoft Office. To je užitečné, pokud váš doplněk VSTO poskytuje službu, kterou chcete povolit použití jiných řešení. Například pokud máte doplňku VSTO pro Microsoft Office Excel, která provádí výpočty finančních dat z webové služby, jiná řešení provádět tyto výpočty pomocí volání do doplňku VSTO pro Excel za běhu.  
@@ -77,7 +77,7 @@ ms.locfileid: "49904645"
   
    -   Nastavte **zaregistrovat pro interoperabilitu COM** vlastnost v projektu, ve kterém definujete rozhraní. Tato vlastnost je nutné pouze v případě, že chcete povolit klientům používat časná vazba provést volání do doplňku VSTO.  
   
-   Následující příklad kódu ukazuje `AddInUtilities` třídy s `ImportData` metodu, která je možné vyvolat v jiných řešení. Tento kód v rámci větší názorného postupu najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Následující příklad kódu ukazuje `AddInUtilities` třídy s `ImportData` metodu, která je možné vyvolat v jiných řešení. Tento kód v rámci větší názorného postupu najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904645"
  Další informace o používání vláken v řešeních pro systém Office naleznete v tématu [podpora v systému Office práce s vlákny](../vsto/threading-support-in-office.md).  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>Potlačí metodu RequestComAddInAutomationService  
- Následující příklad kódu ukazuje, jak přepsat <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> v `ThisAddIn` třídy v doplňku VSTO. Příklad předpokládá, že jste definovali třídu s názvem `AddInUtilities` , kterou chcete zpřístupnit další řešení. Tento kód v rámci větší názorného postupu najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Následující příklad kódu ukazuje, jak přepsat <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> v `ThisAddIn` třídy v doplňku VSTO. Příklad předpokládá, že jste definovali třídu s názvem `AddInUtilities` , kterou chcete zpřístupnit další řešení. Tento kód v rámci větší názorného postupu najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904645"
    Způsob, jak použít návratová hodnota vlastnosti COMAddIn.Object se liší pro klienty VBA a jiných VBA. Klientům mimo proces dodatečný kód je nezbytný, aby se zabránilo možné časování.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Přístup k objektům z jazyka VBA řešení  
- Následující příklad kódu ukazuje, jak používat VBA pro volání metody, který je zveřejněný prostřednictvím doplňku VSTO. Toto makro VBA volá metodu s názvem `ImportData` , který je definován v VSTO doplňku, který je pojmenován **ExcelImportData**. Tento kód v rámci větší názorného postupu najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+ Následující příklad kódu ukazuje, jak používat VBA pro volání metody, který je zveřejněný prostřednictvím doplňku VSTO. Toto makro VBA volá metodu s názvem `ImportData` , který je definován v VSTO doplňku, který je pojmenován **ExcelImportData**. Tento kód v rámci větší názorného postupu najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -149,7 +149,7 @@ utilities.ImportData();
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Návod: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912620"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248267"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura přizpůsobení na úrovni dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zahrnuje projekty pro vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word a Microsoft Office Excel. Toto téma popisuje následující aspekty přizpůsobení na úrovni dokumentu:  
@@ -81,7 +81,7 @@ ms.locfileid: "49912620"
 |Pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vývojář píše kód, který je přístupný pro aplikace Word a Excel.<br /><br /> I když to může zdát, že vývojáři vytváří spustitelný soubor, na kterém běží aplikace Word nebo Excel, tento proces funguje ve skutečnosti naopak. Dokument je přidružený k sestavení a obsahuje ukazatel na toto sestavení. Po otevření dokumentu aplikace Word nebo Excel vyhledá sestavení a spuštění kódu v reakci na všechny zpracované události.|Uživateli, kteří používají řešení jednoduše otevřete dokumentem nebo sešitem, (nebo vytvořit nový dokument ze šablony) stejně jako každý jiný dokument aplikace Microsoft Office rozepínají.<br /><br /> Sestavení obsahuje vlastní nastavení v dokumentem nebo sešitem, jako je například automaticky vyplní s aktuálními údaji, nebo zobrazuje dialogové okno pro žádost o informace.|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>Podporované formáty dokumentu přizpůsobení na úrovni dokumentu  
- Při vytváření vlastního nastavení projektu, můžete formát dokumentu, který chcete použít v projektu. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Při vytváření vlastního nastavení projektu, můžete formát dokumentu, který chcete použít v projektu. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
  V následující tabulce jsou uvedeny formáty dokumentu, která vám pomůže v přizpůsobeních na úrovni dokumentu pro Excel a Word.  
   

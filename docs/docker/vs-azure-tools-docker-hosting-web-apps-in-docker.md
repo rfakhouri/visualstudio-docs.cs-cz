@@ -14,22 +14,22 @@ ms.tgt_pltfrm: NA
 ms.workload: NA
 ms.date: 05/21/2018
 ms.author: mlearned
-ms.openlocfilehash: 584faff1c09e6d345d7e166616a9036da2223b51
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a033f60d636be8d1e093bf06ee757e0520368a53
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673513"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248183"
 ---
-# <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Nasazení kontejneru ASP.NET do služby container registry pomocí sady Visual Studio
+# <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Nasazení kontejneru ASP.NET do registru kontejneru pomocí sady Visual Studio
 ## <a name="overview"></a>Přehled
 Docker je modul jednoduchý kontejner, podobně jako v některých ohledech k virtuálnímu počítači, který můžete použít k hostování aplikací a služeb.
 Tento kurz vás provede kontejnerizované aplikace můžete publikovat pomocí sady Visual Studio [Azure Container Registry](https://azure.microsoft.com/services/container-registry).
 
-Pokud ještě nemáte předplatné Azure, vytvořte [bezplatný účet](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) předtím, než začnete.
+Pokud ještě nemáte předplatné Azure, vytvořte si [bezplatný účet](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) před tím, než začnete.
 
 ## <a name="prerequisites"></a>Požadavky
-K dokončení tohoto kurzu:
+K provedení kroků v tomto kurzu je potřeba:
 
 * Nainstalujte nejnovější verzi [Visual Studio 2017](https://azure.microsoft.com/downloads/) s úlohou "vývoj aplikací ASP.NET a web"
 * Nainstalujte [Docker pro Windows](https://docs.docker.com/docker-for-windows/install/)
@@ -52,8 +52,10 @@ Následující kroky vás provedou vytvořením základní aplikaci ASP.NET Core
     | **[Skupina prostředků](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Název skupiny prostředků, ve kterém chcete vytvořit registr kontejnerů. Zvolte **nový** vytvořit novou skupinu prostředků.|
     | **[SKLADOVÁ POLOŽKA](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Úrovně služby do registru kontejneru  |
     | **Umístění registru** | Vám nejbližším místě | Zvolte umístění, do [oblasti](https://azure.microsoft.com/regions/) vaší blízkosti nebo v blízkosti jiných služeb, které budou používat službu container registry. |
+
     ![Visual Studio vytvořit dialogové okno Azure Container Registry][0]
-5. Klikněte na tlačítko **vytvořit**
+
+5. Klikněte na **Vytvořit**.
 
 Můžete nyní využít kontejneru z registru na každém hostiteli podporuje spuštění imagí Dockeru, například [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 

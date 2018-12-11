@@ -16,17 +16,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], cache
 - data [Office development in Visual Studio], document-level solutions
 - document-level customizations [Office development in Visual Studio], data model
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0710f196e6572cf6bc9851d8a765758fcb43326d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676440"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248293"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Data uložená v mezipaměti v přizpůsobeních na úrovni dokumentu
   Primární cílem přizpůsobení na úrovni dokumentu je oddělení dat ze zobrazení v dokumentech systému Office. Data představují informace, které jsou uloženy v dokumentu, včetně čísel a text. Zobrazení odkazuje na uživatelské rozhraní a objektový model Microsoft Office Word a Microsoft Office Excel.  

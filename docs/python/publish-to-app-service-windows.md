@@ -13,12 +13,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e1ac55cc0cc675aa7f2d2aa933d035bf42e83006
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065918"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248202"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Publikování do služby Azure App Service ve Windows
 
@@ -81,7 +81,7 @@ V případě potřeby můžete také nainstalovat `bottle` balíček pomocí pro
 
 Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pouze soubory v projektu na serveru. Je proto nutné, vytvořit soubory potřebné ke konfiguraci prostředí serveru.
 
-1. V sadě Visual Studio **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a vyberte **Přidat > Nová položka...* . V zobrazeném dialogovém okně vyberete šablonu "Web.config pro Azure (Fast CGI)" a vyberte OK. Tím se vytvoří `web.config` souboru v kořenovém adresáři projektu.
+1. V **Průzkumníku řešení** sady Visual Studio klikněte pravým tlačítkem na projekt a vyberte **Přidat > Nová položka**. V zobrazeném dialogovém okně vyberete šablonu "Web.config pro Azure (Fast CGI)" a vyberte OK. Tím se vytvoří `web.config` souboru v kořenovém adresáři projektu.
 
 1. Upravit `PythonHandler` záznam v `web.config` tak, aby cesta odpovídá instalaci Pythonu na serveru (naleznete v tématu [odkaz Konfigurace služby IIS](https://www.iis.net/configreference) (iis.net) najdete přesné informace). Například pro Python 3.6.1 x64 položka by měla vypadat následovně:
 
@@ -104,14 +104,14 @@ Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pou
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: Změna `WSGI_HANDLER` hodnota, která se `<project_name>.app` kde `<project_name>` odpovídá názvu vašeho projektu. Můžete najít přesně identifikátor pohledem `from <project_name> import app` příkaz v `runserver.py`. Například pokud má projekt název "FlaskAzurePublishExample", položka bude vypadat takto:
+    - **Flask**: Změnit `WSGI_HANDLER` hodnota, která se `<project_name>.app` kde `<project_name>` odpovídá názvu vašeho projektu. Můžete najít přesně identifikátor pohledem `from <project_name> import app` příkaz v `runserver.py`. Například pokud má projekt název "FlaskAzurePublishExample", položka bude vypadat takto:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: dvě změny, které jsou potřeba k `web.config` pro projekty v Django. Nejprve změňte `WSGI_HANDLER` hodnota, která se `django.core.wsgi.get_wsgi_application()` (objekt je ve `wsgi.py` souboru):
+    - **Django**: Dvě změny, které jsou potřeba k `web.config` pro projekty v Django. Nejprve změňte `WSGI_HANDLER` hodnota, která se `django.core.wsgi.get_wsgi_application()` (objekt je ve `wsgi.py` souboru):
 
         ```xml
         <!-- Django apps only -->
@@ -124,7 +124,7 @@ Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pou
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Jenom aplikace Django**: projekt v Django `settings.py` přidejte domény adresy URL webu do `ALLOWED_HOSTS` jak je znázorněno níže, nahradíte ".net vspython-test-02.azurewebsites" adresu URL a samozřejmě:
+1. **Jenom aplikace Django**: V projektu Django `settings.py` přidejte domény adresy URL webu do `ALLOWED_HOSTS` jak je znázorněno níže, nahradíte ".net vspython-test-02.azurewebsites" adresu URL a samozřejmě:
 
     ```python
     # Change the URL to your specific site
@@ -178,14 +178,14 @@ Publikování do služby Azure App Service ze sady Visual Studio 2017 kopií pou
     > [!Tip]
     > Pokud provedete změny do vaší aplikace `requirements.txt` souboru, je nutné znovu pomocí konzoly Kudu nainstalovat všechny balíčky, které jsou teď uvedené v tomto souboru.
 
-1. Po dokončení konfigurace plně serverovém prostředí, aktualizujte stránku v prohlížeči a webovou aplikaci by se měla objevit.
+1. Jakmile dokončíte konfiguraci serverového prostředí, aktualizujte stránku v prohlížeči. Měla by se zobrazit webová aplikace.
 
     ![Výsledky publikování aplikace Bottle, Flask a Django do služby App Service](media/azure-publish-results.png)
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikování do služby App Service – Visual Studio 2015
 
 > [!Note]
-> Krátké video tohoto procesu můžete najít na [Pythonu pro Visual Studio tento kurz: vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s).
+> Krátké video tohoto procesu můžete najít na [Pythonu pro Visual Studio tento kurz: Vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s).
 
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt vyberte **publikovat**.
 

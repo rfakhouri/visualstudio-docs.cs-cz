@@ -1,5 +1,6 @@
 ---
 title: '&lt;appAddin&gt; – element (vývoj pro Office v sadě Visual Studio)'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3160f153bb6775cf5b2541abf4f75069c818f82b
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304868"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248069"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; – element (vývoj pro Office v sadě Visual Studio)
   **AppAddin** elementu `vstov4` obor názvů ukládá informace specifické pro přizpůsobení pro doplňky VSTO.  
@@ -45,9 +46,9 @@ ms.locfileid: "52304868"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**Aplikace**|Požadováno. Identifikuje aplikaci Microsoft Office. Hodnota může být jeden z následujících: Excel, InfoPath, Outlook, PowerPoint, projekt, Visia nebo Word.|  
+|**Aplikace**|Povinný parametr. Identifikuje aplikaci Microsoft Office. Hodnota může být jeden z následujících akcí: Aplikace Excel, InfoPath, Outlook, PowerPoint, projekt, Visia nebo Word.|  
 |**LoadBehavior**|Volitelné. Ve výchozím nastavení **loadBehavior** se povoluje nastavením této hodnoty. Pro ladění doplňku VSTO lze zakázat nastavením této hodnoty na dva. Další informace najdete v tabulce s názvem hodnotách LoadBehavior v [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
-|**Název klíče**|Požadováno. Tato hodnota je název klíče registru, který se použije k načtení doplňku VSTO aplikací. Další informace najdete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
+|**Název klíče**|Povinný parametr. Tato hodnota je název klíče registru, který se použije k načtení doplňku VSTO aplikací. Další informace najdete v tématu [položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md).|  
   
  **AppAddin** element má následující podřízené prvky.  
   

@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847575"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248228"
 ---
 # <a name="build-office-solutions"></a>Vytváření řešení pro systém Office
   Obecně platí sestavování a ladění projektů Office je stejná jako sestavování a ladění ostatních typů projektů v sadě Visual Studio, jako jsou Windows Forms. Témata v této části popisují, které existují rozdíly. Obecné informace o tom, jak vytvářet aplikace, najdete v části [kompilace a sestavení v sadě Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -100,7 +100,7 @@ ms.locfileid: "49847575"
 ## <a name="change-the-platform-target"></a>Změnit cílová platforma  
  Ve výchozím nastavení, cílovou platformu v projektech pro systém Office je **jakýkoli procesor**. Obvykle byste neměli měnit tato nastavení. Řešení pro systém Office, které jsou vytvořeny tak, **jakýkoli procesor** Cílová platforma nastavení spuštění v 32bitové a 64bitové verze Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] nebo [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
- Pouze v případě, že vytváříte řešení, které se spustí pouze v 64bitových verzích Microsoft, měli byste nastavit cílovou platformu pro x64 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] nebo [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], a volá nativní rozhraní API 64-bit vašeho řešení. Další informace o změně nastavení cílové platformy naleznete v tématu [postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).  
+ Pouze v případě, že vytváříte řešení, které se spustí pouze v 64bitových verzích Microsoft, měli byste nastavit cílovou platformu pro x64 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] nebo [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)], a volá nativní rozhraní API 64-bit vašeho řešení. Další informace o změně nastavení cílové platformy naleznete v tématu [jak: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md).  
   
  Pokud nastavíte Cílová platforma x64, řešení nespustí v 32bitové verze Windows nebo Office. X64 vyžaduje Cílová platforma řešení pro spouštění v 64bitového procesu.  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49847575"
 |-----------|-----------------|  
 |[Ladění projektů Office](../vsto/debugging-office-projects.md)|Uvede počet problémy při ladění projektů Office.|  
 |[Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Ukazuje, jak vytvořit základní přizpůsobení úrovni dokumentu pro Excel.|  
-|[Postupy: opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Popisuje, jak znovu povolit doplňku VSTO, který je pevně nebo obnovitelné zakázané.|  
+|[Postupy: Opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Popisuje, jak znovu povolit doplňku VSTO, který je pevně nebo obnovitelné zakázané.|  
 |[Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)|Obsahuje odkazy na informace o vytváření řešení pro systém Office a o roli sestavení ve vašem řešení.|  
   
   
