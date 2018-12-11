@@ -3,6 +3,7 @@ title: Instalace certifikátů vyžadovaných pro instalaci offline
 description: Informace o instalaci certifikátů pro offline instalace sady Visual Studio.
 ms.date: 08/30/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ddb34dfcb02dc38c1e9485929eecff0bc250aa7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049836"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158889"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio
 
@@ -35,7 +36,7 @@ Existují tři možnosti pro instalaci nebo aktualizaci certifikátů v režimu 
 
 Při vytváření rozložení sítě potřebné certifikáty se stáhnou do složky certifikáty. Pak můžete ručně nainstalovat certifikáty poklepáním na každém ze souborů certifikátu a potom kliknutím na Průvodce správce certifikátů. Pokud budete vyzváni k zadání hesla, ponechte prázdné.
 
-**Aktualizace**: pro Visual Studio 2017 verze 15.8 ve verzi Preview 2 nebo novější, můžete ručně nainstalovat certifikáty kliknutím pravým tlačítkem na každém ze souborů certifikátu, výběrem nainstalovat certifikát a potom kliknutím na Průvodce správce certifikátů.
+**Aktualizace**: Pro Visual Studio 2017 verze 15.8 ve verzi Preview 2 nebo novější, můžete ručně nainstalujte certifikáty pravým tlačítkem myši na každém ze souborů certifikátu, výběr instalace certifikátu a potom kliknutím na Průvodce správce certifikátů.
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Možnost 2 - distribuci důvěryhodných kořenových certifikátů v podnikovém prostředí
 
@@ -62,7 +63,7 @@ Pokud vytváříte skript nasazení sady Visual Studio v režimu offline klients
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
-   **Aktualizace**: pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, vytvořte dávkový soubor pomocí následujících příkazů:
+   **Aktualizace**: Pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, vytvořte dávkový soubor pomocí následujících příkazů:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -79,22 +80,22 @@ Pokud vytváříte skript nasazení sady Visual Studio v režimu offline klients
 Tři. P12 soubory v této složce každý obsahují zprostředkující certifikát a kořenový certifikát. Většina systémů, které jsou aktuálně s aktualizací Windows mají tyto certifikáty už nainstalovaná.
 
 * **ManifestSignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **2011 DPS podepisování kódu Microsoft**
+    * Zprostředkující certifikát: **DPS 2011 pro podepisování kódu Microsoft**
         * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
-    * Kořenový certifikát: **Microsoft kořenový certifikát autority 2011**
+    * Kořenový certifikát: **Microsoft kořenové certifikační autority 2011**
         * Vyžaduje se v systémech Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
 * **ManifestCounterSignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **Microsoft časové-razítko DPS 2010**
+    * Zprostředkující certifikát: **Microsoft časové razítko DPS 2010**
         * Není nutné. Zlepšuje výkon v některých scénářích, pokud jsou k dispozici.
-    * Kořenový certifikát: **Microsoft kořenový certifikát autority 2010**
+    * Kořenový certifikát: **Microsoft kořenové certifikační autority 2010**
         * Vyžaduje se pro systémy Windows 7 Service Pack 1, které nemají nainstalované nejnovější aktualizace Windows.
 * **Vs_installer_opc. SignCertificates.p12** obsahuje:
-    * Zprostředkující certifikát: **DPS podepisování kódu Microsoft**
+    * Zprostředkující certifikát: **DPS pro podepisování kódu Microsoft**
         * Vyžaduje se pro všechny systémy. Všimněte si, že všechny aktualizace použije ze služby Windows Update v systémech nemusí obsahovat tento certifikát.
     * Kořenový certifikát: **Microsoft kořenové certifikační autority**
         * Požadováno. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
 
-**Aktualizace**: pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, instalační program sady Visual Studio vyžaduje pouze kořenové certifikáty k instalaci v systému.
+**Aktualizace**: Pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, instalační program sady Visual Studio vyžaduje pouze kořenové certifikáty k instalaci v systému.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Proč jsou certifikáty vydané certifikáty složky nejsou nainstalovány automaticky?
 

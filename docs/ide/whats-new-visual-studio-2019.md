@@ -1,10 +1,11 @@
 ---
 title: Co je nového v sadě Visual Studio. 2019 Preview
+titleSuffix: ''
 description: Další informace o nové funkce ve verzi preview sady Visual Studio 2019.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896948"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159747"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s novinkou ve verzi Preview. 2019 Visual Studio
 
@@ -86,7 +87,7 @@ A sadou Visual Studio 2019 Preview, tato služba nainstaluje ve výchozím nasta
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>Správa žádostí o přijetí změn (žádosti o přijetí změn) v prostředí IDE
 
-Zavádíme nové rozšíření, které si můžete stáhnout pomocí Visual Studio 2019 Preview. Pomocí této nové rozšíření, můžete zkontrolovat, spustit a dokonce i ladění žádosti o přijetí změn od týmu, aniž byste museli opustit integrované vývojové prostředí sady Visual Studio [(integrované vývojové prostředí)](../ide/visual-studio-ide.md). Jsme podporu kódu v úložišti Azure ještě dnes, ale rozšiřují podporu Githubu a zdokonalovat celkové prostředí.
+Zavádíme nové rozšíření, které si můžete stáhnout pomocí Visual Studio 2019 Preview. Pomocí této nové rozšíření, můžete zkontrolovat, spustit a dokonce i ladění žádosti o přijetí změn od týmu, aniž byste museli opustit integrované vývojové prostředí sady Visual Studio [(integrované vývojové prostředí)](../get-started/visual-studio-ide.md). Jsme podporu kódu v úložišti Azure ještě dnes, ale rozšiřují podporu Githubu a zdokonalovat celkové prostředí.
 
 Abyste mohli hned začít, stáhněte si [žádosti o přijetí změn pro sadu Visual Studio](https://aka.ms/pr4vs) rozšíření z Visual Studio Marketplace.
 

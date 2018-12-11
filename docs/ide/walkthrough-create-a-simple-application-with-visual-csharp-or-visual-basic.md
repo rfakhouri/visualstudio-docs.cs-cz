@@ -1,8 +1,9 @@
 ---
-title: 'Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic'
+title: Vytvoření jednoduché aplikace s C# nebo Visual Basic "
 ms.date: 10/03/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
-ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
+ms.openlocfilehash: 1eb5509f4cb4ecb29e37d94e4e45ab89f999d138
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48788016"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159708"
 ---
-# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Průvodce: Vytvoření jednoduché aplikace s C# nebo Visual Basic
 
-V tomto návodu se seznámíte s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvářet aplikace "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí ([IDE](visual-studio-ide.md)).
+V tomto návodu se seznámíte s mnoha nástrojů, dialogových oknech a návrhářích, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvářet aplikace "Hello, World", návrh uživatelského rozhraní, přidat kód a ladit chyby, zatímco informace o práci v integrovaném vývojovém prostředí ([IDE](../get-started/visual-studio-ide.md)).
 
 ## <a name="configure-the-ide"></a>Nastavení integrovaného vývojového prostředí (IDE)
 

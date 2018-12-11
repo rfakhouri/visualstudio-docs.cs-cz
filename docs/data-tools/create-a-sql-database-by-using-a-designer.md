@@ -1,5 +1,6 @@
 ---
 title: Vytvoření souboru databáze a Návrhář tabulky
+description: Kurz, který popisuje, jak přidat tabulky a cizí klíče k databázi pomocí Návrháře tabulky v sadě Visual Studio. Také ukazuje, jak přidat data prostřednictvím grafického rozhraní.
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e2b138a536f22608c357f56b6856d91965ff906
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c071daeaa1ffe10aa9de995b375e33b76b358da7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305322"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159864"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
 
@@ -41,7 +42,7 @@ K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracován
 
 4. Pojmenujte databázi **SampleDatabase**a pak vyberte **přidat** tlačítko.
 
-### <a name="to-add-a-data-source"></a>Chcete-li přidat zdroj dat
+### <a name="add-a-data-source"></a>Přidání zdroje dat
 
 1. Pokud **zdroje dat** okno není otevřeno, otevřete ho stisknutím kombinace kláves **Shift**+**Alt**+**D** nebo jeho výběru **Zobrazení** > **ostatní Windows** > **zdroje dat** na řádku nabídek.
 
@@ -59,19 +60,19 @@ K dokončení tohoto návodu, musíte mít nepovinný **ukládání a zpracován
 
 1. Jeden **zvolte vaše databázové objekty** stránky, zobrazí se zpráva, že databáze neobsahuje žádné objekty. Zvolte **Dokončit**.
 
-### <a name="to-view-properties-of-the-data-connection"></a>Chcete-li zobrazit vlastnosti datového připojení
+### <a name="view-properties-of-the-data-connection"></a>Zobrazit vlastnosti datového připojení
 
 Připojovací řetězec můžete zobrazit *SampleDatabase.mdf* souboru tak, že otevřete okno Vlastnosti datového připojení:
 
--   V sadě Visual Studio, vyberte **zobrazení** > **Průzkumník objektů systému SQL Server** Pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzel, otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberete **vlastnosti**.
+- V sadě Visual Studio, vyberte **zobrazení** > **Průzkumník objektů systému SQL Server** Pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzel, otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberete **vlastnosti**.
 
--   Alternativně můžete vybrat **zobrazení** > **Průzkumníka serveru**, pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzlu. Otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberte **vlastnosti**.
+- Alternativně můžete vybrat **zobrazení** > **Průzkumníka serveru**, pokud toto okno ještě není otevřený. Otevřete okno vlastností rozbalením **datová připojení** uzlu. Otevřete místní nabídku pro *SampleDatabase.mdf*a pak vyberte **vlastnosti**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Vytvoření tabulky a klíče pomocí Návrháře tabulky
 
 V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a několik řádků ukázkových dat. Také vytvoříte cizí klíč k určení, jak záznamy v jedné tabulce odpovídat záznamům v druhé tabulce.
 
-### <a name="to-create-the-customers-table"></a>Vytvoření tabulky Zákazníci
+### <a name="create-the-customers-table"></a>Vytvoření tabulky Zákazníci
 
 1. V **Průzkumníka serveru** nebo **Průzkumník objektů systému SQL Server**, rozbalte **datová připojení** uzel a potom rozbalte **SampleDatabase.mdf**uzlu.
 
@@ -108,7 +109,7 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
     Vaše změny jsou uloženy do lokálního databázového souboru.
 
-### <a name="to-create-the-orders-table"></a>Vytvoření tabulky objednávek
+### <a name="create-the-orders-table"></a>Vytvoření tabulky objednávek
 
 1. Přidejte další tabulku a potom přidejte řádek pro každou položku v následující tabulce:
 
@@ -133,7 +134,7 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
     Vaše změny jsou uloženy do lokálního databázového souboru.
 
-### <a name="to-create-a-foreign-key"></a>Vytvoření cizího klíče
+### <a name="create-a-foreign-key"></a>Vytvoření cizího klíče
 
 1. V kontextovém podokně na pravé straně tabulky, otevřete místní nabídku pro **cizí klíče**a pak vyberte **přidat nový cizí klíč**, jak je vidět na následujícím obrázku.
 

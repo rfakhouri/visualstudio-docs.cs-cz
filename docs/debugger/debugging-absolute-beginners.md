@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821367"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160020"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -66,7 +66,7 @@ Když normálně spustí aplikaci, se zobrazí chyby a nesprávné výsledky pou
 
 Spuštění aplikace v rámci ladicího programu, také nazývané *režim ladění*, znamená to, že ladicí program aktivně sleduje vše, co se děje jako program se spustí. Také umožňuje pozastavení aplikace kdykoli zkontrolovat jeho stav a poté krokovat kód řádek po řádku a sledujte všechny podrobnosti o jejím průběhu.
 
-V sadě Visual Studio, zadejte režim ladění pomocí **F5** (nebo **ladění** > **spustit ladění** příkaz nabídky nebo **spustit ladění**  tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění")) na panelu nástrojů ladění. Pokud dojde k jakékoli výjimky, pomocníka výjimky v sadě Visual Studio přejde na přesný okamžik, kdy výjimky došlo k a poskytuje další užitečné informace.
+V sadě Visual Studio, zadejte režim ladění pomocí **F5** (nebo **ladění** > **spustit ladění** příkaz nabídky nebo **spustit ladění**  tlačítko ![spustit ladění](../debugger/media/dbg-tour-start-debugging.png "spustit ladění") v panelu nástrojů ladění). Pokud dojde k jakékoli výjimky, pomocníka výjimky v sadě Visual Studio přejde na přesný okamžik, kdy výjimky došlo k a poskytuje další užitečné informace.
 
 Pokud jste nedostali výjimku, je pravděpodobně vhodné, kde hledat problému v kódu. To kdy používat *zarážky* pomocí ladicího programu, abyste měli příležitost dobře se více pečlivě prozkoumat kód. Zarážky jsou základní a nejjednodušší funkcí spolehlivého ladění. Zarážky označuje, kde by měl Visual Studio pozastavit spuštěním kódu, se můžete podívat na hodnoty proměnných, nebo chování paměti nebo pořadí, ve kterém kód běží.
 
@@ -78,11 +78,11 @@ Pro lepší tyto koncepty, budeme vás provedou některé ukázkový kód, kter�
 
 V dalším kroku vytvoříme aplikaci, která má několik chyb.
 
-1. Musíte mít nainstalovanou sadu Visual Studio a buď. **.NET desktop development** úlohy nebo. **.NET Core pro vývoj napříč platformami** nainstalovaná úloha, v závislosti na typu aplikace, které chcete vytvořit.
+1. Musíte mít nainstalovanou sadu Visual Studio a buď **vývoj desktopových aplikací .NET** úlohy nebo **.NET Core pro vývoj napříč platformami** nainstalovaná úloha, v závislosti na typu aplikace, které chcete vytvořit.
 
     Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
-    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **nástroje** > **stažení nástrojů a funkcí**. Spustí se instalační program pro Visual Studio. Vyberte. **.NET desktop development** (nebo. **.NET Core pro vývoj napříč platformami**) úloh, klikněte na tlačítko **změnit**.
+    Pokud je potřeba, nainstalujte úlohu, ale už máte sadu Visual Studio, klikněte na tlačítko **nástroje** > **stažení nástrojů a funkcí**. Spustí se instalační program pro Visual Studio. Zvolte **vývoj desktopových aplikací .NET** (nebo **.NET Core pro vývoj napříč platformami**) úloh, klikněte na tlačítko **změnit**.
 
 1. Otevřít Visual Studio a klikněte na tlačítko **souboru** > **nový** > **projektu**.
 

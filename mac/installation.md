@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 2a179b5d02a3c50e6942a660e845edd546037d86
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896481"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158954"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>Nastavte nahoru a instalace sady Visual Studio pro Mac
 
@@ -32,7 +32,7 @@ Pro práci se systémem iOS v sadě Visual Studio potřebujete následující:
 
 1. Stáhněte si Visual Studio for Mac z [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
-2. Po stažení instalačního programu balíčku, klikněte na tlačítko **VisualStudioInstaller.dmg** souboru připojit instalační program a spusťte jej dvojitým kliknutím logo, jak je znázorněno v následujícím obrázku:
+2. Po stažení instalačního programu balíčku, klikněte na tlačítko **VisualStudioForMacInstaller.dmg** souboru připojit instalační program a spusťte jej dvojitým kliknutím logo, jak je znázorněno v následujícím obrázku:
 
    ![Dialogové okno instalačního programu](media/installer-image1.png)
 

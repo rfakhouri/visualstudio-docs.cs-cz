@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: vytvoření a spuštění příkladu Linqtoxmldatabinding'
+title: 'Postupy: Sestavení a spuštění příkladu Linqtoxmldatabinding'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924158"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159773"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Postupy: vytvoření a spuštění příkladu linqtoxmldatabinding
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Postupy: Postupy: Sestavení a spuštění příkladu LinqToXmlDataBinding
 
 Toto téma ukazuje, jak vytvořit a sestavit projekt sady Visual Studio LinqToXmlDataBinding a spuštění výsledné program příklad LinqToXmlDataBinding Windows Presentation Foundation (WPF).
 
-Další informace o sadě Visual Studio najdete v tématu [přehled Visual Studio IDE](../ide/visual-studio-ide.md).
+Další informace o sadě Visual Studio najdete v tématu [přehled Visual Studio IDE](../get-started/visual-studio-ide.md).
 
 ## <a name="create-and-populate-the-project"></a>Vytvořit a naplnit projektu
 
@@ -50,7 +50,7 @@ Další informace o sadě Visual Studio najdete v tématu [přehled Visual Studi
 
 1. V souboru **App.xaml**, nahraďte všechny výskyty řetězce `Window1.xaml` s `L2XDBForm.xaml`.
 
-1. Sestavte řešení stisknutím kombinace kláves **Ctrl**+**Shift**+**B**.
+1. Sestavte řešení stisknutím **CTRL**+**SHIFT**+**B**.
 
 ## <a name="run-the-program"></a>Spuštění programu
 
@@ -82,4 +82,4 @@ LinqToXmlDataBinding program umožňuje uživateli zobrazit a pracovat s seznam 
 
 - [Datové vazby WPF pomocí LINQ na ukázkový kód XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [Návod: Příklad LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Visual Studio IDE – přehled](../ide/visual-studio-ide.md)
+- [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)

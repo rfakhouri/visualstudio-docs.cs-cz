@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513397"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160137"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -60,17 +60,17 @@ Rozšiřující metody použít jinou ikonu než metody instance. Referenční p
 
 Technologie IntelliSense odstraní nepotřebné členy ze seznamu dokončení pomocí filtrů. C# filtry seznamy dokončení, které se zobrazují pro tyto položky:
 
-- **Základní třídy a rozhraní**: technologie IntelliSense automaticky odebere položky z rozhraní a základní třídy dokončení seznamů v deklaraci třídy base a interface seznamy a seznamy omezení. Například výčty nejsou uvedena v seznamu dokončení pro základní třídy, protože výčty nelze použít jako základní třídy. Dokončení seznamu základních tříd obsahuje pouze rozhraní a obory názvů. Pokud v seznamu vyberte položku a potom zadejte čárku, technologie IntelliSense odebere ze seznamu dokončení základní třídy, protože C# nepodporuje vícenásobnou dědičnost. Stejné chování dochází k dispozici také pro klauzule omezení.
+- **Základní třídy a rozhraní**: Technologie IntelliSense automaticky odebere položky z rozhraní a základní třídy dokončení seznamů v deklaraci třídy base a interface seznamy a seznamy omezení. Například výčty nejsou uvedena v seznamu dokončení pro základní třídy, protože výčty nelze použít jako základní třídy. Dokončení seznamu základních tříd obsahuje pouze rozhraní a obory názvů. Pokud v seznamu vyberte položku a potom zadejte čárku, technologie IntelliSense odebere ze seznamu dokončení základní třídy, protože C# nepodporuje vícenásobnou dědičnost. Stejné chování dochází k dispozici také pro klauzule omezení.
 
-- **Atributy**: když použijte atribut na typ seznam pro doplňování se vyfiltruje tak, aby seznam obsahuje pouze ty typy, které sestup od obory názvů obsahují typy, jako třeba <xref:System.Attribute>.
+- **Atributy**: Když použijte atribut na typ seznam pro doplňování se vyfiltruje tak, aby seznam obsahuje pouze ty typy, které sestup od obory názvů obsahují typy, jako třeba <xref:System.Attribute>.
 
 - **Klauzule catch**
 
-- **Inicializátory objektu**: v seznamu dokončení se zobrazí pouze členy, které mohou být inicializovány.
+- **Inicializátory objektu**: V seznamu dokončení se zobrazí pouze členy, které mohou být inicializovány.
 
-- **New – klíčové slovo**: při zadávání `new` a potom stiskněte klávesu **místo**, zobrazí se seznam pro doplňování. Položka je automaticky vybrán v seznamu na základě kontextu ve vašem kódu. Položky jsou automaticky vybrán v seznamu pro doplňování deklarací a návratovými příkazy v metodách.
+- **New – klíčové slovo**: Po zadání `new` a potom stiskněte klávesu **místo**, zobrazí se seznam pro doplňování. Položka je automaticky vybrán v seznamu na základě kontextu ve vašem kódu. Položky jsou automaticky vybrán v seznamu pro doplňování deklarací a návratovými příkazy v metodách.
 
-- **enum – klíčové slovo**: po stisknutí klávesy **místo** za symbolem rovná přiřazení výčtového typu, zobrazí se seznam pro doplňování. Položka je automaticky vybrán v seznamu na základě kontextu ve vašem kódu. Například jsou automaticky vybrané položky do seznamu dokončení po zadání – klíčové slovo návratový a při deklaraci.
+- **enum – klíčové slovo**: Po stisknutí klávesy **místo** za symbolem rovná přiřazení výčtového typu, zobrazí se seznam pro doplňování. Položka je automaticky vybrán v seznamu na základě kontextu ve vašem kódu. Například jsou automaticky vybrané položky do seznamu dokončení po zadání – klíčové slovo návratový a při deklaraci.
 
 - **jako a operátoři**: Seznam filtrovaný dokončení se zobrazí automaticky po stisknutí klávesy **místo** po zadání `as` nebo `is` – klíčové slovo.
 
@@ -116,7 +116,7 @@ Implementovat rozhraní vygeneruje minimální počet metoda zástupné procedur
 
 Technologie IntelliSense poskytuje možnost, aby vám pomohly implementovat členy abstraktní základní třída automaticky při práci v editoru kódu. Za normálních okolností k implementaci abstraktní členy základní třídy vyžaduje vytvoření nové definice metody pro každou metodu abstraktní základní třída v odvozené třídě. Pomocí IntelliSense po zadání názvu abstraktní základní třídy v deklaraci třídy **rychlé akce** se zobrazí žárovka. Žárovka nabídne možnost pro implementaci metody třídy base automaticky.
 
-Metoda zástupné procedury, které se vygenerovaly **implementace abstraktní třídy Base** funkce jsou modelovány pomocí fragmentu kódu, které jsou definovány v souboru *MethodStub.snippet*. Fragmenty kódu lze měnit. Další informace najdete v tématu [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
+Metoda zástupné procedury, které se vygenerovaly **implementace abstraktní třídy Base** funkce jsou modelovány pomocí fragmentu kódu, které jsou definovány v souboru *MethodStub.snippet*. Fragmenty kódu lze měnit. Další informace najdete v tématu [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generování před využitím
 
@@ -165,4 +165,4 @@ Pokud stisknete **kartu**, technologie IntelliSense tříd stub si metodu se spr
 ## <a name="see-also"></a>Viz také:
 
 - [Používání technologie IntelliSense](../ide/using-intellisense.md)
-- [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+- [Integrované vývojové prostředí sady Visual Studio](../get-started/visual-studio-ide.md)

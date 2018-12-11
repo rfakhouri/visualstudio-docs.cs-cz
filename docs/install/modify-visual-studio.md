@@ -2,7 +2,7 @@
 title: Úpravy sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak upravit sadu Visual Studio, krok za krokem.
-ms.custom: H1Hack27Feb2017
+ms.custom: H1Hack27Feb2017,seodec18
 ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9506015d1a3498588d6f1293d479f7671d49c94f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: efb52ebc55126fa167144803afc373317d735aae
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061103"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160059"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Upravit přidáním nebo odebráním úlohy a komponenty Visual Studio 2017
 

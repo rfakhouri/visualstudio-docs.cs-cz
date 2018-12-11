@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349306"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159669"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 
@@ -60,7 +60,7 @@ Je součástí projektu *řešení*. Řešení obsahuje jeden nebo více souvise
 
 Visual Studio používá dva typy souborů (*.sln* a *.suo*) k ukládání nastavení řešení:
 
-|Rozšíření|Název|Popis|
+|Linka|Název|Popis|
 |---------------|----------|-----------------|
 |.sln|Řešení sady Visual Studio|Uspořádá projekty, položky projektu a řešení položky v řešení.|
 |.suo|Uživatelské možnosti řešení|Ukládají se nastavení na úrovni uživatele a vlastní nastavení, jako například zarážky.|
@@ -79,6 +79,6 @@ Když vytvoříte nový projekt, můžete použít **Průzkumníka řešení** k
 
 ## <a name="see-also"></a>Viz také:
 
-- [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+- [Integrované vývojové prostředí sady Visual Studio](../get-started/visual-studio-ide.md)
 - [Projekty a řešení (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)
 - [Přidání a odebrání položek projektu (Visual Studio for Mac)](/visualstudio/mac/add-and-remove-project-items)

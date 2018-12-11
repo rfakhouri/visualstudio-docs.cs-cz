@@ -1,21 +1,22 @@
 ---
-title: 'Přehled: Nahlásit problém v sadě Visual Studio'
+title: Nahlášení problému
 description: Najdete zde přehled sestavy nástrojů problém a zahrnuje stavy problém a definice
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56047150ce98cb6554248e43b7b8d7ff433cf283
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826671"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159825"
 ---
 # <a name="overview-report-a-problem"></a>Přehled: Nahlášení problému
 

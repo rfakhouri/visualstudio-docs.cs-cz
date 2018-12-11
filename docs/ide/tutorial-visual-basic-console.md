@@ -1,10 +1,11 @@
 ---
 title: Začínáme s jazykem Visual Basic v sadě Visual Studio
+titleSuffix: ''
 description: Zjistěte, jak vytvořit konzolové aplikace jazyka Visual Basic v sadě Visual Studio, krok za krokem.
-ms.custom: ''
 ms.date: 08/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -14,16 +15,16 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b3288bc83e3cbeef9b46be2b3c6c7e17874d20f
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 3d0f26c988b374259285af730b0f2fb9cf5f8e65
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624354"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159578"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio
 
-V tomto kurzu pro Visual Basic (VB) budete používat k vytváření a spouštění aplikací pro několik různých konzoly a prozkoumat některé funkce služby Visual Studio [sady Visual Studio integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
+V tomto kurzu pro Visual Basic (VB) budete používat k vytváření a spouštění aplikací pro několik různých konzoly a prozkoumat některé funkce služby Visual Studio [sady Visual Studio integrované vývojové prostředí (IDE)](../get-started/visual-studio-ide.md) při uděláte.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -53,7 +54,7 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
    ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Použití nabídky panelu nástrojů
+#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
 
 1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
 
@@ -142,7 +143,7 @@ Konzolová aplikace přijímá vstupní a zobrazí výstup v okně příkazovéh
 Blahopřejeme k dokončení tohoto kurzu! Další ještě víc, najdete v následujícím kurzu.
 
 > [!div class="nextstepaction"]
-> [Výukové video: základy jazyka Visual Basic pro naprosté začátečníky](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [Výukové video: Základy jazyka Visual Basic pro naprosté začátečníky](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
 
 ## <a name="see-also"></a>Viz také:
 

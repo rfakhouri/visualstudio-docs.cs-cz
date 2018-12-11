@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b41ba89fa9a41432901318c9653d475551ffd5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063924"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160111"
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
@@ -60,8 +60,8 @@ Najdete řadu pokročilých funkcí na **upravit** > **Upřesnit** nabídka na p
 |Zrušit posunutí tabulátorem u vybraných řádků|Změny úvodních karet na mezery. Pokud chcete převést všechny mezery v souboru na tabulátory (nebo všechny tabulátory na mezery), můžete použít `Edit.ConvertSpacesToTabs` a `Edit.ConvertTabsToSpaces` příkazy. Tyto příkazy se nezobrazují v nabídkách aplikace Visual Studio, ale můžete je z volat **rychlý přístup** okna nebo příkazové okno.|
 |Převést na velká písmena|Změní všechny znaky ve výběru na velká písmena, nebo pokud není nic vybráno, znak na pozici kurzoru na velká písmena se změní.|
 |Nastavit jako malé písmeno|Změní všechny znaky ve výběr na malá písmena, nebo pokud není nic vybráno, znak na pozici kurzoru změní na malá písmena.|
-|Přesunout vybrané řádky nahoru|Posune vybraný řádek jeden řádek nahoru. Místní: **Alt**+**šipka nahoru**.|
-|Přesunout vybrané řádky dolů|Posune vybraný řádek jeden řádek dolů. Místní: **Alt**+**šipka dolů**.|
+|Přesunout vybrané řádky nahoru|Posune vybraný řádek jeden řádek nahoru. Zástupce: **ALT**+**šipka nahoru**.|
+|Přesunout vybrané řádky dolů|Posune vybraný řádek jeden řádek dolů. Zástupce: **ALT**+**šipka dolů**.|
 |Odstranit vodorovné prázdné znaky|Odstraní tabulátory nebo mezery na konci aktuálního řádku.|
 |Zobrazit prázdné znaky|Zobrazí mezery jako zvýšené tečky a karty jako šipky. Konec souboru se zobrazí jako obdélníkový glyf. Pokud **nástroje** > **možnosti** > **textový Editor** > **všechny jazyky**  >  **Zalamování** > **zobrazit viditelné piktogramy pro zalamování řádků** je vybráno, že zobrazí se také piktogram.|
 |Zalamování řádků|Způsobí, že všechny řádky v dokumentu mají být zobrazeny v okně kódu. Zalamování slov můžete vypnout nebo zapnout v **všechny jazyky textového editoru** nastavení (**nástroje** > **možnosti** > **textový Editor**   >  **Všechny jazyky**).|
@@ -91,7 +91,7 @@ Další informace o přizpůsobení editoru, najdete v části [přizpůsobit ed
 ## <a name="see-also"></a>Viz také:
 
 - [Editor zdrojového kódu (Visual Studio for Mac)](/visualstudio/mac/source-editor)
-- [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+- [Integrované vývojové prostředí sady Visual Studio](../get-started/visual-studio-ide.md)
 - [Začínáme s C++ v sadě Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Začínáme s C# a technologie ASP.NET v sadě Visual Studio](../ide/tutorial-csharp-aspnet-core.md)
 - [Začněte používat Python v sadě Visual Studio](../ide/quickstart-python.md)

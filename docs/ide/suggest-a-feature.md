@@ -1,5 +1,5 @@
 ---
-title: Návrhy funkcí
+title: Navrhnout funkci
 description: Popisuje návrhy jsou na komunity vývojářů, jak provádět návrh a použití návrhy společností Microsoft v rámci plánu sady Visual Studio
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,12 +10,12 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdc2521020b1b354108e3130c7efa66d7c15394
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053370"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160033"
 ---
 # <a name="overview-suggest-a-feature"></a>Přehled: Navrhnout funkci
 

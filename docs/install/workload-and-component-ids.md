@@ -14,16 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: edf5eb09d00bc2814dbc5a8b616459fa8566556c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3b88d563ca5a3fa2114c6bff31cf01b2956e69a3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063299"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159474"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>ID pracovního vytížení a komponenta Visual Studio 2017
 
@@ -44,7 +45,7 @@ Klikněte na názvy edition v následující tabulce se zobrazí dostupné úloh
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Vizuální&nbsp;Studio Feedback&nbsp;klienta&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použitím parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) stránky a [postupy: migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
+Další informace o tom, jak pomocí těchto seznamů, najdete v článku [použitím parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) stránky a [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

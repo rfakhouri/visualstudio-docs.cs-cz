@@ -1,10 +1,9 @@
 ---
-title: 'Rychlý start: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio pomocí XAML a C# | Dokumentace Microsoftu'
-ms.custom: ''
+title: Vytvoření první aplikace pro UPW pomocí XAML aC#
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65c5c095ceb794e09030d4d41ed08c49bccf8427
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908905"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160007"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Rychlý start: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio pomocí XAML a C&#35;
 
@@ -60,7 +59,7 @@ Je čas začít s vývojem. Budete přidejte ovládací prvek tlačítko, přid�
 
    ![V Průzkumníku řešení otevřete MainPage.xaml ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-   Existují dvě podokna: **návrháře XAML**, což zahrnuje návrh plátna a **editoru XAML**, ve kterém můžete přidat nebo změnit kód.
+   Existují dvě podokna: **Návrháře XAML**, což zahrnuje návrh plátna a **editoru XAML**, ve kterém můžete přidat nebo změnit kód.
 
    ![V podokně návrháře XAML v editoru XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -147,7 +146,7 @@ Je čas vytvořit, nasadit a spustit aplikaci UPW "Hello World", vypadá a snaha
 
 ## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se naučili základy o UPW a integrovaném vývojovém prostředí sady Visual Studio. Další informace najdete dál v následujícím kurzu:
+Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se naučili základy o UPW a integrovaném vývojovém prostředí sady Visual Studio. Další informace najdete v následujícím kurzu:
 
 > [!div class="nextstepaction"]
 > [Vytvoření uživatelského rozhraní](/windows/uwp/design/basics/xaml-basics-ui)

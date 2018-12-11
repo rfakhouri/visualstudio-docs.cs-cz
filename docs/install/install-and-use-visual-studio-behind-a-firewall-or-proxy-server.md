@@ -1,8 +1,7 @@
 ---
-title: Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
-titleSuffix: ''
+title: Nainstalovat a používat za bránou firewall nebo proxy serverem
 description: Projděte si adresy URL domén, porty a protokoly, které může být vhodné přidat na seznam povolených nebo otevřít, pokud vaše organizace používá Brána firewall nebo proxy server
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -18,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 977dc2927e95988b98acc28eb6b0198d0c27b90a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057757"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160163"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
 Pokud vy nebo vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak používají domény adresy URL, které můžete chtít "seznamu povolených IP adres" a porty a protokoly, které můžete chtít otevřít, abyste měli co nejlepších výsledků při instalaci a použití samostatného Visual dio a služby Azure.
 
-* **[Instalace sady Visual Studio](#install-visual-studio)**: tyto tabulky obsahují domény adresy URL do seznamu povolených IP adres, abyste měli přístup ke všem součásti a úlohy, které chcete.
+* **[Instalace sady Visual Studio](#install-visual-studio)**: Tyto tabulky obsahují domény adresy URL do seznamu povolených IP adres, abyste měli přístup ke všem součásti a úlohy, které chcete.
 
 * **[Pomocí sady Visual Studio a Azure Services](#use-visual-studio-and-azure-services)**: Tato tabulka obsahuje domény adresy URL do seznamu povolených IP adres a portů a protokolů a otevřete tak, aby měli přístup ke všem funkcím a služby, které chcete.
 

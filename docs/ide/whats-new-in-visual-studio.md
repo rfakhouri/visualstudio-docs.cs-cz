@@ -1,10 +1,11 @@
 ---
-title: Co je nového v sadě Visual Studio 2017
+title: Novinky v sadě Visual Studio 2017
+titleSuffix: ''
 description: Informace o nových funkcích v sadě Visual Studio 2017.
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895766"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160189"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -106,11 +107,11 @@ Správce rozšíření pro Roaming sleduje všechna rozšíření, které nainst
 
 Při použití Správce rozšíření pro Roaming, existují tři typy ikon na seznamu:
 
-* ![Ikona s roamingem](../ide/media/vs2017ide-roamedicon.png)  **_ikona s roamingem_**: rozšíření, která je součástí tohoto seznamu roamingu, ale není nainstalované na vašem počítači.
+* ![Ikona s roamingem](../ide/media/vs2017ide-roamedicon.png)  **_ikona s roamingem_**: Rozšíření, která je součástí tohoto seznamu roamingu, ale není nainstalované na vašem počítači.
   (Je můžete nainstalovat pomocí **Stáhnout** tlačítko.)
-* ![Ikona s roamingem a nainstalováno](../ide/media/vs2017ide-roamedinstalledicon.png)  **_s roamingem a nainstalováno_**: všechna rozšíření, které jsou součástí tohoto seznamu roamingu a jsou nainstalovaná ve vývojovém prostředí.
+* ![Ikona s roamingem a nainstalováno](../ide/media/vs2017ide-roamedinstalledicon.png)  **_s roamingem a nainstalováno_**: Všechna rozšíření, které jsou součástí tohoto seznamu roamingu a nainstalované ve vývojovém prostředí.
   (Pokud nechcete přesouvat, můžete je odebrat pomocí **zastavit Roaming** tlačítko.)
-* ![Ikona nainstalováno](../ide/media/vs2017ide-installedicon.png)  **_nainstalováno_**: všechna rozšíření, která jsou nainstalovaná v tomto prostředí, ale nejsou součástí vašeho seznamu roamingu.
+* ![Ikona nainstalováno](../ide/media/vs2017ide-installedicon.png)  **_nainstalováno_**: Všechna rozšíření, která jsou nainstalovaná v tomto prostředí, ale nejsou součástí vašeho seznamu roamingu.
   (Rozšíření můžete přidat do seznamu roamingu pomocí **Start Roaming** tlačítko.)
 
 Všechna rozšíření, který stahujete, když se přihlásíte se přidá do seznamu jako **s roamingem a nainstalováno**. Rozšíření se pak stane součástí vašeho seznamu roamingu, která umožňuje přístup k němu z libovolného počítače.
@@ -131,19 +132,19 @@ Automatizované testování je klíčovou součástí libovolného kanálu DevOp
 
 Další informace o automatických testů, najdete v článku [kanálu CI/CD pro automatizované testování v DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) blogový příspěvek.
 
-A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: potvrdit kvalitu kódu čas](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blogový příspěvek.
+A další informace o tom, co je nového [nástrojů Continuous delivery tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření devlabs s názvem, najdete v článku [potvrzení s jistotou: Potvrdit kvalitu kódu čas](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) blogový příspěvek.
 
 ### <a name="visual-studio-ide-enhancements"></a>Vylepšení Visual Studio IDE
 
 #### <a name="multi-caret-editing"></a>Blikající kurzor o víc úpravy
 
-**Novinka v 15.8**: úpravy více míst v souboru, současně, je teď snadné. Začněte vytvořením vložení body a výběr na víc místech v souboru. Potom použijte funkci úpravy více blikající kurzor o provádět stejné úpravy ve dvou nebo více míst ve stejnou dobu.
+**Novinka v 15.8**: Úprava více míst v souboru, současně, je teď snadné. Začněte vytvořením vložení body a výběr na víc místech v souboru. Potom použijte funkci úpravy více blikající kurzor o provádět stejné úpravy ve dvou nebo více míst ve stejnou dobu.
 
 Další informace najdete v tématu [více blikající kurzor o výběr](finding-and-replacing-text.md#multi-caret-selection) část z [najít a nahradit text](finding-and-replacing-text.md) stránky.
 
 #### <a name="keep-keybinding-profiles-consistent"></a>Zachování konzistence keybinding – profily
 
-**Novinka v 15.8**: Nyní můžete zachovat vaše klávesové zkratky konzistentní napříč nástroji dva nové profily klávesnice: Visual Studio Code a ReSharper (Visual Studio). Můžete najít v těchto schématech **nástroje** > **možnosti** > **Obecné** > **klávesnice**a horní rozevírací nabídky.
+**Novinka v 15.8**: Teď můžete zachovat vaše klávesové zkratky konzistentní napříč nástroji dva nové profily klávesnice: Visual Studio Code a ReSharper (Visual Studio). Můžete najít v těchto schématech **nástroje** > **možnosti** > **Obecné** > **klávesnice**a horní rozevírací nabídky.
 
   ![Nové profily klávesové zkratky pro Visual Studio Code a ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Při práci s projektem v sadě Visual Studio, můžete nastavit a rychle potvrz
 
 Aktualizovali jsme navigační prostředí, se kterými získáte od A do B s větší jistotou a méně rozptýlení.
 
-* **Nové ve verzi 15.4**: **přejít k definici** (**Ctrl**+**klikněte na tlačítko** nebo **F12**) &ndash; myš uživatelů jednodušší způsob, jak přejít k definici členu stisknutím **Ctrl** a pak levým na člen. Stisknutím klávesy **Ctrl** a najede myší symbol v kódu se podtržení ho a znovu je zapnout na odkaz. Zobrazit [přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md) Další informace.
+* **Nové ve verzi 15.4**: **Přejít k definici** (**Ctrl**+**klikněte na tlačítko** nebo **F12**) &ndash; myši uživatelé mají snadný způsob, jak přejít k definici člen stisknutím kombinace kláves **Ctrl** a pak levým na člen. Stisknutím klávesy **Ctrl** a najede myší symbol v kódu se podtržení ho a znovu je zapnout na odkaz. Zobrazit [přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md) Další informace.
 
 * **Přejít k implementaci** (**Ctrl**+**F12**) &ndash; přejít z jakéhokoli základního typu nebo člena na její různé implementace.
 
@@ -216,7 +217,7 @@ Další informace najdete v tématu [pomocí nového pomocníka výjimky v sadě
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Snímky a zpětného kroku IntelliTrace
 
-**Nové ve verzi 15.5**: zpětného kroku IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážce a ladicí program krok události. Zaznamenané snímky umožňují snadno vrátit k předchozím zarážkám nebo krokům a zobrazit stav aplikace jako v minulosti. IntelliTrace zpětným krokem vám může ušetřit čas při chcete zobrazit předchozí stav aplikace, ale nebudete chtít znovu spusťte ladění nebo znovu vytvořit stav požadované aplikace.
+**Nové ve verzi 15.5**: Zpětného kroku IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážce a ladicí program krok události. Zaznamenané snímky umožňují snadno vrátit k předchozím zarážkám nebo krokům a zobrazit stav aplikace jako v minulosti. IntelliTrace zpětným krokem vám může ušetřit čas při chcete zobrazit předchozí stav aplikace, ale nebudete chtít znovu spusťte ladění nebo znovu vytvořit stav požadované aplikace.
 
 Můžete procházet a zobrazit snímky pomocí **krok zpět** a **krok vpřed** tlačítka v **ladění** nástrojů. Tato tlačítka Procházet události, které se zobrazují v **události** kartu **diagnostické nástroje** okna. Automaticky krokování zpět nebo vpřed na událost aktivuje historické ladění na vybrané události.
 
@@ -245,7 +246,7 @@ Další informace najdete v tématu [Azure Functions tools for Visual Studio](ht
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Ladění živé aplikace ASP.NET pomocí snímkovací a protokolovací body v živé aplikace Azure
 
-**Nové ve verzi 15.5**: The Snapshot Debugger pořídí snímek vaší aplikace do produkčního prostředí, když spustí kód, který vás zajímá. Dáte pokyn, aby ladicí program k vytvoření snímku, můžete nastavit snímkovací a protokolovací body ve vašem kódu. Ladicí program umožňuje zobrazit přesně toho, co nefunguje, aniž by to ovlivnilo provozu aplikace v produkčním prostředí. Snapshot Debugger můžete výrazně zkrátit čas potřebný k vyřešení problémů, ke kterým dochází v produkčním prostředí.
+**Nové ve verzi 15.5**: Snapshot Debugger pořídí snímek vaší aplikace do produkčního prostředí, když spustí kód, který vás zajímá. Dáte pokyn, aby ladicí program k vytvoření snímku, můžete nastavit snímkovací a protokolovací body ve vašem kódu. Ladicí program umožňuje zobrazit přesně toho, co nefunguje, aniž by to ovlivnilo provozu aplikace v produkčním prostředí. Snapshot Debugger můžete výrazně zkrátit čas potřebný k vyřešení problémů, ke kterým dochází v produkčním prostředí.
 
 Shromažďování snímků je k dispozici pro následující web apps ve službě Azure App Service:
 
@@ -281,25 +282,25 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
 ### <a name="entitlements-editor"></a>Editor oprávnění
 
-**Novinka v 15.3**: pro vaše potřeby vývoje s Iosem, přidali jsme samostatný editor oprávnění. To zahrnuje uživatelsky přívětivou UI, které lze snadno procházet. Spusťte ho, klikněte dvakrát na vaše *do souboru entitlements.plist* souboru.
+**Novinka v 15.3**: Pro vaše potřeby vývoje s Iosem přidali jsme samostatný editor oprávnění. To zahrnuje uživatelsky přívětivou UI, které lze snadno procházet. Spusťte ho, klikněte dvakrát na vaše *do souboru entitlements.plist* souboru.
 
 ![Editor oprávnění pro Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Nástroje sady Visual Studio pro Xamarin
 
-**Nové ve verzi 15.4**: Xamarin Live umožňuje vývojářům nepřetržitě nasazovat, testování a ladit své aplikace přímo na zařízeních s Androidem a iOS. Po stažení Xamarin Live Player&mdash;k dispozici v App Store nebo Google Play&mdash;můžete spárovat své zařízení se sadou Visual Studio a zásadně zlepšit způsob, jak sestavovat mobilní aplikace. Tato funkce je teď zahrnutá v sadě Visual Studio a jde povolit v nabídce **Nástroje** > **Možnosti** > **Xamarin** > **Jiné** > **Povolit Xamarin Live Player**.
+**Nové ve verzi 15.4**: Xamarin Live umožňuje vývojářům nepřetržitě nasazovat, testovat a ladit své aplikace přímo na zařízeních se systémy iOS a Android. Po stažení Xamarin Live Player&mdash;k dispozici v App Store nebo Google Play&mdash;můžete spárovat své zařízení se sadou Visual Studio a zásadně zlepšit způsob, jak sestavovat mobilní aplikace. Tato funkce je teď zahrnutá v sadě Visual Studio a jde povolit v nabídce **Nástroje** > **Možnosti** > **Xamarin** > **Jiné** > **Povolit Xamarin Live Player**.
 
 ![Animace dvojice v Xamarin Live Playeru, nasazení a režimů živých úprav](../ide/media/xamarinliveplayer.gif)
 
 ### <a name="support-for-google-android-emulator"></a>Podpora pro emulátor Google Android
 
-**Novinka v 15.8**: při použití technologie Hyper-V teď můžete použít Googlu emulátoru Androidu – souběžně s jinými technologiemi, které jsou založeny na technologii Hyper-V, jako Hyper-V virtuální počítače, Docker nástroje, HoloLens emulátor a další. (Tato funkce vyžaduje operační systém Windows 10. dubna 2018 Update nebo novější.)
+**Novinka v 15.8**: Při použití technologie Hyper-V teď můžete použít Googlu emulátoru Androidu – souběžně s jinými technologiemi, které jsou založeny na technologii Hyper-V, jako Hyper-V virtuální počítače, Docker nástroje, HoloLens emulátor a další. (Tato funkce vyžaduje operační systém Windows 10. dubna 2018 Update nebo novější.)
 
 ![Emulátor Google Android na technologie Hyper-V](../ide/media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Editor rozděleného zobrazení návrháře Xamarin.Android
 
-Také **novinkou 15.8**: jsme výrazně vylepšili návrháře prostředí pro Xamarin.Android. Zvýraznění je nový editor rozdělené zobrazení, která umožňuje vytváření, úprav a náhledu vašich rozložení ve stejnou dobu.
+Také **novinkou 15.8**: Provedli jsme významné vylepšení návrháře pro Xamarin.Android. Zvýraznění je nový editor rozdělené zobrazení, která umožňuje vytváření, úprav a náhledu vašich rozložení ve stejnou dobu.
 
 ![Editor návrháře Xamarin.Adroid rozdělené zobrazení](../ide/media/android-designer-split-view.png)
 
@@ -307,11 +308,11 @@ Další informace najdete v tématu [hardwarovou akceleraci emulátoru výkonu](
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-**Nové ve verzi 15.5**: Visual Studio App Center&mdash;která je teď obecně dostupná pro aplikace pro Android, iOS, macOS a Windows&mdash;obsahuje všechno, co potřebujete ke správě životního cyklu aplikací, včetně automatizovaného sestavení, testování na reálném zařízení v cloudu, distribuce testerům beta verzí a obchodů s aplikacemi a sledování využití z reálného světa pomocí o chybách a analytickým datům. Aplikace napsané v jazyce Objective-C, Swift, Java, C#, Xamarin a React Native jsou podporovány v rámci všech funkcí.
+**Nové ve verzi 15.5**: Visual Studio App Center&mdash;která je teď obecně dostupná pro aplikace pro Android, iOS, macOS a Windows&mdash;obsahuje všechno, co potřebujete ke správě životního cyklu aplikací, včetně automatizovaného sestavení, testování na skutečných zařízeních v cloudu, distribuce testerům beta verzí a obchodů s aplikacemi a sledování využití z reálného světa pomocí o chybách a analytickým datům. Aplikace napsané v jazyce Objective-C, Swift, Java, C#, Xamarin a React Native jsou podporovány v rámci všech funkcí.
 
   ![Visual Studio App Center testovacího prostředí](../ide/media/app-center-test-env.png)
 
-Další informace najdete v tématu [Introducing App Center: vytvářejte, testujte, distribuujte a monitorování aplikací v cloudu](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blogový příspěvek.
+Další informace najdete v tématu [Introducing App Center: Vytvářejte, testujte, distribuujte a monitorování aplikací v cloudu](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) blogový příspěvek.
 
 ## <a name="cross-platform-development"></a>Vývoj pro různé platformy
 
@@ -354,7 +355,7 @@ Další informace najdete v tématu [Visual Studio Tools for Unity](../cross-pla
 
 ### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-**Nové ve verzi 15.5**: použijte funkce produktivitu sady Visual Studio k urychlení inovace AI ještě dnes. Použití funkce editoru integrovanou kódu, jako jsou zvýraznění syntaxe, IntelliSense a automatické formátování. Testovat váš hloubkového učení aplikace v místním prostředí pomocí krokové ladění na lokálních proměnných a modely.
+**Nové ve verzi 15.5**: Použijte funkce produktivitu sady Visual Studio k urychlení inovace AI ještě dnes. Použití funkce editoru integrovanou kódu, jako jsou zvýraznění syntaxe, IntelliSense a automatické formátování. Testovat váš hloubkového učení aplikace v místním prostředí pomocí krokové ladění na lokálních proměnných a modely.
 
   ![Hloubkové učení integrovaného vývojového prostředí](../ai/media/about/ide.png)
 

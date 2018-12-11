@@ -1,5 +1,5 @@
 ---
-title: Vytvoření Windows Forms aplikace Visual Basic
+title: Vytvoření Windows Forms aplikace pomocí jazyka Visual Basic
 description: Zjistěte, jak vytvořit aplikaci Windows Forms v sadě Visual Studio pomocí jazyka Visual Basic, krok za krokem.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5dc99b3111b7abafe49668eaae35f595bc0a07
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 81b44e7053b820e625b5ad61d6e537c95cbf9c03
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063189"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159630"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Vytvoření Windows Forms aplikace v sadě Visual Studio pomocí jazyka Visual Basic
 

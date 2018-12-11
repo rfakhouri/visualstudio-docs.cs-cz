@@ -3,6 +3,7 @@ title: Výchozí nastavení v případě podnikového nasazení
 description: Další informace o zásadách domény a dalších operací konfigurace pro podniková nasazení sady Visual Studio.
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 167e69120ba8426acd4bc8a0e9e2e0cc42479444
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064780"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159552"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio 2017
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280594"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159526"
 ---
 # <a name="access-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -37,32 +37,35 @@ Většinu ostatních SQL a NoSQL databáze produktů, které jsou zde uvedeny, j
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|SQL Database|Azure Cosmos DB|Storage (objekty BLOB, tabulky, fronty, soubory)|
-|SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
-
-a další...
+- SQL Database
+- Azure Cosmos DB
+- Storage (objekty BLOB, tabulky, fronty, soubory)
+- SQL Data Warehouse
+- SQL Server Stretch Database
+- StorSimple
+- a další...
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005 – 2016, včetně Express LocalDB|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
-|SQLite|||
-
-a další...
+- SQL Server 2005 – 2016 (včetně Express a LocalDB)
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- a další...
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|NDatabáze|OrientDB|RavenDB|
-|VelocityDB|||
-
-a další...
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- NDatabáze
+- OrientDB |
+- RavenDB
+- VelocityDB
+- a další...
 
 Mnoho dodavatelů databáze a třetí strany nepodporují integraci s Visual Studio pomocí balíčků NuGet. Můžete prozkoumat nabídky na nuget.org nebo prostřednictvím aplikaci Správce balíčků NuGet v sadě Visual Studio (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet Balíčky pro řešení**). Produkty databáze můžete integrovat s aplikací Visual Studio jako rozšíření. Tyto nabídky v aplikaci Visual Studio Marketplace můžete procházet tak, že přejdete do **nástroje**, **rozšíření a aktualizace** a následným výběrem **Online** v levém podokně Dialogové okno. Další informace najdete v tématu [kompatibilní databázové systémy pro sadu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
@@ -73,7 +76,7 @@ Mnoho dodavatelů databáze a třetí strany nepodporují integraci s Visual Stu
 
 Všechny .NET přístup k datům, včetně v .NET Core, vychází z technologie ADO.NET, sadu tříd, který definuje rozhraní pro přístup k jakýkoli druh zdroje dat, relačních i nerelačních. Visual Studio obsahuje několik nástrojů a návrhářů, které pracují s ADO.NET připojení k databázím, vám usnadní pracuje s daty a prezentovat uživateli. Dokumentace v této části popisuje, jak pomocí těchto nástrojů. Také můžete programovat přímo proti objekty příkazů ADO.NET. Další informace o přímé volání rozhraní API technologie ADO.NET naleznete v tématu [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Dokumentace k přístupu k datům související s technologií ASP.NET, naleznete v tématu [práce s daty](http://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu ASP.NET. Kurz týkající se používá nástroj Entity Framework s architekturou ASP.NET MVC, naleznete v tématu [Začínáme s Entity Framework 6 Code First pomocí MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Dokumentace k přístupu k datům související s technologií ASP.NET, naleznete v tématu [práce s daty](https://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu ASP.NET. Kurz týkající se používá nástroj Entity Framework s architekturou ASP.NET MVC, naleznete v tématu [Začínáme s Entity Framework 6 Code First pomocí MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Univerzální aplikace pro platformu Windows (UPW) v jazyce C# nebo Visual Basic můžete použít Microsoft Azure SDK pro .NET pro přístup k Azure Storage a dalšími službami Azure. Třída Windows.Web.HttpClient umožňuje komunikaci se všemi službami, RESTful. Další informace najdete v tématu [jak se připojit k serveru HTTP pomocí Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -103,9 +106,9 @@ Používejte aplikací v jazyce C++, které se připojují k systému SQL Server
 
 Můžete použít programy v jazyce C++, které využívají služby REST [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
-Programy v jazyce C++, které fungují s Microsoft Azure Storage můžete použít [Microsoft Azure Storage Client](http://www.nuget.org/packages/wastorage).
+Programy v jazyce C++, které fungují s Microsoft Azure Storage můžete použít [Microsoft Azure Storage Client](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP).
 
-Modelování dat&mdash;sady Visual Studio neposkytuje vrstvu ORM pro jazyk C++. [TYPU](http://www.codesynthesis.com/products/odb/) je oblíbený open source ORM pro jazyk C++.
+Modelování dat&mdash;sady Visual Studio neposkytuje vrstvu ORM pro jazyk C++. [TYPU](https://www.codesynthesis.com/products/odb/) je oblíbený open source ORM pro jazyk C++.
 
 Další informace o připojení k databázím z aplikací v jazyce C++, naleznete v tématu [sady Visual Studio data tools pro C++](../data-tools/visual-studio-data-tools-for-cpp.md). Další informace o starší verze technologií přístupu k datům Visual C++, naleznete v tématu [přístup k datům](/cpp/data/data-access-in-cpp).
 
@@ -135,7 +138,7 @@ Nainstalujte [podpora Pythonu v sadě Visual Studio](../python/overview-of-pytho
 
 [ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;popisuje způsob vytváření datových aplikací, které umožňují vývojářům programovat proti Koncepční model místo přímo na relační databázi.
 
-[4.5 služby WCF Data](/dotnet/framework/data/wcf/index)&mdash;popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pro nasazení datových služeb na webu nebo intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[4.5 služby WCF Data](/dotnet/framework/data/wcf/index)&mdash;popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pro nasazení datových služeb na webu nebo intranetu, které implementují [Open Data Protocol (OData)](https://www.odata.org/).
 
 [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)&mdash;obsahuje odkazy na témata, která popisují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o programování orientovaném na schéma, ukládání dat do mezipaměti a přístupu k datům na straně serveru.
 

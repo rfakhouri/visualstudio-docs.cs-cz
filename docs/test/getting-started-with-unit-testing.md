@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6e8835edb2b340778c4431d3de5b554d6aeb6c6d
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370804"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158811"
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testováním částí
 
@@ -147,7 +147,7 @@ Postup povolení rozhraní pro testování třetích stran jsou následující:
 
 1. Kód pro testování částí.
 
-   ![Přidejte kód pro testování částí](media/create3rdpartyunittest7.png)
+   ![Přidejte kód do souboru kódu jednotkového testu](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>Viz také:
 

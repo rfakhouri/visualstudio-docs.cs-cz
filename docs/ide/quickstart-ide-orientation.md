@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fafb5e9f99c42eb799aa310042c9f8e9ffd0300
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056448"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159565"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý start: První pohled na integrovaném vývojovém prostředí sady Visual Studio
 
 V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio provedeme si některé z okna, nabídek a další funkce uživatelského rozhraní.
 
@@ -113,6 +113,6 @@ Jsme se zabývali jenom některé funkce sady Visual Studio k seznámit s uživa
 
 ## <a name="see-also"></a>Viz také:
 
-- [Přehled prostředí IDE sady Visual Studio](../ide/visual-studio-ide.md)
+- [Přehled prostředí IDE sady Visual Studio](../get-started/visual-studio-ide.md)
 - [Další funkce sady Visual Studio 2017](../ide/advanced-feature-overview.md)
 - [Změna barvy motivu a písma](../ide/quickstart-personalize-the-ide.md)

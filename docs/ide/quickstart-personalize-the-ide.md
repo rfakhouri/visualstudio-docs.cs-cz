@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5794e576cfa99db2dac6b06e3f9f2e8514c3f31b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064229"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159409"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý start: Přizpůsobení integrovaného vývojového prostředí sady Visual Studio a Editor
 
@@ -100,4 +100,4 @@ Prozkoumali jsme pár způsoby přizpůsobení barev v sadě Visual Studio. Douf
 ## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení editoru](../ide/customizing-the-editor.md)
-- [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)
+- [Integrované vývojové prostředí sady Visual Studio – přehled](../get-started/visual-studio-ide.md)

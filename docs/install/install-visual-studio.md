@@ -2,7 +2,7 @@
 title: Instalace sady Visual Studio
 titleSuffix: ''
 description: Zjistěte, jak nainstalovat sadu Visual Studio, krok za krokem.
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9ea8bcd88c77cc99c01c2623cb42a23b3b55d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049675"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159734"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 

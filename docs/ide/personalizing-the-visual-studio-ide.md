@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8710926591c565528bbf65ba1af79a670ad76ee7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057311"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159500"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení prostředí IDE sady Visual Studio
 
@@ -42,7 +42,7 @@ Mnoho možností přizpůsobení, které jsou vystaveny prostřednictvím [možn
 
 Chcete-li změnit barevný motiv mezi světla a tmavě modrá, typ `environment` v **Snadné spuštění** pole a klikněte na tlačítko **prostředí--> Obecné**. V **možnosti** dialogovém okně Změnit **barevný motiv** možnost.
 
-Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **Snadné spuštění** pole a klikněte na tlačítko **prostředí--> písma a barvy**. Zobrazit [postupy: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **Snadné spuštění** pole a klikněte na tlačítko **prostředí--> písma a barvy**. Zobrazit [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Hlavní nabídka malých a velkých písmen
 
@@ -50,7 +50,7 @@ Můžete změnit malých a velkých písmen hlavní nabídky mezi **Mena všech 
 
 ### <a name="customize-menus-and-toolbars"></a>Přizpůsobení nabídek a panelů nástrojů
 
-Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [jak: Přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="start-page"></a>Úvodní stránka
 
@@ -67,6 +67,6 @@ Můžete přizpůsobit **nástroje** nabídky ke spuštění externích nástroj
 ## <a name="see-also"></a>Viz také:
 
 - [Nastavení prostředí](environment-settings.md)
-- [Visual Studio IDE – přehled](../ide/visual-studio-ide.md)
-- [Rychlý start: Nejdřív se podívejte na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
+- [Rychlý start: První pohled na integrovaném vývojovém prostředí sady Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Přizpůsobení sady Visual Studio pro Mac integrovaného vývojového prostředí](/visualstudio/mac/customizing-the-ide)

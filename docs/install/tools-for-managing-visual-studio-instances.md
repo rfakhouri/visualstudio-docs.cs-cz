@@ -4,6 +4,7 @@ titleSuffix: ''
 description: Další informace o nástrojích, které můžete použít ke zjišťování a správa instalací sady Visual Studio na klientských počítačích.
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff207b753a864994c8219f59458d66b3e004097
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 909ea85a68652467e3288e1e3f8f8e2d4e0df5b7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051954"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158564"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -31,8 +32,8 @@ Existuje několik nástrojů, které můžete použít k detekci instalace sady 
 Vylepšili jsme k dispozici několik nástrojů, které vám pomohou zjistit a spravovat nainstalované instance sady Visual Studio na klientských počítačích:
 
 * [VSWhere](https://github.com/microsoft/vswhere): spustitelný soubor sestavení do sady Visual Studio nebo k dispozici pro samostatné distribuci, která vám pomůže najít umístění pro všechny instance sady Visual Studio na daném počítači.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): skripty prostředí PowerShell, které používají rozhraní API pro konfiguraci nastavení pro identifikaci nainstalované instance sady Visual Studio.
-* [Ukázky nastavení VS](https://github.com/microsoft/vs-setup-samples): C# a C++ ukázky, které ukazují, jak použít rozhraní API pro konfiguraci nastavení k dotazování existující instalaci.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Skripty prostředí PowerShell, které používají rozhraní API pro konfiguraci nastavení pro identifikaci nainstalované instance sady Visual Studio.
+* [Ukázky nastavení VS](https://github.com/microsoft/vs-setup-samples): C#a C++ – ukázky, které ukazují, jak použít rozhraní API pro konfiguraci nastavení k dotazování existující instalaci.
 
 Kromě toho [rozhraní API pro konfiguraci nastavení](<xref:Microsoft.VisualStudio.Setup.Configuration>) poskytuje rozhraní pro vývojáře, kteří chtějí vytvářet své vlastní nástroje pro dotazem instancí sady Visual Studio.
 

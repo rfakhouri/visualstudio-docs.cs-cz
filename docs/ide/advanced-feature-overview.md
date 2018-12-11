@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9452e732458a91ce5cc3eea505c7ab3e6dec1774
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062661"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159396"
 ---
 # <a name="features-of-visual-studio-2017"></a>Funkce sady Visual Studio 2017
 
-[Přehled Visual Studio IDE](../ide/visual-studio-ide.md) článek obsahuje základní informace o sadě Visual Studio. Tento článek popisuje funkce, které může být vhodnější pro zkušené vývojáře nebo osoby, které už znáte Visual Studio.
+[Přehled Visual Studio IDE](../get-started/visual-studio-ide.md) článek obsahuje základní informace o sadě Visual Studio. Tento článek popisuje funkce, které může být vhodnější pro zkušené vývojáře nebo osoby, které už znáte Visual Studio.
 
 ## <a name="modular-installation"></a>Modulární instalace
 
@@ -127,5 +127,5 @@ Další informace o rozšíření sady Visual Studio najdete v tématu [rozší�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Visual Studio IDE – přehled](../ide/visual-studio-ide.md)
+- [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
 - [Co je nového v sadě Visual Studio 2017](../ide/whats-new-in-visual-studio.md)

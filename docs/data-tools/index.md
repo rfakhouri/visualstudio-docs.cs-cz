@@ -1,6 +1,6 @@
 ---
 title: Vývoj řešení pro data
-description: Informace o nástrojích datových řešení v sadě Visual Studio.
+description: Další informace o různých nástrojů pro vývoj řešení pro data v sadě Visual Studio, včetně nástroje rozhraní .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight a Azure Stream Analytics.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6920ad723db86ada57994734cd8638a6219981a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058497"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159682"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Pomocí nástrojů data v sadě Visual Studio a vyvíjet řešení pro data
 
@@ -116,7 +116,6 @@ Zjistěte, jak pomocí nástrojů data v sadě Visual Studio můžete vyvíjet a
 
 ---
 
-<hr>
 <h2>Odkaz</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +125,7 @@ Zjistěte, jak pomocí nástrojů data v sadě Visual Studio můžete vyvíjet a
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

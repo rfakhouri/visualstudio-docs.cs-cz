@@ -1,10 +1,11 @@
 ---
 title: Začínáme s konzolové aplikace jazyka C# v sadě Visual Studio
+titleSuffix: ''
 description: Zjistěte, jak vytvořit konzolovou aplikaci C# v sadě Visual Studio, krok za krokem.
-ms.custom: ''
 ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,16 +15,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: d15e22ce80ed7e46eea7ded93bff0af8e82d9ef4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244369"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159877"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>Kurz: Začínáme s aplikaci konzoly C# v sadě Visual Studio
 
-V tomto kurzu pro jazyk C#, budete používat Visual Studio k vytváření a spustíte aplikaci konzoly a prozkoumat některé funkce [sady Visual Studio integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
+V tomto kurzu pro jazyk C#, budete používat Visual Studio k vytváření a spustíte aplikaci konzoly a prozkoumat některé funkce [sady Visual Studio integrované vývojové prostředí (IDE)](../get-started/visual-studio-ide.md) při uděláte.
 
 Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
@@ -53,7 +54,7 @@ Pokud se nezobrazí **Konzolová aplikace (.NET Core)** šablony projektu, můž
 
    ![Úlohy pro vývoj pro různé platformy .NET core v instalačním programu sady Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Použití nabídky panelu nástrojů
+#### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
 
 1. Zrušit z celkového počtu **nový projekt** dialogového okna a v horní nabídce vyberte **nástroje** > **stažení nástrojů a funkcí**.
 
