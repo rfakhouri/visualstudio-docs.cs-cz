@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 154243351f3ff3e7babc502c2cf96dea6bcf5bf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91d105d1c7b5b60d74dae2f9669a18f8ec064c8
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813834"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248280"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Vytvořit projekty v R v sadě Visual Studio
 
@@ -25,7 +25,7 @@ Projekty jsou vždy spravované v rámci sady Visual Studio *řešení*, který 
 
 ## <a name="creating-a-new-r-project"></a>Vytvoření nového projektu R
 
-1. Spusťte sadu Visual Studio.
+1. Spusťte Visual Studio.
 1. Zvolte **soubor > Nový > projekt...** (**Ctrl**+**Shift**+**N**)
 1. Vyberte "projekt R" v rámci **šablony > R**, dejte projektu název a umístění a pak vyberte **OK**:
 
@@ -63,7 +63,7 @@ Pokud máte existující složky *. R* soubory, které chcete spravovat v projek
 
 ## <a name="project-properties"></a>Vlastnosti projektu
 
-K otevření stránek vlastností projektu, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo vyberte **projektu > vlastnosti (název projektu)* Položka nabídky. Otevřeném okně zobrazí vlastnosti projektu:
+K otevření stránek vlastností projektu, klikněte pravým tlačítkem na projekt v **Průzkumníka řešení** a vyberte **vlastnosti**, nebo vyberte **projektu > vlastnosti (název projektu)** nabídky položka. Otevřeném okně zobrazí vlastnosti projektu:
 
 
 | Tabulátor | Vlastnost | Popis | 
