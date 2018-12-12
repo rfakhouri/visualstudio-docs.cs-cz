@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936035"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307701"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms panel nástrojů
 Šablona položky ovládacího prvku Windows Forms panel nástrojů, který je součástí aplikace Visual Studio Extensibility Tools (VS SDK) umožňuje vytvořit ovládací prvek, který je automaticky přidán do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření ovládacího prvku jednoduchého čítače, které můžete distribuovat ostatním uživatelům.  
@@ -57,7 +57,7 @@ ms.locfileid: "49936035"
     |Ovládací prvek|Vlastnost|Hodnota|  
     |-------------|--------------|-----------|  
     |`Label1`|**Text**|""|  
-    |`Button1`|**Jméno**|btnReset|  
+    |`Button1`|**Název**|btnReset|  
     |`Button1`|**Text**|Resetovat|  
   
 ### <a name="code-the-user-control"></a>Kód uživatelského ovládacího prvku  
@@ -77,16 +77,16 @@ ms.locfileid: "49936035"
 3.  Vytvořte následující veřejnou vlastnost deklarace.  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ ms.locfileid: "49936035"
 4.  Vložte následující kód `Load` události pro ovládací prvek.  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ ms.locfileid: "49936035"
 5.  Vytvořte následující veřejnou metodu pro zvýšení čítače.  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ ms.locfileid: "49936035"
 6.  Přidat deklaraci `Incremented` událostí na třídě ovládacího prvku.  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      Volající může přidat obslužné rutiny na tuto událost reakce na změny v hodnotě čítače.  
@@ -131,7 +131,7 @@ ms.locfileid: "49936035"
 7.  Vraťte se do návrhového zobrazení a dvakrát klikněte **resetování** pro vygenerování `btnReset_Click` obslužná rutina události a vyplňte v, jak je znázorněno v následujícím příkladu.  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ ms.locfileid: "49936035"
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>Testování ovládacího prvku  
@@ -209,7 +209,7 @@ ms.locfileid: "49936035"
      Čítač obnoví **0**.  
   
 ## <a name="next-steps"></a>Další kroky  
- Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName.vsix* v <em>\bin\debug\* složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete *.vsix</em> soubor k síti nebo na web. Když uživatel otevře *VSIX* soubor, ovládací prvek je nainstalován a přidali do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát *VSIX* do souboru [galerii sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webová stránka, aby uživatelé mohli najít tak, že přejdete v **nástroje**  >  **Rozšíření a aktualizace** dialogového okna.  
+ Při sestavení **nástrojů** ovládací prvek, Visual Studio vytvoří soubor s názvem *ProjectName.vsix* \bin\debug\ složky vašeho projektu. Ovládací prvek můžete nasadit tak, že nahrajete *VSIX* soubor k síti nebo na web. Když uživatel otevře *VSIX* soubor, ovládací prvek je nainstalován a přidali do sady Visual Studio **nástrojů** na počítači uživatele. Alternativně můžete nahrát *VSIX* do souboru [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) tak, aby uživatelé můžete najít tak, že přejdete v **nástroje**  >   **Rozšíření a aktualizace** dialogového okna.  
   
 ## <a name="see-also"></a>Viz také:  
  [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160085"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307700"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace Build Tools do kontejneru
 
@@ -118,8 +118,8 @@ Visual Studio Build Tools - a ve větší míře, Visual Studio – vyžadují v
 
 Uložte soubor Dockerfile v následujícím příkladu do nového souboru na disku. Pokud je soubor nazván jednoduše soubor Dockerfile"", je rozpoznán ve výchozím nastavení.
 
-> [!NOTE]
-> V tomto příkladu soubor Dockerfile pouze vyloučí starší Windows SDK, kterou nejde instalovat do kontejnerů. Starší verze způsobit selhání příkazu sestavení.
+> [!WARNING]
+> V tomto příkladu soubor Dockerfile pouze vyloučí starší Windows SDK, kterou nejde instalovat do kontejnerů. Dřívější verze způsobit selhání příkazu sestavení.
 
 1. Otevřete příkazový řádek.
 2. Vytvořte nový adresář (doporučeno):
@@ -165,8 +165,12 @@ Uložte soubor Dockerfile v následujícím příkladu do nového souboru na dis
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace se možná nespustí spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Všimněte si také, že novější Image může pomocí prostředí PowerShell jako výchozí `SHELL` bude `RUN` a `ENTRYPOINT` pokyny k selhání.
+   > [!WARNING]
+   > Pokud vytváříte svou image přímo na microsoft/windowsservercore, nemusí správně nainstalovat rozhraní .NET Framework a je uvedena žádná chyba instalace. Po dokončení instalace se možná nespustí spravovaný kód. Místo toho na základní image [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) nebo novější. Také Upozorňujeme, že Image označené verze 4.7.1 nebo vyšší může pomocí prostředí PowerShell jako výchozí `SHELL` bude `RUN` a `ENTRYPOINT` pokyny k selhání.
+   >
+   > Visual Studio 2017 verze 15,8 nebo starší (libovolný produkt) nenainstaluje správně mcr<span></span>.microsoft\.com\/windows\/servercore:1809 nebo novější. Se nezobrazí žádná chyba.
+   >
+   > Zobrazit [známé problémy pro kontejnery](build-tools-container-issues.md) Další informace.
 
 4. Spusťte následující příkaz v tomto adresáři.
 

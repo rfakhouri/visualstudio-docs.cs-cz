@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078597"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307788"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>Přizpůsobení staršího kódu do editoru
 Editor sady Visual Studio obsahuje řadu funkcí, které se dá dostat z existujícího kódu komponenty. Následující pokyny ukazují, jak přizpůsobit komponentu rozhraní MEF, například VSPackage, využívat funkce editoru. Podle pokynů také ukazují, jak využít adaptéry služby editoru spravovaným a nespravovaným kódem.  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>Chcete-li získat IVxTextBuffer  
   
-1.  Definice rozhraní IVx * jsou ve *VSEditor.h* soubor *\..\VisualStudioIntegration\Common\Inc\\* složce instalace sady Visual Studio SDK.  
+1.  Definice IVx\* rozhraní jsou v *VSEditor.h* soubor *\..\VisualStudioIntegration\Common\Inc\\* složky sady Visual Studio Instalace sady SDK.  
   
 2.  Následující kód vytvoří instanci vyrovnávací paměť textu s použitím `IVsUserData->GetData()` metody. V následujícím kódu `pData` je ukazatel `IVsUserData` objektu.  
   
