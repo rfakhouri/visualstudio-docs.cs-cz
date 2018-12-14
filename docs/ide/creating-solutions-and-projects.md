@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06696ca975fb80eaa97cd265c9d45e6174d3b053
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052149"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348534"
 ---
 # <a name="create-solutions-and-projects"></a>Vytváření řešení a projektů
 
-*Projekty* jsou logické kontejnery ve Visual Studiu, která obsahovat položky potřebné k sestavení aplikace, jako jsou soubory zdrojového kódu, rastrové obrázky, ikony a odkazy na komponent a služeb. Když vytvoříte nový projekt, vytvoří Visual Studio *řešení* tak, aby obsahovala projektu. Pokud chcete, můžete přidat pak dalších nových nebo existujících projektů do řešení. Řešení může také obsahovat soubory, které nejsou připojené do žádného konkrétního projektu.
+*Projekty* uložení položky, které jsou potřebné k sestavení aplikace v sadě Visual Studio, jako jsou soubory zdrojového kódu, rastrové obrázky, ikony a odkazy na komponent a služeb. Když vytvoříte nový projekt, vytvoří Visual Studio *řešení* tak, aby obsahovala projektu. Pokud chcete, můžete přidat pak dalších nových nebo existujících projektů do řešení. Řešení může také obsahovat soubory, které nejsou připojené do žádného konkrétního projektu.
 
 ![Hierarchie řešení nebo projektu](./media/vside-proj-soln.png)
 

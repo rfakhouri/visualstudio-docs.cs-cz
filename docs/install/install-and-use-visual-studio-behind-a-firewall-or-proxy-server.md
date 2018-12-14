@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91074815c0723f24bbb89bcb45eafc0fae5866d6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 3a4e3ec3c7d581d8c99018b2dd8c89f37e33c6ea
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160163"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348492"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a používání sady Visual Studio a služeb Azure za bránou firewall nebo proxy serverem
 
@@ -101,7 +101,7 @@ Pokud chcete mít jistotu, že máte přístup ke všemu, co potřebujete při p
 | NuGet<br><br>Balíček NuGet<br> zjištění | API.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | protokol HTTPS<br><br>HTTP/s | 443<br><br>80/443<br> | Použít k ověření podepsané balíčky NuGet.<br><br>Vyžaduje se pro vyhledávání balíčků NuGet a verze |
 | Informace o úložišti Githubu | api.github.com | protokol HTTPS | 443 | Vyžaduje se pro získání dalších informací o balíčky bower |
 | Linterů Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
-| Cookiecutter<br>Průzkumník šablony<br>zjištění <br><br>Cookiecutter <br>Explorer project<br> Vytvoření | api.github.com <br>RAW.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | protokol HTTPS | 443<br> | Používá ke zjišťování online šablon z našich doporučených kanálu a z úložiště github <br><br>Umožňuje vytvořit projekt z šablony cookiecutter, která vyžaduje jednorázovou podle potřeby instalaci Pythonu balíčku cookiecutteru z indexu balíčků Pythonu (PyPI) |
+| Cookiecutter<br>Průzkumník šablony<br>zjištění <br><br>Cookiecutter <br>Explorer project<br> Vytvoření | api.github.com <br>RAW.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | protokol HTTPS | 443<br> | Používá ke zjišťování online šablon z našich doporučených kanálu a z úložiště GitHub <br><br>Umožňuje vytvořit projekt z šablony cookiecutter, která vyžaduje jednorázovou podle potřeby instalaci Pythonu balíčku cookiecutteru z indexu balíčků Pythonu (PyPI) |
 | Balíček Pythonu <br>zjištění<br><br>Balíček Pythonu <br>management<br><br>Python <br>Nový projekt <br>šablony | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | protokol HTTPS | 443 | Umožňuje vyhledat balíčky pip<br><br>Umožňuje automaticky instalovat modul pip, pokud není nalezena <br><br> Umožňuje vytvořit <br><br>Použít k vyřešení že šablony v dialogovém okně Nový projekt na adresy URL šablony cookiecutter projektu následující Pythonu:<br> -Projekt klasifikace<br>-Projekt clusteringu <br> -Projekt regrese <br> -PyGame využívající PyKinect <br> -Projekt Pyvot |
 | Office web <br>doplněk <br> Manifest <br>Ověření <br>Služba | verificationservice.osi.office.net | protokol HTTPS | 443 | Používá se k ověření manifesty doplňků pro web Office |
 | SharePoint a <br>Doplňky pro Office | sharepoint.com | protokol HTTPS | 443 | Používá k publikování a testování Sharepointu a Office Add-ins k Sharepointu Online |

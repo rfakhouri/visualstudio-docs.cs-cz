@@ -1,6 +1,6 @@
 ---
 title: Publikování do služby IIS pomocí importu nastavení publikování
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: Vytváření a import profilu publikování k nasazení aplikace do služby IIS ze sady Visual Studio
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808462"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348517"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -41,7 +41,7 @@ Soubor nastavení publikování (*\*.publishsettings*) se liší od profil publi
 
 * Musíte mít nainstalovanou sadu Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** úlohy pro vývoj. Pro aplikace .NET Core, musíte také **.NET Core** pracovního vytížení.
 
-    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
+    Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma.
 
 * Generovat soubor nastavení publikování ze služby IIS, musíte mít počítač se systémem Windows Server 2012 nebo Windows Server 2016 a musí mít roli Webový Server služby IIS správně nakonfigurován. Musí také nainstalovaná technologie ASP.NET 4.5 nebo ASP.NET Core. ASP.NET Core, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). ASP.NET 4.5 naleznete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 

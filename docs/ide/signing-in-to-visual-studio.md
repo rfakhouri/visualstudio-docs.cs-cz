@@ -1,9 +1,10 @@
 ---
 title: Přihlášení k sadě Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159851"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348387"
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlášení k sadě Visual Studio
 
@@ -27,7 +28,7 @@ Můžete přizpůsobit a optimalizovat vaše zkušenosti s vývojem v sadě Visu
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Proč se bych se měl(a) přihlásit do aplikace Visual Studio?
 
-Když se přihlásí, Obohaťte vaše prostředí sady Visual Studio. Například po přihlášení, můžete synchronizovat nastavení mezi zařízeními, prodloužit si zkušební verzi a automaticky se připojovat k službě Azure a další.
+Když se přihlásí, Obohaťte vaše prostředí sady Visual Studio. Například po přihlášení můžete [synchronizovat nastavení](synchronized-settings-in-visual-studio.md) napříč zařízeními, prodloužit si zkušební verzi a automaticky se připojovat k službě Azure a další.
 
 Tady je úplný seznam co můžou očekávat a co můžete dělat po přihlášení:
 
@@ -70,6 +71,6 @@ Pokud se vyskytnou potíže při přihlašování, najdete [účtů podpory](htt
 ## <a name="see-also"></a>Viz také:
 
 * [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Integrované vývojové prostředí sady Visual Studio – přehled](../get-started/visual-studio-ide.md)
+* [Visual Studio IDE – přehled](../get-started/visual-studio-ide.md)
 * [Přihlaste se (Visual Studio for Mac)](/visualstudio/mac/signing-in)
 * [Aktivace (Visual Studio for Mac)](/visualstudio/mac/activation)

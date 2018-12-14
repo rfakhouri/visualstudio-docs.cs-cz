@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: db576170443952a3090d57fc8046b34428cc8095
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159669"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348340"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Řešení a projekty v sadě Visual Studio
 
@@ -56,7 +56,7 @@ V sadě Visual Studio, soubor projektu používá **Průzkumníka řešení** zo
 
 ## <a name="solutions"></a>Řešení
 
-Je součástí projektu *řešení*. Řešení obsahuje jeden nebo více souvisejících projektů, spolu s informacemi o sestavení, nastavení okna sady Visual Studio a všechny ostatní soubory, které nejsou spojeny s konkrétní projekt. Řešení je popsán textového souboru (rozšíření *.sln*) s svůj vlastní jedinečný formát; není určen upravit ručně.
+Je součástí projektu *řešení*. Bez ohledu na jeho název řešení není "odpověď". Je prostě kontejner pro jeden nebo více souvisejících projektů, spolu s informacemi o sestavení, nastavení okna sady Visual Studio a všechny ostatní soubory, které nejsou spojeny s konkrétní projekt. Řešení je popsán textového souboru (rozšíření *.sln*) s svůj vlastní jedinečný formát; má nejsou určeny upravit ručně.
 
 Visual Studio používá dva typy souborů (*.sln* a *.suo*) k ukládání nastavení řešení:
 

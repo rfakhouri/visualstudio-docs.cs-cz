@@ -1,23 +1,21 @@
 ---
 title: Synchronizovat nastavení
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-f1_keywords:
-- VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7dcddc06233f439547f0725c1fb39fff26152237
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388488"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348417"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchronizovat nastavení sady Visual Studio mezi několik počítačů
 
@@ -51,11 +49,16 @@ Ve výchozím nastavení jsou synchronizována následující nastavení:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Vypnout synchronizovaná nastavení v určitém počítači
 
-Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnutá. Synchronizovaná nastavení v počítači můžete vypnout tak, že přejdete **nástroje** > **možnosti** > **prostředí**  >   **Účty** stránky a zrušíte zaškrtnutí **synchronizovat nastavení v zařízení při přihlášení k sadě Visual Studio**. Například pokud se rozhodnete nesynchronizovat nastavení sady Visual Studio v počítači "A", všechny změny nastavení na počítači "A" nezobrazí počítače "B" nebo "C". Počítače, "B" a "C" bude dál k synchronizaci mezi sebou, ale ne s počítači "A".
+Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnutá. Synchronizovaná nastavení v počítači můžete vypnout tak, že přejdete **nástroje** > **možnosti** > **prostředí**  >   **Účty** stránky a zrušíte zaškrtnutí **synchronizovat nastavení v zařízení při přihlášení k sadě Visual Studio**.
+
+Například pokud se rozhodnete nesynchronizovat nastavení sady Visual Studio v počítači "A", všechny změny nastavení na počítači "A" nezobrazí počítače "B" nebo "C". Počítače, "B" a "C" bude dál k synchronizaci mezi sebou, ale ne s počítači "A".
+
+> [!NOTE]
+> Pokud se rozhodnete nesynchronizovat nastavení podle zrušením výběru možnosti v **nástroje** > **možnosti** > **prostředí**  >  **Účty** neovlivní stránky nebo jiných verzí, edicí sady Visual Studio, které máte na stejném počítači. Tyto-souběžnými instalacemi sady Visual Studio nadále synchronizovat svoje nastavení (Pokud jste příliš zrušte zaškrtnutí možnosti,).
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronizace nastavení mezi produkty řady Visual Studio a edice
 
-Nastavení lze synchronizovat v jakékoli edici sady Visual Studio, včetně Community edition. Nastavení jsou také synchronizovat napříč rodiny produktů Visual Studio. Všechny tyto produkty řady však může mít svůj vlastní nastavení, která se nesdílejí s Visual Studio. Například nastavení specifické pro jeden produkt v počítači "A" jsou sdíleny v jiném produktu v počítači "B", ale ne s Visual Studio na počítačích "A" nebo "B".
+Nastavení se synchronizují napříč verze a edice sady Visual Studio nainstalované *vedle sebe*. Nastavení jsou také synchronizovat napříč produkty řady Visual Studio, včetně nástroje Blend for Visual Studio. Jednotlivé řady však může mít svůj vlastní nastavení, která se nesdílejí s Visual Studio. Například nastavení specifická pro Blend for Visual Studio na počítači, který "A" nejsou sdíleny s Visual Studio na počítačích "A" nebo "B".
 
 ## <a name="side-by-side-synchronized-settings"></a>Synchronizovaná nastavení vedle sebe
 
@@ -78,4 +81,4 @@ Pokud aktuálně máte – souběžnými instalacemi sady Visual Studio 2017 a c
 
 - [Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
 - [Nastavení prostředí](../ide/environment-settings.md)
-- [Prostředí > dialogové okno Možnosti účty](reference/synchronized-settings-environment-options-dialog-box.md)
+- [Prostředí > dialogové okno Možnosti účty](reference/accounts-environment-options-dialog-box.md)
