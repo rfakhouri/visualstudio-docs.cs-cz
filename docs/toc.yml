@@ -38,7 +38,7 @@ items:
   - name: Úpravy sady Visual Studio
     href: install/modify-visual-studio.md
   - name: Instalace Help Vieweru
-    href: ide/microsoft-help-viewer-installation.md
+    href: help-viewer/installation.md
   - name: Oprava sady Visual Studio
     href: install/repair-visual-studio.md
   - name: Odinstalace sady Visual Studio
@@ -84,12 +84,12 @@ items:
       - name: 'Předplatná sady Visual Studio: Přehled správce'
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: Příručka správce Help Vieweru
-      href: ide/help-viewer-administrator-guide.md
+      href: help-viewer/administrator-guide.md
       items:
       - name: Argumenty příkazového řádku pro aplikaci Help Content Manager
-        href: ide/command-line-arguments-for-the-help-content-manager.md
+        href: help-viewer/command-line-arguments.md
       - name: Přepsání voleb aplikace Help Content Manager
-        href: ide/help-content-manager-overrides.md
+        href: help-viewer/behavior-overrides.md
     - name: Odkaz
       items:
       - name: ID úloh a komponent sady Visual Studio
@@ -288,7 +288,7 @@ items:
               href: ide/best-practices-for-using-code-snippets.md
           - name: Vytváření fragmentů kódu
             items:
-            - name: 'Návod: Vytvoření fragmentu kódu'
+            - name: 'Průvodce: Vytvoření fragmentu kódu'
               href: ide/walkthrough-creating-a-code-snippet.md
             - name: Distribuce fragmentů kódu
               href: ide/how-to-distribute-code-snippets.md
@@ -354,7 +354,7 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: Použití explicitního typu
             href: ide/reference/convert-var-to-explicit-type.md
-        - name: 'Návod: Generování kódu z využití'
+        - name: 'Průvodce: Generování kódu z využití'
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: Tipy pro vyšší produktivitu
         href: ide/productivity-tips-for-visual-studio.md
@@ -520,70 +520,70 @@ items:
         href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
       - name: Kurzy Formulářových aplikací Windows
         items:
-        - name: '1. kurz: Vytvoření prohlížeče obrázků (C#)'
+        - name: 'Kurz 1: Vytvoření prohlížeče obrázků (C#)'
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: 'Krok 1: Vytvořte projekt formulářové aplikace Windows'
+          - name: 'Krok 1: Vytvoření projektu formulářové aplikace Windows'
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: 'Krok 2: Spusťte svůj program'
+          - name: 'Krok 2: Spuštění programu'
             href: ide/step-2-run-your-program.md
-          - name: 'Krok 3: Nastavte vlastnosti svého formuláře'
+          - name: 'Krok 3: Nastavení vlastností formuláře'
             href: ide/step-3-set-your-form-properties.md
-          - name: 'Krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel'
+          - name: 'Krok 4: Rozvržení formuláře pomocí ovládacího prvku TableLayoutPanel'
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: 'Krok 5: Přidejte do svého formuláře ovládací prvky'
+          - name: 'Krok 5: Přidání ovládacích prvků do formuláře'
             href: ide/step-5-add-controls-to-your-form.md
-          - name: 'Krok 6: Pojmenujte své ovládací prvky tlačítek'
+          - name: 'Krok 6: Pojmenování tlačítkových ovládacích prvků'
             href: ide/step-6-name-your-button-controls.md
-          - name: 'Krok 7: Přidejte do svého formuláře komponenty dialogových oken'
+          - name: 'Krok 7: Přidání komponent dialogových oken do formuláře'
             href: ide/step-7-add-dialog-components-to-your-form.md
-          - name: 'Krok 8: Zapište kód pro obslužnou rutinu události zobrazení tlačítka s obrázkem'
+          - name: 'Krok 8: Napsání kódu pro obslužnou rutinu události zobrazení tlačítka s obrázkem'
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: 'Krok 9: Zrevidujte, okomentujte a otestujte svůj kód'
+          - name: 'Krok 9: Kontrola, okomentování a otestování kódu'
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: 'Krok 10: Zapište kód pro přídavná tlačítka a zaškrtávací pole'
+          - name: 'Krok 10: Napsání kódu pro přídavná tlačítka a zaškrtávací políčko'
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-          - name: 'Krok 11: Spusťte svůj program a vyzkoušejte další funkce'
+          - name: 'Krok 11: Spuštění programu a vyzkoušení dalších funkcí'
             href: ide/step-11-run-your-program-and-try-other-features.md
-        - name: '2. kurz: Vytvoření matematického kvízu s časovým limitem (C#)'
+        - name: 'Kurz 2: Vytvoření matematického kvízu s časovým limitem (C#)'
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky'
+          - name: 'Krok 1: Vytvoření projektu a přidání popisků do formuláře'
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
-          - name: 'Krok 2: Vytvořte náhodný problém s přidáním'
+          - name: 'Krok 2: Vytvoření úlohy sčítání náhodných čísel'
             href: ide/step-2-create-a-random-addition-problem.md
-          - name: 'Krok 3: Přidejte časovač odpočítávání'
+          - name: 'Krok 3: Přidání časovače odpočítávání'
             href: ide/step-3-add-a-countdown-timer.md
-          - name: 'Krok 4: Přidejte metodu CheckTheAnswer()'
+          - name: 'Krok 4: Přidání metody CheckTheAnswer()'
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: 'Krok 5: Přidejte obslužné rutiny události pro ovládací prvky NumericUpDown'
+          - name: 'Krok 5: Přidání obslužných rutin událostí pro ovládací prvky NumericUpDown'
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: 'Krok 6: Přidejte problém odečtení'
+          - name: 'Krok 6: Přidání úlohy odčítání'
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: 'Krok 7: Přidejte problémy násobení a dělení'
+          - name: 'Krok 7: Přidání úloh násobení a dělení'
             href: ide/step-7-add-multiplication-and-division-problems.md
           - name: 'Krok 8: Přizpůsobení kvízu'
             href: ide/step-8-customize-the-quiz.md
-        - name: '3. kurz: Vytvoření hry s hledáním shody (C#)'
+        - name: 'Kurz 3: Vytvoření hry s hledáním shody (C#)'
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře tabulku'
+          - name: 'Krok 1: Vytvoření projektu a přidání tabulky do formuláře'
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: 'Krok 2: Přidejte náhodný objekt a seznam ikon'
+          - name: 'Krok 2: Přidání objektu Random a seznamu ikon'
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: 'Krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony'
+          - name: 'Krok 3: Přiřazení náhodné ikony každému popisku'
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: 'Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí'
+          - name: 'Krok 4: Přidání obslužné rutiny události Click ke každému popisku'
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
-          - name: 'Krok 5: Přidejte odkazy na jmenovky'
+          - name: 'Krok 5: Přidání odkazů popisků'
             href: ide/step-5-add-label-references.md
-          - name: 'Krok 6: Přidejte časovač'
+          - name: 'Krok 6: Přidání časovače'
             href: ide/step-6-add-a-timer.md
-          - name: 'Krok 7: Uchovejte páry ve viditelném stavu'
+          - name: 'Krok 7: Zachování dvojic ve viditelném stavu'
             href: ide/step-7-keep-pairs-visible.md
-          - name: 'Krok 8: Přidejte metodu k ověření, zda hráč vyhrál'
+          - name: 'Krok 8: Přidání metody k ověření, jestli hráč vyhrál'
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-          - name: 'Krok 9: Vyzkoušejte jiné funkce'
+          - name: 'Krok 9: Vyzkoušení dalších funkcí'
             href: ide/step-9-try-other-features.md
   - name: Přístup k datům...
     href: data-tools/accessing-data-in-visual-studio.md
@@ -592,7 +592,7 @@ items:
   - name: Kompilace a sestavení
     href: ide/compiling-and-building-in-visual-studio.md
     items:
-    - name: 'Návod: Sestavení aplikace'
+    - name: 'Průvodce: Vytvoření aplikace'
       href: ide/walkthrough-building-an-application.md
     - name: Sestavení a vyčištění projektů a řešení
       href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
@@ -641,7 +641,7 @@ items:
       href: ide/how-to-specify-build-events-csharp.md
     - name: Konfigurace upozornění v jazyce Visual Basic
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 'Návod: Vytvoření prostředí pro sestavení s použitím více počítačů'
+    - name: 'Průvodce: Vytvoření prostředí pro sestavení s použitím více počítačů'
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: Ladění...
     href: debugger/index.md
@@ -785,13 +785,13 @@ items:
           href: ide/reference/quick-launch-environment-options-dialog-box.md
         - name: Prostředí – Po spuštění
           href: ide/reference/startup-environment-options-dialog-box.md
-        - name: Prostředí – Synchronizovaná nastavení
-          href: ide/reference/synchronized-settings-environment-options-dialog-box.md
+        - name: Prostředí – Účty
+          href: ide/reference/accounts-environment-options-dialog-box.md
         - name: Prostředí – Karty a okna
           href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
         - name: Prostředí – Seznam úkolů
           href: ide/reference/task-list-environment-options-dialog-box.md
-        - name: Prostředí – nastavení důvěryhodnosti
+        - name: Prostředí – Nastavení důvěryhodnosti
           href: ide/reference/trust-settings.md
         - name: Prostředí – Webový prohlížeč
           href: ide/reference/web-browser-environment-options-dialog-box.md
@@ -1057,28 +1057,28 @@ items:
     - name: Windows Information Protection (WIP)
       href: ide/exempt-visual-studio-from-wip.md
   - name: Microsoft Help Viewer
-    href: ide/microsoft-help-viewer.md
+    href: help-viewer/overview.md
     items:
     - name: Instalace a správa místního obsahu
-      href: ide/install-and-manage-local-content.md
+      href: help-viewer/install-manage-local-content.md
     - name: Hledání témat v Help Vieweru
       items:
       - name: Hledání témat v rejstříku
-        href: ide/how-to-find-topics-in-the-index.md
+        href: help-viewer/find-topics-index.md
       - name: Hledání témat v obsahu
-        href: ide/how-to-find-topics-in-the-table-of-contents.md
+        href: help-viewer/find-topics-toc.md
       - name: Vyhledávání témat
-        href: ide/how-to-search-for-topics.md
+        href: help-viewer/find-topics.md
         items:
         - name: Logické a rozšířené operátory ve vyhledávacích výrazech
-          href: ide/logical-operators-in-search-expressions.md
+          href: help-viewer/logical-operators-search-expressions.md
     - name: Přizpůsobení programu Help Viewer
-      href: ide/customize-the-help-viewer.md
-    - name: Funkce usnadnění programu Help Viewer
-      href: ide/accessibility-features-of-the-help-viewer.md
+      href: help-viewer/customize.md
+    - name: Funkce usnadnění
+      href: help-viewer/accessibility-features.md
       items:
-      - name: Klávesové zkratky (program Help Viewer)
-        href: ide/shortcut-keys-help-viewer.md
+      - name: Klávesové zkratky
+        href: help-viewer/shortcut-keys.md
   - name: Dotfuscator Community Edition (CE)
     href: ide/dotfuscator/index.md
     items:
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Kontaktujte nás
     href: ide/talk-to-us.md
-ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: ea2c50939b41a1495f02330ad5ca5fb0e0472666
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160072"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348452"
