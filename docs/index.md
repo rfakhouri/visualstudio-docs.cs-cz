@@ -2,16 +2,14 @@
 layout: HubPage
 hide_bc: true
 title: Dokumentace k sadě Visual Studio | Dokumentace Microsoftu
-titleSuffix: ''
 description: Další informace o použití sady Visual Studio 2017 na vývoj aplikací, služeb a nástrojů v jazyce podle vašeho výběru, platformy a zařízení.
 ms.topic: hub-page
-ms.custom: seodec18
-ms.openlocfilehash: b509f5d34596f3db46d20157fd3ce1fd2cec3d7c
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
-ms.translationtype: MT
+ms.openlocfilehash: d458683758916e78d3773b2700fb9ab2ae3acd39
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160098"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750712"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -91,7 +89,7 @@ ms.locfileid: "53160098"
                                             <div class="cardText">
                                                 <h3>Zjistěte, jak pomocí sady Visual Studio</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Spustit prohlídku s průvodcem</a></li>
+                                                    <li><a class="barLink" href="ide/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Spustit prohlídku s průvodcem</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Psaní a úpravy kódu</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Vytváření kódu</a></li>
                                                     <li><a class="barLink" href="debugger/getting-started-with-the-debugger.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Ladění kódu</a></li>
@@ -171,7 +169,7 @@ C# </a>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-fsharp">
                                                                         <img src="https://docs.microsoft.com/dotnet/images/hub/fsharp.svg" alt="F# logo">
-F# </a>
+F # </a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/ide/quickstart-visual-basic-console">
@@ -261,7 +259,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                         <a href="#features1"> </a>
                         <ul id="features1" class="cardsC">
                             <li>
-                                <a href="ide/index-writing-code.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=856608">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -280,7 +278,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="ide/compiling-and-building-in-visual-studio.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833077">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -299,7 +297,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/debugger/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833078">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -318,7 +316,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="test/improve-code-quality.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833079">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -337,7 +335,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/deployment/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834349">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -394,7 +392,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/profiling/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834348">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -414,7 +412,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/extensibility/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833081">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -433,7 +431,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="data-tools/accessing-data-in-visual-studio.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=856607">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -452,7 +450,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/liveshare/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -509,7 +507,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/csharp/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833062">
                                                     <h3>C#</h3>
                                                     <p>Moderní objektově orientované programovací jazyk s funkční programovací možnosti vytvářet libovolné aplikace na platformě .NET.</p>
                                                 </a>
@@ -528,7 +526,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/visual-basic/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833060">
                                                     <h3>Visual Basic</h3>
                                                     <p>Moderní, snadno učí, objektově orientovaný programovací jazyk pro platformu .NET, zaměřuje na snadné vytváření aplikací pro Windows.</p>
                                                 </a>
@@ -547,7 +545,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/cpp/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833063">
                                                     <h3>C++</h3>
                                                     <p>Výkonný a flexibilní programovací jazyk a vývojové prostředí pro vytváření aplikací pro Windows, Linux, iOS a Android.</p>
                                                 </a>
@@ -566,7 +564,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/fsharp/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833067">
                                                     <h3>F#</h3>
                                                     <p>Moderní funkcionální programovací jazyk s funkcemi pro platformu .NET, zaměřuje na usnadnění Funkcionálního programování pro všechny úlohy, objektově orientovaný.</p>
                                                 </a>
@@ -585,7 +583,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/scripting/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833064">
                                                     <h3>JavaScript</h3>
                                                     <p>Zjednodušené, multiplatformní a skriptovací jazyk, často používají k usnadnění další interaktivní webové stránky.</p>
                                                 </a>
@@ -604,7 +602,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="http://www.typescriptlang.org/docs/tutorial.html">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833066">
                                                     <h3>TypeScript</h3>
                                                     <p>Nadmnožina JavaScriptu s kompilací do prostého jazyka JavaScript a vám umožní vytvářet větší škálovatelnost kódu.</p>
                                                 </a>
@@ -623,7 +621,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/visualstudio/python/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
                                                     <h3>Python</h3>
                                                     <p>Dynamický objektově orientované, vysoké úrovně programovací jazyk často používají pro rychlý vývoj aplikací.</p>
                                                 </a>
@@ -642,7 +640,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/visualstudio/rtvs/">
+                                                <a href="https://go.microsoft.com/fwlink/?linkid=833070">
                                                     <h3>R</h3>
                                                     <p>Rozšiřitelné programovací jazyk, obvykle používá pro statické počítačové výpočty a grafiku.</p>
                                                 </a>
@@ -668,7 +666,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="/aspnet/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833085">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -706,7 +704,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/python/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833068">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -725,7 +723,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript/quickstart-vuejs-with-nodejs.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834351">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -744,7 +742,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/data-tools/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833095">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -763,7 +761,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -774,7 +772,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplikace pro datové vědy a analýzy</h3>
-                                            <p>Jazyky a nástroje pro vytváření datových věd aplikací, včetně Python, R, a F#.</p>
+                                            <p>Jazyky a nástroje pro vytváření datových věd aplikací, včetně Python, R a F #.</p>
                                         </div>
                                       </div>
                                     </div>
@@ -782,7 +780,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://developer.microsoft.com/office/docs">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833075">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -811,7 +809,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833082">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -830,7 +828,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/dotnet/framework/develop-client-apps">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833083">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -849,7 +847,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/windows/desktop-applications-visual-cpp">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833084">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -878,7 +876,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </div>
                             </li>
                             <li>
-                                <a href="/xamarin/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833088">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -897,7 +895,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="cross-platform/visual-studio-tools-for-unity.md">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833091">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -916,7 +914,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833089">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -935,7 +933,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/cross-platform/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833090">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -954,7 +952,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/windows/uwp/gaming/e2e">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834749">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -978,7 +976,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                         <a href="#other">Další sady nástrojů</a>
                         <ul id="other" class="cardsC">
                             <li>
-                                <a href="/visualstudio/extensibility/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834750">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -997,7 +995,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/cpp/linux/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=833099">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1016,7 +1014,7 @@ Webové aplikace pomocí ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="/dotnet/core/">
+                                <a href="https://go.microsoft.com/fwlink/?linkid=856606">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1046,19 +1044,19 @@ Webové aplikace pomocí ASP.NET Core</a>
         <h2>Neustále USA</h2>
         <ul class="links">
            <li>
-                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> blog </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> blog </a>
             </li>
             <li>
-                <a href="https://twitter.com/VisualStudio"> Na twitteru </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Na twitteru </a>
             </li>
             <li>
-                <a href="https://stackoverflow.com/questions/tagged/visual-studio"> Přetečení zásobníku </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Přetečení zásobníku </a>
             </li>
             <li>
-                <a href="ide/talk-to-us.md"> Hlášení problémů </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=874480"> Hlášení problémů </a>
             </li>
             <li>
-                <a href="https://developercommunity.visualstudio.com/spaces/8/index.html"> Komunita vývojářů </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> User Voice </a>
             </li>
         </ul>
     </div>

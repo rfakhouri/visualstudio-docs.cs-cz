@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881778"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Položky registru pro doplňky VSTO
   Při nasazení doplňků VSTO, které jsou vytvořené pomocí sady Visual Studio, musíte vytvořit konkrétní sady položek registru. Tyto položky registru poskytují informace, které umožní aplikaci Microsoft Office zjišťovat a načíst doplňku VSTO.  
@@ -88,7 +88,7 @@ ms.locfileid: "50673013"
   
  Stejně jako jiné položky registru sdílí všechny doplňky VSTO, Visual Studio vytvoří formuláři položky registru oblast na vývojovém počítači při sestavování projektu. Pokud nasazení doplňku VSTO pomocí ClickOnce, jsou automaticky vytvořeny položky registru v počítači koncového uživatele. Pokud nasazení doplňku VSTO pomocí Instalační služby systému Windows, musíte nakonfigurovat projekt InstallShield Limited Edition vytvořit položky registru v počítači koncového uživatele.  
   
- Další informace o položkách registru oblasti formuláře, naleznete v tématu [umístění oblasti formuláře ve formě vlastních](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Další informace o oblastech formulářů aplikace Outlook, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
+ Další informace o položkách registru oblasti formuláře, naleznete v tématu [umístění oblasti formuláře ve formě vlastních](http://msdn.microsoft.com/library/office/ff868998.aspx). Další informace o oblastech formulářů aplikace Outlook, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Hodnotách LoadBehavior  
  **LoadBehavior** položku *kořenové*\Software\Microsoft\Office\\*název_aplikace*\Addins\\ *– doplněk ID* klíč obsahuje bitová kombinace hodnot, které určují chování běhu v doplňku VSTO. Nejnižší bitem (hodnoty 0 a 1) označuje, zda doplňku VSTO je aktuálně uvolněných nebo načtena. Ostatní bity o tom, kdy se aplikace pokusí načíst doplňku VSTO.  
