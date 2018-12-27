@@ -31,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1141c8d54bf545983c89e13ddbf17ffd41e5011
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938796"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684938"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Vytvoření a konfigurace členů typů v Návrháři tříd
 
@@ -55,16 +55,16 @@ Můžete přidat tyto členy typů pro třídu diagramu a konfigurovat je v **po
 > [!NOTE]
 > Když přístupové objekty get a set nepotřebují další logiku, můžete deklaraci vlastnosti zestručnit pomocí automaticky implementovaných vlastností (pouze jazyk C#). Chcete-li zobrazit úplný podpis z **Diagram tříd** nabídku zvolte **změnit formát členů** > **zobrazit úplný podpis**. Další informace o automaticky implementovaných vlastnostech naleznete v tématu [implemented Properties](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
 
-## <a name="common-tasks"></a>Běžné úlohy
+## <a name="common-tasks"></a>Běžné úkoly
 
 |Úloha|Podpůrný obsah|
 |----------| - |
-|**Začínáme:** předtím, než vytvoříte a nakonfigurujete členy typů, je nutné otevřít **podrobností třídy** okna.|- [Otevření okna podrobností třídy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Poznámky k použití okna podrobností třídy](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Zobrazení informací jen pro čtení](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Klávesové zkratky klávesnice a myši v diagramu tříd a podrobností třídy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Vytvoření a úpravy členů typů:** můžete vytvořit nové členy, měnit členy a přidat parametry k metodě pomocí **podrobností třídy** okna.|- [Vytváření členů](creating-and-configuring-type-members.md#create-members)<br />- [Úpravy členů typů](creating-and-configuring-type-members.md#modify-type-members)<br />- [Přidání parametrů k metodám](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Začínáme:** Než vytvoříte a nakonfigurujete členy typů, je nutné otevřít **podrobností třídy** okna.|- [Otevření okna podrobností třídy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Poznámky k použití okna podrobností třídy](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Zobrazení informací jen pro čtení](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Klávesové zkratky klávesnice a myši v diagramu tříd a podrobností třídy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Vytvoření a úpravy členů typů:** Můžete vytvořit nové členy, měnit členy a přidat parametry k metodě pomocí **podrobností třídy** okna.|- [Vytváření členů](creating-and-configuring-type-members.md#create-members)<br />- [Úpravy členů typů](creating-and-configuring-type-members.md#modify-type-members)<br />- [Přidání parametrů k metodám](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Otevření okna podrobností třídy
 
-Ve výchozím nastavení **podrobností třídy** okno se automaticky zobrazí při otevření nový diagram tříd. Zobrazit [postupy: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md)). Můžete také otevřít **podrobností třídy** okno následujícími způsoby:
+Ve výchozím nastavení **podrobností třídy** okno se automaticky zobrazí při otevření nový diagram tříd. Zobrazit [jak: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md)). Můžete také otevřít **podrobností třídy** okno následujícími způsoby:
 
 - Klikněte pravým tlačítkem na jakékoli třídy v diagramu, chcete-li zobrazit místní nabídku a zvolte **podrobností třídy**.
 
@@ -124,7 +124,7 @@ Ve výchozím nastavení **podrobností třídy** okno se automaticky zobrazí p
 
 4.  Volitelně můžete určit další detaily členu, například jeho typ.
 
-     **Poznámka:** klávesové zkratky můžete také použít k vytváření členů. Další informace najdete v tématu [klávesové zkratky a zkratky myši v diagramu tříd a podrobností třídy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Poznámka:** Klávesové zkratky můžete také použít k vytváření členů. Další informace najdete v tématu [klávesové zkratky a zkratky myši v diagramu tříd a podrobností třídy okna](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Úpravy členů typů
 
@@ -187,7 +187,7 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
 Řádky parametru obsahují následující položky:
 
-- **Jméno**
+- **Název**
 
      **Název** sloupců na řádku parametru zobrazí název parametru. Tento název se také zobrazí v **název** vlastností v okně Vlastnosti. Tuto buňku můžete použít ke změně názvu jakéhokoli parametru, který má oprávnění pro čtení i zápis.
 
@@ -209,7 +209,7 @@ Přidání parametrů do metody pomocí **podrobností třídy** okna. Parametry
 
      Poslední řádek parametru členu obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-**Vlastnosti** stejné vlastnosti parametru, který se zobrazí v okně se zobrazí **podrobností třídy** okna: **název**, **typ**,  **Modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.
+**Vlastnosti** stejné vlastnosti parametru, který se zobrazí v okně se zobrazí **podrobností třídy** okno: **Název**, **typ**, **modifikátor**, **Souhrn**, jakož i **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.
 
 > [!NOTE]
 > Chcete-li přidat parametr do delegáta, přečtěte si téma [vytváření členů](creating-and-configuring-type-members.md#create-members).
@@ -320,5 +320,5 @@ Nativní kód C++ nelze upravovat pomocí návrháře tříd nebo **podrobností
 
 ## <a name="see-also"></a>Viz také:
 
-- [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
+- [Zobrazování typů a vztahů](designing-and-viewing-classes-and-types.md)
 - [Refaktoring tříd a typů](refactoring-classes-and-types.md)

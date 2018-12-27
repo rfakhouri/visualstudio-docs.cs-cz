@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c041ebd5b9bc692fea376582c9451024bf3ce9e4
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967503"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685016"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 
@@ -55,7 +55,7 @@ Další informace o těchto nástrojích a scénářích, které podporují, naj
 
 ## <a name="scenario-overview"></a>Přehled scénářů
 
-Tento scénář popisuje epizody z životního cyklu vývoje softwaru dvou fiktivních společností: večeře nyní a Lucerne Publishing. Společnost dinner Now poskytuje služby pro doručování webového pokrmů v Seattlu. Zákazníci mohou objednat jídlo a zaplatit za ně na webu Dinner Now. Objednávky jsou potom odeslány příslušné místní restauraci pro dodání. Společnost Lucerne Publishing, společnost působící v New Yorku, provozuje několik podniků, vypnout a na webu. Například spusťte web, kde můžou zákazníci posílat své recenze na restauraci.
+Tento scénář popisuje epizody z životního cyklu vývoje softwaru dvou fiktivních společností: Společnost dinner Now a Lucerne publikování. Společnost dinner Now poskytuje služby pro doručování webového pokrmů v Seattlu. Zákazníci mohou objednat jídlo a zaplatit za ně na webu Dinner Now. Objednávky jsou potom odeslány příslušné místní restauraci pro dodání. Společnost Lucerne Publishing, společnost působící v New Yorku, provozuje několik podniků, vypnout a na webu. Například spusťte web, kde můžou zákazníci posílat své recenze na restauraci.
 
 Společnost Lucerne nedávno odkoupila web Dinner Now a chce provést následující změny:
 
@@ -97,7 +97,7 @@ Další informace:
 
 - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -107,7 +107,7 @@ Oba týmy používají ověřování závislostí také aby se zajistilo, že k�
 
 - [Udržování kódu v souladu s návrhem](#ValidatingCode)
 
-- [Popište logickou architekturu: diagramy závislostí](#DescribeLayers)
+- [Popište logickou architekturu: Diagramy závislostí](#DescribeLayers)
 
 - [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
 
@@ -147,7 +147,7 @@ Společnost dinner Now musí odhadnout náklady na splnění nového požadavku.
 |**Mapování nebo diagramu**|**Ukazuje**|
 |-|-|
 |*Mapy kódu*<br /><br /> Další informace:<br /><br /> - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br />- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)<br />- [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Závislosti a jiné vztahy v kódu.<br /><br /> Například web Dinner Now může začít kontrolou map kódu sestavení přehledné informace o sestavení a jejich závislosti. Mohou se ponořit do mapy pro prozkoumání oborů názvů a třídy v těchto sestaveních.<br /><br /> Společnost dinner Now může také vytváření map prozkoumat určité oblasti a další druhy vztahů v kódu. Používají Průzkumníka řešení najít a vybrat oblasti a vztahy, které je zajímají.|
-|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu|
+|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Existující třídy v kódu|
 
  Například vývojář vytvoří mapu kódu. Nastaví oblast pro zaměření na oblasti, které budou ovlivněny novým scénářem. Tyto oblasti jsou vybrané a zvýrazněné v mapě:
 
@@ -167,14 +167,14 @@ Společnost dinner Now musí odhadnout náklady na splnění nového požadavku.
 
 |**Diagramy**|**Popisuje**|
 |-|-|
-|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Existující třídy v kódu.|
+|*Diagram třídy založený na kódu*<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|Existující třídy v kódu.|
 
 ### <a name="ValidatingCode"></a> Udržujte kód v souladu s návrhem
  Společnost dinner Now musí zajistit, že aktualizovaný kód zůstane konzistentní s návrhem. Vytvářejí diagramy závislostí, které popisují vrstvy funkčnosti v systému, určují povolené závislosti mezi nimi a přidružují řešení artefakty k těmto vrstvám.
 
 |**Diagram**|**Popisuje**|
 |-|-|
-|*Diagram závislostí*<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Závislost diagram organizuje a mapuje artefakty v řešení sady Visual Studio účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|
+|*Diagram závislostí*<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|Logická architektura kódu.<br /><br /> Závislost diagram organizuje a mapuje artefakty v řešení sady Visual Studio účelem abstrahování skupin nazvaných *vrstvy*. Tyto vrstvy určují role, úlohy nebo funkce, které tyto artefakty provádějí v systému.<br /><br /> Diagramy vrstev jsou užitečné pro popis zamýšleného návrhu systému a ověřování vyvíjeného kódu ve srovnání s tímto návrhem.<br /><br /> Chcete-li vytvořit vrstvy, přetáhněte položky z Průzkumníku řešení, map kódu, zobrazení tříd a prohlížeče objektů. Chcete-li nakreslit nové vrstvy, použijte panel nástrojů nebo kliknutím pravým tlačítkem na plochu diagramu.<br /><br /> Chcete-li zobrazit existující závislosti, klikněte pravým tlačítkem na plochu diagramu a potom klikněte na tlačítko **generovat závislosti**. K určení zamýšlených závislostí, nakreslete nové závislosti.|
 
  Například následující diagram závislostí popisuje závislosti mezi vrstvami a počet artefaktů, které jsou spojené s každou vrstvou:
 
@@ -250,11 +250,11 @@ Další informace:
 
 Společnost Lucerne a Dinner Now musí integrovat své platební systémy. Následující oddíly zobrazují že diagramy modelování v sadě Visual Studio pomáhat při provedení této úlohy:
 
-- [Vizualizujte existující kód: Kódových map](#VisualizeCode)
+- [Vizualizujte existující kód: Mapy kódu](#VisualizeCode)
 
-- [Definice glosáře typů: diagramy třídy](#DefineClasses)
+- [Definice glosáře typů: Diagramy tříd](#DefineClasses)
 
-- [Popište logickou architekturu: diagramy závislostí](#DescribeLayers)
+- [Popište logickou architekturu: Diagramy závislostí](#DescribeLayers)
 
 Další informace:
 
@@ -264,7 +264,7 @@ Další informace:
 
 - [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)
 
-### <a name="VisualizeCode"></a> Vizualizujte existující kód: Kódových map
+### <a name="VisualizeCode"></a> Vizualizujte existující kód: Mapy kódu
 
 Mapy kódu zobrazit aktuální organizaci a vztahy v kódu. Položky jsou představovány *uzly* na mapě, a vztahy jsou reprezentovány *odkazy*. Mapy kódu vám může pomoct provádět následující druhy úloh:
 
@@ -318,7 +318,7 @@ Mapa ukazuje, že třída PaymentApprover je nyní v oboru názvů DinnerNow.Bus
 
      Například pro vizualizaci rozvrstvení v kódu, vyberte rozložení stromové struktury. Zobrazit [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).
 
-#### <a name="summary-strengths-of-code-maps"></a>Shrnutí: Silné stránky map kódu
+#### <a name="summary-strengths-of-code-maps"></a>Shrnutí: Silné map kódu
  Mapy kódu vám pomůže:
 
 - Další informace o organizaci a vztahy v existujícím kódu.
@@ -331,10 +331,10 @@ Mapa ukazuje, že třída PaymentApprover je nyní v oboru názvů DinnerNow.Bus
 
 |**Diagram**|**Popisuje**|
 |-|-|
-|Diagram závislostí|Logická architektura systému. Pomocí ověřování závislostí se ujistěte, že kód zůstane konzistentní s návrhem.<br /><br /> Chcete-li usnadnit identifikaci existujících dependencys nebo zamýšlený dependencys, vytvořte si mapu kódu a seskupte související položky. Chcete-li vytvořit diagram závislostí, naleznete v tématu:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)|
-|Diagram tříd (založený na kódu)|Existující třídy v kódu pro konkrétní projekt.<br /><br /> Chcete-li vizualizovat a upravit existující třídu v kódu, použijte nástroj Návrhář tříd.<br /><br /> Zobrazit [postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Diagram závislostí|Logická architektura systému. Pomocí ověřování závislostí se ujistěte, že kód zůstane konzistentní s návrhem.<br /><br /> Chcete-li usnadnit identifikaci existujících dependencys nebo zamýšlený dependencys, vytvořte si mapu kódu a seskupte související položky. Chcete-li vytvořit diagram závislostí, naleznete v tématu:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)|
+|Diagram tříd (založený na kódu)|Existující třídy v kódu pro konkrétní projekt.<br /><br /> Chcete-li vizualizovat a upravit existující třídu v kódu, použijte nástroj Návrhář tříd.<br /><br /> Zobrazit [jak: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
-### <a name="DefineClasses"></a> Definice glosáře typů: diagramy třídy
+### <a name="DefineClasses"></a> Definice glosáře typů: Diagramy tříd
  Diagramy tříd definují entity, podmínky nebo koncepty, které jsou součástí systému a jejich vztahy mezi sebou. Tyto diagramy můžete použít například během vývoje pro popis atributů a operací pro každou třídu, bez ohledu na jejich implementaci jazyka nebo stylu.
 
  Aby usnadnili aplikaci Lucerne popsat a diskutovat subjekty, které se účastní případu použití zpracování platby, nakreslí následující diagram tříd:
@@ -385,7 +385,7 @@ Diagram třídy má následující hlavní funkce:
 
 Jako výchozí bod pro zkoumání a probírání existujících tříd můžete použít Návrháře tříd pro vytvoření diagramů tříd z kódu.
 
-- [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Shrnutí: Silné stránky diagramů tříd
  Diagramy tříd umožňují definovat:
@@ -400,7 +400,7 @@ Jako výchozí bod pro zkoumání a probírání existujících tříd můžete 
 
 |**Diagram**|**Popis**|
 |-|-|
-|Diagram závislostí|Definujte logickou architekturu systému souvislosti se třídami.<br /><br /> Pomocí ověřování závislostí se ujistěte, že kód zůstane konzistentní s návrhem.<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagram závislostí|Definujte logickou architekturu systému souvislosti se třídami.<br /><br /> Pomocí ověřování závislostí se ujistěte, že kód zůstane konzistentní s návrhem.<br /><br /> Další informace:<br /><br /> - [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)<br />- [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br />- [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapy kódu|Vizualizujte organizaci a vztahy v existujícím kódu.<br /><br /> K identifikaci tříd, jejich vztahy a jejich metod, vytvořte mapu kódu, který obsahuje tyto prvky.<br /><br /> Další informace:<br /><br /> - [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> Popište logickou architekturu: diagramy závislostí

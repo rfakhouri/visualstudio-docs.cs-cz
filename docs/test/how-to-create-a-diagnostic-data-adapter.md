@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3417118c5e5a2cac93b5d4111335532d5ee4c272
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068299"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739955"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: vytvoření adaptéru diagnostických dat
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: Vytvoření adaptéru diagnostických dat
 
 Chcete-li vytvořit *adaptér diagnostických dat*, vytvořte knihovnu třídy pomocí sady Visual Studio a potom přidat do knihovny tříd poskytuje Visual Studio Enterprise API adaptéru diagnostických dat. Veškeré informace, které chcete, aby jako datový proud nebo soubor, který chcete odeslat <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> poskytovaného rámcem, při zpracování událostí, které jsou aktivovány v průběhu testovacího běhu. Datové proudy nebo soubory odeslané <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> jsou uloženy jako přílohy k výsledkům testu po dokončení testu. Pokud vytvoříte chybu z těchto výsledků testování nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], soubory se také s chybou propojen.
 
@@ -224,7 +224,7 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
      Tyto soubory jsou připojeny k výsledkům testu. Pokud vytvoříte chybu z těchto výsledků testování nebo při použití [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], jsou soubory také připojeny k chybě.
 
-     Pokud chcete použít vlastní editor pro shromažďování dat pro použití v nastaveních testu naleznete v části [postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md).
+     Pokud chcete použít vlastní editor pro shromažďování dat pro použití v nastaveních testu naleznete v části [jak: Vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/quickstart-create-a-load-test-project.md).
 
 11. Pokud chcete získat soubor protokolu po dokončení testu založené na to, co uživatel nakonfiguroval v nastavení testu, musíte vytvořit *App.config* a přidejte ji do vašeho řešení. Tento soubor má následující formát a musí obsahovat identifikátor URI pro adaptér diagnostických dat pro jeho rozpoznání. Nahraďte skutečné hodnoty "společnost/NázevProduktu/verze".
 
@@ -261,11 +261,11 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
      Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Další informace o instalaci konfiguračního souboru najdete v tématu [postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     Další informace o instalaci konfiguračního souboru najdete v tématu [jak: Instalovat vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
 12. Sestavte řešení k vytvoření sestavení adaptéru diagnostických dat.
 
-13. Informace o instalaci vlastního editoru naleznete v tématu [postupy: instalace vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+13. Informace o instalaci vlastního editoru naleznete v tématu [jak: Instalovat vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
 
 14. Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
@@ -289,4 +289,4 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)
 - [Shromažďování diagnostických dat v manuálních testů (Azure testovací plány)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Shromažďování diagnostických dat při testování (Azure testovací plány)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Postupy: vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [Postupy: Vytvoření vlastního editoru dat pro adaptér diagnostických dat](../test/quickstart-create-a-load-test-project.md)

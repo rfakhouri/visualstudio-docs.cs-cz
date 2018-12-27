@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: dc838a144b1218ebec2c8a46c7c200cf5def1153
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219299"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647532"
 ---
 # <a name="save-data-in-a-transaction"></a>Ukládání dat do transakce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "50219299"
 Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto příkladu `Customers` a `Orders` tabulek z ukázkové databáze Northwind.  
   
 ## <a name="prerequisites"></a>Požadavky  
- Tento návod vyžaduje přístup k ukázkové databázi Northwind. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+ Tento návod vyžaduje přístup k ukázkové databázi Northwind.
   
 ## <a name="create-a-windows-application"></a>Vytvoření aplikace Windows  
  Prvním krokem je vytvoření **aplikace Windows**.  
@@ -90,14 +90,14 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 -   Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md),<xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
+     A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
 -   Přetáhněte související **objednávky** uzlu (není hlavním **objednávky** uzlu, ale následující související podřízené tabulky uzlu **Fax** sloupce) do níže uvedeného formuláře  **CustomersDataGridView**.  
   
-     A <xref:System.Windows.Forms.DataGridView> se zobrazí ve formuláři. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
+     A <xref:System.Windows.Forms.DataGridView> se zobrazí ve formuláři. OrdersTableAdapter a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
   
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Přidat odkaz na sestavení System.Transactions  
- Použití transakce <xref:System.Transactions> oboru názvů. Odkaz na sestavení system.transactions není přidán ve výchozím nastavení, takže je třeba ručně přidat.  
+ Použití transakce <xref:System.Transactions> oboru názvů. Odkaz na sestavení System.Transactions není přidán ve výchozím nastavení, takže je třeba ručně přidat.  
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Chcete-li přidat odkaz na soubor System.Transactions DLL  
   
@@ -165,4 +165,3 @@ Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transact
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
-

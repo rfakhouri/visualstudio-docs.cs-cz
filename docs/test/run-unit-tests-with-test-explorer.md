@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939512"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740397"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -101,8 +101,8 @@ Test Explorer umožňuje seskupit testy do předdefinovaných kategorií. Větš
 
 |Skupina|Popis|
 |-|-----------------|
-|**Doba trvání**|Seskupí testy podle času spuštění: **rychlé**, **střední**, a **pomalá**.|
-|**Výsledek**|Seskupí testy podle výsledků spuštění: **neúspěšné testy**, **přeskočené testy**, **úspěšné testy**.|
+|**Doba trvání**|Seskupí testy podle času spuštění: **Rychlé**, **střední**, a **pomalé**.|
+|**Výsledek**|Skupiny testy podle výsledků spuštění: **Neúspěšné testy**, **přeskočeno testy**, **prošel testy**.|
 |**Osobnostní rysy**|Seskupí testy podle kategorie nebo párových hodnot, které definujete. Syntaxe pro určení kategorií vlastností a hodnot je definována v rámci testovacího rozhraní jednotky.|
 |**Projekt**|Seskupí testy podle názvů projektů.|
 
@@ -150,7 +150,7 @@ Filtrovat podle různých kritérií:
 |**Cesta k souboru**|Hledá plně kvalifikovaný název zdrojové soubory testů pro shody.|
 |**Plně kvalifikovaný název**|Hledá plně kvalifikovaný název testovací obory názvů, tříd a metod pro shody.|
 |**Output**|Prohledá uživatelem definované chybové zprávy, které jsou zapsány do standardního výstupního (stdout) nebo standardní chyby (stderr). Syntaxe pro určení výstupních zpráv je definována v rámci testovacího rozhraní jednotky.|
-|**Výsledek**|Vyhledá názvy kategorií Průzkumníka testů pro shody: **neúspěšné testy**, **přeskočené testy**, **úspěšné testy**.|
+|**Výsledek**|Vyhledá názvy kategorií Průzkumníka testů pro shody: **Neúspěšné testy**, **přeskočeno testy**, **prošel testy**.|
 
 K vyloučení části výsledků filtru, použijte následující syntaxi:
 
@@ -187,7 +187,7 @@ Průzkumník testů můžete použít ke spuštění relace ladění pro testy. 
 
 2. V Průzkumníku testů vyberte testovací metody a pak zvolte **ladit vybrané testy** v místní nabídce.
 
-   Další informace o ladicím programu, najdete v části [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Další informace o ladicím programu, najdete v části [ladit v sadě Visual Studio](../debugger/debugger-feature-tour.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnostika problémů s výkonem test – metoda
 

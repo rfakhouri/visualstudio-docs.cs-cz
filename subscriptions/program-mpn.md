@@ -3,24 +3,24 @@ title: Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Podrobnosti o jaká předplatná jsou k dispozici, platí pravidla a kolik předplatných v programu MPN nabízíme.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876762"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739449"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Předplatná sady Visual Studio nabízí pro partnery v Microsoft Partner Network (MPN)
 Partneři, kteří získejte kompetenci nebo kteří zakoupili Action Pack v programu MPN mají nárok na použití předplatná sady Visual Studio. Tato předplatná jsou licencovaný podle počtu uživatelů a platí pouze v případě přiřazenou na konkrétní uživatele, který se dá použít pro partnerské firmě s názvem.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Předplatná pro partnery s kompetencí pro MPN
-Při nepřesahuje partnerem s kompetencí – buď na stříbrné nebo zlaté úrovně úroveň – partneři získávat core počet předplatných sady Visual Studio Enterprise. Tato základní výhody změny, pokud partner nepřesahuje alespoň jedné zlaté úrovně kompetence. Předplatné Visual Studio Enterprise je vlastní nabídka, která odpovídá přibližně [roční cloudové předplatné sady Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ale s určité výhody odebrat (z nichž mnohá jsou nabízeny zvlášť na partneři jako obecné výhody programu MPN, nikoli jako součástí předplatných sady Visual Studio Enterprise nabízené prostřednictvím programu MPN).
+Při nepřesahuje partnerem s kompetencí – buď na stříbrné nebo zlaté úrovně úroveň – partneři získávat core počet předplatných sady Visual Studio Enterprise. Tato základní výhody změny, pokud partner nepřesahuje alespoň jedné zlaté úrovně kompetence. Předplatné Visual Studio Enterprise je vlastní nabídka, která odpovídá přibližně [Visual Studio Enterprise na úrovni Standard předplatného](https://visualstudio.microsoft.com/vs/pricing/), ale s určité výhody odebrat (z nichž mnohá jsou nabízeny odděleně pro partnery jako obecné výhody programu MPN, nikoli jako součást sady Visual Studio Enterprise předplatných nabízených prostřednictvím programu MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Základní výhody sady Visual Studio pro získávat nejméně jeden s kompetencí jakéhokoli druhu
 

@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842258"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685689"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Postupy: vytváření typů pomocí návrháře tříd
+# <a name="how-to-create-types-by-using-class-designer"></a>Postupy: Vytváření typů pomocí návrháře tříd
 
-K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diagramu tříd. Existující typy najdete v tématu [postupy: zobrazení existujících typů](how-to-view-existing-types.md).
+K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diagramu tříd. Existující typy najdete v tématu [jak: Zobrazení existujících typů](how-to-view-existing-types.md).
 
 ##  <a name="CreateType"></a> Vytvořte nový typ
 
@@ -91,8 +91,7 @@ K navrhování nových typů pro C# a projekty Visual Basic, vytvořte je v diag
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md)
-- [Postupy: vytvoření asociací mezi typy](how-to-create-associations-between-types.md)
+- [Postupy: Vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md)
+- [Postupy: Vytvoření asociací mezi typy](how-to-create-associations-between-types.md)
 - [Vytváření a konfigurace členů typů](creating-and-configuring-type-members.md)
-- [Práce s diagramy tříd](working-with-class-diagrams.md)
 - [Navrhování tříd a typů](designing-and-viewing-classes-and-types.md)

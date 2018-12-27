@@ -1,13 +1,10 @@
 ---
-title: 'Postupy: nastavení názvu vlákna v nativním kódu | Microsoft Docs'
+title: 'Postupy: Nastavení názvu vlákna v nativním kódu | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 04/27/2017
+ms.date: 12/17/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - debugging [C++], threads
@@ -21,21 +18,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2b751451f1362c0ba82871b99b0dbb10434282b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f0819ebe52131e67810b1a3b493ce9f05c477613
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480027"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646809"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Postupy: Nastavení názvu vlákna v nativním kódu
-Názvy vláken je možné v libovolná edice sady Visual Studio. Názvy vláken je užitečné pro udržování přehledu o vláken v **vláken** okno.
+Pojmenování vlákna je možné v jakékoli edici sady Visual Studio. Pojmenování vláken je užitečné pro udržování přehledu o vlákna **vlákna** okna.
 
-K nastavení názvu vlákna v programu, použijte `SetThreadName` fungovat, jak je znázorněno v následujícím příkladu kódu. Všimněte si, že je název vlákno zkopírovány do vlákno tak, aby paměti pro `threadName` parametr, se uvolní.  
-  
-## <a name="example"></a>Příklad  
-  
-```C++  
+## <a name="set-a-thread-name"></a>Nastavení názvu vlákna
+
+`SetThreadName` Funkce je užitečná pro nastavení a zobrazení vláken, pokud je připojen ladicí program ke spuštění kódu. Spouští se v sadě Visual Studio 2017 verze 15.6, můžete použít [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) funkci pro nastavení a zobrazit názvy vláken.
+
+```C++
+#include <windows.h>
+#include <processthreadsapi.h>
+
+int main()
+{
+    HRESULT r;
+    r = SetThreadDescription(
+        GetCurrentThread(),
+        L"ThisIsMyThreadName!"
+    );
+
+    return 0;
+}
+```
+
+## <a name="set-a-thread-name-using-setthreadname"></a>Nastavení názvu vlákna pomocí setthreadname –
+
+K nastavení názvu vlákna ve svém programu, můžete použít také `SetThreadName` fungovat, jak je znázorněno v následujícím příkladu kódu. Všimněte si, že název vlákna je zkopírován do vlákna tak, aby paměti pro `threadName` parametr mohlo být uvolněno.  Tato metoda používá přístup na základě výjimky, který funguje jenom v případě, že v době, kdy se používá metodu založenou na výjimku, je připojen ladicí program. Název vlákna, které jste nastavili pomocí této metody není k dispozici v výpisů paměti nebo nástroje pro analýzu výkonu.
+
+Následující příklad kódu ukazuje, jak používat `SetThreadName`:
+
+```C++
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -65,10 +84,9 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
     }  
 #pragma warning(pop)  
 }  
-  
 ```  
-  
+
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)   
- [Postupy: nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Postupy: Nastavení názvu vlákna ve spravovaném kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md)

@@ -3,18 +3,18 @@ title: 'Komunita Azure Benefit v předplatných: Visual Studio | Dokumentace Mic
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/08/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o benefitech komunity Azure zahrnuté ve vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937457"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739376"
 ---
 # <a name="azure-community"></a>Komunita Azure
 
@@ -34,7 +34,7 @@ Získat pomoc přímo od týmu Azure v rámci vyberte fóra podpory prostřednic
 
 ## <a name="activation-steps"></a>Postup aktivace
 Začínáme s komunitou Azure je snadné.
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici komunity Azure v části Podpora a klepněte **získání nápovědy** odkaz.
     > [!div class="mx-imgBorder"]
@@ -54,15 +54,19 @@ Dostupnost ve prospěch komunity Azure závisí na vaší úrovně předplatnéh
 
 |                                          Úroveň předplatného                                           |     Kanály      |    Výhody    | Obnovitelné? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (standardní a roční cloudové)                           | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
-|                          Visual Studio Professional (standardní a roční cloudové)                          | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
+|                           Visual Studio Enterprise (Standard)                           | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, maloobchodního prodeje |   Jeden rok    |    Ano     |
 |                              Visual Studio Test Professional (Standard)                               |    VL maloobchodního prodeje     |   Jeden rok    |    Ano     |
 |                                       Předplatné MSDN Platforms (Standard)                                       |    VL maloobchodního prodeje     |   Jeden rok    |    Ano     |
 | Visual Studio Enterprise (měsíční cloud), Visual Studio Professional (měsíční cloud), NFR<sup>1</sup> |        Všechny        | Není k dispozici |     Ne     |
 |                                     Visual Studio Dev Essentials                                      |        Není k dispozici        | Není k dispozici |     Ne     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)* 
+<sup>1</sup>*zahrnuje:    Neprodejné (NFR) Microsoft FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

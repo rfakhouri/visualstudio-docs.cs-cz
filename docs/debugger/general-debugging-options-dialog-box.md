@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b5711b90e2b160f48c05835ae833bfbe7cd29fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 34fa13bbeee3289e19acdff7e45fe6e4a99f30d9
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730676"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443935"
 ---
 # <a name="general-debugging-options"></a>Obecné možnosti ladění
 
@@ -156,7 +156,7 @@ Nahradí výchozí modul ladění pomocí starší verze, chcete-li povolit tyto
 - Chcete povolit funkce upravit a pokračovat pro projekty C++ během ladění ve smíšeném režimu.
 
 > [!NOTE]
-> Režim Výběr spravované kompatibility zakáže některé funkce, které jsou implementovány pouze ve výchozím ladicím modulu.
+> Režim Výběr spravované kompatibility zakáže některé funkce, které jsou implementovány pouze ve výchozím ladicím modulu. V sadě Visual Studio 2012 jsou nahrazené starší verzi modulu pro ladění.
 
 **Použijte starší C# a vyhodnocovače výrazů jazyka Visual Basic**:  
 Ladicí program použije sada Visual Studio 2013 C# nebo vyhodnocovače výrazů jazyka Visual Basic spíše než vyhodnocovače výrazů Visual Studio 2015 roslynu.

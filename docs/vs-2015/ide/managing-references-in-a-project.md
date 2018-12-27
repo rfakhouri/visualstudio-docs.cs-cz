@@ -28,19 +28,19 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195595"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740361"
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Předtím, než můžete napsat kód proti externí komponentě nebo připojené služby, váš projekt musí nejprve obsahovat odkaz na jeho. Odkaz je v podstatě záznam v souboru projektu, který obsahuje informace, že Visual Studio potřebuje najít komponentu nebo službu.  
   
- Přidání odkazu, klikněte pravým tlačítkem na uzel odkazy v Průzkumníku řešení a zvolte **přidat odkaz**. Další informace najdete v tématu [postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
+ Přidání odkazu, klikněte pravým tlačítkem na uzel odkazy v Průzkumníku řešení a zvolte **přidat odkaz**. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
   
  ![Přidání odkazu v jazyce Visual C&#43;&#43;](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")  
   
@@ -84,7 +84,7 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
   
 5.  Klikněte pravým tlačítkem na **odkazy** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz**  
   
-6.  Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí kartu a potom zrušte zaškrtnutí políček pro staré SDK rozšíření a zaškrtněte políčka pro nové SDK rozšíření. Klikněte na tlačítko **OK**.  
+6.  Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí kartu a potom zrušte zaškrtnutí políček pro staré SDK rozšíření a zaškrtněte políčka pro nové SDK rozšíření. Klikněte na **OK**.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Přidání odkazu v době návrhu  
  Pokud provedete odkaz na sestavení v projektu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vyhledá sestavení v následujících umístěních:  
@@ -113,7 +113,7 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 ## <a name="project-to-project-references"></a>Odkazy typu projekt projekt  
  Odkazy typu projekt projekt jsou odkazy na projekty obsahující sestavení; Vytvoření s použitím **projektu** kartu. Sada Visual Studio můžete najít sestavení při zadané cestě do projektu.  
   
- Pokud máte projekt, který vytváří sestavení, by měla odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude vytvořen, pokud se změnil od posledního odkazujícího projektu. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez vytváření závislého projektu a odkaz se může stát zastaralým. (To znamená, že projekt může odkazovat na dřívější sestavené verze projektu.) Výsledkem může být několik verzí jednoho souboru knihovny DLL požadovaným v adresáři bin, což není možné. Pokud dojde k tomuto konfliktu, zobrazí se zpráva, jako [upozornění: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz 'file'. ](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-file.md). Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md) a [postupy: vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
+ Pokud máte projekt, který vytváří sestavení, by měla odkazovat na projekt a nepoužívat odkaz na soubor (viz níže). Výhodou odkazu typu projekt projekt je, že vytvoří závislost mezi projekty v systému sestavení. Závislý projekt bude vytvořen, pokud se změnil od posledního odkazujícího projektu. Odkaz na soubor nevytváří závislost sestavení, takže je možné sestavit odkazující projekt bez vytváření závislého projektu a odkaz se může stát zastaralým. (To znamená, že projekt může odkazovat na dřívější sestavené verze projektu.) Výsledkem může být několik verzí jednoho souboru knihovny DLL požadovaným v adresáři bin, což není možné. Pokud dojde k tomuto konfliktu, zobrazí se zpráva, jako [upozornění: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by přepsala odkaz 'file'. ](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied). Další informace najdete v tématu [řešení potíží s nefunkční odkazy](../ide/troubleshooting-broken-references.md) a [jak: Vytváření a odebrání závislostí projektu](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
 >  Odkaz na soubor místo odkazu typu projekt projekt je vytvořen, pokud cílová verze rozhraní .NET Framework jednoho projektu je verze 4.5 a cílová verze jiného projektu je verze 2, 3, 3.5 nebo 4.0.  
@@ -124,5 +124,5 @@ Předtím, než můžete napsat kód proti externí komponentě nebo připojené
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)   
  [Programování se sestaveními](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

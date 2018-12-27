@@ -15,38 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: db6bcf1d44be4a904b38877717aff589906995a7
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957798"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684152"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Postupy: změna mezi zápisem člena a zápisem asociace v Návrháři tříd
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Postupy: Změna mezi zápisem člena a zápisem asociace v Návrháři tříd
 
-V **návrhář tříd**, můžete změnit způsob diagramu tříd představuje relaci přidružení mezi dvěma typy z notace členů notace přidružení a naopak. Členy zobrazené jako Asociační čáry často poskytují užitečné vizualizaci jak typy souvisejí.
+V **návrhář tříd**, můžete změnit způsob, jakým diagram tříd reprezentuje vztah přidružení mezi dvěma typy z zápisem člena zápisem asociace a naopak. Členové zobrazí jako Asociační čáry často poskytují užitečné vizualizace z jak související typy.
 
 > [!NOTE]
-> Přidružení relace může být reprezentován jako člen vlastnost nebo pole. Chcete-li změnit notace členů notace přidružení, musí mít jeden typ členem jiného typu. Notace přidružení změnit na notace členů, existují dva typy musí být připojen přidružení čára. Další informace najdete v tématu [postupy: vytvoření přidružení typů bBetween](how-to-create-associations-between-types.md). Pokud projekt obsahuje více diagramů tříd, změny, které provedete způsob diagram zobrazuje přidružení vztahy ovlivňují jenom tento diagram. Změnit způsob jiný diagram zobrazuje přidružení vztahů, otevřete nebo zobrazit tento diagram a proveďte tyto kroky.
+> Přidružení relace může být reprezentována jako člen vlastnost nebo pole. Chcete-li změnit zápisem člena pro zápisem asociace, musí mít jeden typ členem jiného typu. Chcete-li změnit zápisem asociace na zápisem člena, musí být připojen dva typy systémem Asociační čára. Další informace najdete v tématu [jak: Vytvoření přidružení typů bBetween](how-to-create-associations-between-types.md). Pokud váš projekt obsahuje více diagramů tříd, změny, které provedete tak, jak diagramu zobrazí vztahy přidružení ovlivňují pouze tento diagram. Chcete-li změnit způsob, jakým jiného diagramu zobrazí vztahy přidružení, otevřete nebo zobrazit tento diagram a proveďte tyto kroky.
 
-## <a name="to-change-member-notation-to-association-notation"></a>Chcete-li změnit notace členů do notace přidružení
+## <a name="to-change-member-notation-to-association-notation"></a>Chcete-li změnit zápisem člena zápisem asociace
 
-1.  Z uzlu projektu v Průzkumníku řešení otevřete soubor třídy diagram (.cd).
+1.  Z uzlu projektu v Průzkumníku řešení otevřete soubor diagramu tříd (.cd).
 
-2.  V obrazce typu v diagramu tříd, klikněte pravým tlačítkem člen vlastnost nebo pole představující přidružení a zvolte **zobrazit jako přidružení**.
+2.  V obrazci typu v diagramu tříd, klikněte pravým tlačítkem na člen vlastnost nebo pole představující přidružení a zvolte **zobrazit jako přidružení**.
 
     > [!TIP]
-    > Pokud žádné vlastnosti nebo pole jsou viditelné v obrazce typu, mohou být sbaleny přihrádky ve tvaru. Rozšířit obrazce typu, klikněte dvakrát na název prostředí nebo klikněte pravým tlačítkem na obrazce typu a vyberte **rozbalte**.
+    > Pokud jsou viditelné ve tvaru typu žádné vlastnosti nebo pole, jsou sbaleny oddílů ve tvaru. Pokud chcete rozšířit tvar typu, dvakrát klikněte na název oddílu nebo pravým tlačítkem myši na tvar typu a zvolte **Rozbalit**.
 
-    Člen dané zařízení zmizí z prostředí v obrazce typu a řádku s přidružení se zobrazí oba typy připojení. Přidružení řádek označený verzí název vlastnost nebo pole.
+    Člen zmizí z prostoru ve tvaru typu a Asociační čára, zobrazí se dva typy připojení. Asociační čára označen názvem vlastnosti nebo pole.
 
-## <a name="to-change-association-notation-to-member-notation"></a>Chcete-li změnit notace přidružení k notace členů
+## <a name="to-change-association-notation-to-member-notation"></a>Chcete-li změnit zápisem asociace zápisem člena
 
-Na diagramu tříd, klikněte pravým tlačítkem na ose přidružení a zvolte **zobrazit jako vlastnost** nebo **zobrazit jako pole** podle potřeby. Přidružení řádku zmizí, a vlastnost zobrazí v příslušné prostředí v rámci jeho obrazce typu v diagramu.
+V diagramu tříd, pravým tlačítkem myši na Asociační čára a zvolte **zobrazit jako vlastnost** nebo **zobrazit jako pole** podle potřeby. Asociační čára zmizí, a vlastnost se zobrazí v odpovídající oddíl v rámci jeho tvar typu v diagramu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md)
-- [Postupy: zobrazení dědičnosti mezi typy](how-to-view-inheritance-between-types.md)
-- [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
-- [Postupy: vizualizace asociace kolekce](how-to-visualize-a-collection-association.md)
+- [Postupy: Vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md)
+- [Postupy: Zobrazení dědičnosti mezi typy](how-to-view-inheritance-between-types.md)
+- [Zobrazování typů a vztahů](designing-and-viewing-classes-and-types.md)
+- [Postupy: Vizualizace asociace kolekce](how-to-visualize-a-collection-association.md)

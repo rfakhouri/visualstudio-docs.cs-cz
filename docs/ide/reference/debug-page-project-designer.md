@@ -15,78 +15,78 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090020"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684755"
 ---
 # <a name="debug-page-project-designer"></a>Stránka Ladění, návrhář projektu
 
-Použití **ladění** stránky **Návrhář projektu** pro nastavení vlastností pro ladění chování v projektu jazyka Visual Basic nebo C#.
+Použití **ladění** stránku **Návrháře projektu** můžete nastavit vlastnosti pro ladění chování v projektu jazyka Visual Basic nebo C#.
 
-Abyste měli přístup **ladění** vyberte uzel projektu v **Průzkumníku řešení**. Na **projektu** nabídce zvolte  **\<název projektu > vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **ladění** kartě.
+Pro přístup **ladění** stránky, vyberte uzel projektu v **Průzkumníka řešení**. Na **projektu** nabídce zvolte  **\<název projektu > vlastnosti**. Když **Návrháře projektu** se zobrazí, klikněte na tlačítko **ladění** kartu.
 
 > [!NOTE]
-> Toto téma se nevztahuje na aplikace UWP. V tématu [spustit relaci ladění (jazyka Visual Basic, C#, C++ a XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) pro aplikace UWP.
+> Toto téma se nevztahuje na aplikacích pro UPW. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) pro aplikace pro UPW.
 
-## <a name="configuration-and-platform"></a>Konfigurace a platformy
+## <a name="configuration-and-platform"></a>Konfigurace a platforma
 
-Následující možnosti vám umožňují vyberte konfigurace a platformy můžete zobrazit nebo upravit.
+Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úpravě.
 
 **Konfigurace**
 
-Určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Toto nastavení může být **ladění** (výchozí), **verze**, nebo **všechny konfigurace**.
+Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**.
 
 **Platforma**
 
-Určuje nastavení platformy, které chcete zobrazit nebo změnit. Může zahrnovat volby **libovolný procesor** (výchozí), **x64**, a **x86**.
+Určuje které nastavení platformy má být zobrazeno nebo upraveno. Může zahrnovat volby **jakýkoli procesor** (výchozí), **x64**, a **x86**.
 
-## <a name="start-action"></a>Zahájení
+## <a name="start-action"></a>Spustit akci
 
-**Zahájení** označuje položky se spustí, když je ladit aplikace: projektu, vlastní program, adresu URL nebo nic. Ve výchozím nastavení je tato možnost nastavena na **spuštění projektu**. **Spustit akci** nastavení na **ladění** stránka určuje hodnotu `StartAction` vlastnost.
+**Zahájení** označuje položku, která se spustí při ladění aplikace: projekt, vlastní program, adresu URL nebo žádnou akci. Ve výchozím nastavení je tato možnost nastavená na **spustit projekt**. **Spustit akci** nastavení **ladění** stránky určuje hodnotu `StartAction` vlastnost.
 
-**Zahájení projektu**
+**Spustit projekt**
 
-Tuto volbu použijte k určení, že ke spustitelnému souboru (pro aplikace pro systém Windows a Konzolová aplikace projekty) by měl být spuštěn, když je ladit aplikace. Tato možnost je vybrána ve výchozím nastavení.
+Tato možnost slouží k určení, že spustitelný soubor (pro projekty aplikací pro Windows a Konzolová aplikace) by měl být spuštěn při ladění aplikace. Ve výchozím nastavení je vybraná tato možnost.
 
-**Spuštění externího programu**
+**spustit externí program**
 
-Tuto volbu použijte k určení, že konkrétní program by měl spustit, když je ladit aplikace.
+Tato možnost slouží k určení, že konkrétní program má být spuštěn při ladění aplikace.
 
-**Spuštění prohlížeče s adresou URL**
+**Spustit prohlížeč s adresou URL**
 
-Tuto volbu použijte k určení, že konkrétní adresu URL by měly být dostupné, když je ladit aplikace.
+Tato možnost slouží k určení, že určité adresy URL by měl mít přístup při ladění aplikace.
 
 ## <a name="start-options"></a>Možnosti spuštění
 
-**Argumenty příkazového řádku.**
+**Argumenty příkazového řádku**
 
 Do tohoto textového pole zadejte argumenty příkazového řádku pro ladění.
 
 **Pracovní adresář**
 
-Do tohoto textového pole zadejte adresář, ve kterém bude spouštěna projektu. Nebo klikněte na tlačítko Procházet (**...** ) Chcete-li vybrat adresář.
+Do tohoto textového pole zadejte adresář, ze které bude projekt spustit. Nebo klikněte na tlačítko Procházet (**...** ) Chcete-li vybrat adresář.
 
 **Použití vzdáleného počítače**
 
-K ladění aplikací ze vzdáleného počítače, zaškrtněte toto políčko a zadejte cestu ke vzdálenému počítači, do textového pole.
+Chcete-li ladit aplikaci ze vzdáleného počítače, zaškrtněte toto políčko a zadejte cestu ke vzdálenému počítači v textovém poli.
 
-## <a name="debugger-engines"></a>Moduly ladicí program
+## <a name="debugger-engines"></a>Ladicím modulem.
 
 **Povolit ladění nativního kódu**
 
-Tato možnost určuje, zda je podporováno ladění nativního kódu. Výběrem tohoto zaškrtávacího políčka, pokud provádíte volání objekty modelu COM nebo pokud spuštění vlastní aplikace napsané v nativním kódu, který volá projekt a musí ladění nativního kódu. Zrušte zaškrtnutí tohoto políčka Zakázat ladění nespravovaného kódu. Toto políčko je ve výchozím nastavení zaškrtnuté.
+Tato možnost určuje, zda je podporováno ladění nativního kódu. Toto políčko zaškrtněte, pokud jsou objekty COM volání nebo spustit vlastní program napsány v nativním kódu, která volá váš projekt a musí ladění nativního kódu. Zrušte zaškrtnutí tohoto políčka Zakázat ladění nespravovaného kódu. Toto políčko je ve výchozím nastavení zaškrtnuté.
 
-**Povolit ladění na serveru SQL Server**
+**Povolit ladění SQL serveru**
 
-Vyberte nebo zrušte zaškrtnutí tohoto políčka, pokud chcete povolit nebo zakázat ladění procedur SQL z vaší aplikace Visual Basic. Toto políčko je ve výchozím nastavení zaškrtnuté.
+Zaškrtněte nebo zrušte zaškrtnutí políčka Povolit nebo zakázat ladění procedur SQL z aplikace Visual Basic. Toto políčko je ve výchozím nastavení zaškrtnuté.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Ladění v sadě Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Konfigurace ladění nastavení projektu pro jazyk C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Nastavení projektu jazyka Visual Basic konfiguraci ladění](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [Ladění v sadě Visual Studio](../../debugger/debugger-feature-tour.md)
+- [Nastavení projektu pro konfiguraci ladění jazyka C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Postupy: Ladění aplikace ClickOnce s omezenými oprávněními](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)

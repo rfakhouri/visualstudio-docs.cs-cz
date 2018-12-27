@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320979"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647842"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* nástroj se používá ke spuštění a zastavení shromažďování dat o výkonu. Používá následující syntaxi:  
@@ -63,7 +63,7 @@ VSPerfCmd [/U] [/options]
 |[Spuštění](../profiling/launch.md) **:** *spustitelný soubor*|Zadaná aplikace spustí a začne profilace.|  
 |[Args](../profiling/args.md) **:** *argumenty*|Určuje argumenty příkazového řádku k předání do aplikace.|  
 |[Console](../profiling/console.md)|V novém okně Příkazový řádek spustí zadaný příkaz.|  
-|[Připojit](../profiling/attach.md) **:** *PID*[**,**_PID_]|Zahájení profilace konkrétních procesů. Procesy lze identifikovat podle ID procesu nebo název procesu.|  
+|[Připojit](../profiling/attach.md) **:** *IDENTIFIKÁTOR PID*[**,**_PID_]|Zahájení profilace konkrétních procesů. Procesy lze identifikovat podle ID procesu nebo název procesu.|  
 |[Odpojit](../profiling/detach.md)[**:**_PID_[,_PID_]]|Zastaví profilaci konkrétních procesů. Procesy lze identifikovat podle ID procesu nebo název procesu. Pokud není zadán žádný proces, profilace je zastaveno pro všechny procesy.|  
 |[Uvolňování paměti](../profiling/gc-vsperfcmd.md)[**:**{**přidělení**`&#124;`**životnost**}]|Shromažďuje data paměti .NET přidělení a objekt životnost. Použít pouze **VSPerfCmdLaunch** možnost.|  
   
@@ -85,11 +85,11 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security**, \< **povolit&#124;ODEPŘÍT**>, *vpravo*[ *vpravo*], \< *uživatele* &#124; *Skupiny*>|Povoluje nebo zakazuje zadaného uživatele nebo skupiny přístup k profilovací služby.<br /><br /> `Right` může být:<br /><br /> CrossSession – umožní uživateli přístup ke službě pro různé relace profilování.<br /><br /> SampleProfiling – umožní uživateli přístup k ovladači povolit profilaci vzorkování. Také umožňuje přístup k informacím o přechodu jádra během profilace trasování.<br /><br /> FullAccess – umožňuje uživateli CrossSession a SampleProfiling přístup.|  
 |**Admin:Security seznamu**|Zobrazí aktuální stav služeb profilace a zobrazí seznam oprávnění uživatele.|  
-|**Správce:** \< *služby*&#124;*ovladač*>\<**START**&#124;**zastavit**  &#124; **Nainstalovat**&#124;**odinstalace**>|Spustí, zastaví, nainstaluje nebo odinstaluje komponentu služeb profilace (service) nebo ovladač zařízení režimu jádra (driver).|  
-|**Správce:** \< *služby*&#124;*ovladač*>**AutoStart**\<**na** &#124; **Vypnuto**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|  
+|**Správce:** \<*Služba*&#124;*ovladač*>\<**START**&#124;**Zastavit**&#124;**instalace** &#124; **Odinstalace**>|Spustí, zastaví, nainstaluje nebo odinstaluje komponentu služeb profilace (service) nebo ovladač zařízení režimu jádra (driver).|  
+|**Správce:** \<*Služba*&#124;*ovladač*>**AutoStart**\<**ON**&#124;**vypnuto**>|Povolí nebo zakáže automatické spuštění služby profilace (service) nebo ovladač zařízení režimu jádra (driver) po restartu.|  
   
 ## <a name="vsperfcmd-driver"></a>Nástroj VSPerfCmd Driver/Driver  
- **Driver/Driver VSPerfCmd** možnost je nyní zastaralá. Použití **VsPerfCmdAdmin** možnosti pro tuto funkci.  
+ **Driver/Driver VSPerfCmd** možnost je nyní zastaralá. Použití **VsPerfCmd správce** možnosti pro tuto funkci.  
   
 ## <a name="see-also"></a>Viz také:  
  [Nástroj VSInstr](../profiling/vsinstr.md)   

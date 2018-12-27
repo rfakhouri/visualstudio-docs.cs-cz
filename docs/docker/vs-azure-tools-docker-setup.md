@@ -14,16 +14,17 @@ ms.tgt_pltfrm: na
 ms.workload: multiple
 ms.date: 06/08/2016
 ms.author: mlearned
-ms.openlocfilehash: b409c280999ee08705028695b0447adce1ac1850
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 01b7d2a8fa0ea496966e9c19caf1dcfb9d29543f
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673533"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738165"
 ---
-# <a name="configure-a-docker-host-with-virtualbox"></a>Konfigurace hostitele Docker pomocí VirtualBox
+# <a name="configure-a-docker-host-with-virtualbox"></a>Konfigurace hostitele Dockeru pomocí nástroje VirtualBox
 ## <a name="overview"></a>Přehled
-Tento článek vás provede procesem konfigurace výchozí instanci Dockeru pomocí Docker Machine a VirtualBox. Pokud používáte [Docker pro Windows](https://www.docker.com/products/docker-desktop), tato konfigurace není nutné.
+Tento článek vás provede procesem konfigurace výchozí instanci Dockeru pomocí Docker Machine a VirtualBox.
+Pokud používáte [Docker pro Windows](https://www.docker.com/products/docker-desktop), tato konfigurace není nutné.
 
 ## <a name="prerequisites"></a>Požadavky
 Tyto nástroje je potřeba nainstalovat.
@@ -34,35 +35,30 @@ Tyto nástroje je potřeba nainstalovat.
 Abyste mohli nakonfigurovat klienta Dockeru, jednoduše otevřete prostředí Windows PowerShell a proveďte následující kroky:
 
 1. Vytvoření hostitele docker výchozí instanci.
-   
+
     ```PowerShell
     docker-machine create --driver virtualbox default
     ```
 2. Ověřte, že výchozí instancí je konfigurována a spuštěna. (Byste měli vidět instance s názvem "default" systémem.
-   
+
     ```PowerShell
-    docker-machine ls 
+    docker-machine ls
     ```
-   
-    ![docker-machine ls výstupu][0]
+
+    ![docker-machine ls výstupu](media/vs-azure-tools-docker-setup/docker-machine-ls.png)
 3. Nastavit výchozí jako aktuálního hostitele a nakonfigurovat vaše prostředí.
-   
+
     ```PowerShell
     docker-machine env default | Invoke-Expression
     ```
 4. Zobrazte aktivní kontejnery Dockeru. Seznam by měl být prázdný.
-   
+
     ```PowerShell
     docker ps
     ```
-   
-    ![docker ps výstupu][1]
+
+    ![docker ps výstupu](media/vs-azure-tools-docker-setup/docker-ps.png)
 
 > [!NOTE]
 > Pokaždé, když restartujete vývojovém počítači, budete muset restartovat místní docker hostitele.
 > Chcete-li to provést, vydejte následující příkaz z příkazového řádku: `docker-machine start default`.
-> 
-> 
-
-[0]: media/vs-azure-tools-docker-setup/docker-machine-ls.png
-[1]: media/vs-azure-tools-docker-setup/docker-ps.png

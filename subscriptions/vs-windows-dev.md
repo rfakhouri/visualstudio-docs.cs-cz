@@ -3,18 +3,18 @@ title: Výhoda účet Windows pro vývojáře v předplatných sady Visual Studi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o účtu pro vývojáře Windows, součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df49564a920ea6f674c6d92ec2203962407a751e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832404"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739877"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Účet pro vývojáře Windows v předplatných sady Visual Studio
 
@@ -26,7 +26,7 @@ Použití vašeho účtu vývojáře Windows, budete muset nastavit účet nebo 
 
 Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeba v prohlížeči Google Chrome, vytvořte nové okno "incongnito".  V Internet Exploreru vytvořte nové okno "InPrivate".
 
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici vývojářský účet pro Windows v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.  Zkopírujte kód do schránky a pak klikněte na **aktivovat**.
    > [!div class="mx-imgBorder"]
@@ -42,7 +42,7 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 7. Vytvoření zobrazovaný název vydavatele.  Bude jím jedinečný název, který budou vaši zákazníci uvidí související s aplikacemi, doplňky a služby.
 8. Zadejte své kontaktní informace a jazyk upřednostňované e-mailů a potom klikněte na **Další**.
 9. Můžete být vyzváni k ověření své heslo.  Zadejte ho a klikněte na tlačítko **přihlášení**.
-10. Registrace – stránka platba, vložte kód, který jste si zkopírovali do pole propagační kód.  Na stránce se aktualizuje a ukazují, že *je nutné žádné zaplatit*.  Klikněte na tlačítko **Další**.
+10. Registrace – stránka platba, vložte kód, který jste si zkopírovali do pole propagační kód.  Na stránce se aktualizuje a ukazují, že *je nutné žádné zaplatit*.  Klikněte na **Další**.
     > [!div class="mx-imgBorder"]
     > ![Registrační Benefit pro vývojáře Windows](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
@@ -53,14 +53,19 @@ Doporučujeme vytvořit okno prohlížeče "privátní" pro tento proces.  Třeb
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuté       |  Ano|
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | Zahrnuté                                                            |Ano|
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                            |  NENÍ K DISPOZICI|
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              |  Není k dispozici                                            |  NENÍ K DISPOZICI|
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici                                            |  NENÍ K DISPOZICI|
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuje       |  Ano|
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Zahrnuje                                                            |Ano|
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                            |  Není k dispozici|
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              |  Není k dispozici                                            |  Není k dispozici|
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici                                            |  Není k dispozici|
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services pro vývojáře. Vyloučí: Microsoft Partner Network (MPN), představte si vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services.*
+<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services pro vývojáře. Vyloučí:  Microsoft Partner Network (MPN), představte si vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services.*
+
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

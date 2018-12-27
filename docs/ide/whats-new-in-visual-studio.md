@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160189"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740390"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s novou v sadě Visual Studio 2017
 
@@ -223,7 +223,7 @@ Můžete procházet a zobrazit snímky pomocí **krok zpět** a **krok vpřed** 
 
 ![Dialog nového pomocníka výjimky v sadě Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a vpřed tlačítka")
 
-Další informace najdete v tématu [zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md) stránky.
+Další informace najdete v tématu [zobrazení snímků pomocí zpětného kroku IntelliTrace](../debugger/view-historical-application-state.md) stránky.
 
 ### <a name="containerization"></a>Kontejnerizace
 
@@ -278,7 +278,7 @@ Další informace o UPW, najdete v článku [vývoj aplikací pro univerzální 
 
 Jako součást úlohy "Vývoj mobilních aplikací pomocí .NET" mohou vývojáři, kteří znají C#, .NET a Visual Studio vytvářejte nativní aplikace pro Android, iOS a Windows pomocí Xamarinu. Vývojáři můžou využívat stejné výkon a produktivitu při práci s využitím kódu Xamarin pro mobile apps, včetně vzdáleného ladění na zařízení s Androidem, iOS a Windows&mdash;bez nutnosti učit nativní kódování jazycích Objective-C nebo Java.
 
-Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md) stránky.
+Další informace najdete v tématu [Visual Studio a Xamarin](/xamarin/) stránky.
 
 ### <a name="entitlements-editor"></a>Editor oprávnění
 
@@ -366,7 +366,7 @@ Další informace najdete v tématu [Visual Studio Tools for AI](../ai/about-ai-
 Díky novým funkcím, které můžete provádět vývoj ještě lepší prostředí často aktualizujeme Visual Studio 2017. Tady je rekapitulace toho některé z našich nejdůležitější aktualizace, které jsou v experimentální verzi preview:
 
 * **[Live sdílenou složku](https://visualstudio.microsoft.com/services/live-share/)**, nový nástroj, který vám umožní sdílet základ kódu a jeho kontextu s programujete a získat rychlé obousměrné spolupráci přímo z Visual Studia. S Live Share programujete můžete přečíst, přejděte, upravit a ladit projekt, který jste sdíleli s nimi a učinit snadno a bezpečně.<br><br>Další informace najdete v tématu [Live nejčastější dotazy k sdílení](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, novou funkci, která vylepšuje vývoje softwaru pomocí AI k zajištění lepší s ohledem na kontext kódu dokončování, Průvodce vývojářům kód pro vzory a styly svého týmu, najít problémy s kódu obtížné catch , a revize kódu zaměření na oblasti, které jsou opravdu důležité. <br><br>Další informace najdete v tématu [nejčastější dotazy k IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, novou funkci, která vylepšuje vývoje softwaru pomocí AI k zajištění lepší s ohledem na kontext kódu dokončování, Průvodce vývojářům kód pro vzory a styly svého týmu, najít problémy s kódu obtížné catch , a revize kódu zaměření na oblasti, které jsou opravdu důležité. <br><br>Další informace najdete v tématu [nejčastější dotazy k IntelliCode](/visualstudio/intellicode/faq).
 
 Chcete vědět více o tom, co jiného se připravuje pro Visual Studio 2017? Zobrazit [Visual Studio Roadmap](/visualstudio/productinfo/vs2018-roadmap) stránky.
 

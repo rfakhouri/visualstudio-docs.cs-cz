@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159604"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684467"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Rychlý start: Vytvoření první aplikace konzoly v sadě Visual Studio pomocí jazyka Visual Basic
 
@@ -91,4 +91,4 @@ Přidejme nějaký kód pozastavení aplikace a poté požádat pro uživatelsk�
 Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o jazyce Visual Basic a Visual Studio IDE. Další informace najdete dál v následujícím kurzu.
 
 > [!div class="nextstepaction"]
-> [Začínáme s jazykem Visual Basic v sadě Visual Studio](tutorial-visual-basic-console.md)
+> [Začínáme s jazykem Visual Basic v sadě Visual Studio](../get-started/visual-basic/tutorial-console.md)

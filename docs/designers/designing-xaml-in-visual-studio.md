@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5e7c4935a84c85dd165f75834bd4c4968319474c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062977"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739507"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 
@@ -36,25 +36,25 @@ Můžete přepínat vpřed a zpět mezi Visual Studio a nástroj Blend for Visua
 
 Nejzákladnější úkoly integrovaném vývojovém prostředí sady Visual Studio a nástroje Blend for Visual Studio sdílet stejnou sadu windows a funkce, s nějaké drobné rozdíly. Mezi nejdůležitější funkce patří:
 
-- **Konzistentní uživatelské rozhraní:** můžete navrhnout vaše aplikace v rámci kontextu známé uživatelské rozhraní sady Visual Studio, díky přepínání mezi integrovanými vývojovými prostředími příjemný a produktivní prostředí. Blend pro Visual Studio používá Visual Studio tmavý motiv, který vám pomůže soustředit na obsah, který při návrhu kontrast mezi vaším obsahem a uživatelské rozhraní, což zlepšuje. Zobrazit [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+- **Konzistentní uživatelské rozhraní:** Můžete navrhnout vaše aplikace v rámci kontextu známé uživatelské rozhraní sady Visual Studio, díky přepínání mezi integrovanými vývojovými prostředími příjemný a produktivní prostředí. Blend pro Visual Studio používá Visual Studio tmavý motiv, který vám pomůže soustředit na obsah, který při návrhu kontrast mezi vaším obsahem a uživatelské rozhraní, což zlepšuje. Zobrazit [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
      ![Blend for Visual Studio IDE](../designers/media/blendide.png)
 
-- **XAML IntelliSense:** obě Integrovaná vývojová prostředí podporují všechny běžné možnosti, které očekáváte od technologie IntelliSense, dokončování příkazů, podpora pro běžné operace editoru, například přidávání poznámek a formátování kódu a navigace k prostředkům, včetně vazby a kódu.
+- **XAML IntelliSense:** Obě Integrovaná vývojová prostředí podporují všechny běžné možnosti, které očekáváte od včetně dokončování příkazů, podpora pro běžné operace editoru, například přidávání poznámek a formátování kódu a navigace k prostředkům, vazby a kódu technologie IntelliSense.
 
-- **Základní možnosti ladění:** teď můžete ladit v Blendu, včetně nastavení zarážek v kódu k ladění vaší běžící aplikaci. Zachování konzistentní možnosti ladění pomocí sady Visual Studio, nástroje Blend for Visual Studio obsahuje většinu ladění systému windows a panelů nástrojů sady Visual Studio. Pokročilé funkce ladění, jako diagnostiku a analýzy kódu jsou pouze k dispozici v sadě Visual Studio. Zobrazit [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
+- **Základní schopnosti ladění:** Teď můžete ladit v Blendu, včetně nastavení zarážky v kódu k ladění vaší běžící aplikaci. Zachování konzistentní možnosti ladění pomocí sady Visual Studio, nástroje Blend for Visual Studio obsahuje většinu ladění systému windows a panelů nástrojů sady Visual Studio. Pokročilé funkce ladění, jako diagnostiku a analýzy kódu jsou pouze k dispozici v sadě Visual Studio. Zobrazit [ladit v sadě Visual Studio](/visualstudio/debugger/debugger-feature-tour).
 
-- **Soubor znovu načíst prostředí:** souborů XAML v obou Blend for Visual Studio nebo Visual Studio můžete upravit, a mít vašich upravených souborů znovu načíst automaticky jak mezi nimi přepínat. K minimalizuje přerušení pracovních postupů, teď můžete nastavit váš soubor znovu načíst předvolby v dialogovém okně soubor znovu načíst.
+- **Opětovné načítání souborů:** Můžete upravit souborů XAML v obou Blend for Visual Studio nebo Visual Studio a jak přepínat mezi nimi automaticky znovu načíst upravené soubory. K minimalizuje přerušení pracovních postupů, teď můžete nastavit váš soubor znovu načíst předvolby v dialogovém okně soubor znovu načíst.
 
      ![Opětovné načítání souborů](../designers/media/blendfilereload.png)
 
-- **Synchronizovat nastavení a rozložení:** vlastní rozložení umožňuje uložit a použít vlastní nastavení rozložení okna nástroje. Když se přihlásíte pomocí stejného účtu Microsoft synchronizaci Visual Studia tato vlastní nastavení a předvolby pro Visual Studio i programu Blend for Visual Studio napříč počítači. Zobrazit [synchronizaci nastavení mezi více počítači](../ide/synchronized-settings-in-visual-studio.md).
+- **Synchronizovaná rozložení a nastavení:** Vlastní rozložení umožňuje uložit a použít vlastní nastavení rozložení okna nástrojů. Když se přihlásíte pomocí stejného účtu Microsoft synchronizaci Visual Studia tato vlastní nastavení a předvolby pro Visual Studio i programu Blend for Visual Studio napříč počítači. Zobrazit [synchronizaci nastavení mezi více počítači](../ide/synchronized-settings-in-visual-studio.md).
 
-- **Průzkumník řešení common:** **Průzkumníka řešení** vám poskytne uspořádaný náhled vašich projektů a jejich soubory, jakož i přístup k příkazů přidružených s nimi. Pomocí Průzkumníka řešení je snazší pracovat s velkými objemy podnikových projektů. Zobrazit [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md).
+- **Běžné Průzkumník řešení:** **Průzkumník řešení** vám poskytne uspořádaný náhled vašich projektů a jejich soubory, jakož i přístup k příkazů přidružených s nimi. Pomocí Průzkumníka řešení je snazší pracovat s velkými objemy podnikových projektů. Zobrazit [řešení a projekty](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer:** pomocí Průzkumníku týmových projektů můžete spravovat vaše projekty s úložišti GIT nebo TFS usnadňuje spolupráci mezi týmy. Zobrazit [práci v Průzkumníku týmových projektů](/azure/devops/user-guide/work-team-explorer).
+- **Průzkumník týmových projektů:** Pomocí Průzkumníka týmových projektů můžete spravovat vaše projekty s úložišti GIT nebo TFS usnadňuje spolupráci mezi týmy. Zobrazit [práci v Průzkumníku týmových projektů](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet:** můžete spravovat balíčky NuGet v sadě Visual Studio i programu Blend for Visual Studio. Správce balíčků NuGet je Správce balíčků pro rozhraní .NET Framework, která zjednodušuje instalace a odebrání balíčků z řešení.
+- **NuGet:** Můžete spravovat balíčky NuGet v sadě Visual Studio i programu Blend for Visual Studio. Správce balíčků NuGet je Správce balíčků pro rozhraní .NET Framework, která zjednodušuje instalace a odebrání balíčků z řešení.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Pokročilé funkce v programu Blend for Visual Studio
 

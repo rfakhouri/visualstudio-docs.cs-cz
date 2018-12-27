@@ -3,18 +3,18 @@ title: Výhody pro Pluralsight v předplatných sady Visual Studio | Dokumentace
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/04/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o předplatné školení Pluralsight, který je součástí vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: b30096d3c0217c169d107dc882103f0468e57278
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895350"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740335"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Pluralsight – školení v předplatných sady Visual Studio
 
@@ -33,7 +33,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
    > [!IMPORTANT]
    > Po kliknutí na odkaz "Kopie kódu" na dlaždici výhody Pluralsightu, může se zobrazit následující zpráva:
    > 
-   > **"Poznámka: Pokud jste dříve aktivovali jinou nabídku od Pluralsightu prostřednictvím předplatného sady Visual Studio, tento kód vám neumožní vytvořit nový účet Pluralsight."**
+   > **"Mějte prosím na paměti:   Pokud jste dříve aktivovali jinou nabídku od Pluralsightu prostřednictvím předplatného sady Visual Studio, tento kód vám neumožní vytvořit nový účet Pluralsight."**
 
 2. Obdržíte oznámení, že kód kupónu se úspěšně načetl.  Klikněte na tlačítko **aktivovat**.
    > [!div class="mx-imgBorder"]
@@ -63,7 +63,7 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
    > [!div class="mx-imgBorder"]
    > ![Výhody pro Pluralsight přihlášení](_img/vs-pluralsight/vs-pluralsight-login.png)
 
-8. Je to!  Teď jste připravení začít s učení s tisíci kurzů Pluralsight!
+8. A to je vše!  Teď jste připravení začít s učení s tisíci kurzů Pluralsight!
    > [!div class="mx-imgBorder"]
    > ![Domovská stránka výhody Pluralsightu](_img/vs-pluralsight/vs-pluralsight-home.png)
 
@@ -71,27 +71,31 @@ Následující tabulka obsahuje podrobnosti o, jaké výhody předplatného Plur
 
 |                          Úroveň předplatného                          |     Kanály      |    Výhody    |   Obnovitelné?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (standardní a roční cloudové)           | VL, Azure, maloobchodního prodeje |   6 měsíců    | Ne<sup>2</sup> |
-|         Visual Studio Professional (standardní a roční cloudové)          | VL, Azure, maloobchodního prodeje |   3 měsíce    | Ne<sup>2</sup> |
+|          Visual Studio Enterprise (Standard)           | VL, Azure, maloobchodního prodeje |   6 měsíců    | Ne<sup>2</sup> |
+|         Visual Studio Professional (Standard)          | VL, Azure, maloobchodního prodeje |   3 měsíce    | Ne<sup>2</sup> |
 |              Visual Studio Test Professional (Standard)              |    VL maloobchodního prodeje     |   3 měsíce    | Ne<sup>2</sup> |
 |                      Předplatné MSDN Platforms (Standard)                       |    VL maloobchodního prodeje     |   3 měsíce    | Ne<sup>2</sup> |
-|                     Visual Studio Dev Essentials                     |        NENÍ K DISPOZICI         |   1 měsíc    |       Ne       |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       NENÍ K DISPOZICI       |
-|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       NENÍ K DISPOZICI       |
+|                     Visual Studio Dev Essentials                     |        Není k dispozici         |   1 měsíc    |       Ne       |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) |       Azure       | Není k dispozici |       Není k dispozici       |
+|             Visual Studio Enterprise (NFR<sup>1</sup> )              |      Program      | Není k dispozici |       Není k dispozici       |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), partnera společnosti Microsoft Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft Vážíme si toho Professional (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), FTE Imagine.*
 
 <sup>2</sup>*výhody Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
-### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Otázka: mám předplatné Visual Studio Enterprise, ale nevidím Pluralsight dlaždice na stránce výhod. Co je?
-Odpověď: Ne všechny předplatné sady Visual Studio Enterprise zahrnuje výhody pro Pluralsight.  Zkontrolujte [způsobilosti tabulky](#eligibility) tabulky ověřte, zda vaše předplatné má nárok.
+### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>DOTAZ: Mám předplatné sady Visual Studio Enterprise, ale nevidím Pluralsight dlaždice na stránce výhod. Co je?
+O: Ne všechny předplatných sady Visual Studio Enterprise zahrnují výhody pro Pluralsight.  Zkontrolujte [způsobilosti tabulky](#eligibility) tabulky ověřte, zda vaše předplatné má nárok.
 
-### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Otázka: měli přístup k žádné seznamy stop přizpůsobené learning nebo kanály?
-Odpověď: Ano, jako předplatitel sady Visual Studio získáte přístup k expertní kanálů v rámci výhod školení Pluralsight. Tyto kanály byly speciálně připravili experti od Microsoftu a jsou zaměřené na učení v oblasti rozhraní .net, Azure, DevOps a Mobility. Aktivovat výhody pro Pluralsight přes portál předplatného sady Visual Studio [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) získat přístup do těchto kanálů na cílovou stránkou Pluralsightu –
+### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>DOTAZ: Mám přístup k žádným seznamy stop přizpůsobené learning nebo kanály?
+O: Ano, jako předplatitel sady Visual Studio získáte přístup k expertní kanálů v rámci výhod školení Pluralsight. Tyto kanály byly speciálně připravili experti od Microsoftu a jsou zaměřené na učení v oblasti rozhraní .net, Azure, DevOps a Mobility. Aktivovat výhody pro Pluralsight přes portál předplatného sady Visual Studio [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs) získat přístup do těchto kanálů na cílovou stránkou Pluralsightu –
 
 • Scott Hanselmann (.Net, Azure) – [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
 
@@ -100,11 +104,11 @@ Odpověď: Ano, jako předplatitel sady Visual Studio získáte přístup k expe
 • James Montemagno (Mobility) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
 
 
-### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>Otázka: co se stane, když Moje předplatné Pluralsight vyprší?
-Odpověď: na konci platnosti vašeho bezplatného předplatného Pluralsight můžete koupit předplatné přímo od společnosti Pluralsight.  Obraťte se prosím na [Pluralsight](http://www.pluralsight.com) úplné podrobnosti.
+### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>DOTAZ: Co se stane, když Moje předplatné Pluralsight vyprší?
+O:  Na konci platnosti vašeho bezplatného předplatného Pluralsight můžete koupit předplatné přímo od společnosti Pluralsight.  Obraťte se prosím na [Pluralsight](http://www.pluralsight.com) úplné podrobnosti.
 
-### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>Otázka: Moje společnost obnoví svoje předplatné sady Visual Studio prostřednictvím smlouvy Enterprise. Resetovat výhody pro Pluralsight?
-Odpověď: Ne.  Výhody pro Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.  To platí pro všechny nákupním kanálům, včetně maloobchodní prodej, cloud a nákupy – svazek licencí (Multilicence).
+### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>DOTAZ: Moje společnost obnoví svoje předplatné sady Visual Studio prostřednictvím smlouvy Enterprise. Resetovat výhody pro Pluralsight?
+O:  Ne.  Výhody pro Pluralsight je jedno použití pouze vázané na uživatele.  Jakmile odběratele využívá výhody, ne obnovit.  To platí pro všechny nákupním kanálům, včetně maloobchodní prodej, cloud a nákupy – svazek licencí (Multilicence).
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  [Centrum pro nápovědu Pluralsight](https://help.pluralsight.com/help) poskytuje pomoc s kurzy Pluralsight trvá nebo na webu Pluralsight.

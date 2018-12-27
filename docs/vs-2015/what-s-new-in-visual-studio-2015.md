@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062435"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740270"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;nového v sadě Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 -   **C++ / Android**. Použití [Visual C++ pro vývoj mobilních řešení napříč platformami](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) šablony společně s nástroji třetích stran, jako jsou [sady Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) vytvářet nativní aplikace pro Windows a Android.
 
 ## <a name="debugging-and-diagnostics"></a>Ladění a diagnostika
- Informace o tom, co je nového v ladění, naleznete v tématu [co je nového v ladicím programu sady Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).
+ Informace o tom, co je nového v ladění, naleznete v tématu [co je nového v ladicím programu sady Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
  Informace o novinkách v diagnostice najdete v tématu [co je nového v nástrojích pro profilaci](./profiling/what-s-new-in-profiling-tools.md).
 
  Následující informace jsou nové nebo vylepšené nástroje, které provádí různé typy diagnostiky a analýzy kódu:
 
 ### <a name="perftips"></a>Tipy pro výkon
- Tipy pro výkon zobrazení doba provádění metod během ladění, umožňuje rychlé odhalení kritických bodů bez nutnosti vyvolání profileru. Abyste mohli začít, najdete v článku [tipy pro výkon: informace o výkonu v přehledem při ladění pomocí sady Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ Tipy pro výkon zobrazení doba provádění metod během ladění, umožňuje rychlé odhalení kritických bodů bez nutnosti vyvolání profileru. Abyste mohli začít, najdete v článku [tipy pro výkon: Výkon informace na přehledem při ladění se sadou Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Seznam chyb
  V seznamu chyb nyní podporuje filtrování podle libovolného sloupce. Také ukazuje okamžitým efektem chyby, upozornění a analýza kódu napříč celé řešení C# nebo Visual Basic během psaní, i když změny kódu vytváří tisíce upozornění. Nový seznam chyb je back kompatibilní s existující využití. Další informace najdete v tématu [okno Seznam chyb](./ide/reference/error-list-window.md).
@@ -183,7 +183,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 ### <a name="notification-hub"></a>Centrum oznámení
  Uživatelské rozhraní pro Centrum oznámení je teď jednodušší a aby bylo snazší vyhledávání rychle. Další typy oznámení, které byly přidány včetně problémů s výkonem, problémy s vykreslováním a selhání, a teď poznáte sady Visual Studio přestane zobrazovat text oznámení. Další informace najdete v tématu [Visual Studio oznámení](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Najdete, co se stalo se váš kód (pouze edice Enterprise a Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Najít, co se stalo se váš kód (pouze edice Enterprise a Professional)
  Soustředit na svou práci při najít informace o vašem kódu – bez opuštění editoru. Můžete zkontrolovat změny a další historie pracovní položky, chyby, revize kódu pro kód, který je uložen v aplikaci Visual Studio Team Services (VSTS) nebo v Team Foundation Server (TFS) a tak dále.
 
  V sadě Visual Studio Enterprise a Visual Studio Professional teď můžete:
@@ -194,7 +194,7 @@ Další informace o řadě vylepšení a nových funkcí v prostředí Visual St
 
 - Podívejte se graf, který ukazuje, kdo změnil kód. To může pomoct najít vzory ve změnách vašeho týmu a posoudit jejich dopad.
 
-   ![CodeLens: Změn kódu najdete v historii jako graf](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Zobrazit historii změn kódu jako graf](./ide/media/codelens.png "CodeLens")
 
 - Snadno zobrazit poslední změny kódu.
 

@@ -3,18 +3,18 @@ title: Výhody technické podpory
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Zjistěte, jak aktivovat výhody technické podpory součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9fa92d530ac6db46ce014210bf1c4c91836b2d32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950066"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740425"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivovat výhody technické podpory v předplatných sady Visual Studio
 
@@ -95,13 +95,18 @@ Po dokončení těchto kroků budete moci vybrat plán podpory, které jsou při
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 4 incidenty       |  Ano|
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchod, vybrali NFR<sup>2</sup>                                        | 2 incidenty                                                          |Ano         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 4 incidenty       |  Ano|
+| Visual Studio Professional (Standard) | VL, Azure, maloobchod, vybrali NFR<sup>2</sup>                                        | 2 incidenty                                                          |Ano         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 2 incidenty                                             |  Ano         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 2 incidenty                                               | Ano         |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI | Není k dispozici |NENÍ K DISPOZICI|
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Dev Essentials | Není k dispozici | Není k dispozici |Není k dispozici|
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup> *zahrnuje: Imagine Premium. Vyloučí: Není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine Standard, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD), MCT Software & Služby.*
+<sup>1</sup> *zahrnuje: Imagine Premium. Vyloučí: Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, představte si Standard, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services.*
 
 <sup>2</sup> *zahrnuje: Imagine Standard.*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
+Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

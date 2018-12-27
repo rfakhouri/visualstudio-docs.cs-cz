@@ -14,22 +14,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 564260b60e56974df698ba0efd6e319a8ea3e440
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956842"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684518"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>Postupy: Export diagramů tříd jako obrázky
+# <a name="how-to-export-class-diagrams-as-images"></a>Postupy: Export diagramů tříd jako obrázků
 
-Exportovat diagram třídy, kterou jste vytvořili z kódu v projektu, uložte jako obrázek diagramu. Pokud chcete provést export diagramů tříd UML místo, přečtěte si téma [exportovat diagramy jako obrázky](../../modeling/export-diagrams-as-images.md).
+Export diagramu tříd, který jste vytvořili z kódu v projektu, uložte jako obrázek diagramu. Pokud chcete místo toho export diagramů tříd UML, přečtěte si téma [exportování diagramů jako obrázků](../../modeling/export-diagrams-as-images.md).
 
 ## <a name="export-a-diagram"></a>Exportovat diagram
 
-1.  Otevřete diagramu – třída (*.cd*) souboru.
+1.  Otevřete diagram tříd (*.cd*) soubor.
 
-2.  Z **diagramu tříd** nabídky nebo diagram prostor místní nabídky, zvolte **exportovat Diagram jako obrázek**.
+2.  Z **Diagram tříd** nabídky nebo surface místní nabídky diagramu zvolte **exportovat Diagram jako obrázek**.
 
 3.  Vyberte diagram.
 
@@ -37,9 +37,9 @@ Exportovat diagram třídy, kterou jste vytvořili z kódu v projektu, uložte j
 
 5.  Zvolte **exportovat** pro dokončení exportu.
 
-Pokud chcete automaticky aktualizovat exportovaný bitové kopie, které jsou odkazované z jiné dokumenty, exportujte diagram znovu v sadě Visual Studio.
+Automaticky aktualizovat exportované obrázky, které jsou odkazované z jiných dokumentů, exportujte diagram znovu v sadě Visual Studio.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Postupy: tisk diagramů tříd](how-to-print-class-diagrams.md)
-- [Práce s diagramy tříd](working-with-class-diagrams.md)
+- [Postupy: Tisk diagramů tříd](how-to-print-class-diagrams.md)
+- [Práce s diagramy tříd](designing-and-viewing-classes-and-types.md)

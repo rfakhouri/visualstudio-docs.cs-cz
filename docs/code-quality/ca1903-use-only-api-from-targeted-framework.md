@@ -1,5 +1,5 @@
 ---
-title: 'CA1903: Použijte pouze API z cílového rozhraní .NET Framework'
+title: 'CA1903: Použijte pouze API z cíleného rozhraní'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822810"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738869"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Použijte pouze API z cílového rozhraní .NET Framework
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Použijte pouze API z cíleného rozhraní
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822810"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|Není k dispozici|
 
- Chcete-li změnit cílový rámec projektu, [cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Chcete-li změnit cílový rámec projektu, [cílení na konkrétní verzi rozhraní .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  K odebírání závislostí pro aktualizace service pack, odeberte všechny použití nového člena nebo typu. Pokud je to rozhodnout vědomě a záměrně závislost, potlačit upozornění nebo vypnout toto pravidlo.
@@ -69,4 +69,4 @@ ms.locfileid: "49822810"
 ## <a name="see-also"></a>Viz také:
 
 - [Upozornění přenositelnosti](../code-quality/portability-warnings.md)
-- [Cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Cílení na konkrétní verzi rozhraní .NET Framework](../ide/visual-studio-multi-targeting-overview.md)

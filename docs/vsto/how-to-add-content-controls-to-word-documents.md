@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word'
+title: 'Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - ComboBoxContentControl, adding to documents
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936963"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648043"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word
+# <a name="how-to-add-content-controls-to-word-documents"></a>Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word
   V projektech aplikace Word úrovni dokumentu můžete přidat ovládací prvky obsahu v dokumentu v projektu, v době návrhu nebo za běhu. V projekty doplňku VSTO pro Word můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -58,7 +58,7 @@ ms.locfileid: "49936963"
   
 - Přidání ovládacího prvku obsahu do dokumentu stejným způsobem by přidat nativní ovládací prvek obsahu v aplikaci Word.  
   
-- Přetáhněte ovládací prvek obsahu do dokumentu z **zdroje dat** okna. To je užitečné, pokud chcete ovládací prvek svázat data při vytvoření ovládacího prvku. Další informace najdete v tématu [postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md) a [postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Přetáhněte ovládací prvek obsahu do dokumentu z **zdroje dat** okna. To je užitečné, pokud chcete ovládací prvek svázat data při vytvoření ovládacího prvku. Další informace najdete v tématu [jak: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md) a [jak: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49936963"
 2.  Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
     > [!NOTE]  
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  V **ovládací prvky** klikněte na ikonu ovládacího prvku obsahu, který chcete přidat.  
   

@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320706"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739851"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analýza kódu pro C/C++ – přehled
 
@@ -52,15 +52,15 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>Podpora #pragma
 
-Můžete použít `#pragma` směrnice zpracovávat upozornění jako chyby; povolit nebo zakázat upozornění a potlačení upozornění pro jednotlivé řádky kódu. Další informace najdete v tématu [postupy: nastavení vlastností analýzy kódu pro projekty C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Můžete použít `#pragma` směrnice zpracovávat upozornění jako chyby; povolit nebo zakázat upozornění a potlačení upozornění pro jednotlivé řádky kódu. Další informace najdete v tématu [jak: Nastavení vlastností analýzy kódu pro projekty C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="annotation-support"></a>Podpora poznámky
 
-Poznámky zlepšit přesnost analýzy kódu. Poznámky poskytují další informace o provedení před instrumentací a po podmínky na funkčních parametrů a návratové typy. Další informace najdete v tématu [postupy: určení dalších informací o kódu pomocí __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Poznámky zlepšit přesnost analýzy kódu. Poznámky poskytují další informace o provedení před instrumentací a po podmínky na funkčních parametrů a návratové typy. Další informace najdete v tématu [jak: Určení dalších informací o kódu pomocí __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Spusťte nástroj pro analýzu jako součást zásady vrácení se změnami
 
-Můžete chtít vyžadovat, aby všechny zdrojový kód vrácení se změnami splňovala určitá kritéria. Zejména budete chtít Ujistěte se, že analýza byla spuštěna jako krok pro nejnovější sestavení místní. Další informace o povolení zásady analýzy kódu vrácení se změnami naleznete v tématu [vytváření a používání vrácení se změnami zásad analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+Můžete chtít vyžadovat, aby všechny zdrojový kód vrácení se změnami splňovala určitá kritéria. Zejména budete chtít Ujistěte se, že analýza byla spuštěna jako krok pro nejnovější sestavení místní. Další informace o povolení zásady analýzy kódu vrácení se změnami naleznete v tématu [vytváření a používání vrácení se změnami zásad analýzy kódu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Integrace týmového sestavení
 
@@ -69,7 +69,7 @@ Můžete použít integrované funkce systému sestavení ke spuštění jako kr
 ## <a name="see-also"></a>Viz také:
 
 - [Rychlý start: Analýza kódu pro C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Návod: Analýza závad kódu C/C++](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Návod: Analýza kódu C/C++ výskyt závad](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Upozornění Analýzy kódu pro C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Použití kontrolních mechanismů C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [Referenční dokumentace pro kontrolu požadovaných součástí C++ Core Guidelines](code-analysis-for-cpp-corecheck.md)

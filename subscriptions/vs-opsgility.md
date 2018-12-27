@@ -3,25 +3,25 @@ title: Dovednosti mě nahoru – používá technologii Opsgility výhoda v pře
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/02/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o dovedností mě nahoru – používá technologii výhodu školení Opsgility součástí vybraného předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 7bf23407207493e4e74a61fe29d695379d6d0975
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943021"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739705"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Dovednosti mě až – používá technologii výhoda školení Opsgility v předplatných sady Visual Studio
 
 Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školení na vyžádání s přístupem k živé laboratorní prostředí a certifikace postupy výuky až šest měsíců.
 
 ## <a name="activation-steps"></a>Postup aktivace
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Pokud chcete vaše dovednosti mě nahoru výhodu využít, klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.   Obdržíte oznámení, že kód kupónu se úspěšně načetl.  Klikněte na tlačítko **aktivovat** pokračovat.
    > [!div class="mx-imgBorder"]
@@ -39,14 +39,18 @@ Vybraná předplatná sady Visual Studio zahrnují přístup k odborné školen�
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodního prodeje | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchodního prodeje | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíce                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíce                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici | NENÍ K DISPOZICI  |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici  |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-*Vyloučí: Microsoft Partner Network (MPN), Microsoft Vážíme si toho Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+*Vyloučí:  Microsoft Partner Network (MPN), Microsoft Vážíme si toho Professional (MVP), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

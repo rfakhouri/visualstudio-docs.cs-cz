@@ -1,5 +1,5 @@
 ---
-title: Určení cesty k profilace nástroje příkazového řádku nástroje | Microsoft Docs
+title: Určení cesty k profilování nástroje příkazového řádku nástroje | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,26 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1afb0b00a7e121c611dedbc235684a67cc9cec53
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 7ef2434cdea3183fc55ad72fafb36175a726c58e
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592895"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Zadejte cestu k nástrojům příkazového řádku pro profilaci
-Cesta [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje příkazového řádku v nástrojích pro profilaci nebyla přidána do proměnné prostředí PATH. Na počítačích 32bitová verze nástroje jsou v jednom adresáři. Existují 32bitové a 64bitové verze nástrojů pro profilaci na 64bitových počítačích.  
+Cesta k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci není přidán do proměnné prostředí PATH. Na 32bitových počítačích nástroje jsou v jednom adresáři. Existují 32bitové a 64bitové verze nástrojů pro profilaci na 64bitových počítačích.  
   
-## <a name="32-bit-computers"></a>32bitové počítače  
- Na 32bitové počítače, je výchozí adresář profileru nástroje *disk\Program 11.0\Team Files\Microsoft Visual Studio Tools nástroje*.  
+## <a name="32-bit-computers"></a>32bitových počítačích  
+ Pro nativní kód profileru sady Visual Studio rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček *VSPerf.h*a knihovnu importu *VSPerf.lib*, jsou umístěny v *Microsoft Visual Studio\2017\Team nástroje Tools\PerfSDK* adresář.
+  
+ Pro spravovaný kód, okna profilování rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tato knihovna DLL se nachází v *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře.
   
 ## <a name="64-bit-computers"></a>64bitové počítače  
- Na 64bitových počítačích zadejte cestu podle cílové platformy PROFILOVANÉHO aplikace.  
+ Na 64bitových počítačích zadejte cestu podle cílové platformy profilované aplikace.  
   
--   Pro 32bitové aplikace je výchozí adresář profiler nástrojů:  
+-   Pro 32bitové aplikace je výchozí adresář nástrojů profilování:  
   
-     *disk\Program soubory (x86) \Microsoft Visual Studio 11.0\Team nástrojů nástroje*  
+     (nativní) *Microsoft Visual Studio\2017\Team nástroje Tools\PerfSDK* (spravované) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*  
   
--   Pro 64bitové aplikace je výchozí adresář profiler nástrojů:  
+-   Pro 64bitové aplikace je výchozí adresář nástrojů profilování:  
   
-     *disk\Program soubory (x86) \Microsoft Visual Studio 11.0\Team Tools\x64 nástroje*
+     (nativní) *Microsoft Visual Studio\2017\Team nástroje Tools\x64\PerfSDK* (spravované) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

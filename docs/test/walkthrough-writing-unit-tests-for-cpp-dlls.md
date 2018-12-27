@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: zápis testů jednotek pro knihovny DLL C++'
+title: 'Postupy: Zápis testů jednotek pro knihovny DLL C++'
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877254"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740163"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: zápis testů jednotek pro knihovny DLL C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: Zápis testů jednotek pro knihovny DLL C++
 
 Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první testovací metody. Základní kroky jsou následující:
 
@@ -329,7 +329,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí první tes
 
 ## <a name="see-also"></a>Viz také:
 
-- [Přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Přidání testů jednotek do stávajících aplikací C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Používání atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Ladění nativního kódu](../debugger/debugging-native-code.md)
 - [Návod: Vytvoření a použití dynamické knihovny (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)

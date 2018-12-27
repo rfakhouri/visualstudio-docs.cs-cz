@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dad547664768247f7837b9d65797ffba15bbdf8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 3b24a14636726be15aa52a50d56c381781f492fc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794813"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739582"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Upozornění: závislost &#39;souboru&#39; v projektu &#39;projektu&#39; nelze zkopírovat do běhového adresáře, protože by přepsala odkaz &#39;souboru.&#39;
 Dojde ke konfliktu mezi závislosti víc souborů odlišné sestavení se stejným názvem, mají být zkopírovány do adresáře bin pro spuštění aplikace. Je schopen vyřešit konflikt, protože jednu ze závislostí je primární odkaz běhového adresáře.  
@@ -36,7 +36,7 @@ Dojde ke konfliktu mezi závislosti víc souborů odlišné sestavení se stejn�
   
  **Chcete-li opravit tuto chybu**  
   
--   Kopírování souborů sestavení jednu (nebo nula) do adresáře bin, což lze provést vložením soubory sestavení do globální mezipaměti sestavení. Globální mezipaměti sestavení řeší konflikty názvů souborů. Žádné místní kopie souboru sestavení bude proveden, protože modul common language runtime ví, jak najít sestavení v globální mezipaměti sestavení. Další informace najdete v tématu [práce se sestaveními a s globální pamětí sestavení](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) a [Chyba: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by vznikl konflikt se závislostí ' Soubor '](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md).  
+-   Kopírování souborů sestavení jednu (nebo nula) do adresáře bin, což lze provést vložením soubory sestavení do globální mezipaměti sestavení. Globální mezipaměti sestavení řeší konflikty názvů souborů. Žádné místní kopie souboru sestavení bude proveden, protože modul common language runtime ví, jak najít sestavení v globální mezipaměti sestavení. Další informace najdete v tématu [práce se sestaveními a s globální pamětí sestavení](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) a [Chyba: závislost 'file' v projektu 'project' nelze zkopírovat do běhového adresáře, protože by vznikl konflikt se závislostí ' Soubor '](/visualstudio/misc/error-dependency-file?view=vs-2015).  
   
 ## <a name="see-also"></a>Viz také  
  [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)   

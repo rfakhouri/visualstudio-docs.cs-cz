@@ -3,18 +3,18 @@ title: Výhodu Microsoft Azure | Dokumentace Microsoftu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/3/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Zjistěte, jak aktivovat výhody služeb Azure součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862336"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739809"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Použití Microsoft Azure v předplatných sady Visual Studio
 
@@ -26,11 +26,9 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 
 |                 Úroveň předplatného / Program                 |           Výhody           |                         Obnovitelné?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     měsíční kredit 150 USD     |                             Ano                             |
-|               Visual Studio Enterprise roční                |     měsíční kredit 150 USD     |                             Ano                             |
+|              Visual Studio Enterprise Standard               |     měsíční kredit 150 USD     |                             Ano                             ||
 |               Visual Studio Enterprise měsíční               |        Není k dispozici        |                                                             |
-|             Visual Studio Professional Standard              |     měsíční kredit ve výši 50 USD      |                             Ano                             |
-|              Visual Studio Professional roční               |     měsíční kredit ve výši 50 USD      |                             Ano                             |
+|             Visual Studio Professional Standard              |     měsíční kredit ve výši 50 USD      |                             Ano                            
 |              Visual Studio Professional měsíčně              |        Není k dispozici        |                                                             |
 |                    Visual Studio Test Pro                    |     měsíční kredit ve výši 50 USD      |                             Ano                             |
 |                        Předplatné MSDN Platforms                        |     měsíční kredit 100 USD     |                             Ano                             |
@@ -47,11 +45,16 @@ Jako předplatitel sady Visual Studio můžete použít Microsoft Azure bez dal�
 
 * Zahrnuje není pro prodej (NFR), Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), Visual Studio Industry Partner (VSIP)
 
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
+
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="activation-steps"></a>Postup aktivace
 
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici Azure v části nástroje na výhody stránky a klikněte na tlačítko **aktivovat** odkaz v dolní části dlaždice výhodu.
    > [!div class="mx-imgBorder"]
@@ -73,17 +76,17 @@ Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.
 
 ## <a name="faq"></a>Nejčastější dotazy
 
-### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Otázka: Jak odešlu incident technické podpory z webu Azure portal?
-Odpověď: odešlete incident podpory na webu Azure Portal je tří kroků.
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>DOTAZ: Jak odešlu incident technické podpory z webu Azure portal?
+O:  Odešlete incident podpory na webu Azure Portal je tří kroků.
 1. Výhody technické podpory si aktivujete a získejte ID vašeho přístupu ID smlouvy.
 2. Propojte smlouvu o podpoře k předplatnému Azure.
 3. Odešlete incident podpory.
 
 Navštivte prosím [technickou podporu](vs-tech-support.md) kompletní podrobnosti naleznete v dokumentaci.
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Otázka: nemůžu byla přijata zpráva oznamující, že tento přístup k Azure vám brzo vyprší.  Co mám dělat pro pokračující využití Azure?
+### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>DOTAZ: Přišla zpráva oznamující, že tento přístup k Azure vám brzo vyprší.  Co mám dělat pro pokračující využití Azure?
 
-Odpověď: můžete tento e-mail jste dostali, vzhledem k tomu použít Azure benefit přidružených k vašemu předplatnému sady Visual Studio a, který má předplatné vypršelo nebo bylo odebráno.  Chcete-li pokračovat v používání Azure, máte několik možností:
+O:  Tento e-mail jste dostali, protože používáte výhody služeb Azure spojené s předplatným sady Visual Studio a, který má předplatné vypršelo nebo bylo odebráno.  Chcete-li pokračovat v používání Azure, máte několik možností:
 
 **Doporučená akce:**
 

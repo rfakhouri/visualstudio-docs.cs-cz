@@ -3,18 +3,18 @@ title: Zlepšete svoje dovednosti data science ještě dnes s využitím Datacam
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o předplatném školení Datacampu součástí vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d192ea63192f2ce1b02803b2bef1e1f40e953789
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863904"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739929"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -24,7 +24,7 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
 
 ## <a name="activation-steps"></a>Postup aktivace
 
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici Datacampu výhoda v kategorii "Vývoj Professional" a klikněte na **aktivovat**.
    > [!div class="mx-imgBorder"]
@@ -35,9 +35,9 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
    > ![Vytvořit nový účet Datacampu](_img/vs-datacamp/vs-datacamp-create-account.png)
    > 
    > [!NOTE]
-   > Když začnete vytvářet svůj účet, může zobrazit následující chybová zpráva: "zpráva JEJDA!  Svůj propagační kód je neplatná nebo vypršela její platnost."  K tomu dochází, protože když se vytvoří svůj propagační kód, jeho platnost vyprší po několika minutách.  Pokud se zobrazí tato zpráva, jednoduše vrátit [výhody](https://my.visualstudio.com/benefits) stránky a klikněte na **aktivovat** odkaz na dlaždici Datacampu výhodu.
+   > Když začnete vytvářet svůj účet, může se zobrazit následující chybová zpráva: "JEJDA!  Svůj propagační kód je neplatná nebo vypršela její platnost."  K tomu dochází, protože když se vytvoří svůj propagační kód, jeho platnost vyprší po několika minutách.  Pokud se zobrazí tato zpráva, jednoduše vrátit [výhody](https://my.visualstudio.com/benefits) stránky a klikněte na **aktivovat** odkaz na dlaždici Datacampu výhodu.
 
-4. Po vytvoření účtu můžete výuky.  Mezi možnosti patří:
+4. Po vytvoření účtu můžete výuky.  Vaše možnosti jsou:
     - Učení R pro datové vědy
     - Spuštění Learning Pythonu pro datové vědy
     - Rozvíjet vaše dovednosti datové vědy
@@ -72,18 +72,21 @@ Můžete kdykoli zastavit a obnovit trénování v příští relaci.  Stačí n
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchodní prodej | 3 měsíce       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |  Ne.  K dispozici pro nové předplatitele pouze           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchodní prodej | 3 měsíce       |  Ne.  K dispozici pro nové předplatitele pouze          |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | K dispozici                                             |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | K dispozici                                              |  Ne.  K dispozici pro nové předplatitele pouze           |
 | Visual Studio Dev Essentials | Není k dispozici  | 2 měsíce | Ne. K dispozici pro nové předplatitele pouze |
-| Visual Studio Enterprise (standardní a roční cloudové)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Není k dispozici  | Není k dispozici |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 
 
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine* 
+<sup>1</sup>*zahrnuje:    Není pro prodej (NFR) FTE, Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

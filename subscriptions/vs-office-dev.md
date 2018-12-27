@@ -3,18 +3,18 @@ title: Výhoda pro vývojáře Office 365 v předplatných sady Visual Studio | 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o benefitech Office 365 pro vývojáře, které jsou součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758394"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739718"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné Office 365 pro vývojáře v předplatných sady Visual Studio
 
@@ -36,7 +36,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio Enterprise získaj�
 6. Zvolte svoji zemi.
 7. Zadejte název vaší společnosti.
 8. Klikněte na zaškrtávací políčko první, abyste přijali podmínky a ujednání.
-9. Klikněte na tlačítko **Další**.
+9. Klikněte na **Další**.
    > [!div class="mx-imgBorder"]
    > ![Vývoj sady Office 365 registrace](_img/vs-office-dev/vs-office-dev-signup.png)
 
@@ -56,7 +56,7 @@ Předplatitelé s vybraným předplatným sady Visual Studio Enterprise získaj�
     > [!div class="mx-imgBorder"]
     > ![Ověření kódu vývojáře Office 365](_img/vs-office-dev/vs-office-dev-setup.png)
 
-Je to!  Zobrazí se stránka zobrazení informací podle vašich požadavků.
+A to je vše!  Zobrazí se stránka zobrazení informací podle vašich požadavků.
 
 ## <a name="next-steps"></a>Další kroky
 
@@ -68,14 +68,19 @@ Další informace o předplatné Office 365 pro vývojáře, podívejte se [k pr
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuté      |  Ano          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                            |NENÍ K DISPOZICI         |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  NENÍ K DISPOZICI         |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              | NENÍ K DISPOZICI         |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | Zahrnuje      |  Ano          |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                            |Není k dispozici         |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici         |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              | Není k dispozici         |
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí: Microsoft Partner Network (MPN), představte si Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).*
+<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services pro vývojáře, MCT Software & Services.  Vyloučí:  Microsoft Partner Network (MPN), představte si, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).*
+
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

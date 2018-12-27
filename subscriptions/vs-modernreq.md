@@ -3,18 +3,18 @@ title: MODERNRequirements výhoda v předplatných sady Visual Studio | Dokument
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o sadě ModernRequirements produktů, které jsou součástí vybraných předplatných sady Visual Studio Enterprise.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1c080b19694495057243c2d8df9ee505bd650cb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942865"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740257"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhoda MODERNRequirements4TFS v předplatných sady Visual Studio
 
@@ -68,9 +68,9 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 
 15. Klikněte na tlačítko **souhlasím** přijměte podmínky a pak klikněte na přepínací tlačítko **Další**.
 
-16. Zvolte, kam chcete nainstalovat aplikaci a určit, zda má být k dispozici pro všechny uživatele nebo pouze sami.  Klikněte na tlačítko **Další**.
+16. Zvolte, kam chcete nainstalovat aplikaci a určit, zda má být k dispozici pro všechny uživatele nebo pouze sami.  Klikněte na **Další**.
 
-17. Vyberte, zda má SmartWord k instalaci v režimu Autor nebo revidujícího.  Obraťte se na další informace o těchto režimech [MODERNRequirements podporu](http://www.modernrequirements.com/support-2/).  Klikněte na tlačítko **Další**.
+17. Vyberte, zda má SmartWord k instalaci v režimu Autor nebo revidujícího.  Obraťte se na další informace o těchto režimech [MODERNRequirements podporu](http://www.modernrequirements.com/support-2/).  Klikněte na **Další**.
 
 18. Dále vyberte, jestli chcete nainstalovat šablony a klikněte na tlačítko **Další**.
 
@@ -88,14 +88,18 @@ Vybraná předplatná sady Visual Studio zahrnují 6měsíční předplatné pro
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                          |NENÍ K DISPOZICI     |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                          |NENÍ K DISPOZICI     |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                                          |NENÍ K DISPOZICI     |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  |Není k dispozici                                                          |NENÍ K DISPOZICI     |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                          |Není k dispozici     |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                          |Není k dispozici     |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                                          |Není k dispozici     |
+| Visual Studio Dev Essentials | Není k dispozici  |Není k dispozici                                                          |Není k dispozici     |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), FTE.  Vyloučí: Microsoft Partner Network (Professional), MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (organizace), FTE.  Vyloučí:  Microsoft Partner Network (Professional), MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

@@ -3,18 +3,18 @@ title: Power BI Pro výhoda v předplatných sady Visual Studio | Dokumentace Mi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o předplatné Power BI Pro, které jsou součástí vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219533"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739640"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v předplatných sady Visual Studio
 
@@ -22,7 +22,7 @@ Transformujte svá data na bohaté vizuály s shromažďovat a organizovat způs
 
 ## <a name="activation-steps"></a>Postup aktivace
 Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přihlaste pomocí existujícího účtu.
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici Power BI Pro v části nástroje na stránce výhod. Klikněte na **získat kód** odkaz v dolní části dlaždice výhodu.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
    > [!div class="mx-imgBorder"]
@@ -56,7 +56,7 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
    > ![Power BI Pro Benefit kontaktní informace](_img/vs-pbi/vs-pbi-contact-cropped.png)
 
 
-9. Na další stránku potvrdí, že vaše předplatné Power BI Pro vývojáře (MSDN) má cenu 0,00 USD.  Klikněte na tlačítko **Další**.
+9. Na další stránku potvrdí, že vaše předplatné Power BI Pro vývojáře (MSDN) má cenu 0,00 USD.  Klikněte na **Další**.
 
 10. A konečně Shromáždíme některé platební údaje.  Nedělejte si starosti – vám nebudou účtovat.  Všimněte si, že ceny je stále 0.00 $.  Můžete kreditní kartou, bankovním účtu nebo faktury jako způsob platby.  Pokud se rozhodnete **faktury**, můžete být vyzváni, pro svůj názor na důvod, proč preferovat tento způsob platby.  Zadejte prosím požadované informace pro váš upřednostňovaný způsob platby a klikněte na tlačítko **Odeslat objednávku**.
     > [!div class="mx-imgBorder"]
@@ -67,36 +67,39 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo se přih
     > ![Všechny výhody Power BI Pro nastavení](_img/vs-pbi/vs-pbi-all-set-cropped.png)
 
 
-12. Teď, když je nastavení vašeho účtu Power BI Pro, zobrazí se vám Centrum pro správu Office 365, kde můžete spravovat uživatele a domény, instalace softwaru Office a seznamte se s Office 365.  Je to!  Jste připraveni začít.
+12. Teď, když je nastavení vašeho účtu Power BI Pro, zobrazí se vám Centrum pro správu Office 365, kde můžete spravovat uživatele a domény, instalace softwaru Office a seznamte se s Office 365.  A to je vše!  Jste připraveni začít.
 
 ## <a name="eligibility"></a>Způsobilost
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano|
-| Visual Studio Professional (standardní a roční cloudové, měsíčních cloudových) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                            |NENÍ K DISPOZICI         |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                            |NENÍ K DISPOZICI         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano|
+| Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                            |Není k dispozici         |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                            |Není k dispozici         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | K dispozici       |  Ano|
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici |NENÍ K DISPOZICI|
-| Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |NENÍ K DISPOZICI|
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici|
+| Visual Studio Enterprise (měsíční cloud) | Azure                                       | Není k dispozici                                  |Není k dispozici|
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD).  Vyloučí: Microsoft Partner Network (MPN), FTE Imagine.*
+<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software a služby pro vývojáře, MCT Software a služby, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  Vyloučí:  Microsoft Partner Network (MPN), FTE Imagine.*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
-### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>Otázka: Pokud je bezplatné výhody, Proč musím zadat číslo platební karty?
-Odpověď: benefit je zdarma, ale aktivace používá stejný systém používá ke zpracování objednávek placené.  K dispozici jsou dva typy platby. 
+### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>DOTAZ:  Pokud je bezplatné výhody, Proč musím zadat číslo platební karty?
+O:  Výhodu je zdarma, ale aktivace používá stejný systém používá ke zpracování placené objednávky.  K dispozici jsou dva typy platby. 
 - Platební karty.  Pokud zadáte číslo kreditní karty, vaše karta žádné poplatky. 
 - Faktury.  Pokud vyberete jako typ platby "Faktury", není nutné zadat číslo platební karty.  Můžete také nastavit interval na "roční".  Tímto způsobem, dostanete e-mail oznamující, pro vás připravený fakturu.  Fakturovaná částka bude být 0.00 $.  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Otázka: je Power BI Pro benefit zahrnuté v licencích Moje předplatné pro použití v produkčním prostředí?
-Odpověď: Ano.  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>DOTAZ:  Je Power BI Pro benefit zahrnuté v licencích Moje předplatné pro použití v produkčním prostředí?
+O:  Ano.  
 
-### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Otázka: Při pokusu o aktivaci Power BI Pro, zobrazí se zpráva, "Už máte účet prostřednictvím práce".  Použití výhody
-Odpověď: Ano.  Zpráva označuje, že jste přihlášení k doméně, která už má aktivní klienty Office 365, na kterých nejste správcem.  Chcete-li přidat do tenanta Power BI Pro, musíte být správcem tohoto tenanta.  Chcete-li vyřešit tento problém, postupujte podle těchto kroků můžete vytvořit vlastního tenanta.
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>DOTAZ:  Při pokusu o aktivaci Power BI Pro, zobrazí se zpráva, "Už máte účet prostřednictvím práce".  Použití výhody
+O:  Ano.  Zpráva označuje, že jste přihlášení k doméně, která už má aktivní klienty Office 365, na kterých nejste správcem.  Chcete-li přidat do tenanta Power BI Pro, musíte být správcem tohoto tenanta.  Chcete-li vyřešit tento problém, postupujte podle těchto kroků můžete vytvořit vlastního tenanta.
 1.  Když se zobrazí zpráva, že už máte účet prostřednictvím práce, klikněte na tlačítko **vytvořit nový účet**.
 
 2.  Na další obrazovce zadejte svoje kontaktní informace a klikněte na **Další**.
@@ -108,8 +111,8 @@ Odpověď: Ano.  Zpráva označuje, že jste přihlášení k doméně, která u
 4.  Zbývající kroky v procesu jsou shodné s hodnotami uvedenými v těle článku, počínaje krokem 6.
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>Dotaz: jsem v doméně státní správy.  Můžete použít výhody? 
-Odpověď: Ne.  Power BI Pro benefit nelze přidat do klientů v doméně státní správy. 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>DOTAZ:  Jsem v tenantu pro státní správu.  Můžete použít výhody? 
+O:  Ne.  Power BI Pro benefit nelze přidat do tenantech pro státní správu. 
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Power BI Pro?

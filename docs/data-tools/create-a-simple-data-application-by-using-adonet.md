@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064869"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740098"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 
@@ -37,7 +37,7 @@ Chcete-li vytvořit aplikaci, budete potřebovat:
 
 -   SQL Server Express LocalDB. Pokud nemáte SQL Server Express LocalDB, můžete ho nainstalovat [SQL Server Express stránku pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Toto téma předpokládá, že ovládáte základní funkce integrovaného vývojového prostředí sady Visual Studio a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, Vložit tlačítka a další ovládací prvky ve formulářích, nastavte vlastnosti ovládacích prvků a kódovat jednoduché události. Pokud si nejste seznámení s těmito úkoly, doporučujeme provést [Začínáme s Vizuálem C# a Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tématu před zahájením tohoto návodu.
+Toto téma předpokládá, že ovládáte základní funkce integrovaného vývojového prostředí sady Visual Studio a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, Vložit tlačítka a další ovládací prvky ve formulářích, nastavte vlastnosti ovládacích prvků a kódovat jednoduché události. Pokud si nejste seznámení s těmito úkoly, doporučujeme provést [Začínáme s Vizuálem C# a Visual Basic](../ide/quickstart-visual-basic-console.md) tématu před zahájením tohoto návodu.
 
 ## <a name="set-up-the-sample-database"></a>Vytvoření ukázkové databáze
 

@@ -3,18 +3,18 @@ title: EMS Benefit | Dokumentace Microsoftu
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/11/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o Enterprise Mobility + Security výhodu součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6b4d4965ec2b7145ab388dff7df226ec16603e5
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930112"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739594"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Enterprise Mobility + Security (EMS) v předplatných sady Visual Studio
 
@@ -27,7 +27,7 @@ Roční cloudové služby Visual Studio Enterprise a standardních předplatnýc
 
 Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomocí existujícího účtu.
 
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici Enterprise Mobility + Security v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždice.   Obdržíte oznámení, že kód se úspěšně načetla.  Klikněte na tlačítko **aktivovat**.
    > [!div class="mx-imgBorder"]
@@ -55,16 +55,21 @@ Pokud chcete použít EMS, budete muset nastavit účet nebo se přihlaste pomoc
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano          |
-| Visual Studio Professional (standardní<sup>2</sup>, roční cloudové) | VL, Azure, maloobchodního prodeje                                       | K dispozici                                                            |  Ano          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano          |
+| Visual Studio Professional (standardní<sup>2</sup>) | VL, Azure, maloobchodního prodeje                                       | K dispozici                                                            |  Ano          |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                             |  Není k dispozici          |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure | Není k dispozici | Není k dispozici |
 | Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici |Není k dispozici |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
+<sup>1</sup>*zahrnuje:    Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark.  Vyloučí: Vážíme si toho Microsoft Professional (MVP), ředitel pro oblast (RD), MCT Software & Services, představte si, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *vyloučí programu Microsoft Partner Network (Professional)*
+
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
+
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 

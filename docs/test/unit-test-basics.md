@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053166"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740348"
 ---
 # <a name="unit-test-basics"></a>Základní informace o testování částí
 
@@ -32,9 +32,9 @@ Průzkumník testů také můžete spustit třetích stran a open source rozhran
 
 Úvod do testování částí, která vás přesměruje přímo do psaní kódu naleznete v těchto tématech:
 
-- [Návod: Vytvoření a spuštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Rychlý start: Testovací řízeného rozvoje pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Zápis testů jednotek pro C/C++ v sadě Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -246,9 +246,9 @@ Další informace najdete v tématu [spouštění testů jednotek pomocí Průzk
 
 ## <a name="qa"></a>FUNKCE Q &AMP; A
 
-**Otázka: Jak mohu ladit testy jednotek?**
+**DOTAZ: Jak mohu ladit testy jednotek?**
 
-**Odpověď:** použití **Průzkumník testů** spustíte relaci ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:
+**ODPOVĚĎ:** Použití **Průzkumník testů** spustíte relaci ladění pro testy. Krokování kódu s ladicím programem Visual Studio bez problémů přejdete vpřed a zpět mezi testováním částí a testovaný projekt. Spuštění ladění:
 
 1.  V editoru sady Visual Studio nastavte zarážku v jedné nebo více testovacích metod, které chcete ladit.
 
@@ -257,17 +257,17 @@ Další informace najdete v tématu [spouštění testů jednotek pomocí Průzk
 
 2.  V **Průzkumníka testů**, vyberte testovací metody a pak zvolte **ladit vybrané testy** z místní nabídky.
 
-Přečtěte si další podrobnosti o [ladění testů jednotek](../debugger/debugging-in-visual-studio.md).
+Přečtěte si další podrobnosti o [ladění testů jednotek](../debugger/debugger-feature-tour.md).
 
-**Otázka: Pokud používám TDD, postup generování kódu z mé testy?**
+**DOTAZ: Pokud používám TDD, postup generování kódu z mé testy?**
 
-**Odpověď:** IntelliSense použít ke generování třídy a metody v kódu projektu. Napíšete příkaz v testovací metodě, která volá třída nebo metoda, kterou chcete vygenerovat a pak otevřete nabídku technologie IntelliSense v rámci volání. Pokud je volání konstruktoru nové třídy, zvolte **generovat nový typ** v nabídce a postupujte podle průvodce a vložte třídy do projektu kódu. Pokud je volání metody, zvolte **generovat novou metodu** z nabídky technologie IntelliSense.
+**ODPOVĚĎ:** Pomocí IntelliSense pro generování třídy a metody v kódu projektu. Napíšete příkaz v testovací metodě, která volá třída nebo metoda, kterou chcete vygenerovat a pak otevřete nabídku technologie IntelliSense v rámci volání. Pokud je volání konstruktoru nové třídy, zvolte **generovat nový typ** v nabídce a postupujte podle průvodce a vložte třídy do projektu kódu. Pokud je volání metody, zvolte **generovat novou metodu** z nabídky technologie IntelliSense.
 
 ![Generovat nabídky technologie IntelliSense se zakázaným inzerováním – metoda](../test/media/ute_generatemethodstubintellisense.png)
 
-**Dotaz: lze vytvořit testy jednotek, neměl zabrat víc kopií dat jako vstup pro spuštění testu?**
+**DOTAZ: Můžete vytvořit testy jednotek, neměl zabrat víc kopií dat jako vstup pro spuštění testu?**
 
-**Odpověď:** Ano. *Test řízený daty metody* umožní otestovat rozsah hodnot s testovací metodou jednu jednotku. Použití `DataSource` atribut testovací metody, která určuje zdroj dat a tabulky, který obsahuje hodnoty proměnné, které chcete testovat.  V těle metody přiřazují hodnoty řádků do proměnných pomocí `TestContext.DataRow[` *Názevsloupce* `]` indexeru.
+**ODPOVĚĎ:** Ano. *Test řízený daty metody* umožní otestovat rozsah hodnot s testovací metodou jednu jednotku. Použití `DataSource` atribut testovací metody, která určuje zdroj dat a tabulky, který obsahuje hodnoty proměnné, které chcete testovat.  V těle metody přiřazují hodnoty řádků do proměnných pomocí `TestContext.DataRow[` *Názevsloupce* `]` indexeru.
 
 > [!NOTE]
 > Tyto postupy platí pouze pro testovací metody, které zapisují pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód. Pokud používáte jiné rozhraní, najdete v dokumentaci rozhraní ekvivalentní funkce.
@@ -297,9 +297,9 @@ Atributy metody spustí jednou pro každý řádek v tabulce. **Průzkumník tes
 
 Další informace o [testy jednotek řízené daty](../test/how-to-create-a-data-driven-unit-test.md).
 
-**Dotaz: lze zobrazit, jak velká část kódu je testována mých testů jednotek?**
+**DOTAZ: Můžete zobrazit, jak velká část kódu je testována mých testů jednotek?**
 
-**Odpověď:** Ano. Můžete určit množství kódu, který je skutečně testován prostřednictvím testů jednotky pomocí nástroje pokrytí kódu sady Visual Studio. Jsou podporovány nativní a spravované jazyky a všechna rozhraní pro testování částí, které můžou běžet v rámci testu rozhraní jednotky.
+**ODPOVĚĎ:** Ano. Můžete určit množství kódu, který je skutečně testován prostřednictvím testů jednotky pomocí nástroje pokrytí kódu sady Visual Studio. Jsou podporovány nativní a spravované jazyky a všechna rozhraní pro testování částí, které můžou běžet v rámci testu rozhraní jednotky.
 
 Můžete spustit pokrytí kódem u vybraných testů nebo u všech testů v řešení. **Výsledky pokrytí kódu** okno zobrazuje procento bloků kódu produktu, které byly vykonány podle řádku, funkce, třídy, oboru názvů a modulu.
 
@@ -311,9 +311,9 @@ Výsledky pokrytí se zobrazí v **výsledky pokrytí kódu** okna.
 
 Další informace o [pokrytí kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
-**Dotaz: lze zkušební metody v okně můj kód, který mají vnější závislosti?**
+**DOTAZ: V okně můj kód, který mají vnější závislosti, zkušební metody?**
 
-**Odpověď:** Ano. Pokud máte Visual Studio Enterprise, Microsoft Fakes lze použít s testovacími metodami, které zapisují pomocí rozhraní pro testování částí pro spravovaný kód.
+**ODPOVĚĎ:** Ano. Pokud máte Visual Studio Enterprise, Microsoft Fakes lze použít s testovacími metodami, které zapisují pomocí rozhraní pro testování částí pro spravovaný kód.
 
 Microsoft Fakes používá dva přístupy k vytvoření náhradní třídy u externích závislostí:
 
@@ -325,9 +325,9 @@ V oba přístupy pomocí generovaného delegáti volání metody závislostí m�
 
 Další informace o [izolace metody jednotkového testu s Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Otázka: Mohu použít jiné rozhraní pro testování částí pro vytvoření testů jednotek?**
+**DOTAZ: Můžete použít jiné rozhraní pro testování částí k vytvoření testování částí?**
 
-**Odpověď:** Ano, postupujte podle těchto kroků [najít a nainstalovat jiná rozhraní Framework](../test/install-third-party-unit-test-frameworks.md). Po restartování sady Visual Studio otevřete řešení k vytvoření testování částí a poté vyberte nainstalované rozhraní tady:
+**ODPOVĚĎ:** Ano, postupujte podle těchto kroků [najít a nainstalovat jiná rozhraní Framework](../test/install-third-party-unit-test-frameworks.md). Po restartování sady Visual Studio otevřete řešení k vytvoření testování částí a poté vyberte nainstalované rozhraní tady:
 
 ![Vyberte jiné nainstalované testování částí](../test/media/createunittestsdialogextensions.png)
 

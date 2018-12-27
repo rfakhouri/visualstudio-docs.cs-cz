@@ -3,18 +3,18 @@ title: Výhoda MSDN Magazine v předplatných sady Visual Studio | Dokumentace M
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/13/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Přihlaste se k odběru předplatného MSDN Magazine součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d108fa34faec04ce2f09e8ab5b55dfe19f0d61d5
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941266"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739588"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Výhoda MSDN Magazine v předplatných sady Visual Studio
 
@@ -51,18 +51,21 @@ Digitální edice je k dispozici pro členy programu Visual Studio Dev Essential
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> |Tištěné vydání       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | Tištěné vydání                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> |Tištěné vydání       |  Ne.  K dispozici pro nové předplatitele pouze          |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Tištěné vydání                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Tištěné vydání                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Tištěné vydání                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-|Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)   | Azure |Není k dispozici      |  NENÍ K DISPOZICI         |
-|Visual Studio Dev Essentials| NENÍ K DISPOZICI |Digitální vydání       |  Ano|
+|Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)   | Azure |Není k dispozici      |  Není k dispozici         |
+|Visual Studio Dev Essentials| Není k dispozici |Digitální vydání       |  Ano|
 
-<sup>1</sup>*vytištěná edition: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, Microsoft Partner Network (organizace), Imagine (Premium).*
+<sup>1</sup>*vytištěná edice:    Neprodejné (NFR), Visual Studio Industry Partner (VSIP), Imagine FTE, Microsoft Partner Network (organizace), (Premium).*
 
-*Digitální vydání: MCT Software & Services, Microsoft Vážíme si toho Professional (Professional), ředitel pro oblast (RD).*
+*Digitální edice: MCT Software & Services, Microsoft Vážíme si toho Professional (Professional), ředitel pro oblast (RD).*
 
-*Vyloučí: Imagine (Standard), BizSpark, MCT Software & Services pro vývojáře*
+*Vyloučí:  Představte si (Standard), BizSpark, MCT Software & Services pro vývojáře*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

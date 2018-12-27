@@ -1,5 +1,5 @@
 ---
-title: 'Návrhář postupu provádění - postupy: přidání aktivit do sady nástrojů'
+title: 'Návrhář postupu provádění – jak: Přidání aktivit do panelu nástrojů'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,56 +10,56 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118210"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684558"
 ---
-# <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: přidání aktivit do sady nástrojů
+# <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: Přidání aktivit do panelu nástrojů
 
-Aktivity mohou být přidány do **sada nástrojů** ve vašem řešení v několika různými způsoby. Můžete přidat z aktuálního projektu, na ně odkazovat z jiného projektu nebo na ně odkazovat z jiného sestavení.
+Aktivity mohou být přidány do **nástrojů** ve vašem řešení v několika různými způsoby. Můžete přidat z v rámci aktuálního projektu, odkazovat z jiného projektu nebo na ně odkazovat z jiného sestavení.
 
-## <a name="to-add-an-activity-from-within-your-current-project"></a>Chcete-li přidat aktivitu z v aktuálním projektu
+## <a name="to-add-an-activity-from-within-your-current-project"></a>Chcete-li přidat aktivitu z v rámci aktuálního projektu
 
-1.  Přidejte novou vlastní aktivitu do aktuálního projektu pracovního postupu. Další informace o přidání nové vlastní aktivity do projektu najdete v tématu [postupy: Přidat novou položku do projektu Workflow](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
+1.  Přidáte novou vlastní aktivitu do aktuálního projektu pracovního postupu. Další informace o přidání do projektu novou vlastní aktivitu, naleznete v tématu [jak: Přidat novou položku do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).
 
-2.  Přidáte vlastní logiky do vaši aktivitu.
+2.  Přidáte vlastní logiku aktivity.
 
-3.  Sestavte projekt. Pokud bylo úspěšné, sestavení novou kategorii v **sada nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity, které jsou součástí této kategorie spadají.
-
-    > [!NOTE]
-    > Pokud se resetuje sady nástrojů, vlastní aktivity se odebere, i v případě, že je řešení znovu sestaven. Znovu naplnit nástrojů vlastní aktivity po byla obnovena, restartujte Visual Studio.
+3.  Sestavte projekt. Pokud bylo sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.
 
     > [!NOTE]
-    > V panelu nástrojů můžete zobrazit pouze jednu aktivitu daného názvu. Pokud dvě aktivity z různých sestavení mají stejný název třídy, se zobrazí pouze jeden.
+    > Pokud panel nástrojů se vynuluje, vlastní aktivity se odebere, i v případě, řešení je vybudováno znovu. Naplnit panel nástrojů s vlastní aktivity po byla obnovena, restartujte Visual Studio.
 
     > [!NOTE]
-    > Doména aplikace je sdílen mezi editor instance; Pokud se používají statické proměnné, bude sdílena mezi také instance editoru. Pokud není toto chování žádoucí, služby slouží ke sledování proměnné instancí. V tématu [pomocí kontextu úpravy typem ModelItem](/dotnet/framework/windows-workflow-foundation/using-the-modelitem-editing-context) informace o používání služby v návrháři.
+    > Panel nástrojů můžete zobrazit pouze jednu aktivitu daným názvem. Pokud dvě aktivity v různých sestaveních mají stejný název třídy, zobrazí se jenom jeden.
+
+    > [!NOTE]
+    > Domény aplikace se sdílí mezi instance editoru; Pokud používáte statické proměnné, bude sdílena mezi instance editoru i. Pokud to není požadované chování, služba by měla sloužit ke sledování proměnné instance. Zobrazit [použití kontextu úprav ModelItem](/dotnet/framework/windows-workflow-foundation/using-the-modelitem-editing-context) informace o používání služby v rámci návrháře.
 
 ## <a name="to-add-an-activity-from-within-a-different-project"></a>Chcete-li přidat aktivitu z v rámci jiného projektu
 
-1.  Otevřete řešení, které obsahuje alespoň jeden pracovní postup projekt a projekt knihovny vlastní aktivity nebo jiného projektu pracovního postupu, který definuje vlastní aktivity.
+1.  Otevřete řešení, která obsahuje alespoň jeden projekt pracovního postupu a projektu knihovny vlastní aktivity nebo jiný projekt pracovního postupu, který definuje vlastní aktivity.
 
-2.  Sestavení obou projektů. Pokud sestavení, které byly úspěšné, novou kategorii v **sada nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity, které jsou součástí této kategorie spadají.
+2.  Vytvářejte obou projektů. Je-li sestavení úspěšné, novou kategorii v **nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity zahrnuté do této kategorie spadají.
 
-## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Chcete-li přidat aktivity do sady nástrojů ze sestavení
+## <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Chcete-li přidat aktivitu do panelu nástrojů ze sestavení
 
 1.  Otevřete řešení pracovního postupu.
 
-2.  Z **nástroje** nabídce vyberte možnost **výběr položek sady nástrojů**.
+2.  Z **nástroje** nabídce vyberte možnost **zvolit položky nástrojů**.
 
-3.  V **výběr položek sady nástrojů** dialogové okno, vyberte **systém. součásti** kartě a pak klikněte na **Procházet** přejděte na sestavení, které obsahuje vlastní aktivity, které chcete přidat.
+3.  V **zvolit položky nástrojů** dialogové okno, vyberte **komponenty System.Activities** kartu a potom klikněte na **Procházet** přejít na sestavení, který obsahuje vlastní aktivity, které chcete přidat.
 
-4.  Vyberte sestavení a klikněte na **OK**. Součást vlastní aktivity se přidá do seznamu součástí a je automaticky vybrán.
+4.  Vyberte sestavení a klikněte na tlačítko **OK**. Komponentu vlastní aktivity se přidá do seznamu součástí a se vybere automaticky.
 
     1.  Klikněte na tlačítko **OK** zavřete dialogové okno.
 
-5.  Pokud chcete zobrazit sady nástrojů, vyberte **sada nástrojů** z **zobrazení** nabídky.
+5.  Chcete-li zobrazit panel nástrojů, vyberte **nástrojů** z **zobrazení** nabídky.
 
-6.  Vlastní aktivity se zobrazí v **sada nástrojů** v kategorii, která byla aktivní před přidáním položky. Například pokud **Obecné** kategorie byla vybrána v **sada nástrojů** před přidáním položky panelu nástrojů, tato aktivita se zobrazí v části **Obecné** kategorie.
+6.  Vlastní aktivity se zobrazí v **nástrojů** v kategorii, která byla aktivní před byla položka přidána. Například pokud **Obecné** kategorie vybraného v **nástrojů** před přidáním položku sady nástrojů, tato aktivita se zobrazí v části **Obecné** kategorie.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)
+- [Používání návrháře postupu provádění](developing-applications-with-the-workflow-designer.md)

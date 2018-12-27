@@ -14,14 +14,14 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 66a107fbd738bc26fdf608223ff43f958754e3ae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e7eb6c1af8e87c8cfa6cc61292a3c4c84e4834ed
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065297"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740020"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Návod: Vytváření a spouštění testů jednotek pro aplikace pro UPW
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Průvodce: Vytváření a spouštění testů jednotek pro aplikace pro UPW
 
 Visual Studio zahrnuje podporu pro testování částí aplikací pro univerzální platformu Windows (UPW). Obsahuje šablony projektů testů jednotek pro jazyk Visual C#, Visual Basic a Visual C++.
 
@@ -108,5 +108,5 @@ V **Editor kódu**, upravte test jednotky a přidejte kontrolní výrazy a logik
 
 ## <a name="see-also"></a>Viz také:
 
-- [Testování aplikací pro UPW pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)
+- [Testování aplikací pro UPW pomocí sady Visual Studio](../test/create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
 - [Sestavení a testování aplikací pro UPW](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645143"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684977"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Průvodce produktivitou Visual Studio 2017 C#
 
@@ -115,7 +115,7 @@ Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a navigaci v
 | Přejít k definici | **F12** nebo **Ctrl**+**Klikni**| Může obsahovat **Ctrl** při kliknutí na navgiate k definici |
 | Náhled definice | **Alt**+**F12** | Zobrazit vložené definice |
 | Vizualizér struktur | Šedé, tečkami čáry mezi složené závorky | Najetím myši zobrazíte struktury kódu |
-| Navigace do dekompilovaných sestav | **F12** nebo **Ctrl**+**Klikni** | Přejděte do externího zdroje (decompiled s ILSpy) tím, že tuto funkci: **nástroje** > **možnosti** > **textový Editor**  >  **Jazyka C#** > **Upřesnit** > **povolit navigaci na dekompilované zdroje**. |
+| Navigace do dekompilovaných sestav | **F12** nebo **Ctrl**+**Klikni** | Přejděte do externího zdroje (decompiled s ILSpy) tím, že tuto funkci: **Nástroje** > **možnosti** > **textový Editor**  >  **C#**  >   **Pokročilé** > **povolit navigaci na dekompilované zdroje**. |
 
 ![Přejít na vše a najít všechny odkazy](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ V sadě Visual Studio 2017 jsme přidali spoustu nových funkcí ladění:
 
 - *Běžet do kliknutí* umožňuje při najetí myší vedle řádku kódu, stiskněte zelená ikona "play", který se zobrazí, a spusťte svůj program, dokud nedosáhne tento řádek.
 - Nové **pomocníka výjimky** vloží nejdůležitější informace, jako jsou proměnné, která je null v NullReferenceException, na nejvyšší úrovni v dialogovém okně.
-- [Zastav](../debugger/how-to-use-intellitrace-step-back.md) ladění můžete přejít zpět k předchozím zarážkám nebo krokům a zobrazit stav aplikace, jako v minulosti.
+- [Zastav](../debugger/view-historical-application-state.md) ladění můžete přejít zpět k předchozím zarážkám nebo krokům a zobrazit stav aplikace, jako v minulosti.
 - [Ladění snímků](/azure/application-insights/app-insights-snapshot-debugger) umožňuje pátrejte po stavu živé webové aplikace v tuto chvíli došlo k výjimce (musí být v Azure).
 
 ![Nového pomocníka výjimky v sadě Visual Studio 2017](../ide/media/VSGuide_Debugging.png)

@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283233"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740072"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytváření nebo aktualizace standardních zásad vracení se změnami Analýzy kódu
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytvoření nebo aktualizace standardních zásad analýzy kódu vrácení se změnami
 
 Může vyžadovat spustit analýzu kódu na všechny projekty kódu v projektu Azure DevOps s využitím zásad vrácení se změnami kód analýzy. Vyžadování analýzy kódu můžete zlepšit kvalitu kódu, který je vrácen do báze kódu.
 
@@ -71,4 +71,4 @@ Další informace o tom, jak vytvořit a implementovat vlastní zásady vrácen�
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

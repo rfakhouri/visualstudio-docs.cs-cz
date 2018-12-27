@@ -16,38 +16,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000491"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684480"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Postupy: zobrazení dědičnosti mezi typy v Návrháři tříd
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Postupy: Zobrazení dědičnosti mezi typy v Návrháři tříd
 
-Můžete najít vztah dědičnosti, pokud existuje, mezi základní typ a jeho odvozených typů v diagramu tříd v **návrhář tříd**. Chcete-li vytvořit vztah dědičnosti, pokud žádný neexistuje, mezi dvěma typy, přečtěte si téma [postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md).
+Pokud existuje mezi základního typu a jeho odvozeným typům v diagramu tříd v relaci dědičnosti najdete **návrhář tříd**. Chcete-li vytvořit vztah dědičnosti, pokud žádný neexistuje, mezi dvěma typy, přečtěte si téma [jak: Vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md).
 
-## <a name="to-find-the-base-type"></a>K vyhledání základní typ
+## <a name="to-find-the-base-type"></a>Najít základní typ
 
-1.  Na diagramu tříd klikněte na typ, pro který chcete zobrazit základní třídy nebo rozhraní.
+1.  V diagramu tříd klikněte na typ, pro kterou chcete zobrazit základní třídu nebo rozhraní.
 
-2.  Na **diagramu tříd** nabídce zvolte **zobrazit základní třída** nebo **zobrazit základní rozhraní**.
+2.  Na **Diagram tříd** nabídce zvolte **zobrazit základní třídu** nebo **zobrazit základní rozhraní**.
 
-     Podle typu základní třídy nebo rozhraní zobrazí jako vybraný v diagramu. Všechny řádky skrytá dědičnosti se nyní zobrazí mezi dvěma tvarů.
+     Základní třídu nebo rozhraní tohoto typu zobrazovat jako vybraný v diagramu. Všechny skryté Asociační čáry teď budou zobrazovat mezi dvěma tvary.
 
-Můžete také kliknout pravým tlačítkem jehož základní typ, který chcete zobrazit a vyberte typ **zobrazit základní třída** nebo **zobrazit základní rozhraní**.
+Můžete také kliknout pravým tlačítkem typ, jehož základní typ, který chcete zobrazit a zvolte **zobrazit základní třídu** nebo **zobrazit základní rozhraní**.
 
-## <a name="to-find-the-derived-types"></a>Pokud chcete vyhledat odvozené typy
+## <a name="to-find-the-derived-types"></a>Najít odvozené typy
 
-1.  Na diagramu tříd klikněte na typ, pro který chcete zobrazit odvozené třídy nebo rozhraní.
+1.  V diagramu tříd klikněte na typ, pro kterou chcete zobrazit odvozené třídy nebo rozhraní.
 
-2.  Na **diagramu tříd** nabídce zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.
+2.  Na **Diagram tříd** nabídce zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.
 
-     Typ odvozené třídy nebo rozhraní zobrazí diagram. Všechny řádky skrytá dědičnosti se nyní zobrazí mezi obrazce.
+     Typu odvozené třídy nebo rozhraní se zobrazí v diagramu. Všechny skryté Asociační čáry teď budou zobrazovat mezi tvary.
 
-Můžete také kliknout pravým tlačítkem typ, pro který chcete zobrazit jeho odvozených typů a zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.
+Můžete také kliknout pravým tlačítkem na typ, pro kterou chcete zobrazit jeho odvozených typů a zvolte **Zobrazit odvozené třídy** nebo **Zobrazit odvozené rozhraní**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Postupy: vytvoření přidružení mezi typy](how-to-create-associations-between-types.md)
-- [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
+- [Postupy: Vytvoření asociací mezi typy](how-to-create-associations-between-types.md)
+- [Zobrazování typů a vztahů](designing-and-viewing-classes-and-types.md)

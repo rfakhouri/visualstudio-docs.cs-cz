@@ -1,5 +1,5 @@
 ---
-title: 'Návrhář postupu provádění - postupy: použití návrháře proměnné'
+title: 'Návrhář postupu provádění – jak: Používání návrháře proměnných'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc180df4a9be83c0f0b755bffd7ed40009b41497
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 19a5bcec8f3bde37f794f28a3b174376a935b9ac
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970096"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684284"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Postupy: použití návrháře proměnné
+# <a name="how-to-use-the-variable-designer"></a>Postupy: Používání návrháře proměnných
 
-Proměnné návrháře se používá k vytvoření proměnné pro použití v scénáře datových vazeb a podmíněné příkazy. Návrhář přistupuje kliknutím **proměnné** tlačítko v levém horním rohu na plátno návrhu. Návrhář obsahuje seznam proměnných, které jsou uvedeny ve formě tabulky a lze seřadit podle jednotlivých záhlaví sloupců, s výjimkou **výchozí** sloupce. Každá proměnná obsahuje název, typ proměnné, oboru a výchozí hodnota (pokud existuje). Název a výchozí hodnotou jsou upravitelných textových polí a typu a rozsahu rozevírací seznamy. Rozsah je aktivita, která byla vybrána, když byl vyvolán návrháře proměnné. Pokud proměnnou nelze vytvořit v rámci oboru výběru, bude výchozí oboru pro nejbližší nadřazený aktivitu výběru, která umožňuje proměnné, které chcete vytvořit ve svém oboru. Další informace najdete v tématu [proměnné a argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
+Návrhář proměnných slouží k vytvoření proměnné pro použití v scénáře datových vazeb a podmíněné příkazy. Návrhář přistupuje po kliknutí **proměnné** tlačítko v levém dolním rohu návrhové plátno. Návrhář obsahuje seznam proměnných, které se zobrazí ve formě tabulky a může být řada seřazena podle všech záhlaví sloupců, s výjimkou **výchozí** sloupce. Každá proměnná obsahuje název, typ proměnné, oboru a výchozí hodnota (pokud existuje). Název a výchozí hodnotu nejsou upravitelné textové pole a typu a rozsahu jsou rozevírací seznamy. Obor je aktivita, která byla vybrána při Návrhář proměnných. Pokud proměnnou nelze vytvořit v rámci oboru výběru, bude výchozí obor na nejbližší nadřazenou aktivitou, která umožňuje proměnných vytvořené v jeho oboru výběru. Další informace najdete v tématu [proměnné a argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
- Pořadí řazení není použita, dokud uživatel explicitně používá jednu řazení ovládacích prvků, zavře a znovu otevře návrháře proměnné nebo vytvoří jiné proměnné.
+ Pořadí řazení se nepoužije, dokud uživatel explicitně používá jeden z řazení ovládacích prvků, zavře a znovu neotevře Návrhář proměnných nebo vytvoří jiné proměnné.
 
 ## <a name="to-create-a-new-variable"></a>Chcete-li vytvořit nové proměnné
 
@@ -31,15 +31,15 @@ Proměnné návrháře se používá k vytvoření proměnné pro použití v sc
 
 2.  Na plátně návrhu vyberte aktivitu v pracovním postupu.
 
-3.  Otevřete návrháře proměnné kliknutím **proměnné** tlačítko v levém horním rohu na plátno návrhu. Zobrazí se Návrhář proměnné.
+3.  Otevřít návrhář proměnných kliknutím **proměnné** tlačítko v levém dolním rohu návrhové plátno. Otevře se Návrhář proměnných.
 
-4.  Klikněte na prázdný řádek označený **vytvoření proměnné**. Přidá nový řádek s nové proměnné pomocí následující výchozí hodnoty: variablex pro **název** tam, kde x je celočíselná a má počáteční hodnotu 1, který se automaticky zvýší k vytvoření jedinečné názvy proměnných,  **Řetězec** pro **typ proměnné**, a **pořadí** pro **oboru**. Přidá se žádná hodnota pro **výchozí**. Tyto hodnoty můžete změnit kdykoli během procesu návrhu pracovního postupu.
+4.  Klikněte na prázdný řádek označený **vytvořit proměnnou**. Tím se přidá nový řádek pomocí nové proměnné pomocí následující výchozí hodnoty: variablex pro **název** tam, kde x je celé číslo s počáteční hodnotou 1, který je automatický navýšeno vytvořit jedinečné názvy proměnných,  **Řetězec** pro **typ proměnné**, a **pořadí** pro **oboru**. Přidá se žádná hodnota pro **výchozí**. Tyto hodnoty můžete změnit kdykoli během procesu návrhu pracovního postupu.
 
     > [!NOTE]
-    > Chcete-li odstranit proměnnou, kliknutím vyberte proměnnou a stiskněte klávesu **odstranit** klíč.
+    > Pokud chcete odstranit proměnnou, kliknutím vyberte proměnnou a stiskněte klávesu **odstranit** klíč.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)
+- [Používání návrháře postupu provádění](developing-applications-with-the-workflow-designer.md)
 - [Proměnné a argumenty](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
 - [Postupy: Používání návrháře argumentů](../workflow-designer/how-to-use-the-argument-designer.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120380"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739835"
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je systém sestavení pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Následující odkazy vás přesměrují na témata, která obsahují [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] referenční informace.  
@@ -61,7 +61,7 @@ ms.locfileid: "48120380"
  [Riles odpovědi](../msbuild/msbuild-response-files.md)  
  Vysvětluje, *.rsp* soubory, které obsahují přepínače příkazového řádku.  
   
- [Další zdroje informací](../msbuild/additional-resources-for-msbuild.md)  
+ [Další zdroje informací](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  Obsahuje odkazy na [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] webů a diskusních skupin.  
   
  [Referenční dokumentace WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  

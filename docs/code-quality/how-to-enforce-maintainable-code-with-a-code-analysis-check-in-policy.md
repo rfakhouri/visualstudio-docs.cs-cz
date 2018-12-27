@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vynucování udržovatelného kódu pomocí zásady vracení se změnami Analýzy kódu'
+title: 'Postupy: Vynucování Udržovatelného kódu pomocí zásady vracení se změnami kód analýzy'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892087"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739373"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: vynucování udržovatelného kódu pomocí zásady vracení se změnami kód analýzy
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: Vynucování udržovatelného kódu pomocí zásady vracení se změnami kód analýzy
 
 Vývojářům nástroj metriky kódu slouží k měření složitosti a udržovatelnosti kódu, ale nejde vyvolat metriky kódu jako součást zásady vrácení se změnami. Můžete ale povolit pravidel analýzy kódu, které ověřují kódu dodržování standardů metrik kódu a vynucení pravidel prostřednictvím zásad vrácení se změnami. Další informace o metrikách kód, naleznete v tématu [hodnoty metrik kódu](../code-quality/code-metrics-values.md).
 
@@ -47,19 +47,19 @@ Správci verzí pro Team Foundation můžete přidat pravidla udržovatelnosti a
 
 2. Zaškrtněte políčka pro následující pravidla:
 
-   - Hloubka dědičnosti: **CA1501 AvoidExcessiveInheritance** -prahové hodnoty: upozornění na více než 5 úrovní do hloubky
+   - Hloubka dědičnosti: **CA1501 AvoidExcessiveInheritance** – prahová hodnota: Upozornění na více než 5 úrovní do hloubky
 
-   - Složitost: **CA1502 AvoidExcessiveComplexity** -prahové hodnoty: upozornění na více než 25
+   - Složitost: **CA1502 AvoidExcessiveComplexity** – prahová hodnota: Upozornění na více než 25
 
-   - Index udržovatelnosti: **CA1505 AvoidUnmaintainableCode** -prahové hodnoty: upozornění na méně než 20
+   - Index udržovatelnosti: **CA1505 AvoidUnmaintainableCode** – prahová hodnota: Upozornění na méně než 20
 
-   - Párování tříd: **CA1506 AvoidExcessiveClassCoupling** -prahové hodnoty: upozornění na více než 80 pro třídu ve více než 30 pro metodu
+   - Párování tříd: **CA1506 AvoidExcessiveClassCoupling** – prahová hodnota: Upozornění na více než 80 pro třídu a více než 30 pro metodu
 
      Kromě toho pokud chcete porušení pravidla, aby se zabránilo úspěšné sestavení, vyberte **zpracovávat upozornění jako chyba** zaškrtněte políčko vedle popis pravidla.
 
-3. Klikněte na tlačítko **OK**. Nové zásady vrácení se změnami nyní platí pro budoucí vrácení se změnami.
+3. Klikněte na **OK**. Nové zásady vrácení se změnami nyní platí pro budoucí vrácení se změnami.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Hodnoty metrik kódu](../code-quality/code-metrics-values.md)
-- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

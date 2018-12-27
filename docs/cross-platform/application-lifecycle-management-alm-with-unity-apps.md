@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 42d6a2192e1ee4fdeedce1d8255a17db6cf6d622
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320888"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740111"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps s aplikacemi Unity
 
@@ -26,7 +26,7 @@ Následující tabulky Identifikujte jak DevOps funkce v sadě Visual Studio pou
 
 ## <a name="agile-tools"></a>Agilní nástroje
 
-Referenční odkaz: [o agilní nástroje a agilní řízení projektů](/azure/devops/boards/backlogs/overview?view=vsts) (s použitím Azure tabulí nebo TFS, včetně Team Explorer Everywhere)
+Referenční odkaz: [Agilní nástroje a agilní projektu správy](/azure/devops/boards/backlogs/overview?view=vsts) (s použitím Azure tabulí nebo TFS, včetně Team Explorer Everywhere)
 
 Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé na typu projektu a kódování jazyky.
 
@@ -40,9 +40,9 @@ Obecné komentáře: všechny plánování a sledování funkce jsou nezávislé
 
 ## <a name="modeling"></a>Modelování
 
-Referenční odkaz:  **[analyzovat a architektura modelu](../modeling/analyze-and-model-your-architecture.md)**
+Referenční odkaz: **[Analýza a modelování architektury](../modeling/analyze-and-model-your-architecture.md)**
 
-Obecné komentáře: I když tyto funkce návrhu jsou buď bez ohledu na programovací jazyk, nebo pracovat s jazyky .NET, jako je C#, pracují na paradigma tradiční aplikace s hierarchie objektů a relace tříd. Návrh her v Unity zahrnuje různé paradigma úplně se vynechá, konkrétně vztahy grafických objektů, zvuky, shadery, skripty a tak dále. Z tohoto důvodu, Visual Studio, diagram modelování nástroje nejsou zvlášť důležité u celé Unity projektu. Může být pravděpodobně používá ke správě relací v rámci skripty jazyka C#, ale to je jenom jedna část celé.
+Obecný komentář: I když jsou tyto funkce návrhu buď bez ohledu na programovací jazyk, nebo práci s jazyky .NET, jako jsou C#, pracovat s paradigma tradiční aplikace s hierarchie objektů a třída vztahů. Návrh her v Unity zahrnuje různé paradigma úplně se vynechá, konkrétně vztahy grafických objektů, zvuky, shadery, skripty a tak dále. Z tohoto důvodu, Visual Studio, diagram modelování nástroje nejsou zvlášť důležité u celé Unity projektu. Může být pravděpodobně používá ke správě relací v rámci skripty jazyka C#, ale to je jenom jedna část celé.
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -75,7 +75,7 @@ Zvláštní upozornění pro správu verzí pomocí Unity:
 
 ## <a name="build"></a>Sestavení
 
-Referenční odkaz:  **[kanály Azure](/azure/devops/pipelines/index?view=vsts)**
+Referenční odkaz: **[Kanály Azure](/azure/devops/pipelines/index?view=vsts)**
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -98,19 +98,19 @@ Referenční odkaz:  **[kanály Azure](/azure/devops/pipelines/index?view=vsts)*
 
 ## <a name="improve-code-quality"></a>Zlepšení kvality kódu
 
-Referenční odkaz:  **[zlepšení kvality kódu](../test/improve-code-quality.md)**
+Referenční odkaz: **[Zlepšení kvality kódu](../test/improve-code-quality.md)**
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
 |[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Hledání duplicitního kódu pomocí zjišťování klonování kódu](https://msdn.microsoft.com/library/hh205279.aspx)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
-|[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
+|[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/code-metrics-values.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity webu).|
 |[Analýza problémů paměti rozhraní .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Ne|Nástroje sady Visual Studio nemusí háky do Mono framework (jako Unity) pro profilování. Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (dokumentace k Unity).|
 
 ## <a name="release-management"></a>Správa vydaných verzí
 
-Referenční odkaz: [sestavování a vydávání v Azure kanály a TFS](/azure/devops/pipelines/overview?view=vsts)
+Referenční odkaz: [Sestavování a vydávání v Azure kanály a TFS](/azure/devops/pipelines/overview?view=vsts)
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
@@ -120,7 +120,7 @@ Referenční odkaz: [sestavování a vydávání v Azure kanály a TFS](/azure/d
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorování pomocí aplikace HockeyApp
 
-Referenční odkaz:  **[monitorování pomocí aplikace HockeyApp](https://www.hockeyapp.net/features/)**
+Referenční odkaz: **[Monitorování pomocí aplikace HockeyApp](https://www.hockeyapp.net/features/)**
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636971"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740244"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizace balíčků VSIX
 
@@ -106,6 +106,6 @@ Následující příklad ukazuje příslušné části třídy *Extension.vsixma
 
 |Název|Popis|
 |-----------|-----------------|
-|[VSIX Language Pack schema 2.0 odkaz](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Jazykové sady VSIX popisuje informace o lokalizaci nasazení souboru .vsix.|
+|[VSIX Language Pack schema 2.0 odkaz](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|Jazykové sady VSIX popisuje informace o lokalizaci nasazení souboru .vsix.|
 |[Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Popisuje strukturu a obsah balíčku vsix.|
 |[Lokalizace příkazů nabídky](../extensibility/localizing-menu-commands.md)|Ukazuje, jak lokalizovat další prostředky textu v rozšíření.|

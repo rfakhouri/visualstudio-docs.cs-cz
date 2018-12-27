@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit | Dokumentace Microsoftu'
+title: 'Průvodce: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f68e27d164164141a8d438326b7d7bb6a3169607
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193541"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648898"
 ---
-# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
+# <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Průvodce: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -28,7 +28,7 @@ ms.locfileid: "49193541"
  Ve výchozím nastavení, je poskytována logiku pro provádění aktualizací [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy Insert, Update a Delete na základě schématu tabulky (definice sloupců a informacemi o primárním klíči). Pokud nechcete použít výchozí chování, můžete nakonfigurovat chování aktualizací a určit konkrétní uložené procedury k provedení potřebné vložení, aktualizace a odstranění vyžadována pro práci s daty v databázi. Můžete také provést generování výchozího chování není, například při mapování tříd entit na zobrazení. Kromě toho můžete přepsat výchozí chování aktualizací databáze vyžaduje přístup k tabulce prostřednictvím uložené procedury. Další informace najdete v tématu [přizpůsobení operací pomocí pomocí uložené procedury](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
->  Tento návod vyžaduje dostupnost služby **InsertCustomer**, **UpdateCustomer**, a **DeleteCustomer** uložené procedury pro databázi Northwind. Podrobnosti o tom, jak vytvořit těchto uložených procedurách najdete v tématu [návod: vytvoření uložené procedury aktualizace pro tabulku zákazníků Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+> Tento návod vyžaduje dostupnost služby **InsertCustomer**, **UpdateCustomer**, a **DeleteCustomer** uložené procedury pro databázi Northwind.
   
  Tento názorný postup obsahuje kroky, které musíte provést, chcete-li přepsat výchozí LINQ na SQL modul runtime chování pro ukládání dat zpět do databáze pomocí uložených procedur.  
   
@@ -51,9 +51,9 @@ ms.locfileid: "49193541"
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující:  
   
--   Přístup k verzi systému SQL Server z ukázkové databáze Northwind. Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k verzi systému SQL Server z ukázkové databáze Northwind.
   
--   **InsertCustomer**, **UpdateCustomer**, a **DeleteCustomer** uložené procedury pro databázi Northwind. Další informace najdete v tématu [návod: vytvoření uložené procedury aktualizace pro tabulku zákazníků Northwind](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md).  
+-   **InsertCustomer**, **UpdateCustomer**, a **DeleteCustomer** uložené procedury pro databázi Northwind.
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Vytvoření aplikace a přidání LINQ na třídy SQL  
  Vzhledem k tomu, že pracujete s [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] třídy a zobrazování dat ve formuláři Windows vytvořit novou aplikaci Windows Forms a přidejte LINQ na třídy SQL soubor.  
@@ -77,7 +77,7 @@ ms.locfileid: "49193541"
   
 5.  Klikněte na tlačítko **třídy LINQ to SQL** šablonu a zadejte **Northwind.dbml** v **název** pole.  
   
-6.  Klikněte na tlačítko **přidat**.  
+6.  Klikněte na **Přidat**.  
   
      Prázdný LINQ na třídy SQL soubor (Northwind.dbml) se přidá do projektu a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] otevře.  
   
@@ -86,14 +86,14 @@ ms.locfileid: "49193541"
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Vytvořte třídu entity zákazník a konfigurace zdroje dat s ním  
   
-1.  V **Průzkumníka serveru**/**Průzkumník databáze**, vyhledejte v tabulce zákazníků v verze SQL serveru, ukázkové databáze Northwind. Další informace najdete v tématu [postupy: připojení k databázi Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+1.  V **Průzkumníka serveru**/**Průzkumník databáze**, vyhledejte v tabulce zákazníků v verze SQL serveru, ukázkové databáze Northwind.
   
 2.  Přetáhněte **zákazníkům** uzlu z **Průzkumníka serveru**/**Průzkumník databáze** na [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] povrchu.  
   
      Třídu entity s názvem **zákazníka** se vytvoří. Obsahuje vlastnosti, které odpovídají sloupcům v tabulce Zákazníci. Název třídy entity **zákazníka** (není **zákazníkům**) protože představuje jednoho zákazníka z tabulky Zákazníci.  
   
     > [!NOTE]
-    >  Toto chování přejmenovává se nazývá *pluralizace*. To je možné zapnout nebo vypnout [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md). Další informace najdete v tématu [postup: zapnutí a vypnutí (O/R Designer) pluralizace](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    >  Toto chování přejmenovává se nazývá *pluralizace*. To je možné zapnout nebo vypnout [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md). Další informace najdete v tématu [jak: Zapnutí a vypnutí (O/R Designer) pluralizace](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení UpdatingwithSProcsWalkthrough** k sestavení projektu.  
   
@@ -221,7 +221,7 @@ ms.locfileid: "49193541"
   
 18. Mapování **Original_CustomerID** argument metody pro výraz **CustomerID (původní)** vlastnost třídy.  
   
-19. Klikněte na tlačítko **OK**.  
+19. Klikněte na **OK**.  
   
 > [!NOTE]
 >  Ačkoli to není problém pro tento konkrétní názorný postup, je vhodné poznamenat, který [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] zpracovává databáze vygenerovala hodnoty automaticky pro identitu (automatické zvyšování čísla), rowguidcol (GUID databáze vygenerovala) a sloupce časového razítka při vložení a aktualizace. Databáze vygenerovala hodnoty v jiných typech sloupců neočekávaně způsobí hodnotu null. Na návratové hodnoty generovaných databází, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících akcí: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
@@ -252,7 +252,7 @@ ms.locfileid: "49193541"
 10. Stiskněte klávesu F5 a ověřit, že odstraněný záznam byl odebrán z databáze.  
   
     > [!NOTE]
-    >  Pokud vaše aplikace používá SQL Server Express Edition, v závislosti na hodnotu **kopírovat do výstupního adresáře** vlastnost souboru databáze, změny nemusí zobrazit při stisknutí klávesy F5 v kroku 10. Další informace najdete v tématu [jak: Manage Local Data Files in Your Project](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+    > Pokud vaše aplikace používá SQL Server Express Edition, v závislosti na hodnotu **kopírovat do výstupního adresáře** vlastnost souboru databáze, změny nemusí zobrazit při stisknutí klávesy F5 v kroku 10.
   
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po vytvoření [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] tříd entit. Mezi vylepšení, která by mohla provést do této aplikace, patří:  
@@ -266,6 +266,5 @@ ms.locfileid: "49193541"
  [Technologie LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Dotazy LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Postupy: přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [Připravte si, co je nového pro vývoj aplikací Data v sadě Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)
-

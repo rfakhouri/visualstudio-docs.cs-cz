@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671090"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648904"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Osvědčené postupy při vývoji pro modelu COM, VSTO a VBA doplňky sady Office
   Pokud vyvíjíte modelu COM, VSTO nebo VBA doplňky pro Office, dodržujte doporučené postupy vývoje popsaných v tomto článku.   To vám pomůže zajistit:
@@ -28,13 +28,13 @@ ms.locfileid: "50671090"
 -  Menší složitost nasazení doplňku pro uživatele a správce IT.
 -  Nežádoucí selhání instalace nebo modulu runtime vašeho doplňku nedojde.
 
->Poznámka: Pomocí [přemostění na Desktop](/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplněk pro Windows Store se nepodporuje. Doplňky modelu COM, VSTO a VBA nelze distribuovat ve Windows Store nebo Office Store. 
+>Poznámka: Použití [přemostění na Desktop](/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplněk pro Windows Store se nepodporuje. Doplňky modelu COM, VSTO a VBA nelze distribuovat ve Windows Store nebo Office Store. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Nezaškrtávejte políčko pro Office v průběhu instalace  
  Nedoporučujeme s váš doplněk zjištění instalovaného Office během procesu instalace doplňku. Pokud není nainstalovaný Office, můžete nainstalovat doplněk a uživatel bude mít přístup k po dokončení instalace Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Použití vestavěné typy spolupráce (NoPIA)  
-Pokud vaše řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární spolupráce sestavení (PIA) redistributable. Pomocí vkládání typ zmenší velikost instalaci vašeho řešení a zajišťuje budoucí kompatibilitu. Office 2010 byl poslední verzi Office, dodávané PIA redistributable. Další informace najdete v tématu [návod: vložení informací o typu ze sestavení Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) a [ekvivalence typů a vestavěné typy spolupráce](/windows/uwp/porting/desktop-to-uwp-root).
+Pokud vaše řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární spolupráce sestavení (PIA) redistributable. Pomocí vkládání typ zmenší velikost instalaci vašeho řešení a zajišťuje budoucí kompatibilitu. Office 2010 byl poslední verzi Office, dodávané PIA redistributable. Další informace najdete v tématu [názorný postup: Vložení informací o typu ze sestavení Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) a [ekvivalence typů a vestavěné typy spolupráce](/windows/uwp/porting/desktop-to-uwp-root).
 
 Pokud vaše řešení používá starší verzi rozhraní .NET, doporučujeme aktualizovat vaše řešení, aby používalo rozhraní .NET 4.0 nebo novější. Pomocí rozhraní .NET 4.0 nebo novější snižuje požadavky na modul runtime na novější verze systému Windows.
   
@@ -64,7 +64,7 @@ Zákazníci žádáme, nezávislým výrobcům softwaru poskytují příkazy pod
 
 Pokud chcete zadat příkazy podpory pro klientské aplikace Office (například Word nebo Excel), nejdříve ověřte, že poběží v aktuální verzi Office doplňky a poté potvrďte k poskytování aktualizací, pokud doplněk přestane fungovat v budoucí verzi. Nemáte k testování doplňky, když společnost Microsoft vydává nové sestavení nebo aktualizace Office. Microsoft mění jen zřídka rozšiřitelnosti platformy modelu COM, VSTO a VBA v Office a tyto změny budou dobře zdokumentovat.
 
->Důležité: Microsoft udržuje seznam podporovaných doplňky pro sestavy připravenost a kontaktní údaje nezávislý výrobce softwaru. Pokud chcete získat doplněk uvedené, naleznete v tématu [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
+>Důležité: Společnost Microsoft udržuje seznam podporovaných doplňky pro sestavy připravenost a kontaktní údaje nezávislý výrobce softwaru. Pokud chcete získat doplněk uvedené, naleznete v tématu [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Ladění instalace nebo načítání problémy pomocí monitorování procesu
 Pokud váš doplněk má problémy s kompatibilitou během instalace nebo zatížení, může být související s problémy při přístupu k souborům a registru. Použití [monitorování procesu](/sysinternals/downloads/procmon) nebo něco podobného ladicí protokolování a porovnání chování pro pracovní prostředí vám pomůže identifikovat problém.

@@ -3,18 +3,18 @@ title: 'Výhody integrované vývojové prostředí sady Visual Studio v předpl
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/09/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Zjistěte, jak stáhnout a nainstalovat Visual Studio IDE, které jsou součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e506fa463aa33571ab8b87844e266b0558c46df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923560"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739796"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Používání benefitu Visual Studio 2017
 
@@ -26,7 +26,7 @@ Jako předplatitel sady Visual Studio budete mít přístup k sadě Visual Studi
 *(V tomto příkladu se používá visual Studio Enterprise.)*
 
 Chcete-li stáhnout integrovaném vývojovém prostředí:
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Vyhledejte dlaždici IDE sady Visual Studio v části nástroje a klikněte na **Stáhnout** odkaz v dolní části dlaždice výhodu.  Můžete také stáhnout z [stáhne](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) stránky.
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise dlaždice](_img/vs-ide-experience/vs-ide-tile.png)
@@ -63,13 +63,16 @@ Chcete-li stáhnout integrovaném vývojovém prostředí:
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano          |
-| Visual Studio Professional (standardní a roční cloudové, měsíčních cloudových) | VL, Azure, maloobchodního prodeje                                       | K dispozici                                                            |  Ano          |
+| Visual Studio Enterprise (standardní, měsíčních cloudových)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | K dispozici       |  Ano          |
+| Visual Studio Professional (standardní, měsíčních cloudových) | VL, Azure, maloobchodního prodeje                                       | K dispozici                                                            |  Ano          |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | K dispozici                                             |  Ano         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                              |  Není k dispozici          |
 | Visual Studio Dev Essentials | Není k dispozici  | Visual Studio Community |Ano |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft s hodnotou Professional (MVP), ředitel pro oblast (RD) .    Vyloučí: MCT Software & Services.*
+<sup>1</sup>*zahrnuje:    Neprodejné (NFR) Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  Vyloučí: MCT Software & Services.*
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.

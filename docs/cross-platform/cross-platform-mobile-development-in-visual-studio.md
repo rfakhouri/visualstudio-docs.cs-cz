@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 7a51fab355f1c306fcfff4963d13e1ca59c3e503
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496139"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738817"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Vývoj multiplatformních mobilních řešení v sadě Visual Studio
 
@@ -42,7 +42,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 
 ###  <a name="AndroidHTML"></a> Cíl Android, iOS a Windows z jediného základu kódu
 
- Můžete vytvářet nativní aplikace pro Android, iOS a Windows pomocí C# nebo F # (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte sadu Visual Studio 2017, vyberte **vývoj mobilních aplikací pomocí .NET** možnost v instalačním programu.
+ Můžete vytvářet nativní aplikace pro Android, iOS a Windows s použitím C# nebo F# (Visual Basic není podporován v tuto chvíli).  Abyste mohli začít, nainstalujte sadu Visual Studio 2017, vyberte **vývoj mobilních aplikací pomocí .NET** možnost v instalačním programu.
 
  Pokud už máte nainstalovanou sadu Visual Studio 2017, znovu spusťte **instalační program sady Visual Studio** a vyberte stejné **vývoj mobilních aplikací pomocí .NET** možnost pro Xamarin (jak je uvedeno výše).
 
@@ -54,7 +54,7 @@ Pomocí Visual Studio Tools for Xamarin můžete cílit Android, iOS a Windows v
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>Návrh jednu sadu stránek, které vykreslují ve všech zařízeních na platformě Xamarin.Forms
 
- V závislosti na složitosti návrhu aplikace, můžete zvážit, vytvářet pomocí *Xamarin.Forms* šablony v **Mobile Apps** skupiny šablon projektu. Xamarin.Forms je sada nástrojů uživatelského rozhraní, které vám umožní vytvářet jednotné rozhraní, které můžete sdílet mezi Android, iOS a Windows.  Při kompilaci řešení Xamarin.Forms, získáte aplikaci pro Android, aplikace pro iOS a Windows app. Další podrobnosti najdete v tématu [přečtěte si víc o vývoj mobilních řešení s využitím kódu Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) a [Xamarin.Forms dokumentaci](/xamarin/xamarin-forms/).
+ V závislosti na složitosti návrhu aplikace, můžete zvážit, vytvářet pomocí *Xamarin.Forms* šablony v **Mobile Apps** skupiny šablon projektu. Xamarin.Forms je sada nástrojů uživatelského rozhraní, které vám umožní vytvářet jednotné rozhraní, které můžete sdílet mezi Android, iOS a Windows.  Při kompilaci řešení Xamarin.Forms, získáte aplikaci pro Android, aplikace pro iOS a Windows app. Další podrobnosti najdete v tématu [přečtěte si víc o vývoj mobilních řešení s využitím kódu Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) a [Xamarin.Forms dokumentaci](/xamarin/xamarin-forms/).
 
 ####  <a name="ShareHTML"></a> Sdílení kódu mezi platformami Android, iOS a aplikace Windows
 

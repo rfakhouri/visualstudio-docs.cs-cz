@@ -10,12 +10,12 @@ ms.topic: article
 ms.workload: multiple
 ms.date: 09/11/2018
 ms.author: ghogen
-ms.openlocfilehash: c548d143802a9924753fa4c86f652189357dada5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 784fd5fd4459c77e757cc501ff5f62bce13d5282
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673403"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739845"
 ---
 # <a name="debugging-apps-in-a-local-docker-container"></a>Ladění aplikací v místním kontejneru Dockeru
 ## <a name="overview"></a>Přehled
@@ -75,7 +75,7 @@ Pokud chcete rychle iterovat změny, můžete spustit aplikaci v rámci kontejne
 5. Přejděte na stránku o narazila na zarážku.
 6. Přepněte do sady Visual Studio zobrazíte zarážky a zkontrolovat hodnoty zprávy.
 
-   ![][2]
+   ![Zarážky](media/vs-azure-tools-docker-edit-and-refresh/breakpoint.png)
 
 ## <a name="summary"></a>Souhrn
 Podpora pro Docker v sadě Visual Studio 2017 umožňuje získat produktivitu místně, pracovat s produkční realitu vývoje v kontejneru Dockeru.
@@ -100,5 +100,3 @@ Podpora pro Docker v sadě Visual Studio 2017 umožňuje získat produktivitu m�
 * [Steve Lasker: VS Live Las Vegas 2016 - e2e Dockeru](https://github.com/SteveLasker/Presentations/blob/master/VSLive2016/Vegas/)
 * [Úvod do ASP.NET Core @ build 2016 – Pokud jste na ukázku](https://channel9.msdn.com/Events/Build/2016/B810)
 * [Vývoj aplikací .NET v kontejnerech, Channel 9](https://blogs.msdn.microsoft.com/stevelasker/2016/02/19/developing-asp-net-apps-in-docker-containers/)
-
-[2]: media/vs-azure-tools-docker-edit-and-refresh/breakpoint.png

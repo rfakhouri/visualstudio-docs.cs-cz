@@ -1,6 +1,7 @@
 ---
 title: '&lt;formRegion&gt; – element (vývoj pro Office v sadě Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegion> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7ce6d4d6bb5f74b4505603511752598d4a5180f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676460"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646955"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; – element (vývoj pro Office v sadě Visual Studio)
   `formRegion` Elementu `vstov4` obor názvů identifikuje oblasti formuláře aplikace Microsoft Office Outlook, který je přidružený k doplňku VSTO.  
@@ -44,7 +45,7 @@ ms.locfileid: "35676460"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`name`|Požadováno. Určuje název oblasti formuláře.|  
+|`name`|Povinný parametr. Určuje název oblasti formuláře.|  
   
  `formRegion` Element má následující podřízené prvky.  
   
@@ -55,7 +56,7 @@ ms.locfileid: "35676460"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`name`|Požadováno. Identifikuje formulář, který je přidružený k oblasti formuláře.|  
+|`name`|Povinný parametr. Identifikuje formulář, který je přidružený k oblasti formuláře.|  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje `formRegion` elementu v manifestu aplikace pro Outlook VSTO doplněk nasazeným v rámci [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Existují tři třídy zpráv, které jsou přidružené k této oblasti jeden formulář. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  

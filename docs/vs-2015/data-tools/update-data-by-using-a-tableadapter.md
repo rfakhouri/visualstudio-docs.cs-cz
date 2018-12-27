@@ -24,18 +24,18 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e9166a9237fd1d195243f0156285338b8572a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237273"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647198"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizace dat pomocí objektu TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Po dat ve vaší datové sadě byl změněn a ověřit, můžete odeslat aktualizovaná data zpět do volání databaseby `Update` metodu [TableAdapter](../data-tools/tableadapter-overview.md). `Update` Metodu aktualizace jedné tabulky datového a spustí správný příkaz (vložení, aktualizace nebo odstranění) na základě <xref:System.Data.DataRow.RowState%2A> každého řádku dat v tabulce. Když datové sady má související tabulky, Visual Studio vygeneruje třídy TableAdapterManager, které umožňují provádět aktualizace. Třída TableAdapterManager zajistí, že jsou ve správném pořadí podle omezení cizího klíče, které jsou definovány v databázi provedeny aktualizace. Při použití ovládacích prvků vázaných na data, architektura vázání dat vytvoří členské proměnné třídy TableAdapterManager volá tableAdapterManager. Další informace najdete v tématu [přehled hierarchické aktualizace](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
+Po dat ve vaší datové sadě byl změněn a ověřit, můžete odeslat aktualizovaná data zpět do volání databaseby `Update` metody třídy TableAdapter. `Update` Metodu aktualizace jedné tabulky datového a spustí správný příkaz (vložení, aktualizace nebo odstranění) na základě <xref:System.Data.DataRow.RowState%2A> každého řádku dat v tabulce. Když datové sady má související tabulky, Visual Studio vygeneruje třídy TableAdapterManager, které umožňují provádět aktualizace. Třída TableAdapterManager zajistí, že jsou ve správném pořadí podle omezení cizího klíče, které jsou definovány v databázi provedeny aktualizace. Při použití ovládacích prvků vázaných na data, architektura vázání dat vytvoří členské proměnné třídy TableAdapterManager volá tableAdapterManager. Další informace najdete v tématu [přehled hierarchické aktualizace](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
 >  Při pokusu aktualizovat zdroj dat s obsahem datové sady, může docházet k chybám. Aby nedocházelo k chybám, doporučujeme, abyste vložit kód, který volá adaptéru `Update` metodu `try` / `catch` bloku.  
@@ -44,7 +44,7 @@ Po dat ve vaší datové sadě byl změněn a ověřit, můžete odeslat aktuali
   
 1.  Volání `Update` metoda `try` / `catch` bloku.  
   
-2.  Pokud je výjimka zachycena, vyhledejte řádek dat, která způsobila chybu. Další informace najdete v tématu [postupy: vyhledání řádků chyby mají](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
+2.  Pokud je výjimka zachycena, vyhledejte řádek dat, která způsobila chybu. Další informace najdete v tématu [jak: Vyhledání řádků s chybami](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
 3.  Sjednotit problém v datech řádku (prostřednictvím kódu programu, pokud je to možné, nebo tím, že předloží neplatný řádek pro uživatele pro úpravy) a akci opakujte aktualizaci (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
@@ -60,4 +60,3 @@ Po dat ve vaší datové sadě byl změněn a ověřit, můžete odeslat aktuali
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
-
