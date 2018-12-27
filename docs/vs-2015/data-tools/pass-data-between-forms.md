@@ -23,12 +23,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5958aafb39fface87020fb8ee75c7ca5a1497c73
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204825"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647712"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete dokončit tento návod, potřebujete:  
   
--   Přístup k ukázkové databázi Northwind. Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k ukázkové databázi Northwind.
   
 ## <a name="create-the-windows-application"></a>Vytvoření aplikace Windows  
   
@@ -107,7 +107,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 -   Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
   
-     A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí na **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
+     A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí na **Form1**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
 ## <a name="create-the-second-form-form2"></a>Vytvořte druhý formulář (Form2)  
   
@@ -119,7 +119,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 3.  Přetáhněte hlavní **objednávky** uzlu z **zdroje dat** okna do **Form2**.  
   
-     A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí na **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
+     A <xref:System.Windows.Forms.DataGridView> a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí na **Form2**. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
 4.  Odstranit **OrdersBindingNavigator** z panelu komponent.  
   
@@ -148,7 +148,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
     > [!NOTE]
     >  Ověření parametru správná syntaxe pro vaši databázi. Například v aplikaci Microsoft Access, klauzuli WHERE vypadat nějak takto: `WHERE CustomerID = ?`.  
   
-6.  Klikněte na tlačítko **Další**.  
+6.  Klikněte na **Další**.  
   
 7.  Pro **zadejte název DataTableMethod**, typ `FillByCustomerID`.  
   
@@ -201,4 +201,3 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

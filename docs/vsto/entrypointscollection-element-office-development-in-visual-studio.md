@@ -1,6 +1,7 @@
 ---
 title: '&lt;entrypointscollection –&gt; – element (vývoj pro Office v sadě Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - <entryPointsCollection> element
 - application manifests [Office development in Visual Studio], <entryPointsCollection> element
 - entryPointsCollection element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 119cff9135b2b65f09d265aed2af3a7e2d500d60
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f9e9489127f4b82bbca3d76172445fdafd6ad84a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447902"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646701"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entrypointscollection –&gt; – element (vývoj pro Office v sadě Visual Studio)
-  `entryPointsCollection` Element `vstav3` obor názvů obsahuje všechny `entryPoints` elementy související s řešení pro systém Office.  
+  `entryPointsCollection` Elementu `vstav3` obor názvů obsahuje všechny `entryPoints` prvky přidružené k řešení pro systém Office.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,19 +44,19 @@ ms.locfileid: "34447902"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- `entryPointsCollection` Element je povinná a je v `vstav3` oboru názvů. Podřízené elementy musí být také v tomto oboru názvů. Existuje pouze jeden `entryPointsCollection` element definovaný v manifestu aplikace.  
+ `entryPointsCollection` Element je povinný a je v `vstav3` oboru názvů. Podřízené elementy musí být také v tomto oboru názvů. Existuje pouze jeden `entryPointsCollection` element definovaný v manifestu aplikace.  
   
- `entryPointsCollection` Element nemá žádné atributy.  
+ `entryPointsCollection` Prvek nemá žádné atributy.  
   
  `entryPointsCollection` obsahuje následující prvky.  
   
 ### <a name="entrypoints"></a>entryPoints  
- Požadováno. Role `entryPoints` element v `vstav3` obor názvů je definován v [ &#60;entryPoints&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Povinný parametr. Role `entryPoints` prvek `vstav3` obor názvů je definovaný v [ &#60;entryPoints&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `entryPointsCollection` element v manifestu aplikace nasazené pomocí řešení úrovni dokumentu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje, `entryPointsCollection` elementu v manifestu aplikace nasazené pomocí řešení úrovni dokumentu [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -101,7 +102,7 @@ ms.locfileid: "34447902"
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `entryPointsCollection` element v manifestu aplikace pro řešení s úrovni aplikace nasazené pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `entryPointsCollection` elementu v manifestu aplikace pro řešení úrovni aplikace nasazené s použitím [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -123,7 +124,7 @@ ms.locfileid: "34447902"
 ## <a name="multi-project-deployment-example"></a>Příklad nasazení vícenásobného projektu  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `entryPointsCollection` element v manifestu aplikace pro nasazení vícenásobného projektu s dvě řešení pro systém Office. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `entryPointsCollection` elementu v manifestu aplikace pro nasazení více projekty s dvě řešení pro systém Office. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -178,9 +179,9 @@ ms.locfileid: "34447902"
     </vstav3:entryPointsCollection>  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

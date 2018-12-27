@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561665"
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 **Okamžité** okna slouží k ladění a vyhodnocení výrazů, spuštění příkazů, tisku hodnot proměnných a tak dále. Umožňuje zadat výrazy k vyhodnocování nebo provádění ve vývojovém jazyce během ladění. Pro zobrazení **okamžité** okno, otevřete projekt pro úpravy a pak zvolte **Windows** z **ladění** nabídky a vybereme **okamžité**, nebo stiskněte kombinaci kláves CTRL + ALT + I.
@@ -76,7 +76,7 @@ ms.locfileid: "49942995"
 
     **Okamžité** okno spustí `MyFunction` a zobrazit `4`.
 
-Pokud funkce nebo podprogram obsahuje zarážku, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] přeruší běh v odpovídajícím bodě. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Další informace najdete v části [návod: ladění v době návrhu](../../debugger/walkthrough-debugging-at-design-time.md).
+Pokud funkce nebo podprogram obsahuje zarážku, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] přeruší běh v odpovídajícím bodě. Potom můžete ladicí program windows prozkoumat stav vaší aplikace. Další informace najdete v části [názorný postup: Ladění v době návrhu](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Vyhodnocení výrazu času návrhu nelze použít v typech projektů, které vyžadují spuštění prostředí, včetně [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] projekty, webových projektů, projektů Smart Device a projektů SQL.
 
@@ -128,8 +128,7 @@ Vyhodnocení výrazu času návrhu nelze použít v typech projektů, které vy�
 
 - [Procházení kódu s ladicím programem](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Ladění v sadě Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Základy ladicího programu](../../debugger/getting-started-with-the-debugger.md)
+- [První seznámení s ladicím programem](../../debugger/debugger-feature-tour.md)   
 - [Návod: Ladění v době návrhu](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Používání regulárních výrazů v sadě Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

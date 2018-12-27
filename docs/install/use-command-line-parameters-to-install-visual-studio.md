@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159721"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561902"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Použití parametrů příkazového řádku pro instalaci sady Visual Studio 2017
 
@@ -56,7 +56,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `update` | Aktualizuje zobrazí nainstalovaný produkt. |
 | `repair` | Opraví zobrazí nainstalovaný produkt. |
 | `uninstall` | Odinstaluje zobrazí nainstalovaný produkt. |
-| `export` | **Novinka v 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. |
+| `export` | **Novinka v 15.9**: Exportuje výběr instalace na konfigurační soubor instalace. **Poznámka:**: Jde použít jenom s vs_installer.exe. |
 
 | **Možnost instalace** | **Popis** |
 | ----------------------- | --------------- |

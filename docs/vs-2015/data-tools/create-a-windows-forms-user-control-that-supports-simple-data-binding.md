@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 607c324e11591211593522957dcd08747d230279
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b0925fde98d4a10e3391ded538e0842833a61ce5
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219820"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647865"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje jednoduchou datovou vazbu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z e
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat:  
   
--   Přístup k ukázkové databázi Northwind. Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k ukázkové databázi Northwind.
   
 ## <a name="create-a-windows-application"></a>Vytvoření aplikace Windows  
  Prvním krokem je vytvoření **aplikace Windows**.  
@@ -116,7 +116,7 @@ Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z e
 3.  Z **sestavení** nabídce zvolte **sestavit řešení**.  
   
 ## <a name="create-a-data-source-from-your-database"></a>Vytvoření zdroje dat z databáze  
- Tento krok používá **konfigurace zdroje dat** průvodce k vytvoření zdroje dat na základě `Customers` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o instalaci ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+ Tento krok používá **konfigurace zdroje dat** průvodce k vytvoření zdroje dat na základě `Customers` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení.
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
@@ -166,7 +166,7 @@ Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z e
   
 -   Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do formuláře a ověřte, zda `PhoneNumberBox` ovládacího prvku se používá k zobrazení dat v `Phone` sloupce.  
   
-     Ovládací prvky vázaných dat pomocí popisků se zobrazí ve formuláři, spolu s pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
+     Ovládací prvky vázaných dat pomocí popisků se zobrazí ve formuláři, spolu s pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
 ## <a name="run-the-application"></a>Spuštění aplikace  
   
@@ -184,4 +184,3 @@ Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z e
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-

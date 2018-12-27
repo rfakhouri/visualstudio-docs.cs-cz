@@ -1,6 +1,6 @@
 ---
-title: Opravte chyby programu a zlepšit kódu
-description: Tento článek popisuje některé základní způsoby Visual Studio můžete najít a opravit problémy ve vašem kódu, včetně chyby sestavení analýza kódu, ladění, nástroje a testování částí.
+title: Opravte chyby programu a zlepšení kódu
+description: Tento článek popisuje některé základní způsoby, jak Visual Studio vám pomůže najít a opravit problémy v kódu, včetně chyby sestavení analýzy kódu, ladění, nástroje a testy jednotek.
 ms.date: 05/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,153 +11,153 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065114"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684818"
 ---
-# <a name="make-code-work-in-visual-studio"></a>Ujistěte se, kód pracovat v sadě Visual Studio
+# <a name="make-code-work-in-visual-studio"></a>Kód pracovat v sadě Visual Studio
 
-Visual Studio poskytuje výkonnou sadu integrované sestavení projektu a nástroje pro ladění. V tomto článku zjistit, jak lze pomocí sady Visual Studio můžete najít problémy ve vašem kódu používání sestavení výstupu analýza kódu, nástroje pro ladění a testování částí.
+Visual Studio poskytuje výkonné integrované sady sestavení projektu a nástroje pro ladění. V tomto článku zjistěte, jak vám může pomoci Visual Studio můžete najít problémy ve vašem kódu pomocí výstupu, sestavení analýzy kódu, nástroje pro ladění a testování částí.
 
-Jste započítáno out editoru a vytvořit nějaký kód. Chcete nyní, ujistěte se, že kód funguje správně. V sadě Visual Studio, stejně jako u většina integrovaného vývojového prostředí, existují dvě fáze k provádění kódu pracovní: vytváření kódu zachytit a vyřešit chyby projektu a kompilátoru a spuštění kódu k vyhledání chyby spuštění a dynamické.
+Jste naplánujete editoru a vytvořili nějaký kód. Teď budete chtít Ujistěte se, že kód funguje správně. V sadě Visual Studio, existují dvě fáze pro provádění kódu práce stejně jako u většiny prostředí IDE: sestavování kódu zachytit a řešení chyb projektu a kompilátoru a spouštění kódu najít chyby za běhu a dynamické.
 
 ## <a name="build-your-code"></a>Sestavení kódu
 
-Existují dva základní typy konfigurace sestavení: **ladění** a **verze**. **Ladění** konfigurace vytváří pomalejší, větší spustitelný soubor, který umožňuje bohatší interaktivní ladění možnosti spuštění. **Ladění** by mělo být dodáno nikdy spustitelný soubor. **Verze** konfigurace sestavení rychlejší, optimalizované spustitelný soubor, který je vhodný pro odeslání (alespoň z perspektivy kompilátor). Výchozí konfigurace sestavení **ladění**.
+Existují dva základní druhy konfigurace sestavení: **Ladění** a **vydání**. **Ladění** konfigurace vytvoří pomalejší, větší spustitelný soubor, který umožňuje pohodlnější a pestřejší interaktivní ladění prostředí za běhu. **Ladění** spustitelný soubor by měl být nikdy dodán. **Vydání** konfigurace sestavení rychlejší, optimalizované spustitelný soubor, který je vhodný k odeslání (alespoň z hlediska kompilátor). Výchozí konfigurace sestavení **ladění**.
 
-Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale můžete také spustit sestavení tak, že vyberete **sestavení** > **sestavit řešení** z hlavní nabídky.
+Nejjednodušší způsob, jak sestavit projekt je stisknout klávesu **F7**, ale můžete také spustit sestavení tak, že vyberete **sestavení** > **sestavit řešení** z hlavní nabídky.
 
-![Výběr nabídky projektu sestavení sady Visual Studio](../ide/media/vs_ide_gs_debug_build_menu_item.png)
+![Výběr nabídky projekt sestavení sady Visual Studio](../ide/media/vs_ide_gs_debug_build_menu_item.png)
 
-Můžete sledovat v procesu sestavení **výstup** okna v dolní části rozhraní Visual Studia. Operace sestavení, upozornění a chyb se zobrazí tady. Pokud máte chyby (nebo pokud máte výše nakonfigurované úroveň upozornění), vaše sestavení selže. Kliknutím na s chybami a upozorněními přejít na řádek, kde k nim došlo. Znovu sestavte projekt stisknutím **F7** znovu (a znovu zkompiluje pouze soubory s chybami) nebo **Ctrl**+**Alt**+**F7**  (pro vyčištění a úplné opětovné sestavení).
+Můžete sledovat v procesu sestavení **výstup** okno v dolní části rozhraní Visual Studia. Zde jsou zobrazeny chyby, varování a operace sestavení. Pokud už máte chyby (nebo pokud máte nakonfigurované úroveň upozornění), vaše sestavení se nezdaří. Můžete kliknout na chyby a upozornění přejít na řádek, kde k nim došlo. Znovu sestavte projekt stisknutím **F7** znovu (znovu zkompilovat pouze soubory s chybami) nebo **Ctrl**+**Alt**+**F7**  (pro vyčištění a úplné opětovné sestavení).
 
-V okně výsledky níže editoru existují dvě záložkách windows: **výstup** okno, které obsahuje nezpracovaná kompilátoru výstup (včetně chybových zpráv) a **seznam chyb** okno, které poskytuje řazení a filtrování seznam všechny chyby a upozornění.
+Existují dvě okna s kartami v okně výsledky níže editoru: **výstup** okna, který obsahuje výstup (včetně chybových zpráv); nezpracovaná kompilátoru a **seznam chyb** okno, které poskytuje řazení a filtrování seznamu všechny chyby a upozornění.
 
-Při úspěšném sestavení se zobrazí výsledky jako to **výstup** okno:
+Když sestavení proběhne úspěšně, uvidíte výsledky, jako jsou to **výstup** okno:
 
-![Visual Studio úspěšném sestavení výstupu](../ide/media/vs_ide_gs_debug_success_build.png)
+![Výstup úspěšné sestavení Visual Studia](../ide/media/vs_ide_gs_debug_success_build.png)
 
-## <a name="review-the-error-list"></a>Zkontrolujte seznam chyb
+## <a name="review-the-error-list"></a>Projděte si seznam chyb
 
-Pokud jste udělali žádné úpravy kód, který jste si dříve a úspěšně zkompilovány, pravděpodobně jste chybu. Pokud jste nové kódování, pravděpodobně máte spoustu je. Chyby jsou někdy zřejmé, jako je jednoduchý syntaktickou chybu nebo nesprávný název proměnné a někdy jsou těžko srozumitelné s pouze jako nesrozumitelné kód na vás. Čisticí zobrazit problémy, přejděte k dolnímu okraji sestavení **výstup** a klikněte na **seznam chyb** kartě. Tím přejdete na více uspořádaný náhled chyb a varování pro svůj projekt a vám dává některé další možnosti.
+Pokud jste provedli žádné úpravy kódu, který jste dříve a úspěšně sestavili, pravděpodobně jste chybu. Pokud začínáte programování, pravděpodobně máte mnoho z nich. Chyby jsou někdy zřejmé, jako je například Chyba jednoduché syntaxe nebo nesprávný název proměnné a někdy jsou těžko pochopitelné nejasné kód a provede vás. Pro čištění přehled o problémech, přejděte k dolnímu okraji sestavení **výstup** okna a klikněte na **seznam chyb** kartu. Tím přejdete na zobrazení organizovanější chyby a upozornění pro váš projekt a vám dává některé další možnosti.
 
-![Výstup sady Visual Studio a seznam chyb](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
+![Výstup Visual Studia a seznam chyb](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Klikněte na řádek chyby ve **seznam chyb** okno Přejít na řádek chyba dojde v. (Nebo zapnout čísla řádků kliknutím v **Snadné spuštění** panel v pravém horním, zadáním "čísla řádků" do ní a klávesy **Enter**. Toto je nejrychlejší způsob, jak získat na **možnosti** dialogové okno, kde můžete zapnout čísla řádků. Naučte se používat **Snadné spuštění** panel a ušetřit mnoho klikne na uživatelském rozhraní!)
+Klikněte na řádek s chybou v **seznam chyb** vyvolá se v okně můžete přejít na řádek chybu. (Nebo zapnout čísla řádků kliknutím **Snadné spuštění** řádku v pravém horním rohu, zadáním "čísla řádků" do něj a stisknutím klávesy **Enter**. Toto je nejrychlejší způsob, jak se **možnosti** dialogové okno, ve kterém můžete zapnout čísla řádků. Naučte se používat **Snadné spuštění** pruhové a ušetříte si mnoho uživatelského rozhraní kliknutí!)
 
-![Visual Studio editor s čísla řádků](../ide/media/vs_ide_gs_debug_line_numbers.png)
+![Editor sady Visual Studio s čísly řádků](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
 ![Visual Studio čísla řádku](../ide/media/vs_ide_gs_debug_options_line_numbers.png)
 
-Stiskněte klávesu **Ctrl**+**G** k rychlému přechodu do číslo řádku, na kterém došlo k chybě.
+Stisknutím klávesy **Ctrl**+**G** rychle přejít k číslu řádku kde došlo k chybě.
 
-Chyba je identifikována red "klikatá" podtržítka. Pozastavte ukazatel myši nad jeho další podrobnosti. Proveďte opravu a jeho zmizí, i když může znamenat nové chyby s oprava. (To se nazývá "regrese".)
+Chyba je identifikována red "klikatá" podtržítkem. Najeďte myší nad ním další podrobnosti. Ujistěte se, oprava a jeho přestane být zobrazována, i když zavádíte novou chybu s opravou. (Tomu se říká "regrese".)
 
-![Visual Studio chyba hover](../ide/media/vs_ide_gs_debug_error_hover1.png)
+![Při najetí myší chyba Visual Studio](../ide/media/vs_ide_gs_debug_error_hover1.png)
 
-Provede v seznamu chyb a vyřešte všechny chyby v kódu.
+Projděte si seznam chyb a vyřešit všechny chyby v kódu.
 
-![Okno chyby pro Visual Studio ladění](../ide/media/vs_ide_gs_debug_error_list.png)
+![Visual Studio ladit chyby okna](../ide/media/vs_ide_gs_debug_error_list.png)
 
 ### <a name="review-errors-in-detail"></a>Zkontrolujte chyby v podrobností
 
-Mnoho chyb má smysl žádné vám obsahuje jiné spojení, jako jsou v podmínkách kompilátoru. V takových případech budete potřebovat další informace. Z **seznam chyb** okno, můžete provést automatické vyhledávání Bing Další informace o chybě nebo upozornění. Klikněte pravým tlačítkem na řádku odpovídající položky a vyberte **zobrazit nápovědu k chybě** z kontextové nabídky, nebo klikněte na hodnotu s hypertextovým odkazem chyba kódu v **kód** sloupec **seznam chyb**.
+Mnoho chyb může žádný smysl pro vás obsahuje jiné spojení jsou v podmínkách kompilátor. V takových případech bude nutné další informace. Z **seznam chyb** okna, můžete provést automatické vyhledávání Bingu Další informace o chybě nebo upozornění. Klikněte pravým tlačítkem na řádku odpovídající položky a vyberte **zobrazit nápovědu k chybě** z místní nabídky nebo klepněte na hodnotu s hypertextovým odkazem chyba kódu v **kód** sloupec **seznam chyb**.
 
-![Visual Studio seznam chyb Bing vyhledávání](../ide/media/vs_ide_gs_debug_error_list_error_help.png)
+![Visual Studio seznam chyb vyhledávání Bingu](../ide/media/vs_ide_gs_debug_error_list_error_help.png)
 
-V závislosti na nastavení buď webového prohlížeče zobrazí výsledky hledání jsou kód chyby a text, nebo na kartě se otevře v sadě Visual Studio a zobrazí výsledky hledání Bing. Výsledky jsou z mnoha různých zdrojů v síti Internet, a ne všechny může být užitečné.
+V závislosti na nastavení buď ve webovém prohlížeči zobrazí výsledky hledání pro kód chyby a text, nebo na kartě se otevře v sadě Visual Studio a zobrazí výsledky vyhledávání Bingu. Výsledky jsou z mnoha různých zdrojů v Internetu, a nemusí být některé užitečné.
 
-## <a name="use-code-analysis"></a>Pomocí analýzy kódu
+## <a name="use-code-analysis"></a>Použití analýzy kódu
 
-Analyzátorů kódu vyhledejte běžné problémy kódu, které můžou vést k běhové chyby nebo problémy ve správě kódu.
+Analyzátorů kódu vyhledejte běžné problémy kódu, které můžou vést k chybám za běhu nebo problémy v kódu správy.
 
-### <a name="c-and-visual-basic-code-analysis"></a>Analýza kódu C# a Visual Basic
+### <a name="c-and-visual-basic-code-analysis"></a>C#a analýza kódu jazyka Visual Basic
 
-Visual Studio 2017 zahrnuje integrovanou sadu [platformy .NET kompilátoru analyzátorů](../code-quality/roslyn-analyzers-overview.md) kódu jazyka C# a Visual Basic, zkontrolujte, jak budete zadávat. Můžete nainstalovat další analyzátorů jako rozšíření sady Visual Studio, nebo jako balíčku NuGet. Pokud se nenajdou porušení pravidel, se zvyšují v editoru kódu jako vlnovkou pod kód problematické a v **seznam chyb**.
+Visual Studio 2017 obsahuje integrovanou sadu [analyzátory pro .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) , zkontrolujte C# a kód jazyka Visual Basic jako vy, zadejte. Jako rozšíření sady Visual Studio, nebo jako balíček NuGet můžete nainstalovat další analyzátory. Pokud se nenajdou porušení pravidel, jsou hlášeny v editoru kódu jako podtržení za problematický kód a **seznam chyb**.
 
 ### <a name="c-code-analysis"></a>Analýza kódu C++
 
-Chcete-li provést analýzu kódu C++, spusťte [analýza statické kódu](../code-quality/quick-start-code-analysis-for-c-cpp.md). Získání v jeho spuštění, když jste odstranili zřejmé chyby, které brání úspěšném sestavení a nějakou dobu adres, které může vytvořit upozornění která podporují. Sami budete uložte některé hlavu dolů na cestách, a dozvíte na některé techniky styl kódu.
+Chcete-li provést analýzu kódu C++, spusťte [statickou analýzu kódu](../code-quality/quick-start-code-analysis-for-c-cpp.md). Získejte v podporují ho spustíte, když jste odstranili jasné chyby, které brání úspěšné sestavení a k vyřešení upozornění, který může vytvořit nějakou dobu trvat. Snížíte sami některé obrovskému dolů cestách a dozvíte několik technik styl kódu.
 
-Stiskněte klávesu **Alt**+**F11** (nebo vyberte **analyzovat** > **spustit analýza kódu v řešení** z hlavní nabídky) na Analýza kódu statických spusťte.
+Stisknutím klávesy **Alt**+**F11** (nebo vyberte **analyzovat** > **spustit analýzu kódu na řešení** z hlavní nabídky) do Spusťte analýzu statického kódu.
 
 ![Visual Studio Code Analysis položky nabídky](../ide/media/vs_ide_gs_debug_run_code_analysis.png)
 
-Všechny nové nebo aktualizované upozornění se zobrazí v **seznam chyb** karta v dolní části rozhraní IDE. Klikněte na upozornění k nim přejít v kódu.
+Zobrazí všechna upozornění nové nebo aktualizované v **seznam chyb** karta v dolní části rozhraní IDE. Klikněte na upozornění můžete přejít k nim v kódu.
 
 ![Seznam chyb sady Visual Studio s upozorněními.](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Pomocí žárovek opravíte nebo Refaktorovat kódu
+## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Pro opravu nebo refaktorování kódu pomocí žárovky
 
-[Rychlé akce](../ide/quick-actions.md), k dispozici z žárovky nebo šroubovák ikonu, umožňují Refaktorovat vloženého kódu. Jsou snadný způsob, jak opravit běžné upozornění rychle a efektivně v kódu jazyka C#, C++ a Visual Basic. Chcete-li přistupovat k nim, klikněte pravým tlačítkem na vlnovku upozornění a vyberte **rychlé akce a refaktoring**. Nebo, pokud je kurzor na řádku s barevnou vlnovka, stiskněte klávesu **Ctrl**+**.** nebo vyberte žárovky nebo ikonu šroubovák u okraje. Zobrazí se seznam možných opravy nebo refaktoring, které můžete provést u tohoto řádku kódu.
+[Rychlé akce](../ide/quick-actions.md), která je dostupná z žárovky nebo ikonu šroubovák umožňují Refaktorovat vložený kód. Jsou snadný způsob, jak vyřešit běžné upozornění rychle a efektivně v C#, C++ a Visual Basic code. Pro přístup k nim, klikněte pravým tlačítkem na varování vlnovku a vyberte **rychlé akce a refaktoringy**. Nebo, pokud je kurzor na řádek s barevné vlnovka, stiskněte klávesu **Ctrl**+**.** nebo vyberte žárovky nebo šroubovák ikonu na okraji. Zobrazí se vám seznam možných opravy nebo refaktoringů, které můžete provést u tohoto řádku kódu.
 
-![Visual Studio žárovky preview](../ide/media/quick-actions-options.png)
+![Náhled návrhů Visual Studio](../ide/media/quick-actions-options.png)
 
-Rychlé akce lze použít bez ohledu na analyzátorů kódu určit, že je možnost pro opravu, refactor, nebo vylepšení vašeho kódu. Klikněte na každý řádek kódu, pravým tlačítkem a otevřete kontextu nabídku a vyberte **rychlé akce a refaktoring**. Refaktoring nebo zlepšování možnosti jsou k dispozici, jsou zobrazeny. V opačném zprávu **zde k dispozici žádné rychlé akce** se zobrazí v levém dolním rohu okna IDE.
+Rychlé akce lze použít bez ohledu na to analyzátorů kódu určit, že není příležitost opravit, refaktorace, nebo vylepšení vašeho kódu. Klikněte na libovolném řádku kódu, klikněte pravým tlačítkem na otevřete kontextovou nabídku a vyberte **rychlé akce a refaktoringy**. Refaktoring nebo zlepšování možnosti jsou k dispozici, jsou zobrazeny. V opačném případě zpráva **tady k dispozici žádné rychlé akce** zobrazí v levém dolním rohu integrovaného vývojového prostředí.
 
-![Žádný text k dispozici rychlé akce](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Text k dispozici žádné rychlé akce](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-V prostředí, můžete rychle použít klávesy se šipkami a **Ctrl**+**.** pro kontrolu snadno refaktoringu příležitostí a vyčistit kódu!
+S prostředím, můžete rychle pomocí šipkových kláves a **Ctrl**+**.** ke kontrole snadno refaktoringu příležitosti a vyčistit váš kód!
 
-## <a name="debug-your-running-code"></a>Ladění spuštěním kódu
+## <a name="debug-your-running-code"></a>Ladění kódu spuštěného
 
-Teď, když jste úspěšně sestaven kódu a provést trochu vyčistit, spusťte stisknutím **F5** nebo výběr **ladění** > **spustit ladění**. Tím spustíte aplikaci v prostředí ladění, můžete sledovat své chování podrobně. Visual Studio IDE změní, když aplikace běží: **výstup** okno nahrazeno dva nové (v konfiguraci okna výchozí), **automobily/místní hodnoty nebo sledování** – záložkami okno a **Volání nastavení výstupní zásobník/zarážky nebo výjimka** okno s kartami. Tyto windows mají několik karet, které vám umožní prohlédnout a vyhodnocení proměnné vaší aplikace, vláken, zpětná volání a různé další chování při jeho spuštění.
+Teď, právě jste úspěšně vytvořili váš kód a provést trochu čištění, ji spusťte stisknutím kombinace kláves **F5** nebo jeho výběru **ladění** > **spustit ladění**. Tím se spustí vaši aplikaci v prostředí ladění, můžete sledovat jeho chování podrobně. Integrované vývojové prostředí sady Visual Studio změní, když vaše aplikace běží: **výstup** okno nahrazuje dvě nové (ve výchozím okně nastavení), **automatické hodnoty a místní hodnoty/sledování** s kartami okně a **Volání zásobníku zarážky nebo výjimky nebo nastavení/Output** okno s kartami. Tato okna mít několik karet, které vám umožní kontrolovat a vyhodnocovat proměnné vaší aplikace, vlákna, zásobníky volání a různé další chování za běhu.
 
-![Visual Studio automobily a Windows zásobníku volání](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
+![Visual Studio automatické hodnoty a Windows zásobníku volání](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Zastavte aplikaci stisknutím **Shift**+**F5** nebo kliknutím **Zastavit** tlačítko. Nebo můžete jednoduše zavřít hlavní okno aplikace (nebo dialogové okno příkazového řádku).
+Zastavte aplikaci stisknutím klávesy **Shift**+**F5** nebo kliknutím **Zastavit** tlačítko. Nebo můžete jednoduše zavřít hlavní okno aplikace (nebo dialogové okno příkazového řádku).
 
-V případě kódu spustil perfektně a přesně podle očekávání, Blahopřejeme! Ale pokud přestala, nebo došlo k chybě nebo vám Dal některé neobvyklé výsledky, budete potřebovat najít zdroj těchto problémů a opravte chyby.
+Pokud váš kód běžel dokonale a přesně tak, jak bylo očekáváno, Blahopřejeme! Ale pokud přestala reagovat, nebo došlo k chybě nebo přiřadil některé strangeová výsledky, bude potřeba vyhledat příčiny těchto problémů a opravit chyby.
 
-### <a name="set-simple-breakpoints"></a>Nastavit jednoduché zarážky
+### <a name="set-simple-breakpoints"></a>Nastavení jednoduché zarážky
 
-[Zarážky](../debugger/using-breakpoints.md) jsou nejvíce základní a základní funkce spolehlivé ladění. Zarážku Určuje, kde by měl Visual Studio pozastavit spuštěním kódu, můžete si prohlédněte hodnoty proměnných nebo chování paměti, nebo zda získávání větev kódu běží. Není nutné znovu sestavit projekt po nastavení a odebírání zarážky.
+[Zarážky](../debugger/using-breakpoints.md) jsou nejvíce na úrovni basic a essential funkcí spolehlivé ladění. Zarážka určuje, kde má Visual Studio spuštěný kód pozastavit, abyste mohli zkontrolovat hodnoty proměnných či chování paměti, nebo abyste zjistili, jestli se nějaká větev kódu spouští. Není nutné znovu sestavit projekt po nastavení a odebrání zarážky.
 
-Zarážku kliknutím v úplně okraj řádku místo rozdělení dojít nebo stiskněte klávesu **F9** nastavit zarážky na aktuálním řádku kódu. Při spuštění kódu se pozastaví (nebo *zalomení*) předtím, než se spustí pokyny pro tento řádek kódu.
+Nastavit zarážku kliknutím v úplně okraj řádku, kde chcete, aby se zarážka dojít nebo stisknutím klávesy **F9** nastavit zarážku na aktuálním řádku kódu. Při spuštění kódu se pozastaví (nebo *přerušení*) předtím, než se spustí pokyny pro tento řádek kódu.
 
-![Visual Studio zarážek](../ide/media/vs_ide_gs_debug_breakpoint1.png)
+![Visual Studio zarážku](../ide/media/vs_ide_gs_debug_breakpoint1.png)
 
 Mezi běžná použití pro zarážky patří:
 
-- Chcete-li zúžit zdroj chybě nebo zablokování, bodový zarážky v celé a kolem kód, který si myslíte, že je příčinou selhání volání metody. Jako při spuštění kódu v ladicím programu odebrat a poté resetujte zarážky blíže společně vyhledejte problematické řádek kódu. Najdete v další části se dozvíte, jak spustit kód v ladicím programu.
+- Abyste omezili příčiny zhroucení nebo zablokování, bodový zarážky v průběhu a ohraničení kódu volání metody, které si myslíte, že je příčinou selhání. Při spuštění kódu v ladicím programu odebrat a současně resetovat zarážce blíže, dokud nenajdete problematický řádek kódu. V části Další informace o spuštění kódu v ladicím programu.
 
-- Když zavedete nový kód, zarážku na začátku ji a spusťte kód a ujistěte se, že se chová podle očekávání.
+- Když zavádíte nový kód, nastavte zarážku na na začátek a spustit kód, abyste měli jistotu, že se nechová podle očekávání.
 
-- Pokud jste implementovali složité chování, nastavte zarážky pro algoritmické kód, tak při rozdělení si můžete prohlédnout hodnoty proměnných a data.
+- Pokud jste implementovali složité chování, nastavte zarážky pro kód vylepšením tak poškodí program si můžete prohlédnout hodnoty proměnných a data.
 
-- Pokud psaní kódu jazyka C nebo C++, použijte zarážky pro zastavení kód, takže si můžete prohlédnout hodnoty adres (podívejte se na hodnotu NULL) a počty odkazů při ladění chyby související s pamětí.
+- Pokud píšete kód C nebo C++, použijte zarážky pro zastavení kód, takže si můžete prohlédnout hodnoty adres (vyhledejte NULL) a počty odkazů, při ladění chyby související s pamětí.
 
-Další informace o použití zarážek, najdete v tématu [použití zarážek](../debugger/using-breakpoints.md).
+Další informace o používání zarážek, najdete v článku [pomocí zarážek](../debugger/using-breakpoints.md).
 
-### <a name="inspect-your-code-at-run-time"></a>Kontrola kódu v době běhu
+### <a name="inspect-your-code-at-run-time"></a>Kontrola kódu za běhu
 
-Při spuštění kódu dotkne boru přerušení a pozastaví, nebyl ještě provést řádek kódu označena žlutě (aktuální příkaz). V tomto okamžiku můžete provést aktuální příkaz a zkontrolujte změněné hodnoty. Můžete použít několik *krok* příkazů pro spuštění kódu v ladicím programu. Pokud je označen jako kód volání metody, můžete do ní krok stisknutím **F11**. Můžete také *krok přes* řádek kódu stisknutím **F10**. Další příkazy a podrobnosti o tom, jak procházet kód, přečtěte si [přejděte kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
+Při spuštění kódu narazí na zarážku a je možné, nebyl proveden na řádek kódu, označen žlutou barvou (aktuální příkaz). V tomto okamžiku můžete provést aktuální příkaz a zkontrolujte změněné hodnoty. Můžete použít několik *krok* příkazy ke spouštění kódu v ladicím programu. Pokud volání metody je označené jako kód, můžete krokovat s vnořením ho stisknutím kombinace kláves **F11**. Můžete také *Krokovat přes* řádek kódu stisknutím klávesy **F10**. Další příkazy a podrobnosti o tom, jak krokovat kód, najdete v článku [vyhledání kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Visual Studio hodnota doby běhu kontroly](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Kontroly za běhu hodnotu Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
-V předchozí ilustraci postoupíte ladicí program jeden příkaz stisknutím buď **F10** nebo **F11** (vzhledem k tomu, že není zde žádná volání metody, jak příkazy mají stejný výsledek).
+V předchozí ilustraci postoupíte příkaz ladicího programu jedním stisknutím klávesy buď **F10** nebo **F11** (protože neexistuje žádná metoda volání, oba příkazy mají stejný výsledek).
 
-Při ladicího programu je pozastavena, můžou kontrolovat proměnných a k určení, co se děje zásobníky volání. Hodnoty jsou v oblastech, které byste měli vidět? Jsou volání určené ve správném pořadí?
+Když ladicí program je pozastavený, můžete kontrolovat vaše proměnné a volání zásobníků, chcete-li zjistit, co se děje. Jsou hodnoty v oblasti, které byste měli vidět? Volá se provádějí ve správném pořadí?
 
-![Visual Studio hodnota doby běhu kontroly](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Kontroly za běhu hodnotu Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-Podržte ukazatel nad proměnné zobrazíte jeho aktuální hodnota a odkazy. Pokud se zobrazí hodnota, kterou by neměl být, pravděpodobně chyby v předchozích nebo volání kód. Další podrobné informace ladění [Další](../debugger/getting-started-with-the-debugger.md) o používání ladicího programu.
+Najeďte myší zobrazíte její aktuální hodnotu a odkazy na proměnnou. Pokud se zobrazí hodnotu, kterou jste neočekávali, pravděpodobně máte chybu v kódu předchozí nebo volání. Další podrobné informace ladění [Další](../debugger/debugger-feature-tour.md) o pomocí ladicího programu.
 
-Kromě toho Visual Studio zobrazí **diagnostické nástroje** okno, kde můžete sledovat využití procesoru a paměti vaší aplikace v čase. Později ve vývoji vaší aplikace můžete tyto nástroje Pokud chcete vyhledat neočekávané velkou využití nebo paměť přidělení procesoru. Použít ve spojení s **sledovat** okno a zarážky pro příčinu neočekávané velkou využití nebo nevydané prostředky. Další informace najdete v tématu [profilace prohlídka funkce](../profiling/profiling-feature-tour.md).
+Kromě toho sada Visual Studio zobrazí **diagnostické nástroje** okno, kde můžete sledovat využití procesoru a paměti vaší aplikace v čase. Později při vývoji aplikace můžete použít tyto nástroje k vyhledání neočekávané náročné využití nebo paměť přidělení procesoru. V kombinaci s **Watch** okna a zarážky, chcete-li zjistit, co je příčinou neočekávané náročné využití nebo nevydané prostředky. Další informace najdete v tématu [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md).
 
-## <a name="run-unit-tests"></a>Spouštění testování částí
+## <a name="run-unit-tests"></a>Spouštění testů jednotek
 
-Testy jednotek jsou vaše první linií obrany před kódu chyby, protože, pokud jsou správně provedené, testování jedné "jednotka" kódu, obvykle jednu funkci a jsou jednodušší než vaše úplné program ladění. Visual Studio nainstaluje rozhraní testování částí Microsoft pro spravovaná a nativní kód. Použijte testování framework částí vytvářet testy částí, spustit je a ohlásí výsledky tyto testy. Testování částí spusťte při provádění změn, testování, aby váš kód stále funguje správně. S Visual Studio Enterprise edition je možné spustit testy automaticky po každé sestavení.
+Testování jednotek je vaší první linie obrany proti kód chyby, proto, že pokud jsou správně provedené, testování jedné "jednotka" kódu, obvykle jednu funkci a usnadňuje ladění než úplné programu. Visual Studio nainstaluje rozhraní testování částí Microsoft pro spravovaný i nativní kód. Použití jednotkových testů vytvořit testy jednotek, spustit je a ohlásí výsledky těchto testů. Pokud provedete změny, k otestování, jestli váš kód stále pracuje správně testů jednotek spusťte znovu. Pomocí sady Visual Studio Enterprise edition je automaticky spustit testy po každém sestavení.
 
-Chcete-li začít, přečtěte si [generování testů částí kódu s IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Abyste mohli začít, přečtěte si [generování testů jednotek pro kód pomocí funkce IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
-Další informace o testování částí v sadě Visual Studio a jak se vám pomůžou vytvořit lepší kvality kódu, přečtěte si [jednotkové testování Základy](../test/unit-test-basics.md).
+Další informace o testování částí v sadě Visual Studio a jak vám pomůžou vytvářet lepší kvality kódu, [základní informace o testování částí](../test/unit-test-basics.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)
-- [Další informace o používání ladicího programu](../debugger/getting-started-with-the-debugger.md)
-- [Generování a opravte kódu](../ide/code-generation-in-visual-studio.md)
+- [Další informace o používání ladicího programu](../debugger/debugger-feature-tour.md)
+- [Generování a oprava kódu](../ide/code-generation-in-visual-studio.md)

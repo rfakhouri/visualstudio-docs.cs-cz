@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675865"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647897"
 ---
 # <a name="debug-office-projects"></a>Ladění projektů Office
   Můžete ladit projekty Office s použitím stejného Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů, které používáte pro jiné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Funkce, jako je možnost Vložit zarážky a proměnné v zobrazení ladicího programu **lokální** okna, jsou také k dispozici při ladění projektů Office. Další informace o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástroje pro ladění, naleznete v tématu [ladit v sadě Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
@@ -79,7 +79,7 @@ ms.locfileid: "35675865"
  Chcete-li ladit Wordový dokument projektu založeného na dokument Wordu 97 – 2003 (*/* doc *) formát, složky projektu musíte přidat do seznamu důvěryhodných složek. Další informace o tom, jak to provést, najdete v části [udělit důvěryhodnost dokumenty](../vsto/granting-trust-to-documents.md).  
   
 ## <a name="debug-disabled-add-ins"></a>Ladění zakázané doplňky  
- Aplikace Microsoft Office můžete zakázat doplňků VSTO, které neočekávané chování. Aplikace Microsoft Office zakáže doplňků VSTO zabránit problematického kódu načítání při každém spuštění aplikace. Je však také snadno způsobit neočekávané chování během ladění typické. Informace o tom, jak znovu povolit doplňků VSTO najdete v tématu [postupy: opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
+ Aplikace Microsoft Office můžete zakázat doplňků VSTO, které neočekávané chování. Aplikace Microsoft Office zakáže doplňků VSTO zabránit problematického kódu načítání při každém spuštění aplikace. Je však také snadno způsobit neočekávané chování během ladění typické. Informace o tom, jak znovu povolit doplňků VSTO najdete v tématu [jak: Znovu povolit doplňku VSTO zakázaného](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).  
   
  Existují dva typy zakazuje, aby aplikace Microsoft Office použijte pro doplňky VSTO: pevné zakázání a obnovitelně zakázání.  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35675865"
   
 ## <a name="see-also"></a>Viz také:  
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
- [Postupy: opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [Postupy: Opětovné povolení VSTO doplňku, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84850d9de539267385ddddf39cea55672ad60034
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922520"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684701"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refaktoring tříd a typů v Návrháři tříd
 
@@ -35,13 +35,13 @@ Když refaktorujete kód, můžete bylo snazší porozumět, udržovat a efektiv
 > [!NOTE]
 > Soubory projektu může být jen pro čtení, protože projekt je pod správou zdrojového kódu a není rezervován, jedná o Odkazovaný projekt, nebo jeho soubory označené jako jen pro čtení na disku. Při práci v projektu v jednom z těchto stavů, zobrazí se různé způsoby, jak uložit práci v závislosti na stavu projektu. To platí pro refaktoring kódu a také na kód, který změníte jiným způsobem, jako je například Přímá úprava.
 
-## <a name="common-tasks"></a>Běžné úlohy
+## <a name="common-tasks"></a>Běžné úkoly
 
 |Úloha|Podpůrný obsah|
 |----------| - |
-|**Refaktoring tříd:** operace refaktoringu můžete použít k rozdělení třídy na částečné třídy nebo k implementaci abstraktní základní třídu.|-   [Postupy: rozdělení třídy na částečné třídy](how-to-split-a-class-into-partial-classes.md)|
-|**Práce s rozhraními:** v Návrháři tříd můžete implementovat rozhraní v diagramu tříd díky připojení k třídu, která poskytuje kód pro metody rozhraní.|-   [Postupy: implementace rozhraní](how-to-implement-an-interface.md)|
-|**Refaktoring parametry, typy a členy typu:** pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo je přesunout z jednoho typu na jiný. Můžete také vytvořit typy připouštějící hodnotu Null.|-   [Přejmenování typů a členů typu](#rename-types-and-type-members)<br />-   [Členy typu přesuňte z jednoho typu na jiný](#move-type-members-from-one-type-to-another)<br />-   [Postupy: vytvoření typu s možnou hodnotou Null](how-to-create-a-nullable-type.md)|
+|**Refaktoring tříd:** Operace refaktoringu můžete použít k rozdělení třídy na částečné třídy nebo k implementaci abstraktní základní třídu.|-   [Jak: Rozdělení třídy na částečné třídy](how-to-split-a-class-into-partial-classes.md)|
+|**Práce s rozhraní:** V Návrháři tříd můžete implementovat rozhraní v diagramu tříd díky připojení k třídu, která poskytuje kód pro metody rozhraní.|-   [Jak: Implementovat rozhraní](how-to-implement-an-interface.md)|
+|**Refaktoring parametry, typy a členy typu:** Pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo je přesunout z jednoho typu na jiný. Můžete také vytvořit typy připouštějící hodnotu Null.|-   [Přejmenování typů a členů typu](#rename-types-and-type-members)<br />-   [Členy typu přesuňte z jednoho typu na jiný](#move-type-members-from-one-type-to-another)<br />-   [Jak: Vytvoření typu s možnou hodnotou Null](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Přejmenování typů a členů typu
 
@@ -90,5 +90,4 @@ Pomocí **návrhář tříd**, člen typu můžete přesunout z jednoho typu na 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
-- [Navrhování tříd a typů](designing-classes-and-types.md)
+- [Navrhování tříd a typů](designing-and-viewing-classes-and-types.md)

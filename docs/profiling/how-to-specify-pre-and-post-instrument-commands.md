@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Zadejte příkazy před a po instrumentaci | Microsoft Docs'
+title: 'Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,74 +16,60 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592999"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Postupy: Zadejte příkazy před a po instrumentaci
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci
 
-Můžete zadat příkazy, které před nebo po jsou vybaveny binárních souborů v relaci výkonu. Všemi příkazy, které můžou být vystavené z příkazového řádku lze zadat jako před instrumentací nebo po instrumentaci událost. Můžete například zadat příkazy, které automatizují opětovného podpisu sestavení se silným názvem klíčem v dávkovém souboru, která se spustí po jsou vybaveny binární soubory.
+Můžete zadat příkazy, které spustit před nebo po jsou instrumentované binární soubory v relaci výkonu. Jakýkoli příkaz, který může být vydán z příkazového řádku můžete zadat jako před instrumentací nebo události po instrumentaci. Například můžete zadat příkazy, které automatizují opětovného podepsání sestavení silným názvem klíčem v dávkovém souboru, který se spouští po binární soubory jsou instrumentovány.
 
-Můžete zadat příkazy pro všechny instrumentované binární soubory v profilaci spustit nebo jednotlivých binárních souborů. Můžete však zadat jenom jeden příkaz před instrumentací na spuštění před a spustit po dokončení procesu instrumentace jenom jeden příkaz po instrumentaci. Nelze zadat příkazy pro obě všechny binární soubory a jednotlivých binárních souborů. Když zadáte příkazy pro všechny binární soubory, příkazy se spouštějí před nebo po každé binární instrumentace v relaci.
+Můžete zadat příkazy pro instrumentované binární soubory při spuštění profilování nebo jednotlivých binárních souborů. Můžete však zadat jenom jeden příkaz před instrumentací prováděný a pouze jeden příkaz po instrumentaci spustit po dokončení procesu instrumentace. Nelze zadat příkazy pro obě všechny binární soubory a jednotlivých binárních souborů. Při zadávání příkazů pro všechny binární soubory jsou spouštěny příkazy před nebo po instrumentaci každého binárního souboru v relaci.
 
-Pracovní adresář, ve kterém jsou prováděny příkazy závisí na operační systen, ve kterém je spuštěn [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] a na cílové platformy PROFILOVANÉHO aplikace.
+Pracovní adresář, ve kterém jsou spouštěny příkazy závisí na operačním systému, kde je spuštěn nástroj [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] a na cílové platformě profilované aplikace.
 
- **32bitové počítače**
-
-Na 32bitové počítače, je výchozí adresář profileru nástroje *disk\Program 10.0\Team Files\Microsoft Visual Studio Tools nástroje*.
-
-**64bitové počítače**
-
-Na 64bitových počítačích zadejte cestu podle cílové platformy PROFILOVANÉHO aplikace:
-
-- Pro 32bitové aplikace je výchozí adresář profiler nástrojů:
-
-     *disk\Program soubory (x86) \Microsoft Visual Studio 10.0\Team nástrojů nástroje*
-
-- Pro 64bitové aplikace je výchozí adresář profiler nástrojů:
-
-     *disk\Program soubory (x86) \Microsoft Visual Studio 10.0\Team Tools\x64 nástroje*
+Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Chcete-li určit příkazy před instrumentací
 
 1. Proveďte jeden z následujících kroků:
 
-    - Příkazy před instrumentací pro všechny binární soubory v relaci výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a potom klikněte pravým tlačítkem a vyberte **vlastnosti**.
+    - Pokud chcete zadat příkazy před instrumentací pro všechny binární soubory do relace výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.
 
-    - Pokud chcete zadat příkazy před instrumentací pro konkrétní binární, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relace a potom vyberte **vlastnosti**.
+    - Pokud chcete zadat příkazy před instrumentací pro konkrétní binární soubor, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relaci a pak vyberte **vlastnosti**.
 
 2. V **stránky vlastností**, klikněte na tlačítko **instrumentace**.
 
 3. Zadejte příkaz v **příkazového řádku** textového pole pod **události před Instrumentací**.
 
     > [!NOTE]
-    > Kliknutí tlačítko se třemi tečkami **(...)**  se přiléhající k **příkazového řádku** pole Procházet a vyberte příslušný soubor .exe, CMD nebo BAT.
+    > Můžete kliknout na tlačítko se třemi tečkami **(...)**  , který je vedle **příkazového řádku** pole vyhledejte a vyberte příslušný soubor .exe, .cmd nebo. bat.
 
-4. Click **OK**.
+4. Klikněte na **OK**.
 
-     Zakázat příkaz spouštění bez nutnosti ho odebrat, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Ke změně kompilátoru nebo linkeru nastavení můžete použijte na stránkách vlastností projektu.
+     Chcete-li zakázat spouštění příkazu ale neodebrali, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Pokud chcete upravit kompilátoru nebo linkeru, nastavení, použijte stránky vlastností projektu.
 
 ## <a name="to-specify-post-instrument-commands"></a>Chcete-li určit příkazy po instrumentaci
 
 1. Proveďte jeden z následujících kroků:
 
-    - Po instrumentaci příkazy pro všechny binární soubory v relaci výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a potom klikněte pravým tlačítkem a vyberte **vlastnosti**.
+    - Pokud chcete zadat příkazy po instrumentaci pro všechny binární soubory do relace výkonu, vyberte uzel relace výkonu v **prohlížeč výkonu**a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.
 
-    - Pokud chcete zadat příkazy po instrumentaci pro konkrétní binární, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relace a potom vyberte **vlastnosti**.
+    - Pokud chcete zadat příkazy po instrumentaci pro konkrétní binární soubor, klikněte pravým tlačítkem na název binárního souboru v **cíle** seznam výkonnostní relaci a pak vyberte **vlastnosti**.
 
 2. V **stránky vlastností**, klikněte na tlačítko **instrumentace**.
 
-3. Zadejte příkaz v **příkazového řádku** textového pole pod **po instrumentovat svoje události**.
+3. Zadejte příkaz v **příkazového řádku** textového pole pod **události po instrumentaci**.
 
     > [!NOTE]
-    > Kliknutí tlačítko se třemi tečkami **(...)**  se přiléhající k **příkazového řádku** pole Procházet a vyberte příslušný soubor .exe, CMD nebo BAT.
+    > Můžete kliknout na tlačítko se třemi tečkami **(...)**  , který je vedle **příkazového řádku** pole vyhledejte a vyberte příslušný soubor .exe, .cmd nebo. bat.
 
-4. Click **OK**.
+4. Klikněte na **OK**.
 
-     Zakázat příkaz spouštění bez nutnosti ho odebrat, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Ke změně kompilátoru nebo linkeru nastavení můžete použijte na stránkách vlastností projektu.
+     Chcete-li zakázat spouštění příkazu ale neodebrali, vyberte **vyloučit z instrumentace** zaškrtávací políčko. Pokud chcete upravit kompilátoru nebo linkeru, nastavení, použijte stránky vlastností projektu.
 
 ## <a name="see-also"></a>Viz také:
 

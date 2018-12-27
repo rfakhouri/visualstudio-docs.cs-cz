@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: spuštění samostatné aplikace s Profiler a shromáždění statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
+title: 'Postupy: Spuštění samostatné aplikace s Profiler a shromáždění statistik aplikace pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57d56564b7be9051efb1a5d153a2a797fcc2211
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592908"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Postupy: spuštění samostatné aplikace s profilerem a shromáždění statistik aplikace pomocí příkazového řádku
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Postupy: Spuštění samostatné aplikace s profilerem a shromažďování statistik aplikace pomocí příkazového řádku
 Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci spuštění samostatné (klientské) aplikaci a shromáždit statistiky výkonu pomocí metody vzorkování.  
 
 > [!NOTE]
@@ -30,7 +30,7 @@ Toto téma popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes
 1.  Pokud používáte nástroje pro profilaci nainstalované na počítači, kde je aplikace Visual Studio okno sady Visual Studio příkazů správné cesty. Na **nástroje** nabídce zvolte **VS příkazového řádku**  
 
 > [!NOTE]
->  Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v *\Team Tools\Performance nástroje* jedná o podadresář adresáře instalace sady Visual Studio. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Chcete-li využívat nástroje příkazového řádku profileru, musí přidat cestu do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.  
 
 ## <a name="start-the-application-with-the-profiler"></a>Spuštění aplikace s profilerem  
  Chcete-li spustit cílovou aplikaci pomocí profileru, je použít příkazu vsperfcmd proveďte **/start** a **/spuštění** možnosti pro inicializaci profileru a spuštění aplikace. Můžete zadat **/start** a **/spuštění** a jejich příslušné volby v jednom příkazovém řádku.  

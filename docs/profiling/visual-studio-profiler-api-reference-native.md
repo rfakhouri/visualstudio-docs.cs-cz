@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acb85c9994436b2e35a6d4161a579180ad5e0ac5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592765"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profiler API reference (nativní)
 Rozhraní API profileru Visual Studio umožňují programově řídit objemu shromážděných dat a vkládání značek časovým razítkem a profil během profilace. Použití nativních rozhraní API, můžete zahrnout *VSPerf.h* záhlaví a přidejte *VSPerf.lib* ve vašem projektu.  
   
 > [!NOTE]
->  Ve výchozím nastavení *VSPerf.h* a *VSPerf.lib* jsou umístěny ve složce s názvem *PerfSDK*. *\<jednotky >: \Program Files\Microsoft 14.0\Team Tools\PerfSDK nástroje Visual Studio* příkladu adresáři.  
+> Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  

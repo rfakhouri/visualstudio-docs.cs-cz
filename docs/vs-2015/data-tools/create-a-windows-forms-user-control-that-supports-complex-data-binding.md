@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de22f93c6fd04f89360fdaf8a2f5d83bd373d93d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2ac4dc4ac8a53c2833088f821a82ae00573a13b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284255"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648843"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje komplexní datovou vazbu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z e
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat:  
   
--   Přístup k ukázkové databázi Northwind. Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k ukázkové databázi Northwind.
   
 ## <a name="create-a-windows-application"></a>Vytvoření aplikace Windows  
  Prvním krokem je vytvoření **aplikace Windows**.  
@@ -178,4 +178,3 @@ Při zobrazení dat ve formulářích v aplikacích Windows, můžete vybrat z e
  [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
  [Windows Forms – ovládací prvky](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
-

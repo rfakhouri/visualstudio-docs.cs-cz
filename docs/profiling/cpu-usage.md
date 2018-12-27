@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063260"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647829"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru 
 
@@ -84,7 +84,7 @@ Zobrazení stromu volání, vyberte nadřazený uzel v sestavě. **Využití pro
 
  Systém a o funkcích rozhraní, které jsou spouštěny ve vašem kódu, se nazývají *externí kód*. Externí kód funkce spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řízení práce s vlákny a poskytují další nižší úrovně služby do aplikace. Ve většině případů nepotřebujete externí kód, takže využití procesoru volání stromu shromáždí externí funkce metody uživatele do jednoho **[externí kód]** uzlu.  
   
- Chcete-li zobrazit cesty volání externí kód, na stránce hlavní diagnostickou sestavu, vyberte **zobrazit externí kód** z **filtr** rozevírací seznam a pak vyberte **použít**. **Stromu volání** zobrazení **využití procesoru** stránce poté rozbalí volání externí kód.  
+ Chcete-li zobrazit cesty volání externí kód, na stránce hlavní diagnostickou sestavu (pravé podokno), vyberte **zobrazit externí kód** z **filtr** rozevírací seznam a pak vyberte **použít**. **Stromu volání** zobrazení **využití procesoru** stránce poté rozbalí volání externí kód. ( **Filtr** ovládacího prvku dropdown je k dispozici na hlavní stránce diagnostiky, ne podrobné zobrazení.)
   
  ![Zobrazit externí kód](../profiling/media/cpu_use_wt_filterview.png "zobrazit externí kód")  
   

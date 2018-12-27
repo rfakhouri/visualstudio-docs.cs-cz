@@ -15,14 +15,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058948"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441480"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Rychlý start: Použití sady Visual Studio k vytvoření první aplikace pro Vue.js
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Rychlý start: Vytvoření první aplikace pro Vue.js pomocí sady Visual Studio
 
 V tomto úvodu 5 až 10 minut do integrovaného vývojového prostředí (IDE) sady Visual Studio vytvoříte a spustí jednoduchou webovou aplikaci Vue.js. Pokud jste ještě nenainstalovali aplikaci Visual Studio 2017, přejděte [soubory ke stažení Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránku a nainstalovat zdarma.
 
@@ -35,13 +35,13 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 
 1. Pokud nemáte modul runtime Node.js, který je už nainstalovaný, nainstalujte verzi LTS z [Node.js](https://nodejs.org/en/download/) webu.
 
-    Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud se nainstalovaný modul runtime nerozpozná, můžete projekt nakonfigurovat na stránce vlastností pomocí odkazu na nainstalovaný modul runtime (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **Vlastnosti**).
+    Obecně platí, že Visual Studio automaticky rozpozná nainstalovaný modul runtime Node.js. Pokud nezjistí nainstalovaný modul runtime, můžete nakonfigurovat tak, aby odkazovaly nainstalovaný modul runtime na stránce vlastností projektu (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**).
 
 1. Otevřete Visual Studio 2017.
 
 1. V horním řádku nabídek zvolte **Soubor** > **Nový** > **Projekt**.
 
-1. V **nový projekt** dialogové okno, v části **JavaScript** > **Node.js** nebo **TypeScript**  >   **Node.js**, zvolte **základní webovou aplikaci Vue.js**a pak zadejte název projektu a pak klikněte na tlačítko **OK**.
+1. V **nový projekt** dialogové okno, v části **JavaScript** > **Node.js** nebo **TypeScript**  >   **Node.js**, zvolte **základní webovou aplikaci Vue.js**. Zadejte název projektu a pak klikněte na tlačítko **OK**.
 
      ![VUE.js šablony](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Přidejte do projektu soubor .vue
 
-1. V Průzkumníku řešení klikněte pravým tlačítkem na libovolné složky, jako *src* složky a klikněte na tlačítko **přidat** > **nová položka**.
+1. V Průzkumníku řešení klikněte pravým tlačítkem na libovolné složky, jako *src/components* složky a klikněte na tlačítko **přidat** > **nová položka**.
 
 1. Vyberte buď **komponenta jednoho souboru jazyka JavaScript Vue** nebo **TypeScript Vue jeden soubor součásti**a potom klikněte na tlačítko **přidat**.
 
@@ -85,7 +85,7 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 
 1. (Pouze aplikace project TypeScript) Ze sady Visual Studio, zvolte **sestavení** > **Vyčistit řešení**.
 
-1. Dále zvolte **sestavení** > **sestavit řešení** k sestavení projektu. Zkontrolujte **výstup** okno a zobrazit výsledky sestavení.
+1. Dále zvolte **sestavení** > **sestavit řešení** k sestavení projektu. Zkontrolujte **výstup** okno a zobrazit výsledky sestavení a zvolte **sestavení** z **zobrazit výstup z:** seznamu.
 
     Šablona projektu Vue.js používá `build` událost sestavení npm skript tím, že nakonfigurujete příspěvek. Pokud chcete toto nastavení změnit, otevřete soubor projektu (*\<projectname\>.njsproj*) z Průzkumníka Windows a vyhledejte tento řádek kódu:
 
@@ -105,7 +105,7 @@ Nejprve vytvoříte projekt Vue.js webové aplikace.
 
 1. Zavřete webový prohlížeč.
 
-Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o integrovaném vývojovém prostředí sady Visual Studio pomocí Vue.js. Pokud jste chtěli delve hlouběji do jeho funkce, prosím pokračujte kurz **kurzy** část obsahu.
+Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o integrovaném vývojovém prostředí sady Visual Studio pomocí Vue.js. Pokud jste chtěli delve hlouběji do své možnosti, pokračujte kurz v **kurzy** část obsahu.
 
 ## <a name="next-steps"></a>Další kroky
 

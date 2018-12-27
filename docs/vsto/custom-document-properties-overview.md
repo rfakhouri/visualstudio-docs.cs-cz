@@ -15,21 +15,21 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671518"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441441"
 ---
 # <a name="custom-document-properties-overview"></a>Přehled přizpůsobených vlastností dokumentu
 
-Při vytváření projektu úrovni dokumentu aplikace Visual Studio přidá dvě vlastní vlastnosti dokumentu v projektu: \_AssemblyLocation a \_AssemblyName. Když uživatel otevře dokument, zkontroluje tyto přizpůsobených vlastností dokumentu aplikace Microsoft Office. Pokud existují v dokumentu, načtení aplikace [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], které spustí vlastní nastavení. Další informace najdete v tématu [řešení architektury systému Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Při vytváření projektu úrovni dokumentu, Visual Studio přidá do dokumentu v projektu dvě vlastní vlastnosti: \_AssemblyLocation a \_AssemblyName. Když uživatel otevře dokument, zkontroluje tyto přizpůsobených vlastností dokumentu aplikace Microsoft Office. Pokud existují v dokumentu, načtení aplikace [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], které spustí vlastní nastavení. Další informace najdete v tématu [řešení architektury systému Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -58,5 +58,5 @@ Tato vlastnost obsahuje řetězec, který obsahuje podrobné informace o manifes
 - [Architektura řešení pro Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)
 - [Manifesty aplikace a nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Postupy: publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Postupy: vytvoření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Postupy: Publikování řešení Office s použitím technologie ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Postupy: Vytvoření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592934"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro výkon v aplikacích pro Windows 8 a Windows Server 2012
 
@@ -76,7 +76,7 @@ Do profilu aplikace na zařízeních, které nemají nainstalované, Visual Stud
 
 - Stáhněte si nástroje jako součást nástrojů Remote Tools for Visual Studio z [webu MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
 
-- Kopírování a spusťte instalační program nástroje samostatného profileru z počítače Visual Studio. Instalační programy jsou v *%VSInstallDir%\Team nástroje Tools\Setups* složky. Zvolte instalační program pro operační systém (x86/x64) vzdáleného počítače.
+- Kopírování a spusťte instalační program nástroje samostatného profileru z počítače Visual Studio. Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Zvolte instalační program pro operační systém (x86/x64) vzdáleného počítače.
 
 > [!NOTE]
 > Chcete-li shromažďovat data profilování TIP, musí instalace samostatného profileru z vašeho počítače Visual Studio na vzdáleném počítači.

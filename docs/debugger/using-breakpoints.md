@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068445"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425848"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.
@@ -61,7 +60,7 @@ V C# automaticky zvýrazněný kód, zarážky a aktuální provádění řádky
   
  ![Zastavit provádění zarážku](../debugger/media/breakpointexecution.png "provádění zarážku")  
   
- Pokud ladicí program se zastaví na zarážce, můžete si prohlédnout aktuální stav aplikace, včetně hodnot proměnných a zásobníku volání. Další informace o zásobníku volání, naleznete v tématu [postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md).  
+ Pokud ladicí program se zastaví na zarážce, můžete si prohlédnout aktuální stav aplikace, včetně hodnot proměnných a zásobníku volání. Další informace o zásobníku volání, naleznete v tématu [jak: Použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md).  
 
 - Zarážka je přepínací tlačítko. Můžete na ni klikněte, stiskněte klávesu **F9**, nebo použijte **ladění** > **Přepnout zarážku** odstranění nebo vložením.
   
@@ -89,7 +88,7 @@ Zarážky zásobníku volání se zobrazí v **zarážky** okno jako adresy s ob
 
 Ladicí program přeruší podle instrukce.  
 
-Další informace o zásobníku volání, naleznete v tématu [postupy: použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md). 
+Další informace o zásobníku volání, naleznete v tématu [jak: Použití okna zásobník volání](../debugger/how-to-use-the-call-stack-window.md). 
 
 Vizuálně sledovat zarážky během provádění kódu, naleznete v tématu [mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md). 
   
@@ -220,7 +219,7 @@ Zarážek s stanovené podmínky, zobrazí se **+** symbol ve zdrojovém kódu a
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>Podmíněný výraz
 
-Když vyberete **podmíněný výraz**, můžete si vybrat mezi dvě podmínky: **platí** nebo **při změně**. Zvolte **platí** přerušit, když je splněna výrazu, nebo **při změně** k rozdělení se při změně hodnoty výrazu.  
+Když vyberete **podmíněný výraz**, můžete si vybrat mezi dvě podmínky: **Má hodnotu true** nebo **při změně**. Zvolte **platí** přerušit, když je splněna výrazu, nebo **při změně** k rozdělení se při změně hodnoty výrazu.  
   
  V následujícím příkladu, zarážka se projeví pouze tehdy, když hodnota `testInt` je **4**:  
   
@@ -306,8 +305,9 @@ V části **podmínky** v **nastavení zarážek** okně **filtr**a pak zadejte 
 
 Zarážky s trasováním zobrazují jako červené kosočtverce na levém okraji zdrojového kódu a **zarážky** systému windows. 
   
-## <a name="see-also"></a>Viz také:  
- [Co je ladění?](../debugger/what-is-debugging.md)  
- [Psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md)  
- [První pohled na ladění](../debugger/debugger-feature-tour.md)  
- [Řešení potíží s body přerušení v ladicím programu sady Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>Viz také:
+
+- [Co je ladění?](../debugger/what-is-debugging.md)
+- [Psali lepší C# kódu pomocí sady Visual Studio](../debugger/write-better-code-with-visual-studio.md)
+- [První pohled na ladění](../debugger/debugger-feature-tour.md)
+- [Řešení potíží s body přerušení v ladicím programu sady Visual Studio](../debugger/troubleshooting-breakpoints.md)

@@ -1,6 +1,7 @@
 ---
 title: Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670869"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441493"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
   Nástroje Microsoft Office developer tools v sadě Visual Studio můžete použít k vytvoření aplikací rozhraní .NET Framework, které rozšiřují Office. Tyto aplikace se také nazývají *řešení pro systém Office*.  
@@ -90,7 +91,7 @@ ms.locfileid: "50670869"
  Obsahuje odkazy na podrobné informace o primárních sestavení vzájemné spolupráce Office, manifesty, prvky uživatelského rozhraní a chybové zprávy.  
   
  [Spravované referenční materiály služby &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Poskytuje odkazy na informace o oborech názvů rozhraní API a typy, které se používají v sadě Office projektů, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Referenční dokumentace rozhraní API o obory názvů a typy, které se používají v projektech Office cílených rozhraní .NET Framework 3.5, najdete v následující informační části dokumentace k Visual Studiu 2008: [2007 – systém pro spravované referenční materiály](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Poskytuje odkazy na informace o oborech názvů rozhraní API a typy, které se používají v sadě Office projektů, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Referenční dokumentace rozhraní API o obory názvů a typy, které se používají v projektech Office cílených rozhraní .NET Framework 3.5 najdete v následující informační části dokumentace k Visual Studiu 2008: [spravované referenční materiály služby systém 2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Nespravovaná referenční dokumentace rozhraní API &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o rozhraní modelu COM, které můžete použít k provedení akce, jako je zatížení a uvolnit spravované doplňků VSTO v aplikacích Office.  

@@ -1,25 +1,24 @@
 ---
-title: Targetplatformname – Element (šablony sady Visual Studio) | Microsoft Docs
+title: Targetplatformname – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 738021c693bf0ea82319c411e3b5832306f05503
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f43ce574a1fd528ced40c186b3d58dc5b28ea416
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144015"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561561"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName – element (šablony sady Visual Studio)
-Určuje platformu, která šablona cíle projektu. Tento element se používá k určení, že šablona projektu se používá k vytvoření [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace.  
+Určuje platformu, která šablona cíle projektu. Tento element slouží k určení, že šablona projektu slouží k vytvoření [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,22 +38,22 @@ Určuje platformu, která šablona cíle projektu. Tento element se používá k
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Requiredplatformversion –](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Určuje verzi operační systém, šablony cíle projektu.|  
+|[Requiredplatformversion –](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Určuje verzi modulu operační systém, který šablona cíle projektu.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje v buď **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  
   
 ## <a name="remarks"></a>Poznámky  
- Text musí být **Windows**.  
+ Text, který musí být **Windows**.  
   
 ## <a name="example"></a>Příklad  
- Tento příklad určuje, že šablona cíle projektu [!INCLUDE[win8](../debugger/includes/win8_md.md)] nebo novější.  
+ Tento příklad určuje, že projekt cílí šablony [!INCLUDE[win8](../debugger/includes/win8_md.md)] nebo novější.  
   
 ```xml  
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">   

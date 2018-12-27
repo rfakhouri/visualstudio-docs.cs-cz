@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e01b13fb1bec83cc7254133c99c16a98220e22
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949289"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648829"
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +81,9 @@ Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabul
   
 - Každý řádek dat obsahuje informace související s jejími <xref:System.Data.DataRow.RowState%2A> (například <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, nebo <xref:System.Data.DataRowState>).  
   
-- Každý řádek změněných dat obsahuje více verzí tohoto řádku (<xref:System.Data.DataRowVersion>), původní verze (před změnami) a aktuální verze (po změnách). Během doby, kdy změna čeká (čas, kdy můžete reagovat na <xref:System.Data.DataTable.RowChanging> událostí), třetí verze – navrhovaná verze – je k dispozici také. Další informace najdete v tématu [postupy: získání konkrétních verzí DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Každý řádek změněných dat obsahuje více verzí tohoto řádku (<xref:System.Data.DataRowVersion>), původní verze (před změnami) a aktuální verze (po změnách). Během doby, kdy změna čeká (čas, kdy můžete reagovat na <xref:System.Data.DataTable.RowChanging> událostí), třetí verze – navrhovaná verze – je k dispozici také.
   
-  <xref:System.Data.DataSet.HasChanges%2A> Vrátí metoda objekt dataset `true` Pokud byly provedeny změny v datové sadě. Jakmile určíte, že existují změněné řádky, můžete volat `GetChanges` metodu <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable> vrátit sadu změněných řádků. Další informace najdete v tématu [postupy: načtení změnil řádků](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  <xref:System.Data.DataSet.HasChanges%2A> Vrátí metoda objekt dataset `true` Pokud byly provedeny změny v datové sadě. Jakmile určíte, že existují změněné řádky, můžete volat `GetChanges` metodu <xref:System.Data.DataSet> nebo <xref:System.Data.DataTable> vrátit sadu změněných řádků. Další informace najdete v tématu [jak: Načítání změněných řádků](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Chcete-li zjistit, jestli byly provedené změny nějakých řádků  
   
@@ -115,4 +115,3 @@ Můžete upravovat data v datových tabulkách stejně, jako úprava dat v tabul
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

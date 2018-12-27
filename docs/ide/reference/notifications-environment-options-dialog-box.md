@@ -12,16 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1fc3b6cb38c6d5badff99b83e78605ba5cc31e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21dfbd69cc3c222ab3a9862578bdbe61e9bcfca6
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945126"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684495"
 ---
-# <a name="notifications-environment-options-dialog-box"></a>Dialogové okno Oznámení, Prostředí, Možnosti
-Tuto možnost použijte k zastavení žádné oznámení, které jste dříve zvolili Ignorovat pomocí dialogu oznámení je ignorována. Další informace najdete v tématu [oznámení](../../ide/visual-studio-notifications.md).
+# <a name="notifications-environment-options-dialog-box"></a>Oznámení, prostředí, dialogové okno Možnosti
 
-### <a name="see-also"></a>Viz také
+Tato možnost slouží k zastavení ignoruje všechna naše oznámení, které jste už dřív rozhodli ignorovat až **oznámení** dialogového okna. Další informace najdete v tématu [aktualizace sady Visual Studio](../../install/update-visual-studio.md).
+
+### <a name="see-also"></a>Viz také:
 
 - [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

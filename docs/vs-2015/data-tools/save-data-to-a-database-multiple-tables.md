@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 116dfd687fbf80488073276a37d706486bd299e0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218400"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647488"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat:  
   
--   Přístup k ukázkové databázi Northwind.  Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k ukázkové databázi Northwind.
   
 ## <a name="create-the-windows-application"></a>Vytvoření aplikace Windows  
  Prvním krokem je vytvoření **aplikace Windows**. Přiřazení názvu projektu během tohoto kroku je volitelné, ale. poskytneme mu název protože plánujeme při uložení později.  
@@ -73,7 +73,7 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
      **UpdateMultipleTablesWalkthrough** projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat  
- Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+ Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení.
   
 #### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat  
   
@@ -117,14 +117,14 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
   
 1.  Přetáhněte hlavní **zákazníkům** uzlu z **zdroje dat** okna do **Form1**.  
   
-     Ovládací prvky vázaných dat pomocí popisků se zobrazí ve formuláři, spolu s pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
+     Ovládací prvky vázaných dat pomocí popisků se zobrazí ve formuláři, spolu s pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent.  
   
 2.  Přetáhněte související **objednávky** uzlu z **zdroje dat** okna do **Form1**.  
   
     > [!NOTE]
     >  Související **objednávky** uzel se nachází pod **Fax** sloupce a je podřízený uzel **zákazníkům** uzlu.  
   
-     A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
+     A <xref:System.Windows.Forms.DataGridView> ovládacího prvku a pruh nástrojů (<xref:System.Windows.Forms.BindingNavigator>) pro procházení záznamů se zobrazí ve formuláři. OrdersTableAdapter a <xref:System.Windows.Forms.BindingSource> zobrazují v panelu komponent.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode aktualizovat databázi  
  Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům** a **objednávky** objekty TableAdapter. Ve výchozím nastavení, obslužná rutina události **Uložit** tlačítko<xref:System.Windows.Forms.BindingNavigator> je přidán do formuláře kód k odeslání aktualizací do databáze. Tento postup upravuje kód k odesílání aktualizací ve správném pořadí. Tím se eliminuje možnost vyvolání chyby referenční integrity. Kód také implementuje obalením volání update v bloku try-catch – zpracování chyb. Můžete upravit kód tak, aby odpovídaly potřebám vaší aplikace.  
@@ -149,17 +149,16 @@ Jedním z nejběžnějších scénářů při vývoji aplikace je zobrazení dat
   
 2.  Některé změny dat z jednoho nebo více záznamů v každé tabulce.  
   
-3.  Vyberte **Uložit** tlačítko.  
+3.  Vyberte tlačítko **Uložit**.  
   
 4.  Zkontrolujte hodnoty v databázi a ověřte, že se změny uložily.  
   
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po vytvoření formuláře vázané na data v aplikaci Windows. Mezi vylepšení, která je možné pro tento návod provést, patří:  
   
--   Přidání vyhledávací funkce do formuláře. Další informace najdete v tématu [postupy: Přidání aplikace modelu Windows Forms s parametry dotazu](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+-   Přidání vyhledávací funkce do formuláře. Další informace najdete v tématu [jak: Přidání parametrického dotazu pro Windows Forms aplikace](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Úprava zdroje dat s přidáváním a odebíráním databázové objekty. Další informace najdete v tématu [postupy: upravování datové sady](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+-   Úprava zdroje dat s přidáváním a odebíráním databázové objekty. Další informace najdete v tématu [jak: Upravit datovou sadu](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
-

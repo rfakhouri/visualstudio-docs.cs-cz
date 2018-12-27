@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066779"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443922"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>V okně moduly zobrazení knihovny DLL a spustitelné soubory (C#, C++, Visual Basic, F#)
  
@@ -42,7 +42,7 @@ Během ladění sady Visual Studio **moduly** okno obsahuje seznam a zobrazuje i
   
 ## <a name="use-the-modules-window"></a>Použití okna moduly
 
-Chcete-li otevřít okno moduly během ladění, vyberte **ladění** > **Windows** > **moduly**. 
+Chcete-li otevřít okno moduly během ladění, vyberte **ladění** > **Windows** > **moduly** (nebo stiskněte klávesu **Ctrl + Alt + U** ). 
   
 Ve výchozím nastavení **moduly** okno seřadí podle pořadí načítání modulů. Seřadit podle kteréhokoli sloupce okno, vyberte záhlaví v horní části sloupce.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: obnovení skrytých příkazů ladicího programu | Dokumentace Microsoftu'
+title: 'Postupy: Obnovení skrytých příkazů ladicího programu | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ee37e72a52f866f5b67afaeacfd248628a3484
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7686ccd303bf47d9c3ef2ba570f2f483a4145d61
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176840"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561327"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Postupy: Obnovení skrytých příkazů ladicího programu
 Při nastavování aplikace Visual Studio, zobrazí se výzva k výběru sada výchozích nastavení IDE pro primární programovací jazyk. Výchozí nastavení rozhraní IDE pro některé jazyky mohou skrývat určité příkazy ladicího programu.  
@@ -64,7 +64,7 @@ Při nastavování aplikace Visual Studio, zobrazí se výzva k výběru sada v�
   
 4.  Na **zvolte kolekce nastavení chcete importovat** stránce v části **výchozí nastavení** složky, zvolte kolekci nastavení pro vývoj, který obsahuje příkazy, které chcete použít. Pokud si nejste jisti kterou kolekci zvolte, zkuste **obecným vývojovým nastavením** nebo **Visual C++ – vývojové nastavení**, které poskytují největší příkazy ladicího programu.  
   
-5.  Klikněte na tlačítko **Další**.  
+5.  Klikněte na **Další**.  
   
 6.  Na **zvolte nastavení pro import** stránce v části **možnosti**, ujistěte se, že **ladění** zaškrtnuto. Zrušte zaškrtnutí ostatních políček, pokud chcete importovat tato nastavení také.  
   
@@ -72,8 +72,8 @@ Při nastavování aplikace Visual Studio, zobrazí se výzva k výběru sada v�
   
 8.  Na **úplný Import** stránky, zkontrolujte všechny chyby spojené s obnovením vašeho nastavení v části **podrobnosti**.  
   
-9. Klikněte na tlačítko **Zavřít**.  
+9. Klikněte na **Zavřít**.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

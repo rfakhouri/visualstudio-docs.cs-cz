@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: spuštění ladění XSLT'
+title: 'Postupy: Spuštění ladění XSLT'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561863"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Postupy: spuštění ladění XSLT
+# <a name="how-to-start-debugging-xslt"></a>Postupy: Spuštění ladění XSLT
 
 Ladicí program XSLT slouží k ladění šablony stylů XSLT nebo z některé aplikace XSLT. Při ladění, můžete spustit jeden řádek kódu v čase krokování s vnořením do krokování přes nebo Krokování ven z kódu. Příkazy pro funkci krokování kódu jsou že stejné pro ladicí program XSLT jako u sady Visual Studio ladicí programy. Po spuštění ladění otevře ladicí program XSLT windows lze zobrazit, že vstupní dokument a XSLT výstupu.
 
@@ -93,5 +93,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>Viz také:
 
-- [Návod: Ladění šablony stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+- [Návod: Ladění stylů XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)   

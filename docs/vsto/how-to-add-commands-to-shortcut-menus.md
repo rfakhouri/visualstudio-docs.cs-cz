@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: přidávání příkazů do místních nabídek'
+title: 'Postupy: Přidání příkazů do místních nabídek'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676004"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648426"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Postupy: přidávání příkazů do místních nabídek
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Postupy: Přidání příkazů do místních nabídek
   Toto téma ukazuje, jak přidat příkazy místní nabídky v aplikaci Office pomocí doplňku VSTO.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Přidání příkazů do místních nabídek v aplikaci Office  
   
-1.  Přidat **kódu XML pásu karet** položky na úrovni dokumentu nebo projektu doplňku VSTO. Další informace najdete v tématu [postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md). V  
+1.  Přidat **kódu XML pásu karet** položky na úrovni dokumentu nebo projektu doplňku VSTO. Další informace najdete v tématu [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md). V  
   
 2.  **Průzkumník řešení**vyberte **ThisAddin.cs** nebo **ThisAddin.vb**.  
   

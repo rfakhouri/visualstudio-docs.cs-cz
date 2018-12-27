@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1032e3db1513f628e540643acf7b1d98f89b5bff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de928086a2f8cb15d7d904359b573a1f9c4535b2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562318"
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by jinak máte, zejména v případě vzdáleného ladění. Škodlivý ladicí program může způsobit poškození rozšířených na počítači, který se právě ladí.  
@@ -39,7 +39,7 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
 ### <a name="managed-debugging-security"></a>Spravované ladění zabezpečení  
  Tady jsou některé obecná doporučení, které se vztahují na všechny spravované ladění.  
   
-- Buďte opatrní při připojování k procesu je nedůvěryhodný uživatel: Pokud tak učiníte, můžete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu je nedůvěryhodný uživatel, se zobrazí potvrzovací dialogové okno s upozorněním zabezpečení s dotazem, jestli se má připojit k procesu. "Důvěryhodných uživatelů" zahrnout, a sadu standardních uživatelů obvykle definovány na počítače, které mají nainstalováno, například rozhraní .NET Framework **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+- Buďte opatrní při připojování k procesu je nedůvěryhodný uživatel: Pokud tak učiníte, můžete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu je nedůvěryhodný uživatel, se zobrazí potvrzovací dialogové okno s upozorněním zabezpečení s dotazem, jestli se má připojit k procesu. "Důvěryhodných uživatelů" zahrnout, a sadu standardních uživatelů obvykle definovány na počítače, které mají nainstalováno, například rozhraní .NET Framework **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
 - Buďte opatrní při stahování projekt Internetu a načítají do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. To je velmi riskantní provést i bez ladění. Když toto provedete, jsou za předpokladu, že projekt a kód, který obsahuje jsou důvěryhodné.  
   
@@ -81,6 +81,5 @@ Možnost ladit jiným procesem poskytuje velmi široký mocniny, ke kterým by j
   
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)   
- [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md) [upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující informace vypadají podezřele nebo si nejste jisti, nepřipojujte k tomuto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
  [Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz.](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913212"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684428"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Postupy: přizpůsobení diagramů tříd
+# <a name="how-to-customize-class-diagrams"></a>Postupy: Přizpůsobení diagramů tříd
 
 Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete přizpůsobit celý diagram nebo jednotlivé typy na ploše návrhu.
 
@@ -129,7 +129,6 @@ Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu 
 
 ## <a name="see-also"></a>Viz také:
 
-- [Práce s diagramy tříd](working-with-class-diagrams.md)
-- [Postupy: změna mezi zápisem člena a zápisem asociace](how-to-change-between-member-notation-and-association-notation.md)
-- [Postupy: zobrazení existujících typů](how-to-view-existing-types.md)
-- [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
+- [Postupy: Změna mezi zápisem člena a zápisem asociace](how-to-change-between-member-notation-and-association-notation.md)
+- [Postupy: Zobrazení existujících typů](how-to-view-existing-types.md)
+- [Zobrazování typů a vztahů](designing-and-viewing-classes-and-types.md)

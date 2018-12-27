@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562097"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Návod: Ladění paralelní aplikace v sadě Visual Studio
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Průvodce: Ladění paralelní aplikace v sadě Visual Studio
 Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásobníky** ladění paralelní aplikace systému windows. Tato okna vám pomůžou pochopit a chování za běhu kódu, který se používá ověření [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Poté, co kód přestane fungovat, návodu ukazuje způsob použití **paralelní úlohy** a **paralelní zásobníky** windows jej prozkoumat.  
   
  Tento návod vás naučí tyto úlohy:  
@@ -83,7 +83,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
     Všimněte si, že existují čtyři volání `Debugger.Break` (`DebugBreak` v C++ ukázce) proto není potřeba vložit zarážky; jednoduše spuštěním aplikace způsobí jeho přerušení v ladicím programu až čtyřikrát.  
   
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Použití paralelních zásobníků okna: zobrazení vlákna  
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Použití okna paralelní zásobníky: Zobrazení vláken  
  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**. Počkejte první zarážce.  
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Chcete-li zobrazit zásobník volání z jednoho vlákna  
@@ -298,7 +298,7 @@ Tento návod ukazuje, jak používat **paralelní úlohy** a **paralelní zásob
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)   
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
  [Paralelní programování](/dotnet/standard/parallel-programming/index)   
  [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)   

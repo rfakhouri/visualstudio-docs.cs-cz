@@ -22,19 +22,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e212602b317127cfd14adcd246a23cdd92ed86
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3a2f7f1817b562b555a8ac026e165712bb81f912
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281790"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684727"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Dialogové okno Upozornění na starý kód
-Toto dialogové okno se zobrazí, když jste provedli změny v nativním kódu, který **upravit a pokračovat** nelze ihned. Výsledek, některé nativního kódu v aktuální rámec zásobníku je nyní zastaralá, to znamená, zastaralá. Další informace najdete v tématu [postupy: práce se starým kódem](/visualstudio/debugger/edit-and-continue-visual-cpp#bkmk_how_to_work_with_stale_code).  
-  
- **Tento dialog již příště nezobrazovat**  
- Pokud toto políčko zaškrtnete, upravit a pokračovat se použití změn kódu bez předchozího souhlasu v budoucnu. Můžete zapnout toto upozornění znovu tak, že přejdete **možnosti** dialogovém okně Otevřít **ladění** složky, kliknutím **upravit a pokračovat** stránku a výběr **Upozornit na starý kód**.  
-  
-## <a name="see-also"></a>Viz také  
- [Podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md)   
- [Upravit a pokračovat, ladění, dialogové okno Možnosti](/visualstudio/debugger/edit-and-continue)
+
+Toto dialogové okno se zobrazí, když jste provedli změny v nativním kódu, který **upravit a pokračovat** nelze ihned. Výsledek, některé nativního kódu v aktuální rámec zásobníku je nyní zastaralá, to znamená, zastaralá. Další informace najdete v tématu [upravit a pokračovat (C++)](edit-and-continue-visual-cpp.md).
+
+**Tento dialog již příště nezobrazovat**
+
+Pokud toto políčko zaškrtnete, upravit a pokračovat se použití změn kódu bez předchozího souhlasu v budoucnu. Můžete zapnout toto upozornění znovu tak, že přejdete **možnosti** dialogovém okně Otevřít **ladění** složky, kliknutím **upravit a pokračovat** stránku a výběr **Upozornit na starý kód**.
+
+## <a name="see-also"></a>Viz také
+
+- [Podporované změny kódu (C++)](supported-code-changes-cpp.md)
+- [Upravit a pokračovat, ladění, dialogové okno Možnosti](edit-and-continue.md)

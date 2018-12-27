@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4b0996faf26279ff8018e0e072fd25a33d783
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561720"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Ladění v době návrhu v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -106,5 +106,4 @@ V některých scénářích vazby deklarativní data může pomoct k ladění k�
    Když se stránka načte, zarážka se projeví.
   
 ## <a name="see-also"></a>Viz také:  
- [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+ [Nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md) [zabezpečení ladicího programu](../debugger/debugger-security.md)   

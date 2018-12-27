@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561746"
 ---
 # <a name="debug-your-python-code"></a>Ladění kódu Pythonu
 
@@ -84,7 +84,7 @@ Po zastavení na zarážce, budete mít různé způsoby, jak procházet kód ne
 
 ### <a name="inspect-and-modify-values"></a>Kontrola a změny hodnot
 
-Při zastavení v ladicím programu, můžete zkontrolovat a změnit hodnoty proměnných. Můžete také použít **Watch** okno monitorovat jednotlivé proměnné, stejně jako vlastní výrazy. (Viz [kontrolovat proměnné](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows) obecné podrobnosti.)
+Při zastavení v ladicím programu, můžete zkontrolovat a změnit hodnoty proměnných. Můžete také použít **Watch** okno monitorovat jednotlivé proměnné, stejně jako vlastní výrazy. (Viz [kontrolovat proměnné](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows) obecné podrobnosti.)
 
 Chcete-li zobrazit hodnotu pomocí **DataTips**, stačí najet myší přes všechny proměnné v editoru. Můžete kliknout na hodnotu a změňte ji:
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382741"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562058"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu za běhu v sadě Visual Studio
 
@@ -42,7 +42,7 @@ Můžete nakonfigurovat Just-In-Time ladění ze sady Visual Studio **nástroje*
 
    ![Povolení nebo zakázání ladění JIT](../debugger/media/dbg-jit-enable-or-disable.png "povolení nebo zakázání ladění za běhu")
 
-1. V **povolit ladění za běhu pro tyto typy kódu** vyberte typy kódu, které chcete, aby Just-In-Time ladění pro ladění: **spravované**, **nativní**, a/nebo  **Skript**.
+1. V **povolit ladění za běhu pro tyto typy kódu** vyberte typy kódu, které chcete, aby Just-In-Time ladění pro ladění: **Spravované**, **nativní**, a/nebo **skript**.
    
 1. Vyberte **OK**.
 
@@ -107,7 +107,7 @@ Pokud chcete povolit Just-In-Time ladění místo standard pro zpracování chyb
 
 V tomto příkladu provede konzolovou aplikaci C# v sadě Visual Studio, který vyvolá [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**souboru** > **nový** > **projektu** > **Visual C#**  >  **Konzolovou aplikaci**) s názvem *ThrowsNullException*. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [návod: vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**souboru** > **nový** > **projektu** > **Visual C#**  >  **Konzolovou aplikaci**) s názvem *ThrowsNullException*. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [názorný postup: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
    
 1. Po otevření projektu v sadě Visual Studio, otevřete *Program.cs* souboru. Nahraďte následující kód, který vytiskne řádek ke konzole a potom vyvolá NullReferenceException metodu Main():
    
@@ -196,6 +196,6 @@ Může se zobrazit následující chybové zprávy během Just-In-Time ladění:
 
 ## <a name="see-also"></a>Viz také:
 - [Zabezpečení ladicího programu](../debugger/debugger-security.md)
-- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Možnosti, ladění Just-In-Time dialogové okno](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

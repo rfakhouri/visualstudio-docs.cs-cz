@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906023"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739157"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo systém integrovat nové funkce do sady Visual Studio. Můžete distribuovat rozšíření ostatním uživatelům, tak na Visual Studio Marketplace. Tady jsou některé způsoby, ve kterém můžete rozšíření sady Visual Studio:  
@@ -78,8 +78,8 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
   
 ## <a name="see-also"></a>Viz také:  
  [Vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [Postupy: migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Postupy: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [NEJČASTĚJŠÍ DOTAZY: Převádění doplňků na rozšíření VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Správa více vláken ve spravovaném kódu](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Rozšíření nabídek a příkazů](../extensibility/extending-menus-and-commands.md)   
  [Přidání příkazů na panely nástrojů](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo syst
  [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Používání a poskytování služeb](../extensibility/using-and-providing-services.md)   
  [Správa rozšíření VSPackages](../extensibility/managing-vspackages.md)   
- [Prostředí sady Visual Studio izolovaný režim](../extensibility/visual-studio-isolated-shell.md)   
+ [Prostředí sady Visual Studio izolovaný režim](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [Dodávejte rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [V sadě Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Podpora pro sadu Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672961"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425861"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Přidat příponu protokol jazyka serveru
 
@@ -48,46 +48,46 @@ Následující funkce LSP jsou podporovány v sadě Visual Studio, pokud:
 
 Zpráva | Má podporu v sadě Visual Studio
 --- | ---
-Inicializace | Ano
-inicializován | Ano
-vypnutí | Ano
-ukončení | Ano
-$/ cancelRequest | Ano
-okno/Zobrazitzpravu | Ano
-okno/showMessageRequest | Ano
-okno/logMessage | Ano
+Inicializace | ano
+inicializován | ano
+vypnutí | ano
+ukončení | ano
+$/ cancelRequest | ano
+okno/Zobrazitzpravu | ano
+okno/showMessageRequest | ano
+okno/logMessage | ano
 telemetrie a událostí |
 Klient/registerCapability |
 Klient/unregisterCapability |
-pracovní prostor/didChangeConfiguration | Ano
-pracovní prostor/didChangeWatchedFiles | Ano
-pracovní prostor/symbol | Ano
-pracovní prostor/executeCommand | Ano
-pracovní prostor/applyEdit | Ano
-textDocument/publishDiagnostics | Ano
-textDocument/didOpen | Ano
-textDocument/didChange | Ano
+pracovní prostor/didChangeConfiguration | ano
+pracovní prostor/didChangeWatchedFiles | ano
+pracovní prostor/symbol | ano
+pracovní prostor/executeCommand | ano
+pracovní prostor/applyEdit | ano
+textDocument/publishDiagnostics | ano
+textDocument/didOpen | ano
+textDocument/didChange | ano
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave | Ano
-textDocument/didClose | Ano
-textDocument/dokončení | Ano
-dokončení nebo řešení | Ano
-textDocument/při najetí myší | Ano
-textDocument/signatureHelp | Ano
-textDocument/odkazy | Ano
-textDocument/documentHighlight | Ano
-textDocument/documentSymbol | Ano
-textDocument/formátování | Ano
-textDocument/rangeFormatting | Ano
+textDocument/didSave | ano
+textDocument/didClose | ano
+textDocument/dokončení | ano
+dokončení nebo řešení | ano
+textDocument/při najetí myší | ano
+textDocument/signatureHelp | ano
+textDocument/odkazy | ano
+textDocument/documentHighlight | ano
+textDocument/documentSymbol | ano
+textDocument/formátování | ano
+textDocument/rangeFormatting | ano
 textDocument/onTypeFormatting |
-textDocument/definici | Ano
-textDocument/codeAction | Ano
+textDocument/definici | ano
+textDocument/codeAction | ano
 textDocument/codeLens |
 codeLens nebo řešení |
 textDocument/documentLink |
 documentLink nebo řešení |
-textDocument/přejmenování | Ano
+textDocument/přejmenování | ano
 
 ## <a name="getting-started"></a>Začínáme
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -243,7 +243,7 @@ Klikněte na nový a vytvoření nového prostředku:
 ![definování MEF asset](media/lsp-define-asset.png)
 
 * **Typ**: Microsoft.VisualStudio.MefComponent
-* **Zdroj**: projekt v aktuálním řešení
+* **Zdroj**: Projekt v aktuálním řešení
 * **Projekt**: [projekt]
 
 ### <a name="content-type-definition"></a>Definice typu obsahu
@@ -327,7 +327,7 @@ Postupujte podle následujících kroků pro přidání podpory pro nastavení r
    ![Upravit prostředek balíčku vspackage](media/lsp-add-vspackage-asset.png)
 
    * **Typ**: Microsoft.VisualStudio.VsPackage
-   * **Zdroj**: soubor v systému souborů
+   * **Zdroj**: Soubor v systému souborů
    * **Cesta**: [cesta k vaší *.pkgdef* souborů]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Uživatel upravuje nastavení pro pracovní prostor

@@ -1,6 +1,7 @@
 ---
-title: '&lt;entryPoint&gt; – element (vývoj pro Office v sadě Visual Studio)'
-ms.custom: ''
+title: '&lt;vstupní bod&gt; – element (vývoj pro Office v sadě Visual Studio)'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoint> element
 - <entryPoint> element
 - entryPoint element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f28da1a564196833adff530c3c7d31eb9ea9bb4e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447086"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648649"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint&gt; – element (vývoj pro Office v sadě Visual Studio)
-  Každý `entryPoint` element `vstav3` obor názvů identifikuje přizpůsobení sestavení, které by měl být spuštěn při to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] je aplikace nainstalována.  
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;vstupní bod&gt; – element (vývoj pro Office v sadě Visual Studio)
+  Každý `entryPoint` elementu `vstav3` obor názvů identifikuje vlastního nastavení sestavení, které by měla být spuštěna, když to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] je aplikace nainstalovaná.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,27 +37,27 @@ ms.locfileid: "34447086"
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementy a atributy  
- `entryPoint` Element je povinná a je v `vstav3` oboru názvů.  
+ `entryPoint` Element je povinný a je v `vstav3` oboru názvů.  
   
- Každý `entryPoint` element může obsahovat jenom jeden přizpůsobení sestavení. Může být více `entryPoint` elementy, které jsou definované v manifestu aplikace.  
+ Každý `entryPoint` element může obsahovat jenom jeden vlastní nastavení sestavení. Může existovat více `entryPoint` prvky definované v manifestu aplikace.  
   
  `entryPoint` Element má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`class`|Požadováno. Identifikuje sestavení přizpůsobení spouštění. Syntaxe pro tento atribut je *NamespaceName.ClassName*.|  
+|`class`|Povinný parametr. Určuje vlastní nastavení sestavení má být proveden. Syntaxe pro tento atribut je *NamespaceName.ClassName*.|  
   
  `entryPoint` má následující element.  
   
-### <a name="assemblyidentity"></a>assemblyIdentity –  
- Požadováno. `assemblyIdentity` Element v `vstav3` obor názvů odkazuje na stávající `assemblyIdentity` element v [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest aplikace.  
+### <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
+ Povinný parametr. `assemblyIdentity` Element v `vstav3` obor názvů odkazuje na existující `assemblyIdentity` prvek [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifest aplikace.  
   
- Role `assemblyIdentity` a jeho atributy je definována v [ &#60;assemblyIdentity&#62; element &#40;aplikaci ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
+ Role `assemblyIdentity` a jeho atributy jsou definovány v [ &#60;assemblyIdentity&#62; element &#40;aplikace ClickOnce&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application).  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `entryPoint` prvky v aplikaci manifest pro řešení Office úrovni dokumentu nasadit pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `entryPoint` prvky v aplikaci manifestu pro řešení Office úrovni dokumentu nasazeným v rámci [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -98,7 +99,7 @@ ms.locfileid: "34447086"
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `entryPoint` element v manifestu aplikace pro řešení Office úrovni aplikace nasazené pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje `entryPoint` elementu v manifestu aplikace pro řešení Office úrovni aplikace nasazené pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -113,9 +114,9 @@ ms.locfileid: "34447086"
 </vstav3:entryPoint>  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

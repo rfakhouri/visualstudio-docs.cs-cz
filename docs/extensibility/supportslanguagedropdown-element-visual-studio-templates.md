@@ -1,10 +1,9 @@
 ---
-title: Supportslanguagedropdown – Element (šablony sady Visual Studio) | Microsoft Docs
+title: Supportslanguagedropdown – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
@@ -16,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02dcf9b54cfec3dcccca62f9529291e01a912f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92043550d9318fc5de70d14bed12b110d3ef2e26
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138825"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562123"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown – element (šablony sady Visual Studio)
-Určuje, zda Web šablony položek se shoduje více jazyků a zda **jazyk** je zapnuta možnost **přidat novou položku** dialogové okno.  
+Určuje, jestli je stejný jako pro řadu jazyků webové šablony položky a zda **jazyk** je zapnutá možnost **přidat novou položku** dialogové okno.  
   
- \<VSTemplate >  
+ \<Vstemplate – >  
  \<TemplateData >  
  \<Supportslanguagedropdown – >  
   
@@ -49,22 +48,22 @@ Určuje, zda Web šablony položek se shoduje více jazyků a zda **jazyk** je z
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje v buď **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  
   
- Text musí být buď `true` nebo `false`, která udává, jestli **jazyk** možnost je dostupná z **přidat novou položku** dialogové okno.  
+ Text musí být buď `true` nebo `false`, která udává, zda je či není **jazyk** možnost je k dispozici **přidat novou položku** dialogové okno.  
   
 ## <a name="remarks"></a>Poznámky  
- `SupportsLanguageDropDown` je volitelný element. Výchozí hodnota je `false`.  
+ `SupportsLanguageDropDown` je volitelný prvek. Výchozí hodnota je `false`.  
   
  `SupportsLanguageDropDown` Element je dostupná jenom pro webové šablony položek.  
   
- Je nastavena na hodnotu pro tento element `true`, pak šablony položky je stejný pro všechny programovací jazyky a **jazyk** v povolena možnost **přidat novou položku** dialogové okno. Tato možnost umožňuje vybrat programovací jazyk nové položky, kterou chcete vytvořit ze šablony.  
+ Je nastavena na hodnotu pro tento element `true`, šablona položky je shodné pro všechny programovací jazyky a **jazyk** možnost je povolena **přidat novou položku** dialogové okno. Tato možnost umožní vám vybrat programovací jazyk nová položka, kterou chcete vytvořit ze šablony.  
   
 ## <a name="example"></a>Příklad  
- Následující příklad určuje zobrazíte **jazyk** rozevírací nabídky možnost.  
+ Následující příklad určuje zobrazíte **jazyk** rozevírací seznam možností.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

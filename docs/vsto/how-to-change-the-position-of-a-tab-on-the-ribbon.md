@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Změna polohy karty na pásu karet'
+title: 'Postupy: Změna umístění karty na pásu karet'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -10,59 +10,59 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 08bbdf81023be466d30e49215fc0dbe1d3812f20
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255386"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647109"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Postupy: Změna polohy karty na pásu karet
-  Můžete změnit pořadí vlastní karty na pásu karet pomocí **Karta Editor kolekce**. Vlastní karty můžete umístit před nebo po předdefinované karty na pásu karet. Předdefinované karta je karta, která je již na pásu karet z aplikace Microsoft Office. Například **Data** karta je předdefinované karty v aplikaci Excel.  
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Postupy: Změna umístění karty na pásu karet
+  Můžete změnit pořadí vlastních karet na pásu karet pomocí **kartu Editor kolekce**. Vlastní karty lze umístit před nebo za integrovanou kartu na pásu karet. Vestavěná karta je karta, který je již na pásu karet aplikace Microsoft Office. Například **Data** karta je integrovanou kartou v aplikaci Excel.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>Chcete-li změnit pořadí karet na pásu karet  
   
-1.  Vyberte soubor kódu pásu karet (*VB* nebo *.cs* souboru) v **Průzkumníku řešení**.  
+1.  Vyberte soubor kódu pásu karet (*.vb* nebo *.cs* souborů) v **Průzkumníka řešení**.  
   
-2.  Na **zobrazení** nabídky, klikněte na tlačítko **Návrhář**.  
+2.  Na **zobrazení** nabídky, klikněte na tlačítko **návrháře**.  
   
-3.  Klikněte pravým tlačítkem na Návrháře pásu karet a pak klikněte na **vlastnosti**.  
+3.  Klikněte pravým tlačítkem na Návrhář pásu karet a potom klikněte na tlačítko **vlastnosti**.  
   
-4.  V **vlastnosti** vyberte **karty** vlastnost a potom klikněte na tlačítko se třemi tečkami (![ASP.NET Mobilní návrháře elipsy](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Návrhář elipsy")).  
+4.  V **vlastnosti** okna, vyberte **karty** vlastnost a potom klikněte na tlačítko se třemi tečkami (![ASP.NET Mobilní návrháře Elipsa](../sharepoint/media/mwellipsis.gif "technologie ASP.NET Mobile Návrhář Elipsa")).  
   
-     **Karta Editor kolekce** se zobrazí.  
+     **Kartu Editor kolekce** se zobrazí.  
   
-5.  V **Karta Editor kolekce**v **členy** seznamu, vyberte kartu chcete přesunout a klikněte na tlačítko nahoru nebo dolů pořadí karet na šipku.  
+5.  V **kartu Editor kolekce**v **členy** seznamu, vyberte kartu, kterou chcete přesunout a klikněte na tlačítko nahoru nebo dolů šipkami, chcete-li změnit pořadí ovládacích prvků.  
   
-### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Na pozici na kartě před nebo po předdefinované karty na pásu karet  
+### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Chcete-li umístit před nebo za integrovanou kartu na pásu karet na kartě  
   
-1.  V Návrháři pásu karet vyberte vlastní karty.  
+1.  V Návrháři pásu karet vyberte vlastní kartu.  
   
-2.  V **vlastnosti** okno, rozbalte **ControlId** vlastnost a potom zkontrolujte, zda hodnota **ControlIdType** je nastavena na **vlastní**.  
+2.  V **vlastnosti** okna, rozbalte **ControlId** vlastnost a ujistěte se, že hodnota **ControlIdType** je nastavena na **vlastní**.  
   
-3.  V **vlastnosti** okno, rozbalte **pozice** vlastnost.  
+3.  V **vlastnosti** okna, rozbalte **pozice** vlastnost.  
   
-4.  Nastavte **PositionType** vlastnost na odpovídající hodnotu:  
+4.  Nastavte **PositionType** k odpovídající hodnotě:  
   
-    -   **BeforeOfficeId** umisťuje skupině před zadaný předdefinované karty.  
+    -   **BeforeOfficeId** umístí skupině před zadaným předdefinované karty.  
   
-    -   **AfterOfficeId** umisťuje skupině po zadaný předdefinované karty.  
+    -   **AfterOfficeId** umístí za integrovanou kartu zadané skupiny.  
   
-5.  Nastavte **OfficeId** vlastnost ID ovládacího prvku předdefinované karty.  
+5.  Nastavte **OfficeId** vlastnosti ID ovládacího prvku předdefinované karty.  
   
-     Seznam ID ovládacích prvků, naleznete v části [soubory nápovědy Office 2010: Office fluent uživatelské rozhraní ovládacího prvku identifikátory](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     Seznam ID ovládacích prvků naleznete v tématu [soubory nápovědy Office 2010: Office fluent uživatelského rozhraní ovládacího prvku identifikátory](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Návrhář pásu karet](../vsto/ribbon-designer.md)   
- [Kódu XML pásu karet](../vsto/ribbon-xml.md)   
+ [Pás karet – XML](../vsto/ribbon-xml.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   

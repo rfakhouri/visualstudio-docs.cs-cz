@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vícevrstvé datové aplikace | Dokumentace Microsoftu'
+title: 'Průvodce: Vytvoření vícevrstvé datové aplikace | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -20,14 +20,14 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 050562a8ac0549bb36712781ba80f58aaf2fc82d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890176"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648367"
 ---
-# <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
+# <a name="walkthrough-creating-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -57,15 +57,15 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
 - Napsání kódu pro naplnění dat tabulky.  
   
-  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") video verzi tohoto tématu naleznete v tématu [Video postupy: vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") video verzi tohoto tématu naleznete v tématu [Videonávod: Vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat:  
   
--   Přístup k ukázkové databázi Northwind. Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k ukázkové databázi Northwind.
   
 ## <a name="creating-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Vytvoření N-vrstvého řešení a knihovny tříd pro objekt Dataset (DataEntityTier)  
- Prvním krokem tohoto průvodce je k vytváření řešení a dva projekty knihovny tříd. První třídy knihovny bude obsahovat datovou sadu (generované zadali třídu datové sady a datové tabulky, která bude obsahovat data aplikace). Tento projekt slouží jako vrstva entity dat aplikace a je obvykle umístěn ve střední vrstvě. [Vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md) slouží k vytvoření počáteční datové sady a automaticky rozdělení kódu do knihovny dvou tříd.  
+ Prvním krokem tohoto průvodce je k vytváření řešení a dva projekty knihovny tříd. První třídy knihovny bude obsahovat datovou sadu (generované zadali třídu datové sady a datové tabulky, která bude obsahovat data aplikace). Tento projekt slouží jako vrstva entity dat aplikace a je obvykle umístěn ve střední vrstvě. Návrháři datových sad se používá k vytvoření počáteční datové sady a automaticky rozdělení kódu do knihovny dvou tříd.  
   
 > [!NOTE]
 >  Nezapomeňte před kliknutím na správně název projektu a řešení **OK**. To usnadní vám k dokončení tohoto návodu.  
@@ -85,7 +85,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
 5.  Pojmenujte řešení **NTierWalkthrough**.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
      Řešení NTierWalkthrough obsahující DataEntityTier projekt je vytvořen a přidán do **Průzkumníka řešení**.  
   
@@ -106,7 +106,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
  Dalším krokem je vytvoření typové datové sady. Typové datové sady vytvořené pomocí třídy datové sady (včetně DataTables třídy) a `TableAdapter` třídy v jednom projektu. (Všechny třídy jsou generovány, do jediného souboru.) Když oddělíte datové sady a `TableAdapter`s do různých projektů, je třída datovou sadu, která je přesunut do jiného projektu, byste museli opustit `TableAdapter` třídy v původní projekt. Proto vytvořit datovou sadu v projektu, který bude obsahovat takže v konečném důsledku `TableAdapter`s (projektu DataAccessTier). Vytvoříte datovou sadu s použitím **Průvodce konfigurací zdroje dat**.  
   
 > [!NOTE]
->  Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o tom, jak nastavit ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+> Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení.
   
 #### <a name="to-create-the-dataset"></a>Vytvoření datové sady  
   
@@ -173,13 +173,13 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
      Službě DataService projekt je vytvořen a přidán do řešení NTierWalkthrough.  
   
 ## <a name="creating-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Vytvoření metod, které vrací data zákazníků a objednávek, ve vrstvě přístupu k datům  
- Datové služby je volat dvě metody ve vrstvě přístupu k datům: funkcí GetCustomers a GetOrders. Tyto metody vrátí tabulky Northwind zákazníci a objednávky. Vytvoření metod GetCustomers a GetOrders v projektu DataAccessTier.  
+ Datové služby je volat dvě metody ve vrstvě přístupu k datům: Funkcí GetCustomers a GetOrders. Tyto metody vrátí tabulky Northwind zákazníci a objednávky. Vytvoření metod GetCustomers a GetOrders v projektu DataAccessTier.  
   
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Vytvoření metody, která vrací tabulku Customers, ve vrstvě přístupu k datům  
   
-1.  V **Průzkumníka řešení**, dvakrát klikněte na panel NorthwindDataset.xsd otevřete datovou sadu v [vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md).  
+1.  V **Průzkumníka řešení**, dvakrát klikněte na panel NorthwindDataset.xsd otevřete datovou sestavu v návrháři datových sad.  
   
-2.  Klikněte pravým tlačítkem na CustomersTableAdapter a klikněte na tlačítko **přidat dotaz** otevřít [úpravy objektů TableAdapter](../data-tools/editing-tableadapters.md).  
+2.  Klikněte pravým tlačítkem na CustomersTableAdapter a klikněte na tlačítko **přidat dotaz** k úpravě objektu Tableadapter.  
   
 3.  Na **zvolit typ příkazu** ponechte výchozí hodnotu **použít SQL příkazy** a klikněte na tlačítko **Další**.  
   
@@ -218,7 +218,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
   
 3.  Vyberte **DataAccessTier** a **DataEntityTier** projekty.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
 ## <a name="adding-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Přidání funkcí do služby za účelem volání metod GetCustomers a GetOrders ve vrstvě přístupu k datům  
  Teď, když datová vrstva obsahuje metody, které se vrátí data, vytvářet metody v datové službě dovoluje volat metody ve vrstvě přístupu k datům.  
@@ -385,7 +385,7 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
 ## <a name="next-steps"></a>Další kroky  
  V závislosti na požadavcích aplikace existuje několik kroků, které můžete chtít provést po uložení souvisejících dat v aplikaci založené na Windows. Může například vytvořit následující vylepšení této aplikace:  
   
--   Přidání ověřování do datové sady. Informace najdete v tématu [návod: Přidání ověření do N-vrstvá aplikace Data](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+-   Přidání ověřování do datové sady. Informace najdete v tématu [názorný postup: Přidání ověřování do vícevrstvé datové aplikace](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 -   Přidáte další metody pro službu pro aktualizaci dat zpět do databáze.  
   
@@ -393,4 +393,3 @@ N-úroveň * datové aplikace jsou aplikace, které přístup k datům a jsou ro
  [Práce s datovými sadami ve vícevrstvých aplikacích](../data-tools/work-with-datasets-in-n-tier-applications.md)   
  [Hierarchická aktualizace](../data-tools/hierarchical-update.md)   
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

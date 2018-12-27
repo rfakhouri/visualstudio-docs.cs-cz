@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562032"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: typy projektů jazyka Visual C++
+# <a name="debugging-preparation-visual-c-project-types"></a>Příprava ladění: Typy projektů Visual C++
 Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] šablony projektu.  
   
  Všimněte si, že tyto typy projektů, které vytvářejí knihovny DLL jako jejich výstup, byly seskupeny do [ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md) z důvodu běžné funkce sdílejí.  
@@ -73,7 +73,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
   
 2.  Na **ladění** nabídce zvolte **Start**.  
   
-3.  Ladění pomocí technik popsaných v [základy ladicího programu](../debugger/getting-started-with-the-debugger.md).  
+3.  Ladění pomocí technik popsaných v [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> K ručnímu nastavení konfigurace ladění  
   
@@ -98,7 +98,7 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
    [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Aplikace Windows Forms (.NET)  
- **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikace Windows Forms. Další informace najdete v tématu [postupy: vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
+ **Windows Forms aplikace (.NET)** šablona vytvoří [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikace Windows Forms. Další informace najdete v tématu [jak: Vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).  
   
  Ladění tohoto typu aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je podobná ve spravovaných aplikacích Windows Forms.  
   
@@ -111,8 +111,8 @@ Tato část popisuje, jak ladit základního projektu typy vytvořené [!INCLUDE
  [V tomto tématu](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Viz také  
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)   
+ [První pohled na ladicí program](../debugger/debugger-feature-tour.md)   
  [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Připojení více programů nebo spuštění programu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Postupy: vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+ [Postupy: Vytvoření projektu aplikace Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

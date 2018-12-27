@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: povolení kódu ke spuštění pozadí dokumentů s omezenými oprávněními'
+title: 'Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - code [Office development in Visual Studio], running behind restricted documents
 - documents [Office development in Visual Studio], restricted permissions
 - Office documents [Office development in Visual Studio, restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855844"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648623"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Postupy: povolení kódu ke spuštění pozadí dokumentů s omezenými oprávněními
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními
   Funkci Správa informačních práv (IRM) systému Microsoft Office můžete použít k omezení oprávnění k dokumentu nebo sešitu. Ve výchozím nastavení nemá oprávnění spustit kódu s omezeným přístupem dokument aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. Výchozí nastavení můžete změnit tak, aby vaše rozšíření spravovaného kódu můžete přístup k objektu modelu, a vaše řešení bude fungovat.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  

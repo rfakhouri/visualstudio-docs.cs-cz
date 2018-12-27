@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d8beee1f52d2fa58862697f569a91afe2bceb39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890566"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647398"
 ---
 # <a name="query-datasets"></a>Datové sady dotazů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated záznamů  
+## <a name="access-related-records"></a>Přístup k související záznamy  
  Když jsou souvisejících tabulkách v datové sadě, <xref:System.Data.DataRelation> objektu můžete zpřístupnit souvisejících záznamů v druhé tabulce. Například datovou sadu obsahující `Customers` a `Orders` tabulky může být k dispozici.  
   
  Můžete použít <xref:System.Data.DataRelation> objekt vyhledejte související záznamy voláním <xref:System.Data.DataRow.GetChildRows%2A> metodu <xref:System.Data.DataRow> v nadřazené tabulce. Tato metoda vrátí pole související podřízené záznamy. Nebo můžete volat <xref:System.Data.DataRow.GetParentRow%2A> metodu <xref:System.Data.DataRow> v podřízené tabulce. Tato metoda vrací jedinou <xref:System.Data.DataRow> z nadřazené tabulky.  
@@ -71,7 +71,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
  Tato stránka obsahuje příklady použití typové datové sady. Informace o navigace v relacích v netypové datové sady, naleznete v tématu [procházení datových relací](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
->  Pokud pracujete v aplikaci Windows Forms a používání funkcí datové vazby k zobrazení dat, generovaný návrhářem formuláře může poskytnout dostatek funkcí pro vaši aplikaci. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Konkrétně, naleznete v tématu[postupy: zobrazení souvisejících dat ve formulářové aplikaci Windows](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md) a [návod: zobrazování souvisejících dat ve formuláři Windows Forms](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md).  
+> Pokud pracujete v aplikaci Windows Forms a používání funkcí datové vazby k zobrazení dat, generovaný návrhářem formuláře může poskytnout dostatek funkcí pro vaši aplikaci. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
  Následující příklady kódu ukazují, jak procházet nahoru a dolů vztahy v typových datových sadách. Příklady použití kód zadali <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) a vygenerovaný `FindBy` *PrimaryKey* (`FindByCustomerID`) metody pro vyhledání požadovaný řádek a vrácení souvisejících záznamů. V příkladech kompilace a spuštění správně pouze v případě, že máte:  
   
@@ -81,7 +81,7 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
   
 - Relace s názvem `FK_Orders_Customers`týkající se dvěma tabulkami, které jsou k dispozici obor kódu  
   
-  Kromě toho obou tabulek muset být naplněný daty pro záznamy, které se mají vrátit.  
+Kromě toho obou tabulek muset být naplněný daty pro záznamy, které se mají vrátit.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Vrátit podřízené záznamy vybraný nadřazený záznam  
   
@@ -96,4 +96,3 @@ K vyhledání konkrétních záznamů v datové sadě, použijte metodu FindBy v
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

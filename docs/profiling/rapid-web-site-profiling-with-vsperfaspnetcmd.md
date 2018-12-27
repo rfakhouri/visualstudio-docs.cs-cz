@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ccff5ef0575eea9d35239cab7bf3ffa47a11b315
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780539"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592661"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Pohotová profilace stránek pomocí VSPerfASPNETCmd webových
 
-**VSPerfASPNETCmd** nástroj příkazového řádku vám umožní snadno profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilaci s samostatný profiler. Další informace najdete v tématu [postupy: Instalace samostatného profileru](../profiling/how-to-install-the-stand-alone-profiler.md).
+**VSPerfASPNETCmd** nástroj příkazového řádku vám umožní snadno profilu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, možnosti jsou zmenšeny, musí být nastaveny žádné proměnné prostředí a restartování počítače se nevyžaduje. Pomocí **VSPerfASPNETCmd** upřednostňovanou metodou pro profilaci s samostatný profiler. Další informace najdete v tématu [jak: Instalace samostatného profileru](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -29,7 +29,7 @@ ms.locfileid: "43780539"
  V některých scénářích, jako je shromažďování dat souběžnosti nebo pozastavování a obnovování profilace, s použitím **VSPerfCmd** upřednostňuje profilování.
 
 > [!NOTE]
-> Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v *\Team Tools\Performance nástroje* jedná o podadresář adresáře instalace sady Visual Studio. Na 64bitových počítačích, použijte nástroj VSPerfASPNETCmd umístěné v 32bitovém základě *\Team Tools\Performance nástroje* adresáře. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.  
 
 ## <a name="profile-an-aspnet-application"></a>Profilovat aplikaci ASP.NET
 

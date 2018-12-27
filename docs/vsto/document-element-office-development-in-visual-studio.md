@@ -1,6 +1,7 @@
 ---
 title: '&lt;dokument&gt; – element (vývoj pro Office v sadě Visual Studio)'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - document element
 - application manifests [Office development in Visual Studio], <document> element
 - <document> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 07d8172ec4e56352c2244aef02d947ac48833ab7
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 634a2aff43b19098629392fedbfbaef7549e8e6c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447332"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647059"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;dokument&gt; – element (vývoj pro Office v sadě Visual Studio)
-  `document` Element `vstov4` obor názvů ukládá informace specifické pro vlastní nastavení pro úpravy na úrovni dokumentů.  
+  `document` Elementu `vstov4` obor názvů obsahuje informace specifické pro přizpůsobení pro přizpůsobení na úrovni dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,14 +39,14 @@ ms.locfileid: "34447332"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`solutionId`|Požadováno. Identifikátor GUID sady Visual Studio Tools for Office runtime používá k jedinečné identifikaci řešení úrovni dokumentu. Tato hodnota je uložena jako vlastnost _AssemblyLocation vlastní dokumentu. Další informace najdete v tématu [přehled vlastností dokumentu vlastní](../vsto/custom-document-properties-overview.md).|  
+|`solutionId`|Povinný parametr. Identifikátor GUID, který používá Visual Studio Tools for Office runtime k jednoznačné identifikaci řešení úrovni dokumentu. Tato hodnota bude uložena jako _AssemblyLocation vlastní vlastnost dokumentu. Další informace najdete v tématu [přehled vlastností dokumentu vlastní](../vsto/custom-document-properties-overview.md).|  
   
- `document` nemá žádné podřízené prvky.  
+ `document` nemá žádný podřízený element.  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   
 ### <a name="description"></a>Popis  
- Následující příklad kódu ukazuje `document` element v řešení Office úrovni dokumentu nasadit pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+ Následující příklad kódu ukazuje, `document` prvek v řešení pro Office úrovni dokumentu nasazené s použitím [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu určeného v [manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kód  
   
@@ -54,9 +55,9 @@ ms.locfileid: "34447332"
   solutionId="73e" />  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
- [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení pro systém Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

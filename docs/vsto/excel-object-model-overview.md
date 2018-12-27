@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880790"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647522"
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   K vývoji řešení, která používají Microsoft Office Excel, můžete pracovat s objekty poskytované objektovému modelu Excelu. Toto téma představuje nejdůležitější objekty:  
@@ -48,7 +48,7 @@ ms.locfileid: "49880790"
   
   Toto téma nabízí stručný přehled modelu objektů aplikace Excel. Prostředky, kde můžete dozvědět více o celý model objektů aplikace Excel, naleznete v tématu [použijte dokumentaci modelu objektů aplikace Excel](#ExcelOMDocumentation).  
   
-  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak na to: použití obslužných rutin událostí v aplikaci Excel 2007 Doplněk?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak tvary použití I: vytvoření bublinového grafu v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Použití obslužných rutin událostí v aplikaci Excel 2007 Doplněk? ](http://go.microsoft.com/fwlink/?LinkID=130291), a [postup: Vytvoření bublinového grafu v aplikaci Excel pomocí tvarů? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Přístup k objektům v projektu aplikace Excel  
  Při vytváření nového projektu doplňku VSTO pro Excel, sada Visual Studio automaticky vytvoří *ThisAddIn.vb* nebo *ThisAddIn.cs* soubor kódu. Objekt aplikace přístupné prostřednictvím `Me.Application` nebo `this.Application`.  
@@ -106,7 +106,7 @@ ms.locfileid: "49880790"
  Podrobnější informace o objektu modelu Excelu mohou odkazovat na referenční primární sestavení vzájemné spolupráce (PIA) aplikace Excel a referenční dokumentace objektového modelu VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení  
- Referenční dokumentaci Excel PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci Excel. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na primární spolupracující sestavení aplikace Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+ Referenční dokumentaci Excel PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci Excel. Tato dokumentace je k dispozici z následujícího umístění: [Odkaz na primární spolupracující sestavení aplikace Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Další informace o návrhu aplikace Excel PIA, jako jsou rozdíly mezi třídami a rozhraní v PIA a jak jsou implementované událostí v PIA, naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

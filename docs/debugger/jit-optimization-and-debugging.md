@@ -1,5 +1,5 @@
 ---
-title: JIT optimalizace a ladění | Microsoft Docs
+title: JIT optimalizace a ladění | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,35 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b18ab38c7c19fa5208d34439bd3133099e8bc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a8cb56b35092bb958ebf2e6947006acb3d0d240
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477352"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646571"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
-**Jak fungují optimalizace v rozhraní .NET:** Pokud se pokoušíte ladění kódu, je jednodušší při zda kód je **není** optimalizované. Je to proto, že při optimalizaci kódu kompilátoru a prostředí runtime měnit kód emitovaného procesoru, aby rychleji spustí, ale má méně přímé mapování na původní zdrojový kód. To znamená, že jsou často nelze zjistíte hodnotu místní proměnné a kód, krokování ladicí programy a zarážky nemusí fungovat podle očekávání.
+**Optimalizace jak fungují v rozhraní .NET:** Pokud se pokoušíte ladit kód, je jednodušší při, že kód je **není** optimalizované. Je to proto, když je kód zoptimalizovaný, kompilovacími a běhovými provést změny emitovaný kód procesoru tak, že běží rychleji, ale je méně přímé mapování na původní zdrojový kód. To znamená, že ladicí programy jsou často nelze zjistit hodnotu místní proměnné a kódu, krokování a zarážky nemusí fungovat podle očekávání.
 
-Obvykle je konfigurace sestavení verze vytvoří optimalizovaný kód a konfiguraci sestavení ladění neexistuje. `Optimize` MSBuild vlastnost určuje, zda je kompilátor sdělili optimalizovat kód.
+Obvykle optimalizovaný kód vytvoří konfigurace sestavení pro vydání a konfiguraci sestavení ladění nepodporuje. `Optimize` Vlastnost MSBuild Určuje, zda je má kompilátor optimalizovat kód.
 
-V ekosystému .NET kód bude převedena ze zdroje na pokyny procesoru ve dvou krocích: nejdřív kompilátor jazyka C# převede text, který zadáte do formuláře zprostředkující binární názvem MSIL a zapíše tento pro soubory .dll. Modul Runtime rozhraní .NET později, převede tento MSIL pokyny procesoru. Oba kroky můžete optimalizovat do určité míry, ale druhý krok provádí modul Runtime rozhraní .NET provede větších optimalizace.
+V daném ekosystému .NET, kód bude převedena ze zdroje na využití procesoru podle pokynů v krocích: nejprve je potřeba C# kompilátor převede text, který zadáte na zprostředkující binárního formátu, která je volána MSIL a zapíše to na soubory .dll. Modul .NET Runtime později, převede tento jazyk MSIL instrukce procesoru. Oba kroky můžete optimalizovat do určité míry, ale druhý krok provést modul .NET runtime provádí více významné optimalizace.
 
-**Možnost optimalizace potlačit JIT na načtení modulu (pouze spravované):** zpřístupní možnost, která určuje, co se stane, když se načte knihovnu DLL, kterou je kompilovat s povolenými optimalizacemi uvnitř tento cílový proces ladicího programu. Pokud tato možnost je zaškrtnuté políčko (výchozí stav), pak když modul Runtime rozhraní .NET kompilovaný kód MSIL do kódu procesoru, zůstanou povolenými optimalizacemi. Pokud je zaškrtnutí možnost ladicího programu požadavků zakázat optimalizace.
+**Možnost 'Potlačení optimalizace JIT při načtení modulu (pouze spravované)':** Ladicí program poskytuje možnosti, které řídí, co se stane při načtení knihovny DLL, který je kompilován s povolenými optimalizacemi v rámci cílového procesu. Pokud tato možnost není zaškrtnutá (výchozí stav), pak když modul .NET Runtime kompiluje kód jazyka MSIL do kódu procesoru, ponechá povolené optimalizace. Pokud je možnost je zaškrtnuto, ladicí program požadavků zakázat optimalizace.
 
-**JIT potlačit optimalizaci pro načtení modulu (pouze spravované)** možnost najdete na **Obecné** v části **ladění** uzel v **možnosti** dialogové okno.
+Najít **potlačení optimalizace JIT při načtení modulu (pouze spravované)** možnosti, vyberte **nástroje** > **možnosti**a pak vyberte  **Obecné** stránky **ladění** uzlu.
 
-**Pokud by měl zaškrtnete tuto možnost:** zaškrtnete tuto možnost, když jste si stáhli knihovny DLL z jiného zdroje, jako je balíček nuget, a chcete ladit kód v této knihovny DLL. Aby tato možnost fungovala musíte taky najít soubor symbolu (.pdb) pro tuto knihovnu DLL.
+**Pokud jste zaškrtněte tuto možnost:** Toto políčko zaškrtněte, pokud jste stáhli z jiného zdroje, jako je balíček nuget, knihovny DLL a který chcete ladit kód v této knihovně DLL. V pořadí, aby to fungovalo musí také najít soubor symbolů (PDB) pro tuto knihovnu DLL.
 
-Pokud vás zajímá pouze při ladění kódu, který vytváříte místně, je nejlepší nechte nezaškrtnuté, tuto možnost, jak v některých případech, povolením této možnosti bude výrazně zpomalit ladění. Existují dvě důvodem zpomalit:
+Pokud vás zajímá pouze při ladění kódu, který vytvářejí místně, je nejlepší, ponechejte tuto možnost není zaškrtnuto, protože v některých případech, povolením této možnosti bude výrazně zpomalit ladění. Zpomalit existují dvě z důvodů:
 
-* Optimalizovaný kód spustí rychleji. Pokud jsou vypnutí optimalizace pro velké množství kódu, můžete dohromady dopad na výkon.
-* Pokud máte pouze můj kód povolené, ladicího programu ani zkuste a načíst symboly pro knihovny DLL, která jsou optimalizována. Hledání symbolů může trvat dlouhou dobu.
+* Optimalizovaný kód běží rychleji. Pokud jsou vypnutím optimalizace pro velké množství kódu, dopad na výkon můžete ušetřit až.
+* Pokud máte povoleným kódem Just My ladicí program dokonce ani akci a načíst symboly pro knihovny DLL, které jsou optimalizované. Hledání symbolů může trvat dlouhou dobu.
 
-**Omezení této možnosti:** dvou případech, kde bude tato možnost **není** fungovat:
+**Omezení této možnosti:** Existují dvě situace, kdy se tato možnost způsobí **není** pracovat:
 
-1. V situacích, kde připojování ladicí program k již spuštěných procesů tato možnost nebude mít žádný vliv na moduly, které již byly načteny v době, kdy byl připojen ladicí program.
-2. Tato možnost nemá žádný vliv na knihovny DLL, které byly předem zkompilovat (známé jako ngen'ed) do nativního kódu. Můžete však zakázat použití předem zkompilovaný kód od procesu prostředí, ve kterém proměnné 'COMPlus_ZapDisable' nastaven na '1'.
+1. V situacích, kde jsou k již běžícímu procesu připojování ladicího programu Tato možnost nebude mít žádný vliv na moduly, které již byly zavedeny v době, kdy byl připojen ladicí program.
+2. Tato možnost nemá žádný vliv na knihovny DLL, které byly předem zkompilované (známé jako ngen'ed) do nativního kódu. Však můžete zakázat použití předkompilovaný kód, že spuštění procesu prostředí, proměnné 'COMPlus_ZapDisable' nastavena na hodnotu '1'.
 
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   

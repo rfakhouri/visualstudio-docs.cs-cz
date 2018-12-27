@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949679"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647645"
 ---
 # <a name="events-in-office-projects"></a>Události v projektech pro systém Office
   Každá šablona projektu Office automaticky vygeneruje několik obslužných rutin událostí. Obslužné rutiny událostí pro přizpůsobení na úrovni dokumentu se mírně liší od obslužné rutiny událostí pro doplňky VSTO.  
@@ -48,7 +48,7 @@ ms.locfileid: "49949679"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>Projekty na úrovni dokumentu  
- Visual Studio poskytuje generovaný kód za novou nebo existující dokumenty nebo listů v přizpůsobeních na úrovni dokumentu. Tento kód vyvolává dvě různé události: **spuštění** a **vypnutí**.  
+ Visual Studio poskytuje generovaný kód za novou nebo existující dokumenty nebo listů v přizpůsobeních na úrovni dokumentu. Tento kód vyvolává dvě různé události: **Po spuštění** a **vypnutí**.  
   
 ### <a name="startup-event"></a>událost spuštění  
  **Spuštění** událost se vyvolá, pro každou z položek hostitele (dokumentu, sešitu nebo listu) po spuštění dokumentu a veškerého inicializačního kódu v sestavení byl spuštěn. Je to poslední věcí, kterou pro spuštění v konstruktoru třídy, na kterém běží váš kód v. Další informace o hostitelských položkách naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "49949679"
   
 ## <a name="see-also"></a>Viz také:  
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  

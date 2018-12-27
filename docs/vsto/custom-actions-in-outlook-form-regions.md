@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671063"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441657"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Vlastní akce v oblastech formulářů aplikace Outlook
   Akce zobrazení tlačítek, které umožní uživatelům na položku Microsoft Office Outlook. Například reakce na položky pošty, uživatelé kliknou **odpověď**, **Odpovědět všem**, nebo **vpřed** akční tlačítka. Všechny tyto akce vytvoří novou položku e-mailu a vyplnit položky pole pomocí informací z původní položky.  
@@ -45,7 +45,7 @@ ms.locfileid: "50671063"
 |**Text**|Určuje, jak tělo původní položky se připojí k cílové formuláře.|  
 |**Povoleno**|Určuje, zda je povoleno vlastní akce. Pokud je tato vlastnost nastavená na **false**, vlastní akce je zakázaná.|  
 |**– Metoda**|Určuje typ odpovědi, které jsou k dispozici při provedení vlastní akce. Vlastní akce můžete odeslat formulář, otevřete formulář nebo výzva, jestli chce odeslat nebo otevřete formulář.|  
-|**Jméno**|Určuje interní název, který vám pomůže odkazovat na tato vlastní akce v kódu.|  
+|**Název**|Určuje interní název, který vám pomůže odkazovat na tato vlastní akce v kódu.|  
 |**ShowOnRibbon**|Určuje, jestli se má zobrazit na pásu karet původní položka vlastní akce.|  
 |**SubjectPrefix**|Určuje text, který bude vložena na začátek řádku předmětu cílového formuláře.|  
 |**TargetForm**|Určuje název třídy zpráv cílového formuláře. Zadejte například **IPM. Úloha** otevřete formulář úloh.|  

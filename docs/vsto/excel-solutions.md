@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, Excel solutions
 - document-level customizations [Office development in Visual Studio], Excel
 - Office projects [Office development in Visual Studio], Excel
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027390"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647942"
 ---
 # <a name="excel-solutions"></a>řešení pro aplikaci Excel
   Visual Studio obsahuje šablony projektů, které lze použít k vytvoření přizpůsobení na úrovni dokumentu a doplňky VSTO pro aplikaci Microsoft Office Excel. Tato řešení můžete použít k automatizaci aplikace Excel, rozšíření funkcí aplikace Excel a přizpůsobení uživatelského rozhraní (UI) aplikace Excel. Další informace o rozdílech mezi přizpůsobení na úrovni dokumentu a doplňky VSTO najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -62,7 +62,7 @@ ms.locfileid: "53027390"
 ##  <a name="doclevel"></a> Vývoj přizpůsobení na úrovni dokumentu pro Excel  
  Přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Excel se skládá ze sestavení, který je spojen s konkrétním sešitu. Sestavení obvykle rozšiřuje sešit přizpůsobením uživatelského rozhraní a automatizací aplikace Excel. Na rozdíl od doplňku VSTO, které je spojeno s Excelem, sama, funkce, kterou implementujete ve vlastním nastavení je k dispozici pouze v případě, že je přidružený sešit otevřít v aplikaci Excel.  
 
- Vytvoření projektu přizpůsobení na úrovni dokumentu pro Excel, použijte Excelový sešit nebo šablony projektů šablona aplikace Excel v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Vytvoření projektu přizpůsobení na úrovni dokumentu pro Excel, použijte Excelový sešit nebo šablony projektů šablona aplikace Excel v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Další informace o úpravách na úrovni dokumentu naleznete v tématu [architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md).  
 
@@ -74,7 +74,7 @@ ms.locfileid: "53027390"
 ##  <a name="applevel"></a> Vývoj doplňků VSTO pro Excel  
  Doplňku VSTO pro Microsoft Office Excelu obsahuje sestavení, který je načten v Excelu. Sestavení obvykle rozšiřuje aplikaci Excel, přizpůsobením uživatelského rozhraní a automatizací aplikace Excel. Na rozdíl od přizpůsobení úrovni dokumentu, který je přidružen konkrétní sešitu, není omezen na libovolný jednoho sešit funkce, kterou implementujete v doplňku VSTO.  
 
- Vytvoření projektu doplňku VSTO pro Excel, použijte Excelový sešit nebo šablony projektů šablona aplikace Excel v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Vytvoření projektu doplňku VSTO pro Excel, použijte Excelový sešit nebo šablony projektů šablona aplikace Excel v **nový projekt** dialogové okno sady Visual Studio. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
  Obecné informace o tom, jak fungují doplňků VSTO najdete v tématu [doplňků VSTO architektura](../vsto/architecture-of-vsto-add-ins.md).
 

@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "39179476"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561889"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 
-Tato část popisuje běžné problémy ladění a techniky pro spravované aplikace nebo aplikace napsané v jazycích, které se zaměřují modul common language runtime, jako je například Visual Basic, C# a C++. Technik popsaných tady jsou základní techniky. Další informace najdete v tématu [pomocí ladicího programu](../debugger/getting-started-with-the-debugger.md).
+Tato část popisuje běžné problémy ladění a techniky pro spravované aplikace nebo aplikace napsané v jazycích, které se zaměřují modul common language runtime, jako je například Visual Basic, C# a C++. Technik popsaných tady jsou základní techniky. [Nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
@@ -40,7 +40,7 @@ Popisuje kontrolní výrazy ve spravovaném kódu, které testování podmínek,
 [Příkazy Stop v jazyce Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
 Popisuje `Stop` příkaz, který poskytuje alternativu k nastavením zarážky. Ukázkový kód je také k dispozici, spolu s porovnání mezi `Stop` příkazu a `End` příkaz, a také mezi `Stop` a `Assert` příkazu.
 
-[Návod: Ladění formuláře systému Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+[Návod: Ladění formuláře Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
 Poskytuje podrobné pokyny pro vytvoření formuláře Windows a ladění, které tvoří. Formuláře Windows, standardní součástí spravované aplikace pro Windows je jedním z nejběžnějších spravovaných aplikací. Tento návod používá Visual C# a Visual Basic, ale jsou obecně podobné techniky pro vytvoření formuláře Windows pomocí C++.
 
 [Ladění metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -49,7 +49,7 @@ Poskytuje příklady kódu, aby bylo možné ladit `OnStart` metody spravované 
 [Ladění ve smíšeném režimu](../debugger/debugging-mixed-mode-applications.md)  
 Tento článek popisuje ladění ve smíšeném režimu aplikací. To znamená, že všechny aplikace, která kombinuje nativní kód se spravovaným kódem.
 
-[Chyba: Ladění není možné, protože v systému je povolen ladicí program protokolu Kernel.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+[Chyba: Ladění není možné, protože v systému je povolen ladicí program jádra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
 Popisuje chybová zpráva, která nastane, pokud se pokusíte ladit spravovaný kód na [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], nebo systém Windows NT, který se spustil v režimu ladění.
 
 [Optimalizace a ladění za běhu](../debugger/jit-optimization-and-debugging.md)  
@@ -88,7 +88,7 @@ Obsahuje odkazy na větší části dokumentace ladění. Obsahuje informace, co
 
 ## <a name="see-also"></a>Viz také:
 
-[Návod: Ladění vlastních Windows Forms ovládací prvky v době návrhu](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+[Návod: Ovládací prvky ladění vlastního Windows Forms v době návrhu](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [zabezpečení ladicího programu](../debugger/debugger-security.md)
 [ladění v sadě Visual Studio](../debugger/index.md) 
  [ Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)

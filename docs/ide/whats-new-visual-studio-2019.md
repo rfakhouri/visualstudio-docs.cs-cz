@@ -2,7 +2,7 @@
 title: Co je nového v sadě Visual Studio. 2019 Preview
 titleSuffix: ''
 description: Další informace o nové funkce ve verzi preview sady Visual Studio 2019.
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
 ms.custom: seodec18
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 56c9a30ee534a2812455b6777f25b9730f5985b6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159747"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647761"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Co&#39;s novinkou ve verzi Preview. 2019 Visual Studio
 
@@ -50,6 +50,8 @@ První věc, kterou zjistíte, když spustíte Visual Studio 2019 je její nové
    ![Nové okno start v aplikaci Visual Studio 2019](../ide/media/start-window.png)
 
 Toto nové okno start vám nabídne možnosti, jak klonovat nebo podívejte se na kód, otevřete projekt nebo řešení, otevřít místní složku nebo vytvořte nový projekt. Tyto možnosti se zobrazí v dialogovém okně jednoduché pomůže obou začátečníky a získat kód rychle Pokročilí uživatelé sady Visual Studio.
+
+Další informace najdete v tématu [získat kód: Jak jsme navrhli nové okno Visual Studio start](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) blogový příspěvek.
 
 ### <a name="better-search"></a>Lepší vyhledávání
 
@@ -82,6 +84,8 @@ Můžete také formátovat, jak se zobrazí hodnota v oknech sledovat, místní 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) je služba pro vývojáře, která umožňuje sdílet základ kódu a jeho kontextu s programujete a získat rychlé obousměrné spolupráci přímo z Visual Studia. S Live Share programujete můžete přečíst, přejděte, upravit a ladit projekt, který jste sdíleli s nimi a učinit snadno a bezpečně.
 
 A sadou Visual Studio 2019 Preview, tato služba nainstaluje ve výchozím nastavení.
+
+Další informace najdete v tématu [Visual Studio Live Share pro revize kódu v reálném čase a interaktivní vzdělávání](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) blogový příspěvek.
 
 ## <a name="modern-development-support"></a>Podpora moderního vývoje
 
@@ -122,7 +126,7 @@ Zpočátku podporujeme pouze C# když jsme první předběžně IntelliCode roz�
 
 A pokud používáte C#, přidali jsme také možnost pro trénování modelu vlastní na váš vlastní kód.
 
-Další informace o rozšíření a kde ji můžete stáhnout, najdete v článku [Visual Studio IntelliCode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) stránce Microsoft DevLabs.
+Další informace o nedávných aktualizacích najdete v tématu [Visual Studio IntelliCode podporuje více jazyků a učí z vašeho kódu](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) blogový příspěvek. A další informace o rozšíření a jak ho můžete stáhnout, najdete v článku [Visual Studio IntelliCode - Preview](https://go.microsoft.com/fwlink/?linkid=872707) stránce Microsoft DevLabs.
 
 ## <a name="give-us-feedback"></a>Sdělte nám svůj názor
 
@@ -135,4 +139,5 @@ Proč odeslat zpětnou vazbu týmu sady Visual Studio? Protože jsme vážně tr
 ## <a name="see-also"></a>Viz také:
 
 * [Zpráva k vydání verze Visual Studio 2019](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); 2018 conference](https://www.microsoft.com/connectevent)
 * [Co je nového v sadě Visual Studio 2017](whats-new-in-visual-studio.md)

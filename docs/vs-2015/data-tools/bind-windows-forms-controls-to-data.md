@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce8cc39880908d099c72142699b4cb19fb514e6
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237468"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647243"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Vytvoření vazby ovládacích prvků modelu Windows Forms k datům
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Zdroje dat k ovládacím prvkům můžete svázat přetažením objektů ze **zd
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Vytvoření vazby k datům v ovládacím prvku DataGridView  
- Pro ovládací prvek DataGridView celá tabulka je vázána na daný jeden ovládací prvek. Při přetažení ovládacím prvku DataGridView do formuláře, nástroj pro odstranění pro procházení záznamů (<xref:System.Windows.Forms.BindingNavigator>) se také zobrazí. A [datovou sadu](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent. Na následujícím obrázku je TableAdapterManager také přidat, protože v tabulce Zákazníci má vztah k tabulce objednávky. Tyto proměnné jsou všechny deklarované v automaticky vygenerovaném kódu jako soukromé členy třídy formuláře. Automaticky generovaný kód pro naplnění ovládacího prvku DataGridView je umístěn v obslužné rutině události form_load. Kód pro uložení dat. Chcete-li aktualizovat databázi se nachází v obslužné rutině události uložit pro BindingNavigator. Můžete přesunout nebo podle potřeby upravte tento kód.  
+ Pro ovládací prvek DataGridView celá tabulka je vázána na daný jeden ovládací prvek. Při přetažení ovládacím prvku DataGridView do formuláře, nástroj pro odstranění pro procházení záznamů (<xref:System.Windows.Forms.BindingNavigator>) se také zobrazí. A [datovou sadu](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, a <xref:System.Windows.Forms.BindingNavigator> zobrazují v panelu komponent. Na následujícím obrázku je TableAdapterManager také přidat, protože v tabulce Zákazníci má vztah k tabulce objednávky. Tyto proměnné jsou všechny deklarované v automaticky vygenerovaném kódu jako soukromé členy třídy formuláře. Automaticky generovaný kód pro naplnění ovládacího prvku DataGridView je umístěn v obslužné rutině události form_load. Kód pro uložení dat. Chcete-li aktualizovat databázi se nachází v obslužné rutině události uložit pro BindingNavigator. Můžete přesunout nebo podle potřeby upravte tento kód.  
   
  ![Prvek GridView s BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata prvek GridView s BindingNavigator")  
   
@@ -68,4 +68,3 @@ Zdroje dat k ovládacím prvkům můžete svázat přetažením objektů ze **zd
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

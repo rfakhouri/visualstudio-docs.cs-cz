@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: řešení otevřete Office bez spuštění kódu'
+title: 'Postupy: Otevření řešení pro systém Office bez spuštění kódu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,41 +16,41 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254985"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646903"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>Postupy: řešení otevřete Office bez spuštění kódu
-  Řešení Microsoft Office vytvořené pomocí rozšíření spravovaného kódu se spustí i v případě nastavení zabezpečení v aplikaci Office koncového uživatele je nastavena na hodnotu Vysoká. Je to proto, že zabezpečení kódu sestavení .NET je spravovaná rozhraní Microsoft .NET Framework, nikoliv společností Microsoft Office.  
+# <a name="how-to-open-office-solutions-without-running-code"></a>Postupy: Otevření řešení pro systém Office bez spuštění kódu
+  Řešení Microsoft Office vytvořené pomocí rozšíření spravovaného kódu spustí i v případě, že nastavení zabezpečení aplikace Office koncového uživatele je nastavena na hodnotu Vysoká. Je to proto, že spravuje zabezpečení kódu .NET sestavení rozhraní Microsoft .NET Framework, ne společnost Microsoft Office.  
   
- Existují však situace když budete chtít otevřít dokument, bez spuštění kódu. Například kód, který běží po otevření dokumentu může změnit obsah, ale chcete aktualizovat dokument vzhled před změny kódu. Nebo můžete chtít poslat dokument s určité informace v ní někdo a nechcete, aby kód ke spuštění a případně změnit obsah.  
+ Existují však časy, kdy můžete chtít otevřít dokument bez spuštění kódu. Například kód, který běží po otevření dokumentu může změnit obsah, ale chcete aktualizovat dokument vzhled před změnami v kódu. Nebo můžete chtít odeslat dokument se některé informace v ní někdo a nechcete, aby kód ke spuštění a případně změnit obsah.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Existuje několik způsobů otevřete dokument nebo sešit, který obsahuje rozšíření spravovaného kódu bez spuštění kódu sestavení.  
+ Existuje několik způsobů, jak otevřít dokument nebo sešit, který obsahuje rozšíření spravovaného kódu bez spuštění kódu sestavení.  
   
-## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Pomocí klávesy Shift obejít sestavení  
+## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Obejít sestavení pomocí klávesy Shift  
   
--   Otevřít dokumenty a sešity z **soubor** nabídky stiskněte **Shift** klíč chcete zabránit vyvolání inicializace událostí, když je otevření dokumentu Word a Excel.  
+-   Otevřít dokumenty a sešity **souboru** nabídky při podržení **Shift** klíč zabránit vyvolávání událostí inicializace při otevírání dokumentů aplikace Word a Excel.  
   
     > [!NOTE]  
-    >  Pokud otevřete dokument nebo sešitu z **Začínáme** podokna úloh podržíte stisknutou **Shift** nepoužívat kód. Navíc podržíte stisknutou klávesu SHIFT nezabrání událostí vyvolaných po otevření dokumentu.  
+    >  Pokud otevřete dokumentu nebo sešitu z **Začínáme** podokna úloh, podržte **Shift** nepoužívat kód. Navíc podržíte stisknutou klávesu SHIFT nebrání událostí vyvolaných po otevření dokumentu.  
   
-     Tato metoda je užitečná, pokud chcete otevřít dokument měnit, aniž by kód spuštěný a nejprve změny dokumentu.  
+     Tato metoda je užitečná, pokud chcete otevřít dokument provádět změny bez kódu, spouštění a nejprve změny dokumentu.  
   
-## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Obejít sestavení a přejmenování nebo odebráním  
+## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Obejít sestavení tak, přejmenování nebo neodebrali.  
   
--   Pokud máte na počítači, kde se nachází sestavení potřebná oprávnění, můžete přejmenovat nebo odebrat sestavení, dokumentu nebo sešitu ji nemůže najít. To vede k chybě vyvolaných pokaždé, když je otevřen dokumentu systému Office.  
+-   Pokud máte potřebná oprávnění na počítači, kde je umístěné sestavení, můžete přejmenovat nebo odebrat sestavení, aby dokumentem nebo sešitem, nejde ho najít. Výsledkem je chyba se vyvolá při každém otevření dokumentu Office.  
   
-     Pokud řešení používá více uživatelů, tato metoda řešení zabraňuje spuštění pro každou z nich. To může být užitečné, pokud je zjištěn problém v kódu nebo odkazovaného serveru a chcete zastavit všechny uživatele od její provedení.  
+     Pokud řešení používá více lidí, tato metoda řešení zabraňuje spuštění pro všechny z nich. To může být užitečné, pokud je nalezen problém v kódu nebo odkazovaného serveru a zabráníte všem uživatelům, ale jeho spuštění.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   

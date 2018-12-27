@@ -1,10 +1,9 @@
 ---
-title: WizardExtension – Element (šablony sady Visual Studio) | Microsoft Docs
+title: WizardExtension – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -16,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144863"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561146"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension – element (šablony sady Visual Studio)
-Obsahuje prvky registrace pro přizpůsobení Průvodce šablonou.  
+Obsahuje elementy registrace pro přizpůsobení Průvodce šablonou.  
   
- \<VSTemplate >  
+ \<Vstemplate – >  
  ...  
- \<WizardExtension >  
+ \<WizardExtension – >  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,20 +48,20 @@ Obsahuje prvky registrace pro přizpůsobení Průvodce šablonou.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Požadovaný element.<br /><br /> Určuje název nebo silný název sestavení, které se zobrazí v globální mezipaměti sestavení. Musí být alespoň jeden `Assembly` element v `WizardExtension` elementu.|  
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Požadovaný element.<br /><br /> Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní. Musí být alespoň jeden `FullClassName` element v `WizardExtension` elementu.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Požadovaný element.<br /><br /> Určuje název nebo silný název sestavení, které se zobrazí v globální mezipaměti sestavení. Musí obsahovat alespoň jeden `Assembly` prvek `WizardExtension` elementu.|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Požadovaný element.<br /><br /> Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní. Musí obsahovat alespoň jeden `FullClassName` prvek `WizardExtension` elementu.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Obsahuje všechna metadata pro šablony projektu, šablony položky nebo starter kit.|  
+|[Vstemplate –](../extensibility/vstemplate-element-visual-studio-templates.md)|Obsahuje všechna metadata pro šablony projektu, šablonu položky nebo starter kit.|  
   
 ## <a name="remarks"></a>Poznámky  
- `WizardExtension` představuje volitelný podřízený prvek `VSTemplate`.  
+ `WizardExtension` je volitelný podřízený prvek `VSTemplate`.  
   
 ## <a name="example"></a>Příklad  
- Následující příklad ilustruje metadata pro standardní projektu šablony pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikací systému Windows.  
+ Následující příklad ukazuje metadata pro šablony standardní projektu pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikace Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  

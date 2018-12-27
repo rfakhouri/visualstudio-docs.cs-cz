@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180188"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561967"
 ---
 # <a name="debugging-native-code"></a>Ladění nativního kódu
-Část popisuje některé běžné problémy ladění a techniky pro nativní aplikace. Techniky popsané v této části jsou techniky vysoké úrovně. Mechanismy pomocí ladicího programu sady Visual Studio, naleznete v tématu [ladicí program plán](../debugger/getting-started-with-the-debugger.md).  
+Část popisuje některé běžné problémy ladění a techniky pro nativní aplikace. Techniky popsané v této části jsou techniky vysoké úrovně. Mechanismy pomocí ladicího programu sady Visual Studio, naleznete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md)).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: ladění optimalizovaného kódu](../debugger/how-to-debug-optimized-code.md)  
+ [Postupy: Ladění optimalizovaného kódu](../debugger/how-to-debug-optimized-code.md)  
  Poskytuje tipy k ladění optimalizovaného kódu, konkrétně, proč by měl ladit neoptimalizované verzi vašeho programu, výchozí nastavení optimalizace pro konfigurace Debug a Release a tipy pro hledání chyb, které se zobrazí pouze v optimalizovaném kódu (zapnutí Optimalizace v konfiguraci sestavení ladění).  
   
  [DebugBreak a __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -42,7 +42,7 @@ ms.locfileid: "39180188"
  [Kontrolní výrazy jazyka C/C++](../debugger/c-cpp-assertions.md)  
  Tento článek popisuje příkazy kontrolního výrazu, jak fungují, výhody používání jejich (zachycení logických chyb, Kontrola výsledků operace a testování chybové stavy), jejich interakce s `_DEBUG`a různým druhům kontrolní výrazy, které jsou podporovány v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- [Postupy: ladění vnořeného kódu sestavení](../debugger/how-to-debug-inline-assembly-code.md)  
+ [Postupy: Ladění vnořeného kódu sestavení](../debugger/how-to-debug-inline-assembly-code.md)  
  Poskytuje obsah krátké pokyny týkající se použití okna zpětného překladu zobrazíte pokyny k sestavení a okno registrů, chcete-li zobrazit registru a obsahuje odkazy na témata týkající se těchto systému windows.  
   
  [Techniky ladění MFC](../debugger/mfc-debugging-techniques.md)  
@@ -51,13 +51,13 @@ ms.locfileid: "39180188"
  [Techniky ladění CRT](../debugger/crt-debugging-techniques.md)  
  Halda ladění odkazy k ladění techniky pro knihovny Run-Time jazyka C, včetně použití ladění knihovny CRT, makra pro vytváření sestav, rozdíly mezi malloc a _malloc_dbg, zápis funkce háku a CRT ladění.  
   
- [Ladění nativního kódu nejčastější dotazy](../debugger/debugging-native-code-faqs.md)  
+ [Nejčastější dotazy k ladění nativního kódu](../debugger/debugging-native-code-faqs.md)  
  Poskytuje odpovědi na nejčastější dotazy týkající se ladění programy v jazyce Visual C++  
   
- [COM a ActiveX ladění](../debugger/com-and-activex-debugging.md)  
+ [Ladění modelů COM a prvků ActiveX](../debugger/com-and-activex-debugging.md)  
  Obsahuje informace o ladění aplikace modelu COM a ActiveX, včetně nástroje, které můžete použít pro model COM a ActiveX ladění.  
   
- [Postupy: ladění vloženého kódu](../debugger/how-to-debug-injected-code.md)  
+ [Postupy: Ladění vloženého kódu](../debugger/how-to-debug-injected-code.md)  
  Obsahuje pokyny k ladění kódu, který používá atributy. Pokyny zahrnují zapnutí zdrojové poznámky, jak zobrazit vloženého kódu a jak zobrazit zpětný překlad kódu v aktuální bod provádění.  
   
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md)  

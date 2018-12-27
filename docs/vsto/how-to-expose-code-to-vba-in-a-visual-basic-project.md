@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic'
+title: 'Postupy: Vystavení kódu do VBA v projektu jazyka Visual Basic'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,24 +14,24 @@ helpviewer_keywords:
 - Visual Basic [Office development in Visual Studio], exposing code to VBA
 - exposing code to VBA
 - host items [Office development in Visual Studio], exposing code to VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839645"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648636"
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic
+# <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Postupy: Vystavení kódu do VBA v projektu jazyka Visual Basic
   Můžete zpřístupnit v kódu [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projektu jazyka Visual Basic pro kód Applications (VBA) Pokud chcete, aby dva typy kódu komunikovat mezi sebou.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Proces jazyka Visual Basic se liší od Vizuálu C# procesu. Další informace najdete v tématu [postupy: vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Proces jazyka Visual Basic se liší od Vizuálu C# procesu. Další informace najdete v tématu [jak: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  Proces se liší pro kód ve třídě položku hostitele, než je pro kód v jiné třídy:  
   
@@ -39,12 +39,12 @@ ms.locfileid: "49839645"
   
 - [Vystavení kódu, který není ve třídě položky hostitele](#NonHostItem)  
   
-  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak VSTO volejte I: kódu z jazyka VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Volání kódu VSTO z jazyka VBA? ](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Vystavení kódu v třídě položky hostitele  
  Chcete-li povolit kód VBA pro volání ve třídě položku hostitele kódu jazyka Visual Basic, nastavte **EnableVbaCallers** vlastnost položky hostitele **True**.  
   
- Názorný postup ukazuje, jak vystavit metodu třídy položku hostitele a následně ji zavolat z jazyka VBA, naleznete v tématu [návod: volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Další informace o hostitelských položkách naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
+ Názorný postup ukazuje, jak vystavit metodu třídy položku hostitele a následně ji zavolat z jazyka VBA, naleznete v tématu [názorný postup: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Další informace o hostitelských položkách naleznete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
 #### <a name="to-expose-code-in-a-host-item-to-vba"></a>Vystavení kódu v položce hostitele pro jazyk VBA  
   
@@ -121,10 +121,10 @@ ms.locfileid: "49839645"
 9. Sestavte projekt.  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Kombinování přizpůsobení na úrovni dokumentu a VBA](../vsto/combining-vba-and-document-level-customizations.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Postupy: vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [Postupy: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

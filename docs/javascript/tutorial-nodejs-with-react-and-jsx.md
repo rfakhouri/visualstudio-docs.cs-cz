@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 27a76ab16da00fe68b6dffbc072b926bf04fa502
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750783"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441766"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a React v sadě Visual Studio
 
@@ -32,7 +32,7 @@ V tomto kurzu se naučíte:
 > * Transpilovat JSX
 > * Připojit ladicí program
 
-## <a name="before-you-begin"></a>Než začnete
+## <a name="before-you-begin"></a>Před zahájením
 
 Tady je rychlý – nejčastější dotazy vám představí některé klíčové koncepty.
 
@@ -258,7 +258,7 @@ V předchozím postupu jste do projektu přidali *webpack-config.js*. Dále při
     }
     ```
 
-    Kód pro konfiguraci webpacku určuje, že k transpilaci JSX se má použít zavaděč TypeScriptu.
+    Kód konfigurace webpacku instruuje webpacku TypeScript zavaděči transpiluje JSX použít.
 
 1. Otevřít *tsconfig.json* a nahraďte kód následujícím kódem, který určuje možnosti kompilátoru TypeScript:
 

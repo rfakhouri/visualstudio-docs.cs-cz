@@ -12,27 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35bf9d72ba62210fb83d950fea2bd2f6f90cb34
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2ff9cc6ea88aa7a8e7c7e69c2fd51c8f7997a98
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943303"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684272"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Dialogové okno Rozšíření a aktualizace, Prostředí, Možnosti
-Na této stránce můžete nastavit možnosti, jak Visual Studio provádí aktualizace a jak se rozšíření aktualizovat a zjistit.
 
-### <a name="automatically-check-for-updates"></a>Automaticky zjišťovat aktualizace
- Pokud je zaškrtnuto, Visual Studio bude pravidelně kontrolovat aktualizace samotné, nainstalované sady SDK a nástrojů a rozšíření a zobrazit oznámení v panelu nabídek, když jsou k dispozici aktualizace. Další informace najdete v tématu [oznámení](../../ide/visual-studio-notifications.md).
+Pomocí této stránky můžete nastavit možnosti pro jak Visual Studio provádí se aktualizace a jak se rozšíření aktualizovat a zjištění.
 
-### <a name="automatically-update-extensions"></a>Automaticky aktualizovat rozšíření
- Pokud je zaškrtnuto, aktualizace rozšíření jsou vytvářeny bez zobrazení výzvy. Další informace najdete v tématu [hledání a používání rozšíření Visual Studia](../../ide/finding-and-using-visual-studio-extensions.md).
+## <a name="automatically-check-for-updates"></a>Automaticky zjišťovat aktualizace
 
-### <a name="load-user-extensions-when-running-as-administrator"></a>Načíst rozšíření uživatele při spuštění jako správce
- Další informace najdete v tématu [hledání a používání rozšíření Visual Studia](../../ide/finding-and-using-visual-studio-extensions.md).
+Pokud je zaškrtnuto, Visual Studio bude pravidelně ji kontrolujte, aktualizace samotné, nainstalované sady SDK a nástroje a rozšíření a zobrazovat oznámení v řádku nabídek, které jsou k dispozici aktualizace. Další informace najdete v tématu [aktualizace sady Visual Studio](../../install/update-visual-studio.md).
 
-### <a name="additional-extension-galleries"></a>Další rozšíření Galerie
- Funkce Enterprise, která umožňuje podporu pro Galerie vlastní rozšíření. Další informace najdete v tématu [privátní Galerie](../../extensibility/private-galleries.md).
+## <a name="automatically-update-extensions"></a>Automatické aktualizace rozšíření
+
+Pokud je zaškrtnuto, jsou provedeny aktualizace pro rozšíření bez zobrazení výzvy. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+
+## <a name="load-user-extensions-when-running-as-administrator"></a>Rozšíření uživatelské zatížení při spuštění jako správce
+
+Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
+
+## <a name="additional-extension-galleries"></a>Galerie dodatečných rozšíření
+
+Funkce Enterprise, které přinášejí podporu pro Galerie vlastních rozšíření. Další informace najdete v tématu [privátní Galerie](../../extensibility/private-galleries.md).
 
 ## <a name="see-also"></a>Viz také
 

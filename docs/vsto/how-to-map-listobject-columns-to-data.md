@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: sloupců objektu ListObject Mapa k datům'
+title: 'Postupy: Mapování sloupců objektu ListObject na data'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676446"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646835"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>Postupy: sloupců objektu ListObject Mapa k datům
+# <a name="how-to-map-listobject-columns-to-data"></a>Postupy: Mapování sloupců objektu ListObject na data
   Po vytvoření vazby <xref:Microsoft.Office.Tools.Excel.ListObject> mít pod kontrolou <xref:System.Data.DataTable>, možná nebudete chtít zobrazit všechny sloupce v seznamu, nebo může být některé sloupce, které nejsou vázány na data. Můžete namapovat sloupce, které chcete zobrazit v <xref:Microsoft.Office.Tools.Excel.ListObject> při volání <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metody.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mohu: vytvořit seznam v aplikaci Excel, který je připojený k serveru SharePoint?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Vytvoření seznamu v Excelu, který je připojený k serveru SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>Mapování sloupce  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35676446"
  [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Postupy: výplň ListObject – ovládací prvky s daty](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Postupy: Vyplnění ovládacích prvků ListObject daty](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject – ovládací prvek](../vsto/listobject-control.md)  
   

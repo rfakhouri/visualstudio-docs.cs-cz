@@ -36,17 +36,17 @@ helpviewer_keywords:
 - custom XML parts, content controls
 - templates [Office development in Visual Studio], content controls
 - BuildingBlockGalleryContentControl class
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a4cb82609ef8f1a37379c1451e733e8b046313e2
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672896"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441519"
 ---
 # <a name="content-controls"></a>Ovládací prvky obsahu
   Ovládací prvky obsahu poskytují způsob, jak můžete na dokumentech návrhu a šablony, které mají tyto funkce:  
@@ -72,13 +72,13 @@ ms.locfileid: "50672896"
   
 - Svázat data částí dokumentu nebo šablony. Databázová pole, spravované objekty v lze svázat ovládací prvky obsahu [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementy XML, které jsou uloženy v dokumentu a jiných zdrojů dat.  
   
-  V projektech na úrovni dokumentu můžete přidat ovládací prvky obsahu dokumentu v době návrhu nebo v době běhu. V doplňku VSTO projektů můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  V projektech na úrovni dokumentu můžete přidat ovládací prvky obsahu dokumentu v době návrhu nebo v době běhu. V doplňku VSTO projektů můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [jak: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Ovládací prvky obsahu můžete použít jenom v dokumentech, které jsou uložené ve formátu Open XML. Ovládací prvky obsahu nelze použít v dokumentech, které jsou uloženy v dokumentu Wordu 97 – 2003 (*doc*) formát.  
   
 ## <a name="types-of-content-controls"></a>Typy ovládacích prvků obsahu  
- Existují devět různé typy ovládacích prvků obsahu, které přidáte do dokumentů. Většina ovládací prvky obsahu mají odpovídající typ v <xref:Microsoft.Office.Tools.Word> oboru názvů. Můžete také použít obecný <xref:Microsoft.Office.Tools.Word.ContentControl>, což může představovat všechny dostupné ovládací prvky obsahu. Názorný postup ukazuje, jak využívat všechny dostupné ovládací prvky obsahu, najdete v části [návod: vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+ Existují devět různé typy ovládacích prvků obsahu, které přidáte do dokumentů. Většina ovládací prvky obsahu mají odpovídající typ v <xref:Microsoft.Office.Tools.Word> oboru názvů. Můžete také použít obecný <xref:Microsoft.Office.Tools.Word.ContentControl>, což může představovat všechny dostupné ovládací prvky obsahu. Názorný postup ukazuje, jak využívat všechny dostupné ovládací prvky obsahu, najdete v části [názorný postup: Vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Sestavení bloku Galerie  
  Galerie stavebních bloků umožňuje uživatelům vybrat ze seznamu *stavební bloky dokumentu* vložit do dokumentu. Dokument stavební blok je část obsahu, který se vytvořil pro použití více než jednou, jako je například běžné titulní stránky, naformátovanou tabulku nebo hlavičku. Další informace najdete v tématu <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> typu. Další informace o stavebních bloků, naleznete v tématu [co je nového pro vývojáře v aplikaci Word 2007](/previous-versions/office/developer/office-2007/bb266218(v=office.12)).  
@@ -112,15 +112,15 @@ ms.locfileid: "50672896"
 ### <a name="generic-content-control"></a>Obecný ovládací prvek obsahu  
  Je obecný ovládací prvek obsahu <xref:Microsoft.Office.Tools.Word.ContentControl> objekt, který může představovat jakýkoli z dostupných typů ovládacích prvků obsahu. Můžete změnit <xref:Microsoft.Office.Tools.Word.ContentControl> objekt chovají se jako jiný typ ovládacího prvku obsahu pomocí <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> vlastnost. Například, pokud vytvoříte <xref:Microsoft.Office.Tools.Word.ContentControl> objekt, představuje řídit prostého textu, můžete změnit ho v době běhu tak, aby se chová jako pole se seznamem.  
   
- Můžete vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objekty pouze v době běhu, není v době návrhu. Další informace najdete v tématu [postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ Můžete vytvořit <xref:Microsoft.Office.Tools.Word.ContentControl> objekty pouze v době běhu, není v době návrhu. Další informace najdete v tématu [jak: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 ## <a name="common-features-of-content-controls"></a>Společné funkce ovládacích prvků obsahu  
  Většina obsahu ovládací prvky se sdíleným sadu členů, které můžete použít k provádění běžných úloh. Následující tabulka popisuje některé úlohy, které můžete provést pomocí těchto členů.  
   
 |Pro tuto úlohu:|postupujte takto:|  
 |--------------------|--------------|  
-|Získání nebo nastavení text, který se zobrazí v ovládacím prvku.|Použití **Text** vlastnost. **Poznámka:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> a <xref:Microsoft.Office.Tools.Word.ContentControl> typy nemají tuto vlastnost.|  
-|Získání nebo nastavení dočasný text, který se zobrazí v ovládacím prvku, dokud uživatel neupraví ovládací prvek, ovládací prvek je naplněn daty ze zdroje dat nebo obsah ovládacího prvku se odstraní.|Použití **PlaceholderText** vlastnost. **Poznámka:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> typ nemá tuto vlastnost.|  
+|Získání nebo nastavení text, který se zobrazí v ovládacím prvku.|Použití **Text** vlastnost. **Poznámka:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> a <xref:Microsoft.Office.Tools.Word.ContentControl> typy nemají tuto vlastnost.|  
+|Získání nebo nastavení dočasný text, který se zobrazí v ovládacím prvku, dokud uživatel neupraví ovládací prvek, ovládací prvek je naplněn daty ze zdroje dat nebo obsah ovládacího prvku se odstraní.|Použití **PlaceholderText** vlastnost. **Poznámka:**  <xref:Microsoft.Office.Tools.Word.PictureContentControl> Typ nemá tuto vlastnost.|  
 |Získání nebo nastavení název, který se zobrazí ohraničení ovládacího prvku obsahu, když na něj uživatel klikne.|Použití **název** vlastnost.|  
 |Odeberte ovládací prvek z dokumentu automaticky po uživatel neupraví ovládací prvek. (Text v ovládacím prvku zůstane v dokumentu.)|Použití **dočasné** vlastnost.|  
 |Kód spusťte, když uživatel klikne na ovládací prvek obsahu, nebo když se kurzor se přesune do ovládacího prvku obsahu prostřednictvím kódu programu.|Zpracování <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> události ovládacího prvku.|  
@@ -142,7 +142,7 @@ ms.locfileid: "50672896"
 > [!NOTE]  
 >  Pokud jste vytvořili <xref:Microsoft.Office.Tools.Word.GroupContentControl> , která obsahuje vložené ovládací prvky obsahu, embedded ovládacích prvků obsahu nejsou chráněné automaticky. Je nutné použít **LockContents** vlastnosti každého vložit ovládací prvek zabránit uživatelům v úpravách jejich obsah.  
   
- Další informace o tom, jak Ochrana částí dokumentů pomocí ovládacích prvků obsahu najdete v tématu [postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ Další informace o tom, jak Ochrana částí dokumentů pomocí ovládacích prvků obsahu najdete v tématu [jak: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ##  <a name="DataBinding"></a> Vytvoření vazby dat na ovládací prvky obsahu  
  Pomocí vytvoření vazby ovládacího prvku obsahu ke zdroji dat můžou zobrazovat data v dokumentech. Při aktualizaci zdroje dat na ovládací prvek obsahu se změny projeví. Zpět do zdroje dat. můžete také uložit změny.  
@@ -158,7 +158,7 @@ ms.locfileid: "50672896"
 ### <a name="use-the-windows-forms-data-binding-model"></a>Datový model vazby Windows Forms  
  Většina obsahu řídí podporu modelu jednoduché datové vazby, který používá Windows Forms. Jednoduchá vazba dat znamená, že je vytvořena vazba ovládacího prvku na jeden datový prvek, jako je například hodnota ve sloupci tabulky dat. Další informace najdete v tématu [a datové vazby Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- V projektech na úrovni dokumentu, lze svázat data ovládacích prvků obsahu s využitím **zdroje dat** okna v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace o tom, jak přidat ovládací prvky vázané na data obsahu do dokumentů najdete v tématu [postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md) a [postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ V projektech na úrovni dokumentu, lze svázat data ovládacích prvků obsahu s využitím **zdroje dat** okna v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace o tom, jak přidat ovládací prvky vázané na data obsahu do dokumentů najdete v tématu [jak: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md) a [jak: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
  V následující tabulce jsou uvedeny ovládacích prvků obsahu, které můžete svázat s jednotlivými datovými typy v **zdroje dat** okna.  
   
@@ -166,11 +166,11 @@ ms.locfileid: "50672896"
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Pole|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Žádné|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Pole|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Žádná|  
   
  V úrovni dokumentu a projekty doplňku VSTO, můžete svázat ovládací prvek obsahu ke zdroji dat prostřednictvím kódu programu pomocí <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metodu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> vlastnost ovládacího prvku. Pokud to uděláte, předat řetězec **Text** k *propertyName* parametr <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metody. **Text** je výchozí vlastnost vazby dat z ovládacích prvků obsahu.  
   
- Ovládací prvky obsahu také podporují obousměrné datové vazby, ve kterém se ke zdroji dat aktualizují změny v ovládacím prvku. Další informace najdete v tématu [postupy: aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Ovládací prvky obsahu také podporují obousměrné datové vazby, ve kterém se ke zdroji dat aktualizují změny v ovládacím prvku. Další informace najdete v tématu [jak: Aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 > [!NOTE]  
 >  Ovládací prvky obsahu nepodporuje rozšířené datové vazby. Pokud svážete <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> nebo <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> ke zdroji dat s využitím datového modelu Windows Forms, uživatelům se zobrazí jenom jedna hodnota po kliknutí ovládací prvek. Pokud chcete vytvořit vazbu tyto ovládací prvky na sadu hodnot dat, které uživatelé můžou vybírat, můžete tyto ovládací prvky vázat na prvky ve vlastní část XML.  
@@ -188,7 +188,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- Návod, který ukazuje, jak svázat ovládací prvky obsahu vlastní části XML v další podrobnosti najdete v tématu [návod: vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Návod, který ukazuje, jak svázat ovládací prvky obsahu vlastní části XML v další podrobnosti najdete v tématu [názorný postup: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
  Pokud vytvoříte vazbu ovládacího prvku obsahu na vlastní část XML, je automaticky povolen obousměrný datové vazby. Pokud uživatel upravuje text v ovládacím prvku, odpovídající elementy XML se automaticky aktualizují. Podobně pokud se změní hodnot prvků objektu vlastní části XML, ovládací prvky obsahu, které jsou vázány na prvky XML se zobrazí nová data.  
   
@@ -229,7 +229,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="event-limitations"></a>Omezení událostí  
  Ovládací prvky obsahu se neposkytuje událost, která se vyvolá, když uživatel změní text nebo jiné položky v ovládacím prvku. Například neexistuje žádná událost, která se vyvolá, když uživatel vybere jiné položce v <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> nebo <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
   
- Pokud chcete zjistit, když uživatel upraví obsah ovládacího prvku obsahu, můžete svázat ovládací prvek na vlastní část XML a následně zpracovat <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> událostí. Tato událost je aktivována, když uživatel změní obsah ovládacího prvku, který je vázán na vlastní část XML. Názorný postup ukazuje, jak vytvořit vazbu ovládacího prvku obsahu na vlastní část XML, naleznete v tématu [návod: vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Pokud chcete zjistit, když uživatel upraví obsah ovládacího prvku obsahu, můžete svázat ovládací prvek na vlastní část XML a následně zpracovat <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> událostí. Tato událost je aktivována, když uživatel změní obsah ovládacího prvku, který je vázán na vlastní část XML. Názorný postup ukazuje, jak vytvořit vazbu ovládacího prvku obsahu na vlastní část XML, naleznete v tématu [názorný postup: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ###  <a name="checkbox"></a> Obsahu ovládací prvky zaškrtávacích políček v projektech aplikace Word  
  Word 2010 zavedl nový typ obsahu ovládacího prvku, který představuje zaškrtávací políčko. Ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] neposkytuje odpovídající typ CheckBoxContentControl pro použití v projektech pro systém Office. Vytvoření obsahu ovládacího prvku zaškrtávací políčko v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo projektu aplikace Word 2010, použijte <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> metodu pro vytvoření <xref:Microsoft.Office.Tools.Word.ContentControl> objektu a předejte <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> hodnota, která má metodu k určení obsahu ovládací prvek zaškrtávací políčko. Následující příklad kódu ukazuje, jak to provést.  

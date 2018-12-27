@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01e1c86e7cd601bad22f3e23fd65c4e2b260fa58
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852918"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647548"
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ N-úroveň * datové aplikace jsou datové aplikace, které jsou rozděleny do n
   
  Aplikace Visual Studio obsahuje několik funkcí, které usnadní vývojářům vytvářet n-vrstvé aplikace:  
   
--   [Vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md) poskytuje **projektu DataSet** vlastnost, která umožňuje oddělit dataset (Datová vrstva entity) a `TableAdapter`s (vrstva přístupu k datům) do samostatné projekty.  
+-   Poskytuje návrháři datových sad **projektu DataSet** vlastnost, která umožňuje oddělit dataset (Datová vrstva entity) a `TableAdapter`s (vrstva přístupu k datům) do samostatných projektů.  
   
 -   [LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení pro generování třídy DataContext a dat do samostatných oborů názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.  
   
@@ -91,7 +91,7 @@ Datová vrstva
   
  [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Návod: Přidávání ověřování do vícevrstvé datové aplikace](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Návod: Přidání ověřování do vícevrstvé datové aplikace](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
  [N-vrstvé a vzdálené aplikace s LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
@@ -101,4 +101,3 @@ Datová vrstva
  [Hierarchická aktualizace](../data-tools/hierarchical-update.md)   
  [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-

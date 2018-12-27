@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567469"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647774"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizace a lokalizace řešení pro Excel
   Tato část obsahuje informace o důležité informace pro řešení Microsoft Office Excel, která se spustí na počítačích, které mají jiné než anglické jazykové nastavení pro Windows. Většinu aspektů globalizace a lokalizace řešení pro Microsoft Office jsou stejné jako dojde při vytvoření jiných typů řešení s využitím sady Visual Studio. Obecné informace najdete v tématu [Globalize a lokalizace aplikací](/visualstudio/ide/globalizing-and-localizing-applications).  
@@ -39,7 +39,7 @@ ms.locfileid: "39567469"
   
  I když použijete formát Angličtina (Spojené státy) pro data, která je předána ani s nimi manipulovat spravovaným kódem, aplikace Excel interpretuje a zobrazí data správně podle nastavení národního prostředí koncového uživatele. Aplikace Excel můžete naformátovat data správně, protože spravovaný kód předá národní prostředí ID 1033 spolu s daty, což znamená, že data jsou v angličtině (USA) formátu a proto musí být přeformátovali tak, aby odpovídaly nastavení národního prostředí uživatele.  
   
- Například pokud koncoví uživatelé mají svá místní nastavení nastavit s národním prostředím němčina (Německo), očekávané datum 29. června, 2005, má být formátováno tímto způsobem: 29.06.2005. Nicméně pokud vaše řešení předá data do aplikace Excel jako řetězec, je nutné naformátovat datum podle používaného Angličtina (Spojené státy) formát: 6/29/2005. Pokud buňky je formátován jako buňku data, aplikace Excel se zobrazí datum ve formátu němčina (Německo).  
+ Například pokud koncoví uživatelé mají svá místní nastavení nastavit s národním prostředím němčina (Německo), očekávané datum 29. června, 2005, má být formátováno tímto způsobem: 29.06.2005. Ale pokud vaše řešení předá data do aplikace Excel jako řetězec, je nutné naformátovat datum podle používaného formátu Angličtina (Spojené státy): 6/29/2005. Pokud buňky je formátován jako buňku data, aplikace Excel se zobrazí datum ve formátu němčina (Německo).  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Předání dalších ID národního prostředí k objektovému modelu Excelu.  
  Common language runtime (CLR) automaticky předá národní prostředí ID 1033 pro všechny metody a vlastnosti v modelu objektů aplikace Excel, které přijímají data citlivé na národní prostředí. Neexistuje žádný způsob, jak změnit toto chování automaticky pro všechna volání do objektového modelu. Ale můžete předat ID jiné národní prostředí pro konkrétní metody pomocí <xref:System.Type.InvokeMember%2A> k volání metody a předáním ID národního prostředí pro *jazykovou verzi* parametru metody.  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  Veškerý kód, který otevře nebo jinak používá externí data, jako jsou soubory, které obsahují textový soubor s oddělovači (CSV soubory) exportovat ze starší verze systému, může mít vliv i pokud tyto soubory jsou exportovány všechny formátu kromě en US. Přístup k databázi nemusí být ovlivněno, protože všechny hodnoty musí být v binárním formátu, pokud databáze ukládá data jako řetězce nebo provádí operace, které nepoužívají binární formát. Také pokud je možné vytvářet dotazy SQL pomocí dat z Excelu, potřebujete ověřte, že jsou ve formátu en US, v závislosti na funkci, kterou používáte.  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: cílení na vícejazyčné uživatelské rozhraní sady Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Postupy: Cílení na vícejazyčné uživatelské rozhraní sady Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
   

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], event viewer
 - deploying applications [Office development in Visual Studio], event viewer
 - Office development in Visual Studio, event viewer
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8064c36b6b0e567f868fee7212560d726bbd3c66
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925109"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647955"
 ---
 # <a name="event-logging-for-office-solutions"></a>Protokolování události u řešení pro systém Office
   Můžete v prohlížeči událostí ve Windows najdete v článku zprávy o výjimkách, které jsou zachyceny [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] při instalaci nebo odinstalaci řešení Office. Tyto zprávy z protokolování událostí můžete použít k vyřešení instalace a problémů s nasazením.  
@@ -97,7 +97,7 @@ ms.locfileid: "49925109"
   
 5.  V **hodnotu proměnné** zadejte **1**.  
   
-6.  Klikněte na tlačítko **OK**.  
+6.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také:  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   

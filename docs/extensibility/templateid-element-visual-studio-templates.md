@@ -1,10 +1,9 @@
 ---
-title: TemplateID – Element (šablony sady Visual Studio) | Microsoft Docs
+title: TemplateId – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateID
 helpviewer_keywords:
@@ -16,19 +15,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7e431e603d0b2844431b5bffaedf7fa82bd7132
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eda4b3134d8e7e589c60ee8b8860042b7e0f1ff5
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560541"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID – element (šablony sady Visual Studio)
-Určuje identifikátor pro který je zařazený do kategorie do skupiny šablon položek pomocí šablony položky [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md) elementu.  
+Určuje identifikátor pro šablony položky, která je rozdělená na skupinu šablony položek podle [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md) elementu.  
   
- \<VSTemplate >  
+ \<Vstemplate – >  
  \<TemplateData >  
- \<TemplateID >  
+ \<TemplateId – >  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,17 +48,17 @@ Určuje identifikátor pro který je zařazený do kategorie do skupiny šablon 
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje v buď **nový projekt** nebo **přidat novou položku** dialogové okno.|  
+|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
- A `string` identifikátor pro který je zařazený do kategorie do skupiny šablon položek pomocí šablony položky, která představuje `TemplateGroupID` elementu.  
+ A `string` , která představuje identifikátor šablony položky, která je rozdělená na skupinu šablony položek podle `TemplateGroupID` elementu.  
   
 ## <a name="remarks"></a>Poznámky  
- `TemplateID` je volitelný element.  
+ `TemplateID` je volitelný prvek.  
   
- Pokud soubor .vstemplate vynechá `TemplateID` elementu, pak se [název](../extensibility/name-element-visual-studio-templates.md) element se používá jako identifikátor pro šablonu.  
+ Pokud se vynechá soubor .vstemplate `TemplateID` elementu, pak bude [název](../extensibility/name-element-visual-studio-templates.md) element se používá jako identifikátor šablony.  
   
- Hodnota `TemplateID` element se používá spolu s registrace systému projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) filtru šablon, které se zobrazují v **přidat novou položku** Dialogové okno.  
+ Hodnota `TemplateID` element se používá spolu s registrace systému projektu (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) do šablony filtrů, které se zobrazují v **přidat novou položku** Dialogové okno.  
   
 ## <a name="see-also"></a>Viz také  
  [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

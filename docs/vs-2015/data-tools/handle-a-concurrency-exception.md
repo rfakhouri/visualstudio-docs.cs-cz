@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c784bbcb73190abd2b12bf6cc7768d27087b2e14
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220414"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647710"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete dokončit tento návod, potřebujete:  
   
--   Přístup k ukázkové databázi Northwind pomocí oprávnění k provedení aktualizace. Další informace najdete v tématu [postupy: Instalace ukázkových databází](../data-tools/how-to-install-sample-databases.md).  
+-   Přístup k ukázkové databázi Northwind pomocí oprávnění k provedení aktualizace.
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které se zobrazí může lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici, kterou používáte. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -211,7 +211,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) jsou vyvolán
   
 8.  V první záznam ve formuláři (`ALFKI`), změňte`ContactName` k `Maria Anders1`.  
   
-9. Vyberte **Uložit** tlačítko.  
+9. Vyberte tlačítko **Uložit**.  
   
      Došlo k chybě souběžnosti se vyvolá a zobrazí se okno se zprávou.  
   

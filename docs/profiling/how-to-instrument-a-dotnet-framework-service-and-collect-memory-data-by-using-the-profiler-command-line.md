@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: instrumentace rozhraní .NET Framework služby a shromažďování dat paměti pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
+title: 'Postupy: Instrumentace služby rozhraní .NET Framework a shromažďovat paměťová Data pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eafd91fe97a4e4ceb33b9dc315b8b9d9014d27ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914694"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592869"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: instrumentace služby rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku profileru
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace služby rozhraní .NET Framework a shromažďování dat paměti pomocí příkazového řádku profileru
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] služby a shromažďování dat o využití paměti. Můžete shromažďovat data o přidělování paměti, nebo můžete shromažďovat přidělení paměti a životnosti objektů.  
 
 > [!NOTE]
@@ -26,7 +26,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 > [!NOTE]
 >  Metodou instrumentace nelze Profilovat službu, je-li nelze po spuštění počítače restartovat službu, například Služba spouštěná spolu s operačním systémem.  
 > 
->  Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v *\Team Tools\Performance nástroje* podadresáře [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. 
 
 ## <a name="start-the-profiling-session"></a>Spuštění relace profilování  
  Ke shromažďování dat výkonu z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] služby, můžete použít [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k inicializaci příslušných proměnných prostředí a [VSInstr.exe](../profiling/vsinstr.md) nástroj k vytvoření instrumentované kopie binárního souboru služby.  
@@ -45,7 +45,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 3. Pomocí Správce řízení služeb nahraďte původní binární soubor instrumentovanou verzí. Ujistěte se, že služby Typ spouštění je nastaven na ručně.  
 
-4. Inicializujte proměnné prostředí profilování. Typ:  
+4. Inicializujte proměnné prostředí profilování. Zadejte:  
 
     **Vsperfclrenv –** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
@@ -60,7 +60,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 6. Otevřete okno příkazového řádku.  
 
-7. Spusťte profiler. Typ:  
+7. Spusťte profiler. Zadejte:  
 
     **Nástroj VSPerfCmd**[/start](../profiling/start.md) **: trasování**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]      
 
@@ -87,7 +87,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 8. V případě potřeby spusťte službu.  
 
-9. Připojení profileru ke službě. Typ:  
+9. Připojení profileru ke službě. Zadejte:  
 
      **Nástroj VSPerfCmd / připojit:**`PID`&#124;`ProcessName`  
 
@@ -117,7 +117,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
      **/ Shutdown VSPerfCmd**  
 
-3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Typ:  
+3.  Po dokončení veškerého profilování vyčistěte proměnné prostředí profilování. Zadejte:  
 
      **Vsperfclrenv – /globaloff**  
 

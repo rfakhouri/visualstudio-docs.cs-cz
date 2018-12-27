@@ -22,19 +22,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64018143403555dfa671c7fb79be09dcd04d9011
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048578"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562163"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Úprava kódu a pokračování ladění v sadě Visual Studio (C#, VB, C++)
 Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět změny zdrojového kódu, zatímco je v režimu pozastavení. Při obnovení provádění programu výběrem příkazu ke spuštění jako **pokračovat** nebo **krok**, upravit a pokračovat automaticky použije změny kódu s určitými omezeními. To umožňuje provést změny kódu během relace ladění, namísto nutnosti zastavit a znovu zkompilovat celý váš program, restartujte relaci ladění.  
   
  Tento oddíl obsahuje následující témata:   
   
- [Postupy: Povolení a zákaz operace Upravit a pokračovat](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
+ [Postupy: Povolit a zakázat upravit a pokračovat](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Postupy: Zastavení změn kódu](../debugger/how-to-stop-code-changes.md)   
   
@@ -49,4 +49,4 @@ Upravit a pokračovat, je funkce ušetří čas, který umožní vám provádět
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Upravit a pokračovat, ladění, dialogové okno Možnosti](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

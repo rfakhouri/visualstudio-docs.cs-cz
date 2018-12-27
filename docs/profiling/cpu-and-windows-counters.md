@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592440"
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 
@@ -113,7 +113,7 @@ Seznam dostupných čítačů na počítač v integrovaném vývojovém prostře
 
 4. Z **kategorie čítače** vyberte čítačů skupiny. Čítače Windows pro skupiny se zobrazí v seznamu.
 
-     **Poznámka:** klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.
+     **Poznámka:** Klikněte na tlačítko **zrušit** vrátit k předchozí konfiguraci kolekce čítačů.
 
 ### <a name="command-line"></a>Příkazový řádek
 
@@ -127,13 +127,11 @@ Použití [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku
 
      **\<Visual Studio výkonu nástroje adresář >/querycounters \VSPerfCmd**
 
-     kde  *\<adresář nástrojů výkonu služby Visual Studio >* obvykle představuje cestu k adresáři nástroje pro měření výkonu instalaci sady Visual Studio
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team nástroje nástroje*
+     kde  *\<adresář nástrojů výkonu služby Visual Studio >* je cesta k adresáři nástroje pro měření výkonu instalace sady Visual Studio. Chcete-li získat cestu k nástroji Sledování výkonu, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Viz také:
 
 [Přehledy](../profiling/overviews-performance-tools.md)  
 [Postupy: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)  
 [Postupy: Shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)  
-[Postupy: shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Postupy: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)

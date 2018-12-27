@@ -1,6 +1,7 @@
 ---
-title: 'Postupy: vytváření projektů pro systém Office v sadě Visual Studio'
-ms.custom: ''
+title: 'Postupy: Vytvářet projekty pro Office v sadě Visual Studio'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -19,19 +20,19 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], creating
 - document-level customizations [Office development in Visual Studio], creating
 - application-level add-ins [Office development in Visual Studio], creating projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672766"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647884"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: vytváření projektů pro systém Office v sadě Visual Studio
+# <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: Vytvářet projekty pro Office v sadě Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytvoření doplňku VSTO a na úrovni dokumentu přizpůsobení pro aplikace Microsoft Office. Další informace o těchto typech projektů naleznete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -42,7 +43,7 @@ ms.locfileid: "50672766"
   
 1. Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud je vaše integrované vývojové prostředí (IDE) nastaveno pro použití [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] vývojové nastavení na **souboru** nabídce zvolte **nový** > **projektu**.  
   
-    **Nový projekt** zobrazí se dialogové okno.  
+    Zobrazí se dialogové okno **Nový projekt**.  
   
    > [!NOTE]  
    >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení. Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).  
@@ -93,7 +94,7 @@ ms.locfileid: "50672766"
   
 1. Na **souboru** nabídce zvolte **nový** > **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, na **souboru** nabídce zvolte **nový** > **projektu**.  
   
-    **Nový projekt** zobrazí se dialogové okno.  
+    Zobrazí se dialogové okno **Nový projekt**.  
   
    > [!NOTE]  
    >  Cílové projekty Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ve výchozím nastavení.  Další informace najdete v tématu [profil klienta rozhraní .NET Framework](/dotnet/framework/deployment/client-profile).  

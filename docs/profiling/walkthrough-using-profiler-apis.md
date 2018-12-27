@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Použití rozhraní API Profiler | Dokumentace Microsoftu'
+title: 'Průvodce: Pomocí rozhraní API Profiler | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5f1d842c6dcfd4385c800a593ccb20b4ee25129
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928058"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592635"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
+# <a name="walkthrough-using-profiler-apis"></a>Průvodce: Použití rozhraní API profileru
 
 Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilování rozhraní API nástroje. Chcete-li omezit množství dat shromážděných během profilace instrumentace použijete rozhraní API profileru.  
   
@@ -32,16 +32,18 @@ Návod používá k ukazují, jak používat aplikace v jazyce C# [!INCLUDE[vspr
   
  Profiler sady Visual Studio umožňuje omezit shromažďování dat o. Tento návod poskytuje příklad toho, jak omezit shromažďování dat pomocí rozhraní API profileru. Profiler sady Visual Studio poskytuje rozhraní API pro řízení shromažďování dat z v rámci aplikace.  
   
- Pro nativní kód profileru sady Visual Studio rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček *VSPerf.h*a knihovnu importu *VSPerf.lib*, jsou umístěny v *nástroje nástroje sady Microsoft Visual Studio 9\Team* adresáře.  
+ Pro nativní kód profileru sady Visual Studio rozhraní API jsou v *VSPerf.dll*. Soubor hlaviček *VSPerf.h*a knihovnu importu *VSPerf.lib*, jsou umístěny v *Microsoft Visual Studio\2017\Team nástroje Tools\PerfSDK* adresář.  Pro 64bitové aplikace, je složka zadaná *Microsoft Visual Studio\2017\Team nástroje Tools\x64\PerfSDK*
   
- Pro spravovaný kód, okna profilování rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tato knihovna DLL je součástí *nástroje nástroje sady Microsoft Visual Studio 9\Team* adresáře. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>.  
+ Pro spravovaný kód, okna profilování rozhraní API jsou v *Microsoft.VisualStudio.Profiler.dll*. Tato knihovna DLL se nachází v *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře. Pro 64bitové aplikace, je složka zadaná *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Další informace naleznete v tématu <xref:Microsoft.VisualStudio.Profiler>. 
+ 
+  
   
 ## <a name="prerequisites"></a>Požadavky  
  Tento názorný průvodce předpokládá, že vývojové prostředí podle vašeho výběru je nakonfigurována pro podporu ladění a vzorkování. Přehled o těchto nezbytných podmínkách naleznete v následujících tématech:  
   
- [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
+ [Postupy: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
   
- [Postupy: Odkazování na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Postupy: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Ve výchozím nastavení při spuštění profilování, profiler shromáždí data na globální úrovni. Následující kód při spuštění programu se změní na globální profilace vypnout.  
   
@@ -60,7 +62,7 @@ DataCollection.CurrentId);
 1.  Vytvořte nový projekt C# v sadě Visual Studio nebo pomocí příkazového řádku sestavení, v závislosti na vašich předvoleb.  
   
     > [!NOTE]
-    >  Sestavení musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve *nástroje sady Microsoft Visual Studio 9\Team nástroje* adresáře.  
+    >  Sestavení musí odkazovat *Microsoft.VisualStudio.Profiler.dll* knihovny, umístěný ve *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* adresáře.  
   
 2.  Zkopírujte a vložte následující kód do vašeho projektu:  
   
@@ -151,15 +153,15 @@ DataCollection.CurrentId);
   
      **Vsperfclrenv – /traceon**  
   
-3.  Zadejte následující příkaz: **VSInstr \<název souboru > .exe**  
+3.  Zadejte následující příkaz: **Nástroj VSInstr \<název souboru > .exe**  
   
-4.  Zadejte následující příkaz: **/start:trace VSPerfCmd/output:\<název souboru > .vsp**  
+4.  Zadejte následující příkaz: **/Start:trace VSPerfCmd/output:\<název souboru > .vsp**  
   
-5.  Zadejte následující příkaz: **VSPerfCmd /globaloff**  
+5.  Zadejte následující příkaz: **Nástroj VSPerfCmd /globaloff**  
   
 6.  Spuštění programu.  
   
-7.  Zadejte následující příkaz: **VSPerfCmd/Shutdown**  
+7.  Zadejte následující příkaz: **/ Shutdown VSPerfCmd**  
   
 8.  Zadejte následující příkaz: **VSPerfReport/calltrace:\<název souboru > .vsp**  
   

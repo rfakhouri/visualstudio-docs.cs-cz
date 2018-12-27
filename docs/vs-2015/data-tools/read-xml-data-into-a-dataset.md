@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 68c565091deeef19436d3a2efaeb9ccbc15aa1d3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219728"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648659"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -173,9 +173,9 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**Posuvníky**|**Svisle**|  
-    |`Button1`|**Jméno**|`ReadXmlButton`|  
+    |`Button1`|**Název**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
-    |`Button2`|**Jméno**|`ShowSchemaButton`|  
+    |`Button2`|**Název**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
 ## <a name="create-the-dataset-thatreceives-the-xml-data"></a>Vytvořit datovou sadu thatreceives XML data  
@@ -228,9 +228,8 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>Testovací formulář  
- Teď můžete otestovat formulář, abyste měli jistotu, že se chová podle očekávání.  
-  
-#### <a name="to-test-the-form"></a>K otestování formuláře  
+
+Teď můžete otestovat formulář, abyste měli jistotu, že se chová podle očekávání.
   
 1.  Vyberte **F5** ke spuštění aplikace.  
   
@@ -243,15 +242,15 @@ ADO.NET obsahuje jednoduché metody pro práci s daty XML. V tomto návodu vytvo
      Do textového pole zobrazuje schéma XML pro soubor XML.  
   
 ## <a name="next-steps"></a>Další kroky  
- Tento návod vás naučí základy čtení souboru XML do datové sady, jakož i vytváření schématu na základě obsahu souboru XML. Tady jsou některé úlohy, které vám může dělat:  
+
+Tento návod vás naučí základy čtení souboru XML do datové sady, jakož i vytváření schématu na základě obsahu souboru XML. Tady jsou některé úlohy, které vám může dělat:  
   
 -   Úprava dat v datové sadě a zápis jej vrátit jako XML. Další informace naleznete v tématu <xref:System.Data.DataSet.WriteXml%2A>.  
   
--   Úprava dat v datové sadě a vypsat do databáze. Další informace najdete v tématu [ukládání dat](../data-tools/saving-data.md).  
+-   Úprava dat v datové sadě a vypsat do databáze.
   
 ## <a name="see-also"></a>Viz také  
  [Návody k datům](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [Příprava aplikace pro příjem dat](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-

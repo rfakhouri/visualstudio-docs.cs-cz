@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: d71b38fe0d4aef412860a9dc65002c9b8d98c79c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 745f846d1d9e0200b7b6ba5555bf73a19286e5d3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812631"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647578"
 ---
 # <a name="upgrade-mdf-files"></a>Upgrade souborů .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +82,11 @@ Toto téma popisuje možnosti pro upgrade souboru databáze (MDF), po instalaci 
   
        -   Chcete-li použít konkrétní verzi: `(localdb)\ProjectsV12` nebo `(localdb)\ProjectsV13`, kde je V12 LocalDB 2014 a V13 je LocalDB 2016.  
   
-   -   **Připojit soubor databáze**: fyzickou cestu primárního souboru MDF.  
+   -   **Připojit soubor databáze**: Fyzická cesta primárního souboru MDF.  
   
-   -   **Logický název**: název, který chcete použít se souborem.  
+   -   **Logický název**: Název, který chcete použít se souborem.  
   
-3. Vyberte **OK** tlačítko.  
+3. Vyberte tlačítko **OK**.  
   
 4. Po zobrazení výzvy, vyberte **Ano** tlačítko Upgradovat soubor.  
   
@@ -120,11 +120,6 @@ Toto téma popisuje možnosti pro upgrade souboru databáze (MDF), po instalaci 
   
 3. V **název Instance systému SQL Server** textové pole, zadejte název instance systému SQL Server Express nebo LocalDB, který chcete použít. Pokud není název instance, zadejte `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.  
   
-4. Vyberte **OK** tlačítko.  
+4. Vyberte tlačítko **OK**.  
   
    SQL Server Express budou mít výchozí databázový stroj pro vaše aplikace.  
-  
-## <a name="see-also"></a>Viz také  
- [Přehled lokálních dat](../data-tools/local-data-overview.md)   
- [Návod: Připojování k datům v lokálního databázového souboru (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)
-

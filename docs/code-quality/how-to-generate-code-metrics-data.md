@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966528"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425770"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Postupy: vygenerování dat metrik kódu
+# <a name="how-to-generate-code-metrics-data"></a>Postupy: Vygenerování dat metrik kódu
 
 Můžete generování výsledků metrik kódu pro jeden nebo více projektů nebo celého řešení. Metriky kódu jsou k dispozici interaktivní vývojového prostředí (IDE) sady Visual Studio a pro C# a projekty Visual Basic, na příkazovém řádku.
 
-Kromě toho můžete nainstalovat [balíček NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , který obsahuje čtyři metriky kódu [analyzátor](roslyn-analyzers-overview.md) pravidla: CA1501, CA1502, CA1505 a CA1506. Tato pravidla jsou ve výchozím nastavení zakázané, ale můžete povolit jim **Průzkumníku řešení** nebo [sada pravidel, která](using-rule-sets-to-group-code-analysis-rules.md) souboru.
+Kromě toho můžete nainstalovat [balíček NuGet](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01) , který obsahuje čtyři metriky kódu [analyzátor](roslyn-analyzers-overview.md) pravidla: CA1501 CA1502, CA1505 a CA1506. Tato pravidla jsou ve výchozím nastavení zakázané, ale můžete povolit jim **Průzkumníku řešení** nebo [sada pravidel, která](using-rule-sets-to-group-code-analysis-rules.md) souboru.
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE metriky kódu
 
@@ -68,7 +68,7 @@ Ke generování spustitelný soubor *Metrics.exe*, postupujte podle těchto krok
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   Spustitelný soubor s názvem *Metrics.exe* generován *binární soubory* adresáře v kořenovém adresáři úložiště.
+   Spustitelný soubor s názvem *Metrics.exe* generován *artifacts\bin* adresáře v kořenovém adresáři úložiště.
 
    > [!TIP]
    > K vytvoření *Metrics.exe* v [režim starší verze](#legacy-mode), spusťte následující příkaz:

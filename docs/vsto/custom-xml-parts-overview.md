@@ -21,24 +21,24 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], custom XML parts
 - Excel [Office development in Visual Studio], custom XML parts
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671726"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648349"
 ---
 # <a name="custom-xml-parts-overview"></a>Přehled vlastních částí XML
   Vložit XML data do dokumentů pro některé aplikace Microsoft Office. Při vložení dat XML v dokumentu s názvem data *vlastní část XML*.  
   
  Můžete vytvořit a upravit vlastní části XML v dokumentu s použitím doplňku VSTO nebo řešení v sadě Visual Studio na úrovni dokumentu. Není nutné ke spuštění aplikace Microsoft Office, vytvářet a upravovat vlastní části XML.  
   
- **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni dokumentu a projekty doplňku VSTO pro Excel, PowerPoint a Word. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Platí pro:** Informace v tomto tématu se vztahují na projekty na úrovni dokumentu a projekty doplňku VSTO pro Excel, PowerPoint a Word. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 > [!NOTE]  
 >  Visual Studio také umožňuje datové objekty mezipaměti v přizpůsobeních na úrovni dokumentu. Tato funkce se liší od vlastní části XML, i když existují určité podobnosti. Další informace najdete v tématu [data v přizpůsobeních na úrovni dokumentu v mezipaměti](../vsto/cached-data-in-document-level-customizations.md).  
@@ -52,7 +52,7 @@ ms.locfileid: "50671726"
   
 -   [Úvod do formátů souborů Office (2007) Open XML](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [Postupy: manipulace s dokumenty formáty Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
+-   [Postupy: Manipulace s dokumenty formáty Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
 -   [Návod: Formát XML aplikace Word 2007](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
@@ -86,4 +86,4 @@ ms.locfileid: "50671726"
  [Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
  [Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [Ovládací prvky obsahu](../vsto/content-controls.md)   
- [Návod: Vazba ovládacích prvků obsahu s vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [Návod: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  

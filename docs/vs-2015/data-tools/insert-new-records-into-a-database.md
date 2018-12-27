@@ -23,18 +23,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e4dbae766efbcf56fb421d62239ae3325cc1423
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891470"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648246"
 ---
 # <a name="insert-new-records-into-a-database"></a>Vkládání nových záznamů do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metody nebo jeden z objektu TableAdapter dbdirect – metody (konkrétně `TableAdapter.Insert` metoda). Další informace najdete v tématu [TableAdapter – přehled](../data-tools/tableadapter-overview.md).  
+Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metody nebo jeden z objektu TableAdapter dbdirect – metody (konkrétně `TableAdapter.Insert` metoda).
   
  Pokud vaše aplikace nepoužívá objekty TableAdapter, můžete použít příkaz objektů (například <xref:System.Data.SqlClient.SqlCommand>) pro vkládání nových záznamů do databáze.  
   
@@ -42,7 +42,7 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
  Pokud vaše aplikace používá objekty k ukládání dat, nebo pokud chcete lepší kontrolu nad vytváření nových záznamů v databázi, použijte `TableAdapter.Insert` metody.  
   
- Pokud vaše TableAdapter nemá `Insert` metoda, znamená to, že buď objektu TableAdapter je nakonfigurován na použití uložené procedury nebo jeho `GenerateDBDirectMethods` je nastavena na `false`. Nastavte TableAdapter `GenerateDBDirectMethods` vlastnost `true` v rámci [Návrhář Dataset](../data-tools/creating-and-editing-typed-datasets.md)a potom uložte datovou sadu. Tímto se znova vygeneruje TableAdapter. Pokud TableAdapter stále nemá `Insert` metodu a poté v tabulce pravděpodobně neposkytuje dostatek informací o schématu rozlišovat mezi jednotlivé řádky (například může existovat žádná sada je primární klíče v tabulce).  
+ Pokud vaše TableAdapter nemá `Insert` metoda, znamená to, že buď objektu TableAdapter je nakonfigurován na použití uložené procedury nebo jeho `GenerateDBDirectMethods` je nastavena na `false`. Nastavte TableAdapter `GenerateDBDirectMethods` vlastnost `true` z v návrháři datových sad a uložit datovou sadu. Tímto se znova vygeneruje TableAdapter. Pokud TableAdapter stále nemá `Insert` metodu a poté v tabulce pravděpodobně neposkytuje dostatek informací o schématu rozlišovat mezi jednotlivé řádky (například může existovat žádná sada je primární klíče v tabulce).  
   
 ## <a name="insert-new-records-by-using-tableadapters"></a>Vkládání nových záznamů pomocí objektů TableAdapter  
  Objekty TableAdapter umožňují různé způsoby vkládání nových záznamů do databáze, v závislosti na požadavcích vaší aplikace.  
@@ -51,7 +51,7 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Chcete-li vkládání nových záznamů do databáze s použitím TableAdapter.Update – metoda  
   
-1. Přidání nových záznamů do požadované <xref:System.Data.DataTable> vytvořením nového <xref:System.Data.DataRow> a jejím přidáním na <xref:System.Data.DataTable.Rows%2A> kolekce. Další informace najdete v tématu [postupy: Přidání řádků do DataTable určitého](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Přidání nových záznamů do požadované <xref:System.Data.DataTable> vytvořením nového <xref:System.Data.DataRow> a jejím přidáním na <xref:System.Data.DataTable.Rows%2A> kolekce. Další informace najdete v tématu [jak: Přidání řádků do DataTable určitého](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Po přidání nových řádků do <xref:System.Data.DataTable>, zavolejte `TableAdapter.Update` metody. Můžete řídit objem dat se aktualizovat předáním buď celý <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, pole <xref:System.Data.DataRow>s nebo jediný <xref:System.Data.DataRow>.  
   
@@ -75,7 +75,7 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
   
 ## <a name="insert-new-records-by-using-command-objects"></a>Vkládání nových záznamů pomocí příkazu objektů  
- V následujícím příkladu vloží nové záznamy přímo do databáze pomocí příkazu objekty. Další informace o používání objektů příkazu ke spuštění příkazů a uložených procedur, naleznete v tématu [načítání dat do aplikace](../data-tools/fetching-data-into-your-application.md).  
+ V následujícím příkladu vloží nové záznamy přímo do databáze pomocí příkazu objekty.
   
  Následující postup používá `Region` tabulky v databázi Northwind jako příklad.  
   
@@ -91,4 +91,3 @@ Vkládání nových záznamů do databáze, můžete `TableAdapter.Update` metod
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
-

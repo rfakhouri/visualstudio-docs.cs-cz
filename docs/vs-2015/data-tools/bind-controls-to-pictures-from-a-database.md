@@ -26,12 +26,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e50a3126407c9306e2a1f00a411e08f69c69602
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189498"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647069"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Vytvoření vazby ovládacích prvků k obrázkům z databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Můžete použít **zdroje dat** okno vytvořit vazbu bitovou kopii do databáze
   
  Obrázky v databázi jsou většinou uložena jako pole bajtů. Položky v **zdroje dat** nastaveno okno, které jsou uloženy jako pole bajtů mít pod kontrolou zadejte **žádný** ve výchozím nastavení, protože pole bajtů může obsahovat cokoli od jednoduchých pole bajtů na spustitelný soubor velké aplikace. Chcete-li vytvořit ovládací prvek vázaný na data pro položku pole bajtů v **zdroje dat** okna, která představuje obrázek, je nutné vybrat ovládacího prvku k vytvoření.  
   
- Následující postup předpokládá, že **zdroje dat** okno je již naplněný položku, která je vázána na bitové kopie. Další informace najdete v tématu [postupy: připojení k datům v databázi](../data-tools/how-to-connect-to-data-in-a-database.md).  
+ Následující postup předpokládá, že **zdroje dat** okno je již naplněný položku, která je vázána na bitové kopie.
   
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>K vytvoření vazby obrázek v databázi do ovládacího prvku  
+## <a name="bind-a-picture-in-a-database-to-a-control"></a>Vytvořit vazbu obrázek v databázi do ovládacího prvku  
   
 1.  Ujistěte se, že chcete přidat ovládací prvek na návrhové ploše je otevřený Návrhář WPF nebo Návrhář formulářů Windows.  
   
@@ -59,4 +59,3 @@ Můžete použít **zdroje dat** okno vytvořit vazbu bitovou kopii do databáze
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)
-

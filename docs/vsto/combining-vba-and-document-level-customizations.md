@@ -22,17 +22,17 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], about VBA and document-level customizations
 - managed code [Office development in Visual Studio], Visual Basic for Applications and
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878073"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441714"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovni dokumentu a VBA
   Používat Visual Basic for Applications (VBA) kódu v dokumentu, který je součástí přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word nebo Microsoft Office Excel. Můžete volat kód VBA v dokumentu z vlastního nastavení sestavení nebo projektu, aby umožňoval kód VBA v dokumentu k volání kódu v sestavení přizpůsobení můžete nakonfigurovat.  
@@ -118,7 +118,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
   3.  Nastavte **ReferenceAssemblyFromVbaProject** vlastnost všechny hostitele položku třídy v projektu a **True**. To vloží vlastní nastavení sestavení knihovny typů do sestavení a přidá odkaz na knihovnu typů do projektu VBA v dokumentu.  
   
-  Podrobné pokyny najdete v tématu [postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) a [postupy: vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+  Podrobné pokyny najdete v tématu [jak: Vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) a [jak: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
   **EnableVbaCallers** a **ReferenceAssemblyFromVbaProject** jsou k dispozici pouze ve vlastnosti **vlastnosti** okno v době návrhu, nelze je použít v době běhu . Chcete-li zobrazit vlastnosti, otevřete návrhář pro položku hostitele v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace o konkrétních úloh, které Visual Studio provádí při nastavování těchto vlastností najdete v tématu [úlohy prováděné vlastnosti hostitele](#PropertyTasks).  
   
@@ -245,7 +245,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ## <a name="troubleshoot"></a>Řešení potíží
  Následující tabulka uvádí některé běžné chyby a návrhy pro opravu chyb.  
   
-|Chyba|Návrh|  
+|Chyba|Doporučení|  
 |-----------|----------------|  
 |Jakmile nastavíte **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** vlastnost, chybová zpráva uvádí, že dokument neobsahuje projekt VBA, nebo nemáte oprávnění k přístupu Projekt VBA v dokumentu.|Zajistěte, aby dokument v projektu obsahuje alespoň jedno makro VBA, má dostatečná vztahu důvěryhodnosti pro spuštění projektu VBA a projekt VBA není chráněn heslem.|  
 |Jakmile nastavíte **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** vlastnost, chybová zpráva uvádí, že <xref:System.Runtime.InteropServices.GuidAttribute> deklarace je chybějící nebo poškozené.|Ujistěte se, že <xref:System.Runtime.InteropServices.GuidAttribute> deklarace se nachází v *AssemblyInfo.cs* nebo *AssemblyInfo.vb* soubor v projektu, a že tento atribut je nastaven na platný identifikátor GUID.|  
@@ -253,8 +253,8 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Po přejmenování vlastního nastavení sestavení kód VBA, který volá do vlastního nastavení sestavení přestane fungovat.|Pokud změníte název vlastního nastavení sestavení po vystavení pro kód VBA, dojde k přerušení propojení mezi projektu VBA v dokumentu a vlastního nastavení sestavení. Chcete-li tento problém vyřešit, změňte **ReferenceFromVbaAssembly** vlastnosti ve vašem projektu a **False** a pak zpátky **True**a potom nahraďte všechny odkazy na staré sestavení název v kód VBA s novým názvem sestavení.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Postupy: vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Postupy: Vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Postupy: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [Návod: Volání kódu z jazyka VBA v aplikaci Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   

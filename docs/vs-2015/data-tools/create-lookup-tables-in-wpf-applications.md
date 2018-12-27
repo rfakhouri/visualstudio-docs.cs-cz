@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ed4bdca8b438d8daa10e385e768825c403bf54
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303339"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648330"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje
   
 1.  Jedním z následujících typů zdrojů dat se souvisejícími daty, přidejte do projektu:  
   
-    -   Datová sada nebo modelu Entity Data Model. Další informace najdete v tématu [postupy: připojení k datům v databázi](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Datová sada nebo modelu Entity Data Model.
+
+    -   WCF Data Service, služby WCF nebo webové službě. Další informace najdete v tématu [jak: Připojte se k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   WCF Data Service, služby WCF nebo webové službě. Další informace najdete v tématu [postupy: připojení k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md).  
-  
-    -   Objekty. Další informace najdete v tématu [postupy: připojení k datům v objektech](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    -   Objekty. Další informace najdete v tématu [jak: Připojte se k datům v objektech](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     >  Než vytvoříte vyhledávací tabulky, musí existovat dvě souvisejících tabulky nebo objekty jako zdroj dat pro projekt.  
@@ -103,5 +103,4 @@ Termín *vyhledávací tabulka* (říká se jim *vazbu vyhledávání*) popisuje
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Zobrazení souvisejících dat v aplikacích WPF](../data-tools/display-related-data-in-wpf-applications.md)   
- [Návod: Zobrazování souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [Návod: Zobrazení souvisejících dat v aplikaci WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

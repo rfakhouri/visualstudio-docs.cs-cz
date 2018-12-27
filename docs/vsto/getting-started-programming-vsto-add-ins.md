@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], getting started
 - add-ins [Office development in Visual Studio], getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858885"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648678"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Začínáme s programováním doplňků VSTO
   Doplňky VSTO můžete použít k automatizaci aplikace Microsoft Office, rozšíření funkcí aplikace a přizpůsobení uživatelského rozhraní (UI) aplikace. Informace o porovnání doplňků VSTO pro jiné druhy řešení pro Office můžete vytvořit pomocí sady Visual Studio najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -33,7 +33,7 @@ ms.locfileid: "49858885"
 ## <a name="create-vsto-add-in-projects"></a>Vytvářejte projekty doplňku VSTO  
  Vytvořit projekty doplňku VSTO pomocí jedné z šablony projektu doplňku VSTO v **nový projekt** dialogové okno. Tyto šablony zahrnují odkazy na požadovaná sestavení a soubory projektu. Visual Studio obsahuje šablony projektů doplňků VSTO pro většinu aplikací v sadě Office.  
   
- Další informace o tom, jak vytvořit projekt doplňku VSTO v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Další informace o šablonách projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
+ Další informace o tom, jak vytvořit projekt doplňku VSTO v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Další informace o šablonách projektů, naleznete v tématu [Přehled šablon projektů Office project](../vsto/office-project-templates-overview.md).  
   
 ## <a name="develop-vsto-add-in-projects"></a>Vývoj projekty doplňků VSTO  
  Při vytváření projektu doplňku VSTO, sada Visual Studio automaticky vytvoří *ThisAddIn.vb* (v [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) nebo *ThisAddIn.cs* soubor kódu (v jazyce C#). Tento soubor obsahuje `ThisAddIn` třídu, která poskytuje základ pro váš doplněk VSTO. Členové této třídy můžete použít ke spuštění kódu při doplňku VSTO načteny nebo uvolněny, pro přístup k modelu objektu hostitelskou aplikaci a rozšířit funkce aplikace. Další informace najdete v tématu [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
@@ -90,7 +90,7 @@ ms.locfileid: "49858885"
   Seznam témat, která vás provede některé běžné úlohy v projektech pro systém Office naleznete v tématu [běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   

@@ -21,20 +21,19 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 389b074fdabbec9ab0b12452cc1df74635e557a0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220531"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647742"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Přidávání ověřování do vícevrstvé datové sady
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Přidání ověřování do datové sady, která je rozdělena na n vrstvého řešení je v podstatě stejné jako přidání ověřování pro jednosouborovou datovou sadu (datová sada v jednom projektu). Navrhované umístění pro ověřování dat je během <xref:System.Data.DataTable.ColumnChanging> a/nebo <xref:System.Data.DataTable.RowChanging> událostí datové tabulky.  
   
- [Vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md) poskytuje funkce pro vytvořit dílčí třídy, na které můžete přidat uživatelský kód pro sloupec – a řádek – Změna události tabulek dat v datové sadě. Další informace o přidání kódu k datové sadě v Nvrstvých řešeních viz [přidání kódu do datových sad v n vrstvé aplikace](../data-tools/add-code-to-datasets-in-n-tier-applications.md), a [přidejte kód do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Další informace o dílčích třídách naleznete v tématu [postupy: rozdělení třídy na částečné třídy (návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) nebo [částečné třídy a metody](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
+Návrhář DataSet poskytuje funkce pro vytvořit dílčí třídy, na které můžete přidat uživatelský kód pro sloupec – a řádku - Změna události tabulek dat v datové sadě. Další informace o přidání kódu k datové sadě v Nvrstvých řešeních viz [přidání kódu do datových sad v n vrstvé aplikace](../data-tools/add-code-to-datasets-in-n-tier-applications.md), a [přidejte kód do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Další informace o dílčích třídách naleznete v tématu [jak: Rozdělení třídy na částečné třídy (návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) nebo [částečné třídy a metody](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
 >  Když oddělíte datové sady od adaptérů tabulky (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady je nutné ručně přesunout do projektu datové sady.  
@@ -43,7 +42,7 @@ Přidání ověřování do datové sady, která je rozdělena na n vrstvého ř
 >  Návrhář Dataset nevytváří automaticky obslužné rutiny událostí v jazyce C# pro <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging> události. Budete muset ručně vytvořit obslužnou rutinu události a připojí obslužnou rutinu události do základní události. Následující postupy popisují postup vytvoření obslužné rutiny události požadované v jazyce Visual Basic i C#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges jednotlivých sloupcích  
- Ověřte hodnoty v jednotlivých sloupcích pomocí manipulace <xref:System.Data.DataTable.ColumnChanging> událostí. <xref:System.Data.DataTable.ColumnChanging> Událost se vyvolá, když se změní hodnota ve sloupci. Vytvořte obslužnou rutinu události pro <xref:System.Data.DataTable.ColumnChanging> události poklepáním na požadovaný sloupec na [vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md).  
+ Ověřte hodnoty v jednotlivých sloupcích pomocí manipulace <xref:System.Data.DataTable.ColumnChanging> událostí. <xref:System.Data.DataTable.ColumnChanging> Událost se vyvolá, když se změní hodnota ve sloupci. Vytvořte obslužnou rutinu události pro <xref:System.Data.DataTable.ColumnChanging> události poklepáním na požadovaný sloupec v datové sadě.  
   
  Poprvé, když poklepete na sloupec, Návrhář vytvoří obslužnou rutinu události pro <xref:System.Data.DataTable.ColumnChanging> událostí. `If…Then` Příkaz je také vytvořen a testuje určitý sloupec. Například následující kód se vygeneruje, když dvakrát kliknete na sloupec RequiredDate v tabulce objednávky Northwind:  
   
@@ -62,7 +61,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Přidání ověřování při změnách hodnot jednotlivých sloupců  
   
-1.  Otevřete datovou sadu v [vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md) dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [postupy: otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otevřete datovou sadu v Návrháři dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Poklepejte na sloupec, který chcete ověřit. Tato akce vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužné rutiny události.  
   
@@ -117,11 +116,11 @@ End Sub
   
  Při zadání objednávek ověřování zajišťuje, že objednávka není zadána s hodnotu RequiredDate, která je v nebo před OrderDate. V tomto příkladu hodnoty sloupců RequiredDate a OrderDate nutné srovnat, takže ověření změn jednotlivých sloupců nemá smysl.  
   
- Vytvořte obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> události poklikáním na název tabulky v záhlaví tabulky na [vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md).  
+ Vytvořte obslužnou rutinu události pro <xref:System.Data.DataTable.RowChanging> události dvojitým kliknutím na název tabulky v záhlaví tabulky.  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Přidání ověřování při změnách celých řádků  
   
-1.  Otevřete datovou sadu v [vytváření a úpravy typované datové sady](../data-tools/creating-and-editing-typed-datasets.md) dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [postupy: otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1.  Otevřete datovou sadu v Návrháři dvojitým kliknutím **XSD** ve **Průzkumníka řešení**. Další informace najdete v tématu [jak: Otevření datové sady v návrháři datových sad](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2.  Poklepejte na záhlaví tabulky dat v návrháři.  
   
@@ -183,4 +182,3 @@ End Sub
  [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)   
  [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)
-

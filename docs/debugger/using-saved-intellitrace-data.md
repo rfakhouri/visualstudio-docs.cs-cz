@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912965"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685003"
 ---
 # <a name="using-saved-intellitrace-data"></a>Použití dat uložených nástrojem IntelliTrace
 Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění ladění od souboru protokolu IntelliTrace (.iTrace). Tento soubor může obsahovat události související s výkonem, výjimky, vlákna, kroky testu, moduly a další systémové informace, že nástroj IntelliTrace zaznamenává za běhu aplikace.
@@ -190,7 +190,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
     |**Pole IntelliTrace**|**Pole SharePoint ULS**|
     |----------------------------|------------------------------|
     |**ID**|**ID události**|
-    |**úroveň**|**úroveň**|
+    |**Úroveň**|**Úroveň**|
     |**Id kategorie**|**Id kategorie**|
     |**Kategorie**|**Kategorie**|
     |**Oblast**|**Produkt**|
@@ -207,7 +207,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 
     ![Protokol IntelliTrace &#45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Návod, naleznete v tématu [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).
+   Návod, naleznete v tématu [názorný postup: Ladění aplikace SharePoint s použitím technologie IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pro různé druhy dat, která najdete v článku záznamy agenta [funkce IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Seznam vláken
  Prozkoumejte zaznamenaná vlákna spuštěná v cílovém procesu. Můžete spustit ladění od první platné události IntelliTrace ve zvoleném vlákně.
@@ -225,7 +225,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |**Sloupec**|**Ukazuje,**|
 |----------------|-------------------|
 |**ID**|Číslo ID vlákna|
-|**Jméno**|Název vlákna. Nepojmenovaná vlákna se zobrazují jako "\<bez názvu >".|
+|**Název**|Název vlákna. Nepojmenovaná vlákna se zobrazují jako "\<bez názvu >".|
 |**Čas spuštění**|Čas vytvoření vlákna|
 |**Koncový čas**|Čas, kdy vlákno bylo dokončeno.|
 
@@ -258,7 +258,7 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
 |----------------|-------------------|
 |**Název modulu**|Název souboru modulu|
 |**Cesta modulu**|Umístění disku, kde byl modul načten|
-|**ID modulu**|Jedinečný identifikátor modulu, který je specifický pro verzi a přispívá k odpovídající soubory symbolů (PDB). Zobrazit [hledání souborů symbolů (PDB) a zdrojové soubory](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**ID modulu**|Jedinečný identifikátor modulu, který je specifický pro verzi a přispívá k odpovídající soubory symbolů (PDB). Zobrazit [hledání souborů symbolů (PDB) a zdrojové soubory](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Kde lze získat další informace?
  [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ Přejdete na konkrétní okamžiky provádění vaší aplikace při spuštění
  [Ladicí program sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>Doprovodné materiály
- [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 6: testovací sady nástrojů](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Testování pro nepřetržité dodávky s Visual Studio 2012 – kapitola 6: Testování sady nástrojů](http://go.microsoft.com/fwlink/?LinkID=255203)

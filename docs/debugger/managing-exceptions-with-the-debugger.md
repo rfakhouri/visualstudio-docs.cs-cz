@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057915"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561522"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Správa výjimek pomocí ladicího programu v sadě Visual Studio
 
@@ -227,4 +227,4 @@ Přidat podmíněné výjimky:
 [Postupy: Kontrola systémového kódu po výjimce](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [Postupy: Použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)<br/>
 [Použití kontrol za běhu bez běhové knihovny jazyka C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Kurz: Zjistěte, jak ladit pomocí sady Visual Studio](../debugger/getting-started-with-the-debugger.md)
+[První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

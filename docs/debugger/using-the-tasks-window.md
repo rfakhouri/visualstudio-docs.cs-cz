@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561574"
 ---
 # <a name="using-the-tasks-window"></a>Používání okna úloh
 
@@ -52,7 +52,7 @@ Sloupce v **úlohy** v okně zobrazí následující informace.
 |**příznaky**|Zobrazuje úlohy, které jsou označeny příznakem a umožňuje označit nebo zrušit označení příznakem úlohu.|
 |**Ikony**|Žlutá šipka označuje aktuální úlohu. Aktuální úkol je úkol úplně nahoře v aktuálním vláknu.<br /><br /> Bílé šipka označuje zásadní úloh, to znamená, ten, který byl aktuální v době byla vyvolána ladicí program.<br /><br /> Ikona pozastavení označuje úlohu, která byla zmrazené uživatelem. Můžete ukotvit a uvolnění úlohy kliknutím pravým tlačítkem myši v seznamu.|
 |**ID**|Číslo poskytnuté systémem pro úlohu. V nativním kódu jde o adresu úkolu.|
-|**Status**|Aktuální stav (naplánované, aktivní, zablokování, jeví jako zablokované, čeká na nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto se ještě nemá zásobník volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úlohy je ten, který se spouští kód před přerušení v ladicím programu.<br /><br /> Čeká se na nebo zablokování úlohy je ten, který je zablokovaná, protože se čeká na událost má být signalizován, uvolnění zámku nebo na dokončení jiné úlohy.<br /><br /> Jeví jako zablokované úkol je úkol čekání, jehož vlákna je zablokovaná s jiným vláknem.<br /><br /> Najeďte myší **stav** buňky pro jeví jako zablokované nebo čeká na úlohu zobrazíte další informace o bloku. **Upozornění:** **úlohy** okno hlásí zablokování pouze pro zablokování úkol, který používá synchronizační jednoduchého typu, který je podporovaný počkejte procházení řetězce (WCT). Například pro jeví jako zablokované <xref:System.Threading.Tasks.Task> objektu, který používá WCT, ladicí program hlásí **zablokována čeká na**. Jeví jako zablokované úkolu, který je spravovaný nástrojem modulu Runtime souběžnosti, který nepoužívá WCT, ladicí program hlásí **čekání**. Další informace o WCT najdete v tématu [počkejte procházení řetězu](/windows/desktop/Debug/wait-chain-traversal).|
+|**Status**|Aktuální stav (naplánované, aktivní, zablokování, jeví jako zablokované, čeká na nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto se ještě nemá zásobník volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úlohy je ten, který se spouští kód před přerušení v ladicím programu.<br /><br /> Čeká se na nebo zablokování úlohy je ten, který je zablokovaná, protože se čeká na událost má být signalizován, uvolnění zámku nebo na dokončení jiné úlohy.<br /><br /> Jeví jako zablokované úkol je úkol čekání, jehož vlákna je zablokovaná s jiným vláknem.<br /><br /> Najeďte myší **stav** buňky pro jeví jako zablokované nebo čeká na úlohu zobrazíte další informace o bloku. **Upozornění:**  **Úlohy** okno hlásí zablokování pouze pro zablokování úkol, který používá synchronizační jednoduchého typu, který je podporovaný počkejte procházení řetězce (WCT). Například pro jeví jako zablokované <xref:System.Threading.Tasks.Task> objektu, který používá WCT, ladicí program hlásí **zablokována čeká na**. Jeví jako zablokované úkolu, který je spravovaný nástrojem modulu Runtime souběžnosti, který nepoužívá WCT, ladicí program hlásí **čekání**. Další informace o WCT najdete v tématu [počkejte procházení řetězu](/windows/desktop/Debug/wait-chain-traversal).|
 |**Čas spuštění**|Doba, jakou úloha začal být aktivní.|
 |**Doba trvání**|Počet sekund, po které byl aktivní úloha.|
 |**Čas dokončení**|Čas, kdy úloha dokončena.|
@@ -96,7 +96,7 @@ Sloupce v **úlohy** v okně zobrazí následující informace.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)
 - [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)
 - [Paralelní programování](/dotnet/standard/parallel-programming/index)
 - [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime)

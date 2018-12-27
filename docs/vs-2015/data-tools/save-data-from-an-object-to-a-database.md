@@ -21,18 +21,18 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90a9368ac723d49710c937483133b64876fd3a7c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207451"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648449"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metody můžete uložit data v objektech k databázi (například `TableAdapter.Insert`). Další informace najdete v tématu [TableAdapter – přehled](../data-tools/tableadapter-overview.md).  
+Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metody můžete uložit data v objektech k databázi (například `TableAdapter.Insert`).
   
  K uložení dat z kolekce objektů smyčky přes kolekce objektů (například smyčka pro další) a odešlete hodnoty pro každý objekt do databáze pomocí jedné z objektu TableAdapter dbdirect – metody.  
   
@@ -85,4 +85,3 @@ Předáním hodnoty z objektu do jednoho objektu TableAdapter dbdirect – metod
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
-

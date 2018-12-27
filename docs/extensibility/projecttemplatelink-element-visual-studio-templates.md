@@ -2,9 +2,8 @@
 title: ProjectTemplateLink – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495970"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561496"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink – element (šablony sady Visual Studio)
 Určuje cestu k *.vstemplate* souboru jednoho projektu ve víceprojektové šabloně.  
@@ -71,7 +70,7 @@ Určuje cestu k *.vstemplate* souboru jednoho projektu ve víceprojektové šabl
  Tento text určuje cestu k *.vstemplate* souboru šablony.  
   
 ## <a name="remarks"></a>Poznámky  
- Šablony vícenásobných projektů slouží jako kontejnery pro dva nebo více projektů. `ProjectTemplateLink` Element slouží k určení umístění *.vstemplate* soubor pro některý z projektů v šabloně. *.Vstemplate* soubor víceprojektové šablony obsahuje jeden `ProjectTemplateLink` – element pro každý projekt v šabloně. Další informace o víceprojektových šablonách naleznete v tématu [postupy: vytváření šablon vícenásobného projektu](../ide/how-to-create-multi-project-templates.md).  
+ Šablony vícenásobných projektů slouží jako kontejnery pro dva nebo více projektů. `ProjectTemplateLink` Element slouží k určení umístění *.vstemplate* soubor pro některý z projektů v šabloně. *.Vstemplate* soubor víceprojektové šablony obsahuje jeden `ProjectTemplateLink` – element pro každý projekt v šabloně. Další informace o víceprojektových šablonách naleznete v tématu [jak: Vytváření šablon vícenásobného projektu](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje jednoduchý kořenový víceprojektové *.vstemplate* souboru. V tomto příkladu obsahuje šablona dva projekty `My Windows Application` a `My Class Library`. `ProjectName` Atribut na `ProjectTemplateLink` nastaví název elementu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tomuto projektu přiřadí. Pokud `ProjectName` atribut neexistuje, název *.vstemplate* soubor se používá jako název projektu.  
@@ -101,4 +100,4 @@ Určuje cestu k *.vstemplate* souboru jednoho projektu ve víceprojektové šabl
 ## <a name="see-also"></a>Viz také:  
  [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)   
  [Vytvoření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
- [Postupy: vytváření šablon vícenásobného projektu](../ide/how-to-create-multi-project-templates.md)
+ [Postupy: Vytváření šablon vícenásobného projektu](../ide/how-to-create-multi-project-templates.md)

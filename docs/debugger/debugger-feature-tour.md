@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d96e30ad4ba38dffc4bbc489100f14886c813816
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882663"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561535"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na ladicí program sady Visual Studio
 
@@ -174,7 +174,7 @@ Klikněte na tlačítko **zásobník volání** okno při ladění, což je ve v
 
 Dvojitým kliknutím na řádek kódu go, podívejte se na tento zdrojový kód a také změny v aktuálním oboru kontrolován ladicím programem. To nepřesouvejte vpřed ladicí program.
 
-Můžete také použít nabídek klikněte pravým tlačítkem **zásobník volání** okno a dělat jiné věci. Například můžete vložit do konkrétní funkce zarážky, restartujte vaši aplikaci s použitím **spustit ke kurzoru**a k přechodu Zkontrolujte zdrojový kód. Zobrazit [jak: prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
+Můžete také použít nabídek klikněte pravým tlačítkem **zásobník volání** okno a dělat jiné věci. Například můžete vložit do konkrétní funkce zarážky, restartujte vaši aplikaci s použitím **spustit ke kurzoru**a k přechodu Zkontrolujte zdrojový kód. Zobrazit [jak: Prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Prozkoumat výjimky
 
@@ -215,7 +215,7 @@ Další informace najdete v tématu [kontrolovat předchozí nové aplikace pomo
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto kurzu jste měli rychlý přehled mnoha funkcí ladicího programu. Může být vhodné podrobnější pohled na tyto funkce pomocí ukázkové aplikace
+V tomto kurzu jste měli rychlý přehled mnoha funkcí ladicího programu. Můžete chtít podrobnější pohled na některou z těchto funkcí, jako například zarážky.
 
 > [!div class="nextstepaction"]
-> [Další informace k ladění pomocí sady Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [Naučte se používat zarážky](../debugger/using-breakpoints.md)

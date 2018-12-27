@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639773"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561759"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý úvod: Ladění v C++ pomocí ladicího programu sady Visual Studio
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Rychlý start: Ladění v C++ pomocí ladicího programu sady Visual Studio
 
 Ladicí program sady Visual Studio poskytuje mnoha výkonným funkcím, které vám pomůžou ladit vaše aplikace. Toto téma poskytuje rychlý způsob, jak Seznamte se s některými základními funkcemi.
 
@@ -103,7 +103,7 @@ Během pozastavení na zarážce, najeďte myší příkaz `c1.push_back(20)` a�
 
 Aplikace pokračuje v provádění, volání `doWork`a pozastaví na řádek kódu, které jste klepnuli na tlačítku.
 
-Běžné klávesové příkazy používá k procházejte kódem po krocích zahrnují **F10** a **F11**. Další podrobné pokyny najdete v tématu [Průvodce pro začátečníky](../debugger/getting-started-with-the-debugger.md).
+Běžné klávesové příkazy používá k procházejte kódem po krocích zahrnují **F10** a **F11**. Další podrobné pokyny najdete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Kontrolovat proměnné v datovém tipu
 

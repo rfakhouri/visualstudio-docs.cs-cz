@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895779"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647816"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu
   Doplněk VSTO slouží k přizpůsobení dokumentů aplikace Word a sešitů aplikace Excel následujícími způsoby:  
@@ -39,7 +39,7 @@ ms.locfileid: "49895779"
   
   Tuto funkci použít, generovat objektu za běhu, který rozšiřuje dokumentu nebo sešitu.  
   
-  **Platí pro:** informace v tomto článku se vztahují na projekty doplňku VSTO v následujících aplikacích: Excel a Word. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Platí pro:** Informace v tomto článku se vztahují na projekty doplňku VSTO v následujících aplikacích: Excelu a Wordu. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generovat rozšířených objektů v doplňcích VSTO  
  *Rozšířených objektů* jsou instance typů, poskytuje Visual Studio Tools pro systém Office runtime, které přidávají funkce do objektů, které nativně existovat v aplikaci Word nebo Excel objektové modely (volá *nativních objektů Office*). Chcete-li generovat rozšířeného objektu pro objekt aplikace Word nebo Excel, použijte `GetVstoObject` metody. Při prvním volání `GetVstoObject` objekt metodu pro zadané aplikace Word nebo Excel, vrátí nový objekt, který rozšiřuje zadaného objektu. Pokaždé, když volat metodu a zadejte stejné aplikace Word nebo Excel objekt vrací stejný objekt rozšířené.  

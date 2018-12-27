@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b431e8223c0cacf28d5e8251b655e2d86769e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935702"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647320"
 ---
 # <a name="introducing-spy"></a>Představení nástroje Spy++
 Spy ++ umožňuje provádět následující úlohy:  
@@ -42,7 +42,7 @@ Spy ++ umožňuje provádět následující úlohy:
 >  Existují dva nástroje, které se podobají nástroje Spy ++: PView, která zobrazuje podrobnosti o procesech a vláknech a DDESPY. Exe souboru, který vám umožní monitorovat dynamické výměny dat (DDE) zprávy.  
   
 ## <a name="64-bit-operating-systems"></a>64bitová verze operačních systémů  
- Existují dvě verze nástroje Spy ++. První verze, s názvem nástroje Spy ++ (spyxx.exe) slouží k zobrazení zprávy odeslané do okna, na kterém běží v 32bitový proces. Visual Studio spustí třeba v 32bitový proces. Proto můžete nástroje Spy ++ pro zobrazení zprávy odeslané do **Průzkumníka řešení**. Jelikož výchozí konfigurace pro většinu sestavení v sadě Visual Studio je spuštění v procesu 32-bit, první verzi nástroje Spy ++, je ten, který je [k dispozici na **nástroje** nabídky](../debugger/how-to-start-spy-increment.md) v sadě Visual Studio.  
+ Existují dvě verze nástroje Spy ++. První verze, s názvem nástroje Spy ++ (spyxx.exe) slouží k zobrazení zprávy odeslané do okna, na kterém běží v 32bitový proces. Visual Studio spustí třeba v 32bitový proces. Proto můžete nástroje Spy ++ pro zobrazení zprávy odeslané do **Průzkumníka řešení**. Jelikož výchozí konfigurace pro většinu sestavení v sadě Visual Studio je spuštění v procesu 32-bit, první verzi nástroje Spy ++, je ten, který je k dispozici na **nástroje** nabídky v sadě Visual Studio, pokud [požadované součásti nainstalované](../debugger/how-to-start-spy-increment.md). 
   
  Druhá verze, s názvem nástroje Spy ++ (64-bit) (spyxx_amd64.exe), je navržená pro zobrazení zprávy odeslané do okna, na kterém běží v 64bitové proces. Na 64bitový operační systém, například Poznámkový blok spustí v 64bitového procesu. Proto můžete nástroje Spy ++ (64-bit) k zobrazení zprávy odeslané do poznámkového bloku. Spy ++ (64-bit) se obvykle nachází v  
   
@@ -54,7 +54,7 @@ Spy ++ umožňuje provádět následující úlohy:
 >  I když se název souboru (64-bit) nástroje Spy ++ obsahuje "amd", běží na libovolné x64 operačního systému Windows.  
   
 ## <a name="see-also"></a>Viz také 
- [Postupy: spuštění nástroje Spy ++](../debugger/how-to-start-spy-increment.md)   
+ [Postupy: Spuštění nástroje Spy ++](../debugger/how-to-start-spy-increment.md)   
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
  [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

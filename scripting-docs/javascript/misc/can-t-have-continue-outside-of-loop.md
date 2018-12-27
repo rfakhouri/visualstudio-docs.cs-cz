@@ -1,5 +1,5 @@
 ---
-title: Může & č. 39; mít t & č. 39; pokračovat & č. 39; uveden mimo smyčku | Microsoft Docs
+title: "'Continue' nemůže být uveden mimo smyčku | Dokumentace Microsoftu"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,35 +20,35 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788832"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531242"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>Může & č. 39; mít t & č. 39; pokračovat & č. 39; uveden mimo smyčku
-Jste se pokusili použít **pokračovat** příkaz mimo smyčku. **Pokračovat** příkaz lze použít pouze v hlavní a:  
+# <a name="cant-have-continue-outside-of-loop"></a>Příkaz 'continue' nemůže být uveden mimo smyčku
+Pokusili jste se použít **pokračovat** příkaz mimo smyčku. **Pokračovat** příkaz se dá použít jenom v těle a:  
   
--   `do-while`ve smyčce,  
+-   `do-while` smyčky,  
   
--   `while`ve smyčce,  
+-   `while` smyčky,  
   
--   **pro** smyčku  
+-   **pro** smyčku,  
   
--   **pro/v** smyčky.  
+-   **pro/in** smyčky.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Zajistěte, aby **pokračovat** příkazu se zobrazí v textu a:  
+-   Ujistěte se, **pokračovat** příkazu se zobrazí v těle a:  
   
-    -   `do-while`ve smyčce,  
+    -   `do-while` smyčky,  
   
-    -   `while`ve smyčce,  
+    -   `while` smyčky,  
   
-    -   **pro** smyčku  
+    -   **pro** smyčku,  
   
-    -   **pro/v** smyčky.  
+    -   **pro/in** smyčky.  
   
 ## <a name="see-also"></a>Viz také  
  [Continue – příkaz](../../javascript/reference/continue-statement-javascript.md)   

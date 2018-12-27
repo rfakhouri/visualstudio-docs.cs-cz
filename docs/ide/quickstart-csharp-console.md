@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158603"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441532"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Rychlý start: Pomocí sady Visual Studio k vytvoření vaší první C# Konzolová aplikace
 
@@ -99,4 +99,4 @@ Přidejme nějaký kód pozastavte aplikaci tak, aby v okně konzoly se nepodpor
 Blahopřejeme k dokončení tohoto rychlého startu! Doufáme, že jste se dozvěděli ještě něco o jazyce C# a Visual Studio IDE. Další informace najdete v následujících kurzech pokračujte.
 
 > [!div class="nextstepaction"]
-> [Začínáme s aplikaci konzoly C# v sadě Visual Studio](tutorial-csharp-console.md)
+> [Začínáme s aplikaci konzoly C# v sadě Visual Studio](../get-started/csharp/tutorial-console.md)

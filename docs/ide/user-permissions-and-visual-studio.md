@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b48a9cae19faa592eecb2f02af67e9ad8b2ca9b3
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348328"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684675"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 
@@ -38,7 +38,7 @@ V režimu normálního uživatele lze provádět téměř cokoli v integrovaném
 |Sestavování|Události po sestavení, které registrují komponentu použijte.|[Vlastní kroky sestavení porozumět a vybudovat události](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Zahrnout krok registrace při vytváření projektů v jazyce C++.||
 |Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními.|[Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)|
-||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET.|[Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET.|[Ladění aplikací ASP.NET a AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Ladění v zóně pro aplikace prohlížeče XAML (XBAP).|[Hostitel WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Použití emulátoru k ladění projektů cloudových služeb pro Microsoft Azure.|[Ladění cloudové služby v sadě Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Konfigurace brány firewall pro vzdálené ladění.|[Vzdálené ladění](../debugger/remote-debugging.md)|

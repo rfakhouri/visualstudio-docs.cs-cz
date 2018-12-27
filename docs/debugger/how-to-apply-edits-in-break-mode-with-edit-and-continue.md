@@ -24,17 +24,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063723"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684259"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Postupy: použití úprav v režimu pozastavení pomocí operace upravit a pokračovat (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Postupy: Použití úprav v režimu pozastavení pomocí operace upravit a pokračovat (Visual Basic)
 Můžete upravit a pokračovat pro úpravy kódu v režimu pozastavení a potom pokračujte bez zastavení a restartování spuštění.  
   
-Omezení pomocí funkce upravit a pokračovat při ladění, naleznete v tématu [podporované změny kódu (C# a Visual Basic](../debugger/supported-code-changes-csharp.md)]
+Omezení pomocí funkce upravit a pokračovat při ladění, naleznete v tématu [podporované změny kódu (C# a Visual Basic)](../debugger/supported-code-changes-csharp.md).
   
 ### <a name="to-edit-code-in-break-mode"></a>Pro úpravu kódu v režimu pozastavení  
   
@@ -52,7 +52,7 @@ Omezení pomocí funkce upravit a pokračovat při ladění, naleznete v tématu
   
 2.  Žádné změny kódu požadované a podporované.  
   
-     Další informace najdete v tématu [podporované změny kódu (C# a Visual Basic](../debugger/supported-code-changes-csharp.md).  
+     Další informace najdete v tématu [podporované změny kódu (C# a Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
     > [!NOTE]
     >  Při pokusu o aby kód změnit, která není povolena funkce upravit a pokračovat, úpravy bude podtržené podle fialovou vlnovkou a úloha se zobrazí v seznamu úkolů. Nebude moct pokračovat v provádění kódu není-li vrátit změnu neplatný kód.  
@@ -62,5 +62,5 @@ Omezení pomocí funkce upravit a pokračovat při ladění, naleznete v tématu
      S použité úpravy do projektu se teď spustí váš kód.  
   
 ## <a name="see-also"></a>Viz také  
- [Podporované změny kódu (C# a Visual Basic](../debugger/supported-code-changes-csharp.md)   
+ [Podporované změny kódu (C# a Visual Basic)](../debugger/supported-code-changes-csharp.md)   
  [Upravit a pokračovat (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
