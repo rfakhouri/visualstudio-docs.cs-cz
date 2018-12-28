@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1104af5c2e4f9cfc056e962b34c7d2b4591e33
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: fd9aa8cc571ba58964346ca85a62b7ec311a744a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740150"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803659"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Práce s 3D prostředky pro hry a aplikace
 
@@ -44,7 +44,7 @@ Tento dokument popisuje nástroje sady Visual Studio, které můžete použít k
  Shader Návrhář Visual Studio, které je založené na grafu shaderu návrhářský nástroj, můžete použít k vytvoření vlastních efektů bez znalosti programování HLSL.
 
 > [!NOTE]
-> Další informace o tom, jak začít s programování pro rozhraní DirectX, naleznete v tématu [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Další informace o tom, jak ladit aplikaci založené na rozhraní DirectX naleznete v tématu [diagnostiky grafiky (ladění grafiky DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).
+> Další informace o tom, jak začít s programování pro rozhraní DirectX, naleznete v tématu [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Další informace o tom, jak ladit aplikaci založené na rozhraní DirectX naleznete v tématu [diagnostiky grafiky (ladění grafiky DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Kompatibilita verzí DirectX
  Visual Studio používá k vykreslení 2D a 3D prostředky rozhraní DirectX. Můžete vybrat zobrazovací jednotky rozhraní DirectX 11 nebo zobrazovací jednotky softwaru Windows Advanced Rasterizační platformě WARP (). Renderer rozhraní DirectX 11 poskytuje vysoce výkonné, hardwarově urychlené vykreslování na rozhraní DirectX 11 a DirectX 10 GPU. WARP renderer pomáhá, ujistěte se, že vaše prostředky fungovat s širokou škálu počítače – to zahrnuje počítače, které nemají moderní grafický hardware a počítače, které jste integrovali hardwarovou akceleraci. Další informace o WARP najdete v tématu [Windows Advanced Rasterizační platformě WARP () průvodce](http://go.microsoft.com/fwlink/p/?LinkId=224634).
