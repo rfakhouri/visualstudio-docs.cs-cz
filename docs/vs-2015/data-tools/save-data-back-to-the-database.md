@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: c1271d87342695e41f84248b8f73583c43aadb77
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281846"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647910"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  `GetChanges` samotným odebráním vrátí všechny změněné záznamy. Naproti tomu předáním požadované <xref:System.Data.DataRowState> jako parametr `GetChanges` metodu, můžete zadat jaké podmnožinou změněné záznamy, které chcete, aby: nově přidána záznamy, záznamy, které jsou označené k odstranění, odpojit záznamy nebo změněné záznamy.  
   
- Získání podmnožiny změněné záznamy je užitečné, když chcete odeslat do jiné součásti pro zpracování záznamů. Místo abyste odesílali celou datovou sadu, můžete snížit režijní náklady tím, že získáme pouze záznamy, které je nutné komponentu komunikovat s jinou součástí. Další informace najdete v tématu [postupy: načtení změnil řádků](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Získání podmnožiny změněné záznamy je užitečné, když chcete odeslat do jiné součásti pro zpracování záznamů. Místo abyste odesílali celou datovou sadu, můžete snížit režijní náklady tím, že získáme pouze záznamy, které je nutné komponentu komunikovat s jinou součástí. Další informace najdete v tématu [jak: Načítání změněných řádků](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Potvrzení změn v datové sadě  
  Jakmile v datové sadě, jsou provedeny změny <xref:System.Data.DataRow.RowState%2A> změněných řádků je nastavena. Navázat, udržovat a můžete podle aktuální a původní verzí záznamů <xref:System.Data.DataRowView.RowVersion%2A> vlastnost. Metadata, která je uložená ve vlastnosti těchto změněných řádků je nezbytné pro odeslání do zdroje dat správné aktualizace.  
@@ -221,7 +221,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
   
  Můžete ověřit data několika způsoby:  
   
-- V obchodní vrstvě, přidáním kódu do vaší aplikace ověřit data. Tato datová sada je pohromadě, můžete to provést. Datová sada obsahuje některé z výhod back-end ověřování, jako je například schopnost ověřit změny, jak se změna hodnoty řádků a sloupců. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).  
+- V obchodní vrstvě, přidáním kódu do vaší aplikace ověřit data. Tato datová sada je pohromadě, můžete to provést. Návrhář DataSet obsahuje některé z výhod back-end ověřování, jako je například schopnost ověřit změny, jak se změna hodnoty řádků a sloupců. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).  
   
 - V prezentační vrstvě podle Přidání ověření do formuláře. Další informace najdete v tématu [ověřování uživatelského vstupu ve Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
@@ -275,14 +275,7 @@ Proces aktualizace dvoufázová a roli DataRowVersion v úspěšná aktualizace
 >  Můžete také nastavit hodnoty `Parameters` kolekce sami v kódu, což by obvykle provést v obslužné rutiny události adaptéru dat <xref:System.Data.DataTable.RowChanging> událostí.  
   
 ## <a name="see-also"></a>Viz také  
- [TableAdapter – přehled](../data-tools/tableadapter-overview.md)   
  [Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Přehled datových aplikacích v sadě Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Připojování k datům v sadě Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
  [Příprava aplikace pro příjem dat](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Načítají se Data do vaší aplikace](../data-tools/fetching-data-into-your-application.md)   
  [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Úpravy dat v aplikaci](../data-tools/editing-data-in-your-application.md)   
  [Ověřování dat](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Ukládání dat](../data-tools/saving-data.md)
-
