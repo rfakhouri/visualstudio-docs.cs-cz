@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 4081fae86b41a9bf8b925bf84d403b3be6628294
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1ff045cd571f24c57b3f735b0fdf68c58aaa23bb
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068364"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740046"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Testování knihovny DLL Visual C++
 
@@ -22,7 +22,7 @@ Toto téma popisuje jeden ze způsobů vytvoření testů jednotek pro knihovny 
 
  Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V takovém případě napíšete testovací metoda, která ověřuje konkrétní chování v systému, který testujete a potom napíšete kód, který projde testem. Tím, že změny v pořadí podle následujících postupů lze zrušit tuto strategii první zapisovat kód, který chcete otestovat a teprve pak píšete jednotkové testy.
 
- V tomto tématu se vytvoří také jedno řešení sady Visual Studio a samostatné projekty pro testy jednotky a knihovny DLL, který chcete testovat. Můžete také zahrnout jednotkové testy přímo do projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) tipy, které struktury používat.
+ V tomto tématu se vytvoří také jedno řešení sady Visual Studio a samostatné projekty pro testy jednotky a knihovny DLL, který chcete testovat. Můžete také zahrnout jednotkové testy přímo do projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů jednotek do stávajících aplikací C++](../test/how-to-use-microsoft-test-framework-for-cpp.md) tipy, které struktury používat.
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Vytvoření řešení a projektu testování částí
 

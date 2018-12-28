@@ -1,5 +1,5 @@
 ---
-title: Objekt nemá&#39;t podporují tuto vlastnost nebo metodu | Microsoft Docs
+title: Objekt nepodporuje tuto vlastnost nebo metodu | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c87d7d1c23682d014924c5c9b948133d8391c72
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 893b8328affcd0a893840cefddba61a322db315c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24788868"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801859"
 ---
-# <a name="object-doesn39t-support-this-property-or-method"></a>Objekt nemá&#39;t podporu této vlastnosti nebo metody
-Můžete zadat vlastnosti nebo metody, která neexistuje pro tento objekt. Ne všechny objekty podporují všechny vlastnosti a metody.  
+# <a name="object-doesnt-support-this-property-or-method"></a>Objekt tuto vlastnost nebo metodu nepodporuje.
+Zadali jste vlastnost nebo metoda, která není pro tento objekt. Ne všechny objekty podporují všechny vlastnosti a metody.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Zkontrolujte vlastnosti a metody k zajištění, že nedošlo k chybám zadáním.  
+-   Zkontrolujte vlastnosti a metody k zajištění, že nedošlo k chybám psaní.  
   
--   Ověřte, že je typ objektu modulu runtime typ očekávaný objektu.  
+-   Ověřte, jestli je typ objektu modulu runtime očekávaný objekt typu.  
   
--   Další informace naleznete v dokumentaci objektu.  
+-   Další informace naleznete v dokumentaci daného objektu.  
   
 ## <a name="see-also"></a>Viz také  
  [Object – objekt](../../javascript/reference/object-object-javascript.md)   

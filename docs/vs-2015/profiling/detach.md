@@ -14,17 +14,17 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703887235cc1c9f1be0f63792919e45397a6a68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 97e5e64947f2d2807e2d3e34d50827e989ea18e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726706"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804718"
 ---
 # <a name="detach"></a>Odpojit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-VSPerfCmd.exe **odpojit** možnost odpojí profiler z konkrétních procesů nebo všechny procesy, pokud žádný není zadaný. Profilace musí byly inicializovány pomocí metody vzorkování.  
+VSPerfCmd.exe **odpojit** možnost odpojí profiler z konkrétních procesů nebo všechny procesy, pokud nejsou zadány žádné. Profilace musí byly inicializovány pomocí metody vzorkování.  
   
  Profilace, který byl spuštěn s buď **spuštění** nebo **připojit** možnosti můžete odpojit s **odpojit**. Profiler může být reattched pomocí dalších **připojit** příkazy.  
   

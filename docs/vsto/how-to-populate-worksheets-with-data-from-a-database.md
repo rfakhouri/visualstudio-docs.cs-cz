@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e63a95635c57c3fa344d7d9197436a2e0e744621
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 53267cdd429b9a4d8848026e460776359b55c023
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648188"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802871"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Postupy: Naplnění listů daty z databáze
 
@@ -56,7 +56,7 @@ Můžete přidat jiného ovládacího prvku tak, že vyberete v tabulce nebo pol
 
 Kromě ovládacího prvku jsou následující objekty související s daty automaticky přidány do projektu:
 
--   Typové datové sady, který zapouzdřuje tabulek dat, které jste se připojili v databázi. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+-   Typové datové sady, který zapouzdřuje tabulek dat, které jste se připojili v databázi. Další informace najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 -   A <xref:System.Windows.Forms.BindingSource> ovládacího prvku, která se připojuje k typové datové sady. Další informace najdete v tématu [přehled komponenty BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 

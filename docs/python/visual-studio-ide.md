@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 546d666ce233b1c52e6746592dd41fd0055813a5
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5c7e8c81b52744d62dbdc60259462e7dedc1388e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443224"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804900"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Vítá vás Visual Studio IDE | Python
 
@@ -28,7 +28,7 @@ Visual Studio *integrovaného vývojového prostředí* je creative odrazový m�
 
 Tento obrázek ukazuje Visual Studio s otevřeném projektu Pythonu a několika okny nástrojů klíče, které budete pravděpodobně používat:
 
-- [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](../ide/quickstart-projects-solutions.md).
+- [**Průzkumník řešení** ](../ide/solutions-and-projects-in-visual-studio.md) (vpravo nahoře) umožňuje zobrazit, přejděte a spravovat soubory kódu. **Průzkumník řešení** pomáhá organizovat kód seskupením soubory do [řešení a projekty](/visualstudio/get-started/tutorial-projects-solutions).
     - Spolu s **Průzkumníka řešení** je [ **prostředí Pythonu**](managing-python-environments-in-visual-studio.md), kde budete spravovat různé interpretů Pythonu, které jsou nainstalovány ve vašem počítači.
 
 - [Okno editoru](../ide/writing-code-in-the-code-and-text-editor.md) (System center), kde budete pravděpodobně tráví většinu svého času zobrazí obsah souboru. Tady je [úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md), navigace v rámci struktury kódu a nastavit zarážky během relace ladění. S využitím Pythonu, můžete také vybrat kód a stiskněte klávesy Ctrl + Enter pro spuštění tohoto kódu [interaktivního okna REPL](python-interactive-repl-in-visual-studio.md).

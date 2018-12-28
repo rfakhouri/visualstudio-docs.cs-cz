@@ -3,18 +3,18 @@ title: LinkedIn Learning výhoda v předplatných sady Visual Studio | Dokumenta
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Další informace o benefitech LinkedIn Learning zahrnutý jako součást předplatného LinkedIn Premium součástí vybraných předplatných sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8424e42923474284e45abba62bd13a0038263d90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942241"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739533"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Výhoda Linkedinem v předplatných sady Visual Studio
 
@@ -25,7 +25,7 @@ Je potřeba mít účet LinkedIn, abyste mohli využívat výhody Linkedinem.  P
 
 ## <a name="activation-steps"></a>Postup aktivace
 Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výhody:
-1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k webu [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Vyhledejte dlaždici LinkedIn Learning v kategorii vzdělávání a klikněte **získat kód** odkaz.
    > [!div class="mx-imgBorder"]
@@ -95,22 +95,25 @@ Chcete-li aktivovat vaše předplatné LinkedIn Premium a LinkedIn Learning výh
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pro nové předplatitele pouze          |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | 3 měsíce                                                            |Ne.  K dispozici pro nové předplatitele pouze         |
 | Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | 3 měsíce                                             |  Ne.  K dispozici pro nové předplatitele pouze         |
 | Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | 3 měsíce                                              | Ne.  K dispozici pro nové předplatitele pouze         |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | 3 měsíce |Ne.  K dispozici pro nové předplatitele pouze |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Dev Essentials | Není k dispozici  | 3 měsíce |Ne.  K dispozici pro nové předplatitele pouze |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje: neprodejné (NFR), Visual Studio Industry Partner (VSIP).  Vyloučí: Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje:    Neprodejné (NFR), Visual Studio Industry Partner (VSIP).  Vyloučí:  Microsoft Partner Network (MPN), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
 
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
 
 Nejste si jistí které předplatné používáte?  Připojte se k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechna předplatná, která jsou přiřazená e-mailovou adresu. Pokud se nezobrazí všechna předplatná, může mít jeden nebo více přiřazené na jinou e-mailovou adresu.  Bude potřeba přihlásit se přes tento e-mailovou adresu najdete v těchto předplatných.
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
-### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Otázka: Pokud můžu obnovit předplatné, se Moje výhody Linkedinem také obnovit?
-Odpověď: Ne, LinkedIn Learning nabídka je dostupná pro nové předplatitele pouze.
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>DOTAZ: Pokud můžu obnovit předplatné, se Moje výhody Linkedinem také obnovit?
+O:  Ne, LinkedIn Learning nabídka je dostupná pro nové předplatitele pouze.
 
 ## <a name="support-resources"></a>Informační zdroje podpory
 -  Potřebujete pomoc s Linkedinem?  Projděte si tyto prostředky:

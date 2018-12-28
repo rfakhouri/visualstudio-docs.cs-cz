@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3417118c5e5a2cac93b5d4111335532d5ee4c272
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739955"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802576"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Postupy: Vytvoření adaptéru diagnostických dat
 
@@ -48,7 +48,7 @@ Následuje částečný seznam klíčových událostí, které můžete použít
 
 Pomocí následujícího postupu vytvořte adaptér diagnostických dat, který shromažďuje datový soubor, který je založen na informacích, které konfigurujete při vytvoření nastavení testu.
 
-Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního konfiguračního editoru, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/sample-project-for-creating-a-diagnostic-data-adapter.md).
+Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního konfiguračního editoru, najdete v části [ukázkový projekt pro vytvoření adaptéru diagnostických dat](../test/quickstart-create-a-load-test-project.md).
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Vytvoření a instalace adaptéru diagnostických dat
 
@@ -261,11 +261,11 @@ Kompletní příklad diagnostických dat adaptéru projektu, včetně vlastního
 
      Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Další informace o instalaci konfiguračního souboru najdete v tématu [jak: Instalovat vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     Další informace o instalaci konfiguračního souboru najdete v tématu [jak: Instalovat vlastního adaptéru diagnostických dat](../test/quickstart-create-a-load-test-project.md)
 
 12. Sestavte řešení k vytvoření sestavení adaptéru diagnostických dat.
 
-13. Informace o instalaci vlastního editoru naleznete v tématu [jak: Instalovat vlastního adaptéru diagnostických dat](../test/how-to-install-a-custom-diagnostic-data-adapter.md).
+13. Informace o instalaci vlastního editoru naleznete v tématu [jak: Instalovat vlastního adaptéru diagnostických dat](../test/quickstart-create-a-load-test-project.md).
 
 14. Další informace o tom, jak nakonfigurovat nastavení testu pro použití prostředí při spuštění testů, naleznete v tématu [shromažďování diagnostických dat v manuálních testů (testovací plány Azure)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 

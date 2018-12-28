@@ -1,14 +1,10 @@
 ---
-title: Chyby aplikace analýzy kódu | Dokumentace Microsoftu
-ms.custom: ''
+title: Chyby aplikace Analýzy kódu
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -18,13 +14,13 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: douge
+ms.openlocfilehash: b85aceae00085e27ac766280f686c04adac52a7e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561714"
 ---
 # <a name="code-analysis-application-errors"></a>Chyby aplikace Analýzy kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +45,7 @@ Tato část se odkaz chybové zprávy, které jsou generovány nástroj pro anal
 |[CA0062](ca0062.md)|Pravidlo "*RuleId*'odkazované v sadě pravidel'*RuleSetName*' nebyl nalezen.|
 |[CA0063](ca0063.md)|Nepovedlo se načíst soubor sady pravidel nebo jeden z jeho souborů sady pravidel závislé.|
 |[CA0064](ca0064.md)|Nebyla provedena žádná analýza, protože zadanou sadu pravidel neobsahovala žádná pravidla FxCop.|
-|[CA0065](ca0065.md)|Nepodporovaná konstrukce metadat: typ '*TypeName*"obsahuje vlastnost i pole se stejným názvem"*PropertyFieldName*.|
+|[CA0065](ca0065.md)|Nepodporovaná konstrukce metadat: Typ '*TypeName*"obsahuje vlastnost i pole se stejným názvem"*PropertyFieldName*.|
 |[CA0066](ca0066.md)|Hodnota '*VersionID*"k dispozici na **/TargetFrameworkVersion** není rozpoznána verze.|
 |[CA0067](ca0067.md)|Adresář nebyl nalezen.|
 |[CA0068](ca0068.md)|Ladění nelze najít informace pro cílové sestavení *"AssemblyName"*.|
@@ -57,11 +53,10 @@ Tato část se odkaz chybové zprávy, které jsou generovány nástroj pro anal
 |[CA0070](ca0070.md)|Nelze načíst sestavení nebo typ z důvodu oprávnění zabezpečení.|
 |[CA0501](ca0501.md)|Nelze číst výstup sestavy.|
 |[CA0502](ca0502.md)|Nepodporovaný jazyk.|
-|[CA0503](ca0503.md))|Vlastnost je deprectated. Nahrazující vlastnost|
+|[CA0503](ca0503.md)|Vlastnost je zastaralá. Nahrazující vlastnost|
 |[CA0504](ca0504.md)|Pravidlo adresář byl ignorován, protože neexistuje|
-|[CA0505](ca0505.md)|Vlastnost je deprectated. Nahrazující vlastnost|
+|[CA0505](ca0505.md)|Vlastnost je zastaralá. Nahrazující vlastnost|
 |[FxCopCmd – chyby](fxcopcmd-errors.md)|Chyby analýzy spravovaného kódu.|
-|[Chyby zásad Analýzy kódu](../code-quality/code-analysis-policy-errors.md)|Vrácení analýzy kódu se změnami chyby zásad.|
 
 ## <a name="related-sections"></a>Související oddíly
 

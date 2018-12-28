@@ -9,12 +9,12 @@ description: Zjistěte, jak vyhledat a stáhnout produkty Microsoftu, které jso
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831429"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803211"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele soubory ke stažení v předplatných sady Visual Studio
 Jako součást vaší výhody pro předplatitele máte přístup k široké škále stažení softwaru.
@@ -30,7 +30,7 @@ Tady je několik důvodů, proč nemusí být dostupné pro předplatitele konkr
 - **Tento produkt je veřejně dostupný.** Některé nástroje, sady SDK, DDK a aktualizace service Pack jsou veřejně dostupné prostřednictvím [Microsoft Download Center](https://www.microsoft.com/download). Některé tyto produkty nemusejí být publikovány k souborům ke stažení.
 - **Produkt ještě nebyl vydán.**  Mnoho předběžných (beta) verzí a verzí release Candidate je k dispozici ke stažení. Ne všechny beta verze však může být součástí; Některé například vyžadují speciální registraci nebo oprávněnost. Další informace o otevřených technických beta verzích programů najdete [Microsoft Connect](http://connect.microsoft.com/).
 - **Produkt není k dispozici ve vaší zemi.** Některé produkty Microsoft nejsou k dispozici z důvodu místních omezení.
-- **Redundantní software.** Vybrané sady Office a samostatné soubory ke stažení Office a kódy product key už nejsou k dispozici v předplatných zahrnujících Office. Soubory ke stažení a kódy product key jsou dostupné pro odpovídající nejvyšší sadu Office stejné verze.  Pokud hledáte pro Powerpoint 2010, například vyhledávání nevytvoří žádné výsledky.  Můžete ale vyhledat pro Office 2010 - sady Office, který obsahoval Powerpoint 2010 - a stáhnout sady.
+- **Redundantní software.** Vybrané sady Office a samostatné soubory ke stažení Office a kódy product key už nejsou k dispozici v předplatných zahrnujících Office. Soubory ke stažení a kódy product key jsou dostupné pro odpovídající nejvyšší sadu Office stejné verze.  Pokud hledáte pro PowerPoint 2010, například vyhledávání nevytvoří žádné výsledky.  Můžete ale vyhledat pro Office 2010 - sady Office, který obsahoval PowerPoint 2010 - a stáhnout sady.
 
 ## <a name="what-do-i-get"></a>Co všechno získám?
 Počet a typ stahování závisí na vaše předplatné úrovně a program členství ve skupinách.  Předplatitelé s standardní předplatná sady Visual Studio Enterprise, například můžou mít různé soubory ke stažení je než předplatitelé, kteří získají svá předplatná prostřednictvím předplatného programu Microsoft Partner Network nebo BizSpark k dispozici.  Další informace o tom, jaké soubory ke stažení jsou k dispozici pro každou úroveň předplatného, stáhněte si seznam [produktů podle úrovně výhodu](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).

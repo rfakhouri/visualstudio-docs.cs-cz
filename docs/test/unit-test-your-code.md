@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c438f9c4f648ab63a0b7f763e8a31a8946c0bd33
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 84ed32f0d8ca966449c5795094fde1feeb4d49af
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740189"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804257"
 ---
 # <a name="unit-test-your-code"></a>Testování částí kódu
 
@@ -44,7 +44,7 @@ V následujících tématech naleznete informace týkající se vytváření tes
 
 |Úlohy|Související témata|
 |-|-----------------------|
-|**Rychlé začátky a návody:** Další testování v sadě Visual Studio z příkladů kódů použijte následující témata.|-   [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlý start: Vývoj řízený testováním pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů jednotek do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**Rychlé začátky a návody:** Další testování v sadě Visual Studio z příkladů kódů použijte následující témata.|-   [Návod: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlý start: Vývoj řízený testováním pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů jednotek do stávajících aplikací C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**Testování částí pomocí Průzkumníka testů:** Zjistěte, jak může Průzkumník testů pomoci vytváření produktivnějších a efektivnějších testů jednotek.|-   [Základní informace o testování částí](../test/unit-test-basics.md)<br />-   [Vytvořte projekt testu jednotek](../test/create-a-unit-test-project.md)<br />-   [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />-   [Nainstalujte rozhraní pro testování jednotky třetí strany](../test/install-third-party-unit-test-frameworks.md)|
 |**Testování částí kódu C++**|-   [Zápis testů jednotek pro C/C++ se sadou Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Izolující testování částí**|-   [Izolace testovaného kódu pomocí Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|

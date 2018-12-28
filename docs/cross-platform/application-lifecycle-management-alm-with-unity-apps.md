@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 42d6a2192e1ee4fdeedce1d8255a17db6cf6d622
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740111"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802563"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps s aplikacemi Unity
 
@@ -102,7 +102,7 @@ Referenční odkaz: **[Zlepšení kvality kódu](../test/improve-code-quality.md
 
 |Funkce|Podporované v Unity|Další komentáře|
 |-------------|--------------------------|-------------------------|
-|[Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
+|[Analýza kvality spravovaného kódu](../code-quality/code-analysis-for-managed-code-overview.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Hledání duplicitního kódu pomocí zjišťování klonování kódu](https://msdn.microsoft.com/library/hh205279.aspx)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/code-metrics-values.md)|Ano|Můžete analyzovat kód skriptu jazyka C# v sadě Visual Studio.|
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ne|Použití [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity webu).|

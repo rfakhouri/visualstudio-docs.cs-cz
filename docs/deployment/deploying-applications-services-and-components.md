@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861628"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805156"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: Nejdřív se podívejte na nasazení v sadě Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý start: První pohled na nasazení v sadě Visual Studio
 
 Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalaci na jiné počítače, zařízení nebo serverech nebo v cloudu. V sadě Visual Studio můžete zvolit vhodnou metodu pro potřebný typ nasazení. (Mnoho typů aplikací podporují další nástroje pro nasazení, jako je například nasazení příkazového řádku nebo NuGet, které nebyly popsány zde.)
 
@@ -41,21 +41,21 @@ Najdete v rychlých startů a kurzů pro podrobné pokyny. Přehled možností n
 
 Nasazení do místní složky se obvykle používá pro testování, nebo začněte dvoufázové nasazení, ve kterém se používá jiný nástroj pro poslední nasazení.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a. **.NET Core**: pomocí nástroje Publish pro nasazení do místní složky. Přesné dostupné možnosti závisí na typ vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) Dále zvolte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a. **.NET Core**: Pomocí nástroje Publish pro nasazení do místní složky. Přesné dostupné možnosti závisí na typ vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem myši na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) Dále zvolte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
 
     ![Tlačítko Publikovat](../deployment/media/quickstart-publish.png)
 
-- **Modul runtime Visual C++**: můžete nasadit modulu runtime Visual C++ pomocí místní nasazení nebo statického propojení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Modul runtime Visual C++**: Můžete nasadit modulu runtime Visual C++ pomocí místní nasazení nebo statického propojení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publikování do Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**, a **Node.js**: publikovat nástroj můžete použít k rychlému nasazení aplikací do služby Azure App Service nebo do Azure Virtual Počítač. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) V dialogovém okně Publikovat zvolit buď **služby App Service** nebo **Azure Virtual Machines**a pak postupujte podle kroků konfigurace.
+- **ASP.NET**, **ASP.NET Core**, **Python**, a **Node.js**: Nástroj publikování můžete použít k rychlému nasazení aplikací do služby Azure App Service nebo na virtuálním počítači Azure. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) V dialogovém okně Publikovat zvolit buď **služby App Service** nebo **Azure Virtual Machines**a pak postupujte podle kroků konfigurace.
 
     ![Zvolte Azure App Service](../deployment/media/quickstart-publish-azure.png "zvolte služby Azure App Service")
 
     V sadě Visual Studio 2017 verze 15.7 nebo novější, můžete nasazovat aplikace ASP.NET Core **služby App Service pro Linux**.
 
-    Aplikace v Pythonu, také naleznete v tématu [Python - publikování do služby Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
+    Aplikace v Pythonu, také naleznete v tématu [Python - publikování do služby Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
     Rychlý úvod naleznete zde [publikovat do Azure](quickstart-deploy-to-azure.md) a [publikovat do Linuxu](quickstart-deploy-to-linux.md). Viz také [publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Nasazení přes Git, najdete v tématu [průběžné nasazování ASP.NET Core do Azure pomocí Gitu](/aspnet/core/publishing/azure-continuous-deployment).
 
@@ -66,7 +66,7 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Publikování na Web nebo nasadit do sdílené síťové složky
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, a **Python**: můžete použít nástroj pro publikování nasazení webu pomocí protokolu FTP nebo Webdeploy. Další informace najdete v tématu [nasadit na webový server](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, a **Python**: Nástroj publikování nasazení webu pomocí protokolu FTP nebo Webdeploy. Další informace najdete v tématu [nasadit na webový server](quickstart-deploy-to-a-web-site.md).
 
     V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, kterou musí a klikněte na **vytvořit nový profil**.) V nástroji pro publikování zvolte si možnost a postupujte podle kroků konfigurace.
 
@@ -76,7 +76,7 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
     Můžete také nasadit aplikace ASP.NET a služby v celou řadou způsobů. Další informace najdete v tématu [nasazení webových aplikací a služeb ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Modul runtime Visual C++**: můžete nasadit modulu runtime Visual C++ pomocí Centrální nasazení. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
+- **Modul runtime Visual C++**: Modul runtime Visual C++ pomocí centrálního nasazení, můžete nasadit. Další informace najdete v tématu [nasazování nativních desktopových aplikací (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Windows desktop** můžete publikovat aplikace klasické pracovní plochy Windows na webový server nebo síťové sdílené pomocí nasazení ClickOnce. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. Další informace najdete v tématu [nasazení stolní aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) a [nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -84,11 +84,11 @@ Nasazení do místní složky se obvykle používá pro testování, nebo začn�
 
 Ze sady Visual Studio můžete vytvořit balíčky aplikací pro nasazení na Microsoft Store.
 
-- **UPW**: můžete balíček aplikace a nasadit ho pomocí položky nabídky. Další informace najdete v tématu [balíček aplikace pro UPW pomocí sady Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
+- **UPW**: Vytvořit balíček aplikace a nasadit ho pomocí položky nabídky. Další informace najdete v tématu [balíček aplikace pro UPW pomocí sady Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
     ![Vytvoření balíčku aplikace](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows desktop**: můžete nasadit do Microsoft Store pomocí přemostění na Desktop spuštění v sadě Visual Studio 2017 verze 15.4. Provedete to tak, začněte tím, že vytvoříte projekt Windows Application Packaging. Další informace najdete v tématu [balíček desktopové aplikace pro Microsoft Store (přemostění na Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Windows desktop**: Můžete nasadit do Microsoft Store pomocí přemostění na Desktop spuštění v sadě Visual Studio 2017 verze 15.4. Provedete to tak, začněte tím, že vytvoříte projekt Windows Application Packaging. Další informace najdete v tématu [balíček desktopové aplikace pro Microsoft Store (přemostění na Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Desktop bridge](../deployment/media/feature-tour-desktop-bridge.png)
 

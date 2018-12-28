@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0819ebe52131e67810b1a3b493ce9f05c477613
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 9226e009936d0a644a5a6fcfcaba57bc3af25d7d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646809"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803095"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Postupy: Nastavení názvu vlákna v nativním kódu
 Pojmenování vlákna je možné v jakékoli edici sady Visual Studio. Pojmenování vláken je užitečné pro udržování přehledu o vlákna **vlákna** okna.

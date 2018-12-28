@@ -12,17 +12,17 @@ helpviewer_keywords:
 - ranges, adding to worksheets
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867114"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648363"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků NamedRange do listů
   Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a za běhu v projektech na úrovni dokumentu.  
@@ -64,7 +64,7 @@ ms.locfileid: "49867114"
   
 3.  Vyberte buňku nebo buňky, které chcete zahrnout v pojmenovaném rozsahu.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
      Pokud nechcete, aby výchozí název, který je přiřazen do ovládacího prvku, můžete změnit název v **vlastnosti** okna.  
   

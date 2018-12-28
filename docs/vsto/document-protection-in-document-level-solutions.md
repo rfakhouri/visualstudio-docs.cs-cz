@@ -14,53 +14,53 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], restricted permissions
 - Office documents [Office development in Visual Studio], restricted permissions
 - documents [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22c8f135770fbd427d361b9c9b113da3b20e609a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 03724e523c1f49277e0bc2b23465d5296d806695
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447866"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648532"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrana dokumentů v řešeních na úrovni dokumentu
-  Můžete využívat funkce ochrany aplikace Microsoft Office Word a Microsoft Office Excel v projekty na úrovni dokumentu. Tyto funkce brání neoprávněným uživatelům v provádění změn chráněných části dokumentu.  
+  Můžete využívat funkce ochrany aplikace Microsoft Office Word a Microsoft Office Excel v projektech na úrovni dokumentu. Tyto funkce blokuje neoprávněné uživatele provádět změny chráněné části dokumentu.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Pomocí aplikace Excel, můžete zapnout ochranu zapnout a vypnout sešit je otevřen v návrháři. Použití aplikace Word, můžete zapnout ochranu pouze mimo designer. Za běhu můžete povolit nebo zakázat ochranu prostřednictvím kódu programu pro Word a Excel.  
+ Pomocí aplikace Excel, můžete zapnout ochranu zapnout a vypnout sešit je v Návrháři otevřený. Použití aplikace Word, můžete zapnout ochranu pouze mimo návrháře. Za běhu můžete povolit nebo zakázat ochranu prostřednictvím kódu programu pro aplikace Word a Excel.  
   
- Pokud je ochrana dokumentu v dokumentu, který je otevřít v Návrháři povoleno, všechny ovládací prvky jsou odebrány z **sada nástrojů** nebo nebudou k dispozici, a nelze přetáhnout nic z **zdroje dat** okna dokumentu.  
+ Když na dokument, který je otevřen v Návrháři je povolená ochrana dokumentů, odeberou se všechny ovládací prvky z **nástrojů** nebo jsou k dispozici, a nelze přetáhnout nic z **zdroje dat** okno dokumentu.  
   
 ## <a name="serverdocument-and-protected-documents"></a>ServerDocument a chráněné dokumenty  
- Pokud je dokument chráněný, datové mezipaměti není přístupná z mimo dokumentu. Nelze použít <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy načíst nebo pracovat s daty, která se uloží do mezipaměti v chráněný dokument, nebo pomocí jiných metod <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> třídy.  
+ Pokud je dokument chráněný, přístupné z mezipaměti dat mimo dokumentu. Nelze použít <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy načíst nebo manipulaci s daty, která se uloží do mezipaměti v chráněný dokument, nebo použít jiné metody <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> třídy.  
   
 ## <a name="word-document-protection-in-the-designer"></a>Ochrana dokumentů aplikace Word v Návrháři  
- Pokud přidáte ochrany na dokument aplikace Word nebo šablonu je otevřen v sadě Visual Studio, nelze spustit, vynucovat ochranu v návrháři. Dokument je v režimu návrhu, když je otevřen v sadě Visual Studio, a musí být v spuštěn režimu předtím, než můžete začít vynucovat ochranu.  
+ Pokud chcete přidat ochranu Wordového dokumentu nebo šablony je otevřen v sadě Visual Studio, nelze spustit, vynucovat ochranu v návrháři. Dokument je v režimu návrhu, zatímco je otevřen v sadě Visual Studio a musí se v spustit režim předtím, než můžete začít vynucovat ochranu.  
   
- Pokud vytvoříte projekt, který používá stávající dokument aplikace Word, který má zapnutou ochranu, je dokument chráněný otevřené v návrháři. Nelze upravit části chráněného dokumentu, ale můžete pořád psaní kódu v editoru kódu k automatizaci dokumentu. Můžete také nemůže vytvořit projekt Pokud je povolena ochrana dokumentu je otevřen v sadě Visual Studio.  
+ Pokud vytvoříte projekt, který používá existující dokument aplikace Word, který má zapnutou ochranu, je dokument chráněný při otevření v návrháři. Nelze upravit chráněné části dokumentu, ale můžete pořád napsat kód v editoru kódu pro automatizaci dokumentu. Také nelze sestavení projektu je-li povolit ochranu, když je dokument otevřen v sadě Visual Studio.  
   
- Můžete vypnout ochranu dokumentu je otevřen v návrháři, aby mohli dokument upravovat a sestavte projekt. Ochranu pro kopírování v Návrháři nelze vypnout, při ladění; dokument, který otevře během ladění je samostatná kopie z jedné otevřít v Návrháři (kopie výstup je uložena v *\bin* adresáři v jazyce Visual Basic a *\bin\debug* adresář pro jazyk C#).  
+ Můžete vypnout ochranu dokumentu je v Návrháři otevřený, aby mohli dokument upravovat a sestavte projekt. Ochranu pro kopírování v Návrháři nelze vypnout, při ladění; dokument, který se otevře při ladění je samostatná kopie z jedné otevřít v Návrháři (výstup kopie je uložena v *\bin* adresáře v jazyce Visual Basic a *\bin\debug* adresáře pro C# ).  
   
- Můžete povolit ochranu na kopii dokumentu, které se otevře v Návrháři zavřít projekt v sadě Visual Studio, otevřením kopii dokumentu, který je v adresáři projektu a zapnutí ochrany.  
+ Můžete povolit ochranu na kopii dokumentu, který se otevře v Návrháři zavírání projektu v sadě Visual Studio, otevřením kopii dokumentu, který je v adresáři projektu a zapnutí ochrany.  
   
-## <a name="enforce-word-document-protection-on-build"></a>Vynutit ochrana dokumentů aplikace Word na sestavení  
- Visual Studio spustí, vynucovat ochranu dokumentů aplikace Word a šablony během procesu sestavení tak, aby po otevření dokumentu pro ladění zapnutá ochrana. Je dokument chráněný pomocí prázdné heslo.  
+## <a name="enforce-word-document-protection-on-build"></a>Vynutit ochrana dokumentů aplikace Word v sestavení  
+ Spustí aplikace Visual Studio použít zámek pro šablony Wordových dokumentů a během procesu sestavení tak, aby se po otevření dokumentu pro ladění povolit ochranu. Dokument je chráněný pomocí prázdné heslo.  
   
- Ochrana je povolena při sestavování proto, pokud je kód v dokumentu <xref:Microsoft.Office.Tools.Word.Document.Startup> událost, která může způsobit, že výjimky nebo změnit chování aplikace, tento kód může být vyladěnou správně. Pokud povolíte ochranu po otevření dokumentu, inicializace kód nelze ladit nebo testována.  
+ Ochrana je povoleno během sestavení tak, pokud není kód v dokumentu <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí, který může způsobit, že výjimky nebo změnit chování aplikace, tento kód může být ladění správně. Pokud povolíte ochranu po otevření dokumentu, inicializační kód nelze ladit, nebo testovat.  
   
 ## <a name="setting-the-password"></a>Nastavení hesla  
- Visual Studio automaticky povolí ochranu, ale poskytuje ve výchozím nastavení žádné heslo. Pokud chcete, aby ochrana dokumentu heslo, musíte jej přidat před nasazením řešení. Přidání hesla umožňuje autorizovaným uživatelům odebrání ochrany dokumentu. bez zadání hesla nelze snadno odebrat ochranu. Podrobnosti o nastavení hesla, najdete v tématu nápovědy v konkrétní aplikaci Office.  
+ Visual Studio automaticky povolí ochranu, ale ve výchozím nastavení poskytuje žádné heslo. Pokud chcete ochranu dokumentů heslo, musíte jej přidat před nasazení vašeho řešení. Přidání hesla umožňuje autorizovaným uživatelům odebrat ochranu z dokumentu. bez hesla nelze snadno odebrat ochranu. Podrobnosti o nastavení hesla najdete v nápovědě v konkrétní aplikaci Office.  
   
-## <a name="see-also"></a>Viz také  
- [Postupy: zamykání dokumentů a částí dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
- [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)   
- [Přehled rozšíření spravovaného kódu a Správa přístupových práv](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [Ochrana heslem v dokumentech Office](../vsto/password-protection-on-office-documents.md)   
- [Postupy: povolení kód pro spuštění pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+## <a name="see-also"></a>Viz také:  
+ [Postupy: Zamykání dokumentů a částí dokumentů](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
+ [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Přehled rozšíření spravovaného kódu a správy přístupových práv](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Ochrana dokumentů Office heslem](../vsto/password-protection-on-office-documents.md)   
+ [Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: ladění rozhraní .NET Framework zdroje | Dokumentace Microsoftu'
+title: 'Postupy: Ladění zdroje rozhraní .NET Framework | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389277"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443909"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Postupy: ladění .NET Framework – zdroj
+# <a name="how-to-debug-net-framework-source"></a>Postupy: Ladění zdroje rozhraní .NET Framework
 
 Ladění zdroje rozhraní .NET Framework, musíte mít:
 
@@ -55,7 +55,7 @@ Ladění zdroje rozhraní .NET Framework, musíte mít:
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Načíst symboly z modulů nebo zásobník volání systému windows  
   
-1. Během ladění, otevřete okno tak, že vyberete **ladění** > **Windows** > **moduly** nebo **zásobník volání** . 
+1. Během ladění, otevřete okno tak, že vyberete **ladění** > **Windows** > **moduly** (nebo stiskněte klávesu **Ctrl + Alt + U**) nebo **ladění** > **Windows** > **zásobník volání** (**Ctrl + Alt + C**). 
    
 1. Klikněte pravým tlačítkem na modul, pro který nejsou načteny symboly. V **moduly** , stav načítání symbolů je okno **symboly stavu** sloupce. V **zásobník volání** okna, stav je **stav rámce** sloupce a rámeček zobrazena šedě. 
    

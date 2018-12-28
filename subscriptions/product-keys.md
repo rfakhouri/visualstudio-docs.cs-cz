@@ -9,12 +9,12 @@ description: Zjistěte, jak získat a spravovat kódy product key v předplatný
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900849"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803821"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Používání kódů product key v předplatných sady Visual Studio
 
@@ -32,14 +32,14 @@ Pokud jste uplatnili všechny kódy product key dostupné v rámci vašeho před
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Maloobchodní prodej a multilicenční verze produktů
 Předplatná sady Visual Studio nabízejí výběr maloobchodního prodeje a multilicenčními verzemi produktů společnosti Microsoft. Některé produkty jsou k dispozici ke stažení pouze v jejich prodejní verze nebo pouze v jejich multilicenční verze; Některé funkce jsou dostupné v obou verzích. Obecně platí produkty, které vyžadují aktivaci, jako jsou Windows, Windows Server a klientské produkty Office, se teď nabízí jenom pro jejich prodejní verzi prostřednictvím souborů ke stažení.
 
-Volume Licensing Zákazníci si můžete také stáhnout software z na svazek licencování Service Center (VSLC) k získání multilicenčními verzemi produktů (a odpovídající kódy product key).  Je určené správci v rámci organizace zákazníka spravovat přístup k webu VLSC.
+Volume Licensing Zákazníci si můžete také stáhnout software z na svazek licencování Service Center (VLSC) Chcete-li získat multilicenčními verzemi produktů (a odpovídající kódy product key).  Je určené správci v rámci organizace zákazníka spravovat přístup k webu VLSC.
 
 ## <a name="daily-product-key-claim-limits"></a>Denní kód product key deklarace identity omezení
 Microsoft klade velký důraz na ochranu integrity programu předplatných pro Visual Studio a hodnota software a výhody, které legitimní předplatitelé programu získat za svou investici získají. Podporu v rámci tohoto závazku Microsoft implementoval denní limity pro uplatnění kódů pro předplatná sady Visual Studio. Denní limity pro uplatnění kódů omezují počet kódů, které je možné uplatnit za den na jedno předplatné.
 
 Denní limit uplatnění kódů je to 10 kódů u všech předplatných sady Visual Studio, včetně těch, které nabízí prostřednictvím programu MPN, BizSpark, MCT Software & Services a MCT, s výjimkou Visual Studio Professional (MPN), který má klíč Denní limit 7 klíčů deklarací identity.
 
-Poznámka: Klíč limity kódů podléhají změnám. Zde najdete nejaktuálnější omezení.
+Poznámka: Limity pro uplatnění kódů podléhají změnám. Zde najdete nejaktuálnější omezení.
 
 Pokud jste uplatnili maximální počet kódů dostupných pro vaše předplatné během období 24 hodin, zobrazí se chybová zpráva oznamující, že se dosáhlo svého limitu. Limit se resetuje každých 24 hodin, od 00:01:00 tichomořského času.
 

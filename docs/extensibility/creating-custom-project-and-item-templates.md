@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739822"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802732"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Vytváření vlastních šablon projektů a položek
 
@@ -29,7 +29,7 @@ Můžete také nakonfigurovat šablonu k instalaci balíčků NuGet. Další inf
 Pro scénáře vytvoření základní šablony, byste měli použít **exportovat šablonu** průvodce, který uloží do komprimovaného souboru. Další informace o vytvoření základní šablony najdete v tématu [vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md).
 
 > [!NOTE]
-> Spouští se v sadě Visual Studio 2017, vyhledávání vlastních projektů a šablon položek už se provede. Rozšíření místo toho musíte zadat soubory manifestu šablon, které popisují umístění instalace služby tyto šablony. Visual Studio 2017 můžete použít k aktualizaci rozšíření VSIX. Pokud provádíte nasazení vašeho rozšíření pomocí MSI, musíte soubory manifestu šablony vygenerovat ručně. Další informace najdete v tématu [možnosti vlastní šablony projektů a položek pro Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schéma manifestu šablony je popsána v [odkaz na schéma manifestu šablon sady Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
+> Spouští se v sadě Visual Studio 2017, vyhledávání vlastních projektů a šablon položek už se provede. Rozšíření místo toho musíte zadat soubory manifestu šablon, které popisují umístění instalace služby tyto šablony. Visual Studio 2017 můžete použít k aktualizaci rozšíření VSIX. Pokud provádíte nasazení vašeho rozšíření pomocí MSI, musíte soubory manifestu šablony vygenerovat ručně. Další informace najdete v tématu [upgrade vlastních šablon projektů a položek pro Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). Schéma manifestu šablony je popsána v [odkaz na schéma manifestu šablon sady Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
 ## <a name="create-a-project-template"></a>Vytvoření šablony projektu
 

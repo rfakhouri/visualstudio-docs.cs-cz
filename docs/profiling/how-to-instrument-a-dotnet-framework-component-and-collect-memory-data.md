@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: instrumentace součásti samostatné rozhraní .NET Framework a shromažďování dat paměti Profiler příkazového řádku | Dokumentace Microsoftu'
+title: 'Postupy: Instrumentaci komponenty samostatné rozhraní .NET Framework a shromažďovat paměťová Data se Profiler příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e2191469d313aca8506ccc86ddc6ab096f8e390
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 860caedef22221bb815732ab76e319fd409bb3cb
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592726"
 ---
-# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Postupy: instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat paměti profilerem pomocí příkazového řádku
+# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Postupy: Instrumentace samostatné součásti rozhraní .NET Framework a shromažďování dat paměti s profilerem z příkazového řádku
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci komponenty rozhraní .NET Framework samostatné aplikace, například .exe nebo .dll soubor a shromažďovat informace o paměti pomocí profileru.  
 
 > [!NOTE]
->  Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v *\Team Tools\Performance nástroje* jedná o podadresář adresáře instalace sady Visual Studio. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.  
 
 
  Ke shromažďování dat paměti pomocí metody instrumentace z komponenty rozhraní .NET Framework, můžete použít [VSInstr.exe](../profiling/vsinstr.md) Nástroj generuje instrumentovanou verzi komponenty a [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) Nástroj pro inicializaci proměnné prostředí profilování. Potom spusťte pomocí profileru *VSPerfCmd.exe* nástroj.  
@@ -38,7 +38,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
 2. Použití **VSInstr** Nástroj generuje instrumentovanou verzi cílové aplikace.  
 
-3. Inicializace proměnných prostředí profilování rozhraní .NET Framework. Typ:  
+3. Inicializace proměnných prostředí profilování rozhraní .NET Framework. Zadejte:  
 
     **Vsperfclrenv –** {**/tracegc** &#124; **/tracegclife**}  
 
@@ -49,7 +49,7 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
        |**/tracegc**|Povolí shromažďování data o přidělování paměti pouze.|  
        |**/tracegclife**|Povolí shromažďování přidělení paměti a životnosti objektů.|  
 
-4. Spusťte profiler. Typ:  
+4. Spusťte profiler. Zadejte:  
 
     **/Start:trace VSPerfCmd/output:** `OutputFile` [`Options`]  
 

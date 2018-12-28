@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1c80e7421569804f6d6781b117522dd1ef1dea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885879"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738790"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Řešení potíží s Analýzou kódu
 Toto téma obsahuje informace o odstraňování potíží pro následující problémy s analýzou kódu sady Visual Studio.
@@ -32,4 +32,4 @@ Toto téma obsahuje informace o odstraňování potíží pro následující pro
 3. Znovu otevřít sadu pravidel, zrušení změny a potom uložte pravidlo znovu nastavit.
 
 ## <a name="see-also"></a>Viz také
- [Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+ [Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md) [analýza kvality spravovaného kódu](../code-quality/code-analysis-for-managed-code-overview.md) [použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

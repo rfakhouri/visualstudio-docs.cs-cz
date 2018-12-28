@@ -16,55 +16,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956650"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684441"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Postupy: zobrazení existujících typů v Návrháři tříd
+# <a name="how-to-view-existing-types-in-class-designer"></a>Postupy: Zobrazení existujících typů v Návrháři tříd
 
-Pokud chcete zobrazit stávající typ a její členy, přidejte do diagramu tříd jeho tvaru.
+Chcete-li zobrazit existující typ a její členy, přidáte jeho tvar do diagramu tříd.
 
 Můžete vidět místní a odkazované typy. V aktuálně otevřeném projektu existuje místní typ a je pro čtení i zápis. Odkazovaný typ existuje v jiném projektu nebo v odkazovaném sestavení a je jen pro čtení.
 
-Postup návrhu nové typy v diagramech tříd, najdete v [postupy: vytváření typů pomocí návrháře tříd](how-to-create-types.md).
+Navrhování nových typů v diagramech tříd, naleznete v tématu [jak: Vytváření typů pomocí návrháře tříd](how-to-create-types.md).
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Zobrazení typů v projektu v diagramu tříd
 
-1.  Z projektu v **Průzkumníku**, otevřete soubor, diagram (.cd) třída. Nebo pokud neexistuje žádný diagram tříd, přidejte do projektu nový diagram tříd. V tématu [postupy: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md).
+1.  Z projektu v **Průzkumníka řešení**, otevřete existující soubor diagramu tříd (.cd). Nebo pokud neexistuje žádný diagram tříd, přidejte do projektu nový diagram tříd. Zobrazit [jak: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md).
 
-2.  Z projektu v **Průzkumníku**, přetáhněte soubor zdrojového kódu do diagramu tříd.
+2.  Z projektu v **Průzkumníka řešení**, přetáhněte soubor zdrojového kódu do diagramu tříd.
 
     > [!NOTE]
-    > Pokud má vaše řešení projekt, který sdílí kód mezi více aplikacemi, můžete přetáhnout soubory nebo kód na diagramu tříd pouze z těchto zdrojů:
+    > Pokud má vaše řešení projekt, které sdílejí kód mezi více aplikacemi, můžete přetáhnout soubory nebo kód do diagramu tříd pouze z těchto zdrojů:
     >
     > - Projekt aplikace, který obsahuje diagram
-    > - Sdílený projekt, který byl importován pomocí projekt aplikace
+    > - Sdílený projekt, který byl importován projektem aplikace
     > - Odkazovaný projekt
     > - Sestavení
 
     Tvary, které představují typy definované v souboru zdrojového kódu, se zobrazí v diagramu na pozici, kam jste soubor přetáhli.
 
-Můžete také zobrazit typy v projektu přetáhněte jeden nebo více typů v uzlu projektu **zobrazení tříd** na diagramu tříd.
+Můžete také zobrazit typy v projektu přetažením jednoho nebo více typů z uzlu projektu v **zobrazení tříd** do diagramu tříd.
 
 > [!TIP]
 > Pokud **zobrazení tříd** není otevřený, otevřete **zobrazení tříd** z **zobrazení** nabídky.
 
-Chcete-li zobrazit typy v výchozí umístění v diagramu, vyberte jeden nebo více typů v **zobrazení tříd**, klikněte pravým tlačítkem na vybrané typy a zvolit **zobrazení diagramu tříd**.
+Chcete-li zobrazit typy ve výchozích umístěních v diagramu, vyberte jeden nebo více typů v **zobrazení tříd**, klikněte pravým tlačítkem na vybrané typy a zvolte **zobrazit Diagram tříd**.
 
 > [!NOTE]
-> Pokud v projektu existuje zavřený diagram tříd obsahující daný typ, diagram tříd se otevře a zobrazí tvar typu. Pokud ale diagram žádná třída obsahující typ existuje v projektu **návrhář tříd** vytvoří nový diagram – třída v projektu a otevře ji zobrazíte typu.
+> Pokud v projektu existuje zavřený diagram tříd obsahující daný typ, diagram tříd se otevře a zobrazí tvar typu. Nicméně pokud žádné diagram tříd obsahující typ v projektu existuje, **návrhář tříd** vytvoří v projektu nový diagram tříd a otevře jej pro zobrazení typu.
 
 Při prvním zobrazení typu v diagramu se jeho tvar ve výchozím nastavení zobrazí sbalený. Tvar můžete rozbalit a zobrazit jeho obsah.
 
-### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>K zobrazení obsahu projektu v diagramu tříd
+### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Chcete-li zobrazit obsah projektu v diagramu tříd
 
-V **Průzkumníku řešení** nebo **zobrazení tříd**, klikněte pravým tlačítkem na projekt a vyberte možnost **zobrazení**, zvolte **zobrazení diagramu tříd**. Vytvoří se automaticky vyplněný diagram tříd.
+V **Průzkumníka řešení** nebo **zobrazení tříd**, klikněte pravým tlačítkem na projekt a zvolte **zobrazení**, klikněte na tlačítko **zobrazit Diagram tříd**. Vytvoří se automaticky vyplněný diagram tříd.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Postupy: zobrazení dědičnosti mezi typy](how-to-view-inheritance-between-types.md)
-- [Postupy: přizpůsobení diagramů tříd](how-to-customize-class-diagrams.md)
-- [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
+- [Postupy: Zobrazení dědičnosti mezi typy](how-to-view-inheritance-between-types.md)
+- [Postupy: Přizpůsobení diagramů tříd](how-to-customize-class-diagrams.md)
+- [Zobrazování typů a vztahů](designing-and-viewing-classes-and-types.md)

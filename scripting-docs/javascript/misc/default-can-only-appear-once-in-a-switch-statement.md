@@ -1,5 +1,5 @@
 ---
-title: '& č. 39; výchozí & č. 39; může být pouze jednou v & č. 39; přepínač & č. 39; příkaz | Microsoft Docs'
+title: "'default' může být pouze jednou v příkazu 'switch' | Dokumentace Microsoftu"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,21 +20,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e60dd1ce6b4102ab856cd3d45416175c7030e8d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788760"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803880"
 ---
-# <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>& č. 39; výchozí & č. 39; může být pouze jednou v & č. 39; přepínač & č. 39; příkaz
-Jste se pokusili použít **výchozí** příkaz více než jednou v rámci příkazu switch. Výchozí případem je vždy poslední příkaz případu v příkazu switch (je případ patří prostřednictvím).  
+# <a name="default-can-only-appear-once-in-a-switch-statement"></a>Klíčové slovo 'default' může být v příkazu 'switch' použito pouze jednou
+Pokusili jste se použít **výchozí** příkazu více než jednou v rámci příkazu switch. Výchozí případ je vždy posledního příkazu case v příkazu switch (to je případ propuštěním).  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Odeberte parametr navíc **výchozí** případ příkazy z vaší `switch` – příkaz (použijte na většině jedno case – příkaz v příkazu přepínače).  
+-   Odeberte všechny další **výchozí** malá a velká příkazy z vaší `switch` – příkaz (použijte na většině jeden výchozí case – příkaz v příkazu switch).  
   
 ## <a name="see-also"></a>Viz také  
  [Switch – příkaz](../../javascript/reference/switch-statement-javascript.md)   
  [Řízení toku programu](../../javascript/controlling-program-flow-javascript.md)   
- [Vyhrazená slova jazyka JavaScript](../../javascript/reference/javascript-reserved-words.md)
+ [JavaScript – vyhrazená slova](../../javascript/reference/javascript-reserved-words.md)

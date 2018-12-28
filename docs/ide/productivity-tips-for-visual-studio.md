@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecaae21757c5a23eeb13858026d5f4fcfe3dab22
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067975"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684878"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu sady Visual Studio
 
@@ -118,11 +118,11 @@ V jednu chvíli můžete být práce ve více souborech s kódem a budete přech
 
      Můžete také spravovat soubory snadněji tak, že vytvoříte jiná instance **Průzkumníka řešení** a jeho přesunutím na jiný monitor. K vytvoření další instance okna **Průzkumníka řešení**, otevřete místní nabídku v **Průzkumníka řešení**a klikněte na tlačítko **nové zobrazení Průzkumníka řešení**.
 
-- **Přizpůsobte písmo zobrazené v sadě Visual Studio**. Můžete změnit vzhled písma, velikost a barvu, která se používá pro text v integrovaném vývojovém prostředí. Například lze upravit barvu konkrétních prvků kódu v editoru a řez písma v oknech nástrojů nebo v celém rozhraní IDE. Další informace najdete v tématu [postupy: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) a [postupy: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Přizpůsobte písmo zobrazené v sadě Visual Studio**. Můžete změnit vzhled písma, velikost a barvu, která se používá pro text v integrovaném vývojovém prostředí. Například lze upravit barvu konkrétních prvků kódu v editoru a řez písma v oknech nástrojů nebo v celém rozhraní IDE. Další informace najdete v tématu [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) a [jak: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Výchozí klávesové zkratky pro často používané příkazy](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [Postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Postupy: Přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Návod: Vytvoření jednoduché aplikace](../get-started/csharp/tutorial-wpf.md)
 - [A tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md)

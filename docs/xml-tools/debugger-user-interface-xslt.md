@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847380"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561915"
 ---
 # <a name="debugger-user-interface-xslt"></a>Uživatelské rozhraní ladicího programu (XSLT)
 
@@ -26,7 +26,7 @@ Další informace najdete v tématu [ladění odkazu uživatelského rozhraní](
 ## <a name="locals-window"></a>Místní hodnoty – okno
  V okně místních hodnot zobrazí informace o všechny proměnné definované v šabloně stylů. V okně místních hodnot obsahuje tři sloupce informací:
 
- **Jméno**
+ **Název**
 
  Tento sloupec obsahuje názvy všech místních proměnných v aktuálním oboru. Uzel sady mají ovládacím prvkem strom, který je můžete přejít na najdete v jejích podsložkách.
 
@@ -92,15 +92,15 @@ Další informace najdete v tématu [ladění odkazu uživatelského rozhraní](
 
 -   Uživatelem definované funkce nejsou povoleny.
 
-Další informace najdete v tématu [postupy: vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Další informace najdete v tématu [jak: Vyhodnocení výrazu XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>okno Zpětný překlad
  V okně zpětný překlad zobrazí kód sestavení generovaný kompilátorem XSLT. Toto okno lze použít stejně jako všechny ostatní okna zpětného překladu sady Visual Studio.
 
- Další informace najdete [postupy: použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).
+ Další informace najdete [jak: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Ladění XSLT](../xml-tools/debugging-xslt.md)
-- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+- [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)   
 - [Kontrolovat proměnné v okně Automatické hodnoty a místní hodnoty v sadě Visual Studio](../debugger/autos-and-locals-windows.md)

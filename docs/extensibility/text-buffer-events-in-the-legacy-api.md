@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080605"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804062"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Události vyrovnávací paměti textu ve starší verzi rozhraní API
 Objekt vyrovnávací paměti textu vysílá několik různých událostí, které umožní reagovat na různé situace.  
   
- Pokud používáte starší verzi rozhraní API, měli byste implementovat následující rozhraní za účelem přijímání oznámení změn do vyrovnávací paměti textu. Zveřejňují rozhraní vyrovnávací paměti na text pomocí `IConnectionPointContainer` rozhraní na textovou vyrovnávací paměť pro příjem oznámení o řádek se změní z vyrovnávací paměti. Další informace najdete v tématu [postupy: registrace pro události vyrovnávací paměti textu se starší verze rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). V případě třídy `IVsTextStreamEvents` nebo `IVsTextLinesEvents` rozhraní, změny se vrátí v buď jeden nebo two trojrozměrným souřadnice, v uvedeném pořadí.  
+ Pokud používáte starší verzi rozhraní API, měli byste implementovat následující rozhraní za účelem přijímání oznámení změn do vyrovnávací paměti textu. Zveřejňují rozhraní vyrovnávací paměti na text pomocí `IConnectionPointContainer` rozhraní na textovou vyrovnávací paměť pro příjem oznámení o řádek se změní z vyrovnávací paměti. Další informace najdete v tématu [jak: Zaregistrujte se na události vyrovnávací paměti textu pomocí starší verze rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). V případě třídy `IVsTextStreamEvents` nebo `IVsTextLinesEvents` rozhraní, změny se vrátí v buď jeden nebo two trojrozměrným souřadnice, v uvedeném pořadí.  
   
 ## <a name="text-buffer-interfaces"></a>Rozhraní vyrovnávací paměti textu  
  Následující části jsou rozhraní implementované objekt vyrovnávací paměti textu.  
@@ -53,4 +53,6 @@ Objekt vyrovnávací paměti textu vysílá několik různých událostí, kter�
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Oznamuje klientům poslední potvrzení gesta pro aktivaci události a poskytuje řadu změněného textu. `IVsFinalTextChangeCommitEvents` Rozhraní není aktivováno v reakci na vrácení zpět nebo opakování příkazů. Události aktivovaly jenom u vyrovnávacích pamětí, které mají správce akcí zpět. `IVsFinalTextChangeCommitEvents` je určen pro použití pouze jazykové služby nebo jiné objekty, které mají plnou kontrolu nad úpravy. Vaše VSPackage musí monitorování buď `IVsPreliminaryTextChangeCommitEvents` rozhraní nebo `IVsFinalTextChangeCommitEvents` rozhraní, ale ne obojí.|  
   
 ## <a name="see-also"></a>Viz také:
- [Přístup k vyrovnávací paměti textu pomocí starší verze rozhraní API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [postupy: registrace pro události vyrovnávací paměti textu se starší verze rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [Přístup k vyrovnávací paměti textu pomocí starší verze rozhraní API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [Postupy: Zaregistrujte se na události vyrovnávací paměti textu pomocí starší verze rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

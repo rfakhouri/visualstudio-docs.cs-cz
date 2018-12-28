@@ -1,5 +1,5 @@
 ---
-title: Očekávaný & č. 39; catch & č. 39; | Microsoft Docs
+title: Byl očekáván 'příkaz catch' | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6cd1e57137d220ebcf3834070e36d8257e2dca7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788994"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801973"
 ---
-# <a name="expected-39catch39"></a>Očekávaný & č. 39; catch & č. 39;
-Použít zpracování výjimek **zkuste** blokovat, ale zapsat přidruženého **catch** příkaz. Výjimka mechanismu pro zpracování vyžaduje, aby kód, který může selhat, společně s kód, který by neměl spustit, pokud dojde k výjimce, zabalit uvnitř **zkuste** bloku. Jsou výjimky vyvolány v rámci **zkuste** blokovat, s využitím **throw** příkaz a zachycení mimo **zkuste** bloku s jedním nebo více **catch**příkazy.  
+# <a name="expected-catch"></a>Byl očekáván příkaz 'catch'
+Použít zpracování výjimek **zkuste** blokovat, ale nezapsal přidruženého **catch** příkazu. Mechanismus zpracování výjimek vyžaduje, aby kód, který může selhat, spolu s kódem, který by neměl být spuštěn pokud dojde k výjimce uzavřou uvnitř **zkuste** bloku. Jsou výjimky vyvolány v rámci **zkuste** blokovat, s využitím **throw** příkaz a zachycené mimo **zkuste** blok s jednou nebo více **catch**příkazy.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   

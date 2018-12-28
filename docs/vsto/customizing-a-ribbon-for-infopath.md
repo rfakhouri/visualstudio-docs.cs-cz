@@ -11,32 +11,32 @@ dev_langs:
 helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: HT
+ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675835"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648736"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Přizpůsobte pás karet pro aplikaci InfoPath
   Při vlastním nastavení pásu karet v aplikaci Microsoft Office InfoPath, musíte zvážit, kde se zobrazí váš vlastní pás karet v aplikaci. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] můžete zobrazit na pásu karet v následující tři typy InfoPath aplikace pro windows:  
   
--   Windows, který zobrazí šablony formuláře, která je otevřena v režimu návrhu.  
+- Windows, který zobrazí šablony formuláře, která je otevřena v režimu návrhu.  
   
--   Windows, které zobrazí formulář, který je založen na šabloně.  
+- Windows, které zobrazí formulář, který je založen na šabloně.  
   
--   Okno náhledu.  
+- Okno náhledu.  
   
- **Platí pro:** informace v tomto tématu se vztahují na projekty doplňku VSTO pro InfoPath 2010. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Platí pro:** Informace v tomto tématu se vztahují na projekty doplňku VSTO pro InfoPath 2010. Další informace najdete v tématu [dostupné funkce podle typu aplikace a projekt sady Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Uživatelé a návrháři otevřete šablonu formulář v režimu návrhu můžete upravit vzhled a rozložení šablony. Uživatelé otevřít v šabloně k přidání obsahu formuláře, které jsou založeny.  
+  Uživatelé a návrháři otevřete šablonu formulář v režimu návrhu můžete upravit vzhled a rozložení šablony. Uživatelé otevřít v šabloně k přidání obsahu formuláře, které jsou založeny.  
   
- V okně Náhled umožňuje uživatelům a návrháři před kroky vytiskněte náhled na stránkách formuláře nebo šabloně.  
+  V okně Náhled umožňuje uživatelům a návrháři před kroky vytiskněte náhled na stránkách formuláře nebo šabloně.  
   
 > [!NOTE]  
 >  **AddIns** karta není zobrazena v okně Náhled tisku. Pokud chcete na vlastní kartě se zobrazí v okně Náhled, ujistěte se, že **OfficeId** vlastnost karty není nastavena na **TabAddIns**.  

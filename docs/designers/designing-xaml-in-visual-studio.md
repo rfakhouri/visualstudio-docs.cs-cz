@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e7c4935a84c85dd165f75834bd4c4968319474c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739507"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803069"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Návrh XAML v sadě Visual Studio
 
@@ -42,7 +42,7 @@ Nejzákladnější úkoly integrovaném vývojovém prostředí sady Visual Stud
 
 - **XAML IntelliSense:** Obě Integrovaná vývojová prostředí podporují všechny běžné možnosti, které očekáváte od včetně dokončování příkazů, podpora pro běžné operace editoru, například přidávání poznámek a formátování kódu a navigace k prostředkům, vazby a kódu technologie IntelliSense.
 
-- **Základní schopnosti ladění:** Teď můžete ladit v Blendu, včetně nastavení zarážky v kódu k ladění vaší běžící aplikaci. Zachování konzistentní možnosti ladění pomocí sady Visual Studio, nástroje Blend for Visual Studio obsahuje většinu ladění systému windows a panelů nástrojů sady Visual Studio. Pokročilé funkce ladění, jako diagnostiku a analýzy kódu jsou pouze k dispozici v sadě Visual Studio. Zobrazit [ladit v sadě Visual Studio](/visualstudio/debugger/debugger-feature-tour).
+- **Základní schopnosti ladění:** Teď můžete ladit v Blendu, včetně nastavení zarážky v kódu k ladění vaší běžící aplikaci. Zachování konzistentní možnosti ladění pomocí sady Visual Studio, nástroje Blend for Visual Studio obsahuje většinu ladění systému windows a panelů nástrojů sady Visual Studio. Pokročilé funkce ladění, jako diagnostiku a analýzy kódu jsou pouze k dispozici v sadě Visual Studio. Zobrazit [ladit v sadě Visual Studio](../debugger/debugger-feature-tour.md).
 
 - **Opětovné načítání souborů:** Můžete upravit souborů XAML v obou Blend for Visual Studio nebo Visual Studio a jak přepínat mezi nimi automaticky znovu načíst upravené soubory. K minimalizuje přerušení pracovních postupů, teď můžete nastavit váš soubor znovu načíst předvolby v dialogovém okně soubor znovu načíst.
 

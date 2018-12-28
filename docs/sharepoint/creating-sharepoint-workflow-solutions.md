@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739423"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802495"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Vytváření řešení pracovního postupu služby SharePoint
 
@@ -127,7 +127,7 @@ Další informace o SharePoint, naleznete v tématu [Microsoft produktů a techn
 ## <a name="debug-a-sharepoint-workflow-template"></a>Ladění šablony pracovního postupu služby SharePoint
  Můžete ladit projekt pracovního postupu služby SharePoint stejná jako ladění jiných [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] webové projekty. Při spuštění [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicího programu, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] používá, které určíte v nastavení **Průvodce přizpůsobením SharePoint** otevřete příslušný web služby SharePoint a automaticky přidružit šablonu pracovního postupu s příslušnou knihovnu nebo seznamu. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] také připisuje [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program se má [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] proces s názvem *w3wp.exe*.
 
- K testování pracovního postupu, je nutné spustit ji ručně. Další informace najdete v části "Ladění pracovních postupech" v [ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Další informace o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web ladění aplikací, přečtěte si [ladění webových aplikací a skriptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications).
+ K testování pracovního postupu, je nutné spustit ji ručně. Další informace najdete v části "Ladění pracovních postupech" v [ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Další informace o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web ladění aplikací, přečtěte si [ladění webových aplikací a skriptu](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Nasazení šablony pracovního postupu služby SharePoint
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projekty pracovního postupu služby SharePoint nasadit stejně jako ostatní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektů služby SharePoint. Další informace najdete v tématu [balíčků a nasazení SharePoint řešení](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).

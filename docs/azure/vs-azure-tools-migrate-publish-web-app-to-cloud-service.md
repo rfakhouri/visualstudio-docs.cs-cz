@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 221200938db7f0501081d0d1d4152292634e6bfa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d4c2468c7cfa074a63151eef262ee57ca552eb07
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055793"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802557"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: migrace a publikovat webovou aplikaci do cloudové služby Azure ze sady Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Postupy: Migrace a publikování webové aplikace do cloudové služby Azure ze sady Visual Studio
 
 Pokud chcete využít výhod hostitelských služeb a schopnost škálování Azure, může být vhodné k migraci a nasazení vaší webové aplikace do cloudové služby Azure. Je nutné provést jenom minimální změny. Tento článek se týká nasazení do cloudové služby. App Service, najdete v části [nasazení webové aplikace ve službě Azure App Service](/azure/app-service/app-service-deploy-local-git).
 
@@ -92,13 +92,17 @@ Následující tabulka obsahuje podrobnosti o spuštění aplikace v Azure:
 1. Zadejte připojovací řetězec v `web.config` soubor v následujícím formátu a soubor uložte:
 
     ```xml
-    <addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=<server name>\SQLEXPRESS;initial catalog=<database name>;integrated security=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
     Aktualizace *connectionString* hodnotu připojovací řetězec ADO.NET pro vaši databázi SQL Azure následujícím způsobem:
 
     ```xml
-    XMLCopy<addname="tempdbEntities"connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"providerName="System.Data.EntityClient"/>
+    <add name="tempdbEntities"
+     connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=tcp:<SQL Azure server name>.database.windows.net,1433;Database=<database name>;User ID=<user name>;Password=<password>;Trusted_Connection=False;Encrypt=True;multipleactiveresultsets=True;App=EntityFramework&quot;"
+     providerName="System.Data.EntityClient"/>
     ```
 
 ## <a name="supported-project-templates"></a>Šablony projektů podporované

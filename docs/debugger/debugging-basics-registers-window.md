@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257053"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561798"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informace o okně registr v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -52,5 +52,5 @@ ms.locfileid: "52257053"
  Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud kliknete pravým tlačítkem **zaregistruje** okně se zobrazí místní nabídku, který obsahuje seznam skupin, které můžete zobrazit nebo skrýt podle svých potřeb.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití okna registry](../debugger/how-to-use-the-registers-window.md)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)
+ [Postupy: Použití okna registry](../debugger/how-to-use-the-registers-window.md)   
+ [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

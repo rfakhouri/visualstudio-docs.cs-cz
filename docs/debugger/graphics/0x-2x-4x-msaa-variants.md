@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872652"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802608"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA variant
 Přepsání více ukázka vyhlazování (MSAA) nastavení ve všech cíle vykreslování a Prohodit řetězy.  
@@ -45,7 +45,7 @@ Přepsání více ukázka vyhlazování (MSAA) nastavení ve všech cíle vykres
   
 - Zařízení podporuje počet vzorků požadovaný (0, 2 nebo 4) a kvalita ukázky (0) pro požadovaný cílový formát (D3D11_TEXTURE2D_DESC::Format člen), vzhledem k vykreslení `ID3D11Device::CheckMultisampleQualityLevels`.  
   
-  Pokud člen D3D11_TEXTURE2D_DESC::BindFlags nemá nastaveny příznaky D3D_BIND_SHADER_RESOUCE nebo D3D11_BIND_UNORDERED_ACCESS, vytvoří se dvě verze textury; první má tyto příznaky pro použití jako cíl vykreslování a druhý je bez MSAA texturu, která má tyto příznaky ponechána beze změn tak, aby fungoval jako řešení vyrovnávací paměť pro první verzi. To je nezbytné, protože použití MSAA textury jako prostředek shaderu nebo neuspořádaným přístupem je pravděpodobně platný – například shaderu, který funguje na něm bude generovat nesprávné výsledky, protože očekáváte textury bez MSAA. Pokud varianty vytvořil sekundární bez MSAA textury, pak pokaždé, když cíl vykreslování MSAA není nastavena v kontextu zařízení, jsou vyřešeny její obsah do jiných MSAA textury. Podobně, pokaždé, když MSAA vykreslení cíl by měl být vázaný jako prostředek shaderu, nebo se používá v zobrazení s neuspořádaným přístupem, vyřešené bez MSAA textury vázán místo.  
+  Pokud člen D3D11_TEXTURE2D_DESC::BindFlags nemá nastaveny příznaky D3D_BIND_SHADER_RESOURCE nebo D3D11_BIND_UNORDERED_ACCESS, vytvoří se dvě verze textury; první má tyto příznaky pro použití jako cíl vykreslování a druhý je bez MSAA texturu, která má tyto příznaky ponechána beze změn tak, aby fungoval jako řešení vyrovnávací paměť pro první verzi. To je nezbytné, protože použití MSAA textury jako prostředek shaderu nebo neuspořádaným přístupem je pravděpodobně platný – například shaderu, který funguje na něm bude generovat nesprávné výsledky, protože očekáváte textury bez MSAA. Pokud varianty vytvořil sekundární bez MSAA textury, pak pokaždé, když cíl vykreslování MSAA není nastavena v kontextu zařízení, jsou vyřešeny její obsah do jiných MSAA textury. Podobně, pokaždé, když MSAA vykreslení cíl by měl být vázaný jako prostředek shaderu, nebo se používá v zobrazení s neuspořádaným přístupem, vyřešené bez MSAA textury vázán místo.  
   
   Tyto varianty také přepsat nastavení MSAA na všechny řetězce přepnutí vytvořené využitím `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, a `ID3D11CreateDeviceAndSwapChain`.  
   

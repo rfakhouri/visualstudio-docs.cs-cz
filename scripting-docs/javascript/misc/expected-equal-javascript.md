@@ -1,5 +1,5 @@
 ---
-title: Byl očekáván &#39;=&#39; (JavaScript) | Dokumentace společnosti Microsoft
+title: Byl očekáván znak '=' (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909994"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802261"
 ---
-# <a name="expected-3939-javascript"></a>Byl očekáván &#39;=&#39; (JavaScript)
+# <a name="expected--javascript"></a>Byl očekáván znak '=' (JavaScript)
 Došlo k pokusu o vytvoření proměnné pro použití s příkazy podmíněné kompilace, ale není umístit znaménko rovná se mezi proměnné a hodnotu, kterou chcete přiřadit k ní.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  

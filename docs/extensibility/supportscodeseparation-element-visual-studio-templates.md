@@ -1,10 +1,9 @@
 ---
-title: Supportscodeseparation – Element (šablony sady Visual Studio) | Microsoft Docs
+title: Supportscodeseparation – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140739"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561374"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation – element (šablony sady Visual Studio)
-Určuje, jestli **umístit kód do samostatného souboru** zaškrtávací políčko je dostupné v **přidat novou položku** dialogové okno.  
+Určuje, zda **umístěte kód v samostatném souboru** zaškrtávací políčko je dostupné v **přidat novou položku** dialogové okno.  
   
- \<VSTemplate >  
+ \<Vstemplate – >  
  \<TemplateData >  
  \<Supportscodeseparation – >  
   
@@ -49,22 +48,22 @@ Určuje, jestli **umístit kód do samostatného souboru** zaškrtávací polí�
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje v buď **nový projekt** nebo **nová položka** dialogové okno.|  
+|[TemplateData –](../extensibility/templatedata-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **nová položka** dialogové okno.|  
   
 ## <a name="text-value"></a>Textová hodnota  
  Je vyžadována textová hodnota.  
   
- Text musí být buď `true` nebo `false`, která udává, jestli **umístit kód do samostatného souboru** zaškrtávací políčko je dostupné v **přidat novou položku** dialogové okno.  
+ Text musí být buď `true` nebo `false`, která udává, zda je či není **umístěte kód v samostatném souboru** zaškrtávací políčko je dostupné v **přidat novou položku** dialogové okno.  
   
 ## <a name="remarks"></a>Poznámky  
- `SupportsCodeSeparation` je volitelný element. Výchozí hodnota je `false`.  
+ `SupportsCodeSeparation` je volitelný prvek. Výchozí hodnota je `false`.  
   
  `SupportsCodeSeparation` Element je dostupná jenom pro webové šablony položek.  
   
- Kód oddělení nebo model kódu stránky umožňuje uchovávat značky v jeden soubor a programový kód v jiném souboru. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] a jinými jazyky rozhraní .NET pomocí tohoto modelu.  
+ Oddělení kódu nebo použití modelu code-behind model stránky, umožňuje uchovávat značky v jednom souboru a programový kód do jiného souboru. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] a jinými jazyky rozhraní .NET použijte tento model.  
   
 ## <a name="example"></a>Příklad  
- Následující příklad určuje zobrazíte **umístit kód do samostatného souboru** možnost.  
+ Následující příklad určuje zobrazíte **umístěte kód v samostatném souboru** možnost.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

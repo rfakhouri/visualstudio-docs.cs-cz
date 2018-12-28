@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f309c2a960d011601a9fdd41e29d767c667de838
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab42c241e1d87d2de31c4fde3aba81294be0520a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003341"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802807"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurace projektu Azure v sadě Visual Studio za účelem použití více konfigurací služby
 
@@ -56,7 +56,7 @@ Pokud jste už přidali koncový bod HTTPS, je ve výchozím nastavení povolena
 
 Ve výchozím nastavení je povolená Diagnostika pro webovou roli. Účet služby Azure cloud projektu a úložiště jsou nastaveny na použití emulátoru lokálního úložiště. Až budete připravení nasadit do Azure, můžete vybrat tlačítko Tvůrce (**...** ) místo toho použít Azure storage. Diagnostická data můžou přenášet do účtu úložiště na vyžádání nebo automaticky plánovaných intervalech. Další informace o diagnostice Azure najdete v tématu [povolení diagnostiky v Azure Cloud Services a Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Stránka nastavení
+## <a name="settings-page"></a>Stránka Nastavení
 
 Na **nastavení** stránky, můžete přidat nastavení konfigurace jako dvojice název hodnota. Kód spuštěný v roli můžete číst hodnoty nastavení konfigurace v době běhu pomocí tříd poskytovaných oborem [spravované knihovny Azure](http://go.microsoft.com/fwlink?LinkID=171026), konkrétně [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) metoda.
 
@@ -77,7 +77,7 @@ Pro nové nebo existující připojovací řetězce, vyberte **...** * na pravé
 1. Výběr **ručně zadali přihlašovací údaje** umožňuje zadat název účtu a klíč přímo pomocí informací na webu Azure Portal. Zkopírování klíče účtu:
     1. Přejděte na účet úložiště na Azure portal a vyberte **Správa klíčů**.
     1. Pokud chcete zkopírovat klíč účtu, přejděte na účet úložiště na webu Azure portal vyberte **Nastavení > přístupové klíče**, potom pomocí tlačítka pro kopírování zkopírujte primární přístupový klíč do schránky.
-1. Vyberte jednu z možností připojení. **Zadejte vlastní koncové body** se zeptá, abyste zadali konkrétní adresy URL pro objekty BLOB, tabulky a zařadí do fronty. Vlastní koncové body umožňují jeho používání [vlastních domén](/azure/storage/blobs/storage-custom-domain-name.md) a řízení přístupu k více přesně. Zobrazit [nakonfigurování připojovacích řetězců Azure Storage](/azure/storage/common/storage-configure-connection-string).
+1. Vyberte jednu z možností připojení. **Zadejte vlastní koncové body** se zeptá, abyste zadali konkrétní adresy URL pro objekty BLOB, tabulky a zařadí do fronty. Vlastní koncové body umožňují jeho používání [vlastních domén](/azure/storage/blobs/storage-custom-domain-name) a řízení přístupu k více přesně. Zobrazit [nakonfigurování připojovacích řetězců Azure Storage](/azure/storage/common/storage-configure-connection-string).
 1. Vyberte **OK**, pak **soubor > Uložit** se aktualizovat konfiguraci s nový připojovací řetězec.
 
 Při publikování aplikace do Azure, znovu, vyberte konfiguraci služby, které obsahuje připojovací řetězec účtu úložiště Azure. Po publikování aplikace ověřte, že aplikace funguje podle očekávání pro služby Azure storage.
@@ -89,7 +89,7 @@ Další informace o tom, jak aktualizovat konfigurace služby, najdete v části
 Webová role obvykle obsahuje jeden koncový bod protokolu HTTP na portu 80. Role pracovního procesu, na druhé straně může mít libovolný počet koncových bodů HTTP, HTTPS nebo TCP. Koncové body můžou být vstupní koncové body, které jsou k dispozici do externích klientů, nebo vnitřní koncové body, které jsou k dispozici pro jiné role, na kterých běží ve službě.
 
 - Pro zpřístupnění koncový bod HTTP do externích klientů a webové prohlížeče, změňte typ koncových bodů na vstup a zadejte název a číslo veřejného portu.
-- Pokud chcete zpřístupnit koncového bodu HTTPS do externích klientů a webové prohlížeče, změňte typ koncových bodů na **vstupní**a zadejte název, číslo veřejného portu a název certifikátu správy. Certifikátu musíte také definovat v **certifikáty** stránky vlastností, abyste mohli zadat certifikát pro správu. 
+- Pokud chcete zpřístupnit koncového bodu HTTPS do externích klientů a webové prohlížeče, změňte typ koncových bodů na **vstupní**a zadejte název, číslo veřejného portu a název certifikátu správy. Certifikátu musíte také definovat v **certifikáty** stránky vlastností, abyste mohli zadat certifikát pro správu.
 - Aby bylo koncový bod interního přístupu pomocí jiné role v cloudové službě, změňte typ koncových bodů na interní a zadejte název a je to možné privátních portů pro tento koncový bod.
 
 ## <a name="local-storage-page"></a>Stránka Místní úložiště

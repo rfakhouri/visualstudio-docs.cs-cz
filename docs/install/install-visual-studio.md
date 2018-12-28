@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159734"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739968"
 ---
 # <a name="install-visual-studio-2017"></a>Instalace sady Visual Studio 2017
 
@@ -142,7 +142,7 @@ Další informace najdete v tématu [změnit umístění instalace v sadě Visua
 
    Například [sestavení aplikace v jazyce C++](../ide/getting-started-with-cpp-in-visual-studio.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C++** a pak vyberte typ projektu jazyka C++, který má být sestaveno.
 
-   K [sestavení C# aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C#** a pak vyberte C# typ, který chcete sestavit projekt.
+   K [sestavení C# aplikace](../get-started/csharp/tutorial-wpf.md), klikněte na tlačítko **nainstalováno**, rozbalte **Visual C#** a pak vyberte C# typ, který chcete sestavit projekt.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667012"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804076"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 
@@ -43,7 +43,7 @@ Potom postupujte podle níže odkazy, které další informace o funkce souvisej
 | [Interaktivní okno](interactive-repl-for-r-in-visual-studio.md) | Poskytuje úplné prostředí REPL pro R umožňuje snadné spouštění kódu ve zdrojovém souboru v interaktivním okně. | není k dispozici |
 | [Vizualizace dat](visualizing-data-with-r-in-visual-studio.md) | Vykreslení je nedílnou součástí prostředí R a RTVS podporuje více, okna diagramů nezávislé, každá má své vlastní historie a možnost přesunout vykreslí mezi okny. Vykreslení můžete uložit do rastrový obrázek a soubory PDF nebo zkopírován do schránky jako rastrový obrázek nebo metasouboru.  | není k dispozici |
 | [Průzkumník proměnných](variable-explorer.md) | Zkontrolujte proměnné v oborech globální nebo specifický pro balíček s možností zobrazení seřaditelné tabulky a export do souboru CSV. | není k dispozici |
-| [Plně vybavené ladění](debugging-r-in-visual-studio.md) | Zahrnuje integraci s interaktivním okně. | [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Plně vybavené ladění](debugging-r-in-visual-studio.md) | Zahrnuje integraci s interaktivním okně. | [Ladění v sadě Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
 
 Viz také [– nejčastější dotazy](faq.md).
 
@@ -53,8 +53,8 @@ Viz také [– nejčastější dotazy](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Pošlete nám svůj názor!
 
-1. **Problémy s úložištěm GitHub**: je nejlepší způsob, jak kontaktovat tým RTVS [založením problému v Githubu](https://github.com/Microsoft/RTVS/issues), nebo pomocí **nástroje R** > **zpětnou vazbu** nabídky.
+1. **Problémy s úložištěm GitHub**: Je nejlepší způsob, jak kontaktovat tým RTVS [založením problému v Githubu](https://github.com/Microsoft/RTVS/issues), nebo pomocí **nástroje R** > **zpětnou vazbu** nabídky.
 
-1. **Poslat smajlíka / Oblouček nahoru**: **nástroje R** > **zpětnou vazbu** nabídky je rychlý způsob, jak odeslat zpětnou vazbu a připojení souborů protokolu RTVS pro pomoc s diagnostikou problému. (Protokoly se zapisují do *%temp%/RTVSlogs.zip* v případě, že se mají posílat je zvlášť.) Protokolování je zakázaná, pokud si nepřejete mimo telemetrická data sady Visual Studio prostřednictvím **pomáhají** > **zpětnou vazbu** > **nastavení** příkaz nabídky nebo během instalace.
+1. **Poslat smajlíka / Oblouček nahoru**: **Nástroje R** > **zpětnou vazbu** nabídky je rychlý způsob, jak odeslat zpětnou vazbu a připojení souborů protokolu RTVS pro pomoc s diagnostikou problému. (Protokoly se zapisují do *%temp%/RTVSlogs.zip* v případě, že se mají posílat je zvlášť.) Protokolování je zakázaná, pokud si nepřejete mimo telemetrická data sady Visual Studio prostřednictvím **pomáhají** > **zpětnou vazbu** > **nastavení** příkaz nabídky nebo během instalace.
 
-1. **E-mailu**: můžete poslat přímý zpětnou vazbu týmu na *rtvsuserfeedback (adrese)*.
+1. **e-mailu**: Můžete odeslat přímý zpětnou vazbu týmu na *rtvsuserfeedback (adrese)*.

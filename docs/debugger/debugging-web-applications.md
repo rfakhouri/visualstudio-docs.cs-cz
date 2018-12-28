@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178914"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561626"
 ---
 # <a name="debugging-web-applications"></a>Ladění webových aplikací
 Tato část vysvětluje, jak ladit několika typy webových aplikací.  
@@ -41,6 +41,5 @@ Tato část vysvětluje, jak ladit několika typy webových aplikací.
 ## <a name="see-also"></a>Viz také  
  [Ladění webových aplikací a skriptu](../debugger/debugging-web-applications-and-script.md)   
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
- [Základy ladicího programu](../debugger/getting-started-with-the-debugger.md)   
- [Ladění v sadě Visual Studio](../debugger/index.md)  
+ [Nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md) [ladění v sadě Visual Studio](../debugger/index.md)  
  [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)

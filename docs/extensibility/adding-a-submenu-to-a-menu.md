@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863917"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803004"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Přidání podnabídky do nabídky
 Tento návod vychází ukázku v [přidání nabídky na řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) zobrazením přidání podnabídky do **TestMenu** nabídky.
@@ -156,4 +156,6 @@ Tento návod vychází ukázku v [přidání nabídky na řádku nabídek sady V
 5.  Na **TestMenu** nabídky, klikněte na tlačítko **podnabídka** a potom klikněte na tlačítko **Test dílčí příkaz**. Okno se zprávou by měla objevit a zobrazit text "Test příkaz uvnitř TestCommand.SubItemCallback()".
 
 ## <a name="see-also"></a>Viz také:
- [Přidání nabídky na řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) [příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [Přidání nabídky na řádku nabídek sady Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

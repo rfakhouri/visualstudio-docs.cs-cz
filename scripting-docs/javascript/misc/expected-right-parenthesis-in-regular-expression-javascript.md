@@ -1,5 +1,5 @@
 ---
-title: Byl očekáván &#39;)&#39; v regulárním výrazu (JavaScript) | Dokumentace Microsoftu
+title: Byl očekáván ')' v regulárním výrazu (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279125"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802339"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Byl očekáván &#39;)&#39; v regulárním výrazu (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>V regulárním výrazu byl očekáván znak ')' (JavaScript)
 Proběhl pokus o vytvoření zachycení regulárních výrazů, kontrolní výraz nebo skupiny, ale neobsahuje pravou závorku. Závorky mají několik účely v regulárních výrazech. Především se používají k zachycení dílčí výrazy, zadejte kontrolních výrazů nebo seskupení vzory tak, aby položky lze považovat za jednu jednotku podle *, +,?, a tak dále.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  

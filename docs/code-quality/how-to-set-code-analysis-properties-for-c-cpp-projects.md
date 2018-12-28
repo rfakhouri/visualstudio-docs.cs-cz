@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739886"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803149"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++
 Můžete nakonfigurovat pravidla, která používá nástroj pro analýzu kódu pro analýzu kódu v každé konfiguraci projektu. Kromě toho může směrovat analýzy kódu pro potlačení varování z kódu, které se generují a přidávají do svého projektu pomocí nástroje třetích stran.
@@ -52,4 +52,6 @@ Můžete nakonfigurovat pravidla, která používá nástroj pro analýzu kódu 
  Pokud váš projekt obsahuje spravovaný kód, můžete si vybrat pravidla se použijí při analýze kódu tak, že vyberete sadu z pravidel **spustit tuto sadu pravidel** seznamu.
 
 ## <a name="see-also"></a>Viz také
- [Analýza kvality spravovaného kódu](../code-quality/code-analysis-for-managed-code-overview.md) [analýza kódu pro C/C++ upozornění](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [Analýza kvality spravovaného kódu](../code-quality/code-analysis-for-managed-code-overview.md)
+- [Upozornění Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

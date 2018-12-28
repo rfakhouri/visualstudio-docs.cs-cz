@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a5450078a3f5ba0538c21bb5e5bb4081a6b4f4ff
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740059"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803330"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
@@ -44,7 +44,7 @@ Začněte tím, že vytváří se nový soubor a přidat nějaký kód do něj.
 
 Visual Studio poskytuje užitečné *fragmenty kódu* , že vám pomůže rychle a snadno generovat běžně používá bloky kódu. [Fragmenty kódu](../ide/code-snippets.md) jsou k dispozici pro různé programovací jazyky, včetně C#, Visual Basic a C++. Přidejme jazyka C# `void Main` fragment kódu do souboru.
 
-1. Umístěte ukazatel myši nad konečné pravou složenou závorku **}** v souboru a zadejte znaky `svm` (což je zkratka `static void Main` &mdash;Nedělejte si starosti příliš mnoho Pokud nevíte, která znamená, že).
+1. Umístěte ukazatel myši nad konečné pravou složenou závorku **}** v souboru a zadejte znaky `svm`. (`svm` zastupuje `static void Main`; [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metoda je vstupním bodem pro C# aplikace.)
 
    Automaticky se zobrazí dialogové okno s informacemi o `svm` fragmentu kódu.
 
@@ -52,7 +52,7 @@ Visual Studio poskytuje užitečné *fragmenty kódu* , že vám pomůže rychle
 
 1. Stisknutím klávesy **kartu** dvakrát pro vložení fragmentu kódu.
 
-   Zobrazí `static void Main()` podpis metody nechejte se přidat do souboru. [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) metoda je vstupním bodem pro aplikace C#.
+   Zobrazí `static void Main()` podpis metody nechejte se přidat do souboru.
 
 Fragmenty kódu k dispozici lišit pro různé programovací jazyky. Můžete si prohlédnout fragmenty kódu k dispozici pro váš jazyk výběrem **upravit** > **IntelliSense** > **Vložit fragment**a pak Výběr složky váš jazyk. Pro jazyk C# v seznamu vypadá například takto:
 

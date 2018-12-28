@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921714"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803491"
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce je často používané seznamy vlastností, které jsou definovány v souborech projektu sady Visual Studio nebo součástí *.targets* soubory, které poskytuje nástroj MSBuild.  
@@ -56,17 +56,17 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | CscToolPath | Cesta k *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilátoru. |
 | CustomBeforeMicrosoftCommonTargets | Název souboru projektu nebo soubor cílů, které mají být importovány automaticky před importem společných cílů. |
 | DebugSymbols | Logická hodnota, která určuje, zda jsou symboly generovány sestavením.<br /><br /> Nastavení **- p: DebugSymbols = false** na příkazovém řádku zakáže generování databázi programu (*PDB*) soubory symbolů. |
+| DebugType | Definuje úroveň ladění informací, které mají být vygenerovány. Platné hodnoty jsou "full", "pdbonly" a "none". |
 | DefineConstants | Definuje podmíněné konstanty kompilátoru. Dvojice symbol/hodnota jsou odděleny středníkem a jsou zadány pomocí následující syntaxe:<br /><br /> *symbol1 = value1; symbol2 = hodnota2*<br /><br /> Vlastnost je ekvivalentní `/define` přepínač kompilátoru. |
 | DefineDebug | Logická hodnota, která určuje, zda má být definována konstanta DEBUG. |
 | DefineTrace | Logická hodnota, která určuje, zda má být definována konstanta TRACE. |
-| DebugType | Definuje úroveň ladění informací, které mají být vygenerovány. Platné hodnoty jsou "full", "pdbonly" a "none". |
 | DelaySign | Logická hodnota, která určuje, zda se má k zpožděný podpis sestavení místo úplného podepsání. |
 | Deterministické | Logická hodnota, která určuje, zda kompilátor by měl vytvářet identické sestavení pro stejné vstupy. Tento parametr `/deterministic` přepnout z *vbc.exe* a *csc.exe* kompilátory. |
 | DisabledWarnings | Potlačí zadaná upozornění. Je třeba zadat pouze číselnou část identifikátoru upozornění. Více varování je odděleno středníky. Tento parametr `/nowarn` přepnout z *vbc.exe* kompilátoru. |
 | DisableFastUpToDateCheck | Logická hodnota, která se vztahuje na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pouze. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Sestavení správce používá proces nazývaný FastUpToDateCheck ke zjištění, zda projekt musíte znovu sestavit, aby byl aktuální. Tento proces je rychlejší než použití [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ke zjištění. Nastavení vlastnosti DisableFastUpToDateCheck na `true` umožňuje obejít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] správce sestavení a vynutit používání [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k určení, zda je aktuální projekt. |
 | DocumentationFile | Název souboru, který je generován jako soubor dokumentace XML. Tento název zahrnuje pouze název souboru a neobsahuje žádné informace o cestě. |
 | ErrorReport | Určuje, jak by měl úkol kompilátor ohlásit interní chyby kompilátoru. Platné hodnoty jsou "prompt", "Odeslat" nebo "none". Tato vlastnost je ekvivalentní `/errorreport` přepínač kompilátoru. |
-| ExcludeDeploymentUrl | [Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md) Přidá značku deploymentProvider do manifestu nasazení, pokud soubor projektu obsahuje některé z následujících elementů:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Pomocí ExcludeDeploymentUrl však můžete zabránit značku deploymentProvider přidávaný do manifestu nasazení i v případě, že některé z výše uvedených adres URL zadán. Provedete to tak, přidejte do souboru projektu následující vlastnost:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Poznámka:** ExcludeDeploymentUrl není vystaveno v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí a je možné nastavit pouze ruční úpravou souboru projektu. Nastavení této vlastnosti neovlivňuje publikování v rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; to znamená, že značka deploymentProvider bude i tak přidána k adrese URL zadané hodnotou PublishUrl. |
+| ExcludeDeploymentUrl | [Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md) Přidá značku deploymentProvider do manifestu nasazení, pokud soubor projektu obsahuje některé z následujících elementů:<br /><br /> -UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Pomocí ExcludeDeploymentUrl však můžete zabránit značku deploymentProvider přidávaný do manifestu nasazení i v případě, že některé z výše uvedených adres URL zadán. Provedete to tak, přidejte do souboru projektu následující vlastnost:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Poznámka:**  ExcludeDeploymentUrl není vystaveno v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí a je možné nastavit pouze ruční úpravou souboru projektu. Nastavení této vlastnosti neovlivňuje publikování v rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; to znamená, že značka deploymentProvider bude i tak přidána k adrese URL zadané hodnotou PublishUrl. |
 | Hodnotu FileAlignment | Určuje, v bajtech, kam chcete zarovnat oddíly výstupního souboru. Platné hodnoty jsou 512, 1024, 2048, 4096, 8192. Tato vlastnost je ekvivalentní `/filealignment` přepínač kompilátoru. |
 | FrameworkPathOverride | Určuje umístění *mscorlib.dll* a *microsoft.visualbasic.dll*. Tento parametr je ekvivalentní `/sdkpath` přepnout z *vbc.exe* kompilátoru. |
 | GenerateDocumentation | (Pouze Visual Basic) Parametr logické hodnoty označující, zda je dokumentace generovaná sestavením. Pokud `true`, sestavení generuje informace o dokumentaci a vloží je *.xml* soubor společně s názvem spustitelného souboru nebo knihovnu, která úkol sestavení vytvořen. |
@@ -94,7 +94,7 @@ V následující tabulce je často používané seznamy vlastností, které jsou
 | SGenUseProxyTypes | Logická hodnota, která určuje, zda typy proxy měly být generovány pomocí *SGen.exe*.<br /><br /> Cíl SGen používá tuto vlastnost pro nastavení příznaku UseProxyTypes. Výchozí hodnota této vlastnosti na hodnotu true a neexistuje žádné uživatelské rozhraní pro toto nastavení změnit. Generovat sestavení serializace pro typy bez, přidejte do souboru projektu tuto vlastnost a nastavte ji na hodnotu false před importem *cílů Microsoft.Common.Targets* nebo *webových*. |
 | SGenToolPath | Volitelný nástroj pro cestu, která označuje, kde můžete získat *SGen.exe* při aktuální verzi *SGen.exe* je přepsána. |
 | StartupObject | Určuje třídu nebo modul, který obsahuje metodu Main nebo Sub Main proceduru. Tato vlastnost je ekvivalentní `/main` přepínač kompilátoru. |
-| Vlastnost ProcessorArchitecture | Architektura procesoru, který se používá, když jsou překládány odkazy na sestavení. Platné hodnoty jsou "msil", "x86," "amd64" nebo "ia64". |
+| ProcessorArchitecture | Architektura procesoru, který se používá, když jsou překládány odkazy na sestavení. Platné hodnoty jsou "msil", "x86," "amd64" nebo "ia64". |
 | RootNamespace | Kořenový obor názvů použijte, pokud pojmenujete integrovaný zdroj. Tento obor názvů je částí názvu vloženého manifestu prostředků. |
 | Satellite_AlgorithmId | ID *AL.exe* algoritmu pro použití při vytváření satelitních sestavení. |
 | Satellite_BaseAddress | Základní adresa pro použití při satelitní sestavení specifická pro jazykovou verzi jsou vytvořeny pomocí `CreateSatelliteAssemblies` cíl. |

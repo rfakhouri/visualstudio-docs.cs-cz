@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Změna dat uložených v mezipaměti ze sešitu na serveru'
+title: 'Průvodce: Změna dat uložených v mezipaměti ze sešitu na serveru'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f9f2ac3873bf59b30f8efa3e45d6cbdd0aebd4f6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30f2c8576aaf26d2cb643327fb989d90a8964552
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672860"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804374"
 ---
-# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Návod: Změna dat uložených v mezipaměti ze sešitu na serveru
+# <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Průvodce: Změna dat uložených v mezipaměti ze sešitu na serveru
   Tento návod ukazuje, jak změnit datové sady, které se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění pomocí aplikace Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "50672860"
 
 -   Přístup ke spuštěné instanci serveru Microsoft SQL Server nebo Microsoft SQL Server Express, který má k němu připojené ukázkové databáze AdventureWorksLT. Můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Další informace o připojení databáze naleznete v následujících tématech:
 
-    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [postupy: připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [postupy: připojení souboru databáze pro SQL Server Express](/previous-versions/sql/).
+    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Vytvořte projekt knihovny tříd, který definuje datovou sadu
  Pokud chcete použít stejné datové sady v projektu sešitu aplikace Excel a konzolové aplikace, musí definovat datové sady v samostatné sestavení, který je odkazován oba z těchto projektů. V tomto návodu definování datové sady v projektu knihovny tříd.
@@ -80,7 +80,7 @@ ms.locfileid: "50672860"
 
 7.  V **nový projekt** dialogového okna zkontrolujte, zda **vytvořit adresář pro řešení** není zaškrtnuté políčko.
 
-8.  Klikněte na tlačítko **OK**.
+8.  Klikněte na **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **AdventureWorksDataSet** projektu **Průzkumníka řešení** a otevře **Class1.cs** nebo **Class1.vb** soubor kódu.
 
@@ -89,7 +89,7 @@ ms.locfileid: "50672860"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definování datové sady v projektu knihovny tříd
  Definujte typové datové sady, který obsahuje data z databáze AdventureWorksLT pro SQL Server 2005. Později v tomto návodu bude odkazovat tento objekt dataset z projektu sešitu aplikace Excel a projektu konzolové aplikace.
 
- Tato datová sada je *zadaná datová sada* , která představuje data v tabulce Product databázi AdventureWorksLT. Další informace o definovaných datových sadách najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).
+ Tato datová sada je *zadaná datová sada* , která představuje data v tabulce Product databázi AdventureWorksLT. Další informace o definovaných datových sadách najdete v tématu [datovou sadu nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Chcete-li definovat typové datové sady v projektu knihovny tříd
 
@@ -138,7 +138,7 @@ ms.locfileid: "50672860"
 
 5.  V **název** zadejte **AdventureWorksReport**. Neprovádějte žádné změny umístění.
 
-6.  Klikněte na tlačítko **OK**.
+6.  Klikněte na **OK**.
 
      **Visual Studio Tools for Office Project Wizard** otevře.
 
@@ -207,7 +207,7 @@ ms.locfileid: "50672860"
      [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
      [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
 
-## <a name="checkpoint"></a>Kontrolní bod
+## <a name="checkpoint"></a>CheckPoint
  Sestavení a spuštění projektu sešitu aplikace Excel k zajištění, že se zkompiluje a spustí bez chyb. Tato operace také vyplní celé datové sady v mezipaměti a ukládá data v sešitu.
 
 ### <a name="to-build-and-run-the-project"></a>Sestavení a spuštění projektu
@@ -237,7 +237,7 @@ ms.locfileid: "50672860"
 
 4.  V **název** zadejte **datawriter nesmí být**. Neprovádějte žádné změny umístění.
 
-5.  Klikněte na tlačítko **OK**.
+5.  Klikněte na **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **datawriter nesmí být** projektu **Průzkumníka řešení** a otevře **Program.cs** nebo **Module1.vb** soubor kódu.
 
@@ -250,7 +250,7 @@ ms.locfileid: "50672860"
 
 2. Na **.NET** kartu, vyberte možnost **Microsoft.VisualStudio.Tools.Applications**.
 
-3. Klikněte na tlačítko **OK**.
+3. Klikněte na **OK**.
 
 4. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **datawriter nesmí být** projektu a klikněte na tlačítko **přidat odkaz**.
 

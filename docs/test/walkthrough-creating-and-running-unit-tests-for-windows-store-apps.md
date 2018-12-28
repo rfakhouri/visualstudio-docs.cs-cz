@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: e7eb6c1af8e87c8cfa6cc61292a3c4c84e4834ed
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 87f7b724f2b7712e4318bc2bfbef4f06ee5ee9bb
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740020"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802482"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Průvodce: Vytváření a spouštění testů jednotek pro aplikace pro UPW
 
@@ -108,5 +108,5 @@ V **Editor kódu**, upravte test jednotky a přidejte kontrolní výrazy a logik
 
 ## <a name="see-also"></a>Viz také:
 
-- [Testování aplikací pro UPW pomocí sady Visual Studio](../test/create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
+- [Testování aplikací pro UPW pomocí sady Visual Studio](../test/unit-test-your-code.md)
 - [Sestavení a testování aplikací pro UPW](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

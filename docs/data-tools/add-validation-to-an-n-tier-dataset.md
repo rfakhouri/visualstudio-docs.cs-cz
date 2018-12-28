@@ -17,17 +17,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778058"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739465"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Přidávání ověřování do vícevrstvé datové sady
 Přidání ověřování do datové sady, která je rozdělena na n vrstvého řešení je v podstatě stejné jako přidání ověřování pro jednosouborovou datovou sadu (datová sada v jednom projektu). Navrhované umístění pro ověřování dat je během <xref:System.Data.DataTable.ColumnChanging> a/nebo <xref:System.Data.DataTable.RowChanging> událostí datové tabulky.
 
- Datová sada poskytuje funkce pro vytvořit dílčí třídy, na které můžete přidat uživatelský kód do událostí měnících sloupce a řádku tabulek dat v datové sadě. Další informace o přidání kódu k datové sadě v Nvrstvých řešeních viz [přidání kódu do datových sad v n vrstvé aplikace](../data-tools/add-code-to-datasets-in-n-tier-applications.md), a [přidejte kód do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Další informace o dílčích třídách naleznete v tématu [postupy: rozdělení třídy na částečné třídy (návrhář tříd)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) nebo [částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+ Datová sada poskytuje funkce pro vytvořit dílčí třídy, na které můžete přidat uživatelský kód do událostí měnících sloupce a řádku tabulek dat v datové sadě. Další informace o přidání kódu k datové sadě v Nvrstvých řešeních viz [přidání kódu do datových sad v n vrstvé aplikace](../data-tools/add-code-to-datasets-in-n-tier-applications.md), a [přidejte kód do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Další informace o dílčích třídách naleznete v tématu [jak: Rozdělení třídy na částečné třídy (návrhář tříd)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) nebo [částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
 >  Když oddělíte datové sady od adaptérů tabulky (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy je nutné ručně přesunout do projektu datové sady.
@@ -55,7 +55,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>Přidání ověřování při změnách hodnot jednotlivých sloupců
 
-1.  Dvojitým kliknutím otevřete datovou sadu *XSD* ve **Průzkumníka řešení**. Další informace najdete v tématu [návod: vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Dvojitým kliknutím otevřete datovou sadu *XSD* ve **Průzkumníka řešení**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Poklepejte na sloupec, který chcete ověřit. Tato akce vytvoří <xref:System.Data.DataTable.ColumnChanging> obslužné rutiny události.
 
@@ -111,7 +111,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>Přidání ověřování při změnách celých řádků
 
-1.  Dvojitým kliknutím otevřete datovou sadu *XSD* ve **Průzkumníka řešení**. Další informace najdete v tématu [návod: vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Dvojitým kliknutím otevřete datovou sadu *XSD* ve **Průzkumníka řešení**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Poklepejte na záhlaví tabulky dat v návrháři.
 
@@ -169,5 +169,5 @@ End Sub
 ## <a name="see-also"></a>Viz také:
 
 - [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)
-- [Návod: Vytvoření N-vrstvá datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)

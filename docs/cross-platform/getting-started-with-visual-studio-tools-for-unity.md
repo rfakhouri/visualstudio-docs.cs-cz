@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855206"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684779"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Začínáme s Visual Studio Tools for Unity
 
@@ -47,7 +47,7 @@ Tato verze sady Visual Studio je součástí instalace Unity nemusí být na nej
 
 Pokud už máte nainstalovanou sadu Visual Studio 2017, nebo ruční instalaci, spusťte instalační program sady Visual Studio.
 
-1. [Stažení instalačního programu sady Visual Studio](/visualstudio/install/install-visual-studio), nebo pro jeho otevření, pokud už nainstalovaná.
+1. [Stažení instalačního programu sady Visual Studio](../install/install-visual-studio.md), nebo pro jeho otevření, pokud už nainstalovaná.
 
 1. Klikněte na tlačítko **změnit** (Pokud je již nainstalováno) nebo **nainstalovat** (pro nové instalace) pro vaši požadovanou verzi sady Visual Studio.
 

@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b4e59dd35ab1f787dcaada5448443e35efc1f6c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5663619ef25b3e61c1044300c90f3e349413505c
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910490"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739459"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Uvolnitelné pole by mělo být uvolněno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "49910490"
  Potlačit upozornění tohoto pravidla, pokud si nejste zodpovědná pro uvolnění prostředku drží pole, nebo pokud můžete bezpečně volání <xref:System.IDisposable.Dispose%2A> dochází na hlubší úrovni volání než pravidla kontroly.
 
 ## <a name="example"></a>Příklad
- Následující příklad ukazuje typ `TypeA` , který implementuje <xref:System.IDisposable> (`FT` v diskuzi previosu).
+ Následující příklad ukazuje typ `TypeA` , který implementuje <xref:System.IDisposable> (`FT` v předchozím diskusí).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 

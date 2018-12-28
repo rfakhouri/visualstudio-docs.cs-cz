@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561509"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Ladění pro naprosté začátečníky
 
@@ -332,4 +332,4 @@ Když najdete oblasti kódu s problémem, který pomocí ladicího programu k pr
 V tomto článku jste se seznámili s několika koncepty obecné ladění. V dalším kroku můžete začít dostávat další informace o ladicím programu.
 
 > [!div class="nextstepaction"]
-> [Další informace k ladění pomocí sady Visual Studio](../debugger/getting-started-with-the-debugger.md)
+> [První seznámení s ladicím programem](../debugger/debugger-feature-tour.md)

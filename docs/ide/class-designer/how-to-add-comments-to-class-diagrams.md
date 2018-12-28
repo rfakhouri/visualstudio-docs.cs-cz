@@ -16,28 +16,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: afa0bc954e2812cb4c0149bfeef623195540e2a3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957103"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684571"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Postupy: Přidání komentářů do diagramů tříd
 
-Tvary komentářů můžete použít k přidání poznámek ke diagramů tříd. Obrazec komentář má jednu vlastnost **Text**, do kterého můžete zadat text. Tvary komentářů existovat jenom na povrch diagram a není v kódu.
+Tvary komentářů můžete opatřit poznámkami diagramy tříd. Obrazec komentáře má jednu vlastnost **Text**, do kterého můžete zadat text. Tvary komentářů existují jenom na povrchu diagramu a není v kódu.
 
-Komentář se nachází v zobrazení diagramu tříd v **návrhář tříd**. Pokud otevřete druhé třídy diagram na stejném projektu, komentáře, které jste vytvořili v prvním zobrazení nejsou viditelné. Pokud odstraníte diagram, se také odstraní všechny komentáře, které obsahuje.
+Komentář se nachází v zobrazení diagramu tříd v **návrhář tříd**. Pokud otevřete druhé třídy diagramu na stejném projektu, komentáře, které jste vytvořili v prvním zobrazení nejsou viditelné. Pokud odstraníte diagramu, odstraní se také všechny komentáře, které obsahuje.
 
-Můžete změnit velikost obrazce komentář, ale nemůžete změnit, další aspekty její vzhled, jako je například velikost písma, barvy nebo písma jeho pozadí.
+Obrazec komentáře můžete změnit velikost, ale nemůže změnit dalších aspektů její vzhled, jako je například velikost písma, barvy nebo písmo na pozadí.
 
-## <a name="to-add-a-comment"></a>Chcete-li přidat komentář
+## <a name="to-add-a-comment"></a>A přidejte komentář.
 
-1.  Přetáhněte komentář z **třídu návrháře nástrojů** na diagramu tříd.
+1.  Přetáhněte komentář z **panel nástrojů návrhář tříd** do diagramu tříd.
 
-2.  Klikněte v nový komentář tvar v diagramu a zadejte text, který chcete.
+2.  Klikněte na nový komentář obrazec v diagramu a zadejte požadovaný text.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Práce s diagramy tříd](working-with-class-diagrams.md)
-- [Postupy: přizpůsobení diagramů tříd](how-to-customize-class-diagrams.md)
+- [Práce s diagramy tříd](designing-and-viewing-classes-and-types.md)
+- [Postupy: Přizpůsobení diagramů tříd](how-to-customize-class-diagrams.md)

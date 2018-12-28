@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: ff17b584be09fb0667ee8186753de8423d0aedcf
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 03be89d9de68d3d0ced5252582a2bce05fb08b8f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740384"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802849"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Průběžná integrace služby Azure DevOps pomocí projekty nasazení skupiny prostředků Azure
 K nasazení šablony Azure, můžete provádět úlohy v různých fázích: Kopírovat sestavení, testování, do Azure (tzv. "Přípravného") a nasaďte šablonu. Existují dva různé způsoby nasazování šablon ke službám Azure DevOps. Obě metody poskytují stejné výsledky, proto zvolte ten, který nejlépe vyhovuje požadavkům vašeho pracovního postupu.
@@ -177,4 +177,4 @@ Následující postup vás provede kroky potřebnými ke konfiguraci průběžn�
 
 ## <a name="next-steps"></a>Další kroky
 
-Čtení [přehled Azure Resource Manageru](/azure-resource-manager/resource-group-overview.md) získat další informace o Azure Resource Manageru a skupin prostředků Azure.
+Čtení [přehled Azure Resource Manageru](/azure-resource-manager/resource-group-overview) získat další informace o Azure Resource Manageru a skupin prostředků Azure.

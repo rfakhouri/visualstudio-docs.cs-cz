@@ -1,5 +1,5 @@
 ---
-title: Očekávaný & č. 39; & č. 39; | Microsoft Docs
+title: Byl očekáván středník (;) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54fbd2eb72f6e6401eca85f61b0651a3ead4900
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788652"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804335"
 ---
-# <a name="expected-3939"></a>Očekávaný & č. 39; & č. 39;
-Pokus o umístit více než jeden výraz na řádku, ale není oddělte je středníky. Středníky slouží k ukončení příkazy. I když můžete umístit několik příkazy na jeden řádek, každé z nich musí být odděleny uvedeny z další středníkem.  
+# <a name="expected-"></a>Byl očekáván znak ';'
+Došlo k pokusu umístit více než jeden příkaz na řádku, ale není oddělte je středníkem. K ukončení příkazy se používají středníky. I když můžete umístit několik příkazů na jednom řádku, každé z nich musí být oddělené z dalšího oddělte středníkem.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Označte konec každý příkaz středníkem.  
+-   Označuje konec každého příkazu oddělte středníkem.  
   
--   Zajistěte, aby vaše volání funkce závorky lze použít správně.  
+-   Ujistěte se, že volání funkce použijte závorky správně.  
   
--   Zajistěte, aby není zapomněli středníky v záhlaví **pro** smyčky.  
+-   Ujistěte se, že není nezapomněli středníky v záhlaví **pro** smyčky.  
   
 ## <a name="see-also"></a>Viz také  
  [Psaní kódu jazyka JavaScript](../../javascript/writing-javascript-code.md)

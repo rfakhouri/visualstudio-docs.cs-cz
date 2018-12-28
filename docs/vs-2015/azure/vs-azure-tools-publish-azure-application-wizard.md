@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: a00ae51514f650ca8c166ba24e626838f003119c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ed8d162d3b4cde48515986c475563e368a5946bf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065333"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803108"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Použití průvodce publikováním aplikace Azure v sadě Visual Studio
 
@@ -95,7 +95,7 @@ Průvodce publikování aplikaci Azure v závislosti na typu projektu sady Visua
 
 ![Nastavení diagnostiky](./media/vs-azure-tools-publish-azure-application-wizard/diagnostic-settings.png)
 
-Diagnostika umožňuje řešení cloudové služby Azure (nebo virtuální počítač Azure). Informace o diagnostice najdete v tématu [konfiguraci diagnostiky pro Azure Cloud Services a Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Informace o Application Insights najdete v tématu [co je Application Insights?](/azure/application-insights/app-insights-overview.md).
+Diagnostika umožňuje řešení cloudové služby Azure (nebo virtuální počítač Azure). Informace o diagnostice najdete v tématu [konfiguraci diagnostiky pro Azure Cloud Services a Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md). Informace o Application Insights najdete v tématu [co je Application Insights?](/azure/application-insights/app-insights-overview).
 
 ## <a name="summary-page"></a>Stránka souhrnu
 
@@ -122,4 +122,4 @@ Jakmile nakonfigurujete všechna nastavení pro váš projekt nasazení, vyberte
 
 - [Konfiguruje se Diagnostika pro Azure Cloud Services a Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 
-- [Co je Application Insights?](/azure/application-insights/app-insights-overview.md)
+- [Co je Application Insights?](/azure/application-insights/app-insights-overview)

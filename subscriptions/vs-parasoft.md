@@ -3,18 +3,18 @@ title: Parasoft Virtualize/SOAtest Professional Desktop Benefit | Dokumentace Mi
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: Zjistěte, jak chcete předplatné aktivovat, Test Professional Parasoft Virtualize/SOA součástí vašeho předplatného sady Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f9e9c617ba64ca0502e50619c107f000b4f6ad5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830182"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739666"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop v předplatných sady Visual Studio
 
@@ -48,7 +48,7 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 
 9. Zvolte požadovaný jazyk a klikněte na tlačítko **OK**.
 
-10. Parasoft SOAtest & Virtualizovat Průvodce instalací se spustí.  Klikněte na tlačítko **Další**.
+10. Parasoft SOAtest & Virtualizovat Průvodce instalací se spustí.  Klikněte na **Další**.
     > [!div class="mx-imgBorder"]
     > ![Počáteční výhoda Parasoft instalace](_img/vs-parasoft/vs-parasoft-start-install.png)
 
@@ -76,15 +76,18 @@ Testujte dříve a častěji.  Simulujte a testujte chování není k dispozici 
 
 | Úroveň předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelné?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní a roční cloudové)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ano       |
-| Visual Studio Professional (standardní a roční cloudové) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                           |NENÍ K DISPOZICI         |
-| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                           |NENÍ K DISPOZICI         |
-| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                                           |NENÍ K DISPOZICI         |
-| Visual Studio Dev Essentials | NENÍ K DISPOZICI  | Není k dispozici|NENÍ K DISPOZICI |
-| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NENÍ K DISPOZICI|
+| Visual Studio Enterprise (Standard)   | VL, Azure, maloobchod, vybrali NFR<sup>1</sup> | 6 měsíců       |  Ano       |
+| Visual Studio Professional (Standard) | VL, Azure, maloobchodního prodeje                                       | Není k dispozici                                                           |Není k dispozici         |
+| Visual Studio Test Professional (Standard)                         | VL maloobchodního prodeje                                              | Není k dispozici                                                           |Není k dispozici         |
+| Předplatné MSDN Platforms (Standard)                                          | VL maloobchodního prodeje                                              | Není k dispozici                                                           |Není k dispozici         |
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici|Není k dispozici |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |Není k dispozici|
 
-<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).  Vyloučí: Neprodejné (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
+<sup>1</sup>*zahrnuje:   Microsoft Partner Network (Enterprise).  Vyloučí:  Neprodejné (NFR) Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services pro vývojáře, BizSpark, Imagine, Microsoft Vážíme si toho Professional (MVP), ředitel pro oblast (RD).  MCT Software & Services.*
 
+
+> [!NOTE]
+> Microsoft už nenabízí Visual Studio Professional ročních předplatných a předplatných Visual Studio Enterprise roční Cloudová předplatná. Nebude bez nutnosti změn stávajících zkušeností zákazníků a možnost obnovit, zvýšit, snížit nebo zrušit předplatná. Nové nepodnikovým zákazníkům přejít na [ https://visualstudio.microsoft.com/vs/pricing/ ](https://visualstudio.microsoft.com/vs/pricing/) a prozkoumejte různé možnosti pro zakoupení sady Visual Studio.
 
 
 ## <a name="support-resources"></a>Informační zdroje podpory

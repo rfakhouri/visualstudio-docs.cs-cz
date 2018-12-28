@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05ef916c2ed4948f23adbb09a68b096d0a704a79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcd092ca1631f54f758cef95895d8509d14dec96
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050339"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802975"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript ve Visual Studiu 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,16 +48,16 @@ JavaScript je prvotřídní jazyk v sadě Visual Studio. Při psaní kódu v jaz
 
 |Funkce|Popis|
 |-------------|-----------------|
-|Třídy|Podporuje novou syntaxi deklarace [třídy](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/class-statement-javascript.md).|
-|Co|[Co](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/promise-object-javascript.md) umožňují snadněji a čisticí asynchronní programování. Promise konstruktory jsou podporovány, spolu s `all` a `race` pomocné metody.|
-|Iterátory|Nyní můžete iterovat iterable objekty (včetně polí, jako pole objektů a iterátory), vyvolání hook vlastní iterace pomocí příkazů ke spuštění pro hodnotu každé různé vlastnosti. Další informace najdete v tématu [iterátory a generátory](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/iterators-and-generators-javascript.md). **Poznámka:** generátorů se zatím nepodporují.|
+|Třídy|Podporuje novou syntaxi deklarace [třídy](/visualstudio/scripting-docs/javascript/reference/class-statement-javascript).|
+|Co|[Co](/visualstudio/scripting-docs/javascript/reference/promise-object-javascript) umožňují snadněji a čisticí asynchronní programování. Promise konstruktory jsou podporovány, spolu s `all` a `race` pomocné metody.|
+|Iterátory|Nyní můžete iterovat iterable objekty (včetně polí, jako pole objektů a iterátory), vyvolání hook vlastní iterace pomocí příkazů ke spuštění pro hodnotu každé různé vlastnosti. Další informace najdete v tématu [iterátory a generátory](/visualstudio/scripting-docs/javascript/advanced/iterators-and-generators-javascript). **Poznámka:**  Generátory se zatím nepodporují.|
 |Funkce šipky|Funkce šipky (= >) poskytuje syntaxi ve zkráceném tvaru pro `function` – klíčové slovo, které funkce lexikální `this` vazby.|
-|Nové metody pro předdefinované objekty|[Objekt Array](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/array-object-javascript.md), [Math – objekt](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/math-object-javascript.md), [číslo objektu](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/number-object-javascript.md), [objekt objektu](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/object-object-javascript.md), a [řetězec objektu](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/string-object-javascript.md) předdefinované objekty zahrnují mnoho nových funkcí nástroje a vlastnosti pro manipulaci a prohledávaní údaje.|
-|Vylepšení literálu objektu|Objektů teď podporují vypočítané vlastnosti, definice stručné metod a syntaxi ve zkráceném tvaru pro vlastnosti, jehož hodnota je inicializována na proměnnou se stejným názvem. Další informace najdete v tématu [vytváření objektů](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/creating-objects-javascript.md).|
-|Proxy servery|[Proxy servery](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/proxy-object-javascript.md) povolit vlastní chování pro objekty.|
-|Parametry REST|Zbývající parametry umožňují zapnout po sobě jdoucí argumenty ve volání funkce na pole. Další informace najdete v tématu [funkce](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/functions-javascript.md).|
-|Spread – operátor|[Operátor rozšíření](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript.md) (`…`) rozšiřuje iterable výrazů do jednotlivé argumenty. Například `a.b(…array)` je přibližně stejná jako `a.b.apply(a, array)`.|
-|Symboly|[Symbol](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/symbol-object-javascript.md) objekty povolit vlastnosti, které chcete přidat do stávající objekty se žádná možnost rušení s existujícími vlastnostmi objektu, žádné nežádoucí viditelnost a bez dalších dodatcích nekoordinovaná jiným kódem.|
-|Řetězce šablon|[Řetězce šablon](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/template-strings-javascript.md) jsou řetězcové literály, které umožňují výrazů má být vyhodnocen a zřetězená s řetězcový literál.|
-|Vylepšení kódování Unicode|Vylepšili jsme podporu kódování Unicode. Nový formát sekvence escape například podporuje astral kódových bodů (body kódu obsahující více než čtyři šestnáctkové číslice). Další informace najdete v tématu [speciální znaky](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/advanced/special-characters-javascript.md).|
-|WeakSet|A [WeakSet](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/reference/weakset-object-javascript.md) je kolekce objektů, které mají být uvolněn z paměti Pokud nejsou odkazovat jinde.|
+|Nové metody pro předdefinované objekty|[Objekt Array](/visualstudio/scripting-docs/javascript/reference/array-object-javascript), [Math – objekt](/visualstudio/scripting-docs/javascript/reference/math-object-javascript), [číslo objektu](/visualstudio/scripting-docs/javascript/reference/number-object-javascript), [objekt objektu](/visualstudio/scripting-docs/javascript/reference/object-object-javascript), a [řetězec objektu](/visualstudio/scripting-docs/javascript/reference/string-object-javascript) předdefinované objekty zahrnují mnoho nových funkcí nástroje a vlastnosti pro manipulaci a prohledávaní údaje.|
+|Vylepšení literálu objektu|Objektů teď podporují vypočítané vlastnosti, definice stručné metod a syntaxi ve zkráceném tvaru pro vlastnosti, jehož hodnota je inicializována na proměnnou se stejným názvem. Další informace najdete v tématu [vytváření objektů](/visualstudio/scripting-docs/javascript/creating-objects-javascript).|
+|Proxy servery|[Proxy servery](/visualstudio/scripting-docs/javascript/reference/proxy-object-javascript) povolit vlastní chování pro objekty.|
+|Parametry REST|Zbývající parametry umožňují zapnout po sobě jdoucí argumenty ve volání funkce na pole. Další informace najdete v tématu [funkce](/visualstudio/scripting-docs/javascript/functions-javascript).|
+|Spread – operátor|[Operátor rozšíření](/visualstudio/scripting-docs/javascript/reference/spread-operator-decrement-dot-dot-dot-javascript) (`…`) rozšiřuje iterable výrazů do jednotlivé argumenty. Například `a.b(…array)` je přibližně stejná jako `a.b.apply(a, array)`.|
+|Symboly|[Symbol](/visualstudio/scripting-docs/javascript/reference/symbol-object-javascript) objekty povolit vlastnosti, které chcete přidat do stávající objekty se žádná možnost rušení s existujícími vlastnostmi objektu, žádné nežádoucí viditelnost a bez dalších dodatcích nekoordinovaná jiným kódem.|
+|Řetězce šablon|[Řetězce šablon](/visualstudio/scripting-docs/javascript/advanced/template-strings-javascript) jsou řetězcové literály, které umožňují výrazů má být vyhodnocen a zřetězená s řetězcový literál.|
+|Vylepšení kódování Unicode|Vylepšili jsme podporu kódování Unicode. Nový formát sekvence escape například podporuje astral kódových bodů (body kódu obsahující více než čtyři šestnáctkové číslice). Další informace najdete v tématu [speciální znaky](/visualstudio/scripting-docs/javascript/advanced/special-characters-javascript).|
+|WeakSet|A [WeakSet](/visualstudio/scripting-docs/javascript/reference/weakset-object-javascript) je kolekce objektů, které mají být uvolněn z paměti Pokud nejsou odkazovat jinde.|

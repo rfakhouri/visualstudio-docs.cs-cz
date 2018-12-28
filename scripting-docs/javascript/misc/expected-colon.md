@@ -1,5 +1,5 @@
 ---
-title: 'Očekávaný & č. 39;: & č. 39; | Microsoft Docs'
+title: Byl očekáván ':' | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c882c2da52de7a41c558f34f6912a0da1ad272a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788823"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802391"
 ---
-# <a name="expected-3939"></a>Očekávaný & č. 39;: & č. 39;
-Proběhl pokus o vytvoření pomocí Ternární operátor podmíněného výrazu, ale neobsahuje dvojtečkou mezi druhý a třetí operandy. Ternární podmíněný operátor (tři operandy) vyžaduje středník mezi sekundu (true) a třetí (false) operandy.  
+# <a name="expected-"></a>Byl očekáván znak ':'
+Proběhl pokus o vytvoření pomocí Ternární operátor podmíněného výrazu, ale neobsahuje dvojtečku mezi druhého a třetího operandu. Ternární podmiňovací operátor (tři operandy) vyžaduje dvojtečkou mezi (pravda) druhého a třetího (false) operandy.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Vložte dvojtečkou mezi druhý a třetí operandy.  
+-   Vložte dvojtečkou mezi druhého a třetího operandu.  
   
 ## <a name="see-also"></a>Viz také  
  [Podmíněný (Ternární) operátor (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   

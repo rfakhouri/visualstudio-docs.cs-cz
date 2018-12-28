@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab21fa0616b26aeb41f16a911d5834f40479b09d
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233467"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648484"
 ---
 # <a name="working-with-xml-data"></a>Práce s daty XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,16 +65,10 @@ XML a jeho souvisejících technologiích hrát velké roli ve způsobu zpracov�
  Popisuje, jak ladit pomocí ladicího programu sady Visual Studio šablony stylů.  
   
  [Reference na standardy XML](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- Poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.  
-  
- [Vytváření a úpravy typovaných datových sad](../data-tools/creating-and-editing-typed-datasets.md)  
- Poskytuje vysvětlení návrhových nástrojů pro vytváření datových sad.  
+ Poskytuje informace o XML technologií, včetně XML, dokumentu typ definice (DTD), schéma XML definice jazyk (XSD) a XSLT.
   
  [Webové služby XML ve spravovaném kódu](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Tento článek popisuje postup vytvoření a nasazení webové služby XML a jak získat přístup k webové služby XML.  
   
 ## <a name="see-also"></a>Viz také  
  [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

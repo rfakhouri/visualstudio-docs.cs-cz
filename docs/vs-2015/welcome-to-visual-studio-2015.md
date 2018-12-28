@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 1898d437cb7d3f439e92b88a45e7b543e8bbd0f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058477"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805143"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Vítá vás Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 
  Zvolte nástroje, které potřebujete podle požadavků vaší aplikace a jazyk, který chcete použít.
 
-1.  [Xamarin pro Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): společný kód v jazyce C# základ pro všechna zařízení
+1.  [Xamarin pro Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Společný kód v základní C# pro všechna zařízení
 
-2.  [Apache Cordova pomocí sady Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): společný kód základní pro HTML, CSS a JavaScript nebo Typescript
+2.  [Apache Cordova pomocí sady Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Společný kód základní pro HTML, CSS a JavaScript nebo Typescript
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): vývoj 2D a 3D her v C#
+3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): Vývoj pro 2D a 3D her vC#
 
-4.  [Jazyk C++ pro vývoj pro různé platformy](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): sdílené knihovny kódu a aplikací v jazyce C++
+4.  [Jazyk C++ pro vývoj pro různé platformy](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md): Sdílený kód knihovny a aplikace v jazyce C++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: ladit a testovat aplikace pro Android bez ohledu na to integrovaného vývojového prostředí
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: Ladění a testování svých aplikací pro Android bez ohledu na to integrovaného vývojového prostředí
 
 ## <a name="connect-your-apps-to-services"></a>Připojení aplikací ke službám
  Můžete připojit k těmto službám úprav (za předpokladu, že máte účet pro každou službu):
@@ -82,7 +82,7 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 ## <a name="build-test-and-manage-your-code"></a>Sestavení, testování a správu kódu
 
 ### <a name="check-in-your-code"></a>Vrácení kódu se změnami
- Pokud pracujete v týmu, musíte také sdílet nejnovější verze kódu tak, že všichni členové týmu je pomocí stejného základu kódu. Visual Studio se hladce integrují s Visual Studio Team Services nebo Team Foundation Server, k poskytování řízení verze Git nebo TFVC (Team Foundation Version Control). Visual Studio Team Services použijte k uložení kódu v cloudu s využitím žádná Údržba místní server. Pokud chcete mít na místním serveru pomocí Team Foundation serveru. Pokaždé, když vytvoříte projekt kódu, máte možnost ho přidat do správy verzí. Další informace, o které správy verzí je nejvhodnější pro vaše potřeby systému: [používání správy verzí](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Pokud pracujete v týmu, musíte také sdílet nejnovější verze kódu tak, že všichni členové týmu je pomocí stejného základu kódu. Visual Studio se hladce integrují s Visual Studio Team Services nebo Team Foundation Server, k poskytování řízení verze Git nebo TFVC (Team Foundation Version Control). Visual Studio Team Services použijte k uložení kódu v cloudu s využitím žádná Údržba místní server. Pokud chcete mít na místním serveru pomocí Team Foundation serveru. Pokaždé, když vytvoříte projekt kódu, máte možnost ho přidat do správy verzí. Další informace, o které správy verzí je nejvhodnější pro vaše potřeby systému: [Správa verzí](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Sestavení aplikace
  Je možné [sestavení aplikace místně](./ide/compiling-and-building-in-visual-studio.md) a ujistěte se, že funguje správně. Potom použijte [ladicí nástroje](./debugger/debugging-in-visual-studio.md) opravit případné problémy s vaší aplikací. Nebo projekty lze sestavit na sdílených serverech sestavení nebo v cloudu. Automatizujte proces sestavení k sestavení kódu, který ověří vývojáři ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami.
@@ -100,7 +100,7 @@ Vítá vás Visual Studio! Máme všechno, co potřebujete k vytváření skvěl
 |||||
 |-|-|-|-|
 |[Co je nového v sadě Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Co je nového v jazyce Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Co je nového v rozhraní .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Co je nového pro ALM](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Co je nového pro C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Co je nového v jazyce Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Co je nového v jazyce JavaScript](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/what-s-new-in-javascript.md)||
+|[Co je nového pro C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Co je nového v jazyce Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Co je nového v jazyce JavaScript](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>V tomto oddílu

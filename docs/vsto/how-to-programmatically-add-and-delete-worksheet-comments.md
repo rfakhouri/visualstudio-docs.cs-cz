@@ -12,17 +12,17 @@ helpviewer_keywords:
 - ranges, comments
 - worksheets, comments
 - comments, worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe41fe7f6370697335fa76b468e79e61d6e1269a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 06097d72693e0b7a00c7af48609523d5e7dfc5a0
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675648"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804192"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>Postupy: Programové přidávání a odstraňování komentářů v listech
   Můžete programově přidávání a odstraňování komentářů v listech aplikace Microsoft Office Excel. Komentáře můžete přidávat pouze do jedné buňky, ne do více oblastí.  
@@ -65,7 +65,7 @@ ms.locfileid: "35675648"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: zobrazování komentářů v listech prostřednictvím kódu programu](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [Postupy: Zobrazování komentářů v listech prostřednictvím kódu programu](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [Namedrange – ovládací prvek](../vsto/namedrange-control.md)  
   
   

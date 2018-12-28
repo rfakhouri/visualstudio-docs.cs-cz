@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879295"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684688"
 ---
 # <a name="replaceable-parameters"></a>Nahraditelné parametry
-  Nahraditelné parametry, nebo *tokeny*, je možné zadat hodnoty pro položky řešení služby SharePoint, skutečné hodnoty nejsou známá v době návrhu v souborech projektu. Jsou to funkce podobná standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](/visualstudio/ide/template-parameters).  
+  Nahraditelné parametry, nebo *tokeny*, je možné zadat hodnoty pro položky řešení služby SharePoint, skutečné hodnoty nejsou známá v době návrhu v souborech projektu. Jsou to funkce podobná standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](../ide/template-parameters.md).  
   
 ## <a name="token-format"></a>Formát tokenu
  Tokeny začínají i končí znakem dolaru ($). Při nasazení, použití tokenů jsou nahradit skutečnými hodnotami při projektu je zabalená do balíčku řešení služby SharePoint (*.wsp* souboru). Například token **$SharePoint.Package.Name$** vyřešit na řetězec "Balíček SharePoint".  
@@ -111,4 +111,3 @@ ms.locfileid: "49879295"
   
 ## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

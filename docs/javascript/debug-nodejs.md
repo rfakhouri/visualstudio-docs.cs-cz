@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bf58cfb6f373575cda34f3edee1c587b5c72dfec
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 57054d8ba804a653b11b05fc229fa162d677bcae
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443070"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803776"
 ---
 # <a name="debug-a-nodejs-app-in-visual-studio"></a>Ladění aplikací v Node.js v sadě Visual Studio
 
@@ -111,7 +111,7 @@ Visual Studio poskytuje možnost používat a generovat zdrojová mapování na 
 * V projektu jazyka JavaScript potřebujete generovat zdrojová mapování například položky bundler jako webpacku a kompilátoru jako kompilátor TypeScript (nebo v Babel), které můžete přidat do projektu. Pro kompilátor TypeScript, musíte taky přidat *tsconfig.json* souboru. Příklad, který ukazuje, jak to udělat pomocí webpacku základní konfigurace, najdete v části [vytvoření aplikace Node.js pomocí React](../javascript/tutorial-nodejs-with-react-and-jsx.md).
 
 > [!NOTE]
-> Pokud jste novým uživatelem zdrojových mapování, přečtěte si prosím [Úvod do jazyka JavaScript zdrojového mapování](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) před než budete pokračovat.
+> Pokud jste ještě zdrojových mapování, přečtěte si prosím [Úvod do jazyka JavaScript zdrojového mapování](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) než budete pokračovat.
 
 Konfigurace rozšířených nastavení zdrojových mapování, použijte buď *tsconfig.json* nebo nastavení projektu na projekt TypeScript, ale ne obojí.
 

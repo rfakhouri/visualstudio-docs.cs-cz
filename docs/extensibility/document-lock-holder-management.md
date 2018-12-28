@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9994111f5be4e71a63cfa24d719d736a20a11a3b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739520"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804455"
 ---
 # <a name="document-lock-holder-management"></a>Správa vlastník zámku dokumentu
 Spuštění tabulky dokumentů (r...) udržuje počet otevřených dokumentů a zámky jakékoli úpravy, které mají. Zámek upravit můžete umístit na dokumentu rámcový při programově úpravách na pozadí bez uživatele zobrazuje dokument otevřít v okně dokumentu. Tato funkce se často používá v návrháři, které mění více souborů přes grafické uživatelské rozhraní.
@@ -36,11 +36,13 @@ Spuštění tabulky dokumentů (r...) udržuje počet otevřených dokumentů a 
 - Pokud není otevřený v nekompatibilním způsob soubor "b", můžete buď nechat pokus o otevření souboru "b" editorem "A" selhání, nebo můžete nechat zobrazit přidružené k editoru "A" částečně otevřít a zobrazit příslušnou chybovou zprávu. Chybová zpráva by měla pokyn uživateli, aby v nekompatibilním editoru. Zavřete soubor "b" a pak znovu otevřít soubor "a" pomocí editoru "A". Můžete také implementovat [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] metoda <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> uživatele zavřete soubor "b", který je otevřený v nekompatibilním editoru. Pokud uživatel nezavře soubor "b", otevírání souboru "a" v editoru "A" pokračuje normálním způsobem.
 
 ## <a name="additional-document-edit-lock-considerations"></a>Další dokument upravit zámek aspekty
- Chcete získat různé chování editoru "A" je pouze editor, který má dokument upravit zámek na souboru "b", než kdybyste editoru "B" také obsahuje dokument upravit zámek na souboru "b". V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **návrhář tříd** je příkladem vizuálního návrháře, který neobsahuje upravit zámek na souboru přidružený kód. To znamená pokud má uživatel v návrhovém zobrazení otevřete diagram třídy a přidružen soubor kódu otevřete současně, a uživatel upraví soubor kódu, ale nedojde k uložení změn, změny jsou rovněž ztraceny soubor diagramu tříd (.cd). Pokud **návrhář tříd** má jediný dokument upravit zámek na soubor kódu, uživatel se vyzve k uložit změny při zavírání souboru kódu. Rozhraní IDE uživateli výzvu k uložení změn pouze poté, co uživatel zavře **návrhář tříd**. Uložené změny se projeví v obou souborech. Pokud **návrhář tříd** a editor souborů kódu zámky úpravy dokumentu uložené v souboru s kódem, pak bude uživatel vyzván k uložení při zavírání souboru kódu nebo formuláře. V tomto okamžiku uložené změny se projeví ve formuláři a soubor kódu. Další informace o diagramech tříd viz [práce s diagramy tříd (návrhář tříd)](../ide/class-designer/working-with-class-diagrams.md).
+ Chcete získat různé chování editoru "A" je pouze editor, který má dokument upravit zámek na souboru "b", než kdybyste editoru "B" také obsahuje dokument upravit zámek na souboru "b". V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **návrhář tříd** je příkladem vizuálního návrháře, který neobsahuje upravit zámek na souboru přidružený kód. To znamená pokud má uživatel v návrhovém zobrazení otevřete diagram třídy a přidružen soubor kódu otevřete současně, a uživatel upraví soubor kódu, ale nedojde k uložení změn, změny jsou rovněž ztraceny soubor diagramu tříd (.cd). Pokud **návrhář tříd** má jediný dokument upravit zámek na soubor kódu, uživatel se vyzve k uložit změny při zavírání souboru kódu. Rozhraní IDE uživateli výzvu k uložení změn pouze poté, co uživatel zavře **návrhář tříd**. Uložené změny se projeví v obou souborech. Pokud **návrhář tříd** a editor souborů kódu zámky úpravy dokumentu uložené v souboru s kódem, pak bude uživatel vyzván k uložení při zavírání souboru kódu nebo formuláře. V tomto okamžiku uložené změny se projeví ve formuláři a soubor kódu. Další informace o diagramech tříd viz [práce s diagramy tříd (návrhář tříd)](../ide/class-designer/designing-and-viewing-classes-and-types.md).
 
  Všimněte si, že pokud je potřeba zamknout úpravy dokumentu mimo editor, je nutné implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> rozhraní.
 
  V mnoha případech uživatelského rozhraní návrháře, který upraví soubory kódu prostřednictvím kódu programu provede změny více než jeden soubor. V takových případech <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> obsluhovala ukládání jeden nebo více dokumentů prostřednictvím **chcete uložit změny následujících položek?** dialogové okno.
 
 ## <a name="see-also"></a>Viz také:
- [Spuštění tabulky dokumentů](../extensibility/internals/running-document-table.md) [trvalosti a spuštění tabulky dokumentů](../extensibility/internals/persistence-and-the-running-document-table.md)
+
+- [spuštění tabulky dokumentů](../extensibility/internals/running-document-table.md)
+- [Trvalost a spuštění tabulky dokumentů](../extensibility/internals/persistence-and-the-running-document-table.md)

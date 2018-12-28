@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561691"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Ladění knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -102,7 +102,7 @@ Knihovnu DLL nelze spustit přímo. Musí být volána aplikací, obvykle *.exe*
 
 Chcete-li ladit knihovnu DLL, můžete [spuštění ladění z volající aplikace](#vxtskdebuggingdllprojectsthecallingapplication), nebo [ladění z projektu knihovny DLL](how-to-debug-from-a-dll-project.md) tak, že zadáte jeho volající aplikace. Můžete také použít ladicí program [podokna](#vxtskdebuggingdllprojectstheimmediatewindow) k vyhodnocení funkcí knihovny DLL nebo metody v době návrhu, bez použití volání aplikace.
 
-Další informace najdete v tématu [Začínáme s ladicím programem](getting-started-with-the-debugger.md).
+Další informace najdete v tématu [nejdřív se podívejte na ladicí program](../debugger/debugger-feature-tour.md).
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Spuštění ladění z volající aplikace
 
@@ -119,11 +119,11 @@ Chcete-li ladit knihovnu DLL z volající aplikace, můžete:
 
   or  
 
-- Připojte k aplikaci, která je již nasazen a spuštěn v testovacím nebo produkčním počítači. Tuto metodu použijte pro knihovny DLL na webech nebo ve službě web apps. Další informace najdete v tématu [postupy: připojení ke spuštěnému procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Připojte k aplikaci, která je již nasazen a spuštěn v testovacím nebo produkčním počítači. Tuto metodu použijte pro knihovny DLL na webech nebo ve službě web apps. Další informace najdete v tématu [jak: Připojit ke spuštěnému procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 Před zahájením ladění volající aplikace, nastavte zarážku v knihovně DLL. Zobrazit [pomocí zarážek](../debugger/using-breakpoints.md). Při dosažení zarážky knihovny DLL, můžete krokovat kód, sledování akce na každém řádku. Další informace najdete v tématu [vyhledání kódu v ladicím programu](../debugger/navigating-through-code-with-the-debugger.md).
   
-Během ladění, můžete použít **moduly** okno ověření knihovny DLL a *.exe* soubory zatížení aplikace. Chcete-li otevřít **moduly** okně během ladění, **ladění** > **Windows** > **moduly**. Další informace najdete v tématu [postupy: použití okna moduly](../debugger/how-to-use-the-modules-window.md). 
+Během ladění, můžete použít **moduly** okno ověření knihovny DLL a *.exe* soubory zatížení aplikace. Chcete-li otevřít **moduly** okně během ladění, **ladění** > **Windows** > **moduly**. Další informace najdete v tématu [jak: Použití okna moduly](../debugger/how-to-use-the-modules-window.md). 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Použijte příkazové podokno  
 
@@ -158,7 +158,7 @@ Například chcete-li otestovat metodu s názvem `Test` ve třídě `Class1`:
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Ladění ve smíšeném režimu  
 
-Pro knihovny DLL ve spravované nebo nativní kód můžete psát volání aplikace. Pokud vaše nativní aplikace volá spravované knihovny DLL a chcete obojí ladit, můžete povolit spravovaný a nativní ladící ve vlastnostech projektu. Přesný postup závisí na, jestli chcete spustit ladění z projektu knihovny DLL nebo projekt volající aplikace. Další informace najdete v tématu [postupy: ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md). 
+Pro knihovny DLL ve spravované nebo nativní kód můžete psát volání aplikace. Pokud vaše nativní aplikace volá spravované knihovny DLL a chcete obojí ladit, můžete povolit spravovaný a nativní ladící ve vlastnostech projektu. Přesný postup závisí na, jestli chcete spustit ladění z projektu knihovny DLL nebo projekt volající aplikace. Další informace najdete v tématu [jak: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md). 
 
 Můžete také ladit nativní knihovnu DLL ze spravovaného projektu volání. Další informace najdete v tématu [ladění spravovaného a nativního kódu](how-to-debug-managed-and-native-code.md). 
 

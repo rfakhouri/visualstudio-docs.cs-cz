@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 293a402e701cb316b9fb3dacf27b905462d2dc06
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f511b668c207ae719dbb981d7dc5640f0fa124c
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443090"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802693"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 
 V tomto stručný úvod do editoru kódu v sadě Visual Studio podíváme na některé ze způsobů, že sada Visual Studio provádí zápis, procházení a porozumění kódu jednodušší.
 
 > [!TIP]
-> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úloha Node.js develoment** pomocí sady Visual Studio.
+> Pokud jste ještě nenainstalovali aplikaci Visual Studio, přejděte [soubory ke stažení Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stránku a nainstalovat zdarma. V závislosti na typu vývoj aplikací, které vám to jde, budete muset nainstalovat **úlohy pro vývoj Node.js** pomocí sady Visual Studio.
 
-Tento článek předpokládá, že jste již obeznámeni s develoment jazyka JavaScript. Pokud si nejste, doporučujeme vám podívejte se na kurz jako [vytvoření aplikace Node.js a Express](../javascript/tutorial-nodejs.md) první.
+Tento článek předpokládá, že jste již obeznámeni s vývojem pro JavaScript. Pokud si nejste, doporučujeme vám podívejte se na kurz jako [vytvoření aplikace Node.js a Express](../javascript/tutorial-nodejs.md) první.
 
 > [!TIP]
 > Pokud chcete postupovat podle tohoto článku, ujistěte se, že máte JavaScript nastavení vybraných pro Visual Studio. Informace o výběru nastavení pro integrované vývojové prostředí (IDE) najdete v tématu [nastavení prostředí](../ide/environment-settings.md). Při importu nastavení importovat **JavaScript** nastavení.
@@ -108,7 +108,7 @@ Umístěte ukazatel myši, ve které chcete vložit fragment kódu, klikněte pr
 
 ![Fragment kódu v sadě Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
-**Vložit fragment** se zobrazí okno se zobrazí v editoru. Zvolte **Obecné** a potom dvakrát klikněte **pro** položku v seznamu.
+**Vložit fragment** pole se zobrazí v editoru. Zvolte **Obecné** a potom dvakrát klikněte **pro** položku v seznamu.
 
 ![Fragment kódu pro smyčky for v sadě Visual Studio](../javascript/media/write-code-insert-snippet-for-loop.png)
 

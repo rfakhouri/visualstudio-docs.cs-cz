@@ -1,5 +1,5 @@
 ---
-title: Byl očekáván &#39;]&#39; v regulárním výrazu (JavaScript) | Dokumentace Microsoftu
+title: Byl očekáván ']' v regulárním výrazu (JavaScript) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64ef929ba309f0b496e72f3cf740daf6970d08fb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283714"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804413"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>Byl očekáván &#39;]&#39; v regulárním výrazu (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>V regulárním výrazu byl očekáván znak ']' (JavaScript)
 Se pokusil vytvořit třídu znaků shody regulárního výrazu, ale neobsahuje pravou závorku. Jednotlivý znak literálu kombinace lze sestavit do třídy znaků tak, že je umístíte do hranatých závorek. Třída znaků odpovídá jeden libovolný znak, který ji obsahuje. Například / [abc] / odpovídá jakémukoli znaku z písmen "a", "b" nebo "c".  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  

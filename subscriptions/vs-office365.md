@@ -9,12 +9,12 @@ description: Další informace o benefitech služeb Office 365 součástí někt
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 613359e6aa1834faae30af8c3b055bb0e0e93f62
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739856"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802105"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Office 365 v předplatných sady Visual Studio
 
@@ -31,7 +31,7 @@ Postupujte podle těchto kroků ke stažení a aktivace služeb Office 365:
 0. Instalace Office 365, budete potřebovat kód product key.  Klikněte na **Get klíč** odkaz v seznamu služeb Office 365.
    > [!div class="mx-imgBorder"]
    > ![Kód Product Key získat Office 365](_img/vs-office365/vs-office365-get-key.png)
-0. Nabídka okna se zobrazí všechny klíče, které jste již deklarována stejně jako ty, které jsou k dispozici.  Chcete-li získat nový klíč, klikněte na tlačítko **uplatnit kód** pod **Office Professional Pllus 2019** výpis.
+0. Nabídka okna se zobrazí všechny klíče, které jste již deklarována stejně jako ty, které jsou k dispozici.  Chcete-li získat nový klíč, klikněte na tlačítko **uplatnit kód** pod **Office Professional Plus 2019** výpis.
    > [!div class="mx-imgBorder"]
    > ![Kód Product Key Office 365 deklarace identity](_img/vs-office365/vs-office365-claim-key.png)
 0. Záznam na klíč, který jste právě nárokován. (Můžete se kdykoli vrátit do tohoto seznamu a znovu zobrazit.)

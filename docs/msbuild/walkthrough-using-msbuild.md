@@ -1,7 +1,7 @@
 ---
-title: 'Návod: Použití nástroje MSBuild | Dokumentace Microsoftu'
+title: 'Průvodce: Použití nástroje MSBuild | Dokumentace Microsoftu'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 12/18/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880146"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648917"
 ---
-# <a name="walkthrough-use-msbuild"></a>Návod: Použití nástroje MSBuild
+# <a name="walkthrough-use-msbuild"></a>Průvodce: Použití nástroje MSBuild
 Nástroj MSBuild je platforma sestavení pro společnost Microsoft a sady Visual Studio. Tento návod vás seznámí s stavební kameny nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild. Kurzu se naučíte:
 
 -   Vytváření a manipulaci se soubor projektu.
@@ -116,24 +116,28 @@ Nástroj MSBuild sleduje cíle sestavení a zaručuje, že každý cíl je vytvo
 Úloha zprávy přijímá řetězcovou hodnotu atributu Text jako vstup a zobrazí ho na výstupním zařízení. Cíl HelloWorld provede úkol zpráv dvakrát: nejprve k zobrazení "Hello" a potom zobrazíte "World".
 
 ## <a name="build-the-target"></a>Cíl sestavení
- Spustit nástroj MSBuild z **příkazový řádek sady Visual Studio** sestavit cíl HelloWorld výše. Použití - cíl nebo -t přepínač příkazového řádku a vyberte cíl.
+ Spustit nástroj MSBuild z **Developer Command Prompt** pro Visual Studio k vytvoření cílové HelloWorld výše. Použití - cíl nebo -t přepínač příkazového řádku a vyberte cíl.
 
 > [!NOTE]
->  Budeme **příkazový řádek sady Visual Studio** jako **příkazové okno** v následujících částech.
+>  Budeme **Developer Command Prompt** jako **příkazové okno** v následujících částech.
 
 #### <a name="to-build-the-target"></a>K sestavení cíle
 
-1.  Klikněte na tlačítko **Start**, pak klikněte na tlačítko **všechny programy**. Vyhledejte a klikněte **příkazový řádek sady Visual Studio** v **Visual Studio Tools** složky.
+1. Otevřít **Zové okno**.
 
-2.  V příkazovém řádku přejděte do složky obsahující soubor projektu, v tomto případě *D:\BuildApp\BuildApp*.
+   (Windows 10) Do vyhledávacího pole na hlavním panelu, začněte psát název nástroje, jako například `dev` nebo `developer command prompt`. Tím se zobrazí seznam nainstalovaných aplikací, které odpovídají vaší vyhledávací vzory.
 
-3.  Spuštění nástroje msbuild pomocí příkazu Přepnout - t: HelloWorld. To vybere a sestavuje cílový HelloWorld:
+   Pokud potřebujete vyhledat ručně, je soubor *LaunchDevCmd.bat* v  *<visualstudio installation folder> \<verze > \Common7\Tools* složky.
+
+2. V příkazovém řádku přejděte do složky obsahující soubor projektu, v tomto případě *D:\BuildApp\BuildApp*.
+
+3. Spuštění nástroje msbuild pomocí příkazu Přepnout - t: HelloWorld. To vybere a sestavuje cílový HelloWorld:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Prohlédněte si výstup v **příkazové okno**. Měli byste vidět dva řádky "Hello" a "World":
+4. Prohlédněte si výstup v **příkazové okno**. Měli byste vidět dva řádky "Hello" a "World":
 
     ```
     Hello
@@ -225,10 +229,10 @@ $(PropertyName)
  Téměř všechny elementy MSBuild může mít atribut podmínku. Další informace o použití atributu podmínky najdete v článku [podmínky](../msbuild/msbuild-conditions.md).
 
 ### <a name="reserved-properties"></a>Rezervované vlastnosti
- Nástroj MSBuild rezervuje některé názvy vlastností k ukládání informací o souboru projektu a binární soubory nástroje MSBuild. MSBuildToolsPath je příkladem rezervované vlastnosti. Rezervované vlastnosti je odkazováno pomocí zápisu $ jakékoli jiné vlastnosti. Další informace najdete v tématu [postupy: odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) a [MSBuild vyhrazené a dobře známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ Nástroj MSBuild rezervuje některé názvy vlastností k ukládání informací o souboru projektu a binární soubory nástroje MSBuild. MSBuildToolsPath je příkladem rezervované vlastnosti. Rezervované vlastnosti je odkazováno pomocí zápisu $ jakékoli jiné vlastnosti. Další informace najdete v tématu [jak: Odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) a [MSBuild vyhrazené a dobře známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Proměnné prostředí
- Proměnné prostředí v souborech projektu může odkazovat stejným způsobem, jak vlastnosti sestavení. Například použít proměnné prostředí PATH v souboru projektu, použijte příkaz $(Path). Obsahuje-li projekt definici vlastnosti, který má stejný název jako proměnné prostředí, přepíše vlastnost v projektu hodnotu proměnné prostředí. Další informace najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Proměnné prostředí v souborech projektu může odkazovat stejným způsobem, jak vlastnosti sestavení. Například použít proměnné prostředí PATH v souboru projektu, použijte příkaz $(Path). Obsahuje-li projekt definici vlastnosti, který má stejný název jako proměnné prostředí, přepíše vlastnost v projektu hodnotu proměnné prostředí. Další informace najdete v tématu [jak: Použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Nastavit vlastnosti z příkazového řádku
  Vlastnosti mohou být definovány pomocí příkazového řádku / vlastnost nebo -p přepínač příkazového řádku. Vlastnost hodnoty přijatých z příkazového řádku přepisují hodnoty vlastností nastavené v proměnné prostředí a souboru projektu.
@@ -290,7 +294,7 @@ Další informace najdete v tématu [speciální znaky nástroje MSBuild](../msb
 </ItemGroup>
 ```
 
- Definuje skupinu položky obsahující dvě položky. Typ položky kompilace má dvě hodnoty: *Program.cs* a *Properties\AssemblyInfo.cs*.
+ Definuje skupinu položky obsahující dvě položky. Typ položky kompilace má dvě hodnoty: *Soubor program.cs* a *Properties\AssemblyInfo.cs*.
 
  Následující kód vytvoří stejný typ položky deklarováním oba soubory v jednom atributu Include, oddělené středníky.
 
@@ -388,7 +392,7 @@ Chcete-li změnit oddělovač typ položky, použijte následující syntaxi, kd
 <Photos Include="images\**.jpeg" />
 ```
 
- Přidá všechny soubory s příponou souboru *.jpeg* v *imagí* složka a všechny její podsložky, typu položky fotografie. Další příklady najdete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).
+ Přidá všechny soubory s příponou souboru *.jpeg* v *imagí* složka a všechny její podsložky, typu položky fotografie. Další příklady najdete v tématu [jak: Vyberte soubory, které chcete sestavit](../msbuild/how-to-select-the-files-to-build.md).
 
  Všimněte si, jak jsou deklarovány položky se přidají do typu položky. Například
 
@@ -409,7 +413,7 @@ Chcete-li změnit oddělovač typ položky, použijte následující syntaxi, kd
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- Přidá všechny soubory s příponou souboru *.cs* typu položky kompilace, s výjimkou souborů jejichž názvy obsahují řetězec *návrháře*. Další příklady najdete v tématu [postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).
+ Přidá všechny soubory s příponou souboru *.cs* typu položky kompilace, s výjimkou souborů jejichž názvy obsahují řetězec *návrháře*. Další příklady najdete v tématu [jak: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).
 
 Atribut vyloučení ovlivňuje pouze položky přidané v atributu Include v prvku položky, která obsahuje oba. Například
 
@@ -561,8 +565,8 @@ Například je možné transformovat seznam položek zdrojových souborů do kol
 
 Všimněte si, že se tato metadata v této syntaxe nezpůsobí dávkování.
 
-## <a name="whats-next"></a>Co se chystá?
- Zjistěte, jak vytvořit jednoduchý projekt jeden krok souborů najednou, vyzkoušejte si [návod: vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+## <a name="whats-next"></a>Co dále?
+ Zjistěte, jak vytvořit jednoduchý projekt jeden krok souborů najednou, vyzkoušejte si [názorný postup: Vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Viz také:
 

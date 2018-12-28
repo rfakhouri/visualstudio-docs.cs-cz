@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu'
+title: 'Postupy: Přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], adding Visio shapes
 - shapes [Office development in Visual Studio], adding Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94e8b43830c26aad82937cc0533ca19e109f33d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671869"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802656"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Postupy: přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Postupy: Přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu
   Tvary můžete přidat do dokumentu aplikace Microsoft Office Visio načítání si hlavní počítače z vzorníku a umístěním tvary na aktivní stránce.  
   
  Další informace najdete v tématu referenční dokumentaci jazyka VBA pro [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) metody [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) vlastnosti a [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) metody.  
@@ -43,6 +43,6 @@ ms.locfileid: "50671869"
  [Řešení pro aplikaci Visio](../vsto/visio-solutions.md)   
  [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)   
  [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)   
- [Postupy: Programová kopírování a vkládání obrazců do dokumentů aplikace Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Postupy: Programově kopírování a vkládání obrazců do dokumentů aplikace Visio](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

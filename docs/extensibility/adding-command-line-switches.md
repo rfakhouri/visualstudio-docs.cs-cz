@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901044"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738586"
 ---
 # <a name="add-command-line-switches"></a>Přidání přepínačů příkazového řádku
 Můžete přidat přepínače příkazového řádku, které se vztahují k vaší VSPackage při *devenv.exe* provádí. Použití <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> deklarovat název přepínače a její vlastnosti. V tomto příkladu se přidá MySwitch přepínač pro podtřídou třídy s názvem balíčku VSPackage **AddCommandSwitchPackage** bez argumentů a s VSPackage načteny automaticky.  
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)   
  [Nástroj CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Soubory Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [. Soubory Pkgdef](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

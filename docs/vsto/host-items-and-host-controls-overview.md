@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937496"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647971"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Přehled ovládacích prvků hostitele a hostitelské položky
   Hostitelských položek a hostitelských ovládacích prvků jsou typy, které poskytují programovací model pro řešení Office, které jsou vytvořeny pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Hostitelských položek a hostitelských ovládacích prvků Ujistěte se, interakci s objektové modely aplikace Microsoft Office Word a Microsoft Office Excel, které jsou založeny na modelu COM, více jako interakci s spravované objekty, jako jsou například ovládací prvky Windows Forms.  
@@ -141,7 +141,7 @@ ms.locfileid: "49937496"
   
 - [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
 - [Postupy: Přidání ovládacích prvků XMLNode do dokumentů aplikace Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   

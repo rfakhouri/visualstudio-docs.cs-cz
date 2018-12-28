@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966541"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740137"
 ---
 # <a name="create-models-for-your-app"></a>Vytváření modelů pro aplikaci
 
@@ -42,7 +42,7 @@ K vizualizaci architektury systému nebo existující kód, vytvořte následuj�
 |-|-|
 |[Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)|Základní architektura systému|
 |Mapy kódu<br /><br /> [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Závislosti a jiné vztahy v existujícím kódu|
-|Diagramy tříd generovaný kód<br /><br /> [Práce s diagramy tříd (Návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)|Typy a jejich vztahy v kódu rozhraní .NET|
+|Diagramy tříd generovaný kód<br /><br /> [Práce s diagramy tříd (Návrhář tříd)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Typy a jejich vztahy v kódu rozhraní .NET|
 
 ## <a name="related-tasks"></a>Související úlohy
 

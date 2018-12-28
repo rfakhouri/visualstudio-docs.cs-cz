@@ -1,5 +1,5 @@
 ---
-title: Očekávaný & č. 39; var & č. 39; | Microsoft Docs
+title: Byl očekáván 'příkaz var' | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a99bfdd61d6c7007af2c0984219f3e458b313a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788808"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803465"
 ---
-# <a name="expected-39var39"></a>Očekávaný & č. 39; var & č. 39;
-Očekávaný 'var' (ERRnoVar 1034))  
+# <a name="expected-var"></a>Byl očekáván příkaz 'var'
+Očekávaný "var" (ERRnoVar 1034))  
   
- Můžete se nepodařilo přidat var – klíčové slovo, když nebyla nutná.  
+ Můžete se nepodařilo přidat klíčové slovo var, když se vyžaduje.  
   
- Další informace o var – klíčové slovo najdete v tématu [příkaz var](../../javascript/reference/var-statement-javascript.md).
+ Další informace o klíčovém slově var najdete v tématu [var – příkaz](../../javascript/reference/var-statement-javascript.md).

@@ -12,18 +12,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062813"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803504"
 ---
 # <a name="edit-python-code"></a>Úprava kódu v Pythonu
 
 Protože jste tráví mnoho času vývoje v editoru kódu [podpora Pythonu v sadě Visual Studio](installing-python-support-in-visual-studio.md) poskytuje funkce, aby vám pomohly zvýšit produktivitu práce. Funkce zahrnují IntelliSense zvýrazňování syntaxe, automatické dokončování, signaturám, přepsání metody, vyhledávání a navigace.
 
-Editor je integrovaná taky s **interaktivní** okna v sadě Visual Studio, což usnadňuje exchange kód mezi těmito dvěma. V tématu [kurzu krok 3: použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) a [použití interaktivního okna - Odeslat do interaktivního příkazu](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) podrobnosti.
+Editor je integrovaná taky s **interaktivní** okna v sadě Visual Studio, což usnadňuje exchange kód mezi těmito dvěma. Zobrazit [kurz – krok 3: Použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) a [použití interaktivního okna - Odeslat do interaktivního příkazu](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) podrobnosti.
 
 |   |   |
 |---|---|
@@ -184,7 +184,7 @@ Můžete zobrazit fragmenty kódu k dispozici v **Správce fragmentů kódů**ot
 
 ![Správce fragmentů kódů v sadě Visual Studio](media/code-editing-code-snippets-manager.png)
 
-Vytvoření vlastní fragmenty kódu najdete v tématu [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
+Vytvoření vlastní fragmenty kódu najdete v tématu [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
 
 Pokud píšete skvělého kódu fragmentu kódu, který chcete sdílet, neváhejte přidat v gist a [dejte nám vědět](https://github.com/Microsoft/PTVS/issues). Jsme možné zahrnout do budoucí verze sady Visual Studio.
 
@@ -196,7 +196,7 @@ Podpora Pythonu v sadě Visual Studio obsahuje několik způsob, jak rychle navi
 
 Na navigačním panelu se zobrazí v horní části okna editoru a zahrnuje dvě úrovně seznam definic. Vlevo rozevírací seznam obsahuje třídy nejvyšší úrovně a definice funkcí v aktuálním souboru. správné rozevíracího seznamu zobrazí seznam definic v rámci oboru, zobrazí na levé straně. Při pohybu v editoru seznamu aktualizuje a zobrazí aktuální kontext a můžete také vybrat položku z těchto seznamů můžete přejít přímo k.
 
-! [Navigační panel] v sadě Visual Studio editor(media/code-editing-navigation-bar.png)
+![Navigační panel v editoru sady Visual Studio](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Chcete-li skrýt navigační panel, přejděte na **nástroje** > **možnosti** > **textový Editor** > **Python**  >  **Obecné** a zrušte zaškrtnutí **nastavení** > **navigační panel**.

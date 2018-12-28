@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7a4475cba023f792c2ff96895eb4dd7e0b4ebcf5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d14db3c10fb9e656596e89a43e75b765b67aa7c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050210"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804523"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Postup použití testu CTest jazyka C++ v sadě Visual Studio
 
-CMake (která zahrnuje CTest) je integrována do integrovaného vývojového prostředí sady Visual Studio ve výchozím nastavení jako součást sady **Develoment Desktop s C++** pracovního vytížení. Pokud je potřeba nainstalovat na svém počítači, spusťte program Instalační program sady Visual Studio, klikněte na tlačítko **změnit** tlačítko a pak zkontrolujte [nástroje CMake pro Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) v seznamu součástí úlohy.
+CMake (která zahrnuje CTest) je integrována do integrovaného vývojového prostředí sady Visual Studio ve výchozím nastavení jako součást sady **Desktop Development with C++** pracovního vytížení. Pokud je potřeba nainstalovat na svém počítači, spusťte program Instalační program sady Visual Studio, klikněte na tlačítko **změnit** tlačítko a pak zkontrolujte [nástroje CMake pro Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) v seznamu součástí úlohy.
 
 ## <a name="to-write-tests"></a>K psaní testů
 
@@ -26,7 +26,7 @@ Podpora CMake v sadě Visual Studio nezahrnuje projektu systému Visual Studio. 
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>Pro spouštění testů (Visual Studio 2017 verze 15.6)
 
-V sadě Visual Studio 2017 verze 15.6 CTest je plně integrována s **Průzkumník testů** a podporuje také rozhraní testování částí Googlu a Boost. Tyto architektury jsou zahrnuté ve výchozím nastavení jako komponentu **Develoment Desktop s C++** pracovního vytížení. Nicméně pokud provádíte upgrade projektu ze starší verze sady Visual Studio, budete muset nainstalovat tyto architektury pomocí programu Instalační program sady Visual Studio.
+V sadě Visual Studio 2017 verze 15.6 CTest je plně integrována s **Průzkumník testů** a podporuje také rozhraní testování částí Googlu a Boost. Tyto architektury jsou zahrnuté ve výchozím nastavení jako komponentu **Desktop Development with C++** pracovního vytížení. Nicméně pokud provádíte upgrade projektu ze starší verze sady Visual Studio, budete muset nainstalovat tyto architektury pomocí programu Instalační program sady Visual Studio.
 
 Následující obrázek znázorňuje výsledky CTest spouštět pomocí rozhraní Google Test:
 

@@ -23,18 +23,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4741dedb907bb88513147a98b916831abd965576
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de570bb79bd59fa5af4c6343dd313e09f6e2533e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207347"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647339"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Připojení k datům v databázi aplikace Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (soubor .mdf nebo soubor .accdb). Po definování připojení se data zobrazí v **zdroje dat** okna. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů. Pokud chcete pochopit, jak systém projektu v sadě Visual Studio spravuje tyto lokální databázové soubory, naleznete v tématu [jak: Manage Local Data Files in Your Project](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
+Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (soubor .mdf nebo soubor .accdb). Po definování připojení se data zobrazí v **zdroje dat** okna. Odtud můžete přetáhnout tabulky nebo zobrazení do formulářů.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete použít tyto postupy, je třeba projekt aplikace Windows Forms a buď databázi aplikace Access (soubor .accdb) nebo databáze aplikace Access 2000-2003 (soubor .mdb). Postupujte podle kroků odpovídajících vašemu typu souboru.  
@@ -129,17 +128,13 @@ Pomocí sady Visual Studio se můžete připojit k databázi aplikace Access (so
   
 -   Vyberte položky v **zdroje dat** okno a přetáhněte je na svůj formulář (naleznete v tématu [ovládací prvky vazby Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Otevřít zdroj dat v [Návrhář Dataset](../data-tools/creating-and-editing-typed-datasets.md) můžete přidat nebo upravit objekty, které tvoří datové sady.  
+-   Otevřete zdroj dat v návrháři datových sad můžete přidat nebo upravit objekty, které tvoří datové sady.  
   
 -   Přidejte logiku ověřování k <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> události tabulek dat v datové sadě (naleznete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md)).  
   
-## <a name="see-also"></a>Viz také  
- [Připojování k datům v sadě Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Příprava aplikace pro příjem dat](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Načítají se Data do vaší aplikace](../data-tools/fetching-data-into-your-application.md)   
- [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Úpravy dat v aplikaci](../data-tools/editing-data-in-your-application.md)   
- [Ověřování dat](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Ukládání dat](../data-tools/saving-data.md)   
- [Návody k datům](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)
+## <a name="see-also"></a>Viz také
 
+ [Příprava aplikace pro příjem dat](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Ověřování dat](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Návody k datům](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)

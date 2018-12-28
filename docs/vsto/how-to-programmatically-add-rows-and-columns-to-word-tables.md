@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Programové přidávání řádků a sloupců do tabulek aplikace Word'
+title: 'Postupy: Programové přidání řádků a sloupců do tabulek aplikace Word'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], adding to Word tables
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818676"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804575"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Postupy: Programové přidávání řádků a sloupců do tabulek aplikace Word
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Postupy: Programové přidání řádků a sloupců do tabulek aplikace Word
   V tabulce aplikace Microsoft Office Word buňky jsou uspořádány do řádků a sloupců. Můžete použít <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Rows> objektu pro přidání řádků do tabulky a <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> metodu <xref:Microsoft.Office.Interop.Word.Columns> objektu, který chcete přidat sloupce.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -40,7 +40,7 @@ ms.locfileid: "49818676"
 > - Dokument aplikace Word 2010  
 > - Šablona aplikace Word 2010  
 > 
->   Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Word** sestavení a pak pomocí třídy z tohoto sestavení k přidávání řádků a sloupců do tabulek. Další informace najdete v tématu [jak: aplikace Office cílové primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>   Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Word** sestavení a pak pomocí třídy z tohoto sestavení k přidávání řádků a sloupců do tabulek. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Chcete-li přidat řádek do tabulky  
   
@@ -62,7 +62,7 @@ ms.locfileid: "49818676"
 > [!IMPORTANT]  
 >  Tento kód se spustí jenom v projektech, které vytvoříte pomocí šablony doplňků VSTO pro Word.  
 >   
->  Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Word** sestavení a pak pomocí třídy z tohoto sestavení k přidávání řádků a sloupců do tabulek. Další informace najdete v tématu [jak: aplikace Office cílové primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  Pokud chcete k provedení této úlohy v jakýkoli jiný typ projektu, je nutné přidat odkaz na **Microsoft.Office.Interop.Word** sestavení a pak pomocí třídy z tohoto sestavení k přidávání řádků a sloupců do tabulek. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) a [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
 ### <a name="to-add-a-row-to-a-table"></a>Chcete-li přidat řádek do tabulky  
   
@@ -79,8 +79,8 @@ ms.locfileid: "49818676"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: vytváření tabulek aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-create-word-tables.md)   
- [Postupy: přidávání textu a formátování do buněk tabulek aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Postupy: vkládání kódu programu s vlastností dokumentu do tabulek aplikace Word](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+ [Postupy: Vytváření tabulek aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-create-word-tables.md)   
+ [Postupy: Přidávání textu a formátování do buněk tabulek aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [Postupy: Vkládání kódu programu s vlastností dokumentu do tabulek aplikace Word](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

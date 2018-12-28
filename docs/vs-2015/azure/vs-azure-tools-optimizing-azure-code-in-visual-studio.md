@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 586102e6080b115b5e4908c8741e9eaa2e702901
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 445a77dd9398ff8d48f1ad633d63c13e05e76b5d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068293"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803315"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimalizace kódu Azure
 Pokud programujete aplikace, které využívají Microsoft Azure, existují některé postupy psaní kódu, které byste měli postupovat, která pomáhá zabránit problémům s aplikací škálovatelnost, chování a výkon v cloudovém prostředí. Společnost Microsoft poskytuje nástroj Azure analýzy kódu, který rozpozná a některé z těchto problémů obvykle zjistil identifikuje a pomáhá vám je vyřešit. Můžete stáhnout nástroj v sadě Visual Studio prostřednictvím balíčku NuGet.
@@ -58,7 +58,7 @@ Umístěte všechny asynchronní operace mimo [Run()](https://msdn.microsoft.com
 
 Následující fragment kódu ukazuje kód opravu tohoto problému:
 
-```
+```csharp
 public override void Run()
 {
     RunAsync().Wait();
@@ -101,7 +101,7 @@ Pro zvýšení zabezpečení Azure Active Directory nahrazuje ověřování ACS 
 ### <a name="solution"></a>Řešení
 Použijte ověřování SAS ve svých aplikacích. Následující příklad ukazuje, jak používat existující token SAS pro přístup k oboru názvů služby Service bus nebo entity.
 
-```
+```csharp
 MessagingFactory listenMF = MessagingFactory.Create(endpoints, new StaticSASTokenProvider(subscriptionToken));
 SubscriptionClient sc = listenMF.CreateSubscriptionClient(topicPath, subscriptionName);
 BrokeredMessage receivedMessage = sc.Receive();
@@ -136,7 +136,7 @@ Ke zlepšení výkonu Azure infrastruktura zasílání zpráv, najdete v článk
 
 Následuje příklad použití **OnMessage** pro příjem zpráv.
 
-```
+```csharp
 void ReceiveMessages()
 {
     // Initialize message pump options.
@@ -147,7 +147,7 @@ void ReceiveMessages()
 
     // Start receiving messages.
     QueueClient client = QueueClient.Create("myQueue");
-    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is recieved, calling close on the client will stop the pump.
+    client.OnMessage((receivedMessage) => // Initiates the message pump and callback is invoked for each message that is received, calling close on the client will stop the pump.
     {
         // Process the message.
     }, options);
@@ -157,7 +157,7 @@ void ReceiveMessages()
 
 Následuje příklad použití **Receive** doba čekání výchozí server.
 
-```
+```csharp
 string connectionString =
 CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
@@ -190,7 +190,7 @@ while (true)
 
 Následuje příklad použití **Receive** doba čekání na jiné než výchozí server.
 
-```
+```csharp
 while (true)
 {
    BrokeredMessage message = Client.Receive(new TimeSpan(0,1,0));
@@ -248,7 +248,7 @@ Dělení front a témat Service Bus, zvýšíte dostupnost propustnosti a služb
 ### <a name="solution"></a>Řešení
 Následující fragment kódu ukazuje, jak rozdělit entit pro zasílání zpráv.
 
-```
+```csharp
 // Create partitioned topic.
 NamespaceManager ns = NamespaceManager.CreateFromConnectionString(myConnectionString);
 TopicDescription td = new TopicDescription(TopicName);
@@ -277,7 +277,7 @@ Odeberte příkaz, který nastaví počáteční čas zásady sdíleného přís
 
 Následující fragment kódu ukazuje kód opravu tohoto problému.
 
-```
+```csharp
 // The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -309,7 +309,7 @@ Další informace o správě zabezpečení najdete v článku vzor návrhu [osob
 
 Následuje příklad nezadáte čas spuštění zásady sdíleného přístupu.
 
-```
+```csharp
 // The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -324,7 +324,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 
 Následuje příklad určující čas spuštění zásady sdíleného přístupu s doba vypršení platnosti zásada, která je větší než pět minut.
 
-```
+```csharp
 // The shared access policy provides
 // read/write access to the container for 10 hours.
 blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy()
@@ -367,7 +367,7 @@ with
 
 Tady je příklad toho, jak uložit nastavení konfigurace v souboru App.config nebo Web.config. Přidání nastavení na sekci appSettings v konfiguračním souboru. Následuje soubor Web.config pro předchozí příklad kódu.
 
-```
+```xml
 <appSettings>
     <add key="webpages:Version" value="3.0.0.0" />
     <add key="webpages:Enabled" value="false" />
@@ -396,7 +396,7 @@ Připojovací řetězce Store v konfiguračních souborů nebo prostředí Azure
 * Pro službu IIS hostované webové aplikace slouží k ukládání připojovacích řetězců souboru web.config.
 * Pro aplikace ASP.NET vNext slouží k ukládání připojovacích řetězců configuration.json.
 
-Informace o použití souborů konfigurace, jako jsou souboru web.config nebo app.config najdete v tématu [pokyny ke konfiguraci ASP.NET Web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Informace o Azure pracovní proměnné prostředí, najdete v části [weby Azure: fungování řetězců aplikace a připojovací řetězce fungovat](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Informace o ukládání připojovací řetězec ve správě zdrojového kódu, naleznete v tématu [nevkládejte citlivé informace, jako je například připojovací řetězce v souborech, které se ukládají do úložiště zdrojového kódu](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Informace o použití souborů konfigurace, jako jsou souboru web.config nebo app.config najdete v tématu [pokyny ke konfiguraci ASP.NET Web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Informace o Azure pracovní proměnné prostředí, najdete v části [weby Azure: Jak řetězců aplikace a připojení fungují řetězce](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Informace o ukládání připojovací řetězec ve správě zdrojového kódu, naleznete v tématu [nevkládejte citlivé informace, jako je například připojovací řetězce v souborech, které se ukládají do úložiště zdrojového kódu](http://www.asp.net/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Použití diagnostického konfiguračního souboru
 ### <a name="id"></a>ID
@@ -408,12 +408,12 @@ Namísto konfigurace nastavení diagnostiky ve vašem kódu, jako s využitím M
 Sdělte nám prosím své nápady a názory na [zpětnou vazbu analýzy kódu Azure](http://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Důvod
-Předtím, než Azure SDK 2.5, (ta používá Azure diagnostics 1.3), Azure Diagnostics (WAD) může nakonfigurovat pomocí několika různými způsoby: přidání do objektu blob konfigurace ve službě storage pomocí imperativního kódu, deklarativní konfigurace nebo výchozí konfigurace. Preferovaný způsob, jak konfigurovat diagnostiku je však použít konfigurační soubor XML (diagnostics.wadcfg nebo diagnositcs.wadcfgx pro SDK 2.5 a novější) v projektu aplikace. V takovém případě soubor diagnostics.wadcfg zcela definuje konfiguraci a můžeme je aktualizovat a znovu nasadit kdykoli. Kombinování použití konfiguračního souboru diagnostics.wadcfg pomocí programové metody s použitím nastavení konfigurací [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)nebo [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx)můžete třídy vést k nejasnostem. Zobrazit [inicializace nebo změnit konfiguraci diagnostiky Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Další informace.
+Předtím, než Azure SDK 2.5, (ta používá Azure diagnostics 1.3), Azure Diagnostics (WAD) může nakonfigurovat pomocí několika různými způsoby: přidání do objektu blob konfigurace ve službě storage pomocí imperativního kódu, deklarativní konfigurace nebo výchozí konfigurace. Preferovaný způsob, jak konfigurovat diagnostiku je však použít konfigurační soubor XML (diagnostics.wadcfg nebo diagnostics.wadcfgx pro SDK 2.5 a novější) v projektu aplikace. V takovém případě soubor diagnostics.wadcfg zcela definuje konfiguraci a můžeme je aktualizovat a znovu nasadit kdykoli. Kombinování použití konfiguračního souboru diagnostics.wadcfg pomocí programové metody s použitím nastavení konfigurací [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)nebo [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) můžete třídy vést k nejasnostem. Zobrazit [inicializace nebo změnit konfiguraci diagnostiky Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) Další informace.
 
 Od verze 1.3 WAD (je součástí Azure SDK 2.5), je už nebude možné použít ke konfiguraci diagnostiky kódu. V důsledku toho můžete zadat pouze konfiguraci při použití nebo rozšíření diagnostiky se aktualizuje.
 
 ### <a name="solution"></a>Řešení
-Použijte Návrháře konfigurace diagnostiky pro přesun nastavení diagnostiky pro konfigurační soubor diagnostiky (diagnositcs.wadcfg nebo diagnositcs.wadcfgx pro SDK 2.5 a novější). Doporučujeme také nainstalovat [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) a použijte nejnovější funkce Diagnostika.
+Použijte Návrháře konfigurace diagnostiky pro přesun nastavení diagnostiky pro konfigurační soubor diagnostiky (diagnostics.wadcfg nebo diagnostics.wadcfgx pro SDK 2.5 a novější). Doporučujeme také nainstalovat [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) a použijte nejnovější funkce Diagnostika.
 
 1. V místní nabídce pro roli, kterou chcete konfigurovat, zvolte Vlastnosti a pak zvolte na kartě konfigurace.
 2. V **diagnostiky** části, ujistěte se, že **povolit diagnostiku** je zaškrtnuto políčko.
@@ -440,7 +440,7 @@ Deklarujte DBContext jako lokální proměnné nebo nestatické instance pole, p
 
 V následujícím příkladu třída kontroleru MVC ukazuje, jak použít objekt DBContext.
 
-```
+```csharp
 public class BlogsController : Controller
     {
         //BloggingContext is a subclass to DbContext

@@ -9,12 +9,12 @@ description: Další informace o předplatném školení Datacampu součástí v
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d192ea63192f2ce1b02803b2bef1e1f40e953789
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739929"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802144"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhoda Datacampu školení v předplatných sady Visual Studio
 
@@ -42,12 +42,9 @@ Doba trvání výhody Datacampu závisí na vaše předplatné sady Visual Studi
     - Spuštění Learning Pythonu pro datové vědy
     - Rozvíjet vaše dovednosti datové vědy
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   Stačí klikněte na vaše vybrané cesty, abyste mohli začít.
+   > [!div class="mx-imgBorder"]
+   > ![Zvolte cestu Datacampu](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. Po zvolení cesty, můžete upřesnit vaše výuky tak, že vyberete cíl.  Například pokud jste zvolili cesty "Vývoj vaše Data Science znalostí", zobrazí se následující možnosti. Zvolte možnost, nebo klikněte na tlačítko **nejsem si jistý.  Zobrazit všechny kariéry** vytvořit širší cestu.
    > [!div class="mx-imgBorder"]

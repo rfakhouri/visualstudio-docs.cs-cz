@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819300"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740322"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Vyhněte se nadměrné složitosti
 
@@ -50,7 +50,7 @@ Pokud uzel představuje bod větve logiky a hraniční představuje čáry mezi 
 
 Pravidlo oznámí porušení cyklomatická složitost po více než 25.
 
-Další informace o metriky kódu na [měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md),
+Další informace o metriky kódu na [měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/code-metrics-values.md),
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -108,4 +108,4 @@ Následující příklady ukazují metody, které mají různou cyklomatické sl
 
 ## <a name="see-also"></a>Viz také:
 
-- [Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [Měření složitosti a udržovatelnosti spravovaného kódu](../code-quality/code-metrics-values.md)

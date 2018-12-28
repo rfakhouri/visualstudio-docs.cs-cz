@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: instrumentace staticky kompilované webové technologie ASP.NET aplikaci a shromažďování dat paměti pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
+title: 'Postupy: Instrumentace staticky kompilované webové aplikace a shromažďovat paměťová Data pomocí příkazového řádku Profiler | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d78bcb6b26a10df10b68a8cea282fc76a521c282
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a2036e37e0a43389e4776a496299aae236ae256
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592677"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: instrumentace staticky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace staticky kompilované webové aplikace ASP.NET a shromažďovat paměťová data pomocí příkazového řádku profileru
 Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] příkazového řádku nástrojů pro profilaci k instrumentaci předkompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové komponenty nebo webu a shromažďovat alokaci paměti .NET, doba života objektu a podrobných dat časování.  
 
 > [!NOTE]
->  Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v *\Team Tools\Performance nástroje* podadresáře [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
 
  Pro shromáždění dat z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové komponenty pomocí metody instrumentace, je použít [VSInstr.exe](../profiling/vsinstr.md) Nástroj generuje instrumentovanou verzi komponenty. Na počítači, který je hostitelem součásti nahradíte neinstrumentovanou verzi součásti instrumentovanou verzí. Pak použijete [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroj k inicializaci globálních proměnných prostředí profilování a restartujte hostitelský počítač. Potom spusťte profiler.  
 
@@ -106,11 +106,11 @@ Tento článek popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/incl
 
     **/ Shutdown VSPerfCmd**  
 
-4. (Volitelné). Vyčistěte proměnné prostředí profilování. Typ:  
+4. (Volitelné). Vyčistěte proměnné prostředí profilování. Zadejte:  
 
     **Nástroj VSPerfCmd /globaloff**  
 
-5. Restartujte počítač. V případě potřeby restartujte službu IIS. Typ:  
+5. Restartujte počítač. V případě potřeby restartujte službu IIS. Zadejte:  
 
     **Příkaz IISReset/Start**  
 
