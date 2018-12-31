@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: instrumentace dynamicky kompilované webové aplikace a shromažďování podrobných dat Profiler časování pomocí příkazového řádku | Dokumentace Microsoftu'
+title: 'Postupy: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování podrobných dat Profiler časování pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: bcc5d167fdd53a597fb171881ae61281c8280c8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 653b4c9b04f3a126e4c63384d99fafce6c9cfcff
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894570"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592479"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Postupy: instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování podrobných dat časování pomocí profileru z příkazového řádku
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Postupy: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování podrobných dat časování pomocí příkazového řádku profileru
 
 Tento článek popisuje, jak používat Visual Studio nástroje příkazového řádku nástroje pro profilaci ke shromažďování podrobných dat časování pro dynamicky kompilovaných [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace s použitím metoda profilace instrumentace.
 
 > [!NOTE]
-> Nástroje příkazového řádku nástrojů pro profilaci jsou umístěny v *\Team Tools\Performance nástroje* podadresáře [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] instalační adresář. Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého. Další informace najdete v tématu [zadejte cestu k nástroji příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+>  Chcete-li získat cestu k nástrojů pro profilaci, naleznete v tématu [zadejte cestu k nástrojům příkazového řádku](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Na 64bitových počítačích jsou k dispozici 64bitové i 32bitové verze nástrojů. Použití nástroje příkazového řádku profileru, musíte přidat cestu k nástrojům do proměnné prostředí PATH v okně příkazového řádku nebo ho přidejte do příkazu samého.
 
 Ke shromažďování dat výkonu z [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, můžete upravit *web.config* soubor cílové aplikace umožňující [VSInstr.exe](../profiling/vsinstr.md) nástroj instrumentace dynamicky kompilované soubory aplikace. Pak použijete [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) nástroje nastavit příslušné proměnné prostředí na webový server a povolit profilaci a pak restartujte počítač.
 
@@ -29,11 +29,11 @@ Spusťte profiler a pak spusťte cílovou aplikaci. Zatímco je profiler připoj
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>Konfigurace webové aplikace ASP.NET a webového serveru
 
-1. Upravit *web.config* soubor cílové aplikace. Zobrazit [postupy: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Upravit *web.config* soubor cílové aplikace. Zobrazit [jak: Úprava souborů web.config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
 2. Otevřete okno příkazového řádku.
 
-3. Inicializujte proměnné prostředí profilování. Typ:
+3. Inicializujte proměnné prostředí profilování. Zadejte:
 
      **Vsperfclrenv – /globaltraceon**
 
@@ -45,7 +45,7 @@ Spusťte profiler a pak spusťte cílovou aplikaci. Zatímco je profiler připoj
 
 1. Otevřete okno příkazového řádku.
 
-2. Spusťte profiler. Typ:
+2. Spusťte profiler. Zadejte:
 
      **Nástroj VSPerfCmd**[/start](../profiling/start.md) **: trasování**[/output](../profiling/output.md) **:** `OutputFile` [`Options`]    
 
@@ -91,7 +91,7 @@ Chcete-li ukončit relaci profilování, zavřete cíl [!INCLUDE[vstecasp](../co
 
 1. Zavřít [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci.
 
-2. Zavřít [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces resetováním Internetové informační služby (IIS). Typ:
+2. Zavřít [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces resetováním Internetové informační služby (IIS). Zadejte:
 
      **Příkaz IISReset/stop**
 
@@ -99,7 +99,7 @@ Chcete-li ukončit relaci profilování, zavřete cíl [!INCLUDE[vstecasp](../co
 
      **Nástroj VSPerfCmd** [ /Shutdown](../profiling/shutdown.md)
 
-4. Restartujte službu IIS. Typ:
+4. Restartujte službu IIS. Zadejte:
 
      **Příkaz IISReset/Start**
 
@@ -109,7 +109,7 @@ Po dokončení veškerého profilování nahradit *web.config* souboru, vyčist�
 
 1. Nahradit *web.config* souboru kopií původního souboru.
 
-2. Vyčistěte proměnné prostředí profilování. Typ:
+2. Vyčistěte proměnné prostředí profilování. Zadejte:
 
      **Nástroj VSPerfCmd /globaloff**
 

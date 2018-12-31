@@ -2,9 +2,8 @@
 title: TemplateData – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateData
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 064e65f56bd89b6ba73d9e65ff1e6fd5e16ee2b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b5ae3111691658f9748ba8677ea67ca6e216714
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843246"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561837"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData – element (šablony sady Visual Studio)
 Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přidat novou položku** dialogové okno.  
@@ -50,7 +49,7 @@ Rozděluje šablonu a definuje, jak se zobrazuje **nový projekt** nebo **přida
   
 | Prvek | Popis |
 | - | - |
-| [Jméno](../extensibility/name-element-visual-studio-templates.md) | Požadovaný element.<br /><br /> Určuje název šablony, protože se zobrazí buď **nový projekt** nebo **přidat novou položku** dialogové okno. |
+| [Název](../extensibility/name-element-visual-studio-templates.md) | Požadovaný element.<br /><br /> Určuje název šablony, protože se zobrazí buď **nový projekt** nebo **přidat novou položku** dialogové okno. |
 | [Popis](../extensibility/description-element-visual-studio-templates.md) | Požadovaný element.<br /><br /> Určuje popis šablony, protože se zobrazí buď **nový projekt** nebo **přidat novou položku** dialogové okno. |
 | [Ikona](../extensibility/icon-element-visual-studio-templates.md) | Požadovaný element.<br /><br /> Určuje cestu a název souboru, který slouží jako ikona, která se zobrazí v jednom souboru obrázku **nový projekt** nebo **přidat novou položku** dialogovém okně pro šablonu. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Požadovaný element.<br /><br /> Rozděluje šablonu projektu tak, aby se objevila pod zadané skupiny v rámci **nový projekt** dialogové okno. |
