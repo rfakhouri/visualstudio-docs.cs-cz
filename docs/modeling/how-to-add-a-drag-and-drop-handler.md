@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání obslužné rutiny operace přetažení myší'
+title: 'Postupy: Přidání obslužné rutiny operace podporující přetahování'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876390"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace přetažení myší
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Postupy: Přidání obslužné rutiny operace podporující přetahování
 
 Přidáte obslužné rutiny pro přetažení myší události do vašeho DSL tak, aby uživatelé můžete přetáhnout položky do diagramu z jiných diagramů nebo z jiných částí sady Visual Studio. Můžete také přidat obslužné rutiny pro události, jako poklikáním. Společně se nazývají přetahování myší a dvakrát klikněte na obslužné rutiny *obslužné rutiny gesta*.
 
@@ -70,7 +69,7 @@ V novém souboru definujte částečnou třídu pro obrazec ani diagram třídy,
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – Tato metoda je volána, když uživatel pokliká na tvar nebo diagram.
 
-     Další informace najdete v tématu [postupy: zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Další informace najdete v tématu [jak: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Definování `IsAcceptableDropItem(e)` k určení, zda je přijatelné přetaženou položku a ProcessDragDropItem(e) aktualizovat váš model, když položka byla vynechána. Tyto metody musí nejprve extrahovat položky z argumentů událostí. Informace o tom, jak to udělat, najdete v části [jak získat odkaz na přetaženou položku](#extracting).
 
@@ -164,7 +163,7 @@ Pokud přetaženou položku je prvek DSL, můžete otevřít zdrojový model a p
 
     1.  Stáhněte a nainstalujte rozšíření sběrnice modelu Visual Studio, pokud ještě není nainstalovaná. Další informace najdete v tématu [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2.  Otevřete soubor definice DSL zdroje DSL v návrháře DSL. Klikněte pravým tlačítkem na návrhové ploše a potom klikněte na tlačítko **povolit Modelbus**. V dialogovém okně zvolte jednu nebo obě možnosti.  Klikněte na tlačítko **OK**. Nový projekt "ModelBus" je přidán do řešení DSL.
+    2.  Otevřete soubor definice DSL zdroje DSL v návrháře DSL. Klikněte pravým tlačítkem na návrhové ploše a potom klikněte na tlačítko **povolit Modelbus**. V dialogovém okně zvolte jednu nebo obě možnosti.  Klikněte na **OK**. Nový projekt "ModelBus" je přidán do řešení DSL.
 
     3.  Klikněte na tlačítko **Transformovat všechny šablony** a znovu sestavte řešení.
 

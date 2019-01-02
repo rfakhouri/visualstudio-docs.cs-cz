@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875268"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu pomocí graf aktivity virtuálního uživatele
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Postupy: Analýza, co dělají virtuálních uživatelů během zátěžového testu pomocí graf aktivity virtuálního uživatele
 
 Zobrazit aktivity virtuálního uživatele, který je spojen se zátěžovým testem pomocí **graf aktivity virtuálního uživatele**. Každý řádek v tabulce představuje jednotlivého virtuálního uživatele. **Graf aktivity virtuálního uživatele** zobrazuje přesně co jednotlivé virtuální uživatele se provádí během testu. Můžete vidět vzory aktivity uživatelů, vzory zátěže, korelovat Nezdařená nebo pomalá testy a zobrazují požadavky pomocí další aktivity virtuálního uživatele. **Graf aktivity virtuálního uživatele** je k dispozici pouze po dokončení zátěžového testu.
 
@@ -108,4 +107,4 @@ Následující postupy ukazují, jak zobrazit **graf aktivity virtuálního uži
 ## <a name="see-also"></a>Viz také:
 
 - [Analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Návod: Izolace potíží s pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

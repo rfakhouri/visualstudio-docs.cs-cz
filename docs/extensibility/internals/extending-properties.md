@@ -1,9 +1,6 @@
 ---
 title: Rozšíření vlastností | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846582"
 ---
 # <a name="extend-properties"></a>Rozšíření vlastností
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Vlastnosti** okno je univerzální vlastnost prohlížeče pro komponenty COM a modelu COM + a podporuje všechny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produktů. **Vlastnosti** okno funguje s `ITypeInfo` zadejte informace a metadata COM +. Chcete-li vypsat vlastnosti doby návrhu pro aktuálně vybraného objektu v druhém okně v integrovaném vývojovém prostředí (IDE).  

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Flask v rámci projektů sady Visual Studio, včetně požadavků, Git a virtuální prostředí.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0603c1b8dcabc37631c7a52e11cfa964331010d8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6bbabb2669d968bf61ca2d1fd848187119a1469f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841301"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Kurz: Začínáme s architektury Flask webů v sadě Visual Studio
 
@@ -50,7 +49,7 @@ V průběhu těchto kroků vytvořte jedno řešení sady Visual Studio, který 
 
 Vývoj v jazyce Python se nepodporuje v současné době v sadě Visual Studio pro Mac. Na Mac a Linux, použijte [rozšíření Pythonu ve Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: vytvoření projektu sady Visual Studio a řešení
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: Vytvoření projektu sady Visual Studio a řešení
 
 1. V sadě Visual Studio, vyberte **souboru** > **nový** > **projektu**, vyhledejte "Flask" a vyberte **prázdný webový projekt Flask**  šablony. (Šablona také najdete v části **Python** > **webové** v seznamu vlevo.)
 
@@ -61,8 +60,8 @@ Vývoj v jazyce Python se nepodporuje v současné době v sadě Visual Studio p
     - **Název**: nastavení názvu projektu Visual Studia pro **BasicProject**. Tento název se také používá pro projekt Flask.
     - **Umístění**: určení umístění, ve kterém chcete vytvořit řešení sady Visual Studio a projekt.
     - **Název řešení**: nastavte na **LearningFlask**, která je vhodná pro řešení jako kontejner pro více projektů v tomto kurzu.
-    - **Vytvořit adresář pro řešení**: ponechejte nastavenou (výchozí).
-    - **Vytvoření nového úložiště Git**: tuto možnost použijte (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio 2017 a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
+    - **Vytvořit adresář pro řešení**: Ponechte nastavení (výchozí).
+    - **Vytvoření nového úložiště Git**: Tuto možnost (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio 2017 a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
 
 1. Za okamžik, Visual Studio zobrazí dialogové okno o tom, že **tento projekt vyžaduje externí balíčky** (viz dole). Tento dialog se zobrazuje, protože obsahuje šablony *souboru requirements.txt* souboru odkazující na nejnovější balíček 1.x Flask. (Vyberte **zobrazit požadované balíčky** zobrazíte přesné závislosti.)
 
@@ -70,7 +69,7 @@ Vývoj v jazyce Python se nepodporuje v současné době v sadě Visual Studio p
 
 1. Vyberte možnost **nainstaluji je sám**. Můžete vytvořit virtuální prostředí krátce a ujistěte se, že je vyloučena ze správy zdrojového kódu. (Prostředí vždy možné vytvářet z *souboru requirements.txt*.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1 – 2: Zkontrolujte ovládací prvky Git a publikujte do vzdáleného úložiště
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1 – 2: Prozkoumejte ovládací prvky Git a publikujte do vzdáleného úložiště
 
 Protože jste vybrali **vytvořit nové úložiště Git** v **nový projekt** dialogového okna, projekt již byla potvrzena do místní správy zdrojového kódu ihned poté, co byl dokončen proces vytváření. V tomto kroku měli seznámit s ovládacími prvky Git sady Visual Studio a **Team Exploreru** okno, ve kterém pracujete se správou zdrojového kódu.
 
@@ -106,15 +105,15 @@ Protože jste vybrali **vytvořit nové úložiště Git** v **nový projekt** d
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Otázka: Jaké jsou některé výhody použití správy zdrojového kódu od začátku projektu?
 
-Odpověď: Za prvé, od samého začátku pomocí správy zdrojového kódu, zejména pokud používáte vzdálené úložiště, poskytuje zálohování mimo pracoviště regulární vašeho projektu. Na rozdíl od jenom na údržbu projektu místního systému souborů, správy zdrojového kódu také poskytuje kompletní změnu historie a snadno možnost obnovit jeden soubor nebo celého projektu do předchozího stavu. Který historii změn pomáhá určit, proč regrese (neúspěšné testy). Kromě toho je nezbytné, najde víc lidí práci na projektu, jak spravuje přepíše a poskytuje řešení konfliktů správy zdrojového kódu. A konečně správy zdrojového kódu, který je v podstatě formu automatizace, nastaví je dobře pro automatizaci sestavení, testování a produktu release management. Ve skutečnosti je prvním krokem při používání DevOps pro projekt, a protože překážky položky jsou tak nízké, ve skutečnosti neexistuje žádný důvod není použití správy zdrojového kódu od začátku.
+Odpověď: Za prvé od samého začátku pomocí správy zdrojového kódu, zejména pokud používáte vzdálené úložiště, poskytuje zálohování mimo pracoviště regulární vašeho projektu. Na rozdíl od jenom na údržbu projektu místního systému souborů, správy zdrojového kódu také poskytuje kompletní změnu historie a snadno možnost obnovit jeden soubor nebo celého projektu do předchozího stavu. Který historii změn pomáhá určit, proč regrese (neúspěšné testy). Kromě toho je nezbytné, najde víc lidí práci na projektu, jak spravuje přepíše a poskytuje řešení konfliktů správy zdrojového kódu. A konečně správy zdrojového kódu, který je v podstatě formu automatizace, nastaví je dobře pro automatizaci sestavení, testování a produktu release management. Ve skutečnosti je prvním krokem při používání DevOps pro projekt, a protože překážky položky jsou tak nízké, ve skutečnosti neexistuje žádný důvod není použití správy zdrojového kódu od začátku.
 
-Další informace o správy zdrojového kódu jako automatizaci, naleznete v tématu [zdroj pravdy: z úložišť Role v DevOps](https://msdn.microsoft.com/magazine/mt763232), článek v MSDN Magazine napsané pro mobilní aplikace, které platí také pro webové aplikace.
+Další informace o správy zdrojového kódu jako automatizaci, naleznete v tématu [zdroje informací: Role úložišť v DevOps](https://msdn.microsoft.com/magazine/mt763232), článek v MSDN Magazine napsané pro mobilní aplikace, které platí také pro webové aplikace.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Otázka: Můžu zabránit v sadě Visual Studio automaticky potvrzení nového projektu?
 
 Odpověď: Ano. Chcete-li zakázat režim automatického potvrzení, přejděte na **nastavení** stránku **Průzkumník týmových projektů**vyberte **Git** > **globální nastavení**, zrušte zaškrtnutí políčka možnost s názvem **potvrzení změn po sloučení standardně**a pak vyberte **aktualizace**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1 – 3: vytvoření virtuálního prostředí a vyloučit ze správy zdrojového kódu
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1 – 3: Vytvořte virtuální prostředí a vyloučit ze správy zdrojového kódu
 
 Teď, když nakonfigurujete pro svůj projekt správy zdrojového kódu, můžete vytvořit virtuální prostředí potřebné balíčky Flask, které projekt vyžaduje. Pak můžete použít **Team Exploreru** vyloučit složku prostředí ze správy zdrojového kódu.
 
@@ -142,17 +141,17 @@ Teď, když nakonfigurujete pro svůj projekt správy zdrojového kódu, můžet
 
 1. Zadejte zprávu potvrzení a vyberte **Potvrdit vše** tlačítko a potom nasdílejte potvrzení změn do vzdáleného úložiště, pokud chcete, můžete.
 
-### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Otázka: Proč mám chcete vytvořit virtuální prostředí?
+### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Otázka: Proč je vhodné vytvořit virtuální prostředí
 
 Odpověď: Virtuální prostředí je skvělý způsob, jak izolovat přesné závislostí aplikace. Tato izolace zabrání konfliktům v rámci globálního prostředí Pythonu a pomáhá testování a spolupráci. V průběhu času při vývoji aplikace, je vždy přenést v mnoha užitečné balíčky Pythonu. Udržováním balíčků ve virtuálním prostředí specifické pro projekt, můžete snadno aktualizovat projektu *souboru requirements.txt* soubor, který popisuje prostředí, který je zahrnut ve správě zdrojového kódu. Když projekt je zkopírován do jakékoli jiné počítače, včetně serverů sestavení, nasazení serverů a jiných vývojových počítačích je snadné vytvořit znovu prostředí pouze pomocí *souboru requirements.txt* (což je důvod, proč prostředí nemusí být ve správě zdrojového kódu). Další informace najdete v tématu [použít virtuální prostředí](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Otázka: Jak odebrat virtuální prostředí, které už je potvrzená do správy zdrojových kódů?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Otázka: Jak odstranit virtuální prostředí, které už je potvrzená do správy zdrojových kódů?
 
-Odpověď: Především upravte vaše *.gitignore* souborů k vyloučení složky: najít oddíl obsahující komentáře `# Python Tools for Visual Studio (PTVS)` a přidejte nový řádek ke složce virtuálního prostředí, jako `/BasicProject/env`. (Vzhledem k tomu, že sada Visual Studio nezobrazuje souboru v **Průzkumníka řešení**, otevřete ho pomocí přímo **souboru** > **otevřete**  >   **Soubor** příkazu nabídky. Můžete také otevřít soubor z **Team Exploreru**: na **nastavení** stránce **nastavení úložiště**, přejděte na stránku **ignorovat soubory atributůanástroje** a potom vyberte **upravit** odkaz **.gitignore**.)
+Odpověď: Především upravte vaše *.gitignore* souborů k vyloučení složky: najít oddíl obsahující komentáře `# Python Tools for Visual Studio (PTVS)` a přidejte nový řádek pro složky virtuální prostředí, například `/BasicProject/env`. (Vzhledem k tomu, že sada Visual Studio nezobrazuje souboru v **Průzkumníka řešení**, otevřete ho pomocí přímo **souboru** > **otevřete**  >   **Soubor** příkazu nabídky. Můžete také otevřít soubor z **Team Exploreru**: na **nastavení** stránce **nastavení úložiště**, přejděte na stránku **ignorovat soubory atributůanástroje** a potom vyberte **upravit** odkaz **.gitignore**.)
 
 Za druhé, otevřete okno příkazového řádku, přejděte do složky, jako je *BasicProject* , která obsahuje složky virtuální prostředí jako *env*a spusťte `git rm -r env`. Tyto změny potvrdit z příkazového řádku (`git commit -m 'Remove venv'`), případně z **změny** stránce **Team Exploreru**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1 – 4: prozkoumání často používaný kód
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1 – 4: Prozkoumejte často používaný kód
 
 1. Po vytvoření projektu dokončí, najdete v článku řešení a projekt **Průzkumníka řešení**, pokud projekt obsahuje pouze dva soubory *app.py* a *souboru requirements.txt*:
 
@@ -196,7 +195,7 @@ Za druhé, otevřete okno příkazového řádku, přejděte do složky, jako je
 
 Odpověď: Argument je název modulu nebo balíček aplikace a zjistí Flask, kde má hledat šablony, statické soubory a další prostředky, které patří k aplikaci. Pro aplikace, které jsou obsaženy v jednom modulu `__name__` je vždy správnou hodnotu. Je také důležité pro rozšíření, která vyžadují informace o ladění. Další informace, a další argumenty, najdete v článku [dokumentace třídy Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
 
-### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Otázka: Je funkce mít více než jeden dekoratér trasy?
+### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Otázka: Funkce může mít více než jeden dekoratér trasy?
 
 Odpověď: Ano, můžete použít tolik dekoratéry, pokud má stejnou funkci slouží několik tras. Chcete-li například použít `hello` funkce pro obě "/" a "/ hello", použijte následující kód:
 
@@ -210,9 +209,9 @@ def hello():
 
 <a name="qa-url-variables"></a>
 
-### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Otázka: Jak Flask funguje s proměnnou cesty adresy URL a parametry dotazu?
+### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Otázka: Jak funguje Flask pomocí proměnné cesty adresy URL a parametry dotazu?
 
-Odpověď: V trase, můžete označit všechny proměnné s `<variable_name>`, a Flask předá proměnná do funkce pomocí pojmenovaného argumentu. Proměnná může být část cesty adresy URL nebo v parametru dotazu. Například trasy ve formě `'/hello/<name>` generuje řetězcový argument volá `name` funkce a pomocí `?message=<msg>` v trase analyzuje zadaná hodnota pro "zpráva =" parametr dotazu a předává je do funkce v podobě `msg`:
+Odpověď: V trase, označit všechny proměnné s `<variable_name>`, a Flask předá proměnná do funkce pomocí pojmenovaného argumentu. Proměnná může být část cesty adresy URL nebo v parametru dotazu. Například trasy ve formě `'/hello/<name>` generuje řetězcový argument volá `name` funkce a pomocí `?message=<msg>` v trase analyzuje zadaná hodnota pro "zpráva =" parametr dotazu a předává je do funkce v podobě `msg`:
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -228,7 +227,7 @@ Parametry dotazu jsou také k dispozici prostřednictvím `request.args` vlastno
 
 Odpověď: Ano. Rozbalte **prostředí Pythonu** uzel, klikněte pravým tlačítkem na virtuální prostředí a vyberte **generovat soubor requirements.txt** příkazu. Dobré jeho použití tohoto příkazu pravidelně jako můžete upravit prostředí a potvrzení se změní na *souboru requirements.txt* do správy zdrojového kódu společně s další změny kódu, které jsou závislé na příslušné prostředí. Pokud nastavení nepřetržité integrace na serveru sestavení byste měli vždy, když změníte prostředí generovat soubor a změn.
 
-## <a name="step-1-5-run-the-project"></a>Krok 1 – 5: spuštění projektu
+## <a name="step-1-5-run-the-project"></a>Krok 1 – 5: Spusťte projekt
 
 1. V sadě Visual Studio, vyberte **ladění** > **spustit ladění** (**F5**) nebo použít **Webový Server** tlačítko na panelu nástrojů () prohlížeče, který se může lišit):
 
@@ -244,7 +243,7 @@ Odpověď: Ano. Rozbalte **prostředí Pythonu** uzel, klikněte pravým tlačí
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Otázka: Jaký je rozdíl mezi použitím nástrojů ladění příkazů nabídky a příkazy serveru v podnabídce projektu Pythonu?
 
-Odpověď: navíc k **ladění** příkazů nabídky a tlačítka panelu nástrojů můžete spustit na serveru pomocí **Python** > **spuštění serveru** nebo **Python** > **server pro spuštění ladění** příkazy v místní nabídce projektu. Oba příkazy otevřete okno konzoly, ve kterém se zobrazí místní adresa URL (localhost:port) pro spuštěný server. Nicméně je nutné ručně otevřít prohlížeč s touto adresou URL a serverem ladění nespustí automaticky ladicího programu sady Visual Studio. Můžete připojit ladicí program ke spuštěnému procesu později, pokud chcete, pomocí **ladění** > **připojit k procesu** příkazu.
+Odpověď: Kromě **ladění** příkazů nabídky a tlačítka panelu nástrojů můžete spustit na serveru pomocí **Python** > **spuštění serveru** nebo  **Python** > **server pro spuštění ladění** příkazy v místní nabídce projektu. Oba příkazy otevřete okno konzoly, ve kterém se zobrazí místní adresa URL (localhost:port) pro spuštěný server. Nicméně je nutné ručně otevřít prohlížeč s touto adresou URL a serverem ladění nespustí automaticky ladicího programu sady Visual Studio. Můžete připojit ladicí program ke spuštěnému procesu později, pokud chcete, pomocí **ladění** > **připojit k procesu** příkazu.
 
 ## <a name="next-steps"></a>Další kroky
 

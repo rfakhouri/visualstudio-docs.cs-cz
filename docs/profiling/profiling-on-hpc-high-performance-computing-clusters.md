@@ -1,8 +1,6 @@
 ---
 title: Profilace v prostředí HPC (High Performance Computing) clusterů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff46104493cfe0c690594d8b67bb64c401104f5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856654"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Clustery profilu v prostředí HPC (vysokovýkonné výpočetní prostředí)
 
@@ -56,7 +54,7 @@ Chcete-li Profilovat na výpočetním uzlu HPC, postupujte takto:
 |------------------| - |
 | *% Hlavního uzlu* | Název hlavního uzlu clusteru. |
 | *%FxPath%* | Cesta k [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalační služby. Na instalačním médiu nástroje Visual Studio je cesta: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na instalačním médiu nástroje Visual Studio je cesta: samostatná Profiler\x64\vs_profiler.exe |
+| *%ProfilerPath%* | Cesta k verzi samostatného instalačního programu nástrojů pro profilaci sady. Na instalačním médiu nástroje Visual Studio je cesta: Samostatné Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Provádějte profilaci na výpočetním uzlu HPC
 
@@ -72,7 +70,7 @@ Konfigurace relace profilování pomocí Průvodce výkonem HPC můžete určit 
 
    - Chcete-li Profilovat binární soubor, který není v otevřeném projektu vyberte **spustitelný soubor (. Soubor EXE)** možnost.
 
-4. Klikněte na tlačítko **Další**.
+4. Klikněte na **Další**.
 
 5. Na třetí stránce průvodce:
 
@@ -84,7 +82,7 @@ Konfigurace relace profilování pomocí Průvodce výkonem HPC můžete určit 
 
     - V **umístění nasazení**, zadejte cestu k adresáři, který používá HPC server do fáze imagí pro nasazení.
 
-6. Klikněte na tlačítko **Další**.
+6. Klikněte na **Další**.
 
 7. Na čtvrté stránce průvodce:
 
@@ -98,7 +96,7 @@ Konfigurace relace profilování pomocí Průvodce výkonem HPC můžete určit 
 
          Chcete-li Profilovat proces nebo procesy, které běží na konkrétním uzlu v clusteru HPC, vyberte **profilu na uzlu** možnosti a pak vyberte uzel z rozevíracího seznamu.
 
-8. Klikněte na tlačítko **Další**.
+8. Klikněte na **Další**.
 
 9. Na páté stránce průvodce můžete k okamžitému spuštění profileru a profilování procesu nebo spuštění profilování později pomocí prohlížeče výkonu.
 
@@ -150,4 +148,3 @@ Můžete změnit vlastnosti relace výkonu, které jste nastavili v prostředí 
 | **Předem profilu argumenty skriptu** | Určuje argumenty předané skriptu předběžné profilu. |
 | **Skript po profilu** | Určuje cestu a název souboru skriptu ke spuštění v místním vývojovém počítači po ukončení relace profilování. |
 | **Argumenty skriptu po profilu** | Určuje argumenty předané skriptu po profilu. |
-

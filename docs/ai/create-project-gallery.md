@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf719b100aa7c216de2903c05a24a3abcca244
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873507"
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Vytvoření projektu aplikace AI z Galerie Azure Machine Learning v sadě Visual Studio
 
@@ -44,11 +43,11 @@ Jakmile [nainstalované Visual Studio Tools pro AI](installation.md), je snadné
 
    - **Skupina prostředků**: Skupina prostředků Azure, kam se budou ukládat vaše metadata
    - **Účet**: Azure Machine Learning experimentálního účtu
-   - **Pracovní prostor**: pracovního prostoru Azure Machine Learning
-   - **Typ projektu**: rozhraní machine learning. V tomto případě zvolte **TensorFlow**
+   - **Pracovní prostor**: Pracovní prostor Azure Machine Learning
+   - **Typ projektu**: Rozhraní machine learning. V tomto případě zvolte **TensorFlow**
    - **Přidat do řešení**: Určuje, jestli se má přidat do aktuálního řešení Visual Studio nebo použít příkaz pro vytvoření a otevření nového řešení
-   - **Cesta k projektu**: umístění pro uložení kódu
-   - **Název projektu**: typ **TensorFlowMNIST**
+   - **Cesta k projektu**: Umístění pro uložení kódu
+   - **Název projektu**: Typ **TensorFlowMNIST**
 
    ![Výsledný projekt při použití šablony aplikace v Pythonu](media/create-project-gallery/new-AzureSampleProject.png)
 

@@ -1,9 +1,6 @@
 ---
 title: Data dokumentu a dokument zobrazit ve vlastních editorech | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818872"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Data dokumentu a zobrazení dokumentu ve vlastních editorech
 Vlastní editor se skládá ze dvou částí: datový objekt dokumentu a objekt zobrazení dokumentu. Jak naznačují názvy, představuje datový objekt dokumentu textových dat, který se má zobrazit. Podobně objekt zobrazení dokumentů (nebo "Zobrazit") představuje jedno nebo více oken, ve kterém chcete zobrazit datový objekt dokumentu.  
@@ -42,7 +39,7 @@ Vlastní editor se skládá ze dvou částí: datový objekt dokumentu a objekt 
 ## <a name="see-also"></a>Viz také:  
  [Podpora více zobrazení dokumentů](../extensibility/supporting-multiple-document-views.md)   
  [Zjednodušená vkládání](../extensibility/simplified-embedding.md)   
- [Postupy: připojení zobrazení k datům dokumentu](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Postupy: Připojení zobrazení k datům dokumentu](../extensibility/how-to-attach-views-to-document-data.md)   
  [Správa vlastník zámku dokumentu](../extensibility/document-lock-holder-management.md)   
  [Zobrazení jedné a více karet](../extensibility/single-and-multi-tab-views.md)   
  [Uložení standardního dokumentu](../extensibility/internals/saving-a-standard-document.md)   

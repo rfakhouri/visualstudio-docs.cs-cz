@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření stránky aplikace služby SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření stránky aplikace služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867836"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>Návod: Vytvoření stránky aplikace služby SharePoint
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>Průvodce: Vytvoření stránky aplikace služby SharePoint
  
 Stránka aplikace je specializovaná forma stránky technologie ASP.NET. Stránky aplikace obsahují obsah, který je sloučen s hlavní stránkou služby SharePoint. Další informace najdete v tématu [vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
@@ -158,5 +153,5 @@ Vám může Další informace o navrhování obsahu stránky služby SharePoint 
 
 ## <a name="see-also"></a>Viz také:
 
-[Postupy: vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)  
+[Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)  
 [Typ stránky _layouts aplikace](http://go.microsoft.com/fwlink/?LinkID=169274)

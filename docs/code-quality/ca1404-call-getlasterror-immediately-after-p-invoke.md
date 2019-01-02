@@ -2,7 +2,6 @@
 title: 'CA1404: Volejte GetLastError ihned po volání nespravovaného kódu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e9a339a4b665f892c3e3e63c77ba0dee5891df8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5ae16f99aefe4411b345a1b135c7f014a1061911
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552039"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963107"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Volejte GetLastError ihned po volání nespravovaného kódu
 
@@ -67,10 +66,10 @@ Je provedeno volání <xref:System.Runtime.InteropServices.Marshal.GetLastWin32E
 ## <a name="related-rules"></a>Související pravidla
  [CA1060: Přesuňte volání nespravovaných kódů do třídy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
- [CA1400: Vstupní body volání nespravovaného kódu by měly existovat](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+ [CA1400: Vstupní body volání nespravovaného by měly existovat](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: Volání nespravovaných kódů by neměla být viditelná](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: VOLÁNÍ NESPRAVOVANÝCH KÓDŮ. Volání nespravovaných kódů by neměly být viditelné](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Určete zařazování pro argumenty řetězce volání nespravovaného kódu](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Určete zařazování pro argumenty řetězce volání nespravovaného](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
  [CA2205: Použijte spravované ekvivalenty rozhraní Win32 API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Publikování rozšíření sady Visual Studio | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Publikování rozšíření sady Visual Studio | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852450"
 ---
-# <a name="walkthrough-publish-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>Průvodce: Publikování rozšíření sady Visual Studio
 
 Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio pro Visual Studio Marketplace. Když přidáte rozšíření na webu Marketplace, vývojáři mohou použít **rozšíření a aktualizace** a vyhledejte nové a aktualizované rozšíření.
 
@@ -71,9 +68,9 @@ Tento článek používá výchozí rozšíření VSPackage, ale postup je platn
 
 6. Vyberte vydavatele, který chcete použít k nahrání rozšíření. Vydavatelé můžete změnit po kliknutí na názvy vydavatelů, které jsou uvedené na levé straně. Klikněte na **nové rozšíření** a vyberte **sady Visual Studio**.
 
-7. V **1: nahrát rozšíření**, můžete k nahrání souboru VSIX přímo do Visual Studio Marketplace nebo jednoduše přidejte odkaz na vlastní web. V tomto příkladu, rozšíření, *TestPublish.vsix* nahraje. Přetáhněte rozšíření nebo použít **klikněte na tlačítko** odkaz k vyhledání souboru. Najdete rozšíření ve složce \bin\Release projektu.  Klikněte na tlačítko **pokračovat**.
+7. V **1: Nahrát rozšíření**, můžete k nahrání souboru VSIX přímo do Visual Studio Marketplace nebo jednoduše přidejte odkaz na vlastní web. V tomto příkladu, rozšíření, *TestPublish.vsix* nahraje. Přetáhněte rozšíření nebo použít **klikněte na tlačítko** odkaz k vyhledání souboru. Najdete rozšíření ve složce \bin\Release projektu.  Klikněte na **Pokračovat**.
 
-8. V **2: zadání podrobností o rozšíření**, některá pole se vyplní automaticky z *source.extension.vsixmanifest* souboru z rozšíření. Najdete další podrobnosti o každé níže:
+8. V **2: Zadejte podrobnosti o rozšíření**, některá pole se vyplní automaticky z *source.extension.vsixmanifest* souboru z rozšíření. Najdete další podrobnosti o každé níže:
 
     * **Interní název** se používá v adrese URL stránky podrobností rozšíření. Příklad, výsledkem publikování rozšíření v části název vydavatele "Jmeno" a zadejte interní název být "rozšíření" URL "marketplace.visualstudio\.com/items?itemName=myname.myextension" podrobnosti tohoto rozšíření stránka.
     
@@ -123,13 +120,13 @@ Web Marketplace podporuje uděluje uživatelům oprávnění pro přístup a spr
 
 3. Potom můžete zadat e-mailovou adresu uživatele, který chcete přidat a udělit správnou úroveň přístupu v rámci **vybrat roli**.  Můžete použít jednu z následujících možností:
 
-   * **Tvůrce**: uživatel mohl publikování rozšíření, ale nelze zobrazit nebo spravovat rozšíření publikovaných jinými uživateli.
+   * **Tvůrce**: Uživatel můžete publikovat rozšíření, ale nelze zobrazit nebo spravovat rozšíření publikovaných jinými uživateli.
   
-   * **Čtečka**: uživatel mohl zobrazit rozšíření, ale nelze publikovat nebo spravovat rozšíření.
+   * **Čtečka**: Uživatel může zobrazit rozšíření, ale nelze publikovat nebo spravovat rozšíření.
   
-   * **Přispěvatel**: uživatel mohl publikovat a spravovat rozšíření, ale nelze upravit nastavení vydavatele nebo spravovat přístup.
+   * **Přispěvatel**: Uživatel mohl publikovat a spravovat rozšíření, ale nelze upravit nastavení vydavatele nebo spravovat přístup.
   
-   * **Vlastník**: uživatel můžete publikovat a spravovat rozšíření, upravit nastavení vydavatele a spravovat přístup.
+   * **Vlastník**: Uživatel můžete publikovat a spravovat rozšíření, upravit nastavení vydavatele a spravovat přístup.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Nainstalovat rozšíření z Visual Studio Marketplace
 
@@ -153,7 +150,7 @@ Rozšíření můžete odebrat z webu Visual Studio Marketplace a z vašeho poč
 
 2. V pravém dolním rohu klikněte na tlačítko **publikovat** rozšíření. Vyberte vydavatele, který jste použili k publikování **TestPublish**. Výpis **TestPublish** se zobrazí.
 
-3. Klikněte pravým tlačítkem na položku rozšíření a klikněte na tlačítko **odebrat**. Zobrazí se výzva k potvrzení, pokud chcete odebrat rozšíření. Klikněte na tlačítko **OK**.
+3. Klikněte pravým tlačítkem na položku rozšíření a klikněte na tlačítko **odebrat**. Zobrazí se výzva k potvrzení, pokud chcete odebrat rozšíření. Klikněte na **OK**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Odebrat rozšíření z počítače
 

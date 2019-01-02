@@ -2,7 +2,6 @@
 title: 'Postupy: Ruční spuštění analýzy kódu pro spravovaný kód'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
@@ -12,18 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2a9fa4af1737b59af67388ba12cf79eca0b7563
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5324ba78b5a571d6ffd7812a9d3dd766ad060db7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845295"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Postupy: Ruční spuštění analýzy kódu pro spravovaný kód
-Nástroj pro analýzu kódu vám poskytuje informace o možných defekty ve zdrojovém kódu. Analýza kódu můžete spustit automaticky s každou sestavení projektu kódu a analýza kódu můžete také spustit ručně. Pravidla, která se kontroluje při spuštění analýzy kódu nejsou zadány na stránce Analýza kódu stránky vlastností projektu. Další informace najdete v tématu [postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+Nástroj pro analýzu kódu vám poskytuje informace o možných chyb ve zdrojovém kódu. Můžete spustit analýzu kódu automaticky s každým sestavením projektu kódu a můžete také spustit analýzu kódu ručně. Pravidla, která jsou kontrolována při spuštění analýzy kódu jsou určeny na stránce analýzy kódu stránky vlastností projektu. Další informace najdete v tématu [jak: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 
-### <a name="to-run-code-analysis-manually"></a>Chcete-li ruční spuštění analýzy kódu
+### <a name="to-run-code-analysis-manually"></a>Pro ruční spuštění analýzy kódu
 
-1.  V **Průzkumníku**, klikněte na projekt.
+1.  V **Průzkumníka řešení**, klikněte na projekt.
 
-2.  Na **analyzovat** nabídky, klikněte na tlačítko **spuštění analýzy kódu na** *název projektu*.
+2.  Na **analyzovat** nabídky, klikněte na tlačítko **spustit analýzu kódu na** *název projektu*.

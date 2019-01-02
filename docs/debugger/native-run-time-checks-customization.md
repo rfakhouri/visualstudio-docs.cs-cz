@@ -1,8 +1,6 @@
 ---
 title: Nativní Run-Time kontroluje přizpůsobení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7530f875b3eb14766e32b1237871e6ec48d4bb85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836234"
 ---
 # <a name="native-run-time-checks-customization"></a>Přizpůsobení nativních kontrol za běhu
 Pokud kompilujete s **/RTC** (kontroly za běhu) nebo použít `runtime_checks` – Direktiva pragma, knihovny run-time jazyka C poskytuje nativní kontroly za běhu. V některých případech můžete chtít přizpůsobit kontrolu za běhu:  
@@ -42,7 +40,7 @@ Pokud kompilujete s **/RTC** (kontroly za běhu) nebo použít `runtime_checks` 
   
   Chcete-li přizpůsobit, kontrola chyb za běhu, můžete:  
   
-- Zápis chyb za běhu funkce vytváření sestav. Další informace najdete v tématu [postupy: zápis funkce generování sestav chyb za běhu](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Zápis chyb za běhu funkce vytváření sestav. Další informace najdete v tématu [jak: Zápis Run-Time chybách funkce](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
 - Upravte cíl chybové zprávy.  
   
@@ -57,6 +55,6 @@ Pokud kompilujete s **/RTC** (kontroly za běhu) nebo použít `runtime_checks` 
  `_RTC_NumErrors` Vrátí počet typů chyb zjištěných kontroly chyb za běhu. Získáte stručný popis jednotlivých chyb můžete opakování od 0 do návratová hodnota `_RTC_NumErrors`, předejte hodnotu iterace k `_RTC_GetErrDesc` na každou smyčku. Další informace najdete v tématu [_rtc_numerrors –](/cpp/c-runtime-library/reference/rtc-numerrors) a [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)   
+ [Postupy: Použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks –](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

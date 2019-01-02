@@ -3,7 +3,6 @@ title: Návrhář postupu provádění - ParallelForEach&lt;T&gt; návrháře ak
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e411f5e72566753d66ded4e445868e5ab245bf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873905"
 ---
 # <a name="parallelforeach-activity-designer"></a>Návrhář aktivity ParallelForEach
 
@@ -47,8 +46,8 @@ V následující tabulce jsou uvedeny nejužitečnější <xref:System.Activitie
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný Zobrazovaný název návrháře aktivit v záhlaví. Výchozí hodnota je **ParallelForEach\<Int32 >**. Hodnota může volitelně můžete upravit v **vlastnosti** mřížky nebo přímo v hlavičce návrháře aktivit.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Aktivity ke spuštění pro každou položku v kolekci. Chcete-li přidat <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> aktivity, rozevírací aktivitu z panelu nástrojů do **tělo** pole na **ParallelForEach\<T >** Návrhář aktivity s text nápovědy "Aktivity Sem přetáhněte".|
-|**TypeArgument**|Hodnota TRUE|Typ položky v <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekci specifikované souborem obecný parametr *T*. Ve výchozím nastavení **TypeArgument** je nastavena na **Int32**. Chcete-li změnit typ T v **ParallelForEach < T\>**  Návrhář aktivity, změňte hodnotu **TypeArgument** – pole se seznamem v mřížce vlastností.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Hodnota TRUE|Kolekce položek, které chcete iterovat. Chcete-li nastavit <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, zadejte výraz jazyka Visual Basic v **hodnoty** pole na **ForEach < T\>**  Návrhář aktivity do pole text nápovědy "Zadejte výraz jazyka" nebo  **Hodnoty** pole na **vlastnosti** okna.|
+|**TypeArgument**|Pravda|Typ položky v <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekci specifikované souborem obecný parametr *T*. Ve výchozím nastavení **TypeArgument** je nastavena na **Int32**. Chcete-li změnit typ T v **ParallelForEach < T\>**  Návrhář aktivity, změňte hodnotu **TypeArgument** – pole se seznamem v mřížce vlastností.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Pravda|Kolekce položek, které chcete iterovat. Chcete-li nastavit <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, zadejte výraz jazyka Visual Basic v **hodnoty** pole na **ForEach < T\>**  Návrhář aktivity do pole text nápovědy "Zadejte výraz jazyka" nebo  **Hodnoty** pole na **vlastnosti** okna.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Vyhodnocuje po každé iteraci dokončí. Pokud je vyhodnocen jako true, pak plánované čekající na zrušení iterací. Pokud není tato vlastnost nastavena, všechny plánované příkazy spustit až do dokončení.|
 
 Ve výchozím nastavení iterace smyčky je název položky. Můžete změnit název proměnné iterátoru v **ForEach** pole **ParallelForEach\<T >** návrháře aktivit. Iterace smyčky můžete použít ve výrazech v podřízených položek <xref:System.Activities.Statements.ParallelForEach%601> aktivity.

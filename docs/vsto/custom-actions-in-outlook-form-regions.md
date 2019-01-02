@@ -1,9 +1,6 @@
 ---
 title: Vlastní akce v oblastech formulářů aplikace Outlook
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869515"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Vlastní akce v oblastech formulářů aplikace Outlook
   Akce zobrazení tlačítek, které umožní uživatelům na položku Microsoft Office Outlook. Například reakce na položky pošty, uživatelé kliknou **odpověď**, **Odpovědět všem**, nebo **vpřed** akční tlačítka. Všechny tyto akce vytvoří novou položku e-mailu a vyplnit položky pole pomocí informací z původní položky.  
@@ -58,5 +55,3 @@ ms.locfileid: "53441657"
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

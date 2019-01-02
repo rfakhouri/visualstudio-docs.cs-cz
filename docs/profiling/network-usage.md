@@ -2,7 +2,6 @@
 title: Analýza využití sítě v aplikacích pro UWP
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 195353903ca9f9db8142a6909f3a2a6bab15b4aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822820"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UWP
 Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o síťových operacích pomocí provádí [Windows.Web.Http API](/uwp/api/windows.web.http). Analýza dat vám může pomoct vyřešit problémy, jako jsou problémy přístupu a ověřování, nesprávné použití mezipaměti a špatné zobrazení a stáhnout výkonu.  
@@ -75,6 +74,6 @@ Visual Studio **sítě** diagnostický nástroj, který shromažďuje data o sí
 ## <a name="see-also"></a>Viz také:  
  [Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio blog: Představení sady Visual Studio sítě inspektoru](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Video pro kanál 9: VS diagnostické nástroje - Profiler nové sítě](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Video pro kanál 9: Diagnostické nástroje VS - Profiler nové sítě](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

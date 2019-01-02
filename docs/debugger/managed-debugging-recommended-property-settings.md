@@ -2,7 +2,6 @@
 title: Doporučené nastavení vlastností pro ladicí program C#, VB | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b98fe00301ad9230cb4f560a0a1d9dc1d3922f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1acc20c8987b3a5fced5826c8a2bfc068ce18c01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064955"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887036"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Spravované ladění: doporučené nastavení vlastností
+# <a name="managed-debugging-recommended-property-settings"></a>Spravované ladění: Doporučené nastavení vlastností
 Určité vlastnosti měly být nastaveny stejným způsobem jako pro všechny spravované scénáře ladění.  
   
  Následující tabulky obsahují doporučené nastavení vlastností.  
@@ -36,9 +35,9 @@ Určité vlastnosti měly být nastaveny stejným způsobem jako pro všechny sp
   
 |**Název vlastnosti**|**Nastavení**|  
 |-----------------------|-----------------|  
-|**Definovat konstantu DEBUG**|C#a F#: zaškrtávací políčko zaškrtnuté. To umožňuje vaší aplikaci použít třídu ladění.|  
-|**Definovat konstantu TRACE**|C#a F#: zaškrtávací políčko zaškrtnuté. To umožňuje vaší aplikaci použít třídu trasování.|  
-|**Optimalizovat kód**|C#, F#a Visual Basic: nastavte na hodnotu false. Optimalizovaný kód je těžší ladit, protože generované pokyny neodpovídají přímo ke zdrojovému kódu. Pokud zjistíte, váš program obsahuje chybu, která se zobrazí pouze v optimalizovaném kódu, můžete zapnout toto nastavení, ale mějte na paměti, že kód zobrazený v **zpětný překlad** okna je generován z optimalizovaného zdrojového, který se nemusí shodovat, co se zobrazí v kódu Editor. Chcete-li ladit optimalizovaný kód, musíte vypnout volbu pouze vlastní kód. (Viz [omezení krokování na pouze můj kód](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Další informace najdete v tématu [nastavení projektu pro ladění konfigurace jazyka C#](../debugger/project-settings-for-csharp-debug-configurations.md) nebo [nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Definovat konstantu DEBUG**|C#a F#: Zaškrtávací políčko vráceny. To umožňuje vaší aplikaci použít třídu ladění.|  
+|**Definovat konstantu TRACE**|C#a F#: Zaškrtávací políčko vráceny. To umožňuje vaší aplikaci použít třídu trasování.|  
+|**Optimalizovat kód**|C#, F#and Visual Basic: Nastavte na hodnotu false. Optimalizovaný kód je těžší ladit, protože generované pokyny neodpovídají přímo ke zdrojovému kódu. Pokud zjistíte, váš program obsahuje chybu, která se zobrazí pouze v optimalizovaném kódu, můžete zapnout toto nastavení, ale mějte na paměti, že kód zobrazený v **zpětný překlad** okna je generován z optimalizovaného zdrojového, který se nemusí shodovat, co se zobrazí v kódu Editor. Chcete-li ladit optimalizovaný kód, musíte vypnout volbu pouze vlastní kód. (Viz [omezení krokování na pouze můj kód](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Další informace najdete v tématu [nastavení projektu pro ladění konfigurace jazyka C#](../debugger/project-settings-for-csharp-debug-configurations.md) nebo [nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
 |**Výstupní cesta**|Nastavte na bin\Debug\\.|  
 |**Možnosti rozšířené kompilace**|Pouze v jazyce Visual Basic. Klikněte na tlačítko **Upřesnit** nastavit rozšířené vlastnosti, které jsou popsány v následující tabulce.|  
   

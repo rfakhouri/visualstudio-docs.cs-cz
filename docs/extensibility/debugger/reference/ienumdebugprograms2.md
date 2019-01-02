@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugPrograms2 | Microsoft Docs
-ms.custom: ''
+title: IEnumDebugPrograms2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPrograms2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e95996a0548dcf81957dad60c3e6f73b3424c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0277c316329e0adb763eb614f6d453a531781c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877468"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
-Toto rozhraní zobrazí aplikace spuštěné v aktuální relaci ladění.  
+Toto rozhraní vytvoří výčet programy spuštěné v aktuální relaci ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,39 +29,39 @@ IEnumDebugPrograms2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní, které poskytují seznam programů programem DE.  
+ Ladicí stroj (DE) implementuje toto rozhraní uvést seznam programů, které jsou právě laděny ve DE.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Visual Studio volání [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) k získání tohoto rozhraní. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) nepoužívá Visual Studio.  
+ Visual Studio volání [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) získat toto rozhraní. [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md) se používá sada Visual Studio.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IEnumDebugPrograms2`.  
+ V následující tabulce jsou uvedeny metody objektu `IEnumDebugPrograms2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Načte zadaný počet programy v posloupnosti výčtu.|  
-|[Přeskočit](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Přeskočí zadaný počet programy v posloupnosti výčtu.|  
-|[Resetování](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[klonování](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
-|[GetCount –](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Získá počet programů v enumerátor.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Načte zadaný počet programy v sekvenci výčtu.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Vynechá zadaný počet programy v sekvenci výčtu.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Návrat na začátek sekvence výčtu.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Získá počet programů v enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
- Visual Studio použije tohoto rozhraní:  
+ Visual Studio používá toto rozhraní:  
   
--   Naplnění **moduly** okno (voláním [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) a pak volání [enummodules –](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) na každý program).  
+-   Naplnění **moduly** okno (voláním [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) a následným voláním [enummodules –](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) v každém programu).  
   
--   Naplnění **připojit k procesu** seznamu (voláním `IDebugProcess2::EnumPrograms` a pak volání [QueryInterface](/cpp/atl/queryinterface) na každém [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) rozhraní získat [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) rozhraní).  
+-   Naplnění **připojit k procesu** seznamu (voláním `IDebugProcess2::EnumPrograms` a následným voláním [QueryInterface](/cpp/atl/queryinterface) na každém [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) rozhraní získat [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) rozhraní).  
   
--   Vygenerovat seznam DEs, který můžete ladit každý program v procesu (pomocí [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
+-   Vygeneruje seznam DEs, který lze ladit každém programu v procesu (pomocí [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
   
--   Použití aktualizací upravit a pokračovat (ŠIF) pro každý program (voláním IDebugProcess2::EnumPrograms a pak volání [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).  
+-   Použití aktualizací upravit a pokračovat (ENC) pro každý program (voláním IDebugProcess2::EnumPrograms a následným voláním [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

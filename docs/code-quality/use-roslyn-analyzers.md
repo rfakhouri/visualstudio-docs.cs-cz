@@ -2,7 +2,6 @@
 title: Použití a konfiguraci analyzátory Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873220"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurovat a používat pravidla analyzátoru Roslyn
 
@@ -59,13 +58,13 @@ Můžete změnit aktivní sadu pravidel pro projekt na **analýzy kódu** karta 
 
 Můžete nakonfigurovat závažnost pravidla analyzátoru nebo *diagnostiky*, pokud jste [instalace analyzátorů](../code-quality/install-roslyn-analyzers.md) jako balíček NuGet. Následující tabulka uvádí možnosti závažnosti pro diagnostiku:
 
-|Závažnost|Chování sestavení|Chování editoru|
+|Severity|Chování sestavení|Chování editoru|
 |-|-|-|
 |Chyba|Narušení se zobrazují jako *chyby* v **seznam chyb** a do příkazového řádku výstup sestavení a sestavení selže.|Poškozený kód je podtržený s červenou vlnovkou a označené jako malé červeným rámečkem posuvníku.|
 |Upozornění|Narušení se zobrazují jako *upozornění* v **seznam chyb** do příkazového řádku výstup sestavení, ale nezpůsobí sestavení selhala.|Poškozený kód je podtržený s zelenou vlnovkou a označené pomocí malé zeleného pole do oblasti posuvníku.|
 |Informace o|Narušení se zobrazují jako *zprávy* v **seznam chyb**a vůbec ne ve výstupu sestavení z příkazového řádku.|Poškozený kód je podtržený s šedá vlnovkou a označené pomocí malé šedé pole do oblasti posuvníku.|
 |Hidden|Non viditelné pro uživatele.|Non viditelné pro uživatele. Diagnostiky se hlásí k modulu diagnostiky integrovaného vývojového prostředí, ale.|
-|Žádné|Zcela potlačit.|Zcela potlačit.|
+|Žádná|Zcela potlačit.|Zcela potlačit.|
 
 Kromě toho můžete "obnovit" závažnost pravidla nastavením na **výchozí**. Každý diagnostiky má výchozí závažnost, která si můžete prohlédnout ve **vlastnosti** okna.
 

@@ -1,9 +1,6 @@
 ---
-title: IDebugThread2 | Microsoft Docs
-ms.custom: ''
+title: IDebugThread2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93744e55a3e516a131e772fd2df09da5ec23168
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 834b2a85f62c8c533b57402dad55c92b3b0ad5dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855543"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
-Toto rozhraní představuje vlákna spuštěna v programu.  
+Toto rozhraní představuje vlákno spuštěné v programu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,43 +29,43 @@ IDebugThread2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní představují vlákno při provádění v jednom programu.  
+ Ladicí stroj (DE) implementuje toto rozhraní k reprezentaci vlákno provádění v jediném programu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Volání [getthread –](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) k získání tohoto rozhraní představující aktuálně aktivních vláken.  
+ Volání [getthread –](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md) získat toto rozhraní představující aktivní vlákno.  
   
- Toto rozhraní je také použité při vytváření požadavku zarážek (viz [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)).  
+ Toto rozhraní se také používá při vytvoření žádosti zarážky (viz [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)).  
   
- Při rozpoznávání zarážku hranice nebo chyba, vrátí toto rozhraní (viz [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)).  
+ Toto rozhraní je také vrácen při překladu mez nebo Chyba zarážky (viz [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)).  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugThread2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugThread2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Načte seznam rámce zásobníku pro tento přístup z více vláken.|  
-|[GetName –](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Získá název vlákno.|  
-|[Setthreadname –](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Nastaví název vlákno.|  
-|[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|Získá program, ve kterém je spuštěna vlákna.|  
-|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Určuje, zda lze nastavit další příkaz dané zásobníku rámec a kódu v kontextu.|  
-|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Nastaví další příkaz dané zásobníku rámec a kódu v kontextu.|  
-|[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Získá identifikátor systému přístup z více vláken.|  
-|[Pozastavit](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Pozastaví vlákna.|  
-|[Obnovení](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Obnoví vlákna.|  
-|[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Získá vlastnosti, které popisují vlákna.|  
-|[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Získá logickou vlákno přidružené k této fyzické přístup z více vláken.|  
+|[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Načte seznam rámce zásobníku pro toto vlákno.|  
+|[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Získá název vlákna.|  
+|[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Nastaví název vlákna.|  
+|[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|Získá program, ve kterém je spuštěn podproces.|  
+|[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Určuje, zda lze nastavit další příkaz ke kontextu daného zásobník snímků a kód.|  
+|[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Nastaví další příkaz na daném zásobníku rámce a kód kontextu.|  
+|[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Získá identifikátor systému.|  
+|[Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Pozastaví vlákno.|  
+|[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Obnoví vlákno.|  
+|[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Získá vlastnosti, které popisují vlákno.|  
+|[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Získá logické vlákno přidružené k této fyzické vlákno.|  
   
 ## <a name="remarks"></a>Poznámky  
- Protože jedním vláknem a fyzické můžete spustit v několika programy, více než jeden `IDebugThread2` z více než jeden program může představovat stejné fyzické vlákno.  
+ Vzhledem k tomu, že jedno fyzické vlákno lze spustit ve více programech, více než jedna `IDebugThread2` z více než jeden program může představovat stejné fyzické vlákno.  
   
- Když dojde k zarážek nebo výjimky, událost je odeslána voláním [událostí](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Jeden z argumentů pro tuto metodu je `IDebugThread2` rozhraní představující aktuální vlákno. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) slouží k získání [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) rozhraní pro aktuální rámec zásobníku.  
+ Pokud dojde k zarážky nebo výjimky, události odesílají volání [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Jeden z argumentů této metodě je `IDebugThread2` rozhraní představující aktuální vlákno. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) slouží k získání [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) rozhraní pro aktuální rámec zásobníku.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -1,8 +1,6 @@
 ---
 title: Ladění JavaScriptu pomocí konzoly | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840379"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Ladění JavaScriptu pomocí konzoly v sadě Visual Studio
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861823"
 > [!TIP]
 >  Pokud je zavření okna konzoly jazyka JavaScript, zvolte **ladění**> **Windows** > **konzoly jazyka JavaScript** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
   
- Pomocí okna konzoly jazyka JavaScript, můžete pracovat s vaší aplikací bez zastavení a restartování ladicího programu. Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md). Informace o další funkce, například pomocí Průzkumníka modelu DOM a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Pomocí okna konzoly jazyka JavaScript, můžete pracovat s vaší aplikací bez zastavení a restartování ladicího programu. Další informace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md). Informace o další funkce, například pomocí Průzkumníka modelu DOM a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) a [ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
   
 ##  <a name="InteractiveConsole"></a> Ladění pomocí okna konzoly jazyka JavaScript  
  Následujícím postupem se vytvoří `FlipView` aplikace a ukazují, jak interaktivně ladění JavaScriptu Chyba kódování.  
@@ -251,7 +249,7 @@ ms.locfileid: "49861823"
  Můžete také přepnout kontext spuštění pomocí `cd` příkaz, ale musíte znát název další kontext spuštění a pomocí odkazu musí být v rozsahu. **Cílové** seznam poskytuje lepší přístup k jiné kontexty provádění.   
   
 ## <a name="see-also"></a>Viz také  
- [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Příkazy konzoly jazyka JavaScript](../debugger/javascript-console-commands.md)   
  [Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)   

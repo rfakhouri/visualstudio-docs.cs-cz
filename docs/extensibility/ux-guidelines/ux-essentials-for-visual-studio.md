@@ -1,9 +1,6 @@
 ---
 title: Základy uživatelského prostředí pro Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874864"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Základy uživatelského prostředí pro Visual Studio
 ## <a name="best-practices"></a>Osvědčené postupy  
@@ -63,7 +60,7 @@ ms.locfileid: "49848589"
  - Dialogové okno počáteční výška musí být **menší než 700 pixelů**, takže se vejde do minimální rozlišení rámce IDE při 96 dpi.
   
 ### <a name="high-density-displays"></a>Zobrazí s vysokou hustotou  
- Uživatelské rozhraní v sadě Visual Studio musí fungovat dobře ve všech DPI škálování faktory, které podporuje Windows úprav: 150 %, 200 % a 250 %.  
+ Uživatelské rozhraní v sadě Visual Studio musí fungovat dobře ve všech DPI škálování prostředích a scénářích, které podporuje Windows úprav: 150 %, 200 % a 250 %.  
   
 ## <a name="anti-patterns"></a>Antimodely  
  Visual Studio obsahuje mnoho příkladů uživatelského rozhraní, které následují Naše pokyny a osvědčené postupy. Ve snaze být konzistentní vzhledem k aplikacím vývojáři často si půjčte z podobný co při sestavování vzorů návrhu uživatelského rozhraní produktu. I když je to dobrý nápad, pomůže nám jednotka konzistence v interakci s uživatelem a vizuální návrh, v některých případech dodáváme funkce s několik podrobností, které splňují Naše pokyny z důvodu omezení plánu nebo defect stanovení priorit. V těchto případech doporučujeme nechcete, aby týmy zkopírovat jeden z těchto "antimodely" vzhledem k tomu, že udrželi chybná nebo nekonzistentní uživatelské rozhraní v rámci prostředí sady Visual Studio.  
@@ -120,15 +117,15 @@ Vynucení uživateli číst vysvětlující text před zavření uživatelského
 ### <a name="using-command-bars-for-settings"></a>Použití panely příkazů pro nastavení  
  **Obrázek A** představuje tento model proti: uvedení nastavení pod příkazového tlačítka, která se vztahuje k více než jen příkaz. V tomto nákresu jsou příkazy kromě spustit ladění – jako zobrazit v prohlížeči spustit bez ladění a Krokovat s vnořením –, který bude respektovat nastavení vybrané.  
 
-  ![Obrázek A: příkaz panelu proti vzor](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti. vzor FigureA")<br />Obrázek A: příkazového řádku proti vzor
+  ![Obrázek se o: Příkaz panelu proti vzor](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti. vzor FigureA")<br />Obrázek se o: Proti vzor příkazového řádku
   
  O trochu lepší, ale stále nežádoucí, je nastavení tohoto typu vložení v panelech nástrojů, jak je znázorněno v **obrázek B**. Tlačítka rozdělení trvat méně místa a proto jsou vylepšení přes rozevírací seznamy, obou řešení stále používají panelu nástrojů na podporu něco, co skutečně není příkaz.  
  
- ![Obrázek B: lepší, ale stále proti vzor panel příkaz](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti. vzor FigureB")<br />Obrázek B: lepší, ale stále vzoru proti panel pro příkaz
+ ![Obrázek B: Lepší, ale stále proti vzor panel příkaz](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti. vzor FigureB")<br />Obrázek B: Lepší, ale stále vzoru proti panel pro příkaz
  
   V správný přístup znázorňuje **obrázek C**, nastavení se váže na řadu příkazů. Neexistuje žádné globální nastavení nastavena a jsme právě jste přepínání mezi čtyř příkazů. Toto je pouze situace, ve kterém jsou přijatelné příkazy na panelu nástrojů. 
 
- ![Obrázek C: opravit pomocí sady Visual Studio příkazového řádku vzor](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti. vzor FigureC")<br />Obrázek C: správné použití sady Visual Studio příkazového řádku vzor
+ ![Obrázek C: Opravte použití sady Visual Studio příkazového řádku vzor](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti. vzor FigureC")<br />Obrázek C: Správné použití sady Visual Studio příkazového řádku vzor
    
 ### <a name="control-anti-patterns"></a>Antimodely pro ovládací prvek  
  Některé antimodely pro jsou jednoduše nesprávné použití nebo prezentace ovládacího prvku nebo skupiny ovládacích prvků.  
@@ -156,7 +153,7 @@ Vynucení uživateli číst vysvětlující text před zavření uživatelského
   
    ![Ignoruje se barva služby a pomocí "Další informace" hypertextových odkazů jsou antimodely pro Visual Studio. ](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />Ignoruje se barva služby a pomocí "Další informace" hypertextových odkazů jsou antimodely pro Visual Studio.  
   
-   **Lepší řešení:** pokládat otázky, uživatel by s dotazem, kliknutím na odkaz.  
+   **Lepším řešením:** Představuje dotaz, který by se ptáte uživatel kliknutím na odkaz.  
   
 -   Jak fungují služby Windows Azure?  
   
@@ -165,6 +162,6 @@ Vynucení uživateli číst vysvětlující text před zavření uživatelského
 #### <a name="using-click-here-for-links"></a>Použití "Kliknutím sem" pro odkazy  
  Hypertextové odkazy by měl být samopopisných. Je proti vzor, který se má použít, "Klikněte sem" nebo libovolný podobné změny.  
   
- **Chybný:** "Kliknutím sem pokyny o tom, jak vytvořit nový projekt."
+ **Špatné:** "Kliknutím sem pokyny o tom, jak vytvořit nový projekt."
   
- **V pořádku:** "Jak vytvořit nový projekt?"
+ **Dobré:** "Jak vytvořit nový projekt?"

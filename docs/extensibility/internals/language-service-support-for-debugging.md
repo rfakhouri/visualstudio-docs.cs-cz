@@ -1,9 +1,6 @@
 ---
-title: Jazyková podpora služby pro ladění | Microsoft Docs
-ms.custom: ''
+title: Podpora služby jazyka pro ladění | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger, language support
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59c044f6ffc3f2cdf0749f0192f4b8fa458b00cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1963dad4861ad9026a683c695cf25a6becff7571
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841354"
 ---
-# <a name="language-service-support-for-debugging"></a>Jazyková podpora služby pro ladění
-Služba jazyka poskytne funkce, které podporují ladicí program prostřednictvím <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> rozhraní. Tyto funkce patří ověřování zarážky a poskytuje seznam výrazů k **automobily** okno.  
+# <a name="language-service-support-for-debugging"></a>Podpora služby jazyka pro ladění
+Služba jazyka může poskytovat funkce, které podporují ladicí program prostřednictvím <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> rozhraní. Tyto funkce patří ověřování zarážek a poskytnutí seznam výrazů **automatické hodnoty** okna.  
   
- Ale musíte mít vyhodnocovací filtr výrazů k ladění jazyka. Vyhodnocení výrazu je zodpovědná za vyhodnocení výrazů k vytvoření hodnoty při ladění. Informace o implementaci vyhodnocovače výrazů CLR najdete v tématu:  
+ Musíte však mít vyhodnocovače výrazů pro ladění jazyka. Chyba při vyhodnocování výrazu je zodpovědná za vaše rozhodnutí vyzkoušet výrazy k vytvoření hodnot při ladění. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu:  
   
--   [Vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
+-   [Vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
   
--   [Ukázka vyhodnocování spravovaných výrazů](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
+-   [Ukázka Vyhodnocovač spravovaných výrazů](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
   
 ## <a name="compiler-output"></a>Výstup kompilátoru  
- Typ kompilátoru Určuje, co je potřeba provést k implementaci ladění pro svůj jazyk. Pokud vaše kompilátoru cílem operačního systému Windows a zapisuje do souboru pdb, můžete ladit programy s nativním kódem ladění modul, který je integrován do sady Visual Studio. Pokud vaše kompilátor vytváří Microsoft (MSIL intermediate language), můžete ladit programy se spravovaným kódem ladění modul, který je taky integrovaná do sady Visual Studio. Pokud vaše kompilátoru používá vlastní operačního systému nebo jiné běhového prostředí, potřebujete napsat vlastní modul ladění.  
+ Typ kompilátoru jazyka určuje, co je potřeba provést k implementaci ladění pro váš jazyk. Pokud se kompilátor zaměřuje na operační systém Windows a zapíše soubor PDB, můžete ladit programy s nativním kódem ladicím modulu, který je integrovaný do sady Visual Studio. Pokud váš kompilátor vytvoří jazyk Microsoft intermediate language (MSIL), můžete ladit programy se spravovaným kódem ladění modul, který je také integrované do sady Visual Studio. Pokud se kompilátor zaměřuje na proprietární operačního systému nebo jiné běhové prostředí, budete muset napsat vlastní modulu pro ladění.  
   
- Další informace o implementaci ladění pro váš jazyk najdete v tématu [Začínáme](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) v sadě Visual Studio ladění SDK.
+ Další informace o implementaci ladění jazyka najdete v tématu [Začínáme](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) v aplikaci Visual Studio SDK ladění.

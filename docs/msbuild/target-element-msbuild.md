@@ -1,8 +1,6 @@
 ---
 title: Cíl – Element (MSBuild) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e82a92e0470d754093c419357f7eb4247c1aa65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965246"
 ---
 # <a name="target-element-msbuild"></a>Target – element (MSBuild)
 Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] provádět sekvenčně.  
@@ -62,8 +60,8 @@ Obsahuje sadu úkolů pro [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 |---------------|-----------------|  
 |`Name`|Požadovaný atribut.<br /><br /> Název cíle|  
 |`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Pokud je podmínka vyhodnocena jako `false`, cíl neprovede tělo cíl nebo veškerých cílů, které jsou nastaveny v `DependsOnTargets` atribut. Další informace o podmínkách najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Nepovinný atribut.<br /><br /> Soubory, které tvoří vstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Outputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [postupy: přírůstkové sestavování](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Nepovinný atribut.<br /><br /> Soubory, které výstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Inputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [postupy: přírůstkové sestavování](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Nepovinný atribut.<br /><br /> Soubory, které tvoří vstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Outputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [jak: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Nepovinný atribut.<br /><br /> Soubory, které výstupy do tohoto cíle. Více souborů jsou odděleny středníky. Časová razítka souborů bude porovnána s časovými razítky souborů v `Inputs` k určení, zda `Target` je aktuální. Další informace najdete v tématu [přírůstková sestavení](../msbuild/incremental-builds.md), [jak: Přírůstkové sestavování](../msbuild/how-to-build-incrementally.md), a [transformuje](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Nepovinný atribut.<br /><br /> Sadu položek, které bude k dispozici pro úlohy, které vyvolávají tento cíl, například úlohy nástroje MSBuild. Několik cílů jsou odděleny středníky. Pokud nemají cíle v souboru `Returns` atributy, výstupy atributy se používají místo pro tento účel.|  
 |`KeepDuplicateOutputs`|Volitelný logický atribut.<br /><br /> Pokud `true`, se zaznamenávají více odkazů na stejné položky v návratových hodnotách elementu target.  Ve výchozím nastavení, tento atribut je `false`.|  
 |`BeforeTargets`|Nepovinný atribut.<br /><br /> Středníkem oddělený seznam cílových názvů.  Při zadán, znamená to, že před zadaného cíle nebo cílů by měl být spuštěn tento cíl. Díky tomu Autor projektu rozšíření existující sady cílů beze jejich změny přímo. Další informace najdete v tématu [pořadí sestavení cílové](../msbuild/target-build-order.md).|  

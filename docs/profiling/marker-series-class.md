@@ -1,8 +1,6 @@
 ---
-title: marker_series – třída | Microsoft Docs
-ms.custom: ''
+title: marker_series – třída | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e638d9316b46a8600fe2e88ca5e4a6611fa1ec4d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: e8ecc6a14cce80197c1221734aadb4ce7e6758cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869817"
 ---
 # <a name="markerseries-class"></a>marker_series – třída
-Představuje sériové kanál událostí generovaných jednoho zprostředkovatele.  
+Představuje kanál sériového portu události generované modulem jednoho zprostředkovatele.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,16 +35,16 @@ class marker_series;
 |Název|Popis|  
 |----------|-----------------|  
 |[marker_series::marker_series – konstruktor](../profiling/marker-series-marker-series-constructor.md)|Inicializuje novou instanci třídy `marker_series` třídy.|  
-|[marker_series:: ~ marker_series – destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Odstraní objekt marker_series a uvolní všechny přidělené prostředky.|  
+|[marker_series:: ~ marker_series – destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Odstraní objekt marker_series – a uvolní všechny přidělené prostředky.|  
   
 ### <a name="public-methods"></a>Veřejné metody  
   
 |Název|Popis|  
 |----------|-----------------|  
-|[marker_series::is_enabled – metoda](../profiling/marker-series-is-enabled-method.md)|Určuje, zda má jakékoli relace povoleno zprostředkovatele.|  
-|[marker_series::write_alert – metoda](../profiling/marker-series-write-alert-method.md)|Zapíše výstrahu vizualizér souběžnosti trasovacího souboru.|  
-|[marker_series::write_flag – metoda](../profiling/marker-series-write-flag-method.md)|Zapíše příznak vizualizér souběžnosti trasovacího souboru.|  
-|[marker_series::write_message – metoda](../profiling/marker-series-write-message-method.md)|Zapíše zprávu do Concurrency Visualizer trasovacího souboru.|  
+|[marker_series::is_enabled – metoda](../profiling/marker-series-is-enabled-method.md)|Určuje, zda všechny relace má povoleno zprostředkovatele.|  
+|[marker_series::write_alert – metoda](../profiling/marker-series-write-alert-method.md)|Zapíše upozornění do souboru trasování vizualizátoru souběžnosti.|  
+|[marker_series::write_flag – metoda](../profiling/marker-series-write-flag-method.md)|Příznak, který zapisuje do souboru trasování vizualizátoru souběžnosti.|  
+|[marker_series::write_message – metoda](../profiling/marker-series-write-message-method.md)|Zapíše zprávu do souboru trasování vizualizátoru souběžnosti.|  
   
 ## <a name="inheritance-hierarchy"></a>Hierarchie dědičnosti  
  `marker_series`  

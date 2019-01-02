@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně postup vytvoření aplikace a používání zobrazení a šablony.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871700"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Django s zobrazení a šablony
 
-**Předchozí krok: [vytvářet řešení a projektu sady Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
+**Předchozí krok: [Vytvoření projektu sady Visual Studio a řešení](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
 Co budete mít, pokud v projektu sady Visual Studio jsou pouze součásti úrovni webu Django *projektu*, který můžete spustit jeden nebo více Django *aplikace*. Dalším krokem je vytvoření první aplikace pomocí jediné stránce.
 
@@ -34,7 +33,7 @@ V tomto kroku se nyní dozvíte, jak:
 > - Vykreslení zobrazení v jazyce HTML (krok 2 – 3)
 > - Vykreslení zobrazení pomocí stránky šablony Django (krok 2 – 4)
 
-## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 2-1: vytvoření aplikace pomocí výchozí struktury
+## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Krok 2-1: Vytvoření aplikace pomocí výchozí struktury
 
 Aplikace Django je samostatný balíček Pythonu, který obsahuje nastavení sady souvisejících souborů pro konkrétní účel. Django projekt může obsahovat libovolný počet aplikací, která odráží fakt, že webového hostitele může obsluhovat libovolný počet samostatných vstupní body z jedné domény. Například projekt Django pro domény třeba contoso.com může obsahovat jednu aplikaci pro www.contoso.com, druhé aplikace pro support.contoso.com a třetí aplikaci pro docs.contoso.com. V takovém případě se stará o směrování adres URL a nastavení úrovni webu projektu Django (v jeho *urls.py* a *settings.py* soubory), zatímco každá aplikace má vlastní různých stylů a chování prostřednictvím jeho vnitřní směrování, zobrazení, modely, statické soubory a rozhraní pro správu.
 
@@ -70,11 +69,11 @@ class HelloDjangoAppConfig(AppConfig):
     name = 'HelloDjango'
 ```
 
-### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Otázka: Je vytváření aplikací Django v sadě Visual Studio nijak neliší od vytvoření aplikace příkazového řádku?
+### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Otázka: Vytváří aplikace Django v sadě Visual Studio nijak neliší od vytvoření aplikace příkazového řádku?
 
-Odpověď: Spuštění **přidat** > **aplikace Django** příkaz nebo pomocí **přidat** > **nová položka** s využitím aplikace Django Šablona vytváří stejné soubory jako příkaz Django `manage.py startapp <app_name>`. Výhoda pro vytváření aplikace v sadě Visual Studio je, že složka aplikace a všechny jeho soubory jsou automaticky integrované do projektu. Ten samý příkaz sady Visual Studio můžete vytvořit libovolný počet aplikací ve vašem projektu.
+Odpověď: Spuštění **přidat** > **aplikace Django** příkaz nebo pomocí **přidat** > **nová položka** pomocí šablony aplikace Django vytvoří stejné soubory jako příkaz Django `manage.py startapp <app_name>`. Výhoda pro vytváření aplikace v sadě Visual Studio je, že složka aplikace a všechny jeho soubory jsou automaticky integrované do projektu. Ten samý příkaz sady Visual Studio můžete vytvořit libovolný počet aplikací ve vašem projektu.
 
-## <a name="step-2-2-run-the-app-from-the-django-project"></a>Krok 2 – 2: spuštění aplikace z projektu Django
+## <a name="step-2-2-run-the-app-from-the-django-project"></a>Krok 2 – 2: Spuštění aplikace z projektu Django
 
 V tomto okamžiku, je-li znovu spustit projekt v sadě Visual Studio (pomocí tlačítka panelu nástrojů nebo **ladění** > **spustit ladění**), se stále zobrazuje výchozí stránky. Žádný obsah aplikace se zobrazuje, protože je potřeba definovat stránku konkrétní aplikace a přidejte ji do projektu Django:
 
@@ -119,7 +118,7 @@ Protože jste provedli změny kódu a je otestovali úspěšně, teď je vhodná
 
 ### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Otázka: Co je předpona "r" před směrování řetězce pro?
 
-Odpověď: Předpona "r" v řetězci v jazyce Python znamená "neupravené", která nastaví Python nejsou řídicí znaky v řetězci. Protože regulárních výrazů používat mnoho speciální znaky, pomocí předpony "r" tyto řetězce velmi usnadňuje čtení než pokud obsaženy celou řadou "\\" řídicí znaky.
+Odpověď: Předpona "r" v řetězci v jazyce Python znamená "neupravené", který dává pokyn Python nejsou řídicí znaky v řetězci. Protože regulárních výrazů používat mnoho speciální znaky, pomocí předpony "r" tyto řetězce velmi usnadňuje čtení než pokud obsaženy celou řadou "\\" řídicí znaky.
 
 ### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Otázka: Co dělat ^ a v položkách směrování URL znamenat znaky $?
 
@@ -129,7 +128,7 @@ Pokud nepoužíváte koncové $ v regulárním výrazu, stejně jako u `^home`, 
 
 Můžete experimentovat s různých regulárních výrazů, zkuste online nástrojů, jako [regex101.com](https://regex101.com) na [pythex.org](https://www.pythex.org).
 
-## <a name="step-2-3-render-a-view-using-html"></a>Krok 2 – 3: vykreslení zobrazení v jazyce HTML
+## <a name="step-2-3-render-a-view-using-html"></a>Krok 2 – 3: Vykreslení zobrazení v jazyce HTML
 
 `index` Funkce, která jste dosud v *views.py* generuje nic jiného než prostého textu odpovědi HTTP pro stránky. Většina skutečných webové stránky, samozřejmě, odpoví bohaté stránky HTML, které často zahrnují živá data. Primární z důvodu definování zobrazení pomocí funkce je ve skutečnosti, tak můžete dynamicky generovat tohoto obsahu.
 
@@ -155,7 +154,7 @@ Spusťte projekt znovu tak, aby se zobrazit následující zpráva "**Django Hel
 >
 > ![Restartujte na panelu nástrojů ladění v sadě Visual Studio](media/debugging-restart-toolbar-button.png)
 
-## <a name="step-2-4-render-a-view-using-a-page-template"></a>Krok 2 – 4: vykreslení zobrazení pomocí šablony stránky
+## <a name="step-2-4-render-a-view-using-a-page-template"></a>Krok 2 – 4: Vykreslení zobrazení pomocí šablony stránky
 
 Generování HTML v kódu funguje pro velmi malé stránky, ale jako stránky důmyslnější obvykle chcete udržovat statické části HTML stránky (spolu s odkazy na soubory šablon stylů CSS a JavaScriptu) jako "stránka šablony" do kterých pak vložíte dynamické, kód generovaný obsah. V předchozí části, data a času `now.strftime` volání je dynamická, což znamená, že veškerý obsah je možné použít v šabloně stránky.
 
@@ -249,27 +248,27 @@ Následující kroky ukazují použití šablony:
 
     ![Spuštěné aplikace pomocí šablony](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 verze 15.7 a starší: V posledním kroku, přesuňte své šablony do podsložky se stejným názvem jako aplikaci, která vytvoří obor názvů a vyhnout se možným konfliktům s jinými aplikacemi, které můžete přidat do projektu. (Šablony v sadě VS 2017 15.8 + to udělal za vás automaticky.) To znamená, vytvořte podsložku v *šablony* s názvem *HelloDjangoApp*, přesuňte *index.html* do této podsložky a upravovat `index` zobrazit funkce k odkazování na šablony novou cestu, *HelloDjangoApp/index.html*. Spuštění projektu, ověřte, že stránka vykreslí správně a zastavení serveru.
+1. <a name="template-namespacing"></a>Visual Studio 2017 verze 15.7 a starší: V posledním kroku přesuňte své šablony do podsložky se stejným názvem jako aplikaci, která vytvoří obor názvů a vyhnout se možným konfliktům s jinými aplikacemi, které můžete přidat do projektu. (Šablony v sadě VS 2017 15.8 + to udělal za vás automaticky.) To znamená, vytvořte podsložku v *šablony* s názvem *HelloDjangoApp*, přesuňte *index.html* do této podsložky a upravovat `index` zobrazit funkce k odkazování na šablony novou cestu, *HelloDjangoApp/index.html*. Spuštění projektu, ověřte, že stránka vykreslí správně a zastavení serveru.
 
 1. Potvrďte změny do správy zdrojového kódu a aktualizovat vaše vzdálené úložiště, v případě potřeby, jak je popsáno v části [krok 2-2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Otázka: Šablony musí být v samostatném souboru?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Otázka: Mají být v samostatném souboru šablony?
 
-Odpověď: I když šablony jsou obvykle spravované do samostatných souborů HTML, můžete také vložené šablony. Použití samostatného souboru se doporučuje, ale udržovat čisté oddělení mezi značek a kódu.
+Odpověď: Přestože šablony jsou obvykle spravované do samostatných souborů HTML, můžete také použít šablonu vložené. Použití samostatného souboru se doporučuje, ale udržovat čisté oddělení mezi značek a kódu.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Otázka: Musíte šablony používají příponu souboru HTML?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Otázka: Šablony, který je nutné použít příponu souboru HTML?
 
-Odpověď: *.html* rozšíření pro stránkovací soubory šablony je naprosto volitelné, protože vždy identifikovat přesné relativní cesta k souboru v druhý argument `render` funkce. Ale sady Visual Studio (a ostatní editory) obvykle poskytují funkce, jako je dokončení a syntaxe zabarvení kódu s *.html* soubory, které převažuje skutečnost, že stránka šablony nejsou nezbytně HTML.
+Odpověď: *.Html* rozšíření pro stránkovací soubory šablony je naprosto volitelné, protože vždy identifikovat přesné relativní cesta k souboru v druhý argument `render` funkce. Ale sady Visual Studio (a ostatní editory) obvykle poskytují funkce, jako je dokončení a syntaxe zabarvení kódu s *.html* soubory, které převažuje skutečnost, že stránka šablony nejsou nezbytně HTML.
 
 Ve skutečnosti když pracujete s projektem Django, Visual Studio automaticky rozpozná, pokud soubor HTML, který upravujete je ve skutečnosti šablona Django a poskytuje některé funkce automatického dokončování. Například když začnete psát komentář stránku šablony Django, `{#`, Visual Studio automaticky poskytuje uzavírací `#}` znaků. **Zakomentovat výběr** a **Odkomentovat výběr** příkazy (na **upravit** > **Upřesnit** nabídky a na panelu nástrojů) komentáře k šabloně používají taky místo komentáře HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Otázka: Při spuštění projektu zobrazí chybu, která šablona se nenašel. Co je?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Otázka: Při spuštění projektu se zobrazit chyba, která šablona se nenašel. Co je?
 
 Odpověď: Pokud se zobrazí chyby, které nejde najít šablonu, ujistěte se, že přidání aplikace do projektu Django *settings.py* v `INSTALLED_APPS` seznamu. Bez této položky nebude vědět o Django podívejte se aplikace *šablony* složky.
 
-### <a name="question-why-is-template-namespacing-important"></a>Otázka: Proč je šablona namespacing důležité?
+### <a name="question-why-is-template-namespacing-important"></a>Otázka: Proč je důležité namespacing šablony?
 
-Odpověď: Pokud Django hledá podle šablony `render` funkce, používá jakýkoli soubor najde první, která odpovídá relativní cestu. Pokud máte více aplikací Django ve stejném projektu, které používají stejné struktury složek pro šablony, je pravděpodobné, že jednu aplikaci neúmyslně použije šablonu z jiné aplikace. Aby se zabránilo podobné chyby, vždy vytvořte podsložku v rámci vaší aplikace *šablony* složku, která odpovídá názvu aplikace, aby se zabránilo duplicitě všechny.
+Odpověď: Když Django hledá šablonu podle `render` funkce, používá jakýkoli soubor najde první, která odpovídá relativní cestu. Pokud máte více aplikací Django ve stejném projektu, které používají stejné struktury složek pro šablony, je pravděpodobné, že jednu aplikaci neúmyslně použije šablonu z jiné aplikace. Aby se zabránilo podobné chyby, vždy vytvořte podsložku v rámci vaší aplikace *šablony* složku, která odpovídá názvu aplikace, aby se zabránilo duplicitě všechny.
 
 ## <a name="next-steps"></a>Další kroky
 

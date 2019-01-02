@@ -2,19 +2,18 @@
 title: Přidání místní proměnné
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968680"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Přidání místní proměnné v sadě Visual Studio
 
@@ -24,11 +23,11 @@ Tato generace kód platí pro:
 
 - Visual Basic
 
-**Co:** umožňuje okamžitě Generovat lokální proměnná má nahradit stávající výraz.
+**Co:** Umožňuje okamžitě Generovat lokální proměnná má nahradit stávající výraz.
 
-**Kdy:** budete mít kód, který se dá snadno opakovaně použít později byl v místní proměnné.
+**Kdy:** Máte kód, který se dá snadno opakovaně použít později byl v místní proměnné.
 
-**Důvod, proč:** může zkopírujte a vložte kód několikrát jeho použití v různých umístěních, ale bylo by lepší provést operaci jednou, uloží výsledek v místní proměnné a používat místní proměnné v rámci.
+**Proč:** Může zkopírujte a vložte kód několikrát jeho použití v různých umístěních, ale bylo by lepší provést operaci jednou, uloží výsledek v místní proměnné a používat místní proměnné v rámci.
 
 ## <a name="how-to"></a>Postupy
 

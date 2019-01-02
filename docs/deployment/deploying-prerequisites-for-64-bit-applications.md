@@ -1,8 +1,6 @@
 ---
 title: Nasazení nezbytných součástí pro 64bitové aplikace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ed8d652a36235ef43ce0cdeb78729d560be476
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885248"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Nasazení nezbytných součástí pro 64bitové aplikace
 ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformách. Cílové platformy jsou **x86** pro 32bitové platformy, **x64** pro počítače podporuje AMD64 a podporou technologie EM64T instrukční sadu, a **Itanium** pro procesor Itanium 64-bit.  
@@ -46,5 +44,5 @@ ClickOnce – nasazení podporuje instalaci aplikací na 64bitových platformác
 
 ## <a name="see-also"></a>Viz také:  
  [Nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md)   
- [Postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Postupy: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64bitové aplikace](/dotnet/framework/64-bit-apps)

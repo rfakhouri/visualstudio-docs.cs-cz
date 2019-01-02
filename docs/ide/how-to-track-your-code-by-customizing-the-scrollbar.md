@@ -2,21 +2,20 @@
 title: Režim mapování posuvníku panelu a řádku režimu
 ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965068"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Postupy: přizpůsobení posuvníku
+# <a name="how-to-customize-the-scroll-bar"></a>Postupy: Přizpůsobení posuvníku
 
 Při práci se soubory kódu dlouho, může být obtížné sledovat kde všechno, co je v souboru. Můžete upravit posuvník Editor kódu, abyste získali celkový přehled o co se děje ve vašem kódu.
 

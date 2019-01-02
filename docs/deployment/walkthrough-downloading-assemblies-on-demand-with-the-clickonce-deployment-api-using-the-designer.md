@@ -1,8 +1,6 @@
 ---
-title: 'Návod: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878598"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Návod: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Průvodce: Stáhnout sestavení na vyžádání pomocí rozhraní API pomocí návrháře nasazení ClickOnce
 Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se stáhne při prvním spuštění aplikace. Ale může být součástí vaší aplikace, které jsou používány malého počtu uživatelů. V takovém případě budete chtít stáhnout sestavení pouze v případě, že můžete vytvořit jeden z jeho typy. Následující návod ukazuje, jak označit určité sestavení v aplikaci jako "volitelné", a jak si je stáhnout pomocí tříd v <xref:System.Deployment.Application> obor názvů, když je modul common language runtime požaduje.
 
 > [!NOTE]
@@ -81,11 +79,11 @@ Ve výchozím nastavení, všechna sestavení součástí [!INCLUDE[ndptecclick]
 
 4.  Rozbalte **skupiny** rozevíracího seznamu a vyberte **nový**. Zadejte název `ClickOnceLibrary` jako název nové skupiny.
 
-5.  Pokračovat v publikování vaší aplikace, jak je popsáno v [postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5.  Pokračovat v publikování vaší aplikace, jak je popsáno v [jak: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Označit sestavení jako volitelný v aplikaci ClickOnce pomocí Manifest Generation and Editing Tool, grafický klient (MageUI.exe)
 
-1. Vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty, jak je popsáno v [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty, jak je popsáno v [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 2. Před zavřením MageUI.exe, vyberte kartu, která obsahuje manifest aplikace tohoto nasazení a v rámci této karty vyberte **soubory** kartu.
 

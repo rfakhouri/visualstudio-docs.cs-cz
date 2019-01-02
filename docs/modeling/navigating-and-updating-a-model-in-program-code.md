@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857118"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Procházení a aktualizace modelu v programovém kódu
 
@@ -192,7 +191,7 @@ using (Transaction t =
 
 - Nastavení vlastností nového elementu, zejména vlastnost, pro kterou `IsName` DslDefinition platí. Tento příznak označí vlastnost, která slouží k identifikaci elementu jedinečné v rámci jeho vlastníka. V tomto případě vlastnost Name má tento příznak.
 
-- Definice DSL tento DSL musí byla načtena do Store. Pokud píšete rozšíření například příkaz nabídky, bude obvykle jednat již hodnotu true. V ostatních případech můžete explicitně načíst model do Store, nebo použít <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> se jej načíst. Další informace najdete v tématu [postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+- Definice DSL tento DSL musí byla načtena do Store. Pokud píšete rozšíření například příkaz nabídky, bude obvykle jednat již hodnotu true. V ostatních případech můžete explicitně načíst model do Store, nebo použít <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> se jej načíst. Další informace najdete v tématu [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
   Při vytváření elementu tímto způsobem obrazce se automaticky vytvoří (Pokud DSL neobsahuje diagram). Zobrazí se v umístění služby automaticky přiřazený, výchozí tvar, barvu a další funkce. Pokud chcete určit, kde a jak se zobrazí související tvar, přečtěte si téma [vytváření elementu a jeho tvar](#merge).
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  Můžete také nastavit barvu a další vlastnosti zveřejněné konektorů pomocí této metody.
 
 ### <a name="use-transactions"></a>Použití transakcí
- Tvary, konektory a diagramy jsou podtypy <xref:Microsoft.VisualStudio.Modeling.ModelElement> tak pro živé v Store. Proto je třeba provést změny k nim jen v transakci. Další informace najdete v tématu [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+ Tvary, konektory a diagramy jsou podtypy <xref:Microsoft.VisualStudio.Modeling.ModelElement> tak pro živé v Store. Proto je třeba provést změny k nim jen v transakci. Další informace najdete v tématu [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Zobrazení dokumentů a dat dokumentu
  ![Diagram tříd typů standardní diagramu](../modeling/media/dsldiagramsanddocs.png)

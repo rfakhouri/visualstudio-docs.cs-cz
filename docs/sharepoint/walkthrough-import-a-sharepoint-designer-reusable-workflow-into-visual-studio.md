@@ -1,15 +1,10 @@
 ---
-title: 'Návod: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821346"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Návod: Importujte opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Průvodce: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio
   Tento návod ukazuje, jak pro import opakovaně použitelného pracovního postupu v Návrháři SharePoint 2010 do vytvoří [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu pracovního postupu služby SharePoint.  
   
  Pracovní postupy vytvořené v aplikaci SharePoint Designer nebo *deklarativní pracovních postupů*, obsahovat [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] příkazy namísto kódu. Zavádí SharePoint Designer 2010 *opakovaně použitelných pracovních postupů*, které jsou přenosná deklarativní pracovní postupy, které můžete používat různé seznamy na webech služby SharePoint.  
@@ -191,7 +186,7 @@ ms.locfileid: "49851475"
   
      V seznamu zobrazí okamžitě při ladění projektu.  
   
-11. Vzhledem k tomu, **Import opakovaně použitelného 2010 pracovního postupu služby SharePoint** šablony neimportuje přidružení hodnoty vlastností pro importované pracovního postupu, je nutné zadat. To uděláte takto:  
+11. Vzhledem k tomu, **Import opakovaně použitelného 2010 pracovního postupu služby SharePoint** šablony neimportuje přidružení hodnoty vlastností pro importované pracovního postupu, je nutné zadat. Použijte následující postup:  
   
     1.  V **Průzkumníka řešení**, zvolte **SPD_Workflow_TestFT** uzlu.  
   
@@ -269,4 +264,3 @@ ms.locfileid: "49851475"
  [Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  

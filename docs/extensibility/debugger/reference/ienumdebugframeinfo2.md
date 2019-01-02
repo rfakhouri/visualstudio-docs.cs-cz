@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugFrameInfo2 | Microsoft Docs
-ms.custom: ''
+title: IEnumDebugFrameInfo2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugFrameInfo2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 858250c3c951880cf905ea6ee150f1ff61008204
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa2db1f249492702971eb311fe38f76eec3a5b3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857197"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 Vytvoří výčet toto rozhraní [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury.  
@@ -32,31 +29,31 @@ IEnumDebugFrameInfo2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní uvést seznam struktury, která popisuje aktuální zásobníku volání.  
+ Ladicí stroj (DE) implementuje toto rozhraní uvést seznam struktur, která popisuje aktuální zásobník volání.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Visual Studio volání [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) k získání tohoto rozhraní vždy, když bod přerušení, dojde v programu laděné výjimky nebo zastavení.  
+ Visual Studio volání [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) získat toto rozhraní pokaždé, když zarážku, výjimka nebo zastavení dochází v programu, který se právě ladí.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IEnumDebugFrameInfo2`.  
+ V následující tabulce jsou uvedeny metody objektu `IEnumDebugFrameInfo2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Načte zadaný počet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury v posloupnosti výčtu.|  
-|[Přeskočit](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Přeskočí zadaný počet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury v posloupnosti výčtu.|  
-|[Resetování](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[klonování](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
-|[GetCount –](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Získá počet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury v enumerátor.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|Načte zadaný počet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury v sekvenci výčtu.|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|Vynechá zadaný počet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury v sekvenci výčtu.|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|Návrat na začátek sekvence výčtu.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|Získá počet [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury v enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
- Visual Studio obdrží jako první krok pro zpracování zarážek, výjimky nebo uživatelem generovaný pozastavení na programu laděné toto rozhraní. Seznam [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury představuje aktuální zásobníku volání, s aktuálním volání funkce na začátku seznamu a nejstarší funkce volání na konci tohoto seznamu. Každý `FRAMEINFO` představuje rámce zásobníku, kontext, ve kterém se vyhodnotí výrazy a prohlédl lokální proměnné.  
+ Visual Studio obdrží toto rozhraní jako první krok zpracovávání zarážky, výjimka nebo uživatelem generovaný pozastavení na program, který se právě ladí. Seznam [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struktury představuje aktuální zásobník volání, s aktuálním volání funkce na začátku seznamu a nejstarší funkce volání na konci seznamu. Každý `FRAMEINFO` představuje rámec zásobníku, kontext, ve kterém můžete vyhodnotit výrazy a prohlédli jste si místní proměnné.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

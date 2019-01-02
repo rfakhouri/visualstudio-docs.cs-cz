@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db63915c5bfda3f20992dd400ff72fc5932e91dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964725"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podepsání
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Toto téma popisuje nové funkce zavedena v rozhraní .NET Framework verze 3.5, 
   V druhém příkladu publikování aplikace ClickOnce, která určuje `deploymentProvider`, a potom se rozhodnete ho odebrat. Jednou na novou verzi bez `deploymentProvider` byl stažen do klientů, nebude možné přesměrovat cestu používané pro aktualizace, dokud vydání verze aplikace, která má `deploymentProvider` obnovit. Stejně jako v prvním příkladu `deploymentProvider` zpočátku musí odkazovat na aktuální umístění aktualizace, nikoliv do nového umístění. V takovém případě pokud se pokusíte vložit `deploymentProvider` , který odkazuje na http://subdomain.adatum.com/MyApplication/, pak příští aktualizace se nezdaří.  
   
 ## <a name="creating-a-deployment"></a>Vytvoření nasazení  
- Podrobné pokyny k vytvoření nasazení, která se dají nasadit z různých síťových umístěních, najdete v části [návod: Ruční nasazení aplikace ClickOnce této nemá není vyžadují Re-Signing a zachová značky informací](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Podrobné pokyny k vytvoření nasazení, která se dají nasadit z různých síťových umístěních, najdete v části [názorný postup: Ruční nasazení aplikace ClickOnce, která nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ## <a name="see-also"></a>Viz také  
  [Mage.exe (generování manifestu a nástroj pro úpravy)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   

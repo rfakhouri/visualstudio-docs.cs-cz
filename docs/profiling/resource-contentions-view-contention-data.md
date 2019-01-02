@@ -1,8 +1,6 @@
 ---
-title: Zobrazení kolizí prostředku – Data kolizí | Microsoft Docs
-ms.custom: ''
+title: Zobrazení kolizí prostředku – Data kolizí | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
@@ -14,48 +12,48 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33a27d5f2b14effc9d8a90e903b34822d81edfb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870505"
 ---
-# <a name="resource-contentions-view---contention-data"></a>Zobrazení kolizí prostředku – Data kolizí
-Zobrazení kolizí prostředku uvádí data kolizí pro prostředky, které byly zdroj kolizní události. Kolizní události nastane, když je funkce ve vlákně vynutit čekání na přístup k prostředku, protože funkce v jiné vlákno má získat výhradní přístup k prostředku. Každý prostředek je kořenový uzel stromu volání, která zobrazuje funkce cesty provádění, jejichž výsledkem kolizní události.  
+# <a name="resource-contentions-view---contention-data"></a>Zobrazení kolizí prostředku – data kolizí
+Zobrazení kolizí prostředku obsahuje data kolize prostředků, které byly zdroj kolizní události. Kolize událost nastane, pokud funkce ve vlákně je nuceni čekat přístup k prostředku, protože funkce v jiném vlákně má získat výhradní přístup k prostředku. Každý prostředek je kořenový uzel stromu volání, která zobrazuje cesty spuštění funkce, jejichž výsledkem kolizní události.  
   
-## <a name="data-values"></a>Hodnoty data  
+## <a name="data-values"></a>Hodnoty dat  
   
 ### <a name="resource-values"></a>Hodnoty prostředků  
- Data v řádku prostředků zobrazí celkový čas, který byl zablokován přístup k prostředku v data profilování a celkový počet kolizní události, které došlo k chybě z důvodu konfliktu přístup k tomuto prostředku. (Včetně) a výhradní hodnoty prostředku jsou vždy stejné.  
+ V řádku zdroje dat zobrazuje celkový čas, který byl zablokován přístup k prostředku v Profilování dat a celkový počet kolizní události, ke kterým došlo kvůli konfliktu přístup k tomuto prostředku. Zahrnuté a výhradní hodnoty prostředku jsou vždy stejné.  
   
-### <a name="function-values"></a>Hodnoty funkce  
- Funkce hodnoty jsou založené na instance funkce, která došlo k chybě v cestě k provádění reprezentované ve stromové struktuře volání.  
+### <a name="function-values"></a>Hodnoty – funkce  
+ Hodnoty funkcí jsou založeny na instance, ke které došlo v provádění cestu ve stromu volání funkce.  
   
--   Hodnot, které jsou založené na události, které došlo k chybě při provádění funkce příkazy v jeho tělo funkce. Hodnot, které nejsou součástí událostí, které nastaly v funkce, které byly volá funkci.  
+-   Výhradní hodnoty jsou založené na události, ke kterým došlo při provádění funkce příkazy v těle jeho funkce. Události, ke kterým došlo ve funkcích, které byly volány funkce nejsou součástí výhradní hodnoty.  
   
--   (Včetně). hodnoty jsou založené na události, které došlo k chybě při provádění funkce nebo funkce volá funkci.  
+-   Celkové hodnoty jsou založené na události, ke kterým došlo při provádění funkce nebo funkce volané funkce.  
   
-### <a name="percentage-values"></a>Procentní hodnoty  
- Procentní hodnoty jsou založené na celkový čas nebo kolizní událostí v data profilování. Pokud je filtrován sestavu nebo zobrazení profilace spustit, jenom blokovaných čas a kolizí v filtrovaných dat se používají jako celkovou hodnotu.  
+### <a name="percentage-values"></a>Procento hodnoty  
+ Procento hodnoty jsou založeny na celkový čas nebo kolize události v dat profilování. Pokud je filtrování sestav nebo zobrazení běhu profilování, čas zablokování a tento počet sporů: v filtrovaná data se používají jako celková hodnota.  
   
 ## <a name="navigating-the-resource-allocation-view"></a>Navigace zobrazení přidělení prostředků  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Jméno**|Název prostředku nebo funkce.|  
-|**Výhradní blokované čas**|-Pro prostředek celkový čas tento přístup k prostředku byl blokovaný a způsobila vlákno čekání.<br />-Pro funkce, čas, který tyto instance funkce měla přístup nadřazený prostředek při funkce provádění kódu v těle funkce zablokován. Blokované čas v funkce, které byly volá funkci není součástí.|  
-|**Výhradní blokované čas: %**|-Pro prostředek, procento všech blokovaných času v profilaci data, která byla blokována času tento prostředek<br />-Pro funkci, procento všech blokovaných času v profilaci data, která byla výhradní blokované čas instancí tyto funkce.|  
-|**Výhradní kolizí**|-Pro prostředek byl celkový počet pokusů, které přístup k danému prostředku blokovaný a způsobila vlákno čekání.<br />-Pro funkce, počet pokusů, které tyto instance funkce měla přístup nadřazený prostředek při funkce provádění kódu v těle funkce zablokován. Blokování události v funkce, které byly volá funkci nejsou zahrnuty.|  
-|**% Výhradní kolizí**|-Pro prostředek, procento všech kolizní události v profilaci data, která měla kolizní události pro přístup k tomuto prostředku.<br />-Pro funkce, procento všech kolizní události v profilaci data, která měla výhradní kolizní události instancí tyto funkce pro nadřazený prostředek.|  
-|**Blokované čas (včetně).**|-Pro prostředek celkový čas tento přístup k prostředku byl blokovaný a způsobila vlákno čekání.<br />-Pro funkci byly ve chvíli, tyto instance funkce nebo všechny funkce volá instance blokovaný přístup k nadřazený prostředek při funkce provádění kódu v těle funkce.|  
-|**Včetně blokované čas: %**|-Pro prostředek, procento všech blokovaných času v profilaci data, která byla blokována času tento prostředek<br />-Pro funkci procento všech blokovaných času v profilaci spuštění, který byl včetně blokované čas instancí tyto funkce.|  
-|**Kolizí (včetně).**|-Pro prostředek byl celkový počet pokusů, které přístup k danému prostředku blokovaný a způsobila vlákno čekání.<br />-Pro funkci procento všech kolizní události v profilaci spuštění, které byly včetně kolizní události instancí tyto funkce pro nadřazený prostředek.|  
-|**% Kolizí (včetně).**|-Pro prostředek procento všech kolizní události v profilaci spuštění, které byly kolizní události pro přístup k tomuto prostředku.<br />-Pro funkce, počet pokusů, které tyto instance funkce měla přístup nadřazený prostředek při funkce provádění kódu v těle funkce zablokován. Blokování události v funkce, které byly volá funkci nejsou zahrnuty.|  
-|**úroveň**|Hloubka této funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
+|**Název**|Název prostředku nebo funkce.|  
+|**Výhradní čas zablokování**|-Pro určitý prostředek celkový čas, které přístup k prostředku se zablokuje a způsobila vlákno čekání.<br />-Pro funkci, čas, který tyto instance funkce se zablokoval přístup k nadřazeným prostředkem při provádění kódu funkce v těle funkce. Čas zablokování ve funkcích, které byly volány funkce není součástí.|  
+|**% Výhradního času zablokování**|-Pro určitý prostředek, procento času zablokování všech dat profilování, která se zablokovala, čas tento prostředek<br />-Pro určitou funkci, procento času zablokování všech dat profilování, která byla výhradní čas zablokování těchto instancí funkce.|  
+|**Výhradní spory**|– Celkový počet případů, kdy se přístup k prostředku byl pro prostředek, zablokuje a způsobila vlákno čekání.<br />-Pro funkci, počet případů, kdy se tyto instance funkce se zablokoval přístup k nadřazeným prostředkem při provádění kódu funkce v těle funkce. Blokujících událostí ve funkcích, které byly volány funkce nejsou zahrnuty.|  
+|**% Výhradních sporů**|-Pro prostředek, procento všech kolizní události v profilaci dat, které byly kolizní události pro přístup k tomuto prostředku.<br />-Pro funkci, procento všech kolizní události v profilaci dat, které byly exkluzivní kolizní události z těchto instancí funkce pro nadřazený prostředek.|  
+|**Celkový čas zablokování**|-Pro určitý prostředek celkový čas, které přístup k prostředku se zablokuje a způsobila vlákno čekání.<br />-Pro určitou funkci byly čas, který tato instance funkce nebo jakékoli funkce volány instance blokovat přístup k nadřazeným prostředkem při provádění kódu funkce v těle funkce.|  
+|**% Celkového času zablokování**|-Pro určitý prostředek, procento času zablokování všech dat profilování, která se zablokovala, čas tento prostředek<br />-Pro určitou funkci procento všech času zablokování při spuštění, který profilace byla celkový čas zablokování těchto instancí funkce.|  
+|**Celkově sporů**|– Celkový počet případů, kdy se přístup k prostředku byl pro prostředek, zablokuje a způsobila vlákno čekání.<br />-Pro určitou funkci procento všech kolizní události v profilování, které byly včetně kolizní události z těchto instancí funkce pro nadřazený prostředek.|  
+|**% Celkových sporů**|-Pro určitý prostředek procento všech kolizní události v profilování, která se kolizní události pro přístup k tomuto prostředku.<br />-Pro funkci, počet případů, kdy se tyto instance funkce se zablokoval přístup k nadřazeným prostředkem při provádění kódu funkce v těle funkce. Blokujících událostí ve funkcích, které byly volány funkce nejsou zahrnuty.|  
+|**Úroveň**|Hloubka tuto funkci ve stromu volání. Pouze v [VSPerfReport](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
-|**Cesta modulu**|Cesta modul, který obsahuje funkce.|  
-|**ID procesu**|ID procesu (PID) procesu, ve kterém se provádí funkce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje funkci.|  
+|**ID procesu**|ID procesu (PID) proces, ve kterém funkce byla spuštěna.|  
 |**Název procesu**|Název procesu.|  
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro tuto funkci.|

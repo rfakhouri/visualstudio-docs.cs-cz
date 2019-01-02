@@ -1,9 +1,6 @@
 ---
 title: Přehled modelu objektů aplikace Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821766"
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   K vývoji řešení, která používají Microsoft Office Excel, můžete pracovat s objekty poskytované objektovému modelu Excelu. Toto téma představuje nejdůležitější objekty:  
@@ -123,5 +120,3 @@ ms.locfileid: "53647522"
 |[Práce s oblastmi](../vsto/working-with-ranges.md)|Poskytuje příklady, které ukazují, jak provádět běžné úlohy s rozsahy adres.|  
 |[Práce s listy](../vsto/working-with-worksheets.md)|Poskytuje příklady, které ukazují, jak provádět běžné úlohy s listy.|  
 |[Práce se sešity](../vsto/working-with-workbooks.md)|Poskytuje příklady, které ukazují, jak provádět běžné úkoly se sešity.|  
-  
-  

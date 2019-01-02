@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Programová načítání složek podle názvu'
-ms.custom: ''
+title: 'Postupy: Programově načítání složek podle názvu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 622ad7057b50f73dbd74108e3d9619017c354b86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d772f5cb71a6921c7a89cdf8d176890c927add65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872671"
 ---
-# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Postupy: Programová načítání složek podle názvu
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Postupy: Programově načítání složek podle názvu
   V tomto příkladu získá odkaz na vlastní složka s názvem a potom zobrazí obsah složky.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -37,8 +34,6 @@ ms.locfileid: "35675871"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce se složkami](../vsto/working-with-folders.md)   
- [Postupy: hledání v rámci konkrétní složky prostřednictvím kódu programu](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Postupy: hledání konkrétního kontaktu prostřednictvím kódu programu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Postupy: vytváření vlastních položek složek prostřednictvím kódu programu](../vsto/how-to-programmatically-create-custom-folder-items.md)  
-  
-  
+ [Postupy: Hledání v rámci konkrétní složky prostřednictvím kódu programu](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [Postupy: Hledání konkrétního kontaktu prostřednictvím kódu programu](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [Postupy: Vytváření vlastních položek složek prostřednictvím kódu programu](../vsto/how-to-programmatically-create-custom-folder-items.md)  

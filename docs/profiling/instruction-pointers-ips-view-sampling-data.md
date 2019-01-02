@@ -1,8 +1,6 @@
 ---
-title: Zobrazení (IP) ukazatele na instrukce – vzorkování dat | Microsoft Docs
-ms.custom: ''
+title: Zobrazení ukazatelů na instrukce – vzorkování dat | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,36 +10,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdc7069ee0d422fd59b297b4b99a982d265e3a2
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: dc695dab636f486783e3f0ae778457d531934a8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819597"
 ---
-# <a name="instruction-pointers-ips-view---sampling-data"></a>Zobrazení (IP) ukazatele na instrukce – vzorkování dat
-Zobrazení IP adres vzorkování dat výkonu datového seznamy pokyny sestavení, které byly prováděny přímo, kdy ukázky byly shromážděny v profilaci spustit.  
+# <a name="instruction-pointers-ips-view---sampling-data"></a>Zobrazení ukazatelů na instrukce – vzorkování dat
+Zobrazení IP adres odběru vzorků dat výkonu datového seznamy pro instrukce sestavení, které byly přímo spuštěný, když nebyly shromážděny vzorky při spuštění profilace.  
   
 > [!NOTE]
->  Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**ID procesu**|ID procesu (PID) z profilace spustit.|  
+|**ID procesu**|ID procesu (PID) běhu profilování.|  
 |**Název procesu**|Název procesu.|  
-|**Název modulu**|Název modul, který obsahuje pokyn.|  
-|**Cesta modulu**|Cesta modul, který obsahuje pokyn.|  
-|**Zdrojový soubor**|Zdrojový soubor, který obsahuje pokyn.|  
-|**Název funkce**|Název funkce, která obsahuje pokyn.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
-|**Adresa funkce**|Počáteční adresa paměti funkce v načíst binárního souboru.|  
-|**Začátek řádku zdroje**|Počáteční řádek číslo ve zdrojovém souboru, kdy byl shromážděn této ukázce.|  
-|**End řádku zdroje**|Koncová číslo řádku ve zdrojovém souboru, kdy byl shromážděn této ukázce.|  
-|**Začátek znaku zdroje**|Posun počáteční znak v řádku souboru původního, kdy byl shromážděn této ukázce.|  
-|**End znaku zdroje**|Posun ukončovací znak v řádku souboru zdroje, kdy byl shromážděn této ukázce.|  
-|**Adresa instrukce**|Adresa instrukce v načíst binárního souboru.|  
-|**Výhradní ukázky**|Celkový počet vzorků, které byly shromážděny při provádění pokynů.|  
-|**% Výhradní ukázky**|Procento všechny ukázky v profilaci spuštění, které byly shromážděny při provádění pokynů.|  
+|**Název modulu**|Název modulu, který obsahuje instrukce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje instrukce.|  
+|**Zdrojový soubor**|Zdrojový soubor, který obsahuje instrukce.|  
+|**Název funkce**|Název funkce, která obsahuje instrukce.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
+|**Adresa funkce**|Počáteční adresa paměti pro funkci načíst binárního souboru.|  
+|**Začátek řádku zdroje**|Počáteční řádek číslo ve zdrojovém souboru, ve kterém byl shromážděn této ukázce.|  
+|**Konec řádku zdroje**|Koncové číslo řádku ve zdrojovém souboru, ve kterém byl shromážděn této ukázce.|  
+|**Počáteční znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku shromáždění této ukázce.|  
+|**Koncový znak zdrojového kódu**|Posun poslední znak v řádku zdrojového souboru shromáždění této ukázce.|  
+|**Adresa instrukce**|Adresa instrukce v načíst binární soubor.|  
+|**Výhradní vzorky**|Celkový počet vzorků, které byly shromážděny při provádění podle pokynů.|  
+|**% Výhradních vzorků**|Procento všechny ukázky v běhu profilování, které byly shromážděny při provádění podle pokynů.|  
   
 ## <a name="see-also"></a>Viz také:  
  [Ukazatele na instrukce (IP) zobrazení – vzorkování](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

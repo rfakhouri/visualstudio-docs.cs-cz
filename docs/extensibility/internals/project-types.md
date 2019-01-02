@@ -1,9 +1,6 @@
 ---
-title: Typy projektů | Microsoft Docs
-ms.custom: ''
+title: Typy projektů | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, adding
@@ -14,53 +11,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10fc05f8b1870c259bf0f2bc7494beeff141c387
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 52d1f4f1ec6f551950fdb47808c340f8e3c41cfc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888790"
 ---
 # <a name="project-types"></a>Typy projektů
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje několik typů projekt pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umožňuje taky vytvořit vlastní typy projektů.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje několik typů projektů pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také umožňuje vytvořit vlastní typy projektů.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Essentials](../../extensibility/internals/project-type-essentials.md)  
- Uvede důležité informace, které je nutné mít ke začít pracovat s typy projektů.  
+ [Základy](../../extensibility/internals/project-type-essentials.md)  
+ Uvádí důležité informace, které chcete začít pracovat s typy projektů.  
   
  [Vytváření typů projektů](../../extensibility/internals/creating-project-types.md)  
- Popisuje návrh typy projektů.  
+ Tento článek popisuje návrhu typů projektů.  
   
  [Přidání příkazu do panelu nástrojů Průzkumník řešení](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)  
- Podrobně popisuje kroky, které je třeba provést při přidání tlačítka do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Průzkumníku řešení** panelu nástrojů.  
+ Podrobně popisuje kroky, které je třeba provést pro přidání tlačítka pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Průzkumníka řešení** nástrojů.  
   
  [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)  
- Popisuje, jak můžete přidat šablony do vaší typy projektů tak, aby uživatelé mohou vytvářet nové projekty a položky projektu podle vzor.  
+ Tento článek popisuje, jak můžete přidat šablony na daný typ projektu tak, aby uživatelé mohou vytvářet nové projekty a položky projektu podle vzoru.  
   
  [Otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md)  
- Poskytuje informace o tom, jak spravovat položky, které podporuje typ vašeho projektu.  
+ Poskytuje informace o tom, jak spravovat položky, které váš typ projektu podporuje.  
   
  [Správa možností konfigurace](../../extensibility/internals/managing-configuration-options.md)  
- Popisuje, jak vaše typy projektů může podporovat možnosti konfigurace, například ladění a vydání, které řídí způsob sestavení projektů, ladit, a tak dále.  
+ Tento článek popisuje, jak vaše typy projektů může podporovat možnosti konfigurace, jako je ladění a verze, které řídí, jak jsou projekty sestaveny, ladit, a tak dále.  
   
  [Podpora správy zdrojového kódu](../../extensibility/internals/supporting-source-control.md)  
- Poskytuje informace o tom, jak přidat podporu pro systémy správy zdrojového kódu do vaší typy projektů.  
+ Poskytuje informace o tom, jak přidat podporu pro systémy správy zdrojového kódu na daný typ projektu.  
   
  [Vnoření projektů](../../extensibility/internals/nesting-projects.md)  
- Vysvětluje, jak může podporovat vaše typy projektů *vnoření*tak, aby projekty mohou být seskupeny ve **Průzkumníku řešení**.  
+ Vysvětluje, jak může podporovat vaše typy projektů *vnoření*tak, aby projektů mohou být seskupeny do **Průzkumníka řešení**.  
   
  [Upgrade projektů](../../extensibility/internals/upgrading-projects.md)  
- Popisuje, jak můžete typ vašeho projektu účastnit Průvodce upgradem upgrade souborů projektu ze starší verze aplikace [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Popisuje, jak váš projekt typ mohl podílet na Průvodce upgradem upgradovat soubory projektu ze starší verze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Architektura](../../extensibility/internals/project-types-architecture.md)  
  Poskytuje podrobné technické informace o typech projektů.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Hierarchie a výběr](../../extensibility/internals/hierarchies-and-selection.md)  
- Poskytuje přehled o tom, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) zobrazí projektu jako hierarchie.  
+ Obsahuje základní informace o tom, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) se zobrazí jako hierarchii projektu.  
   
  [Podtypy projektů](../../extensibility/internals/project-subtypes.md)  
- Obsahuje odkazy na projekt dílčí témata. Projekt podtypů povolit rozšíření většinou druhů typy projektů, včetně vlastní.  
+ Obsahuje odkazy na témata podtyp projektu. Podtypy projektů povolit rozšíření většinou druhů typy projektů, včetně vašich vlastních.  
   
  [Projekty](../../extensibility/internals/projects.md)  
- Popisuje, jak rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu systému.
+ Popisuje, jak rozšířit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] systém projektů.

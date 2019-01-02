@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: skrývání listů prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Skrývání listů prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a60a0189af5608496e1f0f415a2d668e896af8e3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8e03ce17e41c81a6d3cfda4f66d1ecee1946fa3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821445"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>Postupy: skrývání listů prostřednictvím kódu programu
+# <a name="how-to-programmatically-hide-worksheets"></a>Postupy: Skrývání listů prostřednictvím kódu programu
   Můžete zobrazit nebo skrýt všechny listu v sešitu. Chcete-li skrýt listu, pomocí hostitelská položka worksheet nebo přistupovat ke listu pomocí kolekce listů sešitu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -54,9 +51,8 @@ ms.locfileid: "35676580"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: odstraňování listů ze sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Postupy: přesouvání listů v sešitech prostřednictvím kódu programu](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [Postupy: zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Postupy: Odstraňování listů ze sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Postupy: Přesouvání listů v sešitech prostřednictvím kódu programu](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [Postupy: Zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Globální přístup k objektům v projektech pro systém Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  

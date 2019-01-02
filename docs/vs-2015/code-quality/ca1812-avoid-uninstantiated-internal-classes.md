@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f650af446e0e585e190582af21d22ff323021fa9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872074"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Vyhněte se nevytvořeným instancím vnitřních tříd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,6 +103,3 @@ ms.locfileid: "49899783"
  [CA1801: Revize nepoužitých parametrů](../code-quality/ca1801-review-unused-parameters.md)
 
  [CA1804: Odeberte nepoužívané místní hodnoty](../code-quality/ca1804-remove-unused-locals.md)
-
-
-

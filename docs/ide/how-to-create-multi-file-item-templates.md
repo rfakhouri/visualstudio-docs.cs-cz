@@ -2,7 +2,6 @@
 title: Vytváření šablon položek s více soubory
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877650"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Postupy: vytváření šablon položek s více soubory
+# <a name="how-to-create-multi-file-item-templates"></a>Postupy: Vytváření šablon položek s více soubory
 
 Šablony položek může zadat jenom jednu položku, ale někdy položky skládá z více souborů. Například šablonu položky Windows Forms vyžaduje následující tři soubory:
 
@@ -32,7 +31,7 @@ ms.locfileid: "53065406"
 
 ## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Vytvoření šablony položek s více soubory s použitím Průvodce exportem šablony
 
-Stejným způsobem můžete vytvořit šablonu vícesouborové položce, stejně jako šablonu položky jedním souborem. Zobrazit [postup: Tvorba šablon položek s](../ide/how-to-create-item-templates.md). Na **vyberte položky, které chcete exportovat** stránku průvodce, vyberte soubor, který má závislé soubory (například soubor formuláře Windows Forms). Průvodce automaticky obsahuje všechny závislé soubory, jako je například návrháře a soubory prostředků v šabloně.
+Stejným způsobem můžete vytvořit šablonu vícesouborové položce, stejně jako šablonu položky jedním souborem. Zobrazit [jak: Tvorba šablon položek s](../ide/how-to-create-item-templates.md). Na **vyberte položky, které chcete exportovat** stránku průvodce, vyberte soubor, který má závislé soubory (například soubor formuláře Windows Forms). Průvodce automaticky obsahuje všechny závislé soubory, jako je například návrháře a soubory prostředků v šabloně.
 
 ## <a name="to-manually-create-a-multi-file-item-template"></a>Ruční vytvoření šablony položek s více soubory
 
@@ -59,7 +58,7 @@ Stejným způsobem můžete vytvořit šablonu vícesouborové položce, stejně
 
    Do jsou komprimované soubory, které jste vybrali *ZIP* souboru.
 
-1. Kopírovat *ZIP* soubor do umístění šablon položek uživatele. Ve výchozím adresáři je *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ItemTemplates*. Další informace najdete v tématu [postupy: hledání a organizace šablon](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopírovat *ZIP* soubor do umístění šablon položek uživatele. Ve výchozím adresáři je *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ItemTemplates*. Další informace najdete v tématu [jak: Hledání a organizace šablon](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Zavřete sadu Visual Studio a znovu ho otevřít.
 
@@ -99,4 +98,4 @@ Následující příklad ukazuje šablonu formulářů Windows. Když je vytvoř
 - [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
 - [Postupy: Tvorba šablon položek](../ide/how-to-create-item-templates.md)
 - [Parametry šablony](../ide/template-parameters.md)
-- [Postupy: nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Postupy: Nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md)

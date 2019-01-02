@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: abd68b05fc9bcd0438bf3ab002859b9ffae9c650
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0b6eff5920d94d34087cbdd73d3a2345f2da71c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873089"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Konfigurace projektu cloudové služby Azure v sadě Visual Studio
 Projekt Azure cloud service, můžete nakonfigurovat v závislosti na vašich požadavcích pro daný projekt. Můžete nastavit vlastnosti projektu v těchto kategoriích:
@@ -48,4 +47,3 @@ Projekt Azure cloud service, můžete nakonfigurovat v závislosti na vašich po
 
 ## <a name="next-steps"></a>Další kroky
 - [Konfigurace projektu Azure v použití několika konfigurací služby](vs-azure-tools-multiple-services-project-configurations.md)
-

@@ -2,10 +2,9 @@
 title: Méně chyb díky psaní lepšího kódu v C#
 description: Naučte se psát lepší kód s méně chyb
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967573"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>Oprava chyb napsáním lépe C# kódu pomocí sady Visual Studio
 
-Ladění kódu může být časově – a někdy náročný – úloh. Může zabrat určitý čas zjistěte, jak efektivně ladit, ale výkonné prostředí IDE, jako je Visual Studio může být vaše úloha mnohem snazší. Integrované vývojové prostředí můžou pomoct při ladění kódu rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout získat holistický pohled ladění procesu, tak budete vědět, kdy použít analyzátor kódu a kdy se má použít ladicí program a kdy se má použít jiné nástroje.  
+Ladění kódu může být časově – a někdy náročný – úloh. Může zabrat určitý čas zjistěte, jak efektivně ladit, ale výkonné prostředí IDE, jako je Visual Studio může být vaše úloha mnohem snazší. Integrované vývojové prostředí můžou pomoct při ladění kódu rychleji a nejen toto, ale to můžete také psát lepší kód s menším počtem chyb nápovědy. Naše cíle v tomto článku je poskytnout získat holistický pohled ladění procesu, tak budete vědět, kdy použít analyzátor kódu a kdy se má použít ladicí program a kdy se má použít jiné nástroje.
 
 V tomto článku se budeme mluvit o využívání rozhraní IDE pro produktivitu vaší relace ladění. Jsme dotykového ovládání na několik úloh, jako například:
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

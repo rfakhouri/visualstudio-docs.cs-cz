@@ -1,9 +1,6 @@
 ---
 title: Vytvoření systému základního projektu, část 2 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967771"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Vytvoření systému základního projektu, část 2
 První názorný postup v této sérii [vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md), ukazuje postup vytvoření systému základního projektu. Tento návod vychází systému základního projektu tak, že přidáte šablony sady Visual Studio, stránky vlastností a další funkce. Prvního průvodce musíte dokončit před zahájením tohoto objektu.  
@@ -159,7 +156,7 @@ První názorný postup v této sérii [vytvoření systému základního projek
   
 2. Rozbalte **projekty a řešení** uzlu a pak vyberte **sestavíte a spustíte**.  
   
-3. Nastavte **podrobnosti výstupu sestavení projektu nástroje MSBuild** k **normální**. Klikněte na tlačítko **OK**.  
+3. Nastavte **podrobnosti výstupu sestavení projektu nástroje MSBuild** k **normální**. Klikněte na **OK**.  
   
 4. Znovu sestavte projekt SimpleProject.  
   
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. Resetujte experimentální instanci Visual Studio SDK.  
   
-    Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: na **Start** nabídce Najít **Microsoft Visual Studio nebo Microsoft Visual Studio SDK/Tools** složku a pak vyberte **resetování Microsoft Visual Studio experimentální instanci instance**.  
+    Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: Na **Start** nabídce Najít **Microsoft Visual Studio nebo Microsoft Visual Studio SDK/Tools** složku a pak vyberte **resetování Microsoft Visual Studio experimentální instanci**.  
   
-    V novějších verzích Windows: na **Start** zadejte **resetování Microsoft Visual Studio \<verze > experimentální instanci**.  
+    V novějších verzích Windows: Na **Start** zadejte **resetování Microsoft Visual Studio \<verze > experimentální instanci**.  
   
 2. Zobrazí se okno příkazového řádku. Pokud vidíte text **stisknutím libovolné klávesy pokračovat**, klikněte na tlačítko **ENTER**. Jakmile okno se zavře, otevřete sadu Visual Studio.  
   

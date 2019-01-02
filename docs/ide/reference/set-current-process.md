@@ -2,7 +2,6 @@
 title: Nastavit aktuální proces
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
@@ -13,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64561db59cc089d9539ab396cf4e869e92fe1117
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0c01c399dc76d1b328443edef27edd9a921b1b9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855280"
 ---
 # <a name="set-current-process"></a>Nastavit aktuální proces
-Nastaví zadaný proces jako aktivní proces v ladicím programu.
+Nastavujte určený proces jako aktivní proces v ladicím programu.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,10 +31,10 @@ Debug.SetCurrentProcess index
 ## <a name="arguments"></a>Arguments
  `index`
 
- Požadováno. Index proces.
+ Povinný parametr. Index procesu.
 
 ## <a name="remarks"></a>Poznámky
- Můžete se připojit k více procesů při ladění, ale je v každém okamžiku v dubber aktivní pouze jeden proces. Můžete použít `SetCurrentProcess` příkazu nastavte aktivní proces.
+ Můžete se připojit k více procesům při ladění, ale pouze jeden proces je v daném okamžiku aktivní v ladicím programu. Můžete použít `SetCurrentProcess` příkaz pro nastavení aktivního procesu.
 
 ## <a name="example"></a>Příklad
 

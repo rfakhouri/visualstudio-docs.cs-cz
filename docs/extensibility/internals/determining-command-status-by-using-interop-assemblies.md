@@ -1,9 +1,6 @@
 ---
 title: Určení stavu příkazu pomocí spolupracujícího sestavení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, determining command status
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b678e5a7ab87df69ec5f3f41f65a191ecf35911
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d3c6a0f74f6f9f684e35c927bafc2ead7c19485
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967745"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Určení stavu příkazu pomocí spolupracujícího sestavení
 VSPackage musí udržovat přehled o stavu příkazy, které dokáže zpracovat. Prostředí nelze určit, když se stane příkaz zpracovávají v rámci vašeho balíčku VSPackage povoleno nebo zakázáno. Je zodpovědností vašeho balíčku VSPackage informovat o stavech příkazového prostředí, například stav Obecné příkazy, jako **Vyjmout**, **kopírování**, a **vložit**.  

@@ -1,9 +1,6 @@
 ---
 title: DEBUGREF_INFO_FLAGS | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25f0f746fbc44453d1b044d3d1ea5e8172411eff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837651"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Určuje, jaké informace se mají načíst informace o ladění referenční objekt.  
@@ -28,7 +25,7 @@ Určuje, jaké informace se mají načíst informace o ladění referenční obj
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_DEBUGREF_INFO_FLAGS {   
+enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
    DEBUGREF_INFO_VALUE            = 0x00000004,  
@@ -43,7 +40,7 @@ typedef DWORD DEBUGREF_INFO_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DEBUGREF_INFO_FLAGS {   
+public enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
    DEBUGREF_INFO_VALUE            = 0x00000004,  
@@ -94,9 +91,9 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

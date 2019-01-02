@@ -1,9 +1,6 @@
 ---
-title: IDebugArrayField | Microsoft Docs
-ms.custom: ''
+title: IDebugArrayField | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayField
@@ -15,27 +12,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eafb28411ad392d690adaecc46e06f1d16a8d24a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a16be2cd972688ef27816caacba2b5b0cfb53d4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885650"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
-Toto rozhraní popisuje na symbol pole nebo typu.  
+Toto rozhraní popisuje symbolu pole nebo typu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugArrayField : IDebugContainerField  
+IDebugArrayField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní implementuje poskytovatele symbol pro stejný objekt, který implementuje [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní. Toto rozhraní je specializace, která představuje pole objektů.  
+ Poskytovatel symbolů implementuje na stejný objekt, který implementuje toto rozhraní [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní. Toto rozhraní je specializací, který představuje pole objektů.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Použití [QueryInterface](/cpp/atl/queryinterface) k získání tohoto rozhraní z [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní Pokud [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) vrátí příznak `FIELD_TYPE_ARRAY`.  
+ Použití [QueryInterface](/cpp/atl/queryinterface) získat z tohoto rozhraní [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní, pokud [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) vrátí příznak `FIELD_TYPE_ARRAY`.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  Kromě metod na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) a [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní, toto rozhraní implementuje následující:  
@@ -43,17 +40,17 @@ IDebugArrayField : IDebugContainerField
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetNumberOfElements](../../../extensibility/debugger/reference/idebugarrayfield-getnumberofelements.md)|Získá počet prvků v poli.|  
-|[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|Získá typ elementu v poli.|  
-|[Getrank –](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|Získá pořadí pole.|  
+|[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|Získá typ prvku v poli.|  
+|[GetRank](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|Získá řád objektu array.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Zprostředkovatel rozhraní symbol](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Rozhraní poskytovatele symbolů](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

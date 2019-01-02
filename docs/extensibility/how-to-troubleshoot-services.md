@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: odstraňování potíží se službami | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Odstraňování potíží se službami | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2e1e59b5d2bd1210511b355676407a1368143f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877939"
 ---
-# <a name="how-to-troubleshoot-services"></a>Postupy: odstraňování potíží se službami
+# <a name="how-to-troubleshoot-services"></a>Postupy: Odstraňování potíží se službami
 Existuje několik běžných problémů, které se mohou vyskytnout při pokusu o získání služby:  
   
 - Služba není zaregistrována [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -41,7 +38,7 @@ if (log == null) return;
   
 ## <a name="to-troubleshoot-a-service"></a>Řešení potíží s služby  
   
-1. Zkontrolujte, jestli služba správně zaregistrovaný do systémového registru. Další informace najdete v tématu [postupy: poskytování služby](../extensibility/how-to-provide-a-service.md).  
+1. Zkontrolujte, jestli služba správně zaregistrovaný do systémového registru. Další informace najdete v tématu [jak: Poskytování služeb](../extensibility/how-to-provide-a-service.md).  
   
     Následující *.reg* souboru fragmentu ukazuje, jak může být služba SVsTextManager zaregistrovaná:  
   

@@ -1,9 +1,7 @@
 ---
-title: 'Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka'
-ms.custom: ''
+title: 'Krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: be9163ce831f556310a17b72c3833d9756ddf952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887890"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka
 
 V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následujícím způsobem:
 
@@ -28,7 +26,7 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko jako funkční následu
 
 Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vám pomůže psát kód. Při zadávání kódu, rozhraní IDE otevře pole s navrhovaným dokončením pro částečná slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou si vybrat ze seznamu. Můžete použít nahoru nebo dolů šipkami přesunout v seznamu, nebo můžete pokračovat v psaní písmen k zúžení voleb. Když se zobrazí možnost chcete, zvolte **kartu** stisknutím klávesy. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.
 
-![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). Toto video používá starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 4](https://msdn.microsoft.com/vstudio/gg315355.aspx). Toto video používá starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Vytvoření kódu pro zobrazení obslužné rutiny události obrázku tlačítka
 
@@ -65,7 +63,7 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
 
          Další informace o `ShowDialog()` metodu, najdete v článku [metody ShowDialog](<xref:System.Windows.Forms.Form.ShowDialog%2A>).
 
-    5.  Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` by měl nyní vypadat takto: "openFileDialog1.ShowDialog()".
+    5.  Při použití metody u ovládacího prvku nebo komponenty (označované jako *volání metody*), je třeba přidat závorky. Zadejte proto počáteční a ihned po "g" v `ShowDialog`: `()` To by teď měl vypadat takto: "openFileDialog1.ShowDialog()".
 
         > [!NOTE]
         > Metody jsou důležitou součástí každého programu a tento kurz ukázal několik způsobů, jak používat metody. Můžete volat metodu komponenty, které sděluje, má něco udělat, jako jste volali **OpenFileDialog** komponenty `ShowDialog()` metody. Můžete vytvořit vlastní metody, aby váš program prováděl akce, jako vytváříte nyní, volá se, `showButton_Click()` metodu, která otevře dialogové okno a obrázek, když uživatel vybere tlačítko.
@@ -97,6 +95,6 @@ Rozhraní IDE má výkonný nástroj zvaný technologie IntelliSense, která vá
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: revize, komentovat a testují vytvořený kód](../ide/step-9-review-comment-and-test-your-code.md).
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 9: Zkontrolujte, komentáře a testují vytvořený kód](../ide/step-9-review-comment-and-test-your-code.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 7: Přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md).

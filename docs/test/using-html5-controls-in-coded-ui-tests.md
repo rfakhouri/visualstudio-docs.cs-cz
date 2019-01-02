@@ -2,19 +2,18 @@
 title: Použití ovládacích prvků HTML5 v programových testech UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883023"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 
@@ -34,7 +33,7 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
 
 ## <a name="audio-control"></a>Ovládací prvek zvuku
 
-**Ovládací prvek zvuku:** akce na ovládacím prvku Audio HTML5 se správně se zaznamenávají a přehrát.
+**Ovládací prvek zvuku:** Akce na ovládacím prvku HTML5 Audio se správně zaznamenávají a přehrát.
 
 ![HTML5 Audio ovládacího prvku](../test/media/codedui_html5_audio.png)
 
@@ -49,16 +48,16 @@ Programové testy UI zahrnují podporu pro některé ovládací prvky jazyka HTM
 
 Zobrazit [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) pro seznam vlastností, na které můžete přidat kontrolní výraz.
 
- **Prohledat vlastnosti:** vlastnosti hledání pro `HtmlAudio` jsou `Id`, `Name` a `Title`.
+ **Vlastnosti hledání:** Vlastnosti hledání pro `HtmlAudio` jsou `Id`, `Name` a `Title`.
 
- **Vlastnosti filtru:** vlastnosti filtru pro `HtmlAudio` jsou `Src`, `Class`, `ControlDefinition` a `TagInstance`.
+ **Vlastnosti filtru:** Vlastnosti filtru pro `HtmlAudio` jsou `Src`, `Class`, `ControlDefinition` a `TagInstance`.
 
 > [!NOTE]
 > Můžou být významné množství času pro hledání a pozastavit. Během přehrávání programového testu uživatelského rozhraní počká, až do zadaného času v `(TimeSpan)` před pozastavením zvuku. Pokud pomocí některé zvláštní okolnosti, určený čas uplynul před tím příkazu k pozastavení, bude vyvolána výjimka.
 
 
 ## <a name="video-control"></a>Ovládacího prvku video
- **Ovládacího prvku Video:** akce na ovládacím prvku jako videa HTML5 správně se zaznamenávají a přehrát.
+ **Ovládacího prvku Video:** Akce na ovládacím prvku jako videa HTML5 správně se zaznamenávají a přehrát.
 
  ![Ovládací prvek jako videa HTML5](../test/media/codedui_html5_video.png)
 
@@ -73,15 +72,15 @@ Zobrazit [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudio
 
 Zobrazit [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) pro seznam vlastností, na které můžete přidat kontrolní výraz.
 
- **Prohledat vlastnosti:** vlastnosti hledání pro `HtmlVideo` jsou `Id`, `Name` a `Title`.
+ **Vlastnosti hledání:** Vlastnosti hledání pro `HtmlVideo` jsou `Id`, `Name` a `Title`.
 
- **Vlastnosti filtru:** vlastnosti filtru pro `HtmlVideo` jsou `Src`, `Poster`, `Class`, `ControlDefinition` a `TagInstance`.
+ **Vlastnosti filtru:** Vlastnosti filtru pro `HtmlVideo` jsou `Src`, `Poster`, `Class`, `ControlDefinition` a `TagInstance`.
 
 > [!NOTE]
 > Pokud rewind nebo rychlé převinutí vpřed videa pomocí-30s nebo +30s popisky, se budou agregovat hledání správný čas.
 
 ## <a name="progressbar"></a>ProgressBar
- **ProgressBar – ovládací prvek:** The ProgressBar je – interactable ovládací prvek. Můžete přidat kontrolní výrazy na `Value` a `Max` vlastnosti tohoto ovládacího prvku. Další informace najdete v tématu [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+ **ProgressBar – ovládací prvek:** Ovládací prvek ProgressBar je – interactable ovládací prvek. Můžete přidat kontrolní výrazy na `Value` a `Max` vlastnosti tohoto ovládacího prvku. Další informace najdete v tématu [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
  ![Ovládací prvek HTML5 ProgressBar](../test/media/codedui_html5_progressbar.png)
 

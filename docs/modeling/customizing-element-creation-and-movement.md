@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821034"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 
@@ -91,7 +90,7 @@ Uživatelům také můžete vložit prvky do dalších prvků.
 
    1.  V **Průzkumník DSL**, rozbalte **doménovými třídami**. Klikněte pravým tlačítkem na `ExampleElement` a potom klikněte na tlačítko **přidat nové direktiva sloučení elementů**.
 
-   2.  Ujistěte se, že **podrobnosti DSL** tak, aby si můžete zobrazit podrobnosti nové EMD je otevřeno, okno. (Nabídka: **zobrazení**, **jiných Windows**, **podrobnosti DSL**.)
+   2.  Ujistěte se, že **podrobnosti DSL** tak, aby si můžete zobrazit podrobnosti nové EMD je otevřeno, okno. (Nabídka: **Zobrazit**, **jiných Windows**, **podrobnosti DSL**.)
 
 3. Nastavte **indexování třídy** v okně podrobností DSL, chcete-li definovat, jaké třídy prvků může být sloučeny do `ExampleElement` objekty.
 
@@ -145,7 +144,7 @@ Všimněte si následujících z tohoto postupu:
 
      Můžete psát vlastní kód, který vytvoří nové prvky, můžete explicitně vyvolat EMD pomocí `ElementOperations.Merge` metody. Tím zajistíte, že váš kód odkazuje nové prvky do modelu stejným způsobem jako jiné operace. Další informace najdete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Příklad: Přidání vlastní přijetí kódu do EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>Příklad: Přidání kódu EMD vlastní přijetí
 
 Do EMD přidáte vlastní kód, můžete definovat složitější chování sloučení. Tento jednoduchý příklad zabrání uživateli v přidávání více než pevný počet elementů do diagramu. V příkladu změní výchozí EMD, který doprovází vztah obsažení.
 

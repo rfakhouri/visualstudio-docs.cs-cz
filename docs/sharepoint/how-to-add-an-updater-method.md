@@ -1,13 +1,8 @@
 ---
 title: 'Postupy: Přidání aktualizační metody | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872515"
 ---
 # <a name="how-to-add-an-updater-method"></a>Postupy: Přidání aktualizační metody
   Můžete povolit uživatelům aktualizovat tak, že vytvoříte obchodních dat v Sharepointovém seznamu externích *Updater* metody. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -48,7 +43,7 @@ ms.locfileid: "49951415"
   
    - Vstupní parametr metody.  
   
-   - Popisovač typu pro parametr. Ve výchozím nastavení, Visual Studio používá popisovače typu entity, který jste definovali pro metody Finder (například: kontakt).  
+   - Popisovač typu pro parametr. Ve výchozím nastavení, Visual Studio používá popisovače typu entity, který jste definovali pro metody Finder (například: Kontakt).  
   
    - Instance metody k metodě.  
   
@@ -71,13 +66,11 @@ ms.locfileid: "49951415"
   
 ## <a name="see-also"></a>Viz také:
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
- [Postupy: Přidání specifické vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
+ [Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
+ [Postupy: Přidání konkrétní vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
- [Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
  [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 
+ [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  

@@ -1,9 +1,6 @@
 ---
 title: Vývoj řešení pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 53f94016eb354b3c3e5255e37b8399b3687352dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856602"
 ---
 # <a name="develop-office-solutions"></a>Vývoj řešení pro systém Office
   Po návrh projektu pomocí nástroje Office developer tools v sadě Visual Studio a nastavit soubory projektu, můžete začít se soustředit na implementaci kódu a vlastní uživatelské rozhraní (UI).  
@@ -73,5 +70,3 @@ ms.locfileid: "53648849"
  [Návod: Vytvoření vašeho prvního doplňku VSTO pro Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [Návod: Vytvoření vašeho prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
  [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
-  
-  

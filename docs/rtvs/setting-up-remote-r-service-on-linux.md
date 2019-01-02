@@ -3,7 +3,6 @@ title: Nastavení vzdálené služby R na Linuxu
 description: Jak nastavit vzdálené služby R na Ubuntu a subsystém Windows pro Linux.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 81a0a5c26e91056e757bc6e6f68cd217e98c7e06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835942"
 ---
 # <a name="remote-r-service-for-linux"></a>Vzdálená služba R pro Linux
 
@@ -89,7 +88,7 @@ V obou případech vzdálený počítač musí mít jednu z těchto balíčků p
 
 #### <a name="create-a-vm"></a>Vytvoření virtuálního počítače
 
-1. Přihlaste se k [webu Azure portal](https://portal.azure.com).
+1. Přihlaste se k webu [Azure Portal](https://portal.azure.com).
 1. Přejděte na virtuální počítače a pak vyberte **přidat**.
 1. V seznamu dostupných imagí virtuálních počítačů vyhledejte a vyberte jednu z následujících akcí:
     - Server se systémem Ubuntu: `Ubuntu Server 16.04 LTS`
@@ -170,4 +169,3 @@ V obou případech vzdálený počítač musí mít jednu z těchto balíčků p
     ```
 1. Použití `az container list` příkaz a zkontrolujte stav. Vyhledejte `provisioningState`: `Succeeded`.
 1. Pokud Zřizování proběhlo úspěšně, je možné připojit se ke kontejneru. Vyhledejte veřejnou IP adresu v `ipAddress` pole, který použijete pro připojení ke kontejneru z RTVS s přihlašovacími údaji v souboru docker.
-

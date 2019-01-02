@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1244fb2ba0a9e902d4dd853e7bef25376a205a0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9891e54986cd829c92ab3f5a5ad3a81590cf1474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871197"
 ---
-# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Postupy: načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu
+# <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Postupy: Načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu
   Tento příklad ukazuje, jak můžete načíst pozice znaku pozic začátek a konec rozsahu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -45,11 +42,9 @@ ms.locfileid: "35675857"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#25](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#25)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Postupy: Programová resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Postupy: oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Postupy: Programová vyloučení značek odstavů při vytváření oblastí](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Postupy: Programová počet znaků v dokumentech](../vsto/how-to-programmatically-count-characters-in-documents.md)  
-  
-  
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Postupy: Programově resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Postupy: Programově vyloučení značek odstavů při vytváření oblastí](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Postupy: Programově počet znaků v dokumentech](../vsto/how-to-programmatically-count-characters-in-documents.md)  

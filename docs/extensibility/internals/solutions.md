@@ -1,9 +1,6 @@
 ---
-title: Řešení | Microsoft Docs
-ms.custom: ''
+title: Řešení | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, VSPackages
@@ -14,23 +11,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d04b64eaec14fb91e76cf1d5edc6c7151b0008b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14c2a5f9d5c9d2a3a7a3425ee34f8e895a856052
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869476"
 ---
 # <a name="solutions"></a>Řešení
-Řešení je skupina jednoho nebo více projektů, které vzájemně spolupracují a vytvoření aplikace. Projekt a stavové informace, které se vztahují k řešení jsou uloženy v dva soubory řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatele možnost (.suo).  
+Řešení je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stav informace, které se týkají řešení se ukládají do dvou souborů řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatelské možnosti (.suo).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Přehled](../../extensibility/internals/solutions-overview.md)  
- Popisuje typy souborů řešení, které jsou součástí řešení a proces, který nastane, když je otevřen řešení.  
+ Tento článek popisuje typy řešení souborů zahrnutých v řešení a proces, který nastane při otevření řešení.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Soubor řešení (.Sln)](../../extensibility/internals/solution-dot-sln-file.md)  
- Vysvětluje strukturu soubor .sln.  
+ Vysvětluje strukturu souboru .sln.  
   
  [Soubor uživatelských možností řešení (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
- Vysvětluje .suo soubor.
+ Vysvětluje soubor .suo.

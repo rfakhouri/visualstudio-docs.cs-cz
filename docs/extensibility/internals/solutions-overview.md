@@ -1,9 +1,6 @@
 ---
 title: Přehled řešení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97070a3c47f5e102ce974e0d7eeeea0380beff57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874586"
 ---
 # <a name="solutions-overview"></a>Přehled řešení
 Řešení je seskupení jednoho nebo více projektů, které vzájemně spolupracují na vytvoření aplikace. Projekt a stavové informace týkající se řešení jsou uloženy ve dvou souborech jiné řešení. Soubor řešení (.sln) je založený na textu a můžete umístit pod správou zdrojového kódu a sdílet mezi uživateli. Soubor řešení uživatelské možnosti (.suo) je binární. Soubor .suo v důsledku toho nemůže být umístěn pod správou zdrojového kódu a obsahuje informace specifické pro uživatele.  

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Rozšiřování typu položky projektu služby SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Rozšiřování typu položky projektu služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868664"
 ---
-# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Návod: Rozšíření typu položky projektu SharePoint
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Průvodce: Rozšíření typu položky projektu SharePoint
   Můžete použít **Model Připojení obchodních dat** položku projektu pro vytvoření modelu služby připojení dat obchodní (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí tuto položku projektu data v modelu se uživatelům nezobrazí. Musíte také vytvořit externí seznam na Sharepointu a umožňují uživatelům zobrazovat data.  
   
  V tomto návodu vytvoříte rozšíření pro **Model Připojení obchodních dat** položky projektu. Mohou vývojáři rozšíření vytvořit externí seznam v jejich projektu, který zobrazuje data v modelu služby BDC. Tento návod demonstruje následující úkoly:  
@@ -150,7 +147,7 @@ ms.locfileid: "51295719"
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  V tomto okamžiku návodu je celý kód pro rozšíření položky projektu v projektu. Sestavte řešení, abyste měli jistotu, že se projekt zkompiluje bez chyb.  
   
 #### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení  
@@ -299,5 +296,3 @@ ms.locfileid: "51295719"
  [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

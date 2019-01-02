@@ -1,9 +1,6 @@
 ---
-title: IDebugExtendedField | Microsoft Docs
-ms.custom: ''
+title: IDebugExtendedField | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExtendedField interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eedb327e19d012c653a9a5411c0ba7f1924cb369
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a503ff99542215ba5922feb860fc04cd047ce287
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869671"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-Rozšiřuje typy polí, které jsou k dispozici pro podporu obecné spravovaného kódu.  
+Rozšiřuje typy polí, které jsou k dispozici pro podporu obecných typů spravovaného kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,12 +31,12 @@ IDebugExtendedField : IDebugField
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Načte druh zadané rozšířené pole.|  
-|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Určuje, pokud toto pole představuje typ uzavřené.|  
+|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|Získá typ zadané rozšířené pole.|  
+|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|Určuje, zda pole představuje uzavřený typ.|  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Sh.h  
+ Záhlaví: SH.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

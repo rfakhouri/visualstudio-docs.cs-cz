@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: přístup k vestavěné písma a barvy schéma | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přístup k vestavěné písma a barvy schéma | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874599"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Postupy: přístup k vestavěné písma a barev ccheme
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Postupy: Přístup k vestavěné písma a barev ccheme
 Integrovaného vývojového prostředí (IDE) sady Visual Studio obsahuje schéma písma a barvy, který je spojen s okno editoru. Toto schéma prostřednictvím můžete přistupovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní.
 
  Pokud chcete použít integrované písma a barvy schéma, musíte VSPackage:

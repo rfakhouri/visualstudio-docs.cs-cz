@@ -1,9 +1,6 @@
 ---
-title: IDebugEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff8be869bd65def16ca0519f7c87ea82320bb99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870161"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Toto rozhraní se používá ke komunikaci kritické ladicí informace, jako je například pozastavení na zarážce a méně důležité informace, například zprávu ladění.  
+Toto rozhraní se používá ke komunikaci důležitých informací o ladění, jako je například pozastavení na zarážce a méně důležité informace, jako je například zprávu ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,29 +29,29 @@ IDebugEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Ladění modulu (DE) a vlastní port dodavatele toto rozhraní implementovat na stejný objekt jako všechny ostatní události rozhraní.  
+ Ladicí stroj (DE) a vlastní port dodavatele implementovat toto rozhraní na stejný objekt jako všechny ostatní události rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Pomocí rozhraní argument ID (IID) zadané [událostí](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) nebo [událostí](../../../extensibility/debugger/reference/idebugportevents2-event.md), volá správce ladicí relace (SDM) [QueryInterface](/cpp/atl/queryinterface) na `IDebugEvent2` rozhraní k získání rozhraní příslušné události.  
+ Pomocí rozhraní argument ID (IID) k [události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) nebo [události](../../../extensibility/debugger/reference/idebugportevents2-event.md), Správce ladění relace (SDM) volá [QueryInterface](/cpp/atl/queryinterface) na `IDebugEvent2` rozhraní získat rozhraní odpovídající události.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugEvent2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugEvent2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Získá atributy pro tuto událost ladění.|  
   
 ## <a name="remarks"></a>Poznámky  
- Více konkrétních událostí rozhraní, jako například [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), není odvozen z rozhraní IDebugEvent2, ale místo toho jsou implementované jako samostatné rozhraní na stejný objekt jako `IDebugEvent2`.  
+ Konkrétnější události rozhraní, jako například [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), není odvozen z rozhraní IDebugEvent2, ale místo toho jsou implementované jako samostatné rozhraní na stejný objekt jako `IDebugEvent2`.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   
  [Události](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
- [Události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

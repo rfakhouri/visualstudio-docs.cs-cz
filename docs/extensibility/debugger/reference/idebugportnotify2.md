@@ -1,9 +1,6 @@
 ---
-title: IDebugPortNotify2 | Microsoft Docs
-ms.custom: ''
+title: IDebugPortNotify2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortNotify2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1874b46e702af49bf8f0a738b9e764f2fa11014
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61cc6f609295022c27b18895f905e7931c834e8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876874"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
-Toto rozhraní zaregistruje nebo program, který můžete ladit s port, který je spuštěn na zrušení registrace.  
+Toto rozhraní zaregistruje nebo zruší registraci program, který lze ladit s portem, který je spuštěn na.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,28 +29,28 @@ IDebugPortNotify2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní pro podporu přidávání a odebírání programů od portu, který implementuje vlastní port dodavatele. Obvykle je implementované na stejný objekt, který implementuje [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) rozhraní.  
+ Dodavatel port. Tento vlastní port implementuje toto rozhraní pro podporu přidávání a odebírání programů z portu. Obvykle je implementované na stejný objekt, který implementuje [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Volání [QueryInterface](/cpp/atl/queryinterface) na `IDebugPort2` rozhraní vrátí toto rozhraní. Navíc volání [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) vrátí toto rozhraní. Modul ladění uvidí jako parametr pro toto rozhraní [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).  
+ Volání [QueryInterface](/cpp/atl/queryinterface) na `IDebugPort2` rozhraní vrátí toto rozhraní. Kromě toho volání [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) vrátí toto rozhraní. Ladicí stroj můžete zobrazit toto rozhraní jako parametr [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugPortNotify2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugPortNotify2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registruje program, který můžete ladit port, který je spuštěn na.|  
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Zruší registraci program, který můžete ladit z port, který je spuštěn na.|  
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Zaregistruje port, který je spuštěn na program, který lze ladit.|  
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Zruší registraci program, který lze ladit z portu, který je spuštěn na.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud port ladění má způsob, jak zjistit, kdy jsou programy načten nebo odpojeno, musí toto rozhraní implementovat vlastní port dodavatele. Všechny programy, které jsou načtené pro ladění přes konkrétní port jsou sledovány použití tohoto rozhraní.  
+ Pokud není port pro ladění je způsob, jak zjistit, když programy jsou načteny nebo uvolněny, dodavatel port. Tento vlastní port musí implementovat toto rozhraní. Všechny programy, které jsou načteny pro ladění přes konkrétní port jsou sledovány v tomto rozhraní.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

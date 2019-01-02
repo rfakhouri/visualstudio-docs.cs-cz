@@ -1,9 +1,6 @@
 ---
 title: Vztah důvěryhodnosti řešení pro systém Office s použitím seznamů povolených položek
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e2fea115b941af4b119b59dade16114cab3383d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857663"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Vztah důvěryhodnosti řešení pro systém Office s použitím seznamů povolených položek
   Seznamy povolených položek povolit uživatelům, aby měli vztah důvěryhodnosti pro řešení pro Office, které jsou podepsané certifikátem, který identifikuje vydavatele. Seznamy povolených položek jsou specifické pro uživatele a mohou být použity pro přizpůsobení na úrovni dokumentu a doplňky VSTO.  
@@ -40,7 +37,7 @@ ms.locfileid: "38783698"
   
  Pokud dotazování je zakázaná, lze nainstalovat pouze řešení, které mají důvěryhodným a známým certifikátu. Pokud úroveň vyzývá k tomu je nastavena na Authenticode vyžaduje, řešení musí být podepsané certifikátem ze známé autority, ale nevyžaduje certifikát, který je zřetězen k důvěryhodné kořenové autoritě (důvěryhodný certifikát). Pokud je povoleno dotazování, řešení by mohla podepsaný certifikátem s identitou neznámý. V tomto scénáři rozhodnutí důvěryhodnosti je odloženo pro koncového uživatele a dočasné certifikátu by dostatečná k instalaci řešení.  
   
- Další informace najdete v tématu [postupy: konfigurace zabezpečení se seznamem povolených položek](../vsto/how-to-configure-inclusion-list-security.md) a tabulka 2 s názvem dotazování úroveň registru klíč hodnota spuštění efekty, v [konfigurace ClickOnce důvěryhodného vydavatele](http://go.microsoft.com/fwlink/?LinkId=94774).  
+ Další informace najdete v tématu [jak: Konfigurace zabezpečení se seznamem povolených položek](../vsto/how-to-configure-inclusion-list-security.md) a tabulka 2 s názvem dotazování úroveň registru klíč hodnota spuštění efekty, v [konfigurace ClickOnce důvěryhodného vydavatele](http://go.microsoft.com/fwlink/?LinkId=94774).  
   
 ## <a name="structure-of-the-inclusion-list"></a>Struktura seznamu povolených položek  
  Položka seznamu platný zahrnutí má dvě části: cesta k manifestu nasazení a veřejný klíč používaný k podepisování řešení. Po přidání řešení do seznamu povolených položek se považuje za důvěryhodný. Při spuštění řešení pro Office, aplikace Office porovnává veřejný klíč v seznamu povolených položek s podpisový klíč v manifestu nasazení můžete ověřit, že na řešení, které aktuálně běží stejný jako původní verze důvěryhodné.  
@@ -48,5 +45,3 @@ ms.locfileid: "38783698"
 ## <a name="see-also"></a>Viz také:  
  [Zajistit jeho důvěryhodnost do řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
-  
-  

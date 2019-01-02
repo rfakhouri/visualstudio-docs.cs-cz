@@ -1,9 +1,6 @@
 ---
 title: Vytváření znovu použitelných skupin tlačítek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4d340e13b6335b7dfde835cc21c48f6ded8cff3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885590"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Vytváření znovu použitelných skupin tlačítek
 Skupina příkazu je kolekce příkazů, které se vždy zobrazují společně na nabídku nebo panel nástrojů. Všechny skupiny příkazů, lze ji znovu použít přiřazením do jiné nadřazené nabídky v části commandplacements – *.vsct* souboru.  

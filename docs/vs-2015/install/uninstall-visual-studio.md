@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 71e1318444c0b03ee5b2b9024c13bfbeb51b5c41
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 985f99afb0f9c0e659586d7878df94bf1b7266c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822422"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +46,7 @@ Tato stránka vás provede odinstalací sady Visual Studio 2015, starší verzi 
 1.  Vyhledejte soubor .exe sady Visual Studio (vyhledejte například "vs_enterprise.exe").
 
     > [!NOTE]
-    >  Soubor by měl být v podsložce "%ProgramData%\Package Cache", například: mezipaměť C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
+    >  Soubor by měl být v podsložce "%ProgramData%\Package Cache", například: Mezipaměť C:\ProgramData\Package\\\vs_enterprise.exe {37e19555-e88d-4aed-9d42-82d0784d2b79}
 
 2.  Spusťte soubor .exe s použitím / uninstall/force parametry příkazového řádku.
 
@@ -77,7 +76,7 @@ Tato stránka vás provede odinstalací sady Visual Studio 2015, starší verzi 
 
 2. Nainstalujte nebo přeinstalujte předchozí verzi sady Visual Studio, kterou chcete použít.
 
-   I v případě, že můžete nainstalovat předchozí verzi sady Visual Studio, instalační program může přesto pokusit použít novější verzi nebo pokud je k dispozici. Podrobnější informace najdete v článku [postupy: instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tématu.
+   I v případě, že můžete nainstalovat předchozí verzi sady Visual Studio, instalační program může přesto pokusit použít novější verzi nebo pokud je k dispozici. Podrobnější informace najdete v článku [jak: Instalace konkrétní verze sady Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tématu.
 
 ## <a name="see-also"></a>Viz také
  [Instalace sady Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vytváření vlastních kalendářů prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Vytváření vlastních kalendářů prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15603c1b433df97138748b3446e23ac6c7f2c231
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a35433913c0a96a35e1f1db4565ef544af4087f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877205"
 ---
-# <a name="how-to-programmatically-create-a-custom-calendar"></a>Postupy: vytváření vlastních kalendářů prostřednictvím kódu programu
+# <a name="how-to-programmatically-create-a-custom-calendar"></a>Postupy: Vytváření vlastních kalendářů prostřednictvím kódu programu
   Tento příklad vytvoří novou složku kalendáře s názvem **PersonalCalendar**a vytvoří novou položku události a přidá jej do složky Kalendář. Kód poté zobrazí kalendář.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -34,7 +31,5 @@ ms.locfileid: "42634905"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s položkami kalendáře](../vsto/working-with-calendar-items.md)   
- [Postupy: vytváření událostí prostřednictvím kódu programu](../vsto/how-to-programmatically-create-appointments.md)   
- [Postupy: vytváření žádostí o schůzku prostřednictvím kódu programu](../vsto/how-to-programmatically-create-a-meeting-request.md)  
-  
-  
+ [Postupy: Vytváření událostí prostřednictvím kódu programu](../vsto/how-to-programmatically-create-appointments.md)   
+ [Postupy: Vytváření žádostí o schůzku prostřednictvím kódu programu](../vsto/how-to-programmatically-create-a-meeting-request.md)  

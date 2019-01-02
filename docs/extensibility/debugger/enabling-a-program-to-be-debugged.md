@@ -1,9 +1,6 @@
 ---
 title: Povolení ladění programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enabling for programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad6e8e9cb8dd34e3cd084bde1eb94ff5774dd4ba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 94034f54457a66b0dccd4ccf2d533915a8d818dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888475"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>Povolit program k ladění
 Předtím, než vaše ladicího stroje (DE) můžete ladit program, musí nejdřív spustit DE nebo připojit k existující program.  

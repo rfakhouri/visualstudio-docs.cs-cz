@@ -1,9 +1,7 @@
 ---
 title: '&lt;doplněk&gt; – element (vývoj pro Office v sadě Visual Studio)'
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e3e5b2c8b123d7dc33693bb3e63326e3e99a776
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867723"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;doplněk&gt; – element (vývoj pro Office v sadě Visual Studio)
   **Doplněk** elementu `vstav3` obor názvů obsahuje informace, které jsou specifické pro Microsoft Office, VSTO doplňků a přizpůsobení na úrovni dokumentu byly vyvinuty v sadě Visual Studio.

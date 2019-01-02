@@ -2,7 +2,6 @@
 title: Příkazové podokno
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7a265fa979d2a6eccc63aeaf05484ef7d06e6972
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966343"
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 **Okamžité** okna slouží k ladění a vyhodnocení výrazů, spuštění příkazů, tisku hodnot proměnných a tak dále. Umožňuje zadat výrazy k vyhodnocování nebo provádění ve vývojovém jazyce během ladění. Pro zobrazení **okamžité** okno, otevřete projekt pro úpravy a pak zvolte **Windows** z **ladění** nabídky a vybereme **okamžité**, nebo stiskněte kombinaci kláves CTRL + ALT + I.

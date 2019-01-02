@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Add-in zobrazení chyb uživatelského rozhraní'
-ms.custom: ''
+title: 'Postupy: Zobrazení doplňku uživatele chyb rozhraní'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5a11f6bcff5d16a6fc12de5db7e1a7410b4357fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819705"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Postupy: Add-in zobrazení chyb uživatelského rozhraní
+# <a name="how-to-show-add-in-user-interface-errors"></a>Postupy: Zobrazení doplňku uživatele chyb rozhraní
   Ve výchozím nastavení pokud doplňku VSTO pokusí pracovat s Microsoft Office uživatelského rozhraní (UI) a selže, žádná se chybová zpráva. Můžete ale nakonfigurovat aplikace Microsoft Office pro zobrazení zprávy pro chyby, které se vztahují na uživatelské rozhraní. Tyto zprávy můžete použít k určení toho, proč se nezobrazí vlastní pás karet nebo proč se zobrazí pásu karet, ale žádné ovládací prvky se zobrazí.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "35676023"
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)  
-  
-  

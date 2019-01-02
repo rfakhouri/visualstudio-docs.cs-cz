@@ -1,9 +1,6 @@
 ---
-title: Řetězce, které jsou použity jako klíče pro vyhledání modulu Plug-in zdrojového kódu | Microsoft Docs
-ms.custom: ''
+title: Řetězce používané jako klíče pro vyhledání modulu Plug-in správy zdrojového kódu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
@@ -13,19 +10,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a42eebe67ce1f611cf6e48883bc09139f241e658
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835747"
 ---
-# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Řetězce, které jsou použity jako klíče pro vyhledání modulu Plug-in zdrojového kódu
-Následující řetězce jsou klíče pro přístup k registru k nalezení informací o ovládacím prvku modulu plug-in.  
+# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Řetězce, které slouží jako klíče pro vyhledání modulu plug-in pro správu zdrojového kódu
+Klíče pro přístup k registru najdete informace o ovládacím prvku modulu plug-in jsou následující řetězce.  
   
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, a `STR_SCCPROVIDERNAME` jsou klíče registru nebo hodnoty používá k registraci knihovny DLL jako modul plug-in Správa zdrojového kódu pro Visual Studio.  
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, a `STR_SCCPROVIDERNAME` jsou klíče registru nebo hodnoty použité k registraci knihovny DLL jako modul plug-in správy zdrojového kódu pro Visual Studio.  
   
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, a `SCC_STATUS_FILE` se používají k popisu formátu MSSCCPRJ. SCC soubor.  
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, a `SCC_STATUS_FILE` se používají k popisu formátu MSSCCPRJ. SCC souboru.  
   
 ## <a name="string-keys-and-values"></a>Řetězec klíče a hodnoty  
   
@@ -41,15 +38,15 @@ Následující řetězce jsou klíče pro přístup k registru k nalezení infor
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
 |`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
 |`SCC_KEY`|SCC|  
-|`SCC_FILE_SIGNATURE`|Soubor ovládacího prvku zdrojového kódu|  
-|`SCC_NSE`|Namespace rozšíření|  
-|`SCC_NSE_PREFIX`|Předpona Protocal|  
+|`SCC_FILE_SIGNATURE`|Soubor zdrojového kódu ovládacího prvku|  
+|`SCC_NSE`|Rozšíření Namespace|  
+|`SCC_NSE_PREFIX`|Předpona protokolem|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
 |`STR_SCCHELPCOLLECTION`|HelpCollection|  
 |`STR_UI_LANGUAGE`|UILanguage|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
 ## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)   
- [Postupy: Instalace modulu Plug-in Správa zdrojového kódu](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Ovládací prvek moduly plug-in zdrojového kódu](../extensibility/source-control-plug-ins.md)   
+ [Postupy: Instalace modulu Plug-in správy zdrojového kódu](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Soubor MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

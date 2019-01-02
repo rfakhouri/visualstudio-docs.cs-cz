@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Správa více vláken ve spravovaném kódu | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e597f46160221b19fe678bbf665782d3f3f5a249
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5db357d90ad7d041f94030141f6c259d52679819
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820209"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Postupy: Správa více vláken ve spravovaném kódu
 Pokud máte spravované rozšíření VSPackage, která volá asynchronní metody nebo má operace, které jsou spouštěny na vlákna kromě vlákna uživatelského rozhraní Visual Studio, postupujte podle pokynů uvedených níže. Vlákna uživatelského rozhraní můžete zachovat responzivní, protože není nutné čekat pro práci v jiném vlákně, k dokončení. Můžete provést kódu efektivnější, protože není nutné další vlákna, které zabírají prostor v zásobníku a je možné provádět spolehlivější a snadněji ladit, protože zabránit zablokování a konflikty. program přestane reagovat.  

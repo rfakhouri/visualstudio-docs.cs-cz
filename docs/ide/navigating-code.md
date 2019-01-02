@@ -2,7 +2,6 @@
 title: Příkazy pro navigaci kódu
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877429"
 ---
 # <a name="navigate-code"></a>Vyhledání kódu
 
@@ -78,19 +77,19 @@ Po kliknutí na symbol ve zdrojovém kódu se zvýrazní všechny výskyty symbo
 
 Přejít na má následující příkazy, které jsou k dispozici v **upravit** nabídky v části **přejít na**:
 
-- **Přejít na řádek** (**Ctrl**+**G**): přesunout na zadaný počet řádků v aktivním dokumentu.
+- **Přejít na řádek** (**Ctrl**+**G**): Přesunout na zadaný počet řádků v aktivním dokumentu.
 
-- **Přejít na vše** (**Ctrl**+**T** nebo **Ctrl**+**,**): Přesune zadaný řádek, typ, soubor, člen nebo symbol.
+- **Přejít ke všem** (**Ctrl**+**T** nebo **Ctrl**+**,**): Přesunout na zadaný řádek, typ, soubor, člen nebo symbol.
 
-- **Přejděte do souboru** (**Ctrl**+**1**, **Ctrl**+**F**): přesunout do zadaného souboru řešení.
+- **Přejděte na soubor** (**Ctrl**+**1**, **Ctrl**+**F**): Přesunout do zadaného souboru v řešení.
 
-- **Přejít na poslední soubor** (**Ctrl**+**1**, **Ctrl**+**R**): přesunout na zadaný, naposledy navštívené soubor řešení (nové v sadě Visual Studio 2017 verze 15.8).
+- **Přejděte na poslední soubor** (**Ctrl**+**1**, **Ctrl**+**R**): Přesuňte do souboru zadaného, naposledy navštívené v řešení (nové v sadě Visual Studio 2017 verze 15.8).
 
-- **Přejít na typ** (**Ctrl**+**1**, **Ctrl**+**T**): přesunout do zadaného typu řešení.
+- **Přejděte na typ** (**Ctrl**+**1**, **Ctrl**+**T**): Přesunout na zadaný typ v řešení.
 
-- **Přejít na člen** (**Ctrl**+**1**, **Ctrl**+**M**): přesunout do zadaného člena v řešení.
+- **Přejděte na člen** (**Ctrl**+**1**, **Ctrl**+**M**): Přesunout do zadaného člena v řešení.
 
-- **Přejít na Symbol** (**Ctrl**+**1**, **Ctrl**+**S**): přesunout na zadaný symbol v řešení.
+- **Přejděte na Symbol** (**Ctrl**+**1**, **Ctrl**+**S**): Přesunout na zadaný symbol v řešení.
 
 V sadě Visual Studio 2017 verze 15,8 a novější, následující **přejít na** navigačními příkazy jsou také k dispozici:
 
@@ -111,7 +110,7 @@ Vstup | Funkce
 
 ## <a name="peek-definition"></a>Náhled definice
 
-Náhled definice zobrazí definici vybraného prvku v okně bez navigaci pryč z aktuální umístění v editoru kódu. Další informace najdete v tématu [postupy: zobrazení a úpravy kódu s použitím definice operace Peek](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) a [přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md).
+Náhled definice zobrazí definici vybraného prvku v okně bez navigaci pryč z aktuální umístění v editoru kódu. Další informace najdete v tématu [jak: Zobrazení a úpravy kódu s použitím definice operace Peek](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) a [přejít k definici a náhled definice](../ide/go-to-and-peek-definition.md).
 
 Vstup | Funkce
 ------------ | ---
@@ -150,7 +149,7 @@ Chcete-li vypnout vodicí čáry struktury, přejděte na **nástroje** > **mož
 
 ## <a name="enhanced-scroll-bar"></a>Rozšířený posuvník
 
-Rozšířený posuvník v okně kódu můžete získat reálné zobrazení kódu. V režimu mapu uvidíte náhledy kódu při přesunutí kurzoru nahoru a dolů posuvníku. Další informace najdete v tématu [postupy: sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Rozšířený posuvník v okně kódu můžete získat reálné zobrazení kódu. V režimu mapu uvidíte náhledy kódu při přesunutí kurzoru nahoru a dolů posuvníku. Další informace najdete v tématu [jak: Sledování kódu přizpůsobením posuvníku](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informace funkce CodeLens
 

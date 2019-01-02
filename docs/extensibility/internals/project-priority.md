@@ -1,9 +1,6 @@
 ---
-title: Projekt s prioritou | Microsoft Docs
-ms.custom: ''
+title: Priorita projektu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27341f78fb17fa5346a9dfbc7cdd3f86439d3d23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873892"
 ---
 # <a name="project-priority"></a>Priorita projektu
-Položka projektu obvykle je členem jenom jedné projekt v řešení. Proto IDE může snadno zjistit projektu, který se používá k otevření položky. Ale pokud je určitá položka členem více než jeden projekt, rozhraní IDE používá schéma s prioritou určit nejlepší projekt pro otevření položky.  
+Položka projektu je obvykle člen pouze jeden projekt v řešení. Proto integrovaného vývojového prostředí lze snadno zjistit, kterého projektu se používá k otevření položky. Ale pokud je určitá položka členem více než jeden projekt, integrovaném vývojovém prostředí používá schéma priority určit nejlepší projektu, otevřete položku.  
   
- Následující seznam obsahuje schéma s prioritou projektu:  
+ Následující seznam obsahuje schéma priority projektu:  
   
--   Volání IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> metodu pro každý projekt v řešení k určení, zda dokument je členem tohoto projektu.  
+-   Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> metodu pro každý projekt v řešení určuje, jestli dokument je členem tohoto projektu.  
   
--   Pokud dokument je členem skupiny projektu, projektu odpovídá s prioritou, projekt přiřadí podle jeho zpracování tohoto dokumentu. Například jazyk projektu odpovídá s vysokou prioritou pro svůj jazyk zdrojové soubory, ale reaguje s nižší prioritou pro typ souboru nebyl rozpoznán, který se nepoužívá jako součást procesu jeho sestavení.  
+-   Pokud je členem projektu, projektu odpoví prioritu, že se projekt přiřadí podle jeho zpracování tohoto dokumentu. Například projekt jazyka reaguje s vysokou prioritou pro jeho jazyk zdrojové soubory, ale reaguje s nižší prioritou pro typ souboru nebyl rozpoznán, která se nepoužívá jako součást procesu sestavení.  
   
--   Projekty, které poskytují vlastní, specifické pro projekt editory nebo programy Designer pro dokument zobrazit i s vysokou prioritou.  
+-   Projekty, které poskytují vlastní, specifické pro projekt editory nebo návrháře pro dokument dostanou také s vysokou prioritou.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Výčtu poskytuje dokumentu hodnoty priority.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> Výčet poskytuje dokumentu hodnoty priority.  
   
--   Projekt, který určuje nejvyšší prioritou dostane kontext o otevření dokumentu. Pokud dva projekty návratové hodnoty stejnou prioritu, aktivní projekt je upřednostňovaný. Pokud žádný projekt v řešení odpoví, že můžou otevřít dokument, rozhraní IDE převádí dokumentu na různé soubory projektu. Další informace najdete v tématu [různé soubory projektu](../../extensibility/internals/miscellaneous-files-project.md).  
+-   Projekt, který určuje nejvyšší prioritou dostane kontext, který má dokument otevřít. Pokud dva projekty návratové hodnoty stejnou prioritu, preferuje se aktivní projekt. Pokud žádný projekt v řešení odpoví, že mohou otevřít dokument, rozhraní IDE umístí dokument v ostatních souborech projektu. Další informace najdete v tématu [různé soubory projektu](../../extensibility/internals/miscellaneous-files-project.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Ostatní soubory projektu](../../extensibility/internals/miscellaneous-files-project.md)   
- [Postupy: otevření editory pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)   
+ [Projekt ostatní soubory](../../extensibility/internals/miscellaneous-files-project.md)   
+ [Postupy: Otevřít editorů pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)   
  [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)

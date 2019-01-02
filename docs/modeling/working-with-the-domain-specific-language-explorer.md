@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b70a7442440a7d7604c226f9b8ae8bc7fc3c4cb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886563"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Práce s průzkumníkem jazyka specifického pro doménu
 **Průzkumník DSL** několik druhů informací se zobrazí ve stromovém zobrazení. Další informace o většině položek v Průzkumníku DSL najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).

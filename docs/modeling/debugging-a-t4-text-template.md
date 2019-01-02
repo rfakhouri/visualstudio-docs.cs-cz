@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885991"
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové textové šablony, uložte soubor textové šablony a pak zvolte **ladit šablonu T4** v místní nabídce souboru v Průzkumníku řešení. Ladění za běhu textové šablony, jednoduše ladit aplikaci, do které patří.
@@ -45,7 +44,7 @@ Můžete nastavit zarážky v textových šablonách. Chcete-li ladit návrhové
 |Sestavení '{0}"pro procesor direktiv"{1}"neudělila sada oprávnění FullTrust. Jenom důvěryhodná sestavení můžou poskytovat procesory direktiv. Tento procesor direktiv se nenačte.|Vyvolá se v případě systému nejsou udělena oprávnění FullTrust k sestavení obsahujícímu procesor direktiv. Zpráva obsahuje název sestavení a název procesor direktiv.|Ujistěte se, že používáte jenom důvěryhodná sestavení v místním počítači.|
 |Cesta "{0}' musí být místní na tomto počítači nebo součástí zóny důvěryhodných serverů.|Vyvolá se v případě direktiva nebo – direktiva assembly odkazuje na soubor, který není na místním počítači nebo na vaší síti důvěryhodné zóny.|Ujistěte se, že je adresář, kde se nacházejí direktiva nebo direktivy sestavení do zóny důvěryhodných serverů. Síťovému adresáři můžete přidat do zóny důvěryhodných serverů pomocí aplikace Internet Explorer.|
 |Více chyby syntaxe, například "Neplatný token ' catch'" nebo "obor názvů nemůže přímo obsahovat členy"|Příliš mnoho uzavírací složené závorky v kódu šablony. Kompilátor je matoucí ho pomocí standardní generování kódu.|Zkontrolujte číslo ukončení složené závorky a hranaté závorky v kódu oddělovače.|
-|Smyčky nebo podmínky nejsou zkompilovat nebo provést správně. Příklad: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Tento kód vracel vždy hodnotu jsem. Pouze "číslo je:" je podmíněný.|V jazyce C# vždy používejte složené závorky ohraničit textové bloky, které jsou vložené řídicí příkazy.|Přidat složené závorky: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|
+|Smyčky nebo podmínky nejsou zkompilovat nebo provést správně. Například: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Tento kód vracel vždy hodnotu jsem. Pouze "číslo je:" je podmíněný.|V jazyce C# vždy používejte složené závorky ohraničit textové bloky, které jsou vložené řídicí příkazy.|Přidat složené závorky: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|
 |"Výraz je příliš složitý" při zpracování šablony návrhu nebo kompilaci (předzpracovaná) šablona modulu runtime.<br /><br /> Visual Studio přestane fungovat, při pokusu o zkontrolovat kód vygenerovaný šablonu modulu runtime.|Textový blok je příliš dlouhý. Bloky textu T4 převede na výraz zřetězení řetězců s jeden řetězcový literál pro každý řádek šablony. Bloky velmi dlouhý text můžete překročení omezení velikosti kompilátoru.|Rozdělte dlouhé textový blok s blok výrazu jako:<br /><br /> `<#= "" #>`|
 
 ## <a name="warning-descriptions-and-fixes"></a>Popis upozornění a opravy

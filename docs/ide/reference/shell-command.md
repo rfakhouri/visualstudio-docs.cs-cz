@@ -2,7 +2,6 @@
 title: Prostředí – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.shell
@@ -20,15 +19,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c62eb3f5fa27a11779cbb2aabf2067a35c0fe5e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821604"
 ---
 # <a name="shell-command"></a>Prostředí – příkaz
-Spustí spustitelné programy uvnitř [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+Spouští spustitelné programy v rámci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,50 +38,50 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Arguments
  `path`
 
- Požadováno. Název a cesta k souboru souboru provést nebo dokument, který chcete otevřít. Úplná cesta je vyžaduje, pokud zadaný soubor není v jednom z adresáře v proměnné prostředí PATH.
+ Povinný parametr. Cestu a název souboru pro spuštění nebo dokument otevřít. Úplná cesta je vyžadována, pokud zadaný soubor není v jednom z adresářů v proměnné prostředí PATH.
 
  `args`
 
- Volitelné. Všechny argumenty mají být předány vyvolaný program.
+ Volitelné. Všechny argumenty k předání do vyvolaný program.
 
 ## <a name="switches"></a>Přepínače
- /CommandWindow [nebo] / Command – [nebo] /c [nebo] / cmd
+ [/CommandWindow [nebo] / Command nebo] /c [nebo] / cmd
 
- Volitelné. Určuje, že je v zobrazí výstup pro spustitelný soubor **příkaz** okno.
+ Volitelné. Určuje, že se v zobrazí výstup pro spustitelný soubor **příkaz** okna.
 
  /dir:`folder` [nebo] / d: `folder`
 
- Volitelné. Určuje pracovní adresář, který má být nastavená při spuštění programu.
+ Volitelné. Určuje pracovní adresář bude nastaven při spuštění programu.
 
- /outputwindow [nebo] / Output [nebo] / out [nebo] /o
+ / outputwindow [nebo] / Output [nebo] parametr/out [nebo] /o
 
- Volitelné. Určuje, že je v zobrazí výstup pro spustitelný soubor **výstup** okno.
+ Volitelné. Určuje, že se v zobrazí výstup pro spustitelný soubor **výstup** okna.
 
 ## <a name="remarks"></a>Poznámky
- Musí být zadán přepínačích /c /o /dir hned za `Tools.Shell`. Nic zadaných po název spustitelného souboru je předán do ní jako argumenty příkazového řádku.
+ Musí být zadán přepínačích /c /o /dir ihned po `Tools.Shell`. Nic zadaných po název spustitelného souboru, jsou předány jako argumenty příkazového řádku.
 
- Předdefinované alias `Shell` lze místě `Tools.Shell`.
+ Předdefinované alias `Shell` lze použít místo `Tools.Shell`.
 
 > [!CAUTION]
-> Pokud `path` argument poskytuje cesta k adresáři, jakož i název souboru, by měl uzavřete celý název cesty do uvozovek a být literálu ("" "), protože v následujících tématech:
+> Pokud `path` argument určuje cestu k adresáři, jakož i název souboru, celý název cesty by měl uzavřete do literálu uvozovky ("" "), protože v následujících tématech:
 
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- Každá sada tři dvojité uvozovky ("" ") je interpretována `Shell` procesoru jako jeden dvojité uvozovky. Proto v předchozím příkladu ve skutečnosti předá následující řetězec cesty `Shell` příkaz:
+ Každá sada tří dvojité uvozovky ("" ") je interpretována `Shell` procesoru jako jeden dvojitými uvozovkami. Díky tomu se v předchozím příkladu skutečně předá následující řetězec cesty `Shell` příkaz:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
 > [!CAUTION]
-> Pokud je řetězec cesty není uzavřít do uvozovek a literálu ("" "), Windows použije jenom ta část řetězce po první mezeru. Například pokud řetězec cesty výše nebyly správně uvozovkách, Windows by hledat soubor s názvem "Programu" se nachází v kořenovém adresáři C:\. Pokud spustitelný soubor C:\Program.exe byly ve skutečnosti k dispozici, i jeden nainstalovat nezákonné manipulaci Windows by pokus o spuštění tohoto programu místo programu požadované "c:\Program Files\SomeFile.exe".
+> Pokud není uzavřít řetězec cesty v uvozovkách literálu ("" "), Windows použije pouze část řetězce až po první místo. Například pokud výše uvedené cestě řetězec nebyly správně v uvozovkách, by vypadalo Windows pro soubor s názvem "Program", které jsou umístěné v kořenovém adresáři C:\. Pokud spustitelný soubor C:\Program.exe byly ve skutečnosti k dispozici, i jeden nainstaloval nedovolené úmyslné poškozování, Windows by pokus o spuštění tohoto programu místo požadované "c:\Program Files\SomeFile.exe" program.
 
 
 ## <a name="example"></a>Příklad
- Následující příkaz používá xcopy.exe při kopírování souboru `MyText.txt` do `Text` složky. Zobrazí se výstup z xcopy.exe v obou **příkazové okno** a **výstup** okno.
+ Následující příkaz využívá xcopy.exe zkopírovat soubor `MyText.txt` do `Text` složky. Zobrazí se výstup z xcopy.exe v obou **příkazové okno** a **výstup** okna.
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
@@ -93,5 +92,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
 - [Okno Výstup](../../ide/reference/output-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,8 +1,6 @@
 ---
 title: Řešení potíží s výkonem problémy s nástroji | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 432afd3051d7deb04fe32c02d163e59e324f6b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870833"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Řešení problémů s výkonem nástroje
 Při použití nástrojů pro profilaci setkat s jedním z následujících problémů:  
@@ -33,7 +31,7 @@ Při použití nástrojů pro profilaci setkat s jedním z následujících prob
   
 -   Proces, který profilované za použití vzorkování nebo metoda paměti .NET spustí podřízený proces, který je proces, který provádí aplikace. Například některé aplikace číst příkazový řádek pro zjištění, zda bylo zahájeno jako aplikace Windows nebo jako aplikace příkazového řádku. Pokud o to požádá o aplikaci Windows se spustí nový proces, který je nakonfigurován jako aplikace Windows se původní proces a následně původní proces skončí. Protože nástrojů pro profilaci nejsou shromažďovány automaticky data pro podřízené procesy, je nebyla shromážděna žádná data.  
   
-     Ke shromažďování dat profilace v této situaci, připojení profileru k podřízenému procesu namísto spuštění aplikace s profilerem. Další informace najdete v tématu [postupy: připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) a [připojit (VSPerfCmd)](../profiling/attach.md)  
+     Ke shromažďování dat profilace v této situaci, připojení profileru k podřízenému procesu namísto spuštění aplikace s profilerem. Další informace najdete v tématu [jak: Připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) a [připojit (VSPerfCmd)](../profiling/attach.md)  
   
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>Zobrazení výkonu a sestavy zobrazit čísla pro názvy – funkce  
  Poté, co Profilovat aplikaci zobrazit čísla namísto názvy funkcí v sestavách a zobrazení.  

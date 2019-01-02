@@ -1,8 +1,6 @@
 ---
 title: Seznam událostí grafiky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3382637dfbdd10618ccbb9a5d9cf66dba603f4dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 555a786ceed97bb83b0924eef45f102c43755b2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870739"
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 Použijte seznam událostí grafiky v analyzátoru grafiky sady Visual Studio zkoumat události rozhraní Direct3D, které byly zaznamenány při vykreslování rámce hru nebo aplikaci.  

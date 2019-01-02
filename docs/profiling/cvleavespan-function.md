@@ -1,8 +1,6 @@
 ---
-title: Cvleavespan – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvleavespan – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvLeaveSpan
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe234d60e8cd86279d3dcc01da95e6d2e6202213
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4de86d390b03eb38a449ada23f4189b9baca6152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967719"
 ---
 # <a name="cvleavespan-function"></a>Cvleavespan – funkce
-Označuje konec rozpětí.  
+Označuje konec rozsahu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,10 +32,10 @@ HRESULT CvLeaveSpan(
   
 #### <a name="parameters"></a>Parametry  
  `pSpan`  
- Span objektu vrácené z předchozího volání cventerspan – *. Nemůže mít hodnotu NULL.  
+ Objekt vrácený z předchozího volání cventerspan – * span. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, pokud zpráva je úspěšně zapsána. Kód chyby v případě, že byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

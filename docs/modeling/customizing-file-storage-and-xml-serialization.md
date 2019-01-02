@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858247"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Přizpůsobení úložiště souborů a serializace XML
 
@@ -276,7 +275,7 @@ Tyto prvky se nacházejí v Průzkumník DSL pod **Data Behavior\Class serializa
 |Doménová třída|Doménová třída, ke kterému se vztahuje tento datový uzel třídy. Jen pro čtení.|
 |Název elementu|Název uzlu XML pro elementy této třídy. Výchozí hodnota je malá verzi třídy název domény.|
 |Název atributu monikeru|Název atributu použitého v elementech monikeru, obsahují odkaz. Pokud je pole prázdné, název vlastnosti klíče nebo ID. se používá.<br /><br /> V tomto příkladu je "name":  `<personMoniker name="/Mike Nash"/>`|
-|Název elementu monikeru|Název elementu xml použitého pro monikery v, které odkazují na prvky této třídy.<br /><br /> Výchozí hodnota je malá verzi příponu "Moniker" název třídy. Například `personMoniker`.|
+|Název elementu monikeru|Název elementu xml použitého pro monikery v, které odkazují na prvky této třídy.<br /><br /> Výchozí hodnota je malá verzi příponu "Moniker" název třídy. Například, `personMoniker`.|
 |Zástupný název typu|Název typu xsd vygenerovaného pro monikery v elementech této třídy. XSD je v **Dsl\Generated kód\\\*Schema.xsd**|
 |Serializace Id|Při hodnotě True se element identifikátoru GUID je součástí souboru. Toto musí být true, pokud není žádná vlastnost, která je označena **je klíčem Monikeru** a DSL definuje vztahy odkazu do této třídy.|
 |Název typu|Název typu xml vygenerovaného v xsd z určené doménové třídy.|

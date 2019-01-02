@@ -1,6 +1,5 @@
 ---
-title: 'Postupy: asynchronní Visual Studio Service poskytují | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Poskytovat služby asynchronní aplikace Visual Studio | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5508490bfd16a3850f6ffee8d0d45d0cced4aae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857825"
 ---
-# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: poskytování asynchronní služby sady Visual Studio
+# <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: Poskytování asynchronní služby sady Visual Studio
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, by měl vytvořit asynchronní služby a načíst balíček ve vlákně na pozadí. K tomuto účelu můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> spíše než <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronní metody.
   
- Informace o poskytování služeb synchronní sady Visual Studio najdete v tématu [postupy: poskytování služby](../extensibility/how-to-provide-a-service.md).  
+ Informace o poskytování služeb synchronní sady Visual Studio najdete v tématu [jak: Poskytování služeb](../extensibility/how-to-provide-a-service.md).  
   
 ## <a name="implement-an-asynchronous-service"></a>Implementace asynchronní služby  
   
@@ -173,7 +172,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  Přidání příkazu nabídky do projektu. (V **Průzkumníka řešení**, vyberte uzel projektu, klikněte pravým tlačítkem a vyberte **přidat** > **nová položka**  >   **Rozšiřitelnost** > **vlastní příkaz**.) Název souboru příkazů *TestAsyncCommand.cs*.  
   
-2.  Šablona vlastního příkazu znovu přidá `Initialize()` metodu *TestAsyncPackage.cs* souboru, aby bylo možné inicializovat příkazu. V `Initialize()` metoda, zkopírovat řádek, který inicializuje příkazu. By měl vypadat nějak takto:  
+2.  Šablona vlastního příkazu znovu přidá `Initialize()` metodu *TestAsyncPackage.cs* souboru, aby bylo možné inicializovat příkazu. V `Initialize()` metoda, zkopírovat řádek, který inicializuje příkazu. Mělo by to vypadat takto:  
   
     ```csharp
     TestAsyncCommand.Initialize(this);  

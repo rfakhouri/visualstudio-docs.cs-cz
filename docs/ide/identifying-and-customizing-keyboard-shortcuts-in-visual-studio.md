@@ -2,7 +2,6 @@
 title: Identifikování a přizpůsobení klávesových zkratek
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820394"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio
 
@@ -78,7 +77,7 @@ Pokud je klávesová zkratka přiřazena k příkazu v globálním kontextu a be
     Například můžete použít **globální** Pokud chcete, aby zkratka fungovala ve všech kontextech. Můžete použít jakoukoli zkratku, která není namapována (jako globální) v jiném editoru. V opačném případě editor zkratku přepíše.
 
     > [!NOTE]
-    > Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: tisk navigátoru obrazovky/Sys Rq, posuňte Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, klávesu s logem Windows, klíč Application, všechny šipky klíče nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; kombinace kláves Ctrl + Alt + Delete.
+    > Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: Tisk navigátoru obrazovky/Sys Rq, Scroll Lock, Pause/Break, kartu, Caps Lock, Insert, domů, End, Page Up, Page Down, klávesu s logem Windows, klíč aplikace, klávesy se šipkami nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; kombinace kláves Ctrl + Alt + Delete.
 
 6. V **stiskněte klávesy zkratky** zadejte klávesovou zkratku, kterou chcete použít.
 

@@ -1,8 +1,6 @@
 ---
 title: Vytváření vlastních zobrazení dat v ladicím programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 234c00bcfd1b46adc260597b5ad438854c45de98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836553"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Vytváření vlastních zobrazení dat v ladicím programu sady Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ladicí program poskytuje celou řadu nástrojů pro prohlížení a úpravy stavu programu. Většina těchto nástrojů funguje pouze v režimu pozastavení.

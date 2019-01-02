@@ -2,7 +2,6 @@
 title: Přidat existující projekt – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.addexistingproject
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c030358eb071613e98d473845708b01235683ded
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2a5b0579037d31cf88de32f4fabda531d92c1b61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880452"
 ---
 # <a name="add-existing-project-command"></a>Přidat existující projekt – příkaz
-Přidá k aktuálnímu řešení existujícího projektu.
+Přidá existující projekt do aktuálního řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,17 +31,17 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename` Volitelný parametr. Úplná cesta a projekt název, s příponou projektu pro přidání do řešení.
+ `filename` Volitelné. Úplnou cestu a projekt název, pomocí rozšíření projektu pro přidání do řešení.
 
- Pokud `filename` argument obsahuje mezery, musí být uzavřena v uvozovkách.
+ Pokud `filename` argument obsahuje mezery, musí být uzavřen v uvozovkách.
 
- Pokud není zadaný žádný název souboru, bude příkaz otevřete dialogové okno souboru, tento uživatel může zvolit projektu.
+ Pokud není zadán žádný název souboru, bude příkaz tak, že tento uživatel může vybrat projekt otevřete dialogové okno souboru.
 
 ## <a name="remarks"></a>Poznámky
- Automatické doplňování, pokusí se najít správnou cestu a název souboru při psaní.
+ Automatické dokončování, pokusí se najít správnou cestu a název souboru během psaní.
 
 ## <a name="example"></a>Příklad
- Tento příklad přidá [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu, TestProject1, k aktuálnímu řešení.
+ V tomto příkladu přidá [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projektu, projekt testproject1 vyžaduje, do aktuálního řešení.
 
 ```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"
@@ -52,5 +51,5 @@ File.AddExistingProject filename
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

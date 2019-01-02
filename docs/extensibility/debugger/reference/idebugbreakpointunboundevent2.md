@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointUnboundEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointUnboundEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointUnboundEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e9b08c05fb9f89e0caf3f12be4337bfe3a9827
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fc45b8044ec0c7b4dc4dbda4c3b9002f0a8043b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857527"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
-Toto rozhraní informuje správce ladicí relace (SDM) vázané breakpoint byl není svázána s načíst program.  
+Toto rozhraní informuje správce ladění relace (SDM), že byla vázaná zarážka svázána načíst program.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,28 +29,28 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní jako součást své podpory zarážky. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) rozhraní musí být implementována pro stejný objekt jako toto rozhraní (SDM používá [QueryInterface](/cpp/atl/queryinterface) pro přístup k `IDebugEvent2` rozhraní).  
+ Ladicí stroj (DE) implementuje toto rozhraní jako součást jeho podporu pro zarážky. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musí implementovat rozhraní na stejný objekt jako toto rozhraní (SDM používá [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní).  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- DE vytvoří a odešle tento objekt událostí bylo vázané breakpoint nevázaný. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytl SDM, pokud je připojené k programu laděné funkce zpětného volání.  
+ DE vytvoří a odešle tento objekt událost, když vázaná zarážka nevázaná. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytnutých SDM při připojení k laděnému programu funkce zpětného volání.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugBreakpointUnboundEvent2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugBreakpointUnboundEvent2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Získá zarážek, která se aktivovala nevázaný.|  
-|[Getreason –](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Získá důvod, proč nevázaný zarážce.|  
+|[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Získá zarážce, kterou začal být nevázaného.|  
+|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Získá z důvodů, proč nevázaná zarážku.|  
   
 ## <a name="remarks"></a>Poznámky  
- Při uvolnění modul ladění knihoven DLL nebo třídu, musí být všechny zarážky, které byly vázány na kód v tomto modulu není svázána s programu laděné. `IDebugBreakpointUnboundEvent2` Je odeslán pro každé nevázaný zarážky.  
+ Při uvolnění ladicí stroj knihovny DLL nebo třídy, musí být všechny zarážky, které byly vázané na kód v tomto modulu svázána laděnému programu. `IDebugBreakpointUnboundEvent2` Odeslány pro každý nevázaného zarážku.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

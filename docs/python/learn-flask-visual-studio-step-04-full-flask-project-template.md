@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Flask v rámci projektů sady Visual Studio, konkrétně funkcí poskytovaných službou webový projekt Flask a webový projekt Flask/Jade šablony.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5bc7cd5a504a28ac34b80c6455b86bdfc28ac1be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878585"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Krok 4: Použití úplné šablony webového projektu Flask
 
-**Předchozí krok: [doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Předchozí krok: [Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Teď, když jste prozkoumali základní informace o Flask vytvořením aplikace na šabloně "Prázdný projekt Flask aplikace" v sadě Visual Studio, je možné snadno zjistit plnější aplikace, který je vytvořen pomocí šablony "Webový projekt Flask".
 
@@ -35,7 +34,7 @@ V tomto kroku můžete nyní:
 
 Tento článek se týká také do šablony "Webový projekt Flask/Jade", který vytváří aplikaci, která je stejná jako "Flask webového projektu" místo šablonovacím systémem Jade šablonování modul. Další podrobnosti jsou zahrnuty na konci tohoto článku.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: vytvoření projektu ze šablony
+## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: Vytvoření projektu ze šablony
 
 1. V sadě Visual Studio, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem myši **LearningFlask** řešení vytvořené dříve v tomto kurzu a vyberte **přidat**  >   **Nový projekt**. (Případně, pokud chcete použít nové řešení, vyberte **souboru** > **nový** > **projektu** místo.)
 
@@ -86,9 +85,9 @@ Nicméně pokud chcete použít existující virtuální prostředí, postupujte
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **prostředí Pythonu** uzel a vyberte možnost **přidat existující virtuální prostředí**.
 1. Vyhledejte a vyberte složku, která obsahuje virtuální prostředí a pak vyberte **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4 – 2: pochopení zobrazení a stránky šablony vytvořené šablony projektu
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: Zobrazení a šablony vytvořené pomocí šablony projektu
 
-Jak zjistíte, když spustíte projekt, aplikace obsahuje tři zobrazení: Home, o programu a kontaktujte. Kód pro tato zobrazení je součástí *FlaskWeb/views.py*. Každá funkce zobrazení jednoduše volá `flask.render_template` cestou k šabloně a proměnné seznam argumentů pro hodnoty poskytnout do šablony. Například se postará o stránku `about` – funkce (jehož dekoratér poskytuje směrování adres URL):
+Jak zjistíte, že se při spuštění projektu, aplikace obsahuje tři zobrazení: Domovská stránka a kontaktujte. Kód pro tato zobrazení je součástí *FlaskWeb/views.py*. Každá funkce zobrazení jednoduše volá `flask.render_template` cestou k šabloně a proměnné seznam argumentů pro hodnoty poskytnout do šablony. Například se postará o stránku `about` – funkce (jehož dekoratér poskytuje směrování adres URL):
 
 ```python
 @app.route('/about')

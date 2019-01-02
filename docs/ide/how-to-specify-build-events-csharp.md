@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: určení událostí sestavení (C#)'
+title: 'Postupy: Určení událostí sestavení (C#)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa82c7f12b3932c1e9f5aac7392d6ef2b8e8a773
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964673"
 ---
-# <a name="how-to-specify-build-events-c"></a>Postupy: určení událostí sestavení (C#)
+# <a name="how-to-specify-build-events-c"></a>Postupy: Určení událostí sestavení (C#)
 
 Použití událostí sestavení zadat příkazy, na kterých běží před začátkem sestavení nebo po dokončení sestavení. Události sestavení jsou spouštěny pouze v případě, že se sestavení úspěšně dosáhne těchto bodů v procesu sestavení.
 
@@ -189,5 +188,5 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 
 - [Stránka události, Návrhář projektu sestavení (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Dialogové okno Příkazový řádek události před sestavením události/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Postupy: určení sestavení události (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Postupy: Určení událostí sestavení (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

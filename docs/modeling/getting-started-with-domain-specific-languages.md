@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872395"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 
@@ -23,7 +22,7 @@ Toto téma vysvětluje základní koncepty při definování a používání jaz
 > [!NOTE]
 > V sadě Visual Studio 2017 SDK transformace textové šablony a Visual Studio SDK modelování jsou nainstalovány automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tento příspěvek na blogu](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co můžete dělat s jazyka specifického pro doménu?
 
@@ -64,7 +63,7 @@ Chcete-li vytvořit nový jazyk specifický pro doménu, vytvořte nové řešen
 
      ![Vytvoření dialogového okna DSL](../modeling/media/create_dsldialog.png)
 
-4.  V **název** zadejte **FamilyTree**. Klikněte na tlačítko **OK**.
+4.  V **název** zadejte **FamilyTree**. Klikněte na **OK**.
 
      **Průvodce jazyka specifického pro doménu** se otevře a zobrazí seznam šablon řešení DSL.
 
@@ -386,7 +385,7 @@ Přejmenujte existující doménovými třídami a vztahy. Například od defini
 ## <a name="validation-and-commands"></a>Ověření a příkazy
  Dál tento DSL může vyvíjet přidáním omezení ověření. Tato omezení jsou metody, které můžete definovat, které Ujistěte se, že model je ve správném stavu. Například můžete definovat omezení a ujistěte se, která je novější než u jejích nadřazených tříd datum narození dítěte. Funkce ověření zobrazí upozornění, pokud uživatel DSL pokusí uložit model, který přeruší žádné omezení. Další informace najdete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).
 
- Můžete také definujte příkazy nabídek, které může uživatel vyvolat. Příkazy můžete měnit model. Můžou také pracovat s jinými modely v sadě Visual Studio a s externím prostředkům. Další informace najdete v tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Můžete také definujte příkazy nabídek, které může uživatel vyvolat. Příkazy můžete měnit model. Můžou také pracovat s jinými modely v sadě Visual Studio a s externím prostředkům. Další informace najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="deploying-the-dsl"></a>Nasazení DSL
  Chcete-li umožnit dalším uživatelům používat jazyka specifického pro doménu, distribuovat soubor rozšíření aplikace Visual Studio (VSIX). To je vytvořen při sestavení řešení DSL.

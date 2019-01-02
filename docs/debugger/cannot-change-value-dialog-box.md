@@ -1,8 +1,6 @@
 ---
-title: Nelze změnit hodnotu – dialogové | Microsoft Docs
-ms.custom: ''
+title: Nelze změnit hodnotu – dialogové | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.variables.failededit
@@ -20,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a6eb8059d9780e3b7343c6a7864896a0c529c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5fd6b184b72acc2ecd08123160a512e5473e6611
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966544"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Dialogové okno Nelze změnit hodnotu
 ## <a name="error"></a>Chyba  
  `The value of this variable cannot be changed` &#124;`The name` *název* `does not exist in the current context` &#124; *různé další zprávy*  
   
- Při pokusu o změnu obsahu proměnné na neplatnou hodnotu v okně ladicí program (automobily, sledovat nebo místní hodnoty – windows) nebo v dialogovém okně QuickWatch, zobrazí se toto okno se zprávou. Například pokud se pokusíte nastavit hodnotu na celé číslo proměnnou na řetězec znaků, zobrazí se toto okno se zprávou.  
+ Toto okno se zprávou se zobrazí, když se pokusíte změnit obsah proměnné na neplatnou hodnotu v okně ladicího programu (automatické hodnoty, sledování nebo lokální windows) nebo dialogového okna rychlého kukátka. Například pokud se pokusíte nastavit hodnotu proměnnou celého čísla na řetězec znaků, zobrazí se toto okno se zprávou.  
   
 ## <a name="solution"></a>Řešení  
- Zajistěte, aby vstupní zadáte do okna ladicího programu nebo QuickWatch – dialogové představuje platnou hodnotu pro proměnnou, kterou se pokoušíte nastavit.  
+ Ujistěte se, že vstup zadejte do okna ladicího programu nebo dialogového okna rychlého kukátka představuje platná hodnota pro proměnnou, kterou se pokoušíte nastavit.  
   
 ## <a name="see-also"></a>Viz také  
  [Výrazy v ladicím programu](../debugger/expressions-in-the-debugger.md)

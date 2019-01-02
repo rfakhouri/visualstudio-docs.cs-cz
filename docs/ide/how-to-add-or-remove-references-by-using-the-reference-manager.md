@@ -2,7 +2,6 @@
 title: Přidání odkazů ve Správci odkazů
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856277"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů
 
 Můžete použít **správce odkazů** dialogové okno Přidat a spravovat odkazy na součásti, které jste společnosti Microsoft, nebo jiné firmy vyvíjí. Pokud vyvíjíte aplikace Universal Windows, váš projekt automaticky odkazuje na všechny správné DLL knihovny Windows SDK. Pokud vyvíjíte aplikaci .NET, váš projekt se automaticky odkazuje na *mscorlib.dll*. Některá rozhraní API .NET jsou přístupné na součásti, které je nutné přidat ručně. Odkazy na součásti modelu COM nebo vlastní součásti nutné přidat ručně.
 
@@ -72,7 +71,7 @@ Pokud typ projektu nepodporuje sestavení, na kartě nezobrazí v **správce odk
 
 1. **Rozhraní Framework** obsahuje seznam všech sestavení, které tvoří cílené rozhraní.
 
-    Projekty pro Windows 8.x Store aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celé rozhraní. Odpovídajícím způsobem **Framework** kartu nebude žádná sestavení z rozhraní a místo toho zobrazí následující zpráva: "všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty **Framework** karta zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.
+    Projekty pro Windows 8.x Store aplikace obsahují odkazy na všechna sestavení v cíleném [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celé rozhraní. Odpovídajícím způsobem **Framework** kartu nebude žádná sestavení z rozhraní a místo toho zobrazí následující zpráva: "Všechna sestavení rozhraní je již odkazováno. Použijte prohlížeč objektů pro prozkoumání odkazů rozhraní Framework." Pro desktopové projekty **Framework** karta zobrazuje sestavení z cíleného rozhraní a uživatel musí přidat odkazy, které aplikace vyžaduje.
 
 2. **Rozšíření** obsahuje seznam všech sestavení, která vyvinuli externí dodavatelé součástí a ovládacích prvků pro rozšíření cíleného rozhraní. Podle účelu dané aplikace mohou být tato sestavení potřebná.
 
@@ -94,7 +93,7 @@ Některé součásti v seznamu se nemusí zobrazit, v závislosti na verzi rozhr
 
 - Komponenta, která používá nejnovější verzi rozhraní .NET Framework je nekompatibilní s projektem, který se zaměřuje na starší verzi rozhraní .NET Framework.
 
-    Informace o tom, jak změnit cílovou verzi rozhraní .NET Framework pro projekt, naleznete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+    Informace o tom, jak změnit cílovou verzi rozhraní .NET Framework pro projekt, naleznete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 - Komponenty, která používá [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] je nekompatibilní s projektem, který se zaměřuje [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
 
@@ -155,9 +154,9 @@ Projekt, který cílí na [!INCLUDE[net_win8_profile](../ide/includes/net_win8_p
 
 Soubor WinMD je možné v sadě Visual Studio vygenerovat dvěma způsoby:
 
-- **Spravované projekty aplikací Windows 8.x Store**: projekty aplikací pro Windows 8.x Store můžete výstup binární soubory WinMD nastavením **vlastnosti projektu** > **typ výstupu na soubor WinMD**. Název souboru WinMD musí představovat nadřazený obor názvů všech oborů názvů, které existují jeho v rámci. Například, pokud projekt obsahuje obory názvů `A.B` a `A.B.C`, jsou možné názvy pro soubory WinMD na jeho *A.winmd* a *A.B.winmd*. Pokud uživatel zadá **vlastnosti projektu** > **název sestavení** nebo **vlastnosti projektu** > **Namespace**hodnotu, která je mimo sadu oborů názvů v projektu nebo není žádný nadřazený obor názvů v rámci projektu, vygeneruje se upozornění sestavení: "" A.winmd není platný název souboru .winmd pro toto sestavení." Všechny typy v rámci souboru metadat systému Windows musejí existovat v podřízeném oboru názvů daného názvu souboru. Typy, které neexistují v podřízeném oboru daného názvu souboru nebude moct za běhu nalézt. V tomto sestavení je nejmenší společný obor názvů `CSWSClassLibrary1`. Stolní počítač Visual Basic nebo C# projekt může využívat pouze soubory Winmd vygenerované pomocí sad SDK Windows 8, které jsou označovány jako soubory Winmd první strany, a nemůže generovat soubory Winmd.
+- **Spravované projekty aplikací Windows 8.x Store**: Projekty aplikací pro Windows 8.x Store můžete výstup binární soubory WinMD nastavením **vlastnosti projektu** > **typ výstupu na soubor WinMD**. Název souboru WinMD musí představovat nadřazený obor názvů všech oborů názvů, které existují jeho v rámci. Například, pokud projekt obsahuje obory názvů `A.B` a `A.B.C`, jsou možné názvy pro soubory WinMD na jeho *A.winmd* a *A.B.winmd*. Pokud uživatel zadá **vlastnosti projektu** > **název sestavení** nebo **vlastnosti projektu** > **Namespace**hodnotu, která je mimo sadu oborů názvů v projektu nebo není žádný nadřazený obor názvů v rámci projektu, vygeneruje se upozornění sestavení: "" A.winmd není platný název souboru .winmd pro toto sestavení." Všechny typy v rámci souboru metadat systému Windows musejí existovat v podřízeném oboru názvů daného názvu souboru. Typy, které neexistují v podřízeném oboru daného názvu souboru nebude moct za běhu nalézt. V tomto sestavení je nejmenší společný obor názvů `CSWSClassLibrary1`. Stolní počítač Visual Basic nebo C# projekt může využívat pouze soubory Winmd vygenerované pomocí sad SDK Windows 8, které jsou označovány jako soubory Winmd první strany, a nemůže generovat soubory Winmd.
 
-- **Nativní projekty aplikací pro Windows 8.x Store**: nativní soubor WinMD obsahuje pouze metadata. Jeho implementace se nachází v samostatném souboru knihovny DLL. Výběrem šablonu projektu součásti prostředí Windows Runtime v je možné vytvořit nativní binární soubory **nový projekt** dialogové okno nebo spuštěním prázdným projektem a upravíte vlastnosti projektu pro vytvoření souboru WinMD. Pokud projekt obsahuje nesouvislé obory názvů, chyba sestavení oznámí uživateli, aby sloučit své obory názvů nebo spustit nástroj MSMerge.
+- **Nativní projekty aplikací pro Windows 8.x Store**: Nativní soubor WinMD obsahuje pouze metadata. Jeho implementace se nachází v samostatném souboru knihovny DLL. Výběrem šablonu projektu součásti prostředí Windows Runtime v je možné vytvořit nativní binární soubory **nový projekt** dialogové okno nebo spuštěním prázdným projektem a upravíte vlastnosti projektu pro vytvoření souboru WinMD. Pokud projekt obsahuje nesouvislé obory názvů, chyba sestavení oznámí uživateli, aby sloučit své obory názvů nebo spustit nástroj MSMerge.
 
 **Windows** karta se skládá ze dvou podskupin.
 
@@ -165,7 +164,7 @@ Soubor WinMD je možné v sadě Visual Studio vygenerovat dvěma způsoby:
 
 **Core** podskupina obsahuje seznam všech souborů Winmd (pro elementy prostředí Windows Runtime) v sadě SDK pro cílenou verzi systému Windows.
 
-Projekty aplikací pro Windows 8.x Store obsahují odkazy na všechny soubory winmd v systému Windows 8 SDK ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celou sadu SDK Windows 8. Toho **Core** podskupiny v **správce odkazů** nezobrazí seznam všech sestavení ze sady SDK Windows 8 a místo toho zobrazí zpráva: "Windows SDK se už odkazuje. Použijte prohlížeč objektů pro prozkoumání odkazů v sadě Windows SDK."
+Projekty aplikací pro Windows 8.x Store obsahují odkazy na všechny soubory winmd v systému Windows 8 SDK ve výchozím nastavení při vytvoření projektu. Ve spravovaných projektech, uzel jen pro čtení v rámci **odkazy** složky **Průzkumníka řešení** označuje odkaz na celou sadu SDK Windows 8. Odpovídajícím způsobem **Core** podskupiny v **správce odkazů** nezobrazí seznam všech sestavení ze sady SDK Windows 8 a místo toho zobrazí zpráva: "Windows SDK se už odkazuje. Použijte prohlížeč objektů pro prozkoumání odkazů v sadě Windows SDK."
 
 V desktopové projekty **Core** podskupiny nezobrazuje ve výchozím nastavení. Modul Windows Runtime můžete přidat tak, že otevřete místní nabídku uzlu projektu zvolíte **uvolnit projekt**, přidáte následující fragment kódu a znovu otevřete projekt (na uzel projektu, zvolte **znovu načíst projekt**). Při vyvolání **správce odkazů** dialogové okno, **Core** se zobrazí podskupina.
 

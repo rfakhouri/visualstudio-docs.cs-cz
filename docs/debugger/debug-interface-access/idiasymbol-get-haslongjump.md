@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_haslongjump – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b9b15ce97abaad224a6728120e5a22e766ae01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879862"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Získá příznak, který určuje, zda obsahuje funkci k využívání [longjmp](/cpp/c-runtime-library/reference/longjmp) příkazu (spárované s [setjmp](/cpp/c-runtime-library/reference/setjmp) příkazu, vytvářejí C-style způsob zpracování výjimek).  

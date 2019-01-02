@@ -1,8 +1,6 @@
 ---
 title: Zápis více procesorů protokolovacích | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, multi-proc aware loggers
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba677aca8b1e6f5392d742cfd37c805131c15cd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887552"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zápis více procesorů protokolovacích
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] výhod více procesorů může zkrátit čas sestavení projektu, ale také zvyšuje složitost vytváření protokolování událostí. V prostředí s jedním procesorem události, zprávy, upozornění a chyby do protokolovacího nástroje předvídatelným, sekvenčním způsobem. V prostředí s více procesory mohou však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. K poskytování v takovém případě [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů s ohledem na protokolovací nástroj a nový model protokolování a umožňuje vám vytvořit vlastní "předávající Protokolovací nástroje".  

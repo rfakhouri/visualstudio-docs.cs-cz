@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c9aecfd8309e795a5905bd1aaca5c14a4df51283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857063"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Průvodce: Izolace problémů pomocí graf aktivity virtuálního uživatele
 
 V tomto podrobném návodu se dozvíte, jak izolovat chyby, ke kterým došlo u jednotlivých virtuálních uživatelů, které byly spuštěny zátěžového testu pomocí graf aktivity virtuálního uživatele.
 
@@ -38,7 +37,7 @@ Graf aktivity virtuálního uživatele vám umožňuje vizualizovat aktivitu vir
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otevřete řešení ColorWebApp vytvořili v předchozí návody
 
-1.  Spusťte sadu Visual Studio.
+1.  Spusťte Visual Studio.
 
 2.  Otevřít **ColorWebApp** řešení, které obsahuje *LoadTest1.loadtest*. Tento zátěžový test výsledky z provádění kroků ve třech návodech, které jsou uvedené na začátku tohoto tématu v části předpoklady.
 
@@ -109,6 +108,6 @@ Po spuštění zátěžového testu a shromažďují data aktivity virtuálního
 
 - [Analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
-- [Postupy: vytvoření nastavení testu pro distribuovaný zátěžový test](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Postupy: Vytvořit nastavení testu pro distribuovaný zátěžový test](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md)
 - [Shromažďování diagnostických údajů pomocí nastavení testů](../test/collect-diagnostic-information-using-test-settings.md)

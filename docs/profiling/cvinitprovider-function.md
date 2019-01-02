@@ -1,8 +1,6 @@
 ---
-title: Cvinitprovider – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvinitprovider – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvInitProvider
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b7fbb6480f0793b1641159cd3f06c471907603
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 171537a752818e31ba6a3e7e185fd02017dcb967
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967706"
 ---
 # <a name="cvinitprovider-function"></a>Cvinitprovider – funkce
-Inicializuje zprostředkovatele značky. Musí být volána před provedením jakékoli jiné funkce SDK Vizualizéru souběžnosti.  
+Inicializuje poskytovatele značek. Musí být volána před všechny ostatní funkce sada Vizualizátor souběžnosti SDK.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +33,13 @@ HRESULT CvInitProvider(
   
 #### <a name="parameters"></a>Parametry  
  `pGuid`  
- Identifikátor guid. Nemůže mít hodnotu NULL.  
+ Identifikátor guid zprostředkovatele. Nemůže mít hodnotu NULL.  
   
  `ppProvider`  
- Adresa proměnná výstup, který se uloží kontext zprostředkovatele. Nemůže mít hodnotu NULL.  
+ Adresa proměnné výstup, který bude uložený kontext zprostředkovatele. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, když je zprostředkovatel úspěšně inicializován nebo kód chyby v případě, že existuje byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při zprostředkovatel úspěšně inicializován nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

@@ -1,8 +1,6 @@
 ---
-title: Aktuální karta | Microsoft Docs
-ms.custom: ''
+title: Aktuální karta | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964da1521852d942490c09b83135c62f6be3ed9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964731"
 ---
 # <a name="current-tab"></a>Aktuální karta
-Kliknutím **aktuální** kartě uvidíte zásobník volání (Pokud je k dispozici), který je nejblíže k aktuální výběr bod v časové ose Pokud je vybrána segment procesoru přístup z více vláken.  V takovém případě bodě výběru představuje černou šipku nebo pomocí kurzoru nad časovou osu. Pokud je vybraná blokování segmentu, pomocí kurzoru není zobrazit, protože se žádné provádění. Však stále zvýrazní segmentu a se zobrazí zásobníku volání.  
+Kliknutím **aktuální** kartu, můžete zobrazit zásobník volání (Pokud je k dispozici), který je nejblíž k aktuální výběr bod na časové ose vybrali segment vlákna CPU.  V takovém případě je reprezentován bod výběru černé šipky, nebo blikajícího kurzoru nad časovou osou. Při výběru blokující segment blikající kurzor se nezobrazí, protože žádné spuštění. Ale stále je zvýrazněn segmentu a zásobník volání se zobrazí.  
   
- **Aktuální** karta také zobrazuje informace o rozhraní DirectX aktivity segmenty, značky a přístupu k vstupně-výstupních operací.  Rozhraní DirectX aktivity segmentů se zobrazí informace o způsob, jakým zpracovává pakety DMA fronty hardwaru.  Pro označení zobrazí se informace o typu popis a značky.  Pro přístup k vstupně-výstupních operací zobrazí se informace o souboru a počet bajtů číst nebo zapisovat.  
+ **Aktuální** kartu také zobrazí informace o segmenty aktivity DirectX, značky a přístup k vstupně-výstupních operací.  Pro segmenty aktivity DirectX zobrazí se informace o způsob, jakým zpracovává paketů DMA frontě hardwaru.  Pro značky zobrazí se informace o typu popis a značky.  Pro přístup k vstupně-výstupních operací zobrazí se informace o souboru a počet bajtů číst nebo zapisovat.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

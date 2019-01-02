@@ -1,9 +1,6 @@
 ---
-title: TEXT_DOC_ATTR_2 | Microsoft Docs
-ms.custom: ''
+title: TEXT_DOC_ATTR_2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TEXT_DOC_ATTR_2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c877b1e42110defe717395cc78cc76acae00b934
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d74bbfa4fb89baf01c5fb3d49a0767c67b800ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872723"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Popisuje atributy dokumentu.  
@@ -43,16 +40,16 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Poznámky  
   
 > [!NOTE]
->  Tato hodnota není ve skutečnosti definované v sestavení pro jazyk C#. Místo toho musíte zkopírovat definici do zdrojového souboru.  
+>  Tato hodnota není definována ve skutečnosti v sestavení pro jazyk C#. Definice místo toho musíte zkopírovat do zdrojového souboru.  
   
- Předat jako argument k [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) metoda.  
+ Předán jako argument [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) metody.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

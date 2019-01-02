@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
@@ -14,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e982db6bf37caf201f75e563a23a28a528a61e7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b0e79d65c590973f99d36f7fd81a98e3bae55a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879248"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ V tomto návodu se seznámíte s mnoha nástrojů a dialogových oknech, které 
 ##  <a name="BKMK_Configure"></a> Přihlaste se k sadě Visual Studio
  Při prvním spuštění aplikace Visual Studio, budete mít možnost se přihlásit pomocí účtu Microsoft, jako je Live nebo Outlook. Přihlašování umožňuje nastavení synchronizovat napříč všemi zařízeními. Další informace najdete v tématu [přihlášení k sadě Visual Studio](../ide/signing-in-to-visual-studio.md)
 
- Obrázek 1: Visual Studio IDE
+ Obrázek 1: Visual Studio – sada IDE
 
  ![Integrované vývojové prostředí s Visual C&#43; &#43; nastavení použijí](../ide/media/c-ide-defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout C ++")
 

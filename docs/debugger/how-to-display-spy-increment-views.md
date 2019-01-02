@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: zobrazení nástroje Spy ++ | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Zobrazení nástroje Spy ++ | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, viewing code
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd4643ab3bad401e05d46c5ec5505322ec760342
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c55656626b41da388053a164ff666281fc2631f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962951"
 ---
-# <a name="how-to-display-spy-views"></a>Postupy: Zobrazení nástroje Spy++
-Když nástroje Spy ++ spustí, otevře se v [zobrazení oken](../debugger/windows-view.md), je stromové zobrazení všech windows a ovládacích prvků k dispozici na váš počítač. Toto okno kořenové je s popisky "Windows 1." Existují také tři další zobrazení nástroje Spy ++ k dispozici: [zobrazení zpráv](../debugger/messages-view.md), [zobrazení procesů](../debugger/processes-view.md), a [zobrazení vláken](../debugger/threads-view.md). Požadované zobrazení můžete zobrazit **Spy** nabídky. Další informace najdete v tématu [zobrazení nástroje Spy ++](../debugger/spy-increment-views.md).  
+# <a name="how-to-display-spy-views"></a>Postupy: Zobrazení nástroje Spy ++
+Spuštěním nástroje Spy ++, otevře se v [zobrazení Windows](../debugger/windows-view.md), stromové zobrazení všechna okna a ovládací prvky k dispozici na svém počítači. Popisky toto okno kořenový "Windows 1." Také nejsou k dispozici tři další zobrazení nástroje Spy ++: [Zobrazení zpráv](../debugger/messages-view.md), [zobrazení procesů](../debugger/processes-view.md), a [vlákna zobrazení](../debugger/threads-view.md). Požadovaný pohled z můžete zobrazit **Spy** nabídky. Další informace najdete v tématu [zobrazení nástroje Spy ++](../debugger/spy-increment-views.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   

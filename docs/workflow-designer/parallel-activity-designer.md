@@ -3,7 +3,6 @@ title: Návrhář postupu provádění – Návrhář aktivity Parallel
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ad0d0d44c18c17dd1602c51954a7c529b84d114
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843603"
 ---
 # <a name="parallel-activity-designer"></a>Návrhář aktivity Parallel
 
@@ -44,7 +43,7 @@ V následující tabulce jsou uvedeny vlastnosti paralelních aktivit a popisuje
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný Zobrazovaný název návrháře aktivit v záhlaví. Výchozí hodnota je **paralelní**. Hodnota může volitelně můžete upravit v **vlastnosti** mřížky nebo přímo v hlavičce návrháře aktivit.|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|Hodnota TRUE|Obsahuje kolekci podřízené aktivity, který se spustí.|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|Pravda|Obsahuje kolekci podřízené aktivity, který se spustí.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Vyhodnocení po dokončení větev. Pokud je vyhodnocen jako **True**, pak naplánované čekající větví, se zruší. Pokud tato vlastnost není nastavená nebo se vyhodnotí jako **False**, dokončení aktivity po dokončení všech jeho podřízených aktivit. Výchozí hodnota je **null**.|
 
 ## <a name="see-also"></a>Viz také:

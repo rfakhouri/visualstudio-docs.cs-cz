@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870187"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 
 Můžete změnit chování některé standardní příkazy, které jsou automaticky definována v vašeho DSL. Například můžete změnit **Vyjmout** tak, aby vyloučí citlivé informace. K tomuto účelu přepsání metody ve třídě příkaz set. Tyto třídy jsou definovány v souboru CommandSet.cs v projektu DslPackage a jsou odvozeny z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
-> Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+> Pokud chcete vytvořit vlastní příkazy nabídek, přečtěte si téma [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
 ## <a name="what-commands-can-you-modify"></a>Jaké příkazy lze upravit?
 
@@ -71,7 +70,7 @@ Vytvořte nový soubor, který obsahuje částečné deklarace třídy příkazu
 
 ## <a name="override-the-command-methods"></a>Přepište metody příkaz
 
-Většina příkazů mít přidružené dvě metody: metodu s názvem, jako jsou `ProcessOnStatus`... Určuje, zda má být příkaz viditelný a povolený. Je volána, když uživatel klepne pravým tlačítkem myši diagram a by měl rychle spustit a neprovádějte žádné změny. `ProcessOnMenu`... se volá, když uživatel klepne na příkaz a by měl provádět funkce příkazu. Můžete chtít přepsat jeden nebo oba z těchto metod.
+Většina příkazů mít přidružené dvě metody: Metodu s názvem, jako jsou `ProcessOnStatus`... Určuje, zda má být příkaz viditelný a povolený. Je volána, když uživatel klepne pravým tlačítkem myši diagram a by měl rychle spustit a neprovádějte žádné změny. `ProcessOnMenu`... se volá, když uživatel klepne na příkaz a by měl provádět funkce příkazu. Můžete chtít přepsat jeden nebo oba z těchto metod.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Chcete-li změnit při příkazu se zobrazí v nabídce
 

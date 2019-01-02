@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886368"
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 Řešení jazyka specifického pro doménu (DSL), vygeneruje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v sadě Visual Studio. Toto rozhraní API je definováno v kódu, který je generován z definici DSL. Toto téma popisuje generovaného rozhraní API.
 
-## <a name="the-example-solution-component-diagrams"></a>Ukázkové řešení: diagramy komponent
+## <a name="the-example-solution-component-diagrams"></a>Příklad řešení: Diagramy komponent
  Při vytváření řešení, které je zdrojem většina příkladů v tomto tématu Vytvoření DSL z **komponenty modely** šablonu řešení. Toto je jeden standardní šablony, které se zobrazí, když vytvoříte nové řešení DSL.
 
 > [!NOTE]
@@ -66,7 +65,7 @@ ms.locfileid: "49813315"
 
  `ConnectionBuilders.cs`
 
- Tvůrce připojení je třída, která vytvoří vztah. Je kód za nástroj pro připojení. Tento soubor obsahuje pár tříd pro každý nástroj pro připojení. Jejich názvy jsou odvozeny od názvů nástroj relace a připojení k doméně: *vztah*tvůrce, a *ConnectorTool*ConnectAction.
+ Tvůrce připojení je třída, která vytvoří vztah. Je kód za nástroj pro připojení. Tento soubor obsahuje pár tříd pro každý nástroj pro připojení. Jejich názvy jsou odvozeny od názvů nástroj relace a připojení k doméně: *Vztah*tvůrce, a *ConnectorTool*ConnectAction.
 
  (V příkladu součást řešení, jedna tvůrci připojení se nazývá Tvůrce propojení, nezdá, důvodem je, že připojení názvem doménového vztahu.)
 

@@ -1,9 +1,6 @@
 ---
 title: Commandtable – Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CommandTable
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c2adca249ba245825f9b664b46e1b4674d0ea50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 893c55f00d2067eb481efdf9482ab4e8f47aaaf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886291"
 ---
 # <a name="commandtable-element"></a>Commandtable – element
 Je kořenový element z commandtable – *.vsct* souboru. Toto je soubor, který definuje skutečný rozložení a typ příkazů, které poskytuje VSPackage pro prostředí IDE. Příkazy mohou být položky nabídky, nabídky, panely nástrojů a pole se seznamem. Další informace najdete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -49,7 +46,7 @@ Je kořenový element z commandtable – *.vsct* souboru. Toto je soubor, který
   
 | Atribut | Popis |
 |-----------| - |
-| atribut xmlns | Požadováno. Obory názvů XML:<br /><br /> atribut xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs = "<http://www.w3.org/2001/XMLSchema>" |
+| atribut xmlns | Povinný parametr. Obory názvů XML:<br /><br /> atribut xmlns = "<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs = "<http://www.w3.org/2001/XMLSchema>" |
 | jazyk | Volitelné. Atribut language slouží k určení výchozí jazyk všech \<řetězce > prvků v tabulce příkazu.  Pokud jazyk není zadán, použije se jazyk aktuálního procesu:<br /><br /> jazyk = "en-us" |
   
 ### <a name="child-elements"></a>Podřízené elementy  
@@ -70,7 +67,7 @@ Je kořenový element z commandtable – *.vsct* souboru. Toto je soubor, který
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|Žádné||  
+|Žádná||  
   
 ## <a name="see-also"></a>Viz také:  
  [Soubory tabulky (.vsct) příkaz pro Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

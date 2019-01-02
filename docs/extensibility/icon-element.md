@@ -1,9 +1,6 @@
 ---
 title: Icon – Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870005"
 ---
 # <a name="icon-element"></a>Icon – element
 Atribut guid ikonu značky je identifikátor guid definované rastrový obrázek. `id` Atribut vybere slotu v pruhu rastrového obrázku. Tento element je volitelný. Pokud tento prvek není zahrnuta hodnota **guidOfficeIcon:msotcidNoIcon** bude implicitní.  
@@ -37,8 +34,8 @@ Atribut guid ikonu značky je identifikátor guid definované rastrový obrázek
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Požadováno. Identifikátor guid definované rastrový obrázek.|  
-|id|Požadováno. Vybere slotu v pruhu rastrového obrázku.|  
+|identifikátor GUID|Povinný parametr. Identifikátor guid definované rastrový obrázek.|  
+|id|Povinný parametr. Vybere slotu v pruhu rastrového obrázku.|  
   
 ### <a name="child-elements"></a>Podřízené prvky  
   

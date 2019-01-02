@@ -1,8 +1,6 @@
 ---
 title: Kontrolní výrazy ve spravovaném kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce83c69893e4623dc5989561d0edfb6415708d56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880176"
 ---
 # <a name="assertions-in-managed-code"></a>Kontrolní výrazy ve spravovaném kódu
 Příslušný kontrolní výraz nebo `Assert` prohlášení, testuje podmínku, který zadáte jako argument `Assert` příkazu. Pokud je podmínka vyhodnocena jako true, nedojde k žádné akci. Pokud je podmínka vyhodnocena jako NEPRAVDA, výraz se nezdaří. Používáte-li sestavení pro ladění, váš program přejde do režimu přerušení.  
@@ -220,5 +218,5 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Trasování a instrumentace aplikací](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)   
  [Postupy: Podmíněná kompilace pomocí trasování a ladění](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
- [C#, F # a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

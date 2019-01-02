@@ -1,9 +1,6 @@
 ---
 title: Použití služby projektu SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875816"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Použití služby projektu SharePoint
   Systém projektu služby SharePoint obsahuje projekt služby, který vám pomůže provádět úlohy související s systém projektu. Služba projektu není <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objektu.  
   
- Můžete přistupovat k projektu služby SharePoint v rozšíření nástrojů služby SharePoint. Můžete také přistupovat ji v jiných typech rozšíření sady Visual Studio, jako jsou doplňky a rozšíření VSPackages. Další informace najdete v tématu [postupy: načtení služby projektu služby SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
+ Můžete přistupovat k projektu služby SharePoint v rozšíření nástrojů služby SharePoint. Můžete také přistupovat ji v jiných typech rozšíření sady Visual Studio, jako jsou doplňky a rozšíření VSPackages. Další informace najdete v tématu [jak: Načtení služby projektu služby SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md).  
   
 ## <a name="project-service-features"></a>Funkce služba projektu
  V následující tabulce jsou uvedeny úlohy, které můžete provést pomocí projektu služby SharePoint a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> metodu nebo vlastnost použít k provádění jednotlivých úkolů.  
@@ -47,8 +44,7 @@ ms.locfileid: "51295056"
   
 ## <a name="see-also"></a>Viz také:
  [Převod mezi systémovými typy projektů SharePoint a jinými typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [Postupy: načtení služby projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
+ [Postupy: Načtení služby projektu SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Přehled programovacího modelu SharePoint rozšíření nástrojů](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
- [Postupy: načtení služby z objektu DTE](https://msdn.microsoft.com/library/bb166401.aspx)  
-  
+ [Postupy: Načtení služby z objektu DTE](https://msdn.microsoft.com/library/bb166401.aspx)  

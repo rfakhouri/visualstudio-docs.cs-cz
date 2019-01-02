@@ -1,8 +1,6 @@
 ---
-title: Idiaenumstackframes – | Microsoft Docs
-ms.custom: ''
+title: Idiaenumstackframes – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64539a1f10cfa2a263e36095cea40e58244ef6d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1aef0291b4048cf7b673ec9b2791b3b6b6c00846
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879650"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Provede výčet různých rámce zásobníku, která je k dispozici.  
@@ -28,8 +26,8 @@ Provede výčet různých rámce zásobníku, která je k dispozici.
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Načte zadaný počet elementů rámce zásobníku z pořadí výčtu.|  
-|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Návrat na začátek v sekvenci výčtu.|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Načte zadaný počet prvků rámce zásobníku v pořadí výčtu.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Návrat na začátek sekvence výčtu.|  
   
 ## <a name="remarks"></a>Poznámky  
   
@@ -37,7 +35,7 @@ Provede výčet různých rámce zásobníku, která je k dispozici.
  Získat voláním toto rozhraní [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) nebo [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metody.  
   
 ## <a name="example"></a>Příklad  
- Tento příklad ukazuje, jak získat a použít `IDiaEnumStackFrames` rozhraní. Najdete v článku [idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md) rozhraní pro implementaci `PrintStackFrame` funkce.  
+ Tento příklad ukazuje, jak získat a používat `IDiaEnumStackFrames` rozhraní. Najdete v článku [idiastackframe –](../../debugger/debug-interface-access/idiastackframe.md) rozhraní pro implementaci `PrintStackFrame` funkce.  
   
 ```C++  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
@@ -65,14 +63,14 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

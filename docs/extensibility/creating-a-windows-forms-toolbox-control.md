@@ -1,9 +1,6 @@
 ---
 title: Vytváření Windows Forms ovládacího prvku panelu nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: b84c554427d443d54d117b72cec5a423e10e7887
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872918"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms panel nástrojů
 Šablona položky ovládacího prvku Windows Forms panel nástrojů, který je součástí aplikace Visual Studio Extensibility Tools (VS SDK) umožňuje vytvořit ovládací prvek, který je automaticky přidán do **nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak použít šablonu k vytvoření ovládacího prvku jednoduchého čítače, které můžete distribuovat ostatním uživatelům.  
