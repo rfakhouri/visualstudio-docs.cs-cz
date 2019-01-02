@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866488"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definování zásady zamykání pro vytváření segmentů jen pro čtení
 Rozhraní API neměnnosti sady Visual Studio Visualization and Modeling SDK umožňuje aplikaci uzamknout část nebo celý model jazyka specifického pro doménu (DSL), aby ji lze číst, ale nebyl změněn. Tato možnost jen pro čtení může použít, třeba tak, aby uživatel požádat o vaši kolegové mohli opatřit poznámkami a zkontrolujte modelu DSL, ale můžete zakázat možnost měnit původní.
@@ -79,10 +78,10 @@ partition.SetLocks(Locks.Delete);
 
 |Hodnota|To znamená pokud `IsLocked(Value)` má hodnotu true|
 |-|-|
-|Žádné|Bez omezení.|
+|Žádná|Bez omezení.|
 |Vlastnost|Vlastnosti domény prvků nelze změnit. To se nevztahuje na vlastnosti, které jsou generovány podle role doménové třídy v relaci.|
 |Přidejte|Nelze vytvořit nové prvky a odkazy v oddílu nebo úložiště.<br /><br /> Nevztahuje se na `ModelElement`.|
-|Přesunutí|Element nelze přesouvat mezi oddíly, pokud `element.IsLocked(Move)` má hodnotu true, nebo pokud `targetPartition.IsLocked(Move)` má hodnotu true.|
+|Přesunout|Element nelze přesouvat mezi oddíly, pokud `element.IsLocked(Move)` má hodnotu true, nebo pokud `targetPartition.IsLocked(Move)` má hodnotu true.|
 |Odstranit|Element nelze odstranit, pokud je nastavení tohoto uzamknout elementu samotného nebo na některý z prvků, do které by odstranění rozšíření, jako je například vložené prvky a tvary.<br /><br /> Můžete použít `element.CanDelete()` ke zjištění, zda elementu je možné odstranit.|
 |Změna pořadí|Řazení odkazy na roleplayer nelze změnit.|
 |Aktér role pro doménovou|Sada odkazů, které jsou zdrojem na tento element nejde změnit. Například nové prvky nemůže být vložený, v rámci tohoto elementu. Odkazy, pro které tento element je cílem to nemá vliv.<br /><br /> Pokud tento prvek je odkaz, nejsou ovlivněny její zdroj a cíl.|
