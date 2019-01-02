@@ -1,8 +1,6 @@
 ---
-title: Idiaaddressmap – | Microsoft Docs
-ms.custom: ''
+title: Idiaaddressmap – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,50 +12,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1593f59125c4b6325bfd97015485cc2a4d85f6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a563ee3502cc1e713946cd70575be187ecbeadbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824545"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-Umožňuje řídit způsob vypočítá DIA SDK virtuální a relativní virtuální adresy ladění objekty.  
+Umožňuje řídit jak DIA SDK vypočítá virtuální a relativní virtuální adresy pro ladění objektů.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaAddressMap : IUnknown  
+IDiaAddressMap : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaAddressMap`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaAddressMap`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Určuje, zda bylo úspěšně navázáno adres mapují konkrétní relace.|  
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Určuje, zda má být použita adres mapují k překladu adres symbol.|  
-|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Určuje, zda je povoleno výpočet a použít relativní virtuálních adres.|  
-|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Umožňuje klientovi k povolení nebo zakázání výpočtu relativní virtuální adresy.|  
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Označuje, zda mapování adres se vytvořilo pro konkrétní relace.|  
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Určuje, zda mapování adres má použít k překladu adres symbol.|  
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Určuje, zda je povoleno výpočtu a používání relativních virtuálních adres.|  
+|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Umožňuje klientovi k povolení nebo zakázání výpočtu relativních virtuálních adres.|  
 |[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Načte aktuální zarovnání obrázku.|  
 |[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Nastaví zarovnání obrázku.|  
-|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Nastaví obrázek hlavičky, chcete-li povolit překlad relativní virtuálních adres.|  
-|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Poskytuje mapování adres pro podporu rozložení překlady bitovou kopii.|  
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Nastaví obrázek záhlaví povolit překlad relativních virtuálních adres.|  
+|[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Poskytuje mapování adres pro podporu překlady rozvržení obrázku.|  
   
 ## <a name="remarks"></a>Poznámky  
- Ovládací prvek poskytované toto rozhraní je zapouzdřené v dvě sady dat zadáte: obrázek hlavičky a vyřešte mapy. Většina klienti používat [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metoda najít informace o správné ladění pro bitovou kopii a metodu, lze obvykle zjistit všechny potřebné hlavičky a mapy samotná data. Ale někteří klienti implementují specializované zpracování a hledání pro data. Tito klienti používat metody třídy `IDiaAddressMap` rozhraní zajistit DIA SDK ve výsledcích vyhledávání.  
+ Toto rozhraní poskytuje ovládací prvek, je zapouzdřena v dvě sady dat zadáte: obrázek záhlaví a řešit mapy. Většina klientů použijte [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody k vyhledání správné ladicí informace pro bitovou kopii a metodu lze obvykle zjistit všechny potřebné hlavičky a mapy vlastní data. Ale někteří klienti implementovat specializovaný zpracování a vyhledávat data. Tito klienti použití metod pro posunutí `IDiaAddressMap` rozhraní k poskytování DIA SDK ve výsledcích vyhledávání.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je k dispozici z objektu relace DIA. Volání klienta `QueryInterface` metoda DIA relace objekt rozhraní, obvykle [idiasession –](../../debugger/debug-interface-access/idiasession.md), načíst `IDiaAddressMap` rozhraní.  
+ Toto rozhraní je k dispozici z objektu relace DIA. Volání klienta `QueryInterface` metodu na DIA relace objekt rozhraní, obvykle [idiasession –](../../debugger/debug-interface-access/idiasession.md), k načtení `IDiaAddressMap` rozhraní.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

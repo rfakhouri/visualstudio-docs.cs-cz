@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram3::ExecuteOnThread | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3::ExecuteOnThread
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbb2650fc2c001e57de7b1820cff238c8963e8cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889433"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Spustí ladicí program. Vlákno se vrátí do poskytnout informace o ladicího programu, ve které vlákno je uživatel zobrazení při provádění programu.  
@@ -50,7 +47,7 @@ int ExecuteOnThread(
   
 - Krok: Zrušit všechny původní kroku a spustit, dokud se nedokončí nový krok.  
   
-- Pokračovat: Spusťte znovu a ponechání aktivní žádné staré kroku.  
+- Pokračujte: Spusťte znovu a ponechání aktivní žádné staré kroku.  
   
   Vlákno předán `ExecuteOnThread` je užitečné, když se budete rozhodovat, ve kterém kroku zrušit. Pokud si nejste jisti vlákno, spusťte zruší všechny kroky. Se znalostí vlákna stačí zrušit kroku na aktivní vlákno.  
   

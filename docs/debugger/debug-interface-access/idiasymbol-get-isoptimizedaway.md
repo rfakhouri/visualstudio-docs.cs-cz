@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isOptimizedAway | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isOptimizedAway | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0dd37a718a468b43547cf77b8611264f909564
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 887bcaae0e87aabd3f2ecd9a051d33b0b41ed771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917394"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Určuje, zda je proměnná optimalizována rychle.  
+Určuje, zda je proměnná je vypuštěn.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +29,10 @@ HRESULT get_isOptimizedAway(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `BOOL` určující, zda je proměnná optimalizována rychle.  
+ [out] Ukazatel `BOOL` , která určuje, zda je proměnná je vypuštěn.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

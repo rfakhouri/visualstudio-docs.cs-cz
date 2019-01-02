@@ -1,8 +1,6 @@
 ---
-title: Příkazy nabídky zobrazení | Microsoft Docs
-ms.custom: ''
+title: Zobrazení příkazů nabídky | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - View menu commands
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfbcd8d586c1c6d2d3b208c3d7d62b2b333845d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915371"
 ---
 # <a name="view-menu-commands"></a>Zobrazení příkazů nabídky
-**Zobrazení** nabídky poskytuje příkazy pro ovládání nástroje Spy ++ uživatelské rozhraní.  
+**Zobrazení** nabídka obsahuje příkazy pro řízení nástroje Spy ++ uživatelské rozhraní.  
   
  **Písma**  
- Otevře se **písma** dialogové okno, kde můžete vybrat písma pro použití v aktuálním zobrazení nástroje Spy ++.  
+ Otevře **písmo** dialogové okno, kde můžete vybrat písmo pro použití v aktuálním zobrazení nástroje Spy ++.  
   
  **Panel nástrojů**  
  Skryje nebo zobrazí panel nástrojů.  
@@ -32,4 +30,4 @@ ms.locfileid: "31481772"
  Skryje nebo zobrazí stavový řádek.  
   
  **Vlastnosti**  
- Otevře se **vlastnosti** dialogové okno pro aktivní zobrazení.
+ Otevře **vlastnosti** dialogové okno pro aktivní zobrazení.

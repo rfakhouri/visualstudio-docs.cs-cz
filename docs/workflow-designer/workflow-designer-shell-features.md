@@ -3,7 +3,6 @@ title: Funkce prostředí návrháře postupu provádění
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -12,31 +11,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d881a6c6e14983fd8537d8e78066ef9479b9633
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880673"
 ---
 # <a name="workflow-designer-shell-features"></a>Funkce prostředí návrháře postupu provádění
 
-Návrhář postupu provádění se skládá ze tří hlavních oblastí uživatelského rozhraní: plochu návrháře, navigačního panelu nad ním a pod ním prostředí. Navigačního panelu, umístěný v horní části obrazovky se používá k zobrazení seznamu nadřazených aktuální kořenové aktivity. Další informace najdete v tématu [postupy: použití navigace](../workflow-designer/how-to-use-breadcrumb-navigation.md). Plochu návrháře umístěný v centru obrazovky se používá k vytváření pracovních postupů. Prostředí, umístěný v dolní části obrazovky, obsahuje řadu tlačítek pro Správa aktuálního zobrazení.
+Návrhář postupu provádění se skládá ze tří hlavních oblastech uživatelského rozhraní: na plochu návrháře, panelu navigace s popisem cesty nad ním a pod ním prostředí. Na panelu navigace s popisem cesty umístěný v horní části obrazovky, slouží k zobrazení seznamu nadřazených členů aktuální kořenovou aktivitu. Další informace najdete v tématu [jak: Pomocí navigace s popisem cesty](../workflow-designer/how-to-use-breadcrumb-navigation.md). Na plochu návrháře umístěn ve středu obrazovky, slouží k vytváření pracovních postupů. Prostředí, které jsou umístěné v dolní části obrazovky obsahuje řadu tlačítek pro Správa aktuálního zobrazení.
 
-## <a name="shell-features"></a>Funkce prostředí
- Prostředí má tlačítka na pravé straně panelu můžete zvětšit nebo zmenšit pracovní postup, podle obsahu pracovního postupu na velikost obrazovky a zobrazit nebo skrýt mapu přehledu. Také můžete zvětšit nebo zmenšit pracovní postup pomocí klávesové zkratky CTRL ++ a CTRL +-.
+## <a name="shell-features"></a>Prostředí funkce
+ Prostředí má tlačítka na pravé straně panelu, který vám umožní zvětšit nebo zmenšit pracovního postupu, přizpůsobit obsah pracovního postupu na velikost obrazovky a zobrazit nebo skrýt přehledovou mapu. Můžete také přiblížit nebo oddálit pracovního postupu pomocí klávesové zkratky CTRL ++ a CTRL +-.
 
-## <a name="overview-map"></a>Přehled mapy
- Přehled mapa zobrazuje malé verzi celý aktivity v aktuální kořenové s popisem cesty, včetně všech jejích podřízených a všemi podřízenými rozšířené. Je zobrazení, obdélníku s oranžové ohraničení, který označuje části aktivity zobrazené v editoru. Přetahování rámeček kolem mapu přehledu posune návrháře pracovních postupů a změní zobrazení editoru.
+## <a name="overview-map"></a>Přehledovou mapu
+ Přehledovou mapu jako malé verze celá aktivita zobrazí aktuální kořenové navigace s popisem cesty, včetně všech jeho podřízených prvků a všemi podřízenými rozšířené. Zde je zobrazení, obdélník se oranžové ohraničení, která zvýrazňuje část aktivity aktuálně zobrazený v editoru. Přetahování obdélník kolem přehledovou mapu posune návrháře pracovních postupů a změní zobrazení editoru.
 
 > [!NOTE]
-> Návrhář postupu provádění uživatelské rozhraní je virtualizované. Návrháře aktivit jsou vykreslovány pouze v případě potřeby. Část pracovní postup nebylo nikdy řádně na plochu návrháře, část se zobrazí jako bílé na mapu přehledu. Posouvání kolem mapu přehledu úplně nevykresluje pracovního postupu.
+> Je virtualizovaný uživatelského rozhraní návrháře postupu provádění. Návrháři aktivit jsou generovány pouze v případě potřeby. Část pracovního postupu byl nakreslen nikdy na návrhové ploše, část se zobrazí jako bílá na přehledovou mapu. Posouvání kolem přehledovou mapu zcela kreslení pracovního postupu.
 
-## <a name="copying-or-saving-workflows-as-images"></a>Kopírování nebo uložení pracovních jako obrázky
- Pracovní postupy můžete zkopírovat ve formátu rastrového obrázku nebo uložit ve formátu rastrového obrázku nebo vektoru. Kopírování nebo uložení obrázku poskytuje způsob, jak exportovat zobrazení celý aktivity v aktuální kořenové s popisem cesty, včetně všech jejích podřízených a všemi podřízenými rozšířené na jiném programu.
+## <a name="copying-or-saving-workflows-as-images"></a>Kopírování nebo ukládání pracovních postupů jako obrázky
+ Pracovní postupy dá zkopírovali v formát rastrového obrázku nebo uložit ve formátu rastrový obrázek nebo vektoru. Kopírování nebo ukládání obrazu poskytuje způsob, jak exportovat zobrazení celého aktivity aktuální kořenové navigace s popisem cesty, včetně všech jeho podřízených prvků a všemi podřízenými rozšířené na jiném programu.
 
- Pokud chcete zkopírovat bitovou kopii, klikněte pravým tlačítkem někde v návrháři a vyberte **kopie jako obrázek**. Pokud chcete uložit jako bitovou kopii, klikněte pravým tlačítkem na libovolné místo v návrháři a vyberte **uložit jako obrázek**. Pracovní postupy lze uložit ve formátu JPG, GIF, PNG nebo XPS. Formát je vybrané na **uložit jako** dialogovém okně **uložit jako typ:** rozevírací seznam v dolní části okna.
+ Pokud chcete zkopírovat jako obrázek, klikněte pravým tlačítkem kamkoli v návrháři a vyberte **zkopírovat jako obrázek**. Uložit jako obrázek, klikněte pravým tlačítkem na libovolné místo v návrháři a vyberte **uložit jako obrázek**. Pracovní postupy je ukládat ve formátu JPG, GIF, PNG nebo XPS. Formát je vybrán na **uložit jako** dialogovém **uložit jako typ:** rozevírací seznam v dolní části okna.
 
-## <a name="fonts-and-colors"></a>Písma a barev
+## <a name="fonts-and-colors"></a>Písma a barvy
 
-Písma použitá v Návrháři pracovních postupů v prostředí Visual Studio jsou řízeny písmo prostředí. Pokud používáte schéma s vysokým kontrastem barvu motivu operačního systému změnit barev zobrazí v Návrháři pracovních postupů. Po provedení změny nastavení písma a barev, než změny se projeví v Návrháři pracovních postupů, musíte restartovat Visual Studio.
+Písmo použité v Návrháři pracovních postupů v sadě Visual Studio se řídí písmo prostředí. Barev zobrazí v Návrháři pracovních postupů změnit, pokud používáte kontrastní barevné schéma pro motivu operačního systému. Po provedení změny nastavení písma a barvy, než se změny projeví v Návrháři pracovních postupů, musíte restartovat Visual Studio.

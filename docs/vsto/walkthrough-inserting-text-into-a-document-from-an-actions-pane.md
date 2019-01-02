@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vložení textu do dokumentu z podokna akcí'
-ms.custom: ''
+title: 'Průvodce: Vkládání textu do dokumentu z podokna akcí'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943087"
 ---
-# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Návod: Vložení textu do dokumentu z podokna akcí
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Průvodce: Vkládání textu do dokumentu z podokna akcí
   Tento návod ukazuje, jak vytvořit podokna akcí v dokumentu aplikace Microsoft Office Word. V podokně Akce obsahuje dva ovládací prvky, shromažďovat vstup a odešlete textu do dokumentu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -51,7 +48,7 @@ ms.locfileid: "51948722"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření projektu Wordového dokumentu s názvem **Moje základní podokna akcí**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu Wordového dokumentu s názvem **Moje základní podokna akcí**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový Wordový dokument v návrháři a přidá **Moje základní podokna akcí** projektu **Průzkumníka řešení**.  
   
@@ -64,7 +61,7 @@ ms.locfileid: "51948722"
   
     **21. března 2008**  
   
-    **Jméno**  
+    **Název**  
   
     **Adresa**  
   
@@ -114,7 +111,7 @@ ms.locfileid: "51948722"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**GetName –**|  
+    |**Název**|**GetName –**|  
     |**Velikost**|**130, 20**|  
   
 5.  Přidejte druhý **popisek** ovládací prvek ovládacího prvku podokna akcí a změnit **Text** vlastnost **adresu**.  
@@ -123,7 +120,7 @@ ms.locfileid: "51948722"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**GetAddress**|  
+    |**Název**|**GetAddress**|  
     |**Přijímá Return**|**Hodnota TRUE**|  
     |**Multiline**|**Hodnota TRUE**|  
     |**Velikost**|**130, 40**|  
@@ -132,7 +129,7 @@ ms.locfileid: "51948722"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**addText**|  
+    |**Název**|**addText**|  
     |**Text**|**Vložit**|  
   
 ## <a name="add-code-to-insert-text-into-the-document"></a>Přidejte kód pro vložení textu do dokumentu  
@@ -145,7 +142,7 @@ ms.locfileid: "51948722"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  V jazyce C# je nutné přidat obslužnou rutinu události pro kliknutí na tlačítko. Tento kód v můžete umístit `InsertTextControl` konstruktor po volání `InitializeComponent`. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  V jazyce C# je nutné přidat obslužnou rutinu události pro kliknutí na tlačítko. Tento kód v můžete umístit `InsertTextControl` konstruktor po volání `InitializeComponent`. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
@@ -178,9 +175,9 @@ ms.locfileid: "51948722"
 ## <a name="next-steps"></a>Další kroky  
  Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Vytvořte podokna akcí v aplikaci Excel. Další informace najdete v tématu [postupy: Přidání podokna akcí k Excelovým sešitům](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
+-   Vytvořte podokna akcí v aplikaci Excel. Další informace najdete v tématu [jak: Přidání podokna akcí k Excelovým sešitům](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
--   Vytvoření vazby dat k ovládacím prvkům v podokně Akce. Další informace najdete v tématu [návod: vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Vytvoření vazby dat k ovládacím prvkům v podokně Akce. Další informace najdete v tématu [názorný postup: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)   
@@ -188,5 +185,3 @@ ms.locfileid: "51948722"
  [Postupy: Přidání podokna akcí k Excelovým sešitům](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [Postupy: Správa rozložení ovládacích prvků v podoknech akcí](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)  
-  
-  

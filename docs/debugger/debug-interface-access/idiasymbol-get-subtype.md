@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_subType | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_subType | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5e36d6a87bd9637c04b812f4cc7f195ecfbf27
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f5753faf29c6794dcf9b16fdecab9502d7e96b5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880098"
 ---
 # <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
 Načte typ sub.  
@@ -31,10 +29,10 @@ HRESULT get_subType(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na dílčí typ.  
+ [out] Ukazatel na typ sub.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

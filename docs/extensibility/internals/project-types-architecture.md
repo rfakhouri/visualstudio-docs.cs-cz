@@ -1,9 +1,6 @@
 ---
-title: Typy projektu architektura | Microsoft Docs
-ms.custom: ''
+title: Architektura typů projektů | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
@@ -13,32 +10,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef7fe6fbf4a8899606dca35c10745e68e3cbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea8273c1db662d5184d1afb71b5cd39789d6794
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929303"
 ---
-# <a name="project-types-architecture"></a>Architektura typy projektu
-Tato část obsahuje podrobné informace o architektuře typy projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="project-types-architecture"></a>Architektura typů projektů
+Tato část obsahuje podrobné informace o architektuře typů projektů v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)  
- Jsou uvedené služby, které můžou využívat typu projektu a, kterou musí implementovat rozhraní.  
+ Obsahuje seznam služeb, které můžou využívat typu projektu a, kterou musí implementovat rozhraní.  
   
  [Základní komponenty modelu projektu](../../extensibility/internals/project-model-core-components.md)  
- Popisuje rozhraní typy projektů současně musí implementovat a volitelně můžete implementovat dodatečných funkcí.  
+ Popisuje rozhraní pro typy projektů musí implementovat i může volitelně implementovat k poskytnutí dalších funkcí.  
   
  [Kdy vytvořit typy projektů](../../extensibility/internals/when-to-create-project-types.md)  
- Zadejte pomůže vám při rozhodování při musíte vytvořit projekt a kdy můžete použít jiné [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkce rozšíření, jako je například VSPackages a editory k dosažení stejného cíle.  
+ Pomůže vám při rozhodování musíte při vytváření projektu zadejte a kdy můžete použít jiné [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkce rozšíření, jako je například rozšíření VSPackages a editory k dosažení stejného cíle.  
   
  [Hierarchie a výběr](../../extensibility/internals/hierarchies-and-selection.md)  
- Popisuje, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá hierarchie a výběr kontextu zajistit konzistentní a zjednodušená uživatelské prostředí.  
+ Popisuje, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá hierarchie a výběr kontextu pro zajištění konzistentní a zjednodušené uživatelské prostředí.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Podtypy projektů](../../extensibility/internals/project-subtypes.md)  
- Vysvětluje, jak projektu podtypů umožňují přizpůsobit chování projektu systémy [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] a [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
+ Vysvětluje, jak podtypů projektů umožňují přizpůsobit chování systémů projektů [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] a [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
   
  [Typy projektů](../../extensibility/internals/project-types.md)  
- Poskytuje přehled projekty jako základní stavební bloky [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou uvedeny odkazy na další témata, které vysvětlují, jak řídit projekty vytváření a kompilování kódu.
+ Poskytuje přehled o projekty jako základní stavební bloky [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou uvedeny odkazy na další témata, která popisují, jak řídit projekty vytváření a kompilování kódu.

@@ -1,9 +1,6 @@
 ---
 title: Služba jazyka a editoru Rozšiřovací body | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907959"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Jazykové služby a editor Rozšiřovací body
 Editor poskytuje Rozšiřovací body, které můžete rozšířit jako součásti Managed Extensibility Framework (MEF), včetně většina funkcí služby jazyka. Toto jsou hlavní rozšíření kategorií bodu:  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: přidružené dalších úprav.  
   
   > [!NOTE]
-  >  Příklad <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, viz HighlightWordTag definice v [návod: zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
+  >  Příklad <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, viz HighlightWordTag definice v [názorný postup: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: přidružené k oblasti, které můžete rozbalit nebo sbalit v osnovy.  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Použít tento formát definice pro značku, odkazovat na název, který jste nastavili v atribut názvu třídy (ne zobrazovaným názvem).  
   
 > [!NOTE]
->  Příklad <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, naleznete v tématu třídy HighlightWordFormatDefinition v [návod: zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
+>  Příklad <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, naleznete v tématu třídy HighlightWordFormatDefinition v [názorný postup: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extend-adornments"></a>Rozšíření grafických doplňků  
  Vylepšení definování vizuální efekty, které je možné přidat buď na text, který se zobrazí v náhledu textu nebo textu zobrazení samotný. Můžete definovat vlastní dalších úprav jako libovolný typ <xref:System.Windows.UIElement>.  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: název dalších úprav.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: řazení dalších úprav s ohledem na ostatních vrstvách dalších úprav. Třída <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definuje čtyři vrstvy výchozí: výběr, osnova, blikajícího kurzoru a Text.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: řazení dalších úprav s ohledem na ostatních vrstvách dalších úprav. Třída <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definuje čtyři výchozí vrstvy: Výběr, osnovy, blikajícího kurzoru a Text.  
   
   Následující příklad ukazuje export atributy na definici vrstvy dalších úprav.  
   
@@ -546,7 +543,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Další informace o implementaci zdroje technologie IntelliSense najdete v následujících návodech:  
   
- [Návod: Zobrazení QuickInfo popisky](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Návod: Zobrazit popisky rychlé informace](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Návod: Zobrazení vyhrazené nápovědy](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Další informace o používání řadiče technologie IntelliSense najdete v následujících návodech:  
   
- [Návod: Zobrazení QuickInfo popisky](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Návod: Zobrazit popisky rychlé informace](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

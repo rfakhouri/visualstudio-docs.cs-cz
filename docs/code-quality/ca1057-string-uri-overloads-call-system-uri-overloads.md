@@ -1,8 +1,7 @@
 ---
-title: 'CA1057: Řetězcové přetížení identifikátoru URI volá přetížení System.Uri'
+title: 'CA1057: Volání řetězcové přetížení identifikátoru URI volá přetížení System.Uri'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1057
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 44130632cb416bf03819ddff13b797ac3b799354
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: cc113abf5fc1f0d47b37643c404dffade26d0899
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891187"
 ---
-# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Řetězcové přetížení identifikátoru URI volá přetížení System.Uri
+# <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Volání řetězcové přetížení identifikátoru URI volá přetížení System.Uri
 
 |||
 |-|-|
@@ -63,4 +62,4 @@ Typ deklaruje přetížení metod, které se liší pouze nahrazením řetězcov
 
  [CA1054: Parametry identifikátoru URI by neměly být řetězce](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055: Návratové hodnoty identifikátoru URI by neměly být řetězce](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055: Identifikátor URI návratové hodnoty by neměly být řetězce](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

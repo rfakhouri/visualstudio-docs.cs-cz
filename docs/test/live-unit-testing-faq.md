@@ -2,7 +2,6 @@
 title: Nejčastější dotazy k funkci Live Unit Testing
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935590"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – nejčastější dotazy
 
@@ -97,7 +96,7 @@ Ano. Live Unit Testing spolupracuje s .NET Core a .NET Framework. Nedávno byla 
 
 Pokud vaše řešení vyžaduje vlastní postup pro sestavení pro instrumentaci (Live Unit Testing), které nejsou povinné pro "regulárního" neinstrumentovaného sestavení, pak můžete přidat kód do projektu nebo *.targets* souborů, které kontroluje, `BuildingForLiveUnitTesting` vlastnost a provede vlastní předzálohovacího nebo pozálohovacího kroky sestavení. Můžete také odebrat určité kroky sestavení (třeba publikování nebo generování balíčků) nebo přidat kroky sestavení (jako je kopírování požadavky) Live Unit Testing sestavení na základě této vlastnosti projektu. Přizpůsobení sestavení na základě této vlastnosti regulárního sestavení nijak nezmění a ovlivní pouze Live Unit Testing sestavení.
 
-Například může být cílem, který vytváří balíčky NuGet během regulárního sestavení. Pravděpodobně nechcete, aby balíčky NuGet, se vygeneruje po každé úpravě, které provedete. Proto můžete zakázat, které se zaměřují v buildu Live Unit Testing tímto způsobem přibližně takto:  
+Například může být cílem, který vytváří balíčky NuGet během regulárního sestavení. Pravděpodobně nechcete, aby balíčky NuGet, se vygeneruje po každé úpravě, které provedete. Proto můžete zakázat, které se zaměřují v buildu Live Unit Testing tímto způsobem přibližně takto:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Této chybě může dojít, pokud proces sestavení pro vaše řešení bezpodm�
 
 Například, pokud přepsání sestavení `<OutputPath>` jak je znázorněno níže:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Například, pokud přepsání sestavení `<OutputPath>` jak je znázorněno ní
 
 potom můžete nahradit za následující kód XML:
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ Nesmí být přepsána `<OutDir>` přímo v procesu sestavení; přepsat `<Outpu
 ## <a name="set-the-location-of-build-artifacts"></a>Nastavit umístění artefaktů sestavení
 **Chci, aby artefakty sestavení Live Unit Testing pro přejít na konkrétní umístění, namísto výchozího umístění v rámci *.vs* složky. Jak lze změnit, který?**
 
-Nastavte `LiveUnitTesting_BuildRoot` proměnnou individuální prostředí pro cestu, kde chcete Live Unit Testing artefakty sestavení do vyřadit. 
+Nastavte `LiveUnitTesting_BuildRoot` proměnnou individuální prostředí pro cestu, kde chcete Live Unit Testing artefakty sestavení do vyřadit. 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Test Explorer vs. Live Unit Testing testovací běhy 
 **Jak je spouštění testů z okna Průzkumníka testů liší od spuštění testů v Live Unit Testing?**
 
 Existuje několik rozdílů:
 
-- Spuštění nebo ladění testů z **Průzkumník testů** okna ICT regulární binární soubory, zatímco Live Unit Testing běží instrumentované binární soubory. Pokud chcete ladit instrumentované binární soubory, přidávání [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) volání metody v testovací metodě způsobí, že ladicí program ke spuštění vždy, když, že metoda je proveden (včetně při spuštění pomocí Live Unit Testing) a pak můžete připojení a ladění instrumentovaný binární soubor. Naše naděje však je, že instrumentace je transparentní pro vás pro většinu scénářů uživatelů, a, není potřeba ladění instrumentované binární soubory.
+- Spuštění nebo ladění testů z **Průzkumník testů** okna ICT regulární binární soubory, zatímco Live Unit Testing běží instrumentované binární soubory. Pokud chcete ladit instrumentované binární soubory, přidávání [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) volání metody v testovací metodě způsobí, že ladicí program ke spuštění vždy, když provedení metody (včetně při spuštění pomocí Live Unit Testing), a pak můžete připojit a ladit instrumentovaný binární soubor. Naše naděje však je, že instrumentace je transparentní pro vás pro většinu scénářů uživatelů, a, není potřeba ladění instrumentované binární soubory.
 
 - Live Unit Testing nevytvoří novou doménu aplikace pro spuštění testů, ale testy spustit z **Průzkumník testů** okno Vytvořit novou doménu aplikace.
 
@@ -203,7 +202,7 @@ Testy, které využívají tyto hodnoty může selhat při spuštění metodou L
 
 Vaše řešení můžete vytvářet i v případě, že nejsou provádění úprav, pokud proces sestavení vašeho řešení generuje zdrojový kód, který je součástí vlastním řešením a cílové soubory sestavení nemají odpovídající vstupy a výstupy zadán. Cíle by se měly provádět seznam vstupů a výstupů tak, aby MSBuild může provést příslušné kontroly aktuální a určit, jestli je potřeba nové sestavení.
 
-Live Unit Testing spustí sestavení pokaždé, když se zjistí, že došlo ke změně zdrojových souborů. Protože sestavení vašeho řešení generuje zdrojové soubory, Live Unit Testing dostane do sestavení nekonečné smyčky. Pokud však vstupy a výstupy cíle jsou kontrolovány při Live Unit Testing (po zjištění nově vytvořených zdrojových souborů z předchozího buildu) spuštění druhé sestavení, protože se vstupy a výstupy kontroly, ji budou přerušit ze smyčky sestavení Označuje, že všechno, co je aktuální.  
+Live Unit Testing spustí sestavení pokaždé, když se zjistí, že došlo ke změně zdrojových souborů. Protože sestavení vašeho řešení generuje zdrojové soubory, Live Unit Testing dostane do sestavení nekonečné smyčky. Pokud však vstupy a výstupy cíle jsou kontrolovány při Live Unit Testing (po zjištění nově vytvořených zdrojových souborů z předchozího buildu) spuštění druhé sestavení, protože se vstupy a výstupy kontroly, ji budou přerušit ze smyčky sestavení Označuje, že všechno, co je aktuální.  
 
 ## <a name="lightweight-solution-load"></a>Zjednodušené načtení řešení
 **Live Unit testing práce s funkce zjednodušeného řešení načtení jak?**
@@ -223,12 +222,12 @@ Jedná se o známý problém, by měl být stanovena v následné aktualizaci sa
 
 Tento problém je vyřešený a neexistuje v sadě Visual Studio 2017 verze 15.3. Upgradovat na tuto verzi sady Visual Studio.
 
-Pro starší verze sady Visual Studio 2017 jde o známý problém. Chcete-li tento problém obejít, je potřeba upravte libovolný soubor po zahrnuty nebo vyloučeny testy. 
+Pro starší verze sady Visual Studio 2017 jde o známý problém. Chcete-li tento problém obejít, je potřeba upravte libovolný soubor po zahrnuty nebo vyloučeny testy. 
 
 ## <a name="editor-icons"></a>Editor ikon
 **Proč se mi nezobrazují všechny ikony v editoru i v případě, že Live Unit Testing se zdá být spouštění testů na základě zpráv v okně Výstup?**
 
-Pokud z nějakého důvodu nejsou instrumentované sestavení, která Live Unit Testing pracuje na se nemusí zobrazovat ikony v editoru. Například není kompatibilní s projekty, nastavte Live Unit Testing `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. V takovém případě je potřeba aktualizovat buď odeberte toto nastavení, nebo změňte ho na váš proces sestavení `true` pro Live Unit Testing pro práci. 
+Pokud z nějakého důvodu nejsou instrumentované sestavení, která Live Unit Testing pracuje na se nemusí zobrazovat ikony v editoru. Například není kompatibilní s projekty, nastavte Live Unit Testing `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. V takovém případě je potřeba aktualizovat buď odeberte toto nastavení, nebo změňte ho na váš proces sestavení `true` pro Live Unit Testing pro práci. 
 
 ## <a name="capture-logs"></a>Zachycení protokoly
 **Jak shromáždím podrobnější protokoly do souborů zpráv o chybách?**

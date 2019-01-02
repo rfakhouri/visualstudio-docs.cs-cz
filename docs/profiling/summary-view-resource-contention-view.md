@@ -1,8 +1,6 @@
 ---
-title: Souhrnné zobrazení – zobrazení kolize prostředků | Microsoft Docs
-ms.custom: ''
+title: Souhrnné zobrazení – zobrazení kolize prostředků | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
@@ -12,38 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed1db5bd560c32cdb40ddc728b3ede63c70dbc88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917420"
 ---
 # <a name="summary-view---resource-contention-view"></a>Souhrnné zobrazení – zobrazení kolize prostředků
-Souhrnné zobrazení zobrazí informace o událostech v aplikaci, ve kterém byla pozastavena vlákna nebo proces, při jeho čekali pro přístup k prostředku.  
+Souhrnné zobrazení zobrazuje informace o událostech ve vaší aplikaci, ve kterém byl pozastaven vlákna nebo procesu při čekání na přístup k prostředku.  
   
- Další informace, včetně popisu odkazy oznámení a sestavy seznamů v tématu [zobrazení souhrnu](../profiling/summary-view.md).  
+ Další informace, včetně popisu odkazy oznámení a sestavy seznamy, naleznete v tématu [souhrnné zobrazení](../profiling/summary-view.md).  
   
 ## <a name="timeline-graph"></a>Časová osa grafu  
- Časová osa grafu v souhrnné zobrazení se zobrazuje číslo kolizní události PROFILOVANÉHO aplikace v průběhu času, který profilace došlo k chybě. Časová osa grafu můžete filtrovat zobrazení vybrané časové období. Další informace najdete v tématu [postupy: filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+ Časová osa grafu v souhrnném zobrazení zobrazuje počet kolizní události profilované aplikace v čase, které profilaci došlo k chybě. Časová osa grafu můžete použít k filtrování zobrazení tak, aby ve vybraném časovém rozsahu. Další informace najdete v tématu [jak: Filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
-## <a name="most-contended-resources"></a>Většina tvrdil prostředků  
- **Většina tvrdil prostředky** jsou uvedeny prostředky v aplikaci, která způsobila, že nejvíce kolizní události. Můžete kliknout na název zobrazíte zobrazení kolizí prostředku. Zobrazení kolizí poskytuje podrobné časové osy z kolize prostředku – tím, že přístup z více vláken.  
+## <a name="most-contended-resources"></a>Nejspornější prostředky  
+ **Většinu prostředků ve sporných** seznam prostředků v aplikaci, která způsobila nejvíce kolizní události. Můžete kliknout na název prostředku k zobrazení sporů. Zobrazení kolizí poskytuje podrobné časová osa sporů prostředků vláknem.  
   
- **Většina tvrdil prostředky** zahrnuje následující data pro každého prostředku.  
-  
-|Sloupec|Popis|  
-|------------|-----------------|  
-|**Jméno**|Název prostředku.|  
-|**% Kolizí**|Procento všech kolizní události v profilaci data, která měla kolizí přes tento prostředek.|  
-  
-## <a name="most-contended-thread"></a>Většina tvrdil přístup z více vláken  
- **Většina tvrdil vláken** uvádí vláken v aplikaci, která měla největšího počtu kolizní události. Klikněte na tlačítko Zobrazit kolizí, který poskytuje podrobné časové osy z kolize prostředku – tím, že vlákno názvu vlákna.  
-  
- **Většina tvrdil vláken** zahrnuje následující data pro každé vlákno.  
+ **Většinu prostředků ve sporných** zahrnuje následující data pro jednotlivé prostředky.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**ID**|Identifikátor přístup z více vláken.|  
-|**Jméno**|Název procesu, který vlastní vlákno.|  
-|**% Kolizí**|Procento všech kolizní události v profilaci data, která měla kolizí přes tento prostředek.|
+|**Název**|Název prostředku.|  
+|**% Sporů**|Procento všech kolizní události v profilaci dat, které byly sporů za tento prostředek.|  
+  
+## <a name="most-contended-thread"></a>Většina Nejspornější vlákna  
+ **Většina ve sporných vláken** vypíše vlákna, v aplikaci, která měla největší počet kolizní události. Můžete kliknout na název vlákna k zobrazení sporů, která poskytuje podrobné časová osa sporů prostředků tím, že vlákno.  
+  
+ **Většina ve sporných vláken** zahrnuje následující údaje pro každé vlákno.  
+  
+|Sloupec|Popis|  
+|------------|-----------------|  
+|**ID**|Identifikátor vlákna.|  
+|**Název**|Název procesu, který vlastní vlákno.|  
+|**% Sporů**|Procento všech kolizní události v profilaci dat, které byly sporů za tento prostředek.|

@@ -2,19 +2,18 @@
 title: Správa kontrolerů testů a testovacích agentů
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891398"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Správa kontrolerů testů a testovacích agentů
 
@@ -145,8 +144,8 @@ Stav a další nastavení pro testovacího agenta pomocí následujících postu
 |Vlastnost testovacího agenta|Popis|
 |-|-----------------|
 |**Vážení**|Slouží k distribuci zatížení při použití testovacích agentů s různými úrovněmi výkonnosti. Například testovací agent s vážením 100 obdrží dvakrát zatížení než testovací Agent s vážením 50.|
-|**Přepínání IP**|Slouží ke konfiguraci přepínání IP. Přepínání protokolu IP umožňuje agentovi testu odesílání požadavků na server pomocí rozsahu IP adres. To simuluje volání, které pocházejí z různých klientských počítačů.<br /><br /> Přepínání IP je důležité, pokud vaše zkušební zatížení přistupuje k webové farmy. Většina Vyrovnávání zatížení vytvoří spřažení mezi klientem a konkrétní webový server s použitím IP adresy klienta. Pokud všechny požadavky zdá, že pocházejí z jednoho klienta, nebude nástroj pro vyrovnávání zatížení vyrovnávat zatížení. K dosažení dobré rovnováhy zatížení ve webové farmě, ujistěte se, že požadavky pocházejí z rozsahu IP adres. **Poznámka:** můžete určit síťový adaptér, nebo použijte **(všechny nepřiřazené)** automaticky vybrat jeden, který není aktuálně používán. <br /><br /> Pokud chcete použít funkci přepínání IP, musí být spuštěna služba Visual Studio Test Agent jako uživatel ve skupině Administrators pro daný počítač agenta. Tento uživatel je vybrán během instalace agenta, ale můžete změnit úpravou vlastností služby a restartováním.<br /><br /> Pokud chcete ověřit, že přepínání IP pracuje správně, povolit protokolování na webovém serveru služby IIS, ověřte, že požadavky pocházejí z IP adres, které jste nakonfigurovali pomocí funkce protokolování služby IIS.|
-|**Atributy**|Sada párů název/hodnota, které lze použít ve výběru agenta testu. Test může například vyžadovat konkrétní operační systém. Můžete přidat atributy na **role** kartu vašeho testovacího souboru s nastavením a slouží k výběru testovacího agenta, který má shodné atributy. Pokud chcete spustit test ve více počítačích, vytvořte atribut v roli nastavení testu, který je nakonfigurován ke spuštění testů a potom nakonfigurujte odpovídající atribut na každého testovacího agenta, který chcete použít v této roli... **Poznámka:** toto nastavení dostupná jenom pro testovací agenty, které jsou registrované pomocí testovacího kontroléru, který není registrovaný k projektu, protože tyto atributy se používají v nastavení testu pro sadu Visual Studio.|
+|**Přepínání IP**|Slouží ke konfiguraci přepínání IP. Přepínání protokolu IP umožňuje agentovi testu odesílání požadavků na server pomocí rozsahu IP adres. To simuluje volání, které pocházejí z různých klientských počítačů.<br /><br /> Přepínání IP je důležité, pokud vaše zkušební zatížení přistupuje k webové farmy. Většina Vyrovnávání zatížení vytvoří spřažení mezi klientem a konkrétní webový server s použitím IP adresy klienta. Pokud všechny požadavky zdá, že pocházejí z jednoho klienta, nebude nástroj pro vyrovnávání zatížení vyrovnávat zatížení. K dosažení dobré rovnováhy zatížení ve webové farmě, ujistěte se, že požadavky pocházejí z rozsahu IP adres. **Poznámka:**  Můžete určit síťový adaptér, nebo použijte **(všechny nepřiřazené)** automaticky vybrat jeden, který není aktuálně používán. <br /><br /> Pokud chcete použít funkci přepínání IP, musí být spuštěna služba Visual Studio Test Agent jako uživatel ve skupině Administrators pro daný počítač agenta. Tento uživatel je vybrán během instalace agenta, ale můžete změnit úpravou vlastností služby a restartováním.<br /><br /> Pokud chcete ověřit, že přepínání IP pracuje správně, povolit protokolování na webovém serveru služby IIS, ověřte, že požadavky pocházejí z IP adres, které jste nakonfigurovali pomocí funkce protokolování služby IIS.|
+|**Atributy**|Sada párů název/hodnota, které lze použít ve výběru agenta testu. Test může například vyžadovat konkrétní operační systém. Můžete přidat atributy na **role** kartu vašeho testovacího souboru s nastavením a slouží k výběru testovacího agenta, který má shodné atributy. Pokud chcete spustit test ve více počítačích, vytvořte atribut v roli nastavení testu, který je nakonfigurován ke spuštění testů a potom nakonfigurujte odpovídající atribut na každého testovacího agenta, který chcete použít v této roli... **Poznámka:**  Toto nastavení dostupná jenom pro testovací agenty, které jsou registrované pomocí testovacího kontroléru, který není registrovaný k projektu, protože tyto atributy se používají v nastavení testu pro sadu Visual Studio.|
 
 Testovací agent hmotnosti a atributů testovacího agenta změny vejdou v platnost okamžitě, ale nemají vliv na zkoušky, které jsou spuštěny. Rozsah adres IP se projeví po restartování řadiče testu.
 

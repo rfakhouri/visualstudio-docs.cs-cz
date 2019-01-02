@@ -2,7 +2,6 @@
 title: Správa podepsání sestavení a manifestu
 ms.date: 02/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927568"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Správa podepsání sestavení a manifestu
 
@@ -70,7 +69,7 @@ Může také odkazovat na klíč, který jste už vytvořili. Další informace 
 
 Pokud máte jenom přístup k veřejným klíčem, můžete použít dodatečném podepisování odložení přiřazení klíč. Povolit zpoždění podepsání tak, že vyberete **zpoždění podepsání** zaškrtávací políčko. Projekt se zpožděným podpisem se nespustí a nelze ho ladit. Však můžete přeskočit ověření během vývoje s použitím [nástroj pro silný název Sn.exe](/dotnet/framework/tools/sn-exe-strong-name-tool) s `-Vr` možnost.
 
-Informace o podepisování manifestů naleznete v tématu [postupy: podepsání manifestů aplikace a nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).
+Informace o podepisování manifestů naleznete v tématu [jak: Podepsání manifestů aplikace a nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Viz také:
 

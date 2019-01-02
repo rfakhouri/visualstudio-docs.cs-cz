@@ -1,9 +1,7 @@
 ---
 title: Ladění vícevláknových aplikací
 description: Ladění pomocí okna vláken a panelu nástrojů umístění ladění v sadě Visual Studio
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893704"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Návod: Ladění vícevláknové aplikace pomocí okna vlákna
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>Průvodce: Ladění vícevláknových aplikací v použití okna vláken
 
 Několik prvků uživatelského rozhraní sady Visual Studio můžete ladit aplikace s více vlákny. Tento článek představuje vícevláknové ladění funkcí v okně editoru kódu **umístění ladění** nástrojů a **vlákna** okna. Informace o ostatních nástrojích pro ladění vícevláknových aplikací najdete v tématu [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md). 
   
@@ -99,7 +97,7 @@ Označení a odstranění označení vlákna z editoru zdrojového kódu nebo **
 
 1. Otevřít **umístění ladění** nástrojů tak, že vyberete **zobrazení** > **panely nástrojů** > **umístění ladění**. Můžete také v oblasti panelu nástrojů klikněte pravým tlačítkem a vybrat **umístění ladění**. 
    
-1. **Umístění ladění** nástrojů má tři pole: **procesu**, **vlákna**, a **rámec zásobníku**. Rozevírací seznam **vlákna** seznamu a Všimněte si, kolik vlákna existuje. V **vlákno** seznamu aktuálně spuštěné vlákno je označena **>** symbol. 
+1. **Umístění ladění** nástrojů má tři pole: **Proces**, **vlákna**, a **rámce zásobníku**. Rozevírací seznam **vlákna** seznamu a Všimněte si, kolik vlákna existuje. V **vlákno** seznamu aktuálně spuštěné vlákno je označena **>** symbol. 
    
 1. V okně zdrojového kódu najeďte myší na ikonu značky vlákna na ovládací prvek a vyberte ikonu příznaku (nebo jednu z ikon prázdný příznak) v DataTip. Červenou ikonu vlajky. 
    

@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: krokování s vnořením služeb WCF | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Krokování s vnořením služeb WCF | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cad65b893867a18133bbf9492a1c1786b24a81ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f361369aef97aaa894a1a1929149356d3177cc3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890732"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Postupy: Krokování s vnořením služeb WCF
+# <a name="how-to-step-into-wcf-services"></a>Postupy: Krokování s vnořením služeb WCF
 V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], můžete krokovat s vnořením služeb WCF. Pokud je služba WCF v rámci stejného [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení jako klient, může dosažení zarážky ve službě WCF.  
   
  Pro krokování na práci, musíte mít ladění povoleno v souboru Web.config nebo app.config. Informace o tom, jak povolit ladění a omezení krokování s vnořením služeb WCF, naleznete v tématu [omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md).  
@@ -45,4 +43,4 @@ V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], můžet
 ## <a name="see-also"></a>Viz také  
  [Ladění služeb WCF](../debugger/debugging-wcf-services.md)   
  [Omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Postupy: Ladění služby WCF s vlastním hostováním](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Postupy: Ladění služby WCF v místním prostředí](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

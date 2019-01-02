@@ -1,8 +1,6 @@
 ---
-title: Zobrazení oken | Microsoft Docs
-ms.custom: ''
+title: Zobrazení Windows | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
@@ -14,50 +12,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1379071a095f5ad1e0c28ec69ed813cb6212fff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940411"
 ---
 # <a name="windows-view"></a>Zobrazení oken
-Při prvním otevření nástroje Spy ++, zobrazí se systémem Windows zobrazení stromu všechna okna a ovládací prvky v systému. Název popisovače a třída okna se zobrazí. Plochy okno obsahuje v horní části stromu. Všechna ostatní okna jsou podřízené plochy a jsou uvedeny podle standardní okno hierarchii. V expansible seznamy odsazené pod svých nadřazených složek se zobrazí na stejné úrovni windows.  
+Při prvním otevření nástroje Spy ++, Windows zobrazení stromu všechna okna a ovládací prvky v systému. Název okna popisovač a třídy jsou uvedeny. Aktuální okno klasické pracovní plochy je v horní části stromu. Všechny ostatní okna jsou podřízené plochy a jsou uvedeny podle hierarchie standardní okno. Zobrazení oken na stejné úrovni expansible seznamy odsazené pod svých nadřazených složek.  
   
- Následující obrázek znázorňuje typické zobrazení nástroje Spy ++ Windows s nejvyšší uzel rozšířit.  
+ Následující obrázek ukazuje typické zobrazení nástroje Spy ++ Windows s uzlem rozbalený.  
   
- ![Spy&#43; &#43; zobrazení oken](../debugger/media/spy--_windowsview.png "nástroje Spy ++ _WindowsView")  
+ ![Spy&#43; &#43; zobrazení Windows](../debugger/media/spy--_windowsview.png "nástroje Spy ++ _WindowsView")  
 Windows zobrazení nástroje Spy ++  
   
- Plochy okno obsahuje v horní části stromu. Všechna ostatní okna jsou podřízené plochy a jsou uvedeny podle hierarchii standardní okno s na stejné úrovni windows seřazených podle pořadí Z-order. Můžete rozbalit nebo sbalit všechny nadřazený uzel stromu kliknutím + nebo - symbol vedle uzlu.  
+ Aktuální okno klasické pracovní plochy je v horní části stromu. Všechny ostatní okna jsou podřízené plochy a jsou seřazeny podle hierarchie standardní okno windows na stejné úrovni seřazené podle pořadí vykreslování. Můžete rozbalit nebo sbalit všechny nadřazený uzel stromu. kliknutím + nebo - symbol vedle uzlu.  
   
- Při zobrazení oken fokus, můžete použít nástroj pro vyhledávání v [dialogové okno hledání oken](../debugger/window-search-dialog-box.md) k zobrazení informací z jakékoli okno otevřít v systému.  
+ Když zobrazení Windows má fokus, můžete tažením nástroje hledání v [dialogové okno hledání](../debugger/window-search-dialog-box.md) k zobrazení informací z jakékoli okno otevřít v systému.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: používání vyhledávacího nástroje](../debugger/how-to-use-the-finder-tool.md)  
+ [Postupy: Používání vyhledávacího nástroje](../debugger/how-to-use-the-finder-tool.md)  
  Ukazuje, jak tento nástroj kontroluje windows pro vlastnosti nebo zprávy.  
   
- [Postupy: Hledání okna v zobrazení oken](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Vysvětluje, jak najít konkrétní okno v zobrazení oken.  
+ [Postupy: Hledání okna v zobrazení pro Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ Vysvětluje, jak najít konkrétní okno v zobrazení pro Windows.  
   
- [Postupy: zobrazení vlastností okna](../debugger/how-to-display-window-properties.md) m  
- Postupy pro otevírá se dialogové okno Vlastnosti.  
+ [Postupy: Zobrazení vlastností okna](../debugger/how-to-display-window-properties.md) m  
+ Postupy pro otevření dialogového okna Vlastnosti.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
+ Seznámíte se nástroje Spy ++, jak je možné.  
   
  [Dialogové okno vyhledávacího okna](../debugger/find-window-dialog-box.md)  
- Použít k zobrazení všech vlastností či zprávy z konkrétní okno.  
+ Umožňuje zobrazit vlastnosti nebo zprávy z konkrétní okno.  
   
  [Dialogové okno hledání oken](../debugger/window-search-dialog-box.md)  
- Použít k vyhledání uzlu pro konkrétní okno v zobrazení oken.  
+ Umožňuje najít uzel pro konkrétní okno v zobrazení pro Windows.  
   
- [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md)  
- Slouží k zobrazení vlastností okna vybraném v zobrazení systému Windows.  
+ [Dialogové okno vlastností oken](../debugger/window-properties-dialog-box.md)  
+ Slouží k zobrazení vlastností okna vybrána v zobrazení Windows.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.
+ Obsahuje části s popisem každé nástroje Spy ++ nabídky a dialogové okno pole.
