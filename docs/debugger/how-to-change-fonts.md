@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: Změna písem | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Změna písma | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, SpyHelp
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3d372823d3dc3e8d874bfd50e361f23ec056da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46e9b0584e48dee4a074e1826c795c62f9c612e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944084"
 ---
-# <a name="how-to-change-fonts"></a>Postupy: Změna písem
+# <a name="how-to-change-fonts"></a>Postupy: Změna písma
 Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ windows.  
   
 ### <a name="to-change-font-options"></a>Chcete-li změnit možnosti písma  
@@ -28,7 +26,7 @@ Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ wind
   
 2. Zvolte písmo, styl písma a velikost písma.  
   
-3. Klikněte na tlačítko **OK**.  
+3. Klikněte na **OK**.  
   
    Výběr **uložit písmo jako výchozí** způsobí, že všechny budoucí nástroje Spy ++ windows používat toto písmo.  
   

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Flask v rámci projektů sady Visual Studio, konkrétně představením toho, jak doručování statických souborů, přidání stránky do aplikace a používat šablonu dědičnosti
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 22d498ea38494baa12539039960685bb0abda056
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917550"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti
 
-**Předchozí krok: [vytvoření aplikace Flask pomocí zobrazení a stránky šablony](learn-flask-visual-studio-step-02-create-app.md)**
+**Předchozí krok: [Vytvoření aplikace Flask pomocí zobrazení a šablony](learn-flask-visual-studio-step-02-create-app.md)**
 
 V předchozích krocích v tomto kurzu jste zjistili, jak k vytvoření minimální aplikace Flask pomocí jediné stránce samostatná HTML. Moderních webových aplikací, ale jsou obvykle skládá z mnoha stránkách a používání sdílených prostředků, jako jsou soubory CSS a JavaScript, k poskytování konzistentního stylů a chování.
 
@@ -46,9 +45,9 @@ Použití šablony, vyberte požadovanou šablonu, zadejte název pro soubor a v
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Otázka: Jak Visual Studio vědět, které položky šablony, které nabízí?
 
-Odpověď: Souboru projektu Visual Studio (*.pyproj*) obsahuje identifikátor typ projektu, který označuje jako projekt Python. Visual Studio používá tento identifikátor typu k zobrazení pouze tyto šablony položek, které jsou vhodné pro typ projektu. Tímto způsobem, Visual Studio může poskytovat bohatou sadu šablon položek, pro mnoho typů projektů bez zobrazení výzvy k řazení projde pokaždé, když.
+Odpověď: Soubor projektu sady Visual Studio (*.pyproj*) obsahuje identifikátor typ projektu, který označuje jako projekt Python. Visual Studio používá tento identifikátor typu k zobrazení pouze tyto šablony položek, které jsou vhodné pro typ projektu. Tímto způsobem, Visual Studio může poskytovat bohatou sadu šablon položek, pro mnoho typů projektů bez zobrazení výzvy k řazení projde pokaždé, když.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3 – 2: doručování statických souborů z vaší aplikace
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3 – 2: Doručování statických souborů z vaší aplikace
 
 Ve webové aplikaci vytvořené s využitím Pythonu (pomocí libovolné architektury) soubory Pythonu vždy spustit na serveru webového hostitele a se nikdy nepřenáší na počítači uživatele. Další soubory, ale například šablony stylů CSS a JavaScript používá jediná prohlížeče, tak server hostitele jednoduše poskytnout, je jako – je vždy, když jste žádali. Tyto soubory jsou označovány jako "statických" soubory a Flask může doručit automaticky aniž byste museli psát jakýkoli kód. V rámci soubory HTML například právě najdete statické soubory pomocí relativní cesty v projektu. První část v tomto kroku přidá soubor CSS do stávající šablony stránky.
 
@@ -115,13 +114,13 @@ Flask poskytuje funkci s názvem `serve_static_file` , můžete volat z kódu k 
 
 1. Spusťte aplikaci a přejděte do/api/koncový bod datové zobrazíte, že se vrátí ke statickému souboru. Jakmile budete hotovi, zastavte aplikaci.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Dotaz: Existují jakékoli konvence pro uspořádání statické soubory?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Otázka: Existují jakékoli konvence pro uspořádání statické soubory?
 
 Odpověď: Můžete přidat další soubory šablon stylů CSS, JavaScript a HTML v vaše *statické* složky libovolně. Typické způsob uspořádání statických souborů je vytvořit podsložky s názvem *písma*, *skripty*, a *obsah* (pro šablony stylů a všechny další soubory).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Otázka: Jak mám postupovat při URL proměnné a parametry dotazu v rozhraní API?
 
-Odpověď: Viz odpovědí v kroku 1 – 4 pro [Otázka: jak Flask pracovat s proměnnou cesty adresy URL a parametrů dotazu?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Odpověď: Zobrazit odpověď v kroku 1 – 4 pro [otázky: Jak funguje Flask pomocí proměnné cesty adresy URL a parametry dotazu?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Krok 3-3: Přidání stránky aplikace
 
@@ -174,11 +173,11 @@ Následující postup přidání stránky "O" do "HelloFlask" projekt a odkazy n
 
 1. Spusťte projekt sledujte výsledky a zkontrolovat navigace mezi stránkami. Zastavte aplikaci, až budete hotovi.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Otázka: Název funkce stránky důležité Flask?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Otázka: Důležité název funkce stránky na Flask?
 
 Odpověď: Ne, protože je `@app.route` dekoratér, který určuje adresy URL, pro které Flask volá funkci pro generování odpovědi. Vývojáři obvykle shodovat s názvem funkce trasy, ale takové párování není povinné.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: použití dědičnosti šablony k vytvoření záhlaví a navigační panel
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: Použití šablony dědičnosti vytvoření záhlaví a navigační panel
 
 Namísto toho, aby explicitní navigačních odkazů na každé stránce, moderních webových aplikací obvykle používají značky záhlaví a navigační panel, který poskytuje nejdůležitější odkazů na stránky, kontextových nabídkách a tak dále. Pokud chcete mít jistotu, že záhlaví a navigačního panelu jsou stejné ve všech stránek, ale nechcete opakujte stejný kód v každé šabloně stránky. Chcete místo toho definujte společné části všech stránek na jednom místě.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint | Dokumentace Microsoftu'
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 658417d07fdc0031a6e018d332bdbdd1d7edb1a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905712"
 ---
-# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Průvodce: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint
   SharePoint 2010 zveřejňuje data seznamu pomocí protokolu OData. V Sharepointu službu OData je implementováno služba RESTful ListData.svc. Tento návod ukazuje, jak vytvořit webové části služby SharePoint, který je hostitelem aplikace Silverlight. Aplikace programu Silverlight zobrazí informace o seznamu Sharepointu oznámení pomocí ListData.svc. Další informace najdete v tématu [rozhraní REST služby SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) a [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -71,7 +68,7 @@ ms.locfileid: "51296109"
   
 #### <a name="to-customize-the-silverlight-application"></a>Chcete-li přizpůsobit aplikaci Silverlight
   
-1.  Přidáte odkaz na sestavení do System.Windows.Data v aplikaci Silverlight. Další informace najdete v tématu [postupy: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+1.  Přidáte odkaz na sestavení do System.Windows.Data v aplikaci Silverlight. Další informace najdete v tématu [jak: Přidání nebo odebrání odkazů pomocí dialogového okna Přidat odkaz](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 2.  V **Průzkumníka řešení**, otevřete místní nabídku pro **odkazy**a klikněte na tlačítko **přidat odkaz na službu**.  
   
@@ -235,5 +232,3 @@ ms.locfileid: "51296109"
 ## <a name="see-also"></a>Viz také:
  [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Nasazení, publikování a upgrade balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)  
-  
-  

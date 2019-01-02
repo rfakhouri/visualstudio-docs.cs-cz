@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c426ca146380ce01ec2c1f257c6da5538b941c19
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c771d45cc4d29fc718f39bb09254afe5fee02249
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940716"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Přizpůsobení úvodní stránky pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +48,7 @@ Můžete přizpůsobit úvodní stránku pro Visual Studio několika výchozími
     -   Nainstalujte ji z [Galerie sady Visual Studio](http://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=start%20page), jiného webu nebo stránku na místním intranetu.
 
         > [!NOTE]
-        >  Pokud se vám líbí stránka, která je určena pro starší verzi sady Visual Studio, můžete stránku upgradovat pomocí sady Visual Studio SDK. Zobrazit [postupy: Upgrade vlastní úvodní stránku sady Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
+        >  Pokud se vám líbí stránka, která je určena pro starší verzi sady Visual Studio, můžete stránku upgradovat pomocí sady Visual Studio SDK. Zobrazit [jak: Vlastní úvodní stránku sady Visual Studio upgradovat](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
 
          Otevřete soubor .vsix, který obsahuje vlastní úvodní stránku, nebo zkopírujte a vložte soubory úvodní stránky do **% USERPROFILE % Documents\Visual Studio 2015\StartPages** složky na vašem počítači.
 

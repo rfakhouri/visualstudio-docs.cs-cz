@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: načtení služby projektu služby SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Načtení služby projektu služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891599"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Postupy: načtení služby projektu SharePoint
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>Postupy: Načtení služby projektu SharePoint
   Můžete přistupovat k projektu služby SharePoint v následujících typů řešení:  
   
 -   Rozšíření systému projektu služby SharePoint, jako je například rozšíření projektu, rozšíření položky projektu nebo definice typu položky projektu. Další informace o těchto typech rozšíření najdete v tématu [rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  
@@ -47,7 +44,7 @@ ms.locfileid: "49880595"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]  
   
-     Další informace o vytváření rozšíření projektu naleznete v tématu [postupy: vytváření rozšíření projektu služby SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+     Další informace o vytváření rozšíření projektu naleznete v tématu [jak: Vytváření rozšíření projektu služby SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>Načtení služby v rozšíření položky projektu  
   
@@ -60,7 +57,7 @@ ms.locfileid: "49880595"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     Další informace o vytváření rozšíření položky projektu naleznete v tématu [postupy: vytváření rozšíření položky projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
+     Další informace o vytváření rozšíření položky projektu naleznete v tématu [jak: Vytváření rozšíření položky projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md).  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Načtení služby v definici typu položky projektu  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49880595"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     Další informace o definování typů položek projektu, naleznete v tématu [postupy: definování typu položky projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
+     Další informace o definování typů položek projektu, naleznete v tématu [jak: Definování typu položky projektu SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).  
   
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>Načtení služby v rozšíření Průzkumníka serveru  
  V rozšíření **připojení služby SharePoint** uzel v **Průzkumníka serveru**, můžete přístup ke službě projektu s použitím <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objektu.  
@@ -89,14 +86,14 @@ ms.locfileid: "49880595"
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]  
   
-     Další informace o rozšíření **připojení služby SharePoint** uzel v **Průzkumníka serveru**, naleznete v tématu [postupy: rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+     Další informace o rozšíření **připojení služby SharePoint** uzel v **Průzkumníka serveru**, naleznete v tématu [jak: Rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>Načtení služby v jiné rozšíření sady Visual Studio  
  Možné načtení služby projektu v sadě VSPackage nebo v rozšíření sady Visual Studio, který má přístup k <xref:EnvDTE80.DTE2> objektu v objektovém modelu automatizace, jako je například Průvodce pro šablony projektu, který implementuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
   
  V sadě VSPackage, můžete požádat <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objektu pomocí jedné z následujících metod:  
   
-- <xref:System.IServiceProvider.GetService%2A> Metoda spravované VSPackage, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package> třídy. Další informace najdete v tématu [postupy: získání služby](../extensibility/how-to-get-a-service.md).  
+- <xref:System.IServiceProvider.GetService%2A> Metoda spravované VSPackage, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package> třídy. Další informace najdete v tématu [jak: Získání služby](../extensibility/how-to-get-a-service.md).  
   
 - Statické <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metody. Další informace najdete v tématu [použití GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice).  
   
@@ -104,6 +101,5 @@ ms.locfileid: "49880595"
   
 ## <a name="see-also"></a>Viz také:
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
- [Postupy: získání služby](../extensibility/how-to-get-a-service.md)   
- [Postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [Postupy: Získání služby](../extensibility/how-to-get-a-service.md)   
+ [Postupy: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Programová resetování oblastí v dokumentech aplikace Word'
-ms.custom: ''
+title: 'Postupy: Programově resetování oblastí v dokumentech aplikace Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0da42b0e6ad6f8761e474292532728beb3987c57
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7cb0b4ec52d948b321733a56f14ebc51a9cbb42f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821727"
 ---
-# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Postupy: Programová resetování oblastí v dokumentech aplikace Word
+# <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Postupy: Programově resetování oblastí v dokumentech aplikace Word
   Použití <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> metody pro změnu velikosti existujícího oblast v dokumentu aplikace Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -66,9 +63,7 @@ ms.locfileid: "35675881"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Postupy: oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  
-  
-  
+ [Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: Načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)  

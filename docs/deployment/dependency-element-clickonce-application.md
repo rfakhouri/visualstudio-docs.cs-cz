@@ -1,8 +1,6 @@
 ---
 title: '&lt;závislost&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d47775f928fc52fb7ffce2e0818fea19e30dee0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898619"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – element (aplikace ClickOnce)
 Určuje závislost platformy nebo sestavení, která je požadována pro aplikaci.  
@@ -104,17 +102,17 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 |`description`|Volitelné. Popisuje operační systém popsané v čitelné formě, `dependentOS` elementu.|  
 
 ### <a name="osversioninfo"></a>osVersionInfo  
- Požadováno. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `dependentOS` elementu a obsahuje `os` elementu. Tento element nemá žádné atributy.  
 
 ### <a name="os"></a>operační systém  
- Požadováno. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `osVersionInfo` elementu. Tento element má následující atributy.  
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`majorVersion`|Požadováno. Určuje číslo hlavní verze operačního systému.|  
-|`minorVersion`|Požadováno. Určuje číslo podverze operačního systému.|  
-|`buildNumber`|Požadováno. Určuje číslo sestavení operačního systému.|  
-|`servicePackMajor`|Požadováno. Určuje hlavní číslo aktualizace service pack operačního systému.|  
+|`majorVersion`|Povinný parametr. Určuje číslo hlavní verze operačního systému.|  
+|`minorVersion`|Povinný parametr. Určuje číslo podverze operačního systému.|  
+|`buildNumber`|Povinný parametr. Určuje číslo sestavení operačního systému.|  
+|`servicePackMajor`|Povinný parametr. Určuje hlavní číslo aktualizace service pack operačního systému.|  
 |`servicePackMinor`|Volitelné. Určuje dílčí číslo aktualizace service pack operačního systému.|  
 |`productType`|Volitelné. Určuje hodnotu typu produktu. Platné hodnoty jsou `server`, `workstation`, a `domainController`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `workstation`.|  
 |`suiteType`|Volitelné. Identifikuje sadu produktů, která je k dispozici v systému nebo typ konfigurace systému. Platné hodnoty jsou `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, a `terminal`. Například pro Windows 2000 Professional, je hodnota tohoto atributu `professional`.|  
@@ -127,19 +125,19 @@ Určuje závislost platformy nebo sestavení, která je požadována pro aplikac
 
 | Atribut | Popis |
 |-----------------------| - |
-| `dependencyType` | Požadováno. Určuje typ závislosti. Platné hodnoty jsou `preprequisite` a `install`. `install` Sestavení je nainstalován jako součást [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. A `prerequisite` sestavení musí být k dispozici v globální mezipaměti sestavení (GAC) před [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci jde nainstalovat. |
-| `allowDelayedBinding` | Požadováno. Určuje, zda sestavení lze načíst prostřednictvím kódu programu za běhu. |
-| `group` | Volitelné. Pokud `dependencyType` atribut je nastaven na `install`, určuje skupinu s názvem sestavení tohoto nainstalují jenom na vyžádání. Další informace najdete v tématu [návod: stahování sestavení na vyžádání pomocí technologie ClickOnce pomocí rozhraní API nasazení návrháře](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Pokud nastavit `framework` a `dependencyType` atribut je nastaven na `prerequisite`, označí sestavení jako součást rozhraní .NET Framework. Pro toto sestavení nepovolenou mezipaměti globálního sestavení (GAC) při instalaci [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] a novějších verzích. |
+| `dependencyType` | Povinný parametr. Určuje typ závislosti. Platné hodnoty jsou `preprequisite` a `install`. `install` Sestavení je nainstalován jako součást [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. A `prerequisite` sestavení musí být k dispozici v globální mezipaměti sestavení (GAC) před [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci jde nainstalovat. |
+| `allowDelayedBinding` | Povinný parametr. Určuje, zda sestavení lze načíst prostřednictvím kódu programu za běhu. |
+| `group` | Volitelné. Pokud `dependencyType` atribut je nastaven na `install`, určuje skupinu s názvem sestavení tohoto nainstalují jenom na vyžádání. Další informace najdete v tématu [názorný postup: Stahování sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Pokud nastavit `framework` a `dependencyType` atribut je nastaven na `prerequisite`, označí sestavení jako součást rozhraní .NET Framework. Pro toto sestavení nepovolenou mezipaměti globálního sestavení (GAC) při instalaci [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] a novějších verzích. |
 | `codeBase` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Cesta k závislého sestavení. Může být absolutní cesta nebo cesta relativní k kódu manifestu základní. Tato cesta musí být platný identifikátor URI platný v pořadí pro manifest sestavení. |
 | `size` | Požadováno, pokud `dependencyType` atribut je nastaven na `install`. Velikost závislého sestavení, v bajtech. |
 
 ### <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
- Požadováno. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` prvek a má následující atributy.  
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`name`|Požadováno. Určuje název aplikace.|  
-|`version`|Požadováno. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
+|`name`|Povinný parametr. Určuje název aplikace.|  
+|`version`|Povinný parametr. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
 |`publicKeyToken`|Volitelné. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů `SHA-1` hash hodnoty veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč používaný k podepisování katalogu musí být 2 048 bitů nebo více.|  
 |`processorArchitecture`|Volitelné. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitová verze Windows a `I64` pro 64bitová verze Windows.|  
 |`language`|Volitelné. Určuje jazyk kódy dvě části, třeba cs-cz, sestavení.|  

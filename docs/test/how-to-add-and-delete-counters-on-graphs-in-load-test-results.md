@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 079a7390b462dd8d48535f683f391ec2dca4827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916793"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Postupy: Přidání a odstranění čítačů pro grafy ve výsledcích zátěžového testu
 
@@ -30,7 +29,7 @@ Můžete použít **čítače** panel k přidání čítačů výkonu do grafu.
 
 **Aspekty Interval vzorkování čítače výkonu**
 
-Zvolte hodnotu **vzorkovací frekvence** vlastnost v zátěžovém testu běhu na základě délky zátěžového testu. Menší vzorkovací frekvence, jako je například výchozí hodnota pěti sekund, vyžaduje více místa v databázi výsledků zátěžového testu. Pro delší zátěžové testy vzorkovací frekvence snižuje množství dat, která shromažďujete. Další informace najdete v tématu [postupy: určení vzorkovací frekvence](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Zvolte hodnotu **vzorkovací frekvence** vlastnost v zátěžovém testu běhu na základě délky zátěžového testu. Menší vzorkovací frekvence, jako je například výchozí hodnota pěti sekund, vyžaduje více místa v databázi výsledků zátěžového testu. Pro delší zátěžové testy vzorkovací frekvence snižuje množství dat, která shromažďujete. Další informace najdete v tématu [jak: Určení vzorkovací frekvence](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Zde jsou uvedeny pokyny pro vzorkovací frekvence:
 
@@ -49,7 +48,7 @@ Existují dvě volby pro povolení **úložiště podrobností časování** vla
 
 Množství místa potřebné v úložišti výsledků zátěžového testu k ukládání dat s podrobnosti časování může být značné, zejména pro delší zkoušky zatížení. Také čas pro ukládání těchto dat v úložišti výsledků zátěžového testu na konci zátěžového testu je delší, protože tato data jsou uložena v agentech zátěžového testu, dokud zátěžový test neskončí. Po dokončení zátěžového testu jsou data uložena do úložiště. Ve výchozím nastavení **úložiště podrobností časování** je povolena vlastnost. Pokud je to problém pro testovací prostředí, můžete chtít nastavit **úložiště podrobností časování** k **žádný**.
 
-Další informace najdete v tématu [postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Další informace najdete v tématu [jak: Určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Chcete-li zobrazit konkrétního čítače výkonu v grafu zátěžového testu
 
@@ -87,4 +86,4 @@ Další informace najdete v tématu [postupy: určení vlastnosti úložiště p
 ## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Postupy: vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Postupy: Vytváření vlastních grafů](../test/how-to-create-custom-graphs-in-load-test-results.md)

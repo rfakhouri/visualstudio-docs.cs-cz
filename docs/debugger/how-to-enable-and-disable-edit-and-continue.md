@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: povolení a zákaz operace upravit a pokračovat | Dokumentace Microsoftu'
+title: 'Postupy: Povolení a zákaz operace upravit a pokračovat | Dokumentace Microsoftu'
 ms.custom: seodec18
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,14 +26,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bcdedfb513d9e10f030df4a6e9ba68b807210669
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936175"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Postupy: povolení a zákaz operace upravit a pokračovat (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Postupy: Povolení a zákaz operace upravit a pokračovat (C#, VB, C++)
 
 Můžete zakázat nebo povolit **upravit a pokračovat** v sadě Visual Studio **možnosti** dialogové okno v době návrhu. **Upravit a pokračovat** sestavení lze použít pouze v ladění. Další informace najdete v tématu [upravit a pokračovat](../debugger/edit-and-continue.md). 
   

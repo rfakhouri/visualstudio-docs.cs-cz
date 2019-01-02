@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936188"
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 Ověřování dat je proces ověření, hodnot zadaných do datových objektů v souladu s omezeními ve schématu datové sady. Proces ověřování také potvrdí, že jsou tyto hodnoty dle pravidel, které se vytvořily pro vaši aplikaci. Je vhodné ověřit data před odesláním aktualizace do podkladové databáze. Tím se snižuje chyby, jakož i potenciální počet výměn mezi aplikací a databáze.
@@ -40,9 +39,9 @@ Nejlepší místo pro přidání ověřování do aplikace je v souboru částe�
 ## <a name="validate-data"></a>Ověření dat
  Ověřování v rámci datové sady se provádí následujícími způsoby:
 
--   Tím, že vytvoříte vlastní ověřování konkrétní aplikace, které můžete zkontrolovat hodnoty v jednotlivých datový sloupec během změny. Další informace najdete v tématu [postupy: ověřování dat během úprav sloupců](validate-data-in-datasets.md).
+-   Tím, že vytvoříte vlastní ověřování konkrétní aplikace, které můžete zkontrolovat hodnoty v jednotlivých datový sloupec během změny. Další informace najdete v tématu [jak: Ověřování dat během úprav sloupců](validate-data-in-datasets.md).
 
--   Tím, že vytvoříte vlastní ověření specifické pro aplikace, který můžete zkontrolovat dat na hodnoty během celého datového řádku mění. Další informace najdete v tématu [postupy: ověřování dat během úprav řádků](validate-data-in-datasets.md).
+-   Tím, že vytvoříte vlastní ověření specifické pro aplikace, který můžete zkontrolovat dat na hodnoty během celého datového řádku mění. Další informace najdete v tématu [jak: Ověřování dat během úprav řádků](validate-data-in-datasets.md).
 
 -   Tím, že vytvoříte klíče, unikátních omezení a podobně jako součást definice skutečné schématu datové sady.
 
@@ -99,7 +98,7 @@ Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuj
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Ověření dat při řádek změní (Visual Basic)
 
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [návod: vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce automaticky vytvoří <xref:System.Data.DataTable.RowChanging> obslužná rutina události <xref:System.Data.DataTable> v souboru částečné třídy datové sady.
 
@@ -110,7 +109,7 @@ Můžete napsat kód pro každý sloupec, který chcete ověřit, jestli obsahuj
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>Ověření dat při změně řádku (C#)
 
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [návod: vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Poklepejte na záhlaví tabulky, kterou chcete ověřit. Tato akce vytvoří soubor částečné třídy pro <xref:System.Data.DataTable>.
 
@@ -211,6 +210,6 @@ Předání <xref:System.Data.DataRowVersion> hodnotu spolu indexem sloupce (nebo
 
 ## <a name="see-also"></a>Viz také:
 
-- [Nástroje datové sady v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Postupy: ověřování dat v ovládacím prvku Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Postupy: zobrazení ikon chyb pro ověřování formuláře pomocí komponenty Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Postupy: Ověřování dat v ovládacím prvku Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Postupy: Zobrazení ikon chyb pro ověřování formuláře pomocí komponenty Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

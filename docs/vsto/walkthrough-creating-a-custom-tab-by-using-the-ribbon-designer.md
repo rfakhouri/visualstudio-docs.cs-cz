@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastní karty pomocí Návrháře pásu karet'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917589"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Průvodce: Vytvoření vlastní karty pomocí Návrháře pásu karet
   Pomocí Návrháře pásu karet můžete vytvořit vlastní kartu a potom přidat a umístit ovládací prvky na něm.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808869"
   
 ### <a name="to-create-an-excel-workbook-project"></a>Vytvoření projektu sešitu aplikace Excel  
   
--   Vytvořte projekt sešitu aplikace Excel s názvem **MyExcelRibbon**. Další informace najdete v tématu [postupy: vytváření projektů pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Vytvořte projekt sešitu aplikace Excel s názvem **MyExcelRibbon**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový sešit v návrháři a přidá **MyExcelRibbon** projektu **Průzkumníka řešení**.  
   
@@ -159,7 +156,7 @@ ms.locfileid: "38808869"
   
 -   Přidejte uživatelské rozhraní založené na kontextu do jakéhokoli přizpůsobení úrovni dokumentu. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).  
   
--   Rozšiřte standardní nebo vlastní formulář aplikace Microsoft Office Outlook. Další informace najdete v tématu [návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Rozšiřte standardní nebo vlastní formulář aplikace Microsoft Office Outlook. Další informace najdete v tématu [názorný postup: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)   
@@ -167,9 +164,7 @@ ms.locfileid: "38808869"
  [Návrhář pásu karet](../vsto/ribbon-designer.md)   
  [Přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Postupy: Změna pozice karty na pásu karet](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [Postupy: Změna umístění karty na pásu karet](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
  [Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)   
  [Postupy: Přidání ovládacích prvků do zobrazení backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md)  
-  
-  

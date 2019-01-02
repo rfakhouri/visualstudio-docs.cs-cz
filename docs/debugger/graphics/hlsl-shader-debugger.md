@@ -1,8 +1,6 @@
 ---
 title: Ladicí program shaderu HLSL | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.shaderviewer
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27db26a732ec53b81aed4807f4aec546e1bc7f1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8425857b6774d9a880c769ea3b46943686f3deb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832434"
 ---
 # <a name="hlsl-shader-debugger"></a>Ladicí program shaderu HLSL
 Ladicí program HLSL v analyzátoru grafiky sady Visual Studio vám pomůže porozumět fungování kódu shaderu HLSL aplikace skutečný podmínek.  

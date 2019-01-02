@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointChecksumRequest2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb319b14e1d373abe3c0634c768bfe1dcb04f539
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f68b7c210ac10b2aaa3c656dead963d86ba73c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919700"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
-Představuje kontrolní součet dokumentu pro žádost o zarážek.  
+Představuje kontrolní součet dokumentu pro žádost o zarážku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,19 +27,19 @@ IDebugBreakpointChecksumRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Implementovaná pomocí [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění balíčku a spotřebovávají ladění moduly.  
+ Implementovaných podle [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění balíčku a spotřebovávány ladicí stroj.  
   
 ## <a name="methods"></a>Metody  
- Následující tabulka uvádí metody `IDebugBreakpointChecksumRequest2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugBreakpointChecksumRequest2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Načte kontrolního součtu dokumentu pro žádost zarážek zadaný jedinečný identifikátor algoritmu kontrolního součtu používat.|  
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Určuje, zda je povoleno kontrolního součtu tohoto dokumentu.|  
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|Načte dokument kontrolního součtu pro zarážku požadavek zadaný jedinečný identifikátor algoritmu kontrolního součtu použít.|  
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|Určuje, zda kontrolního součtu je povolený pro tento dokument.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938183"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Nasazení DSL v MSI a VSIX
 Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači nebo v jiných počítačích. Visual Studio musí být nainstalována na cílovém počítači.
@@ -24,7 +23,7 @@ Jazyka specifického pro doménu můžete nainstalovat na vlastním počítači 
 
 |Metoda|Výhody|
 |-|-|
-|VSX (rozšíření sady Visual Studio)|Velmi snadno se nasazuje: kopírování a spustit **VSIX** soubor z projektu DslPackage.<br /><br /> Další informace najdete v části [instalace a odinstalace DSL pomocí VSX](#Installing).|
+|VSX (rozšíření sady Visual Studio)|Velmi snadno nasadit: Kopírovat a spouštět **VSIX** soubor z projektu DslPackage.<br /><br /> Další informace najdete v části [instalace a odinstalace DSL pomocí VSX](#Installing).|
 |MSI (instalačního programu soubor)|– Umožňuje uživateli otevřít Visual Studio poklikáním souboru DSL.<br />-Přidruží ikony typu souboru DSL v cílovém počítači.<br />– Tento typ souboru DSL přidruží XSD (XML schema). Tím se vyhnete upozornění při načítání souboru do sady Visual Studio.<br /><br /> Nastavení projektu musíte přidat do svého řešení Chcete-li vytvořit instalační služba MSI.<br /><br /> Další informace najdete v tématu [nasazení DSL s použitím souboru MSI](#msi).|
 
 ## <a name="Installing"></a> Instalace a odinstalace DSL pomocí VSX

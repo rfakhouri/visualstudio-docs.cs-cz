@@ -2,7 +2,6 @@
 title: Výchozí možnosti jazyka Visual Basic, projekty, dialogové okno Možnosti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VBDefaults
@@ -16,34 +15,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d211b69a4fb8ce988298a39310f103574b563721
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d33d48d1579c01c4d1df298d0822a66dd4c46fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892368"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Výchozí možnosti jazyka Visual Basic, projekty, dialogové okno Možnosti
-Určuje výchozí nastavení pro Visual Basic – možnosti projektu. Při vytvoření nového projektu Zadaná možnost příkazy se zařadí do záhlaví projektu v editoru kódu. Platí pro všechny projekty Visual Basic.
+Určuje výchozí nastavení pro možnosti projektu jazyka Visual Basic. Po vytvoření nového projektu je zadaná možnost příkazy se přidají do záhlaví projektu v editoru kódu. Platí pro všechny projekty jazyka Visual Basic.
 
- K přístupu ke toto dialogové okno, na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **projekty a řešení** složku a pak klikněte na tlačítko **VB výchozí**.
+ Přístup v tomto dialogovém okně **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **projekty a řešení** složku a pak klikněte na tlačítko **VB výchozí**.
 
- **Možnost explicitní**
+ **Možnost Explicit**
 
- Nastaví výchozí kompilátoru tak, aby se vyžadují explicitní deklarace proměnné. Ve výchozím nastavení **Option Explicit** je nastaven na **na**. Další informace najdete v tématu [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+ Nastaví výchozí nastavení kompilátoru, aby se vyžadují explicitní deklarace proměnných. Ve výchozím nastavení **Option Explicit** je nastavena na **na**. Další informace najdete v tématu [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
- **Možnost striktní**
+ **Možnost Strict**
 
- Nastaví výchozí kompilátoru tak, aby se vyžadují explicitní zužující převody a pozdní vazba není povolena. Ve výchozím nastavení **možnost striktní** je nastaven na **vypnout**. Další informace najdete v tématu [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+ Nastaví výchozí nastavení kompilátoru, aby se vyžadují explicitní zužující převody a nepovoluje pozdní vazbu. Ve výchozím nastavení **Option Strict** je nastavena na **vypnout**. Další informace najdete v tématu [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
- **Možnost porovnání**
+ **Možnost Compare**
 
- Nastaví výchozí nastavení kompilátoru pro porovnání řetězců: binární (malá a velká písmena) nebo text (velká a malá písmena.) Ve výchozím nastavení **možnost porovnat** je nastaven na **binární**. Další informace najdete v tématu [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+ Nastaví výchozí nastavení kompilátoru pro porovnávání řetězců: binární soubor (malá a velká písmena) nebo text (velká a malá písmena.) Ve výchozím nastavení **Option Compare** je nastavena na **binární**. Další informace najdete v tématu [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
- **Option Infer –**
+ **Option Infer**
 
- Nastaví výchozí nastavení kompilátoru pro odvození místního typu. Ve výchozím nastavení **Option Infer –** je nastaven na **na** pro nově vytvořený projekty a na **vypnout** pro migrované projektů vytvořených v dřívějších verzích jazyka Visual Basic. Další informace najdete v tématu [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+ Nastaví výchozí nastavení kompilátoru pro odvození místního typu. Ve výchozím nastavení **Option Infer** je nastavena na **na** pro nově vytvořených projektů a získat **vypnout** pro migrované projekty vytvořené ve starších verzích jazyka Visual Basic. Další informace najdete v tématu [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
 ## <a name="see-also"></a>Viz také
 
-- [Projekty a řešení](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Řešení a projekty](../../ide/solutions-and-projects-in-visual-studio.md)

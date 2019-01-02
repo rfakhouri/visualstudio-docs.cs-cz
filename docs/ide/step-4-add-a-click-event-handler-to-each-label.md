@@ -1,9 +1,7 @@
 ---
 title: 'Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04054d353e0260e7a38a189fc6946aacd353b6c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc39a2d92b4c0851d6d7c17b1c988ab0c1f0b184
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942824"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí
 
@@ -51,9 +49,9 @@ Porovnávací hra probíhá takto:
     > Pokud zkopírujete a vložíte `label_Click()` blok kódu, spíše než ručního zadání kódu, nezapomeňte nahradit stávající `label_Click()` kódu. Jinak budete mít duplicitní kód bloku.
 
     > [!NOTE]
-    > Můžete rozpoznat `object sender` v horní části obslužné rutiny události jako stejný jako ten používané [kurz 2: vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md) kurzu. Protože jste připojili jiný popisek ovládacího prvku klepněte na tlačítko události do metody obslužné rutiny jedna událost, volání stejné metody bez ohledu na to, který popisek uživatel vybere. Metoda obslužné rutiny události potřebuje vědět, který popisek byl vybrán, takže použije jméno `sender` k identifikaci ovládacího prvku popisku. První řádek metody dává pokyn programu, že není pouze obecný objekt, ale specificky ovládací prvek popisku a používá název `clickedLabel` pro přístup k vlastnostem a metodám popisku.
+    > Můžete rozpoznat `object sender` v horní části obslužné rutiny události jako stejný jako ten používané [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md) kurzu. Protože jste připojili jiný popisek ovládacího prvku klepněte na tlačítko události do metody obslužné rutiny jedna událost, volání stejné metody bez ohledu na to, který popisek uživatel vybere. Metoda obslužné rutiny události potřebuje vědět, který popisek byl vybrán, takže použije jméno `sender` k identifikaci ovládacího prvku popisku. První řádek metody dává pokyn programu, že není pouze obecný objekt, ale specificky ovládací prvek popisku a používá název `clickedLabel` pro přístup k vlastnostem a metodám popisku.
 
-     Tato metoda nejprve zkontroluje, jestli `clickedLabel` byl úspěšně převeden (přetypován) z objektu do ovládacího prvku popisku. Pokud neúspěšný, má hodnotu `null` (C#) nebo `Nothing` (Visual Basic), a nechcete provést zbytek kódu v metodě. Dále metoda zkontroluje barvu textu vybraného popisku pomocí popisku **ForeColor** vlastnost. Pokud je barva textu popisku černá, znamená to, že ikona již byla vybrána a metoda je provedena. (To `return` provádí příkaz: říká programu, že má zastavit spouštění metody.) V opačném případě ikona nebyla vybrána, takže program změní barvu textu popisku na černou.
+     Tato metoda nejprve zkontroluje, jestli `clickedLabel` byl úspěšně převeden (přetypován) z objektu do ovládacího prvku popisku. Pokud neúspěšný, má hodnotu `null` (C#) nebo `Nothing` (Visual Basic), a nechcete provést zbytek kódu v metodě. Dále metoda zkontroluje barvu textu vybraného popisku pomocí popisku **ForeColor** vlastnost. Pokud je barva textu popisku černá, znamená to, že ikona již byla vybrána a metoda je provedena. (To `return` provádí příkaz: Říká programu, že má zastavit spouštění metody.) V opačném případě ikona nebyla vybrána, takže program změní barvu textu popisku na černou.
 
 6.  V panelu nabídky zvolte **souboru** > **Uložit vše** rozdělanou práci uložit, a pak na panelu nabídek zvolte **ladění** > **Start Ladění** ke spuštění programu. Měl by se zobrazit prázdný formulář s modrým pozadím. Vyberte jakékoli buňky ve formuláři. Měla by se zobrazit jedna z ikon. Pokračujte ve výběru různých míst ve formuláři. Ikony by se měly výběrem postupně zobrazovat.
 
@@ -61,4 +59,4 @@ Porovnávací hra probíhá takto:
 
 -   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 5: Přidejte odkazy na jmenovky](../ide/step-5-add-label-references.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md).

@@ -1,8 +1,7 @@
 ---
-title: Formátování, XML, textový Editor, dialogové okno Možnosti
+title: Formátování, XML, Textový editor, dialogové okno Možnosti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,31 +9,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938589"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formátování, XML, textový editor, dialogové okno Možnosti
 
-Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. Dostanete **možnosti** dialogové okno z **nástroje** nabídky.
+Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. Můžete přistupovat **možnosti** dialogové **nástroje** nabídky.
 
 > [!NOTE]
-> Tato nastavení jsou k dispozici, když vyberete **textového editoru** složku, **XML** složku a potom **formátování** možnost z **možnosti** dialogové okno.
+> Tato nastavení jsou k dispozici, když vyberete **textový Editor** složky, **XML** složky a pak **formátování** možnost **možnosti** dialogové okno.
 
 ## <a name="attributes"></a>Atributy
- **Zachovat formátování ruční atribut**
+ **Zachovat ruční formátování atributu**
 
- Atributy nejsou naformátována. Toto nastavení je výchozí.
+ Atributy nejsou přeformátovány. Toto nastavení je výchozí.
 
 > [!NOTE]
-> Pokud atributy na více řádků, editor odsadí každý řádek atributů tak, aby odpovídaly odsazení nadřazeného elementu.
+> Pokud jsou atributy na více řádcích, editoru odsazení každý řádek atributů tak, aby odpovídaly odsazení nadřazeného elementu.
 
- **Zarovnat atributy na své vlastní řádku**
+ **Zarovnávat atributy na vlastním řádku**
 
- Zarovnává druhé a následné atributy svisle tak, aby odpovídaly odsazení prvního atributu. Následující text XML je příklad, jak by zarovnán atributy.
+ Zarovná druhého a dalších atributů svisle tak, aby odpovídaly odsazení prvního atributu. Následující text XML je příkladem jak by mělo být zarovnáno atributy.
 
 ```xml
 <item id = "123-A"
@@ -44,20 +43,20 @@ Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. 
 ```
 
 ## <a name="auto-reformat"></a>Automaticky přeformátovat
- **Na vložte ze schránky**
+ **Při vložení ze schránky**
 
- Přeformátuje textu XML vložené ze schránky.
+ Přeformátuje text XML vložené ze schránky.
 
- **Při dokončení koncová značka**
+ **Dokončení koncové značky**
 
- Po dokončení koncová značka, přeformátuje elementu.
+ Element přeformátuje po dokončení koncová značka.
 
 ## <a name="mixed-content"></a>Smíšený obsah
  **Zachovat smíšený obsah ve výchozím nastavení**
 
- Určuje, zda editor přeformátuje smíšený obsah. Ve výchozím nastavení, pokusí přeformátujte smíšený obsah s výjimkou při nalezení obsahu v editoru `xml:space="preserve"` oboru.
+ Určuje, zda editor přeformátuje smíšený obsah. Ve výchozím nastavení, pokusí opakovaně formátovat smíšený obsah, s výjimkou případů, kdy se obsah nachází v editoru `xml:space="preserve"` oboru.
 
- Pokud element obsahuje směs text a značku, obsah se považují za být smíšený obsah. Následuje příklad prvku s smíšený obsah.
+ Pokud prvek obsahuje kombinaci textu a kódu, obsah jsou považovány za být smíšený obsah. Následuje příklad prvku se smíšeným obsahem.
 
 ```xml
 <dir>c:\data\AlphaProject\
@@ -66,7 +65,7 @@ Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. 
 </dir>
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Vlastnosti dokumentu XML, vlastnosti – okno](../xml-tools/xml-document-properties-properties-window.md)
+- [Vlastnosti dokumentu XML, okno Vlastnosti](../xml-tools/xml-document-properties-properties-window.md)
 - [Součásti editoru XML](../xml-tools/xml-editor-components.md)

@@ -10,37 +10,36 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d817938a7611d7390e400cfbf69c6836b9256f3b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: bf99d44e25bf33a773865e0bcf2084d3ac0bbe10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888618"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typové a netypové datové sady
-Typové datové sady je datovou sadu, která je první odvozený od základní <xref:System.Data.DataSet> třídy a pak používá informace z **návrháře Dataset**, která je uložena v souboru XSD vygenerovat nový, dataset – třída silného typu. Informace ze schématu (tabulek, sloupců atd.) je generována a zkompilovat do tato nová třída datovou sadu jako sada první třídy objektů a vlastností. Protože typové datové sady dědí od základní <xref:System.Data.DataSet> třída, typovaná třída předpokládá všechny funkce <xref:System.Data.DataSet> třídy a lze použít s metod, které berou instanci <xref:System.Data.DataSet> třída jako parametr.
+Typové datové sady je datová sada, která je nejprve odvozené od základní třídy <xref:System.Data.DataSet> třídy a potom pomocí informací z **Návrhář Dataset**, které je uložený v souboru XSD pro generování nového silně typované třídy datové sady. Informace ze schématu (tabulky, sloupce a tak dále) je generována a zkompilovány do této třídy novou datovou sadu jako sada první třídy objektů a vlastností. Protože typové datové sady se dědí ze základní <xref:System.Data.DataSet> třídy, typovaná třída předpokládá, všechny funkce <xref:System.Data.DataSet> třídy a je možné pomocí metod, které berou instance <xref:System.Data.DataSet> jako parametr předávat třídu.
 
- Netypové datové sady, na rozdíl od nemá žádné odpovídající integrované schéma. Jako typové datové sady, netypové datové sady obsahuje tabulky, sloupce a tak dále – ale těch, které jsou zveřejněné pouze jako kolekce. (Však po vytvoření ručně tabulky a další prvky dat v datové sadě služby bez typu, můžete exportovat datovou sadu struktura jako schéma pomocí datovou sadu <xref:System.Data.DataSet.WriteXmlSchema%2A> metoda.)
+ Netypové datové sady, naproti tomu nemá žádné odpovídající vestavěné schéma. Stejně jako v typové datové sady, netypové datové sady obsahuje tabulky, sloupce a tak dále, ale ty jsou dostupné jenom jako kolekce. (Však po ručně vytvářet tabulky a další datové prvky v netypovou datovou sadu můžete exportovat strukturu datové sady jako schéma datové sady pomocí <xref:System.Data.DataSet.WriteXmlSchema%2A> metoda.)
 
-## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Přístup k datům kontrast v typu a netypové datové sady
- Třída pro typové datové sady obsahuje model objektu, ve kterém jeho vlastnosti trvat na skutečné názvy tabulek a sloupců. Například pokud pracujete s typové datové sady, můžete odkazovat na sloupec pomocí kódu, například následující:
+## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>Přístup k datům kontrast v typové a netypové datové sady
+ Třída typované datové sady má objektový model trvat jeho vlastnosti na skutečné názvy tabulek a sloupců. Například pokud pracujete s typové datové sady, můžete odkazovat na sloupec s použitím kódu, jako jsou následující:
 
  [!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
  [!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
 
- Naproti tomu při práci s netypové datové sady, je ekvivalentní kódu:
+ Naproti tomu při práci s netypovou datovou sadu, je ekvivalentní kód:
 
  [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
  [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
- Typové přístup není pouze snadněji číst, ale také plně podporované technologii IntelliSense v sadě Visual Studio **Editor kódu**. Kromě toho snazší s ním pracovat, poskytuje syntaxe typové datové sady typ kontroly při kompilaci, výrazně snižuje možnost chyb v přiřazení hodnoty k datové sadě členů. Pokud změníte název sloupce v vaší <xref:System.Data.DataSet> třídy a pak kompilace aplikace, obdržíte chybu sestavení. Chyby sestavení v dvojitým kliknutím **seznam úkolů**, můžete přejít přímo na řádky kódu, které odkazují na původní název sloupce. Přístup k tabulek a sloupců v typové datové sady je také rychlejší mírně za běhu vzhledem k tomu, že přístup je určený při kompilaci, ne prostřednictvím kolekce za běhu.
+ Zadaný přístup je nejen snadněji čtou, ale také plně podporován technologií IntelliSense v sadě Visual Studio **Editor kódu**. Nejen snadněji pracovat, ale poskytuje syntaxe pro typové datové sady v době kompilace, kontrolu typu výrazně snižuje možnost chyb při přiřazování hodnot k členům datové sady. Pokud změníte název sloupce ve vaší <xref:System.Data.DataSet> třídy a poté zkompilovat aplikaci, obdržíte chybu sestavení. Dvojitým kliknutím při sestavení **seznamu úkolů**, můžete přejít přímo na řádek nebo řádky kódu, které odkazují na původní název sloupce. Přístup do tabulek a sloupců v typovaného datová sada je mírně rychlejší za běhu také vzhledem k tomu, že přístup je určen v době kompilace, ne prostřednictvím kolekce za běhu.
 
- I když typové datové sady mít celou řadu výhod, je užitečné v z různých důvodů netypové datové sady. Nejobvyklejší scénář je-li k dispozici pro datovou sadu žádné schéma. Této chybě může dojít, například aplikace komunikuje s komponenty, která vrátí datovou sadu, ale neznáte předem co je jeho strukturu. Podobně platí jsou časy při práci s daty, která nemá strukturou statické, předvídatelný. V takovém případě je nepraktické používat typové datové sady, protože jste k opětovnému vytvoření třídy typové datové sady s každé změně ve struktuře data.
+ I když typové datové sady mají celou řadu výhod, je užitečné v mnoha případech netypovou datovou sadu. Nejobvyklejšími scénář je, pokud není k dispozici pro datovou sadu bez schématu. Tato situace může nastat, například pokud vaše aplikace pracuje s komponenty, která vrací třídu dataset, ale neznáte předem co je jeho strukturu. Podobně jsou časy při práci s daty, která nemá žádné statické a předvídatelná struktura. V takovém případě je nepraktické používat typové datové sady, protože je potřeba znovu generovat třídy typové datové sady s každou změnou datové struktury.
 
- Obecně platí kolikrát bude při se můžete vytvořit datové sady dynamicky bez nutnosti schéma k dispozici. V takovém případě datová sada je jednoduše vhodnou strukturu, ve kterém můžete zachovat informace, tak dlouho, dokud dat může být reprezentován relační způsobem. Ve stejnou dobu můžete využít výhod funkce datovou sadu, například možnost k serializaci informace předat jiným procesem nebo zapsat soubor XML.
+ Obecně platí mnohokrát se vám při můžete vytvořit datové sady dynamicky bez nutnosti schéma k dispozici. V takovém případě datová sada je jednoduše vhodnou strukturu ve kterém můžete zachovat informace, jako data může být reprezentována způsobem, relační. Ve stejnou dobu můžete využít výhod funkcí datové sady, například možnost serializace informací o předat jiným procesem nebo vypsat soubor XML.
 
 ## <a name="see-also"></a>Viz také:
 

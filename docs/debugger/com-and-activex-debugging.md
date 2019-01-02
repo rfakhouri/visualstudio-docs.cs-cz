@@ -1,8 +1,6 @@
 ---
-title: COM a prvků ActiveX ladění | Microsoft Docs
-ms.custom: ''
+title: COM a ActiveX ladění | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,32 +21,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820854"
 ---
 # <a name="com-and-activex-debugging"></a>Ladění modelů COM a prvků ActiveX
-Tato část obsahuje tipy k ladění aplikací modelu COM a ovládací prvky ActiveX.  
+Tento oddíl poskytuje tipy k ladění aplikace modelu COM a ovládací prvky ActiveX.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [COM Server a ladění kontejneru](../debugger/com-server-and-container-debugging.md)  
- Při ladění aplikace modelu COM, uvádí zvláštní požadavky. Mezi problémy patří: ladění COM server a kontejneru pomocí dva projekty v rámci stejného řešení, trasování do volání, které přejděte přes hranice procesu, nastavení zarážek v funkce zpětného volání a zanoříte napříč a do kontejnery a servery.  
+ [Ladění serveru a kontejneru modelu COM](../debugger/com-server-and-container-debugging.md)  
+ Při ladění aplikace modelu COM, uvádí zvláštní požadavky. Problémy patří: ladění modelu COM serveru a kontejneru pomocí dva projekty ve stejném řešení, trasování do volání, které přejít přes hranice procesu, nastavení zarážek ve funkcích zpětného volání a krokování přes a kontejnery a servery.  
   
- [Postupy: ladění ovládacího prvku ActiveX](../debugger/how-to-debug-an-activex-control.md)  
- Obsahuje informace o ladění ovládacích prvků ActiveX. To zahrnuje: určení kontejner pro relaci ladění a zjistěte, jak kód na vaši ovládací prvek ActiveX spuštěna, ladění vázané na data ovládací prvek ActiveX, simulaci konkrétním kontejneru a zanoříte se do kódu kontejneru.  
+ [Postupy: Ladění ovládacího prvku ActiveX](../debugger/how-to-debug-an-activex-control.md)  
+ Obsahuje informace o ladění ovládacích prvků ActiveX. Jedná se o: určení kontejneru pro relaci ladění, pokud chcete zobrazit, jak se spustí kód v ovládacím prvku ActiveX, ladění ovládací prvek ActiveX vázané na data, budete jen simulovat konkrétní kontejner a krokování s vnořením do kódu kontejneru.  
   
  [Nástroje pro ladění modelu COM](../debugger/com-debugging-tools.md)  
  Zobrazí seznam prohlížečů a ukázkové aplikace, které mohou být užitečné při ladění aplikace modelu COM.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)  
- Obsahuje odkazy na větší části ladění dokumentaci. Informace zahrnují: co je nového v ladicí program, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění projektů Visual C++, ladění modelu COM a prvků ActiveX, ladění knihoven DLL, ladění SQL a uživatele odkazy na rozhraní.  
+ [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)  
+ Obsahuje odkazy na větší části dokumentace ladění. Informace zahrnují: co je nového v ladicím programu, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění projektů Visual C++, ladění modelu COM a ActiveX, ladění knihoven DLL, ladění SQL a uživatele Reference k rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Úvod do modelu COM](/cpp/atl/introduction-to-com)   
- [ActiveX – ovládací prvky](/cpp/mfc/activex-controls)   
+ [Ovládací prvky ActiveX](/cpp/mfc/activex-controls)   
  [Aplikace serveru SDI](../debugger/sdi-server-applications.md)

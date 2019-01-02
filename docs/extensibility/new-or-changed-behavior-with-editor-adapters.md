@@ -1,9 +1,6 @@
 ---
 title: Nové nebo změněné chování editoru adaptéry | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901607"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Nové nebo změněné chování editoru adaptéry
 Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual Studio core editor a plánujete používat editor adaptéry (nebo překrytí) místo použití nového rozhraní API, byste měli vědět následující rozdíly v chování editoru adaptéry s ohledem na předchozí základní editor.  
@@ -44,7 +41,7 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
  Režim WPF se liší od režimu Win32 dvěma způsoby. Nejprve je možné hostovat zobrazení textu v kontextu WPF. V podokně WPF se zpřístupní po přetypování <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> k <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> a volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Druhý, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> stále vrací HWND, ale tento HWND lze použít pouze ke kontrole jeho pozice a zaměřit se na něj. Tento HWND nesmí používat reagovat na zprávu WM_PAINT, protože to nebude mít vliv na to, jak editoru jsou vykreslovány v okně. Tato HWND je k dispozici pouze pro usnadnění přechodu na Nový editor kódu prostřednictvím adaptérů. Důrazně doporučujeme, že byste neměli používat `VIF_NO_HWND_SUPPORT` Pokud vaše komponenta vyžaduje HWND pracovat z důvodu omezení v HWND vrácená `GetWindowHandle` během činnosti v tomto režimu.  
   
 #### <a name="pass-arrays-as-parameters-in-native-code"></a>Předávání polí jako parametrů v nativním kódu  
- Existuje mnoho metod v editoru starší verze rozhraní API, které mají parametry, které zahrnují pole a její vlastnosti count. Mezi příklady patří:  
+ Existuje mnoho metod v editoru starší verze rozhraní API, které mají parametry, které zahrnují pole a její vlastnosti count. Můžete například:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -58,7 +55,7 @@ Pokud provádíte aktualizaci kódu napsaného pro starší verze sady Visual St
  Adaptér vyrovnávací paměti musí vždy volat z vlákna uživatelského rozhraní. Adaptér vyrovnávací paměti je spravovaný objekt, což znamená, že volání do něj ze spravovaného kódu obejde zařazování COM a volání nebude automaticky zařadit do vlákna uživatelského rozhraní.  Pokud adaptér vyrovnávací paměti při volání z vlákna na pozadí, je nutné použít <xref:System.Windows.Threading.Dispatcher.Invoke%2A> nebo podobné metody.  
   
 #### <a name="lockbuffer-methods"></a>LockBuffer metody  
- Všechny metody LockBuffer() jsou zastaralé. Mezi příklady patří:  
+ Všechny metody LockBuffer() jsou zastaralé. Můžete například:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   

@@ -1,9 +1,6 @@
 ---
-title: IDebugObject | Microsoft Docs
-ms.custom: ''
+title: IDebugObject | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject
@@ -15,18 +12,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cff859d2aa4b3a3c88978e077102e045efe1f3b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b10e14d310d5b5b259f696df63ce899765538a94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889654"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 se již nepoužívá tímto způsobem implementace vyhodnocovače výrazů. Informace o implementaci vyhodnocovače výrazů CLR, najdete v tématu [vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Toto rozhraní představuje objekt, který vytvoří vazač pro zapouzdření hodnoty symbolů a výrazy.  
+ Toto rozhraní představuje objekt, který má vazač vytvoří k zapouzdření hodnoty symbolů a výrazy.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,38 +32,38 @@ IDebugObject : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Vyhodnocení výrazu implementuje toto rozhraní k reprezentaci objektu.  
+ Vyhodnocovače výrazů implementuje toto rozhraní k reprezentaci objektu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je základní třída pro všechny objekty, které používá vyhodnocovací filtr výrazů v analyzované výrazy. Se vrátí voláním [vazby](../../../extensibility/debugger/reference/idebugbinder-bind.md) metoda. [QueryInterface –](/cpp/atl/queryinterface) získá rozhraní více specializované z tohoto rozhraní.  
+ Toto rozhraní je základní třída pro všechny objekty, které používá vyhodnocovací filtr výrazů v analyzované výrazy. Je vrácený voláním [svázat](../../../extensibility/debugger/reference/idebugbinder-bind.md) metoda. [QueryInterface](/cpp/atl/queryinterface) získá rozhraní více specializované z tohoto rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugObject`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugObject`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|Získá velikost objektu.|  
-|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|Získá hodnotu objektu jako po sobě jdoucích řadu bajtů.|  
+|[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|Získá hodnotu objektu ve formě po sobě jdoucích řady bajtů.|  
 |[SetValue](../../../extensibility/debugger/reference/idebugobject-setvalue.md)|Nastaví hodnotu objektu z po sobě jdoucích řady bajtů.|  
-|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|Nastaví hodnotu odkaz na tento objekt.|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|Získá kontext paměti, který představuje adresu hodnoty objektu.|  
-|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|Vytvoří kopii spravovaného objektu v adresním prostoru modul ladění.|  
+|[SetReferenceValue](../../../extensibility/debugger/reference/idebugobject-setreferencevalue.md)|Nastaví odkaz na hodnotu tohoto objektu.|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugobject-getmemorycontext.md)|Získá kontext paměti, který představuje adresu hodnotu objektu.|  
+|[GetManagedDebugObject](../../../extensibility/debugger/reference/idebugobject-getmanageddebugobject.md)|Vytvoří kopii spravovaný objekt v adresním prostoru ladicího stroje.|  
 |[IsNullReference](../../../extensibility/debugger/reference/idebugobject-isnullreference.md)|Ověřuje, zda tento objekt je odkaz s hodnotou null.|  
-|[Isequal –](../../../extensibility/debugger/reference/idebugobject-isequal.md)|Porovná k tomuto objektu.|  
+|[IsEqual](../../../extensibility/debugger/reference/idebugobject-isequal.md)|Porovná objekt do tohoto objektu.|  
 |[IsReadOnly](../../../extensibility/debugger/reference/idebugobject-isreadonly.md)|Určuje, zda tento objekt je jen pro čtení.|  
 |[IsProxy](../../../extensibility/debugger/reference/idebugobject-isproxy.md)|Určuje, zda je objekt transparentní proxy server.|  
   
 ## <a name="remarks"></a>Poznámky  
- Vyhodnocení výrazu toto rozhraní používá jako základní třída k reprezentaci objektů v strom analýzy.  
+ Chyba při vyhodnocování výrazu používá k reprezentaci objektů v strom analýzy toto rozhraní jako základní třídy.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní vyhodnocení výrazu](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [Getelement –](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
- [Vazby](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Rozhraní pro vyhodnocení výrazu](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+ [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)   
+ [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)

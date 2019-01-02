@@ -2,7 +2,6 @@
 title: 'CA2105: Pole polí by neměly být pouze pro čtení'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937965"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Pole polí by neměly být pouze pro čtení
 
@@ -40,7 +39,7 @@ Veřejné nebo chráněné pole obsahující pole je deklarován jen pro čtení
 
 Pokud použijete `readonly` (`ReadOnly` v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modifikátor pro pole, které obsahuje pole, pole nelze změnit pro odkazování na jiné pole. Avšak prvky pole, které jsou uloženy v poli určeném jen pro čtení, mohou být změněny. Kód, který se rozhoduje nebo provádí operace, které jsou založeny na elementy pole jen pro čtení, který je veřejně přístupný může obsahovat chybu zneužitelné zabezpečení.
 
-Všimněte si, že s polem veřejné také porušuje pravidla návrhu [CA1051: nedeklarujte viditelná pole instance](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Všimněte si, že s polem veřejné také porušuje pravidla návrhu [CA1051: Nedeklarujte viditelná pole instance](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
@@ -50,7 +49,7 @@ Chcete-li vyřešit ohrožení zabezpečení, který je identifikován podle toh
 
 - Nahraďte veřejné pole, která vrací klon soukromého pole. Protože váš kód nespoléhala se na klonu, nehrozí nebezpečí, pokud dojde k úpravě prvky.
 
-Pokud jste zvolili druhého přístupu, nenahrazují pole k vlastnosti; vlastnosti, které vrací pole nepříznivě ovlivnit výkon. Další informace najdete v tématu [CA1819: vlastnosti by neměly vracet pole](../code-quality/ca1819-properties-should-not-return-arrays.md).
+Pokud jste zvolili druhého přístupu, nenahrazují pole k vlastnosti; vlastnosti, které vrací pole nepříznivě ovlivnit výkon. Další informace najdete v tématu [CA1819: Vlastnosti by neměly vracet pole](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 

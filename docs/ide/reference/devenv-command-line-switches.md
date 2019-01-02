@@ -2,7 +2,6 @@
 title: Přepínače příkazového řádku nástroje devenv
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 29a86959ccd4b0224e22e480588d36a0d637336e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911975"
 ---
 # <a name="devenv-command-line-switches"></a>Přepínače příkazového řádku nástroje devenv
 
@@ -82,7 +81,7 @@ Následující přepínače příkazového řádku se nezobrazují integrovaném
 |[/Build](../../ide/reference/build-devenv-exe.md)|Sestaví zadané řešení nebo projekt podle konfigurace zadané řešení.<br /><br /> `devenv myproj.csproj /build`|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Odstraní všechny soubory vytvořené příkazem k sestavení, aniž by to ovlivnilo zdrojové soubory.<br /><br /> `devenv myproj.csproj /clean`|
 |[/Deploy](../../ide/reference/deploy-devenv-exe.md)|Sestaví řešení a spolu se soubory, které jsou nezbytné pro nasazení podle konfigurace řešení.<br /><br /> `devenv myproj.csproj /deploy`|
-|[/Diff](../../ide/reference/diff.md)|Porovná dva soubory. Přebírá čtyři parametry: Zdrojovýsoubor, Cílovýsoubor, SourceDisplayName (volitelné), TargetDisplayName (volitelné).|
+|[/Diff](../../ide/reference/diff.md)|Porovná dva soubory. Používá čtyři parametry: Zdrojovýsoubor, Cílovýsoubor, SourceDisplayName (volitelné), TargetDisplayName (volitelné).|
 |[/Out](../../ide/reference/out-devenv-exe.md)|Umožňuje zadat soubor, který chcete zobrazovat chyby při sestavování.<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|Projekt k sestavení, vyčištění nebo nasazení. Tento přepínač můžete použít pouze v případě, že jste zadali také/Build, / rebuild, / clean nebo / deploy – přepínač.|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Určuje konfiguraci projektu k vytvoření buildu nebo nasazení. Tento přepínač lze použít pouze v případě, že jste zadali také přepínač/Project.|

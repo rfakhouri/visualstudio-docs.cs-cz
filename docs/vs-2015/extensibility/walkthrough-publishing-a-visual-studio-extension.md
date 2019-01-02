@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,17 +15,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e67c0c6b1bf24555e57d09b75317ce562a9f956
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 073ac55cce908a43bed2a2c6acb4e11cc1fa2ead
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824097"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Návod: Publikování rozšíření sady Visual Studio
+# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Průvodce: Publikování rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Poznámka:**: The Galerie sady Visual Studio teď nahrazuje Visual Studio Marketplace. Zobrazte nejnovější verzi tohoto tématu podrobnosti.
+**Poznámka:**: Galerie Visual Studio teď nahrazuje Visual Studio Marketplace. Zobrazte nejnovější verzi tohoto tématu podrobnosti.
 
 
 Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio do Galerie Visual Studio. Po přidání rozšíření v galerii se mohou vývojáři **rozšíření a aktualizace** a vyhledejte nové a aktualizované rozšíření existuje.
@@ -59,13 +58,13 @@ Tento návod ukazuje, jak publikovat rozšíření sady Visual Studio do Galerie
 
 4.  K přihlášení pomocí účtu Microsoft. Pokud nemáte účet Microsoft, můžete jeden vytvořit v tomto okamžiku.
 
-5.  Klikněte na tlačítko **nahrát**.
+5.  Klikněte na **Odeslat**.
 
-6.  V **krok 1: typ rozšíření**vyberte **nástroj** a potom klikněte na tlačítko **Další**.
+6.  V **krok 1: Typ rozšíření**vyberte **nástroj** a potom klikněte na tlačítko **Další**.
 
-7.  V **krok 2: nahrání**, je možné nahrávat přímo do Galerie Visual Studio nebo jednoduše přidejte odkaz na vlastní web. V tomto případě vyberte **chci nahrát nástroj**. **Vybrat ovládací prvek** se zobrazí okno. Klikněte na tlačítko **Procházet** a pak vyberte TestPublish.vsix ve složce \bin\Release projektu. Klikněte na tlačítko **Další**.
+7.  V **krok 2: Nahrát**, je možné nahrávat přímo do Galerie Visual Studio nebo jednoduše přidejte odkaz na vlastní web. V tomto případě vyberte **chci nahrát nástroj**. **Vybrat ovládací prvek** se zobrazí okno. Klikněte na tlačítko **Procházet** a pak vyberte TestPublish.vsix ve složce \bin\Release projektu. Klikněte na **Další**.
 
-8.  V **krok 3: základní informace**, jsou zobrazena pole ze souboru source.extension.vsixmanifest. Vyberte odpovídající **kategorie** a přidejte **značky** k poskytování pomoci uživatelům najít rozšíření. Můžete chtít přidat podrobnější přehled a popis (popis musí být aspoň 280 znaků). Ponechte **typ rozšíření** jako **rozšíření společnosti Microsoft** a **nákladů kategorie** jako **zkušební verze**.
+8.  V **krok 3: Základní informace**, jsou zobrazena pole ze souboru source.extension.vsixmanifest. Vyberte odpovídající **kategorie** a přidejte **značky** k poskytování pomoci uživatelům najít rozšíření. Můžete chtít přidat podrobnější přehled a popis (popis musí být aspoň 280 znaků). Ponechte **typ rozšíření** jako **rozšíření společnosti Microsoft** a **nákladů kategorie** jako **zkušební verze**.
 
 9. Přečtěte si příspěvek smlouvu v dolní části stránky a zkontrolujte **souhlasím**.
 

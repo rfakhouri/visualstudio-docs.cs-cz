@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938065"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Postupy: Otevření modelu ze souboru v kódu programu
 DSL modely můžete otevřít v libovolné aplikaci.
@@ -42,7 +41,7 @@ DSL modely můžete otevřít v libovolné aplikaci.
 
     -   Pokud nevidíte příkazem **.NET** kartu **Add References** dialogovém okně klikněte na tlačítko **Procházet** kartu a přejít na `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
--   Sestavení DSL, který najdete ve složce bin projektu DSL. Jeho název je obvykle ve formátu: *společnost*. *YourProject*`.Dsl.dll`.
+-   Sestavení DSL, který najdete ve složce bin projektu DSL. Její název je obvykle ve formátu: *Společnost*. *YourProject*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Důležité třídy v DSL
  Předtím, než můžete napsat kód, který čte vašeho DSL, byste měli znát názvy některých prostor tříd vygenerovaných podle vašeho DSL. Ve vašem řešení DSL, otevřete **Dsl** projektu a podívejte se **GeneratedCode** složky. Případně, poklepejte na sestavení DSL ve vašem projektu **odkazy**a otevřete obor názvů DSL v **prohlížeče objektů**.

@@ -1,9 +1,6 @@
 ---
 title: Rozšíření projektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3c6895f23b6d2ffe1f4ff8e311140b1e5d5a51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837196"
 ---
 # <a name="extend-projects"></a>Rozšíření projektů
 Projekty a řešení se způsoby, kterými Visual Studio slouží k uspořádání kódu a zdrojové soubory do jednotek pro kompilaci a nasazení. Můžete najít další informace o projektech v [projekty (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Můžete vytvořit vlastní typy projektů pomocí Visual Studio SDK a rozhraní Managed Package Framework pro projekty, které si můžete stáhnout na [Managed Package Framework pro projekty](https://github.com/tunnelvisionlabs/MPFProj10). Chcete-li pochopit způsob, jakým jsou implementovány vlastní projekty, naleznete v tématu [nová generace projektů: pod pokličkou, část 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Můžete vytvořit vlastní typy projektů pomocí Visual Studio SDK a rozhraní Managed Package Framework pro projekty, které si můžete stáhnout na [Managed Package Framework pro projekty](https://github.com/tunnelvisionlabs/MPFProj10). Chcete-li pochopit, jak jsou implementovány vlastní projekty, naleznete v tématu [nová generace projektů: Pod pokličkou, část 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) a [nová generace projektů: Pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Témata v této části popisují, jak vytvořit vlastní projekty a ke správě různých typů řešení sady Visual Studio.  
   

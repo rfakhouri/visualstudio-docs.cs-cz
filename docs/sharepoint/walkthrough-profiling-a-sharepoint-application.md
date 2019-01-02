@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Profilace aplikace SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Profilace aplikace SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913814"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Návod: Profilovat aplikaci služby SharePoint
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Průvodce: Profil aplikace služby SharePoint
   Tento návod ukazuje, jak pomocí nástrojů pro profilaci v sadě Visual Studio za účelem optimalizace výkonu aplikace SharePoint. Ukázková aplikace je příjemce událostí funkce Sharepointu, který obsahuje nečinné smyčky, která snižuje výkon příjemce událostí funkce. Profiler sady Visual Studio umožňuje vyhledat a odstranit nejdražší (nejpomalejší provádění) součást projektu, označované také jako *kritickou cestu*.  
   
  Tento návod demonstruje následující úkoly:  
@@ -280,4 +277,3 @@ ms.locfileid: "49852742"
  [Přehled výkonnostní relace](/visualstudio/profiling/performance-session-overview)   
  [Průvodce začátečníka profilací výkonu](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Vyhledat problémová místa aplikace pomocí sady Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

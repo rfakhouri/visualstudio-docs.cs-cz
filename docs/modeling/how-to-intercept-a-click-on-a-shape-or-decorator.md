@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Zachycení kliknutí na obrazec či dekorátor'
+title: 'Postupy: Zachycení kliknutí na obrazec nebo dekorátor'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d71cb172929fd9d213c0f09be21c1a844acf4462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892739"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Postupy: Zachycení kliknutí na obrazec či dekorátor
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Postupy: Zachycení kliknutí na obrazec nebo dekorátor
 Následující postupy ukazují, jak zachycení kliknutí na obrazec nebo ikonu dekoratér. Můžete zachytit klikne na tlačítko, dvakrát klikne, přetáhne, a dalších gesta a aby prvek reagovat.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Aby se zachytily kliknutí obrazců

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Project'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Project'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931252"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Project
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Project
   Tento návod ukazuje, jak k vytvoření doplňku VSTO pro aplikaci Microsoft Office Project. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní projekty bez ohledu na to, které jsou otevřené aplikace. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
@@ -65,7 +62,7 @@ ms.locfileid: "50671414"
   
 6.  V **název** zadejte **FirstProjectAddIn**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstProjectAddIn** projekt a otevře **ThisAddIn** souboru kódu v editoru.  
   
@@ -123,13 +120,13 @@ ms.locfileid: "50671414"
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili základní doplňku VSTO pro Project, můžete další informace o tom, jak vývoj doplňků VSTO z těchto témat:  
   
--   Obecné programování úkolů, které můžete provádět v doplňcích VSTO pro Project: [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Obecné programování úkolů, které můžete provádět v doplňcích VSTO pro Project: [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Použití objektového modelu projektu: [projektů řešení](../vsto/project-solutions.md).  
+-   Použití objektového modelu projektu: [Projekt řešení](../vsto/project-solutions.md).  
   
--   Sestavování a ladění doplňků VSTO pro Project: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
+-   Sestavování a ladění doplňků VSTO pro Project: [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
   
--   Nasazení doplňků VSTO pro Project: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
+-   Nasazení doplňků VSTO pro Project: [Nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
@@ -137,5 +134,3 @@ ms.locfileid: "50671414"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

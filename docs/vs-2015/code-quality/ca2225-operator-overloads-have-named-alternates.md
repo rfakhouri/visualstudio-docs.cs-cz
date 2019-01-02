@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 427bd7756e1bf7a9e1b7056a84dd90c29bf504fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6500c43ff735d9249501ec63c0cb16f3a4c4c2db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895997"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Přetížení operátoru mají pojmenované alternativy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +48,20 @@ ms.locfileid: "49860250"
 |---------|------------------|-----------|--------------------|
 |+ (binární)|+|+ (binární)|Přidejte|
 |+=|+=|+=|Přidejte|
-|&|a|&|BitwiseAnd|
+|&|A|&|BitwiseAnd|
 |&=|A =|&=|BitwiseAnd|
 |&#124;|Nebo|&#124;|BitwiseOr|
 |&#124;=|Nebo =|&#124;=|BitwiseOr|
 |--|Není k dispozici|--|Snížení|
 |/|/|/|Dělení|
 |/=|/=|/=|Dělení|
-|==|=|==|rovná se|
+|==|=|==|Je rovno|
 |^|XOR|^|XOR|
 |^=|XOR =|^=|XOR|
 |>|>|>|Porovnat|
 |>=|>=|>=|Porovnat|
 |++|Není k dispozici|++|Přírůstek|
-|<>|!=|rovná se|
+|<>|!=|Je rovno|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
 |<|<|<|Porovnat|
@@ -106,11 +105,8 @@ ms.locfileid: "49860250"
 
  [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Přepište Equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231: Přetižte operátor equals při přepsání ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

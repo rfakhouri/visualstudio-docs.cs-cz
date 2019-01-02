@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -27,12 +26,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33805f4a5997d25b0c1a79add07fce0dc72edfb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 811c6c26ec3fdfd8689757cd8a46358c3a896a88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938062"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +42,7 @@ Vlákno je řada pokynů, pro které operační systém přiděluje čas proceso
 
  Kromě toho multithreading přináší některé nové typy možných chyb. Často například dvě nebo více vláken mít přístup ke stejnému prostředku, ale pouze jedno vlákno může bezpečně přistupovat k prostředku najednou. Některé forma vzájemného vyloučení je nezbytné, abyste měli jistotu, že pouze jedno vlákno k prostředku najednou. Pokud nesprávně provedeného vzájemného vyloučení můžete vytvořit *zablokování* podmínky, kdy žádné vlákno nelze spustit. Zablokování může být zásadním problémem při ladění.
 
- Visual Studio poskytuje **vlákna** oken, okno vlákna GPU, okno paralelního sledování a další funkce, které bylo vícevláknové ladění snazší. Tyto postupy je nejlepší způsob, jak Další informace o funkcích vláken. Zobrazit [návod: ladění vícevláknové aplikace](../debugger/walkthrough-debugging-a-multithreaded-application.md) a [návod: ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Visual Studio poskytuje **vlákna** oken, okno vlákna GPU, okno paralelního sledování a další funkce, které bylo vícevláknové ladění snazší. Tyto postupy je nejlepší způsob, jak Další informace o funkcích vláken. Zobrazit [názorný postup: Ladění vícevláknových aplikacích](../debugger/walkthrough-debugging-a-multithreaded-application.md) a [názorný postup: Ladění aplikace C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio také poskytuje výkonné zarážky a trasování, což může být velmi užitečné při ladění aplikací s více vlákny. Filtry zarážky slouží k umístění zarážek na jednotlivá vlákna. Zobrazit [použití zarážek](../debugger/using-breakpoints.md)
 
@@ -54,20 +53,20 @@ Vlákno je řada pokynů, pro které operační systém přiděluje čas proceso
 
  [Ladění více procesů](../debugger/debug-multiple-processes.md) vysvětluje, jak ladění více procesů.
 
- [Postupy: použití okna vláken](../debugger/how-to-use-the-threads-window.md) vhodné procedury pro ladění vláken s **vlákna** okna.
+ [Postupy: Použití okna vláken](../debugger/how-to-use-the-threads-window.md) vhodné procedury pro ladění vláken s **vlákna** okna.
 
- [Postupy: přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md) tři způsoby, jak přepnout kontext ladění na jiný podproces.
+ [Postupy: Přepnout na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md) tři způsoby, jak přepnout kontext ladění na jiný podproces.
 
  [Postupy: Příznak a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md) opatřete značkou nebo příznakem vlákna, které chcete věnovat zvláštní pozornost při ladění.
 
- [Postupy: nastavení názvu vlákna v nativním kódu](../debugger/how-to-set-a-thread-name-in-native-code.md) pojmenujte vašeho vlákna, která se zobrazí v **vlákna** okna.
+ [Postupy: Nastavení názvu vlákna v nativním kódu](../debugger/how-to-set-a-thread-name-in-native-code.md) dát název, který se zobrazí v vašeho vlákna **vlákna** okna.
 
- [Postupy: nastavení názvu vlákna do spravovaného kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md) pojmenujte vašeho vlákna, která se zobrazí v **vlákna** okna.
+ [Postupy: Nastavení názvu vlákna do spravovaného kódu](../debugger/how-to-set-a-thread-name-in-managed-code.md) dát název, který se zobrazí v vašeho vlákna **vlákna** okna.
 
- [Návod: Ladění vícevláknové aplikace](../debugger/walkthrough-debugging-a-multithreaded-application.md).
+ [Návod: Ladění vícevláknových aplikacích](../debugger/walkthrough-debugging-a-multithreaded-application.md).
 Seznámení s funkcemi, s důrazem na funkce jak ladění vlákna do [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].
 
- [Postupy: ladění na vysoký výkon clusteru](../debugger/how-to-debug-on-a-high-performance-cluster.md) techniky ladění aplikace, která běží na vysoký výkon clusteru.
+ [Postupy: Ladění na vysoký výkon clusteru](../debugger/how-to-debug-on-a-high-performance-cluster.md) techniky ladění aplikace, která běží na vysoký výkon clusteru.
 
  [Tipy pro ladění vláken v nativním kódu](../debugger/tips-for-debugging-threads-in-native-code.md) jednoduché techniky, které mohou být užitečné při ladění nativních vláken.
 
@@ -77,9 +76,9 @@ Seznámení s funkcemi, s důrazem na funkce jak ladění vlákna do [!INCLUDE[v
 
  [Návod: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) návod, který ukazuje, jak použít paralelní úkoly a Paralelní zásobníky systému windows.
 
- [Postupy: použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md) zkontrolujte hodnoty a výrazy napříč více vlákny.
+ [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md) zkontrolujte hodnoty a výrazy napříč více vlákny.
 
- [Postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md) vyhledejte a práce s vlákny, která běží na GPU během ladění.
+ [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md) vyhledejte a práce s vlákny, která běží na GPU během ladění.
 
 ## <a name="related-sections"></a>Související oddíly
  [Použití zarážek](../debugger/using-breakpoints.md)

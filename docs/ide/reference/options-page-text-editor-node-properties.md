@@ -2,7 +2,6 @@
 title: Stránka Možnosti, vlastnosti uzlu textového editoru
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935668"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 Tento dokument popisuje některé stránky (nebo kolekce vlastností), které jsou přidruženy **textový Editor** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu `Properties` kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
@@ -56,7 +55,7 @@ Tento dokument popisuje některé stránky (nebo kolekce vlastností), které js
 |WordWrap|Get/Set (Boolean)|Určuje, zda se dlouhé řádky v tomto zobrazení zalamují na hranicích slov. Nastavení na `true` způsobí, že `VirtualSpace` vlastnost položky (v tomto seznamu) nastavit `false`.|
 |WordWrapGlyphs|Get/Set (Boolean)|Zobrazí piktogram na konci řádku; označuje, že se tento řádek zalamuje na další řádek.|
 |EnableLeftClickForURLs|Get/Set (Boolean)|Určuje, zda editor podtrhuje adresy URL a umožňuje jednu přejít na adresu URL v prohlížeči registrované systému.|
-|IndentStyle|Získá nebo nastaví (<xref:EnvDTE.vsIndentStyle>)|Určuje styl odsazení: výchozí, inteligentní nebo žádné.|
+|IndentStyle|Získá nebo nastaví (<xref:EnvDTE.vsIndentStyle>)|Určuje styl odsazení: Výchozí, inteligentní nebo žádné.|
 |TabSize|Get/Set (Long)|Představuje počet mezer pro tabulátor. Nastavení celého čísla mimo rozsah 1–60 (včetně) se nezdaří.|
 |InsertTabs|Get/Set (Boolean)|Pokud `True`, při odsazení použijí znaky TABULÁTORU.|
 |IndentSize|Get/Set (Long)|Představuje počet mezer pro jednu úroveň odsazení. Nastavení celočíselné hodnoty mimo rozsah 1–60 (včetně) se nezdaří.|

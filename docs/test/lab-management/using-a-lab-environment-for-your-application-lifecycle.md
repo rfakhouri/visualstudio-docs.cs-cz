@@ -2,7 +2,6 @@
 title: Použití testovacího prostředí pro vývoj a provoz
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 45be33245e559cb5027124b4678984ece076e1cf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7b93e4f065cbd776de9f70fae61594e828a92fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940690"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Použít prostředí laboratoře pro váš vývoj a provoz
 
@@ -77,15 +76,15 @@ Existují dva typy testovacích prostředí, které můžete vytvořit pomocí V
 
 **Prostředí SCVMM:** může obsahovat jenom virtuální počítače, které jsou spravovány serverem SCVMM (System Center Virtual Machine Manager), takže virtuální počítače v prostředí SCVMM spustit pouze v rámci virtualizace Hyper-V. Prostředí SCVMM ale poskytuje následující funkce automatizace a správy, které nejsou k dispozici ve standardní prostředí:
 
-- **Snímky prostředí:** snímky prostředí obsahují stavu testovacího prostředí, takže můžete rychle obnovit čisté prostředí, nebo uložit stav prostředí, ve kterém byl změněn. Pracovní postup sestavení nasazení testování můžete použít také k automatizaci procesu ukládání a obnovení snímků prostředí.
+- **Snímky prostředí:** Prostředí snímky obsahují stavu testovacího prostředí, takže můžete rychle obnovit čisté prostředí, nebo uložit stav prostředí, ve kterém byl změněn. Pracovní postup sestavení nasazení testování můžete použít také k automatizaci procesu ukládání a obnovení snímků prostředí.
 
-- **Uložené prostředí:** můžete uložit kopii prostředí SCVMM a pak nasadit více kopií daného prostředí.
+- **Uložené prostředí:** Můžete uložit kopii prostředí SCVMM a pak nasadit více kopií daného prostředí.
 
-- **Izolace sítě:** izolace sítě vám umožní současně spustit více kopií stejné prostředí SCVMM bez konflikty názvů počítačů.
+- **Izolace sítě:** Izolace sítě můžete současně spustit více kopií stejné prostředí SCVMM bez konflikty názvů počítačů.
 
-- **Šablony virtuálních počítačů:** šablonu virtuálního počítače je virtuální počítač, pro který byla její název a odebrat další identifikátory. Při nasazení šablony virtuálního počítače v prostředí SCVMM, nástroje Microsoft Test Manager vytvoří nové identifikátory. To umožňuje nasazovat více kopií virtuálního počítače ve stejném prostředí, nebo více prostředí a současně spuštění virtuálních počítačů.
+- **Šablony virtuálních počítačů:** Šablonu virtuálního počítače je virtuální počítač, pro který byla její název a odebrat další identifikátory. Při nasazení šablony virtuálního počítače v prostředí SCVMM, nástroje Microsoft Test Manager vytvoří nové identifikátory. To umožňuje nasazovat více kopií virtuálního počítače ve stejném prostředí, nebo více prostředí a současně spuštění virtuálních počítačů.
 
-- **Uložené virtuální počítače:** virtuálního počítače, která je uložen v knihovně projektu a také jedinečné identifikátory.
+- **Uložené virtuální počítače:** Virtuální počítač, který je uložený v knihovně vašeho projektu a obsahuje jedinečné identifikátory.
 
 > [!NOTE]
 > Správa testovacího prostředí SCVMM 2016 nepodporuje.

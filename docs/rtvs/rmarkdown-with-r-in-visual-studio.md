@@ -1,43 +1,42 @@
 ---
 title: R Markdown
-description: Postup vytvoření R Markdownu dokumenty v sadě Visual Studio k vytvoření vysoce kvalitní sestav, prezentací a řídicí panely.
+description: Jak vytvořit R Markdown dokumenty v sadě Visual Studio k vytvoření vysoce kvalitní sestavy, prezentace a řídicí panely.
 ms.date: 11/16/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6394dcedc8c29f517d502d1a4e5475667f9b1f9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938469"
 ---
-# <a name="create-r-markdown-documents"></a>Vytváření dokumentů R Markdownu
+# <a name="create-r-markdown-documents"></a>Vytváření dokumentů R Markdown
 
-[R Markdownu](https://rmarkdown.rstudio.com/) je dokument formátu, který se zobrazí analýzy v R vysoce kvalitní dokumentů, sestav, prezentací a řídicí panely.
+[R Markdown](https://rmarkdown.rstudio.com/) je formát dokumentu, který převede analýzy v jazyce R na vysoce kvalitní dokumenty, sestavy, prezentace a řídicí panely.
 
-R Tools pro Visual Studio (RTVS) poskytuje šablony položky R Markdownu, editor podporují (včetně IntelliSense pro R kódu v editoru), možnosti generování souboru a live preview.
+Nástroje R pro Visual Studio (RTVS) obsahuje šablonu položky R Markdown, editor podporují (včetně technologie IntelliSense pro kód jazyka R v editoru), možnosti generování souboru a živá ve verzi preview.
 
-## <a name="using-r-markdown"></a>Pomocí Markdownu R
+## <a name="using-r-markdown"></a>Použití R Markdown
 
 1. Zavřete Visual Studio.
 1. (Pouze jednou) Nainstalujte `pandoc` z [pandoc.org](http://pandoc.org/installing.html).
-1. Restartujte Visual Studio, který by měl vyzvednutí pandoc instalace.
-1. Nainstalujte `knitr` a `rmarkdown` balíčků, které můžete provést z [interaktivních okna](interactive-repl-for-r-in-visual-studio.md):
+1. Restartujte sadu Visual Studio, který by měl instalace pandocu vyzvednutí.
+1. Nainstalujte `knitr` a `rmarkdown` balíčky, které lze provádět z [interaktivní okno](interactive-repl-for-r-in-visual-studio.md):
 
     ```R
     install.packages("knitr")
     install.packages("rmarkdown")
 
     ```
-1. Vytvoření nového souboru Markdownu R pomocí **soubor** > **nový** > **soubor** příkazu v nabídce a výběrem **R**  >  **R Markdownu** ze seznamu. V kontextu projektu, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a vyberte **přidat Markdownu R** (nebo **přidat** > **novou položku** a výběrem **R Markdownu** ze seznamu).
+1. Vytvořit nový soubor R Markdown pomocí **souboru** > **nový** > **souboru** příkaz nabídky a vyberete **R**  >  **R Markdown** ze seznamu. V kontextu projektu, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a vyberte **přidat R Markdown** (nebo **přidat** > **nová položka** a vyberete **R Markdown** ze seznamu).
 
-1. Výchozí hodnotou tohoto nového souboru jsou následující:
+1. Výchozí obsah nového souboru jsou následující:
 
     ~~~markdown
     ---
@@ -65,8 +64,8 @@ R Tools pro Visual Studio (RTVS) poskytuje šablony položky R Markdownu, editor
 
 ## <a name="previews"></a>Preview verze
 
-Visual Studio 2017 verze 15,5 a novější automaticky získávat živém náhledu pro R Markdownu. Chcete-li zapnout automatickou synchronizaci mezi editoru a ve verzi preview, vyberte **R nástroje** > **Markdownu** > **automatické synchronizace** ( **CTRL**+**Shift**+**Y**). Pokud nepoužíváte automatické synchronizace, můžete obnovit pomocí preview **R nástroje** > **Markdownu** > **opětovného načtení R Markdown Preview**.
+Visual Studio 2017 verze 15.5 nebo novější automaticky poskytují dynamický náhled R Markdown. Chcete-li zapnout automatickou synchronizaci mezi editoru a náhled, vyberte **nástroje R** > **Markdownu** > **Automatická synchronizace** ( **CTRL**+**Shift**+**Y**). Pokud nepoužíváte automatické synchronizace, můžete aktualizovat pomocí verze preview **nástroje R** > **Markdownu** > **znovu načíst náhled Markdownu R**.
 
-Můžete také zobrazit náhled souboru ve formátu HTML, PDF, a aplikace Microsoft Word formátuje v editoru pravým tlačítkem myši a výběrem jedné z **Preview** příkazy. Stejné příkazy jsou také k dispozici na **R nástroje** > **Markdownu** nabídky. (V dřívějších verzích sady Visual Studio tyto příkazy se nacházejí na **R nástroje** > **publikovat** nabídky.)
+Můžete také zobrazit náhled souboru ve formátu HTML, PDF, Microsoft Word a formáty a v editoru pravým tlačítkem a výběrem jedné z **ve verzi Preview** příkazy. Stejné příkazy jsou také k dispozici na **nástroje R** > **Markdownu** nabídky. (V dřívějších verzích sady Visual Studio se našly tyto příkazy na **nástroje R** > **publikovat** nabídky.)
 
-![RMarkdown živém náhledu a další příkazy nabídky preview](media/rmarkdown-live-preview.png)
+![Dynamický náhled RMarkdown a dalších příkazů nabídky ve verzi preview](media/rmarkdown-live-preview.png)

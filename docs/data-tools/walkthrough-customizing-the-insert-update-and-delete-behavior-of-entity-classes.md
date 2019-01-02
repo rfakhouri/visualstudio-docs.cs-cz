@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit'
+title: 'Průvodce: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c4512e0defab2d99e2e857c8cb09913b2b521ed8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894074"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení insert, update a chování při odstraňování tříd entit
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Průvodce: Přizpůsobení způsobu chování při vkládání, aktualizacích a odstraňování tříd entit
 
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje vizuální návrhová plocha pro vytváření a úpravu LINQ na třídy SQL (tříd entit), které jsou založené na objektech v databázi. S použitím [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), můžete použít technologii LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated query)](/dotnet/csharp/linq/).
 
@@ -87,7 +86,7 @@ Protože jsou práce s jazykem LINQ na třídy SQL a zobrazení dat ve formulá�
 
 5.  Klikněte na tlačítko **třídy LINQ to SQL** šablonu a zadejte **Northwind.dbml** v **název** pole.
 
-6.  Klikněte na tlačítko **přidat**.
+6.  Klikněte na **Přidat**.
 
      Prázdný LINQ na třídy SQL soubor (**Northwind.dbml**) se přidá do projektu a **O/R Designer** otevře.
 
@@ -104,7 +103,7 @@ Vytvoření LINQ na třídy SQL, které jsou mapovány na databázových tabulek
      Třídu entity s názvem **zákazníka** se vytvoří. Obsahuje vlastnosti, které odpovídají sloupcům v tabulce Zákazníci. Název třídy entity **zákazníka** (není **zákazníkům**) protože představuje jednoho zákazníka z tabulky Zákazníci.
 
     > [!NOTE]
-    > Toto chování přejmenovává se nazývá *pluralizace*. To je možné zapnout nebo vypnout [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md). Další informace najdete v tématu [postup: zapnutí a vypnutí (O/R Designer) pluralizace](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Toto chování přejmenovává se nazývá *pluralizace*. To je možné zapnout nebo vypnout [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md). Další informace najdete v tématu [jak: Zapnutí a vypnutí (O/R Designer) pluralizace](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3.  Na **sestavení** nabídky, klikněte na tlačítko **sestavení UpdatingwithSProcsWalkthrough** k sestavení projektu.
 
@@ -231,7 +230,7 @@ Ve výchozím nastavení toto tlačítko není povoleno a uložit funkce není i
 
 18. Mapování **Original_CustomerID** argument metody pro výraz **CustomerID (původní)** vlastnost třídy.
 
-19. Klikněte na tlačítko **OK**.
+19. Klikněte na **OK**.
 
 > [!NOTE]
 > Ačkoli to není problém pro tento konkrétní návod, je vhodné poznamenat, že technologie LINQ to SQL zpracovává databáze vygenerovala hodnoty automaticky pro identitu (automatické zvyšování čísla), rowguidcol (GUID databáze vygenerovala) a sloupce časového razítka během operace vložení a aktualizace. Databáze vygenerovala hodnoty v jiných typech sloupců neočekávaně způsobí hodnotu null. Na návratové hodnoty generovaných databází, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících akcí: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), nebo [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
@@ -275,6 +274,6 @@ V závislosti na požadavcích aplikace existuje několik kroků, které můžet
 
 - [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metody DataContext](../data-tools/datacontext-methods-o-r-designer.md)
-- [Postupy: přiřazení uložených procedur za účelem aktualizace, vložení a odstranění](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Postupy: Přiřazení uložených procedur za účelem aktualizace, vložení a odstranění](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Dotazy LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

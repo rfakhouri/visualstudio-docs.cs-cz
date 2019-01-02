@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929277"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 
@@ -92,6 +91,6 @@ Modelování úložiště poskytuje mechanismus události, kterou můžete použ
 
 Můžete odebírat některé události ve tvarech. Například může naslouchat kliknutí myší na obrazec. Je nutné napsat kód, který se přihlásí k této události pro každý objekt. Tento kód je možné psát v přepsání InitializeInstanceResources().
 
-Některé události se generují u ShapeFields, které se používají na obrazec nakreslit dekorátory. Příklad najdete v tématu [postupy: zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Některé události se generují u ShapeFields, které se používají na obrazec nakreslit dekorátory. Příklad najdete v tématu [jak: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Tyto události obvykle nedojde v transakci. Pokud chcete provést změny v úložišti, měli byste vytvořit transakci.
