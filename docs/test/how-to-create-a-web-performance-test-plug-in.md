@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f4848fbaed6df9817cd9f0ddf16f388d855f5cd9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c4fb207fc5404c0540324a3d32281db14cc6ac65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829306"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Postupy: vytvoření modulu Plugin pro test výkonnosti webu
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Postupy: Vytvoření modulu Plugin pro test výkonnosti webu
 
 Webového výkonu testy moduly plug-in umožňují izolovat a opakovaně používat kód mimo hlavní deklarativní příkazů v testu výkonnosti webu. Modul plug-in testu výkonnosti webu přizpůsobené nabízí způsob, jak volat nějaký kód při spuštění testu výkonnosti webu. Modul plug-in testu výkonnosti webu je spustit jednou pro každou iteraci testu. Kromě toho pokud přepíšete metodu PreRequest nebo PostRequest v modulu plug-in testu, tyto moduly plug-in požadavku se spustit před nebo po každého požadavku, v uvedeném pořadí.
 
@@ -31,7 +30,7 @@ Můžete vytvořit test výkonnosti webu vlastní modul plug-in odvozením vlast
 Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti webu, který jste nahráli, která umožňuje zapsat minimální část kódu a získat vyšší úroveň kontroly nad testy výkonu webu. Ale také můžete je s kódované testy webového výkonu. Další informace najdete v tématu [generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> Můžete také vytvořit test zatížení moduly plug-in. Zobrazit [postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md).
+> Můžete také vytvořit test zatížení moduly plug-in. Zobrazit [jak: Vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Můžete vytvořit modul plug-in testu výkonnosti webu vlastní
 
@@ -111,7 +110,7 @@ Můžete použít vlastní web výkon testu moduly plug-in s testy výkonnosti w
     > [!WARNING]
     > Vám může se objevit chyba podobná následující při spuštění testu výkonnosti webu nebo zátěžového testu, který používá modul plug-in:
     >
-    > **Požadavek se nezdařil.: výjimky v \<modulu plug-in > události: Nelze načíst soubor nebo sestavení "\<soubor DLL""modulu Plug-in název >, verze =\<n.n.n.n >, jazykovou verzi = neutral, PublicKeyToken = null' nebo některou z jeho závislostí. Systém nemůže najít zadaný soubor.**
+    > **Požadavek se nezdařil: Výjimka v \<modulu plug-in > události: Nelze načíst soubor nebo sestavení "\<soubor DLL""modulu Plug-in název >, verze =\<n.n.n.n >, jazyková verze = neutral, PublicKeyToken = null' nebo některou z jeho závislostí. Systém nemůže najít zadaný soubor.**
     >
     > Důvodem je-li změnit kód na některý z modulů plug-in a vytvořit novou verzi knihovny DLL **(verze = 0.0.0.0)**, ale modul plug-in stále odkazuje původní verzi modulu plug-in. Chcete-li tento problém, postupujte podle těchto kroků:
     >
@@ -177,8 +176,8 @@ namespace SampleRules
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Vytvoření vlastního kódu a modulů Plugin pro zátěžové testy](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Postupy: vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)
+- [Postupy: Vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)
 - [Kód vlastního pravidla extrakce pro test výkonnosti webu](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Kód vlastního ověřovacího pravidla pro test výkonnosti webu](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)
+- [Postupy: Vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)
 - [Generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md)

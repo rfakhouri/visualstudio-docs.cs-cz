@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d50f51fa2bcf43fd5bc299f803c2607b4f3351e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850801"
 ---
-# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Návod: Vytvoření a spuštění zátěžového testu, který obsahuje testy jednotek
+# <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Průvodce: Vytvoření a spuštění zátěžového testu, který obsahuje testy jednotek
 
 V tomto návodu vytvoříte zátěžový test, který obsahuje testy jednotek.
 
@@ -37,13 +36,13 @@ V tomto návodu dokončíte následující úkoly:
 
 -   Spuštění zátěžového testu.
 
--   Postupujte podle pokynů v [návod: vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) k vytvoření jednoduché knihovny tříd C#, která obsahuje webového výkonu a test zatížení projektu s některá testování částí v ní.
+-   Postupujte podle pokynů v [názorný postup: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) k vytvoření jednoduché C# knihovny tříd obsahující projekt webového výkonu a zatížení testovací jednotku na některé testy v ní.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Vytvořte zátěžový test obsahující testování částí pomocí nového Průvodce zátěžovým testem
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Chcete-li spustit Průvodce novým zátěžovým testem
 
-1.  Otevřete bankovní řešení, které jste vytvořili [návod: vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1.  Otevřete bankovní řešení, které jste vytvořili [názorný postup: Vytváření a spouštění testů jednotek pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2.  V **Průzkumníka řešení**, otevřete místní nabídku uzlu bankovní řešení, zvolte **přidat**a klikněte na tlačítko **nový projekt**.
 

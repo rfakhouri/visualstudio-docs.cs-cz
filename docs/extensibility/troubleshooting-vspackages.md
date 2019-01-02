@@ -1,9 +1,6 @@
 ---
 title: Řešení potíží s rozšířením VSPackages | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835968"
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s rozšířením VSPackages
 Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro řešení problémů.  
@@ -53,7 +50,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 5. Vyhledejte v protokolu aktivit.  
   
-    Další informace najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+    Další informace najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
 6. Další informace o výjimky vyvolané z integrovaného vývojového prostředí, klikněte na tlačítko **výjimky** na **ladění** nabídka umožňující výjimky. V **výjimky** dialogové okno Vybrat typy výjimek, které chcete získat další informace.  
   
@@ -92,7 +89,7 @@ Tady jsou běžné problémy, které může mít s vaší VSPackage a tipy pro �
   
 2.  Použití protokolu aktivit.  
   
-     Sledujte chování balíčku VSPackage pomocí zápisu informací do protokolu aktivit se zapsaly klíčové body. Tato technika je užitečná při spuštění v prostředí maloobchodu VSPackage. Další informace najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+     Sledujte chování balíčku VSPackage pomocí zápisu informací do protokolu aktivit se zapsaly klíčové body. Tato technika je užitečná při spuštění v prostředí maloobchodu VSPackage. Další informace najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
 3.  Použití veřejných symbolů.  
   

@@ -1,9 +1,6 @@
 ---
 title: Text značky pomocí starší verze rozhraní API | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866998"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vliv na zobrazení a chování oblast textu. Značky zahrnují zarážky, záložek, podtržení vlnovkou a oblastí jen pro čtení. Text značky jsou v podstatě totéž barevné zvýrazňování syntaxe. Barevné zvýrazňování syntaxe je rychlý způsob, jak komunikovat syntaxi jazyka, který je spojen s oblast textu. Barevné zvýrazňování syntaxe obecně vyžádá, když Windows překreslí obrazovky, když rychlost je důležité. Barevné zvýrazňování syntaxe změní barvu textu. Text značky můžete změnit mnoho dalších vlastností textu. Text značky můžete "float" a použít zvláštní chování a obarvení.  
@@ -32,10 +29,10 @@ Text značky je plovoucí rozsah textu ve vyrovnávací paměti, může mít vli
   
 | Název | Popis |
 | - | - |
-| [Postupy: Přidání standardních textových značek](../extensibility/how-to-add-standard-text-markers.md) | Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor k zobrazení textu. |
-| [Postupy: Implementace chybových značek](../extensibility/how-to-implement-error-markers.md) | Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou. |
-| [Postupy: Vytvoření vlastních textových značek](../extensibility/how-to-create-custom-text-markers.md) | Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu. |
-| [Postupy: Použití textových značek](../extensibility/how-to-use-text-markers.md) | Vysvětluje, jak přidat text značky. |
+| [Postupy: Přidání standardní Text značky](../extensibility/how-to-add-standard-text-markers.md) | Popisuje postup přidání standardní text značky typ poskytovaný modulem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor k zobrazení textu. |
+| [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md) | Popisuje, jak implementovat instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] značky, který se používá k označení chyby pomocí červené podtržení vlnovkou. |
+| [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md) | Popisuje, jak vytvořit a přidat typ značky vlastní text k zobrazení textu. |
+| [Postupy: Použití značek Text](../extensibility/how-to-use-text-markers.md) | Vysvětluje, jak přidat text značky. |
 | [Práce v základní editoru](../extensibility/inside-the-core-editor.md) | Popisuje funkce základní editor a poskytuje podrobné informace o tom, jak přizpůsobit základní editor. |
 | [Funkce editoru](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Popisuje funkce dostupné v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor. |
   

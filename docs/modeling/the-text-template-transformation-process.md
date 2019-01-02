@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f4cadbbf9de2f9f02a8bc95a4f436f399e2052b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908654"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces transformace textových šablon
 Proces transformace textových šablon přijímá jako vstupní soubor textové šablony a vygeneruje nový textový soubor jako výstup. Například textové šablony můžete použít ke generování kódu jazyka Visual Basic nebo C#, nebo můžete vygenerovat zprávu ve formátu HTML.
@@ -25,7 +24,7 @@ Proces transformace textových šablon přijímá jako vstupní soubor textové 
 
  Proces transformace textových šablon se provádí ve dvou krocích. Modul nejprve vytvoří dočasnou třídu, která se nazývá vygenerované třídy transformace. Tato třída obsahuje kód, který je generován direktivy a řídicí bloky. Potom modul zkompiluje a spustí vygenerované třídy transformace pro vytvoření výstupního souboru.
 
-## <a name="components"></a>Součásti
+## <a name="components"></a>Komponenty
 
 |Součást|Popis|Přizpůsobitelné (Ano/Ne)|
 |-|-|-|

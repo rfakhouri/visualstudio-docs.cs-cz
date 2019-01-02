@@ -1,9 +1,7 @@
 ---
 title: Sestavení v nástrojích Visual Studio Tools pro systém Office runtime
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: a992621bc3311fa6dd9ca2703c00aa06d5998494
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838856"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Sestavení v nástrojích Visual Studio Tools pro systém Office runtime
   Když vytvoříte projekt sady Office, Visual Studio automaticky přidá odkazy na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sestavení, které se používají pro zvolený typ projektu a cílové rozhraní .NET Framework projektu. Existují různých sestaveních v rozšířeních Office pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Další informace o rozšířeních sady Office naleznete v tématu [Visual Studio Tools for Office runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -67,5 +65,3 @@ ms.locfileid: "53248108"
 ## <a name="see-also"></a>Viz také:  
  [Visual Studio Tools for Office runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)  
-  
-  

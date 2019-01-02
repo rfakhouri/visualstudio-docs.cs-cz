@@ -8,16 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895477"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio data tools pro C++
 
@@ -25,7 +24,7 @@ Nativní kód C++ často poskytují nejrychlejší výkon při přístupu k zdro
 
 Pro připojení k SQL Database, můžete použít nativní aplikace C++ ovladače rozhraní ODBC a OLE DB a ADO poskytovatele, které jsou součástí Windows. Ty můžete připojit k libovolné databázi, která podporuje těchto rozhraní. Ovladač ODBC je standardem. OLE DB je k dispozici z důvodu zpětné kompatibility. Další informace o těchto technologií ještě používáte dat najdete v tématu [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-Využijte vlastní funkce v systému SQL Server 2005 a novější, použijte [Nativní klient systému SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Nativní klient také obsahuje ovladač ODBC systému SQL Server a SQL Server zprostředkovatele OLE DB v jedné nativní dynamické knihovny (DLL). Tato podpora aplikací rozhraní API nativního kódu (ODBC, Oledb a ADO) pro Microsoft SQL Server. Nativní klient systému SQL Server nainstaluje SQL Server Data Tools. Průvodce programováním je tady: [Nativní klient systému SQL Server programování](/sql/relational-databases/native-client/sql-server-native-client-programming).
+Využijte vlastní funkce v systému SQL Server 2005 a novější, použijte [Nativní klient systému SQL Server](/sql/relational-databases/native-client/sql-server-native-client). Nativní klient také obsahuje ovladač ODBC systému SQL Server a SQL Server zprostředkovatele OLE DB v jedné nativní dynamické knihovny (DLL). Tato podpora aplikací rozhraní API nativního kódu (ODBC, Oledb a ADO) pro Microsoft SQL Server. Nativní klient systému SQL Server nainstaluje SQL Server Data Tools. Průvodce programováním, je zde: [Nativní klient systému SQL Server programování](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Pro připojení na instanci localDB prostřednictvím rozhraní ODBC a jazyku SQL Native Client z aplikace v jazyce C++
 
@@ -41,7 +40,7 @@ Využijte vlastní funkce v systému SQL Server 2005 a novější, použijte [Na
 
    ![SSMS připojit databázi](../data-tools/media/raddata-ssms-attach-database.png)
 
-4. Stáhněte si ukázku Windows SDK rozhraní ODBC a rozbalte ho do nového umístění. Tento příklad ukazuje základní příkazy rozhraní ODBC, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcích v [Microsoft připojení ODBC (Open Database)](/sql/odbc/microsoft-open-database-connectivity-odbc). Při prvním načtení řešení (je ve složce C++), Visual Studio nabídne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na tlačítko **Ano**.
+4. Stáhněte si ukázku Windows SDK rozhraní ODBC a rozbalte ho do nového umístění. Tento příklad ukazuje základní příkazy rozhraní ODBC, které se používají pro připojení k databázi a problém dotazy a příkazy. Další informace o těchto funkcích v [Microsoft připojení ODBC (Open Database)](/sql/odbc/microsoft-open-database-connectivity-odbc). Při prvním načtení řešení (je ve složce C++), Visual Studio nabídne upgrade řešení na aktuální verzi sady Visual Studio. Klikněte na **Ano**.
 
 5. Použití nativního klienta, budete potřebovat jeho *záhlaví* souboru a *lib* souboru. Tyto soubory obsahují funkce a definice specifické pro SQL Server, nad rámec funkcí ODBC definované v sql.h. V **projektu** > **vlastnosti** > **adresáře VC ++**, přidejte adresář include následující:
 

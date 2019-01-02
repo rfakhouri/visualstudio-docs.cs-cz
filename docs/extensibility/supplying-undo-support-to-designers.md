@@ -1,9 +1,6 @@
 ---
 title: Poskytnutí zpět podporu, aby návrháři | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba86f77219329c0e34edecf10aca69e8bedf2226
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eef024c14dfcab515d0205f7e1298020dbd3bd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836293"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Nastavení podpory fáze vrácení zpět v návrháři
 Návrháře, jako jsou editory, obvykle musí podporovat operace vrácení zpět tak, aby uživatelé lze zrušit jejich poslední změny při úpravě prvek kódu.  

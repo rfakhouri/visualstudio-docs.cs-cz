@@ -1,9 +1,6 @@
 ---
 title: Identifikátory GUID a ID nabídek sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906940"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identifikátory GUID a ID sady Visual Studio nabídky
 Tento článek uvádí hodnoty GUID a ID nabídek a skupin v řádku nabídek sady Visual Studio. Tyto hodnoty jsou definovány v *.vsct* soubory, které se instalují jako součást sady Visual Studio SDK. Další informace najdete v tématu [příkazy definované prostředím IDE, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -181,7 +178,7 @@ Tento článek uvádí hodnoty GUID a ID nabídek a skupin v řádku nabídek sa
  U následující hierarchie zobrazuje dílčích nabídek, které jsou spojeny s nabídkami v řádku nabídek sady Visual Studio. Protože nabídce jako jeho nadřazený objekt může mít pouze skupiny, každý podnabídky musí sestup ze skupiny v nabídce, namísto přímo z nabídky. Další informace o vztahu mezi nabídek, skupiny a podnabídek najdete v tématu [přidání podnabídky do nabídky](../../extensibility/adding-a-submenu-to-a-menu.md).  
   
 > [!NOTE]
->  Názvy nabídek na řádku nabídek sady Visual Studio se nezobrazují samostatně v této hierarchii vzhledem k tomu, že lze odvodit z zásady vytváření názvů skupin v integrovaném vývojovém prostředí, následujícím způsobem: *IDG_VS_\<název nabídky\>_\< Název skupiny\>*.  
+>  Názvy nabídek na řádku nabídek sady Visual Studio se nezobrazují samostatně v této hierarchii, vzhledem k tomu, že lze odvodit z zásady vytváření názvů skupin v integrovaném vývojovém prostředí, následujícím způsobem: *IDG_VS_\<název nabídky\>_\<název skupiny\>*.  
   
 |Nadřazená skupina|Podnabídka|Podřízené skupiny|  
 |------------------|-------------|------------------|  

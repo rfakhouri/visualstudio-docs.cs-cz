@@ -1,9 +1,6 @@
 ---
 title: Změny v návrhu projektů Office cílených rozhraní .NET Framework
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a0f18e35cd3bc77e30f62578c5f2527c8f407c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888462"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Změny v návrhu projektů Office cílených na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Počínaje [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio zavádí několik změn v návrhu projektů Office, které se zaměřují [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější. Pokud jste se seznámili s projekty sady Office v předchozích verzích sady Visual Studio, je třeba tyto změny předtím, než vývoj projektů Office cílených těchto verzí rozhraní .NET Framework 4.0 nebo novější. Ve výchozím nastavení cílit na všechny projekty, které vytvoříte pomocí sady Visual Studio 2013 nebo novější rozhraní .NET Framework 4.0 nebo novější.  
@@ -63,5 +60,3 @@ ms.locfileid: "53739481"
  [Migrace řešení Office na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Co je nového ve vývoji Office](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Visual Studio Tools for Office runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Nastavení ladění a vydání konfigurace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.builds
@@ -33,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837755"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Nastavení ladění a vydání konfigurace v sadě Visual Studio
 
@@ -126,4 +124,4 @@ Podrobné informace o nastavení projektu pro konfiguraci ladění v jazyce C# n
 [Nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 [Nastavení projektu pro konfiguraci ladění jazyka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 [Nastavení projektu pro konfiguraci ladění jazyka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)
+[Postupy: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)

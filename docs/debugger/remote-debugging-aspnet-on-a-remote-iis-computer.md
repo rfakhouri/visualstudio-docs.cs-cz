@@ -2,7 +2,6 @@
 title: Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS | Dokumentace Microsoftu
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830830"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v sadě Visual Studio 2017
 Chcete-li ladit aplikaci ASP.NET, která byla nasazena do služby IIS, nainstalovat a spustit nástroje remote tools v počítači, kam jste nasadili aplikaci a potom připojit k vaší běžící aplikaci v sadě Visual Studio.
@@ -189,7 +188,7 @@ Informace o spouštění vzdálený ladicí program jako službu, naleznete v t�
 
     Zarážka by měla být dosažena v sadě Visual Studio.
 
-## <a name="bkmk_openports"></a> Řešení potíží: Otevřete požadované porty ve Windows serveru
+## <a name="bkmk_openports"></a> Řešení potíží: Otevřené požadované porty ve Windows serveru
 
 Ve většině nastavení jsou otevřené požadované porty instalace technologie ASP.NET a vzdálený ladicí program. Ale budete muset ověřit, že jsou otevřené porty.
 

@@ -1,8 +1,6 @@
 ---
-title: Cventerspan – funkce | Microsoft Docs
-ms.custom: ''
+title: Cventerspan – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvEnterSpanVA
@@ -26,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4084ce78d1acaf5a34f95ea88046bf0860efc9ca
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892582"
 ---
 # <a name="cventerspan-function"></a>Cventerspan – funkce
-Označuje začátek nové rozpětí.  
+Označuje začátek toho nové rozpětí.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -108,29 +106,29 @@ HRESULT CvEnterSpanExVA(
  Seznam argumentů.  
   
  `category`  
- Kategorie rozpětí  
+ Kategorie značky span  
   
  `level`  
  Úroveň důležitosti rozpětí.  
   
  `pMarkerSeries`  
- Kontext řady platný značky. Nemůže mít hodnotu NULL.  
+ Platné značky řady kontextu. Nemůže mít hodnotu NULL.  
   
  `pMessage`  
- Formát zprávy řetězec. Nemůže mít hodnotu NULL.  
+ Řetězec formát zprávy. Nemůže mít hodnotu NULL.  
   
  `ppSpan`  
- Adresa proměnné, která bude obsahovat výsledný objekt rozpětí. Adresa nesmí být NULL, proměnná může mít žádnou hodnotu.  
+ Adresa proměnné, která bude obsahovat výsledný objekt značky span. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, pokud zpráva je úspěšně zapsána. Kód chyby v případě, že byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  
   
- **Unicode:** cventerspanw –, cventerspanvw –, cventerspanexw –, cventerspanexvw –  
+ **Unicode:** Cventerspanw – cventerspanexvw – cventerspanvw – cventerspanexw –,  
   
- **ANSI:** cventerspana –, cventerspanva –, cventerspanexa –, cventerspanexvw –  
+ **ANSI:** Cventerspana – cventerspanexvw – cventerspanva – cventerspanexa –,  
   
 ## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

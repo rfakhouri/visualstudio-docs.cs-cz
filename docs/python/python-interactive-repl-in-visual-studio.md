@@ -3,7 +3,6 @@ title: Interaktivní okno Python (REPL)
 description: Použití interaktivního okna (REPL) pro rychlý vývoj kódu Python v sadě Visual Studio.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c3a3a6cd3694a0affa6ca1d5cfabac58b124ec9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835643"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Práce s interaktivní okno Pythonu
 
@@ -36,7 +35,7 @@ Visual Studio má několik režimů REPL Pythonu na výběr:
 
 Tento článek popisuje **standardní** a **ladění** REPL režimy. Informace o režimech IPython, naleznete v tématu [použití Ipythonu REPL](interactive-repl-ipython.md).
 
-Podrobný návod s příklady, včetně interakcí s editoru **Ctrl**+**Enter**, naleznete v tématu [kurzu krok 3: použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
+Podrobný návod s příklady, včetně interakcí s editoru **Ctrl**+**Enter**, naleznete v tématu [kurzu krok 3: Použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
 |   |   |
 |---|---|

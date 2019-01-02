@@ -1,8 +1,6 @@
 ---
-title: 'DA0026: Nadměrný zpracování procesoru jádra čas | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'DA0026: Čas zpracování procesoru jádra nadměrné | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0026
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9043b1dddcacc797c640252691d6bf393189cc4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20abd86d12db44dac1a2b3a7772e90dee1b2721f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855452"
 ---
-# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Nadměrný čas zpracování procesoru jádra
+# <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026: Čas zpracování procesoru jádra nadměrné
 
 |||  
 |-|-|  
@@ -40,4 +38,4 @@ ms.locfileid: "49876604"
  Relativně vysoký podíl času stráveného aplikace při spuštění režimu jádra pravděpodobně vyžadovat další šetření. Aplikace v uživatelském režimu přejde do režimu jádra k provádění vstupně-výstupních operací, počkejte podproces nebo proces synchronizace primitiv, nebo proveďte volání systému. Můžete prozkoumat typy systémových volání aplikace provádí a které funkce, které jsou zodpovědné za je, když vyberete možnost shromažďovat zásobníky volání ukázka podle systémových volání.  
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li prozkoumat typy systémových volání, které vaše aplikace odešle, spusťte profil znovu a vyberte možnost shromažďovat vzorky podle systémových volání. V tématu [jak: Zvolte událostí vzorkování](../profiling/how-to-choose-sampling-events.md) Pokud používáte nástroje pro profilaci zevnitř rozhraní IDE pro další informace. Pokud používáte nástroje pro profilaci z příkazového řádku, najdete v článku **ukázkový možnosti intervalu** část [VSPerfCmd](../profiling/vsperfcmd.md) článek v referenční dokumentace nástrojů příkazového řádku nástrojů pro profilaci sady.
+ Chcete-li prozkoumat typy systémových volání, které vaše aplikace odešle, spusťte profil znovu a vyberte možnost shromažďovat vzorky podle systémových volání. Zobrazit [jak: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md) Pokud používáte nástroje pro profilaci zevnitř rozhraní IDE pro další informace. Pokud používáte nástroje pro profilaci z příkazového řádku, najdete v článku **ukázkový možnosti intervalu** část [VSPerfCmd](../profiling/vsperfcmd.md) článek v referenční dokumentace nástrojů příkazového řádku nástrojů pro profilaci sady.

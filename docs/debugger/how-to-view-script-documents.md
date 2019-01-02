@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: zobrazení dokumentů skriptu | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Zobrazení dokumentů skriptu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,33 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867722"
 ---
 # <a name="how-to-view-script-documents"></a>Postupy: Zobrazení dokumentů skriptu
-V dřívějších verzích [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klientský skript soubory vytvořené ze skriptu server na straně zobrazovaly v okně Průzkumníka skriptu. Okno Průzkumníka skriptu se často skrytá, tak, aby nebyla dostupnost klientský skript vždy zřejmé.  
+V dřívějších verzích [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], skript na straně klienta soubory vygenerované ze skriptu na straně serveru se zobrazily v okně Průzkumník skriptů. Okno Průzkumníka skriptu se často skrytý, aby dostupnosti skriptů na straně klienta nebyl vždy jasné.  
   
- V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], klientský skript soubory generované ze skriptu na straně serveru se zobrazí v Průzkumníku řešení, který se zobrazí ve výchozím nastavení. Okno Průzkumníka skriptu byly odstraněny.  
+ V [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], skript na straně klienta soubory vygenerované ze skriptu na straně serveru se zobrazí v Průzkumníku řešení, který se zobrazí ve výchozím nastavení. V okně Průzkumník skriptů se odstranilo.  
   
- Soubory skriptu na straně klienta jsou viditelná jenom v případě, že jste v režimu ladění nebo v režimu pozastavení. Se objeví v **dokumentů skriptu** uzlu.  
+ Soubory skriptu na straně klienta jsou viditelné pouze v případě, že jsou v režimu ladění nebo v režimu pozastavení. Zobrazí se v **dokumenty skriptu** uzlu.  
   
- Soubory skriptu na straně serveru jsou vždy viditelné. Se objeví v  **\<webu Pathname >** uzlu. Název uzlu vypadá takto: v tomto příkladu: `c:\...\Website2\`  
+ Soubory skriptu na straně serveru jsou vždy viditelné. Zobrazí se v  **\<webu cesta >** uzlu. Název uzlu vypadá podobně jako v tomto příkladu: `c:\...\Website2\`  
   
-### <a name="to-view-a-server-side-script-document"></a>Chcete-li zobrazit dokumentu skript na straně serveru  
+### <a name="to-view-a-server-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně serveru  
   
-1.  V **Průzkumníku řešení**, otevřete  **\<webu Pathname >** uzlu.  
+1.  V **Průzkumníka řešení**, otevřete  **\<webu cesta >** uzlu.  
   
 2.  Poklikejte na soubor skriptu, který chcete zobrazit.  
   
-     Skripty na straně serveru soubor se otevře v okně zdroje.  
+     Soubor skriptu na straně serveru se otevře v okně zdroje.  
   
-### <a name="to-view-a-client-side-script-document"></a>Chcete-li zobrazit skript na straně klienta dokument  
+### <a name="to-view-a-client-side-script-document"></a>Chcete-li zobrazit dokument skriptu na straně klienta  
   
-1.  V **Průzkumníku řešení**, otevřete **dokumentů skriptu** uzlu.  
+1.  V **Průzkumníka řešení**, otevřete **dokumenty skriptu** uzlu.  
   
 2.  Poklikejte na soubor skriptu, který chcete zobrazit.  
   

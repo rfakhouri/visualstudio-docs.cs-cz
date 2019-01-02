@@ -1,8 +1,7 @@
 ---
-title: 'CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně'
+title: 'CA1701: Složených slov prostředku řetězců by měla správně formátováno.'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ResourceStringCompoundWordsShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc558cb9c069c19b545434afe0a851130fdb300
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2cc74bb7d3cc15e593d465a8c8d0d55275954ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841778"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Složených slov prostředku řetězců by měla správně formátováno.
 
 |||
 |-|-|
@@ -34,41 +33,41 @@ ms.locfileid: "31915654"
 
 ## <a name="cause"></a>příčina
 
-Řetězec prostředku obsahuje složené slovo nezdá se být použita správně.
+Zdrojový řetězec obsahuje složené slovo, který zřejmě není správně formátováno.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Jednotlivých slov v řetězec prostředku je rozdělená do tokenů, které jsou založeny na malá a velká písmena. Každá kombinace dvou sousedících tokenů je zkontrolována knihovnou kontroly pravopisu společnosti Microsoft. Je-li kombinace rozpoznána, způsobí slovo porušení pravidla. Příklady složených slov, které způsobí narušení jsou "Kontrolního součtu" a "MultiPart", která by měla být použita jako "Kontrolního součtu" a "Multipart", v uvedeném pořadí. Z důvodu předchozí běžné použití několika výjimkami jsou integrované do pravidla a jsou označeny několik jednoho slova, jako je například "Nástrojů" a "Název", která by měla být použita jako dvě různá slova. V tomto příkladu by být označeny "Nástrojů" a "Název".
+Každé slovo řetězce zdroje je rozděleno na tokeny, které jsou založeny na velká a malá písmena. Každá kombinace dvou sousedících tokenů je zkontrolována knihovnou kontroly pravopisu společnosti Microsoft. Je-li kombinace rozpoznána, způsobí slovo porušení pravidla. Příklady složených slov, které způsobují porušení: "Kontrolního součtu" a "MultiPart", která by měla být malá a velká použita jako "Kontrolního součtu" a "Multipart", v uvedeném pořadí. Z důvodu předchozí běžné použití několik výjimek jsou integrované do pravidla a jsou označeny několik jednotlivá slova, jako je například "Panel nástrojů" a "Název_souboru", který by měl být malá a velká použita jako dvě různá slova. V tomto příkladu by být označený "Panel nástrojů" a "Název_souboru".
 
-Zásady vytváření názvů zadejte obecný vzhled pro knihovny cílené modul common language runtime. Tím se snižuje křivky learning, který je vyžadován pro nové knihovny softwaru a zvyšuje sebejistotu zákazníka, knihovny byla vyvinuta uživatelem s odbornými znalostmi v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak opravit porušení
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Změňte slovo tak, aby je použita správně.
+Změní celé slovo tak, že je správně formátováno.
 
 ## <a name="change-the-dictionary-language"></a>Změnit jazyk slovníku
 
-Ve výchozím nastavení se používá verze Angličtina (en) nástroj pro kontrolu pravopisu. Pokud chcete změnit jazyk pravopisu, můžete to udělat tak přidáním jednu z těchto atributů k vaší *AssemblyInfo.cs* nebo *AssemblyInfo.vb* souboru:
+Ve výchozím nastavení je použít nástroj pro kontrolu pravopisu verze Angličtina (en). Pokud chcete změnit jazyk kontroly pravopisu, může to tak, že přidáte jednu z následujících atributů vaše *AssemblyInfo.cs* nebo *AssemblyInfo.vb* souboru:
 
 - Použití <xref:System.Reflection.AssemblyCultureAttribute> zadat jazykovou verzi, pokud jsou vaše prostředky v satelitní sestavení.
-- Použití <xref:System.Resources.NeutralResourcesLanguageAttribute> k určení *neutrální jazykovou verzi* vašeho sestavení, pokud vaše prostředky jsou ve stejném sestavení jako váš kód.
+- Použití <xref:System.Resources.NeutralResourcesLanguageAttribute> zadat *neutrální jazykovou verzi* vašeho sestavení, pokud jsou vaše prostředky ve stejném sestavení jako svůj kód.
 
 > [!IMPORTANT]
-> Pokud nastavíte jazykovou verzi na jakoukoli jinou hodnotu než jazykovou verzi na základě angličtina, je tato pravidel nástroje Analýza kódu bezobslužně zakázané.
+> Pokud nastavíte jazykovou verzi na jinou hodnotu než jazykovou verzi na základě angličtina, tento pravidel nástroje Analýza kódu je tiše zakázaná.
 
-## <a name="when-to-suppress-warnings"></a>Při potlačení upozornění
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění na toto pravidlo, pokud jsou obě části složené slovo rozpoznáno slovníku a je použít dvě slova.
+Je bezpečné potlačit upozornění tohoto pravidla, je-li obě části složené slovo, které jsou rozpoznány modulem slovníku a cílem je používat dvě slova.
 
-Můžete také přidat složených slov do slovníku pro kontrolu pravopisu. Vlastní slovník nezpůsobí narušení. Další informace najdete v tématu [postupy: přizpůsobení slovníku analýzy kódu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Složených slov můžete také přidat do slovníku pro kontrolu pravopisu. Vlastní slovník nezpůsobí porušení. Další informace najdete v tématu [jak: Přizpůsobení slovníku analýzy kódu](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702: Složených slov by měla správně formátováno.](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709: Identifikátory by měly správně formátováno.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Identifikátory by se měly lišit o více než velikostí písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Konvence pro malá a velká písmena](/dotnet/standard/design-guidelines/capitalization-conventions)
 - [Pokyny pro pojmenování](/dotnet/standard/design-guidelines/naming-guidelines)

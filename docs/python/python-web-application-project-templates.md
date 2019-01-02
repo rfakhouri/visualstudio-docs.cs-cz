@@ -3,7 +3,6 @@ title: Šablony webové aplikace Python
 description: Visual Studio poskytuje šablony pro webové aplikace Python pomocí rozhraní Bottle, Flask a Django; podpora zahrnuje konfigurace ladění a publikování do služby Azure App Service.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850619"
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektů webové aplikace Python
 
@@ -45,7 +44,7 @@ Všechny **prázdné \<framework > webový projekt** šablony vytvořit projekt 
 | --- | --- |
 | **Bottle prázdný webový projekt** | Vygeneruje minimální aplikaci v *app.py* s Domovská stránka `/` a `/hello/<name>` stránky, která vypisuje `<name>` pomocí šablony velmi krátké vložené stránky. |
 | **Prázdné Django webového projektu** | Vytvoří projekt Django se struktura webu Django jádra, ale žádné aplikace Django. Další informace najdete v tématu [šablon Django](python-django-web-application-project-template.md) a [další krok 1 Django](learn-django-in-visual-studio-step-01-project-and-solution.md). |
-| **Webový projekt Flask prázdné** | Vygeneruje minimální aplikaci s jedné "Hello World!" stránka pro `/`. Tato aplikace je podobný výsledek podrobných pokynů v [rychlý start: použití aplikace Visual Studio k vytvoření vaší první webové aplikace Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Viz také [další krok 1 Flask](learn-flask-visual-studio-step-01-project-solution.md).
+| **Webový projekt Flask prázdné** | Vygeneruje minimální aplikaci s jedné "Hello World!" stránka pro `/`. Tato aplikace je podobný výsledek podrobných pokynů v [rychlý start: Pomocí sady Visual Studio k vytvoření vaší první webové aplikace Python](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json). Viz také [další krok 1 Flask](learn-flask-visual-studio-step-01-project-solution.md).
 
 ### <a name="web-group"></a>Skupina webových
 

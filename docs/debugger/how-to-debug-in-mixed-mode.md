@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ladění ve smíšeném režimu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění ve smíšeném režimu | Dokumentace Microsoftu'
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1439dce6930b71e29141031e93175e0a6aaa519c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896055"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Postupy: ladění ve smíšeném režimu (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Postupy: Ladění ve smíšeném režimu (C#, C++, Visual Basic)
 
 Následující postupy popisují, jak povolit ladění spravovaného a nativního kódu společně, označované také jako pracující v kombinovaném režimu ladění. Existují dva scénáře ladění ve smíšeném režimu:
 
@@ -36,7 +34,7 @@ Následující postupy popisují, jak povolit ladění spravovaného a nativníh
 
 Můžete povolit spravované i nativní ladicí programy ve volání aplikace projektu **vlastnost** stránky. Nastavení se liší mezi nativními a spravovanými aplikacemi.
 
-Pokud nemáte přístup k projektu volání aplikace, můžete ladit knihovnu DLL z projektu knihovny DLL. Kombinovaný režim ladění projektu knihovny DLL nepotřebujete. Další informace najdete v tématu [postupy: ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md).
+Pokud nemáte přístup k projektu volání aplikace, můžete ladit knihovnu DLL z projektu knihovny DLL. Kombinovaný režim ladění projektu knihovny DLL nepotřebujete. Další informace najdete v tématu [jak: Ladění z projektu knihovny DLL](../debugger/how-to-debug-from-a-dll-project.md).
 
 > [!NOTE]
 > Dialogová okna a příkazy, které vidíte mohou lišit od těch v tomto článku, v závislosti na edici nebo nastavení sady Visual Studio. Chcete-li změnit nastavení, zvolte **nástroje** > **nastavení importu a exportu**. Další informace najdete v tématu [Resetovat nastavení](../ide/environment-settings.md#reset-settings).

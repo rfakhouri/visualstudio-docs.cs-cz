@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3558e263cd8f2c359109298bf6069d408edbf7f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850879"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nepojmenovávejte hodnoty výčtu &#39;Reserved&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +68,3 @@ ms.locfileid: "49897989"
  [CA1008: Výčty by měly mít nulovou hodnotu](../code-quality/ca1008-enums-should-have-zero-value.md)
 
  [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-
-
-

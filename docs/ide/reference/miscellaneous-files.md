@@ -2,7 +2,6 @@
 title: Ostatní soubory
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.newfile
@@ -22,35 +21,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0241f1e918b4c0022106059b0466a15559f2e84
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0d764cea7992a9833bd8bddde8432388aebbc994
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867157"
 ---
 # <a name="miscellaneous-files"></a>Ostatní soubory
-Můžete chtít použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editory pracovat nezávisle na soubory z projektu nebo řešení. Při řešení otevřené, můžete otevřít a upravit soubory bez jejich přidáním do řešení nebo do projektu. Soubory, které chcete pracovat nezávisle z kontejnerů se nazývají různé soubory. Ostatní soubory jsou externí vzhledem k řešení a projekty, nejsou zahrnuty v sestavení a nemůže být součástí řešení ve správě zdrojového kódu.
+Můžete chtít použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editory pracovat nezávisle na soubory z projektu nebo řešení. Když máte řešení otevřené, můžete otevřít a upravit soubory bez jejich přidání do řešení nebo projektu. Soubory, které chcete pracovat s nezávisle na kontejnery se nazývají různé soubory. Různé soubory jsou externí vzhledem k řešení a projektů, nejsou zahrnuty v sestavení a nemůže být součástí řešení pod správou zdrojových kódů.
 
- Otevírání souborů nezávisle z kontejneru je vhodné pro celou řadu důvodů. Můžete mít soubor, který chcete zobrazit při vývoji řešení pro projekt ale není nezbytný pro vývoj řešení. Běžné mezi příklady patří vývoj poznámky nebo pokyny, schéma databáze a klipů kódu. Kromě toho můžete chtít vytvořit samostatný soubor.
+ Otevírání souborů nezávisle z kontejneru je užitečné pro celou řadu důvodů. Můžete mít soubor, který chcete zobrazit při vývoji řešení založené na projektu, ale není celočíselný k vývoji tohoto řešení. Běžné příklady vývojové poznámky nebo pokynů, schéma databáze a klipů kódu. Kromě toho můžete vytvořit samostatný soubor.
 
- ![Řešení pro projekty](../../ide/reference/media/projects_solutions_misc.gif)
+ ![Projekty řešení](../../ide/reference/media/projects_solutions_misc.gif)
 
- Průzkumník řešení může zobrazit složku různé soubory pro soubory, pokud jsou povolené možnosti složky. Možnosti můžete nastavit [dokumenty, prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md). Když zavřete soubor různé, není přidružený žádné konkrétní řešení nebo produktu project Pokud možnost je povolen také pro tento.
+ Průzkumník řešení zobrazíte složku různé soubory pro soubory, když jsou povolené možnosti pro složku. Možnosti můžete nastavit [dokumenty, prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md). Po zavření souboru různé není přidružené žádné konkrétní řešení nebo projektu, pokud možnost není povolena pro, který také.
 
- Složka pro různé soubory představuje soubory jako odkazy. I když tato složka není součástí řešení, když otevřete řešení, některé nebo všechny ostatní soubory, které byly otevřeny při posledním zavření řešení jsou znovu otevřít, v závislosti na nastavení pro danou složku.
+ Ve složce ostatní soubory představuje soubory jako odkazy. I když tato složka není součástí řešení, když otevřete řešení, některé nebo všechny ostatní soubory, které byly otevřeny při posledním zavření řešení jsou znovu otevřít, v závislosti na nastavení pro složku.
 
 > [!NOTE]
-> Některé soubory, které nejsou uvedeny ve složce různé soubory jsou .doc soubory a soubory, které nelze změnit v prostředí IDE, jako jsou soubory .zip. Prostředí IDE nebude sledovat soubory, které můžete upravit pouze pomocí externího editoru.
+> Některé soubory, které nejsou uvedeny ve složce ostatní soubory jsou soubory, které nelze upravovat v rámci rozhraní IDE, jako jsou soubory ZIP a DOC soubory. Integrované vývojové prostředí nebude sledovat soubory, které lze upravovat pouze prostřednictvím externího editoru.
 
 
-## <a name="commands-available-in-the-ide"></a>Příkazy, které jsou k dispozici v prostředí IDE
- V nabídkách, panely nástrojů a příkazy obsahují změnu na základě formátu souboru otevřete. Když otevřete textový soubor, například zobrazí panel nástrojů textovém editoru a jeho příkazy jsou k dispozici. Pokud pak otevřít soubor schématu XML, zobrazí se panel nástrojů schématu XML. Při úpravách schématu XML, nejsou k dispozici příkazy textového editoru panelu nástrojů (nebo samotný panel nástrojů). Schéma XML je aktivní okno a jako takový má kontext aktuálního výběru. Při přepínání mezi soubor projektu a soubor různé zmizí všechny příkazy související s projektem a zobrazí pouze ty, které jsou přímo souvisí s různým souboru.
+## <a name="commands-available-in-the-ide"></a>Příkazy, které jsou k dispozici v integrovaném vývojovém prostředí
+ Nabídky, panely nástrojů a příkazy obsahují mění v závislosti na formát souboru je otevřít. Když otevřete textový soubor, například se zobrazí panelu nástrojů textového editoru a jeho příkazy jsou k dispozici. Když potom otevřete soubor schématu XML, zobrazí se panel nástrojů schématu XML. Při úpravách schématu XML, nejsou k dispozici příkazy nástrojů textového editoru (nebo na panelu nástrojů, samotné). Schéma XML je aktivní okno a v důsledku toho se kontext aktuálního výběru. Při přepínání mezi soubor projektu a soubor různé všechny příkazy související s projektem zmizí a zobrazí pouze ty, které jsou přímo souvisí s různé souboru.
 
 ## <a name="folder-display-options"></a>Možnosti zobrazení složky
- Možnosti zobrazení pro různé složky můžete nastavit tak, aby složka se zobrazí, i když nejsou otevřené žádné různé soubory. Soubor řešení trvale nespravuje seznam různé soubory. Používá volitelnou funkci, která umožňuje mějte na paměti, uživatelská naposledy použité (naposledy použitých) seznam souborů.
+ Možnosti zobrazení pro různé složky můžete nastavit tak, aby složka se zobrazí i v případě, že všechny ostatní soubory ještě nebyl otevřen. Soubor řešení nedokáže spravovat trvale seznam různých souborů. Používá volitelná funkce, které umožňuje mějte na paměti na uživatele naposledy použité (MRU) seznam souborů.
 
 ## <a name="see-also"></a>Viz také
 
-- [Projekty a řešení](../../ide/solutions-and-projects-in-visual-studio.md)
-- [Dokumenty, prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md)
+- [Řešení a projekty](../../ide/solutions-and-projects-in-visual-studio.md)
+- [Dokumenty, Prostředí, dialogové okno Možnosti](../../ide/reference/documents-environment-options-dialog-box.md)

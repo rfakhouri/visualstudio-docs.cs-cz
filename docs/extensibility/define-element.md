@@ -1,9 +1,6 @@
 ---
 title: Definování elementu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Define
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 69177b035ee8e0c162a629873110df9f7ec7917f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889148"
 ---
 # <a name="define-element"></a>Define – element
 Definuje symbol dvojice název a hodnotu. Tento symbol lze vyhodnotit podmíněné atributy. Další informace najdete v tématu [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md). Viz také [Symbols – element](../extensibility/symbols-element.md).  
@@ -37,8 +34,8 @@ Definuje symbol dvojice název a hodnotu. Tento symbol lze vyhodnotit podmíněn
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|name|Požadováno. Název symbolu:<br /><br /> název = "Režim"|  
-|value|Požadováno. Hodnota symbolu:<br /><br /> Hodnota = "Standard"|  
+|name|Povinný parametr. Název symbolu:<br /><br /> název = "Režim"|  
+|value|Povinný parametr. Hodnota symbolu:<br /><br /> Hodnota = "Standard"|  
 |Podmínka|Volitelné. Další informace najdete v tématu [podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Podřízené prvky  

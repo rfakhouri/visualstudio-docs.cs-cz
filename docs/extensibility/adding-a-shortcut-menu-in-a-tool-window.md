@@ -1,9 +1,6 @@
 ---
 title: Přidání místní nabídky v okně nástroje | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909798"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Přidat místní nabídku v panelu nástrojů
 Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka je nabídka, která se zobrazí, když uživatel klepne pravým tlačítkem na tlačítko, textového pole nebo pozadí okna. Příkazy v místní nabídce se chová stejně jako příkazy na jiné nabídky nebo panely nástrojů. Pro podporu místní nabídky, zadejte ho *.vsct* souborů a zobrazit je v reakci na klikněte pravým tlačítkem myši.  
@@ -119,10 +116,10 @@ Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka j
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      Jedná se stejným ID příkazů, které jsou definovány v sekci symboly *ShortcutMenuPackage.vsct* souboru. Skupinu kontextu zde není obsažena vzhledem k tomu, že se vyžaduje jenom v *.vsct* souboru.  
@@ -211,7 +208,7 @@ Tento názorný postup vloží nabídku v panelu nástrojů. Místní nabídka j
 7.  V *ShortcutMenuControl.xaml.cs*, přidejte zástupnou proceduru pro obslužnou rutinu události.  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Programové přidání záhlaví a zápatí do dokumentů'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d6baf57f8b34f6dc591a8e1a131bd665671322e9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848451"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Postupy: Programové přidání záhlaví a zápatí do dokumentů
   Můžete přidat text záhlaví a zápatí v dokumentu s použitím <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> vlastnost a <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Section>. Každá část dokumentu obsahuje tři záhlaví a zápatí:  
@@ -76,4 +73,3 @@ ms.locfileid: "53803373"
  [Postupy: Vytváření nových dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-create-new-documents.md)   
  [Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
  [Postupy: Procházení nalezených položek v dokumentech prostřednictvím kódu programu smyčky](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
-   

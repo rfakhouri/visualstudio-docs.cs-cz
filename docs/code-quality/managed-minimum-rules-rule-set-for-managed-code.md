@@ -1,8 +1,7 @@
 ---
-title: Pro spravovaný kód sada pravidel spravovaná minimální pravidla
+title: Sada pravidel Spravovaná minimální pravidla pro spravovaný kód
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 44a50c54-8dd3-42b2-8387-532a150e5a6c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf05f4787cbd393173380be8123657abeddc0cd5
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 56d8528a5a419eb23b1192ef265f70ea536cfe48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890440"
 ---
-# <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Pro spravovaný kód sada pravidel spravovaná minimální pravidla
+# <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Sada pravidel Spravovaná minimální pravidla pro spravovaný kód
 
 Spravovaná minimální pravidla se soustředí na nejdůležitější problémy v kódu, včetně možných bezpečnostních děr, selhání aplikace a jiných důležitých chyb logiky a návrhu. Zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše projekty.
 

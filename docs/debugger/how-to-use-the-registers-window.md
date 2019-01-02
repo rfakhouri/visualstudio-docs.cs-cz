@@ -2,7 +2,6 @@
 title: Zobrazení hodnoty registru v ladicím programu | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,25 +24,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867576"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Zobrazení hodnoty registru v okně registr (C#, C++, Visual Basic, F#)
 
-**Zaregistruje** okně se zobrazí obsah registru během ladění sady Visual Studio. Podrobný úvod ke koncepci registry a **zaregistruje** okna, naleznete v tématu [základní informace o ladění: okno registrů](../debugger/debugging-basics-registers-window.md).
+**Zaregistruje** okně se zobrazí obsah registru během ladění sady Visual Studio. Podrobný úvod ke koncepci registry a **zaregistruje** okna, naleznete v tématu [základní informace o ladění: Registr – okno](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Informace registru není k dispozici pro skript nebo SQL.
 
 Během ladění, zaregistrujte změnu hodnoty jako kód spustí ve vaší aplikaci. Hodnoty, které se změnily nedávno zobrazí červeně **zaregistruje** okna.
 
-K odebrání nepotřebných prvků, **zaregistruje** okno uspořádá registry do skupiny, které se liší podle platformy a procesor typu. Můžete zobrazit nebo skrytí nabídky registrovat skupiny. Další informace najdete v tématu [postupy: zobrazení a skrytí nabídky registrovat skupiny](../debugger/how-to-display-and-hide-register-groups.md).
+K odebrání nepotřebných prvků, **zaregistruje** okno uspořádá registry do skupiny, které se liší podle platformy a procesor typu. Můžete zobrazit nebo skrytí nabídky registrovat skupiny. Další informace najdete v tématu [jak: Zobrazení a skrytí nabídky registrovat skupiny](../debugger/how-to-display-and-hide-register-groups.md).
 
-Můžete upravit hodnot registru. Další informace najdete v tématu [postupy: Úprava hodnoty registru](../debugger/how-to-edit-a-register-value.md).
+Můžete upravit hodnot registru. Další informace najdete v tématu [jak: Úprava hodnoty registru](../debugger/how-to-edit-a-register-value.md).
 
 **Chcete-li otevřít okno registrů**
 
@@ -56,5 +55,5 @@ Můžete upravit hodnot registru. Další informace najdete v tématu [postupy: 
 
 ### <a name="see-also"></a>Viz také:
 
-- [Základní informace o ladění: okno registrů](../debugger/debugging-basics-registers-window.md)
+- [Základní informace o ladění: Registr – okno](../debugger/debugging-basics-registers-window.md)
 - [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)

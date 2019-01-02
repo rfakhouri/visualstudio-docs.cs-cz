@@ -2,7 +2,6 @@
 title: Dynamické symbolické spuštění | Nástroj pro testování Microsoft IntelliTest Developer
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834669"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Vstupní generování pomocí dynamické symbolické spuštění
 
-IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu. Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu. Analýza je přírůstkové proces. Zpřesnění predikát **Otázka: mohu -> {true, false}** přes formální vstupní parametry testu **můžu**. **q** představuje sadu chování, které již IntelliTest sledoval. Na začátku **q: = false**, protože nic ještě pozorováno.
+IntelliTest generuje vstupy pro [parametrizované testy částí](test-generation.md#parameterized-unit-testing) díky analýze podmíněného vytváření větve v programu. Testovací vstupy jsou zvolili podle toho, jestli můžete aktivovat nové chování větvení programu. Analýza je přírůstkové proces. Zpřesnění predikát **dotaz: Můžu -> {true, false}** přes formální vstupní parametry testu **můžu**. **q** představuje sadu chování, které již IntelliTest sledoval. Na začátku **q: = false**, protože nic ještě pozorováno.
 
 Kroky smyčky jsou:
 
@@ -29,7 +28,7 @@ Kroky smyčky jsou:
 
 1. IntelliTest spustí test s vybraným vstup **můžu**a sleduje spuštění testu a testovaném programu.
 
-1. Během provádění program přebere konkrétní cestu, která je určená podmínkových větví program. Sada všechny podmínky, které určují, provádění se nazývá *podmínka cesty*napsaných jako predikát **p: můžu -> {true, false}** přes formální vstupní parametry. IntelliTest vypočítá reprezentace Tento predikát.
+1. Během provádění program přebere konkrétní cestu, která je určená podmínkových větví program. Je volána sada všechny podmínky k určení provádění *podmínka cesty*napsaných jako predikát **p: Můžu -> {true, false}** přes formální vstupní parametry. IntelliTest vypočítá reprezentace Tento predikát.
 
 1. IntelliTest sady **q: = (q nebo p)**. Jinými slovy, zaznamenává skutečnost, že zaznamenal cesty představované **p**.
 

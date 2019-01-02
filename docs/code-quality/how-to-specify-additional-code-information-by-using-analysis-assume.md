@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: určení informací další kód pomocí _Analysis_assume'
+title: 'Postupy: Určení dalších informací o kódu pomocí funkce _Analysis_assume'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Analysis_assume
@@ -14,27 +13,27 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8102bbc790019490c4dc2a2ccbfab7d8c33981
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 17e25ace1da6cad9fcdc129b6c6f517c39c9c103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845075"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Postupy: určení informací další kód pomocí _Analysis_assume
-Můžete zadat pomocné parametry nástroj pro analýzu kódu pro C/C++ kód, který bude pomůže procesu analýzy a snížit upozornění. Pokud chcete zadat další informace, použijte následující funkce:
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Postupy: Určení dalších informací o kódu pomocí funkce _Analysis_assume
+Můžete zadat informace pro nástroj pro analýzu kódu pro kód C/C++, který pomůže proces analýzy a snížit upozornění. Na další informace, použijte následující funkce:
 
  `_Analysis_assume(`  `expr`  `)`
 
- `expr` -libovolný výraz, který se předpokládá, že vyhodnotit na hodnotu true.
+ `expr` -libovolný výraz, který předpokládá, že je vyhodnocen na hodnotu true.
 
- Nástroj pro analýzu kódu předpokládá, že je hodnota true, v okamžiku, kdy funkce se zobrazí a zůstane hodnotu true, dokud je změnit výraz, například v podle přiřazení do proměnné, podmínky reprezentována výrazem.
+ Nástroj pro analýzu kódu předpokládá, že je reprezentována výrazem podmínka pravdivá v místě, kde funkce se zobrazí a bude platit pořád, dokud je změněn výrazu, například v přiřazením do proměnné.
 
 > [!NOTE]
->  `_Analysis_assume` Optimalizace kódu neovlivní. Mimo nástroj pro analýzu kódu `_Analysis_assume` je definován jako no-op.
+>  `_Analysis_assume` nemá žádný vliv optimalizace kódu. Mimo nástroj pro analýzu kódu `_Analysis_assume` je definován jako no-op.
 
 ## <a name="example"></a>Příklad
- Následující kód používá `_Analysis_assume` opravit upozornění analýzy kódu [C6388](../code-quality/c6388.md):
+ Následující kód používá `_Analysis_assume` Chcete-li opravit toto upozornění analýzy kódu [C6388](../code-quality/c6388.md):
 
 ```
 #include<windows.h>

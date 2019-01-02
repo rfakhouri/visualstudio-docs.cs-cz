@@ -1,9 +1,6 @@
 ---
 title: Řešení potíží s balení a nasazení SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 46cd388079db9d7869bcae733c6baef33c07a212
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: a12e24ea0db662931651feb3031ec0da71926f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878702"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Řešení potíží s balení a nasazení SharePoint
   Toto téma popisuje různé problémy, které se mohou vyskytnout po zabalení a nasazení řešení služby SharePoint.
@@ -54,7 +51,7 @@ ms.locfileid: "53805130"
 |-----------|-----------------|
 |Automatické|Detekuje kolize a řeší konflikty automaticky.|
 |Výzva|Detekuje kolize a ohlásí je vývojáři před řešením konfliktů.|
-|Žádné|Nemůže zjistit kolize.|
+|Žádná|Nemůže zjistit kolize.|
 
 ## <a name="differences-between-f5-deployment"></a>Rozdíly mezi nasazením pomocí klávesy F5
  Při použití [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] k nasazení projektu služby SharePoint na místní server SharePoint pro testování a ladění, existují některé další kroky, které provádí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].

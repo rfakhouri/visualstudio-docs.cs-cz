@@ -1,8 +1,6 @@
 ---
-title: Historie pixelů grafiky | Microsoft Docs
-ms.custom: ''
+title: Historie pixelů grafiky | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
@@ -12,70 +10,70 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e0302e4b245a4fbf94d0eb49850101c404cd8a2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5390ef773d913ada7ddff68310608c300280675a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879277"
 ---
 # <a name="graphics-pixel-history"></a>Historie pixelů grafiky
-Okno historie pixelů grafiky ve Visual Studio Graphics Analyzer vám pomůže pochopit, jak je konkrétní pixelů ovlivňován Direct3D – události, které nastaly během rámce hry nebo aplikace.  
+Okno historie pixelů grafiky v analyzátoru grafiky sady Visual Studio vám pomůže pochopit, jak je ovlivněna konkrétní pixel událostmi rozhraní Direct3D, ke kterým dochází při snímku hře nebo aplikaci.  
   
- Toto je okno historie pixelu:  
+ Toto je v okně historie pixelů:  
   
- ![Pixel, s třemi Direct3D – události v historii. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Pixel se tři události rozhraní Direct3D v historii. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
-## <a name="understanding-the-pixel-history-window"></a>Principy okno historie pixelu  
- Pomocí historie pixelů, můžete analyzovat, jak je konkrétní pixelů cíle vykreslení ovlivňován Direct3D – události během rámce. Lze přesně určit vykreslování problém pro konkrétní Direct3D – události, i když následující události – nebo následné primitiv v stejné události – nadále změnit je poslední barva hodnota. Například mohou být pixel vykresluje nesprávně a pak zakódován o jiné, poloprůhledné bod, takže jejich barvy jsou obsahuje tyto údaje společně framebuffer. Tento druh problému by bylo obtížné diagnostikovat, jestli jste měli pouze poslední obsah na cílovou vykreslení vás.  
+## <a name="understanding-the-pixel-history-window"></a>Principy okna Historie pixelů  
+ S využitím historie pixelů, můžete analyzovat, jak konkrétní pixel cíle vykreslování je ovlivněna událostmi rozhraní Direct3D průběhu rámce. Můžete identifikovat problém vykreslování na určité události rozhraní Direct3D, i když následující události – nebo dalších primitivních elementů v stejnou událost – budou stále měnit hodnotu konečnou barvu pixelu na. Pixel například může být vykreslen nesprávně a potom zakryto jiný, poloprůhledného pixel, tak, aby jejich barvy jsou prolnuty společně v framebuffer. Tento druh problému by bylo obtížné zjistit, jestli máte pouze konečný obsah cíl vykreslování a provede vás.  
   
- V okně historie pixelu zobrazí úplnou historii jeden bod v průběhu vybraného rámce. **Konečné vyrovnávací paměť snímku** v horní části okna zobrazí barvu, která je zapsán do framebuffer na konci rámečku, společně s další informace o pixelů například rámce, který pochází z a jeho obrazovky souřadnice. Tato oblast obsahuje také **vykreslení Alpha** zaškrtávací políčko. Když toto políčko zaškrtnuto, **konečné vyrovnávací paměť snímku** barvy a prostřední barvu hodnoty jsou zobrazeny s průhlednost přes šachovnicový vzor. Pokud je zaškrtnutí políčka zrušeno, alfa kanálu hodnot barva ignorována.  
+ V okně historie pixelů se zobrazí veškeré jeho historie pixelů v průběhu vybraného snímku. **Finální vyrovnávací paměť snímku** v horní části okna se zobrazí barva, která jsou zapsána do framebuffer na konci rámce, společně s další informace o pixelu, jako je například rámce, který pochází z a jeho obrazovka souřadnice. Tato oblast také obsahuje **vykreslit alfa** zaškrtávací políčko. Když toto políčko zaškrtnuto, **konečné Snímková vyrovnávací paměť** barvu a prostřední barvu hodnoty jsou zobrazeny s transparentnosti přes šachovnicový vzor. Pokud políčko není zaškrtnuto, alfa kanál barevných se ignoruje.  
   
- Dolní části okna zobrazí události, které měl možnost vliv na barvu pixelů, společně s **počáteční** a **konečné** pseudo události, které představují hodnoty počáteční a finální barev pixelů v framebuffer. Hodnota počáteční barvu je dáno první událost, která změnit barvu pixel (obvykle `Clear` událostí). Jeden bod vždy má tyto dvě pseudo události v historii, i v případě, že žádné další události vliv na jeho. Při další události, měl možnost mít vliv pixel, jsou zobrazeny mezi **počáteční** a **konečné** události. Události můžete rozbalit a zobrazit podrobnosti. Pro jednoduché události například ty, které vymazat cíl vykreslení efekt události je právě hodnoty barvy. Složitější událostmi, jako je například volání kreslení vygenerovat jeden nebo více primitivních elementů, které může přispět k barvu pixelech.  
+ Dolní části okna se zobrazí události, které využili příležitost dobře se ovlivní barvu pixelu, spolu s **počáteční** a **konečné** pseudo události, které představují hodnoty počáteční a konečné barvy pixel v framebuffer. Počáteční barva hodnotu Určuje první událost, která se změnila barvu pixelu (obvykle `Clear` událostí). Pixel vždy má tyto dvě pseudo události v historii, i v případě, že to vliv na žádné události. Při další události využili příležitost dobře se ovlivnit je pixel, se zobrazí mezi **počáteční** a **konečné** události. Události lze rozbalit a zobrazit jeho podrobnosti. Pro jednoduché události jako je ta, která vymažou cíl vykreslování efekt události je právě hodnotu barvy. Složitější události, například volání draw generovat jednu nebo více primitiv, které může přispět k barvu pixelu.  
   
- Základní prvky, které byly vykreslovat událost jsou identifikovány jejich primitivní typ a index, společně s celkový počet primitivní pro objekt. Například identifikátor jako **trojúhelník (1456) (6214)** znamená, že primitivní odpovídá 1456th trojúhelníček v objektu, který se skládá z 6214 trojúhelníčky. Nalevo od každého primitivní identifikátor je ikonu, která shrnuje vliv primitivní na pixelech. Základní prvky, které ovlivňují barev pixelů jsou reprezentované pomocí zaokrouhlené obdélníku, která je vyplněno barvou výsledek. Základní prvky, které jsou vyloučené z mají vliv na barvu pixelů jsou reprezentované pomocí ikony, které určují z důvodu, aby se vyloučila pixelech. Tyto ikony jsou popsané v části [primitivní vyloučení](#exclusion) dále v tomto článku.  
+ Primitiva, které byly vykreslené události jsou označeny jejich primitivní typ a index, spolu s celkový počtem primitivní pro objekt. Například identifikátor jako **trojúhelník (1456) (6214)** znamená, že odpovídá 1456th trojúhelník v objektu, který se skládá z 6214 trojúhelníky primitivní vlastnost. Nalevo od každého primitivního identifikátor je ikona, která shrnuje vliv primitivní vlastnost na obrazového bodu. Primitiva, které ovlivní barvu pixelu jsou reprezentovány zakulacený obdélník, který je vyplněn barvou výsledek. Primitiva, které jsou vyloučené z efektu barvu pixelu jsou reprezentované pomocí ikony označující důvod, je pixel byl vyloučen. Tyto ikony jsou popsány v části [primitivní vyloučení](#exclusion) dále v tomto článku.  
   
- Můžete rozbalit každý primitivní zjistit, jak byl výstup shaderu pixelů sloučit s existující barev pixelů a vytvoření barev výsledek. Odsud můžete také zkontrolovat nebo ladění kódu shaderu pixelů, který je spojen s primitivní, a můžete dále rozšířit uzlu vrchol shaderu Prozkoumat shaderu vrchol vstup.  
+ Můžete rozbalit každý primitivní prozkoumat, jak se výstup pixel shaderu sloučeny s existující barva pixel a vytvoření výsledku barev. Odsud můžete také prozkoumat nebo ladit kód pixel shader, který je spojen s primitivní vlastnost, a můžete dále rozšířit uzlu shader vrcholu prozkoumat shader vrcholu vstup.  
   
 ###  <a name="exclusion"></a> Primitivní vyloučení  
- Pokud na primitivní je vyloučen z ovlivnění barev pixelů, vyloučení mohlo dojít z různých důvodů. Každý důvod je reprezentována ikonu, která je popsaná v této tabulce:  
+ Pokud jednoduchého typu je vyloučen z by to ovlivnilo barva pixel, vyloučení může dojít k různých důvodů. Každý důvod je reprezentován ikonou, která je popsaná v této tabulce:  
   
-|Ikona|Důvod k vyloučení|  
+|Ikona|Důvod pro vyloučení|  
 |----------|--------------------------|  
-|![Ikona selhání testu hloubka. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Pixel se vyloučilo, protože se nepovedlo hloubka test.|  
-|![Ikona selhání testu Nůžkovité. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Pixel se vyloučilo, protože se jí nepovedlo Nůžkovité test.|  
-|![Ikona selhání testu vzorníku. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Pixel se vyloučilo, protože se nepovedlo vzorníku test.|  
+|![Hloubka ikona selhání testu. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Je pixel byl vyloučen, protože se neprošel testem hloubky.|  
+|![Vystřihovací ikona selhání testu. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Je pixel byl vyloučen, protože se neprošel testem vystřihování.|  
+|![Ikona selhání testu šablony hloubky. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Je pixel byl vyloučen, protože se neprošel testem vzorníku.|  
   
-### <a name="draw-call-exclusion"></a>Kreslení volání vyloučení  
- Pokud všechny primitiv při kreslení volání jsou vyloučeny z ovlivňující cíl vykreslení, protože jejich selhání testu, volání kreslení nelze rozšířit a která odpovídá důvod pro vyloučení, zobrazí se ikona vedle sebe. Důvody pro vyloučení kreslení volání připomínají důvody pro primitivní vyloučení, a jejich ikony jsou podobné.  
+### <a name="draw-call-exclusion"></a>Vyloučení volání příkazu pro vykreslení  
+ Pokud všechny primitiv při kreslení volání jsou vyloučeny z by to ovlivnilo cíle vykreslování, protože jejich selhání testu, pak volání draw nelze rozšířit a zobrazí se vedle sebe ikonu, která odpovídá důvod pro vyloučení. Důvody pro vyloučení volání draw se podobají důvody pro primitivní vyloučení a jejich ikony jsou podobné.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Zobrazení a ladění kódu shaderu  
- Můžete zkontrolovat a ladění kódu pro vrchol, trupu, domény, geometry a pixelů shadery pomocí ovládacích prvků níže primitivní, který je spojen s shaderu.  
+ Můžete prozkoumat a ladění kódu pro vrchol, trupu, domény, geometrie a pixel shadery pomocí ovládacích prvků dole primitivní hodnota, která je přidružená k shaderu.  
   
 ##### <a name="to-view-a-shaders-source-code"></a>Chcete-li zobrazit zdrojový kód shaderu  
   
-1.  V **historie pixelů grafiky** okně Najít kreslení volání, která odpovídá shaderu chcete prozkoumat a rozbalte ho.  
+1.  V **historie pixelů grafiky** okně vyhledejte volání draw, která odpovídá shaderu chcete prozkoumat a rozbalte ho.  
   
-2.  V části kreslení pomocí zavolat právě rozšířit Primitivum, které ukazuje potíže, které vás zajímají vyberte a rozbalte ho.  
+2.  V části draw vám stačí rozbalit, vyberte jednoduchého typu, který ukazuje problém, který vás zajímá a rozbalte ho.  
   
-3.  V části primitivní, co vás zajímá, pomocí následujícího odkazu název shaderu – například pomocí následujícího odkazu **obj:30 vrchol shaderu** zobrazíte zdrojový kód shaderu vrchol.  
+3.  V rámci primitivních vás zajímá, pomocí následujícího odkazu název shaderu – například pomocí následujícího odkazu **Vertex Shader obj:30** Chcete-li zobrazit zdrojový kód shaderu vrcholu.  
   
     > [!TIP]
-    >  Číslo objektu **obj:30**, identifikuje tento shaderu v celém rozhraní analyzátor grafiky například v okně objektu tabulky a kanál fáze.  
+    >  Číslo objektu **obj:30**, identifikuje tento shader v celém rozhraní analyzátoru grafiky sady například v okně fáze tabulky a kanál objektu.  
   
 ##### <a name="to-debug-a-shader"></a>K ladění shaderu  
   
-1.  V **historie pixelů grafiky** okně Najít kreslení volání, která odpovídá shaderu chcete prozkoumat a rozbalte ho.  
+1.  V **historie pixelů grafiky** okně vyhledejte volání draw, která odpovídá shaderu chcete prozkoumat a rozbalte ho.  
   
-2.  Potom v části volání kreslení jste právě rozšířit, vyberte na primitivní, která demonstruje problém zajímá a rozbalte ho.  
+2.  Potom podle volání vykreslování můžete jenom rozšířit, vyberte jednoduchého typu, který ukazuje problém zajímá a rozbalte ho.  
   
-3.  V části primitivní, co vás zajímá, zvolte **spustit ladění**. Tento vstupní bod do výchozí nastavení ladicí program HLSL, aby první volání shaderu pro odpovídající primitivní – to znamená, první pixelu nebo vrchol, který zpracovává shaderu. Existuje pouze jeden bod. přidružené primitivní, ale existuje více než jeden vrchol shaderu volání pro řádky a trojúhelníčky.  
+3.  V části Primitivum, které vás zajímá, vyberte **spustit ladění**. Tento vstupní bod do výchozí nastavení ladicího programu HLSL, aby před prvním vyvoláním služby shaderu pro odpovídající základní – to znamená, první pixelů nebo vrchol, který je zpracován shaderu. Existuje pouze jeden pixel přidružené Primitivum, ale existuje více než jeden vertex shader volání pro řádky a trojúhelníky.  
   
-     K ladění volání shaderu vrchol pro konkrétní vrchol, rozbalte název odkazu VertexShader a vyhledejte vrchol vás zajímá, zvolte **spustit ladění** vedle sebe.  
+     Ladění vyvolání vertex shader pro konkrétní vrchol, rozbalte název odkazu VertexShader a vyhledejte vrchol, který vás zajímá, klikněte na tlačítko **spustit ladění** vedle sebe.  
   
 ### <a name="links-to-graphics-objects"></a>Odkazy na grafických objektů  
- Pochopení událostí grafiky v historie pixelů, budete pravděpodobně potřebovat informace o stavu zařízení v době události nebo o Direct3D – objekty, které odkazuje událost. Pro každou jednotlivou událost v historie pixelu **historie pixelů grafiky** poskytuje odkazy na aktuální zařízení stavu a na související objekty.  
+ Informace o tom událostí grafiky v historie pixelů, budete pravděpodobně potřebovat informace o stavu zařízení v době události a objekty Direct3D, na které odkazuje událost. Pro každou jednotlivou událost v historii pixelů **historie pixelů grafiky** obsahuje odkazy na aktuální zařízení, stavu a o souvisejících objektů.  
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Chybějící objekty z důvodu stavu zařízení](walkthrough-missing-objects-due-to-device-state.md)   
- [Návod: Ladění chyb při vykreslování způsobených stínováním](walkthrough-debugging-rendering-errors-due-to-shading.md)
+ [Návod: Ladění chyb stínováním při vykreslování](walkthrough-debugging-rendering-errors-due-to-shading.md)

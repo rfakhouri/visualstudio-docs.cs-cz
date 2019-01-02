@@ -2,7 +2,6 @@
 title: Rozšíření diagramů závislostí
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
@@ -12,17 +11,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304e1fe6356768ae5243ae38748d920444be41e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a467366ca470c17c0f52bd72ae17e766bcb284d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889316"
 ---
 # <a name="extend-dependency-diagrams"></a>Rozšíření diagramů závislostí
-Můžete napsat kód k vytvoření a aktualizaci diagramy závislostí a k ověření strukturu svůj kód programu s diagramy závislosti v sadě Visual Studio. Můžete přidat příkazy, které jsou uvedeny v nabídce zástupce (kontextu) diagramy, přizpůsobit gesta přetahování myší a přístup k vrstvě modelu z textové šablony. Můžete balíček tato rozšíření do Visual Studio integrace rozšíření (VSIX) a distribuujte je do jiných uživatelů v sadě Visual Studio.
+Můžete napsat kód k vytvoření a aktualizaci diagramů závislostí a k ověření struktury kód programu proti diagramů závislostí v sadě Visual Studio. Můžete přidat příkazy, které se zobrazují v nabídce místní (objektu context) diagramů, přizpůsobení gesta přetažení myší a přístup k modelu vrstvy z textových šablon. Můžete zabalit tato rozšíření do Visual Studio integrace rozšíření (VSIX) a distribuovat ostatním uživatelům aplikace Visual Studio.
 
- Další informace o závislostech diagramy najdete v části:
+ Další informace o diagramů závislostí naleznete v tématu:
 
 -   [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)
 
@@ -33,21 +32,21 @@ Můžete napsat kód k vytvoření a aktualizaci diagramy závislostí a k ově�
 -   [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)
 
 ##  <a name="prereqs"></a> Požadavky
- Musíte mít nainstalované v počítači, ve které chcete vyvíjet rozšíření vrstvy tyto položky:
+ Musí být nainstalovaný na počítači, kde chcete vyvíjet rozšíření vrstvy:
 
 -   Visual Studio
 
 -   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
--   Modelování SDK pro Visual Studio
+-   Sada Modeling SDK pro Visual Studio
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 
- Musí mít vhodná verze sady Visual Studio nainstalována v počítači, kde chcete spustit rozšíření vrstvy. Další informace najdete v tématu [nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md).
+ Musí mít vhodnou verzi sady Visual Studio nainstalované na počítači, ve kterém chcete spustit rozšíření vrstvy. Další informace najdete v tématu [nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md).
 
- Informace, které verze sady Visual Studio podporují závislostí diagramy, najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Které verze sady Visual Studio podporují diagramů závislostí najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-section"></a>V tomto oddílu
  [Přidávání příkazů a gest do diagramů závislostí](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
@@ -56,7 +55,7 @@ Můžete napsat kód k vytvoření a aktualizaci diagramy závislostí a k ově�
 
  [Přidání vlastních vlastností do diagramů závislostí](../modeling/add-custom-properties-to-layer-diagrams.md)
 
- [Procházení a aktualizace modelů vrstev v programovém kódu](../modeling/navigate-and-update-layer-models-in-program-code.md)
+ [Procházení a aktualizace modelů vrstev v programovém kódu](../modeling/navigate-and-update-layer-models-in-program-code.md)
 
  [Nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md)
 

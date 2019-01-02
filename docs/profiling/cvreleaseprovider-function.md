@@ -1,8 +1,6 @@
 ---
-title: Cvreleaseprovider – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvreleaseprovider – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvReleaseProvider
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f968ffaa4e11953fd3321861b884e6dda1f39a3c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 419cf6c30822a041397e73104974989881ac6e59
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822473"
 ---
 # <a name="cvreleaseprovider-function"></a>Cvreleaseprovider – funkce
-Verze zprostředkovatele značky. Uvolňování poskytovatele značky nebude mít vliv na dříve vytvořenou značky řadu tohoto zprostředkovatele. Značky řady musí být verze samostatně voláním cvreleasemarkerseries –. Chyby k uvolnění zprostředkovatele způsobí, že nevrácenou pamětí.  
+Verze poskytovatele značek. Uvolňování poskytovatele značek neovlivní dříve vytvořené značky řady tohoto zprostředkovatele. Značky řady musí být verze samostatně voláním cvreleasemarkerseries –. Nepodařilo se uvolnit poskytovatele způsobí, že nevracení paměti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,7 +35,7 @@ HRESULT CvReleaseProvider(
  Kontext zprostředkovatele. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, když je zprostředkovatel úspěšně vydání nebo kód chyby v případě, že existuje byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při poskytovatele se úspěšně uvolnily nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

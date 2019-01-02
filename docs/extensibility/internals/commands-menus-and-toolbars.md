@@ -1,9 +1,6 @@
 ---
 title: Příkazy, nabídky a panely nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8bd6716b40816ae625dcdb32fb62237aa543fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceda4339c02e73f02ebd78094a145f53bc7fbb82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887734"
 ---
 # <a name="commands-menus-and-toolbars"></a>Příkazy, nabídky a panely nástrojů
 Nabídky a panely nástrojů jsou způsob, jak uživatelům přístup k příkazům v vašeho balíčku VSPackage. Příkazy jsou funkce, které provádět úlohy, jako je například tisk dokumentu, aktualizuje zobrazení nebo vytvoření nového souboru. Nabídky a panely nástrojů jsou vhodné grafické způsoby, jak uživatelům k dispozici vaše příkazy. Související příkazy jsou obvykle Clusterované společně na stejném nabídky nebo panelu nástrojů.  
@@ -31,7 +28,7 @@ Nabídky a panely nástrojů jsou způsob, jak uživatelům přístup k příkaz
   
 - Když vytvoříte příkaz, také musíte vytvořit obslužnou rutinu události pro něj. Obslužná rutina události určuje po příkazu je viditelný nebo povoleno, umožňuje změnit jeho textu a zajistí, že příkaz náležitě reaguje ("trasy") při aktivaci. Ve většině případů, rozhraní IDE zpracovává příkazy pomocí <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní. Příkazy v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] trasy hierarchické způsobem, počínaje kontext nejvnitřnější příkazů, na základě výběru v místní a pokračuje na vnější kontext na základě výběru v globální. Příkazy, které jsou přidány do hlavní nabídky jsou okamžitě k dispozici pro skriptování. Další informace najdete v tématu [MenuCommands vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md) a [kontextové objekty výběru](../../extensibility/internals/selection-context-objects.md).  
   
-  Chcete-li definovat nové nabídky a panely nástrojů, musíte popsat je v tabulky příkazů sady Visual Studio (*.vsct*) soubor. Balíček šablony sady Visual Studio vytvoří tento soubor, spolu s prvky potřebné pro podporu libovolné příkazy, panely nástrojů a editory vybrány v šabloně. Alternativně můžete napsat vlastní *.vsct* soubor, pomocí schématu XML je popsáno zde: [– referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md).  
+  Chcete-li definovat nové nabídky a panely nástrojů, musíte popsat je v tabulky příkazů sady Visual Studio (*.vsct*) soubor. Balíček šablony sady Visual Studio vytvoří tento soubor, spolu s prvky potřebné pro podporu libovolné příkazy, panely nástrojů a editory vybrány v šabloně. Alternativně můžete napsat vlastní *.vsct* soubor, pomocí schématu XML je popsáno zde: [Referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md).  
   
   Další informace o práci s *.vsct* soubory, naleznete v tématu [soubory tabulky (.vsct) příkazů sady Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
