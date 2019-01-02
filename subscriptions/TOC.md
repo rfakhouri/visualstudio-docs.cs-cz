@@ -44,7 +44,6 @@
 #### [Chat s poradcem pro Azure](vs-azure-advisory-chat.md)
 #### [Komunita Azure](vs-azure-community.md)
 #### [Technická podpora](vs-tech-support.md)
-#### [Podpora komunity vývojářů](vs-priority-support.md)
 #### [Podpora od specialisty](vs-concierge-chat.md)
 ## Správa předplatných
 ### [Odpovědnosti správce](admin-responsibilities.md)
