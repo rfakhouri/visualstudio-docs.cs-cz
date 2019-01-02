@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924797"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Uložení dat do databáze (více tabulek)
 
@@ -79,7 +78,7 @@ Prvním krokem je vytvoření **formulářová aplikace Windows**. Přiřazení 
 
 ## <a name="create-the-data-source"></a>Vytvoření zdroje dat
 
-Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
+Tento krok vytváří zdroj dat v databázi Northwind pomocí průvodce **Průvodce konfigurací zdroje dat**. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [jak: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Na **Data** nabídce vyberte možnost **zobrazit zdroje dat**.
 
@@ -154,7 +153,7 @@ Databáze můžete aktualizovat pomocí volání `Update` metody **zákazníkům
 
 2. Některé změny dat z jednoho nebo více záznamů v každé tabulce.
 
-3. Vyberte **Uložit** tlačítko.
+3. Vyberte tlačítko **Uložit**.
 
 4. Zkontrolujte hodnoty v databázi a ověřte, že se změny uložily.
 

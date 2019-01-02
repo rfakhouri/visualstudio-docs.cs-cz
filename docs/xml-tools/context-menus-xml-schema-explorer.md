@@ -2,7 +2,6 @@
 title: Kontextové nabídky v Průzkumník schémat XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898892"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextové nabídky (Průzkumník schémat XML)
 
 Následující položky místní nabídky jsou používány k provádění specifické pro schéma vyhledávání a další operace.
 
-## <a name="node-type-schema-set"></a>Typ uzlu: schéma nastavení
+## <a name="node-type-schema-set"></a>Typ uzlu: Sadě schémat.
 
 Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, nastavte uzel.
 
@@ -32,7 +31,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Zobrazit globální prvky**|Vyhledá a zvýrazní všechny globální prvky v sadě schémat.|
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
-## <a name="node-type-namespace"></a>Typ uzlu: Namespace
+## <a name="node-type-namespace"></a>Typ uzlu: Obor názvů
  Následující tabulka popisuje možnosti, které jsou k dispozici pro uzel oboru názvů.
 
 |Možnost|Popis|
@@ -43,7 +42,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Zobrazit globální prvky**|Vyhledá a zvýrazní všechny globální prvky ve vybraném oboru názvů.|
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
-## <a name="node-type-file"></a>Typ uzlu: soubor
+## <a name="node-type-file"></a>Typ uzlu: Soubor
  Následující tabulka popisuje možnosti, které jsou k dispozici pro uzel souboru.
 
 |Možnost|Popis|
@@ -65,7 +64,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Zobrazit kód**|Otevře soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumník schémat XML bude také vybrána v editoru XML.|
 |**Okno Vlastnosti**|Otevře **vlastnosti** okna (pokud ještě není otevřený). Toto okno zobrazuje informace o uzlu.|
 
-## <a name="node-type-element"></a>Typ uzlu: Element
+## <a name="node-type-element"></a>Typ uzlu: Prvek
  Kromě možností globální uzlu je popsáno výše kontextovou nabídku pro uzly element má následující možnosti:
 
 |Možnost|Popis|
@@ -77,7 +76,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Zobrazit nahrazování skupinu vedoucích**|Pro globální prvky, které jsou členy skupiny nahrazení, najde a zvýrazní všechny přímou a nepřímou heads pro vybraný element, jako je následující:<br /><br /> -Substituční skupiny head na vybraný prvek.<br />-Substituční skupiny head na jeho element head.|
 |**Generovat ukázkový soubor XML**|K dispozici pouze pro globální prvky. Generuje ukázkový soubor XML pro prvek globální.|
 
-## <a name="node-type-global-types"></a>Typ uzlu: globální typy
+## <a name="node-type-global-types"></a>Typ uzlu: Globální typy
  Kromě možností globální uzlu je popsáno výše obsahuje místní nabídku pro uzel typu globální následující možnosti:
 
 |Možnost|Popis|
@@ -87,7 +86,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Zobrazit všechny odvozené typy**|Vyhledá a zvýrazní všechny typy, které jsou přímo i nepřímo odvozeny z vybraného typu.|
 |**Zobrazení všech nadřazených**|Zobrazit všechny typy nadřazené (základní).|
 
-## <a name="node-type-attribute"></a>Typ uzlu: atribut
+## <a name="node-type-attribute"></a>Typ uzlu: Atribut
  Kromě možností globální uzlu je popsáno výše kontextovou nabídku pro uzlů atributů obsahuje následující možnosti:
 
 |Možnost|Popis|
@@ -96,7 +95,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Přejít na původní atribut**|Pro atribut odkazy přejde na skutečné definice atributu.|
 |**Zobrazit všechny odkazy**|Globální atributy, najde a zvýrazní všechny odkazy (jiné atributy, které mají `ref="selectedAttribute"`) pro vybraný atribut.|
 
-## <a name="node-type-attribute-group"></a>Typ uzlu: skupinu atributů
+## <a name="node-type-attribute-group"></a>Typ uzlu: Skupinu atributů
  Kromě možností globální uzlu je popsáno výše obsahuje místní nabídku pro atribut skupiny uzlů následující možnosti:
 
 |Možnost|Popis|
@@ -105,7 +104,7 @@ Následující tabulka popisuje možnosti, které jsou k dispozici pro schéma, 
 |**Zobrazit všechny členy**|Vyhledá a zvýrazní všechny členy skupiny atributů.|
 |**Zobrazit všechny odkazy**|Vyhledá a zvýrazní všechny odkazy (atribut skupiny, které mají `ref="selectedAttributeGroup"`) ke skupině pro vybraný atribut.|
 
-## <a name="node-type-named-group"></a>Typ uzlu: pojmenované skupiny
+## <a name="node-type-named-group"></a>Typ uzlu: Pojmenované skupiny
  Kromě možností globální uzlu je popsáno výše obsahuje místní nabídku pro pojmenovanou skupinu uzlů následující možnosti:
 
 |Možnost|Popis|

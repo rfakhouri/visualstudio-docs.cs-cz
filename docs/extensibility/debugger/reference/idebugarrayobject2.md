@@ -1,9 +1,6 @@
 ---
-title: IDebugArrayObject2 | Microsoft Docs
-ms.custom: ''
+title: IDebugArrayObject2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugArrayObject2 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc101fa7e0f339a599bd48f1954c0f6ed165f47f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1f5906d0bff268e78d08b82f9f0d65ee6099d0cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900283"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 se již nepoužívá tímto způsobem implementace vyhodnocovače výrazů. Informace o implementaci vyhodnocovače výrazů CLR, najdete v tématu [vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Představuje objekt spravované pole a umožňuje (EE) k určení základní indexu (dolní meze) pro pole vyhodnocovací filtr výrazů.  
+ Představuje objekt spravovaného pole a umožňuje vyhodnocovače výrazů (EE) k určení základní indexu (dolní meze) pro pole.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,22 +30,22 @@ IDebugArrayObject2 : IDebugArrayObject
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Tato možnost je implementovaná pomocí modulu spravovaného ladění (DE).  
+ To je implementováno modulem spravovaného ladění (DE).  
   
 ## <a name="methods"></a>Metody  
  Kromě metod na [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) rozhraní, toto rozhraní implementuje následujících metod:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Načte základní indexy (dolní meze) pro každý index zadaný počet dimenzí v poli.|  
-|[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Určí, zda pole má definované základní indexy (dolní meze).|  
+|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Získá základní indexy (dolní meze) pro každý index zadaný počet dimenzí v poli.|  
+|[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Určuje, zda pole má základní indexy (dolní mez).|  
   
 ## <a name="remarks"></a>Poznámky  
- Vyhodnocení výrazu toto rozhraní používá k reprezentaci spravovaných polí v strom analýzy.  
+ Toto rozhraní vyhodnocovače výrazů používá k reprezentaci spravovaných polí v strom analýzy.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Ee.h  
+ Záhlaví: EE.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

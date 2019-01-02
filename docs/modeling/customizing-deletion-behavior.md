@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940950"
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 Odstranění elementu obvykle způsobí, že související prvky také odstranit. Všechny vztahy, jsou k němu připojená, a odstraní se všechny podřízené prvky. Toto chování je s názvem *odstranit šíření*. Můžete přizpůsobit šíření operace delete, třeba zajistit, že další související prvky jsou odstraněny. Napsáním kódu programu, můžete provést odstranění šíření závisí na stavu modelu. Další změny v reakci na odstranění může také způsobit.
@@ -140,7 +139,7 @@ partial class MusicLibDeleteClosure
 
 2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> je volána, když se odstranil elementu. Zůstane v haldě modulu CLR, aby vrácení zpět lze provést, pokud je to nutné, ale je byl odpojen od jiných prvků a odebrána z `store.ElementDirectory`. U relací role stále odkazují na staré aktérů role.`IsDeleted` má hodnotu true.
 
-3. Když uživatel vyvolá zpět po vytvoření elementu a starší odstranění se opakuje v znovu, se nazývají OnDeleting a OnDeleted. Použití `this.Store.InUndoRedoOrRollback` , aby aktualizace úložiště prvky v těchto případech. Další informace najdete v tématu [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. Když uživatel vyvolá zpět po vytvoření elementu a starší odstranění se opakuje v znovu, se nazývají OnDeleting a OnDeleted. Použití `this.Store.InUndoRedoOrRollback` , aby aktualizace úložiště prvky v těchto případech. Další informace najdete v tématu [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
    Následující kód například odstraní při odstranění jeho posledního podřízeného skladby alba:
 

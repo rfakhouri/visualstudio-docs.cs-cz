@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Program ošetření událostí ovládacího prvku NamedRange'
-ms.custom: ''
+title: 'Průvodce: Program ošetření událostí ovládacího prvku NamedRange'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910815"
 ---
-# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Návod: Program ošetření událostí ovládacího prvku NamedRange
+# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Průvodce: Program ošetření událostí ovládacího prvku NamedRange
   Tento návod ukazuje, jak přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku na list aplikace Microsoft Office Excel a program před jeho událostmi s využitím vývojových nástrojů Office v sadě Visual Studio.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49812515"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvořte projekt sešitu aplikace Excel s názvem **Moje události s názvem rozsah**. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvořte projekt sešitu aplikace Excel s názvem **Moje události s názvem rozsah**. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Moje události s názvem rozsah** projektu **Průzkumníka řešení**.  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49812515"
   
 3.  Ověřte, že **$A$ 1** se zobrazí v upravitelné textové pole a buňka **A1** zaškrtnuto. Pokud není, klikněte na buňku **A1** ji vyberte.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
      Buňka **A1** stane oblast s názvem `namedRange1`. Není by na listu, ale `namedRange1` se zobrazí v **název** políčka (přímo nad listu na levé straně) při buňky **A1** zaškrtnuto.  
   
@@ -81,7 +78,7 @@ ms.locfileid: "49812515"
   
 6.  Ověřte, že **$B$ 3** se zobrazí v upravitelné textové pole a buňka **B3** zaškrtnuto. Pokud není, klikněte na buňku **B3** ji vyberte.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      Buňka **B3** stane oblast s názvem `namedRange2`.  
   
@@ -108,7 +105,7 @@ ms.locfileid: "49812515"
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
   
-3.  V jazyce C#, musíte přidat obslužné rutiny událostí pro pojmenované oblasti, jak je znázorněno <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> následující událost. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  V jazyce C#, musíte přidat obslužné rutiny událostí pro pojmenované oblasti, jak je znázorněno <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> následující událost. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]  
   
@@ -128,7 +125,7 @@ ms.locfileid: "49812515"
   
 ### <a name="to-insert-text-into-namedrange2-based-on-the-selectionchange-event"></a>Pro vložení textu na namedRange2 podle SelectionChange – událost  
   
-1.  Přidejte kód, tak na **NamedRange1_SelectionChange** obslužnou rutinu události vypadá následovně:  
+1.  Přidejte kód proto **NamedRange1_SelectionChange** obslužná rutina události vypadat takhle:  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]  
@@ -165,6 +162,4 @@ ms.locfileid: "49812515"
  [Postupy: Změna velikosti ovládacích prvků NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  
-  
-  
+ [Postupy: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md)  

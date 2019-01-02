@@ -3,7 +3,6 @@ title: Ladění pracovních postupů pomocí návrháře postupu provádění
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,38 +12,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923423"
 ---
-# <a name="debug-workflows-with-the-workflow-designer"></a>Ladění pracovních postupů pomocí návrháře pracovních postupů
+# <a name="debug-workflows-with-the-workflow-designer"></a>Ladění pracovních postupů pomocí návrháře postupu provádění
 
-**Návrhář postupu provádění** poskytuje možnost ladění pracovních postupů a vlastní aktivity. Proces a chování jsou podobná výchozí ladicího programu sady Visual Studio.
+**Návrháře postupu provádění** umožňuje ladění pracovních postupů a vlastní aktivity. Proces a chování jsou podobná výchozí program pro ladění sady Visual Studio.
 
-## <a name="invoke-the-workflow-debugger"></a>Vyvolání pracovního postupu ladicí program
+## <a name="invoke-the-workflow-debugger"></a>Vyvolání ladicího programu pracovních postupů
 
-Obecně platí při ladění pracovních postupů, stejně jako při ladění programy vytvořené v jiné sadě Visual Studio programovací jazyky. Ladicí program pracovního postupu můžete spustit těmito způsoby:
+Obecně platí ladění pracovních postupů stejným způsobem, jako ladíte programy napsané v jiných programovacích jazycích sady Visual Studio. Ladicí program pracovního postupu můžete spustit následujícími způsoby:
 
-- Vyberte **připojit k procesu** na **ladění** nabídce vyberte běžící proces hostitele pro instanci pracovního postupu. Tento postup je stejný jako připojování k hostitelskému procesu ve spravovaném kódu.
+- Vyberte **připojit k procesu** na **ladění** nabídky k výběru spuštěného hostitelský proces pro vaši instanci pracovního postupu. Tento postup je stejný jako připojení k procesu hostitele ve spravovaném kódu.
 
-- Stiskněte klávesu **F5** spustit instance pracovního postupu nebo chcete-li pokračovat, aby po zarážku narazil spustila.
+- Stisknutím klávesy **F5** spouštění instance pracovního postupu, nebo aby kontinuálně běžely, jakmile dosáhne zarážky.
 
-- Použití vzdálené ladění. Informace o používání vzdálené ladění najdete v tématu [postupy: povolení vzdáleného ladění](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
+- Použití vzdáleného ladění. Informace o použití vzdáleného ladění, naleznete v tématu [jak: Povolení vzdáleného ladění](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 
    > [!NOTE]
-   > Pokud je pracovní postup aplikace určena x86 architektura a je hostovaná na počítači se systémem 64bitový operační systém, pak vzdálené ladění nebude fungovat, pokud je na vzdáleném počítači nainstalované sady Visual Studio nebo cíle pro aplikace pracovního postupu se změní na  **Všechny procesoru**.
+   > Pokud se aplikace pracovního postupu, zaměřuje x86 architektury a je hostovaná na počítači se systémem 64bitový operační systém, vzdálené ladění nebudou fungovat, pokud je na vzdáleném počítači nainstalované sady Visual Studio nebo cíl pro aplikace pracovního postupu se změní na  **Jakýkoli procesor**.
 
-## <a name="step-through-code"></a>Krok prostřednictvím kódu
+## <a name="step-through-code"></a>Krokovat kód
 
-- **Krok v**: krokování s vnořením aktivitu stisknutím **F11**. Ladicí program do jakékoli obslužná rutina, která je definována. Pokud je definována žádná obslužná rutina, krok přes aktivity nebo složený aktivitami, které obsahují další aktivity, krok do první provádění aktivity.
+- **Krok v**: Krokování s vnořením do aktivity stisknutím kombinace kláves **F11**. Ladicí program do libovolné obslužné rutiny, která je definována. Pokud není definována žádná obslužná rutina, Krokovat přes aktivity nebo pomocí složených aktivit, které obsahují další aktivity, přejdete na první spouštěné aktivity.
 
-- **Krok na více systémů:** vystoupení ze aktivitu stisknutím **Shift**+**F11**. Krokování s mimo aktivitu spouští aktuální aktivita a její na stejné úrovni aktivity dokončen. Ladicí program pak dělí na nadřazené aktuální aktivity. Když zanoříte z obslužnou rutinu kódu, ladicího programu dělí na aktivitu, ke kterému je přiřazeno obslužná rutina.
+- **Krokovat s Vystoupením:** Krok mimo aktivitu stisknutím kombinace kláves **Shift**+**F11**. Krokování mimo aktivitu spouští aktuální aktivitu a jejich na stejné úrovni aktivity do konce. Ladicí program zastaví se na nadřazený prvek aktuální aktivity. Při procházení z obslužné rutiny kód, ladicí program přeruší na aktivitu, ke kterému je přidružené obslužnou rutinu.
 
-- **Krokovat s přeskočením**: Krok přes aktivitu stisknutím **F10**. Když krokování přes složených aktivit, ladicího programu dělí na prvním podřízeným objektem spustitelné složené aktivity. Když krokování přes jiný složené, například <xref:System.Activities.Statements.Assign> aktivity, ladicí program spustí aktivita a její přidružené obslužné rutiny a zalomení na další aktivitu. Pokud aktivita, která se spustí poslední podřízené aktivity ve složených aktivit, pak po spuštění, ladicího programu dělí na nadřazené aktivity.
+- **Krok přes**: Krok přes aktivitu stisknutím kombinace kláves **F10**. Při krokování přes složené aktivity, ladicí program přeruší na první spustitelný podřízený složené aktivity. Při krokování přes bez složeného, například <xref:System.Activities.Statements.Assign> aktivity, ladicí program provede aktivitu a jeho přidruženými obslužnými rutinami a zalomení na další aktivity. Pokud je aktivita, která se spustí poslední podřízenou aktivitou ve složených aktivit, pak po spuštění, ladicí program přeruší na Nadřazená aktivita.
 
 ## <a name="debug-with-f5"></a>Ladění pomocí F5
 
-Pokud vytváříte konzolovou aplikaci pracovního postupu, jednoduše stiskněte **F5** zahájíte ladění do své aplikace a pracovní postup. Pokud vytváříte knihovna aktivit sama o sobě, musíte zadat aplikaci spustitelný soubor hostitele jako spouštěný projekt. Chcete-li nastavit spouštěný projekt **Průzkumníku řešení**, klikněte pravým tlačítkem na název projektu hostitele a vyberte **nastavit jako spouštěný projekt**.
+Pokud vytváříte Konzolová aplikace pracovního postupu, stačí stisknout **F5** pro zahájení ladění do aplikace a pracovního postupu. Pokud vytváříte knihovny aktivit sama o sobě, musíte zadat spustitelný soubor hostitelské aplikace jako spouštěný projekt. Chcete-li nastavit projekt po spuštění **Průzkumníka řešení**, klikněte pravým tlačítkem na název hostitele a vyberte **nastavit jako spouštěný projekt**.

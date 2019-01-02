@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření šablony s použitím ovládacích prvků obsahu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření šablony s použitím ovládacích prvků obsahu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931983"
 ---
-# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Návod: Vytvoření šablony s použitím ovládacích prvků obsahu
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>Průvodce: Vytvoření šablony s použitím ovládacích prvků obsahu
   Tento návod ukazuje, jak vytvořit přizpůsobení úrovni dokumentu, který používá ovládací prvky obsahu k vytvoření obsahu strukturovaných a opakovaně použitelné šablony aplikace Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -59,7 +56,7 @@ ms.locfileid: "49833184"
   
 ### <a name="to-create-a-new-word-template-project"></a>Chcete-li vytvořit nový projekt šablony aplikace Word  
   
-1.  Vytvoření projektu šablony aplikace Word s názvem **MyBuildingBlockTemplate**. V Průvodci vytvoříte nový textový dokument v řešení. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu šablony aplikace Word s názvem **MyBuildingBlockTemplate**. V Průvodci vytvoříte nový textový dokument v řešení. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se nová šablona aplikace Word v návrháři a přidá **MyBuildingBlockTemplate** projektu **Průzkumníka řešení**.  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49833184"
 5. Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
    > [!NOTE]  
-   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. V **ovládací prvky** klikněte na položku **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.  
   
@@ -235,15 +232,13 @@ ms.locfileid: "49833184"
 ## <a name="next-steps"></a>Další kroky  
  Další informace o tom, jak používat ovládací prvky obsahu z tohoto tématu:  
   
--   Vytvoření vazby ovládacích prvků obsahu na části kódu, také název vlastní části XML, které jsou vložené v dokumentu XML. Další informace najdete v tématu [návod: vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Vytvoření vazby ovládacích prvků obsahu na části kódu, také název vlastní části XML, které jsou vložené v dokumentu XML. Další informace najdete v tématu [názorný postup: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
  [Ovládací prvky obsahu](../vsto/content-controls.md)   
  [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Postupy: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

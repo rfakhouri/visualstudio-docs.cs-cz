@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: sestavení projektu, který má prostředky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Sestavení projektu, který má prostředky | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934299"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Postupy: sestavení projektu, který má prostředky
+# <a name="how-to-build-a-project-that-has-resources"></a>Postupy: Sestavení projektu, který má prostředky
 Pokud vytváříte lokalizované verze projektu, musí se oddělit všechny prvky uživatelského rozhraní do souborů prostředků pro různé jazyky. Pokud projekt používá pouze řetězce, soubory prostředků pomocí textových souborů. Alternativně můžete použít *RESX* soubory jako soubory prostředků.  
   
 ## <a name="compile-resources-with-msbuild"></a>Kompilace prostředků pomocí nástroje MSBuild  

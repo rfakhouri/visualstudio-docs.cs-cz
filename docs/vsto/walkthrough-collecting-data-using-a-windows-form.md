@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Shromažďování dat pomocí formuláře Windows'
-ms.custom: ''
+title: 'Průvodce: Shromažďování dat pomocí formuláře Windows'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e9b73671a8c4b03c33169739ea8fd02b486568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926612"
 ---
-# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Návod: Shromažďování dat pomocí formuláře Windows
+# <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Průvodce: Shromažďování dat pomocí formuláře Windows
   Tento návod ukazuje, jak otevřít formulář Windows z přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Excel, shromažďování informací od uživatele a zápisu informací do buňky listu.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -94,7 +91,7 @@ ms.locfileid: "49900472"
 2. V <xref:Microsoft.Office.Tools.Excel.Workbook.Open> obslužná rutina události `ThisWorkbook`, přidejte následující kód k deklaraci proměnné pro formulář `GetInputString` a poté zobrazí formulář.  
   
    > [!NOTE]  
-   >  V jazyce C#, musíte přidat obslužnou rutinu události, jak je znázorněno <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> následující událost. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   >  V jazyce C#, musíte přidat obslužnou rutinu události, jak je znázorněno <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> následující událost. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
@@ -146,5 +143,3 @@ ms.locfileid: "49900472"
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
  [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)   
  [Návody pro aplikaci Excel](../vsto/walkthroughs-using-excel.md)  
-  
-  

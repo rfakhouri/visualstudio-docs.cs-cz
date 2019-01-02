@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c9bef0c76f0c01c620670bf67882fd90e2e1ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875495"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro PowerPoint
   Tento návod ukazuje, jak k vytvoření doplňku VSTO pro Microsoft Office PowerPoint. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní, bez ohledu na to, které jsou otevřené prezentace aplikace. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
@@ -65,7 +62,7 @@ ms.locfileid: "49882585"
   
 6.  V **název** zadejte **FirstPowerPointAddIn**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstPowerPointAddIn** projekt a otevře **ThisAddIn** souboru kódu v editoru.  
   
@@ -139,5 +136,3 @@ ms.locfileid: "49882585"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

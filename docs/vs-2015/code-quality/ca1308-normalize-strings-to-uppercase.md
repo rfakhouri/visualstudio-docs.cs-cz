@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0fce05563f00110ab4e1d21a52f100d0f01568e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b2145b86da9cbc792b5baf16f19e94f24e148d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913274"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizujte řetězce na velká písmena
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +50,3 @@ ms.locfileid: "49846275"
 
 ## <a name="see-also"></a>Viz také
  [Upozornění globalizace](../code-quality/globalization-warnings.md)
-
-
-

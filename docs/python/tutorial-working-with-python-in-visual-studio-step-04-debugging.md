@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 4 Průvodce základní funkce Pythonu v sadě Visual Studio ke spuštění kódu Pythonu v ladicím programu.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931538"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
-**Předchozí krok: [použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Předchozí krok: [Použití okna interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Kromě správy projektů, poskytuje bohaté možnosti, úprav a **interaktivní** okně Visual Studio poskytuje plně vybavené ladění pro kód Python. V ladicím programu můžete spustit váš kód krok za krokem, včetně všech iterací smyčky. Je také možné pozastavit program pokaždé, když jsou splněny určité podmínky. Kdykoli při program je pozastavení v ladicím programu, můžete zkontrolovat stav celého programu a změňte hodnotu proměnné. Tyto akce jsou nezbytné pro sledování chyby v kódu programu a také poskytují velmi užitečné pomůcky pro pečlivě uplatňují přesné programu.
 

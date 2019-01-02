@@ -1,9 +1,6 @@
 ---
 title: XMLNode – ovládací prvek
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f83d829ac5067d751cc035ac83c0fb3397178658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927438"
 ---
 # <a name="xmlnode-control"></a>XMLNode – ovládací prvek
-  **Důležité** informace uvedené v tomto tématu týkající se aplikace Microsoft Word je vidění výhradně pro benefit a použití jednotlivce a organizace, kteří se nacházejí mimo Spojené státy a jeho území nebo který používáte, nebo vývoj programy, které běží na, produkty Microsoft Word, které byly před leden 2010, když Microsoft odebrat implementace konkrétní funkce licencí společnosti Microsoft týkající se vlastní kód XML z aplikace Microsoft Word. Tyto informace týkající se aplikace Microsoft Word nemusí přečteny nebo používány jednotlivce nebo organizace v USA nebo v jeho území, které používáte, nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencí společnosti Microsoft po 10 leden 2010 ; tyto produkty nebudou chovají stejně jako produkty licencované před tímto datem nebo zakoupených a licenci na použití mimo Spojené státy.  
+  **Důležité** informace uvedené v tomto tématu týkající se Microsoft Word je zobrazené výhradně pro výhod a užívání o jednotlivci i organizacemi, kteří se nacházejí mimo Spojené státy a jeho území nebo kteří používají nebo vývoj programy, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft před 2010 dne, kdy Microsoft odebrána implementace konkrétní funkce související s vlastní XML z aplikace Microsoft Word. Tyto informace týkající se Microsoft Word nemusí být přečteny nebo používány jednotlivcům i organizacím v USA nebo v jeho území, které používáte, nebo vývoji programů, které běží na produkty Microsoft Word, které byly licencovaných společností Microsoft po 10. ledna 2010 ; tyto produkty se chovají stejně jako produkty licenci před tímto datem nebo zakoupených a licencovaná pro použití mimo území Spojených států.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- <xref:Microsoft.Office.Tools.Word.XMLNode> Řízení je namapované objekt uzlu XML, který zpřístupní události a mohou být vázány na data. <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek je vytvořen pouze v případě, že element bez opakování schématu je namapovaný na dokument aplikace Microsoft Office Word. Po Visual Studio vytvoří uzel XML, můžete je ovládat přímo bez nutnosti procházení model objektů aplikace Word.  
+ <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek je namapované XML uzlu objekt, který zpřístupňuje události a může být vázaný na data. <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek je vytvořen pouze v případě, že element neopakujícími schématu je mapována na dokumentu aplikace Microsoft Office Word. Poté, co Visual Studio vytvoří uzel XML, můžete programovat proti ho přímo bez nutnosti procházení objektovému modelu Wordu.  
   
- <xref:Microsoft.Office.Tools.Word.XMLNode> Řízení lze odstranit pouze odebráním element mapování v aplikaci Word.  
+ <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek lze odstranit pouze tak, že odeberete mapování elementu v aplikaci Word.  
   
-## <a name="bind-data-to-the-control"></a>Vázání dat k ovládacímu prvku  
- <xref:Microsoft.Office.Tools.Word.XMLNode> Řízení podporuje jednoduché datové vazby. Uzel XML by měl být vázán ke zdroji dat pomocí <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> vlastnost. Při aktualizaci dat v datové sadě vázané <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvek odráží změny.  
+## <a name="bind-data-to-the-control"></a>Vytvoření vazby dat k ovládacímu prvku  
+ <xref:Microsoft.Office.Tools.Word.XMLNode> Ovládací prvek podporuje jednoduchou datovou vazbu. Uzel XML by měl být vázán ke zdroji dat pomocí <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> vlastnost. Pokud aktualizaci dat v datové sadě vázané <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvek se změny projeví.  
   
 ## <a name="formatting"></a>Formátování  
- Formátování, které lze použít pro <xref:Microsoft.Office.Interop.Word.XMLNode> objekt lze použít pro <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku. To zahrnuje písma, podtržení styly a styly znaků.  
+ Který lze použít k formátování <xref:Microsoft.Office.Interop.Word.XMLNode> objekt lze použít u <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku. To zahrnuje písma, podtržení styly a styly znaků.  
   
 ## <a name="events"></a>Události  
  Tyto události jsou k dispozici pro <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku:  
@@ -58,8 +55,8 @@ ms.locfileid: "35258886"
   
 -   <xref:Microsoft.Office.Tools.Word.XMLNode.ValidationError>  
   
-## <a name="compare-events"></a>Porovnání události  
- Můžete zaznamenat událost v případě, že uživatel přesune své kurzor v rámci konkrétní <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku. Například můžete mít <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvek s názvem `Customer` má podřízenou <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvek s názvem `Company`, a `Company` má dva podřízené <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvky s názvem `CompanyName` a `CompanyRegion` následujícím způsobem:  
+## <a name="compare-events"></a>Porovnat události  
+ Můžete zaznamenat události, když uživatel přesune kurzor jeho v kontextu konkrétní <xref:Microsoft.Office.Tools.Word.XMLNode> ovládacího prvku. Například můžete mít <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvek s názvem `Customer` , který má podřízený element <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvek s názvem `Company`, a `Company` má dva podřízené <xref:Microsoft.Office.Tools.Word.XMLNode> ovládací prvky s názvem `CompanyName` a `CompanyRegion` následujícím způsobem:  
   
 ```xml  
 <Customer>  
@@ -68,15 +65,15 @@ ms.locfileid: "35258886"
         <CompanyRegion>  
 ```  
   
- Pokud chcete zobrazit ovládací prvek v podokně akce vždy, když ukazatel je přesunut do `Company` uzlu je nesmí důležité, zda je umístěn kurzor v `CompanyName` nebo `CompanyRegion` vzhledem k tomu, že jsou oba v kontextu `Company`. V takovém případě můžete napsat kód <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> události `Company`.  
+ Pokud chcete zobrazit ovládací prvek v podokně akcí vždy, když kurzor se přesune do `Company` uzlu by nemělo záležet, zda je kurzor umístěn v `CompanyName` nebo `CompanyRegion` vzhledem k tomu, že jsou oba v rámci kontextu `Company`. V takovém případě při psaní kódu <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> událost `Company`.  
   
- Ve většině případů, kdy ukazatel vstoupí <xref:Microsoft.Office.Tools.Word.XMLNode> řídit, jak <xref:Microsoft.Office.Tools.Word.XMLNode.Select> a <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> události jsou vyvolány. V následující tabulce jsou uvedeny rozdíly mezi tyto události.  
+ Ve většině případů, když se ukazatel dotkne <xref:Microsoft.Office.Tools.Word.XMLNode> řídit, jak <xref:Microsoft.Office.Tools.Word.XMLNode.Select> a <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> jsou vyvolány události. V následující tabulce jsou uvedeny rozdíly mezi tyto události.  
   
-|Vyberte události|ContextEnter událostí|  
+|Vybrat událost|ContextEnter události|  
 |------------------|------------------------|  
-|Nastane, když ukazatel je umístěn uvnitř <xref:Microsoft.Office.Tools.Word.XMLNode>.|Nastane, když ukazatel je umístěn uvnitř <xref:Microsoft.Office.Tools.Word.XMLNode> nebo jednoho z jeho podřízené uzly z oblasti mimo kontext uzlu. Jinými slovy je vyvolána, pouze v případě změny kontextu.|  
+|Nastane, pokud je kurzor umístěn uvnitř <xref:Microsoft.Office.Tools.Word.XMLNode>.|Nastane, pokud je kurzor umístěn uvnitř <xref:Microsoft.Office.Tools.Word.XMLNode> nebo jeden z jeho podřízených uzlů, z oblasti mimo kontextu uzlu. Jinými slovy je vyvolána, pouze v případě změny kontextu.|  
   
- Například když přesunete kurzor z mimo `Customer` do `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> událost pro `Customer`, `Company`, a `CompanyName` je vyvolána. Pokud pak přesuňte se ukazatelem z `CompanyName` k `CompanyRegion`, jenom <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> událost pro `CompanyRegion` se vyvolá, protože je stále v kontextu obě `Company` a `Customer`.  
+ Například při přesunutí kurzoru z mimo `Customer` do `CompanyName`, <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> událost pro `Customer`, `Company`, a `CompanyName` je vyvolána. Pokud přesunete kurzor z `CompanyName` k `CompanyRegion`, pouze <xref:Microsoft.Office.Tools.Word.XMLNode.ContextEnter> událost pro `CompanyRegion` je vyvolána, protože jste stále v rámci obou `Company` a `Customer`.  
   
  Existují stejné rozdíly mezi <xref:Microsoft.Office.Tools.Word.XMLNode.ContextLeave> událostí a <xref:Microsoft.Office.Tools.Word.XMLNode.Deselect> událostí.  
   
@@ -85,7 +82,5 @@ ms.locfileid: "35258886"
  [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
  [XmlNodes – ovládací prvek](../vsto/xmlnodes-control.md)   
  [Postupy: Přidání ovládacích prvků XMLNode do dokumentů aplikace Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [Postupy: mapování schémat na dokumenty aplikace Word v sadě Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [Postupy: Mapování schémat na dokumenty aplikace Word v sadě Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

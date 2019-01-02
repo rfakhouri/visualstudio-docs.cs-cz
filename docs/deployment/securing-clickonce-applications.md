@@ -1,8 +1,6 @@
 ---
 title: Zabezpečování aplikací ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/17/2017
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a49bf9cbf2c43cd7692592b53b9aca2b256313
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944269"
 ---
 # <a name="secure-clickonce-applications"></a>Zabezpečení aplikací ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace jsou v souladu s omezením zabezpečení přístupu kódu v rozhraní .NET Framework pomáhají omezit přístupu k chráněným prostředkům a operacím. Z tohoto důvodu je důležité, že chápete důsledky zabezpečení přístupu kódu k zápisu vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace odpovídajícím způsobem. K omezení přístupu mohou vaše aplikace používat plnou důvěryhodnost nebo částečné zóny, jako jsou zóny pro Internet a Intranet.  
@@ -40,14 +38,14 @@ ms.locfileid: "39080337"
 |Instalace ze sdíleného síťového umístění|Zóna Místního intranetu|  
 |Instalace z disku CD-ROM|Plná důvěryhodnost|  
   
- Výchozí oprávnění jsou založena na umístění, ze kterého byla nasazena původní verze aplikace; aktualizace aplikace tato oprávnění zdědí. Pokud je aplikace nakonfigurována pro vyhledání aktualizací z webového nebo síťového umístění a je k dispozici novější verze, mohou původní instalace namísto oprávnění plné důvěryhodnosti přijímat oprávnění pro zónu Internetu nebo Intranetu. Chcete-li zabránit v zobrazování výzev uživatelům, může správce systému zadat zásady nasazení technologie ClickOnce, které definují konkrétního vydavatele aplikace jako důvěryhodný zdroj. Pro počítače, na kterých je tato zásada nasazena, budou oprávnění udělena automaticky a uživateli nebude zobrazena žádná výzva. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Chcete-li konfigurovat nasazení důvěryhodné aplikace, lze certifikát nainstalovat na úrovni počítače nebo podniku. Další informace najdete v tématu [postupy: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ Výchozí oprávnění jsou založena na umístění, ze kterého byla nasazena původní verze aplikace; aktualizace aplikace tato oprávnění zdědí. Pokud je aplikace nakonfigurována pro vyhledání aktualizací z webového nebo síťového umístění a je k dispozici novější verze, mohou původní instalace namísto oprávnění plné důvěryhodnosti přijímat oprávnění pro zónu Internetu nebo Intranetu. Chcete-li zabránit v zobrazování výzev uživatelům, může správce systému zadat zásady nasazení technologie ClickOnce, které definují konkrétního vydavatele aplikace jako důvěryhodný zdroj. Pro počítače, na kterých je tato zásada nasazena, budou oprávnění udělena automaticky a uživateli nebude zobrazena žádná výzva. Další informace najdete v tématu [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Chcete-li konfigurovat nasazení důvěryhodné aplikace, lze certifikát nainstalovat na úrovni počítače nebo podniku. Další informace najdete v tématu [jak: Přidání důvěryhodného vydavatele na klientský počítač pro aplikace ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Zásady zabezpečení přístupu kódu  
- Oprávnění pro aplikaci jsou určena nastavením v [ \<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) elementu v manifestu aplikace. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky generuje tyto informace podle nastavení v projektu **zabezpečení** stránku vlastností. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace jsou udělena pouze specifická oprávnění, která aplikace požaduje. V případech, kdy například přístup k souborům vyžaduje oprávnění plné důvěryhodnosti, pokud aplikace požaduje oprávnění přístupu k souborům, bude uděleno pouze oprávnění přístupu k souborům, nikoli oprávnění plné důvěryhodnosti. Při vývoji vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, ujistěte se, zda požadujete pouze konkrétní oprávnění, které aplikace potřebuje. Ve většině případů můžete nastavit omezení aplikace na částečnou důvěryhodnost pomocí zóny Internetu a Místního intranetu. Další informace najdete v tématu [postupy: nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Pokud aplikace požaduje vlastní oprávnění, můžete vytvořit vlastní zónu. Další informace najdete v tématu [postupy: nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Oprávnění pro aplikaci jsou určena nastavením v [ \<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) elementu v manifestu aplikace. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky generuje tyto informace podle nastavení v projektu **zabezpečení** stránku vlastností. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace jsou udělena pouze specifická oprávnění, která aplikace požaduje. V případech, kdy například přístup k souborům vyžaduje oprávnění plné důvěryhodnosti, pokud aplikace požaduje oprávnění přístupu k souborům, bude uděleno pouze oprávnění přístupu k souborům, nikoli oprávnění plné důvěryhodnosti. Při vývoji vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, ujistěte se, zda požadujete pouze konkrétní oprávnění, které aplikace potřebuje. Ve většině případů můžete nastavit omezení aplikace na částečnou důvěryhodnost pomocí zóny Internetu a Místního intranetu. Další informace najdete v tématu [jak: Nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Pokud aplikace požaduje vlastní oprávnění, můžete vytvořit vlastní zónu. Další informace najdete v tématu [jak: Nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Pokud použijete oprávnění, které není součástí výchozího oprávnění nastaveného pro zónu, ze které je aplikace nasazena, zobrazí se koncovému uživateli při instalaci nebo aktualizaci výzva k udělení oprávnění. Chcete-li zabránit v zobrazování výzev uživatelům, může správce systému zadat zásady nasazení technologie ClickOnce, které definují konkrétního vydavatele aplikace jako důvěryhodný zdroj. Na počítačích, na kterých je tato zásada nasazena, budou oprávnění udělena automaticky a uživateli nebude zobrazena žádná výzva.  
   
- Jako vývojář se musíte přesvědčit, zda lze aplikaci spustit i s příslušnými oprávněními. Pokud aplikace po spuštění požádá o oprávnění mimo zónu, může se zobrazit výjimka zabezpečení. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umožňuje ladit aplikaci v cílové zóně zabezpečení. a poskytuje pomoc při vývoji bezpečných aplikací. Další informace najdete v tématu [postupy: ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Jako vývojář se musíte přesvědčit, zda lze aplikaci spustit i s příslušnými oprávněními. Pokud aplikace po spuštění požádá o oprávnění mimo zónu, může se zobrazit výjimka zabezpečení. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umožňuje ladit aplikaci v cílové zóně zabezpečení. a poskytuje pomoc při vývoji bezpečných aplikací. Další informace najdete v tématu [jak: Ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Další informace o zabezpečení přístupu kódu a technologii ClickOnce naleznete v tématu [zabezpečení přístupu ke kódu pro aplikace ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
@@ -68,7 +66,7 @@ ms.locfileid: "39080337"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- Argumenty řetězce dotazu jsou zakázány. Aby se mohly, atribut `trustUrlParameters` musí být nastavena v manifestu nasazení aplikace. Tuto hodnotu můžete nastavit od [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a z MageUI.exe. Podrobné pokyny o postupu povolení předávání řetězce dotazu naleznete v tématu [postupy: načtení informací řetězce dotazu do online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
+ Argumenty řetězce dotazu jsou zakázány. Aby se mohly, atribut `trustUrlParameters` musí být nastavena v manifestu nasazení aplikace. Tuto hodnotu můžete nastavit od [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a z MageUI.exe. Podrobné pokyny o postupu povolení předávání řetězce dotazu naleznete v tématu [jak: Načtení informací řetězce dotazu do online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  
   
  Nikdy byste neměli předávat argumenty načtené pomocí řetězce dotazu do databáze nebo příkazového řádku bez ověřování argumentů a zajištění jejich bezpečnosti. Nebezpečné argumenty jsou argumenty s řídicími znaky databáze nebo příkazového řádku, které by mohly umožnit uživateli se zlými úmysly manipulaci s aplikací a provádění libovolných příkazů.  
   

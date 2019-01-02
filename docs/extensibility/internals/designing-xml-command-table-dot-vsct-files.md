@@ -1,9 +1,6 @@
 ---
 title: Návrh tabulky příkazů XML (. Soubory Vsct) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904293"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Návrh souborů tabulky (.vsct) příkaz XML
 Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz položek pro balíček VSPackage. Příkaz položky zahrnují tlačítka, pole se seznamem, nabídky, panely nástrojů a skupiny položek příkazu. Tento článek popisuje XML souborů tabulky příkazů, jak ovlivňují příkaz položky a v nabídkách a postupy jejich vytvoření.
@@ -28,7 +25,7 @@ Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz p
 
  Při vytváření nového balíčku VSPackage spuštěním [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíček šablony, tato šablona vygeneruje *.vsct* soubor s prvky nezbytné pro příkaz nabídky, okna nástroje nebo vlastní editor, v závislosti na zvolené položky. To *.vsct* soubor pak lze upravit podle požadavků konkrétního balíčku VSPackage. Příklady toho, jak upravit *.vsct* souborů naleznete v tématu [rozšířit nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).
 
- Vytvořit nový, prázdný *.vsct* souborů naleznete v tématu [postupy: vytvoření *.vsct* souboru](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Po vytvoření přidat prvky, atributy a hodnoty XML do souboru k popisu rozložení položky příkazu. Podrobné schématu XML, najdete v článku [– referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md).
+ Pokud chcete vytvořit nový, prázdný *.vsct* souborů naleznete v tématu [jak: Vytvoření *.vsct* souboru](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Po vytvoření přidat prvky, atributy a hodnoty XML do souboru k popisu rozložení položky příkazu. Podrobné schématu XML, najdete v článku [– referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Rozdíly mezi soubory .ctc a .vsct
  Zatímco význam za XML – značky v *.vsct* souboru jsou stejné jako značky v nyní zastaralé *.ctc* formát souboru, jejich implementace se trochu liší:
@@ -55,38 +52,38 @@ Tabulky příkazů XML (*.vsct*) soubor popisuje rozložení a vzhled příkaz p
 
 - *Ikonu* argument je nepovinný.
 
-- Bitmap – část: v této části jsou stejné jako v *.ctc* souboru, s tím rozdílem, že teď můžete zadat název souboru prostřednictvím Href, který bude i v *vsct.exe* kompilátor v době kompilace.
+- Rastrový obrázek části: V této části jsou stejné jako v *.ctc* souboru, s tím rozdílem, že teď můžete zadat název souboru prostřednictvím Href, který bude i v *vsct.exe* kompilátor v době kompilace.
 
-- ResID: ID může být použité a stále funguje stejně jako v prostředku rastrového obrázku starého *.ctc* soubory.
+- ResID: Starý rastrový ID může být použité a stále funguje stejně jako ve *.ctc* soubory.
 
-- HRef: Novou metodu, která vám umožní zadat název souboru prostředku rastrového obrázku. Předpokládá, že se používají všechny, tak můžete vynechat využité části. Kompilátor nejprve vyhledat místní prostředky pro soubor a pak na žádné čisté sdílených složek a všechny prostředky definované **/I** přepnout.
+- HRef: Nová metoda, která vám umožní zadat název souboru prostředku rastrového obrázku. Předpokládá, že se používají všechny, tak můžete vynechat využité části. Kompilátor nejprve vyhledat místní prostředky pro soubor a pak na žádné čisté sdílených složek a všechny prostředky definované **/I** přepnout.
 
-- Klávesové zkratky: Už máte k určení emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.
+- Klávesové zkratky: Už máte zadejte emulátoru. Pokud zadáte jednu, kompilátor bude předpokládat, že v editoru a emulátor jsou stejné.
 
 - Keychord: Keychord byla vyřazena. Nový formát je *klíč1, Mod1, klic2, Mod2*.  Můžete zadat znak, šestnáctkové číslo nebo konstantu VK.
        
 Nový kompilátor *vsct.exe*, zkompiluje obě *.ctc* a *.vsct* soubory. Starý *ctc.exe* kompilátoru, ale nebude rozpoznat nebo kompilací *.vsct* soubory.
 
-Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do souboru *.vsct* souboru. Další informace najdete v tématu [postupy: vytvoření souboru .vsct z existujícího souboru .cto](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do souboru *.vsct* souboru. Další informace najdete v tématu [jak: Vytvoření souboru .vsct z existujícího souboru .cto](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
 ## <a name="the-vsct-file-elements"></a>Prvky souborů .vsct
  Příkaz Tabulka obsahuje následující hierarchie a prvky:
 
- [Commandtable – element](../../extensibility/commandtable-element.md): představuje všechny příkazy, nabídky skupin a nabídky přidružené sady VSPackage.
+ [Commandtable – element](../../extensibility/commandtable-element.md): Představuje všechny příkazy, nabídky skupin a nabídky přidružené sady VSPackage.
 
- [Extern – element](../../extensibility/extern-element.md): odkazuje na všechny externí .h soubory, které chcete sloučit s *.vsct* souboru.
+ [Extern – element](../../extensibility/extern-element.md): Všechny externí .h soubory, které chcete sloučit s odkazy *.vsct* souboru.
 
- [Prvek direktivy include](../../extensibility/include-element.md): odkazuje na další záhlaví (.h) soubory chcete kompilovat spolu s vaší *.vsct* souboru. A *.vsct* soubor může obsahovat *.h* soubory, které obsahují konstanty, které určují příkazy skupiny nabídek a nabídek, které poskytuje integrované vývojové prostředí nebo jiné VSPackage.
+ [Prvek direktivy include](../../extensibility/include-element.md): Odkazuje na další záhlaví (.h) soubory chcete kompilovat spolu s vaší *.vsct* souboru. A *.vsct* soubor může obsahovat *.h* soubory, které obsahují konstanty, které určují příkazy skupiny nabídek a nabídek, které poskytuje integrované vývojové prostředí nebo jiné VSPackage.
 
- [Commands – element](../../extensibility/commands-element.md): představuje všechny jednotlivé příkazy, které mohou být provedeny. Každý příkaz má následující čtyři podřízených elementů:
+ [Commands – element](../../extensibility/commands-element.md): Představuje všechny jednotlivé příkazy, které mohou být provedeny. Každý příkaz má následující čtyři podřízených elementů:
 
- [Menus – element](../../extensibility/menus-element.md): představuje všechny nabídky a panely nástrojů v sady VSPackage. Nabídky jsou kontejnery pro skupiny příkazů.
+ [Menus – element](../../extensibility/menus-element.md): Představuje všechny nabídky a panely nástrojů v sady VSPackage. Nabídky jsou kontejnery pro skupiny příkazů.
 
- [Groups – element](../../extensibility/groups-element.md): představuje všechny skupiny v sady VSPackage. Skupiny jsou kolekce jednotlivé příkazy.
+ [Groups – element](../../extensibility/groups-element.md): Představuje všechny skupiny v sady VSPackage. Skupiny jsou kolekce jednotlivé příkazy.
 
- [Buttons – element](../../extensibility/buttons-element.md): představuje všechny příkazy a položek nabídky v sady VSPackage. Tlačítka jsou vizuální ovládací prvky, které můžou být spojené s příkazy.
+ [Buttons – element](../../extensibility/buttons-element.md): Představuje všechny příkazy a položek nabídky v sady VSPackage. Tlačítka jsou vizuální ovládací prvky, které můžou být spojené s příkazy.
 
- [Bitmaps – element](../../extensibility/bitmaps-element.md): představuje všechny rastrové obrázky pro všechna tlačítka ve sady VSPackage. Rastrové obrázky mají obrázky, které zobrazují vedle nebo na příkazových tlačítkách, v závislosti na kontextu.
+ [Bitmaps – element](../../extensibility/bitmaps-element.md): Představuje všechny rastrové obrázky pro všechna tlačítka ve sady VSPackage. Rastrové obrázky mají obrázky, které zobrazují vedle nebo na příkazových tlačítkách, v závislosti na kontextu.
 
  [Commandplacements – element](../../extensibility/commandplacements-element.md): Určuje další umístění, kde jednotlivé příkazy by měl být umístěn v nabídkách vašeho balíčku VSPackage.
 
@@ -94,9 +91,9 @@ Můžete použít *vsct.exe* kompilátor pro převod z existujícího *.cto* do 
 
  [Keybindings – element](../../extensibility/keybindings-element.md): Určuje všechny klávesové zkratky pro příkazy. To znamená, že nejmíň jeden kombinace kláves, které musí být stisknutí k provedení příkazu, jako například **Ctrl**+**S**.
 
- [Usedcommands – element](../../extensibility/usedcommands-element.md): informuje o tom, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, i když zadaný příkaz je implementována jiným kódem, pokud aktuální VSPackage je aktivní, poskytuje implementace příkazu.
+ [Usedcommands – element](../../extensibility/usedcommands-element.md): Informuje o tom, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, i když zadaný příkaz je implementována jiným kódem, pokud aktuální VSPackage je aktivní, poskytuje implementace příkazu.
 
- [Symbols – element](../../extensibility/symbols-element.md): obsahuje názvy symbolů a identifikátory GUID všech příkazů v balíčku.
+ [Symbols – element](../../extensibility/symbols-element.md): Obsahuje názvy symbolů a identifikátory GUID všech příkazů v balíčku.
 
 ## <a name="vsct-file-design-guidelines"></a>Pokyny k návrhu souboru .vsct
  Úspěšně návrhu *.vsct* souborů, postupujte podle následujících pokynů.

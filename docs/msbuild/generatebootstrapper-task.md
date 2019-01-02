@@ -1,8 +1,6 @@
 ---
 title: GenerateBootstrapper – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891839"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper – úloha
 Poskytuje automatizovaný způsob, jak zjistit, stáhnout a nainstalovat aplikace a její požadované součásti. Slouží jako jeden instalační program, který integruje dva různé instalační programy pro všechny součásti tvořící aplikaci.  
@@ -94,11 +92,11 @@ Poskytuje automatizovaný způsob, jak zjistit, stáhnout a nainstalovat aplikac
   
    Určuje umístění pro zaváděcí nástroj hledání instalační požadavky k instalaci. Tento parametr může mít následující hodnoty:  
   
-  - `HomeSite`: Označuje, že se kontrolu požadovaných součástí hostována dodavatelem součásti.  
+  - `HomeSite`: Označuje, že kontrolu požadovaných součástí je hostovaná dodavatelem součásti.  
   
-  - `Relative`: Označuje, že kontrolu požadovaných součástí ve stejném umístění aplikace.  
+  - `Relative`: Označuje, že kontrolu požadovaných součástí je ve stejném umístění aplikace.  
   
-  - `Absolute`: Označuje, že všechny komponenty se nachází na centralizované adrese URL. Tato hodnota má být použita ve spojení s `ComponentsUrl` vstupního parametru.  
+  - `Absolute`: Označuje, že všechny komponenty jsou vyhledaných na centralizované adrese URL. Tato hodnota má být použita ve spojení s `ComponentsUrl` vstupního parametru.  
   
     Pokud `ComponentsLocation` není zadán, `HomeSite` se používá ve výchozím nastavení.  
   

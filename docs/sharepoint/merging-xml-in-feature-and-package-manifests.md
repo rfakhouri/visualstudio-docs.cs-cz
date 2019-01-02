@@ -1,9 +1,6 @@
 ---
-title: Sloučení XML do funkce a balíku manifestů | Microsoft Docs
-ms.custom: ''
+title: Sloučení XML do funkce a balíku manifestů | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,73 +12,72 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914433"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Sloučení XML do manifestů funkce a balíku
-  Funkce a balíčky jsou definovány [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifest soubory. Tyto zabalené manifesty představují kombinaci data vygenerovaná ze návrháři a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zadané v šabloně manifestu uživateli. Během balení [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] slučuje vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] příkazy s zadaný Návrhář [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] na formuláři zabalené [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] souboru manifestu. Podobným elementům s výjimky uvedené dále v sloučení výjimky jsou sloučeny předejdete [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] chyby ověření po nasazení soubory do služby SharePoint, a aby manifest soubory menší a efektivnější.  
+  Součásti a balíčky jsou definovány [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubory manifestu. Tyto zabalených manifestů jsou kombinací dat vygenerovaných z návrháře a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zadané v šabloně manifestu uživateli. Během vytváření balíčků [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sloučí vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] příkazy s poskytnutou návrháře [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] k balení [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubor manifestu. Podobné prvky, s výjimkami uvedenými později v sloučit výjimky jsou sloučeny, aby [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] chyby ověření po nasazení souborů do služby SharePoint a chcete-li manifest soubory menší a efektivnější.  
   
 ## <a name="modify-the-manifests"></a>Upravit manifestů
- Souborů v manifestu balíčku nemohou upravovat přímo, dokud zakážete návrháři funkce nebo balíčku. Však můžete ručně přidat vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementy do manifestu šablony buď prostřednictvím funkce a balíku Designer nebo [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Další informace najdete v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) a [postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+ Zabalené soubory manifestu nemůžete upravovat přímo, dokud zakázat návrháři funkce nebo balíček. Však můžete ručně přidat vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] prvků, které se v šabloně manifestu prostřednictvím funkce a balíku návrháři nebo [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editoru. Další informace najdete v tématu [jak: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) a [jak: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>Funkce a balíku manifest proces sloučení
- Při kombinování vlastní elementy společně s Zadaný návrhář elementy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] používá následující proces. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kontroluje, zda má každý element jedinečnou hodnotu klíče. Pokud element má žádná hodnota jedinečné klíče, připojí se k zabalené souboru manifestu. Podobně nelze sloučit prvky, které mít několik klíčů. Proto se připojují k souboru manifestu.  
+ Při kombinování vlastní elementy spolu s zadaný Návrhář prvky [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] používá následující proces. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] kontroluje, zda každý prvek má jedinečnou hodnotu klíče. Pokud element nemá žádné jedinečnou hodnotu klíče, je připojen k souboru manifestu balíčku. Podobně nelze sloučit elementy, které mají více klíčů. Proto se připojují k souboru manifestu.  
   
- Pokud element má jedinečný klíč, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] porovnává hodnoty designer a vlastní klíče. Pokud se hodnoty shodují, sloučení do jedné hodnoty. Pokud se hodnoty liší, budou zahozeny návrháře hodnota klíče a používá vlastní hodnota klíče. Sloučena jsou rovněž kolekce. Například pokud generované Návrhář [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] současně obsahovat kolekci sestavení, zabalené manifest obsahuje pouze jednu kolekci sestavení.  
+ Pokud element má jedinečný klíč, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] porovnává hodnoty návrháře a vlastních klíčů. Pokud se hodnoty shodují, sloučí do jediné hodnoty. Pokud se hodnoty liší, návrháře hodnotu klíče jsou data zahozena a použít vlastní hodnotu klíče. Kolekce jsou také sloučeny. Například pokud generovaný návrhářem [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] současně obsahovat kolekci sestavení, manifest balíčku obsahuje pouze jednu kolekci sestavení.  
   
-## <a name="merge-exceptions"></a>Merge – výjimky
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sloučí většina Návrhář [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementy společně s podobnou vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] prvky, pokud mají jeden jedinečné identifikační atribut. Ale některé prvky nedostatku jedinečný identifikátor požadované pro [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] sloučení. Tyto prvky se označují jako *sloučení výjimky*. V těchto případech [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nesloučí vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementy společně s zadaný Návrhář [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementů, ale místo toho je připojí k zabalené souboru manifestu.  
+## <a name="merge-exceptions"></a>Sloučit výjimky
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Sloučí většina návrháře [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] prvky spolu s vlastní podobné [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] prvky, dokud mají jednu, jedinečné identifikační atribut. Nicméně některé prvky nemají jedinečný identifikátor, vyžaduje se pro [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] sloučení. Tyto prvky jsou označovány jako *sloučit výjimky*. V těchto případech [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nesloučí vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] prvky spolu s poskytnutou návrháře [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementů, ale místo toho je připojí k souboru manifestu balíčku.  
   
- Následuje seznam sloučení výjimky pro funkce a balíku [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifest soubory.  
+ Následuje seznam výjimek sloučení pro funkce a balíku [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] soubory manifestu.  
   
-|Návrhář|XML Element|  
+|Návrhář|– Element XML|  
 |--------------|-----------------|  
 |Funkce návrháře|ActivationDependency|  
 |Funkce návrháře|UpgradeAction|  
-|Návrháře balíčků|SafeControl –|  
-|Návrháře balíčků|CodeAccessSecurity|  
+|Návrháři balíčku|SafeControl –|  
+|Návrháři balíčku|CodeAccessSecurity|  
   
-## <a name="feature-manifest-elements"></a>Prvky manifestu funkce
- V následující tabulce je seznam všech prvků manifestu funkce, které by se daly sloučit a jejich jedinečný klíč, který se používá k porovnání.  
+## <a name="feature-manifest-elements"></a>Elementy manifestu funkce
+ V následující tabulce je seznam všech prvků manifestu funkce, které lze sloučit a jejich jedinečný klíč, který se použije pro porovnání.  
   
 |Název elementu|Jedinečný klíč|  
 |------------------|----------------|  
-|Funkce (všechny atributy)|*Atribut název* (každý atribut název elementu funkce je jedinečný klíč.)|  
+|Funkce (všechny atributy)|*Atribut název* (každý název atributu, elementu funkce, který je jedinečný klíč.)|  
 |ElementFile|Umístění|  
 |ElementManifests/ElementManifest|Umístění|  
-|Vlastnosti nebo vlastnost|Key|  
+|Vlastnost Properties /|Key|  
 |CustomUpgradeAction|Název|  
 |CustomUpgradeActionParameter|Název|  
   
 > [!NOTE]  
->  Protože je jediný způsob, jak upravit CustomUpgradeAction element ve vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, účinek není slučování je nízká.  
+>  Protože je jediný způsob, jak upravovat prvek CustomUpgradeAction ve vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editoru nelze sloučit efekt je nízká.  
   
 ## <a name="package-manifest-elements"></a>Elementy manifestu balíčku
- V následující tabulce je seznam všech elementů manifestu balíčku, které by se daly sloučit a jejich jedinečný klíč, který se používá k porovnání.  
+ V následující tabulce je seznam všech prvků manifestu balíčku, které lze sloučit a jejich jedinečný klíč, který se použije pro porovnání.  
   
 |Název elementu|Jedinečný klíč|  
 |------------------|----------------|  
-|Řešení (všechny atributy)|*Atribut název* (každý atribut název prvku řešení je jedinečný klíč.)|  
+|Řešení (všechny atributy)|*Atribut název* (každý atribut name elementu řešení je jedinečný klíč.)|  
 |ApplicationResourceFiles/ApplicationResourceFile|Umístění|  
 |Sestavení a sestavení|Umístění|  
 |ClassResources/ClassResource|Umístění|  
-|Soubor DwpFiles nebo DWP|Umístění|  
+|DwpFiles/soubor DWP|Umístění|  
 |FeatureManifests/FeatureManifest|Umístění|  
-|Prostředky nebo prostředků|Umístění|  
+|/ Prostředků|Umístění|  
 |RootFiles/RootFile|Umístění|  
 |SiteDefinitionManifests/SiteDefinitionManifest|Umístění|  
 |WebTempFile|Umístění|  
 |TemplateFiles/TemplateFile|Umístění|  
 |SolutionDependency|SolutionID|  
   
-## <a name="manually-add-deployed-files"></a>Ručně přidat nasazené soubory
- Některé manifestu prvky, jako jsou například ApplicationResourceFile a DwpFiles, zadejte umístění, které obsahuje název souboru. Však přidání položky název souboru manifestu šablony nepřidává žádné další podkladový soubor balíčku. Soubor musí přidat k projektu a její zahrnutí do balíčku nastavte vlastnost typu nasazení odpovídajícím způsobem.  
+## <a name="manually-add-deployed-files"></a>Ručně přidejte nasazených souborů
+ Některé elementy manifestu, například ApplicationResourceFile a DwpFiles, zadejte umístění, která obsahuje název souboru. Ale přidání záznam o názvu souboru manifestu šablony nepřidá základního souboru balíčku. Musíte přidat soubor do projektu, které chcete zahrnout do balíčku a odpovídajícím způsobem nastavte jeho vlastnost typ nasazení.  
   
 ## <a name="see-also"></a>Viz také:
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
- [Vytváření a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
+ [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

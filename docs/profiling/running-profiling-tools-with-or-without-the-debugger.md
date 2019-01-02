@@ -1,8 +1,6 @@
 ---
 title: Spustit profilování nástroje s nebo bez ladicího programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941411"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj
 
@@ -55,7 +53,7 @@ Můžete také zobrazit **diagnostické nástroje** pro vzdálené ladění cíl
 
 ### <a name="the-events-tab"></a>Na kartě události
 
-Během relace ladění **události** karty **diagnostické nástroje** okně zobrazí diagnostické události, ke kterým dochází. Předpony kategorií: **zarážku**, **souboru**, a jiné, vám umožní rychle vyhledat v seznamu kategorie, nebo přeskočit kategorie nezáleží.  
+Během relace ladění **události** karty **diagnostické nástroje** okně zobrazí diagnostické události, ke kterým dochází. Předpony kategorií: **Zarážka**, **souboru**, a jiné, vám umožní rychle vyhledat v seznamu kategorie, nebo přeskočit kategorie nezáleží.  
   
 Použití **filtr** rozevírací seznam můžete filtrovat události a zobrazení výběrem nebo zrušením výběru konkrétní kategorie události. 
 
@@ -126,7 +124,7 @@ Následují blogy a články MSDN od vývojového týmu diagnostiky:
   
  [Video: Ladění problémů s výkonem pomocí sady Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [Tipy pro výkon: Informace o výkonu v přehledem při ladění se sadou Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [Tipy pro výkon: Výkon informace na přehledem při ladění se sadou Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
  [Ladicí program okně diagnostické nástroje v sadě Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   

@@ -1,9 +1,6 @@
 ---
 title: 'Testovací oblast 1: Přidání nebo otevření ze správy zdrojových kódů | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
@@ -14,28 +11,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842668"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Testovací oblast 1: Přidání / otevřít ze správy zdrojového kódu
+# <a name="test-area-1-add-toopen-from-source-control"></a>Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu
 Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení řešení nebo projektů pod správou zdrojových kódů a načítání ze správy zdrojového kódu.  
   
 ## <a name="command-menu-access"></a>Přístup do příkazu nabídky  
  Následující [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí nabídky cesty se používají v testovacích případů:  
   
-- Pro [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], otevřít ze správy zdrojových kódů: **souboru**, **otevřete**, **projektu**/**řešení**; hledejte v [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] umístění.  
+- Pro [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], otevřít ze správy zdrojového kódu: **Soubor**, **otevřít**, **projektu**/**řešení**; hledejte v [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] umístění.  
   
-- Pro další ovládací prvek moduly plug-in zdrojového kódu, otevřít ze správy zdrojových kódů: **souboru**, **správy zdrojových kódů**, **otevřít ze správy zdrojových kódů**.  
+- Pro další ovládací prvek moduly plug-in zdrojového kódu otevřete ze správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **otevřít ze správy zdrojových kódů**.  
   
-- Přidat do správy zdrojového kódu: **souboru**, **správy zdrojových kódů**, **přidat řešení do soubor správy zdrojového kódu**, **správy zdrojových kódů**, **přidat Vybrané projekty do správy zdrojových kódů**.  
+- Přidáte do správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **přidat řešení do soubor správy zdrojového kódu**, **správy zdrojového kódu**, **přidat do správy zdrojových kódůvybranýchprojektů**.  
   
 - Místní nabídky (projekt nebo řešení), **přidat řešení do správy zdrojových kódů**.  
   
-- Přidat ze správy zdrojových kódů: **souboru**, **správy zdrojových kódů**, **přidat projekt ze správy zdrojových kódů**.  
+- Přidáte ze správy zdrojového kódu: **Soubor**, **správy zdrojového kódu**, **přidat projekt ze správy zdrojových kódů**.  
   
 - Pro [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], přidejte ze zdrojového ovládacího prvku je k dispozici také z **souboru**, **přidat**, **existující projekt**; hledejte v [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] umístění.  
   
@@ -57,7 +54,7 @@ Tento zdroj – ovládací prvek modulu plug-in testu pozadí oblasti uvedení �
 ## <a name="test-cases"></a>Testovací případy  
  Tady jsou konkrétní testovací případy pro přidání / otevřít ze správy zdrojových kódů testovací oblast.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Malá a velká 1a: Přidat řešení do správy zdrojového kódu  
+### <a name="case-1a-add-solution-to-source-control"></a>Případu 1a: Přidat řešení do správy zdrojového kódu  
  Tento testovací případ se zaměřuje na přidání řešení do správy zdrojového kódu.  
   
 |Akce|Testovací kroky|Chcete-li ověřit očekávané výsledky|  

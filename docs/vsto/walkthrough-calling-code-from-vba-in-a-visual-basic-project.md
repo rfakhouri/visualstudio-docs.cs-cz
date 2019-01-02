@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic'
-ms.custom: ''
+title: 'Průvodce: Volání kódu z jazyka VBA v projektu jazyka Visual Basic'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917654"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Průvodce: Volání kódu z jazyka VBA v projektu jazyka Visual Basic
   Tento návod ukazuje, jak volat metodu v přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word v prostředí Visual Basic pro kód Applications (VBA) v dokumentu. Postup zahrnuje tři základní kroky: Přidejte metodu k `ThisDocument` hostování třída položek, zveřejňují metodu pro kód VBA a poté zavolejte metodu z kód VBA v dokumentu.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -72,7 +69,7 @@ ms.locfileid: "38808934"
 3.  Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
     > [!NOTE]  
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  V **kód** klikněte na možnost **jazyka Visual Basic**.  
   
@@ -108,7 +105,7 @@ ms.locfileid: "38808934"
   
 6.  V **název** zadejte **CallingCodeFromVBA**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      **Visual Studio Tools for Office Project Wizard** otevře.  
   
@@ -214,15 +211,13 @@ ms.locfileid: "38808934"
 ## <a name="next-steps"></a>Další kroky  
  Další informace o volání kódu v řešeních pro systém Office z jazyka VBA v těchto tématech:  
   
--   Volání kódu v přizpůsobení jazyka Visual C# z jazyka VBA. Tento proces se liší od procesu jazyka Visual Basic. Další informace najdete v tématu [návod: volání kódu z jazyka VBA v aplikaci Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+-   Volání kódu v přizpůsobení jazyka Visual C# z jazyka VBA. Tento proces se liší od procesu jazyka Visual Basic. Další informace najdete v tématu [názorný postup: Volání kódu z jazyka VBA v aplikaci Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
--   Volání kódu v doplňku VSTO z jazyka VBA. Další informace najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Volání kódu v doplňku VSTO z jazyka VBA. Další informace najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Kombinování přizpůsobení na úrovni dokumentu a VBA](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
- [Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Postupy: vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Postupy: Vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Postupy: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Návod: Volání kódu z jazyka VBA v aplikaci Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
-title: Měření režimu zapnutí a vypnutí | Microsoft Docs
-ms.custom: ''
+title: Zapnutí nebo vypnutí režimu měření | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.measure
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: be23f8bd454790065f7d30bc283c52089e964692
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912607"
 ---
-# <a name="measure-mode-onoff"></a>Režimu míry zapnout nebo vypnout
-Pomocí tohoto nástroje lze přesně změřit časový interval v časové ose. Pokud chcete povolit režim měr, klikněte na tlačítko měr (což je ikona pravítka) a poté přetáhněte v časové ose. Při tažení Všimněte si, že oblasti pod ukazatelem je zvýrazněn žlutě a měření času se zobrazí na panelu nástrojů pravé tlačítko. Tato hodnota je vypočítána dynamicky a přetáhněte tak, aby okamžitě uvidíte, jak dlouho trvá určitá událost. Po uvolnění tlačítka myši, zůstává viditelná hodnoty time.  
+# <a name="measure-mode-onoff"></a>Zapnout nebo vypnout režim míry
+Pomocí tohoto nástroje můžete přesně změřit dobu na časové ose. Pokud chcete povolit režim míry, klikněte na tlačítko měr, (který má ikonu pravítka) a potom přetáhněte na časové ose. Při přetahování, Všimněte si, že oblast pod ukazatelem je zvýrazněn žlutě a měření času se zobrazí na panelu nástrojů na pravé straně tlačítka. Tato hodnota se vypočítá dynamicky při přetahování tak, aby umožňují okamžitě zjistit, jak dlouho trvá konkrétní události. Když uvolníte tlačítko myši, časová hodnota zůstává viditelná.  
   
- Proces měření můžete opakovat, ale je zobrazena pouze nejnovější měření. Klikněte na tlačítko měr znovu k vypnutí režimu míry.  
+ Měření procesu můžete opakovat, ale je zobrazena pouze nejnovější měření. Klikněte na tlačítko míru znovu k vypnutí režimu míry.  
   
 ## <a name="see-also"></a>Viz také:  
  [Správa kanálů](../profiling/manage-channels.md)   

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_localbasepointerregisterid – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7775de97e8bdd37223b772999f30f5808bf1b2b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 040905a1e61f84e36bc2f01191a69ca1eceda0f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896757"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 Načte ID do registru, který obsahuje základní ukazatel na místní proměnné v zásobníku. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.  
@@ -27,7 +25,7 @@ Načte ID do registru, který obsahuje základní ukazatel na místní proměnn�
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_localBasePointerRegisterId (   
+HRESULT get_localBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_localBasePointerRegisterId (
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   

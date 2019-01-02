@@ -223,35 +223,34 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932717"
 ---
-# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Odstraňování chyb přístupu k datům ve fórech
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Řešení chyb datového přístupu ve fórech
 
-Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné fórech Microsoft Developer Network (MSDN). Tady jsou některé fóra souvisejících s daty k dispozici na webu MSDN:
+Pomoc při řešení problémů s chybami a upozorněními můžete najít na veřejných fórech Microsoft Developer Network (MSDN). Tady jsou některé související s daty fórech k dispozici na webu MSDN:
 
 - [Ovládací prvky Windows Forms dat a datové vazby](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
-- [Fórum pro technologii ADO.NET datové sady](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
+- [Fórum pro datové sady ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
-- [ADO.NET Entity Framework a technologii LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
+- [ADO.NET Entity Framework a LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
-- [Fórum služby WCF data](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
+- [Fórum služby WCF data services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Fórum přístup dat systému SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Fórum pro přístup k systému SQL Server data](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [Technologie LINQ to SQL fórum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
-- [Fórum zprostředkovatele dat ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
+- [Fórum zprostředkovatelé dat ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-Informace o řešení potíží s připojením k serveru SQL Server najdete v tématu [Poradce při připojování k databázovému stroji systému SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+Informace o řešení potíží s připojením k SQL serveru najdete v tématu [Poradce při připojování k databázovým strojem SQL serveru](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -1,9 +1,6 @@
 ---
-title: IDebugActivateDocumentEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugActivateDocumentEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugActivateDocumentEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8307776a3dda9f086cdb77d2880228f14a62b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 190eb405d4c3158a9dd3b131e15a6a999cd862e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895815"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
-Modul ladění (DE) používá toto rozhraní k vyžádání dokument se jej načíst.  
+Ladicí stroj (DE) používá toto rozhraní k vyžádání dokumentu, který se má načíst.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,28 +29,28 @@ IDebugActivateDocumentEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE toto rozhraní implementuje, když potřebuje zdrojový soubor otevřít. Toto rozhraní je implementováno pouze pomocí ladění strojů, které pracovat nebo jsou součástí překladače skriptu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) rozhraní musí být implementována pro stejný objekt jako toto rozhraní (SDM používá [QueryInterface](/cpp/atl/queryinterface) pro přístup k `IDebugEvent2` rozhraní).  
+ DE implementuje toto rozhraní, když je nutné otevřít zdrojový soubor. Toto rozhraní je implementováno pouze ladicími stroji, které pracovat, nebo jsou součástí interpretů skriptu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musí implementovat rozhraní na stejný objekt jako toto rozhraní (SDM používá [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní).  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- DE vytvoří a odešle tento objekt událost, když potřebuje mít zdrojový soubor otevřít. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytl SDM, pokud je připojené k programu laděné funkce zpětného volání.  
+ DE vytvoří a odešle tento objekt událost, když je nutné otevřít zdrojový soubor. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytnutých SDM při připojení k laděnému programu funkce zpětného volání.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugActivateDocumentEvent2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugActivateDocumentEvent2`.  
   
 |Metody|Popis|  
 |-------------|-----------------|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Získá dokument, který chcete aktivovat.|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Získá kontext dokumentu, která popisuje pozici v tomto dokumentu.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Získá dokument k aktivaci.|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Získá kontext dokumentu, který popisuje pozici v dokumentu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Typický scénář, ve kterém se používá toto rozhraní je, že pokud se v kód skriptu na stránce HTML dojde k chybě analýzy, skript DE odešle toto rozhraní SDM tak, aby došlo k chybě analýzy dokumentu lze zobrazit.  
+ Typický scénář, ve kterém se používá toto rozhraní je že v případě Chyba analýzy v kódu skriptu na stránku HTML skript DE odešle toto rozhraní SDM tak, aby dokument se chyba analýzy mohou být zobrazeny.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

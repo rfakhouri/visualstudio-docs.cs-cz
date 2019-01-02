@@ -1,8 +1,6 @@
 ---
 title: Ladění kódu HTML a CSS v aplikacích pro UWP | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892712"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Ladění kódu HTML a CSS v aplikacích pro UWP v sadě Visual Studio
   
@@ -31,7 +29,7 @@ ms.locfileid: "49916683"
   
  Interaktivní ladění modelu k dispozici prostřednictvím nástrojů kontroly modelu DOM můžete zobrazit a upravit vykresleným kódem HTML a CSS. Provedete to vše bez zastavení a restartování ladicího programu.
   
- Informace o dalších funkcí, jako je například používání okna konzoly jazyka JavaScript a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Informace o dalších funkcí, jako je například používání okna konzoly jazyka JavaScript a nastavovat zarážky, ladění jazyka JavaScript naleznete v tématu [rychlý start: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md) a [ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).  
   
 ##  <a name="InspectingDOM"></a> Kontrola live DOM  
  Průzkumník modelu DOM se dozvíte, zobrazení vykreslené stránky a Průzkumníka modelu DOM můžete změnit hodnoty a hned vidět výsledky. To umožňuje testovat změny bez zastavení a restartování ladicího programu. Zdrojový kód v projektu nemění, když pracujete s stránce tímto způsobem, takže když najdete odpovídající kód opravy provedete změny zdrojového kódu.  
@@ -47,7 +45,7 @@ ms.locfileid: "49916683"
   
 - Zkontrolujte použití stylů CSS pro elementy stránek a trasování, které se použily pravidla.  
   
-  Při ladění aplikací často potřebujete k výběru elementů v Průzkumníku modelu DOM. Při výběru prvku hodnoty zobrazené na kartách na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážely vybraný element v Průzkumníku modelu DOM. Jedná se o karty: **styly**, **vypočítané**, **rozložení**. Také podpora aplikací pro UWP **události** a **změny** karty. Další informace o výběru elementů naleznete v tématu [výběru elementů](#SelectingElements).  
+  Při ladění aplikací často potřebujete k výběru elementů v Průzkumníku modelu DOM. Při výběru prvku hodnoty zobrazené na kartách na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážely vybraný element v Průzkumníku modelu DOM. Jde o karty: **Styly**, **vypočítané**, **rozložení**. Také podpora aplikací pro UWP **události** a **změny** karty. Další informace o výběru elementů naleznete v tématu [výběru elementů](#SelectingElements).  
   
 > [!TIP]
 >  Pokud se zavře okno Průzkumníka modelu DOM, zvolte **ladění**>**Windows** > **Průzkumníka modelu DOM** znovu otevřít. V okně se zobrazí jenom při relaci ladění skriptu.  
@@ -225,7 +223,7 @@ ms.locfileid: "49916683"
   
 2.  Otevřete soubor default.html a upravit zdrojový kód tak, že změníte výšku a šířku `"fView"` elementu DIV na 100 %.  
   
-3.  Zvolte **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Tlačítko vypadá takto: ![tlačítko Aktualizovat Windows app](../debugger/media/js_refresh.png "JS_Refresh").  
+3.  Zvolte **aktualizovat Windows app** tlačítko na panelu nástrojů ladění (nebo stisknutím klávesy F4). Tlačítko vypadá takto: ![Aktualizovat aplikaci Windows](../debugger/media/js_refresh.png "JS_Refresh").  
   
      Znovu načíst stránky aplikace a simulátor nebo emulátor telefonu vrátí do popředí.  
   
@@ -256,7 +254,7 @@ ms.locfileid: "49916683"
 >  Zvýrazňování elementů podržením ukazatele nad nich je jenom částečně podporovány v emulátoru Windows Phone.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Ladění aplikací v sadě Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Ladění ovládacího prvku WebView](../debugger/debug-a-webview-control.md)   
  [Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)   

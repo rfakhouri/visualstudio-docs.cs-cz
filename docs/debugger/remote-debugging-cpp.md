@@ -2,7 +2,6 @@
 title: Vzdálené ladění projektu ve Visual C++ | Dokumentace Microsoftu
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884581"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Vzdálené ladění projektu ve Visual C++ v sadě Visual Studio
 Ladění aplikace Visual Studio na jiném počítači, nainstalovat a spustit nástroje remote tools v počítači, kde bude nasazovat aplikace, nakonfigurujte projekt tak, aby připojení ke vzdálenému počítači ze sady Visual Studio a pak nasaďte a spusťte aplikaci.
@@ -73,7 +72,7 @@ Vzdálený ladicí program podporuje se ve Windows 7 a novější (ne telefon) a
    |Vzdálený příkaz|C:\remotetemp\mymfc.exe|  
    |Pracovní adresář|C:\remotetemp|  
    |Název vzdáleného serveru|MJO DL:*číslo_portu*|  
-   |připojení|Vzdálený s ověřováním Windows|  
+   |Připojení|Vzdálený s ověřováním Windows|  
    |Typ ladicího programu|Pouze nativní|  
    |Adresář nasazení|C:\remotetemp.|  
    |Další soubory k nasazení|C:\data\mymfcdata.txt.|  

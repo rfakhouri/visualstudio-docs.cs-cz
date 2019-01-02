@@ -1,8 +1,6 @@
 ---
 title: Koncepty nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, concepts
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961f7df72476293c101ceeacbafbb31c1084fb20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1aaaf8dfae7ed0fd3626779fa1ba33e795d9f1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913501"
 ---
 # <a name="msbuild-concepts"></a>Koncepty nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje základní schéma XML, které vám umožní řídit, jak sestavení platformy sestavení softwaru. Chcete-li v sestavení a jak mají být sestaveny určete součásti, použijte tyto čtyři části nástroje MSBuild: vlastnosti, položky, úlohy a cíle.  
@@ -36,4 +34,3 @@ ms.locfileid: "49892879"
 | [Návod: Použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md) | Představuje stavebními bloky nástroje MSBuild a ukazuje, jak psát, manipulaci a ladit projekty MSBuild bez zavření sady Visual Studio integrované vývojové prostředí (IDE). |
 | [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md) | Obsahuje odkazy na dokumenty, které obsahují referenční informace. |
 | [MSBuild](../msbuild/msbuild.md) | Obsahuje přehled schématu XML pro soubor projektu a ukazuje, jak určuje procesy, které vytvoří software. |
-

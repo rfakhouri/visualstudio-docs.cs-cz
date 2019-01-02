@@ -1,9 +1,6 @@
 ---
 title: Modely aplikací pro sadu Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62f7f75293c895ca1dcfd39c2a03162a43a3904
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898569"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modely aplikací pro sadu Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a> Okno interakce  
@@ -126,7 +123,7 @@ Příklady oken nástrojů lze procházet seznam: v Průzkumníku řešení a v 
 
 | Panel nástrojů | Funkce | 
 | --- | --- | 
-| Najít | Dialogové okno, které mu umožní najít nebo najít a nahradit v různých souborů v rámci řešení. |
+| Vyhledávání | Dialogové okno, které mu umožní najít nebo najít a nahradit v různých souborů v rámci řešení. |
 | Rozšířené hledání | Dialogové okno, které mu umožní najít nebo najít a nahradit v různých souborů v rámci řešení. | 
 
 **Jiné nástroje systému windows**
@@ -143,9 +140,9 @@ Příklady oken nástrojů lze procházet seznam: v Průzkumníku řešení a v 
 | Automatické hodnoty ||  
 | Okamžité ||  
 | Výstup | Pokaždé, když máte textové události nebo stavu k deklaraci je možné v okně výstup. |  
-| Paměť ||  
+| Memory (Paměť) ||  
 | Zarážky ||  
-| Spuštění ||  
+| Spuštěno ||  
 | Dokumenty ||  
 | Zásobník volání ||  
 | Místní hodnoty ||  
@@ -186,15 +183,15 @@ Existuje několik různých typů základní editory dokumentu a každý má sad
 
 -   **Návrhová plocha:** WPF forms designer, Windows forms  
 
--   **Editor dialogového okna style:** Manifest Designer Vlastnosti projektu  
+-   **Editor dialogového okna – vizuální styl:** Manifest Designer, vlastnosti projektu  
 
 -   **Návrhář modelů:** návrháře postupu provádění, codemap, diagram architektury, průběh  
 
 Existují také několik typů bez editoru, které používají dobře dokumentu. Při jejich neupravujte samotných dokumentech, musí dodržovat standardní interakce pro okna dokumentu.  
 
--   **Sestavy:** sestavy IntelliTrace, technologie Hyper-V sestavě sestavy profileru  
+-   **Sestavy:** Sestavy IntelliTrace, technologie Hyper-V sestavě, sestavy profileru  
 
--   **Řídicí panel:** centrum diagnostiky  
+-   **Řídicí panel:** Centrum diagnostiky  
 
 #### <a name="text-based-editors"></a>Textové editory  
 
@@ -428,8 +425,8 @@ Existují výhody a nevýhody různých metod vrstvení prostřednictvím karty 
 | Přepínání mechanismus | Výhody a řádném používání | Nevýhody a nesprávné použití |  
 | --- | --- | --- |  
 | Ovládací prvek karty | Logicky seskupit stránkách dialogového okna do související sady<br /><br />Užitečné pro méně než pět (nebo počet karet, které vyhovují v jednom řádku v dialogovém okně) stránky souvisejících ovládacích prvků v dialogovém okně<br /><br />Karta popisků musí být krátký: jedno nebo dvě slova, které můžete snadno identifikovat obsah<br /><br />Běžné systémový styl dialogového okna<br /><br />Příklad: **Průzkumník souborů &gt; vlastnosti položek** | Vytváření krátkých popisky může být obtížné<br /><br />Obecně neškáluje posledních pět záložek v jedné dialogového okna<br /><br />Nevhodné, pokud máte příliš mnoho karet pro jeden řádek (použijte vrstvení alternativní postup)<br /><br />Není rozšiřitelný |  
-| Navigace postranního panelu | Jednoduché přepínání zařízení, která může obsahovat více kategorií než tabulátory<br /><br />Seznam bez stromové struktury kategorie (žádná hierarchie)<br /><br />Rozšiřitelné<br /><br />Příklad: **přizpůsobit... &gt; Přidání příkazu** | Není vhodné využít vodorovný prostor, pokud je méně než tři skupin<br /><br />Úkol může být lépe hodí pro rozevírací seznam |  
-| Ovládací prvek stromu | Umožňuje neomezený počet kategorií<br /><br />Umožňuje seskupení a/nebo hierarchie kategorií<br /><br />Rozšiřitelné<br /><br />Příklad: **nástroje &gt; možnosti** | Silně vnořené hierarchie může způsobit nadměrné vodorovného posouvání<br /><br />Visual Studio obsahuje overabundance stromová zobrazení |  
+| Navigace postranního panelu | Jednoduché přepínání zařízení, která může obsahovat více kategorií než tabulátory<br /><br />Seznam bez stromové struktury kategorie (žádná hierarchie)<br /><br />Rozšiřitelné<br /><br />Příklad: **Vlastní nastavení... &gt; Přidání příkazu** | Není vhodné využít vodorovný prostor, pokud je méně než tři skupin<br /><br />Úkol může být lépe hodí pro rozevírací seznam |  
+| Ovládací prvek stromu | Umožňuje neomezený počet kategorií<br /><br />Umožňuje seskupení a/nebo hierarchie kategorií<br /><br />Rozšiřitelné<br /><br />Příklad: **Nástroje &gt; možnosti** | Silně vnořené hierarchie může způsobit nadměrné vodorovného posouvání<br /><br />Visual Studio obsahuje overabundance stromová zobrazení |  
 | Průvodce | Pomáhá s dokončení úkolu a uživatel založené na úlohách, sekvenční kroky potřebnými: Průvodce představuje základní úkol a jednotlivé panely představují dílčí úkoly, které jsou nutné k provedení jedné úlohy<br /><br />Užitečné, pokud úloha překročí hranice uživatelského rozhraní, jako když uživatel byste jinak museli používat více editory a nástrojů systému windows k dokončení úlohy<br /><br />Užitečné, pokud úloha vyžaduje větvení<br /><br />Užitečné, pokud úloha obsahuje závislosti mezi kroky<br /><br />Užitečné při několik podobných úloh s jeden rozhodnutí forku lze zobrazit v jedné dialogové okno a snížit počet různých podobně jako dialogová okna | Nevhodné pro všechny úlohy, které nevyžaduje sekvenčního pracovního postupu<br /><br />Uživatelům se může stát přetížení a zaměňovat průvodcem s příliš mnoha kroky<br /><br />Průvodce mají omezenou ze své podstaty plochy obrazovky |  
 
 ##### <a name="hallways-or-dashboards"></a>Chodbách nebo řídicí panely  
@@ -470,11 +467,11 @@ Projekty obvykle klasifikovat sami jako odkaz na základě (schopni zachovat pou
 
 Z pohledu přetažení myší, by se měly používat následující vlastnosti pro každý typ projektu v rámci **Průzkumníka řešení**:  
 
--   **Na základě odkazu projekt:** klíčovým bodem tedy je, že projekt přetahuje kolem odkaz na položku v úložišti. Když projekt založený na odkaz funguje jako zdroj pro operace přesunutí, odstraňte pouze odkaz na položku z projektu. Položka nesmí ve skutečnosti odstraněna z pevného disku. Když projekt založený na odkaz funguje jako cíl pro operaci přesunutí (nebo kopírování), přidala odkaz na původní zdroj položky přitom si soukromou kopii položky.  
+-   **Na základě odkazu projekt:** Klíčovým bodem tedy je, že projekt přetahuje kolem odkaz na položku v úložišti. Když projekt založený na odkaz funguje jako zdroj pro operace přesunutí, odstraňte pouze odkaz na položku z projektu. Položka nesmí ve skutečnosti odstraněna z pevného disku. Když projekt založený na odkaz funguje jako cíl pro operaci přesunutí (nebo kopírování), přidala odkaz na původní zdroj položky přitom si soukromou kopii položky.  
 
--   **Na základě adresář projektu:** z přetažení myší hlediska, projekt přetahuje kolem fyzické položky, místo odkazu. Když projekt založený na directory funguje jako zdroj pro operace přesunutí, by měla končit nahoru odstranění fyzické položky z pevného disku a také odebere ji z projektu. Když projekt založený na directory funguje jako cíl pro operaci přesunutí (nebo kopírování), třeba kopii položky zdroje do cílového umístění.  
+-   **Na základě adresář projektu:** Z-přetažením hlediska projekt přetahuje kolem fyzické položky, místo odkazu. Když projekt založený na directory funguje jako zdroj pro operace přesunutí, by měla končit nahoru odstranění fyzické položky z pevného disku a také odebere ji z projektu. Když projekt založený na directory funguje jako cíl pro operaci přesunutí (nebo kopírování), třeba kopii položky zdroje do cílového umístění.  
 
--   **Smíšené cílový projekt:** z přetažení myší hlediska, chování tento typ projektu podle povahy položky jsou kvůli usnadnění použití vypsány buď (odkaz na položku ve službě storage) nebo přímo s příslušnou položkou. Správné chování pro odkazy a fyzického zboží jsou popsané výše.  
+-   **Smíšené cílový projekt:** Z přetažení myší hlediska chování tento typ projektu podle povahy položky jsou kvůli usnadnění použití vypsány buď (odkaz na položku ve službě storage) nebo přímo s příslušnou položkou. Správné chování pro odkazy a fyzického zboží jsou popsané výše.  
 
 Kdyby existovalo pouze jednoho typu projektu v **Průzkumníka řešení**, pak by byly jednoduché operace přetažení myší. Protože každý systém projektu má možnost definovat vlastní chování přetažení myší, některé pokyny (založené na chování Průzkumníka Windows přetáhněte myší) byste měli dodržet, aby předvídatelné uživatelské prostředí:  
 
@@ -508,7 +505,7 @@ Uživatel by měl vždy být schopní určit efekt operace přetažení myší v
 #### <a name="reference-based-projects"></a>Projekty založené na odkaz  
  Následující tabulka shrnuje přetažení myší (a také Vyjmout/Kopírovat/vložit) operace, které je třeba provést podle povahy zdroj položky a modifikátor klíče z důvodu projekty založené na odkazovaný cíl:  
 
-| Modifikátor | Kategorie | Zdrojová položka: / odkazu | Zdrojová položka: fyzického zboží nebo systém souborů (`CF_HDROP`) |  
+| Modifikátor | Kategorie | Zdrojová položka: / Odkazu | Zdrojová položka: Fyzického zboží nebo systém souborů (`CF_HDROP`) |  
 | --- | --- | --- | --- |  
 | Žádné modifikátor | Akce | Přesunutí | Odkaz |  
 | Žádné modifikátor | Cíl | Přidá odkaz na původní položky | Přidá odkaz na původní položky |  
@@ -540,7 +537,7 @@ Uživatel by měl vždy být schopní určit efekt operace přetažení myší v
 Následující tabulka shrnuje přetažení myší (a také Vyjmout/Kopírovat/vložit) operace, které je třeba provést podle povahy zdroj položky a modifikátor klíče z důvodu adresářového cílové projekty:  
 
 
-| Modifikátor | Kategorie | Zdrojová položka: / odkazu | Zdrojová položka: fyzického zboží nebo systém souborů (`CF_HDROP`) |
+| Modifikátor | Kategorie | Zdrojová položka: / Odkazu | Zdrojová položka: Fyzického zboží nebo systém souborů (`CF_HDROP`) |
 |-----------------|----------| - | - |
 | Žádné modifikátor | Akce | Přesunutí | Přesunutí |
 | Žádné modifikátor | Cíl | Kopie položky na cílovém umístění | Kopie položky na cílovém umístění |
@@ -566,7 +563,7 @@ Následující tabulka shrnuje přetažení myší (a také Vyjmout/Kopírovat/v
 #### <a name="mixed-target-projects"></a>Smíšené cílové projekty  
 Následující tabulka shrnuje přetažení myší (a také Vyjmout/Kopírovat/vložit) operace, které je třeba provést podle povahy zdroj položky a modifikátor klíče z důvodu smíšené cílové projekty:  
 
-| Modifikátor | Kategorie | Zdrojová položka: / odkazu | Zdrojová položka: fyzického zboží nebo systém souborů (`CF_HDROP`) |  
+| Modifikátor | Kategorie | Zdrojová položka: / Odkazu | Zdrojová položka: Fyzického zboží nebo systém souborů (`CF_HDROP`) |  
 | --- | --- | --- | --- |
 | Žádné modifikátor | Akce | Přesunutí | Přesunutí |
 | Žádné modifikátor | Cíl | Přidá odkaz na původní položky | Kopie položky na cílovém umístění |

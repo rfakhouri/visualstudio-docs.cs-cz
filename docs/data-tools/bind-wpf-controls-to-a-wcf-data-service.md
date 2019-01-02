@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 8d5a44ffd5c524d1f7e410f203e17b647907e32d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925180"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF k datové službě WCF
 
@@ -64,7 +63,7 @@ Předchozí znalosti následujících konceptů je také užitečné, ale nejsou
 
 Spuštěním tohoto průvodce vytvořením projektu pro službu WCF Data Service:
 
-1. Spusťte sadu Visual Studio.
+1. Spusťte Visual Studio.
 
 2. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
 
@@ -80,7 +79,7 @@ Spuštěním tohoto průvodce vytvořením projektu pro službu WCF Data Service
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Vytvoření datového modelu Entity pro službu
 
-Ke zveřejňování dat pro aplikace s použitím službu WCF Data Service, je nutné definovat datový model pro službu. Službu WCF Data Service podporuje dva typy datových modelů: datových modelech Entity a vlastní datové modely, které jsou definovány pomocí běžné language runtime (CLR) objekty, které implementují <xref:System.Linq.IQueryable%601> rozhraní. V tomto návodu vytvoříte pro datový model Entity Data Model.
+Ke zveřejňování dat pro aplikace s použitím službu WCF Data Service, je nutné definovat datový model pro službu. Službu WCF Data Service podporuje dva typy datových modelů: Modely Entity Data Model a vlastní datové modely, které jsou definovány pomocí běžné language runtime (CLR) objekty, které implementují <xref:System.Linq.IQueryable%601> rozhraní. V tomto návodu vytvoříte pro datový model Entity Data Model.
 
 1. Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 
@@ -231,7 +230,7 @@ Vytvořte ovládací prvky zobrazující záznamy o zákaznících přetažením
 
 Pomocí objektu proxy služby můžete načíst prodejní data ze služby. Pak přiřaďte zdroje dat pro vrácená data <xref:System.Windows.Data.CollectionViewSource> v okně WPF.
 
-1. V návrháři, chcete-li vytvořit `Window_Loaded` obslužná rutina události, klikněte dvakrát na text, který čte: **hlavního okna MainWindow**.
+1. V návrháři, chcete-li vytvořit `Window_Loaded` obslužná rutina události, klikněte dvakrát na text, který čte: **Hlavní okno MainWindow**.
 
 2. Obslužná rutina události nahraďte následujícím kódem. Ujistěte se, že nahradíte *localhost* adresy v tomto kódu s adresou místního hostitele ve svém vývojovém počítači.
 
@@ -307,7 +306,7 @@ Po dokončení tohoto návodu, můžete provádět následující úlohy souvise
 
 - Další informace o použití **zdroje dat** okna v sadě Visual Studio k vytvoření vazby WPF ovládací prvky na jiné typy datových zdrojů. Další informace najdete v tématu [WPF vytvoření vazby ovládacích prvků do datové sady](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Další informace o použití **zdroje dat** okna v sadě Visual Studio pro zobrazení souvisejících dat (tj. data ve vztahu nadřazený podřízený) v ovládacích prvcích WPF. Další informace najdete v tématu [návod: zobrazování souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Další informace o použití **zdroje dat** okna v sadě Visual Studio pro zobrazení souvisejících dat (tj. data ve vztahu nadřazený podřízený) v ovládacích prvcích WPF. Další informace najdete v tématu [názorný postup: Zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Viz také:
 

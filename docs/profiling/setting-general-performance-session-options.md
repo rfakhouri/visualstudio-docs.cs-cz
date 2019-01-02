@@ -1,8 +1,6 @@
 ---
 title: Relace výkonu nastavení obecných možností | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.general
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c44435f69b5a94433081a518be14f8ffd1756e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3dce2f53ef0e16563ff73d188e5d475c42bf0fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896406"
 ---
 # <a name="set-general-performance-session-options"></a>Nastavení obecných možností výkonnostní relace
 
@@ -47,4 +45,4 @@ Nastavte jako metodu základní kolekce tak, že vyberete jednu z možností v �
 
 |||
 |-|-|
-|**Sestava**. Ve výchozím nastavení souboru dat profilování (.vsp) je přiřazen název profilované aplikace a je umístěn ve složce řešení nebo projektu. Řetězec datum je také připojeným k názvu a zvyšující číslo je přidán do datových souborů, které by jinak mít duplicitní názvy. Tato nastavení můžete změnit.|- [Postupy: nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)|
+|**Sestava**. Ve výchozím nastavení souboru dat profilování (.vsp) je přiřazen název profilované aplikace a je umístěn ve složce řešení nebo projektu. Řetězec datum je také připojeným k názvu a zvyšující číslo je přidán do datových souborů, které by jinak mít duplicitní názvy. Tato nastavení můžete změnit.|- [Jak: Nastavení možností názvu souboru dat výkonu](../profiling/how-to-set-performance-data-file-name-options.md)|

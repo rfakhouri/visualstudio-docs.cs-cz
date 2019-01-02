@@ -1,8 +1,6 @@
 ---
-title: Dialogové okno Vlastnosti zpracovat | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno vlastností procesů | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
@@ -13,46 +11,46 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d14805f0815c7645ff54352cda218edc44efa4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42f1838aa2dcfcdd9ac070d3b1c03c4e177c195d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898031"
 ---
 # <a name="process-properties-dialog-box"></a>Dialogové okno vlastností procesů
-Další informace o specifickém procesu pomocí tohoto dialogového okna. K zobrazení tohoto dialogového okna, přesunout fokus [zobrazení procesů](../debugger/processes-view.md) okno. Vyberte libovolný uzel procesu ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  
+Použijte toto dialogové okno a zjistěte další informace o konkrétní proces. Zobrazíte dialogovému oknu přesunout fokus [zobrazení procesy](../debugger/processes-view.md) okna. Vyberte libovolný uzel procesu ve stromové struktuře a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
   
- Windows 98 a systém Windows 95 v operačních systémech pouze upravenou verzi **Obecné** se zobrazí karta.  
+ Windows 98 a Windows 95 operačních systémech, pouze upravenou verzi **Obecné** kartě se zobrazí.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Karta Obecné, dialogové okno vlastností procesu](../debugger/general-tab-thread-properties-dialog-box.md)  
- Použijte toto dialogové okno pole Najít další informace o vybrané proces.  
+ Pomocí tohoto dialogového okna pole Najít další informace o vybraných procesů.  
   
- [Karta paměť, dialogové okno vlastností procesu](../debugger/memory-tab-process-properties-dialog-box.md)  
- Tato karta umožňuje zobrazit, jak tento proces se používá paměti.  
+ [Karta Paměť, dialogové okno vlastností procesu](../debugger/memory-tab-process-properties-dialog-box.md)  
+ Tato karta umožňuje zobrazit, jak na proces používá paměti.  
   
- [Karta soubor stránky, dialogové okno vlastností procesu](../debugger/page-file-tab-process-properties-dialog-box.md)  
+ [Karta Stránkovací soubor, dialogové okno vlastností procesu](../debugger/page-file-tab-process-properties-dialog-box.md)  
  Tato karta slouží k prozkoumání stránkovacího souboru procesu.  
   
- [Karta prostor, dialogové okno vlastností procesu](../debugger/space-tab-process-properties-dialog-box.md)  
- Tato karta slouží k prozkoumání adresní prostor procesu.  
+ [Karta Prostor, dialogové okno vlastností procesu](../debugger/space-tab-process-properties-dialog-box.md)  
+ Tato karta slouží k prozkoumání adresního prostoru procesu.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Dialogové okno hledání procesů](../debugger/process-search-dialog-box.md)  
- Použít k vyhledání uzlu pro konkrétní proces v zobrazení procesů.  
+ Umožňuje najít uzel konkrétního procesu v zobrazení procesů.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.  
+ Obsahuje části s popisem každé nástroje Spy ++ nabídky a dialogové okno pole.  
   
  [Hledání procesu v zobrazení procesů](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Vysvětluje, jak najít specifickém procesu v zobrazení procesů.  
+ Vysvětluje, jak najít konkrétní proces v zobrazení procesů.  
   
  [Zobrazení procesů](../debugger/processes-view.md)  
- Zobrazení stromu active procesů.  
+ Zobrazení stromu aktivní procesy.  
   
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.
+ Seznámíte se nástroje Spy ++, jak je možné.

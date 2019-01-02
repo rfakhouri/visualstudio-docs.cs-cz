@@ -1,8 +1,6 @@
 ---
-title: Dialogové okno informace o načtení symbolů | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno informace o načítání symbolů | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.symbols.loadinfo
@@ -17,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd9cca539a79e6779a3b886223d407db19b6e14
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d320d814f1c20e1aee9b13c83c01be8290a5ead6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850187"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Dialogové okno Informace o načtení symbolů
-**Symbol načíst informace o** otevře se dialogové okno když klikněte pravým tlačítkem na **moduly** okna a zvolte **Symbol načíst informace o**.  
+**Informace o načítání symbolů** dialogové okno otevře, když kliknete pravým tlačítkem na **moduly** okno a zvolte **informace o načítání symbolů**.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Informace o**  
- Zobrazuje adresáře vyhledávat pro soubory symbolů (soubory PDB) na základě v sadě Visual Studio nainstalovat nastavení a nastavení symbol v provedené změny **možnosti** dialogové okno.  
+ Zobrazuje pro soubory symbolů (soubory PDB) založené na sadě Visual Studio nainstalovat nastavení a změny provedené nastavení symbolu v prohledávané adresáře **možnosti** dialogové okno.  
   
- **Nastavení – symbol**  
- Kliknutím na toto tlačítko, změňte nastavení symbol v **možnosti** dialogové okno (**ladění** kategorie, **symboly** stránky). Na této stránce můžete přidat nebo odebrat symbol umístění, zadejte umístění v místní mezipaměti, pokud používáte symbol server a řídit, kdy symbol umístění budou prohledána.  
+ **Nastavení symbolů**  
+ Kliknutím na toto tlačítko, chcete-li změnit nastavení symbolu v **možnosti** dialogové okno (**ladění** kategorie, **symboly** stránky). Na této stránce můžete přidat nebo odebrat umístění symbolů, zadejte umístění místní mezipaměti, pokud používáte symbolový server a řídit, kdy jsou prohledávány umístění symbolů.  
   
 ## <a name="see-also"></a>Viz také  
  [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

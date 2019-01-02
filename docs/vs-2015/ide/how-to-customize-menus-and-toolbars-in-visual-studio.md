@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -33,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9b9f755379644cbc3dd5b4a06fae44b2416f251
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820926"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: Přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Visual Studio si můžete přizpůsobit nejen tak, že přidáte nebo odeberete 
          Panel nástrojů můžete také přetáhnout pomocí jeho levého okraje na libovolné místo v hlavní oblasti ukotvení.
 
         > [!NOTE]
-        >  Další informace o možnostech zlepšení použitelnosti a přístupnosti panelů nástrojů naleznete v tématu [postupy: nastavení možností usnadnění přístupu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        >  Další informace o možnostech zlepšení použitelnosti a přístupnosti panelů nástrojů naleznete v tématu [jak: Nastavení možností usnadnění přístupu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ##  <a name="bkmk_customize"></a> Přizpůsobení nabídky nebo panelu nástrojů
 

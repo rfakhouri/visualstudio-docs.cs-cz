@@ -1,9 +1,6 @@
 ---
 title: CONTEXT_INFO | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CONTEXT_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9ed1b803905f403e68053c157b40ec30dc03fbd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a88a1a3c2d07387399a1701b6645d300bce8993d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927243"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Tato struktura popisuje místní paměti nebo kontext kódu.  
@@ -28,7 +25,7 @@ Tato struktura popisuje místní paměti nebo kontext kódu.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-typedef struct _tagCONTEXT_INFO {   
+typedef struct _tagCONTEXT_INFO {   
    CONTEXT_INFO_FIELDS dwFields;  
    BSTR                bstrModuleUrl;  
    BSTR                bstrFunction;  
@@ -81,9 +78,9 @@ public struct CONTEXT_INFO {
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   

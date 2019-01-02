@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934372"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
  Až budete mít k zobrazení nebo úpravám dvě místa současně v dokumentu, můžete rozdělit systém windows. Pokud chcete rozdělit dokumentu na dva oddíly nezávisle na sobě posouvání, klikněte na tlačítko **rozdělení** na **okno** nabídky. Klikněte na tlačítko **odebrat rozdělení** na **okno** nabídky k obnovení jednoho zobrazení.
 
 ### <a name="toolbars"></a>Panely nástrojů
- Panely nástrojů lze uspořádat přetažením nebo pomocí **vlastní** dialogové okno. Další informace o tom, jak umístit a přizpůsobení panelů nástrojů naleznete v tématu [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Panely nástrojů lze uspořádat přetažením nebo pomocí **vlastní** dialogové okno. Další informace o tom, jak umístit a přizpůsobení panelů nástrojů naleznete v tématu [jak: Přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arranging-and-docking-windows"></a>Rozvržení a dokování Windows
  Obě dokumentu systému windows a nástroj windows může být *ukotvených*, tak, aby byly na pozici a velikost v rámci okna rámce IDE nebo s plovoucí desetinnou čárkou jako samostatné okno nezávisle na integrovaném vývojovém prostředí. Panely nástrojů lze ukotvit kdekoli v rámci integrovaného vývojového prostředí; Některé panely nástrojů lze ukotvit jako oken s kartami v rámci editoru. Okna dokumentu lze ukotvit v rámci editoru a je možné připnout svoje aktuální umístění v pořadí karet. Můžete ukotvit více oken uvolnění společně "přilepením" přes nebo mimo rozhraní IDE. Nástroje systému windows můžete také skrytý nebo minimalizovat.
@@ -168,7 +167,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 
      Pokud máte více monitorování nastavení v práci a jednoho monitoru přenosného počítače v domácnostech, můžete vytvořit rozložení, která jsou optimalizovaná pro každý počítač.
 
-     Poznámka: Pokud použijete rozložení více monitorů jedním monitorování systému, okna s plovoucí desetinnou čárkou, které se umístí na druhém monitoru budou nyní být skrytá pod možností okno sady Visual Studio. Tato okna je možné přenést do popředí stisknutím kombinace kláves Alt + Tab. Při dalším otevření sady Visual Studio s více monitory, můžete obnovit systému windows na zadané pozici rozložení použitím znovu.
+     Poznámka: Pokud použijete rozložení více monitorů jedním monitorování systému, bude s plovoucí desetinnou čárkou windows, které jste umístili na druhém monitoru skrytá za okno sady Visual Studio. Tato okna je možné přenést do popředí stisknutím kombinace kláves Alt + Tab. Při dalším otevření sady Visual Studio s více monitory, můžete obnovit systému windows na zadané pozici rozložení použitím znovu.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Spravovat a zpřístupnit vaše rozložení
 
@@ -185,6 +184,6 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 |Název|Popis|
 |-----------|-----------------|
 |[Druhy Windows](../misc/kinds-of-windows.md)|Tento článek popisuje rozdíly mezi okny nástrojů a okny dokumentů v prostředí IDE.|
-|[Postupy: rozvržení a dokování Windows](../misc/how-to-arrange-and-dock-windows.md)|Popisuje, jak lze okna ukotvit, automatický skrývat a zobrazit vedle sebe a také jak rozložení oken obnovit.|
-|[Návody: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Popisuje, jak lze cyklicky přepínat mezi otevřenými okny v integrovaném vývojovém prostředí (IDE) v pořadí podle používání. Také popisuje, jak můžete přejít na konkrétní dokumenty.|
+|[Postupy: Rozvržení a dokování Windows](../misc/how-to-arrange-and-dock-windows.md)|Popisuje, jak lze okna ukotvit, automatický skrývat a zobrazit vedle sebe a také jak rozložení oken obnovit.|
+|[Postupy: Pohyb v integrovaném vývojovém prostředí](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Popisuje, jak lze cyklicky přepínat mezi otevřenými okny v integrovaném vývojovém prostředí (IDE) v pořadí podle používání. Také popisuje, jak můžete přejít na konkrétní dokumenty.|
 |[Přizpůsobení nastavení pro vývoj v sadě Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Obsahuje informace o kombinacích nastavení a o tom, jaký vliv mají nastavení na rozložení oken, klávesové zkratky a další prvky v prostředí IDE.|

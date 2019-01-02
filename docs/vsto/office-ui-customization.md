@@ -1,9 +1,6 @@
 ---
 title: Přizpůsobení uživatelského rozhraní systému Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924823"
 ---
 # <a name="office-ui-customization"></a>Přizpůsobení uživatelského rozhraní systému Office
   Můžete přizpůsobit uživatelské rozhraní (UI) aplikace Microsoft Office s použitím nástroje Office developer tools v sadě Visual Studio. Toto téma popisuje funkce uživatelského rozhraní, které můžete přizpůsobit v následujících částech:  
@@ -96,7 +93,7 @@ ms.locfileid: "49836760"
  Další informace najdete v tématu [hostovat položky a hostujte Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md) a [ovládacích prvků na dokumenty Office – přehled Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Používání místních nabídek  
- Místní nabídce se zobrazí, když kliknete pravým tlačítkem v okně aplikace nebo dokumentu. Můžete nastavit místní nabídce se zobrazí po provedení událost, například když uživatel klepne pravým tlačítkem myši dokumentu, sešitu nebo hostitelského ovládacího prvku. Počet různých příkazů nebo ovládacích prvků můžete přidat do místní nabídky. Vytvořte místní nabídky pomocí XML. Pokud chcete přidat **pásu karet (XML)** položky do projektu sady Office můžete přidat XML do souboru XML pásu karet, chcete-li vytvořit místní nabídky. Další informace o vytváření místních nabídek pomocí XML, naleznete v tématu [postupy: přidávání příkazů do místních nabídek](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Místní nabídce se zobrazí, když kliknete pravým tlačítkem v okně aplikace nebo dokumentu. Můžete nastavit místní nabídce se zobrazí po provedení událost, například když uživatel klepne pravým tlačítkem myši dokumentu, sešitu nebo hostitelského ovládacího prvku. Počet různých příkazů nebo ovládacích prvků můžete přidat do místní nabídky. Vytvořte místní nabídky pomocí XML. Pokud chcete přidat **pásu karet (XML)** položky do projektu sady Office můžete přidat XML do souboru XML pásu karet, chcete-li vytvořit místní nabídky. Další informace o vytváření místních nabídek pomocí XML, naleznete v tématu [jak: Přidání příkazů do místních nabídek](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836760"
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Vlastní podokna úloh](../vsto/custom-task-panes.md)   
  [Použití ovládacích prvků WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md)   
- [Postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [Postupy: Add-in zobrazení chyb uživatelského rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [Postupy: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [Postupy: Zobrazení doplňku uživatele chyb rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md)   
  [Návod: Shromažďování dat pomocí formuláře Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  

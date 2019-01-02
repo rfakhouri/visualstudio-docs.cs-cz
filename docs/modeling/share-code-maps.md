@@ -1,64 +1,63 @@
 ---
-title: Exportovat a uložit mapy kódu
+title: Exportovat a uložit map kódu
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: abfe8d6160d023a99e9a49480baada9acb0c8243
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c80c99effebab8d2dffa53621af8f7c60bcad629
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900805"
 ---
-# <a name="share-code-maps"></a>Sdílet mapy kódu
+# <a name="share-code-maps"></a>Sdílení map kódu
 
 Mapy kódu můžete uložit jako součást projektu sady Visual Studio, jako bitovou kopii nebo jako soubor ve formátu XPS.
 
-## <a name="share-a-code-map-with-other-visual-studio-users"></a>Mapa kódu sdílet s ostatními uživateli v sadě Visual Studio
+## <a name="share-a-code-map-with-other-visual-studio-users"></a>Sdílet mapy kódu s ostatními uživateli aplikace Visual Studio
 
-Použití **souboru** v nabídce mapy.
+Použití **souboru** nabídky Uložit na mapě.
 
 -nebo-
 
-Chcete-li uložit mapy v rámci konkrétní projektu, na panelu nástrojů mapy, zvolte **sdílené složky** > **přesunout \<CodeMapName > .dgml do**a pak zvolte projekt, kam chcete uložit Mapa.
+Chcete-li uložit mapy jako součást určitého projektu, na panelu nástrojů mapy, zvolte **sdílenou složku** > **přesunout \<CodeMapName > .dgml do**a pak zvolte projekt, kam chcete uložit Mapa.
 
-![Přesuňte mapu do jiného projektu](../modeling/media/codemapsmovemapmenu.png)
+![Přesunout do jiného projektu mapy](../modeling/media/codemapsmovemapmenu.png)
 
-Visual Studio uloží mapy jako *.dgml* souborů, které můžete sdílet s ostatními uživateli aplikace Visual Studio Enterprise a Visual Studio Professional.
+Visual Studio uloží mapy jako *.dgml* soubor, který můžete sdílet s ostatními uživateli aplikace Visual Studio Enterprise a Visual Studio Professional.
 
 > [!NOTE]
-> Před sdílením mapu s ty, kteří používají Visual Studio Professional, nezapomeňte rozbalte všechny skupiny, zobrazit skryté uzly a cross-group odkazy a načíst všechny odstraněné uzly, které chcete zobrazit na mapě ostatním uživatelům. Jinak ostatní uživatelé nebudou moci tyto položky zobrazit.
+> Než budete sdílet mapu s uživateli, kteří používají Visual Studio Professional, ujistěte se, že chcete-li rozbalit všechny skupiny, zobrazit skryté uzly a odkazy křížové skupiny a načíst všechny odstraněné uzly, které mají jiní uživatelé vidět na mapě. Jinak ostatní uživatelé nebudou moci tyto položky zobrazit.
 >
-> Při uložení mapu, která je v projektu modelování nebo byl zkopírován z projektu modelování do jiného umístění, může dojít k následující chybě:
+> Při ukládání mapu, která je v projektu modelování nebo byl zkopírován z projektu modelování do jiného umístění, může dojít k následující chybě:
 >
 > "Nelze uložit *fileName* mimo adresář projektu. Propojené položky nejsou podporovány.“
 >
-> Aplikace Visual Studio zobrazí chybu, ale přesto vytvoří uloženou verzi. Aby nedošlo k chybě, vytvoření mapy mimo projekt modelování. Potom jej můžete uložit do požadovaného umístění. Nebude fungovat, pokud budete chtít soubor pouze zkopírovat do jiného umístění v řešení a potom jej uložit.
+> Aplikace Visual Studio zobrazí chybu, ale přesto vytvoří uloženou verzi. Aby se zabránilo chybě, vytvořte mapu mimo projekt modelování. Potom jej můžete uložit do požadovaného umístění. Nebude fungovat, pokud budete chtít soubor pouze zkopírovat do jiného umístění v řešení a potom jej uložit.
 
-## <a name="export-a-code-map-as-an-image"></a>Export mapování kódu jako obrázek
+## <a name="export-a-code-map-as-an-image"></a>Exportovat jako obrázek mapy kódu
 
-Pokud exportujete Mapa kódu jako bitovou kopii, zkopírujte jej do jiných aplikací, jako je například Microsoft Word nebo PowerPoint.
+Při exportu mapu kódu jako bitovou kopii, můžete ji zkopírovat do jiných aplikací, jako je například Microsoft Word nebo PowerPoint.
 
-1. Na panelu nástrojů Mapa kódu, zvolte **sdílené složky** > **e-mailu jako obrázek** nebo **Kopírovat obraz**.
+1. Na panelu nástrojů Mapa kódu, zvolte **sdílenou složku** > **e-mailu jako obrázek** nebo **Kopírovat obrázek**.
 
 2. Vložte obrázek do jiné aplikace.
 
 ## <a name="export-the-map-as-an-xps-file"></a>Mapování exportovat jako soubor ve formátu XPS
 
-Pokud exportujete jako soubor ve formátu XPS Mapa kódu, zobrazí se v XML nebo XAML prohlížeče, jako třeba Internet Explorer.
+Pokud exportujete mapu kódu jako souboru XPS, zobrazí se v XML nebo XAML prohlížeče jako třeba Internet Explorer.
 
-1. Na panelu nástrojů Mapa kódu, zvolte **sdílené složky** > **e-mailu jako přenosné XPS** nebo **uložit jako přenosné XPS**.
+1. Na panelu nástrojů Mapa kódu, zvolte **sdílenou složku** > **e-mailu jako přenosný formát XPS** nebo **uložit jako přenosný formát XPS**.
 
-2. Kam chcete uložit soubor vyhledejte.
+2. Přejděte na požadované místo pro uložení souboru.
 
-3. Název Mapa kódu. Ujistěte se, že **uložit jako typ** pole je nastavena na **soubory XPS (\*XPS)**. Zvolte **Uložit**.
+3. Název mapy kódu. Ujistěte se, že **uložit jako typ** pole nastavena na **soubory XPS (\*XPS)**. Zvolte **Uložit**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Mapování závislostí s mapy kódu](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapování závislostí pomocí map kódu](../modeling/map-dependencies-across-your-solutions.md)

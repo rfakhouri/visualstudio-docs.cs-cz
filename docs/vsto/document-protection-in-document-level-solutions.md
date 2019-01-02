@@ -1,9 +1,6 @@
 ---
 title: Ochrana dokumentů v řešeních na úrovni dokumentu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03724e523c1f49277e0bc2b23465d5296d806695
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b6894aa05adf55945383cb3c2e28b8c5fdebdc16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908850"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Ochrana dokumentů v řešeních na úrovni dokumentu
   Můžete využívat funkce ochrany aplikace Microsoft Office Word a Microsoft Office Excel v projektech na úrovni dokumentu. Tyto funkce blokuje neoprávněné uživatele provádět změny chráněné části dokumentu.  
@@ -62,5 +59,3 @@ ms.locfileid: "53648532"
  [Ochrana dokumentů Office heslem](../vsto/password-protection-on-office-documents.md)   
  [Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

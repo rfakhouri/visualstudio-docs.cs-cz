@@ -1,8 +1,6 @@
 ---
 title: Nasazování komponent COM s ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888449"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Součásti musí být globálně zaregistrovaní a proto může způsobit nežádoucí vedlejší účinky mezi aplikacemi se překrývají. Tato situace není obecně problém v aplikacích .NET Framework protože komponenty jsou naprosto izolované k aplikaci nebo jsou kompatibilní se vedle sebe. Visual Studio umožňuje nasadit izolované komponenty modelu COM na Windows XP nebo novější operační systém.  
@@ -165,7 +163,7 @@ Nasazení komponent modelu COM, starší verze tradičně těžký úkol. Souč�
   
 - Komponenta slouží ke správě fyzických nebo virtuálních zařízení pro systém, například ovladače zařízení pro zařazování tisku.  
   
-- Součást je Data Access redistributable. Data aplikace obvykle vyžadují samostatné datové distribuovatelné součásti k instalaci, než budou moci spustit. By se neměly pokoušet izolovat komponenty, například ovládací prvek dat rozhraní ADO Microsoft, Microsoft OLE DB nebo Microsoft Data Access Components (MDAC). Místo toho pokud vaše aplikace používá MDAC nebo SQL Server Express, měli byste nastavit je jako požadavky; Zobrazit [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+- Součást je Data Access redistributable. Data aplikace obvykle vyžadují samostatné datové distribuovatelné součásti k instalaci, než budou moci spustit. By se neměly pokoušet izolovat komponenty, například ovládací prvek dat rozhraní ADO Microsoft, Microsoft OLE DB nebo Microsoft Data Access Components (MDAC). Místo toho pokud vaše aplikace používá MDAC nebo SQL Server Express, měli byste nastavit je jako požadavky; Zobrazit [jak: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
   V některých případech může být možné vývojář komponenty přepracovat pro modelu COM bez registrace Pokud to není možné, můžete pořád vytvářet a publikovat aplikace, které jsou na nich závislé prostřednictvím schématu standardní registrace pomocí zaváděcí nástroj. Další informace najdete v tématu [vytváření balíčků Bootstrapperu](../deployment/creating-bootstrapper-packages.md).  
   

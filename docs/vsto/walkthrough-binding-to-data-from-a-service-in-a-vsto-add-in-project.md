@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vazby k datům ze služby v projektu doplňku VSTO'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vazby k datům ze služby v projektu doplňku VSTO'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892287"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Návod: Vytvoření vazby k datům ze služby v projektu doplňku VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Průvodce: Vytvoření vazby k datům ze služby v projektu doplňku VSTO
   Vytvoření vazby dat k ovládacím prvkům hostitele v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky do dokumentu aplikace Microsoft Office Word, svázat ovládací prvky dat načtených z obsahu služby MSDN a reagovat na události v době běhu.  
   
- **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro Word 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Platí pro:** Informace v tomto tématu se vztahují na projekty na úrovni aplikace pro Word 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Tento návod znázorňuje následující úlohy:  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933180"
   
 1.  Vytvoření projektu doplňku VSTO pro Word s názvem **služba obsah MTPS**, pomocí jazyka Visual Basic nebo C#.  
   
-     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře `ThisAddIn.vb` nebo `ThisAddIn.cs` soubor a přidá projekt do **Průzkumníka řešení**.  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933180"
   
 ## <a name="see-also"></a>Viz také:  
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

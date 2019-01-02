@@ -1,12 +1,11 @@
 ---
-title: 'Postupy: řešení potíží s upgrady neúspěšný projekt | Dokumentace Microsoftu'
+title: 'Postupy: Řešení potíží s upgrady neúspěšný projekt | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -23,17 +22,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6b50bbaaf7e5b018709f3cf0dece3c0ae38410f8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2e21feda11ef4d3405fa1488740fefe7c7238dc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942015"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Postupy: Řešení potíží spojených s neúspěšným upgradem projektu sady Visual Studio
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Postupy: Řešení potíží s upgrady projektu úspěšné sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Někdy Visual Studio nemůže převést plně projektu ze starší verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pokud se určitý problém nelze vyřešit pomocí tipů v následujících částech, bude pravděpodobně možné na další informace naleznete na následující článek knihovny TechNet [Wiki: portál vývoj](http://go.microsoft.com/fwlink/?LinkId=254808).
+Někdy Visual Studio nemůže převést plně projektu ze starší verze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pokud se určitý problém nelze vyřešit pomocí tipů v následujících částech, bude pravděpodobně možné na další informace naleznete na následující článek knihovny TechNet [Wiki: Vývojový portál](http://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Projekt se nespustí, protože nebyly nalezeny soubory
  Soubor projektu obsahuje soubor pevně zakódované cesty, který [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] používá ke spuštění projektu při stisknutí klávesy F5. Tyto cesty mohou být umístění devenv.exe a další požadované soubory. V upgradované verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cesty tyto soubory byly změněny.

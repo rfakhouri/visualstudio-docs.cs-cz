@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d030f375f67608fc6cf34ae108fed2ba54f5d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b8642ab935c95a8b80f87c5bcc7d5e6d24f0825f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903887"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Správa výsledků zátěžových testů v úložiště výsledků testu zátěže
 
@@ -47,10 +46,10 @@ Visual Studio Enterprise obsahuje čítače pojmenované sady, které shromažď
 
 |Úlohy|Související témata|
 |-|-----------------------|
-|**Úložiště výsledků zátěžového testu nastavte:** můžete nastavit úložiště výsledků zátěžového testu na SQL database. **Poznámka:** úložiště zátěžového testu můžete také vytvořit při instalaci řadiče testu. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).||
-|**Výběr a zobrazení úložiště výsledků:** můžete vybrat konkrétní úložiště výsledků. Nejste omezeni na úložiště místních výsledků. Často jsou zátěžové testy spuštěny na vzdálené sadě počítačů agentů. Výsledky testu z agentů nebo místního počítače můžete uložit na každý serversql, na kterém jste vytvořili úložiště výsledků zátěžového testu. V obou případech je nutné určit, kam se mají ukládat výsledky zátěžového testu s použitím **Správa testovacích Kontrolérů** okna.|-   [Postupy: Výběr úložiště výsledků zátěžového testu](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)|
-|**Odstranění výsledku zátěžového testu z úložiště:** můžete odebrat výsledek zátěžového testu z **editoru zátěžového testu** pomocí **otevřít a spravovat výsledky zátěžového testu** dialogové okno.|-   [Postupy: výsledků zátěžového testu odstranit z úložiště](../test/how-to-delete-load-test-results-from-a-repository.md)|
-|**Importovat a exportovat výsledky do úložiště:** můžete importovat a exportovat výsledky zátěžových testů z **editoru zátěžového testu**.|-   [Postupy: Import výsledků zátěžového testu do úložiště](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Postupy: Export zátěžový test výsledků z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)|
+|**Nastavte úložiště výsledků zátěžového testu:** Můžete nastavit úložiště výsledků zátěžového testu na SQL database. **Poznámka:**  Úložiště zátěžového testu můžete také vytvořit při instalaci řadiče testu. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).||
+|**Výběr a zobrazení úložiště výsledků:** Můžete vybrat konkrétní úložiště výsledků. Nejste omezeni na úložiště místních výsledků. Často jsou zátěžové testy spuštěny na vzdálené sadě počítačů agentů. Výsledky testu z agentů nebo místního počítače můžete uložit na každý serversql, na kterém jste vytvořili úložiště výsledků zátěžového testu. V obou případech je nutné určit, kam se mají ukládat výsledky zátěžového testu s použitím **Správa testovacích Kontrolérů** okna.|-   [Jak: Vyberte úložiště výsledků zátěžového testu](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Jak: Přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)|
+|**Odstranění výsledku zátěžového testu z úložiště:** Můžete odebrat výsledek zátěžového testu z **editoru zátěžového testu** pomocí **otevřít a spravovat výsledky zátěžového testu** dialogové okno.|-   [Jak: Odstranění z úložiště výsledků zátěžového testu](../test/how-to-delete-load-test-results-from-a-repository.md)|
+|**Importovat a exportovat výsledky do úložiště:** Můžete importovat a exportovat výsledky zátěžových testů z **editoru zátěžového testu**.|-   [Jak: Importovat do úložiště výsledků zátěžového testu](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [Jak: Export výsledků zátěžového testu z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)|
 
 ## <a name="related-tasks"></a>Související úlohy
 
@@ -61,4 +60,4 @@ Visual Studio Enterprise obsahuje čítače pojmenované sady, které shromažď
 ## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
+- [Postupy: Přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)

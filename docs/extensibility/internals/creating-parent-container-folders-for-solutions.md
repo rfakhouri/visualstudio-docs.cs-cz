@@ -1,9 +1,6 @@
 ---
 title: Vytváření složek nadřazený kontejnerů pro řešení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889095"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Vytvoření nadřazené složky kontejneru pro řešení
 Ve verzi 1.2 zdrojového ovládacího prvku modulu Plug-in rozhraní API můžete uživatele zadejte cílovou složku jeden kořenový zdrojového ovládacího prvku pro všechny webové projekty v řešení. Tento jeden kořenový se nazývá Super Unified Root (SUR).  
@@ -52,7 +49,7 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], doporučuje se, 
 |Funkce|Zdroj modulu Plug-in API správy ve verzi 1.1|Zdroj modulu Plug-in API správy ve verzi 1.2|  
 |-------------| - | - |  
 |Přidat řešení do SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Přidat projekt do řešení se spravovanými zdroji|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Poznámka:** sady Visual Studio předpokládá, že řešení je přímý podřízený sursaft|  
+|Přidat projekt do řešení se spravovanými zdroji|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Poznámka:**  Visual Studio předpokládá, že řešení je přímý podřízený sursaft|  
   
 ## <a name="examples"></a>Příklady  
  V následující tabulce jsou uvedeny dva příklady. V obou případech [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uživatel je vyzván k zadání cílové umístění pro řešení pod správou zdrojového kódu až *user_choice* je zadán jako cíl. Je-li user_choice zadána, jsou přidány dva projekty a řešení bez výzvy k zadání cíle ovládacího prvku zdroje.  

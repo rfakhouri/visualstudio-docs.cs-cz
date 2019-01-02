@@ -1,9 +1,6 @@
 ---
 title: Přístup k vyrovnávací paměti textu s použitím rozhraní API pro starší verze | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3347fc2fd03a2eb6b466145672d3aebb77ad71a6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915004"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>Přístup k vyrovnávací paměti textu pomocí starší verze rozhraní API
 Text zodpovídá za správu textových datových proudů a trvalost souborů. I když vyrovnávací paměti může číst nebo zapisovat dalších formátů, všechny běžné komunikaci s vyrovnávací paměť je prováděno pomocí kódování Unicode. Ve starší verzi rozhraní API můžete textovou vyrovnávací paměť použít buď jeden – nebo dvojrozměrné souřadnicový systém k identifikaci umístění znaku ve vyrovnávací paměti.  

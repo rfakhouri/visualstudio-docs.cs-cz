@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: poskytování automatizace pro Windows | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Poskytování automatizace pro Windows | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841236"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>Postupy: poskytování automatizace pro windows
+# <a name="how-to-provide-automation-for-windows"></a>Postupy: Poskytování automatizace pro windows
 Můžete zadat automatizace pro dokumentů a nástrojů systému windows. Poskytování automatizace se doporučuje pokaždé, když chcete zpřístupnit objekty automatizace v okně a prostředí už neposkytuje předem připravená automatizační objekt, stejně jako se seznamem úkolů.
 
 ## <a name="automation-for-tool-windows"></a>Automatizace pro nástroje systému windows

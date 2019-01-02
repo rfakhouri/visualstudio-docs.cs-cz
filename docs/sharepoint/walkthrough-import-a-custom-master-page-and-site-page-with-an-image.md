@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904150"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Návod: Importujte vlastní stránky předlohy a stránky webu s obrázkem
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Průvodce: Import vlastní stránky předlohy a stránky webu s obrázkem
   Tento návod ukazuje, jak importovat vlastní stránku SharePoint předlohy a stránky webu s obrázkem do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.  
 
  Tento návod ukazuje, jak provádět následující úlohy:  
@@ -179,10 +176,9 @@ ms.locfileid: "49890984"
 
 7. Otevřete web služby SharePoint k zobrazení nasazené položky.  
 
-   Alternativní způsob importu souborů do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasazovat je do služby SharePoint, je přidat soubory do modulů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Postupy: Import stránky předlohy nebo motivu](../sharepoint/how-to-import-a-master-page-or-theme.md) a [vložení souborů do řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+   Alternativní způsob importu souborů do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasazovat je do služby SharePoint, je přidat soubory do modulů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Jak: Import stránky předlohy nebo motivu](../sharepoint/how-to-import-a-master-page-or-theme.md) a [vložení souborů do řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
 
 ## <a name="see-also"></a>Viz také:
  [Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

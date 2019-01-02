@@ -1,8 +1,6 @@
 ---
-title: Zobrazení dat metody vzorkování profileru | Microsoft Docs
-ms.custom: ''
+title: Zobrazení dat metod vzorkování Profiler | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling data views
@@ -13,57 +11,57 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b9b85d5bf1bab61fbc59c0f90411c3e70545745
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c6ff65e392d556d8d32a3c436c5a7b322c4e2412
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912101"
 ---
-# <a name="profiler-sampling-method-data-views"></a>Zobrazení dat metody vzorkování profileru
-Tato část obsahuje referenční informace pro zobrazení a sestav profileru datových souborů, které byly vygenerovány pomocí metody vzorkování.  
+# <a name="profiler-sampling-method-data-views"></a>Zobrazení dat metod vzorkování Profiler
+Tato část obsahuje informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím metody vzorkování.  
   
 > [!NOTE]
->  Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Souhrnné zobrazení](../profiling/summary-view-sampling-data.md)  
- Obsahuje seznam funkcí, které byly nejčastěji provádění, kdy byly shromážděny ukázky a funkce, které byly provádění většiny jednotlivých pracovních.  
+ Obsahuje seznam funkcí, které byly nejčastěji provádění, když nebyly shromážděny vzorky a funkce, které se prováděly nejindividuálnější práci.  
   
  [Zobrazení stromu volání](../profiling/call-tree-view-sampling-data.md)  
- Zobrazí cesty provádění funkcí v hierarchickém stromu.  
+ Cesty ke spuštění funkce se zobrazí v hierarchické stromové struktury.  
   
- [Moduly – zobrazení](../profiling/modules-view-sampling-data.md)  
- Uspořádá data profilování modulem a obsahuje funkce, řádků zdrojového kódu a pokyny, které byly prováděny, kdy byly shromážděny ukázky.  
+ [Zobrazení modulů](../profiling/modules-view-sampling-data.md)  
+ Uspořádá data profilace podle modulu a obsahuje funkce, řádky zdrojového kódu a pokyny, které se spouští při nebyly shromážděny vzorky.  
   
- [Volající / volaný – zobrazení – Data vzorkování](../profiling/caller-callee-view-sampling-data.md)  
- Zobrazí profilace data pro vybrané funkce a funkce, které označuje a byly volány vybrané funkce.  
+ [Volající / volaný zobrazení – Data vzorkování](../profiling/caller-callee-view-sampling-data.md)  
+ Zobrazí data profilování pro vybranou funkci a funkce, které volá a byly volány vybranou funkcí.  
   
- [Funkce – zobrazení](../profiling/functions-view-sampling-data.md)  
- Slouží k uspořádání profilace funkcí a seznam funkcí, které byly prováděny, kdy byly shromážděny ukázky.  
+ [Zobrazení funkcí](../profiling/functions-view-sampling-data.md)  
+ Slouží k uspořádání profilace na základě funkce a seznam funkcí, které se spouští při nebyly shromážděny vzorky.  
   
- [Řádky – zobrazení](../profiling/lines-view-sampling-data.md)  
- Uvádí řádky kódu zdroje, které byly prováděny, kdy byly shromážděny ukázky.  
+ [Zobrazení řádků](../profiling/lines-view-sampling-data.md)  
+ Uvádí řádky zdrojového kódu, které se spouští při nebyly shromážděny vzorky.  
   
  [Zobrazení ukazatele na instrukce (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
- Uvádí řádky kódu zdroje, které byly prováděny, kdy byly shromážděny ukázky.  
+ Uvádí řádky zdrojového kódu, které se spouští při nebyly shromážděny vzorky.  
   
 ## <a name="reference"></a>Odkaz  
  [Zobrazení procesů](../profiling/process-view.md)  
- Proces seznamy a vlákno spuštění a ukončení.  
+ Seznam procesů a vláken počáteční a koncové časy.  
   
- [Značky – zobrazení](../profiling/marks-view.md)  
- Seznam trasování událostí pro Windows a vzorkování události, které byly vloženy do datového souboru profilování.  
+ [Zobrazení značky](../profiling/marks-view.md)  
+ Obsahuje seznam trasování událostí pro Windows a vzorkování událostí, které byly vloženy do souboru dat profilování.  
   
  [Zobrazení podrobností funkce](../profiling/function-details-view.md)  
- Zobrazí grafu vztahu mezi vybrané funkce a funkce, které označuje a byly volány vybrané funkce.  
+ Zobrazuje graf vztahů mezi vybranou funkci a funkce, které volá a byly volány vybranou funkcí.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)  
- Referenční informace pro zobrazení a sestav profileru datových souborů, které byly vygenerovány pomocí metody instrumentace.  
+ Informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím metody instrumentace.  
   
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
- Referenční informace pro zobrazení a sestav profileru datových souborů, které zahrnují data paměti .NET.  
+ Informace o zobrazeních a sestavách souborů dat profileru, které zahrnují data paměti .NET.  
   
-## <a name="see-also"></a>Viz také  
- [Pochopení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>Viz také:  
+ [Vysvětlení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)

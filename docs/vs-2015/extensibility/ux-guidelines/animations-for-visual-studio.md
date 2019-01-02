@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b74a283a4142cea7753db6e04d922517ae32afe9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1b32addb7dcd767e8848640d79933f9868bdd959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918658"
 ---
 # <a name="animations-for-visual-studio"></a>Animace pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -253,13 +252,13 @@ ms.locfileid: "53052097"
 
 ##### <a name="animation-properties"></a>Animace vlastností
 
--   Spouští se krytí: % 0 pro vysouvaly, 100 % po dobu fade-out
+-   Počáteční krytí: vysouvaly, 100 % po dobu fade-out % 0
 
--   Koncová krytí: 100 % po dobu vysouvaly, 0 % fade-out
+-   Neprůhlednost ukončení: 100 % po dobu vysouvaly 0 % fade-out
 
--   Doba trvání: 200 MS samostatné 100 milisekund, když se použije jako součást kombinaci animační sekvence.
+-   Doba trvání: samostatné 200 MS, 100 milisekund, když se použije jako součást kombinaci animační sekvence.
 
--   Usnadnění style: InOut sinus
+-   Usnadnění styl: Sinus vstup
 
 ##### <a name="examples"></a>Příklady
 
@@ -279,13 +278,13 @@ ms.locfileid: "53052097"
 
 ##### <a name="animation-properties"></a>Animace vlastností
 
--   Počáteční barva: konkrétní uživatelského rozhraní
+-   Počáteční barva: Specifické pro uživatelské rozhraní
 
--   Koncová barva: konkrétní uživatelského rozhraní
+-   Koncová barva: Specifické pro uživatelské rozhraní
 
--   Doba trvání: 200 MS samostatné 100 milisekund, když se použije jako součást kombinaci animační sekvence.
+-   Doba trvání: samostatné 200 MS, 100 milisekund, když se použije jako součást kombinaci animační sekvence.
 
--   Usnadnění style: InOut sinus
+-   Usnadnění styl: Sinus vstup
 
 ##### <a name="examples"></a>Příklady
 
@@ -307,9 +306,9 @@ ms.locfileid: "53052097"
 
 -   Y rozsahu: % nebo konkrétní dimenzi (v pixelech)
 
--   Ukotvit pozice: obecně levou horní (pro jazyky zleva doprava) nebo pravém (pro jazyky zprava doleva)
+-   Pozice ukotvení: Obecně levou horní (pro jazyky zleva doprava) nebo pravém (pro jazyky zprava doleva)
 
--   Doba trvání: 200 MS samostatné 100 milisekund, když se použije jako součást kombinaci animační sekvence.
+-   Doba trvání: samostatné 200 MS, 100 milisekund, když se použije jako součást kombinaci animační sekvence.
 
 ##### <a name="examples"></a>Příklady
 
@@ -327,15 +326,15 @@ ms.locfileid: "53052097"
 
 ##### <a name="animation-properties"></a>Animace vlastností
 
--   Spouští se X a Y pozice: konkrétní uživatelského rozhraní
+-   Spouští se X a Y pozice: Specifické pro uživatelské rozhraní
 
--   Koncová X a Y pozice: konkrétní uživatelského rozhraní
+-   Konec X a Y pozice: Specifické pro uživatelské rozhraní
 
--   Dráhu pohybu: žádné
+-   Dráhu pohybu: Žádná
 
--   Doba trvání: 200 MS samostatné 100 milisekund, když se použije jako součást kombinaci animační sekvence.
+-   Doba trvání: samostatné 200 MS, 100 milisekund, když se použije jako součást kombinaci animační sekvence.
 
--   Usnadnění style: InOut sinus
+-   Usnadnění styl: Sinus vstup
 
 ##### <a name="example"></a>Příklad
  Změna pořadí karty
@@ -352,9 +351,9 @@ ms.locfileid: "53052097"
 
 -   Úhel otočení: 360
 
--   Otočení center: střední objektu
+-   Otočení center: Střední objektu
 
--   Doba trvání: průběžné
+-   Doba trvání: Průběžné
 
 ##### <a name="example"></a>Příklad
  Indikátor neurčitého průběhu (rotujících)
@@ -363,7 +362,7 @@ ms.locfileid: "53052097"
 
 #### <a name="tab-open"></a>Otevřete kartu
 
-- Style: Zobrazí
+- Styl: Zobrazit
 
 - Doba trvání: Nula sekund
 
@@ -371,7 +370,7 @@ ms.locfileid: "53052097"
 
 #### <a name="tab-close"></a>Zavřete kartu
 
-- Styl: Změnit pozice X
+- Styl: Změna pozice X
 
 - Doba trvání: 200 MS
 
@@ -379,7 +378,7 @@ ms.locfileid: "53052097"
 
 #### <a name="tab-reorder"></a>Změnit pořadí karty
 
-- Styl: Změnit pozice X
+- Styl: Změna pozice X
 
 - Doba trvání: 200 MS
 
@@ -387,7 +386,7 @@ ms.locfileid: "53052097"
 
 #### <a name="close-floating-document"></a>Zavřít dokument s plovoucí desetinnou čárkou
 
-- Style: Zobrazí
+- Styl: Zobrazit
 
 - Doba trvání: 200 MS
 
@@ -395,7 +394,7 @@ ms.locfileid: "53052097"
 
 #### <a name="window-state-transition"></a>Okno přechod stavu
 
-- Style: Pro zajištění konzistence s ostatními okny, umožňují definovat animace zavřít dokument aktuálního operačního systému.
+- Styl: Pro zajištění konzistence s ostatními okny, umožňují definovat animace zavřít dokument aktuálního operačního systému.
 
 - Doba trvání: 200 MS
 
@@ -403,7 +402,7 @@ ms.locfileid: "53052097"
 
 #### <a name="menu-open"></a>Otevřete nabídku
 
-- Style: vysouvaly
+- Styl: Vysouvaly
 
 - Doba trvání: 200 MS
 
@@ -411,7 +410,7 @@ ms.locfileid: "53052097"
 
 #### <a name="menu-close"></a>Zavřete nabídku
 
-- Style: Fade-out
+- Styl: Fade-Out
 
 - Doba trvání: 200 MS
 
@@ -419,7 +418,7 @@ ms.locfileid: "53052097"
 
 #### <a name="auto-hide-tool-window-reveal"></a>Zobrazit okno nástroje automatického schovávání
 
-- Style: Zobrazí
+- Styl: Zobrazit
 
 - Doba trvání: Nula sekund
 

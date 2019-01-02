@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: Kopírování elementů diagramu tříd do dokumentu sady Microsoft Office (návrhář tříd)'
+title: 'Postupy: Kopírování elementů diagramu tříd do dokumentu Microsoft Office (návrhář tříd)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
@@ -13,36 +12,36 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b34328a4bff4abdd2db29e9a41e9d04ba43d4f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916290"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Postupy: kopírování elementů diagramu tříd do dokumentu sady Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Postupy: Kopírování elementů diagramu tříd do dokumentu Microsoft Office
 
-Tvary můžete zkopírovat z diagram třída .NET (*.cd* soubor) do jiné dokumenty. Buď získáte kopii tvar nebo jeho kódu, v závislosti na charakteru dokumentu, kde můžete vložit. Pokud chcete zkopírovat tvarů z diagramů tříd UML v projektem modelování, najdete v části [exportovat diagramy jako obrázky](../../modeling/export-diagrams-as-images.md).
+Tvary můžete zkopírovat z diagramu tříd .NET (*.cd* soubor) do jiné dokumenty. Buď získáte kopii tvar nebo jeho základního kódu, v závislosti na charakteru dokumentu, ve kterém vložíte. Zkopírovat obrazce z diagramů tříd UML v projektu modelování, najdete v článku [exportování diagramů jako obrázků](../../modeling/export-diagrams-as-images.md).
 
-## <a name="copy-a-single-element"></a>Zkopírovat jeden element
+## <a name="copy-a-single-element"></a>Zkopírujte jeden element
 
-Pravým tlačítkem myši a zvolte **Kopírovat obraz**.
+Klikněte pravým tlačítkem myši na obrazec a zvolte **Kopírovat obrázek**.
 
-## <a name="copy-several-elements"></a>Zkopírujte několik elementy
+## <a name="copy-several-elements"></a>Kopírování několik elementů
 
-1.  Vyberte obrazce v diagramu, kterou chcete zkopírovat.
+1.  Vyberte tvary v diagramu, který chcete zkopírovat.
 
-2.  Klikněte pravým tlačítkem na výběr a zvolte **Kopírovat obraz**.
+2.  Klikněte pravým tlačítkem na svůj výběr a zvolte **Kopírovat obrázek**.
 
-## <a name="copy-all-the-elements-in-a-class-diagram"></a>Zkopírujte všechny elementy v diagramu tříd
+## <a name="copy-all-the-elements-in-a-class-diagram"></a>Zkopírování všech prvků v diagramu tříd
 
-1.  Klikněte pravým tlačítkem na povrch diagram a zvolte **Vybrat vše**, nebo stiskněte klávesu **kombinaci kláves Ctrl + A**.
+1.  Klikněte pravým tlačítkem na plochu diagramu a zvolte **Vybrat vše**, nebo stiskněte klávesu **Ctrl + A**.
 
-2.  Na **upravit** nabídce vyberte možnost **kopírování bitové kopie**.
+2.  Na **upravit** nabídce vyberte možnost **Kopírovat obrázek**.
 
-Můžete také **kopie** místo **Kopírovat obraz**. **Kopírování** zkopíruje bitové kopie jako regulární rastrového obrázku. **Zkopírujte bitovou kopii** zkopíruje bitovou kopii jako vektoru obrázek, který je lepší pro většinu aplikací Office.
+Můžete také zvolit **kopírování** místo **Kopírovat obrázek**. **Kopírování** zkopíruje bitové kopie jako regulární rastrový obrázek. **Kopírovat obrázek** zkopíruje image jako vektor obrázek, který je lepší pro většinu aplikací Office.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Postupy: tisk diagramů tříd](how-to-print-class-diagrams.md)
-- [Postupy: Export diagramů tříd jako obrázky](how-to-export-class-diagrams-as-images.md)
+- [Postupy: Tisk diagramů tříd](how-to-print-class-diagrams.md)
+- [Postupy: Exportování diagramů tříd jako obrázků](how-to-export-class-diagrams-as-images.md)

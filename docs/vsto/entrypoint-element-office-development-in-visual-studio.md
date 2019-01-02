@@ -3,8 +3,6 @@ title: '&lt;vstupní bod&gt; – element (vývoj pro Office v sadě Visual Studi
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e6e6ffe216d800a58a34696c8577ff08adc94b0f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: c99b6b052fcb411d3f5972d174f804f3000faabe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902085"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;vstupní bod&gt; – element (vývoj pro Office v sadě Visual Studio)
   Každý `entryPoint` elementu `vstav3` obor názvů identifikuje vlastního nastavení sestavení, které by měla být spuštěna, když to [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] je aplikace nainstalovaná.

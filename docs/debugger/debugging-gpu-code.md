@@ -1,8 +1,6 @@
 ---
 title: Ladění kódu GPU | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0fdab78364eaf4c0f9fd86753b8ca1c4178415
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 938d2a81f60b86904d0334380734979c2a39cc43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893941"
 ---
 # <a name="debugging-gpu-code"></a>Ladění kódu GPU
 Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). Podpora v sadě Visual Studio pro ladění GPU zahrnuje závodu detekce spouštění procesů a připojení, a integraci do ladění systému windows.  
@@ -75,7 +73,7 @@ Můžete ladit kód jazyka C++, na kterém běží na grafický procesor (GPU). 
 ### <a name="error-there-is-a-configuration-issue-with-the-selected-debugging-accelerator-type"></a>Chyba: Existuje problém konfigurace u vybraný typ akcelerátoru ladění.  
  K této chybě dochází, když existuje nekonzistence mezi nastavení projektu a konfigurace, který právě ladíte na počítač. Další informace najdete v tématu [nastavení projektu pro konfiguraci ladění jazyka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Chyba: V cílovém počítači není nainstalován ovladač ladicího programu pro vybraný typ akcelerátoru ladění.  
+### <a name="error-the-debug-driver-for-the-selected-debugging-accelerator-type-is-not-installed-on-the-target-machine"></a>Chyba: Na cílovém počítači není nainstalován ovladač ladicího programu pro vybraný typ akcelerátoru ladění.  
  K této chybě dochází, když provádíte ladění na vzdáleném počítači. Ladicí program nemůže určit až do doby běhu, zda jsou ovladače nainstalované ve vzdáleném počítači. Jsou k dispozici u výrobce grafickou kartu ovladače.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Chyba: Časový limit zjišťování a obnovení (TDR) musí být zakázáno ve vzdálené lokalitě.  

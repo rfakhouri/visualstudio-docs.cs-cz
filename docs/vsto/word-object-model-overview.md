@@ -1,9 +1,6 @@
 ---
 title: Přehled modelu objektů aplikace Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922256"
 ---
 # <a name="word-object-model-overview"></a>Přehled modelu objektů aplikace Word
   Při vývoji řešení aplikace Word v sadě Visual Studio, budete moct používat objektovému modelu Wordu. Tento objektový model se skládá z třídy a rozhraní, které jsou k dispozici ve primárního spolupracujícího sestavení pro aplikaci Word a jsou definovány v <xref:Microsoft.Office.Interop.Word> oboru názvů.  
@@ -122,7 +119,7 @@ ms.locfileid: "49878008"
  Podrobnější informace o objektovému modelu Wordu mohou odkazovat na referenční primární sestavení vzájemné spolupráce (PIA) aplikace Word a Visual Basic for Applications (VBA) referenční dokumentace modelu objektu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení  
- Referenční dokumentaci slovo PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci Word. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ Referenční dokumentaci slovo PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci Word. Tato dokumentace je k dispozici z následujícího umístění: [Odkaz na primární spolupracující sestavení aplikace Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Další informace o návrhu aplikace Word PIA, jako jsou rozdíly mezi třídami a rozhraní v PIA a jak jsou implementované událostí v PIA, naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878008"
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

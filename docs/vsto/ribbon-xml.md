@@ -1,9 +1,6 @@
 ---
 title: Pás karet – XML
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.Ribbon.RibbonXMLItem
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 69bd6ac15bcaa08800177df92eb8a40e8109d6b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929572"
 ---
 # <a name="ribbon-xml"></a>Pás karet – XML
   Položky pásu karet (XML) umožňuje přizpůsobit pás karet pomocí XML. Pomocí položky pásu karet (XML), pokud chcete přizpůsobit pás karet tak, aby položky pásu karet (vizuální návrhář) nepodporuje. Porovnání můžete dělat s každou položku najdete v tématu [přehled pásu karet](../vsto/Ribbon-overview.md).  
@@ -65,7 +62,7 @@ ms.locfileid: "49823681"
 > [!NOTE]  
 >  Outlook vyžaduje další krok. Další informace najdete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
- Názorný postup ukazuje, jak automatizovat aplikace pásu karet, najdete v části [návod: vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ Názorný postup ukazuje, jak automatizovat aplikace pásu karet, najdete v části [názorný postup: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
   
 ### <a name="assign-callback-methods-to-controls"></a>Přiřadit metody zpětného volání k ovládacím prvkům  
  Přiřadit metody zpětného volání ovládacího prvku v souboru XML pásu karet, přidejte atribut, který určuje typ metody zpětného volání a název metody. Například následující element definuje přepínací tlačítko, který má **onAction** metoda zpětného volání s názvem `OnToggleButton1`.  
@@ -78,7 +75,7 @@ ms.locfileid: "49823681"
   
  Metoda, která zadáte v atributu může mít libovolný název. To však musí odpovídat názvu metody, které definujete v souboru s kódem pásu karet.  
   
- Existuje mnoho různých typů metod zpětného volání, které můžete přiřadit ovládacích prvků pásu karet. Úplný seznam metod zpětného volání k dispozici pro každý ovládací prvek, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ Existuje mnoho různých typů metod zpětného volání, které můžete přiřadit ovládacích prvků pásu karet. Úplný seznam metod zpětného volání k dispozici pro každý ovládací prvek, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).  
   
 ###  <a name="CallBackMethods"></a> Definování metod zpětného volání  
  Definujte svoje metody zpětného volání ve třídě pásu karet v soubor kódu pásu karet. Metoda zpětného volání má několik požadavků:  
@@ -89,7 +86,7 @@ ms.locfileid: "49823681"
   
 - Podpis typu metody zpětného volání, která je k dispozici pro přidružený ovládací prvek pásu karet se musí shodovat jeho podpis.  
   
-  Úplný seznam podpisy metod zpětného volání pro ovládací prvky pásu karet, najdete v článku technické [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio neposkytuje podporu technologie IntelliSense pro metody zpětného volání, které vytvoříte v soubor kódu pásu karet. Pokud vytvoříte metody zpětného volání, která neodpovídá platný podpis, kompilací kódu, ale nic dojde, když uživatel klikne ovládací prvek.  
+  Úplný seznam podpisy metod zpětného volání pro ovládací prvky pásu karet, najdete v článku technické [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 3 ze 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)). Visual Studio neposkytuje podporu technologie IntelliSense pro metody zpětného volání, které vytvoříte v soubor kódu pásu karet. Pokud vytvoříte metody zpětného volání, která neodpovídá platný podpis, kompilací kódu, ale nic dojde, když uživatel klikne ovládací prvek.  
   
   Mají všechny metody zpětného volání <xref:Microsoft.Office.Core.IRibbonControl> parametr, který představuje ovládací prvek, který volá metodu. Tento parametr můžete znovu použít stejnou metodu zpětného volání pro více ovládacích prvků. Následující příklad kódu ukazuje **onAction** metody zpětného volání, která provádí různé úlohy v závislosti na tom, které ovládacího prvku uživatel klikne na tlačítko.  
   
@@ -133,7 +130,7 @@ ms.locfileid: "49823681"
 |**id**|**Skupiny**|Tento parametr identifikuje skupinu.|  
 |**Popisek**|**Skupiny**|Určuje text, který se zobrazí ve skupině.|  
   
- Výchozí prvky a atributy v souboru XML pásu karet jsou malou podmnožinu prvky a atributy, které jsou k dispozici. Úplný seznam dostupných prvky a atributy, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 2 ze 3)](http://msdn.microsoft.com/6b904f55-525f-4520-9b81-a017db65657b).  
+ Výchozí prvky a atributy v souboru XML pásu karet jsou malou podmnožinu prvky a atributy, které jsou k dispozici. Úplný seznam dostupných prvky a atributy, naleznete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 2 ze 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).  
   
 ##  <a name="RibbonExtensionClass"></a> Referenční třídy pásu karet  
  Visual Studio vygeneruje třídy pásu karet v soubor kódu pásu karet. Přidáte do této třídy, metody zpětného volání pro ovládací prvky na pásu karet. Tato třída implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility> rozhraní.  
@@ -143,12 +140,10 @@ ms.locfileid: "49823681"
 |Metoda|Popis|  
 |------------|-----------------|  
 |`GetCustomUI`|Vrátí obsah souboru XML pásu karet. Aplikace Microsoft Office volat tuto metodu za účelem získání řetězec XML, který definuje uživatelské rozhraní vlastní pás karet. Tato metoda implementuje <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metody. **Poznámka:** `GetCustomUI` by měla být implementována pouze pro vrácení obsahu souboru XML pásu karet; nesmí sloužit k inicializaci doplňku VSTO. Konkrétně se by se neměl pokoušet zobrazit dialogová okna nebo v jiných oknech vaše `GetCustomUI` implementace. Vlastní pás karet v opačném případě nemusí chovat správně. Pokud je třeba spustit kód, který inicializuje doplňku VSTO, přidejte kód, který `ThisAddIn_Startup` obslužné rutiny události.|  
-|`OnLoad`|Přiřazuje <xref:Microsoft.Office.Core.IRibbonControl> parametr `Ribbon` pole. Aplikace Microsoft Office tuto metodu volat, když se načítají vlastní pás karet. Toto pole můžete použít a dynamicky aktualizovat vlastní pás karet. Další informace najdete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 1 ze 3)](http://msdn.microsoft.com/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
+|`OnLoad`|Přiřazuje <xref:Microsoft.Office.Core.IRibbonControl> parametr `Ribbon` pole. Aplikace Microsoft Office tuto metodu volat, když se načítají vlastní pás karet. Toto pole můžete použít a dynamicky aktualizovat vlastní pás karet. Další informace najdete v tématu technického článku [přizpůsobení uživatelského rozhraní pásu karet Office (2007) pro vývojáře (část 1 ze 3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12)).|  
 |`GetResourceText`|Volá `GetCustomUI` metoda získat obsah souboru XML pásu karet.|  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
  [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)  
-  
-  

@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942093"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro model aktivity virtuálního uživatele
 
@@ -60,7 +59,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 - **Počáteční počet uživatelů**: 100
 
-- **Maximální počet uživatelů**: 2000
+- **Maximální počet uživatelů**: 2 000
 
 - **Doba trvání kroku (sekundy)**: víc než 1 800
 
@@ -68,7 +67,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 - **Krok počtu uživatelů**: 100
 
-  Tato nastavení spuštění zátěžového testu po dobu 30 minut (1800 sekund) na uživatele načte 100, 200, 300 a až 2 000 uživatelů. **Doba náběhu kroku** vlastnost je stojí za zvláštní pozornost, protože se jedná pouze jeden z těchto vlastností, které nejsou k dispozici pro výběr v **Průvodce novým zátěžovým testem**. Tato vlastnost umožňuje zvýšení z jednoho kroku do druhého (například z 100 až 200 uživatelů) dochází postupně místo okamžitě. V tomto příkladu uživatelské zatížení by se zvýšilo ze 100 na 200 uživatelů po dobu 20 sekund (zvýšení pěti uživatelů každou sekundu). Další informace najdete v tématu [postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Tato nastavení spuštění zátěžového testu po dobu 30 minut (1800 sekund) na uživatele načte 100, 200, 300 a až 2 000 uživatelů. **Doba náběhu kroku** vlastnost je stojí za zvláštní pozornost, protože se jedná pouze jeden z těchto vlastností, které nejsou k dispozici pro výběr v **Průvodce novým zátěžovým testem**. Tato vlastnost umožňuje zvýšení z jednoho kroku do druhého (například z 100 až 200 uživatelů) dochází postupně místo okamžitě. V tomto příkladu uživatelské zatížení by se zvýšilo ze 100 na 200 uživatelů po dobu 20 sekund (zvýšení pěti uživatelů každou sekundu). Další informace najdete v tématu [jak: Zadejte vlastnost doba doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Cílově zaměřeného vzoru zátížení
 
@@ -85,7 +84,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 |Skupina vlastností|Vlastnost|Hodnota|
 |-|--------------|-|
 |Čítač výkonu|Kategorie|Procesor|
-|Čítač výkonu|Počítače|ContosoServer1|
+|Čítač výkonu|Počítač|ContosoServer1|
 |Čítač výkonu|Čítač|% Času procesoru|
 |Čítač výkonu|instance|_Celkem|
 |Cílový rozsah čítače výkonu|Špičkové|90|
@@ -112,10 +111,10 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 
 |Úlohy|Související témata|
 |-|-----------------------|
-|**Určení vzoru počáteční zatížení pro zátěžový test:** při vytváření zátěžového testu s použitím **nového Průvodce zátěžovým testem**, vyberte vzor zatížení.|-   [Vzor zatížení změňte na](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**Úprava vzoru zatížení pro zátěžový test:** po vytvoření zátěžového testu můžete upravit ve vzoru zatížení **editoru zátěžového testu**.|-   [Postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Určení, zda virtuálních uživatelů v vašeho zátěžového testu scénáři by měl obsahovat data ve webové mezipaměti:** můžete změnit **procentuální podíl nových uživatelů** vlastnost ovlivňují způsob, ve kterém zátěžový test simuluje webové ukládání do mezipaměti, který by byla prováděna ve webovém prohlížeči pro virtuálního uživatele.|-   [Postupy: určení procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Určení doba doběhu kroku pro vzor zatížení kroku:** **doba náběhu kroku** vlastnost umožňuje zvýšení z jednoho kroku do druhého (například z 100 až 200 uživatelů) dochází postupně místo okamžitě.|-   [Postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Určení vzoru počáteční zatížení pro zátěžový test:** Když vytvoříte zátěžový test pomocí **nového Průvodce zátěžovým testem**, vyberte vzor zatížení.|-   [Vzor zatížení změňte na](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Úprava vzoru zatížení pro zátěžový test:** Po vytvoření zátěžového testu můžete upravit ve vzoru zatížení **editoru zátěžového testu**.|-   [Jak: Zadejte vlastnost doba doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Určení, zda virtuálních uživatelů v vašeho zátěžového testu scénáři by měl obsahovat data ve webové mezipaměti:** Můžete změnit **procentuální podíl nových uživatelů** vlastnost ovlivňují způsob, ve kterém zátěžový test simuluje webové ukládání do mezipaměti, které by se provádí pomocí webového prohlížeče pro uživatele virtuálních.|-   [Jak: Zadejte procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Určení doba doběhu kroku pro vzor zatížení kroku:** **Doba náběhu kroku** vlastnost umožňuje zvýšení z jednoho kroku do druhého (například z 100 až 200 uživatelů) dochází postupně místo okamžitě.|-   [Jak: Zadejte vlastnost doba doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Vzor zatížení změňte na
 
@@ -128,7 +127,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
  Vzor zatížení určuje počet virtuálních uživatelů aktivních během testu zatížení a rychlost, jakou se přidají nové uživatele. Můžete si vybrat z tři dostupné vzorky: krok vzor, konstanty a založeno na cíli. Další informace najdete v tématu [zadat počet virtuálních uživatelů se vzorci zatížení ve scénáři testu zatížení](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
-> Můžete také změnit vlastnosti zatížení prostřednictvím kódu programu pomocí modulu plug-in zátěžového testu. Další informace najdete v tématu [postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md).
+> Můžete také změnit vlastnosti zatížení prostřednictvím kódu programu pomocí modulu plug-in zátěžového testu. Další informace najdete v tématu [jak: Vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md).
 
 
 ### <a name="to-change-the-load-pattern"></a>Chcete-li změnit vzor zatížení
@@ -158,5 +157,5 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzory zat
 ## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
-- [Postupy: určení procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [Postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [Postupy: Zadejte procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [Postupy: Zadejte vlastnost doba doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

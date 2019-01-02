@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: otevření editoru pro konkrétní projekt | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Otevření editoru pro konkrétní projekt | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45967d2312a7693130126612c7fd052c54e17ce2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934411"
 ---
-# <a name="how-to-open-project-specific-editors"></a>Postupy: otevření editoru pro konkrétní projekt
+# <a name="how-to-open-project-specific-editors"></a>Postupy: Otevřít editoru pro konkrétní projekt
 Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétní editor pro tento projekt, musí projekt otevřete soubor pomocí editoru specifické pro projekt. Soubor není možné delegovat na rozhraní IDE mechanismus zvolení editoru. Například namísto použití editoru standardního rastrových obrázků, můžete použít tuto možnost editoru pro konkrétní projekt k určení editoru konkrétní rastrový obrázek, který rozpoznává informace v souboru, který je jedinečný pro váš projekt.  
   
  Volání rozhraní IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodu, když zjistí, že soubor by měl být otevírány konkrétním projektu. Další informace najdete v tématu [zobrazení souborů pomocí příkazu Otevřít soubor](../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Použijte následující pokyny k implementaci `OpenItem` metoda může mít projektu otevřete soubor pomocí editoru specifické pro projekt.  
@@ -56,5 +53,5 @@ Pokud je soubor položky jsou otevírány projekt vnitřně vázán na konkrétn
   
 ## <a name="see-also"></a>Viz také:  
  [Otevření a uložení položek projektu](../extensibility/internals/opening-and-saving-project-items.md)   
- [Postupy: otevření standardních editorů](../extensibility/how-to-open-standard-editors.md)   
+ [Postupy: Otevřít standardních editorů](../extensibility/how-to-open-standard-editors.md)   
  [Postupy: Otevření editorů pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)

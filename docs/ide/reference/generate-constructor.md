@@ -2,19 +2,18 @@
 title: Generovat konstruktor rychlá akce
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895295"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -24,13 +23,13 @@ Tato generace kód platí pro:
 
 - Visual Basic
 
-**Co:** umožňuje okamžitě generování kódu pro nový konstruktor třídy.
+**Co:** Umožňuje okamžitě generování kódu pro nový konstruktor třídy.
 
-**Kdy:** zavést nový konstruktor a chcete správně deklarujte ho automaticky, nebo upravte existující konstruktoru.
+**Kdy:** Zavést nový konstruktor a chcete správně deklarujte ho automaticky, nebo upravíte existující konstruktoru.
 
-**Důvod, proč:** můžete deklarovat konstruktor před jeho použití, ale tato funkce bude generovat, s odpovídající parametry automaticky. Kromě toho úprava existující konstruktoru vyžaduje aktualizaci všech callsites, pokud pomocí této funkce lze automaticky aktualizovat.
+**Proč:** Můžete deklarovat konstruktor před jeho použití, ale tato funkce bude generovat, s odpovídající parametry automaticky. Kromě toho úprava existující konstruktoru vyžaduje aktualizaci všech callsites, pokud pomocí této funkce lze automaticky aktualizovat.
 
-**Jak:** generovat konstruktor několika způsoby:
+**Jak:** Generovat konstruktor několika způsoby:
 
    - [Generovat konstruktor a vyberte členy, kteří](#pick)
    - [Generovat konstruktor z vybraných polí](#selection)

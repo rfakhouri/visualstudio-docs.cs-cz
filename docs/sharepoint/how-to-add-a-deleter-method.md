@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: přidání metody odstranění | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přidání metody odstranění | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0bc47da90356149e3fe2e1d1b888bf5ac6a877e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924173"
 ---
-# <a name="how-to-add-a-deleter-method"></a>Postupy: přidání metody odstranění
+# <a name="how-to-add-a-deleter-method"></a>Postupy: Přidání metody odstranění
   Můžete povolit koncový uživatel odstranit záznam dat z externí seznam na Sharepointovém webu tak, že přidání metody odstranění do modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-deleter-method"></a>Chcete-li vytvořit metodu Deleter  
@@ -73,12 +68,10 @@ ms.locfileid: "49842674"
   
 ## <a name="see-also"></a>Viz také:
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
- [Postupy: Přidání specifické vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
+ [Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
+ [Postupy: Přidání konkrétní vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
  [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  

@@ -8,28 +8,27 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: fda89444e0451b5d562aff37beffc2d7a97c0123
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 263df1391fcc9795b08a21a7e56b1113ef1fb82e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895672"
 ---
 # <a name="writing-user-commands-and-actions"></a>Zápis uživatelských příkazů a akcí
-Jazyk specifické pro doménu můžete přizpůsobit přidáním příkazy k diagramu a odpovídá na požadavky gesta například přetahování myší, klikněte na tlačítko a dvakrát klikněte na události.
+Jazyka specifického pro doménu můžete přizpůsobit přidáním příkazy do diagramu a reakcí na gesta, jako například přetažení myší, klikněte na tlačítko a dvakrát klikněte na události.
 
 ## <a name="user-actions"></a>Akce uživatele
 
--   [Postupy: Úprava standardních příkazů nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – můžete přizpůsobit chování příkazy, jako je například kopírování a tisku.
+-   [Postupy: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) – můžete přizpůsobit chování příkazů jako třeba kopírování a tisk.
 
--   [Postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) -vytvořit vlastní příkazy, které můžete aktualizovat model nebo externím prostředkům.
+-   [Postupy: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) – vytvořit vlastní příkazy, které umožňují aktualizaci modelu nebo externím prostředkům.
 
--   [Postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md) -povolit uživatelům položky přesouvat z jednoho diagram do jiné, včetně diagramů UML. Odkazy na jeden model můžete uložit v jiném.
+-   [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md) – umožní uživateli přesunout položky z jednoho diagramu do druhého, včetně diagramů UML. Odkazy na jeden model můžete uložit v jiném.
 
--   [Postupy: Intercept kliknutí na tvar nebo Dekoratéra](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -povolit kliknutím z položky jinou položku, která odkazuje na vaše uživateli.
+-   [Postupy: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) – umožní kliknutím přejít z položky na jinou položku, která odkazuje na uživatele.
 
--   [Postupy: Přístup k aktuálnímu výběru a jeho omezení](../modeling/how-to-access-and-constrain-the-current-selection.md)
+-   [Postupy: Přístup a jeho omezení aktuální výběr](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 -   [Přizpůsobení nástrojů elementu](../modeling/customizing-element-tools.md)
 

@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: programové skupiny řádků v listech'
-ms.custom: ''
+title: 'Postupy: Seskupování řádků v listech prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,48 +20,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896783"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Postupy: programové skupiny řádků v listech
-  Můžete seskupit jeden nebo více celou řádků. Chcete-li vytvořit skupinu v listu, použijte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo objekt rozsahu nativní aplikace Excel.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Postupy: Seskupování řádků v listech prostřednictvím kódu programu
+  Můžete seskupit nejméně jeden celý řádek. Chcete-li vytvořit skupinu na listu, použijte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek nebo rozsah objekt nativní aplikace Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="use-a-namedrange-control"></a>Použití ovládacího prvku NamedRange  
- Pokud přidáte <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku do projektu úrovni dokumentu v době návrhu, můžete použít ovládací prvek prostřednictvím kódu programu vytvořte skupinu. V následujícím příkladu se předpokládá, že existují tři <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na stejné listu: `data2001`, `data2002`, a `dataAll`. Každé pojmenované oblasti odkazuje na celý řádek do listu.  
+ Pokud chcete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení na úrovni dokumentu projektu v době návrhu, můžete použít ovládací prvek můžete prostřednictvím kódu programu vytvořit skupinu. V následujícím příkladu se předpokládá, že existují tři <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků ve stejném listu: `data2001`, `data2002`, a `dataAll`. Každý pojmenované oblasti odkazuje na celý řádek v listu.  
   
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Chcete-li vytvořit skupinu ovládacích prvků NamedRange do listu  
   
-1.  Skupina tří pojmenované oblasti voláním <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda každého rozsahu. Tento kód musí být umístěny v listu třída, není v `ThisWorkbook` třídy.  
+1.  Seskupit tři pojmenované oblasti voláním <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> metoda každého rozsahu. Tento kód musí být umístěn ve třídě list, není v `ThisWorkbook` třídy.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
   
     > [!NOTE]  
-    >  Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> metoda.  
+    >  Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> metody.  
   
 ## <a name="use-native-excel-ranges"></a>Použít nativní oblastí aplikace Excel  
- Kód předpokládá, že máte tři oblastí aplikace Excel s názvem `data2001`, `data2002`, a `dataAll` na listu.  
+ Kód předpokládá, že máte tři oblasti aplikace Excel s názvem `data2001`, `data2002`, a `dataAll` v listu.  
   
-### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Chcete-li vytvořit skupinu oblastí aplikace Excel v listu  
+### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Můžete vytvořit skupinu oblastí aplikace Excel na listu  
   
-1.  Skupina tří pojmenované oblasti voláním <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda každého rozsahu. V následujícím příkladu se předpokládá, že existují tři <xref:Microsoft.Office.Interop.Excel.Range> ovládací prvky s názvem `data2001`, `data2002`, a `dataAll` na stejném listu. Každé pojmenované oblasti odkazuje na celý řádek do listu.  
+1.  Seskupit tři pojmenované oblasti voláním <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> metoda každého rozsahu. V následujícím příkladu se předpokládá, že existují tři <xref:Microsoft.Office.Interop.Excel.Range> ovládací prvky s názvem `data2001`, `data2002`, a `dataAll` na stejném listu. Každý pojmenované oblasti odkazuje na celý řádek v listu.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
   
     > [!NOTE]  
-    >  Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metoda.  
+    >  Chcete-li zrušit seskupení řádků, zavolejte <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> metody.  
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [NamedRange – ovládací prvek](../vsto/namedrange-control.md)   
+ [Namedrange – ovládací prvek](../vsto/namedrange-control.md)   
  [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

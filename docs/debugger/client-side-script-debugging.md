@@ -1,8 +1,6 @@
 ---
 title: Ladění skriptů na straně klienta | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,18 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898718"
 ---
 # <a name="client-side-script-debugging"></a>Ladění skriptů na straně klienta
 Ladicí program sady Visual Studio poskytuje všestranné prostředí pro nalezení a opravu chyb v klientských skriptech na stránkách ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Otevření dokumentů skriptu  
-Můžete zobrazit seznamy dokumentů skriptů na straně serveru a na straně klienta v **Průzkumníka řešení** zobrazíte. Můžete otevřít libovolný dokument skriptu z **Průzkumníka řešení**. Další informace najdete v tématu [postupy: zobrazení dokumentů skriptu](../debugger/how-to-view-script-documents.md).  
+Můžete zobrazit seznamy dokumentů skriptů na straně serveru a na straně klienta v **Průzkumníka řešení** zobrazíte. Můžete otevřít libovolný dokument skriptu z **Průzkumníka řešení**. Další informace najdete v tématu [jak: Zobrazení dokumentů skriptu](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapování zarážek  
  V sadě Visual Studio nelze přímo ladit kód na straně serveru, ale můžete nastavit zarážku v souboru na straně serveru. Visual Studio automaticky mapuje zarážku do odpovídajícího umístění v souboru straně klienta a vytvoří mapovanou zarážku v kódu na straně klienta.  
@@ -37,7 +35,7 @@ Můžete zobrazit seznamy dokumentů skriptů na straně serveru a na straně kl
 ## <a name="manually-or-automatically-attaching-to-script"></a>Ruční nebo automatické připojení ke skriptu  
  Chcete-li začít ladit skript v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ladicí program musí připojení ke skriptu, který chcete ladit. Může to ručně nebo automaticky.  
   
- Můžete provést ruční přiřazení pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní ladicího programu k výběru spuštěného procesu skriptu, který chcete připojit k. Další informace najdete v tématu [postupy: připojení ke skriptu](../debugger/how-to-attach-to-script.md).  
+ Můžete provést ruční přiřazení pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní ladicího programu k výběru spuštěného procesu skriptu, který chcete připojit k. Další informace najdete v tématu [jak: Připojení ke skriptu](../debugger/how-to-attach-to-script.md).  
   
  Ladicí program se automaticky připojí ke skriptu při jedné z následujících akcí:  
   
@@ -62,7 +60,7 @@ Můžete zobrazit seznamy dokumentů skriptů na straně serveru a na straně kl
  [Ladění a trasování – přehled aplikace Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Ladění aplikací ASP.NET a AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
  [Omezení ladění skriptů](../debugger/limitations-on-script-debugging.md)   
  [Proměnné Windows](../debugger/debugger-windows.md)   
  [Příkazové podokno](../ide/reference/immediate-window.md)   

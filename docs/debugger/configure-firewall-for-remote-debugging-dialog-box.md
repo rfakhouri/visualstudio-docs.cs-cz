@@ -1,8 +1,6 @@
 ---
-title: Konfigurace brány Firewall pro vzdálené ladění dialogové okno | Microsoft Docs
-ms.custom: ''
+title: Konfigurace brány Firewall pro vzdálené ladění, dialogové okno | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.firewallconfiguration
@@ -22,28 +20,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 982e677639cec6a98ae3aafe3d0ae624df588ccd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bea1024af65ae788cae9909d3b6e86f1ae84dc4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916754"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Dialogové okno Konfigurace brány firewall pro vzdálené ladění
-Toto dialogové okno se zobrazí, když brána Windows Firewall blokuje ladicí program příjem informací přes síť. Chcete-li pokračovat, vzdálené ladění, musíte otevřít díru v bráně firewall tak ladicího programu můžete získat informace.  
+Toto dialogové okno se zobrazí, když brána Windows Firewall blokuje ladicí program příjem informací v síti. Chcete-li pokračovat, vzdálené ladění, je nutné otevřít díry v bráně firewall tak, že ladicí program může přijímat informace.  
   
 > [!CAUTION]
->  Otevírání díru v bráně Firewall může vystavit zabezpečení hrozeb, které brána Firewall je navržena pro blokování v počítači. Otevírání díru pro vzdálené ladění odblokuje porty 4020 a 4021 ve Visual Studiu 2015. V jiných verzích sady Visual Studio se používají jiné čísla portů. Další informace najdete v tématu [přiřazení portu vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md). Kromě toho umožňuje ladicí program otevřít další porty. Další informace najdete v tématu [konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
+>  Otevírání díry v bráně Firewall může vystavit bezpečnostní hrozby, které brána Firewall je navržená tak, aby blokovat v počítači. Otevírání riziko pro vzdálené ladění odblokuje porty 4020 a 4021 v sadě Visual Studio 2015. V jiných verzích sady Visual Studio se používají jiné čísla portů. Další informace najdete v tématu [přiřazení portů vzdáleného ladicího programu](../debugger/remote-debugger-port-assignments.md). Kromě toho umožňuje ladicí program otevřete další porty. Další informace najdete v tématu [konfigurace brány Windows Firewall pro vzdálené ladění](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Zrušit vzdálené ladění**  
- Zruší požadavek na vzdáleného ladění. Nastavení zabezpečení počítače zůstanou beze změn.  
+ Zruší požadavek na vzdáleného ladění. Nastavení zabezpečení vašeho počítače zůstávají beze změn.  
   
- **Odblokování vzdálené ladění z počítačů v místní sítě (podsítě)**  
- Umožňuje vzdálené ladění počítačů v místní podsíti. Otevře ohrožení zabezpečení počítače na místní podsíti, ale stále blokovat informace pocházející mimo podsíť brány firewall.  
+ **Odblokovat vzdálené ladění z počítačů v místní síti (podsíti)**  
+ Umožňuje vzdálené ladění z počítačů ve vaší místní podsíti. Otevře ohrožení zabezpečení na počítače v místní podsíti, ale stále blokovat informace pocházející z mimo podsíť brány.  
   
- **Odblokování vzdálené ladění z libovolného počítače**  
- Umožňuje vzdálené ladění počítače kdekoli v síti. Toto nastavení je ta nejmíň zabezpečená.  
+ **Odblokovat vzdálené ladění z libovolného počítače**  
+ Umožňuje vzdálené ladění počítače kdekoli v síti. Toto nastavení je nejméně bezpečná.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   

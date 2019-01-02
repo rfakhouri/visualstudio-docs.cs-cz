@@ -1,9 +1,6 @@
 ---
-title: IDebugEngine2 | Microsoft Docs
-ms.custom: ''
+title: IDebugEngine2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2cfe7e2f54b45ecfe8fdb34943b87818a13feab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 384d6179f2e8a8c9252e4c631a97d8e429330f96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914220"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
-Toto rozhraní představuje modul ladění (DE). Slouží ke správě různých aspektů relaci ladění ve vytváření zarážky pro nastavení a vymazání výjimky.  
+Toto rozhraní představuje ladicího stroje (DE). Používá se ke správě různých aspektů ladicí relace, od vytváření zarážek pro nastavení a vymazání výjimky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,36 +29,36 @@ IDebugEngine2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní je implementováno modulem vlastní DE ke správě ladění programů. Toto rozhraní je implementováno modulem DE.  
+ Toto rozhraní implementují vlastní DE ke správě ladění programů. Pomocí DE musí implementovat toto rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je volána službou Správce ladicí relace (SDM) ke správě relaci ladění, včetně Správa výjimek, vytváření zarážky a reagování na synchronní události poslal DE.  
+ Toto rozhraní je volán Správce ladění relace (SDM) ke správě relaci ladění, včetně správy výjimky, vytvořením zarážky a reagovat na synchronní události odeslané DE.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugEngine2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugEngine2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Vytvoří enumerátor pro všechny programy programem Zavedenými.|  
-|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Připojí Zavedenými programu.|  
-|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Vytvoří čekající zarážek v DE.|  
-|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Určuje, jak je DE pracovat s danou výjimka.|  
-|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Odebere zadané výjimky, aby se již zpracovává modul ladění.|  
-|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Odebere seznamu výjimek nastavený rozhraní IDE pro konkrétní architekturu běhu a jazyka.|  
+|[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|Vytvoří čítač pro všechny programy, které jsou právě laděny ve Zavedenými.|  
+|[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)|Zavedenými připojí k programu.|  
+|[CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)|Vytvoří v DE čekající zarážkou.|  
+|[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)|Určuje, jak DE pracovat s danou výjimku.|  
+|[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)|Odebere Zadaná výjimka, takže už je zpracována ladicího stroje.|  
+|[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)|Odebere seznam výjimek, integrovaném vývojovém prostředí má nastavit pro konkrétní architekturu za běhu nebo jazyk.|  
 |[GetEngineID](../../../extensibility/debugger/reference/idebugengine2-getengineid.md)|Získá identifikátor GUID je DE.|  
-|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informuje o Německo, který byl zadaný program atypicky ukončen a který by měl DE vyčistit všechny odkazy na program a odeslat program destroy událostí.|  
-|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Voláno rozhraním SDM označíte, že synchronní ladění událostí, dříve posílá DE SDM, přijala a zpracovala.|  
-|[Setlocale –](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Nastaví národního prostředí je DE.|  
+|[DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)|Informuje, DE, který byl zadaný program atypicky ukončen a, DE byste měli odstranit všechny odkazy na program a odeslat program zrušení události.|  
+|[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)|Je voláno SDM k označení, že synchronní ladění události, DE dříve odeslaných do SDM, přijala a zpracovala.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)|Nastaví národní prostředí DE.|  
 |[SetRegistryRoot](../../../extensibility/debugger/reference/idebugengine2-setregistryroot.md)|Nastaví kořenový klíč registru aktuálně používán DE.|  
-|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Nastaví metriky.|  
-|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Požadavky, že všechny programy programem tento DE zastavit provádění při příštím jeden z jejich vláken pokusí o spuštění.|  
+|[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|Nastaví metriku.|  
+|[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|Požadavky, že všechny programy, které jsou právě laděny ve tomto DE zastavit provádění, které se jeden z jejich vláken pokusí o spuštění.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Události](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   

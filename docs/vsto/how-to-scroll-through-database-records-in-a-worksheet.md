@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: procházení databázových záznamů na listu'
-ms.custom: ''
+title: 'Postupy: Procházení databázových záznamů na listu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897467"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Postupy: procházení databázových záznamů na listu
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Postupy: Procházení databázových záznamů na listu
   Následující postup ukazuje, jak používat návrháře zobrazíte jedno pole z databázové tabulky v aplikaci Microsoft Office Excel listu s ovládacími prvky, které umožňují koncovým uživatelům procházet všechny záznamy.  
   
- Návrháři můžete použít jenom v projektech na úrovni dokumentu. Můžete však také přidat ovládací prvky a svázat s daty prostřednictvím kódu programu za běhu. Další informace najdete v tématu [návod: jednoduché datové vazby v projektu doplňku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
+ Návrháři můžete použít jenom v projektech na úrovni dokumentu. Můžete však také přidat ovládací prvky a svázat s daty prostřednictvím kódu programu za běhu. Další informace najdete v tématu [názorný postup: Jednoduché datové vazby v projektu doplňku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35676077"
   
 ## <a name="see-also"></a>Viz také:  
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,7 @@
 ---
 title: Řešení potíží s chybami sítě nebo proxy serveru
 description: Řešení chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
-ms.custom: ''
 ms.date: 02/12/2018
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -18,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4693a50246493a97e74ba75dc7f516ce72a215ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914939"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chyby související se sítí při instalaci nebo používání sady Visual Studio
 
 Máme řešení obvykle chyby související s sítě nebo proxy, které můžete narazit při instalaci nebo používání sady Visual Studio za bránou firewall nebo proxy server.
 
-## <a name="error-proxy-authorization-required"></a>Chyba: "proxy server vyžaduje se autorizace"
+## <a name="error-proxy-authorization-required"></a>Chyba: "Vyžaduje autorizace proxy"
 
 K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu prostřednictvím proxy serveru a proxy server blokuje volání, která vytvoří malou Visual Studio k některým síťovým prostředkům.
 
@@ -71,11 +69,11 @@ K této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu 
 
 - Také postupujte podle pokynů [jak se připojit přes ověřený proxy server webové](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) blogový příspěvek, který ukazuje, jak přidat kód, který vám umožní používat proxy server.
 
-## <a name="error-the-underlying-connection-was-closed"></a>Chyba: "základní připojení bylo ukončeno."
+## <a name="error-the-underlying-connection-was-closed"></a>Chyba: "Nadřízené připojení bylo uzavřeno."
 
 Pokud používáte Visual Studio v privátní síti, která má bránu firewall, Visual Studio nemusí být schopný se připojit k některým síťovým prostředkům. Tyto prostředky mohou zahrnovat Azure DevOps služby pro přihlašování a licencování NuGet a službami Azure. Pokud Visual Studio nepodaří připojit k jednomu z těchto prostředků, může se zobrazit následující chybová zpráva:
 
-  **Nadřízené připojení bylo uzavřeno: došlo k neočekávané chybě při odesílání**
+  **Nadřízené připojení bylo uzavřeno: Při odesílání došlo k neočekávané chybě.**
 
 Visual Studio používá k připojení k síťovým prostředkům protokol zabezpečení TLS (Transport Layer) 1.2. Zabezpečovací zařízení několik soukromých sítích blokují některá serverová připojení, když sada Visual Studio používá TLS 1.2.
 

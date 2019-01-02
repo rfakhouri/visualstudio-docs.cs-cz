@@ -1,8 +1,6 @@
 ---
-title: MarkProfile | Microsoft Docs
-ms.custom: ''
+title: MarkProfile | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 5d079310fa8fa579f05e927eb37a0cbd6f2c8cca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853746"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` Metoda vloží značku profil v. *Vsp* souboru. Profilace pro přístup z více vláken obsahující `MarkProfile` funkce musí být ON pro značku, která má být vložen.  
+`MarkProfile` Metoda vloží značku profilu v. *Vsp* souboru. Profilování pro vlákna obsahující `MarkProfile` funkce musí být ON pro značku má být vložen.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,41 +29,41 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 #### <a name="parameters"></a>Parametry  
  `lMarker`  
   
- Značky pro vložení. Značky musí být větší než nebo rovno 0 (nula).  
+ Značky pro vložení. Značky musí být větší než nebo rovna 0 (nula).  
   
-## <a name="property-valuereturn-value"></a>Vlastnost Hodnota/Návratová hodnota  
- Funkce označuje úspěch či neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Vrácená hodnota může být jeden z následujících akcí:  
+## <a name="property-valuereturn-value"></a>Vlastnost hodnota nebo návratová hodnota  
+ Funkce označuje úspěch nebo neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Návratová hodnota může být jeden z následujících akcí:  
   
 |Enumerátor|Popis|  
 |----------------|-----------------|  
-|MARK_ERROR_MARKER_RESERVED|Parametr je menší než nebo rovna 0. Tyto hodnoty jsou vyhrazené. Značky a komentáře nejsou popsané.|  
-|MARK_ERROR_MODE_NEVER|Profilování režimu byl nastaven na nikdy, při volání funkce. Značky a komentáře nejsou popsané.|  
-|MARK_ERROR_MODE_OFF|Profilování režimu byl nastaven na hodnotu OFF, při volání funkce. Značky a komentáře nejsou popsané.|  
-|MARK_ERROR_NO_SUPPORT|Nepodporuje označit v tomto kontextu. Značky a komentáře nejsou popsané.|  
-|MARK_ERROR_OUTOFMEMORY|Paměť nebyl k dispozici k zaznamenání události. Značky a komentáře nejsou popsané.|  
-|MARK_TEXTTOOLONG|Řetězec překračuje maximální povolenou délku 256 znaků. Řetězec komentáře zkrácen a značky a komentáře se zaznamenávají.|  
-|MARK_OK|MARK_OK je vrácen do indikuje úspěšné provedení.|  
+|MARK_ERROR_MARKER_RESERVED|Parametr je menší než nebo rovna 0. Tyto hodnoty jsou vyhrazené. Nejsou zaznamenána značky a komentáře.|  
+|MARK_ERROR_MODE_NEVER|Režimu profilace byla nastavena na nikdy, když byla volána funkce. Nejsou zaznamenána značky a komentáře.|  
+|MARK_ERROR_MODE_OFF|Režimu profilace byl nastaven na hodnotu OFF, když byla volána funkce. Nejsou zaznamenána značky a komentáře.|  
+|MARK_ERROR_NO_SUPPORT|Bez podpory označení v tomto kontextu. Nejsou zaznamenána značky a komentáře.|  
+|MARK_ERROR_OUTOFMEMORY|Paměť není k dispozici k zaznamenání události. Nejsou zaznamenána značky a komentáře.|  
+|MARK_TEXTTOOLONG|Řetězec překračuje maximum 256 znaků. Komentář řetězce zkráceny a značky a komentáře se zaznamenávají.|  
+|MARK_OK|MARK_OK je vrácena, čímž indikuje úspěšné provedení.|  
   
 ## <a name="remarks"></a>Poznámky  
- Hodnota značky vložena do. *vsp* souboru při každém spuštění kódu pokud je profilovaný vlákno obsahující MarkProfile funkce. MarkProfile můžete volat vícekrát.  
+ Hodnota značky je vložen do. *vsp* souboru při každém spuštění kódu Pokud vlákno obsahující funkci MarkProfile je právě profilována. MarkProfile můžete volat více než jednou.  
   
- Profil značky jsou globální v oboru. Například profil značka vložen do jedno vlákno slouží k označení počáteční nebo koncové segmentu dat v jakékoli vlákno v. *vsp* souboru.  
+ Profil značky jsou globální v oboru. Například profil značky vložení v jednom vlákně slouží k označení začátku nebo konci segmentu dat v jakékoli vlákno v. *vsp* souboru.  
   
- Profilování stavu podprocesu, který obsahuje funkci profilu značky musí být v značky a komentáře vložit příkaz Označit nebo s funkcí rozhraní API (CommentMarkAtProfile, CommentMarkProfile nebo MarkProfile).  
+ Profilace stav podprocesu, který obsahuje funkci profilu značky musí být na značky a komentáře vložená značka příkaz nebo s funkcí rozhraní API (CommentMarkAtProfile, CommentMarkProfile nebo MarkProfile).  
   
 > [!IMPORTANT]
->  Metoda MarkProfile musí být použit s pouze profilace instrumentace.  
+>  Metoda MarkProfile by měla sloužit s pouze profilaci instrumentace.  
   
-## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
+## <a name="net-framework-equivalent"></a>Ekvivalent .NET framework  
  *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informace o funkci  
  Záhlaví: Deklarované v *VSPerf.h*  
   
- Import knihovny: *VSPerf.lib*  
+ Knihovna importů: *VSPerf.lib*  
   
 ## <a name="example"></a>Příklad  
- Následující kód ukazuje MarkProfile funkce.  
+ Následující kód znázorňuje MarkProfile funkce.  
   
 ```cpp  
 void ExerciseMarkProfile()  
@@ -100,4 +98,4 @@ void ExerciseMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio profiler API reference (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

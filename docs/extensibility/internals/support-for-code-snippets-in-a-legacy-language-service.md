@@ -1,9 +1,6 @@
 ---
 title: Podpora pro fragmenty kódu ve službě starší verze jazyka | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
@@ -15,19 +12,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852948"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Podpora pro fragmenty kódu ve službě starší verze jazyka
 Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotný fragment kódu je šablonu založený na formátu XML s sadu polí. Tato pole jsou zvýrazněny po vložení fragmentu kódu a může mít různé hodnoty v závislosti na kontextu, ve kterém se tento fragment vloží. Okamžitě po vložení fragmentu kódu můžete naformátovat služba jazyka fragmentu kódu.  
   
  Fragment kódu je vložen do režimu úpravy zvláštní pole fragment kódu pro navigaci pomocí klávesy TAB. Pole může podporovat stylu funkce IntelliSense rozevírací nabídky. Uživatel potvrdí fragmentu kódu ke zdrojovému souboru tak, že zadáte ENTER nebo ESC klíč. Další informace o fragmenty kódu, najdete v tématu [fragmenty kódu](../../ide/code-snippets.md).  
   
- Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [návod: implementace fragmentů kódu](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [názorný postup: Implementace fragmentů kódu](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
 >  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
@@ -51,7 +48,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="installing-the-snippet-files"></a>Instalují se soubory fragmentu kódu  
  Všechny fragmenty kódu pro jazyk se ukládají jako šablony v souboru XML, obvykle jedna šablona fragmentu na soubor. Informace o schématu XML pro šablony fragmentu kódu, naleznete v tématu [fragmenty kódu – odkaz schématu](../../ide/code-snippets-schema-reference.md). Každá šablona fragmentu kódu se určuje podle ID jazyka. Tento jazyk ID je uvedený v registru a přejde do `Language` atribut \<kód > značky v šabloně.  
   
- Jsou obvykle dvou umístěních, kde jsou uložené soubory šablony fragmentu kódu: 1) Pokud byl nainstalován jazyk a (2) ve složce daného uživatele. Tato místa jsou přidány do registru tak, která sadě Visual Studio **Správce fragmentů kódů** můžete najít fragmenty kódu. Složky uživatele je, kde jsou uložené fragmenty vytvořených uživatelem.  
+ Jsou obvykle dvou umístěních, kde jsou uložené soubory šablony fragmentu kódu: (1), kam se nainstaloval svůj jazyk a 2) ve složce daného uživatele. Tato místa jsou přidány do registru tak, která sadě Visual Studio **Správce fragmentů kódů** můžete najít fragmenty kódu. Složky uživatele je, kde jsou uložené fragmenty vytvořených uživatelem.  
   
  Typické složku rozložení pro soubory šablon nainstalovaných fragment kódu vypadá takto: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
@@ -223,7 +220,7 @@ Fragment kódu je část kódu, který je vložen do zdrojového souboru. Samotn
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Vložení fragmentu kódu pomocí zástupce  
  Implementace zástupce seznamu dokončení je mnohem složitější než implementace příkazu nabídky. Zkratky fragmentu kódu je nutné nejprve přidat do seznamu doplňování technologie IntelliSense aplikace word. Potom musí rozpoznat, kdy místní název fragmentu kódu byla vložena jako výsledek dokončení. Nakonec musíte získat název fragmentu kódu a cesty pomocí názvu odkazu a předejte tyto informace <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metodu na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> metody.  
   
- Chcete-li přidat zástupce fragment kódu pro seznam pro doplňování slov, přidejte je do <xref:Microsoft.VisualStudio.Package.Declarations> objektu ve vaší <xref:Microsoft.VisualStudio.Package.AuthoringScope> třídy. Musíte zkontrolovat, že identifikujete místní jako název fragmentu kódu. Příklad najdete v tématu [návod: získání seznam z nainstalované fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Chcete-li přidat zástupce fragment kódu pro seznam pro doplňování slov, přidejte je do <xref:Microsoft.VisualStudio.Package.Declarations> objektu ve vaší <xref:Microsoft.VisualStudio.Package.AuthoringScope> třídy. Musíte zkontrolovat, že identifikujete místní jako název fragmentu kódu. Příklad najdete v tématu [názorný postup: Seznam instaluje fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
  Vložení zástupce fragmentu kódu, můžete zjistit <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> metodu <xref:Microsoft.VisualStudio.Package.Declarations> třídy. Protože název fragmentu kódu již byl vložen do zdrojového souboru, musí být odebrána po vložení rozšíření. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Metoda přijímá rozsahu, který popisuje bodu vložení fragmentu; rozpětí zahrnuje název celý fragment kódu ve zdrojovém souboru, tento název se nahradí fragmentem.  
   
@@ -338,7 +335,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   Další informace o získání seznamu nainstalovaných fragmentů kódu pro vaši službu jazyka najdete v tématu [návod: získání seznam z nainstalované fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Další informace o získání seznamu nainstalovaných fragmentů kódu pro vaši službu jazyka najdete v tématu [názorný postup: Seznam instaluje fragmenty kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementující třída ExpansionFunction  
  Rozšíření funkce je pojmenované funkce, která je součástí šablony fragmentu kódu a vrátí jednu nebo více hodnot, které se mají umístit na pole. Za účelem podpory funkcí rozšíření ve vaší službě jazyka, musí být odvozen ze třídy <xref:Microsoft.VisualStudio.Package.ExpansionFunction> třídy a implementovat <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metody. Pak je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> metoda ve <xref:Microsoft.VisualStudio.Package.LanguageService> třídy k vrácení nové instance vaší verzi <xref:Microsoft.VisualStudio.Package.ExpansionFunction> třídy pro každou funkci rozšíření, které podporujete. Pokud podporujete seznam možných hodnot z funkce rozšíření, musí také přepsat <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> metodu <xref:Microsoft.VisualStudio.Package.ExpansionFunction> třídy se seznam těchto hodnot.  

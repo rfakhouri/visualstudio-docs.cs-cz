@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: migrace projektů rozšíření do sady Visual Studio 2015 | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Migrace projektů rozšíření do sady Visual Studio 2015 | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915332"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: migrace projektů rozšíření do sady Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: Migrace projektů rozšíření do sady Visual Studio 2015
 Tady je postup upgradu rozšíření.  
   
 > [!IMPORTANT]
@@ -48,7 +45,7 @@ Tady je postup upgradu rozšíření.
   
 3.  Přidání verze NuGet referenčních sestavení sady SDK pro VS.  Pokud máte **odkazy Průzkumníka řešení** uzel, otevřete **spravovat balíčky NuGet** dialogového okna.  Pokud chcete získat další informace o tomto dialogovém okně, přečtěte si téma [uživatelské rozhraní Správce balíčků](/NuGet/Tools/Package-Manager-UI). Referenční sestavení sady SDK pro VS jsou publikovány v [nuget.org](http://www.nuget.org) podle [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4.  Pomocí **nuget.org** jako vaše **zdroj balíčku**, vyhledejte název balíčku NuGet, který by odpovídal požadovaný odkaz na sestavení (například: Microsoft.VisualStudio.Shell.14.0) a nainstalujte ho v vaší projekt.  NuGet může přidání více odkazů na sestavení splníte závislosti počáteční sestavení.  
+4.  Pomocí **nuget.org** jako vaše **zdroj balíčku**, vyhledejte název balíčku NuGet, který by odpovídal požadovaný odkaz na sestavení (například: Microsoft.VisualStudio.Shell.14.0) a nainstalujte ho do projektu.  NuGet může přidání více odkazů na sestavení splníte závislosti počáteční sestavení.  
   
      Pokud dáváte přednost, můžete přidat všechny referenční sestavení sady SDK pro VS najednou nainstalováním sady SDK pro VS [Meta balíčku](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
   

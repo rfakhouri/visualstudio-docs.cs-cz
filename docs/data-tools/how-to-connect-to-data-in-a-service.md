@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Připojování k datům ve službě'
+title: 'Postupy: Připojte se k datům ve službě'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923871"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Postupy: připojení k datům ve službě
+# <a name="how-to-connect-to-data-in-a-service"></a>Postupy: Připojení k datům ve službě
 
 Připojení vaší aplikace s daty vrácenými ze služby spuštěním [Průvodce konfigurací zdroje dat](../data-tools/media/data-source-configuration-wizard.png) a vyberete **služby** na **zvolte typ zdroje dat**stránky.
 

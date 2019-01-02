@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2f1eb51286ae2d64738b91d997a21596fa2a7c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921468"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Načtení dat XML do datové sady
 
@@ -153,9 +152,9 @@ Uživatelské rozhraní pro tuto aplikaci se skládá z následujících akcí:
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**Posuvníky**|**Svisle**|
-    |`Button1`|**Jméno**|`ReadXmlButton`|
+    |`Button1`|**Název**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
-    |`Button2`|**Jméno**|`ShowSchemaButton`|
+    |`Button2`|**Název**|`ShowSchemaButton`|
     ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Vytvořte datovou sadu, která přijímá XML data

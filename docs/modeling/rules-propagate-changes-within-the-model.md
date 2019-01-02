@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925547"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 Můžete vytvořit pravidlo úložiště, které rozšíří změnu z jednoho elementu do druhého v produktu Visualization and Modeling SDK (vmsdk následující položky). Když dojde ke změně k libovolnému prvku v Store, jsou naplánovány pravidla má být spuštěna, většinou když nejkrajnější transakce se potvrzeny. Existují různé typy pravidel pro různé druhy událostí, jako je například přidání elementu nebo jejím odstranění. Pravidla můžete připojit na konkrétní typy prvků, tvary nebo diagramů. Mnoho integrovaných funkcí, které jsou definovány pomocí pravidel: například pravidla ujistěte se, že diagramu se aktualizuje při změně modelu. Doménově specifického jazyka můžete přizpůsobit tak, že přidáte vlastní pravidla.
@@ -131,10 +130,10 @@ namespace ExampleNamespace
 - Třída pravidla odvození od některého z následujících základních tříd:
 
 
-  | Základní třída | Aktivační událost |
+  | Základní třída | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Přidání elementu, odkaz nebo tvar.<br /><br /> To lze použijte k detekci nové relace, kromě nových elementů. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Hodnota vlastnosti domény se změní. Argument metody obsahuje staré a nové hodnoty.<br /><br /> Obrazce, toto pravidlo aktivováno, když předdefinované `AbsoluteBounds` změny vlastností, pokud se přesune na obrazec.<br /><br /> V mnoha případech je snazší přepsat `OnValueChanged` nebo `OnValueChanging` v obslužné rutině vlastnost. Tyto metody jsou volány bezprostředně před a po provedení změny. Naopak se pravidlo spustí obvykle na konci transakce. Další informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md). **Poznámka:** toto pravidlo není aktivováno, když vytvoříte nebo odstraníte odkaz. Místo toho zápis `AddRule` a `DeleteRule` pro doménový vztah. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Hodnota vlastnosti domény se změní. Argument metody obsahuje staré a nové hodnoty.<br /><br /> Obrazce, toto pravidlo aktivováno, když předdefinované `AbsoluteBounds` změny vlastností, pokud se přesune na obrazec.<br /><br /> V mnoha případech je snazší přepsat `OnValueChanged` nebo `OnValueChanging` v obslužné rutině vlastnost. Tyto metody jsou volány bezprostředně před a po provedení změny. Naopak se pravidlo spustí obvykle na konci transakce. Další informace najdete v tématu [obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md). **Poznámka:**  Toto pravidlo není aktivováno, když vytvoříte nebo odstraníte odkaz. Místo toho zápis `AddRule` a `DeleteRule` pro doménový vztah. |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Aktivováno, když elementu nebo propojení je odstranit. Vlastnost ModelElement.IsDeleting platí až do konce transakce. |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Provádí při elementu nebo propojení se odstranil. Toto pravidlo se spustí po byly provedeny všechny ostatní pravidla, včetně DeletingRules. ModelElement.IsDeleting má hodnotu false a ModelElement.IsDeleted má hodnotu true. Povolit pro následné vrácení zpět, se ve skutečnosti neodebere element z paměti, ale je odebrán z Store.ElementDirectory. |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Element je přesouvat z jednoho úložiště pro oddíl do druhého.<br /><br /> (Všimněte si, že to se nevztahuje na pozici grafické obrazce.) |

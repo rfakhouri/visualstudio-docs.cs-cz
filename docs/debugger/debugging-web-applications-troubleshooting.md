@@ -2,7 +2,6 @@
 title: Ladění webových aplikací – řešení potíží | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923582"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Ladění webových aplikací: řešení potíží
+# <a name="debugging-web-applications-troubleshooting"></a>Ladění webových aplikací: Poradce při potížích
 Tato část obsahuje běžné postupy, které můžete použít k vyřešení chyby.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
@@ -37,5 +36,5 @@ Tato část obsahuje běžné postupy, které můžete použít k vyřešení ch
  [Ladění webových aplikací: Chyby a řešení potíží](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Vysvětluje, řešení potíží a chybě rozlišení.  
   
- [Ladění webových aplikací a skriptu](../debugger/debugging-web-applications-and-script.md)  
+ [Ladění webových aplikací a skriptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  Přehled ladění webových aplikací, jako [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], webové služby XML a projektech ATL server.

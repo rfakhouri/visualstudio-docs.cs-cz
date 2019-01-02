@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Změna formátování řádků listů obsahujících zvolené buňky prostřednictvím kódu programu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891797"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Postupy: Změna formátování řádků listů obsahujících zvolené buňky prostřednictvím kódu programu
   Můžete změnit písmo celý řádek, který obsahuje vybrané buňky tak, aby text tučné.  
@@ -74,8 +71,6 @@ ms.locfileid: "49891281"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: používání stylů pro oblasti sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Postupy: kopírování dat a formátování mezi listy prostřednictvím kódu programu](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [Postupy: Používání stylů pro oblasti sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Postupy: Kopírování dat a formátování mezi listy prostřednictvím kódu programu](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,13 +1,8 @@
 ---
 title: Zabalení a nasazení řešení služby SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849016"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Zabalení a nasazení řešení služby SharePoint
   Obvykle nasazuje řešení služby SharePoint na SharePoint server s použitím souboru balíčku (.wsp) řešení. Visual Studio můžete použít k uspořádání položek projektu služby SharePoint do funkcí a chcete-li vytvořit balíček pro nasazení vašich funkcí služby SharePoint.  
@@ -40,9 +35,9 @@ ms.locfileid: "49863266"
 -   [Nasazení souborů v řešení služby SharePoint](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>Vytváření funkcí a balíčků
- Visual Studio můžete použít k seskupení souvisejících prvků SharePoint do *funkce*. Funkce pro definici seznamu kontaktů mohou být například instanci seznamu a definice seznamu. Tyto dva prvky můžete zkombinovat do jedné funkce pro účely nasazení. Další informace o funkcích najdete v tématu [stavebním blokem: funkce](http://go.microsoft.com/fwlink/?LinkID=169183).  
+ Visual Studio můžete použít k seskupení souvisejících prvků SharePoint do *funkce*. Funkce pro definici seznamu kontaktů mohou být například instanci seznamu a definice seznamu. Tyto dva prvky můžete zkombinovat do jedné funkce pro účely nasazení. Další informace o funkcích najdete v tématu [stavebních bloků: Funkce](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
- V dalším kroku vytvoříte balíčku řešení služby SharePoint (*.wsp*) můžete seskupit několik funkcí, lokality definice sestavení a dalších souborů do jediného balíčku, který ukládá soubory ve formátu vyžaduje SharePoint soubory, které chcete nasadit serveru. Další informace najdete v tématu [stavebním blokem: řešení](http://go.microsoft.com/fwlink/?LinkID=169186).  
+ V dalším kroku vytvoříte balíčku řešení služby SharePoint (*.wsp*) můžete seskupit několik funkcí, lokality definice sestavení a dalších souborů do jediného balíčku, který ukládá soubory ve formátu vyžaduje SharePoint soubory, které chcete nasadit serveru. Další informace najdete v tématu [stavebních bloků: Řešení](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
 ## <a name="feature-and-packaging-tool-support"></a>Funkce a podpora nástroje balení
  Nástroje pro vývoj služby SharePoint v sadě Visual Studio můžete použít k rychlé uspořádání souborů služby SharePoint do funkce a řešení balíčky pro nasazení. Nakonfigurování funkce a řešení můžete použít následující nástroje.  
@@ -81,9 +76,9 @@ ms.locfileid: "49863266"
   
   Nástroje pro vývoj služby SharePoint v sadě Visual Studio mají ověřovacích pravidel pro zajištění, že je správně vytvořen balíček řešení. Kromě toho pravidla ověřte, že *.wsp* soubor řešení je možné úspěšně nasadit a aktivovat na Sharepointovém serveru. Další informace o schématu XML pro funkce, najdete v části [funkce schémata](http://go.microsoft.com/fwlink/?LinkID=169192).  
   
-  Vlastní funkce a pravidel ověřování balíčku můžete přidat do systému Sharepointových projektů. Další informace najdete v tématu [postupy: vytvoření vlastní funkce a balíku ověřovacích pravidel pro řešení služby SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
+  Vlastní funkce a pravidel ověřování balíčku můžete přidat do systému Sharepointových projektů. Další informace najdete v tématu [jak: Vytvoření vlastní funkce a balíku ověřovacích pravidel pro řešení služby SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).  
   
-  Další informace o Průzkumníku balíčků naleznete v tématu [postupy: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
+  Další informace o Průzkumníku balíčků naleznete v tématu [jak: Přidání nebo odebrání funkcí a položek z balíku pomocí Průzkumníku balíčků](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
   
 ### <a name="solution-explorer"></a>Průzkumník řešení
  Průzkumník řešení můžete použít k procházení a otevírání souborů projektu služby SharePoint. Chcete-li přidat funkce, přijímačů událostí funkce, pomocí místní nabídky v Průzkumníku řešení a zdroje funkcí. Kromě toho můžete otevřít funkce návrháře a návrháři balíčku konfigurace funkcí a balíčků pro nasazení.  
@@ -109,4 +104,3 @@ ms.locfileid: "49863266"
 ## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

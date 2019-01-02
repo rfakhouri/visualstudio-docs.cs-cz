@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření webové části pro SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření webové části pro SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944282"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Návod: Vytvoření webové části pro SharePoint
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Průvodce: Vytvoření webové části pro SharePoint
 
 Webové části umožní uživatelům přímo upravit obsah, vzhled a chování stránky webu služby SharePoint pomocí prohlížeče. Tento návod ukazuje, jak vytvořit webovou část pomocí **webové části** šablony položky v sadě Visual Studio 2010.
 
@@ -222,6 +217,6 @@ Zobrazení a skrytí zaměstnance, kteří nejsou správci kliknutím na položk
 ## <a name="see-also"></a>Viz také:
 
 [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Postupy: vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Postupy: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Postupy: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
 [Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

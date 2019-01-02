@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: určení obsahu pro technickou podporu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení obsahu pro technickou podporu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933937"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Postupy: určení obsahu pro technickou podporu
+# <a name="how-to-specify-a-link-for-technical-support"></a>Postupy: Určení obsahu pro technickou podporu
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, **adresu URL podpory** vlastnost identifikuje webové stránky nebo sdílené složky, kde mohou uživatelé získat informace o aplikaci. Tato vlastnost je volitelná. Pokud je zadán, adresa URL se zobrazí v vstupní aplikace **přidat nebo odebrat programy** dialogové okno.  
   
  **Adresu URL podpory** vlastnost lze nastavit na **publikovat** stránku **Návrháře projektu**.  
@@ -48,4 +46,4 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
   
 ## <a name="see-also"></a>Viz také:  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

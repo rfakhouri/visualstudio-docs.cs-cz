@@ -1,9 +1,6 @@
 ---
-title: ExtensionDataItem – Element | Microsoft Docs
-ms.custom: ''
+title: ExtensionDataItem – Element | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d95459be48b6d5e87b1a312e68e6ebea2645cb29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916936"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem – element
-  Vlastní datová položka, která je přidružená k položce projektu služby SharePoint, ve formátu klíč/hodnota. Klíč i hodnota musí být řetězce.  
+  Vlastní datová položka, která je přidružená k položce projektu služby SharePoint, ve formátu klíč/hodnota. Klíč a hodnotu musí být řetězce.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,8 +36,8 @@ ms.locfileid: "36325718"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**Key**|Požadované **xs: řetězec** atribut.<br /><br /> Klíč, který se používá k ukládání a načítání datová položka.|  
-|**Hodnota**|Požadované **xs:string** atribut.<br /><br /> Hodnota datová položka.|  
+|**Key**|Vyžaduje **xs: řetězec** atribut.<br /><br /> Klíč, který se používá k ukládání a načítání datová položka.|  
+|**Hodnota**|Vyžaduje **xs:string** atribut.<br /><br /> Hodnota datová položka.|  
   
 ### <a name="child-elements"></a>Podřízené prvky
  Žádné  
@@ -49,21 +46,19 @@ ms.locfileid: "36325718"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ExtensionData –](../sharepoint/extensiondata-element.md)|Představuje kolekci vlastních datových položek, které jsou přidružené položky projektu služby SharePoint.|  
+|[ExtensionData –](../sharepoint/extensiondata-element.md)|Představuje kolekci vlastních datových položek, které jsou spojeny s položku Sharepointového projektu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Při přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data do nové **ExtensionDataItem –** element v `.spdata` souboru Položka projektu. Další informace najdete v tématu [uložení dat v rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Po přidružení vlastních dat k položky Sharepointového projektu s použitím <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data do nového **ExtensionDataItem –** element v `.spdata` souboru Položka projektu. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informace o elementu
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel| 
-|**Název schématu**|Schéma položky projektu SharePoint|  
-|**Ověření souboru**|ProjectItemModelSchema.xsd|  
-|**Nesmí být prázdné**|Ne|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
+|**Název schématu**|Schéma položky projektu služby SharePoint|  
+|**Soubor ověření**|ProjectItemModelSchema.xsd|  
+|**Může být prázdný**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

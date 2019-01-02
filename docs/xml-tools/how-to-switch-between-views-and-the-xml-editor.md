@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: přepínání mezi zobrazeními a Editor souborů XML'
+title: 'Postupy: Přepínání mezi zobrazeními a editorem XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: gewarren
@@ -10,31 +9,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0eb90f2ead313ce94d609d71385b595f3e964b
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 09ad752dc87ea322396d6e6513593d71a7554b98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936240"
 ---
-# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Postupy: přepínání mezi zobrazeními a Editor souborů XML
+# <a name="how-to-switch-between-views-and-the-xml-editor"></a>Postupy: Přepínání mezi zobrazeními a editorem XML
 
-Toto téma ukazuje, jak přepínat mezi zobrazení Návrhář schématu XML (Návrhář XSD) a Editor souborů XML. Tento příklad používá [nákupu pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md).
+Toto téma ukazuje, jak přepínat mezi zobrazeními Návrhář schématu XML (XSD Designer) a Editor souborů XML. V tomto příkladu [nákupní pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md).
 
-## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Chcete-li přepnout mezi zobrazení a Editor souborů XML
+## <a name="to-switch-between-the-views-and-the-xml-editor"></a>Chcete-li přepnout mezi zobrazeními a editorem XML
 
-1.  Vytvořit a upravit nový soubor schématu XML, postupujte podle kroků v [postupy: vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Chcete-li vytvořit a upravit nový soubor schématu XML, postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Chcete-li přepnout do Návrhář schématu XML v editoru XML, klikněte pravým tlačítkem na libovolné místo v editoru XML a vyberte **Návrhář zobrazení**.
+2.  Chcete-li přepnout do návrháře schémat XML z editoru XML, klikněte pravým tlačítkem na libovolné místo v editoru XML a vyberte **Návrhář zobrazení**.
 
-3.  Chcete-li přepnout do zobrazení grafu pomocí vodoznak, klikněte na tlačítko **použít zobrazení grafu si prohlédnout vztah mezi uzly** odkaz na zobrazení spustit.
+3.  Chcete-li přepnout do zobrazení grafu pomocí vodoznak, klikněte na tlačítko **pomocí zobrazení grafu si prohlédnout vztah mezi uzly** odkaz na zobrazení spuštění.
 
-4.  Přetáhněte `USAddress` uzlu z **Explorer schématu XML** do zobrazení grafu. Klikněte pravým tlačítkem myši `USAddress` uzel v zobrazení grafu a vyberte **zobrazit v zobrazení obsahu modelu** v místní nabídce.
+4.  Přetáhněte `USAddress` uzlu z **Průzkumníka schémat XML** do zobrazení grafu. Klikněte pravým tlačítkem myši `USAddress` uzel v zobrazení grafu a výběr **zobrazit v zobrazení modelu obsahu** v místní nabídce.
 
-     Zobrazení obsahu modelu s detaily o `USAddress` uzel se objeví.
+     Zobrazení modelu obsahu s podrobnostmi o `USAddress` uzel se objeví.
 
-5.  Chcete-li přepnout do zobrazení spustit ze zobrazení obsahu modelu pomocí panelu nástrojů, klikněte na tlačítko **spuštění zobrazení** tlačítka na panelu nástrojů XSD.
+5.  K přepnutí na zobrazení spuštění ze zobrazení modelu obsahu pomocí panelu nástrojů, klikněte na tlačítko **zobrazení Start** tlačítko na panelu nástrojů XSD.
 
-6.  Chcete-li přepínat mezi zobrazeními pomocí klávesových zkratek, stiskněte **Ctrl**+**1** pro zobrazení spustit **Ctrl**+**2** pro zobrazení grafu a **Ctrl**+**3** pro zobrazení obsahu modelu.
+6.  Chcete-li přepnout mezi zobrazeními pomocí klávesových zkratek, stiskněte **Ctrl**+**1** pro zobrazení Start **Ctrl**+**2** pro zobrazení grafu a **Ctrl**+**3** pro zobrazení modelu obsahu.
 
-7.  Přechod do editoru XML od obsahu modelu zobrazení, klikněte pravým tlačítkem na uzel a vyberte **kód zobrazení** v místní nabídce.
+7.  Přejděte do editoru XML ze zobrazení modelu obsahu, klikněte pravým tlačítkem na uzel a vyberte **zobrazit kód** v místní nabídce.

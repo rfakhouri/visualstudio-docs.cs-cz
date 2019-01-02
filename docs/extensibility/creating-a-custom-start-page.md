@@ -1,9 +1,6 @@
 ---
 title: Vytvoření vlastní úvodní stránku | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 52050641ee9d2d522ff07dd5eaed72ecbec2b09e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941437"
 ---
 # <a name="creating-a-custom-start-page"></a>Vytvoření vlastní úvodní stránky
 Můžete vytvořit vlastní úvodní stránky pomocí následujících kroků v tomto dokumentu.  
@@ -87,8 +84,8 @@ Můžete vytvořit vlastní úvodní stránky pomocí následujících kroků v 
 -   Poté, co jste otestovali úvodní stránku a to přijde stabilní, použijte **přizpůsobit úvodní stránku** možnost **možnosti** dialogové okno vybrat jako úvodní stránku v primární instance sady Visual Studio  
   
 ## <a name="see-also"></a>Viz také:  
- [Návod: Přidání vlastních XAML na úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [Návod: Přidat vlastní XAML na úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [Přidat uživatelský ovládací prvek na úvodní stránku](../extensibility/adding-user-control-to-the-start-page.md)   
  [Přidání příkazů sady Visual Studio pro úvodní stránku](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Návod: Ukládání uživatelských nastavení na úvodní stránce](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Návod: Ukládat nastavení uživatele na úvodní stránce](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [Nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md)

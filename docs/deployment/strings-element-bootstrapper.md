@@ -1,8 +1,6 @@
 ---
 title: '&lt;Řetězce&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5b1cc6f4341f1a4ffdc01ec22b559fb1fa72cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886861"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Řetězce&gt; – element (zaváděcí nástroj)
 Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chybové zprávy instalace.  
@@ -51,7 +49,7 @@ Definuje lokalizované řetězce pro názvy produktů, názvů balíčků a chyb
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Název řetězce.|  
+|`Name`|Povinný parametr. Název řetězce.|  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu určuje všechny anglické řetězce pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Instalační služby.  

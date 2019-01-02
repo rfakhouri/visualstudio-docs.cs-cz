@@ -1,9 +1,6 @@
 ---
 title: Ukázky vývoje pro Office a názorné postupy
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909785"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Ukázky vývoje pro Office a názorné postupy
   Tato část obsahuje ukázkové aplikace, ukázkový kód a podrobné návody, které ukazují syntaxi, struktury a postupy používané k vytváření řešení Microsoft Office.  
@@ -60,5 +57,3 @@ ms.locfileid: "35676072"
 |[Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)|Jsou uvedeny nejčastější dotazy o programování s vývojem pro Office v sadě Visual Studio a poskytuje odkazy na témata, které pomohou vyřešit běžné problémy.|  
 |[Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)|Obsahuje odkazy na informace o tom, jak vytvořit řešení Microsoft Office a role sestavení ve vašem řešení.|  
 |[Přehled podokna akcí](../vsto/actions-pane-overview.md)|Přehled podokna úloh úrovni dokumentu, volá se v podokně Akce.|  
-  
-  

@@ -2,7 +2,6 @@
 title: 'CA2217: Neoznačujte výčty pomocí FlagsAttribute'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cc5f9fc58ac533d118b693587cf807f44b288f
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: d8afe63de8630b3fa7466e8c0784c26ba00bb1ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852476"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Neoznačujte výčty pomocí FlagsAttribute
 
@@ -34,35 +33,35 @@ ms.locfileid: "32031641"
 |TypeName|DoNotMarkEnumsWithFlags|
 |CheckId|CA2217|
 |Kategorie|Microsoft.Usage|
-|Narušující změna|Bez ukončování řádků|
+|Narušující změna|Pevné|
 
 ## <a name="cause"></a>příčina
 
-Externě viditelné výčet je označené jako <xref:System.FlagsAttribute>a obsahuje jeden nebo více hodnot, které nejsou zajišťuje dvě nebo kombinaci dalších definované hodnoty na výčtu.
+Externě viditelný výčet je označen pomocí <xref:System.FlagsAttribute>a má jednu nebo více hodnot, které nejsou mocninami dvou nebo kombinací druhé definované hodnoty výčtu.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Výčet by měl mít <xref:System.FlagsAttribute> nachází pouze v případě, že každá hodnota definovaná ve výčtu je druhou mocninou dva nebo jejich kombinaci definované hodnoty.
+Výčet by měl mít <xref:System.FlagsAttribute> k dispozici pouze v případě, že každá hodnota definované ve výčtu je mocninou dvou nebo kombinací definované hodnoty.
 
-## <a name="how-to-fix-violations"></a>Jak opravit porušení
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Chcete-li opravit porušení toto pravidlo, odeberte <xref:System.FlagsAttribute> z výčtu.
+Chcete-li opravit porušení tohoto pravidla, odeberte <xref:System.FlagsAttribute> z výčtu.
 
-## <a name="when-to-suppress-warnings"></a>Při potlačení upozornění
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
 Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example-that-should-not-have-the-attribute"></a>Příklad, který by neměl mít atribut
 
-Následující příklad ukazuje výčet, `Color`, který obsahuje hodnotu 3. 3 není power dvou nebo kombinaci některých definovaných hodnot. `Color` – Výčet by nemělo být označené jako <xref:System.FlagsAttribute>.
+Následující příklad ukazuje výčet, `Color`, který obsahuje hodnotu 3. 3 není mocninou dvou nebo kombinací jiných definovaných hodnot. `Color` Výčtu by neměly být označeny atributem <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>Příklad, který by měl být atribut
+## <a name="example-that-should-have-the-attribute"></a>Příklad, který by měl mít atribut
 
-Následující příklad ukazuje výčet, `Days`, který splňuje požadavky pro bude označena jako s <xref:System.FlagsAttribute>.
+Následující příklad ukazuje výčet, `Days`, který splňuje požadavky na právě označené <xref:System.FlagsAttribute>.
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
@@ -72,6 +71,6 @@ Následující příklad ukazuje výčet, `Days`, který splňuje požadavky pro
 
 [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>

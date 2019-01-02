@@ -2,7 +2,6 @@
 title: Vytváření šablon vícenásobného projektu
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -11,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 34d15de5012ff640ba05b106321c2a534557c3e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925820"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Postupy: vytváření šablon vícenásobného projektu
+# <a name="how-to-create-multi-project-templates"></a>Postupy: Vytváření šablon vícenásobného projektu
 
 Šablony vícenásobných projektů slouží jako kontejnery pro dva nebo více projektů. Při vytváření projektu, který je založen na šabloně víceprojektové z **nový projekt** dialogové okno, každý projekt v šabloně je přidán do řešení.
 
@@ -171,7 +170,7 @@ V tomto příkladu **SolutionFolder** elementu a rozdělit do dvou skupin, proje
 ## <a name="see-also"></a>Viz také:
 
 - [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
-- [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)
+- [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)
 - [Visual Studio odkaz na schéma šablon (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md)
 - [SolutionFolder – element (šablony sady Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [ProjectTemplateLink – element (šablony sady Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

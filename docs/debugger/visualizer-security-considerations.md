@@ -1,8 +1,6 @@
 ---
-title: Hlediska zabezpečení vizualizéru | Microsoft Docs
-ms.custom: ''
+title: Hlediska zabezpečení Vizualizéru | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,29 +16,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819557"
 ---
 # <a name="visualizer-security-considerations"></a>Hlediska zabezpečení vizualizéru
-Zápis Vizualizéru zahrnuje možných bezpečnostních hrozeb. Pro tyto potenciální hrozby aktuálně neexistuje žádné známé zneužití, ale vývojáři by měl mít na paměti je a trvat příslušná bezpečnostní opatření, podle postupu popsaného tady, pro ochranu proti zneužití budoucí.  
+Zápis Vizualizéru zahrnuje možné bezpečnostní hrozby. Žádné známé před zneužitím v současné době neexistuje těchto potenciálních hrozeb, ale by měl být vědomi a přijmout vhodná bezpečnostní opatření, podle postupu popsaného tady, pro ochranu proti zneužití budoucí vývojáři.  
   
- Ladicí program vizualizérech vyžadují větší oprávnění než je povoleno podle aplikace s částečnou důvěryhodností. Vizualizérech nenačte, když se zastavil v kódu s částečným vztahem důvěryhodnosti. Chcete-li ladit pomocí vizualizéru, musíte spustit kód s úplným vztahem důvěryhodnosti.  
+ Ladicí program vizualizéry vyžadují, aby větší oprávnění než je povoleno hodnotou aplikace s částečnou důvěryhodností. Vizualizéry nenačte, když se zastaví v kódu s částečným vztahem důvěryhodnosti. Chcete-li ladit pomocí vizualizéru, musíte spustit kód s úplným vztahem důvěryhodnosti.  
   
-## <a name="possible-malicious-debuggee-component"></a>Možné škodlivé součásti pozastaven  
- Vizualizérech obsahovat minimálně dvě třídy: jeden na straně ladicího programu a jeden na straně pozastaven. V samostatné sestavení umístit do adresáře speciální často nasazených vizualizérech, ale mohou být i mimo ladění načíst. V takovém případě ladicího programu trvá kód mimo ladění a spouští v ladicím programu s úplným vztahem důvěryhodnosti.  
+## <a name="possible-malicious-debuggee-component"></a>Je to možné škodlivé součásti laděného procesu  
+ Vizualizéry skládají z nejméně dvou tříd: na straně ladicího programu a druhý na straně laděného procesu. Vizualizéry jsou často nasazené v samostatné sestavení umístit do speciální adresáře, ale mohou být načteny z laděného procesu. Pokud k tomu dojde, ladicí program přijímá kódu mimo laděný proces a běží uvnitř ladicího programu s úplným vztahem důvěryhodnosti.  
   
- Spuštění kódu na straně pozastaven s úplným vztahem důvěryhodnosti změní problematické, pokud není plně důvěryhodný pro ladění. Pokud vizualizéru se pokusí načíst částečnou důvěryhodností sestavení z ladění do ladicího programu, Visual Studio vizualizér přeruší.  
+ Spuštění kódu na straně laděného procesu s úplným vztahem důvěryhodnosti je problematické, pokud laděný proces není plně důvěryhodné. Pokud vizualizéru se pokusí načíst sestavení s částečnou nedůvěrou z laděného procesu do ladicího programu, Visual Studio se ukončí vizualizér.  
   
- Méně závažné ohrožení zabezpečení, ale stále existuje. Ladicí program straně, která byla načtena z jiného zdroje (není pozastaven) můžete přidružit straně pozastaven. Na straně pozastaven pak můžete sdělit, které důvěryhodný straně ladicí program k provádění akcí jeho jménem. Pokud důvěryhodné třída ladicí program na straně zpřístupňuje mechanismus "odstranění tohoto souboru", například pozastaven částečným vztahem důvěryhodnosti může vyvolat tento mechanismus při jeho vizualizér vyvolá uživatele.  
+ Nicméně stále existuje menší ohrožení zabezpečení. Na straně laděného procesu můžete přidružit souběžného ladicí program, který byl načten z jiného zdroje (ne laděného procesu). Na straně laděného procesu pak poznáte, která důvěryhodného straně ladicího programu k provádění akcí na jejím jménem. Pokud důvěryhodné ladicí program side třída zveřejňuje mechanismus "odstranit tento soubor", například laděného procesu částečným vztahem důvěryhodnosti mohl spustit tento mechanismus když uživatel vyvolá jeho vizualizér.  
   
- Aby se minimalizoval toto ohrožení zabezpečení, mějte na paměti rozhraní vystavené vaší vizualizér.  
+ Ke zmírnění tohoto ohrožení zabezpečení, dávejte rozhraní vystavené vaše vizualizér.  
   
 ## <a name="see-also"></a>Viz také  
  [Architektura vizualizéru](../debugger/visualizer-architecture.md)   
- [Postupy: zápis Vizualizéru](../debugger/how-to-write-a-visualizer.md)   
- [Vytvořit vlastní Vizualizérech](../debugger/create-custom-visualizers-of-data.md)   
+ [Postupy: Zápis Vizualizéru](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)   
  [Zobrazení dat v ladicím programu](../debugger/viewing-data-in-the-debugger.md)

@@ -2,7 +2,6 @@
 title: Možnosti, textový Editor, JavaScript, kód ověřování
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06c0a82a70cf3764df4937ed7d42b2c87f8aa46
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c70906430ecc7175e4ceae1bfd55b308b2487be9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905608"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>Možnosti, textový Editor, JavaScript, kód ověřování
 Použití **ověření kódu** stránku **možnosti** dialogové okno Upravit nastavení, které mají vliv na způsob, jakým jazyka JavaScript zpracovává chyby. Můžete přistupovat **ověření kódu** stránky výběrem **nástroje** > **možnosti** na řádku nabídek a následným rozbalením položek **textový Editor**  >  **JavaScript** > **ověřovací kód.**

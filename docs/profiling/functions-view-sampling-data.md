@@ -1,8 +1,6 @@
 ---
-title: Zobrazení funkcí – vzorkování dat | Microsoft Docs
-ms.custom: ''
+title: Zobrazení funkcí – vzorkování dat | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Functions View
@@ -13,36 +11,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9084aad27d14825f4b3d0a648f0880d4db329c78
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942577"
 ---
 # <a name="functions-view---sampling-data"></a>Zobrazení funkcí – data vzorkování
-Zobrazení sestavy funkce pro metody vzorkování profil obsahuje seznam funkcí, které byly vzorkovat při vytváření profilu spustit.  
+Zobrazení sestav funkce pro požadovanou metodu profilu odběru vzorků jsou uvedeny funkce, které byly vzorkovány během spuštění profilování.  
   
 > [!NOTE]
->  Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**ID procesu**|ID procesu (PID) z profilace spustit.|  
+|**ID procesu**|ID procesu (PID) běhu profilování.|  
 |**Název procesu**|Název procesu.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
-|**Cesta modulu**|Cesta modul, který obsahuje funkce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje funkci.|  
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro tuto funkci.|  
 |**Název funkce**|Plně kvalifikovaný název funkce.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Adresa funkce**|Adresa funkce.|  
-|**Ukázky (včetně).**|Celkový počet vzorků, které byly shromážděny při provádění této funkce; To znamená, počet vzorků, které byly shromážděny při tato funkce v zásobníku volání. Obsahuje počet vzorků, které byly shromážděny při byly provádění funkcí, které byly volat pomocí této funkce.|  
-|**% Ukázky (včetně).**|Procento všechny ukázky v profilaci spuštění, které byly včetně ukázky této funkce.|  
-|**Výhradní ukázky**|Celkový počet vzorků, které byly shromážděny při provádění kódu v těle této funkce; To znamená, když tato funkce byla v horní části zásobníku volání. Ukázky, které byly shromážděny v funkce, které byly volat pomocí této funkce nejsou zahrnuty.|  
-|**% Výhradní ukázky**|Procento všechny ukázky v profilaci spuštění, které byly výhradní ukázky této funkce.|  
+|**Celkových vzorků**|Celkový počet vzorků, které byly shromážděny při provádění této funkce; To znamená, počet vzorků, které byly shromážděny při této funkce v zásobníku volání. Počet obsahuje ukázky, které byly shromážděny při byly provádění funkcí, které byly volány touto funkcí.|  
+|**% Celkových vzorků**|Procento všechny ukázky v profilování, které byly celkových vzorků této funkce.|  
+|**Výhradní vzorky**|Celkový počet vzorků, které byly shromážděny při provádění kódu v těle této funkce; To znamená, když tato funkce byla vrcholu zásobníku volání. Ukázky, které byly shromážděny ve funkcích, které byly volány touto funkcí nejsou zahrnuty.|  
+|**% Výhradních vzorků**|Procento všechny ukázky v profilování, které byly výhradních vzorků této funkce.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení funkcí – instrumentace](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Zobrazení funkcí – vzorkování](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Zobrazení funkcí](../profiling/functions-view-instrumentation-data.md)

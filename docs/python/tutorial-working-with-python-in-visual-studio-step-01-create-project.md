@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Přehled a krok 1 Průvodce základní funkce Pythonu v sadě Visual Studio, včetně požadavků a vytvoření nového projektu Pythonu.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916043"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Kurz: Práce s využitím Pythonu v sadě Visual Studio
 
@@ -26,12 +25,12 @@ Python je oblíbený programovací jazyk, který je spolehlivé, flexibilní, sn
 
 Visual Studio poskytuje prvotřídní podporu pro Python. Tento kurz vás provede následující kroky:
 
-- [Krok 0: instalace](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
+- [Krok 0: Instalace](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [Krok 1: Vytvoření projektu Pythonu (Tento článek)](#step-1-create-a-new-python-project)
-- [Krok 2: Zápis a spouštění kódu zobrazíte IntelliSense ve Visual Studio v práci](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Krok 2: Psání a spouštění kódu zobrazíte IntelliSense ve Visual Studio v práci](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Krok 3: Vytvoření více kódu v okně interaktivní okno REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Krok 4: Dokončení program spustit v ladicím programu sady Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Krok 5: Instalace balíčků a spravovat prostředí Pythonu](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Krok 4: Dokončené program spustit v ladicím programu sady Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Krok 5: Instalovat balíčky a správa prostředí Pythonu](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Krok 6: Práce s Gitem](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]

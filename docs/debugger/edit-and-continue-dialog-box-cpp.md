@@ -1,8 +1,6 @@
 ---
 title: Upravit a pokračovat – dialogové okno (C++) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c6d598605f229f306571e792c9b4dcfadfbda92
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923715"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Upravit a pokračovat – dialogové okno (C++)
 Upravit a pokračovat, nelze aplikovat změny, které jste provedli v nativním kódu. Může jít o přechodný stav. Někdy upravit a pokračovat nemůže ihned změny nativního kódu, ale můžete použít později během relace ladění (například po dokončení aktuálním volání procedury nyní provádění). Další informace najdete v tématu [upravit a pokračovat](../debugger/edit-and-continue.md).  

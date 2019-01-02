@@ -1,8 +1,6 @@
 ---
 title: Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898632"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office
   Můžete svázat ovládací prvky Windows Forms a *hostování ovládacích prvků* na dokumentu aplikace Microsoft Office Word nebo list aplikace Microsoft Office Excel ke zdroji dat, ovládací prvky automaticky zobrazovat data. Vytvoření vazby dat k ovládacím prvkům v projektech na úrovni aplikace i na úrovni dokumentu.  
@@ -111,5 +109,3 @@ ms.locfileid: "53248017"
  [Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Data v mezipaměti](../vsto/caching-data.md)   
  [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
-title: Sestava souhrnu podle vláken | Microsoft Docs
-ms.custom: ''
+title: Sestava souhrnu podle vláken | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 737e879f040f503ec367438273d2136670a44e21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869580"
 ---
 # <a name="per-thread-summary-report"></a>Sestava souhrnu podle vláken
-Tento pruhový graf zobrazuje podíl času, kdy každý podproces zobrazí v každé kategorie aktivity během aktuálně viditelný časový rozsah. "Provádění" znamená, že vlákno provádí; všech ostatních kategorií znamená, že vlákno nečeká na něco.  
+Tento pruhový graf ukazuje podíl času, kdy každý zobrazí vlákna v každé kategorie aktivity při současném viditelném časovém rozsahu. "Spuštění" znamená, je vlákno prováděno; všech ostatních kategorií znamená, že vlákno čeká na nějaké.  
   
 ## <a name="see-also"></a>Viz také:  
  [Doba spuštění (zobrazení vláken)](../profiling/execution-time-threads-view.md)   

@@ -1,8 +1,6 @@
 ---
-title: Dialogové okno Vlastnosti okna | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno Vlastnosti okna | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box
@@ -12,50 +10,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8adfd0e1981f38540f2b682eddf991c4193af849
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d8a1371e8c87b98bdc30a4172be7420686cf21e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909239"
 ---
 # <a name="window-properties-dialog-box"></a>Dialogové okno vlastností oken
-Pomocí tohoto dialogového okna pro další informace o konkrétní okno. K zobrazení tohoto dialogového okna, přesunout fokus [zobrazení oken](../debugger/windows-view.md) okno. Vyberte libovolný uzel okno ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  
+Použijte toto dialogové okno pro další informace o konkrétní okno. Zobrazíte dialogovému oknu přesunout fokus [zobrazení Windows](../debugger/windows-view.md) okna. Vyberte jakékoli okno uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Karta Obecné. Dialogové okno Vlastnosti okna](../debugger/general-tab-window-properties-dialog-box.md)  
  Zobrazí informace o vybrané okno.  
   
  [Karta se styly. Dialogové okno Vlastnosti okna](../debugger/styles-tab-window-properties-dialog-box.md)  
- Zobrazuje stylů použitých na vybrané okno.  
+ Zobrazí styly použitý pro vybrané okno.  
   
- [Karta okna. Dialogové okno Vlastnosti okna](../debugger/windows-tab-window-properties-dialog-box.md)  
- Zobrazuje informace o windows související s vybrané okno.  
+ [Karta Windows. Dialogové okno Vlastnosti okna](../debugger/windows-tab-window-properties-dialog-box.md)  
+ Zobrazí informace o windows související s vybrané okno.  
   
  [Třída – karta. Dialogové okno Vlastnosti okna](../debugger/class-tab-window-properties-dialog-box.md)  
- Zobrazuje informace o třídě vybrané okno.  
+ Zobrazí informace o třídě vybrané okno.  
   
- [Proces – karta. Dialogové okno Vlastnosti okna](../debugger/process-tab-window-properties-dialog-box.md)  
+ [Karta proces. Dialogové okno Vlastnosti okna](../debugger/process-tab-window-properties-dialog-box.md)  
  Identifikuje proces vybrané okno.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Dialogové okno hledání oken](../debugger/window-search-dialog-box.md)  
- Použít k vyhledání uzlu pro konkrétní okno v zobrazení oken.  
+ Umožňuje najít uzel pro konkrétní okno v zobrazení pro Windows.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.  
+ Obsahuje části s popisem každé nástroje Spy ++ nabídky a dialogové okno pole.  
   
  [Pomocí vyhledávacího nástroje](../debugger/how-to-use-the-finder-tool.md)  
  Ukazuje, jak tento nástroj kontroluje windows pro vlastnosti nebo zprávy.  
   
- [Hledání okna v zobrazení oken](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Vysvětluje, jak najít konkrétní okno v zobrazení oken.  
+ [Hledání okna v zobrazení Windows](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ Vysvětluje, jak najít konkrétní okno v zobrazení pro Windows.  
   
  [Zobrazení oken](../debugger/windows-view.md)  
- Zobrazení stromu dostupné windows a ovládacích prvků.  
+ Zobrazí strom dostupné oken a ovládacích prvků.  
   
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.
+ Seznámíte se nástroje Spy ++, jak je možné.

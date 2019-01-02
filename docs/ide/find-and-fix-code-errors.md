@@ -3,7 +3,6 @@ title: Opravte chyby programu a zlepšení kódu
 description: Tento článek popisuje některé základní způsoby, jak Visual Studio vám pomůže najít a opravit problémy v kódu, včetně chyby sestavení analýzy kódu, ladění, nástroje a testy jednotek.
 ms.date: 05/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e61c5917ee3d77161c31213d4851472e714d1679
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940174"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Kód pracovat v sadě Visual Studio
 

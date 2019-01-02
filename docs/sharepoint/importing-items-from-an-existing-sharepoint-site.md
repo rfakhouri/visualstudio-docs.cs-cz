@@ -1,17 +1,12 @@
 ---
 title: Import položek z existující stránky SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918151"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Import položek z existující stránky SharePoint
   Šablona projektu importovat balíček řešení služby SharePoint, můžete znovu použít prvky, jako jsou typy obsahu a pole z existujících webů služby SharePoint v novém [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] řešení služby SharePoint. Ačkoli můžete spustit nejvíce importované řešení bez jakýchkoli úprav, existují určitá omezení a problémy, které byste měli zvážit, zejména v případě, že upravíte všechny položky po importu.  
@@ -96,20 +91,20 @@ ms.locfileid: "49832101"
   
  Například pokud importujete definici seznamu ExpenseForms, definici seznamu s tímto názvem se zobrazí v části **seznam definic** složky **Průzkumníku řešení** spolu s jeho  *Elements.xml* a *Schema.xml* soubory. Ale přidruženy formuláře ASPX a HTML můžete umístit do složky s názvem **ExpenseForms** pod **ostatní soubory importovat** složky. K dokončení importu se přesunutí těchto souborů v rámci definice seznamu ExpenseForms v **Průzkumníka řešení** a změnit **DeploymentType** vlastnost pro každý soubor z **NoDeployment** k **ElementFile**.  
   
- Při importu přijímače událostí *Elements.xml* soubor je zkopírován do správného umístění, ale musíte ručně zahrnout do sestavení v balíčku řešení tak, aby ho nasadí s řešením. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to udělat, najdete v článku [postupy: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Při importu přijímače událostí *Elements.xml* soubor je zkopírován do správného umístění, ale musíte ručně zahrnout do sestavení v balíčku řešení tak, aby ho nasadí s řešením. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to udělat, najdete v článku [jak: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Při importu pracovních postupů, formuláře InfoPath se zkopírují do **ostatní soubory importovat** složky. Pokud *.wsp* soubor obsahuje šablonu, že je nastavena jako úvodní stránku v **Průzkumníka řešení**.  
   
 ## <a name="import-fields-and-property-bags"></a>Pole pro import a kontejnery objektů a dat
  Při importu řešení, které má více polí, všechny definice samostatné pole jsou sloučeny do jednoho *Elements.xml* souboru pod uzlem v **Průzkumníka řešení** volá **pole** . Podobně, sloučí všechny položky vlastnosti kontejneru objektů a dat *Elements.xml* souboru pod uzel nazvaný **PropertyBags**.  
   
- Pole v Sharepointu se sloupci zadaného datového typu, například text, logickou hodnotu nebo vyhledávání. Další informace najdete v tématu [stavebním blokem: sloupce a typy polí](http://go.microsoft.com/fwlink/?LinkId=182304). Kontejnery objektů a umožňují přidání vlastností do objektů v Sharepointu, všechno z farmy na seznam na Sharepointovém webu. Kontejnery objektů a jsou implementované jako zatřiďovací tabulku názvů a hodnot vlastností. Další informace najdete v tématu [Správa konfigurace služby SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) nebo [nastavení vlastnosti kontejneru objektů a dat služby SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
+ Pole v Sharepointu se sloupci zadaného datového typu, například text, logickou hodnotu nebo vyhledávání. Další informace najdete v tématu [stavebních bloků: Sloupce a typy polí](http://go.microsoft.com/fwlink/?LinkId=182304). Kontejnery objektů a umožňují přidání vlastností do objektů v Sharepointu, všechno z farmy na seznam na Sharepointovém webu. Kontejnery objektů a jsou implementované jako zatřiďovací tabulku názvů a hodnot vlastností. Další informace najdete v tématu [Správa konfigurace služby SharePoint](http://go.microsoft.com/fwlink/?LinkId=182296) nebo [nastavení vlastnosti kontejneru objektů a dat služby SharePoint](http://go.microsoft.com/fwlink/?LinkId=182297).  
   
 ## <a name="delete-items-in-the-project"></a>Odstranit položky v projektu
  Většina položek v řešení služby SharePoint mít jednu nebo více závislých položek. Například instance seznamu závisí na typy obsahu a typy obsahu jsou závislé na pole. Po importu řešení služby SharePoint, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] neupozorní jste žádné problémy s odkazem při odstranění položky v řešení, ale nikoli jeho závislé položky, dokud se při pokusu o nasazení řešení. Například pokud importované řešení má instanci seznamu, který závisí na typu obsahu a odstranit tento typ obsahu, může dojít k chybě při nasazení. Pokud není k dispozici na serveru SharePoint závislé položky dojde k chybě. Podobně pokud odstraněné položky má také kontejner souvisejících objektů, odstraňte tyto položky vlastnosti kontejneru objektů a dat z **PropertyBags** *Elements.xml* souboru. Proto pokud odstraníte všechny položky z importované řešení a dojde k chybám nasazení, zkontrolujte Pokud muset také odstraní všechny závislé položky.  
   
 ## <a name="restore-missing-feature-attributes"></a>Obnovit chybějící atributy funkce
- Při importu řešení, jsou vynechány některé atributy volitelná funkce z manifestu importované funkce. Pokud chcete obnovit tyto atributy v novém souboru funkce, identifikovat chybějící atributy porovnáním původní soubor funkce k manifestu nové funkce a postupujte podle pokynů v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Při importu řešení, jsou vynechány některé atributy volitelná funkce z manifestu importované funkce. Pokud chcete obnovit tyto atributy v novém souboru funkce, identifikovat chybějící atributy porovnáním původní soubor funkce k manifestu nové funkce a postupujte podle pokynů v tématu [jak: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Neprovádí se u instance integrovaného seznamu zjišťování konfliktů nasazení
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] neprovádí zjišťování konfliktů nasazení na instance integrovaného seznamu (to znamená, výchozí seznam instancí, které jsou součástí Sharepointu). Aby nedošlo k přepsání instance integrovaného seznamu na Sharepointu se provádí není provádění zjišťování konfliktů. Předdefinovaného seznamu, které instance jsou stále nasazení nebo aktualizovat, ale jsou nikdy odstraněn nebo přepsat. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
@@ -141,5 +136,5 @@ ms.locfileid: "49832101"
 ## <a name="see-also"></a>Viz také:
  [Návod: Import položek z existující stránky SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [Pokyny pro import opakovaně použitelných pracovních postupů](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
- [Návod: Importujte opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
+ [Návod: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
  [Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

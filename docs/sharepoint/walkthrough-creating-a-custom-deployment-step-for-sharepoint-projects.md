@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastního kroku nasazení pro projekty SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891573"
 ---
-# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint
+# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Průvodce: Vytvoření vlastního kroku nasazení pro projekty SharePoint
   Při nasazení projektu služby SharePoint, aplikace Visual Studio provede série kroků nasazení v určitém pořadí. Visual Studio obsahuje mnoho vestavěné kroky nasazení, ale můžete také vytvořit svoje vlastní.  
   
  V tomto návodu vytvoříte vlastního kroku nasazení pro upgrade řešení na serveru, na kterém běží SharePoint. Visual Studio obsahuje vestavěné kroky nasazení pro celou řadu úloh, tyto odvolává nebo přidání řešení, ale nezahrnuje krok nasazení upgradu řešení. Ve výchozím nastavení, když nasadíte řešení služby SharePoint, Visual Studio nejprve odvolá řešení (pokud už je nasazený) a pak znovu nasadí celé řešení. Další informace o postupu integrované nasazení najdete v tématu [nasazení, publikování a upgradování balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
@@ -177,7 +174,7 @@ ms.locfileid: "51296148"
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  V tomto okamžiku návodu, je celý kód pro vlastní nasazení krok a příkazů služby SharePoint v projektech. Sestavení je, abyste měli jistotu, že proveďte kompilaci bez chyby.  
   
 #### <a name="to-build-the-projects"></a>K sestavení projektů  
@@ -488,4 +485,3 @@ ms.locfileid: "51296148"
   
 ## <a name="see-also"></a>Viz také:
  [Rozšíření balení a nasazení SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

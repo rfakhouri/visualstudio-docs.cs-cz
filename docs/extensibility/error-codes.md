@@ -1,9 +1,6 @@
 ---
 title: Kódy chyb | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931970"
 ---
 # <a name="error-codes"></a>Kódy chyb
 Po návratu funkce rozhraní API modulu Plug-in zdroje ovládacího prvku k chybě, očekává se, že se na jednu z následující kódy chyb. Všechny chyby jsou upozornění nebo informační chybové kódy jsou kladná, záporná, a úspěchu je 0.  
@@ -64,7 +61,7 @@ Po návratu funkce rozhraní API modulu Plug-in zdroje ovládacího prvku k chyb
 |`SCC_E_FILESYNTAXERR`|-27|Chyba syntaxe v souboru.|  
 |`SCC_E_FILENOTEXIST`|-28|Chyba, místní soubor neexistuje.|  
 |`SCC_E_CONNECTIONFAILURE`|-29|Chyba: došlo k chybě připojení.|  
-|`SCC_E_UNKNOWNERROR`|-30|Došlo k neznámé chybě.|  
+|`SCC_E_UNKNOWNERROR`|-30|Neznámá chyba|  
 |`SCC_E_BACKGROUNDGETINPROGRESS`|-31|Právě probíhá operace get na pozadí.|  
   
 ## <a name="macros-provided-for-quick-checking"></a>Makra, které jsou k dispozici pro rychlou kontrolu  

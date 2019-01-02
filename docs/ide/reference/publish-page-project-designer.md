@@ -2,7 +2,6 @@
 title: Publikovat stránku, návrhář projektu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911405"
 ---
 # <a name="publish-page-project-designer"></a>Publikovat stránku, návrhář projektu
 **Publikovat** stránku **Návrháře projektu** slouží ke konfiguraci vlastností pro nasazení ClickOnce.
@@ -49,7 +48,7 @@ ms.locfileid: "39179499"
 
  Otevře dialogové okno souborů aplikace, které slouží k určení, jak a kde jsou nainstalovány jednotlivé soubory.
 
- **Požadované součásti**
+ **Požadavky**
 
  Otevře se dialogové okno požadavky, které slouží k určení požadovaných součástí, jako je například rozhraní .NET Framework nainstalovat spolu s aplikací.
 
@@ -82,18 +81,18 @@ ms.locfileid: "39179499"
 ## <a name="see-also"></a>Viz také
 
 - [Publikování aplikací ClickOnce](../../deployment/publishing-clickonce-applications.md)
-- [Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Postupy: Určení cíle kopírování souborů sadou Visual Studio](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Postupy: Určení umístění, z něhož mohou instalovat koncoví uživatelé](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Postupy: Zadejte, kde sada Visual Studio zkopíruje soubory](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Postupy: Zadejte umístění, kde budou koncoví uživatelé instalovat z](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
 - [Postupy: Určení obsahu pro technickou podporu](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Postupy: Určení offline nebo online režimu instalace ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
-- [Postupy: Povolení funkce AutoStart pro instalace z média CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Postupy: Nastavení verze publikování ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Postupy: Automatická inkrementace verze publikování ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Postupy: Určení ClickOnce v režimu Offline nebo Online režimu instalace](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Postupy: Povolení funkce AutoStart pro instalace z disku CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
+- [Postupy: Nastavení publikování ClickOnce verze](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Postupy: Automaticky ClickOnce Inkrementace verze publikování](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
 - [Postupy: Určení souborů k publikování aplikací ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
 - [Postupy: Instalace předpokladů s aplikací ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Postupy: Správa aktualizací pro aplikaci ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Postupy: Změna jazyka publikování pro aplikaci ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Postupy: Změnit jazyka publikování pro aplikaci ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
 - [Postupy: Určení názvu úvodní nabídky pro aplikaci ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
 - [Postupy: Určení stránky publikování pro aplikaci ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
 - [ClickOnce – zabezpečení a nasazení](../../deployment/clickonce-security-and-deployment.md)

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a1dfdbfe286043a6e0010687b4ef9a7f178eb2b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1935265b05c5074d043a008aad8a150bf4398c89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852359"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +34,7 @@ ms.locfileid: "53062674"
 
 -   [Nasazení nezbytných součástí pro 64bitové aplikace](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [Postupy: vytvoření instalačního programu Windows pro 64bitové platformě](http://msdn.microsoft.com/en-us/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+-   [Postupy: Vytvoření instalačního programu Windows pro 64bitové platformě](http://msdn.microsoft.com/en-us/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>Konfigurace projektů jako 64bitové aplikace
  Následující témata popisují konfiguraci projektů, které mají být sestaveny pro 64bitové aplikace.
@@ -45,7 +44,7 @@ ms.locfileid: "53062674"
 ## <a name="debugging-a-64-bit-application"></a>Ladění 64bitové aplikace
  Upravit a pokračovat není funkční v případě [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] běží v operačním systému Windows 64-bit. Následující témata se zabývají laděním 64bitových aplikací.
 
--   [Postupy: ladění na 64bitové platformy](http://msdn.microsoft.com/en-us/27495e23-a624-46fb-996f-043d0a816dd5)
+-   [Postupy: Ladění na 64bitové platformy](http://msdn.microsoft.com/en-us/27495e23-a624-46fb-996f-043d0a816dd5)
 
 -   [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
 

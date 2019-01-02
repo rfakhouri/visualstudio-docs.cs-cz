@@ -1,8 +1,6 @@
 ---
-title: Debugbreak – a __debugbreak | Microsoft Docs
-ms.custom: ''
+title: DebugBreak a __debugbreak | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - DebugBreak
@@ -21,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5eda428410733bf72174676f5a2303a7f625aa7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db3af2a2bef69a9329a20523ad5bed4444631410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933846"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak a __debugbreak
-Můžete volat funkci debugbreak – Win32 nebo [__debugbreak –](/cpp/intrinsics/debugbreak) vnitřní v libovolném bodě v kódu. `DebugBreak` a `__debugbreak` mají stejný účinek jako nastavení boru přerušení v tomto umístění.  
+Můžete volat funkci DebugBreak Win32 nebo [__debugbreak](/cpp/intrinsics/debugbreak) vnitřní v libovolném bodě v kódu. `DebugBreak` a `__debugbreak` má stejný účinek jako nastavení zarážky na tomto místě.  
   
- Protože `DebugBreak` je volání funkce systému, ladění systému symboly musí být nainstalován zajistit správné volání informace zásobníku se zobrazí po ukončování řádků. Jinak hodnota zásobníku volání informace zobrazí ladicí program může být vypnuto jeden snímek. Pokud používáte `__debugbreak`, symboly nejsou povinné.  
+ Protože `DebugBreak` je volání funkce systému, musí být nainstalován symboly, informace v zásobníku správné volání se zobrazí po přerušení ladění systému. V opačném případě informace v zásobníku volání zobrazené ladicím programem mohou být vypnout jeden snímek. Pokud používáte `__debugbreak`, symboly nejsou požadovány.  
   
 ## <a name="see-also"></a>Viz také  
  [Vnitřní funkce kompilátoru](/cpp/intrinsics/compiler-intrinsics)   

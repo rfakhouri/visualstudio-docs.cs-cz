@@ -1,8 +1,6 @@
 ---
-title: Na základě sestava pro viditelný časový rozsah | Microsoft Docs
-ms.custom: ''
+title: Na základě sestava pro viditelný časový rozsah | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938320"
 ---
 # <a name="report-based-on-visible-time-range"></a>Sestava pro viditelný časový rozsah
-Zobrazení profil zobrazí sestavy, které jsou založeny na aktuálně viditelný časový rozsah a kanály. Chcete-li zobrazit podrobnosti pro různé podmnožiny dat, klikněte na položky v legendě.  
+Profil zobrazení sestavy, které jsou založeny na současném viditelném časovém rozsahu a kanály. Chcete-li zobrazit podrobnosti pro různé podmnožiny dat, klikněte na položky v legendě.  
   
  Další informace o datech najdete v tabulkách v tomto poli.  
   

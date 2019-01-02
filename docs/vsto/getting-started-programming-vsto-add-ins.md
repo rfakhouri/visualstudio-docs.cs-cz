@@ -1,9 +1,6 @@
 ---
 title: Začínáme s programováním doplňků VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: eef79de32a467bee1d96972da0ccdfd91eede350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853041"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Začínáme s programováním doplňků VSTO
   Doplňky VSTO můžete použít k automatizaci aplikace Microsoft Office, rozšíření funkcí aplikace a přizpůsobení uživatelského rozhraní (UI) aplikace. Informace o porovnání doplňků VSTO pro jiné druhy řešení pro Office můžete vytvořit pomocí sady Visual Studio najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -95,5 +92,3 @@ ms.locfileid: "53648678"
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)  
-  
-  

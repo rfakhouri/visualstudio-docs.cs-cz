@@ -2,7 +2,6 @@
 title: Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878270"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogové okno Upřesnit nastavení kompilátoru (Visual Basic)
 
@@ -31,7 +30,7 @@ Použití **AdvancedCompiler nastavení** dialogovému oknu **Návrháře projek
 
 2.  Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **kompilace** kartu.
 
-3.  Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [postupy: nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
+3.  Na [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), vyberte **konfigurace** a **platformy**. Ve zjednodušených konfigurací sestavení **konfigurace** a **platformy** seznamy se nezobrazují. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4.  Klikněte na tlačítko **Upřesnit možnosti kompilace**.
 

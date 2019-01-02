@@ -1,8 +1,6 @@
 ---
-title: Upravit a pokračovat (Visual C#) | Microsoft Docs
-ms.custom: ''
+title: Upravit a pokračovat (Visual C#) | Dokumentace Microsoftu
 ms.date: 10/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,27 +17,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a731daaf548f76166b4b8e4bcc263780d9d9d33a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7be386a7d792c99ba361d70af1f8aac34c809cf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930970"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C#)
- Upravit a pokračovat pro jazyk C# můžete provést změny kódu v režimu pozastavení při ladění. Změny lze použít bez nutnosti zastavit a restartovat relaci ladění. Editor zdrojového kódu v režimu spuštění, je jen pro čtení.  
+ Pomocí funkce upravit a pokračovat pro jazyk C# můžete provést změny kódu v režimu pozastavení během ladění. Změny lze použít bez nutnosti zastavit a restartovat ladicí relaci. Editor zdrojového kódu v režimu spuštění, je jen pro čtení.  
   
- Upravit a pokračovat, podporuje většinu změn, které můžete chtít provést během ladicí relace, ale existují některé výjimky. Další informace najdete v tématu [podporované (C# a Visual Basic) změn kódu](../debugger/supported-code-changes-csharp.md).  
+ Upravit a pokračovat podporuje většina změn, které můžete chtít provést během relace ladění, ale existují některé výjimky. Další informace najdete v tématu [podporované změny kódu (C# a Visual Basic)](../debugger/supported-code-changes-csharp.md).  
 
- Upravit a pokračovat se podporuje v UWP ve Windows 10 a x86 a x64 aplikací, které se zaměřují rozhraní .NET Framework 4.6 desktop nebo novější verze (pouze plochy verze rozhraní .NET Framework je).
+ Upravit a pokračovat se podporuje v UWP ve Windows 10 a x86 a x64 aplikací určených pro rozhraní .NET Framework 4.6 klasické pracovní plochy nebo novější verze (jenom desktopové verze rozhraní .NET Framework je).
 
  > [!NOTE]
- > Nepodporované aplikace a platformy zahrnout ASP.NET 5, Silverlight 5 a Windows 8.1.
+ > Nepodporované aplikace a platformy obsahují ASP.NET 5, Silverlight 5 a Windows 8.1.
   
- Když upravit a pokračovat, je povoleno, podporované změny se použijí automaticky, když použijete příkaz spuštění ladicího programu, například **pokračovat**, **krok**, **další příkaz Set**, nebo provést vyhodnocení funkce v okně ladicí program.  
+ Když upravit a pokračovat je povolená, podporované změny jsou automaticky použity, když použijete příkaz spuštění ladicího programu, jako například **pokračovat**, **krok**, **nastavit další příkaz**, nebo provést vyhodnocení funkce v okně ladicího programu.  
   
- Další informace najdete v tématu [postupy: použití upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
+ Další informace najdete v tématu [jak: Použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [Postupy: Použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
  [Podporované změny kódu (C# a Visual Basic)](../debugger/supported-code-changes-csharp.md)

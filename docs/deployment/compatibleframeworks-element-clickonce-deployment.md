@@ -1,8 +1,6 @@
 ---
 title: '&lt;compatibleFrameworks&gt; – Element (nasazení ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44329fc4c2ec5e9f2f8352d69ea487f23cbe3c5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: df45e5bc3f9294ac1a53353ec784d83c9220f1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900951"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; – element (nasazení ClickOnce)
 Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainstalovat a spustit.  
@@ -33,12 +31,12 @@ Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainst
   
 ```xml  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -52,13 +50,13 @@ Určuje verzi rozhraní .NET Framework, ve kterém můžete tuto aplikaci nainst
 |`S``upportUrl`|Volitelné. Určuje adresu URL, kde lze stáhnout upřednostňované kompatibilní verze rozhraní .NET Framework.|  
   
 ## <a name="framework"></a>rozhraní  
- Požadováno. V následující tabulce jsou uvedeny atributy, které `framework` elementu podporuje.  
+ Povinný parametr. V následující tabulce jsou uvedeny atributy, které `framework` elementu podporuje.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`targetVersion`|Požadováno. Určuje číslo verze cílového rozhraní .NET Framework.|  
-|`profile`|Požadováno. Určuje profil cílového rozhraní .NET Framework.|  
-|`supportedRuntime`|Požadováno. Určuje číslo verze modulu runtime přidružený k cílové rozhraní .NET Framework.|  
+|`targetVersion`|Povinný parametr. Určuje číslo verze cílového rozhraní .NET Framework.|  
+|`profile`|Povinný parametr. Určuje profil cílového rozhraní .NET Framework.|  
+|`supportedRuntime`|Povinný parametr. Určuje číslo verze modulu runtime přidružený k cílové rozhraní .NET Framework.|  
   
 ## <a name="remarks"></a>Poznámky  
   

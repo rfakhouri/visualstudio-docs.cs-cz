@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Přidání ovládacích prvků do zobrazení Backstage '
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924654"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Postupy: Přidání ovládacích prvků do zobrazení Backstage
   Návrhář pásu karet můžete použít k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí **souboru** kartu. Při spuštění aplikace, ovládací prvky, které přidáte **souboru** karta se skupina s názvem **Add-ins**.  
@@ -71,5 +68,3 @@ ms.locfileid: "53647113"
  [Pás karet – XML](../vsto/ribbon-xml.md)   
  [Postupy: Začínáme přizpůsobení pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Hostitelská položka Document
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea85d0f0f9435795abf75973373e6f0ae7e3a949
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f7fc628a71c7d00c21ab2cfafd9af2893765e82e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908348"
 ---
 # <a name="document-host-item"></a>Hostitelská položka Document
   <xref:Microsoft.Office.Tools.Word.Document> Hostitelský objekt je typ, který rozšiřuje <xref:Microsoft.Office.Interop.Word.Document> typu ze sestavení primární spolupráce pro aplikaci Word. <xref:Microsoft.Office.Tools.Word.Document> Hostitelský objekt poskytuje všechny stejné vlastnosti, metody a události <xref:Microsoft.Office.Interop.Word.Document> objektu, ale také poskytuje další události a funguje jako kontejner pro hostitelské ovládací prvky a ovládací prvky Windows Forms.  
@@ -56,5 +53,3 @@ ms.locfileid: "53647349"
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-  
-  

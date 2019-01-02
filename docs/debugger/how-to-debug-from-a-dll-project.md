@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ladění z projektu knihovny DLL | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění z projektu knihovny DLL | Dokumentace Microsoftu'
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388251"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854064"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Postupy: ladění z projektu knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Postupy: Ladění z projektu knihovny DLL v sadě Visual Studio (C#, C++, Visual Basic, F#)
 
 Jedním ze způsobů k ladění projektu knihovny DLL je volající aplikace zadejte ve vlastnostech projektu knihovny DLL. Potom spustíte ladění z projektu knihovny DLL, samotného. Pro tuto metodu za účelem fungovat musí volat stejné knihovny DLL ve stejném umístění jako ta, kterou nakonfigurujete. Pokud aplikace vyhledá a načte jinou verzi knihovny DLL, tuto verzi nesmí obsahovat vaše zarážky. Další způsoby ladění knihoven DLL najdete v tématu [projektů knihovny DLL ladění](../debugger/debugging-dll-projects.md).
   
-Pokud vaše spravovaná aplikace volá nativní knihovnu DLL nebo nativní aplikace volá operaci spravované knihovny DLL, můžete ladit knihovnu DLL a volání aplikace. Další informace najdete v tématu [postupy: ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).   
+Pokud vaše spravovaná aplikace volá nativní knihovnu DLL nebo nativní aplikace volá operaci spravované knihovny DLL, můžete ladit knihovnu DLL a volání aplikace. Další informace najdete v tématu [jak: Ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).   
 
 Nativní a spravované projekty knihovny DLL mají různá nastavení zadejte aplikace pro volajícího. 
 

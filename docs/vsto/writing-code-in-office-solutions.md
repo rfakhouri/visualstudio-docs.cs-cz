@@ -1,9 +1,6 @@
 ---
 title: Psaní kódu v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
@@ -36,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c26607d918c4fce457222337a287014943b9a0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 35c78f03cdb537ef5be2fd3b9004ca713485d3bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942970"
 ---
 # <a name="write-code-in-office-solutions"></a>Psaní kódu v řešeních pro systém Office
   Existují některé aspekty psaní kódu v projektech Office, které se liší od ostatních typů projektů v sadě Visual Studio. Mnohé z těchto rozdílů jsou týkající se způsobu, jakým Office – objektové modely jsou přístupné pro spravovaný kód. Další rozdíly v návrhu projektů Office souvisejí.

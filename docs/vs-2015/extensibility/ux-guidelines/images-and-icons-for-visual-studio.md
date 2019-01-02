@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171de18bc4a9a790488b28c2c50c53c5c2ee05e6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6a090ae766d15e8afff90a04a5a5a31d0f166a3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904543"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrázky a ikony pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ ms.locfileid: "53068572"
 
 -   **Ikony**. Malé obrázky, které se zobrazují v příkazech, hierarchie, šablon a tak dále. Výchozí velikost ikona používaná v sadě Visual Studio je PNG 16 x 16. Ikony vytvářených služba bitových kopií automaticky generovat formátu XAML pro podporu HDPI.
 
-     **Poznámka:** při Image se používají v nabídce systému, nevytvářejte ikonu pro každý příkaz. Poraďte [nabídek a příkazů pro sadu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) chcete zobrazit, zda váš příkaz by měl získat ikonu.
+     **POZNÁMKA:** Zatímco Image se používají v nabídce systému, nevytvářejte ikonu pro každý příkaz. Poraďte [nabídek a příkazů pro sadu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) chcete zobrazit, zda váš příkaz by měl získat ikonu.
 
 -   **Thumbnails.** Obrázky používané v části dialogového okna, jako je například dialogové okno Nový projekt ve verzi preview.
 
