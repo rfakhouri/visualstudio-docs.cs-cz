@@ -1,8 +1,6 @@
 ---
-title: Použití nástroje Spy ++ | Microsoft Docs
-ms.custom: ''
+title: Použití nástroje Spy ++ | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
@@ -12,41 +10,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb5356ecfe31bce8c8f429add2e78e495f40cd5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a316f2fa786697511a98ae06e5fc52e86412d6b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943272"
 ---
 # <a name="using-spy"></a>Použití nástroje Spy++
-Nástroje Spy ++ (SPYXX. Soubor EXE) je na základě Win32 nástroj, který nabízí grafické zobrazení systémové procesy, vláken, windows a okna zpráv. Tato část nástroje Spy ++ nápovědy obsahuje následující témata:  
+Spy ++ (SPYXX. (EXE) je založená na Win32 nástroj, který poskytuje grafické zobrazení systémové procesy, vlákna, windows a zprávy okna. Tato část nástroje Spy ++ nápověda obsahuje v následujících tématech nápovědy:  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Představení nástroje Spy++](../debugger/introducing-spy-increment.md)  
  Popisuje typy informací, které můžete zobrazit pomocí nástroje Spy ++.  
   
- [Postupy: Spuštění nástroje Spy++](../debugger/how-to-start-spy-increment.md)  
- Vysvětluje, jak ke spuštění nástroje Spy ++ z nabídky Nástroje.  
+ [Postupy: Spuštění nástroje Spy ++](../debugger/how-to-start-spy-increment.md)  
+ Vysvětluje, jak spustit nástroje Spy ++ v nabídce Nástroje.  
   
- [Panel nástrojů nástroje Spy ++](../debugger/spy-increment-toolbar.md)  
+ [Panel nástrojů nástroje Spy++](../debugger/spy-increment-toolbar.md)  
  Popisuje příkazy, které jsou k dispozici na panelu nástrojů nástroje Spy ++.  
   
- [Postupy: zobrazení nástroje Spy ++](../debugger/how-to-display-spy-increment-views.md)  
- Postupy: zobrazení Windows zobrazení, zobrazení zpráv, procesy zobrazení a zobrazení vláken.  
+ [Postupy: Zobrazení nástroje Spy ++](../debugger/how-to-display-spy-increment-views.md)  
+ Postup zobrazení Windows zobrazení, zobrazení zpráv, zobrazení vláken a procesů zobrazení.  
   
- [Postupy: aktualizace zobrazení](../debugger/how-to-refresh-the-view.md)  
- Vysvětluje příkazu Aktualizovat.  
+ [Postupy: Aktualizujte zobrazení](../debugger/how-to-refresh-the-view.md)  
+ Vysvětluje příkaz Aktualizovat.  
   
- [Postupy: Změna písem](../debugger/how-to-change-fonts.md)  
- Vysvětluje, jak změnit způsob zobrazení se zobrazí.  
+ [Postupy: Změna písma](../debugger/how-to-change-fonts.md)  
+ Vysvětluje, jak změnit způsob, jakým se zobrazí zobrazení.  
   
- [Postupy: rozbalení a sbalení stromů nástroje Spy ++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
- Vysvětluje, jak k manipulaci s zobrazení.  
+ [Postupy: Rozbalení a sbalení stromů nástroje Spy ++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
+ Vysvětluje, jak pracovat s zobrazení.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.
+ Obsahuje části s popisem každé nástroje Spy ++ nabídky a dialogové okno pole.

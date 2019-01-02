@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f892c96a40f9edfc01ea0c6a8de15e59b20fb067
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 270ea37a7e16934452b2a6598fc213fd628bcbbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943373"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Nabídek a příkazů pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +55,7 @@ ms.locfileid: "53061275"
  Je vhodné umístit příkazy v těsné blízkosti oblasti zaměření uživatele. Jeden způsob, jak to provést, je vytvoření integrovaném panelu nástrojů v horní části okna nástroje nebo dokumentu editoru. Příkazy, které jsou umístěny na panelu nástrojů by měl být specifické pro oblast obsahu okna. Duplicitní není sdílený příkazy na panely nástrojů. Například umístit nikdy ikonu "Save" v integrovaném panelu nástrojů.
 
 ### <a name="content-and-command-visibility"></a>Viditelnost příkazů a obsahu
- Příkazy existovat v následující obory: **prostředí**, **hierarchie**, a **dokumentu**. Pokud chcete mít přitom jistotu při umísťování příkaz vědět každý obor.
+ Příkazy existovat v následující obory: **Prostředí**, **hierarchie**, a **dokumentu**. Pokud chcete mít přitom jistotu při umísťování příkaz vědět každý obor.
 
  Příkazy v **prostředí** oboru vytvořit primární kontext a sdílejí mezi několika kontextech. Mění viditelnost nebo uspořádání dokumenty a okna nástrojů. Mezi příkazy v prostředí oboru jsou **nový projekt**, **připojit k serveru**, **připojit procesu**, **Vyjmout**,  **Kopírování**, **vložit**, **najít**, **možnosti**, **přizpůsobit**, **nové okno**, a **zobrazit nápovědu**.
 
@@ -288,7 +287,7 @@ ms.locfileid: "53061275"
 
 - **Postupujte podle pokynů Windows k určení, které modifikační klávesy využívat.** Pomocí kombinace kláves Ctrl pro příkazy, které mají ve velkém měřítku účinky, jako je například příkazy, které platí pro celý dokument. Pomocí kombinace klávesy Shift pro příkazy, které rozšířit nebo doplnit akce standardní klávesovou zkratku. Nepoužívejte kombinace kláves Ctrl + Alt.
 
-- **Odeberte nadbytečné klávesové zkratky.** Pokud máte starší verzi funkce, zvažte odebrání klávesových zkratek, které se používají s extrémně infrequency (méně než 10 pokusech z dat programu CEIP) nebo střední infrequency (méně než 100krát z dat programu CEIP), pokud přístupový klíč poskytuje rychlý přístup k ten samý příkaz. Příklad: C Alt a H, otevře se obsah nápovědy /.
+- **Odeberte nadbytečné klávesové zkratky.** Pokud máte starší verzi funkce, zvažte odebrání klávesových zkratek, které se používají s extrémně infrequency (méně než 10 pokusech z dat programu CEIP) nebo střední infrequency (méně než 100krát z dat programu CEIP), pokud přístupový klíč poskytuje rychlý přístup k ten samý příkaz. Příklad: C ALT a H, otevře se obsah nápovědy /.
 
   Není k dispozici jednoduchý způsob, jak zkontrolovat dostupnost místní. Pokud chcete přidat zástupce, postupujte podle těchto kroků:
 

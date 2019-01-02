@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e84d9d7bde30ab781da2f135c94baf74b697e567
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e81e9f7fad5976ad853254e04289d89d09b87ac6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922165"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Použití parametrů příkazového řádku instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +62,7 @@ Když nainstalujete sadu Visual Studio 2015 z příkazového řádku, můžete p
 |**/ repair**|Opraví aplikaci Visual Studio.|
 |**/ SuppressRefreshPrompt**|Zabrání zobrazení dialogového okna k dispozici aktualizacemi v Průvodci instalací, proto Průvodce instalací se automaticky přijme všechny požadované nebo doporučené aktualizované verze.|
 |**/u**<br /><br /> **/ Uninstall**|Odinstaluje [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|**/ Uninstall/Force**<br /><br /> **/ Force /u**|Odinstaluje Visual Studio a všechny funkce, které jsou sdíleny s jinými produkty. **Upozornění:** používáte-li tento parametr, jiné produkty, které jsou nainstalované na stejném počítači můžou přestat správně fungovat.|
+|**/ Uninstall/Force**<br /><br /> **/ Force /u**|Odinstaluje Visual Studio a všechny funkce, které jsou sdíleny s jinými produkty. **Upozornění:**  Pokud použijete tento parametr, jiné produkty, které jsou nainstalovány ve stejném počítači, mohou přestat fungovat správně.|
 
 ## <a name="see-also"></a>Viz také
  [Příručka správce sady Visual Studio](../install/visual-studio-administrator-guide.md)

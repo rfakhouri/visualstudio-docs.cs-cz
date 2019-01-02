@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isReturnValue | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isReturnValue | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfd99af3ce33390d3ad27fcc1d85ae318c37bc2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2fb6ac1cd43212a8e620004dbe9935befc2e8b11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963602"
 ---
 # <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-Určuje, zda proměnná představuje návratovou hodnotu.  
+Určuje, zda proměnná nese návratovou hodnotu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +29,10 @@ HRESULT get_isReturnValue(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `BOOL` určující, zda proměnná představuje návratovou hodnotu.  
+ [out] Ukazatel `BOOL` , která určuje, zda proměnná nese návratovou hodnotu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

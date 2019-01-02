@@ -1,8 +1,6 @@
 ---
 title: Zásobník volání událostí grafiky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.callstack
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c53db002fd0d300a01b5cc142f6ed2daf4daa2
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d5201fbbe9cdd5e452621233b10ccf31119a642a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939846"
 ---
 # <a name="graphics-event-call-stack"></a>Zásobník volání událostí grafiky
 Zásobníku volání události grafiky v analyzátoru grafiky sady Visual Studio umožňuje mapovat vztah mezi událostí grafiky problematické a zdrojový kód vaší aplikace.  
@@ -36,12 +34,12 @@ Zásobníku volání události grafiky v analyzátoru grafiky sady Visual Studio
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Jméno**|Symbol, který jednoznačně identifikuje funkce, která obsahuje lokalitu volání. Symbol ladění pro funkce se zobrazí, když je k dispozici. v opačném případě se zobrazí funkce Posun.|  
-|**Soubor**|Název souboru souboru se zdrojovým kódem nebo soubor knihovny, která obsahuje lokalitu volání.|  
+|**Název**|Symbol, který jednoznačně identifikuje funkce, která obsahuje lokalitu volání. Symbol ladění pro funkce se zobrazí, když je k dispozici. v opačném případě se zobrazí funkce Posun.|  
+|**File**|Název souboru souboru se zdrojovým kódem nebo soubor knihovny, která obsahuje lokalitu volání.|  
 |**Poloha**|Číslo řádku lokalitu volání.|  
   
 ### <a name="links-to-graphics-objects"></a>Odkazy na grafických objektů  
  Porozumění události vybrané grafiky, budete pravděpodobně potřebovat informace o Direct3D objekty, které jsou k ní přidružena. **Zásobník volání událostí grafiky** okno obsahuje odkazy na tyto informace.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Chybějící objekty z důvodu použití funkce vertex shading](walkthrough-missing-objects-due-to-vertex-shading.md)
+ [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](walkthrough-missing-objects-due-to-vertex-shading.md)

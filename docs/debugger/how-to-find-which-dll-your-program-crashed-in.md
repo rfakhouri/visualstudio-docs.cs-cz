@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: hledání knihovny DLL které Program selhal v | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání knihovny DLL které Program selhal v | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40f27e0bec20e1dd037beaa5f60ea648c0ccb171
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7726c7fff2f747fcde3fe62bcdcc0866b375728d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879118"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Postupy: hledání knihovny DLL které Program selhal v (C#, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Postupy: Hledání knihovny DLL které Program selhal v (C#, C++, Visual Basic, F#)
   
  Pokud vaše aplikace dojde k chybě během volání systémové knihovny DLL nebo kód někoho jiného, budete muset najít který byl aktivní knihovny DLL, kdy došlo k selhání. Pokud dojde k chybovému ukončení v knihovně DLL mimo svůj program, můžete určit pomocí umístění **moduly** okna.  
   
@@ -53,4 +51,4 @@ ms.locfileid: "52257094"
   
 ## <a name="see-also"></a>Viz také  
  [Ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md)   
- [Postupy: Použití okna Moduly](../debugger/how-to-use-the-modules-window.md)
+ [Postupy: Použití okna moduly](../debugger/how-to-use-the-modules-window.md)

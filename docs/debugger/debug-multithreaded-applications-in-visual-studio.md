@@ -2,7 +2,6 @@
 title: Ladění vícevláknových aplikací | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907881"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 Vlákno je řada pokynů, pro které operační systém uděluje času procesoru. Každý proces, na kterém běží v operačním systému se skládá z alespoň jednoho vlákna. Procesy, které mají více než jedno vlákno, se nazývají s více vlákny.  
@@ -41,11 +40,11 @@ Multithreading můžete zavést nové typy možných chyb. Například dvě či 
 
 Visual Studio poskytuje různé nástroje pro použití při ladění aplikace s více vlákny.
 
-- Pro vlákna, jsou primární nástroje pro ladění vláken **vlákna** okna, značky vlákna ve zdrojových oknech **paralelní zásobníky** okně **paralelního sledování** okno a **umístění ladění** nástrojů. Další informace o **vlákna** okno a **umístění ladění** nástrojů, naleznete v tématu [návod: ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md). Další informace o použití **paralelní zásobníky** a **paralelní sledování** naleznete zde [Začínáme s laděním vícevláknových aplikacích](../debugger/get-started-debugging-multithreaded-apps.md). Obě témata ukazují, jak používat značky vlákna.
+- Pro vlákna, jsou primární nástroje pro ladění vláken **vlákna** okna, značky vlákna ve zdrojových oknech **paralelní zásobníky** okně **paralelního sledování** okno a **umístění ladění** nástrojů. Další informace o **vlákna** okno a **umístění ladění** nástrojů, naleznete v tématu [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md). Další informace o použití **paralelní zásobníky** a **paralelní sledování** naleznete zde [Začínáme s laděním vícevláknových aplikacích](../debugger/get-started-debugging-multithreaded-apps.md). Obě témata ukazují, jak používat značky vlákna.
   
-- Pro kód, který se používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), jsou základními nástroji pro ladění **paralelní zásobníky** okno, **Paralelní sledování** okně a **úlohy** okno, které podporuje také jazyk JavaScript. Abyste mohli začít, najdete v článku [návod: ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) a [návod: ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
+- Pro kód, který se používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), jsou základními nástroji pro ladění **paralelní zásobníky** okno, **Paralelní sledování** okně a **úlohy** okno, které podporuje také jazyk JavaScript. Abyste mohli začít, najdete v článku [názorný postup: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) a [názorný postup: Ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
-- Pro ladění vláken v GPU je primárním nástrojem **vlákna GPU** okna. Zobrazit [postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
+- Pro ladění vláken v GPU je primárním nástrojem **vlákna GPU** okna. Zobrazit [jak: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
 - Pro procesy, jsou primární nástroje **připojit k procesu** dialogovém okně **procesy** okně a **umístění ladění** nástrojů.  
   
@@ -76,7 +75,7 @@ Ladění aplikace s více vlákny s uživatelským rozhraním může být zvlá�
  [Postupy: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md)  
  Opatřete značkou nebo příznakem vlákna, které chcete věnovat zvláštní pozornost při ladění.    
   
- [Postupy: ladění na vysoký výkon clusteru](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [Postupy: Ladění na vysoký výkon clusteru](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniky ladění aplikace, která běží na vysoký výkon clusteru.  
 
  [Tipy k ladění vláken v nativním kódu](../debugger/tips-for-debugging-threads-in-native-code.md)  

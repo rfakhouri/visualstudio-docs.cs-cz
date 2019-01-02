@@ -1,6 +1,5 @@
 ---
 title: Odkaz na schéma šablon sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0774cdbba791c62a5794c7f837d6ce6b32c49432
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966937"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio odkaz na schéma šablon
 Tato část obsahuje informace o elementech XML v *.vstemplate* soubory, které jsou soubory, které ukládají metadata pro šablony projektů, šablony položek a úvodní sady.
@@ -28,7 +27,7 @@ Tato část obsahuje informace o elementech XML v *.vstemplate* soubory, které 
 
 |Prvek|Podřízené elementy|Atributy|
 |-------------|--------------------|----------------|
-|[AppliesTo –](../extensibility/appliesto-element-visual-studio-templates.md)|Žádná|Žádné|
+|[AppliesTo –](../extensibility/appliesto-element-visual-studio-templates.md)|Žádná|Žádná|
 |[Assembly (šablona)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
 |[Sestavení (rozšíření průvodce)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[Buildprojectonload –](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|

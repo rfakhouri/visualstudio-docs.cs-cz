@@ -1,10 +1,8 @@
 ---
 title: Úvod do úprav pro vývojáře v JavaScriptu
 description: Tento úvod do editoru kódu v sadě Visual Studio jsou uvedeny některé ze způsobů, že sada Visual Studio provádí zápis, procházení a porozumění kódu JavaScript jednodušší.
-ms.custom: ''
 ms.date: 12/13/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f511b668c207ae719dbb981d7dc5640f0fa124c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967424"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Zjistěte, jak pomocí editoru kódu
 

@@ -1,8 +1,6 @@
 ---
-title: Lupa zobrazení jader | Microsoft Docs
-ms.custom: ''
+title: Lupa zobrazení jader | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -14,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c29bacc07268223b9d4e5bf6cef4670c1a1f323
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5bfc05c208a072fbe1e17eeafdebb938b33aaaf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967291"
 ---
 # <a name="cores-view-zoom-tool"></a>Nástroj Lupa zobrazení jader
-Ovládací prvek Lupa je jezdce, která umožňuje přiblížení a oddálení na časové ose tak, aby se můžete soustředit na oblasti zvláštní zájem. Tento ovládací prvek zvětší v centru aktuálního zobrazení, takže upravte zobrazení předtím, než se můžete přiblížit.  
+Ovládací prvek lupy je ovládací prvek posuvník, který umožňuje přiblížení a oddálení časové osy, abyste se mohli zaměřit na konkrétní zajímavé oblasti. Tento ovládací prvek přiblížení na střed zobrazení aktuální, proto upravte zobrazení před přiblížení.  
   
-## <a name="other-ways-to-zoom"></a>Další způsoby zvětšení  
+## <a name="other-ways-to-zoom"></a>Další možnosti, jak přiblížení  
   
--   Přiblížení a oddálení: tažením vyberte oblast v zobrazení časové osy. Po uvolnění tlačítka myši se zobrazení časové osy zvětší vybraný rozsah.  
+-   Přiblížení: Tažením vyberte oblast v zobrazení časové osy. Když uvolníte tlačítko myši, zobrazení časové osy přiblíží vybrané oblasti.  
   
--   Přiblížení a oddálení: Hover přes časového harmonogramu a poté stiskněte klávesu **Ctrl** při přesunutí kolečko myši.  
+-   Přiblížení a oddálení: Najeďte myší na časové ose a potom stiskněte klávesu **Ctrl** při přesunutí kolečko myši.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení jader](../profiling/cores-view.md)

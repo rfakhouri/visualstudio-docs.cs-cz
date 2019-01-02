@@ -1,9 +1,6 @@
 ---
 title: Zobrazení souborů pomocí příkazu Otevřít soubor | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964660"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Zobrazení souborů pomocí příkazu Otevřít soubor
 Následující kroky popisují, jak zachází s integrovaného vývojového prostředí **otevřít soubor** příkaz, který je k dispozici na **souboru** v nabídce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kroky také popisují, jak by měl projekty reakce na volání, které pocházejí z tohoto příkazu.  
@@ -52,10 +49,10 @@ Následující kroky popisují, jak zachází s integrovaného vývojového pros
   
 4.  Jakmile rozhraní IDE zjistí, který projekt otevře soubor, volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metoda u tohoto projektu.  
   
-5.  Projekt nemá možnost otevření souboru pomocí editoru specifické pro projekt nebo standardní editor. Další informace najdete v tématu [postupy: otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md) a [postupy: otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)v uvedeném pořadí.  
+5.  Projekt nemá možnost otevření souboru pomocí editoru specifické pro projekt nebo standardní editor. Další informace najdete v tématu [jak: Otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md) a [jak: Otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)v uvedeném pořadí.  
   
 ## <a name="see-also"></a>Viz také:  
  [Pomocí příkazu Otevřít v zobrazení souborů](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
- [Postupy: otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)   
- [Postupy: otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)
+ [Postupy: Otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Postupy: Otevřít standardních editorů](../../extensibility/how-to-open-standard-editors.md)

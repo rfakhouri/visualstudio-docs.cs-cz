@@ -1,8 +1,6 @@
 ---
-title: Idiastackwalker – | Microsoft Docs
-ms.custom: ''
+title: Idiastackwalker – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9c4509e56949d739af3e39e04b89f289edfbe
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935969"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
-Poskytuje možnosti metod protokolů provede pomocí informací v souboru pdb.  
+Poskytuje metody, jak provést zásobníku provede pomocí informací v souboru .pdb.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,18 +29,18 @@ IDiaStackWalker: IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaStackWalker`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaStackWalker`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Načte enumerátor rámce zásobníku pro x86 platformy.|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Načte enumerátor rámce zásobníku pro konkrétní platformu typu.|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Načte čítač rámce zásobníku pro x86 platformy.|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Načte čítač rámce zásobníku pro typ konkrétní platformy.|  
   
 ## <a name="remarks"></a>Poznámky  
- Toto rozhraní se používá k získání seznamu rámce zásobníku pro načíst modul. Každou z metod je předána [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objektu (implementované klientské aplikace), která poskytuje informace potřebné k vytvoření seznamu rámce zásobníku.  
+ Toto rozhraní se používá k získání seznamu sad rámců zásobníku u načteného modulu. Každá z metod je předán [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objektu (implementované klientské aplikace), který poskytuje informace potřebné k vytvoření seznamu rámce zásobníku.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní se získá voláním `CoCreateInstance` metoda s identifikátorem třídy `CLSID_DiaStackWalker` a ID rozhraní `IID_IDiaStackWalker`. Příklad ukazuje, jak získat toto rozhraní.  
+ Toto rozhraní je získán voláním `CoCreateInstance` metoda s identifikátorem třídy `CLSID_DiaStackWalker` a interface ID `IID_IDiaStackWalker`. Příklad ukazuje, jak získat toto rozhraní.  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak získat `IDiaStackWalker` rozhraní.  
@@ -62,12 +60,12 @@ if (FAILED(hr))
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

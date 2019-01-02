@@ -1,8 +1,6 @@
 ---
-title: Zobrazení (IP) ukazatele na instrukce – Data vzorkování paměti .NET | Microsoft Docs
-ms.custom: ''
+title: Zobrazení ukazatelů na instrukce – Data vzorkování paměti .NET | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,37 +10,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3b3d0d0334ed8073a125d8b2c435f8e5d58299d4
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 9d3ad0bc9239c0cee9bdb425f2a475391654125a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964160"
 ---
-# <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Zobrazení (IP) ukazatele na instrukce – data vzorkování paměti .NET
-Zobrazení IP adres pro rozhraní .NET paměti přidělení profilování data, která nebyla shromážděna pomocí metody vzorkování uvádí pokyny sestavení, které přidělené paměti při spuštění profilování. Sloupce zobrazení taky seznam velikost a počet přidělení.  
+# <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Zobrazení ukazatelů na instrukce – data vzorkování paměti .NET
+Zobrazení IP adres pro .NET profilování data o přidělování paměti, která byla shromážděna pomocí metody vzorkování uvádí instrukce sestavení, které přidělené paměti během spuštění profilování. Sloupce zobrazení také seznam velikost a počet přidělení.  
   
- Jsou uvedeny pouze výhradní hodnoty.  
+ Pouze výhradní hodnoty jsou uvedeny.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**ID procesu**|ID procesu (PID) z profilace spustit.|  
+|**ID procesu**|ID procesu (PID) běhu profilování.|  
 |**Název procesu**|Název procesu.|  
-|**Název modulu**|Název modul, který obsahuje pokyn.|  
-|**Cesta modulu**|Cesta modul, který obsahuje pokyn.|  
-|**Zdrojový soubor**|Zdrojový soubor, který obsahuje pokyn.|  
+|**Název modulu**|Název modulu, který obsahuje instrukce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje instrukce.|  
+|**Zdrojový soubor**|Zdrojový soubor, který obsahuje instrukce.|  
 |**Název funkce**|Název funkce.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Adresa funkce**|Počáteční adresa funkce.|  
-|**Začátek řádku zdroje**|Počáteční řádek číslo ve zdrojovém souboru, kdy došlo k chybě přidělení.|  
-|**End řádku zdroje**|Koncová číslo řádku ve zdrojovém souboru, kdy došlo k chybě přidělení.|  
-|**Začátek znaku zdroje**|Posun počáteční znak v řádku souboru zdroje, kdy došlo k přidělení.|  
-|**End znaku zdroje**|Posun ukončovací znak v řádku souboru zdroje, kdy došlo k přidělení.|  
+|**Začátek řádku zdroje**|Počáteční řádek číslo ve zdrojovém souboru, ve kterém došlo k chybě přidělení paměti.|  
+|**Konec řádku zdroje**|Koncové číslo řádku ve zdrojovém souboru, ve kterém došlo k chybě přidělení paměti.|  
+|**Počáteční znak zdrojového kódu**|Odsazení počátečního znaku ve zdrojovém souboru řádku, ve kterém došlo k chybě přidělení paměti.|  
+|**Koncový znak zdrojového kódu**|Posun koncového znaku ve zdrojovém souboru řádku, ve kterém došlo k chybě přidělení paměti.|  
 |**Adresa instrukce**|Adresa instrukce.|  
 |**Výhradní přidělení**|Celkový počet objektů, které byly vytvořeny podle pokynů.|  
-|**Výhradní přidělení %**|Procento všechny objekty vytvořené v profilaci spuštění, které byly přiděleny podle pokynů.|  
-|**Výhradní bajtů**|Počet bajtů paměti, které byly přiděleny v profilaci spuštění, které byly přiděleny podle pokynů.|  
-|**% Výhradní bajtů**|Procento všech bajtů paměti, které byly přiděleny v profilaci spuštění, které byly přiděleny podle pokynů.|  
+|**% Výhradních přidělení**|Procento všech objektů, které byly vytvořeny při spuštění profilace, které byly přiděleny podle pokynů.|  
+|**Výhradní bajty**|Počet bajtů paměti, které byly přiděleny v profilování, které byly přiděleny podle pokynů.|  
+|**% Výhradních bajtů**|Procento všech počet bajtů paměti, které byly přiděleny při spuštění profilace, které byly přiděleny podle pokynů.|  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)

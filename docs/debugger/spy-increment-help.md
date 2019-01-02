@@ -1,8 +1,6 @@
 ---
-title: Nápověda nástroje Spy ++ | Microsoft Docs
-ms.custom: ''
+title: Nápověda nástroje Spy ++ | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
@@ -12,47 +10,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 528d52e4f32371eaf32f4c4e07c111c9b87f17cf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 156629fdce19dfe4e503f4af67ca31f99041e231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855584"
 ---
 # <a name="spy-help"></a>Nápověda nástroje Spy++
-V dokumentaci k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použití nástroje Spy ++ a na zobrazení nástroje Spy ++. Tyto jsou následovaný nástroje Spy ++ odkaz, který poskytuje další podrobnosti v každé pole dialogové okno a příkaz nabídky k dispozici.  
+Dokumentace k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použití nástroje Spy ++ a v zobrazení nástroje Spy ++. Tyto jsou následována nástroje Spy ++ odkaz, který obsahuje další podrobné informace o každé pole dialogové okno a příkaz nabídky k dispozici.  
   
 ## <a name="using-spy"></a>Použití nástroje Spy++  
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
+ Seznámíte se nástroje Spy ++, jak je možné.  
   
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
 ## <a name="spy-reference"></a>Referenční dokumentace nástroje Spy++  
  [Příkazy nabídky](../debugger/menu-commands.md)  
- Popisuje příkazy, které jsou k dispozici na jednotlivé nabídky Nástroje Spy ++.  
+ Popisuje příkazy, které jsou k dispozici pro jednotlivé nabídky Nástroje Spy ++.  
   
- [Dialogové okno Písmo](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
+ [Dialogové okno písem](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Slouží ke konfiguraci znak písmo použité v okně zobrazení nástroje Spy ++.  
   
- [Vyhledávací nástroje pro zobrazení nástroje Spy ++](../debugger/search-tools-for-spy-increment-views.md)  
- Dialogová okna použít k vyhledání konkrétního uzlu v okně zobrazení nástroje Spy ++.  
+ [Vyhledávací nástroje pro zobrazení nástroje Spy++](../debugger/search-tools-for-spy-increment-views.md)  
+ Dialogová okna použit k vyhledání specifické uzlu v okně zobrazení nástroje Spy ++.  
   
- [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md)  
- Slouží k zobrazení vlastností okna vybraném v zobrazení systému Windows.  
+ [Dialogové okno vlastností oken](../debugger/window-properties-dialog-box.md)  
+ Slouží k zobrazení vlastností okna vybrána v zobrazení Windows.  
   
  [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
  Slouží k výběru zprávy, které jsou uvedené v zobrazení zpráv.  
   
  [Dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md)  
- Slouží k zobrazení vlastností zprávu vybranou ve zobrazení zpráv.  
+ Slouží k zobrazení vlastnosti zprávy vybrána v zobrazení zpráv.  
   
- [Dialogové okno vlastností procesu](../debugger/process-properties-dialog-box.md)  
- Slouží k zobrazení vlastností procesu vybraném v zobrazení procesů.  
+ [Dialogové okno vlastností procesů](../debugger/process-properties-dialog-box.md)  
+ Slouží k zobrazení vlastností procesu vybrána v zobrazení procesy.  
   
  [Dialogové okno vlastností vláken](../debugger/thread-properties-dialog-box.md)  
- Slouží k zobrazení vlastností vlákna vybraném v zobrazení vláken.  
+ Slouží k zobrazení vlastností vlákna vybrána v zobrazení vláken.  
   
  [Jiná dialogová okna](../debugger/other-dialog-boxes.md)  
  Slouží k zobrazení informací o programu nástroje Spy ++.

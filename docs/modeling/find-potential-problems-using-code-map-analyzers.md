@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: afc2915a5d1bfb6cf361a4b84a0235db296bac67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938287"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Nalezení potenciálních problémů pomocí analyzátorů mapy kódu
 
@@ -38,9 +37,9 @@ Na panelu nástrojů Mapa **rozložení** > **analyzátory**a potom analyzátor,
 
 |**Analyzátor**|**K identifikaci uzlů, který**|
 |-|-|
-|**Analyzátor cyklické odkazy**|Cyklické závislosti jsou na sobě navzájem. **Poznámka:** cyklické závislosti, které jsou v **obecných typů** skupiny nejsou zobrazeny na mapě, získáte rozbalením skupiny.|
+|**Analyzátor cyklické odkazy**|Cyklické závislosti jsou na sobě navzájem. **Poznámka:**  Cyklické závislosti, které jsou v **obecných typů** skupiny nejsou zobrazeny na mapě, získáte rozbalením skupiny.|
 |**Najít analyzátor rozbočovače**|Jsou v horním 25 % vysoce připojených uzlů<br /><br /> **Chcete-li skrýt všechny uzly na mapě**<br /><br /> -Otevřete místní nabídku pro mapu, zvolte **Upřesnit**, **vyberte**, **Skrýt nevybrané**.<br />     Na mapě skryje nevybraných uzlů a analyzátor identifikuje nových uzlů jako centra.|
-|**Analyzátor neodkazované uzly**|Nemají odkazy z jiných uzlů. **Upozornění:** všech těchto případech před ověření za předpokladu, že kód se nepoužívá. Určité závislosti, jako je například XAML závislosti a závislosti za běhu nelze nalézt staticky v kódu.|
+|**Analyzátor neodkazované uzly**|Nemají odkazy z jiných uzlů. **Upozornění:**  Ověření všech těchto případech před za předpokladu, že kód se nepoužívá. Určité závislosti, jako je například XAML závislosti a závislosti za běhu nelze nalézt staticky v kódu.|
 
 Analyzátorů mapy kódu bude nadále spuštěna po jejich použití. Pokud změníte na mapě, žádné použité Analyzátory se automaticky znovu zpracovat mapa aktualizovaná. Chcete-li zastavit spuštěný analyzátor, na panelu nástrojů mapy, zvolte **rozložení** > **analyzátory**. Vypněte vybrané analyzátor.
 

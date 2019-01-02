@@ -1,9 +1,6 @@
 ---
 title: Vytvoření webové části pro službu SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879131"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Vytvoření webové části pro SharePoint
-  Pomocí webových částí můžete upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče. Webové části jsou serverové ovládací prvky, které jsou spouštěny v rámci stránky webových částí: jsou to stavební kameny stránek, které se zobrazí na webu služby SharePoint. Zobrazit [stavebním blokem: webové části](http://go.microsoft.com/fwlink/?LinkID=182097).  
+  Pomocí webových částí můžete upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče. Webové části jsou serverové ovládací prvky, které jsou spouštěny v rámci stránky webových částí: jsou to stavební kameny stránek, které se zobrazí na webu služby SharePoint. Zobrazit [stavebních bloků: Webové části](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Můžete vytvářet a ladit webové části na web služby SharePoint pomocí šablon sady Visual Studio.  
   
@@ -54,10 +49,10 @@ ms.locfileid: "49906038"
 |soubor WebPart|Poskytuje informace, které SharePoint potřebuje ke zobrazení vaší webové části v galerii webových částí.|  
 |Soubor kódu|Obsahuje metody, která přidání ovládacích prvků do webové části a který generují vlastní obsah v rámci webové části.|  
   
- Další informace najdete v tématu [postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
+ Další informace najdete v tématu [jak: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
 ### <a name="visual-web-part-item"></a>Položka vizuální webové části
- Vizuální webová část je webová část, kterou vytvoříte pomocí návrháře Visual Web Developer v sadě Visual Studio. Vizuální webová část funguje stejně jako jiné webové části. Chcete-li přidat ovládací prvky, jako jsou tlačítka a textová pole, do webové části, přidejte kód do souboru XML. Ale přidání ovládacích prvků na vizuální webové části přetažením nebo zkopírováním do webové části ze sady Visual Studio **nástrojů**. Návrhář poté vygeneruje požadovaný kód v souboru XML. Zobrazit [postupy: vytvoření Sharepointovou webovou část pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
+ Vizuální webová část je webová část, kterou vytvoříte pomocí návrháře Visual Web Developer v sadě Visual Studio. Vizuální webová část funguje stejně jako jiné webové části. Chcete-li přidat ovládací prvky, jako jsou tlačítka a textová pole, do webové části, přidejte kód do souboru XML. Ale přidání ovládacích prvků na vizuální webové části přetažením nebo zkopírováním do webové části ze sady Visual Studio **nástrojů**. Návrhář poté vygeneruje požadovaný kód v souboru XML. Zobrazit [jak: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
 ## <a name="sharepoint-controls"></a>Ovládací prvky služby SharePoint
  Visual Studio obsahuje některé ovládací prvky pro vytváření stránek služby SharePoint, jako jsou například stránky aplikace. Tyto ovládací prvky se zobrazí v **nástrojů** pod **ovládací prvky SharePoint**. Funkce pro tyto ovládací prvky je odvozena z [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) obor názvů, který obsahuje serverové ovládací prvky ASP.NET použité na stránkách webů a seznamech SharePoint.  
@@ -115,10 +110,9 @@ ms.locfileid: "49906038"
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Ukazuje, jak vytvořit webové části pro stránky služby SharePoint.|  
-|[Postupy: vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Ukazuje, jak vytvořit webové části pro službu SharePoint pomocí návrhové plochy.|  
-|[Postupy: vytvoření uživatelského ovládacího prvku pro části stránky nebo webové aplikace služby SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Ukazuje, jak vytvořit vlastní, opakovaně použitelné ovládací prvky, které mohou být spotřebovány stránkami aplikace a webové části, které běží ve službě SharePoint.|  
+|[Postupy: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Ukazuje, jak vytvořit webové části pro stránky služby SharePoint.|  
+|[Postupy: Vytvoření webové části služby SharePoint pomocí návrháře](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Ukazuje, jak vytvořit webové části pro službu SharePoint pomocí návrhové plochy.|  
+|[Postupy: Vytvoření uživatelského ovládacího prvku pro části stránky nebo webové aplikace služby SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Ukazuje, jak vytvořit vlastní, opakovaně použitelné ovládací prvky, které mohou být spotřebovány stránkami aplikace a webové části, které běží ve službě SharePoint.|  
 |[Návod: Vytvoření webové části pro SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Popisuje postup návrhu webové části pro službu SharePoint.|  
 |[Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Popisuje postup návrhu webové části pro SharePoint přetažením ovládacích prvků na vizuální návrhovou plochu.|  
 |[Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Popisuje postup návrhu webové části pro službu SharePoint, který je hostitelem aplikace Silverlight a zobrazuje data ze Sharepointových seznamech.|  
-  

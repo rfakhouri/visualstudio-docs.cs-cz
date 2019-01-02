@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isSingleInheritance | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isSingleInheritance | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -10,15 +8,15 @@ ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 15178084d636d6271446319bcff92ac0677898df
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 413952e516a7beb9a9371a3fe8c7c4517135d470
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935941"
 ---
 # <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
-Určuje, zda `this` body ukazatele na člena s jedna dědičnost.  
+Určuje, zda `this` ukazatel odkazuje na datový člen s jednoduchou dědičnost.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -29,10 +27,10 @@ HRESULT get_isSingleInheritance(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `BOOL` který určuje, zda `this` body ukazatele na člena s jedna dědičnost.  
+ [out] Ukazatel `BOOL` , která určuje, zda `this` ukazatel odkazuje na datový člen s jednoduchou dědičnost.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

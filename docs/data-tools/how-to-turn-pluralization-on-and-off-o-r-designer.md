@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: vypnutí pluralizační a zapnutí (Návrhář O-R)'
+title: 'Postupy: Pluralizace zapnutí a vypnutí (Návrhář O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -7,41 +7,40 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a2d2e44efc284c38cfc450833839776effb9936
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 99dc1c6fefae880d10c1dedd080f9abbceba4d1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961761"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: vypnutí pluralizační a zapnutí (Návrhář relací objektů)
-Ve výchozím nastavení při přetažení databázové objekty, které mají názvy končící na s nebo ho bloku z **Průzkumníka serveru** nebo **Průzkumník databáze** na [technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), názvy tříd generovaného entity jsou změněn z množném čísle na singulární. Důvodem je skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat přesněji představují. Například přidávání `Customers` a **Návrhář relací objektů** výsledkem třídu entity s názvem `Customer` protože třída budou uložena data pro jednoho zákazníka.
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: Pluralizace zapnutí a vypnutí (O/R Designer)
+Ve výchozím nastavení se při přetažení databázových objektů, které mají jména končící na s nebo dokumentu z **Průzkumníka serveru** nebo **Průzkumník databáze** na [technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), názvy generovaných tříd entit se mění v množném čísle pro singulární. To slouží k reprezentaci přesněji skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat. Například přidáním `Customers` tabulky **O/R Designer** výsledkem třídu entity s názvem `Customer` protože třídy bude obsahovat data pro jediného zákazníka.
 
 > [!NOTE]
->  Pluralizační je ve výchozím nastavení pouze v anglické jazykové verzi Visual Studia.
+>  Pluralizace je ve výchozím pouze v anglické jazykové verzi sady Visual Studio.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-turn-pluralization-on-and-off"></a>Chcete-li pluralizační zapnout a vypnout
+### <a name="to-turn-pluralization-on-and-off"></a>K zapnutí a vypnutí pluralizace
 
 1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  V **možnosti** dialogové okno, rozbalte seznam **databázové nástroje**.
+2.  V **možnosti** dialogového okna rozbalte **databázové nástroje**.
 
     > [!NOTE]
-    >  Vyberte **zobrazit všechna nastavení** Pokud **databázové nástroje** uzlu není viditelná.
+    >  Vyberte **zobrazit všechna nastavení** Pokud **databázové nástroje** uzel není viditelný.
 
-3.  Klikněte na tlačítko **Návrhář relací objektů**.
+3.  Klikněte na tlačítko **O/R Designer**.
 
-4.  Nastavit **Pluralizační názvy** k **povoleno** = **False** nastavit **Návrhář relací objektů** tak, aby nedošlo k jeho změně názvy tříd .
+4.  Nastavte **Pluralizaci názvů** k **povoleno** = **False** nastavit **O/R Designer** tak, aby neměnil názvy tříd .
 
-5.  Nastavit **Pluralizační názvy** k **povoleno** = **True** uplatňovat pluralizační pravidla pro názvy tříd objektů, které jsou přidány do **relací objektů Návrhář**.
+5.  Nastavte **Pluralizaci názvů** k **povoleno** = **True** použít pluralizace pravidla pro názvy tříd objektů, které jsou přidány do **O/R Návrhář**.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

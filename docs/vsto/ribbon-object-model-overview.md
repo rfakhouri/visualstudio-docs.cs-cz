@@ -1,9 +1,6 @@
 ---
 title: Přehled modelu objektů pásu karet
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961306"
 ---
 # <a name="ribbon-object-model-overview"></a>Přehled modelu objektů pásu karet
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Poskytuje model silně typovaných objektů, které můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu. Například můžete dynamicky naplnit ovládací prvky nabídky nebo zobrazení a skrytí ovládacích prvků kontextově. Také můžete přidat karty, skupiny a ovládací prvky na pás karet, ale pouze před načtení aplikací Office. Informace najdete v tématu [nastavit vlastnosti, které budou jen pro čtení](#SettingReadOnlyProperties).  
@@ -50,7 +47,7 @@ ms.locfileid: "49910586"
   
 |Název ovládacího prvku|Název třídy|  
 |------------------|----------------|  
-|**Pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
+|**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Tlačítko**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
@@ -58,7 +55,7 @@ ms.locfileid: "49910586"
 |**Rozevírací seznam**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**Textové pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**Skupiny**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
+|**Skupina**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Popisek**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**Nabídka**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Oddělovač**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
@@ -148,7 +145,7 @@ ms.locfileid: "49910586"
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
-|**Jméno**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
+|**Název**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Pozice**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Počet řádků**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
@@ -198,5 +195,4 @@ ms.locfileid: "49910586"
  [Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)   
  [Postupy: Přidání ovládacích prvků do zobrazení Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Postupy: Add-in zobrazení chyb uživatelského rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [Postupy: Zobrazení doplňku uživatele chyb rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md)  

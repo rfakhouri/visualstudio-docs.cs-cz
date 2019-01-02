@@ -2,7 +2,6 @@
 title: Práce s elementy v Návrháři XAML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de3a964d39cf2d4473bc8736c5fdeb0ef83809fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922596"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s elementy v Návrháři XAML
 Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší aplikace v XAML, v kódu nebo s použitím návrháře XAML. Toto téma popisuje, jak pracovat s elementy v Návrháři XAML v sadě Visual Studio nebo nástroje Blend for Visual Studio.
@@ -65,9 +64,9 @@ Můžete přidat prvky – ovládací prvky, rozložení a tvary – do vaší a
 
 1.  Vyberte prvky, které chcete, aby bylo v souladu. Můžete vybrat více než jeden element stisknutím a podržením **Ctrl** klávesu vybrat elementy.
 
-2.  Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **vlevo**, **Center**, **Vpravo**, nebo **Stretch**.
+2.  Vyberte jednu z následujících vlastností v rámci **HorizontalAlignment** v **rozložení** části okna vlastnosti: **Vlevo**, **Center**, **vpravo**, nebo **Stretch**.
 
-3.  Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **horní**, **Center**, **Dolní**, nebo **Stretch**.
+3.  Vyberte jednu z následujících vlastností v rámci **VerticalAlignment** v **rozložení** části okna vlastnosti: **Horní**, **Center**, **dolní**, nebo **Stretch**.
 
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>Chcete-li zarovnat dva nebo více prvků pomocí zarovnávacích čar
 

@@ -2,7 +2,6 @@
 title: Vypočítat metriky kódu
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855569"
 ---
 # <a name="code-metrics-values"></a>Hodnoty metrik kódu
 
@@ -24,7 +23,7 @@ Zvýšení složitosti moderních aplikací také zvyšuje obtížnost zobecněn
 
 Vývojářům můžete použít Visual Studio k vygenerování dat metrik kódu, který měření složitosti a udržovatelnosti spravovaného kódu. Daty metrik kódu je vygenerovat pro celé řešení nebo jednoho projektu.
 
-Informace o tom, jak vygenerování dat metrik kódu v sadě Visual Studio najdete v tématu [postupy: vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md).
+Informace o tom, jak vygenerování dat metrik kódu v sadě Visual Studio najdete v tématu [jak: Vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md).
 
 ## <a name="software-measurements"></a>Měření softwaru
 
@@ -57,5 +56,5 @@ Kód generovaný pro model Windows Forms není ignorována, protože je kód, kt
 
 ## <a name="next-steps"></a>Další kroky
 
-- [Postupy: vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Postupy: Vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)
 - [Použijte okno výsledků metrik kódu](../code-quality/working-with-code-metrics-data.md)

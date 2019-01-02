@@ -1,8 +1,6 @@
 ---
-title: marker_series::write_message – metoda | Microsoft Docs
-ms.custom: ''
+title: marker_series::write_message – metoda | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 03a99aa603dec83751a0254897ad9c6f40215016
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965600"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message – metoda
-Zapíše zprávu do Concurrency Visualizer trasovacího souboru.  
+Zapíše zprávu do souboru trasování vizualizátoru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,10 +49,10 @@ void write_message(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Složený formátovací řetězec, který obsahuje text smíšeného s nula nebo více položek formátu, odpovídajících objektů v seznamu argumentů.  
+ Složený řetězec formátu, který obsahuje textu smíšeného s nula nebo více položek formátu, který odpovídá objektům v seznamu argumentů.  
   
  `_Importance`  
- Úroveň význam.  
+ Úroveň důležitosti.  
   
  `_Category`  
  Category.Importance úroveň.  

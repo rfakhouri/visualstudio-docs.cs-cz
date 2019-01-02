@@ -1,9 +1,6 @@
 ---
 title: Vytvoření kategorie nastavení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935616"
 ---
 # <a name="create-a-settings-category"></a>Vytvoření kategorie nastavení
 
@@ -99,7 +96,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
 3.  V zobrazení stromu v levém podokně rozbalte **kategorie Mé** a potom klikněte na tlačítko **stránku mřížky**.
 
-4.  Změňte hodnotu vlastnosti **OptionFloat** k 3.1416 a **OptionInteger** do 12. Klikněte na tlačítko **OK**.
+4.  Změňte hodnotu vlastnosti **OptionFloat** k 3.1416 a **OptionInteger** do 12. Klikněte na **OK**.
 
 5.  Na **nástroje** nabídky, klikněte na tlačítko **nastavení importu a exportu**.
 
@@ -121,7 +118,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
      **Exportovat kompletní** stránku sestavy, nastavení bylo úspěšně exportováno.
 
-10. Na **souboru** nabídky, přejděte k **otevřít**a potom klikněte na tlačítko **souboru**. Vyhledejte *MySettings.vssettings* a otevřete ho.
+10. Na **souboru** nabídky, přejděte k **otevřít**a potom klikněte na tlačítko souboru. Vyhledejte *MySettings.vssettings* a otevřete ho.
 
      Můžete najít vlastnost kategorii, kterou jste exportovali v následující části souboru (vaše GUID se bude lišit).
 
@@ -140,7 +137,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
 11. Zavřete soubor nastavení bez provedení změn.
 
-12. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **kategorie Mé**, klikněte na tlačítko **stránku mřížky** a potom změňte hodnotu vlastnosti  **OptionFloat** 1.0 a **OptionInteger** na hodnotu 1. Klikněte na tlačítko **OK**.
+12. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **kategorie Mé**, klikněte na tlačítko **stránku mřížky** a potom změňte hodnotu vlastnosti  **OptionFloat** 1.0 a **OptionInteger** na hodnotu 1. Klikněte na **OK**.
 
 13. Na **nástroje** nabídky, klikněte na tlačítko **nastavení importu a exportu**vyberte **importovat vybrané nastavení prostředí**a potom klikněte na tlačítko **Další**.
 
@@ -150,7 +147,7 @@ Chcete-li spustit Tento názorný postup, musíte nejdřív dokončit první č�
 
      **Vybrat kolekce nastavení pro Import** se zobrazí stránka.
 
-15. Vyberte *MySettings.vssettings* soubor **má nastavení** uzlu ve stromovém zobrazení. Pokud soubor není uvedené ve stromovém zobrazení, klikněte na tlačítko **Procházet** a vyhledejte ho. Klikněte na tlačítko **Další**.
+15. Vyberte *MySettings.vssettings* soubor **má nastavení** uzlu ve stromovém zobrazení. Pokud soubor není uvedené ve stromovém zobrazení, klikněte na tlačítko **Procházet** a vyhledejte ho. Klikněte na **Další**.
 
      **Zvolte nastavení pro Import** zobrazí se dialogové okno.
 

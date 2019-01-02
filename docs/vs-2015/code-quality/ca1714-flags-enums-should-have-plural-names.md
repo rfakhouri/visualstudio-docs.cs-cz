@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bb2314b0cc0b12b56c7807bef5668e1c79a71cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bab18fcfdd7fdd5ecc030111dd0258171159b4b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961849"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Výčty příznaků by neměly mít názvy v množném čísle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +57,3 @@ ms.locfileid: "49830038"
 
 ## <a name="see-also"></a>Viz také
  <xref:System.FlagsAttribute?displayProperty=fullName> [Návrh výčtu](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-

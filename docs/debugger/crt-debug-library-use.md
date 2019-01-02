@@ -1,8 +1,6 @@
 ---
-title: Použití knihovny ladění CRT | Microsoft Docs
-ms.custom: ''
+title: Použití knihovny ladění CRT | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.debug.runtime
@@ -30,24 +28,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e550a5fa705f3c85b3464046cd3c92d96bc47ca
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 79f75cf227826ec0f9d35d9a7564bbdc25a3cd0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890901"
 ---
 # <a name="crt-debug-library-use"></a>Použití knihovny ladění CRT
-Běhové knihovny jazyka C poskytuje rozsáhlou podporu ladění. Pokud chcete používat jeden z knihovny ladění CRT, je nutné propojit s [/DEBUG](/cpp/build/reference/debug-generate-debug-info) a kompilaci s **/MDd**, **/MTd**, nebo **/LDd**.  
+Knihovny run-time jazyka C poskytuje rozsáhlou podporu ladění. Chcete-li použít jeden z knihovny ladění CRT, je nutné propojit s [/DEBUG](/cpp/build/reference/debug-generate-debug-info) a proveďte kompilaci s **/MDd**, **/MTD**, nebo **/LDd**.  
   
 ## <a name="remarks"></a>Poznámky  
- Hlavní definice a makra pro ladění CRT naleznete v crtdbg.h – soubor hlaviček.  
+ Hlavní definice a makra pro ladění CRT naleznete v hlavičkovém souboru CRTDBG.h.  
   
- Funkce knihovny ladění CRT jsou kompilovat s ladicími informacemi ([/Z7, /Zd, / zi, /ZI (formát informace ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format)) a bez optimalizace. Kontrolní výrazy ověření parametry, které se předávají do nich obsahovat některé funkce a zdrojový kód je k dispozici. S tímto kódem zdroj může krok do funkcí CRT potvrďte, že funkce fungují jako očekávat a kontrolovat chybné parametry nebo paměti stavy. (Některé technologie, CRT je proprietární a neposkytuje zdrojový kód pro zpracování výjimek plovoucí desetinné čárky a několik dalších rutiny.)  
+ Funkce knihovny ladění CRT jsou kompilovány s ladicími informacemi ([/Z7, / Zd, / zi, /ZI (formát informací o ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format)) a bez optimalizace. Některé funkce obsahovat výrazy ověřte parametry, které jsou předány na ně a zdrojový kód je k dispozici. Se tento zdrojový kód můžete krokovat s vnořením funkce CRT, funkce fungují podle očekávání a vyhledejte chybné parametry nebo paměti stavů potvrďte. (Některé technologie CRT je proprietární a neposkytuje zdrojový kód pro zpracování výjimek s plovoucí desetinnou čárkou a několik jiných rutin.)  
   
- Když instalujete Visual C++, máte možnost instalace zdrojový kód běhové knihovny jazyka C na pevném disku. Pokud nenainstalujete zdrojový kód, budete potřebovat pro krok do funkcí CRT disku CD-ROM.  
+ Když instalujete Visual C++, máte možnost instalace zdrojový kód knihovny run-time jazyka C na pevném disku. Pokud nenainstalujete zdrojový kód, budete potřebovat disk CD-ROM krokovat do funkce CRT.  
   
- Další informace o různých běhové knihovny můžete použít, najdete v části [běhové knihovny jazyka C](/cpp/c-runtime-library/crt-library-features).  
+ Další informace o různých běhových knihoven, které můžete použít, najdete v části [C Run-Time Libraries](/cpp/c-runtime-library/crt-library-features).  
   
 ## <a name="see-also"></a>Viz také  
  [Techniky ladění CRT](../debugger/crt-debugging-techniques.md)   

@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::CanSetNextStatement | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::CanSetNextStatement
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af14a59251aecf7e54d156d777db0f1d799348a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcb5ef43f30ca40454cde19a2afde229de6a9ea3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924433"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Určuje, zda aktuální ukazatel příkazu může být nastaven na daném zásobníku.  
@@ -28,14 +25,14 @@ Určuje, zda aktuální ukazatel příkazu může být nastaven na daném zásob
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT CanSetNextStatement (   
+HRESULT CanSetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
 ```csharp  
-int CanSetNextStatement (   
+int CanSetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  

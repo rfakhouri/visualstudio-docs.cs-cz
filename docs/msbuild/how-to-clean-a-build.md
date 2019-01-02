@@ -1,8 +1,6 @@
 ---
 title: 'Postupy: Vyčištění sestavení | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ddd4158561b0bac7ea3347738f13f0f9530002ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841129"
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 Při čištění sestavení se odstraní všechny pomocných a výstupních souborů, byste museli opustit jenom soubory projektu a součást. Ze souborů projektu a komponenty nových instancí přechodný a výstupních souborů může pak být sestavena. Knihovny běžných úloh, které je součástí [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje [Exec](../msbuild/exec-task.md) úkol, který můžete použít ke spuštění příkazů systému. Další informace o knihovně úkoly, naleznete v tématu [úkolů odkaz](../msbuild/msbuild-task-reference.md).  

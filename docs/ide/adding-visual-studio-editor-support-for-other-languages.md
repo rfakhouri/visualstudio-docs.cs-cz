@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79a6432da32733b5cdc45e9f191c866b7fce1c02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968307"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Přidání podpory editoru sady Visual Studio pro ostatní jazyky
 
@@ -84,7 +83,7 @@ Pod touto cestou základní přidáte následující složky, pokud se vztahují
 
 Ve Windows *% userprofile %* překládá na cestu: *c:\Users\\\<uživatelské jméno >*. Pokud složka rozšíření neexistuje ve vašem systému, musíte ji vytvořit. Pokud složka již existuje, bude skrytá.
 
-Podrobnosti o tom, jak vytvořit Gramatik TextMate najdete v tématu [TextMate – Úvod do jazyka gramatiky: Přidání zvýrazňování syntaxe kódu zdroje vložený ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit jazyk gramatiky a vlastní Motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+Podrobnosti o tom, jak vytvořit Gramatik TextMate najdete v tématu [TextMate – Úvod do jazyka gramatiky: Přidání zvýrazňování syntaxe kódu zdroje vložený ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit jazyk gramatiky a vlastní motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Viz také:
 

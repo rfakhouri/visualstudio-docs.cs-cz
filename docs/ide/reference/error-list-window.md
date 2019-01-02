@@ -2,7 +2,6 @@
 title: Okno Seznam chyb
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 50cc9a5198df29385519364455eda319b5aeae68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963868"
 ---
 # <a name="error-list-window"></a>Okno Seznam chyb
 
@@ -55,14 +54,14 @@ Existují dva typy filtru v dva rozevírací seznamy, jeden na pravé straně pa
 
 Můžete omezit rozsah hledání můžete analyzovat a zpracovat skupiny chyb. Například můžete chtít zaměřit na základní chyby, které brání kompilaci projektu. Možnosti vytváření oboru zahrnují:
 
-1.  **Otevřít dokumenty**: zobrazí chyby, varování a zprávy pro otevřené dokumenty.
+1.  **Otevřít dokumenty**: Zobrazit chyby, varování a zprávy pro otevřené dokumenty.
 
-2.  **Aktuální projekt**: zobrazí chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.
+2.  **Aktuální projekt**: Zobrazit chyby, varování a zprávy z aktuálně vybraného dokumentu v projektu **Editor** nebo vybraný projekt v **Průzkumníka řešení**.
 
     > [!NOTE]
     > Filtrovaný seznam chyb, upozornění a zpráv se změní, pokud je projekt aktuálně vybraného dokumentu liší od projektu vybraného v **Průzkumníka řešení**.
 
-3.  **Aktuální dokument**: zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.
+3.  **Aktuální dokument**: Zobrazí chyby, varování a zprávy pro aktuálně vybraného dokumentu v **Editor** nebo **Průzkumníka řešení**.
 
 Pokud na výsledek hledání je aktuálně použit filtr, zobrazí se název filtru v **seznam chyb** záhlaví okna. **Chyby**, **upozornění**, a **zprávy** tlačítka pak zobrazí počet filtrovaných položek zobrazených společně s celkový počtem položek. Například tlačítka zobrazit "x z y chyb". Pokud není použit žádný filtr, záhlaví říká pouze "Seznam chyb".
 
@@ -78,7 +77,7 @@ Můžete zkopírovat seznam chyb a uložte ho do souboru. Vyberte chyby, které 
 
 ## <a name="ui-element-list"></a>Seznam prvků uživatelského rozhraní
 
-Závažnost
+Severity
 
 Zobrazuje různé typy **seznam chyb** položku (**chyba**, **zpráva**, **upozornění**, **upozornění (aktivní)**, **Upozornění (neaktivní)**.
 

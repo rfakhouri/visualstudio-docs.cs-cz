@@ -1,8 +1,7 @@
 ---
-title: Zkontrolujte modelu obsahu uzlů v zobrazení obsahu modelu Návrhář schématu XML
+title: Prozkoumání modelu obsahu uzlů pomocí zobrazení modelu obsahu v Návrháři schémat XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: gewarren
@@ -10,37 +9,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: f698ab9c26b417c8f88a993863f50e0c3df574d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936097"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Postupy: Zkontrolujte modelu obsahu uzlů pomocí modelu zobrazení obsahu
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Postupy: Prozkoumání modelu obsahu uzlů pomocí zobrazení modelu obsahu
 
-Toto téma popisuje, jak prozkoumat pomocí uzlů [zobrazení obsahu modelu](../xml-tools/content-model-view.md).
+Toto téma popisuje, jak prozkoumat uzly pomocí [zobrazení modelu obsahu](../xml-tools/content-model-view.md).
 
-## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Vytvořte nový soubor XSD a zobrazte kořenový element v modelu zobrazení obsahu
+## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Vytvořte nový soubor XSD a zobrazte kořenový element v zobrazení modelu obsahu
 
 1.  Vytvořte nový soubor schématu XML.
 
-2.  Klikněte na tlačítko **pomocí editoru XML k zobrazení a úpravě podkladový soubor schématu XML** zobrazení spustit.
+2.  Klikněte na tlačítko **pomocí editoru XML k zobrazení a úpravě základního souboru schématu XML** na zobrazení spuštění.
 
-3.  Zkopírujte schématu XML ukázkový kód z [schématu ukázka XML: zakoupit pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md) a vložte jej nahradit kód, který byl přidán nový soubor XSD ve výchozím nastavení.
+3.  Zkopírujte ukázkový kód XML schéma z [ukázky XML schématu: nákupní pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md) a vložte ji nahradit kód, který byl přidán do nového souboru XSD ve výchozím nastavení.
 
-4.  Vyberte `purchaseOrder` element v Průzkumníku schématu kliknutím pravým tlačítkem myši `purchaseOrder` element v editoru XML a výběrem **zobrazit v Průzkumníku XML**.
+4.  Vyberte `purchaseOrder` element ve schématu Explorer kliknutím pravým tlačítkem myši `purchaseOrder` element v editoru XML a vyberete **zobrazit v Průzkumníkovi XML**.
 
-5.  Klikněte pravým tlačítkem myši `purchaseOrder` v Průzkumníku XML a vyberte **zobrazit v zobrazení obsahu modelu**.
+5.  Klikněte pravým tlačítkem myši `purchaseOrder` v Průzkumníku XML a vyberte **zobrazit v zobrazení modelu obsahu**.
 
-     Zobrazí zobrazení obsahu modelu `purchaseOrder` elementu na jeho návrhovou plochu.
+     Zobrazení modelu obsahu se zobrazí `purchaseOrder` prvek na jeho návrhovou plochu.
 
-6.  Rozbalte `shipTo`, `billTo`, a `items` uzlů poklepáním na každém uzlu nebo kliknutím na dvojitou šipku napravo od každého uzlu.
+6.  Rozbalte `shipTo`, `billTo`, a `items` uzlů poklepáním na každém uzlu nebo kliknutím na dvojitou šipku vpravo od každého uzlu.
 
-     Uzly `purchaseOrder` element jsou nyní rozšířit a zobrazí se model obsahu elementu.
+     Uzly `purchaseOrder` prvek nyní rozbaleny a zobrazí se model obsahu prvku.
 
-7.  Klikněte na libovolný uzel v rámci `purchaseOrder` elementu a podívejte se na navigačního panelu zobrazit, kde v sadě schématu vybraný uzel nachází.
+7.  Klikněte na libovolný uzel v rámci `purchaseOrder` elementu a podívejte se na panelu s popisem cesty chcete zobrazit, kde v sadě schémat vybraný uzel se nachází.
 
-8.  Klikněte **zobrazit dokumentaci** tlačítka na panelu nástrojů XSD k přepnutí jejich. Klikněte pravým tlačítkem na návrhovou plochu k přepnutí v dokumentaci.
+8.  Klikněte na tlačítko **zobrazit dokumentaci** tlačítko na panelu nástrojů XSD, chcete-li přepnout jejich. Klikněte pravým tlačítkem na návrhové ploše, chcete-li přepnout v dokumentaci.
 
-9. Rick kliknutím `purchaseOrder` uzel a vyberte možnost **Generovat XML ukázka** zobrazíte instance dokumentu XML.
+9. Rick kliknutím `purchaseOrder` uzel a vyberte možnost **generovat ukázkové XML** zobrazíte instance dokumentu XML.

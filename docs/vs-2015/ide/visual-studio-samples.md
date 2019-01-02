@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 27a77e7983515c1cb61987ede03a202a50e9f88a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c604684fea431d29c76098a77218e36a63fc770f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936565"
 ---
 # <a name="visual-studio-samples"></a>Ukázky sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +42,7 @@ Ukázky sady Visual Studio můžete najít na [galerie kódů MSDN](http://go.mi
 |[Ukázky jazyka JavaScript](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|Ukazuje, jak používat různé funkce v jazyce JavaScript.|
 |[C++ – ukázky](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Ukazuje, jak používat různé funkce v jazyce C++.|
 |[Ukázky rozhraní DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Ukazuje, jak použít rozhraní DirectX.|
-|[Ukázky vývoje pro systém Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Ukazuje, jak používat vývojářské nástroje pro Office v sadě Visual Studio. Aktuální ukázky najdete v tématu [MSDN Developer Samples: Učte se prostřednictvím kódu](http://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Ukázky vývoje pro systém Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Ukazuje, jak používat vývojářské nástroje pro Office v sadě Visual Studio. Aktuální ukázky najdete v tématu [MSDN Developer Samples: Učení prostřednictvím kódu](http://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Ukázky VSSDK](http://aka.ms/vs2015sdksamples)|Ukazuje, jak rozšíření sady Visual Studio.|
 
 ## <a name="see-also"></a>Viz také

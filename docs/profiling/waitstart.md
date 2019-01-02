@@ -1,8 +1,6 @@
 ---
-title: WaitStart | Microsoft Docs
-ms.custom: ''
+title: WaitStart | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
 author: mikejo5000
@@ -10,17 +8,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 059f05d25f1882cd857dd1e39ea40a58a7c5e1d3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 17e4b8a2aac1ae2eac20fb7579977df66ee9caa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937998"
 ---
 # <a name="waitstart"></a>WaitStart
-Příčiny možnost WaitStart *VSPerfCmd.exe* počáteční dílčí příkaz vrátí jenom v případě, že byla inicializována profileru nebo po zadaném počtu sekund byla úspěšná. Ve výchozím nastavení vrátí příkaz ke spuštění okamžitě. Pokud nebyl zadán profileru vrátí dílčí příkaz ke spuštění, je vrácena chyba. Pokud není zadaný počet sekund, příkaz ke spuštění čeká neomezenou dobu zaseknout.  
+Možnost příčiny WaitStart *VSPerfCmd.exe* Start dílčí příkaz, který vrátí pouze v případě, že profiler byl inicializován nebo po uplynutí zadaném počtu sekund. Ve výchozím nastavení, Start příkaz vrátí hodnotu okamžitě. Vrátí dílčí příkaz Start bez inicializace okna profilování, vrátí se chyba. Pokud není zadaný počet sekund, po neomezenou dobu čeká příkazu Start.  
   
- Možnost WaitStart je užitečná v dávkových souborech zajistit, že tento profileru byl inicializován.  
+ WaitStart možnost je užitečná v dávkových souborech a zajistit, že profiler byl inicializován.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,10 +28,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
   
 #### <a name="parameters"></a>Parametry  
  `Seconds`  
- Počet sekund pro čekání před návratem od dílčí příkaz ke spuštění.  
+ Počet sekund čekání před návratem z dílčích příkazu Start.  
   
 ## <a name="required-options"></a>Požadované možnosti  
- Možnost WaitStart lze použít pouze s dílčí příkaz ke spuštění.  
+ Možnost WaitStart jde použít jenom s dílčího příkazu Start.  
   
  **Výstup:** `filename`  
  Určuje název výstupního souboru.  
@@ -41,7 +39,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="example"></a>Příklad  
- V tomto příkladu souboru batch příkaz ke spuštění bude počkejte 5 sekund kvůli profileru k chybě při inicializaci.  
+ V tomto příkladu soubor batch příkazu Start. Počkejte 5 sekund kvůli na inicializaci profileru.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5  

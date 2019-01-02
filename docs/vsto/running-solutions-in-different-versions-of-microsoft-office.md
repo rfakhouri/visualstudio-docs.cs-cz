@@ -1,9 +1,6 @@
 ---
 title: Spouštění řešení v různých verzích systému Microsoft Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed8a9b7cc78b0605b7fcc3931a7ee8992360125b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843395"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Spouštění řešení v různých verzích systému Microsoft Office
     
@@ -61,8 +58,6 @@ ms.locfileid: "35675724"
 ## <a name="see-also"></a>Viz také:  
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio Tools for Office runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
-  
-  

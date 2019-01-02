@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Změna velikosti ovládacích prvků záložek'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942436"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Postupy: Změna velikosti ovládacích prvků záložek
   Nastavte velikost <xref:Microsoft.Office.Tools.Word.Bookmark> řídit, kdy je přidat do dokumentu aplikace Microsoft Office Word. Můžete také změnit velikost ji později.  
@@ -42,7 +39,7 @@ ms.locfileid: "49924834"
   
    To je užitečné, pokud je zásadní změnu velikosti či umístění záložku.  
   
-  Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu v době návrhu nebo v době běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [postupy: Přidání Záložka ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do dokumentu v projektu v době návrhu nebo v době běhu. Projekty doplňků VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků do libovolného otevřeného dokumentu za běhu. Další informace najdete v tématu [jak: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -97,5 +94,3 @@ ms.locfileid: "49924834"
  [Postupy: Změna velikosti ovládacích prvků NamedRange](../vsto/how-to-resize-namedrange-controls.md)   
  [Postupy: Změna velikosti ovládacích prvků ListObject](../vsto/how-to-resize-listobject-controls.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

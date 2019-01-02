@@ -1,8 +1,6 @@
 ---
 title: 'Postupy: Úprava hodnoty registru | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: a84cd75dd6ae6ecd2e62bd41ed384cd03305bbf0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963446"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Postupy: Úprava hodnoty registru (C#, C++, Visual Basic, F#)
 
@@ -45,4 +43,4 @@ Okno registrů je k dispozici pouze v případě, že je povoleno ladění úrov
     >  Úpravy hodnot s plovoucí desetinnou čárkou mohou díky převodu komponenty zlomku z desítkové do binární soustavy způsobit drobné nepřesnosti. I zdánlivě neškodné úpravy mohou způsobit změny některých nejméně významných bitů v registru s plovoucí desetinnou čárkou.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)
+ [Postupy: Použití okna registry](../debugger/how-to-use-the-registers-window.md)

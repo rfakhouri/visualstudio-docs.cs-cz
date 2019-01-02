@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ac8f1c1d631e4d5f682fea5e1841e3914241d14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 78a737c953446773c8788875d1924ce21f64f599
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964702"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Vytvoření Offline instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +68,7 @@ Tato stránka popisuje postup instalace sady Visual Studio 2015, když nejsou p�
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nástroj Dotfuscator a Analytics Community Edition 5.19.1 (pro edice Community, Professional a Enterprise sady Visual Studio, jako nainstalovanou v **Windows 7 SP1** a **systému Windows Server 2008 R2**) |                                                                                                                                       Pokud je offline počítač spuštěný **Windows 7 SP1** nebo **systému Windows Server 2008 R2**, musíte provést následující kroky před instalací sady Visual Studio 2015:<br /><br /> 1.  Nakonfigurujte souborový nebo webový server pro stahování seznamů CTL.<br /><br /> 2.    Přesměrujte Microsoft URL adresy automatických aktualizací pro odpojené prostředí.<br /><br /> Další informace najdete v tématu [konfigurovat Důvěryhodné kořeny a zakázané certifikáty](https://technet.microsoft.com/library/dn265983.aspx) stránky na webu Microsoft TechNet.                                                                                                                                       |
 |                                                                                  Instalace sady Android SDK (úroveň rozhraní API)                                                                                   |                                                                        Musíte mít internetové připojení k instalaci balíčků sady Android SDK (úroveň rozhraní API). Pokud jste v síti s omezeným přístupem, musí umožňovat přístup k následujícím adresám URL, když instalujete Visual Studio:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Další informace o tom, jak vyřešit možné problémy s nastavením proxy serveru, najdete v článku [selháním (instalace sady Android SDK) za proxy serverem instalace sady Visual Studio 2015](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) blogový příspěvek.                                                                         |
-|                             Šablony pro rozšiřující položky sady Visual Studio<br /><br /> Rozšíření GitHub pro Visual Studio<br /><br /> Nástroje Powershellu pro Visual Studio                             | Pokud nemáte připojení k Internetu při instalaci sady Visual Studio 2015, můžete použít speciální offline kanál ke generování rozložení pro offline instalaci. **Poznámka:** tento speciální kanál obsahuje nejnovější aktualizace pro sadu Visual Studio 2015. <br /><br /> Vytvořte offline kanál speciální, spusťte následující příkaz: / Layout *jednotka:* \VisualStudio2015 /overridefeeduri *adresu URL pro informační kanál xml*<br /><br /> Například pro anglickou speciální offline kanál sady Visual Studio 2015 Enterprise, spusťte tento příkaz:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Úplný seznam adres URL, které můžete použít k vytvoření speciální offline kanálu v jazyce podle vašeho výběru najdete v následující tabulce. |
+|                             Šablony pro rozšiřující položky sady Visual Studio<br /><br /> Rozšíření GitHub pro Visual Studio<br /><br /> Nástroje Powershellu pro Visual Studio                             | Pokud nemáte připojení k Internetu při instalaci sady Visual Studio 2015, můžete použít speciální offline kanál ke generování rozložení pro offline instalaci. **Poznámka:**  Tento speciální kanál obsahuje nejnovější aktualizace pro sadu Visual Studio 2015. <br /><br /> Vytvořte offline kanál speciální, spusťte následující příkaz: / Layout *jednotka:* \VisualStudio2015 /overridefeeduri *adresu URL pro informační kanál xml*<br /><br /> Například pro anglickou speciální offline kanál sady Visual Studio 2015 Enterprise, spusťte tento příkaz:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Úplný seznam adres URL, které můžete použít k vytvoření speciální offline kanálu v jazyce podle vašeho výběru najdete v následující tabulce. |
 
  Pomocí následující adresy URL vytvoření specifické pro jazyk speciální offline informačního kanálu, jak je popsáno v předchozí tabulce.
 

@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder | Microsoft Docs
-ms.custom: ''
+title: IDebugTypeFieldBuilder | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962072"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-Představuje schopnost vytvářet pole, které představuje typ.  
+Představuje možnost vytvořit pole, které představuje typ.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,19 +27,19 @@ IDebugTypeFieldBuilder : IUnknown
 ```  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je získat od poskytovatele symbol.  
+ Toto rozhraní se získávají z poskytovatel symbolů.  
   
 ## <a name="methods"></a>Metody  
  Toto rozhraní implementuje následujících metod:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Vytvoří objekt, který reprezentuje primitivní typ.|  
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Vytvoří ukazatel na zadaný typ.|  
+|[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|Vytvoří objekt, který představuje primitivního typu.|  
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|Vytvoří ukazatel na zadaného typu.|  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Sh.h  
+ Záhlaví: SH.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

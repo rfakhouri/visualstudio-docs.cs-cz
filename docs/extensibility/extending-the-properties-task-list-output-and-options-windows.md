@@ -1,9 +1,6 @@
 ---
 title: Rozšíření vlastností, seznamu úloh, výstup a možnosti Windows | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922322"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozšíření vlastností, seznamu úkolů, výstupu a možnosti systému windows
 Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento návod ukazuje, jak integrovat informace o vaší panelu nástrojů do nového **možnosti** stránky a nové nastavení na **vlastnosti** stránky a také způsob zápisu do **seznamu úkolů** a **výstup** systému windows.  
@@ -481,7 +478,7 @@ Jakékoli okno nástroje v sadě Visual Studio můžete přistupovat. Tento náv
     }  
     ```  
   
-## <a name="try-it-out"></a>Vyzkoušejte si to  
+## <a name="try-it-out"></a>Vyzkoušet  
   
 1.  Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.  
   

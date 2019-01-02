@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960019"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky) nabízí několik úrovní, ve kterém můžete definovat nástrojů pro modelování:
@@ -57,13 +56,13 @@ Visual Studio modelování a vmsdk následující (sada SDK vizualizace položky
 |Zachovat obrazce rozložení a vzhled na kopírování a přetažení.|Přidání obrazců a konektorů k zkopírovaný `ElementGroupPrototype`. Je nejvhodnější metodu pro přepsání `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Zobrazit [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|
 |Vkládání obrazců do zvoleného umístění, jako je aktuální pozice kurzoru.|Přepsat `ClipboardCommandSet.ProcessOnCopy()` použije umístění konkrétní verzi `ElementOperations.Merge().` naleznete v tématu [přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md).|
 |Vytvoření další odkazy na vložení|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|Povolit přetažení z diagramu, jiné DSL a Windows elementy|Zobrazit [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Povolit přetažení z diagramu, jiné DSL a Windows elementy|Zobrazit [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Povolit tvar nebo nástroj přetahovat do podřízené obrazce, jako je port, jako kdyby byly přetahovat do nadřazené.|Definujte direktiva sloučení elementů na cílovou třídu objektu, předat přetažený objekt Nadřazený. Zobrazit [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).|
 |Povolit nástroj přetáhnout na obrazec a další odkazy tvaru nebo nebo objekty vytvořené. Chcete-li například povolit komentář, který má být přetaženy položku, ke kterému se chcete propojit.|Definování direktiva sloučení elementů ve třídě cílové domény a definování odkazů, které chcete vygenerovat. Ve složitých případech můžete přidat vlastní kód. Zobrazit [přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md).|
 |Vytvořte skupinu prvky pomocí jednoho nástroje. Například komponenta s pevnou sadu portů.|Potlačí metodu inicializace sady nástrojů v ToolboxHelper.cs. Vytvoření prvek skupiny prototypu (EGP) obsahující prvky a jejich vztahů odkazů. Zobrazit [přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Zahrnout obrazce instančního objektu a port EGP nebo definovat BoundsRules umístit obrazce portu při vytváření instance EGP. Zobrazit [umístění a velikost obrazce omezení BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md).|
 |Použijte jeden nástroj pro připojení k vytvoření instance několik typů vztahu.|Přidání direktivy odkazu připojení (LCD) do Tvůrce připojení, který je vyvolán nástroj. Monitorů LCD určit typ vztahu z typů dvou prvků. Chcete-li to závisí na stavy prvků, můžete přidat vlastní kód. Zobrazit [přizpůsobení nástrojů a panelu nástrojů](../modeling/customizing-tools-and-the-toolbox.md).|
 |Rychlé nástroje – uživateli můžete dvakrát kliknout na libovolný nástroj k vytvoření mnoha tvary a konektory v daný okamžik.|Průzkumník modelu DSL, vyberte `Editor` uzlu. V okně Vlastnosti nastavte **používá jako vždy navrchu položky panelu nástrojů**.|
-|Definujte příkazy nabídky|Zobrazit [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Definujte příkazy nabídky|Zobrazit [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Omezit model s ověřovací pravidla|Zobrazit [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md)|
 |Generování kódu, konfigurační soubory nebo dokumenty ze DSL.|[Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Vlastní nastavení jak modely se ukládají do souboru.|Zobrazit [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

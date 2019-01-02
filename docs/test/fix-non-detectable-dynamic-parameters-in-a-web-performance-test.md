@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 54f0b23da975738cf1dd33e03ef577efbfc2be38
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1639128be249c6ca91b611819a8a09394fad499d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848477"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu
 
@@ -239,7 +238,7 @@ Abychom si předvedli zjistitelný a nezjistitelný dynamický parametr, vytvoř
 
      ![Pomocí parametru nahradit text](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Parametr QueryString *JScriptQuery.aspx* požadavku se aktualizuje s použitím nového parametru kontextu: CustomQueryString = jScriptQueryString___ {{Param0}}.
+     Parametr QueryString *JScriptQuery.aspx* požadavku se aktualizuje s použitím nového parametru kontextu:  CustomQueryString = jScriptQueryString___ {{Param0}}.
 
      ![Parametr použitý pro řetězce dotazu](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -251,9 +250,9 @@ Abychom si předvedli zjistitelný a nezjistitelný dynamický parametr, vytvoř
 
 ## <a name="qa"></a>FUNKCE Q &AMP; A
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Otázka: Mohu znovu spustit zjišťování dynamického parametru Pokud Moje webové aplikace upraveny?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>DOTAZ: Mohu znovu spustit zjišťování dynamického parametru Pokud Moje webové aplikace upraveny?
 
- **Odpověď:** Ano, použijte následující postup:
+ **ODPOVĚĎ:** Ano, použijte následující postup:
 
 1.  Na panelu nástrojů položku **povýšit dynamické parametry na parametry webového testu** tlačítko.
 
@@ -265,6 +264,6 @@ Abychom si předvedli zjistitelný a nezjistitelný dynamický parametr, vytvoř
 
 2.  Zaškrtněte nebo zrušte zaškrtnutí políčka u dynamických parametrů, které chcete automaticky sladit. Ve výchozím nastavení zkontrolují se všechny dynamické parametry.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Dotaz: Potřebuji konfigurovat Visual Studio ke zjištění dynamických parametrů?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>DOTAZ: Je potřeba nakonfigurovat aplikaci Visual Studio ke zjištění dynamických parametrů?
 
- **Odpověď:** výchozí konfigurace sady Visual Studio je k rozpoznání dynamických parametrů při záznamu testu výkonnosti webu. Ale pokud máte nakonfigurovat možnosti aplikace Visual Studio není k rozpoznání dynamických parametrů, nebo testovaná webová aplikace byla změněna dalšími dynamickými parametry; můžete spustit zjišťování dynamického parametru z editoru testu výkonnosti webu.
+ **ODPOVĚĎ:** Výchozí konfigurace sady Visual Studio je k rozpoznání dynamických parametrů při záznamu testu výkonnosti webu. Ale pokud máte nakonfigurovat možnosti aplikace Visual Studio není k rozpoznání dynamických parametrů, nebo testovaná webová aplikace byla změněna dalšími dynamickými parametry; můžete spustit zjišťování dynamického parametru z editoru testu výkonnosti webu.

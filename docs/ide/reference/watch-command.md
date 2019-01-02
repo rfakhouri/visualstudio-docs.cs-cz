@@ -2,7 +2,6 @@
 title: Kukátko – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.watch
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ccc9c6af2a87502c2b651e91f7d935ffc7ae3474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964478"
 ---
 # <a name="watch-command"></a>Kukátko – příkaz
-Vytvoří a otevře zadanou instanci systému **sledovat** okno. Můžete použít **sledovat** okno k výpočtu hodnot proměnných, výrazy a registrů, chcete-li upravit tyto hodnoty a uložte výsledky.
+Vytvoří a otevře zadanou instanci **Watch** okna. Můžete použít **Watch** okna k výpočtu hodnoty proměnných, výrazů a registry, chcete-li tyto hodnoty upravit a uložit výsledky.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,7 +33,7 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Arguments
  `index`
 
- Požadováno. Číslo instance okně Sledování.
+ Povinný parametr. Číslo instance okna kukátka.
 
 ## <a name="remarks"></a>Poznámky
  `index` Musí být celé číslo. Platné hodnoty jsou 1, 2, 3 nebo 4.
@@ -47,9 +46,9 @@ Debug.Watch[index]
 
 ## <a name="see-also"></a>Viz také
 
-- [Automatické hodnoty a místní hodnoty – Windows](../../debugger/autos-and-locals-windows.md)
-- [Nastavovat sledování na proměnné pomocí sledování a QuickWatch Windows v sadě Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
+- [Okna automatických a místních hodnot](../../debugger/autos-and-locals-windows.md)
+- [Nastavení sledování u proměnných pomocí kukátko a Rychlé kukátko Windows v sadě Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

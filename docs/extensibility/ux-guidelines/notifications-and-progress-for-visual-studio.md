@@ -1,9 +1,6 @@
 ---
 title: Oznámení a postup pro Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942668"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Oznámení a postup pro Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Systémy oznámení  
@@ -50,8 +47,8 @@ ms.locfileid: "48863946"
 |[Indikátory průběhu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|Použijte, pokud potřebujete informace o průběhu (determinate nebo neurčitý). Existuje řada různých typů indikátor průběhu a pro každou konkrétní použití. Zobrazit [indikátory průběhu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators).||  
 |[Okno Visual Studio oznámení](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|Okno oznámení není veřejně rozšiřitelný. Však se používá ke komunikaci se širokou škálou zprávy o sadě Visual Studio, včetně kritických problémů s licencí a informační upozornění na aktualizace sady Visual Studio nebo k balíčkům.|Nepoužívejte pro další typy oznámení.|  
 |[Seznam chyb](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|Pokud se problém týká přímo uživatele se vyskytl problém (Chyba/upozornění a informace) aktuálně otevřené řešení, může být nutné provést určitou akci u kódu.<br /><br /> To zahrnuje, například:<br /><br /> -Kompilátoru zpráv (Chyba/upozornění a informace)<br /><br /> -Code Analyzer, diagnostické zprávy o kódu<br /><br /> -Vytvoření zprávy<br /><br /> Může být vhodné pro problémy týkající se soubory projektu nebo řešení, ale nejprve zvažte uvedení Průzkumníku řešení.|Nepoužívejte pro položky, které nemají žádné relace uživatele kódu otevřeného řešení.|  
-|Oznámení editoru: žárovky|Použijte, když máte k dispozici k nápravě problému, který existuje v otevřeném souboru opravu.<br /><br /> Mějte na paměti, že žárovky by měl také použít k hostování rychlé akce, které jsou provedeny v kódu uživatele na vyžádání, jako je refaktoring, ale v takovém případě se už nebude "oznámení style."|Nepoužívejte pro položky, které nemají žádné relace na otevřený soubor.|  
-|Oznámení editoru: podtržení vlnovkou|Použijte k upozornění uživatele na problém s konkrétní rozsah jejich otevřete kód (například červenou vlnovkou u chyb).|Nepoužívejte pro položky, které nesouvisí se konkrétní rozsah jejich otevřete kód.|  
+|Oznámení editoru: Žárovka|Použijte, když máte k dispozici k nápravě problému, který existuje v otevřeném souboru opravu.<br /><br /> Mějte na paměti, že žárovky by měl také použít k hostování rychlé akce, které jsou provedeny v kódu uživatele na vyžádání, jako je refaktoring, ale v takovém případě se už nebude "oznámení style."|Nepoužívejte pro položky, které nemají žádné relace na otevřený soubor.|  
+|Oznámení editoru: Podtržení vlnovkou|Použijte k upozornění uživatele na problém s konkrétní rozsah jejich otevřete kód (například červenou vlnovkou u chyb).|Nepoužívejte pro položky, které nesouvisí se konkrétní rozsah jejich otevřete kód.|  
 |[Vložený stavové řádky](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|Slouží k zadání stavu týkající se obsahu nebo procesu v rámci kontextu okna konkrétní nástroje, okno dokumentu nebo dialogového okna.|Nepoužívejte pro obecnou oznámení, procesy nebo položky, které nemají žádnou relaci k obsahu v rámci konkrétní okno.|  
 |[Oznámení na hlavním panelu Windows](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|Slouží k poskytování oznámení pro procesy v režimu out-of-proc nebo doprovodné aplikace.|Nepoužívejte pro oznámení, která jsou relevantní pro rozhraní IDE.|  
 |[Bubliny oznámení](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|Upozorňovat na vzdálený proces nebo změnit **mimo** rozhraní IDE.|Nepoužívejte jako prostředek pro upozornění uživatele procesy **v rámci** integrovaného vývojového prostředí.|  
@@ -250,7 +247,7 @@ ms.locfileid: "48863946"
   
  ![Zasílání zpráv průběhu vložené](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903 09_InlineText")  
   
- **Vložený text Průzkumníka serveru: aktualizace...**  
+ **Server Explorer vložený text: Probíhá aktualizace...**  
   
 ##### <a name="tool-windows"></a>Nástroje systému windows  
  Globální průběh údaj představuje indikátor neurčitého průběhu umístěna přímo pod panelu nástrojů.  
@@ -259,7 +256,7 @@ ms.locfileid: "48863946"
   
  **Team Explorer globální neurčitého průběhu panelu**  
   
-##### <a name="dialogs"></a>Dialogová okna  
+##### <a name="dialogs"></a>Dialogy  
  Dialogová okna může obsahovat jakýkoli z typů zavaděč průběh. Indikátory průběhu můžou být párována s zasílání zpráv i v kombinaci s více úrovněmi indikaci průběhu představují detailní a dílčí procesy.  
   
  ![Dialogové okno s více typy indikátor průběhu](../../extensibility/ux-guidelines/media/0903-11_dialog.png "0903 11_Dialog")  
@@ -329,13 +326,13 @@ ms.locfileid: "48863946"
 ### <a name="creating-an-infobar"></a>Vytvoření informačního panelu  
  Informační panel obsahuje čtyři oddíly, zleva doprava:  
   
--   **Ikona:** to je, kde můžete přidávat libovolnou ikonu se má zobrazit pro informační panel, jako je například ikona upozornění.  
+-   **Ikona:** To je, kde můžete přidávat libovolnou ikonu se má zobrazit pro informační panel, jako je například ikona upozornění.  
   
--   **Text:** přidat, je text k popisu uživatelské scénáře nebo situace, spolu s odkazy v rámci textu, podle potřeby. Nezapomeňte si zachovat stručné text.  
+-   **Text:** Můžete přidat text popisující uživatelské scénáře nebo situace, se společně s odkazy v rámci textu, podle potřeby. Nezapomeňte si zachovat stručné text.  
   
--   **Akce:** tento oddíl by měl obsahovat odkazy a tlačítka pro akce, které uživateli umožňuje pořizovat vaše informačním panelu.  
+-   **Akce:** Tento oddíl by měl obsahovat odkazy a tlačítka pro akce, které uživateli umožňuje pořizovat vaše informačním panelu.  
   
--   **Tlačítko Zavřít:** poslední část vpravo může mít tlačítko pro uzavření.  
+-   **Tlačítko Zavřít:** Poslední část vpravo může mít tlačítko pro uzavření.  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>Vytváření standardních informační panel ve spravovaném kódu  
  Třída InfoBarModel slouží k vytvoření zdroje dat pro informačního panelu. Použijte jednu z těchto čtyř konstruktory:  

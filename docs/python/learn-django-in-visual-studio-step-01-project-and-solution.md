@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, ukázka podporu sady Visual Studio nabízí pro vývoj Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce92fa303da56b72c1c5bd7b9f2c11be0e542ed3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941096"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -52,7 +51,7 @@ Projekt sady Visual Studio, pro jeho část může obsahovat projektu Django spo
 
 V průběhu tohoto kurzu vytvoříte jeden řešení sady Visual Studio, který obsahuje tři samostatné projekty Django, z nichž každý obsahuje jednu aplikaci Django. Udržováním projekty ve stejném řešení, lze snadno přepínat vpřed a zpět mezi různé soubory pro porovnání.
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: vytvoření projektu sady Visual Studio a řešení
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Krok 1-1: Vytvoření projektu sady Visual Studio a řešení
 
 Při práci s Django z příkazového řádku, obvykle spusťte projekt spuštěním `django-admin startproject <project_name>` příkazu. V sadě Visual Studio pomocí šablony "Prázdné Django webového projektu" poskytuje stejnou strukturu v rámci řešení a projektu sady Visual Studio.
 
@@ -66,8 +65,8 @@ Při práci s Django z příkazového řádku, obvykle spusťte projekt spuště
     - **Umístění**: určení umístění, ve kterém chcete vytvořit řešení sady Visual Studio a projekt.
     - **Řešení**: ponechte tento ovládací prvek nastavit na výchozí **vytvořit nové řešení** možnost.
     - **Název řešení**: nastavte na **LearningDjango**, která je vhodná pro řešení jako kontejner pro více projektů v tomto kurzu.
-    - **Vytvořit adresář pro řešení**: ponechejte nastavenou (výchozí).
-    - **Vytvoření nového úložiště Git**: tuto možnost použijte (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio 2017 a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
+    - **Vytvořit adresář pro řešení**: Ponechte nastavení (výchozí).
+    - **Vytvoření nového úložiště Git**: Tuto možnost (což je vymazat ve výchozím nastavení) tak, aby Visual Studio vytvoří místní úložiště Git, při vytváření řešení. Pokud nevidíte tuto možnost, spusťte instalační program sady Visual Studio 2017 a přidejte **Git pro Windows** a **rozšíření GitHub pro Visual Studio** na **jednotlivé komponenty** kartu v části **kódu nástroje**.
 
 1. Za okamžik, Visual Studio zobrazí dialogové okno o tom, že **tento projekt vyžaduje externí balíčky** (viz dole). Tento dialog se zobrazuje, protože obsahuje šablony *souboru requirements.txt* souboru odkazující na nejnovější balíček 1.x Django. (Vyberte **zobrazit požadované balíčky** zobrazíte přesné závislosti.)
 
@@ -75,7 +74,7 @@ Při práci s Django z příkazového řádku, obvykle spusťte projekt spuště
 
 1. Vyberte možnost **nainstaluji je sám**. Můžete vytvořit virtuální prostředí krátce a ujistěte se, že je vyloučena ze správy zdrojového kódu. (Prostředí vždy možné vytvářet z *souboru requirements.txt*.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1 – 2: Zkontrolujte ovládací prvky Git a publikujte do vzdáleného úložiště
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Krok 1 – 2: Prozkoumejte ovládací prvky Git a publikujte do vzdáleného úložiště
 
 Protože jste vybrali **vytvořit nové úložiště Git** v **nový projekt** dialogového okna, projekt již byla potvrzena do místní správy zdrojového kódu ihned poté, co byl dokončen proces vytváření. V tomto kroku měli seznámit s ovládacími prvky Git sady Visual Studio a **Team Exploreru** okno, ve kterém pracujete se správou zdrojového kódu.
 
@@ -111,15 +110,15 @@ Protože jste vybrali **vytvořit nové úložiště Git** v **nový projekt** d
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Otázka: Jaké jsou některé výhody použití správy zdrojového kódu od začátku projektu?
 
-Odpověď: Za prvé, od samého začátku pomocí správy zdrojového kódu, zejména pokud používáte vzdálené úložiště, poskytuje zálohování mimo pracoviště regulární vašeho projektu. Na rozdíl od jenom na údržbu projektu místního systému souborů, správy zdrojového kódu také poskytuje kompletní změnu historie a snadno možnost obnovit jeden soubor nebo celého projektu do předchozího stavu. Který historii změn pomáhá určit, proč regrese (neúspěšné testy). Kromě toho je nezbytné, najde víc lidí práci na projektu, jak spravuje přepíše a poskytuje řešení konfliktů správy zdrojového kódu. A konečně správy zdrojového kódu, který je v podstatě formu automatizace, nastaví je dobře pro automatizaci sestavení, testování a produktu release management. Ve skutečnosti je prvním krokem při používání DevOps pro projekt, a protože překážky položky jsou tak nízké, ve skutečnosti neexistuje žádný důvod není použití správy zdrojového kódu od začátku.
+Odpověď: Za prvé od samého začátku pomocí správy zdrojového kódu, zejména pokud používáte vzdálené úložiště, poskytuje zálohování mimo pracoviště regulární vašeho projektu. Na rozdíl od jenom na údržbu projektu místního systému souborů, správy zdrojového kódu také poskytuje kompletní změnu historie a snadno možnost obnovit jeden soubor nebo celého projektu do předchozího stavu. Který historii změn pomáhá určit, proč regrese (neúspěšné testy). Kromě toho je nezbytné, najde víc lidí práci na projektu, jak spravuje přepíše a poskytuje řešení konfliktů správy zdrojového kódu. A konečně správy zdrojového kódu, který je v podstatě formu automatizace, nastaví je dobře pro automatizaci sestavení, testování a produktu release management. Ve skutečnosti je prvním krokem při používání DevOps pro projekt, a protože překážky položky jsou tak nízké, ve skutečnosti neexistuje žádný důvod není použití správy zdrojového kódu od začátku.
 
-Další informace o správy zdrojového kódu jako automatizaci, naleznete v tématu [zdroj pravdy: z úložišť Role v DevOps](https://msdn.microsoft.com/magazine/mt763232), článek v MSDN Magazine napsané pro mobilní aplikace, které platí také pro webové aplikace.
+Další informace o správy zdrojového kódu jako automatizaci, naleznete v tématu [zdroje informací: Role úložišť v DevOps](https://msdn.microsoft.com/magazine/mt763232), článek v MSDN Magazine napsané pro mobilní aplikace, které platí také pro webové aplikace.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Otázka: Můžu zabránit v sadě Visual Studio automaticky potvrzení nového projektu?
 
 Odpověď: Ano. Chcete-li zakázat režim automatického potvrzení, přejděte na **nastavení** stránku **Průzkumník týmových projektů**vyberte **Git** > **globální nastavení**, zrušte zaškrtnutí políčka možnost s názvem **potvrzení změn po sloučení standardně**a pak vyberte **aktualizace**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1 – 3: vytvoření virtuálního prostředí a vyloučit ze správy zdrojového kódu
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1 – 3: Vytvořte virtuální prostředí a vyloučit ze správy zdrojového kódu
 
 Teď, když nakonfigurujete pro svůj projekt správy zdrojového kódu, můžete vytvořit virtuální prostředí, který obsahuje potřebné balíčky Django pro projekt. Pak můžete použít **Team Exploreru** vyloučit složku prostředí ze správy zdrojového kódu.
 
@@ -147,17 +146,17 @@ Teď, když nakonfigurujete pro svůj projekt správy zdrojového kódu, můžet
 
 1. Zadejte zprávu potvrzení a vyberte **Potvrdit vše** tlačítko a potom nasdílejte potvrzení změn do vzdáleného úložiště, pokud chcete, můžete.
 
-### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Otázka: Proč mám chcete vytvořit virtuální prostředí?
+### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Otázka: Proč je vhodné vytvořit virtuální prostředí
 
 Odpověď: Virtuální prostředí je skvělý způsob, jak izolovat přesné závislostí aplikace. Tato izolace zabrání konfliktům v rámci globálního prostředí Pythonu a pomáhá testování a spolupráci. V průběhu času při vývoji aplikace, je vždy přenést v mnoha užitečné balíčky Pythonu. Udržováním balíčků ve virtuálním prostředí specifické pro projekt, můžete snadno aktualizovat projektu *souboru requirements.txt* soubor, který popisuje prostředí, který je zahrnut ve správě zdrojového kódu. Když projekt je zkopírován do jakékoli jiné počítače, včetně serverů sestavení, nasazení serverů a jiných vývojových počítačích je snadné vytvořit znovu prostředí pouze pomocí *souboru requirements.txt* (což je důvod, proč prostředí nemusí být ve správě zdrojového kódu). Další informace najdete v tématu [použít virtuální prostředí](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Otázka: Jak odebrat virtuální prostředí, které už je potvrzená do správy zdrojových kódů?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Otázka: Jak odstranit virtuální prostředí, které už je potvrzená do správy zdrojových kódů?
 
-Odpověď: Především upravte vaše *.gitignore* souborů k vyloučení složky: najít oddíl obsahující komentáře `# Python Tools for Visual Studio (PTVS)` a přidejte nový řádek ke složce virtuálního prostředí, jako `/BasicProject/env`. (Vzhledem k tomu, že sada Visual Studio nezobrazuje souboru v **Průzkumníka řešení**, otevřete ho pomocí přímo **souboru** > **otevřete**  >   **Soubor** příkazu nabídky. Můžete také otevřít soubor z **Team Exploreru**: na **nastavení** stránce **nastavení úložiště**, přejděte na stránku **ignorovat soubory atributůanástroje** a potom vyberte **upravit** odkaz **.gitignore**.)
+Odpověď: Především upravte vaše *.gitignore* souborů k vyloučení složky: najít oddíl obsahující komentáře `# Python Tools for Visual Studio (PTVS)` a přidejte nový řádek pro složky virtuální prostředí, například `/BasicProject/env`. (Vzhledem k tomu, že sada Visual Studio nezobrazuje souboru v **Průzkumníka řešení**, otevřete ho pomocí přímo **souboru** > **otevřete**  >   **Soubor** příkazu nabídky. Můžete také otevřít soubor z **Team Exploreru**: na **nastavení** stránce **nastavení úložiště**, přejděte na stránku **ignorovat soubory atributůanástroje** a potom vyberte **upravit** odkaz **.gitignore**.)
 
 Za druhé, otevřete okno příkazového řádku, přejděte do složky, jako je *BasicProject* , která obsahuje složky virtuální prostředí jako *env*a spusťte `git rm -r env`. Tyto změny potvrdit z příkazového řádku (`git commit -m 'Remove venv'`), případně z **změny** stránce **Team Exploreru**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1 – 4: prozkoumání často používaný kód
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Krok 1 – 4: Prozkoumejte často používaný kód
 
 Po dokončení vytváření projektu, zkontrolujte často používaný kód projektu Django (což je znovu, stejně jako generovaných příkazu rozhraní příkazového řádku `django-admin startproject <project_name>`).
 
@@ -180,7 +179,7 @@ Po dokončení vytváření projektu, zkontrolujte často používaný kód proj
 
 Odpověď: Ano. Rozbalte **prostředí Pythonu** uzel, klikněte pravým tlačítkem na virtuální prostředí a vyberte **generovat soubor requirements.txt** příkazu. Dobré jeho použití tohoto příkazu pravidelně jako můžete upravit prostředí a potvrzení se změní na *souboru requirements.txt* do správy zdrojového kódu společně s další změny kódu, které jsou závislé na příslušné prostředí. Pokud nastavení nepřetržité integrace na serveru sestavení byste měli vždy, když změníte prostředí generovat soubor a změn.
 
-## <a name="step-1-5-run-the-empty-django-project"></a>Krok 1 – 5: Spusťte prázdný projekt Django
+## <a name="step-1-5-run-the-empty-django-project"></a>Krok 1 – 5: Spustit prázdný projekt Django
 
 1. V sadě Visual Studio, vyberte **ladění** > **spustit ladění** (**F5**) nebo použít **Webový Server** tlačítko na panelu nástrojů () prohlížeče, který se může lišit):
 
@@ -194,13 +193,13 @@ Odpověď: Ano. Rozbalte **prostředí Pythonu** uzel, klikněte pravým tlačí
 
 1. Až budete hotovi, server zastavit ukončením okna konzoly nebo s použitím **ladění** > **Zastavit ladění** příkaz v sadě Visual Studio.
 
-### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Otázka: Je Django webový server, jakož i architektura?
+### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Otázka: Django je webový server, jakož i architektura?
 
 Odpověď: Ano nebo ne. Django máte integrovaný webový server, který se používá pro účely vývoje. Tento webový server je, co se používá při spuštění webovou aplikaci místně, třeba při ladění v sadě Visual Studio. Při nasazování webového hostitele však Django použije webový server hostitele. *Wsgi.py* modulu v projektu Django se postará o zapojení do provozních serverech.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Otázka: Jaký je rozdíl mezi použitím nástrojů ladění příkazů nabídky a příkazy serveru v podnabídce projektu Pythonu?
 
-Odpověď: navíc k **ladění** příkazů nabídky a tlačítka panelu nástrojů můžete spustit na serveru pomocí **Python** > **spuštění serveru** nebo **Python** > **server pro spuštění ladění** příkazy v místní nabídce projektu. Oba příkazy otevřete okno konzoly, ve kterém se zobrazí místní adresa URL (localhost:port) pro spuštěný server. Nicméně je nutné ručně otevřít prohlížeč s touto adresou URL a serverem ladění nespustí automaticky ladicího programu sady Visual Studio. Můžete připojit ladicí program ke spuštěnému procesu později, pokud chcete, pomocí **ladění** > **připojit k procesu** příkazu.
+Odpověď: Kromě **ladění** příkazů nabídky a tlačítka panelu nástrojů můžete spustit na serveru pomocí **Python** > **spuštění serveru** nebo  **Python** > **server pro spuštění ladění** příkazy v místní nabídce projektu. Oba příkazy otevřete okno konzoly, ve kterém se zobrazí místní adresa URL (localhost:port) pro spuštěný server. Nicméně je nutné ručně otevřít prohlížeč s touto adresou URL a serverem ladění nespustí automaticky ladicího programu sady Visual Studio. Můžete připojit ladicí program ke spuštěnému procesu později, pokud chcete, pomocí **ladění** > **připojit k procesu** příkazu.
 
 ## <a name="next-steps"></a>Další kroky
 
@@ -211,6 +210,6 @@ V tomto okamžiku základního projektu Django neobsahuje žádné aplikace. Vyt
 
 ## <a name="go-deeper"></a>Seznamte se blíž
 
-- Kód projektu Django: [zápis svoji první aplikaci Django, část 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
+- Kód projektu Django: [Zápis svoji první aplikaci Django, část 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Nástroj pro správu: [správce django a souboru manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
 - Kurz zdrojového kódu na Githubu: [Microsoft/python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

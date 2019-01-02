@@ -1,8 +1,6 @@
 ---
 title: Ladění více procesů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968576"
 ---
 # <a name="debug-multiple-processes"></a>Ladění více procesů
 
@@ -50,7 +48,7 @@ Pro spuštění ladění projektu z **Průzkumníka řešení** bez toho, že pr
    
 1. Vyberte **aktuální výběr**, **jeden spouštěný projekt** a soubor projektu nebo **více projektů po spuštění**. 
 
-   Pokud vyberete **více projektů po spuštění**, můžete změnit pořadí spouštění a akce, které se pro každý projekt: **Start**, **spustit bez ladění**, nebo **Žádný**.  
+   Pokud vyberete **více projektů po spuštění**, můžete změnit pořadí spouštění a akce, které se pro každý projekt: **Spustit**, **spustit bez ladění**, nebo **žádný**.  
    
 1. Vyberte **použít**, nebo **OK** pro použití a zavřete dialogové okno. 
 
@@ -108,7 +106,7 @@ Při ladění aplikace pomocí několika procesů, ladicí program příkazy zá
   
 Následující tabulka popisuje chování ladění příkazů, kdy **přerušit všechny procesy při přerušení jednoho procesu** zaškrtávací políčko zaškrtnuto nebo možnost:
 
-|**Příkaz**|Vybrané|Vybraná|  
+|**Příkaz**|Vybráno|Vybraná|  
 |-|-|-|  
 |**Ladění**  > **přerušit vše**|Budou přerušeny všechny procesy.|Budou přerušeny všechny procesy.|  
 |**Ladění** > **pokračovat**|Obnoví se všechny procesy.|Všechny pozastavené procesy budou pokračovat.|  
@@ -122,7 +120,7 @@ Následující tabulka popisuje chování ladění příkazů, kdy **přerušit 
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Hledání zdroje a symbolů (PDB) souborů  
 Chcete-li procházet zdrojový kód procesu, ladicí program potřebuje přístup k jejím zdrojové soubory a soubory symbolů. Další informace najdete v tématu [zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-Pokud nelze získat přístup k souborům pro proces, můžete procházet pomocí **zpětný překlad** okna. Další informace najdete v tématu [postupy: použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).  
+Pokud nelze získat přístup k souborům pro proces, můžete procházet pomocí **zpětný překlad** okna. Další informace najdete v tématu [jak: Použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md).  
 
 ###  <a name="BKMK_Switch_between_processes"></a> Přepínání mezi procesy  
 

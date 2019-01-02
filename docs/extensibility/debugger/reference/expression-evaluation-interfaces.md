@@ -1,9 +1,6 @@
 ---
-title: Rozhraní vyhodnocení výrazu | Microsoft Docs
-ms.custom: ''
+title: Rozhraní pro vyhodnocení výrazu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, interfaces
@@ -13,56 +10,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9582f965fe1d8a00c97548dbc5f458ae4e1198
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5367d12593ae9789ff0529c76cc0494a6f99ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932269"
 ---
-# <a name="expression-evaluation-interfaces"></a>Rozhraní vyhodnocení výrazu
+# <a name="expression-evaluation-interfaces"></a>Rozhraní pro vyhodnocení výrazu
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 se již nepoužívá tímto způsobem implementace vyhodnocovače výrazů. Informace o implementaci vyhodnocovače výrazů CLR, najdete v tématu [vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Toto jsou rozhraní vyhodnocení výrazu pro [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění SDK.  
+ Následují rozhraní pro vyhodnocení výrazu pro [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění sady SDK.  
   
-## <a name="discussion"></a>Diskusní  
- Tato rozhraní se používají k vyhodnocení výrazů v zásobníku volání při režimu pozastavení. Implementují se pouze pro běžné jazyk vyhodnocovače výrazů runtime (EE).  
+## <a name="discussion"></a>Diskuse  
+ Tato rozhraní se používají k vyhodnocení výrazů v zásobníku volání během režimu pozastavení. Tyto jsou implementované jenom pro běžné language vyhodnocovače výrazů za běhu (EE).  
   
- Každé rozhraní v tabulce znázorňuje komponenty, která můžete implementovat z následujícího seznamu:  
+ Každé rozhraní v tabulce ukazuje komponenta, která můžete implementovat z následujícího seznamu:  
   
--   Ladění modulu (DE)  
+-   Ladicí stroj (DE)  
   
--   Vyhodnocovací filtr výrazů (EE)  
+-   Chyba při vyhodnocování výrazu (EE)  
   
 -   Visual Studio (VS)  
   
-|Rozhraní|Implementované|Popis|  
+|Rozhraní|Implementováno|Popis|  
 |---------------|--------------------|-----------------|  
-|[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Představuje alias číselné proměnné.|  
-|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Představuje alias číselné proměnné a umožňuje (EE) k získání doménu aplikace pro alias vyhodnocovací filtr výrazů.|  
-|[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|Představuje objekt array.|  
-|[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|Představuje objekt spravované pole a umožňuje (EE) k určení základní indexu (dolní meze) pro pole vyhodnocovací filtr výrazů.|  
-|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|NĚMECKO|Představuje vazač, vazby ladění symbolů skutečné adresy v paměti.|  
-|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|NĚMECKO|Stejné jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) rozhraní ale poskytuje přístup k vlastní vizualizérech, typy a aliasy.|  
+|[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|Představuje číselná aliasu pro proměnnou.|  
+|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|Představuje číselná aliasu pro proměnnou a umožňuje vyhodnocovače výrazů (EE) k získání aliasu domény aplikace.|  
+|[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|Představuje objekt typu pole.|  
+|[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|Představuje objekt spravovaného pole a umožňuje vyhodnocovače výrazů (EE) k určení základní indexu (dolní meze) pro pole.|  
+|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|Představuje vazač, vytvoří vazbu ladění symboly pro skutečné adresy v paměti.|  
+|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|Stejné jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) rozhraní ale poskytuje přístup pro typy, aliasy a vlastních vizualizérů.|  
 |[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)|EE|Představuje vyhodnocovací filtr výrazů.|  
-|[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|Představuje rozšířenou verzi (EE) vyhodnocovací filtr výrazů.|  
-|[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|Představuje (EE) vyhodnocovací filtr výrazů s strom rozšířené analyzátor.|  
+|[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|Představuje rozšířenou verzi vyhodnocovače výrazů (EE).|  
+|[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|Představuje vyhodnocovače výrazů (EE) s strom rozšířené analyzátor.|  
 |[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|Představuje funkci.|  
-|[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|Představuje funkci a zlepšuje [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) rozhraní.|  
-|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|NĚMECKO|Umožňuje vyhodnocení výrazu (EE) k zobrazení zprávy v okně výstupu ladicího programu.|  
-|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|Představuje objekt spravovaného kódu.|  
-|[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|Základní rozhraní, který reprezentuje všechny symbol vázán na adresu paměti.|  
-|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|Stejné jako [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní ale poskytuje přístup k dalším informacím.|  
-|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|Představuje výraz analyzovaný připravené k vyhodnocení.|  
+|[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|Představuje funkci a zvyšuje [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) rozhraní.|  
+|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|Umožňuje vyhodnocovače výrazů (EE) pro zobrazení zprávy v okně výstupu ladicího programu.|  
+|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|Představuje objekt spravovaný kód.|  
+|[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|Základní rozhraní, který představuje jakýkoli symbol vázán na adresu paměti.|  
+|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|Stejné jako [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní, ale poskytuje přístup k dalším informacím.|  
+|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|Představuje analyzovaný připravený, který se má vyhodnotit výraz.|  
 |[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)|EE|Představuje ukazatel.|  
 |[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|Představuje ukazatel v strom analýzy a rozšiřuje **IDebugPointerObject** rozhraní.|  
-|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|Umožňuje změnit hodnotu typ prostřednictvím vizualizéru typu.|  
-|[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)|sada VS|Poskytuje přístup k vlastní prohlížečů a vizualizérech typu.|  
+|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|Umožňuje změnit hodnotu typ prostřednictvím vizualizér typů.|  
+|[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)|sada VS|Poskytuje přístup k vlastních prohlížečů a vizualizérů typů.|  
 |[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|sada VS|Poskytuje možnost vytvářet [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) objektu.|  
 |[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|Představuje kolekci [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objekty.|  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
- [Zápis vyhodnocovací filtr výrazů CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [Reference k rozhraní API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
+ [Zápis vyhodnocovací filtr výrazů modulu CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Vizualizér typů a vlastní prohlížeč](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

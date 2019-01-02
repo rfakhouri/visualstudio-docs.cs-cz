@@ -1,9 +1,6 @@
 ---
-title: IDebugDisassemblyStream2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDisassemblyStream2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1598ec8a6e5fca5275384c00433d74d22ce3505
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6923d357e362a311678e851abb1fc3b0b68cb8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963735"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
-Toto rozhraní představuje proud pokyny.  
+Toto rozhraní představuje datový proud instrukcí.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,34 +29,34 @@ IDebugDisassemblyStream2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění implementuje toto rozhraní pro podporu zpětný překlad kódu programu.  
+ Ladicí stroj implementuje toto rozhraní pro podporu zpětného překladu kódu programu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Volání [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) metoda vrátí toto rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugDisassemblyStream2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugDisassemblyStream2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Pro čtení](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Přečte pokyny od aktuální pozici v datovém proudu zpětný překlad.|  
-|[Hledat](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Přesune čtení ukazatele v datovém proudu zpětný překlad zadaný počet pokyny relativně k zadané pozici.|  
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Vrátí identifikátor umístění kódu pro konkrétní kód kontext.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Vrátí objekt kontextu kód odpovídající identifikátor zadaný kód umístění.|  
-|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Vrátí identifikátor umístění kód, který představuje aktuální umístění v kódu.|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Získá zdrojový dokument spojené s tímto datovým proudem zpětný překlad.|  
-|[Getscope –](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Získá obor Tento datový proud zpětný překlad.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Získá velikost tento datový proud zpětný překlad.|  
+|[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Přečte pokyny od aktuální pozice v datovém proudu zpětný překlad.|  
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Přesune ukazatel čtení ve službě stream zpětný překlad daný počet instrukcí vzhledem k zadané pozici.|  
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Vrátí identifikátor umístění kódu pro kontext kódu.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Vrátí objekt kontextu kód odpovídající identifikátor umístění zadaného kódu.|  
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Vrátí identifikátor umístění kódu, který představuje aktuální umístění v kódu.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Získá zdrojový dokument přidružené k tento datový proud zpětný překlad.|  
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Získá obor tohoto datového proudu zpětný překlad.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Získá velikost tohoto datového proudu zpětný překlad.|  
   
 ## <a name="remarks"></a>Poznámky  
- Datový proud zpětný překlad lze vytvořit k reprezentaci celého adresního prostoru nebo pouze funkce nebo modul v prostoru. Každý instrukce je reprezentována [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktura vrácený volání [čtení](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metoda.  
+ K reprezentaci celého adresního prostoru nebo jen funkce nebo modulu v prostoru lze vytvořit datový proud zpětný překlad. Každou instrukci je reprezentována [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktura vrácený voláním [čtení](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metoda.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

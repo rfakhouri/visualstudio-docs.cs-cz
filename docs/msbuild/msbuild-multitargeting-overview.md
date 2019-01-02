@@ -1,8 +1,6 @@
 ---
 title: Přehled cílení na více verzí nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e74fa916af3feebca5b7cf0b45950981eab0aa5b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0cc529ee7a70d6b21546f85465f18641e7e14c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875832"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Přehled cílení na více verzí nástroje MSBuild
 Pomocí nástroje MSBuild můžete zkompilovat aplikaci pro spuštění v jedné z několika verzí rozhraní .NET Framework a v jedné z několika platformách systému. Například můžete zkompilovat aplikaci pro spuštění v rozhraní .NET Framework 2.0 na 32bitové platformě a zkompilovat stejnou aplikaci spustit v rozhraní .NET Framework 4.5 na 64bitové platformě.  

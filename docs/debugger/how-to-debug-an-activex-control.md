@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ladění ovládacího prvku ActiveX | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění ovládacího prvku ActiveX | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 036e50fde887786736aee1e7f8565cc9708bb2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924784"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Postupy: Ladění ovládacího prvku ActiveX
 
@@ -54,7 +52,7 @@ Chcete-li ladit ovládací prvek ActiveX, je nutné zadat (spustitelného soubor
 
 6.  Pokud zadáte jako kontejner aplikace Internet Explorer a používáte aktivní plochu, zadejte `/new` v **argumenty příkazu** pole.
 
-7.  Klikněte na tlačítko **OK**.
+7.  Klikněte na **OK**.
 
      Pokud nezadáte kontejner ve službě **stránky vlastností projektu** dialogovém okně můžete zadat kontejner při zahájení ladění. Po výběru příkazu ke spuštění pro spuštění ladění, [spustitelný soubor pro dialogové okno ladění relace](../debugger/executable-for-debugging-session-dialog-box.md) se zobrazí. V dialogovém okně zadejte název cesty kontejneru.
 

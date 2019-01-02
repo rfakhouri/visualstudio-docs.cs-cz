@@ -1,8 +1,6 @@
 ---
 title: Referenční dokumentace schématu souboru projektu nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ed3fd3fc60e6c263d7363047ed36b2f0d891a76
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ea993233409f7df9f99b345184634e4de6e59618
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078937"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852424"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenční dokumentace schématu souboru projektu MSBuild
 Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] prvky schématu XML s jejich dostupné atributy a podřízené prvky.  
@@ -36,7 +34,7 @@ Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 |-------------|--------------------|----------------|  
 |[Choose – element (MSBuild)](../msbuild/choose-element-msbuild.md)|jinak<br /><br /> Kdy|--|  
 |[Import – element (MSBuild)](../msbuild/import-element-msbuild.md)|--|Podmínka<br /><br /> Projekt|  
-|[Importgroup – element](../msbuild/importgroup-element.md)|Importovat|Podmínka|  
+|[Importgroup – element](../msbuild/importgroup-element.md)|Import|Podmínka|  
 |[Item – element (MSBuild)](../msbuild/item-element-msbuild.md)|*Itemmetadata –*|Podmínka<br /><br /> Vyloučení<br /><br /> Zařadit členy<br /><br /> odebrat|  
 |[ItemDefinitionGroup – element (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Položka*|Podmínka|  
 |[Itemgroup – element (MSBuild)](../msbuild/itemgroup-element-msbuild.md)|*Položka*|Podmínka|  
@@ -46,7 +44,7 @@ Obsahuje všechny tabulky [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 |[Output – element (MSBuild)](../msbuild/output-element-msbuild.md)|--|Podmínka<br /><br /> Název položky<br /><br /> Vlastnost PropertyName<br /><br /> Parametr úkolu|  
 |[Parameter – element](../msbuild/parameter-element.md)|--|Výstup<br /><br /> Zda položka ParameterType<br /><br /> Požadováno|  
 |[Parametergroup – element](../msbuild/parametergroup-element.md)|*Parametr*|--|  
-|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Importovat<br /><br /> ItemGroup<br /><br /> Projectextensions –<br /><br /> PropertyGroup<br /><br /> Cíl<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> Atribut ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> atribut xmlns|  
+|[Project – element (MSBuild)](../msbuild/project-element-msbuild.md)|Zvolte<br /><br /> Import<br /><br /> ItemGroup<br /><br /> Projectextensions –<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> Usingtask –|Defaulttargets –<br /><br /> InitialTargets<br /><br /> Atribut ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> atribut xmlns|  
 |[Projectextensions – element (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property – element (MSBuild)](../msbuild/property-element-msbuild.md)|--|Podmínka|  
 |[PropertyGroup – element (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Vlastnost*|Podmínka|  

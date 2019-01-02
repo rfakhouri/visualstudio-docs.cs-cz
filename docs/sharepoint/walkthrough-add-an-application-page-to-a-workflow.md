@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Přidání stránky aplikace do pracovního postupu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Přidání stránky aplikace do pracovního postupu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938196"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Návod: Přidání stránky aplikace do pracovního postupu
-  Tento návod ukazuje, jak přidat stránku aplikace, která zobrazuje data odvozená z pracovního postupu do projektu pracovního postupu. Je nástavbou projektu je popsáno v tématu [návod: vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Průvodce: Přidání stránky aplikace do pracovního postupu
+  Tento návod ukazuje, jak přidat stránku aplikace, která zobrazuje data odvozená z pracovního postupu do projektu pracovního postupu. Je nástavbou projektu je popsáno v tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  Tento návod demonstruje následující úkoly:
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866893"
 
 -   Visual Studio.
 
--   Máte také dokončení projektu v tématu [návod: vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+-   Máte také dokončení projektu v tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend kód pracovního postupu
  Nejprve přidejte řádek kódu do pracovního postupu k nastavení hodnoty ve sloupci výsledek množství vyúčtování. Tato hodnota se používá později při výpočtu souhrnné sestavy výdajů.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Chcete-li nastavit hodnotu sloupce výsledku v pracovním postupu
 
-1.  Načíst dokončený projekt z tématu [návod: vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1.  Načíst dokončený projekt z tématu [názorný postup: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2.  Spustit kód pro *Workflow1.cs* nebo *Workflow1.vb* (v závislosti na programovacím jazyce).
 
@@ -353,6 +350,6 @@ ms.locfileid: "49866893"
 ## <a name="see-also"></a>Viz také:
 
 - [Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [Postupy: vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)
+- [Postupy: Vytvoření stránky aplikace](../sharepoint/how-to-create-an-application-page.md)
 - [Vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)

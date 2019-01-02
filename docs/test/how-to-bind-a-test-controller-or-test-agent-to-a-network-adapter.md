@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891057"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Postupy: vytvoření vazby testovacího kontroléru nebo testovacího agenta na síťový adaptér
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Postupy: Svázat testovací kontrolér nebo testovacího agenta na síťový adaptér
 
 Pokud počítač, který obsahuje testovací kontrolér nebo software testovacího agenta nainstalovaná má více síťových adaptérů, musíte zadat IP adresu místo názvu počítače k určení daného testovacího kontroléru nebo testovacího agenta.
 
@@ -135,5 +134,5 @@ Pokud počítač, který obsahuje testovací kontrolér nebo software testovací
 - [Instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md)
 - [Úprava nastavení protokolování zátěžového testu](../test/modify-load-test-logging-settings.md)
 - [Konfigurace portů pro testovací kontroléry a testovací agenty](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Postupy: určení maximální velikosti souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Postupy: nastavení časových limitů pro testovací kontroléry a testovací agenty](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Postupy: Zadejte maximální velikost souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Postupy: Nastavení časových limitů pro testovací kontroléry a testovací agenty](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

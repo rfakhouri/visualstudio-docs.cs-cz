@@ -1,8 +1,6 @@
 ---
 title: 'DA0039: Velmi vysoká míra kolizí zámků | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.39
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4548e190b7008c887ccf1c149a95f52bd8d7892d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d806b6f6bb375dd05cebc56faadc396e3d80516
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962568"
 ---
-# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Velmi vysoká míra konfliktů uzamčení
+# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Velmi vysoké míře sporů zámků platformy
 
 |||  
 |-|-|  
@@ -48,7 +46,7 @@ ms.locfileid: "49845703"
  Toto pravidlo vyvolá při měření v průběhu spuštění profilování označuje, že je příliš vysoký počet zámků. Zámků zpoždění spuštění vlákna, která čekají na zámek. Dokonce i poměrně malý objem kolize zámků při testech jednotek nebo v zátěžových testech, které běží na hardwaru nižší by mělo být vypátráno.  
 
 > [!NOTE]
->  Když míra konfliktů uzamčení vykázané v Profilování dat je zásadní, ale ne příliš velké [DA0038: vysoká míra konfliktů uzamčení](../profiling/da0038-high-rate-of-lock-contentions.md) místo toto upozornění je aktivována zpráva informace.  
+>  Jestliže je míra sporů zámků platformy nahlášené v Profilování dat zásadní, ale ne příliš velké, [DA0038: Vysoká míra konfliktů zámků](../profiling/da0038-high-rate-of-lock-contentions.md) namísto toto upozornění se aktivuje informační zprávy.  
 
 ## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění  
  Dvakrát klikněte na zprávu, přejděte [značky](../profiling/marks-view.md) zobrazení dat profilování.  Najít **.NET CLR LocksAndThreads\Contention sazba za sekundu** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde je těžší než ostatní fáze kolize zámků.  

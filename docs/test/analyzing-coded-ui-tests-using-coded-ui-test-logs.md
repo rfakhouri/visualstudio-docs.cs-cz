@@ -2,19 +2,18 @@
 title: Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944957"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza kódované UI testy pomocí programového protokolů testu uživatelského rozhraní
 
@@ -22,7 +21,7 @@ Programového uživatelského rozhraní testu protokoly filtr a záznam, který 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Krok 1: Povolení protokolování
+## <a name="step-1-enable-logging"></a>Krok 1: Povolit protokolování
 
 V závislosti na scénáři použijte jednu z následujících metod k povolení protokolu:
 
@@ -58,7 +57,7 @@ V závislosti na scénáři použijte jednu z následujících metod k povolení
 
    <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spuštění programového testu uživatelského rozhraní a zobrazit protokol
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spustit programový test uživatelského rozhraní a zobrazit protokol
 
 Při spuštění programového testu uživatelského rozhraní pomocí změny *QTAgent32.exe.config* soubor na místě, zobrazí se výstup na odkaz v **Průzkumníka testů** výsledky. Soubory protokolů jsou vytvářeny, ne jenom v případě, že se test nezdaří, ale také u úspěšných testů, pokud je úroveň trasování nastavena na "podrobné."
 
@@ -90,4 +89,4 @@ Při spuštění programového testu uživatelského rozhraní pomocí změny *Q
 ## <a name="see-also"></a>Viz také:
 
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
-- [Postupy: spuštění testů ze sady Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Postupy: Spuštění testů ze sady Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

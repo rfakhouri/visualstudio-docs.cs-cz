@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity | Microsoft Docs
-ms.custom: ''
+title: IDebugProcessSecurity | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967953"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` je implementováno modulem dodavatele port uživatele upozornit, že se připojuje k procesu není bezpečné.  
+`IDebugProcessSecurity` je implementováno dodavatele portu uživatele upozornit, že není bezpečné připojování k procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,25 +27,25 @@ IDebugProcessSecurity : IUnknown
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugProcessSecurity`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugProcessSecurity`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Získá uživatelské jméno z portu dodavatele.|  
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Upozorní uživatele, že se připojuje k procesu ladění není bezpečné.|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Získá uživatelské jméno od dodavatele portu.|  
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Uživatele upozorňuje, že není bezpečné připojení k ladění procesu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Implementace tohoto rozhraní zobrazit upozornění a umožnit uživatelům zrušit, pokud je proces, na který připojujete může považovány za nebezpečné.  
+ Implementace tohoto rozhraní zobrazí upozornění a umožnění uživateli zrušit, pokud proces, ke kterému se připojuje může považovány za nebezpečné.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Porty](../../../extensibility/debugger/ports.md)   
- [Port dodavatelů](../../../extensibility/debugger/port-suppliers.md)   
+ [Dodavatelé portů](../../../extensibility/debugger/port-suppliers.md)   
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,8 +1,6 @@
 ---
-title: Shromáždit statistiku pro technologii ASP.NET webové aplikace | Microsoft Docs
-ms.custom: ''
+title: Shromažďovat statistiky pro technologii ASP.NET, webových aplikací | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, sampling method
@@ -13,28 +11,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9350d96911e818402f7e32ebcd83fe832f31f9d9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95991806f10a6b4821c232afcf09c83493fabe60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930671"
 ---
-# <a name="collect-statistics-for-aspnet-web-apps"></a>Shromažďování statistik pro webové aplikace ASP.NET
+# <a name="collect-statistics-for-aspnet-web-apps"></a>Shromáždit statistiku pro webové aplikace ASP.NET
 
-Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu pro webovou aplikaci ASP.NET pomocí **VSPerfASPNETCmd** a **VSPerfCmd** nástroj příkazového řádku a Metoda profilace se vzorkováním.  
+Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu pro webovou aplikaci ASP.NET pomocí **VSPerfASPNETCmd** a **VSPerfCmd** nástroj příkazového řádku a Metoda profilování vzorkování.  
   
 > [!NOTE]
->  Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  I když **VSPerfCmd** nástroj umožňuje úplný přístup k nástrojích pro profilaci funkcí, včetně pozastavení a obnovení profilování, a získání dalších dat z procesoru a čítačů výkonu systému Windows, měli byste použít **VSPerfASPNETCmd** nástroje příkazového řádku, pokud není nutné tuto funkci. **VSPerfASPNETCmd** nástroj pro příkazový řádek je upřednostňovaná metoda při vaší jsou profilace ASP.NET – webové servery pomocí samostatného profileru. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) žádné proměnné prostředí je nutné nastavit nástroj pro příkazový řádek, a není vyžadováno restartování počítače. Další informace najdete v tématu [profilace rychlé webové stránky pomocí VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).  
+>  I když **VSPerfCmd** nástroj umožňuje úplný přístup k nástrojů pro profilaci sady funkcí, včetně pozastavování a obnovování profilace, a shromažďují další data z procesoru a čítače výkonu Windows, měli byste použít **VSPerfASPNETCmd** nástroje příkazového řádku, pokud není nutné tuto funkci. **VSPerfASPNETCmd** preferovanou metodu je nástroj příkazového řádku při se profilace webových stránek ASP.NET pomocí samostatného profileru. Ve srovnání s [VSPerfCmd](../profiling/vsperfcmd.md) nástroj příkazového řádku, žádné proměnné prostředí nutné nastavit a restartování počítače se nevyžaduje. Další informace najdete v tématu [profilace pohotová webových stránek pomocí VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).  
   
-## <a name="common-tasks"></a>Běžné úlohy  
+## <a name="common-tasks"></a>Běžné úkoly  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Připojení profileru k aplikaci ASP.NET**|-   [Postupy: připojení profileru k webové aplikaci ASP.NET ke shromažďování statistik aplikace](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**Připojení profileru k aplikaci ASP.NET**|-   [Jak: Připojení profileru k webové aplikaci ASP.NET ke shromažďování statistik aplikace](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -42,16 +40,16 @@ Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profilu pomocí metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
-|**Profil kolekce přidělení a uvolnění paměti**|-   [Shromažďování dat paměti](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
-|**Profil aktivita prostředku kolizí a přístup z více vláken**|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
+|**Profil s použitím metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
+|**Profil přidělování a uvolňování paměti kolekce paměti**|-   [Shromažďování dat paměti](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Profil aktivita prostředku kolize a vlákna**|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
   
-### <a name="sample-method"></a>Ukázka – metoda  
+### <a name="sample-method"></a>Ukázka metody  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace samostatné (klient)**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
+|**Profilovat samostatné (klientské) aplikace**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
 |-   **Profil služby**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>Analýza zobrazení dat vzorkování a sestavy  
- [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)
+ [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)

@@ -1,12 +1,11 @@
 ---
-title: 'CA2233: Operace by neměly přetéct. | Dokumentace Microsoftu'
+title: 'CA2233: Operace by neměly přetéct | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5f6690f6577d936757ae3bbe8b725b4434b6bee1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c5f3cb57ade3678173f51182607c436b14e6b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887192"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operace by neměly přetéct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,6 +119,3 @@ End Sub
 
 ## <a name="see-also"></a>Viz také
  <xref:System.OverflowException?displayProperty=fullName> [Operátory jazyka C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [zaškrtnuto a nezaškrtnuto](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-

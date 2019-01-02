@@ -1,9 +1,6 @@
 ---
 title: NamedRange – ovládací prvek
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Range
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c9bc4ff5b3515d5dcd4dab1eef81bf5c9abf979
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f23da0d6e91e63eaab9cd1153f07727b6399b375
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871882"
 ---
 # <a name="namedrange-control"></a>NamedRange – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Ovládací prvek je oblast, která má jedinečný název, zpřístupní události a může být vázaný na data. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
@@ -35,7 +32,7 @@ ms.locfileid: "35676493"
 ## <a name="create-the-control"></a>Vytvoření ovládacího prvku  
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu nebo za běhu v projektech na úrovni dokumentu.  
   
- Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [postupy: Přidání namedrange – ovládací prvky do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
+ Můžete přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacích prvků na list za běhu v doplňku VSTO. Další informace najdete v tématu [jak: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 > [!NOTE]  
 >  Ve výchozím nastavení, nejsou trvalé dynamicky generovaný pojmenované oblasti do listu jako hostitele Určuje, kdy je uzavřen do listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -86,5 +83,3 @@ ms.locfileid: "35676493"
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Návod: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

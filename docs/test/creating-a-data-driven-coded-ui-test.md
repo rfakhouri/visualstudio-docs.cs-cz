@@ -2,7 +2,6 @@
 title: Vytvoření datově řízeného programového testu UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968602"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 
@@ -65,7 +64,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
    }
    ```
 
-5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
+5. Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **CTRL**+**R**,**T**).
 
     Zobrazí se ve výsledku testu, který ukazuje-li test úspěšný nebo neúspěšný **Průzkumníka testů** okna. Otevření okna Průzkumníka testů z **testovací** nabídce zvolte **Windows** a klikněte na tlačítko **Průzkumník testů**.
 
@@ -94,7 +93,7 @@ Tato ukázka vytvoří programový test uživatelského rozhraní, která běž�
    }
    ```
 
-9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **Ctrl**+**R**,**T**).
+9. Ověřte, že test běží za použití `ValidateSum()` metody. Umístěte kurzor na slovo v testovací metodě uvedené výše, otevřete kontextovou nabídku a zvolte **spustit testy**. (Klávesová zkratka: **CTRL**+**R**,**T**).
 
      V tomto okamžiku všechny hodnoty parametrů jsou definovány v jejich metod jako konstanty. V dalším kroku vytvoříte datové sady, aby naše testovací řízené daty.
 
@@ -230,9 +229,9 @@ Ukázka řetězce zdrojů dat v následující tabulce můžete použít zkopír
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze upravit kód v souboru UIMap.Designer?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>DOTAZ: Proč nelze upravit kód v souboru UIMap.Designer?
 
-**Odpověď:** všechny změny provedené v kódu *UIMapDesigner.cs* soubor bude přepsán při každém vytvoření kódu pomocí UIMap – Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů, můžete provést změny kódu potřebná k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (to znamená *CodedUITest1.cs*).
+**ODPOVĚĎ:** Všechny změny provedené v kódu *UIMapDesigner.cs* soubor bude přepsán při každém vytvoření kódu pomocí UIMap – Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů, můžete provést změny kódu potřebná k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (to znamená *CodedUITest1.cs*).
 
 Pokud je třeba změnit zaznamenanou metodu, je nutné zkopírovat ho do *UIMap.cs* souboru a přejmenujte jej. *UIMap.cs* soubor lze použít k přepsání metod a vlastností v *UIMapDesigner.cs* souboru. Musíte odebrat odkaz na původní metodu programového *UITest.cs* soubor a nahradit ji názvem přejmenované metody.
 

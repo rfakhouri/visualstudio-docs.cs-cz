@@ -2,21 +2,20 @@
 title: Vložit komentáře dokumentace XML
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964280"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Postupy: vložení komentáře XML pro generování dokumentace
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Postupy: Vložit komentáře XML pro generování dokumentace
 
 Visual Studio vám může pomoct dokumentovat prvků kódu, jako jsou třídy a metody, pomocí automatického generování standardní struktura komentáře dokumentace XML. V době kompilace můžete vygenerovat soubor XML, který obsahuje komentáře k dokumentaci. XML souboru generovaného kompilátorem můžete distribuovat spolu s sestavení .NET, aby Visual Studio a jiná Integrovaná vývojová prostředí pomocí technologie IntelliSense můžete zobrazit rychlé informace o typech a členech. Kromě toho lze spustit soubor XML prostřednictvím nástrojů jako [DocFX](https://dotnet.github.io/docfx/) a [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) ke generování websites referenční dokumentace rozhraní API.
 
@@ -52,7 +51,7 @@ Visual Studio vám může pomoct dokumentovat prvků kódu, jako jsou třídy a 
 
 - [XML – dokumentační komentáře (C# Programming Guide)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Dokumentace kódu s komentáři XML (C# průvodce)](/dotnet/csharp/codedoc)
-- [Postupy: vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Postupy: Vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Komentáře v jazyce C++](/cpp/cpp/comments-cpp)
 - [XML dokumentace (C++)](/cpp/ide/xml-documentation-visual-cpp)
 - [Generování kódu](../code-generation-in-visual-studio.md)

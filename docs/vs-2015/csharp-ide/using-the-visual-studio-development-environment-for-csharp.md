@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- devlang-csharp
+ms.technology: devlang-csharp
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 827c2ea5ee3236c6d34e46405cbfedd3d3a93225
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cd456bf03b3c5037c21845c082ca60ef563e8df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938806"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Použití vývojového prostředí sady Visual Studio pro jazyk C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +45,7 @@ Integrovaného vývojového prostředí (IDE) sady Visual Studio je kolekce výv
 |[Fragmenty kódu v jazyce Visual C#](../ide/visual-csharp-code-snippets.md)|Poskytuje přehled používání fragmentů kódu v jazyce Visual C#, které vám umožňují automaticky přidat do aplikace běžné konstrukce kódu.|
 |[Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)|Poskytuje odkazy na postupy používání okna Najít a nahradit, záložek, seznamů úkolů a seznamů chyb pro vyhledání řádků kódu.|
 |[Zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md)|Objasňuje způsob procházení hierarchií tříd, členů tříd a prostředků.|
-|[Postupy: Přidání konfiguračního souboru aplikace do projektu C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Popisuje způsob přidání konfiguračního souboru (app.config) do projektu v jazyce C#.|
+|[Postupy: Přidejte do konfiguračního souboru aplikace C# projektu](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Popisuje způsob přidání konfiguračního souboru (app.config) do projektu v jazyce C#.|
 |[Metadata jako zdroj](../csharp-ide/metadata-as-source.md)|Popisuje způsob, jakým integrované vývojové prostředí umožňuje zobrazování metadat ve formě zdrojového kódu.|
 |[Refaktoring (C#)](../csharp-ide/refactoring-csharp.md)|Vytváří seznam operací refaktoringu, které vám pomohou při úpravách kódu beze změny chování aplikace.|
 |[Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)|Objasňuje způsob konfigurace sestavení ladící verze, sestavení pro vydání a zvláštního sestavení pro vaše řešení v rámci sady Visual Studio.|

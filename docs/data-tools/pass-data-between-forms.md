@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a0d248f59754d3f46e8fab0e0924c36a80b0d89
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 0f4c77e4d2f8d0c75f71942cf61213210bc680ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944824"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 
@@ -154,7 +153,7 @@ Přidání dotazu TableAdapter Form2 načíst objednávek pro vybraného zákazn
     > [!NOTE]
     > Ověření parametru správná syntaxe pro vaši databázi. Například v aplikaci Microsoft Access, klauzuli WHERE vypadat nějak takto: `WHERE CustomerID = ?`.
 
-6.  Klikněte na tlačítko **Další**.
+6.  Klikněte na **Další**.
 
 7.  Pro **zadejte název DataTableMethod**, typ `FillByCustomerID`.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926447"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Návod: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word
+# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Průvodce: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word
   Tento návod ukazuje vytváření datových vazeb k ovládacím prvkům v podokně akcí ve Wordu. Ovládací prvky ukazují záznamů master/detail relace mezi tabulkami v databázi serveru SQL Server.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -61,7 +58,7 @@ ms.locfileid: "49873887"
   
 1.  Vytvoření projektu Wordového dokumentu s názvem **Moje podokně akcí aplikace Word**. V průvodci vyberte **vytvoříte nový textový dokument**.  
   
-     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový Wordový dokument v návrháři a přidá **Moje podokně akcí aplikace Word** projektu **Průzkumníka řešení**.  
   
@@ -89,7 +86,7 @@ ms.locfileid: "49873887"
   
 4. Vyberte datové připojení k ukázkové databázi Northwind systému SQL Server, nebo přidejte nové připojení s použitím **nové připojení** tlačítko.  
   
-5. Klikněte na tlačítko **Další**.  
+5. Klikněte na **Další**.  
   
 6. Uložit připojení, pokud je zaškrtnuto a pak klikněte na tlačítko Vymazat **Další**.  
   
@@ -134,7 +131,7 @@ ms.locfileid: "49873887"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**Vložit**|  
+    |**Název**|**Vložit**|  
     |**Text**|**Vložit**|  
   
 12. Změna velikosti uživatelského ovládacího prvku podle ovládací prvky.  
@@ -149,7 +146,7 @@ ms.locfileid: "49873887"
      [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  V jazyce C#, je nutné připojit obslužná rutina události <xref:System.Windows.Forms.UserControl.Load> událostí. Tento kód v můžete umístit `ActionsControl` konstruktor po volání `InitializeComponent`. Další informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  V jazyce C#, je nutné připojit obslužná rutina události <xref:System.Windows.Forms.UserControl.Load> událostí. Tento kód v můžete umístit `ActionsControl` konstruktor po volání `InitializeComponent`. Další informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
@@ -234,7 +231,7 @@ ms.locfileid: "49873887"
 ## <a name="next-steps"></a>Další kroky  
  Tento návod ukazuje základy vazba dat k ovládacím prvkům v podokně akcí ve Wordu. Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Vazba dat k ovládacím prvkům v aplikaci Excel. Další informace najdete v tématu [návod: vytvoření vazby dat k ovládacím prvkům v podokně akcí aplikace Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+-   Vazba dat k ovládacím prvkům v aplikaci Excel. Další informace najdete v tématu [názorný postup: Vytvoření vazby dat k ovládacím prvkům v podokně akcí aplikace Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
   
 -   Nasazení projektu. Další informace najdete v tématu [nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
@@ -242,5 +239,3 @@ ms.locfileid: "49873887"
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)   
  [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

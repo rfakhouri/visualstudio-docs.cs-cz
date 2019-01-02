@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer2::GetPort | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer2::GetPort
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14172972c77218663da59d36e3e94ffd3c07c2d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d9f2ba3699337191a9aa11b8b47d9e5f6101bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965392"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 Načte konkrétní port.  
@@ -28,16 +25,16 @@ Načte konkrétní port.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetPort(   
-   REFGUID       guidPort,  
-   IDebugPort2** ppPort  
+HRESULT GetPort(   
+   REFGUID       guidPort,  
+   IDebugPort2** ppPort  
 );  
 ```  
   
 ```csharp  
-int GetPort(   
-   ref Guid        guidPort,  
-   out IDebugPort2 ppPort  
+int GetPort(   
+   ref Guid        guidPort,  
+   out IDebugPort2 ppPort  
 );  
 ```  
   

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_addresssection – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e62f6738d07b2f0e4463cd685bf3111cd7011a10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 728bf422604bbc3890c2b35a5902dacc44e81ba5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923728"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
 Načte část oddílu umístění adresu. Použít, když [locationtype – výčet](../../debugger/debug-interface-access/locationtype.md) je nastavena na `LocIsStatic`.  
@@ -27,7 +25,7 @@ Načte část oddílu umístění adresu. Použít, když [locationtype – vý�
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_addressSection (   
+HRESULT get_addressSection (   
    DWORD* pRetVal  
 );  
 ```  

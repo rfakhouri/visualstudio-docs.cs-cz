@@ -3,7 +3,6 @@ title: Usnadnění tipy a triky pro Visual Studio
 description: Další informace o tipy a triky, díky kterým integrovaného vývojového prostředí (IDE) sady Visual Studio pro každodenní použití, včetně osobám s postižením.
 ms.date: 09/15/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929585"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Usnadnění tipy a triky pro Visual Studio
 
@@ -53,7 +52,7 @@ Integrované vývojové prostředí sady Visual Studio má panely nástrojů, st
 |Funkce|Popis|Kombinace kláves|
 |-------------|-----------------| - |
 |Panely nástrojů rozhraní IDE|Vyberte první tlačítko na panelu nástrojů Standardní.|**ALT**, **CTRL** + **KARTU**|
-|Panelech nástrojů|Přesune fokus na panely nástrojů v panelu nástrojů. <br> <br> **Poznámka:** tento postup funguje pro většinu okna nástrojů, ale pouze v případě, že je aktivní v panelu nástrojů. Kromě toho musíte zvolit klávesu SHIFT před klávesu ALT. V některých oknech nástrojů, jako je například Průzkumník týmových projektů musí podržte stisknutou klávesu SHIFT na chvíli předtím, než zvolí klávesu ALT.|**SHIFT** + **ALT**|
+|Panelech nástrojů|Přesune fokus na panely nástrojů v panelu nástrojů. <br> <br> **POZNÁMKA:** Tento postup funguje pro většinu okna nástrojů, ale pouze v případě, že je aktivní v panelu nástrojů. Kromě toho musíte zvolit klávesu SHIFT před klávesu ALT. V některých oknech nástrojů, jako je například Průzkumník týmových projektů musí podržte stisknutou klávesu SHIFT na chvíli předtím, než zvolí klávesu ALT.|**SHIFT** + **ALT**|
 |Panely nástrojů|Přejdete na první položku v dalším panelu nástrojů (když je fokus panelu nástrojů).|**CTRL** + **KARTU**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>Další užitečné kombinace klávesových zkratek
@@ -62,10 +61,10 @@ Některé další užitečné kombinace klávesových zkratek, patří.
 
 |Funkce|Popis|Kombinace kláves|
 |-------------|-----------------| - |
-|IDE – integrované vývojové prostředí|Vysoký kontrast – zapnutí a vypnutí. <br> <br> **Poznámka:** místní standardní Windows|**LEVÝ ALT + LEVÝ SHIFT + PRINT SCREEN**|
-|Dialogové okno|Zaškrtněte nebo zrušte zaškrtnutí políčka zaškrtávací políčko v dialogovém okně. <br> <br> **Poznámka:** místní standardní Windows|**MEZERNÍK**|
-|Kontextové nabídky|Otevřete nabídku kontextu (klikněte pravým tlačítkem). <br> <br> **Poznámka:** místní standardní Windows|**SHIFT** + **F10**|
-|Nabídky|Rychlý přístup k položce nabídky pomocí jeho klíče akcelerátoru. Zvolte **ALT** klíč následovaný podtržené písmena v nabídce k aktivaci příkazu. Chcete-li zobrazit dialogové okno Otevřít projekt v sadě Visual Studio, například byste zvolili **ALT** + **F** + **O**  +  **P**.  <br><br> **Poznámka:** místní standardní Windows|**ALT** + **[písmeno]**|
+|IDE – integrované vývojové prostředí|Vysoký kontrast – zapnutí a vypnutí. <br> <br> **POZNÁMKA:** Standardní místní Windows|**LEVÝ ALT + LEVÝ SHIFT + PRINT SCREEN**|
+|Dialogové okno|Zaškrtněte nebo zrušte zaškrtnutí políčka zaškrtávací políčko v dialogovém okně. <br> <br> **POZNÁMKA:** Standardní místní Windows|**MEZERNÍK**|
+|Kontextové nabídky|Otevřete nabídku kontextu (klikněte pravým tlačítkem). <br> <br> **POZNÁMKA:** Standardní místní Windows|**SHIFT** + **F10**|
+|Nabídky|Rychlý přístup k položce nabídky pomocí jeho klíče akcelerátoru. Zvolte **ALT** klíč následovaný podtržené písmena v nabídce k aktivaci příkazu. Chcete-li zobrazit dialogové okno Otevřít projekt v sadě Visual Studio, například byste zvolili **ALT** + **F** + **O**  +  **P**.  <br><br> **POZNÁMKA:** Standardní místní Windows|**ALT** + **[písmeno]**|
 |Okno nástrojů|Přecházení mezi kartami sady nástrojů.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **ŠIPKA DOLŮ**|
 |Okno nástrojů|Přidání ovládacího prvku z panelu nástrojů do formuláře nebo návrháře.|**ZADEJTE**|
 |Klávesnice, prostředí, dialogové okno Možnosti|Odstranit kombinace klíče zadané v **stiskněte klávesovou zkratku** možnost.|**BACKSPACE**|
@@ -99,12 +98,12 @@ Tady je způsob.
 
    ![Na kartě zvuky zvukové apletu ve Windows 10](media/sound-applet.png)
 
-4. Klikněte na tlačítko **OK**.
+4. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také:
 
 * [Funkce pro usnadnění přístupu sady Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
-* [Postupy: přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [Postupy: Přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Přizpůsobení prostředí IDE sady Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
 * [Společnosti Microsoft věnovaném usnadnění](https://www.microsoft.com/Accessibility)
 * [Usnadnění přístupu (Visual Studio for Mac)](/visualstudio/mac/accessibility)

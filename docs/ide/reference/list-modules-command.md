@@ -2,7 +2,6 @@
 title: Listovat moduly – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962646"
 ---
 # <a name="list-modules-command"></a>Listovat moduly – příkaz
 Seznam modulů pro aktuální proces.
@@ -35,44 +34,44 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 ```
 
 #### <a name="parameters"></a>Parametry
- A adresa:`yes|no`
+ / Adresa:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit adresy paměti modulů. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, jestli se má zobrazit adresy paměti modulů. Výchozí hodnota je `yes`.
 
  / Name:`yes|no`
 
  Volitelné. Určuje, jestli se má zobrazit názvy modulů. Výchozí hodnota je `yes`.
 
- / Pořadí:`yes|no`
+ / Order:`yes|no`
 
- Volitelné. Určuje, jestli se má zobrazit pořadí modulů. Výchozí hodnota je `no`.
+ Volitelné. Určuje, zda-li zobrazit pořadí modulů. Výchozí hodnota je `no`.
 
- Či cestu:`yes|no`
+ / Path:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit cesty moduly. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, jestli se má zobrazit cesty moduly. Výchozí hodnota je `yes`.
 
- Nebo proces:`yes|no`
+ / Process:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit procesy modulů. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se má zobrazit procesy moduly. Výchozí hodnota je `no`.
 
- Nebo soubor symbolů:`yes|no`
+ / Souborsymbolů:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit soubory symbolů modulů. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se má zobrazit soubory symbolů z modulů. Výchozí hodnota je `no`.
 
  / SymbolStatus:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit stavy symbol modulů. Výchozí hodnota je `yes`.
+ Volitelné. Určuje, jestli se má zobrazit symbol stavy modulů. Výchozí hodnota je `yes`.
 
  / Časové razítko:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit časová razítka modulů. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se má zobrazit časová razítka modulů. Výchozí hodnota je `no`.
 
- / Verze:`yes|no`
+ / Version:`yes|no`
 
- Volitelné. Určuje, zda chcete zobrazit verzích moduly. Výchozí hodnota je `no`.
+ Volitelné. Určuje, jestli se má zobrazit verze modulů. Výchozí hodnota je `no`.
 
 ## <a name="example"></a>Příklad
- Tento příklad obsahuje názvy modulů, adresy a časová razítka pro aktuální proces.
+ Tento příklad zobrazí seznam názvů modulů, adresy a časová razítka pro aktuální proces.
 
 ```
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
@@ -82,4 +81,4 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Postupy: použití okna moduly](../../debugger/how-to-use-the-modules-window.md)
+- [Postupy: Použití okna moduly](../../debugger/how-to-use-the-modules-window.md)

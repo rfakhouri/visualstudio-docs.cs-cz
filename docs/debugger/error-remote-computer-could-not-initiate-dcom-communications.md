@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Vzdálený počítač nemohl inicializovat komunikace modelu DCOM | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: Vzdálený počítač nemohl inicializovat komunikace modelu DCOM. | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.unmarshal_callback_failed
@@ -16,29 +14,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 111c8b010f9d1415e8e9e4e86e1401346f78702d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f507f8f2630c001beb9aad3e6f76904e6cd11489
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887500"
 ---
-# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Chyba: Vzdálený počítač nemohl inicializovat komunikace modelu DCOM.
-Chyba DCOM došlo k chybě při pokusu o komunikaci s místní počítač vzdáleného počítače. Je na počítač, který je v místním počítači  
+# <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Chyba: Vzdálený počítač nemohl inicializovat komunikaci modelu DCOM.
+Při pokusu o komunikaci s místním počítači, na vzdáleném počítači došlo k chybě modelu DCOM. Místní počítač je počítač, který je  
   
  spuštění sady Visual Studio. Této chybě může dojít z několika důvodů:  
   
--   Místní počítače je povolena brána firewall.  
+-   Místní počítač má povolenou bránu firewall.  
   
--   Ověřování systému Windows ze vzdáleného počítače v místním počítači nefunguje.  
+-   Ověřování Windows ze vzdáleného počítače v místním počítači nefunguje.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
-1.  Pokud místní počítač povolíte bránu Windows Firewall, najdete v části [vzdálené ladění](../debugger/remote-debugging.md) pokyny o tom, jak nakonfigurovat bránu firewall pro místní ladění.  
+1.  Pokud místní počítač má povolenou bránu Windows Firewall, přečtěte si téma [vzdálené ladění](../debugger/remote-debugging.md) pokyny o tom, jak nakonfigurovat bránu firewall pro místní ladění.  
   
-2.  Test ověřování systému Windows tak, že zkusíte otevřete sdílené složky v místním počítači ze vzdáleného serveru.  
+2.  Testovací ověření Windows tak, že zkusíte otevřít sdílené složky na místním počítači ze vzdáleného serveru.  
   
-3.  Chcete-li obnovit ověřování systému Windows, zkuste restartování obou počítačů. Zkontrolujte protokoly událostí na místních i vzdálených počítačích pro chyby protokolu Kerberos a známé problémy, kontaktujte správce domény.  
+3.  Chcete-li obnovit ověřování Windows, zkuste restartovat oba počítače. Zkontrolujte protokoly událostí na místních i vzdálených počítačů pro chyby protokolu Kerberos a obraťte se na správce domény pro známé problémy.  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)

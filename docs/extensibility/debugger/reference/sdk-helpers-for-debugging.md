@@ -1,9 +1,6 @@
 ---
 title: Pomocníci sad SDK pro ladění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942408"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocníci sad SDK pro ladění
 Tyto funkce a deklarace jsou globální pomocných funkcí pro provádění ladicími stroji vyhodnocovače výrazů a poskytovatelé symbol v jazyce C++.  
@@ -179,7 +176,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Nastavte na nenulovou hodnotu označující podporu pro nastavení zarážky na změny v datech.|  
 |metricDisassembly|Nastavte na nenulovou hodnotu označující podporu pro produkční prostředí výpisu zpětný překlad.|  
 |metricDumpWriting|Nastavte na nenulovou hodnotu označující podporu pro zápis (výpis paměti na výstupní zařízení) s výpisem paměti.|  
-|metricENC|Nastavte na nenulovou hodnotu označující podpora pro funkce upravit a pokračovat. **Poznámka:** vlastního ladicího stroje nikdy nesmíte nastavit to nebo by měla vždy nastavte na hodnotu 0.|  
+|metricENC|Nastavte na nenulovou hodnotu označující podpora pro funkce upravit a pokračovat. **Poznámka:**  Vlastního ladicího stroje nikdy nesmíte nastavit to nebo by měla vždy nastavte na hodnotu 0.|  
 |metricExceptions|Nastavte na nenulovou hodnotu označující podporu pro výjimky.|  
 |metricFunctionBP|Nastavte na nenulovou hodnotu označující podpora pro pojmenované zarážky (zarážky, které přerušit, když se některé název funkce je volána).|  
 |metricHitCountBP|Nastavte na nenulovou hodnotu označující podporu pro nastavení zarážky "Zasáhněte bodu" (zarážky, které se aktivují až poté, co se dosažení určitého počtu pokusů o).|  
@@ -194,7 +191,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Nastavte tuto vlastnost na nenulovou hodnotu označující, že poskytovatel program by měla být vždy načteno místně.|  
 |metricEngineCanWatchProcess|Nastavte na nenulovou hodnotu označující, že bude sledovat ladicí stroj pro zpracování událostí místo poskytovatele programu.|  
 |metricRemoteDebugging|Nastavte na nenulovou hodnotu označující podpory vzdáleného ladění.|  
-|metricEncUseNativeBuilder|Nastavte tuto vlastnost na nenulovou hodnotu označující, že upravit a pokračovat správce používejte encbuild.dll ladicí stroj pro sestavení pro úpravy a pokračování. **Poznámka:** vlastního ladicího stroje nikdy nesmíte nastavit to nebo by měla vždy nastavte na hodnotu 0.|  
+|metricEncUseNativeBuilder|Nastavte tuto vlastnost na nenulovou hodnotu označující, že upravit a pokračovat správce používejte encbuild.dll ladicí stroj pro sestavení pro úpravy a pokračování. **Poznámka:**  Vlastního ladicího stroje nikdy nesmíte nastavit to nebo by měla vždy nastavte na hodnotu 0.|  
 |metricLoadUnderWOW64|Nastavte na nenulovou hodnotu označující, že ladicí stroj by měly být načteny v laděném procesu pod WOW, při ladění procesu 64-bit; ladicí stroj v opačném případě bude načten v procesu sady Visual Studio (která je spuštěna v modulu WOW64).|  
 |metricLoadProgramProviderUnderWOW64|Nastavte na nenulovou hodnotu označující, že poskytovatel program by měl být načteny v laděném procesu, při ladění 64bitového procesu pod WOW; v opačném případě bude být načten v procesu sady Visual Studio.|  
 |metricStopOnExceptionCrossingManagedBoundary|Nastavte na nenulovou hodnotu označující, že pokud dojde k neošetřené výjimce přes hranice spravovaného a nespravovaného kódu by se měla zastavit proces.|  
@@ -262,17 +259,17 @@ HRESULT EnumMetricSections(
   
  *[metrika] = [hodnota metriky]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[klíč registru]*|`HKEY_CURRENT_USER` nebo `HKEY_LOCAL_MACHINE`.|  
 |*[kořenové verze]*|Verze sady Visual Studio (například `7.0`, `7.1`, nebo `8.0`). Ale tohoto kořenového adresáře lze také změnit pomocí **/rootsuffix** přepnout na **devenv.exe**. Pro VSIP, je obvykle tento modifikátor **Exp**, takže kořenové verze bude, například 8.0Exp.|  
-|*[metriky kořenové]*|Je to `AD7Metrics` nebo `AD7Metrics(Debug)`, v závislosti na tom, jestli se používá ladicí verzi dbgmetric.lib. **Poznámka:** zda dbgmetric.lib se používá, tyto zásady vytváření názvů by měl být nedodržuje Pokud máte rozdíly mezi debug a release verze, které se musí projevit v registru.|  
+|*[metriky kořenové]*|Je to `AD7Metrics` nebo `AD7Metrics(Debug)`, v závislosti na tom, jestli se používá ladicí verzi dbgmetric.lib. **Poznámka:**  Ať už využitá nebo ne dbgmetric.lib je, tyto zásady vytváření názvů by měl být nedodržuje Pokud máte rozdíly mezi debug a release verze, které se musí projevit v registru.|  
 |*[typu metrika.]*|Typ metriky k zapsání: `Engine`, `ExpressionEvaluator`, `SymbolProvider`atd. Všechny jsou definované jako dbgmetric.h jako `metricTypeXXXX`, kde `XXXX` je název specifického typu.|  
 |*[metrika]*|Název položky pro přiřazení hodnoty k nastavení metriky. Skutečné organizace metriky závisí na typu metrika.|  
 |*[hodnota metriky]*|Hodnota přiřazená k metriku. Typ by měl mít (string, number, atd.) závisí na metriku.|  
   
 > [!NOTE]
->  Všechny identifikátory GUID se ukládají ve formátu `{GUID}`. Například `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+>  Všechny identifikátory GUID se ukládají ve formátu `{GUID}`. Například, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Ladicí stroje  
  Následuje uspořádání metrik ladicí moduly v registru. `Engine` je název typu metrika. ladicí stroj a odpovídá *[typ metriky]* ve výše uvedené podstromu registru.  
@@ -295,7 +292,7 @@ HRESULT EnumMetricSections(
   
  `1` = *[guid dodavatele portu]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[identifikátor guid modulu]*|Identifikátor GUID ladicího stroje.|  
 |*[identifikátor guid třídy]*|Identifikátor GUID třídy, která implementuje tento ladicí stroj.|  
@@ -314,7 +311,7 @@ HRESULT EnumMetricSections(
   
  *[metrika] = [hodnota metriky]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[guid dodavatele portu]*|Identifikátor GUID dodavatele portu|  
 |*[identifikátor guid třídy]*|Identifikátor GUID třídy, která implementuje tohoto dodavatele portu|  
@@ -342,7 +339,7 @@ HRESULT EnumMetricSections(
   
  *[metrika] = [hodnota metriky]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[symbol identifikátor guid]*|GUID poskytovatele symbolů|  
 |*[identifikátor guid třídy]*|Identifikátor GUID třídy, která implementuje tento poskytovatel symbolů|  
@@ -371,7 +368,7 @@ HRESULT EnumMetricSections(
   
  `1` = *[ladicí stroj guid]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[identifikátor guid jazyka]*|Identifikátor GUID jazyka|  
 |*[identifikátor guid dodavatele]*|Identifikátor GUID dodavatele|  
@@ -389,7 +386,7 @@ HRESULT EnumMetricSections(
   
  *[metrika] = [hodnota metriky]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[identifikátor guid rozšíření]*|Identifikátor GUID rozšíření Chyba při vyhodnocování výrazu|  
   
@@ -414,7 +411,7 @@ HRESULT EnumMetricSections(
   
  *[metrika] = [hodnota metriky]*  
   
-|Zástupný text|Popis|  
+|Zástupný symbol|Popis|  
 |-----------------|-----------------|  
 |*[ladicí stroj guid]*|Identifikátor GUID ladicího stroje, který podporuje výjimky.|  
 |*[typy výjimek]*|Obecný název podklíče identifikující třídu výjimky, které mohou být zpracovány. Typické názvy jsou **výjimky jazyka C++**, **výjimky Win32**, **výjimky modulu Common Language Runtime**, a **nativních kontrol za běhu**. Tyto názvy se také používají k identifikaci konkrétní třídu výjimky na uživatele.|  

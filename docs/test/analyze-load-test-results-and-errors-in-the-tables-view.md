@@ -22,13 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f77653f8a099f66d751880c412e1532d4a23e656
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962633"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení Analyzéru zátěžového testu
 
@@ -55,7 +54,7 @@ Následující tabulka obsahuje seznam tabulek, které jsou k dispozici k analý
 |Název tabulky|Popis|
 |-|-|
 |Chyby|Zobrazí seznam chyb, ke kterým došlo během zátěžového testu. Další informace najdete v tématu [tabulka The chyby](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) v tomto tématu a [výsledky zátěžového testu analyzovat](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Stránky|Zobrazí seznam stránek přístup při spuštění zátěžového testu. Některá data v této tabulce je k dispozici, až po dokončení zátěžového testu. Další informace najdete v tématu [postupy: zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Stránky|Zobrazí seznam stránek přístup při spuštění zátěžového testu. Některá data v této tabulce je k dispozici, až po dokončení zátěžového testu. Další informace najdete v tématu [jak: Zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Požadavky|Zobrazí podrobnosti pro jednotlivé požadavky vydané během zátěžového testu. To zahrnuje všechny požadavky HTTP a závislé požadavky, jako jsou obrázky. Další informace najdete v tématu [tabulky The Requests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) v tomto tématu.|
 |Trasování SQL|Zobrazí výsledky trasování jazyka SQL. Tato tabulka je k dispozici, až po dokončení zátěžového testu a pouze v případě, že během testu byl použit trasování jazyka SQL. Další informace najdete v tématu [tabulka dat trasovacího SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) v tomto tématu.|
 |Testy|Zobrazí podrobnosti pro jednotlivé testy spuštěny během zátěžového testu. Další informace najdete v tématu [testy tabulky](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) v tomto tématu.|
@@ -66,7 +65,7 @@ Následující tabulka obsahuje seznam tabulek, které jsou k dispozici k analý
 
 ## <a name="collect-percentile-data"></a>Shromažďovat data pro percentil
 
- Některé tabulky testu zatížení může obsahovat další sloupce, které zahrnují percentil dat a doby odezvy rozdělen do skupin podle emulace sítě. Ve výchozím nastavení tato data nejsou shromažďována. Zobrazení dat je k dispozici pouze při ukládání výsledků do databáze, a ne při uložení místně. Další informace najdete v tématu [výsledků zátěžového testu Správa v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md). Kromě toho pro shromažďování těchto dat v **editoru zátěžových testů**v části **parametrů běhu** uzlu, vyberte konkrétní spuštění uzlu nastavení změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **StatisticsOnly** nebo **AllIndividualDetails**. Další informace najdete v tématu [postupy: zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+ Některé tabulky testu zatížení může obsahovat další sloupce, které zahrnují percentil dat a doby odezvy rozdělen do skupin podle emulace sítě. Ve výchozím nastavení tato data nejsou shromažďována. Zobrazení dat je k dispozici pouze při ukládání výsledků do databáze, a ne při uložení místně. Další informace najdete v tématu [výsledků zátěžového testu Správa v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md). Kromě toho pro shromažďování těchto dat v **editoru zátěžových testů**v části **parametrů běhu** uzlu, vyberte konkrétní spuštění uzlu nastavení změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **StatisticsOnly** nebo **AllIndividualDetails**. Další informace najdete v tématu [jak: Zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Tabulka požadavků
 
@@ -118,7 +117,7 @@ Následující tabulka obsahuje seznam tabulek, které jsou k dispozici k analý
  V následující tabulce jsou uvedeny ve sloupcích v **transakce** tabulky.
 
 > [!NOTE]
-> Chcete-li zobrazit všechny sloupce, je nutné povolit vlastnost úložiště podrobností časování, která je spojena s aktivní parametr spuštění. Další informace najdete v tématu [postupy: určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Chcete-li zobrazit všechny sloupce, je nutné povolit vlastnost úložiště podrobností časování, která je spojena s aktivní parametr spuštění. Další informace najdete v tématu [jak: Určení vlastnosti úložiště podrobností časování](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Sloupec|Popis|Zobrazuje bez podrobnosti časování|
 |-|-|-|
@@ -133,8 +132,8 @@ Následující tabulka obsahuje seznam tabulek, které jsou k dispozici k analý
 |**Minimální doba odezvy**|To nezahrnuje čas přemýšlení.|Ne|
 |**Maximální doba odezvy**|To nezahrnuje čas přemýšlení.|Ne|
 |**Medián doby odezvy**|To nezahrnuje čas přemýšlení.|Ne|
-|**90 % doby odezvy**|90. percentil hodnoty pro čas transakce. To nezahrnuje čas přemýšlení. **Poznámka:** tím se liší od Visual Studio Team System 2008 testu zatížení Agent, který používá **90 % času transakce** hodnotu.|Ne|
-|**95 % doby odezvy**|95. percentil hodnoty pro čas transakce. To nezahrnuje čas přemýšlení. **Poznámka:** tím se liší od Visual Studio Team System 2008 testu zatížení Agent, který používá **95 % doby transakce** hodnotu.|Ne|
+|**90 % doby odezvy**|90. percentil hodnoty pro čas transakce. To nezahrnuje čas přemýšlení. **Poznámka:**  Tím se liší od Visual Studio Team System 2008 testu zatížení Agent, který používá **90 % času transakce** hodnotu.|Ne|
+|**95 % doby odezvy**|95. percentil hodnoty pro čas transakce. To nezahrnuje čas přemýšlení. **Poznámka:**  Tím se liší od Visual Studio Team System 2008 testu zatížení Agent, který používá **95 % doby transakce** hodnotu.|Ne|
 |**99 % doby odezvy**|Úrovni 99. percentil hodnoty pro čas transakce. To nezahrnuje čas přemýšlení.|Ne|
 |**Směrodatná odchylka doby odezvy**|To nezahrnuje čas přemýšlení.|Ne|
 
@@ -244,7 +243,7 @@ V zobrazení tabulky můžete zobrazit až čtyři tabulky v čase bez tabulek p
 ## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
+- [Postupy: Přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analýza výsledků zátěžových testů v zobrazení grafů](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analýza překročení mezních pravidel](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Správa výsledků zátěžových testů v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md)

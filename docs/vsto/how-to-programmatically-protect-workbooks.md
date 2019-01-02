@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: zamykání sešitů'
-ms.custom: ''
+title: 'Postupy: Zamykání sešitů'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900768"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>Postupy: zamykání sešitů
+# <a name="how-to-programmatically-protect-workbooks"></a>Postupy: Zamykání sešitů
   Sešit Microsoft Office Excelu můžete chránit tak, aby uživatelé nelze přidat nebo odstraňování listů a také programově odemknutí sešitu. Volitelně můžete zadat heslo, uvádí, zda má být struktura chráněných (takže uživatele nelze přesunout seznamy) a určit, jestli chcete v sešitu windows chráněné.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Uzamčení sešitu nezastaví zabránit uživatelům v úpravě buňky. K ochraně dat, je nutné chránit listů. Další informace najdete v tématu [postupy: zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md).  
+ Uzamčení sešitu nezastaví zabránit uživatelům v úpravě buňky. K ochraně dat, je nutné chránit listů. Další informace najdete v tématu [jak: Zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md).  
   
  Následující příklady kódu použít proměnnou tak, aby obsahovala heslo, které pochází od uživatele.  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35675687"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce se sešity](../vsto/working-with-workbooks.md)   
- [Postupy: zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Postupy: skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Postupy: Zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Postupy: Skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

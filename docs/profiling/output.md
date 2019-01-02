@@ -1,8 +1,6 @@
 ---
-title: Výstup | Microsoft Docs
-ms.custom: ''
+title: Výstup | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f152a1c282688fb00428274e450d7073dfa946
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4bca95dea2ac381d28d2c2a4043f94dcfb6fd6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922250"
 ---
 # <a name="output"></a>Výstup
-**Výstup** možnost určuje název datového souboru profilace pro výkonnostní relace. **Výstup** musí být použit s **spustit** možnost.  
+**Výstup** Určuje název souboru dat profilování pro relaci výkonu. **Výstup** musí být použit s **Start** možnost.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -28,23 +26,23 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
   
 #### <a name="parameters"></a>Parametry  
  `FileName`  
- Název datového souboru. Úplné a částečné cesty, jsou přijaty. Pokud cesta není zadána, soubor je vytvořen v aktuálním adresáři.  
+ Název datového souboru. Jsou přijímány úplné a částečné cesty. Pokud cesta není zadaná, soubor se vytvoří v aktuálním adresáři.  
   
 ## <a name="required-options"></a>Požadované možnosti  
- **Výstup** možnost se musí použít s **spustit** možnost.  
+ **Výstup** možnost musí být použita s **Start** možnost.  
   
  **Spusťte:** `Method`  
  Určuje název výstupního souboru.  
   
 ## <a name="example"></a>Příklad  
- V následujícím příkladu je profilování datový soubor vytvoří v aktuálním adresáři.  
+ V následujícím příkladu je vytvořen soubor dat profilování v aktuálním adresáři.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

@@ -3,7 +3,6 @@ title: Ve smíšeném režimu ladění pro Python
 description: Ladění současně C++ a Python v sadě Visual Studio, včetně krokování mezi prostředími, zobrazení hodnot a vyhodnocení výrazů.
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b654af11ce61cb9331682f8b46e4476c06020ed3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885952"
 ---
 # <a name="debug-python-and-c-together"></a>Společně ladění Pythonu a C++
 
@@ -40,7 +39,7 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 
 |   |   |
 |---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Úvod do vytváření, testování a ladění nativních modulů jazyka C pomocí sady Visual Studio, naleznete v tématu [podrobně: vytvořit nativní moduly](https://youtu.be/D9RlT06a1EI) (webu youtube.com, 9 min 09s). Video se vztahuje na Visual Studio 2015 a 2017. |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Úvod do vytváření, testování a ladění nativních modulů jazyka C pomocí sady Visual Studio, naleznete v tématu [podrobné informace: Vytvoření nativní moduly](https://youtu.be/D9RlT06a1EI) (webu youtube.com, 9 min 09s). Video se vztahuje na Visual Studio 2015 a 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Povolit ladění ve smíšeném režimu v projektu Pythonu
 
@@ -172,7 +171,7 @@ Ladění ve smíšeném režimu se liší od [standardní ladicího programu Pyt
 - **Okamžité** okna: je k dispozici ale s omezenou podmnožinou jeho funkce, včetně všech omezení uvedené tady.
 - Podporované verze Pythonu: CPython 2.7 a 3.3 + pouze.
 - Prostředí sady Visual Studio: Při použití Pythonu s prostředí sady Visual Studio (například pokud jste nainstalovali pomocí integrovaného instalační program), Visual Studio nedokáže otevřít projekty v jazyce C++ a možnosti úprav souborů C++ je pouze základní textového editoru. Ale ladění jazyka C/C++ a ladění ve smíšeném režimu jsou plně podporované v prostředí se zdrojovým kódem, krokování s vnořením do nativního kódu a C++ vyhodnocení výrazu v oknech ladicího programu.
-- Zobrazení a rozbalení objektů: při zobrazení Pythonu objekty v **lokální** a **Watch** ladicího programu nástroje systému windows, kombinovaný režim ladění zobrazuje pouze strukturu objektů. Automaticky se vyhodnotí vlastnosti nebo Zobrazit počítané atributy. Pro kolekce, zobrazuje pouze prvky pro předdefinovanou kolekci typů (`tuple`, `list`, `dict`, `set`). Typy vlastních kolekcí nejsou vizualizovat jako kolekce, pokud jsou zděděny z některé předdefinované kolekce typu.
+- Zobrazení a rozbalení objektů: Při zobrazení Pythonu objekty v **lokální** a **Watch** ladicího programu nástroje systému windows, kombinovaný režim ladění zobrazuje pouze struktury objektů. Automaticky se vyhodnotí vlastnosti nebo Zobrazit počítané atributy. Pro kolekce, zobrazuje pouze prvky pro předdefinovanou kolekci typů (`tuple`, `list`, `dict`, `set`). Typy vlastních kolekcí nejsou vizualizovat jako kolekce, pokud jsou zděděny z některé předdefinované kolekce typu.
 - Vyhodnocení výrazu: viz níže.
 
 ### <a name="expression-evaluation"></a>Vyhodnocení výrazu

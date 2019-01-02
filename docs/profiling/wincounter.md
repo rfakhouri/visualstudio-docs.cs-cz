@@ -1,8 +1,6 @@
 ---
-title: WinCounter | Microsoft Docs
-ms.custom: ''
+title: WinCounter | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
@@ -10,21 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9778504cb95371a95e6e25ca6a76c7d96a648a62
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 51cb5aa0a41f311ea9c24a4ed512d6df4fe2e10f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875216"
 ---
 # <a name="wincounter"></a>WinCounter
-**WinCounter** možnost určuje Windows nebo čítač výkonu aplikace během spuštění profilu shromažďovat ve stanovených intervalech. Systém Windows a čítače výkonu aplikace jsou uvedeny jako značky v profilaci datového souboru. Můžete určit více čítačů výkonu ke shromažďování v samostatné možnosti.  
+**WinCounter** určuje Windows nebo čítač výkonu aplikace na shromažďování v nastavených intervalech během profil spustit. Windows a čítače výkonu aplikace jsou uvedené jako značky v souboru dat profilování. Můžete zadat více čítačů výkonu k získání v samostatné možnosti.  
   
- Ve výchozím nastavení, jsou shromažďovány čítače každých 500 milisekund. Použití **pro automatické označování** možnost zadat interval jinou kolekci.  
+ Ve výchozím nastavení, se shromažďují čítače každých 500 milisekund. Použití **AutoMark** lze zadat interval jinou kolekci.  
   
- Pouze jeden **pro automatické označování** možnost se používá. Pokud je to více **pro automatické označování** možnosti jsou určena, bude použita jako poslední.  
+ Pouze jeden **AutoMark** možnost se používá. Pokud je položek víc **AutoMark** možnosti se uvádějí, použije se ten poslední.  
   
- **WinCounter** možnost lze použít pouze s **spustit** možnost.  
+ **WinCounter** možnost se dá použít jenom s **Start** možnost.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,29 +32,29 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
   
 #### <a name="parameters"></a>Parametry  
  `Path`  
- Čítač výkonu systému Windows ve formátu cesta PDH čítače.  
+ Čítače výkonu Windows ve formátu cesty čítače PDH.  
   
 ## <a name="required-options"></a>Požadované možnosti  
- **WinCounter** možnost lze použít pouze s **spustit** možnost.  
+ **WinCounter** možnost se dá použít jenom s **Start** možnost.  
   
  **Spusťte:** `Method`  
- **Spustit** možnost inicializuje profileru pro zadanou metodu profilování.  
+ **Start** možnost inicializuje profiler k zadané metodě profilování.  
   
-## <a name="exclusive-options"></a>Vylučující možnosti  
- **Pro automatické označování** možnost lze použít pouze s **WinCounter** možnost.  
+## <a name="exclusive-options"></a>Výhradní možnosti  
+ **AutoMark** možnost se dá použít jenom s **WinCounter** možnost.  
   
- **Pro automatické označování:** `Milliseconds`  
- Určuje počet milisekund, po mezi shromažďování dat čítačů výkonu systému Windows.  
+ **AutoMark:** `Milliseconds`  
+ Určuje počet milisekund mezi shromažďování dat čítačů výkonu Windows.  
   
 ## <a name="example"></a>Příklad  
- V následujícím příkladu nejsou zadány dvě čítačů výkonu systému Windows mají být vybrány v intervalu 1 000 milisekund.  
+ V následujícím příkladu jsou uvedeny dva čítače výkonu Windows se mají shromažďovat v intervalu 1 000 milisekund.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+## <a name="see-also"></a>Viz také:  
+ [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

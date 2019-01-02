@@ -3,7 +3,6 @@ title: 'Rychlý start: Vytvoření webové služby ASP.NET Core vF#'
 description: Zjistěte, jak vytvořit webovou službu ASP.NET Core v sadě Visual Studio s F#, krok za krokem.
 ms.date: 08/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -13,14 +12,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 884dfec4d3b8050fa6059cb0f505e1c7619336f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961868"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Rychlý start: Použití sady Visual Studio k vytvoření vaší první webové služby ASP.NET Core vF#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Rychlý start: Pomocí sady Visual Studio k vytvoření vaší první webové služby ASP.NET Core vF#
 
 V tomto úvodu 5 až 10 minut na F# v sadě Visual Studio vytvoříte F# webová aplikace ASP.NET Core.
 

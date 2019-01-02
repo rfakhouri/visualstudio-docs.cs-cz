@@ -1,9 +1,6 @@
 ---
-title: Poskytnutí automatizace pro VSPackages | Microsoft Docs
-ms.custom: ''
+title: Poskytování automatizace pro balíčky VSPackages | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
@@ -14,34 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb5f3393443e41c9bd99a8890b53bedae006d7a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926851"
 ---
-# <a name="providing-automation-for-vspackages"></a>Poskytnutí automatizace pro VSPackages
-Existují dva hlavní způsoby zajistit automatizace pro vaše VSPackages: implementací VSPackage konkrétní objekty a implementací objekty standardní automatizace. Obecně platí ty se používají společně rozšířit model automatizace prostředí.  
+# <a name="providing-automation-for-vspackages"></a>Poskytování automatizace pro balíčky VSPackages
+Existují dva hlavní způsoby poskytování automatizace pro vaše rozšíření VSPackages: implementací objektů specifických pro balíček VSPackage správy kódu a implementací standardní automatizační objekty. Obecně platí ty se používají společně k rozšíření modelu automatizace prostředí.  
   
-## <a name="vspackage-specific-objects"></a>VSPackage specifické objekty  
- Určitých místech v rámci modelu automatizace musíte poskytnout objekty automatizace, které jsou jedinečné pro vaše VSPackage. Například nové projekty vyžadují odlišné objekty, které poskytuje jenom vaše VSPackage. Názvy těchto objektů jsou uloženy do registru a získat prostřednictvím volání do prostředí `DTE` objektu.  
+## <a name="vspackage-specific-objects"></a>Objekty specifické VSPackage  
+ Některých místech v rámci modelu automatizace vyžadují, abyste poskytují objekty automatizace, které jsou jedinečné pro vaše VSPackage. Například nové projekty vyžadují různé objekty, které obsahuje pouze vašeho balíčku VSPackage. Názvy těchto objektů jsou uloženy do registru a získali prostřednictvím volání do prostředí `DTE` objektu.  
   
- VSPackage specifické objekty můžete získat také při příjemce automatizace používá objekt poskytnutý prostřednictvím vlastnosti objektu standardní objektu. Například standardní `Window` objekt má `Object` vlastnosti, které se běžně označuje jako `Windows.Object` vlastnost. Když uživatelé volat `Window.Object` na okno implementované v vaší VSPackage, předáte zpět objekt konkrétní automatizace vlastní návrh.  
+ VSPackage specifické objekty, nejde získat také při spotřebitel automation používá objekt poskytnutý prostřednictvím vlastnosti objektu standardní objektu. Například standardní `Window` objekt má `Object` vlastnost, běžně označované jako `Windows.Object` vlastnost. Při volání spotřebitelů `Window.Object` okna implementované v vašeho balíčku VSPackage, předáte zpět konkrétní automatizační objekt vlastní návrh.  
   
 #### <a name="projects"></a>Projekty  
- VSPackages můžete rozšířit model automatizace pro nové typy projektů prostřednictvím svých vlastních VSPackage konkrétní objekty. Primárním účelem poskytnutí nové objekty automatizace pro vaše VSPackage je k odlišení projektu jedinečný objekty od <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> nebo <xref:VSLangProj80.VSProject2> objektu. Tento rozdíl je užitečný, pokud chcete poskytnout způsob, jak vyčlenit nebo iteraci typ vašeho projektu kromě jiných typů projektů má zobrazit vedle sebe v řešení. Další informace najdete v tématu [vystavení objektů projektu](../../extensibility/internals/exposing-project-objects.md).  
+ Model automatizace pro nové typy projektů pomocí vlastní VSPackage specifické objekty, které můžete rozšířit rozšíření VSPackages. Hlavním účelem poskytnutí nových objektů automatizace pro vaše VSPackage je rozlišit projektu jedinečný objekty z <xref:Microsoft.VisualStudio.VCProjectEngine.VCProject> nebo <xref:VSLangProj80.VSProject2> objektu. Toto rozlišení je užitečné, pokud byste chtěli poskytnout způsob, jak jednoduché nebo iteraci vašeho typu projektu kromě jiných typů projektů by se zobrazují vedle sebe v řešení. Další informace najdete v tématu [zveřejnění objekty projektu](../../extensibility/internals/exposing-project-objects.md).  
   
 #### <a name="events"></a>Události  
- Architektura událostí prostředí nabízí jiné místo abyste připojit vlastní VSPackage konkrétní objekty. Například tak, že vytvoříte vlastní objekty jedinečný událostí, můžete rozšířit model událostí v prostředí pro projekty. Můžete chtít zadat vlastní události při přidání nové položky do vlastního typu projektu. Další informace najdete v tématu [vystavení události](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
+ Architektura události prostředí nabízí další místo, kde můžete přidat vlastní VSPackage konkrétní objekty. Tím, že vytvoříte vlastní objekty jedinečný událostí, je možné rozšířit model událostí prostředí pro projekty. Můžete chtít poskytnout vlastní události, když do své vlastní typ projektu se přidá nová položka. Další informace najdete v tématu [vystavení události](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md).  
   
 #### <a name="window-objects"></a>Objekty oken  
- Windows můžete předat zpět objekt automatizace VSPackage konkrétní zpět do prostředí při volání. Implementace objektu, který je odvozený od <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> nebo `IDispatch` , předá zpět vlastnosti, rozšíření objektu okna, ve kterém je umístěný. Například můžete použít tento přístup zajistit automatizace pro ovládací prvek umístěný v rámce okna. Sémantika tento objekt a všechny další objekty, které může prodloužit je váš návrh. Další informace najdete v tématu [postupy: poskytování automatizaci pro systém Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
+ Windows můžete předat zpět objekt automatizace specifické pro VSPackage zpět do prostředí při volání. Můžete implementovat objekt, který je odvozen z <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>, <xref:EnvDTE.IExtensibleObject> nebo `IDispatch` , která předá zpět vlastnosti rozšíření objekt okna, ve kterém je umístěn. Například můžete použít tento přístup k poskytování automatizace pro ovládací prvek umístěný v rámci okna. Sémantika tento objekt a všechny další objekty, které může prodloužit jsou do návrhu. Další informace najdete v tématu [jak: Poskytování automatizace pro Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md).  
   
-#### <a name="options-pages-on-the-tools-menu"></a>Možnosti stránky v nabídce Nástroje  
- Můžete vytvořit stránky rozšířit nástroje, Možnosti automatizace modelu prostřednictvím implementace stránky a přidání informací do registru a vytvořit vlastní možnosti. Vaše stránky může být volána prostřednictvím modelu objektu prostředí jako ostatní možnosti stránky. Pokud návrh funkce, kterou chcete přidat do prostředí prostřednictvím VSPackages vyžaduje možnosti stránky, měli byste přidat také podpora automatizace. Další informace najdete v tématu [automatizace podporu pro možnosti stránky](../../extensibility/internals/automation-support-for-options-pages.md).  
+#### <a name="options-pages-on-the-tools-menu"></a>Stránky možnosti v nabídce Nástroje  
+ Můžete vytvořit stránky, které rozšiřují nástroje, možnosti modelu automatizace prostřednictvím implementace stránky a přidání informací do registru a vytvořit vlastní možnosti. Vaše stránky může být volána prostřednictvím objektového modelu prostředí jako jakékoli jiné stránky možnosti. Vyžaduje-li návrh funkce, kterou chcete přidat do prostředí prostřednictvím rozšíření VSPackages stránky možností, měli byste přidat i podporu automatizace. Další informace najdete v tématu [podporu automatizace pro stránky možnosti](../../extensibility/internals/automation-support-for-options-pages.md).  
   
 ## <a name="standard-automation-objects"></a>Objekty standardní automatizace  
- Rozšířit automatizace pro projekty, můžete taky implementovat objekty standardní automatizace (odvozený z `IDispatch`), stát vedle jiné objekty projektu a implementovat standardní metody a vlastnosti. Standardní objektů projektu objekty, které jsou vloženy do hierarchie řešení, jako příklady `Projects`, `Project`, `ProjectItem`, a `ProjectItems`. Každý nový projekt typ měli implementovat tyto objekty (a případně dalších ty, které jsou v závislosti na sémantiky projektu).  
+ Rozšíření automatizace pro projekty, také implementovat objekty standardní automatizace (odvozený od `IDispatch`), který odlišit se vedle dalších objektů projektu a implementujte standardní metody a vlastnosti. Standardní objekty příklady projektu objekty, které jsou vloženy do hierarchii řešení, jako například `Projects`, `Project`, `ProjectItem`, a `ProjectItems`. Každý nový typ projektu by měly implementovat tyto objekty (a případně i další značky v závislosti na sémantiku projektu).  
   
- V tom smyslu zadejte tyto objekty opačné výhod VSPackage specifické objekty projektu. Objekty standardní automatizace povolit projektu, který se má použít zobecněný způsobem, jako je podpora stejné objekty jiných projektů. Proto doplněk, který je napsaných pro obecné `Project` a `ProjectItem` objekty může pracovat s projekty libovolného typu. Další informace najdete v tématu [projekt modelování](../../extensibility/internals/project-modeling.md).
+ V tom smyslu tyto objekty poskytují opačné výhod VSPackage specifické objekty projektu. Standardní automatizační objekty umožňují projekt tak, aby se použije v zobecněné způsob stejně jako libovolný jiný projekt podporuje stejné objekty. Díky tomu se doplněk, která je napsána proti Obecné `Project` a `ProjectItem` objekty, které můžou fungovat s projekty libovolného typu. Další informace najdete v tématu [projektu modelování](../../extensibility/internals/project-modeling.md).

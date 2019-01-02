@@ -1,9 +1,6 @@
 ---
-title: Implementace starší verze jazyka Service1 | Microsoft Docs
-ms.custom: ''
+title: Implementace starší verze jazyka1 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
@@ -13,39 +10,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0486b8ad035d64f542d48f1e304413780958d90c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3218a8cf1c61fb9b88520702a953f2288e19b3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855884"
 ---
-# <a name="implementing-a-legacy-language-service"></a>Implementace služby jazyk starší verze
-Třídy v rámci spravované balíčku (MPF) můžete použít k implementaci starší verze jazyka služba, která podporuje širokou řadu funkcí, například zvýraznění syntaxe, odpovídající složené závorce a doplňování IntelliSense.  
+# <a name="implementing-a-legacy-language-service"></a>Implementace služby starší verze jazyka
+Můžete použít třídy v rámci spravovaného balíčku (MPF) implementace služby starší verze jazyka, který podporuje širokou škálu funkcí, jako jsou zvýraznění syntaxe, párování složených závorek a dokončování IntelliSense.  
   
- Starší verze jazyka služby jsou implementovány jako součást VSPackage, ale novější způsob implementace funkce služby jazyk je použití MEF rozšíření. Další informace o nový způsob implementace služba jazyka, najdete v tématu [Editor a rozšíření služeb jazyk](../../extensibility/editor-and-language-service-extensions.md).  
+ Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace o nový způsob implementace služby jazyka najdete v tématu [Editor a rozšíření služeb jazyka](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Doporučujeme vám, že začnete používat co nejdříve editoru nové rozhraní API. Tím zvýšit výkon služby jazyk a umožňují využívat výhod nových funkcí editoru.  
+>  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Přehled služby starší verze jazyka](../../extensibility/internals/legacy-language-service-overview.md)  
  Přehled funkcí služby jazyka, které jsou podporovány v MPF.  
   
- [Implementace služby jazyk starší verze](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Popisuje, co je potřeba k implementaci a použití sady MPF služba jazyka.  
+ [Implementace služby starší verze jazyka](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ Popisuje, co je potřeba implementovat služba jazyka pomocí MPF.  
   
- [Registrace služby jazyk starší verze](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Popisuje kroky, které jsou potřeba k registraci služby jazyk na základě sady MPF s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ [Registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ Popisuje kroky, které jsou nutné k registraci služby jazyka založeného na MPF s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Analyzátor a skener služby starší verze jazyka](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Popisuje dvě analyzátory, které jsou nutné k implementaci všech funkcí jazyka služby pomocí MPF.  
+ Popisuje dva analyzátory, které jsou nutné k implementaci pomocí MPF všechny funkce služby jazyka.  
   
  [Návod: Vytvoření služby starší verze jazyka](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
- Poskytuje základní kroky, které jsou nutné k implementaci služby jazykové sady MPF ve VSPackage.  
+ Popisuje základní kroky, které jsou nutné k implementaci služby MPF jazyk v sadě VSPackage.  
   
  [Návod: Získání seznamu nainstalovaných fragmentů kódu (implementace starší verze)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
- Ukazuje techniky načítání seznamu fragmenty kódu nainstalované.  
+ Ukazuje techniky získání seznamu nainstalovaných fragmentů kódu.  
   
  [Funkce služby starší verze jazyka](../../extensibility/internals/legacy-language-service-features1.md)  
- Obsahuje odkazy na témata týkající se této podrobností, co je třeba provést pomocí sady MPF implementovat všechny funkce služba jazyka.
+ Obsahuje odkazy na témata této podrobné informace, co je třeba provést k implementaci pomocí MPF všechny funkce služby jazyka.

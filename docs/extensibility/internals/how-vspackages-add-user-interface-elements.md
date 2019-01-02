@@ -1,9 +1,6 @@
 ---
 title: Jak balíčky VSPackages přidávají prvky uživatelského rozhraní | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40e3d5266b69419e719c5de7a003e642e8016614
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962685"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak balíčky VSPackages přidávají prvky uživatelského rozhraní
 Můžete přidat prvky uživatelského rozhraní (UI), například nabídky, panely nástrojů a nástrojů systému windows, do sady Visual Studio prostřednictvím VSPackage *.vsct* souboru.  
@@ -185,7 +182,7 @@ priority="0x0100" type="Menu">
 </Combos>  
 ```  
   
-##### <a name="bitmaps"></a>Rastrové obrázky  
+##### <a name="bitmaps"></a>Bitmapy  
  Musí obsahovat příkazy, které se zobrazí spolu s ikonou `Icon` element, který odkazuje na rastrový obrázek pomocí jeho identifikátoru GUID a ID. Každý rastrového obrázku je definován jako [rastrový obrázek element](../../extensibility/bitmap-element.md) v `Bitmaps` oddílu. Pouze požadované atributy `Bitmap` definice jsou `guid` a `href`, která odkazuje na zdrojový soubor. Pokud zdrojový soubor pruh prostředků **usedList** atribut je také potřeba, seznam dostupných imagí v pruhu. Další informace najdete v tématu [rastrový obrázek element](../../extensibility/bitmap-element.md) dokumentaci.  
   
 ### <a name="parenting"></a>Správa nadřazených  

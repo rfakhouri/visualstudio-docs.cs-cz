@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: odebrání rozšíření se spravovaným kódem z dokumentů'
-ms.custom: ''
+title: 'Postupy: Odebrání rozšíření spravovaného kódu z dokumentů'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964770"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Postupy: odebrání rozšíření se spravovaným kódem z dokumentů
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>Postupy: Odebrání rozšíření spravovaného kódu z dokumentů
   Přizpůsobení sestavení můžete odebrat prostřednictvím kódu programu z dokumentu nebo sešitu, který je součástí přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word nebo Microsoft Office Excel. Uživatelé pak můžete otevřít dokumenty a zobrazit obsah, ale nezobrazí se žádné vlastní uživatelské rozhraní (UI) přidáte k dokumentům a kódu se nespustí.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Přizpůsobení sestavení můžete odebrat pomocí jedné z `RemoveCustomization` metody poskytované objektem [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Jakou metodu použijete, závisí na tom, jestli chcete odebrat vlastní nastavení v době běhu (spouštěním kódu v přizpůsobení při slovo dokumentu nebo Excelového sešitu je otevřený), nebo pokud chcete odebrat ze zavřeného dokumentu nebo dokumentu přizpůsobení této i s na serveru, který nemá nainstalovanou sadu Microsoft Office.  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [udělat jak mohu: připojit nebo odpojit sestavení VSTO z Wordového dokumentu?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postupy: Připojení nebo odpojení sestavení VSTO z Wordového dokumentu? ](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>Chcete-li odebrat vlastní nastavení sestavení za běhu  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35676443"
   
 ## <a name="see-also"></a>Viz také:  
  [Správa dokumentů na serveru s použitím třídy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Postupy: připojení spravovaného kódu rozšíření do dokumentů](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [Postupy: Připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

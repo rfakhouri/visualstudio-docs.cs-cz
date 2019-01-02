@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_backendbuild – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8687373ecd37087a08641f380362e68d0567695
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d83079b044a8e9d21010b203f080918e11098d1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847591"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 Získá číslo sestavení back-endu kompilátoru.  
@@ -27,7 +25,7 @@ Získá číslo sestavení back-endu kompilátoru.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_backEndBuild (   
+HRESULT get_backEndBuild (   
    DWORD* pRetVal  
 );  
 ```  

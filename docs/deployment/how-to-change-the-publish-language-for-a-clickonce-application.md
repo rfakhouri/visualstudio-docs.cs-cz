@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: Změna jazyka publikování pro aplikaci ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Změnit jazyka publikování pro aplikaci ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4567ab9b72ccf827f8fad0bd35654210a4457ad4
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 21fe434c1128c9f0b81455e010872ccaa49790f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871622"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Postupy: Změna jazyka publikování pro aplikaci ClickOnce
 
@@ -49,4 +47,4 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 ## <a name="see-also"></a>Viz také:
 
 - [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,9 +1,6 @@
 ---
 title: Dialogové okno pro výběr adresy URL (vývoj pro SharePoint v sadě Visual Studio) | Dokumentace společnosti Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.VWD.URLPicker
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffeca5bf0149ce5a36e5abb77eab673e87f36dc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925898"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Dialogové okno pro výběr adresy URL (vývoj pro SharePoint v sadě Visual Studio)
   V dialogovém okně pro výběr adresy URL můžete soubory, jako jsou soubory stránky předlohy nebo obrazových souborů, které se nacházejí v projektu nebo na místním serveru, na kterém běží SharePoint.  
@@ -46,7 +43,7 @@ ms.locfileid: "49950755"
   
   Rozbalte **Server** uzel a vyberte soubory, které jsou umístěné na místním serveru, na kterém běží SharePoint. Zobrazit jako volitelných v dialogovém okně, tyto soubory musí splňovat následující kritéria:  
   
-- Soubor se musí nacházet v jednom z následujících mapované složky: **image**, **rozložení**, nebo **ControlTemplates**.  
+- Soubor se musí nacházet v jednom z následujících mapované složky: **Obrázky**, **rozložení**, nebo **ControlTemplates**.  
   
 - Soubor nemůže být umístěné v databázi obsahu služby SharePoint.  
   
@@ -62,4 +59,3 @@ ms.locfileid: "49950755"
  [Vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [Vytvoření opakovaně použitelné ovládací prvky webové části nebo stránky aplikace](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)   
-  

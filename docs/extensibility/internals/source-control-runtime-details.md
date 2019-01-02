@@ -1,9 +1,6 @@
 ---
-title: Zdroj ovládacího prvku za běhu podrobnosti | Microsoft Docs
-ms.custom: ''
+title: Zdroj modulu Runtime podrobnosti ovládacího prvku | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], runtime details
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b972218258ded1ebf2f9f606927ba351e77afa01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 800d659130354a5dfb7089c3f881c6dd87e48228
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932282"
 ---
-# <a name="source-control-runtime-details"></a>Podrobnosti o modulu Runtime zdroj ovládacího prvku
-Projekt je přidán do správy zdrojového kódu, pokud uživatel přidá soubor projektu do správy zdrojového kódu, nebo prostřednictvím řadič služby automation, například Průvodce. Projekt neurčuje pro sebe sama, že je ve správě zdrojového; podporuje zdrojového kódu, ale musí být přidaný do ji ručně.  
+# <a name="source-control-runtime-details"></a>Podrobnosti modulu CLR správy zdrojového kódu
+Projekt je přidán do správy zdrojového kódu, když uživatel přidá soubor v projektu do správy zdrojových kódů, nebo prostřednictvím kontrolér automatizace, jako je průvodce. Projekt neurčuje sama za sebe, že je pod správou zdrojových kódů; podporuje správy zdrojových kódů, ale je nutné přidat do něj ručně.  
   
-## <a name="registering-with-a-source-control-package"></a>Registrace balíčku zdroj ovládacího prvku  
- Když je soubor ve vašem projektu přidán do správy zdrojového kódu, prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> abyste si mohli čtyři neprůhledného řetězce, které jsou používány jako soubory cookie správy zdrojového kódu. Uložte tyto řetězce v souboru projektu. Tyto řetězce by měla být předána zdroj ovládacího prvku se zakázaným inzerováním (součást sady Visual Studio spravující zdroj ovládacího prvku balíčky) při spuštění typ projektu voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. To zase načte balíček řízení příslušné zdrojové a předává volání jeho implementace `IVsSccManager2::RegisterSccProject`.  
+## <a name="registering-with-a-source-control-package"></a>Registrace balíčku zdrojového ovládacího prvku  
+ Když soubor v projektu se přidá do správy zdrojových kódů, prostředí volá <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> poskytnout čtyři neprůhledné řetězce, které jsou používány systém správy zdrojového kódu jako soubory cookie. Store tyto řetězce v souboru projektu. Tyto řetězce by měly být předány zdrojového ovládacího prvku se zakázaným inzerováním (součást sady Visual Studio, který spravuje balíčky správy zdrojového kódu) při spuštění projektu typu při volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. To pak načte balíček příslušný zdrojový ovládací prvek a předává volání jeho implementace `IVsSccManager2::RegisterSccProject`.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>   

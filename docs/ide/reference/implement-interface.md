@@ -2,19 +2,18 @@
 title: Implementace rozhraní
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ff5c0fb698bba3df955008ebb5d95175dcfc8beb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886608"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementovat rozhraní v sadě Visual Studio
 
@@ -24,11 +23,11 @@ Tato generace kód platí pro:
 
 - Visual Basic
 
-**Co:** umožňuje okamžitě generovat kód potřebný k implementaci rozhraní.
+**Co:** Umožňuje okamžitě generovat kód potřebný k implementaci rozhraní.
 
-**Kdy:** chcete dědit z rozhraní.
+**Kdy:** Chcete-li dědit z rozhraní.
 
-**Důvod, proč:** ručně může implementovat všechny rozhraní jeden po druhém, ale tato funkce automaticky vygeneruje všechny podpisy metod.
+**Proč:** Může ručně implementovat všechny rozhraní jeden po druhém, ale tato funkce automaticky vygeneruje všechny podpisy metod.
 
 ## <a name="how-to"></a>Postupy
 

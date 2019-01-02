@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: určení prvního cíle k sestavení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení prvního cíle k sestavení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d73ef1935f01a48d756ce39df934f3afa83c2d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967028"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte které se zaměřují na nejdřív sestavit
+# <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Zadejte cíl, které nejdřív sestavit
 Soubor projektu může obsahovat jednu nebo více `Target` prvky, které definují, jak je sestaven projekt. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modulu sestavení první ho najde a projektu všechny závislosti, pokud soubor projektu obsahuje `DefaultTargets` atribut, `InitialTargets` atribut nebo cíl je zadán v příkazovém řádku pomocí **– Cíl** přepnout.  
   
 ## <a name="use-the-initialtargets-attribute"></a>Použijte atribut InitialTargets  

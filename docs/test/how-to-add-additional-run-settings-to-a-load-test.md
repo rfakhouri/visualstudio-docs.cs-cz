@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962253"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Postupy: přidání dalších parametrů běhu k zátěžovému testu
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Postupy: Přidání dalších parametrů běhu k zátěžovému testu
 
 Parametry spuštění zátěžového testu určují celou řadu dalších nastavení. Patří mezi ně doba trvání testu, úroveň podrobností shromažďování výsledků a sady čítačů, které se shromažďují za běhu testu. Pro každý zátěžový test lze vytvořit a uložit několik parametrů spuštění a následně při spouštění testu zvolit jedno konkrétní nastavení. Počáteční parametr spuštění se přidá k zátěžovému testu při vytvoření zátěžového testu s použitím **nového Průvodce zátěžovým testem**.
 
@@ -40,14 +39,14 @@ K zátěžovému testu lze přidat více parametrů spuštění s různými nast
 
      **Vlastnosti** se zobrazí okno s vlastnostmi pro vybraný parametr spuštění.
 
-5.  V **vlastnosti** okno, použijte textové pole pro **název** vlastnost poskytnout nového parametru spuštění. název, který by měl popisovat záměr parametru spuštění (například **spuštění: pětiminutový běh** ).
+5.  V **vlastnosti** okno, použijte textové pole pro **název** vlastnost poskytnout nového parametru spuštění. název, který by měl popisovat záměr parametru spuštění (například **spuštění: Pětiminutový běh**).
 
 6.  Použití **vlastnosti** oknu změnit parametry spuštění. Například změnit dobu spuštění **00:05:00** na test běžel pět minut.
 
     > [!NOTE]
     > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v tématu [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).
 
-     Aby byl přidaný parametr spuštění použit, nastavte jej jako aktivní. Další informace najdete v tématu [postupy: výběr aktivního parametru spuštění pro zátěžový test](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Aby byl přidaný parametr spuštění použit, nastavte jej jako aktivní. Další informace najdete v tématu [jak: Vyberte aktivního parametru spuštění pro zátěžový test](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Viz také:
 

@@ -1,8 +1,6 @@
 ---
-title: Vsperfclrenv – | Microsoft Docs
-ms.custom: ''
+title: VSPerfCLREnv | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
@@ -15,36 +13,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5623cfc9d6f72805e4ced489ef7a786aaad155e6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965081"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
-Vsperfclrenv – nástroj slouží k nastavení proměnných prostředí, které jsou nutné k profilu aplikace rozhraní .NET Framework. Používá následující syntaxi:
+Vsperfclrenv – nástroj slouží k nastavení proměnné prostředí, které je potřeba Profilovat aplikace rozhraní .NET Framework. Používá následující syntaxi:
 
 ```cmd
 VsPerfCLREnv [/option]
 ```
 
-Možnost, který zvolíte, závisí na které ze tří typů profilace můžete použít: vzorkování, instrumentace, nebo globální. Samostatnou možností je potřeba zahrnout dat interakce vrstev data profilování. Syntaxe pro jednotlivé možnosti je popsané v následujících tabulkách.
+Možnost, kterou zvolíte, závisí na, která ze tří typů profilace můžete použít: vzorkování, instrumentace, nebo globální. Možnost samostatného je nutný pro zahrnutí dat interakce vrstev v dat profilování. Syntaxe pro jednotlivé možnosti je popsána v následujících tabulkách.
 
 > [!NOTE]
-> Po dokončení profilování, spusťte **vsperfclrenv –** s **/ vypnuto** nebo **/globaloff** možnost ke smazání potřebné pro profilace proměnné prostředí. Další informace najdete v tématu Možnosti vsperfclrenv – odstranit nastavení prostředí zobrazeny zde.
+> Po dokončení profilace, spuštěná **VSPerfCLREnv** s **/ off** nebo **/globaloff** k odstranění proměnné prostředí pro profilování. Další informace najdete v tématu Možnosti vsperfclrenv – odstranit nastavení prostředí je vidět tady.
 
-## <a name="vsperfclrenv-options-for-including-tier-interaction-data"></a>Vsperfclrenv – možnosti včetně dat sledování interakce vrstev
+## <a name="vsperfclrenv-options-for-including-tier-interaction-data"></a>Vsperfclrenv – možnosti pro zahrnutí dat interakce vrstev
 
 > [!WARNING]
-> Profilace interakce vrstvy můžete shromáždit pomocí libovolná edice sady Visual Studio. Data profilace sledováním interakce vrstev však lze zobrazit pouze ve Visual Studio Enterprise.
+> Profilování interakce vrstev lze shromažďovat pomocí libovolné edice sady Visual Studio. Nicméně data profilace interakce vrstev lze zobrazit pouze v sadě Visual Studio Enterprise.
 
-Profilace interakce vrstvy poskytuje další informace o dotazech ADO.NET ve víceúrovňových aplikací. Data jsou shromažďována jenom pro funkce synchronní volání. Interakce data lze přidat do jakékoli profilování spustit pomocí libovolné metody profilování.
+Profilování interakce vrstev poskytuje další informace o dotazech technologie ADO.NET v víceúrovňových aplikací. Data se shromažďují pouze pro synchronní volání. Data interakce lze přidat k libovolné metodě profilování pomocí Profilování.
 
-**InteractionOn** a **GlobalInteractionOn** možnosti Povolit shromažďování dat interakce vrstev. Po nastavení vsperfclrenv – proměnná prostředí, které je třeba, aby profil aplikace, musí být nastavena možnost interakce.
+**InteractionOn** a **GlobalInteractionOn** možnosti Povolit shromažďování dat interakce vrstev. Po nastavení vsperfclrenv – proměnná prostředí, které je potřeba profil aplikace, musí být nastavena možnost interakce.
 
-Následující příklad obsahuje dat interakce vrstev v profilaci spuštění, které používá metody vzorkování:
+Následující příklad obsahuje dat interakce vrstev během spuštění profilování, která používá metody odběru vzorků:
 
 ```cmd
 VSPerfCLREnv /SampleOn
@@ -52,7 +50,7 @@ VSPerfCLREnv /InteractionOn
 VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe
 ```
 
-Následující příklad obsahuje dat interakce vrstev při vytváření profilů spuštění pro službu systému Windows:
+Následující příklad obsahuje dat interakce vrstev během spuštění profilování služby Windows:
 
 ```cmd
 VSPerfCLREnv /GlobalSampleOn
@@ -68,49 +66,49 @@ Následující tabulka popisuje možnosti vsperfclrenv – profilace instrumenta
 
 |Možnost|Popis|
 |------------|-----------------|
-|**TraceOn**|Povolí použití profilů pomocí metody instrumentace. Přidělení paměti profilace nebo shromažďování životnosti objektů není povolen.|
-|**TraceGC**|Umožňuje pomocí metody instrumentace profilace přidělení paměti. Neumožňuje shromažďování životnosti objektů.|
-|**TraceGCLife**|Umožňuje přidělení paměti profilace a shromažďování životnosti objektů pomocí metody instrumentace.|
+|**TraceOn**|Umožňuje profilování pomocí metody instrumentace. Nepovolíte přidělení paměti pro profilaci nebo shromažďovat data o životním cyklu objektu.|
+|**TraceGC**|Umožňuje profilace přidělování paměti pomocí metody instrumentace. Nepovolí shromažďování data o životním cyklu objektu.|
+|**TraceGCLife**|Umožňuje přidělení paměti, profilování a shromažďovat data o životním cyklu objektu pomocí metody instrumentace.|
 
-## <a name="vsperfclrenv-options-for-process-sampling-profiling"></a>Vsperfclrenv – možnosti pro proces profilace se vzorkováním
+## <a name="vsperfclrenv-options-for-process-sampling-profiling"></a>Vsperfclrenv – možnosti pro profilaci vzorkování procesu
 
-Následující tabulka popisuje možnosti vsperfclrenv – profilace se vzorkováním:
+Následující tabulka popisuje vsperfclrenv – možnosti pro profilaci vzorkování:
 
 |Možnost|Popis|
 |------------|-----------------|
-|**SampleOn**|Povolí použití profilů pomocí metody vzorkování. Přidělení paměti profilace nebo shromažďování životnosti objektů není povolen.|
-|**SampleGC**|Umožňuje pomocí metody vzorkování profilace přidělení paměti. Neumožňuje shromažďování životnosti objektů.|
-|**SampleGCLife**|Umožňuje pomocí metody vzorkování profilace přidělení paměti. Taky umožňuje shromažďování životnosti objektů.|
-|**SampleLineOff**|Zakáže kolekce .NET úrovni řádků profilace data.|
+|**SampleOn**|Umožňuje profilování pomocí metody vzorkování. Nepovolíte přidělení paměti pro profilaci nebo shromažďovat data o životním cyklu objektu.|
+|**SampleGC**|Umožňuje profilace přidělování paměti pomocí metody vzorkování. Nepovolí shromažďování data o životním cyklu objektu.|
+|**SampleGCLife**|Umožňuje profilace přidělování paměti pomocí metody vzorkování. Taky umožňuje shromažďování data o životním cyklu objektu.|
+|**SampleLineOff**|Zakáže kolekci .NET úrovně řádku dat profilování.|
 
 ## <a name="vsperfclrenv-options-for-global-profiling"></a>Vsperfclrenv – možnosti pro globální profilace
 
-Do profilu, jako spravované služby a webové aplikace ASP.NET, který je spuštěn v operačním systému místo spuštění uživatelem, použijte možnosti pro globální profilace vsperfclrenv – možnosti. Následující tabulka popisuje globálního verzích vsperfclrenv – možnosti. Tyto možnosti nastavit příslušné proměnné prostředí v registru.
+Chcete-li Profilovat spravované služby, jako a webové aplikace ASP.NET, který je spuštěn v operačním systému místo spuštění uživatelem, pomocí možností globální profilace možnosti VSPerfCLREnv. Následující tabulka popisuje globální verze možnosti VSPerfCLREnv. Tyto možnosti nastavit příslušné proměnné prostředí v registru.
 
 |Možnost|Popis|
 |------------|-----------------|
-|**GlobalTraceOn**|Povolí globální profilace pomocí metody instrumentace. Neshromažďuje události přidělení paměti nebo životnosti objektů.|
-|**GlobalTraceGC**|Povolí globální paměť přidělení profilace pomocí metody instrumentace. Neumožňuje shromažďování životnosti objektů.|
-|**GlobalTraceGCLife**|Povolí globální paměť přidělení profilace pomocí metody instrumentace. Taky umožňuje kolekce životnosti objektů.|
-|**GlobalSampleOn**|Povolí globální profilace pomocí metody vzorkování. Neumožňuje shromažďování událostí přidělení paměti nebo životnosti objektů.|
-|**GlobalSampleGC**|Povolí globální paměť přidělení profilace pomocí metody vzorkování. Neumožňuje shromažďování životnosti objektů.|
-|**GlobalSampleGCLife**|Povolí globální paměť přidělení profilace pomocí metody vzorkování. Taky umožňuje shromažďování životnosti objektů.|
+|**GlobalTraceOn**|Povolí globální profilace pomocí metody instrumentace. Shromažďovat události přidělení paměti nebo data o životním cyklu objektu.|
+|**GlobalTraceGC**|Umožňuje profilace přidělování globální paměti pomocí metody instrumentace. Nepovolí shromažďování data o životním cyklu objektu.|
+|**GlobalTraceGCLife**|Umožňuje profilace přidělování globální paměti pomocí metody instrumentace. Také umožňuje shromažďování data o životním cyklu objektu.|
+|**GlobalSampleOn**|Povolí globální profilace pomocí metody vzorkování. Povolit shromažďování údajů o události přidělení paměti nebo data o životním cyklu objektu.|
+|**GlobalSampleGC**|Umožňuje profilace přidělování globální paměti pomocí metody vzorkování. Nepovolí shromažďování data o životním cyklu objektu.|
+|**GlobalSampleGCLife**|Umožňuje profilace přidělování globální paměti pomocí metody vzorkování. Taky umožňuje shromažďování data o životním cyklu objektu.|
 
 ## <a name="vsperfclrenv-options-to-delete-environment-settings"></a>Vsperfclrenv – možnosti odstranit nastavení prostředí
 
- Po skončení profilace spravované aplikace, použijte jednu z následujících možností odstranit proměnných prostředí, které byly přidány pomocí vsperfclrenv –. Následující tabulka popisuje, jak odstranit obě prostředí standardní a globální proměnné:
+ Po dokončení profilace spravované aplikace, použijte jednu z následujících možností odstranění proměnné prostředí, které byly přidány pomocí VSPerfCLREnv. Následující tabulka popisuje, jak odstranit i standardní a globální proměnné:
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Vypnout**|Odstraní proměnných prostředí pro standardní profilace rozhraní .NET. Tuto možnost použijte, když neglobální vsperfclrenv – možnosti jste použili k nastavení profileru proměnných prostředí.|
-|**GlobalOff**|Odstraní proměnných prostředí pro globální profilace rozhraní .NET. Tuto možnost použijte, když byla aplikace spuštěna operační systém a není profileru.|
+|**Vypnout**|Vymaže proměnné prostředí pro profilování standardní .NET. Tuto možnost použijte, pokud neglobální vsperfclrenv – možnosti byly použity k nastavení proměnných prostředí profilování.|
+|**GlobalOff**|Vymaže proměnné prostředí pro profilování globální .NET. Tuto možnost použijte v případě spuštění aplikace podle operačního systému a ne profileru.|
 
 ## <a name="remarks"></a>Poznámky
 
-Tyto možnosti se nevyžadují profilace spravované aplikace, pokud je aplikace spuštěna pomocí Průzkumníku výkonu v prostředí IDE. Prohlížeč výkonu nastaví všechny požadované prostředí nastavení za vás.
+Tyto možnosti se nevyžadují pro profilaci spravované aplikace, pokud je aplikace spuštěna s použitím Průzkumníka výkonu v rozhraní IDE. Prohlížeč výkonu nastaví všechny požadované prostředí nastavení za vás.
 
-Pokud během profilace nebyl nastaven správný prostředí, upozornění je zaznamenána během analýzy a spravovaná funkce, které názvy nebudou správně rozpoznány.
+Pokud během profilování nebyl nastaven správné prostředí, upozornění je hlášeno během analýzy a spravované funkce, nebude správně přeložit názvy.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)

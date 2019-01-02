@@ -2,7 +2,6 @@
 title: Návrhář schématu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 author: gewarren
@@ -10,21 +9,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a935d255185be82e3f0300009d971802b955e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70ed94bd14ec39b4e617410ea04b97f1b06bd555
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934249"
 ---
 # <a name="xml-schema-designer"></a>Návrhář schématu XML
 
-Návrhář schématu XML (Návrhář XSD) je grafický nástroj, který umožňuje vizualizovat schéma nastavit na různých úrovních abstrakce. Jsou tyto hlavní komponenty návrháře XSD:
+Návrhář schématu XML (XSD Designer) je grafický nástroj, který vám pak umožní vizualizovat schéma, nastavte na různých úrovních, abstrakce. Následují hlavní součásti návrháře XSD:
 
--   [Průzkumník schématu XML](../xml-tools/xml-schema-explorer.md) vám umožňuje procházet a přejděte stromu schématu XML a provádět hledání.
+-   [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md) umožňuje procházet a procházet stromu XML schéma a provádět vyhledávání.
 
--   [Spuštění zobrazení](../xml-tools/start-view.md) je spuštění bod návrháře XSD; ze zobrazení spustit, můžete přejít k dalším zobrazením návrháře XSD a zobrazit podrobnosti vašeho schématu sady.
+-   [Zobrazení Start](../xml-tools/start-view.md) je výchozím bodem pro návrháře XSD; ze zobrazení spuštění můžete přejít na další zobrazení návrháře XSD a prohlédněte si podrobnosti o sadě schémat.
 
--   [Zobrazení grafu](../xml-tools/graph-view.md) vám umožní zobrazit Přehled schématu sady a vztahy mezi uzly schématu.
+-   [Zobrazení grafu](../xml-tools/graph-view.md) umožňuje naleznete v tématu Přehled o sadě schémat a vztahy mezi uzly schématu.
 
--   [Zobrazení obsahu modelu](../xml-tools/content-model-view.md) poskytuje grafické reprezentace podrobnosti o místní a globální schématu uzly, včetně jednoduché a komplexní typy, elementy, skupiny, atributy a skupin atributů.
+-   [Zobrazení modelu obsahu](../xml-tools/content-model-view.md) poskytuje grafické znázornění podrobnosti uzlů místní a globální schémat, včetně jednoduché a komplexní typy prvků, skupiny, atributy a skupiny atributů.

@@ -1,9 +1,6 @@
 ---
-title: IDebugEngineLaunch2 | Microsoft Docs
-ms.custom: ''
+title: IDebugEngineLaunch2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineLaunch2
@@ -15,44 +12,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1abff9f393b34bbf5950c9e56b6f489f332840db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06ca3d52c58ea1d8aff78936f8b7240e1b77e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934262"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
-Pomocí modul ladění (DE) spusťte a ukončete programy.  
+Ladicí stroj (DE) používá ke spuštění a ukončení aplikace.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugEngineLaunch2 : IDebugEngine2  
+IDebugEngineLaunch2 : IDebugEngine2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní je implementováno modulem vlastní DE, pokud má zvláštní požadavky na spuštění procesu, který nemůže zpracovávat zcela vlastní port. To je obvykle případě, když je DE je součástí překladač a proces laděné je skript: překladač musí být nejprve spuštěn, a poté je skript načíst a spustit. Port můžete spustit Překladač, ale skript může vyžadovat zvláštní zpracování (což je, kde je DE má roli). Toto rozhraní je implementováno pouze v případě, že existují jedinečné požadavky pro spuštění programu, který nemůže zpracovávat vlastní port.  
+ Toto rozhraní implementují vlastní DE v případě, že má zvláštní požadavky na spouštění procesu, který nelze zpracovat zcela port. Tento vlastní port. To je obvykle tento případ, když je DE je součástí interpretu a laděný proces je skript: interpretu je potřeba nejdřív spustit, a pak je načíst skript a je spuštěna. Port můžete spustit interpret, ale skript může vyžadovat zvláštní zpracování (což je, kde je DE má roli). Toto rozhraní je implementováno pouze v případě, že existují jedinečným požadavkům pro spuštění programu, který nemůže zpracovávat port. Tento vlastní port.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je volána správcem ladicí relace (SDM) Pokud SDM může toto rozhraní z [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) rozhraní (použití QueryInterface). Pokud toto rozhraní můžete získat, SDM ví, že je DE má zvláštní požadavky a volá toto rozhraní ke spuštění programu místo nutnosti port spustíte.  
+ Toto rozhraní je volán Správce ladění relace (SDM) Pokud SDM můžete získat toto rozhraní z [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) rozhraní (pomocí funkce QueryInterface). Pokud toto rozhraní můžete získat, SDM ví, že je DE má zvláštní požadavky a volá tato rozhraní ke spuštění programu nemuseli port, spusťte ji.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugEngineLaunch2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugEngineLaunch2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Spustí proces prostřednictvím DE.|  
-|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Obnoví zpracování provádění.|  
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Prostřednictvím DE spustí nějaký proces.|  
+|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Obnoví spuštění procesu.|  
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Určuje, pokud lze ukončit proces.|  
 |[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Ukončení procesu.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

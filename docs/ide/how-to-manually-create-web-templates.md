@@ -2,7 +2,6 @@
 title: Vytváření webových šablon
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -12,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 052e9daa7911051138e831436cad23de7ae7ee8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921848"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Postupy: ruční vytvoření webových šablon
+# <a name="how-to-manually-create-web-templates"></a>Postupy: Ruční vytvoření webových šablon
 
 Vytvoření šablony webu se liší od vytvoření jiných typů šablon. Vzhledem k tomu, že šablony webových projektů se zobrazí v **přidat nový web** dialogové okno a webového projektu položky jsou zařazené do kategorií pomocí programovacího jazyka, *vstemplate* souboru musíte určit, která šablona jako šablonu a identifikovat programovací jazyk.
 

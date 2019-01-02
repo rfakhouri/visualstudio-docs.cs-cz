@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: otevírání dokumentů aplikace Visio prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Otevírání dokumentů aplikace Visio prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875719"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>Postupy: otevírání dokumentů aplikace Visio prostřednictvím kódu programu
-  Existují dvě metody pro otevírání stávajících dokumentů Microsoft Office Visio: otevřít a OpenEx. Metoda OpenEx se shoduje s metodu Open s tím rozdílem, že obsahuje argumenty, ve kterých můžete určit volající, jak se dokument otevře.  
+# <a name="how-to-programmatically-open-visio-documents"></a>Postupy: Otevírání dokumentů aplikace Visio prostřednictvím kódu programu
+  Existují dvě metody pro otevírání stávajících dokumentů Microsoft Office Visio: Otevřít a OpenEx. Metoda OpenEx se shoduje s metodu Open s tím rozdílem, že obsahuje argumenty, ve kterých můžete určit volající, jak se dokument otevře.  
   
  Podrobnosti o objektovém modelu najdete v tématu referenční dokumentaci jazyka VBA pro [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) metoda a [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) Metoda.  
   
@@ -54,9 +51,7 @@ ms.locfileid: "50672675"
 ## <a name="see-also"></a>Viz také:  
  [Řešení pro aplikaci Visio](../vsto/visio-solutions.md)   
  [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)   
- [Postupy: vytváření nových dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Postupy: zavírání dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Postupy: ukládání dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Postupy: tisk dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [Postupy: Vytváření nových dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [Postupy: Zavírání dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [Postupy: Ukládání dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [Postupy: Tisk dokumentů aplikace Visio prostřednictvím kódu programu](../vsto/how-to-programmatically-print-visio-documents.md)  

@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: řazení dat na listech prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Řazení dat na listech prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960586"
 ---
-# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Postupy: řazení dat na listech prostřednictvím kódu programu
+# <a name="how-to-programmatically-sort-data-in-worksheets"></a>Postupy: Řazení dat na listech prostřednictvím kódu programu
   Můžete řadit data obsažená v oblastech listů a seznamů v době běhu. Následující kód seřadí vícesloupcové oblast s názvem `Fruits` podle dat v prvním sloupci a poté podle data ve druhém sloupci.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -66,11 +63,9 @@ ms.locfileid: "49914211"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: programové automatické vyplnění oblastí s přírůstkově se měnícími daty](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Postupy: odkazování na oblasti listů v kódu programu](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Postupy: používání stylů pro oblasti sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Postupy: Prostřednictvím kódu programu automaticky vyplnit oblastí s přírůstkově se měnícími daty](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [Postupy: Odkazování na oblasti listů v kódu programu](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Postupy: Používání stylů pro oblasti sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
  [Namedrange – ovládací prvek](../vsto/namedrange-control.md)   
  [ListObject – ovládací prvek](../vsto/listobject-control.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

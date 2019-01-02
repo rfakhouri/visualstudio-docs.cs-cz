@@ -1,8 +1,6 @@
 ---
 title: Generatetemporarytargetassembly – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d4b5ee29ed19f121c6da357fa20242f6762e51c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87ec3fff69bd5d8ddf7ffdfdc5590e1c18a02038
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968005"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Generatetemporarytargetassembly – úloha
 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> Úloh generuje sestavení, pokud se alespoň jeden [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] stránky v projektu odkazuje na typ, který je deklarován místně v daném projektu. Generované sestavení se odebere po dokončení procesu sestavení, nebo pokud proces sestavení se nezdaří.  

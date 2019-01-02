@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: poskytování služby | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Poskytování služeb | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857812"
 ---
-# <a name="how-to-provide-a-service"></a>Postupy: poskytování služby
+# <a name="how-to-provide-a-service"></a>Postupy: Poskytování služeb
 VSPackage může poskytovat služby, které můžete použít jiné balíčky VSPackages. Poskytování služeb, musíte VSPackage registraci služby pomocí sady Visual Studio a přidejte službu.  
   
  <xref:Microsoft.VisualStudio.Shell.Package> Třída implementuje oba <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> a <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> obsahuje metody zpětného volání, které poskytují služby na vyžádání.  
@@ -142,6 +139,6 @@ VSPackage může poskytovat služby, které můžete použít jiné balíčky VS
      Hodnota `helloString` by měl být "Hello".  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: získání služby](../extensibility/how-to-get-a-service.md)   
+ [Postupy: Získání služby](../extensibility/how-to-get-a-service.md)   
  [Použít a poskytování služeb](../extensibility/using-and-providing-services.md)   
  [Základy služby](../extensibility/internals/service-essentials.md)

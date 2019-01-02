@@ -1,8 +1,6 @@
 ---
-title: 'Návod: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Ruční nasazení aplikace ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923267"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Průvodce: Ruční nasazení aplikace ClickOnce
 Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, nebo potřebujete používat funkce pokročilého nasazení, jako je například nasazení důvěryhodné aplikace, měli byste použít *Mage.exe* nástroj příkazového řádku k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí příkazového řádku verze (*Mage.exe*) nebo grafický verze (*MageUI.exe*) generování manifestu a Nástroj pro úpravy.  
   
 ## <a name="prerequisites"></a>Požadavky  
@@ -45,7 +43,7 @@ Pokud Visual Studio nelze použít k nasazení vaší [!INCLUDE[ndptecclick](../
   
 - Zjistěte, jak se bude distribuovat nasazení.  
   
-   Zahrnují možnosti distribuce: Web, sdílenou složku nebo disk CD. Další informace najdete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  
+   Možnosti distribuce patří: Web, sdílenou složku nebo disk CD. Další informace najdete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  
   
 - Určete, jestli aplikace vyžaduje zvýšenou úroveň vztahu důvěryhodnosti.  
   

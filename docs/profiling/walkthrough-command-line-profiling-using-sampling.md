@@ -1,8 +1,6 @@
 ---
 title: 'Průvodce: Profilace z příkazového řádku pomocí vzorkování | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886806"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Průvodce: Příkazový řádek profilování pomocí vzorkování
 
@@ -35,7 +33,7 @@ V tomto podrobném návodu postupujte podle těchto kroků:
 
 - Zprostředkující znalost [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Zprostředkující znalost práce pomocí nástrojů příkazového řádku
-- Kopie [peopletrax – ukázka](../profiling/peopletrax-sample-profiling-tools.md)
+- Kopie [peopletrax – ukázka](/visualstudio/profiling/performance-explorer)
 - Pro práci s profilace na základě informací poskytnutých, je nejlepší mít ladění k dispozici informace o symbolech.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilace z příkazového řádku pomocí metody vzorkování

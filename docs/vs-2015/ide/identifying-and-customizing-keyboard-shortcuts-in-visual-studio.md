@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931174"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ Můžete určit klávesové zkratky pro příkazy sady Visual Studio, tyto zkrat
      Například můžete použít **globální** Pokud chcete, aby zkratka fungovala ve všech kontextech. Můžete použít jakoukoli zkratku, která není namapována (jako globální) v jiném editoru. V opačném případě editor zkratku přepíše.
 
     > [!NOTE]
-    >  Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: tisk navigátoru obrazovky/Sys Rq, posuňte Lock, Pause/Break, Tab, Caps Lock, Insert, Home, End, Page Up, Page Down, klávesu s logem Windows, klíč Application, všechny šipky klíče nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; nebo Ctrl + Alt + Delete.
+    >  Následující klávesy nelze přiřadit jako součást klávesové zkratky v **globální**: Tisk navigátoru obrazovky/Sys Rq, Scroll Lock, Pause/Break, kartu, Caps Lock, Insert, domů, End, Page Up, Page Down, klávesu s logem Windows, klíč aplikace, klávesy se šipkami nebo Enter. Num Lock, Delete nebo Clear na numerické klávesnici; nebo Ctrl + Alt + Delete.
 
 6.  V **stiskněte klávesy zkratky** zadejte klávesovou zkratku, kterou chcete použít.
 

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_unalignedtype – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63094fff1a513b9de0e21fc29ad8aa10fb3746ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966794"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
 Získá příznak, který určuje, zda je uživatelský datový typ nezarovnaných.  
@@ -27,7 +25,7 @@ Získá příznak, který určuje, zda je uživatelský datový typ nezarovnaný
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_unalignedType (   
+HRESULT get_unalignedType (   
    BOOL* pRetVal  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_acceleratorPointerTags | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875456"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Vrátí všechny hodnoty značky ukazatel akcelerátoru, které odpovídají na funkci se zakázaným inzerováním C++ AMP akcelerátoru.  
+Vrátí všechny akcelerátoru hodnoty značky ukazatele, které odpovídají funkci jazyka C++ AMP akcelerátor zástupné procedury.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,19 +31,19 @@ HRESULT get_acceleratorPointerTags(
   
 #### <a name="parameters"></a>Parametry  
  `cnt`  
- [v] Velikost pole výstup `pPointerTags`.  
+ [in] Velikost pole výstup `pPointerTags`.  
   
  `pcnt`  
- [out] Počet značek ukazatel akcelerátoru ve funkci se zakázaným inzerováním akcelerátoru C++ AMP.  
+ [out] Počet značek akcelerátoru ukazatel ve funkci jazyka C++ AMP akcelerátor zástupné procedury.  
   
  `pPointerTags`  
- [out] A `DWORD` pole ukazatele, který je vyplněn hodnot značek ukazatel akcelerátoru v C++ AMP akcelerátoru se zakázaným inzerováním funkce.  
+ [out] A `DWORD` pole ukazatel, který je vyplněna hodnoty značek akcelerátoru ukazatel ve funkci jazyka C++ AMP akcelerátor zástupné procedury.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="remarks"></a>Poznámky  
- Tato metoda je volána v `IDiaSymbol` rozhraní, která odpovídá funkci se zakázaným inzerováním C++ AMP akcelerátoru.  
+ Tato metoda je volána na `IDiaSymbol` rozhraní, který odpovídá zástupné procedury funkce C++ AMP akcelerátor.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

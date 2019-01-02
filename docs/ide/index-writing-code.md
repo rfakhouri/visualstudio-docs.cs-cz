@@ -4,18 +4,17 @@ description: Další informace o použití editoru kódu a další nástroje v s
 ms.date: 01/01/2018
 layout: LandingPage
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1b75a41e7c321686d0107982eb9969c7a1e2bc
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855427"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Psaní a správa kódu pomocí sady Visual Studio
 

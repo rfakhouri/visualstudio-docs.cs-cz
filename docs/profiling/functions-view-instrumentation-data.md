@@ -1,8 +1,6 @@
 ---
-title: Zobrazení funkcí – Data instrumentace | Microsoft Docs
-ms.custom: ''
+title: Zobrazení funkcí – Data instrumentace | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Function view
@@ -12,79 +10,79 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7787e974b093156b27b2ace4353e94db05063d7d
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 0cc8ac1323e07de333cfe12546da8733e6742801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962620"
 ---
 # <a name="functions-view---instrumentation-data"></a>Zobrazení funkcí – data instrumentace
-Zobrazení sestavy funkce uvádí data profilování podle názvu funkce.  
+Zobrazení sestav funkce uvádí data profilování podle názvu funkce.  
   
 ## <a name="general"></a>Obecné  
- Obecné sloupce rozpoznat funkci v řádku zobrazení.  
+ Obecné sloupce rozpoznat funkci zobrazení řádku.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
 |**Název funkce**|Název funkce.|  
 |**Adresa funkce**|Adresa funkce.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
-|**Počet volání**|Celkový počet volání této funkce.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
+|**Počet volání**|Celkový počet volání provedených touto funkcí.|  
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro tuto funkci.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
-|**Cesta modulu**|Cesta modul, který obsahuje funkce.|  
-|**ID procesu**|ID procesu (PID) z profilace spustit.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje funkci.|  
+|**ID procesu**|ID procesu (PID) běhu profilování.|  
 |**Název procesu**|Název procesu.|  
-|**Režijní náklady na čas výhradní testu**|Čas režie pro tuto funkci, která je způsobeno tím instrumentace. Funkce, které byly volá funkci neobsahoval režijní náklady. Režijní náklady na test odečtení od sebe výhradní.|  
-|**Režijní náklady na čas včetně testu**|Čas režie pro tuto funkci a jeho podřízené funkce způsobený instrumentace. Režijní náklady na ji zahrnout do funkce, které byly volá funkci. Test režie odečtení od sebe (včetně).|  
+|**Výhradní čas režie**|Časová náročnost této funkce, která způsobuje instrumentace. Ve funkcích, které volal funkci neobsahoval režijní náklady. Režie byla odečtena od vylučuje všechny časy.|  
+|**Celkový čas režie**|Časová náročnost této funkce a její podřízené funkce, jež je způsobena instrumentace. To zahrnuje režijní náklady na ve funkcích, které byly volány funkce. Test zatížení byla odečtena od fiskálního (včetně).|  
   
-## <a name="elapsed-inclusive-values"></a>Uplynulá (včetně) hodnot  
- Uplynulá (včetně) hodnot označuje datum a čas, který byl funkce v zásobníku volání. Čas zahrnout času stráveného funkce, které byly volat funkce a času stráveného v volání operačního systému, jako jsou přepínače kontextu a vstupně výstupní operace.  
-  
-|Sloupec|Popis|  
-|------------|-----------------|  
-|**Uplynulý čas (včetně).**|Celkový počet uplynulý čas včetně všechna volání této funkce.|  
-|**% Uplynulá doba (včetně).**|Procento celkového počtu uplynulý čas včetně čas spuštění profilování stráveného při uplynulá doba včetně této funkce.|  
-|**Průměr uplynulý čas včetně čas**|Průměr uplynulý čas včetně volání této funkce.|  
-|**Maximální uplynulá doba (včetně).**|Maximální uplynulý čas včetně volání této funkce.|  
-|**Min uplynulý čas včetně čas**|Minimální uplynulý čas včetně volání této funkce.|  
-  
-## <a name="elapsed-exclusive-values"></a>Uplynulá výhradní hodnoty  
- Uplynulá výhradní hodnoty označuje datum a čas, že funkce byla spuštěna kódu v těle funkce, tedy při funkce byla v horní části zásobníku volání. Čas zahrnovat času stráveného v volání operačního systému, jako jsou přepínače kontextu a vstupně-výstupních operací, ale nezahrnuje času stráveného v funkce, které byly volá funkci.  
+## <a name="elapsed-inclusive-values"></a>Uplynulý včetně hodnoty  
+ Uplynulý včetně hodnoty označuje datum a čas, který funkce byla v zásobníku volání. Čas zahrnují čas, který byl stráven ve funkcích, které byly volány tak, že funkce a čas, který byl stráven voláními do operačního systému, například vstupně výstupní operace a přepnutí kontextu.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Uplynulá doba výhradní**|Celkový počet uplynulý čas výhradní všechna volání této funkce.|  
-|**Uplynulý čas výhradní %**|Procento celkového počtu uplynul výhradní času stráveného při celková doba uplynulá výhradní této funkce spuštění profilování.|  
-|**Průměr uplynulý exkluzivní čas**|Průměr uplynulý čas výhradní volání této funkce.|  
-|**Maximální uplynulá doba výhradní**|Maximální uplynulý čas výhradní volání této funkce.|  
-|**Min uplynulý exkluzivní čas**|Minimální uplynulý čas výhradní volání této funkce.|  
+|**Uplynulý celkový čas**|Celkový uplynulý celkový čas všechna volání této funkce.|  
+|**% Uplynulého celkového času**|Procento celkového uplynulý celkový čas, který byl stráven v uplynulý celkový čas této funkce spuštění profilování.|  
+|**Průměrný uplynulý celkový čas**|Průměr uplynulý celkový čas volání této funkce.|  
+|**Maximální uplynulý celkový čas**|Maximální uplynulý celkový čas volání této funkce.|  
+|**Minimální uplynulý celkový čas**|Minimální uplynulý celkový čas volání této funkce.|  
+  
+## <a name="elapsed-exclusive-values"></a>Uplynulý výhradní hodnoty  
+ Uplynulý výhradní hodnoty označuje datum a čas, že funkce byla provádění kódu v těle funkce, to znamená, když funkce byla v horní části zásobníku volání. Čas zahrnují čas, který byl stráven ve volání do operačního systému, jako jsou přepínače kontextu a vstupně výstupní operace, ale nezahrnuje čas, který byl stráven ve funkcích, které byly volány funkce.  
+  
+|Sloupec|Popis|  
+|------------|-----------------|  
+|**Uplynulý výhradní čas**|Celkový uplynulý výhradní čas všechna volání této funkce.|  
+|**% Uplynulého výhradního času**|Procentuální podíl celkového počtu uplynulý výhradní čas spuštění profilování, která se využilo na celkový uplynulý výhradní čas této funkce.|  
+|**Průměrný uplynulý výhradní čas**|Průměr uplynulý výhradní čas volání této funkce.|  
+|**Maximální uplynulý výhradní čas**|Maximální uplynulý výhradní čas volání této funkce.|  
+|**Minimální uplynulý výhradní čas**|Minimální uplynulý výhradní čas volání této funkce.|  
   
 ## <a name="application-inclusive-values"></a>Aplikace (včetně) hodnot  
- Aplikace (včetně) hodnot označuje datum a čas, který byl funkce v zásobníku volání. Čas nezahrnuje času stráveného v volání operačního systému, jako jsou přepínače kontextu a vstupně-výstupních operací, ale nezahrnuje času stráveného v funkce, které byly volá funkci.  
+ Aplikace (včetně) hodnot označuje datum a čas, který funkce byla v zásobníku volání. Čas nezahrnuje čas, který byl stráven ve volání do operačního systému, jako jsou přepínače kontextu a vstupně výstupní operace, ale čas, který byl stráven zahrnovat ve funkcích, které byly volány funkce.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Doba aplikace (včetně).**|Celkový počet aplikací čas včetně všechna volání této funkce.|  
-|**Aplikace % času (včetně).**|Procento celkového počtu uplynulý čas včetně čas spuštění profilování stráveného v čase (včetně). Celkový počet aplikací této funkce.|  
-|**Prům. čas včetně aplikace**|Průměrná aplikace čas včetně volání této funkce.|  
-|**Maximální doba včetně aplikace**|Čas (včetně). maximální aplikace volání této funkce.|  
-|**Doba včetně aplikace min.**|Čas včetně minimální aplikace volání této funkce.|  
+|**Celkový čas aplikace**|Celkový čas aplikace celkový počet všech volání této funkce.|  
+|**% Celkového času aplikace**|Procento celkového uplynulý celkový čas, který byl stráven v celkový čas celkový aplikace této funkce spuštění profilování.|  
+|**Průměrný celkový čas aplikace**|Celkový čas průměrná aplikace volání této funkce.|  
+|**Maximální celkový čas aplikace**|Celkový čas aplikace maximální volání této funkce.|  
+|**Minimální celkový čas aplikace**|Celkový čas aplikace minimální volání této funkce.|  
   
 ## <a name="application-exclusive-values"></a>Výhradní hodnoty aplikace  
- Aplikace hodnot, které označuje datum a čas, která funkce byla spuštěna přímo v horní části zásobníku volání. Čas nezahrnuje času stráveného v volání operačního systému, jako jsou přepínače kontextu a vstupně-výstupních operací, a nezahrnuje času stráveného v funkce, které byly volá funkci.  
+ Výhradní hodnoty, které aplikaci označuje datum a čas, který funkce byla spuštěna přímo v horní části zásobníku volání. Čas nezahrnuje čas, který byl stráven ve volání do operačního systému, například přepnutí kontextu a vstupně výstupní operace a nezahrnuje čas, který byl stráven ve funkcích, které byly volány funkce.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Výhradní doba aplikace**|Celkový počet aplikací čas výhradní všechna volání této funkce.|  
-|**Aplikace % výhradní čas**|Procento celkového počtu uplynul výhradní času stráveného při výhradní doba celkový aplikace této funkce spuštění profilování.|  
-|**Prům. čas výhradní aplikace**|Průměrná aplikace čas výhradní volání této funkce.|  
-|**Maximální doba výhradní aplikace**|Čas výhradní maximální aplikace volání této funkce.|  
-|**Doba výhradní aplikace min.**|Čas výhradní minimální aplikace volání této funkce.|  
+|**Výhradní čas aplikace**|Výhradní čas aplikace celkový počet všech volání této funkce.|  
+|**% Výhradního času aplikace**|Procentuální podíl celkového počtu uplynulý výhradní čas spuštění profilování, který byl stráven v výhradní čas aplikace celkový této funkce.|  
+|**Průměrný výhradní čas aplikace**|Výhradní čas aplikace průměrné volání této funkce.|  
+|**Maximální výhradní čas aplikace**|Výhradní čas aplikace maximální volání této funkce.|  
+|**Minimální výhradní čas aplikace**|Výhradní čas aplikace minimální volání této funkce.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení funkcí](../profiling/functions-view-sampling-data.md)   
  [Zobrazení funkcí – vzorkování](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Zobrazení funkcí – instrumentace](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

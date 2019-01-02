@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: Synchronizace sady pravidel projektu kódu se zásadou vrácení se změnami týmového projektu'
+title: 'Postupy: Synchronizace sad pravidel projektu kódu pomocí zásady vracení se změnami projektu týmu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883240"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Postupy: synchronizace sad pravidel projektu kódu pomocí zásad vracení se změnami Azure DevOps Project
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Postupy: Synchronizace sad pravidel projektu kódu pomocí zásad vracení se změnami Azure DevOps Project
 
 Synchronizovat nastavení analýzy kódu pro projekty kódu mají zásady vrácení se změnami pro Azure DevOps project tak, že zadáte sadu pravidel, která obsahuje aspoň pravidla, která jsou uvedená v pravidle nastavit zásady vrácení se změnami. Váš vedoucí vývojář může informovat o název a umístění sada pravidel pro zásadu vrácení se změnami. Jeden z následujících možností můžete zajistit, že analýzy kódu pro projekt používá správné sady pravidel:
 

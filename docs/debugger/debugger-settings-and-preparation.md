@@ -1,8 +1,6 @@
 ---
 title: Ladicí program nastavení a příprava | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257027"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926838"
 ---
 # <a name="debugger-settings-and-preparation"></a>Nastavení ladicího programu a příprava
 Tato část popisuje nastavení vlastnosti související s ladicího programu a příprava potřebných pro ladění programu s [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicího programu. Pokud vytváříte program v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pomocí šablony projektu, tato nastavení jsou nastaveny správně v konfiguraci ladění.  
   
- Další informace najdete v tématu [postupy: nastavení ladění a konfiguraci vydání](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Další informace najdete v tématu [jak: Konfigurace nastavení ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Nastavení projektu ladicího programu](../debugger/debugger-project-settings.md)  
@@ -42,7 +40,7 @@ Tato část popisuje nastavení vlastnosti související s ladicího programu a 
  [Projekty konzoly](../debugger/debugging-preparation-console-projects.md)  
  Poskytuje pokyny o tom, jak nakonfigurovat projekty konzoly pro ladění.   
   
- [Postupy: Ladění spustitelného souboru, který není součástí řešení sady Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Postupy: Ladit spustitelný soubor není součástí řešení sady Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Vysvětluje, jak ladit spustitelný soubor, který není vytvořený jako součást projektu sady Visual Studio.  
   
  [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)  

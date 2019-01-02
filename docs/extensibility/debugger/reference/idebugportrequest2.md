@@ -1,9 +1,6 @@
 ---
-title: IDebugPortRequest2 | Microsoft Docs
-ms.custom: ''
+title: IDebugPortRequest2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortRequest2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5af5ef2f4371350529d1e5fa60fb5ad1539aa87
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a05f84d685ac33203461dfc1b0f515cb45f67c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876926"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
-Toto rozhraní popisuje port. Tento popis se používá k přidání port na portu dodavatele.  
+Toto rozhraní popisuje port. Tento popis se používá k přidání portu pro dodavatele portu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,27 +29,27 @@ IDebugPortRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Visual Studio obvykle implementuje toto rozhraní právě získávání port ladění od jiného dodavatele portu.  
+ Visual Studio obvykle implementuje toto rozhraní právě získání portu ladění od jiného dodavatele portu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je předána do [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) vytvoření portu ladění. Volání [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) vrátí toto rozhraní představující žádost použít k vytvoření port na prvním místě.  
+ Toto rozhraní je předána do [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) vytvořit port pro ladění. Volání [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) vrátí toto rozhraní představující žádost použitý k vytvoření portu na prvním místě.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugPortRequest2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugPortRequest2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Získá název tohoto portu, který chcete vytvořit.|  
+|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Získá název portu, který chcete vytvořit.|  
   
 ## <a name="remarks"></a>Poznámky  
- Modul ladění obvykle nekomunikuje s jiného dodavatele portu a bude mít bez použití tohoto rozhraní.  
+ Ladicí stroj obvykle nekomunikuje s dodavatele portu a nebude mít žádný použijte pro toto rozhraní.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

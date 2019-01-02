@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54aabe4871ee7f40e32d42cefd8d291276f361cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886498"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více verzí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +64,7 @@ V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verz
 >  Cílení rozhraní není zárukou, že vaše aplikace bude pracovat správně. Je nutné otestovat vaši aplikaci a ujistit se, že běží před cílovou verzi. Nelze zaměřit verze systému, které jsou starší než .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Výběr cílové verze rozhraní
- Při vytváření projektu vyberte cílovou [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze **nový projekt** dialogové okno. Seznam dostupných šablon projektu je filtrován podle výběru. V existujícím projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Při vytváření projektu vyberte cílovou [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze **nový projekt** dialogové okno. Seznam dostupných šablon projektu je filtrován podle výběru. V existujícím projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] verze v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
 >  V edicích Express sady Visual Studio, nelze nastavit cílové rozhraní **nový projekt** dialogové okno.
@@ -81,7 +80,7 @@ V této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], můžete určit verz
  Další informace o odkazech na sestavení naleznete v tématu [překlad sestavení v době návrhu](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Povolení LINQ
- Pokud je cílem rozhraní .NET Framework 3.5 nebo novější, odkaz na System.Core a import na úrovni projektu pro System.Linq (v pouze v jazyce Visual Basic) jsou přidány automaticky. Pokud chcete používat funkce LINQ, musíte také zapnout možnost Infer (v pouze v jazyce Visual Basic). Reference a import jsou automaticky odebrány při změně cíle na starší verzi rozhraní .NET Framework. Další informace najdete v tématu [postupy: vytvoření projektu LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Pokud je cílem rozhraní .NET Framework 3.5 nebo novější, odkaz na System.Core a import na úrovni projektu pro System.Linq (v pouze v jazyce Visual Basic) jsou přidány automaticky. Pokud chcete používat funkce LINQ, musíte také zapnout možnost Infer (v pouze v jazyce Visual Basic). Reference a import jsou automaticky odebrány při změně cíle na starší verzi rozhraní .NET Framework. Další informace najdete v tématu [jak: Vytvoření projektu LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Viz také
  [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md) [rozhraní .NET Framework Multi-Targeting pro webové projekty ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [platforma kompatibility a systémové požadavky](http://www.microsoft.com/visualstudio/eng/products/compatibility)

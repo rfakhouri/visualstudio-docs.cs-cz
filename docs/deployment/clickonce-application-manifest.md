@@ -1,8 +1,6 @@
 ---
 title: ClickOnce – Manifest aplikace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326f71ba7a075cc6ca3e321318de89624c56894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 550b4122775f8d38ed874227bb5b36066f411b9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929225"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce – manifest aplikace
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikace je soubor XML, který popisuje aplikace, která se nasadí pomocí [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -32,11 +30,11 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu ap
 
 | Prvek | Popis | Atributy |
 | - | - | - |
-| [\<sestavení > – Element](../deployment/assembly-element-clickonce-application.md) | Požadováno. Element nejvyšší úrovně. | `manifestVersion` |
-| [\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-application.md) | Požadováno. Určuje primární sestavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) | Identifikuje požadavky na zabezpečení aplikace. | Žádné |
-| [\<entryPoint > – Element](../deployment/entrypoint-element-clickonce-application.md) | Požadováno. Určuje vstupní bod pro kód aplikace. | `name` |
-| [\<závislost > – Element](../deployment/dependency-element-clickonce-application.md) | Požadováno. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést. | Žádné |
+| [\<sestavení > – Element](../deployment/assembly-element-clickonce-application.md) | Povinný parametr. Element nejvyšší úrovně. | `manifestVersion` |
+| [\<Vlastnost assemblyIdentity > – Element](../deployment/assemblyidentity-element-clickonce-application.md) | Povinný parametr. Určuje primární sestavení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<trustInfo > Element](../deployment/trustinfo-element-clickonce-application.md) | Identifikuje požadavky na zabezpečení aplikace. | Žádná |
+| [\<entryPoint > – Element](../deployment/entrypoint-element-clickonce-application.md) | Povinný parametr. Určuje vstupní bod pro kód aplikace. | `name` |
+| [\<závislost > – Element](../deployment/dependency-element-clickonce-application.md) | Povinný parametr. Identifikuje každou závislost vyžaduje pro spuštění aplikace. Volitelně určuje sestavení, které je potřeba provést. | Žádná |
 | [\<Soubor > – Element](../deployment/file-element-clickonce-application.md) | Volitelné. Identifikuje každý nonassembly soubor, který používá aplikace. Izolace dat modelu COM (Component Object) přidružené k souboru může obsahovat. | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
 | [\<fileAssociation > – Element](../deployment/fileassociation-element-clickonce-application.md) | Volitelné. Určuje příponu souboru, který se má přidružit aplikaci. | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
@@ -46,7 +44,7 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu ap
 ## <a name="file-location"></a>Umístění souboru  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu aplikace je specifická pro jednu verzi nasazení. Z tohoto důvodu mají být uloženy odděleně od manifesty nasazení. Běžné konvence je umístit je v podadresáři pojmenovaném přidružené verze.  
 
- Manifest aplikace musí být podepsané vždy před jejich nasazením. Pokud změníte manifest aplikace ručně, je nutné použít *mage.exe* znovu podepsat manifest aplikace, manifest nasazení aktualizovat a znovu podepsat manifest nasazení. Další informace najdete v tématu [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Manifest aplikace musí být podepsané vždy před jejich nasazením. Pokud změníte manifest aplikace ručně, je nutné použít *mage.exe* znovu podepsat manifest aplikace, manifest nasazení aktualizovat a znovu podepsat manifest nasazení. Další informace najdete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
 
 ## <a name="file-name-syntax"></a>Syntaxe názvu souboru  
  Název [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] soubor manifestu aplikace musí být úplný název a příponu aplikace jsme uvedli v `assemblyIdentity` element, za nímž následuje rozšíření *.manifest*. Například manifest aplikace, která odkazuje *Example.exe* by aplikace využila následující syntaxe názvu souboru.  

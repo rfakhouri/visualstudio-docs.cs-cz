@@ -1,8 +1,6 @@
 ---
 title: Diaaddressmapentry – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964082"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Popisuje položky v mapování adres.  
@@ -27,7 +25,7 @@ Popisuje položky v mapování adres.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-struct DiaAddressMapEntry {   
+struct DiaAddressMapEntry {   
    DWORD rva,  
    DWORD rvaTo  
 };  

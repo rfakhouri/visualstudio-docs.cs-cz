@@ -1,8 +1,6 @@
 ---
 title: Přidání ovládacích prvků do dokumentů Office za běhu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842785"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Přidání ovládacích prvků do dokumentů Office za běhu
   Můžete přidat ovládací prvky do dokumentu Microsoft Office Word a sešit aplikace Microsoft Office Excel za běhu. Můžete také odebrat je za běhu. Ovládací prvky, které můžete přidat nebo odebrat za běhu se nazývají *dynamické ovládací prvky*.  
@@ -45,7 +43,7 @@ ms.locfileid: "52305634"
 
 - [Přidání ovládacích prvků Windows Forms do dokumentů](#WindowsForms).  
 
-  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak to: Přidání ovládacích prvků do dokumentu plochu za běhu?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Přidání ovládacích prvků na plochu dokumentu za běhu? ](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> Spravovat ovládacích prvků za běhu pomocí kolekce ovládacích prvků  
  Pokud chcete přidat, získat nebo odebrání ovládacích prvků za běhu, použijte pomocné metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> a <xref:Microsoft.Office.Tools.Word.ControlCollection> objekty.  
@@ -88,7 +86,7 @@ ms.locfileid: "52305634"
 
 - [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
-- [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
 - [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 

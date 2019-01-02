@@ -1,6 +1,5 @@
 ---
 title: Odkaz na schéma manifestu šablon sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961952"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Odkaz na schéma manifestu šablony Visual Studio
 Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) souborů, které jsou generovány pro šablony sady Visual Studio projekt nebo položku. Schéma také popisuje umístění a další důležité informace o šabloně.  
   
- : Protože existují samostatné položky a adresáře šablony projektu, manifest by měl mít nikdy kombinaci šablony položek a projektů.  
+ : Vzhledem k tomu, že existují samostatné položky a adresáře šablony projektu, manifest by měl mít nikdy kombinaci šablony položek a projektů.  
   
 > [!IMPORTANT]
 >  Tento manifest je k dispozici od verze Visual Studio 2017.  
@@ -29,9 +28,9 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
   
 ### <a name="attributes"></a>Atributy  
   
--   **Verze**: řetězec představující verze manifestu šablony. Požadováno.  
+-   **Verze**: Řetězec představující verze manifestu šablony. Povinný parametr.  
   
--   **Národní prostředí**: řetězec představující národního prostředí nebo národní prostředí manifestu šablony. Hodnota národního prostředí platí pro všechny šablony. Je nutné použít samostatné manifestu pro každé národní prostředí. Volitelné.  
+-   **Národní prostředí**: Řetězec představující národního prostředí nebo národní prostředí manifestu šablony. Hodnota národního prostředí platí pro všechny šablony. Je nutné použít samostatné manifestu pro každé národní prostředí. Volitelné.  
   
 ### <a name="child-elements"></a>Podřízené prvky  
   
@@ -46,11 +45,11 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
  Kontejner šablony manifestu elementy. Manifest obsahuje jeden kontejner šablony pro každou šablonu, kterou definuje.  
   
 ### <a name="attributes"></a>Atributy  
- **VSTemplateType**: hodnotu řetězce, která určuje typ šablony (`"Project"`, `"Item"`, nebo `"ProjectGroup"`). Požadováno  
+ **VSTemplateType**: Hodnotu řetězce, která určuje typ šablony (`"Project"`, `"Item"`, nebo `"ProjectGroup"`). Požadováno  
   
 ### <a name="child-elements"></a>Podřízené prvky  
   
--   **RelativePathOnDisk**: relativní cesta souboru na disku šablony. Toto umístění také definuje umístění šablony ve stromové struktuře šablony je znázorněno **nový projekt** nebo **nová položka** dialogového okna. Pro šablony nasadit jako jednotlivé soubory a adresáře Tato cesta odkazuje na adresář obsahující soubory šablon. Pro šablony nasadit jako *ZIP* soubor, tato cesta musí být cesta k *ZIP* souboru.  
+-   **RelativePathOnDisk**:  Relativní cesta souboru šablony na disku. Toto umístění také definuje umístění šablony ve stromové struktuře šablony je znázorněno **nový projekt** nebo **nová položka** dialogového okna. Pro šablony nasadit jako jednotlivé soubory a adresáře Tato cesta odkazuje na adresář obsahující soubory šablon. Pro šablony nasadit jako *ZIP* soubor, tato cesta musí být cesta k *ZIP* souboru.  
   
 -   ** VSTemplateHeader: A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) element, který popisuje záhlaví.  
   
@@ -67,13 +66,13 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
   
 ### <a name="child-elements"></a>Podřízené prvky  
   
--   **RelativePath**: cesta k šabloně. Může existovat jenom jeden záznam za cestu, takže první z nich vyhraje u všech manifestů.  
+-   **RelativePath**: Cesta k šabloně. Může existovat jenom jeden záznam za cestu, takže první z nich vyhraje u všech manifestů.  
   
 -   **LocalizedName**: A **NameDescriptionIcon** prvek, který určuje lokalizovaný název. Volitelné.  
   
--   **SortOrder –**: řetězec, který určuje pořadí řazení. Volitelné.  
+-   **SortOrder –**: Řetězec, který určuje pořadí řazení. Volitelné.  
   
--   **ParentFolderOverrideName**: přepsané název nadřazené složky. Volitelné. Tento element nemá **název** atribut, který je hodnota řetězce, který určuje název.  
+-   **ParentFolderOverrideName**: Přepsané název nadřazené složky. Volitelné. Tento element nemá **název** atribut, který je hodnota řetězce, který určuje název.  
   
 ### <a name="parent-element"></a>Nadřazený element  
  **VSTemplateManifest**  
@@ -83,9 +82,9 @@ Toto schéma popisuje formát manifestu šablony sady Visual Studio (*.vstman*) 
   
 ### <a name="attributes"></a>Atributy  
   
--   **Balíček**: hodnotu řetězce, která určuje balíček. Volitelné.  
+-   **Balíček**: Řetězcovou hodnotu, která určuje balíček. Volitelné.  
   
--   **ID**: hodnotu řetězce, která určuje ID. Volitelné.  
+-   **ID**: Hodnotu řetězce, která určuje ID. Volitelné.  
   
 ### <a name="child-elements"></a>Podřízené prvky  
  Žádné  

@@ -1,15 +1,10 @@
 ---
 title: 'Postupy: Přidání a odebrání dalších sestavení | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887007"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Postupy: Přidání a odebrání dalších sestavení
   Pokud balíček Sharepointu závisí na jiné sestavení, pro funkce nebo data, můžete přidat sestavení do vašeho řešení balíčku (.wsp). Tímto způsobem, SharePoint server zajišťuje, že vlastní sestavení se instalují s balíčkem.  
@@ -36,7 +31,7 @@ ms.locfileid: "50219143"
   
 #### <a name="to-add-an-existing-assembly"></a>Chcete-li přidat existující sestavení  
   
-1.  Otevřít **balíček návrháře**. Další informace najdete v tématu [postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Otevřít **balíček návrháře**. Další informace najdete v tématu [jak: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Zvolte **Upřesnit** kartu.  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219143"
   
 1.  Otevřít **balíček návrháře**.  
   
-     Další informace najdete v tématu [postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+     Další informace najdete v tématu [jak: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Zvolte **Upřesnit** kartu.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219143"
   
 #### <a name="to-delete-an-existing-assembly"></a>Chcete-li odstranit existující sestavení  
   
-1.  Otevřít **balíček návrháře**. Další informace najdete v tématu [postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+1.  Otevřít **balíček návrháře**. Další informace najdete v tématu [jak: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
 2.  Zvolte **Upřesnit** kartu.  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219143"
   
 ## <a name="see-also"></a>Viz také:
  [Vytvoření funkcí služby SharePoint](../sharepoint/creating-sharepoint-features.md)   
- [Postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Postupy: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Postupy: Přidání a odebrání položek z funkcí služby SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  

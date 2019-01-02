@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber::get_compilandid – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080e45965802a09c5cc3d3a452e96342aa5a20f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc39924da691440d6fdffa59a744f5c3dd187568
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843577"
 ---
 # <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
 Získá jedinečný identifikátor souboru pro kompilaci, která uživatel tento řádek.  
@@ -27,7 +25,7 @@ Získá jedinečný identifikátor souboru pro kompilaci, která uživatel tento
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_compilandId (   
+HRESULT get_compilandId (   
    DWORD* pRetVal  
 );  
 ```  

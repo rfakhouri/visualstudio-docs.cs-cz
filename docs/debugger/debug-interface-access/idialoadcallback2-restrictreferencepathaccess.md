@@ -1,8 +1,6 @@
 ---
-title: Idialoadcallback2::restrictreferencepathaccess – | Microsoft Docs
-ms.custom: ''
+title: Idialoadcallback2::restrictreferencepathaccess – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c3a6239b41fec44098850973ddcd4839b808a8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 121b5a4c74fd017e39314de7afe760a8d6184e25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872132"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
-Určuje, jestli je povolené hledá soubor .pdb v cestě, kde je umístěn soubor .exe.  
+Určuje, jestli hledá soubor PDB je povolený v cestě, kde je umístěn soubor .exe.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +29,10 @@ HRESULT RestrictReferencePathAccess();
 ```  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí kód chyby.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí kód chyby.  
   
 ## <a name="remarks"></a>Poznámky  
- Žádné jiné než návratový kód `S_OK` aby hledá soubor .pdb v cestě, kde je umístěn soubor .exe.  
+ Žádné jiné než návratový kód `S_OK` zabránit najít soubor .pdb v cestě, kde je umístěn soubor .exe.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

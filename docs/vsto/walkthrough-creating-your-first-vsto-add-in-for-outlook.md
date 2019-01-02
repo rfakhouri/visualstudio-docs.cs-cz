@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb5c938d6dbd269732b49584fc4e3831e869b0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962542"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Outlook
   Tento návod ukazuje, jak k vytvoření doplňku VSTO pro aplikaci Microsoft Office Outlook. Funkce, které vytvoříte v tento druh řešení jsou k dispozici aplikace samostatně, bez ohledu na to, který je otevřený položky aplikace Outlook. Další informace najdete v tématu [přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -65,7 +62,7 @@ ms.locfileid: "49950960"
   
 6.  V **název** zadejte **FirstOutlookAddIn**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstOutlookAddIn** projekt a otevře **ThisAddIn** souboru kódu v editoru.  
   
@@ -145,5 +142,3 @@ ms.locfileid: "49950960"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

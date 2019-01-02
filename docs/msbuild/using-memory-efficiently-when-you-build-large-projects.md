@@ -1,8 +1,6 @@
 ---
 title: Efektivní využívání paměti při sestavování rozsáhlých projektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - memory use (MSBuild)
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99550ffd42e5a3cca919ee9dd00658c66ee0e4b0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 958c4c41aea3a147415d799db52c7295234d9488
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858341"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>Efektivní použití paměti při sestavování rozsáhlých projektů
 Velké projekty často obsahovat mnoho dílčích projektů a další závislosti, které můžou spotřebovat velké množství systémové paměti v okamžiku sestavení. Když je snížení dostupné systémové paměti, může také snížit výkon systému. Starší verze [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty zůstala v paměti. Verze 3.5 odebrat staršími verzemi projektů, ale zachovají výsledků sestavení v mezipaměti pro pozdější načtení.  

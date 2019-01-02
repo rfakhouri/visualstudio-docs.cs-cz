@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_sealed – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e77e379d3f3635cf6976765450ba32ea6de81ef2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffb4e6e82b3c34b8186bbee2a42fba8a1f6a8b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920242"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 Získá příznak, který určuje, zda je třída nebo metoda je zapečetěná.  
@@ -27,7 +25,7 @@ Získá příznak, který určuje, zda je třída nebo metoda je zapečetěná.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_sealed(   
+HRESULT get_sealed(   
    BOOL* pRetVal)  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_sealed(
  Zapečetěnou třídu nelze použít jako základní třídu. Zapečetěné metody nemůže být overidden.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   

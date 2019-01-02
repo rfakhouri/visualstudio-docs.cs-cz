@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837966"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Protokol změn (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   Pevné odkazy na sestavení UnityEngine a UnityEditor pro aplikace Windows Store.
 
--   Oprava chyby při krokování v ladicím programu: nelze krokovat obecnou výjimku.
+-   Oprava chyby při krokování v ladicím programu: Nelze provést obecnou výjimku.
 
 -   Pevný počet průchodů zarážky v sadě Visual Studio 2015.
 
@@ -206,13 +205,13 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Instalace Visual Studio Tools pro Unity balíček pro Unity 5.
 
--   **Dokumentace ke službě:** zlepšení výkonu při generování dokumentace.
+-   **Dokumentace ke službě:** Zlepšení výkonu při generování dokumentace.
 
--   **Průvodce:** podporu nových MonoBehavior metod 4.6 v Unity a Unity 5.
+-   **Průvodci:** Podpora nových MonoBehavior metod 4.6 v Unity a Unity 5.
 
--   **Unity:** nebezpečné příznaků vyhledávání a vlastních definuje v soubory .rsp při generování souboru projektu.
+-   **Unity:** Nezabezpečený příznaků vyhledávání a vlastních definuje soubory .rsp při generování souboru projektu.
 
--   **Uživatelské rozhraní:** přidali Visual Studio Tools for Unity **možnosti** dialogového okna v sadě Visual Studio.
+-   **UŽIVATELSKÉ ROZHRANÍ:** Přidat Visual Studio Tools for Unity **možnosti** dialogového okna v sadě Visual Studio.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 
@@ -246,13 +245,13 @@ Protokol změn Visual Studio Tools for Unity.
 
     -   Odeslat protokoly konzoly s Unity v seznamu chyb VS.
 
--   **Dokumentace ke službě:** opravte generování dokumentace pro nové dokumentace k unity.
+-   **Dokumentace ke službě:** Opravte generování dokumentace pro nové dokumentace k unity.
 
--   **Projekt:** přesunutí a přejmenování souborů .meta Unity v případě potřeby i ve složkách.
+-   **Projekt:** Přesunutí a přejmenování souborů .meta Unity v případě potřeby i ve složkách.
 
--   **Průvodce:** opravte pořadí parametrů metody MonoBehavior při generování kódu.
+-   **Průvodci:** Opravte pořadí parametrů metody MonoBehavior při generování kódu.
 
--   **Uživatelské rozhraní:** motivů aplikace Visual Studio podporu pro místní nabídky a ikony.
+-   **UŽIVATELSKÉ ROZHRANÍ:** Podpora kontextové nabídky a ikony motivů aplikace Visual Studio.
 
 ## <a name="20-preview"></a>2.0 preview
  Vydáno 2014-11-12
@@ -599,19 +598,19 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   Oprava chyby UVS 46: Duplicitní soubor otevřen skriptu (UnityScript), když kliknou na chyby seznam sady Visual Studio.
 
--   Oprava chyby UVS 42: logo připojení k Unity ve stavovém řádku nezpracuje události myši ve VS 2012.
+-   Oprava chyby UVS 42: Logo připojení k Unity ve stavovém řádku nezpracuje události myši ve VS 2012.
 
 -   Oprava chyby UVS 44: CTRL + SHIFT + Q není k dispozici v sadě VS 2012 pro rychlé třídy Monobehaviour.
 
--   Oprava chyby UVS 40: vybrané položky v Průzkumníku projektů Unity jsou nejde přečíst, pokud je okno v VS2012 "" tmavé neaktivní.
+-   Oprava chyby UVS 40: Vybrané položky v Průzkumníku projektů Unity jsou nejde přečíst, když je okno v VS2012 "" tmavé neaktivní.
 
--   Oprava chyby UVS 39: tokenizaci problém uvozeny řídicími znaky řetězce.
+-   Oprava chyby UVS 39: Problém tokenizaci uvozeny řídicími znaky řetězce.
 
--   Oprava chyby UVS 35: vyvolat ToString u objektů při kontrole proměnných.
+-   Oprava chyby UVS 35: Vyvolání ToString u objektů při kontrole proměnných.
 
 -   Oprava chyby UVS 27: Goto Symbol okno nesoulad s "" tmavé v VS2012.
 
--   Oprava chyby UVS-11: místní hodnoty v korutinách.
+-   Oprava chyby UVS-11: Místní hodnoty v korutinách.
 
 ## <a name="11--beta-release"></a>1.1 – beta verze
  Vydáno 2014-10-09
@@ -717,9 +716,9 @@ Protokol změn Visual Studio Tools for Unity.
 
 -   Opravili jsme, jak jsou typy prohledaný načtená sestavení pro vyhodnocení výrazu.
 
--   Oprava chyby UVS – 21: hodnocení přiřazení na objektech Unity nemá žádný vliv.
+-   Oprava chyby UVS – 21: Hodnocení přiřazení na objektech Unity nemá žádný vliv.
 
--   Oprava chyby UVS – 21: neplatný ukazatel při vyhodnocení volání metody matematické API Unity.
+-   Oprava chyby UVS – 21: Neplatný ukazatel při vyhodnocení volání metody matematické API Unity.
 
 ## <a name="108"></a>1.0.8
  Vydáno 2012-09-26
@@ -818,4 +817,3 @@ Protokol změn Visual Studio Tools for Unity.
 
 ## <a name="10--initial-release"></a>Verzi 1.0 – počáteční
  Vydáno 2012-08-22
-

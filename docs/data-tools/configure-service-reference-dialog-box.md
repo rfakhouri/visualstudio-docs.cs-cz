@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0cb2737356813a9b637d7f16e9d5cda704c022a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e90287711d23a3560ddd97280a8a51e591ce40e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963512"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Nastavit odkaz na službu – dialogové okno
 
@@ -107,5 +106,5 @@ Pro přístup **nastavit odkaz na službu** dialogové okno, klikněte pravým t
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Přidání odkazu na webovou službu](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Postupy: Přidejte odkaz na webovou službu](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/configure-service-reference-dialog-box.md)

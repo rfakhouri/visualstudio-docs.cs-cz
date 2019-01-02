@@ -1,9 +1,6 @@
 ---
 title: Ovládací prvky v dokumentech Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930593"
 ---
 # <a name="controls-on-office-documents"></a>Ovládací prvky v dokumentech Office
   Nástroje pro vývoj pro Office v sadě Visual Studio můžete použít k přidávání ovládacích prvků Windows Forms a *hostování ovládacích prvků* do dokumentů aplikace Word a sešitů aplikace Excel. Hostitelské ovládací prvky jsou objekty, které rozšiřují různých objektů uživatelského rozhraní (UI) v objektové modely aplikace Word a Excel.  
@@ -54,5 +51,3 @@ ms.locfileid: "53441467"
   
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
  Popisuje, jak zobrazit data v dokumentech aplikace Word a Excel pomocí vazby dat na hostitelské ovládací prvky v rámci dokumentu.  
-  
-  

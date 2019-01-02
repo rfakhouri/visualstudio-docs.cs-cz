@@ -1,8 +1,6 @@
 ---
-title: Příkazy nabídky nápovědy | Microsoft Docs
-ms.custom: ''
+title: Příkazy nabídky nápovědy | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Help menu commands
@@ -12,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d23d0fdc601c36ae75c1fbdab2bf2e1964d3c2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 22ea48a465b273f3dfcb3934c620cf053597b4ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922439"
 ---
 # <a name="help-menu-commands"></a>Příkazy nabídky nápovědy
-**Pomoci** nabídka poskytuje příkazy otevřít soubory nápovědy.  
+**Pomáhají** nabídka obsahuje příkazy, které otevřete soubory nápovědy.  
   
  **Index**  
- Otevře se obsah obrazovky nástroje Spy ++ nápovědy k.  
+ Otevře se obsah obrazovky Nápověda nástroje Spy ++.  
   
- **Použití nápovědy**  
- Otevře soubor nápovědy, která popisuje, jak používat nápovědu.  
+ **Přes nabídku Nápověda**  
+ Otevře se soubor nápovědy, který popisuje, jak použít nápovědu.  
   
  **O nástroji Spy ++**  
- Obsahuje informace, o nástroje Spy ++ verzi a autorských právech softwaru.
+ Zobrazují software verzi a autorských právech informace nástroje Spy ++.

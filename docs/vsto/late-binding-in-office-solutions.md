@@ -1,9 +1,6 @@
 ---
 title: Pozdní vazba v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,49 +15,49 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c886305b3cfe63ef2d2821752d97099d93689891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847253"
 ---
 # <a name="late-binding-in-office-solutions"></a>Pozdní vazba v řešeních pro systém Office
-  Některé typy v objektové modely aplikací Office poskytují funkce, které jsou k dispozici prostřednictvím funkce pozdní vazba. Například některé metody a vlastnosti, může vracet různé typy objektů v závislosti na kontextu aplikace Office a některé typy můžou zpřístupnit různé metody nebo vlastnosti v různých kontextech.  
+  Některé typy v objektové modely aplikací sady Office poskytují funkce, které jsou k dispozici prostřednictvím funkce pozdní vazbu. Například některé metody a vlastnosti může vrátit různé typy objektů v závislosti na kontextu aplikace Office a některé typy můžete zveřejnit různé metody nebo vlastnosti v různých kontextech.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Visual Basic, projekty, kde **možnost striktní** je vypnuto a Visual C# projektů cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] může spolupracovat přímo s typy, které využívají tyto funkce pozdní vazba.  
+ Projekty Visual Basic where **Option Strict** je vypnuto a vizuální C# projekty, které cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] může spolupracovat přímo s typy, které využívají tyto funkce pozdní vazbu.  
   
 ## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Implicitní a explicitní přetypování objektu návratové hodnoty  
- Mnoho metod a vlastností v aplikaci Microsoft Office, vrátí primární spolupracující sestavení (PIA) <xref:System.Object> hodnoty, protože se může vracet různé typy objektů. Například <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> vlastnost vrátí <xref:System.Object> vzhledem k tomu může být hodnoty <xref:Microsoft.Office.Interop.Excel.Worksheet> nebo <xref:Microsoft.Office.Interop.Excel.Chart> objekt, v závislosti na tom, co je aktivním listem.  
+ Mnoho metod a vlastností v aplikaci Microsoft Office, primární sestavení vzájemné spolupráce (PIA) vrátí <xref:System.Object> hodnoty, protože se může vrátit různé druhy objektů. Například <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> vrátí vlastnost <xref:System.Object> protože vrácená hodnota může být <xref:Microsoft.Office.Interop.Excel.Worksheet> nebo <xref:Microsoft.Office.Interop.Excel.Chart> objekt, v závislosti na tom, co je aktivní list.  
   
- Při vrácení metody nebo vlastnosti <xref:System.Object>, je nutné explicitně převést (v jazyce Visual Basic) objekt správný typ v projekty Visual Basic kde **možnost striktní** zapnutý. Není nutné explicitně přetypovat <xref:System.Object> návratové hodnoty v projektech Visual Basic kde **možnost striktní** je vypnutý.  
+ Při vrácení metody nebo vlastnosti <xref:System.Object>, je nutné explicitně převést (v jazyce Visual Basic) na objekt na správný typ v projektech Visual Basicu kde **Option Strict** zapnutý. Není nutné explicitně přetypovat <xref:System.Object> návratové hodnoty v projektech Visual Basicu kde **Option Strict** je vypnuté.  
   
- Ve většině případů referenční dokumentaci k nástroji uvádí možné typy návratovou hodnotu pro člena, který vrátí <xref:System.Object>. Převádění nebo přetypování objekt umožňuje technologii IntelliSense pro objekt v editoru kódu.  
+ Ve většině případů obsahuje referenční dokumentaci seznam možných typů návratová hodnota pro člen, který se vrátí <xref:System.Object>. Převod nebo přetypováním objektu technologie IntelliSense pro objekt v editoru kódu.  
   
- Informace o převodu v jazyce Visual Basic najdete v tématu [implicitní a explicitní převody &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) a [CType – funkce &#40;jazyka Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Informace o převodu v jazyce Visual Basic najdete v tématu [implicitní a explicitní převody &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) a [funkce CType &#40;jazyka Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Příklady  
- Následující příklad kódu ukazuje, jak převést objekt na určitý typ v projektu jazyka Visual Basic kde **možnost striktní** zapnutý. V tomto typu projektu musíte explicitně přetypovat <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> vlastnosti <xref:Microsoft.Office.Interop.Excel.Range>. Tento příklad vyžaduje projekt aplikace Excel na úrovni dokumentu a s listu třídy s názvem `Sheet1`.  
+ Následující příklad kódu ukazuje, jak převést objekt na specifický typ v projektu jazyka Visual Basic kde **Option Strict** zapnutý. V tomto typu projektu musíte explicitně přetypovat <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> vlastnost <xref:Microsoft.Office.Interop.Excel.Range>. Tento příklad vyžaduje úrovni dokumentu projektu aplikace Excel s třídou list s názvem `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]  
   
- Následující příklad kódu ukazuje, jak implicitně převést na určitý typ objektu v projektu jazyka Visual Basic kde **možnost striktní** je vypnutý nebo v projektu jazyka Visual C#, jehož cílem [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. V těchto typech projektů <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> vlastnost je implicitně převést na <xref:Microsoft.Office.Interop.Excel.Range>. Tento příklad vyžaduje projekt aplikace Excel na úrovni dokumentu a s listu třídy s názvem `Sheet1`.  
+ Následující příklad kódu ukazuje, jak v projektu jazyka Visual Basic implicitně přetypován na určitý typ objektu kde **Option Strict** je ve Vizuálu nebo vypnutí C# projekt, který cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. V těchto typech projektů <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> vlastnost je implicitně přetypován na <xref:Microsoft.Office.Interop.Excel.Range>. Tento příklad vyžaduje úrovni dokumentu projektu aplikace Excel s třídou list s názvem `Sheet1`.  
   
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="access-members-that-are-available-only-through-late-binding"></a>Přístupu členů, které jsou dostupné pouze prostřednictvím pozdní vazba  
- Některé vlastnosti a metody v PIA Office jsou k dispozici pouze prostřednictvím pozdní vazba. V jazyce Visual Basic projekty kde **možnost striktní** je v projektech Visual C# nebo vypnout cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], pozdní vazba funkce v těchto jazycích můžete použít pro přístup ke členům pozdní vazbu. V jazyce Visual Basic projekty kde **možnost striktní** zapnutý, reflexe musí používat pro přístup tito členové.  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>Získat přístup ke členům, které jsou k dispozici pouze prostřednictvím pozdní vazby  
+ Některé vlastnosti a metody v sestavení PIA sady Office jsou k dispozici pouze prostřednictvím pozdní vazbu. Projekty v jazyce Visual Basic, kde **Option Strict** je ve Vizuálu nebo vypnutí C# projekty, které cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], pozdní vazba funkce v těchto jazycích můžete použít pro přístup ke členům s pozdní vazbou. Projekty v jazyce Visual Basic, kde **Option Strict** zapnutý, je nutné použít pro přístup k těmto členům reflexe.  
   
 ### <a name="examples"></a>Příklady  
- Následující příklad kódu ukazuje, jak přístup ke členům pozdní vazba v projektu jazyka Visual Basic kde **možnost striktní** je vypnutý nebo v projektu jazyka Visual C#, jehož cílem [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Tento příklad používá pozdní vazbu **název** vlastnost **otevřít soubor** dialogové okno v aplikaci Word. Pokud chcete použít v tomto příkladu, spusťte z `ThisDocument` nebo `ThisAddIn` – třída v projektu aplikace Word.  
+ Následující příklad kódu ukazuje, jak pro přístup ke členům s pozdní vazbou v projektu jazyka Visual Basic kde **Option Strict** je ve Vizuálu nebo vypnutí C# projekt, který cílí [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. V tomto příkladu přistupuje k pozdní vazbou **název** vlastnost **otevřít soubor** dialogové okno v aplikaci Word. Pokud chcete použít tento příklad, spusťte jej z `ThisDocument` nebo `ThisAddIn` třídy v projektu aplikace Word.  
   
  [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
  [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- Následující příklad kódu ukazuje, jak provést stejný úkol v projektu jazyka Visual Basic pomocí reflexe kde **možnost striktní** zapnutý.  
+ Následující příklad kódu ukazuje, jak provést stejný úkol v projektu jazyka Visual Basic pomocí reflexe kde **Option Strict** zapnutý.  
   
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
@@ -72,5 +69,3 @@ ms.locfileid: "34572547"
  [Reflexe (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexe (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82b688aad266a8c9e6777007f71e3de868fbe1a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1798d0b9d228cd2547ab596edfc3a4c8f6b69a56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852288"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Ladění aplikací pro Store v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

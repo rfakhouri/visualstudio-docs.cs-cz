@@ -1,9 +1,6 @@
 ---
-title: Instalace mimo složku rozšíření s VSIX v3 | Microsoft Docs
-ms.custom: ''
+title: Instalace mimo složku rozšíření s VSIX v. 3 | Dokumentace Microsoftu
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
@@ -11,38 +8,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8476b300974d66efc60f647c897ec6892191e7fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968495"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Instalace mimo složku rozšíření
 
-Od verze Visual Studio 2017 a VSIX v3 (verze 3), se teď podporují instalaci rozšíření prostředky mimo složku rozšíření. V současné době jsou jako platný instalační umístění (kde [INSTALLDIR] je namapovaný na instanci aplikace Visual Studio Instalační adresář) povolené následující umístění:
+Od verze Visual Studio 2017 a VSIX v3 (verze 3), byla přidána podpora pro instalaci rozšíření prostředků mimo složku rozšíření. V současné době jsou povoleny následující umístění jako umístění platná instalace (kde [INSTALLDIR] je namapována na instanci aplikace Visual Studio Instalační adresář):
 
 * \MSBuild [INSTALLDIR]
-* \Xml\Schemas [INSTALLDIR]
+* [INSTALLDIR] \Xml\Schemas
 * \Common7\IDE\PublicAssemblies [INSTALLDIR]
 * \Licenses [INSTALLDIR]
 * \Common7\IDE\ReferenceAssemblies [INSTALLDIR]
 * \Common7\IDE\RemoteDebugger [INSTALLDIR]
 * \Common7\IDE\VC\VCTargets [INSTALLDIR]
 
->**Poznámka:** formát VSIX neumožňuje k instalaci mimo struktura složek instalaci VS.
+>**Poznámka:** Formát VSIX neumožňuje instalovat mimo strukturu složek instalace VS.
 
-Chcete-li podporují instalaci na tyto adresáře, musí být VSIX nainstalovanou "jednotlivých instancí na počítač". To může být povolena zaškrtnutím políčka "všechna users" v Návrháři extension.vsixmanifest:
+Aby bylo možné podporovat instalace pro tyto adresáře, musí být rozšíření VSIX nainstalovaná "jednotlivé instance vázaná na počítač". Lze povolit zaškrtnutím políčka "all users" v Návrháři extension.vsixmanifest:
 
 ![Zkontrolujte všechny uživatele](media/check-all-users.png)
 
-## <a name="how-to-set-the-installroot"></a>Jak nastavit Kořenová_složka_instalace
+## <a name="how-to-set-the-installroot"></a>Jak nastavit InstallRoot
 
-Pokud chcete nastavit instalační adresáře, můžete použít **vlastnosti** oken v sadě Visual Studio. Například můžete nastavit `InstallRoot` vlastnost odkaz na projekt do jednoho z výše uvedených umístění:
+Nastavení adresáře instalace, můžete použít **vlastnosti** okna v sadě Visual Studio. Například můžete nastavit `InstallRoot` vlastnost odkaz na projekt do jednoho z výše uvedených umístění:
 
-![Vlastnosti kořenové instalace](media/install-root-properties.png)
+![Nainstalujte kořenový vlastnosti](media/install-root-properties.png)
 
-Některá metadata se přidá do odpovídajících `ProjectReference` vlastnost uvnitř souboru .csproj VSIX projektu:
+Některá metadata se přidá do příslušné `ProjectReference` vlastnost v souboru .csproj projektu VSIX:
 
 ```xml
  <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -52,15 +49,15 @@ Některá metadata se přidá do odpovídajících `ProjectReference` vlastnost 
  </ProjectReference>
 ```
 
->**Poznámka:** můžete upravit souboru .csproj přímo, pokud dáváte přednost.
+>**Poznámka:** Pokud dáváte přednost můžete přímo, upravte soubor csproj.
 
-## <a name="how-to-set-a-subpath-under-the-installroot"></a>Postup nastavení v části Kořenová_složka_instalace dílčí cestou k
+## <a name="how-to-set-a-subpath-under-the-installroot"></a>Jak nastavit podřízená cesta v rámci InstallRoot
 
-Pokud chcete nainstalovat dílčí cestu pod `InstallRoot`, můžete tak učinit nastavením `VsixSubPath` vlastnost stejně jako `InstallRoot` vlastnost. Předpokládejme, chceme, aby naše projektu odkaz výstup pro instalaci ' [INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0'. Jsme to můžete provést snadno pomocí návrháře vlastnost:
+Pokud chcete nainstalovat podřízená cesta pod `InstallRoot`, lze provést nastavením `VsixSubPath` vlastnost stejně jako `InstallRoot` vlastnost. Například Řekněme, že chceme výstup naše projektu reference k instalaci na "[INSTALLDIR]\MSBuild\MyCompany\MySDK\1.0". Můžeme to snadno udělat pomocí návrháře vlastnost:
 
-![dílčí sada cestu](media/set-subpath.png)
+![podřízená cesta v sadě](media/set-subpath.png)
 
-Odpovídající změny .csproj bude vypadat takto:
+Odpovídající změny .csproj bude vypadat nějak takto:
 
 ```xml
 <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
@@ -73,4 +70,4 @@ Odpovídající změny .csproj bude vypadat takto:
 
 ## <a name="extra-information"></a>Další informace
 
-Změny vlastností návrháře platí pro více než jen odkazů projektu; můžete nastavit `InstallRoot` metadata pro položky v rámci projektu také (pomocí stejné metody popsané výše).
+Vlastnosti návrháře změny se aplikují na víc než jenom odkazy projektu; můžete nastavit `InstallRoot` metadat pro položky v rámci projektu také (pomocí stejných metod popsaných výše).

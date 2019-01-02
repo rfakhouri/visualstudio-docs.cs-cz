@@ -2,7 +2,6 @@
 title: Výchozí klávesové zkratky
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849587"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 
-Další informace o přístupnost přes klávesnici, naleznete v tématu [a tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md) a [postupy: výhradní používání klávesnice](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Další informace o přístupnost přes klávesnici, naleznete v tématu [a tipy k přístupnosti](../ide/reference/accessibility-tips-and-tricks.md) a [jak: Výhradní používání klávesnice](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Řadu příkazů a oken v sadě Visual Studio můžete přistupovat výběrem příslušné klávesové zkratky. V tomto tématu jsou uvedeny výchozí klávesové zkratky pro obecný vývojový profil, který jste možná vybrali při instalaci sady Visual Studio. Bez ohledu na to, který profil vyberete, můžete identifikovat klávesovou zkratku pro příkaz tak, že otevřete **možnosti** dialogovém okně rozšíření **prostředí** uzel a poté volbou **klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.
 

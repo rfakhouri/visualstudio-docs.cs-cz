@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 5 průvodce základní funkce Pythonu v sadě Visual Studio, ukázka funkce aplikace Visual Studio pro správu balíčků v prostředí Pythonu.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 666b780506784d7c252d37bc018817101bcfede8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964964"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Pythonu
 
-**Předchozí krok: [spuštění kódu v ladicím programu](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**Předchozí krok: [Spuštění kódu v ladicím programu](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 Komunita vývojářů Python vytvořil tisíce užitečné balíčky, které můžete začlenit do vašich projektů. Visual Studio poskytuje uživatelské rozhraní pro správu balíčků ve vašem prostředí Pythonu.
 

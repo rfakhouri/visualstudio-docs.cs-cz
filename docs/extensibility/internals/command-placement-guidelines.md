@@ -1,9 +1,6 @@
 ---
 title: Příkaz pokyny pro umístění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, small command sets
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac09a361c885d866bf6a78e6fe7b49c246265ba
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6834a12c4ecc052c9589a156c2eeb701e88036e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933859"
 ---
 # <a name="command-placement-guidelines"></a>Pokyny pro umístění příkazu
 Osvědčené postupy pro umístění příkazů v prostředí integrovaného vývojového (prostředí IDE) sady Visual Studio se liší v závislosti na velikosti sadu příkazů. Příkazy jsou definovány a umístěn podle informací v *.vsct* soubory.  

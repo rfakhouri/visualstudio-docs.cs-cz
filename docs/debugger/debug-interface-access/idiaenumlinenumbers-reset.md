@@ -1,8 +1,6 @@
 ---
-title: Idiaenumlinenumbers::Reset – | Microsoft Docs
-ms.custom: ''
+title: Idiaenumlinenumbers::Reset – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 655b36e09656edf52d3f8d2a9af9e2994ffdaadc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c73fe81631938f70f42d03494f6c98dc59ff10f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963172"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
-Návrat na začátek v sekvenci výčtu.  
+Návrat na začátek sekvence výčtu.  
   
 ## <a name="syntax"></a>Syntaxe  
   

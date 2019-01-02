@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně funkce ověřování podle šablony webového projektu Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 26a8268508f4d53a488d2c9d5fd54ef9330b2fc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820303"
 ---
-# <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověření uživatelů v Django
+# <a name="step-5-authenticate-users-in-django"></a>Krok 5: Ověřování uživatelů v Django
 
-**Předchozí krok: [použití úplné šablony webového projektu Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Předchozí krok: [Použití úplné šablony webového projektu Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Vzhledem k tomu, že ověřování je běžné potřeby pro webové aplikace, šablona "Webového projektu Django" zahrnuje flow základní ověřování. ("Dotazuje webového projektu Django" Šablona popsané v kroku 6 v rámci tohoto kurzu také obsahuje stejný tok.) Pokud používáte některý z šablony projektu Django, Visual Studio obsahuje všechny moduly, které jsou nezbytné pro ověřování v projektu Django *settings.py*.
 
@@ -31,7 +30,7 @@ V tomto kroku se dozvíte:
 > [!div class="checklist"]
 > - Jak používat tok ověřování, které jsou součástí šablony sady Visual Studio (krok 5 - 1)
 
-## <a name="step-5-1-use-the-authentication-flow"></a>Krok 5-1: použití toku ověřování
+## <a name="step-5-1-use-the-authentication-flow"></a>Krok 5-1: Tok ověřování
 
 Následující kroky postupu tok ověřování a popisují součástí projektu, které jsou zahrnuty:
 
@@ -208,7 +207,7 @@ Následující kroky postupu tok ověřování a popisují součástí projektu,
 
 ### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>Otázka: Co je účelem {% csrf_token %} značek, které se zobrazí v \<formuláře\> elementy?
 
-Odpověď: `{% csrf_token %}` značka zahrnuje integrované v Django [webů ochranu proti padělání (csrf) žádost o](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Obvykle přidáte tuto značku na libovolný element, který zahrnuje POST, PUT nebo DELETE požadavek metody, jako je například formulář. Funkce šablony vykreslování (`render`) pak vloží nezbytné ochrany.
+Odpověď: `{% csrf_token %}` Značka zahrnuje integrované v Django [webů ochranu proti padělání (csrf) žádost o](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django docs). Obvykle přidáte tuto značku na libovolný element, který zahrnuje POST, PUT nebo DELETE požadavek metody, jako je například formulář. Funkce šablony vykreslování (`render`) pak vloží nezbytné ochrany.
 
 ## <a name="next-steps"></a>Další kroky
 

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Aktualizace grafu v dokumentu s použitím přepínačů'
-ms.custom: ''
+title: 'Průvodce: Aktualizace grafu v dokumentu s použitím přepínačů'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943233"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Návod: Aktualizace grafu v dokumentu s použitím přepínačů
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Průvodce: Aktualizace grafu v dokumentu s použitím přepínačů
   Tento návod ukazuje, jak pomocí přepínačů v přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word a poskytuje tak uživatelům možnost vybrat styly grafu v dokumentu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49904671"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření projektu Wordového dokumentu s názvem **Moje možnosti grafu**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu Wordového dokumentu s názvem **Moje možnosti grafu**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový Wordový dokument v návrháři a přidá **Moje možnosti grafu** projektu **Průzkumníka řešení**.  
   
@@ -95,28 +92,28 @@ ms.locfileid: "49904671"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**columnChart**|  
+    |**Název**|**columnChart**|  
     |**Text**|**Sloupcový graf**|  
   
 3.  Přidejte druhý **přepínač** uživateli určit a změnit následující vlastnosti.  
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**barChart**|  
+    |**Název**|**barChart**|  
     |**Text**|**Pruhový graf**|  
   
 4.  Přidat třetí **přepínač** uživateli určit a změnit následující vlastnosti.  
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**lineChart**|  
+    |**Název**|**lineChart**|  
     |**Text**|**Spojnicový graf**|  
   
 5.  Přidat čtvrtý **přepínač** uživateli určit a změnit následující vlastnosti.  
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**areaBlockChart**|  
+    |**Název**|**areaBlockChart**|  
     |**Text**|**Plošný graf bloku**|  
   
 ## <a name="add-references"></a>Přidání odkazů  
@@ -164,7 +161,7 @@ ms.locfileid: "49904671"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  V jazyce C# je nutné přidat obslužné rutiny událostí pro přepínací tlačítka. Můžete přidat kód, který `ChartOptions` konstruktor pod volání `InitializeComponent`. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  V jazyce C# je nutné přidat obslužné rutiny událostí pro přepínací tlačítka. Můžete přidat kód, který `ChartOptions` konstruktor pod volání `InitializeComponent`. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
@@ -211,13 +208,11 @@ ms.locfileid: "49904671"
 ## <a name="next-steps"></a>Další kroky  
  Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [návod: zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Změna formátování tak, že vyberete styl pole se seznamem. Další informace najdete v tématu [návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Změna formátování tak, že vyberete styl pole se seznamem. Další informace najdete v tématu [názorný postup: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)   
  [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)   
  [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

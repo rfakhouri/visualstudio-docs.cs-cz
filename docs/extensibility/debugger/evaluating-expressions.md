@@ -1,9 +1,6 @@
 ---
 title: Vyhodnocení výrazů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6248b06b69fa89d1888467a70718cf98b2a9a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7df128995c114c724c7a25ebe4949be935a3c496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929734"
 ---
 # <a name="evaluate-expressions"></a>Vyhodnocení výrazů
 Výrazy jsou vytvořeny z předáván z řetězce **automatické hodnoty**, **Watch**, **QuickWatch**, nebo **okamžité** systému windows. Při vyhodnocování výrazu generuje tisknutelný řetězec, který obsahuje název a typ proměnné nebo argumentu a jeho hodnotu. Tento řetězec se zobrazí v okně odpovídající integrovaného vývojového prostředí.  

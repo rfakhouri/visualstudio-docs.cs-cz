@@ -1,9 +1,6 @@
 ---
 title: Registrace a výběr (řízení zdrojového balíčku VSPackage) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930710"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrace a výběr (balíček VSPackage správy zdrojového kódu)
 Ovládací prvek zdroje balíčku VSPackage musí být zaregistrovaný k vystavení tak, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pokud se více než jeden ovládací prvek zdroje balíčku VSPackage zaregistruje, může uživatel vybrat které VSPackage načíst ve vhodných chvílích. Zobrazit [rozšíření VSPackages](../../extensibility/internals/vspackages.md) podrobné informace o rozšíření VSPackages a jak se zaregistrovat.  
@@ -38,7 +35,7 @@ Ovládací prvek zdroje balíčku VSPackage musí být zaregistrovaný k vystave
   
 - Identifikátor GUID správy zdrojového kódu: Toto je identifikátor GUID pro správu verzí používá k registraci ve službě Visual Studio pomocí zástupných procedur ovládací prvek zdroje balíčku VSPackage a slouží také jako kontextu uživatelského rozhraní příkaz identifikátor GUID. Službu správy zdrojových kódů GUID je zaregistrovaný pod správou zdrojových kódů identifikátor GUID. V tomto příkladu se nazývá modul správy zdrojových kódů GUID ID_SccProvider.  
   
-- Zdrojový ovládací prvek služby GUID: Jedná se o privátní službu GUID používá sada Visual Studio (nazývané SID_SccPkgService v této části). Kromě toho zdrojový balíček ovládací prvek musí definovat jiné identifikátory GUID pro balíčky VSPackages, okna nástrojů, a tak dále.  
+- Službu správy zdrojových kódů GUID: Jedná se o privátní službu GUID používá sada Visual Studio (nazývané SID_SccPkgService v této části). Kromě toho zdrojový balíček ovládací prvek musí definovat jiné identifikátory GUID pro balíčky VSPackages, okna nástrojů, a tak dále.  
   
   Následující položky registru musí být provedené balíčku VSPackage správy zdrojového kódu:  
   

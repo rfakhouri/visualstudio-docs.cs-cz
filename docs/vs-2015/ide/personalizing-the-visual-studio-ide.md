@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81b2f98694ee34b6fc4c442a4d4746b436025583
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916769"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Přizpůsobení integrovaného vývojového prostředí sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +40,10 @@ Tato část popisuje, jak přizpůsobit Visual Studio v různé způsoby, jak ne
  Chcete-li vytvořit vlastní úvodní stránky pro vás i váš tým, naleznete v tématu [přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md)
 
 ### <a name="environment-color-themes"></a>Barevné motivy prostředí
- Chcete-li změnit barevný motiv mezi světla a tmavě modrá, typ prostředí v **rychlé spuštění** a zvolte **prostředí &#124; Obecné**. Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **rychlé spuštění** a zvolte **prostředí &#124; písma a barvy**. Viz také [postupy: Změna písma a barvy](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+ Chcete-li změnit barevný motiv mezi světla a tmavě modrá, typ prostředí v **rychlé spuštění** a zvolte **prostředí &#124; Obecné**. Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **rychlé spuštění** a zvolte **prostředí &#124; písma a barvy**. Viz také [jak: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="menus-and-toolbars"></a>Nabídky a panely nástrojů
- Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [jak: Přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Hlavní nabídka malých a velkých písmen
  Z důvodu oblíbených vyžádání, můžete změnit malých a velkých písmen hlavní nabídky mezi **Mena všech slov velká** a **všechna velká mají standardní** zadáním `environment` v **rychlé spuštění** a zvolíte **Prostředí &#124; Obecné**.

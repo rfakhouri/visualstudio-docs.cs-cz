@@ -1,9 +1,6 @@
 ---
-title: ProjectItemFolder – Element | Microsoft Docs
-ms.custom: ''
+title: ProjectItemFolder – Element | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 54d47165117b88041346e9b666db8db17a20ddb9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fdecca0b987efd22d4ddd9d3555ede2601b8205e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855618"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder – element
   Představuje mapované složky.  
@@ -42,8 +39,8 @@ ms.locfileid: "37120364"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**Cíl**|Požadované **xs: řetězec** atribut.<br /><br /> Cesta ke složce v instalaci služby SharePoint, které mapované složky odpovídá relativní vzhledem ke kořenové složce nasazení. Nasazení kořenové složky je určen podle typu nasazení určeného **typ** atribut.<br /><br /> Další informace najdete v popisech pro **Cesta nasazení** a **nasazení kořenové** projektu služby SharePoint položky v [řešení služby SharePoint vyvíjet](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Typ**|Požadované **xs:string** atribut.<br /><br /> Typ nasazení pro mapované složky. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [řešení služby SharePoint vyvíjet](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Cíl**|Vyžaduje **xs: řetězec** atribut.<br /><br /> Cesta ke složce v instalaci služby SharePoint, která mapovaná složka odpovídá vzhledem ke kořenové složky nasazení. Kořenové složky nasazení se určuje podle typ nasazení určený **typ** atribut.<br /><br /> Další informace najdete v popisech pro **cesty nasazení** a **kořen nasazení** položky v projektu služby SharePoint [řešení pro vývoj SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**Typ**|Vyžaduje **xs:string** atribut.<br /><br /> Typ nasazení pro mapovanou složku. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [řešení vývoj služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Podřízené prvky
  Žádné  
@@ -52,7 +49,7 @@ ms.locfileid: "37120364"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element má požadovaný kořenový element *.spdata* souboru.|  
+|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento element je požadovaný kořenový element *.spdata* souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
  Další informace o mapované složky najdete v tématu [postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
@@ -62,11 +59,10 @@ ms.locfileid: "37120364"
 |||  
 |-|-|  
 |**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
-|**Název schématu**|Schéma položky projektu SharePoint|  
-|**Ověření souboru**|ProjectItemModelSchema.xsd|  
-|**Nesmí být prázdné**|Ne|  
+|**Název schématu**|Schéma položky projektu služby SharePoint|  
+|**Soubor ověření**|ProjectItemModelSchema.xsd|  
+|**Může být prázdný**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md)  
-  

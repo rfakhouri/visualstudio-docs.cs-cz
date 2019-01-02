@@ -1,8 +1,6 @@
 ---
-title: Knihovna C++ – referenční informace | Microsoft Docs
-ms.custom: ''
+title: Referenční dokumentace knihoven jazyka C++ | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Concurrency Visualizer SDK, C++ Library Reference
@@ -12,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5551cb5e66eae9471f2e4e79d2aa6587bf440120
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e489e462c043bb48c9ba0f59f39ce364bb8843d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895243"
 ---
 # <a name="c-library-reference"></a>Referenční dokumentace knihoven jazyka C++
-Tato část obsahuje informace o sadě SDK Vizualizéru souběžnosti.  
+Tato část obsahuje referenční informace k sadě SDK Vizualizéru souběžnosti.  
   
 > [!NOTE]
->  Standardní jazyka C++ rezerv použití identifikátorů, které začínají podtržítkem (`_`) znak pro implementace například knihovny. Nepoužívejte názvy počínaje podtržítkem ve vašem kódu. Uvolní chování kódu elementy, jejichž názvy následují touto konvencí se nezaručuje a v budoucnu se mohou změnit. Z těchto důvodů jsou tyto elementy kódu vynechaný této dokumentace.  
+>  Standard jazyka C++ vyhrazuje použití identifikátorů, které začínají podtržítkem (`_`) znak, například pro implementaci knihoven. Nepoužívejte názvy začínající podtržítkem ve vašem kódu. Chování kódu elementy, jejichž názvy postupujte podle tohoto konvence není zaručeno a se může změnit v budoucích vydáních. Z těchto důvodů jsou takovéto prvky kódu z této dokumentace vynechány.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Obor názvů souběžnosti (vizualizér souběžnosti)](../profiling/concurrency-namespace-concurrency-visualizer.md)  

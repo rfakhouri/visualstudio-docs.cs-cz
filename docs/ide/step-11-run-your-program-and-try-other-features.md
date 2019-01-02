@@ -1,9 +1,7 @@
 ---
-title: 'Krok 11: Spusťte svůj program a vyzkoušejte další funkce'
-ms.custom: ''
+title: 'Krok 11: Spusťte program a vyzkoušejte další funkce'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968242"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spusťte svůj program a vyzkoušejte další funkce
+# <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spusťte program a vyzkoušejte další funkce
 Aplikace je dokončené a připravené ke spuštění. Můžete spustit váš program a nastavit barvu pozadí <xref:System.Windows.Forms.PictureBox>. Další informace, zkuste program zlepšit změnou barvy formuláře, přizpůsobením tlačítek a zaškrtávacího políčka a změnou vlastností formuláře.
 
  Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz pro prohlížeč ucelený přehled](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: vytvoření prohlížeče obrázků v C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+ ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>Spusťte program a nastavit barvu pozadí
 
@@ -59,6 +57,6 @@ Aplikace je dokončené a připravené ke spuštění. Můžete spustit váš pr
 
 -   Další informace o Visual C#, naleznete v tématu [Úvod do C# jazyk a rozhraní .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Chcete-li přejít k dalšímu kurzu, přečtěte si téma [kurz 2: vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).
+-   Chcete-li přejít k dalšímu kurzu, přečtěte si téma [kurz 2: Vytvoření matematického kvízu](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 10: napsat kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 10: Napište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d86925963c156ae66abcf9b100b27bcd54224d75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869437"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Postupy: Export zátěžový test výsledků z úložiště
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Postupy: Export výsledků zátěžového testu z úložiště
 
 Při spuštění zátěžového testu budou informace shromážděné za běhu uloženy v úložišti výsledků zátěžových testů. Úložiště výsledků zátěžových testů obsahuje data čítače výkonu a informace o všech chybách. Další informace najdete v tématu [výsledků zátěžového testu spravovat v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -58,6 +57,6 @@ Výsledky zátěžového testu můžete spravovat z editoru zátěžového testu
 ## <a name="see-also"></a>Viz také:
 
 - [Správa výsledků zátěžových testů v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Postupy: výsledků zátěžového testu odstranit z úložiště](../test/how-to-delete-load-test-results-from-a-repository.md)
+- [Postupy: Odstranění z úložiště výsledků zátěžového testu](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Postupy: Import výsledků zátěžového testu do úložiště](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Postupy: Importovat do úložiště výsledků zátěžového testu](../test/how-to-import-load-test-results-into-a-repository.md)

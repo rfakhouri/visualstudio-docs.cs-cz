@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vytvoření vlastního textu značky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření vlastního textu značky | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965216"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Postupy: vytvoření vlastního textu značky
+# <a name="how-to-create-custom-text-markers"></a>Postupy: Vytvoření vlastního textu značky
 Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu, je nutné provést následující kroky:  
   
 - Zaregistrujte nový text značky, tak, aby k němu mají přístup jiných nástrojů.  
@@ -29,7 +26,7 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
   
 - Vytvoření služby, které lze použít s jinými procesy, aby používat text značky.  
   
-  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [postupy: použití značek text](../extensibility/how-to-use-text-markers.md).  
+  Podrobnosti o tom, jak použít text značky do oblasti kódu najdete v tématu [jak: Použití značek text](../extensibility/how-to-use-text-markers.md).  
   
 ## <a name="to-register-a-custom-marker"></a>Chcete-li zaregistrovat vlastní značky  
   
@@ -66,7 +63,7 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
   
 ## <a name="to-create-a-custom-text-marker"></a>Chcete-li vytvořit vlastní text značky  
   
-1.  Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> rozhraní.  
+1.  Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
   
      Implementace tohoto rozhraní definuje chování a vzhled typu vlastní značky.  
   
@@ -93,5 +90,5 @@ Pokud chcete vytvořit vlastní text značky zvýraznění nebo organizaci kódu
 ## <a name="see-also"></a>Viz také:  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
- [Postupy: použití značek text](../extensibility/how-to-use-text-markers.md)
+ [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)   
+ [Postupy: Použití značek text](../extensibility/how-to-use-text-markers.md)

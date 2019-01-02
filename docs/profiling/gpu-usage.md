@@ -1,20 +1,18 @@
 ---
 title: Využití GPU | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8265ae81b5ea1c6395af352f8f981f41f77cea8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: d8971a626d1cff33fa3799f20d6a53bb212a0dac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941083"
 ---
 # <a name="gpu-usage"></a>Využití GPU
 
@@ -41,7 +39,7 @@ Následující požadavky pro použití pomocí nástroje využití GPU přidejt
 
 **Chcete-li spustit nástroj využití GPU:**
 
-1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: stiskněte kombinaci kláves Alt + F2).
+1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: Stisknutím klávesy Alt + F2).
 
 2. V Centru pro výkon a diagnostiku, zaškrtněte políčko vedle položky **využití GPU**. Volitelně můžete zaškrtnutím políčka vedle jiné nástroje, které vás zajímají. Můžete spustit několik výkonu a diagnostické nástroje souběžně, což umožňuje získat komplexnější přehled o výkonu vaší aplikace.
 
@@ -104,7 +102,7 @@ To vám umožní najít, co hledáte, filtr sestava využití GPU na základě p
 |--------------------|-----------------|
 |**Proces**|Název procesu, které vás zajímají. V tomto rozevíracím seznamu jsou zahrnuté všechny procesy, které používá GPU během diagnostické relace. Barva spojených s procesem v této rozevírací seznam je barva aktivity vlákna ve níže časové osy.|
 |**vlákno**|ID vlákna, které vás zajímají. Ve vícevláknové aplikaci tyto informace můžete izolovat konkrétní vlákna, které patří k procesu, který vás zajímá. Události související s vybranou vlákna jsou vyznačené na každé časové osy.|
-|**Zobrazení**|Počet zobrazení se zobrazí jehož obnovovací frekvence **Poznámka:** některé ovladače lze nastavit zobrazíte více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jediné zobrazení uvedené, může se zobrazit i v případě, že tento počítač má připojené více monitorů.|
+|**Zobrazení**|Počet zobrazení se zobrazí jehož obnovovací frekvence **Poznámka:**  Některé ovladače lze nastavit zobrazíte více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jediné zobrazení uvedené, může se zobrazit i v případě, že tento počítač má připojené více monitorů.|
 |**Filtr**|Klíčová slova, které vás zajímají. Události v dolní části sestavy bude obsahovat pouze ty, které odpovídají klíčové slovo, ať už zcela nebo zčásti. Více klíčových slov můžete určit jejich oddělením středníkem (;).|
 |**Hierarchie řazení**|Zaškrtávací políčko, která označuje, zda události – definice prostřednictvím uživatelské značky--hierarchií jsou zachovány nebo ignorovat.|
 
@@ -128,7 +126,7 @@ Můžete nakonfigurovat pomocí nástroje využití GPU se odložit kolekce prof
 
 **Chcete-li odložit, profilace od začátku aplikace:**
 
-1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: stiskněte kombinaci kláves Alt + F2).
+1. V hlavní nabídce zvolte **ladění**, pak **výkon a Diagnostika** (klávesnice: Stisknutím klávesy Alt + F2).
 
 2. V Centru pro výkon a diagnostiku, postupujte **nastavení** odkaz **využití GPU**.
 
