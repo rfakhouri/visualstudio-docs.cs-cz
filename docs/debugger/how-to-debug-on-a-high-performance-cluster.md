@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ladění na vysoký výkon clusteru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění na vysoký výkon clusteru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964621c216d058581d9298956ba90ac6cdbef86
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966453"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na klastru s vysokým výkonem
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Postupy: Ladění na vysoký výkon clusteru
 Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění program ve vzdáleném počítači. Existuje ale několik dalších důležitých informací. Obecné nastavení vzdálené požadavky najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).  
   
  Při ladění na vysoký výkon clusteru můžete použít všechny [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladění systému windows a techniky, které jsou k dispozici pro vzdálené ladění. Vzhledem k tomu, že ladíte vzdáleně, ale okno externí konzoly není k dispozici.  
   
- **Vlákna** okno a **procesy** jsou obzvláště užitečné pro ladění paralelních aplikací. Tipy k používání těchto oken naleznete v tématu [postupy: použití okna procesy](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) a [návod: ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).  
+ **Vlákna** okno a **procesy** jsou obzvláště užitečné pro ladění paralelních aplikací. Tipy k používání těchto oken naleznete v tématu [jak: Použití okna procesy](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) a [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).  
   
  Následující postupy ukazují některé techniky, které jsou obzvláště užitečné pro ladění na vysoký výkon clusteru.  
   
@@ -54,7 +52,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
   
      Chcete-li vytvořit složitější filtr, můžete kombinovat klauzule pomocí `&`, operátoru AND `||`, operátoru OR `!`, operátoru NOT a závorek.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Nastavení zarážky v konkrétním procesu  
   
@@ -72,7 +70,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
   
      Chcete-li vytvořit složitější filtr, můžete kombinovat klauzule pomocí `&`, operátoru AND `||`, operátoru OR `!`, operátoru NOT a závorek.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Nastavení zarážky v konkrétním vlákně  
   
@@ -90,7 +88,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
   
      Chcete-li vytvořit složitější filtr, můžete kombinovat klauzule pomocí `&`, operátoru AND `||`, operátoru OR `!`, operátoru NOT a závorek.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje, jak vytvořit filtr pro zarážku v počítači s názvem `marvin` a vlákno s názvem `fourier1`.  
@@ -101,7 +99,7 @@ Ladění programu multiprocesingem na vysoký výkon clusteru je jako ladění p
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Vzdálené ladění](../debugger/remote-debugging.md)   
- [Postupy: použití okna procesy](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
+ [Postupy: Použití okna procesy](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
  [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Vláken a procesů](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))   
  [Použití zarážek](../debugger/using-breakpoints.md)

@@ -1,8 +1,6 @@
 ---
 title: Vytvoření vizuální mapy zásobníku volání | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -31,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960836"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>Vytvoření vizuální mapy zásobníku volání při ladění 
 
 Vytvořte mapu kódu pro vizuální sledování zásobníku volání během ladění. Můžete si dělat poznámky na mapě můžete sledovat, co kód dělá, abyste se mohli soustředit na hledání chyb.
 
-Návod, podívejte se na toto video: [Video: vizuální ladění díky integraci ladicího programu mapy kódu (kanál 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Návod podívejte se na toto video: [Video: Vizuální ladění díky integraci ladicího programu mapy kódu (kanál 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 Podrobnosti o příkazů a akcí můžete pomocí map kódu, naleznete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).
 

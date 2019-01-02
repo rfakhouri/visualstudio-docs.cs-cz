@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 187ef43dd4b19d45feabbe75ae05ec1af3cc4ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826699"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Ne všichni vývojáři, kteří vytvářejí nasazení ClickOnce v plánu nasad
   
  Použití certifikátu podepsaného svým držitelem pro manifest nasazení nabízí několik výhod. Odstraněním potřeby zákazníků získat nebo vytvořit vlastní certifikát Authenticode `<useManifestForTrust>` zjednodušuje nasazení pro zákazník, a zároveň umožní vývojářům udržovat svoji vlastní identitu značky v aplikaci. Výsledkem je sada podepsaných nasazení, které jsou bezpečnější a mají jedinečné identity aplikace. Tím se eliminují potenciální konflikt, který může být z nasazení stejné aplikace na více zákazníků.  
   
- Podrobné informace o tom, jak vytvořit nasazení ClickOnce pomocí `<useManifestForTrust>` povolena, najdete v článku [návod: Ruční nasazení aplikace ClickOnce této nemá není vyžadují Re-Signing a zachová značky informací](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Podrobné informace o tom, jak vytvořit nasazení ClickOnce pomocí `<useManifestForTrust>` povolena, najdete v článku [názorný postup: Ruční nasazení aplikace ClickOnce, která nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Jak Manifest aplikace pro vztah důvěryhodnosti pracuje v době běhu  
  Pokud chcete získat lepší přehled o fungování manifest aplikace pomocí vztahu důvěryhodnosti v době běhu, zvažte následující příklad. Aplikace ClickOnce, která cílí na rozhraní .NET Framework 3.5 je vytvořen microsoftem. Manifest aplikace používá `<useManifestForTrust>` elementu a je podepsán společností Microsoft. Společnosti Adventure Works podepíše manifest nasazení pomocí certifikátu podepsaného svým držitelem. Adventure Works, které jsou klienti nakonfigurováni na vztah důvěryhodnosti všechny aplikace podepsané microsoftem.  
@@ -108,7 +108,7 @@ Ne všichni vývojáři, kteří vytvářejí nasazení ClickOnce v plánu nasad
 ## <a name="see-also"></a>Viz také  
  [Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podpisu](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)
 
 
 

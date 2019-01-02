@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -21,12 +20,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b89dd1e0a395e034fa2321269e4174da359b336
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ea9cb8b37c95153cc7a9509cced643c094fc7c20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960437"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Ladění za běhu v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +67,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 
 3. V **ladění** složky, vyberte **Just-In-Time** stránky.
 
-4. V **povolit ladění za běhu tyto typy kódu** pole, zaškrtněte nebo zrušte zaškrtnutí odpovídajících typů programů: **spravované**, **nativní**, nebo **skript**.
+4. V **povolit ladění za běhu tyto typy kódu** pole, zaškrtněte nebo zrušte zaškrtnutí odpovídajících typů programů: **Spravované**, **nativní**, nebo **skript**.
 
     Zakázat Just-In-Time ladění, jakmile bylo povoleno, musí běžet s oprávněními správce. Povolení Just-In-Time ladění nastaví klíč registru, a chcete-li změnit tento klíč jsou požadována oprávnění správce.
 
@@ -132,7 +131,7 @@ Akce, které byste měli provést, když se zobrazí sadě Visual Studio Just-in
 
  Pro účely tohoto oddílu uděláme konzolovou aplikaci C# v sadě Visual Studio, který vyvolá <xref:System.NullReferenceException>.
 
- Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**soubor / nový / Project / Visual C# / Konzolová aplikace**) s názvem **ThrowsNullException**. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [návod: vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**soubor / nový / Project / Visual C# / Konzolová aplikace**) s názvem **ThrowsNullException**. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [názorný postup: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Po otevření projektu v sadě Visual Studio otevřete soubor Program.cs. Nahraďte následující kód, který vytiskne řádek ke konzole a potom vyvolá NullReferenceException metodu Main():
 
@@ -202,4 +201,4 @@ static void Main(string[] args)
      Chcete-li tento problém vyřešit, použijte instalační disk a přeinstalujte nebo opravte instalaci sady Visual Studio.
 
 ## <a name="see-also"></a>Viz také
- [Zabezpečení ladicího programu](../debugger/debugger-security.md) [základy ladicího programu](../debugger/debugger-basics.md) [Just-In-Time, ladění, dialogové okno Možnosti](../debugger/just-in-time-debugging-options-dialog-box.md) [upozornění zabezpečení: připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Zabezpečení ladicího programu](../debugger/debugger-security.md) [základy ladicího programu](../debugger/debugger-basics.md) [Just-In-Time, ladění, dialogové okno Možnosti](../debugger/just-in-time-debugging-options-dialog-box.md) [upozornění zabezpečení: Připojení k procesu vlastněnému nedůvěryhodným uživatelským může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015)

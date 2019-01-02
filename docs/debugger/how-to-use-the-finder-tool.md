@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: používání vyhledávacího nástroje | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Používání vyhledávacího nástroje | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965259"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Postupy: Používání vyhledávacího nástroje
 Tažením nástroje hledání v můžete použít **najít okno** dialogové okno Vlastnosti okna a zprávy zobrazíte. Tažením nástroje hledání můžete také najít zakázané podřízená okna a rozpoznat, které okno, abyste měli na očích Pokud zakázané podřízená okna se překrývají.  

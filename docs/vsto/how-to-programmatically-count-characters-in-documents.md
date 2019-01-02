@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Programová počet znaků v dokumentech'
-ms.custom: ''
+title: 'Postupy: Programově počet znaků v dokumentech'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 46ead2f1774d779706e8aa6eeb3f1e9c6b1d0ce1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c86eade90d36ca62ad361c757660bcada71a6a4c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960758"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>Postupy: Programová počet znaků v dokumentech
+# <a name="how-to-programmatically-count-characters-in-documents"></a>Postupy: Programově počet znaků v dokumentech
   Na pozici znaku 0, který reprezentuje bod vložení je první znak v dokumentu. Poslední pozice znaku rovná celkový počet znaků v dokumentu. Můžete určit počet znaků v dokumentu s použitím <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Characters> kolekce.  
   
  Počítají se všechny znaky v dokumentu, včetně mezer, značek odstavů a dalších znaků, které jsou obvykle skryta. Ještě nový prázdný dokument vrací počet jeden znak, protože obsahuje značku odstavce.  
@@ -56,7 +53,5 @@ ms.locfileid: "35676021"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
-  
-  
+ [Postupy: Načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  

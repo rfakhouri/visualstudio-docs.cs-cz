@@ -1,9 +1,6 @@
 ---
 title: Nástroj CreateExpInstance | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f7f52f45023106d3e504258a538823c1c8fbb4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500654"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961099"
 ---
 # <a name="createexpinstance-utility"></a>Nástroj CreateExpInstance
 Použití **CreateExpInstance** nástroj k vytvoření, obnovit nebo odstranit experimentální instanci sady Visual Studio. Experimentální instanci slouží k ladění a testování rozšíření sady Visual Studio beze změny základní produkt.  
@@ -39,7 +36,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
  **/ Reset**  
  Odstraní experimentální instanci a pak vytvoří nový.  
   
- **/ Clean**  
+ **/Clean**  
  Odstraní experimentální instanci aplikace.  
   
  **/ VSInstance**  

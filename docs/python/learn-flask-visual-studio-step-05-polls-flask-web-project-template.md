@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Flask v rámci projektů sady Visual Studio, konkrétně funkce šablony Polls – webový projekt Flask a Flask/Jade Polls – webový projekt.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5938bceeb3dc7393437f44102c21d1ef16c45b63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923793"
 ---
-# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použijte šablony Polls – webový projekt Flask
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Použití šablony Polls – webový projekt Flask
 
-**Předchozí krok: [použít úplnou šablonu webový projekt Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Předchozí krok: [Použití úplné šablony webového projektu Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Porozumění "Webový projekt Flask" šablony sady Visual Studio můžete nyní podíváte na třetí šablon Flask "Polls Flask – webový projekt", která staví na stejném základu kódu.
 
@@ -36,7 +35,7 @@ V tomto kroku se dozvíte, jak:
 
 Visual Studio také poskytuje šablony "Hlasovací webový projekt Flask/Jade", která vytváří identickou aplikaci, ale používá pro modul šablon šablonovacím systémem Jade rozšíření. Podrobnosti najdete v tématu [krok 4 – šablony webový projekt Flask/Jade](learn-flask-visual-studio-step-04-full-flask-project-template.md#the-flaskjade-web-project-template).
 
-## <a name="step-5-1-create-the-project"></a>Krok 5-1: vytvoření projektu
+## <a name="step-5-1-create-the-project"></a>Krok 5-1: Vytvoření projektu
 
 1. V sadě Visual Studio, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem myši **LearningFlask** řešení vytvořené dříve v tomto kurzu a vyberte **přidat**  >   **Nový projekt**. (Případně, pokud chcete použít nové řešení, vyberte **souboru** > **nový** > **projektu** místo.)
 
@@ -76,7 +75,7 @@ Visual Studio také poskytuje šablony "Hlasovací webový projekt Flask/Jade", 
 
 Poznamenali dříve. velká část Co je v projektu vytvořeného ze šablony "Hlasovací webový projekt Flask" (a šablony "Hlasovací webový projekt Flask/Jade") by měl být obeznámeni, pokud jste prozkoumali další šablony projektů v sadě Visual Studio. Další kroky v tomto článku shrnují významnější změny a dodatky, a to datové modely a další zobrazení.
 
-## <a name="step-5-2-understand-the-data-models"></a>Krok 5 – 2: pochopení datových modelů
+## <a name="step-5-2-understand-the-data-models"></a>Krok 5 – 2: Principy datových modelů
 
 Datové modely aplikace jsou třídy Python s názvem dotazování a podle vlastní volby, které jsou definovány v *modely /\_\_init\_\_.py*. Dotazování představuje dotaz, pro které představují kolekci instancí Choice dostupné odpovědi. Dotazování také udržuje celkový počet hlasů (pro kdykoli vybíráte) a metody k výpočtu statistik, které se používají ke generování zobrazení:
 
@@ -112,7 +111,7 @@ class Choice(object):
 
 Tyto datové modely jsou obecné abstrakce, které umožňují zobrazení aplikace tak, aby odpovídaly různé typy zálohování úložišť dat, které jsou popsané v dalším kroku.
 
-## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 5 – 3: pochopení záložních úložišť dat.
+## <a name="step-5-3-understand-the-backing-data-stores"></a>Krok 5 – 3: Principy zálohování úložišť dat.
 
 Úložišti dat v paměti, úložiště tabulek v Azure nebo v databázi Mongo DB můžete spustit aplikaci vytvořenou šablonou "Hlasovací webový projekt Flask".
 
@@ -234,11 +233,11 @@ Volání `repository.add_sample_polls()` končí v jednom z konkrétních `Repos
 
 Po dokončení tohoto procesu `redirect('/')` výroky `seed` metoda přejde zpět na domovskou stránku. Protože `repository.get_polls` nyní vrací datový objekt podmíněné značky v *templates\index.html* nyní vykreslí tabulku obsahující dotazuje.
 
-### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Otázka: Jak jeden přidá nový hlasování do aplikace?
+### <a name="question-how-does-one-add-new-polls-to-the-app"></a>Otázka: Jak jeden přidá nový hlasovací aplikaci?
 
 Odpověď: Aplikace, jak je uvedeno pomocí šablony projektu neobsahuje zařízení pro přidání nebo úpravu hlasování. Můžete upravit *models\samples.json* vytvořit nový inicializační data, ale to znamenalo, resetuje se úložiště dat. K implementaci funkcí pro úpravy, budete muset rozšířit `Repository` rozhraní třídy pomocí metody k vytvoření potřebných `Choice` a `Poll` instancí, pak implementovat uživatelského rozhraní v dalších stránek, které používají tyto metody.
 
-## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5 – 4: pochopení zobrazení podrobností a výsledky dotazování
+## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>Krok 5 – 4: Principy zobrazení podrobností a výsledky dotazování
 
 Většina vzhled zobrazení vygenerovaných sadou šablony "Hlasovací webový projekt Flask" a "Hlasovací webový projekt Flask/Jade", například zobrazení pro o a kontaktní stránky, jsou velmi podobné zobrazením vytvořených šablonou "Webový projekt Flask" (nebo "Webový projekt Flask/Jade") jste pracovali pomocí výše v tomto kurzu. V předchozí části jste také zjistili, jak je implementovaná na domovské stránce zobrazit tlačítko inicializace nebo seznam hlasování.
 

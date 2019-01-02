@@ -2,7 +2,6 @@
 title: Refaktorujte podpis metody
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968401"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Změna podpisu metody refaktoring
 
@@ -30,11 +29,11 @@ Tento refaktoring platí pro:
 
 - Visual Basic
 
-**Co:** umožňuje odebrat nebo změnit pořadí parametrů metod.
+**Co:** Umožňuje odebrat nebo změnit pořadí parametrů metod.
 
-**Kdy:** chcete přesunout nebo odeberte parametr metody, která je aktuálně používána v různých umístěních.
+**Kdy:** Chcete přesunout nebo odeberte parametr metody, která je aktuálně používána v různých umístěních.
 
-**Důvod, proč:** může ručně odebrat a změnit pořadí parametrů a pak najít všechna volání metody a změnit je jeden po druhém, ale které by mohly vést k chybám.  Tento refaktoring nástroj automaticky provede úlohu.
+**Proč:** Může ručně odebrat a změnit pořadí parametrů a pak najít všechna volání metody a změnit je jeden po druhém, ale které by mohly vést k chybám.  Tento refaktoring nástroj automaticky provede úlohu.
 
 ## <a name="how-to"></a>Postupy
 

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885624"
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 V jazyce specifickém pro doménu (DSL) vytvořené pomocí Visual Studio Visualization and Modeling SDK je možné změnit, co se stane, když uživatel zkopíruje a vloží prvky.
@@ -88,7 +87,7 @@ Přepsat *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` DslPackage pro
 Přepsat *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` DslPackage projektu.
 
  **Zachovat obrazce rozložení prostřednictvím kopírování a vložení.**
-Když uživatel zkopíruje více tvarů, můžete zachovat jejich relativní umístění, když jsou vloženy. Tato technika je znázorněn příklad v [vmsdk následující položky: Ukázka okruhů](http://go.microsoft.com/fwlink/?LinkId=213879).
+Když uživatel zkopíruje více tvarů, můžete zachovat jejich relativní umístění, když jsou vloženy. Tato technika je znázorněn příklad v [vmsdk následující položky: Ukázka diagramy okruh](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Tohoto efektu dosáhnete tak, přidejte do zkopírovaný ElementGroupPrototype obrazců a konektorů. Nejvíce vhodnou metodu pro přepsání je ElementOperations.CreateElementGroupPrototype(). Chcete-li to provést, přidejte následující kód do projektu Dsl:
 
@@ -144,7 +143,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Vkládání obrazců do zvoleného umístění, jako je aktuální pozice kurzoru.**
-Když uživatel zkopíruje více tvarů, můžete zachovat jejich relativní umístění, když jsou vloženy. Tato technika je znázorněn příklad v [vmsdk následující položky: Ukázka okruhů](http://go.microsoft.com/fwlink/?LinkId=213879).
+Když uživatel zkopíruje více tvarů, můžete zachovat jejich relativní umístění, když jsou vloženy. Tato technika je znázorněn příklad v [vmsdk následující položky: Ukázka diagramy okruh](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Tohoto efektu dosáhnete tak, přepsat `ClipboardCommandSet.ProcessOnMenuPasteCommand()` použije umístění konkrétní verzi `ElementOperations.Merge()`. Chcete-li to provést, přidejte následující kód v projektu DslPackage:
 
@@ -211,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **Umožní uživateli přetáhnout prvky.**
-Zobrazit [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Zobrazit [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a> Přizpůsobení chování kopírování propojení
  Když uživatel zkopíruje element, standardní chování je, že všechny vložené prvky jsou zkopírovány také. Standardní chování kopírování můžete upravit. V definici DSL vybrat roli na jedné straně relace a okno sady vlastností **šíří kopírování** hodnotu.
@@ -282,7 +281,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Příjem položek přetáhnout z dalších modelů
- ElementOperations lze také definovat chování kopírování, přesunutí, odstranění a přetáhněte myší. Jako ukázkový používání ElementOperations zde příklad definuje vlastní chování a přetažení. Ale pro tento účel můžete zvážit alternativní postupu popsaného v [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md), což je více rozšiřitelné.
+ ElementOperations lze také definovat chování kopírování, přesunutí, odstranění a přetáhněte myší. Jako ukázkový používání ElementOperations zde příklad definuje vlastní chování a přetažení. Ale pro tento účel můžete zvážit alternativní postupu popsaného v [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md), což je více rozšiřitelné.
 
  Ve své třídě ElementOperations definujte dvě metody:
 
@@ -367,7 +366,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Chování standardní kopírování
  Kód v této části ukazuje, že můžete přepsat metody, které můžete změnit chování kopírování. Můžete zjistit, jak dosáhnout vlastní úpravy, tato část zobrazuje kód, který se přepíše při kopírování metody, ale nezmění standardní chování.
 
- Když uživatel stiskne klávesu CTRL + C nebo používá příkaz nabídky kopírování metodu <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> je volána. Zobrazí se, jak toto nastavení **DslPackage\Generated Code\CommandSet.cs**. Další informace o tom, jak jsou příkazy nastavit, najdete v části [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Když uživatel stiskne klávesu CTRL + C nebo používá příkaz nabídky kopírování metodu <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> je volána. Zobrazí se, jak toto nastavení **DslPackage\Generated Code\CommandSet.cs**. Další informace o tom, jak jsou příkazy nastavit, najdete v části [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  ProcessOnMenuCopyCommand můžete přepsat tak, že přidáte definicí částečné třídy *MyDsl* `ClipboardCommandSet` DslPackage projektu.
 
@@ -559,6 +558,6 @@ namespace Company.MyDsl
 - [Přizpůsobení vytvoření a přesunutí elementu](../modeling/customizing-element-creation-and-movement.md)
 - [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Přizpůsobení chování odstranění](../modeling/customizing-deletion-behavior.md)
-- [Ukázka: Ukázka vmsdk následující položky okruhů](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Ukázka: Ukázka okruhů vmsdk následující položky](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

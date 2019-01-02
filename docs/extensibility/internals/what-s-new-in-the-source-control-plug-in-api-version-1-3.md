@@ -1,9 +1,6 @@
 ---
-title: Co&#39;s ve zdroji řízení verze rozhraní API modulu Plug-in 1.3 | Microsoft Docs
-ms.custom: ''
+title: Co&#39;nového ve zdroji ovládací prvek modulu Plug-in API ve verzi 1.3 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, what's new in API v1.3
@@ -14,29 +11,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abeb2a0a936a5d706e2e3744e9dd0f4e3123bdbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 84b9642f14016900dd3edd4a9093997620f4fb31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877201"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Co&#39;s ve zdroji řízení verze rozhraní API modulu Plug-in 1.3
-Zdroj ovládacího prvku Plug-in API verze 1.3 zavádí následující nové funkce k poskytování pokročilejší řízení.  
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Co&#39;nového ve zdroji ovládací prvek modulu Plug-in API ve verzi 1.3
+Rozhraní API modulu Plug-in zdroje ovládacího prvku verze 1.3 zavádí následující nové funkce k poskytování pokročilé řízení.  
   
 ## <a name="changes"></a>Změny  
- Zdroj ovládacího prvku Plug-in API verze 1.3 přibyly následující funkce:  
+ Rozhraní API modulu Plug-in zdroje ovládacího prvku verze 1.3 přibyly následující funkce:  
   
 |Funkce|Přehled|  
 |--------------|--------------|  
-|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Povoluje další funkce bits, aby byly hlášené|  
-|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Umožňuje zkoumání souborů, které mají novější verze v databázi řízení verze než na místním disku|  
-|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Umožňuje prozkoumání stavu změny názvu (přejmenování, přidání a odstranění) pro zadané soubory|  
-|[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Umožňuje prozkoumání adresářů a souborů v databázi verze ovládacího prvku|  
-|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Přidá zadaný seznam souborů z verze databáze ovládacího prvku do aktuálního projektu|  
-|[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Provede tichou "Get" zadané soubory (zobrazené žádné uživatelské rozhraní)|  
+|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Umožňuje další možnosti bits, aby oznámený|  
+|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Umožňuje zkoumání souborů, které mají novější verze v databázi správy verzi než na místním disku|  
+|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Zadané soubory umožňují zkoumání stavu změny názvu (přejmenování, přidání a odstranění)|  
+|[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Umožňuje zkoumání adresářů a souborů v databázi správy verzí|  
+|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Přidá zadaný seznam souborů z databází správy verzí do aktuálního projektu|  
+|[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Provádí bezobslužné "Get" zadaných souborů (bez uživatelského rozhraní se zobrazí)|  
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Umožňuje přístup k možnosti specifické pro uživatele|  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)   
+ [Začínáme se službou](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)   
  [Co je nového v rozhraní API modulu plug-in správy zdrojového kódu ve verzi 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

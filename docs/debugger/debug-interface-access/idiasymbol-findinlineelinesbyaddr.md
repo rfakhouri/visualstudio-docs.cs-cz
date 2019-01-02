@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByAddr | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79be504d780efb7ea661f0362f20db4bcd0c780b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db10bb714fa4ee96030bfce918b01fe877890078
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843265"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 Načte výčet, který umožňuje klientovi k iteraci v rámci informace o číslech řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo v tento symbol v rámci zadaný rozsah adres.  
@@ -25,7 +23,7 @@ Načte výčet, který umožňuje klientovi k iteraci v rámci informace o čís
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT findInlineeLinesByAddr (   
+HRESULT findInlineeLinesByAddr (   
    DWORD                 isect,  
    DWORD                 offset,  
    DWORD                 length,  

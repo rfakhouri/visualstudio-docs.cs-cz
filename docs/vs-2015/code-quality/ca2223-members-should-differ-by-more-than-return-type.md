@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5832ef0fdbb51381273c01025a6645136ea0077a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b143c8bc532d9fa0967034a5dbf6c5cc86841f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922118"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Členy by se měly lišit o více než návratový typ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,6 +100,3 @@ ms.locfileid: "49869168"
 
 } // end of namespace UsageLibrary
 ```
-
-
-

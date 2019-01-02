@@ -2,7 +2,6 @@
 title: Možnosti, textový editor, C#, upřesnit
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887903"
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 
@@ -126,7 +125,7 @@ Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení editoru
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: vložení komentáře XML pro generování dokumentace](../../ide/reference/generate-xml-documentation-comments.md)
+- [Postupy: Vložit komentáře XML pro generování dokumentace](../../ide/reference/generate-xml-documentation-comments.md)
 - [XML – dokumentační komentáře (C# Programming Guide)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Dokumentaci kódu pomocí komentářů XML (Průvodce v C#)](/dotnet/csharp/codedoc)
 - [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)

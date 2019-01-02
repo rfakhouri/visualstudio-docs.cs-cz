@@ -2,7 +2,6 @@
 title: Příkazové okno
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841856"
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá ke spuštění příkazů nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které nejsou zobrazeny na jakékoliv nabídky. Pro zobrazení **příkaz** okně zvolte **ostatní Windows** z **zobrazení** nabídky a vybereme **příkazové okno**.
@@ -110,7 +109,7 @@ Pokud krátkometrážní přepínače jsou sloučeny do skupiny a přidělenou h
  Stříška funguje stejně, ať už se jedná o vnitřní nebo vnější uvozovky. Pokud poslední znak na řádku stříška, je ignorován. Z příkladu ukazuje, jak vyhledat vzor "^ t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Nabídky použijte pro názvy cesty obsahující mezery
- Pokud například chcete otevřít soubor, který obsahuje cestu obsahující mezery, je nutné umístit dvojité uvozovky kolem cestu nebo segment cesty, který obsahuje mezery: **C:\\"Program Files"** nebo **"C:\Program Files"**.
+ Pokud například chcete otevřít soubor, který obsahuje cestu obsahující mezery, je nutné umístit dvojité uvozovky kolem cestu nebo segment cesty, který obsahuje mezery: **C:\\"Nainstalovány soubory programu"** nebo **"C:\Program Files"**.
 
 ## <a name="see-also"></a>Viz také
 

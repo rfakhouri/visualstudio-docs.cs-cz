@@ -1,9 +1,6 @@
 ---
 title: Scénáře instalace balíčku VSPackage | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
@@ -12,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932941"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénáře instalace balíčku VSPackage
 
@@ -39,7 +36,7 @@ Počítání odkazů probíhá na úrovni součásti. V důsledku toho kombinov�
 
 Například hodnoty registru použije k registraci vašeho balíčku VSPackage pomocí [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] by měl být udržovány v komponentě odděleně od použitý k registraci vašeho balíčku VSPackage pomocí sady Visual Studio. Sdílené soubory nebo hodnoty registru přejděte v ještě jiné součásti.
 
-## <a name="scenario-1-shared-vspackage"></a>Scénář 1: Sdílený VSPackage
+## <a name="scenario-1-shared-vspackage"></a>Scénář 1: Sdílené VSPackage
 
 V tomto scénáři sdílené VSPackage (jeden binární soubor, který podporuje více verzí sady Visual Studio je součástí balíčku Instalační služby systému Windows. Registrace s jednotlivými verzemi sady Visual Studio se řídí uživatelsky volitelných funkcí. To také znamená, že při zařazena do oddělené funkce, jednotlivé komponenty můžete vybrat jednotlivě pro instalaci nebo odinstalaci, umožňuje uživateli kontrolu nad integrace sady VSPackage v různých verzích [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. (Viz [funkce Instalační služby systému Windows](/windows/desktop/Msi/windows-installer-features) Další informace o použití funkcí v balíčky Instalační služby systému Windows.)
 
@@ -50,7 +47,7 @@ Jak je znázorněno na obrázku, sdílené komponenty jsou součástí Feat_Comm
 > [!NOTE]
 > Sloupec zobrazení funkce nastavení na hodnotu 0 skrývá ho. Hodnota sloupec nízké úrovně, jako je například 1, zajistí, že bude vždy nainstalován. Další informace najdete v tématu [INSTALLLEVEL vlastnost](/windows/desktop/Msi/installlevel) a [tabulka funkcí](/windows/desktop/Msi/feature-table).
 
-## <a name="scenario-2-shared-vspackage-update"></a>Scénář 2: Sdílet aktualizace balíčku VSPackage
+## <a name="scenario-2-shared-vspackage-update"></a>Scénář 2: Aktualizace sdílené VSPackage
 
 V tomto scénáři je dodáván aktualizovanou verzi instalačního programu balíčku VSPackage ve scénáři 1. Pro účely diskuse tato aktualizace přidává podporu pro sadu Visual Studio, ale může také být jednodušší úroveň opravy zabezpečení nebo oprava chyby aktualizace service pack. Pravidla Instalační služby Windows pro instalaci součásti novější vyžadují, nejsou znovu zkopírovány beze změny součástí už v systému. V takovém případě systém s verze 1.0 již přepsat aktualizované součásti Comp_MyVSPackage.dll a umožněte uživatelům si vybrat, chcete-li přidat novou funkci Feat_VS2005 s jeho součásti Comp_VS2005_Reg.
 
@@ -61,7 +58,7 @@ V tomto scénáři je dodáván aktualizovanou verzi instalačního programu bal
 
 Tento scénář představuje nový instalační program balíčku VSPackage využití výhod podpory Windows instalačního programu pro dílčí upgrady. Uživatelé jednoduše nainstalovat verze 1.1 a upgradu verze 1.0. Není však nutné mít verzi 1.0 v systému. Stejný instalační program nainstaluje verze 1.1 v systému bez verze 1.0. Výhodou zadejte menší upgrady tímto způsobem je, že není nutné kvůli tomu provádět práci vývoj upgrade instalačního programu a instalační program, který plně produktu. Jeden instalační program nemá obě úlohy. Opravy zabezpečení nebo service pack může místo toho využijte výhod oprav Instalační služby systému Windows. Další informace najdete v tématu [opravy a upgrady](/windows/desktop/Msi/patching-and-upgrades).
 
-## <a name="scenario-3-side-by-side-vspackage"></a>Scénář 3: VSPackage vedle sebe
+## <a name="scenario-3-side-by-side-vspackage"></a>Scénář 3: Vedle sebe VSPackage
 
 Tento scénář nabízí dva instalační programy VSPackage – jeden pro každou verzi sady Visual Studio .NET 2003 a Visual Studio. Každý instalační program nainstaluje vedle sebe nebo privátní, balíčku VSPackage (ten, který je speciálně vytvořené a nainstalovaných pro konkrétní verzi sady Visual Studio). Každý balíček VSPackage správy kódu je ve vlastní komponenty. V důsledku toho každá lze jednotlivě udržovat s opravami nebo údržby uvolní. Vzhledem k tomu, že knihovna DLL balíčku VSPackage je nyní specifické pro verzi, je bezpečné registrační informace patří pod stejnou komponentou jako knihovnu DLL.
 

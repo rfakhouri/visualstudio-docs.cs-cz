@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b90a0dcaaafa2b3d83c949592951e564fce974f2
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: eee8ca669384f202fe430f4ec836f8e4b1fea9c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923092"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publikování cloudové služby pomocí sady Visual Studio
 
@@ -33,9 +32,9 @@ Aplikaci Azure publikovat a aktualizovat webové role pomocí nasazení webu pom
 
 Když publikujete aplikaci Azure, je provést jednu z následujících úloh:
 
-- Vytvořit balíček služby: Tento balíček a konfigurační soubor služby můžete použít k publikování aplikace do prostředí nasazení z [webu Azure portal](https://portal.azure.com).
+- Vytvořte balíček služby: Tento balíček a konfigurační soubor služby můžete použít k publikování aplikace do prostředí nasazení z [webu Azure portal](https://portal.azure.com).
 
-- Publikování projektu Azure v sadě Visual Studio: můžete publikovat svoji aplikaci přímo do Azure, můžete použít Průvodce publikováním. Informace najdete v tématu [Průvodce publikováním aplikace Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publikování projektu Azure v sadě Visual Studio: Můžete publikovat svoji aplikaci přímo do Azure, můžete použít Průvodce publikováním. Informace najdete v tématu [Průvodce publikováním aplikace Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Chcete-li vytvořit balíček služby ze sady Visual Studio
 
@@ -69,11 +68,11 @@ Pokud je vaše aplikace back-end infrastrukturu stabilní, ale webové role vyž
 
 ### <a name="requirements-for-using-web-deploy"></a>Požadavky pro pomocí nasazení webu
 
-- **Pouze pro vývoj a testování účely**: změny probíhají přímo k virtuálnímu počítači se spuštěným ve webové roli. Pokud tento virtuální počítač má k provedení recyklace, změny budou ztraceny, protože původní balíček, kterou jste publikovali se používá pro opětovné vytvoření virtuálního počítače pro roli. Znovu publikujte aplikaci pro získání nejnovějších změn pro webovou roli.
+- **Pouze pro vývoj a testování účely**: Změny jsou provedeny přímo k virtuálnímu počítači se spuštěným ve webové roli. Pokud tento virtuální počítač má k provedení recyklace, změny budou ztraceny, protože původní balíček, kterou jste publikovali se používá pro opětovné vytvoření virtuálního počítače pro roli. Znovu publikujte aplikaci pro získání nejnovějších změn pro webovou roli.
 
-- **Je možné aktualizovat jenom webové role**: role pracovního procesu se nedá aktualizovat. Kromě toho nelze aktualizovat `RoleEntryPoint` v `web role.cs`.
+- **Je možné aktualizovat jenom webové role**: Role pracovního procesu se nedá aktualizovat. Kromě toho nelze aktualizovat `RoleEntryPoint` v `web role.cs`.
 
-- **Jedna instance webové role podporují jenom**: nelze mít více instancí žádné webové role v prostředí pro nasazení. Více webových rolí každý jenom s jednou instancí jsou však podporovány.
+- **Jedna instance webové role podporují jenom**: V prostředí pro nasazení nemůže mít více instancí žádné webové role. Více webových rolí každý jenom s jednou instancí jsou však podporovány.
 
 - **Povolit připojení ke vzdálené ploše**: Tento požadavek umožňuje Web Deploy používat uživatele a heslo pro připojení k virtuálnímu počítači, který chcete nasadit změny na server, na kterém běží Internetové informační služby (IIS). Kromě toho můžete potřebovat pro připojení k virtuálnímu počítači přidat důvěryhodný certifikát do služby IIS na tomto virtuálním počítači. (Tento certifikát zajišťuje, že vzdáleného připojení pro službu IIS, který používá Webdeploy zabezpečené.)
 

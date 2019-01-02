@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentText2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDocumentText2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0dc8344e19f422e65439aae6bafe12e3f62bee4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cae0bfefe4ab39d42f9cc67080d17394b1a1418b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838421"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 Toto rozhraní představuje textový dokument.  
@@ -28,32 +25,32 @@ Toto rozhraní představuje textový dokument.
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní implementuje modul ladění (DE) Pokud je zdrojový kód, který je potřeba zadat v textové podobě. Vzhledem k tomu, že toto je nejčastější případ, pokud Zavedenými implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní, se musí také implementovat `IDebugDocumentText2` rozhraní.  
+ Ladicí stroj (DE) implementuje toto rozhraní, pokud je zdrojový kód, je potřeba zadat v textové podobě. Protože toto je nejčastější případ, pokud se Zavedenými implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní, měl by také implementovat `IDebugDocumentText2` rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Použití `QueryInterface` metodu k získání tohoto rozhraní z `IDebugDocument2` rozhraní.  
+ Použití `QueryInterface` metodu k získání tohoto rozhraní ze `IDebugDocument2` rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  Kromě metod na `IDebugDocument2` rozhraní, toto rozhraní implementuje následujících metod:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Velikost textu v této pozici v dokumentu načte.|  
-|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Načte text z konkrétní pozici v dokumentu.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|Získá velikost textu na této pozici v dokumentu.|  
+|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|Získá text ze zadaného umístění v dokumentu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Také musí implementovat objekt, který implementuje toto rozhraní <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> rozhraní, které zdroje <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> rozhraní pro [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objektu.  
+ Musí také implementovat objekt, který implementuje toto rozhraní <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> rozhraní, které poskytuje <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> rozhraní pro [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) objektu.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

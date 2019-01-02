@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,17 +16,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10e2cacb07c4040fb81aa01e8bd629e1ae593f7c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8c2ed6c687766a9ef3ff6e4a62e69e5b8b334a55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850824"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Odesílání rozšíření sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Poznámka:**: The Galerie sady Visual Studio teď nahrazuje Visual Studio Marketplace. Zobrazte nejnovější verzi tohoto tématu podrobnosti.
+**Poznámka:**: Galerie Visual Studio teď nahrazuje Visual Studio Marketplace. Zobrazte nejnovější verzi tohoto tématu podrobnosti.
 
 
 Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdílet s přáteli nebo kolegy nebo ho publikovat v Galerii Visual Studio. V této části vám vysvětlíme, vše, co musíte udělat, aby bylo možné publikovat a spravovat vaše rozšíření: práce se soubory VSIX, publikování, lokalizace a aktualizace.
@@ -42,7 +41,7 @@ Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdí
 ## <a name="publishing-your-extension-to-the-visual-studio-gallery"></a>Publikování rozšíření do Galerie Visual Studio
  Rozšíření ostatním uživatelům můžete distribuovat jednoduše tak, že jejich souboru .vsix poštovní nebo vložení na serveru. Ale nejlepší způsob, jak získat kód dostat do rukou velké množství lidí je umístit jej [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847). Rozšíření Galerie sady Visual Studio jsou k dispozici uživatelům aplikace Visual Studio prostřednictvím **rozšíření a aktualizace**. Další informace najdete v tématu [hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
- Úplný příklad, který ukazuje, jak nahrát rozšíření do Galerie Visual Studio, naleznete v tématu [názorný postup: publikování rozšíření sady Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
+ Úplný příklad, který ukazuje, jak nahrát rozšíření do Galerie Visual Studio, naleznete v tématu [názorný postup: Publikování rozšíření sady Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md).
 
 ## <a name="private-galleries"></a>Privátní galerie
  Při vývoji ovládací prvky, šablony a nástroje, můžete je sdílet ve vaší organizaci tím, že publikuje do privátní Galerie na vašem intranetu. Další informace najdete v tématu [privátní Galerie](../extensibility/private-galleries.md).
@@ -51,7 +50,7 @@ Po dokončení vývoje rozšíření, nainstalujte ho na jiné počítače, sdí
  Pokud máte v plánu uvolnit rozšíření v různých národních prostředí, měli byste zvážit, je lokalizace. Vysvětlení, co je zahrnuta, najdete v článku [lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md).
 
 ## <a name="updating-and-versioning-your-extension"></a>Aktualizace a správa verzí rozšíření
- Po publikování rozšíření, budou přicházet čas, kdy je potřeba ho aktualizovat. Postup aktualizace rozšíření, která byla publikována na Galerii Visual Studio najdete v tématu [postupy: aktualizace rozšíření](../extensibility/how-to-update-a-visual-studio-extension.md).
+ Po publikování rozšíření, budou přicházet čas, kdy je potřeba ho aktualizovat. Postup aktualizace rozšíření, která byla publikována na Galerii Visual Studio najdete v tématu [jak: Aktualizovat rozšíření](../extensibility/how-to-update-a-visual-studio-extension.md).
 
  Můžete nastavit rozšíření pro podporu více verzí sady Visual Studio. Další informace najdete v tématu [podporuje více verzí sady Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md).
 

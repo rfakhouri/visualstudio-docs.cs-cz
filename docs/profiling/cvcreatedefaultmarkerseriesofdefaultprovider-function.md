@@ -1,8 +1,6 @@
 ---
-title: Cvcreatedefaultmarkerseriesofdefaultprovider – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvcreatedefaultmarkerseriesofdefaultprovider – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c68c7870430033d9ff20b94f51e516038c9eba6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e50e0d109ac5cfd17c5913213c4b86b406927593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967651"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Cvcreatedefaultmarkerseriesofdefaultprovider – funkce
-Vytvoří výchozí značky řadu výchozího zprostředkovatele.  
+Vytvoří výchozí značky řady výchozího zprostředkovatele.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +33,13 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
   
 #### <a name="parameters"></a>Parametry  
  `ppProvider`  
- Adresa poskytovatele objektová proměnná. Adresa nesmí být NULL, proměnná může mít žádnou hodnotu.  
+ Adresa proměnné objektu zprostředkovatele. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.  
   
  `ppMarkerSeries`  
- Adresa značky řady objektová proměnná. Adresa nesmí být NULL, proměnná může mít žádnou hodnotu.  
+ Adresa proměnné objektu značky řady. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK při řady zprostředkovatele a značky jsou úspěšně vytvořeny nebo kód chyby v případě, že existuje byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při řady zprostředkovatele a značky se úspěšně vytvořil nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

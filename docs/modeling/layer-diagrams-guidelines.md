@@ -13,17 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924420"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy závislostí: pokyny
 
-Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramů závislostí* v sadě Visual Studio. Ujistěte se, že váš kód zůstane konzistentní s tímto návrhem pomocí ověřování kódu pomocí diagram závislostí. Můžete také zahrnout ověřování vrstvy v procesu sestavení. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
+Popisu architektury aplikace na vysoké úrovni tak, že vytvoříte *diagramů závislostí* v sadě Visual Studio. Ujistěte se, že váš kód zůstane konzistentní s tímto návrhem pomocí ověřování kódu pomocí diagram závislostí. Můžete také zahrnout ověřování vrstvy v procesu sestavení. Zobrazit [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -32,7 +31,7 @@ Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přeč
 
 ## <a name="what-is-a-dependency-diagram"></a>Co je diagram závislostí?
 
-Jako diagramu tradiční architektura identifikuje diagram závislostí hlavní součásti nebo funkční jednotky a jejich vzájemných závislostí. Volá se, každý uzel v diagramu *vrstvy*, představuje logické skupiny obory názvů, projekty nebo jiné artefakty. Nakreslení závislosti, které by měly existovat v návrhu. Na rozdíl od tradiční architektura diagramu můžete ověřit, že skutečné závislosti ve zdrojovém kódu odpovídají zamýšlených závislostí, které jste zadali. Tím, že část ověření regulárního sestavení na [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], můžete zajistit, že kód programu pořád dodržovat architektury systému prostřednictvím budoucí změny. Zobrazit [diagramy závislostí: referenční](../modeling/layer-diagrams-reference.md).
+Jako diagramu tradiční architektura identifikuje diagram závislostí hlavní součásti nebo funkční jednotky a jejich vzájemných závislostí. Volá se, každý uzel v diagramu *vrstvy*, představuje logické skupiny obory názvů, projekty nebo jiné artefakty. Nakreslení závislosti, které by měly existovat v návrhu. Na rozdíl od tradiční architektura diagramu můžete ověřit, že skutečné závislosti ve zdrojovém kódu odpovídají zamýšlených závislostí, které jste zadali. Tím, že část ověření regulárního sestavení na [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], můžete zajistit, že kód programu pořád dodržovat architektury systému prostřednictvím budoucí změny. Zobrazit [diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Jak návrh nebo aktualizaci vaší aplikace pomocí diagramů závislostí
 
@@ -104,7 +103,7 @@ Obvykle se zobrazí nějaké závislosti, které by neměly existovat. Tyto záv
 
 K popisu změn, které máte v plánu provést vašeho systému nebo v požadované architektuře, postupujte následovně Chcete-li upravit diagram závislostí. Můžete také zvážit provádíme některé změny refaktoringu pro zlepšení strukturu kódu před jeho rozšíření. Zobrazit [zlepšení strukturu kódu](#Improving).
 
-|**k**|**Proveďte tyto kroky**|
+|**Komu**|**Proveďte tyto kroky**|
 |-|-|
 |Odstranit závislost, která by neměla existovat|Klepněte na závislost a stiskněte klávesu **odstranit**.|
 |Změna nebo omezení směru závislosti|Nastavte jeho **směr** vlastnost.|

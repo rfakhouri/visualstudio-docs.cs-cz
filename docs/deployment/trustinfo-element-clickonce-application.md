@@ -1,8 +1,6 @@
 ---
 title: '&lt;trustInfo&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb8494f9602b22f5b5997216a3aa74189e27f3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870492"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; – element (aplikace ClickOnce)
 Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klientském počítači.  
@@ -72,38 +70,38 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
  `trustInfo` Element je povinný a je v `asm.v2` oboru názvů. Nemá žádné atributy a obsahuje následující prvky.  
   
 ## <a name="security"></a>zabezpečení  
- Požadováno. Tento element je podřízeným prvkem `trustInfo` elementu. Obsahuje `applicationRequestMinimum` elementu a nemá žádné atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `trustInfo` elementu. Obsahuje `applicationRequestMinimum` elementu a nemá žádné atributy.  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- Požadováno. Tento element je podřízeným prvkem `security` elementu a obsahuje `PermissionSet`, `assemblyRequest`, a `defaultAssemblyRequest`elementy. Tento element nemá žádné atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `security` elementu a obsahuje `PermissionSet`, `assemblyRequest`, a `defaultAssemblyRequest`elementy. Tento element nemá žádné atributy.  
   
 ## <a name="permissionset"></a>PermissionSet  
- Požadováno. Tento element je podřízeným prvkem `applicationRequestMinimum` elementu a obsahuje `IPermission` elementu. Tento element má následující atributy.  
+ Povinný parametr. Tento element je podřízeným prvkem `applicationRequestMinimum` elementu a obsahuje `IPermission` elementu. Tento element má následující atributy.  
   
 -   `ID`  
   
-     Požadováno. Určuje sadu oprávnění. Tento atribut může být libovolná hodnota. ID odkazuje `defaultAssemblyRequest` a `assemblyRequest` atributy.  
+     Povinný parametr. Určuje sadu oprávnění. Tento atribut může být libovolná hodnota. ID odkazuje `defaultAssemblyRequest` a `assemblyRequest` atributy.  
   
 -   `version`  
   
-     Požadováno. Určuje verzi oprávnění. Obvykle je tato hodnota `1`.  
+     Povinný parametr. Určuje verzi oprávnění. Obvykle je tato hodnota `1`.  
   
 ## <a name="ipermission"></a>Rozhraní IPermission.  
  Volitelné. Tento element je podřízeným prvkem `PermissionSet` elementu. `IPermission` Plně identifikuje třída oprávnění v elementu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. `IPermission` Element má následující atributy, ale mohou mít další atributy, které odpovídají vlastnosti třídy oprávnění. Syntaxe pro konkrétní oprávnění najdete příklady uvedené v souboru Security.config.  
   
 -   `class`  
   
-     Požadováno. Určuje třídu oprávnění pomocí silného názvu. Například následující kód označuje `FileDialogPermission` typu.  
+     Povinný parametr. Určuje třídu oprávnění pomocí silného názvu. Například následující kód označuje `FileDialogPermission` typu.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 -   `version`  
   
-     Požadováno. Určuje verzi oprávnění. Tato hodnota je obvykle `1`.  
+     Povinný parametr. Určuje verzi oprávnění. Tato hodnota je obvykle `1`.  
   
 -   `Unrestricted`  
   
-     Požadováno. Označuje, zda aplikace potřebuje neomezená oprávnění. Pokud `true`, udělení oprávnění Nepodmíněný. Pokud `false`, nebo pokud tento atribut není definován, je omezen atributy specifické pro oprávnění definované na `IPermission` značky. Proveďte následující oprávnění:  
+     Povinný parametr. Označuje, zda aplikace potřebuje neomezená oprávnění. Pokud `true`, udělení oprávnění Nepodmíněný. Pokud `false`, nebo pokud tento atribut není definován, je omezen atributy specifické pro oprávnění definované na `IPermission` značky. Proveďte následující oprávnění:  
   
     ```xml  
     <IPermission  
@@ -123,18 +121,18 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
   
 -   `permissionSetReference`  
   
-     Požadováno. Určuje ID sady oprávnění, která je výchozí oprávnění. Sada oprávnění je deklarován v `PermissionSet` elementu.  
+     Povinný parametr. Určuje ID sady oprávnění, která je výchozí oprávnění. Sada oprávnění je deklarován v `PermissionSet` elementu.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Volitelné. Určuje oprávnění pro konkrétní sestavení. Tento element je podřízeným prvkem `applicationRequestMinimum` prvek a má následující atributy.  
   
 -   `Name`  
   
-     Požadováno. Určuje název sestavení.  
+     Povinný parametr. Určuje název sestavení.  
   
 -   `permissionSetReference`  
   
-     Požadováno. Určuje ID sady oprávnění, která toto sestavení vyžaduje. Sada oprávnění je deklarován v `PermissionSet` elementu.  
+     Povinný parametr. Určuje ID sady oprávnění, která toto sestavení vyžaduje. Sada oprávnění je deklarován v `PermissionSet` elementu.  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
  Volitelné. Tento element je podřízeným prvkem `security` elementu a obsahuje `requestedExecutionLevel` elementu. Tento element nemá žádné atributy.  
@@ -144,7 +142,7 @@ Popisuje minimální oprávnění požadovaná pro aplikaci, aby běžela v klie
   
 - `Level`  
   
-   Požadováno. Označuje, že úroveň zabezpečení aplikace požaduje. Možné hodnoty jsou:  
+   Povinný parametr. Označuje, že úroveň zabezpečení aplikace požaduje. Možné hodnoty jsou:  
   
    `asInvoker`, požadování žádná další oprávnění. Tato úroveň vyžaduje že důvěryhodnosti žádné další výzvy.  
   

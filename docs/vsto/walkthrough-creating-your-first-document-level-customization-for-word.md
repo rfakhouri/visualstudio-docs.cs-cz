@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word'
-ms.custom: ''
+title: 'Průvodce: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856422"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word
+# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Průvodce: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření určitého dokumentu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet, když jakýkoliv dokument je otevřen.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -66,7 +63,7 @@ ms.locfileid: "49928812"
   
 6.  V **název** zadejte **FirstDocumentCustomization**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      **Visual Studio Tools for Office Project Wizard** otevře.  
   
@@ -143,19 +140,19 @@ ms.locfileid: "49928812"
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili základní přizpůsobení úrovni dokumentu pro Word, můžete další informace o tom, jak vyvíjet vlastní nastavení v těchto tématech:  
   
--   Obecné programování úkolů, které můžete provádět v přizpůsobeních na úrovni dokumentu: [programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).  
+-   Obecné programování úkolů, které můžete provádět v přizpůsobeních na úrovni dokumentu: [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).  
   
--   Úkoly programování, které jsou specifické pro přizpůsobení na úrovni dokumentu pro Word: [řešení aplikace Word](../vsto/word-solutions.md).  
+-   Úkoly programování, které jsou specifické pro přizpůsobení na úrovni dokumentu pro Word: [Řešení aplikace Word](../vsto/word-solutions.md).  
   
--   Použití objektového modelu aplikace Word: [přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md).  
+-   Použití objektového modelu aplikace Word: [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md).  
   
--   Přizpůsobení uživatelského rozhraní aplikace Word, například podle přidat vlastní kartu na pás karet nebo vytvořit vlastní podokna akcí: [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+-   Přizpůsobení uživatelského rozhraní slovo například přidat vlastní kartu na pás karet nebo vytvořením vlastní podokna akcí: [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).  
   
--   Provádění úloh, které nejsou možné pomocí objektového modelu aplikace Word (například hostování spravované ovládací prvky v dokumentech a ovládací prvky aplikace Word připojení k datům s použitím dat Windows Forms pomocí rozšířených objektů aplikace Word poskytuje řešení pro systém Office v sadě Visual Studio vazby modelu): [automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md).  
+-   Provádění úloh, které nejsou možné pomocí objektového modelu aplikace Word (například hostování spravované ovládací prvky v dokumentech a ovládací prvky aplikace Word připojení k datům s použitím dat Windows Forms pomocí rozšířených objektů aplikace Word poskytuje řešení pro systém Office v sadě Visual Studio vazby modelu): [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md).  
   
--   Sestavování a ladění přizpůsobení na úrovni dokumentu pro Word: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
+-   Sestavování a ladění přizpůsobení na úrovni dokumentu pro Word: [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
   
--   Nasazení přizpůsobení na úrovni dokumentu pro Word: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
+-   Nasazení přizpůsobení na úrovni dokumentu pro Word: [Nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -167,5 +164,3 @@ ms.locfileid: "49928812"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 434d673c62d0b26efa1559db7d7d98747146fd2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939277"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Postupy: Přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild
   Pomocí cílů nástroje MSBuild na příkazovém řádku můžete přizpůsobit, jak sada Visual Studio vytvoří soubory balíčku služby SharePoint (*.wsp*). Například můžete upravit vlastnosti nástroje MSBuild, chcete-li změnit zprostředkující adresář balení a skupiny nástroje MSBuild položky, které určují výčtu souborů.  
   
 ## <a name="customize-and-run-msbuild-targets"></a>Přizpůsobení a spuštění cíle nástroje MSBuild  
@@ -86,4 +81,3 @@ ms.locfileid: "49889679"
   
 ## <a name="see-also"></a>Viz také:
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

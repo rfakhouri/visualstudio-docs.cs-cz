@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Zobrazení popisky rychlé informace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení popisky rychlé informace | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965801"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>Návod: Zobrazení QuickInfo popisky
+# <a name="walkthrough-display-quickinfo-tooltips"></a>Průvodce: Zobrazit popisky rychlé informace
 Rychlé informace je funkce technologie IntelliSense, která zobrazuje podpisy metod a popisy, když se uživatel přesune ukazatel myši název metody. Založený na jazyce funkce, jako je rychlé informace lze implementovat definováním identifikátory, pro které chcete poskytnout QuickInfo popisy a následného vytvoření popisu, ve kterém chcete zobrazit obsah. Rychlé informace lze definovat v kontextu jazykové služby, nebo můžete definovat vlastní název souboru příponu a obsah zadejte a zobrazit rychlé informace pro právě tento typ nebo můžete zobrazit rychlé informace pro existující typ obsahu (jako je například "text"). Tento návod ukazuje, jak zobrazit rychlé informace pro typ obsahu "text".  
   
  Příklad rychlých informací v tomto názorném postupu zobrazí popisky, když uživatel přesune ukazatel myši název metody. Tento návrh je potřeba implementovat tyto čtyři rozhraní:  
@@ -178,4 +175,4 @@ Rychlé informace je funkce technologie IntelliSense, která zobrazuje podpisy m
 4.  Přesuňte ukazatel nad jedno z výskytů "Přidání". Podpis a popis `add` metoda má být zobrazena.  
   
 ## <a name="see-also"></a>Viz také:  
- [Návod: Propojení typ obsahu, který má příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Typ obsahu propojit příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,9 +1,6 @@
 ---
 title: Anatomie balíčku VSIX | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921481"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření sady Visual Studio spolu s metadaty sady Visual Studio používá ke klasifikaci a nainstalovat rozšíření. Tato metadata jsou obsaženy v manifestu VSIX a *[Content_Types] .xml* souboru. Balíčku VSIX může obsahovat také jeden nebo více *Extension.vsixlangpack* soubory k poskytování lokalizované textu instalace a může obsahovat další balíčky VSIX nainstalovat závislosti.  
@@ -60,4 +57,4 @@ Je balíčku VSIX *VSIX* soubor, který obsahuje jeden nebo více rozšíření 
 ## <a name="contenttypesxml"></a>[Content_Types] .xml  
  *[Content_Types] .xml* souboru Určuje typy souborů v rozbalených *VSIX* souboru. Tento soubor používá při instalaci balíčku Visual Studio, ale není možné nainstalovat samotný soubor. Další informace o tomto souboru najdete v tématu [struktura souboru [Content_types] .xml](the-structure-of-the-content-types-dot-xml-file.md).  
   
- A *[Content_Types] .xml* vyžaduje soubor standardu Open Packaging konvence OPC (). Další informace o OPC, naleznete v tématu [OPC: novým standardem pro vytváření balíčků dat](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) na webové stránce MSDN.
+ A *[Content_Types] .xml* vyžaduje soubor standardu Open Packaging konvence OPC (). Další informace o OPC, naleznete v tématu [OPC: Nový standard balení data](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/) na webové stránce MSDN.

@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: nastavení příkazů nasazení služby SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Nastavení příkazů nasazení služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,36 +12,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920362"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>Postupy: nasazení sady SharePoint – příkazy
-  Proces nasazení můžete přizpůsobit nastavení příkazy před nasazením a po nasazení. Tyto příkazy spustit před a po dalších akcí nasazení při ladění řešení služby SharePoint v sadě Visual Studio.  
+# <a name="how-to-set-sharepoint-deployment-commands"></a>Postupy: Nastavení příkazů nasazení služby SharePoint
+  Proces nasazení můžete přizpůsobit tak, že nastavíte příkazy před nasazením a po nasazení. Tyto příkazy se spouští před a po další akce související s nasazením při ladění řešení služby SharePoint v sadě Visual Studio.  
   
 ### <a name="to-add-a-pre-deployment-command"></a>Chcete-li přidat příkaz před nasazením  
   
-1.  Na řádku nabídek zvolte **projektu** > **\<*ProjectName*> vlastnosti**.  
+1.  V panelu nabídky zvolte **projektu** > **\<*ProjectName*> vlastnosti**.  
   
-2.  Vyberte **SharePoint** kartě.  
+2.  Zvolte **SharePoint** kartu.  
   
-3.  V **před nasazením příkazového řádku** textové pole, zadejte MS-DOS nebo MSBuild příkazy k přizpůsobení tohoto kroku.  
+3.  V **příkazový řádek před nasazením** textové pole, zadejte zástupného kódu MS-DOS nebo MSBuild příkazy k přizpůsobení tohoto kroku.  
   
-     Například pro zobrazení seznamu obsah adresáře, než bude dokončeno nasazení, zadejte **dir**.  
+     K výpisu obsahu adresáře předtím, než se dokončí nasazení, zadejte například **dir**.  
   
 ### <a name="to-add-a-post-deployment-command"></a>Chcete-li přidat příkaz po nasazení  
   
-1.  Na řádku nabídek zvolte **projektu** > **\<*ProjectName*> vlastnosti**.  
+1.  V panelu nabídky zvolte **projektu** > **\<*ProjectName*> vlastnosti**.  
   
-2.  Vyberte **SharePoint** kartě.  
+2.  Zvolte **SharePoint** kartu.  
   
-3.  V **po nasazení příkazového řádku** text zadejte MS-DOS nebo MSBuild příkazy k přizpůsobení tohoto kroku.  
+3.  V **příkazový řádek po nasazení** textové pole, zadejte zástupného kódu MS-DOS nebo MSBuild příkazy k přizpůsobení tohoto kroku.  
   
-     Po dokončení nasazení, zobrazit obsah adresáře, zadejte **dir**. Chcete-li proměnnou MSBuild zkopírujte sestavení z adresáře sestavení, zadejte **zkopírujte $(TargetPath) c:\DeploymentDirectory**.  
+     K výpisu obsahu adresáře po dokončení nasazení, zadejte například **dir**. Použití nástroje MSBuild proměnné ke zkopírování sestavení z adresáře sestavení, zadejte **zkopírujte $(TargetPath) c:\DeploymentDirectory**.  
   
 ## <a name="see-also"></a>Viz také:
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

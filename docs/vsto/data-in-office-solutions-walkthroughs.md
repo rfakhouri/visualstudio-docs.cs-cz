@@ -1,9 +1,6 @@
 ---
 title: Data v návody pro řešení Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: aff3712e9c2c3fdf68e575abf6c3a3bdafafcf53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829031"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Data v návody pro řešení Office
   Následující postupy ukazují, jak pracovat s daty v přizpůsobeních na úrovni dokumentu a doplňky VSTO pro Microsoft Office Word a Microsoft Office Excel.  
@@ -70,5 +67,3 @@ ms.locfileid: "53647307"
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

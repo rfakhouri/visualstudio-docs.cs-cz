@@ -1,22 +1,19 @@
 ---
 title: Rozšíření uživatelského rozhraní diagnostikování zpoždění v sadě Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887708"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: Diagnostika uživatelského rozhraní způsobených rozšířeními zpoždění
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: Diagnostika zpoždění uživatelského rozhraní způsobených rozšířeními
 
 Když přestane reagovat uživatelské rozhraní, sady Visual Studio prozkoumá zásobníku volání vlákna uživatelského rozhraní, počínaje listu a funguje směrem k základní třídě. Pokud Visual Studio zjistí, že rámec zásobníku volání patří do modulu, který je součástí rozšíření nainstalované a povolené, zobrazuje oznámení o.
 

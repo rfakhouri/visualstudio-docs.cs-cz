@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856859"
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon, můžete vytvořit sestavy soubory, soubory se zdrojovým kódem a jiné textové soubory, které jsou založeny na modely jazyka specifického pro doménu. Základní informace o textových šablonách naleznete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v experimentálním režimu při ladění vašeho DSL a budou fungovat i v počítači, na které jste nasadili DSL.
@@ -58,7 +57,7 @@ Here is a list of elements in the model:
 
 - Se šablona načte, který zadáte v souboru modelu `requires` vlastnost.
 
-- Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je `this.ExampleModel`.
+- Vlastnost v `this` obsahuje kořenový element. Odtud můžete kód přejít na další prvky modelu. Název vlastnosti je obvykle stejný jako kořenový doménová třída tohoto kódu DSL. V tomto příkladu je to `this.ExampleModel`.
 
 - I když je jazyk, ve kterém jsou zapsány fragmenty kódu jazyka C#, můžete vygenerovat text jakéhokoli druhu. Můžete také napsat kód [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] tak, že přidáte vlastnost `language="VB"` k `template` směrnice.
 
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  Načíst soubor, největší efektivity dosáhnete metodou je používání Visual Studio ModelBus. V rámci typického scénáře použije textová šablona direktivu specifické pro DSL načíst první model obvyklým způsobem. Tento model by obsahoval odkazy ModelBus k jinému modelu. ModelBus můžete použít k otevření odkazovaným modelem a přístup ke konkrétní elementu. Další informace najdete v tématu [pomocí Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- V rámci méně obvyklé scénáře, můžete chtít otevřít soubor modelu, pro který máte jenom název souboru, a která nemusí být v aktuálním projektu sady Visual Studio. V takovém případě můžete otevřít soubor pomocí techniky popsané v [postupy: otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ V rámci méně obvyklé scénáře, můžete chtít otevřít soubor modelu, pro který máte jenom název souboru, a která nemusí být v aktuálním projektu sady Visual Studio. V takovém případě můžete otevřít soubor pomocí techniky popsané v [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
 ## <a name="generating-multiple-files-from-a-template"></a>Generování více souborů ze šablony
  Pokud chcete vygenerovat několik souborů – například ke generování samostatného souboru pro každý prvek v modelu, existuje několik možných přístupů. Ve výchozím nastavení je vytvořen pouze jeden soubor z každého souboru šablony.
