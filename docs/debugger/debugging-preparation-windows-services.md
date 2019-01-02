@@ -2,7 +2,6 @@
 title: Příprava na ladění služeb Windows | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a80c6c24fdba594a5bfb5c11650b69eb2de693
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9769b3d1238f1ec62e315b18798851b938d003e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854253"
 ---
-# <a name="debugging-preparation-windows-services"></a>Příprava ladění: služby systému Windows
+# <a name="debugging-preparation-windows-services"></a>Příprava ladění: Služby systému Windows
 Služba Windows je program, který běží na pozadí v rámci Microsoft Windows. Mezi příklady patří služby Systémový čas Windows, která aktualizuje viditelné hodiny a službu Telnet. Služba Windows nemůže být spuštěna v rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; se musí spustit v rámci kontextu správce řízení služeb. Další informace najdete v tématu [vytváření služeb Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [ladění aplikace služby Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), a [aplikace služby Windows](/dotnet/framework/windows-services/index).  
   
 ## <a name="see-also"></a>Viz také  

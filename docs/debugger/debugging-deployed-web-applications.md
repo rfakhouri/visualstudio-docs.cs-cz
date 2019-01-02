@@ -1,8 +1,6 @@
 ---
-title: Ladění aplikace nasazené ASP.NET | Microsoft Docs
-ms.custom: ''
+title: Ladění aplikací ASP.NET nasazenou | Dokumentace Microsoftu
 ms.date: 06/30/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,26 +20,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: b8c7c9ea2f280eaf60f4592f149ed2989d862b9b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 724f250e6f41203bc1fe56c88703609e67072783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908368"
 ---
-# <a name="debugging-deployed-aspnet-applications"></a>Ladění aplikace nasazené ASP.NET
-Použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] k ladění nasazených aplikací, je nutné se připojit k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní zpracovat a ujistěte se, že ladicí program má přístup k symboly pro aplikaci. Musíte také najít a otevřít zdrojové soubory pro aplikaci. Další informace najdete v tématu [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [postupy: hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), a [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
+# <a name="debugging-deployed-aspnet-applications"></a>Ladění aplikací nasazených ASP.NET
+Použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladění nasazených aplikací, je nutné se připojit k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovních procesů zpracování a ujistěte se, že ladicí program má přístup k symbolům pro aplikaci. Musíte také najít a otevřít zdrojové soubory pro aplikaci. Další informace najdete v tématu [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [jak: Hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), a [požadavky na systém](../debugger/aspnet-debugging-system-requirements.md).  
 
 > [!WARNING]
-> Pokud připojíte k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces pro ladění a stiskněte klávesu zarážku, všechny spravovaného kódu v zdržovalo proces pracovního procesu. Zastavení všech spravovaného kódu v pracovním procesu může způsobit zastavení práce pro všechny uživatele na serveru. Před ladění na provozním serveru, vezměte v úvahu potenciální dopad na produkční práci. 
+> Pokud se připojíte k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces pro ladění a stiskněte klávesu zarážku, všechen spravovaný kód v zastaví zpracování pracovního procesu. Zastavení veškerému spravovanému kódu v pracovním procesu, může způsobit zastavení práce pro všechny uživatele na serveru. Před ladění na provozním serveru vezměte v úvahu potenciální dopad na produkční práci. 
   
-Proces pro připojení k [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovního procesu je stejný jako připojení k jiné vzdálený proces. Pokud jste se připojili, pokud nemáte otevřený správný projekt, zobrazí se dialogové okno když dělí aplikace. Toto dialogové okno se žádostí pro umístění zdrojových souborů pro aplikaci. Název souboru, který zadáte v dialogovém okně musí odpovídat názvu souboru, který je zadaný v symboly ladění na webovém serveru. Další informace najdete v tématu [přiřadit běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md). Vzdálené ladění ve službě IIS, naleznete v tématu [vzdáleného ladění ASP.NET ve vzdáleném počítači IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
+Pro připojení k procesu [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovního procesu je stejné jako připojení k jiné vzdálený proces. Pokud jste se připojili, pokud nemáte otevřený správný projekt, zobrazí se dialogové okno když se aplikace zastaví. Toto dialogové okno požádá o umístění zdrojových souborů pro aplikaci. Název souboru zadaný v symboly ladění na webovém serveru musí odpovídat názvu souboru, který zadáte v dialogovém okně. Další informace najdete v tématu [připojení k běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md). Chcete-li nastavit vzdálené ladění ve službě IIS, přečtěte si téma [vzdálené ladění ASP.NET ve vzdáleném počítači IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md).
  
 > [!NOTE]
->  Mnoho [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] reference knihovny DLL, které obsahují obchodní logiku nebo další užitečné kódu webové aplikace. Odkazu knihovnu DLL zkopíruje z místního počítače do složky \bin virtuální adresář webové aplikace při nasazení aplikace. Při ladění, mějte na paměti, že webová aplikace je odkazy na tuto kopii této knihovny DLL a nelze zkopírovat do místního počítače. 
+>  Mnoho [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webových aplikací odkazovat na knihovny DLL, které obsahují obchodní logikou nebo jiné užitečné kódu. Takový odkaz knihovny DLL zkopíruje ze svého místního počítače do složky \bin virtuální adresář webové aplikace při nasazení vaší aplikace. Při ladění, mějte na paměti, že vaše webová aplikace odkazuje na kopii knihovny DLL a nelze zkopírovat do místního počítače. 
   
 ## <a name="see-also"></a>Viz také  
  [Ladění aplikací ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Postupy: povolení ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [Postupy: hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)   
+ [Postupy: Povolit ladění pro aplikace ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+ [Postupy: Hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)   
  [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

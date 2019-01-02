@@ -2,7 +2,6 @@
 title: Mapování metod v zásobníku volání při ladění
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889238"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 Vytvořte mapu kódu pro vizuální sledování zásobníku volání během ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.
@@ -70,7 +69,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 1.  Spusťte ladění. (Klávesnice: **F5**)
 
-2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **Ctrl** + **Shift** + **`**)
+2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **CTRL** + **Shift** + **`**)
 
      ![Vyberte mapu kódu pro spuštění mapování zásobníku volání](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -143,7 +142,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
    Změna mapování kód nijak neovlivní. Nebojte se přejmenovat, přesunout nebo odebrat cokoli na mapě.
 
-- **Co tato zpráva znamená: "diagram může být založen na starší verzi kódu"?**
+- **Co tato zpráva znamená: "Diagram může být založen na starší verzi kódu"?**
 
    Po poslední aktualizaci mapy mohl být kód změněn. Například volání do mapy nemusí již v kódu existovat. Zavřete zprávu a potom zkuste znovu sestavit řešení před opětovnou aktualizací mapy.
 

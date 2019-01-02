@@ -1,8 +1,6 @@
 ---
 title: 'DA0038: Vysoká míra kolizí zámků | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.38
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54788c20552380d22df8bad783d5012ac7157899
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c670ab939f2535c7dfcdf2d2db8a53e06bcd58db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845912"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Vysoká míra konfliktů zámků
 
@@ -48,7 +46,7 @@ ms.locfileid: "49922052"
  Toto pravidlo vyvolá při měření v průběhu spuštění profilování označuje, že je příliš vysoký počet zámků. Zámků zpoždění spuštění vlákna, která čekají na zámek. Dokonce i poměrně malý objem kolize zámků při testech jednotek nebo v zátěžových testech, které běží na hardwaru nižší by mělo být vypátráno.  
 
 > [!NOTE]
->  Jestliže je míra ohlášené zámků v Profilování dat příliš vysoké [DA0039: velmi vysoká míra kolizí zámků](../profiling/da0039-very-high-rate-of-lock-contentions.md) místo tuto zprávu s informacemi o se aktivuje upozornění.  
+>  Jestliže je míra ohlášené zámků v Profilování dat příliš vysoké, [DA0039: Velmi vysoká míra kolizí zámků](../profiling/da0039-very-high-rate-of-lock-contentions.md) místo tuto zprávu s informacemi o se aktivuje upozornění.  
 
 ## <a name="how-to-investigate-a-warning"></a>Zkoumání upozornění  
  Dvakrát klikněte na zprávu, přejděte [značky](../profiling/marks-view.md) zobrazení dat profilování.  Najít **.NET CLR LocksAndThreads\Contention sazba za sekundu** sloupce. Zjistěte, jestli konkrétní fázích provádění programu kde je těžší než ostatní fáze kolize zámků.  

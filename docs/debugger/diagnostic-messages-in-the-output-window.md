@@ -1,8 +1,6 @@
 ---
 title: Odesílání zpráv do okna výstup | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906745"
 ---
-# <a name="send-messages-to-the-output-window"></a>Odesílání zpráv do okna výstup
+# <a name="send-messages-to-the-output-window"></a>Odesílání zpráv do okna výstupu
 
 Můžete napsat zpráv za běhu **výstup** pomocí okna <xref:System.Diagnostics.Debug> třídy nebo <xref:System.Diagnostics.Trace> třídy, které jsou součástí z <xref:System.Diagnostics> knihovny tříd. Použití <xref:System.Diagnostics.Debug> třídy, pokud chcete výstup pouze *ladění* verzi aplikace. Použití <xref:System.Diagnostics.Trace> třídy, pokud chcete výstup v obou *ladění* a *vydání* verze.  
   

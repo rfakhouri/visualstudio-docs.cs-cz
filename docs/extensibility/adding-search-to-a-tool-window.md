@@ -1,9 +1,6 @@
 ---
 title: Přidání vyhledávání do panelu nástrojů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9dfc83477c8d77788ce35dc9e4f543344f611cf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902529"
 ---
 # <a name="add-search-to-a-tool-window"></a>Přidání vyhledávání do panelu nástrojů
 Při vytváření nebo aktualizace panelu nástrojů v rozšíření, můžete přidat stejný integraci vyhledávacích funkcí, které se zobrazí jinde v sadě Visual Studio. Tato funkce zahrnuje následující funkce:  
@@ -96,9 +93,9 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
      Chcete-li povolit vyhledávání, je nutné přepsat <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> vlastnost. <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Implementuje třída <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> a poskytuje výchozí implementaci, která neumožňuje vyhledávání.  
   
     ```csharp  
-    public override bool SearchEnabled  
+    public override bool SearchEnabled  
     {  
-        get { return true; }  
+        get { return true; }  
     }  
     ```  
   
@@ -245,7 +242,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
 1.  V * TestSearch.cs* přidejte následující kód, který `TestSearch` třídy. Tento kód umožňuje okamžité vyhledávání namísto hledání na vyžádání (to znamená, že uživatel nemá na **ENTER**). Přepíše kód `ProvideSearchSettings` metodu `TestSearch` třídu, která je potřeba změnit výchozí nastavení.  
   
     ```csharp  
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
             SearchSettingsDataSource.SearchStartTypeProperty.Name,   
@@ -293,7 +290,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
         get  
         {  
@@ -345,13 +342,13 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
 1.  V *TestSearch.cs* přidejte následující kód, který `TestSearch` třídy. Kód implementuje `SearchFiltersEnum` tak, že přidáte <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> , který určuje filtrování výsledků hledání, aby se zobrazovala pouze řádky.  
   
     ```csharp  
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
     {  
         get  
         {  
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();  
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));  
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
         }  
     }  
   
@@ -362,19 +359,19 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
 2.  V *TestSearch.cs* přidejte následující metody, které `TestSearchTask` třídy, která je v `TestSearch` třídy. Tyto metody podporují `OnStartSearch` metodu, která upravíte v dalším kroku.  
   
     ```csharp  
-    private string RemoveFromString(string origString, string stringToRemove)  
+    private string RemoveFromString(string origString, string stringToRemove)  
     {  
         int index = origString.IndexOf(stringToRemove);  
         if (index == -1)  
             return origString;  
-        else   
+        else   
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();  
     }  
   
-    private string[] GetEvenItems(string[] contentArr)  
+    private string[] GetEvenItems(string[] contentArr)  
     {  
         int length = contentArr.Length / 2;  
-        string[] evenContentArr = new string[length];  
+        string[] evenContentArr = new string[length];  
   
         int indexB = 0;  
         for (int index = 1; index < contentArr.Length; index += 2)  
@@ -390,13 +387,13 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
 3.  V `TestSearchTask` třídy, aktualizujte `OnStartSearch` metodu s následujícím kódem. Tato změna aktualizuje kód pro podporu filtru.  
   
     ```csharp  
-    protected override void OnStartSearch()  
+    protected override void OnStartSearch()  
     {  
-        // Use the original content of the text box as the target of the search.   
-        var separator = new string[] { Environment.NewLine };  
+        // Use the original content of the text box as the target of the search.   
+        var separator = new string[] { Environment.NewLine };  
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);  
   
-        // Get the search option.   
+        // Get the search option.   
         bool matchCase = false;  
         matchCase = m_toolWindow.MatchCaseOption.Value;  
   
@@ -409,7 +406,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
         {  
             string searchString = this.SearchQuery.SearchString;  
   
-            // If the search string contains the filter string, filter the content array.   
+            // If the search string contains the filter string, filter the content array.   
             string filterString = "lines:\"even\"";  
   
             if (this.SearchQuery.SearchString.Contains(filterString))  
@@ -421,7 +418,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
                 searchString = RemoveFromString(searchString, filterString);  
             }  
   
-            // Determine the results.   
+            // Determine the results.   
             uint progress = 0;  
             foreach (string line in contentArr)  
             {  
@@ -444,7 +441,7 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
   
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
   
-                // Uncomment the following line to demonstrate the progress bar.   
+                // Uncomment the following line to demonstrate the progress bar.   
                 // System.Threading.Thread.Sleep(100);  
             }  
         }  
@@ -460,8 +457,8 @@ Podle tohoto postupu se dozvíte, jak provádět následující úlohy:
             this.SearchResults = resultCount;  
         }  
   
-        // Call the implementation of this method in the base class.   
-        // This sets the task status to complete and reports task completion.   
+        // Call the implementation of this method in the base class.   
+        // This sets the task status to complete and reports task completion.   
         base.OnStartSearch();  
     }  
     ```  

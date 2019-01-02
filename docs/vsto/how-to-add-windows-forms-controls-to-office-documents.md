@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Přidání ovládacích prvků Windows forms do dokumentů Office'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ba2d1f46a16724f120d3e3ac788dfc8f2e290474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899912"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office
   Můžete přidat ovládací prvky Windows Forms pro Microsoft Office Excelu nebo dokumentů Microsoft Office Word v době návrhu v projektech na úrovni dokumentu. Za běhu můžete přidat ovládací prvky v přizpůsobeních na úrovni dokumentu a doplňky VSTO. Například můžete přidat <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> ovládací prvek do listu aplikace tak, aby uživatelé můžou vybrat ze seznamu možností.  
@@ -141,4 +138,3 @@ ms.locfileid: "53647855"
  [Postupy: Změna velikosti ovládacích prvků v buňkách listu](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

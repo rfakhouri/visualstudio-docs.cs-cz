@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: ukládání dat pomocí transakce'
+title: 'Postupy: Ukládání dat pomocí transakce'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 28beeec474af9b05153e787c6cbe22034d09b350
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: daf589eeabbdf753512cc31ca00b6a88e001c0db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918743"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Postupy: ukládání dat pomocí transakce
+# <a name="how-to-save-data-by-using-a-transaction"></a>Postupy: Ukládání dat pomocí transakce
 
 Ukládání dat v transakci pomocí <xref:System.Transactions> oboru názvů. Použití <xref:System.Transactions.TransactionScope> objektu k účasti v transakci, která se automaticky spravuje za vás.
 
@@ -55,4 +54,4 @@ Chcete-li vrátit zpět transakci, vyvolat výjimku před voláním <xref:System
 ## <a name="see-also"></a>Viz také:
 
 - [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)
-- [Návod: Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)
+- [Návod: Ukládání dat do transakce](../data-tools/save-data-in-a-transaction.md)

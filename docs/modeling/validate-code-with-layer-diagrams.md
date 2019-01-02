@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907823"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -55,7 +54,7 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrhem, ověřování 
 
 Chcete-li zjistit, jaké edice sady Visual Studio podporují tuto funkci, přečtěte si téma [podpora edice nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Můžete ověřit kód ručně z diagramu otevřete závislostí v sadě Visual Studio nebo z příkazového řádku. Rovněž je možné ověřit kód automaticky při spuštění místních sestavení nebo kanály Azure sestavení. Zobrazit [Video pro kanál 9: návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
+Můžete ověřit kód ručně z diagramu otevřete závislostí v sadě Visual Studio nebo z příkazového řádku. Rovněž je možné ověřit kód automaticky při spuštění místních sestavení nebo kanály Azure sestavení. Zobrazit [Video pro kanál 9: Návrh a ověření architektury pomocí diagramů závislostí](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Pokud chcete spustit ověření vrstvy pomocí Team Foundation Server (TFS), je rovněž nutné nainstalovat stejnou verzi sady Visual Studio na svém serveru sestavení.
@@ -164,7 +163,7 @@ Během procesu vývoje můžete chtít potlačit některé vykázané konflikty 
 
 Tyto úlohy slouží ke správě chyb ověřování v **seznam chyb** okno:
 
-|**k**|**Postupujte podle těchto kroků**|
+|**Komu**|**Postupujte podle těchto kroků**|
 |-|-|
 |Potlačení vybraných chyb během ověřování|Klikněte pravým tlačítkem na jeden nebo více vybraných chyb, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **potlačit chyby**.<br /><br /> Potlačené chyby se zobrazují s přeškrtnutím. Při příštím spuštění ověřování se tyto chyby nezobrazí.<br /><br /> Potlačené chyby jsou sledovány v souboru .suppressions pro odpovídající soubor diagramu závislostí.|
 |Ukončení potlačování vybraných chyb|Klikněte pravým tlačítkem na Potlačené chyby nebo chyby, přejděte na **spravovat chyby ověřování**a potom klikněte na tlačítko **ukončit potlačování chyb**.<br /><br /> Vybrané potlačené chyby se při příštím spuštění ověřování zobrazí.|
@@ -229,11 +228,11 @@ Následující oddíl popisuje syntaxi, která se u těchto chyb používá, vy
 | **Chyba syntaxe** | **Popis chyby** |
 |-|-|
 | DV0001: **Neplatná závislost** | Tento problém je oznamují prvek kódu (obor názvů, typ, členství) mapovat na odkazy vrstvy prvek kódu, který je namapována na jinou vrstvu, ale neexistuje žádná šipky závislostí mezi tyto vrstvy v diagram ověřování závislostí obsahující této vrstvy. To je narušení omezení závislosti. |
-| DV1001: **neplatný název oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou, která vlastnost "názvů Namespace povoleno" neobsahuje obor názvů, ve kterém je definována tento prvek kódu. To je narušení omezení vytváření názvů. Všimněte si, že syntaxe názvů Namespace"povoleno", které má být středníkem seznam oborů názvů v kódu jsou elementy související s vrstvou se smí být definované. |
-| DV1002: **závislost na u oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou a odkazuje na jiný element kód definovaný v oboru názvů, který je definován v "U Namespace" Vlastnosti vrstvy. To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Odkazy názvů" je definován jako středníkem oddělený seznam oborů názvů, které nesmí elementy kódu přidružené k této vrstvě odkazovat. |
-| DV1003: **název oboru názvů Nepovoleno** | Tento problém je uveden na prvek kódu spojené s vrstvou obsahující obor názvů, ve kterém je tento prvek kódu definována vlastnost "názvů Namespace zakázáno". To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Název oboru názvů Nepovoleno" je definován jako středníkem oddělený seznam oborů názvů, ve které kódu nesmí být definována prvky přidružené k této vrstvě. |
-| DV3001: **chybějící spojení** | Vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení? |
-| DV9001: **strukturální analýza nalezla vnitřní chyby** | Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně. |
+| DV1001: **Neplatný název oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou, která vlastnost "názvů Namespace povoleno" neobsahuje obor názvů, ve kterém je definována tento prvek kódu. To je narušení omezení vytváření názvů. Všimněte si, že syntaxe názvů Namespace"povoleno", které má být středníkem seznam oborů názvů v kódu jsou elementy související s vrstvou se smí být definované. |
+| DV1002: **Závislost na u oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou a odkazuje na jiný element kód definovaný v oboru názvů, který je definován v "U Namespace" Vlastnosti vrstvy. To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Odkazy názvů" je definován jako středníkem oddělený seznam oborů názvů, které nesmí elementy kódu přidružené k této vrstvě odkazovat. |
+| DV1003: **Zakázaný název oboru názvů** | Tento problém je uveden na prvek kódu spojené s vrstvou obsahující obor názvů, ve kterém je tento prvek kódu definována vlastnost "názvů Namespace zakázáno". To je narušení omezení vytváření názvů. Všimněte si, že vlastnost "Název oboru názvů Nepovoleno" je definován jako středníkem oddělený seznam oborů názvů, ve které kódu nesmí být definována prvky přidružené k této vrstvě. |
+| DV3001: **Chybějící spojení** | Vrstva "*LayerName*"odkazuje na"*artefaktů*" který nebyl nalezen. Nechybí odkaz na sestavení? |
+| DV9001: **Strukturální analýza nalezla vnitřní chyby** | Výsledky nemusí být úplné. Další informace lze nalézt v podrobném protokolu událostí sestavení nebo ve výstupním okně. |
 
 ## <a name="see-also"></a>Viz také:
 

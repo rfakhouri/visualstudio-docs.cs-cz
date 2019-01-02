@@ -1,6 +1,5 @@
 ---
 title: Previewimage – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 313f97324d3b4eed5a9d0866bef94ee9265701eb
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: b0e2c2f5f4914fafbf37daa5fbc8a9218c8e0482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913394"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Previewimage – element (šablony sady Visual Studio)
 Určuje obrázek, který ve verzi preview, jako název souboru, pro náhled obrázku, který se zobrazí buď **nový projekt** nebo **přidat novou položku** dialogové okno.  

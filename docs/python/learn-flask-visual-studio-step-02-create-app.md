@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Flask v rámci projektů sady Visual Studio, konkrétně postup vytvoření aplikace a používání zobrazení a šablony.
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9803baf3e9e3f3f2c0d4c07c3f5ddfbf7833c7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905991"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Vytvoření aplikace Flask pomocí zobrazení a šablony
 
-**Předchozí krok: [vytvářet řešení a projektu sady Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Předchozí krok: [Vytvoření projektu sady Visual Studio a řešení](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Máte z kroku 1 tohoto kurzu je aplikace Flask pomocí jedné stránce a veškerý kód v jednom souboru. Povolit pro budoucí vývoj, je nejlepší Refaktorovat kód a vytvořit strukturu pro stránku šablony. Zejména budete chtít oddělují kód pro zobrazení aplikace od jiné aspekty spuštění kódu.
 
@@ -103,13 +102,13 @@ Protože jste provedli změny kódu a je otestovali úspěšně, teď je vhodná
 
     ![Vložit potvrzení změn do vzdáleného v Průzkumníku týmových projektů](media/flask/step02-source-control-push-to-remote.png)
 
-### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Otázka: Jak často by měla jedna potvrzení změn do správy zdrojového kódu?
+### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Otázka: Jak často by měla jedna potvrzení do správy zdrojových kódů?
 
-Odpověď: Potvrzení změn do správy zdrojového kódu vytvoří záznam v protokolu změn a bod na které můžete se vrátit úložiště v případě potřeby. Každé potvrzení se dají prozkoumat také jeho konkrétní změny. Vzhledem k tomu potvrzení změn v Gitu cenově dostupné, je lepší časté potvrzení změn, než se shromažďování většího počtu změn do jediného potvrzení změn. Je zřejmé není nutné potvrdit každou malou změnu do jednotlivých souborů. Obvykle provedete potvrzení při přidávání funkcí, změna struktury, jako jste v tomto kroku nebo provést některé refaktoringu kódu. Také zkontrolujte s ostatními ve vašem týmu pro členitost potvrzení změn, která nejlépe vyhovuje všem uživatelům.
+Odpověď: Potvrzují se změny do správy zdrojového kódu vytvoří záznam v protokolu změn a bod na které můžete se vrátit úložiště v případě potřeby. Každé potvrzení se dají prozkoumat také jeho konkrétní změny. Vzhledem k tomu potvrzení změn v Gitu cenově dostupné, je lepší časté potvrzení změn, než se shromažďování většího počtu změn do jediného potvrzení změn. Je zřejmé není nutné potvrdit každou malou změnu do jednotlivých souborů. Obvykle provedete potvrzení při přidávání funkcí, změna struktury, jako jste v tomto kroku nebo provést některé refaktoringu kódu. Také zkontrolujte s ostatními ve vašem týmu pro členitost potvrzení změn, která nejlépe vyhovuje všem uživatelům.
 
 Jak často potvrzení a jak často potvrzení změn vložíte do vzdáleného úložiště jsou dvě různé aspekty. Můžete shromažďovat několik potvrzení změn v místním úložišti před nahráním do vzdáleného úložiště. Jak často potvrzení znovu, závisí na jak váš tým chce, aby se pro správu úložiště.
 
-## <a name="step-2-2-use-a-template-to-render-a-page"></a>Krok 2 – 2: použití šablony k vykreslení stránky
+## <a name="step-2-2-use-a-template-to-render-a-page"></a>Krok 2 – 2: Použití šablony k vykreslení stránky
 
 `home` Funkce, která jste dosud v *views.py* generuje nic jiného než prostého textu odpovědi HTTP pro stránky. Většina skutečných webové stránky, ale odpovědět bohaté stránky HTML, které často zahrnují živá data. Primární z důvodu definování zobrazení pomocí funkce je ve skutečnosti dynamicky generovat obsah.
 
@@ -196,21 +195,21 @@ Protože vrácená hodnota pro zobrazení je právě řetězec, můžete také v
 
 1. Potvrďte změny do správy zdrojového kódu a aktualizovat vaše vzdálené úložiště, v případě potřeby, jak je popsáno v části [krok 2-1](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Otázka: Šablony musí být v samostatném souboru?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Otázka: Mají být v samostatném souboru šablony?
 
-Odpověď: I když šablony jsou obvykle spravované do samostatných souborů HTML, můžete také vložené šablony. Použití samostatného souboru se doporučuje, ale udržovat čisté oddělení mezi značek a kódu.
+Odpověď: Přestože šablony jsou obvykle spravované do samostatných souborů HTML, můžete také použít šablonu vložené. Použití samostatného souboru se doporučuje, ale udržovat čisté oddělení mezi značek a kódu.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Otázka: Musíte šablony používají příponu souboru HTML?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Otázka: Šablony, který je nutné použít příponu souboru HTML?
 
-Odpověď: *.html* rozšíření pro stránkovací soubory šablony je naprosto volitelné, protože vždy identifikovat přesné relativní cesta k souboru v první argument `render_template` funkce. Ale sady Visual Studio (a ostatní editory) obvykle poskytují funkce, jako je dokončení a syntaxe zabarvení kódu s *.html* soubory, které převažuje skutečnost, že stránka šablony nejsou nezbytně HTML.
+Odpověď: *.Html* rozšíření pro stránkovací soubory šablony je naprosto volitelné, protože vždy identifikovat přesné relativní cesta k souboru v první argument `render_template` funkce. Ale sady Visual Studio (a ostatní editory) obvykle poskytují funkce, jako je dokončení a syntaxe zabarvení kódu s *.html* soubory, které převažuje skutečnost, že stránka šablony nejsou nezbytně HTML.
 
 Ve skutečnosti když pracujete s projektem Flask, Visual Studio automaticky rozpozná, pokud soubor HTML, který upravujete je ve skutečnosti šablon Flask a poskytuje některé funkce automatického dokončování. Například když začnete psát Flask stránku šablony komentář, `{#`, Visual Studio automaticky poskytuje uzavírací `#}` znaků. **Zakomentovat výběr** a **Odkomentovat výběr** příkazy (na **upravit** > **Upřesnit** nabídky a na panelu nástrojů) komentáře k šabloně používají taky místo komentáře HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Otázka: Při spuštění projektu zobrazí chybu, která šablona se nenašel. Co je?
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Otázka: Při spuštění projektu se zobrazit chyba, která šablona se nenašel. Co je?
 
 Odpověď: Pokud se zobrazí chyby, které nejde najít šablonu, ujistěte se, že přidání aplikace do projektu Flask *settings.py* v `INSTALLED_APPS` seznamu. Bez této položky nebude vědět o Flask podívejte se aplikace *šablony* složky.
 
-### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Otázka: Je šablony možné uspořádat do podsložky další?
+### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Otázka: Je možné uspořádat šablony do podsložky další?
 
 Odpověď: Ano, můžete použít podsložky a potom použijte relativní cesta pod *šablony* ve voláních `render_template`. To je skvělý způsob, jak efektivně vytvořit obory názvů pro šablony.
 

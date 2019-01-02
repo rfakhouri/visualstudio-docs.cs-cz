@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: určení umístění souboru se symboly z příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zadejte umístění souborů se symboly z příkazového řádku | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498720ff5b76ce2c3229c9c7a493023318213ae4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0791019ce71a7d0fe6276ef9345284662ca31e00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917144"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: určení umístění souboru se symboly z příkazového řádku
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Určení umístění souboru se symboly z příkazového řádku
 Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla řádků, příkazového řádku nástroje VSPerfReport vyžaduje přístup k symbolu (. *soubor PDB*) soubory profilovaných komponent a souborů systému Windows. Soubory symbolů se vytvoří při kompilaci komponentu. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automaticky vyhledá soubory symbolů v následujících umístěních:  
   
 - Cesty zadané **/symbolpath** možnost nebo v **_NT_SYMBOL_PATH** proměnné prostředí.  
@@ -37,7 +35,7 @@ Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla ř�
   Můžete také použít obě tyto metody.  
   
 > [!NOTE]
->  Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [jak: informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md). Stále je nutné nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.  
+>  Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována na místním počítači, do umístění pro soubory symbolů Windows pravděpodobně nebyl zadán již. Další informace najdete v tématu [jak: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md). Stále je nutné nakonfigurovat nastavení nástroje VSPerfReport pro umístění a serveru, jak je popsáno dále v tomto tématu.  
   
 ## <a name="specify-windows-symbol-files"></a>Zadejte soubory symbolů Windows  
   

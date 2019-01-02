@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918885"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Průvodce: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru
   Tento návod ukazuje, jak volat z rozšíření pro objektového modelu klienta SharePoint **připojení služby SharePoint** uzel v **Průzkumníka serveru**. Další informace o tom, jak pomocí objektového modelu klienta SharePoint, naleznete v tématu [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
  Tento návod demonstruje následující úkoly:  
@@ -39,7 +36,7 @@ ms.locfileid: "51296031"
 -   Ladění a testování rozšíření.  
   
 > [!NOTE]  
->  Rozšíření, které vytvoříte v tomto názorném postupu se podobá rozšíření, které vytvoříte v [návod: rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tento návod používá objektového modelu serveru SharePoint, ale tento návod provede stejné úlohy pomocí objektového modelu klienta.  
+>  Rozšíření, které vytvoříte v tomto názorném postupu se podobá rozšíření, které vytvoříte v [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tento návod používá objektového modelu serveru SharePoint, ale tento návod provede stejné úlohy pomocí objektového modelu klienta.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
@@ -181,7 +178,7 @@ Znalost následujících konceptů je užitečná, ale není požadována k doko
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  V tomto okamžiku návodu, veškerý kód pro **Galerie webových částí** uzlu je nyní v projektu. Sestavení **WebPartNodeExtension** projektu se ujistěte, že se zkompiluje bez chyb.  
   
 #### <a name="to-build-the-project"></a>K sestavení projektu  

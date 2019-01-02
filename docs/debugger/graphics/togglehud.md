@@ -1,8 +1,6 @@
 ---
-title: ToggleHUD | Microsoft Docs
-ms.custom: ''
+title: ToggleHUD | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 author: mikejo5000
@@ -10,15 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ce582ab49d4d079f01f7231f49aa761baa1069
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a4ee371f90636d98d5dd771cc508e58cd1d1a394
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907972"
 ---
 # <a name="togglehud"></a>ToggleHUD
-Přepíná diagnostiky grafiky *HUD* (zobrazení Head-Up) překrytí zapnout nebo vypnout.  
+Přepíná diagnostiky grafiky *HUD* překrytí (zobrazit vedoucí nahoru), nebo vypnout.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -27,6 +25,6 @@ void ToggleHUD();
 ```  
   
 ## <a name="remarks"></a>Poznámky  
- HUD diagnostiky grafiky se zobrazí v levém horním rohu aplikace, která je spuštěná s pověřeními diagnostiky grafiky. Zobrazuje běhu informace o aplikaci a o grafiky informace o zachycení a zprávy, které jsou přidány voláním [AddMessage](addmessage.md) – členská funkce.  
+ HUD Diagnostika grafiky se zobrazí v levém horním rohu aplikace, na kterém běží v rámci diagnostiky grafiky. Zobrazí běhových informací o aplikaci a o zachycení informací grafiky a zprávy, které jsou přidány pomocí volání [AddMessage](addmessage.md) členskou funkci.  
   
- K přepnutí HUD, nemusíte být aktivně zaznamenání grafických informací – to znamená, můžou být změněny prostřednictvím instance `VsgDbg` třídy, ale [Init](init.md) – členská funkce nemá být volána nejprve.
+ Chcete-li přepnout HUD, nemusíte být aktivně zachycení informací grafiky – to znamená, ho můžou být prostřednictvím instance `VsgDbg` třídy, ale [Init](init.md) nemusí být nejprve volat členské funkce.

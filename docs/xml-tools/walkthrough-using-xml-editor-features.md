@@ -1,8 +1,7 @@
 ---
-title: 'Návod: Používání funkcí editoru XML'
+title: 'Průvodce: Používání funkcí editoru XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: gewarren
@@ -10,51 +9,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afda2968ece2a18b7abdc2c4c35e4353206cbe42
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 524b96fea7fedba248c04f384445ee3a03a3595b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902003"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Návod: Použití funkcí editor XML
+# <a name="walkthrough-use-xml-editor-features"></a>Průvodce: Použití funkce editoru XML
 
-Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé z funkcí editoru XML, které umožňují cenné XML pro vytváření obsahu.
+Kroky v tomto názorném postupu ukazují, jak vytvořit nový dokument XML. Průvodce také používá některé funkce v editoru XML, které jí umožňují velmi cennou pomůckou pro vytváření XML.
 
 > [!NOTE]
-> Před spuštěním průvodce, uložte *hireDate.xsd* souboru (uvedené níže v tomto tématu) do místního počítače.
+> Před zahájením návodu, uložte *hireDate.xsd* souboru (uvedené níže v tomto tématu) do místního počítače.
 
-## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>K vytvoření nového souboru XML a přidružte ji k schématu XML
+## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Vytvořte nový soubor XML a přidružte jej k schématu XML
 
-1.  Na **soubor** nabídky, přejděte na příkaz **nový**a klikněte na tlačítko **soubor**.
+1.  Na **souboru** nabídky, přejděte k **nový**a klikněte na tlačítko **souboru**.
 
-2.  Vyberte **souboru XML** v **šablony** panelu a klikněte na tlačítko **otevřete**.
+2.  Vyberte **soubor XML** v **šablony** podokně a klepněte na **otevřít**.
 
-     Nový soubor se otevře v editoru. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8">`.
+     Nový soubor je otevřen v editoru. Tento soubor obsahuje deklaraci XML výchozí `<?xml version="1.0" encoding="utf-8">`.
 
-3.  V okně vlastností dokumentu klikněte na tlačítko Procházet (**...** ) na **schémata** pole.
+3.  V okně Vlastnosti dokumentu, klikněte na tlačítko Procházet (**...** ) na **schémata** pole.
 
-     **XSD schémata** se zobrazí dialogové okno.
+     **Schémata XSD** se zobrazí dialogové okno.
 
-4.  Klikněte na tlačítko **přidat**.
+4.  Klikněte na **Přidat**.
 
-     **Otevřete schématu XSD** se zobrazí dialogové okno.
+     **Otevřít schéma XSD** se zobrazí dialogové okno.
 
-5.  Vyberte *hireDate.xsd* souboru a klikněte na tlačítko **otevřete**.
+5.  Vyberte *hireDate.xsd* souboru a klikněte na tlačítko **otevřít**.
 
-6.  Click **OK**.
+6.  Klikněte na **OK**.
 
-     Schéma XML je nyní přidružené k dokumentu XML. Schéma XML slouží k ověření dokumentu. Také se používá technologii IntelliSense k naplnění seznamu členů platný elementů.
+     Schéma XML je teď přidružený k dokumentu XML. Schématu XML se používá k ověření dokumentu. Také se používá technologii IntelliSense k naplnění seznamu členů platné prvky.
 
 ## <a name="to-add-data"></a>Chcete-li přidat data
 
-1.  Typ `<` v podokně editor.
+1.  Typ `<` podokna editoru.
 
-     Zobrazí se seznam členů možné položky:
+     Seznam členů obsahuje položky, je to možné:
 
-    -   **!--** přidání komentáře.
+    -   **! –** a přidejte komentář.
 
-    -   **! DOCTYPE** přidejte typ dokumentu.
+    -   **! Typ dokumentu** přidat typ dokumentu.
 
     -   **?** Chcete-li přidat instrukce pro zpracování.
 
@@ -62,56 +61,56 @@ Kroky v tomto návodu ukazují, jak vytvořit nový dokument XML. Průvodce tak�
 
 2.  Vyberte **<!--** přidat uzel komentáře a stiskněte klávesu **Enter**.
 
-     Editor vloží koncová značka komentáře a umístí kurzoru mezi počáteční a koncové značky pro komentáře.
+     Editor vloží koncová značka komentáře a umístí kurzor mezi počáteční a koncové značky pro komentáře.
 
-3.  Zadejte **souboru XML testovací**.
+3.  Zadejte **soubor Test XML**.
 
-4.  Na nový řádek, zadejte `<`a vyberte **zaměstnanec** ze seznamu členů.
+4.  Na nový řádek, zadejte `<`a vyberte **zaměstnance** ze seznamu členů.
 
-     Editor přidá začátku elementu XML, `<employee`. V tomto okamžiku můžete přidat atributy do elementu nebo můžete zavřít počáteční značce zadáním `>`.
+     Editor přidá na začátek elementu XML `<employee`. V tomto okamžiku můžete přidat atributy pro element nebo můžete zavřít počáteční značce zadáním `>`.
 
 5.  Typ `>` zavřete značky.
 
-6.  Editor přidá koncová značka. Koncová značka se přidá s vlnovkou indikující chybu ověření. **Popisek** zobrazí zprávu: **má element "zaměstnanec" nekompletní obsah. Očekávaný 'ID'**.
+6.  Editor přidá koncová značka. Koncová značka se přidá s podtržení vlnovkou udávající chybu ověřování. **Popisek** zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván 'ID'**.
 
-7.  Typ `<` a vyberte **ID** ze seznamu členů. Pak zadejte `>`.
+7.  Typ `<` a vyberte **ID** ze seznamu členů. Zadejte `>`.
 
      Přidá XML element editor `<ID></ID>`a umístí kurzor po ID počáteční značka.
 
 8.  Typ **abc**.
 
-     **Abc** text má vlnovkou. **Popisek** zobrazí zprávu: **element "ID" má neplatnou hodnotu podle jeho datového typu**.
+     **Abc** text obsahuje podtržení vlnovkou. **Popisek** zobrazí zprávu: **Element 'ID' má neplatnou hodnotu vzhledem k jeho datovému typu**.
 
 9. Klikněte pravým tlačítkem na ID elementu a vyberte **přejít k definici**.
 
-     Otevře se editor *hireDate.xsd* soubor v novém okně dokumentu a umístí kurzor na definici ID schématu elementu.
+     Otevře se editor *hireDate.xsd* souboru v novém okně dokumentu a umístí kurzor na definici schématu element ID.
 
-10. Vraťte se do souboru XML a nahraďte **abc** textu s **123**.
+10. Vraťte se do souboru XML a nahraďte **abc** text s **123**.
 
-     Podtržení vlnovkou a **popisek** vyjmuty pod hodnota ID elementu. **Popisek** pro zaměstnance koncové značky nyní zobrazí zprávu: **má element "zaměstnanec" nekompletní obsah. Očekávání, datum přijetí'**.
+     Podtržení vlnovkou a **popisek** jsou vymazány pod hodnotou element ID. **Popisek** pro zaměstnance koncové značky nyní zobrazí zprávu: **Element 'zaměstnance' má neúplný obsah. Byl očekáván "datum přijetí"**.
 
-11. Umístěte kurzor za koncovou značku ID, zadejte v `<`, vyberte **datum přijetí** ze seznamu členů a poté zadejte `>`.
+11. Umístěte kurzor po ID koncovou značku, zadejte v `<`vyberte **datum přijetí** seznam členů a pak zadejte `>`.
 
      Přidá XML element editor `<hire-date></hire-date>`a umístí kurzor po datum přijetí počáteční značka.
 
 12. Zadejte **2003-01-10** pro hodnotu Datum přijetí.
 
-## <a name="to-format-the-xml-document"></a>K formátování v dokumentu XML
+## <a name="to-format-the-xml-document"></a>Formát dokumentu XML
 
-- Vyberte **formátovat dokument** tlačítka panelu nástrojů editoru XML.
+- Vyberte **formátovat dokument** tlačítko na panelu nástrojů editoru XML.
 
-    V dokumentu XML je naformátována.
+    Dokument XML je přeformátovali.
 
 ## <a name="to-save-the-xml-document"></a>Uložení dokumentu XML
 
-1.  Z **soubor** nabídce vyberte možnost **uložit jako**.
+1.  Z **souboru** nabídce vyberte možnost **uložit jako**.
 
-     **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je *'XMLFile1'*.
+     **Uložit soubor jako** se zobrazí dialogové okno. Výchozí název souboru je *"XMLFile1"*.
 
-2.  Zadejte název souboru a umístění v dokumentu XML a klikněte na tlačítko **Uložit**.
+2.  Zadejte název souboru a umístění dokumentu XML a klikněte na tlačítko **Uložit**.
 
 ## <a name="hiredatexsd-file"></a>soubor hireDate.xsd
- Následující schéma soubor je používán návodu.
+ Následující soubor schématu je používán návodu.
 
 ```xml
 <?xml version="1.0"?>

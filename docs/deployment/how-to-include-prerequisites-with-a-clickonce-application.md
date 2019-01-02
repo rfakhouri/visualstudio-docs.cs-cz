@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: zahrnutí předpokladů s aplikací ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zahrnutí předpokladů s aplikací ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d28da26cd01b804f8527e42c9ed3aa7977ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a357b15485115a5acbd7750f022366420903857d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943457"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: zahrnutí předpokladů s aplikací ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí předpokladů s aplikací ClickOnce
 Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, musíte nejdřív stáhnout instalační balíčky pro tyto požadavky na vývojovém počítači. Když publikujete aplikaci a zvolte **stáhnout součásti ze stejného umístění, jako je má aplikace**, dojde k chybě, pokud instalační balíčky nejsou uloženy v **balíčky** složky.  
   
 > [!NOTE]
@@ -52,4 +50,4 @@ Před distribucí požadovaného softwaru se [!INCLUDE[ndptecclick](../deploymen
     Nyní můžete instalační balíček distribuovat spolu s aplikací.  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: instalace požadavky s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Postupy: Nainstalujte požadavky s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

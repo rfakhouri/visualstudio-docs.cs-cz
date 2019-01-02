@@ -1,9 +1,6 @@
 ---
 title: Ovládací prvky Windows Forms na dokumenty Office – přehled
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902490"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Ovládací prvky Windows Forms na dokumenty Office – přehled
   Ovládací prvky Windows Forms jsou objekty, které mohou uživatelé komunikovat s a zadejte skript nebo manipulaci s daty. V projektech na úrovni dokumentu pro aplikaci Microsoft Office Excel a Microsoft Office Word můžete přidat ovládací prvky Windows Forms k dokumentu nebo sešitu ve vašem projektu v době návrhu nebo prostřednictvím kódu programu přidáte těchto ovládacích prvků za běhu. Tyto ovládací prvky můžete programově přidat otevřeného dokumentu nebo listu za běhu v doplňku VSTO pro Excel nebo Word.  
   
- Další informace najdete v tématu [postupy: Přidání formuláře Windows ovládacích prvků do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Další informace najdete v tématu [jak: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892776"
  Za určitých podmínek zatížení kód a zobrazí pouze rastrový obrázek, například když uživatel otevře sešit v režimu návrhu. Také pokud uživatel otevře sešit v počítači, který nemá [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nainstalovaná, nelze spustit přizpůsobení načíst ovládací prvky a proto je viditelná pouze rastrový obrázek ovládacího prvku. Vždy byste měli odebrat osobní údaje z ovládacích prvků v sešitech před uložením sešitu a odesílá je do jiného uživatele k zajištění, že se omylem zveřejněn vaše osobní údaje.  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>Velikost ovládacího prvku na velikost buňky v listu aplikace Excel  
- Můžete nastavit ovládací prvek změnit velikost automaticky při změně velikosti nadřazené buňky. Další informace najdete v tématu [postupy: Změna velikosti ovládacích prvků v buňkách listu](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
+ Můžete nastavit ovládací prvek změnit velikost automaticky při změně velikosti nadřazené buňky. Další informace najdete v tématu [jak: Změna velikosti ovládacích prvků v buňkách listu](../vsto/how-to-resize-controls-within-worksheet-cells.md).  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>Přidat součásti, které jsou sdíleny ve všech listů  
  Můžete přidat komponenty, které chcete sdílet mezi všechny listy, například <xref:System.Data.DataSet>, do návrháře sešitu místo do listů. Součást se zobrazí v panelu komponent.  
@@ -157,7 +154,7 @@ ms.locfileid: "49892776"
  [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Postupy: Změna velikosti ovládacích prvků v buňkách listu](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [Postupy: skrytí ovládacích prvků na listech při tisku](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Postupy: Skrytí ovládacích prvků na listech při tisku](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Návod: Změna formátování listů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
  [Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
  [Návod: Zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
@@ -165,5 +162,3 @@ ms.locfileid: "49892776"
  [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
  [Návod: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
  [Návod: Aktualizace grafu na listu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  

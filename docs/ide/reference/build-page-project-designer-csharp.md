@@ -2,7 +2,6 @@
 title: Stránka Sestavení, návrhář projektu (C#)
 ms.date: 06/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908014"
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránku **Návrháře projektu** k určení vlastností konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze pro projekty.
@@ -33,11 +32,11 @@ Pro přístup k **sestavení** zvolte uzel projektu (ne **řešení** uzlu) v **
 Tyto možnosti umožňují vybrat konfigurace a platformy k zobrazení a úpravě.
 
 > [!NOTE]
-> Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto nejsou tyto možnosti zobrazeny. Další informace najdete v tématu [postupy: nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
+> Pomocí zjednodušených konfigurací sestavení systém projektu určuje, jestli se má sestavení ladění nebo vydání verze. Proto nejsou tyto možnosti zobrazeny. Další informace najdete v tématu [jak: Nastavení ladění a vydání konfigurace](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfigurace** určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí), **ladění**, **vydání**, nebo **všechny konfigurace**.
 
-**Platforma** určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)**. Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
+**Platforma** určuje které nastavení platformy má být zobrazeno nebo upraveno. Ve výchozím nastavení **aktivní (jakýkoli procesor)**. Můžete změnit aktivní platformu pomocí **nástroje Configuration Manager**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Obecné
 Tyto možnosti umožňují konfigurovat několik nastavení kompilátoru jazyka C#.

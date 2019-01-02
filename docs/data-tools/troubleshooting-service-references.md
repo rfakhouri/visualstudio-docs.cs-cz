@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919466"
 ---
 # <a name="troubleshoot-service-references"></a>Řešení potíží s odkazy na služby
 
@@ -49,7 +48,7 @@ Chcete-li vyřešit tuto chybu:
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Chyba při přístupu ke službě přes vzdálenou plochu
 
-Když uživatel pracuje s WCF hostované webové služby přes připojení ke vzdálené ploše a uživatel nemá oprávnění správce, bude použito ověřování NTLM. Pokud uživatel nemá oprávnění správce, uživatel může zobrazit následující chybová zpráva: "požadavek HTTP Neoprávněný se schématem autorizace klienta"Anonymní". Záhlaví ověření přijaté ze serveru byla: NTLM"."
+Když uživatel pracuje s WCF hostované webové služby přes připojení ke vzdálené ploše a uživatel nemá oprávnění správce, bude použito ověřování NTLM. Pokud uživatel nemá oprávnění správce, uživatel může zobrazit následující chybová zpráva: "Požadavek HTTP Neoprávněný se schématem autorizace klienta"Anonymní". Záhlaví ověření přijaté ze serveru byla: NTLM"."
 
 Chcete-li vyřešit tuto chybu:
 
@@ -84,7 +83,7 @@ Chcete-li tuto chybu vyřešit, budete muset ručně znovu sestavit projekt slu�
 
 4.  Načtěte projekt služby WCF.
 
-5.  V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
+5.  V **nástroje Configuration Manager** dialogové okno, nastavte **konfigurace aktivního řešení** k **ladění**. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md).
 
 6.  V **Průzkumníka řešení**, vyberte projekt služby WCF.
 

@@ -2,7 +2,6 @@
 title: -Deploy (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /deploy switch
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920641"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Nasadí řešení po sestavení nebo opětovné sestavení. Platí pro pouze projekty spravovaného kódu.
@@ -34,11 +33,11 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ## <a name="arguments"></a>Arguments
  `SolnConfigName`
 
- Požadováno. Název konfigurace řešení, která se použije k vytvoření řešení s názvem v `SolutionName`.
+ Povinný parametr. Název konfigurace řešení, která se použije k vytvoření řešení s názvem v `SolutionName`.
 
  `SolutionName`
 
- Požadováno. Úplná cesta a název souboru řešení.
+ Povinný parametr. Úplná cesta a název souboru řešení.
 
  / Project `ProjName`
 

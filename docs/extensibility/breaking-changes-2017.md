@@ -1,9 +1,6 @@
 ---
 title: Rozbíjející změny v rozšíření sady Visual Studio 2017 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841947"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Změny v rozšíření sady Visual Studio 2017
 
@@ -43,9 +40,9 @@ Změny formátu VSIX patří:
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Vytváření rozšíření pro Visual Studio 2017
 
-Návrhářské nástroje pro vytváření nového formát manifestu VSIX v3 je teď dostupná v sadě Visual Studio 2017. Zobrazit související dokument [postupy: migrace projektů rozšíření do sady Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) podrobnosti o použití návrhářské nástroje nebo provádění ruční aktualizací do projektu a manifest pro vývoj rozšíření VSIX v3.
+Návrhářské nástroje pro vytváření nového formát manifestu VSIX v3 je teď dostupná v sadě Visual Studio 2017. Zobrazit související dokument [jak: Migrace projektů rozšíření do sady Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) podrobnosti o použití návrhářské nástroje nebo provádění ruční aktualizací do projektu a manifest pro vývoj rozšíření VSIX v3.
 
-## <a name="change-visual-studio-user-data-path"></a>Změna: Cesta k datům uživatele sady Visual Studio
+## <a name="change-visual-studio-user-data-path"></a>Změna: Visual Studio cesta k datům uživatele
 
 Dříve může existovat pouze jedna instalace každá hlavní verze produktu Visual Studio na každém počítači. Pro podporu-souběžnými instalacemi sady Visual Studio 2017, může existovat více cesty k datům uživatelů pro sadu Visual Studio na počítači uživatele.
 
@@ -84,7 +81,7 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 * Pokud vaše rozšíření běží mimo proces sady Visual Studio:
   * Vezměte v úvahu hledáte Visual Studio core sestavení v rámci <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> nebo *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*použitím překladač konfigurační soubor nebo sestavení.
 
-## <a name="change-reduce-registry-impact"></a>Změn: Registru dopad
+## <a name="change-reduce-registry-impact"></a>Změna: Dopad registru
 
 ### <a name="global-com-registration"></a>Globální registrace modelu COM
 
@@ -95,9 +92,9 @@ Většina základních sestavení sady Visual Studio jsou již nainstalovány do
 ### <a name="visual-studio-registry"></a>Visual Studio registru
 
 * Dříve nainstalované sady Visual Studio mnoho klíče registru do systému **HKEY_LOCAL_MACHINE** a **HKEY_CURRENT_USER** podregistry v rámci Visual Studio konkrétní klíče:
-  * **HKLM\Software\Microsoft\VisualStudio\{verze}**: klíče registru vytvořené pomocí Instalační služby MSI a rozšíření vázaná na počítač.
-  * **HKCU\Software\Microsoft\VisualStudio\{verze}**: vytvořených pomocí Visual Studia ukládat uživatelská nastavení klíče registru.
-  * **HKCU\Software\Microsoft\VisualStudio\{verze} _Config**: kopii výše uvedené klíče Visual Studio HKLM a klíče registru sloučením *.pkgdef* souborů podle přípony.
+  * **HKLM\Software\Microsoft\VisualStudio\{verze}**: Klíče registru vytvořené pomocí Instalační služby MSI a rozšíření vázaná na počítač.
+  * **HKCU\Software\Microsoft\VisualStudio\{verze}**: Klíče registru vytvořené pomocí sady Visual Studio k ukládání nastavení specifických pro uživatele.
+  * **HKCU\Software\Microsoft\VisualStudio\{verze} _Config**: Kopii aplikace Visual Studio HKLM klávesy výše a klíče registru sloučením *.pkgdef* souborů podle přípony.
 * Pokud chcete snížit dopad na registru, Visual Studio nyní používá [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) funkce pro ukládání klíčů registru v privátní binárního souboru v rámci *[VSAPPDATA]\privateregistry.bin*. Velmi malý počet Visual Studio zkratky specifické pro zůstat v systémovém registru.
 
 * Stávající kód spuštěný v procesu sady Visual Studio to neovlivní. Visual Studio přesměruje do privátního registru, všechny operace registru pod klíčem konkrétní HKCU Visual Studio. Čtení a zápis do jiných umístění registru bude nadále používat systémového registru.

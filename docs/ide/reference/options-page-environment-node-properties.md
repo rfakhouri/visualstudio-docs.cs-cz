@@ -2,7 +2,6 @@
 title: Stránka Možnosti, vlastnosti uzlu prostředí
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e22b24889a14d49afddd3c30858814ddec663e6a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914965"
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidruženy **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, nástroje **možnosti** dialogové okno. Název každého pododdílu je volání, které slouží k přístupu k vlastnosti kolekce a v tabulce v každém pododdílu jsou uvedeny vlastnosti v kolekci.
@@ -134,7 +133,7 @@ Tento dokument popisuje stránky (nebo kolekce vlastností), které jsou přidru
 
 |Název položky vlastnosti|Hodnota|Popis|
 | - |-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>, s hodnotami 0 až 5:<br /><br /> -0: Otevřete domovskou stránku<br />-1: načtení posledního načtení řešení<br />-2: Zobrazit **otevřít projekt** dialogové okno<br />-3: zobrazení **nový projekt** dialogové okno<br />-4: Zobrazit prázdné prostředí<br />-5: zobrazit úvodní stránku|
+|OnStartUp|Get/Set (Enum)|Akce se má provést při spuštění z <xref:EnvDTE.vsStartUp>, s hodnotami 0 až 5:<br /><br /> -0: Otevřít domovskou stránku<br />-1: Načíst poslední načtené řešení<br />-2: Zobrazit **otevřít projekt** dialogové okno<br />-3: Zobrazit **nový projekt** dialogové okno<br />-4: Zobrazit prázdné prostředí<br />-5: Zobrazit úvodní stránku|
 |StartPageRSSUrl|Získá nebo nastaví (String)|Adresa URL pro informační kanál RSS informačního kanálu, který se používá při spuštění.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Úvodní stránka se aktualizuje po každé průchodu intervalu zadaném ve StartPageRefreshInterval.|
 |StartPageRefreshInterval|Získá nebo nastaví (krátký)|Interval v minutách, chcete-li aktualizovat úvodní stránku.|

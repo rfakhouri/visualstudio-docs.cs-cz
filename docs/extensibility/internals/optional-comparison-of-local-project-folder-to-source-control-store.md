@@ -1,9 +1,6 @@
 ---
-title: Porovnání projektu složku pro zdrojové ovládací prvek úložiště | Microsoft Docs
-ms.custom: ''
+title: Porovnat složky projektu do zdrojového ovládacího prvku Store | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0f6f2185385ee7ec3942556a43f58d43e7a4da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39e4cea70f407ab4fd9358d35488103aecb2b58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903653"
 ---
-# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Volitelné porovnání projektu místní složku pro zdrojové úložiště ovládací prvek
-Ve zdroji řízení 1.2 rozhraní API modulu Plugin porovnání mezi složky místní projektu a Správa zdrojového kódu se dá udělat pomocí funkce [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) a [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
+# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Volitelné porovnání místní složky projektu a úložiště správy zdrojového kódu
+Ve zdroji řízení porovnání mezi místní složce projektu a Správa zdrojového kódu se dá udělat pomocí funkce modulu Plug-in rozhraní API 1.2 [sccdirqueryinfo –](../../extensibility/sccdirqueryinfo-function.md) a [sccdirdiff –](../../extensibility/sccdirdiff-function.md).  
   
- V rámci **Průzkumníku řešení**, pokud je vybrána složka místo jednotlivých souborů, **porovnat verze** místní nabídky vyvolá nové [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) a [ SccDirDiff](../../extensibility/sccdirdiff-function.md) v modulu plug-in zdrojového kódu.  
+ V rámci **Průzkumníka řešení**, pokud je vybrána složka namísto jednotlivých souborů **porovnání verzí** vyvolá novou nabídku [sccdirqueryinfo –](../../extensibility/sccdirqueryinfo-function.md) a [ Sccdirdiff –](../../extensibility/sccdirdiff-function.md) v modulu plug-in správy zdrojového kódu.  
   
-## <a name="new-capability-flags"></a>Nové funkce příznaky  
+## <a name="new-capability-flags"></a>Nové příznaky funkcí  
  `SCC_CAP_DIRECTORYDIFF`  
   
  `SCC_CAP_DIRECTORYCHECKOUT`  
@@ -36,10 +33,10 @@ Ve zdroji řízení 1.2 rozhraní API modulu Plugin porovnání mezi složky mí
   
  [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)  
   
- `SccDirQueryInfo` Funkce je volána před provedením `SccDirDiff` lze zjistit pracovní adresář je řízený zdroje. `SccDirDiff` Funkce zobrazí rozdíly mezi aktuálním místním adresáři a odpovídající zdrojové složky ovládacího prvku. Tento příkaz zobrazí dotaz, modul plug-in zobrazíte seznam změn do adresáře zdrojového kódu. Správa zdrojového kódu modulu plug-in poskytuje vlastní uživatelské rozhraní k zobrazení rozdíly.  
+ `SccDirQueryInfo` Funkce je volána před provedením `SccDirDiff` k určení, zda je v pracovním adresáři spravovanými zdroji. `SccDirDiff` Funkce zobrazí rozdíly mezi aktuálním místním adresáři a odpovídající složky správy zdrojového kódu. Tento příkaz zobrazí dotaz, chcete-li zobrazit seznam změn do adresáře, modul plug-in správy zdrojového kódu. Modul plug-in správy zdrojového kódu obsahuje vlastní uživatelské rozhraní pro zobrazení rozdílů.  
   
 > [!NOTE]
->  Tato funkce používá stejné příznaky příkazu jako [SccDiff](../../extensibility/sccdiff-function.md). Jako modul plugin poskytovatele správy zdrojového kódu můžete se rozhodnout nebude podporovat operace "rychlý rozdílové" pro adresáře.  
+>  Tato funkce využívá stejné příznaků příkazů jako [sccdiff –](../../extensibility/sccdiff-function.md). Jako poskytovatele správy zdrojového kódu modulu plug-in můžete operace "rychlé diff" pro adresáře není podporována.  
   
 ## <a name="see-also"></a>Viz také  
  [Co je nového v rozhraní API modulu plug-in správy zdrojového kódu ve verzi 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

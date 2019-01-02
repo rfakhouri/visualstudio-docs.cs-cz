@@ -1,9 +1,6 @@
 ---
 title: Položky registru pro doplňky VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909109"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Položky registru pro doplňky VSTO
   Při nasazení doplňků VSTO, které jsou vytvořené pomocí sady Visual Studio, musíte vytvořit konkrétní sady položek registru. Tyto položky registru poskytují informace, které umožní aplikaci Microsoft Office zjišťovat a načíst doplňku VSTO.  
@@ -76,10 +73,10 @@ ms.locfileid: "49881778"
   
 |Položka|Typ|Hodnota|  
 |-----------|----------|-----------|  
-|**Popis**|REG_SZ|Požadováno. Stručný popis doplňku VSTO.<br /><br /> Tento popis se zobrazí, když uživatel vybere doplňku VSTO v **Add-Ins** podokně **možnosti** dialogové okno v aplikaci Microsoft Office.|  
-|**FriendlyName**|REG_SZ|Požadováno. Popisný název VSTO doplněk, který se zobrazí v **doplňky modelu COM** dialogové okno v aplikaci Microsoft Office. Výchozí hodnota je ID doplňku VSTO|  
-|**LoadBehavior**|REG_DWORD|Požadováno. Hodnota, která určuje, kdy se aplikace pokusí načíst doplňku VSTO a aktuální stav doplňku VSTO (načteny nebo uvolněny).<br /><br /> Tato položka je standardně nastavenou hodnotu 3, která určuje, že doplňku VSTO je načten při spuštění. Další informace najdete v tématu [hodnotách LoadBehavior](#LoadBehavior). **Poznámka:** Pokud uživatel zakáže doplňku VSTO, tato akce změní **LoadBehavior** hodnotu **HKEY_CURRENT_USER** podregistr registru. Pro každého uživatele, hodnota **LoadBehavior** přepíše výchozí hodnoty v podregistru HKEY_CURRENT_USER **LoadBehavior** definované v **HKEY_LOCAL_MACHINE** hive.|  
-|**Manifest**|REG_SZ|Požadováno. Úplná cesta manifest nasazení pro doplňku VSTO. Cesta může být umístění na místním počítači sdílen v síti (UNC) nebo webového serveru (HTTP).<br /><br /> Pokud nasazení řešení pomocí Instalační služby systému Windows, je nutné přidat předponu **file:///** k **manifestu** cestu. Musíte také připojte řetězec  **&#124;vstolocal** (to znamená, znakem svislé čáry **&#124;** následovaný **vstolocal**) na konec této cesty. Tím se zajistí, že vaše řešení se načte z instalační složky, nikoli z mezipaměti ClickOnce. Další informace najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Poznámka:** při vytvoření doplňku VSTO ve vývojovém počítači Visual Studio automaticky přidá  **&#124;vstolocal** řetězec, který má tato položka registru.|  
+|**Popis**|REG_SZ|Povinný parametr. Stručný popis doplňku VSTO.<br /><br /> Tento popis se zobrazí, když uživatel vybere doplňku VSTO v **Add-Ins** podokně **možnosti** dialogové okno v aplikaci Microsoft Office.|  
+|**FriendlyName**|REG_SZ|Povinný parametr. Popisný název VSTO doplněk, který se zobrazí v **doplňky modelu COM** dialogové okno v aplikaci Microsoft Office. Výchozí hodnota je ID doplňku VSTO|  
+|**LoadBehavior**|REG_DWORD|Povinný parametr. Hodnota, která určuje, kdy se aplikace pokusí načíst doplňku VSTO a aktuální stav doplňku VSTO (načteny nebo uvolněny).<br /><br /> Tato položka je standardně nastavenou hodnotu 3, která určuje, že doplňku VSTO je načten při spuštění. Další informace najdete v tématu [hodnotách LoadBehavior](#LoadBehavior). **Poznámka:**  Pokud uživatel zakáže doplňku VSTO, tato akce změní **LoadBehavior** hodnotu **HKEY_CURRENT_USER** podregistr registru. Pro každého uživatele, hodnota **LoadBehavior** přepíše výchozí hodnoty v podregistru HKEY_CURRENT_USER **LoadBehavior** definované v **HKEY_LOCAL_MACHINE** hive.|  
+|**Manifest**|REG_SZ|Povinný parametr. Úplná cesta manifest nasazení pro doplňku VSTO. Cesta může být umístění na místním počítači sdílen v síti (UNC) nebo webového serveru (HTTP).<br /><br /> Pokud nasazení řešení pomocí Instalační služby systému Windows, je nutné přidat předponu **file:///** k **manifestu** cestu. Musíte také připojte řetězec  **&#124;vstolocal** (to znamená, znakem svislé čáry **&#124;** následovaný **vstolocal**) na konec této cesty. Tím se zajistí, že vaše řešení se načte z instalační složky, nikoli z mezipaměti ClickOnce. Další informace najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Poznámka:**  Při vytvoření doplňku VSTO ve vývojovém počítači Visual Studio automaticky přidá  **&#124;vstolocal** řetězec, který má tato položka registru.|  
   
 ###  <a name="OutlookEntries"></a> Položky registru pro oblasti formuláře Outlooku  
  Pokud vytvoříte vlastní formulář regionu v doplňku VSTO pro Outlook, další registru položky se používají k registraci oblasti formuláře aplikace Outlook. Tyto položky jsou vytvářeny pod klíčem registru pro každou třídu zpráv, který podporuje oblasti formuláře. Tyto klíče registru jsou v následujícím umístění, kde *kořenové* je **HKEY_CURRENT_USER** nebo **HKEY_LOCAL_MACHINE**.  
@@ -88,7 +85,7 @@ ms.locfileid: "49881778"
   
  Stejně jako jiné položky registru sdílí všechny doplňky VSTO, Visual Studio vytvoří formuláři položky registru oblast na vývojovém počítači při sestavování projektu. Pokud nasazení doplňku VSTO pomocí ClickOnce, jsou automaticky vytvořeny položky registru v počítači koncového uživatele. Pokud nasazení doplňku VSTO pomocí Instalační služby systému Windows, musíte nakonfigurovat projekt InstallShield Limited Edition vytvořit položky registru v počítači koncového uživatele.  
   
- Další informace o položkách registru oblasti formuláře, naleznete v tématu [umístění oblasti formuláře ve formě vlastních](http://msdn.microsoft.com/library/office/ff868998.aspx). Další informace o oblastech formulářů aplikace Outlook, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
+ Další informace o položkách registru oblasti formuláře, naleznete v tématu [umístění oblasti formuláře ve formě vlastních](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Další informace o oblastech formulářů aplikace Outlook, naleznete v tématu [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
 ##  <a name="LoadBehavior"></a> Hodnotách LoadBehavior  
  **LoadBehavior** položku *kořenové*\Software\Microsoft\Office\\*název_aplikace*\Addins\\ *– doplněk ID* klíč obsahuje bitová kombinace hodnot, které určují chování běhu v doplňku VSTO. Nejnižší bitem (hodnoty 0 a 1) označuje, zda doplňku VSTO je aktuálně uvolněných nebo načtena. Ostatní bity o tom, kdy se aplikace pokusí načíst doplňku VSTO.  
@@ -112,5 +109,3 @@ ms.locfileid: "49881778"
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
-  
-  

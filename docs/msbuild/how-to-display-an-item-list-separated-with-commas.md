@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: zobrazování seznamu položek oddělených čárkami | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zobrazení seznamu položek oddělených čárkami | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: cb9645ffef5c6b9208a6d3b940b145068a6bd12d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854149"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Postupy: zobrazování seznamu položek oddělených čárkami
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Postupy: Zobrazení seznamu položek oddělených čárkami
 Při práci s položkou seznamů v [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), je někdy užitečné zobrazit obsah těchto položek seznamů tak, aby se snadno čitelný. Nebo můžete mít úlohu, která přebírá seznam položek oddělené speciální oddělovacího řetězce. V obou těchto případech můžete zadat řetězec oddělovače pro seznam položek.  
   
 ## <a name="separate-items-in-a-list-with-commas"></a>Samostatné položky v seznamu čárkami  
