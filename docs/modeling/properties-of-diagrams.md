@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 39e3cc044913a592d5f49e685d8075cd43803e55
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8bbb876ddd8a3615b7e31d0dbf9d005b69f2d03d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937790"
 ---
 # <a name="properties-of-diagrams"></a>Vlastnosti diagramů
 Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí ve vygenerovaném návrháři. Můžete například zadat výchozí barva textu v diagramu.
@@ -29,13 +28,13 @@ Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí ve vygen
 
 |Vlastnost|Popis|Výchozí|
 |-|-|-|
-|Barva výplně|Barva výplně diagramu.|Prázdné|
-|Barva textu|Barva textu, který se zobrazí v diagramu.|Černá|
+|Barva výplně|Barva výplně diagramu.|White|
+|Barva textu|Barva textu, který se zobrazí v diagramu.|Black|
 |Modifikátor přístupu|Modifikátor přístupu třídy (veřejné nebo interní).|Public|
 |Vlastní atributy|Umožňuje přidat atributy vytvořené třídě kódu.|\<žádné >|
 |Generuje Double odvozené|Pokud `True`, se vygeneruje základní třídu a částečné třídy (pro podporu přizpůsobení pomocí přepisů). Další informace najdete v tématu [přepsat a rozšiřování vygenerovaných tříd](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Má vlastní konstruktor|Pokud `True`, poskytneme vám vlastního konstruktoru ve zdrojovém kódu. Další informace najdete v tématu [přepsat a rozšiřování vygenerovaných tříd](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z diagramu (`none`, `abstract`, nebo `sealed`).|Žádné|
+|Modifikátor dědičnosti|Popisuje druh dědičnosti třídy zdrojový kód, který je generován z diagramu (`none`, `abstract`, nebo `sealed`).|Žádná|
 |Základní Diagram|Základní třída tento diagram.|(žádné)|
 |Název|Název tohoto diagramu.|Aktuální název|
 |Obor názvů|Obor názvů, který je přidružený tento diagram.|Aktuální obor názvů|

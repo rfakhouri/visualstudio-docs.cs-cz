@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Rozšířené datové vazby v projektech na úrovni dokumentu'
-ms.custom: ''
+title: 'Průvodce: Rozšířené datové vazby v projektech na úrovni dokumentu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964049"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Návod: Rozšířené datové vazby v projektech na úrovni dokumentu
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Průvodce: Rozšířené datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o rozšířené datové vazby v projektech na úrovni dokumentu. Více buněk v listu aplikace Microsoft Office Excel můžete vázat na pole v databázi Northwind SQL serveru.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -58,7 +55,7 @@ ms.locfileid: "49841881"
   
 1.  Vytvořte projekt sešitu aplikace Excel s názvem **Moje složité datové vazby**. V průvodci vyberte **vytvoříte nový textový dokument**.  
   
-     Další informace najdete v tématu [postupy: vytváření projektů pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Moje složité datové vazby** projektu **Průzkumníka řešení**.  
   
@@ -181,7 +178,7 @@ ms.locfileid: "49841881"
   
 2. V prázdném řádku, přidejte následující informace.  
   
-   |EmployeeID|Příjmení|Jméno|Název|  
+   |EmployeeID|LastName|FirstName|Název|  
    |----------------|--------------|---------------|-----------|  
    |10|Šmídová|Šu|Prodejní manažer|  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841881"
 ## <a name="next-steps"></a>Další kroky  
  Tento návod ukazuje základy vazby tabulky v databázi s objektem seznamu. Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Data do mezipaměti tak, aby ho můžete použít v režimu offline. Další informace najdete v tématu [jak: mezipaměti dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Data do mezipaměti tak, aby ho můžete použít v režimu offline. Další informace najdete v tématu [jak: Mezipaměť dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   Nasazení řešení. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
--   Vytvoření záznamů master/detail vztah mezi polem a tabulku. Další informace najdete v tématu [návod: vytvoření hlavního podrobný vztah pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Vytvoření záznamů master/detail vztah mezi polem a tabulku. Další informace najdete v tématu [názorný postup: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)   
  [Návod: Jednoduché datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
-title: Idiasession – | Microsoft Docs
-ms.custom: ''
+title: Idiasession – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2791f318a921a25535d5e9a8f17e2c595f1f56
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923832"
 ---
 # <a name="idiasession"></a>IDiaSession
 Poskytuje kontext dotazu pro symboly ladění.  
@@ -27,53 +25,53 @@ Poskytuje kontext dotazu pro symboly ladění.
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaSession : IUnknown  
+IDiaSession : IUnknown  
 ```  
   
 ## <a name="methods"></a>Metody  
- Následující tabulka uvádí metody `IDiaSession`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaSession`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Načte adresu zatížení pro spustitelný soubor, který odpovídá symboly v tomto úložišti symbol. Toto je stejnou hodnotu, která byla předána `put_loadAddress` metoda.|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Nastaví adresu zatížení pro spustitelný soubor, který odpovídá na symboly v tomto úložišti symbol. **Poznámka:** je třeba volat tuto metodu, když dojde `IDiaSession` objektu a před zahájením práce objektu.|  
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Načte adresu zatížení pro spustitelný soubor, který odpovídá symboly v tomto úložišti symbolů. Jedná se o stejnou hodnotu, která byla předána `put_loadAddress` metody.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Nastaví adresu zatížení pro spustitelný soubor, který odpovídá na symboly v tomto úložišti symbolů. **Poznámka:**  Je potřeba volat tuto metodu, když dojde `IDiaSession` objektu a před zahájením používání objektu.|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Získá odkaz na globální obor.|  
-|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Získá enumerátor pro všechny tabulky obsažené v úložišti symbol.|  
-|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Získá enumerátor pro všechny pojmenované symboly v statické umístěních.|  
-|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Načte všechny podřízené objekty zadaný nadřazený identifikátor odpovídající název a symbol typu.|  
-|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže k zadaná adresa.|  
-|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže k zadaný relativní virtuální adresy (RVA).|  
-|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže k zadané virtuální adresy (VA).|  
+|[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Získá enumerátor pro všechny tabulky, které jsou obsaženy v úložišti symbolů.|  
+|[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Získá enumerátor pro všechny pojmenované symboly ve statické umístěních.|  
+|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Načte všechny podřízené objekty zadaný nadřazený identifikátor odpovídající název a značka typu.|  
+|[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Načte typ zadaný symbol, který obsahuje, nebo co nejblíže k zadané adrese.|  
+|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Načte typ zadaný symbol, který obsahuje, nebo co nejblíže k zadané relativní virtuální adrese (RVA).|  
+|[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže zadanou virtuální adresu (VA).|  
 |[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Načte symbol, který obsahuje token Zadaná metadata.|  
-|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|Kontroluje, zda jsou dva symboly ekvivalentní.|  
-|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Získá symbol svůj jedinečný identifikátor.|  
-|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže k posunu a relativní zadanou virtuální adresu.|  
-|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže k zadanou virtuální adresu a posun.|  
+|[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|Kontroluje, jestli dva symboly jsou ekvivalentní.|  
+|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Načte symbol podle jejího jedinečného identifikátoru.|  
+|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Načte typ zadaný symbol, který obsahuje, nebo je nejblíže zadanou relativní virtuální adresu a posun.|  
+|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Načte typ zadaný symbol, který obsahuje, nebo co nejblíže, zadanou virtuální adresu a posun.|  
 |[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Načte kompilace a název zdrojového souboru.|  
-|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Načte zdrojového souboru pomocí identifikátoru zdrojového souboru.|  
+|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Zkopíruje zdrojový soubor pomocí identifikátoru zdrojového souboru.|  
 |[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Načte čísla řádků v rámci zadaný identifikátor souboru kompilace a zdroje.|  
-|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Načte řádků v zadané kompilace, které obsahují zadaná adresa.|  
-|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Načte řádků v zadané kompilace, které obsahují zadaný relativní virtuální adresu.|  
-|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Vyhledá informace o řádku čísle řádků v zadaného rozsahu adres.|  
-|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Načte řádků v zadané kompilace číslem zdrojový soubor a řádku.|  
-|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Načte zdroji, který se nachází do úložiště symbolů atribut zprostředkovatelé ani jiné součásti procesu kompilace.|  
-|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Načte výčtové posloupností ladění datových proudů.|  
-|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Načte výčet, který umožňuje klientům k iteraci v rámci celé vložené rámce na danou adresu.|  
-|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Načte výčet, který umožňuje klientům k iteraci v rámci celé vložené rámce zadaný relativní virtuální adresy (RVA).|  
-|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Načte výčet, který umožňuje klientům k iteraci v rámci celé vložené rámce zadané virtuální adresy (VA).|  
-|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Načte výčet, který umožňuje klientům k iteraci v rámci informace číslo řádku všech funkcí, které jsou vložená, přímo nebo nepřímo, podle zadaný nadřazený symbolu.|  
-|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Načte výčet, který umožňuje klientům k iteraci v rámci informace číslo řádku všech funkcí, které jsou vložená, přímo nebo nepřímo, podle symbol zadaný nadřazený a jsou obsaženy v rámci zadaný rozsah adres.|  
-|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Načte výčet, který umožňuje klientům k iteraci v rámci informace číslo řádku všech funkcí, které jsou vložená, přímo nebo nepřímo, podle symbol zadaný nadřazený a jsou obsaženy v rámci zadaného relativní virtuální adresy (RVA).|  
-|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Načte výčet, který umožňuje klientům k iteraci v rámci informace číslo řádku všech funkcí, které jsou vložená, přímo nebo nepřímo, podle symbol zadaný nadřazený a jsou obsaženy v rámci zadané virtuální adresy (VA).|  
-|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Načte výčet, který umožňuje klientům k iteraci v rámci informace o všech funkcí, které jsou vložená, přímo ani nepřímo, počet zadaný zdrojový soubor a řádku číslo řádku.|  
-|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Načte výčet, který umožňuje klientům k iteraci v rámci řádku informace o čísle všechny vloženou obslužnou funkcí, které odpovídají zadaným názvem.|  
-|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Vrátí výčet symbolů pro proměnnou, která odpovídá hodnotě zadané značky v nadřazené akcelerátoru se zakázaným inzerováním funkce.|  
-|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Zadané odpovídající hodnota značky, tato metoda vrátí výčet symboly, které jsou obsaženy ve funkci se zakázaným inzerováním akcelerátoru zadaný nadřazený na zadaný relativní virtuální adresu.|  
-|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Vrátí výčet symboly pro vložené rámce odpovídající název funkce zadaný vložené.|  
+|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Načte řádky v zadané kompilace, které obsahují zadané adrese.|  
+|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Načte řádky v zadané kompilace, které obsahují zadaný relativní virtuální adresu.|  
+|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Vyhledá informace o čísle řádku pro řádky, které jsou součástí zadaného rozsahu adres.|  
+|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Načte řádky v zadané kompilace pomocí zdrojového souboru a číslo řádku.|  
+|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Získá zdroj, který je umístěný do úložiště symbolů podle poskytovatele atributu ani jiné součásti procesu kompilace.|  
+|[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Načte Výčtový posloupnost ladění datových proudů.|  
+|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Načte výčet, který umožňuje klientovi iterovat přes všechny vložené rámce na dané adrese.|  
+|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Načte výčet, který umožňuje klientovi iterovat přes všechny vložené rámce na zadaný relativní virtuální adrese (RVA).|  
+|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Načte výčet, který umožňuje klientovi iterovat přes všechny vložené rámce na zadanou virtuální adresu (VA).|  
+|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Načte výčet, který umožňuje klientovi k iteraci v rámci o počtu řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo, symbolem zadaný nadřazený prvek.|  
+|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Načte výčet, který umožňuje klientovi k iteraci v rámci o počtu řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo, symbolem zadaný nadřazený prvek a jsou obsaženy v rámci zadaný rozsah adres.|  
+|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Načte výčet, který umožňuje klientovi k iteraci v rámci o počtu řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo, symbolem zadaný nadřazený prvek a jsou obsaženy v rámci zadaného relativní virtuální adresu (RVA).|  
+|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Načte výčet, který umožňuje klientovi k iteraci v rámci o počtu řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo, symbolem zadaný nadřazený prvek a jsou obsaženy v rámci zadané virtuální adresy (VA).|  
+|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Načte výčet, který umožňuje klientovi k iteraci v rámci informace o číslech řádků všech funkcí, které jsou vloženy, přímo nebo nepřímo v zadaný zdrojový soubor a číslo řádku.|  
+|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Načte výčet, který umožňuje klientovi k iteraci v rámci informace o číslech řádků všech vložených funkcí, které odpovídají zadaným názvem.|  
+|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Vrátí výčet symboly proměnné, která odpovídá hodnotě zadané značky v nadřazeném prvku. funkce se zakázaným inzerováním akcelerátoru.|  
+|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Odpovídající hodnota značky zadány, tato metoda vrátí výčet symboly, které jsou obsaženy ve funkci se zakázaným inzerováním akcelerátor zadaný nadřazený prvek na zadaný relativní virtuální adrese.|  
+|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Vrátí výčet symbolů pro vložené rámce odpovídající názvu funkce zadány jako vložené.|  
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Vrátí výčet symboly pro vložené rámce, které odpovídají zadaným zdrojovým umístěním.|  
   
 ## <a name="remarks"></a>Poznámky  
- Je důležité k volání [idiasession::put_loadaddress –](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metoda po vytvoření `IDiaSession` objektu – a hodnota předaná `put_loadAddress` metoda musí být nenulové – pro všechny virtuální adresy (VA) vlastnosti symboly, které budou přístupné. Adresa zátěže pochází z ať programu načíst laděné spustitelný soubor. Například můžete volat funkci Win32 `GetModuleInformation` načíst adresu zatížení pro spustitelný soubor, Zadaný popisovač ke spustitelnému souboru.  
+ Je potřeba volat [idiasession::put_loadaddress –](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metoda po vytvoření `IDiaSession` objektu – a hodnota předaná `put_loadAddress` metoda musí být nenulové – pro všechny virtuální adresy (VA) vlastnosti symboly, které budou přístupné. Adresa zatížení pochází z libovolné aplikace načíst laděnému spustitelnému souboru. Například můžete volat funkci Win32 `GetModuleInformation` načíst adresu zatížení pro spustitelný soubor, Zadaný popisovač ke spustitelnému souboru.  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak získat `IDiaSession` rozhraní jako součást obecné inicializace DIA SDK.  
@@ -112,16 +110,16 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Přehled](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [Soubor EXE](../../debugger/debug-interface-access/exe.md)   
+ [soubor EXE](../../debugger/debug-interface-access/exe.md)   
  [Idiaaddressmap –](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [Idiadatasource –](../../debugger/debug-interface-access/idiadatasource.md)   
  [Idiadatasource::opensession –](../../debugger/debug-interface-access/idiadatasource-opensession.md)   

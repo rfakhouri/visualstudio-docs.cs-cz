@@ -2,7 +2,6 @@
 title: Potlačení upozornění analýzy kódu
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -16,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932870"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -140,7 +139,7 @@ public class Animal
 
 Spravovaný kód kompilátory a některé nástroje třetích stran generování kódu pro usnadnění vývoje rychlý kód. Kód generovaný kompilátorem, který se zobrazí ve zdrojových souborech obvykle označené `GeneratedCodeAttribute` atribut.
 
-Můžete zvolit, jestli se má potlačit upozornění analýzy kódu a chyby pro vygenerovaný kód. Informace o tom, jak potlačit takové upozornění a chyby najdete v tématu [postupy: potlačení upozornění pro kód generovaný](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+Můžete zvolit, jestli se má potlačit upozornění analýzy kódu a chyby pro vygenerovaný kód. Informace o tom, jak potlačit takové upozornění a chyby najdete v tématu [jak: Potlačení upozornění pro vygenerovaný kód](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > Analýza kódu ignoruje `GeneratedCodeAttribute` při použití na celé sestavení nebo jeden parametr.

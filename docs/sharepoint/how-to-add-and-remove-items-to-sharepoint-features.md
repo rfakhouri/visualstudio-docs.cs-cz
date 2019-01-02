@@ -1,15 +1,10 @@
 ---
 title: 'Postupy: Přidání a odebrání položek z funkcí služby SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a820f506154a72b797963996b39e7ec225fac31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964014"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Postupy: Přidání a odebrání položek z funkcí služby SharePoint
   Při vytváření řešení služby SharePoint, Visual Studio přidá výchozí položky projektu služby SharePoint do vaší funkce. Před nasazením můžete přidávat a odebírat položky Sharepointového projektu k úpravě funkce Sharepointu.  
@@ -35,7 +30,7 @@ ms.locfileid: "49854829"
   
 1. Otevřete návrháře funkcí.  
   
-    Další informace najdete v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+    Další informace najdete v tématu [jak: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 2. Přidejte jednu nebo více položek ze **položky v řešení** do seznamu **položek ve funkci** seznamu pomocí provádí jeden nebo více z následujících kroků:  
   
@@ -60,4 +55,3 @@ ms.locfileid: "49854829"
 ## <a name="see-also"></a>Viz také:
  [Vytvoření funkcí služby SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

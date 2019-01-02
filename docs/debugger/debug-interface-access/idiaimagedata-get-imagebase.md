@@ -1,8 +1,6 @@
 ---
 title: Idiaimagedata::get_imagebase – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0037ef4bbbfc499d23e517e0fb3522b8f042c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dea0b3e717187bb79525fde0be02d0482e53243
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912659"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 Získá umístění v paměti, kde by měla být založena na obrázku.  
@@ -27,7 +25,7 @@ Získá umístění v paměti, kde by měla být založena na obrázku.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_imageBase (   
+HRESULT get_imageBase (   
    ULONGLONG* pRetVal  
 );  
 ```  

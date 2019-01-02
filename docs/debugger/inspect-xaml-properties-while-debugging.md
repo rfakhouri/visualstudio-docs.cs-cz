@@ -1,8 +1,6 @@
 ---
-title: Kontrola vlastností XAML při ladění | Microsoft Docs
-ms.custom: ''
+title: Kontrola vlastností XAML při ladění | Dokumentace Microsoftu
 ms.date: 03/06/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: mikejo5000
@@ -10,29 +8,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fcb2877a79afc310985102972d870caae560b393
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: abb045b2fb0a1a465d4a5c4eb9efb33b6559b40f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856426"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Kontrola vlastností XAML při ladění
-Můžete získat v reálném čase zobrazení spuštěného kódu XAML s **dynamickém vizuálním stromu** a **Live Explorer vlastnost**. Tyto nástroje získáte stromové zobrazení prvků uživatelského rozhraní spuštěné aplikace XAML a můžete zobrazit vlastnosti runtime libovolný element uživatelského rozhraní, které vyberete.  
+Můžete získat v reálném čase přehled o spuštění kódu XAML pomocí **Live Visual Tree** a **Live Property Explorer**. Tyto nástroje vám poskytnou stromové zobrazení prvků uživatelského rozhraní aplikace XAML spuštěné a zobrazit vlastnosti modulu runtime libovolný prvek uživatelského rozhraní, které vyberete.  
   
  Tyto nástroje můžete použít v následujících konfigurací:  
   
-|Typ aplikace|Operačního systému a nástroje|  
+|Typ aplikace|Operační systém a nástroje|  
 |-----------------|--------------------------------|  
 |Aplikace Windows Presentation Foundation (4.0 a vyšší)|Windows 7 a vyšší|  
-|Univerzální aplikace pro Windows|Windows 10 a vyšší, s [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
+|Univerzální aplikace pro Windows|Windows 10 a novější, s [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
-## <a name="looking-at-elements-in-the-live-visual-tree"></a>Prohlížení elementy v za provozu vizuálním stromu  
- Můžeme začít pracovat s velmi jednoduchou aplikaci WPF, která má zobrazení seznamu a tlačítko. Pokaždé, když kliknete na tlačítko, jiná položka byla přidána do seznamu. Číslované položky, se zobrazí šedě a lichých položky se žlutou.  
+## <a name="looking-at-elements-in-the-live-visual-tree"></a>Prohlížení prvky v živý vizuální strom  
+ Pusťme se do práce s velmi jednoduchou aplikaci WPF, která má zobrazení seznamu a tlačítko. Pokaždé, když kliknete na tlačítko, jiná položka se přidá do seznamu. Sudým číslem položky se zobrazí šedě a lichých položky se žlutou.  
   
- Vytvoření nové aplikace WPF C# (Soubor > Nový > projekt, pak vyberte C# a najít aplikaci WPF). Pojmenujte ji **TestXAML**.  
+ Vytvořte nový C# aplikace WPF (Soubor > Nový > projekt, vyberte C# a najít aplikace WPF). Pojmenujte ji **TestXAML**.  
   
- Změňte MainWindow.xaml následujícím způsobem:  
+ Změna souboru MainWindow.xaml takto:  
   
 ```xaml  
 <Window x:Class="TestXAML.MainWindow"  
@@ -50,7 +48,7 @@ Můžete získat v reálném čase zobrazení spuštěného kódu XAML s **dynam
 </Window>  
 ```  
   
- Přidejte následující obslužná rutina příkazu do souboru MainWindow.xaml.cs:  
+ Do souboru MainWindow.xaml.cs přidejte následující obslužná rutina příkazu:  
   
 ```csharp 
 int count;
@@ -71,37 +69,37 @@ private void button_Click(object sender, RoutedEventArgs e)
 }  
 ```  
   
- Sestavte projekt a spusťte ladění. (Je konfigurace sestavení musí být ladění, není verze. Další informace o konfiguracích sestavení najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md).)  
+ Sestavte projekt a spusťte ladění. (Konfiguraci sestavení musí být ladění, vydání není. Další informace o konfiguracích sestavení naleznete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md).)  
   
- Až okno se zobrazí, klikněte na tlačítko **přidat položku** tlačítko několika časy. Měli byste vidět zhruba takhle:  
+ Když v okně se zobrazí, klikněte na tlačítko **přidat položku** tlačítko kolikrát pár. By měl vypadat přibližně takto:  
   
  ![Hlavní okno aplikace](../debugger/media/livevisualtree-app.png "LiveVIsualTree aplikace")  
   
- Nyní otevřete **dynamickém vizuálním stromu** okno (**ladění > Windows > dynamickém vizuálním stromu**, nebo ji najít na levé straně rozhraní IDE). Přetažením od jeho pozici ukotvení, se podíváme na toto okno a **Live vlastnosti** okna vedle sebe. V **dynamickém vizuálním stromu** okno, rozbalte **ContentPresenter** uzlu. Měl by obsahovat uzlů pro tlačítko a pole se seznamem. Rozbalte pole se seznamem (a potom **ScrollContentPresenter** a **ItemsPresenter**) k nalezení seznamu položky pole. Okno by měl vypadat takto:  
+ Nyní otevřete **Live Visual Tree** okno (**ladit > Windows > Live Visual Tree**, nebo ho najít na levé straně rozhraní IDE). Přetáhněte z jeho pozici ukotvení, abychom se mohli podívat na toto okno a **Live vlastnosti** okna vedle sebe. V **Live Visual Tree** okna, rozbalte **ContentPresenter** uzlu. Měl by obsahovat uzly pro tlačítka a pole se seznamem. Rozbalte pole se seznamem (a potom **ScrollContentPresenter** a **ItemsPresenter**) k nalezení seznamu položky pole. V okně by měl vypadat nějak takto:  
   
- ![Položky ListBoxItem v za provozu vizuálním stromu](../debugger/media/livevisualtree-listboxitems.png "položky LiveVisualTree ListBoxItem")  
+ ![Položky ListBoxItem v živý vizuální strom](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree položky ListBoxItem")  
   
- Přejděte zpět do okna aplikace a přidat pár další položky. Měli byste vidět další pole položky seznamu se zobrazí v **dynamickém vizuálním stromu**.  
+ Vraťte se do okna aplikace a přidejte několik více položek. Měli byste vidět další seznam položek pole se zobrazí v **Live Visual Tree**.  
   
- Nyní Podíváme se na vlastnosti jednoho pole položek seznamu. Vyberte první položku seznamu v **dynamickém vizuálním stromu** a klikněte na **zobrazit vlastnosti** ikonu na panelu nástrojů. **Live Explorer vlastnost** by se měla objevit. Všimněte si, že **obsahu** pole je "Item1" a **pozadí** pole je **#FFFFFFE0** (světle žlutý). Přejděte zpět **dynamickém vizuálním stromu** a vyberte druhou položku seznamu. **Live Explorer vlastnost** by měl zobrazit, který **obsahu** pole je "Item2" a **pozadí** pole je **#FFD3D3D3** (světla šedá ).  
+ Nyní Pojďme se podívat na vlastnosti položky seznamu pole. Vyberte první pole položky seznamu v **Live Visual Tree** a klikněte na tlačítko **zobrazit vlastnosti** ikonu na panelu nástrojů. **Live Property Explorer** by se měla objevit. Všimněte si, že **obsahu** pole je "Item1" a **pozadí** pole je **#FFFFFFE0** (světle žlutá). Přejděte zpět **Live Visual Tree** a vyberte druhou položku seznamu. **Live Property Explorer** by se zobrazit, který **obsahu** pole je "Item2 –" a **pozadí** pole je **#FFD3D3D3** (světle šedá ).  
   
- Skutečné strukturu XAML obsahuje mnoho prvky, které vás zajímají pravděpodobně není přímo, a pokud nevíte, kód a může být pevný čas přechodu stromu najít, co hledáte. Proto **dynamickém vizuálním stromu** má několika způsoby, ve kterých pomocí uživatelského rozhraní aplikace můžete najít element, které chcete prověřit.  
+ Skutečné struktury XAML obsahuje mnoho prvků, které vás zajímají pravděpodobně ne přímo, a pokud dobře neznáte kód může být obtížné provést procházení stromu najít, co hledáte. Proto **Live Visual Tree** má několik možností, které umožňují pomocí uživatelského rozhraní aplikace můžete najít element, které chcete prověřit.  
   
- **Povolit výběr v běžící aplikaci**. Tento režim můžete povolit, pokud klepnete na tlačítko nejvíce vlevo **dynamickém vizuálním stromu** panelu nástrojů. V tomto režimu, vám umožní vybrat prvek uživatelského rozhraní v aplikaci a **dynamickém vizuálním stromu** (a **Live prohlížeč vlastnost**) automaticky aktualizuje zobrazíte uzel ve stromu odpovídající daný element a jeho vlastnosti.  
+ **Povolit výběr v běžící aplikaci**. Tento režim můžete povolit, pokud vyberete tlačítko zcela vlevo **Live Visual Tree** nástrojů. S tímto režimem na můžete vybrat v aplikaci prvku uživatelského rozhraní a **Live Visual Tree** (a **Live prohlížeč vlastnost**) automaticky aktualizuje na Zobrazit uzel ve stromu tohoto prvku, odpovídající a její vlastnosti.  
   
- **Zobrazit ozdobného prvku rozložení v běžící aplikaci**. Tento režim můžete povolit, pokud vyberete tlačítka, které je okamžitě pravé tlačítko výběru povolit. Když **zobrazit ozdobného prvku rozložení** zapnutý, způsobí, že okno aplikace a zobrazit čáry vodorovného a svislého podél hranice vybraný objekt, abyste viděli, co ji zarovnává, a také obdélníky znázorňující pravého okraje. Například zapnout obě **umožňující výběr** a **rozložení zobrazení** on a vyberte možnost **přidat položku** blok textu v aplikaci. Byste měli vidět v uzlu bloku textu **dynamickém vizuálním stromu** a text blokování vlastnosti **Live prohlížeč vlastnost**, a také čáry vodorovného a svislého na rozsah bloku textu.  
+ **Zobrazit doplňky pro úpravy rozložení v běžící aplikaci**. Tento režim můžete povolit při výběru tlačítka, které je okamžitě napravo od povolit tlačítko pro výběr. Když **zobrazit doplňky pro úpravy rozložení** zapnutý, způsobí, že zobrazíte vodorovné a svislé čáry podél hranice vybraného objektu, abyste si mohli zobrazit, co to odpovídá, a také obdélníky znázorňující okrajů okna aplikace. Například zapnutí i **povolit výběr** a **rozložení zobrazení** zapnuto a vyberte **přidat položku** textový blok v aplikaci. Byste měli vidět text uzlu bloku v **Live Visual Tree** a text blok ve vlastnosti **Live prohlížeč vlastnost**, a také vodorovné a svislé čáry na rozsah bloku textu.  
   
  ![LivePropertyViewer v DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
   
- **Náhled výběr**. Tento režim můžete povolit výběrem třetí tlačítko zleva na panelu nástrojů v dynamickém vizuálním stromu. Tento režim zobrazuje XAML, kde byla deklarována elementu, pokud máte přístup ke zdrojovému kódu aplikace. Vyberte **umožňující výběr** a **náhled výběr**, a pak klikněte na tlačítko v naší aplikaci test. MainWindow.xaml soubor se otevře v sadě Visual Studio a kurzor je umístěn na řádku, kde je definován na tlačítko.  
+ **Zobrazit náhled výběru**. Tento režim můžete aktivovat tak, že vyberete třetí tlačítko na panelu nástrojů v dynamickém vizuálním stromu nalevo. Tento režim zobrazuje XAML, ve kterém se deklaroval element, pokud máte přístup ke zdrojovému kódu aplikace. Vyberte **povolit výběr** a **náhled výběru**, a pak klikněte na tlačítko v naší aplikaci test. Otevře se soubor MainWindow.xaml v sadě Visual Studio a je kurzor umístěn na řádku, kde je definován na tlačítko.  
   
-## <a name="using-xaml-tools-with-running-applications"></a>Pomocí nástroje XAML pro spouštění aplikací  
- Tyto nástroje XAML můžete použít i v případě, že nemáte zdrojového kódu. Když připojíte k spuštěné aplikace XAML, můžete **dynamickém vizuálním stromu** s prvky uživatelského rozhraní tuto aplikaci příliš. Tady je příklad pomocí stejné WPF testovací aplikace, které jsme nepoužili.  
+## <a name="using-xaml-tools-with-running-applications"></a>Pomocí nástrojů XAML se spouštěním aplikací  
+ Tyto nástroje XAML můžete použít i v případě, že nemáte zdrojový kód. Po připojení k běžící aplikaci XAML, můžete použít **Live Visual Tree** na prvcích uživatelského rozhraní aplikace příliš. Tady je příklad, pomocí stejné WPF testovací aplikaci, kterou jsme použili dříve.  
   
-1.  Spuštění **TestXaml** aplikace v rámci konfigurace verze. Nelze připojit k procesu, který je spuštěn v **ladění** konfigurace.  
+1.  Spustit **TestXaml** aplikace v rámci konfigurace verze. Nelze připojit k procesu, který běží v **ladění** konfigurace.  
   
-2.  Otevřít druhou instanci sady Visual Studio a klikněte na tlačítko **ladění > připojit k procesu**. Najít **TestXaml.exe** v seznamu dostupných procesy a klikněte na tlačítko **Attach**.  
+2.  Spusťte druhou instanci aplikace Visual Studio a klikněte na tlačítko **ladit > připojit k procesu**. Najít **TestXaml.exe** v seznamu dostupných procesů, a klikněte na tlačítko **připojit**.  
   
-3.  Spuštění aplikace spuštěna.  
+3.  Spuštění aplikace.  
   
-4.  V druhé instanci sady Visual Studio, otevřete **dynamickém vizuálním stromu** (**ladění > Windows > dynamickém vizuálním stromu**). Měli byste vidět **TestXaml** prvky uživatelského rozhraní a vy byste měli mít s nimi manipulovat, protože při ladění aplikace přímo.
+4.  Ve druhé instanci aplikace Visual Studio, otevřete **Live Visual Tree** (**ladit > Windows > Live Visual Tree**). Měli byste vidět **TestXaml** prvky uživatelského rozhraní a měli být schopni s nimi manipulovat, protože při ladění aplikace přímo.

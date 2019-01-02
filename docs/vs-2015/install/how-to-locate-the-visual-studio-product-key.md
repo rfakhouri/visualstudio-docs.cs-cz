@@ -1,12 +1,11 @@
 ---
-title: 'Postupy: Vyhledání kódu Product Key | Dokumentace Microsoftu'
+title: 'Postupy: Vyhledejte kód Product Key | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -17,14 +16,14 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 117e9bff7bbe84fe5f98ee597987582e7981f25b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dea6a5a0a89a2d5b9616742087d3178fc3ac9e63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877335"
 ---
-# <a name="how-to-locate-the-visual-studio-product-key"></a>Postupy: Vyhledání kódu Product key sady Visual Studio
+# <a name="how-to-locate-the-visual-studio-product-key"></a>Postupy: Vyhledejte kód Product Key sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Možná budete chtít vyhledat kód product key pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] při práci se zákaznickou podporou, upgradování ze zkušební verze nebo aktualizací vlastních záznamů.

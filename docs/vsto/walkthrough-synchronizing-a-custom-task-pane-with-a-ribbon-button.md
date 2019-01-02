@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet'
-ms.custom: ''
+title: 'Průvodce: Synchronizace vlastního podokna úloh s tlačítkem pásu karet'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943561"
 ---
-# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Průvodce: Synchronizace vlastního podokna úloh s tlačítkem pásu karet
   Tento návod ukazuje, jak vytvořit vlastního podokna úloh, které uživatelé můžou skrýt nebo zobrazit kliknutím na přepínací tlačítko na pásu karet. Vždy byste měli vytvořit prvek uživatelského rozhraní (UI), jako je například tlačítko, který mohou uživatelé kliknout a zobrazit nebo skrýt vlastního podokna úloh, protože aplikace Microsoft Office se neposkytuje výchozí způsob, jak uživatelé zobrazení nebo skrytí vlastních podoken úloh.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -63,7 +60,7 @@ ms.locfileid: "35676061"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření projektu doplňku aplikace Excel s názvem **SynchronizeTaskPaneAndRibbon**, pomocí šablony projektu doplňku aplikace Excel. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu doplňku aplikace Excel s názvem **SynchronizeTaskPaneAndRibbon**, pomocí šablony projektu doplňku aplikace Excel. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře **ThisAddIn.cs** nebo **ThisAddIn.vb** soubor kódu a přidá **SynchronizeTaskPaneAndRibbon** projektu **Průzkumníka řešení**.  
   
@@ -170,9 +167,9 @@ ms.locfileid: "35676061"
   
 -   Vytvoření vlastního podokna úloh v doplňku VSTO pro jinou aplikaci. Další informace o aplikacích, které podporují vlastní podokna úloh, naleznete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
   
--   Automatizace aplikace z vlastního podokna úloh. Další informace najdete v tématu [návod: automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatizace aplikace z vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Vytvoření vlastního podokna úloh pro každou e-mailové zprávy, která je otevřena v Outlooku. Další informace najdete v tématu [návod: zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Vytvoření vlastního podokna úloh pro každou e-mailové zprávy, která je otevřena v Outlooku. Další informace najdete v tématu [názorný postup: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vlastní podokna úloh](../vsto/custom-task-panes.md)   
@@ -180,5 +177,3 @@ ms.locfileid: "35676061"
  [Návod: Automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
  [Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [Přehled pásu karet](../vsto/ribbon-overview.md)  
-  
-  

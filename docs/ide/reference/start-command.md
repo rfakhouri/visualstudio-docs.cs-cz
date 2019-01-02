@@ -2,7 +2,6 @@
 title: Spustit – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd2d64d8103afe1e303052c9b27fc2cc85cab58
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903926"
 ---
 # <a name="start-command"></a>Spustit – příkaz
-Zahájí ladění spouštěný projekt.
+Zahájí projekt po spuštění ladění.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,13 +33,13 @@ Debug.Start [address]
 ## <a name="arguments"></a>Arguments
  `address`
 
- Volitelné. Adresa, kdy program pozastaví spuštění, podobně jako zarážky ve zdrojovém kódu. Tento argument platí pouze v režimu ladění.
+ Volitelné. Adresa, na kterém program pozastaví provádění kódu, podobně jako na zarážku ve zdrojovém kódu. Tento argument je platná jenom v režimu ladění.
 
 ## <a name="remarks"></a>Poznámky
- **Spustit** příkaz po provedení provede operaci RunToCursor na zadanou adresu.
+ **Start** při spuštění příkazu provádí operaci RunToCursor na zadanou adresu.
 
 ## <a name="example"></a>Příklad
- Tento příkaz spustí ladicího programu a ignoruje všechny výjimky, které dojít.
+ Tento příklad spustí ladicí program a ignoruje všechny výjimky, ke kterým dochází.
 
 ```cmd
 >Debug.Start
@@ -50,5 +49,5 @@ Debug.Start [address]
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

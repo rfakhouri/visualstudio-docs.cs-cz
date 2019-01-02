@@ -1,8 +1,6 @@
 ---
 title: Upravit a pokračovat (Visual C++) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 05/31/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922991"
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C++)
 Můžete upravit a pokračovat v projektech Visual C++. Zobrazit [podporované změny kódu (C++)](../debugger/supported-code-changes-cpp.md) informace o omezení operace upravit a pokračovat.
@@ -33,7 +31,7 @@ Další informace o vylepšení Visual Studio 2015 Update 3 najdete v tématu [C
   
  [/Zo (vylepšit optimalizované ladění)](/cpp/build/reference/zo-enhance-optimized-debugging) – možnost kompilátoru, která byla zavedena v sadě Visual Studio 2013 Update 3 přidá do souborů s příponou .pdb (symbol) Další informace pro binární soubory zkompilovány bez volby [/Od (zakázat (ladění)) ](https://msdn.microsoft.com/library/aafb762y.aspx) možnost.  
   
- **/Zo** zakáže operace upravit a pokračovat. Zobrazit [postupy: ladění optimalizovaného kódu](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** zakáže operace upravit a pokračovat. Zobrazit [jak: Ladění optimalizovaného kódu](../debugger/how-to-debug-optimized-code.md).  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Povolení nebo zakázání funkce upravit a pokračovat  
  Můžete chtít zakázat automatického volání operace upravit a pokračovat, pokud provádíte úpravy kódu, který nechcete, aby platily aktuální relace ladění. Můžete také znovu povolit automatické funkce upravit a pokračovat.

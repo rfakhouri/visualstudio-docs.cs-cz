@@ -1,9 +1,6 @@
 ---
-title: IDebugExpressionEvaluator3 | Microsoft Docs
-ms.custom: ''
+title: IDebugExpressionEvaluator3 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2349924dd2f762638dc6ea08b40a71776b9605a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0acf22666546ca7ef960c6da67728aed0a0b8735
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837677"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 se již nepoužívá tímto způsobem implementace vyhodnocovače výrazů. Informace o implementaci vyhodnocovače výrazů CLR, najdete v tématu [vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Představuje (EE) vyhodnocovací filtr výrazů s strom rozšířené analyzátor.  
+ Představuje vyhodnocovače výrazů (EE) s strom rozšířené analyzátor.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,18 +30,18 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ```  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Tato verze analyzátor předá symbol zprostředkovatele a adresu vyhodnocování rámce.  
+ Tuto verzi analyzátor předá poskytovatel symbolů a adresu vyhodnocování rámce.  
   
 ## <a name="methods"></a>Metody  
  Kromě metod na [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) rozhraní, toto rozhraní implementuje následující metodu:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Převede řetězec výraz výraz analyzovaný daného symbolu zprostředkovatele a adresu vyhodnocování rámce.|  
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|Převede řetězec s výrazem na analyzovaný výrazem zadaným poskytovatel symbolů a adresu vyhodnocování rámce.|  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Ee.h  
+ Záhlaví: EE.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

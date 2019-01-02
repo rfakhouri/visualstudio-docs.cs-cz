@@ -1,8 +1,6 @@
 ---
-title: Ladění služeb WCF | Microsoft Docs
-ms.custom: ''
+title: Ladění služeb WCF | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,24 +16,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8efa769ab7e8fcf55e281f7c29f1f4e04b67f850
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f586cf8761d993d9478775e82ec02d8665bf09b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923913"
 ---
 # <a name="debugging-wcf-services"></a>Ladění služeb WCF
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md)  
  Popisuje omezení ladění WCF.  
   
- [Postupy: krokování s vnořením služeb WCF](../debugger/how-to-step-into-wcf-services.md)  
- Vysvětluje podporu ladicí program zanoříte se do služby WCF.  
+ [Postupy: Krokování s vnořením služeb WCF](../debugger/how-to-step-into-wcf-services.md)  
+ Vysvětluje, podpora ladění pro krokování s vnořením služeb WCF.  
   
- [Postupy: ladění služby WCF s vlastním hostováním](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
- Popisuje postup ladění služby WCF, který spouští IIS mimo nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojový server.  
+ [Postupy: Ladění služby WCF v místním prostředí](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ Popisuje, jak ladit služby WCF, na kterém běží mimo službu IIS nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojový server.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)
+ [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)

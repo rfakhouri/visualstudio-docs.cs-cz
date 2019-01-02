@@ -2,7 +2,6 @@
 title: Zápis vizualizéru v C# | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925219"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>Návod: Zápis vizualizéru v jazyce C# #
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>Průvodce: Zápis Vizualizéru v jazyce C# #
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí jazyka C#. Vizualizaci, kterou vytvoříte v tomto názorném postupu se zobrazí obsah řetězce pomocí okna se zprávou formulářů Windows. Tento vizualizér jednoduchým řetězcem není zvlášť užitečné sám o sobě, ale zobrazuje základní kroky, které je třeba provést pro vytvoření užitečnější vizualizéry pro jiné datové typy.
 
 > [!NOTE]
@@ -222,7 +221,7 @@ Postupujte podle vizualizéru při vytváření úlohy.
 
    Blahopřejeme. Stačí mít vytvořené a testovat vaše první vizualizéru.
 
-   Pokud chcete používat vaše vizualizéru v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] místo jen volání z testovací prostředí, je nutné ji nainstalovat. Další informace najdete v tématu [postupy: instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).
+   Pokud chcete používat vaše vizualizéru v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] místo jen volání z testovací prostředí, je nutné ji nainstalovat. Další informace najdete v tématu [jak: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md).
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>Vytvořit pomocí šablony položky Vizualizéru vizualizéru
 
@@ -261,5 +260,5 @@ Nejprve budete muset vytvořit nový projekt knihovny tříd.
 ## <a name="see-also"></a>Viz také:
 
 - [Architektura vizualizéru](../debugger/visualizer-architecture.md)
-- [Postupy: Instalace vizualizéru](../debugger/how-to-install-a-visualizer.md)
+- [Postupy: Instalace Vizualizéru](../debugger/how-to-install-a-visualizer.md)
 - [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)

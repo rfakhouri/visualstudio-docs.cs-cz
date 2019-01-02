@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c583418fa34a44d4bc0bf78996df4cb35908b4f0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ae52695e980a46cf6385108ae0b4fb4e8b8d5b09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920268"
 ---
-# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Postupy: určení, zda jsou ukládána selhání testů pro testování protokolů pomocí editoru zátěžových testů
+# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Postupy: Určení, zda jsou ukládána selhání testů pro testování protokolů pomocí editoru zátěžových testů
 
-Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit vlastnosti zátěžového testu odpovídá potřebám a cílům testování. Zobrazit [návod: vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md). Můžete zadat, pokud chcete protokol testu uložit Pokud selhání testu v rámci zátěžového testu tak, že změníte **při selhání testu uložit protokol** vlastnost.
+Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit vlastnosti zátěžového testu odpovídá potřebám a cílům testování. Zobrazit [názorný postup: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md). Můžete zadat, pokud chcete protokol testu uložit Pokud selhání testu v rámci zátěžového testu tak, že změníte **při selhání testu uložit protokol** vlastnost.
 
 > [!NOTE]
 > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).
@@ -48,4 +47,4 @@ Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým te
 ## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
-- [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)
+- [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)

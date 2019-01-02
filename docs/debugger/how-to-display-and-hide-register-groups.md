@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: zobrazení a skrytí nabídky registrovat skupiny | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zobrazení a skrytí nabídky registrovat skupiny | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registergroups
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abd617a1b787896f296976ba21f76d3eafbd13c4
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 839ae628184250e276c27fccc80c6b9f8085fabd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846792"
 ---
-# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Postupy: zobrazení a skrytí nabídky registrovat skupiny (C#, C++, Visual Basic, F#)
+# <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Postupy: Zobrazení a skrytí nabídky registrovat skupiny (C#, C++, Visual Basic, F#)
 
 **Zaregistruje** není k dispozici pouze v případě, že je povoleno ladění úrovni adres v interval **možnosti** dialogovém okně **ladění** uzlu **Obecné**kategorie.
 
@@ -47,4 +45,4 @@ Pro přehlednost, **zaregistruje** okno uspořádá registry do skupiny. Pokud k
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použití okna Registry](../debugger/how-to-use-the-registers-window.md)
+- [Postupy: Použití okna registry](../debugger/how-to-use-the-registers-window.md)

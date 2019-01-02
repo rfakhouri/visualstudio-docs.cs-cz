@@ -2,19 +2,18 @@
 title: Zápis testů jednotek pro C/C++
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840879"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů jednotek pro C/C++ v sadě Visual Studio
 
@@ -73,7 +72,7 @@ Vedle testování částí *.cpp* přidejte `#include` směrnice pro všechny so
 ### <a name="write-test-methods"></a>Zápis testovacích metod
 
 > [!NOTE]
-> Tato část popisuje syntaxe pro rozhraní testování částí Microsoft pro C/C++. Jsou zde uvedeny: [reference k rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Dokumentace ke službě Google Test, naleznete v tématu [Úvod do Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Boost.Test, naleznete v tématu [knihovny Boost Test: testy jednotek](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Tato část popisuje syntaxe pro rozhraní testování částí Microsoft pro C/C++. Zde je uvedeno: [Referenční dokumentace rozhraní API atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Dokumentace ke službě Google Test, naleznete v tématu [Úvod do Google Test](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Boost.Test, naleznete v tématu [knihovny Boost Test: Testy jednotek](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 *.Cpp* soubor v projektu testu obsahuje zástupné třídy a metody definovány jako příklad toho, jak napsat test kódu. Mějte na paměti, že podpisy používat TEST_CLASS a TEST_METHOD makra, která zjistitelnost z metody **Průzkumník testů** okna.
 
@@ -119,7 +118,7 @@ Osvědčené postupy související s testování částí, naleznete v tématu [
 
 ## <a name="use-codelens"></a>Použití CodeLens
 
-**Visual Studio 2017 verze 15.7 pouze edice Enterprise a Professional**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje rychle zobrazit stav jednotky testování bez opuštění editoru kódu. Inicializovat CodeLens pro projekt testování částí C++ v některém z těchto způsobů:
+**Visual Studio 2017 verze 15.7 pouze edice Enterprise a Professional**: [Funkce CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje rychle zobrazit stav jednotky testování bez opuštění editoru kódu. Inicializovat CodeLens pro projekt testování částí C++ v některém z těchto způsobů:
 
 - Upravit a vytvořit testovací projekt nebo řešení.
 - Znovu sestavte projekt nebo řešení.

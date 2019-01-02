@@ -1,9 +1,6 @@
 ---
 title: Importy do editoru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893928"
 ---
 # <a name="editor-imports"></a>Importy do editoru
 Můžete naimportovat celou řadou služeb editoru, objekty pro vytváření a zprostředkovatelů, které poskytují rozšíření s různými druhy přístup k základní editor. Například můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> abyste měli <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pro daný typ obsahu. (Tento Navigátor umožňuje provádět různé druhy hledání na textovou vyrovnávací paměť).  
@@ -51,7 +48,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Návod: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Návod: Zobrazení QuickInfo popisky](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Návod: Zobrazit popisky rychlé informace](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Návod: Zobrazení vyhrazené nápovědy](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -67,12 +64,12 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Zobrazit [návod: přístup k objektu DTE z rozšíření editoru](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Další informace.  
+ Zobrazit [názorný postup: Přístup k objektu DTE z rozšíření editoru](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) Další informace.  
   
 ## <a name="services"></a>Služby  
  Editor služby jsou obecně jednotlivé entity, které poskytují služby a jsou sdíleny napříč více komponent.  
   
-|Importovat|Poskytuje|  
+|Import|Poskytuje|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Vztah mezi přípony souborů a <xref:Microsoft.VisualStudio.Utilities.IContentType> objekty.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekce <xref:Microsoft.VisualStudio.Utilities.IContentType> objekty.|  
@@ -114,7 +111,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Další importy  
  Objekty Factory zprostředkovatelů a můžou být zprostředkovatelé jsou obecně entity, které může mít více instancí ve více komponent.  
   
-|Importovat|Poskytuje|  
+|Import|Poskytuje|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> Typu <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) pro danou vyrovnávací paměti.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Označovatel značky text ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  

@@ -1,9 +1,7 @@
 ---
 title: Položky nástroje MSBuild | Dokumentace Microsoftu
 description: Použijte atribut MSBuild obsahovat element ItemGroup a určete soubory, které mají být zahrnuty v sestavení
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898683"
 ---
 # <a name="msbuild-items"></a>Položky nástroje MSBuild
 Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle představují soubory (soubory jsou určené v `Include` atributu). Položky jsou seskupeny do typů položek podle jejich názvy elementů. Seznam položek, které lze použít jako parametry pro úkoly jsou pojmenované typy položek. Úkoly pomocí hodnoty položek k provedení kroků procesu sestavení.  
@@ -55,9 +53,9 @@ Položky nástroje MSBuild jsou vstupy do systému sestavení a obvykle předsta
 -   Od verze rozhraní .NET Framework 3.5 `Target` prvky mohou obsahovat [ItemGroup](../msbuild/itemgroup-element-msbuild.md) prvky, které mohou obsahovat položky elementy.  
   
 ##  <a name="reference-items-in-a-project-file"></a>Odkaz na položky v souboru projektu  
- Chcete-li odkazovat na typy položek v celém souboru projektu, použijte syntaxi @(\<ItemType >). Například typ položky v předchozím příkladu by odkazovat pomocí `@(Compile)`. Pomocí následující syntaxe můžete předat položek úkolů zadáním položky jako parametr dané úlohy. Další informace najdete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
+ Chcete-li odkazovat na typy položek v celém souboru projektu, použijte syntaxi @(\<ItemType >). Například typ položky v předchozím příkladu by odkazovat pomocí `@(Compile)`. Pomocí následující syntaxe můžete předat položek úkolů zadáním položky jako parametr dané úlohy. Další informace najdete v tématu [jak: Vyberte soubory, které chcete sestavit](../msbuild/how-to-select-the-files-to-build.md).  
   
- Ve výchozím nastavení jsou položky Typ položky oddělené středníkem (;) při je rozbalený. Pomocí syntaxe @(\<ItemType >, "\<oddělovač >') Chcete-li určit oddělovač jiné než výchozí. Další informace najdete v tématu [postupy: zobrazování seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Ve výchozím nastavení jsou položky Typ položky oddělené středníkem (;) při je rozbalený. Pomocí syntaxe @(\<ItemType >, "\<oddělovač >') Chcete-li určit oddělovač jiné než výchozí. Další informace najdete v tématu [jak: Zobrazení seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="use-wildcards-to-specify-items"></a>Pomocí zástupných znaků můžete zadat položky  
 
@@ -81,7 +79,7 @@ Následující element vybere všechny `.vb` soubory na `D:` jednotky:
 
 Pokud chcete zahrnout literálu `*` nebo `?` znaků položky bez rozšíření zástupného znaku, je nutné [řídicí zástupné znaky](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Další informace o zástupných znacích naleznete v tématu [postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md).  
+Další informace o zástupných znacích naleznete v tématu [jak: Vyberte soubory, které chcete sestavit](../msbuild/how-to-select-the-files-to-build.md).  
 
 ##  <a name="use-the-exclude-attribute"></a>Použijte atribut vyloučení  
  Může obsahovat prvky položky `Exclude` atribut, který vyloučí konkrétní položky (soubory) z tohoto typu položky. `Exclude` Atribut se obvykle používá spolu s zástupné znaky. Například následující kód XML přidá každý *.cs* souborů v adresáři CSFile typu položky, s výjimkou *DoNotBuild.cs* souboru.  
@@ -99,7 +97,7 @@ Další informace o zástupných znacích naleznete v tématu [postupy: výběr 
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Další informace najdete v tématu [postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Další informace najdete v tématu [jak: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="item-metadata"></a>Metadata položky  
  Položky mohou obsahovat metadata spolu s informacemi v `Include` a `Exclude` atributy. Tato metadata je možné podle úlohy, které vyžadují další informace o položkách nebo dávkové úlohy a cíle. Další informace najdete v tématu [dávkování](../msbuild/msbuild-batching.md).  
@@ -326,9 +324,9 @@ Output:
 ## <a name="see-also"></a>Viz také:  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
  [Nástroj MSBuild](../msbuild/msbuild.md)   
- [Postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   
- [Postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Postupy: zobrazování seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Postupy: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   
+ [Postupy: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Postupy: Zobrazení seznamu položek oddělených čárkami](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definice položek](../msbuild/item-definitions.md)   
  [Dávkové zpracování](../msbuild/msbuild-batching.md)   
  [Item – element (MSBuild)](../msbuild/item-element-msbuild.md)

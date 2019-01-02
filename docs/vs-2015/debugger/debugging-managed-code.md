@@ -26,12 +26,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 801a4654b2297e3c19929063716339c7a4fcd50b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 84e41d06fb490cf3528f19eade08000f1ae27587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930140"
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Příkazy Stop v jazyce Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  Popisuje `Stop` příkaz, který poskytuje alternativu k nastavením zarážky. Ukázkový kód je také k dispozici, spolu s porovnání mezi `Stop` příkazu a `End` příkaz, a také mezi `Stop` a `Assert` příkazu.  
   
- [Návod: Ladění formuláře systému Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
+ [Návod: Ladění formuláře Windows](../debugger/walkthrough-debugging-a-windows-form.md)  
  Poskytuje podrobné pokyny pro vytvoření formuláře Windows a ladění, které tvoří. Formuláře Windows, standardní součástí spravované aplikace pro Windows je jedním z nejběžnějších spravovaných aplikací. Tento návod používá Visual C# a Visual Basic, ale jsou obecně podobné techniky pro vytvoření formuláře Windows pomocí C++.  
   
  [Ladění metody OnStart](../debugger/how-to-debug-the-onstart-method.md)  
@@ -57,7 +57,7 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Ladění ve smíšeném režimu](../debugger/debugging-mixed-mode-applications.md)  
  Tento článek popisuje ladění ve smíšeném režimu aplikací. To znamená, že všechny aplikace, která kombinuje nativní kód se spravovaným kódem.  
   
- [Chyba: Ladění není možné, protože v systému je povolen ladicí program protokolu Kernel.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Chyba: Ladění není možné, protože v systému je povolen ladicí program jádra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Popisuje chybová zpráva, která nastane, pokud se pokusíte ladit spravovaný kód na [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)], [!INCLUDE[winxp](../includes/winxp-md.md)], [!INCLUDE[Win2kFamily](../includes/win2kfamily-md.md)], nebo systém Windows NT, který se spustil v režimu ladění.  
   
  [Optimalizace a ladění za běhu](../debugger/jit-optimization-and-debugging.md)  
@@ -88,14 +88,14 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Ladění skriptů a webových aplikací](../debugger/debugging-web-applications-and-script.md)  
  Popisuje běžné problémy ladění a postupy, které se můžete setkat při ladění skriptu a webové aplikace.  
   
- [Novinky v ladicím programu sady Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
+ [Novinky v ladicím programu sady Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)  
  Popis nových funkcí ladění přidán v této verzi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Ladění domovské stránky](../debugger/debugging-in-visual-studio.md)  
  Obsahuje odkazy na větší části dokumentace ladění. Obsahuje informace, co je nového v ladicím programu, nastavení a příprava, zarážky, zpracování výjimek, upravit a pokračovat, ladění spravovaného kódu, ladění projektů Visual C++, ladění modelu COM a ActiveX, ladění knihoven DLL, ladění SQL a uživatele Reference k rozhraní.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Ladění vlastních Windows Forms ovládací prvky v době návrhu](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [Návod: Ovládací prvky ladění vlastního Windows Forms v době návrhu](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)
 

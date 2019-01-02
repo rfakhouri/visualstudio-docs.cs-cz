@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d90b2ace06b6840a061b1f559f6f2dc7aaa67b6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894516"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Postupy: Vytvoření doplňku sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu
 
@@ -39,7 +38,7 @@ K rozšíření **prohlížeče výsledků testu výkonnosti webu**prvku uživat
 Vytvořte nebo otevřete neprovozní řešení, můžete experimentovat s obsahující webovou aplikaci ASP.NET a výkonnosti webu a zátěžového testování projektu pomocí jedné nebo více testů výkonnosti webu pro webové aplikace ASP.NET.
 
 > [!NOTE]
-> Můžete vytvořit webovou aplikaci ASP.NET a projekt, který obsahuje testy výkonnosti webu pomocí následujících postupů v testu webového výkonu a zatížení [postupy: vytvoření testu webové služby](../test/how-to-create-a-web-service-test.md) a [generování a spuštění programového webového test výkonnosti](../test/generate-and-run-a-coded-web-performance-test.md).
+> Můžete vytvořit webovou aplikaci ASP.NET a projekt, který obsahuje testy výkonnosti webu pomocí následujících postupů v testu webového výkonu a zatížení [jak: Vytvoření testu webové služby](../test/how-to-create-a-web-service-test.md) a [generování a spuštění programový test výkonnosti webu](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Vytvoření doplňku sady Visual Studio
 

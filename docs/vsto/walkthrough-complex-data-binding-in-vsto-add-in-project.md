@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Rozšířené datové vazby v projektu doplňku VSTO'
-ms.custom: ''
+title: 'Průvodce: Rozšířené datové vazby v projektu doplňku VSTO'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af82d74c0e0a0446b759a06a9e874a39fc57b6fd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ce629e01192137474382452690e6d7051bb163ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831768"
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Návod: Rozšířené datové vazby v projektu doplňku VSTO
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Průvodce: Rozšířené datové vazby v projektu doplňku VSTO
   Vytvoření vazby dat k hostitelské ovládací prvky a ovládacích prvků Windows Forms v projekty doplňku VSTO. Tento návod ukazuje, jak přidat ovládací prvky na list aplikace Microsoft Office Excel a vytvoření vazby ovládacích prvků k datům v době běhu.
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
@@ -46,9 +43,9 @@ ms.locfileid: "50672520"
 
 -   Přístup ke spuštěné instanci systému SQL Server 2005 nebo SQL Server 2005 Express, který má `AdventureWorksLT` ukázkovou databázi k němu připojená. Můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze naleznete v následujících tématech:
 
-    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [postupy: připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    -   Připojení databáze pomocí SQL Server Management Studio nebo SQL Server Management Studio Express, naleznete v tématu [jak: Připojení databáze (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [postupy: připojení souboru databáze pro SQL Server Express](/previous-versions/sql/).
+    -   Připojení databáze pomocí příkazového řádku, naleznete v tématu [jak: Připojit soubor databáze pro SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu
  Prvním krokem je vytvoření projektu doplňku VSTO v Excelu.
@@ -57,7 +54,7 @@ ms.locfileid: "50672520"
 
 1.  Vytvoření projektu doplňku VSTO pro Excel s názvem **naplnění listů z databáze**, buď ve Visual Basicu nebo C#.
 
-     Další informace najdete v tématu [postupy: vytváření projektů pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio otevře `ThisAddIn.vb` nebo `ThisAddIn.cs` soubor a přidá **naplnění listů z databáze** projektu **Průzkumníka řešení**.
 
@@ -135,12 +132,12 @@ ms.locfileid: "50672520"
 
 - [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)
 - [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Postupy: naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Postupy: naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Postupy: procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Postupy: aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Postupy: Naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Postupy: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Postupy: Naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Postupy: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Postupy: Procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Postupy: Aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Návod: Jednoduché datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Návod: Rozšířené datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Použití místních souborů databáze v přehled řešení pro systém Office](../vsto/using-local-database-files-in-office-solutions-overview.md)

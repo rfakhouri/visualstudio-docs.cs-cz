@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vytvoření. Vsct soubor | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření. Vsct soubor | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885327"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Postupy: vytvoření souboru .vsct  
+# <a name="how-to-create-a-vsct-file"></a>Postupy: Vytvoření souboru .vsct  
   
 Existuje několik způsobů, jak vytvořit konfiguraci sady Visual Studio založený na formátu XML příkaz tabulky (*.vsct*) soubor.  
   
@@ -56,7 +53,7 @@ Existuje několik způsobů, jak vytvořit konfiguraci sady Visual Studio založ
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Postupy: vytvoření .vsct souboru z existujícího souboru .ctc  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Postupy: Vytvořit z existujícího souboru .ctc .vsct souboru  
   
 Můžete vytvořit základě XML *.vsct* soubor z existující tabulky příkazů *.ctc* zdrojový soubor. Díky tomu mohou využít výhod nového založený na formátu XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] formátu kompilátoru příkaz tabulky (VSCT).  
   
@@ -87,7 +84,7 @@ Můžete vytvořit základě XML *.vsct* soubor z existující tabulky příkaz�
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Postupy: vytvoření souboru .vsct z existujícího souboru .cto  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Postupy: Vytvoření souboru .vsct z existujícího souboru .cto  
   
 Můžete vytvořit základě XML *.vsct* soubor z existujícího binárního souboru *.cto* souboru. To umožňuje využít výhod nového příkazu formát tabulky kompilátoru. I když tento proces funguje *.cto* soubor byl zkompilován z *.ctc* souboru. Při úpravě a kompilaci *.vsct* souboru do jiného souboru .cto.  
   

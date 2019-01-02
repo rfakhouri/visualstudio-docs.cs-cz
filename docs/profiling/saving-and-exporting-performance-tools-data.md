@@ -1,8 +1,6 @@
 ---
 title: Ukládání a export výkonu nástroje Data | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
@@ -12,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8136369a09145c46c7989bebe12796642851a7b0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9bb2020ff396eef3dd9dad4c0ed2e2fd015e0fd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838369"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Uložení a export dat nástrojů pro měření výkonu
 Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.  
   
-## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Postupy: uložení datových souborů výkonu jako soubory analyzovanou sestavu  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Postupy: Uložit datových souborů výkonu jako soubory analyzovanou sestavu  
  Můžete uložit filtrovaná nebo nefiltrované zobrazení dat profilování (. *Vsp*) soubory tak, jak analyzovat zprávu (. *vsps*) soubory. Soubor analyzovanou sestavu lze zobrazit v okně zobrazení sestava a je výrazně menší než originál. *vsp* souboru. Však nelze použít filtr na data. *vsps* souboru. Můžete vytvořit soubor analyzovanou sestavu z prohlížeče výkonu bez nutnosti otevřít soubor v integrovaném vývojovém prostředí (IDE), nebo můžete otevřít a filtrovat. *vsp* soubor a uložte výsledky.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Chcete-li uložit zprávu o analýze výkonu z prohlížeč výkonu  
@@ -45,7 +43,7 @@ Tento článek popisuje, jak uložit a exportovat datových souborů výkonu.
   
 5.  Klikněte na tlačítko **uložit.**  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Postupy: Export nástroje pro profilaci sestavy do souboru .xml nebo .csv  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Postupy: Nástroje pro profilaci export sestavy do souboru .xml nebo .csv  
  Můžete exportovat z jednoho nebo více zobrazení sestav. *vsp* souboru nebo. *vsps* profilace datový soubor jako bude čárkami oddělený nebo soubor XML. Můžete filtrovat data v okně zobrazení sestava před exportem nebo mohou exportovat sestavy zobrazení celého datového souboru z **prohlížeč výkonu** okna.  
   
 > [!NOTE]

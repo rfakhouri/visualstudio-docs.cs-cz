@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba6fbb03b171b50014aad887ff83d9841f0249
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 9abf64864c9b722f344662200dfc923cc3e192b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914180"
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Shromažďování dat souběžnosti pro webovou aplikaci ASP.NET pomocí příkazového řádku profileru
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Za použití metody souběžnosti z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|Připojení profileru k běžící aplikaci ASP.NET|-   [Postupy: připojení Profiler k aplikaci ASP.NET ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|Připojení profileru k běžící aplikaci ASP.NET|-   [Jak: Připojit Profiler k aplikaci ASP.NET ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="reference"></a>Odkaz  
  [Referenční dokumentace nástrojů příkazového řádku pro profilaci](../profiling/command-line-profiling-tools-reference.md)  
@@ -45,7 +45,7 @@ Za použití metody souběžnosti z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 |Úloha|Související obsah|  
 |----------|---------------------|  
 |**Profil s použitím metody vzorkování**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Profil s použitím metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profil s použitím metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**Profil přidělování a uvolňování paměti kolekce paměti**|-   [Shromažďování dat paměti](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Profilace souběžnosti problémy  

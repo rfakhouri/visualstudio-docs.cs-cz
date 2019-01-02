@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: získání dat pro předdefinovaný uzel služby SharePoint v Průzkumníku serveru | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Získání dat pro předdefinovaný uzel služby SharePoint v Průzkumníku serveru | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,28 +13,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120273"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898970"
 ---
-# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Postupy: získání dat pro předdefinovaný uzel služby SharePoint v Průzkumníku serveru
+# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Postupy: Získání dat pro předdefinovaný uzel služby SharePoint v Průzkumníku serveru
   Pro každý předdefinovaný uzel služby SharePoint v **Průzkumníka serveru**, můžete získat data pro základní součást služby SharePoint, která představuje uzel. Další informace najdete v tématu [rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
 ## <a name="example"></a>Příklad  
- Následující příklad kódu ukazuje, jak získat data pro základní seznam služby SharePoint, který představuje seznam uzlů v **Průzkumníka serveru**. Ve výchozím nastavení, seznam uzlů má **zobrazit v prohlížeči** položky kontextové nabídky, které lze klepnout a otevřít ve webovém prohlížeči. Tento příklad rozšiřuje seznam uzlů přidáním **zobrazení v sadě Visual Studio** položky kontextové nabídky, která otevře seznam přímo v sadě Visual Studio. Kód získá přístup k datům v seznamu pro uzel získat adresu URL v seznamu otevřete v sadě Visual Studio.  
+ Následující příklad kódu ukazuje, jak načíst data pro základní Sharepointového seznamu, který představuje seznam uzlů v **Průzkumníka serveru**. Ve výchozím nastavení, máte seznam uzlů **zobrazit v prohlížeči** položky kontextové nabídky, který můžete kliknout a otevřít ve webovém prohlížeči. Tento příklad rozšiřuje seznam uzlů tak, že přidáte **zobrazení v sadě Visual Studio** položky kontextové nabídky, která otevře seznam přímo v sadě Visual Studio. Kód přistupuje k datům seznamu pro uzel k získání adresy URL v seznamu otevřete v sadě Visual Studio.  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]  
   
- Tento příklad používá k získání projektu služby SharePoint <xref:EnvDTE.DTE> objekt, který se používá k otevření seznamů v sadě Visual Studio. Další informace o projektu služby SharePoint, naleznete v části [použití služby projektu služby SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
+ Tento příklad používá k získání projektu služby SharePoint <xref:EnvDTE.DTE> objekt, který se používá k otevření jsou uvedeny v sadě Visual Studio. Další informace o projektu služby SharePoint, naleznete v tématu [použijte službu projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md).  
   
- Další informace o základní úlohy vytváření rozšíření pro uzel služby SharePoint, naleznete v části [postupy: rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
+ Další informace o základní úlohy vytváření rozšíření pro uzel služby SharePoint, naleznete v tématu [jak: Rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
   
 ## <a name="compile-the-code"></a>Kompilace kódu  
- Tento příklad vyžaduje odkazy na následující:  
+ Tento příklad vyžaduje odkazy na následující sestavení:  
   
 -   EnvDTE  
   
@@ -48,11 +45,10 @@ ms.locfileid: "37120273"
 -   System.ComponentModel.Composition  
   
 ## <a name="deploy-the-extension"></a>Nasazení rozšíření  
- K nasazení **Průzkumníka serveru** rozšíření, vytvořte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] balíček rozšíření (VSIX) pro sestavení a všechny další soubory, které chcete distribuovat s rozšířením. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ K nasazení **Průzkumníka serveru** rozšíření, vytvořte [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) balíčku pro sestavení a všechny další soubory, které chcete distribuovat s příponou. Další informace najdete v tématu [nasadit rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Viz také:
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Postupy: rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [Postupy: Rozšíření uzlu služby SharePoint v Průzkumníku serveru](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

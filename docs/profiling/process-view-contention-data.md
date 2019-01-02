@@ -1,8 +1,6 @@
 ---
-title: Zobrazení procesů – Data kolizí | Microsoft Docs
-ms.custom: ''
+title: Zobrazení procesů – Data kolizí | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,34 +10,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943886"
 ---
 # <a name="process-view---contention-data"></a>Zobrazení procesů – data kolizí
-Zobrazení procesů zobrazí data kolizí pro procesy a vláken, které byly provedeny během spuštění profilování.  
+Proces zobrazení dat kolizí pro procesy a vlákna, které byly spuštěny během spuštění profilování.  
   
- Když symboly jsou k dispozici, procesy jsou uvedeny podle názvu. Pokud symboly nejsou k dispozici, procesy jsou uvedeny podle jejich adresa paměti v šestnáctkovém formátu. Vlákna jsou uvedeny jako podřízené objekty proces, který je vytvořil.  
+ Když symboly jsou k dispozici, procesy jsou seřazeny podle názvu. Pokud nejsou k dispozici symboly, procesy jsou seřazeny podle jejich adresa paměti v šestnáctkovém formátu. Vlákna jsou uvedené jako podřízené objekty daného procesu, který je vytvořil.  
   
- Následující tabulka vysvětluje hodnot sloupců v tabulce proces zobrazení.  
+ Následující tabulka vysvětluje hodnot sloupce v tabulce zobrazení procesu.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Počáteční čas**|Počet milisekund nebo cyklů procesoru od začátku profilace na začátek procesu nebo přístup z více vláken.|  
-|**Blokované čas**|Celkový čas, během kterého byly funkce proces nebo podproces blokovat spouštění.|  
-|**Blokované čas: %**|Procento životnosti procesu nebo vlákno, ve kterém byly blokovat provádění funkcí proces nebo přístup z více vláken.|  
-|**Kolizí**|Počet pokusů, které funkce proces nebo podproces měla blokovat spouštění.|  
-|**% Kolizí**|Procento všech kolizí v profilaci spuštění, které byly kolizí procesu nebo přístup z více vláken.|  
-|**Koncový čas**|Počet milisekund nebo cyklů procesoru od začátku profilace na konci procesu nebo přístup z více vláken.|  
-|**ID**|Generované systémem identifikátor procesu nebo přístup z více vláken.|  
-|**Doba životnosti**|Počet milisekund nebo cyklů procesoru od začátku procesu nebo na konci procesu nebo vlákna nebo konci profilace podprocesu.|  
-|**Typ**|Typ řádek, zpracovat nebo přístup z více vláken.<br /><br /> Pouze v **VSReport** příkazového řádku sestavy. Další informace najdete v tématu [vsperfreport –](../profiling/vsperfreport.md).|  
-|**Jméno**|Název procesu nebo přístup z více vláken.|  
-|**Jedinečné ID**|Identifikátor generovaný profileru, které jsou jedinečné pro proces nebo přístup z více vláken.|  
+|**Čas zahájení**|Počet milisekund nebo cyklů procesoru od začátku profilace do začátku procesu nebo vlákna.|  
+|**Čas zablokování**|Celkový čas, během kterého se spuštění zablokoval funkce procesu nebo vlákna.|  
+|**% Času zablokování**|Procento doby životnosti procesu nebo vlákna, ve kterém byly blokovat provádění funkce procesu nebo vlákna.|  
+|**Tento počet sporů:**|Počet pokusů, které funkce proces nebo vlákno se zablokoval spuštění.|  
+|**% Sporů**|Procento všech sporů v profilování, které byly sporů procesu nebo vlákna.|  
+|**Koncový čas**|Počet milisekund nebo cyklů procesoru od začátku profilace do konce procesu nebo vlákna.|  
+|**ID**|Systémem generovaných identifikátor procesu nebo vlákna.|  
+|**Doba životnosti**|Počet milisekund nebo cyklů procesoru od samého začátku procesu nebo vlákna na konci procesu nebo vlákna nebo konce profilace.|  
+|**Typ**|Typ řádku, procesu nebo vlákna.<br /><br /> Pouze v **VSReport** příkazového řádku sestavy. Další informace najdete v tématu [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Název**|Název procesu nebo vlákna.|  
+|**Jedinečné ID**|Profiler vygenerovat identifikátor, který je jedinečný na příslušný proces nebo vlákno.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení procesů](../profiling/process-view.md)

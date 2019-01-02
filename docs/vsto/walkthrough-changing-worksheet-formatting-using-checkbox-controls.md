@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Změna formátování listů s použitím ovládacích prvků CheckBox'
-ms.custom: ''
+title: 'Průvodce: Změna formátování listů s použitím ovládacích prvků CheckBox'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935096"
 ---
-# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Návod: Změna formátování listů s použitím ovládacích prvků CheckBox
+# <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Průvodce: Změna formátování listů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje základy používání zaškrtávacích políček na list aplikace Microsoft Office Excel Změna formátování. Nástroje pro vývoj pro Office v sadě Visual Studio použije k vytvoření a přidání kódu do projektu. Výsledek jako úplnou vzorovou najdete v ukázce ovládací prvky aplikace Excel v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49843532"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvořte projekt sešitu aplikace Excel s názvem **formátování v mé aplikaci Excel**. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvořte projekt sešitu aplikace Excel s názvem **formátování v mé aplikaci Excel**. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **formátování v mé aplikaci Excel** projektu **Průzkumníka řešení**.  
   
@@ -71,21 +68,21 @@ ms.locfileid: "49843532"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**applyBoldFont**|  
+    |**Název**|**applyBoldFont**|  
     |**Text**|**Tučné**|  
   
 5.  Přetáhněte druhý zaškrtávací políčko na nebo blízko ní buňky **B4** a změnit následující vlastnosti:  
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**applyItalicFont**|  
+    |**Název**|**applyItalicFont**|  
     |**Text**|**Kurzíva**|  
   
 6.  Přetáhněte třetí zaškrtávací políčko na nebo blízko ní buňky **B6** a změnit následující vlastnosti:  
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**applyUnderlineFont**|  
+    |**Název**|**applyUnderlineFont**|  
     |**Text**|**Podtržení**|  
   
 7.  Vyberte všechny tři zaškrtávací políčka při držení **Ctrl** klíč.  
@@ -105,7 +102,7 @@ ms.locfileid: "49843532"
   
 2. Ověřte, že **$B$ 9** se zobrazí v upravitelné textové pole a buňka **B9** zaškrtnuto. Pokud není, klikněte na buňku **B9** ji vyberte.  
   
-3. Klikněte na tlačítko **OK**.  
+3. Klikněte na **OK**.  
   
 4. Buňka **B9** stane oblast s názvem `NamedRange1`.  
   
@@ -115,7 +112,7 @@ ms.locfileid: "49843532"
   
    |Vlastnost|Hodnota|  
    |--------------|-----------|  
-   |**Jméno**|**textFont**|  
+   |**Název**|**textFont**|  
    |**Hodnota2**|**Klikněte na zaškrtávací políčko, chcete-li změnit formátování tento text.**|  
   
    Dále napište kód k formátování textu, pokud je vybrána možnost.  
@@ -142,7 +139,7 @@ ms.locfileid: "49843532"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]  
   
-5.  V jazyce C#, je nutné přidat obslužné rutiny událostí pro políček <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> události, jak je znázorněno níže. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  V jazyce C#, je nutné přidat obslužné rutiny událostí pro políček <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> události, jak je znázorněno níže. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]  
   
@@ -161,10 +158,9 @@ ms.locfileid: "49843532"
  Tento návod ukazuje základy používání zaškrtávacích políček a formátování textu na listech aplikace Excel. Tady jsou některé úlohy, které by mohl pocházet Další:  
   
 -   Nasazení projektu. Další informace najdete v tématu [nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
--   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [návod: zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Návody pro aplikaci Excel](../vsto/walkthroughs-using-excel.md)   
  [Namedrange – ovládací prvek](../vsto/namedrange-control.md)   
  [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

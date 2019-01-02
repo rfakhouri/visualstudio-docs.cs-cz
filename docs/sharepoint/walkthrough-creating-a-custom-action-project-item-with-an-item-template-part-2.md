@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2 | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2 | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913933"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Průvodce: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružte jej k šabloně položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony přidáte novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.  
   
- V tomto názorném postupu přidáte průvodce do položky projektu vlastní akce, která je znázorněna v [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Když uživatel přidá vlastní akce položky projektu do projektu služby SharePoint, Průvodce shromažďuje informace o vlastní akci (třeba jeho umístění a adresa URL má přejít, když koncový uživatel vybere) a přidá tyto informace *Elements.xml* soubor v nové položce projektu.  
+ V tomto názorném postupu přidáte průvodce do položky projektu vlastní akce, která je znázorněna v [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Když uživatel přidá vlastní akce položky projektu do projektu služby SharePoint, Průvodce shromažďuje informace o vlastní akci (třeba jeho umístění a adresa URL má přejít, když koncový uživatel vybere) a přidá tyto informace *Elements.xml* soubor v nové položce projektu.  
   
  Tento návod demonstruje následující úkoly:  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296239"
 >  Můžete si stáhnout ukázky z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) , který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.  
   
 ## <a name="prerequisites"></a>Požadavky  
- Chcete-li provést Tento názorný postup, musíte nejdřív vytvořit CustomActionProjectItem řešení provedením [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
+ Chcete-li provést Tento názorný postup, musíte nejdřív vytvořit CustomActionProjectItem řešení provedením [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296239"
   
   Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
-- Průvodce pro šablony projektů a položek v sadě Visual Studio. Další informace najdete v tématu [postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md) a <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
+- Průvodce pro šablony projektů a položek v sadě Visual Studio. Další informace najdete v tématu [jak: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md) a <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
   
 - Vlastní akce v Sharepointu. Další informace najdete v tématu [vlastní akce](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
 ## <a name="create-the-wizard-project"></a>Vytvoření projektu průvodce
- K dokončení tohoto návodu, musíte přidat projekt do řešení CustomActionProjectItem, které jste vytvořili v [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Budete implementovat <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a definovat Průvodce uživatelského rozhraní v tomto projektu.  
+ K dokončení tohoto návodu, musíte přidat projekt do řešení CustomActionProjectItem, které jste vytvořili v [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Budete implementovat <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a definovat Průvodce uživatelského rozhraní v tomto projektu.  
   
 #### <a name="to-create-the-wizard-project"></a>Vytvoření projektu průvodce  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296239"
   
 2.  V **Návrháře projektu**, ujistěte se, že Cílová architektura, která je nastavena na rozhraní .NET Framework 4.5.  
   
-     Pro projekty Visual C#, můžete tuto hodnotu nastavit na **aplikace** kartu. Pro projekty jazyka Visual Basic, můžete tuto hodnotu nastavit na **kompilaci** kartu. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Pro projekty Visual C#, můžete tuto hodnotu nastavit na **aplikace** kartu. Pro projekty jazyka Visual Basic, můžete tuto hodnotu nastavit na **kompilaci** kartu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  V **ItemTemplateWizard** projektu, přidejte **okno (WPF)** položky do projektu a potom zadejte název položky **WizardWindow**.  
   
@@ -156,7 +153,7 @@ ms.locfileid: "51296239"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  V tomto okamžiku návodu je celý kód pro průvodce v projektu. Sestavte projekt, abyste měli jistotu, že se zkompiluje bez chyb.  
   
 #### <a name="to-build-your-project"></a>K sestavení projektu  
@@ -349,6 +346,5 @@ ms.locfileid: "51296239"
  [Definování vlastních typů položek projektu služby SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Vytváření šablon položek a projektů pro položky projektu SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Odkaz na schéma šablon sady Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [Postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [Postupy: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [Výchozí umístění vlastní akce a ID](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

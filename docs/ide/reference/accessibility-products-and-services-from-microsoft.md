@@ -1,9 +1,8 @@
 ---
-title: Produkty a služby od Microsoftu
+title: Produkty a služby pro usnadnění přístupu od Microsoftu
 description: Další informace o produktech a službách od Microsoftu, která můžou pomoct náš operační systémy, programů a aplikace pro každodenní použití, včetně osobám s postižením.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886316"
 ---
-# <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby od Microsoftu
+# <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby pro usnadnění přístupu od Microsoftu
 
 > [!TIP]
 > Další informace o nedávných aktualizacích usnadnění přístupu ke službě Visual Studio, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.

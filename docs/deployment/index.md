@@ -5,16 +5,15 @@ description: Zjistěte, jak pomocí sady Visual Studio 2017 k nasazení aplikac�
 ms.custom: seodec18
 ms.topic: landing-page
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 04e773afd6fc44e79f01dc4204c851cc4a67c947
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 875549bcc1158542fe19da05711a6d39bb4efb25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893455"
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 

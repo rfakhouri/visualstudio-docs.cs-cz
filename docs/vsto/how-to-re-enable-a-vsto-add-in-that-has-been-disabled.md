@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: opětovné povolení VSTO doplňku, který byl zakázán'
-ms.custom: ''
+title: 'Postupy: Opětovné povolení VSTO doplňku, který byl zakázán'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939395"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Postupy: opětovné povolení VSTO doplňku, který byl zakázán
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Postupy: Opětovné povolení VSTO doplňku, který byl zakázán
   Aplikace Microsoft Office můžete zakázat doplňků VSTO, které neočekávané chování. Pokud aplikace doplňku VSTO nenačte, při pokusu o ladění, aplikace může být zakázaný, pevný nebo obnovitelně zakázáno doplňku VSTO.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -50,7 +47,7 @@ ms.locfileid: "35676445"
   
 6.  Vyberte doplňku VSTO a klikněte na tlačítko **povolit**.  
   
-7.  Klikněte na tlačítko **Zavřít**.  
+7.  Klikněte na **Zavřít**.  
   
 ## <a name="soft-disabled-vsto-add-ins"></a>Doplňky VSTO konfigurace soft zakázáno  
  Zakázání obnovitelně může dojít, když doplňku VSTO dojde k chybě, který nevyvolá aplikace neočekávaně zavřít. Například aplikace může být obnovitelné zakázat doplňku VSTO Pokud vyvolá neošetřenou výjimku při <xref:Microsoft.Office.Tools.AddIn.Startup> provádění obslužné rutiny události.  
@@ -74,11 +71,9 @@ ms.locfileid: "35676445"
   
 6.  V **doplňky modelu COM** dialogové okno, vyberte políčko vedle je zakázané doplňku VSTO.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také:  
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Ladění projektů Office](../vsto/debugging-office-projects.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)  
-  
-  

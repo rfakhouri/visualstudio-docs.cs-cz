@@ -2,7 +2,6 @@
 title: -Run (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /run Devenv
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2efa616bab79f4d41ddf53a08c5a3628f47e3524
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 9f46afb431b998b5fd937d24178a602f6aea81eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921741"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 Zkompiluje a spustí zadaný projekt nebo řešení.
@@ -36,11 +35,11 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="arguments"></a>Arguments
  `SolutionName`
 
- Požadováno. Úplná cesta a název souboru řešení.
+ Povinný parametr. Úplná cesta a název souboru řešení.
 
  `ProjectName`
 
- Požadováno. Úplná cesta a název souboru projektu.
+ Povinný parametr. Úplná cesta a název souboru projektu.
 
 ## <a name="remarks"></a>Poznámky
  Zkompiluje a spustí zadaný projekt nebo řešení podle nastavení nakonfigurovaného pro konfiguraci aktivního řešení. Tento přepínač spuštění integrovaného vývojového prostředí (IDE) a zůstane aktivní po projekt nebo řešení po dokončení jeho běhu.

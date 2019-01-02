@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6fffd688382287dc4c5d2e7623297383637e7b64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054170"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966596"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Přenosy, migrace a upgrade projektů sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,15 +70,15 @@ Když zvažujete, zda byste měli přejít na novější verzi sady Visual Studi
 |SketchFlow|Pokud umožníte softwaru Visual Studio upgradovat projekt na WPF 4.5/Silverlight 5, můžete ji otevřít v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] Databáze|Můžete otevřít projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1. Pokud máte soubor databáze (MDF), který byl vytvořen v dřívější verzi serveru SQL Server, je nutné upgradovat na [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] předtím, než ho můžete použít s verzí SQL serveru Express LocalDB, ale databáze již není kompatibilní s předchozími verzemi serveru SQL Server. Pokud neprovedete upgrade, můžete nadále pracovat s databází v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] po instalaci a použití [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] ve stejném počítači. Další informace najdete v tématu [Upgrade souborů .mdf](../data-tools/upgrade-dot-mdf-files.md).|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Pokud [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express nainstalován na počítačích, na kterých běží [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], a Visual Studio 2010 SP1, nebude možné projekt otevřít ve všech třech verzích.|
-|Projekt sestavy systému SQL Server|Můžete otevřít projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Pro místní režim pouze (když není připojení k SQL serveru), nebudete získáte možnosti času návrhu pro ovládací prvky asociované s prohlížečem v [!INCLUDE[vs2010](../includes/vs2010-md.md)], ale bude program fungovat správně v době běhu. **Upozornění:** Pokud chcete přidat funkce, která je specifická pro [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], bude schéma sestavy aktualizováno automaticky a nebude opět otevřít projekt v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
+|Projekt sestavy systému SQL Server|Můžete otevřít projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Pro místní režim pouze (když není připojení k SQL serveru), nebudete získáte možnosti času návrhu pro ovládací prvky asociované s prohlížečem v [!INCLUDE[vs2010](../includes/vs2010-md.md)], ale bude program fungovat správně v době běhu. **Upozornění:**  Pokud chcete přidat funkce, která je specifická pro [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], bude schéma sestavy aktualizováno automaticky a nebude opět otevřít projekt v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |Testování částí|Můžete použít [!INCLUDE[TCMext](../includes/tcmext-md.md)] v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1 k otevření testů, které byly vytvořeny v některé z těchto verzí.|
-|Visual C++|Můžete použít [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] k otevření projektu jazyka C++, který byl vytvořen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1. Pokud chcete použít [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] vytvářet prostředí pro sestavení projektu, který byl vytvořen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], musí mít obě verze systému Visual Studio nainstalovaný na stejném počítači. Další informace najdete v tématu [postupy: Upgrade projekty Visual C++ pro Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) a [průvodce Visual C++ přenosem a upgradováním](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
+|Visual C++|Můžete použít [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] k otevření projektu jazyka C++, který byl vytvořen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nebo Visual Studio 2010 SP1. Pokud chcete použít [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] vytvářet prostředí pro sestavení projektu, který byl vytvořen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], musí mít obě verze systému Visual Studio nainstalovaný na stejném počítači. Další informace najdete v tématu [jak: Upgrade projektů Visual C++ pro Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) a [Visual C++ Průvodce přenosem a upgradem](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
 |Web systému Visual Studio 2010|Pokud umožníte softwaru Visual Studio automaticky upgradovat projekt, můžete ji otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1.|
 |Databáze systému Visual Studio 2010 (.dbproj)|Pokud převedete projekt na projekt databáze serveru SQL Server Data Tools, které lze jej otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Ale [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nepodporuje tyto artefakty:<br /><br /> -testy jednotek<br />-plány generování dat<br />– soubory porovnání dat<br />– rozšíření vlastního pravidla pro statickou analýzu kódu<br />-server.sqlsettings<br />– soubory .sqlcmd<br />– rozšíření vlastního nasazení<br />-dílčí projekty (.files)<br /><br /> Po instalaci datových nástrojů systému SQL Server lze projekt otevřít v systému Visual Studio 2010 SP1 po převodu. Další informace najdete v tématu [Microsoft SQL Server Data Tools](http://msdn.microsoft.com/data/tools.aspx).|
 |Nástroje Visual Database Tools sady Visual Studio 2010|Můžete otevřít tento projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1.|
 |Visual Studio Lab Management|Můžete použít [!INCLUDE[TCMext](../includes/tcmext-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1 k otevření prostředí, které byly vytvořeny v některé z těchto verzí. Verze programu Microsoft Test Manager však musí před vytvořením prostředí odpovídat verzi služby Team Foundation Server.|
 |Makro systému Visual Studio|Tento projekt nelze otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] vzhledem k tomu, že typ projektu nepodporuje.|
-|Visual Studio SDK/VSIX|Po aktualizaci projektu sady Visual Studio SDK na [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], nemůže být otevřen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Další informace najdete v tématu [postupy: migrace projektů rozšíření do sady Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
+|Visual Studio SDK/VSIX|Po aktualizaci projektu sady Visual Studio SDK na [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], nemůže být otevřen v [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Další informace najdete v tématu [jak: Migrace projektů rozšíření do sady Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
 |Nástroje Microsoft Azure pro sadu Visual Studio|Pokud používáte nástroje Microsoft Azure pro sadu Visual Studio verze 2.1, lze otevřít projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1. Pro projekty, které jsou cíleny na starší verze Pokud umožníte softwaru Visual Studio upgradovat projekt na verzi 2.1, lze jej v otevřít [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1.|
 |Windows Communication Foundation, Windows Presentation Foundation|Můžete otevřít tento projekt v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]a Visual Studio 2010 SP1.|
 |Windows Mobile|Tento projekt nelze otevřít v [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] vzhledem k tomu, že typ projektu nepodporuje.|

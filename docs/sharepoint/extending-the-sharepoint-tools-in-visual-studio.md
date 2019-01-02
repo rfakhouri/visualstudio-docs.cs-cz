@@ -1,9 +1,6 @@
 ---
 title: Rozšíření nástrojů SharePoint v sadě Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01a595536b85bac6948cee607af2e0897a7be1c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890979"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Rozšíření nástrojů SharePoint v sadě Visual Studio
   Nástroje služby SharePoint v sadě Visual Studio požadavkům mnoha scénářů vývoje aplikace. Však můžete narazit na případy, kdy neposkytují funkce, které vyžadují vy nebo ostatní vývojáři. V těchto případech můžete rozšířit nástroje služby SharePoint k vytvoření funkce, které potřebujete.

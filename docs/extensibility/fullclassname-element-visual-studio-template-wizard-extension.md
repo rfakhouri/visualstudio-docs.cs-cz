@@ -1,9 +1,7 @@
 ---
 title: Fullclassname – Element (rozšíření Průvodce pro šablony sady Visual Studio) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f185d791010c545dd56326505d871fb964a71b66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943732"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Fullclassname – element (rozšíření Průvodce pro šablony sady Visual Studio)
 Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní.  
@@ -93,4 +91,4 @@ Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní.
 ## <a name="see-also"></a>Viz také:  
  [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)   
  [Vytvoření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
- [Postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Postupy: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)

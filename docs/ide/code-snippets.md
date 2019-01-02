@@ -2,7 +2,6 @@
 title: Fragmenty kódu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -19,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889225"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
@@ -100,7 +99,7 @@ Pokud změníte `newPropertyValue` k `m_property`, pak každá instance `newProp
 ## <a name="see-also"></a>Viz také:
 
 - [Návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md)
-- [Postupy: distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)
+- [Postupy: Distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)
 - [Osvědčené postupy pro používání fragmentů kódu](../ide/best-practices-for-using-code-snippets.md)
 - [Řešení potíží s fragmenty kódu](../ide/troubleshooting-snippets.md)
 - [C#fragmenty kódu](../ide/visual-csharp-code-snippets.md)

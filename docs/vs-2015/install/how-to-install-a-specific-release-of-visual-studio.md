@@ -1,12 +1,11 @@
 ---
-title: 'Postupy: instalace konkrétní verze | Dokumentace Microsoftu'
+title: 'Postupy: Instalace konkrétní verze | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,14 +15,14 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1f8da9b0a577ba7810c3895d9492ce4be7c69cd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 42776c20cd6634903344569f9ce1f35a776c5f86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959889"
 ---
-# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Postupy: instalace konkrétní verze sady Visual Studio
+# <a name="how-to-install-a-specific-release-of-visual-studio"></a>Postupy: Instalace konkrétní verze sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Často aktualizujeme instalačního programu sady Visual Studio tak, aby získat nejaktuálnější a optimalizované verzi naší volitelných funkcí.  Ale pokud chcete nainstalovat starší verze sady Visual Studio 2015 – například před aktualizací 1 vydaná verze sady Visual Studio s podporu iOS, pak je nutné donutit pomocí starší verze svých souborů manifestů funkcí instalačního programu sady Visual Studio. V tomto článku se dozvíte, jak na to.
@@ -38,7 +37,7 @@ ms.locfileid: "53065905"
 
 |Edice sady Visual Studio 2015|Co se má spustit|Použití příkazového řádku|Co instalační program nemá|
 |--------------------------------|-----------------|--------------------------|---------------------|
-|Visual Studio Enterprise (použitím nejnovější veřejné verze)|Visual Studio Enterprise s aktualizací (k dispozici z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Poznámka:** výchozí chování tato instalace nabízí nejnovější volitelné funkce, a proto se nevyžaduje žádné parametry příkazového řádku.|Instalační program sady Visual Studio bude používat nejnovější feed.xml a nainstalovat nejnovější soubory|
+|Visual Studio Enterprise (použitím nejnovější veřejné verze)|Visual Studio Enterprise s aktualizací (k dispozici z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Poznámka:**  Výchozí chování tato instalace nabízí nejnovější volitelné funkce a proto se nevyžaduje žádné parametry příkazového řádku.|Instalační program sady Visual Studio bude používat nejnovější feed.xml a nainstalovat nejnovější soubory|
 |Visual Studio Enterprise Update 3 (původní Update 3 bez jakékoli další aktualizace Update 3 období)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, která byla k dispozici při vydání aktualizací Update 3|
 |Visual Studio Enterprise Update 2 (původní Update 2, ale s aktualizacemi tuto předem aktuální aktualizace 3)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, který byl aktuální před vydané s aktualizací Update 3|
 |Visual Studio Enterprise (původní Update 2 bez jakékoli další aktualizace Update 2 období)|Visual Studio Enterprise RTM (k dispozici [stránce pro stažení předplatná MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Instalační program sady Visual Studio použije feed.xml, která byla k dispozici po vydání aktualizace 2|

@@ -1,8 +1,6 @@
 ---
 title: '&lt;závislost&gt; – Element (nasazení ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e210b0787c3325a009bc54505812f22c44da84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d16b4e82dc84ce88ac47fd623502891c7b85ba1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834162"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;závislost&gt; – element (nasazení ClickOnce)
 Určuje verzi aplikace k instalaci a umístění manifestu aplikace.  
@@ -78,26 +76,26 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
  `dependency` Element obvykle vyjadřuje v sestaveních obsažených v rámci závislosti pro hlavní aplikaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Pokud vaše aplikace Main.exe spotřebuje sestavení nazvané DotNetAssembly.dll, toto sestavení musí být uvedené v oddílu závislosti. Závislost, ale můžete také vyjádřit jiné typy závislostí, například závislosti na konkrétní verzi modulu common language runtime sestavení v globální mezipaměti sestavení (GAC) nebo objekt modelu COM. Protože je technologie nasazení bezdotykový [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nelze zahájit stahování a instalace z těchto typů závislosti, ale nemá zabránit spuštění aplikace Pokud jeden nebo více zadanými závislostmi neexistují.  
 
 ## <a name="dependentassembly"></a>dependentAssembly  
- Požadováno. Tento prvek obsahuje `assemblyIdentity` elementu. V následující tabulce jsou uvedeny atributy `dependentAssembly` podporuje.  
+ Povinný parametr. Tento prvek obsahuje `assemblyIdentity` elementu. V následující tabulce jsou uvedeny atributy `dependentAssembly` podporuje.  
 
 
 | Atribut | Popis |
 |------------------| - |
 | `preRequisite` | Volitelné. Určuje, že toto sestavení by již měla existovat v mezipaměti GAC. Platné hodnoty jsou `true` a `false`. Pokud `true`a zadané sestavení v GAC neexistuje, aplikace se nepovedlo spustit. |
 | `visible` | Volitelné. Určuje identitu aplikace nejvyšší úrovně, včetně jejích závislostí. Interně používán [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ke správě úložiště aplikací a aktivace. |
-| `dependencyType` | Požadováno. Vztah mezi touto závislostí a aplikace. Platné hodnoty jsou:<br /><br /> -   `install`. Součást představuje samostatnou instalaci z aktuální aplikace.<br />-   `preRequisite`. Komponenta vyžaduje aktuální aplikace. |
+| `dependencyType` | Povinný parametr. Vztah mezi touto závislostí a aplikace. Platné hodnoty jsou:<br /><br /> -   `install`. Součást představuje samostatnou instalaci z aktuální aplikace.<br />-   `preRequisite`. Komponenta vyžaduje aktuální aplikace. |
 | `codebase` | Volitelné. Úplná cesta k manifestu aplikace. |
 | `size` | Volitelné. Velikost manifest aplikace v bajtech. |
 
 ## <a name="assemblyidentity"></a>Vlastnost assemblyIdentity  
- Požadováno. Tento element je podřízeným prvkem `dependentAssembly` elementu. Obsah `assemblyIdentity` musí být stejné jako nastavení popsané v [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. V následující tabulce jsou uvedeny atributy `assemblyIdentity` elementu.  
+ Povinný parametr. Tento element je podřízeným prvkem `dependentAssembly` elementu. Obsah `assemblyIdentity` musí být stejné jako nastavení popsané v [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace. V následující tabulce jsou uvedeny atributy `assemblyIdentity` elementu.  
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Určuje název aplikace.|  
-|`Version`|Požadováno. Určuje číslo verze aplikace, v následujícím formátu: `major.minor.build.revision`|  
-|`publicKeyToken`|Požadováno. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů hash SHA-1 veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč použitý k podpisu musí být 2 048 bitů nebo vyšší.|  
-|`processorArchitecture`|Požadováno. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitová verze Windows a `IA64` pro 64bitová verze Windows.|  
+|`Name`|Povinný parametr. Určuje název aplikace.|  
+|`Version`|Povinný parametr. Určuje číslo verze aplikace, v následujícím formátu: `major.minor.build.revision`|  
+|`publicKeyToken`|Povinný parametr. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů hash SHA-1 veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč použitý k podpisu musí být 2 048 bitů nebo vyšší.|  
+|`processorArchitecture`|Povinný parametr. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitová verze Windows a `IA64` pro 64bitová verze Windows.|  
 |`Language`|Volitelné. Určuje jazyk kódy dvě části sestavení. Například EN-US, což je zkratka pro angličtinu (US). Výchozí hodnota je `neutral`. Tento element má `asmv2` oboru názvů.|  
 |`type`|Volitelné. Pro zpětnou kompatibilitu s Windows – souběžně nainstalovat technologii. Jediná povolená hodnota je `win32`.|  
 

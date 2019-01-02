@@ -1,8 +1,6 @@
 ---
-title: marker_importance – výčet | Microsoft Docs
-ms.custom: ''
+title: marker_importance – výčet | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6541ddecceff6d9e7867dd5feead3457b2248b45
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 330ba15fa62272bd2c2f7ea7b40d6b527ab237c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841687"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance – výčet
-Představuje úroveň důležitosti značky Vizualizéru souběžnosti.  
+Představuje úroveň důležitosti značek Vizualizátor souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,10 +34,10 @@ enum marker_importance;
   
 |Název|Popis|  
 |----------|-----------------|  
-|`critical_importance`|Určuje, zda má značky stěžejní význam.|  
+|`critical_importance`|Určuje, že má značku stěžejní význam.|  
 |`high_importance`|Určuje, že značky má vysokou důležitostí.|  
-|`low_importance`|Určuje, zda má značky nízkou důležitostí.|  
-|`normal_importance`|Určuje, že značky je normální význam.|  
+|`low_importance`|Určuje, zda má značku s nízkou důležitostí.|  
+|`normal_importance`|Určuje, že značky má normální význam.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkersobj.h*  

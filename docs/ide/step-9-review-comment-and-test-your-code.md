@@ -1,9 +1,7 @@
 ---
-title: 'Krok 9: Kontrola, komentáře a testování kódu'
-ms.custom: ''
+title: 'Krok 9: Zkontrolujte, komentáře a testování kódu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -11,21 +9,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cb11810a8e87dfe2a21538b5c69c027e84f4f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821202"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Kontrola, komentáře a testování kódu
+# <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zkontrolujte, komentáře a testování kódu
 Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že nedojde ke změně způsobu, jakým se chová program. To usnadňuje pro čtenáře kódu pochopit jeho význam. Přidání komentářů do kódu je dobré se naučit do. V jazyce Visual C# dvě lomítka (/ /) značí řádek jako komentáře. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentáře. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na svých projektech, takže můžete zachytit a opravit případné problémy dříve, než kód složitější. Tento postup se nazývá *iterativnější testování*.
 
  Právě jste vytvořili něco, co funguje, a i když ještě není Hotovo, může program již načíst obrázek. Před přidání komentáře ke kódu a testování, potřebují dobu na zkontrolování koncepty kódu, protože tyto koncepty budete používat často:
 
 - Pokud jste dvakrát kliknuli **zobrazit obrázek** tlačítko **Návrháře formulářů Windows**, rozhraní IDE automaticky přidá *metoda* do kódu vašeho programu.
 
-- Způsoby, jak organizovat kód: je to, jak váš kód seskupený.
+- Způsoby, jak organizovat kód: Je to, jak váš kód seskupený.
 
 - Ve většině případů, metodu provádí malý počet akcí v určitém pořadí, například jako vaše `showButton_Click()` metoda zobrazí dialogové okno a potom načte obrázek.
 
@@ -45,7 +43,7 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
 
    Příkazy jsou to, co nechává vaše programy provádět akce. V jazyce Visual C# příkaz vždy končí středníkem. V jazyce Visual Basic je konec řádku konec příkazu. (Žádný středník není třeba v jazyce Visual Basic). Předchozí příkaz sděluje vaše <xref:System.Windows.Forms.PictureBox> ovládací prvek se načíst soubor, který uživatel vybral s **OpenFileDialog** komponenty.
 
-  ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: vytvoření prohlížeče obrázků v C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+  ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 ## <a name="to-add-comments"></a>Chcete-li přidat komentáře
 
@@ -85,12 +83,12 @@ Dále přidáte komentář do vašeho kódu. Komentář je Všimněte si, že ne
     > [!NOTE]
     >  Pokud nevidíte žádné obrázky v **vyberte soubor s obrázkem** dialogové okno, ujistěte se, že **všechny soubory (*.\*)**  filtru je vybrali v rozevíracím seznamu v dolní pravé části dialogových oken.
 
-3.  Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnery: udržují správnou velikost, když ji uživatel změní formuláře.
+3.  Načíst obrázek a zobrazí se ve vašem ovládacím prvku PictureBox. Zkuste změnit velikost formuláře přetažením jeho okrajů. Protože máte váš ovládací prvek PictureBox ukotven uvnitř kontejneru TableLayoutPanel, který je sám ukotven uvnitř formuláře, oblast vašeho obrázku změní velikost sebe sama tak, aby je stejně široká jako formulář a vyplní horních 90 procent formuláře. To je důvod, proč jste použili <xref:System.Windows.Forms.TableLayoutPanel> a <xref:System.Windows.Forms.FlowLayoutPanel> kontejnerů: Udržují správnou velikost, když ji uživatel změní formuláře.
 
      Nyní větší obrázky překračují hranice prohlížeče obrázků. V dalším kroku přidáte kód, aby obrázky pasovaly do okna.
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 10: napsat kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 10: Napište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
--   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: zápis kódu pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

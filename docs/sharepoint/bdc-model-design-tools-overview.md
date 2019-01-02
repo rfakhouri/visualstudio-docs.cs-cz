@@ -1,17 +1,12 @@
 ---
 title: Přehled nástroje pro návrh modelu služby BDC | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923332"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Přehled nástroje pro navrhování modelů služby BDC
   Obchodní Data připojení (BDC) model můžete navrhnout pomocí návrháře služby BDC **podrobnosti metody služby BDC** okně a **služby BDC Explorer**.  
@@ -76,20 +71,18 @@ ms.locfileid: "49914499"
 > [!NOTE]  
 >  Změny v původní popisovač typu neovlivňují kopie tento typ popisovače.  
   
- Další informace najdete v tématu [postupy: definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+ Další informace najdete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
 ## <a name="see-also"></a>Viz také:
- [Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)   
+ [Postupy: Vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
- [Postupy: Přidání specifické vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
- [Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
+ [Postupy: Přidání konkrétní vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
+ [Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
  [Vytvoření přidružení mezi entitami](../sharepoint/creating-an-association-between-entities.md)   
  [Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [Vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 

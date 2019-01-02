@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: vytvoření dokumentu XML na základě schématu XSD'
+title: 'Postupy: Vytvoření dokumentu XML na základě schématu XSD'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,26 +9,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820196"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: vytvoření dokumentu XML na základě schématu XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: Vytvoření dokumentu XML na základě schématu XSD
 
-**Generovat XML ukázka** funkce generuje ukázkový soubor XML založené na souboru schématu XML (XSD).
+**Generovat ukázkové XML** funkce generuje ukázkový soubor XML na základě souboru schématu XML (XSD).
 
- Tuto možnost můžete použít pro následující scénáře:
+ Tuto možnost můžete použít v následujících scénářích:
 
--   Abyste pochopili použití různé konstrukce v schéma.
+-   Abyste pochopili použití různých konstrukcí ve schématu.
 
--   Potvrďte, že schéma nemá co se má provést.
+-   Potvrďte, že schéma co dělá jeho účelem je provádět.
 
-**Generovat XML ukázka** funkce je dostupná pouze na globální elementy a vyžaduje platnou sadu schématu XML.
+**Generovat ukázkové XML** funkce je dostupná pouze na globální prvky a vyžaduje platnou sadu schémat XML.
 
-Tato funkce se obvykle vygeneruje platný dokumentů XML. Ale pokud schéma obsahuje jeden nebo více z následujících, ukázky pravděpodobně není platný:
+Tato funkce generuje obvykle platný dokumentů XML. Nicméně pokud schéma obsahuje jeden nebo více z následujících akcí, ukázka nemusí být platné:
 
 -   `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.
 
@@ -39,15 +38,15 @@ Tato funkce se obvykle vygeneruje platný dokumentů XML. Ale pokud schéma obsa
 
 -   `xs:ENTITY`, `xs:ENTITIES`, a `xs:NOTATION` typy.
 
-Rovněž Pamatujte, že `xs:base64Binary` pouze v případě, že dojde k výčty ve schématu pro tento typ se budou generovat obsah.
+Všimněte si také, že `xs:base64Binary` obsah se bude generovat jenom v případě, že dojde k vyčíslení ve schématu pro daný typ.
 
-## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Pro generování dokumentu XML instance na základě souboru XSD
+## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Generovat dokument XML instance na základě souboru XSD
 
-1.  Postupujte podle kroků v [postupy: vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1.  Postupujte podle kroků v [jak: Vytvoření a úprava souboru schématu XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  V [Explorer schématu XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globálním elementem. Vyberte **generovat ukázka XML**.
+2.  V [Průzkumníka schémat XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globální element. Vyberte **generovat ukázkový soubor XML**.
 
-     Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML Ukázka bude vygenerována a otevřít v editoru XML:
+     Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML ukázky bude vygenerována a otevřený v editoru XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -76,6 +75,6 @@ Rovněž Pamatujte, že `xs:base64Binary` pouze v případě, že dojde k výčt
     </PurchaseOrder>
     ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Práce s daty XML](../xml-tools/working-with-xml-data.md)

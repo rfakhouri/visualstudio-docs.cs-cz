@@ -1,9 +1,6 @@
 ---
-title: Nástroj RegPkg | Microsoft Docs
-ms.custom: ''
+title: Nástroj RegPkg | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
@@ -14,57 +11,57 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d677aaf155e533c27a775f3995b53dd59b65385
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904874"
 ---
 # <a name="regpkg-utility"></a>Nástroj RegPkg
 > [!NOTE]
->  Pomocí souborů .pkgdef je upřednostňovaný způsob, jak zaregistrovat balíčky v sadě Visual Studio. To umožňuje aniž by museli získat přístup k registru systému, který představuje požadavek pro nasazení VSIX pro rozšíření nasazení. Pkgdef soubory jsou vytvořeny pomocí [CreatePkgDef nástroj](../../extensibility/internals/createpkgdef-utility.md). Další informace o nasazení balíčku sady Visual Studio najdete v tématu [přesouvání rozšíření Visual Studia](../../extensibility/shipping-visual-studio-extensions.md).  
+>  Preferovaný způsob, jak zaregistrovat balíčky v sadě Visual Studio je pomocí souborů .pkgdef. To umožňuje nasazení rozšíření bez nutnosti přístupu k registru systému, což je požadavek na nasazení VSIX. Pkgdef soubory jsou vytvořeny pomocí [nástroj CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Další informace o nasazení balíčku sady Visual Studio najdete v tématu [přesouvání rozšíření sady Visual Studio](../../extensibility/shipping-visual-studio-extensions.md).  
   
- Nástroj RegPkg.exe zaregistruje VSPackage s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a připraví je k nasazení. Tento nástroj se používá na pozadí během vývoje VSPackage. Tak, aby můžete sestavit a spustit VSPackage v experimentální hive, spouští se jako součást procesu sestavení.  
+ Nástroj RegPkg.exe zaregistruje balíčku VSPackage pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a připraví ho pro nasazení. Tento nástroj se používá na pozadí během vývoj rozšíření VSPackage. Poběží jako součást procesu sestavení, takže můžete sestavit a spustit VSPackage v experimentální hive.  
   
- RegPkg mohou vytvářet skripty registru systému v různých formátech. Můžete začlenit tyto skripty v projekty nasazení, jako jsou projekty .msi nebo soubory sada nástrojů XML pro instalační program systému Windows.  
+ RegPkg můžete generovat skripty registru systému v různých formátech. Můžete zahrnout tyto skripty v projektech nasazení, jako jsou projekty MSI nebo soubory sady nástrojů XML Instalační služby systému Windows.  
   
- RegPkg.exe se obvykle nachází ve \< *cesta instalace Visual Studio SDK*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe. RegPkg dodržuje tuto syntaxi:  
+ RegPkg.exe se obvykle nachází ve \< *cestu instalace sady Visual Studio SDK*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe. RegPkg následuje tuto syntaxi:  
   
 ```  
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
 ```  
   
  /root:root  
- Provádí registraci v rámci zadaného  
+ Provede registraci v rámci zadaného  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kořenový adresář.  
   
  /RegFile:filename  
- Vytvoří soubor .reg spíše než aktualizace registru.  Nelze použít s /vrgfile nebo /rgsfile nebo /wixfile.  
+ Vytvoří soubor .reg spíše než aktualizaci registru.  Nelze použít s /vrgfile nebo /rgsfile nebo /wixfile.  
   
  /rgsfile:filename  
- Vytvoří soubor .rgs spíše než aktualizace registru.  Nelze použít s /vrgfile nebo /regfile nebo /wixfile.  
+ Vytvoří soubor .rgs spíše než aktualizaci registru.  Nelze použít s/RegFile /vrgfile nebo /wixfile.  
   
  /vrgfile:filename  
- Vytvoří soubor .vrg spíše než aktualizace registru.  Nelze použít s /regfile nebo /rgsfile nebo /wixfile.  
+ Vytvoří soubor .vrg spíše než aktualizaci registru.  Nelze použít s/RegFile nebo /rgsfile nebo /wixfile.  
   
  /rgm  
- Vytvoří soubor .rgm kromě rgs souboru.  Musí být kombinován s /rgsfile.  
+ Vytvoří soubor .rgm kromě souboru rgs.  Musí být kombinován se /rgsfile.  
   
  /wixfile:filename  
- Vytvoří soubor kompatibilní s sada nástrojů Windows Installer XML místo aktualizace registru.  Nelze použít s /regfile nebo /rgsfile nebo /vrgfile.  
+ Vytvoří soubor kompatibilní s sada nástrojů XML Instalační služby systému Windows spíše než aktualizaci registru.  Nelze použít s/RegFile nebo /rgsfile nebo /vrgfile.  
   
  /codebase  
- Vynutí registrace CodeBase než sestavení.  
+ Vynutí registraci pomocí základu kódu místo sestavení.  
   
- /Assembly  
- Vynutí registrace pomocí sestavení na rozdíl od základu kódu.  
+ / Assembly  
+ Vynutí registraci sestavení spíše než základ kódu.  
   
- / zrušení registrace  
+ / unregister  
  Zruší registraci tohoto balíčku.  Nelze použít  
   
- s /regfile nebo /vrgfile nebo /rgsfile nebo /wixfile.  
+ / RegFile nebo /vrgfile nebo /rgsfile nebo /wixfile.  
   
 ## <a name="see-also"></a>Viz také  
  [Balíčky VSPackage](../../extensibility/internals/vspackages.md)  

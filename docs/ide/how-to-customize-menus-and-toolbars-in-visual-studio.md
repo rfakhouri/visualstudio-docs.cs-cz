@@ -2,7 +2,6 @@
 title: Přizpůsobení nabídek a panelů nástrojů
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.renametoolbar
@@ -29,14 +28,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b22309f75e9ffd8a134af1d5ddafacb6d060f100
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940398"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: Přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
 
 Visual Studio můžete přizpůsobit nejen přidáváním a odebíráním nabídky na řádku nabídek a panelů nástrojů, ale také přidáte nebo odeberete příkazy na daném panelu nástrojů nebo nabídce.
 
@@ -81,7 +80,7 @@ Visual Studio můžete přizpůsobit nejen přidáváním a odebíráním nabíd
         Panel nástrojů můžete také přetáhnout pomocí jeho levého okraje na libovolné místo v hlavní oblasti ukotvení.
 
         > [!NOTE]
-        > Další informace o možnostech zlepšení použitelnosti a přístupnosti panelů nástrojů naleznete v tématu [jak: Možnosti usnadnění přístupu IDE nastavit](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Další informace o možnostech zlepšení použitelnosti a přístupnosti panelů nástrojů naleznete v tématu [jak: Nastavení možností usnadnění přístupu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Přizpůsobení nabídky nebo panelu nástrojů</a>
 

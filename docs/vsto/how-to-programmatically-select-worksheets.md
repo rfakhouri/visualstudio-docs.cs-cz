@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: výběr listů prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Výběr listů prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924472"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>Postupy: výběr listů prostřednictvím kódu programu
+# <a name="how-to-programmatically-select-worksheets"></a>Postupy: Výběr listů prostřednictvím kódu programu
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> Metoda vybere zadaný objekt, který přesune výběr uživatele na nový objekt. Použití <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> metody, pokud chcete vyvést fokus na objekt beze změny výběru uživatele.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,14 +49,12 @@ ms.locfileid: "35676629"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: tisk listů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-worksheets.md)   
- [Postupy: odstraňování listů ze sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [Postupy: skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Postupy: zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Postupy: Tisk listů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-worksheets.md)   
+ [Postupy: Odstraňování listů ze sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [Postupy: Skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Postupy: Zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Hostitelská položka Worksheet](../vsto/worksheet-host-item.md)   
  [Globální přístup k objektům v projektech pro systém Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

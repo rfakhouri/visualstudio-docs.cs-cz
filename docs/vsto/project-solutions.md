@@ -1,9 +1,6 @@
 ---
 title: Projektová řešení
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909772"
 ---
 # <a name="project-solutions"></a>Projektová řešení
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro aplikaci Microsoft Office Project. Doplňky VSTO slouží k automatizaci projektu, rozšíření funkcí projektu nebo přizpůsobení uživatelského rozhraní (UI) projektu.  
@@ -71,11 +68,9 @@ ms.locfileid: "35676454"
  [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)   
  [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)   
  [Project 2010 a Project Server 2010 ve vývoji Office](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

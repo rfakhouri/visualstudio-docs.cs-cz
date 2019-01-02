@@ -1,9 +1,6 @@
 ---
 title: Vazba klávesové zkratky a položkami nabídky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940372"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Vytvoření vazby klávesové zkratky a položkami nabídky
 K vytvoření vazby příkazu nabídky vlastní klávesové zkratky, stačí přidat položku *.vsct* souborů pro balíček. Toto téma vysvětluje, jak namapovat na vlastní tlačítka, položka nabídky nebo panelu nástrojů příkazu Klávesové zkratky a použít mapování klávesnice v editoru výchozí nebo omezit na vlastní editor.  

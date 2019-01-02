@@ -1,8 +1,7 @@
 ---
-title: 'CA2120: Zabezpečte serializační konstruktory'
+title: 'CA2120: Zabezpečte Serializační konstruktory'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899677"
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Zabezpečte serializační konstruktory
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Zabezpečte Serializační konstruktory
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "45548501"
  [!code-csharp[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2229: Implementovat serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2237: Označte typy ISerializable pomocí SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 

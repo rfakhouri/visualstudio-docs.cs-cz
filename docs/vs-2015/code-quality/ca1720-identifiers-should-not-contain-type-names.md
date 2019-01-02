@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 158de56c254c58f1d8a566e4170310a060b0a884
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822239"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identifikátory by neměly obsahovat názvy typů
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +56,11 @@ ms.locfileid: "49862332"
 
 - UInt8
 
-- krátké
+- Krátké
 
 - UShort
 
-- int
+- Int
 
 - UInt
 
@@ -69,7 +68,7 @@ ms.locfileid: "49862332"
 
 - Uinteger –
 
-- Long
+- Dlouhé
 
 - ULong
 
@@ -77,7 +76,7 @@ ms.locfileid: "49862332"
 
 - podepsané
 
-- plovoucí desetinnou čárkou
+- Float
 
 - float32
 
@@ -131,7 +130,7 @@ ms.locfileid: "49862332"
 
 - Desetinné číslo
 
-- identifikátor GUID
+- Guid
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
  **Pokud je aktivována před parametr:**
@@ -146,13 +145,10 @@ ms.locfileid: "49862332"
  Příležitostné použití založené na typ parametru a člen názvů může být vhodné. Ale pro vývoj, žádné známé scénáře nastat, pokud by měla potlačit upozornění tohoto pravidla. Pro knihovny, které mají předchozí dodán budete muset potlačit upozornění tohoto pravidla.
 
 ## <a name="related-rules"></a>Související pravidla
- [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Identifikátory by měly správně formátováno.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Identifikátory by se měly lišit o více než velikostí písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
  [CA1707: Identifikátory by neměly obsahovat podtržítka](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
  [CA1719: Názvy parametrů by neměly odpovídat názvům členů](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-

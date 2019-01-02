@@ -1,9 +1,6 @@
 ---
 title: Globální přístup k objektům v projektech pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e01519600747a486fd2e719c720329a6423dd002
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 843eba9cceefb2360ed24284a80f4359d092fd89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648943"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909070"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
   Při vytváření projektu aplikace Office, Visual Studio automaticky vygeneruje třídu pojmenovanou `Globals` v projektu. Můžete použít `Globals` pro přístup k několika položek jiného projektu za běhu v žádném kódu v projektu.  
@@ -87,5 +84,3 @@ ms.locfileid: "53648943"
  [Hostitelská položka Workbook](../vsto/workbook-host-item.md)   
  [Hostitelská položka Worksheet](../vsto/worksheet-host-item.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

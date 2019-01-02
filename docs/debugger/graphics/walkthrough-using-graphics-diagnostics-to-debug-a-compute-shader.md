@@ -1,8 +1,6 @@
 ---
-title: 'Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c92a8b24dd3d932eedfcb122b4da9294dd3418
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9644e4b9f9d0a193c0d8088aa9e237d84f276aa1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823312"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Průvodce: Použití diagnostiky grafiky k ladění výpočetního shaderu
 Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual Studio k vyšetření výpočetního shaderu, který generuje nesprávné výsledky.  
   
  Tento návod ilustruje tyto úkoly:  
@@ -90,7 +88,7 @@ Tento návod ukazuje, jak použít nástrojů Diagnostika grafiky sady Visual St
   
     ![Ladění výpočetního shaderu IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Chcete zastavit ladění výpočetního shaderu na **ladění** nástrojů, zvolte **Zastavit ladění** (klávesnice: Shift + F5).  
+4. Chcete zastavit ladění výpočetního shaderu na **ladění** nástrojů, zvolte **Zastavit ladění** (klávesnice: SHIFT + F5).  
   
 5. Dále vyberte druhou `Dispatch` události a spusťte ladění výpočetního shaderu, stejně jako v předchozím kroku.  
   

@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: Přidání odkazu na výstup projektu | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Přidání odkazu na výstup projektu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,35 +14,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b6a3d164bbe1ddcda6d131275427fb1f815198
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897287"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Postupy: Přidání odkazu na výstup projektu
-  Pokud chcete nasadit sestavení projektu jiný než služby SharePoint (nebo souborů .xap v projekty Silverlight) do služby SharePoint, přidejte je jako odkazu na výstup projektu.  
+  Nasazení do služby SharePoint bez Sharepointu sestavení projektu (nebo souborů .xap v projekty technologie Silverlight), přidejte je jako odkazu na výstup projektu.  
   
- Tento proces vytvoří závislost sestavení řešení mezi dva projekty. Sestavení projektů, které jsou spojené s odkazy na výstup projektu předtím, než je vytvořen a nasazení projektu služby SharePoint.  
+ Tento proces vytvoří závislost sestavení řešení mezi dva projekty. Projektů v souvislosti s odkazy na výstup projektu jsou sestaveny předtím, než je sestavíte a nasadíte projektu služby SharePoint.  
   
 ### <a name="to-add-a-project-output-reference"></a>Přidání odkazu na výstup projektu
   
-1.  Načtěte řešení, které obsahuje alespoň jeden projektu služby SharePoint a jeden jiný než služby SharePoint projektu.  
+1.  Načtení řešení, které obsahuje alespoň jeden projekt služby SharePoint a jeden projekt jiný než služby SharePoint.  
   
-2.  V **Průzkumníku**, vyberte položku v uzlu projektu služby SharePoint.  
+2.  V **Průzkumníka řešení**, zvolte položku v uzlu projektu služby SharePoint.  
   
-3.  V **vlastnosti** okně zvolte **odkazy na výstup projektu** vlastnost a klikněte na tlačítko se třemi tečkami (![ASP.NET – Návrhář mobilních řešení elipsy](../sharepoint/media/mwellipsis.gif "ASP. Asp.net – Návrhář mobilních řešení elipsy")) vedle sebe tlačítko.  
+3.  V **vlastnosti** okna, vyberte **odkazy na výstup projektu** vlastnost a klikněte na tlačítko se třemi tečkami (![elipsa ASP.NET – Návrhář mobilních řešení](../sharepoint/media/mwellipsis.gif "ASP. Návrhář mobilních NET Elipsa")) vedle sebe tlačítko.  
   
-4.  V **odkazy na výstup projektu** dialogovém okně vyberte **přidat** tlačítko.  
+4.  V **odkazy na výstup projektu** dialogového okna zvolte **přidat** tlačítko.  
   
-5.  V podokně vlastností zvolte na šipku vedle položky **typ nasazení** vlastnost a potom vyberte odpovídající hodnotu pro položku jiný než služby SharePoint, kterou odkazujete, jako například **ElementFile**.  
+5.  V podokně vlastností klikněte na šipku vedle položky **typ nasazení** vlastnost a pak zvolte příslušnou hodnotu pro položku mimo SharePoint odkazujete, jako například **ElementFile**.  
   
-6.  Vyberte šipku vedle **název projektu**, zvolte název položky projektu jiný než služby SharePoint a poté **OK** tlačítko.  
+6.  Klikněte na šipku vedle položky **název projektu**, zvolte název položky projektu jiný než služby SharePoint a klikněte na tlačítko **OK** tlačítko.  
   
 ## <a name="see-also"></a>Viz také:
- [Zadejte informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [Postupy: označení ovládacích prvků jako bezpečných ovládacích prvků](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
+ [Postupy: Označení ovládacích prvků jako bezpečných](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

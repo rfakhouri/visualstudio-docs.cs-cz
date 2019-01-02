@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: shromažďování dat čítačů Windows | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Shromažďování dat čítačů Windows | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9fc551fd84197e936ef0f6069ecbc4beaecdf25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961364"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Postupy: shromažďování dat čítačů Windows
+# <a name="how-to-collect-windows-counter-data"></a>Postupy: Shromažďování dat čítačů Windows
 
 Čítače Windows jsou systémové čítače výkonu, které mohou být shromážděných během profilace v nastavených intervalech. V zobrazení sestav nástrojů pro profilaci sady značek je označen řádek **AutoMark** pro každý interval shromažďování. Tento řádek obsahuje sloupce, které popisují hodnoty čítače výkonu v tomto intervalu. Chcete-li omezit analýzu na určitou dobu mezi dvěma konkrétními značkami, vyberte značky, klikněte pravým tlačítkem a pak vyberte **filtrovat podle** > **značky** z místní nabídky.
 

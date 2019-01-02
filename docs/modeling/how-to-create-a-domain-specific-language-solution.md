@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f138f1f809ae5a81aa97c571a147c679bacaa3b2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943769"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Postupy: Vytváření řešení jazyka specifického pro doménu
 Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná řešení sady Visual Studio.
@@ -46,13 +45,13 @@ Jazyka specifického pro doménu (DSL) se vytvoří s použitím specializovaná
 
    1. Na **souboru** nabídky, přejděte k **nový**a potom klikněte na tlačítko **projektu**.
 
-   2. **Nový projekt** zobrazí se dialogové okno.
+   2. Zobrazí se dialogové okno **Nový projekt**.
 
    3. V části **typy projektů**, rozbalte **ostatní typy projektů** uzel a klikněte na tlačítko **rozšiřitelnost**.
 
    4. Klikněte na tlačítko **návrháře jazyka specifického pro doménu**.
 
-   5. V **název** zadejte název řešení. Klikněte na tlačítko **OK**.
+   5. V **název** zadejte název řešení. Klikněte na **OK**.
 
        **Průvodce návrháře jazyka specifického pro doménu** se zobrazí.
 

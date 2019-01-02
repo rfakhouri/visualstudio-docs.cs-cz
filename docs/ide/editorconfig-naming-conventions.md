@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898658"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -142,7 +141,7 @@ Povolené hodnoty této vlastnosti jsou:
 > [!NOTE]
 > Styl malá a velká písmena musíte zadat jako součást vaší pojmenování styl, jinak může vašemu stylu pojmenování ignorovat.
 
-## <a name="severity"></a>Závažnost
+## <a name="severity"></a>Severity
 
 K popisu závažnost porušení pravidla pojmenování, určete vlastnost v následujícím formátu:
 
@@ -150,7 +149,7 @@ K popisu závažnost porušení pravidla pojmenování, určete vlastnost v nás
 
 V následující tabulce jsou uvedeny hodnoty povolenou závažnosti a jejich význam:
 
-Závažnost | Efekt
+Severity | Efekt
 ------------ | -------------
 žádné nebo tiché | Když se tento styl nedodrží, nezobrazují žádné uživatele. automaticky generovaný kód se však řídí tímto stylem.
 Návrh | Když se tento styl nedodrží, zobrazit uživateli jako návrh, jako základní tečky v prvních dvou znacích. V době kompilace nemá žádný vliv.

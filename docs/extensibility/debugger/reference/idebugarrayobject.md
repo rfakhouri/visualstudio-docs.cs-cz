@@ -1,9 +1,6 @@
 ---
-title: IDebugArrayObject | Microsoft Docs
-ms.custom: ''
+title: IDebugArrayObject | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject
@@ -15,51 +12,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cac7730296d2a4f95563c3d6ff4c60fdd294dc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c101433bf561ccb6d21e8fcb7e3ea1bb1148eebd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822110"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
->  V sadě Visual Studio 2015 se již nepoužívá tímto způsobem implementace vyhodnocovače výrazů. Informace o implementaci vyhodnocovače výrazů CLR, najdete v tématu [vyhodnocovače výrazů CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  V sadě Visual Studio 2015 je zastaralý tímto způsobem implementace vyhodnocovače výrazů. Informace o implementace vyhodnocovače výrazů modulu CLR najdete v tématu [vyhodnocovače výrazů modulu CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) a [spravované ukázka Chyba při vyhodnocování výrazu](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Toto rozhraní představuje objekt array.  
+ Toto rozhraní představuje objektu array.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugArrayObject : IDebugObject  
+IDebugArrayObject : IDebugObject  
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Vyhodnocení výrazu implementuje toto rozhraní představují pole.  
+ Chyba při vyhodnocování výrazu implementuje toto rozhraní k reprezentaci pole.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) rozhraní můžete získat pomocí tohoto rozhraní [QueryInterface](/cpp/atl/queryinterface) Pokud objekt představuje pole.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Kromě metod na `IDebugObject` rozhraní, tyto metody jsou implementované v `IDebugArrayObject` rozhraní.  
+ Kromě metod na `IDebugObject` rozhraní, následující metody jsou implementovány ve `IDebugArrayObject` rozhraní.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetCount –](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|Získá počet elementů v poli.|  
-|[Getelement –](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|Získá element pole.|  
-|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|Získá všechny elementy pole.|  
-|[Getrank –](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|Získá pořadí pole.|  
-|[Getdimensions –](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Získá rozměry pole.|  
+|[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|Získá počet elementů v poli.|  
+|[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|Získá prvek pole.|  
+|[GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)|Získá všechny prvky pole.|  
+|[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|Získá řád objektu array.|  
+|[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|Získá rozměry pole.|  
   
 ## <a name="remarks"></a>Poznámky  
- Vyhodnocení výrazu toto rozhraní používá k reprezentaci pole v strom analýzy.  
+ Toto rozhraní vyhodnocovače výrazů používá představující pole v strom analýzy.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

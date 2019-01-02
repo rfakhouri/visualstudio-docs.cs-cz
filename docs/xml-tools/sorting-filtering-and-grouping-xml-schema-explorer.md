@@ -1,8 +1,7 @@
 ---
-title: Řazení a filtrování, seskupování v Průzkumníku schématu XML
+title: Řazení, filtrování a seskupování v Průzkumník schémat XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
@@ -10,40 +9,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ad0c790ced2d25c63faab8260278b4e02d3015f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820850"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupení (Explorer schématu XML)
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupování (Průzkumník schémat XML)
 
-Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možnosti seskupení, filtrování a řazení** nabídce **Explorer schématu XML** panelu nástrojů.
+Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **řazení, filtrování a možnosti seskupení** nabídce **Průzkumníka schémat XML** nástrojů.
 
-## <a name="filter-options"></a>Možnosti filtru.
+## <a name="filter-options"></a>Možnosti filtrování
 
- Jsou k dispozici následující možnosti filtru. Ve výchozím nastavení **zobrazit obory názvů** a **zobrazit soubory schématu** jsou vybrané možnosti.
+ Jsou k dispozici následující možnosti filtru. Ve výchozím nastavení **zobrazit obory názvů** a **zobrazit soubory schémat** jsou vybrané možnosti.
 
 -   **Zobrazit obory názvů**.
 
--   **Zobrazit soubory schématu**.
+-   **Zobrazit soubory schémat**.
 
--   **Zobrazit Compositors (pořadí/volba/vše)**.
+-   **Zobrazit tvůrce (pořadí/volba/all)**.
 
-## <a name="sorting-options"></a>Řazení možnosti
+## <a name="sorting-options"></a>Možnosti řazení
 
- Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **seřadit podle typu**. **Seřadit podle** možnosti se nevztahují k souborům a obory názvů.
+ Jsou k dispozici následující možnosti řazení. Výchozí hodnota je **řazení podle typu**. **Řadit podle** možnosti se nevztahují na soubory a obory názvů.
 
--   **Řazení podle typu**.
+-   **Seřadit podle typu**.
 
--   **Řazení podle názvu**.
+-   **Seřadit podle názvu**.
 
 -   **Zdokumentujte pořadí**.
 
-### <a name="sort-by-type"></a>Řazení podle typu
+### <a name="sort-by-type"></a>Seřadit podle typu
 
- Když **seřadit podle typu** je vybraná možnost, globální uzly jsou seřazeny v uvedeném pořadí. Uzly se potom řadí abecedně v rámci jednotlivých skupin.
+ Když **řazení podle typu** je vybraná možnost, jsou globální uzly seřazeny v uvedeném pořadí. Uzly jsou pak seřazená podle abecedy v rámci jednotlivých skupin.
 
 1.  `import` uzly.
 
@@ -63,9 +62,9 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možn
 
 9. `group` uzly.
 
-### <a name="sort-by-name"></a>Řazení podle názvu
+### <a name="sort-by-name"></a>Seřadit podle názvu
 
- Když **řazení podle názvu** je vybraná možnost, globální uzly jsou seřazeny v následujícím pořadí:
+ Když **seřadit podle názvu** je vybraná možnost, jsou globální uzly seřazeny v následujícím pořadí:
 
 1.  `import` uzly (v abecedním pořadí oborů názvů).
 
@@ -77,8 +76,8 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možn
 
 ### <a name="document-order"></a>Pořadí dokumentů
 
- **Pořadí dokumentů** možnost je dostupná, když **zobrazit soubory schématu** je vybraná možnost. Když **pořadí dokumentů** je vybraná globální uzly jsou zobrazeny v pořadí, ve kterém se zobrazí v souboru schématu.
+ **Pořadí dokumentů** možnost je k dispozici, když **zobrazit soubory schémat** je vybraná možnost. Když **pořadí dokumentů** je vybraná globální uzly jsou zobrazeny v pořadí, v jakém jsou uvedeny v souboru schématu.
 
-## <a name="persisting-sortfilter-options"></a>Zachování možnosti řazení nebo filtrování
+## <a name="persisting-sortfilter-options"></a>Zachování možnosti řazení a filtrování
 
- Řazení, filtrování a možnosti seskupení se uloží do registru pro každého uživatele, bez ohledu na to, která řešení nebo soubory byly otevřeny při změně tohoto nastavení.
+ Řazení, filtrování a možnosti seskupení jsou uložena do registru pro každého uživatele, bez ohledu na to, které řešení nebo soubory byly otevřeny Pokud byla nastavení změněna.

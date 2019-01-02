@@ -2,7 +2,6 @@
 title: Parametry šablony projektů a položek
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -12,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e945ac065b2c7f5e3a677ae2175b45a94af2910a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935187"
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
@@ -91,7 +90,7 @@ Následující příklad určuje, že název spustitelného souboru používá n
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Příklad: Použití bezpečný název projektu jako název oboru názvů
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Příklad: Použijte bezpečný název projektu jako název oboru názvů
 
 Pokud chcete použít bezpečný název projektu pro obor názvů v souboru třídy C#, použijte následující syntaxi:
 
@@ -120,5 +119,5 @@ V *.vstemplate* soubor šablony projektu, zahrnují `ReplaceParameters="true"` a
 ## <a name="see-also"></a>Viz také:
 
 - [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
-- [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)
+- [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)
 - [Odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)

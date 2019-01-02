@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointRequest3 | Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointRequest3 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f369b193b69ef1a08c2ad3d451ff989caae8939f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b8f987f925683bd4c81b189f27eae3d967359882
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963094"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
-Toto rozhraní představuje informace potřebné k vytvoření a vytvořte vazbu žádný druh breakpoint. Je rozšířením [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
+Toto rozhraní představuje informace potřebné k vytvoření a připojení jakýkoli typ zarážky. Je rozšířením [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,27 +29,27 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní implementuje obvykle správce ladicí relace (SDM).  
+ Správce ladění relace (SDM) obvykle implementuje toto rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Modul ladění (DE) používá toto rozhraní voláním [QueryInterface](/cpp/atl/queryinterface) na rozhraní IDebugBreakpointRequest2 došlo k volání [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).  
+ Ladicí stroj (DE) toto rozhraní má přístup k voláním [QueryInterface](/cpp/atl/queryinterface) na rozhraní IDebugBreakpointRequest2 obdrželi volání [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md).  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Kromě metod zděděno z [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), `IDebugBreakpointRequest3` rozhraní zpřístupní metodu.  
+ Kromě metod zděděných z [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md), `IDebugBreakpointRequest3` rozhraní poskytuje následující metody.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Získá informace o požadavku zarážek, která popisuje tuto žádost zarážek.|  
+|[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|Získá informace o požadavku zarážky, popisující tuto zarážku žádost.|  
   
 ## <a name="remarks"></a>Poznámky  
- Toto rozhraní je používá k zajištění Další informace k DE prostřednictvím [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury. Tyto další informace zahrnují ID dodavatele je DE (ve formě identifikátoru GUID), název tracepoint a název zarážek omezení.  
+ Toto rozhraní se používá na další informace na DE prostřednictvím [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury. Tyto další informace obsahuje ID dodavatele je DE (ve formě identifikátoru GUID), název zarážku s trasováním a název omezení zarážku.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   

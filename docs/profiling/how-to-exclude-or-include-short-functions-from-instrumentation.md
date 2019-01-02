@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: vyloučení nebo zahrnutí funkce CShort z instrumentace | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Vyloučení nebo zahrnutí krátkých funkcí z instrumentace | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, instrument events
@@ -14,31 +12,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c6234db781925e8c0558513cb7e8bc608b5cfea
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: adeff3a6f068c5432f1640cd96752a84228b8ad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896107"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Postupy: vyloučení nebo zahrnutí funkce CShort z instrumentace
-Ve výchozím nastavení, nástroje pro profilování vyloučit *malé funkce* z instrumentace. Malé funkce jsou krátkých funkcí, které neprovádějte žádné volání funkcí. Kromě těchto funkcí malé poskytuje pro menší nároky na instrumentace a proto zlepšení instrumentace rychlost. Vyloučení malé funkcí také snižuje výkon profilace datový soubor (. *Vsp*) velikost a čas, který je vyžadován pro analýzu. Pokud malá funkce jsou vyloučeny, času stráveného v malých funkce započítává výhradní a včetně době jejich nadřazené funkce. Malé funkce můžete vyloučit nebo součástí instrumentace, jak je popsáno v následujícím postupu.  
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Postupy: Vyloučení krátkých funkcí z instrumentace nebo jejich zahrnutí do instrumentace
+Ve výchozím nastavení, nástroje pro profilaci vyloučit *malé funkce* z instrumentace. Malé funkce jsou krátkých funkcí, které Nedovolte, aby byly všechny volání funkce. Kromě těchto malé funkce poskytuje pro menší nároky na instrumentace a proto zlepšit rychlost instrumentace. Vyloučení malé funkce taky snižuje výkon souboru dat profilování (. *Vsp*) velikosti a čas, který je vyžadován pro analýzu. Pokud jsou malé funkce vyloučit, čas, který byl stráven malé funkce počítat celkové a výhradní čas jejich nadřazené funkce. Malé funkce můžete vyloučit nebo součástí instrumentace, jak je popsáno v následujícím postupu.  
   
-### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>K vyloučení nebo zahrnutí funkce CShort z instrumentace  
+### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>Vyloučení nebo zahrnutí krátkých funkcí z instrumentace  
   
-1.  V **prohlížeč výkonu**, vyberte **výkonnostní relace** a potom klikněte pravým tlačítkem a vyberte **vlastnosti**.  
+1.  V **prohlížeč výkonu**vyberte **relace výkonu** a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.  
   
      **Stránky vlastností** se zobrazí dialogové okno.  
   
-2.  V **stránky vlastností**, klikněte **instrumentace** vlastnosti.  
+2.  V **stránky vlastností**, klikněte na tlačítko **instrumentace** vlastnosti.  
   
-3.  Vyloučení krátkých funkcí z instrumentace, vyberte **vyloučení krátkých funkcí z instrumentace**. Toto je výchozí nastavení.  
+3.  Chcete-li vyloučení krátkých funkcí z instrumentace, vyberte **vyloučení krátkých funkcí z instrumentace**. Toto je výchozí nastavení.  
   
      -nebo-  
   
      Chcete-li zahrnout krátkých funkcí instrumentace, zrušte **vyloučení krátkých funkcí z instrumentace**.  
   
-4.  Click **OK**.  
+4.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také:  
  [Řízení shromažďování dat](../profiling/controlling-data-collection.md)   

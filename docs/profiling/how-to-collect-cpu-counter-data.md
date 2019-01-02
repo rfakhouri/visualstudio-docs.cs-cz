@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: shromažďování dat čítačů procesoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Shromažďování dat čítačů procesoru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897232"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Postupy: shromažďování dat čítačů procesoru
+# <a name="how-to-collect-cpu-counter-data"></a>Postupy: Shromažďování dat čítačů procesoru
 
 Čítače procesoru událostí se používá ke shromažďování dat výkonu hardwaru. Tento článek ukazuje, jak shromažďovat data událostí, použijete-li metoda profilace instrumentace.
 
@@ -45,7 +43,7 @@ Dva typy událostí čítače CPU dojít:
 
 - Shromažďování dat z jednoho nebo více čítačů při profilování instrumentace.
 
-- Při profilování pomocí vzorkování, zadáte jako interval vzorkování čítače událostí. Další informace najdete v tématu [postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md).
+- Při profilování pomocí vzorkování, zadáte jako interval vzorkování čítače událostí. Další informace najdete v tématu [jak: Výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Ke shromažďování dat čítače výkonu procesoru při profilování instrumentace
 

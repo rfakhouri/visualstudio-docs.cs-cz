@@ -1,6 +1,5 @@
 ---
 title: Služba vyhledávání a katalog obrázků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899701"
 ---
 # <a name="image-service-and-catalog"></a>Služba bitových kopií a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Visual Studio Image a Image katalog zavedena v sadě Visual Studio 2015.  
@@ -106,8 +105,8 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Dílčí element**|**Definice**|  
-|Importovat|Importuje symboly daný soubor manifestu pro použití v aktuální manifestu|  
-|identifikátor GUID|Symbol představuje identifikátor GUID a musí odpovídat identifikátoru GUID formátování|  
+|Import|Importuje symboly daný soubor manifestu pro použití v aktuální manifestu|  
+|Guid|Symbol představuje identifikátor GUID a musí odpovídat identifikátoru GUID formátování|  
 |ID|Symbol představuje ID a musí být nezáporné celé číslo|  
 |String|Symbol představuje hodnotu libovolný řetězec|  
   
@@ -148,7 +147,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|identifikátor GUID|[Povinné] Část GUID moniker obrázku.|  
+|Guid|[Povinné] Část GUID moniker obrázku.|  
 |ID|[Povinné] ID část moniker obrázku.|  
 |AllowColorInversion|[Volitelné, výchozí hodnota true] Určuje, jestli obrázek může mít jeho barvy programově obrácený v tmavém pozadí.|  
   
@@ -166,7 +165,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |-|-|  
 |**Atribut**|**Definice**|  
 |Identifikátor URI|[Povinné] Identifikátor URI, který definuje, kde je možné načíst image z. Může být jeden z následujících akcí:<br /><br /> -A [identifikátory Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) používání aplikace pro: / / / / / autority<br />Odkaz na prostředek – absolutní komponenty<br />– Cesta k souboru, který obsahuje nativní prostředky|  
-|Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Světle:* zdroj jde použít na světla na pozadí.<br /><br /> *Tmavý:* zdroj je možné v tmavém pozadí.<br /><br /> *Funkce Vysoký kontrast:* zdroj jde použít na jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* zdroj je možné na pozadí světla v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* zdroj je možné v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je atribut pozadí vynechán, zdroj je možné na jakékoli na pozadí.<br /><br /> Pokud je na pozadí *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, se nikdy převrátí zdroje na barvy. Pokud je vynechán nebo nastaven na pozadí *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
+|Pozadí|[Volitelné] Určuje, co na pozadí, který zdroj je určena pro použití typu.<br /><br /> Může být jeden z následujících akcí:<br /><br /> *Světle:* Zdroj lze použít v světla na pozadí.<br /><br /> *Tmavě:* Zdroj lze použít v tmavém pozadí.<br /><br /> *Funkce Vysoký kontrast:* Zdroj lze použít v jakékoli na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastLight:* Zdroj lze použít v světla na pozadí v režimu vysokého kontrastu.<br /><br /> *HighContrastDark:* Zdroj lze použít v tmavém pozadí v režimu vysokého kontrastu.<br /><br /> Pokud je atribut pozadí vynechán, zdroj je možné na jakékoli na pozadí.<br /><br /> Pokud je na pozadí *světla*, *tmavě*, *HighContrastLight*, nebo *HighContrastDark*, se nikdy převrátí zdroje na barvy. Pokud je vynechán nebo nastaven na pozadí *funkce Vysoký kontrast*, inverzi barev zdroji se řídí na obrázku **AllowColorInversion** atribut.|  
 
 |||  
   
@@ -206,7 +205,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí, služby Vis
 |||  
 |-|-|  
 |**Atribut**|**Definice**|  
-|identifikátor GUID|[Povinné] Část GUID moniker obrázku.|  
+|Guid|[Povinné] Část GUID moniker obrázku.|  
 |ID|[Povinné] ID část moniker obrázku.|  
 |Externí|[Volitelné, výchozí hodnota je false] Určuje, zda moniker bitové kopie odkazuje na obrázek v aktuální manifestu.|  
   

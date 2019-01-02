@@ -1,8 +1,6 @@
 ---
-title: marker_series::write_flag – metoda | Microsoft Docs
-ms.custom: ''
+title: marker_series::write_flag – metoda | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faff304831f8f2ffabed925d2ab3dfc5d64c18af
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: ba32b08de607f28a32cedf4050c4b4db439c1a39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237455"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840496"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag – metoda
-Zapíše příznak vizualizér souběžnosti trasovacího souboru.  
+Příznak, který zapisuje do souboru trasování vizualizátoru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,10 +49,10 @@ void write_flag(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Složený formátovací řetězec, který obsahuje text smíšeného s nula nebo více položek formátu, odpovídajících objektů v seznamu argumentů.  
+ Složený řetězec formátu, který obsahuje textu smíšeného s nula nebo více položek formátu, který odpovídá objektům v seznamu argumentů.  
   
  `_Importance`  
- Úroveň význam.  
+ Úroveň důležitosti.  
   
  `_Category`  
  Kategorie.  

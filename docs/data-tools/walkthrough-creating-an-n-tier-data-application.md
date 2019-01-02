@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření víceúrovňové datové aplikace'
+title: 'Průvodce: Vytvoření vícevrstvé datové aplikace'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924264"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>Návod: Vytvoření vícevrstvé datové aplikace
+# <a name="walkthrough-create-an-n-tier-data-application"></a>Průvodce: Vytvoření vícevrstvé datové aplikace
 *N-vrstvá* datové aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logické vrstvy, nebo *úrovně*. Rozdělení komponent aplikace do samostatných vrstev zvyšuje udržovatelnost a škálovatelnost aplikace. Dělá to tak, že umožněno snadnější přijímání nových technologií, které lze použít u jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvu, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstvy přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, jako je například ověřování a ověřování. Datová vrstva obsahuje relační databáze. N-vrstvá aplikace obvykle ukládá citlivé informace do vrstvy přístupu k datům z střední vrstvy, aby se zachovala izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).
 
 Jedním ze způsobů k rozdělení různých vrstev v n vrstvé aplikaci je vytvoření samostatných projektů pro každou vrstvu, která chcete zahrnout do vaší aplikace. Typové datové sady obsahují `DataSet Project` vlastnost, která určuje, že generované datová sada projekty, které a `TableAdapter` kódu by měly patřit do.
@@ -50,7 +49,7 @@ V tomto návodu provedete následující kroky:
 
 -   Napsání kódu pro naplnění dat tabulky.
 
-![odkaz na video](../data-tools/media/playvideo.gif) video verzi tohoto tématu naleznete v tématu [Video postupy: vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).
+![odkaz na video](../data-tools/media/playvideo.gif) video verzi tohoto tématu naleznete v tématu [Videonávod: Vytvoření vícevrstvé datové aplikace](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Požadavky
 Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northwind.
@@ -106,7 +105,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
  Dalším krokem je vytvoření typové datové sady. Typové datové sady vytvořené pomocí třídy datové sady (včetně `DataTables` třídy) a `TableAdapter` třídy v jednom projektu. (Všechny třídy jsou generovány, do jediného souboru.) Když oddělíte datové sady a TableAdapters do různých projektů, je třída datovou sadu, která je přesunut do jiného projektu, byste museli opustit `TableAdapter` třídy v původní projekt. Proto se v projektu, který bude obsahovat nakonec objekty TableAdapter (DataAccessTier projekt) vytvořte datovou sadu. Vytvořte datovou sadu s použitím **Průvodce konfigurací zdroje dat**.
 
 > [!NOTE]
-> Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o tom, jak nastavit ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
+> Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o tom, jak nastavit ukázkové databáze Northwind naleznete v tématu [jak: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Vytvoření datové sady
 
@@ -156,7 +155,7 @@ Tento návod používá SQL Server Express LocalDB a ukázkové databáze Northw
 
 5. Na **sestavení** nabídce vyberte možnost **sestavit řešení**.
 
-   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (`DataAccessTier`) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnosti (`DataEntityTier`) obsahuje typové datové sady: *NorthwindDataSet.Dataset.Designer.vb* (nebo  *NorthwindDataSet.Dataset.Designer.cs*).
+   Datové sady a objekty TableAdapter jsou rozděleny do projektů knihovny dvou tříd. Projekt, který je původně obsahoval celou datovou sadu (`DataAccessTier`) teď obsahuje pouze objekty TableAdapter. Projekt je určeno v **projektu DataSet** vlastnosti (`DataEntityTier`) obsahuje typové datové sady: *NorthwindDataSet.Dataset.Designer.vb* (nebo *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Když oddělíte datové sady a objekty TableAdapter (nastavením **projektu DataSet** vlastnost), existující částečné třídy v projektu nebudou automaticky přesunuty. Existující částečné třídy datové sady musí ručně přesunout do projektu datové sady.
@@ -220,7 +219,7 @@ Tento návod ukazuje, jak k vrstvě přístupu k datům s využitím služby WCF
 
 3. Vyberte **DataAccessTier** a **DataEntityTier** projekty.
 
-4. Klikněte na tlačítko **OK**.
+4. Klikněte na **OK**.
 
 ## <a name="add-functions-to-the-service-to-call-the-getcustomers-and-getorders-methods-in-the-data-access-tier"></a>Přidání funkcí do služby pro volání metod GetCustomers a GetOrders ve vrstvě přístupu k datům
  Teď, když datová vrstva obsahuje metody, které se vrátí data, vytvářet metody v datové službě dovoluje volat metody ve vrstvě přístupu k datům.

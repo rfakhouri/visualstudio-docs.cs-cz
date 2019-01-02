@@ -1,8 +1,6 @@
 ---
-title: SDK Vizualizéru souběžnosti | Microsoft Docs
-ms.custom: ''
+title: SDK Vizualizéru souběžnosti | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
@@ -12,32 +10,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a9898037e7dc6beae5d984856ff5c12b74183049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884967"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK Vizualizéru souběžnosti
-Pomocí sady SDK Vizualizéru souběžnosti zobrazíte další informace v Concurrency Visualizer můžou instrumentovat vašeho zdrojového kódu. Další data můžete přidružit fáze a události v kódu. Tyto další vizualizace se označují jako *značek*.  Úvodní prohlídka, najdete v části [představení SDK Vizualizéru souběžnosti](http://go.microsoft.com/fwlink/?LinkId=235405).  
+Můžete použít zdrojový kód pomocí sada Vizualizátor souběžnosti SDK k zobrazení dalších informací ve vizualizátoru souběžnosti. Doplňující data můžete přidružit fází a události ve vašem kódu. Tyto další vizualizace, jsou označovány jako *značky*.  Úvodní prohlídka, naleznete v tématu [Představujeme sada Vizualizátor souběžnosti SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
 ## <a name="properties"></a>Vlastnosti  
- Příznaky, rozsahy a zprávy, které mají dvě vlastnosti: kategorie a význam. V [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno, tyto vlastnosti můžete použít pro filtrování sady značek, které jsou zobrazeny. Kromě toho tyto vlastnosti ovlivňují vizuální reprezentace značek. Například velikost příznaky se používá k reprezentování význam. Kromě toho je barva slouží k určení kategorie.  
+ Příznaky, rozsahy a zprávy mají dvě vlastnosti: kategorie a důležitosti. V [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno, tyto vlastnosti můžete použít k filtrování sady značek, které jsou zobrazeny. Kromě toho tyto vlastnosti ovlivňují vizuální reprezentaci značky. Například velikost příznaky se používá k reprezentování význam. Kromě toho barva se používá k označení kategorie.  
   
 ## <a name="basic-usage"></a>Základní informace o využití  
- Vizualizér souběžnosti zpřístupní výchozího zprostředkovatele, který můžete použít ke generování značek. Zprostředkovatel je již zaregistrována spolu s vizualizér souběžnosti a nemusíte dělat žádné další kroky, aby se zobrazí v uživatelském rozhraní značek.  
+ Vizualizátor souběžnosti zpřístupňuje výchozího zprostředkovatele, který můžete použít ke generování značky. Zprostředkovatel je již zaregistrována spolu s Vizualizátorem souběžnosti a nemusíte dělat nic dalšího provádět značky se zobrazí v uživatelském rozhraní.  
   
 ### <a name="c-and-visual-basic"></a>C# a Visual Basic  
- V C#, Visual basic a dalších spravovaného kódu, použít výchozího poskytovatele voláním <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Poskytuje čtyři funkce pro generování značek: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A>, a <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Existuje více přetížení pro tyto funkce, v závislosti na tom, jestli chcete použít výchozí hodnoty pro vlastnosti.  Nejjednodušší přetížení trvá pouze parametr řetězec, který určuje popis události. Popis se zobrazí v sestavách vizualizér souběžnosti.  
+ V C#, Visual basic a dalších spravovaný kód, pomocí výchozího zprostředkovatele voláním <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Poskytuje čtyři funkce pro generování značek: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A>, a <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Existuje více přetížení pro tyto funkce, v závislosti na tom, jestli chcete použít výchozí hodnoty pro vlastnosti.  Nejjednodušší přetížení trvá jenom řetězcový parametr, který určuje popis události. Popis se zobrazí v sestavách Vizualizátor souběžnosti.  
   
-##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Chcete-li přidat podporu SDK do projektu C# nebo Visual Basic  
+##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Chcete-li přidat podporu sady SDK do projektu C# nebo Visual Basic  
   
-1.  Na řádku nabídek zvolte **analyzovat**, **vizualizér souběžnosti**, **přidat sadu SDK do projektu**.  
+1.  V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **přidat sadu SDK do projektu**.  
   
-2.  Vyberte projekt, ve kterém chcete přístup k sadě SDK a potom zvolte **přidat sadu SDK do projektu vybrané** tlačítko.  
+2.  Vyberte projekt, ve kterém chcete pro přístup k sadě SDK a klikněte na tlačítko **přidat sadu SDK do projektu vybrané** tlačítko.  
   
-3.  Přidáte importy nebo pomocí příkazu do vašeho kódu.  
+3.  Přidáte imports nebo using příkazu do vašeho kódu.  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -48,23 +46,23 @@ Pomocí sady SDK Vizualizéru souběžnosti zobrazíte další informace v Concu
     ```  
   
 ### <a name="c"></a>C++  
- V jazyce C++, vytvoření [marker_series – třída](../profiling/marker-series-class.md) objektu a použít ho k volání funkce.  `marker_series` Třída zpřístupňuje tři funkce pro generování značek, [marker_series::write_flag – metoda](../profiling/marker-series-write-flag-method.md), [marker_series::write_message – metoda](../profiling/marker-series-write-message-method.md)a [značka_ Series::write_alert metoda](../profiling/marker-series-write-alert-method.md).  
+ V jazyce C++, vytvořit [marker_series – třída](../profiling/marker-series-class.md) objektu a použít jej k vyvolání funkce.  `marker_series` Třída zveřejňuje tři funkce pro generování značek, [marker_series::write_flag – metoda](../profiling/marker-series-write-flag-method.md), [marker_series::write_message – metoda](../profiling/marker-series-write-message-method.md)a [marker_ Metoda Series::write_alert](../profiling/marker-series-write-alert-method.md).  
   
-##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Chcete-li přidat podporu SDK do projektu C++ nebo C  
+##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Chcete-li přidat podporu sady SDK do projektu jazyka C++ i c.  
   
-1.  Na řádku nabídek zvolte **analyzovat**, **vizualizér souběžnosti**, **přidat sadu SDK do projektu**.  
+1.  V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **přidat sadu SDK do projektu**.  
   
-2.  Vyberte projekt, ve kterém chcete přístup k sadě SDK a potom zvolte **přidat sadu SDK do projektu vybrané** tlačítko.  
+2.  Vyberte projekt, ve kterém chcete pro přístup k sadě SDK a klikněte na tlačítko **přidat sadu SDK do projektu vybrané** tlačítko.  
   
-3.  Pro jazyk C++, zahrnují `cvmarkersobj.h`. Pro jazyk C zahrnují `cvmarkers.h`.  
+3.  Pro jazyk C++, zahrnují `cvmarkersobj.h`. Pro jazyk C, zahrnují `cvmarkers.h`.  
   
-4.  Přidat pomocí příkazu do vašeho kódu.  
+4.  Přidat sadu pomocí příkazu do vašeho kódu.  
   
     ```cpp  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Vytvoření `marker_series` objektu a předejte ji do `span` konstruktor.  
+5.  Vytvořit `marker_series` objektu a předejte jej `span` konstruktoru.  
   
     ```C++  
   
@@ -73,24 +71,24 @@ Pomocí sady SDK Vizualizéru souběžnosti zobrazíte další informace v Concu
   
     ```  
   
-## <a name="custom-usage"></a>Vlastní použití  
- SDK Vizualizéru souběžnosti pro pokročilé scénáře, zpřístupní větší kontrolu.  Dva hlavní koncepty, které jsou přidružené pokročilejší scénáře: zprostředkovatelé značky a značky řady. Zprostředkovatelé značky jsou různé zprostředkovatele trasování událostí pro Windows (každá má jiný identifikátor GUID). Řada značky jsou sériové kanály událostí, které jsou generovány nástrojem jednoho poskytovatele. Můžete je používat k uspořádání události, které se generují poskytovatelem značky.  
+## <a name="custom-usage"></a>Vlastní využití  
+ Pro pokročilé scénáře sada Vizualizátor souběžnosti SDK zpřístupňuje větší kontrolu.  Dva hlavní koncepty, které jsou spojeny s pokročilejší scénáře: kteří poskytovatelé značek a značky řady. Kteří poskytovatelé značek jsou různých zprostředkovatelů trasování událostí pro Windows (každý má jiný identifikátor GUID). Řada značky jsou sériové kanály událostí, které jsou generovány pomocí jednoho poskytovatele. Můžete využít k uspořádání událostí, které jsou generovány pomocí poskytovatele značek.  
   
-#### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>K použití nového poskytovatele značky v projektu C# nebo Visual Basic  
+#### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Použití nového poskytovatele značek v projektu C# nebo Visual Basic  
   
-1.  Vytvoření <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objektu.  Konstruktor trvá identifikátor GUID.  
+1.  Vytvoření <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objektu.  Konstruktor přijme identifikátor GUID.  
   
-2.  K registraci poskytovatele, otevřete vizualizér souběžnosti [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značek** a pak klikněte na příkaz **přidat nového poskytovatele** tlačítko. V [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogovém okně zadejte identifikátor GUID, který byl použit k vytvoření zprostředkovatele a popis zprostředkovatele.  
+2.  Chcete-li registraci poskytovatele, otevřete Vizualizátor souběžnosti [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značky** kartě a klikněte na tlačítko **přidat nového poskytovatele** tlačítko. V [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogového okna zadejte identifikátor GUID, který byl použit k vytvoření poskytovatele a popis poskytovatele.  
   
-#### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>K použití nového poskytovatele značky v projektu C++ nebo C  
+#### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Použití nového poskytovatele značek v projektu jazyka C++ i c.  
   
-1.  Použití `CvInitProvider` funkce k chybě při inicializaci PCV_PROVIDER.  Konstruktor přijímá GUID * a PCV_PROVIDER\*.  
+1.  Použití `CvInitProvider` funkce lze inicializovat PCV_PROVIDER.  Konstruktor přijme identifikátor GUID * a PCV_PROVIDER\*.  
   
-2.  K registraci poskytovatele, otevřete [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značek** a pak klikněte na příkaz **přidat nového poskytovatele** tlačítko. Toto dialogové okno Zadejte identifikátor GUID, který byl použit k vytvoření zprostředkovatele a popis zprostředkovatele.  
+2.  Chcete-li registraci poskytovatele, otevřete [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno.  Vyberte **značky** kartě a klikněte na tlačítko **přidat nového poskytovatele** tlačítko. V tomto dialogovém okně zadejte identifikátor GUID, který byl použit k vytvoření poskytovatele a popis poskytovatele.  
   
-#### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>K použití řadu značky v projektu C# nebo Visual Basic  
+#### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Použití značek řady v projektu C# nebo Visual Basic  
   
-1.  Použít novou <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, nejprve vytvořit pomocí <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objektu a pak generovat události značky přímo z nové řady.  
+1.  Použití nového <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, nejprve ji vytvořit pomocí <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> objekt a potom generovat značky události přímo z nové řady.  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
@@ -102,18 +100,18 @@ Pomocí sady SDK Vizualizéru souběžnosti zobrazíte další informace v Concu
     series1.WriteFlag("My flag")  
     ```  
   
-#### <a name="to-use-a-marker-series-in-a-c-project"></a>Použití řadu značky v projektu jazyka C++  
+#### <a name="to-use-a-marker-series-in-a-c-project"></a>Použití značek řady projektu v jazyce C++  
   
-1.  Vytvoření `marker_series` objektu.  Události můžete vygenerovat z této série nové.  
+1.  Vytvoření `marker_series` objektu.  Generování událostí z této nové řady.  
   
     ```scr  
     marker_series series;  
     series.write_flag(_T("Hello world!"));  
     ```  
   
-#### <a name="to-use-a-marker-series-in-a-c-project"></a>K použití řadu značky v projektu jazyka C  
+#### <a name="to-use-a-marker-series-in-a-c-project"></a>Použití značek řady v projektu jazyka C  
   
-1.  Použití `CvCreateMarkerSeries` funkce k vytvoření PCV_MARKERSERIES.  
+1.  Použití `CvCreateMarkerSeries` funkci, která vytvoří PCV_MARKERSERIES.  
   
     ```C++  
     PCV_MARKERSERIES series;  
@@ -125,7 +123,7 @@ Pomocí sady SDK Vizualizéru souběžnosti zobrazíte další informace v Concu
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)|Popisuje vizualizér souběžnosti rozhraní API jazyka C++.|  
-|[Referenční dokumentace knihoven jazyka C](../profiling/c-library-reference.md)|Popisuje vizualizér souběžnosti rozhraní API pro C.|  
+|[Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)|Popisuje rozhraní API Vizualizéru souběžnosti jazyka C++.|  
+|[Referenční dokumentace knihoven jazyka C](../profiling/c-library-reference.md)|Popisuje rozhraní API Vizualizéru souběžnosti pro C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Popisuje rozhraní API Vizualizéru souběžnosti pro spravovaný kód.|  
-|[Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)|Referenční informace pro zobrazení a sestavy profilace datové soubory, které jsou generovány pomocí metoda souběžného zpracování, které obsahují data provádění přístup z více vláken.|
+|[Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)|Referenční informace o zobrazeních a sestavách profilace datových souborů, které jsou generovány pomocí za použití metody souběžnosti a, které zahrnují data spouštění vlákna.|

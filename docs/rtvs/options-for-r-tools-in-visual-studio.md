@@ -3,7 +3,6 @@ title: Možnosti nástrojů jazyka R
 description: Referenční informace pro možnosti v sadě Visual Studio pro jazyk R a související funkce.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37250956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900558"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Nástroje R pro Visual Studio možnosti
 
@@ -30,10 +29,10 @@ Nastavení jsou přístupné prostřednictvím **nástroje R** > **možnosti** n
 
 Možnosti a nastavení specifická pro R jsou přístupné pomocí níže uvedených metod. Musíte vybrat **zobrazit všechna nastavení** políčko v dolní části **možnosti** dialogové okno pro všechny tyto oddíly se zobrazí.
 
-- Možnosti formátování kódu (naleznete v tématu [možnosti editoru](editing-r-code-in-visual-studio.md#editor-options): **nástroje** > **možnosti** nabídce pak vyberte **textový Editor**  >  **R** > **formátování**
-- Možnosti linter (naleznete v tématu [Linting](linting-r-code.md)): **nástroje** > **možnosti** nabídce pak vyberte **textový Editor**  >   **R** > **Lint**
-- Rozšířené možnosti editoru ([popsaných v tomto článku](#text-editor--r--advanced-options)): **nástroje** > **možnosti** nabídce pak vyberte **textový Editor**  >  **R** > **Advanced**
-- Chování možnosti ([popsaných v tomto článku](#r-tools--advanced-options)): **nástroje R** > **možnosti** nabídky, nebo **nástroje**  >  **Možnosti**, přejděte k položce **nástroje R**.
+- Možnosti formátování kódu (viz [možnosti editoru](editing-r-code-in-visual-studio.md#editor-options): **Nástroje** > **možnosti** nabídce pak vyberte **textový Editor** > **R** > **formátování**
+- Možnosti linter (viz [Linting](linting-r-code.md)): **Nástroje** > **možnosti** nabídce pak vyberte **textový Editor** > **R** > **Lint**
+- Rozšířené možnosti editoru ([popsaných v tomto článku](#text-editor--r--advanced-options)): **Nástroje** > **možnosti** nabídce pak vyberte **textový Editor** > **R** > **Upřesnit**
+- Chování možnosti ([popsaných v tomto článku](#r-tools--advanced-options)): **Nástroje R** > **možnosti** nabídky, nebo **nástroje** > **možnosti**, přejděte k položce **nástroje R**.
 
 **Nástroje R** > **nastavení pro datové vědy** příkaz ovlivňuje také celou řadu různých nastavení v sadě Visual Studio celkové. Tento příkaz je popsané v další části.
 
@@ -102,7 +101,7 @@ Tyto možnosti určují způsob zpracování hodnot v [Průzkumníka proměnnýc
 | --- | --- | --- |
 | Prohlížeč stránek HTML | `External` | Určuje, kde je obsah, jako `ggvis` diagram, nebo `shiny` vykreslením aplikaci. `Internal` zobrazuje výstup ve formátu HTML v rámci panelu nástrojů v sadě Visual Studio; `External` zobrazí výstupu protokolu HTML ve vašem výchozím prohlížeči. |
 
-### <a name="logging"></a>protokolování
+### <a name="logging"></a>Protokolování
 
 | Možnost | Výchozí hodnota | Popis |
 | --- | --- | --- |

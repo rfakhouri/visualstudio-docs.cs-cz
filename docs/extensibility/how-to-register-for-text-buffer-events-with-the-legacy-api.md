@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: registrace pro textové vyrovnávací paměti události s rozhraním API starší verze | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zaregistrujte se na textové vyrovnávací paměti události s rozhraním API starší verze | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ffe8362f26a55fdb6a9fe236782965a2062ed69
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886004"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Postupy: registrace pro události vyrovnávací paměti textu se starší verze rozhraní API
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Postupy: Zaregistrujte se na události vyrovnávací paměti textu pomocí starší verze rozhraní API
 Pokud vyrovnávací paměť textu přistupujete pomocí starší verze rozhraní API, byste měli zaregistrovat pro události vyrovnávací paměti textu, jak je znázorněno v následujícím postupu.  
   
 ## <a name="to-advise-text-buffer-events"></a>Radit události vyrovnávací paměť textu  

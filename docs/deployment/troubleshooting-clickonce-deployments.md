@@ -1,8 +1,6 @@
 ---
 title: Řešení potíží s nasazením ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 25d352666b66202b40d5d1d397aa36a978f695a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944480"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Řešení potíží s nasazením ClickOnce
 Toto téma pomáhá při diagnostice a řešení běžných problémů s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
@@ -34,10 +32,10 @@ Toto téma pomáhá při diagnostice a řešení běžných problémů s [!INCLU
 
 ## <a name="deployment-considerations"></a>Důležité informace o nasazení
 
- [Postupy: nastavení umístění souboru vlastního protokolu pro chyby nasazení ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Postupy: Nastavení umístění souboru vlastního protokolu pro chyby nasazení ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Popisuje, jak přesměrovat všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] chyby aktivace na počítači, do jednoho souboru protokolu.  
   
- [Postupy: určení souborů podrobného protokolování pro nasazení ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Popisuje, jak zvýšit podrobnosti, které [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapíše do souborů protokolu.  
   
  [Problémy s konfigurací serveru a klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  

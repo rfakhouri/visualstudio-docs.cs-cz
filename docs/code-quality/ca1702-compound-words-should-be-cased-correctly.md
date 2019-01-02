@@ -1,8 +1,7 @@
 ---
-title: 'CA1702: Malá a velká písmena složených slov by měla být použita správně'
+title: 'CA1702: Složených slov by měla správně formátováno.'
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4703c43c81df13432f45fb4ba519a02b39a839e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829573"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Malá a velká písmena složených slov by měla být použita správně
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Složených slov by měla správně formátováno.
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Kategorie|Microsoft.Naming|
-|Narušující změna|Při ukončování aktivováno u sestavení.<br /><br /> Non narušující - při vyvolání parametrů typů.|
+|Narušující změna|Při ukončování pro sestavení vyvolala.<br /><br /> Bez konce – při vyvolání na parametry typu.|
 
 ## <a name="cause"></a>příčina
 
@@ -38,17 +37,17 @@ Název identifikátoru obsahuje více slov a alespoň jedno ze slov se zdá být
 
 ## <a name="rule-description"></a>Popis pravidla
 
-Název identifikátoru je rozdělení do slova, které jsou založeny na malá a velká písmena. Každý souvislý dva slovní spojení je ve kontrola pravopisu knihovně společnosti Microsoft. Pokud je rozpoznána, vytvoří identifikátor narušení pravidla. Příklady složených slov, které způsobí narušení jsou "Kontrolního součtu" a "MultiPart", která by měla být použita jako "Kontrolního součtu" a "Multipart", v uvedeném pořadí. Z důvodu předchozí běžné použití několika výjimkami je součástí pravidlo, a jsou označeny několik jednoho slova, jako je například "Nástrojů" a "Název souboru", která by měla být použita jako dvě různá slova (v tomto případě "Nástrojů" a "Název").
+Název identifikátoru je rozdělený do slov, které jsou založeny na velká a malá písmena. Každá kombinace souvislých dvě slova je zaškrtnuté políčko knihovnou kontroly pravopisu společnosti Microsoft. Pokud je rozpoznána, vytvoří identifikátor porušení tohoto pravidla. Příklady složených slov, které způsobují porušení: "Kontrolního součtu" a "MultiPart", která by měla být malá a velká použita jako "Kontrolního součtu" a "Multipart", v uvedeném pořadí. Z důvodu předchozí běžné použití několika výjimkami jsou součástí pravidla a jsou označeny několik jednotlivá slova, jako je například "Panel nástrojů" a "Název_souboru", který by měl být notaci jako dvě různá slova (v tomto případě "Panel nástrojů" a "Název_souboru").
 
-Zásady vytváření názvů zadejte obecný vzhled pro knihovny cílené modul common language runtime. Tím se snižuje křivky learning, který je vyžadován pro nové knihovny softwaru a zvyšuje sebejistotu zákazníka, knihovny byla vyvinuta uživatelem s odbornými znalostmi v vývoj spravovaného kódu.
+Zásady vytváření názvů poskytují obecný vzhled knihovnám využívajících common language runtime. To snižuje učit se, která vyžaduje nové knihovny softwaru a zvyšuje důvěru zákazníků, že byla vyvinuta knihovny někdo, kdo má odborných znalostí v vývoj spravovaného kódu.
 
-## <a name="how-to-fix-violations"></a>Jak opravit porušení
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Změňte název tak, aby je použita správně.
+Změňte název tak, že je správně formátováno.
 
 ## <a name="language"></a>Jazyk
 
-Kontrola pravopisu kontroluje aktuálně jen pro jazykovou verzi na základě angličtina slovník. Jazyková verze projektu v souboru projektu, můžete změnit tak, že přidáte **CodeAnalysisCulture** element.
+Nástroj pro kontrolu pravopisu aktuálně zkontroluje pouze proti jazykovou verzi na základě angličtina slovníky. Jazyková verze projektu v souboru projektu, můžete změnit tak, že přidáte **CodeAnalysisCulture** elementu.
 
 Příklad:
 
@@ -59,19 +58,19 @@ Příklad:
 ```
 
 > [!IMPORTANT]
-> Pokud nastavíte jazykovou verzi na jakoukoli jinou hodnotu než jazykovou verzi na základě angličtina, je tato pravidel nástroje Analýza kódu bezobslužně zakázané.
+> Pokud nastavíte jazykovou verzi na jinou hodnotu než jazykovou verzi na základě angličtina, tento pravidel nástroje Analýza kódu je tiše zakázaná.
 
-## <a name="when-to-suppress-warnings"></a>Při potlačení upozornění
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je bezpečné potlačit upozornění na toto pravidlo, pokud jsou obě části složené slovo rozpoznáno slovníku a je použít dvě slova.
+Je bezpečné potlačit upozornění tohoto pravidla, je-li obě části složené slovo, které jsou rozpoznány modulem slovníku a cílem je používat dvě slova.
 
 ## <a name="related-rules"></a>Související pravidla
 
-- [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identifikátory by se měly lišit více než použitím malých a velkých písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: Složených slov prostředku řetězců by měla správně formátováno.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Identifikátory by měly správně formátováno.](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Identifikátory by se měly lišit o více než velikostí písmen](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Pokyny pro pojmenování](/dotnet/standard/design-guidelines/naming-guidelines)
 - [Konvence pro malá a velká písmena](/dotnet/standard/design-guidelines/capitalization-conventions)

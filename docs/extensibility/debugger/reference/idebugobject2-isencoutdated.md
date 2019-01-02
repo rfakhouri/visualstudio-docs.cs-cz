@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::IsEncOutdated | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::IsEncOutdated
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7f8344896c0ad262a8db09cb4caa0e00414431b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928097"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838882"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 Tato metoda určuje, zda funkce upravit a pokračovat stav tohoto objektu nebo jeho nadřazeného kontejneru je zastaralá. Vyhodnocovací filtr vlastních výrazů neimplementuje tuto metodu a vždy vrátí `E_NOTIMPL`.  
@@ -28,14 +25,14 @@ Tato metoda určuje, zda funkce upravit a pokračovat stav tohoto objektu nebo j
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
+HRESULT IsEncOutdated(  
+   BOOL* pfEncOutdated  
 );  
 ```  
   
 ```csharp  
-int IsEncOutdated(  
-   out int pfEncOutdated  
+int IsEncOutdated(  
+   out int pfEncOutdated  
 );  
 ```  
   

@@ -1,8 +1,6 @@
 ---
 title: Idiasession::getenumtables – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f68da36fc527e0390789df22ed4550a6165adbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2659fa3e5c82e48092c9f2b4b009b7e82e72123
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889526"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 Získá enumerátor pro všechny tabulky, které jsou obsaženy v úložišti symbolů.  
@@ -27,7 +25,7 @@ Získá enumerátor pro všechny tabulky, které jsou obsaženy v úložišti sy
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT getEnumTables (   
+HRESULT getEnumTables (   
    IDiaEnumTables** ppEnumTables  
 );  
 ```  

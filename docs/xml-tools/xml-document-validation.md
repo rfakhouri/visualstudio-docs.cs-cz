@@ -2,7 +2,6 @@
 title: Ověření dokumentu XML v editoru XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
@@ -10,40 +9,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899727"
 ---
 # <a name="xml-document-validation"></a>Ověření dokumentu XML
 
-Editor souborů XML kontroluje syntaxe XML 1.0 a také provádí ověřování dat během psaní. Editor můžete ověřit pomocí definice typu dokumentu (DTD) nebo schéma. Červené podtržení vlnovkou zvýrazněte všechny chyby ve správném formátu XML 1.0. Modré podtržení vlnovkami Zobrazit sémantické chyby podle ověření DTD nebo schéma. Jednotlivé chyby má související záznam v seznamu chyb. Můžete také zobrazit chybová zpráva ponecháte myši nad vlnovkou.
+XML Editor ověří syntaxi XML 1.0 a také provádí ověření dat při psaní. V editoru můžete ověřit pomocí definice typu dokumentu (DTD) nebo schéma. Červené podtržení vlnovkou zvýrazněte všechny chyby ve správném formátu XML 1.0. Modré podtržení vlnovkou Zobrazit sémantické chyby podle specifikace DTD nebo schématu ověřování. Každá chyba má přidružený záznam v seznamu chyb. Když pozastavíte ukazatel myši nad podtržení vlnovkou můžete také zobrazit chybová zpráva.
 
- Nebyly nalezeny schémata použít ověřování pomocí odpovídajících `targetNamespace` kompilované schématu s xmlns deklaraci elementu. Kompilované schémata jsou načteny z jednoho z následujících umístění, uvedené v pořadí podle priority:
+ Při ověřování se používají schémata se nacházejí to provede spárováním odpovídajících `targetNamespace` kompilované schématu s xmlns deklarací elementu. Zkompilovaných schémat jsou načteny z jednoho z následujících umístění, uvedeny v pořadí podle priority:
 
--   Z názvu souboru, který je zadaný v **schémata** pole dokumentu **vlastnosti** okno.
+-   Od zadaný v názvu souboru **schémata** pole dokumentu **vlastnosti** okna.
 
--   Vložené schéma nebo souboru DTD protokolu.
+-   Vložené schéma nebo DTD.
 
--   Externí DTD nebo `xsd:schemaLocation` a `xsd:noNamespaceSchemaLocation` atribut
+-   Externí specifikaci DTD nebo `xsd:schemaLocation` a `xsd:noNamespaceSchemaLocation` atribut
 
--   "X-schema" XDR názvů schématu identifikátoru URI.
+-   "X-schema" XDR schématu obor názvů služby identifikátoru URI.
 
-Schémata možné také najít v následujících umístěních další schéma má prázdný cílový obor názvů:
+Schémata můžete také najít v následujících umístěních další schéma obsahuje prázdný cílový obor názvů:
 
--   Další okno editor, který obsahuje schéma.
+-   Jiné okno editoru obsahující schéma.
 
 -   Schéma v aktuálním řešení.
 
 -   Schéma z adresáře mezipaměti schématu.
 
 ## <a name="xslt-files"></a>Soubory XSLT
- Při úpravě soubor XSLT *xslt.xsd* soubor nachází v mezipaměti schématu se používá pro ověření. Jako modré podtržení vlnovkami zobrazí chyby ověření. Chyby z kompilátoru XSLT se zobrazí jako červené podtržení vlnovkou.
+ Při úpravách souboru XSLT *xslt.xsd* soubor umístěný v mezipaměti schématu se používá k ověření. Chyby ověřování se zobrazí jako modré podtržení vlnovkou. Chyby kompilátoru XSLT se zobrazují jako červené podtržení vlnovkou.
 
-## <a name="xml-schema-xsd-files"></a>Soubory XML schématu (XSD)
- Při úpravě souboru schématu XML *xsdschema.xsd* soubor nachází v mezipaměti schématu se používá pro ověření. Jako modré podtržení vlnovkami zobrazí chyby ověření. Red vlnovkou jsou také uvedené chyby kompilace.
+## <a name="xml-schema-xsd-files"></a>Soubory XML (XSD) schématu
+ Při úpravách souboru schématu XML *xsdschema.xsd* soubor umístěný v mezipaměti schématu se používá k ověření. Chyby ověřování se zobrazí jako modré podtržení vlnovkou. Chyby při kompilaci jsou také zobrazeny červenou vlnovkou.
 
 ## <a name="see-also"></a>Viz také:
 

@@ -9,22 +9,21 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832135"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Postupy: patří nahrávání obrazovky a hlasu během testů pomocí nastavení testu
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Postupy: Zahrnout nahrávání obrazovky a hlasu během testů pomocí nastavení testu
 
 Z editoru konfigurace v sadě Visual Studio můžete nakonfigurovat adaptér diagnostických dat, který zaznamenává obrazovku a hlas uživatele, který spustil test. Tento adaptér diagnostických dat uloží obrazovku a hlasovou nahrávku relace plochy během testu. Záznam je uložen s výsledkem zkoušky nebo může být připojen k chybě. Ostatní členové týmu mohou používat tento záznam k izolování problémů aplikací, které je obtížné reprodukovat.
 
 > [!WARNING]
 > Obrazovky a hlasové nahrávky nepodporují více konfigurací monitoru.
 
-Obrazovku a hlasový záznamník lze použít s ruční nebo automatické testy. Například pokud vzdáleně spustíte programový test uživatelského rozhraní můžete zaznamenat plochu za účelem zobrazení programového testu UI za běhu. Další informace o tom, jak zachytit obrazovku a hlasový záznam vzdáleně, naleznete v tématu [jak: nastavit testovacího agenta ke spuštění testů komunikujících s plochou](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+Obrazovku a hlasový záznamník lze použít s ruční nebo automatické testy. Například pokud vzdáleně spustíte programový test uživatelského rozhraní můžete zaznamenat plochu za účelem zobrazení programového testu UI za běhu. Další informace o tom, jak zachytit obrazovku a hlasový záznam vzdáleně, naleznete v tématu [jak: Nastavení testovacího agenta pro spouštění testů komunikujících s plochou](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -52,11 +51,11 @@ Obrazovku a hlasový záznamník lze použít s ruční nebo automatické testy.
 
 6.  V části **kvalita nahrávání obrazovky**, nakonfigurujte následující možnosti rozevíracího seznamu:
 
-    1.  **Snímková frekvence:** zadejte, kolik snímků za sekundu, které chcete použít při záznamu hlasu a obrazovky. Výchozí hodnota je 4 snímky za sekundu. Je možné zadat hodnoty v rozmezí 2 až 20.
+    1.  **Snímková frekvence:** Zadejte, kolik snímků za sekundu, které chcete použít při záznamu hlasu a obrazovky. Výchozí hodnota je 4 snímky za sekundu. Je možné zadat hodnoty v rozmezí 2 až 20.
 
-    2.  **Přenosová rychlost:** zadejte, kolik kilobajtů za sekundu se použije při záznamu hlasu a obrazovky. Výchozí hodnota je 512. Je možné zadat hodnoty v rozmezí 512 až 10 000.
+    2.  **Přenosová rychlost:** Určete, kolik kilobajtů za sekundu chcete použít při záznamu hlasu a obrazovky. Výchozí hodnota je 512. Je možné zadat hodnoty v rozmezí 512 až 10 000.
 
-    3.  **Kvalita(1-100):** můžete určit kvalitu obrazovky a hlasu výběrem rozsahu mezi 1 a 100. Výchozí hodnota je 50 (střední).
+    3.  **Kvalita(1-100):** Můžete určit kvalitu obrazovky a hlasu výběrem rozsahu mezi 1 a 100. Výchozí hodnota je 50 (střední).
 
 7.  Zvolte **OK**. Nastavení shromažďování diagnostického trasování jsou nyní nakonfigurováno a uloženo pro nastavení testu.
 

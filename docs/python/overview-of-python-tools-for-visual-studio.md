@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Přehled funkce Pythonu v sadě Visual Studio, takže nejlepší prostředí Python IDE ve Windows (označované také jako Python Tools for Visual Studio, PTVS).
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927334"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Práce s využitím Pythonu v sadě Visual Studio ve Windows
 
@@ -45,9 +44,9 @@ Použití **otevřít interaktivní okno** příkaz interaktivní spuštění Py
 
 Další informace:
 
-- Video (2 miliony 35s): [prostředí spravovat Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- Dokumentace: [prostředí spravovat Pythonu](managing-python-environments-in-visual-studio.md)
-- Dokumentace: [odkazovat prostředí Pythonu](python-environments-window-tab-reference.md)
+- Video (2 miliony 35s): [Správa prostředí Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Dokumentace: [Správa prostředí Pythonu](managing-python-environments-in-visual-studio.md)
+- Dokumentace: [Odkaz na prostředí Pythonu](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Bohaté možnosti úpravy, technologii IntelliSense a porozumění kódu
 
@@ -57,12 +56,12 @@ Visual Studio poskytuje prvotřídní editor Pythonu, včetně barevné zvýraz�
 
 Další informace:
 
-- Video (2 miliony 30 s): [kódu upravit Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
-- Dokumentace: [úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md)
-- Dokumentace: [formátování kódu](formatting-python-code.md)
+- Video (2 miliony 30 s): [Úpravy kódu v Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Dokumentace: [Úpravy kódu v Pythonu](editing-python-code-in-visual-studio.md)
+- Dokumentace: [Formátovat kód](formatting-python-code.md)
 - Dokumentace: [Refaktorování kódu](refactoring-python-code.md)
-- Dokumentace: [použít linter](linting-python-code.md)
-- Visual Studio – Obecné funkce dokumentace: [funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
+- Dokumentace: [Použít linter](linting-python-code.md)
+- Visual Studio – Obecné funkce dokumentace: [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Interaktivní okno
 
@@ -76,8 +75,8 @@ Visual Studio také podporuje IPython/Jupyter v REPL, včetně vložené grafy, 
 
 Další informace:
 
-- Video (2 miliony 22s: [interaktivní okno Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- Dokumentace: [interaktivní okno](python-interactive-repl-in-visual-studio.md)
+- Video (2 miliony 22s: [Interaktivní okno Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Dokumentace: [Interaktivní okno](python-interactive-repl-in-visual-studio.md)
 - Dokumentace: [IPython v sadě Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Systém projektů a šablon projektů a položek
@@ -92,12 +91,12 @@ Visual Studio vám pomůže spravovat složitosti projektu roste v čase. Projek
 
 Další informace:
 
-- Dokumentace: [projektů v Pythonu spravovat](managing-python-projects-in-visual-studio.md)
-- Dokumentace: [položky referenční dokumentace k šablonám](python-item-templates.md)
-- Dokumentace: [šablony projektu Pythonu](managing-python-projects-in-visual-studio.md#project-templates)
-- Dokumentace: [pracovat s C++ a Python](working-with-c-cpp-python-in-visual-studio.md)
-- Visual Studio – Obecné funkce dokumentace: [šablony projektů a položek](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Visual Studio – Obecné funkce dokumentace: [řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Dokumentace: [Správa projektů v Pythonu](managing-python-projects-in-visual-studio.md)
+- Dokumentace: [Referenční informace pro položku šablony](python-item-templates.md)
+- Dokumentace: [Šablony projektů v Pythonu](managing-python-projects-in-visual-studio.md#project-templates)
+- Dokumentace: [Práce s C++ a Python](working-with-c-cpp-python-in-visual-studio.md)
+- Visual Studio – Obecné funkce dokumentace: [Šablony projektů a položek](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Visual Studio – Obecné funkce dokumentace: [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Plně vybavené ladění
 
@@ -107,11 +106,11 @@ Jednou z Visual Studio předností je jeho výkonný ladicí program. Pro jazyk 
 
 Další informace:
 
-- Video: [ladění Python 3 m 32s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
-- Dokumentace: [ladění Pythonu](debugging-python-in-visual-studio.md)
-- Dokumentace: [ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Dokumentace: [vzdáleného ladění na Linuxu](debugging-python-code-on-remote-linux-machines.md)
-- Visual Studio – Obecné funkce dokumentace: [funkce tour ladicího programu sady Visual Studio](../debugger/debugger-feature-tour.md)
+- Video: [3m 32s ladění Pythonu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- Dokumentace: [Ladění Pythonu](debugging-python-in-visual-studio.md)
+- Dokumentace: [Ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Dokumentace: [Vzdálené ladění na Linuxu](debugging-python-code-on-remote-linux-machines.md)
+- Visual Studio – Obecné funkce dokumentace: [Prohlídka funkcí ladicího programu sady Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Nástroje pro profilaci s komplexní vykazování
 
@@ -121,7 +120,7 @@ Profilace zkoumá, jak je právě doba trvání v rámci vaší aplikace. Visual
 
 Další informace:
 
-- Video: [profilace Python 3 m 00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- Video: [Profilace Python 3m 00s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - Dokumentace: [Python nástroje pro profilaci](profiling-python-code-in-visual-studio.md)
 - Visual Studio – Obecné funkce dokumentace: [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md). (Ne všechny funkce pro profilaci sady Visual Studio jsou k dispozici pro Python).
 
@@ -133,9 +132,9 @@ Zjišťování, spouštět a spravovat testy v sadě Visual Studio **Průzkumní
 
 Další informace:
 
-- Video: [testování Python 2 miliony 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
-- Dokumentace: [testování nástroje pro Python](unit-testing-python-in-visual-studio.md)
-- Visual Studio – Obecné funkce dokumentace: [testování částí kódu](../test/unit-test-your-code.md).
+- Video: [Testování Python 2 miliony 31s](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Dokumentace: [Nástroje testování částí pro Python](unit-testing-python-in-visual-studio.md)
+- Visual Studio – Obecné funkce dokumentace: [Testování částí kódu](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
@@ -147,7 +146,7 @@ Další informace najdete v tématu [sady Azure SDK pro Python](azure-sdk-for-py
 
 |   |   |
 |---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | <ul><li>[Úvod k programování v Pythonu](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Začátečník: řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Základy Python: seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Nejdůležitější otázky týkající se Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | <ul><li>[Úvod k programování v Pythonu](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python začátečníky: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Základy Pythonu: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Nejdůležitější otázky týkající se Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 

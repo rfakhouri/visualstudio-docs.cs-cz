@@ -1,9 +1,6 @@
 ---
 title: Přehled integrace správy zdrojového | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902983"
 ---
 # <a name="source-control-integration-overview"></a>Přehled integrace správy zdrojového kódu
 Tato část porovná dva způsoby, jak integrovat do správy zdrojového kódu sady Visual Studio; ovládací prvek zdroje modulu Plug-in a VSPackage, která poskytuje source řešení pro řízení a označuje nové funkce správy zdrojového kódu. Visual Studio umožňuje ruční přepínání mezi balíčků VSPackage správy zdrojového kódu a ovládací prvek moduly plug-in zdrojového kódu, stejně jako automatické přepínání založené na řešení.  
@@ -35,7 +32,7 @@ Tato část porovná dva způsoby, jak integrovat do správy zdrojového kódu s
   
 1. Vytvořit knihovnu DLL, která implementuje funkcí zadaných v [moduly plug-in správy zdrojových kódů](../../extensibility/source-control-plug-ins.md).  
   
-2. Zaregistruje knihovnu DLL tak, že položky odpovídající registru (popsané v [postupy: Instalace modulu Plug-in zdrojového ovládacího prvku](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Zaregistruje knihovnu DLL tak, že položky odpovídající registru (popsané v [jak: Instalace modulu Plug-in správy zdrojového kódu](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Vytvořte pomocné rutiny uživatelského rozhraní a zobrazení po zobrazení výzvy zdrojový ovládací prvek adaptér balíček (součást sady Visual Studio, která zajišťuje funkce správy zdrojového kódu pomocí ovládacího prvku moduly plug-in zdrojového kódu)  
   

@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905277"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Postupy: Přidat obsah ovládacích prvků do dokumentů aplikace Word
   V projektech aplikace Word úrovni dokumentu můžete přidat ovládací prvky obsahu v dokumentu v projektu, v době návrhu nebo za běhu. V projekty doplňku VSTO pro Word můžete přidat ovládací prvky obsahu do libovolného otevřeného dokumentu za běhu.  
@@ -192,4 +189,3 @@ ms.locfileid: "53648043"
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  
-  

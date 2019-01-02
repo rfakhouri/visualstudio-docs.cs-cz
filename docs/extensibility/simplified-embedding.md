@@ -1,9 +1,6 @@
 ---
-title: Zjednodušená vložení | Microsoft Docs
-ms.custom: ''
+title: Zjednodušená vkládání | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
@@ -13,31 +10,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01b06a0a63059c39035d15221feb201d3674d4a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 010f610a6dc39afab87c67ab3c11ffd05f614ebe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941648"
 ---
-# <a name="simplified-embedding"></a>Zjednodušená vložení
-Zjednodušená vložení je povolena v editoru při jeho objekt zobrazení dokumentu je nadřazena má (který je provedeno podřízenou) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> rozhraní je implementováno pro zpracování jeho příkazy okna. Zjednodušená vnoření editory nemůže být hostitelem aktivní ovládací prvky. Na následujícím obrázku se zobrazí objekty použít k vytvoření editoru s zjednodušené vložení.  
+# <a name="simplified-embedding"></a>Zjednodušená vkládání
+Zjednodušená vkládání je povolen v editoru při jeho objekt zobrazení dokumentu je prvek (to znamená, že provede podřízený) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> rozhraní je implementováno s cílem zpracovat příkazy jeho okna. Zjednodušená vkládání editory nemůže hostovat aktivní ovládací prvek. Na následujícím obrázku jsou zobrazeny objekty sloužící k vytvoření editoru s zjednodušená vkládání.  
   
- ![Zjednodušená vložení editoru obrázek](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
-Editor s zjednodušené vložení  
+ ![Zjednodušená vkládání Editor grafiky](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+Editor s zjednodušená vkládání  
   
 > [!NOTE]
->  Objekty v tomto obrázku pouze `CYourEditorFactory` objektu je potřeba vytvořit standardní na základě souborů editor. Pokud vytváříte vlastní editor, není nutné k implementaci <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, protože vaše editor pravděpodobně bude mít svůj vlastní mechanismus privátní trvalosti. Pro jiný vlastní editory ale je potřeba udělat tak.  
+>  Objektů na tomto obrázku, pouze `CYourEditorFactory` objekt je potřeba vytvořit standardní souborové editoru. Pokud vytváříte vlastní editor, není nutné implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, protože editor budou mít svůj vlastní mechanismus privátní trvalosti. Pro jiné vlastní editory ale musíte tak učinit.  
   
- Všechna rozhraní implementované vytvořit editoru s zjednodušené vložení jsou součástí `CYourEditorDocument` objektu. Ale pro podporu více zobrazení dat dokumentu, rozdělte rozhraní do samostatné objekty data a podívat se, které je uvedené v následující tabulce.  
+ Všechna rozhraní implementované vytvoření editoru s zjednodušená vkládání jsou obsaženy v `CYourEditorDocument` objektu. Však pro podporu více zobrazení dokumentů data rozdělte rozhraní do samostatných dat a zobrazení objektů jak je uvedeno v následující tabulce.  
   
 |Rozhraní|Umístění rozhraní|Použití|  
 |---------------|---------------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Zobrazit|Poskytuje připojení do nadřazeného okna.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Zobrazit|Zpracovává příkazy.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Zobrazit|Umožňuje aktualizace stavového řádku.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Zobrazit|Umožňuje **sada nástrojů** položky.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Data|Odešle oznámení, když se změní soubor.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Zobrazit|Povolí aktualizace stavového řádku.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Zobrazit|Umožňuje **nástrojů** položky.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Data|Odešle oznámení při změně souboru.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Data|Povolí funkci uložit jako pro určitý typ souboru.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Data|Povolí zachování dokumentu.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Data|Povolí potlačení události změny souborů, jako je například opětovné načtení aktivován.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Data|Povolí trvalost pro dokument.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Data|Povolí potlačení událostí změny souborů, jako je aktivace znovu načíst.|

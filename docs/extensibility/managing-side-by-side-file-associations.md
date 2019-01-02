@@ -1,9 +1,6 @@
 ---
 title: Správa přidružení souborů vedle sebe | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbc06ba777939857876221a2796eef6786ec44c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fdee9d9b3d96c97ba738d974ff9691417068121e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826939"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Správa přidružení souborů vedle sebe
 Pokud vaše VSPackage poskytuje přidružení souborů, musíte rozhodnout, jak zpracovat-souběžnými instalacemi, ve kterém konkrétní verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] by mělo být vyvoláno pro otevření souboru. Formáty souborů složené problém.  
@@ -52,7 +49,7 @@ Pokud vaše VSPackage poskytuje přidružení souborů, musíte rozhodnout, jak 
   
   ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>CustomAction řádky tabulky, které určují nejnovější verzi sady Visual Studio  
   
-  |Akce|Typ|Zdroj|Cíl|  
+  |Akce|Typ|Zdroj|Target|  
   |------------|----------|------------|------------|  
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  

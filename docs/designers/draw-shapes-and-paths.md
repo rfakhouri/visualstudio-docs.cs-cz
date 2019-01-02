@@ -2,7 +2,6 @@
 title: Kreslení tvarů a cest
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942642"
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 
@@ -85,7 +84,7 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 ##  <a name="Convert"></a> Převod tvaru na cestu
  Pokud chcete změnit tvar stejným způsobem, že změníte cestu, převod tvaru na cestu.
 
- **Podívejte se na krátké video:** ![konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Převod tvaru na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 ##  <a name="Combine"></a> Spojit cesty
  Cesty a tvary můžete zkombinovat do jedné cesty.
@@ -98,7 +97,7 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 |![Vyloučit překryv](../designers/media/b1_2.png)|Sjednocení|![](../designers/media/b1_5.png)|Vyloučit překryv|
 |![Odečíst](../designers/media/b1_3.png)|Dělení|![](../designers/media/b1_6.png)|Odečíst|
 
- **Podívejte se na krátké video:** ![konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Kombinovat cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Kombinace cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ##  <a name="Compound"></a> Vytvořit složenou cestu
  Při vytváření složené cesty protínající části cesty jsou odečtena od výsledku a výslednou cestu převezme visual vlastnosti nejspodnějších cesty.
@@ -107,14 +106,14 @@ Tvarů a cest používá vektorovou grafiku, takže jejich škálování i na di
 
  ![Přerušit složenou cestu](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Podívejte se na krátké video:** ![konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: vytvořit složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Vytvořit složenou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ##  <a name="Clipping"></a> Vytvořit ořezovou cestu
  Ořezové cesty je cesta nebo tvar, který se použije na jiný objekt skrytí částí maskované objektu, které spadají mimo ořezové cesty.
 
  ![Ořezovou cestu](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Podívejte se na krátké video:** ![konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Vytvořit ořezovou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.png) [práci s cestami: Vytvořit ořezovou cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>Viz také:
 

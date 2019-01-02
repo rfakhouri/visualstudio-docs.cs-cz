@@ -1,9 +1,6 @@
 ---
-title: Podpora správy zdrojového kódu | Microsoft Docs
-ms.custom: ''
+title: Podpora správy zdrojového kódu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
@@ -13,48 +10,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ae3590a5d02c2b3f1d4b67f724d0177f671f7d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 523c7de972958eff9224896d3a59543163eb7b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936812"
 ---
 # <a name="supporting-source-control"></a>Podpora správy zdrojového kódu
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje souboru rezervace, vrácení se změnami a jiných operací se zdrojovým ovládací prvek pro váš projekt nebo editor. Jako zdroj ovládacího prvku klienta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je navržen pro interakci s balíčkem řízení zdroje, jako například [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], který poskytuje archivace, Správa verzí a řízení zařízení pro dynamicky definovanou sadu souborů.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje souboru rezervace, vrácení se změnami a jiných operací správy zdrojů pro projekt nebo editoru. Jako zdrojový ovládací prvek klienta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je navržen pro interakci s balíčkem ovládací prvek zdroje, jako například [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], která poskytuje archivace, Správa verzí a řízení zařízení pro dynamicky definované sady souborů.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Model pro balíčky správy zdrojového kódu](../../extensibility/internals/model-for-source-control-packages.md)  
- Popisuje typ projektu musí implementovat rozhraní pro podporu správy zdrojového kódu.  
+ Popisuje rozhraní, musí implementovat typ projektu pro podporu správy zdrojového kódu.  
   
  [Rozhodnutí o návrhu](../../extensibility/internals/source-control-design-decisions.md)  
- Poskytuje otázky, jejichž odpovědi změnit, jak implementovat typu projektu.  
+ Obsahuje dotazy, jejichž odpovědi změnit, jak implementovat typ projektu.  
   
- [Podrobnosti o konfiguraci](../../extensibility/internals/source-control-configuration-details.md)  
- Popisuje, jak podpora správy zdrojového kódu změní implementace typ projektu.  
+ [Podrobnosti konfigurace](../../extensibility/internals/source-control-configuration-details.md)  
+ Popisuje, jak podpora správy zdrojového kódu se změní implementaci typu projektu.  
   
  [Další pokyny pro projekty a editory](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
- Popisuje osvědčené postupy pro typy projektů a editory.  
+ Tento článek popisuje osvědčené postupy pro typy projektů a editory.  
   
- [Podrobnosti o modulu runtime](../../extensibility/internals/source-control-runtime-details.md)  
- Popisuje postup registrace projektu, pokud uživatel přidá do systému správy zdrojového kódu.  
+ [Podrobnosti modulu runtime](../../extensibility/internals/source-control-runtime-details.md)  
+ Popisuje postup registrace projektu, když uživatel přidá do systému správy zdrojového kódu.  
   
 ## <a name="reference"></a>Odkaz  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- Určuje prostředí nebo zdroj ovládacího prvku balíček, který soubor je Chystáte se změnit v paměti nebo uložený.  
+ Určuje prostředí nebo zdroj ovládacího prvku balíček, který soubor Chystáte se dá změnit v paměti nebo uložit.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- Umožňuje projekty a hierarchií zaregistrovat se správa zdrojového kódu a získat informace o řízení stav zdroje.  
+ Umožňuje projekty a hierarchie na zaregistrovat se správou zdrojového kódu a získávání informací o stav správy zdrojových kódů.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- Implementované v systému projektu k zajištění správy zdrojového kódu pro soubory projektu a položky projektu.  
+ Implementováno v systému projektu k zajištění správy zdrojového kódu pro soubory projektu a položky projektu.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- Projekty používá k dotazování prostředí pro oprávnění k přidávání, odeberte nebo přejmenujte soubor nebo adresář v řešení.  
+ Chcete-li zadat dotaz na prostředí pro oprávnění, které chcete přidat, odebrat nebo přejmenovat soubor nebo adresář v řešení používá projekty.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
- Oznamuje klientům změny, které byly provedeny na projektu soubory nebo adresáře.  
+ Oznamuje klientům změny provedené na projektu soubory nebo adresáře.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Typy projektů](../../extensibility/internals/project-types.md)  
- Poskytuje přehled projekty jako základní stavební bloky [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou uvedeny odkazy na další témata, které vysvětlují, jak řídit projekty vytváření a kompilování kódu.
+ Poskytuje přehled o projekty jako základní stavební bloky [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou uvedeny odkazy na další témata, která popisují, jak řídit projekty vytváření a kompilování kódu.

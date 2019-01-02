@@ -1,8 +1,6 @@
 ---
-title: Zobrazení (IP) ukazatele na instrukce | Microsoft Docs
-ms.custom: ''
+title: Zobrazení ukazatelů na instrukce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.instructionpointers
@@ -19,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c72d0d1cca803996461ccfba9d7f04811b9048e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 67e890b725ecc9ed13490d9b874ebf45086044fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961978"
 ---
 # <a name="instruction-pointers-ips-view"></a>Zobrazení Ukazatele na instrukce (IP)
-Zobrazení ukazatele na instrukce umožní vám prohlédnout konkrétní pokyny, které jsou spouštěny během profilace se vzorkováním.  
+Zobrazení ukazatele na instrukce vám umožní zobrazit konkrétní pokyny, které jsou spouštěny během profilace vzorkování.  
   
  Toto zobrazení není k dispozici během profilace instrumentace.  
   
- Zobrazení IP adres pro vzorkování dat profilu, identifikuje podle pokynů ve funkci, která byla spuštěna přímo, při ukázku nebyla shromážděna.  
+ Zobrazení IP adres pro vzorkování dat profilu, identifikuje pokyny ve funkci, která byla spuštěna přímo po shromáždění vzorku.  
   
  Zobrazení řádků pro data paměti .NET, identifikuje pokynů, které se přidělit paměť.  
   
 ## <a name="see-also"></a>Viz také:  
- [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view-sampling-data.md)   
+ [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)   
  [Ukazatele na instrukce (IP) zobrazení – vzorkování](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-contention-data.md)

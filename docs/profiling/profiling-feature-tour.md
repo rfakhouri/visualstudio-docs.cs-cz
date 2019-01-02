@@ -3,7 +3,6 @@ title: Měřit výkon pomocí nástroje pro profilaci
 description: Stručný podívejte se na různé diagnostické nástroje, který je k dispozici v sadě Visual Studio.
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880309"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Rychlý start: Nejdřív se podívejte na nástroje pro profilaci
 
@@ -156,16 +155,16 @@ Tady je tabulka, která obsahuje seznam různých nástrojů, které nabízí Vi
   
 |Nástroje výkonu|Plocha Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Ano|
-|[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ano| 
-|[Využití GPU](../debugger/gpu-usage.md)|Ano|Ano|Ne| 
-|[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|
-|[Tipy pro výkon](../profiling/perftips.md)|Ano|Ano pro XAML, ne pro kód HTML|Ano|
-|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano|
+|[Využití procesoru](../profiling/cpu-usage.md)|ano|ano|ano|
+|[Využití paměti](../profiling/memory-usage.md)|ano|ano|ano| 
+|[Využití GPU](../debugger/gpu-usage.md)|ano|ano|Ne| 
+|[Časová osa aplikace](../profiling/application-timeline.md)|ano|ano|Ne|
+|[Tipy pro výkon](../profiling/perftips.md)|ano|Ano pro XAML, ne pro kód HTML|ano|
+|[Prohlížeč výkonu](../profiling/performance-explorer.md)|ano|Ne|ano|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET se sadou Visual Studio Enterprise pouze|.NET se sadou Visual Studio Enterprise pouze|.NET se sadou Visual Studio Enterprise pouze|
-|[Využití sítě](../profiling/network-usage.md)|Ne|Ano|Ne|
+|[Využití sítě](../profiling/network-usage.md)|Ne|ano|Ne|
 |[Rychlost odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne| 
 |[Paměť JavaScriptu](../profiling/javascript-memory.md)|Ne|Ano pro kód HTML, ne pro XAML|Ne|
 
 ## <a name="see-also"></a>Viz také:  
- [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)
+ [Ladění v sadě Visual Studio](/visualstudio/debugger/debugger-feature-tour)

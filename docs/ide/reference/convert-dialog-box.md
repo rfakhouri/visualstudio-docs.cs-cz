@@ -2,7 +2,6 @@
 title: Dialogové okno Převést
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - jlca_Conversion_F1_3
@@ -16,22 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e914b7601538a049a06a0bbdcaac8e1e58be06
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 39ade3990985bbac635d88ae1e965ee31c55227c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929773"
 ---
 # <a name="convert-dialog-box"></a>Dialogové okno Převést
 
-**Převést** dialogové okno umožňuje vybrat převodní nástroj k vytvoření nového projektu ze staré, jako je například vytváření [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projekt z projektu jazyka Visual Basic 6. Můžete také [převaděč projekt Visual Studio](https://github.com/ssvaidya/VSProjectConverter) upgrade projektů vytvořených v předchozích verzích sady Visual Studio.
+**Převést** dialogové okno umožňuje vybrat převodní nástroj k vytvoření nového projektu z staré heslo, jako je například vytváření [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)] projekt z projektu jazyka Visual Basic 6. Můžete také použít [konvertor projektů Visual Studio](https://github.com/ssvaidya/VSProjectConverter) upgrade projektů vytvořených v předchozích verzích sady Visual Studio.
 
 ## <a name="open-the-convert-dialog-box"></a>Otevřete dialogové okno Převést
 
-1.  Na řádku nabídek zvolte **soubor**, **otevřete**, **převést**.
+1.  V panelu nabídky zvolte **souboru**, **otevřít**, **převést**.
 
-     Zobrazí se seznam nástrojů převodu kódu, které jsou aktuálně k dispozici.
+     Zobrazí se seznam převodu kódu nástroje, které jsou aktuálně k dispozici.
 
 2.  Vyberte nástroj, který je vhodný pro vaši aplikaci.
 

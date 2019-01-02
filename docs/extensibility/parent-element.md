@@ -1,9 +1,6 @@
 ---
 title: Nadřazený Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902434"
 ---
 # <a name="parent-element"></a>Nadřazený element
 Nadřazené tlačítko nebo pole se seznamem pole může být pouze skupinu. Nadřazené nabídky nebo skupina může být jiné nabídky nebo skupiny. V [commandplacement – element](../extensibility/commandplacement-element.md), tento element je povinná hodnota. v ostatních instancích je volitelný. Pokud tento prvek je vynechán, nadřazený `Group_Undefined:0` bude implicitní.  
@@ -37,11 +34,11 @@ Nadřazené tlačítko nebo pole se seznamem pole může být pouze skupinu. Nad
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|identifikátor GUID|Požadováno. Identifikátor GUID identifikátoru GUID a ID příkazu.|  
-|id|Požadováno. Identifikátor ID identifikátoru GUID a ID příkazu.|  
+|identifikátor GUID|Povinný parametr. Identifikátor GUID identifikátoru GUID a ID příkazu.|  
+|id|Povinný parametr. Identifikátor ID identifikátoru GUID a ID příkazu.|  
   
 ### <a name="child-elements"></a>Podřízené prvky  
- Žádné  
+ Žádná  
   
 ### <a name="parent-elements"></a>Nadřazené prvky  
   

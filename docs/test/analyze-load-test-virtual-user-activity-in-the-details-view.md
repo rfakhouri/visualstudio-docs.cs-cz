@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 484c80e474fdce799bc10787bddf157a19f46740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902916"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analýza aktivity virtuálních uživatelů zátěžového testu v podrobném zobrazení Analyzéru zátěžového testu
 
@@ -57,9 +56,9 @@ ms.locfileid: "53059905"
 
 |Úlohy|Související témata|
 |-|-|
-|**Spuštění zátěžového testu:** po vytvoření zátěžového testu a jeho nakonfigurování ke shromažďování dat aktivity virtuálních uživatelů, musíte spustit test, dokud se nedokončí v abyste mohli zobrazit **graf aktivity virtuálního uživatele**.||
-|**Prohlédněte si výsledky testu zatížení, které obsahují data aktivity virtuálního uživatele:** po byly vytvořeny, konfigurovány a po dokončení jeho běhu zátěžového testu můžete zobrazit data aktivity virtuálního uživatele pomocí **graf aktivity virtuálního uživatele** .|-   [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Izolace potíží s výkonem v zátěžových testech:** můžete použít **graf aktivity virtuálního uživatele** a určit tak problémy s výkonem v zátěžovém testu.|-   [Návod: Izolace potíží s pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Spuštění zátěžového testu:** Po vytvoření zátěžového testu a jeho nakonfigurování ke shromažďování dat aktivity virtuálních uživatelů, musíte spustit test, dokud se nedokončí v abyste mohli zobrazit **graf aktivity virtuálního uživatele**.||
+|**Prohlédněte si výsledky testu zatížení, které obsahují data aktivity virtuálního uživatele:** Poté, co byly vytvořeny, konfigurovány a po dokončení jeho běhu zátěžového testu můžete zobrazit data aktivity virtuálního uživatele pomocí **graf aktivity virtuálního uživatele**.|-   [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Jak: Analýza, co dělají virtuálních uživatelů během zátěžového testu](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Izolace potíží s výkonem v zátěžových testech:** Můžete použít **graf aktivity virtuálního uživatele** a určit tak problémy s výkonem v zátěžovém testu.|-   [Návod: Izolace problémů pomocí graf aktivity virtuálního uživatele](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Viz také:
 

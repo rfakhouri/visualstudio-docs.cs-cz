@@ -3,7 +3,6 @@ title: Rychlý start – vytvoření projektu Pythonu pomocí šablony
 description: V tomto rychlém startu vytvoříte projekt sady Visual Studio pro Python s pomocí integrovanou šablonu pro základní aplikaci Flask.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964547"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Rychlý start: Vytvoření projektu Pythonu z šablony v sadě Visual Studio
 
@@ -77,17 +76,17 @@ Jakmile [nainstalována podpora Pythonu v sadě Visual Studio 2017](installing-p
 
 1. Vyberte **ladění** > **spustit bez ladění** ke spuštění aplikace a otevřete prohlížeč na `localhost:5555`.
 
-**Otázka: Jaké další Python šablony sady Visual Studio nabízí?**
+**Otázka: Jaké Python šablony sady Visual Studio nabízí?**
 
-**Odpověď**: S úlohou Pythonu nainstalován, Visual Studio poskytuje celou řadu šablon projektů, včetně těch, které jsou pro [webové architektury Flask, Bottle a Django](../python/python-web-application-project-templates.md), cloudových služeb Azure, jiné strojové učení scénáře a dokonce i šablonu pro vytvoření projektu z existující strukturu složky obsahující aplikace v Pythonu. Přístup k těmto prostřednictvím **souboru** > **nový** > **projektu** dialogové okno tak, že vyberete **Python** uzel jazyka a jeho podřízených uzlů.
+**Odpověď**: S úlohou Pythonu nainstalován, Visual Studio poskytuje celou řadu šablon projektů, včetně těch, které jsou pro [webové architektury Flask, Bottle a Django](../python/python-web-application-project-templates.md)Azure cloudové služby, jiné strojového učení scénáře a dokonce i Šablona pro vytvoření projektu z existující strukturu složky obsahující aplikace v Pythonu. Přístup k těmto prostřednictvím **souboru** > **nový** > **projektu** dialogové okno tak, že vyberete **Python** uzel jazyka a jeho podřízených uzlů.
 
 Visual Studio také poskytuje širokou škálu souboru nebo *šablon položek* k rychlému vytvoření třída Pythonu, balíček Pythonu, test jednotky Pythonu, *web.config* souborů a dalších. Pokud máte otevřen projekt Python, můžete přístup k šablony položek prostřednictvím **projektu** > **přidat novou položku** příkazu nabídky. Zobrazit [šablon položek](python-item-templates.md) odkaz.
 
 Pomocí šablon můžete ušetřit významný čas, kdy spuštění projektu nebo vytvoření souboru a nabízeny jsou také skvělou možnost pro další informace o různých typů aplikací a kódu struktury. Je vhodné trvat několik minut, než vytváření projektů a položek z různých šablon se seznámit s co nabízejí.
 
-**Otázka: Mohu také použít šablony Cookiecutter?**
+**Otázka: Lze také použít šablony Cookiecutter?**
 
-**Odpověď**: Ano! Ve skutečnosti, Visual Studio poskytuje přímou integraci se Cookiecutter, které se dozvíte prostřednictvím [rychlý start: vytvoření projektu ze šablony Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
+**Odpověď**: Ano! Ve skutečnosti, Visual Studio poskytuje přímou integraci se Cookiecutter, které se dozvíte prostřednictvím [rychlý start: Vytvoření projektu ze šablony Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Další kroky
 

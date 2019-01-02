@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068092"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850135"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: zobrazení doby odezvy webové stránky v zátěžovém testu pomocí Analyzéru zátěžového testu
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: Zobrazení doby odezvy webové stránky v zátěžovém testu pomocí Analyzéru zátěžového testu
 
 Čas potřebný pro každou webovou stránku pro načtení se označuje jako *doba odezvy*. Když vytvoříte test výkonnosti webu, můžete nastavit cílovou dobu odpovědi pro každý požadavek webové stránky v testu výkonnosti webu.
 
@@ -61,7 +60,7 @@ Při spuštění testu výkonnosti webu ve stresu v rámci zátěžového testu,
    |**Max**|Doba odezvy maximální stránky.<br /><br /> Ve výchozím nastavení tato data nejsou shromažďována. Shromažďování těchto dat v **editoru zátěžových testů**v části **parametrů běhu** uzlu, vyberte uzel nastavení spuštění změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|
    |**Směrodatná odchylka**|Ve výchozím nastavení směrodatná odchylka data nejsou shromažďována. Shromažďování těchto dat v **editoru zátěžových testů**v části **parametrů běhu** uzlu, vyberte uzel nastavení spuštění změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|
    |**Doba vytvoření stránky**|Průměrná doba odezvy pro všechny požadavky, které byly provedeny pro webovou stránku.|
-   |**Cíl**|Cílová doba stránky. Toto je konstantní hodnota pro stránku. **Poznámka:** cílová doba stránky se zobrazí jenom v případě, že cílem je definována pro požadavek v testu výkonnosti webu.|
+   |**Cíl**|Cílová doba stránky. Toto je konstantní hodnota pro stránku. **Poznámka:**  Cílová doba stránky se zobrazí jenom v případě, že cílem je definována pro požadavek v testu výkonnosti webu.|
    |**% Cíle schůzky**|Procento požadavků, které byly provedeny pro webovou stránku, která splněny cílovou dobu odezvy.|
 
    Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -96,5 +95,5 @@ Chcete-li zobrazit data o době odezvy v grafu:
 ## <a name="see-also"></a>Viz také:
 
 - [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
+- [Postupy: Přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

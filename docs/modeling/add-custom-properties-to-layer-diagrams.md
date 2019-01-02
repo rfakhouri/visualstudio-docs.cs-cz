@@ -10,49 +10,48 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 368d1a794f51d827aa62cc913039edda59ae7ae6
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 407db46519872d8f1c4e6eba79ddd5ca84610d70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33864187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892235"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Přidání vlastních vlastností do diagramů závislostí
 
-Při psaní kódu rozšíření pro závislosti diagramy, můžete ukládat hodnoty s libovolný element v diagramu závislostí. Hodnoty se uchová po uložení a znovu otevřít diagram. Také může mít tyto vlastnosti se zobrazí v **vlastnosti** okna tak, aby správci zobrazit a upravit je. Například může umožní uživatelům zadat regulární výraz pro každou vrstvu a napsat kód pro ověřování k ověření, že názvy tříd v každé vrstvě shodují se vzorem zadaným uživatelem.
+Při psaní kódu rozšíření pro diagramy závislostí můžete ukládat hodnoty libovolným prvkem na diagram závislostí. Hodnoty přetrvají i po uložení a opětovném otevření diagramu. Je také možné tyto vlastnosti zobrazit v **vlastnosti** okna tak, aby uživatelé mohou zobrazit a upravovat. Například můžete umožnit uživatelům určit regulární výraz pro každou vrstvu a psát ověřovací kód pro ověření, že názvy tříd v každé vrstvě odpovídají vzoru určenému uživatelem.
 
 ## <a name="non-visible-properties"></a>Neviditelné vlastnosti
 
-Pokud chcete kód a přiřadit hodnoty libovolný element v diagramu závislostí, nemusíte definovat komponentu MEF. Je k dispozici slovník s názvem `Properties` v <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Stačí přidáte – zařazení hodnoty do slovníku libovolný element, vrstvy. Budou se uloží jako součást diagram závislostí. Další informace najdete v tématu [vyhledání a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Pokud chcete jenom váš kód k připojení k libovolnému prvku v diagramu závislost hodnoty, není nutné definovat komponentu MEF. Existuje slovník s názvem `Properties` v <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Stačí přidáte zařaditelné hodnoty do slovníku libovolného prvku vrstvy. Budou uloženy jako součást diagram závislostí. Další informace najdete v tématu [navigace a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-## <a name="editable-properties"></a>Upravovat vlastnosti
+## <a name="editable-properties"></a>Upravitelné vlastnosti
 
-**Počáteční přípravy**
+**Počáteční Příprava**
 
 > [!IMPORTANT]
-> Chcete-li vlastnosti se zobrazí, proveďte na každém počítači, kam chcete vlastnosti vrstvy, které mají být zobrazeny následující změny:
+> Chcete-li zobrazit vlastnosti, proveďte následující změnu v každém počítači, kde chcete mít viditelné vlastnosti vrstvy:
 >
-> 1. Spusťte program Poznámkový blok pomocí **spustit jako správce**. Otevřete *%ProgramFiles%\Microsoft Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. Uvnitř **obsahu** elementu, přidejte:
+> 1. Spusťte program Poznámkový blok s použitím **spustit jako správce**. Otevřít *%ProgramFiles%\Microsoft Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. Uvnitř **obsahu** prvku, přidejte:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
-> 3. V části **nástroje sady Visual Studio** části sady Visual Studio aplikace nabídky start, otevřete **příkazový řádek vývojáře**. Zadejte:
+> 3. V části **Visual Studio Tools** části Visual Studio aplikaci nabídky start, otevřete **Developer Command Prompt**. Zadejte:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Restartujte sadu Visual Studio.
 
-**Ujistěte se, že váš kód je v projektu VSIX**
+**Ujistěte se, že je váš kód v projektu VSIX**
 
-Pokud vaše vlastnost je částí příkaz, gesto nebo ověření projektu, nemusíte nic přidat. Kód pro vlastní vlastnost je nutné definovat v projektu Visual Studio Extensibility definované jako součást MEF. Další informace najdete v tématu [přidávání příkazů a gest do diagramů závislostí](../modeling/add-commands-and-gestures-to-layer-diagrams.md) nebo [přidání ověřování vlastní architektury do diagramů závislostí](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Pokud je vaše vlastnost součástí příkazu, gesta nebo projektu ověření, nepotřebujete nic přidat. Kód pro vlastní vlastnost by měl být definován v projektu rozšíření Visual Studio definované jako komponentu MEF. Další informace najdete v tématu [přidávání příkazů a gest do diagramů závislostí](../modeling/add-commands-and-gestures-to-layer-diagrams.md) nebo [přidání ověřování vlastní architektury do diagramů závislostí](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-**Definovat vlastní vlastnosti**
+**Definovat vlastní vlastnost**
 
-Chcete-li vytvořit vlastní vlastnost, definujte třídu takto:
+Pokud chcete vytvořit vlastní vlastnost, definujte třídu takto:
 
 ```csharp
 [Export(typeof(IPropertyExtension))]
@@ -62,11 +61,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-Můžete definovat vlastnosti na <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ani v žádné z odvozené třídy, které zahrnují:
+Můžete definovat vlastnosti v <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> nebo některý z jeho odvozených tříd, mezi které patří:
 
--   `ILayerModel` -modelu
+-   `ILayerModel` -model
 
--   `ILayer` -jednotlivé úrovně
+-   `ILayer` -Každá vrstva
 
 -   `ILayerDependencyLink` -propojení mezi vrstvami
 
@@ -76,7 +75,7 @@ Můžete definovat vlastnosti na <xref:Microsoft.VisualStudio.ArchitectureTools.
 
 ## <a name="example"></a>Příklad
 
-Následující kód je popisovač typické vlastní vlastnosti. Definuje vlastnost typu Boolean ve model vrstvy (`ILayerModel`), která umožňuje uživateli zadat hodnoty pro metoda vlastního ověřování.
+Následující kód je typický vlastní popisovač vlastnosti. Definuje booleovskou vlastnost na modelu vrstvy (`ILayerModel`), který umožňuje uživateli zadat hodnoty pro vlastní ověřovací metodu.
 
 ```csharp
 using System;
@@ -161,6 +160,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Rozšíření diagramů závislostí](../modeling/extend-layer-diagrams.md)

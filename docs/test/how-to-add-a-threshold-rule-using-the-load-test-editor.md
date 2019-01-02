@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 76cf2ff3cd5ab3f18f76a5c6ea68be2411b76d84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896328"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Postupy: Přidání mezního pravidla pomocí editoru zátěžových testů
 
@@ -38,7 +37,7 @@ Mezní pravidla v zátěžových testech porovnávají hodnotu čítače výkon
 
      **Přidat pravidlo mezní hodnoty** se zobrazí dialogové okno.
 
-5.  Můžete vybrat ze dvou typů pravidel: **konstanta porovnání** a **čítač porovnání**. Vyberte požadovaný typ a nastavte hodnoty.
+5.  Můžete vybrat ze dvou typů pravidel: **Porovnat konstanty** a **porovnání čítač**. Vyberte požadovaný typ a nastavte hodnoty.
 
     > [!NOTE]
     > Nastavte **upozornění, pokud přesáhne** vlastnost **True** k označení, že překročení mezní hodnoty je nějaký problém nebo **False** označuje, že snížení pod mezní hodnotu k problému.

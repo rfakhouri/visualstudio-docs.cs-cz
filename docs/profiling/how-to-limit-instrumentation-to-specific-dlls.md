@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: omezení instrumentace na konkrétní knihovny DLL | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Omezení instrumentace na konkrétní knihovny DLL | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
@@ -11,63 +9,63 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885165"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Postupy: omezení instrumentace na konkrétní knihovny DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Postupy: Omezení instrumentace na konkrétní knihovny DLL
 
-Pomocí metody profilování instrumentace můžete omezit shromažďování profilování dat na jeden nebo více knihovny DLL v aplikaci. Profilu jeden nebo více knihovny DLL v aplikaci, vytvořte relaci výkonu, která zahrnuje. *dll* soubory jako cíle. Můžete zadat knihovny DLL, které chcete profil jako projekty v řešení sady Visual Studio nebo jako nezávislé binární soubory.
+Pomocí metody profilace instrumentace můžete omezit shromažďování dat profilování na jeden nebo více knihovny DLL v aplikaci. Chcete-li Profilovat jeden nebo více knihoven DLL v aplikaci, vytvoříte relace výkonu, která zahrnuje. *dll* soubory jako cíle. Můžete určit knihovny DLL, které chcete do profilu jako projekty v řešení sady Visual Studio nebo jako nezávislé binární soubory.
 
 ## <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>K omezení instrumentace na konkrétní knihovny DLL v řešení sady Visual Studio
 
-1. Otevřete řešení, která obsahuje knihovnu DLL v sadě Visual Studio.
+1. Otevřete řešení, které obsahuje knihovnu DLL v sadě Visual Studio.
 
-2. Na **analyzovat** nabídce vyberte možnost **spusťte Průvodce výkonu**.
+2. Na **analyzovat** nabídce vyberte možnost **spustit Průvodce výkonem**.
 
-3. Zvolte **instrumentace** jako profilování metodu a pak klikněte na tlačítko **Další**.
+3. Zvolte **instrumentace** jako metodu profilace a pak klikněte na tlačítko **Další**.
 
-4. Z **který z následujících dostupných cílů chcete profil?**, vyberte název. *knihovny DLL* projektu a pak klikněte na **Další**.
+4. Z **které z následujících dostupných cílů chcete profil?**, vyberte název. *Knihovna DLL* projektu a pak klikněte na tlačítko **Další**.
 
-5. Klikněte na tlačítko **Dokončit** k ukončit průvodce a zobrazení v nové relaci výkonu **prohlížeč výkonu** okno.
+5. Klikněte na tlačítko **Dokončit** ukončíte průvodce a zobrazí novou relaci výkonu v **prohlížeč výkonu** okna.
 
 6. Klikněte pravým tlačítkem na **cíle** a pak vyberte **přidat cílový projekt**.
 
-7. Z **přidat cílový projekt** vyberte spustitelný projekt, který chcete použít k prověření knihovnu DLL.
+7. Z **přidat cílový projekt** vyberte spustitelný projekt, který chcete použít k knihovny DLL.
 
-     Volitelné. Všechny projekty knihovny DLL, které chcete, můžete přidat do profilu.
+     Volitelné. Můžete přidat všechny projekty knihovny DLL, které chcete do profilu.
 
-8. Pokud chcete zabránit shromažďování dat pro projektu přidané, klikněte pravým tlačítkem na název projektu a potom zrušte **nástrojem** zaškrtávací políčko.
+8. Zabránění shromažďování dat pro přidání projektu, klikněte pravým tlačítkem na název projektu a poté zrušte zaškrtnutí **instrumentace** zaškrtávací políčko.
 
 ## <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>Chcete-li určit konkrétní knihovny DLL do profilu jako nezávislé binárních souborů
 
-1. Otevřete Visual Studio.
+1. Otevřít Visual Studio.
 
-2. Na **analyzovat** nabídce vyberte možnost **spusťte Průvodce výkonu**.
+2. Na **analyzovat** nabídce vyberte možnost **spustit Průvodce výkonem**.
 
-3. Z **který z následujících dostupných cílů chcete profil**, vyberte **profilu dynamické knihovny (. Knihovny DLL)** a pak klikněte na **Další**.
+3. Z **které z následujících dostupných cílů chcete profil**, vyberte **Profilovat dynamickou knihovnu (. Knihovny DLL)** a potom klikněte na tlačítko **Další**.
 
 4. Na druhé stránce průvodce proveďte následující kroky:
 
-    - Zadejte název a cesta k souboru. *dll* soubor, který chcete profil v **cesta Dll**. Můžete také kliknutím na tlačítko se třemi tečkami (...) a soubor vyhledejte v **knihovny DLL do profilu** dialogové okno. Všimněte si, že je nutné zadat kopii. *dll* soubor, který bude spuštěn spustitelný soubor (. *exe*) souboru, který jste vybrali další.
+    - Zadejte název a cesta k souboru. *dll* soubor, který chcete profil v **cesta ke knihovně Dll**. Můžete také kliknout na tlačítko se třemi tečkami (...) a vyhledejte soubor v **dynamické knihovny DLL do profilu** dialogové okno. Všimněte si, že je nutné zadat kopii. *dll* soubor, který se spustí spustitelný soubor (. *soubor exe*) soubor, který vyberete dále.
 
-    - Zadejte název a cesta k souboru ke spustitelnému souboru (. *exe*) soubor, který bude. *dll* v **cesta ke spustitelnému souboru**. Můžete také kliknutím na tlačítko se třemi tečkami (...) a soubor vyhledejte v **spustitelný soubor spusťte** dialogové okno.
+    - Zadejte cestu a název spustitelného souboru (. *soubor exe*) soubor, který se budou uplatňovat. *dll* v **cesta ke spustitelnému souboru**. Můžete také kliknout na tlačítko se třemi tečkami (...) a vyhledejte soubor v **spustitelný soubor ke spuštění** dialogové okno.
 
-    - Volitelné. Zadejte všechny argumenty příkazového řádku, které chcete předat spustitelný soubor ve **argumenty příkazového řádku**. V případě potřeby zadejte pracovní adresář pro aplikaci v **pracovní adresář**.
+    - Volitelné. Zadejte jakékoli argumenty příkazového řádku, které chcete předat do spustitelného souboru v **argumenty příkazového řádku**. V případě potřeby zadejte pracovní adresář pro aplikaci v **pracovní adresář**.
 
-    - Klikněte na tlačítko **Další**.
+    - Klikněte na **Další**.
 
-5. Zvolte **instrumentace** jako profilování metodu a pak klikněte na tlačítko **Další**.
+5. Zvolte **instrumentace** jako metodu profilace a pak klikněte na tlačítko **Další**.
 
-6. Klikněte na tlačítko **Dokončit** k ukončit průvodce a zobrazení v nové relaci výkonu **prohlížeč výkonu** okno.
+6. Klikněte na tlačítko **Dokončit** ukončíte průvodce a zobrazí novou relaci výkonu v **prohlížeč výkonu** okna.
 
-7. Volitelné. Chcete-li přidat další. *dll* soubory, klikněte pravým tlačítkem na **cíle** a pak vyberte **přidat cíl binární**. Vyberte soubory z **přidat cíl binární** dialogové okno.
+7. Volitelné. Abyste mohli přidat další. *dll* soubory, klikněte pravým tlačítkem na **cíle** a pak vyberte **přidat cílový binární**. Vyberte soubory z **přidat cílový binární** dialogové okno.
 
     > [!NOTE]
-    > Nezadávejte spustitelný soubor (. *exe*) soubor, který vykonává knihovny DLL.
+    > Nezadávejte spustitelný soubor (. *soubor exe*) soubor, který zpracovává knihovny DLL.
 
 ## <a name="see-also"></a>Viz také:
 

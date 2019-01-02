@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace1873c45ba8437ba929ec10ef75db3d0d50bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905199"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagování na změny a šíření změn
 Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, který šíří změny dalších součástí modelu, nebo k externím prostředkům, jako jsou soubory, databáze nebo další komponenty.
@@ -31,9 +30,9 @@ Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, kter
 |Přepsání změnit obslužné rutiny, například OnValueChanging a OnDeleting|Udržovat synchronizované různé prvky a udržovat synchronizované s modelem externí hodnoty.<br /><br /> Omezení hodnoty, které mají definovanou oblastí.<br /><br /> Volá se bezprostředně před a po hodnotě vlastnosti a jiné změny. Tato změna může ukončit vyvoláním výjimky.|[Obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md)|
 |pravidla|Můžete definovat pravidla, které jsou zařazeny do fronty pro provedení pouze do konce transakce, ve které došlo ke změně. Nejsou provedeny na vrácení zpět nebo znovu. Jejich použití jedné části úložiště synchronizace s jinou.|[Pravidla šířící změny v modelu](../modeling/rules-propagate-changes-within-the-model.md)|
 |Store události|Modelování úložiště poskytuje oznámení o události, například přidávání nebo odstraňování elementu nebo propojení nebo změna hodnoty vlastnosti. Událost je také provést na zpět a znovu. Události v úložišti slouží k aktualizaci hodnoty, které nejsou v úložišti.|[Obslužné rutiny události šířící změny mimo model](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
-|Události .NET|Obrazce mají obslužné rutiny událostí, které reagují na kliknutí myší a dalších gesta. Je nutné provést registraci pro tyto události pro každý objekt. Registrace se obvykle provádí v přepsání InitializeInstanceResources a je nutné provést pro každý prvek.<br /><br /> Tyto události obvykle dochází mimo transakci.|[Postupy: Zachycení kliknutí na obrazec nebo dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|Události .NET|Obrazce mají obslužné rutiny událostí, které reagují na kliknutí myší a dalších gesta. Je nutné provést registraci pro tyto události pro každý objekt. Registrace se obvykle provádí v přepsání InitializeInstanceResources a je nutné provést pro každý prvek.<br /><br /> Tyto události obvykle dochází mimo transakci.|[Postupy: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
 |Rozsah pravidla|Hranice pravidlo se používá konkrétně, chcete-li omezit rozsah tvaru.|[Umístění a velikost obrazce omezení BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|
-|Výběr pravidla|Výběr pravidla konkrétně omezit, co může uživatel vybrat.|[Postupy: Přístup k aktuálnímu výběru a jeho omezení](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|Výběr pravidla|Výběr pravidla konkrétně omezit, co může uživatel vybrat.|[Postupy: Přístup a jeho omezení aktuální výběr](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Označuje nové elementy modelu pomocí funkce obrazců a konektorů, jako jsou stínové, šipky, barvy a šířku čáry a stylu.|[Aktualizace obrazců a konektorů k vyjádření modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
 ## <a name="comparing-rules-and-store-events"></a>**Porovnání pravidla a Store události**
@@ -47,11 +46,11 @@ Po elementu se vytvoří, odstraní nebo aktualizuje, můžete napsat kód, kter
 
 -   **Přihlášení k odběru událostí** předtím, než se můžete přihlásit odběr události, vytvořit obslužnou rutinu události a delegáta. Potom použijte <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>vlastnost k odběru události. Další informace najdete v tématu [obslužné rutiny rozšíření změny mimo the Model událostí](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Ruší se provedené změny** při vrácení transakce, jsou vyvolány události, ale pravidla se nepoužijí. Pokud pravidlo změní hodnotu a můžete tuto změnu vrátit zpět, je hodnota obnovit během akce vrátit zpět na původní hodnotu. Když je vyvolána událost, musíte ručně změnit hodnotu zpět na původní hodnotu. Další informace o transactons a vrácení zpět, najdete v článku [postupy: používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+-   **Ruší se provedené změny** při vrácení transakce, jsou vyvolány události, ale pravidla se nepoužijí. Pokud pravidlo změní hodnotu a můžete tuto změnu vrátit zpět, je hodnota obnovit během akce vrátit zpět na původní hodnotu. Když je vyvolána událost, musíte ručně změnit hodnotu zpět na původní hodnotu. Další informace o transactons a vrácení zpět, najdete v článku [jak: Používání transakcí k aktualizaci modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 -   **Předávání argumentů událostí k pravidla a akce** obou událostí a pravidla jsou předány `EventArgs` parametr, který obsahuje informace o tom, model změnit.
 
 ## <a name="see-also"></a>Viz také
 
-- [Postupy: Zachycení kliknutí na obrazec nebo dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
+- [Postupy: Zachycení kliknutí na obrazec či Dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)

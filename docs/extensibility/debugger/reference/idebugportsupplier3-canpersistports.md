@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts | Microsoft Docs
-ms.custom: ''
+title: IDebugPortSupplier3::CanPersistPorts | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
@@ -15,34 +12,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d9038663bd74b5dabeda92d8b6b9e4e31d092de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939963"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-Tato metoda určuje, zda může být z portu dodavatele zachovat (podle jejich zápis na disk) porty mezi volání ladicího programu.  
+Tato metoda určuje, zda dodavatele portu můžete zachovaly porty (je zápis na disk) mezi vyvolání ladicího programu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>Parametry  
  Žádné  
   
 ## <a name="return-value"></a>Návratová hodnota  
- `S_OK` Pokud porty můžete nastavit jako trvalý, nebo `S_FALSE` indikující, že porty nelze zachovat.  
+ `S_OK` Pokud porty můžete nastavit jako trvalý, nebo `S_FALSE` k označení, že porty nelze nastavit jako trvalý.  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud dodavatel portu můžete zachovat porty, měl by tak učinit, když byla a potom ho znovu načtěte je při vytvoření instance ještě jednou.  
+ Pokud dodavatele portu můžete zachovat porty, měl by to dělat, když je zničen a při vytváření její instance znovu je načtěte.  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

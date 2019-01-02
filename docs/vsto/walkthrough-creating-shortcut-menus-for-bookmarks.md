@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytváření místních nabídek pro záložky'
-ms.custom: ''
+title: 'Průvodce: Vytváření místních nabídek pro záložky'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940547"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Návod: Vytváření místních nabídek pro záložky
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Průvodce: Vytváření místních nabídek pro záložky
   Tento návod ukazuje, jak vytvořit místní nabídky pro <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků v přizpůsobení úrovni dokumentu pro aplikaci Word. Když uživatel klepne pravým tlačítkem myši textu v záložce, místní nabídce se zobrazí a poskytuje možnosti uživatele pro formátování textu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49884079"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
--   Vytvoření projektu dokumentu aplikace Word, který má název **Mé záložky nabídku**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Vytvoření projektu dokumentu aplikace Word, který má název **Mé záložky nabídku**. V průvodci vyberte **vytvoříte nový textový dokument**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový Wordový dokument v návrháři a přidá **Mé záložky nabídku** projektu **Průzkumníka řešení**.  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884079"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>Přidání příkazů do místní nabídky  
   
-1.  Přidat **kódu XML pásu karet** položky do projektu. Další informace najdete v tématu [postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Přidat **kódu XML pásu karet** položky do projektu. Další informace najdete v tématu [jak: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
 2.  V **Průzkumníka řešení**vyberte **ThisDocument.cs** nebo **ThisDocument.vb**.  
   
@@ -169,7 +166,7 @@ ms.locfileid: "49884079"
     > [!NOTE]  
     >  Musíte napsat kód pro zpracování případu, kdy záložky překrývat. Pokud tak neučiníte, ve výchozím nastavení, zavolá se kód pro všechny záložky ve výběru.  
   
-5.  V jazyce C#, je nutné přidat obslužné rutiny událostí pro ovládacích prvků záložek do <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  V jazyce C#, je nutné přidat obslužné rutiny událostí pro ovládacích prvků záložek do <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
@@ -193,7 +190,7 @@ ms.locfileid: "49884079"
   
 -   Napsání kódu pro reakci na události hostitelské ovládací prvky v aplikaci Excel. Další informace najdete v tématu [názorný postup: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Změna formátování na záložku pomocí zaškrtávacího políčka. Další informace najdete v tématu [návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Změna formátování na záložku pomocí zaškrtávacího políčka. Další informace najdete v tématu [názorný postup: Změna formátování dokumentů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884079"
  [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
  [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

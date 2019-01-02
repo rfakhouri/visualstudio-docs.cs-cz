@@ -1,9 +1,6 @@
 ---
 title: Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904796"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word
   Pokud jste začali vytvářet přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word s použitím sady Visual Studio, zde je, co potřebujete vědět.  
@@ -74,5 +71,3 @@ ms.locfileid: "53648410"
  [Návody pro aplikaci Word](../vsto/walkthroughs-using-word.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

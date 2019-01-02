@@ -1,8 +1,6 @@
 ---
-title: Tlačítko Exportovat (vizualizér souběžnosti) | Microsoft Docs
-ms.custom: ''
+title: Tlačítko Exportovat (vizualizér souběžnosti) | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.export
@@ -14,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c977c147aa9edc7dc83e76dc3d9c07dd959c3f9c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d6a861ef9b55741b02ecd87836f419b5b20bd2d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924017"
 ---
 # <a name="export-button-concurrency-visualizer"></a>Tlačítko Exportovat (vizualizér souběžnosti)
-**Exportovat** tlačítko umožňuje exportovat zásobníku volání jako. *CSV* soubor pro své vlastní záznamy nebo pro použití s jiné nástroje, jako je Microsoft Excel.  
+**Exportovat** tlačítko umožňuje exportovat jako zásobník volání. *sdílený svazek clusteru* soubor pro vlastní potřebu nebo pomocí jiného nástroje, jako je například aplikace Microsoft Excel.  
   
 ## <a name="see-also"></a>Viz také:  
- [Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)   
+ [Vizualizátor souběžnosti](../profiling/concurrency-visualizer.md)   
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

@@ -1,8 +1,6 @@
 ---
 title: Lib – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922017"
 ---
 # <a name="lib-task"></a>LIB – úloha
 Zabalí nástroj Správce 32bitové Microsoft knihovny *lib.exe*. Správce knihovny vytváří a spravuje knihovnu objektových souborů Common Object File Format (COFF). Správce knihovny můžete vytvořit soubory exportu a importu knihovny odkaz exportovat definice. Další informace najdete v tématu [LIB odkaz](/cpp/build/reference/lib-reference) a [spuštění knihovny LIB](/cpp/build/reference/running-lib).  
@@ -55,7 +53,7 @@ Zabalí nástroj Správce 32bitové Microsoft knihovny *lib.exe*. Správce kniho
 |**LinkTimeCodeGeneration**|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, určuje generování kódu při propojování.<br /><br /> Tento parametr **/LCTG** možnost *lib.exe*.|  
 |**MinimumRequiredVersion**|Volitelné **řetězec** parametru.<br /><br /> Určuje minimální požadovanou verzi subsystému. Zadejte čárkami oddělený seznam desetinná čísla v rozsahu 0 až 65535.|  
 |**ModuleDefinitionFile**|Volitelné **řetězec** parametru.<br /><br /> Určuje název souboru definice modulu (*.def*).<br /><br /> Tento parametr **def** možnost *lib.exe* , která přijímá `filename` argument.|  
-|**Jméno**|Volitelné **řetězec** parametru.<br /><br /> Při vytváření knihovny importu, určuje název knihovny DLL pro kterou má být sestaven knihovny importu.<br /><br /> Tento parametr **/NAME** možnost *lib.exe* , která přijímá `filename` argument.|  
+|**Název**|Volitelné **řetězec** parametru.<br /><br /> Při vytváření knihovny importu, určuje název knihovny DLL pro kterou má být sestaven knihovny importu.<br /><br /> Tento parametr **/NAME** možnost *lib.exe* , která přijímá `filename` argument.|  
 |**Výstupní soubor**|Volitelné **řetězec** parametru.<br /><br /> Přepíše výchozí název a umístění programu, který *lib.exe* vytvoří.<br /><br /> Tento parametr **/OUT** možnost *lib.exe* , která přijímá `filename` argument.|  
 |**RemoveObjects**|Volitelné **String []** parametru.<br /><br /> Vynechá zadaný objekt z výstupní knihovně. *Lib.exe* vytvoří výstupní knihovnu tak, že zkombinuje všechny objekty (ať už v souborech objektů nebo knihoven) a poté odstraní všechny objekty, které jsou určeny tuto možnost.<br /><br /> Tento parametr **/REMOVE** možnost *lib.exe* , která přijímá `membername` argument.|  
 |**Zdroje**|Vyžaduje `ITaskItem[]` parametru.<br /><br /> Určuje seznam zdrojových souborů, oddělené mezerami.|  

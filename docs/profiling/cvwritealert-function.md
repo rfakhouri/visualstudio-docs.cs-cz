@@ -1,8 +1,6 @@
 ---
-title: Cvwritealert – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvwritealert – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 743cec7c632bbfca7faf3659ffba5b337553ecee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921983"
 ---
 # <a name="cvwritealert-function"></a>Cvwritealert – funkce
-Zapíše výstrahu vizualizér souběžnosti trasovacího souboru.  
+Zapíše upozornění do souboru trasování vizualizátoru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -61,20 +59,20 @@ HRESULT CvWriteAlertVA(
  Seznam argumentů.  
   
  `pMarkerSeries`  
- Kontext řady platný značky. Nemůže mít hodnotu NULL.  
+ Platné značky řady kontextu. Nemůže mít hodnotu NULL.  
   
  `pMessage`  
- Řetězec formátu zpráv. Nemůže mít hodnotu NULL.  
+ Řetězec formátu zprávy. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, pokud zpráva je úspěšně zapsána. Kód chyby v případě, že byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při úspěšném zápisu zprávy. Kód chyby v případě, že došlo k chybám. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  
   
- **Unicode:** cvwritealertw –, cvwritealertvw –  
+ **Unicode:** Cvwritealertw – cvwritealertvw –  
   
- **ANSI:** cvwritealerta –, cvwritealertva –  
+ **ANSI:** Cvwritealerta – cvwritealertva –  
   
 ## <a name="see-also"></a>Viz také:  
  [Referenční dokumentace knihoven jazyka C++](../profiling/cpp-library-reference.md)

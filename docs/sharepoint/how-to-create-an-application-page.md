@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: vytvoření stránky aplikace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření stránky aplikace | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820222"
 ---
-# <a name="how-to-create-an-application-page"></a>Postupy: vytvoření stránky aplikace
+# <a name="how-to-create-an-application-page"></a>Postupy: Vytvoření stránky aplikace
   Můžete vytvořit webovou stránku ASP.NET pro jeden nebo více webů služby SharePoint. Ve službě SharePoint se nazývají tyto stránky stránky aplikace. Na rozdíl od lokality stránky stránky aplikace obsahuje kód, který spouští za bránou stránky. Další informace najdete v tématu [vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
 ### <a name="to-create-an-application-page"></a>Vytvoření stránky aplikace  
@@ -50,9 +45,8 @@ ms.locfileid: "51296200"
   
 7.  Pokud chcete zpracovat události ovládacího prvku, přidejte kód do souboru kódu stránky aplikace.  
   
-     Soubor kódu se zobrazí v případě rozbalte uzel pro stránkovací soubor ASP.NET a má *.cs* nebo *.vb* rozšíření, v závislosti na jazyce projektu. Začátku do konce příklad toho, jak vytvořit stránku aplikace, najdete v části [návod: vytvoření stránky aplikace služby SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
+     Soubor kódu se zobrazí v případě rozbalte uzel pro stránkovací soubor ASP.NET a má *.cs* nebo *.vb* rozšíření, v závislosti na jazyce projektu. Začátku do konce příklad toho, jak vytvořit stránku aplikace, najdete v části [názorný postup: Vytvoření stránky aplikace služby SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).  
   
 ## <a name="see-also"></a>Viz také:
  [Vytváření stránek aplikací pro SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Návod: Vytvoření stránky aplikace služby SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  

@@ -1,8 +1,6 @@
 ---
 title: 'Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno. | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f56cca9fa637efaa66b6dcab4716d4a1900aa61d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837625"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povoleno.
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno.
 Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ověřování. Tato situace může nastat, když zkusíte Krokovat s vnořením webovou aplikaci nebo webové služby XML. Jednou z příčin této chyby je, že integrované ověřování Windows není povoleno. Ho Pokud chcete povolit, postupujte podle kroků v "K povolení integrované ověřování Windows."  
   
  Pokud je povoleno integrované ověřování Windows a stále se zobrazí tato chyba, je možné, že k této chybě dojde, protože **ověřování algoritmem Digest pro Windows domény serverů** je povolená. V této situaci byste se obrátit se na správce sítě.  
@@ -75,7 +73,7 @@ Ověření uživatele, který požaduje ladění nebylo možné kvůli chybě ov
   
          Zobrazí se dialogové okno Řízení uživatelských účtů a vás vyzve k zadání oprávnění, abyste mohli pokračovat.  
   
-    3.  Klikněte na tlačítko **pokračovat**.  
+    3.  Klikněte na **Pokračovat**.  
   
          Zobrazí se dialogové okno funkcí Windows.  
   

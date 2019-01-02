@@ -1,9 +1,6 @@
 ---
 title: Vytvoření instance základní Editor pomocí starší verze rozhraní API | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838161"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>Vytvořit instanci editoru core pomocí starší verze rozhraní API
 Editor je zodpovědná za funkce jako je například vložení, odstranění, zkopírování a vložení pro úpravy textu. Je kombinací těchto funkcí s funkcí poskytovaných služeb jazyka, jako je barevné zvýrazňování textu, odsazení a dokončování IntelliSense.  
@@ -65,7 +62,7 @@ Editor je zodpovědná za funkce jako je například vložení, odstranění, zk
   
  Pokud <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metoda vrátí identifikátor GUID stejný příkaz jako textový editor, instance základní editor automaticky získá výchozí klávesové zkratky.  
   
- Obecné informace najdete v tématu [návod: vytvoření základní editor a registrace typu souboru editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Obecné informace najdete v tématu [názorný postup: Vytvoření základní editor a registrace typu souboru editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [V editoru core](../extensibility/inside-the-core-editor.md)   

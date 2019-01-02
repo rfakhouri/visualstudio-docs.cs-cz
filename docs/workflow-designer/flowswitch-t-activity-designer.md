@@ -3,7 +3,6 @@ title: Návrhář postupu provádění - FlowSwitch<T> návrháře aktivit
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink.UI
 - System.Activities.Statements.FlowSwitch`1.UI
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 783f3101f567f5fe45a1de24a8dad866ea619a39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 046dd00b89b8f14da3082e60a04a92f8152ecc08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942382"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > návrháře aktivit
 
@@ -44,9 +43,9 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.FlowSwitch%601
 
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Hodnota TRUE|Určuje výraz, který je vyhodnocován pro určení, které <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> přejděte do cesty spuštění.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|Pravda|Určuje výraz, který je vyhodnocován pro určení, které <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> přejděte do cesty spuštění.|
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Určuje jedinečný mapování z možných výsledků získaných z vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> na sadu <xref:System.Activities.Statements.FlowNode> objekty.|
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Hodnota TRUE|Určuje mapování při vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> se neshoduje s některou z hodnot součástí <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> objektu.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Pravda|Určuje mapování při vyhodnocení <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> se neshoduje s některou z hodnot součástí <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> objektu.|
 
 ## <a name="see-also"></a>Viz také:
 

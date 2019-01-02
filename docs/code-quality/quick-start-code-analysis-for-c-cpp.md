@@ -1,8 +1,7 @@
 ---
-title: 'Rychlé zahájení: Analýza kódu pro C/C++'
+title: 'Rychlý Start: Analýza kódu pro C/C++'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825198"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Rychlý start: Analýza kódu pro C/C++
 
@@ -111,9 +110,9 @@ Funkce sledování pracovní položky můžete použít k protokolování chyb z
 
 Můžete hledat dlouhé seznamy varovné zprávy a upozornění v řešení vícenásobného projektu můžete filtrovat.
 
-- **Filtr upozornění podle názvu nebo id upozornění**: do vyhledávacího pole zadejte klíčové slovo.
+- **Filtr upozornění podle názvu nebo id upozornění**: Do vyhledávacího pole zadejte klíčové slovo.
 
-- **Filtr upozornění podle závažnosti**: ve výchozím nastavení, zprávy analýzy kódu jsou přiřazeny závažnost **upozornění**. Můžete přiřadit závažnost jednu nebo více zpráv jako **chyba** sada vlastních pravidel. Na **závažnost** sloupec **seznam chyb**, zvolte šipku rozevíracího seznamu a klikněte na ikonu filtru. Zvolte **upozornění** nebo **chyba** zobrazíte jen zprávy, které jsou přiřazeny příslušných závažnosti. Zvolte **Vybrat vše** zobrazíte všechny zprávy.
+- **Filtr upozornění podle závažnosti**: Ve výchozím nastavení, zprávy analýzy kódu jsou přiřazeny závažnost **upozornění**. Můžete přiřadit závažnost jednu nebo více zpráv jako **chyba** sada vlastních pravidel. Na **závažnost** sloupec **seznam chyb**, zvolte šipku rozevíracího seznamu a klikněte na ikonu filtru. Zvolte **upozornění** nebo **chyba** zobrazíte jen zprávy, které jsou přiřazeny příslušných závažnosti. Zvolte **Vybrat vše** zobrazíte všechny zprávy.
 
 ## <a name="see-also"></a>Viz také:
 

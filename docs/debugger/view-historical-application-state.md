@@ -3,7 +3,6 @@ title: Zobrazit předchozí stav aplikace pomocí nástroje IntelliTrace
 description: Zjistěte, jak dělat jeho snímky a zobrazení snímků pomocí zpětného kroku IntelliTrace
 ms.custom: seodec18
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939976"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Kontrola předchozí nové aplikace pomocí zpětného kroku IntelliTrace v sadě Visual Studio
 
@@ -112,7 +111,7 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Nároky na po�
   * Další možností: 
     1. Nainstalujte z instalačního programu Visual studio sadu nástrojů VC++ 2015.3 v140 pro desktop (x86, x64).
     2. Sestavte cílovou aplikaci.
-    3. Z příkazového řádku, použijte nástroj editbin a pro nastavení `Largeaddressaware` příznak pro cílový spustitelný soubor. Například můžete použít tento příkaz (po aktualizaci cesty): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
+    3. Z příkazového řádku, použijte nástroj editbin a pro nastavení `Largeaddressaware` příznak pro cílový spustitelný soubor. Například můžete použít tento příkaz (po aktualizaci cesty): "C:\Program soubory (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / LARGEADDRESSAWARE "C:\Path\To\Application\app.exe".
     4. Chcete-li spustit ladění, stiskněte **F5**. Nyní snímky se přesunete na ladicí program kroků a zarážek.
 
        > [!Note]

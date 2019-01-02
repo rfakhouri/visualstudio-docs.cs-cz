@@ -1,6 +1,5 @@
 ---
 title: Kurz Hello World rozšíření | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -9,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1e7d221526a0fc0214b57eff0c122e526fc09029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827082"
 ---
-# <a name="create-your-first-extension-hello-world"></a>Vytvořit své první rozšíření: Hello World
+# <a name="create-your-first-extension-hello-world"></a>Vytvořte své první rozšíření: Hello World
 
 V tomto příkladu Hello World vás provede vytvořením své první rozšíření pro Visual Studio. V tomto kurzu se dozvíte, jak přidat nový příkaz do sady Visual Studio.
 

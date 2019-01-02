@@ -2,7 +2,6 @@
 title: Přepnout zarážku – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f4d60bcbf7c7f394d62cc881c78ef9aa51e545
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a2e9857e752d01f03e7d9219c5e030dae921cc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833750"
 ---
 # <a name="toggle-breakpoint-command"></a>Přepnout zarážku – příkaz
-V závislosti na aktuálním stavu, do aktuálního umístění v souboru se změní zarážek zapnout nebo vypnout.
+V závislosti na jejím aktuálním stavu na aktuální pozici v souboru se změní na zarážku, zapnout nebo vypnout.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +32,10 @@ Debug.ToggleBreakpoint [text]
 ```
 
 ## <a name="arguments"></a>Arguments
- `text` Volitelný parametr. Pokud je zadán text, řádek je označena jako s názvem zarážky. Jinak hodnota řádku je označeno nepojmenované zarážek, což je podobná co se stane po stisknutí klávesy F9.
+ `text` Volitelné. Pokud je zadán text, na řádku je označena jako pojmenované zarážku. V opačném případě je řádku označena jako nepojmenované zarážky, které je podobné co se stane, když stisknete klávesu F9.
 
 ## <a name="example"></a>Příklad
- Následující příklad Přepne aktuální zarážek.
+ Následující příklad přepíná aktuální zarážku.
 
 ```
 >Debug.ToggleBreakpoint
@@ -46,5 +45,5 @@ Debug.ToggleBreakpoint [text]
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

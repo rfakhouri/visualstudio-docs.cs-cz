@@ -1,8 +1,6 @@
 ---
 title: Resolveassemblyreference – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7378aca5d06c7d1c49d7b46261060caf7a005db
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7bf4b4250098303d1fcba8334281fe9c337226b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942395"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference – úloha
 Určuje všechna sestavení, které jsou závislé na zadaná sestavení, včetně druhé a `n`th pořadí závislosti.  
@@ -71,7 +69,7 @@ Určuje všechna sestavení, které jsou závislé na zadaná sestavení, včetn
 |`SerializationAssemblyFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupního parametru.<br /><br /> Obsahuje všechna sestavení serializace XML nalezen. Tyto položky jsou označené CopyLocal = true, pokud a pouze pokud je odkaz nebo závislost, která způsobila tuto položku neexistuje CopyLocal = true.<br /><br /> `Boolean` Metadat CopyLocal označuje, zda má být daný odkaz zkopírován do výstupního adresáře.|  
 |`Silent`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, jsou zaznamenány žádné zprávy. Výchozí hodnota je `false`.|  
 |`StateFile`|Volitelné `String` parametru.<br /><br /> Určuje název souboru, který určuje, kam chcete uložit přechodný sestavení stavu pro tuto úlohu.|  
-|`SuggestedRedirects`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupního parametru.<br /><br /> Obsahuje jednu položku pro každý jedinečných konfliktní identitu sestavení, bez ohledu na hodnotu `AutoUnify` parametru. To zahrnuje všechny jazykové verze a PKT, která byla nalezena, který nemá vhodný bindingRedirect položka v konfiguračním souboru aplikace.<br /><br /> Každá položka volitelně obsahuje následující informace:<br /><br /> -   `Include` Atribut: obsahuje úplný název rodiny sestavení s hodnotou pole verze 0.0.0.0<br />-   `MaxVersion` metadata položek: obsahuje maximální číslo verze.|  
+|`SuggestedRedirects`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupního parametru.<br /><br /> Obsahuje jednu položku pro každý jedinečných konfliktní identitu sestavení, bez ohledu na hodnotu `AutoUnify` parametru. To zahrnuje všechny jazykové verze a PKT, která byla nalezena, který nemá vhodný bindingRedirect položka v konfiguračním souboru aplikace.<br /><br /> Každá položka volitelně obsahuje následující informace:<br /><br /> -   `Include` Atribut: Obsahuje úplný název rodiny sestavení s hodnotou pole verze 0.0.0.0<br />-   `MaxVersion` metadata položky: Obsahuje maximální číslo verze.|  
 |`TargetedRuntimeVersion`|Volitelné `String` parametru.<br /><br /> Určuje verzi modulu runtime do cíle, například 2.0.57027 nebo v2.0.57027.|  
 |`TargetFrameworkDirectories`|Volitelné `String[]` parametru.<br /><br /> Určuje cestu k adresáři cílového rozhraní. Tento parametr se vyžaduje k určení stavu CopyLocal pro výsledný položky.<br /><br /> Pokud není tento parametr zadán, žádné položky. výsledný bude mít hodnotu CopyLocal `true` Pokud explicitně nemají `Private` hodnota metadat `true` na jejich zdroj položky.|  
 |`TargetFrameworkMoniker`|Volitelné `String` parametru.<br /><br /> TargetFrameworkMoniker chcete monitorovat, pokud existuje. Používá se pro protokolování.|  

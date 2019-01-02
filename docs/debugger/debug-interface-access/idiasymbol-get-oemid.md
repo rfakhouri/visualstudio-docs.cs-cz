@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_oemid – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8208d146284926ce7ec3375e8416210eeb5d214c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a09eb9d41a4b5a1034b3b6ab82259c8ce5c0cd38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911403"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 Načte hodnotu ID výrobce OEM (OEM) tohoto symbolu.  
@@ -27,7 +25,7 @@ Načte hodnotu ID výrobce OEM (OEM) tohoto symbolu.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_oemId (   
+HRESULT get_oemId (   
    DWORD* pRetVal  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: Globalizace a lokalizace řešení pro Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5c25a93c62a5737681fe2d3ea27f10c69fbfc92
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856407"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizace a lokalizace řešení pro Excel
   Tato část obsahuje informace o důležité informace pro řešení Microsoft Office Excel, která se spustí na počítačích, které mají jiné než anglické jazykové nastavení pro Windows. Většinu aspektů globalizace a lokalizace řešení pro Microsoft Office jsou stejné jako dojde při vytvoření jiných typů řešení s využitím sady Visual Studio. Obecné informace najdete v tématu [Globalize a lokalizace aplikací](../ide/globalizing-and-localizing-applications.md).

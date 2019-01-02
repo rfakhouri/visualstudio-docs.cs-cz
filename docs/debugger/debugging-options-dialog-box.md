@@ -1,8 +1,6 @@
 ---
-title: Ladění, dialogové okno Možnosti | Microsoft Docs
-ms.custom: ''
+title: Ladění, dialogové okno Možnosti | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,25 +21,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935109"
 ---
 # <a name="debugging-options-dialog-box"></a>Ladění, dialogové okno Možnosti
-**Ladění** složky v **možnosti** dialogové okno na **nástroje** nabídce poskytuje tyto stránek, které vám umožní ladicí program možnosti nástroje.  
+**Ladění** složky v **možnosti** dialogové okno na **nástroje** nabídky, poskytuje na následujících stránkách, které vám umožní určit ladicí program možnosti nástroje.  
   
--   [Obecné, ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md)  
+-   [Obecné, Ladění, dialogové okno Možnosti](../debugger/general-debugging-options-dialog-box.md)  
   
--   [V běhu, ladění, dialogové okno Možnosti](../debugger/just-in-time-debugging-options-dialog-box.md)  
+-   [Za běhu, Ladění, dialogové okno Možnosti](../debugger/just-in-time-debugging-options-dialog-box.md)  
   
--   [Okno výstup, ladění, dialogové okno Možnosti](../debugger/output-window-debugging-options-dialog-box.md)  
+-   [Okno Výstup, Ladění, dialogové okno Možnosti](../debugger/output-window-debugging-options-dialog-box.md)  
   
 -   [Symboly, ladění, dialogové okno Možnosti](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md) [ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)   
+ [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)   
  [Ladění odkazu uživatelského rozhraní](../debugger/debugging-user-interface-reference.md)

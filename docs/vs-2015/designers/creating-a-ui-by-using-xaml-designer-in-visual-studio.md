@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8928f725e144c980d3e625d557a71047959b8b9b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837287"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +91,9 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní při návrh
 
  **Zobrazit** určuje různé velikosti zobrazení a řešení pro aplikaci.
 
- **Orientace** Určuje jinou orientace aplikace: **na šířku** nebo **na výšku**.
+ **Orientace** Určuje jinou orientace aplikace: **Na šířku** nebo **na výšku**.
 
- **Edge** Určuje zarovnání různých edge pro vaši aplikaci: **obě**, **vlevo**, **vpravo**, nebo **žádný**.
+ **Edge** Určuje zarovnání různých edge pro vaši aplikaci: **Obě**, **vlevo**, **vpravo**, nebo **žádný**.
 
  **Vysoký kontrast –** zobrazte si náhled aplikace podle vybraného nastavení kontrastu. Toto nastavení, při nastavení na hodnotu jiné než **výchozí**, přepíše `RequestedTheme` nastavenou v souboru App.xaml.
 
@@ -143,4 +142,4 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní při návrh
  Vpravo od každé vlastnosti je hodnota *značka vlastnosti* , který se zobrazí jako pole symbolu. Vzhled značky vlastnost označuje, zda je datové vazby nebo prostředek použitý pro vlastnost. Například symbol bílé pole určuje výchozí hodnotu, symbol černé skříňky obvykle označuje, že použití místního prostředku a oranžová pole se obvykle označuje, že byl použit datové vazby. Po kliknutí na značku vlastnosti, můžete přejít na definici stylu, otevřete Tvůrce vazeb dat nebo otevřít výběr prostředku.
 
 ## <a name="see-also"></a>Viz také
- [Práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md) [vytvoření a použití prostředku](../designers/how-to-create-and-apply-a-resource.md) [návod: vazba s daty v Návrháři XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Práce s elementy v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md) [vytvoření a použití prostředku](../designers/how-to-create-and-apply-a-resource.md) [názorný postup: Vazba s daty v Návrháři XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

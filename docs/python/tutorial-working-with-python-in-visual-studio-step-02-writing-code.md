@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 2 průvodce základní funkce Pythonu v sadě Visual Studio, včetně úprav kódu a spuštění projektu.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b2f1c4743652f0925ef083d0ca62a34485c219b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935138"
 ---
-# <a name="step-2-write-and-run-code"></a>Krok 2: Zápis a spouštění kódu
+# <a name="step-2-write-and-run-code"></a>Krok 2: Psání a spouštění kódu
 
-**Předchozí krok: [vytvoření nového projektu Pythonu](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Předchozí krok: [Vytvoření nového projektu Pythonu](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 I když **Průzkumníku řešení** je, kde budete spravovat soubory projektu, *editor* okno je obvykle ve kterém můžete pracovat *obsah* souborů, jako je zdrojový kód. Editor je kontextová typu souboru, který upravujete, včetně programovací jazyk (podle přípony souboru), a nabízí funkce vhodné pro daný jazyk, třeba barevné zvýrazňování syntaxe a automatické dokončování pomocí technologie IntelliSense.
 
