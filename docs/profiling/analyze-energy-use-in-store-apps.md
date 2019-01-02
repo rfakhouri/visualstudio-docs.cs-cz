@@ -1,8 +1,6 @@
 ---
 title: Analýza spotřeby energie v aplikacích pro UWP | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860856"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UWP
 Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu energie v aplikacích pro UWP v s nízkou spotřebou, na kterých běží všechny nebo část času, na vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace využití energie můžete rozšířit uživatelskou základnu vaší aplikace a používat zákazníky.  
@@ -29,9 +27,9 @@ Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu ener
  Profiler Spotřeba energie shromažďuje údaje o činnosti displeje, procesoru a síťových připojení zařízení během relace profilování. Poté vygeneruje odhady množství energie použité pro tyto činnosti a celkové množství energie použité pro relaci profilování.  
   
 > [!NOTE]
->  Energetický profiler provádí odhad výkonu a spotřeby energie pomocí softwarového modelu standardního hardwaru referenčního zařízení, jež reprezentuje tablety s nízkou spotřebou, na kterých by vaše aplikace mohla běžet. Pro dosažení co nejlepšího odhadu doporučujeme shromáždit profilová data u tabletů s nízkou spotřebou.  
+> Energetický profiler provádí odhad výkonu a spotřeby energie pomocí softwarového modelu standardního hardwaru referenčního zařízení, jež reprezentuje tablety s nízkou spotřebou, na kterých by vaše aplikace mohla běžet. Pro dosažení co nejlepšího odhadu doporučujeme shromáždit profilová data u tabletů s nízkou spotřebou.  
 >   
->  Ačkoliv model poskytuje dobré odhady pro řadu zařízení s nízkou spotřebou, skutečné hodnoty zařízení, která profilujete, budou pravděpodobně odlišné. Použijte tyto hodnoty pro nalezení aktivit displeje, procesoru a sítě, které jsou v porovnání s využitím jiných prostředků náročné, takže by mohly představovat vhodné kandidáty na optimalizaci.  
+> Ačkoliv model poskytuje dobré odhady pro řadu zařízení s nízkou spotřebou, skutečné hodnoty zařízení, která profilujete, budou pravděpodobně odlišné. Použijte tyto hodnoty pro nalezení aktivit displeje, procesoru a sítě, které jsou v porovnání s využitím jiných prostředků náročné, takže by mohly představovat vhodné kandidáty na optimalizaci.  
   
  Profiler spotřeba energie používá tyto definice *power* a *energie*:  
   
@@ -54,13 +52,13 @@ Visual Studio **spotřeba energie** profileru pomáhá analyzovat spotřebu ener
   
  **Přidání značek do C#, Visual Basic, kód jazyka C++**  
   
- Chcete-li přidat uživatelskou značku do jazyka C#, Visual Basic, kód jazyka C++, nejprve vytvořit [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) objektu. Pak vložte volání [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) metod v kódu, které chcete označit. Použití [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) ve volání.  
+ Chcete-li přidat uživatelskou značku do C#, Visual Basic, kód jazyka C++, nejprve vytvořte <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName> objektu. Pak vložte volání <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> metod v kódu, které chcete označit. Použití [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) ve volání.  
   
  Jakmile se metoda spustí, uživatelská značka je spolu se zprávou přidána do profilových dat.  
   
 > [!NOTE]
 > - Obor názvů Windows.Foundation.Diagnostics.loggingchannel implementuje [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) rozhraní (předpokládané podobě [rozhraní System.IDisposable](/dotnet/api/system.idisposable) v C# a VB). Aby se zabránilo nevrácení prostředků operačního systému, volejte [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) v C# a VB) po dokončení protokolování kanál.  
->   -   Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.  
+>  - Každý otevřený protokolovací kanál musí mít jedinečný název. Pokus o vytvoření nového protokolovacího kanálu se stejným názvem, jaké má jiný kanál, způsobil výjimku.  
   
  Viz ukázku Windows SDK [ukázka LoggingSession](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) příklady.  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      Simulátor aplikace Visual Studio pro aplikace pro UPW umožňuje simulovat vlastnosti datového připojení rozhraní API pro síťové informace. Zobrazit [aplikace spustit UWP v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [využití procesoru analyzovat](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   **Časování funkcí jazyka JavaScript** a **využití procesoru** nástroje pomáhá snížit zatížení procesoru při je způsobeno neefektivními funkcemi. Zobrazit [využití procesoru analyzovat](/visualstudio/profiling/beginners-guide-to-performance-profiling).
 
 ## <a name="see-also"></a>Viz také:
- [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)
+
+- [Profilace v sadě Visual Studio](../profiling/index.md)  
+- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

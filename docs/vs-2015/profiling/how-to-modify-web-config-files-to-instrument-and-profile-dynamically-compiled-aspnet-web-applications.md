@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f668bebb2967ca89feb1c6f52f00253ac3eb07b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860725"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
+    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.exe**|  
   
 4.  Přidejte další **přidat** element jako podřízený objekt **appSettings** elementu.  
@@ -154,7 +154,7 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
+    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
     |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` je cesta profileru spustitelné soubory. Pokud [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] je nainstalovaný ve výchozím umístění, bude hodnota **10.0\Team C:\Program Files\Microsoft Visual Studio Tools nástroje**  
@@ -227,8 +227,8 @@ Můžete použít [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nástrojů pro pr
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: instrumentace dynamicky kompilované ASP.NET aplikace a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Postupy: Instrumentace dynamicky kompilované aplikace ASP.NET a shromáždění dat paměti](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Postupy: Nástroje dynamicky kompilované aplikace ASP.NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
+ [Postupy: Nástroje dynamicky kompilované aplikace ASP.NET a shromažďovat paměťová Data](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
 
 
 

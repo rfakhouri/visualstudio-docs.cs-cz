@@ -1,8 +1,6 @@
 ---
 title: MIDL – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 724c4de3ca582a98d22eaf1bcb3a8761bb4eff55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860829"
 ---
 # <a name="midl-task"></a>MIDL – úloha
 Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *midl.exe*. Další informace najdete v tématu [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
@@ -115,9 +113,9 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**None**|**/ Error none**|  
+    |**Žádné**|**/ Error none**|  
     |**EnableCustom**|**/ Error**|  
-    |**Všechny**|**/ Error všechny**|  
+    |**Vše**|**/ Error všechny**|  
   
      Další informace najdete v tématu **/Error** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
   
@@ -171,7 +169,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**None**|**/ Client none**|  
+    |**Žádné**|**/ Client none**|  
     |**Zástupné procedury**|**Zástupná procedura/Client**|  
   
      Další informace najdete v tématu **/Client** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  
@@ -186,7 +184,7 @@ Zabalí nástroj kompilátoru Microsoft Interface Definition Language (MIDL) *mi
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**None**|**/ Server žádné**|  
+    |**Žádné**|**/ Server žádné**|  
     |**Zástupné procedury**|**Zástupná Procedura/Server**|  
   
      Další informace najdete v tématu **/server** možnost [příkazového řádku MIDL odkazu](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).  

@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: určení dalších možností instrumentace | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Určení dalších možností instrumentace | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -15,31 +13,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858666"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Postupy: určení dalších možností instrumentace
+# <a name="how-to-specify-additional-instrumentation-options"></a>Postupy: Určení dalších možností instrumentace
 
-Můžete instrumentace binárních souborů pomocí prostředí Visual Studio IDE, nebo pomocí nástroje příkazového řádku. Pokud jste instrumentace binárního souboru z integrovaného vývojového prostředí, můžete řídit objem dat, které jsou shromážděny během instrumentace zadáním dalších možností instrumentace na [vsinstr –](../profiling/vsinstr.md) nástroj. Tyto možnosti jsou dostupné na úrovni cíl nebo relace. Například pokud chcete zahrnout nebo vyloučit konkrétní funkce během procesu instrumentace, použijte parametr další instrumentace na cílové úrovni.
+Vám umožňuje instrumentovat binárních souborů pomocí integrovaného vývojového prostředí sady Visual Studio nebo pomocí nástrojů příkazového řádku. Pokud jste instrumentovali binární soubor z integrovaného vývojového prostředí, můžete určit objem dat shromážděných během instrumentace zadáním dalších možností instrumentace do [VSInstr](../profiling/vsinstr.md) nástroj. Tyto možnosti jsou dostupné na cílové úrovni nebo relace. Například pokud chcete zahrnout nebo vyloučit určité funkce během procesu instrumentace, použijte možnost Další instrumentaci na cílové úrovni.
 
 > [!IMPORTANT]
-> Každý test, který je vložen mírně změní chování programu původní. Tato úprava způsobí, že režii během analýzy. I když je odečten sblížení Tato dodatečná režie, má stále jemně časování důsledky pro vícevláknové aplikace. [Vsinstr –](../profiling/vsinstr.md) nástroj Možnosti nápovědy řízení shromažďování dat při vytváření profilu.
+> Každý test, který je vložen mírně změní chování původního programu. Tato změna způsobí, že režii během analýzy. I když je odečtena aproximaci Tato dodatečná režie, má stále drobným časování dopady na aplikací s více vlákny. [VSInstr](../profiling/vsinstr.md) možnosti nápovědy řízení shromažďování dat během profilace nástroj.
 
 ## <a name="to-specify-additional-instrumentation-option"></a>Chcete-li určit možnost Další instrumentace
 
-1. V **prohlížeč výkonu**, vyberte **výkonnostní relace** a potom klikněte pravým tlačítkem a vyberte **vlastnosti**.
+1. V **prohlížeč výkonu**, vyberte **relace výkonu** a pak klikněte pravým tlačítkem a vyberte **vlastnosti**.
 
-2. V **vlastnosti stránky**, klikněte **Upřesnit** vlastnosti.
+2. V **stránky vlastností**, klikněte na tlačítko **Upřesnit** vlastnosti.
 
-3. Zadejte možnosti v **dalších možností instrumentace** pole.
+3. Zadejte možnosti **dalších možností instrumentace** pole.
 
-     /CONTROL:THREAD můžete například použijte k určení profilování úrovně. Úplný seznam možností najdete v tématu [vsinstr –](../profiling/vsinstr.md).
+     Například použijte /CONTROL:THREAD k určení profilování úrovně. Úplný seznam možností najdete v tématu [VSInstr](../profiling/vsinstr.md).
 
-4. Click **OK**.
+4. Klikněte na **OK**.
 
 ## <a name="see-also"></a>Viz také:
 

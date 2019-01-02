@@ -1,53 +1,52 @@
 ---
-title: Nepodporované scénáře ladění v Návrháři pracovních postupů
+title: Nepodporované scénáře ladění v návrháři postupu provádění
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2b876df1b7d997f3999c119d02abd593a88e6d5e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88fa196d5df085249282e595031bbde09ba071a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973067"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858627"
 ---
-# <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nepodporované scénáře ladění v Návrháři pracovních postupů
+# <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Nepodporované scénáře ladění v návrháři postupu provádění
 
-Návrháře pracovních postupů v rozhraní .NET Framework 4 přidali mnoho nových funkcí, ale stále existují některé ladění scénáře, které nejsou podporovány.
+Návrháři pracovních postupů v rozhraní .NET Framework 4 přidali spoustu nových funkcí, ale stále existují některé scénáře ladění, které nepodporuje.
 
-Tady jsou nepodporované návrháře pracovních postupů ladění scénáře:
+Tady jsou nepodporované návrháře postupu provádění ladění scénářů:
 
--   Provádění nemůže pokračovat, po kód bylo upraveno.
+-   Provádění nelze pokračovat, až se upravil kód.
 
--   Provádění nemůže pokračovat z libovolného bodu v pracovním postupu (nastavit další).
+-   Spuštění nemůže pokračovat z libovolného bodu v pracovním postupu (nastavit další).
 
--   Provádění nelze pokračovat, dokud kurzor je dosaženo (Spustit ke kurzoru).
+-   Provádění nelze pokračovat, dokud nenastane kurzoru (Spustit ke kurzoru).
 
--   Návrhář postupu provádění nelze použít k ladění vytvořených v kódu bez použití návrháře pracovních postupů.
+-   Chcete-li ladit pracovní postupy vytvořené v kódu bez použití návrháře nelze použít Návrháře postupu provádění.
 
--   Pracovní postupy vytvořené v dřívějších verzích Windows Workflow Foundation (WF) nemůžete ladit v Návrháři rozhraní .NET Framework 4.
+-   V Návrháři rozhraní .NET Framework 4 není možné ladit pracovní postupy vytvořené v dřívějších verzích Windows Workflow Foundation (WF).
 
--   Zarážky nelze definovat na propojení mezi aktivitami nebo <xref:System.Activities.Statements.Flowchart> uzlů.
+-   Zarážky nelze zadat u propojení mezi aktivitami nebo <xref:System.Activities.Statements.Flowchart> uzly.
 
 -   Během ladění není k dispozici do schránky.
 
--   Zarážky nezachovají, při aktivity se kopírování a vložení.
+-   Zarážky nejsou zachovány při jsou aktivity kopírování a vložení.
 
 -   V okně zásobník volání nelze nastavit zarážky pracovního postupu.
 
--   Při vytváření zarážky v návrháři **řádku** a **znak** nastavení v **nové zarážek** dialogové okno se nepoužívají.
+-   Při vytváření zarážky v návrháři **řádku** a **znak** nastavení v **Nová zarážka** nepoužívají dialogového okna.
 
--   Breakpoint – okno nebo v místní nabídce nepodporuje následující sloupce nebo možnosti pro ladění pracovního postupu:
+-   Zarážka okna nebo v místní nabídce nepodporuje následující sloupce nebo možnosti pro ladění pracovního postupu:
 
     -   Podmínka
 
-    -   Počet volání
+    -   Počet přístupů
 
     -   Při průchodu
 
@@ -57,4 +56,4 @@ Tady jsou nepodporované návrháře pracovních postupů ladění scénáře:
 
     -   Proces
 
-    -   Přejděte na zpětný překlad
+    -   Přejít na zpětný překlad

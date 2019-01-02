@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5f52d4d6121faba201b37ff8fd9fcff62b46935
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e0c71f82a8268f3c52f4b4d0d6794cfdaebdbe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862173"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Text uživatelského rozhraní a nápovědu k sadě Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -122,17 +121,17 @@ ms.locfileid: "53067969"
 
 -   Fráze nápovědy k propojení tak, aby jejich položení dotazu, že odpoví na téma.
 
-     Chyba: "Další informace o Windows Azure Mobile Services, ceny"
+     Nesprávný:  "Přečtěte si informace o cenách služby Windows Azure Mobile Services"
 
-     Správné: "jaké cenové možnosti jsou dostupné pro Windows Azure Mobile Services?"
+     Opravte:  "Jaké cenové možnosti jsou dostupné pro Windows Azure Mobile Services?"
 
 -   Nikdy nepoužívejte *klikněte na tlačítko...* text odkazu.
 
 -   Nikdy odkaz pouze slovo "sem". Toto je problematické pro některé čtečky obrazovky, které budou hlasové pouze s hypertextovým odkazem slovo.
 
-     Chyba: "najít informace o Windows Azure Mobile Services **tady**"
+     Nesprávný:  "Najít informace o Windows Azure Mobile Services **tady**"
 
-     Správné: "jaké cenové možnosti jsou dostupné pro Windows Azure Mobile Services?"
+     Opravte:  "Jaké cenové možnosti jsou dostupné pro Windows Azure Mobile Services?"
 
 -   Další informace o správný styl pro odkazy na nápovědu najdete v článku [Windows Desktop pokyny pro pomoc](https://msdn.microsoft.com/library/windows/desktop/dn742494\(v=vs.85\).aspx).
 

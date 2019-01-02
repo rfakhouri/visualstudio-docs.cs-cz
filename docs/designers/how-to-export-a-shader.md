@@ -2,7 +2,6 @@
 title: 'Postupy: Exportování shaderu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd06664cda1c60d2624b77a0381e1269fcb3c484
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 92e0ae391cb196053d136dc44a8e64758f485115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861446"
 ---
-# <a name="how-to-export-a-shader"></a>Postupy: exportování shaderu
+# <a name="how-to-export-a-shader"></a>Postupy: Export shaderu
 
 Tento článek popisuje způsob použití **návrháře shaderu** exportovat shader orientovaného grafu Shader Language (DGSL) tak, aby ho můžete používat ve vaší aplikaci.
 
@@ -27,7 +26,7 @@ Po vytvoření shaderu pomocí návrháře shaderu a mohli ho používat ve vaš
 
 1. V sadě Visual Studio, otevřete **vizuální graf shaderu (.dgsl)** souboru.
 
-     Pokud nemáte k dispozici **vizuální graf shaderu (.dgsl)** soubor otevřít, jej vytvořte podle pokynů v [postupy: vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md).
+     Pokud nemáte k dispozici **vizuální graf shaderu (.dgsl)** soubor otevřít, jej vytvořte podle pokynů v [jak: Vytvoření shaderu základní barvy](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Na **návrháře shaderu** nástrojů, zvolte **Upřesnit** > **exportovat** > **exportovat jako**. **Exportovat Shader** zobrazí se dialogové okno.
 

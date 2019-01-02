@@ -3,7 +3,6 @@ title: Návrhář postupu provádění – Návrhář aktivity TransactionScope
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e823ea0fa716545dcc2cfba3df3ba93118e65f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873710"
 ---
 # <a name="transactionscope-activity-designer"></a>Návrhář aktivity TransactionScope
 
@@ -38,10 +37,10 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.TransactionSco
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné jméno <xref:System.Activities.Statements.TransactionScope> aktivity. Výchozí hodnota je objekt TransactionScope. I když <xref:System.Activities.Activity.DisplayName%2A> hodnota není bezpodmínečně nutné, je osvědčeným postupem je použití jednoho.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Hodnota TRUE|Určuje aktivity ke spuštění v rámci jedné transakce. Chcete-li přidat <xref:System.Activities.Statements.TransactionScope.Body%2A> aktivity, rozevírací aktivitu z **nástrojů** do **text** pole na **TransactionScope** Návrhář aktivity s text nápovědy "přetáhněte aktivitu sem".|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Hodnota TRUE|Určuje, <xref:System.Transactions.IsolationLevel> to <xref:System.Activities.Statements.TransactionScope>.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Pravda|Určuje aktivity ke spuštění v rámci jedné transakce. Chcete-li přidat <xref:System.Activities.Statements.TransactionScope.Body%2A> aktivity, rozevírací aktivitu z **nástrojů** do **text** pole na **TransactionScope** Návrhář aktivity s text nápovědy "přetáhněte aktivitu sem".|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Pravda|Určuje, <xref:System.Transactions.IsolationLevel> to <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|Určuje dobu (ve formátu jako 00:00:00, který označuje hodiny: minuty: sekundy), který má k dokončení transakce. Výchozí hodnota je 1 minuta (00: 01:00).|
-|[System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Hodnota TRUE|Určuje hodnotu, která určuje, zda pracovní postup by měl být zrušen Pokud přerušení transakce.|
+|[System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Pravda|Určuje hodnotu, která určuje, zda pracovní postup by měl být zrušen Pokud přerušení transakce.|
 
 ## <a name="see-also"></a>Viz také:
 

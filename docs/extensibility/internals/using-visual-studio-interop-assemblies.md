@@ -1,9 +1,6 @@
 ---
-title: Pomocí sady Visual Studio spolupráce – sestavení | Microsoft Docs
-ms.custom: ''
+title: Pomocí sady Visual Studio sestavení vzájemné spolupráce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
@@ -15,51 +12,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b525602e5f328fefde5e552c9c99a845f369a81a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869881"
 ---
-# <a name="using-visual-studio-interop-assemblies"></a>Pomocí sady Visual Studio spolupráce – sestavení
-Visual Studio sestavení vzájemné spolupráce povolit spravované aplikace pro přístup k rozhraní modelu COM, která zajistí možnosti rozšíření sady Visual Studio. Existují určité rozdíly mezi přímých rozhraní COM a jejich vzájemné spolupráce verze. Hodnoty HRESULT jsou obecně vyjádřené hodnoty int a je nutné zacházet stejným způsobem jako výjimky a parametry (zejména výstupní parametry) jsou zpracovávat odděleně.  
+# <a name="using-visual-studio-interop-assemblies"></a>Používání definičních sestavení sady Visual Studio
+Sestavení vzájemné spolupráce pro Visual Studio povolit spravovaným aplikacím přístup k rozhraní modelu COM, které zajistí možnosti rozšíření sady Visual Studio. Existuje několik rozdílů mezi přímo rozhraní COM a jejich vzájemné spolupráce verze. HRESULT – jsou obecně reprezentovány ve formě hodnoty int a je nutné zacházet stejným způsobem jako výjimky a parametry (zejména výstupní parametry) jsou zpracovávat odděleně.  
   
-## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Hodnoty HRESULT zpracování vrácen do spravovaného kódu z modelu COM  
- Při volání rozhraní modelu COM ze spravovaného kódu, zkontrolujte hodnotu HRESULT a způsobí výjimku, pokud je to nutné. <xref:Microsoft.VisualStudio.ErrorHandler> Třída obsahuje <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> metoda, která vyvolává k výjimce modelu COM., v závislosti na hodnotě hodnota HRESULT do ní předán.  
+## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Zpracování výsledky HRESULTs vracené z modelu COM pro spravovaný kód  
+ Když zavoláte rozhraní modelu COM ze spravovaného kódu, zkontrolujte hodnotu HRESULT a vyvolat výjimku, pokud je to nutné. <xref:Microsoft.VisualStudio.ErrorHandler> Třída obsahuje <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> do něho předaný metodě, která se vyvolá výjimka modelu COM, v závislosti na hodnotu HRESULT.  
   
- Ve výchozím nastavení <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> vyvolá výjimku, vždy, když je předán HRESULT, který má hodnotu menší než nula. V případě přípustné hodnoty jsou tyto hodnoty HRESULT a by měl být vyvolána žádná výjimka, by měla být předána hodnoty další hodnoty HRESULT <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po otestování hodnoty. Pokud HRESULT testuje odpovídá žádné hodnoty HRESULT explicitně předaný <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, nedojde k výjimce.  
+ Ve výchozím nastavení <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> vyvolá výjimku, pokaždé, když je jí předán HRESULT, který má hodnotu menší než nula. V případech, kdy přípustné hodnoty jsou tyto výsledky HRESULT a měla by být vyvolána žádná výjimka, by měly být předány hodnoty HRESULT Další <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po otestování hodnoty. Pokud hodnota HRESULT testován odpovídá všechny hodnoty HRESULT explicitně předán <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, není vyvolána žádná výjimka.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Třída obsahuje konstanty pro běžné hodnoty HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> a <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hodnoty HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> a <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> také poskytuje <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> a <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, které odpovídají úspěšné a NEÚSPĚŠNÉ makra v modelu COM.  
+>  <xref:Microsoft.VisualStudio.VSConstants> Třída obsahuje konstanty pro běžné HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> a <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> a <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> poskytuje také <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> a <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, které odpovídají úspěšné a NEÚSPĚŠNÉ makra v modelu COM.  
   
- Zvažte například následující volání funkce, ve kterém <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> je přijatelné návratovou hodnotu, ale jiné HRESULT menší než nula. představuje chybu.  
+ Zvažte například následující volání funkce, ve kterém <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> je přijatelné vrácení hodnoty, ale jiné HRESULT menší než nula představuje chybu.  
   
  [!code-vb[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_1.vb)]
  [!code-csharp[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_1.cs)]  
   
- Pokud máte více než jeden přijatelné návratové hodnoty, může být další hodnoty HRESULT právě přidán do seznamu ve volání <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>.  
+ Pokud existuje více než jeden přijatelné návratové hodnoty, další hodnoty HRESULT lze připojit pouze k seznamu při volání funkce <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>.  
   
  [!code-vb[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_2.vb)]
  [!code-csharp[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_2.cs)]  
   
-## <a name="returning-hresults-to-com-from-managed-code"></a>Hodnoty HRESULT vrácením COM ze spravovaného kódu  
- Pokud dojde k žádná výjimka, spravovaný kód vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> funkce COM, která je volána. Zprostředkovatel komunikace s objekty COM podporuje společné výjimky, které jsou silného typu ve spravovaném kódu. Například metoda, která přijímá nepřijatelné `null` argument vyvolává <xref:System.ArgumentNullException>.  
+## <a name="returning-hresults-to-com-from-managed-code"></a>Vrací HRESULTS modelu COM ze spravovaného kódu  
+ Pokud dojde k žádné výjimce, spravovaný kód vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> funkce modelu COM, která ji zavolala. Komunikace s objekty COM podporuje běžné výjimky, které jsou silně typované ve spravovaném kódu. Například metoda, která přijímá nepřijatelnou `null` vyvolá argument <xref:System.ArgumentNullException>.  
   
- Pokud si nejste jistí které výjimkou výjimku, ale znáte hodnota HRESULT chcete vrátit do modelu COM, můžete použít <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodu pro příslušné výjimku. Tento postup funguje i s nestandardní chybu, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> pokusy o mapování hodnota HRESULT předán do ní silného typu výjimka. Pokud ne, vyvolá k obecné výjimce modelu COM. místo. Konečným výsledkem je, že hodnota HRESULT předáte <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> ze spravovaného kódu, které se vrátí do funkce COM, která je volána.  
+ Pokud si nejste jistí výjimek má vyvolat, ale vy víte HRESULT chcete vrátit do modelu COM, můžete použít <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodu pro příslušnou výjimku. Tento postup funguje i s nestandardní chybu, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> pokusy o mapování hodnota HRESULT je do něho předaný silného typu výjimky. V případě nedostupnosti vyvolá k obecné výjimce modelu COM. místo. Výsledkem je hodnota HRESULT předání <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> ze spravovaného kódu, které se vrátí do funkce modelu COM, která ji zavolala.  
   
 > [!NOTE]
->  Snížit výkon, výjimky, které slouží k označení neobvyklého podmínky. Podmínky, které dochází často, by měly být zpracovávaný vložené, místo vyvolaná výjimka.  
+>  Snížit výkon, výjimky, které slouží k označení neobvyklého podmínky. Podmínky, ke kterým dochází často by měla být zpracováván jako vložené, namísto vyvolané výjimky.  
   
 ## <a name="iunknown-parameters-passed-as-type-void"></a>Parametry IUnknown předány jako typ void**  
- Vyhledejte [parametry, které jsou definovány jako typ out] `void **` v modelu COM rozhraní, ale které jsou definovány jako `[``iid_is``]` v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypu.  
+ Vyhledejte [out] Parametry, které jsou definovány jako typ `void **` v modelu COM rozhraní, ale které jsou definovány jako `[``iid_is``]` v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototyp metody sestavení vzájemné spolupráce.  
   
- V některých případech vygeneruje rozhraní modelu COM `IUnknown` objekt a rozhraní COM pak předá ji jako typ `void **`. Tato rozhraní jsou zvlášť důležité, protože pokud proměnnou je definován jako [out] v IDL, pak se `IUnknown` objekt je odkaz počítá s `AddRef` metoda. Nevrácená paměť systému nastane, pokud objekt není správně zpracovat.  
+ V některých případech vygeneruje rozhraní modelu COM `IUnknown` objektu a rozhraní modelu COM pak ji předá jako typ. `void **`. Tato rozhraní jsou obzvláště důležité, protože pokud je proměnná definovaná jako [out] v IDL, pak bude `IUnknown` objekt je referenčně s `AddRef` metody. Nevracení paměti dochází, pokud objekt není správně zpracovat.  
   
 > [!NOTE]
->  `IUnknown` Objektu vytvořené rozhraní COM a vrátí proměnnou [out] dojde nevrácená paměť systému, pokud se explicitně neuvolní.  
+>  `IUnknown` Objekt vytvořený rozhraní COM a vrátil [out] proměnné způsobí nevracení paměti, pokud není explicitně uvolněna.  
   
- Spravované metody, které zpracovávají tyto objekty by měly zpracovávat <xref:System.IntPtr> jako ukazatel na `IUnknown` objektu a volání <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodu k získání objektu. Volající by pak přetypování návratovou hodnotu pro libovolnou typ je vhodný. Pokud objekt je již nepotřebujete, volání <xref:System.Runtime.InteropServices.Marshal.Release%2A> pro uvolnění.  
+ Spravované metody, které zpracovávají tyto objekty by měly zpracovávat <xref:System.IntPtr> jako ukazatel na `IUnknown` a následně zavolat <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodu k získání objektu. Volající by měl pak přetypovávat návratovou hodnotu pro jakýkoli typ je vhodný. Pokud objekt je už nepotřebujete, volání <xref:System.Runtime.InteropServices.Marshal.Release%2A> pro uvolnění.  
   
  Tady je příklad volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> metoda a zpracování `IUnknown` objektu správně:  
   
@@ -88,7 +85,7 @@ else
 ```  
   
 > [!NOTE]
->  Tyto metody jsou známé předat `IUnknown` ukazatele na objekt jako typ <xref:System.IntPtr>. Zpracování je, jak je popsáno v této části.  
+>  Následující metody se ví, předejte `IUnknown` objektu ukazatele jako typ <xref:System.IntPtr>. Jejich zpracování, jak je popsáno v této části.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
@@ -103,35 +100,35 @@ else
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ## <a name="optional-out-parameters"></a>Volitelné [parametry out]  
- Vyhledejte parametry, které jsou definovány jako [out] datový typ (`int`, `object`a tak dále) v modelu COM rozhraní, ale které jsou definovány jako pole stejného typu dat ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypu.  
+ Vyhledejte parametry, které jsou definovány jako [out] datový typ (`int`, `object`, a tak dále) v modelu COM rozhraní, ale které jsou definovány jako pole stejného datového typu v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototyp metody sestavení vzájemné spolupráce.  
   
- Některé COM rozhraní, jako například <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, s nakládat [jako volitelné parametry out]. Pokud objekt není povinný, vrátí tato rozhraní COM `null` ukazatel jako hodnotu tohoto parametru místo vytvoření objektu [out]. Toto je záměrné. Pro tyto rozhraní `null` ukazatele se předpokládá, že jako součást správné chování VSPackage a vrácena žádná chyba.  
+ Některé COM rozhraní, jako například <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, nakládat [jako volitelné parametry out]. Pokud objekt není povinný, vrátí tato rozhraní COM `null` ukazatele jako hodnotu tohoto parametru místo vytvoření [out] objekt. Jedná se o účel. Pro tato rozhraní `null` ukazatele se předpokládá, že jako součást správné chování sady VSPackage, a není vrácena žádná chyba.  
   
- Protože modulu CLR není povolena hodnota parametru [out] jako `null`, součástí navrženou chování těchto rozhraní není přímo k dispozici v rámci spravovaného kódu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Metody sestavení vzájemné spolupráce pro ovlivněné rozhraní tento problém obejít tak, že definujete relevantní parametry jako pole, protože modul CLR umožňuje předat `null` pole.  
+ Protože CLR nepovoluje hodnotu parametr [out] bude `null`, část navrženého chování těchto rozhraní není přímo k dispozici v rámci spravovaného kódu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Metody sestavení vzájemné spolupráce pro ovlivněné rozhraní tento problém obejít tak, že definujete relevantní parametry jako pole, protože modul CLR umožňuje předat `null` pole.  
   
- Spravované implementace tyto metody by měla put `null` pole do parametru, když není co má být vrácen. Jinak vytvořit jeden element pole správného typu a put návratovou hodnotu v poli.  
+ Spravované implementace tyto metody by měl umístit `null` pole do parametru, když není nutné nic vrátit. V opačném případě vytvořte pole s jedním prvkem správný typ a vložte návratová hodnota v poli.  
   
- Spravované metody, které přijímají informace z rozhraní s volitelné [out] Parametry získávají parametr jako pole. Jenom zkontrolujte hodnotu první prvek pole. Pokud není `null`, považovat první prvek, jako by šlo parametr původní.  
+ Spravované metody, které se zobrazí informace z rozhraní s volitelné [out] Parametry získávají parametr jako pole. Právě zkontrolujte hodnoty první prvek pole. Pokud není `null`, první prvek zacházet, jako kdyby byly původní parametru.  
   
-## <a name="passing-constants-in-pointer-parameters"></a>Předávání konstanty v parametrech ukazatele  
- Vyhledejte parametry, které jsou definovány jako [v] ukazatele v rozhraní modelu COM, ale které jsou definovány jako <xref:System.IntPtr> zadejte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypu.  
+## <a name="passing-constants-in-pointer-parameters"></a>Předávání konstanty v parametry ukazatele  
+ Vyhledání parametrů, která jsou definována jako [v] ukazatele rozhraní modelu COM, ale které jsou definovány jako <xref:System.IntPtr> zadejte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototyp metody sestavení vzájemné spolupráce.  
   
- Podobné problém nastane, když rozhraní modelu COM předá speciální hodnotu, jako jsou 0, -1 nebo -2, místo ukazatele na objekt. Na rozdíl od [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], modul CLR neumožňuje konstanty být přetypovat jako objekty. Místo toho [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce definuje jako parametr <xref:System.IntPtr> typu.  
+ K podobnému problému nastane, pokud rozhraní modelu COM předá zvláštní hodnota, například 0, -1 nebo -2, místo ukazatelem na objekt. Na rozdíl od [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], modul CLR neumožňuje konstanty pro přetypování jako objekty. Místo toho [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce definuje jako parametr <xref:System.IntPtr> typu.  
   
- Spravované implementace z těchto metod by měl využít výhod fakt, na který <xref:System.IntPtr> třída má oba `int` a `void *` konstruktory k vytvoření <xref:System.IntPtr> z objektu nebo celočíselná konstanta jako vhodné.  
+ Spravované implementace z těchto metod zabere fakt, který <xref:System.IntPtr> třídy jsou obě `int` a `void *` konstruktory k vytvoření <xref:System.IntPtr> z objektu nebo celočíselné konstanty, podle potřeby.  
   
- Spravované metody, které přijímají <xref:System.IntPtr> parametry tento typ měli používat <xref:System.IntPtr> zadejte operátory převodu pro zpracování výsledků. Nejprve převeďte <xref:System.IntPtr> k `int` a testování proti relevantní celočíselné konstanty. Pokud žádné hodnoty shodují, převést na objekt požadovaný typ a pokračovat.  
+ Spravované metody, které přijímají <xref:System.IntPtr> byste použít parametry tohoto typu <xref:System.IntPtr> zadejte operátory převodu ke zpracování výsledků. Nejprve převeďte <xref:System.IntPtr> k `int` a testování proti relevantní celočíselné konstanty. Pokud žádné hodnoty shodují, převeďte jej na objekt požadovaného typu a pokračovat.  
   
- Příklady tohoto najdete v tématu <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.  
+ Příklady tohoto objektu, najdete v článku <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.  
   
 ## <a name="ole-return-values-passed-as-out-parameters"></a>OLE vrátit hodnoty předány jako [parametry out]  
- Vyhledejte metody, které mají `retval` návratová hodnota v rozhraní modelu COM, ale mají `int` vracet hodnotu a další [out] parametr pole v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypu. By mělo být jasné, že tyto metody vyžadují zvláštní zpracování, protože [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypy mít jeden parametr více než metody rozhraní COM.  
+ Hledat metody, které mají `retval` vrácená hodnota v rozhraní modelu COM, ale mají `int` vracet hodnotu a zobrazí se další [pole parametrem out] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prototyp metody sestavení vzájemné spolupráce. By mělo být jasné, že tyto metody vyžadují speciální zacházení, protože [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metoda prototypy mít jeden parametr více než metody rozhraní modelu COM.  
   
- Mnoho rozhraní modelu COM, které pracují s OLE aktivity odeslat informace o stavu OLE zpět volací program uložené v `retval` vrátit hodnotu rozhraní. Místo použití návratovou hodnotu, odpovídající [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sestavení vzájemné spolupráce metody odeslat informace zpět do volání programu uložených v [out] parametr pole.  
+ Mnoho rozhraní modelu COM, které se zabývají OLE aktivity odeslat informace o stavu OLE zpět na volající program uložené v `retval` návratovou hodnotu rozhraní. Namísto použití návratovou hodnotu odpovídající [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] metody sestavení vzájemné spolupráce poslat informace o zpět na volající program uložené v [out] pole parametrů.  
   
- Spravované implementace z těchto metod by měl vytvořit jeden element pole stejného typu jako parametr [out] a umístí jej v parametru. Hodnota elementu pole by měl být stejný jako příslušný COM `retval`.  
+ Spravované implementace tyto metody by měly vytvořit pole s jedním prvkem stejného typu jako parametr [out] a vložit ho do parametru. Hodnota prvku pole musí být stejné jako odpovídající COM `retval`.  
   
- Spravované metody, které volají rozhraní tento typ měli pull první prvek mimo [out] pole. Tento element lze zacházet, jako by šlo `retval` vrátit hodnotu z odpovídající rozhraní modelu COM.  
+ Spravované metody, které volají rozhraní tohoto typu by měl vyžádání prvního prvku mimo [out] pole. Tento element lze zacházet, jako by šlo `retval` návratová hodnota z odpovídající rozhraní modelu COM.  
   
 ## <a name="see-also"></a>Viz také  
  [Spolupráce s nespravovaným kódem](/dotnet/framework/interop/index)

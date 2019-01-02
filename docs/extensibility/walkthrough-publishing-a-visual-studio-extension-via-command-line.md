@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Publikování rozšíření sady Visual Studio pomocí příkazového řádku | Dokumentace Microsoftu'
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857212"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Průvodce: Publikování rozšíření sady Visual Studio pomocí příkazového řádku
 
 Tento návod ukazuje, jak publikování rozšíření sady Visual Studio na webu Visual Studio Marketplace pomocí příkazového řádku. Když přidáte rozšíření na webu Marketplace, vývojáři mohou použít [ **rozšíření a aktualizace** ](../ide/finding-and-using-visual-studio-extensions.md) dialogové okno pro procházení obsahuje nové a aktualizované rozšíření.
 

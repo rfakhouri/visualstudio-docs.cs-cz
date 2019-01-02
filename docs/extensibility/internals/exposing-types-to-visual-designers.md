@@ -1,9 +1,6 @@
 ---
 title: Zveřejnění typů pro vizuální návrhářské nástroje | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f1820b3df61dd8029ac9404eb7f4a09e44707ac
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 713b44c9ccf360af04086b32c121f7e26c0e67d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859367"
 ---
 # <a name="expose-types-to-visual-designers"></a>Vystavení typů pro vizuální návrháře
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup do definice třídy a typ v době návrhu. Tříd jsou načteny z předdefinovanou sadu sestavení, které zahrnují závislost kompletní sadu aktuální projekt (odkazy a jejich závislosti). Může být také nezbytné pro vizuální návrháře tříd pro přístup k a typy, které jsou definovány v souborech generovaných vlastních nástrojů.  

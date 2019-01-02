@@ -1,8 +1,6 @@
 ---
 title: Časovač | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b0c3e493e8486247704ef22967c8ccd511ed2
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 25dd87a682eb92b510dd22191769e488437e8486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870846"
 ---
 # <a name="timer"></a>Časovač
 *VSPerfCmd.exe* **časovače** parametr nastaví události profilování, který se definuje tak, aby hodinových cyklů procesoru a volitelně změní počet cyklů v intervalu vzorkování z výchozí hodnoty 10 000 000. 10 000 000 hodinových cyklů procesoru s frekvencí 1 GHz (jeden GHz), je přibližně 100 vzorků za sekundu. Minimální počet cyklů, které je možné zadat je 50 000.  

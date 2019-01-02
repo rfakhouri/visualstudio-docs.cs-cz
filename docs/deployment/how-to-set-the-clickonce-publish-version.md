@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: nastavení publikování ClickOnce verze | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Nastavení publikování ClickOnce verze | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c991975a369387fea248816f4465670f1062a927
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: bd0f38fda93d1a91e72c547bdfe230354988da9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869109"
 ---
-# <a name="how-to-set-the-clickonce-publish-version"></a>Postupy: nastavení publikování ClickOnce verze
+# <a name="how-to-set-the-clickonce-publish-version"></a>Postupy: Nastavení publikování ClickOnce verze
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` Vlastnost určuje, zda aplikace, které publikujete bude považována za aktualizace. Každá verze se zvýší, aplikace bude publikována jako aktualizace.  
   
  `Publish Version` Vlastnost lze nastavit na **publikovat** stránku **Návrháře projektu**.  
   
 > [!NOTE]
->  Projekt možnost, bude automaticky zvýší `Publish Version` vlastnost pokaždé, když je aplikace publikována, tato možnost je standardně povolená. Další informace najdete v tématu [jak: Automatický přírůstek verze publikování ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+>  Projekt možnost, bude automaticky zvýší `Publish Version` vlastnost pokaždé, když je aplikace publikována, tato možnost je standardně povolená. Další informace najdete v tématu [jak: Automaticky ClickOnce Inkrementace verze publikování](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Chcete-li změnit verzi publikování  
   
@@ -46,6 +44,6 @@ ms.locfileid: "39080223"
   
 ## <a name="see-also"></a>Viz také:  
  [Volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Postupy: Automatická Inkrementace ClickOnce verze publikování](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Postupy: Automaticky ClickOnce Inkrementace verze publikování](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

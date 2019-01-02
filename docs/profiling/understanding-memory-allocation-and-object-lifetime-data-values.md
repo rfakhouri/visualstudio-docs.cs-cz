@@ -1,8 +1,6 @@
 ---
-title: Princip přidělování paměti a životnosti objektů hodnot | Microsoft Docs
-ms.custom: ''
+title: Princip přidělování paměti a životnosti objektů hodnot | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
@@ -12,31 +10,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 518be5d4126dbfa2713fada4df8451292166dcbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858948"
 ---
-# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Pochopení hodnoty dat doby paměti pro přidělení a objekt
+# <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Vysvětlení paměť přidělení a objekt hodnotám životnosti
 
-*Přidělení paměti .NET* profilace metodu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci shromažďuje informace o velikost a počet objektů, které byly vytvořeny v přidělení nebo zničen v uvolnění paměti a další informace o funkci *zásobník volání* kdy k události došlo. A *zásobník volání* je dynamická struktura, která ukládá informace o funkcích, které jsou prováděny na procesor.
+*Alokaci paměti .NET* metodu profilace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady shromažďuje informace o velikost a počet objektů, které byly vytvořeny během přidělování nebo zničeny v procesu uvolnění paměti a další informace o funkci *zásobníku volání* kdy došlo k události. A *zásobníku volání* je dynamické strukturu, která uchovává informace o funkcích, které jsou spuštěny na procesor.
 
-Paměti profileru přerušují procesor počítače při každém přidělení objektu rozhraní .NET Framework v PROFILOVANÉHO aplikace. Při shromažďování dat o době životnosti objektu přerušuje profiler procesor po každém uvolnění paměti rozhraní .NET Framework. Agregovaná data pro jednotlivé funkce PROFILOVANÉHO a pro každý typ objektu.
+Profilování paměti přerušuje procesor počítače při každém přidělení objektu rozhraní .NET Framework v profilované aplikaci. Při shromažďování dat o době životnosti objektu přerušuje profiler procesor po každém uvolnění paměti rozhraní .NET Framework. Pro každou funkci PROFILOVANÉHO a pro každý typ objektu se data agregují.
 
-## <a name="allocation-data"></a>Přidělení dat
+## <a name="allocation-data"></a>Data o přidělování
 
-Při výskytu události .memory, počítá celkového počtu a velikosti paměti přidělené nebo zničení objektů se zvýší.
+Při výskytu události .memory celkové počty a velikosti paměti přidělené nebo zničení objektů jsou zvětšeny.
 
-Při výskytu události přidělení .memory, profileru zvýší počet ukázka pro jednotlivé funkce v zásobníku volání. Když jsou shromažďována data, jenom jednu funkci v zásobníku volání právě probíhá kód v jeho tělo funkce. Jiných funkcí v zásobníku jsou rodičů v hierarchii volání funkce, které čekají na funkce, které jsou volány vrátit.
+Při výskytu události přidělení .memory profiler zvýší čítače vzorků pro každou funkci v zásobníku volání. Když se data shromažďují, pouze jedna funkce v zásobníku volání je aktuálně spouští kód v těle jeho funkce. Další funkce v zásobníku jsou nadřazené položky v hierarchii volání funkce, která čekají na funkce, které jsou volána k vrácení.
 
-- Pro událost přidělení, profileru zvýší *výhradní* počet funkce, která právě probíhá jeho pokyny vzorků. Protože výhradní ukázka je také součástí celkové (*včetně*) se taky zvýší ukázky funkce, včetně ukázkové počet aktuálně aktivních funkce.
+- Pro události přidělení, profiler přírůstky *exkluzivní* počet funkce, která se právě probíhá jeho pokynů vzorků. Protože exkluzivní ukázky je také součástí celkové (*včetně*) ukázky funkce, včetně ukázkové počet aktuálně aktivních funkce se také zvýší.
 
-- Profileru zvýší počet vzorků včetně všech funkcí v zásobníku volání.
+- Profiler zvýší počet vzorků včetně všech funkcí v zásobníku volání.
 
-## <a name="lifetime-data"></a>Doba platnosti dat
+## <a name="lifetime-data"></a>Data o životním cyklu
 
-Garbage collector v rozhraní .NET Framework spravuje přidělování a uvolňování paměti pro vaši aplikaci. Za účelem optimalizace výkonu systému uvolňování spravovaná halda je rozdělené do tří generací: 0, 1 a 2. Uvolňování paměti Spusťte časové ukládá nové objekty v 0. generace. Objekty, které zůstanou platné i po kolekce jsou povýší a uložené v generace 1 a 2.
+Uvolňování paměti rozhraní .NET Framework spravuje přidělování a uvolňování paměti pro vaši aplikaci. Za účelem optimalizace výkonu systému uvolňování paměti spravované haldy rozdělen na tři generace: 0, 1 a 2. Doba běhu v systému uvolňování paměti uloží nové objekty 0. generace. Objekty, které byly zachovány při kolekce jsou povýšeny a uloženy v generace 1 a 2.
 
-Uvolňování paměti získá podle rušení přidělení celou generování objektů. Doba života objektu zobrazení pro objekty, které PROFILOVANÉHO aplikace vytvořena, zobrazí počet a velikost objekty a generování, když se uvolní.
+Získá systém uvolňování paměti podle rušení přidělení celé generace objektů. Pro objekty, které profilovaná aplikace vytvořena zobrazení doba života objektu zobrazí počet a velikost objektů a jeho generaci při jejich převzetí.

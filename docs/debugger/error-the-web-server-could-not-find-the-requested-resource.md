@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Webový Server nelze najít požadovaný prostředek | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Chyba: Webový Server nenalezl požadovaný prostředek | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8769c84237d877f02b7c9d3d02c6391f9e955ff3
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 798e0892fc78b4ff8f8eb8ed03ee788e4f8f5b25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866540"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Chyba: Webový server nenalezl požadovaný prostředek.
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Chyba: Webový Server nenalezl požadovaný prostředek
 Kvůli požadavky na zabezpečení služby IIS vrátilo Obecná chyba.  
 
 Jednou z možných příčin je konfigurace zabezpečení serveru. Služba IIS 6.0 a starší verze umožňuje aplikace doplňku, označované jako URLScan, filtrujte požadavky podezřelé nebo poškozený. Služba IIS 7.0 má integrované filtrování požadavků k tomuto účelu. V obou případech příliš omezující požadavek filtrování můžete zabránit sady Visual Studio ladění serveru.  
@@ -35,4 +33,4 @@ Existuje mnoho další možné příčiny této chyby. Některé nejčastější
  Další informace o řešení potíží s IIS najdete v tématu [správu služby IIS a správu](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Viz také  
- [Chyba: Webový server byl uzamčen a blokuje příkaz DEBUG.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+ [Chyba: Webový Server byl uzamčen a blokuje příkaz DEBUG.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

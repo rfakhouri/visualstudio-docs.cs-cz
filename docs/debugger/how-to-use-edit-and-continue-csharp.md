@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: použití operace upravit a pokračovat (C#) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití operace upravit a pokračovat (C#) | Dokumentace Microsoftu'
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861965"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Postupy: Použití operace Upravit a pokračovat (C#)
 S upravit a pokračovat můžete provést a použít změny kódu v režimu pozastavení během ladění, bez nutnosti zastavit a restartovat ladicí relaci.  

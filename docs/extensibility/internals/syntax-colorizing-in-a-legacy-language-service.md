@@ -1,9 +1,6 @@
 ---
-title: Syntaxe barevné ve službě jazyk starší | Microsoft Docs
-ms.custom: ''
+title: Barevné zvýrazňování syntaxe ve službě starší verze jazyka | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
@@ -16,44 +13,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d82a85958fd979a3d9d44375656b08356ef09d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865021"
 ---
-# <a name="syntax-colorizing-in-a-legacy-language-service"></a>Syntaxe barevné ve službě jazyk starší verze
-Zabarvení syntaxe je funkce, která způsobí, že různé prvky programovací jazyk, který se má zobrazit ve zdrojovém souboru v jiné barvy a styly. Chcete-li tuto funkci podporovat, budete muset zadat analyzátor nebo skener, který můžete identifikovat typy lexikální elementy nebo tokenů v souboru. Mnoho jazyků existenci klíčová slova, oddělovače (například závorkách nebo složené závorky) a komentáře barevné je různými způsoby.  
+# <a name="syntax-colorizing-in-a-legacy-language-service"></a>Barevné zvýrazňování syntaxe ve službě starší verze jazyka
+Barevné zvýrazňování syntaxe je funkce, která způsobí, že různé prvky programovací jazyk, který se má zobrazit ve zdrojovém souboru v různé barvy a styly. Chcete-li tuto funkci podporují, budete muset zadat analyzátor a skener, který může identifikovat typy Lexikální prvky nebo tokenů v souboru. Řadu jiných jazyků rozlišit klíčová slova, oddělovače (jako je například kulatých závorek nebo složených závorek) a komentáře podle jejich barevné zvýrazňování různými způsoby.  
   
- Starší verze jazyka služby jsou implementovány jako součást VSPackage, ale novější způsob implementace funkce služby jazyk je použití MEF rozšíření. Další informace naleznete v tématu [rozšíření pro Editor a služby, jazyk](../../extensibility/extending-the-editor-and-language-services.md).  
+ Služby starší verze jazyka jsou implementovány jako součást sady VSPackage, ale novější způsob implementace funkce služba jazyka je pro použití rozšíření MEF. Další informace najdete v tématu [rozšíření pro Editor a jazykových služeb](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Doporučujeme vám, že začnete používat co nejdříve editoru nové rozhraní API. Tím zvýšit výkon služby jazyk a umožňují využívat výhod nových funkcí editoru.  
+>  Doporučujeme vám, že začnete používat nový editor API co nejdříve. Tím vylepšíme výkonu vaší služby jazyka a umožňují využívat nové funkce editoru.  
   
 ## <a name="implementation"></a>Implementace  
- Pro podporu zabarvení, zahrnuje rozhraní spravované balíčku (MPF) <xref:Microsoft.VisualStudio.Package.Colorizer> třídy, které implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní. Tato třída komunikuje <xref:Microsoft.VisualStudio.Package.IScanner> k určení tokenu a barvy. Další informace o skenery najdete v tématu [analyzátoru služby starší verze jazyka a skener](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). <xref:Microsoft.VisualStudio.Package.Colorizer> Třída pak označí každý znak tokenu s informacemi, barvu a vrátí tyto informace do editoru zobrazení zdrojového souboru.  
+ Pro podporu zabarvení, zahrnuje rozhraní spravovaného balíčku (MPF) <xref:Microsoft.VisualStudio.Package.Colorizer> třídy, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> rozhraní. Tato třída komunikuje <xref:Microsoft.VisualStudio.Package.IScanner> k určení tokenu a barvy. Další informace o skenery, naleznete v tématu [starší verze jazyka analyzátor a skener služby](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). <xref:Microsoft.VisualStudio.Package.Colorizer> Třídy pak označí každý znak token s informace o barvě a vrátí tyto informace do editoru zobrazení zdrojového souboru.  
   
- Vrácené do editoru informace barva je index do colorable položek seznamu. Každá položka colorable určuje hodnoty barvy a sadu atributů písma, například tučné písmo nebo přeškrtnutí. Editor poskytuje sadu výchozí colorable položky, které můžete použít jazyk služby. Všechny, které musíte udělat je, určete index odpovídající barvu pro každý typ tokenu. Můžete však poskytují sadu vlastní colorable položky a indexy, které zadáte pro tokeny a odkazovat na vlastní seznam colorable položek místo na výchozím seznamu. Je nutné také nastavit `RequestStockColors` položky registru na hodnotu 0 (nebo nezadávejte `RequestStockColors` položku na všechny) pro podporu vlastních barev. Můžete nastavit tuto položku registru s s názvem parametr, který se <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> vlastní atribut. Další informace o registraci jazykové služby a nastavení jeho možností najdete v tématu [registrace služby jazyk starší](../../extensibility/internals/registering-a-legacy-language-service1.md).  
+ Informace o barvě vrátit do editoru je index do seznamu, které lze zabarvit položek. Které lze zabarvit položky určuje hodnotu barvy a sadu atributů písma, jako například tučné písmo nebo přeškrtnutí. V editoru poskytuje sadu výchozích které lze zabarvit položek, které můžou používat vaše služba jazyka. Všechno, co je potřeba je zadat index odpovídající barev pro každý typ tokenu. Můžete však poskytnout sadu vlastní, které lze zabarvit položky a indexy, které zadáte pro tokeny a odkazují na vlastní seznam položek, které lze zabarvit namísto výchozího seznamu. Musíte taky nastavit `RequestStockColors` záznam v registru na hodnotu 0 (nebo nezadávejte `RequestStockColors` položky ve všech) pro podporu vlastních barev. Můžete nastavit tuto položku registru s pojmenovaným parametrem k <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> uživatelský atribut. Další informace o registraci služby jazyka a jeho možnosti nastavení najdete v tématu [registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md).  
   
-## <a name="custom-colorable-items"></a>Vlastní Colorable položky  
- K poskytování vlastních položek colorable, je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> a <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodu <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. První metoda vrátí počet vlastní colorable položek, které podporuje služba jazyka a druhý získá vlastní colorable položky podle indexu. Můžete vytvořit výchozí seznam vlastní colorable položky. V konstruktoru služby jazyk všechny, které je potřeba je zadat každou colorable položku s názvem. Visual Studio automaticky zpracuje tento případ, které si uživatel vybere jinou sadu colorable položky. Tento název se zobrazí v **písma a barev** stránka vlastností na **možnosti** dialogové okno (k dispozici ze sady Visual Studio **nástroje** nabídky) a tento název určuje, které Barva uživatel má přepsat. Volby uživatele jsou uloženy v mezipaměti v registru a přístup podle názvu barvy. **Písma a barev** stránka vlastností jsou uvedeny všechny názvy barev v abecedním pořadí, můžete seskupit vlastních barev tak, že před název každé barvy nahraďte názvem jazyk; například "**TestLanguage - komentář**"a"**TestLanguage – klíčové slovo**". Nebo můžete seskupit colorable položek podle typu "**komentář (TestLanguage)**"a"**– klíčové slovo (TestLanguage)**". Seskupení podle názvu jazyk je upřednostňovaný.  
+## <a name="custom-colorable-items"></a>Vlastní položky, které lze zabarvit  
+ Chcete-li zadat vlastní které lze zabarvit položek, je nutné přepsat <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> a <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodu na <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. První metoda vrátí počet vlastních které lze zabarvit položek, které podporuje služba jazyka a druhá získá vlastní které lze zabarvit položky podle indexu. Vytvoříte výchozí seznam položek, které lze zabarvit vlastní. V konstruktoru služby jazyka vše, co je potřeba je zadat každou které lze zabarvit položku s názvem. Visual Studio automaticky zpracovává případ, které si uživatel vybere jinou sadu položek, které lze zabarvit. Tento název se zobrazí v **písma a barvy** stránku vlastností na **možnosti** dialogové okno (k dispozici v sadě Visual Studio **nástroje** nabídky) a tento název určuje, které Barva uživatele přepsal. Možnosti uživatele jsou uloženy v mezipaměti v registru a přistupuje název barvy. **Písma a barvy** stránku vlastností jsou uvedeny všechny názvy barev v abecedním pořadí, tak můžete seskupit vlastních barev před každý název barvy s vaším jménem jazyk; například "**TestLanguage - Comment**"a"**TestLanguage – klíčové slovo**". Nebo můžete seskupit podle typu, které lze zabarvit položky "**komentář (TestLanguage)**"a"**– klíčové slovo (TestLanguage)**". Seskupení podle názvu jazyka je upřednostňována.  
   
 > [!CAUTION]
->  Důrazně doporučujeme zahrnout název jazyka do název colorable položky předejdete kolizí se stávajícími názvy colorable položky.  
+>  Důrazně doporučujeme zahrnout název jazyka název které lze zabarvit položky pro zabránění kolizím s existující názvy, které lze zabarvit položky.  
   
 > [!NOTE]
->  Pokud změníte název jednoho z vaší barvy během vývoje, je nutné obnovit mezipaměti vytvořený při prvním vaší barvy měla přístup k sadě Visual Studio. To lze provést tak, že spustíte **resetovat experimentální Hive** příkazu v nabídce programu Visual Studio SDK.  
+>  Pokud změníte název jedné z vašich barvy během vývoje, je nutné obnovit mezipaměti, která sadě Visual Studio vytvoří při prvním, které používaly barev. Můžete tak učinit spuštěním **resetovat experimentální Hive** z nabídky aplikace Visual Studio SDK.  
   
- Všimněte si, že se první položky v seznamu položek colorable nikdy odkazuje. Visual Studio poskytuje vždy výchozí text barvy a atributy pro tuto položku. Nejjednodušším způsobem práci s to je zadat položku colorable zástupný text jako první položka.  
+ Všimněte si, že první položka v seznamu položek, které lze zabarvit nikdy odkazován. Visual Studio vždy poskytuje výchozí barvy textu a atributy pro danou položku. Nejjednodušší způsob řešení problémů s tím je zadat položku které lze zabarvit zástupný text jako první položku.  
   
-### <a name="high-color-colorable-items"></a>Vysoká barva Colorable položky  
- Colorable položek může také podporovat – hodnoty barev 24bitový nebo vysokou prostřednictvím <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní. Sady MPF <xref:Microsoft.VisualStudio.Package.ColorableItem> třídy podporuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní a 24bitové barvy se zadaným v konstruktoru společně s normální barvy. Najdete v článku <xref:Microsoft.VisualStudio.Package.ColorableItem> třída další podrobnosti. Následující příklad ukazuje, jak nastavit barvy 24bitový klíčová slova a komentáře. Barvy 24bitový se používají při 24bitové barvy se podporuje na ploše uživatele; barvy běžného textu, jinak se používají.  
+### <a name="high-color-colorable-items"></a>High Color, které lze zabarvit položky  
+ Které lze zabarvit položek může také podporovat 24-bit nebo vysokou barevných prostřednictvím <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní. MPF <xref:Microsoft.VisualStudio.Package.ColorableItem> třídy podporuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní a barvy 24-bit jsou uvedeny v konstruktoru, společně s normální barvy. Zobrazit <xref:Microsoft.VisualStudio.Package.ColorableItem> třídy pro další podrobnosti. Následující příklad ukazuje, jak nastavit 24-bit barvy pro klíčová slova a komentáře. Barvy 24-bit se používají při 24-bit barva se podporuje na ploše uživatele; v opačném případě se používají normální text barvy.  
   
- Mějte na paměti, že jedná se o výchozí barvy pro váš jazyk; uživatele můžete změnit tyto barvy na chtějí mít.  
+ Nezapomeňte, že jde o výchozí barvy pro váš jazyk; Uživatel může změnit tyto barvy na cokoli, co chtějí.  
   
 ### <a name="example"></a>Příklad  
- Tento příklad ukazuje jeden ze způsobů deklarace a naplnit pole vlastní colorable položky pomocí <xref:Microsoft.VisualStudio.Package.ColorableItem> třídy. Tento příklad nastaví barvy – klíčové slovo a komentář pomocí 24bitové barvy.  
+ Tento příklad ukazuje jeden způsob, jak deklarovat a naplnit pole vlastní které lze zabarvit položek pomocí <xref:Microsoft.VisualStudio.Package.ColorableItem> třídy. V tomto příkladu nastaví barvy – klíčové slovo a komentáře pomocí 24 bitů barev.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -97,17 +94,17 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="the-colorizer-class-and-the-scanner"></a>Třída Colorizer a skeneru  
- Základní <xref:Microsoft.VisualStudio.Package.LanguageService> třída má <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> metoda této instantiantes <xref:Microsoft.VisualStudio.Package.Colorizer> třídy. Skener, která je vrácena z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metoda je předán <xref:Microsoft.VisualStudio.Package.Colorizer> konstruktoru třídy.  
+## <a name="the-colorizer-class-and-the-scanner"></a>Třída Colorizer a skener  
+ Základní <xref:Microsoft.VisualStudio.Package.LanguageService> třída nemá <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> metoda této instantiantes <xref:Microsoft.VisualStudio.Package.Colorizer> třídy. Skener, která je vrácena z <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metoda předána <xref:Microsoft.VisualStudio.Package.Colorizer> konstruktoru třídy.  
   
- Musí implementovat <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metoda ve vaší vlastní verzi <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. <xref:Microsoft.VisualStudio.Package.Colorizer> Třída používá skeneru získat všechny informace o tokenu barev.  
+ Je nutné implementovat <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metodu ve vaší vlastní verzi <xref:Microsoft.VisualStudio.Package.LanguageService> třídy. <xref:Microsoft.VisualStudio.Package.Colorizer> Třídy pomocí čtečky získat všechny informace o tokenu barvě.  
   
- Skeneru potřebuje k naplnění <xref:Microsoft.VisualStudio.Package.TokenInfo> struktury pro každý token ho najde. Tato struktura obsahuje informace, jako například zabírá rozpětí token, index barev, které chcete použít, jaký typ je token a tokenu aktivačních událostí (viz <xref:Microsoft.VisualStudio.Package.TokenTriggers>). Pouze index rozpětí a barvu jsou potřebné pro zabarvení pomocí <xref:Microsoft.VisualStudio.Package.Colorizer> třídy.  
+ Skener potřebuje k vyplnění <xref:Microsoft.VisualStudio.Package.TokenInfo> strukturu pro každý token ho najde. Tato struktura obsahuje informace, jako například zabírá rozsah tokenu, index barev, které chcete použít, jaký typ je tokenu a tokenu aktivační události (viz <xref:Microsoft.VisualStudio.Package.TokenTriggers>). Zabarvení podle, jsou potřeba pouze index rozpětí a barvu <xref:Microsoft.VisualStudio.Package.Colorizer> třídy.  
   
- Index barev uložené v <xref:Microsoft.VisualStudio.Package.TokenInfo> struktura je obvykle hodnotu z <xref:Microsoft.VisualStudio.Package.TokenColor> výčtu, který poskytuje řadu s názvem indexy odpovídající různé jazykové elementy, jako jsou klíčová slova a operátory. Pokud své vlastní colorable položky seznamu odpovídá položky uvedené v <xref:Microsoft.VisualStudio.Package.TokenColor> výčet a pak můžete jednoduše použít výčtu jako barvu pro každý token. Pokud máte další colorable položky nebo nechcete použít stávající hodnoty v tomto pořadí, můžete uspořádat vlastní colorable položek seznamu podle svých potřeb a vrátíte se do tohoto seznamu, odpovídající index. Jenom nezapomeňte přetypovat index <xref:Microsoft.VisualStudio.Package.TokenColor> při ukládání do <xref:Microsoft.VisualStudio.Package.TokenInfo> struktury; [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] vidí pouze index.  
+ Index barev uložené v <xref:Microsoft.VisualStudio.Package.TokenInfo> struktura je obvykle hodnotu z <xref:Microsoft.VisualStudio.Package.TokenColor> výčet, který nabízí celou řadu pojmenovaných indexy, které odpovídají různé prvky jazyka, jako jsou klíčová slova a operátory. Pokud vaše vlastní které lze zabarvit položky seznamu shody položky uvedené v <xref:Microsoft.VisualStudio.Package.TokenColor> výčet a pak můžete pouze použijte výčet jako barvu pro každý token. Pokud máte další které lze zabarvit položky nebo nechcete použít stávající hodnoty v tomto pořadí, je uspořádat vlastní které lze zabarvit položek seznamu podle svých potřeb a vrátí odpovídající index do tohoto seznamu. Jenom nezapomeňte přetypování index <xref:Microsoft.VisualStudio.Package.TokenColor> při ukládání v <xref:Microsoft.VisualStudio.Package.TokenInfo> struktury; [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] vidí pouze index.  
   
 ### <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak může skeneru identifikovat tři typy tokenů: identifikátory (všechno, co není číslo ani interpunkce), interpunkce a čísla. V tomto příkladu je pouze pro ilustraci a nepředstavuje komplexní implementace analyzátor a skener. Předpokládá, že je `Lexer` třídy s `GetNextToken()` metodu, která vrátí řetězec.  
+ Následující příklad ukazuje, jak skener může identifikovat tři typy tokenů: identifikátory (cokoli, co se nejedná o číslo ani interpunkční znaménka), interpunkce a čísla. V tomto příkladu je pouze pro ilustraci a nepředstavuje komplexní implementace analyzátor a skener. Předpokládá, že je `Lexer` třídy s `GetNextToken()` metodu, která vrátí hodnotu typu string.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -149,5 +146,5 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Viz také  
  [Funkce služby starší verze jazyka](../../extensibility/internals/legacy-language-service-features1.md)   
- [Analyzátor jazyka starší verze služby a skener](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
- [Registrace služby jazyk starší verze](../../extensibility/internals/registering-a-legacy-language-service1.md)
+ [Starší verze jazyka analyzátor a skener služby](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
+ [Registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md)

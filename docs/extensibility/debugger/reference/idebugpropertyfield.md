@@ -1,9 +1,6 @@
 ---
-title: IDebugPropertyField | Microsoft Docs
-ms.custom: ''
+title: IDebugPropertyField | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b876b19d5242bb90a3d13f255f9245fe14f93a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1489e8ef7bf41274806d1d6b1b134b54268457cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874203"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 Toto rozhraní poskytuje funkce, které umožňují načtení a nastavení vlastnosti.  
@@ -28,33 +25,33 @@ Toto rozhraní poskytuje funkce, které umožňují načtení a nastavení vlast
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní implementuje poskytovatele symbol pro stejný objekt, který implementuje [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Toto rozhraní je specializace, který podporuje koncept vlastnosti třídy.  
+ Poskytovatel symbolů implementuje na stejný objekt, který implementuje toto rozhraní [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Toto rozhraní je jako specializaci té, která podporuje koncept vlastnosti třídy.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Použití [QueryInterface](/cpp/atl/queryinterface) získat toto rozhraní z [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní, pokud [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metoda vrátí `FIELD_KIND_PROP`.  
+ Použití [QueryInterface](/cpp/atl/queryinterface) získat z tohoto rozhraní [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní, pokud [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) vrátí metoda `FIELD_KIND_PROP`.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  Kromě metod na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) a [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) rozhraní, toto rozhraní implementuje následujících metod:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Získá metody, která se získá vlastnost.|  
+|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Získá metody, která získá vlastnost.|  
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Získá metody, která nastaví vlastnost.|  
   
 ## <a name="remarks"></a>Poznámky  
- Vlastnost je koncept spravovaného kódu a představuje metodu, která se považuje za proměnné. Vlastnosti nejsou k dispozici v nespravované C++.  
+ Vlastnost je koncept spravovaného kódu a představuje metodu, která je zpracovávána jako proměnnou. Vlastnosti v nespravované C++ neexistují.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Zprostředkovatel rozhraní symbol](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Rozhraní poskytovatele symbolů](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

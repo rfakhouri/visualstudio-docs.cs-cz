@@ -2,7 +2,6 @@
 title: Převedení metody Get na vlastnost a převod vlastnosti na metodu Get
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.devlang: csharp
 author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0af901ed6a51b962b7b2999b04909136bbb0f3e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861144"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Převedení metody Get na vlastnost / vlastnost převést na refaktoringy Get – metoda
 
@@ -29,9 +28,9 @@ Tyto refaktoringy platí pro:
 
 ## <a name="convert-get-method-to-property"></a>Převedení metody Get na vlastnost
 
-**Co:** umožňuje převést metody Get na vlastnosti (a volitelně metodu Set).
+**Co:** Umožňuje převést metody Get na vlastnosti (a volitelně metodu Set).
 
-**Kdy:** měl odpovídající metodu Get, který neobsahuje žádnou logiku.
+**Kdy:** Máte metodu Get, který neobsahuje žádnou logiku.
 
 ### <a name="how-to"></a>Postupy
 
@@ -70,9 +69,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Převod vlastnosti na metodu Get
 
-**Co:** umožňuje převod vlastnosti na metodu Get
+**Co:** Umožňuje převod vlastnosti na metodu Get
 
-**Kdy:** mít zadanou vlastnost, která zahrnuje více než okamžitě nastavení a získání hodnoty
+**Kdy:** Má-li vlastnost, která zahrnuje více než okamžitě nastavení a získání hodnoty
 
 ### <a name="how-to"></a>Postupy
 

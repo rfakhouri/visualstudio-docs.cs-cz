@@ -2,7 +2,6 @@
 title: Aplikace na stránce vlastností projektu jazyka Visual Basic
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: eafc6822477f709216f1424d9b4704e6b7acb413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859039"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
 
@@ -66,7 +65,7 @@ Výchozí hodnota se shoduje s cílovou architekturu, která jste zadali v **nov
 > [!NOTE]
 > Požadované balíčky, které jsou uvedeny v [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md) se nastaví automaticky, když otevřete dialogové okno poprvé. Pokud později změníte cílový rámec projektu, je nutné zadat předpoklady ručně, aby odpovídaly novému cílovému rozhraní.
 
-Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [Visual Studio přehled multiplatformního zacílení](../../ide/visual-studio-multi-targeting-overview.md).
+Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) a [cílení na více verzí sady Visual Studio přehled](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Typ aplikace
 

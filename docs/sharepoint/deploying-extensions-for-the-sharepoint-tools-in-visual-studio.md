@@ -1,9 +1,6 @@
 ---
 title: Nasazování rozšíření pro nástroje služby SharePoint v sadě Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880819"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio
 
@@ -52,11 +49,11 @@ Ve výchozím nastavení generovat jenom projekty VSIX balíčků VSIX, není se
 
 Můžete také pracovat i s další projekty pro některé typy rozšíření:
 
--   Projekt knihovny tříd, který implementuje všechny příkazy služby SharePoint, které jsou používány rozšíření. Postup, který ukazuje tento scénář, najdete v části [návod: rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+-   Projekt knihovny tříd, který implementuje všechny příkazy služby SharePoint, které jsou používány rozšíření. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Šabloně položky nebo šablony projektu projekt, který vytvoří šablonu položky nebo šablony projektu, pokud vaše rozšíření definuje nový typ položky projektu služby SharePoint. Postup, který ukazuje tento scénář, najdete v části [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+-   Šabloně položky nebo šablony projektu projekt, který vytvoří šablonu položky nebo šablony projektu, pokud vaše rozšíření definuje nový typ položky projektu služby SharePoint. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Projekt knihovny tříd, který implementuje vlastního průvodce šablony položky nebo šablony projektu, pokud vaše rozšíření obsahuje šablony. Postup, který ukazuje tento scénář, najdete v části [návod: vytvoření vlastní akce položky projektu pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+-   Projekt knihovny tříd, který implementuje vlastního průvodce šablony položky nebo šablony projektu, pokud vaše rozšíření obsahuje šablony. Postup, který ukazuje tento scénář, najdete v části [názorný postup: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Pokud zahrnete všechny projekty ve stejném řešení sady Visual Studio, můžete upravit soubor source.extension.vsixmanifest v projektu VSIX pro zahrnutí výstupu sestavení projekty knihovny tříd.
 

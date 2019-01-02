@@ -1,8 +1,6 @@
 ---
 title: ClickOnce a kód Authenticode | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fe73ba2ef02ecf6f9eb75663650862fd78fea1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859144"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce a kód Authenticode
 *Authenticode* je technologie společnosti Microsoft, které používá standardní kryptografie pro podepsání kódu aplikace s digitálními certifikáty, které ověření pravosti vydavatele. Pomocí technologie Authenticode pro nasazení aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] snižuje riziko trojského koně. Trojský kůň, není virus nebo jiný škodlivý program, který zkresluje skutečnost třetí strana jako legitimní program pocházejí z důvěryhodného zdroje a zavedené. Podepisování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí digitálního certifikátu je volitelný krok pro ověření, že se sestaveními a soubory nebylo manipulováno.  
@@ -55,7 +53,7 @@ ms.locfileid: "49907440"
 ### <a name="timestamps"></a>Časová razítka  
  Certifikáty používané k podepisování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikací vyprší po určité době obvykle dvanáct měsíců. Aby bylo možné zbavují uživatele nutnosti provádět neustále znovu podepisovat aplikace pomocí nové certifikáty [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] podporuje časové razítko. Když je aplikace podepsána s časovým razítkem, svůj certifikát bude přijata i po vypršení platnosti, za předpokladu, že je platné časové razítko. Díky tomu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] s certifikáty s vypršenou platností, ale platná časová razítka ke stažení a spuštění aplikace. Umožňuje také nainstalované aplikace s certifikáty s vypršenou platností nadále stahovat a instalovat aktualizace.  
   
- Zahrnout časové razítko aplikační server, musí být k dispozici serveru časového razítka. Informace o tom, jak vybrat časového razítka serveru najdete v tématu [postupy: přihlášení aplikace a manifesty nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Zahrnout časové razítko aplikační server, musí být k dispozici serveru časového razítka. Informace o tom, jak vybrat časového razítka serveru najdete v tématu [jak: Podepsání manifestů aplikace a nasazení](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="update-expired-certificates"></a>Aktualizujte certifikáty s vypršenou platností  
  V dřívějších verzích rozhraní .NET Framework aktualizace prošlou platností certifikátu aplikace může způsobit, že aplikace přestane fungovat. Chcete-li tento problém vyřešit, použijte jednu z následujících metod:  

@@ -1,9 +1,6 @@
 ---
 title: InfoPath – řešení
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864944"
 ---
 # <a name="infopath-solutions"></a>InfoPath – řešení
   Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro Microsoft Office InfoPath 2013 a Infopathu 2010. InfoPath není k dispozici v Office 2016.  
@@ -64,11 +61,9 @@ ms.locfileid: "50670855"
  [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)   
  [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)   
  [InfoPath 2010 ve vývoji Office](http://go.microsoft.com/fwlink/?LinkId=199012)  
-  
-  

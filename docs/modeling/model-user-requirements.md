@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4791566d3c37517c3c93e62e371bf4cbc9fc6604
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867011"
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 
-Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživatelů ve vytvoření diagramů o svých aktivit a části systému hraje v usnadňuje dosáhli svých cílů. Model požadavků je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřebám uživatelů. Video ukázku naleznete v tématu: [modelování obchodní domény](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
+Visual Studio vám pomáhá pochopit, diskutovat a sdělovat požadavky uživatelů ve vytvoření diagramů o svých aktivit a části systému hraje v usnadňuje dosáhli svých cílů. Model požadavků je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřebám uživatelů. Video ukázku naleznete v tématu: [Modelování obchodní domény](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
 Které verze sady Visual Studio podporovat každý typ modelu najdete v tématu [podporované verze pro nástroje architektury a modelování](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -46,11 +45,11 @@ Požadavky na model poskytuje největší výhody, pokud jej používat k aktivn
 > [!NOTE]
 > V těchto tématech "systém" znamená, že systém nebo aplikace, kterou vyvíjíte. Rozsáhlá kolekce řadu softwarových a hardwarových součástí; může být nebo si jednu aplikaci; nebo softwarová součást uvnitř větší systému. V každém případě model požadavků popisuje chování, které je viditelné z vnějšku systému prostřednictvím uživatelského rozhraní nebo rozhraní API.
 
-## <a name="common-tasks"></a>Běžné úlohy
+## <a name="common-tasks"></a>Běžné úkoly
 
 Můžete vytvořit několik různých zobrazení podle požadavků uživatelů.  Každé zobrazení obsahuje konkrétního typu informací.  Při vytváření těchto zobrazení je nejvhodnější často přesunout na další. Můžete spustit z jakékoli zobrazení.
 
-|Diagram nebo dokumentu|Co se popisuje v modelu požadavky|Oddíl|
+|Diagram nebo dokumentu|Co se popisuje v modelu požadavky|Sekce|
 |-|-|-|
 |Třída koncepční diagram|Glosář typů, které se používají k popisu požadavků; typy viditelný na rozhraní v systému.||
 |Další dokumenty nebo pracovních položek|Kritéria výkonu, zabezpečení, využitelnost a spolehlivost.|[Popisující kvality požadavků na služby](#QoSRequirements)|

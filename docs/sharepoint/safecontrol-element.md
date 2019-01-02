@@ -1,9 +1,6 @@
 ---
-title: SafeControl – Element | Microsoft Docs
-ms.custom: ''
+title: SafeControl – Element | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aded7f246d961bd3f956611ff092dfdcf8b68564
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864135"
 ---
 # <a name="safecontrol-element"></a>SafeControl – element
-  Představuje prvek ASPX nebo webovou část, která je označeny jako bezpečné pro všechny uživatele pro přístup na všechny stránky ASPX na webu služby SharePoint.  
+  Představuje prvek ASPX nebo webovou část, která je označena jako bezpečná pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,12 +40,12 @@ ms.locfileid: "37120172"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**Assembly**|Volitelné **xs:string** atribut.<br /><br /> Název sestavení, ve kterém je definovaný prvek ASPX nebo webové části. Ve výchozím nastavení používá tento atribut **$SharePoint.Project.AssemblyFullName$** nahraditelný parametr pro název sestavení. Další informace najdete v tématu [nahraditelné parametry](../sharepoint/replaceable-parameters.md).|  
-|**IsSafe**|Volitelné **xs:boolean** atribut.<br /><br /> Určuje, jestli je zabezpečený nedůvěryhodným uživatelům přístup k řízení ASPX nebo webové části.|  
-|**IsSafeAgainstScript**|Volitelné **xs:boolean** atribut.<br /><br /> Určuje, zda nedůvěryhodným uživatelům můžete zobrazit nebo upravit vlastnosti ASPX řízení nebo webové části.|  
-|**Jméno**|Volitelné **xs:string** atribut.<br /><br /> Název této položky bezpečné ovládací prvek v kolekci.|  
-|**Namespace**|Volitelné **xs:string** atribut.<br /><br /> Obor názvů řízení ASPX nebo webové části.|  
-|**typeName**|Volitelné **xs:string** atribut.<br /><br /> Název typu ovládacího prvku ASPX nebo webové části.|  
+|**Assembly**|Volitelné **xs:string** atribut.<br /><br /> Název sestavení, ve kterém je definována ASPX ovládací prvek nebo webovou část. Ve výchozím nastavení, používá tento atribut **$SharePoint.Project.AssemblyFullName$** proměnnou pro název sestavení. Další informace najdete v tématu [nahraditelné parametry](../sharepoint/replaceable-parameters.md).|  
+|**IsSafe**|Volitelné **xs:boolean** atribut.<br /><br /> Určuje, zda ovládací prvek ASPX nebo webovou část nedůvěryhodným uživatelům přístup k zabezpečené.|  
+|**IsSafeAgainstScript**|Volitelné **xs:boolean** atribut.<br /><br /> Určuje, zda nedůvěryhodným uživatelům můžete zobrazit nebo upravit vlastnosti ovládacího prvku ASPX nebo webovou část.|  
+|**Název**|Volitelné **xs:string** atribut.<br /><br /> Název této položky bezpečný ovládací prvek v kolekci.|  
+|**Namespace**|Volitelné **xs:string** atribut.<br /><br /> Obor názvů ovládacího prvku ASPX nebo webovou část.|  
+|**Název typu**|Volitelné **xs:string** atribut.<br /><br /> Název typu ovládacího prvku ASPX nebo webovou část.|  
   
 ### <a name="child-elements"></a>Podřízené prvky
  Žádné  
@@ -57,7 +54,7 @@ ms.locfileid: "37120172"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[SafeControls –](../sharepoint/safecontrols-element.md)|Představuje kolekci ovládacích prvků ASPX a webových částí, které jsou označeny jako bezpečné pro všechny uživatele pro přístup na všechny stránky ASPX na webu služby SharePoint.|  
+|[SafeControls –](../sharepoint/safecontrols-element.md)|Představuje kolekci ovládacích prvcích ASPX a webových částech, které jsou označeny jako bezpečné pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.|  
   
 ## <a name="remarks"></a>Poznámky  
  Další informace o bezpečné ovládací prvky najdete v tématu [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
@@ -66,12 +63,11 @@ ms.locfileid: "37120172"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
-|**Název schématu**|Schéma položky projektu SharePoint|  
-|**Ověření souboru**|ProjectItemModelSchema.xsd|  
-|**Nesmí být prázdné**|Ne|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Název schématu**|Schéma položky projektu služby SharePoint|  
+|**Soubor ověření**|ProjectItemModelSchema.xsd|  
+|**Může být prázdný**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Zadejte informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
+ [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  

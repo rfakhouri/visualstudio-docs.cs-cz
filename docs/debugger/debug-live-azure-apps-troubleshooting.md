@@ -2,7 +2,6 @@
 title: Řešení potíží při ladění snímků | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/07/2017
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -12,18 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880660"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro ladění snímků v sadě Visual Studio
 
 Pokud problém nelze vyřešit pomocí postupu popsaného v tomto článku, obraťte se na snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problém: Snímkovacího bodu není možné zapnout
+## <a name="issue-snappoint-does-not-turn-on"></a>Problém: Snímkovací bod nezapne
 
 Pokud se zobrazí výstražná ikona ![snímkovací bod výstražná ikona](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "snímkovací bod výstražná ikona") s vaší snímkovacích bodů namísto ikonu regulární snímkovací bod, pak snímkovací bod není zapnuté.
 
@@ -33,7 +32,7 @@ Proveďte tyto kroky:
 
 1. Ujistěte se, že máte stejnou verzi zdrojového kódu, který byl použit k vytvoření a nasazení vaší app.isua1. Ujistěte se, že se načítají správné symbolů pro vaše nasazení. Pokud chcete to provést, podívejte se **moduly** okno při ladění snímků a ověřit soubor symbolů sloupci zobrazí soubor .pdb načtené pro modul, který ladíte. Snapshot Debugger se pokusí automaticky stáhnout a použít symbolů pro vaše nasazení.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problém: Symbolů se nenačetl při otevření snímku
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problém: Při otevření snímku se nenačtou symboly
 
 Pokud se zobrazí následující okno, symboly se nenačetl.
 
@@ -49,14 +48,14 @@ Proveďte tyto kroky:
 
 - Případně pokud vaše organizace používá server symbolů nebo sníží symboly v jinou cestu, použijte nastavení symbolu načtení správné symbolů pro vaše nasazení.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problém: nejde zobrazit možnost "Připojit Snapshot Debugger" v Průzkumníkovi cloudu
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problém: Nejde zobrazit možnost "Připojit Snapshot Debugger" v Průzkumníkovi cloudu
 
 Proveďte tyto kroky:
 
 - Ujistěte se, že je nainstalovaná komponenta Snapshot Debugger. Otevřete instalační program sady Visual Studio a zkontrolujte **Snapshot Debugger** komponenta v úloze Azure.
 - Zajistěte, aby že vaše aplikace je podporovaná. V současné době pouze technologie ASP.NET (4.6.1+) a podporují aplikace ASP.NET Core (2.0 +) nasazené do služby Azure App Services.
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problém: můžu zobrazit pouze omezené snímky v okně diagnostické nástroje
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problém: Zobrazuje pouze omezená snímky v okně diagnostické nástroje
 
 ![Omezený snímkovací bod](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "omezený snímkovací bod")
 

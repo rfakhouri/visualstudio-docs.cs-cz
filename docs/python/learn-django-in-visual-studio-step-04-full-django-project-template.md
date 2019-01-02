@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně funkcím, které poskytuje šablony webového projektu Django.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 513f42bd597bf42e0f145b1a47a889f6d28ec95c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864034"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Použití úplné šablony webového projektu Django
 
-**Předchozí krok: [doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**Předchozí krok: [Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 Teď, když jste prozkoumali základní informace o Django vytvořením aplikace na šablony "Prázdné Django webového projektu" v sadě Visual Studio, je možné snadno zjistit plnější aplikace, který je vytvořen pomocí šablony "Webového projektu Django".
 
@@ -35,7 +34,7 @@ V tomto kroku můžete nyní:
 
 Šablona také nabízí základní ověřování, který je popsaný v kroku 5.
 
-## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: vytvoření projektu ze šablony
+## <a name="step-4-1-create-a-project-from-the-template"></a>Krok 4-1: Vytvoření projektu ze šablony
 
 1. V sadě Visual Studio, přejděte na **Průzkumníka řešení**, klikněte pravým tlačítkem myši **LearningDjango** řešení vytvořené dříve v tomto kurzu a vyberte **přidat**  >   **Nový projekt**. (Případně, pokud chcete použít nové řešení, vyberte **souboru** > **nový** > **projektu** místo.)
 
@@ -87,9 +86,9 @@ Nicméně pokud chcete použít existující virtuální prostředí, postupujte
 1. V **Průzkumníka řešení**, klikněte pravým tlačítkem myši **prostředí Pythonu** uzel a vyberte možnost **přidat existující virtuální prostředí**.
 1. Vyhledejte a vyberte složku, která obsahuje virtuální prostředí a pak vyberte **OK**.
 
-## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4 – 2: pochopení zobrazení a stránky šablony vytvořené šablony projektu
+## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>Krok 4-2: Zobrazení a šablony vytvořené pomocí šablony projektu
 
-Jak zjistíte, když spustíte projekt, aplikace obsahuje tři zobrazení: Home, o programu a kontaktujte. Kód pro tato zobrazení je součástí *aplikace a zobrazení* složky. Každá funkce zobrazení jednoduše volá `django.shortcuts.render` cestou k šablonu a objekt jednoduchý slovník. Například se postará o stránku `about` funkce:
+Jak zjistíte, že se při spuštění projektu, aplikace obsahuje tři zobrazení: Domovská stránka a kontaktujte. Kód pro tato zobrazení je součástí *aplikace a zobrazení* složky. Každá funkce zobrazení jednoduše volá `django.shortcuts.render` cestou k šablonu a objekt jednoduchý slovník. Například se postará o stránku `about` funkce:
 
 ```python
 def about(request):
@@ -165,11 +164,11 @@ def about(request):
 
 V *šablony nebo aplikaci* složku je také čtvrtá stránka *login.html*, spolu s *loginpartial.html* přenese do *layout.html*pomocí `{% include %}`. Tyto soubory šablon jsou popsané v kroku 5 v ověřování.
 
-### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Otázka: Můžou {% blokovat %} a {% endblock %} odsazeny v šabloně Django stránky?
+### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>Otázka: Může {% blokovat %} a {% endblock %} odsazeny v šabloně Django stránky?
 
 Odpověď: Ano, šablony Django fungovat správně Pokud odsazení bloku značky, třeba tak, aby zarovnání v rámci jejich odpovídající nadřazené prvky. Nejsou určeny v šablonách stránky vygenerovaná šablona projektu sady Visual Studio tak, aby jasně vidíte, kde jsou umístěny.
 
-## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 4-3: vysvětlení směrování adres URL, které se vytvoří pomocí šablony
+## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>Krok 4-3: Vysvětlení směrování adres URL, které se vytvoří pomocí šablony
 
 V projektu Django *urls.py* soubor při vytváření šablony "Webového projektu Django" obsahuje následující kód:
 

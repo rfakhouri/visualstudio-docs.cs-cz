@@ -1,9 +1,6 @@
 ---
 title: Odstranění ~ SAK souborů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862811"
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění ~ SAK soubory
 Zdrojový ovládací prvek modulu Plug-in API 1.2 *~ SAK* soubory byly nahrazeny příznaky funkcí a nových funkcí, které zjišťují, zda zdroj modulu plug-in podporuje ovládací prvek *MSSCCPRJ* Souborová služba a sdílenými registracemi.  
@@ -40,9 +37,9 @@ Pro moduly plug-in, které podporují pokročilé funkce, které jsou k dispozic
  `SCC_CAP_MULTICHECKOUT`  
   
 ## <a name="new-functions"></a>Nové funkce  
- [Sccwillcreatesccfile –](../../extensibility/sccwillcreatesccfile-function.md)  
+ [SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)  
   
- [Sccismulticheckoutenabled –](../../extensibility/sccismulticheckoutenabled-function.md)  
+ [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
  Pokud více rezervace (sdílené) podporuje modul plug-in správy zdrojového kódu, pak deklaruje `SCC_CAP_MULTICHECKOUT` funkce a implementuje `SccIsMultiCheckOutEnabled` funkce. Tato funkce je volána pokaždé, když probíhá operace rezervace na kterýkoli z projektů se spravovanými zdroji.  
   

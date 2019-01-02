@@ -2,7 +2,6 @@
 title: Připojení nástroje pro měření výkonu ke spuštěným procesům
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 193a7bfeeae82147a64643871da70a72400e5054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859682"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Postupy: připojení a odpojení nástroje Sledování výkonu ke spuštěným procesům
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Postupy: Připojení nástrojů pro měření výkonu ke spuštěným procesům a jejich odpojení
 Profiler slouží k připojení nebo odpojení od spuštěného procesu pro usnadnění odběru vzorků a shromažďuje data výkonu. Tímto způsobem může Profilovat proces, pokud chcete se vyhnout, shromažďování dat o čas načtení aplikace, nebo k monitorování výkonu procesu po jeho dosažení určitý stav.  
   
 > [!NOTE]
@@ -64,6 +63,6 @@ Profiler slouží k připojení nebo odpojení od spuštěného procesu pro usna
 ## <a name="see-also"></a>Viz také:  
  [Řízení shromažďování dat](../profiling/controlling-data-collection.md)   
  [Přehled relace výkonu](../profiling/performance-session-overview.md)   
- [Postupy: spuštění a ukončení shromažďování dat o výkonu](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Postupy: Spuštění a ukončení shromažďování dat o výkonu](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilace a zabezpečení Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

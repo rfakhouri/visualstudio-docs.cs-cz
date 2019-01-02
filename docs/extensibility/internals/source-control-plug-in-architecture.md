@@ -1,9 +1,6 @@
 ---
-title: Zdrojová architektura modulu Plug-in Řízení | Microsoft Docs
-ms.custom: ''
+title: Architektura modulu Plug-in správy zdrojového | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
@@ -13,34 +10,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 498f3aeb87855a0dac5afacc1baa7e2e816375f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff2b19407ec63ea1227aba2affdad77f302dc129
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868651"
 ---
-# <a name="source-control-plug-in-architecture"></a>Modul Plug-in architektury zdroje
-Můžete přidat podporu zdroj ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) pomocí implementace a připojení modulu plug-in Správa zdrojového kódu. Prostředí IDE se připojí k modulu plug-in přes dobře definované API Plug-In zdroj řízení zdrojového kódu. Prostředí IDE zpřístupní funkcí správy zdrojového kódu pro řízení verze tím, že poskytuje uživatelské rozhraní (UI), která se skládá z panely nástrojů a příkazy nabídky. Modul plug-in správy zdroje implementuje funkce správy zdrojů.  
+# <a name="source-control-plug-in-architecture"></a>Architektura modulu plug-in správy zdrojového kódu
+Můžete přidat podporu zdrojového ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) pomocí implementace a připojení modulu plug-in správy zdrojového kódu. Rozhraní IDE se připojí k prostřednictvím dobře definovaných rozhraní API modulu Plug-In ovládací prvek zdroj modulu plug-in správy zdrojového kódu. Rozhraní IDE poskytuje funkce správy zdrojového kódu pro řízení verze tím, že poskytuje uživatelské rozhraní (UI), který se skládá z panelů nástrojů a příkazů nabídky. Modul plug-in správy zdrojového kódu implementuje funkce správy zdrojového kódu.  
   
-## <a name="source-control-plug-in-resources"></a>Modul Plug-in prostředky zdroj ovládacího prvku  
- Modul Plug-in Zdroj ovládacího prvku obsahuje materiály, které vám pomůžou vytvořit a správa verzí aplikaci připojit ke [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Modul Plug-in zdroj ovládací prvek obsahuje specifikaci rozhraní API, která musí být implementována zdrojového kódu, který je modul plug-in, takže může být integrovaná do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Obsahuje taky (napsané v jazyce C++) ukázka kódu, který implementuje na kostru zdroj ovládacího prvku modulu plug-in představujících implementace základních funkcí, které jsou kompatibilní s rozhraním API Plug-in Zdroj ovládacího prvku.  
+## <a name="source-control-plug-in-resources"></a>Modul Plug-in zdroje ovládacího prvku zdroje  
+ Modul Plug-in zdroje ovládacího prvku poskytuje prostředky umožňující vytvoření a připojení správy verzí aplikace [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí. Obsahuje specifikace rozhraní API, která se musí implementovat modul plug-in správy zdrojového kódu tak, aby ho bylo možné integrovat do modulu Plug-in zdroje ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí. Obsahuje taky ukázku kódu (napsaného v jazyce C++), který implementuje na kostru zdrojový ovládací prvek modulu plug-in představujících implementace základní funkce, které jsou kompatibilní s rozhraním API modulů Plug-in zdroje ovládacího prvku.  
   
- Specifikace rozhraní API modulu Plugin zdroj ovládacího prvku umožňuje využívat žádné systému správy zdrojů podle svého výběru, pokud vytvoříte ovládací prvek zdroje knihovny DLL s požadovanou sadu funkcí, které jsou implementované v souladu s rozhraní API ovládacího prvku Plug-in zdroje.  
+ Specifikace rozhraní API modulu Plug-in zdroje ovládacího prvku umožňuje využívat všechny systému správy zdrojového kódu podle vašeho výběru, vytváření knihovny DLL správy zdrojového kódu s požadovanou sadu funkcí, které jsou implementovány v souladu s rozhraní API modulu Plug-in zdroje ovládacího prvku.  
   
-## <a name="components"></a>Součásti  
- Zdrojový balíček adaptér ovládacího prvku v diagramu je součástí prostředí IDE, který překládá uživatele žádost o operaci správy zdrojů do volání funkce podporuje modul plug-in zdrojového kódu. K tomu dojít rozhraní IDE a Správa zdrojového kódu modul plug-in musí mít efektivní dialogu, který předává informace přepínat mezi IDE a modul plug-in. Pro toto dialogové okno proběhla obě musí kontaktovat ve stejném jazyce. Rozhraní API modulu Plugin zdroj ovládacího prvku uvedených v této dokumentaci je běžných termínů pro tento server exchange.  
+## <a name="components"></a>Komponenty  
+ Zdrojový balíček adaptér ovládacího prvku v diagramu je součástí integrovaného vývojového prostředí, který překládá uživatelského požadavku pro operaci správy zdrojových kódů do volání funkce podporuje modul plug-in správy zdrojového kódu. K tomu dojde rozhraní IDE a modulu plug-in správy zdrojového kódu musí mít platné dialogového okna, který předává informace vpřed a zpět mezi integrovaného vývojového prostředí a modulu plug-in. Pro toto dialogové okno uskutečnit musí oba mluvit stejný jazyk. Rozhraní API modulu Plug-in zdroje ovládacího prvku uvedených v této dokumentaci je běžné slovník pro tuto výměnu.  
   
- ![Zdroj Diagram architektury správy kódu](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch")  
-Diagram architektury znázorňující modulu plug-in interakce mezi VS a Správa zdrojového kódu  
+ ![Zdrojový kód Diagram architektury správy](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch")  
+Diagram architektury znázorňující interakce mezi VS a Správa zdrojového kódu modulu plug-in  
   
- Jak je znázorněno v diagram architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, které jsou označené jako VS prostředí v diagramu hostitelem pracovní projekty a související součásti, například editory a Průzkumník řešení uživatele. Zdrojový balíček ovládací adaptéru zpracovává interakci mezi IDE a modul plug-in zdrojového kódu. Zdrojový balíček ovládací adaptéru poskytuje vlastní zdrojového kódu uživatelského rozhraní. Je rozhraní nejvyšší úrovně, které uživatel komunikuje za účelem zahájení a definuje rozsah operaci správy zdrojů.  
+ Jak je znázorněno v diagramu architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, které jsou označeny jako prostředí VS v diagramu je hostitelem přidružené komponenty, například editory a Průzkumník řešení a pracovní projekty uživatele. Zdrojový ovládací prvek adaptér balíček zpracovává interakce mezi integrovaného vývojového prostředí a modulu plug-in správy zdrojového kódu. Zdrojový ovládací prvek adaptér balíček poskytuje vlastní zdrojový ovládací prvek uživatelského rozhraní. Je nejvyšší úrovně uživatelského rozhraní, které uživatel pracuje se, aby bylo možné zahájit a definuje rozsah operaci správy zdrojových kódů.  
   
- Správa zdrojového kódu modul plug-in může mít svůj vlastní uživatelské rozhraní, která se může skládat ze dvou částí, jak je znázorněno na obrázku. Pole s popiskem "Dodavatele uživatelského rozhraní" reprezentuje elementy vlastního uživatelského rozhraní, které, jako ovládací prvek zdroj modulu plug-in tvůrci, zadáte. Tyto se zobrazují přímo z modulu plug-in zdrojového kódu, když uživatel vyvolá operace pokročilé zdroj ovládacího prvku. Pole s popiskem "Pomocné rutiny uživatelského rozhraní" je sada zdroj ovládacího prvku modulu plug-in uživatelského rozhraní funkce, které jsou vyvolány nepřímo prostřednictvím rozhraní IDE. Modul plug-in správy zdroje předává zprávy týkající se uživatelského rozhraní IDE prostřednictvím speciální zpětného volání funkce poskytované rozhraní IDE. Pomocné rutiny uživatelského rozhraní usnadňuje více bezproblémovou integraci s rozhraní IDE (často prostřednictvím použitím z **Upřesnit** tlačítko) a tak poskytuje více jednotná činnost koncového uživatele.  
+ Modul plug-in správy zdrojového kódu může mít svůj vlastní uživatelské rozhraní, která se může skládat ze dvou částí, jak je znázorněno na obrázku. Pole s názvem "Dodavatel uživatelského rozhraní" představuje vlastních prvků uživatelského rozhraní, které, jako ovládací prvek modulu plug-in autora zdroj, zadáte. Když uživatel vyvolá operaci pokročilé zdrojového ovládacího prvku se zobrazí přímo pomocí modulu plug-in správy zdrojového kódu. Pole s popiskem "Uživatelské rozhraní pomocné rutiny" je sada funkcí správy zdrojového kódu modulu plug-in uživatelského rozhraní, které jsou nepřímo vyvolané prostřednictvím integrovaného vývojového prostředí. Modul plug-in správy zdrojového kódu předává zprávy související s Uživatelským prostředím IDE prostřednictvím speciální zpětného volání funkce poskytované rozhraní IDE. Pomocné rutiny uživatelského rozhraní zajišťuje bezproblémové integraci s integrovaného vývojového prostředí (často prostřednictvím použití aplikace **Upřesnit** tlačítko) a poskytne tak více jednotné prostředí koncového uživatele.  
   
- Správa zdrojového kódu modulu plug-in nelze provádět změny k [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí shell a v důsledku toho zdrojový balíček ovládací adaptéru nebo zdroj řídit uživatelského rozhraní, poskytuje rozhraní IDE. Ho musíte nastavit maximální využití flexibilitu nabízeným přes provádění různých funkcí rozhraní API modulu Plugin zdroj ovládacího prvku které přispívají k integrované možnosti pro koncového uživatele. Části referenční dokumentaci rozhraní API modulu Plugin řízení zdroj obsahuje informace pro modul plug-in funkcí některé pokročilé zdroj řízení. Modul plug-in správy zdroje zneužít tyto funkce, musí deklarovat jeho rozšířené možnosti IDE během inicializace a musí implementovat určité pokročilé funkce pro každou funkci.  
+ Modul plug-in správy zdrojového kódu nemůže provést změny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí a v důsledku toho balíček adaptéru ovládací prvek zdroje nebo zdroje ovládací prvek uživatelského rozhraní poskytované rozhraní IDE. Maximální využití flexibilitě, kterou nabízí prostřednictvím implementace různých funkcí rozhraní API modulu Plug-in zdroje ovládacího prvku, které přispívají k integrované prostředí pro koncové uživatele musí vytvořit. Informační části dokumentace k rozhraní API modulu Plug-in zdroje ovládacího prvku obsahuje informace o některé pokročilé zdroj modulu plug-in funkce ovládacího prvku. Zneužít tyto funkce, modul plug-in správy zdrojového kódu musí deklarovat své pokročilé funkce rozhraní IDE při inicializaci a musí implementovat konkrétní pokročilé funkce pro každou funkci.  
   
 ## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../../extensibility/source-control-plug-ins.md)   
+ [Ovládací prvek moduly plug-in zdrojového kódu](../../extensibility/source-control-plug-ins.md)   
  [Glosář](../../extensibility/source-control-plug-in-glossary.md)   
  [Vytvoření modulu plug-in správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-plug-in.md)

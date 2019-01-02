@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: Automatická Inkrementace ClickOnce verze publikování | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Automaticky ClickOnce Inkrementace verze publikování | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7dd1723d9d92d9bc1b667cc3fddbc3ea297d8b8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b17a0c54ba0efa7a6eb732de45fa7d1644577041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861387"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Postupy: Automatická Inkrementace ClickOnce verze publikování
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Postupy: Automaticky ClickOnce Inkrementace verze publikování
 
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, změna `Publish Version` vlastnosti způsobí, že aplikace má být publikován jako aktualizace. Ve výchozím nastavení, Visual Studio automaticky zvýší `Revision` počet `Publish Version` pokaždé, když publikujete aplikaci.
 
@@ -45,6 +43,6 @@ Toto chování lze zakázat na **publikovat** stránku **Návrháře projektu**.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: nastavení publikování ClickOnce verze](../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Postupy: Nastavení publikování ClickOnce verze](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

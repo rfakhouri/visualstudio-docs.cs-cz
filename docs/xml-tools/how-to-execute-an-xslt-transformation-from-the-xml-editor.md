@@ -1,8 +1,7 @@
 ---
-title: 'Postup: provedení transformace XSLT z editoru XML'
+title: 'Postupy: Provedení transformace XSLT z editoru XML'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 author: gewarren
@@ -10,61 +9,61 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 3fccad81c2990a93e78f329e2ee4af070d6e5c97
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866514"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Postup: provedení transformace XSLT z editoru XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Postupy: Provedení transformace XSLT z editoru XML
 
-Editor souborů XML umožňuje přidružit stylů XSLT dokumentu XML provedení transformace a zobrazte výstup. Výsledný výstup transformace XSLT se zobrazí v novém okně dokumentu.
+XML Editor lze přidružit k dokumentu XML, šablony stylů XSLT provedení transformace a zobrazte výstup. Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu.
 
-**Výstup** vlastnost určuje název souboru pro výstup. Pokud **výstup** vlastnost je prázdná, název souboru je vygenerována v dočasném adresáři. Přípona souboru je založena na `xsl:output` element vaším stylem list a může být. *XML*,. *txt* nebo. *htm*.
+**Výstup** vlastnost určuje název souboru pro výstup. Pokud **výstup** je vlastnost prázdná, jejichž název souboru se vygeneruje v dočasném adresáři. Přípona souboru je založen na `xsl:output` prvek vašemu stylu listů a může být. *XML*,. *txt* nebo. *htm*.
 
-Pokud **výstup** vlastnost určuje název souboru s. *htm* nebo. *HTML* rozšíření, výstup XSLT je náhled pomocí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Jiné přípony souborů jsou otevřené pomocí editoru výchozí, kterou si zvolí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Pokud například přípona souboru. *xml*, Visual Studio použije editoru XML.
+Pokud **výstup** vlastnost určuje název souboru. *htm* nebo. *HTML* rozšíření, výstup XSLT je zobrazená v náhledu pomocí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] aplikace Internet Explorer. Jiné přípony souborů jsou otevřené pomocí výchozího editoru zvolené [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] sady Visual Studio. Například, pokud je přípona souboru. *xml*, Visual Studio používá editoru XML.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>K provedení transformace XSLT z dokumentu XML
 
 1.  Otevřete dokument XML v editoru XML.
 
-2.  Přidružte stylů XSLT v dokumentu XML.
+2.  Šablony stylů XSLT přidružte k dokumentu XML.
 
-    -   Přidat `xml-stylesheet` zpracování instrukcí v dokumentu XML. Například přidejte následující řádek `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` k prologu dokumentu.
+    -   Přidat `xml-stylesheet` zpracování instrukcí v dokumentu XML. Například přidejte následující řádek `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` do kódu prologu dokumentu.
 
          -nebo-
 
-    -   Přidat pomocí list stylu XSLT **vlastnosti** okno. V dokumentu **vlastnosti – okno**, klikněte **Procházet** tlačítko pro **šablony stylů** pole, vyberte styl XSLT a klikněte na **otevřete**.
+    -   Přidat list Styl XSLT pomocí **vlastnosti** okna. V dokumentu **okno vlastností**, klikněte na tlačítko **Procházet** tlačítko pro **šablony stylů** pole, vyberte šablony stylů XSLT a klikněte na tlačítko **otevřete**.
 
-3.  Klikněte na tlačítko **ShowXSL výstup** tlačítko **editoru XML** panelu nástrojů.
+3.  Klikněte na tlačítko **ShowXSL výstup** tlačítko **editoru XML** nástrojů.
 
     > [!NOTE]
-    > Pokud není žádná šablona stylů přidružené k dokumentu XML, dialogové okno zobrazí výzvu k zadání šablony stylů používat.
+    > Pokud není k dispozici žádné šablony stylů přidružené k dokumentu XML, dialogové okno zobrazí výzvu k zadání šablony stylů k použití.
     >
-    >  Výsledný výstup transformace XSLT se zobrazí v novém okně dokumentu.
+    >  Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>K provedení transformace XSLT z šablony stylů XSLT
 
-1.  Otevřete šablonu stylů XSLT v editoru XML.
+1.  Otevření šablony stylů XSLT v editoru XML.
 
-2.  Zadejte dokument XML v **vstup** pole dokumentu **vlastnosti** okno.
+2.  Zadejte v dokumentu XML **vstup** pole dokumentu **vlastnosti** okna.
 
     > [!NOTE]
-    > V dokumentu XML je vstupní dokument použít pro transformaci. Pokud není zadán dokument a při spuštění transformace XSLT **otevřít soubor** zobrazí se dialogové okno, a zadáte dokumentu v daném čase.
+    > Dokument XML je vstupní dokument použitý pro transformaci. Pokud dokument není zadán při spuštění transformace XSLT **otevřít soubor** zobrazí se dialogové okno a zadáte dokumentu v daném čase.
 
-3.  Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** panelu nástrojů.
+3.  Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.
 
-     Výsledný výstup transformace XSLT se zobrazí v novém okně dokumentu.
+     Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu.
 
-## <a name="to-provide-a-different-output-file-name"></a>K zadání názvu souboru odlišný výstup
+## <a name="to-provide-a-different-output-file-name"></a>Jako název jiný výstupní soubor
 
-1.  Zadejte název souboru do **výstup** pole dokumentu **vlastnosti** okno.
+1.  Zadejte název souboru v **výstup** pole dokumentu **vlastnosti** okna.
 
-2.  Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** panelu nástrojů.
+2.  Klikněte na tlačítko **ShowXSLT výstup** tlačítko **editoru XML** nástrojů.
 
-     Výsledný výstup transformace XSLT se zobrazí v novém okně dokumentu a editoru použít ve výstupním okně, závisí na příponu vaše **výstup** dokumentu vlastnost.
+     Výsledný výstup z transformace XSLT se zobrazí v novém okně dokumentu a editor používaný v okně výstupu závisí na příponu souboru vaší **výstup** vlastnost dokumentu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Editor XML](../xml-tools/xml-editor.md)

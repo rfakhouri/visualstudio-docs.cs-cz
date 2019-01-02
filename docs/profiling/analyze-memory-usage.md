@@ -2,19 +2,18 @@
 title: Analýza využití paměti
 ms.custom: seodec18
 ms.date: 01/02/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb854bcbb60dcde1358fe6128466b98780e559c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1dcd3467f474d5c2b3e24ed1d1e490a73e7498bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867183"
 ---
 # <a name="analyze-memory-usage"></a>Analýza využití paměti
 Použijte integrovaný ladicí program **využití paměti** diagnostický nástroj k vyhledání nevrácené paměti a využití paměti neefektivní. Umožňuje nástroj využití paměti, můžete provést jeden nebo více *snímky* spravovaný a nativní paměti haldy. Můžete shromažďovat snímky aplikací .NET, ASP.NET, nativní nebo smíšený režim (.NET a nativní).  
@@ -35,7 +34,7 @@ Můžete použít profilovací nástroje bez ladicího programu s Windows 7 a no
 
  [Analýza využití procesoru a paměti během ladění](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   
- [Visual C++ blog: profilace paměti v aplikaci Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
+ [Visual C++ blog: Profilování paměti v aplikaci Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
 ## <a name="see-also"></a>Viz také:
  [Profilace v sadě Visual Studio](../profiling/index.md)  

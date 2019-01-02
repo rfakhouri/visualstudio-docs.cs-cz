@@ -1,9 +1,6 @@
 ---
 title: Vytvoříte balíček rozšíření pomocí šablony položky balíčku rozšíření | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 07/27/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,14 +10,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866319"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Návod: Vytvoření balíčku rozšíření
+# <a name="walkthrough-create-an-extension-pack"></a>Průvodce: Vytvoříte balíček rozšíření
 
 Balíček rozšíření pro je sada rozšíření, které mohou být nainstalovány společně. Balíčky rozšíření umožňují snadno sdílet vaše oblíbená rozšíření s ostatními uživateli nebo sady sadu rozšíření pro konkrétní scénář.
   
@@ -34,7 +31,7 @@ Balíček rozšíření funkce je k dispozici od verze Visual Studio 15.8 ve ver
 
 Balíček rozšíření pro položky šablona vytvoří balíček rozšíření pro sadu rozšíření, které mohou být nainstalovány společně.
   
-1. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `Test Extension Pack`. Klikněte na tlačítko **OK**.  
+1. V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `Test Extension Pack`. Klikněte na **OK**.  
   
 2. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **Add / nová položka**. Přejděte do aplikace Visual C# **rozšiřitelnost** uzel a vyberte možnost **balíček rozšíření**. Ponechte výchozí název souboru (ExtensionPack1.cs).  
   

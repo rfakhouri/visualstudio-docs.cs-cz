@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869252"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 
@@ -97,7 +96,7 @@ Obvykle, obor názvů odkazované položky (v tomto příkladu `Library` doméno
 
 Moniker systému vyžaduje na stejné úrovni ve stromové struktuře XML odlišné názvy. Z tohoto důvodu se vyskytnou chyby, pokud se pokusíte uložit definice jazyka specifického pro doménu, která má například dvě třídy se stejným názvem. Tyto chyby duplicitní název byste měli napravit a vždy před uložením soubor DslDefinition.dsl, takže je možné jej znovu načíst správně později.
 
-Každý typ má svůj vlastní typ moniker: DomainClassMoniker, DomainRelationshipMoniker, a tak dále.
+Každý typ má svůj vlastní typ zástupného názvu: DomainClassMoniker DomainRelationshipMoniker a tak dále.
 
 ## <a name="types"></a>Typy
 
@@ -228,7 +227,7 @@ Například relace připojení odkazuje členy třídy OutPort na členy třídy
 
 Každý vztah obsahuje zdrojové a cílové role, které mají následující atributy:
 
--   `RolePlayer` Atribut odkazuje na třídu domény propojených instancí: OutPort pro zdroj, InPort pro cíl.
+-   `RolePlayer` Atribut odkazuje na třídu domény propojených instancí: OutPort zdroje InPort pro cíl.
 
 -   `Multiplicity` Atribut má čtyři možných hodnot (hodnotu ZeroMany, ZeroOne, jeden a OneMany). Tento atribut odkazuje na počet odkazy tohoto vztahu, který může být přidružený jeden aktéra role.
 

@@ -1,8 +1,6 @@
 ---
-title: Idiareadexeatrvacallback – | Microsoft Docs
-ms.custom: ''
+title: Idiareadexeatrvacallback – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,43 +12,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8836f1d234cddfff42f21a3d376eb93b21e4fe29
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e00ce2e1286c2309a11984f9bde23aa74071a076
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859289"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
-Umožňuje aplikaci klienta k poskytování bajtů spustitelný soubor určený relativní virtuální adresu.  
+Umožňuje klientské aplikaci slouží k poskytování bajtů spustitelný soubor určený relativní virtuální adresu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaReadExeAtRVACallback : IUnknown  
+IDiaReadExeAtRVACallback : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaReadExeAtRVACallback`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaReadExeAtRVACallback`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Přečte zadaný počet bajtů, počínaje zadaný relativní virtuální adresa (RVA) ze spustitelného souboru.|  
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Přečte zadaný počet bajtů počínaje zadanou relativní virtuální adresu (RVA) ze spustitelného souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
- Toto rozhraní implementuje klientskou aplikaci chcete-li poskytovat bajtů ke spustitelnému souboru pomocí relativní virtuální adresy do souboru ke spustitelnému souboru. Pokud chcete použít absolutní posun, implementovat [idiareadexeatoffsetcallback –](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) rozhraní.  
+ Klientská aplikace implementuje toto rozhraní negace bajtů se spustitelný soubor používající relativní virtuální adresu do souboru ke spustitelnému souboru. Chcete-li použít absolutní posun, implementovat [idiareadexeatoffsetcallback –](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Tato metoda je implementované klientská aplikace a předán [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metoda jako alternativní metoda pro čtení souboru.  
+ Tato metoda je implementované klientská aplikace a předat [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metody jako alternativní metoda pro čtení souboru.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

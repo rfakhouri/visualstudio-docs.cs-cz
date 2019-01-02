@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861300"
 ---
 # <a name="automatic-feature-suspension"></a>Automatické pozastavení funkce
 
@@ -43,7 +42,7 @@ Tipy a triky pro zlepšení výkonu sady Visual Studio, když se zabývají velk
 
 ## <a name="full-solution-analysis-suspended"></a>Úplná analýza řešení pozastaveno
 
-Ve výchozím nastavení je úplné analýzy řešení povolené v jazyce Visual Basic a zakázán pro jazyk Visual C#. Ale v ke stavu nedostatku paměti, úplné analýzy řešení je automaticky zakázána pro Visual Basic a Visual C#, bez ohledu na jejich nastavení v dialogovém okně Možnosti. Však můžete znovu povolit úplné analýzy řešení kliknutím **znovu povolit** v informačního panelu Pokud je zobrazeno, tak, že vyberete tlačítko **povolení úplné analýzy řešení** zaškrtávací políčko v dialogovém okně Možnosti, nebo podle restartování sady Visual Studio. Dialogové okno Možnosti vždy zobrazuje aktuální úplné řešení analýzy nastavení. Další informace najdete v tématu [postupy: povolení a zákaz analýzy celého řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Ve výchozím nastavení je úplné analýzy řešení povolené v jazyce Visual Basic a zakázán pro jazyk Visual C#. Ale v ke stavu nedostatku paměti, úplné analýzy řešení je automaticky zakázána pro Visual Basic a Visual C#, bez ohledu na jejich nastavení v dialogovém okně Možnosti. Však můžete znovu povolit úplné analýzy řešení kliknutím **znovu povolit** v informačního panelu Pokud je zobrazeno, tak, že vyberete tlačítko **povolení úplné analýzy řešení** zaškrtávací políčko v dialogovém okně Možnosti, nebo podle restartování sady Visual Studio. Dialogové okno Možnosti vždy zobrazuje aktuální úplné řešení analýzy nastavení. Další informace najdete v tématu [jak: Povolení a zákaz úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>Uvolňování paměti s nízkou latencí zakázáno
 
@@ -66,6 +65,6 @@ Kromě toho jsou vymazány mezipamětí použít pro interní operace sady Visua
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Povolení a zakázání úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Postupy: Povolení a zákaz úplné analýzy řešení](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Základy kolekce paměti](/dotnet/standard/garbage-collection/fundamentals)
 - [Faktory ovlivňující výkon u velkých řešení](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

@@ -1,9 +1,6 @@
 ---
-title: SafeControls – Element | Microsoft Docs
-ms.custom: ''
+title: SafeControls – Element | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe8b3c026b7386d89ef04d0a966eccad425f1629
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e08b414858db389e507dc9395d218807c9530db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875965"
 ---
 # <a name="safecontrols-element"></a>SafeControls – element
-  Kolekce ovládacích prvků ASPX a webových částí, které jsou označeny jako bezpečné pro všechny uživatele pro přístup na všechny stránky ASPX na webu služby SharePoint.  
+  Určuje kolekci ASPX a webové části, které jsou určené jako zabezpečení pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,13 +40,13 @@ ms.locfileid: "37120359"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[SafeControl –](../sharepoint/safecontrol-element.md)|Volitelný element.<br /><br /> Představuje prvek ASPX nebo webovou část, která je označeny jako bezpečné pro všechny uživatele pro přístup na všechny stránky ASPX na webu služby SharePoint.|  
+|[SafeControl –](../sharepoint/safecontrol-element.md)|Volitelný element.<br /><br /> Představuje prvek ASPX nebo webovou část, která je označena jako bezpečná pro všechny uživatele pro přístup na libovolné stránce ASPX na webu služby SharePoint.|  
   
 ### <a name="parent-elements"></a>Nadřazené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element požadovaný kořenový element z *.spdata* souboru.|  
+|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento prvek požadovaný kořenový element z *.spdata* souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
  Další informace o bezpečné ovládací prvky najdete v tématu [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
@@ -58,12 +55,11 @@ ms.locfileid: "37120359"
   
 |||  
 |-|-|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
-|**Název schématu**|Schéma položky projektu SharePoint|  
-|**Ověření souboru**|ProjectItemModelSchema.xsd|  
-|**Nesmí být prázdné**|Ne|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Název schématu**|Schéma položky projektu služby SharePoint|  
+|**Soubor ověření**|ProjectItemModelSchema.xsd|  
+|**Může být prázdný**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Zadejte informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
+ [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  

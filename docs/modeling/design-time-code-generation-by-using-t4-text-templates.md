@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8e2ba4e158b6c012c05d29c988e9611d25f58e63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861978"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programového kódu a další soubory v projektu sady Visual Studio. Obvykle píšete šablony tak, aby se lišily kód, který se generují podle dat z *modelu*. Model je soubor nebo databázi, která obsahuje základní informace o podle požadavků vaší aplikace.
@@ -67,7 +66,7 @@ Textové šablony T4 návrhu umožňují generování programového kódu a dal�
 
 5. Uložte soubor.
 
-    Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na tlačítko **OK**.
+    Můžete se setkat **upozornění zabezpečení** okno se zprávou s žádostí o potvrzení, že chcete danou šablonou spustit. Klikněte na **OK**.
 
 6. V **Průzkumníka řešení**, rozbalte uzel soubor šablony a zjistíte, který má příponu souboru **.txt**. Tento soubor obsahuje text vytvořený ze šablony.
 
@@ -333,7 +332,7 @@ Warning("A warning message");
    | | |
    |-|-|
    | **Vlastní nástroj =** | **TextTemplatingFileGenerator** |
-   | **Akce sestavení =** | **None** |
+   | **Akce sestavení =** | **Žádné** |
 
 
 5. Na začátek souboru vložte následující řádky:

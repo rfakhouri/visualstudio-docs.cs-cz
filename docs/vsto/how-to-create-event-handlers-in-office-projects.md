@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Vytváření obslužných rutin událostí v projektech pro systém Office'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859838"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Postupy: Vytváření obslužných rutin událostí v projektech pro systém Office
   Existuje několik způsobů, jak vytváření obslužných rutin událostí v jazyce Visual Basic a C#. V návrhovém zobrazení můžete vytvořit výchozí obslužné rutiny událostí pro ovládací prvky poklepáním na ovládací prvek, nebo použijte v podokně události **vlastnosti** okno pro vytvoření obslužné rutiny pro všechny události v ovládacím prvku. Pokud jste v zobrazení kódu, nemusí však chcete přepnout do zobrazení návrhu k vytvoření obslužné rutiny události.  
@@ -57,5 +54,3 @@ ms.locfileid: "53648597"
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Návod: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Řešení konkrétních chyb v nasazeních ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24d896b224adb4c5314938e2ef76af459135a213
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8fdd69b83702b07aae8a1c39c6c9298201c2f048
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862163"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Řešení konkrétních chyb v nasazeních ClickOnce
 Tento článek uvádí následující běžné chyby, které se mohou vyskytnout při nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace a popisuje kroky k vyřešení jednotlivých problémů.  
@@ -58,7 +56,7 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 
  Je třeba také nastavit typy obsahu (označované také jako typy MIME) odpovídajícím způsobem pro .application .manifest a .deploy souborů. Další informace naleznete v dokumentaci webového serveru.  
 
- Další informace najdete v tématu "Windows Server 2003: Locked-Down typy obsahu" v [problémy s konfigurací serveru a klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Další informace najdete v tématu "Windows Server 2003: Uzamčené typy obsahu"v [problémy s konfigurací serveru a klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
 
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Chybová zpráva: "Aplikace je v nesprávném formátu;" Soubor protokolu obsahuje "XML podpis je neplatný."  
  Nezapomeňte aktualizovat soubor manifestu a podepsat znovu. Znovu publikujte aplikaci s použitím [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo aplikaci znovu podepsat pomocí bitové kopii.  
@@ -72,13 +70,13 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 
 - Zkuste znovu spustit aplikaci v nabídce Start. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] může být zjištěny aktualizace na pozadí, ale zobrazí výzvu k instalaci na další aktivace.  
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Při aktualizaci zobrazí chybová zpráva, která má následující záznam protokolu: "odkaz v nasazení neodpovídá identitě definované v manifestu aplikace"  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Při aktualizaci zobrazí chybová zpráva, která má následující záznam protokolu: "Odkaz v nasazení neodpovídá identitě definované v manifestu aplikace"  
  K této chybě může dojít, protože jste ručně upravit manifesty nasazení a aplikace a způsobit popis identity sestavení v jednom manifestu přestane být synchronní k ostatním. Identita sestavení se skládá z jeho název, verzi, jazykovou verzi a token veřejného klíče. Popisy identity ve vaší manifesty zkontrolujte a opravte případné rozdíly.  
 
 #### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Úspěšná aktivace z místního disku nebo disku CD-ROM poprvé, ale následné aktivace z nabídky Start selže  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Adresa URL poskytovatele nasazení se používá pro příjem aktualizací pro aplikaci. Ověřte, zda je umístění, které se adresa URL odkazuje na správný.  
 
-#### <a name="error-cannot-start-the-application"></a>Chyba: "nelze spustit aplikaci"  
+#### <a name="error-cannot-start-the-application"></a>Chyba: "Nelze spustit aplikaci"  
  Tato chybová zpráva obvykle indikuje, že dojde k nějakému problému instalaci této aplikace do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ukládat. Aplikace došlo k chybě nebo úložišti je poškozen. Soubor protokolu můžete zjistit, kde došlo k chybě.  
 
  Měli byste provést následující:  
@@ -106,8 +104,8 @@ Tento článek uvádí následující běžné chyby, které se mohou vyskytnout
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Chybová zpráva: Nelze vytvořit na webu '\<lokality >'. Komponenty pro komunikaci s rozšíření serveru FrontPage nejsou nainstalovány.  
  Ujistěte se, že máte Microsoft Visual Studio pro vytváření součást webové nainstalované v počítači, které publikujete z. Pro uživatele, Express tato součást není nainstalována ve výchozím nastavení. Další informace najdete na webu [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Chybová zpráva: Nelze najít soubor "Microsoft.Windows.Common – ovládací prvky, verze = 6.0.0.0, jazyková verze = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture =\*, typ = win32"  
- Při pokusu o publikování aplikace WPF s povolenými vizuálními styly, zobrazí se tato chybová zpráva. Chcete-li vyřešit tento problém, naleznete v tématu [postupy: publikování aplikace WPF s vizuální styly povoleny](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Chybová zpráva: Nelze najít soubor "Microsoft.Windows.Common – ovládací prvky, verze = 6.0.0.0, jazyková verze = *, PublicKeyToken 6595b64144ccf1df, ProcessorArchitecture = =\*, typ = win32"  
+ Při pokusu o publikování aplikace WPF s povolenými vizuálními styly, zobrazí se tato chybová zpráva. Chcete-li vyřešit tento problém, naleznete v tématu [jak: Publikování aplikace WPF s povolenými vizuálními styly](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
 
 ## <a name="using-mage"></a>Pomocí bitové kopii  
 

@@ -3,7 +3,6 @@ title: Ladění živé aplikace Azure technologie ASP.NET
 description: Zjistěte, jak nastavit snímkovací body a zobrazit snímky se Snapshot Debugger.
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,12 +13,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: bcb25566d530f85d5ac9a8d1a5f32c770a07bf21
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863992"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění živé aplikace ASP.NET Azure pomocí ladicího programu snímků
 

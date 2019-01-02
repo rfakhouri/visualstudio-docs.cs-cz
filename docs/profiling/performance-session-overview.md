@@ -1,8 +1,6 @@
 ---
 title: Přehled výkonnostní relace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867170"
 ---
 # <a name="performance-session-overview"></a>Přehled výkonnostní relace
 Tento přehled popisuje základní informace o vytváření profilů. Vývojáři, kteří teprve začínáte pracovní výkonu se zobrazí jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jim být tak produktivní rychle a zvýšit výkon jejich kód mohou pomoci nástroje pro profilaci. Vývojáři, kteří mají zkušenosti s profilace můžete získat přehled o konkrétních nástrojů pro profilaci sady funkcí a procesy.  
@@ -77,4 +75,4 @@ Tento přehled popisuje základní informace o vytváření profilů. Vývojář
   
 ## <a name="see-also"></a>Viz také:  
  [Přehledy](../profiling/overviews-performance-tools.md)   
- [Návod: Identifikace problémů s výkonem](../profiling/walkthrough-identifying-performance-problems.md)
+ [Návod: Identifikace problémů s výkonem](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

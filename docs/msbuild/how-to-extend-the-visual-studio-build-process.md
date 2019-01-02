@@ -2,7 +2,6 @@
 title: Rozšíření procesu sestavení
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
@@ -15,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce38985a5fc0b74326648557e22eb17bfdfb4f48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863677"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: rozšíření procesu sestavení sady Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení sady Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu sestavení je definován pomocí posloupnosti [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *.targets* soubory, které jsou importovány do souboru projektu. Jeden z nich importovat soubory, *cílů Microsoft.Common.targets*, je možné rozšířit, aby bylo možné spouštět vlastní úlohy na několika místech v procesu sestavení. Tento článek vysvětluje, dvě metody, které vám umožní rozšířit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] procesu sestavení:  
   
 -   Přepsání konkrétní předdefinovaných cílů, které jsou definovány v *cílů Microsoft.Common.targets*.  
@@ -57,7 +56,7 @@ V následující tabulce jsou uvedeny všechny cíle v *cílů Microsoft.Common.
 |Název cíle|Popis|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|Úlohy, které jsou vloženy do jednoho z těchto cílů spustit před nebo po dokončení základní kompilace. Většina nastavení se provádějí v jednom z těchto dva cíle.|  
-|`BeforeBuild`, `AfterBuild`|Úlohy, které jsou vloženy v jednom z těchto cílů se spustí před nebo za všechno ostatní v sestavení. **Poznámka:** `BeforeBuild` a `AfterBuild` cíle jsou již definovány v komentářích ke konci většinu souborů projektu, vám umožňuje snadno přidat události před instrumentací a po sestavení do souboru projektu.|  
+|`BeforeBuild`, `AfterBuild`|Úlohy, které jsou vloženy v jednom z těchto cílů se spustí před nebo za všechno ostatní v sestavení. **Poznámka:**  `BeforeBuild` a `AfterBuild` cíle jsou již definovány v komentářích ke konci většinu souborů projektu, vám umožňuje snadno přidat události před instrumentací a po sestavení do souboru projektu.|  
 |`BeforeRebuild`, `AfterRebuild`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po základní znovu sestavit funkcí je vyvolána. Pořadí provádění cílů v *cílů Microsoft.Common.targets* je: `BeforeRebuild`, `Clean`, `Build`a potom `AfterRebuild`.|  
 |`BeforeClean`, `AfterClean`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po základní vyčištění funkce vyvolána.|  
 |`BeforePublish`, `AfterPublish`|Úlohy, které jsou vloženy v jednom z těchto cílů spustit před nebo po základní publikování funkcí je vyvolána.|  

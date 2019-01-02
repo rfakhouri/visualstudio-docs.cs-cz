@@ -3,7 +3,6 @@ title: Další informace k ladění vícevláknových aplikací
 description: Ladění pomocí okna paralelní zásobníky a paralelní sledování v sadě Visual Studio
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863287"
 ---
 # <a name="get-started-debugging-multithreaded-applications"></a>Začínáme s laděním vícevláknových aplikací
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní si můžete usnadnit ladění aplikací s více vlákny. Tento kurz ukazuje, jak používat značky vlákna **paralelní zásobníky** okně **paralelní sledování** oken, podmíněné zarážky a filtr zarážek. Dokončení tohoto kurzu se můžete seznámit s funkcemi sady Visual Studio pro ladění aplikací s více vlákny.
@@ -35,9 +34,9 @@ Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní si
 
 Tyto dvě témata obsahují další informace o použití jiných vícevláknové ladění nástrojů:
 
-- Použít **umístění ladění** nástrojů a **vlákna** okna, naleznete v tématu [návod: ladění aplikace s více vlákny](../debugger/how-to-use-the-threads-window.md).
+- Použít **umístění ladění** nástrojů a **vlákna** okna, naleznete v tématu [názorný postup: Ladění aplikace s více vlákny](../debugger/how-to-use-the-threads-window.md).
 
-- Příklad, který používá <xref:System.Threading.Tasks.Task> (spravovaný kód) a modulu runtime souběžnosti (C++), najdete v článku [návod: ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md). Obecné ladění tipy, které se vztahují na typy nejvíce vícevláknové aplikace přečtěte si toto téma a tohoto objektu.
+- Příklad, který používá <xref:System.Threading.Tasks.Task> (spravovaný kód) a modulu runtime souběžnosti (C++), najdete v článku [názorný postup: Ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md). Obecné ladění tipy, které se vztahují na typy nejvíce vícevláknové aplikace přečtěte si toto téma a tohoto objektu.
   
 Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.  
   
@@ -45,9 +44,9 @@ Nejprve musíte projekt aplikace s více vlákny. Následuje příklad.
   
 1.  Na **souboru** nabídce vyberte možnost **nový** > **projektu**.  
   
-     **Nový projekt** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Nový projekt**.  
   
-2.  Zvolte jazyk: **Visual C#** , **Visual C++**, nebo **jazyka Visual Basic**.  
+2.  Zvolte jazyk: **Vizuální C#** , **Visual C++**, nebo **jazyka Visual Basic**.  
   
 3.  V části **Windows Desktop**, zvolte **konzolovou aplikaci**.  
   
@@ -258,7 +257,7 @@ V **paralelní zásobníky** okně můžete přepínat mezi zobrazení vláken a
     Můžete provádět různé akce z těchto nabídek klikněte pravým tlačítkem, ale pro účely tohoto kurzu vám ukážeme některé tyto podrobnosti v **paralelní sledování** okno (další oddíly).
 
     > [!NOTE]
-    > Pokud chcete zobrazit na zobrazení seznamu s informace o každé vlákno, použijte **vlákna** okno místo toho. Zobrazit [návod: ladění aplikace s více vlákny](../debugger/how-to-use-the-threads-window.md).
+    > Pokud chcete zobrazit na zobrazení seznamu s informace o každé vlákno, použijte **vlákna** okno místo toho. Zobrazit [názorný postup: Ladění aplikace s více vlákny](../debugger/how-to-use-the-threads-window.md).
 
 ### <a name="set-a-watch-on-a-variable"></a>Nastavení sledování u proměnné
 
@@ -346,5 +345,5 @@ Můžete nastavit zarážky v různých podmínkách, jako je například název
 ## <a name="see-also"></a>Viz také:  
 [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [Postupy: Přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[Postupy: použití okna paralelní zásobníku](../debugger/using-the-parallel-stacks-window.md)  
+[Postupy: Použití okna paralelní zásobníku](../debugger/using-the-parallel-stacks-window.md)  
 [Postupy: Použití okna paralelního sledování](../debugger/how-to-use-the-parallel-watch-window.md)  

@@ -2,7 +2,6 @@
 title: Cílení na určitou verzi rozhraní .NET Framework
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -12,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860163"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: cílení na určitou verzi rozhraní .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: Cílení na verzi rozhraní .NET Framework
 
 Tento dokument popisuje, jak cílení na určitou verzi rozhraní .NET Framework, když vytvoříte projekt a jak změnit cílenou verzi v jazyce Visual Basic se existující C#, nebo Visual F# projektu.
 
 > [!IMPORTANT]
-> Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [postupy: Úprava na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+> Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>Cílení na určitou verzi při vytváření projektu
 
@@ -46,7 +45,7 @@ Když vytvoříte projekt, k dispozici verze rozhraní .NET Framework závisí n
 
 Můžete změnit cílovou verzi rozhraní .NET Framework v jazyce Visual Basic C#, nebo Visual F# projekt pomocí tohoto postupu.
 
-Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [postupy: Úprava na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v tématu [jak: Upravit na cílové rozhraní framework a sadu nástrojů platformy](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
 1. V **Průzkumníka řešení**, otevřete místní nabídku pro projekt, který chcete změnit a klikněte na tlačítko **vlastnosti**.
 
@@ -74,4 +73,4 @@ Informace o tom, jak změnit cílovou verzi pro projekty C++, naleznete v témat
 - [Řešení potíží s cílením na rozhraní .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
 - [Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
-- [Postupy: Úprava na cílové rozhraní framework a sadu nástrojů platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

@@ -13,15 +13,14 @@ manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865541"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimalizace spouštění sady Visual Studio
 
@@ -59,11 +58,11 @@ Vždy znovu povolíte rozšíření pro budoucí relace pomocí **Správce rozš
 
 3. Vyberte jednu z následujících tří možností:
 
-   - **Použije výchozí chování:** výchozí chování pro panel nástrojů. Udržování tato možnost aktivní, nebude zlepšit výkon při spuštění.
+   - **Použije výchozí chování:** Výchozí chování pro panel nástrojů. Udržování tato možnost aktivní, nebude zlepšit výkon při spuštění.
 
-   - **Nezobrazovat okno při spuštění:** okně určeného nástroje je vždy uzavřen, při otevření sady Visual Studio, i pokud jste nechali otevřít v předchozí relaci. Až ji budete potřebovat, můžete otevřít okno nástroje z příslušné nabídky.
+   - **Nezobrazovat okno při spuštění:** V okně zadaného nástroje je vždy uzavřen při otevření sady Visual Studio, i pokud jste nechali otevřít v předchozí relaci. Až ji budete potřebovat, můžete otevřít okno nástroje z příslušné nabídky.
 
-   - **Automaticky skrýt okno při spuštění:** ponecháte-li panel nástrojů byl otevřen v předchozí relaci, tato možnost sbalí panel nástrojů skupiny při spuštění, aby inicializace panel nástrojů. Tato možnost je dobrou volbou, když často používáte panelu nástrojů. Panel nástrojů je stále k dispozici, ale má vliv na už nebude mít negativní čas spuštění sady Visual Studio.
+   - **Automaticky skrýt okno při spuštění:** Pokud v předchozí relace byla otevřená okna nástroje, tato možnost sbalí panel nástrojů skupiny při spuštění, aby inicializace panel nástrojů. Tato možnost je dobrou volbou, když často používáte panelu nástrojů. Panel nástrojů je stále k dispozici, ale má vliv na už nebude mít negativní čas spuštění sady Visual Studio.
 
      ![Správa výkonu sady Visual Studio – zobrazení okna nástrojů](../ide/media/vside_perfdialog_toolwindows.png)
 

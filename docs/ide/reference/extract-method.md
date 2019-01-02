@@ -2,7 +2,6 @@
 title: Extrahovat metodu
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a505d024f3021a94d90ca1182181148187fe844c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864761"
 ---
 # <a name="extract-a-method-refactoring"></a>Extrahovat metodu refaktoring
 
@@ -29,11 +28,11 @@ Tento refaktoring platí pro:
 
 - Visual Basic
 
-**Co:** umožňuje zapnout fragment kódu do své vlastní metody.
+**Co:** Umožňuje vypnout fragment kódu do své vlastní metody.
 
-**Kdy:** máte fragment stávající kód v některé metody, která musí být volána z jiné metody.
+**Kdy:** Máte fragment stávající kód v některé metody, která musí být volána z jiné metody.
 
-**Důvod, proč:** vám může kopírovat/vložit tento kód, ale které by mohlo dojít k duplikaci. Lepším řešením je refaktorovat tohoto fragmentu do své vlastní metody, které je možné vyvolat volně jiným způsobem.
+**Proč:** Vám může kopírovat/vložit tento kód, ale které by mohlo dojít k duplikaci. Lepším řešením je refaktorovat tohoto fragmentu do své vlastní metody, které je možné vyvolat volně jiným způsobem.
 
 ## <a name="how-to"></a>Postupy
 

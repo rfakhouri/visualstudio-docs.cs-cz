@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření webové části pro službu SharePoint pomocí návrháře | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870904"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Průvodce: Vytvoření webové části pro službu SharePoint pomocí návrháře
 
 Pokud vytváříte webové částí webu služby SharePoint, uživatelé mohou přímo upravit obsah, vzhled a chování stránky na tomto webu pomocí prohlížeče. Tento návod ukazuje, jak vizuálně vytvářet webové části služby SharePoint pomocí **vizuální webové části** šablony projektu v sadě Visual Studio.
 
@@ -56,7 +51,7 @@ Nejprve vytvořte projekt webové části pomocí **vizuální webové části**
 
 2. V panelu nabídky zvolte **souboru** > **nový** > **projektu**.
 
-     **Nový projekt** zobrazí se dialogové okno.
+     Zobrazí se dialogové okno **Nový projekt**.
 
 3. V **nový projekt** dialogové okno, v části **Visual C#** nebo **jazyka Visual Basic**, rozbalte **Office/SharePoint**a klikněte na tlačítko  **Řešení služby SharePoint** kategorie.
 
@@ -100,7 +95,7 @@ Přidejte kód, který umožňuje uživateli přidávat kalendáře do zobrazen�
 
    - V Návrháři dvakrát klikněte **aktualizace** tlačítko.
 
-   - V **vlastnosti** okně **aktualizace** tlačítko, zvolte **události** tlačítko. V **klepněte na** vlastnost, zadejte **Button1_Click**a pak zvolte klávesu Enter.
+   - V **vlastnosti** okně **aktualizace** tlačítko, zvolte **události** tlačítko. V **klikněte na tlačítko** vlastnost, zadejte **Button1_Click**a potom stiskněte klávesu Enter.
 
      Soubor kódu uživatelského ovládacího prvku se otevře v editoru kódu a `Button1_Click` obslužná rutina události se zobrazí. Později přidáte kód pro tuto obslužnou rutinu události.
 
@@ -193,5 +188,5 @@ Události ze všech kalendářů, které jste zadali, se zobrazí zobrazení mě
 ## <a name="see-also"></a>Viz také:
 
 [Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Postupy: vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Postupy: Vytvoření webové části služby SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
 [Návod: Vytvoření webové části pro SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

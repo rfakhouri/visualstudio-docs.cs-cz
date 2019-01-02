@@ -1,8 +1,6 @@
 ---
 title: 'Chyba: Spuštění Transact-SQL skončilo bez ladění. | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_sql_executed_but_not_debugged
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efb83f6b6cbebc255f6f47c30e3934d74de7870
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ce27a15766af51a10cf1697f3ed08e6aebf2bb96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863053"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Chyba: Spuštění Transact-SQL skončilo bez ladění.
 
@@ -42,7 +40,7 @@ Zahrnuté jsou dva účty:
   
   Chcete-li opravit tuto chybu, potřebujete:  
   
-  - Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: nastavit SQL Server oprávnění pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+  - Ověřte nastavení oprávnění. Další informace najdete v tématu [jak: Nastavení oprávnění serveru SQL pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
   - Ujistěte se, že pokud ladění SQL zařídit správné nastavení.  
   
@@ -51,6 +49,6 @@ Zahrnuté jsou dva účty:
 ## <a name="see-also"></a>Viz také
 
 - [Nastavení ladění SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Postupy: nastavení oprávnění serveru SQL pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Postupy: Nastavení oprávnění serveru SQL pro ladění](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)
 - [Vzdálené ladění](../debugger/remote-debugging.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: shromažďování dat o výkonu pro web | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Shromažďování dat o výkonu pro web | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864148"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat o výkonu pro webový server
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: Shromažďování dat o výkonu pro webový server
 
 Můžete použít **Průvodce výkonem** ke shromažďování dat výkonu pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci. Můžete profilovat webové aplikace, která je otevřený v sadě Visual Studio, nebo můžete provádět profilaci [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] web, který je umístěn v místním počítači a není otevřen v integrovaném vývojovém prostředí sady Visual Studio.
 

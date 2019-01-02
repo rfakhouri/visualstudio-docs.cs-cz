@@ -1,93 +1,92 @@
 ---
-title: Vizualizace dat s R
-description: Jak k vykreslení dat z aplikací R v sadě Visual Studio pomocí výkresu systému windows.
+title: Vizualizace dat pomocí jazyka R
+description: Jak zobrazit data z aplikací jazyka R v sadě Visual Studio pomocí okna diagramů.
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859078"
 ---
-# <a name="create-visual-data-plots-with-r"></a>Vytvoření pozemků vizuální data s R
+# <a name="create-visual-data-plots-with-r"></a>Vytvoření vykreslení vizuálních dat pomocí jazyka R
 
-Vykreslení je klíčovou součástí vědecký pracovník dat pracovního postupu. V R nástrojů pro Visual Studio (RTVS) veškeré aktivity související s výkresu soustředí kolem jeden nebo více výkresu windows, které jsou určeny ke zlepšení efektivity práce se tato aktivita klíče.
+Vykreslení je klíčovou součástí pracovního postupu specializují na data. V nástroje jazyka R pro Visual Studio (RTVS) všechny aktivity zobrazování soustředí kolem jeden nebo více okna diagramů, které jsou navržené pro zlepšení produktivity pomocí tohoto klíče aktivity.
 
-![Vykreslení hrdina Image](media/plotting-hero-image.png)
+![Vykreslení ústřední obrázek](media/plotting-hero-image.png)
 
 |   |   |
 |---|---|
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (webu youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na vykreslení s R (2 m 02s). |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (webu youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) na vykreslení s jazykem R (2 miliony 02s). |
 
-## <a name="the-plot-window"></a>Okno vykreslení.
+## <a name="the-plot-window"></a>Okno diagramů
 
-Okno výkresu obsahuje řadu pozemků, kde je generován každý výkresu `plot` příkaz. Například pomocí `plot(1:100)` vytvoří nové okno vykreslení. Pokud jedna již není k dispozici:
+Okno diagramů obsahuje řadu graf, ve kterém je každý diagram generován `plot` příkazu. Například použití `plot(1:100)` vytvoří nové okno diagramů, pokud již není k dispozici:
 
-![Lineární výkresu 1 až 100.](media/plotting-1-to-100.png)
+![1 až 100 lineární vykreslení](media/plotting-1-to-100.png)
 
-Technicky platí, že R `plot` příkazy vykreslení jejich výstup do zařízení s R grafiky; okno výkresu vykreslí obsah grafiky zařízení R, což je proto každé okno výkresu je zadané číslo zařízení.
+Technicky vzato R `plot` příkazy vykreslování svůj výstup do zařízení s R graphics; okno diagramů vykreslí obsah grafiky zařízení R, což je důvod, proč každé okno diagramů je zadané číslo zařízení.
 
-Vykreslení windows jsou nezávislé na projektů sady Visual Studio a zůstane otevřená, jak načíst a zavřete projekty.
+Okna diagramů platí bez ohledu na projekty aplikace Visual Studio a zůstanou otevřené a jak načíst a zavřít projekty.
 
-Generování vykreslení používá okno "aktivní" výkresu ukládání všechny předchozí ho vykreslení historie vykreslení (v tématu [vykreslení historie](#plot-history)). Zadejte například `plot(100:1)` a první výkresu nahrazena klesající řádku.
+Generuje se graf používá okna diagramů "aktivní", ukládají se všechny předchozí jeho vykreslení historie diagramů (naleznete v tématu [grafu historie](#plot-history)). Zadejte například `plot(100:1)` a první graf je nahrazen klesající řádku.
 
-Podobně jako všechny ostatní sady Visual Studio windows. okno výkresu podporuje vlastní rozložení (viz [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Vykreslení windows můžete ukotven v různých umístěních v rámci sady Visual Studio, po změně velikosti v rámci tohoto rámečku nebo vyžádat mimo rámec zcela pro nezávislé změnu velikosti. 
+Stejně jako všechny ostatní okna sady Visual Studio. podporuje vlastní rozložení okna diagramů (viz [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Okna diagramů můžete ukotven na různých místech v rámci sady Visual Studio, v rámci tohoto rámce se změněnou velikostí nebo získaná mimo rámec výhradně pro změnu velikosti nezávislé. 
 
-Změna velikosti okna výkresu vždy znovu vykreslí výkresu zajistit nejlepší kvalitu obrazu. Obvykle je vhodné ke změně velikosti vykreslení před exportováním výkresu do souboru nebo do schránky pomocí příkazů popsaných v další části.
+Změna velikosti okno diagramů vždy znovu vykreslí vykreslení zajistit nejlepší kvalitu obrazu. Obvykle budete chtít změnit velikost vykreslení před exportem vykreslení do souboru nebo do schránky pomocí příkazů popsaných v další části.
 
-## <a name="plot-window-commands"></a>Příkazy okna vykreslení.
+## <a name="plot-window-commands"></a>Příkazy okna diagramů
 
-Obsahuje použít příkazy, většina z nich jsou také k dispozici prostřednictvím nástrojů okna výkresu **R nástroje** > **pozemků** nabídky.
+Panel nástrojů okna diagramů obsahuje použitelných příkazů, většina z nich jsou také k dispozici prostřednictvím **nástroje R** > **vykreslení** nabídky.
 
 | Tlačítko | Příkaz | Popis | 
 | --- | --- | --- |
-| ![Tlačítko nové okno vykreslení.](media/plotting-toolbar-01-new-plot-window.png) | Nové okno vykreslení. | Vytvoří okno samostatné výkresu s vlastním historie. V tématu [více oken výkresu](#multiple-plot-windows). |
-| ![Aktivovat tlačítko okno vykreslení.](media/plotting-toolbar-02-activate-plot-window.png) | Aktivovat okno vykreslení. | Nastaví aktuální okno výkresu jako aktivní okno, takže to následné `plot` příkazy jsou vykreslovány do tohoto okna. V tématu [více oken výkresu](#multiple-plot-windows). V tématu [více oken výkresu](#multiple-plot-windows). |
-| ![Tlačítko okno historie vykreslení.](media/plotting-toolbar-03-plot-history.png) | Okno historie vykreslení. | Otevře se okno s všechny pozemků v historii zobrazené jako miniatury. V tématu [vykreslení historie](#plot-history). |
-| ![Vykreslení historie tlačítka](media/plotting-toolbar-04-plot-history-arrows.png) | Předchozí či následující vykreslení. |  Přejde na předchozí nebo další vykreslení v historii. Můžete taky přejít historie pomocí kombinace kláves Ctrl + Alt + F11 (předchozí) a Ctrl + Alt + F12 (Další). V tématu [vykreslení historie](#plot-history). |
-| ![Uložit jako obrázek tlačítka](media/plotting-toolbar-05-save-as-image.png)| Uložit jako Image | Vyzve k zadání pro název souboru a uloží aktuální vykreslení (okno obsahu, na velikost okna) se souborem bitové kopie. Jsou k dispozici formáty `.png`, `.jpg`, `.bmp`, a `.tif`. |
-| ![Uložit jako tlačítko PDF](media/plotting-toolbar-06-save-as-pdf.png)| Uložit ve formátu PDF | Uloží aktuální výkresu do souboru PDF, pomocí aktuální velikost okna. Při změně měřítka PDF, bude znovu zpracovat vykreslení. |
-| ![Kopírovat jako rastrový obrázek tlačítka](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopírovat jako rastrového obrázku | Zkopíruje vykreslení do schránky jako rastrový obrázek rastrových, pomocí aktuální velikost okna. | 
-| ![Kopírovat jako metafile tlačítka](media/plotting-toolbar-08-copy-as-metafile.png)| Kopírovat jako Metafile | Zkopíruje vykreslení do schránky jako [WMF](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
-| ![Odebrat tlačítko vykreslení.](media/plotting-toolbar-09-remove-plot.png)| Odebrat vykreslení. | Odebere aktuální výkresu z historie. |
-| ![Vymazat všechna ukazuje zeměpisný tlačítko](media/plotting-toolbar-10-clear-all-plots.png) | Ukazuje zeměpisný Vymazat vše | Odebere všechny pozemků z historie (vyzve k potvrzení). |
+| ![Tlačítko Nová okna diagramů](media/plotting-toolbar-01-new-plot-window.png) | Nové okno diagramů | Vytvoří okno samostatné diagramů se svou vlastní historii. Zobrazit [více okna diagramů](#multiple-plot-windows). |
+| ![Aktivací tlačítka okna diagramů](media/plotting-toolbar-02-activate-plot-window.png) | Aktivovat okno diagramů | Nastaví aktuální okno diagramů jako aktivní okno, takže to následné `plot` příkazy jsou předány do tohoto okna. Zobrazit [více okna diagramů](#multiple-plot-windows). Zobrazit [více okna diagramů](#multiple-plot-windows). |
+| ![Tlačítko okno historie diagramů](media/plotting-toolbar-03-plot-history.png) | Okno historie diagramů | Otevře se okno s všechna vykreslení v historii zobrazené jako miniatury. Zobrazit [grafu historie](#plot-history). |
+| ![Tlačítka historie diagramů](media/plotting-toolbar-04-plot-history-arrows.png) | Předchozí nebo další diagram |  Přejde na další nebo předchozí diagram v historii. Můžete také přejít historie pomocí kombinace kláves Ctrl + Alt + F11 (předchozí) a Ctrl + Alt + F12 (Další). Zobrazit [grafu historie](#plot-history). |
+| ![Uložit jako obrázek tlačítka](media/plotting-toolbar-05-save-as-image.png)| Uložit jako obrázek | Zobrazí výzvu k zadání názvu souboru a uloží aktuální diagram (okno obsah, na velikost okna) souboru obrázku. Dostupné formáty jsou `.png`, `.jpg`, `.bmp`, a `.tif`. |
+| ![Uložit jako PDF tlačítko](media/plotting-toolbar-06-save-as-pdf.png)| Uložit jako PDF | Uloží aktuální diagram do souboru PDF, použijte aktuální velikost okna. Vykreslení se při změně měřítka PDF znovu zpracovat. |
+| ![Kopírovat jako rastrový obrázek tlačítka](media/plotting-toolbar-07-copy-as-bitmap.png)| Kopírovat jako rastrový obrázek | Vykreslení zkopíruje do schránky jako rastrový obrázek rastrové, pomocí aktuální velikost okna. | 
+| ![Kopírovat jako metasoubor tlačítko](media/plotting-toolbar-08-copy-as-metafile.png)| Kopírovat jako metasoubor | Zkopíruje do schránky jako vykreslení [Windows metafile](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Diagram tlačítko Odebrat](media/plotting-toolbar-09-remove-plot.png)| Odebrat diagram | Odstraní aktuální diagram z historie. |
+| ![Vykreslení tlačítko pro vymazání výběru](media/plotting-toolbar-10-clear-all-plots.png) | Vymazat všechna vykreslení | Odebere všechna vykreslení z historie (výzvy k potvrzení). |
 
-## <a name="multiple-plot-windows"></a>Více oken vykreslení.
+## <a name="multiple-plot-windows"></a>Více okna diagramů
 
-Protože datových vědců často pracovat s mnoha pozemků z mnoha různých datových sad, RTVS umožňuje vytvářet tolik nezávislé výkresu windows. Potom můžete uspořádat tyto windows ale chcete zcela v rámci sady Visual Studio nebo mimo rámec. (Viz [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) obecné informace o ukotvení a změna velikosti windows.)
+Protože odborníci přes data často pracují s mnoha vykreslení z mnoha různých datových sad, RTVS umožňuje vytvořit libovolný počet okna diagramů nezávislé. Pak můžete uspořádat okna však chcete zcela v rámci sady Visual Studio nebo mimo rámec. (Viz [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md) obecné informace o ukotvení a změna velikosti windows.)
 
-Vytvoření nového okna výkresu pomocí tlačítka panelu nástrojů nebo **R nástroje** > **pozemků** > **nové okno výkresu**. Stane se nové okno výkresu *active* okno, které je, kde jsou vykreslovány nové pozemků. Chcete-li změnit aktivní okno, přejděte do něj a vyberte **aktivovat vykreslení okno** tlačítka panelu nástrojů nebo **R nástroje** > **ukazuje zeměpisný**  >  **Aktivovat okno výkresu**.
+Vytvořit nové okno diagramů pomocí tlačítka panelu nástrojů nebo **nástroje R** > **vykreslení** > **nové okno diagramů**. Stane se nové okno diagramů *aktivní* okno, které je, kde jsou vykreslovány nové vykreslení. Chcete-li změnit aktivní okno, přepněte do něj a vyberte **aktivovat okno diagramů** tlačítka panelu nástrojů nebo **nástroje R** > **vykreslí**  >  **Ktivovat okno diagramů**.
 
-Jsou příliš, pozemků, nezávislé objekty, což znamená, můžete zkopírovat nebo je přesouvat mezi windows výkresu pomocí buď přetažení myší pomocí myši nebo pomocí **kopie**, **Vyjmout**, a **vložení** příkazy v kontextu klikněte pravým tlačítkem a **upravit** nabídky.
+Graf, příliš, jsou nezávislé objekty, což znamená, že můžete zkopírovat nebo přesunout mezi použitím obou a přetahování myší, nebo pomocí okna diagramů **kopírování**, **Vyjmout**, a **vložit** příkazy na kontextu, klikněte pravým tlačítkem a **upravit** nabídky.
 
-Výchozí chování pro přetažení myší je kopie; Chcete přesunout, a přetáhněte stisknutým **Shift** klíč.
+Výchozí chování pro přetažení myší je kopii. Pokud chcete přesunout, přetáhněte myší při podržení **Shift** klíč.
 
-## <a name="plot-history"></a>Vykreslení historie
+## <a name="plot-history"></a>Historie diagramů
 
-Vykreslení příkazy jsou zachována ve výkresu historii jednotlivých období, zajistíte, že všechny vaše vykreslení v rámci relace se zachová. Přejděte v historii, pomocí tlačítek na panelu nástrojů okna výkresu nebo **Ctrl**+**Alt**+**F11** a **Ctrl** + **Alt**+**F12**. Můžete také odebrat jednoho pozemků nebo zrušte všechny pozemků z okna znovu pomocí tlačítka panelu nástrojů nebo **R nástroje** > **ukazuje zeměpisný** příkazy nabídky.
+Diagram příkazy jsou zachována ve historie diagramů pro každé okno, zajištění, že všechny vaše vykreslení v rámci relace je zachovaná. Chcete-li procházet historii, pomocí tlačítek se šipkami na panelu nástrojů okna diagramů nebo **Ctrl**+**Alt**+**F11** a **Ctrl** + **Alt**+**F12**. Můžete také odebrat jeden vykreslení nebo vymazat všechna vykreslení z okna znovu pomocí tlačítka na panelu nástrojů nebo **nástroje R** > **vykreslí** příkazů nabídky.
 
-Pokud chcete zobrazit celou kolekci pozemků, otevřete okno historie výkresu pomocí tlačítka panelu nástrojů nebo **R nástroje** > **ukazuje zeměpisný** > **okno historie výkresu**.
-Historie poskytuje seznam miniatury o zobrazené v okně, seskupené podle různých výkresu windows (nebo zařízení). Pomocí zvětšení tlačítek na panelu nástrojů změní velikost miniatur.
+Chcete-li zobrazit celou kolekci vykreslení, otevřete okno historie diagramů pomocí tlačítka panelu nástrojů nebo **nástroje R** > **vykreslí** > **okno historie diagramů**.
+Historie poskytuje seznam miniatury pro vykreslení, které byly zobrazeny v tomto okně, seskupené podle různých vykreslení windows (nebo zařízení). Na panelu nástrojů pomocí tlačítka lupy změní velikost miniatur.
 
-![Okno historie vykreslení.](media/plotting-plot-history-window.png)
+![Okno historie diagramů](media/plotting-plot-history-window.png)
 
-Otevřete vykreslení v jeho přidružené okně, dvakrát klikněte na tento výkresu, vyberte ho a pak vyberte **zobrazit výkresu** tlačítka panelu nástrojů nebo klikněte pravým tlačítkem a vyberte **zobrazit výkresu**. Můžete také vybrat konkrétního výkresu a zkopírujte, Vyjmout, nebo odstraňte z kontextu klikněte pravým tlačítkem nebo **upravit** nabídky.
+Otevřete vykreslení v jeho přidružené okna, dvakrát klikněte na tento graf, vyberte ho a pak vyberte **zobrazit diagram** tlačítka panelu nástrojů nebo kliknutím pravým tlačítkem a vyberte **zobrazit diagram**. Můžete také vybrat jednotlivý diagram a kopírování, vyjmutí nebo odstranit z kontextu klikněte pravým tlačítkem na nebo **upravit** nabídky.
 
-Životnost interaktivní relace R je vázána životnost historii výkresu mezi všechny systémy windows. Pokud resetování relace R, nebo ukončete a restartujte Visual Studio, je resetovat historii vykreslení.
+Doba života napříč všechna okna Historie diagramů je vázán na životnost interaktivní relace R. Pokud resetovat relaci jazyka R nebo ukončete a restartujte aplikaci Visual Studio je resetovat vaše historie diagramů.
 
-## <a name="programmatically-manipulate-plot-windows"></a>Programově měnit windows vykreslení.
+## <a name="programmatically-manipulate-plot-windows"></a>Programově manipulovat s okna diagramů
 
-Vykreslení windows z kódu jazyka R, můžete upravit prostřednictvím kódu programu pomocí čísla zařízení identifikovat konkrétní výkresu windows. 
+Můžete programově měnit okna diagramů z kódu jazyka R pomocí čísla zařízení k identifikaci okna konkrétní diagramů. 
 
-- `dev.list()`: Seznam všech zařízení grafiky v aktuální relaci R.
-- `dev.new()`: Vytvoření nového zařízení grafiky (nové okno výkresu).
+- `dev.list()`: Seznam všech zařízení grafiky v rámci aktuální relace jazyka R.
+- `dev.new()`: Vytvoření nového zařízení grafiky (nové okno diagramů).
 - `dev.set(<device number>)`: Nastavte aktivní grafiky zařízení.
-- `dev.off()`: Odstraňte aktivní zařízení.
+- `dev.off()`: Odstraňte aktivních zařízení.

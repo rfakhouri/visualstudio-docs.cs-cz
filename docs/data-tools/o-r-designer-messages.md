@@ -1,5 +1,5 @@
 ---
-title: Návrhář zprávy O-R
+title: Zprávy Návrháře relací –
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
@@ -7,29 +7,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859864"
 ---
-# <a name="or-designer-messages"></a>Zprávy Návrhář relací objektů
+# <a name="or-designer-messages"></a>Zprávy Návrháře relací objektů
 
-Toto téma uvádí zprávy, které se můžete setkat při práci s Návrhář relací objektů.
+Toto téma obsahuje seznam zpráv, které se můžete setkat při práci s Návrháře relací objektů.
 
 ## <a name="in-this-section"></a>V tomto oddílu
 
- [Nelze vytvořit přidružení \<název přidružení >-vlastnosti uveden dvakrát.](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Nelze vytvořit přidružení \<název přidružení >-vlastnost je uvedená dvakrát](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [Nelze vytvořit přidružení \<přidružení name >-neodpovídají žádné typy vlastností](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [Nelze vytvořit přidružení \<název přidružení > – typy vlastností se neshodují.](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [Změnu návratového typu metody DataContext nelze vrátit zpět.](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Nelze načíst informace o schématu pro objekt databáze \<název objektu >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Nelze načíst informace o schématu pro databázový objekt \<název objektu >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Jeden nebo více vybraných databázových objektů vrací schéma, které se neshoduje se schématem cílové třídy.](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -43,7 +42,7 @@ Toto téma uvádí zprávy, které se můžete setkat při práci s Návrhář r
 
  [Vlastnost \<název vlastnosti > nelze odstranit](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [Vlastnost \<název vlastnosti > nelze odstranit, protože se účastní přidružení \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [Vlastnost \<název vlastnosti > nejde odstranit, protože se účastní asociace \<název přidružení >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Vybranou třídu nelze odstranit, protože se používá jako návratový typ u jedné nebo více metod DataContext.](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
@@ -61,5 +60,5 @@ Toto téma uvádí zprávy, které se můžete setkat při práci s Návrhář r
 
 ## <a name="see-also"></a>Viz také:
 
-- [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

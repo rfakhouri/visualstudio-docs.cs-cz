@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870450"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Postupy: nastavení časových limitů pro testovací kontroléry a testovací agenty
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Postupy: Nastavení časových limitů pro testovací kontroléry a testovací agenty
 
 Testovací kontrolér a testovací agent mají několik nastavení časového limitu, které určují, jak dlouho musí čekat na odpovědi od sebe nebo od zdroje dat, než oznámí chybu. Za určitých okolností může být nutné upravit hodnoty časového limitu podle potřeb vaší topologie nebo jiných problémů prostředí. Chcete-li upravit hodnoty časového limitu, upravte konfigurační soubor XML, který je spojen s testovacím kontrolérem nebo agentem, jak je popsáno v následující postupy.
 
@@ -28,7 +27,7 @@ Testovací kontrolér a testovací agent mají několik nastavení časového li
 
 Chcete-li upravit testovací kontrolér nebo testovacího agenta různá nastavení časového limitu, upravte následující konfigurační soubory pomocí názvů klíčů a hodnot v tabulkách:
 
--   Testovací kontrolér: *QTController.exe.config*
+-   Kontroler testů: *QTController.exe.config*
 
     |Název klíče|Popis|Hodnota|
     |-|-----------------|-|
@@ -119,5 +118,5 @@ Chcete-li upravit testovací kontrolér nebo testovacího agenta různá nastave
 - [Instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md)
 - [Úprava nastavení protokolování zátěžového testu](../test/modify-load-test-logging-settings.md)
 - [Konfigurace portů pro testovací kontroléry a testovací agenty](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Postupy: určení maximální velikosti souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
-- [Postupy: vytvoření vazby testovacího kontroléru nebo testovacího agenta na síťový adaptér](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Postupy: Zadejte maximální velikost souboru protokolu](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [Postupy: Svázat testovací kontrolér nebo testovacího agenta na síťový adaptér](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

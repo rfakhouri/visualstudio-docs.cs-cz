@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierEx2 | Microsoft Docs
-ms.custom: ''
+title: IDebugPortSupplierEx2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ba4b16837200f729ec4f8b9061dbb321ee58ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbc58f85a084711057e2ad46b03a1ac0f6fb8f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866774"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-Poskytuje podporu pro dodavatele port a vyberte interakci s jádra serveru.  
+Poskytuje podporu pro dodavatele portu vyberte a interakci s jádra serveru.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,10 +27,10 @@ IDebugPortSupplierEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní implementuje dodavatele vlastní port, aby ho můžete vybrat server core, aby používal.  
+ Dodavatel port. Tento vlastní port implementuje toto rozhraní tak, aby ho můžete vybrat jádra serveru k použití.  
   
 ## <a name="methods"></a>Metody  
- Následující tabulka uvádí metody **IDebugPortSupplierEx2**.  
+ V následující tabulce jsou uvedeny metody objektu **IDebugPortSupplierEx2**.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
@@ -42,9 +39,9 @@ IDebugPortSupplierEx2 : IUnknown
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

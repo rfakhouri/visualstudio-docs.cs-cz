@@ -1,9 +1,6 @@
 ---
 title: 'Kontrolní seznam: Vytvoření nových typů projektů | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861582"
 ---
 # <a name="checklist-create-new-project-types"></a>Kontrolní seznam: Vytvoření nových typů projektů
 Je třeba provést několik úloh, chcete-li vytvořit nový typ projektu. Následující kontrolní seznam obsahuje příručky s těmito úlohami:  
   
 1.  Navrhněte funkci pro nový typ projektu. Další informace najdete v tématu [rozhodnutí o návrhu typu projektu](../../extensibility/internals/project-type-design-decisions.md).  
   
-2.  Určí, editory, které se používají pro kód a další prvky projektu. Můžete použít základní nebo standardní editory, nebo můžete vytvořit a použít editoru pro konkrétní projekt. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../../extensibility/creating-custom-editors-and-designers.md) a [postupy: otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md).  
+2.  Určí, editory, které se používají pro kód a další prvky projektu. Můžete použít základní nebo standardní editory, nebo můžete vytvořit a použít editoru pro konkrétní projekt. Další informace najdete v tématu [vytváření vlastních editorů a návrhářů](../../extensibility/creating-custom-editors-and-designers.md) a [jak: Otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md).  
   
 3.  Určete úroveň vaší položky projektu budou mít v účasti **zobrazení tříd** a **prohlížeče objektů**. Další informace najdete v tématu [podpůrné nástroje procházení symbolů](../../extensibility/internals/supporting-symbol-browsing-tools.md).  
   

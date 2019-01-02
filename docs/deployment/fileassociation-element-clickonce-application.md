@@ -1,8 +1,6 @@
 ---
 title: '&lt;fileAssociation&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 78cdb22f2d87b67d5a29e8031358193526fa4b71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866160"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; – element (aplikace ClickOnce)
 Určuje příponu souboru, který se má přidružit aplikaci.  
@@ -44,10 +42,10 @@ Určuje příponu souboru, který se má přidružit aplikaci.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`extension`|Požadováno. Přípona souboru, který má být přidružena k aplikaci.|  
-|`description`|Požadováno. Popis typu souboru pro použití v prostředí.|  
-|`progid`|Požadováno. Název jednoznačně identifikující tento typ souboru.|  
-|`defaultIcon`|Požadováno. Určuje ikonu pro soubory s touto příponou. Soubor ikony musí být zadaný pomocí [ \<soubor > – Element](../deployment/file-element-clickonce-application.md) v rámci [ \<sestavení > Element](../deployment/assembly-element-clickonce-application.md) , který obsahuje tento element.|  
+|`extension`|Povinný parametr. Přípona souboru, který má být přidružena k aplikaci.|  
+|`description`|Povinný parametr. Popis typu souboru pro použití v prostředí.|  
+|`progid`|Povinný parametr. Název jednoznačně identifikující tento typ souboru.|  
+|`defaultIcon`|Povinný parametr. Určuje ikonu pro soubory s touto příponou. Soubor ikony musí být zadaný pomocí [ \<soubor > – Element](../deployment/file-element-clickonce-application.md) v rámci [ \<sestavení > Element](../deployment/assembly-element-clickonce-application.md) , který obsahuje tento element.|  
   
 ## <a name="remarks"></a>Poznámky  
  Tento element musí obsahovat odkaz na obor názvů XML "urn: schémata-microsoft-com:clickonce.v1". Pokud `<fileAssociation>` element se používá, musí být pozdější než `<application>` v nadřazeném prvku [ \<sestavení > Element](../deployment/assembly-element-clickonce-application.md).  

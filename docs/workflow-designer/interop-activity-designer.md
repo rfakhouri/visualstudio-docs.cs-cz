@@ -3,7 +3,6 @@ title: Návrhář postupu provádění – Návrhář aktivity Interop
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 66734cd555c88d960431373d4ccf6a7ca0b39099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867287"
 ---
 # <a name="interop-activity-designer"></a>Návrhář aktivity Interop
 
@@ -48,7 +47,7 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.Interop> vlast
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.Interop> aktivity. Výchozí hodnota je **Interop**. I když není potřeba zobrazovaného názvu, doporučujeme poskytnout.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Hodnota TRUE|Určuje typ aktivity obsažených <xref:System.Activities.Statements.Interop> aktivity. Tento typ zadán musí být odvozen od <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Pravda|Určuje typ aktivity obsažených <xref:System.Activities.Statements.Interop> aktivity. Tento typ zadán musí být odvozen od <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Viz také:
 

@@ -2,7 +2,6 @@
 title: Krok z C# kódu při zásobník volání chybějí nativní rámce | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,14 +23,14 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 741afb6befdbc29cafab39c3c9b0d7bb2761d7b1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2759df7cc59f4d0167e1ef44dfb9cc65d16ba815
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867433"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně Zásobník volání chybějí nativní rámce.
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce
 
 Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník volání** okno krokování mimo spravovaný kód může vést k neočekávaným výsledkům. Jako alternativní řešení můžete použít zarážku místo **Krokovat s Vystoupením**.
 
@@ -48,4 +47,4 @@ Pokud má váš kód nativní rámce, které jsou viditelné ve **zásobník vol
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použití okna Zásobník volání](../debugger/how-to-use-the-call-stack-window.md)
+- [Postupy: Použijte okno zásobníku volání](../debugger/how-to-use-the-call-stack-window.md)

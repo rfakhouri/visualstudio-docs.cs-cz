@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e26401247c2b6cefc3d86dbd5b6e80adfe473937
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: e76766eb3b90dd2a515c7622217febfaffe313c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865255"
 ---
 # <a name="properties-of-connectors"></a>Vlastnosti konektorů
 Konektory představují vztahy domén ve vygenerovaném návrháři.
@@ -27,11 +26,11 @@ Konektory představují vztahy domén ve vygenerovaném návrháři.
 
 |Vlastnost|Popis|Výchozí|
 |-|-|-|
-|Barva|Barva této spojnice.|Černá|
+|Barva|Barva této spojnice.|Black|
 |Styl přerušování|Styl přerušování čáry této spojnice (plný, Dash, tečka, DashDot, DashDotDot nebo vlastní).|Plná|
-|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|
-|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádné|
-|Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto konektorem.|Černá|
+|Styl počátku|Styl počátku této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|
+|Styl konce|Styl konce této spojnice (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond nebo žádný).|Žádná|
+|Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto konektorem.|Black|
 |Tloušťka|Tloušťka čáry této spojnice v palcích.|0.03125|
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|
 |Vlastní atributy|Použít k přidání atributů do třídy zdrojový kód, který je generován z tohoto konektoru.|\<žádné >|

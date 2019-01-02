@@ -3,7 +3,6 @@ title: Návrhář postupu provádění – Návrhář aktivity PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e45c8ec2d7af5f1bfde5e145607728d3ff0bc85d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860254"
 ---
 # <a name="pickbranch-activity-designer"></a>Návrhář aktivity PickBranch
 
@@ -57,7 +56,7 @@ V následující tabulce jsou uvedeny nejužitečnější <xref:System.Activitie
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|Popisný název zobrazovaný v záhlaví **PickBranch** návrháře. Výchozí hodnota je větev.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> není bezpodmínečně nutné, je osvědčeným postupem je použití jednoho.|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Hodnota TRUE|Každý <xref:System.Activities.Statements.PickBranch> obsahuje <xref:System.Activities.Statements.PickBranch.Trigger%2A> akce, který může vyvolat <xref:System.Activities.Statements.PickBranch.Action%2A>.|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Pravda|Každý <xref:System.Activities.Statements.PickBranch> obsahuje <xref:System.Activities.Statements.PickBranch.Trigger%2A> akce, který může vyvolat <xref:System.Activities.Statements.PickBranch.Action%2A>.|
 |<xref:System.Activities.Statements.PickBranch.Action%2A>|False|Každý <xref:System.Activities.Statements.PickBranch> obsahuje <xref:System.Activities.Statements.PickBranch.Action%2A> , která se spustí, pokud aktivuje.|
 
 ## <a name="see-also"></a>Viz také:

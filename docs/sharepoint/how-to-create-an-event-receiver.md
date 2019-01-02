@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vytvoření přijímače událostí | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření přijímače událostí | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861569"
 ---
-# <a name="how-to-create-an-event-receiver"></a>Postupy: vytvoření přijímače událostí
+# <a name="how-to-create-an-event-receiver"></a>Postupy: Vytvoření přijímače událostí
   Vytvořením *přijímače událostí*, reagovat, když uživatel komunikuje s položek služby SharePoint, například seznamy nebo položky seznamu. Kód v přijímače událostí například může aktivuje, když uživatel změní kalendář nebo odstraní názvu ze seznamu kontaktů. Podle tohoto tématu se dozvíte, jak přidat přijímače událostí pro instanci seznamu.
 
- K dokončení těchto kroků, je třeba mít nainstalovanou [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a podporované edice systému Windows a SharePoint. Vzhledem k tomu, že tento příklad vyžaduje projektu služby SharePoint, je také nutné dokončit postup v tématu [návod: vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+ K dokončení těchto kroků, je třeba mít nainstalovanou [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a podporované edice systému Windows a SharePoint. Vzhledem k tomu, že tento příklad vyžaduje projektu služby SharePoint, je také nutné dokončit postup v tématu [názorný postup: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 ## <a name="adding-an-event-receiver"></a>Přidání přijímače událostí
- Projekt, který jste vytvořili v [návod: vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) zahrnuje sloupců vlastního webu, z vlastního seznamu a typu obsahu. V následujícím postupu budete rozbalte tento projekt tak, že přidáte obslužnou rutinu události jednoduché (přijímače událostí) na instanci seznamu do ukazují, jak zpracovávat události, ke kterým dochází v položky služby SharePoint, například v seznamech.
+ Projekt, který jste vytvořili v [názorný postup: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) zahrnuje sloupců vlastního webu, z vlastního seznamu a typu obsahu. V následujícím postupu budete rozbalte tento projekt tak, že přidáte obslužnou rutinu události jednoduché (přijímače událostí) na instanci seznamu do ukazují, jak zpracovávat události, ke kterým dochází v položky služby SharePoint, například v seznamech.
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Chcete-li přidat přijímače událostí pro instanci seznamu
 
-1.  Otevřete projekt, který jste vytvořili v [návod: vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1.  Otevřete projekt, který jste vytvořili v [názorný postup: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
 2.  V **Průzkumníka řešení**, zvolte uzel projektu služby SharePoint, který se nazývá **Clinic**.
 

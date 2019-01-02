@@ -2,7 +2,6 @@
 title: Referenční informace ke schématu fragmentů kódu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a39040bb76181a7a36e9d8f7b19aa0b4390c400
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864711"
 ---
 # <a name="code-snippets-schema-reference"></a>Referenční informace ke schématu fragmentů kódu
 
@@ -271,7 +270,7 @@ Určuje obecné informace o fragmentu kódu technologie IntelliSense.
 |-------------------|-----------------|
 |[Element Autor](../ide/code-snippets-schema-reference.md#author-element)|Volitelný element. Jméno osoby nebo společnosti, která fragment kódu vytvořila. Může být žádný nebo jeden `Author` prvky `Header` elementu.|
 |[Description – element](../ide/code-snippets-schema-reference.md#description-element)|Volitelný element. Popis fragmentu kódu. Může být žádný nebo jeden `Description` prvky `Header` elementu.|
-|[Helpurl – element](../ide/code-snippets-schema-reference.md#helpurl-element)|Volitelný element. Adresa URL s dalšími informacemi o fragmentu kódu. Může být žádný nebo jeden `HelpURL` prvků v záhlaví elementu. **Poznámka:** nepoužívá sady Visual Studio `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.|
+|[Helpurl – element](../ide/code-snippets-schema-reference.md#helpurl-element)|Volitelný element. Adresa URL s dalšími informacemi o fragmentu kódu. Může být žádný nebo jeden `HelpURL` prvků v záhlaví elementu. **Poznámka:**  Visual Studio nebude používat `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.|
 |[Element Keyword](../ide/code-snippets-schema-reference.md#keywords-element)|Volitelný element. Skupiny `Keyword` elementy. Může být žádný nebo jeden `Keywords` prvky `Header` elementu.|
 |[Shortcut element](../ide/code-snippets-schema-reference.md#shortcut-element)|Volitelný element. Určuje textovou zkratku, pomocí níž lze fragment kódu vložit. Může být žádný nebo jeden `Shortcut` prvky `Header` elementu.|
 |[Snippettypes – element](../ide/code-snippets-schema-reference.md#snippettypes-element)|Volitelný element. Skupiny `SnippetType` elementy. Může být žádný nebo jeden `SnippetTypes` prvky `Header` elementu. Pokud neexistují žádné `SnippetTypes` prvky, fragment kódu je vždy platný.|

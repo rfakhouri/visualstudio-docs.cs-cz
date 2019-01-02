@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: RPC vyžaduje ověření. | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: RPC vyžaduje ověření. | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.rpc_requires_authentication
@@ -16,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 214dafa5acc925434cf3569570f20ab7f3331bfb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 66f319ba24a52a99994e693774aa9e7c0db7757e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874404"
 ---
 # <a name="error-rpc-requires-authentication"></a>Chyba: RPC vyžaduje ověření.
-Ladicí program Visual Studio se nemůže připojit ke vzdálenému počítači. Zásada protokolu RPC je povoleno v místním počítači, což zabraňuje vzdálené ladění.  
+Visual Studio debugger se nemůže připojit ke vzdálenému počítači. Zásady protokolu RPC je povoleno v místním počítači, což znemožňuje vzdálené ladění.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
@@ -34,4 +32,4 @@ Ladicí program Visual Studio se nemůže připojit ke vzdálenému počítači.
   
 3.  Změna v registru se projeví až po restartování počítače.  
   
-4.  Pokud potíže potrvají, obraťte se na správce domény o **konfigurace počítače > šablony pro správu > Systém > vzdálené volání procedur > omezení pro klienty neověřené RPC** zásady skupiny nastavení.
+4.  Pokud se problém nevyřeší, obraťte se na správce domény o **konfigurace počítače > šablony pro správu > Systém > vzdálené volání procedur > omezení pro klienty neověřené RPC** zásady skupiny nastavení.

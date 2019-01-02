@@ -1,9 +1,6 @@
 ---
 title: Sada Microsoft Office není v tomto počítači nainstalována.
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.OfficeNotInstalled
@@ -15,22 +12,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e781612e051b281b340c3744d2fbb1e6a1e834d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0f1bfb5a4b46e7f965e66e82ee1506252bd3eba1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873918"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>V počítači není nainstalována aplikace Microsoft Office
-  Aplikace Microsoft Office, která odpovídá typu projektu nelze najít sady Visual Studio. Pokud vyvíjíte projektu doplňku VSTO, znamená to, že nelze ladění a spusťte projekt. Pokud se pokoušíte vytvořit projekt na úrovni dokumentu a, znamená to, že nelze vytvořit projekt.  
+  Visual Studio nemůže najít aplikaci Microsoft Office, který odpovídá typu projektu. Pokud vyvíjíte projekt doplňku VSTO, znamená to, že nemůžete ladit ani spustit projekt. Pokud se pokoušíte vytvořit projekt úrovni dokumentu, to znamená, že nelze vytvořit projekt.  
   
-## <a name="to-correct-the-error"></a>Opravte chybu  
+## <a name="to-correct-the-error"></a>Chcete-li opravit chyby  
   
-1.  Nainstalujte aplikaci Microsoft Office přidruženou typ projektu, včetně primární spolupracující sestavení. Další informace o podporovaných verzích systému Microsoft Office, najdete v části [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
+1.  Instalace aplikace Microsoft Office přidruženou k typu projektu, včetně primárních sestavení vzájemné spolupráce. Další informace o podporovaných verzích systému Microsoft Office, naleznete v tématu [konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-  
-  

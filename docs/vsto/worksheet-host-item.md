@@ -1,9 +1,6 @@
 ---
 title: Hostitelská položka Worksheet
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,42 +20,42 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4052e7d9b096d9bae6671834369ece6d31bee4a0
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866735"
 ---
 # <a name="worksheet-host-item"></a>Hostitelská položka Worksheet
-  <xref:Microsoft.Office.Tools.Excel.Worksheet> Hostitelská položka je typ, který rozšiřuje <xref:Microsoft.Office.Interop.Excel.Worksheet> typu ze sestavení primární spolupráce pro aplikaci Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet> Hostitelská položka poskytuje všechny stejné vlastnosti, metod a události <xref:Microsoft.Office.Interop.Excel.Worksheet> objektu, ale také zpřístupní další události a slouží jako kontejner pro hostitele a ovládacích prvků Windows Forms.  
+  <xref:Microsoft.Office.Tools.Excel.Worksheet> Hostitelský objekt je typ, který rozšiřuje <xref:Microsoft.Office.Interop.Excel.Worksheet> typu ze sestavení primární spolupráce pro aplikaci Excel. <xref:Microsoft.Office.Tools.Excel.Worksheet> Hostitelský objekt poskytuje všechny stejné vlastnosti, metody a události <xref:Microsoft.Office.Interop.Excel.Worksheet> objektu, ale také poskytuje další události a funguje jako kontejner pro hostitelské ovládací prvky a ovládací prvky Windows Forms.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položek do projektu v době návrhu. V doplňku VSTO projekty, můžete vygenerovat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položky v době běhu.  
+ Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostovat položky do projektu v době návrhu. V doplňku VSTO projektů, můžete vygenerovat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostovat položky v době běhu.  
   
-## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Pochopení list – hostitelské položky v projekty na úrovni dokumentu  
- Když vytvoříte projekt na úrovni dokumentu pro Excel, Visual Studio automaticky vytvoří tři <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položky v projektu. Výchozí názvy sešitů jsou `Sheet1`, `Sheet2`, a `Sheet3`. Pokud vytvoříte projekt založený na existující sešit, počet položek hostitele, které závisí na počtu listů v sešitu.  
+## <a name="understand-worksheet-host-items-in-document-level-projects"></a>Vysvětlení list – hostitelské položky v projektech na úrovni dokumentu  
+ Při vytváření projektu úrovni dokumentu pro Excel, sada Visual Studio automaticky vytvoří tři <xref:Microsoft.Office.Tools.Excel.Worksheet> hostovat položky v projektu. Výchozí názvy z listů `Sheet1`, `Sheet2`, a `Sheet3`. Pokud vytvoříte projekt založený na existující sešit, počet položek hostitele, které závisí na počtu listů v sešitu.  
   
- Tyto třídy listu umožňují přístup k členy <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelská položka provádět základní úkoly ve vašem vlastním přizpůsobení, jako je například úprava obsah listu. Tyto třídy můžete také použít k přidávání ovládacích prvků do listů. Kombinování různé sady ovládacích prvků a psaní kódu, že ovládací prvky můžete vázat na data, shromáždit informace od uživatele a reagovat na akce uživatele. Další informace najdete v tématu [programu úpravy na úrovni dokumentů](../vsto/programming-document-level-customizations.md).  
+ Tyto třídy list poskytují přístup k členům <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt pro provádění základních úloh ve vašem vlastním přizpůsobení, jako je třeba změna obsah listu. Tyto třídy můžete také použít k přidávání ovládacích prvků na listech. Díky kombinaci různých sad ovládací prvky a psaní kódu, že můžete svázat ovládací prvky k datům, shromažďování informací od uživatele a reagovat na akce uživatele. Další informace najdete v tématu [programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).  
   
- Třídy listu zadejte umístění, ve kterém můžete spustit psaní kódu v projektu. Protože třída poskytuje všechny stejné vlastnosti, metod a události, jako <xref:Microsoft.Office.Interop.Excel.Worksheet> objektu v primární spolupracující sestavení pro aplikaci Excel, můžete také použít tyto třídy pro přístup k modelu objektů aplikace Excel. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
+ Tříd listu zadat umístění, ve kterém můžete začít psát kód ve vašem projektu. Protože třída poskytuje všechny stejné vlastnosti, metody a události, jako <xref:Microsoft.Office.Interop.Excel.Worksheet> objektu ve primárního spolupracujícího sestavení pro aplikaci Excel, tyto třídy můžete také použít pro přístup k modelu objektů aplikace Excel. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
   
- Projekty na úrovni dokumentu, můžete přidat další <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položek do projektu v době návrhu tak, že přidáte do nového sešitu v sešitu v návrháři.  
+ V projektech na úrovni dokumentu, můžete přidat další <xref:Microsoft.Office.Tools.Excel.Worksheet> hostovat položky do projektu v době návrhu tak, že přidáte do nového listu v sešitu v návrháři.  
   
-### <a name="rename-worksheets"></a>Přejmenování listů  
- V projektech na úrovni dokumentu můžete přejmenovat listy v návrháři Visual Studio, ale tato operace změní jenom zobrazovaný název listu. Programový název je stále výchozí název listu. Pokud přejmenujete na listu v **vlastnosti** okně jenom programové název mění.  
+### <a name="rename-worksheets"></a>Přejmenovat listů  
+ V projektu úrovni dokumentu můžete přejmenovat listů v návrháři aplikace Visual Studio, ale pouze změní zobrazovaný název listu. Výchozí název listu je stále programový název. Pokud přejmenujete do listu **vlastnosti** okno programový název se změní.  
   
-### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Omezení hostitelská položka worksheet v projekty na úrovni dokumentu  
- Nelze vytvořit nový <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položky v době běhu v projektech na úrovni dokumentu. Pokud vytvoříte nový sešit aplikace Excel. v době běhu, bude typu <xref:Microsoft.Office.Interop.Excel.Worksheet>. Protože není položku hostitele, nemůže obsahovat žádné hostitelské ovládací prvky nebo ovládací prvky Windows Forms. Další informace o vytváření dokumentů v době běhu najdete v tématu [postupy: přidávání nových listů do sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
+### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Omezení hostitelská položka worksheet v projektech na úrovni dokumentu  
+ Nelze vytvořit nový <xref:Microsoft.Office.Tools.Excel.Worksheet> hostovat položky za běhu v projektu úrovni dokumentu. Pokud vytvoříte nový Excelový list za běhu, budou typu <xref:Microsoft.Office.Interop.Excel.Worksheet>. Protože se nejedná hostitelská položka, nemůže obsahovat všechny hostitelské ovládací prvky nebo ovládacích prvků Windows Forms. Další informace o vytváření dokumentů v době běhu, naleznete v tématu [jak: Přidávání nových listů do sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).  
   
-## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Pochopení list – hostitelské položky v projekty doplňku VSTO  
- V projektech na úrovni aplikace, můžete vygenerovat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položky v době běhu pro všechny listu, která je otevřít v aplikaci Excel. Můžete použít <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelská položka k přidávání ovládacích prvků do přidružených listu, nebo události, které nejsou k dispozici na <xref:Microsoft.Office.Interop.Excel.Worksheet> objekty.  
+## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Vysvětlení list – hostitelské položky v projekty doplňků VSTO  
+ V projektech na úrovni aplikace, můžete vygenerovat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelské položky v době běhu pro jakékoli list, který je otevřen v aplikaci Excel. Můžete použít <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt k přidávání ovládacích prvků do přidružené listu, nebo pro zpracování událostí, které nejsou k dispozici na <xref:Microsoft.Office.Interop.Excel.Worksheet> objekty.  
   
- Generovat <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelská položka, použijte `GetVstoObject` metoda. Další informace najdete v tématu [dokumentů rozšířit aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Ke generování <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitelský objekt, použijte `GetVstoObject` metody. Další informace najdete v tématu [rozšíření Wordových dokumentů a Excelových sešitů v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Viz také:  
- [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)   
  [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
@@ -66,5 +63,3 @@ ms.locfileid: "35258915"
  [Hostitelská položka Workbook](../vsto/workbook-host-item.md)   
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

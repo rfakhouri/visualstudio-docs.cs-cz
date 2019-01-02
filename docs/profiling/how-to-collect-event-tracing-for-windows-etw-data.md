@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: shromažďovat trasování událostí pro Windows (ETW) Data | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Shromažďování trasování událostí pro Windows (ETW) Data | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.events
@@ -15,27 +13,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd8016b14d91157942ed8d5e4a987df0009f6af3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8a619820cd2c6a3a884c7279d4eb9ffc9741619d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863636"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Postupy: shromažďování dat trasování událostí pro Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Postupy: Shromažďování dat trasování událostí pro Windows (ETW)
 
-Události trasování událostí pro Windows (ETW) je zařízení efektivní jádra úroveň trasování, které umožňuje jádra protokolu profileru nebo události definované aplikací. Data, která se shromažďují ze zprostředkovatele událostí lze zobrazit pouze pomocí /**souhrn: ETW** možnost [vsperfreport –](../profiling/vsperfreport.md) nástroj příkazového řádku. Tato sestava slouží k určení, kde dojde k problémům s výkonem v aplikaci.
+Event Tracing for Windows (ETW) je efektivní sledování na úrovni jádra zařízení, která umožňuje profileru jádra protokolu nebo události definované aplikací. Data, která se shromažďují ze zprostředkovatele událostí může zobrazit pouze pomocí /**Summary: ETW** možnost [VSPerfReport](../profiling/vsperfreport.md) nástroj příkazového řádku. Tato sestava slouží k určení, kdy dojde k problémům s výkonem v aplikaci.
 
 > [!NOTE]
-> Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Rozšířené funkce zabezpečení v systému Windows 8 a Windows Server 2012 vyžadují významné změny ve způsobu, jakým profiler systému Visual Studio na těchto platformách shromažďuje data. U aplikací pro UPW také vyžadují nové techniky kolekce. Zobrazit [nástroje pro výkon v aplikacích Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-## <a name="to-enable-event-trace-providers"></a>Chcete-li povolit zprostředkovatelé trasování událostí
+## <a name="to-enable-event-trace-providers"></a>Povolení zprostředkovatelé trasování událostí
 
-1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na výkonnostní relace a pak klikněte na tlačítko **vlastnosti**.
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu a pak klikněte na tlačítko **vlastnosti**.
 
-2. V **stránky vlastností**, klikněte **události systému Windows** vlastnosti.
+2. V **stránky vlastností**, klikněte na tlačítko **události Windows** vlastnosti.
 
-3. V **zprostředkovatel trasování událostí vyberte ke shromažďování dat z** vyberte zprostředkovatelů událostí, které chcete použít pro profil aplikace.
+3. V **vyberte poskytovatel trasování pro shromažďování dat z** vyberte zprostředkovatele událostí, které chcete použít pro profilování aplikace.
 
 ## <a name="see-also"></a>Viz také:
 

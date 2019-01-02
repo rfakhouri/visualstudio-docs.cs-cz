@@ -1,9 +1,6 @@
 ---
 title: Spuštění programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab4432eed95fd042bd35d34b6a42d3cd036fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862150"
 ---
 # <a name="launch-a-program"></a>Spuštění programu
 Uživatelé, kteří chtějí ladění programu, můžete stisknout **F5** spustit ladicí program v prostředí IDE. Tím se zahájí řadu událostí, takže v konečném důsledku vzniklé v rozhraní IDE propojíte ladicího stroje (DE), který je zase připojení nebo připojení k programu následujícím způsobem:  

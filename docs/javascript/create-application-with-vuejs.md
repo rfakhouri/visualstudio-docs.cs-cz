@@ -3,7 +3,6 @@ title: Vytvoření aplikace Vue.js pomocí Node.js
 description: Můžete vytvářet aplikace Node.js v sadě Visual Studio pomocí rozhraní Vue.js
 ms.custom: seodec18
 ms.date: 07/06/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 03576347dc740f44a04ca38150abde458338ef14
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857720"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Vytvoření aplikace Vue.js pomocí Node.js Tools for Visual Studio
 

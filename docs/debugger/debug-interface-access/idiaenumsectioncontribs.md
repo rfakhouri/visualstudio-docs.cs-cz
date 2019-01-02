@@ -1,8 +1,6 @@
 ---
-title: Idiaenumsectioncontribs – | Microsoft Docs
-ms.custom: ''
+title: Idiaenumsectioncontribs – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,42 +12,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5903c276b82f8b689e67c20310ccc6d6a6514896
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 20b64b561c5b033a270458c258a418b4483f733b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859448"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-Vytvoří výčet různé části příspěvky obsažené v datovém zdroji.  
+Vytvoří výčet různé části příspěvků obsažené ve zdroji dat.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaEnumSectionContribs : IUnknown  
+IDiaEnumSectionContribs : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaEnumSectionContribs`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaEnumSectionContribs`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Načte [IEnumVARIANT rozhraní](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) verzi této enumerátor.|  
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Načte číslo oddílu příspěvky.|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Načte část příspěvky prostřednictvím indexu.|  
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Načte zadaný počet příspěvky oddíl v pořadí výčtu.|  
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Přeskočí zadaný počet části příspěvky v posloupnosti výčtu.|  
-|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Načte [rozhraní IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) verzi výčet.|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Získá počet příspěvků oddílu.|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Načte části příspěvků prostřednictvím indexu.|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Načte zadaný počet příspěvků oddíl v pořadí výčtu.|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Vynechá zadaný počet části příspěvků v sekvenci výčtu.|  
+|[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Návrat na začátek sekvence výčtu.|  
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.|  
   
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="note-for-callers"></a>Poznámky pro volající  
- Získat toto rozhraní [idiasession::getenumtables –](../../debugger/debug-interface-access/idiasession-getenumtables.md) metoda. Podívejte se na příklad podrobnosti.  
+ Získat z tohoto rozhraní [idiasession::getenumtables –](../../debugger/debug-interface-access/idiasession-getenumtables.md) metody. Podívejte se na příklad podrobnosti.  
   
 ## <a name="example"></a>Příklad  
- Tento příklad ukazuje, jak získat ( `GetEnumSectionContribs` funkce) a použít ( `ShowSectionContribs` funkce) `IDiaEnumSectionContribs` rozhraní. Více kompletní příklad, jak pomocí části příspěvků, najdete v článku [idiasectioncontrib –](../../debugger/debug-interface-access/idiasectioncontrib.md) rozhraní.  
+ Tento příklad ukazuje, jak získat ( `GetEnumSectionContribs` funkce) a použití ( `ShowSectionContribs` funkce) `IDiaEnumSectionContribs` rozhraní. Úplný příklad použití části příspěvků, najdete v článku [idiasectioncontrib –](../../debugger/debug-interface-access/idiasectioncontrib.md) rozhraní.  
   
 ```C++  
   
@@ -102,13 +100,13 @@ void ShowSectionContribs(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getenumtables –](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

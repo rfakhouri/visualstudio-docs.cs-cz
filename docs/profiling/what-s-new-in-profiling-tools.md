@@ -1,8 +1,6 @@
 ---
-title: Co je nového v profilaci | Microsoft Docs
-ms.custom: ''
+title: Co je nového v profilaci | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling
@@ -13,28 +11,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0acc7d48967fba4e05d139a6f84107800cea5393
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296361"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865476"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v nástrojích pro profilaci v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v nástrojích pro profilaci [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-Nástroje pro diagnostiku zahrnují nové vizualizace můžete identifikovat problémy ve vaší aplikaci, potřebujete opravit. Diagnostické nástroje nyní zahrnují podporu pro aplikace ASP.NET.
+Diagnostické nástroje zahrnují nové vizualizace, abyste mohli snadno identifikovat problémy ve vaší aplikaci vyžadující opravu. Diagnostické nástroje nyní zahrnují podporu pro aplikace ASP.NET.
 
 Další informace najdete v tématu [poznámky k verzi pro [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
 
-A **Souhrn** přidala karta nástroje, které vám pomůže se zaměřit na klíčové oblasti pro analýzy výkonu. Na této kartě ukazuje, kolik události došlo, umožňuje pořízení snímků halda a umožňuje rychle Povolit shromažďování dat o využití procesoru. Toto zobrazení uvádí všechny [Application insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) nebo [uživatelského rozhraní analysis](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) události. Pro Visual Studio Enterprise, je kromě toho toto zobrazení také uvádí události IntelliTrace.
+A **Souhrn** přidala karta nástroje, které vám umožní zaměřit se na klíčové oblasti pro analýzu výkonu. Tato karta ukazuje, kolik události došlo, umožňuje pořizovat snímky haldy a umožňuje rychle Povolit shromažďování dat o využití procesoru. Toto zobrazení uvádí některé [Application insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) nebo [Analýza uživatelského prostředí](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis) události. Pro Visual Studio Enterprise, je navíc toto zobrazení také zobrazuje události IntelliTrace.
 
-![Karta se souhrnem nástroje pro diagnostiku](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
+![Karta Souhrn nástroje Diagnostika](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 
-Má nástroj využití procesoru [nové vizualizace](../profiling/Beginners-Guide-to-Performance-Profiling.md) usnadňující identifikaci funkce, které se nejpravděpodobněji způsobovat problémy s výkonem. Nové **volající/volaný** zobrazení umožňuje prozkoumat náklady funkce volání provedená do a z vybrané funkce.
+Nástroj využití procesoru je [nové vizualizace](../profiling/Beginners-Guide-to-Performance-Profiling.md) ke snadnější identifikaci funkce, které bývají nejčastějším způsobovat problémy s výkonem. Nové **volající/volaný** zobrazení umožňuje prozkoumat náklady na volání do a z vybrané funkce.
 
-![Diagnostické nástroje volající volaný – zobrazení](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+![Diagnostické nástroje volající/volaný zobrazení](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
 ## <a name="see-also"></a>Viz také:
 
 - [Profil v sadě Visual Studio](../profiling/index.md)
-- [První pohled na nástroje pro profilaci](../profiling/profiling-feature-tour.md)
+- [Nejdřív se podívejte na nástroje pro profilaci](../profiling/profiling-feature-tour.md)

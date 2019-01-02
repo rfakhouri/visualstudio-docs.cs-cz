@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d56d71dd8c8e144c8a2267ed4571b661cca378c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 7014e59b41ff4d8e75fd5f983e6bf07c1e11378d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874048"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -145,7 +144,7 @@ Tento článek obsahuje následující úkoly pro Visual Studio Help Viewer inte
 
 4.  Přidání fragmentu kódu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Přidejte kód jazyka určitý text: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Všimněte si, že devLangnu = můžete zadat jiné jazyky. Například devLangnu = "Až po Fortran" se zobrazí až po Fortran při fragment kódu DisplayLanguage = až po Fortran
+5.  Přidejte kód jazyka určitý text:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Všimněte si, že devLangnu = můžete zadat jiné jazyky. Například devLangnu = "Až po Fortran" se zobrazí až po Fortran při fragment kódu DisplayLanguage = až po Fortran
 
 6.  Přidání odkazů na stránky: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -287,13 +286,13 @@ some F# code
 
  Když zdroj obsahu nápovědy výchozí aplikace Help Viewer je nastaven na online (spustit v prohlížeči):
 
-- Funkce sady Visual Studio Partner (VSP) generování hodnoty F1 kontejner objektů a dat (prefix.keyword vlastnosti kontejneru objektů a dat a předpona, která v registru byla nalezena online URL): F1 odešle URL VSP + parametry k prohlížeči.
+- Funkce sady Visual Studio Partner (VSP) generování hodnoty F1 kontejner objektů a dat (prefix.keyword vlastnosti kontejneru objektů a dat a předpona, která v registru byla nalezena online URL): F1 odešle URL VSP + parametry do prohlížeče.
 
-- Funkce sady Visual Studio (jazyk editor, Visual Studio specifické položky nabídek, atd.): F1 odešle Visual Studio adresu URL do prohlížeče.
+- Funkce sady Visual Studio (editor jazyka, Visual Studio specifické položky nabídek, atd.):  Visual Studio URL F1 odešle do prohlížeče.
 
   Když zdroj obsahu nápovědy výchozí aplikace Help Viewer je nastaven na místní nápovědy (spuštění v aplikaci Help Viewer):
 
-- VSP funkce, kde – klíčové slovo porovnává F1 kontejner objektů a dat a index místní úložiště (to znamená, že vlastnost prefix.keyword kontejner objektů a dat = hodnotu nalezenou v indexu místní úložiště): F1 vykreslí témat v Help Viewer.
+- VSP funkce, kde – klíčové slovo porovnává F1 kontejner objektů a dat a index místní úložiště (to znamená, že vlastnost prefix.keyword kontejner objektů a dat = hodnotu nalezenou v indexu místní úložiště):  F1 vykreslí témat v Help Viewer.
 
 - Funkce sady Visual Studio (žádná možnost pro VSP přepsání kontejner objektů a dat z funkce aplikace Visual Studio, protože ho): F1 vykreslí sady Visual Studio témat v Help Viewer.
 
@@ -329,7 +328,7 @@ some F# code
 
    **Základní analýza nativní Namespace**
 
-   Chcete-li při analýze základního nativní oboru názvů, v registru přidejte novou hodnotu DWORD s názvem: BaseNativeNamespaces a nastavte jej na hodnotu 1 (pod klíčem katalogu, které chtějí podporují).  Pokud chcete použít v katalogu sady Visual Studio, můžete například přidat klíč do cesty:
+   Zapnout základního oboru názvů nativní analýzu, v registru přidejte novou hodnotu DWORD s názvem: BaseNativeNamespaces a nastavte jej na hodnotu 1 (pod klíčem katalogu, které chtějí podporují).  Pokud chcete použít v katalogu sady Visual Studio, můžete například přidat klíč do cesty:
 
    HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
@@ -347,7 +346,7 @@ some F# code
 
   Přidejte následující klíč registru a hodnoty:
 
-  Klávesa HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic: výstup ladění zobrazovaný v hodnotě maloobchodní: Ano
+  Klíč HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\Dynamic nápovědy: Zobrazit výstup ladění maloobchodní hodnoty: ANO
 
   V prostředí IDE v položce nabídky Nápověda zvolte "Ladit kontext nápovědy"
 
@@ -377,7 +376,7 @@ some F# code
 
  Přizpůsobení prostředí značce balíčky se nainstalují podle produktu, který obsahuje aplikace Help Viewer.  Pro produkty Visual Studio:
 
-- Náhradní vlastní balíček (Branding_\<národní prostředí > .mshc) je nainstalována v kořenovém adresáři aplikace Help Viewer 2.1 (Příklad: C:\Program Files (x86) \Microsoft Help Viewer\v2.1) pomocí této aplikace Help Viewer jazykové sady.  Používá se pro případy, ve kterém není nainstalován produkt branding balíčku (žádný obsah nejsou nainstalované) nebo kde je nainstalovaný balíček značky poškozený.  Prvky sady Visual Studio (logo a zpětná vazba) jsou ignorovány při použití značky balíčku aplikace kořenové použití náhradní lokality.
+- Náhradní vlastní balíček (Branding_\<národní prostředí > .mshc) je nainstalována v kořenovém adresáři aplikace Help Viewer 2.1 (Příklad: Soubory (x86) \Microsoft Help Viewer\v2.1 C:\Program) pomocí této aplikace Help Viewer jazykové sady.  Používá se pro případy, ve kterém není nainstalován produkt branding balíčku (žádný obsah nejsou nainstalované) nebo kde je nainstalovaný balíček značky poškozený.  Prvky sady Visual Studio (logo a zpětná vazba) jsou ignorovány při použití značky balíčku aplikace kořenové použití náhradní lokality.
 
 - Při instalaci sady Visual Studio obsah z balíčku obsahu služby (pro první čas instalace obsahu scénář) je také nainstalována značky balíčku.  Pokud dojde k přizpůsobení prostředí značce balíčku aktualizace, je aktualizace nainstalována při další aktualizaci obsahu nebo akce instalace dalších balíčků se stane.
 
@@ -560,7 +559,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Soubor**|**Použití**|**Zobrazit zdroj obsahu**|
+|**File**|**Použití**|**Zobrazit zdroj obsahu**|
 |domovskastranka.htm|Toto je stránka, která zobrazuje aktuálně nainstalovaný obsah a jakékoli jiné zprávy, které jsou vhodné pro konkrétního uživatele o jejich obsahu.  Tento soubor obsahuje další obsah "Microsoft.Help.Id" data atributu meta = "-1" který nahradí to obsahu v horní části místního obsahu obsahu.||
 ||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, značka \<HomePageTitle >|
 ||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, značka \<HomePageIntroduction >|
@@ -595,7 +594,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Soubor**|**Použití**|**Příklady**|
+|**File**|**Použití**|**Příklady**|
 |Clear.GIF|Použije k vykreslení sbalitelné oblasti||
 |footer_slice.GIF|Prezentace zápatí||
 |info_icon.GIF|Při zobrazení informací o|Právní omezení|
@@ -617,7 +616,7 @@ some F# code
 
  Poznámka: v následujícím příkladu implementace jsme přidali balíček značky. To je důležité zahrnout zajistí potřebný prvky vykreslování obsahu sady Visual Studio a obsahu chování.
 
- Ukázkový soubor HelpContentSetup.msha: (nahradit "obsah nastaven název 1" a "obsahu, název sady 2" atd. s názvy souborů.)
+ Ukázkový soubor HelpContentSetup.msha: (Nahradit "obsah nastaven název 1" a "obsahu, název sady 2" atd. s názvy souborů.)
 
 ```
 <html>
@@ -732,7 +731,7 @@ some F# code
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12\en-us
 
-   Klíč: Hodnota řetězce CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] dokumentace
+   Klíč: Hodnota řetězce CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Dokumentace ke službě
 
   **Vytvoření projektu**
 
@@ -809,7 +808,7 @@ some F# code
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-USA
 
-     Klíč: Hodnota řetězce CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] dokumentaci. Pro prostředí ISO jde o název katalogu.
+     Klíč: Hodnota řetězce CatalogName: [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Dokumentace ke službě. Pro prostředí ISO jde o název katalogu.
 
 15. Zkopírujte obsah (soubory CAB nebo MSHC a MSHA) do místní složky.
 

@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861621"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapování závislostí pomocí map kódu
 
@@ -240,7 +239,7 @@ Předpokládejme, že máte přezkoumání kódu provést některé soubory s pr
 
 ## <a name="see-also"></a>Viz také:
 
-- [Video: porozumění celkové koncepci kódu pomocí map kódu Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [Video: Porozumění celkové koncepci kódu pomocí map kódu Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Mapování metod v zásobníku volání při ladění](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)

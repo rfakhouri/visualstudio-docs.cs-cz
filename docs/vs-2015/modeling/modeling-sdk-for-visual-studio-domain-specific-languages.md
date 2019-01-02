@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6fcddcb4dc1b615f88e4c78cd7de51402488601f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 13c5164dffa068420df1e0d5cc9951607666173e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865788"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Sada Modeling SDK pro sadu Visual Studio – jazyky domény
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,10 +76,10 @@ Pomocí sady SDK modelování pro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (
 
  [Vytvoření jazyka specifického pro doménu založeného na WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Postupy: Rozšíření Návrháře DSL](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Postupy: Rozšíření návrháře jazyka specifického pro doménu](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Verze sady Visual Studio podporované pro Visualization & Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Postupy: Migrace jazyka specifického pro doménu na novou verzi](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Postupy: Migrace jazyka specifického pro doménu na novou verzi.](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Referenční dokumentace rozhraní API k sadě Modeling SDK pro Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

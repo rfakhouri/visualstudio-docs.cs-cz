@@ -2,7 +2,6 @@
 title: Stránka Kompilovat, návrhář projektu (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 890754002c6b3d911b26fe7b1d6aa97b339880c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874888"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Stránka Kompilovat, návrhář projektu (Visual Basic)
 
@@ -44,7 +43,7 @@ Tato nastavení umožňují vybrat konfigurace a platformy k zobrazení a úprav
 
  **Konfigurace**
 
- Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Nastavení musí být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**. Další informace najdete v tématu [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md) a [postupy: vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
+ Určuje které nastavení konfigurace má být zobrazeno nebo upraveno. Nastavení musí být **ladění** (výchozí), **vydání**, nebo **všechny konfigurace**. Další informace najdete v tématu [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md) a [jak: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
 
  **Platforma**
 

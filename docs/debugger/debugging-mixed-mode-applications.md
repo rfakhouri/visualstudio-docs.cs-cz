@@ -1,8 +1,6 @@
 ---
 title: Ladění ve smíšeném režimu aplikací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4170a63597611bb190a6b3cf365b6dbced1bc9ae
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 5e489a57bddec04636e03cfe75b456b0220bf37d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858759"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Ladění aplikací ve smíšeném režimu
 Aplikace pracující v kombinovaném režimu je libovolná aplikace, která kombinuje nativní kód (jazyk C++) se spravovaným kódem (například jazyk Visual Basic, Visual C# nebo C++, který běží na modulu CLR). Ladění aplikací ve smíšeném režimu je z velké části transparentní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; není příliš odlišné od ladění režimu jedné aplikace. Existuje však několik důležitých informací.

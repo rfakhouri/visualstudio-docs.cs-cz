@@ -1,8 +1,6 @@
 ---
 title: Diagnostika problémů po nasazení | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 04/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860907"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostika problémů po nasazení pomocí technologie IntelliTrace
 
@@ -33,7 +31,7 @@ Diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použ
 
 -   Visual Studio Enterprise (ale ne edice Professional nebo Community) ke kontrole diagnostických dat a ladění kódu s použitím technologie IntelliTrace
 
-##  <a name="SetUpBuild"></a> Krok 1: Zahrnují informace o vaší verze sestavení
+##  <a name="SetUpBuild"></a> Krok 1: Zahrnout informace o sestavení s vaší verzí
  Nastavení procesu sestavení k vytvoření manifestu sestavení (*BuildInfo.config* souboru) pro vaše webového projektu a zahrnují tento manifest s vaší verzí. Tento manifest obsahuje informace o projektu, správy zdrojového kódu a systém sestavení, které byly použity k vytvoření konkrétního sestavení. Tyto informace pomáhají aplikaci Visual Studio po otevření protokolu nástroje IntelliTrace zaznamenané události zkontrolujte vyhledání odpovídajícího zdroje a symbolů.
 
 ###  <a name="AutomatedBuild"></a> Vytvoření manifestu sestavení pro automatické sestavení pomocí Team Foundation Server
@@ -160,7 +158,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
  Pokud nasadíte aplikaci pomocí jiné metody, ujistěte se, že manifest sestavení je přejmenován ze "*ProjectName*. BuildInfo.config"k"BuildInfo.config"a je umístěn ve stejné složce se souborem Web.config vaší aplikace na webovém serveru.
 
-## <a name="step-3-monitor-your-app"></a>Krok 3: Sledování vaší aplikace
+## <a name="step-3-monitor-your-app"></a>Krok 3: Sledování aplikace
  Nastavte monitorování výkonu aplikací na webovém serveru tak, aby sledování vaší aplikace pro problémy, zaznamenat diagnostické události a uložit tyto události do souboru protokolu IntelliTrace. Zobrazit [sledování vaší verze problémů s nasazováním](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ##  <a name="InvestigateEvents"></a> Krok 4: Nalezení příčiny problému
@@ -170,7 +168,7 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
 1.  Otevřete protokol nástroje IntelliTrace (soubor .iTrace) z Visual Studio Enterprise. Nebo stačí dvakrát klikněte na soubor, pokud máte Visual Studio Enterprise ve stejném počítači.
 
-2.  Zvolte **otevřete řešení** mít Visual Studio automaticky otevřela odpovídající řešení nebo projekt, pokud projekt nebyl vytvořen jako součást řešení. [Otázka: protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám dělat?](#InvalidConfigFile)
+2.  Zvolte **otevřete řešení** mít Visual Studio automaticky otevřela odpovídající řešení nebo projekt, pokud projekt nebyl vytvořen jako součást řešení. [DOTAZ: Protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám dělat?](#InvalidConfigFile)
 
      Automaticky odloží sada Visual Studio všechny čekající změny při otevření odpovídajícího řešení nebo projektu. Chcete-li získat další podrobnosti o této sadě odložených změn, podívejte **výstup** okno nebo **Team Exploreru**.
 
@@ -188,9 +186,9 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
      Chcete-li vytvořit pracovní prostor s konkrétními mapováními nebo názvem, který není názvem vašeho počítače, zvolte **spravovat**.
 
-     [Otázka: Proč sada Visual Studio říká, že je že můj vybraný pracovní prostor nezpůsobilý?](#IneligibleWorkspace)
+     [DOTAZ: Proč sada Visual Studio říká, že je že můj vybraný pracovní prostor nezpůsobilý?](#IneligibleWorkspace)
 
-     [Otázka: Proč nemohu pokračovat, dokud nevyberu kolekci týmu nebo jinou kolekci?](#ChooseTeamProject)
+     [DOTAZ: Proč nemohu pokračovat, dokud nevyberu kolekci týmu nebo jinou kolekci?](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnostikování problému s výkonem
 
@@ -250,12 +248,12 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
 ###  <a name="FAQ"></a> Q & A
 
-####  <a name="WhyInclude"></a> Otázka: Proč obsahují informace o projektu, správy zdrojového kódu, sestavení a symboly s vydání verze?
+####  <a name="WhyInclude"></a> DOTAZ: Proč obsahují informace o projektu, správy zdrojového kódu, sestavení a symboly s vydání verze?
  Visual Studio používá tyto informace k vyhledání odpovídajícího řešení a zdroje pro vydání, který se snažíte ladit. Po otevření protokolu nástroje IntelliTrace a vyberte událost pro spuštění ladění, Visual Studio používá symboly můžete najít a zobrazit je kód kde k události došlo. Potom můžete podívat na hodnoty, které byly zaznamenány a posunout dopředu nebo dozadu prostřednictvím provádění kódu.
 
  Pokud používáte TFS a tyto informace není v manifestu sestavení (soubor BuildInfo.config), Visual Studio vyhledá odpovídajícího zdroje a symboly na váš aktuálně připojený server TFS. Pokud aplikace Visual Studio nemůže najít správné sady TFS nebo odpovídající zdroj, budete vyzváni k výběru jiné sady TFS.
 
-####  <a name="InvalidConfigFile"></a> Otázka: protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám udělat?
+####  <a name="InvalidConfigFile"></a> DOTAZ: Protokol nástroje IntelliTrace neobsahuje informace o mé nasazené aplikaci. Proč k tomu? Co mám udělat?
  K tomu může dojít při nasazení z vývojového počítače nebo nejste připojeni k serveru TFS během nasazení.
 
 1.  Přejděte do složky vašeho projektu nasazení.
@@ -278,11 +276,11 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
   - **TFS**
 
-    - **ProjectCollectionUri**: identifikátor URI pro Team Foundation Server a projekt kolekce
+    - **ProjectCollectionUri**: Identifikátor URI pro Team Foundation Server a projekt kolekce
 
-    - **ProjectItemSpec**: cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
+    - **ProjectItemSpec**: Cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
 
-    - **ProjectVersionSpec**: verze projektu
+    - **ProjectVersionSpec**: Verze projektu
 
       Příklad:
 
@@ -298,13 +296,13 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
   - **Git**
 
-    - **GitSourceControl**: umístění **GitSourceControl** schématu
+    - **GitSourceControl**: Umístění **GitSourceControl** schématu
 
-    - **RepositoryUrl**: identifikátor URI pro Team Foundation Server, kolekce projektu a úložiště Git
+    - **RepositoryUrl**: Identifikátor URI pro Team Foundation Server, kolekce projektu a úložiště Git
 
-    - **ProjectPath**: cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
+    - **ProjectPath**: Cesta k souboru projektu vaší aplikace (.csproj nebo .vbproj)
 
-    - **CommitId**: id potvrzení
+    - **CommitId**: Id potvrzení
 
       Příklad:
 
@@ -322,15 +320,15 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
    Informace o systému sestavení, buď `"TeamBuild"` nebo `"MSBuild"`, a tyto požadované vlastnosti:
 
-  - **BuildLabel** (pro TeamBuild): název sestavení a číslo. Tento popisek se také používá jako název události nasazení. Další informace o čísla sestavení najdete v tématu [použít sestavení čísla poskytnout smysluplné názvy k dokončeným sestavením](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (pro TeamBuild): Název sestavení a číslo. Tento popisek se také používá jako název události nasazení. Další informace o čísla sestavení najdete v tématu [použít sestavení čísla poskytnout smysluplné názvy k dokončeným sestavením](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (doporučeno): seznam identifikátorů URI pro symboly (soubor PDB) oddělený středníky. Tyto identifikátory URI mohou být adresy URL nebo UNC. Díky tomu snadněji pro Visual Studio najít odpovídající symboly vám pomoci s laděním.
+  - **SymbolPath** (doporučeno): Seznam identifikátorů URI pro vaše umístění symbolů (soubor PDB) oddělený středníky. Tyto identifikátory URI mohou být adresy URL nebo UNC. Díky tomu snadněji pro Visual Studio najít odpovídající symboly vám pomoci s laděním.
 
-  - **BuildReportUrl** (pro TeamBuild): umístění sestavy sestavení na serveru TFS
+  - **BuildReportUrl** (pro TeamBuild): Umístění sestavy sestavení na serveru TFS
 
-  - **BuildId** (pro TeamBuild): identifikátor URI pro sestavení podrobnosti v sadě TFS. Pomocí tohoto identifikátoru URI slouží také jako ID události nasazení. To je id musí být jedinečné, pokud nepoužíváte typ TeamBuild.
+  - **BuildId** (pro TeamBuild): Identifikátor URI pro podrobnosti sestavení v sadě TFS. Pomocí tohoto identifikátoru URI slouží také jako ID události nasazení. To je id musí být jedinečné, pokud nepoužíváte typ TeamBuild.
 
-  - **BuiltSolution**: cesta k souboru řešení, které Visual Studio používá k vyhledání a otevření odpovídajícího řešení. Toto je obsah **SolutionPath** vlastnosti Msbuildu.
+  - **BuiltSolution**: Cesta k souboru řešení, která sadě Visual Studio používá k vyhledání a otevření odpovídajícího řešení. Toto je obsah **SolutionPath** vlastnosti Msbuildu.
 
     Příklad:
 
@@ -359,13 +357,13 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> Otázka: Proč sada Visual Studio říká, že je že můj vybraný pracovní prostor nezpůsobilý?
- **Odpověď:** vybraný pracovní prostor neobsahuje žádná mapování mezi složkou správy zdrojového kódu a místní složky. Chcete-li vytvořit mapování pro tento pracovní prostor, zvolte **spravovat**. V opačném případě zvolte již namapovaný pracovní prostor nebo vytvořte nový pracovní prostor.
+####  <a name="IneligibleWorkspace"></a> DOTAZ: Proč sada Visual Studio říká, že je že můj vybraný pracovní prostor nezpůsobilý?
+ **ODPOVĚĎ:** Vybraný pracovní prostor neobsahuje žádná mapování mezi složkou správy zdrojového kódu a místní složky. Chcete-li vytvořit mapování pro tento pracovní prostor, zvolte **spravovat**. V opačném případě zvolte již namapovaný pracovní prostor nebo vytvořte nový pracovní prostor.
 
  ![Otevřít ze správy zdrojových kódů s žádné namapovaný pracovní prostor](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> Otázka: Proč nemohu pokračovat, dokud nevyberu kolekci týmu nebo jinou kolekci?
- **Odpověď:** k tomu může dojít z některého z těchto důvodů:
+####  <a name="ChooseTeamProject"></a> DOTAZ: Proč nemohu pokračovat, dokud nevyberu kolekci týmu nebo jinou kolekci?
+ **ODPOVĚĎ:** K tomu může dojít z některého z těchto důvodů:
 
 -   Sada Visual Studio není připojena k serveru TFS.
 
@@ -381,10 +379,10 @@ Visual Studio 2017 se nenachází *BuildInfo.config* soubor, který je zastaral�
 
      ![Otevřít ze správy zdrojových kódů &#45; migrovat](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> Otázka: co je pracovní prostor?
- **Odpověď:** vaše [pracovní prostor ukládá kopie zdroje](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) takže můžete vyvinout a otestovat samostatně před vrácení práce se změnami. Pokud ještě nemáte pracovní prostor, který je přímo namapován na nalezené řešení nebo projekt, pak vás sada Visual Studio vyzve k výběru dostupného pracovního prostoru nebo k vytvoření nového pracovního prostoru s názvem vašeho počítače jako výchozím názvem pracovního prostoru.
+####  <a name="WhatWorkspace"></a> DOTAZ: Co je pracovní prostor?
+ **ODPOVĚĎ:** Vaše [pracovní prostor ukládá kopie zdroje](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) takže můžete vyvinout a otestovat samostatně před vrácení práce se změnami. Pokud ještě nemáte pracovní prostor, který je přímo namapován na nalezené řešení nebo projekt, pak vás sada Visual Studio vyzve k výběru dostupného pracovního prostoru nebo k vytvoření nového pracovního prostoru s názvem vašeho počítače jako výchozím názvem pracovního prostoru.
 
-####  <a name="UntrustedSymbols"></a> Otázka: Proč se zobrazí tato zpráva o nedůvěryhodných symbolech?
+####  <a name="UntrustedSymbols"></a> DOTAZ: Proč se zobrazí tato zpráva o nedůvěryhodných symbolech?
  ![Ladit s cestou nedůvěryhodných symbolech? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **Odpověď:** tato zpráva se zobrazí, když cesta symbolů v souboru manifestu sestavení (\<*ProjectName*>. BuildInfo.config) není součástí seznamu důvěryhodných cest symbolů. Cestu můžete přidat do seznamu cest symbolů v možnostech ladicího programu.
+ **ODPOVĚĎ:** Tato zpráva se zobrazí, když cesta symbolů v souboru manifestu sestavení (\<*ProjectName*>. BuildInfo.config) není součástí seznamu důvěryhodných cest symbolů. Cestu můžete přidat do seznamu cest symbolů v možnostech ladicího programu.

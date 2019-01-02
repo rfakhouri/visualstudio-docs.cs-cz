@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: aktualizovat zobrazení | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Aktualizujte zobrazení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - refreshing views
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3da7466f7f1ac569378d5ce5053c72c55d4ae68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dc7510986c87115a0f93078fb6788644c984460b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480082"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880163"
 ---
-# <a name="how-to-refresh-the-view"></a>Postupy: Aktualizace zobrazení
-Nástroje Spy ++ trvá "snímek" systémové tabulky a aktualizuje zobrazení na základě těchto informací. Je důležité, pravidelně aktualizovat zobrazení vašeho systému. Pokud máte nástroje Spy ++ zobrazení otevřete a neaktualizovaly, zobrazení, neuvidíte tyto procesy, vláken a systému windows, které jsou následně vytvořené. Navíc se může zobrazit položky, které už existují. **Aktualizovat** příkaz je k dispozici pro všechna zobrazení kromě zobrazení zpráv.  
+# <a name="how-to-refresh-the-view"></a>Postupy: Aktualizujte zobrazení
+Spy ++ "snímek" systémových tabulek a aktualizuje zobrazení na základě těchto informací. Je důležité, pravidelně aktualizovat systémová zobrazení. Pokud máte nástroje Spy ++ zobrazení otevřete a neaktualizovali zobrazení, neuvidíte tyto procesy, vlákna a windows, které jsou následně vytvořené. Také může se zobrazit položky, které už existují. **Aktualizovat** příkaz je k dispozici pro všechna zobrazení s výjimkou zobrazení zpráv.  
   
-### <a name="to-refresh-the-currently-active-view"></a>K aktualizaci aktuálně aktivní zobrazení  
+### <a name="to-refresh-the-currently-active-view"></a>Chcete-li aktualizovat aktuálně aktivnímu zobrazení.  
   
--   Zvolte **aktualizovat** z **okno** nabídky, nebo klikněte na tlačítko **aktualizovat** tlačítka na panelu nástrojů.  
+-   Zvolte **aktualizovat** z **okno** nabídek nebo kliknutím **aktualizovat** tlačítko na panelu nástrojů.  
   
 ## <a name="see-also"></a>Viz také  
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   

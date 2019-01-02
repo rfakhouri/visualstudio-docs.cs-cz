@@ -1,6 +1,6 @@
 ---
 title: Referenční informace k hodnotám barev
-description: 'Referenční dokumentace: Hex kódy pro vytvoření nové tokeny barva sady Visual Studio'
+description: 'Referenční dokumentace: Barva tokeny šestnáctkových kódů pro vytvoření nové sady Visual Studio'
 keywords: šestnáctkový kód barev, hue, s motivem uživatelského rozhraní, motivů
 author: brickgeorge
 ms.author: gregvanl
@@ -8,15 +8,13 @@ ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
-ms.technology:
-- vs-ide-sdk
 manager: douge
-ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: de1623cfbfc937139e45b4791a28fd47f18501de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870057"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Odkaz na hodnotu barvy pro sadu Visual Studio
 
@@ -98,7 +96,7 @@ Při použití této referenční příručce, mějte na paměti:
 | Popředí: při najetí myší | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![#FFF1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 vzorníku")<br />`#FFF1F1F1` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E vzorníku")<br />`#FF1E1E1E` | ![Vzorník HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 | Pozadí | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![#FF292929 vzorníku](../../extensibility/ux-guidelines/media/292929.png "#FF292929 vzorníku")<br />`#FF292929` | ![#FFEEEEF2 vzorníku](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 vzorníku")<br />`#FFEEEEF2` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 | Na pozadí: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![#FFFFFCF4 vzorníku](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 vzorníku")<br />`#FFFFFCF4` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
-| Ohraničení | Žádné | Žádné | Žádné | Žádné |
+| Ohraničení | Žádná | Žádný | Žádný | Žádná |
 | Ohraničení: při najetí myší | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 vzorníku")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 vzorníku")<br />`#FF3E3E40` | ![#FFE5C365 vzorníku](../../extensibility/ux-guidelines/media/E5C365.png "## FFE5C365 vzorníku")<br />`#FFE5C365` | ![Vzorník WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame vzorníku")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Skupiny kategorií
@@ -201,7 +199,7 @@ Při použití této referenční příručce, mějte na paměti:
 > [!NOTE]
 > **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy.
 
-### <a name="body"></a>Text
+### <a name="body"></a>Tělo
 
 | | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -226,7 +224,7 @@ Při použití této referenční příručce, mějte na paměti:
 > [!NOTE]
 > **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy.
 
-### <a name="body"></a>Text
+### <a name="body"></a>Tělo
 
 | | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -255,7 +253,7 @@ Při použití této referenční příručce, mějte na paměti:
 > [!NOTE]
 > **Vysoký kontrast vzorník jsou uvedeny pouze porovnání.** Použijte název barvy systému pro vysoký kontrast – uživatelské rozhraní a nepoužívejte kapátko nebo barvu výběr na tyto barvy. Vysoký kontrast vzorník v tomto tématu odpovídají motiv Vysoký kontrast 1 ve Windows. V jiných Vysokokontrastních motivech změní vzhled barvy.
 
-### <a name="body"></a>Text
+### <a name="body"></a>Tělo
 
 | | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -348,7 +346,7 @@ Při použití této referenční příručce, mějte na paměti:
 | Pozadí | ![#ECECF0 vzorníku](../../extensibility/ux-guidelines/media/ECECF0.png "#ECECF0 vzorníku")<br />`#ECECF0` | ![#3F3F46 vzorníku](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 vzorníku")<br />`#3F3F46` | ![#ECECF0 vzorníku](../../extensibility/ux-guidelines/media/ECECF0.png "#ECECF0 vzorníku")<br />`#ECECF0` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`Control` |
 | Ohraničení | ![Vzorník #CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB vzorníku")<br />`#CCCEDB` | ![#555555 vzorníku](../../extensibility/ux-guidelines/media/555555.png "#555555 vzorníku")<br />`#555555` | ![Vzorník CCCEDB](../../extensibility/ux-guidelines/media/CCCEDB.png "CCCEDB vzorníku")<br />`#CCCEDB` | ![Vzorník ControlDark](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
 
-### <a name="disabled"></a>Zakázané
+### <a name="disabled"></a>Zakázáno
 
 | | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -399,7 +397,7 @@ Při použití této referenční příručce, mějte na paměti:
 | Text | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 vzorníku")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Piktogram | ![ Vzorník](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 vzorníku")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E vzorníku")<br />`#1E1E1E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 
-### <a name="disabled"></a>Zakázané
+### <a name="disabled"></a>Zakázáno
 
 | | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
 | --- | :---: | :---: | :---: | :---: |
@@ -457,7 +455,7 @@ Při použití této referenční příručce, mějte na paměti:
 | Piktogram | ![#717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "# 717171swatch")<br />`#717171` | ![#999999 vzorníku](../../extensibility/ux-guidelines/media/999999.png "#999999 vzorníku")<br />`#999999` | ![#1B293E vzorníku](../../extensibility/ux-guidelines/media/1B293E.png "#1B293E vzorníku")<br />`#1B293E` | ![Vzorník ControlText](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 | Piktogram na pozadí | ![#FFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF vzorníku")<br />`#FFFFFF` | ![#333337 vzorníku](../../extensibility/ux-guidelines/media/333337.png "#333337 vzorníku")<br />`#333337` | ![Vzorník #FCFCFC](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC vzorníku")<br />`#FCFCFC` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládacího prvku")<br />`#Control` |
 
-#### <a name="disabled"></a>Zakázané
+#### <a name="disabled"></a>Zakázáno
 
 | | Světlý motiv | Tmavý motiv | Modrý motiv | Vysoký kontrast | 
 | --- | :---: | :---: | :---: | :---: |

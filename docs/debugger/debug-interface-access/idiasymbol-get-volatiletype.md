@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_volatiletype – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02baf9777a1b7cc208903fe5e63a378013b581e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d491a43e65ed7e6c06a5c94e94b62230db1634dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864317"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 Získá příznak, který určuje, zda je uživatelský datový typ (UDT) typu volatile.  
@@ -27,7 +25,7 @@ Získá příznak, který určuje, zda je uživatelský datový typ (UDT) typu v
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_volatileType (   
+HRESULT get_volatileType (   
    BOOL* pRetVal  
 );  
 ```  

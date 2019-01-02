@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: programové připojení souborů k e-mailové položky aplikace Outlook'
-ms.custom: ''
+title: 'Postupy: Připojování souborů k položkám e-mailu aplikace Outlook prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fab5d954136fced3a68b1aaa62233ca5ec9af91b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d8290d354f811795ba83975c406565d17817fa0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866462"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Postupy: programové připojení souborů k e-mailové položky aplikace Outlook
-  Tento příklad připojí soubor k nové položky e-mailu a odešle ji do Armando Pinto. Příklad předpokládá, že uživatel s názvem Armando Pinto existuje jako příjemce.  
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Postupy: Připojování souborů k položkám e-mailu aplikace Outlook prostřednictvím kódu programu
+  Tento příklad připojí do souboru s položkou nové e-mailu a odesílá je do Armando Pinto. Příklad předpokládá, že osoba s názvem Armando Pinto existuje jako příjemce.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -36,8 +33,6 @@ ms.locfileid: "35256624"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s položkami pošty](../vsto/working-with-mail-items.md)   
- [Postupy: odeslání e-mailu prostřednictvím kódu programu](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Postupy: ukládání příloh z položek e-mailu aplikace Outlook prostřednictvím kódu programu](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Postupy: vytváření položku e-mailu prostřednictvím kódu programu](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
-  
-  
+ [Postupy: Odeslání e-mailu prostřednictvím kódu programu](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [Postupy: Ukládání příloh položek e-mailu aplikace Outlook prostřednictvím kódu programu](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
+ [Postupy: Programové vytváření položek e-mailu](../vsto/how-to-programmatically-create-an-e-mail-item.md)  

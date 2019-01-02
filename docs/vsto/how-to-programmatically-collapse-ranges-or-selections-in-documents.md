@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit'
-ms.custom: ''
+title: 'Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fee3c821c0b6a39c8dfb499caa00355aa008d413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d26a664a6d66c81a7409759478eb8c9de120964d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859065"
 ---
-# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Postupy: oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit
+# <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit
   Pokud pracujete <xref:Microsoft.Office.Interop.Word.Range> nebo <xref:Microsoft.Office.Interop.Word.Selection> objektu, můžete chtít změnit výběr na bod vložení před vložení textu, aby nedošlo k přepsání existující text. Jak <xref:Microsoft.Office.Interop.Word.Range> a <xref:Microsoft.Office.Interop.Word.Selection> objekty mají sbalit metodu, která využívá <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> hodnot výčtu:  
   
 - <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> Sbalí výběr na začátek výběru. Toto je výchozí, pokud nezadáte hodnotu výčtu.  
@@ -69,7 +66,7 @@ ms.locfileid: "49906725"
    [!code-vb[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#50)]
    [!code-csharp[Trin_VstcoreWordAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#50)]  
   
-   Očekáváte, že vložení nového větu by jej vložit před značku odstavce, ale to je tomu tak není, protože původní rozsah obsahuje značku odstavce. Další informace najdete v tématu [jak: při vytváření oblastí prostřednictvím kódu programu vyloučení značek odstavů](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
+   Očekáváte, že vložení nového větu by jej vložit před značku odstavce, ale to je tomu tak není, protože původní rozsah obsahuje značku odstavce. Další informace najdete v tématu [jak: Při vytváření oblastí prostřednictvím kódu programu vyloučení značek odstavů](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md).  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   
@@ -90,10 +87,9 @@ ms.locfileid: "49906725"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [Postupy: Programová vyloučení značek odstavů při vytváření oblastí](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
- [Postupy: rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Postupy: Programová resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  
-  
+ [Postupy: Vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: Načítání počátečních a koncových znaků oblastí prostřednictvím kódu programu](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [Postupy: Programově vyloučení značek odstavů při vytváření oblastí](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)   
+ [Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Postupy: Programově resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)  

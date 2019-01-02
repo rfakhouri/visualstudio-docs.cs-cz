@@ -3,19 +3,18 @@ title: Fragmenty kódu pro R
 description: Fragmenty kódu pro R v sadě Visual Studio poskytují zástupce pro rychlé vkládání bloky kódu libovolné délky, což pomáhá vyhnout se pořád dokola přepisování podobný kód.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860894"
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
@@ -38,7 +37,7 @@ Chcete-li zobrazit všechny dostupné fragmenty kódu, otevřete **nástroje** >
 
 ![Dialogové okno fragmenty kódu pro R](media/code-snippet-dialog.png)
 
-K vytvoření vlastních fragmentech kódu, postupujte podle pokynů na [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Nakonec fragment kódu je právě soubor XML. Například následující kód je fragment kódu pro operace kanálu byla (místní `>`):
+K vytvoření vlastních fragmentech kódu, postupujte podle pokynů na [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Nakonec fragment kódu je právě soubor XML. Například následující kód je fragment kódu pro operace kanálu byla (místní `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
