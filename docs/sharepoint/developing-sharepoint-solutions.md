@@ -1,9 +1,6 @@
 ---
 title: Vývoj řešení služby SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871054"
 ---
 # <a name="develop-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typu projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvků na webu. Seznam dostupných typů projektu naleznete v tématu [SharePoint šablony položek projektu a projekt](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis prvků a vlastností projektu služby SharePoint.  
@@ -48,7 +45,7 @@ ms.locfileid: "51295901"
   
  Při přidání položky, jako je například typ obsahu nebo instance seznamu do projektu služby SharePoint, přidá se do funkce **funkce** uzlu. Rozsah položky určuje, zda je přidána do existující nebo nové funkce. Pokud je nová položka stejném oboru jako stávající funkce, je přidána do této funkce. V opačném případě je položka přidána do nové funkce.  
   
- Pokud chcete ručně přidat funkci, spusťte **přidat funkci** příkazu v místní nabídce zkratky uzlu funkce. Můžete zobrazit nebo změnit obsah funkce pomocí návrháře funkcí. Další informace najdete v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Pokud chcete ručně přidat funkci, spusťte **přidat funkci** příkazu v místní nabídce zkratky uzlu funkce. Můžete zobrazit nebo změnit obsah funkce pomocí návrháře funkcí. Další informace najdete v tématu [jak: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
  Pokud funkce je přidána do projektu služby SharePoint, zobrazí se v **Průzkumníka řešení** jako uzel s výchozím názvem funkce*x*.feature, kde *x* je jedinečné číslo. Po nasazení funkce k Sharepointovému serveru, správce Sharepointu si ji můžou aktivovat, jejich zpřístupnění uživatelům webu služby SharePoint.  
   
@@ -66,14 +63,14 @@ ms.locfileid: "51295901"
   
 |Název vlastnosti|Popis|  
 |-------------------|-----------------|  
-|Aktivní konfigurace nasazení|Určuje řadu kroků prováděných během nasazování. Další informace najdete v tématu [postupy: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
+|Aktivní konfigurace nasazení|Určuje řadu kroků prováděných během nasazování. Další informace najdete v tématu [jak: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
 |Cíl nasazení sestavení|Určí, kde *sestavení aplikace SharePoint* nacházejí. Platné hodnoty umístění sestavení jsou buď *GlobalAssemblyCache* (výchozí), nebo *WebApplication*.<br /><br /> Pokud *řešení v izolovaném prostoru* je nastavena na **true**, pak tato vlastnost deaktivována.|  
 |Automatické odvolání po ladění|Určuje, jestli řešení nasazení automaticky odvolá ze serveru SharePoint po spuštění aplikace v režimu ladění v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Při výběru řešení odvolání při IDE přejde zpět do návrhového zobrazení po ladění. Není-li zaškrtnuto, není odvolat řešení. Další informace najdete v tématu [stahování řešení](http://go.microsoft.com/fwlink/?LinkId=183819).|  
-|Upravit konfigurace|Určuje konfiguraci nasazení pro projekt. Další informace najdete v tématu [postupy: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) a [nasazení, publikování a upgradování balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
+|Upravit konfigurace|Určuje konfiguraci nasazení pro projekt. Další informace najdete v tématu [jak: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) a [nasazení, publikování a upgradování balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
 |Povolit ladění Silverlight (místo ladění skripty)|Pokud je vybráno, připojí se Silverlight debugger k ladění procesu. Není-li zaškrtnuto, připojí Script debugger k ladění procesu. Další informace najdete v tématu [Přehled ladění Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|  
 |Zahrnout sestavení v balíčku|Určuje, zda je sestavení projektu zabalit v okamžiku sestavení, nebo ne.|  
-|Příkazový řádek po nasazení|Určuje, které příkazy se spustí po nasazení řešení služby SharePoint. Tento řádek podporuje libovolné dávkové příkazy a také řešení proměnných MSBuild. Další informace najdete v tématu [postupy: nastavení příkazů nasazení služby SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
-|Příkazový řádek před nasazením|Určuje, které příkazy se spustí před nasazením řešení SharePoint. Tento řádek podporuje libovolné dávkové příkazy a také řešení proměnných MSBuild. Další informace najdete v tématu [postupy: nastavení příkazů nasazení služby SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Příkazový řádek po nasazení|Určuje, které příkazy se spustí po nasazení řešení služby SharePoint. Tento řádek podporuje libovolné dávkové příkazy a také řešení proměnných MSBuild. Další informace najdete v tématu [jak: Nastavení příkazů nasazení služby SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Příkazový řádek před nasazením|Určuje, které příkazy se spustí před nasazením řešení SharePoint. Tento řádek podporuje libovolné dávkové příkazy a také řešení proměnných MSBuild. Další informace najdete v tématu [jak: Nastavení příkazů nasazení služby SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
 |Soubor projektu|Název souboru obsahujícího sestavení, konfiguraci a další informace o projektu.|  
 |Složka projektu|Umístění souboru projektu v systému. (Jen pro čtení.)|  
 |Řešení v izolovaném prostoru|Určuje, zda by měl být projekt nasazen jako *řešení v izolovaném prostoru*, označované také jako *uživatel vytvořil řešení*. Řešení v izolovaném prostoru nejsou nutně důvěryhodná. Hodnota **true** znamená, že projekt je nasazen jako řešení v izolovaném prostoru, hodnota **false** znamená, že projekt je nasazen jako řešení farmy. Další informace najdete v tématu [v izolovaném prostoru aspekty řešení](../sharepoint/sandboxed-solution-considerations.md) a [rozdíly mezi řešeními v izolovaném prostoru a řešení ve farmách](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|  
@@ -104,7 +101,7 @@ ms.locfileid: "51295901"
 |Umístění nasazení|Plně kvalifikovanou cestu souboru na Sharepointovém serveru. Tato cesta se skládá z kořene nasazení a cesty nasazení podvlastností.|  
 |Cesta nasazení|Relativní cesta souboru v souboru SharePoint Server, jako je například Workflow1\\. Plně kvalifikovanou cestu k souboru se vytváří zřetězením *cesty nasazení* hodnotu na konec objektu *kořen nasazení* hodnotu.<br /><br /> Výběrem hodnoty z *RootFile* pro *typ nasazení* změny vlastností *kořen nasazení* vlastnost \<SharePointRoot >\\výsledkem plně kvalifikovanou cestu z \<SharePointRoot > \Workflow1\\. Další informace najdete v tématu [balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
 |Kořen nasazení|řetězec. Kořenové složky, kde je soubor nasazen na serveru SharePoint. Například \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Hodnota *kořen nasazení* vlastnost je určena *typ nasazení* nastavení.|  
-|Typ nasazení|Typ nasazení souboru, který určuje jeho *kořen nasazení* hodnotu. Může být jedna z následujících hodnot:<br /><br /> NoDeployment:  *\<žádná hodnota >*<br /><br /> ElementManifest:  *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile:  *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> Další informace naleznete v tématu <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Typ nasazení|Typ nasazení souboru, který určuje jeho *kořen nasazení* hodnotu. Může být jedna z následujících hodnot:<br /><br /> NoDeployment:  *\<žádná hodnota >*<br /><br /> ElementManifest: *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile: *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile: *\<SharePointRoot > \Template\\*<br /><br /> RootFile: *\<SharePointRoot >\\*<br /><br /> GlobalResource: *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource: *\<ClassResourcePath >\\*<br /><br /> Další informace naleznete v tématu <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Název souboru|Název souboru nebo složky pro soubor položky.|  
 |Úplná cesta|Umístění souboru pro položku. (Jen pro čtení.)|  
   
@@ -115,7 +112,7 @@ ms.locfileid: "51295901"
 |[Šablony projektů a položek projektů služby SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Popisuje projekt služby SharePoint a šablony položek projektu, které [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Postupy: Přidání položek do projektu služby SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Popisuje, jak přidat nové nebo existující položky do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
 |[Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Vás krok za krokem při vytváření zákazník pole, typ obsahu, definici seznamu a instanci seznamu.|  
-|[Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)|Popisuje, jak přidat přijímače událostí pro projekt vytvořený v [návod: vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Postupy: Vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)|Popisuje, jak přidat přijímače událostí pro projekt vytvořený v [názorný postup: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
 |[Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Popisuje, jak vytvořit projekty pracovního postupu, který obsahuje formuláře přidružení pracovního postupu a formuláře zahájení pracovního postupu.|  
 |[Vytváření stránek pro službu SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Popisuje, jak můžete vytvořit stránky jako je například stránky aplikace, weby, stránky předlohy a rozložení stránek pro službu SharePoint.|  
 |[Vytvoření webové části pro SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje, jak přidat ovládací prvky, které umožňují uživatelům přímo upravit obsah, vzhled a chování stránky webu služby SharePoint pomocí prohlížeče.|  
@@ -136,5 +133,3 @@ ms.locfileid: "51295901"
  [Procházet připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

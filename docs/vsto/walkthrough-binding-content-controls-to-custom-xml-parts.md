@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vazba ovládacích prvků obsahu s vlastní části XML'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899649"
 ---
-# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Návod: Vazba ovládacích prvků obsahu s vlastní části XML
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Průvodce: Vytvoření vazby ovládacích prvků obsahu do vlastní části XML
   Tento návod ukazuje, jak svázat ovládací prvky obsahu v přizpůsobení na úrovni dokumentu pro Word XML data, která je uložena v dokumentu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -62,7 +59,7 @@ ms.locfileid: "49916748"
   
 ### <a name="to-create-a-new-word-document-project"></a>K vytvoření nového projektu dokumentu aplikace Word  
   
-1.  Vytvoření projektu dokumentu aplikace Word s názvem **EmployeeControls**. Vytvoření nového dokumentu pro řešení. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu dokumentu aplikace Word s názvem **EmployeeControls**. Vytvoření nového dokumentu pro řešení. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se nový dokument aplikace Word v návrháři a přidá **EmployeeControls** projektu **Průzkumníku řešení**.  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49916748"
 5. Na pásu karet, zvolte **Developer** kartu.  
   
    > [!NOTE]  
-   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6. V **ovládací prvky** skupině, zvolte **Text** tlačítko ![plaintextcontentcontrol –](../vsto/media/plaintextcontrol.gif "plaintextcontentcontrol –") přidáte <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do první buňky.  
   
@@ -109,7 +106,7 @@ ms.locfileid: "49916748"
   
 1.  Na **projektu** nabídce zvolte **přidat novou položku**.  
   
-     **Přidat novou položku** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Přidat novou položku**.  
   
 2.  V **šablony** vyberte **soubor XML**.  
   
@@ -143,7 +140,7 @@ ms.locfileid: "49916748"
   
 1.  Na **projektu** nabídce zvolte **přidat novou položku**.  
   
-     **Přidat novou položku** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Přidat novou položku**.  
   
 2.  V **šablony** vyberte **schématu XML**.  
   
@@ -296,7 +293,7 @@ ms.locfileid: "49916748"
   
 9. Název souboru **EmployeeControls.docx.zip**.  
   
-     **EmployeeControls.docx** je dokument uložen ve formátu Open XML. Přejmenováním tohoto dokumentu se *ZIP* příponu názvu souboru můžete prozkoumat obsah dokumentu. Další informace o Open XML naleznete v tématu technického článku [Představujeme Open XML Office (2007) formáty souborů](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **EmployeeControls.docx** je dokument uložen ve formátu Open XML. Přejmenováním tohoto dokumentu se *ZIP* příponu názvu souboru můžete prozkoumat obsah dokumentu. Další informace o Open XML naleznete v tématu technického článku [Představujeme Open XML Office (2007) formáty souborů](/previous-versions/office/developer/office-2007/aa338205(v=office.12)).  
   
 10. Otevřít **EmployeeControls.docx.zip** souboru.  
   
@@ -313,19 +310,17 @@ ms.locfileid: "49916748"
 ## <a name="next-steps"></a>Další kroky  
  Další informace o tom, jak používat ovládací prvky obsahu naleznete v těchto tématech:  
   
--   Použijte všechny dostupné ovládací prvky obsahu k vytvoření šablony. Další informace najdete v tématu [návod: vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   Použijte všechny dostupné ovládací prvky obsahu k vytvoření šablony. Další informace najdete v tématu [názorný postup: Vytvoření šablony s použitím ovládacích prvků obsahu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 -   Upravte data ve vlastních částí XML při zavření dokumentu. Při příštím otevření dokumentu a ovládací prvky obsahu, které jsou vázány na prvky XML se zobrazí nová data.  
   
--   Použití ovládacích prvků obsahu s ochrana částí dokumentů. Další informace najdete v tématu [postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Použití ovládacích prvků obsahu s ochrana částí dokumentů. Další informace najdete v tématu [jak: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Automatizace aplikace Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
  [Ovládací prvky obsahu](../vsto/content-controls.md)   
  [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Postupy: Ochrana částí dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

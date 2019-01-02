@@ -3,7 +3,6 @@ title: Analýza dat o využití procesoru (spravovaný kód)
 description: Měřit výkon aplikace v C# a Visual Basic pomocí diagnostického nástroje využití CPU
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 68d8319082fbcbe232989814c190f9a4746c11f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899571"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (spravovaný kód)
 
@@ -161,7 +160,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
     > [!NOTE]
     > V jazyce Visual Basic, ujistěte se, že spouštěcí objekt je nastavena na `Sub Main` (**vlastnosti** > **aplikace** > **spouštěcí objekt**).
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromáždění profilačních dat
+##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů
 
 1.  Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `Main` funkce:
 
@@ -204,7 +203,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
 
      Teď můžete začít analyzovat data.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analýza dat o využití procesoru
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analyzovat data o využití procesoru
 
 Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kartě Využití procesoru. Zjistěte nejaktivnější funkce a pak se na každou z nich podívejte podrobněji.
 

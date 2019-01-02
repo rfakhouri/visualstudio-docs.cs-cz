@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: hledání zprávy v zobrazení zpráv | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání zprávy v zobrazení zpráv | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863378"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Postupy: Hledání zprávy v zobrazení zpráv
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Postupy: Hledání zprávy v zobrazení zpráv
 Můžete vyhledat konkrétní zprávy v zobrazení zpráv s použitím jeho popisovač, typ nebo ID zprávy jako kritéria hledání. Některou z těchto – nebo ke kombinaci – bude platný vyhledávací kritéria. Je taky možné specifikovat Počáteční směr hledání. Atributy zprávu aktuálně vybranou se předem načtou pole v dialogovém okně.  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Hledání zprávy v zobrazení zpráv  
@@ -49,6 +47,6 @@ Můžete vyhledat konkrétní zprávy v zobrazení zpráv s použitím jeho popi
   
 5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-6. Klikněte na tlačítko **OK**.  
+6. Klikněte na **OK**.  
   
    Pokud je nalezen odpovídající zprávu, je zvýrazněn v okně zobrazení zprávy. Zobrazit [zobrazení zpráv](../debugger/messages-view.md).

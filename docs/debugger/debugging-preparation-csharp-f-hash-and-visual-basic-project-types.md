@@ -2,7 +2,6 @@
 title: Příprava na ladění C#, F#a projekty v jazyce VB | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866878"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Příprava ladění: typy projektů jazyka C#, F# a Visual Basic
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Příprava ladění: Typy projektů jazyka C#, F# a Visual Basic
 Témata v této části popisují, jak ladit C#, F#, a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] vytvořil typů projektů [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony projektu.  
   
  Všimněte si, že tyto typy projektů, které vytvářejí knihovny DLL jako jejich výstup, byly seskupeny do [ladění projektů knihovny DLL](../debugger/debugging-dll-projects.md) z důvodu běžné funkce sdílejí.  

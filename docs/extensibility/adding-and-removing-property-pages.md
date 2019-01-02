@@ -1,9 +1,6 @@
 ---
 title: Přidávání a odebírání stránek vlastností | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885314"
 ---
 # <a name="add-and-remove-property-pages"></a>Přidávat a odebírat stránky vlastností
 Poskytuje centralizovaného umístění pro správu vlastnosti projektu, nastavení a prostředky v Návrháři projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zobrazí se jako v jednom okně [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí (IDE) a obsahuje mnoho podokna na pravé straně, které jsou přístupné prostřednictvím karty na levé straně. Podokna (často označované jako stránky vlastností) v Návrháři projektu se liší podle typu projektu a jazyk. Návrhář projektu lze přistupovat pomocí **vlastnosti** příkaz **projektu** nabídky.  

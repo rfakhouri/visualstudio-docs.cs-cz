@@ -1,9 +1,6 @@
 ---
-title: Programování konceptů a funkcí pro rozšíření nástrojů SharePoint | Microsoft Docs
-ms.custom: ''
+title: Programování konceptů a funkcí pro rozšíření nástrojů SharePoint | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,19 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3347b36f64ac84082bee5c3087c035571c6a6b08
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d2451339b7291cba6bff8cebcc60358c84f018d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884016"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programování konceptů a funkcí pro rozšíření nástrojů SharePoint
-  Existuje několik důležité koncepty programování a funkce, které se vztahují k nástroje služby SharePoint v sadě Visual Studio. Tyto koncepty a funkce hraje důležitou roli v většina rozšíření nástrojů služby SharePoint.  
+  Existuje několik důležité koncepty programování a funkce, které se týkají nástroje služby SharePoint v sadě Visual Studio. Tyto koncepty a funkce hraje důležitou roli v většina rozšíření nástrojů služby SharePoint.  
   
 ## <a name="in-this-section"></a>V tomto oddílu
  [Volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
- Porovná pomocí klienta služby SharePoint a server objektových modelů SharePoint z rozšíření nástrojů služby SharePoint a poskytuje informace o tom, jak můžete vytvořit *SharePoint – příkazy* provést volání do objektový model serveru SharePoint.  
+ Porovná pomocí klienta SharePoint a objektové modely serveru SharePoint z rozšíření nástrojů služby SharePoint a poskytuje informace o tom, jak můžete vytvořit *příkazů služby SharePoint* provést volání do objektového modelu serveru SharePoint.  
   
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)  
  Popisuje funkce, že poskytuje k rozšíření nástrojů SharePoint projektu služby SharePoint a poskytuje pokyny pro načtení služby v různých druhů rozšíření.  
@@ -41,4 +38,3 @@ ms.locfileid: "37120262"
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Ladění rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [Nasazení rozšíření pro nástroje služby SharePoint v sadě Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

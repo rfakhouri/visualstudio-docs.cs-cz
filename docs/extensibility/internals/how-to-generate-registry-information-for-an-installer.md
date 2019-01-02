@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vygenerování informací registru pro instalační program | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vygenerování informací registru pro instalační program | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b52d0c894aadd829806e7cc41ac9e78e95df32ba
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f66df6b19e3c47151907ffad04072c378fd1a8fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875391"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: vygenerování informací registru pro instalační službu
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: Vygenerování informací registru pro instalační službu
 *RegPkg.exe* nástroj můžete použít ke generování manifestu registrace pro spravovaná VSPackage. Manifest může být zahrnut do instalačního balíčku Instalační služby systému Windows. RegPkg můžete také vygenerovat soubor, který může být zahrnut ve zdrojovém souboru instalace na základě [sada nástrojů XML Instalační služby systému Windows](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]
