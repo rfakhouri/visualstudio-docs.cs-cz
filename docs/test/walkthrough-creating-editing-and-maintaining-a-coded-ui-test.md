@@ -2,21 +2,20 @@
 title: Vytvoření programového testu UI
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878231"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Návod: Vytvoření, úpravy a správy programového testu uživatelského rozhraní
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Průvodce: Vytváření, úpravy a správy programového testu uživatelského rozhraní
 
 V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat programového uživatelského rozhraní testu aplikace Windows Presentation Framework (WPF). Návod poskytuje řešení pro opravu testů, které byly poškozeny různými problémy načasování a refaktoring ovládacích prvků.
 
@@ -26,7 +25,7 @@ V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat pr
 
 1.  Na **souboru** nabídky, přejděte k **nový**a pak vyberte **projektu**.
 
-     **Nový projekt** zobrazí se dialogové okno.
+     Zobrazí se dialogové okno **Nový projekt**.
 
 2.  V **nainstalováno** podokně rozbalte **Visual C#** a pak vyberte **Windows Desktop**.
 
@@ -147,7 +146,7 @@ V tomto podrobném návodu se dozvíte, jak vytvářet, upravovat a udržovat pr
 
 1. Zvolte **spustit záznam** na **UIMap – Tvůrce programového testu UI** dialogového okna.
 
-     ![Spustit záznam](../test/media/cuit_builder_record.png)
+     ![Spustit nahrávání](../test/media/cuit_builder_record.png)
 
      Je možné pozastavit nahrávání, v případě potřeby, například pokud budete muset řešit příchozí pošty.
 

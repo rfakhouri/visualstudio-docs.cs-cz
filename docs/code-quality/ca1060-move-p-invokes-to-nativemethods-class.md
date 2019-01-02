@@ -1,8 +1,7 @@
 ---
-title: 'CA1060: Přesuňte volání nespravovaných kódů do třídy NativeMethods'
+title: 'CA1060: Přesunout vyvolá P do třídy NativeMethods'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874229"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Přesuňte volání nespravovaných kódů do třídy NativeMethods
 
@@ -94,7 +93,7 @@ Tyto třídy jsou deklarovány jako `internal` (`Friend`, v jazyce Visual Basic)
 ## <a name="unsafenativemethods-example"></a>Příklad UnsafeNativeMethods
 
 ### <a name="description"></a>Popis
- P/Invoke metody, které nejde volat bezpečně a, která by mohla způsobit vedlejší účinky by mělo být uvedeno ve třídě s názvem **UnsafeNativeMethods**. Tyto metody by měly být porovnány přísně, abyste měli jistotu, že nejsou pro uživatele neúmyslnému zveřejnění. Pravidlo [CA2118: revize použití SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) můžou pomoct se to. Metody by případně mají další oprávnění, které je požadováno místo **požadavku na nespravovaný kód** při jejich použití.
+ P/Invoke metody, které nejde volat bezpečně a, která by mohla způsobit vedlejší účinky by mělo být uvedeno ve třídě s názvem **UnsafeNativeMethods**. Tyto metody by měly být porovnány přísně, abyste měli jistotu, že nejsou pro uživatele neúmyslnému zveřejnění. Pravidlo [CA2118: Zkontrolujte použití SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) můžou pomoct se to. Metody by případně mají další oprávnění, které je požadováno místo **požadavku na nespravovaný kód** při jejich použití.
 
  Následující příklad ukazuje **Cursor.Hide** metodu, která zabalí **ShowCursor** funkce z knihovny user32.dll.
 

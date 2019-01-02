@@ -1,9 +1,7 @@
 ---
 title: 'Krok 5: Přidejte do svého formuláře ovládací prvky'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
@@ -11,76 +9,76 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a0167d4d5af125e706350002ccf8a17e459414
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bd07924f98c969340fbe2c7ccb88f4227a61026b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968427"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Krok 5: Přidejte do svého formuláře ovládací prvky
-V tomto kroku přidáte ovládací prvky, jako například <xref:System.Windows.Forms.PictureBox> řízení a <xref:System.Windows.Forms.CheckBox> do svého formuláře ovládací prvek. Potom přidáte <xref:System.Windows.Forms.Button> ovládacích prvků do svého formuláře.
+V tomto kroku přidáte ovládací prvky, například <xref:System.Windows.Forms.PictureBox> ovládacího prvku a <xref:System.Windows.Forms.CheckBox> ovládací prvek do formuláře. Potom přidáte <xref:System.Windows.Forms.Button> ovládací prvky do formuláře.
 
- ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+ ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# -2 videa](http://go.microsoft.com/fwlink/?LinkId=205200). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
-## <a name="to-add-controls-to-your-form"></a>K přidávání ovládacích prvků do svého formuláře
+## <a name="to-add-controls-to-your-form"></a>Chcete-li přidat ovládací prvky do formuláře
 
-1.  Přejděte na **sada nástrojů** karta (nachází se na levé straně Visual Studio IDE) a rozbalte **běžné ovládací prvky** skupiny. Ukazuje to nejběžnější ovládací prvky se zobrazí ve formulářích.
+1.  Přejděte na **nástrojů** karty (umístěné na levé straně rozhraní IDE sady Visual Studio) a rozbalte **běžné ovládací prvky** skupiny. Zobrazí nejběžnější ovládací prvky, které vidíte ve formulářích.
 
-2.  Vyberte **TableLayoutPanel** ovládací prvek na formuláři. Pokud chcete ověřit, že je vybraný kontejner TableLayoutPanel, ujistěte se, že její název se zobrazí v rozevíracím seznamu v horní části **vlastnosti** okno. Můžete také ovládacích prvků formuláře pomocí rozevíracího seznamu v horní části **vlastnosti** okno. Výběr ovládacího prvku tímto způsobem může být často jednodušší než výběr prvku jen nepatrnou pomocí myši.
+2.  Zvolte **TableLayoutPanel** ovládací prvek na formuláři. Pokud chcete ověřit, že je vybrán kontejner TableLayoutPanel, ujistěte se, že jeho název zobrazuje v rozevíracím seznamu v horní části **vlastnosti** okna. Můžete také vybrat ovládací prvky formuláře pomocí rozevíracího seznamu v horní části **vlastnosti** okna. Výběr ovládacího prvku tímto způsobem může často být jednodušší než volba prvku tiny pomocí myši.
 
-3.  Dvakrát klikněte **PictureBox** položky ovládacího prvku PictureBox přidáte do svého formuláře. Protože kontejner TableLayoutPanel je ukotven k vyplnění formuláře, rozhraní IDE přidá ovládacího prvku PictureBox první prázdné buňky (levém horním rohu).
+3.  Dvakrát klikněte **PictureBox** položky pro přidání ovládacího prvku PictureBox do formuláře. Protože kontejner TableLayoutPanel je ukotven k vyplnění formuláře, rozhraní IDE přidá ovládací prvek PictureBox do první prázdné buňky (levý horní roh).
 
-4.  Zvolte nový **PictureBox** řízení ji vyberte a potom zvolte černý trojúhelník na novém ovládacím prvku PictureBox zobrazíte jeho seznamu úloh, jak je znázorněno na následujícím obrázku.
+4.  Zvolte nový **PictureBox** ovládací prvek a vyberte ji a pak zvolte na černý trojúhelník na novém ovládacím prvku PictureBox k zobrazení jeho seznamu úloh, jak je znázorněno na následujícím obrázku.
 
-     ![PictureBox úlohy](../ide/media/express_pictureboxtasks.png)
+     ![Úlohy třídy PictureBox](../ide/media/express_pictureboxtasks.png)
 **PictureBox** úlohy
 
     > [!NOTE]
-    >  Pokud omylem přidáte nesprávný typ ovládacího prvku do vaší TableLayoutPanel, můžete ji odstranit. Klikněte pravým tlačítkem na ovládací prvek a potom vyberte **odstranit** v jeho místní nabídce. Ovládací prvky můžete také odebrat z formuláře pomocí panelu nabídek. Na řádku nabídek zvolte **upravit** > **vrátit zpět**, nebo **upravit** > **odstranit**.
+    >  Pokud omylem přidáte nesprávný typ ovládacího prvku do vašeho kontejneru TableLayoutPanel, můžete ho odstranit. Klikněte pravým tlačítkem na ovládací prvek a klikněte na tlačítko **odstranit** v kontextové nabídce. Můžete také odebrat ovládací prvky z formuláře pomocí panelu nabídek. V panelu nabídky zvolte **upravit** > **zpět**, nebo **upravit** > **odstranit**.
 
-5.  Vyberte **ukotvení v nadřazený kontejner** odkaz. Tím se automaticky nastaví PictureBox **ukotvení** vlastnost **vyplnění**. To zobrazit, vyberte **PictureBox** vyberte ovládací prvek, přejděte na **vlastnosti** okno, a ujistěte se, že **ukotvení** je nastavena na **vyplnění**.
+5.  Zvolte **ukotvit v nadřazeném kontejneru** odkaz. Tím se automaticky nastaví ovládací prvek PictureBox **Dock** vlastnost **vyplnit**. Tento údaj zobrazíte, zvolte **PictureBox** vyberte ovládací prvek, přejděte na **vlastnosti** okna, a ujistěte se, že **Dock** je nastavena na **vyplnit**.
 
-6.  Ujistěte se, PictureBox roztáhnout oba sloupce změnou jeho **ColumnSpan** vlastnost. Vyberte **PictureBox** řízení a nastavit jeho **ColumnSpan** vlastnost **2**. Navíc pokud PictureBox prázdné, budete chtít zobrazit prázdný rámeček. Nastavte její **styl okraje** vlastnost **Fixed3D**.
+6.  Nechejte PictureBox roztáhnout oba sloupce změnou jeho **ColumnSpan** vlastnost. Zvolte **PictureBox** ovládací prvek a nastavit jeho **ColumnSpan** vlastnost **2**. Také když je PictureBox prázdný, budete chtít zobrazit prázdný rámeček. Nastavte jeho **BorderStyle** vlastnost **Fixed3D**.
 
     > [!NOTE]
-    >  Pokud se nezobrazí **ColumnSpan** vlastnost pro vaše PictureBox a pak je pravděpodobné, že PictureBox byl přidán do formuláře, nikoli TableLayoutPanel. Chcete-li odstranit tento problém, zvolte **PictureBox**, odstranit, vyberte **TableLayoutPanel**, a pak přidejte nový PictureBox.
+    >  Pokud se nezobrazí **ColumnSpan** vlastnost pro váš ovládací prvek PictureBox, pak je pravděpodobné, že ovládací prvek PictureBox byl přidán do formuláře, nikoli do TableLayoutPanel. Problém odstranit, zvolte **PictureBox**, odstraňte ji, zvolte **TableLayoutPanel**, a pak přidejte nový prvek PictureBox.
 
-7.  Vyberte **TableLayoutPanel** na formuláři a poté přidejte ovládací prvek zaškrtávací políčko pro formulář. Dvakrát klikněte **zaškrtávací políčko** položky v **sada nástrojů** přidat nový ovládací prvek CheckBox další volné buňku v tabulce. Protože PictureBox zabírá první dvě buňky v kontejneru TableLayoutPanel, ovládací prvek zaškrtávací políčko se přidá do levého dolního buňky. Vyberte **Text** vlastností a zadejte slovo **Stretch**, jak je znázorněno na následujícím obrázku.
+7.  Zvolte **TableLayoutPanel** ve formuláři a potom přidejte ovládací prvek CheckBox do formuláře. Dvakrát klikněte **zaškrtávací políčko** položky v **nástrojů** přidat nový ovládací prvek CheckBox do další volné buňky v tabulce. Protože PictureBox zabírá v kontejneru TableLayoutPanel první dvě buňky, ovládací prvek CheckBox je přidán do levé dolní buňky. Zvolte **Text** vlastnost a zadejte hledané klíčové slovo **Stretch**, jak je znázorněno na následujícím obrázku.
 
      ![TextBox – ovládací prvek s vlastností Stretch](../ide/media/express_pictureviewercheckbox.png)
-**TextBox** řízení s **Stretch** vlastnost
+**TextBox** ovládacím prvkem **Stretch** vlastnost
 
-8.  Vyberte **TableLayoutPanel** na formulář a potom přejděte na **kontejnery** v **sada nástrojů** (které jste získali vaše TableLayoutPanel – ovládací prvek) a dvakrát klikněte na **FlowLayoutPanel** položky k přidání nového ovládacího prvku na poslední buňky v ovládacím prvku PictureBox (vpravo dole). Potom ukotvení FlowLayoutPanel v kontejneru TableLayoutPanel (buď výběrem **ukotvení v nadřazený kontejner** na seznam úkolů černý trojúhelník FlowLayoutPanel nebo nastavením FlowLayoutPanel **ukotvení** Vlastnost **vyplnění**).
-
-    > [!NOTE]
-    >  A <xref:System.Windows.Forms.FlowLayoutPanel> je kontejner, který uspořádá dalších ovládacích prvků v úhledné řádků v pořadí. Při změně velikosti ovládacího prvku FlowLayoutPanel, pokud má místo pro vzhled všech ovládacích prvků do jednoho řádku, udělá to. Jinak je uspořádá na řádky, jeden na druhý. FlowLayoutPanel použije k uložení čtyři tlačítka. Pokud tlačítka uspořádat jednu na jiné při přidání top, ujistěte se, že je vybraný FlowLayoutPanel před přidáním tlačítka. I když bylo uvedeno dříve, každá buňka může obsahovat pouze jeden prvek, na pravém buňku kontejneru TableLayoutPanel má čtyři ovládací prvky tlačítek. Je to proto, že můžete vložit ovládací prvek v buňce, který obsahuje další ovládací prvky. Tento druh ovládacího prvku se nazývá kontejner a FlowLayoutPanel je kontejner.
-
-## <a name="to-add-buttons"></a>Přidání tlačítek
-
-1.  Zvolte nové FlowLayoutPanel, který jste přidali. Přejděte na **běžné ovládací prvky** v **sada nástrojů** a dvakrát klikněte na **tlačítko** položka k přidání ovládacího prvku tlačítko názvem **button1** k vaší FlowLayoutPanel. Opakujte jiné tlačítko Přidat. Rozhraní IDE zjistí, že již tlačítka nazvaného **button1** a volá dalšímu **button2**.
-
-2.  Obvykle přidávat další tlačítka pomocí **sada nástrojů**. Tentokrát vyberte **button2**a potom na panelu nabídek vyberte **upravit** > **kopie** (nebo stiskněte klávesu **Ctrl** + **C**). Na řádku nabídek zvolte **upravit** > **vložit** (nebo stiskněte klávesu **Ctrl**+**V**) k vložení kopie vašeho tlačítka. Nyní vložte znovu. Prostředí IDE nyní přidala **button3** a **button4** k FlowLayoutPanel.
+8.  Zvolte **TableLayoutPanel** na formuláři a potom přejděte na **kontejnery** ve **nástrojů** (kde jste získali váš ovládací prvek) a dvakrát klikněte na panel **FlowLayoutPanel** položka k přidání nového ovládacího prvku do poslední buňky v ovládacím prvku PictureBox (vpravo dole). Potom ukotvěte FlowLayoutPanel v TableLayoutPanel (výběrem **ukotvit v nadřazeném kontejneru** v seznamu úloh černého trojúhelníku panelu FlowLayoutPanel nebo nastavením panelu FlowLayoutPanel **ukotvit** Vlastnost **vyplnit**).
 
     > [!NOTE]
-    >  Můžete zkopírovat a vložit libovolný ovládací prvek. Prostředí IDE názvy a umístí nové ovládací prvky logickým způsobem. Pokud můžete vložit ovládacího prvku do kontejneru, rozhraní IDE zvolí další logický místa pro umístění.
+    >  A <xref:System.Windows.Forms.FlowLayoutPanel> je kontejner, který uspořádá jiné ovládací prvky do úhledných řádků v pořadí. Když změníte velikost FlowLayoutPanel, pokud má místo k rozložení všech ovládacích prvků v jediném řádku, udělá to. V opačném případě je uspořádá na řádcích, jednoho nad druhým. Použijete FlowLayoutPanel k podržení čtyř tlačítek. Pokud jsou tlačítka uspořádány, jeden v druhém při přidání, ujistěte se, že je vybraná FlowLayoutPanel před přidáním tlačítek. I když bylo uvedeno dříve, že každá buňka může obsahovat pouze jeden ovládací prvek, pravém dolním rohu buňky kontejneru TableLayoutPanel má čtyři ovládací prvky tlačítka. Je to proto, že do buňky obsahující další ovládací prvky můžete umístit ovládací prvek. Tento druh ovládacího prvku se nazývá kontejner a FlowLayoutPanel je kontejner.
 
-3.  Zvolte tlačítko první a nastavit jeho **Text** vlastnost **zobrazit obrázek**. Nastavte **Text** vlastnosti následující tři tlačítka na **Vymazat obrázek**, **nastavení barvy pozadí**, a **Zavřít**.
+## <a name="to-add-buttons"></a>Přidat tlačítka
 
-4.  Dalším krokem je velikost tlačítek a uspořádat je tak, aby se na pravé straně panelu zarovnané. Vyberte **FlowLayoutPanel** a prohlédněte si jeho **FlowDirection** vlastnost. Ho změnit tak, že nastavíte **RightToLeft**. Jakmile to uděláte, doporučujeme tlačítka vlastní vyrovnání u pravého okraje buňky a změnit jejich pořadí tak, aby **zobrazit obrázek** tlačítko je na pravé straně.
+1.  Vyberte nový FlowLayoutPanel, který jste přidali. Přejděte na **běžné ovládací prvky** v **nástrojů** a dvakrát klikněte **tlačítko** položky pro přidání ovládacího tlačítka nazvaného **button1** k vaší FlowLayoutPanel. Opakujte k přidání dalšího tlačítka. Rozhraní IDE zjistí, že je již tlačítko nazvané **button1** a další nazve **button2**.
+
+2.  Obvykle přidáte další tlačítka pomocí **nástrojů**. Tentokrát vyberte možnost **button2**a pak na panelu nabídek zvolte **upravit** > **kopírování** (nebo stiskněte klávesu **Ctrl** + **C**). V panelu nabídky zvolte **upravit** > **vložte** (nebo stiskněte klávesu **Ctrl**+**V**) k vložení kopie vašeho tlačítka. Nyní jej vložte znovu. IDE nyní přidalo **button3** a **button4** do FlowLayoutPanel.
 
     > [!NOTE]
-    >  Pokud tlačítka jsou stále v nesprávném pořadí, můžete přetáhnout tlačítka kolem FlowLayoutPanel ke změně uspořádání je v libovolném pořadí. Můžete vybrat tlačítko a přetáhněte jej doleva nebo doprava.
+    >  Můžete zkopírovat a vložit libovolný ovládací prvek. Rozhraní IDE pojmenuje a umístí nové ovládací prvky logickým způsobem. Pokud vložíte ovládací prvek do kontejneru, rozhraní IDE zvolí další logický prostor pro umístění.
 
-5.  Vyberte **Zavřít** tlačítko ji vyberte. Podržte stisknutou **Ctrl** klíče a zvolte další tři tlačítka, tak, aby byly všechny vybrány. Když jsou vybrány všechny tlačítka, přejděte na **vlastnosti** okno a přejděte do **AutoSize** vlastnost. Tato vlastnost určuje, na tlačítko automaticky měnit velikost tak, aby vyhovovaly všechen text. Nastavte ji na **true**. Vaše tlačítka by měl být nyní správně velká a být ve správném pořadí. (Tak dlouho, dokud jsou vybrány všechny čtyři tlačítka, můžete změnit všechny čtyři **AutoSize** vlastnosti ve stejnou dobu.) Následující obrázek znázorňuje čtyři tlačítka.
+3.  Vyberte první tlačítko a nastavte jeho **Text** vlastnost **zobrazit obrázek**. Nastavte **Text** vlastnosti dalších tří tlačítek na **Vymazat obrázek**, **nastavit barvu pozadí**, a **Zavřít**.
 
-     ![Obrázek prohlížeč s čtyři tlačítka](../ide/media/express_autosize.png)
-**Prohlížeč obrázků** s čtyři tlačítka
+4.  Dalším krokem je změnit velikost tlačítek a uspořádat je tak, aby jejich zarovnání bylo k pravé straně panelu. Zvolte **FlowLayoutPanel** a podívejte se na jeho **FlowDirection** vlastnost. Změňte ji tak, že je nastavena na **RightToLeft**. Jakmile provedete, tlačítka by měl vlastní vyrovnání v rámci na pravou stranu buňky a jejich pořadí se obrátit tak, aby **zobrazit obrázek** je tlačítko na pravé straně.
 
-6.  Nyní spusťte program znovu zobrazíte nově rozložený formulář. Výběr tlačítka a zaškrtávací políčko ještě nic neudělá, ale bude brzy fungovat.
+    > [!NOTE]
+    >  Pokud jsou tlačítka stále v nesprávném pořadí, můžete přetáhnout tlačítka kolem kontejneru FlowLayoutPanel k změně jejich uspořádání v libovolném pořadí. Můžete zvolit tlačítko a přetáhnout je doleva nebo doprava.
+
+5.  Zvolte **Zavřít** tlačítko a vyberte ji. Podržte stisknutou klávesu **Ctrl** klíče a vyberte další tři tlačítka tak, aby byly všechny vybrány. Zatímco jsou všechna tlačítka vybrána, přejděte **vlastnosti** okno a posouvejte nahoru až **AutoSize** vlastnost. Tato vlastnost říká tlačítku, že automaticky změní velikost sebe sama na vhodnou všechen text. Nastavte ho na **true**. Tlačítka by měla být nyní správně velká a být ve správném pořadí. (Dokud jsou vybrány všechna čtyři tlačítka, můžete změnit všechny čtyři **AutoSize** vlastnosti ve stejnou dobu.) Následující obrázek znázorňuje čtyři tlačítka.
+
+     ![Prohlížeč obrázků se čtyřmi tlačítky](../ide/media/express_autosize.png)
+**prohlížeče obrázků** se čtyřmi tlačítky
+
+6.  Nyní spusťte váš program znovu, abyste viděli váš nově rozložený formulář. Volba tlačítek a zaškrtávacího políčka ještě nic neumí, ale bude brzy fungovat.
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 6: pojmenujte své ovládací prvky tlačítek](../ide/step-6-name-your-button-controls.md).
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 6: Pojmenovat vaše tlačítka](../ide/step-6-name-your-button-controls.md).
 
--   Chcete-li vrátit k předchozímu kroku kurzu, přečtěte si téma [krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).

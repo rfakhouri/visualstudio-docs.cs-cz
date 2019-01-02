@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: profilování kódu JavaScript na webových stránkách | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Profilování kódu JavaScript ve webových stránkách | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -13,64 +11,64 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863635"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Postupy: kódu JavaScript profil ve webových stránkách
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Postupy: Profilování kódu JavaScript ve webových stránkách
 
-Profilace nástroje sady Visual Studio můžete shromažďovat data o výkonu pro kód JavaScript, který se spustí v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace, libovolné webové stránky nebo aplikace JavaScript pomocí metoda profilování instrumentace. Vyžaduje Internet Explorer 8 nebo novější.
+Visual Studio Tools profilace můžete shromažďovat údaje o výkonu pro kód jazyka JavaScript, který se spustí v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace, libovolná webová stránka nebo JavaScript aplikace s použitím metoda profilace instrumentace. Vyžaduje aplikaci Internet Explorer 8 nebo novější.
 
 > [!WARNING]
-> Profil JavaScript v aplikacích pro UPW, najdete v tématu [paměť jazyka JavaScript](../profiling/javascript-memory.md) 
+> Chcete-li Profilovat jazyk JavaScript v aplikacích pro UPW, přečtěte si téma [paměti jazyka JavaScript](../profiling/javascript-memory.md) 
 
-Profilace Průvodce vám pomůže vytvořit relaci výkonu. Zadejte metody instrumentace a pak zadejte JavaScript profilace možnost na stránce instrumentace dialogové okno Vlastnosti výkonnostní relace.
+Průvodce Profilováním můžete použít k vytvoření relace výkonu. Určete metody instrumentace a potom určete možnost na stránce instrumentace dialogové okno Vlastnosti relace výkonu profilace jazyka JavaScript.
 
-Když zadáte JavaScript – profilace, kód jazyka JavaScript, která se spouští v prohlížeči a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] jsou profilovaným kód, který spouští na serveru.
+Když zadáte profilace JavaScriptu, kód jazyka JavaScript, který se spustí v prohlížeči a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kód, který se spustí na serveru jsou profilovány.
 
-- Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace, i kód JavaScript, který spouští v prohlížeči a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] jsou profilovaným kód, který spouští na serveru.
+- Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci, jak kód jazyka JavaScript, který se spustí v prohlížeči a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] kód, který se spustí na serveru jsou profilovány.
 
-- Pro webovou stránku libovolný je profilovaným kód JavaScript, který se spustí v prohlížeči.
+- Pro libovolnou webovou stránku je profilována kód jazyka JavaScript, který se spustí v prohlížeči.
 
-## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Do profilu JavaScript v projekt webové aplikace technologie ASP.NET
+## <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Chcete-li Profilovat jazyk JavaScript v projektu webové aplikace ASP.NET
 
-1. Otevřete [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webového projektu v sadě Visual Studio.
+1. Otevřít [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webový projekt v sadě Visual Studio.
 
-2. Na **analyzovat** nabídky, klikněte na tlačítko **spusťte Průvodce výkonu**.
+2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.
 
-3. Na první stránce průvodce výkonu, zadejte **instrumentace** metoda profilování a pak klikněte na **Další**.
+3. Na první stránce Průvodce výkonem, zadejte **instrumentace** metoda profilace a potom klikněte na **Další**.
 
-4. Na druhé stránce průvodce, ujistěte se, zda je aktuální projekt vybrán v seznamu cílů a pak klikněte na tlačítko **Další.**
+4. Na druhé stránce průvodce, ujistěte se, že je aktuální projekt vybraný v seznamu cílů a potom klikněte na tlačítko **Další.**
 
-5. Na třetí stránce průvodce vyberte **profil JavaScript** zaškrtněte políčko a potom klikněte na **Další**.
+5. Na třetí stránce průvodce vyberte **Profilovat jazyk JavaScript** zaškrtněte políčko a potom klikněte na tlačítko **Další**.
 
-6. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spuštění webové aplikace v prohlížeči.
+6. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spusťte webovou aplikaci v prohlížeči.
 
-7. Výkonu funkce, které chcete profil.
+7. Vykonává funkce, které chcete profil.
 
-8. K ukončení relace profilování, zavřete prohlížeč.
+8. Chcete-li ukončit relaci profilování, ukončete prohlížeč.
 
-### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Do profilu JavaScript v jednotlivých webové stránky nebo aplikace JavaScript
+### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Chcete-li Profilovat jazyk JavaScript v jednotlivých webových stránek nebo aplikací jazyka JavaScript
 
-1. Otevřete Visual Studio.
+1. Otevřít Visual Studio.
 
-2. Na **analyzovat** nabídky, klikněte na tlačítko **spusťte Průvodce výkonu**.
+2. Na **analyzovat** nabídky, klikněte na tlačítko **spustit Průvodce výkonem**.
 
-3. Na první stránce průvodce výkonu, zadejte **instrumentace** metoda profilování a pak klikněte na **Další**.
+3. Na první stránce Průvodce výkonem, zadejte **instrumentace** metoda profilace a potom klikněte na **Další**.
 
-4. Na druhé stránce průvodce, klikněte na aplikace ASP.NET nebo JavaScript a pak klikněte na tlačítko **Další.**
+4. Na druhé stránce průvodce, klikněte na aplikace ASP.NET nebo JavaScript a potom klikněte na tlačítko **Další.**
 
 5. Na třetí stránce průvodce:
 
-    1. Zadejte adresu URL stránky v **jaké adresu URL nebo cestu aplikaci spustit** pole.
+    1. Zadejte adresu URL stránky v **jaká adresa URL nebo cesta se spustí aplikace** pole.
 
-    2. Vyberte **profil JavaScript** zaškrtněte políčko a potom klikněte na **Další**.
+    2. Vyberte **Profilovat jazyk JavaScript** zaškrtněte políčko a potom klikněte na tlačítko **Další**.
 
-6. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spustit webovou stránku v prohlížeči.
+6. Na čtvrté stránce průvodce, klikněte na tlačítko **Dokončit** spuštění webové stránky v prohlížeči.
 
-7. Výkonu funkce, které chcete profil.
+7. Vykonává funkce, které chcete profil.
 
-8. K ukončení relace profilování, zavřete prohlížeč.
+8. Chcete-li ukončit relaci profilování, ukončete prohlížeč.

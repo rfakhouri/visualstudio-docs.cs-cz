@@ -1,9 +1,7 @@
 ---
 title: 'Krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,85 +9,85 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821336"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel
-V tomto kroku přidáte <xref:System.Windows.Forms.TableLayoutPanel> ovládacího prvku do svého formuláře. Kontejner TableLayoutPanel pomáhá správně zarovnání ovládacích prvků ve formuláři, který bude přidat později.
+V tomto kroku přidáte <xref:System.Windows.Forms.TableLayoutPanel> ovládací prvek do formuláře. TableLayoutPanel pomáhá správně Zarovnat ovládací prvky ve formuláři, který přidáte později.
 
- ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
+ ![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [kurz 1: Vytvoření prohlížeče obrázků v jazyce Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) nebo [kurz 1: Vytvoření prohlížeče obrázků v C# -2 videa](http://go.microsoft.com/fwlink/?LinkId=205200). Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Chcete-li Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel
 
-1.  Na levé straně Visual Studio IDE, vyhledejte **sada nástrojů** kartě. Vyberte **sada nástrojů** kartě a **sada nástrojů** se zobrazí. (Nebo na řádku nabídek zvolte **zobrazení** > **sada nástrojů**.)
+1.  Na levé straně rozhraní IDE sady Visual Studio, vyhledejte **nástrojů** kartu. Zvolte **nástrojů** kartu a **nástrojů** se zobrazí. (Nebo v řádku nabídek zvolte **zobrazení** > **nástrojů**.)
 
-2.  Zvolte symbol malý trojúhelník vedle **kontejnery** skupiny a otevře se, jak je znázorněno na následujícím obrázku.
+2.  Výběrem symbolu malého trojúhelníku vedle **kontejnery** skupiny a otevře se, jak je znázorněno na následujícím obrázku.
 
-     ![Skupiny kontejnerů](../ide/media/express_toolbox.png)
+     ![Skupina zásobníků](../ide/media/express_toolbox.png)
 **kontejnery** skupiny
 
-3.  Ovládací prvky jako tlačítka, zaškrtněte políčka a popisky můžete přidat do svého formuláře. TableLayoutPanel – ovládací prvek v dvakrát klikněte **sada nástrojů**. (Nebo, můžete přetáhnout ovládací prvek z panelu nástrojů na formuláři). Když to uděláte, rozhraní IDE přidá do svého formuláře TableLayoutPanel – ovládací prvek, jak je znázorněno na následujícím obrázku.
+3.  Ovládací prvky jako tlačítka a zaškrtávací políčka, popisky můžete přidat do formuláře. Poklepejte na ovládací prvek TableLayoutPanel ve **nástrojů**. (Nebo, můžete přetáhnout ovládací prvek z panelu nástrojů do formuláře). Když toto provedete, rozhraní IDE přidá do svého formuláře ovládací prvek TableLayoutPanel, jak je znázorněno na následujícím obrázku.
 
      ![TableLayoutPanel – ovládací prvek](../ide/media/express_formtablelayout.png)
-**TableLayoutPanel** ovládací prvek
+**TableLayoutPanel** ovládacího prvku
 
     > [!NOTE]
-    >  Po přidání TableLayoutPanel, pokud se zobrazí okno uvnitř formuláře s nadpis **TableLayoutPanel úlohy**, zvolte kamkoli do formuláře a tím ho zavřete. Později v tomto kurzu se dozvíte další informace o toto okno.
+    >  Po přidání vašeho kontejneru TableLayoutPanel, pokud se zobrazí okno uvnitř formuláře s názvem **úlohy kontejneru TableLayoutPanel**, klikněte kamkoli do formuláře, abyste jej zavřeli. Později v tomto kurzu se dozvíte další informace o tomto okně.
 
-     Všimněte si jak **sada nástrojů** rozšíří na pokrytí formuláře, když zvolíte jeho kartě a zavře po volbě kamkoli mimo. To je funkce automatického skrytí IDE. Můžete tuto možnost zapnout nebo vypnout pro některý z windows tak, že zvolíte ikonu připínáčku v pravém horním rohu okna přepnout automaticky skrýt a zamknutí na místě. Takto se zobrazí ikona připínáčku.
+     Všimněte si, že jak **nástrojů** rozšíří na pokrytí formuláře po výběru jeho karty a ukončí se po klikněte kamkoli mimo něj. To je funkce automatického skrytí rozhraní IDE. Chcete-li ho nebo vypnout pro kterékoliv okno výběrem ikony připínáčku v pravém horním rohu okna k přepnutí automatického schovávání a zamknutí na místě. Takto se zobrazí ikona připínáčku.
 
-     ![Ikonu připínáčku](../ide/media/express_pushpintoolbox.png)
-**připínáček** ikonu
+     ![Ikoně připínáčku](../ide/media/express_pushpintoolbox.png)
+**připínáčku** ikonu
 
-4.  Ujistěte se, že je vybrán TableLayoutPanel ji výběrem. Můžete ověřit, jaké ovládací prvek vybrán pohledem na rozevírací seznam v horní části **vlastnosti** okno, jak je znázorněno na následujícím obrázku.
+4.  Ujistěte se, že je vybrán kontejner TableLayoutPanel, zvolte ji. Můžete ověřit, jaké ovládací prvek je vybrán, pohlédnutím na rozevírací seznam v horní části **vlastnosti** okna, jak je znázorněno na následujícím obrázku.
 
-     ![Vlastnosti – okno zobrazující TableLayoutPanel – ovládací prvek](../ide/media/express_controlspropwin.png)
-**vlastnosti** okno zobrazující **TableLayoutPanel** ovládací prvek
+     ![Okno Vlastnosti zobrazující ovládací prvek TableLayoutPanel](../ide/media/express_controlspropwin.png)
+**vlastnosti** okno zobrazující **TableLayoutPanel** ovládacího prvku
 
-5.  Vyberte **podle abecedy** tlačítka na panelu nástrojů v **vlastnosti** okno. To způsobí, že seznam vlastností ve **vlastnosti** okna zobrazte v abecedním pořadí, které se snadněji najít vlastnosti v tomto kurzu.
+5.  Zvolte **Alphabetical** tlačítko na panelu nástrojů **vlastnosti** okno. To způsobí, že seznam vlastností v **vlastnosti** okno k zobrazení v abecedním pořadí, které vám usnadní vyhledání vlastnosti v tomto kurzu.
 
-6.  Selektor ovládacího prvku je rozevírací seznam v horní části **vlastnosti** okno. V tomto příkladu se zobrazí, že ovládací prvek označuje `tableLayoutPanel1` je vybrána. Můžete vybrat buď pomocí výběr oblast v ovládacích prvcích **Návrhář formulářů Windows** nebo tak, že zvolíte Selektor ovládacího prvku. Teď, když je vybraný kontejner TableLayoutPanel, Najít **ukotvení** vlastnost a zvolte **ukotvení**, který by měl být nastaven na **žádné**. Všimněte si, že se zobrazí šipku rozevíracího seznamu vedle hodnota. Vyberte šipku a pak vyberte **vyplnění** (tlačítko velké uprostřed), jak je znázorněno na následujícím obrázku.
+6.  Selektor ovládacího prvku je rozevírací seznam v horní části **vlastnosti** okna. V tomto příkladu ukazuje, že ovládací prvek s názvem `tableLayoutPanel1` zaškrtnuto. Můžete vybrat ovládací prvky podle buď výběrem oblasti v **Návrháře formulářů Windows** nebo výběrem ze selektoru ovládacího prvku. Teď, když kontejner TableLayoutPanel vybrán, vyhledejte **Dock** vlastnost a zvolte **Dock**, musí být nastavená na **žádný**. Všimněte si, že na šipku rozevíracího seznamu se zobrazí vedle hodnoty. Klikněte na šipku a potom vyberte **vyplnit** tlačítko (velké tlačítko uprostřed), jak je znázorněno na následujícím obrázku.
 
-     ![Vlastnosti – okno s výplně vybrané](../ide/media/express_docktable.png)
-**vlastnosti** okno s **vyplnění** vybrané
+     ![Okno Vlastnosti s výplně vybrané](../ide/media/express_docktable.png)
+**vlastnosti** okno s **vyplnit** vybrané
 
-     *Ukotvení* v sadě Visual Studio odkazuje po připojení k jiné okno nebo oblast v prostředí IDE časového období. Například **vlastnosti** okno může být ukotven – to znamená, odpojit a volně umístěný v sadě Visual Studio – nebo může být ukotveno proti **Průzkumníku řešení**.
+     *Ukotvení* ve Visual Studiu odkazuje na když okno je připojen k jinému oknu nebo oblasti v rozhraní IDE. Například **vlastnosti** okno může být neukotveno – to znamená, Nepřipojeno a volně plovoucí v aplikaci Visual Studio – nebo ho lze ukotvit oproti **Průzkumníku řešení**.
 
-7.  Po nastavení kontejneru TableLayoutPanel **ukotvení** vlastnost **vyplnění**, panelu doplní k celému formuláři. Pokud změníte velikost formuláře znovu, kontejner TableLayoutPanel zůstane ukotvený a změní, aby se vešel do.
+7.  Poté, co nastavíte kontejneru TableLayoutPanel **Dock** vlastnost **vyplnit**, panel vyplní celý formulář. Pokud změníte velikost formuláře znovu, kontejner TableLayoutPanel zůstane ukotvený a změní velikost sebe sama na vhodnou.
 
     > [!NOTE]
-    >  Ovládacího prvku TableLayoutPanel funguje jako tabulku aplikace Microsoft Office Word: má řádků a sloupců a jednotlivých buněk může mít rozsah více řádků a sloupců. Každá buňka může obsahovat jeden ovládací prvek (např. tlačítka, představuje zaškrtávací políčko nebo štítek). Bude mít vaše TableLayoutPanel <xref:System.Windows.Forms.PictureBox> řízení rozložení celý horní řádek, <xref:System.Windows.Forms.CheckBox> ovládacího prvku v jeho levé dolní buňky a čtyřmi <xref:System.Windows.Forms.Button> ovládacích prvků v pravém dolním buňky.
+    >  TableLayoutPanel funguje jako tabulka v aplikaci Microsoft Office Word: Má řádky a sloupce a jednotlivé buňky může zahrnovat více řádků a sloupců. Každá buňka může obsahovat jeden ovládací prvek (například tlačítko, zaškrtávací políčko nebo jmenovku). Váš kontejner TableLayoutPanel bude mít <xref:System.Windows.Forms.PictureBox> prvek rozložený přes celý horní řádek, <xref:System.Windows.Forms.CheckBox> ovládacího prvku v jeho levé dolní buňky a čtyři <xref:System.Windows.Forms.Button> ovládacích prvků v jejich pravém dolním rohu buňky.
 
-8.  V současné době kontejner TableLayoutPanel má dva rovná velikosti řádků a sloupců dva stejně velké. Budete muset změnit jejich velikost, takže horním řádku a v pravém sloupci jsou oba mnohem větší. V **Návrhář formulářů Windows**, vyberte kontejner TableLayoutPanel. V pravém horním rohu je malý černý trojúhelník tlačítko, které se zobrazí takto.
+8.  V současné době kontejner TableLayoutPanel má dva stejně velké řádky a dva stejně velké sloupce. Budete muset změnit jejich velikost, takže horní řádek a sloupec vpravo jsou oba mnohem větší. V **Návrháře formulářů Windows**, vyberte kontejner TableLayoutPanel. V pravém horním rohu je malé černé trojúhelníkové tlačítko, které se zobrazí takto.
 
-     ![Tlačítko trojúhelníček](../ide/media/express_iconblacktriangle.gif)
-**trojúhelníček** tlačítko
+     ![Trojúhelníkové tlačítko](../ide/media/express_iconblacktriangle.gif)
+**trojúhelník** tlačítko
 
-     Toto tlačítko znamená, že má ovládací prvek úlohy, které vám pomohou automaticky nastavit jeho vlastnosti.
+     Toto tlačítko znamená, že ovládací prvek má úkoly, které vám pomohou automaticky nastavit jeho vlastnosti.
 
-9. Zvolte trojúhelníček k zobrazení seznamu úloh ovládacího prvku, jak je znázorněno na následujícím obrázku.
+9. Vyberte trojúhelník k zobrazení seznamu úloh ovládacího prvku, jak je znázorněno na následujícím obrázku.
 
-     ![TableLayoutPanel – úlohy](../ide/media/express_tablepanel.png)
+     ![Úlohy třídy TableLayoutPanel](../ide/media/express_tablepanel.png)
 **TableLayoutPanel** úlohy
 
-10. Vyberte **úpravy řádků a sloupců** úlohy zobrazíte **styly řádku a sloupce** okno. Zvolte **Column1**a změňte jeho velikost na 15 procent tím, že je, že **procent** tlačítko je vybrané a vstup **15** v **procent** pole. (To je <xref:System.Windows.Forms.NumericUpDown> řízení, které budete používat v pozdějších kurzech.) Zvolte **Column2** a nastavte ji na 85 procent. Nevolte **OK** tlačítko ještě, protože okno se zavře. (Ale pokud tak učiníte, můžete ho znovu otevřít pomocí seznamu úkolů.)
+10. Zvolte **upravit řádky a sloupce** úkol, který zobrazí **styly sloupců a řádků** okna. Zvolte **Sloupec1**a změňte jeho velikost na 15 procent zkontrolujte, zda **procent** tlačítko je vybraná a zadávání **15** v **procent** pole. (To <xref:System.Windows.Forms.NumericUpDown> ovládací prvek, který použijete v pozdějších kurzech.) Zvolte **Column2** a nastavte ho na 85 procent. Neklikejte **OK** tlačítko, protože okno se zavře. (Ale pokud tak učiníte, můžete znovu otevřít pomocí seznam úkolů.)
 
-     ![TableLayoutPanel – styly řádků a sloupců](../ide/media/vs_tablelayoutpanel_setup.png)
-**TableLayoutPanel** stylů řádků a sloupců
+     ![Styly sloupců a řádků v kontejneru TableLayoutPanel](../ide/media/vs_tablelayoutpanel_setup.png)
+**TableLayoutPanel** styly sloupců a řádků
 
-11. Z **zobrazit** rozevírací seznam v horní části okna vyberte **řádky**. Nastavit **Row1** až 90 procent a **Row2** až 10 procent.
+11. Z **zobrazit** rozevíracího seznamu v horní části okna vyberte **řádků**. Nastavte **Row1** až 90 procent a **Row2** na 10 procent.
 
-12. Vyberte **OK** tlačítko. Vaše TableLayoutPanel teď měli mít velký horní řádek, malý dolní řádek, malé levém sloupci a velké pravém sloupci. Můžete změnit velikost řádků a sloupců v kontejneru TableLayoutPanel výběrem **tableLayoutPanel1** ve formuláři a přetáhnete jeho ohraničení řádků a sloupců.
+12. Zvolte **OK** tlačítko. Váš kontejner TableLayoutPanel by nyní mít velký horní řádek, malý dolní řádek, malý levý sloupec a velký pravý sloupec. Můžete změnit velikost řádků a sloupců v kontejneru TableLayoutPanel výběrem **tableLayoutPanel1** ve formuláři a přetažením ohraničení jeho řádku a sloupce.
 
      ![Form1 se změněnou velikostí TableLayoutPanel](../ide/media/vs_formafterlayoutpanel.png)
-**Form1** s ke změně velikosti **TableLayoutPanel**
+**Form1** se změněnou velikostí **kontejner TableLayoutPanel**
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 5: Přidání ovládacích prvků do svého formuláře](../ide/step-5-add-controls-to-your-form.md).
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 5: Přidejte do svého formuláře ovládací prvky](../ide/step-5-add-controls-to-your-form.md).
 
--   Chcete-li vrátit k předchozímu kroku kurzu, přečtěte si téma [krok 3: nastavte vlastnosti svého formuláře](../ide/step-3-set-your-form-properties.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 3: Nastavte vlastnosti svého formuláře](../ide/step-3-set-your-form-properties.md).

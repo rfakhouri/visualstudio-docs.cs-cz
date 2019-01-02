@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: povolení funkce AutoStart pro instalace z disku CD | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Povolení funkce AutoStart pro instalace z disku CD | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97642a499e0415dd6fcd245e379c9f01520b5c53
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 35a6d98a476a8a9612cb5bfb80e7fa8b2f00c4ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864017"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Postupy: povolení funkce AutoStart pro instalace z disku CD
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Postupy: Povolení funkce AutoStart pro instalace z disku CD
 Při nasazování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pomocí vyměnitelného média jako je například disk CD-ROM nebo DVD-ROM, můžete povolit `AutoStart` tak, aby [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se automaticky spustí, když je médium je vloženo.  
   
  `AutoStart` lze povolit **publikovat** stránku **Návrháře projektu**.  
@@ -48,4 +46,4 @@ Při nasazování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
   
 ## <a name="see-also"></a>Viz také:  
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

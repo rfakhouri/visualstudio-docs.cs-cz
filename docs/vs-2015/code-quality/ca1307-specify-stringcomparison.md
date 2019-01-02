@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90da21195e5bc2f50708bedc869e945da2d291dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 577ca853d6b68696640d368cc9e52e4c7bb051c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887001"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Zadejte možnosti StringComparison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +51,4 @@ ms.locfileid: "49853126"
  Je bezpečné potlačit upozornění tohoto pravidla, když aplikace a knihovny je určená pro omezené místní cílovou skupinu a nebude proto být lokalizována.
 
 ## <a name="see-also"></a>Viz také
- [Upozornění globalizace](../code-quality/globalization-warnings.md) [CA1309: použijte Řadový StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)
-
-
-
+ [Upozornění globalizace](../code-quality/globalization-warnings.md) [CA1309: Použijte Řadový StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

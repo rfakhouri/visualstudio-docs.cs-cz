@@ -1,8 +1,6 @@
 ---
-title: Managedtype – | Microsoft Docs
-ms.custom: ''
+title: Managedtype – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,24 +14,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888241"
 ---
 # <a name="managedtype"></a>ManagedType
-Je identifikována spravovaného typu (všechny symbol definovaná metadata nebo nativní pro funkce správy paměti a prostředků jazyků, například C#) `SymTagManagedType` symbol.  
+Je identifikován spravovaného typu (žádné symbol definovaný pomocí metadat, nebo z nativní do funkce správy paměti a prostředků v jazycích, jako je C#) `SymTagManagedType` symbol.  
   
 ## <a name="properties"></a>Vlastnosti  
- V následující tabulce jsou uvedeny další platný vlastnosti pro tento typ symbolu.  
+ V následující tabulce jsou uvedeny další platné vlastnosti pro tento typ symbolu.  
   
 |Vlastnost|Datový typ|Popis|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Název spravovaného symbolu.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagManagedType` (jeden z [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagManagedType` (jeden z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
   
 ## <a name="see-also"></a>Viz také  
  [Hierarchie tříd typů symbolů](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

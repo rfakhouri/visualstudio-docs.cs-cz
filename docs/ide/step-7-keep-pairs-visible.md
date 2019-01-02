@@ -1,9 +1,7 @@
 ---
-title: 'Krok 7: Uchovejte páry viditelné'
-ms.custom: ''
+title: 'Krok 7: Zachování dvojic viditelných'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: TerryGLee
@@ -11,28 +9,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e27a5378aacec6af4ca07f13242f24bd665a762e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d541c28148c6e1fca9b1b1b7411b2b4d99715d8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880994"
 ---
-# <a name="step-7-keep-pairs-visible"></a>Krok 7: Uchovejte páry viditelné
-Hra funguje dobře tak dlouho, dokud hráč vybírá pouze dvojice ikon, které neodpovídají. Ale zvažte, co by mělo nastat, pokud hráč vybere shodnou dvojici. Namísto provádění ikony zmizí zapnutím časovač (pomocí <xref:System.Windows.Forms.Timer.Start> metoda), hra musí resetovat, tak, aby ho je už udržování přehledu o štítků, které používají `firstClicked` a `secondClicked` referenční proměnné, bez resetování barvy pro dva popisky, které byly.
+# <a name="step-7-keep-pairs-visible"></a>Krok 7: Zachování dvojic viditelných
+Hra funguje dobře tak dlouho, dokud hráč vybírá pouze dvojice ikon, které neodpovídají. Ale zvažte, co by mělo nastat, pokud hráč vybere shodnou dvojici. Namísto nastavení zmizení ikon zapnutím časovače (pomocí <xref:System.Windows.Forms.Timer.Start> metoda), hra měla resetovat sama tak, aby ho je už neudržují přehled o popisky pomocí `firstClicked` a `secondClicked` referenční proměnné bez resetování barev dvou popisků, které byly vybrány.
 
 ## <a name="to-keep-pairs-visible"></a>Zachování dvojic viditelných
 
-1.  Přidejte následující `if` příkaz, který má `label_Click()` metoda obslužné rutiny události u konce kód nad příkaz, kde spustit časovač. Při přidávání do programu si kód pořádně prohlédněte. Zamyslete se nad tím, jak kód funguje.
+1.  Přidejte následující `if` příkazu `label_Click()` metoda obslužné rutiny události poblíž konce kódu těsně nad příkazem, kde spouštíte časovač. Při přidávání do programu si kód pořádně prohlédněte. Zamyslete se nad tím, jak kód funguje.
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
 
-     První řádek `if` příkaz jste právě přidali zkontroluje, zda na ikonu v první štítek, který vybere přehrávač je stejné jako na ikonu v druhé popisku. Pokud jsou identické ikony, program provede tři příkazy ve složených závorkách v C# nebo tři příkazy v `if` v jazyce Visual Basic. První dva příkazy resetují `firstClicked` a `secondClicked` referenční proměnné tak, aby se už udržování přehledu o štítků. (Můžete rozpoznat tyto dva příkazy z časovače <xref:System.Windows.Forms.Timer.Tick> obslužné rutiny události.) Je třetí příkaz `return` příkaz, který říká přeskočte zbytek příkazy v metodě bez jejich spuštění programu.
+     První řádek `if` jste právě přidali zkontroluje, zda v první popisek, který hráč vybere ikonu je stejná jako ikona druhého popisku. Pokud jsou ikony shodné, program provede tři příkazy mezi složenými závorkami v jazyce C# nebo tři příkazy v rámci `if` v sadě Visual Studio. První dva příkazy resetují `firstClicked` a `secondClicked` referenční proměnné tak, aby se už udržovat přehled o žádném popisku. (Můžete rozpoznat tyto dva příkazy z časovače <xref:System.Windows.Forms.Timer.Tick> obslužné rutiny události.) Třetí příkaz je `return` příkaz, který říká programu, aby přeskočil zbytek příkazů v metodě bez jejich spuštění.
 
-     Pokud programování v jazyce Visual C#, může dojít k tomu, že některé kód používá jeden symbol rovná se (`=`), zatímco jiné příkazy používají dva symboly rovná se (`==`). Vezměte v úvahu důvod, proč `=` se používá v některých místech, ale `==` se používá v jiných míst.
+     Pokud programujete v jazyce Visual C#, mohli jste si všimnout, že některý kód používá jediný symbol rovnítka (`=`), zatímco jiné příkazy používají dva symboly rovná se (`==`). Zvažte, proč `=` se používá v některých místech, ale `==` je použit na dalších místech.
 
-     Toto je typický příklad, který ukazuje rozdíl. Pozor, prohlédněte si kód v závorkách v `if` příkaz.
+     Toto je typický příklad, který ukazuje rozdíl. Pozorně se podívejte na kód mezi závorkami v `if` příkazu.
 
     ```vb
     firstClicked.Text = secondClicked.Text
@@ -42,7 +40,7 @@ Hra funguje dobře tak dlouho, dokud hráč vybírá pouze dvojice ikon, které 
     firstClicked.Text == secondClicked.Text
     ```
 
-     Zkontrolujte pečlivě první příkaz v bloku kódu po `if` příkaz.
+     Zkontrolujte pečlivě první příkaz v bloku kódu po `if` příkazu.
 
     ```vb
     firstClicked = Nothing
@@ -52,15 +50,15 @@ Hra funguje dobře tak dlouho, dokud hráč vybírá pouze dvojice ikon, které 
     firstClicked = null;
     ```
 
-     První z těchto dvou příkazů ověří, zda jsou dvě ikony stejné. Vzhledem k tomu, že se porovnání dvou hodnot, používá programu Visual C# `==` operátor rovnosti. Druhý příkaz skutečně změní hodnotu (nazývá *přiřazení*), nastavení `firstClicked` odkaz na proměnnou rovna `null` ho resetovat. To je důvod, proč se používá `=` operátor přiřazení místo. Visual C# používá `=` nastavit hodnoty, a `==` k porovnání je. Visual Basic používá `=` pro porovnání a přiřazení proměnné.
+     První z těchto dvou příkazů ověří, zda jsou dvě ikony stejné. Protože se porovnávají dvě hodnoty, program Visual C# používá `==` operátor rovnosti. Druhý výpis skutečně změní hodnotu (volá *přiřazení*) a nastavte `firstClicked` referenční proměnnou rovna `null` resetovat ho. To je důvod, proč používá `=` operátor přiřazení místo. Visual C# používá `=` nastavit hodnoty, a `==` k jejich porovnání. Jazyk Visual Basic používá `=` pro přiřazení proměnné a porovnání.
 
-2.  Uložte a spusťte program a začněte vybírat ikony ve formuláři. Pokud zvolíte dvojici, která neodpovídá, událost časovače Tick se aktivuje a obě ikony zmizí. Pokud se rozhodnete pár odpovídající nové `if` příkaz provede, a příkaz return způsobí, že metoda přeskočit kód, který spustí časovač, takže ikony zůstanou viditelné, jak je znázorněno na následujícím obrázku.
+2.  Uložte a spusťte program a začněte vybírat ikony ve formuláři. Pokud zvolíte dvojici, která neodpovídá, událost časovače Tick se aktivuje a obě ikony zmizí. Pokud zvolíte odpovídající dvojici, nový `if` provede příkaz a návratový příkaz způsobí, že metoda vynechá kód, který spustí časovač, takže ikony zůstanou viditelné, jak je znázorněno na následujícím obrázku.
 
-     ![Herní, který vytvoříte v tomto kurzu](../ide/media/express_finishedgame.png)
-**odpovídající herní** s páry viditelné ikony
+     ![Hra, kterou vytvoříte v tomto kurzu](../ide/media/express_finishedgame.png)
+**Porovnávací hra** se zobrazenými dvojicemi ikon
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 8: Přidejte metodu k ověření, zda hráč vyhrál](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 8: Přidejte metodu k ověření, zda hráč zvítězil](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).
 
--   Chcete-li vrátit k předchozímu kroku kurzu, přečtěte si téma [krok 6: přidejte časovač](../ide/step-6-add-a-timer.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 6: Přidejte časovač](../ide/step-6-add-a-timer.md).

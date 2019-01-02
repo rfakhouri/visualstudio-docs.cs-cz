@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 431dad2f87fdd5857c91b39152d7f119945c0867
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 4359c71e054b8284e16eaed88b0ee140f7954494
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869450"
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu. Například `Person` doménová třída může mít vlastnosti `Name` a `BirthDate`. V definici DSL vlastnosti domény patří do domény pole třídy v diagramu a v rámci doménové třídy v Průzkumníku DSL. Další informace najdete v tématu [jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md).
@@ -45,7 +44,7 @@ A *doménovou vlastnost* je funkce, které může obsahovat hodnotu prvku modelu
 |**Je název elementu**|Pokud `True`, tato vlastnost domény se zobrazí jako název jeho element modelu v Průzkumníku DSL.<br /><br /> Nové prvky modelu, získají jedinečné výchozí hodnotu pro tuto vlastnost. Pokud chcete řídit, jak vygenerovat tyto hodnoty, nastavte **poskytovatel názvů elementů**.|`False`|
 |**Je uživatelské rozhraní jen pro čtení**|Pokud `True`, nelze změnit hodnoty vlastnosti domény pomocí uživatelského rozhraní. Je stále možné nastavit programy a se nebude zobrazovat v okně Vlastnosti.<br /><br /> Pokud chcete skrýt doménová vlastnost od uživatele, nastavte **je Prohlížitelná**. Pokud chcete k řízení přístupu podle aplikací, nastavte **modifikátor přístupu metody Setter**.|`False`|
 |**Typ**|Druh vlastnosti domény (`Normal`, `Calculated`, nebo `CustomStorage`). Další informace najdete v tématu [vypočtené a vlastní vlastnosti úložiště](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Jméno**|Název této vlastnosti domény. Musí být platný identifikátor, příklad **SongTitle**.|\<žádné >|
+|**Název**|Název této vlastnosti domény. Musí být platný identifikátor, příklad **SongTitle**.|\<žádné >|
 |**Poznámky**|Neformální poznámky, které jsou spojené s touto vlastností domény.|\<žádné >|
 |**Modifikátor přístupu metody setter**|Modifikátor přístupu pro metodu setter. Tato volba určuje obor, v programu, který kód můžete nastavit vlastnost.|`public`|
 |**Typ**|Typ vlastnosti. Pokud chcete přidat do seznamu dostupných typů, klikněte pravým tlačítkem na kořenový DSL v Průzkumník DSL a klikněte na tlačítko **přidat externí**.|`String`|

@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Vypršení časového limitu při ladění webových služeb | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: Během ladění webových služeb vypršel časový limit | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c6793e1fdf4e3ed2d7e42fbd32bd20ad9f494a
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 98d112528ace581c9173e82af63c502e2124315a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832567"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>Chyba: Během ladění webových služeb vypršel časový limit.
-Pokud jste se zanoříte se do webové služby XML z volání kódu, volání může někdy v důsledku vypršení časového limitu že nemůže pokračovat, ladění. Může zobrazit chybová zpráva typu to.  
+# <a name="error-timeout-while-debugging-web-services"></a>Chyba: Během ladění webových služeb vypršel časový limit
+Když provádíte krokování do webové služby XML z volající kód, volání může někdy vypršení časového limitu, což má za následek, že se nemůže pokračovat v ladění. Může zobrazit chybová zpráva takovou situaci.  
   
 ```cmd
 An unhandled exception of type 'System.Net.WebException' occurred in   
@@ -34,7 +32,7 @@ Additional information: The operation has timed-out.
 ```  
   
 ## <a name="solution"></a>Řešení  
- K tomuto problému nedošlo, nastavte hodnotu časového limitu pro volání webové služby XML na nekonečný, jak je znázorněno v tomto příkladu:  
+ K tomuto problému vyhnout, nastavte hodnotu časového limitu pro volání webové služby XML k nekonečné, jak je znázorněno v tomto příkladu:  
   
 ```csharp
 Service1 obj = new Service1();  

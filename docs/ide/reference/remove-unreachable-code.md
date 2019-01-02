@@ -2,7 +2,6 @@
 title: Odebrání nedosažitelného kódu refaktoringu
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 481c0d116eb2aee2c4f931f1ca4cb2de7927c62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842535"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Odebrání nedosažitelného kódu refaktoringu
 
@@ -24,11 +23,11 @@ Tento refaktoring platí pro:
 
 - C#
 
-**Co:** odebere kód, který se nikdy proveden.
+**Co:** Odebere kód, který se nikdy proveden.
 
-**Kdy:** program neobsahuje žádné cestu k fragmentu kódu, provádění zbytečné tento fragment kódu.
+**Kdy:** Program neobsahuje žádné cestu k fragmentu kódu, provádění zbytečné tento fragment kódu.
 
-**Důvod, proč:** zlepšit čitelnost a udržovatelnosti odebráním kód, který je nadbytečný a nikdy se spustí.
+**Proč:** Zlepšit čitelnost a udržovatelnosti odebráním kód, který je nadbytečný a nikdy se spustí.
 
 ## <a name="how-to"></a>Postupy
 

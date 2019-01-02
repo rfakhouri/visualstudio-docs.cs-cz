@@ -1,9 +1,6 @@
 ---
 title: Příznaky Bitflag používané konkrétními příkazy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875417"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Příznaky Bitflag používané konkrétními příkazy
 Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvku, které lze upravit tak, že nastavíte jeden nebo více bits jedinou hodnotu. Tyto hodnoty jsou označovány jako bitové příznaky. Různé příznaky bitflag používané rozhraní API modulu Plug-in zdroje ovládacího prvku je podrobně popsaný tady, seskupené podle funkce, která je používá.  
@@ -37,7 +34,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Modul plug-in správy zdrojového kódu by měl automaticky zjišťovat, zda je text nebo binární soubor.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ souboru je text.|  
-|`SCC_FILETYPE_BINARY`|0x04|Typ souboru není binární. **Poznámka:** `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` příznaky se vzájemně vylučují.   Nastavte právě jeden, nebo ani jeden.|  
+|`SCC_FILETYPE_BINARY`|0x04|Typ souboru není binární. **Poznámka:** `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` příznaky se vzájemně vylučují. Nastavte právě jeden, nebo ani jeden.|  
 |`SCC_ADD_STORELATEST`|0x02|Store pouze nejnovější verze (žádné rozdíly).|  
   
 ## <a name="diff-flags"></a>Příznaky diff  
@@ -46,7 +43,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
 |Příznak|Hodnota|Popis|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorujte velká rozdíly.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorujte prázdné znaky rozdíly. **Poznámka:** `SCC_DIFF_IGNORECASE` a `SCC_DIFF_IGNORESPACE` příznaky jsou volitelné příznaky bitflag.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignorujte prázdné znaky rozdíly. **Poznámka:**  `SCC_DIFF_IGNORECASE` a `SCC_DIFF_IGNORESPACE` příznaky jsou volitelné příznaky bitflag.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|Hloubka fronty porovnáním obsah celý soubor.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|HF podle kontrolního součtu.|  
 |`SCC_DIFF_QD_TIME`|0x0040|HF podle razítko data a času souboru.|  
@@ -81,7 +78,7 @@ Chování počet funkcí v rozhraní API modulu Plug-in zdroje ovládacího prvk
   
 |Příznak|Hodnota|Popis|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|Rozhraní IDE prochází adresáře, nikoli soubory: získání všech souborů v těchto adresářích.|  
+|`SCC_GET_ALL`|0x00000001L|Rozhraní IDE je předání adresáře, nikoli soubory: Získáte všechny soubory v těchto adresářích.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|Rozhraní IDE je předání adresáře: Získejte tyto adresáře a jejich podsložky.|  
   
 ## <a name="noption-values"></a>nOption hodnoty  

@@ -2,7 +2,6 @@
 title: Povolit ladění pro aplikace ASP.NET | Dokumentace Microsoftu
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881098"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Ladění aplikací ASP.NET nebo ASP.NET Core v sadě Visual Studio
 
@@ -176,7 +175,7 @@ Existují různé způsoby, jak publikovat aplikace do služby IIS. Tyto kroky u
 
 1. V **publikovat** dialogového okna, ujistěte se, že **CustomProfile** (nebo název profilu, který jste právě vytvořili) se zobrazí, a **LastUsedBuildConfiguration** je nastavena na  **Ladění**. 
 
-1. Vyberte **publikovat**.
+1. Vyberte **Publikovat**.
 
     ![Publikování do služby IIS](media/dbg-aspnet-local-iis-select-site.png "publikovat do služby IIS")
 
@@ -185,10 +184,9 @@ Existují různé způsoby, jak publikovat aplikace do služby IIS. Tyto kroky u
 
 ## <a name="see-also"></a>Viz také:  
 [Ladění ASP.NET: systémové požadavky](aspnet-debugging-system-requirements.md)   
-[Postupy: spuštění pracovního procesu v rámci uživatelského účtu](how-to-run-the-worker-process-under-a-user-account.md)   
-[Postupy: hledání názvu procesu ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
+[Postupy: Spuštění pracovního procesu v rámci uživatelského účtu](how-to-run-the-worker-process-under-a-user-account.md)   
+[Postupy: Hledání názvu procesu ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
 [Ladění nasazených webových aplikací](debugging-deployed-web-applications.md)   
 [Návod: Ladění webového formuláře](walkthrough-debugging-a-web-form.md)   
-[Postupy: ladění výjimek ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Ladění webových aplikací: chyby a řešení potíží](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[Postupy: Ladění výjimek ASP.NET](how-to-debug-aspnet-exceptions.md)   
+[Ladění webových aplikací: Chyby a řešení potíží](debugging-web-applications-errors-and-troubleshooting.md)

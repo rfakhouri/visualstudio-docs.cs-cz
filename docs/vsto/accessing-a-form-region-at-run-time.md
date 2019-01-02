@@ -1,8 +1,6 @@
 ---
 title: Přístup k oblasti formuláře za běhu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875430"
 ---
 # <a name="access-a-form-region-at-runtime"></a>Přístup k oblasti formuláře za běhu
 
@@ -71,17 +69,17 @@ ms.locfileid: "52304477"
 
  Pokud chcete povolit přístup k ovládacímu prvku z vnějšku souboru, kód oblasti formuláře, vytvoření vlastnosti v souboru kódu oblasti formuláře k vrácení ovládacího prvku.  
 
- Další informace o tom, jak vytvořit vlastnosti v C#, naleznete v tématu [postupy: deklarování a použití číst, Zapisovat vlastnosti &#40;C&#35; programováním&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
+ Další informace o tom, jak vytvořit vlastnosti v C#, naleznete v tématu [jak: Deklarování a použití číst, Zapisovat vlastnosti &#40;C&#35; programováním&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties).  
 
- Další informace o tom, jak vytvořit vlastnosti v jazyce Visual Basic najdete v tématu [postupy: vytvoření vlastnosti (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
+ Další informace o tom, jak vytvořit vlastnosti v jazyce Visual Basic najdete v tématu [jak: Vytvoření vlastnosti (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).  
 
 ## <a name="see-also"></a>Viz také:  
  [Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Postupy: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Vlastní akce v oblastech formulářů aplikace Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [Návod: Importujte oblasti formuláře navržené v aplikaci Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [Postupy: zabránění zobrazení oblasti formuláře Outlooku](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [Návod: Import oblasti formuláře navržené v aplikaci Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [Postupy: Zabránění zobrazení oblasti formuláře Outlooku](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)  

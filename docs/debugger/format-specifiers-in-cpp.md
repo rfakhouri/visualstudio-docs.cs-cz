@@ -1,8 +1,6 @@
 ---
 title: Formát specifikátorů v ladicím programu (C++) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -29,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73cd5655a5cb843c29fb628a2ec233860410dc7c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968336"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Specifikátory formátu pro C++ v ladicím programu sady Visual Studio
 Můžete změnit formát, ve kterém se zobrazí hodnota v **Watch** okna pomocí specifikátorů formátu.  
@@ -112,7 +110,7 @@ int main() {
 |**l**<br /><br />**h**|dlouhé nebo krátké předpony pro: d, i, u, e, x, X|00406042|0x0c22|  
 |**f**|podepsané s plovoucí desetinnou čárkou|(3. / 2.), f|1.500000|  
 |**e**|matematický zápis se znaménkem|(3.0/2.0)|1.500000e + 000|  
-|**g**|plovoucí desetinná čárka nebo matematický zápis se znaménkem<br/> podle toho, co je kratší|(3.0/2.0)|1.5|  
+|**g**|plovoucí desetinná čárka nebo matematický zápis se znaménkem<br/> podle toho, co je kratší|(3.0/2.0)|1,5|  
 |c|jeden znak|\<umístění >|101 "e"|  
 |s|const char * (v uvozovkách)|\<umístění >|"hello world"|  
 |su|konstantní wchar_t *<br /><br /> Const char16_t\* (v uvozovkách)|\<umístění >|L "hello world"|  

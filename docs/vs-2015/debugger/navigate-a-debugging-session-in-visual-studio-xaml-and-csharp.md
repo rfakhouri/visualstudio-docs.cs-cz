@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -19,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a3dc5236d47450cb755ff8abbffd5b6497ff145
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 37af3c995e3dde5ad33e8135e8a648b6c0f6a962
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870275"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Přechod na relaci ladění ve Visual Studiu (Xaml a C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +56,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  **Otevřete zdrojový soubor MainPage.xaml.cs.** Klikněte pravým tlačítkem na libovolné místo v editoru XAML a zvolte **zobrazit kód**. Použití modelu code-behind souboru MainPage.xaml.cs se zobrazí. Všimněte si, že pouze jednu metodu `MainPage()` konstruktoru, je uveden v souboru.
 
- **Nahraďte konstruktoru MainPage ukázkový kód.** Delete – metoda MainPage(). Na tomto odkazu: [ladicího programu vzorový kód pro navigaci (Xaml a C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)a potom zkopírujte kód uvedený v části jazyka C# do schránky. (Zvolte **zpět** v prohlížeči nebo prohlížeč nápovědy se vraťte na tuto stránku rychlý start.) V editoru sady Visual Studio, vložte kód `partial class MainPage` bloku. Zvolte kombinaci kláves CTRL + s uložte soubor.
+ **Nahraďte konstruktoru MainPage ukázkový kód.** Delete – metoda MainPage(). Na tomto odkazu: [Vzorový kód pro navigaci ladicího programu (Xaml a C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)a potom zkopírujte kód uvedený v C# části do schránky. (Zvolte **zpět** v prohlížeči nebo prohlížeč nápovědy se vraťte na tuto stránku rychlý start.) V editoru sady Visual Studio, vložte kód `partial class MainPage` bloku. Zvolte kombinaci kláves CTRL + s uložte soubor.
 
  Teď můžete sledovat, spolu s příklady v tomto tématu.
 
@@ -105,7 +104,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
   Najeďte myší proměnnou `a`. Poznámka: Zadejte název, hodnotu a data. Najeďte myší proměnnou `methodTrack`. Zadejte název, hodnotu a data znovu, mějte na paměti.
 
-  **Zkontrolujte hodnoty proměnné v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: Alt + 4).
+  **Zkontrolujte hodnoty proměnné v okně místních hodnot.** Na **ladění** nabídky, přejděte k **Windows**a klikněte na tlačítko **lokální**. (Klávesnice: ALT+ 4).
 
   ![Okno místních hodnot](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 
@@ -145,9 +144,9 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  **Krokovat přes funkci.** Všimněte si, že se na další řádek v test2, `int y = Example2_A();` je v podstatě stejný jako předchozí řádek. Můžete bezpečně Krokovat přes tento řádek. Pro přesun z opětovné priklad2 do této druhé volání Example2_A stiskněte klávesu F10. Zvolte F10 Krokovat přes tuto metodu. Všimněte si, že `methodTrack` řetězec označuje metodu Example2_A spustil dvakrát. Můžete si všimnout, že ladicí program okamžitě přesune na další řádek. Nepozastaví zpracování na bod priklad2 obnoví.
 
- **Krok z funkce.** Stisknutím klávesy F11 Krokovat s vnořením Example2_B metody. Všimněte si, že není příliš neliší od Example2_A Example2_B. Chcete-li mimo metodu, zvolte **Krokovat s Vystoupením** na **ladění** nabídce (klávesnice: Shift + F11). Všimněte si, že `methodTrack` proměnné označuje, že byl proveden Example2_B a že ladicí program vrátil do bodu, kde priklad2 obnoví.
+ **Krok z funkce.** Stisknutím klávesy F11 Krokovat s vnořením Example2_B metody. Všimněte si, že není příliš neliší od Example2_A Example2_B. Chcete-li mimo metodu, zvolte **Krokovat s Vystoupením** na **ladění** nabídce (klávesnice: SHIFT + F11). Všimněte si, že `methodTrack` proměnné označuje, že byl proveden Example2_B a že ladicí program vrátil do bodu, kde priklad2 obnoví.
 
- **Zastavte ladění.** V nabídce ladit, zvolte Ukončit ladění (klávesnice: Shift + F5). Ukončí relaci ladění.
+ **Zastavte ladění.** V nabídce ladit, zvolte Ukončit ladění (klávesnice: SHIFT + F5). Ukončí relaci ladění.
 
 ##  <a name="BKMK_ConditionCursorVisualize"></a> Nastavení podmíněné zarážky, přechod ke kurzoru a vizualizovat proměnné
  Podmíněné zarážky Určuje podmínku, která způsobí, že ladicí program k pozastavení provádění. Podmínka je zadaný libovolný výraz kód, který může být vyhodnocen jako true nebo false. Můžete například použít podmíněné zarážky prozkoumat stav programu v často volaných metodu pouze v případě, že proměnné dosáhne určité hodnoty.
@@ -183,7 +182,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  **Přechod ke kurzoru.** Klikněte pravým tlačítkem na řádku `methodTrack += "->Example3";` a klikněte na tlačítko **spustit ke kurzoru** (klávesnice: Přesuňte kurzor na řádek; CTRL + F10). Ladicí program dokončí iterací smyčky a následně pozastaví provádění kódu na řádku.
 
- **Zastavte ladění.** V nabídce ladit, zvolte Ukončit ladění (klávesnice: Shift + F5). Ukončí relaci ladění.
+ **Zastavte ladění.** V nabídce ladit, zvolte Ukončit ladění (klávesnice: SHIFT + F5). Ukončí relaci ladění.
 
 ##  <a name="BKMK_EditContinueRecoverExceptions"></a> Upravit a pokračovat, obnovení z výjimky
  V některých případech až proniknout do kódu v ladicím programu sady Visual Studio budete mít příležitost změnit hodnoty proměnných a dokonce i logics příkazy. Tato funkce je volána upravit a pokračovat.
@@ -215,7 +214,7 @@ Tento rychlý start ukazuje, jak se zorientovat relacemi ladění sady Visual St
 
  Stisknutím klávesy F11 Krokovat s vnořením příkazu, který dříve došlo k výjimce. Všimněte si, že řádek se spustí bez chyby. Zvolte F11 znovu.
 
- **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: Shift + F5). Ukončí relaci ladění.
+ **Zastavte ladění.** Na **ladění** nabídce zvolte **Zastavit ladění** (klávesnice: SHIFT + F5). Ukončí relaci ladění.
 
 ## <a name="see-also"></a>Viz také
  [Spuštění ladicí relace (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [aktivační události pozastavení, obnovení a událostí na pozadí pro Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

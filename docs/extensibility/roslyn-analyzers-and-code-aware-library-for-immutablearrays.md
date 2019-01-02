@@ -1,9 +1,6 @@
 ---
 title: Analyzátory Roslyn a knihovny pro řešení ImmutableArrays | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2af6141ae3b7a61805b2515f11f72f164389949
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833365"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyzátory Roslyn a knihovny pro řešení ImmutableArrays
 
@@ -301,7 +298,7 @@ V dalším kroku metodu načte kořen dokumentu, a protože to může zahrnovat 
 
 Nyní můžete stisknout **F5** pro spuštění vašeho analyzátor ve druhé instanci aplikace Visual Studio. Otevřete konzoly projekt, který jste použili dříve. Teď byste měli vidět žárovky objevit, ve kterém je váš nový výraz vytvoření objektu pro `ImmutableArray<int>`. Pokud stisknete **Ctrl**+**.** (interval) pak se zobrazí váš kód opravit, a zobrazí se v verzi preview rozdíl automaticky generovaného kódu v žárovky uživatelského rozhraní. To vytvoří Roslyn.
 
-**Pro Tip:** Spusťte druhou instanci aplikace Visual Studio a nevidíte žárovka s opravou vašeho kódu a pak budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. Potom v **Windows Explorer**, přejděte na *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" se změní na verzi pomocí sady Visual Studio). Odstranit podadresáři *ComponentModelCache*.
+**Tipu pro:** Pokud spustíte druhou instanci aplikace Visual Studio a nevidíte žárovka s kód opravit, budete muset vymazat mezipaměť komponenty Visual Studio. Vymazání mezipaměti vynutí Visual Studio a znovu zkontrolujte součásti, takže sady Visual Studio by měl pak nejnovější komponenty. Nejdřív vypněte druhou instanci aplikace Visual Studio. Potom v **Windows Explorer**, přejděte na *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. ("15.0" se změní na verzi pomocí sady Visual Studio). Odstranit podadresáři *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Mluví videa a dokončení projektu kódu
 

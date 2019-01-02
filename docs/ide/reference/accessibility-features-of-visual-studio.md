@@ -3,7 +3,6 @@ title: Funkce pro usnadnění přístupu sady Visual Studio
 description: Další informace o funkcí usnadnění a nástrojů, které vám pomohou zajistit operačního systému Windows a sady Visual Studio developer přístupnější pro všechny uživatele, včetně osobám s postižením.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866475"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 
@@ -46,9 +45,9 @@ Kromě funkcí a nástrojů usnadnění v Windows následující funkce Ujistět
 
 Další informace naleznete v následujících tématech:
 
--   [Postupy: Sada IDE usnadnění](../../ide/reference/how-to-set-ide-accessibility-options.md)
+-   [Postupy: Nastavení možností usnadnění přístupu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Postupy: výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+-   [Postupy: Výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 -   [Výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 

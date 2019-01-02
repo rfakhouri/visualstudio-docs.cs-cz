@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: výběr metod kolekcí | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Výběr metod kolekcí | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8502f37e02fb668905dec2b548aba9229e8e7051
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833270"
 ---
-# <a name="how-to-choose-collection-methods"></a>Postupy: výběr metod kolekcí
+# <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod shromažďování
 
 Profilace nástroje sady Visual Studio podporují tři metody shromažďování dat výkonu: vzorkování, instrumentace a souběžnosti. Metoda vzorkování nebo instrumentace můžete také použít ke shromažďování dat o přidělování a životnosti paměti .NET.
 

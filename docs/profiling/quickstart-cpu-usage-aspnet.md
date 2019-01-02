@@ -3,7 +3,6 @@ title: Analýza dat o využití procesoru (ASP.NET)
 description: Měřit výkon aplikace v aplikacích ASP.NET pomocí diagnostického nástroje využití CPU
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837391"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Rychlý start: Analýza dat o využití procesoru v aplikaci Visual Studio (ASP.NET)
 
@@ -154,7 +153,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromáždění profilačních dat 
+##  <a name="step-1-collect-profiling-data"></a>Krok 1: Shromažďovat data vytváření profilů 
   
 1.  Nejprve nastavte zarážku v aplikaci na tomto řádku kódu v `Simple` konstruktor:
 
@@ -195,7 +194,7 @@ Windows 8 a novější se vyžaduje pro spuštění nástrojů pro profilaci s l
 
      Teď můžete začít analyzovat data.
 
-## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analýza dat o využití procesoru
+## <a name="step-2-analyze-cpu-usage-data"></a>Krok 2: Analyzovat data o využití procesoru
 
 Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kartě Využití procesoru. Zjistěte nejaktivnější funkce a pak se na každou z nich podívejte podrobněji.
 

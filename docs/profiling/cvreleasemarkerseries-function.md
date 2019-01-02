@@ -1,8 +1,6 @@
 ---
-title: Cvreleasemarkerseries – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvreleasemarkerseries – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvReleaseMarkerSeries
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c5bbc5d47972a4829c4e46f6aafdcf8ee76fad
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 60394b799c2468d45818fa07d876dde2a651467d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822537"
 ---
 # <a name="cvreleasemarkerseries-function"></a>Cvreleasemarkerseries – funkce
-Uvolní řady značky. Nepoužívejte značky řady objektu po vydání aplikace jinak může dojít k selhání. Chyby k uvolnění značky řady způsobí, že nevrácenou pamětí.  
+Uvolní značky řady. Nepoužívejte objekt řady značky po uvolnění jinak aplikace, mohou selhat. Nepodařilo se uvolnit značky řady způsobí, že nevracení paměti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,10 +32,10 @@ HRESULT CvReleaseMarkerSeries(
   
 #### <a name="parameters"></a>Parametry  
  `pMarkerSeries`  
- Adresa poskytovatele objektová proměnná. Adresa nesmí být NULL, proměnná může mít žádnou hodnotu.  
+ Adresa proměnné objektu zprostředkovatele. Adresa nesmí být NULL, proměnná může mít libovolnou hodnotu.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK při řady značky úspěšně vydání nebo kód chyby v případě, že existuje byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při řady značky se úspěšně uvolnily nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

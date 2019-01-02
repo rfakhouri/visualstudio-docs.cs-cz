@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: výběr souborů pro sestavení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Výběr souborů pro sestavení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875404"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Postupy: výběr souborů pro sestavení
+# <a name="how-to-select-the-files-to-build"></a>Postupy: Výběr souborů pro sestavení
 Při vytváření projektu, který obsahuje několik souborů, můžete vytvořit seznam každý soubor samostatně v souboru projektu nebo k zahrnutí všech souborů v jednom adresáři nebo vnořenou sadu adresáře můžete použít zástupné znaky.  
   
 ## <a name="specify-inputs"></a>Zadejte vstupy  
@@ -40,7 +38,7 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Pokud se položky v kolekci položek nejsou ve stejném adresáři jako soubor projektu, musíte zadat úplnou nebo relativní cesta k položce. Příklad: `Include="..\..\form2.cs"`.  
+    >  Pokud se položky v kolekci položek nejsou ve stejném adresáři jako soubor projektu, musíte zadat úplnou nebo relativní cesta k položce. Například: `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Chcete-li deklarovat více položek  
   
@@ -172,5 +170,5 @@ Při vytváření projektu, který obsahuje několik souborů, můžete vytvoři
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Postupy: Vyloučení souborů ze sestavení](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Položky](../msbuild/msbuild-items.md)

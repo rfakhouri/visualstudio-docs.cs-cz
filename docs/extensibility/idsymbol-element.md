@@ -1,9 +1,6 @@
 ---
 title: Idsymbol – Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ef9ad479d44e43caf0a77c4db01cc349678c73ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836699"
 ---
 # <a name="idsymbol-element"></a>Idsymbol – element
 `IDSymbol` Prvek obsahuje ID GUID:ID pár, který představuje nabídky, skupiny nebo příkaz. Identifikátor GUID pochází z nadřazeného `GuidSymbol` elementu. `IDSymbol` Element má `name` atribut, který poskytuje popisný název pro Identifikátor, který je součástí `value` atribut.  
@@ -37,8 +34,8 @@ ms.locfileid: "39500378"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|name|Požadováno. Název symbolu ID.|  
-|value|Požadováno. Číselná hodnota ID ID symbolu.|  
+|name|Povinný parametr. Název symbolu ID.|  
+|value|Povinný parametr. Číselná hodnota ID ID symbolu.|  
   
 ### <a name="child-elements"></a>Podřízené prvky  
  Žádné  

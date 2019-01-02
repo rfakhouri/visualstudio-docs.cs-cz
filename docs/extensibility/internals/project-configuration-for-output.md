@@ -1,9 +1,6 @@
 ---
 title: Konfigurace pro výstup projektu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a02e331484abf2ef1450493d2ea1bdddaabe82bd
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843291"
 ---
 # <a name="project-configuration-for-output"></a>Konfigurace projektu pro výstup
 Všechny konfigurace může podporovat sadu procesy sestavení, které se vytvoří výstupní položky, jako jsou soubory spustitelný soubor nebo prostředek. Tyto položky výstupu jsou privátní pro uživatele a mohou být umístěny ve skupinách, které jsou propojeny související typy výstupu, jako je například spustitelné soubory (.exe, .dll, LIB) a zdrojových souborů (.idl, souborů .h).  

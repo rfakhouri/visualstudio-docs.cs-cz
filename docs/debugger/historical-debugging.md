@@ -1,8 +1,6 @@
 ---
 title: Historické ladění | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a622fcb91ad40e7d0777f37ce87e9a2cb950695
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 45d62cec0116ae029237423a7453c9572d20a895
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883925"
 ---
 # <a name="historical-debugging"></a>Historické ladění
 Historické ladění je režim ladění, který závisí na informace shromážděné funkcí technologie IntelliTrace. Umožňuje přejít zpět a vpřed prostřednictvím spuštění vaší aplikace a zkontrolovat její stav.  
@@ -34,4 +32,4 @@ Historické ladění je režim ladění, který závisí na informace shromážd
 
  - Chcete-li zobrazit snímky pomocí historického ladění, naleznete v tématu [kontrolovat předchozí nové aplikace pomocí nástroje IntelliTrace](../debugger/view-historical-application-state.md)
  - Zjistěte, jak kontrolovat proměnné a vyhledání kódu, naleznete v tématu [Kontrola aplikace s využitím historického ladění](../debugger/historical-debugging-inspect-app.md)
- - Další informace o ladění pomocí událostí IntelliTrace, naleznete v tématu [návod: použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+ - Další informace o ladění pomocí událostí IntelliTrace, naleznete v tématu [názorný postup: Pomocí IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

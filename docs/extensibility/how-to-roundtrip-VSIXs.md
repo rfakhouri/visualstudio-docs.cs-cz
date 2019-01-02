@@ -1,8 +1,6 @@
 ---
 title: Jak zpětná rozšíření
 ms.date: 06/25/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
@@ -10,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880949"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: provést rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Postupy: Ujistěte se, rozšíření kompatibilní s Visual Studio 2017 a Visual Studio 2015
 
 Tento dokument vysvětluje, jak vytvořit projekty rozšiřitelnosti přenosu mezi Visual Studio 2015 a Visual Studio 2017. Po dokončení tohoto upgradu, projekt bude moct otevírat, sestavení, nainstalovat a spustit v sadě Visual Studio 2015 a Visual Studio 2017. Jako odkaz, nějaké rozšíření, které se dají zpátečního převodu mezi Visual Studio 2015 a Visual Studio 2017 najdete v [ukázky rozšiřitelnosti VS SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 

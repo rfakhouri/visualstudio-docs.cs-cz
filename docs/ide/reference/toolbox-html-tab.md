@@ -2,7 +2,6 @@
 title: Sada nástrojů, karta HTML
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862923"
 ---
 # <a name="toolbox-html-tab"></a>Panel nástrojů, Karta HTML
 
@@ -155,7 +154,7 @@ Při přetažení **vstup (skryté)** na návrhovou plochu zobrazení, je značk
 <input id="Hidden1" type="hidden" name="Hidden1">
 ```
 
-**Textarea**
+**Textové pole**
 
 ![Panel nástrojů HTMLpage textová oblast](../../ide/reference/media/vxtextarea.gif)
 
@@ -194,7 +193,7 @@ Při přetažení **Image** na návrhovou plochu zobrazení, je značka jazyka H
 <img alt="" src="">
 ```
 
-**Vyberte**
+**Výběr**
 
 ![HTML stránka sady nástrojů rozevíracího seznamu](../../ide/reference/media/vxdropdown.gif)
 

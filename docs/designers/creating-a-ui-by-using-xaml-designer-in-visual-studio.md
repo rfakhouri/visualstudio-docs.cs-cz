@@ -2,7 +2,6 @@
 title: Vytvoření uživatelského rozhraní pomocí návrháře XAML
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880402"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio
 
@@ -123,11 +122,11 @@ Určuje různé velikosti zobrazení a řešení pro aplikaci.
 
 **Orientace**
 
-Určuje různé orientace aplikace: **na šířku** nebo **na výšku**.
+Určuje různé orientace aplikace: **Na šířku** nebo **na výšku**.
 
 **Edge**
 
-Určuje zarovnání různých edge pro vaši aplikaci: **obě**, **vlevo**, **vpravo**, nebo **žádný**.
+Určuje zarovnání různých edge pro vaši aplikaci: **Obě**, **vlevo**, **vpravo**, nebo **žádný**.
 
 **Vysoký kontrast**
 

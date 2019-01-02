@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: hledání okna v zobrazení pro Windows | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání okna v zobrazení pro Windows | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c187c3a4b8086b5b991f7288f2686d6010e79262
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837063"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Postupy: Hledání okna v zobrazení oken
 Můžete vyhledat konkrétní okno v zobrazení pro Windows s použitím jeho popisovač, titulků, třídy nebo kombinace jeho titulek a třídy jako kritéria hledání. Můžete také zadat počáteční směr hledání. Pole v dialogovém okně zobrazí vlastnosti vybrané okno ve stromové struktuře okna.  
@@ -47,6 +45,6 @@ Můžete vyhledat konkrétní okno v zobrazení pro Windows s použitím jeho po
   
 4. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-5. Klikněte na tlačítko **OK**.  
+5. Klikněte na **OK**.  
   
     Pokud je nalezen odpovídající okno, je zvýrazněn [zobrazení Windows](../debugger/windows-view.md) okna.

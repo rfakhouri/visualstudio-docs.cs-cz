@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: distribuce fragmentů kódu'
+title: 'Postupy: Distribuce fragmentů kódu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,14 +13,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836059"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Postupy: distribuce fragmentů kódu
+# <a name="how-to-distribute-code-snippets"></a>Postupy: Distribuce fragmentů kódu
 
 Můžete poskytnout fragmenty svého kódu přátelům a nainstalovat fragmenty kódu ve svých počítačích pomocí **Správce fragmentů kódů**. Pokud máte chcete distribuovat více fragmentů nebo chcete distribuovat více široce, je však zahrnout souboru fragmentu v rozšíření sady Visual Studio. Uživatelé sady Visual Studio můžete nainstalovat rozšíření.
 
@@ -29,7 +28,7 @@ Chcete-li vytvořit rozšíření sady Visual Studio je nutné nainstalovat sadu
 
 ## <a name="set-up-the-extension"></a>Nastavit rozšíření
 
-V tomto postupu použijeme stejný Hello World fragmentu kódu, který je vytvořen v [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Můžeme vám poskytnout *.snippet* text, takže není nutné vrátit zpět a si ho.
+V tomto postupu použijeme stejný Hello World fragmentu kódu, který je vytvořen v [názorný postup: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). Můžeme vám poskytnout *.snippet* text, takže není nutné vrátit zpět a si ho.
 
 1. Vytvořte nový projekt VSIX s názvem **TestSnippet**. (**Souboru** > **nové** > **projektu** > **Visual C# (nebo Visual Basic)**  >  **Rozšiřitelnost**.)
 

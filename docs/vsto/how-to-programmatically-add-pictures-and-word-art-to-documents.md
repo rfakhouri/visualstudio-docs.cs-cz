@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Programové přidání obrázků a objektů WordArt do dokumentů'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ac57f54d7ba925a7189dfa0bf94e1b951c5ba7fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854192"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Postupy: Programové přidání obrázků a objektů WordArt do dokumentů
   Obrázky a kresby můžete přidat do dokumentů v době návrhu nebo za běhu. WordArt umožňuje přidat dekorativní textu do dokumentů aplikace Microsoft Office Word. Tyto speciální textových efektů kreslení objekty, které můžete přizpůsobit a vložit do dokumentu.  
@@ -108,5 +105,3 @@ ms.locfileid: "53804835"
  [Postupy: Obnovení výběru po hledání prostřednictvím kódu programu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Postupy: Ukládání dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-save-documents.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: Návrhář shaderů
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968537"
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 
@@ -85,7 +84,7 @@ Tato tabulka popisuje položky panelu **režim návrháře shaderu** nástrojů,
 
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
-|**Vyberte**|Umožňuje interakci s uzly a hran do grafu. V tomto režimu můžete vybrat uzly a přesunout nebo odstranit, a můžete vytvořit okraje nebo rozdělit je.|
+|**Výběr**|Umožňuje interakci s uzly a hran do grafu. V tomto režimu můžete vybrat uzly a přesunout nebo odstranit, a můžete vytvořit okraje nebo rozdělit je.|
 |**Posouvání**|Umožňuje pohyb graf shaderu relativně k rámu okna. K posouvání vyberte bod na návrhové ploše a pohybujte jím.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením **Ctrl** aktivovat **Pan** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů graf shaderu relativně k rámu okna. V **přiblížení** režimu, vyberte bod na návrhové ploše a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením **Ctrl** pro přiblížení nebo oddálení použít kolečko myši.|
 |**Přizpůsobit zobrazení**|Zobrazí graf úplné shaderu v rámci okna.|
@@ -98,7 +97,7 @@ Tato tabulka popisuje položky panelu **režim návrháře shaderu** nástrojů,
 |**Náhled pomocí roviny**|Při povolení modelu rovinou slouží náhled shaderu. Je možné povolit tvar náhled pouze jeden po druhém.|
 |**Panel nástrojů**|Střídavě zobrazí a skryje **nástrojů**.|
 |**Vlastnosti**|Můžete také zobrazí nebo skryje **vlastnosti** okna.|
-|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Exportovat**: umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Exportuje shaderu jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [postupy: exportování shaderu](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|
+|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Exportovat**: Umožňuje exportovat shader v různých formátech.<br /><br /> **Exportovat jako**: Shader exportuje jako zdrojový kód buď HLSL nebo jako hodnota bytecode funkce shader kompilované. Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat shader](../designers/how-to-export-a-shader.md).<br /><br /> **Grafické moduly**: Umožňuje výběr renderer, který se používá k zobrazení návrhové ploše.<br /><br /> **Vykreslení s D3D11**: Používá rozhraní Direct3D 11 k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: Používá rozhraní Direct3D 11 Windows Advanced Rasterizační platformě WARP () k vykreslení plochy návrhu Návrháře shaderu.<br /><br /> **Zobrazení**: Umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Frekvence snímků**: Pokud povolená, zobrazí aktuální frekvenci snímků v pravém horním rohu návrhové plochy. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.|
 
 > [!TIP]
 > Můžete použít **Upřesnit** tlačítko poslední příkaz spustit znovu.
@@ -147,12 +146,12 @@ V následující tabulce jsou uvedeny shaderu parametry, které můžete upravit
 
 |Parametr|Vlastnosti|
 |---------------|----------------|
-|**Textura 1** - **Texture – 8**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Název souboru**: úplná cesta soubor textury, který je spojen s registrem textur.|
-|**Materiál okolí**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: rozptýlení barvy aktuálního pixelu kvůli nepřímé - nebo okolí - osvětlení.|
-|**Materiál rozptýlení**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: barva, která popisuje, jak aktuální pixel rozptýlí přímé osvětlení.|
-|**Vyzařující materiál**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: podíl barvy aktuálního pixelu kvůli svým zadaná osvětlení.|
-|**Reflexní materiál**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: barva, která popisuje, jak aktuální pixel odráží přímé osvětlení.|
-|**Materiál síla odlesku**|**Přístup**: **veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: exponent, který udává intenzitu zrcadlových odlesků na aktuální pixel.|
+|**Textura 1** - **Texture – 8**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Název souboru**: Úplná cesta soubor textury, který je spojen s registrem textur.|
+|**Materiál okolí**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Rozptýlení barvy aktuálního pixelu kvůli nepřímé - nebo okolí - osvětlení.|
+|**Materiál rozptýlení**|**Přístup**: **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**:  Barva, která popisuje, jak aktuální pixel rozptýlí přímé osvětlení.|
+|**Vyzařující materiál**|**Přístup**:                              **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Podíl barvy aktuálního pixelu kvůli svým zadaná osvětlení.|
+|**Reflexní materiál**|**Přístup**:                              **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Barva, která popisuje, jak aktuální pixel odráží přímé osvětlení.|
+|**Materiál síla odlesku**|**Přístup**:                             **Veřejné** umožňující vlastnost, která má být z editoru modelů jinak **privátní**.<br /><br /> **Hodnota**: Exponent, který udává intenzitu zrcadlových odlesků na aktuální pixel.|
 
 #### <a name="time-based-effects"></a>Účinky podle času
 
@@ -172,7 +171,7 @@ Před použitím shaderu ve vaší aplikaci, musíte ho exportovat ve formátu, 
 
 Jako zdrojový kód HLSL nebo jako hodnota bytecode funkce shader kompilované můžete exportovat shadery. HLSL zdrojový kód je exportovat do textového souboru, který má *.hlsl* příponu názvu souboru. Hodnota bytecode funkce shader může být buď Nezpracovaná binární soubor, který je exportován *.cso* příponu názvu souboru nebo hlaviček jazyka C++ (*.h*) soubor, který kóduje hodnota bytecode funkce shader do pole.
 
-Další informace o tom, jak exportovat shader, naleznete v tématu [postupy: exportování shaderu](../designers/how-to-export-a-shader.md).
+Další informace o tom, jak exportovat shader, naleznete v tématu [jak: Exportovat shader](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Klávesové zkratky
 

@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms'
+title: 'Průvodce: Vytvoření jednoduché služby WCF ve Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e2c9d0bd58adcd0a0595c061fa4dfaa81f629601
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 466514f0bfd343dc985021a3a081739a91946f8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882062"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Návod: Vytvoření jednoduché služby WCF v modelu Windows Forms
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Průvodce: Vytvoření jednoduché služby WCF v modelu Windows Forms
 
 Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] služby, otestovat ji a pak k němu přístup z aplikace Windows Forms.
 
@@ -70,7 +69,7 @@ Tento návod ukazuje, jak vytvořit jednoduchou [!INCLUDE[vsindigo](../data-tool
      [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
      [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
 
-## <a name="test-the-service"></a>Pokud chcete službu otestovat
+## <a name="test-the-service"></a>Testování služby
 
 ### <a name="to-test-a-wcf-service"></a>K otestování služby WCF
 

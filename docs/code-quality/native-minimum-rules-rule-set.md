@@ -2,7 +2,6 @@
 title: Sada pravidel Nativní minimální pravidla
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9149276064b76a08705b70883bb3c2e136e23334
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd988bae2f9fd2776785202a1e632735f989f7ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845483"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Sada pravidel Nativní minimální pravidla
 Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůležitější problémy v nativním kódu, včetně možných bezpečnostních děr a selhání aplikace. Měli byste zahrnout tuto sadu pravidel v jakékoli vlastní sadě pravidel, že kterou vytvoříte pro vaše nativní projekty.
@@ -70,7 +69,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C6518](../code-quality/c6518.md)|Zapisovatelná velikost pro vyrovnávací paměť, Nezapisovatelný|
 |[C6522](../code-quality/c6522.md)|Typ řetězec neplatné velikosti|
 |[C6525](../code-quality/c6525.md)|Neplatná velikost řetězce-nedosažitelná oblast|
-|[C6527](../code-quality/c6527.md)|Neplatná Poznámka: vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void|
+|[C6527](../code-quality/c6527.md)|Neplatná Poznámka: Vlastnost 'NeedsRelease' nesmí být použita pro hodnoty typu void|
 |[C6530](../code-quality/c6530.md)|Nerozpoznaný styl řetězce formátu|
 |[C6540](../code-quality/c6540.md)|Použití poznámek atributu na této funkci způsobí neplatnost všech existujících poznámek __declspec|
 |[C6551](../code-quality/c6551.md)|Neplatná specifikace velikosti: výraz není analyzovatelný|
@@ -147,7 +146,7 @@ Nativní minimální pravidla společnosti Microsoft se soustředí na nejdůle�
 |[C28286](../code-quality/c28286.md)|Pro funkci. syntaktická chyba poblíž konce|
 |[C28287](../code-quality/c28287.md)|Pro funkci. Chyba syntaxe v \_na\_poznámky () (nerozeznaný název parametru)|
 |[C28288](../code-quality/c28288.md)|Pro funkci. Chyba syntaxe v \_na\_poznámky () (neplatný název parametru)|
-|[C28289](../code-quality/c28289.md)|Pro funkci: ReadableTo nebo writableto nebyl neměl limit specifikace jako parametr|
+|[C28289](../code-quality/c28289.md)|Pro funkci: ReadableTo nebo writableto nebyl neměl limit-spec jako parametr|
 |[C28290](../code-quality/c28290.md)|Poznámka pro funkci obsahuje více typů External než je skutečný počet parametrů|
 |[C28291](../code-quality/c28291.md)|Po null/notnull deref úroveň 0 je pro funkci bezvýznamné.|
 |[C28300](../code-quality/c28300.md)|Operandy výrazu nekompatibilních typů pro operátor|

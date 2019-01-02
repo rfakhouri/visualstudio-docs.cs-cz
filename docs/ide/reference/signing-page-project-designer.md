@@ -2,7 +2,6 @@
 title: Stránka Podepisování, návrhář projektu (C#)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856641"
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 Použití **podepisování** stránku **Návrháře projektu** k podepsání manifestů aplikace a nasazení a také k podepsání sestavení (podepisování silným názvem).
@@ -40,7 +39,7 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
 ## <a name="application-and-deployment-manifest-signing"></a>Podepisování manifestů aplikace a nasazení
  **Podepsání manifestů ClickOnce** zaškrtávací políčko
 
- Vyberte toto zaškrtávací políčko k podepsání manifestů aplikace a nasazení pomocí dvojice veřejného/soukromého klíče. Další informace o tom, jak to provést, najdete v části [postupy: přihlášení aplikace a manifesty nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Vyberte toto zaškrtávací políčko k podepsání manifestů aplikace a nasazení pomocí dvojice veřejného/soukromého klíče. Další informace o tom, jak to provést, najdete v části [jak: Podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  **Vybrat Store** tlačítko
 
@@ -71,9 +70,9 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
 ## <a name="assembly-signing"></a>Podepisování sestavení
  **Podepsat sestavení** zaškrtávací políčko
 
- Vyberte toto zaškrtávací políčko k podepsání sestavení a vytvoření silným názvem souboru klíče. Další informace o podepisování sestavení s použitím **Návrháře projektu**, naleznete v tématu [postupy: podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+ Vyberte toto zaškrtávací políčko k podepsání sestavení a vytvoření silným názvem souboru klíče. Další informace o podepisování sestavení s použitím **Návrháře projektu**, naleznete v tématu [jak: Podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Tato možnost používá k podepsání sestavení, Nástroj Al.exe k dispozici ve Windows Software Development Kit (SDK). Další informace o Al.exe najdete v tématu [postupy: podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Tato možnost používá k podepsání sestavení, Nástroj Al.exe k dispozici ve Windows Software Development Kit (SDK). Další informace o Al.exe najdete v tématu [jak: Podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  **Vyberte soubor klíče se silným názvem** seznamu
 
@@ -101,7 +100,7 @@ Použití **podepisování** stránku **Návrháře projektu** k podepsání man
 
 - [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)
 - [Správa sestavení a podepsání manifestu](../../ide/managing-assembly-and-manifest-signing.md)
-- [Postupy: Podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [Postupy: podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Postupy: Přihlášení aplikace a manifestů nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Postupy: Podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Postupy: Podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies)

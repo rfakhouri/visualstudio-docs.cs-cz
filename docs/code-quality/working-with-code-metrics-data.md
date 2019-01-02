@@ -2,7 +2,6 @@
 title: Okno metriky kódu
 ms.date: 12/12/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa1de7b3c4a029038072e84bea1918ea33031db
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 31690ccc3c2f32b4abb2ff9fefcc268c83977595
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856316"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Použijte okno výsledků metrik kódu
 
@@ -111,4 +110,4 @@ Další informace o Azure panelů pracovní položky, naleznete v tématu [praco
 ## <a name="see-also"></a>Viz také:
 
 - [Hodnoty metrik kódu](../code-quality/code-metrics-values.md)
-- [Postupy: vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Postupy: Vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)
