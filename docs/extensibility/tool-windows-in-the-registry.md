@@ -1,9 +1,6 @@
 ---
-title: Nástroje systému Windows v registru | Microsoft Docs
-ms.custom: ''
+title: Nástroj pro Windows v registru | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234a3f50865e77f2c6b5a4057e6766b26d7ff521
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f49a7d4298dbd387a2fb6a91d5030002eaec8a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956468"
 ---
-# <a name="tool-windows-in-the-registry"></a>Nástroje systému Windows v registru
-VSPackages, které poskytují nástroje systému windows musíte zaregistrovat u [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jako nástroj okno zprostředkovatele. Nástroje systému windows vytvořených pomocí šablony balíček Visual Studio k tomu ve výchozím nastavení. Okno poskytovatelů nástrojů mít klíče registru systému, které určit viditelnost atributy, jako je například výchozí velikost okna nástroje a umístění, identifikátor GUID okně, které slouží jako nástroj podokna a styl ukotvení.  
+# <a name="tool-windows-in-the-registry"></a>Nástroj Windows v registru
+Rozšíření VSPackages, které poskytují nástroje systému windows musíte zaregistrovat u [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jako nástroj pro okno poskytovatelů. Okna nástrojů, které jsou vytvářeny instalační sadou Visual Studio balíček šablony se provést ve výchozím nastavení. Okno poskytovatelů nástrojů mít systémových klíčů registru, které určují atributy viditelnosti, jako je například výchozí velikost okna nástrojů a umístění, identifikátor GUID okna, která slouží jako podokno okna nástrojů a styl ukotvení.  
   
- Během vývoje zaregistrovat poskytovatelů okno spravované nástrojů okna nástrojů přidáním atributy ke zdrojovému kódu a potom spustí nástroj RegPkg.exe ve výsledné sestavení. Další informace najdete v tématu [registrace okno nástroje](../extensibility/registering-a-tool-window.md).  
+ Během vývoje registraci poskytovatelů spravovaných nástrojů okna okna nástrojů přidávání atributů do zdrojového kódu a následným spuštěním nástroje RegPkg.exe výsledného sestavení. Další informace najdete v tématu [registrace panelu nástrojů](../extensibility/registering-a-tool-window.md).  
   
 ## <a name="registering-unmanaged-tool-window-providers"></a>Registrace zprostředkovatele okno nespravované nástroj  
- Zprostředkovatelé okno nespravované nástroj musíte zaregistrovat u [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v části ToolWindows systémový registr. Následující fragment souboru .reg ukazuje, jak může zaregistrovat okno dynamické nástroje:  
+ Poskytovatelů nespravované nástrojů okna musíte zaregistrovat u [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v části ToolWindows systémového registru. Následující fragment souboru .reg ukazuje, jak může být zaregistrovaný dynamického panelu nástrojů:  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\<version number>\ToolWindows\{f0e1e9a1-9860-484d-ad5d-367d79aabf55}]  
@@ -39,9 +36,9 @@ VSPackages, které poskytují nástroje systému windows musíte zaregistrovat u
 "{f1536ef8-92ec-443c-9ed7-fdadf150da82}"=dword:00000000  
 ```  
   
- V první klíč v příkladu nahoře, číslo verze je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], například 7.1 nebo 8.0, podklíč {f0e1e9a1-9860-484d-ad5d-367d79aabf55} je identifikátor GUID podokně okna nástroj (DynamicWindowPane) a {hodnotu výchozí 01069cdd-95ce-4620-ac21-ddff6c57f012} je identifikátor GUID VSPackage poskytování okno nástroje. Vysvětlení podklíče Float a DontForceCreate naleznete v tématu [konfigurace zobrazení okna nástroj](../extensibility/tool-window-display-configuration.md).  
+ V první klíč v předchozím příkladu, číslo verze je verze [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], jako jsou 7.1 nebo 8.0, podklíč {f0e1e9a1-9860-484d-ad5d-367d79aabf55} je identifikátor GUID z podokna okna nástrojů (DynamicWindowPane) a hodnota {výchozí 01069cdd-95ce-4620-ac21-ddff6c57f012} je identifikátor GUID balíčku VSPackage poskytují panel nástrojů. Vysvětlení podklíčů plovoucí desetinnou čárkou a DontForceCreate, najdete v článku [konfigurace zobrazení okna nástroje](../extensibility/tool-window-display-configuration.md).  
   
- Druhý volitelné klíč ToolWindows\Visibility, určuje identifikátory GUID příkazy, které vyžadují panel nástrojů, který má být viditelné. V tomto případě nejsou žádné příkazy zadané. Další informace najdete v tématu [konfigurace zobrazení okna nástroj](../extensibility/tool-window-display-configuration.md).  
+ Druhý volitelný klíč ToolWindows\Visibility, určuje identifikátory GUID příkazy, které vyžadují okno nástroje, které budou viditelné. V takovém případě nejsou žádné příkazy zadané. Další informace najdete v tématu [konfigurace zobrazení okna nástroje](../extensibility/tool-window-display-configuration.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Balíčky VSPackage](../extensibility/internals/vspackages.md)

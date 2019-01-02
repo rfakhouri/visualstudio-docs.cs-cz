@@ -1,8 +1,6 @@
 ---
 title: Idiainjectedsource::get_virtualfilename – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b4fe6547929a5db7f793d9f2f8551327a6455ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13a6cbaaf3594e7d4e708d5f70bcc3c75cb88718
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958928"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Načte název použitý pro kód nesouborového zdroje; To znamená, že kód, který se vloží.  
@@ -27,7 +25,7 @@ Načte název použitý pro kód nesouborového zdroje; To znamená, že kód, k
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_virtualFilename (   
+HRESULT get_virtualFilename (   
    BSTR* pRetVal  
 );  
 ```  

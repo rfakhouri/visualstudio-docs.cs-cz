@@ -1,8 +1,6 @@
 ---
 title: IDiaStackWalkHelper::put_registerValue | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ac9c2366f97497fca4f7faa49facf2a3f819b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b3d0cdcd31419f23a69eea019b38304eb6feba8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956943"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 Nastaví hodnotu registru.  
@@ -27,7 +25,7 @@ Nastaví hodnotu registru.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT put_registerValue (   
+HRESULT put_registerValue (   
    DWORD     index,  
    ULONGLONG NewVal  
 );  

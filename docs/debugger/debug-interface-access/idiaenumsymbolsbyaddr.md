@@ -1,8 +1,6 @@
 ---
-title: Idiaenumsymbolsbyaddr – | Microsoft Docs
-ms.custom: ''
+title: Idiaenumsymbolsbyaddr – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,42 +12,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f974076f9947ac318e0d0edfd5afa14bac5aab61
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ce1e0fd6d480b327efc2ac880925f78029f32067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958287"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
-Vytvoří výčet podle adresy různé symboly obsažené v datovém zdroji.  
+Vytvoří výčet podle adresy různé symboly obsažené ve zdroji dat.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaEnumSymbolsByAddr : IUnknown  
+IDiaEnumSymbolsByAddr : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaEnumSymbolsByAddr`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaEnumSymbolsByAddr`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Umisťuje enumerátor provedením vyhledávání podle části a posun.|  
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Umisťuje enumerátor provedením vyhledávání podle relativní virtuální adresy (RVA).|  
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Umisťuje enumerátor provedením vyhledávání pomocí virtuální adresy (VA).|  
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Načte další symboly v pořadí podle adresy. Aktualizuje pozice enumerátor tak počet načtených elementů.|  
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Načte předchozí symboly v pořadí podle adresy. Aktualizuje pozice enumerátor tak počet načtených elementů.|  
-|[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Vytvoří kopii objektu.|  
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Pozice výčtu pomocí provádí vyhledávání podle oddílu a posun.|  
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Pozice výčtu pomocí provádí vyhledávání podle relativní virtuální adresu (RVA).|  
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Pozice výčtu pomocí provádí vyhledávání podle virtuální adresy (VA).|  
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Načte další symboly v pořadí podle adresy. Aktualizuje pozice čítače výčtu počet načtených prvků.|  
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Načte předchozí symboly v pořadí podle adresy. Aktualizuje pozice čítače výčtu počet načtených prvků.|  
+|[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Vytvoří kopii tohoto objektu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Toto rozhraní poskytuje symboly seskupené podle adres. Pro práci s symboly seskupená podle typu, například `SymTagUDT` (uživatelem definovaný typ) nebo `SymTagBaseClass`, použijte [idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md) rozhraní.  
+ Toto rozhraní poskytuje symboly seskupené podle adres. Pro práci se symboly seskupené podle typu, třeba `SymTagUDT` (uživatelem definovaný typ) nebo `SymTagBaseClass`, použijte [idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md) rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Získat voláním toto rozhraní [idiasession::getsymbolsbyaddr –](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) metoda.  
+ Získat voláním toto rozhraní [idiasession::getsymbolsbyaddr –](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) metody.  
   
 ## <a name="example"></a>Příklad  
- Tato funkce zobrazí název a adresu všechny symboly seřazené podle relativní virtuální adresy.  
+ Tato funkce zobrazí název a adresu všechny symboly seřazené podle relativní virtuální adresu.  
   
 ```C++  
 void ShowSymbolsByAddress(IDiaSession *pSession)  
@@ -96,13 +94,13 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getsymbolsbyaddr –](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
