@@ -1,8 +1,6 @@
 ---
-title: Okno výstup, ladění, dialogové okno Možnosti | Microsoft Docs
-ms.custom: ''
+title: Okno výstup, ladění, dialogové okno Možnosti | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.OutputWindow
@@ -19,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e339be389e629970a5f9b3bb1813165b1fcc7e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a635d36a18c5630f654922e0d96bca54a223fd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572274"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935850"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Okno Výstup, ladění, dialogové okno Možnosti
-Můžete určit, jaké typy ladicí informace se zobrazí v **výstup** okno. Pokud chcete zobrazit tyto možnosti, otevřete **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzel a klikněte na **výstup – okno**.
+Můžete určit typy ladicích informací zobrazovaných v **výstup** okna. Chcete-li zobrazit tyto možnosti, otevřete **nástroje** nabídky, klikněte na tlačítko **možnosti**, rozbalte **ladění** uzel a klikněte na tlačítko **okno výstup**.
 
-**Obecné nastavení výstupní** obsahuje ovládací prvky, které určují, zda obecné ladění zprávy zobrazit v této kategorii **výstup** okno. Můžete určit, zda se zobrazí každý typ zprávy.  
+**Obecné nastavení výstupní** Tato kategorie obsahuje ovládací prvky, které určují, zda zobrazit zprávy obecné ladění **výstup** okna. Můžete určit, zda se zobrazí každý typ zprávy.  
 
-**Nastavení trasování grafického subsystému WPF** obsahuje ovládací prvky, které určují úroveň WPF trasování zpráv, které se zobrazují v této kategorii **výstup** okno. Můžete určit, zda se zobrazí každý typ zprávy a zadat úroveň od **kritický** k **všechny**.
+**Nastavení trasování WPF** obsahuje ovládací prvky, které určují úroveň WPF trasovací zprávy, které se zobrazují v této kategorii **výstup** okna. Můžete určit, zda každý typ zprávy se zobrazí a zadejte úroveň od **kritický** k **všechny**.
 
-Další informace najdete v tématu [postupy: zobrazení informace trasování grafického subsystému WPF](../debugger/how-to-display-wpf-trace-information.md).
+Další informace najdete v tématu [jak: Zobrazení informací trasování WPF](../debugger/how-to-display-wpf-trace-information.md).
 
-Pokud potřebujete obnovit výchozí nastavení, můžete to, že pomocí **nástroje** > **nastavení importu a exportu** > **obnovit nastavení**. Pokud chcete obnovit podmnožinu nastavení, nastavení v uložte **Průvodce importem a exportem nastavení** před prováděním změn, které chcete testovat, pak importovat nastavení uložené později.
+Pokud potřebujete obnovit výchozí nastavení, můžete to, že při použití **nástroje** > **nastavení importu a exportu** > **obnovit všechna nastavení**. Pokud chcete obnovit podmnožinu nastavení, nastavení v uložte **Průvodce importem a exportem nastavení** před prováděním změn, které chcete testovat, pak naimportujte uložená nastavení později.
   
 ## <a name="see-also"></a>Viz také:
 [Ladění, dialogové okno Možnosti](../debugger/debugging-options-dialog-box.md)   

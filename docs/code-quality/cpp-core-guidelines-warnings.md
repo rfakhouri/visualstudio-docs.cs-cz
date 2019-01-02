@@ -7,15 +7,14 @@ author: mblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926275"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí podle dokumentu C++ Core Guidelines šachovnice
 
@@ -62,9 +61,9 @@ int main()
 
 Tento příklad ukazuje několik upozornění, která pravidla C++ Core Check najdete:
 
-- C26494 je pravidlo Type.5: objekt vždy inicializujte.
+- C26494 je pravidlo Type.5: Vždy objekt inicializujte.
 
-- C26485 je pravidlo Bounds.3: žádné decay pole na ukazatel.
+- C26485 je pravidlo Bounds.3: Decay žádné pole na ukazatel.
 
 - C26481 je pravidlo Bounds.1: Nepoužívejte aritmetiku ukazatele. Místo nich se používá `span`.
 

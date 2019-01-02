@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: aeb7a0cd638accca463d90f043d2be4581128b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932915"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Vytvoření vlastního kódu a modulů plugin pro zátěžové testování
 
@@ -30,10 +29,10 @@ Vlastní modul plug-in používá kód, který lze vytvořit a připojit k zát�
 
 |Úlohy|Související témata|
 |-|-----------------------|
-|**Vytvořit vlastní modul plug-in pro zátěžový test**: můžete vytvořit vlastní modul plug-in pro přidání další funkce testování k zátěžovému testu můžete použít rozhraní API zátěžového testu.|-   [Postupy: použití rozhraní API zátěžového testu](../test/how-to-use-the-load-test-api.md)<br />-   [Postupy: vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)|
-|**Vytvořit vlastní modul plug-in pro test výkonnosti webu:** API výkonnostních testů webu můžete vytvořit vlastní modul plug-in pro přidání do testu výkonnosti webu, včetně webu další funkce testování. Můžete také vytvořit testu webové služby.<br /><br /> Kromě toho můžete vytvořit webového modulu plug-in rekordéru, který můžete upravit test výkonnosti webu poté, co je zaznamenán, ale předtím, než se zobrazí v prohlížeči výsledků testů webového výkonu.|-   [Postupy: použití API testu výkonnosti webu](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Postupy: vytvoření modulu Plugin pro test výkonnosti webu](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Postupy: vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Postupy: vytvoření testu webové služby](../test/how-to-create-a-web-service-test.md)<br />-   [Postupy: vytvoření modulu Plugin rekordéru](../test/how-to-create-a-recorder-plug-in.md)|
-|**Přidání funkcí uživatelského rozhraní do prohlížeče výsledků testu výkonu webu:** přidáte další funkce uživatelského rozhraní do doplňku sady Visual Studio pomocí prohlížeče výsledků testu webového výkonu.|-   [Postupy: Vytvoření doplňku sady Visual Studio pro web výsledků testu výkonnosti prohlížeč](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**Vytvoření vlastní těla protokolu HTTP editoru:** můžete vytvořit vlastní editor pro úpravu binárních nebo řetězcových odpovědí ve formátu XML z webové služby.|-   [Postupy: vytvoření vlastní těla protokolu HTTP editoru editoru testu výkonnosti webu](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**Vytvořit vlastní modul plug-in pro zátěžový test**: Můžete vytvořit vlastní modul plug-in pro přidání další funkce testování k zátěžovému testu můžete použít rozhraní API zátěžového testu.|-   [Jak: Použití rozhraní API zátěžového testu](../test/how-to-use-the-load-test-api.md)<br />-   [Jak: Vytvoření modulu Plugin pro zátěžový test](../test/how-to-create-a-load-test-plug-in.md)|
+|**Vytvořte vlastní modul plug-in pro test výkonnosti webu:** Můžete vytvořit vlastní modul plug-in pro přidání další funkce testování do testu výkonnosti webu, včetně webu můžete použít API výkonnostních testů webu. Můžete také vytvořit testu webové služby.<br /><br /> Kromě toho můžete vytvořit webového modulu plug-in rekordéru, který můžete upravit test výkonnosti webu poté, co je zaznamenán, ale předtím, než se zobrazí v prohlížeči výsledků testů webového výkonu.|-   [Jak: Použít API výkonnostních testů webu](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Jak: Vytvoření modulu Plugin pro test výkonnosti webu](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Jak: Vytvoření modulu Plugin úrovni požadavků](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Jak: Vytvoření testu webové služby](../test/how-to-create-a-web-service-test.md)<br />-   [Jak: Vytvoření modulu Plugin rekordéru](../test/how-to-create-a-recorder-plug-in.md)|
+|**Přidání funkcí uživatelského rozhraní do prohlížeče výsledků testu výkonu webu:** Další funkce uživatelského rozhraní můžete přiřadit pomocí doplňku sady Visual Studio prohlížeče výsledků testu webového výkonu.|-   [Jak: Vytvořit doplněk sady Visual Studio pro prohlížeč výsledků testu výkonnosti webu](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**Vytvoření vlastního protokolu HTTP editoru těla:** Můžete vytvořit vlastní editor pro úpravu binárních nebo řetězcových odpovědí ve formátu XML z webové služby.|-   [Jak: Vytvořit vlastní těla protokolu HTTP editor pro editor testu výkonnosti webu](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>Odkaz
 

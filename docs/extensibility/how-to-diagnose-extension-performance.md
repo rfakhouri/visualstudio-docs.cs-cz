@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Diagnostika výkonu rozšíření | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943418"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Měření dopadu rozšíření v po spuštění
 
@@ -31,7 +28,7 @@ Pomoc uživatelům porozumění tomuto vlivu, jsme přidali novou funkci v sadě
 Tento dokument, zaměřuje, což vývojářům rozšíření popisuje, jak se počítá rozšíření vliv. Tento dokument také popisuje, jak rozšíření dopad mohou být analyzovány místně. Místně analýza dopadu rozšíření určí, pokud rozšíření se může zobrazit jako výkon vliv na rozšíření.
 
 > [!NOTE]
-> Tento dokument se zaměřuje na dopadu rozšíření na zatížení při spuštění a řešení. Rozšíření také ovlivnit výkon sady Visual Studio, když způsobí uživatelského rozhraní přestane reagovat. Další informace o tomto tématu najdete v tématu [postupy: Diagnostika uživatelské rozhraní se zpozdí způsobených rozšířeními](how-to-diagnose-ui-delays-caused-by-extensions.md).
+> Tento dokument se zaměřuje na dopadu rozšíření na zatížení při spuštění a řešení. Rozšíření také ovlivnit výkon sady Visual Studio, když způsobí uživatelského rozhraní přestane reagovat. Další informace o tomto tématu najdete v tématu [jak: Diagnostika uživatelského rozhraní způsobených rozšířeními zpoždění](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Jak rozšíření může mít vliv na spuštění
 
@@ -51,11 +48,11 @@ Přidali jsme řadu funkcí, které se spouští ze sady Visual Studio 2015. Tyt
 
 Další podrobnosti o těchto funkcích najdete v následujících dokumentech:
 
-[Podle pravidel kontexty uživatelského rozhraní](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): bohatší modul podle pravidel vybudována okolo kontexty uživatelského rozhraní umožňuje vytvářet vlastní kontexty na základě projektu typů, typů a pro atributy. Vlastní kontexty slouží k načtení balíčku během konkrétnější scénáře. Mezi tyto konkrétní scénáře patří přítomnost projekt s konkrétní možnosti namísto spuštění. Vlastní kontextů také povolit [příkaz viditelnost vlastnit vlastní místní](visibilityconstraints-element.md) podle součásti projektu nebo jiné dostupné podmínky. Tato funkce eliminuje potřebu načíst balíček pro registraci obslužná rutina příkazu stav dotazu.
+[Podle pravidel kontexty uživatelského rozhraní](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): Bohatší modul podle pravidel vybudována okolo kontexty uživatelského rozhraní umožňuje vytvářet vlastní kontexty na základě typů projektů, typy a atributy. Vlastní kontexty slouží k načtení balíčku během konkrétnější scénáře. Mezi tyto konkrétní scénáře patří přítomnost projekt s konkrétní možnosti namísto spuštění. Vlastní kontextů také povolit [příkaz viditelnost vlastnit vlastní místní](visibilityconstraints-element.md) podle součásti projektu nebo jiné dostupné podmínky. Tato funkce eliminuje potřebu načíst balíček pro registraci obslužná rutina příkazu stav dotazu.
 
-[Podpora asynchronního balíčku](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): nové AsyncPackage základní třídy v sadě Visual Studio 2015 umožňuje balíčků sady Visual Studio na načtení na pozadí asynchronně Pokud balíček zatížení požadovanou automatické zatížení atribut nebo dotazu asynchronní služby . Toto načtení na pozadí umožňuje IDE, aby byla schopná reagovat. Rozhraní IDE je responzivní, dokonce i za běhu rozšíření je inicializován na pozadí a důležité scénáře, jako je spuštění a řešení zatížení nebude mít vliv.
+[Podpora asynchronního balíčku](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Nové AsyncPackage základní třídy v sadě Visual Studio 2015 umožňuje balíčků sady Visual Studio mají být načteny na pozadí asynchronně Pokud balíček zatížení požadovanou automatické zatížení atribut nebo dotazu asynchronní služby. Toto načtení na pozadí umožňuje IDE, aby byla schopná reagovat. Rozhraní IDE je responzivní, dokonce i za běhu rozšíření je inicializován na pozadí a důležité scénáře, jako je spuštění a řešení zatížení nebude mít vliv.
 
-[Asynchronní služby](how-to-provide-an-asynchronous-visual-studio-service.md): podporující asynchronní balíček, také přidali jsme podporu pro dotazování služby asynchronně a nebudou moct zaregistrovat asynchronní služby. Důležitější ale pracujeme na převod základních služeb Visual Studio pro podporu asynchronního dotazu tak, aby většina práce v dotazu asynchronní probíhá vláken na pozadí. SComponentModel (Visual Studio MEF hostitele) je jedním z hlavních služeb, které teď podporuje asynchronního dotazu umožňující rozšíření pro podporu zcela asynchronní načítání.
+[Asynchronní služby](how-to-provide-an-asynchronous-visual-studio-service.md): S podporou asynchronní balíček také přidali jsme podporu pro dotazování služby asynchronně a nebudou moct zaregistrovat asynchronní služby. Důležitější ale pracujeme na převod základních služeb Visual Studio pro podporu asynchronního dotazu tak, aby většina práce v dotazu asynchronní probíhá vláken na pozadí. SComponentModel (Visual Studio MEF hostitele) je jedním z hlavních služeb, které teď podporuje asynchronního dotazu umožňující rozšíření pro podporu zcela asynchronní načítání.
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>Snižuje dopad automaticky načíst rozšíření
 
@@ -167,11 +164,11 @@ Nyní zobrazí se pouze náklady spojené s sestavení týkající se rozšíře
 
 Například výše některé zajímavé volání zásobníků by:
 
-1. Vstupně-výstupních operací pomocí `System.IO` třída: celkové náklady na tyto snímky nemusí být moc drahé v trasování, ale jsou potenciální příčinou problému od souboru rychlost vstupně-výstupní operace se bude lišit počítač od počítače.
+1. Vstupně-výstupních operací pomocí `System.IO` třídy: Celkové náklady na tyto snímky nemusí být moc drahé v trasování, ale jsou potenciální příčinou problému od souboru rychlost vstupně-výstupní operace se bude lišit počítač od počítače.
 
    ![vstupně-výstupních operací snímků systému](media/perfview-system-io-frames.png)
 
-2. Blokovat čekání na jiné asynchronní práce volání: V tomto případě celkový čas představuje čas na dokončení asynchronní práce je blokován hlavního vlákna.
+2. Blokovat čekání na jiné asynchronní práce volání: V takovém případě celkový čas představuje čas, kdy hlavní vlákno blokované, po dokončení asynchronní práce.
 
    ![blokování volání snímků](media/perfview-blocking-call-frames.png)
 

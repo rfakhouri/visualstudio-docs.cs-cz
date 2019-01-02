@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ladění vnořeného kódu sestavení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění vnořeného kódu sestavení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.inline
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88865df3dcf507cc9a6f6be13e7ab1ff55877c25
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935421"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Postupy: Ladění vnořeného kódu sestavení
 

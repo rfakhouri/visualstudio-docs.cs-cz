@@ -3,19 +3,18 @@ title: Vzdálené pracovní prostory pro R
 description: Jak nastavit vzdálené pracovní prostory R a k němu připojit ze sady Visual Studio.
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837781"
 ---
 # <a name="set-up-remote-workspaces"></a>Nastavení vzdálených pracovních prostorů
 
@@ -171,11 +170,11 @@ Ke spuštění kódu jazyka R, musí mít vzdálený počítač interpret R nain
 
 S R services na vzdáleném počítači spuštěny budete také potřebovat postup vytváření uživatelských účtů, nastavovat pravidla brány firewall, konfigurace sítě Azure a konfigurace certifikátu SSL.
 
-1. Uživatelských účtů: vytvoření účtů pro každý uživatel, který používá vzdálený počítač. Můžete vytvořit buď standardní (Neprivilegovaný) místní uživatelské účty, nebo můžete připojit do domény počítače serveru R a přidat do příslušných skupin zabezpečení k `Users` skupiny zabezpečení.
+1. Uživatelské účty: Vytvoření účtů pro každý uživatel, který používá vzdálený počítač. Můžete vytvořit buď standardní (Neprivilegovaný) místní uživatelské účty, nebo můžete připojit do domény počítače serveru R a přidat do příslušných skupin zabezpečení k `Users` skupiny zabezpečení.
 
-1. Pravidla brány firewall: ve výchozím nastavení, `R Host Broker` naslouchá na portu TCP 5444. Proto se ujistěte, že jsou povolené pro příchozí a odchozí provoz pravidla brány firewall na Windows (odchozí je vyžadována pro instalaci balíčků a podobné scénáře).  Instalační program služby R Nastaví tato pravidla pro integrované brány Windows firewall automaticky. Pokud používáte bránu firewall jiného dodavatele, ale otevřít port 5444 pro `R Host Broker` ručně.
+1. Pravidla brány firewall: Ve výchozím nastavení `R Host Broker` naslouchá na portu TCP 5444. Proto se ujistěte, že jsou povolené pro příchozí a odchozí provoz pravidla brány firewall na Windows (odchozí je vyžadována pro instalaci balíčků a podobné scénáře).  Instalační program služby R Nastaví tato pravidla pro integrované brány Windows firewall automaticky. Pokud používáte bránu firewall jiného dodavatele, ale otevřít port 5444 pro `R Host Broker` ručně.
 
-1. Konfigurace Azure: Pokud váš vzdálený počítač je virtuální počítač v Azure, otevřete port 5444 pro příchozí provoz v rámci sítě Azure jako, který je nezávislý brány Windows Firewall. Podrobnosti najdete v tématu [filtrování provozu sítě s použitím skupin zabezpečení sítě](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) v dokumentaci k Azure.
+1. Konfigurace Azure: Pokud váš vzdálený počítač je virtuální počítač v Azure, otevřete port 5444 pro příchozí provoz v rámci sítě, Azure, který je nezávislý na bráně Windows firewall. Podrobnosti najdete v tématu [filtrování provozu sítě s použitím skupin zabezpečení sítě](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) v dokumentaci k Azure.
 
 1. Zjistit R Host Broker, který certifikát SSL pro načtení: Pokud instalujete certifikát na intranetový server, je pravděpodobné, že plně kvalifikovaný název domény serveru je stejný jako název rozhraní NETBIOS. V takovém případě nic, je třeba provést, protože to je výchozí certifikát, který je načten.
 

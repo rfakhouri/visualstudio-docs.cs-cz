@@ -2,7 +2,6 @@
 title: Kódování a řádku znaky konce
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
@@ -19,22 +18,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 11a70e214362d61fa54e83182bec7cc128905b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847698"
 ---
 # <a name="encodings-and-line-endings"></a>Kódování a řádku konce
 
 Následující znaky jsou interpretovány jako zalomení řádků v sadě Visual Studio:
 
-- CR-LF: Zalomení řádku a řádek informačního kanálu, znaky Unicode 000 D + 000A
+- ZNAKY CR-LF: Návrat na začátek + LF, znaky Unicode 000 D + 000A
 
 - LF: LF, znak Unicode 000A
 
-- NEL: Další řádek znak Unicode 0085
+- NASTAVIT: Další řádek znak Unicode 0085
 
 - LS: Oddělovač řádků, znak Unicode 2028
 

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892300"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Přehled Jazykových nástrojů specifických pro doménu
 Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v sadě Visual Studio, vám umožní navrhnout jazyka specifického pro doménu a potom generovat vše, co uživatelé musí mít k vytváření modelů, které jsou založeny na jazyce.
@@ -66,7 +65,7 @@ Nástroje jazyka specifického pro doménu (DSL Tools), které jsou hostovány v
 ## <a name="validation-in-dsl-tools"></a>Ověřování v nástroje DSL
  DSL poskytuje jednu úroveň ověření, že splňuje model domény základní požadavky pro generování kódu. Obvykle při vytváření jazyka specifického pro doménu přidáte vlastní ověření vyjádřit vaše obchodní logiky pravidla. Další informace o vlastních ověřovacích, naleznete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).
 
- Doporučujeme, abyste ověřili svůj jazyk specifický pro doménu často při jeho návrhu. Pokud doménově specifického jazyka došlo k chybám ověřování, nelze generovat zdrojový kód. Generování zdrojového kódu z šablon procesu se provádí kliknutím **Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení. Pokaždé, když změníte definice jazyka, nezapomeňte také **Transformovat všechny šablony**. Další informace najdete v tématu [postupy: vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Doporučujeme, abyste ověřili svůj jazyk specifický pro doménu často při jeho návrhu. Pokud doménově specifického jazyka došlo k chybám ověřování, nelze generovat zdrojový kód. Generování zdrojového kódu z šablon procesu se provádí kliknutím **Transformovat všechny šablony** na panelu nástrojů Průzkumníku řešení. Pokaždé, když změníte definice jazyka, nezapomeňte také **Transformovat všechny šablony**. Další informace najdete v tématu [jak: Vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Přizpůsobení nástrojů DSL
  Můžete zadat další kód Upřesnit chování modelu a definování omezení přes svůj jazyk. V případě potřeby můžete provádět významné změny tak, že upravíte textových šablon.

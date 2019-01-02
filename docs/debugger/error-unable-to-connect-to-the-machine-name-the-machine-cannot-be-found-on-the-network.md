@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač nebyl nalezen v síti. | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač se v síti nepodařilo najít. | Dokumenty Microsoft'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.dcom_disabled
@@ -18,25 +16,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0654148823d40277bdd9c6b6d8ec5b881fdb80
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e4c9bc3c72a2ff97fc67f31f44041feed2185551
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847370"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač nebyl nalezen v síti.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Chyba: Nelze se připojit k počítači &lt;název&gt;. Počítač se v síti nepodařilo najít.
 K tomuto chování dochází, pokud platí jedna z následujících podmínek:  
   
 -   Připojení ke vzdálenému počítači bylo přerušeno.  
   
--   Váš uživatelský účet na vzdáleném počítači, je zakázán.  
+-   Váš uživatelský účet na vzdáleném počítači zakázaná.  
   
--   Vypršela platnost hesla na vzdáleném počítači.  
+-   Vypršela platnost vašeho hesla na vzdáleném počítači.  
   
-### <a name="to-resolve-this-behavior"></a>Chcete-li toto chování  
+### <a name="to-resolve-this-behavior"></a>Chcete-li vyřešit tento problém  
   
--   Ujistěte se, že místní počítač a vzdáleného počítače jsou ve stejné síti. K tomu použijte Průzkumník systému Microsoft Windows (nebo Průzkumníka souborů) a zkuste to pro přístup ke vzdálenému počítači.  
+-   Ujistěte se, že místní počítač, tak vzdálenému počítači jsou ve stejné síti. K tomuto účelu použijte Průzkumník systému Microsoft Windows (nebo Průzkumníka souborů), k akci pro přístup ke vzdálenému počítači.  
   
      – a –  
   
@@ -44,8 +42,8 @@ K tomuto chování dochází, pokud platí jedna z následujících podmínek:
   
      – a –  
   
--   Ujistěte se, zda je heslo, které používáte pro připojení ke vzdálenému počítači platný a zda nevypršela platnost.  
+-   Ujistěte se, že heslo, které používáte pro připojení ke vzdálenému počítači je platný a že nevypršela platnost.  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)   
- [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)
+ [Nastavení a příprava ladicího programu](../debugger/debugger-settings-and-preparation.md)

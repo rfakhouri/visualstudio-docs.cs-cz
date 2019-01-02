@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a353caf4781a2c321a8a0b385e023686ca78cde
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 317103b1367f5181f8a806925df67b88215ce6a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849315"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Přístup ke službě Azure Virtual Machines z Průzkumníka serveru
 
@@ -41,5 +40,5 @@ Pokud máte virtuální počítače hostované v Azure, můžete k nim přistupo
    | --- | --- |
    | Název |Identifikátor pro koncový bod. |
    | Privátní Port |Port pro přístup k síti, interním do vaší aplikace. |
-   | Protokol |Protokol, který používá přenosové vrstvy pro tento koncový bod TCP nebo UDP. |
+   | Protocol (Protokol) |Protokol, který používá přenosové vrstvy pro tento koncový bod TCP nebo UDP. |
    | Veřejný Port |Port, který se používá pro veřejný přístup k aplikaci. |

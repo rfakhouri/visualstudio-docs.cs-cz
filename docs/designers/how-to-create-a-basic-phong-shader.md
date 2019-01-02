@@ -2,7 +2,6 @@
 title: 'Postupy: Vytvoření základního Phongova shaderu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3120142b2d6fae7c8ee02c81f6ae76efb0aaaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934119"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Postupy: vytvoření základního Phongova shaderu
+# <a name="how-to-create-a-basic-phong-shader"></a>Postupy: Vytvoření základního Phongova shaderu
 
 Tento článek popisuje způsob použití návrháře shaderu a orientovaného grafu shaderu jazyka (DGSL) k vytvoření osvětlení shader, který implementuje Klasický model osvětlení Phong.
 
@@ -25,11 +24,11 @@ Tento článek popisuje způsob použití návrháře shaderu a orientovaného g
 
 Model osvětlení Phong rozšiřuje Lambertova modelu osvětlení zahrnout odlesků zvýraznění, který simuluje vlastnosti reflektivní povrchu. Reflexní součást poskytuje další osvětlení ze stejné směrové zdrojů světla, které se používají v Lambertova modelu osvětlení, ale jinak zpracování jeho příspěvku na konečnou barvu. Reflexní zvýraznění ovlivňuje všechny oblasti ve scéně odlišně, na základě vztahu mezi směr zobrazení, směr světla zdrojů a orientace povrchu. Je produkt reflexní barvy, síla odlesku a orientaci ovládacího prvku na plochu a barvu, intenzity a směr světla zdrojů. Zařízení Surface, které odráží světelný zdroj přímo v prohlížeči zobrazí maximální příspěvek lesku a površích, které odráží světelný zdroj mimo prohlížeč získat žádné příspěvek. V části model osvětlení Phong jednu nebo více komponent odlesky jsou zkombinované určíte barvu a intenzitu zrcadlových odlesků zvýraznění pro každý bod na objekt a se pak přidá do výsledku Lambertova modelu osvětlení vytvoří konečnou barvu pixelu .
 
-Další informace o modelu osvětlení Lambert najdete v tématu [postupy: vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).
+Další informace o modelu osvětlení Lambert najdete v tématu [jak: Vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Než začnete, ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobrazeny.
 
-1. Vytvoření Lambertova shaderu, jak je popsáno v [postupy: vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Vytvoření Lambertova shaderu, jak je popsáno v [jak: Vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Odpojte **Lambertova** uzlu z **konečnou barvu** uzlu. Zvolte **RGB** z terminálu **Lambertova** uzel a klikněte na tlačítko **přerušit odkazy**. Díky tomu místo pro uzel, který je přidán v dalším kroku.
 
@@ -59,12 +58,12 @@ Než začnete, ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobra
 
  ![Použitím osvětlení Phong k modelu](../designers/media/digit-lighting-model.png)
 
- Další informace o tom, jak použití shaderu na 3D model, najdete v části [postupy: použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Další informace o tom, jak použití shaderu na 3D model, najdete v části [jak: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)
+- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)
 - [Postupy: Vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md)
 - [Návrhář shaderů](../designers/shader-designer.md)
 - [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

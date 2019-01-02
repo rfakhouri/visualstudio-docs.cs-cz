@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: publikování projektu s konkrétním národním | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Publikování projektu s konkrétním národním | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca121a8f8a68ca7a036b14c0f0c2bd6d1a84ff00
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 5c103ca9cec3c7c09a383f6c785b52f3f5c6f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928971"
 ---
-# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: publikování projektu s konkrétním národním
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Postupy: Publikování projektu s konkrétním národním
 Není, že aplikace obsahuje součásti, které mají různá národní prostředí. V tomto scénáři by vytvářet řešení, která se má několik projektů a potom publikovat samostatné projekty pro každé národní prostředí. Tento postup ukazuje, jak pomocí makra publikování první projekt v řešení s použitím národního prostředí "en". Pokud chcete vyzkoušet tuto proceduru s národním prostředí než "en", nezapomeňte nastavit `localeString` v makru tak, aby odpovídaly národní prostředí, který používáte (pro příklad, "de" nebo "de-DE").  
   
 > [!NOTE]
@@ -167,4 +165,4 @@ Není, že aplikace obsahuje součásti, které mají různá národní prostře
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Makra vývojové prostředí](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
  [Okno Průzkumníka – makro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
- [Postupy: úpravy a vytváření makra prostřednictvím kódu programu](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))
+ [Postupy: Úpravy a vytváření makra prostřednictvím kódu programu](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941661"
 ---
 # <a name="domain-property-value-change-handlers"></a>Obslužná rutina změny hodnoty vlastnosti domény
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>Alternativní postup: počítá vlastností
+### <a name="alternative-technique-calculated-properties"></a>Alternativní postup: Počítané vlastnosti
 
 Předchozí příklad ukazuje, jak lze pomocí OnValueChanged() šíření hodnoty z jedné doménové vlastnosti. Každá vlastnost má svůj vlastní uloženou hodnotu.
 
@@ -105,7 +104,7 @@ Místo v předchozím příkladu můžete nastavit **druh** pole `TextLengthCoun
 
 Potenciální nevýhodou vypočítané vlastnosti je však, že tento výraz je vyhodnocen vždy, když je použita hodnota, které mohou představovat problém s výkonem. Navíc není žádná OnValueChanging() a OnValueChanged() u počítané vlastnosti.
 
-### <a name="alternative-technique-change-rules"></a>Alternativní postup: změnit pravidla
+### <a name="alternative-technique-change-rules"></a>Alternativní postup: Změnit pravidla
 
 Pokud definujete ChangeRule, provede se na konci transakce, ve kterém se změní hodnota vlastnosti.  Další informace najdete v tématu [pravidla šíření změn v rámci the Model](../modeling/rules-propagate-changes-within-the-model.md).
 

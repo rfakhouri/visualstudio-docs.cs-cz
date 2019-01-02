@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2fb26fa8960c652feefa157fb04c31b9ed7abb9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935655"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>Objekty, které přidáváte do návrháře použít odlišné datové připojení než návrháře
 
@@ -28,7 +27,7 @@ Při přidávání položek do **Návrhář relací objektů** (**O/R Designer**
 
 ## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>Chcete-li nahradit stávající připojení pomocí připojení používané objektem vybraný objekt
 
-- Klikněte na tlačítko **Ano**.
+- Klikněte na **Ano**.
 
     Vybraný objekt se přidá do **O/R Designer**a *DataContext.Connection* je nastavena na nové připojení.
 

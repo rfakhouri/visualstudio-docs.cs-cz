@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ignorování chyb v úlohách | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ignorování chyb v úlohách | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild - "vs-ide-sdk"
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
@@ -11,14 +9,14 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 3df3a3b40dd67f12bac19f4e69f5293c85bb85f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f271c2d6dae3857818505829cf2da8a109613e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852687"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>Postupy: ignorování chyb v úlohách
+# <a name="how-to-ignore-errors-in-tasks"></a>Postupy: Ignorování chyb v úlohách
 Občas můžete chtít sestavení bude odolný vůči chybám chyb v určité úlohy. Pokud tyto méně náročné úlohy nezdaří, chcete pokračovat, protože stále může vytvořit požadovaný výstupní sestavení. Například, pokud projekt používá `SendMail` úloha pro odeslání e-mailovou zprávu po jednotlivých komponent je sestavená, můžete zvážit je přijatelné pro sestavení a pokračujte na dokončení, i když nedostupné servery e-mailu a stavové zprávy nelze odeslat. Nebo, například pokud zprostředkující soubory jsou obvykle odstraněny během sestavení, můžete zvážit je přijatelné pro sestavení a pokračujte na dokončení, i v případě, že tyto soubory nelze odstranit.  
   
 ## <a name="use-the-continueonerror-attribute"></a>Použití ContinueOnError – atribut  

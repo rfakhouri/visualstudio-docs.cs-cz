@@ -1,8 +1,6 @@
 ---
-title: Dialogové okno Vlastnosti zprávy | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno Vlastnosti zprávy | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options
@@ -13,26 +11,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b241550d2bb9c72240b68c7b6e338cd9f56043c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 132f00ccca207a854832568585c4d2594c79a337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853759"
 ---
 # <a name="message-properties-dialog-box"></a>Dialogové okno vlastností zpráv
-Další informace o konkrétní zprávou pomocí tohoto dialogového okna. K zobrazení tohoto dialogového okna, přesunout fokus [zobrazení zpráv](../debugger/messages-view.md) okno. Vyberte libovolný uzel zprávy ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  
+Použijte toto dialogové okno pro další informace o konkrétní zprávu. Zobrazíte dialogovému oknu přesunout fokus [zobrazení zpráv](../debugger/messages-view.md) okna. Vyberte všechny zprávy uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
   
- **Obecné** karta je kartě jenom zobrazit. K dispozici jsou následující nastavení:  
+ **Obecné** je karta jenom karta zobrazí. K dispozici jsou následující nastavení:  
   
  **Popisovač okna**  
- Jedinečné ID toto okno. Jsou opakovaně využívána popisovač okna; okno identifikují pouze po dobu jeho existence toto okno. Klikněte na tuto hodnotu zobrazíte vlastnosti toto okno.  
+ Jedinečné ID tohoto okna. Jsou opakovaně využívána popisovač okna; okno identifikují pouze po dobu platnosti tohoto okna. Klikněte na tuto hodnotu a zobrazte vlastnosti tohoto okna.  
   
  **Úroveň vnoření**  
- Hloubka vnoření této zprávy, kde 0 znamená bez vnoření.  
+ Hloubka vnoření tuto zprávu, kde 0 je bez vnoření.  
   
  **Zpráva**  
- Číslo, stav a název vybrané windows zprávy.  
+ Číslo, stav a název zprávy vybrané windows.  
   
  **lResult**  
  Hodnota *lResult* parametr, pokud existuje.  
@@ -41,29 +39,29 @@ Další informace o konkrétní zprávou pomocí tohoto dialogového okna. K zob
  Hodnota *wParam* parametr, pokud existuje.  
   
  **lParam**  
- Hodnota *lParam* parametr, pokud existuje. Tato hodnota je dekódovat, pokud je ukazatel na řetězec nebo struktura.  
+ Hodnota *lParam* parametr, pokud existuje. Tato hodnota je dekódovat. Pokud je ukazatel na řetězec nebo strukturu.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
- Slouží k výběru zprávy, které jsou uvedeny v aktivním zobrazení zprávy.  
+ Slouží k výběru zprávy, které jsou uvedené v zobrazení aktivního zprávy.  
   
- [Dialogové okno hledání zpráv](../debugger/message-search-dialog-box.md)  
- Použít k vyhledání uzlu pro konkrétní zprávy v zobrazení zpráv.  
+ [Dialogové okno pro vyhledávání zpráv](../debugger/message-search-dialog-box.md)  
+ Umožňuje najít uzel pro konkrétní zprávu v zobrazení zpráv.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.  
+ Obsahuje části s popisem každé nástroje Spy ++ nabídky a dialogové okno pole.  
   
  [Otevření zobrazení zpráv z vyhledávacího okna](../debugger/how-to-open-messages-view-from-find-window.md)  
- Vysvětluje, jak k otevření zobrazení zpráv z dialogového okna Najít.  
+ Vysvětluje, jak otevření zobrazení zpráv z dialogového okna Najít okno.  
   
  [Hledání zprávy v zobrazení zpráv](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Vysvětluje, jak vyhledat konkrétní zprávu v zobrazení zpráv.  
+ Vysvětluje, jak najít konkrétní zprávu v zobrazení zpráv.  
   
  [Zobrazení zpráv](../debugger/messages-view.md)  
- Zobrazí datový proud zpráv, které jsou přidružené k okno, proces nebo přístup z více vláken.  
+ Zobrazí datový proud zpráv, které jsou přidružené k okno, proces nebo vlákno.  
   
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.
+ Seznámíte se nástroje Spy ++, jak je možné.

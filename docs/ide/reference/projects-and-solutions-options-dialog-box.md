@@ -2,7 +2,6 @@
 title: Projekty a řešení – dialogové okno Možnosti
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926306"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Stránku projekty a řešení, dialogové okno Možnosti
 
@@ -89,11 +88,11 @@ Určuje výchozí umístění, kde sada Visual Studio vytvoří nové projekty a
 
 ### <a name="user-project-templates-location"></a>Umístění šablon projektů uživatele
 
-Určuje výchozí umístění, která **nový projekt** dialogové okno používá k vytvoření seznamu **šablony**. Další informace najdete v tématu [postupy: vyhledání a uspořádat šablony](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Určuje výchozí umístění, která **nový projekt** dialogové okno používá k vytvoření seznamu **šablony**. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Umístění šablon položek uživatele
 
-Určuje výchozí umístění, která **přidat novou položku** dialogové okno používá k vytvoření seznamu **šablony**. Další informace najdete v tématu [postupy: vyhledání a uspořádat šablony](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Určuje výchozí umístění, která **přidat novou položku** dialogové okno používá k vytvoření seznamu **šablony**. Další informace najdete v tématu [jak: Hledání a organizace šablon](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Viz také:
 

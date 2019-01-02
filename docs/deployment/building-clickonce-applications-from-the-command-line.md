@@ -1,8 +1,6 @@
 ---
 title: Vytváření aplikací ClickOnce z příkazového řádku | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926262"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], můžete sestavovat projekty z příkazového řádku, i když jsou vytvořeny v integrovaném vývojovém prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt vytvořený s [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na jiném počítači, který má pouze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nainstalované. Díky tomu můžete pro reprodukci pomocí automatizovaného procesu sestavení, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilé techniky nad rámec sestavení projektu, samotný skriptování.  
@@ -37,13 +35,13 @@ V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
   
  `/target:publish` Příkaz sděluje MSBuild, který má být vyvolán cíl publikování. Cíl publikování závisí na cíl sestavení. To znamená, že operace publikování je nadstavbou jazyka operace sestavení. Například pokud jste provedli změnu do jedné zdrojové soubory jazyka Visual Basic nebo C#, odpovídající sestavení by automaticky znovu sestavit pomocí operace publikování.  
   
- Informace o generování úplného [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí nástroje příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu naleznete v tématu [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Informace o generování úplného [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí nástroje příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestu naleznete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Vytvoření a vytvoření základní aplikace ClickOnce pomocí nástroje MSBuild  
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Vytvoření a publikování ClickOnce projektu  
   
-1. Klikněte na tlačítko **nový projekt** z **souboru** nabídky. **Nový projekt** zobrazí se dialogové okno.  
+1. Klikněte na tlačítko **nový projekt** z **souboru** nabídky. Zobrazí se dialogové okno **Nový projekt**.  
   
 2. Vyberte **aplikace Windows** a pojmenujte ho `CmdLineDemo`.  
   
@@ -67,7 +65,7 @@ V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
   
 2. Z Windows **Start** nabídky, klikněte na tlačítko **všechny programy**, pak **sady Microsoft Visual Studio**, pak **Visual Studio Tools**, pak **Příkazový řádek sady visual Studio**. To by měl otevřete příkazový řádek v kořenové složce aktuálního uživatele.  
   
-3. V **příkazový řádek sady Visual Studio**, změňte aktuální adresář na umístění projektu, který jste právě vytvořili. Zadejte například `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
+3. V **příkazový řádek sady Visual Studio**, změňte aktuální adresář na umístění projektu, který jste právě vytvořili. Zadejte například příkaz `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.  
   
 4. Chcete-li odebrat existující soubory vytvořené v "Vytvoření a publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projektu," typ `rmdir /s publish`.  
   

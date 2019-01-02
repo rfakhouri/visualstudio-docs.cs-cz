@@ -1,9 +1,8 @@
 ---
-title: 'Postupy: výhradní používání klávesnice'
+title: 'Postupy: Výhradní používání klávesnice'
 description: Další informace o použití výchozích klávesových zkratek k tomu, aby k procházení a kódu v rámci integrovaného vývojového prostředí (IDE) sady Visual Studio.
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -18,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874456"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: výhradní používání klávesnice
+# <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: Výhradní používání klávesnice
 
 > [!TIP]
 > Další informace o nedávných aktualizacích usnadnění přístupu, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.

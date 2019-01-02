@@ -2,7 +2,6 @@
 title: Uzly filtru
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: gewarren
@@ -10,22 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf0902847899f8796ac34765c66c79530248e81
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba6246f68505a4b1d0a93011b46e32918779dfa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836894"
 ---
-# <a name="filter-nodes"></a>Uzly filtrů
+# <a name="filter-nodes"></a>Uzly filtru
 
-V Návrháři shaderu uzly filtrů transformace vstup – například ukázku barvu nebo texture – na hodnotu názorné barev. Tyto hodnoty názorné barva běžně se používají v jiných fotorealistické vykreslování nebo jako součásti v jiných vizuálních efektů.
+V Návrháři shaderu uzly filtrů transformují vstupní – například vzorek barvy nebo textury – na hodnotu názorné barvu. Tyto hodnoty názorné barva se běžně používají v jiných fotorealistické vykreslování nebo komponenty v jiných vizuálních efektů.
 
-## <a name="filter-node-reference"></a>Odkaz na uzlu filtru
+## <a name="filter-node-reference"></a>Referenční uzel filtru
 
 |Uzel|Podrobnosti|Vlastnosti|
 |----------|-------------|----------------|
-|**Rozostření**|Rozostří pixelů texturou pomocí Gaussovské funkce.<br /><br /> Můžete použít ke snížení podrobnosti barvu nebo šumu v texturou.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice texel k testování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Hodnota rozostřeného barvy.|**Texture**<br /> Texture registrace, který je spojen s sampler, který se používá během rozostření.|
-|**Snížit sytost**|Snižuje množství barvy v určené barvy.<br /><br /> Barva odstraněno, hodnoty barvy blíží šedé ekvivalentní.<br /><br /> **Vstup:**<br /><br /> `RGB`: `float3`<br /> Barvy, která má snížit sytost.<br /><br /> `Percent`: `float`<br /> Procento barvu, kterou chcete odebrat, vyjádřené jako normalizovanou hodnotu v rozsahu [0, 1].<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Odbarvený barva.|**Světlostí**<br /> Váhu, které jsou přiřazeny k součástem červenou, zelenou a modrou barvu.|
-|**Detekce okrajů**|Detekuje okraje v texturou pomocí detektor Canny okraj. Okrajové jsou výstupem jako bílé; jako černá jsou výstupem bez edge pixelů.<br /><br /> Můžete použít k identifikaci okraje v texturou tak, aby může používat další důsledky zacházet s hraniční pixelů.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice texel k testování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Prázdné, pokud texel na okraj; začernit, jinak hodnota.|**Texture**<br /> Texture registrace, který je spojen s sampler, který se používá během zjišťování okraj.|
-|**Zostřit**|Zvýší texturou.<br /><br /> To vám pomůže zvýrazněte podrobné detaily v texturou.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice texel k testování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Hodnota rozostřeného barvy.|**Texture**<br /> Texture registrace, který je spojen s sampler, který se používá během zostření.|
+|**Rozostření**|Rozostří pixelů texturu pomocí Gaussovy funkce.<br /><br /> To můžete použít ke snížení detailu barvy nebo šumu v textuře.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice texel k testování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Hodnota rozmazaný barvy.|**Textury**<br /> Registr textur, který je spojen s vzorkovači používanému při rozostření.|
+|**Snížit sytost**|Snižuje počet barev v určené barvy.<br /><br /> Když je barva odebrána, barva se Zamění šedi ekvivalentní.<br /><br /> **Vstup:**<br /><br /> `RGB`: `float3`<br /> Barva pro zmenšení sytosti.<br /><br /> `Percent`: `float`<br /> Procento barev, které chcete odebrat, vyjádřené jako normalizované hodnoty v rozsahu [0, 1].<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Odbarvený barvu.|**Světlosti**<br /> Váhy, které jsou uvedeny na komponenty červené, zelené a modré barvu.|
+|**Detekce okraje**|Detekuje hrany v textuře pomocí cannyho detektoru. Pixely hrany, které jsou výstupem jako prázdné; bez okrajů pixelů se výstup jako černá.<br /><br /> Může být využit k identifikaci hran textury, aby mohli používat další efekty přistupovat ke všem pixely hrany.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice texel k testování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Prázdné, pokud je texel na okraj; v opačném případě černá.|**Textury**<br /> Registr textur, který je spojen se vzorkovačem, který je použit během detekce hran.|
+|**Zdokonalení**|Zaostří texturu.<br /><br /> Může být využit zvýrazněte podrobné detaily v textuře.<br /><br /> **Vstup:**<br /><br /> `UV`: `float2`<br /> Souřadnice texel k testování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Hodnota rozmazaný barvy.|**Textury**<br /> Registr textur, který je spojen se vzorkovačem, který se používá během zostření.|

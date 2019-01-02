@@ -3,7 +3,6 @@ title: Návrhář postupu provádění - AddToCollection<T> návrháře aktivit
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b260ca798befbbf45ba198f919f84ffc976262
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd8e92baa4192d0b40acdc1d51d01ea339b528c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926747"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > návrháře aktivit
 
@@ -40,9 +39,9 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.AddToCollectio
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.AddToCollection%601> aktivity. Výchozí hodnota je AddToCollection < Int32\>. I když <xref:System.Activities.Activity.DisplayName%2A> hodnota není bezpodmínečně nutné, je osvědčeným postupem je použití jednoho.|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Hodnota TRUE|Položka k přidání do kolekce\<T >. Tato položka je typu *T*, která je typu *TypeArgument*. Chcete-li určit položku, zadejte výraz jazyka Visual Basic v mřížce vlastností.|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Hodnota TRUE|Kolekce, do kterého by měla položka přidána. Tato kolekce je typu **rozhraní ICollection < TypeArgument\>**. Chcete-li určit kolekci, zadejte výraz jazyka Visual Basic v mřížce vlastností.|
-|*TypeArgument*|Hodnota TRUE|Typ položky obsažené v T <xref:System.Collections.Generic.ICollection%601>. Ve výchozím nastavení to *TypeArgument* je typ nastaven na **Int32**. Chcete-li změnit typ, změňte hodnotu *TypeArgument* v poli se seznamem v mřížce vlastností.|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|Pravda|Položka k přidání do kolekce\<T >. Tato položka je typu *T*, která je typu *TypeArgument*. Chcete-li určit položku, zadejte výraz jazyka Visual Basic v mřížce vlastností.|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|Pravda|Kolekce, do kterého by měla položka přidána. Tato kolekce je typu **rozhraní ICollection < TypeArgument\>**. Chcete-li určit kolekci, zadejte výraz jazyka Visual Basic v mřížce vlastností.|
+|*TypeArgument*|Pravda|Typ položky obsažené v T <xref:System.Collections.Generic.ICollection%601>. Ve výchozím nastavení to *TypeArgument* je typ nastaven na **Int32**. Chcete-li změnit typ, změňte hodnotu *TypeArgument* v poli se seznamem v mřížce vlastností.|
 
 ## <a name="see-also"></a>Viz také:
 

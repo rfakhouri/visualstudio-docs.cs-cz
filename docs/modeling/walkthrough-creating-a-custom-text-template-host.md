@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vlastního hostitele textových šablon'
+title: 'Průvodce: Vytvoření vlastního hostitele textových šablon'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840762"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Návod: Vytvoření vlastního hostitele textových šablon
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Průvodce: Vytvoření vlastního hostitele textových šablon
 
 A *textové šablony*<em>hostitele</em> poskytuje prostředí, která umožňuje *modul transformace textové šablony* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesor direktiv* , který potřebuje soubor nebo sestavení může od hostitele vyžádat prostředek. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).
 
@@ -821,7 +820,7 @@ Při testování vlastního hostitele napíšete textovou šablonu, spustíte vl
 
 ## <a name="next-steps"></a>Další kroky
 
-V tomto návodu jste vytvořili hostitele transformace textových šablon, který podporuje základní funkce transformace. Tohoto hostitele můžete rozšířit tak, aby podporoval textové šablony, které volají vlastní nebo vygenerované procesory direktiv. Další informace najdete v tématu [návod: připojení hostitele k procesoru direktiv generované](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
+V tomto návodu jste vytvořili hostitele transformace textových šablon, který podporuje základní funkce transformace. Tohoto hostitele můžete rozšířit tak, aby podporoval textové šablony, které volají vlastní nebo vygenerované procesory direktiv. Další informace najdete v tématu [názorný postup: Připojení hostitele k procesoru vygenerovaných direktiv](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Viz také:
 

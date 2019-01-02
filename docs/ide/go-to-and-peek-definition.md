@@ -2,7 +2,6 @@
 title: Zobrazení definic typů
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868901"
 ---
 # <a name="view-type-and-member-definitions"></a>Zobrazení definic typů a členů
 
@@ -52,7 +51,7 @@ Poté stiskněte **Ctrl** (nebo libovolným modifikační klávesa je vybrán v 
 
 Pokud jste náhled jiné definice v automaticky otevíraném okně, se spustí navigace s popisem cesty cestu, která můžete procházet pomocí kruhů a šipky, které se zobrazují nad automaticky otevírané okno.
 
-Další informace najdete v tématu [postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Další informace najdete v tématu [jak: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Zobrazování metadat ve formě zdrojového kódu (C#)
 
@@ -79,4 +78,4 @@ Nový v sadě Visual Studio 2017 verze 15.6 můžete nastavit možnost pro zobra
 ## <a name="see-also"></a>Viz také:
 
 - [Vyhledání kódu](../ide/navigating-code.md)
-- [Postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

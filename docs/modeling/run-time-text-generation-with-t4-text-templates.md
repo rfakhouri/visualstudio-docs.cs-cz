@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939924"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 
@@ -300,7 +299,7 @@ Direktivy include lze použít kdekoli v rámci textu souboru šablony nebo vkl�
 
 Můžete sdílet obsah mezi šablonami běhu napsáním základní třídy šablony, která můžou být abstraktní. Použití `inherits` parametr `<@#template#>` směrnice odkazovat na jiné šablony třídy modulu runtime.
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Model dědičnosti: fragmenty v základní metody
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Model dědičnosti: Fragmenty v základních metod
 
 Ve vzoru použít v následujícím příkladu Všimněte si, že následující body:
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>Model dědičnosti: Základní textu
+#### <a name="inheritance-pattern-text-in-base-body"></a>Model dědičnosti: Text v základní text
 
 V tomto alternativním přístupem k použití šablony dědičnosti je definován hromadné text do základní šablony. Odvozené šablony poskytují data a fragmenty textu, který se vejde do základního obsahu.
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>Související témata
 
-Návrhových šablonách: Pokud chcete použít šablonu pro generování kódu, který bude součástí vaší aplikace, najdete v článku [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+Šablony návrhu: Pokud chcete použít šablonu pro generování kódu, který bude součástí vaší aplikace, najdete v článku [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 Šablony běhu lze použít v jakékoli aplikaci, kde určit tyto šablony a jejich obsah v době kompilace. Ale pokud chcete zadat rozšíření sady Visual Studio, která generuje text ze šablon, které se mění v době běhu, naleznete v tématu [volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 

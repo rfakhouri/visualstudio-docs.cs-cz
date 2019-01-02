@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfRows | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_numberOfRows | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c52ecbf10e798faed3efb5f1e5b02c822c1674
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e4b440a77cb6ddd4b957c6a6852c7367b93ddc85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938864"
 ---
 # <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
 Získá počet řádků v matici.  
@@ -31,10 +29,10 @@ HRESULT get_numberOfRows(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `DWORD` který obsahuje počet řádků v matici.  
+ [out] Ukazatel `DWORD` , který obsahuje počet řádků v matici.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

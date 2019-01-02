@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: řídicí speciální znaky v nástroji MSBuild | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Řídicí znaky v nástroji MSBuild | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 701db598872f6dde5a07740ef7601a6c8de7c5f0
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 5e6af51127548b59646ec7243863491115b77e08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854617"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: řídicí speciální znaky v nástroji MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Postupy: Speciální řídicí znaky v nástroji MSBuild
 
 Některé znaky mají speciální význam v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu. Příklady znaků středníky (`;`) a hvězdičky (`*`). Úplný seznam těchto speciálních znaků, naleznete v tématu [speciální znaky nástroje MSBuild](../msbuild/msbuild-special-characters.md).
   

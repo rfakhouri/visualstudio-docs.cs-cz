@@ -2,7 +2,6 @@
 title: Třídy statických pomocných rutin | Nástroj pro testování Microsoft IntelliTest Developer
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5c635c8fb3def61b8278b7b7c4b66aa196d82b8
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897797"
 ---
 # <a name="static-helper-classes"></a>Třídy statických pomocných rutin
 
@@ -97,7 +96,7 @@ Statická třída poskytující pomocné vstupní hodnoty do testu, který slou�
 
 * Generovaný kód pro konkrétní testovací případy nastaví poskytovatele podle výběru určitým způsobem, tak, aby opakované spuštění testovacího případu se konkrétní možnosti k aktivaci cestu konkrétního spuštění.
 
-**Využití**
+**Použití**
 
 * Jednoduché volání **PexChoose.Value** ke generování novou hodnotu:
 
@@ -144,7 +143,7 @@ public partial class MathExTests {
 
 Statická třída slouží k Ignorovat omezení parametrů a tisknout symbolické informace související s hodnotami.
 
-**Využití**
+**Použití**
 
 Za normálních okolností IntelliTest se pokusí zahrnují všechny cesty provádění kódu během provádění. Ale zejména v případě výpočetních předpokladů a kontrolní výraz podmínky, by neměla prozkoumat všechny možné případy.
 

@@ -2,7 +2,6 @@
 title: Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
 ms.date: 08/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
@@ -20,80 +19,80 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: cab1a6841a321489091bcf1e62dbf2d8eeafacdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855020"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
 Toto dialogové okno umožňuje definovat [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] sestavení a nastavení související s protokolování, výkon a podporuje typy souborů projektu.
 
-### <a name="to-access-this-dialog-box"></a>Pro přístup k tohoto dialogového okna
+### <a name="to-access-this-dialog-box"></a>Pro přístup k tomuto dialogovému oknu
 
 1.  Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2.  Vyberte **projekty a řešení**a potom vyberte **nastavení projektu VC ++**.
+2.  Vyberte **projekty a řešení**a pak vyberte **nastavení projektu VC ++**.
 
-## <a name="build-logging"></a>Sestavení protokolování
+## <a name="build-logging"></a>Protokolování sestavení
  **Ano**
 
-  Zapne generování souboru protokolu sestavení. Tato možnost generuje BuildLog.htm, které lze nalézt v adresáři zprostředkující soubory projektu. Každý nový sestavení přepíše předchozí BuildLog.htm soubor.
+  Zapnutí generování souboru protokolu sestavení. Tato možnost vygeneruje BuildLog.htm, který se nachází v adresáři zprostředkujících souborů projektu. Každé nové sestavení přepíše předchozí soubor BuildLog.htm.
 
  **Ne**
 
-  Generování souboru protokolu sestavení vypne.
+  Vypne generování souboru protokolu sestavení.
 
 ## <a name="show-environment-in-log"></a>Zobrazit prostředí v protokolu
  **Ano**
 
- Seznam proměnných v souboru protokolu sestavení. Tato možnost určuje, že odezvu všech proměnných prostředí během sestavení z [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projekty do souboru protokolu sestavení.
+ Seznam proměnných prostředí v souboru protokolu sestavení. Tato možnost určuje vypisovat všech proměnných prostředí během sestavení [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projekty, do souboru protokolu sestavení.
 
  **Ne**
 
- Proměnné prostředí vylučte ze souboru protokolu sestavení.
+ Proměnné prostředí vyloučíte ze souboru protokolu sestavení.
 
-## <a name="build-timing"></a>Sestavení časování
+## <a name="build-timing"></a>Časování sestavení
  **Ano**
 
-  Zapne časování sestavení. Pokud vyberete, je čas potřebný pro na dokončení sestavení publikované ve výstupním okně. Další informace najdete v tématu [výstup – okno](../../ide/reference/output-window.md).
+  Zapne časování sestavení. Pokud vybraná, čas potřebný pro na dokončení sestavení se zveřejní v okně výstupu. Další informace najdete v tématu [okno výstup](../../ide/reference/output-window.md).
 
  **Ne**
 
  Vypne časování sestavení.
 
-## <a name="maximum-concurrent-c-compilations"></a>Maximální souběžných kompilace C++
-  Určuje maximální počet jader procesoru, který má používat pro paralelní kompilace C++.
+## <a name="maximum-concurrent-c-compilations"></a>Maximum souběžných kompilací C++
+  Určuje maximální počet Procesorových jader pro paralelní kompilaci jazyka C++.
 
 ## <a name="extensions-to-include"></a>Rozšíření zahrnout
   Určuje přípony názvů souborů, které můžete přenést do projektu.
 
-## <a name="extensions-to-hide"></a>Rozšíření skrýt
-  Určuje přípony názvů souborů, které se nezobrazí v **Průzkumníku řešení** při **zobrazit všechny soubory** je povoleno.
+## <a name="extensions-to-hide"></a>Přípony ke skrytí
+  Určuje přípony názvů souborů, které se nezobrazí v **Průzkumníka řešení** při **zobrazit všechny soubory** je povolená.
 
-## <a name="build-customization-search-path"></a>Vytvořit vlastní nastavení – cesta hledání
-  Určuje seznam adresářů, které obsahují .rules soubory, které vám pomohou definovat pravidla sestavení pro projekty.
+## <a name="build-customization-search-path"></a>Cesty pro hledání vlastního nastavení sestavení
+  Určuje seznam adresářů, které obsahují .rules soubory, které vám pomůžou definovat pravidla sestavení pro vaše projekty.
 
 ## <a name="solution-explorer-mode"></a>Režim Průzkumník řešení
  **Zobrazit pouze soubory v projektu**
 
-  Nakonfiguruje **Průzkumníku řešení** můžete zobrazit jenom soubory v projektu.
+  Nakonfiguruje **Průzkumníka řešení** můžete zobrazit jenom soubory v projektu.
 
  **Zobrazit všechny soubory**
 
-  Nakonfiguruje **Průzkumníku řešení** zobrazíte soubory v projektu a souborů na disku ve složce projektu.
+  Nakonfiguruje **Průzkumníka řešení** k zobrazení souborů v projektu a souborů na disku ve složce projektu.
 
-## <a name="enable-project-caching"></a>Povolit ukládání do mezipaměti projektu
+## <a name="enable-project-caching"></a>Povolit ukládání projektů do mezipaměti
 **Ano**
 
-Umožňuje sadě Visual Studio projektu ukládat data do mezipaměti, aby při příštím otevření projektu, je možné načíst data, nikoli znovu je computing z projektu souborů z mezipaměti. Pomocí data uložená v mezipaměti můžete výrazně urychlit čas načítání projektu.
+Umožňuje sadě Visual Studio projekt ukládání dat do mezipaměti tak, aby při příštím otevření projektu, je možné načíst, uložit do mezipaměti dat spíše než znovu computingu ze souborů projektu. Pomocí dat uložených v mezipaměti může výrazně zkracují čas načtení projektu.
 
 **Ne**
 
-Nepoužívejte data uložená v mezipaměti projektu. Analyzovat soubory projektu, načte pokaždé, když na projekt.
+Nepoužívejte data uložená v mezipaměti projektu. Analyzovat pokaždé, když projekt načte soubory projektu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Sestavování programů v jazyce C/C++](/cpp/build/building-c-cpp-programs)
 - [Referenční zdroje k sestavení programu v jazyce C/C++](/cpp/build/reference/c-cpp-building-reference)

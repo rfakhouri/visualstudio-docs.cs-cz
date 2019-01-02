@@ -1,8 +1,6 @@
 ---
-title: 'Upravit a pokračovat není podporována pro F # | Microsoft Docs'
-ms.custom: ''
+title: Upravit a pokračovat není podporována pro F# | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b945f92caa531e4de020f6cd07555b055aef287
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 856940231e65932b208c83bf4ff1231395b04382
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838070"
 ---
 # <a name="edit-and-continue-not-supported-for-f"></a>Operace Upravit a pokračovat není podporována pro F#. #
-Upravit a pokračovat není podporován při ladění kódu F #. Úpravy F # – kód je možné během relace ladění, ale je nutno. Změny kódu nejsou použité během ladicí relace. Veškeré úpravy provedené F # – kód při ladění proto způsobí zdrojový kód, který neodpovídá kód laděné.
+Upravit a pokračovat není podporovaná při ladění F# kódu. Úpravy F# kódu je možné během relace ladění, ale mělo by se vyhnout. Během relace ladění se nepoužijí změny kódu. Proto se veškeré úpravy provedené F# kódu během ladění způsobí zdrojový kód, který neodpovídá kódu, který se právě ladí.

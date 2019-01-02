@@ -10,32 +10,31 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b8e92a4bbd149d96b6db710daf32dc72024d57da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4f38d82ab220b348ad9e74d3c257be1d4e3b9c87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887088"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Použití řídicích sekvencí v textových šablonách
-Můžete použít řídicích sekvencí v textových šablonách mají vygenerovat značky text šablony a (v C# pouze kód) řídicí řídicí znaky a znaky uvozovek.
+Můžete použít řídicích sekvencí v textových šablonách mají vygenerovat značky textové šablony a (v jazyce C# jenom kód) řídicí řídicí znaky a uvozovky.
 
- Pokud chcete vytisknout otevření a zavření značky pro blok kódu standardního výstupního souboru, vyhnuli značek následujícím způsobem:
+ Otevření a zavření značky pro blok kódu standardní do výstupního souboru vytisknete řídicí značky následujícím způsobem:
 
 ```
 \<# ... \#>
 ```
 
- Můžete provést stejný s jiné text šablony směrnice a kód bloku značky.
+ Můžete provést stejným způsobem pracovat s další textové šablony směrnice a kód bloku značky.
 
- Obsahuje-li bloku řetězce používá k uvození textové šablony značky, pak můžete použít následující řídicí sekvence:
+ Pokud obsahuje blok textu řetězce používá k uvození textové šablony značky, může použít řídicí sekvence, které následující:
 
--   Pokud je před značku text šablony sudý počet řídicí (\\) znaků šablony analyzátor bude zahrnovat polovinu řídicí znaky a obsahovat pořadí jako značku text šablony. Například, pokud existují čtyři řídicí znaky v textové šablony, budou existovat dvě "\\" znaků v generovaném souboru.
+-   Pokud je sudý počet řídicí předchází značku textové šablony (\\) znaky šablony analyzátor bude obsahovat polovinu řídicí znaky a obsahovat sekvenci jako značku textové šablony. Například, pokud existují čtyři řídicích znaků v textové šabloně, bude existovat dva "\\" znaků v generovaném souboru.
 
--   Pokud text šablony značky předchází lichý počet řídicí (\\) znaky, šablony analyzátor bude obsahovat polovinu "\\" znaků plus samotné značky (\<# nebo #>). Značky se nepovažuje za značku text šablony.
+-   Pokud je značka šablony textu předchází lichý počet řídicí (\\) znaků, analyzátor šablona bude obsahovat polovinu "\\" znaků plus vlastní značku (\<# nebo #>). Značka se nepovažuje za značkou template text.
 
--   Pokud řídicí (\\) znak zobrazí kdekoliv jinde v libovolném pořadí, než kde je řídicí sekvence řídicí znak nebo uvozovky (v jazyku C# pouze), znak, který bude výstup přímo.
+-   Pokud se řídicí sekvence (\\) kdekoli jinde v libovolném pořadí, než ve kterém se řídicí sekvence řídicího znaku nebo uvozovky (v jazyce C# pouze) se objeví znak, znak, který bude výstup přímo.
 
 ## <a name="see-also"></a>Viz také
 

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883143"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +58,7 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
 |![](../designers/media/b1-5.png "B1_5")|**Asset nástroje** přístup **prostředky** panelu a chcete-li zobrazit naposledy použít prostředek z knihovny.|![Popisek E](../designers/media/b5-label-e.png "b5_label_E")|**Textových ovládacích prvků**|
 |||![Callout F](../designers/media/b5-label-f.png "b5_label_F")|**Běžné ovládací prvky**|
 
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [The nástrojů](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panelu nástrojů](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ##  <a name="Assets"></a> Přehled panelu aktiva
  Můžete najít všechny ovládací prvky v **prostředky** panelu, podobně jako **nástrojů** v sadě Visual Studio. Kromě ovládací prvky, najdete všechno, co můžete přidat do vaší návrhovou plochu v **prostředky** panelu, včetně styly, média, chování a efekty.
@@ -126,7 +125,7 @@ Blend for Visual Studio vám pomůže navrhnout založené na XAML Windows deskt
 |                     ![Popisek 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Jezdcem přechodu** nabídnuta jen v případě, že je vybraná štětce přechodu.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Zobrazit upřesňující vlastnosti** zobrazení kategorií vlastností, které jsou méně často používány.                                                                      |
 
- **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panel vlastnosti](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Podívejte se na krátké video:** ![Konfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panel vlastnosti](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Viz také
  [Vložení ovládacích prvků a změna jejich chování](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animace objektů](../designers/animate-objects-in-xaml-designer.md) [kreslení tvarů a cest](../designers/draw-shapes-and-paths.md) [návrh XAML v sadě Visual Studio a nástroje Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

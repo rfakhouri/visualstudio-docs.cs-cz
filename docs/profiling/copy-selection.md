@@ -1,8 +1,6 @@
 ---
-title: Kopírovat výběr | Microsoft Docs
-ms.custom: ''
+title: Kopírovat výběr | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.selection.copy
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f0f9e7f7a2d4a11c6f3394cb83be95306a2849c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876637"
 ---
 # <a name="copy-selection"></a>Kopírovat výběr
-Chcete-li zkopírovat celý zásobník volání na kartě sestavy, klikněte na tlačítko **kopie**. Potom můžete v jakékoli aplikaci, která podporuje tato akce Vložit zásobníku volání.  
+Pokud chcete zkopírovat celý zásobník volání na kartě sestavy, klikněte na tlačítko **kopírování**. Potom můžete vložit zásobník volání v jakékoli aplikaci, která podporuje tuto akci.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929695"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Řízení barvy, stylu čáry a ostatních vlastností obrazce
-Některé vlastnosti tvaru, jako je barva mohou být 'zpřístupněny' – to znamená, propojit vlastnost domain tvaru. Ostatní uživatelé mají pro řízení přímo.
+Některé vlastnosti obrazce, jako je barva by bylo možné "vystavit" – to znamená, propojený s doménovou vlastnost obrazce. Ostatní uživatelé mají přímo se dá řídit.
 
 ## <a name="exposing-a-property"></a>Vystavení vlastností
- Některé vlastnosti tvaru například barva lze propojit s hodnotou vlastnosti domény.
+ Některé vlastnosti obrazce, jako je barva může být propojený hodnoty vlastnosti domény.
 
- V definici DSL vyberte tvaru, konektoru nebo diagram třídy. V místní nabídce, zvolte **přidat zveřejněné**a potom vyberte vlastnost má, jako je například barva výplně.
+ V definici DSL vyberte obrazec, konektoru nebo diagramu třídy. V kontextové nabídce, zvolte **přidat vystavený**a klikněte na tlačítko Vlastnosti, třeba Barva výplně.
 
- Tvar, který má nyní vlastnosti domény, která můžete nastavit v programovém kódu nebo jako uživatel.
+ Doménová vlastnost, kterou můžete nastavit v kódu programu nebo jako uživatel nyní má obrazec.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Dynamicky aktualizuje zveřejněné vlastnost
- Obvykle má být vlastnost zveřejněné závisí na jiné vlastnosti. Můžete například obrazce na červenou barvu vždy, když je vlastnost konkrétní domény menší než nula. Chcete-li tuto závislost, vytvořte [pravidlo](../modeling/rules-propagate-changes-within-the-model.md). Příklad:
+## <a name="dynamically-updating-an-exposed-property"></a>Dynamické aktualizace vystavené vlastnosti
+ Obvykle nechcete se ujistit vlastnost vystavené závisí na jiné vlastnosti. Můžete například obrazec, který chcete červenou pokaždé, když se konkrétní doménová vlastnost, která je menší než nula. Pokud chcete nastavit tuto závislost, vytvořit [pravidlo](../modeling/rules-propagate-changes-within-the-model.md). Příklad:
 
 ```csharp
 using System;

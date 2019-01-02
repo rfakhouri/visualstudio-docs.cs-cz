@@ -2,7 +2,6 @@
 title: Listovat vlákna – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listthreads
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa44556be7c20c52d44ec83da1ba9d4972b4542d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1a914ffcd242626b0f519ab541c4c381a4597da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846136"
 ---
 # <a name="list-threads-command"></a>Listovat vlákna – příkaz
-Zobrazí seznam vláken v aktuálním programem.
+Zobrazí seznam vláken v aktuálním programu.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,10 +34,10 @@ Debug.ListThreads [index]
 ## <a name="arguments"></a>Arguments
  `index`
 
- Volitelné. Vybere vlákna podle jeho indexu jako aktuální vlákno.
+ Volitelné. Vybere vlákno podle jejich indexu bude aktuální vlákno.
 
 ## <a name="remarks"></a>Poznámky
- -Li zadána, `index` argument označí uvedené vlákno jako aktuální vlákno. Znak hvězdičky (*) se zobrazí v seznamu vedle aktuální vlákno.
+ -Li zadána, `index` argument označí vláknu označený jako aktuální vlákno. Hvězdička (*) se zobrazí v seznamu vedle aktuální vlákno.
 
 ## <a name="example"></a>Příklad
 
@@ -52,5 +51,5 @@ Debug.ListThreads [index]
 - [Příkaz Zobrazit zpětný překlad](../../ide/reference/list-disassembly-command.md)
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

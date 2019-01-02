@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript'
+title: 'Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c748e8b380da906ca9fb8fc8588efa6ffcc44980
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850835"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript
 
 Kanál s obsahem obrazu může generovat textury, které jsou kompatibilní s Direct2D interní konvencí vykreslování. Textury tohoto druhu jsou vhodné pro použití v aplikacích, které používají rozhraní Direct2D a v aplikacích pro UPW vytvořené pomocí jazyka JavaScript.
 
@@ -37,7 +36,7 @@ Tento dokument vysvětluje tyto činnosti:
 
 Textury, které se používají v souvislosti s Direct2D musí splňovat tyto vnitřní konvence Direct2D vykreslování:
 
--   Direct2D implementuje průhlednost a průsvitnost pomocí předem vynásobené hodnoty alfa. Textury použité v rámci Direct2D musí obsahovat předem vynásobenou hodnotu alpha, i když textury nepoužívají průhlednost nebo průsvitnost. Další informace o přednásobeném kanálu alfa naleznete v tématu [postupy: Export textury s Přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+-   Direct2D implementuje průhlednost a průsvitnost pomocí předem vynásobené hodnoty alfa. Textury použité v rámci Direct2D musí obsahovat předem vynásobenou hodnotu alpha, i když textury nepoužívají průhlednost nebo průsvitnost. Další informace o přednásobeném kanálu alfa naleznete v tématu [jak: Export textury s Přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 -   Textura musí být zadána *.dds* formátu pomocí jedné z těchto formátů komprese bloku:
 
@@ -51,7 +50,7 @@ Textury, které se používají v souvislosti s Direct2D musí splňovat tyto vn
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Vytvoření textury, který je kompatibilní s konvencemi vykreslování Direct2D
 
-1. Začněte základní texturou. Načtěte stávající obrazový nebo vytvořte novou, jak je popsáno v [postupy: vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Pro podporu blokové komprese ve *.dds* formátování, určete texturu, která má šířku a výšku, které jsou násobky čtyř, velikost, například 100 x 100, 128 x 128 nebo 256 x 192. Protože není podporován mipmapping, textura nemá být čtvercová a nemá být mocninou čísla 2 velikosti.
+1. Začněte základní texturou. Načtěte stávající obrazový nebo vytvořte novou, jak je popsáno v [jak: Vytvoření základní textury](../designers/how-to-create-a-basic-texture.md). Pro podporu blokové komprese ve *.dds* formátování, určete texturu, která má šířku a výšku, které jsou násobky čtyř, velikost, například 100 x 100, 128 x 128 nebo 256 x 192. Protože není podporován mipmapping, textura nemá být čtvercová a nemá být mocninou čísla 2 velikosti.
 
 2. Nakonfigurujte soubor textury tak, aby byl zpracován kanálem obsahu obrázku. V **Průzkumníka řešení**, otevřete místní nabídku pro soubor textury, který jste právě vytvořili a klikněte na tlačítko **vlastnosti**. Na **vlastnosti konfigurace** > **Obecné** nastavte **typ položky** vlastnost **kanál obsahu obrazu**. Ujistěte se, že **obsahu** je nastavena na **Ano** a **vyloučit ze sestavení** je nastavena na **ne**a klikněte na tlačítko  **Použít** tlačítko. **Kanál obsahu obrazu** se zobrazí stránka pro konfiguraci vlastností.
 

@@ -2,7 +2,6 @@
 title: Organizace šablon
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
@@ -13,14 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 239fd7c4042c52576aa7a7688bf890d53d2b6a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066285"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843408"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: hledání a organizace šablon projektů a položek
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Postupy: Hledání a organizace šablon projektů a položek
 
 Soubory šablony musí být umístěn do umístění, které Visual Studio rozpozná pro šablony se zobrazí v **nový projekt** a **přidat novou položku** dialogových oknech. Můžete také vytvořit vlastní podkategorie v umístění uživatelské šablony a kategorie jsou uvedeny v **nový projekt** a **přidat novou položku** dialogových oknech.
 
@@ -125,5 +124,5 @@ Můžete povolit v podkategoriích, který se má zobrazit v jejich nadřazené 
 - [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio odkaz na schéma šablon (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (šablony sady Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)
+- [Postupy: Vytváření šablon projektu](../ide/how-to-create-project-templates.md)
 - [Postupy: Tvorba šablon položek](../ide/how-to-create-item-templates.md)

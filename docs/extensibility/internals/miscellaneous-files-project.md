@@ -1,9 +1,6 @@
 ---
-title: Ostatní soubory projektu | Microsoft Docs
-ms.custom: ''
+title: Různé soubory projektu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - files, adding existing files to solutions
@@ -16,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a637b37590a0aaf321a4e04896b2cbe12c29691f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 281213751cb25a05e8298ee35ba43453d48ed250
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853106"
 ---
-# <a name="miscellaneous-files-project"></a>Ostatní soubory projektu
-Když uživatel otevře položky projektu, rozhraní IDE přiřadí různé soubory projektu všechny položky, které nejsou členy žádné projekty v řešení.  
+# <a name="miscellaneous-files-project"></a>Projekt Ostatní soubory
+Když uživatel otevře položky projektu, rozhraní IDE přiřadí různé soubory projektu všechny položky, které nejsou členy všechny projekty v řešení.  
   
- Projekty přehrát významnou roli při určování, které editor se používá, když uživatel otevře položka projektu. Chcete-li otevřít určité soubory pomocí editoru specifické pro projekt nebo standardního editoru lze navrhnout projektu.  
+ Projekty přehrát významnou roli při určování, které editor se používá, když uživatel otevře položku projektu. Chcete-li otevřít určité soubory pomocí editoru specifické pro projekt nebo standardní editor nelze navrhovat projektu.  
   
- Editor specifické pro projekt se obvykle vyžaduje, aby uživatel mít speciální znalosti nebo použít speciální rozhraní z projektu. Další informace najdete v tématu [postup: Otevřete projekt konkrétní editory](../../extensibility/how-to-open-project-specific-editors.md).  
+ Editor specifické pro projekt obvykle vyžaduje, aby uživatel zvláštní znalosti, nebo použít speciální rozhraní z projektu. Další informace najdete v tématu [jak: Otevření editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md).  
   
- Standardní editor můžete otevřít libovolný soubor s konkrétní příponou ve všech projektech. Uživatel může přizpůsobit některé standardní editory, jako [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] textový editor, pro projekty i nadále však zachovat jejich veřejné znak. Standardní editory se vytváří pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metoda.  
+ Standardní editor můžete otevřít libovolný soubor s konkrétní příponou v každém projektu. Uživatel může upravit některé standardní editory, jako [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] textový editor pro projekty, ale stále zachovat jejich veřejné znak. Standardní editory jsou vytvářeny instalační sadou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metody.  
   
- Pokud žádný projekt v řešení odpoví, aby ji mohli otevřít položka projektu, rozhraní IDE poskytuje speciální projekt s názvem různé soubory projektu, který otevře všechny soubory.  
+ Pokud žádný projekt v řešení odpoví, že jej otevřete položku projektu, rozhraní IDE poskytuje zvláštní projekt s názvem, který otevře všechny soubory projektu různých souborů.  
   
- Tento projekt speciální poskytuje pro otevření souboru mimo kontext projektu. Během zpracování <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> metoda, ostatní soubory projektu vždy odpovídá s velmi nízkou prioritu. Ostatní soubory projektu proto vždy jsou pro všechny s vyšší prioritou projekt, který můžete otevřít soubory.  
+ Tento projekt poskytuje pro otevření souboru mimo kontext projektu. Během zpracování <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> metody ostatních souborech projektu vždy odpovídá s velmi nízkou prioritou. Různé soubory projektu proto vždy výnosy do jakéhokoli projektu s vyšší prioritou, který můžete otevřít soubory.  
   
- Ostatní soubory projektu nevyžaduje žádný uživatel nemusel vytvářet její **nový projekt** dialogové okno. Navíc různé soubory projektu trvale nespravuje seznam členů projektu. Volitelná funkce používá k zaznamenání seznam naposledy použitých souborů pro každého uživatele.  
+ Různé soubory projektu nevyžaduje, aby uživatel nemusel vytvářet pomocí **nový projekt** dialogové okno. Navíc různé soubory projektu trvale nespravuje seznam členů projektu. Volitelná funkce používá k zaznamenání seznamu naposledy použitých souborů pro každého uživatele.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [Postupy: otevření projektu konkrétní editory](../../extensibility/how-to-open-project-specific-editors.md)   
- [Postupy: otevření standardní editory](../../extensibility/how-to-open-standard-editors.md)   
- [Přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Postupy: Otevřít editoru pro konkrétní projekt](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Postupy: Otevřít standardních editorů](../../extensibility/how-to-open-standard-editors.md)   
+ [Přidání projektu a šablony položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)

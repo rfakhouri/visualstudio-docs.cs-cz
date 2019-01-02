@@ -1,8 +1,6 @@
 ---
 title: '&lt;sestavení&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878349"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;sestavení&gt; – Element (aplikace ClickOnce)
 Element nejvyšší úrovně pro manifest aplikace.  
@@ -52,7 +50,7 @@ Element nejvyšší úrovně pro manifest aplikace.
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`manifestVersion`|Požadováno. `manifestVersion` Atribut musí být nastaven na `1.0`.|  
+|`manifestVersion`|Povinný parametr. `manifestVersion` Atribut musí být nastaven na `1.0`.|  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje `assembly` elementu v manifestu aplikace pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Tento příklad kódu je součástí většího příkladu určeného v [ClickOnce – manifest aplikace](../deployment/clickonce-application-manifest.md).  

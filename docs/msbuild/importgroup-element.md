@@ -1,8 +1,6 @@
 ---
 title: Importgroup – Element | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c40fd9e5f21940be77af7dfbddf496594502641e
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 21dcaa5e4192c2ee4dd223da5cad560ded220275
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928987"
 ---
 # <a name="importgroup-element"></a>Importgroup – element
 Obsahuje kolekci `Import` prvky, které jsou seskupeny podle nepovinnou podmínku. Další informace najdete v tématu [Import – element (MSBuild)](../msbuild/import-element-msbuild.md).  

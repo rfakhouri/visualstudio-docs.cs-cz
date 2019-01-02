@@ -1,9 +1,6 @@
 ---
 title: Práce s dokumenty
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,36 +14,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f249bea3370d0d8f3a5b46bc94b1ed5c09124635
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 14ad92911d8a9d6c76b5dd2cff688c4b2a52e1d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854890"
 ---
 # <a name="work-with-documents"></a>Práce s dokumenty
-  Témata v této části poskytují podrobné postupy a příklady kódu pro použití v objektovém modelu v aplikaci Microsoft Office Word k práci s dokumenty v projektech Office.  
+  Témata v této části poskytují podrobné postupy a příklady kódu pro použití objektového modelu aplikace Microsoft Office Word pro práci s dokumenty v projektech pro systém Office.  
   
- V některých případech se liší od způsobů, jak je provést v přizpůsobeních na úrovni dokumentu způsobů, jak provádět tyto úlohy v doplňcích VSTO.  
+ V některých případech se liší od způsoby, jak je provést v přizpůsobeních na úrovni dokumentu způsoby, jak provádět tyto úlohy v doplňcích VSTO.  
   
 |Úloha|Postup|  
 |----------|---------------|  
-|Vytvořte dokument na základě normální šablony nebo jinou šablonu.|[Postupy: vytváření nových dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-create-new-documents.md)|  
-|Zadaný dokument otevřete pro čtení a zápis, nebo jen pro čtení.|[Postupy: otevírání stávajících dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-open-existing-documents.md)|  
-|Zavřete aktivní dokument nebo zadaný dokument.|[Postupy: zavírání dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-documents.md)|  
-|Uložení dokumentu se stejným názvem nebo nový název.|[Postupy: ukládání dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-save-documents.md)|  
-|Tisk celý dokument nebo pouze aktuální stránku.|[Postupy: tisk dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-documents.md)|  
-|Zobrazení náhledu tisku pro dokument.|[Postupy: zobrazování dokumentů v náhledu prostřednictvím kódu programu](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|  
-|Zobrazit dialogové okno předdefinované a shromažďovat vstup uživatele.|[Postupy: používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|  
-|Pomocí funkce v dialogovém okně předdefinované bez zobrazení ho.|[Postupy: aplikace Word prostřednictvím kódu programu použití dialogových oknech ve skrytém režimu](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|  
-|Přidání obrázku nebo WordArt do dokumentu.|[Postupy: programové přidání obrázků a objektů WordArt do dokumentů](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|  
-|Zabránit uživatelům úpravy dokumentu nebo jeho část dokumentu.|[Postupy: zamykání dokumentů a částí dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|  
+|Vytvořte dokument založený na normální šablony nebo jiné šablony.|[Postupy: Vytváření nových dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-create-new-documents.md)|  
+|Zadaný dokument otevřete, čtení/zápis nebo jen pro čtení.|[Postupy: Otevírání stávajících dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-open-existing-documents.md)|  
+|Zavřete aktivní dokument nebo zadaný dokument.|[Postupy: Zavírání dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-documents.md)|  
+|Uložte dokument se stejným názvem nebo nový název.|[Postupy: Ukládání dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-save-documents.md)|  
+|Vytisknete celý dokument nebo pouze aktuální stránku.|[Postupy: Tisk dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-documents.md)|  
+|Zobrazení náhledu dokumentu.|[Postupy: Zobrazování dokumentů v náhledu prostřednictvím kódu programu](../vsto/how-to-programmatically-display-documents-in-print-preview.md)|  
+|Zobrazit dialogové okno integrované a shromažďování vstupu uživatele.|[Postupy: Používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)|  
+|Pomocí funkce v dialogovém okně integrované bez zobrazení.|[Postupy: Programově pomocí dialogových oken aplikace Word ve skrytém režimu](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)|  
+|Přidávání obrázku nebo WordArt do dokumentů.|[Postupy: Programové přidání obrázků a objektů WordArt do dokumentů](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md)|  
+|Zabránit uživatelům v úpravách dokumentu nebo část dokumentu.|[Postupy: Zamykání dokumentů a částí dokumentů](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)|  
 |Kontrola pravopisu.|[Postupy: Kontrola pravopisu v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-check-spelling-in-documents.md)|  
-|Přidání záhlaví nebo zápatí stránky do dokumentu.|[Postupy: programové přidání záhlaví a zápatí do dokumentů](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|  
-|Odstraňování všech komentářů z dokumentu.|[Postupy: programové odstraňování všech komentářů z dokumentů](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|  
+|Přidávání záhlaví nebo zápatí do dokumentů.|[Postupy: Programové přidání záhlaví a zápatí do dokumentů](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|  
+|Odstraňování všech komentářů z dokumentu.|[Postupy: Programově odstraňování všech komentářů z dokumentů](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
- [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
-  
-  
+ [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  

@@ -1,9 +1,6 @@
 ---
-title: IDebugFunctionPosition2 | Microsoft Docs
-ms.custom: ''
+title: IDebugFunctionPosition2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionPosition2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73097a7133de095d72a6ae22b9aff701b52ef191
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61fd298b1bbbf28f7a7fe514a01dc5707c35e04b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840931"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
-Toto rozhraní představuje abstraktní pozici funkci ve zdrojovém dokumentu.  
+Toto rozhraní představuje abstraktní pozice funkce ve zdrojovém dokumentu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,28 +29,28 @@ IDebugFunctionPosition2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní představující pozici funkce ve zdrojovém dokumentu.  
+ Ladicí stroj (DE) implementuje toto rozhraní k reprezentaci pozice funkce ve zdrojovém dokumentu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je zadán jako součást [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) sjednocení (konkrétně [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktura), je zase součástí [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktura použité při vytváření čekající zarážky.  
+ Toto rozhraní je zadaný jako součást [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) sjednocení (konkrétně [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) struktury), který je zase součástí [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktura použité při vytváření čekající zarážkou.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugFunctionPosition2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugFunctionPosition2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|Získá název funkce, která je vzhledem k této pozice.|  
-|[Getoffset –](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Získá posun od začátku funkce.|  
+|[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|Získá posun od začátku této funkce.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pozice reprezentována toto rozhraní je založený na textu, konkrétně [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury.  
+ Pozice reprezentovaný tímto rozhraním je založený na textu, konkrétně [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -2,7 +2,6 @@
 title: Cesta k symbolu – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.symbolpath
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a27d795e5491081dca98a395c788cf8407e43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 56e274c103d9bc8d4f80606476c8c6fd4793a8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903939"
 ---
 # <a name="symbol-path-command"></a>Cesta k symbolu – příkaz
-Nastaví seznam adresářů v ladicím programu pro vyhledávání symbolů.
+Nastaví seznam adresářů pro ladicí program pro hledání symbolů.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,20 +34,20 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Arguments
  `pathname`
 
- Volitelné. Středníkem oddělené seznamu cest v ladicím programu pro vyhledávání symbolů.
+ Volitelné. Středníkem oddělený seznam cest ladicího programu pro hledání symbolů.
 
 ## <a name="remarks"></a>Poznámky
- Pokud žádné `pathname` je zadán příkaz uvádí aktuální symbol cesty.
+ Pokud ne `pathname` není zadán, příkaz vypíše aktuální cesty symbolů.
 
 ## <a name="example"></a>Příklad
- Tento příklad přidá do seznamu adresářů symbol dvě cesty.
+ V tomto příkladu přidá dvě cesty do seznamu adresářů symbolů.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
 ## <a name="example"></a>Příklad
- Tento příklad zobrazuje středníky oddělený seznam aktuální symbol cesty.
+ Tento příklad zobrazuje seznam oddělený středníkem aktuálních cest symbolu.
 
 ```
 Debug.SymbolPath

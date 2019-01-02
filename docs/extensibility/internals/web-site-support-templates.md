@@ -1,9 +1,6 @@
 ---
-title: Webový server podporují šablony | Microsoft Docs
-ms.custom: ''
+title: Šablony podpory webu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
@@ -13,56 +10,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8e0d845157b475e4a5527443f55286828023cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875229"
 ---
-# <a name="web-site-support-templates"></a>Podpora šablony webových serverů
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Šablony projektů a položek webu poskytují opakovaně použitelný a přizpůsobitelné webové stránky projektů a položek zástupnými procedurami, které urychlit proces vývoje odebráním potřebu vytvářet nové webové projekty a položky od začátku. Další informace o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] šablony, viz [vytváření projektů a šablon položek](../../ide/creating-project-and-item-templates.md).
+# <a name="web-site-support-templates"></a>Šablony podpory webu
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Šablony projektů a položek webu poskytují opakovaně použitelných a přizpůsobitelné webové stránky projektů a položek zástupné procedury, které zrychlení procesu vývoje tak, že odeberete potřebu vytvářet nové webových projektů a položek od začátku. Další informace o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] šablony, najdete v článku [vytváření projektů a šablon položek](../../ide/creating-project-and-item-templates.md).
 
-## <a name="project-template-folder"></a>Složka šablon projektu
- Šablony webových projektů jsou obvykle nainstalovány na [*Visual Studio Instalační cesta*] \Common7\IDE\ProjectTemplates\Web\\, každou v podsložce s názvem po webu programovací jazyk.
+## <a name="project-template-folder"></a>Složka šablony projektu
+ Šablony webových projektů se obvykle instalují na [*Visual Studio Instalační cesta*] \Common7\IDE\ProjectTemplates\Web\\, každého do podsložky, která má stejný název webu programovací jazyk.
 
 ## <a name="project-file"></a>Soubor projektu
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) vyžaduje příponu souboru projektu jako způsob, jak namapovat šablonu typu správný projekt. Protože webové projekty nemají soubor projektu, .webproj fiktivní projektu soubor rozšíření je zaregistrován k mapování šablony na typ projektu.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) vyžaduje příponu souboru projektu jako způsob, jak namapovat na správný projekt typu šablony. Protože webové projekty není nutné soubor projektu, .webproj fiktivní projektu soubor rozšíření je zaregistrovaný k mapování šablonu typu projektu.
 
- Volitelně lze přidat řetězec názvu jazyk v šabloně, aby systém webového projektu nastavit výchozí jazyk v **přidat novou položku** dialogové okno pro položky založený na šabloně. První řádek souboru musí být řetězec. Musí se shodovat název v rámci AddItemLanguageName zaregistrována v registraci modulu IntelliSense a název je registrovaná pod Subtype(VsTemplate) projektu. Další informace najdete v tématu [webu podpory atributy](../../extensibility/internals/web-site-support-attributes.md).
+ Řetězec názvu jazykové Volitelně lze přidat do šablony, aby systém webového projektu, chcete-li nastavit výchozí jazyk **přidat novou položku** dialogové okno pro položky na základě šablony. Řetězec musí obsahovat první řádek souboru. Musí odpovídat názvu zaregistrován AddItemLanguageName registraci modulu technologie IntelliSense v i název zaregistrován Subtype(VsTemplate) projektu. Další informace najdete v tématu [atributy podpory webu](../../extensibility/internals/web-site-support-attributes.md).
 
- Pokud řetězec není dostupná, systému webového projektu se pokusí určit výchozí jazyk podle jazyková rozšíření atribut a soubor stránek v šabloně projektů přidal k webovému projektu.
+ Pokud řetězec není k dispozici, systém webového projektu se pokusí určit výchozí jazyk podle jazyková rozšíření atribut a soubor stránek do webového projektu pomocí šablony projektu.
 
 ## <a name="project-templates"></a>Šablony projektů
- Šablony projektů webu se používají k vytváření nových webů v reakci na **nový web** příkaz na **souboru** nabídky. Aktuálně jsou podporovány tři typy projektů webové stránky:
+ Šablony projektů webu se používají k vytváření nových webů v reakci na **nový web** příkaz **souboru** nabídky. Aktuálně jsou podporovány tři typy projektů webu:
 
--   Prázdné projekty
+-   Prázdný web webové projekty
 
 -   Webové projekty
 
--   Webové projekty služby
+-   Projekty webových služeb
 
-### <a name="empty-web-site-projects"></a>Prázdné projekty
- Tyto soubory vytvořit nový prázdný web v reakci **prázdný web** příkaz, který je k dispozici po výběru **soubor** > **nový web**:
+### <a name="empty-web-site-projects"></a>Prázdný web webové projekty
+ Tyto soubory vytvořit nový prázdný web v reakci **prázdný web** příkaz, který je k dispozici po výběru **souboru** > **nový web**:
 
 -   EmptyWeb.vstemplate
 
-     Soubor šablony, který provede vytvoření nové prázdné webové stránky.
+     Soubor šablony, který provede vytvoření nového prázdného webu.
 
 -   EmptyWeb.webproj
 
-     Tento soubor je artefakt systému šablona projektu. Odkaz na soubor projektu v souboru EmptyWeb.vstemplate splňuje.
+     Tento soubor je systém šablony projektu. Odkaz na soubor projektu v souboru EmptyWeb.vstemplate splňuje.
 
 ### <a name="web-site-projects"></a>Webové projekty
- Tyto soubory vytvořit nový web v reakci **webové stránky ASP.NET** příkaz, který je k dispozici po výběru **soubor** > **nový web**:
+ Tyto soubory vytvořit novou webovou stránku v reakci na **Web ASP.NET s** příkaz, který je k dispozici po výběru **souboru** > **nový web**:
 
 -   Default.aspx
 
-     Výchozí domovskou stránku pro nový web. Atribut Language Určuje jazyk codebehind a atribut CodeFile určuje závislý soubor, který obsahuje kód codebehind přidružené k této stránce.
+     Výchozí domovskou stránku pro nový web. Atribut Language Určuje jazyk codebehind a určuje Atribut CodeFile závislého souboru, který obsahuje kód codebehind přidružený k této stránce.
 
 -   Default.aspx. *rozšíření*
 
-     Závislý soubor, který obsahuje kód codebehind pro výchozí domovskou stránku. Určuje jazyk codebehind *rozšíření* tohoto souboru.
+     Závislý soubor, který obsahuje kód codebehind výchozí domovskou stránku. Určuje jazyk codebehind *rozšíření* tohoto souboru.
 
 -   web.config
 
@@ -70,18 +67,18 @@ ms.locfileid: "31147125"
 
 -   WebApplication.vstemplate
 
-     Soubor šablony, která určuje obsah webu řešení a vynutí vytvoření souboru složce App_Data.
+     Soubor šablony, který zjistí obsah webu řešení a vynutí vytvoření souboru složce App_Data.
 
 -   WebApplication.webproj
 
-     Tento soubor je artefakt systému šablona projektu. Odkaz na soubor projektu v souboru WebApplication.vstemplate splňuje.
+     Tento soubor je systém šablony projektu. Odkaz na soubor projektu v souboru WebApplication.vstemplate splňuje.
 
-### <a name="web-service-projects"></a>Webové projekty služby
- Tyto soubory vytvořit nový web v reakci **webovou službu ASP.NET** příkaz, který je k dispozici po výběru **soubor** > **nový web**:
+### <a name="web-service-projects"></a>Projekty webových služeb
+ Tyto soubory vytvořit novou webovou stránku v reakci na **webová služba ASP.NET** příkaz, který je k dispozici po výběru **souboru** > **nový web**:
 
 -   Service.asmx
 
-     Na stránce HTML pro novou webovou službu. Atribut Language Určuje jazyk codebehind a atribut CodeBehind určuje závislý soubor, který obsahuje kód codebehind přidruženého k této službě.
+     Na stránce HTML pro nové webové služby. Atribut Language Určuje jazyk codebehind a určuje atribut CodeBehind závislého souboru, který obsahuje codebehind kód spojený s touto službou.
 
 -   Služba. *Rozšíření*
 
@@ -93,17 +90,17 @@ ms.locfileid: "31147125"
 
 -   WebService.vstemplate
 
-     Soubor šablony, která určuje obsah webu řešení a vynutí vytvoření souboru složky App_Data a App_Code. Služba. *rozšíření* soubor zkopírován do složky App_Code.
+     Soubor šablony, který zjistí obsah webu řešení a vynutí vytvoření složky App_Data a App_Code. Služba. *rozšíření* soubor je zkopírován do složky App_Code.
 
 -   WebService.webproj
 
-     Tento soubor je artefakt systému šablona projektu. Odkaz na soubor projektu v souboru WebService.vstemplate splňuje.
+     Tento soubor je systém šablony projektu. Odkaz na soubor projektu v souboru WebService.vstemplate splňuje.
 
-## <a name="project-item-template-folder"></a>Složky šablony položek projektu
- Šablony položek projektů webové jsou obvykle nainstalovány v [*Visual Studio Instalační cesta*] \Common7\IDE\ItemTemplates\Web\\, každou v podsložce s názvem po jeho webové programovací jazyk.
+## <a name="project-item-template-folder"></a>Složky šablony položky projektu
+ Webové šablony položky projektu se obvykle instalují do [*Visual Studio Instalační cesta*] \Common7\IDE\ItemTemplates\Web\\, každou v podsložce s názvem po jeho web programovací jazyk.
 
 ## <a name="project-item-templates"></a>Šablony položek projektu
- Šablony položek projektu webu slouží k přidání nové webové stránky na web v reakci **přidat existující položku** příkaz. Tyto typy webových stránek se aktuálně podporují:
+ Šablony položek projektu webové stránky se používají k přidání nové webové stránky pro webovou stránku v reakci **přidat existující položku** příkazu. Aktuálně jsou podporovány tyto druhy webové stránky:
 
 -   Nová třída
 
@@ -111,44 +108,44 @@ ms.locfileid: "31147125"
 
 -   Nový webový formulář
 
--   Nové stránky předlohy
+-   Nová stránka předlohy
 
 ### <a name="new-class"></a>Nová třída
- Tato šablona vytvoří nové zdrojového souboru, který definuje třídu prázdný v reakci **přidejte novou třídu** příkaz.
+ Tato šablona vytvoří nového zdrojového souboru, který definuje prázdnou třídu v reakci **přidejte novou třídu** příkazu.
 
 -   Třída. *Rozšíření*
 
-     Zdrojový soubor, který implementuje třídu prázdný. Určuje jazyk codebehind *rozšíření* tohoto souboru.
+     Zdrojový soubor, který implementuje prázdnou třídu. Určuje jazyk codebehind *rozšíření* tohoto souboru.
 
 -   Class.vstemplate
 
-     Soubor šablony, které vytváří zdrojový soubor a určuje jeho obsah.
+     Soubor šablony, která vytvoří zdrojový soubor a určuje jeho obsah.
 
 ### <a name="new-html-page"></a>Nová stránka HTML
- Tato šablona umožňuje vytvořit novou webovou stránku v reakci **přidat novou stránku HTML** příkaz.
+ Tato šablona vytvoří novou webovou stránku v reakci **přidejte novou stránku HTML** příkazu.
 
 -   HTMLPage.htm
 
-     Počáteční obsah webové stránky. Tato webová stránka má obvykle žádné přidružené codebehind závislý soubor. Vytvoření inteligentního stránky se souborem přidružené codebehind, použijte šablonu Webový formulář.
+     Výchozí obsah webové stránky. Tato webová stránka obvykle nemá žádný přidružený codebehind závislý soubor. Vytvořit stránku inteligentní souborem přidružené codebehind, použijte šablonu Webový formulář.
 
 -   HTMLPage.vstemplate
 
-     Soubor šablony, který vytvoří webovou stránku a určuje jeho obsah.
+     Soubor šablony, která vytvoří webovou stránku a určuje jeho obsah.
 
 ### <a name="new-webform"></a>Nový webový formulář
- Tato šablona vytvoří novou inteligentní webovou stránku v reakci **přidat nový webový formulář** příkaz.
+ Tato šablona vytvoří novou inteligentní webovou stránku v reakci **přidat nový webový formulář** příkazu.
 
- Chcete-li vytvořit závislé codebehind zdrojového souboru, vyberte **umístit kód do samostatného souboru**. Jednu webovou stránku, jinak se vytvoří bloku prázdný skriptování a ne \<% stránky % > direktivy spojit závislý soubor.
+ Chcete-li vytvořit závislé codebehind zdrojový soubor, vyberte **umístěte kód v samostatném souboru**. Jediné webové stránky v opačném případě se vytvoří, který má prázdný skriptovací bloku a ne \<stránky % > direktivy propojení závislého souboru.
 
- Chcete-li vytvořit stránku obsahu pro vybrané stránky předlohy, vyberte **vyberte stránku předlohy**.
+ Chcete-li vytvořit stránku obsahu pro vybranou stránku předlohy, vyberte **vyberte stránku předlohy**.
 
 -   WebForm.aspx
 
-     Počáteční obsah webové stránky. Tato webová stránka nemá žádné přidružené codebehind závislý soubor.
+     Výchozí obsah webové stránky. Tato webová stránka nemá žádný přidružený codebehind závislý soubor.
 
 -   WebForm_cb.aspx
 
-     Počáteční obsah webové stránky. Tato webová stránka obsahuje závislý soubor přidružené codebehind.
+     Výchozí obsah webové stránky. Tato webová stránka má závislý soubor přidružené codebehind.
 
 -   CodeBehind. *Rozšíření*
 
@@ -156,28 +153,28 @@ ms.locfileid: "31147125"
 
 -   ContentPage.aspx
 
-     Počáteční obsah webové stránky jako stránky obsahu. Tato webová stránka nemá žádné přidružené codebehind závislý soubor.
+     Výchozí obsah webové stránky jako stránku obsahu. Tato webová stránka nemá žádný přidružený codebehind závislý soubor.
 
 -   ContentPage_cb.aspx
 
-     Počáteční obsah webové stránky jako stránky obsahu. Tato webová stránka obsahuje závislý soubor přidružené codebehind.
+     Výchozí obsah webové stránky jako stránku obsahu. Tato webová stránka má závislý soubor přidružené codebehind.
 
 -   WebForm.vstemplate
 
-     Soubor šablony, který určuje obsah novou webovou stránku a jeho závislých souborů, pokud existuje.
+     Soubor šablony, která určuje obsah nové webové stránky a jeho závislých souborů, pokud existuje.
 
 ### <a name="new-master-page"></a>Nová stránka předlohy
- Tato šablona vytvoří novou stránku předlohy v reakci **přidat nová stránka předlohy** příkaz.
+ Tato šablona vytvoří novou stránku předlohy v reakci **přidejte novou stránku předlohy** příkazu.
 
- Chcete-li vytvořit závislé codebehind zdrojového souboru, vyberte **umístit kód do samostatného souboru**. Jinak, jedné webové stránky je vytvořen, který obsahuje blok prázdný skriptování a neexistuje žádný \<% stránky % > direktivy spojit závislý soubor.
+ Chcete-li vytvořit závislé codebehind zdrojový soubor, vyberte **umístěte kód v samostatném souboru**. Jediné webové stránky v opačném případě se vytvoří, který má prázdný skriptovací bloku a ne \<stránky % > direktivy propojení závislého souboru.
 
 -   MasterPage.master
 
-     Počáteční obsah stránky předlohy. Tato stránka předlohy nemá žádné přidružené codebehind závislý soubor.
+     Výchozí obsah stránky předlohy. Tato stránka předlohy nemá žádný soubor závislé přidružené codebehind.
 
 -   MasterPage_cb.master
 
-     Počáteční obsah stránky předlohy. Tato stránka předlohy má závislý soubor přidružené codebehind.
+     Výchozí obsah stránky předlohy. Tato hlavní stránka má závislý soubor přidružené codebehind.
 
 -   CodeBehind. *rozšíření*
 
@@ -185,7 +182,7 @@ ms.locfileid: "31147125"
 
 -   MasterPage.vstemplate
 
-     Soubor šablony, který určuje obsah nové stránky předlohy a jeho závislých souborů, pokud existuje.
+     Soubor šablony, která určuje obsah nové stránky předlohy a jeho závislých souborů, pokud existuje.
 
 ## <a name="see-also"></a>Viz také
  [Podpora webu](../../extensibility/internals/web-site-support.md)

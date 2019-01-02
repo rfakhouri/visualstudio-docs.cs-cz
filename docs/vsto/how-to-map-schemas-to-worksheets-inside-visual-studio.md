@@ -3,8 +3,6 @@ title: 'Postupy: Mapování schémat na listy v prostředí Visual Studio'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1be044131ab7248e971e5030f0d35467773587e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849919"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Postupy: Mapování schémat na listy v prostředí Visual Studio
   Můžete namapovat schématu XML listu listu je otevřen v sadě Visual Studio. Můžete používat stejné nástroje Microsoft Office Excel, které používáte, pokud se sešit otevřít mimo sadu Visual Studio. Office project vytvoří stejné objekty, zda mapování schématu do listu před nebo po vytvoření řešení pro Excel.  
@@ -70,5 +68,3 @@ ms.locfileid: "53646651"
 ## <a name="see-also"></a>Viz také:  
  [Postupy: Mapování schémat na dokumenty aplikace Word v sadě Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [Schémata XML a data v přizpůsobeních na úrovni dokumentu](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
-  
-  

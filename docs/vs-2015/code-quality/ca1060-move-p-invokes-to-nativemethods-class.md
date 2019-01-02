@@ -1,12 +1,11 @@
 ---
-title: 'CA1060: Přesuňte P-vyvolá do třídy NativeMethods | Dokumentace Microsoftu'
+title: 'CA1060: Přesunout vyvolá P do třídy NativeMethods | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 019d02b8cd5031148a2902ed3bda54640dcc6587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913862"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849286"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Přesuňte volání nespravovaných kódů do třídy NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +93,7 @@ ms.locfileid: "49913862"
 ## <a name="unsafenativemethods-example"></a>Příklad UnsafeNativeMethods
 
 ### <a name="description"></a>Popis
- P/Invoke metody, které nejde volat bezpečně a, která by mohla způsobit vedlejší účinky by mělo být uvedeno ve třídě s názvem **UnsafeNativeMethods**. Tyto metody by měly být porovnány přísně, abyste měli jistotu, že nejsou pro uživatele neúmyslnému zveřejnění. Pravidlo [CA2118: revize použití SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) můžou pomoct se to. Metody by případně mají další oprávnění, které je požadováno místo **požadavku na nespravovaný kód** při jejich použití.
+ P/Invoke metody, které nejde volat bezpečně a, která by mohla způsobit vedlejší účinky by mělo být uvedeno ve třídě s názvem **UnsafeNativeMethods**. Tyto metody by měly být porovnány přísně, abyste měli jistotu, že nejsou pro uživatele neúmyslnému zveřejnění. Pravidlo [CA2118: Zkontrolujte použití SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) můžou pomoct se to. Metody by případně mají další oprávnění, které je požadováno místo **požadavku na nespravovaný kód** při jejich použití.
 
  Následující příklad ukazuje **Cursor.Hide** metodu, která zabalí **ShowCursor** funkce z knihovny user32.dll.
 
@@ -104,6 +103,3 @@ ms.locfileid: "49913862"
 
 ## <a name="see-also"></a>Viz také
  [Upozornění ohledně návrhu](../code-quality/design-warnings.md)
-
-
-

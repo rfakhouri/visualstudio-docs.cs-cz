@@ -1,8 +1,6 @@
 ---
 title: Vytváření balíčků bootstrapperu
-ms.custom: ''
 ms.date: 05/02/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878387"
 ---
 # <a name="create-bootstrapper-packages"></a>Vytváření balíčků bootstrapperu
 Instalační program je obecný instalační program, který můžete konfigurovat k rozpoznání a instalování distribuovatelných součástí, jako je například Instalační služby systému Windows (*MSI*) soubory a programy. Instalační program se také nazývá zaváděcí nástroj. To je programován sadou XML manifestů, které mohou specifikovat metadata pro správu instalace součásti.  Každý distribuovatelnou komponentu, nebo požadovaných součástí, která se zobrazí v **požadavky** dialogové okno pro ClickOnce je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují soubory manifestu, které popisují, jak by měly být nainstalovány kontrolu požadovaných součástí. 
@@ -35,13 +33,13 @@ Instalační program je obecný instalační program, který můžete konfigurov
 Zaváděcí nástroj nejprve zjistí, zda některé z požadavků jsou již nainstalovány. Pokud požadavky nejsou nainstalovány, nejprve zaváděcí nástroj zobrazí licenční podmínky. Za druhé po koncový uživatel přijme podmínky licenční smlouvy, začne instalace požadavků. Jinak pokud jsou zjištěny všechny požadavky, zaváděcí nástroj pouze spustí instalační program aplikace.  
   
 ## <a name="create-custom-bootstrapper-packages"></a>Vytvořit vlastní balíčky zaváděcího nástroje  
-Pomocí editoru jazyka XML v sadě Visual Studio můžete generovat manifesty zaváděcího nástroje. Příklad vytvoření balíčku zaváděcího nástroje naleznete v tématu [návod: vytvoření vlastního bootstrapperu s výzvou o ochraně osobních údajů](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+Pomocí editoru jazyka XML v sadě Visual Studio můžete generovat manifesty zaváděcího nástroje. Příklad vytvoření balíčku zaváděcího nástroje naleznete v tématu [názorný postup: Vytvoření vlastního bootstrapperu s výzvou o ochraně osobních údajů](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
 Vytvoření balíčku zaváděcího nástroje, jste k vytvoření manifestu produktu a, pro všechny lokalizované verze komponenty, také manifestu balíčku.
   
-* Manifest produktu *product.xml*, obsahuje všechny jazykově nezávislá metadata pro balíček. Toto obsahuje metadata společná pro všechny lokalizované verze distribuovatelné součásti.  Vytvoření tohoto souboru najdete v tématu [postupy: vytvoření a Manifest produktu](../deployment/how-to-create-a-product-manifest.md).
+* Manifest produktu *product.xml*, obsahuje všechny jazykově nezávislá metadata pro balíček. Toto obsahuje metadata společná pro všechny lokalizované verze distribuovatelné součásti.  Vytvoření tohoto souboru najdete v tématu [jak: Vytvoření manifestu produktu](../deployment/how-to-create-a-product-manifest.md).
   
-* Manifest balíčku *package.xml*, obsahuje metadata pro konkrétní jazyk; obvykle obsahuje lokalizované chybové zprávy. Komponenta musí mít alespoň jeden manifest balíčku pro každou lokalizovanou verzi dané komponenty. Vytvoření tohoto souboru najdete v tématu [postupy: vytvoření balíčku Manifest](../deployment/how-to-create-a-package-manifest.md).
+* Manifest balíčku *package.xml*, obsahuje metadata pro konkrétní jazyk; obvykle obsahuje lokalizované chybové zprávy. Komponenta musí mít alespoň jeden manifest balíčku pro každou lokalizovanou verzi dané komponenty. Vytvoření tohoto souboru najdete v tématu [jak: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).
   
 Po vytvoření těchto souborů uložte soubor manifestu produktu do složky s názvem pro vlastní zaváděcí nástroj. Soubor manifestu balíčku přejde do složky s názvem pro národní prostředí. Například pokud soubor manifestu balíčku je pro anglickou distribuci, uložte soubor do složky s názvem en. Tento proces opakujte pro každé národní prostředí, jako je například ja pro japonské písmo a de pro němčinu. Konečný vlastní balíček zaváděcího nástroje může mít následující strukturu složek.  
 
@@ -60,7 +58,7 @@ Po vytvoření těchto souborů uložte soubor manifestu produktu do složky s n
         package.xml
     ```
   
-V dalším kroku zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [postupy: vytvoření lokalizovaného balíčku bootstrapperu](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+V dalším kroku zkopírujte redistribuovatelné soubory do umístění složky zaváděcího nástroje. Další informace najdete v tématu [jak: Vytvoření lokalizovaného balíčku bootstrapperu](../deployment/how-to-create-a-localized-bootstrapper-package.md).
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     
@@ -85,7 +83,7 @@ V následující tabulce jsou uvedeny vlastnosti, které jsou automaticky napln�
 |Vlastnost|Popis|  
 |--------------|-----------------|  
 |ApplicationName|Název aplikace.|  
-|Vlastnost ProcessorArchitecture|Procesor a bits slova spustitelný soubor zaměřený platformy. Následující hodnoty:<br /><br /> -Intel<br />-IA64<br />– AMD64|  
+|ProcessorArchitecture|Procesor a bits slova spustitelný soubor zaměřený platformy. Následující hodnoty:<br /><br /> -Intel<br />-IA64<br />– AMD64|  
 |[Version9x](/windows/desktop/Msi/version9x)|Číslo verze pro operační systémy Microsoft Windows 95, Windows 98 nebo Windows ME. Syntaxe verze je Major.Minor.ServicePack.|  
 |[VersionNT](/windows/desktop/Msi/versionnt)|Číslo verze pro operační systémy Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 nebo Windows 7. Syntaxe verze je Major.Minor.ServicePack.|  
 |[VersionMSI](/windows/desktop/Msi/versionmsi)|Verze sestavení Instalační služby systému Windows (msi.dll) ke spuštění během instalace.|  
@@ -97,7 +95,7 @@ Redistribuovatelným souborům můžete zabránit v nasazení v nastavení proje
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí následujícího formátu:  *\<název společnosti >.\< Název součásti >. RedistList.xml*. Ano, například pokud komponenta nazývá DataWidgets provedená Acme, použijte *Acme.DataWidgets.RedistList.xml*. Příklad redistribuovatelného seznamu obsahů může vypadat takto:  
+Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí následujícího formátu: *\<Název společnosti >. \<Název komponenty >. RedistList.xml*. Ano, například pokud komponenta nazývá DataWidgets provedená Acme, použijte *Acme.DataWidgets.RedistList.xml*. Příklad redistribuovatelného seznamu obsahů může vypadat takto:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -107,7 +105,7 @@ Redistribuovatelný seznam je soubor XML, který byste měli pojmenovat pomocí 
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Postupy: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Dialogové okno požadavky](../ide/reference/prerequisites-dialog-box.md)   
  [Referenční dokumentace schématu produktů a balíčků](../deployment/product-and-package-schema-reference.md)   
  [Použijte zaváděcí nástroj Visual Studio 2005 k zahájení instalace](http://go.microsoft.com/fwlink/?LinkId=107537)

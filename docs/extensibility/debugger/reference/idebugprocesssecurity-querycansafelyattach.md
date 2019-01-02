@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
-ms.custom: ''
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe132ddbd154e04e3cef1a20e826c3634c65bdb2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9ecc1d7970fe8be98d199130db6e87847de3aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839002"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Tato metoda umožňuje dodavatele port předtím, než uživatel připojí k unsafe proces zobrazila upozornění.  
+Tato metoda umožňuje dodavatele portu zobrazila upozornění předtím, než uživatel připojí k unsafe procesu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,13 +31,13 @@ int QueryCanSafelyAttach();
 ```  
   
 ## <a name="return-value"></a>Návratová hodnota  
- Návratové hodnoty jsou následující:  
+ Vrácené hodnoty jsou následující:  
   
 -   `S_OK`: Připojení k procesu je bezpečné a zobrazí se dialogové okno bez upozornění.  
   
--   `S_FALSE`: Připojení může být problém se zabezpečením a zobrazí se dialogové okno s upozorněním.  
+-   `S_FALSE`: Připojení může být problém se zabezpečením a se zobrazí dialogové okno s upozorněním.  
   
--   `FAILURE`: Připojení k proces se nezdaří.  
+-   `FAILURE`: Připojení k procesu se nezdaří.  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

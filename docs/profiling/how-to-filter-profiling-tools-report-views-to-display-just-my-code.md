@@ -1,30 +1,28 @@
 ---
-title: 'Postupy: filtrování nástrojů pro profilaci zobrazení sestav k zobrazení pouze vlastního kódu | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Nástroje pro profilaci filtr zobrazení sestav k zobrazení pouze vlastního kódu | Dokumentace Microsoftu'
 ms.date: 02/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c04132dde3f668c007c8fc0bf750c434baa81bbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925021"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Postupy: filtrování nástrojů pro profilaci zobrazení sestav k zobrazení pouze můj kód
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Postupy: Nástroje pro profilaci filtr zobrazení sestav k zobrazení pouze můj kód
 
-Visual Studio poskytuje tak, aby se zobrazovala pouze kód, který jste implementovali filtrování pro sestavy pro zvýšení výkonu. Tuto funkci, která se nazývá pouze můj kód, je povoleno ve výchozím nastavení. Je nakonfigurovaný pomocí **pouze můj kód** možnost **možnosti** dialogové okno.
+Filtrování sestavy o výkonu tak, aby se zobrazí pouze kód, který jste implementovali, poskytuje Visual Studio. Tuto funkci, která se nazývá pouze můj kód, je ve výchozím nastavení povolená. Konfiguruje se prostřednictvím **pouze můj kód** možnost **možnosti** dialogové okno.
 
 ## <a name="to-enable-just-my-code"></a>Chcete-li povolit pouze můj kód
 
 1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2. V **možnosti** dialogové okno, rozbalte seznam **nástroje pro sledování výkonu** a pak vyberte **Obecné** uzlu.
+2. V **možnosti** dialogového okna rozbalte **nástroje pro měření výkonu** a pak vyberte **Obecné** uzlu.
 
 3. V části **obecné nastavení**, vyberte **povolit volbu pouze vlastní kód** zaškrtávací políčko.
 
@@ -32,9 +30,9 @@ Visual Studio poskytuje tak, aby se zobrazovala pouze kód, který jste implemen
 
 1. Na **nástroje** nabídky, klikněte na tlačítko **možnosti**.
 
-2. V **možnosti** dialogové okno, rozbalte seznam **nástroje pro sledování výkonu** a pak vyberte **Obecné** uzlu.
+2. V **možnosti** dialogového okna rozbalte **nástroje pro měření výkonu** a pak vyberte **Obecné** uzlu.
 
-3. V části **obecné nastavení**, zrušte **povolit volbu pouze vlastní kód** zaškrtávací políčko.
+3. V části **obecné nastavení**, zrušte zaškrtnutí políčka **povolit volbu pouze vlastní kód** zaškrtávací políčko.
 
 ## <a name="see-also"></a>Viz také:
 

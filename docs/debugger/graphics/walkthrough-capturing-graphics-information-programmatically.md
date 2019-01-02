@@ -1,22 +1,20 @@
 ---
-title: 'Návod: Zaznamenání grafických informací prostřednictvím kódu programu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zaznamenání grafických informací prostřednictvím kódu programu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850684"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Návod: Zaznamenání grafických informací prostřednictvím kódu
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Průvodce: Zaznamenání grafických informací prostřednictvím kódu programu
 Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k programově zachytit informace grafiky z aplikace Direct3D.  
   
  Programové zachytávání je užitečné v situacích, jako například:  

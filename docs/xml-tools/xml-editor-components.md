@@ -2,27 +2,26 @@
 title: Součásti editoru XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e29632e29b41f707470231481e70e151ca6f77
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c1f997cc04c69e1641a12a86b2a85a8a5fd81e90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819780"
 ---
 # <a name="xml-editor-components"></a>Součásti editoru XML
 
-Tato část popisuje oken editoru XML a dialogových oken. Protože editor souborů XML je založena na textový editor, některé integrované vývojové prostředí (IDE) konfigurován s použitím nastavení obecné textového editoru.
+Tato část popisuje oken editoru XML a dialogových oknech. Protože editoru jazyka XML je založena na textový editor, některé z integrovaného vývojového prostředí (IDE) je nakonfigurovaný pomocí nastavení obecné textového editoru.
 
 ## <a name="related-sections"></a>Související oddíly
 
-[Změna barvy textu v editoru](../ide/quickstart-personalize-the-ide.md#change-text-color)
+[Změnit barvu textu v editoru](../ide/quickstart-personalize-the-ide.md#change-text-color)
 
 ## <a name="see-also"></a>Viz také:
 

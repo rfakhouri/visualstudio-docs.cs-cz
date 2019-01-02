@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Jednoduché datové vazby v projektech na úrovni dokumentu'
-ms.custom: ''
+title: 'Průvodce: Jednoduché datové vazby v projektech na úrovni dokumentu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895490"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Návod: Jednoduché datové vazby v projektech na úrovni dokumentu
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Průvodce: Jednoduché datové vazby v projektech na úrovni dokumentu
   Tento návod ukazuje základní informace o datové vazby v projektech úrovni dokumentu. Jedno datové pole v databázi serveru SQL Server je vázán na pojmenované oblasti v aplikaci Microsoft Office Excel. Návod také ukazuje, jak přidat ovládací prvky, které vám umožní procházet všechny záznamy v tabulce.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49824372"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1. Vytvořte projekt sešitu aplikace Excel s názvem **Moje jednoduché datové vazby**, buď ve Visual Basicu nebo C#. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Vytvořte projekt sešitu aplikace Excel s názvem **Moje jednoduché datové vazby**, buď ve Visual Basicu nebo C#. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Moje jednoduché datové vazby** projektu **Průzkumníka řešení**.  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824372"
 ## <a name="next-steps"></a>Další kroky  
  Tento návod ukazuje základní informace o vytvoření vazby pojmenované oblasti na pole v databázi. Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Data do mezipaměti tak, aby ho můžete použít v režimu offline. Další informace najdete v tématu [jak: mezipaměti dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Data do mezipaměti tak, aby ho můžete použít v režimu offline. Další informace najdete v tématu [jak: Mezipaměť dat pro použití v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Vytvoření vazby buňky do více sloupců v tabulce, místo na jedno pole. Další informace najdete v tématu [návod: rozšířené datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
+-   Vytvoření vazby buňky do více sloupců v tabulce, místo na jedno pole. Další informace najdete v tématu [názorný postup: Rozšířené datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Použití <xref:System.Windows.Forms.BindingNavigator> ovládací prvek pro procházení záznamů. Další informace najdete v tématu [postupy: navigace daty pomocí ovládacího prvku Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
+-   Použití <xref:System.Windows.Forms.BindingNavigator> ovládací prvek pro procházení záznamů. Další informace najdete v tématu [jak: Navigace daty pomocí ovládacího prvku Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)   
  [Návod: Rozšířené datové vazby v projektech na úrovni dokumentu](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  

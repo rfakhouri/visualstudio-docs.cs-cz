@@ -2,7 +2,6 @@
 title: Vzdálené ladění ASP.NET Core ve službě IIS a Azure | Dokumentace Microsoftu
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -12,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1658e8df9950ed7b9be060663204511a09d8c626
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839093"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core ve službě IIS v Azure v sadě Visual Studio 2017
 
@@ -82,7 +81,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladit aplikaci tak, aby plně
 
     Zarážka by měla být dosažena v sadě Visual Studio.
 
-    Je to! Zbývající kroky v tomto tématu se vztahují na vzdálené ladění na Virtuálním počítači Azure.
+    A to je vše! Zbývající kroky v tomto tématu se vztahují na vzdálené ladění na Virtuálním počítači Azure.
 
 ## <a name="remote_debug_azure_vm"></a> Vzdálené ladění ASP.NET Core na Virtuálním počítači Azure
 
@@ -226,7 +225,7 @@ V tomto kurzu se používá Visual Studio 2017.
 
     Zarážka by měla být dosažena v sadě Visual Studio.
 
-### <a name="bkmk_openports"></a> Řešení potíží: Otevřete požadované porty ve Windows serveru
+### <a name="bkmk_openports"></a> Řešení potíží: Otevřené požadované porty ve Windows serveru
 
 Ve většině nastavení jsou otevřené požadované porty instalace technologie ASP.NET a vzdálený ladicí program. Nicméně pokud řešíte potíže s nasazením a je hostovaná aplikace za bránou firewall, můžete ověřit, že jsou otevřené správné porty.
 
@@ -240,4 +239,3 @@ Požadované porty:
 
 Kromě toho by měl tyto porty otevřít již instalace technologie ASP.NET:
 - 8172 – (volitelné) požadované pro nasazení webu k nasazování aplikací ze sady Visual Studio
-

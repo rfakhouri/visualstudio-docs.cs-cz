@@ -1,9 +1,7 @@
 ---
 title: Publikování aplikace v Node.js do služby App Service pro Linux
 description: Můžete publikovat aplikace Node.js, které jsou vytvořené v sadě Visual Studio do služby App Service pro Linux v Azure
-ms.custom: ''
 ms.date: 11/1/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846253"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publikování aplikace v Node.js do Azure (App Linux Service)
 
@@ -84,7 +82,7 @@ Chcete-li nastavte GitHub pro Visual Studio:
 
 ## <a name="create-a-linux-app-service-in-azure"></a>Vytvořit službu App Service Linuxu v Azure
 
-1. Přihlaste se k [webu Azure portal](https://portal.azure.com).
+1. Přihlaste se k webu [Azure Portal](https://portal.azure.com).
 
 2. Vyberte **App Services** ze seznamu služeb na levé straně a potom klikněte na tlačítko **přidat**.
 

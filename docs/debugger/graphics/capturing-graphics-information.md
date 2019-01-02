@@ -1,8 +1,6 @@
 ---
 title: Zaznamenání grafických informací | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09571f593c77ffed1daaeaa2ac7639e2a97a32ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838148"
 ---
 # <a name="capturing-graphics-information"></a>Zaznamenání grafických informací
 Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual Studio můžete použít k diagnostice problémů s vykreslováním a problémy s výkonem.  
@@ -29,7 +27,7 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
   
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Spuštění aplikace v rámci Diagnostiky grafiky  
   
-- V panelu nabídky zvolte **ladění**, **grafiky**, **spustit ladění grafiky**. (Klávesnice: stiskněte klávesy Alt + F5)  
+- V panelu nabídky zvolte **ladění**, **grafiky**, **spustit ladění grafiky**. (Klávesnice: Stisknutím klávesy Alt + F5)  
   
 - Na **grafiky** nástrojů, zvolte **spustit ladění grafiky** tlačítko.  
   
@@ -80,7 +78,7 @@ Zachytit informace grafiky z aplikace Direct3D analyzátoru grafiky sady Visual 
   
  Konfigurace projektu pro vzdálené ladění závisí na typu aplikace, kterou vyvíjíte, a používaném programovacím jazyku. Informace o tom, jak konfigurovat vzdálené ladění pro aplikace pro UPW, naleznete v tématu [aplikací pro UWP spuštění na vzdáleném počítači](../run-windows-store-apps-on-a-remote-machine.md). Informace o tom, jak konfigurovat vzdálené ladění pro aplikace klasické pracovní plochy Windows najdete v tématu [vzdálené ladění](../remote-debugging.md).  
   
- Později lze vzdálený počítač nebo zařízení použít k přehrání informací grafiky bez ohledu na to, odkud byly informace zachyceny. Další informace najdete v tématu [postupy: Změna počítače pro přehrávání diagnostiky grafiky](how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Později lze vzdálený počítač nebo zařízení použít k přehrání informací grafiky bez ohledu na to, odkud byly informace zachyceny. Další informace najdete v tématu [jak: Změnit počítač pro přehrávání diagnostiky grafiky](how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Zaznamenání grafických informací z příkazového řádku  
  Informace grafiky lze zaznamenat z aplikace pomocí nástroje příkazového řádku. Tento nástroj DXCap.exe, můžete rychle zachytávání a přehrávání grafické informace bez použití sady Visual Studio nebo zachytávání prostřednictvím kódu programu. DXCap.exe zejména, můžete pro službu automation, nebo v testovacím prostředí. Další informace o DXCap.exe najdete v tématu [zachycení nástroj příkazového řádku](command-line-capture-tool.md)  

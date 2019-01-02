@@ -1,9 +1,6 @@
 ---
 title: Obrázky a ikony pro sadu Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880699"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrázky a ikony pro sadu Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Použití obrázků v sadě Visual Studio  
@@ -26,7 +23,7 @@ ms.locfileid: "49949394"
   
 -   **Ikony**. Malé obrázky, které se zobrazují v příkazech, hierarchie, šablon a tak dále. Výchozí velikost ikona používaná v sadě Visual Studio je PNG 16 x 16. Ikony vytvářených služba bitových kopií automaticky generovat formátu XAML pro podporu HDPI.  
   
-     **Poznámka:** při Image se používají v nabídce systému, nevytvářejte ikonu pro každý příkaz. Poraďte [nabídek a příkazů pro sadu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) chcete zobrazit, zda váš příkaz by měl získat ikonu.  
+     **POZNÁMKA:** Zatímco Image se používají v nabídce systému, nevytvářejte ikonu pro každý příkaz. Poraďte [nabídek a příkazů pro sadu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) chcete zobrazit, zda váš příkaz by měl získat ikonu.  
   
 -   **Thumbnails.** Obrázky používané v části dialogového okna, jako je například dialogové okno Nový projekt ve verzi preview.  
   
@@ -369,7 +366,7 @@ ms.locfileid: "49949394"
 ||||||  
 |-|-|-|-|-|  
 |![Ikona IntelliSense třídy](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405 36_IntelliSenseClass")<br />Třída|![Ikona Soukromá událost IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405 37_IntelliSensePrivateEvent")<br />Privátní události|![Ikona delegáta IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405 38_IntelliSenseDelegate")<br />Delegát|![IntelliSense – metoda friend ikona](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405 39_IntelliSenseMethodFriend")<br />Friend – metoda|![Ikona pole](../../extensibility/ux-guidelines/media/0405-40_field.png "0405 40_Field")<br />Pole|  
-|![Technologie IntelliSense chráněné ikony položky výčtu](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Chráněné položky výčtu|![Ikona objektu IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Objekt|![Ikona šablony IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Šablony|![Technologie IntelliSense výjimka ikona](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Zkratky výjimek||  
+|![Technologie IntelliSense chráněné ikony položky výčtu](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "0405 41_IntelliSenseProtectedEnumItem")<br />Chráněné položky výčtu|![Ikona objektu IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "0405 42_IntelliSenseObject")<br />Objekt|![Ikona šablony IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "0405 43_IntelliSenseTemplate")<br />Šablona|![Technologie IntelliSense výjimka ikona](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "0405 44_IntelliSenseExceptionShortcut")<br />Zkratky výjimek||  
   
 ### <a name="notifications"></a>Oznámení  
  Oznámení v sadě Visual Studio se používají k označení stavu. Paleta oznámení pomocí následující čtyři barvy, jakož i možností výplně černé nebo bílé popředí, definuje oznámení s následující úrovní stavu.  
@@ -387,7 +384,7 @@ ms.locfileid: "49949394"
   
 |||||  
 |-|-|-|-|  
-|![Ikona upozornění](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Upozornění|![Ikona upozornění](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Upozornění|![Ikona dokončeného](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Dokončení|![Ikona stop](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 47_Stop")<br />Zastavit|  
+|![Ikona upozornění](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Výstrahy|![Ikona upozornění](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Upozornění|![Ikona dokončeného](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Dokončení|![Ikona stop](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 47_Stop")<br />Zastavit|  
   
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  Obecně platí Visual Studio Online se skládá z funkcí hostované v prohlížeči. Barva se liší v různých prostředích, ale styl zůstává stejná.  

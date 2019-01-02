@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: SQL můžete&#39;t najít ssdebugps. | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: Můžete SQL&#39;t najít ssdebugps. | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
@@ -17,30 +15,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1498a287bdb474751dfaa5b4b23c30bc302544e7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 038b448c0ecd0b19afd7671a381eb68c9ba8cbbe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854110"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Chyba: SQL můžete&#39;t najít ssdebugps.
+# <a name="error-sql-can39t-find-ssdebugps"></a>Chyba: Můžete SQL&#39;t najít ssdebugps.
 
-SSDEBUGPS.dll je součást ladění hostitel systému SQL Server.
+Ssdebugps.dll nebyl je součást ladění hostitel systému SQL Server.
 
-Tato chyba nastane, když se pokoušíte spustit ladění a určuje, že zadaný soubor se nenachází na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače. Možné příčiny jsou buď vzdálené ladění instalační program se nebude nikdy spuštěn, nebo zda nějakým způsobem nebyl odstraněn tento soubor.
+Tato chyba nastane, pokud se pokoušíte spustit ladění a označuje, že zadaný soubor není k dispozici na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače. Možné příčiny, že buď nastavení vzdáleného ladění byla nespouštět nebo že nějakým způsobem získali odstranit tento soubor.
 
-Existují dva způsoby, jak vyřešit tuto chybu: opětovným spuštěním instalačního programu vzdálené ladění a pomocí kopírování souborů do [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače.
+Existují dva způsoby, jak vyřešit tuto chybu: opětovným spuštěním instalačního programu vzdálené ladění a zkopírováním do souboru [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače.
 
-Vzdálené ladění instalační program znovu spustíte, postupujte podle pokynů v [vzdálené ladění](../debugger/remote-debugging.md).
+Znovu spusťte instalační program vzdálené ladění, postupujte podle pokynů v [vzdálené ladění](../debugger/remote-debugging.md).
 
-Pokud můžete vyhledat kopii ssdebugps.dll, můžete je zkopírovat do [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače. Pokud je k dispozici, soubor bude v \Program Files\ directory běžné Files\Microsoft Shared\SQL ladění. Může být na jiném [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače, nebo na počítači, který má nainstalované Visual Studio 2005.
+Pokud můžete vyhledat kopii ssdebugps.dll nebyl, můžete zkopírovat ho do [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače. Pokud jsou k dispozici, soubor bude v adresáři \Program Files\ běžné Files\Microsoft Shared\SQL ladění. Možná pro vás bude na jiném [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] strojově, nebo na počítači, který má nainstalované Visual Studio 2005.
 
-Kopírování SSDEBUGPS.dll do počítače serveru SQL Server 2005:
+Zkopírování ssdebugps.dll nebyl do počítače serveru SQL Server 2005:
 
 1. Zkopírujte soubor do adresáře se stejným názvem a cestu na [!INCLUDE[sqprsqlong](../debugger/includes/sqprsqlong_md.md)] počítače.
 
-2. Registraci otevřením **příkazového řádku**a spuštěním následujícího příkazu:
+2. Zaregistrujte ho tak, že otevřete **příkazového řádku**a spuštěním následujícího příkazu:
 
     ```cmd
     regsrv32 ssdebugps.dll

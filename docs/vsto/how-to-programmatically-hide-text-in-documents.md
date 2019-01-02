@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: skrývání textu v dokumentech prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Skrývání textu v dokumentech prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676501"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928432"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>Postupy: skrývání textu v dokumentech prostřednictvím kódu programu
+# <a name="how-to-programmatically-hide-text-in-documents"></a>Postupy: Skrývání textu v dokumentech prostřednictvím kódu programu
   Text v dokumentu můžete skrýt nastavením <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Range.Font%2A> pro konkrétní rozsah textu.  
   
  Například můžete dočasně skrýt text v rámci <xref:Microsoft.Office.Tools.Word.Bookmark> (v přizpůsobení úrovni dokumentu) nebo <xref:Microsoft.Office.Interop.Word.Bookmark> (in VSTO Add-) před odesláním dokument na tiskárně.  
@@ -58,10 +55,8 @@ ms.locfileid: "35676501"
  Tento příklad kódu předpokládá, že dokument obsahuje <xref:Microsoft.Office.Tools.Word.Bookmark> control (na úrovni dokumentu přizpůsobení) nebo <xref:Microsoft.Office.Interop.Word.Bookmark> ovládacího prvku (in VSTO Add-), který je pojmenován `bookmark1`.  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: tisk dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-documents.md)   
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: Programová resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Postupy: programově aktualizovat textu záložky](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Postupy: Tisk dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-documents.md)   
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: Programově resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Postupy: Programově aktualizovat textu záložky](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

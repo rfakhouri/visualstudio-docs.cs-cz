@@ -1,8 +1,6 @@
 ---
-title: Stop – příkazy v jazyce Visual Basic | Microsoft Docs
-ms.custom: ''
+title: Příkazy Stop v jazyce Visual Basic | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,23 +19,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fefd2c2957ea7f659d3cbf7a0c866cc3586b2ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934463"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Příkazy Stop v jazyce Visual Basic
-Příkaz jazyka Visual Basic zastavit poskytuje programovací alternativou k nastavení boru přerušení. Když v ladicím programu dojde příkaz Stop, dělí spuštění programu (přejde do režimu přerušení). Stejného efektu pomocí volání do System.Diagnostics.Debugger.Break můžete dosáhnout programátory v jazyce C#.  
+Příkaz Zastavit jazyka Visual Basic poskytuje programový alternativu k nastavením zarážky. Pokud ladicí program narazí příkaz Stop, přeruší spuštění programu (přejde do režimu přerušení). Programátoři v C# lze dosáhnout pomocí volání do System.Diagnostics.Debugger.Break stejný účinek.  
   
- Můžete nastavit nebo odebrat příkaz Stop úpravou vašeho zdrojového kódu. Nelze nastavit nebo vymazat příkazech Stop pomocí příkazů ladicího programu, jako byste zarážky.  
+ Nastavení nebo odebrání příkazu Stop pomocí úpravy zdrojového kódu. Nelze nastavit nebo zrušte příkazech Stop pomocí příkazů ladicího programu, jako byste zarážku.  
   
- Na rozdíl od příkazu End příkaz Stop nemá resetovat proměnné nebo vrátíte do režimu návrhu. Chcete-li pokračovat, spustíte aplikaci v nabídce ladění můžete pokračovat.  
+ Na rozdíl od příkazem End příkaz Stop nepodporuje obnovení proměnné ani vrátit do režimu návrhu. Pokračovat můžete vybrat z nabídky ladění bude moct být spuštěná aplikace.  
   
- Když spustíte aplikace Visual Basic mimo ladicí program, bude příkaz Stop spuštění ladicího programu Pokud těsně za běhu je povoleno ladění. Pokud těsně za běhu není povoleno ladění, příkaz Stop chová jako by šlo příkazu End ukončení provádění. Žádné QueryUnload nebo uvolnění události dojde, takže je nutné odebrat všechny příkazy Stop z prodejní verze aplikace Visual Basic. Další informace najdete v tématu [ladění JIT](../debugger/just-in-time-debugging-in-visual-studio.md).  
+ Při spuštění aplikace v jazyce Visual Basic vně ladicího programu, příkazu Stop se spuštění ladicího programu, pokud Just-in-Time je povoleno ladění. Pokud Just-in-Time není povoleno ladění, příkaz Stop se chová jako by šlo příkazem End ukončení provádění. Žádné QueryUnload nebo uvolnění události dojde, proto musíte odebrat všechny příkazy Stop z verze aplikace Visual Basic. Další informace najdete v tématu [ladění za běhu](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
- Abyste se vyhnuli nutnosti odebírání příkazech Stop, můžete použít Podmíněná kompilace:  
+ Aby se nemusela odebrání příkazech Stop, můžete použít Podmíněná kompilace:  
   
 ```cpp
 #If DEBUG Then  
@@ -47,13 +45,13 @@ Příkaz jazyka Visual Basic zastavit poskytuje programovací alternativou k nas
 #End If  
 ```  
   
- Další alternativou je použití příkazu Assert místo příkaz Zastavit. Příkaz Debug.Assert – dělí provádění, pouze pokud je zadaná podmínka není splněná a je automaticky odstraněna při sestavování prodejní verzi. Další informace najdete v tématu [kontrolní výrazy ve spravovaného kódu](../debugger/assertions-in-managed-code.md). Pokud chcete příkazu Assert, který vždy dělí provádění v ladicí verze, můžete provést toto:  
+ Další možností je použití příkazu Assert místo příkazu Stop. Debug.Assert – příkaz zruší spuštění, jenom když je zadaná podmínka není splněna a automaticky odstraní při sestavení verze pro vydání. Další informace najdete v tématu [kontrolní výrazy ve spravovaného kódu](../debugger/assertions-in-managed-code.md). Pokud chcete kontrolní příkaz, který se vždy přeruší provádění v ladicí verzi, můžete to provést:  
   
 ```csharp
 Debug.Assert(false)  
 ```  
   
- Další alternativou je ještě použít metodu Debug.Fail:  
+ Ještě další možností je použít metodu Debug.Fail:  
   
 ```csharp
 Debug.Fail("a clever output string goes here")  
@@ -61,5 +59,5 @@ Debug.Fail("a clever output string goes here")
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [C#, F # a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C#, F#a typy projektů jazyka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)

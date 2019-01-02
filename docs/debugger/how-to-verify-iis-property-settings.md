@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ověření nastavení vlastnosti služby IIS | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ověření nastavení vlastnosti služby IIS | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926879"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Postupy: Ověření nastavení vlastnosti služby IIS
 
@@ -37,7 +35,7 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Zkontrolujte nastavení služby IIS pro webovou aplikaci
 
-1. Otevřít **nástroje pro správu** okna: na **Start** nabídky, přejděte na **programy**a potom klikněte na tlačítko **nástroje pro správu**. Pokud **nástroje pro správu** se nezobrazují v **programy** nabídky a pak vyhledejte ho **ovládací panely**.
+1. Otevřít **nástroje pro správu** okno: Na **Start** nabídky, přejděte k **programy**a potom klikněte na tlačítko **nástroje pro správu**. Pokud **nástroje pro správu** se nezobrazují v **programy** nabídky a pak vyhledejte ho **ovládací panely**.
 
    -   Ve Windows 2000, vyberte **Správce služeb Internetu**.
 
@@ -61,7 +59,7 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
 
    3.  Klikněte na tlačítko **OK** zavřete **metody ověřování** dialogové okno.
 
-5. Pro aplikaci knihovny ATL Server ověřte, zda je příkaz DEBUG. přidružený rozšíření ISAPI. Další informace najdete v tématu [postupy: přidružení ladění operaci s rozšířením](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Pro aplikaci knihovny ATL Server ověřte, zda je příkaz DEBUG. přidružený rozšíření ISAPI. Další informace najdete v tématu [jak: Příkaz DEBUG. přidružit rozšíření](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace, ujistěte se, že virtuální složka pro aplikace má název aplikace v **Správce Internetové informační služby (IIS)**, **Správce služeb Internetu** nebo  **Internetová informační služba**.
 

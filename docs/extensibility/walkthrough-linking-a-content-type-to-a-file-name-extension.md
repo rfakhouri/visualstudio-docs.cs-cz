@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Propojení typu obsahu s příponu názvu souboru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Propojení typu obsahu příponu názvu souboru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926184"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Návod: Propojení typ obsahu, který má příponu názvu souboru
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Průvodce: Typ obsahu propojit příponu názvu souboru
 Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru s použitím rozšíření editoru Managed Extensibility Framework (MEF). V některých případech přípona souboru už definuje služba jazyka. Ale na jeho použití s MEF, je třeba stále propojit ho typu obsahu.  
   
 ## <a name="prerequisites"></a>Požadavky  
@@ -93,7 +90,7 @@ Můžete definovat vlastní typ obsahu a odkaz na něj příponu názvu souboru 
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>Přidat typ obsahu k editoru export  
   
-1.  Vytvoření rozšíření editoru. Například můžete použít rozšíření piktogram okraj, je popsáno v [návod: vytvoření okrajového piktogramu](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Vytvoření rozšíření editoru. Například můžete použít rozšíření piktogram okraj, je popsáno v [názorný postup: Vytvoření okrajového piktogramu](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
 2.  Přidání třídy, které jste definovali v tomto postupu.  
   

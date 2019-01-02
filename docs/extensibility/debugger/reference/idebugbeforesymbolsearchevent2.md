@@ -1,9 +1,6 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugBeforeSymbolSearchEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 790aa358a40c79c7d517935192fd0155150063a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aed9c24717866750c3b9139ab2e04b48d5eda960
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100452"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930931"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
-Modul ladění (DE) odešle toto rozhraní správce ladicí relace (SDM) Chcete-li nastavit stav panelu zpráv během načítání symbol.  
+Ladicí stroj (DE) odešle toto rozhraní Správce ladění relace (SDM) Chcete-li nastavit stav panelu zprávy během načítání symbolů.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,21 +27,21 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE toto rozhraní implementuje, když je nutné nastavit zprávu na stavovém řádku během načítání symbol. Toto rozhraní je implementováno pouze pomocí ladění strojů, které pracovat nebo jsou součástí překladače skriptu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) rozhraní musí být implementována pro stejný objekt jako toto rozhraní (SDM používá **QueryInterface** pro přístup k **IDebugEvent2** rozhraní).  
+ DE implementuje toto rozhraní, když je nutné nastavit zprávu na stavovém řádku během načítání symbolů. Toto rozhraní je implementováno pouze ladicími stroji, které pracovat, nebo jsou součástí interpretů skriptu. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) musí implementovat rozhraní na stejný objekt jako toto rozhraní (SDM používá **QueryInterface** přístup **IDebugEvent2** rozhraní).  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- DE vytvoří a odešle tento objekt událost, pokud je nutné nastavit zprávu na stavovém řádku během načítání symbol. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytl SDM, pokud je připojené k programu laděné funkce zpětného volání.  
+ DE vytvoří a odešle tento objekt událost, když je nutné nastavit zprávu na stavovém řádku během načítání symbolů. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) poskytnutých SDM při připojení k laděnému programu funkce zpětného volání.  
   
 ## <a name="methods"></a>Metody  
- Následující tabulka uvádí metody `IDebugBeforeSymbolSearchEvent2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugBeforeSymbolSearchEvent2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Načte název modulu právě laděn.|  
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Načte název modulu, která se právě ladí.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

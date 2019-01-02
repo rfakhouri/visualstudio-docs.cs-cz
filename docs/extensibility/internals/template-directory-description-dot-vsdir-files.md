@@ -1,9 +1,6 @@
 ---
 title: Popis šablony adresáře (. Soubory VSDIR) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e2cf5dcb898614750aecd7e4fe997fbde0b5cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925206"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Soubory popisu adresáře šablon (.Vsdir)
 Soubor popisu adresáře šablon (.vsdir) je textový soubor, který umožňuje integrované vývojové prostředí (IDE) pro zobrazení složek, souborů průvodce .vsz a souborů šablon, které jsou spojené s projektem v dialogových oknech. Obsah zahrnuje jeden záznam na souboru nebo složky. Všechny soubory .vsdir v odkazované umístění jsou sloučeny, i když jediný projektový soubor je obvykle zadáváno popisující více složek, průvodců nebo soubory šablon.  
@@ -43,8 +40,8 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Pole | Popis |
 | - | - |
 | Relativní cesta (RelPathName) | Název souboru složky, šablonu nebo .vsz, například HeaderFile.h nebo MyWizard.vsz. Toto pole může být také název používá k reprezentování složku. |
-| {clsidPackage} | Identifikátor GUID sady VSPackage, která umožňuje přístup k lokalizované řetězce, jako je například LocalizedName, popis, IconResourceId a SuggestedBaseName, sady VSPackage satelitní dynamická knihovna (DLL) prostředky. IconResourceId platí v případě, že není zadán DLLPath. **Poznámka:** toto pole je volitelné, pokud jeden nebo více polí předchozí není identifikátor prostředku. Toto pole je obvykle prázdné, pokud souborů .vsdir, které odpovídají s použitím průvodců třetích stran, které nelze lokalizovat jejich textu. |
-| LocalizedName | Lokalizovaný název souboru šablony nebo průvodce. Toto pole může být řetězec nebo identifikátor prostředku ve formě "#ResID". Tento název se zobrazí v **přidat novou položku** dialogové okno. **Poznámka:** Pokud LocalizedName identifikátor prostředku, pak {clsidPackage} je povinný. |
+| {clsidPackage} | Identifikátor GUID sady VSPackage, která umožňuje přístup k lokalizované řetězce, jako je například LocalizedName, popis, IconResourceId a SuggestedBaseName, sady VSPackage satelitní dynamická knihovna (DLL) prostředky. IconResourceId platí v případě, že není zadán DLLPath. **Poznámka:**  Toto pole je volitelné, pokud jeden nebo více polí předchozí je identifikátor prostředku. Toto pole je obvykle prázdné, pokud souborů .vsdir, které odpovídají s použitím průvodců třetích stran, které nelze lokalizovat jejich textu. |
+| LocalizedName | Lokalizovaný název souboru šablony nebo průvodce. Toto pole může být řetězec nebo identifikátor prostředku ve formě "#ResID". Tento název se zobrazí v **přidat novou položku** dialogové okno. **Poznámka:**  Pokud LocalizedName je identifikátor prostředku, vyžaduje se {clsidPackage}. |
 | SortPriority | Celé číslo představující relativní priorita tohoto souboru šablony nebo průvodce. Například pokud se tato položka má hodnotu 1, pak tato položka se zobrazí vedle dalších položek s hodnotou 1 a před všechny položky s hodnotou řazení 2 nebo větší.<br /><br /> Řazení priorita je relativní vůči položky ve stejném adresáři. Může být více než jeden soubor .vsdir ve stejném adresáři. V takovém případě položky ze všech <em>.</em> soubory VSDIR v tomto adresáři jsou sloučeny. Položky se stejnou prioritou jsou uvedeny ve velkých a malých písmen slovníkovém pořadí zobrazovaný název. `_wcsicmp` Funkce slouží ke třídění položek.<br /><br /> Položky, které nejsou popsané v souborů .vsdir zahrnují priorita je větší než nejvyšší priorita v souborech .vsdir. Výsledkem je, že tyto položky jsou na konci seznamu bez ohledu na jejich název. |
 | Popis | Lokalizovaný popis souboru šablony nebo průvodce. Toto pole může být řetězec nebo identifikátor prostředku ve formě "#ResID". Tento řetězec je zobrazen v **nový projekt** nebo **přidat novou položku** dialogové okno při výběru položky. |
 | DLLPath nebo {clsidPackage} | Umožňuje načíst ikonu pro soubor šablony nebo průvodce. Ikona je načtena jako prostředek ze souboru .dll nebo .exe s použitím IconResourceId. Tento soubor .dll nebo .exe lze identifikovat pomocí úplnou cestu nebo identifikátor GUID sady VSPackage pomocí. Implementace DLL sady VSPackage slouží k načtení ikony (ne satelitní knihovny DLL). |

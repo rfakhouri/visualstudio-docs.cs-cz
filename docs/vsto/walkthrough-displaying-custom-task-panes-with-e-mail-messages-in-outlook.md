@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook'
-ms.custom: ''
+title: 'Průvodce: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926579"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Průvodce: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook
   Tento návod ukazuje, jak zobrazit jedinečnou instanci vlastního podokna úloh s každou e-mailové zprávy, který je vytvořen nebo otevřen. Uživatelům můžete zobrazit nebo skrýt podokno úloh s použitím tlačítko na pásu karet z každého e-mailové zprávy.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -60,14 +57,14 @@ ms.locfileid: "49828465"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] nebo aplikace Microsoft Outlook 2010.  
   
-  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mohu: použití podokna úloh v aplikaci Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Pomocí podokna úloh v aplikaci Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Vytvoření projektu  
  Vlastní podokna úloh jsou implementovány v doplňcích VSTO. Začněte vytvořením projektu doplňku VSTO pro Outlook.  
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření **doplňku aplikace Outlook** projektu s názvem **OutlookMailItemTaskPane**. Použití **doplňku aplikace Outlook** šablony projektu. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření **doplňku aplikace Outlook** projektu s názvem **OutlookMailItemTaskPane**. Použití **doplňku aplikace Outlook** šablony projektu. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře *ThisAddIn.cs* nebo *ThisAddIn.vb* soubor kódu a přidá **OutlookMailItemTaskPane** projektu **Průzkumníka řešení**.  
   
@@ -199,7 +196,7 @@ ms.locfileid: "49828465"
     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  Sestavte projekt k zajištění, že se zkompiluje bez chyb.  
   
 ### <a name="to-build-your-project"></a>K sestavení projektu  
@@ -267,9 +264,9 @@ ms.locfileid: "49828465"
   
 -   Vytvoření vlastního podokna úloh v doplňku VSTO pro jinou aplikaci. Další informace o aplikacích, které podporují vlastní podokna úloh, naleznete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
   
--   Automatizace aplikací sady Microsoft Office s použitím vlastního podokna úloh. Další informace najdete v tématu [návod: automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automatizace aplikací sady Microsoft Office s použitím vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Automatizace aplikace z vlastního podokna úloh](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Vytvoření tlačítka pásu karet v Excelu, který umožňuje skrýt nebo zobrazit vlastního podokna úloh. Další informace najdete v tématu [návod: synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Vytvoření tlačítka pásu karet v Excelu, který umožňuje skrýt nebo zobrazit vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vlastní podokna úloh](../vsto/custom-task-panes.md)   
@@ -279,5 +276,3 @@ ms.locfileid: "49828465"
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)   
  [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

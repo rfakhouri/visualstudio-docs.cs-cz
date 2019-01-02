@@ -1,9 +1,6 @@
 ---
-title: Registrace VSPackages | Microsoft Docs
-ms.custom: ''
+title: Registrace balíčků VSPackage | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, registering
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6f7e603fbc023415ad2b8ddc157f239feb53768
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4b5bedbfdeaab6fa3d7d8efe4479a8b7f3e4de4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842603"
 ---
-# <a name="registering-vspackages"></a>Registrace VSPackages
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spoléhá na soubory .pkgdef popsat a vyhledejte VSPackage. Soubor .pkgdef obsahuje všechny informace o registraci, které by jinak bylo možné přidat do registru systému. Spravované VSPackages jsou registrované přidáním atributy ke zdrojovému kódu a pak spustit [CreatePkgDef nástroj](../../extensibility/internals/createpkgdef-utility.md) na výsledné sestavení můžete vytvořit soubor .pkgdef.  
+# <a name="registering-vspackages"></a>Registrace balíčků VSPackage
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] závisí na souborech .pkgdef k popisu a vyhledejte VSPackage. Soubor .pkgdef obsahuje všechny informace o registraci, které by jinak přidán do systémového registru. Spravovaná rozšíření VSPackages zaregistrováni přidávání atributů do zdrojového kódu a následným spuštěním [nástroj CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) výsledné sestavení se vygenerovat soubor .pkgdef.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Specifikace umístění souboru balíčku VSPackage pro prostředí sady VS](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
- Popisuje cestu načítání pro VSPackages.  
+ Popisuje cestu načítání rozšíření VSPackages.  
   
  [Registrace a zrušení registrace rozšíření VSPackages](../../extensibility/registering-and-unregistering-vspackages.md)  
  Vysvětluje, jak zaregistrovat VSPackage.  

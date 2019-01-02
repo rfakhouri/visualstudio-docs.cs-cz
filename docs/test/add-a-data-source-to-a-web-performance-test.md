@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823539"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Přidání zdroje dat do testu výkonnosti webu
 
@@ -124,9 +123,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 ## <a name="q--a"></a>Dotazy a odpovědi
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Dotaz: které databáze mohu použít jako zdroj dat?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>DOTAZ: Jaké databáze můžete použít jako zdroj dat?
 
-**Odpověď:** můžete použít následující:
+**ODPOVĚĎ:** Můžete použít následující:
 
 - Microsoft SQL Azure.
 
@@ -140,9 +139,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
 - Oracle 7.3, 8i, 9i nebo 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Otázka: jak použít textový soubor čárkou hodnot s oddělovači (CSV) jako zdroj dat?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>DOTAZ: Použití textového souboru čárkou hodnot s oddělovači (CSV) jako zdroj dat
 
-**Odpověď:** tady je způsob:
+**ODPOVĚĎ:** Tady je způsob:
 
 1. Vytvořte složku k uspořádání vašich artefaktů databáze projektů a přidejte položku.
 
@@ -164,9 +163,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
      ![Zadejte název a zvolte soubor CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Otázka: Co když Můj existující soubor CSV neobsahuje záhlaví sloupců?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>DOTAZ: Co když Můj existující soubor CSV neobsahuje záhlaví sloupců?
 
-**Odpověď:** Pokud nemůžete přidat záhlaví sloupců, můžete použít souboru popisu schématu a pokud chcete se souborem CSV zacházet jako s databází.
+**ODPOVĚĎ:** Pokud nemůžete přidat záhlaví sloupců, můžete použít souboru popisu schématu a k souborem CSV zacházet jako s databází.
 
 1. Přidat nový textový soubor s názvem *schema.ini*.
 
@@ -215,9 +214,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
      ![Zdroj dat, které jsou přidány do testu](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Otázka: jak použít soubor XML jako zdroj dat?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>DOTAZ: Jak použít soubor XML jako zdroj dat?
 
-**Odpověď:** Ano.
+**ODPOVĚĎ:** Ano.
 
 1. Vytvořte složku k uspořádání vašich artefaktů databáze projektů a přidejte položku.
 
@@ -247,9 +246,9 @@ Chceme použít ukázkovou aplikaci ASP.NET. Má tři *.aspx* stránky – vých
 
      ![Zadejte název a vyberte soubor XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Dotaz: lze přidat datovou vazbu pro požadavek webové služby využívající SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>DOTAZ: Můžete přidat datové vazby k požadavku webové služby využívající SOAP?
 
-**Odpověď:** Ano, je třeba změnit protokol SOAP XML ručně.
+**ODPOVĚĎ:** Ano, musíte změnit protokol SOAP XML ručně.
 
 1. Ve stromové struktuře požadavku a v okně Vlastnosti vyberte požadavek webové služby, zvolte tři tečky (...) ve vlastnosti tělo řetězce.
 

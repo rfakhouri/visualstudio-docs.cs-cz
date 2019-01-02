@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Odstranění výsledků zátěžového testu z úložiště'
+title: 'Postupy: Odstranění z úložiště výsledků zátěžového testu'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e2a7df778ff506c76513af6e6fe926a193f6a18e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1165da402fc10f1562155ef6e4aaff25249b17a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846845"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Postupy: výsledků zátěžového testu odstranit z úložiště
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Postupy: Odstranění z úložiště výsledků zátěžového testu
 
 Při spuštění zátěžového testu, informace, které byly shromážděny během spuštění uložená v úložiště výsledků testu zátěže. Úložiště výsledků zátěžových testů obsahuje data čítače výkonu a informace o všech chybách. Další informace najdete v tématu [výsledků zátěžového testu spravovat v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -55,7 +54,7 @@ Výsledky zátěžového testu můžete spravovat z editoru zátěžového testu
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Export zátěžový test výsledků z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Postupy: Export výsledků zátěžového testu z úložiště](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Správa výsledků zátěžových testů v úložiště výsledků testu zátěže](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Postupy: Import výsledků zátěžového testu do úložiště](../test/how-to-import-load-test-results-into-a-repository.md)
+- [Postupy: Importovat do úložiště výsledků zátěžového testu](../test/how-to-import-load-test-results-into-a-repository.md)

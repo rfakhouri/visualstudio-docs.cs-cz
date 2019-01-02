@@ -1,8 +1,7 @@
 ---
-title: 'Návod: Používání IntelliSense XSLT'
+title: 'Průvodce: Používání XSLT IntelliSense'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1cbd8c7d49719ad1b3d04d9336f222b45a0b33d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894399"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Návod: Používání IntelliSense XSLT
+# <a name="walkthrough-using-xslt-intellisense"></a>Průvodce: Používání XSLT IntelliSense
 
-Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování hodnoty některých atributů.
+Tento návod ukazuje, jak pomocí technologie IntelliSense XSLT na hodnotu automatické dokončení některých atributů.
 
-## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Použití technologie IntelliSense v atribut názvu xsl: s param a prvek xsl: Call – elementy šablony
+## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>Použití technologie IntelliSense v atributu name xsl: s param a Call-šablony elementů
 
 1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:
 
@@ -47,16 +46,16 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
     </xsl:stylesheet>
     ```
 
-2.  Vložit kurzor po `<xsl:template name="msg23" match="msg23">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:call-template` element:
+2.  Kurzor po vložení `<xsl:template name="msg23" match="msg23">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:call-template` element:
 
     ```xml
     <xsl:call-template name="localized-message">
     </xsl:call-template>
     ```
 
-     Se zobrazí v seznamu názvy šablon `name=""` atribut `xsl:call-template` element při psaní.
+     Seznam názvů šablony se zobrazí v `name=""` atribut `xsl:call-template` element během psaní.
 
-3.  Vložit kurzor po `<xsl:call-template name="localized-message">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:with-param` element:
+3.  Kurzor po vložení `<xsl:call-template name="localized-message">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:with-param` element:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -64,7 +63,7 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
 
      Seznam názvů parametrů se zobrazí v `name=""` atribut `xsl:with-param` elementu.
 
-## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Použití technologie IntelliSense v režimu atribut xsl: element použít šablony
+## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>Použití technologie IntelliSense v režimu atribut xsl: použít šablony – element
 
 1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:
 
@@ -113,15 +112,15 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
     </xsl:stylesheet>
     ```
 
-2.  Vložit kurzor po `<xsl:apply-templates select="phone" />` a stiskněte klávesu **Enter**. Začněte psát následující `xsl: apply-templates` element:
+2.  Kurzor po vložení `<xsl:apply-templates select="phone" />` a stiskněte klávesu **Enter**. Začněte psát následující `xsl: apply-templates` element:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
     ```
 
-     Seznam režimů šablonu se zobrazí v `mode=""` atribut `xsl:apply-templates` elementu.
+     Seznam režimů šablony se zobrazí v `mode=""` atribut `xsl:apply-templates` elementu.
 
-## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Použití technologie IntelliSense v předponu šablony stylů a výsledek předponu atributy xsl:namespace-alias – element
+## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>Použití technologie IntelliSense v atributech šablony stylů předpony a předpon výsledek XSL: Namespace-alias – element
 
 1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:
 
@@ -154,14 +153,14 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
     </xsl:stylesheet>
     ```
 
-2.  Vložit kurzor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:namespace-alias` element:
+2.  Kurzor po vložení `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` a stiskněte klávesu **Enter**. Začněte psát následující `xsl:namespace-alias` element:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
     ```
 
-     Všimněte si, jak seznam předpon zobrazovaly v `stylesheet-prefix` a `result-prefix` atributy `xsl:namespace-alias` elementu.
+     Všimněte si, jak se nacházela v seznamu předpony `stylesheet-prefix` a `result-prefix` atributy `xsl:namespace-alias` elementu.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Funkce editoru XML IntelliSense](../xml-tools/xml-editor-intellisense-features.md)
+- [Funkce IntelliSense editoru XML](../xml-tools/xml-editor-intellisense-features.md)

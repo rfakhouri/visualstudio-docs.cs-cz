@@ -3,7 +3,6 @@ title: Konfigurace webové aplikace v Pythonu pro službu IIS
 description: Postup konfigurace webové aplikace v Pythonu pomocí Internetové informační služby z virtuálního počítače Windows.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d05e4022ada575873a85279d81b094b08160b6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843356"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurace webové aplikace v Pythonu pro službu IIS
 
@@ -114,14 +113,14 @@ V dalším kroku upravit svou aplikaci *web.config* zahrnout úplné cesty k sou
         <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
         ```
 
-    - **Flask**: Změna `WSGI_HANDLER` hodnota, která se `<project_name>.app` kde `<project_name>` odpovídá názvu vašeho projektu. Můžete najít přesně identifikátor pohledem `from <project_name> import app` příkaz v *runserver.py*. Například pokud má projekt název "FlaskAzurePublishExample", položka bude vypadat takto:
+    - **Flask**: Změnit `WSGI_HANDLER` hodnota, která se `<project_name>.app` kde `<project_name>` odpovídá názvu vašeho projektu. Můžete najít přesně identifikátor pohledem `from <project_name> import app` příkaz v *runserver.py*. Například pokud má projekt název "FlaskAzurePublishExample", položka bude vypadat takto:
 
         ```xml
         <!-- Flask apps only: change the project name to match your app -->
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - **Django**: dvě změny, které jsou potřeba k *web.config* pro projekty v Django. Nejprve změňte `WSGI_HANDLER` hodnota, která se `django.core.wsgi.get_wsgi_application()` (objekt je ve *wsgi.py* souboru):
+    - **Django**: Dvě změny, které jsou potřeba k *web.config* pro projekty v Django. Nejprve změňte `WSGI_HANDLER` hodnota, která se `django.core.wsgi.get_wsgi_application()` (objekt je ve *wsgi.py* souboru):
 
         ```xml
         <!-- Django apps only -->
@@ -134,7 +133,7 @@ V dalším kroku upravit svou aplikaci *web.config* zahrnout úplné cesty k sou
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **Jenom aplikace Django**: projekt v Django *settings.py* přidejte lokality adresa URL domény nebo IP adresu, která `ALLOWED_HOSTS` jak je znázorněno níže, nahradíte '1.2.3.4' vaše adresa URL nebo IP adresa, samozřejmě:
+1. **Jenom aplikace Django**: V projektu Django *settings.py* přidejte lokality adresa URL domény nebo IP adresu, která `ALLOWED_HOSTS` jak je znázorněno níže, nahradíte '1.2.3.4' vaše adresa URL nebo IP adresa, samozřejmě:
 
     ```python
     # Change the URL or IP address to your specific site

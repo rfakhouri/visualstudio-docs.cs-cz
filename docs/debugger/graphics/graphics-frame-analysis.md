@@ -1,8 +1,6 @@
 ---
 title: Analýzy grafických snímků | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875638"
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijte k analýze a optimalizovat výkon vykreslování Direct3D hře nebo aplikaci.  
@@ -191,4 +189,4 @@ Analýza grafických snímků v analyzátoru grafiky sady Visual Studio použijt
 |**Rozměry textury čtvrtletí**|Snižuje rozměrů textury na všechny textury, které nejsou cíle vykreslování na čtvrtletí jejich původní velikost v každém rozměru. Například 256 x 128 textury sníží texely 64 x 32.<br /><br /> Další informace najdete v tématu [Half/Quarter textury dimenze Variant](half-quarter-texture-dimensions-variant.md).|  
 |**Komprese textur BC**|Umožňuje zablokovat kompresi na všechny textury, které mají B8G8R8X8, B8G8R8A8 nebo R8G8B8A8 variant formát pixelu. Varianty formátu B8G8R8X8 komprimování pomocí BC1; S použitím BC3 jsou komprimované B8G8R8A8 a R8G8B8A8 formátu variant.<br /><br /> Další informace najdete v tématu [BC textury komprese Variant](bc-texture-compression-variant.md).|  
   
- Výsledek pro většinu varianty je doporučené: "25 procent rychlejší je snížení velikosti textury na polovinu" nebo "Povolení 2 x MSAA je pouze 2 % pomaleji". Ostatní varianty může vyžadovat další výklad – například pokud variantu, která změní rozměry zobrazení 1 x 1 zobrazuje velké výkonnější, může to znamenat, že se tak s nízkou výplně mírou; bottlenecked vykreslování případně pokud neexistuje žádné významné změny ve výkonu, může to znamenat, že se zpracováním vrcholu bottlenecked vykreslování.
+ Výsledek pro většinu varianty je doporučené: "Snížení velikosti textury na polovinu je 25 procent rychleji." nebo "Povolení 2 x MSAA je pouze 2 % pomaleji". Ostatní varianty může vyžadovat další výklad – například pokud variantu, která změní rozměry zobrazení 1 x 1 zobrazuje velké výkonnější, může to znamenat, že se tak s nízkou výplně mírou; bottlenecked vykreslování případně pokud neexistuje žádné významné změny ve výkonu, může to znamenat, že se zpracováním vrcholu bottlenecked vykreslování.

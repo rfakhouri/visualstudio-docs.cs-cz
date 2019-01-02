@@ -1,9 +1,6 @@
 ---
 title: Řešení VBA a Office v sadě Visual Studio porovnání
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5a0031133c6713320a0377098d096fa60748de6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 09c5fdeb37fa09595cdfda99aba06b9546c5f696
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820080"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Řešení VBA a Office v sadě Visual Studio porovnání
   Microsoft Visual Basic for Applications (VBA) používá nespravovaný kód, který je úzce integrovaná s aplikacemi Office. Projektů Microsoft Office vytvořených pomocí sady Visual Studio umožňují využít rozhraní .NET Framework a sady Visual Studio vývojové nástroje.  
@@ -56,5 +53,3 @@ ms.locfileid: "35675853"
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-  
-  

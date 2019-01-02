@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a3904efd69763a096504922ee233a927ba69ed8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847032"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Přiřazení rolí na testovací kontrolér a testovací agent
 
@@ -37,7 +36,7 @@ Tento návod ukazuje, jak vytvořit a nakonfigurovat nastavení testu používaj
 
 1.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na **položky řešení** přejděte **přidat**a klikněte na tlačítko **nová položka**.
 
-     **Přidat novou položku** zobrazí se dialogové okno.
+     Zobrazí se dialogové okno **Přidat novou položku**.
 
 2.  V **nainstalované šablony** podokně zvolte **nastavení testu**.
 

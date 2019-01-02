@@ -1,9 +1,6 @@
 ---
-title: IDebugOutputStringEvent2 | Microsoft Docs
-ms.custom: ''
+title: IDebugOutputStringEvent2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugOutputStringEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac8a2072d801936d8035d5479c7d234082639818
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5257cea7ffd23a36460bfcab5bba72ff6835402
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889804"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
-Toto rozhraní je poslal modul ladění (DE) zadaný pro relaci ladění správce (SDM) do výstupního řetězce.  
+Toto rozhraní je odeslaný ladicího stroje (DE) pro správce ladění relace (SDM) do výstupního řetězce.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,20 +29,20 @@ IDebugOutputStringEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- DE implementuje toto rozhraní k odeslání řetězec tak, aby **výstup** okno IDE. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) rozhraní musí být implementována pro stejný objekt jako toto rozhraní. Používá SDM [QueryInterface](/cpp/atl/queryinterface) k přístupu `IDebugEvent2` rozhraní.  
+ DE implementuje toto rozhraní lze odeslat řetězec k **výstup** okno integrovaného vývojového prostředí. [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) na stejný objekt jako toto rozhraní musí implementovat rozhraní. Používá SDM [QueryInterface](/cpp/atl/queryinterface) přístup `IDebugEvent2` rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- DE vytvoří a odešle tento objekt událostí k odeslání řetězec tak, aby **výstup** okno. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkce zpětného volání, který poskytl SDM při připojení k programu laděné.  
+ DE vytvoří a odešle objekt této události lze odeslat řetězec k **výstup** okna. Událost je odeslána pomocí [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funkce zpětného volání, který je poskytnut pomocí SDM, když je připojen k laděnému programu.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- V následující tabulce jsou uvedeny metodě `IDebugOutputStringEvent2`.  
+ V následující tabulce jsou uvedeny metody `IDebugOutputStringEvent2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetString –](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Získá zobrazitelné zprávu.|  
+|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Získá zobrazitelný zprávu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Například v nespravovaném kódu, může pocházet řetězec, který má být výstup při program laděné odešle řetězec Win32 `OutputDebugString` funkce. Tento řetězec je zachycen DE a posílá SDM jako `IDebugOutputStringEvent2` událostí.  
+ Například v nespravovaném kódu můžou pocházet řetězec, který má být výstup při laděnému programu odešle řetězec Win32 `OutputDebugString` funkce. Tento řetězec je zachycen DE a dostanou k SDM jako `IDebugOutputStringEvent2` událostí.  
   
  Použití [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) odeslat zprávu, která vyžaduje odpověď uživatele.  
   
@@ -54,9 +51,9 @@ IDebugOutputStringEvent2 : IUnknown
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   

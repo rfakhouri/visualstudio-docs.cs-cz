@@ -1,6 +1,5 @@
 ---
 title: Name – Element (šablony sady Visual Studio) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e23b99c715f59a0c7a817c379e6cf06001c285
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: ca61a572ee923b5f9fa3f3999554d36057f4dd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925482"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name – element (šablony sady Visual Studio)
 Určuje název šablony, jak se zobrazí v **nový projekt** nebo **přidat novou položku** dialogové okno.  

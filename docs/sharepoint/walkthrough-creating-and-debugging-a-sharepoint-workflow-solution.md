@@ -1,16 +1,11 @@
 ---
-title: 'Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytváření a ladění řešení pracovního postupu služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912987"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Průvodce: Vytváření a ladění řešení pracovního postupu služby SharePoint
   Tento návod ukazuje, jak vytvořit šablonu základního sekvenčního pracovního postupu. Pracovní postup kontroluje vlastnosti knihovny dokumentů sdílené k určení, zda byly zkontrolovány dokumentu. Pokud byly zkontrolovány dokumentu, dokončení pracovního postupu.  
   
  Tento návod znázorňuje následující úlohy:  
@@ -296,4 +291,3 @@ ms.locfileid: "42626485"
  [Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [A šablony položek projektu služby SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

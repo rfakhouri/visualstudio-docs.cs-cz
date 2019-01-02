@@ -1,9 +1,6 @@
 ---
 title: Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 808b463445934ecf5cc973b571b4b64d181eb692
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4c75b02fa3624ab56539e7ea9fbe7792632c272c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937449"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel
   Pokud jste začali vytvářet přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel s použitím sady Visual Studio, zde je, co potřebujete vědět.  
@@ -74,5 +71,3 @@ ms.locfileid: "53646942"
  [Návody pro aplikaci Excel](../vsto/walkthroughs-using-excel.md)   
  [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
-  
-  

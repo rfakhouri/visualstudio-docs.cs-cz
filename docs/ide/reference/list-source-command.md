@@ -2,7 +2,6 @@
 title: Listovat zdroj – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - Debug.ListSource
@@ -16,15 +15,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a5d0699fced4d01d439942081b359454bcf476
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7a94af10921c80b87b7d53f0f587aaf9ca55b22
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850352"
 ---
 # <a name="list-source-command"></a>Listovat zdroj – příkaz
-Zobrazí zadané řádků zdrojového kódu.
+Zobrazí zadané řádky zdrojového kódu.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,26 +35,26 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ## <a name="switches"></a>Přepínače
  / Počet:`number`
 
- Volitelné. Určuje počet řádků určených k zobrazení.
+ Volitelné. Určuje počet řádků k zobrazení.
 
- / Aktuální
+ Nebo aktuální
 
- Volitelné. Zobrazuje aktuálního řádku.
+ Volitelné. Zobrazí aktuální řádek.
 
- Nebo souborů:`filename`
+ / Souboru:`filename`
 
- Volitelné. Cesta souboru, který se zobrazí. Pokud není zadaný žádný název souboru, příkaz zobrazí zdrojový kód pro řádek aktuální příkaz.
+ Volitelné. Cesta k souboru, který má zobrazit. Pokud není zadán žádný název souboru, příkaz zobrazuje zdrojový kód pro řádek aktuální příkaz.
 
- / Řádku:`number`
+ / Řádek:`number`
 
- Volitelné. Zobrazuje číslo konkrétní řádku.
+ Volitelné. Zobrazí konkrétní řádek určený číslem.
 
- / ShowLineNumbers:`yes|no`
+ / Showlinenumberszobrazitčíslařádků:`yes|no`
 
  Volitelné. Určuje, jestli se mají zobrazovat čísla řádků.
 
 ## <a name="example"></a>Příklad
- Tento příklad uvádí zdrojového kódu z řádku 4 souboru Form1.vb, s čísla řádků, které jsou viditelné.
+ V tomto příkladu obsahuje zdrojový kód z řádek 4 souboru Form1.vb, s čísly řádků viditelná.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

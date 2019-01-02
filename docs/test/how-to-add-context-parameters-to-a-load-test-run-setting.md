@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898385"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Postupy: Přidání kontextových parametrů spuštění zátěžového testu
 
@@ -38,9 +37,9 @@ Pokud přiřadíte hodnotu kontextového parametru webový_server1 `http://Corpo
 
 Kromě toho přiřazením různých hodnot do parametru kontextu za použití stejného názvu v různých spuštění zátěžového testu můžete spustit zátěžový test s použitím různých prostředích:
 
-- Nastavení spuštění podnikové pracovní Webový Server: kontextový parametr s názvem `WebServer1=http://CorporateStagingWebServer`
+- Nastavení spuštění podnikové pracovní Webový Server: Kontextový parametr s názvem `WebServer1=http://CorporateStagingWebServer`
 
-- Nastavení spuštění podnikové produkční webový Server: The kontextového parametru, který má název `WebServer1=http://CorporateProductionWebServer`
+- Nastavení spuštění podnikové produkční webový Server: Kontextový parametr s názvem `WebServer1=http://CorporateProductionWebServer`
 
   **Změna nastavení spuštění z příkazového řádku**
 

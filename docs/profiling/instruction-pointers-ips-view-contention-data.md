@@ -1,8 +1,6 @@
 ---
-title: Zobrazení (IP) ukazatele na instrukce – Data kolizí | Microsoft Docs
-ms.custom: ''
+title: Zobrazení ukazatelů na instrukce – Data kolizí | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,40 +10,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853473"
 ---
-# <a name="instruction-pointers-ips-view---contention-data"></a>Zobrazení (IP) ukazatele na instrukce – data kolizí
-Zobrazení dat kolizí v IP adres zobrazí seznam dat pokyny sestavení, které byly blokovat spouštění v profilaci spustit.  
+# <a name="instruction-pointers-ips-view---contention-data"></a>Zobrazení ukazatelů na instrukce – data kolizí
+IP adresy zobrazení dat kolizí zobrazí seznam dat pro instrukce sestavení, které se zablokoval spuštění při spuštění profilace.  
   
- Následující tabulka vysvětluje hodnot sloupce v zobrazení ukazatele na instrukce.  
+ Následující tabulka vysvětluje hodnoty sloupců v zobrazení ukazatele na instrukce.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Výhradní blokované čas**|Blokované čas v této funkci.|  
-|**Výhradní blokované čas: %**|Procento blokovaných čas při pokyn byla spuštěna.|  
-|**Výhradní kolizí**|Počet kolizí, které došlo k chybě pokyn byla spuštěna.|  
-|**% Výhradní kolizí**|Procento kolizí v profilaci spuštění, které došlo k chybě pokyn byla spuštěna.|  
-|**Adresa funkce**|Počáteční adresa paměti funkce v načíst binárního souboru.|  
-|**Název funkce**|Název funkce, která obsahuje pokyn.|  
-|**Adresa instrukce**|Adresa paměti instrukce v načíst binárního souboru.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
-|**Název modulu**|Název modul, který obsahuje pokyn.|  
-|**Cesta modulu**|Cesta modul, který obsahuje pokyn.|  
+|**Výhradní čas zablokování**|Čas zablokování touto funkcí.|  
+|**% Výhradního času zablokování**|Procento času zablokování, když se provedl podle pokynů.|  
+|**Výhradní spory**|Počet sporů, ke kterým došlo během instrukce se spustil.|  
+|**% Výhradních sporů**|Procento všech sporů při spuštění profilace, ke kterým došlo během instrukce se spustil.|  
+|**Adresa funkce**|Počáteční adresa paměti pro funkci načíst binárního souboru.|  
+|**Název funkce**|Název funkce, která obsahuje instrukce.|  
+|**Adresa instrukce**|Adresa paměti podle pokynů v načíst binární soubor.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
+|**Název modulu**|Název modulu, který obsahuje instrukce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje instrukce.|  
 |**ID procesu**|ID procesu (PID) PROFILOVANÉHO procesu.|  
 |**Název procesu**|Název procesu.|  
-|**Začátek znaku zdroje**|Posun znak v řádku souboru zdroje, na které tento pokyn začíná.|  
-|**End znaku zdroje**|Posun znak v řádku souboru zdroje, u které tento pokyn končí.|  
-|**Zdrojový soubor**|Zdrojový soubor, který obsahuje pokyn.|  
-|**Začátek řádku zdroje**|Číslo řádku v zdrojový soubor, na které tento pokyn začíná.|  
-|**End řádku zdroje**|Číslo řádku ve zdrojovém souboru, u které tento pokyn končí.|  
+|**Počáteční znak zdrojového kódu**|Odsazení znaku ve zdrojovém souboru řádku, ve kterém tento pokyn začne.|  
+|**Koncový znak zdrojového kódu**|Odsazení znaku ve zdrojovém souboru řádku, ve kterém tento pokyn končí.|  
+|**Zdrojový soubor**|Zdrojový soubor, který obsahuje instrukce.|  
+|**Začátek řádku zdroje**|Číslo řádku ve zdrojovém souboru, ve kterém tento pokyn začne.|  
+|**Konec řádku zdroje**|Číslo řádku ve zdrojovém souboru, ve kterém tento pokyn skončí.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
- [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view.md)   
  [Ukazatele na instrukce (IP) zobrazení – vzorkování](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)

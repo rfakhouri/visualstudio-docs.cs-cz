@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Změna velikosti ovládacích prvků v buňkách listu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927347"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Postupy: Změna velikosti ovládacích prvků v buňkách listu
   Při změně velikosti sloupce nebo řádky v listu, změnit velikost hostitelských ovládacích prvků v buňkách automaticky na výšku nebo šířku na buňku, která se změnila. Ovládací prvky Windows Forms se velikost automaticky ve výchozím nastavení.  
@@ -79,7 +76,6 @@ ms.locfileid: "35676080"
 ## <a name="see-also"></a>Viz také:  
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Postupy: skrytí ovládacích prvků na listech při tisku](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [Postupy: Skrytí ovládacích prvků na listech při tisku](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

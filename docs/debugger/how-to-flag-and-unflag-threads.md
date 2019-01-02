@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: označení a odstranění označení vlákna | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Označení a odstranění označení vlákna | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d26c87867e071b7dafce80d95e4bc46cb88bb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851401"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Postupy: Označení a odstranění označení vlákna
 Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna**, **paralelní zásobníky** (zobrazení vláken), **paralelní sledování**a  **Vlákna GPU** systému windows. Tato ikona vám může pomoct a ostatní vlákna s příznakem odlišili od ostatních vláken.  
@@ -59,9 +57,9 @@ Vlákna s příznaky také přijímat zvláštní zacházení v **vlákna** sezn
   
 4.  (Volitelné) V **hledání** zadejte řetězec k vyhledání konkrétních modulů.  
   
-5.  Klikněte na tlačítko **OK**.  
+5.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Začínáme s laděním vícevláknových aplikací](../debugger/get-started-debugging-multithreaded-apps.md)  
- [Návod: Ladění vícevláknové aplikace pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md)
+ [Návod: Ladění vícevláknových aplikací pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md)

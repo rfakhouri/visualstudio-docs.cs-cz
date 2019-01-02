@@ -1,8 +1,6 @@
 ---
-title: diagnostické Namespace | Microsoft Docs
-ms.custom: ''
+title: diagnostické Namespace | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d781bbfefa59b2e124cf76c11b8fd7c06cc66dda
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c46f67281fe62de36472d9007f21841e843c20fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839440"
 ---
 # <a name="diagnostic-namespace"></a>Diagnostic – obor názvů
 `diagnostics` Obor názvů poskytuje funkce pro generování značek Vizualizéru souběžnosti.  
@@ -36,19 +34,19 @@ namespace diagnostic;
   
 |Název|Popis|  
 |----------|-----------------|  
-|[marker_series – třída](../profiling/marker-series-class.md)|Představuje sériové kanál událostí generovaných jednoho zprostředkovatele.|  
+|[marker_series – třída](../profiling/marker-series-class.md)|Představuje kanál sériového portu události generované modulem jednoho zprostředkovatele.|  
 |[span – třída](../profiling/span-class.md)|Definuje fáze aplikace.|  
   
 ### <a name="enumerations"></a>Výčty  
   
 |Název|Popis|  
 |----------|-----------------|  
-|[marker_importance – výčet](../profiling/marker-importance-enumeration.md)|Představuje úroveň důležitosti značky Vizualizéru souběžnosti.|  
+|[marker_importance – výčet](../profiling/marker-importance-enumeration.md)|Představuje úroveň důležitosti značek Vizualizátor souběžnosti.|  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkersobj.h*  
   
- **Namespace:** souběžnosti  
+ **Namespace:** Souběžnost  
   
 ## <a name="see-also"></a>Viz také:  
  [Obor názvů souběžnosti (vizualizér souběžnosti)](../profiling/concurrency-namespace-concurrency-visualizer.md)

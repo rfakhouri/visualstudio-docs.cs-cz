@@ -2,7 +2,6 @@
 title: Možnosti, textový Editor, všechny jazyky, posuvníky
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876783"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Možnosti, textový Editor, všechny jazyky, posuvníky
 Toto dialogové okno umožňuje změnit výchozí chování posuvníku editoru kódu. Chcete-li zobrazit tyto možnosti, vyberte **možnosti** z **nástroje** nabídky. V rámci **textový Editor** složky, rozbalte **všechny jazyky** podsložku a klikněte na tlačítko **posuvníky**.
@@ -65,4 +64,4 @@ V *režim mapování*po kliknutí na umístění na posuvník, kurzor přejde do
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: přizpůsobení posuvníku](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Postupy: Upravit posuvník](../how-to-track-your-code-by-customizing-the-scrollbar.md)

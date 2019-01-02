@@ -1,12 +1,11 @@
 ---
-title: 'CA1504: Revize zavádějících názvů polí | Dokumentace Microsoftu'
+title: 'CA1504: Zkontrolujte zavádějící názvy polí | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c927457e2e16f19c221204ba445dad6c127da850
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c877580b60209d1f21dac96717dd9ae94183859
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933373"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Revize zavádějících názvů polí
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +47,3 @@ ms.locfileid: "49878385"
 
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
  Nepotlačujte upozornění na toto pravidlo.
-
-
-

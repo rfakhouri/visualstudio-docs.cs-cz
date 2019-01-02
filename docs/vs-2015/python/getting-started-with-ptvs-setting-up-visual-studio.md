@@ -1,12 +1,11 @@
 ---
-title: 'Začínáme s PTVS: nastavení sady Visual Studio 2015 | Dokumentace Microsoftu'
+title: 'Začínáme s PTVS: Nastavení sady Visual Studio 2015 | Dokumentace Microsoftu'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ec491c1d-bdb2-4c2b-a390-bd808cec635a
@@ -14,14 +13,14 @@ caps.latest.revision: 6
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c48687f0c3c151b45fed4f6dc53a428faca41cd9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6ce34fb08edbad3c01594bfab770dffce1b82922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852742"
 ---
-# <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Začínáme s PTVS: Nastavení Visual Studia
+# <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Začínáme s PTVS: Nastavení sady Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 

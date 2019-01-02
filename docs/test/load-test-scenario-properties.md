@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843616"
 ---
 # <a name="load-test-scenario-properties"></a>Vlastnosti scénáře zátěžového testu
 
@@ -28,7 +27,7 @@ Změňte nastavení zátěžového testu scénář vlastnost v sadě Visual Stud
 
 |Vlastnost|Definice|
 |-|----------------|
-|**Jméno**|Název scénáře|
+|**Název**|Název scénáře|
 
 ## <a name="mix"></a>Kombinace
 
@@ -43,11 +42,11 @@ Změňte nastavení zátěžového testu scénář vlastnost v sadě Visual Stud
 
 |Vlastnost|Definice|
 |-|----------------|
-|**Agenti k použití**|Určuje, že testovací agenty, které má váš scénář použít, pokud používáte zatížení vzdáleně. Může být například potřeba určit konkrétní sadu agentů, aby byla při analýze trendů výkonu zachována konzistence. Agenty mohou být také geograficky rozmístěny tak, aby existovalo spřažení mezi spouštěnými skripty a umístěním agentu.<br /><br />Agenty musí být odděleny čárkami, například "**Agent1, Agent2, Agent3**". Je-li tato vlastnost ponechána prázdná, scénář bude používat všechny dostupné agenty.<br /><br />Další informace najdete v tématu [postupy: určení testovacích agentů](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
-|**Použít rozdělení na zpoždění stimulace**|Logická hodnota, která se používá k určení, zda chcete použít typické rozložení zpoždění stimulace model kombinace testů uživatele. Tato vlastnost platí jenom v případě, **typ kombinace testu** je nastavena na **založený na kroku uživatele**.<br /><br />Další informace najdete v tématu [jak: použít rozdělení na zpoždění stimulace](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**Agenti k použití**|Určuje, že testovací agenty, které má váš scénář použít, pokud používáte zatížení vzdáleně. Může být například potřeba určit konkrétní sadu agentů, aby byla při analýze trendů výkonu zachována konzistence. Agenty mohou být také geograficky rozmístěny tak, aby existovalo spřažení mezi spouštěnými skripty a umístěním agentu.<br /><br />Agenty musí být odděleny čárkami, například "**Agent1, Agent2, Agent3**". Je-li tato vlastnost ponechána prázdná, scénář bude používat všechny dostupné agenty.<br /><br />Další informace najdete v tématu [jak: Určení testovacích agentů použít](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
+|**Použít rozdělení na zpoždění stimulace**|Logická hodnota, která se používá k určení, zda chcete použít typické rozložení zpoždění stimulace model kombinace testů uživatele. Tato vlastnost platí jenom v případě, **typ kombinace testu** je nastavena na **založený na kroku uživatele**.<br /><br />Další informace najdete v tématu [jak: Použít rozdělení na zpoždění stimulace](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**Přepínání IP**|Logická hodnota, která se používá k určení, pokud bude použito přepínání IP.<br /><br />Přepínání protokolu IP umožňuje testovacího agenta k odesílání požadavků na server pomocí celé řady různých IP adresách. To simuluje volání, které pocházejí z různých klientských počítačů. Přepínání IP je důležité při testování proti load balanced webové farmy. Většina Vyrovnávání zatížení vytvoří spřažení mezi klientem a konkrétní webový server s použitím IP adresy klienta. Pokud všechny požadavky zdá, že pocházejí z jednoho klienta, nebude nástroj pro vyrovnávání zatížení vyrovnávat zatížení. K dosažení dobré rovnováhy zatížení ve webové farmě, je důležité, že požadavky pocházejí z rozsahu IP adres.<br /><br />Přepínání IP je k dispozici pouze u testovacího agentu.|
 |**Maximální počet iterací testu**|Číselná hodnota, která určuje maximální počet testů, které budou spuštěny ve scénáři. Hodnota 0 neurčuje žádné maximum.<br /><br />Další informace najdete v tématu [konfigurace iterací testů ve scénářích](../test/configure-test-iterations-in-a-load-test-scenario.md).|
-|**Procentuální podíl nových uživatelů**|Číselná hodnota určující procentuální podíl nových uživatelů nebo prvních návštěvníků ve scénáři.<br /><br />Další informace najdete v tématu [postupy: určení procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
+|**Procentuální podíl nových uživatelů**|Číselná hodnota určující procentuální podíl nových uživatelů nebo prvních návštěvníků ve scénáři.<br /><br />Další informace najdete v tématu [jak: Zadejte procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Profil uvažování**|Určuje, zda bude scénář používat **normální rozdělení**, nebo pokud je profil uvažování nastaven **na** nebo **vypnout**.<br /><br />Další informace najdete v tématu [zvažte úpravy časy pro simulaci prodlev při zásahem ze strany obsluhy webu](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="timing"></a>Časování

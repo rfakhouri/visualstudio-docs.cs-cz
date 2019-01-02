@@ -3,19 +3,18 @@ title: Okno nápovědy pro R
 description: Nápověda pro R je integrovaný přímo do interaktivního okna v sadě Visual Studio prostřednictvím? příkaz.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6576a701abe699bfe47666acfc21c848dde1f53a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd8be6e0b89ae0e110e16bcad9975108fa69bd5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931918"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Nápovědu v nástroje jazyka R pro Visual Studio
 

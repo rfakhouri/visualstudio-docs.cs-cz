@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: určení souborů podrobného protokolování pro nasazení ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb3214df1cd51baf731f8a16f39b2c5a59933bb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840249"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Postupy: určení souborů podrobného protokolování pro nasazení ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] udržuje soubory protokolu aktivit pro všechna nasazení. Tyto protokoly dokumentu podrobnosti týkající se instalace, inicializace, aktualizaci a odinstalaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Pro zvýšení podrobností, která [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zápisy do těchto souborů protokolů pomocí Editoru registru (*regedit.exe*) Chcete-li určit úroveň podrobností.  
   
 > [!CAUTION]

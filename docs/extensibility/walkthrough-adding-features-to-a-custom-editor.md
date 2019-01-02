@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Přidání funkcí do vlastního editoru | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Přidávání funkcí do vlastního editoru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850398"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>Návod: Přidání funkcí do vlastního editoru
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>Průvodce: Přidání funkcí do vlastního editoru
 Po vytvoření vlastního editoru můžete k němu přidat další funkce.  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>Chcete-li vytvořit editor pro balíček VSPackage  
   
 1.  Vytvoření vlastního editoru pomocí šablony projektu balíček Visual Studio.  
   
-     Další informace najdete v tématu [návod: vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md).  
+     Další informace najdete v tématu [názorný postup: Vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 2.  Rozhodněte, jestli chcete editor pro podporu zobrazení jedné nebo více zobrazení.  
   
@@ -118,7 +115,7 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 12. Implementace podpora kontextové nápovědy.  
   
-     Tento krok umožňuje poskytovat podporu pro položky v editoru Nápověda F1 a okna dynamické nápovědy. Další informace najdete v tématu [postupy: Zadání kontextu editory](../extensibility/how-to-provide-context-for-editors.md).  
+     Tento krok umožňuje poskytovat podporu pro položky v editoru Nápověda F1 a okna dynamické nápovědy. Další informace najdete v tématu [jak: Poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md).  
   
 13. Vystavení modelu automatizačních objektů z editoru implementací `IDispatch` rozhraní.  
   
@@ -157,4 +154,4 @@ Po vytvoření vlastního editoru můžete k němu přidat další funkce.
   
 ## <a name="see-also"></a>Viz také:  
  [Přispívání do modelu automatizace](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Postupy: zadání editory kontextu](../extensibility/how-to-provide-context-for-editors.md)
+ [Postupy: Poskytuje kontext pro editory](../extensibility/how-to-provide-context-for-editors.md)
