@@ -2,7 +2,6 @@
 title: Stránka Služby, návrhář projektu
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952378"
 ---
 # <a name="services-page-project-designer"></a>Stránka Služby, návrhář projektu
 
@@ -53,13 +52,13 @@ Pro přístup **služby** stránky, vyberte uzel projektu v **Průzkumníku ře�
 
  **Ověřování pomocí formulářů**
 
- Označuje, že zprostředkovatel ověřování bude používat ověřování pomocí formulářů. To znamená, že vaše aplikace musí poskytovat uživatelského rozhraní pro přihlášení. Další informace najdete v tématu [postupy: implementace přihlášení uživatele u klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+ Označuje, že zprostředkovatel ověřování bude používat ověřování pomocí formulářů. To znamená, že vaše aplikace musí poskytovat uživatelského rozhraní pro přihlášení. Další informace najdete v tématu [jak: Implementace přihlášení uživatele u klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Umístění služby ověřování**
 
  Použít pouze s ověřování pomocí formulářů. Určuje umístění ověřovací služby.
 
- **Volitelné: Přihlašovací údaje poskytovatele**
+ **Volitelné: Poskytovatel přihlašovacích údajů**
 
  Použít pouze s ověřování pomocí formulářů. Označuje <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementace, která se má zobrazit dialogové okno přihlášení, když vaše aplikace volá bude používat službu ověřování `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda a předá prázdné řetězce nebo `null` parametrů. Když toto pole ponecháte prázdné, je nutné předat platné uživatelské jméno a heslo <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metody. Jako název typu kvalifikovaného pro sestavení, je nutné zadat poskytovatele přihlašovacích údajů. Další informace najdete v tématu <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> a [názvy sestavení](/dotnet/framework/app-domains/assembly-names). Ve své nejjednodušší podobě vypadá podobně jako v následujícím příkladu představuje název typu kvalifikovaného pro sestavení: `MyNamespace.MyLoginClass, MyAssembly`
 

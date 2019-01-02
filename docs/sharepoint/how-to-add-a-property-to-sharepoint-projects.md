@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Přidání vlastnosti do projektů služby SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950469"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Postupy: Přidání vlastnosti do projektů služby SharePoint
   Rozšíření projektu můžete použít k přidání vlastnosti do jakéhokoli projektu SharePoint. Vlastnost se zobrazí v **vlastnosti** okno, když je projekt určený v **Průzkumníka řešení**.  
   
- Následující postup předpokládá, že jste již vytvořili projekt rozšíření. Další informace najdete v tématu [postupy: vytváření rozšíření projektu služby SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ Následující postup předpokládá, že jste již vytvořili projekt rozšíření. Další informace najdete v tématu [jak: Vytváření rozšíření projektu služby SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Přidání vlastnosti do projektu SharePoint  
   
@@ -59,7 +56,7 @@ ms.locfileid: "49898407"
   
 -   <xref:System.ComponentModel.DisplayNameAttribute>: Určuje název vlastnosti, která se zobrazí **vlastnosti** okna.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Určuje popis řetězec, který se zobrazí v dolní části **vlastnosti** okno, pokud je vybrána vlastnost.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Určuje řetězec popisu, který se zobrazí v dolní části **vlastnosti** okno, pokud je vybrána vlastnost.  
   
 -   <xref:System.ComponentModel.DefaultValueAttribute>: Určuje výchozí hodnotu vlastnosti.  
   
@@ -85,8 +82,6 @@ ms.locfileid: "49898407"
   
 ## <a name="see-also"></a>Viz také:
  [Rozšíření projektů SharePoint](../sharepoint/extending-sharepoint-projects.md)   
- [Postupy: vytváření rozšíření projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [Postupy: Vytváření rozšíření projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Postupy: Přidání položky místní nabídky do projektů služby SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [Rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
-  

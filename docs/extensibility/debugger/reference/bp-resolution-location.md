@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954510"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Určuje strukturu řešení umístění zarážky.  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [Jenom C++] Zástupný symbol.  
   
  `unionmember1`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
  `unionmember2`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
  `unionmember3`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
  `unionmember4`  
- [Jenom v C#] Viz poznámky o tom, jak interpretovat.  
+ [C# pouze] Viz poznámky o tom, jak interpretovat.  
   
 ## <a name="remarks"></a>Poznámky  
  Tato struktura je členem skupiny [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) a [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.  
   
- [Jenom v C#] `unionmemberX` Členy se interpretují podle následující tabulky. Podívejte se dolů levém sloupci `bpType` hodnoty napříč pak určit, co každý `unionmemberX` člen představuje a zařazování `unionmemberX` odpovídajícím způsobem. Podívejte se na příklad pro způsob, jak interpretovat tato struktura v jazyce C#.  
+ [C# pouze] `unionmemberX` Členy se interpretují podle následující tabulky. Podívejte se dolů levém sloupci `bpType` hodnoty napříč pak určit, co každý `unionmemberX` člen představuje a zařazování `unionmemberX` odpovídajícím způsobem. Podívejte se na příklad pro způsob, jak interpretovat tato struktura v jazyce C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -116,9 +113,9 @@ namespace MyPackage
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   

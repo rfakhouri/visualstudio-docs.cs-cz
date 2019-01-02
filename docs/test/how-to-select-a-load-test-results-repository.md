@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Výběr úložiště výsledků zátěžového testu'
+title: 'Postupy: Vyberte úložiště výsledků zátěžového testu'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fcbe7979765fe921ccc42f7adfa556bc0b52b7d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950430"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Postupy: Výběr úložiště výsledků zátěžového testu
+# <a name="how-to-select-a-load-test-results-repository"></a>Postupy: Vyberte úložiště výsledků zátěžového testu
 
 Nejste omezeni na úložiště místních výsledků. Často jsou zátěžové testy spuštěny na vzdálené sadě počítačů agentů. Agenty mohou spolu s kontrolérem generovat více simulované zátěže než jakýkoli jeden počítač. Další informace najdete v tématu [testovací kontrolery a testovací agenty](configure-test-agents-and-controllers-for-load-tests.md).
 

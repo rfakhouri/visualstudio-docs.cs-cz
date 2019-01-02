@@ -1,9 +1,6 @@
 ---
 title: Vytváření obsahu. Soubory Vsct | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945259"
 ---
 # <a name="author-vsct-files"></a>Vytváření souborů .vsct
 Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nabídky, panely nástrojů a jiných prvcích uživatelského rozhraní (UI) do integrovaného vývojového prostředí (IDE) sady Visual Studio. Pomocí těchto kroků při přidávání prvků uživatelského rozhraní do balíčku sady Visual Studio (balíček VSPackage správy kódu), který ještě není *.vsct* souboru.  
@@ -26,14 +23,14 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
  Pro nové projekty, doporučujeme použít balíček šablony sady Visual Studio, protože ji vygeneruje *.vsct* soubor, který v závislosti na výběrech, už má požadované elementy pro příkaz nabídky, okna nástroje nebo vlastní editor . Tuto hodnotu můžete změnit *.vsct* souboru podle požadavků vašeho balíčku VSPackage. Další informace o tom, jak upravit *.vsct* souboru, podívejte se na příklady v [rozšířit nabídek a příkazů](../../extensibility/extending-menus-and-commands.md).  
   
 ## <a name="author-the-file"></a>Vytvořte soubor  
- Autor *.vsct* souboru v těchto fází: vytvořte strukturu souborů a prostředků, deklarace prvků uživatelského rozhraní, vložit prvky uživatelského rozhraní v rozhraní IDE a přidejte specializované neovlivní žádné chování.  
+ Autor *.vsct* souboru v těchto fází: Vytvořte strukturu souborů a prostředků, deklarace prvků uživatelského rozhraní, vložit prvky uživatelského rozhraní v rozhraní IDE a přidejte specializované neovlivní žádné chování.  
   
 ### <a name="file-structure"></a>Struktura souborů  
  Základní struktura *.vsct* soubor je [commandtable –](../../extensibility/commandtable-element.md) kořenový element, který obsahuje [příkazy](../../extensibility/commands-element.md) elementu a [symboly](../../extensibility/symbols-element.md) elementu.  
   
 #### <a name="to-create-the-file-structure"></a>Chcete-li vytvořit strukturu souborů  
   
-1.  Přidat *.vsct* soubor do projektu pomocí následujících kroků v [postupy: vytvoření souboru .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1.  Přidat *.vsct* soubor do projektu pomocí následujících kroků v [jak: Vytvoření souboru .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
 2. Přidejte požadované obory názvů `CommandTable` elementu, jak je znázorněno v následujícím příkladu:  
   
@@ -54,9 +51,9 @@ Tento dokument ukazuje, jak vytvářet *.vsct* soubor k přidání položek nab�
   
 1. V horní části `CommandTable` prvku, přidejte jej `Extern` – element pro každé externích souborů se odkazuje, a nastavit `href` atribut pro název souboru. Následující soubory hlaviček pro přístup k prostředkům v sadě Visual Studio může odkazovat:  
   
-   -   *Stdidcmd.h*: definuje ID pro všechny příkazy, které jsou vystavené sady Visual Studio.  
+   -   *Stdidcmd.h*: Definuje ID pro všechny příkazy, které jsou vystavené sady Visual Studio.  
   
-   -   *Vsshlids.h*: obsahuje ID příkazu pro nabídky sady Visual Studio.  
+   -   *Vsshlids.h*: Obsahuje ID příkazu pro nabídky sady Visual Studio.  
   
 2. Pokud váš balíček volá všechny příkazy, které jsou definovány pomocí sady Visual Studio nebo další balíčky, přidejte `UsedCommands` elementu po `Commands` elementu. Vyplnit tento element s [usedcommand –](../../extensibility/usedcommand-element.md) – element pro každý příkaz, který je volání není součástí vašeho balíčku. Nastavte `guid` a `id` atributy `UsedCommand` prvků, které mají hodnoty GUID a ID příkazů pro volání. 
 

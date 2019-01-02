@@ -2,7 +2,6 @@
 title: 'Postupy: Přidání nebo odebrání importovaných oborů názvů (Visual Basic)'
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - adding imported namespaces
@@ -16,68 +15,68 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df39b7867cd4c7baa2206b2c63634810b2f29dde
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42beee330bcd8ab6003bd44277b77063937cf2d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955175"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Postupy: Přidání nebo odebrání importovaných oborů názvů (Visual Basic)
 
-Import oboru názvů umožňuje používat elementy z daného oboru názvů v kódu bez plně kvalifikovaného elementu. Například, pokud chcete získat přístup `Create` metoda v `System.Messaging.MessageQueue` třídu, můžete importovat `System.Messaging` obor názvů a právě odkazovat na prvek, je nutné v kódu jako `MessageQueue.Create`.
+Import oboru názvů umožňuje použít elementy z daného oboru názvů ve vašem kódu bez plně kvalifikovaného elementu. Například, pokud chcete získat přístup `Create` metoda ve `System.Messaging.MessageQueue` třídy, můžete importovat `System.Messaging` obor názvů a stačí odkazovat na prvek, je nutné v kódu jako `MessageQueue.Create`.
 
- Importované obory názvů jsou spravovány v **odkazy** stránky **Návrhář projektu**. Importy, které zadáte v tomto dialogovém jsou předávány přímo kompilátoru (*/importuje*) a použít pro všechny soubory v projektu. Použít `Imports` příkaz k použití oboru názvů v jediném souboru kódu.
+ Importované obory názvů jsou spravovány v **odkazy** stránku **Návrháře projektu**. Importy, které zadáte v tomto dialogovém jsou předány přímo kompilátor (*/importuje*) a použít na všechny soubory ve vašem projektu. Použít `Imports` příkaz pro použití oboru názvů v jediném souboru kódu.
 
-### <a name="to-add-an-imported-namespace"></a>Chcete-li přidat importovaný obor názvů
+### <a name="to-add-an-imported-namespace"></a>Přidání importované oboru názvů
 
-1.  V **Průzkumníku řešení**, dvakrát klikněte **Můj projekt** uzel pro projekt.
+1.  V **Průzkumníka řešení**, dvakrát klikněte **Můj projekt** uzel projektu.
 
-2.  V **Návrhář projektu**, klikněte **odkazy** karta.
+2.  V **Návrháře projektu**, klikněte na tlačítko **odkazy** kartu.
 
-3.  V **importované obory názvů** seznamu, zaškrtněte políčko pro obor názvů, který chcete přidat.
+3.  V **importované obory názvů** seznam, zaškrtněte políčko pro obor názvů, který chcete přidat.
 
     > [!NOTE]
-    >  Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů v seznamu nezobrazí, musíte přidat odkaz na komponentu, který jej obsahuje. Další informace najdete v tématu [Správa odkazů v projektu](managing-references-in-a-project.md).
+    >  Aby bylo možné importovat, musí být obor názvů v odkazované součásti. Pokud obor názvů se nezobrazí v seznamu, musíte přidat odkaz na komponentu, která ji obsahuje. Další informace najdete v tématu [Správa odkazů v projektu](managing-references-in-a-project.md).
 
-### <a name="to-remove-an-imported-namespace"></a>Chcete-li odebrat importovaný obor názvů
+### <a name="to-remove-an-imported-namespace"></a>Chcete-li odebrat importované oboru názvů
 
-1.  V **Průzkumníku řešení**, dvakrát klikněte **Můj projekt** uzel pro projekt.
+1.  V **Průzkumníka řešení**, dvakrát klikněte **Můj projekt** uzel projektu.
 
-2.  V **Návrhář projektu**, klikněte **odkazy** karta.
+2.  V **Návrháře projektu**, klikněte na tlačítko **odkazy** kartu.
 
 3.  V **importované obory názvů** seznamu, zrušte zaškrtnutí políčka pro obor názvů, který chcete odebrat.
 
 ## <a name="user-imports"></a>Importy uživatele
- Importy uživatele umožňují importovat konkrétní třídu v rámci oboru názvů, nikoli celý obor názvů. Například aplikace může mít například import pro <xref:System.Diagnostics> obor názvů, ale pouze – třída v daném oboru názvů, které vás zajímají je `Debug` třídy. Můžete definovat <xref:System.Diagnostics.Debug> jako uživatel importovat a pak odeberte importu pro <xref:System.Diagnostics>.
+ Importy uživatele bylo možné importovat konkrétní třídu v rámci oboru názvů, ne celý obor názvů. Například aplikace může mít import <xref:System.Diagnostics> je obor názvů, ale pouze třídy v daném oboru názvů, které vás zajímají `Debug` třídy. Můžete definovat <xref:System.Diagnostics.Debug> jako uživatel importovat a pak odeberte import pro <xref:System.Diagnostics>.
 
- Pokud později změníte názor a rozhodnout, který je skutečně v `EventLog` třídu, která je potřeba, můžete zadat <xref:System.Diagnostics.EventLog> jako uživatel importovat a přepsat <xref:System.Diagnostics.Debug> pomocí funkce aktualizace.
+ Pokud později změníte názor a rozhodnout, který se ve skutečnosti na `EventLog` třídy, které jsme potřebovali, můžete například zadat <xref:System.Diagnostics.EventLog> jako uživatel, importovat a přepsat <xref:System.Diagnostics.Debug> pomocí funkce aktualizace.
 
 ### <a name="to-add-a-user-import"></a>Chcete-li přidat import uživatelů
 
-1.  V **Průzkumníku řešení**, dvakrát klikněte **Můj projekt** uzel pro projekt.
+1.  V **Průzkumníka řešení**, dvakrát klikněte **Můj projekt** uzel projektu.
 
-2.  V **Návrhář projektu**, klikněte **odkazy** karta.
+2.  V **Návrháře projektu**, klikněte na tlačítko **odkazy** kartu.
 
-3.  Do textového pole níže **importované obory názvů** seznamu, zadejte úplný název pro obor názvů, které chcete importovat, včetně kořenového oboru názvů.
+3.  Do textového pole níže **importované obory názvů** seznamu, zadejte úplný název pro obor názvů, který chcete importovat, včetně kořenový obor názvů.
 
-4.  Klikněte na tlačítko **přidat import uživatelů** tlačítko přidáte oboru názvů **importované obory názvů** seznamu.
+4.  Klikněte na tlačítko **přidat import uživatelů** tlačítko pro přidání oboru názvů **importované obory názvů** seznamu.
 
     > [!NOTE]
-    > **Přidat import uživatelů** tlačítko bude zakázáno, pokud obor názvů odpovídá jednomu již v seznamu; nelze přidat importu dvakrát.
+    > **Přidat import uživatelů** tlačítko bude zakázáno, pokud obor názvů odpovídá jednomu již v seznamu; nelze přidat import dvakrát.
 
 ### <a name="to-update-a-user-import"></a>Chcete-li aktualizovat import uživatelů
 
-1.  V **Průzkumníku řešení**, dvakrát klikněte **Můj projekt** uzel pro projekt.
+1.  V **Průzkumníka řešení**, dvakrát klikněte **Můj projekt** uzel projektu.
 
-2.  V **Návrhář projektu**, klikněte **odkazy** karta.
+2.  V **Návrháře projektu**, klikněte na tlačítko **odkazy** kartu.
 
-3.  V **importované obory názvů** seznamu, vyberte obor názvů, které chcete změnit.
+3.  V **importované obory názvů** vyberte obor názvů, který chcete změnit.
 
 4.  Do textového pole níže **importované obory názvů** seznamu, zadejte název pro nový obor názvů.
 
 5.  Klikněte na tlačítko **aktualizovat import uživatelů** tlačítko Aktualizovat v oboru názvů **importované obory názvů** seznamu.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)

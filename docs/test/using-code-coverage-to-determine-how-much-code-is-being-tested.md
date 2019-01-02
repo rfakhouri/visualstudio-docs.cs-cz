@@ -2,7 +2,6 @@
 title: Kód pokrytí testování
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958128"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Určení rozsahu testovaného kódu pomocí pokrytí kódu
 
@@ -42,7 +41,7 @@ Funkci pokrytí kódu je k dispozici pouze v edici Visual Studio Enterprise.
 
 2. Chcete-li zobrazit řádky, které byly spuštěny, zvolte ![zobrazit barevné označení ikona pokrytí kódu](../test/media/codecoverage-showcoloringicon.png) **zobrazit barevné označení pokrytí kódu**.
 
-   Pro změnu barvy nebo použití tučného písma zvolte **nástroje** > **možnosti** > **prostředí** > **písma a Barvy** > **zobrazit nastavení pro: textový Editor**. V části **zobrazit položky**, nastavte položky pokrytí.
+   Pro změnu barvy nebo použití tučného písma zvolte **nástroje** > **možnosti** > **prostředí** > **písma a Barvy** > **zobrazit nastavení pro: Textový Editor**. V části **zobrazit položky**, nastavte položky pokrytí.
 
 3. Pokud výsledky zobrazují nízké pokrytí, prozkoumejte, které části kódu nejsou testovány, a vytvořte pro ně další testy. Vývojové týmy obvykle usilují o 80% pokrytí kódu. V některých situacích je přijatelné i nižší pokrytí. Nižší pokrytí je například přijatelné tehdy, pokud je část kódu generována ze standardní šablony.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949333"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Postupy: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními
   Funkci Správa informačních práv (IRM) systému Microsoft Office můžete použít k omezení oprávnění k dokumentu nebo sešitu. Ve výchozím nastavení nemá oprávnění spustit kódu s omezeným přístupem dokument aplikace Microsoft Office Word nebo sešit aplikace Microsoft Office Excel. Výchozí nastavení můžete změnit tak, aby vaše rozšíření spravovaného kódu můžete přístup k objektu modelu, a vaše řešení bude fungovat.  
@@ -56,5 +53,3 @@ ms.locfileid: "53648623"
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
-  
-  

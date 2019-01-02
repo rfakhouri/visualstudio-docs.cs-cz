@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948391"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy závislostí: referenční dokumentace
 
@@ -50,7 +49,7 @@ Použijte diagram závislostí můžete provádět následující úlohy:
 
 -   Posílení zamýšlenou architekturu během vývoje a údržba kódu včetně ověření pomocí vrácení se změnami a operací sestavení.
 
-Toto téma popisuje elementy, které můžete použít na diagram závislostí. Podrobné informace o tom, jak vytvořit a kreslit diagramy závislostí, přečtěte si [diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).
+Toto téma popisuje elementy, které můžete použít na diagram závislostí. Podrobné informace o tom, jak vytvořit a kreslit diagramy závislostí, přečtěte si [diagramy závislostí: Pokyny pro](../modeling/layer-diagrams-guidelines.md). Další informace o vzorech vrstev najdete [vzory a postupy site](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Čtení diagramů závislostí
 
@@ -78,7 +77,7 @@ Můžete propojit s každou vrstvu artefaktů ve vašem řešení, jako jsou pro
 
 Další informace o propojení vrstvami a artefakty naleznete v tématu:
 
--   [Diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md)
+-   [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)
 
 -   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ Na diagram závislostí, otevřete místní nabídku pro jednu nebo více vrstev
 |-|-|
 |**Kategorie**|Druh artefaktu, jako jsou třídy, oboru názvů, zdrojový soubor a tak dále|
 |**Vrstvy**|Vrstva, která odkazuje na artefakt|
-|**Podporuje ověřování**|Pokud **True**, pak do procesu ověření vrstev můžete ověřit, že projekt odpovídá závislostí do nebo z tohoto elementu.<br /><br /> Pokud **False**, potom na odkaz není součástí procesu ověření vrstev.<br /><br /> Další informace najdete v tématu [diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md).|
+|**Podporuje ověřování**|Pokud **True**, pak do procesu ověření vrstev můžete ověřit, že projekt odpovídá závislostí do nebo z tohoto elementu.<br /><br /> Pokud **False**, potom na odkaz není součástí procesu ověření vrstev.<br /><br /> Další informace najdete v tématu [diagramy závislostí: Pokyny pro](../modeling/layer-diagrams-guidelines.md).|
 |**identifikátor**|Odkaz na propojeného artefaktu|
 
 ## <a name="see-also"></a>Viz také:

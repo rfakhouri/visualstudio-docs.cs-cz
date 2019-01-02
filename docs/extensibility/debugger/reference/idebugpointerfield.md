@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerField | Microsoft Docs
-ms.custom: ''
+title: IDebugPointerField | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fc686af78b4ac787abef1c0c52309e82c47376b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947891"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
-Toto rozhraní představuje typ ukazatele.  
+Toto rozhraní reprezentuje typ ukazatele.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,29 +29,29 @@ IDebugPointerField : IDebugContainerField
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Zprostředkovatel symbol implementuje toto rozhraní představovat ukazatel.  
+ Poskytovatel symbolů implementuje toto rozhraní k zastoupení ukazatele.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Použití [QueryInterface](/cpp/atl/queryinterface) k získání tohoto rozhraní z [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) rozhraní Pokud [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) vrátí `FIELD_TYPE_POINTER`.  
+ Použití [QueryInterface](/cpp/atl/queryinterface) získat z tohoto rozhraní [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) rozhraní, pokud [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) vrátí `FIELD_TYPE_POINTER`.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  Kromě metod na `IDebugField` a `IDebugContainerField` rozhraní, toto rozhraní implementuje následující metodu:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Vrátí [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) popisující cíl ukazatele.|  
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Vrátí [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) popisující cílového ukazatele.|  
   
 ## <a name="remarks"></a>Poznámky  
- V jazyce C/C++ ukazatel může být kontejner, pokud se používá s zápis pole. Například uděleno `char *pString`, `pString` má typ ukazatel na `char`. `pString[3]` má typ kontejneru, který je ukazatelem na `char` který odkazuje element čtvrtý tohoto kontejneru.  
+ V jazyce C/C++ ukazatel může mít kontejner, pokud se používá v zápisu pole. Mějme například `char *pString`, `pString` má typ ukazatele na `char`. `pString[3]` typ kontejneru, který je ukazatel na `char` , která odkazuje na čtvrtý prvek kontejneru.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Zprostředkovatel rozhraní symbol](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Rozhraní poskytovatele symbolů](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

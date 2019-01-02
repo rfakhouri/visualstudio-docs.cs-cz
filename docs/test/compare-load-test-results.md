@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7edc5612015d9e0655dfbf00d4db38ba47fb6da9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 52c5ff41a8c1085e39009c240e3416a60a081101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951102"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Sestava zátěžové testy s výsledky pro porovnávání testů a analýzu trendů
 
@@ -43,8 +42,8 @@ Soubor tabulky můžete také sdílet se zúčastněnými stranami, tak, aby zú
 
 |Úlohy|Související témata|
 |-|-|
-|**Vytvoření sestavy výkonu a zátěže:** můžete vytvořit sestavy na zatížení a webové testy výkonu, pomocí aplikace Microsoft Excel.|- [Postupy: vytvoření sestavy zátěžových testů výkonu pomocí aplikace Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
-|**Ruční vytvoření sestavy výkonu a zátěže pomocí aplikace Microsoft Word:** můžete vytvořit sestavy na zatížení a webové testy výkonu ručně zkopírováním a vložením souhrnu, tabulky a data grafu do dokumentu aplikace Microsoft Word.|- [Postupy: ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
+|**Vytvoření sestavy výkonu a zátěže:** Můžete vytvořit sestavy na zatížení a webové testy výkonu, pomocí aplikace Microsoft Excel.|- [Jak: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
+|**Ruční vytvoření sestavy výkonu a zátěže pomocí aplikace Microsoft Word:** Sestavy na zatížení a webové testy výkonu můžete vytvořit ručně zkopírováním a vložením souhrnu, tabulky a data grafu do dokumentu aplikace Microsoft Word.|- [Jak: Ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
 ## <a name="see-also"></a>Viz také:
 

@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952995"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: shromažďování dat IntelliTrace pro ladění složitých problémů
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromažďování dat IntelliTrace pro ladění složitých problémů
 
 Můžete nakonfigurovat adaptér diagnostických dat pro technologii IntelliTrace lze shromažďovat informace o specifickém diagnostickém trasování v Visual Stdio. Testy mohou tento adaptér používat. Test může shromažďovat podstatné diagnostické události aplikace, které může vývojář později použít pro trasování skrze kód a nalezení příčiny chyby. Adaptér diagnostiky dat pro technologii IntelliTrace lze použít pro manuální, nebo automatizované testy.
 

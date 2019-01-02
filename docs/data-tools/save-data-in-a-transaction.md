@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Uložení dat do transakce'
+title: 'Průvodce: Ukládání dat do transakce'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eddd0252bca5cea3f683f0e00133b8e6e66392f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952177"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Návod: Uložení dat do transakce
+# <a name="walkthrough-save-data-in-a-transaction"></a>Průvodce: Ukládání dat do transakce
 
 Tento návod ukazuje, jak uložit data v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto návodu vytvoříte aplikaci Windows Forms. Průvodce konfigurací zdroje dat použijete k vytvoření datové sady pro dvě tabulky v ukázkové databázi Northwind. Přidáte data vázané ovládací prvky do formuláře Windows a upravíte kód BindingNavigator na tlačítko Uložit aktualizace databáze uvnitř objekt TransactionScope.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: použití předdefinovaných položek které lze zabarvit | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití předdefinovaných položek které lze zabarvit | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b537c28f34faff1eff0502642236413f2ade2da1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0884ecd265522b2b0f2a222e12cb01c34c7e8c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947293"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>Postupy: použití předdefinovaných položek které lze zabarvit
+# <a name="how-to-use-built-in-colorable-items"></a>Postupy: Použití předdefinovaných položek které lze zabarvit
 Než použijete integrovanou které lze zabarvit položky, můžete musí nejprve signalizuje, že do integrovaného vývojového prostředí (IDE), že nejsou poskytnutí vlastní vlastní které lze zabarvit položek, které v tomto případě by byly <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objekty. To provedete tak, že nastavíte položku registru pro službu jazyka.  
   
 ## <a name="to-use-built-in-colorable-items"></a>Použití předdefinovaných položek které lze zabarvit  

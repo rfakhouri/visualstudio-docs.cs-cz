@@ -1,9 +1,7 @@
 ---
 title: 'Krok 6: Přidejte problém odečtení'
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
@@ -11,77 +9,77 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f42d2b414e79c1138f699964808ff13a375ec4fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948164"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6: Přidejte problém odečtení
-V šesté části tohoto kurzu budete přidejte problém odečtení a zjistěte, jak provádět následující úlohy:
+V šesté části tohoto kurzu kurzu přidáte úlohu odčítání a zjistěte, jak provádět následující úlohy:
 
--   Uložení hodnot odčítání.
+-   Store hodnoty odčítání.
 
--   Generovat náhodná čísla pro problém (a ujistěte se, že odpověď je od 0 do 100).
+-   Generovat náhodná čísla pro úlohu (a ujistěte se, že odpověď je od 0 do 100).
 
--   Aktualizujte metodu, která kontroluje odpovědi, takže příliš zkontroluje nové odčítání.
+-   Aktualizujte metodu, která kontroluje odpovědi, takže příliš zkontroluje nový problém s odčítáním.
 
--   Aktualizace vašeho časovače <xref:System.Windows.Forms.Timer.Tick> obslužné rutiny události tak, aby obslužná rutina události vyplnila správnou odpověď, když vyprší čas.
+-   Aktualizovat časovače <xref:System.Windows.Forms.Timer.Tick> obslužná rutina události tak, aby obslužná rutina události vyplnila správnou odpověď, když vyprší čas.
 
-## <a name="to-add-a-subtraction-problem"></a>Chcete-li přidat problém odečtení
+## <a name="to-add-a-subtraction-problem"></a>Chcete-li přidat úlohu odčítání
 
-1.  Přidejte do svého formuláře mezi proměnné celé číslo pro sčítání a časovač dvě proměnné celé číslo pro odčítání. Kód by měl vypadat následovně.
+1.  Přidáte dvě celočíselné proměnné pro odčítání do svého formuláře mezi celočíselné proměnné pro sčítání a časovač. Kód by měl vypadat nějak takto.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     Názvy nové proměnné celé číslo –**minuend** a **subtrahend**– nejsou programování podmínky. Jsou tradiční jména v aritmetice pro číslo, které je odečten (subtrahend) a číslo, ze kterého se subtrahend odečítat (minuend). Rozdíl je minuend mínus subtrahend. Můžete použít jiné názvy, protože program nevyžaduje konkrétní názvy proměnných, ovládací prvky, komponenty nebo metody. Je třeba postupovat podle pravidla například názvy není počínaje číslic, ale obecně můžete použít názvy, například x1, x2, x3 a x4. Však obecné názvy znemožňují kód obtížné číst a problémy téměř sledovat. Chcete-li zachovat názvy proměnných jedinečný a užitečné, budete používat tradiční názvy pro násobení (násobenec x násobitel = produkt s) a dělení (dělenec ÷ dělitel = podíl) dále v tomto kurzu.
+     Názvy nových proměnných celých čísel –**minuend** a **subtrahend**– nejsou programovací termíny. Jsou to tradiční názvy v aritmetice pro číslo, které se ještě odečteno (subtrahend) a číslo, ze kterého je menšitel se odečte (minuend). Rozdíl je minuend mínus subtrahend. Můžete použít jiné názvy, protože program nevyžaduje konkrétní názvy pro proměnné, ovládací prvky, komponenty nebo metody. Je třeba dodržovat pravidla, například názvy číslicemi, ale obvykle můžete použít názvy, například x1, x2, x3 a x4. Ale obecný názvy usnadňují mohou ztížit čtení kódu a problémy téměř znemožnit sledování. Pokud chcete zachovat názvy proměnných jedinečný a užitečné, budete používat tradiční názvy pro násobení (násobenec x násobitel = produktu) a dělení (dělitel ÷ Delenec = podíl) později v tomto kurzu.
 
-     Potom budete změníte `StartTheQuiz()` metoda zajistit náhodných hodnot pro odčítání.
+     V dalším kroku upravíte `StartTheQuiz()` metodu pro poskytnutí náhodných hodnot pro problém s odčítáním.
 
-2.  Přidejte následující kód po komentář "Vyplňte odčítání".
+2.  Přidejte následující kód za komentář "Vyplnění úlohy odčítání".
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
 
-     Aby záporné odpovědi na problém odečtení tento kód používá <xref:System.Random.Next> metodu <xref:System.Random> třídy trochu jinak z jak sčítání funguje. Pokud dáváte `Next()` metoda dvě hodnoty, vybere náhodné číslo, které je větší než nebo rovna hodnotě první a menší než druhý. Následující kód vybere náhodné číslo od 1 do 100 a ukládá v proměnné minuend.
+     K nedocházelo k záporným odpovědím pro úlohu odčítání, tento kód používá <xref:System.Random.Next> metodu <xref:System.Random> třídy trochu odlišně od jak na úlohu sčítání. Když poskytnete `Next()` metoda dvě hodnoty, použije náhodné číslo, které je větší než nebo rovno první hodnota a menší než druhý. Následující kód zvolí náhodné číslo od 1 do 100 a uloží jej do proměnné minuend.
 
      [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]
 
-     Můžete volat `Next()` metoda náhodných třídy, která je s názvem "randomizer" dříve v tomto kurzu několika způsoby. Metody, které můžete volat více než jedním způsobem se označují jako přetížený a IntelliSense můžete prozkoumat je. Podívejte se na popis okno IntelliSense pro znovu `Next()` metoda.
+     Můžete volat `Next()` metody třídy Random, kterou jste nazvali "randomizer" dříve v tomto kurzu několika různými způsoby. Metody, které můžete volat více než jedním způsobem, se nazývají přetížené a můžete je zkoumala technologie IntelliSense. Znovu se podívejte na text nápovědy v okně technologie IntelliSense `Next()` metody.
 
-     ![Okno IntelliSense popisu tlačítka](../ide/media/express_overloads.png)
+     ![Okno popisu tlačítka technologie IntelliSense](../ide/media/express_overloads.png)
 **IntelliSense** okno popisu tlačítka
 
-     Zobrazí popisek **(+ 2 overload(s))**, což znamená, že můžete volat `Next()` metoda dva další způsoby. Přetížení obsahovat různý počet nebo různé typy argumentů, tak, aby fungovaly trochu jinak od sebe navzájem. Například metoda může trvat celé číslo jeden argument a jeden z jeho přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení založené na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně IntelliSense při zadání `randomizer.Next(`. Chcete-li procházení přetížení, zvolte **šipka nahoru** a **šipka dolů** klíče, jak je znázorněno na následujícím obrázku:
+     Zobrazí se popis **(+ 2 overload(s))**, což znamená, že můžete volat `Next()` metoda dvěma dalšími způsoby. Přetížení obsahují různá čísla nebo typy argumentů, tak, aby fungovaly mírně odlišně od sebe. Například metoda může převzít jediný celočíselný argument a jedno z jejich přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení na základě na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně technologie IntelliSense ihned poté, co zadáte `randomizer.Next(`. Chcete-li cyklování skrze přetížení, zvolte **šipka nahoru** a **šipka dolů** klíče, jak je znázorněno na následujícím obrázku:
 
-     ![Přetížení pro další&#40; &#41; metoda IntelliSense](../ide/media/express_nextoverload.png) přetížení pro **Next()** metoda v **IntelliSense**
+     ![Přetížení pro další&#40; &#41; metoda v technologii IntelliSense](../ide/media/express_nextoverload.png) přetížení pro **Next()** metoda **technologie IntelliSense**
 
-     V takovém případě budete chtít zvolte poslední přetížení, protože můžete zadat minimální a maximální hodnoty.
+     V tomto případě chcete zvolit poslední přetížení, protože můžete určit minimální a maximální hodnoty.
 
-3.  Změnit `CheckTheAnswer()` metodu ke kontrole správné odčítání odpověď.
+3.  Upravit `CheckTheAnswer()` metodu ke kontrole správného odečtení odpovědí.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     V jazyce Visual C# `&&` je `logical and` operátor. V jazyce Visual Basic je ekvivalentní operátor `AndAlso`. Tyto operátory uvádí "Pokud součet addend1 a addend2 rovná hodnotě součtu NumericUpDown, a pokud minuend mínus subtrahend roven hodnotě rozdílu NumericUpDown." `CheckTheAnswer()` Metoda vrátí `true` pouze v případě, že se odpovědi na přidání a problémů odčítání správné.
+     V jazyce Visual C# `&&` je `logical and` operátor. V jazyce Visual Basic je ekvivalentní operátor `AndAlso`. Tyto operátory označují "Pokud součet addend1 a addend2 je roven hodnotě součtu NumericUpDown a minuend mínus subtrahend je roven hodnotě rozdílu NumericUpDown." `CheckTheAnswer()` Vrátí metoda `true` pouze v případě, že odpovědi na sčítání a odčítání problémy jsou obě správné.
 
-4.  Poslední část obslužné rutiny události časovače značek nahraďte následujícím kódem, tak, že vyplní správnou odpověď, když vyprší čas.
+4.  Nahraďte poslední část obslužné rutiny události cyklů časovače následujícím kódem, tak, aby vyplnila správnou odpověď, když vyprší čas.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  Uložte a spusťte vašeho kódu.
+5.  Uložte a spusťte váš kód.
 
-     Váš program zahrnuje odčítání, jak ukazuje následující obrázek:
+     Váš program zahrnuje úlohu odčítání, jako je vidět na následujícím obrázku:
 
-     ![Matematického kvízu s problém odečtení](../ide/media/express_addsubtract.png)
-**matematického kvízu** s problém odečtení
+     ![Matematický kvíz s úlohou odečítání](../ide/media/express_addsubtract.png)
+**matematického kvízu** s úlohou odečítání
 
 ## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat
 
--   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 7: přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).
+-   Přechod k dalšímu kroku výukového programu naleznete v tématu [krok 7: Přidejte problémy násobení a dělení](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Chcete-li vrátit k předchozímu kroku kurzu, přečtěte si téma [krok 5: přidejte zadejte obslužných rutin událostí pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+-   Chcete-li vrátit k předchozímu kroku tutoriálu, přečtěte si téma [krok 5: Přidání obslužné rutiny událostí Enter pro ovládací prvky NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

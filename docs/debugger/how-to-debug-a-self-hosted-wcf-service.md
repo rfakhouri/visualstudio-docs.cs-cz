@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: ladění služby WCF v místním prostředí | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Ladění služby WCF v místním prostředí | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956124"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Postupy: Ladění služby WCF s vlastním hostováním
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Postupy: Ladění služby WCF v místním prostředí
 A *služby v místním prostředí* je služba WCF, která není spuštěna služba IIS, hostitel služby WCF nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] vývojový Server. Nejjednodušší způsob, jak ladit WCF s vlastním hostováním, je konfigurace [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ke spuštění klienta i serveru, když zvolíte **spustit ladění** na **ladění** nabídky.  
   
  Tuto metodu nelze použít, pokud je služba WCF s vlastním hostováním uvnitř procesu, který nelze spustit tímto způsobem, jako je služba NT. Místo toho lze provést jednu z následujících možností:  
@@ -53,9 +51,9 @@ A *služby v místním prostředí* je služba WCF, která není spuštěna slu�
   
    5.  Na řádku, který odpovídá projektu klientu, klikněte na tlačítko **akce** a zvolte **Start**.  
   
-   6.  Klikněte na tlačítko **OK**.  
+   6.  Klikněte na **OK**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění služeb WCF](../debugger/debugging-wcf-services.md)   
  [Omezení ladění WCF](../debugger/limitations-on-wcf-debugging.md)   
- [Postupy: Krokování s vnořením služeb WCF](../debugger/how-to-step-into-wcf-services.md)
+ [Postupy: Krokování s vnořením služeb WCF](../debugger/how-to-step-into-wcf-services.md)

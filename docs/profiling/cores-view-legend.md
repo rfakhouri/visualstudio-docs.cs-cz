@@ -1,8 +1,6 @@
 ---
-title: Legenda zobrazení jader | Microsoft Docs
-ms.custom: ''
+title: Legenda zobrazení jader | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.legend
@@ -14,28 +12,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 61d05ffc3bb2a43b29e2e5c91a7b28f5b8d1224a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949521"
 ---
 # <a name="cores-view-legend"></a>Legenda zobrazení jader
-Legenda zobrazení jader identifikuje každé vlákno barva a název. Obsahuje sloupce, které se zobrazí počty pro přepnutí kontextu cross-core, celkový kontextu přepínače a procent kontextu přepínače, které zasahují jader. Řádky v legendě jsou seřazené podle počtu přepnutí kontextu cross-core, v sestupném pořadí.  
+Legenda zobrazení jader identifikuje každý podproces, barvu a název. Obsahuje sloupce, které zobrazují počty pro přepnutí kontextu mezi jádry a celkem přepnutí kontextu, procento přepínačů kontextů napříč jádry. Řádky v legendě jsou seřazené podle počtu přepínače kontextu mezi jádry v sestupném pořadí.  
   
- Můžete vybrat řádky v legendě pro filtrování vláken, které se zobrazují v časovou osu. V časové ose jsou uvedeny pouze vybrané vláken. Pokud nejsou vybrány žádné řádky, zobrazí se všechny řádky v časovou osu.  
+ Výběr řádků v legendě pro filtrování vláken, která se zobrazí na časové ose. Na časové ose se zobrazí jen vybraná vlákna. Pokud nejsou vybrány žádné řádky, zobrazí se všechny řádky na časové ose.  
   
- Mezi základní kontext přepínačů náklady na další v režijní náklady a výkon než přepínače, které zůstávají ve stejné logické jádra. Při přepnutí kontextu registry procesoru jsou uložený a obnovený, kód jádra operačního systému se spustí, jsou znovu načíst položky překladu Page Table Entry vyrovnávací paměti a procesoru kanál vyprazdňuje. Mezi základní kontext přepínače může být i dražší než jiné přepínače kontextu, protože data v mezipaměti není platná pro tento přístup z více vláken na jiné jádra. Naproti tomu Pokud vlákno kontextu přepnuta do jádra, které dřív spustil na, je pravděpodobné, že užitečné data jsou stále v mezipaměti. Když zvýšili mezi základní kontext přepínače pokoušejí spravovat přístup z více vláken je degradovaný spřažení a výkonu, zvažte, zda chcete-li vyřešit tento problém. Spusťte odstraněním spřažení vláken a pak pozorovat, jejich výsledné chování mezi procesory.  
+ Kontextu mezi jádry přepne náklady na další režii a výkonu než přepínače, které zůstávají ve stejné logické jádro. Při přepnutí kontextu registrech procesoru jsou uložený a obnovený, spuštění kódu jádra operačního systému, jsou znovu načíst položky překladu Page Table Entry vyrovnávací paměti a procesoru kanál vyprazdňuje. Přepnutí kontextu mezi jádry může být i dražší než jiné přepnutí kontextu, protože není platný pro toto vlákno na jiné základní data v mezipaměti. Naproti tomu Pokud vlákno přepnout kontext na jádro, které dříve spuštěno na, je pravděpodobné, že je užitečná data stále v mezipaměti. Při přepnutí kontextu mezi jádry zvýšily pokoušejí spravovat vlákno má snížený výkon a vztahů, zvažte, jestli chcete tento problém vyřešit. Začněte tím, že odstranění spřažení vláken a poté můžete sledovat výsledné chování napříč jádry.  
   
  Následující tabulka popisuje prvky legendy.  
   
 |Prvek|Definice|  
 |-------------|----------------|  
-|Název vlákna|Zobrazí barvu vlákno v předchozí časová osa jader a název tento přístup z více vláken.|  
-|Mezi základní kontext přepínače|Počet kontextu přepínačů pro vlákno, které z jednoho logického jádra také přepnout do jiného. Ho nebude rozlišit mezi základní kontext přepínače, které mezi z die jeden procesor na jiný a ty, které zůstanou na stejném die.|  
-|Celkový počet kontextu přepínače|Celkový počet přepínačů kontext pro dané vlákno během intervalu získávání vzorků. Pokaždé, když vlákno změny kontextu (například ze spuštění se synchronizací) jeden kontextu přepínač se počítá.|  
-|Procento kontextu přepínače, které zasahují jader|Počítá se jako procento vydělením počtu přepnutí kontextu jádra mezi počtem celkový kontextu přepínače. Tím vyšší toto procento, tím vyšší celkový efekt režii mezi základní kontext přepne na výkon této konkrétní přístup z více vláken.|  
+|Název vlákna|V předchozí časová osa jader a název tohoto vlákna se zobrazuje barva vlákna.|  
+|Přepnutí kontextu mezi jádry|Počet přepnutí kontextu pro vlákno, které také přepnout z jednoho logického jádra do jiného. Se nerozlišují varianty jádro přepínačů kontextů napříč z kostka jeden procesor do jiného a ty, které zůstat na stejném kostka.|  
+|Celkem přepnutí kontextu|Celkový počet přepnutí kontextu pro dané vlákno během intervalu získávání vzorků. Pokaždé, když vlákno změní jeden přepnutí kontextu kontextu (například ze spuštění synchronizace) se počítá.|  
+|Procento přepínačů kontextů napříč jádry|Vypočítaná jako procento aplikací jako podíl počtu kontextu mezi jádry přepínače podle počtu celkem přepnutí kontextu. Čím vyšší toto procento, tím větší celkového efektu režii kontextu mezi jádry přepne na výkon toto konkrétní vlákno.|  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení jader](../profiling/cores-view.md)

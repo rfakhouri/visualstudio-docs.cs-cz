@@ -1,8 +1,6 @@
 ---
 title: Výběr strategie aktualizace ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4da8dddc667b032c6c284dc62197ff05a1a328f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e09bdaff6d3b5a584091f05eae7d21b0aba256b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946656"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Volba strategie aktualizace ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] může poskytovat automatické aktualizace aplikace. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pravidelně čte soubor manifestu nasazení, pokud chcete zobrazit, zda jsou k dispozici aktualizace aplikace. Pokud je k dispozici nová verze aplikace, je stažena a spuštěna. Z důvodu efektivity budou staženy pouze soubory, které byly změněny.  

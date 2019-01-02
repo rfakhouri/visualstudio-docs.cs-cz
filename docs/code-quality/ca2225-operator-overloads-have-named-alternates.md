@@ -2,7 +2,6 @@
 title: 'CA2225: Přetížení operátoru mají pojmenované alternativy'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - OperatorOverloadsHaveNamedAlternates
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a12060752317a2b4c23ec2eba7e96e945be00db0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954802"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Přetížení operátoru mají pojmenované alternativy
 
@@ -44,20 +43,20 @@ ms.locfileid: "49914577"
 |---------|------------------|-----------|--------------------|
 |+ (binární)|+|+ (binární)|Přidejte|
 |+=|+=|+=|Přidejte|
-|&|a|&|BitwiseAnd|
+|&|A|&|BitwiseAnd|
 |&=|A =|&=|BitwiseAnd|
 |&#124;|Nebo|&#124;|BitwiseOr|
 |&#124;=|Nebo =|&#124;=|BitwiseOr|
 |--|Není k dispozici|--|Snížení|
 |/|/|/|Dělení|
 |/=|/=|/=|Dělení|
-|==|=|==|rovná se|
+|==|=|==|Je rovno|
 |^|XOR|^|XOR|
 |^=|XOR =|^=|XOR|
 |>|>|>|Porovnat|
 |>=|>=|>=|Porovnat|
 |++|Není k dispozici|++|Přírůstek|
-|<>|!=|rovná se|
+|<>|!=|Je rovno|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
 |<|<|<|Porovnat|
@@ -101,7 +100,7 @@ ms.locfileid: "49914577"
 
  [CA2226: Operátory by měly mít symetrické přetížení](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Přepište Equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Přepište equals při přetížení operátoru rovnosti](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2218: Přepište GetHashCode při přepsání Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 

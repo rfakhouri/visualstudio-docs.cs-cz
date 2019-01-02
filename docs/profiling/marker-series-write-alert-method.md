@@ -1,8 +1,6 @@
 ---
-title: marker_series::write_alert – metoda | Microsoft Docs
-ms.custom: ''
+title: marker_series::write_alert – metoda | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 43da603670f2eccca408b8a47b13c8a9b9ea79ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950021"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert – metoda
-Zapíše výstrahu vizualizér souběžnosti trasovacího souboru.  
+Zapíše upozornění do souboru trasování vizualizátoru souběžnosti.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +33,7 @@ void write_alert(
   
 #### <a name="parameters"></a>Parametry  
  `_Format`  
- Složený formátovací řetězec, který obsahuje text smíšeného s nula nebo více položek formátu, odpovídajících objektů v seznamu argumentů.  
+ Složený řetězec formátu, který obsahuje textu smíšeného s nula nebo více položek formátu, který odpovídá objektům v seznamu argumentů.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkersobj.h*  

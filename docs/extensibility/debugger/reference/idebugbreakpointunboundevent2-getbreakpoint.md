@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointUnboundEvent2::GetBreakpoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointUnboundEvent2::GetBreakpoint
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6606c239ca8db24d1e6794715d2e0a9388d0db6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6c99a3ed47cfba2ffba04084acb9f8ed247cfee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954549"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 Získá zarážce, kterou začal být nevázaného.  
@@ -28,13 +25,13 @@ Získá zarážce, kterou začal být nevázaného.
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-HRESULT GetBreakpoint(   
+HRESULT GetBreakpoint(   
    IDebugBoundBreakpoint2** ppBP  
 );  
 ```  
   
 ```csharp  
-int GetBreakpoint(   
+int GetBreakpoint(   
    out IDebugBoundBreakpoint2 ppBP  
 );  
 ```  

@@ -1,8 +1,6 @@
 ---
 title: Další podpora pro chyby v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -59,12 +57,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 9181b74da09f87d1c19805995b527b9fbd56c52f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946289"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Další podpora pro chyby v řešeních pro systém Office
   Můžete použít následující zdroje vám pomůžou najít odpovědi na problémy, na které narazíte, jako je vytváření řešení pro systém Office v sadě Visual Studio.  
@@ -93,5 +91,3 @@ ms.locfileid: "52304451"
  [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)   
  [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)   
  [Další zdroje informací pro vývoj řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
-  
-  

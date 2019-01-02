@@ -3,7 +3,6 @@ title: Referenční dokumentace rozhraní API produktu Visual Studio Profiler (n
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945022"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profiler API reference (nativní)
 Rozhraní API profileru Visual Studio umožňují programově řídit objemu shromážděných dat a vkládání značek časovým razítkem a profil během profilace. Použití nativních rozhraní API, můžete zahrnout *VSPerf.h* záhlaví a přidejte *VSPerf.lib* ve vašem projektu.  

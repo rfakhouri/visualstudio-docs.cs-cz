@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Ukládání uživatelských nastavení na úvodní stránce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Ukládání uživatelských nastavení na úvodní stránce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
@@ -11,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa57fb8c4e0c85ff7a9c1b258f1c326a241442c3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948768"
 ---
-# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Návod: Ukládání uživatelských nastavení na úvodní stránce
+# <a name="walkthrough-save-user-settings-on-a-start-page"></a>Průvodce: Ukládat nastavení uživatele na úvodní stránce
 Je možné zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto postupu můžete vytvořit ovládací prvek, který se nastavení uloží do registru, když uživatel klikne na tlačítko a pak načte nastavení pokaždé, když se načte úvodní stránky. Vzhledem k tomu, že šablona projektu úvodní stránka obsahuje přizpůsobitelný uživatelského ovládacího prvku a výchozí spuštění stránky XAML volá tento ovládací prvek, není nutné upravit vlastní úvodní stránky.  
   
- Nastavení úložiště, která je vytvořena instance v tomto návodu je instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> rozhraní, která čte a zapisuje do následujícího umístění registru, když je volána: **HKCU\Software\Microsoft\VisualStudio\14.0\\ \<Název_kolekce >**  
+ Nastavení úložiště, která je vytvořena instance v tomto návodu je instance <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> rozhraní, která čte a zapisuje do následujícího umístění registru, když je volána: **HKCU\Software\Microsoft\VisualStudio\14.0\\\<Název_kolekce >**  
   
  Když je spuštěn v experimentální instanci sady Visual Studio, úložiště nastavení čte a zapisuje do **HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<Název_kolekce >.**  
   
@@ -175,7 +172,7 @@ Je možné zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto
   
 3.  V **prostředí** uzel, klikněte na tlačítko **spuštění**a pak na **přizpůsobit úvodní stránku** seznamu vyberte **[nainstalované rozšíření] uložit Moje nastavení úvodní stránka** .  
   
-     Klikněte na tlačítko **OK**.  
+     Klikněte na **OK**.  
   
 4.  Zavřít úvodní stránku, pokud je otevřený a potom na **zobrazení** nabídky, klikněte na tlačítko **úvodní stránka**.  
   

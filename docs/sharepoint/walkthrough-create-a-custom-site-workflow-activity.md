@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření vlastní pracovní postup aktivity na webu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření aktivity pracovního postupu vlastní web | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951810"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Návod: Vytvoření vlastní pracovní postup aktivity webu
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Průvodce: Vytvoření pracovního postupu aktivity vlastního webu
   Tento návod ukazuje, jak vytvořit vlastní aktivitu pro pracovní postup na úrovni serveru pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Pracovní postupy na úrovni serveru platí pro celý web, nikoli pouze seznam na webu.) Vlastní aktivita vytvoří zálohu seznam oznámení a pak do něj zkopíruje obsah seznam oznámení.  
   
  Tento návod demonstruje následující úkoly:  
@@ -128,6 +123,5 @@ ms.locfileid: "49894167"
 5.  Na panelu Rychlé spuštění zvolte **oznámení zálohování** odkaz. Všimněte si, že všechna oznámení, které jsou součástí **oznámení** seznamu byly zkopírovány do tohoto nového seznamu.  
   
 ## <a name="see-also"></a>Viz také:
- [Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Postupy: Vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)   
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -2,7 +2,6 @@
 title: Přejít na – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.goto
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e583ee3bcb764d09bed9907710454dd6c39c6b8d
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1f23c0dafcee52e3b4a9c38cc562aa1e428e06a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946851"
 ---
 # <a name="go-to-command"></a>Přejít na – příkaz
 Přesune kurzor na zadaný řádek.
@@ -34,12 +33,12 @@ Edit.GoTo [linenumber]
 ## <a name="arguments"></a>Arguments
  `linenumber`
 
- Volitelné. Celé číslo představující číslo řádku přejít na.
+ Volitelné. Celé číslo představující číslo řádku, přejděte na.
 
 ## <a name="remarks"></a>Poznámky
- Čísla řádků začíná na jednu. Pokud hodnota `linenumber` je menší než 1, první řádek zobrazí. Pokud hodnota `linenumber` je větší než počet poslední řádek zobrazí poslední řádek.
+ Číslování řádků začíná u jedné. Pokud hodnota `linenumber` je menší než 1, první řádek zobrazí. Pokud hodnota `linenumber` je větší než počet poslední řádek zobrazí poslední řádek.
 
- Pokud nezadáte hodnotu `linenumber` není zadán, **přejít na řádek** zobrazí dialogové okno.
+ Pokud hodnotu `linenumber` není zadán, **přejít na řádek** zobrazí dialogové okno.
 
  Alias pro tento příkaz je GoToLn.
 
@@ -53,5 +52,5 @@ Edit.GoTo [linenumber]
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

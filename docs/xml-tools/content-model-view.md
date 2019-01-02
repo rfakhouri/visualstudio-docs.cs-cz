@@ -2,7 +2,6 @@
 title: Zobrazení návrháře modelu obsahu schématu XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a151daa4419c24464aeeafd9a3b58d202a6e82b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a38ca198c4f5a84b1792142078f92398aeeaa4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942579"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951469"
 ---
 # <a name="content-model-view"></a>Zobrazení modelu obsahu
 
@@ -37,7 +36,7 @@ Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a 
 
  Model obsahu uzlu je reprezentován rozšíření grafické stromu s prvky a atributy vyskytující se jako uzly stromu. Ve výchozím nastavení je rozšířit jenom jedna úroveň. Další informace, jako je například tvůrce, názvy typů, skupiny a další kontejnery jsou umístěny v svislá čára (při rozbalení) podél elementy a atributy, které jsou uzavřete. Když dvakrát kliknete na svislý pruh, stane se vodorovný a sbalí stromu. Když dvakrát kliknete na vodorovný pruh, stane se svislé a strom roste směrem. Výběr svislá čára vybere všechny uzly v kontejneru. Rozšíření se zobrazí na pravé straně uzlu v případě, že element může být rozbalená nebo sbalená.
 
- Pokud návrhové ploše je prázdné, editoru XML **Průzkumníka schémat XML**, a jsou uvedeny vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení návrháře XSD. Pokud sadě schémat obsahuje chyby, na konci seznamu se zobrazí následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
+ Pokud návrhové ploše je prázdné, editoru XML **Průzkumníka schémat XML**, a jsou uvedeny vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení návrháře XSD. Pokud sadě schémat obsahuje chyby, zobrazí se na konci seznamu následující text: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
 
 ## <a name="breadcrumb-bar"></a>Navigační panel
 
@@ -83,9 +82,9 @@ Zobrazení modelu obsahu poskytuje grafické znázornění schématu místní a 
 
 |Možnost|Popis|
 |-|-----------------|
-|**Ukázat počáteční zobrazení**|Přepne [počáteční zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**1**.|
-|**Ukázat zobrazení modelu obsahu**|Přepne [zobrazení modelu obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**2**.|
-|**Ukázat zobrazení grafu**|Přepne [grafu zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **Ctrl**+**3**.|
+|**Ukázat počáteční zobrazení**|Přepne [počáteční zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**1**.|
+|**Ukázat zobrazení modelu obsahu**|Přepne [zobrazení modelu obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**2**.|
+|**Ukázat zobrazení grafu**|Přepne [grafu zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupný pomocí klávesové zkratky: **CTRL**+**3**.|
 |**Vymazat pracovní prostor**|Vymaže pracovní prostor a návrhovou plochu.|
 |**Odebrat z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
 |**Odeberte všechny kromě výběru z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu.|

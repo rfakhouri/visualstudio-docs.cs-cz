@@ -1,8 +1,6 @@
 ---
 title: Ladění kódu uživatele pomocí funkce pouze můj kód | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 10/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389024"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952044"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Ladit jenom uživatelský kód pomocí funkce pouze můj kód 
 
@@ -139,10 +137,10 @@ A *.natstepfilter* soubor je soubor XML s následující syntaxí:
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|`Function`|Požadováno. Určuje jednu nebo více funkcí jako funkcí nedefinovaných uživatelem.|  
-|`Name`|Požadováno. ECMA 262 ve formátu regulárních výrazů zadáním názvu plná funkčnost tak, aby odpovídaly. Příklad:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> sdělí ladicímu programu, že všechny metody v `MyNS::MyClass` mají být považovány za neuživatelský kód. Shoda rozlišuje velká a malá písmena.|  
+|`Function`|Povinný parametr. Určuje jednu nebo více funkcí jako funkcí nedefinovaných uživatelem.|  
+|`Name`|Povinný parametr. ECMA 262 ve formátu regulárních výrazů zadáním názvu plná funkčnost tak, aby odpovídaly. Příklad:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> sdělí ladicímu programu, že všechny metody v `MyNS::MyClass` mají být považovány za neuživatelský kód. Shoda rozlišuje velká a malá písmena.|  
 |`Module`|Volitelné. ECMA 262 ve formátu regulárních výrazů zadáním úplná cesta k modulu, který obsahuje funkci. Shoda nerozlišuje malá a velká písmena.|  
-|`Action`|Požadováno. Jedna z těchto hodnot malá a velká písmena:<br /><br /> `NoStepInto`  -sdělí ladicímu programu, aby přešel přes funkci.<br /> `StepInto`  -dává pokyn ladicímu programu vstup do funkce přepsání jiného `NoStepInto` pro odpovídající funkce.|  
+|`Action`|Povinný parametr. Jedna z těchto hodnot malá a velká písmena:<br /><br /> `NoStepInto`  -sdělí ladicímu programu, aby přešel přes funkci.<br /> `StepInto`  -dává pokyn ladicímu programu vstup do funkce přepsání jiného `NoStepInto` pro odpovídající funkce.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Přizpůsobení chování zásobníku volání jazyka C++  
 
@@ -177,20 +175,20 @@ A *.natjmc* soubor je soubor XML s následující syntaxí:
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Úplná cesta modulu nebo modulech. Můžete použít zástupné znaky Windows `?` (žádný nebo jeden znak) a `*` (nula nebo více znaků). Například<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> sdělí ladicímu programu, aby považoval všechny moduly v *\3rdParty\UtilLibs* v jakékoli jednotce jako externí kód.|  
+|`Name`|Povinný parametr. Úplná cesta modulu nebo modulech. Můžete použít zástupné znaky Windows `?` (žádný nebo jeden znak) a `*` (nula nebo více znaků). Například<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> sdělí ladicímu programu, aby považoval všechny moduly v *\3rdParty\UtilLibs* v jakékoli jednotce jako externí kód.|  
 |`Company`|Volitelné. Název společnosti, která publikuje modul, který je vložen do spustitelného souboru. Tento atribut slouží k rozlišení moduly.|  
   
  **Atributy souboru**  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Úplná cesta ke zdrojovému souboru nebo souborů považovat za externí kód. Můžete použít zástupné znaky Windows `?` a `*` při zadání cesty.|  
+|`Name`|Povinný parametr. Úplná cesta ke zdrojovému souboru nebo souborů považovat za externí kód. Můžete použít zástupné znaky Windows `?` a `*` při zadání cesty.|  
   
  **Atributy prvků – funkce**  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Plně kvalifikovaný název funkce, který má zpracovávat jako externí kód.|  
+|`Name`|Povinný parametr. Plně kvalifikovaný název funkce, který má zpracovávat jako externí kód.|  
 |`Module`|Volitelné. Název nebo úplná cesta k modulu, který obsahuje funkci. Tento atribut slouží k rozlišení funkce se stejným názvem.|  
 |`ExceptionImplementation`|Pokud je nastavena na `true`, zásobník volání se zobrazí funkce, která vyvolala výjimku, spíše než tuto funkci.|  
   

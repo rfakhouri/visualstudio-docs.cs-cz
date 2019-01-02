@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfColumns | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_numberOfColumns | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d01c4e3c13168ebf36e24388986b1c86cfe6f92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 24c6078cd1246e5bcb13938e31f65e67f5615e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953193"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
-Načte počet sloupců v matici.  
+Získá počet sloupců v matici.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +29,10 @@ HRESULT get_numberOfColumns(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `DWORD` který obsahuje počet sloupců v matici.  
+ [out] Ukazatel `DWORD` , který obsahuje počet sloupců v matici.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956839"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Když uživatel provede operaci správy zdrojových kódů v rámci integrovaného vývojového prostředí (IDE), modul plug-in správy zdrojového kódu může být vhodné k předání chyba nebo stav zprávy týkající se operace. Modul plug-in zobrazíte jeho vlastní okna se zprávou pro tento účel. Ale pro další bezproblémovou integraci, modul plug-in můžete předat řetězce integrovaného vývojového prostředí, které zobrazí je v jeho nativní způsob zobrazení informací o stavu. Je mechanismus pro to, `LPTEXTOUTPROC` ukazatel na funkci. Rozhraní IDE implementuje tuto funkci (podrobněji popsaný níže) pro zobrazení stavů a chyb.  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Odeslat s řetězec žádné zprávy.|  
 |`SCC_MSG_STARTCANCEL`|Začne, zobrazení **zrušit** tlačítko.|  
 |`SCC_MSG_STOPCANCEL`|Zastaví zobrazování **zrušit** tlačítko.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Požádá integrovaného vývojového prostředí, pokud je operace na pozadí zruší: IDE vrátí `SCC_MSG_RTN_CANCEL` Pokud byla operace zrušena; v opačném případě vrátí `SCC_MSG_RTN_OK`. `display_string` Parametr je typovaná jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Pokud je operace na pozadí zruší požádá integrované vývojové prostředí: Vrátí IDE `SCC_MSG_RTN_CANCEL` Pokud byla operace zrušena; v opačném případě vrátí `SCC_MSG_RTN_OK`. `display_string` Parametr je typovaná jako [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Poskytuje integrované vývojové prostředí o souboru před načtením ze správy verzí. `display_string` Parametr je typovaná jako [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Poskytuje integrované vývojové prostředí o souboru po jeho načtení ze správy verzí. `display_string` Parametr je typovaná jako [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Instruuje integrované vývojové prostředí aktuálního stavu operaci na pozadí. `display_string` Parametr je typovaná jako [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) struktury, který je poskytnut pomocí modulu plug-in správy zdrojového kódu.|  

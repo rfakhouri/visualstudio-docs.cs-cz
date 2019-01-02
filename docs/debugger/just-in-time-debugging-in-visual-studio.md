@@ -1,8 +1,6 @@
 ---
 title: Zakázat Just-In-Time Debugger | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959784"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>Zakázat Just-In-Time Debugger 
+# <a name="disable-the-just-in-time-debugger"></a>Zakázání ladicího programu pro ladění za běhu 
 
 Dialogové okno ladicího programu za běhu může spustit při výskytu chyby v běžící aplikaci a aplikace zabrání v pokračování. 
 
@@ -46,4 +44,3 @@ Pokud nemáte nainstalovanou sadu Visual Studio, je možné zabránit Just-In-Ti
 Po zakázání Just-In-Time ladění aplikace moci chybu zpracovat a bude normálně fungovat. 
 
 Pokud má stále neošetřené chybě, může se zobrazit chybová zpráva nebo může dojít k chybě nebo zablokování aplikace. Aplikace nespustí obvykle, dokud nebudou opraveny chyby. Zkuste kontaktovat vlastníka aplikace a požádejte ho, aby ho opravit.
-

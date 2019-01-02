@@ -2,7 +2,6 @@
 title: otevřít projekt – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 34a6783e71d2a6dfee718aa441fbb3007aa71fa9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946237"
 ---
 # <a name="open-project-command"></a>Otevřít projekt – příkaz
 
@@ -38,7 +37,7 @@ File.OpenProject filename
 
 `filename`
 
-Požadováno. Úplnou cestu a název souboru název projektu nebo řešení mohlo být otevřeno.
+Povinný parametr. Úplnou cestu a název souboru název projektu nebo řešení mohlo být otevřeno.
 
 > [!NOTE]
 > Syntaxe `filename` argument vyžaduje, aby cesty, které obsahují mezery, použijte uvozovky.

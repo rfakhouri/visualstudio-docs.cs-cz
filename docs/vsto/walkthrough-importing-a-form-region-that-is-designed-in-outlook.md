@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Importujte oblasti formuláře navržené v aplikaci Outlook'
-ms.custom: ''
+title: 'Průvodce: Import oblasti formuláře navržené v aplikaci Outlook'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956176"
 ---
-# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Návod: Importujte oblasti formuláře navržené v aplikaci Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Průvodce: Import oblasti formuláře navržené v aplikaci Outlook
   Tento návod ukazuje, jak návrh oblasti formuláře v aplikaci Microsoft Office Outlook a pak pomocí import oblasti formuláře do projektu doplňku VSTO pro Outlook **novou oblast formuláře** průvodce. Návrh oblasti formuláře v Outlooku umožňuje přidat nativní ovládací prvky aplikace Outlook k oblasti formuláře, který svázat data Outlooku. Jakmile dokončíte import oblasti formuláře, můžete zpracovávat události každého ovládacího prvku.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -48,7 +45,7 @@ ms.locfileid: "49903514"
 > [!NOTE]  
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení integrovaného vývojového prostředí sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak oblasti formuláře Outlooku I: vytvoření pomocí sady Visual Studio 2008?](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Vytváření oblastí formulářů aplikace Outlook pomocí sady Visual Studio 2008? ](http://go.microsoft.com/fwlink/?LinkID=130305).  
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Návrh oblasti formuláře pomocí návrhářem oblasti formuláře v aplikaci Outlook  
  V tomto kroku navrhnete oblasti formuláře v Outlooku. Budete pak uložení oblasti formuláře k umístění služby – hledání tak, aby je bylo možné importovat do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49903514"
   
 1.  Spusťte aplikaci Microsoft Office Outlook.  
   
-2.  V aplikaci Outlook na **Developer** klikněte na tlačítko **návrhu formuláře**. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+2.  V aplikaci Outlook na **Developer** klikněte na tlačítko **návrhu formuláře**. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  V **návrhu formuláře** klikněte **úloh**a potom klikněte na tlačítko **otevřít**.  
   
@@ -127,7 +124,7 @@ ms.locfileid: "49903514"
   
 3.  Uložte projekt do výchozí adresář projektu.  
   
-     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 ## <a name="import-the-form-region"></a>Import oblasti formuláře  
  Můžete importovat oblasti formuláře navržené v aplikaci Outlook do projektu doplňku VSTO pro Outlook s použitím **novou oblast formuláře Outlooku** průvodce.  
@@ -248,7 +245,7 @@ ms.locfileid: "49903514"
 ## <a name="next-steps"></a>Další kroky  
  Další informace o tom, jak přizpůsobit uživatelské rozhraní aplikace Outlook z těchto témat:  
   
--   Další informace o tom, jak navrhnout vzhled oblasti formuláře přetahování spravovaných ovládacích prvků na vizuálního návrháře, naleznete v tématu [návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Další informace o tom, jak navrhnout vzhled oblasti formuláře přetahování spravovaných ovládacích prvků na vizuálního návrháře, naleznete v tématu [názorný postup: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 -   Další informace o tom, jak přizpůsobit na pásu karet položky Outlooku, naleznete v tématu [přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
@@ -259,9 +256,7 @@ ms.locfileid: "49903514"
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   
  [Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [Návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Postupy: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Vlastní akce v oblastech formulářů aplikace Outlook](../vsto/custom-actions-in-outlook-form-regions.md)   
- [Postupy: zabránění zobrazení oblasti formuláře Outlooku](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
-  
-  
+ [Postupy: Zabránění zobrazení oblasti formuláře Outlooku](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  

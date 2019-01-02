@@ -1,8 +1,6 @@
 ---
-title: Ladění ukázkový kód HTML a CSS | Microsoft Docs
-ms.custom: ''
+title: Ladění kódu HTML a CSS ukázka | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947553"
 ---
-# <a name="debug-html-and-css-sample-code"></a>Ladění ukázkový kód HTML a CSS
+# <a name="debug-html-and-css-sample-code"></a>Ladění ukázkového kódu HTML a CSS
   
- Kód v tomto tématu je ukázkový soubor pro [rychlý úvod: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md). V této verzi kódu jsou opravit chyby, které jsou záměrné součástí rychlý start.  
+ Kód v tomto tématu se ukázkový soubor pro [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md). Chyby podle návrhu k dispozici v tomto rychlém startu jsou opravené v této verzi kódu.  
   
-## <a name="sample-code"></a>Ukázkový kód  
- Následující kód HTML se používá v \<textu > značku rychlý start.  
+## <a name="sample-code"></a>Vzorový kód  
+ Následující kód HTML je používán \<text > značky v tomto rychlém startu.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -41,7 +39,7 @@ ms.locfileid: "31456790"
 </div>  
 ```  
   
- Následující CSS ukazuje dodatky provedené default.css.  
+ Následující šablony stylů CSS ukazuje přidání provedené default.css.  
   
 ```css  
 #fView {  
@@ -51,7 +49,7 @@ ms.locfileid: "31456790"
 }  
 ```  
   
- Následující příklad kódu ukazuje kompletní kód jazyka JavaScript v souboru default.js. Odkazy na obory názvů WinJS pro tento kód je v souboru default.html šablony.  
+ Následující příklad kódu ukazuje kompletní kód jazyka JavaScript v souboru default.js. Odkazy na obory názvů WinJS pro tento kód se v souboru default.html šablony.  
   
 ```javascript  
 (function () {  
@@ -103,4 +101,4 @@ ms.locfileid: "31456790"
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Rychlý úvod: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)

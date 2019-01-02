@@ -2,7 +2,6 @@
 title: 'CA1305: Zadejte možnosti IFormatProvider'
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -18,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954234"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Zadejte možnosti IFormatProvider
 
@@ -48,9 +47,9 @@ Toto pravidlo ignoruje volání metod rozhraní .NET Framework, které jsou pops
 
 Když <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> nebo <xref:System.IFormatProvider> objektu není zadán, výchozí hodnota zadaná pomocí přetíženého členu nemusí mít ve všech národních prostředích požadovaný efekt. Kromě toho členy rozhraní .NET Framework zvolte výchozí jazykovou verzi a formátování podle předpokladů, které nemusí být správná pro váš kód. Pokud chcete mít jistotu, že kód funguje podle očekávání pro vaše scénáře, by měla poskytnout informace specifické jazykové verze podle následujících pokynů:
 
-- Pokud uživateli se zobrazí hodnotu, použijte aktuální jazykové verze. Zobrazit <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Pokud uživateli se zobrazí hodnotu, použijte aktuální jazykové verze. Viz <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Pokud hodnota se budou ukládat a přístupný softwarem (trvale uložena do souboru nebo databáze), pomocí neutrální jazykové verze. Zobrazit <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Pokud hodnota se budou ukládat a přístupný softwarem (trvale uložena do souboru nebo databáze), pomocí neutrální jazykové verze. Viz <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
 - Pokud si nejste jisti cílové hodnoty, mají příjemce dat nebo zprostředkovatele zadejte jazykovou verzi.
 

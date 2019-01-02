@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorStubFunction | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf6be53925ed6f9cd613f7e7a19cca9f00cace
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956569"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Určuje, zda je symbol odpovídá symbol nejvyšší úrovně funkce pro shaderu zkompilovaném pro akcelerátor, která odpovídá `parallel_for_each` volání.  
+Určuje, zda symbol odpovídá symbol funkce nejvyšší úrovně pro shader kompilován pro akcelerátor, který odpovídá `parallel_for_each` volání.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +29,10 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [out] Ukazatel `BOOL` určující, zda je symbol odpovídá symbol nejvyšší úrovně funkce pro shaderu zkompilovaném pro akcelerátor, která odpovídá `parallel_for_each` volání.  
+ [out] Ukazatel `BOOL` , která označuje, zda symbol odpovídá symbol funkce nejvyšší úrovně pro shader kompilován pro akcelerátor, který odpovídá `parallel_for_each` volání.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

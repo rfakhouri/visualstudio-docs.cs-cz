@@ -1,8 +1,6 @@
 ---
 title: 'Postupy: Správa aktualizací pro aplikaci ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945896"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Postupy: Správa aktualizací pro aplikaci ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace můžete vyhledat aktualizace automaticky, nebo prostřednictvím kódu programu. Jako vývojář máte velké množství flexibilitu při určení, kdy a jak jsou provedeny aktualizace kontroly, zda jsou povinné aktualizace a kde by měla aplikace vyhledávat aktualizace.  
@@ -103,7 +101,7 @@ ms.locfileid: "44283649"
   
 5.  V **aktualizovat umístění** zadejte umístění aktualizace s plně kvalifikovanou adresu URL pomocí formátu *http://Hostname/ApplicationName*, nebo cestu UNC ve formátu  *\\\Server\ ApplicationName*, nebo klikněte na tlačítko **Procházet** vyhledat umístění aktualizace. Aktualizace umístění je, ve kterém bude aplikace vyhledávat aktualizovanou verzi sebe sama.  
   
-6.  Vytvoření tlačítka, položka nabídky nebo jinou položku uživatelského rozhraní na formuláři Windows, který uživatelé zvolí kontrolu aktualizací. Z této položky obslužné rutiny události zavolejte metodu kontrolovat a instalovat aktualizace. Příklad kódu jazyka Visual Basic a Visual C# najdete metody v [postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
+6.  Vytvoření tlačítka, položka nabídky nebo jinou položku uživatelského rozhraní na formuláři Windows, který uživatelé zvolí kontrolu aktualizací. Z této položky obslužné rutiny události zavolejte metodu kontrolovat a instalovat aktualizace. Najdete příklad jazyka Visual Basic a Visual C# kód pro metodu v [jak: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   
 7.  Sestavení aplikace.  
   
@@ -112,5 +110,5 @@ ms.locfileid: "44283649"
  [Dialogové okno aktualizace aplikace](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [Volba strategie aktualizace ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publikování ClickOnce jejich](../deployment/publishing-clickonce-applications.md)   
- [Postupy: publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Postupy: Publikování aplikace ClickOnce pomocí Průvodce publikováním](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

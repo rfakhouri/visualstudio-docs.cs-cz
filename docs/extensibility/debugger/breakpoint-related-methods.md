@@ -1,9 +1,6 @@
 ---
 title: Metody související se zarážkou | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947280"
 ---
 # <a name="breakpoint-related-methods"></a>Metody související se zarážkou
 Ladicí stroj (DE) musí podporovat nastavení zarážky. Ladění aplikace Visual Studio podporuje následující typy zarážky:  
@@ -42,13 +39,13 @@ Ladicí stroj (DE) musí podporovat nastavení zarážky. Ladění aplikace Visu
 |Metoda|Popis|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|Určuje, zda zadané čekajících zarážek lze svázat místa v kódu.|  
-|[Vytvoření vazby](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Váže zadanou čekajících zarážek na jeden nebo více umístění kódu.|  
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|Váže zadanou čekajících zarážek na jeden nebo více umístění kódu.|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|Získá stav čekající zarážkou.|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|Získá požadavek zarážku použitý k vytvoření čekající zarážkou.|  
-|[Povolit](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Přepíná povoleného stavu čekající zarážkou.|  
+|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|Přepíná povoleného stavu čekající zarážkou.|  
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|Zobrazí všechny zarážky, od čekající zarážka vázána.|  
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|Zobrazí všechny zarážky chyb, které jsou výsledkem čekající zarážkou.|  
-|[Odstranit](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Odstraní čekající zarážkou a všechny zarážky, které jsou vázány z něj.|  
+|[Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Odstraní čekající zarážkou a všechny zarážky, které jsou vázány z něj.|  
   
  Výčet vazby zarážky a Chyba zarážky, musí implementovat všechny metody [IEnumDebugBoundBreakpoints2](../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) a [IEnumDebugErrorBreakpoints2](../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md).  
   
@@ -59,8 +56,8 @@ Ladicí stroj (DE) musí podporovat nastavení zarážky. Ladění aplikace Visu
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|Získá čekající zarážka, který obsahuje zarážku.|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|Získá stav vázaná zarážka.|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|Získá řešení zarážek, které popisují zarážku.|  
-|[Povolit](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Povolí nebo zakáže zarážku.|  
-|[Odstranit](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Odstraní vázaná zarážka.|  
+|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|Povolí nebo zakáže zarážku.|  
+|[Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|Odstraní vázaná zarážka.|  
   
  Překlad IP adres a žádost o informace vyžadují provádění následujících [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) metody.  
   

@@ -1,8 +1,6 @@
 ---
 title: CommentMarkAtProfile | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - CommentMarkAtProfile
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb29336b401b020df52d1ccaa743bb7240e1d2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14cb0572124f5b832ac0b98326bdf5e0c3d89af4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946081"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metoda vloží hodnoty časového razítka, číselné značku a řetězec komentáře v. *Vsp* souboru. Hodnota časového razítka je možné synchronizovat vnější události. Značky a komentáře, které má být vložen profilování pro vlákna, které obsahuje funkci CommentMarkAtProfile musí být dále.  
@@ -26,7 +24,7 @@ ms.locfileid: "49854816"
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
                                    LPCTSTR szComment);  

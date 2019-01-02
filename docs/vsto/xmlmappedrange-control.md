@@ -1,9 +1,6 @@
 ---
 title: Xmlmappedrange – ovládací prvek
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9cf21ceda64fe79996e05426a3379972c3c4be33
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f19bf36b145a5f2c1b4e841a96cdd485a0fb6ac1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946697"
 ---
 # <a name="xmlmappedrange-control"></a>Xmlmappedrange – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Rozsahu, který se vytvoří pouze v případě, že element neopakujícími schématu je namapována na buňku v aplikaci Microsoft Office Excel je ovládací prvek. Například, když `maxOccurs` atribut na prvek schématu se rovná 1. Poté, co Visual Studio vytvoří rozsah XML, namapované, můžete programovat proti ho přímo bez nutnosti procházení objektovému modelu Excelu. Můžete ho jenom odstranit <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládací prvek v rámci aplikace Excel při odebrání mapování elementu.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mapování I: použití XML v Excelu?](http://go.microsoft.com/fwlink/?LinkID=130288).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Použití mapování XML v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## <a name="bind-data-to-the-control"></a>Vytvoření vazby dat k ovládacímu prvku  
  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> Ovládací prvek podporuje vazbu do jednoho datového pole (jednoduché datové vazby). <xref:Microsoft.Office.Tools.Excel.ListObject> Může ovládací prvek podporuje rozšířené datové vazby a se automaticky vytvoří během opakující se element schématu je namapována na buňku. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  
@@ -64,7 +61,5 @@ ms.locfileid: "35676132"
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [Postupy: Přidání ovládacích prvků XMLMappedRange do listů](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Postupy: mapování schémat na listy v prostředí Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [Postupy: Mapování schémat na listy v prostředí Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

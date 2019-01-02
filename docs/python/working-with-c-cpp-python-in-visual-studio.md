@@ -3,7 +3,6 @@ title: Tvorba rozšíření C++ pro Python
 description: Návod k vytvoření rozšíření C++ pro Python s pomocí sady Visual Studio, CPython a PyBind11, včetně ladění ve smíšeném režimu.
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947836"
 ---
 # <a name="create-a-c-extension-for-python"></a>Vytvoření rozšíření C++ pro Python
 
@@ -136,7 +135,7 @@ Postupujte podle pokynů v této části vytvořit dva shodné projekty C++ s n�
     > Pokud nevidíte kartu jazyka C/C++ ve vlastnostech projektu, je to, protože projekt neobsahuje žádné soubory, které identifikuje jako zdrojové soubory jazyka C/C++. K tomuto stavu může dojít, pokud vytvořte zdrojový soubor bez *.c* nebo *.cpp* rozšíření. Například pokud nechtěně zadáte `module.coo` místo `module.cpp` v dialogovém okně Nový položky dříve, pak Visual Studio vytvoří soubor, ale tento typ souboru není nastavena na "C / C + kódu," což je co aktivuje na kartě Vlastnosti C/C++. Takové misidentification zůstane tak i v případě, přejmenujte soubor s `.cpp`. Typ souboru nastavit správně, klikněte pravým tlačítkem na soubor v **Průzkumníku řešení**vyberte **vlastnosti**, nastavte **typ souboru** k **kódu C/C++**.
 
     > [!Warning]
-    > Vždycky nastavený **C/C++** > **generování kódu** > **knihovny prostředí Runtime** umožňuje **Multi-threaded DLL (/ MD)**, i pro konfiguraci ladění, protože toto nastavení je, co jsou vybaveny binární soubory Pythonu bez ladění. Pokud jste se nastavit **Multi-threaded ladit knihovnu DLL (/ MDd)** možnost, vytváření **ladění** konfigurace způsobil chybu **C1189: Py_LIMITED_API není kompatibilní s Py_DEBUG Py_TRACE_REFS, a Py_REF_DEBUG**. Kromě toho pokud odeberete `Py_LIMITED_API` aby se zabránilo chybě sestavení, Python, dojde k chybě při pokusu o import modulu. (Selhání dojde během volání knihovny DLL `PyModule_Create` jak je popsáno dále, výstupní zpráva z **Python závažná chyba: PyThreadState_Get: žádná aktuální vlákno**.)
+    > Vždycky nastavený **C/C++** > **generování kódu** > **knihovny prostředí Runtime** umožňuje **Multi-threaded DLL (/ MD)**, i pro konfiguraci ladění, protože toto nastavení je, co jsou vybaveny binární soubory Pythonu bez ladění. Pokud jste se nastavit **Multi-threaded ladit knihovnu DLL (/ MDd)** možnost, vytváření **ladění** konfigurace způsobil chybu **C1189: Není kompatibilní s Py_DEBUG Py_TRACE_REFS a Py_REF_DEBUG Py_LIMITED_API**. Kromě toho pokud odeberete `Py_LIMITED_API` aby se zabránilo chybě sestavení, Python, dojde k chybě při pokusu o import modulu. (Selhání dojde během volání knihovny DLL `PyModule_Create` jak je popsáno dále, výstupní zpráva z **Python závažná chyba: PyThreadState_Get: žádná aktuální vlákno**.)
     >
     > Možnost/MDd sloužící k sestavení binární soubory pro ladění Pythonu (například *python_d.exe*), ale že ji vyberete rozšiřující knihovny DLL stále způsobuje chybu sestavení s `Py_LIMITED_API`.
 
@@ -266,7 +265,7 @@ Pokud jste dokončili kroky v předchozí části, jistě zaznamenali, použít 
 
 Modul C++ se nemusí podařit sestavit z následujících důvodů:
 
-- Nepovedlo se najít *Python.h* (**E1696: Nelze otevřít zdrojový soubor "Python.h"** a/nebo **C1083: nejde otevřít vložený soubor: "Python.h": žádný odpovídající soubor nebo adresář**): Ověřte, že Cesta v **C/C++** > **Obecné** > **další adresáře souborů k zahrnutí** v projektu vlastnosti odkazuje na jazyce Python instalace *zahrnují* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-projects).
+- Nepovedlo se najít *Python.h* (**E1696: Nelze otevřít zdrojový soubor "Python.h"** a/nebo **C1083: Nejde otevřít vložený soubor: "Python.h": Žádný odpovídající soubor nebo adresář**): Ověřte, že ji v **C/C++** > **Obecné** > **další adresáře souborů k zahrnutí** v Projekt vlastnosti body k instalaci Pythonu *zahrnují* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-projects).
 
 - Nepovedlo se najít knihovny jazyka Python: Ověřte, že ji v **Linkeru** > **Obecné** > **další adresáře knihoven** v projektu Vlastnosti body k instalaci Pythonu *libs* složky. Přejděte ke kroku 6 v části [vytvoření projektu core C++](#create-the-core-c-projects).
 

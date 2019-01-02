@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: vytvoření modelu služby BDC | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Vytvoření modelu služby BDC | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,54 +13,53 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e2bc47c902707ee896c46fa0d9988551fa6fd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c01b8c54a762436f7bf76fd8186765a4fe1b9b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955617"
 ---
-# <a name="how-to-create-a-bdc-model"></a>Postupy: vytvoření modelu služby BDC
-  Business Data Connectivity (BDC) modelu můžete vytvořit pomocí šablony pro tento typ položky a potom přidat model do jakéhokoli projektu služby SharePoint. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md). Další informace o tom, jak návrhu modelu najdete v tématu [návrhu modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-create-a-bdc-model"></a>Postupy: Vytvoření modelu služby BDC
+  Obchodní Data připojení (BDC) model můžete vytvořit pomocí šablony pro tento druh položky a následným přidáním modelu do jakéhokoli projektu SharePoint. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md). Další informace o tom, jak návrhu modelu naleznete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-bdc-project"></a>Vytvoření projektu BDC  
   
-1.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
+1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.  
   
     > [!NOTE]  
-    >  Pokud vaše IDE nastaven pro použití vývojové nastavení jazyka Visual Basic, zvolte **soubor** > **nový projekt**.  
+    >  Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, zvolte **souboru** > **nový projekt**.  
   
-     **Nový projekt** otevře se dialogové okno.  
+     **Nový projekt** zobrazí se dialogové okno.  
   
-2.  V části buď **jazyka Visual Basic** nebo **Visual C#**, zvolte **Office/SharePoint**, **řešení služby SharePoint**.  
+2.  V části **jazyka Visual Basic** nebo **Visual C#** , zvolte **Office/SharePoint**, **řešení služby SharePoint**.  
   
-3.  V **šablony** podokně, vyberte **SharePoint 2013 – prázdný projekt** položku a potom vyberte **OK** tlačítko.  
+3.  V **šablony** podokně, vyberte **SharePoint 2013 – prázdný projekt** položku a klikněte na tlačítko **OK** tlačítko.  
   
-     **Průvodce vlastním nastavením SharePoint** otevře.  
+     **Průvodce přizpůsobením SharePoint** otevře.  
   
-4.  Na **zadejte úroveň lokality a zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint v místním počítači, zvolte **nasadit jako řešení farmy** možnost tlačítko a potom vyberte **Dokončit** tlačítko.  
+4.  Na **zadejte web a úroveň zabezpečení pro ladění** stránky, zadejte adresu URL webu služby SharePoint v místním počítači, zvolte **nasadit jako řešení farmy** přepínač a klikněte na tlačítko **Dokončit** tlačítko.  
   
-     Budete testovat modelu na web služby SharePoint, který jste zadali.  
+     Bude testovat model na webu služby SharePoint, který jste zadali.  
   
     > [!IMPORTANT]  
-    >  Projekt musí nasadit jako řešení farmy, protože BDC modely podporují pouze řešení ve farmách.  
+    >  Vzhledem k tomu, že modely služby BDC podporují pouze řešení farmy je nutné nasadit projekt jako řešení farmy.  
   
-     Prázdný projekt SharePoint je vytvořen.  
+     Je vytvořen prázdný projekt SharePoint.  
   
-5.  Na řádku nabídek zvolte **projektu** > **přidat novou položku**.  
+5.  V panelu nabídky zvolte **projektu** > **přidat novou položku**.  
   
-6.  V **přidat novou položku** dialogovém okně vyberte **Office/SharePoint** uzlu.  
+6.  V **přidat novou položku** dialogového okna zvolte **Office/SharePoint** uzlu.  
   
-7.  V seznamu šablon služby SharePoint, zvolte **modelu připojení obchodních dat (pouze řešení farmy)**.  
+7.  V seznamu šablon služby SharePoint, zvolte **Model Připojení obchodních dat (pouze řešení farmy)**.  
   
-8.  V **název** pole, zadejte název modelu služby BDC a potom zvolte **přidat** tlačítko.  
+8.  V **název** pole, zadejte název pro model služby BDC a klikněte na tlačítko **přidat** tlačítko.  
   
-     A **modelu připojení obchodních dat** položka byla přidána do projektu. Ve výchozím nastavení zobrazí v Návrháři BDC se modelu. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     A **Model Připojení obchodních dat** přidání položky do projektu. Ve výchozím nastavení se model zobrazen v Návrháři služby BDC. Další informace najdete v tématu [vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
 ## <a name="see-also"></a>Viz také:
  [Vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Postupy: určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Postupy: zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [Postupy: Zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  

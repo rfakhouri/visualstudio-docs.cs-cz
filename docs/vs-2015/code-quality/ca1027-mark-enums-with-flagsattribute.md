@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b8cebc05fa58c589f07beed70ab222d31bc8553a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0f0c618e8b01fe3c40448adb145d5da446e30a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954108"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Označte výčty pomocí FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +51,7 @@ ms.locfileid: "49879217"
  Potlačit upozornění tohoto pravidla, pokud nechcete, aby výčtu hodnoty, které mají být kombinovatelných.
 
 ## <a name="example"></a>Příklad
- V následujícím příkladu `DaysEnumNeedsFlags` je výčet, který splňuje požadavky na používání <xref:System.FlagsAttribute>, ale nejsou dostupné. `ColorEnumShouldNotHaveFlag` Výčet nemá žádné hodnoty, které jsou pro mocniny dvou ale nesprávně určuje <xref:System.FlagsAttribute>. To porušuje pravidlo [CA2217: neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ V následujícím příkladu `DaysEnumNeedsFlags` je výčet, který splňuje požadavky na používání <xref:System.FlagsAttribute>, ale nejsou dostupné. `ColorEnumShouldNotHaveFlag` Výčet nemá žádné hodnoty, které jsou pro mocniny dvou ale nesprávně určuje <xref:System.FlagsAttribute>. To porušuje pravidlo [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 
@@ -61,6 +60,3 @@ ms.locfileid: "49879217"
 
 ## <a name="see-also"></a>Viz také
  <xref:System.FlagsAttribute?displayProperty=fullName>
-
-
-

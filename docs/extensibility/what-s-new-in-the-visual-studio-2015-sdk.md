@@ -1,9 +1,6 @@
 ---
 title: Co&#39;nového ve Visual Studio 2015 SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952839"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Co&#39;s nového ve Visual Studio 2015 SDK
 Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visual Studio 2015, Visual Studio 2015, aktualizovat a Visual Studio 2017.  
@@ -62,12 +59,12 @@ Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visu
 > [!NOTE]
 >  Můžete nadále používat referenční sestavení nainstalovaná sada SDK pro VS s vašimi projekty (umístěný ve skupinovém rámečku \<umístění instalace aplikace Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) a není potřeba mít existující projekty rozšiřitelnosti upgradovat na používaly balíčky NuGet.  Projekt **odkazuje / přidat odkaz na** dialogového okna i nadále používat referenční sestavení nainstalovaná sada SDK pro VS.  
 >   
->  Pokud chcete upravit existující projekty použít NuGet, přečtěte si téma [postupy: migrace rozšíření VSPackages do sady Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) která má část o aktualizaci rozšíření projekty do balíčků NuGet.  
+>  Pokud chcete upravit existující projekty použít NuGet, přečtěte si téma [jak: Migrace na Visual Studio 2015 rozšíření VSPackages](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) která má část o aktualizaci rozšíření projekty do balíčků NuGet.  
   
 ## <a name="light-bulbs"></a>Ikony žárovky  
  Poskytuje jednu z nejzajímavějších nové způsoby psaní kódu rozšíření projektu Roslyn. Další informace najdete v tématu [Roslyn](https://github.com/dotnet/Roslyn).  
   
- Ikony žárovky jsou novou funkci, která se dodává s VSSDK. Jsou ikony používané v editoru sady Visual Studio, které se rozbalí a zobrazí sadu akcí refaktoringu kódu nebo opravy problémů, které jsou identifikované analyzátorů integrované kódu. Další informace najdete v tématu [návod: zobrazení návrhů](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+ Ikony žárovky jsou novou funkci, která se dodává s VSSDK. Jsou ikony používané v editoru sady Visual Studio, které se rozbalí a zobrazí sadu akcí refaktoringu kódu nebo opravy problémů, které jsou identifikované analyzátorů integrované kódu. Další informace najdete v tématu [názorný postup: Zobrazování návrhů](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
 ## <a name="updated-user-experience-guidelines"></a>Pokyny k aktualizované uživatelské prostředí  
  Navrhování nového rozšíření nebo funkcí pro Visual Studio? Podívejte se na aktualizovaná a rozšířená [zkušenosti uživatelů sady Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  Najdete tu [barva tokeny](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md), [velikosti písma](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md), [specifikace rozložení dialogového okna](../extensibility/ux-guidelines/layout-for-visual-studio.md)a další doprovodné materiály, budete muset bez problémů integrovat nové uživatelské rozhraní sady Visual Studio.

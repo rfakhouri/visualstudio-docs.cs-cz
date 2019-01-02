@@ -1,8 +1,6 @@
 ---
-title: Obecná zobrazení dat | Microsoft Docs
-ms.custom: ''
+title: Obecná zobrazení dat | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
@@ -13,50 +11,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ccf237bec0b3ab7bf3ad96f6f4d24df240db0e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0c37bea5a5b447c7cd93c63d5a0ba8cf497d1723
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950008"
 ---
 # <a name="common-data-views"></a>Obecná zobrazení dat
-Tato část obsahuje referenční informace o zobrazení a sestav profileru datových souborů, které jsou společné pro všechny metody profilování.  
+Tato část obsahuje referenční informace o zobrazeních a sestavách souborů dat profileru, které jsou společné pro všechny metody profilování.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Souhrnné zobrazení](../profiling/summary-view.md)  
- Popisuje zobrazení se souhrnnými informacemi a sestavy. Datové sloupce závisí na metodě profilování.  
+ Popisuje souhrnné zobrazení a sestavu. Datové sloupce závisí na metodě profilování.  
   
- [Volající/volaný – zobrazení](../profiling/caller-callee-view.md)  
+ [Zobrazení volající/volaný](../profiling/caller-callee-view.md)  
  Popisuje zobrazení stromu volání a sestavy. Datové sloupce závisí na metodě profilování.  
   
  [Zobrazení stromu volání](../profiling/call-tree-view.md)  
  Popisuje zobrazení stromu volání a sestavy. Datové sloupce závisí na metodě profilování.  
   
- [Moduly – zobrazení](../profiling/modules-view.md)  
- Popisuje moduly zobrazení a sestavy. Datové sloupce závisí na metodě profilování.  
+ [Zobrazení modulů](../profiling/modules-view.md)  
+ Popisuje moduly zobrazení a sestavu. Datové sloupce závisí na metodě profilování.  
   
- [Funkce – zobrazení](../profiling/functions-view.md)  
- Popisuje zobrazení funkcí a sestav. Datové sloupce závisí na metodě profilování.  
+ [Zobrazení funkcí](../profiling/functions-view.md)  
+ Popisuje funkce zobrazení a sestavu. Datové sloupce závisí na metodě profilování.  
   
- [Řádky – zobrazení](../profiling/lines-view.md)  
- Popisuje zobrazení řádků a sestavy. Datové sloupce závisí na metodě profilování.  
+ [Zobrazení řádků](../profiling/lines-view.md)  
+ Popisuje zobrazení řádků a sestavu. Datové sloupce závisí na metodě profilování.  
   
  [Zobrazení ukazatele na instrukce (IP)](../profiling/instruction-pointers-ips-view.md)  
- Popisuje ukazatel instrukce (IP) – zobrazení a sestavy. Datové sloupce závisí na metodě profilování.  
+ Popisuje zobrazení ukazatele instrukcí (IP) a sestavu. Datové sloupce závisí na metodě profilování.  
   
  [Zobrazení procesů](../profiling/process-view.md)  
- Proces seznamy a vlákno spuštění a ukončení.  
+ Seznam procesů a vláken počáteční a koncové časy.  
   
- [Značky – zobrazení](../profiling/marks-view.md)  
- Seznam trasování událostí pro Windows a vzorkování události, které byly vloženy do datového souboru profilování.  
+ [Zobrazení značky](../profiling/marks-view.md)  
+ Obsahuje seznam trasování událostí pro Windows a vzorkování událostí, které byly vloženy do souboru dat profilování.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Zobrazení dat metody vzorkování](../profiling/profiler-sampling-method-data-views.md)  
- Referenční informace o zobrazení a sestav profileru datových souborů, které byly vygenerovány pomocí metody vzorkování.  
+ [Zobrazení dat metod vzorkování](../profiling/profiler-sampling-method-data-views.md)  
+ Referenční informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím metody vzorkování.  
   
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)  
- Referenční informace o zobrazení a sestav profileru datových souborů, které byly vygenerovány pomocí metody instrumentace.  
+ Referenční informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím metody instrumentace.  
   
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  
- Referenční informace o zobrazení a sestav profileru datových souborů, které byly vygenerovány pomocí kolekce paměti .NET.
+ Referenční informace o zobrazeních a sestavách souborů dat profileru, které byly generovány použitím kolekce paměti rozhraní .NET.

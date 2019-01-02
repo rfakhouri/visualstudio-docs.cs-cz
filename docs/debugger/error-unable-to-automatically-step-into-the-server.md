@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Automatické krokování s vnořením do serveru nelze | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Chyba: Nelze automaticky krokování s vnořením do serveru | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.causality_no_server_response
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37298dcbb2443755136c4c57eb4633fcb3197a87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2c1a36555f9861fabe30937c6ecde856277cdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955903"
 ---
-# <a name="error-unable-to-automatically-step-into-the-server"></a>Chyba: Automatické krokování s vnořením do serveru se nezdařilo.
+# <a name="error-unable-to-automatically-step-into-the-server"></a>Chyba: Nelze automaticky krokování s vnořením do serveru
 Chyba čtení:  
   
  Nepovedlo se automatické krokování s vnořením do serveru. Ladicí program nebyl upozorněn, než se provedl vzdálené procedury  

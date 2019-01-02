@@ -1,9 +1,7 @@
 ---
 title: ProjectItem – Element (šablony sady Visual Studio položku) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956059"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem – element (šablony sady Visual Studio položky)
 Určuje soubor, který je součástí šablony položky.  
@@ -82,7 +80,7 @@ Určuje soubor, který je součástí šablony položky.
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Když je vytvořena položka z této šablony, názvu souboru se podle zadaný název uživatele v **přidat novou položku** dialogové okno. To je užitečné při vytváření šablon položek s více soubory. Další informace najdete v tématu [postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md) a [parametry šablony](../ide/template-parameters.md).  
+ Když je vytvořena položka z této šablony, názvu souboru se podle zadaný název uživatele v **přidat novou položku** dialogové okno. To je užitečné při vytváření šablon položek s více soubory. Další informace najdete v tématu [jak: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md) a [parametry šablony](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablony pro standardní položky [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] třídy.  
@@ -106,5 +104,5 @@ Určuje soubor, který je součástí šablony položky.
 ## <a name="see-also"></a>Viz také:  
  [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)   
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
- [Postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)   
+ [Postupy: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)   
  [Parametry šablony](../ide/template-parameters.md)

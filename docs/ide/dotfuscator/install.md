@@ -3,7 +3,6 @@ title: Instalace řešení Dotfuscator Community Edition (CE)
 ms.date: 06/22/2017
 ms.devlang: dotnet
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Nástroj Dotfuscator, řešení Dotfuscator CE, PreEmptive, společnosti PreEmptive Solutions PreEmptive ochrany, ochranu, community edition, obfuskace, .NET, bezplatný, Visual Studio 2017, nainstalujte
 helpviewer_keywords:
@@ -23,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d513588a7d00e874b38306150f896157906e2733
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc0a366eadfb5a077fdc2a7d346ef5f3638afe27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880361"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948521"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Instalace řešení Dotfuscator Community Edition (CE)
 
@@ -49,7 +48,7 @@ Je však snadné instalace řešení Dotfuscator CE i v případě, že už jste
    * Pokud jste místo toho najdete v části *nabídky* záhlaví, **Dotfuscator nástroje - PreEmptive ochranu –**, pak řešení Dotfuscator CE je již nainstalována. Podrobnosti o použití najdete v části [stránku Začínáme úplné řešení Dotfuscator CE uživatelské příručce nástroje][get-started].
 3. Visual Studio Installer, který se spustí okna, předem nakonfigurovaným programem instalace řešení Dotfuscator CE.
    * Může být nutné zadat přihlašovací údaje správce, abyste mohli pokračovat.
-4. Ukončete všechny instance aplikace Visual Studio IDE. <br/> <br/> ![Klikněte na nainstalovat](media/install_from_vs_345.png) <br/> <br/>
+4. Ukončete všechny instance aplikace Visual Studio IDE. <br/> <br/> ![Kliknutí na Nainstalovat](media/install_from_vs_345.png) <br/> <br/>
 5. V okně instalačního programu sady Visual Studio klikněte na tlačítko *nainstalovat*.
 
 Po dokončení instalace můžete začít používat řešení Dotfuscator CE. Podrobnosti najdete v tématu [stránku Začínáme úplné řešení Dotfuscator CE uživatelské příručce nástroje][get-started].

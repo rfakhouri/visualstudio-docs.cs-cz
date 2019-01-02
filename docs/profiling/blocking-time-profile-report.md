@@ -1,8 +1,6 @@
 ---
 title: Blokování času Sestava profilu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946419"
 ---
 # <a name="blocking-time-profile-report"></a>Sestava profilu času zablokování
 Profil sestavy poskytují data agregace času blokování pro zásobníky volání, které jsou specifické pro každou blokování kategorii (například "Vstupně-výstupní operace" nebo "Synchronizace"). Přerušení sestava obsahuje seznam procesů, které ke zrušení přidělením aktuální proces a počtem instancí přerušení. Pokud chcete sestavit blokování Sestava profilu, nástroj shromáždí blokování volání rozhraní API a shromáždí do stromu zásobníky volání. Data zobrazená v těchto sestavách se liší podle aktuální časový rozsah, skryté vláken a následující dva filtry, které mohou být použity:  
@@ -35,7 +33,7 @@ Profil sestavy poskytují data agregace času blokování pro zásobníky volán
   
 |Název sloupce|Popis|  
 |-----------------|-----------------|  
-|**Jméno**|Název funkce pro každou úroveň zásobníku volání.|  
+|**Název**|Název funkce pro každou úroveň zásobníku volání.|  
 |**Instance**|Počet instancí blokovacího hovoru viditelném časovém období.|  
 |**Celkový čas blokace**|Celkový počet blokování času stráveného pro všechny balíčky, které jsou zahrnuty do této úrovně stromu zásobníku volání. Celkový počet je součtem výhradní čas zablokování pro tuto funkci a výhradní čas zablokování pro všechny jeho podřízené uzly.|  
 |**Výhradní čas blokace**|Celková doba blokování, který byl stráven během které bude tato funkce je nejnižší úroveň zásobníku volání. Položka zásobníku volání jedinečné, který má vysokou výhradní čas zablokování může být funkce, které vás zajímají.|  

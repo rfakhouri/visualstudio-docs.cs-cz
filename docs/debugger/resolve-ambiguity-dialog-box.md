@@ -1,8 +1,6 @@
 ---
-title: Vyřešit nejednoznačnosti – dialogové okno | Microsoft Docs
-ms.custom: ''
+title: Vyřešit nejednoznačnosti – dialogové okno | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.Disambig
@@ -21,27 +19,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 130f580c997cb5bc0e522d0fef57969788481273
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a31d217f8dc492468a894f78f10a4f7656677521
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945064"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Dialogové okno Vyřešit nejednoznačnosti
-`Resolve Ambiguity` Dialogové okno se zobrazí, když ladicí program nemůže vyberte umístění, k zobrazení. Například pokud používáte šablonami C++, můžete vytvořit víc funkcí z jedné funkce šablony. Pokud ladicí program zastaví v umístění zdroje v šabloně, a vy zvolíte `Go To Disassembly`, má více možností ladicího programu. Jednotlivé funkce z šablony má svou vlastní zpětný překlad kódu a ladicí program nebude vědět, který kód, který chcete zobrazit. `Resolve Ambiguity` Dialogové okno umožňuje vybrat umístění, bude ze seznamu všech odpovídajících umístění.  
+`Resolve Ambiguity` Dialogové okno se zobrazí, když ladicí program nelze vybrat místa pro zobrazení. Například pokud použijete šablony jazyka C++, můžete vytvořit více funkcí z jedinou šablonu funkce. Pokud ladicí program se zastaví na umístění zdroje v šabloně, a vy zvolíte `Go To Disassembly`, ladicí program má několik možností. Každá funkce ze šablony má svůj vlastní zpětný překlad kódu a ladicí program neví, který kód chcete zobrazit. `Resolve Ambiguity` Dialogové okno umožňuje vybrat umístění, které chcete seznam všech odpovídajících místech.  
   
  `Choose the specific location`  
- Zobrazuje seznam všech umístění odpovídající do příkazu.  
+ Zobrazuje seznam všech umístění odpovídající svých rukou.  
   
  `Address`  
- Zobrazuje adresy paměti pro každou funkci.  
+ Ukazuje adresy paměti pro každou funkci.  
   
  `Function`  
- Zobrazuje název jednotlivé funkce.  
+ Zobrazí název jednotlivých funkcí.  
   
  `Module`  
- Zobrazí modul, (EXE nebo DLL) obsahující kód objektu pro tuto funkci.  
+ Ukazuje modulu (EXE nebo DLL) obsahující objektový kód pro funkci.  
   
 ## <a name="see-also"></a>Viz také  
  [Výrazy v ladicím programu](../debugger/expressions-in-the-debugger.md)

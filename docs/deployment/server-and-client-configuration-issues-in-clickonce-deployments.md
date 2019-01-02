@@ -1,8 +1,6 @@
 ---
 title: Problémy s konfigurací klienta v nasazeních ClickOnce a server | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955552"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a vaše nasazení obsahuje typ souboru, který se nedokáže rozpoznat Windows, jako je například Microsoft Word soubor, služba IIS odmítne přenášet tento soubor a nasazení se nezdaří.  
@@ -104,7 +102,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 | https:// | Můžete nainstalovat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pomocí tohoto protokolu. |
 | File:// | Můžete nainstalovat [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pomocí tohoto protokolu. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Brány Windows Firewall  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Brána Windows Firewall  
  Ve výchozím nastavení povoluje bránu Windows Firewall Windows XP s aktualizací SP2. Pokud vyvíjíte aplikace na počítači s nainstalovaným Windows XP, budete stále moct publikovat a spustit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace z místního serveru, na kterém běží služby IIS. Však nelze přistupovat k serveru, na kterém běží služby IIS z jiného počítače, není-li otevřít bránu Windows Firewall. Pokyny pro správu brány Windows Firewall, naleznete v nápovědě Windows.  
 
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Povolte rozšíření serveru FrontPage  
@@ -112,7 +110,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
 
  Ve výchozím nastavení Windows Server nemá nainstalované rozšíření serveru FrontPage. Pokud chcete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] publikovat na Windows serveru webový server, který používá protokol HTTP pomocí rozšíření serveru FrontPage, je nutné nainstalovat rozšíření serveru FrontPage nejprve. Instalaci můžete provést pomocí nástroje Správa serveru pro správu ve Windows serveru.  
 
-## <a name="windows-server-locked-down-content-types"></a>Systému Windows Server: Typy obsahu uzamknuté  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Typy obsahu uzamčené  
  Služba IIS na [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] uzamyká všechny typy souborů s výjimkou určitých známých typů obsahu (například *.htm*, *.html*, *.txt*, a tak dále). Chcete-li povolit nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pomocí tohoto serveru, budete muset změnit nastavení služby IIS umožňující stahování souborů typu *.application*, *.manifest*a všechny ostatní typy vlastního souboru používá vaše aplikace.  
 
  Pokud nasadíte pomocí serveru služby IIS, spusťte *inetmgr.exe* a přidat nové typy souborů pro výchozí webové stránky:  

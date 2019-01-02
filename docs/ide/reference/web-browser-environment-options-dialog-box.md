@@ -2,7 +2,6 @@
 title: Webový prohlížeč, prostředí, dialogové okno Možnosti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955156"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webový prohlížeč, prostředí, dialogové okno Možnosti
 
@@ -55,7 +54,7 @@ Nastaví editor používá k otevření webové stránky, když zvolíte **zobra
 
 -   **Editor zdrojového kódu** vyberte zobrazení zdroje v [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
+-   **HTML editor** vyberte zobrazení zdroje v [Návrháři HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Tento výběr slouží k úpravě webové stránky v jednom ze dvou zobrazení: Zobrazení návrhu nebo standardní zobrazení zdroje založený na textu.
 
 -   **Externí editor** vyberte zobrazení zdroje v jiném editoru. Zadejte cestu k libovolný editor, který si vyberete, například Notepad.exe.
 

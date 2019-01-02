@@ -1,9 +1,6 @@
 ---
 title: Visual Studio SDK | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 26ac42cbcc70c34b221f1146bb0ba5314ca104dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947730"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK umožňuje rozšířit funkce aplikace Visual Studio nebo systém integrovat nové funkce do sady Visual Studio. Můžete distribuovat rozšíření ostatním uživatelům, tak na Visual Studio Marketplace. Tady jsou některé způsoby, ve kterém můžete rozšíření sady Visual Studio:  

@@ -1,9 +1,6 @@
 ---
 title: Nasazení řešení Office s použitím technologie ClickOnce
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31e0ccb271c985a4c521762883fead2c0a1d8775
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946838"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Vaše řešení pro Office v méně kroků můžete nasadit, když použijete ClickOnce. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*MSI*) je-li více než jeden uživatel vaše řešení bude používat ve stejném počítači.

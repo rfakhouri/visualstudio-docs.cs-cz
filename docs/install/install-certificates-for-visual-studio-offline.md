@@ -2,7 +2,6 @@
 title: Instalace certifikátů vyžadovaných pro instalaci offline
 description: Informace o instalaci certifikátů pro offline instalace sady Visual Studio.
 ms.date: 08/30/2017
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2d171082e43e822faa1a9fdf9a88ff4de0b7bff
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 8fd5e55d4f92c38c58aa7207f7770e7123b2127d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158889"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948586"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro offline instalace sady Visual Studio
 
@@ -93,7 +92,7 @@ Tři. P12 soubory v této složce každý obsahují zprostředkující certifik�
     * Zprostředkující certifikát: **DPS pro podepisování kódu Microsoft**
         * Vyžaduje se pro všechny systémy. Všimněte si, že všechny aktualizace použije ze služby Windows Update v systémech nemusí obsahovat tento certifikát.
     * Kořenový certifikát: **Microsoft kořenové certifikační autority**
-        * Požadováno. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
+        * Povinný parametr. Tento certifikát se dodává s systémy s operačním systémem Windows 7 nebo novější.
 
 **Aktualizace**: Pro Visual Studio 2017 verze 15,8 ve verzi Preview 2 nebo novější, instalační program sady Visual Studio vyžaduje pouze kořenové certifikáty k instalaci v systému.
 

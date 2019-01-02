@@ -1,9 +1,6 @@
 ---
 title: DEBUG_ADDRESS_UNION | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947202"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 Popisuje různé druhy adresy.  
@@ -90,12 +87,12 @@ public struct DEBUG_ADDRESS_UNION {
  [Jenom C++] Název sjednocení.  
   
  unionmember  
- [Jenom v C#] Tato hodnota musí být zařazen do struktury odpovídající typu na základě `dwKind`. Viz poznámky pro přidružení mezi `dwKind` a interpretaci sjednocení.  
+ [C# pouze] Tato hodnota musí být zařazen do struktury odpovídající typu na základě `dwKind`. Viz poznámky pro přidružení mezi `dwKind` a interpretaci sjednocení.  
   
 ## <a name="remarks"></a>Poznámky  
  Tato struktura je součástí [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury a představuje jeden z několika různých druhů adresy ( `DEBUG_ADDRESS` struktura je vyplněna voláním [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metoda).  
   
- [Jenom v C#] Následující tabulka ukazuje, jak interpretovat `unionmember` člen pro každý druh adresu. Příklad ukazuje, jak to lze provést pro jeden typ adresy.  
+ [C# pouze] Následující tabulka ukazuje, jak interpretovat `unionmember` člen pro každý druh adresu. Příklad ukazuje, jak to lze provést pro jeden typ adresy.  
   
 |`dwKind`|`unionmember` interpretováno jako|  
 |--------------|----------------------------------|  
@@ -137,9 +134,9 @@ namespace MyPackage
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   

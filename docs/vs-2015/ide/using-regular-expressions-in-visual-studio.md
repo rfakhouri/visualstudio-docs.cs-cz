@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959583"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Použití regulárních výrazů v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Visual Studio před Visual Studio 2012, použít vlastní syntaxi regulárního 
 > V operačních systémech Windows většina řádků končí "\r\n" (zalomení řádku a nový řádek). Tyto znaky se nezobrazí, ale jsou k dispozici v editoru a jsou předány službě regulárních výrazů .NET.
 
 > [!TIP]
-> Informace o formátování regulárních výrazů, které se používají ve vzorech pro nahrazení najdete v tématu [náhrady](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Chcete-li použít číslovanou zachycenou skupinu, syntaxe je `$1` k určení číslované skupiny a `(x)` k určení dané skupiny. Například seskupený regulární výraz `(\d)([a-z])` najde čtyři shod v následujícím řetězci: **1a 2b 3c 4d**. Řetězci pro nahrazení `z$1` převede tento řetězec na **z1 z2 z3 z4**.
+> Informace o formátování regulárních výrazů, které se používají ve vzorech pro nahrazení najdete v tématu [náhrady](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Chcete-li použít číslovanou zachycenou skupinu, syntaxe je `$1` k určení číslované skupiny a `(x)` k určení dané skupiny. Například seskupený regulární výraz `(\d)([a-z])` najde čtyři shod v následující řetězec: **1a 2b 3c 4d**. Řetězci pro nahrazení `z$1` převede tento řetězec na **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Příklady regulárních výrazů
 

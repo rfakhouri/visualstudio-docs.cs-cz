@@ -1,9 +1,6 @@
 ---
 title: Vyhledání sady Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 08/21/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
@@ -12,12 +9,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955130"
 ---
 # <a name="locate-visual-studio"></a>Vyhledejte Visual Studio
 
@@ -28,7 +25,7 @@ Toto je rychlý a jen pro čtení rozhraní API s balíčky NuGet, které jsou k
 | Kód | Balíček |
 | ---- | --- |
 | Nativní | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Spravované | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Spravovaní | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Můžete najít jednu instanci cestu nebo aktuální proces, nebo vytvořit výčet všech instancí. Zobrazit [našich ukázek](https://github.com/Microsoft/vs-setup-samples) kompletní příklady toho, jak najít sady Visual Studio.
 

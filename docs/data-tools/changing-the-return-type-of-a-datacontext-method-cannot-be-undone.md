@@ -7,39 +7,38 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: abec4dd6d5cded79e1f25a6dbb5ec2e55c2d444f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e133a609b8e3a0b8b47d0c2ea7408d7c3e9bd9c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947774"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>Změnu návratového typu metody DataContext nelze vrátit zpět.
 
-Změna návratový typ metody DataContext nelze vrátit zpět. Chcete-li vrátit zpět na automaticky generovaný typ, musí přetáhněte ji z **Průzkumníka serveru** nebo **Průzkumník databáze** na Návrhář relací objektů znovu. Opravdu že chcete změnit návratový typ?
+Změnu návratového typu metody DataContext nelze vrátit zpět. Pokud chcete vrátit zpět k automaticky generovanému typu, je třeba přetáhnout položky z **Průzkumníka serveru** nebo **Průzkumník databáze** do Návrháře relací objektů znovu. Opravdu že chcete změnit návratový typ?
 
-Návratový typ <xref:System.Data.Linq.DataContext> metoda se liší v závislosti na tom, kde je vyřadit položky [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Pokud je vyřadit položku přímo do existující třídy entity, <xref:System.Data.Linq.DataContext> metodu, která má návratový typ třídy entita se vytvoří. Pokud je položka vyřadit na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> metoda, která vrátí typ automaticky generované se vytvoří. Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a klikněte na tlačítko **návratového typu** vlastnost **vlastnosti** okno.
+Návratový typ <xref:System.Data.Linq.DataContext> metoda se liší v závislosti na tom, kde přetáhnete položku do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Pokud přetáhnete položku přímo do existující entity třídy, <xref:System.Data.Linq.DataContext> metodu, která má návratový typ třídy entita se vytvoří. Pokud přetáhnete položku na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> vytvořené metodou, která vrací automaticky generovanému typu. Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a klikněte **návratový typ** vlastnost v **vlastnosti** okna.
 
-## <a name="to-change-the-return-type-of-a-datacontext"></a>Chcete-li změnit návratový typ DataContext
+## <a name="to-change-the-return-type-of-a-datacontext"></a>Chcete-li změnit návratový typ položkou DataContext
 
-- Klikněte na tlačítko **Ano**.
+- Klikněte na **Ano**.
 
-## <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Chcete ukončit okno se zprávou a ponechat beze změny návratový typ
+## <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>Chcete ukončit okně se zprávou a ponechat beze změny návratový typ
 
 - Klikněte na tlačítko **ne**.
 
-## <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Chcete-li vrátit k původní návratový typ po změně návratový typ
+## <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>Vrátit zpět na původní typ vrácené hodnoty po změnu návratového typu
 
-1. Vyberte <xref:System.Data.Linq.DataContext> metodu [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] a odstraňte ji.
+1. Vyberte <xref:System.Data.Linq.DataContext> metodu [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] a odstraňte ho.
 
-2. Vyhledání položky v **Průzkumníka serveru Průzkumníka a databáze** a přetáhněte ji do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
+2. Vyhledejte položku v **Průzkumník serveru/Průzkumník databáze** a přetáhněte ji do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
-    A <xref:System.Data.Linq.DataContext> metoda je vytvořena s původní výchozí návratovým typem.
+    A <xref:System.Data.Linq.DataContext> metodu je vytvořen s původní výchozí návratovým typem.
 
 ## <a name="see-also"></a>Viz také:
 
 - [Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)
-- [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Nástroje LINQ to SQL v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineesByName | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d01237d7e2235f2d50e82a8fd599384e930d2c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c81bc9c82c2e6056284e63a7391c202c760022b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951087"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
 Načte výčet, který umožňuje klientovi k iteraci v rámci informace o číslech řádků všech vložených funkcí, které odpovídají zadaným názvem.  
@@ -25,7 +23,7 @@ Načte výčet, který umožňuje klientovi k iteraci v rámci informace o čís
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT findInlineesByName (   
+HRESULT findInlineesByName (   
    LPCOLESTR             name,  
    DWORD                 option,  
    IDiaEnumLineNumbers** ppResult  

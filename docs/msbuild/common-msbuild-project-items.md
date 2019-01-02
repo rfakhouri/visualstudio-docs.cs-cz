@@ -1,8 +1,6 @@
 ---
 title: Běžné projektu nástroje MSBuild položky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b51046ce3a4b589cb77ce27d1e103a6b8a6c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951703"
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
 V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], položka je pojmenovaný odkaz na jeden nebo více souborů. Položky obsahují metadat – například názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru *Microsoft.Build.CommonTypes.xsd*.  
@@ -48,7 +46,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 |Název metadat položky|Popis|  
 |---------------|-----------------|  
 |Název|Volitelný řetězec. Zobrazovaný název součásti.|  
-|identifikátor GUID|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|  
+|Guid|Volitelný řetězec. Identifikátor GUID pro komponentu ve formě {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Volitelný řetězec. Hlavní část čísla verze komponenty. Například "5" Pokud celé číslo verze je "5.46."|  
 |VersionMinor|Volitelný řetězec. Dílčí část čísla verze komponenty. Například "46" Pokud celé číslo verze je "5.46."|  
 |LCID|Volitelný řetězec. Identifikátor národního prostředí pro komponentu.|  
@@ -123,7 +121,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 | Viditelné | Nepovinný datový typ boolean. Určuje, zda se zobrazí soubor v **Průzkumníka řešení** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Volitelný řetězec. Určuje, jestli se má zkopírovat soubor do výstupního adresáře. Hodnoty jsou:<br /><br /> 1.  Nikdy<br />2.  Vždy<br />3.  PreserveNewest |
 
-### <a name="none"></a>Žádné  
+### <a name="none"></a>Žádná  
  Představuje soubory, které by se neměly nijak podílet v procesu sestavení.  
 
 
@@ -143,7 +141,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="codeanalysisimport"></a>CodeAnalysisImport  
  Představuje projekt FxCop pro import.  
 
-### <a name="import"></a>Importovat  
+### <a name="import"></a>Import  
  Představuje sestavení, jejichž jmenné prostory by měly být naimportovány podle [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru.  
 
 ## <a name="see-also"></a>Viz také:  

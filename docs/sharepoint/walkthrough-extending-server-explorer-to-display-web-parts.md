@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Rozšíření Průzkumníka serveru pro zobrazení částí webu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957894"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Průvodce: Rozšíření Průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte komponenty na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.  
   
  Tento návod demonstruje následující úkoly:  
@@ -43,7 +40,7 @@ ms.locfileid: "51296382"
 -   Ladění a testování rozšíření.  
   
 > [!NOTE]  
->  Alternativní verze tohoto názorného postupu, který používá namísto jeho objektový model serveru objektového modelu klienta pro službu SharePoint, naleznete v tématu [návod: volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  Alternativní verze tohoto názorného postupu, který používá namísto jeho objektový model serveru objektového modelu klienta pro službu SharePoint, naleznete v tématu [názorný postup: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
@@ -261,7 +258,7 @@ ms.locfileid: "51296382"
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  V tomto okamžiku návodu, veškerý kód pro **Galerie webových částí** uzlu a příkazů služby SharePoint jsou teď v projektech. Sestavte řešení, abyste měli jistotu, že oba projekty kompilovat bez chyb.  
   
 #### <a name="to-build-the-solution"></a>Abyste mohli sestavit řešení  
@@ -377,4 +374,3 @@ ms.locfileid: "51296382"
  [Návod: Volání do objektového modelu klienta SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
  [Vytvoření ikony nebo jiného obrázku &#40;Editor obrázků pro ikony&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

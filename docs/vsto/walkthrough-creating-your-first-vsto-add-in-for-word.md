@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Word'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Word'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948969"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Word
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Word
   Tento úvodní názorný postup ukazuje, jak k vytvoření doplňku VSTO pro Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici aplikace samostatně, bez ohledu na to, které jsou otevřené dokumenty.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -65,7 +62,7 @@ ms.locfileid: "49940967"
   
 6.  V **název** zadejte **FirstWordAddIn**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstWordAddIn** projekt a otevře soubor kódu ThisAddIn v editoru.  
   
@@ -124,17 +121,17 @@ ms.locfileid: "49940967"
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili základní doplňku VSTO pro Word, můžete další informace o tom, jak vývoj doplňků VSTO z těchto témat:  
   
--   Obecné programování úkolů, které můžete provádět v doplňcích VSTO: [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Obecné programování úkolů, které můžete provádět v doplňcích VSTO: [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Úkoly programování, které jsou specifické pro doplňky VSTO pro Word: [řešení aplikace Word](../vsto/word-solutions.md).  
+-   Programování úkolů, které jsou specifické pro doplňky VSTO pro Word: [Řešení aplikace Word](../vsto/word-solutions.md).  
   
--   Použití objektového modelu aplikace Word: [přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md).  
+-   Použití objektového modelu aplikace Word: [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md).  
   
--   Přizpůsobení uživatelského rozhraní aplikace Word, například podle přidat vlastní kartu na pás karet nebo vytváření vlastních vlastního podokna úloh: [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+-   Přizpůsobení uživatelského rozhraní slovo například přidat vlastní kartu na pás karet nebo vytvořením vlastní vlastního podokna úloh: [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).  
   
--   Sestavování a ladění doplňků VSTO pro Word: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
+-   Sestavování a ladění doplňků VSTO pro Word: [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
   
--   Nasazení doplňků VSTO pro Word: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
+-   Nasazení doplňků VSTO pro Word: [Nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -145,5 +142,3 @@ ms.locfileid: "49940967"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

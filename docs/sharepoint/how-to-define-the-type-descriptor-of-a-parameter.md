@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: definování deskriptoru typu pro parametr | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Definování deskriptoru typu pro parametr | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953154"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Postupy: definování deskriptoru typu pro parametr
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Postupy: Definování deskriptoru typu pro parametr
   Popisovač typu obsahuje vlastnosti, které popisují datový typ parametru. Popisovač typu může definovat pole, entitu nebo kolekci entit. Další informace najdete v tématu [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>K definování deskriptoru typu pro parametr  
@@ -50,7 +45,7 @@ ms.locfileid: "51294978"
   
 ### <a name="to-define-an-entity"></a>Definování entity  
   
-1.  V **vlastnosti** okno, nastaveno **název** nastavte na název, který popisuje entitu (například: **kontakt**).  
+1.  V **vlastnosti** okno, nastaveno **název** nastavte na název, který popisuje entitu (například: **Kontaktní**).  
   
 2.  Nastavte **TypeName** vlastnost na plně kvalifikovaný název typu, který entitu představuje. Tento typ může být třída v projektu, typ definovaný v sestavení, na které odkazujete ve svém řešení nebo typ definovaný v objektovém modelu služby BDC.  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294978"
   
 2. V panelu nabídky zvolte **zobrazení**, **okno vlastností**.  
   
-3. V **vlastnosti** okno, nastaveno **název** nastavte na název, který popisuje entitu (například: **kontakty**).  
+3. V **vlastnosti** okno, nastaveno **název** nastavte na název, který popisuje entitu (například: **Kontaktuje**).  
   
 4. Nastavte **IsCollection** vlastnost **True**. To znamená, že tento typ popisovače je kolekce entit.  
   
@@ -126,6 +121,5 @@ ms.locfileid: "51294978"
  [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)   
+ [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)   
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

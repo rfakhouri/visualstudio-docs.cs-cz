@@ -1,8 +1,6 @@
 ---
 title: Architektura doplňků VSTO
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dccfd3a3344ef9bde46b0b1e6bed50294d832acb
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 0a7453ad957b5f3da0907ac6887524d6523ac2c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945883"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura doplňků VSTO
   Doplňků VSTO vytvořené pomocí nástroje Office developer tools v sadě Visual Studio máte architektury funkce, které zdůrazňují stabilitu a zabezpečení a povolte je těsná spolupráce s Microsoft Office. Toto téma popisuje následující aspekty doplňků VSTO:  
@@ -115,5 +113,3 @@ ms.locfileid: "53248160"
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
-  
-  

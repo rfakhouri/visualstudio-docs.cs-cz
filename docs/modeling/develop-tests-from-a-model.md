@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958810"
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 Požadavky a architektury modely můžete pomoci vám organizovat testy systému a jeho součástí. Tento postup pomáhá zajistit, že testování požadavků, které jsou důležité pro uživatele a další zainteresované uživatele, a pomůže vám rychle aktualizovat testů při změně požadavků. Pokud používáte [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], můžete také zachovat propojení mezi modely a testy.
@@ -52,7 +51,7 @@ Požadavky a architektury modely můžete pomoci vám organizovat testy systému
 
     -   Pokud plán vývoje implementuje jeden aspekt jejich případu použití dříve než jiné, můžete povolit testy samostatně v průběhu vývoje.
 
--   Při návrhu testy oddělte od kódu nebo skript, který určuje, zda bylo dosaženo neplatná následná volba testovací data. Například může být zkoušku jednoduchou funkci aritmetické: vstup 4; Ověřte, zda výstup je 2. Místo toho navrhnout skript jako: Zvolte vstupní; vynásobit výstup samostatně a ověřte, že výsledek je původní vstup. Tento styl umožňuje měnit testovací vstupy beze změny hlavní části testu.
+-   Při návrhu testy oddělte od kódu nebo skript, který určuje, zda bylo dosaženo neplatná následná volba testovací data. Například může být testovací jednoduché aritmetické funkce: Vstup 4; Ověřte, zda výstup je 2. Místo toho navrhněte skript jako: Zvolte vstupní; vynásobit výstup samostatně a ověřte, že výsledek je původní vstup. Tento styl umožňuje měnit testovací vstupy beze změny hlavní části testu.
 
 #### <a name="linking-tests-to-use-cases"></a>Propojení testy s případy použití
  Pokud používáte [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] k navrhování a spuštění testů, můžete uspořádat testy v rámci požadavků, případu použití nebo uživatelské scénáře pracovních položek. Můžete propojit tyto pracovní položky s případy použití v modelu. To vám umožní rychle trasování požadavky na změny na testy a umožňuje sledovat průběh každého případu použití.

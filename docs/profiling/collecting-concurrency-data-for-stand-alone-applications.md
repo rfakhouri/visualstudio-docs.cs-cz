@@ -1,8 +1,6 @@
 ---
 title: Shromažďování dat souběžnosti pro samostatné aplikace pomocí příkazového řádku Profiler | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
@@ -13,25 +11,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7966bcffff03c23b99837ba69f591d76258146c
-ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
+ms.openlocfilehash: 1792af9740d30617d44d823e3abf01795fd05682
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "39276478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947085"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování dat souběžnosti pro samostatné aplikace pomocí příkazového řádku profileru
 Za použití metody souběžnosti z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady umožňuje shromažďovat data kolize prostředků a data o činnosti vlákna, která ukazuje využití procesor, kolize vlákna, migrace vlákna, zpoždění synchronizace, oblasti překryté vstupně-výstupní operace a další systémové události.  
   
 
-## <a name="common-tasks"></a>Běžné úlohy  
+## <a name="common-tasks"></a>Běžné úkoly  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Spuštění rozhraní .NET Framework aplikace a profil dat souběžnosti**|-   [Postupy: spuštění aplikace rozhraní .NET Framework ke shromažďování dat souběžnosti](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
-|**Spuštění C/C++ aplikace a profil dat souběžnosti**|-   [Postupy: spuštění nativní aplikace za účelem shromáždění dat souběžnosti](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
-|**Připojení profileru k běžící aplikaci rozhraní .NET Framework**|-   [Postupy: připojení profileru k aplikaci rozhraní .NET Framework ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
-|**Připojení profileru k běžící aplikaci C/C++**|-   [Postupy: připojení profileru k nativní aplikaci a shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
+|**Spuštění rozhraní .NET Framework aplikace a profil dat souběžnosti**|-   [Jak: Spuštění aplikace rozhraní .NET Framework ke shromažďování dat souběžnosti](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
+|**Spuštění C/C++ aplikace a profil dat souběžnosti**|-   [Jak: Spuštění nativní aplikace za účelem shromáždění dat souběžnosti](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
+|**Připojení profileru k běžící aplikaci rozhraní .NET Framework**|-   [Jak: Připojení profileru k aplikaci rozhraní .NET Framework ke shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
+|**Připojení profileru k běžící aplikaci C/C++**|-   [Jak: Připojení profileru k nativní aplikaci a shromažďování dat souběžnosti](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy
   

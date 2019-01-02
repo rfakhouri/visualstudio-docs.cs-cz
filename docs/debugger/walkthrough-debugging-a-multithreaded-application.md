@@ -1,8 +1,6 @@
 ---
 title: Zobrazit vlákna v ladicím programu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,22 +23,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946159"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>Zobrazit vlákna v ladicím programu sady Visual Studio pomocí okna vlákna
-V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte. Podrobné pokyny o tom, jak používat **vlákna** okna, naleznete v tématu [návod: ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).
+V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou ladíte. Podrobné pokyny o tom, jak používat **vlákna** okna, naleznete v tématu [názorný postup: Ladění pomocí okna vlákna](../debugger/how-to-use-the-threads-window.md).
 
 ## <a name="use-the-threads-window"></a>Použití okna vláken 
  **Vlákna** okno obsahuje tabulky, kde každý řádek popisuje samostatného vlákna ve vaší aplikaci. Ve výchozím nastavení v tabulce jsou uvedeny všechna vlákna ve vaší aplikaci, ale můžete filtrovat seznam a zobrazit pouze vlákna, které vás zajímají. Každý sloupec popisuje různé typu informací. Také můžete skrýt některé sloupce. Pokud zobrazíte všechny sloupce, tyto sloupce se zobrazí, zleva doprava:  
   
-- **Příznak**: V tomto sloupci bez popisku, můžete označit vlákno, ke kterému chcete věnovat zvláštní pozornost. Informace o tom, jak označit vlákno, naleznete v tématu [jak: Příznak a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md).  
+- **Příznak**: V tomto sloupci bez popisku můžete označit vlákno, ke kterému chcete věnovat zvláštní pozornost. Informace o tom, jak označit vlákno, naleznete v tématu [jak: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md).  
   
-- **Aktuální vlákno**: V tomto sloupci bez popisku, žlutá šipka označuje aktuální vlákno. Přehled šipka označuje aktuální kontext ladicího programu pro vlákna je neaktuální.
+- **Aktuální vlákno**: V tomto sloupci bez popisku žlutá šipka označuje aktuální vlákno. Přehled šipka označuje aktuální kontext ladicího programu pro vlákna je neaktuální.
   
 - **ID**: Zobrazí identifikační číslo pro každé vlákno.  
   
@@ -48,21 +46,21 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
   
 - **Kategorie**: Zobrazí kategorie vlákna vlákna uživatelského rozhraní, obslužné rutiny volání vzdálené procedury nebo pracovní vlákna. Zvláštní kategorie identifikuje hlavního vlákna aplikace.  
   
-- **Název**: identifikuje každý podproces podle názvu, pokud existuje, nebo jako \<bez názvu >.  
+- **Název**: Identifikuje každý podproces podle názvu, pokud existuje, nebo jako \<bez názvu >.  
   
-- **Umístění**: ukazuje, kde je spuštěn podproces. Můžete rozbalit tohoto umístění zobrazíte úplného zásobníku volání pro vlákno.  
+- **Umístění**: Ukazuje, kde je spuštěn podproces. Můžete rozbalit tohoto umístění zobrazíte úplného zásobníku volání pro vlákno.  
   
-- **Priorita**: pokročilé sloupce (ve výchozím nastavení skrytá), které zobrazuje priority nebo priority, které systém přiřadil pro každé vlákno.  
+- **Priorita**: Pokročilé sloupec (ve výchozím nastavení skrytá), které zobrazuje priority nebo priority, které systém přiřadil pro každé vlákno.  
   
-- **Maska příbuznosti**: pokročilé sloupce (ve výchozím nastavení skrytá), který zobrazuje maska přidružení procesoru pro každé vlákno. V systému s více procesory Maska spřažení Určuje, které procesory, ve kterých lze spustit vlákno.  
+- **Maska příbuznosti**: Pokročilé sloupec (ve výchozím nastavení skrytá), který zobrazuje maska přidružení procesoru pro každé vlákno. V systému s více procesory Maska spřažení Určuje, které procesory, ve kterých lze spustit vlákno.  
   
-- **Pozastavený počet**: pokročilé sloupce (ve výchozím nastavení skrytá), která zobrazuje pozastavený počet. Tento počet Určuje, zda lze spustit vlákno. Další informace o pozastavené počty najdete v tématu [zablokovat a odblokovat vlákna](#freeze-and-thaw-threads).  
+- **Pozastavený počet**: Pokročilé sloupec (ve výchozím nastavení skrytá), který zobrazuje počet pozastavené. Tento počet Určuje, zda lze spustit vlákno. Další informace o pozastavené počty najdete v tématu [zablokovat a odblokovat vlákna](#freeze-and-thaw-threads).  
   
-- **Název procesu**: pokročilé sloupce (ve výchozím nastavení skrytá), který zobrazuje proces, ke kterému patří každé vlákno. Data v tomto sloupci může být užitečné při ladění více procesů.  
+- **Název procesu**: Pokročilé sloupec (ve výchozím nastavení skrytá), který zobrazuje proces, ke kterému patří každé vlákno. Data v tomto sloupci může být užitečné při ladění více procesů.  
 
-- **ID procesu**: ID pokročilé sloupce (ve výchozím nastavení skrytá), který zobrazuje proces, ke které patří každé vlákno. 
+- **ID procesu**: Pokročilé sloupec (ve výchozím nastavení skrytá), která zobrazuje ID procesu, ke kterému patří každé vlákno. 
 
-- **Kandidát spojení**: pokročilé sloupce (ve výchozím nastavení skrytá), který jednoznačně identifikuje počítač, ke kterému je připojený ladicí program. 
+- **Kandidát spojení**: Pokročilé sloupec (ve výchozím nastavení skrytá), který jednoznačně identifikuje počítač, ke kterému je připojený ladicí program. 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>Chcete-li zobrazit okno vlákna v režimu přerušení nebo v režimu spuštění  
   
@@ -73,7 +71,7 @@ V **vlákna** okna, můžete prozkoumat a pracujte s vlákny v aplikaci, kterou 
 -   Na panelu nástrojů v horní části **vlákna** okně **sloupce**. Zaškrtněte nebo zrušte název sloupce, který chcete zobrazit nebo skrýt.  
 
 ## <a name="display-flagged-threads"></a>Zobrazit vlákna s příznakem  
- Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna** okna. Další informace najdete v tématu [postupy: označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md). V **vlákna** okna, můžete také zobrazit všechna vlákna, nebo pouze vlákna s příznakem.  
+ Můžete označit příznakem vlákna, které chcete věnovat zvláštní pozornost označením s ikonou v **vlákna** okna. Další informace najdete v tématu [jak: Označení a odstranění označení vlákna](../debugger/how-to-flag-and-unflag-threads.md). V **vlákna** okna, můžete také zobrazit všechna vlákna, nebo pouze vlákna s příznakem.  
   
 ### <a name="to-display-only-flagged-threads"></a>Chcete-li zobrazit pouze vlákna označená příznakem  
   

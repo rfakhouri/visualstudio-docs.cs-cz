@@ -2,19 +2,18 @@
 title: Izolace aplikace pro testování částí pomocí Překryvné ovladače
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 908a31a50b1af99f7123f292f250f9262a7da62e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947332"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Izolace aplikace od jiných sestavení pomocí testů shim za účelem testování částí
 
@@ -32,7 +31,7 @@ Přehled a rychlý start pokyny, najdete v části [izolace testovaného kódu p
 > [!NOTE]
 > Projekty .NET standard teď nejsou podporovány.
 
-## <a name="example-the-y2k-bug"></a>Příklad: Určená chyb
+## <a name="example-the-y2k-bug"></a>Příklad: Chyba určená
 
 Pojďme se na metodu, která vyvolá výjimku v 1. ledna 2000:
 
@@ -511,5 +510,5 @@ Překrytí nelze použít na všechny typy z knihovny základních tříd .NET *
 ## <a name="see-also"></a>Viz také:
 
 - [Izolace testovaného kódu pomocí Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Peter Provost blog: překrytí Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Video (1 hodina 16): testování untestable kódu pomocí zástupného rozhraní v sadě Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Peter Provost blogu: Visual Studio 2012 překrytí](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
+- [Video (1 hodina 16): Testování untestable kódu pomocí zástupného rozhraní v sadě Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

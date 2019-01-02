@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastní karty pomocí kódu XML pásu karet'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955224"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet
+# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Průvodce: Vytvoření vlastní karty pomocí kódu XML pásu karet
   Tento návod ukazuje, jak vytvořit vlastní kartu pásu karet pomocí **pásu karet (XML)** položky.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808921"
   
 1.  Vytvoření **doplňku aplikace Word** projektu s názvem **MyRibbonAddIn**.  
   
-     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře **ThisAddIn.cs** nebo **ThisAddIn.vb** soubor kódu a přidá **MyRibbonAddIn** projektu **Průzkumníka řešení**.  
   
@@ -155,11 +152,9 @@ ms.locfileid: "38808921"
   
 -   Vytvoření vlastní akce podokna. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).  
   
--   Přizpůsobení uživatelského rozhraní aplikace Microsoft Office Outlook s použitím oblastí formulářů aplikace Outlook. Další informace najdete v tématu [návod: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Přizpůsobení uživatelského rozhraní aplikace Microsoft Office Outlook s použitím oblastí formulářů aplikace Outlook. Další informace najdete v tématu [názorný postup: Návrh oblasti formuláře Outlooku](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Pás karet – XML](../vsto/ribbon-xml.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

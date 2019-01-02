@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO'
-ms.custom: ''
+title: 'Průvodce: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954893"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Průvodce: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO
   Můžete přidat ovládací prvky do libovolného otevřeného dokumentu aplikace Microsoft Office Word s použitím doplňku VSTO. Tento návod ukazuje, jak používat na pásu karet umožňující uživatelům přidávat <xref:Microsoft.Office.Tools.Word.Controls.Button> nebo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu.  
 
- **Platí pro:** informace v tomto tématu se vztahují na projekty doplňku VSTO pro Word 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Platí pro:** Informace v tomto tématu se vztahují na projekty doplňku VSTO pro Word 2010. Další informace najdete v tématu [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
 
  Tento návod znázorňuje následující úlohy:  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951584"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Chcete-li vytvořit nový projekt doplňku VSTO pro Word  
 
-1.  Vytvoření projektu doplňku VSTO pro Word s názvem **WordDynamicControls**. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu doplňku VSTO pro Word s názvem **WordDynamicControls**. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Přidejte odkaz na **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** sestavení. Tento odkaz je potřeba programové přidání ovládacího prvku Windows Forms do dokumentů později v tomto názorném postupu.  
 
@@ -84,7 +81,7 @@ ms.locfileid: "49951584"
 
    | Vlastnost | Hodnota |
    |-----------|-----------------------|
-   | **Jméno** | **addButtonCheckBox** |
+   | **Název** | **addButtonCheckBox** |
    | **Popisek** | **Přidání tlačítka** |
 
 
@@ -93,7 +90,7 @@ ms.locfileid: "49951584"
 
    | Vlastnost | Hodnota |
    |-----------|---------------------------|
-   | **Jméno** | **addRichTextCheckBox** |
+   | **Název** | **addRichTextCheckBox** |
    | **Popisek** | **Přidání ovládacího prvku RTF** |
 
 
@@ -187,7 +184,7 @@ ms.locfileid: "49951584"
 
 -   Příklad, který ukazuje, jak přidat mnoho typů ovládacích prvků do dokumentu za běhu a znovu vytvořte ovládací prvky, když znovu otevřete dokument, naleznete v tématu slova Add-In dynamické ovládací prvky ukázce kódu na [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).  
 
--   Názorný postup ukazuje, jak přidat ovládací prvky do listu pomocí doplňku VSTO pro Excel, naleznete v tématu [návod: Přidání ovládacích prvků na list za běhu v projektu doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
+-   Názorný postup ukazuje, jak přidat ovládací prvky do listu pomocí doplňku VSTO pro Excel, naleznete v tématu [názorný postup: Přidání ovládacích prvků na list za běhu v projektu doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
 
 ## <a name="see-also"></a>Viz také:  
  [Řešení aplikace Word](../vsto/word-solutions.md)   
@@ -196,4 +193,3 @@ ms.locfileid: "49951584"
  [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

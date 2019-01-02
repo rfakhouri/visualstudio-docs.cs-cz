@@ -1,8 +1,6 @@
 ---
 title: Nastavení sledování u proměnných v paralelních vláken | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946981"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Nastavení sledování u proměnných v paralelních vláken v sadě Visual Studio
 V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsahuje jeden výraz ve více vláknech. Každý řádek představuje vlákno, na kterém běží v aplikaci však vlákno může být reprezentován více řádků. Přesněji řečeno každý řádek představuje volání funkce, jejíž podpis funkce odpovídá funkci na aktuální rámec zásobníku. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete označit příznakem, odznačit, ukotvit (Pozastavit) a uvolnit vlákna (pokračovat). Tyto sloupce se zobrazí v **paralelní sledování** okno:  
@@ -64,7 +62,7 @@ V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsa
   
 ### <a name="to-switch-to-another-thread"></a>Chcete-li přepnout do jiného vlákna  
   
--   Poklepejte na sloupec aktuální vlákno (druhý sloupec). (Klávesnice: Vyberte řádek, a stiskněte klávesu Enter.)  
+-   Poklepejte na sloupec aktuální vlákno (druhý sloupec). (Klávesnice: Vyberte řádek a stiskněte klávesu Enter.)  
   
 ### <a name="to-sort-a-column"></a>Chcete-li seřadit sloupec  
   
@@ -88,5 +86,5 @@ V okně paralelního sledování můžete najednou zobrazit hodnoty, které obsa
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Postupy: Použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
  [Návod: Ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

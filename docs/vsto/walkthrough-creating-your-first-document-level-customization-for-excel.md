@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel'
-ms.custom: ''
+title: 'Průvodce: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955315"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
+# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Průvodce: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
   Tento úvodní názorný postup ukazuje, jak k vytvoření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze při otevření konkrétní sešitu. Nelze použít přizpůsobení úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet při otevření libovolné sešitu.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -66,7 +63,7 @@ ms.locfileid: "49849031"
   
 6. V **název** zadejte **FirstWorkbookCustomization**.  
   
-7. Klikněte na tlačítko **OK**.  
+7. Klikněte na **OK**.  
   
     **Visual Studio Tools for Office Project Wizard** otevře.  
   
@@ -155,19 +152,19 @@ ms.locfileid: "49849031"
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili základní přizpůsobení úrovni dokumentu pro Excel, můžete další informace o tom, jak vyvíjet vlastní nastavení v těchto tématech:  
   
--   Obecné programování úkolů, které můžete provádět v přizpůsobeních na úrovni dokumentu: [programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).  
+-   Obecné programování úkolů, které můžete provádět v přizpůsobeních na úrovni dokumentu: [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md).  
   
--   Úkoly programování, které jsou specifické pro přizpůsobení na úrovni dokumentu pro Excel: [řešení pro Excel](../vsto/excel-solutions.md).  
+-   Úkoly programování, které jsou specifické pro přizpůsobení na úrovni dokumentu pro Excel: [Řešení pro Excel](../vsto/excel-solutions.md).  
   
--   Použití objektového modelu aplikace Excel: [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
+-   Použití objektového modelu Excelu: [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
   
--   Přizpůsobení uživatelského rozhraní aplikace Excel, například podle přidat vlastní kartu na pás karet nebo vytvořit vlastní podokna akcí: [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+-   Přizpůsobení uživatelského rozhraní Excel například přidat vlastní kartu na pás karet nebo vytvořením vlastní podokna akcí: [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).  
   
--   Provádění úloh, které nejsou možné pomocí objektového modelu Excelu (například hostování spravované ovládací prvky v dokumentech a vazba ovládacích prvků aplikace Excel k datům s použitím Windows Forms pomocí rozšířených objektů aplikace Excel, poskytuje nástroje pro vývoj pro Office v sadě Visual Studio data vazby modelu): [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md).  
+-   Provádění úloh, které nejsou možné pomocí objektového modelu Excelu (například hostování spravované ovládací prvky v dokumentech a vazba ovládacích prvků aplikace Excel k datům s použitím Windows Forms pomocí rozšířených objektů aplikace Excel, poskytuje nástroje pro vývoj pro Office v sadě Visual Studio datový model vazby): [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md).  
   
--   Sestavování a ladění přizpůsobení úrovni dokumentu pro aplikaci Excel: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
+-   Sestavování a ladění přizpůsobení úrovni dokumentu pro aplikaci Excel: [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
   
--   Nasazení přizpůsobení úrovni dokumentu pro aplikaci Excel: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
+-   Nasazení přizpůsobení úrovni dokumentu pro aplikaci Excel: [Nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -179,5 +176,3 @@ ms.locfileid: "49849031"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

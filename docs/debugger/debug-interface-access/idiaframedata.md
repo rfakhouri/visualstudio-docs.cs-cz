@@ -1,8 +1,6 @@
 ---
-title: Idiaframedata – | Microsoft Docs
-ms.custom: ''
+title: Idiaframedata – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,54 +12,54 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efdc99d45bfc081fafd9b8467937567cca777b68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5152dfc0ed6ef043fe80a060643c660c0f1ec343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948443"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
-Zpřístupní podrobnosti rámce zásobníku.  
+Poskytuje podrobnosti o rámec zásobníku.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaFrameData : IUnknown  
+IDiaFrameData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaFrameData`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaFrameData`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Načte část oddílu adresu kód pro rámečku.|  
-|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Načte posunutí část adresy kód pro rámečku.|  
-|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Načte obrázek relativní virtuální adresy (RVA) kód pro rámečku.|  
-|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Načte virtuální adresy (VA) kód pro rámečku.|  
-|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Načte délka v bajtech blok kódu popsaného rámečku.|  
-|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Získá počet bajtů lokální proměnné nabídnutých v zásobníku.|  
-|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Získá počet bajtů parametrů nabídnutých v zásobníku.|  
-|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Načte maximální počet bajtů nabídnutých v zásobníku v rámečku.|  
-|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Získá počet bajtů kódu prologu v bloku.|  
-|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Získá počet bajtů uložené registry nabídnutých v zásobníku.|  
-|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Načte řetězec program, který se používá k výpočtu registrace nastavit před voláním funkce aktuální.|  
-|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Načte příznak, který označuje výjimek tohoto systému je v platnosti.|  
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Načte příznak, který označuje, že zpracování výjimek jazyka C++ je v platnosti.|  
-|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Získá příznak označující, zda blok obsahuje vstupní bod funkce.|  
-|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Načte příznak, který indikuje, že základní ukazatel je přidělen pro kód v tomto rozsahu adres. Tato metoda je zastaralá.|  
-|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Načte typ kompilátoru konkrétní rámce.|  
-|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Načte rámce rozhraní dat pro uzavření funkce.|  
-|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Provede uvolnění zásobníku a vrátí aktuální stav registrů rozhraní procházení rámce zásobníku.|  
+|[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|Načte části část kódu adresa pro rámec.|  
+|[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|Načte posunu částí adresy kód pro rámec.|  
+|[IDiaFrameData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaframedata-get-relativevirtualaddress.md)|Načte obrázek relativní virtuální adresu (RVA) kódu pro rámec.|  
+|[IDiaFrameData::get_virtualAddress](../../debugger/debug-interface-access/idiaframedata-get-virtualaddress.md)|Načte virtuální adresy (VA) kód rámečku.|  
+|[IDiaFrameData::get_lengthBlock](../../debugger/debug-interface-access/idiaframedata-get-lengthblock.md)|Načte délku v bajtech, bloku kódu popsal rámce.|  
+|[IDiaFrameData::get_lengthLocals](../../debugger/debug-interface-access/idiaframedata-get-lengthlocals.md)|Získá počet bajtů lokálních proměnných posunuto v zásobníku.|  
+|[IDiaFrameData::get_lengthParams](../../debugger/debug-interface-access/idiaframedata-get-lengthparams.md)|Získá počet bajtů z parametrů předaných v zásobníku.|  
+|[IDiaFrameData::get_maxStack](../../debugger/debug-interface-access/idiaframedata-get-maxstack.md)|Získá maximální počet bajtů posunuto v zásobníku v rámci.|  
+|[IDiaFrameData::get_lengthProlog](../../debugger/debug-interface-access/idiaframedata-get-lengthprolog.md)|Získá počet bajtů prologu kód v bloku.|  
+|[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|Získá počet bajtů uložených registrů posunuto v zásobníku.|  
+|[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|Načte řetězec program, který se používá k výpočtu do registru, nastavte před voláním na aktuální funkci.|  
+|[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|Získá příznak označující, že zpracování výjimek systému je v platnosti.|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|Získá příznak označující, že zpracování výjimek jazyka C++ je v platnosti.|  
+|[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|Získá příznak, který označuje, že blok obsahuje vstupního bodu funkce.|  
+|[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|Získá příznak, který označuje, že je základní ukazatel přidělen pro kód v tomto rozsahu adres. Tato metoda je zastaralá.|  
+|[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|Načte typ rámce specifických pro kompilátor.|  
+|[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Načte snímků dat rozhraní pro vnější funkce.|  
+|[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Provede uvolnění zásobníku a vrátí aktuální stav registrů v rozhraní rámce zásobníku funkce walk.|  
   
 ## <a name="remarks"></a>Poznámky  
- Podrobnosti jsou dostupné pro rámeček jsou pro body spuštění v rozsahu adres indikován délka adresu a bloku.  
+ K dispozici pro blok podrobnosti jsou určené pro body spuštění v rozsahu adres indikován délky adresy a bloku.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Získat voláním toto rozhraní [idiaenumframedata::Next –](../../debugger/debug-interface-access/idiaenumframedata-next.md) nebo [idiaenumframedata::Item –](../../debugger/debug-interface-access/idiaenumframedata-item.md) metody. Najdete v článku [idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md) rozhraní podrobnosti.  
+ Získat voláním toto rozhraní [idiaenumframedata::Next –](../../debugger/debug-interface-access/idiaenumframedata-next.md) nebo [idiaenumframedata::Item –](../../debugger/debug-interface-access/idiaenumframedata-item.md) metody. Zobrazit [idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md) rozhraní podrobnosti.  
   
 ## <a name="example"></a>Příklad  
- Tento příklad zobrazí na vlastnosti `IDiaFrameData` objektu. Najdete v článku [idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md) rozhraní pro příklad, jak `IDiaFrameData` se získávají rozhraní.  
+ Tento příklad vytiskne vlastnosti `IDiaFrameData` objektu. Zobrazit [idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md) rozhraní pro příklad, jak `IDiaFrameData` získat rozhraní.  
   
 ```C++  
 void PrintFrameData(IDiaFrameData* pFrameData){  
@@ -115,14 +113,14 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumframedata –](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [Idiaenumframedata::Item –](../../debugger/debug-interface-access/idiaenumframedata-item.md)   
  [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

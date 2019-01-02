@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Změna umístění karty na pásu karet'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956508"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Postupy: Změna umístění karty na pásu karet
   Můžete změnit pořadí vlastních karet na pásu karet pomocí **kartu Editor kolekce**. Vlastní karty lze umístit před nebo za integrovanou kartu na pásu karet. Vestavěná karta je karta, který je již na pásu karet aplikace Microsoft Office. Například **Data** karta je integrovanou kartou v aplikaci Excel.  
@@ -65,5 +62,3 @@ ms.locfileid: "53647109"
  [Pás karet – XML](../vsto/ribbon-xml.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

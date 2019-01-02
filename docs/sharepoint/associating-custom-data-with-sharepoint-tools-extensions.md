@@ -1,9 +1,6 @@
 ---
 title: Rozšíření nástrojů SharePoint přidružení vlastních dat | Dokumentace společnosti Microsoft
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951037"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Přidružení vlastních dat k rozšíření nástrojů SharePoint
   Přidat vlastní data k určitým objektům v rozšíření nástrojů služby SharePoint. To je užitečné, když máte data v jedné části rozšíření, které chcete později získat přístup z jiného kódu v rozšíření. Namísto provádění vlastní způsob ukládání a přístup k datům, můžete přidružit data s objektem v rozšíření a pak později znovu načíst data ze stejného objektu.  
@@ -77,16 +74,14 @@ ms.locfileid: "49939488"
   
 - <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Tato metoda vrací data objektu, pokud se neukončí, nebo **null** Pokud neexistuje. Tato metoda slouží pouze k načtení instance odkazových typů.  
   
-  Následující příklad kódu určuje, zda určitá data objektu je již přidružena k položce projektu. Pokud datový objekt už není přidružená k položce projektu a pak kód přidá objekt, který má <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> vlastnosti položky projektu. Tento příklad v rámci většího příkladu najdete v tématu [postupy: Přidání vlastnosti do vlastního typu položky projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+  Následující příklad kódu určuje, zda určitá data objektu je již přidružena k položce projektu. Pokud datový objekt už není přidružená k položce projektu a pak kód přidá objekt, který má <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> vlastnosti položky projektu. Tento příklad v rámci většího příkladu najdete v tématu [jak: Přidání vlastnosti do vlastního typu položky projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>Viz také:
  [Programování konceptů a funkcí pro rozšíření nástrojů SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Návod: Vytvoření vlastní akce položky projektu pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Návod: Rozšíření Průzkumníka serveru pro zobrazení částí webu](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Postupy: Přidání vlastnosti do projektů služby SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Postupy: Přidání vlastnosti do vlastního typu položky projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-   
- 

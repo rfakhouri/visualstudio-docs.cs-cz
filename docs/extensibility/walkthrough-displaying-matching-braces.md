@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení odpovídající složené závorky | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956573"
 ---
-# <a name="walkthrough-display-matching-braces"></a>Návod: Zobrazení párových složených závorek
+# <a name="walkthrough-display-matching-braces"></a>Průvodce: Zobrazení párových složených závorek
 Implementuje funkce založený na jazyce, jako je například závorky definováním složené závorky, kterou chcete porovnat a přidání značky značky textu k odpovídající složené závorky po blikající kurzor na jednom z složené závorky. Můžete definovat složené závorky v rámci jazyka, definovat vlastní příponu názvu souboru a typu obsahu a použít jenom značky, které typ nebo použít značky k existujícímu typu obsahu (jako je například "text"). Následující návod ukazuje, jak použít závorky značky "text" typu obsahu.  
   
 ## <a name="prerequisites"></a>Požadavky  
@@ -126,4 +123,4 @@ Implementuje funkce založený na jazyce, jako je například závorky definová
 4.  Když umístíte blikající kurzor před levou složenou závorku, by měl být zvýrazněn této složenou závorku a odpovídající závorce zavřít. Když umístěte kurzor bezprostředně po pravé lomené závorky, by měl být zvýrazněn této složenou závorku a odpovídající levou složenou závorku.  
   
 ## <a name="see-also"></a>Viz také:  
- [Návod: Propojení typ obsahu, který má příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Typ obsahu propojit příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

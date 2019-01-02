@@ -1,8 +1,6 @@
 ---
 title: Idiaframedata::get_cplusplusexceptionhandling – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9c35668e7998cf11773cca9db4bfdbf8af11701
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2b7ceb69e4d4310330ea356037b7b155ea81f26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959156"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 Získá příznak, který určuje, zda zpracování výjimek jazyka C++ je v platnosti.  
@@ -27,7 +25,7 @@ Získá příznak, který určuje, zda zpracování výjimek jazyka C++ je v pla
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_cplusplusExceptionHandling (   
+HRESULT get_cplusplusExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  

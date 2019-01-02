@@ -1,8 +1,6 @@
 ---
-title: IDiaStackWalkHelper | Microsoft Docs
-ms.custom: ''
+title: IDiaStackWalkHelper | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dac563f99697a8e43b5f7db9831e075c0ed7087
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f498ea6f34522b3eb5ca8eda78f9bb188ea1c241
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957508"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
-Usnadňuje procházení zásobníku pomocí souboru databáze (.pdb) ladicí program.  
+Usnadňuje procházení zásobníku pomocí programového souboru databáze (PDB) ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,29 +38,29 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|Načte hodnotu registru.|  
 |[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|Nastaví hodnotu registru.|  
 |[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)|Čte blok dat z ke spustitelnému souboru bitové kopie v paměti.|  
-|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Vyhledá zadaný zásobníku pro nejbližší funkce zpáteční adresu.|  
-|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Vyhledá zadaný zásobníku pro zpáteční adresu nebo blízko adresu zadaným zásobníkem.|  
-|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Načte rámce zásobníku, která obsahuje zadanou virtuální adresu.|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Načte symbol, který obsahuje zadanou virtuální adresu. **Poznámka:** Symbol musí mít typ `SymTagFunctionType` (hodnoty z [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) výčet).|  
+|[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|Vyhledá zadaný zásobník snímků pro nejbližší zpáteční adresu funkce.|  
+|[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|Vyhledá zadaný zásobník snímků pro zpáteční adresu na nebo blízko ní adresu určeném zásobníku.|  
+|[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|Obnoví rámec zásobníku, který obsahuje zadanou virtuální adresu.|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|Načte symbol, který obsahuje zadanou virtuální adresu. **Poznámka:**  Symbol, musí být typu `SymTagFunctionType` (hodnoty z [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) výčet).|  
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|Vrátí související se zadanou virtuální adresu PDATA datového bloku.|  
-|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Načte výchozí virtuální adresy spustitelný soubor, zadané virtuální adresy někde v paměti ke spustitelnému souboru.|  
+|[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|Načte výchozí virtuální adresy spustitelného souboru, zadaný virtuální adresu někde v paměti ke spustitelnému souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
- Toto rozhraní je volána službou kód DIA ke získání informací o spustitelného souboru vytvořit seznam rámce zásobníku při spuštění programu.  
+ Toto rozhraní je volán kód DIA k získání informací o spustitelný soubor pro vytvoření seznamu bloků zásobníku při provádění programu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Klientská aplikace implementuje toto rozhraní pro podporu procházení zásobníku při spuštění programu. Instance toto rozhraní je předána [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) nebo [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metody.  
+ Klientská aplikace implementuje toto rozhraní pro podporu procházení zásobníku během provádění programu. Instance toto rozhraní je předán [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) nebo [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metody.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)   
- [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md)   
+ [Symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)

@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948651"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Procházení a aktualizace modelů vrstev v programovém kódu
 
-Tento článek popisuje prvky a vztahy v modelech vrstvy, které můžete přejít a aktualizovat pomocí kódu programu. Další informace o diagramů závislostí z pohledu uživatele najdete v tématu [diagramy závislostí: referenční](../modeling/layer-diagrams-reference.md) a [diagramy závislostí: pokyny](../modeling/layer-diagrams-guidelines.md).
+Tento článek popisuje prvky a vztahy v modelech vrstvy, které můžete přejít a aktualizovat pomocí kódu programu. Další informace o diagramů závislostí z pohledu uživatele najdete v tématu [diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md) a [diagramy závislostí: Pokyny pro](../modeling/layer-diagrams-guidelines.md).
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> Modelu popsaného v tomto tématu je fasáda na obecnějšího <xref:Microsoft.VisualStudio.GraphModel> modelu. Při psaní [rozšíření příkazu nebo gesta nabídky](../modeling/add-commands-and-gestures-to-layer-diagrams.md), použijte `Layer` modelu. Pokud píšete [rozšíření ověření vrstvy](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), je jednodušší použít `GraphModel`.
 

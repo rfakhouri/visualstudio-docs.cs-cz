@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 822c5cc1b657e6b5ada886ef7f10219a42df723a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d047298a263e707c2f4e09475d2f6510a586a4f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945818"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Postupy: vytvoření modulu Plugin rekordéru
+# <a name="how-to-create-a-recorder-plug-in"></a>Postupy: Vytvoření modulu plug-in rekordéru
 
 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> Umožňuje upravovat test výkonnosti webu zaznamenané. Změna nastane po zvolení **Zastavit** v **rekordéru testu výkonnosti webu** nástrojů, ale před test uložením a zobrazením v editoru testu výkonnosti webu.
 
@@ -111,7 +110,7 @@ Po kompilaci modulu plug-in rekordéru, umístěte výslednou knihovnu DLL jedn�
     > [!WARNING]
     > Vám může se objevit chyba podobná následující při spuštění testu výkonnosti webu nebo zátěžového testu, který používá modul plug-in:
     >
-    > **Požadavek se nezdařil.: výjimky v \<modulu plug-in > události: Nelze načíst soubor nebo sestavení "\<soubor DLL""modulu Plug-in název >, verze =\<n.n.n.n >, jazykovou verzi = neutral, PublicKeyToken = null' nebo některou z jeho závislostí. Systém nemůže najít zadaný soubor.**
+    > **Požadavek se nezdařil: Výjimka v \<modulu plug-in > události: Nelze načíst soubor nebo sestavení "\<soubor DLL""modulu Plug-in název >, verze =\<n.n.n.n >, jazyková verze = neutral, PublicKeyToken = null' nebo některou z jeho závislostí. Systém nemůže najít zadaný soubor.**
     >
     > Důvodem je-li změnit kód na některý z modulů plug-in a vytvořit novou verzi knihovny DLL **(verze = 0.0.0.0)**, ale modul plug-in stále odkazuje původní verzi modulu plug-in. Chcete-li tento problém, postupujte podle těchto kroků:
     >

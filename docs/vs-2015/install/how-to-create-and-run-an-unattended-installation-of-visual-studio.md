@@ -1,12 +1,11 @@
 ---
-title: 'Postupy: vytvoření a spuštění bezobslužné instalaci | Dokumentace Microsoftu'
+title: 'Postupy: Vytvoření a spuštění bezobslužné instalaci | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951927"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Postupy: Vytvoření a spuštění bezobslužné instalace sady Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +118,7 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
 
 2. Otevřít **Start** nabídky a klikněte na tlačítko **spustit**.
 
-3. Zadejte následující text: \\ \\ *ServerName*\IDEinstall\vs_*produktu*.exe parametru/adminfile PathToAdmindeployment.xml souboru
+3. Zadejte následující text: \\\\*ServerName*\IDEinstall\vs_*produktu*soubor PathToAdmindeployment.xml .exe parametru/adminfile.
 
     AdditionalParametersAsNeeded
 
@@ -178,7 +177,7 @@ Spuštěním instalační aplikace sady [!INCLUDE[vsprvs](../includes/vsprvs-md.
 
 2.  Zadejte kód product key.
 
-     (Další informace najdete v tématu [postupy: Vyhledání kódu Product Key sady Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) a [postupy: automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) témata.)
+     (Další informace najdete v tématu [jak: Vyhledejte kód Product Key sady Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) a [jak: Automatické použití kódů product key při nasazení sady Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) témata.)
 
 ## <a name="see-also"></a>Viz také
  [Instalace sady Visual Studio](../install/install-visual-studio-2015.md)

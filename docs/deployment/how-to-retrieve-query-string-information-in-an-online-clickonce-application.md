@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: načtení informací řetězce dotazu do Online aplikace ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Načtení informací řetězce dotazu do Online aplikace ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff97e72342e8026cddfe80d383c07ab99e3bc99a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951011"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: načtení informací řetězce dotazu do online aplikace ClickOnce
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Postupy: Načtení informací řetězce dotazu do online aplikace ClickOnce
 *Řetězec dotazu* je část adresy URL začínající otazník (?), který obsahuje libovolné informace ve formě *název = hodnota*. Předpokládejme, že máte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci s názvem `WindowsApp1` , která hostujete na `servername`, a vy chcete předávat hodnotu pro proměnnou `username` při spuštění aplikace. Vaše adresa URL může vypadat nějak takto:  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -41,7 +39,7 @@ ms.locfileid: "49829758"
 > [!NOTE]
 >  Než provedete rozhodnutí pro tuto funkci povolit, najdete v části "Zabezpečení" dále v tomto tématu.  
   
- Informace o tom, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení s použitím *Mage.exe* nebo *MageUI.exe*, naleznete v tématu [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Informace o tom, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení s použitím *Mage.exe* nebo *MageUI.exe*, naleznete v tématu [názorný postup: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Spuštění v rozhraní .NET Framework 3.5 SP1, je možné předat argumenty příkazového řádku pro offline [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Pokud chcete zadat argumenty do aplikace, můžete předat parametry do souboru zástupce s. Rozšíření APPREF MS.  

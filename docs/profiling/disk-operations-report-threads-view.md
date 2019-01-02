@@ -1,8 +1,6 @@
 ---
-title: Disk sestava operací (zobrazení vláken) | Microsoft Docs
-ms.custom: ''
+title: Sestava operací (zobrazení vláken) na disku | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.diskoperations
@@ -14,29 +12,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d145b57b2cacce68b609ddc7aea5cef41cf69762
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 95173f260ce8ed40c607c7026df727267dd3866e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955263"
 ---
 # <a name="disk-operations-report-threads-view"></a>Sestava diskových operací (Zobrazení vláken)
-Sestava diskových operací zobrazí diskové vstupně-výstupních operací v kanály disku.  
+Sestava diskových operací ukazuje vstupně-výstupních operací disku v kanálech disku.  
   
- Pro každý přístup k disku, ke kterému dochází jménem proces, který je aktuálně viditelné časové okno profilovaným údajně tyto informace:  
+ Pro každý přístup na disk, který se nachází jménem proces, který je právě profilována v současném viditelném časovém okně se použije v hlášení tyto informace:  
   
--   Název a PID procesu, který provádí přístup k disku  
+-   Název a identifikátor PID procesu, který provádí přístup k disku  
   
--   ID podprocesu, který se získat přístup k disku  
+-   ID vlákna, která využívají disku  
   
--   Název souboru, který byl přístupný  
+-   Název souboru, která se použila  
   
--   Počet čtení za souboru  
+-   Počet čtení na souboru  
   
--   Počet bajtů pro čtení  
+-   Počet přečtených bajtů  
   
--   Čtení latence v milisekundách  
+-   Latence čtení v milisekundách  
   
 -   Počet zápisů  
   

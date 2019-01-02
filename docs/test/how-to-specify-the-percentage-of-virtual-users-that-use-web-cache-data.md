@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c9cf6ea3b5bf82d26ab838b75cb0c0092aafc182
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958758"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Postupy: určení procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Postupy: Zadejte procentuální podíl virtuálních uživatelů, které používají data ve webové mezipaměti
 
 Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete změnit vlastnosti scénářů pro splnění potřebám a cílům testování s použitím **editoru zátěžového testu**. Úplný seznam vlastnosti scénáře zátěžového testu a jejich popis najdete v tématu [vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md).
 
@@ -51,7 +50,7 @@ Pokud jsou zátěžové testy webu, který má velký počet návratový uživat
 ## <a name="see-also"></a>Viz také:
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
-- [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)
+- [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)
 - [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
 - [Vlastnosti scénáře zátěžového testu](../test/load-test-scenario-properties.md)
 - [Úpravy vzorů zatížení pro model aktivity virtuálního uživatele](../test/edit-load-patterns-to-model-virtual-user-activities.md)

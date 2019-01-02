@@ -1,13 +1,8 @@
 ---
 title: Vytvoření modelu připojení obchodních dat | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957482"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Vytvoření modelu připojení obchodních dat
   Můžete vytvořit obchodní Data připojení (BDC) model nebo přizpůsobit existující model služby BDC pomocí sady Visual Studio. Každý projekt služby SharePoint může obsahovat pouze jeden model. Další informace najdete v tématu [integraci obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -45,7 +40,7 @@ ms.locfileid: "49930203"
 |Soubor definice modelu|Obsahuje kód XML, který definuje entity, metody, řádek obchodní (LOB) systémové objekty a další metadata, která popisuje model.<br /><br /> Upravit metadata v tomto souboru pomocí návrháři služby BDC **služby BDC Explorer**, **podrobnosti metody služby BDC** okně a **vlastnosti** okna.|  
 |Soubor kódu služby entity|Obsahuje metody, které načítají, aktualizovat a odstranit instance výchozí entity.|  
   
- K definování vlastností entity, upravte soubor kódu entity. Další informace naleznete v tématu [jak: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ K definování vlastností entity, upravte soubor kódu entity. Další informace najdete v tématu [jak: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
  Získat, aktualizovat a odstraňovat instancí entity, přidejte kód do souboru kód služby entity. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49930203"
   
 - Balení a nasazení existujícího modelu do více Sharepointové serverové farmy.  
   
-  V obou případech systémům LOB definované v modelu, který importujete neovlivní a budou fungovat podle očekávání. K přidání existujícího modelu do projektu služby SharePoint, pomocí sady Visual Studio **přidat existující položku** dialogové okno. Další informace najdete v tématu [postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  V obou případech systémům LOB definované v modelu, který importujete neovlivní a budou fungovat podle očekávání. K přidání existujícího modelu do projektu služby SharePoint, pomocí sady Visual Studio **přidat existující položku** dialogové okno. Další informace najdete v tématu [jak: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
   Můžete přidat systému LOB typ sestavení rozhraní .NET Framework pro importovaný model tak, že vyberete možnost v **objekt LobSystem sestavení .NET přidat**. To umožňuje psát vlastní kód a definují metadata pro importovaný model pomocí návrháře.  
   
@@ -69,9 +64,7 @@ ms.locfileid: "49930203"
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)|Ukazuje, jak vytvořit nový model služby BDC.|  
+|[Postupy: Vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)|Ukazuje, jak vytvořit nový model služby BDC.|  
 |[Postupy: Přidání stávajícího souboru modelu služby BDC do projektu služby SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Ukazuje, jak importovat existující model do projektu služby SharePoint.|  
-|[Postupy: určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Popisuje, jak poskytnout řetězce, které jsou sloučeny metadat modelu, když model je využívána webové části nebo webové stránky.|  
-|[Postupy: zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Ukazuje, jak zahrnutí vlastního sestavení ve funkci.|  
-  
- 
+|[Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Popisuje, jak poskytnout řetězce, které jsou sloučeny metadat modelu, když model je využívána webové části nebo webové stránky.|  
+|[Postupy: Zahrnutí vlastního sestavení ve funkci BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Ukazuje, jak zahrnutí vlastního sestavení ve funkci.|  

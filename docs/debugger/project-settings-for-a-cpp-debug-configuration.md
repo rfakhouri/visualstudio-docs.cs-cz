@@ -2,7 +2,6 @@
 title: Nastavení projektu pro konfiguraci ladění jazyka C++
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957907"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka C++
-Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visual C++ v **stránky vlastností** dialogové okno, jak je popsáno v [postupy: nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.  
+Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visual C++ v **stránky vlastností** dialogové okno, jak je popsáno v [jak: Nastavení ladění a vydání konfigurace](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují, kde najít nastavení související s ladicí program v **stránky vlastností** dialogové okno.  
   
 > [!NOTE]
 >  Nastavení ladění projektu v **konfigurační vlastnosti/ladění** kategorie se liší pro aplikace pro UPW a pro součásti, které jsou napsané v jazyce C++. Zobrazit [spustíte relaci ladění (VB, C#, C++ a XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).  
@@ -143,15 +142,15 @@ Můžete změnit nastavení projektu pro konfiguraci ladění jazyka C nebo Visu
 | **Název vzdáleného severu** (Windows vzdálený ladicí program) | Určuje název počítače (kromě vašeho), na kterém chcete ladit aplikace.<br /><br /> Makro sestavení RemoteMachine je nastavena na hodnotu této vlastnosti; Další informace najdete v tématu [sestavení makra pro příkazy a vlastnosti](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Připojení** (Windows vzdálený ladicí program) | Umožňuje přepínat mezi typy standard a bez ověřování připojení pro vzdálené ladění. Zadejte název vzdáleného počítače v **název vzdáleného serveru** pole. Typy připojení patří:<br /><br /> -   **Vzdálený s ověřováním Windows**<br />-   **Vzdálený bez ověřování**<br /><br /> **Poznámka:** vzdálené ladění bez ověřování může zanechat vzdálený počítač zranitelné vůči narušení zabezpečení. Režim ověřování Windows je bezpečnější.<br /><br /> Další informace najdete v tématu [vzdálené ladění nastavení](../debugger/remote-debugging.md). |
 | **Adresa URL operace HTTP** (Web ladicí program služby a ladicí program webového prohlížeče) | Určuje adresu URL, kde je umístěn projekt, který ladíte. |
-| **Typ ladicího programu** | Určuje typ ladicího programu, který se má použít: **pouze nativní**, **pouze spravované**, **pouze GPU**, **smíšený**, **automaticky**(výchozí), nebo **skript**.<br /><br /> -   **Pouze nativní** je pro nespravovaný kód jazyka C++.<br />-   **Režim pouze spravovaný** je pro kód, který běží v rámci common language runtime (spravovaný kód).<br />-   **Smíšené** vyvolá ladicí programy pro spravovaný i nespravovaný kód.<br />-   **Automatické** Určuje typ ladicího programu na základě kompilátoru a informací souboru EXE.<br />-   **Skript** vyvolá ladicí program skriptů.<br />-   **Pouze GPU** je pro kód C++ AMP, který běží na GPU zařízení nebo v rasterizéru referenčního rozhraní DirectX. Zobrazit [kódu ladění GPU](../debugger/debugging-gpu-code.md). |
+| **Typ ladicího programu** | Určuje typ ladicího programu, který se má použít: **Pouze nativní**, **pouze spravované**, **pouze GPU**, **smíšený**, **automaticky** (výchozí), nebo **skript**.<br /><br /> -   **Pouze nativní** je pro nespravovaný kód jazyka C++.<br />-   **Režim pouze spravovaný** je pro kód, který běží v rámci common language runtime (spravovaný kód).<br />-   **Smíšené** vyvolá ladicí programy pro spravovaný i nespravovaný kód.<br />-   **Automatické** Určuje typ ladicího programu na základě kompilátoru a informací souboru EXE.<br />-   **Skript** vyvolá ladicí program skriptů.<br />-   **Pouze GPU** je pro kód C++ AMP, který běží na GPU zařízení nebo v rasterizéru referenčního rozhraní DirectX. Zobrazit [kódu ladění GPU](../debugger/debugging-gpu-code.md). |
 | **Prostředí** (ladicí program místní Windows a Windows vzdálený ladicí program) | Určuje proměnné prostředí pro program, který ladíte. Použijte syntaxi proměnných standardního prostředí (například `PATH="%SystemRoot%\..."`). Tyto proměnné přepisují prostředí systému nebo jsou sloučeny s prostředím systému v závislosti na tom **sloučit prostředí** nastavení. Když levým tlačítkem myši ve sloupci nastavení "Upravit..." se zobrazí. Vyberte tento odkaz upravíte proměnné prostředí. |
 | **Sloučit prostředí** (ladicí program místní Windows) | Určuje, zda proměnné, které jsou určené v **prostředí** pole se sloučí s prostředím, který je definován v operačním systému. Výchozí nastavení je Ano. |
 | **Ladění SQL** (všechny kromě ladicího programu clusteru MPI) | Umožňuje ladění procedur SQL z vašich [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikace. Výchozí nastavení je Ne. |
 | **Typ akcelerátoru ladění** (pouze ladění GPU) | Určuje zařízení GPU používané pro ladění. Instalace ovladačů pro kompatibilní zařízení GPU přidá další možnosti. Ve výchozím nastavení **GPU - softwarový emulátor**. |
 | **Výchozí chování zarážky GPU** (pouze ladění GPU) | Určuje, zda by měla být zvýšena událost zarážky pro každý podproces v křivce SIMD. Ve výchozím nastavení je pro vyvolání události zarážky pouze jednou na každý svazek. |
 | **Výchozí akcelerátor amp** | Určuje výchozí akcelerátor AMP při ladění kódu GPU. Zvolte **softwarový akcelerátor WARP** pro zjištění, zda problém způsoben hardwarem nebo ovladačem namísto kódu. |
-| **Adresář nasazení** (Windows vzdálený ladicí program) | Určuje cestu ve vzdáleném počítači, kde bude výstup projektu zkopírovaný před spuštěním. Cesta může být síťová sdílená položka vzdáleného počítače, nebo může být cesta ke složce ve vzdáleném počítači. Ve výchozím nastavení je prázdný, což znamená, že výstup projektu není zkopírován do sdílené síťové složky. Pokud chcete povolit nasazení souborů, musíte také vybrat **nasadit** zaškrtávací políčko v dialogovém okně nástroje Configuration Manager. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md). |
-| **Další soubory k nasazení** (Windows vzdálený ladicí program) | Pokud je nastavena vlastnost adresáře nasazení, toto je seznam oddělený středníkem další soubory ke zkopírování do adresáře nasazení. Ve výchozím nastavení je prázdný, což znamená, že žádné další soubory nejsou zkopírovány do adresáře nasazení. Pokud chcete povolit nasazení souborů, musíte také vybrat **nasadit** zaškrtávací políčko v dialogovém okně nástroje Configuration Manager. Další informace najdete v tématu [postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md). |
+| **Adresář nasazení** (Windows vzdálený ladicí program) | Určuje cestu ve vzdáleném počítači, kde bude výstup projektu zkopírovaný před spuštěním. Cesta může být síťová sdílená položka vzdáleného počítače, nebo může být cesta ke složce ve vzdáleném počítači. Ve výchozím nastavení je prázdný, což znamená, že výstup projektu není zkopírován do sdílené síťové složky. Pokud chcete povolit nasazení souborů, musíte také vybrat **nasadit** zaškrtávací políčko v dialogovém okně nástroje Configuration Manager. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md). |
+| **Další soubory k nasazení** (Windows vzdálený ladicí program) | Pokud je nastavena vlastnost adresáře nasazení, toto je seznam oddělený středníkem další soubory ke zkopírování do adresáře nasazení. Ve výchozím nastavení je prázdný, což znamená, že žádné další soubory nejsou zkopírovány do adresáře nasazení. Pokud chcete povolit nasazení souborů, musíte také vybrat **nasadit** zaškrtávací políčko v dialogovém okně nástroje Configuration Manager. Další informace najdete v tématu [jak: Vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md). |
 | **Nasadit běhové knihovny pro ladění jazyka Visual C++** (Windows vzdálený ladicí program) | Pokud je nastavena vlastnost adresáře nasazení, určuje, zda mají být běhové knihovny ladicího programu Visual C++ pro aktuální platformu zkopírovány do sdílené síťové složce. Ve výchozím nastavení je Ano. |
   
 ## <a name="cc-folder-general-category"></a>Složka C/C++ (obecná kategorie)  

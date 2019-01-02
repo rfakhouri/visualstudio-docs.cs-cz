@@ -3,7 +3,6 @@ title: Návrhář postupu provádění – Návrhář aktivity InvokeMethod
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839567"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946933"
 ---
 # <a name="invokemethod-activity-designer"></a>Návrhář aktivity InvokeMethod
 
@@ -38,10 +37,10 @@ Následující tabulka ukazuje <xref:System.Activities.Statements.InvokeMethod> 
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.InvokeMethod> aktivity. Výchozí hodnota je InvokeMethod.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> není bezpodmínečně nutné, doporučujeme použít jednu.|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Hodnota TRUE|Název metody, která volá se, když tato aktivity spustí. Volané metody musí být deklarována jako **veřejné**. Tuto vlastnost lze na návrhové ploše upravovat a je povinný.|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Pravda|Název metody, která volá se, když tato aktivity spustí. Volané metody musí být deklarována jako **veřejné**. Tuto vlastnost lze na návrhové ploše upravovat a je povinný.|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|Kolekce parametrů volané metody. Parametry musí být přidán do kolekce ve stejném pořadí, ve kterém jsou uvedeny v podpisu metody. Chcete-li zobrazit **parametry** dialogové okno, kde můžete nastavit tuto vlastnost, klikněte na tlačítko se třemi tečkami v **parametry** pole mřížku vlastností. Klikněte na tlačítko **vytvořit Argument** tlačítko Přidat parametry.|
 |<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|Návratová hodnota volání metody.|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Hodnota TRUE|Určuje, zda je metoda volána asynchronně. Výchozí hodnota je **False**.|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|Pravda|Určuje, zda je metoda volána asynchronně. Výchozí hodnota je **False**.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Objekt, který obsahuje metodu volání. Tato vlastnost se dá upravit na plochu návrháře.<br /><br /> Buď <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> nebo <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> je potřeba nastavit.|
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Typ <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Tato vlastnost se dá upravit na návrhové ploše. Tato vlastnost musí nastavit jen v případě, že metoda je statická.|
 

@@ -1,8 +1,6 @@
 ---
-title: Uživatel (VSPerfCmd) | Microsoft Docs
-ms.custom: ''
+title: Uživatel (VSPerfCmd) | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
 author: mikejo5000
@@ -10,17 +8,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 128fe1f59cc652d0879e346689c9e84f1c1d9e82
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: c769081a4b7a166a0c5673dee3467e9413a28eea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947488"
 ---
 # <a name="user-vsperfcmd"></a>Uživatel (VSPerfCmd)
-**Uživatele** možnost určuje, doména a uživatelské jméno účtu, který vlastní PROFILOVANÉHO proces. Tato možnost je vyžaduje jenom v případě, že je proces spuštěný jako uživatel, než je přihlášený uživatel. Vlastník proces je uvedena ve sloupci uživatelské jméno na **procesy** karty Správce úloh systému Windows.  
+**Uživatele** Určuje doménu a uživatelské jméno účtu vlastnícího profilovaný proces. Tato možnost je vyžadována, pouze pokud je proces spuštěn pod jiným než přihlášeným uživatelem. Vlastník procesu je uvedena ve sloupci uživatelské jméno na **procesy** karty ve Správci úloh Windows.  
   
- **Uživatele** možnost lze zadat pouze na příkazový řádek, který obsahuje také **spustit** možnost.  
+ **Uživatele** možnost lze zadat pouze na příkazovém řádku, který také obsahuje **Start** možnost.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,10 +34,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
  Jméno uživatele.  
   
 ## <a name="required-options"></a>Požadované možnosti  
- **Uživatele** možnost lze použít pouze s **spustit** možnost.  
+ **Uživatele** možnost se dá použít jenom s **Start** možnost.  
   
  **Spusťte:** `Method`  
- Inicializuje profileru pro zadanou metodu profilování.  
+ Inicializuje možnost profileru zadané metodě profilování.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje použití **uživatele** možnost.  
@@ -49,7 +47,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Nástroj VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Samostatné aplikace profilu](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Profil služby](../profiling/command-line-profiling-of-services.md)

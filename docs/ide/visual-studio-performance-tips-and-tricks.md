@@ -2,19 +2,18 @@
 title: Tipy pro zvýšení výkonu
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bdc20f22fc535028cb67939fed9c9472ed081428
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956891"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipy k výkonu sady Visual Studio a triky
 
@@ -123,7 +122,7 @@ Informace o aspektech týkajících se výkonu .NET Compiler Platform ("Roslyn")
 
 Systém uvolňování paměti kolekce paměti správy používá modul CLR. V tomto systému je někdy paměti používá objekty, které už nejsou potřeba. Tento stav je dočasné. uvolňování vydá tuto paměť založené na jeho výkon a využití prostředků heuristické metody. Můžete vynutit CLR shromažďovat všechny nevyužité paměti pomocí klávesové zkratky v sadě Visual Studio. Pokud je značné množství paměti čekání na kolekci a vynutit uvolnění paměti, měli byste vidět využití paměti *devenv.exe* procesu pokles **Správce úloh**. Je zřídka nezbytné při použití této metody. Ale po dokončení nákladné operace (například úplná sestavení, relace ladění nebo otevřít událost řešení), může vám pomoct zjistit, kolik paměti skutečně používá proces. Protože Visual Studio je smíšený (spravovaný a nativní), je někdy možné nativní přidělování a uvolňování soutěží o prostředky omezenou pamětí. Za podmínek vysoké využití paměti může pomoct vynutit systému uvolňování paměti ke spuštění.
 
-Chcete-li vynutit uvolnění paměti, použijte klávesová zkratka: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (ji stiskněte dvakrát klávesu).
+Pokud chcete vynutit uvolnění paměti, použijte klávesová zkratka: **CTRL**+**Alt**+**Shift**+**F12**, **Ctrl** + **Alt**+**Shift**+**F12** (ji stiskněte dvakrát klávesu).
 
 Pokud vynucení uvolnění paměti spolehlivě provede váš scénář fungovat, soubor sestavy prostřednictvím nástroje pro zpětnou vazbu Visual Studio, jak toto chování je pravděpodobně chyba.
 
