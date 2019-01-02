@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Bez ověřování brány Firewall | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: Bez ověřování brány firewall | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.firewall.noauth
@@ -16,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ca9603b7b678eb288b78d09f62cc8aac5774ebc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a37fc9c1df938c1cb4817b74d2ebb1d239377823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827231"
 ---
 # <a name="error-firewall-no-authentication"></a>Chyba: Bez ověřování brány firewall
-Povolit vzdálené ladění není nastavena bránu Firewall ve vzdáleném počítači. Pro vzdálené ladění pomocí `No Authentication`, msvsmon.exe musí být přidaný do seznamu výjimek. Otevírání některé porty protokolu IPSEC může být nutné také.  
+Tuto bránu ve vzdáleném počítači není nastavené pro povolení vzdáleného ladění. Pro vzdálené ladění pomocí `No Authentication`, msvsmon.exe musí být přidán do seznamu výjimek. Některé porty protokolu IPSEC může být nutné také.  
   
 > [!NOTE]
->  Vzdáleného ladicího programu je možné automaticky konfigurovat bránu Windows Firewall. Pokud používáte jinou bránu firewall než brány Windows Firewall, jako jsou brány firewall třetích stran softwaru nebo hardwaru brána firewall, brány firewall musí ručně nakonfigurovat pro povolení vzdáleného ladění. Uděláte to tak, povolit přenosy na porty TCP/IP, že msvsmon.exe naslouchá na. Ve výchozím nastavení jsou tyto porty 4018 a 4019 4018 se používá na všech operačních systémech, kde 4019 používá pouze v systému Windows x64 k povolení ladění x86 procesy.  
+>  Vzdálený ladicí program je schopen automaticky nastavit bránu Windows Firewall. Při použití brány firewall než Windows Firewall jako brána firewall softwaru třetích stran nebo hardwarové brány firewall, musíte bránu firewall ručně nakonfigurovat pro povolení vzdáleného ladění. Uděláte to tak, umožňují přenosy na portech TCP/IP této msvsmon.exe naslouchá. Ve výchozím nastavení jsou tyto porty 4018 a 4019 4018 se používá ve všech operačních systémech, kde 4019 se používá jenom na Windows x64 pro povolení ladění x86 procesy.  
   
  Další informace najdete v tématu [vzdálené ladění](../debugger/remote-debugging.md).

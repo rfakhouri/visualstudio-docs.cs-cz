@@ -1,9 +1,6 @@
 ---
 title: Testovací Příručka pro ovládací prvek moduly plug-in zdrojového kódu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827897"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testovací příručka pro moduly plug-in správy zdrojového kódu
 Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových kódů s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Je k dispozici rozsáhlý přehled nejběžnějších oblastí testování, jakož i některé komplikovanější oblastí, které může být problematické. Tento přehled není určena k tudíž nepředstavuje kompletní seznam testovacích případů.  
@@ -40,7 +37,7 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
  Žádný typ k dispozici v projektu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrace správy zdrojového kódu, která podporuje (třeba [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], nebo [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
  Webový projekt  
- Existují čtyři typy webových projektů: systém souborů, místní služby IIS, vzdálených lokalit a FTP.  
+ Existují čtyři typy webových projektů: Systém souborů, místní služby IIS, vzdálených lokalit a FTP.  
   
 - Projekty systému souborů se vytvoří v místní cestě, ale nevyžadují Internet informační služby (IIS) k instalaci tak, jak interně přistupuje pomocí cesty UNC a můžete umístit pod správou zdrojových kódů z zevnitř rozhraní IDE, podobně jako klientské projekty.  
   
@@ -58,55 +55,55 @@ Tato část obsahuje pokyny pro testování vašich plug-in správy zdrojových 
   
 ## <a name="test-areas-covered-in-this-section"></a>Oblasti testů, které jsou popsané v této části  
   
--   [Testovací oblast 1: Přidání nebo otevření ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Testovací oblast 1: Přidat / otevřít ze správy zdrojového kódu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Malá a velká 1a: Přidat řešení do správy zdrojového kódu  
+    -   Případu 1a: Přidat řešení do správy zdrojového kódu  
   
-    -   Malá a velká 1b: otevřít řešení ze správy zdrojového kódu  
+    -   Případu 1b: Otevřít řešení ze správy zdrojového kódu  
   
     -   Případ 1c: Přidat řešení ze správy zdrojového kódu  
   
--   [Testovací oblast 2: Načtení ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Testovací oblast 2: Získat ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Testovací oblast 3: Rezervace a zrušení rezervace](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Testovací oblast 3: Podívejte se na / Zrušit rezervaci](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Případ 3: Přečtěte si / zrušit rezervaci  
+    -   Případ 3: Podívejte se na / Zrušit rezervaci  
   
-    -   Malá a velká 3a: Podívejte se na  
+    -   Případu 3a: Rezervovat  
   
-    -   Malá a velká 3b: odpojení rezervace  
+    -   Případu 3b: Odpojené rezervace  
   
-    -   Případ 3c: dotaz upravit a dotaz uložte (QEQS)  
+    -   Případ 3c: Query Edit/Query Save (QEQS)  
   
     -   Malá a velká 3d: Bezobslužné ověření  
   
-    -   Malá a velká 3e: vrátit zpět rezervaci  
+    -   Případu 3e: Vrátit zpět rezervaci  
   
--   [Testovací oblast 4: Vrácení se změnami](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Testovací oblast 4: Přihlásit se](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Malá a velká 4a: Upravit položky  
+    -   Případu 4a: Změněné položky  
   
-    -   Malá a velká 4b: přidávání souborů  
+    -   Případu 4b: Přidávání souborů  
   
-    -   Případ 4c: Přidání projektů  
+    -   Případ 4c: Přidávání projektů  
   
--   [Testovací oblast 5: Změna správy zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Testovací oblast 5: Změnit správu zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Malá a velká 5a: vytvoření vazby  
+    -   Případu 5a: Vytvoření vazby  
   
-    -   Malá a velká 5b: odpojení  
+    -   Případu 5b: Zrušení vazby  
   
-    -   Malá a velká 5c: obnovení vazby  
+    -   Případ 5c: obnovení vazby  
   
--   [Testovací oblast 6: Odstranění](../../extensibility/internals/test-area-6-delete.md)  
+-   [Testovací oblast 6: Odstranit](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Testovací oblast 7: Sdílení](../../extensibility/internals/test-area-7-share.md)  
+-   [Testovací oblast 7: sdílené složky](../../extensibility/internals/test-area-7-share.md)  
   
 -   [Testovací oblast 8: Přepínání modulu plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Malá a velká 8a: Automatická změna  
+    -   Případu 8a: Automaticky změnit  
   
-    -   Malá a velká 8b: Změna založené na řešení  
+    -   Případu 8b: Řešení na základě změn  
   
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in správy zdrojového kódu](../../extensibility/source-control-plug-ins.md)

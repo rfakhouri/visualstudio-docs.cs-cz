@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 350ad1910cfdfe20d5b4b9b8d018229c712de547
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: e09ead611c264c45ca868377718beb0fa5e09df1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829596"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Použití skriptů PowerShellu k publikování do vývojových a testovacích prostředí
 
@@ -150,13 +149,13 @@ Pokud máte web, který má více prostředí pro nasazení (označuje se jako s
 
 Pokud jste nikdy spustit skript prostředí Windows PowerShell před, musíte nejprve nastavte zásady spouštění umožňující spouštění skriptů. Zásady je funkce zabezpečení, která zabránit uživatelům ve spouštění skriptů prostředí Windows PowerShell v případě, že jsou citlivé na malwaru a virů, které se týkají spouštění skriptů.
 
-### <a name="run-the-script"></a>Spusťte skript
+### <a name="run-the-script"></a>Spuštění skriptu
 
 1. Vytvořte balíček nasazení webu pro váš projekt. Balíček nasazení webu je komprimovaný archiv (soubor .zip), které obsahují soubory, které chcete zkopírovat do svého webu nebo virtuálního počítače. Balíčky nasazení webu v sadě Visual Studio můžete vytvořit pro jakékoli webové aplikaci.
 
    ![Vytvoření webové nasazení balíčku](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Další informace najdete v tématu [postupy: vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Můžete také automatizovat vytváření balíčku Webdeploy, jak je popsáno v [přizpůsobení a rozšíření skriptů publikování](#customizing-and-extending-publish-scripts).
+   Další informace najdete v tématu [jak: Vytvoření balíčku pro nasazení webu v sadě Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Můžete také automatizovat vytváření balíčku Webdeploy, jak je popsáno v [přizpůsobení a rozšíření skriptů publikování](#customizing-and-extending-publish-scripts).
 
 1. V **Průzkumníka řešení**, otevřete kontextovou nabídku pro skript a klikněte na tlačítko **otevřít v PowerShell ISE**.
 1. Pokud se spouštění skriptů prostředí Windows PowerShell na tomto počítači poprvé, otevřete okno příkazového řádku s oprávněními správce a zadejte následující příkaz:

@@ -1,9 +1,6 @@
 ---
 title: Vytvoření systému základního projektu, část 1 | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832551"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Vytvoření systému základního projektu, část 1
 Projekty v sadě Visual Studio, jsou kontejnery, které vývojáři použít k uspořádání souborů se zdrojovým kódem a dalších zdrojů. Projekty se zobrazují jako podřízené objekty daného řešení **Průzkumníka řešení**. Projekty umožňují organizovat, sestavovat, ladit a nasadit zdrojový kód a vytvořit odkazy na webové služby, databáze a další prostředky.  
@@ -444,7 +441,7 @@ Templates
   
 ### <a name="to-test-the-projectnode-class"></a>Chcete-li třídu ProjectNode testu  
   
-1.  Stisknutím klávesy **F5** pro spuštění ladění. V experimentální instanci aplikace vytvořte nový SimpleProject.  
+1.  Stisknutím klávesy **F5** spusťte ladění. V experimentální instanci aplikace vytvořte nový SimpleProject.  
   
 2.  Visual Studio by měly volat výrobce projekt pro vytvoření projektu.  
   
@@ -559,7 +556,7 @@ Templates
      Všimněte si, že parametry šablony $nameSpace$ a $className$ nemají nové hodnoty. Se dozvíte, jak implementovat nahrazení parametru šablony v další části.  
   
 ## <a name="substitute-template-parameters"></a>Nahraďte parametry šablony  
- V předchozí části jste zaregistrovali šablona projektu pomocí sady Visual Studio pomocí `ProvideProjectFactory` atribut. Registrace cestu ke složce šablon tímto způsobem umožňuje povolit nahrazení parametru základní šablony pomocí přepisování a rozšiřování `ProjectNode.AddFileFromTemplate` třídy. Další informace najdete v tématu [nová generace projektů: pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ V předchozí části jste zaregistrovali šablona projektu pomocí sady Visual Studio pomocí `ProvideProjectFactory` atribut. Registrace cestu ke složce šablon tímto způsobem umožňuje povolit nahrazení parametru základní šablony pomocí přepisování a rozšiřování `ProjectNode.AddFileFromTemplate` třídy. Další informace najdete v tématu [nová generace projektů: Pod pokličkou, část 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Teď přidejte kód nahrazení, který `AddFileFromTemplate` třídy.  
   

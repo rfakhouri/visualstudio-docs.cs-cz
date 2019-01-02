@@ -2,7 +2,6 @@
 title: Možnosti, textový Editor, XML, formátování
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
@@ -10,12 +9,12 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 652d9ff3b2178089b4ef35838a4181408aef7f09
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 0d8420df205d49df3c6799e62adbc4e759a4aed2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826517"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Možnosti, textový Editor, XML, formátování
 
@@ -68,5 +67,5 @@ Pokud prvek obsahuje kombinaci textu a kódu, obsah jsou považovány za být sm
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Postupy: Vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Generování kódu](../code-generation-in-visual-studio.md)

@@ -1,9 +1,7 @@
 ---
-title: 'Tutoriál 1: Vytvoření prohlížeče obrázků'
-ms.custom: ''
+title: 'Kurz 1: Vytvoření prohlížeče obrázků'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8f44174f98c69f05cf7a0030e642dc9d9e065201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861647"
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriál 1: Vytvoření prohlížeče obrázků
+# <a name="tutorial-1-create-a-picture-viewer"></a>Kurz 1: Vytvoření prohlížeče obrázků
 
 V tomto kurzu vytvoříte program, který načte obrázek ze souboru a zobrazí jej v okně. Další informace o použití **Návrháře formulářů Windows** se přetáhnout prvky jako tlačítka a pole obrázků ve formuláři, nastavit jejich vlastnosti a plynule změnit velikost formuláře pomocí kontejnerů. Můžete také začít psát kód. Získáte informace o následujících postupech:
 
@@ -44,7 +42,7 @@ Jakmile skončíte, program bude vypadat jako na následujícím obrázku:
 
 Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz pro prohlížeč ucelený přehled](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
-![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [jak mohu: vytvořit prohlížeče obrázků v jazyce Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) nebo [jak mohu: vytvořit prohlížeče obrázků v jazyce C#?](http://go.microsoft.com/fwlink/?LinkId=205198).
+![odkaz na video](../data-tools/media/playvideo.gif)video verzi tohoto tématu naleznete v tématu [postup: Vytvoření prohlížeče obrázků v jazyce Visual Basic? ](http://go.microsoft.com/fwlink/?LinkId=205207) nebo [postup: Vytvoření prohlížeče obrázků v C#? ](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Tato videa používají starší verzi sady Visual Studio, takže existují mírné rozdíly v některých příkazech nabídek a jiných prvcích uživatelského rozhraní. Nicméně koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio. Visual C# a Visual Basic jsou obě popsané v tomto kurzu, takže se zaměřte na informace, které jsou specifické pro programovací jazyk, který používáte.
@@ -64,7 +62,7 @@ Chcete-li stáhnout úplnou verzi vzorku, přečtěte si téma [ukázkový kurz 
 |[Krok 5: Přidejte do svého formuláře ovládací prvky](../ide/step-5-add-controls-to-your-form.md)|Přidejte ovládací prvky, například `PictureBox` ovládacího prvku a `CheckBox` ovládací prvek do formuláře. Přidejte tlačítka do formuláře.|
 |[Krok 6: Pojmenujte své ovládací prvky tlačítek](../ide/step-6-name-your-button-controls.md)|Přejmenujte tlačítka na něco smysluplnějšího.|
 |[Krok 7: Přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md)|Přidat `OpenFileDialog` komponenty a `ColorDialog` komponentu do formuláře.|
-|[Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Pište kód pomocí nástroje technologie IntelliSense.|
-|[Krok 9: Kontrola, komentáře a testování kódu](../ide/step-9-review-comment-and-test-your-code.md)|Zkontrolujte a otestujte svůj kód. Podle potřeby přidejte komentáře.|
-|[Krok 10: Zapište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Psaní kódu, aby další tlačítka a zaškrtávací políčko pracovala pomocí technologie IntelliSense.|
-|[Krok 11: Spusťte svůj program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md)|Spusťte svůj program a nastavit barvu pozadí. Vyzkoušejte další funkce, jako je například změna barvy, písma a ohraničení.|
+|[Krok 8: Napsat kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Pište kód pomocí nástroje technologie IntelliSense.|
+|[Krok 9: Zkontrolujte, komentáře a testování kódu](../ide/step-9-review-comment-and-test-your-code.md)|Zkontrolujte a otestujte svůj kód. Podle potřeby přidejte komentáře.|
+|[Krok 10: Napište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Psaní kódu, aby další tlačítka a zaškrtávací políčko pracovala pomocí technologie IntelliSense.|
+|[Krok 11: Spusťte program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md)|Spusťte svůj program a nastavit barvu pozadí. Vyzkoušejte další funkce, jako je například změna barvy, písma a ohraničení.|

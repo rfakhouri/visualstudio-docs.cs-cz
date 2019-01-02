@@ -2,7 +2,6 @@
 title: Nastavit základ – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.setradix
@@ -15,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c18d825ae61dd80ab7b72e1e14c7dc3412582317
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93172b8ed16e2520c060671d12ef0ab35960f6ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829405"
 ---
 # <a name="set-radix-command"></a>Nastavit základ – příkaz
-Nastaví nebo vrátí číselný základní slouží k zobrazení celočíselné hodnoty.
+Nastaví nebo vrátí číselný základ slouží k zobrazení hodnot typu integer.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,10 +33,10 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ## <a name="arguments"></a>Arguments
  `10` nebo `16` nebo `hex` nebo `dec`
 
- Volitelné. Určuje desetinné číslo (10 nebo dec) nebo v šestnáctkové soustavě (16 nebo šestnáctkových). Pokud je argument vynechán, je aktuální hodnota základ – vrácena.
+ Volitelné. Určuje desetinné číslo (10 nebo dec) nebo šestnáctkové číslo (maximálně 16 šestnáctkových). Pokud je argument vynechán, je vrácena aktuální hodnota Číselná soustava.
 
 ## <a name="example"></a>Příklad
- Tento příklad nastaví prostředí k zobrazení hodnot celé číslo v šestnáctkovém formátu.
+ V tomto příkladu nastaví prostředí tak, aby zobrazení celočíselné hodnoty v šestnáctkovém formátu.
 
 ```cmd
 >Debug.SetRadix hex
@@ -47,5 +46,5 @@ Debug.SetRadix [10 | 16 | hex | dec]
 
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c4d3a37f0327137cd1398b64efc2a0fb4be088
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cb164c9bc4da0768ef41645bf378fe83ad0b1ef6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957972"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Složka komponenty Visual Studio Professional 2017
 
@@ -36,7 +35,7 @@ Všimněte si také následující stránka:
 * Pokud budete chtít, můžete nainstalovat také **doporučená** a **volitelné** komponenty.
 * Přidali jsme také oddíl, který obsahuje další součásti, které nejsou pod něj nespadá u jakékoli úlohy.
 
-Když nastavíte závislosti v manifestu VSIX, je nutné zadat ID součástí pouze. Určení závislostí naše minimální součástí pomocí tabulek na této stránce. V některých případech to může znamenat, že zadáváte pouze jednu komponentu z pracovního vytížení. V jiných scénářích může znamenat, že zadáte více komponent z jedné úlohy nebo více komponent z více úloh. Další informace najdete v tématu [postupy: migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
+Když nastavíte závislosti v manifestu VSIX, je nutné zadat ID součástí pouze. Určení závislostí naše minimální součástí pomocí tabulek na této stránce. V některých případech to může znamenat, že zadáváte pouze jednu komponentu z pracovního vytížení. V jiných scénářích může znamenat, že zadáte více komponent z jedné úlohy nebo více komponent z více úloh. Další informace najdete v tématu [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
 
 Další informace o tom, jak pomocí těchto identifikátorů najdete v části [pomocí parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) stránky. A seznam pracovního vytížení a komponenta ID pro ostatní produkty, naleznete v tématu [funkcí sady Visual Studio 2017 a ID součástí](workload-and-component-ids.md) stránky.
 
@@ -44,7 +43,7 @@ Další informace o tom, jak pomocí těchto identifikátorů najdete v části 
 
 **ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Popis:** příkazové prostředí sady Visual Studio core, včetně úprav kódu podle syntaxe, zdrojového kódu a správy pracovních položek.
+**Popis:** Visual Studio základní možnosti a prostředí, včetně úprav, správy zdrojového kódu podle syntaxe kódu a správy pracovních položek.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -57,7 +56,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Visual Studio úvodn�
 
 **ID:** Microsoft.VisualStudio.Workload.Azure
 
-**Popis:** sady Azure SDK, nástroje a projekty pro vývoj cloudových aplikací, vytváření prostředků a sestavování kontejnerů včetně podpory Dockeru.
+**Popis:** Sady Azure SDK, nástroje a projekty pro vývoj cloudových aplikací, podporu vytváření prostředků a sestavování kontejnerů včetně Dockeru.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -151,7 +150,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 **ID:** Microsoft.VisualStudio.Workload.Data
 
-**Popis:** připojit, vyvíjet a testovat datová řešení pomocí SQL Server, Azure Data Lake nebo Hadoop.
+**Popis:** Připojit, vyvíjet a testovat datová řešení pomocí SQL Server, Azure Data Lake nebo Hadoop.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -212,7 +211,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F#Podpora klasické pracovní 
 
 **ID:** Microsoft.VisualStudio.Workload.DataScience
 
-**Popis:** jazyky a nástroje pro vytváření datových věd aplikací, včetně Python, R a F#.
+**Popis:** Jazyky a nástroje pro vytváření datových věd aplikací, včetně Python, R a F#.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -257,7 +256,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 **ID:** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**Popis:** sestavení WPF, Windows Forms a konzolové aplikace pomocí C#, Visual Basic a F#.
+**Popis:** Sestavení WPF, Windows Forms a konzolové aplikace pomocí C#, Visual Basic a F#.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -332,7 +331,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Vývoj pro ASP.NET a 
 
 **ID:** Microsoft.VisualStudio.Workload.ManagedGame
 
-**Popis:** vytvářejte 2D a 3D hry s Unity, výkonné multiplatformní vývojové prostředí.
+**Popis:** Vytváření 2D a 3D hry s Unity, výkonné multiplatformní vývojové prostředí.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -352,7 +351,7 @@ Component.UnityEngine.x86 | 32bitový Editor Unity 5.6 | 15.6.27406.0 | Doporuč
 
 **ID:** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
-**Popis:** vytváření a ladění aplikace běžící v prostředí Linux.
+**Popis:** Vytváření a ladění aplikace běžící v prostředí Linux.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -372,7 +371,7 @@ Component.MDD.Linux.GCC.arm | Vložené a IoT vývoj | 15.6.27309.0 | volitelná
 
 **ID:** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**Popis:** vytváření aplikací klasické pracovní plochy Windows pomocí sady nástrojů Microsoft C++, ATL nebo MFC.
+**Popis:** Vytváření aplikací klasické pracovní plochy Windows pomocí sady nástrojů Microsoft C++, ATL nebo MFC.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -427,7 +426,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.NativeGame
 
-**Popis:** využijte naplno potenciál C++ k vytváření profesionálních her využívajících technologii DirectX, Unreal nebo Cocos2d.
+**Popis:** Využijte naplno potenciál c++ k vytváření profesionálních her využívajících technologii DirectX, Unreal nebo Cocos2d.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -485,7 +484,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.NativeMobile
 
-**Popis:** vytvářet multiplatformní aplikace pro iOS, Android nebo Windows pomocí C++.
+**Popis:** Vytvářejte multiplatformní aplikace pro iOS, Android nebo Windows pomocí C++.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -516,7 +515,7 @@ Component.MDD.IOS | Nástroje pro vývoj iOS C++ | 15.0.26621.2 | volitelná,
 
 **ID:** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**Popis:** umožňuje sestavovat multiplatformní aplikace pomocí .NET Core, ASP.NET Core, HTML/JavaScript a kontejnerů včetně podpory Dockeru.
+**Popis:** Vytvářejte multiplatformní aplikace pomocí .NET Core, ASP.NET Core, HTML/JavaScript a kontejnerů včetně podpory Dockeru.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -584,7 +583,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Podpora služby IIS při 
 
 **ID:** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**Popis:** vytvářet multiplatformní aplikace pro iOS, Android nebo Windows pomocí Xamarinu.
+**Popis:** Vytvářejte multiplatformní aplikace pro iOS, Android nebo Windows pomocí Xamarinu.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -626,7 +625,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Nástroje pro univerzální 
 
 **ID:** Microsoft.VisualStudio.Workload.NetWeb
 
-**Popis:** sestavovat webové aplikace pomocí ASP.NET, ASP.NET Core, HTML/JavaScript a kontejnerů včetně podpory Dockeru.
+**Popis:** Sestavení webové aplikace pomocí ASP.NET, ASP.NET Core, HTML/JavaScript a kontejnerů včetně podpory Dockeru.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -714,7 +713,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Popis:** sestavovat škálovatelné síťové aplikace využívající Node.js, asynchronního runtime JavaScriptu založený na událostech. 
+**Popis:** Sestavte škálovatelné síťové aplikace využívající Node.js, asynchronního runtime JavaScriptu založený na událostech. 
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -740,7 +739,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16
 
 **ID:** Microsoft.VisualStudio.Workload.Office
 
-**Popis:** doplňky vytvořit Office a SharePoint, řešení služby SharePoint a doplňky pro VSTO pomocí C#, VB a JavaScript.
+**Popis:** Vytvářet doplňky Office a SharePoint, řešení služby SharePoint a doplňky VSTO pomocí C#, VB a JavaScript.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -807,7 +806,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Vývojové nástroje .NET fram
 
 **ID:** Microsoft.VisualStudio.Workload.Python
 
-**Popis:** úpravy, ladění, interaktivní vývoj a zdrojový ovládací prvek pro Python.
+**Popis:** Úpravy, ladění, interaktivní vývoj a Správa zdrojového kódu pro Python.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -890,7 +889,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | Vývoj pro ASP.NET a webové nástro
 
 **ID:** Microsoft.VisualStudio.Workload.Universal
 
-**Popis:** vytváření aplikací pro univerzální platformu Windows pomocí C#, VB, JavaScriptu nebo volitelně C++.
+**Popis:** Vytváření aplikací pro univerzální platformu Windows s využitím C#, VB, JavaScriptu nebo volitelně C++.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -952,7 +951,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID:** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**Popis:** vytvořit doplňky a rozšíření pro Visual Studio, včetně nových příkazů, analyzátorů kódu a nástrojů systému windows.
+**Popis:** Vytváření doplňků a rozšíření pro Visual Studio, včetně nových příkazů, analyzátorů kódu a okna nástrojů.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 
@@ -988,7 +987,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC ++ 2017 verze 15.9 v14.16
 
 **ID:** Microsoft.VisualStudio.Workload.WebCrossPlat
 
-**Popis:** vytvářet aplikace pro Android, iOS a UPW pomocí nástrojů pro Apache Cordova.
+**Popis:** Vytvářejte aplikace pro Android, iOS a UPW pomocí nástrojů pro Apache Cordova.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 

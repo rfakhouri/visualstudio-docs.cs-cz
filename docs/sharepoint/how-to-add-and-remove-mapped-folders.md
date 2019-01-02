@@ -1,15 +1,10 @@
 ---
-title: 'Postupy: Přidání a odebrání mapovaných složek | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Přidání a odebrání mapovaných složek | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,69 +15,68 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823918"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Postupy: Přidání a odebrání mapovaných složek
-  Některé nejčastěji používané složky ve službě SharePoint, například bitové kopie a rozložení, jsou hluboko vložené v hierarchii souborů. Tyto složky můžete mapovat do projektu služby SharePoint na snadněji používat. Mapované složky jsou složky v projektu služby SharePoint, které odpovídají na fyzické umístění souborů v instalaci serveru SharePoint.  
+  Některé složky v Sharepointu, běžně používají, jako je Image a rozložení, jsou hluboko vložené hierarchie souborů. Mapování těchto složek do projektu služby SharePoint pro přístup k nim snadněji. Mapované složky jsou složky v projektu služby SharePoint, které odpovídají na fyzické umístění souborů v instalaci SharePoint serveru.  
   
- Když nasadíte aplikaci služby SharePoint, obsah mapované složky a všech jejích podsložkách se zkopírují balíček řešení (WSP) na server se systémem SharePoint do zadaného umístění ve stromové struktuře složek služby SharePoint. Toto umístění je dáno **umístění nasazení** vlastnost, která je nastavena pro mapované složky. Všechny podsložky ve složce namapované jsou vzhledem k **umístění nasazení** mapované složky. Všimněte si, že **umístění nasazení** vlastnost není název mapované složky Určuje, kde jsou nasazeny položky.  
- Mapované složky můžete přidat do projektu pomocí příkazů v panelu nabídek nebo místní nabídku pro projekt. Můžete použít **složky namapované "Bitových kopií" Přidat SharePoint** a **přidat SharePoint "Rozložení" složky** příkazy přidat ty namapované složky, které se nejčastěji používají. Můžete namapovat žádné další dostupné složky služby SharePoint do projektu s použitím **přidat složku SharePoint mapovat** příkaz v místní nabídce a potom zadáte složky v **přidat SharePoint mapovat složku** dialogové okno.  
+ Když nasadíte aplikaci služby SharePoint, obsah mapovaná složka a všechny její podsložky zkopírovány do řešení balíčku (.wsp) na server, na kterém běží SharePoint v zadaném umístění ve stromu složky Sharepointu. Toto umístění je určeno **umístění nasazení** vlastnost, která je nastavena pro mapovanou složku. Žádné podsložky ve složce pro mapovanou jsou vzhledem k **umístění nasazení** z namapované složky. Všimněte si, **umístění nasazení** nasazená položky určuje vlastnost, nikoli název mapované složky.  
+ Mapované složky můžete přidat do projektu pomocí příkazů na panelu nabídek nebo místní nabídku pro projekt. Můžete použít **přidat SharePoint "Image" namapované složky** a **přidat SharePoint "Rozložení" složky** přidejte tyto namapované složky, které se používají nejčastěji. Můžete namapovat žádné další dostupné složky Sharepointu do svého projektu pomocí **přidat Sharepointové namapované složky** příkazu v místní nabídce a potom zadáte složky v **přidat namapované složky Sharepointu** dialogové okno.  
   
-## <a name="add-mapped-folders-to-a-project"></a>Mapované složky přidat do projektu  
- Následující postup popisuje, jak přidat dva mapované složky na projekt visual webové části. Pokud chcete spustit, vytvoříte projekt visual část.  
+## <a name="add-mapped-folders-to-a-project"></a>Do projektu přidat mapované složky  
+ Následující postup popisuje, jak přidat dvě mapované složky do projektu vizuální webové části. Pokud chcete začít, vytvoření projektu vizuální webové části.  
   
-#### <a name="to-add-mapped-folders-to-a-project"></a>Mapované složky přidat do projektu  
+#### <a name="to-add-mapped-folders-to-a-project"></a>Chcete-li přidat mapované složky do projektu  
   
-1.  Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.  
+1.  V panelu nabídky zvolte **souboru** > **nový** > **projektu**.  
   
-2.  V **nový projekt** dialogové okno, rozbalte seznam buď **jazyka Visual Basic** nebo **Visual C#** uzlu, rozbalte **Office nebo SharePoint** uzlu a potom Vyberte **řešení služby SharePoint** uzlu.  
+2.  V **nový projekt** dialogového okna rozbalte buď **jazyka Visual Basic** nebo **Visual C#**  uzlu, rozbalte **Office/SharePoint** uzel a klikněte na tlačítko **řešení služby SharePoint** uzlu.  
   
-3.  V seznamu šablon projektu, vyberte **webové části služby SharePoint 2013 Visual** šablony.  
+3.  V seznamu šablon projektu vyberte **Sharepointu 2013 vizuální webová část** šablony.  
   
-4.  V **název** zadejte **TestProject1**a potom zvolte **OK** tlačítko.  
+4.  V **název** zadejte **projekt testproject1 vyžaduje**a klikněte na tlačítko **OK** tlačítko.  
   
-5.  V **Průvodce vlastním nastavením SharePoint**, vyberte **Dokončit** tlačítko ponechejte výchozí nastavení.  
+5.  V **Průvodce přizpůsobením SharePoint**, zvolte **Dokončit** tlačítko Zachovat výchozí nastavení.  
   
-6.  V **Průzkumníku řešení**, vyberte uzel projektu a potom na řádku nabídek zvolte **projektu** > **složky namapované "Bitových kopií" Přidat SharePoint**.  
+6.  V **Průzkumníka řešení**, zvolte uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat SharePoint "Image" namapované složky**.  
   
-     Složku s názvem **bitové kopie** se zobrazí ve vašem projektu a obsahuje podsložku s názvem TestProject1. Tato složka namapované bude obsahovat bitové kopie pro součást visual webový projekt.  
+     Složku s názvem **Imagí** se zobrazí ve vašem projektu a obsahuje podsložku s názvem projekt testproject1 vyžaduje. Tato mapovaná složka bude obsahovat bitových kopií pro projektu vizuální webové části.  
   
-7.  V **Průzkumníku řešení**, vyberte uzel projektu a potom na řádku nabídek zvolte **projektu** > **přidat složku SharePoint mapovat** zobrazíte  **Přidat složku služby SharePoint mapovat** dialogové okno.  
+7.  V **Průzkumníka řešení**, zvolte uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat Sharepointové namapované složky** zobrazíte  **Přidat složku služby SharePoint mapovat** dialogové okno.  
   
-8.  Ve stromovém zobrazení složek, které jsou k dispozici pro mapování, zvolte **prostředky** složku a potom zvolte **OK** tlačítko.  
+8.  Ve stromovém zobrazení složek, které jsou k dispozici pro mapování, zvolte **prostředky** složky a klikněte na tlačítko **OK** tlačítko.  
   
-     Složku s názvem **prostředky** se zobrazí ve vašem projektu. Tato složka může ukládat položek, jako jsou soubory prostředků řetězec. Podsložky může být užitečná pro uspořádání obsahu mapované složky, ale vytváří automaticky při přidání mapované složky pomocí **přidat složku SharePoint mapovat** příkaz. Při přidávání podsložku, vyberte **prostředky** složku a potom na řádku nabídek zvolte **projektu** > **novou složku**.  
+     Složku s názvem **prostředky** se zobrazí ve vašem projektu. Tato složka může ukládat položky, jako jsou soubory prostředků řetězce. Podsložky může být užitečné pro uspořádání obsahu z namapované složky, ale vytvoření automaticky při přidání mapovaná složka s použitím **přidat Sharepointové namapované složky** příkazu. Chcete-li přidat podsložky, zvolte **prostředky** složky a potom na panelu nabídek zvolte **projektu** > **novou složku**.  
   
-## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Změňte umístění nasazení mapované složky  
- Ve výchozím nastavení, mapované složky jsou přidány do určitých umístění relativně k SharePoint kořenovou cestu instalace, který token \<SharePointRoot > označuje. Toto umístění však můžete změnit změnou **umístění nasazení** vlastnost mapované složky. Každý mapované složky má svou vlastní **umístění nasazení** vlastnost.  
+## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Změna umístění nasazení z namapované složky  
+ Ve výchozím nastavení, mapované složky jsou přidány do konkrétního umístění vzhledem k Sharepointu kořenová cesta instalace, která token \<SharePointRoot > označuje. Ale toto umístění můžete změnit pomocí změny **umístění nasazení** vlastnost z namapované složky. Každý mapovaná složka má vlastní **umístění nasazení** vlastnost.  
   
-#### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Chcete-li změnit umístění nasazení mapované složky  
+#### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Chcete-li změnit umístění nasazení z namapované složky  
   
-1.  V projektu, který jste vytvořili dříve zvolte mapované složky.  
+1.  V projektu, který jste vytvořili dříve zvolte na mapovanou složku.  
   
-2.  V **vlastnosti** okně zvolte se třemi tečkami (![ASP.NET – Návrhář mobilních řešení elipsy](../sharepoint/media/mwellipsis.gif "ASP.NET – Návrhář mobilních řešení elipsy")) na tlačítko **nasazení umístění** vlastnost.  
+2.  V **vlastnosti** okno, zvolte tři tečky (![ASP.NET – Návrhář mobilních řešení Elipsa](../sharepoint/media/mwellipsis.gif "elipsa ASP.NET – Návrhář mobilních řešení")) tlačítko **nasazení umístění** vlastnost.  
   
-3.  V **přidat složku SharePoint mapovat** dialogové okno, přejděte do složky, do kterého chcete mapované složky tak, aby odkazoval.  
+3.  V **přidat Sharepointové namapované složky** dialogové okno, přejděte do složky, do kterého chcete mapovanou složku tak, aby odkazoval.  
   
-4.  Vyberte uzel a potom vyberte **OK** tlačítko.  
+4.  Vyberte uzel a klikněte na tlačítko **OK** tlačítko.  
   
-## <a name="rename-or-remove-mapped-folders"></a>Přejmenování nebo odebrání mapovaných složek  
+## <a name="rename-or-remove-mapped-folders"></a>Přejmenování a odebrání mapovaných složek  
   
-#### <a name="to-rename-or-remove-a-mapped-folder"></a>Přejmenovat nebo odebrat mapované složky  
+#### <a name="to-rename-or-remove-a-mapped-folder"></a>Přejmenování nebo odstranění mapované složky  
   
-1.  V projektu, který jste vytvořili dříve zvolte mapované složky.  
+1.  V projektu, který jste vytvořili dříve zvolte na mapovanou složku.  
   
-2.  Pokud chcete přejmenovat mapované složky, otevřete jeho místní nabídky, zvolte **přejmenovat**, zadejte nový název a potom vyberte klávesu Enter.  
+2.  Chcete-li přejmenovat mapovanou složku, otevřete místní nabídku, zvolte **přejmenovat**, zadejte nový název a stiskněte klávesu Enter.  
   
-     Jako alternativu můžete mapované složky, kterou chcete přejmenovat, otevřete **vlastnosti** okno a pak nastavte hodnotu **název složky** vlastnost na nový název.  
+     Jako alternativu můžete zvolit mapovaná složka, kterou chcete přejmenovat, otevřete **vlastnosti** okna a pak nastavte hodnotu **název složky** vlastnost na nový název.  
   
-3.  Mapované složky odebrat z projektu, otevřete jeho místní nabídky, zvolte **odstranit**a potom zvolte **OK** tlačítka v dialogovém okně potvrďte odstranění.  
+3.  Pro mapovanou složku odeberte z projektu, otevřete místní nabídku, vyberte **odstranit**a klikněte na tlačítko **OK** tlačítko v dialogovém okně potvrďte odstranění.  
   
 ## <a name="see-also"></a>Viz také:
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

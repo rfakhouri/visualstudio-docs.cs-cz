@@ -1,9 +1,6 @@
 ---
 title: Použití ovládacích prvků WPF v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822272"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Použití ovládacích prvků WPF v řešeních pro systém Office
 
@@ -56,11 +53,11 @@ Nelze přidat ovládací prvky WPF přímo k elementům uživatelského rozhran�
 
 5.  Přidání podokna akcí, oblast formuláře nebo vlastního podokna úloh do projektu:
 
-    -   Pro oblasti formuláře, přidejte **oblast formuláře Outlooku** položky do projektu. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    -   Pro oblasti formuláře, přidejte **oblast formuláře Outlooku** položky do projektu. Další informace najdete v tématu [jak: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Podokna akcí, přidejte **ovládacího prvku podokna akcí** nebo **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) a [postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    -   Podokna akcí, přidejte **ovládacího prvku podokna akcí** nebo **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) a [jak: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Vlastní podokna úloh, přidejte **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    -   Vlastní podokna úloh, přidejte **uživatelský ovládací prvek** položky do projektu. Další informace najdete v tématu [jak: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6.  Z *ProjectName* **uživatelské ovládací prvky WPF** karty **nástrojů**, přetáhněte uživatelský ovládací prvek WPF designer pro podokna akcí, oblast formuláře nebo vlastního podokna úloh.
 
@@ -128,4 +125,4 @@ Další informace o přidání ovládacích prvků WPF na ovládacích prvcích 
 - [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)
 - [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Postupy: Přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

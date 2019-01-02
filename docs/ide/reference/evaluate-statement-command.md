@@ -2,7 +2,6 @@
 title: Ohodnotit příkaz – příkaz
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f713cd511225e03ec50c2cbe699c40bd704faa20
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: b0be6e57c0c741420006d20c0945b9b8c8b77d51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864122"
 ---
 # <a name="evaluate-statement-command"></a>Ohodnotit příkaz – příkaz
 Vyhodnotí a zobrazí daný příkaz.
@@ -32,12 +31,12 @@ Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Arguments
- `text` Vyžaduje se. Příkaz k vyhodnocení.
+ `text` Povinné. Příkaz k vyhodnocení.
 
 ## <a name="remarks"></a>Poznámky
- Okno používané k zadání **EvaluateStatement** příkaz určuje, zda znak rovná se (=) interpretována jako relační operátor nebo operátor přiřazení.
+ V okně použité ke vstupu **EvaluateStatement** příkaz určuje, zda je znak rovná se (=) interpretován jako porovnávací operátor nebo jako operátor přiřazení.
 
- V **příkaz** okně znak rovná se (=) interpretována jako operátor porovnání. Ano, například pokud hodnoty proměnných `a` a `b` jsou různé a potom příkaz
+ V **příkaz** okně znak rovná se (=) interpretován jako operátor porovnání. Tak například, pokud hodnoty proměnných `a` a `b` jsou odlišné, pak příkaz
 
 ```cmd
 >Debug.EvaluateStatement(a=b)
@@ -45,13 +44,13 @@ Debug.EvaluateStatement text
 
  Vrátí hodnotu `false`.
 
- V **Immediate** okně naopak znak rovná se (=) interpretována jako operátor přiřazení. Tak například příkaz
+ V **okamžité** okna, naopak znak rovná se (=) interpretován jako operátor přiřazení. Ano například příkaz
 
 ```cmd
 >Debug.EvaluateStatement(a=b)
 ```
 
- přiřadí do proměnné `a` hodnotu proměnné `b`.
+ přiřadí proměnné `a` hodnotu proměnné `b`.
 
 ## <a name="example"></a>Příklad
 
@@ -64,5 +63,5 @@ Debug.EvaluateStatement text
 - [Příkaz Tisk](../../ide/reference/print-command.md)
 - [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Příkazové okno](../../ide/reference/command-window.md)
-- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Pole Najít/příkaz](../../ide/find-command-box.md)
 - [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

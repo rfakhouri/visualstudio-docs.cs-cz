@@ -1,8 +1,6 @@
 ---
-title: Příkazy nabídky | Microsoft Docs
-ms.custom: ''
+title: Příkazy nabídky | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
@@ -13,44 +11,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d494fa3f5aa50cc761152e015df34e76341ed074
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830674"
 ---
 # <a name="menu-commands"></a>Příkazy nabídky
 Témata nápovědy v této části Seznam příkazů, které jsou k dispozici na nabídky Nástroje Spy ++.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Příkazy nabídky Nástroje Spy](../debugger/spy-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **Spy** nabídky.  
+ [Příkazy nabídky nástroje Spy](../debugger/spy-menu-commands.md)  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **Spy** nabídky.  
   
  [Příkazy nabídky stromu](../debugger/tree-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **stromu** nabídky.  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **stromu** nabídky.  
   
  [Příkazy nabídky vyhledávání](../debugger/search-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **vyhledávání** nabídky.  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **hledání** nabídky.  
   
  [Příkazy nabídky zobrazení](../debugger/view-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **zobrazení** nabídky.  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **zobrazení** nabídky.  
   
  [Příkazy nabídky zpráv](../debugger/messages-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **zprávy** nabídky.  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **zprávy** nabídky.  
   
  [Příkazy nabídky okna](../debugger/window-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **okno** nabídky.  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **okno** nabídky.  
   
  [Příkazy nabídky nápovědy](../debugger/help-menu-commands.md)  
- Popisuje každý příkaz k dispozici v **pomoci** nabídky.  
+ Popisuje jednotlivé příkazy, které jsou k dispozici **pomáhají** nabídky.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
+ Seznámíte se nástroje Spy ++, jak je možné.  
   
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Tato část zahrnuje a částech s popisem jednotlivých nástroje Spy ++ dialogové okno.
+ Tato část obsahuje a oddíly s popisem jednotlivých nástroje Spy ++ dialogové okno.

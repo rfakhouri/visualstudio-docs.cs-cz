@@ -1,9 +1,6 @@
 ---
 title: Přehled protokolu Server Language | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828222"
 ---
 # <a name="language-server-protocol"></a>Protokol jazyka serveru
 
@@ -52,13 +49,13 @@ Níže je příklad pro nástroj a jazyk serveru komunikaci během rutinu úprav
 
 ![Vývojový diagram vrstvy](media/lsp-flow-diagram.png)
 
-* **Uživatel otevře soubor (označované jako dokument) v nástroji**: nástroj oznámí jazyk serveru je otevřený dokument ("textDocument/didOpen"). Od této chvíle pravdivých informací o obsahu dokumentu je už v systému souborů, ale ponechá nástroj v paměti.
+* **Uživatel otevře soubor (označované jako dokument) v nástroji**: Nástroj oznámí jazyk serveru je otevřený dokument ("textDocument/didOpen"). Od této chvíle pravdivých informací o obsahu dokumentu je už v systému souborů, ale ponechá nástroj v paměti.
 
-* **Uživatel provede změny**: nástroj pošle oznámení serveru o změně dokumentu ("textDocument/didChange") a sémantické informace programu se aktualizuje pomocí jazyka serveru. V takovém případě jazyk serveru tyto informace analyzuje a upozorní nástroj zjištěné chyby a upozornění ("textDocument/publishDiagnostics").
+* **Uživatel provede změny**: Nástroj pošle oznámení serveru o změně dokumentu ("textDocument/didChange") a sémantické informace programu se aktualizuje pomocí jazyka serveru. V takovém případě jazyk serveru tyto informace analyzuje a upozorní nástroj zjištěné chyby a upozornění ("textDocument/publishDiagnostics").
 
-* **Uživatel provede "Přejít k definici" na symbol v editoru**: Nástroj odešle požadavek ' textDocument/definici' se dvěma parametry: (1) identifikátor URI dokumentu a (2) umístění textu, ze kterého byla spuštěna přejít na definici požadavku na server. Server odpoví identifikátor URI dokumentu a umístění definice symbolu v dokumentu.
+* **Uživatel provede "Přejít k definici" na symbol v editoru**: Nástroj odešle požadavek ' textDocument/definici' se dvěma parametry: (1) na identifikátor URI dokumentu a (2) umístění textu, ze kterého byla spuštěna přejít na definici požadavku na server. Server odpoví identifikátor URI dokumentu a umístění definice symbolu v dokumentu.
 
-* **Uživatel nezavře dokument (soubor)**: ' textDocument/didClose' oznámení se odesílá z nástroje informování jazyk serveru, na kterém je dokument nyní již v paměti a které aktuální obsah je nyní aktuální v systému souborů.
+* **Uživatel nezavře dokument (soubor)**: ' TextDocument/didClose' oznámení se odesílá z nástroje informování jazyk serveru, na kterém je dokument nyní již v paměti a které aktuální obsah je nyní aktuální v systému souborů.
 
 Tento příklad ukazuje, jak se protokol komunikuje se serverem nástroje jazyka na úrovni funkce editoru, jako je "Přejít k definici", "Najít všechny odkazy". Datové typy používané v protokolu jsou editoru nebo integrovaného vývojového prostředí datové typy jako otevřený textový dokument a pozici kurzoru. Datové typy, které nejsou na úrovni programovací model domény jazyka, která by obvykle mají stromu abstraktní syntaxe a kompilátoru symboly (například přeložit typy, obory názvů,...). To výrazně zjednodušuje protokolu.
 

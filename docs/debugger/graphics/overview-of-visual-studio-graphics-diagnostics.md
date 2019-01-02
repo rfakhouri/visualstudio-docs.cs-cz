@@ -2,19 +2,18 @@
 title: Přehled diagnostiky grafiky sady | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831375"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Přehled diagnostiky grafiky sady Visual Studio
 Visual Studio *diagnostiky grafiky* je sada nástrojů pro nahrávání a pak analýzu problémů vykreslování a výkon v aplikacích rozhraní Direct3D. Diagnostika grafiky je použít v aplikacích, které běží místně na svůj počítač s Windows nebo na vzdálený počítač nebo zařízení.  
@@ -53,7 +52,7 @@ Visual Studio *diagnostiky grafiky* je sada nástrojů pro nahrávání a pak an
 ### <a name="gpu-usage"></a>Využití GPU  
  Diagnostika grafiky můžete také Profilovat výkon vaší aplikace Direct3D. Protože profilačních dat by být zkosené zaznamenávání podrobností událostí grafiky, to je oddělená od zachytávání snímků pro použití se Graphics Analyzeru.  
   
- Zobrazit [využití GPU](gpu-usage.md) Další informace.  
+ Zobrazit [využití GPU](/visualstudio/profiling/gpu-usage) Další informace.  
   
 ### <a name="directx-control-panel"></a>Ovládací panel rozhraní DirectX  
  Ovládací panel rozhraní DirectX je součástí rozhraní DirectX, které můžete použít ke změně způsobu, jakým se rozhraní DirectX chová – například povolit verzi ladění runtime komponent rozhraní DirectX a výběr druhu zpráv ladění, které jsou zaznamenány, a zakázat použití určitých funkcí hardwaru grafiky k emulaci hardwaru s méně funkcemi. Tato úroveň kontroly nad rozhraním DirectX vám může pomoct ladit a testovat vaši aplikaci DirectX. Ovládací panel rozhraní DirectX zobrazíte ze sady Visual Studio.  

@@ -2,7 +2,6 @@
 title: 'Postupy: Výběr schémat XML pro použití'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824389"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML pro použití
 
@@ -44,7 +43,7 @@ Schémata zadáte se ukládají do skrytého souboru s možností řešení uži
 
    - Výběr více schémat, které jsou uvedeny v **schémat XML** dialogového okna, klikněte pravým tlačítkem a vyberte **použít tohle schéma**.
 
-4. Klikněte na tlačítko **OK**.
+4. Klikněte na **OK**.
 
     Seznam vybraná schémata zkopírována zpět **schémata** vlastnost dokumentu.
 
@@ -52,7 +51,7 @@ Schémata zadáte se ukládají do skrytého souboru s možností řešení uži
 
 1.  V okně Vlastnosti dokumentu, klepněte na tlačítko **schémata** pole.
 
-2.  Klikněte na tlačítko **přidat**.
+2.  Klikněte na **Přidat**.
 
      Tím se otevře **otevřít schéma XSD** dialogového okna.
 

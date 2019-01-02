@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeLength | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a24a4d88e181a447b5228080ae89b8853060ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 844d5d7f2dce19af29afb2d30daa9ee0290115f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832710"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 Vrátí délku objektu rozsah adres, ve kterém je platná místního symbolu.  
@@ -27,7 +25,7 @@ Vrátí délku objektu rozsah adres, ve kterém je platná místního symbolu.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_liveRangeLength (   
+HRESULT get_liveRangeLength (   
    ULONGLONG* length  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_liveRangeLength (
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   

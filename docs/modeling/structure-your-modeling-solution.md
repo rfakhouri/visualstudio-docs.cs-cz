@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831534"
 ---
 # <a name="structure-your-modeling-solution"></a>Strukturujte svá řešení modelování
 
@@ -36,7 +35,7 @@ V projektu střední a velké struktura tým se na základě struktury aplikace.
 
 2. Vytvoření řešení sady Visual Studio, který nazveme architekturu řešení. Toto řešení se použije k vytvoření celkového návrhu systému. Bude obsahovat modely, ale žádný kód.
 
-   Přidejte do závislostí diagram tohoto řešení. Na diagram závislostí nakreslete architektura, kterou jste zvolili pro vaši aplikaci. Například může zobrazit diagram těchto vrstev a závislostí mezi nimi: prezentaci. Obchodní logika; a Data.
+   Přidejte do závislostí diagram tohoto řešení. Na diagram závislostí nakreslete architektura, kterou jste zvolili pro vaši aplikaci. Diagram může například zobrazit těchto vrstev a závislostí mezi nimi: Prezentaci. Obchodní logika; a Data.
 
 4. Vytvoření samostatné řešení Visual Studio pro každou vrstvu Diagram závislostí architektury.
 
@@ -76,7 +75,7 @@ V projektu střední a velké struktura tým se na základě struktury aplikace.
 
 1. V řešení pro každou vrstvu přidejte projekt modelování architektury. V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel řešení, přejděte na **přidat**a potom klikněte na tlačítko **existující projekt**. Jeden modelování projektu je teď přístupná z každé řešení určené pro: architektura projektu a projekt vývoje pro každou vrstvu.
 
-2. Ve sdíleném modelu, vytvořit balíček pro každou vrstvu: V **Průzkumníka řešení**, vyberte projekt modelování. V **Průzkumníku modelů UML**, klikněte pravým tlačítkem na kořenový uzel modelu, přejděte na **přidat**a potom klikněte na tlačítko **balíčku**.
+2. Ve sdíleném modelu vytvořte balíček pro jednotlivé úrovně: V **Průzkumníka řešení**, vyberte projekt modelování. V **Průzkumníku modelů UML**, klikněte pravým tlačítkem na kořenový uzel modelu, přejděte na **přidat**a potom klikněte na tlačítko **balíčku**.
 
    Každý balíček bude obsahovat diagramy, které popisují požadavky a návrhu odpovídající vrstvy.
 

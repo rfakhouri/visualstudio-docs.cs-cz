@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplier3 | Microsoft Docs
-ms.custom: ''
+title: IDebugPortSupplier3 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5a35e212c98d6e62b667c4305d8ae4874feb3aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b058324bfe0dcde4b2285c1a7478859ed27131b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825981"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-Toto rozhraní umožňuje volající k určení, zda portu dodavatele můžete zachovat porty (podle jejich zápis na disk) mezi volání ladicího programu a potom získat seznam zachovaných porty.  
+Toto rozhraní umožňuje volajícímu určit, zda dodavatele portu můžete zachovat porty mezi vyvolání ladicího programu (podle jejich zápis na disk) a potom získá seznam těchto zachovaných portů.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,30 +29,30 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Vlastní port dodavatele implementuje toto rozhraní pro podporu uchování nebo informace o portu při ukládání na disk. Toto rozhraní musí být implementována pro stejný objekt, jako [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní.  
+ Dodavatel port. Tento vlastní port implementuje toto rozhraní pro podporu uchování nebo ukládání informací o portu na disk. Toto rozhraní musí být implementováno na stejný objekt jako [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Volání [QueryInterface](/cpp/atl/queryinterface) na `IDebugPortSupplier2` rozhraní k získání tohoto rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Kromě metod zděděno z [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní, toto rozhraní podporuje následující:  
+ Kromě metod zděděných z [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní, toto rozhraní podporuje následující:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Vrátí, zda může být z portu dodavatele zachovat (podle jejich zápis na disk) porty mezi volání ladicího programu.|  
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Vrátí objekt, který slouží k zobrazení výčtu prostřednictvím všechny porty, které byly zapsat na disk dodavatelem tento port.|  
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Vrátí, zda dodavatele portu můžete zachovaly porty (je zápis na disk) mezi vyvolání ladicího programu.|  
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Vrátí objekt, který je možné vytvořit výčet prostřednictvím všechny porty, které byly vytvořeny na disku podle dodavatele tohoto portu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Pokud port dodavatele můžete zachovávají volání porty, musí toto rozhraní implementovat. Porty by měly být načteny, když dodavatele portu je vytvoření instance a zapsat na disk, když dodavatel port zničena.  
+ Pokud dodavatele portu můžete zachovat porty ve volání, musí implementovat toto rozhraní. Porty by měly být načteny při dodavatele portu je vytvořena instance a zapíšou na disk při zničení dodavatele portu.  
   
- Modul ladění obvykle nekomunikuje s jiného dodavatele portu a bude mít bez použití tohoto rozhraní.  
+ Ladicí stroj obvykle nekomunikuje s dodavatele portu a nebude mít žádný použijte pro toto rozhraní.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

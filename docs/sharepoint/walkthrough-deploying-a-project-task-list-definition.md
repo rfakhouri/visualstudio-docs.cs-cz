@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Nasazení definice seznamu úloh projektu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Nasazení definice seznamu úloh projektu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826621"
 ---
-# <a name="walkthrough-deploy-a-project-task-list-definition"></a>Návod: Nasazení definice seznamu úloh projektu
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>Průvodce: Nasazení definice seznamu úloh projektu
 
 Tento návod ukazuje, jak používat [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] vytvořit, upravit, ladit a nasadit Sharepointového seznamu, aby sledování úkolů v projektu.
 
@@ -143,7 +138,7 @@ Po sestavení a testování seznamu úkolů projektu, můžete ji nasazujete *m�
 
 Na řádku nabídek sady Visual Studio, zvolte **sestavení** > **nasadit řešení**.
 
-Recykluje se fond aplikací IIS, odvolá všechny existující verze řešení, zkopíruje balíček řešení sady Visual Studio (*.wsp*) souboru na Sharepointu a potom aktivuje její funkce. Nyní můžete řešení služby SharePoint. Další informace o postupu konfigurace nasazení najdete v tématu [postupy: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Recykluje se fond aplikací IIS, odvolá všechny existující verze řešení, zkopíruje balíček řešení sady Visual Studio (*.wsp*) souboru na Sharepointu a potom aktivuje její funkce. Nyní můžete řešení služby SharePoint. Další informace o postupu konfigurace nasazení najdete v tématu [jak: Úprava konfigurace nasazení služby SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Nasazení seznamu úkolů projektu do vzdáleného systému
 
@@ -161,11 +156,11 @@ Recykluje se fond aplikací IIS, odvolá všechny existující verze řešení, 
 
 5. Pomocí prostředí PowerShell `Add-SPUserSolution` příkaz k instalaci balíčku na vzdálenou instalaci služby SharePoint. (Pro řešení farmy, použijte `Add-SPSolution` příkazu.)
 
-     Například `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
+     Například, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
 6. Pomocí prostředí PowerShell `Install-SPUserSolution` příkaz pro nasazení řešení. (Pro řešení farmy, použijte `Install-SPSolution` příkazu.)
 
-     Například `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
+     Například, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Další informace o vzdáleném nasazení naleznete v tématu [pomocí řešení](http://go.microsoft.com/fwlink/?LinkId=217680) a [přidání a nasazení řešení pomocí prostředí PowerShell ve službě SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=217682).
 
@@ -175,7 +170,7 @@ Další informace o postupu při přizpůsobení a nasazení řešení služby S
 
 - [Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)
+- [Postupy: Vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [Prostředí Windows PowerShell pro SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
 

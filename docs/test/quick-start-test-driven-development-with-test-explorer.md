@@ -2,21 +2,20 @@
 title: Vývoj řízený testy s použitím Průzkumníka testů
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f38b38fbce688b405887ec39cc6e234f5d7b70d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833925"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testovací řízeného rozvoje pomocí Průzkumníka testů
+# <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů
 
 Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně funguje napříč mnoha inkrementálními kroky vývoje. Existuje několik architektur, které můžete použít pro psaní jednotkových testů, včetně některých vyvinutých třetími stranami. Některá testovací rozhraní jsou zaměřena na testování v jiných jazycích či platformách. Průzkumník testů poskytuje tak jednotné rozhraní pro testování částí v některém z těchto rozhraní. Adaptéry jsou k dispozici pro nejčastěji používaná rozhraní a můžete napsat vlastní adaptér pro jiná rozhraní.
 
@@ -53,13 +52,13 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 
     Průzkumník testů otevře a zobrazí souhrn výsledků.
 
-   **Pokud chcete zobrazit úplný seznam testů:** zvolit **Zobrazit vše** v každé kategorii.
+   **Pokud chcete zobrazit úplný seznam testů:** Zvolte **Zobrazit vše** v každé kategorii.
 
-   **Pokud chcete zobrazit podrobnosti výsledku testu:** vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.
+   **Pokud chcete zobrazit podrobnosti výsledku testu:** Vyberte test v Průzkumníku testů, chcete-li zobrazit podrobnosti, jako jsou zprávy o výjimkách v podokně podrobností.
 
-   **Přejít na kód testu:** klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.
+   **Přejít na kód testu:** Klikněte dvakrát na test v Průzkumníku testů nebo zvolte **otevřít Test** v místní nabídce.
 
-   **Ladění testu:** otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.
+   **Ladění testu:** Otevřete místní nabídku pro jeden nebo více testů a klikněte na tlačítko **ladit vybrané testy**.
 
 > [!IMPORTANT]
 > Výsledky, které se zobrazují se poslední spuštění. Obarvený panel výsledků zobrazuje pouze výsledky testů, které byly spuštěny. Například pokud spuštění více testů a některé z nich selhání a poté spustíte pouze úspěšné testy, pak na panelu výsledků bude celý zelený.
@@ -69,7 +68,7 @@ Doporučujeme vytvořit jednotkové testy zajistit, aby byl váš kód správně
 > Je-li zobrazen žádný test, ujistěte se, že máte nainstalován adaptér pro připojení Průzkumníku testů pro testovací rozhraní, kterou používáte. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Návod: Použití jednotkových testů pro vývoj metody
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Průvodce: Pomocí jednotky testů pro vývoj metody
  Tento návod ukazuje, jak vyvinout testovanou metodu v jazyce C# pomocí rozhraní Microsoft Unit Test framework. Můžete snadno přizpůsobit ho pro ostatní jazyky a použití jiných testovacích architektur, jako je například NUnit. Další informace najdete v tématu [nainstalovat rozhraní pro testování jednotky třetí strany](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Vytvoření testu a metody

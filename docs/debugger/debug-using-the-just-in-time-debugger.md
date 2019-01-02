@@ -1,8 +1,6 @@
 ---
 title: Ladění pomocí ladicího programu za běhu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831547"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu za běhu v sadě Visual Studio
 
@@ -107,7 +105,7 @@ Pokud chcete povolit Just-In-Time ladění místo standard pro zpracování chyb
 
 V tomto příkladu provede konzolovou aplikaci C# v sadě Visual Studio, který vyvolá [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**souboru** > **nový** > **projektu** > **Visual C#**  >  **Konzolovou aplikaci**) s názvem *ThrowsNullException*. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [názorný postup: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+1. Ve Visual Studiu Vytvořte konzolovou aplikaci C# (**souboru** > **nový** > **projektu** > **Visual C#**  >  **Konzolovou aplikaci**) s názvem *ThrowsNullException*. Další informace o vytváření projektů v sadě Visual Studio najdete v tématu [názorný postup: Vytvoření jednoduché aplikace](/visualstudio/get-started/csharp/tutorial-wpf).
    
 1. Po otevření projektu v sadě Visual Studio, otevřete *Program.cs* souboru. Nahraďte následující kód, který vytiskne řádek ke konzole a potom vyvolá NullReferenceException metodu Main():
    

@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: vytvoření manifestu produktu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření manifestu produktu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ecc5e6547d84531579169ac7dcf7fcc31bc8f7
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824597"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Postupy: vytvoření manifestu produktu
+# <a name="how-to-create-a-product-manifest"></a>Postupy: Vytvoření manifestu produktu
 Pokud chcete nasadit požadavky pro vaši aplikaci, můžete vytvořit balíček zaváděcího nástroje. Balíček zaváděcího nástroje obsahuje jeden produkt soubor manifestu ale manifest balíčku pro každé národní prostředí. Manifest balíčku obsahuje lokalizace specifických aspektů vašeho balíčku. Jedná se o řetězce, licenční smlouvy s koncovým uživatelem a jazykových sad.  
   
- Další informace o manifestech produktu najdete v tématu [postupy: vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).  
+ Další informace o manifestech produktu najdete v tématu [jak: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="create-the-product-manifest"></a>Vytvoření manifestu produktu  
   

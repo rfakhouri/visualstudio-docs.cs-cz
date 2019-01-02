@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření hlavního podrobný vztah pomocí datové sady v mezipaměti'
-ms.custom: ''
+title: 'Průvodce: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823646"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Návod: Vytvoření hlavního podrobný vztah pomocí datové sady v mezipaměti
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Průvodce: Vytvořte relaci hlavní podrobností pomocí datové sady v mezipaměti
   Tento názorný postup ukazuje vytvoření vztah záznamů master/detail v listu a dat do mezipaměti, takže toto řešení je možné do offline režimu.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933154"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1. Vytvořte projekt sešitu aplikace Excel s názvem **Moje hlavní-podrobnosti**, pomocí jazyka Visual Basic nebo C#. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [postupy: vytváření projektů pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Vytvořte projekt sešitu aplikace Excel s názvem **Moje hlavní-podrobnosti**, pomocí jazyka Visual Basic nebo C#. Ujistěte se, že **vytvoříte nový textový dokument** zaškrtnuto. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
    Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Moje hlavní-podrobnosti** projektu **Průzkumníka řešení**.  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933154"
  [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)   
  [Data v mezipaměti](../vsto/caching-data.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

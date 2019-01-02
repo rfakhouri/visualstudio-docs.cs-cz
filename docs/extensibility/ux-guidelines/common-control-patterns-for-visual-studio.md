@@ -1,9 +1,6 @@
 ---
 title: Vzory běžných ovládacích prvků pro sadu Visual Studio | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832632"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Vzory běžných ovládacích prvků pro sadu Visual Studio
 ##  <a name="BKMK_CommonControls"></a> Běžné ovládací prvky  
@@ -49,7 +46,7 @@ První věc, kterou vzít v úvahu při používání stylů pro ovládací prvk
   
 -   **Dialogová okna Standard (nástroj):** není s motivem. Nemáte šablonu znovu. Použijte výchozí styl základního ovládacího prvku.  
   
--   **Nástroje systému windows, editory dokumentu, návrhové ploše a dialogová okna s motivem:** použít specializované s motivem vzhled pomocí služby barvu.  
+-   **Okna nástrojů, editory dokumentu, návrhové ploše a s motivem dialogová okna:** Použití specializované s motivem vzhled pomocí služby barvu.  
   
 ###  <a name="BKMK_Scrollbars"></a> Posuvníky  
  Postupujte podle posuvníky [běžné vzory interakcí pro Windows posuvníky](/windows/desktop/Controls/about-scroll-bars) není-li, že jste doplněné o informace o obsahu, jako jsou v editoru kódu.  
@@ -69,7 +66,7 @@ První věc, kterou vzít v úvahu při používání stylů pro ovládací prvk
   
 -   Povinné pole by měly mít  **\<vyžaduje >** jako vodoznaky v nich. Barva pozadí s výjimkou ve výjimečných případech byste neměli měnit.  
   
--   Chyba ověřování: viz [oznámení a postup pro Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   Chyba ověřování: Zobrazit [oznámení a postup pro Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   Vstupní pole by měla být dimenzovány pro zobrazení celého obsahu, ne na šířku okna, ve kterém jsou uvedeny ani libovolně odpovídala délce dlouhé pole, třeba cestu. Délka mohlo by to znamenat uživateli omezení jde o tom, kolik znaky jsou povoleny v poli.  
   
@@ -299,7 +296,7 @@ Pokyny, pomocí tlačítka:
 #### <a name="graphical-buttons"></a>Grafické tlačítka  
 Některá tlačítka by měla vždy použít grafické image a nikdy obsahovat text ušetřit místo a vyhnout se potíže s lokalizací. Často používají v jiných seřaditelné seznamy a pole výběr.  
   
-> **Poznámka:** uživatelé mají na kartě tato tlačítka (neexistují žádné přístupové klíče), takže je umístit v rozumné pořadí. Mapování `name` vlastnosti tlačítka na akci, která je potřebná tak, aby čtečky obrazovky správně interpretovat akce tlačítka.  
+> **Poznámka:** Uživatelé mají na kartě tato tlačítka (neexistují žádné přístupové klíče), takže je umístit v rozumné pořadí. Mapování `name` vlastnosti tlačítka na akci, která je potřebná tak, aby čtečky obrazovky správně interpretovat akce tlačítka.  
   
 | Funkce | Tlačítko |  
 | --- | --- |  
@@ -371,23 +368,23 @@ Ve stromovém zobrazení by měla poskytnout možnost vybrat položky a rozbalen
 ##### <a name="tree-view-control"></a>Ovládací prvek stromového zobrazení  
 Visual Studio ovládacích prvků strom postupujte podle běžných navigaci pomocí klávesnice:  
   
--   **Šipka nahoru:** vybrat položky přesunutím směrem nahoru  
+-   **Šipka: nahoru** Vyberte položky, které přesunutím směrem nahoru  
   
--   **Šipky dolů:** vybrat položky přesunete dolů stromu  
+-   **Šipku:** Vyberte položky, které přesunete dolů stromu  
   
--   **Šipka doprava:** rozbalte uzel ve stromu  
+-   **Šipka vpravo:** Rozbalte uzel ve stromu  
   
--   **Šipka doleva:** Sbalit uzel ve stromu  
+-   **Šipka vlevo:** Sbalit uzel ve stromu  
   
--   **Zadejte klíč:** iniciovat, načíst, spustit vybranou položku  
+-   **Zadejte klíč:** Zahájit, načtení a spustit vybranou položku  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (stromové zobrazení a zobrazení mřížky)  
 Trid ovládacího prvku je komplexní ovládací prvek, který obsahuje zobrazení stromu v mřížce. Rozšíření, sbalování a procházení stromu by měly dodržovat stejné klávesových příkazů jako stromové zobrazení, s těmito přídavky:  
   
--   **Šipka doprava:** rozbalte uzel. Po rozbalení uzlu pokračováním, že přejdete na nejbližší sloupec na pravé straně. Na konci řádku, který by se měla zastavit navigace.  
+-   **Šipka vpravo:** Rozbalte uzel. Po rozbalení uzlu pokračováním, že přejdete na nejbližší sloupec na pravé straně. Na konci řádku, který by se měla zastavit navigace.  
   
--   **Karta:** Navigates na nejbližší buňku na pravé straně.  Na konci řádku navigace pokračuje na další řádek.  
+-   **Karta:** Přejde na nejbližší buňku na pravé straně.  Na konci řádku navigace pokračuje na další řádek.  
   
--   **Shift + Tab:** Navigates na nejbližší buňku na levé straně.  Na začátku řádku, bude nadále navigace buňku vpravo na předchozím řádku.  
+-   **Shift + Tab:** Přejde na nejbližší buňku na levé straně.  Na začátku řádku, bude nadále navigace buňku vpravo na předchozím řádku.  
   
 ![Trid ovládací prvek v sadě Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Trid ovládací prvek v sadě Visual Studio

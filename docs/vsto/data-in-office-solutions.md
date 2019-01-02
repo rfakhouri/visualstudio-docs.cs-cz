@@ -1,9 +1,6 @@
 ---
 title: Data v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b53f4b9af7cf262e55935fa5c355a165515bb16
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dad32dd0412c8cc6ad1ce45160fc06c96e089772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828901"
 ---
 # <a name="data-in-office-solutions"></a>Data v řešeních pro systém Office
   Mnoho řešení pro systém Office uživatelům umožnit načtení nebo upravovat data. Při vytváření řešení pro systém Office s použitím sady Visual Studio existuje několik různých způsobů, kterými můžete pracovat s daty.

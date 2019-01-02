@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4026c8077c45fa7f383f59eda0595c8a97eba58d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823513"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Postupy: přiblížení oblasti grafu ve výsledcích zátěžového testu
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Postupy: Přiblížení oblasti grafu ve výsledcích zátěžového testu
 
 Po dokončení zátěžového testu můžete přiblížit a přejděte do oblasti grafu pruhy přiblížení. Podle přiblížit, můžete zkoumat data, která byla vygenerována během spuštění jemnější podrobně zátěžového testu.
 
@@ -59,7 +58,7 @@ Chcete-li zobrazit grafy:
 
      \- nebo –
 
-     Zobrazte podrobnosti o dříve spuštěném zátěžovém testu. Další informace najdete v tématu [postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md).
+     Zobrazte podrobnosti o dříve spuštěném zátěžovém testu. Další informace najdete v tématu [jak: Přístup k výsledky zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md).
 
 3.  Zvolte **grafy** Pokud vaše grafy nejsou zobrazeny.
 

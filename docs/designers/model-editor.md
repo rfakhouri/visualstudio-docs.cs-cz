@@ -2,7 +2,6 @@
 title: Editor modelů
 ms.date: 04/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833041"
 ---
 # <a name="model-editor"></a>Editor modelů
 
@@ -90,17 +89,17 @@ Tato tabulka popisuje položky panelu **režim editoru modelů** nástrojů, kte
 
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
-|**Vyberte**|Umožňuje výběr bodů, okrajů, ploch nebo objektů ve scéně podle aktivního režimu výběru.|
+|**Výběr**|Umožňuje výběr bodů, okrajů, ploch nebo objektů ve scéně podle aktivního režimu výběru.|
 |**Posouvání**|Umožňuje pohyb 3D scény relativně k rámu okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením **Ctrl** aktivovat **Pan** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů scény relativně k rámu okna. V **přiblížení** režimu, vyberte bod ve scéně a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> V **vyberte** režimu, provést přiblížení nebo oddálení pomocí kolečka myši při stisknuté klávese **Ctrl**.|
-|**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:** tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
+|**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:**  Tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
 |**Globální místní**|Pokud je tato položka povolena, transformace na vybraném objektu pobíhají v globálním prostoru. Jinak transformace na vybraném objektu probíhají v místním prostoru.|
 |**Režim pivotu**|Pokud je tato položka povolena, transformace ovlivní umístění a orientaci ovládacího prvku *bodu otáčení* vybraného objektu (bod otáčení definuje střed operací překladu, měřítko a otočení). Transformace jinak ovlivní umístění a orientaci geometrie objektu ve vztahu k bodu otáčení.|
 |**Uzamknout osu X**|Omezuje manipulaci s objekty na ose x. Platí pouze při použití prostřední části pomůcky manipulátoru.|
 |**Uzamknout osu Y**|Omezuje manipulaci s objekty na ose y. Platí pouze při použití prostřední části pomůcky manipulátoru.|
 |**Uzamknout osu Z**|Omezuje manipulaci s objekty na ose z. Platí pouze při použití prostřední části pomůcky manipulátoru.|
 |**Orámovat objekt**|Orámuje vybraný objekt, aby se nacházel ve středu zobrazení.|
-|**Zobrazení**|Nastaví orientaci zobrazení. Zde jsou dostupné orientace:<br /><br /> **Přední**<br /> Umístí zobrazení před scénu.<br /><br /> **Zpět**<br /> Umístí zobrazení za scénu.<br /><br /> **doleva**<br /> Umístí zobrazení vlevo od scény.<br /><br /> **doprava**<br /> Umístí zobrazení vpravo od scény.<br /><br /> **nahoru**<br /> Umístí zobrazení nad scénu.<br /><br /> **dolní**<br /> Umístí zobrazení pod scénu. **Poznámka:** Toto je jediný způsob, jak změnit směr zobrazení při **pravoúhle** projekce je povolená.|
+|**Zobrazení**|Nastaví orientaci zobrazení. Zde jsou dostupné orientace:<br /><br /> **Přední**<br /> Umístí zobrazení před scénu.<br /><br /> **Zpět**<br /> Umístí zobrazení za scénu.<br /><br /> **doleva**<br /> Umístí zobrazení vlevo od scény.<br /><br /> **doprava**<br /> Umístí zobrazení vpravo od scény.<br /><br /> **nahoru**<br /> Umístí zobrazení nad scénu.<br /><br /> **dolní**<br /> Umístí zobrazení pod scénu. **Poznámka:**  Toto je jediný způsob, jak změnit směr zobrazení při **pravoúhle** projekce je povolená.|
 |**Projekce**|Nastaví druh projekce použitý pro vykreslení scény. Zde jsou dostupné projekce:<br /><br /> **Perspektivy**<br /> V perspektivní projekci se objekty více vzdálené od bodu pozorování zdají být menší a sbíhají se k jednomu vzdálenému bodu.<br /><br /> **Pravoúhlé**<br /> V pravoúhlé projekci se objekty jeví jako stejně velké bez ohledu na jejich vzdálenost od bodu pozorování. Není zobrazena žádná konvergence. Když **pravoúhle** projekce je povolená, nemůžete použít **obíhání** režim zobrazení.|
 |**Styl kreslení**|Nastaví, jak jsou objekty ve scéně vykresleny. Zde jsou dostupné styly:<br /><br /> **Drátový model**<br /> Je-li tato možnost povolena, objekty jsou vykresleny jako objekty wireframe.<br /><br /> **Overdraw**<br /> Pokud je tato možnost povolena, objekty jsou vykreslovány pomocí doplňkového prolnutí. Tuto možnost můžete použít k zobrazení rozsahu překreslování, ke kterému dochází na scéně.<br /><br /> **Plochý stín**<br /> Je-li tato možnost povolena, objekty jsou vykreslovány základním světelným modelem s plochým stínem. Tuto možnost můžete použít k jednoduššímu zobrazení ploch objektu.<br /><br /> Pokud žádná z těchto možností není povolena, každý objekt je vykreslen pomocí materiálu, který je na něj použit.|
 |**Režim vykreslování v reálném čase**|Pokud je povoleno vykreslení v reálném čase, Visual Studio překreslí plochu návrhu, i když je provedena žádná akce uživatele. Tento režim je užitečný při práci se shadery, které se mění v průběhu času.|
@@ -108,7 +107,7 @@ Tato tabulka popisuje položky panelu **režim editoru modelů** nástrojů, kte
 |**Panel nástrojů**|Střídavě zobrazí a skryje **nástrojů**.|
 |**Osnova dokumentu**|Střídavě zobrazí a skryje **Osnova dokumentu** okna.|
 |**Vlastnosti**|Střídavě zobrazí a skryje **vlastnosti** okna.|
-|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Grafické moduly**<br /><br /> **Vykreslení s D3D11**<br /> Používá rozhraní Direct3D 11 k vykreslení plochy návrhu editoru modelů.<br /><br /> **Vykreslení s D3D11WARP**<br /> Používá rozhraní Direct3D 11 WARP (Windows Advanced Rasterization Platform) k vykreslení plochy návrhu editoru modelů.<br /><br /> **Správa scény**<br /><br /> **Import**<br /> Importuje objekty z jiného souboru 3D modelu do aktuální scény.<br /><br /> **Připojit k nadřazenému**<br /> Určí první z více vybraných objektů jako nadřazený objekt zbývajících vybraných objektů.<br /><br /> **Odpojit od nadřazeného**<br /> Odpojí vybraný objekt od nadřazeného objektu. Vybraný objekt se stane *kořenový objekt* ve scéně. Kořenový objekt nemá nadřazený objekt.<br /><br /> **Vytvoření skupiny**<br /> Seskupí vybrané objekty na stejné úrovni.<br /><br /> **Sloučit objekty**<br /> Kombinuje vybrané objekty do jednoho objektu.<br /><br /> **Vytvořit nový objekt z mnohoúhelníkového výběru**<br /> Odebere vybrané plochy z aktuálního objektu a přidá na scénu nový objekt, který tyto plochy obsahuje.<br /><br /> **Nástroje**<br /><br /> **Převrátit Obtáčení mnohoúhelníků**<br /> Převrátí vybrané mnohoúhelníky tak, že jejich pořadí obtáčení a normála povrchu se převrátí.<br /><br /> **Odebrat všechny animace**<br /> Odebere data animace z objektů.<br /><br /> **Triangulovat**<br /> Převede vybraný objekt na trojúhelníky.<br /><br /> **Zobrazení**<br /><br /> Odstranění odvrácených stran<br /> Povolí nebo zakáže odstranění odvrácených stran.<br /><br /> **Snímková frekvence**<br /> Zobrazí frekvenci snímků v pravém horním rohu plochy návrhu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.<br /><br /> Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.<br /><br /> **Zobrazit vše**<br /> Zobrazí všechny objekty ve scéně. To obnoví **skryté** vlastnost každého objektu na **False**.<br /><br /> **Zobrazit normály povrchu**<br /> Zobrazí normály pro každou plochu.<br /><br /> **Zobrazit chybějící materiály**<br /> Zobrazí speciální texturu u objektů, ke kterým není přiřazen materiál.<br /><br /> **Zobrazit bod otáčení**<br /> Povolí nebo zakáže zobrazení značky 3D osy v bodu otáčení aktivního výběru.<br /><br /> **Zobrazit uzly zástupných symbolů**<br /> Zobrazí zástupné uzly. Zástupný uzel je vytvořen při seskupení objektů.<br /><br /> **Zobrazit normály vrcholů**<br /> Zobrazí normálu každého vrcholu. **Tip:** můžete použít **skripty** tlačítko znovu spustit poslední skript.|
+|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Grafické moduly**<br /><br /> **Vykreslení s D3D11**<br /> Používá rozhraní Direct3D 11 k vykreslení plochy návrhu editoru modelů.<br /><br /> **Vykreslení s D3D11WARP**<br /> Používá rozhraní Direct3D 11 WARP (Windows Advanced Rasterization Platform) k vykreslení plochy návrhu editoru modelů.<br /><br /> **Správa scény**<br /><br /> **Import**<br /> Importuje objekty z jiného souboru 3D modelu do aktuální scény.<br /><br /> **Připojit k nadřazenému**<br /> Určí první z více vybraných objektů jako nadřazený objekt zbývajících vybraných objektů.<br /><br /> **Odpojit od nadřazeného**<br /> Odpojí vybraný objekt od nadřazeného objektu. Vybraný objekt se stane *kořenový objekt* ve scéně. Kořenový objekt nemá nadřazený objekt.<br /><br /> **Vytvoření skupiny**<br /> Seskupí vybrané objekty na stejné úrovni.<br /><br /> **Sloučit objekty**<br /> Kombinuje vybrané objekty do jednoho objektu.<br /><br /> **Vytvořit nový objekt z mnohoúhelníkového výběru**<br /> Odebere vybrané plochy z aktuálního objektu a přidá na scénu nový objekt, který tyto plochy obsahuje.<br /><br /> **Nástroje**<br /><br /> **Převrátit Obtáčení mnohoúhelníků**<br /> Převrátí vybrané mnohoúhelníky tak, že jejich pořadí obtáčení a normála povrchu se převrátí.<br /><br /> **Odebrat všechny animace**<br /> Odebere data animace z objektů.<br /><br /> **Triangulovat**<br /> Převede vybraný objekt na trojúhelníky.<br /><br /> **Zobrazení**<br /><br /> Odstranění odvrácených stran<br /> Povolí nebo zakáže odstranění odvrácených stran.<br /><br /> **Snímková frekvence**<br /> Zobrazí frekvenci snímků v pravém horním rohu plochy návrhu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.<br /><br /> Tato možnost je užitečná, když povolíte **režim vykreslování v reálném čase** možnost.<br /><br /> **Zobrazit vše**<br /> Zobrazí všechny objekty ve scéně. To obnoví **skryté** vlastnost každého objektu na **False**.<br /><br /> **Zobrazit normály povrchu**<br /> Zobrazí normály pro každou plochu.<br /><br /> **Zobrazit chybějící materiály**<br /> Zobrazí speciální texturu u objektů, ke kterým není přiřazen materiál.<br /><br /> **Zobrazit bod otáčení**<br /> Povolí nebo zakáže zobrazení značky 3D osy v bodu otáčení aktivního výběru.<br /><br /> **Zobrazit uzly zástupných symbolů**<br /> Zobrazí zástupné uzly. Zástupný uzel je vytvořen při seskupení objektů.<br /><br /> **Zobrazit normály vrcholů**<br /> Zobrazí normálu každého vrcholu. **Tip:**  Můžete použít **skripty** tlačítko znovu spustit poslední skript.|
 
 Tady je **editoru modelů** nástrojů:
 
@@ -138,7 +137,7 @@ Následující tabulka popisuje primární ovládací prvky zobrazení.
 |------------------|-----------------|
 |**Posouvání**|Umožňuje pohyb 3D scény relativně k rámu okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, můžete stisknutím a podržením **Ctrl** aktivovat **Pan** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů scény relativně k rámu okna. V **přiblížení** režimu, vyberte bod ve scéně a poté jej přesunutím vpravo dolů zvětšete nebo přesunutím vlevo či nahoru out.<br /><br /> V **vyberte** režimu, provést přiblížení nebo oddálení pomocí kolečka myši při stisknuté klávese **Ctrl**.|
-|**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:** tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
+|**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:**  Tento režim nemá žádný vliv při **pravoúhle** projekce je povolená.|
 |**Orámovat objekt**|Orámuje vybraný objekt, aby se nacházel ve středu zobrazení.|
 
 Zobrazení je vytvořeno virtuálním fotoaparátem, ale je také definováno projekcí. Projekce definuje, jaké tvary a objekty v zobrazení jsou přeloženy do pixelů na povrchu návrhu. Na **editoru modelů** nástrojů, můžete použít buď **perspektivy** nebo **pravoúhle** projekce.
@@ -156,7 +155,7 @@ Pro lepší pochopení 3D objektu nebo scény, můžete zobrazit další podrobn
 
 ### Vytváření a import 3D objektů <a name="Adding3DObjects"></a>
 
-Přidat předdefinovaný 3D tvar do scény v **nástrojů**, vybrat ta, kterou chcete a přesuňte jej na návrhovou plochu. Nové tvary jsou umístěny v počátku scény. Editor modelů obsahuje sedm tvarů: **kužel**, **datové krychle**, **válcový**, **disk**, **roviny**,  **Sphere**, a **čajovou Konvici**.
+Přidat předdefinovaný 3D tvar do scény v **nástrojů**, vybrat ta, kterou chcete a přesuňte jej na návrhovou plochu. Nové tvary jsou umístěny v počátku scény. Editor modelů obsahuje sedm tvarů: **Kužel**, **datové krychle**, **válcový**, **disk**, **roviny**, **Sphere**a **Čajovou konvici**.
 
 Chcete-li importovat 3D objekt ze souboru, na **editoru modelů** nástrojů, zvolte **Upřesnit** > **Správa scén** > **importovat**  > a pak zadejte soubor, který chcete importovat.
 
@@ -193,7 +192,7 @@ Může být výhodné pracovat s objekty pomocí přichycení k mřížce. Na 
 
 Bod otáčení objektu definuje jeho střed rotace a změnu měřítka. Bod otáčení objektu můžete změnit, abyste změnili způsob, jak je objekt ovlivněn transformacemi rotace a měřítka. Na **režim editoru modelů** nástrojů, zvolte **režim Pivotu** chcete povolit (nebo zakázat) režim pivotu. Pokud je povolen režim pivotu, zobrazí se v bodu otáčení vybraného projektu indikátor malé osy. Pak můžete použít **překlad** a **otočení** nástroje pro manipulaci s bodem otáčení.
 
-Ukázku použití bodu otáčení, naleznete v tématu [postupy: Změna bodu otáčení 3D modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+Ukázku použití bodu otáčení, naleznete v tématu [jak: Změna bodu otáčení 3D modelu](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Globální a místní režimy
 
@@ -265,7 +264,7 @@ V závislosti na tom, co materiál podporuje, můžete změnit jeho vlastnosti o
 
 Odebrat všechny materiály z objektu, na **editoru modelů** nástrojů, zvolte **skripty** > **materiály** > **odebrat Materiály**.
 
-Můžete použít **návrháře shaderu** k tvorbě vlastních materiálů shaderu, které lze aplikovat na objekty ve 3D scéně. Informace o vytváření vlastních uživatelských materiálů shader naleznete v tématu [návrháře shaderu](../designers/shader-designer.md). Informace o tom, jak používat vlastního materiálu shaderu na objekt, najdete v části [postupy: použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Můžete použít **návrháře shaderu** k tvorbě vlastních materiálů shaderu, které lze aplikovat na objekty ve 3D scéně. Informace o vytváření vlastních uživatelských materiálů shader naleznete v tématu [návrháře shaderu](../designers/shader-designer.md). Informace o tom, jak používat vlastního materiálu shaderu na objekt, najdete v části [jak: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Správa scény
 

@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: používání dialogových oken aplikace Word ve skrytém režimu prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Používání dialogových oken aplikace Word ve skrytém režimu prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819624"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Postupy: používání dialogových oken aplikace Word ve skrytém režimu prostřednictvím kódu programu
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Postupy: Používání dialogových oken aplikace Word ve skrytém režimu prostřednictvím kódu programu
   Vyvoláním předdefinovaných dialogových oken v aplikaci Microsoft Office Word bez zobrazení uživateli můžete provádět komplexní operace s jedné metody volání. Můžete to provést pomocí <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodu <xref:Microsoft.Office.Interop.Word.Dialog> objektu bez volání <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> metoda.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35676051"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [Postupy: Používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
  [Pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md)   
  [Reflexe (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexe (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

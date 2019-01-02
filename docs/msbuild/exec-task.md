@@ -1,8 +1,6 @@
 ---
 title: Exec – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959245"
 ---
 # <a name="exec-task"></a>Exec – úloha
 Spustí zadaný program nebo příkaz pomocí zadaných argumentů.  
@@ -47,7 +45,7 @@ Spustí zadaný program nebo příkaz pomocí zadaných argumentů.
 |`Outputs`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje položky výstup z úlohy. `Exec` Úloh tyto samotné nenastaví. Místo toho je lze je zadat jako, pokud nastavena, tak, aby bylo možné později v projektu.|  
 |`StdErrEncoding`|Volitelné `String` výstupní parametr.<br /><br /> Určuje kódování standardní chybový proud zachycené úloh. Výchozí hodnota je aktuální kódování výstupu konzoly.|  
 |`StdOutEncoding`|Volitelné `String` výstupní parametr.<br /><br /> Určuje kódování zachycené úloh standardního výstupního datového proudu. Výchozí hodnota je aktuální kódování výstupu konzoly.|  
-|`WorkingDirectory`|Volitelné `String` parametru.<br /><br /> Určuje adresář, ve kterém se spustí příkaz.<br /><br />Výchozí: Aktuální pracovní adresáře projektu.|  
+|`WorkingDirectory`|Volitelné `String` parametru.<br /><br /> Určuje adresář, ve kterém se spustí příkaz.<br /><br />Výchozí hodnota: V projektu aktuálního pracovního adresáře.|  
   
 ## <a name="remarks"></a>Poznámky  
  Tato úloha je užitečné, když konkrétní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úkolů pro úlohu, kterou chcete provést, není k dispozici. Ale `Exec` úkol, na rozdíl od více konkrétních úloh, nelze provést další zpracování nebo podmíněných operací na základě výsledku nástroje nebo příkaz, který běží.

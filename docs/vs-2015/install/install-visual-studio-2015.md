@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828053"
 ---
 # <a name="install-visual-studio-2015"></a>Nainstalovat sadu Visual Studio 2015
 
@@ -43,8 +42,8 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 |||
 |------------------|----------------|
 |![Stáhněte si Visual Studio](../install/media/downloads.png "soubory ke stažení") |**Soubory ke stažení**: K instalaci sady Visual Studio 2015, můžete stáhnout spustitelný soubor produkt z [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) stránce (požadován odběr), nebo pomocí instalačního média z zabalený produkt. [Další informace o tom, jak aktuální nebo předchozí verze sady Visual Studio si můžete stáhnout](https://www.visualstudio.com/vs/older-downloads/).|
-|![Další informace o funkcích](../install/media/features.png "funkce") |**Funkce**: Další informace o funkcích v sadě Visual Studio 2015, najdete v článku zpráva k vydání verze pro [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), a [ S aktualizací 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
-|![Zjistěte, co je v jednotlivých SKU](../install/media/sku.png "skladové položky") |**SKU**: co je k dispozici v každé edici sady Visual Studio 2015, najdete v tématu naše [porovnání nabídek Visual Studia](http://go.microsoft.com/fwlink/?LinkID=242142) stránky.|
+|![Další informace o funkcích](../install/media/features.png "funkce") |**Funkce**: Další informace o funkcích v sadě Visual Studio 2015, najdete v článku zpráva k vydání verze pro [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs), a [s aktualizací Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
+|![Zjistěte, co je v jednotlivých SKU](../install/media/sku.png "skladové položky") |**SKU**: Chcete-li zjistit, co je k dispozici v každé edici sady Visual Studio 2015, přečtěte si naše [porovnání nabídek Visual Studia](http://go.microsoft.com/fwlink/?LinkID=242142) stránky.|
 |![Zobrazit systémové požadavky](../install/media/system-requirements.png "požadavky na systém") |**Požadavky na systém**: Chcete-li zobrazit systémové požadavky pro jednotlivé edice aplikace Visual Studio 2015, najdete v článku [Kompatibilita sady Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) stránky.|
 |![Vyhledání kódu Product Key](../install/media/product-keys.png "kódy Product Key") |**Kódy Product Key**: Vyhledání kódu product key, najdete v článku [jak: Vyhledejte Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) tématu.|
 |![Přečtěte si informace o licencování](../install/media/licensing.png "licencování") |**Licencování**: Přečtěte si informace o licencování možnosti pro jednotlivce nebo podnikových zákazníků, najdete v článku [licence Visual Studio a MSDN](https://www.microsoft.com/download/details.aspx?id=13350) dokument white paper.|
@@ -112,7 +111,7 @@ Předtím, než jsme proniknout do podrobností, tady je seznam našich nejčast
 
  Pokud používáte systém Windows Server 2008 R2 s technologií Hyper-V a urychlování pomocí grafického adaptéru, může docházet ke zpomalování systému.
 
- Další informace naleznete na následující stránce na webu Microsoftu: [může snížit výkon videa, když Windows Server 2008 nebo Windows Server 2008 R2 na základě počítače má povolenou roli Hyper-V a akcelerovaný grafický adaptér nainstalovaný](http://go.microsoft.com/fwlink/?LinkID=231084).
+ Další informace naleznete na následující stránce na webu Microsoftu: [Pokud systém Windows Server 2008, může se snížit výkon videa nebo Windows Server 2008 R2 na základě počítač má povolenou roli Hyper-V a nainstalován akcelerovaný grafický adaptér](http://go.microsoft.com/fwlink/?LinkID=231084).
 
  **Emulace zařízení s technologií Hyper-V**
 

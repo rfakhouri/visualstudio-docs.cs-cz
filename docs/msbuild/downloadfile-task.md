@@ -1,10 +1,8 @@
 ---
 title: Úloha DownloadFile | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832921"
 ---
 # <a name="downloadfile-task"></a>Úloha DownloadFile
 Soubory ke stažení zadané soubory pomocí technologie Hyper-Text přenos protokol (HTTP).
@@ -47,7 +45,7 @@ Soubory ke stažení zadané soubory pomocí technologie Hyper-Text přenos prot
 |`DownloadedFile`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> výstupní parametr.<br /><br /> Určuje soubor, který jste stáhli.|
 |`Retries`|Volitelné `Int32` parametru.<br /><br /> Určuje, kolik pokusů o stažení, pokud všechny předchozí pokusy nezdařily. Výchozím nastavením je nula.|  
 |`RetryDelayMilliseconds`|Volitelné `Int32` parametru.<br /><br /> Určuje zpoždění v milisekundách mezi všechny nezbytnými pokusy o opakování. Výchozí hodnota je 5000.|  
-|`SkipUnchangedFiles`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, přeskočí stahování souborů, které jsou beze změny. Výchozí hodnota je `true`. `DownloadFile` Úloh považuje soubory za nezměněné, pokud mají stejnou velikost a stejný čas podle vzdálený server poslední aktualizace. <br /><br />**Poznámka:** ne všechny servery HTTP označuje datum poslední změny souborů způsobí, že soubor ke stažení znovu.|
+|`SkipUnchangedFiles`|Volitelné `Boolean` parametru.<br /><br /> Pokud `true`, přeskočí stahování souborů, které jsou beze změny. Výchozí hodnota je `true`. `DownloadFile` Úloh považuje soubory za nezměněné, pokud mají stejnou velikost a stejný čas podle vzdálený server poslední aktualizace. <br /><br />**Poznámka:**  Ne všechny servery HTTP označuje datum poslední změny souborů způsobí, že soubor ke stažení znovu.|
 |`SourceUrl`|Vyžaduje `String` parametru.<br /><br /> Určuje adresu URL ke stažení.|
   
 ## <a name="remarks"></a>Poznámky  

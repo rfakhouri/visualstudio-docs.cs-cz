@@ -1,8 +1,6 @@
 ---
 title: Reference k rozhraní API pro rozšiřitelnost technologie IntelliTrace | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, API reference
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ac7a4947576b8c06741ac2c407c35e3663acd0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: f39bca422cf5dbc6e14c6ca9e876c8e160023994
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828482"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Reference k rozhraní API pro rozšiřitelnost technologie IntelliTrace
 

@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: určení sestavení události (Visual Basic)'
+title: 'Postupy: Určení událostí sestavení (Visual Basic)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828862"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Postupy: určení sestavení události (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 
 Událostí sestavení v jazyce Visual Basic můžete použít ke spouštění skriptů, maker nebo jiných akcí jako součást procesu kompilace. Před kompilací; dojde k události před sestavením Po kompilaci dojde k události po sestavení.
 
@@ -64,7 +63,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 
 ### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Chcete-li vytvořit příkaz .exe změna manifestu aplikace
 
-1. Vytvořte konzolovou aplikaci pro příkaz. Z **souboru** nabídky, klikněte na tlačítko **nový**a potom klikněte na tlačítko **projektu**.
+1. Vytvořte konzolovou aplikaci pro příkaz. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.
 
 2. V **nový projekt** v dialogu **jazyka Visual Basic** uzlu, vyberte **Windows** a pak **konzolovou aplikaci** šablony. Pojmenujte projekt `ChangeOSVersionVB`.
 
@@ -127,7 +126,7 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Chcete-li vyvolat událost po sestavení, chcete-li změnit manifest aplikace
 
-1.  Vytvoření aplikace Windows pro projekt, který má být publikován. Z **souboru** nabídky, klikněte na tlačítko **nový**a potom klikněte na tlačítko **projektu**.
+1.  Vytvoření aplikace Windows pro projekt, který má být publikován. V nabídce **Soubor** klikněte na položku **Nový** a potom klikněte na položku **Projekt**.
 
 2.  V **nový projekt** v dialogu **jazyka Visual Basic** uzlu, vyberte **Windows Desktop** a pak **aplikace Windows Forms** šablony. Pojmenujte projekt `VBWinApp`.
 3.  S projekt vybraný v **Průzkumníka řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
@@ -169,4 +168,4 @@ Následující postup ukazuje, jak nastavit minimální verzi operačního syst�
 - [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Publikovat stranu, Návrhář projektu](../ide/reference/publish-page-project-designer.md)
 - [Dialogové okno Příkazový řádek události před sestavením události/po sestavení](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Postupy: určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md)
+- [Postupy: Určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md)

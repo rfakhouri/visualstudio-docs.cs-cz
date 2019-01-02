@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cc7673ad7f7542595a883e81a8064964dd054729
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957998"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Postupy: vytváření vlastních grafů v načítání výsledků testu
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>Postupy: Vytváření vlastních grafů v načítání výsledků testu
 
 Můžete navrhovat grafy, které zobrazí konkrétní informace o výsledcích zátěžového testu. Navrhněte vlastní graf tak, že zadáte počítadla testu zatížení, které se zobrazí grafu.
 
@@ -40,7 +39,7 @@ Následující postup můžete provést při spuštění zátěžového testu ne
 
      Nový graf se zobrazí v **Analyzéru zátěžového testu**. Zobrazí se v panelu aktuálně vybranému grafu. nahradí grafu, který se zobrazí v panelu.
 
-3.  Nový graf přizpůsobte tak, že přidáte čítače. Další informace najdete v tématu [postupy: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3.  Nový graf přizpůsobte tak, že přidáte čítače. Další informace najdete v tématu [jak: Přidání a odstranění čítačů pro grafy](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Viz také:
 

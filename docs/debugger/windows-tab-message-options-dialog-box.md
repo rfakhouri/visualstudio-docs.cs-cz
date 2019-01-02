@@ -1,8 +1,6 @@
 ---
-title: Karta okna, dialogové okno možností zpráv | Microsoft Docs
-ms.custom: ''
+title: Karta Windows, dialogové okno možností zpráv | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Windows
@@ -12,38 +10,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad738a03b63284abc9ad2d922a51f140228e4ed7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 407b7c1c28d4232988bb36f8c1333197cd2dc08f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827176"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Karta Okna, dialogové okno možností zpráv
-Použití **Windows** a nastavte rozsah zprávy uvedené v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), zvolte **zprávy protokolu** z **nástroje Spy** nabídky.  
+Použití **Windows** kartu k nastavení oboru zprávy uvedené v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md), zvolte **zprávy protokolu** z **Spy** nabídky.  
   
- Následující nastavení jsou k dispozici na **Windows** karty:  
+ Následující nastavení jsou k dispozici na **Windows** kartu:  
   
- **Nástroj pro vyhledávání**  
- Přetažení nástroj používaný k vyberte časové období.  
+ **Tažením nástroje hledání**  
+ Přetažení nástroj použitý k vyberte časové období.  
   
- **Skrýt nástroje Spy ++**  
- Odebere hlavní okno nástroje Spy ++ a zůstane **MessageOptions** dialogové okno zobrazené na jiné aplikace.  
+ **Skrýt Spy ++**  
+ Odebere hlavního okna nástroje Spy ++ a zůstane **MessageOptions** dialogové okno viditelné nad vaší aplikace.  
   
  **Nadřazené okno**  
- Zobrazení zpráv pro vybrané okno a jeho okamžitou nadřazeného okna.  
+ Zobrazení zpráv pro vybrané okno a okamžité nadřazenému oknu.  
   
- **Podřízená okna**  
- Zobrazení zpráv pro vybrané okno a všechny jeho podřízené systému windows, včetně vnořené podřízená okna.  
+ **Podřízené okno**  
+ Zobrazení zpráv pro vybrané okno a všech jeho podřízených oken, včetně vnořených podřízená okna.  
   
- **Windows stejného podprocesu**  
- Zobrazení zpráv pro vybrané okno a všechny ostatní vlastníkem stejném vlákně, v systému windows.  
+ **Windows stejné vlákna**  
+ Zobrazení zpráv pro vybrané okno a všech ostatních oken vlastněné stejným vláknem.  
   
- **Windows stejný postup**  
- Zobrazení zpráv pro vybrané okno a všechny ostatní windows vlastníkem stejný postup.  
+ **Windows stejného procesu**  
+ Zobrazení zpráv pro vybrané okno a všech ostatních oken vlastněné stejným procesem.  
   
- **Všechny systémy Windows v systému**  
- Zobrazení zpráv pro všechny systémy windows.  
+ **Všechny Windows v systému**  
+ Zobrazení zprávy pro všechna okna.  
   
  **Uložit nastavení jako výchozí**  
- Uložte předchozí nastavení pro nové windows datového proudu zpráv. Tato nastavení jsou také uloženy při ukončení nástroje Spy ++.
+ Uložte předchozí nastavení pro nový datový proud zpráv – windows. Tato nastavení jsou také uloženy při ukončení nástroje Spy ++.

@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 8d8b5ac6beb6cfb7b40f3f09fded3fef365652a4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ddbc8a221cd883c3f30a583a1c1f03430c5f00ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825507"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Postup upgradu projektů na aktuální verzi nástrojů Azure pro Visual Studio
 ## <a name="overview"></a>Přehled
@@ -33,7 +32,7 @@ Pokud dojde k automatickému upgradu projektu nebo určíte, že chcete ho upgra
 * Pokud ukládání do mezipaměti Azure je hostované v jedné nebo více rolí váš projekt, se některé vlastnosti v konfiguraci služby (soubor .cscfg) a definice služby (soubor .csdef) změnit při upgradu projektu. Pokud projekt používá balíček NuGet pro ukládání do mezipaměti Azure, projekt upgradovat na nejnovější verzi balíčku. By měla otevřít soubor web.config a ověřte, že byla správně Udržovat konfiguraci klienta během procesu upgradu. Pokud jste přidali odkazy na sestavení klienta ukládání do mezipaměti Azure bez použití balíčku NuGet, neaktualizuje se tato sestavení; je nutné ručně aktualizovat tyto odkazy na nové verze.
 
 > [!IMPORTANT]
-> Pro projekty F # je nutné ručně aktualizovat odkazy na sestavení v Azure, takže odkazují novější verze tato sestavení.
+> Pro F# projektů, je nutné ručně aktualizovat odkazy na sestavení Azure tak, aby odkazují novější verze tato sestavení.
 > 
 > 
 
@@ -44,4 +43,3 @@ Pokud dojde k automatickému upgradu projektu nebo určíte, že chcete ho upgra
     **Aplikace** karta zobrazuje verze nástrojů, který je spojen s projektem. Pokud se zobrazí aktuální verze nástrojů Azure, projekt již byla upgradována. Pokud si nainstalujete novější verzi nástroje, než jaké kartě se zobrazí, **upgradovat** se zobrazí tlačítko.
 3. Zvolte **upgradovat** tlačítko Upgradovat projekt na aktuální verzi nástroje.
 4. Sestavte projekt a pak řešit všechny chyby, které jsou výsledkem změny rozhraní API. Informace o tom, jak upravit kód pro novou verzi naleznete v dokumentaci pro konkrétní rozhraní API.
-

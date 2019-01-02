@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21b0ecfc26728fa4692a07eaa1e2e43ecdcf9cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: d53e6c512b6f026772339c79c46eeb6854fb0095
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842275"
 ---
 # <a name="properties-of-port-shapes"></a>Vlastnosti obrazců portů
 Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném návrháři.
@@ -29,14 +28,14 @@ Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném n
 
 |Vlastnost|Popis|Výchozí|
 |-|-|-|
-|Barva výplně|Barva výplně tohoto obrazce.|Prázdné|
+|Barva výplně|Barva výplně tohoto obrazce.|White|
 |Režim přechodu výplně|Režim přechodu výplně tohoto obrazce.|Vodorovná|
 |Geometrie|Geometrie tohoto obrazce (obdélníku, zaoblený obdélník, elipsy nebo kruhu).|Obdélník|
 |Má výchozí body připojení|Pokud `True`obrazce použije nahoře, dole, vlevo a správný připojovací body ve vygenerovaném návrháři.|False|
-|Barva obrysu|Barva obrysu tohoto obrazce.|Černá|
+|Barva obrysu|Barva obrysu tohoto obrazce.|Black|
 |Styl přerušování obrysu|Styl přerušování obrysu tohoto obrazce (plný, Dash, tečka, DashDot, DashDotDot nebo vlastní).|Plná|
 |Tloušťka obrysu|Tloušťka obrysu tohoto obrazce.|0.03125|
-|Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto obrazcem.|Černá|
+|Barva textu|Barva, která je použitá pro dekoratéry textu, které jsou spojeny s tímto obrazcem.|Black|
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|
 |Vlastní atributy|Použít k přidání atributů do třídy zdrojový kód, který je generován z tohoto obrazce.|\<žádné >|
 |Generuje Double odvozené|Pokud `True`, se vygeneruje základní třídu a částečné třídy (pro podporu přizpůsobení pomocí přepisů). Další informace najdete v tématu [přepisování a rozšiřování vygenerované třídy](../modeling/overriding-and-extending-the-generated-classes.md)|False|
@@ -48,7 +47,7 @@ Tvary portu můžete použít k reprezentaci třídy domény ve vygenerovaném n
 |Typ Tip nástroje|Jak popisek je definován (fixní, proměnná nebo žádný). Pokud pevně daná, a potom hodnoty `Fixed Tooltip Text` vlastnost se používá jako popis tlačítka; Pokud je proměnná, pak popisek je definován ve vlastním kódu.|žádná|
 |Poznámky|Neformální poznámky, které jsou spojeny s tímto obrazcem.|\<žádné >|
 |Počáteční výška|Počáteční výška tohoto obrazce v palcích.|1|
-|Počáteční šířka|Počáteční šířka tohoto obrazce v palcích.|1.5|
+|Počáteční šířka|Počáteční šířka tohoto obrazce v palcích.|1,5|
 |Barva výplně vystavené jako vlastnost<br /><br /> Režim přechodu výplně vystavené<br /><br /> Barva obrysu vystavena jako vlastnost<br /><br /> Styl přerušování obrysu vystavena jako vlastnost<br /><br /> Vystavené jako vlastnost zpřístupní tloušťku obrysu<br /><br /> Zpřístupní barvu textu|Pokud `True`, může uživatel nastavit vlastnost stanovených tvaru. Nastavit, klikněte pravým tlačítkem na definici obrazce a klikněte na tlačítko **přidat vystavený**.|False|
 |Popis|Používá se k dokumentu vygenerovaného návrháře.|\<žádné >|
 |Zobrazovaný název|Název, který se zobrazí ve vygenerovaném návrháři u tohoto obrazce.|\<žádné >|

@@ -1,9 +1,6 @@
 ---
 title: Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4cfd5fb259db7903541e0a86f16c720c9ff9c4d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 864742d3e2ded8ca4cb0531989bebfde9f6f3593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827335"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud váš projekt obsahuje vlastní nastavení pásu karet, který byl vytvořen pomocí **pás karet (vizuální návrhář)** položku projektu, musíte proveďte následující změny do projektu kódu, pokud Cílová architektura, která se změní na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později.  
@@ -192,5 +189,3 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ## <a name="see-also"></a>Viz také:  
  [Migrace řešení Office na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Návrhář pásu karet](../vsto/ribbon-designer.md)  
-  
-  

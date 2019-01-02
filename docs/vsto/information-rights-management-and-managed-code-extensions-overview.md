@@ -1,9 +1,6 @@
 ---
-title: Přehled rozšíření spravovaného kódu a Správa přístupových práv
-ms.custom: ''
+title: Přehled rozšíření spravovaného kódu a správy přístupových práv
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,33 +17,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35a118774d50bcc697cd3ff5663fc26d8580ac88
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a2020221ee086b23a8621112122acffb11beef62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823827"
 ---
-# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Přehled rozšíření spravovaného kódu a Správa přístupových práv
-  Aplikace Microsoft Office Word a Microsoft Office Excel poskytují Správa informačních práv (IRM), funkce, která vám mohou pomoci zabránit neoprávněným osobám v zobrazení nebo změna citlivé informace. Podrobnosti o tom, jak funguje Information Rights Management najdete v tématu nápovědy v konkrétní aplikaci Office.  
+# <a name="information-rights-management-and-managed-code-extensions-overview"></a>Přehled rozšíření spravovaného kódu a správy přístupových práv
+  Aplikace Microsoft Office Word a Microsoft Office Excel poskytují Správa informačních práv (IRM), funkce, která vám mohou pomoci zabránit neoprávněným osobám v zobrazení nebo změna citlivé informace. Podrobnosti o tom, jak funguje Information Rights Management najdete v nápovědě v konkrétní aplikaci Office.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 ## <a name="run-code-behind-documents-with-restricted-permissions"></a>Spuštění kódu na pozadí dokumentů s omezenými oprávněními  
- Pokud vaše řešení obsahuje dokument nebo sešit, který používá technologii IRM, ve výchozím nastavení, Word a Excel nepovoluje spuštění kódu. Pokud jsou Autor dokumentu nebo mají úplný přístup, můžete změnit výchozí nastavení tak, aby vaše řešení funguje. Další informace najdete v tématu [postupy: povolení spuštění pozadí dokumentů s omezenými oprávněními kódu](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+ Pokud vaše řešení obsahuje dokument nebo sešit, který používá technologii IRM, ve výchozím nastavení, Word a Excel není povoleno spuštění kódu. Pokud autor dokumentu nebo mají úplný přístup, můžete změnit výchozí, takže vaše řešení funguje. Další informace najdete v tématu [jak: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
- IRM brání použití <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> načíst nebo pracovat s daty, která se uloží do mezipaměti v dokumentu.  
+ IRM brání použití <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> načíst nebo manipulaci s daty, která se uloží do mezipaměti v dokumentu.  
   
-## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Koncovým uživatelům omezit oprávnění k dokumentům, které používají rozšíření spravovaného kódu  
- Každý, kdo má plný přístup k dokumentu nebo sešitu ve vašem řešení použít IRM a omezit oprávnění. Pokud koncový uživatel v účetním oddělení používá řešení, které automaticky naplní na listu s daty z databáze, tento uživatel může například umožňuje změnit přístup jenom na osoby ve své oddělení a přístup pro čtení k ostatním. Pokud uživatel přidá omezená oprávnění, ve výchozím nastavení, nelze spustit kódu listu a listu se nenaplní s daty.  
+## <a name="end-users-to-restrict-permissions-to-documents-that-use-managed-code-extensions"></a>Koncovým uživatelům možnost omezit oprávnění pro dokumenty, které používají rozšíření spravovaného kódu  
+ Každý, kdo má úplný přístup k dokumentu nebo sešitu ve vašem řešení můžete omezit oprávnění IRM. Pokud koncový uživatel z účetního oddělení používá řešení, které se automaticky vyplní sešit s daty z databáze, tento uživatel může třeba umožňuje změnit přístup pouze uživatelům ve své oddělení a ostatním uživatelům přístup pro čtení. Když uživatel přidá omezená oprávnění, ve výchozím nastavení, nelze spustit kód za listu a listu nesmí být naplněná daty.  
   
- Chcete-li problém vyřešit, někdo s plný přístup k dokumentu nebo sešitu musíte změnit výchozí nastavení oprávnění povolit programový přístup k modelu objektu. Další informace najdete v tématu [postupy: povolení spuštění pozadí dokumentů s omezenými oprávněními kódu](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
+ Chcete-li vyřešit tento problém, někdo s úplné řízení přístupu k dokumentu nebo sešitu musí změnit výchozí nastavení oprávnění povolit programový přístup k objektovému modelu. Další informace najdete v tématu [jak: Povolit kód ke spuštění pozadí dokumentů s omezenými oprávněními](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Ochrana dokumentů v řešeních na úrovni dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
- [Ochrana heslem v dokumentech Office](../vsto/password-protection-on-office-documents.md)   
+ [Ochrana dokumentů Office heslem](../vsto/password-protection-on-office-documents.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

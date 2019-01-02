@@ -1,8 +1,6 @@
 ---
-title: Aktualizace aplikací UWP | Microsoft Docs
-ms.custom: ''
+title: Aktualizace aplikace pro UPW | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,47 +18,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a45564f34fe0167821febb511a023c01f7c38358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 43f232157ef9237ba9d401f473ab0db1b1260f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828719"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualizace aplikace UWP v sadě Visual Studio
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualizace aplikace pro UPW v sadě Visual Studio
   
- Můžete provádět změny kódu a ladění a potom aktualizujte aplikace pro UPW pomocí jazyka JavaScript výběrem **aplikace pro aktualizaci Windows** tlačítko **ladění** panelu nástrojů. Výběr toto tlačítko znovu načte aplikaci bez zastavení a spuštění ladicího programu. Funkce aktualizace umožňuje měnit kód HTML, CSS a JavaScript a rychle zobrazit výsledek. Tato funkce je podporována pro aplikace UWP.  
+ Můžete provedete změny kódu během ladění a pak aktualizujte aplikace pro UPW pomocí jazyka JavaScript výběrem **aktualizovat Windows app** tlačítko **ladění** nástrojů. Výběrem tohoto tlačítka znovu načte aplikace bez zastavení a restartování ladicího programu. Funkce aktualizace umožňuje upravit kód HTML, CSS a JavaScriptu a rychle zobrazit výsledek. Tato funkce je podporována pro aplikace pro UPW.  
   
- Aktualizace není Udržovat stav vaší aplikace nebo odrážela tyto změny do vaší aplikace:  
+ Aktualizaci nelze udržovat stav vaší aplikace nebo zahrnují následující změny do vaší aplikace:  
   
--   Změny souboru manifestu balíčku, včetně změny zadané v manifestu balíčku bitové kopie.  
+-   Změny souboru manifestu balíčku, včetně změn imagí v manifestu balíčku.  
   
--   Odkaz na změny, jako je například přidávání nebo odebírání odkaz na sadu SDK, nebo změny Runtime součásti systému Windows (soubory .winmd).  
+-   Odkaz na změny, jako je například přidávání nebo odebírání odkaz na sadu SDK nebo změny součástí prostředí Windows Runtime (soubory .winmd).  
   
--   Změny prostředku, jako jsou například změny řetězců v .resjson soubory.  
+-   Změny zdrojů, jako jsou například změny v souborech .resjson řetězce.  
   
--   Změny souborů projektu, jejichž výsledkem změny názvu cesty, nové soubory projektu nebo odstraněné soubory.  
+-   Soubor projektu se změní výsledek ve změně názvu cesty, nové soubory projektu nebo odstraněné soubory.  
   
--   Projektů a položek změny vlastností, jako jsou například změny na vybraná zařízení ladění, nebo změny akce balíčku pro soubor (v okně Vlastnosti).  
+-   Projektů a položek změny vlastností, jako jsou například změny vybrané ladění zařízení, nebo změny akce balíčku souboru (v okně Vlastnosti).  
   
 > [!IMPORTANT]
->  Pokud změníte odkazy, změnit manifest balíčku nebo provést další změny, zadaný v předchozím seznamu, budete muset zastavit a restartovat ladicího programu aktualizovat zdrojové soubory HTML, CSS a JavaScript.  
+>  Pokud změníte odkazy, změňte manifest balíčku nebo provést další změny, které uvedli v předchozím seznamu, budete muset zastavit a restartovat ladicí program k aktualizaci zdrojové soubory HTML, CSS a JavaScriptu.  
   
-### <a name="to-refresh-an-app"></a>Aktualizace aplikace  
+### <a name="to-refresh-an-app"></a>Chcete-li aktualizovat aplikaci  
   
-1.  S UWP projektem otevřeným v sadě Visual Studio, vyberte **místního počítače** jako cíl ladění.
+1.  Otevřít v sadě Visual Studio projektu UPW, vyberte **místního počítače** jako cíl ladění.
   
-     ![Vyberte možnost ladění cílového seznamu](../debugger/media/js_select_target.png "JS_Select_Target")  
+     ![Seznam cílů ladění vyberte](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-3.  Stisknutím klávesy F5 a spusťte aplikaci v režimu ladění.  
+3.  Stisknutím klávesy F5 spusťte aplikaci v režimu ladění.  
   
-4.  Umožňuje přepnout do sady Visual Studio. 
+4.  Přepněte do aplikace Visual Studio. 
   
-5.  Na domovské stránce aplikace UWP upravte některé HTML.
+5.  Na domovské stránce vaší aplikace pro UPW upravte některé HTML.
   
-7.  Klikněte na tlačítko **aplikace pro aktualizaci Windows** tlačítka, který vypadá podobně jako tento: ![tlačítko aplikace aktualizovat Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Nebo stisknutím klávesy F4.)  
+7.  Klikněte na tlačítko **aktualizovat Windows app** tlačítka, která vypadá přibližně takto: ![Aktualizovat aplikaci Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Nebo stisknutím klávesy F4).  
   
-8.  Umožňuje přepnout do aplikace. Aplikace je znovu a aktualizované HTML slouží k vykreslení aplikace.
+8.  Přepněte do aplikace. Aplikace je znovu načíst a aktualizované HTML se použije k vykreslení aplikace.
   
 ## <a name="see-also"></a>Viz také  
- [Rychlý úvod: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)

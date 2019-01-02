@@ -2,7 +2,6 @@
 title: Modifikační klávesy nástroje pero v Blendu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6608ede14ab35697462777fcd7b8f4a58e68358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831690"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Modifikační klávesy nástroje pero v Blendu
 V následující tabulce jsou uvedeny klávesových zkratek, které můžete použít při vytváření ho potřebujete změnit cestu **pera** nástroj ![nástroje pero](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Můžete také použít **pera** nástroj pro přidání nebo odebrání bodů na existující cestu nebo připojit dva existující cesty.

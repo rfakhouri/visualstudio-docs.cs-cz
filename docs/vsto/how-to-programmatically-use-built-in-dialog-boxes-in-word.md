@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829060"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Postupy: používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Postupy: Používání předdefinovaných dialogových oken v aplikaci Word prostřednictvím kódu programu
   Při práci s Microsoft Office Word, jsou časy, kdy je třeba zobrazit dialogová okna pro uživatelský vstup. Přestože je možné vytvořit vlastní, můžete také chtít postup používání předdefinovaných dialogových oknech v aplikaci Word, které jsou přístupné na <xref:Microsoft.Office.Interop.Word.Dialogs> kolekce <xref:Microsoft.Office.Interop.Word.Application> objektu. Umožňuje získat přístup k více než 200 předdefinovaných dialogových oknech, které jsou reprezentovány jako výčty.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35675907"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: používání dialogových oken aplikace Word ve skrytém režimu prostřednictvím kódu programu](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Postupy: Používání dialogových oken aplikace Word ve skrytém režimu prostřednictvím kódu programu](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict – příkaz](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexe (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexe (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

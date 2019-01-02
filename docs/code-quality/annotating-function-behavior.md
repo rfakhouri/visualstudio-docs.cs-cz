@@ -2,7 +2,6 @@
 title: Zadávání poznámek k chování funkcí
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _On_failure_
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa47ad88f137ff9a74d0365c25995125c835c03
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 360c434b9c841954c4672dd774037dac81d6c4d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835153"
 ---
 # <a name="annotating-function-behavior"></a>Zadávání poznámek k chování funkcí
 Kromě zadávání poznámek k [funkci parametry a návratové hodnoty](../code-quality/annotating-function-parameters-and-return-values.md), přidávat poznámky k vlastnosti celé funkce.

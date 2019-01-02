@@ -1,9 +1,6 @@
 ---
 title: Uvnitř základní Editor | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828521"
 ---
 # <a name="inside-the-core-editor"></a>V editoru core
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Core editor je sada několik komponent, které vám umožní změnit a dotazování textové informace. Pokud jste upravili základní editor pomocí starší verze rozhraní API, můžou dál používat tyto úpravy, které se budou směrovat přes adaptéry editoru. Doporučujeme však, že můžete přizpůsobit vlastní nastavení do nového editoru rozhraní API.  
@@ -47,7 +44,7 @@ ms.locfileid: "39500446"
  [Události vyrovnávací paměti textu ve starší verzi rozhraní API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Obsahuje seznam rozhraní, které se používají pro oznámení události vyrovnávací paměti textu.  
   
- [Postupy: registrace pro události vyrovnávací paměti textu se starší verze rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Postupy: Zaregistrujte se na události vyrovnávací paměti textu pomocí starší verze rozhraní API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Popisuje, jak dokáží události vyrovnávací paměti textu.  
   
  [Pomocí Správce text můžete sledovat globální nastavení](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -78,5 +75,5 @@ ms.locfileid: "39500446"
  [Postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md)  
  Obsahuje podrobné pokyny o tom, jak vytvořit text značky a jak přidat vlastní příkaz do místní nabídky.  
   
- [Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)  
+ [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)  
  Obsahuje podrobné pokyny o tom, jak vytvořit vlastní text značky a k poskytování typ značky jako služba.

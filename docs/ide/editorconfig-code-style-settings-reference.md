@@ -14,16 +14,15 @@ author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833854"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig nastavení konvence psaní kódu .NET
 
@@ -57,7 +56,7 @@ Pro každé pravidlo stylu kódu jazyka, musíte zadat buď **true** (preferovat
 
 Následující tabulka uvádí možné závažnost hodnoty a jejich důsledky:
 
-Závažnost | Efekt
+Severity | Efekt
 :------- | ------
 `none` | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu ale generování kódu v tomto stylu. Pravidla s `none` závažnost nikdy objeví v **rychlé akce a Refaktoringy** nabídky. Ve většině případů to považován za "zakázáno" nebo "ignoruje".
 `silent` (také `refactoring` v sadě Visual Studio 2017 verze 15.8) | Nezobrazovat nic uživateli při porušení tohoto pravidla. Funkce generování kódu ale generování kódu v tomto stylu. Pravidla s `silent` závažnost účastnit vyčištění stejně jako se zobrazí v **rychlé akce a Refaktoringy** nabídky.

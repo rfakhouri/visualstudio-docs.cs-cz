@@ -2,39 +2,38 @@
 title: Zápis testů jednotek pro knihovny DLL C++
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7de21715053a91b187ccdcc1b87f042cedd1b7de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832447"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Zápis testů jednotek pro knihovny DLL C++ v sadě Visual Studio
 
  Existuje několik způsobů, jak testovat kód knihovny DLL, v závislosti na tom, jestli exportuje funkce, které chcete testovat. Vyberte jednu z následujících způsobů:
 
- **Testování částí volání pouze funkce, které byly exportovány z knihovny DLL:** přidejte samostatný testovací projekt, jak je popsáno v [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md). V testovacím projektu přidejte odkaz na projekt knihovny DLL.
+ **Testy jednotek volat pouze funkce, které byly exportovány z knihovny DLL:** Přidejte samostatný testovací projekt, jak je popsáno v [zápis testů jednotek pro C/C++](writing-unit-tests-for-c-cpp.md). V testovacím projektu přidejte odkaz na projekt knihovny DLL.
 
  Pokračujte podle postupu [k odkazování z projektu knihovny DLL exportovaných funkcí](#projectRef).
 
- **Knihovna DLL je vytvořený jako soubor s příponou .exe:** přidejte samostatný testovací projekt. Propojte jej k výstupnímu objektovému souboru.
+ **Knihovna DLL je vytvořen jako soubor s příponou .exe:** Přidejte samostatný testovací projekt. Propojte jej k výstupnímu objektovému souboru.
 
  Pokračujte podle postupu [připojení testů k souborům objektů nebo knihoven](#objectRef).
 
- **Funkce bez členů volání testy jednotek, které nebudou exportovány z knihovny DLL a knihovny DLL může být sestaven jako statická knihovna:** změňte projekt knihovny DLL tak, aby byl kompilován do *lib* souboru. Přidejte samostatný testovací projekt, který odkazuje na projekt v rámci testu.
+ **Funkce bez členů volání testy jednotek, které nebudou exportovány z knihovny DLL a knihovny DLL může být sestaven jako statická knihovna:** Změnit projekt knihovny DLL tak, aby byl kompilován do *lib* souboru. Přidejte samostatný testovací projekt, který odkazuje na projekt v rámci testu.
 
  Tento přístup má výhodu povolení testy používat Neexportované členy, ale zachováním samostatnosti testovacího projektu.
 
  Pokračujte podle postupu [změnit na statickou knihovnu DLL](#staticLink).
 
- **Jednotkové testy musí volat funkce bez členů, které se nebudou exportovat, a kód musí být sestaven jako dynamická knihovna (DLL):** přidat testy jednotek ve stejném projektu s testovaným kódem.
+ **Jednotkové testy musí volat funkce bez členů, které se nebudou exportovat a kód musí být sestaven jako dynamická knihovna (DLL):** Přidáte testy jednotek ve stejném projektu s testovaným kódem.
 
  Pokračujte podle postupu [přidání jednotkových testů do stejného projektu](#sameProject).
 
@@ -160,4 +159,4 @@ ms.locfileid: "53056172"
 - [Ladění nativního kódu](../debugger/debugging-native-code.md)
 - [Návod: Vytvoření a použití dynamické knihovny (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Import a export](/cpp/build/importing-and-exporting)
-- [Rychlý start: testovací řízeného rozvoje pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Rychlý start: Testování vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)

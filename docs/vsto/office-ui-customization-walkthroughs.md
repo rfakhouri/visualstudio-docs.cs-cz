@@ -1,9 +1,6 @@
 ---
 title: Návody pro přizpůsobení uživatelského rozhraní Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93a945278d2565bb98706e9303bc662a78cd00ee
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826582"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Návody pro přizpůsobení uživatelského rozhraní Office
   Následující postupy ukazují, že se způsoby, které lze přizpůsobit uživatelské rozhraní (UI) aplikace Microsoft Office s použitím přizpůsobení na úrovni dokumentu a doplňky VSTO.  
   
 ## <a name="actions-pane-walkthroughs"></a>Návody pro podokna akcí  
- [Návod: Vložení textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Návod: Vkládání textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
  Ukazuje, jak vytvořit podokna akcí ve Wordovém dokumentu. V podokně Akce obsahuje dva ovládací prvky, které odesílají vstupu uživatele pro dokument.  
   
  [Návod: Vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
@@ -92,5 +89,3 @@ ms.locfileid: "35676068"
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)   
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

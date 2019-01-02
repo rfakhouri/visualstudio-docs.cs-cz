@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822155"
 ---
 # <a name="create-relationships-between-datasets"></a>Vytváření vztahů mezi tabulkami
 Datové sady, které obsahují data související tabulky použijte <xref:System.Data.DataRelation> objekty představují nadřazené a podřízené relace mezi tabulkami a vrácení souvisejících záznamů od sebe. Přidání souvisejících tabulek do datové sady s použitím **Průvodce konfigurací zdroje dat**, nebo **Návrhář Dataset**, vytvoří a nakonfiguruje <xref:System.Data.DataRelation> objekt za vás.
@@ -60,7 +59,7 @@ Pravidla, které můžete použít jsou určené v <xref:System.Data.Rule> výč
 |Pravidlo omezení pro cizí klíč|Akce|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|Také je provedena změna (update nebo delete) provedených na nadřazený záznam související záznamy v podřízené tabulce.|
-|<xref:System.Data.Rule.SetNull>|Podřízené záznamy se neodstraní, ale nastavení cizí klíče v podřízené záznamy <xref:System.DBNull>. S tímto nastavením může být ponecháno podřízené záznamy "osamocené položky" – to znamená, že nemají žádný vztah k nadřazené záznamy. **Poznámka:** pomocí tohoto pravidla může vést k neplatná data v podřízené tabulce.|
+|<xref:System.Data.Rule.SetNull>|Podřízené záznamy se neodstraní, ale nastavení cizí klíče v podřízené záznamy <xref:System.DBNull>. S tímto nastavením může být ponecháno podřízené záznamy "osamocené položky" – to znamená, že nemají žádný vztah k nadřazené záznamy. **Poznámka:** Pomocí tohoto pravidla může způsobit neplatná data v podřízené tabulce.|
 |<xref:System.Data.Rule.SetDefault>|Cizí klíče v související podřízené záznamy je nastavena na výchozí hodnotu (podle sloupce <xref:System.Data.DataColumn.DefaultValue%2A> vlastnost).|
 |<xref:System.Data.Rule.None>|Související podřízené záznamy se neprovedly žádné změny. S tímto nastavením může obsahovat podřízené záznamy odkazy na neplatný nadřazené záznamy.|
 
@@ -78,7 +77,7 @@ Relace mezi tabulkami dat zobrazovat jako řádky v **Návrhář Dataset**, s kl
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>K vytvoření vztahu mezi dvěma datovými tabulkami
 
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [návod: vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Přetáhněte **vztah** objektu z **datovou sadu** nástrojů do podřízené tabulky dat v relaci.
 
@@ -102,7 +101,7 @@ Relace mezi tabulkami dat zobrazovat jako řádky v **Návrhář Dataset**, s kl
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Chcete-li zobrazit název relace v návrháři datových sad
 
-1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [návod: vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2.  Z **Data** nabídku, vyberte **zobrazení popisků relací** příkazu můžete zobrazit název vztahu. Tento příkaz Skrýt název vztahu vymažte.
 

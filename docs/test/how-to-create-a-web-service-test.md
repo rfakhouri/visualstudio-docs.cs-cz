@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f63a1734c7df506c2bda0e51546b2ece04ebb00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833420"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Postupy: vytvoření testu webové služby
+# <a name="how-to-create-a-web-service-test"></a>Postupy: Vytvoření testu webové služby
 
 Test výkonnosti webu můžete použít k otestování webové služby. S použitím **vložit žádost o** a **vložit žádost webové služby** možnosti, můžete přizpůsobit jednotlivé požadavky v **editoru testu výkonnosti webu** najít web stránky služby. Tyto stránky obvykle nejsou zobrazení ve webové aplikaci. Pro přístup k těmto stránkám je tedy nutné přizpůsobit požadavek.
 

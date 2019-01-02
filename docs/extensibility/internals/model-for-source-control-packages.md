@@ -1,9 +1,6 @@
 ---
-title: Pro zdroj ovládacího prvku balíčky | Microsoft Docs
-ms.custom: ''
+title: Model pro balíčky správy zdrojového kódu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
@@ -13,29 +10,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0dcdd930412e4e53c59509848f0b7c1503c47b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 992fd9a6f45d607538f1091eb7a652984595cc34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954497"
 ---
-# <a name="model-for-source-control-packages"></a>Model pro balíčky zdroj ovládacího prvku
-Následující model představuje příklad implementace ovládacího prvku zdroje. V modelu uvidíte rozhraní, které je nutné implementovat a prostředí služby, které je třeba volat. Všechny služby, jako je ve skutečnosti volání metody určité rozhraní, které jste získali mimo službu. Aby bylo snazší zjistit, jak se provádí kontrola zdroje jsou identifikovány názvy tříd.  
+# <a name="model-for-source-control-packages"></a>Model pro balíčky správy zdrojového kódu
+Následující model představuje příklad implementace ovládacího prvku zdroje. V modelu uvidíte, které musí implementovat rozhraní a prostředí služby, které je nutné volat. Stejně jako všechny služby ve skutečnosti volat metody určité rozhraní, který získáte mimo jiné služby. Aby bylo snazší zjistit, jak se provádí správy zdrojového kódu se identifikují názvy tříd.  
   
  ![SCC&#95;TUP příklady](../../extensibility/internals/media/scc_tup.gif "SCC_TUP –")  
-Příklad zdroj řízení projektu  
+Příklad projektu ve správě zdrojového  
   
 ## <a name="interfaces"></a>Rozhraní  
- Správa zdrojového kódu můžete implementovat pro vaši nové typy projektů v sadě Visual Studio pomocí seznamu rozhraní, které jsou uvedené v následující tabulce.  
+ Správy zdrojového kódu můžete implementovat pro vaši nových typů projektů v sadě Visual Studio pomocí seznam rozhraní, které jsou uvedeny v následující tabulce.  
   
 |Rozhraní|Použití|  
 |---------------|---------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Voláno rozhraním projekty a editory před jejich uložení nebo změnu (dirty) soubory. Toto rozhraní je možné získat pomocí <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> služby.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Volá projekty tak, aby žádala o oprávnění k přidání, odebrání nebo přejmenujte soubor nebo adresář. Toto rozhraní je také označován projekty informovat, že prostředí při schválené přidat, odebrat nebo přejmenovat akce je dokončena. Je přístupný pomocí <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> služby.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Každá entita, která registruje oznámení o přidání projekty implementované, přejmenujte nebo odeberte soubor nebo adresář. Registrace pro oznámení o události, volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Voláno rozhraním projekty pro registraci s zdrojový balíček řízení a získat informace o řízení stav zdroje. Toto rozhraní je možné získat pomocí <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> služby.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementované projektu reagovat na požadavky řízení zdroje informace o souborech a získat zdroj nastavení řízení nezbytný pro soubor projektu.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Volá se, projekty a editory před jejich uložit nebo soubory změnu (změny). Toto rozhraní se přistupuje pomocí <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> služby.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Je voláno projekty můžete požádat o oprávnění, které chcete přidat, odebrat nebo přejmenovat soubor nebo adresář. Toto rozhraní se také nazývá projekty informovat, že je kompletní prostředí, když se schválené přidat, odebrat nebo přejmenovat akce. Přistupuje se k němu pomocí <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> služby.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Každá entita, která registruje upozornění, až projekty přidání, přejmenování nebo odstranění souboru nebo adresáře implementované. Chcete-li zaregistrovat pro oznámení události, zavolejte <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Je voláno projekty k registraci balíčku ovládací prvek zdroje a získat informace o stav správy zdrojových kódů. Toto rozhraní se přistupuje pomocí <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> služby.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementovaná tímto projektem reagovat na požadavky řízení zdrojové informace o souborech a získat zdroj nastavení nezbytný pro soubor projektu.|  
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

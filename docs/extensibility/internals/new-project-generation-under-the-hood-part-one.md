@@ -1,9 +1,6 @@
 ---
 title: 'Nová generace projektů: Pod pokličkou, část 1 | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907063"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827647"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod pokličkou, část první
+# <a name="new-project-generation-under-the-hood-part-one"></a>Nová generace projektů: Pod pokličkou část 1
 Někdy mluvit o tom, jak vytvořit vlastní typ projektu? Zajímat, co přesně se stane při vytvoření nového projektu? Pojďme provést náhled pod pokličkou a zjistěte, co se skutečně děje.  
   
  Následuje několik úloh, které můžete koordinuje sady Visual Studio:  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   Pořadí řazení lze změnit.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Pro typ projektu nalezení kořenového uzlu.  
- Když Visual Studio prochází ProjectTemplates složek, otevře všechny soubory ZIP a extrahuje soubory .vstemplate. Soubor .vstemplate používá XML pro popis šablony aplikace. Další informace najdete v tématu [nová generace projektů: pod pokličkou, část dvě](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Když Visual Studio prochází ProjectTemplates složek, otevře všechny soubory ZIP a extrahuje soubory .vstemplate. Soubor .vstemplate používá XML pro popis šablony aplikace. Další informace najdete v tématu [nová generace projektů: Pod pokličkou, část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  \<ProjectType > značky Určuje typ projektu pro aplikaci. Například soubor \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip obsahuje EmptyProject.vstemplate soubor, který má tuto značku:  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** se zobrazí jako podřízený uzel Visual C# jen v uzlu Windows.  
   
 ## <a name="see-also"></a>Viz také  
- [Nová generace projektů: Pod pokličkou, část druhá](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Nová generace projektů: Pod pokličkou část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

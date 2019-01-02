@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Sbalení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Sbalování | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827520"
 ---
-# <a name="walkthrough-outlining"></a>Návod: Sbalení
+# <a name="walkthrough-outlining"></a>Průvodce: Sbalování
 Nastavení funkce založené na jazyce jako třeba sbalování tak, že definujete druhy textu oblastí, které chcete rozbalit nebo sbalit. Můžete definovat oblastí v rámci služby jazyka, nebo definovat vlastní název souboru příponu a obsah zadejte a použít definici oblasti pouze tento typ nebo použít definice oblastí k existujícímu typu obsahu (jako je například "text"). Tento návod ukazuje, jak definovat a zobrazení sbalování oblastí.  
   
 ## <a name="prerequisites"></a>Požadavky  
@@ -135,4 +132,4 @@ Nastavení funkce založené na jazyce jako třeba sbalování tak, že definuje
 4.  Měla by existovat sbalování oblastí, obsahující oba závorky. Byste měli být schopni klepněte na znaménko Minus nalevo od levou závorku sbalte sbalování oblastí. Když sbalen oblast, na symbol tří teček (*...* ) by se měla zobrazit nalevo od sbaleného regionu a automaticky otevíraného okna obsahující text **najetí na text** by se měla zobrazit při přesunutí ukazatele myši na tři tečky.  
   
 ## <a name="see-also"></a>Viz také:  
- [Návod: Propojení typ obsahu, který má příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Typ obsahu propojit příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

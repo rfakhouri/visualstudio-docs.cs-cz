@@ -2,7 +2,6 @@
 title: 'CA1824: Označte sestavení pomocí atributu NeutralResourcesLanguageAttribute'
 ms.date: 03/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1824
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beaef23dd5b3047d1d65b90fdd984dfdedd7e145
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db780257c83c42f97500a83f1843332cae0ecea3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825173"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Označte sestavení pomocí atributu NeutralResourcesLanguageAttribute
 
@@ -34,39 +33,39 @@ ms.locfileid: "31916384"
 
 ## <a name="cause"></a>příčina
 
-Obsahuje sestavení **ResX**– na základě prostředků, ale nemá <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> použije na ni.
+Obsahuje sestavení **ResX**– na základě zdrojů, ale nemá <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> použit.
 
 ## <a name="rule-description"></a>Popis pravidla
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute> Atribut informuje správce prostředků aplikace výchozí jazykovou verzi. Pokud výchozí jazykovou verzi prostředky se vloží do hlavní sestavení aplikace, a <xref:System.Resources.ResourceManager> má získat prostředky, které patří do stejné jazykovou verzi jako výchozí jazykovou verzi <xref:System.Resources.ResourceManager> automaticky použije prostředků umístěných v hlavní sestavení Namísto hledání pro satelitní sestavení. To obchází testu obvyklým sestavení, zlepšuje výkon vyhledávání na první prostředek zatížení a může snížit pracovní sady.
+<xref:System.Resources.NeutralResourcesLanguageAttribute> Atribut informuje správce prostředků výchozí jazykové verze vaší aplikace. Pokud výchozí jazykové prostředky jsou vloženy do sestavení hlavní aplikace, a <xref:System.Resources.ResourceManager> má k načtení prostředků, které patří do stejné jazykovou verzi jako výchozí jazykovou verzi <xref:System.Resources.ResourceManager> automaticky používá prostředky umístěné v hlavním sestavení Namísto vyhledávání satelitního sestavení. Z toho půjde obchází obvykle sestavení testu, zlepšuje výkon vyhledávání při prvním získání prostředků můžete načíst a může zmenšit vaši pracovní sadu.
 
 > [!TIP]
-> V tématu [balení a nasazení prostředků](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) pro proces, <xref:System.Resources.ResourceManager> používá k testu pro soubory prostředků.
+> Zobrazit [balení a nasazení prostředků](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) pro proces, který <xref:System.Resources.ResourceManager> používá pro sběr dat pro soubory prostředků.
 
-## <a name="fix-violations"></a>Opravit porušení
+## <a name="fix-violations"></a>Vyřešit porušení
 
-Opravit porušení toto pravidlo, přidejte atribut do sestavení a zadat jazyk prostředků neutrální jazykové verze.
+Chcete-li opravit porušení tohoto pravidla, přidejte atribut sestavení a určit jazyk prostředků neutrální jazykovou verzi.
 
-### <a name="to-specify-the-neutral-language-for-resources"></a>Chcete-li určit neutrální jazyk pro prostředky
+### <a name="to-specify-the-neutral-language-for-resources"></a>Chcete-li určit neutrální jazyk prostředků
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak vyberte **vlastnosti**.
+1. V **Průzkumníka řešení**, klikněte pravým tlačítkem na projekt a pak vyberte **vlastnosti**.
 
-2. Vyberte **aplikace** a pak vyberte **informací o sestavení**.
+2. Vyberte **aplikace** kartu a potom vyberte **informace o sestavení**.
 
    > [!NOTE]
-   > Pokud projektu je .NET standardní nebo .NET Core projekt, vyberte **balíček** kartě.
+   > Pokud váš projekt je projekt .NET Core nebo .NET Standard, vyberte **balíčku** kartu.
 
-3. Vyberte jazyk z **neutrální jazyk** nebo **neutrální jazyk sestavení** rozevíracího seznamu.
+3. Vyberte jazyk ze **neutrální jazyk** nebo **neutrální jazyk sestavení** rozevíracího seznamu.
 
 4. Vyberte **OK**.
 
-## <a name="when-to-suppress-warnings"></a>Při potlačení upozornění
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
-Je přípustné upozornění toto pravidlo potlačit. Však může snížit výkon při spouštění.
+Je přípustné potlačit upozornění tohoto pravidla. Však může snížit výkon při spuštění.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
 - [Prostředky v aplikacích klasické pracovní plochy (.NET)](/dotnet/framework/resources/)
 - [CA1703 - řetězce prostředků by měly být zadány správně](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1701 - řetězec prostředku, který složených slov by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701 - řetězec prostředku, který složených slov by měla správně formátováno.](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

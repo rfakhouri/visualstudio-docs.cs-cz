@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829904"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Průvodce: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružení šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce můžete použít ke shromažďování informací od uživatelů při použití šablony k vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.  
   
- V tomto názorném postupu přidáte průvodce v šabloně projektu sloupce webu, který je znázorněn v [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Když uživatel vytvoří projektu sloupce webu, Průvodce shromažďuje informace o sloupci webu (jako je základním typem a skupiny) a přidá tyto informace *Elements.xml* souboru v novém projektu.  
+ V tomto názorném postupu přidáte průvodce v šabloně projektu sloupce webu, který je znázorněn v [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). Když uživatel vytvoří projektu sloupce webu, Průvodce shromažďuje informace o sloupci webu (jako je základním typem a skupiny) a přidá tyto informace *Elements.xml* souboru v novém projektu.  
   
  Tento návod demonstruje následující úkoly:  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942072"
 > Řadu ukázkový pracovní postupy, najdete v části [ukázky pracovního postupu služby SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Požadavky  
- Chcete-li provést Tento názorný postup, musíte nejdřív vytvořit řešení SiteColumnProjectItem provedením [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+ Chcete-li provést Tento názorný postup, musíte nejdřív vytvořit řešení SiteColumnProjectItem provedením [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
  Budete potřebovat následující komponenty na vývojovém počítači k dokončení tohoto návodu:  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942072"
   
   Znalost následujících konceptů je užitečná, ale není požadována k dokončení návodu:  
   
-- Průvodce pro šablony projektů a položek v sadě Visual Studio. Další informace najdete v tématu [postupy: použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md) a <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
+- Průvodce pro šablony projektů a položek v sadě Visual Studio. Další informace najdete v tématu [jak: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md) a <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní.  
   
 - Sloupce webu ve službě SharePoint. Další informace najdete v tématu [sloupce](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942072"
 |SharePoint – příkazy|Toto jsou metody, které jsou používány Průvodce datovým modelem provést volání do místního webu služby SharePoint, je-li spuštěn průvodce. Protože příkazy Sharepointu musí cílit na rozhraní .NET Framework 3.5, tyto příkazy jsou implementovány v jiném sestavení než zbytek kódu průvodce.|  
   
 ## <a name="create-the-projects"></a>Vytváření projektů
- K dokončení tohoto návodu, budete muset přidat různé projekty do řešení SiteColumnProjectItem, které jste vytvořili v [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ K dokončení tohoto návodu, budete muset přidat různé projekty do řešení SiteColumnProjectItem, které jste vytvořili v [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - Projekt WPF. Budete implementovat <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní a definovat Průvodce uživatelského rozhraní v tomto projektu.  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942072"
   
 3.  Ujistěte se, že Cílová architektura, která je nastavena na rozhraní .NET Framework 4.5, není rozhraní .NET Framework 4.5 Client Profile.  
   
-     Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Otevřete místní nabídku **ProjectTemplateWizard** projektu, zvolte **přidat**a klikněte na tlačítko **nová položka**.  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942072"
   
 13. Pokud vytváříte projekt jazyka Visual Basic, importujte obor názvů ProjectTemplateWizard do svého projektu pomocí **Návrháře projektu**.  
   
-     Další informace najdete v tématu [postupy: Přidání nebo odebrání importovaných oborů názvů &#40;jazyka Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Další informace najdete v tématu [jak: Přidání nebo odebrání importovaných oborů názvů &#40;jazyka Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Ke konfiguraci projektu SharePointcommands
   
@@ -315,7 +312,7 @@ ms.locfileid: "49942072"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]  
   
-## <a name="checkpoint"></a>Kontrolní bod  
+## <a name="checkpoint"></a>CheckPoint  
  V tomto okamžiku návodu je celý kód pro průvodce v projektu. Sestavte projekt, abyste měli jistotu, že se zkompiluje bez chyb.  
   
 #### <a name="to-build-your-project"></a>K sestavení projektu  
@@ -323,7 +320,7 @@ ms.locfileid: "49942072"
 1.  V panelu nabídky zvolte **sestavení** > **sestavit řešení**.  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>Odstraňuje se soubor klíč.snk ze šablony projektu
- V [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), šablony projektu, který jste vytvořili obsahuje klíč.snk soubor, který se používá k podepsání každou instanci projektu sloupce webu. Tento soubor klíč.snk již není nezbytné, protože nyní vygeneruje nový soubor klíč.snk u každého projektu průvodce. Odebrat soubor klíč.snk ze šablony projektu a odeberte odkazy na tento soubor.  
+ V [názorný postup: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), šablony projektu, který jste vytvořili obsahuje klíč.snk soubor, který se používá k podepsání každou instanci projektu sloupce webu. Tento soubor klíč.snk již není nezbytné, protože nyní vygeneruje nový soubor klíč.snk u každého projektu průvodce. Odebrat soubor klíč.snk ze šablony projektu a odeberte odkazy na tento soubor.  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>Odebrání souboru klíč.snk ze šablony projektu  
   
@@ -547,4 +544,3 @@ ms.locfileid: "49942072"
  [Vytváření šablon položek a projektů pro položky projektu služby SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Odkaz na schéma šablon sady Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Postupy: Použití průvodců se šablonami projektů](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  

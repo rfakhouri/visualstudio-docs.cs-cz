@@ -1,9 +1,6 @@
 ---
 title: Zveřejnění seznamů symbolů poskytuje správci objektů | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154ab307a77925bb2862a07310d2b044654bfdb0
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827439"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: vystavení seznamů symbolů poskytovaných knihovnou správci objektů
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Postupy: Zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů
 Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů**, **volání prohlížeče** a **výsledky hledáni symbolu**, předat požadavky na nová data [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object Manageru. Správci objektů najde odpovídající knihovny a vyžaduje nový seznam symbolů. Knihovny reakce díky na požadovaná data [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object Manageru prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Object Manageru volá metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> rozhraní na získání dat a použije ho k naplnění nebo aktualizovat zobrazení nástroje procházení symbolů.  
   
  Knihovny může zobrazit žádostí o data, když je vyvolán nástroj, rozbalení uzlu nebo zobrazení. Při prvním vyvolání nástroje procházení symbolů, požádá o objekt Správce knihovny k poskytování seznamu nejvyšší úrovně. Když je uživatel rozbalí seznam uzlů, knihovna poskytuje seznam podřízené položky v tomto uzlu. Každý objekt správce dotaz obsahuje index položky, které vás zajímají. Zobrazíte nový seznam musí správce objekt zjistit, kolik položek jsou v seznamu Typ položky, jejich názvy, usnadnění přístupu a jiné vlastnosti.  
@@ -470,6 +467,6 @@ Nástroje procházení symbolů **zobrazení tříd**, **prohlížeče objektů*
   
 ## <a name="see-also"></a>Viz také:  
  [Podpůrné nástroje procházení symbolů](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Postupy: registrace knihovny pomocí Správce objektů](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Postupy: identifikace symbolů v knihovně](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [Postupy: Registrace knihovny pomocí Správce objektů](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Postupy: Identifikace symbolů v knihovně](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [Rozšíření služeb starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md)

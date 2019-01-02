@@ -2,7 +2,6 @@
 title: Analýza odezvy uživatelského rozhraní HTML v aplikacích pro UWP | Dokumentace Microsoftu
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843525"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkon, který je k dispozici pro univerzální aplikace pro Windows.  
@@ -69,7 +68,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
 6.  Chcete-li zastavit profilování aplikace a zobrazení data, která shromažďují profiler, zvolte **zastavit shromažďování**.  
   
 ## <a name="isolate-an-issue"></a>Izolovat problém  
- V následujících částech najdete návrhy můžete izolovat problémy s výkonem. Podrobné vysvětlení toho, jak identifikovat a opravit problémy s výkonem pomocí ukázkové aplikace pro testování výkonu najdete v tématu [názorný postup: odezvy zlepšení uživatelského rozhraní (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ V následujících částech najdete návrhy můžete izolovat problémy s výkonem. Podrobné vysvětlení toho, jak identifikovat a opravit problémy s výkonem pomocí ukázkové aplikace pro testování výkonu najdete v tématu [názorný postup: Zlepšení rychlosti odezvy uživatelského rozhraní (HTML)](/visualstudio/profiling/html-ui-responsiveness).  
   
 ###  <a name="Workflow"></a> Izolovat problém rychlosti odezvy uživatelského rozhraní  
  Tyto kroky obsahují navrhované pracovního postupu, které můžou pomoct efektivněji využívat Profiler odezvy uživatelského rozhraní:  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   Událost navigace, která nastane, pokud přejdete na jinou stránku. Popisek pro událost ukazuje na cílovou adresu URL stránky.  
   
 ###  <a name="CPUUtilization"></a> Zobrazení procesoru využití  
- Graf využití procesoru umožňuje určit dobu, ve kterém se aktivity nadměrnému využití procesoru. Poskytuje informace o průměr spotřeby procesoru aplikaci po určitou dobu. Informace, které jsou rozlišené představují následující konkrétní kategorie: **načítání**, **skriptování**, uvolňování paměti (**GC**), **stylu**, **Vykreslování**, a **dekódování obrázku**. Další informace o těchto kategorií naleznete v tématu [události odkaz na Profiler](#profiler-event-reference) dále v tomto tématu.  
+ Graf využití procesoru umožňuje určit dobu, ve kterém se aktivity nadměrnému využití procesoru. Poskytuje informace o průměr spotřeby procesoru aplikaci po určitou dobu. Informace, jsou rozlišené představují následující konkrétní kategorie: **Načítání**, **skriptování**, uvolňování paměti (**GC**), **stylování**, **vykreslování**, a **bitové kopie dekódování**. Další informace o těchto kategorií naleznete v tématu [události odkaz na Profiler](#profiler-event-reference) dále v tomto tématu.  
   
  Graf využití procesoru ukazuje množství čas strávený na všech vláknech aplikace kombinování hodnoty využití procesoru pro jeden nebo více procesorů do jednoho procentuální hodnotu. Hodnota využití procesoru může překročit 100 % jeho obsahu, když se používá více než jeden procesor.  
   
@@ -343,8 +342,8 @@ if (performance.mark && performance.measure) {
 |Uvolnění paměti|Uvolňování paměti|Byl stráven čas shromažďování paměti pro objekty, které již byly použity.|  
 |Výpočet šablon stylů CSS|Práce se styly|Byly provedeny změny v modelu DOM, který vyžaduje všech ovlivněných elementů proto bylo nutné přepočítat vlastnosti stylu.|  
 |Rozložení|Práce se styly|Byly provedeny změny v modelu DOM, které vyžadovaly velikost nebo pozice všech ovlivněných elementů proto bylo nutné přepočítat.|  
-|Malování|vykreslování|V modelu DOM byly provedeny vizuální změny a byl proveden pokus o opětovné vykreslování části stránky.|  
-|Vykreslit vrstvu|vykreslování|Byly provedeny vizuální změny nezávisle vykreslovaného fragmentu modelu DOM (označovaného jako vrstva) a změny potřebné část stránky k vykreslení.|  
+|Malování|Vykreslování|V modelu DOM byly provedeny vizuální změny a byl proveden pokus o opětovné vykreslování části stránky.|  
+|Vykreslit vrstvu|Vykreslování|Byly provedeny vizuální změny nezávisle vykreslovaného fragmentu modelu DOM (označovaného jako vrstva) a změny potřebné část stránky k vykreslení.|  
 |Dekódování obrázku|Dekódování obrázku|Image byla zahrnuta v modelu DOM a byl proveden pokus o pro dekompresi a dekódování obrázku z původního formátu na rastrový obrázek.|  
 |Rámec|Není k dispozici|Byly provedeny vizuální změny v modelu DOM, který stránky, které vyžadovaly překreslení všech ovlivněných částí. Toto je nástroj vygeneruje událost pro seskupení.|  
 |Uživatelské míry|Není k dispozici|Scénáři specifické pro aplikaci byl měřen pomocí metody `performance.measure` metody. Toto je událost vygenerována nástroj použít pro analýzu kódu.|  

@@ -1,8 +1,6 @@
 ---
 title: Vytvoření vlastních dat vizualizéry | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 99228f525ae85743834c75aa69bf64609d0b5ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834149"
 ---
 # <a name="create-custom-data-visualizers"></a>Vytvoření vlastních dat vizualizéry 
  A *vizualizéru* je součástí [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] uživatelské rozhraní ladicího programu, který se zobrazí proměnné nebo objektu způsobem odpovídajícím k jeho datovému typu. Například HTML vizualizér interpretuje řetězec ve formátu HTML a výsledek zobrazí, jak se bude zobrazovat v okně prohlížeče. Rastrový obrázek vizualizéru interpretuje struktura rastrový obrázek a zobrazí obrázek, který představuje. Některé vizualizéry umožňují měnit také zobrazit data.
@@ -60,7 +58,7 @@ Můžete napsat vizualizéru pro obecný typ pouze v případě, že typ je otev
   
 Důležité informace o zabezpečení může mít vlastní vizualizéry. Zobrazit [hlediska zabezpečení vizualizéru](../debugger/visualizer-security-considerations.md).  
   
-Následující kroky poskytnout základní přehled o vytváření vizualizér. Podrobné pokyny najdete v tématu [návod: zápis vizualizéru v C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) nebo [návod: zápis vizualizéru v jazyce Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
+Následující kroky poskytnout základní přehled o vytváření vizualizér. Podrobné pokyny najdete v tématu [názorný postup: Zápis vizualizéru v C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md) nebo [názorný postup: Zápis vizualizéru v jazyce Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Chcete-li vytvořit vedlejší ladicího programu  
   
@@ -84,7 +82,7 @@ Zadejte kód na straně laděného procesu pomocí <xref:System.Diagnostics.Debu
   
 ## <a name="see-also"></a>Viz také:
   
- [Návod: Zápis vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Návod: Zápis vizualizéru vC#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
  [Návod: Zápis vizualizéru v jazyce Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   

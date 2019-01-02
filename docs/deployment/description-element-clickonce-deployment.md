@@ -1,8 +1,6 @@
 ---
 title: '&lt;Popis&gt; – Element (nasazení ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d0ad2399cf43b8e86bd45e9c33dd421eeb55416f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828810"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;Popis&gt; – element (nasazení ClickOnce)
 Určuje informace o aplikaci použít k vytvoření prostředí prezentace a **přidat nebo odebrat programy** v Ovládacích panelech.  
@@ -32,8 +30,8 @@ Určuje informace o aplikaci použít k vytvoření prostředí prezentace a **p
   
 ```xml  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  
@@ -45,8 +43,8 @@ Určuje informace o aplikaci použít k vytvoření prostředí prezentace a **p
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`publisher`|Požadováno. Určuje název společnosti použít pro umístění ikony v Windows **Start** nabídky a **přidat nebo odebrat programy** v Ovládacích panelech, když je nasazení nakonfigurováno pro instalaci.|  
-|`product`|Požadováno. Určuje úplný název produktu. Použít jako název ikona nainstalované v Windows **Start** nabídky.|  
+|`publisher`|Povinný parametr. Určuje název společnosti použít pro umístění ikony v Windows **Start** nabídky a **přidat nebo odebrat programy** v Ovládacích panelech, když je nasazení nakonfigurováno pro instalaci.|  
+|`product`|Povinný parametr. Určuje úplný název produktu. Použít jako název ikona nainstalované v Windows **Start** nabídky.|  
 |`suiteName`|Volitelné. Identifikuje podsložku v rámci `publisher` složky v Windows **Start** nabídky.|  
 |`supportUrl`|Volitelné. Určuje adresu URL podpory, který je zobrazen v **přidat nebo odebrat programy** v Ovládacích panelech. Je také vytvořen zástupce na tuto adresu URL pro podporu aplikace v Windows **Start** nabídky, pokud je nasazení nakonfigurováno pro instalaci.|  
   

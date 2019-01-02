@@ -3,19 +3,18 @@ title: Soubor vnoření pravidla pro Průzkumníka řešení
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831151"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Přizpůsobení vnořování souborů v Průzkumníku řešení
 
@@ -30,7 +29,7 @@ Vnoření sady souvisejících souborů v **Průzkumníka řešení** není nov�
 
 Dostupné možnosti pro vnořování souborů neupravené jsou:
 
-* **Vypnout**: Tato možnost vám poskytne plochý seznam souborů bez jakékoli vnoření.
+* **Vypnout**: Tato možnost poskytuje seznam bez stromové struktury souborů bez jakékoli vnoření.
 
 * **Výchozí**: Tato možnost vám poskytne výchozí soubor vnoření chování v **Průzkumníka řešení**. Pokud neexistuje žádná nastavení pro daný projekt typu, jsou vnořené žádné soubory v projektu. Pokud nastavení existuje, například pro webový projekt, použije se vnoření.
 
@@ -50,17 +49,17 @@ Doporučujeme použít **webové** nastavení jako vaše počáteční bod vzhle
 
 Zaměřme se na uzlu **dependentFileProviders** a jeho podřízených uzlů. Každý podřízený uzel je typ pravidla, pomocí sady Visual Studio můžete vnořit soubory. Například **mají stejný název souboru, ale s jinou příponou** je jeden typ pravidla. Dostupná pravidla jsou:
 
-* **extensionToExtension**: pomocí tohoto typu pravidla můžete vnořit *file.js* pod *file.ts*
+* **extensionToExtension**: Pomocí tohoto typu pravidla můžete vnořit *file.js* pod *file.ts*
 
-* **fileSuffixToExtension**: pomocí tohoto typu pravidla můžete vnořit *souboru vsdoc.js* pod *file.js*
+* **fileSuffixToExtension**: Pomocí tohoto typu pravidla můžete vnořit *souboru vsdoc.js* pod *file.js*
 
-* **addedExtension**: pomocí tohoto typu pravidla můžete vnořit *file.html.css* pod *file.html*
+* **addedExtension**: Pomocí tohoto typu pravidla můžete vnořit *file.html.css* pod *file.html*
 
-* **pathSegment**: pomocí tohoto typu pravidla můžete vnořit *jquery.min.js* pod *jquery.js*
+* **pathSegment**: Pomocí tohoto typu pravidla můžete vnořit *jquery.min.js* pod *jquery.js*
 
-* **allExtensions**: pomocí tohoto typu pravidla můžete vnořit *souboru.* * v části *file.js*
+* **allExtensions**: Pomocí tohoto typu pravidla můžete vnořit *souboru.* * v části *file.js*
 
-* **fileToFile**: pomocí tohoto typu pravidla můžete vnořit *bower.json* pod *.bowerrc*
+* **fileToFile**: Pomocí tohoto typu pravidla můžete vnořit *bower.json* pod *.bowerrc*
 
 ### <a name="the-extensiontoextension-provider"></a>Poskytovatel extensionToExtension
 

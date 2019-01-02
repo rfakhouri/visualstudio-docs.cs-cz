@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Excel'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831885"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Průvodce: Vytvoření vašeho prvního doplňku VSTO pro Excel
   Tento úvodní návod ukazuje, jak vytvořit doplňkem úrovni aplikace pro Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní, bez ohledu na to, které jsou otevřené sešity aplikace.  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
@@ -65,7 +62,7 @@ ms.locfileid: "49949900"
   
 6.  V **název** zadejte **FirstExcelAddIn**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstExcelAddIn** projekt a otevře soubor kódu ThisAddIn v editoru.  
   
@@ -121,17 +118,17 @@ ms.locfileid: "49949900"
 ## <a name="next-steps"></a>Další kroky  
  Teď, když jste vytvořili základní doplňku VSTO pro Excel, můžete další informace o tom, jak vývoj doplňků VSTO z těchto témat:  
   
--   Obecné programování úkolů, které můžete provádět v doplňcích VSTO: [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
+-   Obecné programování úkolů, které můžete provádět v doplňcích VSTO: [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
   
--   Úkoly programování, které jsou specifické pro doplňky VSTO pro Excel: [řešení pro Excel](../vsto/excel-solutions.md).  
+-   Programování úkolů, které jsou specifické pro doplňky VSTO pro Excel: [Řešení pro Excel](../vsto/excel-solutions.md).  
   
--   Použití objektového modelu aplikace Excel: [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
+-   Použití objektového modelu Excelu: [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
   
--   Přizpůsobení uživatelského rozhraní (UI) aplikace Excel, například podle přidat vlastní kartu na pás karet nebo vytváření vlastních vlastního podokna úloh: [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
+-   Přizpůsobení uživatelského rozhraní (UI) aplikace Excel, například přidáte vlastní kartu na pás karet nebo vytvořením vlastní vlastního podokna úloh: [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md).  
   
--   Sestavování a ladění doplňků VSTO pro Excel: [řešení pro systém Office sestavení](../vsto/building-office-solutions.md).  
+-   Sestavování a ladění doplňků VSTO pro Excel: [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
   
--   Nasazení doplňků VSTO pro Excel: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
+-   Nasazení doplňků VSTO pro Excel: [Nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
@@ -142,5 +139,3 @@ ms.locfileid: "49949900"
  [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Přehled šablon projektů Office](../vsto/office-project-templates-overview.md)  
-  
-  

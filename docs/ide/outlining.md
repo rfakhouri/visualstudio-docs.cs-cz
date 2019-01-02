@@ -2,7 +2,6 @@
 title: Rozbalení a sbalení oblasti kódu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ee657cdf0c7046021a3589378926b086caf504ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832882"
 ---
 # <a name="outlining"></a>Sbalování
 
@@ -53,7 +52,7 @@ Následující příkazy můžete najít na **upravit** > **Osnova** podnabídka
 |Sbalit blok:\<logické hraniční >|(Visual C++) Sbalí oblast ve funkci obsahující kurzor. Například pokud se kurzor nachází uvnitř smyčky, smyčky je skrytá.|
 |Sbalit vše do: \<logické struktury >|(Visual C++) Sbalí všechny struktury uvnitř funkce.|
 
-Visual Studio SDK můžete použít také k definování oblastí textu, které chcete rozbalit nebo sbalit. Zobrazit [návod: sbalení](../extensibility/walkthrough-outlining.md).
+Visual Studio SDK můžete použít také k definování oblastí textu, které chcete rozbalit nebo sbalit. Zobrazit [názorný postup: Sbalování](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Viz také:
 

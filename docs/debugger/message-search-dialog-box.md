@@ -1,8 +1,6 @@
 ---
-title: Dialogové okno hledání zpráv | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno hledání zpráv | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
@@ -12,26 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c125e2659e586d728a18293b9811a4e69743558
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3c1313820ff946499757f8a4240a49d93081e9e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853512"
 ---
 # <a name="message-search-dialog-box"></a>Dialogové okno hledání zpráv
-Pomocí tohoto dialogového okna můžete najít a vyberte uzel pro konkrétní zprávu v [zobrazení zpráv](../debugger/messages-view.md). K zobrazení tohoto dialogového okna, přesunete fokus na okno zobrazení zprávy. Zvolte **najít zprávu** z **vyhledávání** nabídky.  
+Pomocí tohoto dialogového najděte a vyberte uzel pro konkrétní zprávu v [zobrazení zpráv](../debugger/messages-view.md). Chcete-li zobrazit toto dialogové okno, přesunutí výběru na okno pro zobrazení zprávy. Klikněte na tlačítko **najít zprávu** z **hledání** nabídky.  
   
  K dispozici jsou následující nastavení:  
   
- **Nástroj pro vyhledávání**  
- Přetažení nástroj používaný k vyberte časové období.  
+ **Tažením nástroje hledání**  
+ Přetažení nástroj použitý k vyberte časové období.  
   
- **Skrýt nástroje Spy ++**  
- Odebere hlavní okno nástroje Spy ++ a zůstane **MessageSearch** dialogové okno zobrazené na jiné aplikace.  
+ **Skrýt Spy ++**  
+ Odebere hlavního okna nástroje Spy ++ a zůstane **MessageSearch** dialogové okno viditelné nad vaší aplikace.  
   
  **Popisovač**  
- Jedinečné ID zprávy pro vyhledávání.  
+ Jedinečné ID zprávy, které chcete vyhledat.  
   
  **Typ**  
  Typ zprávy, které chcete vyhledat.  
@@ -39,30 +37,30 @@ Pomocí tohoto dialogového okna můžete najít a vyberte uzel pro konkrétní 
  **Zpráva**  
  ID zprávy, které chcete vyhledat.  
   
- **Hledání směrem nahoru nebo dolů**  
+ **Směr hledání navýšení nebo snížení kapacity**  
  Počáteční směr hledání.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Hledání zprávy v zobrazení zpráv](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Vysvětluje, jak vyhledat konkrétní zprávu v zobrazení zpráv.  
+ Vysvětluje, jak najít konkrétní zprávu v zobrazení zpráv.  
   
  [Otevření zobrazení zpráv z vyhledávacího okna](../debugger/how-to-open-messages-view-from-find-window.md)  
- Vysvětluje, jak k otevření zobrazení zpráv z dialogového okna Najít.  
+ Vysvětluje, jak otevření zobrazení zpráv z dialogového okna Najít okno.  
   
  [Zobrazení zpráv](../debugger/messages-view.md)  
- Zobrazí datový proud zpráv, které jsou přidružené k okno, proces nebo přístup z více vláken.  
+ Zobrazí datový proud zpráv, které jsou přidružené k okno, proces nebo vlákno.  
   
  [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
- Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
+ Vysvětluje, zobrazení stromu nástroje Spy ++ windows, zpráv, procesy a vlákna.  
   
  [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
- Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
+ Seznámíte se nástroje Spy ++, jak je možné.  
   
  [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
  Slouží k výběru zprávy, které jsou uvedené v zobrazení zpráv.  
   
  [Dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md)  
- Slouží k zobrazení vlastností zprávu vybranou ve zobrazení zpráv.  
+ Slouží k zobrazení vlastnosti zprávy vybrána v zobrazení zpráv.  
   
  [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
- Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.
+ Obsahuje části s popisem každé nástroje Spy ++ nabídky a dialogové okno pole.

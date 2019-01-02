@@ -2,23 +2,22 @@
 title: Vytváření šablon položek
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952258"
 ---
-# <a name="how-to-create-item-templates"></a>Postupy: Tvorba šablon položek
+# <a name="how-to-create-item-templates"></a>Postupy: Vytváření šablon položek
 
-V tomto článku se dozvíte, jak vytvořit šablonu položky pomocí **Průvodce exportem šablony**. Pokud šablony se skládají z více souborů, přečtěte si téma [postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md).
+V tomto článku se dozvíte, jak vytvořit šablonu položky pomocí **Průvodce exportem šablony**. Pokud šablony se skládají z více souborů, přečtěte si téma [jak: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Přidat šablonu položky uživatele do dialogového okna Přidat novou položku
 
@@ -26,7 +25,7 @@ V tomto článku se dozvíte, jak vytvořit šablonu položky pomocí **Průvodc
 
 1. Přidání položky do projektu a změňte ji, pokud chcete.
 
-1. Upravte soubor kódu k označení, kde by měla probíhat náhrada parametru. Další informace najdete v tématu [postupy: nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Upravte soubor kódu k označení, kde by měla probíhat náhrada parametru. Další informace najdete v tématu [jak: Nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. Na **projektu** nabídce zvolte **exportovat šablonu**.
 
@@ -113,7 +112,7 @@ V některých případech můžete chtít vytvořit šablonu položky ručně, o
 
 1. Upravte položku projektu, dokud nebude připravený uložit jako šablonu.
 
-1. Upravte soubor kódu k označení, kde nahrazení parametru by měl nastat, pokud kdekoli. Další informace o nahrazení parametru najdete v tématu [postupy: nahrazení parametrů v šabloně.](../ide/how-to-substitute-parameters-in-a-template.md)
+1. Upravte soubor kódu k označení, kde nahrazení parametru by měl nastat, pokud kdekoli. Další informace o nahrazení parametru najdete v tématu [jak: Nahrazení parametrů v šabloně.](../ide/how-to-substitute-parameters-in-a-template.md)
 
 1. Vytvořte soubor XML a uložit ji *.vstemplate* příponu souboru ve stejném adresáři jako soubor položky projektu.
 
@@ -123,10 +122,10 @@ V některých případech můžete chtít vytvořit šablonu položky ručně, o
 
 1. V **Windows Explorer**, vyberte soubory, které chcete zahrnout do šablony. Klikněte pravým tlačítkem na výběr a zvolte **odeslat** > **komprimovanou složku (ZIP)**. Do jsou komprimované soubory, které jste vybrali *ZIP* souboru.
 
-1. Kopírovat *ZIP* soubor a vložte ho do umístění šablon položek uživatele. V sadě Visual Studio 2017, je výchozí adresář *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Další informace najdete v tématu [postupy: hledání a organizace šablon projektů a položek](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopírovat *ZIP* soubor a vložte ho do umístění šablon položek uživatele. V sadě Visual Studio 2017, je výchozí adresář *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Další informace najdete v tématu [jak: Hledání a organizace šablon projektů a položek](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
-- [Postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)
+- [Postupy: Tvorba šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)
 - [Visual Studio odkaz na schéma šablon (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md)

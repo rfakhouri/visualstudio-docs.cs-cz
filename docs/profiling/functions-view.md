@@ -1,8 +1,6 @@
 ---
-title: Zobrazení funkcí | Microsoft Docs
-ms.custom: ''
+title: Zobrazení funkcí | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functions
@@ -17,21 +15,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 935b7aa55633167b6f9630b8046e29f9bc8eba91
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 1c2b86a1822c7ec25170ce168af9864c6df740f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35238079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833339"
 ---
 # <a name="functions-view"></a>Zobrazení funkcí
-Zobrazení funkcí jsou uvedené funkce, které se nazývají při vytváření profilu.  
+Zobrazení funkcí jsou uvedeny funkce, které jsou volány během profilování.  
   
- Ve výchozím nastavení jsou funkce uvedené podle názvu. Chcete-li zobrazit funkce modulu, klikněte pravým tlačítkem myši v okně zobrazení funkcí a pak vyberte **modul zobrazení**. Tato akce zobrazí modul zobrazení.  
+ Ve výchozím nastavení jsou uvedené funkce podle názvu. Chcete-li zobrazit funkce v modulu, klikněte pravým tlačítkem na zobrazení funkcí okna a pak vyberte **zobrazit v zobrazení modulu**. Zobrazí se modul zobrazení.  
   
- Chcete-li přidat nebo odebrat sloupce, v okně sestavy klikněte pravým tlačítkem a pak vyberte **přidat nebo odebrat sloupce**. Kromě toho můžete řadit data kliknutím na název sloupce. Další informace najdete v tématu [postupy: přizpůsobení zobrazení sestav sloupce](../profiling/how-to-customize-report-view-columns.md).  
+ Přidejte nebo odeberte sloupce, klikněte pravým tlačítkem v okně sestavy a pak vyberte **Přidat/odebrat sloupce**. Kromě toho můžete seřadit data kliknutím na název sloupce. Další informace najdete v tématu [jak: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md).  
   
- Sloupce, které jsou k dispozici v zobrazení funkce závisí na profilování metody (vzorkování nebo instrumentace), která se používá ke shromažďování dat a jestli dat paměti .NET nebyla shromážděna v profilaci spustit.  
+ Sloupce, které jsou k dispozici v zobrazení funkcí závisí na metodě profilování (vzorkování nebo instrumentace), která byla použita pro sběr dat a zda shromáždění dat paměti .NET v profilaci spouštět.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení funkcí](../profiling/functions-view-sampling-data.md)   

@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Názorný postup základy Django v rámci projektů sady Visual Studio, konkrétně představením toho, jak doručování statických souborů, přidání stránky do aplikace a používat šablonu dědičnosti
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5c53001d31e6ef4ee32aaef2093e04be6fcaac29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829586"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů, přidejte stránky a použijte šablonu dědičnosti
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Krok 3: Doručování statických souborů a přidejte stránky, použijte šablonu dědičnosti
 
-**Předchozí krok: [vytvoření aplikace Django s zobrazení a stránky šablony](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Předchozí krok: [Vytvoření aplikace Django s zobrazení a šablony](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 V předchozích krocích v tomto kurzu jste zjistili, jak vytvoření minimální aplikace Django s jednostránkové samostatná HTML. Moderních webových aplikací, ale jsou obvykle skládá z mnoha stránkách a používání sdílených prostředků, jako jsou soubory CSS a JavaScript, k poskytování konzistentního stylů a chování.
 
@@ -46,9 +45,9 @@ Použití šablony, vyberte požadovanou šablonu, zadejte název pro soubor a v
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Otázka: Jak Visual Studio vědět, které položky šablony, které nabízí?
 
-Odpověď: Souboru projektu Visual Studio (*.pyproj*) obsahuje identifikátor typ projektu, který označuje jako projekt Python. Visual Studio používá tento identifikátor typu k zobrazení pouze tyto šablony položek, které jsou vhodné pro typ projektu. Tímto způsobem, Visual Studio může poskytovat bohatou sadu šablon položek, pro mnoho typů projektů bez zobrazení výzvy k řazení projde pokaždé, když.
+Odpověď: Soubor projektu sady Visual Studio (*.pyproj*) obsahuje identifikátor typ projektu, který označuje jako projekt Python. Visual Studio používá tento identifikátor typu k zobrazení pouze tyto šablony položek, které jsou vhodné pro typ projektu. Tímto způsobem, Visual Studio může poskytovat bohatou sadu šablon položek, pro mnoho typů projektů bez zobrazení výzvy k řazení projde pokaždé, když.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3 – 2: doručování statických souborů z vaší aplikace
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Krok 3 – 2: Doručování statických souborů z vaší aplikace
 
 Ve webové aplikaci vytvořené s využitím Pythonu (pomocí libovolné architektury) soubory Pythonu vždy spustit na serveru webového hostitele a se nikdy nepřenáší na počítači uživatele. Další soubory, ale například šablony stylů CSS a JavaScript používá jediná prohlížeče, tak server hostitele jednoduše poskytnout, je jako – je vždy, když jste žádali. Tyto soubory jsou označovány jako "statických" soubory a Django může doručit automaticky aniž byste museli psát jakýkoli kód.
 
@@ -99,9 +98,9 @@ Můžete uspořádat soubory pomocí libovolné struktury složek v rámci *stat
 
 ### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>Otázka: Co je účelem {% zatížení, které staticfiles %} značku?
 
-Odpověď: `{% load staticfiles %}` řádku je vyžadována před odkazující na statické soubory v elementech jako `<head>` a `<body>`. V příkladu v této části "staticfiles" odkazuje na vlastní Django šablony značky sadu, což je, co vám umožňuje používat `{% static %}` syntaxe pro odkazování na statické soubory.  Bez `{% load staticfiles %}`, zobrazí se vám výjimku při spuštění aplikace.
+Odpověď: `{% load staticfiles %}` Řádku je vyžadována před odkazující na statické soubory v elementech jako `<head>` a `<body>`. V příkladu v této části "staticfiles" odkazuje na vlastní Django šablony značky sadu, což je, co vám umožňuje používat `{% static %}` syntaxe pro odkazování na statické soubory.  Bez `{% load staticfiles %}`, zobrazí se vám výjimku při spuštění aplikace.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Dotaz: Existují jakékoli konvence pro uspořádání statické soubory?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Otázka: Existují jakékoli konvence pro uspořádání statické soubory?
 
 Odpověď: Můžete přidat další soubory šablon stylů CSS, JavaScript a HTML v vaše *statické* složky libovolně. Typické způsob uspořádání statických souborů je vytvořit podsložky s názvem *písma*, *skripty*, a *obsah* (pro šablony stylů a všechny další soubory). V obou případech musíte zahrnout tyto složky v relativní cesta k souboru v `{% static %}` odkazy.
 
@@ -166,13 +165,13 @@ Následující postup přidání stránky "O" do "HelloDjangoApp" projekt a odka
 
 1. Spusťte projekt sledujte výsledky a zkontrolovat navigace mezi stránkami. Zavřete serverem, až budete hotovi.
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Otázka: Mohu pokusili pomocí odkazu na domovskou stránku "index", ale akce nebyla úspěšná. Proč?
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>Otázka: Pokus o použití pro odkaz na domovskou stránku "index", ale akce nebyla úspěšná. Proč?
 
-Odpověď: I když zobrazení fungovat v *views.py* názvem `index`, adresy URL směrování vzory v projektu Django *urls.py* soubor neobsahuje regulární výraz, který se shoduje s řetězcem " index". Tak, aby odpovídaly tento řetězec budete muset přidat další položku pro vzor `^index$`.
+Odpověď: I když v zobrazení fungovat *views.py* jmenuje `index`, adresy URL směrování vzory v projektu Django *urls.py* soubor neobsahuje regulární výraz, který se shoduje s řetězcem "index". Tak, aby odpovídaly tento řetězec budete muset přidat další položku pro vzor `^index$`.
 
 Jak je znázorněno v další části, je mnohem vhodnější použít `{% url '<pattern_name>' %}` značky v šabloně stránky k odkazování *název* vzoru, ve kterém případu Django pro vás vytvoří správnou adresu URL. Nahraďte třeba `<div><a href="home">Home</a></div>` v *about.html* s `<div><a href="{% url 'index' %}">Home</a></div>`. Použití "index" funguje tady, protože první adresa URL vzorku v *urls.py* , ve skutečnosti jmenuje "index" (základě `name='index'` argument). "Domovskou" můžete použít také k odkazování na druhý vzor.
 
-## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: použití dědičnosti šablony k vytvoření záhlaví a navigační panel
+## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Krok 3-4: Použití šablony dědičnosti vytvoření záhlaví a navigační panel
 
 Namísto toho, aby explicitní navigačních odkazů na každé stránce, moderních webových aplikací obvykle používají značky záhlaví a navigační panel, který poskytuje nejdůležitější odkazů na stránky, kontextových nabídkách a tak dále. Pokud chcete mít jistotu, že záhlaví a navigačního panelu jsou stejné ve všech stránek, ale nechcete opakujte stejný kód v každé šabloně stránky. Chcete místo toho definujte společné části všech stránek na jednom místě.
 

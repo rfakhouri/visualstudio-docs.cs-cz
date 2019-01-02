@@ -1,8 +1,6 @@
 ---
 title: Zabezpečení přístupu ke kódu pro aplikace ClickOnce | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - vb.XBAPProjectPropertiesSecurity.HowTo
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe8709d6bb94c1437f03c4bd0c5b8b368d05b21
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828352"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpečení přístupu ke kódu pro aplikace ClickOnce
 Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s omezením zabezpečení přístupu kódu. Z tohoto důvodu je důležité, že rozumíte důsledkům kód přistupovat k zabezpečení a zapisovat vaše aplikace ClickOnce odpovídajícím způsobem.  
@@ -52,13 +50,13 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
 ## <a name="configure-security-permissions"></a>Konfigurace oprávnění zabezpečení  
  Vždy byste měli konfigurovat vaše aplikace ClickOnce k vyžádání příslušnou zónu omezit oprávnění zabezpečení přístupu kódu. Můžete nakonfigurovat oprávnění zabezpečení na **zabezpečení** stránku **Návrháře projektu**.  
   
- **Zabezpečení** stránku **Návrháře projektu** obsahuje **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko. Když je toto políčko zaškrtnuto, požadavky na oprávnění zabezpečení se přidají do manifestu nasazení pro vaši aplikaci. Během instalace bude uživatel vyzván k udělení oprávnění, pokud se požadovaná oprávnění překročit výchozí oprávnění pro zónu, ze kterého je aplikace nasazená. Další informace najdete v tématu [postupy: nastavení zabezpečení Povolit ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md).  
+ **Zabezpečení** stránku **Návrháře projektu** obsahuje **povolit nastavení zabezpečení ClickOnce** zaškrtávací políčko. Když je toto políčko zaškrtnuto, požadavky na oprávnění zabezpečení se přidají do manifestu nasazení pro vaši aplikaci. Během instalace bude uživatel vyzván k udělení oprávnění, pokud se požadovaná oprávnění překročit výchozí oprávnění pro zónu, ze kterého je aplikace nasazená. Další informace najdete v tématu [jak: Povolení nastavení zabezpečení ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md).  
   
  Aplikace nasazené z různých míst jsou udělena různé úrovně oprávnění bez zobrazení výzvy. Například když je aplikace nasazená z Internetu, obdrží vysoce omezující sadu oprávnění. Při instalaci z místní Intranet, obdrží další oprávnění a při instalaci z disku CD-ROM, obdrží oprávnění plné důvěryhodnosti.  
   
- Jako výchozí bod pro konfiguraci oprávnění, můžete vybrat ze zóny zabezpečení **zóny** seznamu **zabezpečení** stránky. Pokud vaše aplikace bude nasazena potenciálně z více než jednu zónu, vyberte zónu s nejnižšími oprávněními. Další informace najdete v tématu [postupy: nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
+ Jako výchozí bod pro konfiguraci oprávnění, můžete vybrat ze zóny zabezpečení **zóny** seznamu **zabezpečení** stránky. Pokud vaše aplikace bude nasazena potenciálně z více než jednu zónu, vyberte zónu s nejnižšími oprávněními. Další informace najdete v tématu [jak: Nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Vlastnosti, které je možné nastavit se liší podle sada oprávnění; Ne všechny sady oprávnění má konfigurovatelné vlastnosti. Další informace o úplný seznam oprávnění, která aplikace může požadovat najdete v tématu <xref:System.Security.Permissions>. Další informace o tom, jak nastavit oprávnění pro vlastní zónu, naleznete v tématu [postupy: nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Vlastnosti, které je možné nastavit se liší podle sada oprávnění; Ne všechny sady oprávnění má konfigurovatelné vlastnosti. Další informace o úplný seznam oprávnění, která aplikace může požadovat najdete v tématu <xref:System.Security.Permissions>. Další informace o tom, jak nastavit oprávnění pro vlastní zónu, naleznete v tématu [jak: Nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Ladění aplikace, který má omezená oprávnění  
  Jako vývojář pravděpodobně spuštění vývojového počítače pomocí oprávnění plné důvěryhodnosti. Proto se nezobrazí stejné zabezpečení výjimky při ladění aplikace, které uživatelé mohou vidět, když použijí ho s omezenými oprávněními.  
@@ -69,7 +67,7 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
   
  Kromě toho při psaní kódu, funkci IntelliSense v editoru kódu zakáže všechny členy, které nejsou součástí oprávnění zabezpečení, které jste nakonfigurovali.  
   
- Další informace najdete v tématu [postupy: ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Další informace najdete v tématu [jak: Ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Oprávnění zabezpečení pro aplikace hostované prohlížečem  
  Visual Studio poskytuje následující typy projektů pro aplikace Windows Presentation Foundation (WPF):  
@@ -94,9 +92,9 @@ Aplikace ClickOnce jsou založeny na rozhraní .NET Framework a jsou v souladu s
   
 ## <a name="see-also"></a>Viz také:  
  [Zabezpečení aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Postupy: povolení nastavení zabezpečení ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Postupy: nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Postupy: nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Postupy: ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Postupy: Povolení nastavení zabezpečení ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Postupy: Nastavení zóny zabezpečení pro aplikaci ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Postupy: Nastavení vlastních oprávnění pro aplikaci ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Postupy: Ladění aplikace ClickOnce s omezenými oprávněními](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Přehled nasazení důvěryhodných aplikací](../deployment/trusted-application-deployment-overview.md)   
  [Stránka Zabezpečení, Návrhář projektu](../ide/reference/security-page-project-designer.md)

@@ -1,8 +1,6 @@
 ---
 title: Upravit a pokračovat – dialogové okno chybové zprávy | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828667"
 ---
 # <a name="edit-and-continue-error-message"></a>Upravit a pokračovat chybová zpráva 
 
@@ -37,7 +35,7 @@ Mezi možné důvody pro tato chybová zpráva patří:
 -   Došlo k pokusu o úpravu optimalizovaný kód. Budete muset přepnutí z verze sestavení k sestavení pro ladění.
 -   Při pokusu o úpravu kódu, když je spuštěn, místo během pozastavení v ladicím programu. Zkuste [nastavením zarážky](../debugger/using-breakpoints.md), okna a editací kódu během pozastavení.
 -   Došlo k pokusu o úpravu spravovaného kódu, když je povoleno pouze nespravované ladění. Upravit a pokračovat nefunguje při využití [ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).
--   Provádění kódu změňte, který není podporována možností upravit a pokračovat v programovacím jazyce. Další informace najdete v článcích [podporované změny kódu v jazyce C#](supported-code-changes-csharp.md), [nepodporované úpravy v jazyce Visual Basic upravit a pokračovat](unsupported-edits-in-visual-basic-edit-and-continue.md), a [podporované změny kódu C++](supported-code-changes-cpp.md).
+-   Provádění kódu změňte, který není podporována možností upravit a pokračovat v programovacím jazyce. Další informace najdete v článcích [podporované změny kódu v jazyce C#](supported-code-changes-csharp.md), [nepodporované úpravy v jazyce Visual Basic upravit a pokračovat](/visualstudio/debugger/supported-code-changes-csharp), a [podporované změny kódu C++](supported-code-changes-cpp.md).
 -   Při pokusu o úpravu kódu v aplikaci jsou připojeny, namísto spuštění ladění od **ladění** nabídky.  
 -   Došlo k pokusu o úpravu kódu během ladění zotavení po havárii. Watson s výpisem paměti.  
 -   Při pokusu o úpravy kódu, jakmile dojde k neošetřené výjimce a možnost **vrátit zásobník volání v případě neošetřených výjimek** není vybraná.  

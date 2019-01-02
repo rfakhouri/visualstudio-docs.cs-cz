@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95f184628af5b56845f76d1c7279608b6826c151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826784"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Postupy: vytvoření sestavy zátěžových testů výkonu pomocí aplikace Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Postupy: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel
 
 Můžete generovat sestavy zátěžového testu aplikace Microsoft Excel, které jsou založeny na dvou nebo více výsledcích testu.
 
@@ -31,7 +30,7 @@ K dispozici jsou dva typy sestav zátěžových testů:
 -   **Trend** lze generovat analýzu trendů na dvou nebo více výsledcích zátěžového testu. Výsledky se zobrazí spojnicových grafech, ale data jsou k dispozici v kontingenčních tabulkách.
 
 > [!TIP]
-> Sestavy aplikace Microsoft Word můžete vytvořit také ručně zkopírováním a vložením dat ze souhrnného zobrazení, zobrazení grafů a zobrazení tabulek. Zobrazit [postupy: ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Sestavy aplikace Microsoft Word můžete vytvořit také ručně zkopírováním a vložením dat ze souhrnného zobrazení, zobrazení grafů a zobrazení tabulek. Zobrazit [jak: Ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Některá sestava umožňuje sdílení dat o výkonu se zúčastněnými stranami a sdělení, zda celkový výkon a stav systému se zlepšuje nebo zhoršuje.
 
@@ -104,7 +103,7 @@ Sestavy aplikace Excel mohou být generovány v **Analyzéru zátěžového test
    - **Chyba při porovnání -** porovnává typy chyb zaznamenaných mezi dvěma spuštěními a počet výskytů.
 
      > [!TIP]
-     > Pro lepší sestavy jsou k dispozici v zátěžových testech a testech výkonnosti webu, které umožňují lepší sestavy několik vlastností. Požadavek na stránku má dvě vlastnosti, které jsou uvedeny v sestavách: cíl a název sestavy. Doba odezvy stránky se bude vykazovány vůči cíli a namísto adresy URL v sestavách se použije název výkazu. V nastavení běhu, pod spravovat sady čítačů zátěžového testu je vlastnost značky počítače zobrazí v sestavě názvů počítače. To je velmi užitečné pro popis role konkrétního stroje v sestavě.
+     > Pro lepší sestavy jsou k dispozici v zátěžových testech a testech výkonnosti webu, které umožňují lepší sestavy několik vlastností. Požadavek na stránku má dvě vlastnosti, které jsou uvedeny v sestavách: Cíl a název výkazu. Doba odezvy stránky se bude vykazovány vůči cíli a namísto adresy URL v sestavách se použije název výkazu. V nastavení běhu, pod spravovat sady čítačů zátěžového testu je vlastnost značky počítače zobrazí v sestavě názvů počítače. To je velmi užitečné pro popis role konkrétního stroje v sestavě.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Ke generování sestav trendů zátěžových testů pomocí aplikace Excel
 
@@ -144,7 +143,7 @@ Sestavy aplikace Excel mohou být generovány v **Analyzéru zátěžového test
 9. Sestava se vygeneruje s tabulkou obsah, který obsahuje odkazy na různé karty sešitu aplikace Excel generované v sestavě. Odkazy jsou založeny na čítačích vybraných pro sestavu trendů. Například pokud jste ponechali výchozí čítače vybrané v kroku 7, pak sestava vygeneruje údaje, které jsou uvedeny v samostatných kartách v aplikaci Excel pro každý čítač uvedený v kroku 7. Data, který je generován pro každý čítač jsou zobrazena v grafu ve stylu trendů.
 
    > [!TIP]
-   > Pro lepší sestavy jsou k dispozici v zátěžových testech a testech výkonnosti webu, které umožňují lepší sestavy několik vlastností. Požadavek na stránku má dvě vlastnosti, které jsou uvedeny v sestavách: cíl a název sestavy. Doba odezvy stránky se bude vykazovány vůči cíli a namísto adresy URL v sestavách se použije název výkazu. V nastavení běhu, pod spravovat sady čítačů zátěžového testu je vlastnost značky počítače zobrazí v sestavě názvů počítače. To je velmi užitečné pro popis role konkrétního stroje v sestavě.
+   > Pro lepší sestavy jsou k dispozici v zátěžových testech a testech výkonnosti webu, které umožňují lepší sestavy několik vlastností. Požadavek na stránku má dvě vlastnosti, které jsou uvedeny v sestavách: Cíl a název výkazu. Doba odezvy stránky se bude vykazovány vůči cíli a namísto adresy URL v sestavách se použije název výkazu. V nastavení běhu, pod spravovat sady čítačů zátěžového testu je vlastnost značky počítače zobrazí v sestavě názvů počítače. To je velmi užitečné pro popis role konkrétního stroje v sestavě.
 
 ## <a name="net-framework-security"></a>zabezpečení v rozhraní .NET Framework
 

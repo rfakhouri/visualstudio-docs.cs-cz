@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: Změna počítače pro přehrávání diagnostiky grafiky | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Změnit počítač pro přehrávání diagnostiky grafiky | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
@@ -10,45 +8,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 143ae65b8d7db584546c250bf5d032450bf220aa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 015878da1d2e8c144787ba94d7f5394ebea4f4c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854344"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Postupy: Změna počítače pro přehrávání diagnostiky grafiky
-Grafických informací můžete přehrát zpět, pomocí místního počítače nebo pomocí vzdáleného počítače nebo zařízení.  
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Postupy: Změnit počítač pro přehrávání diagnostiky grafiky
+Můžete přehrávat grafické informace pomocí místního počítače nebo vzdáleném počítači či zařízení.  
   
-## <a name="choosing-a-playback-machine"></a>Vybrat počítače pro přehrávání  
- Počítače pro přehrávání je počítač nebo zařízení, která se používá k přehrání grafiky události z protokolu grafiky. Obvykle na místním počítači je nejvhodnější možnost, ale nemusí vykreslování problém reprodukovat na počítači, který má jiný hardware nebo ovladač verze než počítač, kde byla zaznamenána; v takovém případě můžete zvolit přehrávání vzdálený počítač, který lépe se shoduje s problém a dál používat vývojovém počítači při diagnostice ho.  
+## <a name="choosing-a-playback-machine"></a>Volba počítače pro přehrávání  
+ Počítač pro přehrávání je počítač nebo zařízení, které slouží k přehrání událostí grafiky z grafického protokolu. Obvykle místní počítač je nejpohodlnější možnost, ale problém vykreslování se nemusí reprodukovat na počítači, který má jiný hardware nebo verze ovladače než počítač, kde byl zachycen; Pokud k tomu dojde, můžete zvolit vzdálený počítač pro přehrávání, který lépe reprodukuje problém a nadále používat svůj vývojářský počítač k její diagnostice.  
   
-#### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Použití místního počítače a přehrání grafických informací  
+#### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Použití místního počítače k přehrání grafické informace  
   
-1.  V okně dokument grafických protokolů, zvolte **počítače pro přehrávání** odkaz. **Připojení vzdáleného ladicího programu** zobrazí se dialogové okno.  
+1.  V okně dokumentu protokol grafiky zvolte **počítač pro přehrávání** odkaz. **Připojení pro vzdálený ladicí program** zobrazí se dialogové okno.  
   
 2.  V části **ruční konfigurace**v **adresu** vlastnost, zadejte `localhost`.  
   
-3.  Nastavte **režim ověřování** vlastnost **žádné**.  
+3.  Nastavte **režim ověřování** vlastnost **žádný**.  
   
-4.  Vyberte **vyberte** tlačítko.  
+4.  Zvolte **vyberte** tlačítko.  
   
-#### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Použití vzdáleného počítače k přehrání grafických informací  
+#### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Použití vzdáleného počítače k přehrání grafické informace  
   
-1.  V okně dokument grafických protokolů, zvolte **počítače pro přehrávání** odkaz. **Připojení vzdáleného ladicího programu** zobrazí se dialogové okno.  
+1.  V okně dokumentu protokol grafiky zvolte **počítač pro přehrávání** odkaz. **Připojení pro vzdálený ladicí program** zobrazí se dialogové okno.  
   
-2.  V části **ruční konfigurace**v **adresu** vlastnost, zadejte název domény systému Windows nebo IP adresu počítače nebo zařízení, které chcete použít k přehrání grafických informací.  
+2.  V části **ruční konfigurace**v **adresu** vlastnost, zadejte název domény Windows nebo IP adresu počítače nebo zařízení, které chcete použít k přehrání grafické informace.  
   
-3.  Zadejte typ ověřování, který chcete použít k zabezpečení připojení k počítači přehrávání.  
+3.  Zadejte typ ověřování, který chcete použít k zabezpečení připojení k počítači pro přehrávání.  
   
-    -   Pro ověřování systému Windows, nastavte **režim ověřování** vlastnost **Windows**.  
+    -   Ověřování Windows, nastavte **režim ověřování** vlastnost **Windows**.  
   
-    -   Bez ověřování, nastavit **režim ověřování** vlastnost **žádné**.  
+    -   Bez ověřování, nastavte **režim ověřování** vlastnost **žádný**.  
   
-4.  Vyberte **vyberte** tlačítko.  
+4.  Zvolte **vyberte** tlačítko.  
   
 > [!NOTE]
->  **Připojení vzdáleného ladicího programu** dialogové okno se může zobrazit také vzdáleného ladění cíle, které jsou připojeny přímo k počítači pro vývoj nebo jsou ve stejné podsíti. Jeden z těchto cílů vzdáleného ladění můžete použít jako počítače pro přehrávání diagnostiky grafiky bez ručně její konfiguraci. V **připojení vzdáleného ladicího programu** dialogové okno, vyberte cíl má a potom zvolte **vyberte** tlačítko.  
+>  **Připojení pro vzdálený ladicí program** dialogové okno může také zobrazit cíle vzdáleného ladění, které jsou připojeny přímo do svého vývojového počítače nebo jsou ve stejné podsíti. Jeden z těchto vzdálených cílů ladění můžete použít jako stroj přehrávání diagnostiky grafiky bez ruční konfigurace. V **připojení pro vzdálený ladicí program** dialogového okna, vyberte cíl, má a klikněte na tlačítko **vyberte** tlačítko.  
   
 ## <a name="see-also"></a>Viz také  
  [Dokument grafických protokolů](graphics-log-document.md)

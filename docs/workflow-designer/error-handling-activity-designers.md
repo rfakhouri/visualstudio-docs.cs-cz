@@ -1,22 +1,21 @@
 ---
-title: Návrhář postupu provádění - návrháře aktivit zpracování chyb
+title: Návrhář postupu provádění – návrháři aktivit zpracování chyb
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d1d520f54a2b9da958342a34019aef7998727a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 3746749e988ba8ac12ede3f5ddbf92c4ecf64c06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829891"
 ---
 # <a name="error-handling-activity-designers"></a>Návrháři aktivit zpracování chyb
 
-Návrháře aktivit zpracování chyb se používají ke správě zpracování chyb v Návrháři pracovních postupů. Témata obsažené v této části poskytují pokyny o tom, jak pomocí aktivity v Návrháři pracovních postupů a návrháři šablon.
+Návrháři aktivit zpracování chyb se používají ke správě v Návrháři pracovních postupů pro zpracování chyb. V tématech obsažené v této části najdete pokyny, jak používat návrháře postupu provádění aktivity a návrháři šablon.

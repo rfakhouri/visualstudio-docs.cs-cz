@@ -1,9 +1,6 @@
 ---
-title: IEEDataStorage | Microsoft Docs
-ms.custom: ''
+title: IEEDataStorage | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeb98c4c4d3b544616412b3cf5cf8a162fddbd6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0db1dc01c67c93c5cabfb40af8acf55b34ad660
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820144"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Toto rozhraní představuje pole bajtů.  
@@ -32,30 +29,30 @@ IEEDataStorage : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Vyhodnocení výrazu (EE) implementuje toto rozhraní představují pole bajtů (používá typ vizualizérech k načtení a změnit data prostřednictvím [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní). EE obvykle implementuje toto rozhraní pro podporu vizualizérech externího typu.  
+ Chyba při vyhodnocování výrazu (EE) implementuje toto rozhraní představující pole bajtů (používané vizualizérů typů a načíst data prostřednictvím změny [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní). EE obvykle implementuje toto rozhraní pro podporu externí vizualizéry.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Metody na `IPropertyProxyEESide` rozhraní všechny vrátit toto rozhraní. Volání [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) získat [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní. Volání [QueryInterface](/cpp/atl/queryinterface) na [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) rozhraní získat [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) rozhraní.  
+ Metody `IPropertyProxyEESide` rozhraní všechny vrátit toto rozhraní. Volání [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) získat [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) rozhraní. Volání [QueryInterface](/cpp/atl/queryinterface) na [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) rozhraní získat [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md) rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  `IEEDataStorage` Rozhraní implementuje následujících metod:  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Načte zadaný počet bajtů dat, které mají poskytnutá vyrovnávací paměť.|  
+|[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Načte zadaný počet bajtů dat do zadané vyrovnávací paměti.|  
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Získá počet bajtů dat, které jsou k dispozici.|  
   
 ## <a name="remarks"></a>Poznámky  
- Toto rozhraní se používá podle typu vizualizér pro přístup k data ukládaná společností určitý objekt. Data, je zpracovaná jako pole bajtů, což vizualizér typ k manipulaci s ním v jakémkoli způsob, jak je potřeba ho k dispozici pro uživatele.  
+ Toto rozhraní je používá typ vizualizéru pro přístup k data ukládaná společností s určitým objektem. Data je považován za pole bajtů, což vizualizér typů s nimi manipulovat v dle svého je potřeba poskytnout uživateli.  
   
- Vlastní prohlížeč můžete také použít toto rozhraní, v případě potřeby, i když více obvykle vlastní prohlížeč využije vlastní rozhraní [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) nebo [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (pro data orientovaná na řetězec).  
+ Vlastní prohlížeč můžete také použít toto rozhraní v případě potřeby, i když vlastní prohlížeč by se používat vlastní rozhraní [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) nebo [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (pro data orientovaná na řetězec).  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

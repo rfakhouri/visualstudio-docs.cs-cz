@@ -1,8 +1,6 @@
 ---
 title: CSC – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd360a34c70d3208211b861dae064bd4c5a01595
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59c9c7d092ff5d080baebdc562bbd6b3da436c88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838330"
 ---
 # <a name="csc-task"></a>Csc – úloha
 Zabalí *csc.exe*a vytváří spustitelné soubory (*.exe* soubory), dynamické knihovny (*.dll* soubory), nebo moduly kódu (*.netmodule* soubory). Další informace o *csc.exe*, naleznete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).  

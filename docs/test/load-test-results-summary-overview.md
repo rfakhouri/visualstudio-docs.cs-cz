@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 70447148922382cef3e5c3fb9b7ba24613033c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834292"
 ---
 # <a name="load-test-results-summary-overview"></a>Přehled souhrnu výsledků zátěžového testu
 
-Po spuštění zátěžového testu můžete zobrazit souhrn zátěžového testu rychle porozumět výsledky. Souhrn zátěžového testu poskytuje klíče výsledky kompaktní a snadno přečíst formátu. Můžete také vytisknout souhrnem zátěžového testu. Je to vhodné pro použití při komunikaci výsledky účastníkům. Souhrn zátěžového testu je také výchozí zobrazení při otevření výsledku zátěžového testu z dříve spuštěném zátěžovém testu. Další informace najdete v tématu [postupy: přístup k analýze výsledků zátěžového testu](../test/how-to-access-load-test-results-for-analysis.md).
+Po spuštění zátěžového testu můžete zobrazit souhrn zátěžového testu rychle porozumět výsledky. Souhrn zátěžového testu poskytuje klíče výsledky kompaktní a snadno přečíst formátu. Můžete také vytisknout souhrnem zátěžového testu. Je to vhodné pro použití při komunikaci výsledky účastníkům. Souhrn zátěžového testu je také výchozí zobrazení při otevření výsledku zátěžového testu z dříve spuštěném zátěžovém testu. Další informace najdete v tématu [jak: Přístup k výsledky zátěžového testu pro analýzu](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Souhrnné zobrazení](../test/media/ltest_summaryview.png)
 
@@ -39,11 +38,11 @@ Souhrn zátěžového testu je rozdělený do částí. Počáteční části se
 
 - Celkové výsledky
 
-- Klíčová Statistika: Top 5 Nejpomalejších stránek
+- Klíčová Statistika: 5 Nejpomalejších stránek
 
-- Klíčová Statistika: Top 5 Nejpomalejších Tesů
+- Klíčová Statistika: 5 Nejpomalejších tesů
 
-- Klíčová Statistika: Top 5 Nejpomalejších SQL operací
+- Klíčová Statistika: Prvních 5 Nejpomalejších SQL operací
 
     > [!NOTE]
     > V části SQL operací se zobrazí jenom v případě, že je povoleno trasování SQL v zátěžovém testu.
@@ -72,17 +71,17 @@ Celkové výsledky část obsahuje souhrnné výsledky testů, včetně počtu p
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>Klíčová Statistika: 5 nejpomalejších stránek
 
-Nejpomalejší stránky obsahuje top 5 nejpomalejších stránek v zátěžovém testu. Adresa URL a dobou načítání Průměrná doba načtení stránky se zobrazí pro každou stránku. Na stránkách jsou uvedeny v sestupném pořadí. Můžete také adresa URL stránky otevřete **stránky** tabulky a kontrolovat další podrobnosti pro danou stránku. Další informace najdete v tématu [postupy: zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Nejpomalejší stránky obsahuje top 5 nejpomalejších stránek v zátěžovém testu. Adresa URL a dobou načítání Průměrná doba načtení stránky se zobrazí pro každou stránku. Na stránkách jsou uvedeny v sestupném pořadí. Můžete také adresa URL stránky otevřete **stránky** tabulky a kontrolovat další podrobnosti pro danou stránku. Další informace najdete v tématu [jak: Zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 Hodnota percentilu **95 % doba stránky (sek)** hlásit, že 95 % stránek dokončit za méně než tento časový interval v sekundách.
 
-## <a name="key-statistic-top-5-slowest-tests"></a>Klíčová Statistika: 5 nejpomalejších Tesů
+## <a name="key-statistic-top-5-slowest-tests"></a>Klíčová Statistika: 5 nejpomalejších tesů
 
 Nejpomalejší testy oddíl obsahuje nejčastější 5 nejpomalejších tesů v zátěžovém testu. Název testu a průměrný čas testu se zobrazí pro každý test. Testy jsou uvedeny v sestupném pořadí. Můžete použít název testu, otevřete **testy** tabulky a prozkoumejte další podrobnosti pro tento test. Další informace najdete v tématu [Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 Hodnota percentilu **95 % doby testu (sek)** hlásit, že 95 % testů dokončeno za méně než tento časový interval v sekundách.
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>Klíčová Statistika: 5 nejpomalejších SQL operací Top
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>Klíčová Statistika: Prvních 5 nejpomalejších SQL operací
 
 Pokud je povoleno trasování SQL v zátěžovém testu, nejpomalejší dotazy oddíl obsahuje nejčastější dotazy 5 nejpomalejších v zátěžovém testu. Pro každý test se zobrazí název operace a dobu trvání. Zobrazí se doba trvání v mikrosekundách (SQL Server 2005) nebo v milisekundách (SQL Server 2000 a starší). Testy jsou uvedeny v sestupném pořadí podle doby trvání. Můžete použít název operace otevřít **trasování SQL** tabulky a prozkoumejte další podrobnosti pro danou operaci. Další informace najdete v tématu [tabulka dat trasovacího SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
@@ -95,7 +94,7 @@ Pokud je povoleno trasování SQL v zátěžovém testu, nejpomalejší dotazy o
 
 ## <a name="page-results"></a>Výsledky stránky
 
-Výsledky stránky obsahuje seznam všech webové stránky v zátěžovém testu. Adresa URL, scénář, název testu, Průměrná doba načtení stránky čas a počty jsou zobrazeny. Můžete také adresa URL stránky otevřete **stránky** tabulky a kontrolovat další podrobnosti pro danou stránku. Další informace najdete v tématu [postupy: zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Výsledky stránky obsahuje seznam všech webové stránky v zátěžovém testu. Adresa URL, scénář, název testu, Průměrná doba načtení stránky čas a počty jsou zobrazeny. Můžete také adresa URL stránky otevřete **stránky** tabulky a kontrolovat další podrobnosti pro danou stránku. Další informace najdete v tématu [jak: Zobrazení webové stránky odpovědi](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Můžete sbalit a kliknutím na šipku nalevo od názvu oddílu rozbalením tohoto oddílu.

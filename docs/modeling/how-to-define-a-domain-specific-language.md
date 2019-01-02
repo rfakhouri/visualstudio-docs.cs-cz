@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959492"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Do definice jazyka specifického pro doménu (DSL), vytvoříte ze šablony řešení sady Visual Studio. Klíčovou součástí řešení je diagramem definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a tvary DSL. Po úpravě a přidáte k těmto prvkům můžete přidat kód programu k přizpůsobení DSL podrobněji.
 
-Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího prostředí nástroje DSL**, které můžete vyhledat v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> Výběr šablony řešení
  Pokud chcete definovat DSL, musíte mít nainstalovaný následující komponenty:
@@ -169,9 +168,9 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
 |Jak se zobrazí element|Třída nadřazené (vložení)|Příklad v šabloně řešení DSL|
 |-|-|-|
-|Obrazec v diagramu.<br /><br /> Plavecké dráhy.|Kořenová třída DSL.|Minimální jazykový.<br /><br /> Tok úkolů: Třída Actor.|
-|Obrazce v plavecké dráhy.|Doménová třída prvky, které se zobrazují jako plaveckých drah.|Tok úloh: Třída úlohy.|
-|Položky v seznamu ve tvaru, kde se odstraní položka, pokud se odstraní kontejner.<br /><br /> Port na hraničních zařízeních obrazce.|Doménová třída, která je namapovaná na obrazec kontejneru.|Diagram tříd: třídy atributů.<br /><br /> Diagram komponent: Port třídy.|
+|Obrazec v diagramu.<br /><br /> Plavecké dráhy.|Kořenová třída DSL.|Minimální jazykový.<br /><br /> Tok úkolů: Třída actor.|
+|Obrazce v plavecké dráhy.|Doménová třída prvky, které se zobrazují jako plaveckých drah.|Tok úkolů: Třída úlohy.|
+|Položky v seznamu ve tvaru, kde se odstraní položka, pokud se odstraní kontejner.<br /><br /> Port na hraničních zařízeních obrazce.|Doménová třída, která je namapovaná na obrazec kontejneru.|Diagram tříd: Třídy atributů.<br /><br /> Diagram komponent: Třída portu.|
 |Položky v seznamu, nebyl odstraněn, pokud se odstraní kontejner.|Kořenová třída DSL.<br /><br /> V seznamu zobrazí odkazy.||
 |Zobrazí přímo.|Třída, která je součástí.||
 
@@ -187,7 +186,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 >  Vkládání není stejný jako dědičnosti. Podřízené položky v vztah obsažení nedědí ze svých nadřazených složek funkce.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Přidání vlastnosti domény do každé doménové třídy
- Vlastnosti domény ukládání hodnot. Mezi příklady patří: název, název, data publikování.
+ Vlastnosti domény ukládání hodnot. Můžete například: Název, název, data publikování.
 
  Klikněte na tlačítko **vlastnosti domény** ve třídě, stiskněte klávesu ENTER a pak zadejte název vlastnosti. Výchozí typ doménová vlastnost, která je řetězec. Pokud chcete změnit typ, vyberte doménová vlastnost a nastavte **typ** v **vlastnosti** okna. Pokud typ, který chcete, aby v rozevíracím seznamu není, přečtěte si téma [přidávání typů vlastností](#addTypes).
 
@@ -409,7 +408,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
    Po otestování nejprve konektor, můžete chtít upravit některé její vlastnosti a přidat některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="compartments"></a> Definování tvary, které obsahují seznamy: obrazců oddílů
+## <a name="compartments"></a> Definování tvary, které obsahují seznamy: Obrazce oddílu
  Obrazec oddílu obsahuje jeden nebo více seznamů položek. Například v Library DSL Hudba, můžete použít obrazců prostoru k reprezentaci Hudba alb. V každé Album je seznam skladeb.
 
  ![Obrazec oddílu](../modeling/media/compartmentshape.png)
@@ -605,13 +604,13 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 
  Proto by měl být vědomi, že při změně některých relací v definici DSL není, že u chyby, které má být hlášen při ukládání definice nebo když Transformovat všechny šablony. Většina těchto chyb jsou snadno to vyřešíme. Klikněte dvakrát na zprávy o chybách k zobrazení umístění chyby.
 
- Viz také [postupy: Změna Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
+ Viz také [jak: Změnit Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a> Řešení potíží
  Následující tabulka uvádí některé z nejběžnějších problémů, které se vyskytují při návrhu DSL, společně s návrhy pro jejich řešení. Další Rady, jak je k dispozici na [vizualizace nástroje Extensibililty fórum](http://go.microsoft.com/fwlink/?LinkId=186074).
 
 
-| Problém | Návrh |
+| Problém | Doporučení |
 |-|-|
 | Změny, které můžu provedli v souboru definic DSL nemají žádný vliv. | Klikněte na tlačítko **Transformovat všechny šablony** na panelu nástrojů nad Průzkumníka řešení a pak znovu sestavte řešení. |
 | Tvary zobrazit název dekoratéru místo hodnoty vlastnosti. | Nastavte mapování dekoratéru. V definici DSL diagramu klikněte na tlačítko mapa elementu diagramu, který je Šedá čára mezi třídy domény a tvar.<br /><br /> Otevřít **podrobnosti DSL** okna. Pokud nevidíte, v nabídce Zobrazit, přejděte na **ostatní Windows**a potom klikněte na tlačítko **podrobnosti DSL**.<br /><br /> Klikněte na tlačítko **mapování Dekoratéru** kartu. Vyberte název dekoratér. Ujistěte se, že je zaškrtnuté políčko vedle něj. V části **zobrazit vlastnost**, vyberte název doménové vlastnosti.<br /><br /> Další informace najdete v tématu [tvary v diagramu](#shapes). |
@@ -619,7 +618,7 @@ Pokud jste ještě DSL, doporučujeme pracovat prostřednictvím **testovacího 
 | Jsem vytvořil doménovou třídou, ale nejde mi vytvořit instance v Průzkumníku jazyka. | Každá třída domény s výjimkou kořenové musí být cílem vztah obsažení. |
 | V Průzkumníku pro tento DSL prvky jsou zobrazeny pouze s jejich názvů typů. | V definici DSL vyberte doménovou vlastnost třídy a ve vlastnostech okno, nastavte **je název elementu** na hodnotu true. |
 | Moje DSL vždy otevře v editoru XML. | To může nastat z důvodu chyby při při čtení souboru. Ale i poté, co je opravit tuto chybu, je nutné explicitně obnovit editoru návrháře DSL.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte * YourLanguage ***návrháře (výchozí)**. |
-| Panel nástrojů DSL, své nezobrazuje po změně názvy sestavení. | Zkontrolovat a aktualizovat **DslPackage\GeneratedCode\Package.tt** Další informace najdete v tématu [postupy: Změna Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| Panel nástrojů DSL, své nezobrazuje po změně názvy sestavení. | Zkontrolovat a aktualizovat **DslPackage\GeneratedCode\Package.tt** Další informace najdete v tématu [jak: Změnit Namespace jazyka specifického pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | Nástrojů DSL, své nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo se zobrazí okno se zprávou, vytváření sestav selhání při načítání rozšíření. | Resetovat experimentální instanci a znovu sestavte své řešení.<br /><br /> 1.  V Windows nabídky Start, v části **všechny programy**, rozbalte [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], pak **nástroje**a potom klikněte na tlačítko **resetování Microsoft Visual Studio experimentální instanci aplikace**.<br />2.  Na **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**. |
 
 ## <a name="see-also"></a>Viz také

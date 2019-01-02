@@ -17,15 +17,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825643"
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 
@@ -208,7 +207,7 @@ Teď můžete otestovat formulář, abyste měli jistotu, že se chová podle o�
 
 8. V první záznam ve formuláři (**ALFKI**), změňte **ContactName** k **Marie Anders1**.
 
-9. Vyberte **Uložit** tlačítko.
+9. Vyberte tlačítko **Uložit**.
 
      Došlo k chybě souběžnosti se vyvolá a zobrazí se okno se zprávou.
 

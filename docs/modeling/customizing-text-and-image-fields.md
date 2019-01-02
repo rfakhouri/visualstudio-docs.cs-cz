@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c74b7547ea62942670b2c5442d16f460dc738f84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836087"
 ---
 # <a name="customizing-text-and-image-fields"></a>Přizpůsobení textových a obrazových polí
 Při definování dekoratér text obrazce, je reprezentována TextField. Příklady inicializace TextFields a dalších ShapeFields zkontrolujte Dsl\GeneratedCode\Shapes.cs ve vašem řešení DSL.

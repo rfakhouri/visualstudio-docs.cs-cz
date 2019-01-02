@@ -1,8 +1,6 @@
 ---
-title: Cvcreatemarkerserieswithcodepagea – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvcreatemarkerserieswithcodepagea – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmakers/CvCreateMarkerSeriesWithCodePageA
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63fe3de8c4322e378f110813ac93fa523f3453ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 55466cc96e4969f05bc34edfaf4a28564dba17ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822486"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>Cvcreatemarkerserieswithcodepagea – funkce
-Vytvoří řady značky daného poskytovatele a zadanou znakovou stránku. Tato funkce slouží k určení kódové stránky explicitně pro text naprogramovaný funkce rozhraní API ANSI značky. Nastavení znakové stránky může být užitečné v případě, že bude zachycen a potom analyzovat na různé počítače s jinou národní prostředí nebo jazyky trasování. Ve výchozím nastavení se používá znaková stránka vrácené funkcí GetACP().  
+Vytvoří značku řady pro daného poskytovatele a zadanou znakovou stránku. Tato funkce slouží k určení znakovou stránku explicitně pro textu zapsaného funkce rozhraní API ANSI značky. Nastavení znakové stránky může být užitečné v případě trasování je zachycena a potom analyzovány na odlišných počítačích s různými národní prostředí nebo jazyky. Ve výchozím nastavení se používá znakovou stránku vrácená funkcí GetACP().  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,19 +35,19 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
   
 #### <a name="parameters"></a>Parametry  
  `pProvider`  
- Objekt zprostředkovatele dříve iniciovány cvinitprovider –. Nemůže mít hodnotu NULL.  
+ Cvinitprovider – dříve inicializován objekt zprostředkovatele. Nemůže mít hodnotu NULL.  
   
  `pSeriesName`  
- Název řady značky. Nemůže mít hodnotu NULL, ale je povolen prázdný řetězec.  
+ Název značky řady. Nemůže mít hodnotu NULL, ale je povolen prázdný řetězec.  
   
  `nTextCodePage`  
- Neplatná znaková stránka.  
+ Platný znakovou stránku.  
   
  `ppMarkerSeries`  
- Adresa proměnná výstup, který uloží kontextu řady značky. Nemůže mít hodnotu NULL.  
+ Adresa výstupní proměnné, která bude ukládat značky řady kontextu. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK při řady značky se úspěšně vytvořil nebo kód chyby v případě, že existuje byly všechny chyby. Makra úspěšné nebo NEÚSPĚŠNÉ použijte ke kontrole chybový stav.  
+ S_OK při úspěšném vytvoření značky řady nebo kód chyby v případě, že existuje byly všechny chyby. Použití makra SUCCEEDED nebo FAILED zkontrolujte chybovou podmínku.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

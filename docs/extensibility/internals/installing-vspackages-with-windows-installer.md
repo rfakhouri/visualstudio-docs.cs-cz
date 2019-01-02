@@ -1,9 +1,6 @@
 ---
 title: Instalace balíčků VSPackage pomocí Instalační služby systému Windows | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3bb49f02b7c160aa879c0652a081d8fd6cb026a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370533"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827832"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalace balíčků VSPackage pomocí Instalační služby systému Windows
 Integrace do vaší VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vyžaduje více než pouhé kopírování souborů na počítači uživatele. Instalační program vašeho balíčku VSPackage musíte nainstalovat sady VSPackage a jeho závislých souborů a zaregistrovat a integrovat je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vaše VSPackage můžete využít výhod funkcí pro integraci například ikonu zobrazení na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] úvodní obrazovky a o dialogové okno.  
@@ -51,7 +48,7 @@ Integrace do vaší VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vspr
  [Nasazování typů projektů](../../extensibility/internals/deploying-project-types.md)  
  Popisuje, jak použít nový typ projektu agregátor pro typy projektů spravovaného kódu.  
   
- [Postupy: Vygenerování informací registru pro instalační program ](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Postupy: Vygenerování informací registru pro instalační službu](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Vysvětluje způsob používání RegPkg.exe ke generování manifestu registrace pro spravovaná VSPackage.  
   
  [Příkazy, které se musí spustit po instalaci](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  
