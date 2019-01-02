@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vlastního procesoru direktiv'
+title: 'Průvodce: Vytvoření vlastního procesoru direktiv'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951823"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Návod: Vytvoření vlastního procesoru direktiv
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Průvodce: Vytvoření vlastního procesoru direktiv
 
 *Procesory direktiv* fungují tak, že přidáte kód *vygenerované třídy transformace*. Při volání *směrnice* z *textové šablony*, zbytek kódu, který napíšete do textové šablony může záviset na funkčnosti, která poskytuje tato direktiva.
 

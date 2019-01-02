@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -22,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e4105d8dda298dd0235acd113a9a0612265fbc0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6db1195203b13ab38f5f3ca74d8b07d96b658f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959083"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Spuštění ladicí relace pro aplikace pro Store v sadě Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +82,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 
    ![Platí pouze pro Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
-   Visual Studio vytvoří a spustí aplikaci s připojeným ladícím nástrojem. Provádění pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k neošetřené výjimce nebo ukončení aplikace. Další informace najdete v tématu [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).
+   Visual Studio vytvoří a spustí aplikaci s připojeným ladícím nástrojem. Provádění pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k neošetřené výjimce nebo ukončení aplikace. Další informace najdete v tématu [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md).
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> Konfigurace relace ladění
  Protože skriptu není kompilována, nemůžete použít nastavení konfigurace a platforma sestavení. Pokud ladíte C++ nebo spravované součásti, nastavte **konfigurace** k **ladění** a zvolte cílovou platformu z **konfigurace** dialogového okna.
@@ -160,7 +159,7 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
 ##  <a name="BKMK_Start_the_debugging_session"></a> Spuštění ladicí relace
 
 ###  <a name="BKMK_Start_debugging__F5_"></a> Spustit ladění (F5)
- Při výběru **spustit ladění** na **ladění** nabídce (klávesnice: F5), Visual Studio spustí aplikaci s připojeným ladícím nástrojem. Provádění pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k neošetřené výjimce nebo ukončení aplikace.
+ Pokud zvolíte **spustit ladění** na **ladění** nabídce (klávesnice: F5), Visual Studio spustí aplikaci s připojeným ladícím nástrojem. Provádění pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k neošetřené výjimce nebo ukončení aplikace.
 
 ###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Spustit ladění (F5), ale zpoždění spuštění aplikace
  Můžete nastavit aplikaci spustit v režimu ladění, ale ten spustit pomocí jiné metody než ladicí program. Můžete například, chcete-li ladit spuštění vaší aplikace z nabídky Start nebo chcete-li ladit proces na pozadí v aplikaci bez spuštění aplikace. Chcete-li zpoždění spuštění aplikace, postupujte takto:
@@ -266,4 +265,4 @@ Platí pro Windows a Windows Phone] (.. /Image/windows_and_phone_content.png "wi
    Visual Studio připojí ladicí program k procesu. Provádění pokračuje, dokud není dosaženo zarážky, můžete ručně pozastavení provádění, dojde k neošetřené výjimce nebo ukončení aplikace.
 
 ## <a name="see-also"></a>Viz také
- [Řízení spouštění v relaci ladění (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [rychlý start: ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) [aktivační události pozastavení, obnovení a událostí na pozadí pro Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [ladění aplikací v Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
+ [Řízení spouštění v relaci ladění (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) [rychlý start: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md) [aktivační události pozastavení, obnovení a událostí na pozadí pro Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

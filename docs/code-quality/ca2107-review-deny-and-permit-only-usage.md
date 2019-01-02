@@ -1,8 +1,7 @@
 ---
-title: 'CA2107: Revize použití operací odepřít a povolit pouze'
+title: 'CA2107: Revize Odepřít a povolit pouze'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2107
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4324805c90c3a0f1b8dbfddcdfe277c5c8a2fd05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c8f4e108d8443816bf43dec9deb629a3a231822
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826098"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revize použití operací odepřít a povolit pouze
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revize Odepřít a povolit pouze
 
 |||
 |-|-|
@@ -40,7 +39,7 @@ ms.locfileid: "49868037"
 
  Odepřít mění výchozí chování procházení zásobníku, ke které dochází v reakci na požadavek zabezpečení. To vám umožní určit oprávnění, která nesmí být po dobu trvání metodu zamítnutí bez ohledu na skutečnou oprávnění volajících v zásobníku volání. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí Odepřít a pokud požadované oprávnění je součástí odepření oprávnění, procházení zásobníku selže. PermitOnly také mění výchozí chování procházení zásobníku. Je možné zadat pouze oprávnění, která lze udělit, bez ohledu na oprávnění volající kód. Pokud procházení zásobníku zjistí metodu, která je zabezpečena pomocí PermitOnly, a pokud oprávnění, která jsou určena podle PermitOnly není součástí požadované oprávnění, procházení zásobníku selže.
 
- Kód, který závisí na tyto akce by pečlivě vyhodnotit pro ohrožení zabezpečení z důvodu jejich užitečnost omezené a drobným chování. Vezměte v úvahu následující:
+ Kód, který závisí na tyto akce by pečlivě vyhodnotit pro ohrožení zabezpečení z důvodu jejich užitečnost omezené a drobným chování. Zvažte použití těchto zdrojů:
 
 - [Požadavky na propojení](/dotnet/framework/misc/link-demands) nejsou ovlivněny Deny nebo PermitOnly.
 

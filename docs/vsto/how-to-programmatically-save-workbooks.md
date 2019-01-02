@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: ukládání sešitů prostřednictvím kódu programu'
-ms.custom: ''
+title: 'Postupy: Ukládání sešitů prostřednictvím kódu programu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fc715518f31031c65667a2480d7e14111105202
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829168"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>Postupy: ukládání sešitů prostřednictvím kódu programu
+# <a name="how-to-programmatically-save-workbooks"></a>Postupy: Ukládání sešitů prostřednictvím kódu programu
   Existuje několik způsobů, jak uložit sešit. Sešit můžete uložit beze změny cesty. Pokud sešit nebyl uložen před, byste měli uložit sešit tak, že zadáte cestu. Bez explicitního cesty aplikace Microsoft Office Excel uloží soubor s názvem, který byl zadán při vytvoření rovnou uložil do aktuální složky. Můžete také uložit kopii tohoto sešitu beze změny otevřít sešit v paměti.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -88,9 +85,7 @@ ms.locfileid: "35676019"
 ## <a name="see-also"></a>Viz také:  
  [Práce se sešity](../vsto/working-with-workbooks.md)   
  [Hostitelská položka Workbook](../vsto/workbook-host-item.md)   
- [Postupy: zavírání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Postupy: Zavírání sešitů prostřednictvím kódu programu](../vsto/how-to-programmatically-close-workbooks.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

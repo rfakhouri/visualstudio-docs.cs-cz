@@ -1,5 +1,5 @@
 ---
-title: Potvrzení úprav v procesu na ovládací prvky vázané na data před uložením dat
+title: Potvrzení úprav v procesu v ovládacích prvcích vázaných na data před uložením dat
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,42 +17,41 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34cf76adc56078303352bef9f01cef5ba774e2be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4ab8d46bd9c19a747231f87eb7ef0bd40025c69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824402"
 ---
-# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Potvrzení úprav v procesu na ovládací prvky vázané na data před uložením dat
+# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Potvrzení úprav v procesu v ovládacích prvcích vázaných na data před uložením dat
 
-Při úpravě hodnoty v ovládacích prvcích vázaných na data, musí uživatelé přejít mimo potvrzení aktualizované hodnoty podkladové zdroje dat, který je ovládací prvek vázán na aktuální záznam. Při přetahování položek z [okno zdroje dat](add-new-data-sources.md) na formuláři, první položka, která je vyřadit generuje kód do **Uložit** tlačítko klikněte na události <xref:System.Windows.Forms.BindingNavigator>. Tento kód zavolá <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metodu <xref:System.Windows.Forms.BindingSource>. Proto volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda se vygeneruje pouze pro první <xref:System.Windows.Forms.BindingSource> přidaná do formuláře.
+Při úpravě hodnoty v ovládacích prvcích vázaných na data, musí uživatelé přejít mimo aktuální záznam potvrdit aktualizovanou hodnotu do podkladového zdroje dat, který ovládací prvek vázán. Při přetažení položky z [okna zdroje dat](add-new-data-sources.md) do formuláře, první položka, která je vyřadit generuje kód do **Uložit** události kliknutí na tlačítko <xref:System.Windows.Forms.BindingNavigator>. Tento kód volá <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metodu <xref:System.Windows.Forms.BindingSource>. Proto volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda se vygeneruje pouze pro první <xref:System.Windows.Forms.BindingSource> , který je přidán do formuláře.
 
-<xref:System.Windows.Forms.BindingSource.EndEdit%2A> Volání potvrdí všechny změny, které jsou v procesu v všechny ovládací prvky vázané na data, které jsou aktuálně Upravovaný. Proto pokud stále má ovládací prvek vázané na data fokus a klikněte na tlačítko **Uložit** tlačítko všechna nevyřízená úpravy v tom, že jsou před skutečným uložit potvrzené ovládací prvek ( `TableAdapterManager.UpdateAll` metoda).
+<xref:System.Windows.Forms.BindingSource.EndEdit%2A> Volání potvrzení změny, které jsou v procesu, ve všech ovládacích prvcích vázaných na data, které jsou právě upravována. Proto, pokud ovládací prvek vázaný na data stále má fokus a klikněte na tlačítko **Uložit** tlačítko všechny čekající změny v tom, že ovládací prvek usilujeme o to před skutečné uložit ( `TableAdapterManager.UpdateAll` metoda).
 
-Vaše aplikace automaticky potvrzení změn, můžete nakonfigurovat, i když se uživatel pokusí o uložení dat bez potvrzení změn, jako součást uložení procesu.
+Vaše aplikace automaticky potvrzení změn, můžete nakonfigurovat i v případě, že uživatel pokusí uložit data bez potvrzení změn, uložení v rámci procesu.
 
 > [!NOTE]
-> Přidá návrháře `BindingSource.EndEdit` kódu pouze pro první položku umístění na formuláři. Proto je nutné přidat řádek kódu pro volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> na formuláři. Můžete ručně přidat řádek kódu pro volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource>. Alternativně můžete přidat `EndEditOnAllBindingSources` metoda formuláře a pojmenujte ji před provedením uložení.
+> Návrhář přidá `BindingSource.EndEdit` vynechán kód jenom pro první položku do formuláře. Proto je nutné přidat řádek kódu pro volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> ve formuláři. Můžete ručně přidat řádek kódu pro volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource>. Alternativně můžete přidat `EndEditOnAllBindingSources` metoda do formuláře a jeho volání před provedením uložení.
 
-Následující kód používá [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) dotaz pro všechny iterace <xref:System.Windows.Forms.BindingSource> součásti a volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> ve formuláři.
+Následující kód používá [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) dotaz, který iterovat všechny <xref:System.Windows.Forms.BindingSource> komponenty a volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> ve formuláři.
 
-## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>K volání EndEdit – pro všechny součásti BindingSource ve formuláři
+## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>Chcete-li volat EndEdit – pro všechny součásti BindingSource ve formuláři
 
-1.  Přidejte následující kód pro formulář, který obsahuje <xref:System.Windows.Forms.BindingSource> součásti.
+1.  Přidejte následující kód do formuláře, který obsahuje <xref:System.Windows.Forms.BindingSource> komponenty.
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
 
-2.  Přidejte následující řádek kódu bezprostředně před volání uložit data formuláře ( `TableAdapterManager.UpdateAll()` metoda):
+2.  Přidejte následující kód bezprostředně před všechna volání k uložení dat formuláře ( `TableAdapterManager.UpdateAll()` metoda):
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
-- [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Hierarchická aktualizace](../data-tools/hierarchical-update.md)

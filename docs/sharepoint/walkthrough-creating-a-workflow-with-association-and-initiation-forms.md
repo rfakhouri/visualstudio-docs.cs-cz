@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824733"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Průvodce: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
   Tento návod ukazuje, jak vytvořit základní sekvenční pracovní postup, který zahrnuje použití formuláře pro asociaci a. Jedná se o ASPX formuláře, které umožňují parametry se mají přidat do pracovního postupu, pokud je první související (formulář přidružení) správcem služby SharePoint a při spuštění pracovního postupu uživatelem (inicializační formulář).  
   
  Tento návod popisuje scénář, kdy uživatel chce vytvořit schvalovací pracovní postup pro vyúčtování, který má následující požadavky:  
@@ -453,4 +448,3 @@ ms.locfileid: "49873874"
 ## <a name="see-also"></a>Viz také:
  [Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [Návod: Přidání stránky aplikace do pracovního postupu](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  

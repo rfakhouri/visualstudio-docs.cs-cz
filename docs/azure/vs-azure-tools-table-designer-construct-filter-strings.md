@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ccba0314e51116b58aa44bd25309b921c47c8799
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 9010e3f08499b235d4cd4b02e929ab042dca2216
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954105"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Vytváření filtračních řetězců pro Návrháře tabulky
 ## <a name="overview"></a>Přehled
@@ -35,7 +34,7 @@ Pro všechny typy vlastností jsou podporovány následující logické operáto
 | lt |Menší než |Cena lt 20 |
 | Le |Menší nebo rovno |Cena le 100 |
 | Ne |Nerovná se |Ne City "Londýn" |
-| and |a |Cena le 200 a cena gt 3.5 |
+| and |A |Cena le 200 a cena gt 3.5 |
 | or |Nebo |Cena le 3.5 nebo cena gt 200 |
 | not |Not |není isAvailable |
 

@@ -2,7 +2,6 @@
 title: Úvod do WPF
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
@@ -13,14 +12,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955289"
 ---
-# <a name="wpf-overview"></a>Přehled WPF
+# <a name="wpf-overview"></a>Přehled grafického subsystému WPF (Windows Presentation Foundation)
 
 Windows Presentation Foundation (WPF) umožňuje vytvářet klasické pracovní plochy klienta aplikace pro Windows s vizuálně působivým uživatelským prostředím.
 
@@ -91,16 +90,16 @@ Hlavní chování aplikace je k implementaci funkcionality, která bude reagovat
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox 
 
 namespace SDKSample
 {
-    public partial class AWindow : Window
+    public partial class AWindow : Window
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
-            // that is defined in markup with this class, including  
+            // InitializeComponent call is required to merge the UI 
+            // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
         }
@@ -117,28 +116,28 @@ namespace SDKSample
 ```vb
 Namespace SDKSample
 
-    Partial Public Class AWindow
+    Partial Public Class AWindow
         Inherits System.Windows.Window
 
-        Public Sub New()
+        Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
-            ' that is defined in markup with this class, including  
+            ' InitializeComponent call is required to merge the UI 
+            ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub 
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub 
 
-    End Class 
+    End Class 
 
-End Namespace
+End Namespace
 ```
 
 V tomto příkladu modelu code-behind implementuje třídu, která je odvozena z <xref:System.Windows.Window> třídy. `x:Class` Atribut se používá k použití modelu code-behind třídě přiřadit značky. `InitializeComponent` je volána z konstruktoru třídy modelu code-behind sloučit uživatelského rozhraní, která je definována v kódu pomocí třídy modelu code-behind. (`InitializeComponent` se vygeneruje pro vás, když vaše aplikace je sestavena, proto není nutné provádět ručně.) Kombinace `x:Class` a `InitializeComponent` Ujistěte se, že implementace je správně inicializována pokaždé, když se vytvoří. Použití modelu code-behind třída také implementuje obslužné rutiny události na tlačítku pro <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí. Při kliknutí na tlačítko obslužná rutina události se zobrazí okno se zprávou voláním <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> metody.
@@ -199,7 +198,7 @@ Systém rozložení je přístupný podřízených ovládacích prvků prostřed
 
 - <xref:System.Windows.Controls.Canvas>: Podřízené ovládací prvky poskytují jejich vlastní rozložení.
 
-- <xref:System.Windows.Controls.DockPanel>: Podřízených ovládacích prvků je zarovnán okrajů panelu.
+- <xref:System.Windows.Controls.DockPanel>: Podřízené ovládací prvky je zarovnán okrajů panelu.
 
 - <xref:System.Windows.Controls.Grid>: Podřízené ovládací prvky jsou umístěny podle řádků a sloupců.
 

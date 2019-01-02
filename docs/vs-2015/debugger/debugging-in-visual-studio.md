@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -23,12 +22,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d38173e1060534edae580a1b12c43e2d8b3f047a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68a3646963f7ebbeea9c2ea3ac9a9c1f1729b23a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833893"
 ---
 # <a name="debugging-in-visual-studio"></a>Ladění v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +35,7 @@ Ladicí program sady Visual Studio pomáhá sledovat chování běhu programu a 
 
  Rychlý úvod k ladění a diagnostiku v sadě Visual Studio, naleznete v tématu [ladění, profilování a Diagnostika](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
--   [Co je nového v ladicím programu sady Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md) popisuje nové funkce v sadě Visual Studio 2015.
+-   [Co je nového v ladicím programu sady Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015) popisuje nové funkce v sadě Visual Studio 2015.
 
 -   [Ladicí program Windows](../debugger/debugger-windows.md)obsahuje jiný ladicí program systému windows.
 

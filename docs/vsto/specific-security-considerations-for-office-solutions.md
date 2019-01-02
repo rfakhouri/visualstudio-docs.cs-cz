@@ -1,9 +1,6 @@
 ---
 title: Specifické aspekty zabezpečení pro řešení pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33d827efa7dcc4e5590b4bc45fb0d6bd3fbe1432
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955539"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Specifické aspekty zabezpečení pro řešení pro systém Office
   Funkce zabezpečení poskytované rozhraní Microsoft .NET Framework a Microsoft Office může pomoct chránit vaše řešení pro systém Office proti možné bezpečnostní hrozby. Toto téma vysvětluje některé z těchto hrozeb a poskytuje doporučení, která pomáhá chránit před nimi. Obsahuje také informace o vlivu řešení pro systém Office v nastavení zabezpečení systému Microsoft Office.  
@@ -120,5 +117,3 @@ ms.locfileid: "49951389"
   
 ## <a name="see-also"></a>Viz také:  
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
-  
-  

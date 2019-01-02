@@ -2,7 +2,6 @@
 title: Ladění webových aplikací – chyby a řešení potíží
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,34 +27,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827414"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Ladění webových aplikací: chyby a řešení potíží
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Ladění webových aplikací: Chyby a řešení potíží
 Těmto chybám může dojít při pokusu o ladění webových aplikací.  
   
 -   [Odstraňování potíží](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [Chyba: Server používá IP adresu](../debugger/error-site-uses-ip-address.md)  
+-   [Chyba: Server používá adresu IP](../debugger/error-site-uses-ip-address.md)  
   
 -   [Chyba: Kontrola zabezpečení selhala, protože služba správy služby IIS neodpověděla.](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
--   [Chyba: Prostředí ASP.NET není nainstalované.](../debugger/error-aspnet-not-installed.md)  
+-   [Chyba: Prostředí ASP.NET není nainstalováno](../debugger/error-aspnet-not-installed.md)  
   
--   [Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povolené.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+-   [Chyba: Ladění se nezdařilo, protože ověření integrované Windows není povoleno.](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
 -   [Chyba: Webový server není správně nakonfigurován.](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
--   [Chyba: Webový server byl uzamčen a blokuje příkaz DEBUG.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+-   [Chyba: Webový Server byl uzamčen a blokuje příkaz DEBUG.](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
--   [Chyba: Během ladění webových služeb vypršel časový limit.](../debugger/error-timeout-while-debugging-web-services.md)  
+-   [Chyba: Během ladění webových služeb vypršel časový limit](../debugger/error-timeout-while-debugging-web-services.md)  
   
--   [Chyba: Nepodařilo se zahájit ladění na webovém serveru.](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+-   [Chyba: Nepodařilo se zahájit ladění na webovém serveru](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Ladění webových aplikací a skriptu](../debugger/debugging-web-applications-and-script.md)
+ [Ladění webových aplikací a skriptu](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

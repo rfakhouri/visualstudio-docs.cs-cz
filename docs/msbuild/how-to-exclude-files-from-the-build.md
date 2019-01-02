@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: vyloučení souborů ze sestavení | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vyloučení souborů ze sestavení | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833274"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Postupy: vyloučení souborů ze sestavení
+# <a name="how-to-exclude-files-from-the-build"></a>Postupy: Vyloučení souborů ze sestavení
 V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení zahrnout všechny soubory v jednom adresáři nebo vnořenou sadu adresáře. Ale může být jeden soubor v adresáři nebo jednoho adresáře v vnořenou sadu adresáře, které nechcete zahrnout jako vstupy pro sestavení. Tento soubor nebo adresář můžete explicitně vyloučit z seznam vstupů. V projektu, který chcete zahrnout za určitých podmínek může být také soubor. Můžete explicitně deklarovat podmínky, za kterých je soubor součástí sestavení.  
   
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Vyloučení souboru nebo adresáře ze vstupů pro sestavení  
@@ -127,4 +125,4 @@ V souboru projektu můžete použít zástupné znaky jako vstupy pro sestavení
 ## <a name="see-also"></a>Viz také:  
  [Položky](../msbuild/msbuild-items.md)   
  [Nástroj MSBuild](../msbuild/msbuild.md)   
- [Postupy: výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   
+ [Postupy: Výběr souborů pro sestavení](../msbuild/how-to-select-the-files-to-build.md)   

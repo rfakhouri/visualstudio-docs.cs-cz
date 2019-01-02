@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: ad784e0438e0b1f02607c3cb748c759b9266dbe6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824571"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Databázové projekty a aplikace datové vrstvy
 
@@ -29,9 +28,9 @@ Seznam vlastností databáze, které podporuje aplikace datové vrstvy, naleznet
 
 | Základní úlohy | Podpůrný obsah |
 | - | - |
-| **Spuštění vývoje aplikace datové vrstvy:** koncept aplikace datové vrstvy (DAC) byla zavedena v systému SQL Server 2008. DAC obsahuje definici pro databázi serveru SQL Server a podpůrné instance objektů, které jsou používány klient server nebo 3vrstvé aplikace. DAC obsahuje databázové objekty, jako jsou tabulky a zobrazení, společně s instanci entity, jako jsou přihlášení. Visual Studio můžete vytvořit projekt DAC, sestavení soubor balíčku DAC a odeslat soubor balíčku DAC správce databáze pro nasazení na instanci databázového stroje systému SQL Server. | - [Aplikace datové vrstvy](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Provádění databáze iterativní vývoj:** vývojáři mohli rezervovat částí projektu a jejich aktualizaci v izolované vývojové prostředí. Pomocí tohoto typu prostředí můžete otestovat provedené změny aniž by to ovlivnilo ostatní členové týmu. Po dokončení se změny, zkontrolujte soubory zpět do správy verzí, kde můžete získat provedené změny a sestavení a nasazení testovacího serveru ostatním členům týmu. | - [Vývoj projektů objektově orientovaný offline databáze (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Ladicí program Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Vytváření prototypů, ověření výsledcích testu a změny databáze skripty a objekty:** editoru jazyka Transact-SQL můžete použít k provádění kterékoli z těchto běžných úkolů. | - [Editory dotazu a text (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Zahájení vývoje aplikace datové vrstvy:** Koncept aplikace datové vrstvy (DAC) byla zavedena v systému SQL Server 2008. DAC obsahuje definici pro databázi serveru SQL Server a podpůrné instance objektů, které jsou používány klient server nebo 3vrstvé aplikace. DAC obsahuje databázové objekty, jako jsou tabulky a zobrazení, společně s instanci entity, jako jsou přihlášení. Visual Studio můžete vytvořit projekt DAC, sestavení soubor balíčku DAC a odeslat soubor balíčku DAC správce databáze pro nasazení na instanci databázového stroje systému SQL Server. | - [Aplikace datové vrstvy](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Provádění vývoj iterativní databází:** Vývojáři můžou projděte si části projektu a jejich aktualizaci v izolované vývojové prostředí. Pomocí tohoto typu prostředí můžete otestovat provedené změny aniž by to ovlivnilo ostatní členové týmu. Po dokončení se změny, zkontrolujte soubory zpět do správy verzí, kde můžete získat provedené změny a sestavení a nasazení testovacího serveru ostatním členům týmu. | - [Vývoj projektů objektově orientovaný offline databáze (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Ladicí program Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Vytváření prototypů ověřování výsledků testů a úpravy databázové skripty a objekty:** Editor jazyka Transact-SQL můžete použít k provádění kterékoli z těchto běžných úkolů. | - [Editory dotazu a text (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Viz také:
 

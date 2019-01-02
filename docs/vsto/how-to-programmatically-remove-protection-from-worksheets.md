@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Programová odemykání listů'
-ms.custom: ''
+title: 'Postupy: Programově odemykání listů'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956137"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Postupy: Programová odemykání listů
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Postupy: Programově odemykání listů
   Můžete programově odebrat ochranu z list aplikace Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,9 +45,7 @@ ms.locfileid: "35676524"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce s listy](../vsto/working-with-worksheets.md)   
- [Postupy: zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Postupy: zamykání sešitů](../vsto/how-to-programmatically-protect-workbooks.md)   
- [Postupy: skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Postupy: Zamykání listů](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [Postupy: Zamykání sešitů](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [Postupy: Skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Globální přístup k objektům v projektech pro systém Office](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: Cílové rozhraní .NET Framework
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 763e02dbd491e132dc91ec7a79717fab1e645d86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955198"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled možností cílení na více Visual Studio
 
@@ -68,13 +67,13 @@ Při vytváření projektu vyberte cílovou verzi rozhraní .NET Framework v **n
 
 ![Rozhraní Framework rozevírací seznam v dialogovém okně Nový projekt](media/vside-newproject-framework.png)
 
-V existujícím projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+V existujícím projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Přeložit odkazy na sestavení systémových a uživatelských
 
 K cílení na určitou verzi rozhraní .NET Framework, musíte nejprve nainstalovat odpovídající odkazy na sestavení. Můžete stáhnout balíčky pro vývojáře pro různé verze rozhraní .NET Framework [.NET stáhne](https://www.microsoft.com/net/download/windows) stránky.
 
-**Přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi tak, že není možné je přidat do projektu neúmyslně. (Systémová sestavení jsou *.dll* soubory, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze.) Odkazy, které patří do verze rozhraní, které je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, resetuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cíli projektu na takový, který obsahuje odkaz.  Další informace najdete v tématu [postupy: cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Přidat odkaz** dialogové okno zakáže sestavení systému, které se netýkají cílové [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi tak, že není možné je přidat do projektu neúmyslně. (Systémová sestavení jsou *.dll* soubory, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze.) Odkazy, které patří do verze rozhraní, které je vyšší než cílová verze, neposkytne řešení a ovládací prvky, které jsou závislé na takovém odkazu nelze přidat. Pokud chcete povolit takový odkaz, resetuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cíli projektu na takový, který obsahuje odkaz.  Další informace najdete v tématu [jak: Cílení na určitou verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Další informace o odkazech na sestavení naleznete v tématu [přeložit sestavení v době návrhu](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -85,4 +84,4 @@ Pokud je cílem rozhraní .NET Framework 3.5 nebo novější, odkaz na **System.
 ## <a name="see-also"></a>Viz také:
 
 - [Cílení na více verzí (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Postupy: Úprava na cílové rozhraní framework a sadu nástrojů platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Postupy: Upravit na cílové rozhraní framework a sadu nástrojů platformy (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

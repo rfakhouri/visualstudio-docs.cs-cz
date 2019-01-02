@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Programová hledání a nahrazování textu v dokumentech'
-ms.custom: ''
+title: 'Postupy: Programově hledání a nahrazování textu v dokumentech'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6de96133a810898fe847cce71bb2711dd7c31dd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823672"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Postupy: Programová hledání a nahrazování textu v dokumentech
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>Postupy: Programově hledání a nahrazování textu v dokumentech
   <xref:Microsoft.Office.Interop.Word.Find> Objektu je členem obou <xref:Microsoft.Office.Interop.Word.Selection> a <xref:Microsoft.Office.Interop.Word.Range> objektů a vy můžete použít buď pro hledání textu v dokumentech aplikace Microsoft Office Word. Příkaz replace je rozšířením najít příkaz.  
   
  Použít <xref:Microsoft.Office.Interop.Word.Find> objektu pro cyklický průchod dokument aplikace Microsoft Office Word a vyhledat konkrétní text, formátování a styl a použít <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> vlastnost pro nahrazení kterékoli z položek nalezen.  
@@ -120,9 +117,8 @@ ms.locfileid: "49822394"
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> nahradí první nalezené položky.  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: nastavování možností hledání v aplikaci Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Postupy: procházení nalezených položek v dokumentech prostřednictvím kódu programu smyčky](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Postupy: obnovení výběru po hledání prostřednictvím kódu programu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Postupy: Nastavování možností hledání v aplikaci Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Postupy: Procházení nalezených položek v dokumentech prostřednictvím kódu programu smyčky](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: Obnovení výběru po hledání prostřednictvím kódu programu](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  

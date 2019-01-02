@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytváření DataTable v Návrháři DataSet'
+title: 'Průvodce: Vytváření DataTable v návrháři datových sad'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824831"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Návod: Vytváření DataTable v návrháři datových sad
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Průvodce: Vytvoření datové tabulky v návrháři datových sad
 
 Tento návod popisuje, jak vytvořit <xref:System.Data.DataTable> (bez objektu TableAdapter) pomocí **Návrhář Dataset**. Informace o vytváření tabulek dat, které obsahují objekty TableAdapter najdete v tématu [vytvoření a konfigurace objektů TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
@@ -41,7 +40,7 @@ Tento návod popisuje, jak vytvořit <xref:System.Data.DataTable> (bez objektu T
 
 1.  Na **projektu** nabídce vyberte možnost **přidat novou položku**.
 
-     **Přidat novou položku** zobrazí se dialogové okno.
+     Zobrazí se dialogové okno **Přidat novou položku**.
 
 2.  V levém podokně vyberte **Data**a pak vyberte **datovou sadu** v prostředním podokně.
 

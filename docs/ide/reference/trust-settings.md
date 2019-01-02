@@ -6,7 +6,6 @@ ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +14,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 17b204a54e2ecd52438f6a05f5190a6ee0f396f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955604"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Konfigurace nastavení vztahu důvěryhodnosti pro soubory a složky
 
@@ -41,7 +40,7 @@ Chcete-li změnit nastavení vztahu důvěryhodnosti, postupujte podle těchto k
 
    * **Ověřte označit atribut webové**: Pokud je soubor nebo složku označen atribut webové, Visual Studio a ostatní porty blokuje požádá o oprávnění k otevření.
 
-   * **Ověřte cestu je důvěryhodný**: Pokud soubor nebo složku, cesta není součástí **důvěryhodné cesty** seznamu, sady Visual Studio a ostatní porty blokuje požádá o oprávnění k otevření.
+   * **Ověřte cestu je důvěryhodný**: Pokud cestu souboru nebo složky, které nejsou součástí sady **důvěryhodné cesty** seznamu, sady Visual Studio a ostatní porty blokuje požádá o oprávnění k otevření.
 
    ![Možnosti ověřování vztahu důvěryhodnosti](media/trust-settings.png)
 

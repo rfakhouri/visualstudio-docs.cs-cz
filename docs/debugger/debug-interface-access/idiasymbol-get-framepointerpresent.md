@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_framepointerpresent – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 283674d2bccc81d409db59df04631240e78000cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40464f1c9628fca9a7cd3a0d911c32efef9666a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959141"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 Získá příznak, který určuje, zda je k dispozici ukazatel na rámec. Použít, když [symtagenum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastavena na `SymTagFunction`.  
@@ -27,7 +25,7 @@ Získá příznak, který určuje, zda je k dispozici ukazatel na rámec. Použ�
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_framePointerPresent(   
+HRESULT get_framePointerPresent(   
    BOOL* pRetVal  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_framePointerPresent(
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   

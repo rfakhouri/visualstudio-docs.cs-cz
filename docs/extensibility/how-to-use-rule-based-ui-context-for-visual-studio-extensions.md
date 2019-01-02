@@ -1,6 +1,5 @@
 ---
-title: 'Postupy: použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření sady Visual Studio | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití kontextu uživatelského rozhraní založeného na pravidlo pro rozšíření sady Visual Studio | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,14 +7,14 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866347"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824285"
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: použití založený na pravidlech kontextu uživatelského rozhraní pro rozšíření sady Visual Studio
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: Použít pravidlo na základě kontextu uživatelského rozhraní pro rozšíření sady Visual Studio
 Visual Studio umožňuje načítání rozšíření VSPackages při některých dobře známé <xref:Microsoft.VisualStudio.Shell.UIContext>s aktivují. Kontexty uživatelského rozhraní nejsou jemné grained, což ponechá autoři rozšíření žádná volba ale vybrat k dispozici kontextu uživatelského rozhraní, který se aktivuje před bodem VSPackage načíst opravdu chtěli. Seznam dobře známé uživatelské rozhraní kontextech najdete v tématu <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Načítají se balíčky může mít dopad na výkon a jejich načtení dřív, než je potřeba není nejlepším postupem. Visual Studio 2015 představil nový koncept kontexty uživatelského rozhraní založeného na pravidlech, mechanismus, který umožňuje autorům rozšíření určit přesné podmínky, za kterých se aktivuje kontextu uživatelského rozhraní a jsou načteny přidružené balíčky VSPackages.  
@@ -44,7 +43,7 @@ Visual Studio umožňuje načítání rozšíření VSPackages při některých 
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
    ```  
   
-    Atributy, přidejte následující hodnoty: (podrobnosti o těchto atributů budou vysvětlena dále)  
+    Atributy přidejte následující hodnoty: (Podrobnosti o těchto atributů budou vysvětlena dále)  
   
    ```csharp  
    [ProvideAutoLoad(TestPackage.UIContextGuid)]      

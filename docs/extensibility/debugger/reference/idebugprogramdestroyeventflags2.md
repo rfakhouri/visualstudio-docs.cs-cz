@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
-ms.custom: ''
+title: IDebugProgramDestroyEventFlags2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6b57206159ce00fbb79e9f9af1a6353588df76c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3d0385af4ec795608672d8d7cbdb4b188246dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825851"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Umožňuje přepsat výchozí chování stroj ladění [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uživatelského rozhraní při ukončení relace ladění.  
+Umožňuje ladicí stroj přepsat výchozí chování [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uživatelského rozhraní při ukončení relace ladění.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,21 +27,21 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní je implementováno modulem ladění moduly. Je užitečné pro hostitele, kteří mohou vytvořit a zrušení více programů během životního cyklu procesu.  
+ Toto rozhraní je implementováno ladicí stroj. Je užitečné pro hostitele, kteří mohou vytvořit a zničit více programů během životního cyklu procesu.  
   
 ## <a name="methods"></a>Metody  
- Následující tabulka uvádí metody `IDebugProgramDestroyEventFlags2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugProgramDestroyEventFlags2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Getflags –](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Načte program destroy příznaky.|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Načte program zničit příznaky.|  
   
 ## <a name="remarks"></a>Poznámky  
- Výchozí chování [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uživatelského rozhraní je přejděte zpět do režimu návrhu po všechny programy odeslali program destroy událostí. Toto rozhraní umožňuje modul ladění, chcete-li toto chování změnit.  
+ Výchozí chování [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uživatelského rozhraní je chcete přejít zpátky do režimu návrhu po všech programů odeslali program zrušení události. Toto rozhraní umožňuje ladicí stroj ke změně tohoto chování.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll

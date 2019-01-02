@@ -3,7 +3,6 @@ title: Použití šablon CookieCutter s Pythonem
 description: Visual Studio podporuje grafické Cookiecutter rozšíření ke zjištění šablony pro kód Python a vytváření projektů z těch šablon.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958232"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Použití rozšíření Cookiecutter
 
@@ -92,8 +91,8 @@ Základní informace o vytváření šablony Cookiecutter, najdete v článku [C
 
 Výchozí vykreslování proměnné šablony závisí na typu dat (řetězce nebo seznamu):
 
-- Řetězec: Popisek název proměnné, textovým polem pro zadání hodnoty a vodoznak znázorňující výchozí hodnotu. Popisek v textovém poli se zobrazí výchozí hodnota.
-- Seznamu: Popisek pro název proměnné, pole se seznamem pro výběr hodnotu. Popisek tlačítka na pole se seznamem ukazuje výchozí hodnotu.
+- Řetězec: Popisek názvu proměnné, textovým polem pro zadání hodnoty a vodoznak znázorňující výchozí hodnotu. Popisek v textovém poli se zobrazí výchozí hodnota.
+- Seznam: Popisek názvu proměnné pole se seznamem pro výběr hodnotu. Popisek tlačítka na pole se seznamem ukazuje výchozí hodnotu.
 
 Je možné zvýšit na tomto vykreslování tak, že zadáte další metadata v vaše *cookiecutter.json* soubor, který je specifické pro Visual Studio (a ignorována Cookiecutter rozhraní příkazového řádku). Všechny vlastnosti jsou volitelné:
 
@@ -102,7 +101,7 @@ Je možné zvýšit na tomto vykreslování tak, že zadáte další metadata v 
 | Popisek | Určuje, co se zobrazí nad editor pro proměnnou, ne v názvu proměnné. |
 | Popis | Určuje popis, který se zobrazí v textovém poli, namísto výchozí hodnoty pro tuto proměnnou. |
 | Adresa URL | Změní popisek hypertextového odkazu, se popisek, který zobrazuje adresu URL. Kliknutím na hypertextový odkaz otevře výchozí prohlížeč uživatele pro tuto adresu URL. |
-| Selektor | Umožňuje přizpůsobit editor pro proměnnou. Aktuálně jsou podporovány následující selektory:<ul><li>`string`: Standardního textového pole, výchozí hodnoty pro řetězce.</li><li>`list`: Pole se seznamem standardní, výchozí hodnoty pro seznamy.</li><li>`yesno`: Pole se seznamem si vybrat mezi `y` a `n`, pro řetězce.</li><li>`odbcConnection`: Textového pole **...**  tlačítko, které se otevře dialogové okno připojení databáze.</li></ul> |
+| Selektor | Umožňuje přizpůsobit editor pro proměnnou. Aktuálně jsou podporovány následující selektory:<ul><li>`string`: Standardního textového pole, výchozí hodnoty pro řetězce.</li><li>`list`: Standard – pole se seznamem, výchozí hodnoty pro seznamy.</li><li>`yesno`: Pole se seznamem si vybrat mezi `y` a `n`, pro řetězce.</li><li>`odbcConnection`: Textové pole s **...**  tlačítko, které se otevře dialogové okno připojení databáze.</li></ul> |
 
 Příklad:
 

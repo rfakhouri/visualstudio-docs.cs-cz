@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: Vytváření typů s povolenou hodnotou Null (návrhář tříd)'
+title: 'Postupy: Vytvoření typu s možnou hodnotou Null (návrhář tříd)'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953034"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Postupy: vytvoření typu s možnou hodnotou Null v Návrháři tříd
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Postupy: Vytvoření typu s možnou hodnotou Null v Návrháři tříd
 
 Některé typy hodnot ne vždy mají (nebo potřebujete) definovanou hodnotu. To je běžný postup v databázích, ve kterém některá pole nemůže být přiřazen žádnou hodnotu. Můžete například přiřadit hodnotu null do pole databáze místo, že ho nebyl dosud byla přiřazena hodnota.
 
@@ -92,5 +91,5 @@ Další informace o typech s povolenou hodnotou Null v jazyce C# najdete v téma
 - <xref:System.Nullable%601>
 - [Typy s povolenou hodnotou Null](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Použití typů s povolenou hodnotou Null](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Postupy: Identifikace typu s povolenou hodnotou Null](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Postupy: Identifikace typu s možnou hodnotou Null](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Typy hodnot s povolenou hodnotou Null](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

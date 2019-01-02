@@ -1,9 +1,6 @@
 ---
-title: FeatureProperties – Element | Microsoft Docs
-ms.custom: ''
+title: FeatureProperties – Element | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,15 +12,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36324994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955669"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties – element
-  Kolekce hodnot vlastností, které jsou součástí funkce při nasazení do služby SharePoint. Po nasazení funkce můžete přistupovat hodnoty vlastností v kódu.  
+  Kolekce hodnot vlastností, které jsou součástí funkce, když se nasadí do služby SharePoint. Po nasazení funkce můžete přistupovat hodnoty vlastností v kódu.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,28 +40,26 @@ ms.locfileid: "36324994"
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[FeatureProperty –](../sharepoint/featureproperty-element.md)|Volitelný element.<br /><br /> Představuje vlastní vlastnost, ve formátu klíč/hodnota.|  
+|[FeatureProperty –](../sharepoint/featureproperty-element.md)|Volitelný element.<br /><br /> Představuje vlastní vlastnosti ve formátu klíč/hodnota.|  
   
 ### <a name="parent-elements"></a>Nadřazené prvky
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element požadovaný kořenový element z `.spdata` souboru.|  
+|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položku Sharepointového projektu. Tento prvek požadovaný kořenový element z `.spdata` souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
- Další informace o vlastnosti funkcí najdete v tématu [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
+ Další informace o vlastnosti funkce, najdete v části [poskytují informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
 ## <a name="element-information"></a>Informace o elementu
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010 nebo SharePointTools/SharePointProjectItemModel|  
-|**Název schématu**|Schéma položky projektu SharePoint|  
-|**Ověření souboru**|ProjectItemModelSchema.xsd|  
-|**Nesmí být prázdné**|Ne|  
+|**Namespace**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**Název schématu**|Schéma položky projektu služby SharePoint|  
+|**Soubor ověření**|ProjectItemModelSchema.xsd|  
+|**Může být prázdný**|Ne|  
   
 ## <a name="see-also"></a>Viz také:
  [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [Zadejte informace o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  
+ [Zadání informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  

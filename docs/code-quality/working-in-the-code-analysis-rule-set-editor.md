@@ -2,7 +2,6 @@
 title: Použití editoru sad pravidel analýzy kódu
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd80031530049b204c0befc445c1416aa08b43e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826033"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Použití editoru sad pravidel analýzy kódu
 
@@ -31,7 +30,7 @@ V následující tabulce jsou uvedeny možnosti závažnost:
 |Chyba|Dojde k chybě v **seznam chyb** a také v okamžiku sestavení.|
 |Informace o|Generuje zprávu ve **seznam chyb**.|
 |Hidden|Porušení zásad není viditelné pro uživatele. Rozhraní IDE je informováni o porušení zásad, ale.|
-|Žádné|Toto pravidlo je potlačeno. Chování je stejné jako v případě, že pravidlo se odebral ze sady pravidel.|
+|Žádná|Toto pravidlo je potlačeno. Chování je stejné jako v případě, že pravidlo se odebral ze sady pravidel.|
 
 Editor zobrazí pravidla ve stromové struktuře, která skupiny pravidla pomocí pravidla nastavena pole, které určíte. Chcete-li přidat nebo odebrat pravidla sadu pravidel, proveďte jeden nebo více z následujících kroků:
 
@@ -73,7 +72,7 @@ Následující tabulka popisuje pole sadu pravidel:
 |-----------|-----------------|
 |**ID**|Identifikátor pravidla.|
 |**Kategorie**|Kromě jejich členství v sadách pravidel pravidel analýzy kódu také jsou seskupené podle kategorie. Další informace najdete v tématu [upozornění analýzy kódu](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Jméno**|Název pravidla.|
+|**Název**|Název pravidla.|
 |**Namespace**|Obor názvů pravidla.|
 |**Cílový typ**|Označuje, zda pravidlo je pro nativní, spravované nebo databáze kódu.|
 |**Akce**|Akce provedená v případě porušení pravidla analýzy kódu, spusťte. Můžete upravit **akce** pole.|

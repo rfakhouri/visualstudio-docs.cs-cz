@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: hledání vlákna v zobrazení vláken | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání vlákna v zobrazení vláken | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e16d0edce411192f7b6e40bd0e5fedb32bfac5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832161"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Postupy: Hledání vlákna v zobrazení vláken
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Postupy: Hledání vlákna v zobrazení vláken
 Můžete vyhledat konkrétního vlákna v zobrazení vláken pomocí jeho ID nebo modul řetězec vlákna jako kritéria hledání. Můžete také zadat počáteční směr hledání. Pole v dialogovém okně zobrazí atributy zvoleném vlákně ve stromové struktuře vlákna.  
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>Hledání vlákna v zobrazení vláken  
@@ -39,6 +37,6 @@ Můžete vyhledat konkrétního vlákna v zobrazení vláken pomocí jeho ID neb
   
 5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-6. Klikněte na tlačítko **OK**.  
+6. Klikněte na **OK**.  
   
    Pokud se najde odpovídající vlákno je zvýrazněn v okně zobrazení vláken.

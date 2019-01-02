@@ -3,7 +3,6 @@ title: Prostředky pro navržení aplikací usnadňujících přístup
 description: Informace o vytvoření přístupných aplikací pro snadnější pro osoby s postižením používat.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959622"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 
@@ -37,7 +36,7 @@ Použijte na následujících odkazech najdete informace o technologiích, kter�
 
 ## <a name="windows-applications"></a>Aplikace systému Windows
 
-* **[Návod: Vytvoření přístupné aplikace založené na Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  Tento článek obsahuje podrobné pokyny, včetně pět požadavků usnadnění přístupu pro logo "Certified pro Windows" ve Windows ukázky aplikace.
+* **[Návod: Vytvoření přístupné aplikace založené na Windows](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**  Tento článek obsahuje podrobné pokyny, včetně pět požadavků usnadnění přístupu pro logo "Certified pro Windows" v ukázkové aplikaci Windows.
 
 * **Návrh rozhraní pokyny pro uživatele klávesnice** Tento technický článek popisuje, jak navrhovat aplikace Windows, který mohou uživatelé přejít z klávesnice. Další informace najdete v tématu [návrh rozhraní pokyny pro uživatele klávesnice](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -45,7 +44,7 @@ Použijte na následujících odkazech najdete informace o technologiích, kter�
 
 ## <a name="websites"></a>Weby
 
--   [Návod: Přístupnosti pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Tento článek obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky. Dává také některé usnadnění tipů pro Web.
+-   [Návod: Pokyny pro usnadnění přístupu pomocí ovládacích prvků obrázek, ovládací prvky nabídky a AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Tento článek obsahuje podrobné pokyny, včetně dostupné ovládací prvky v ukázkové webové stránky. Dává také některé usnadnění tipů pro Web.
 
 -   **Vytvoření přístupných webových stránek pomocí DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou k dispozici a také tipy pro návrh přístupné webu. Další informace najdete v tématu [vytvářet přístupné webové stránky s DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
 

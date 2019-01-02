@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b11aec1291847e917ad7c5d53ad81a3a5b37390
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f04e52ed3198c37f19cd5cf1ce9eb334446c6d52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959401"
 ---
 # <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express součástí adresáře
 
@@ -36,7 +35,7 @@ Všimněte si také následující stránka:
 * Pokud budete chtít, můžete nainstalovat také **doporučená** a **volitelné** komponenty.
 * Přidali jsme také oddíl, který obsahuje další součásti, které nejsou pod něj nespadá u jakékoli úlohy.
 
-Když nastavíte závislosti v manifestu VSIX, je nutné zadat ID součástí pouze. Určení závislostí naše minimální součástí pomocí tabulek na této stránce. V některých případech to může znamenat, že zadáváte pouze jednu komponentu z pracovního vytížení. V jiných scénářích může znamenat, že zadáte více komponent z jedné úlohy nebo více komponent z více úloh. Další informace najdete v tématu [postupy: migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
+Když nastavíte závislosti v manifestu VSIX, je nutné zadat ID součástí pouze. Určení závislostí naše minimální součástí pomocí tabulek na této stránce. V některých případech to může znamenat, že zadáváte pouze jednu komponentu z pracovního vytížení. V jiných scénářích může znamenat, že zadáte více komponent z jedné úlohy nebo více komponent z více úloh. Další informace najdete v tématu [jak: Migrace projektů rozšíření do sady Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) stránky.
 
 Další informace o tom, jak pomocí těchto identifikátorů najdete v části [pomocí parametrů příkazového řádku instalace sady Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) stránky. A seznam pracovního vytížení a komponenta ID pro ostatní produkty, naleznete v tématu [funkcí sady Visual Studio 2017 a ID součástí](workload-and-component-ids.md) stránky.
 
@@ -44,7 +43,7 @@ Další informace o tom, jak pomocí těchto identifikátorů najdete v části 
 
 **ID:** Microsoft.VisualStudio.Workload.WDExpress
 
-**Popis:** vytvářet nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav, správy zdrojového kódu podle syntaxe kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++.
+**Popis:** Vytvářejte nativní a spravované aplikace jako WPF, WinForms a Win32 pomocí úprav kódu podle syntaxe, správy zdrojového kódu a správy pracovních položek. Zahrnuje podporu pro C#, Visual Basic a Visual C++.
 
 ### <a name="components-included-by-this-workload"></a>Pomocí této úlohy zahrnuté komponenty
 

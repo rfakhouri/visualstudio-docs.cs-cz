@@ -1,8 +1,6 @@
 ---
 title: '&lt;soubor&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b516a8e63d29f91b3404e8e62d910ca18ca69c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828300"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;soubor&gt; – element (aplikace ClickOnce)
 Identifikuje všechny soubory nonassembly stáhli a použili aplikací.  
@@ -90,8 +88,8 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`name`|Požadováno. Určuje název souboru.|  
-|`size`|Požadováno. Určuje velikost v bajtech souboru.|  
+|`name`|Povinný parametr. Určuje název souboru.|  
+|`size`|Povinný parametr. Určuje velikost v bajtech souboru.|  
 |`group`|Volitelné, pokud `optional` atribut není zadán, nebo nastavte `false`; požadováno pokud `optional` je `true`. Název skupiny, do které tento soubor patří. Název může být libovolná hodnota řetězce Unicode zvolený vývojářem a slouží pro stahování souborů na vyžádání s využitím <xref:System.Deployment.Application.ApplicationDeployment> třídy.|  
 |`optional`|Volitelné. Určuje, zda musí tento soubor ke stažení aplikace při prvním spuštění nebo zda soubor by měl být uložen pouze na serveru dokud aplikace nevyžaduje na vyžádání. Pokud `false` nebo nedefinovaný, soubor se stáhne, při prvním spuštění nebo nainstalované aplikace. Pokud `true`, `group` platný manifest aplikace se musí zadat. `optional` nemůže být true, pokud `writeableType` určena s hodnotou `applicationData`.|  
 |`writeableType`|Volitelné. Určuje, že tento soubor je soubor datovým souborem. Momentálně je jediná platná hodnota `applicationData`.|  
@@ -101,9 +99,9 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`tlbid`|Požadováno. Identifikátor GUID přiřazený do knihovny typů.|  
-|`version`|Požadováno. Číslo verze knihovny typů.|  
-|`helpdir`|Požadováno. Adresář, který obsahuje soubory nápovědy pro komponentu. Může být nulové délky.|  
+|`tlbid`|Povinný parametr. Identifikátor GUID přiřazený do knihovny typů.|  
+|`version`|Povinný parametr. Číslo verze knihovny typů.|  
+|`helpdir`|Povinný parametr. Adresář, který obsahuje soubory nápovědy pro komponentu. Může být nulové délky.|  
 |`resourceid`|Volitelné. Šestnáctkový řetězec reprezentuje identifikátor národního prostředí (LCID). Je jednou až čtyřmi šestnáctkovými číslicemi bez předpony 0 x a bez počátečních nul. Identifikátor LCID může mít identifikátor dílčího neutrální.|  
 |`flags`|Volitelné. Řetězcová reprezentace příznaků knihovny typů pro tuto knihovnu typů. Konkrétně je třeba použít jeden "OMEZENO", "CONTROL", "HIDDEN" a "HASDISKIMAGE".|  
 
@@ -112,7 +110,7 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`clsid`|Požadováno. ID třídy komponenty modelu COM, vyjádřený jako identifikátor GUID.|  
+|`clsid`|Povinný parametr. ID třídy komponenty modelu COM, vyjádřený jako identifikátor GUID.|  
 |`description`|Volitelné. Název třídy.|  
 |`threadingModel`|Volitelné. Model vláken používané třídy modelu COM v procesu. Pokud tato vlastnost hodnotu null, použije se bez modelu vláken. Komponenta je vytvořena na hlavním vlákně klienta a volání z jiných vláken, které jsou zařazeny do tohoto vlákna. Následující seznam uvádí platné hodnoty:<br /><br /> `Apartment`, `Free`, `Both`, a `Neutral`.|  
 |`tlbid`|Volitelné. Identifikátor GUID pro knihovnu typů pro tuto součást COM.|  
@@ -128,7 +126,7 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`iid`|Požadováno. Rozhraní ID (IID), které obsluhují tento proxy server. Identifikátor IID musí mít složené závorky okolní infrastrukturou.|  
+|`iid`|Povinný parametr. Rozhraní ID (IID), které obsluhují tento proxy server. Identifikátor IID musí mít složené závorky okolní infrastrukturou.|  
 |`baseInterface`|Volitelné. Identifikátor IID rozhraní, ze kterého rozhraní odkazuje `iid` pochází.|  
 |`numMethods`|Volitelné. Počet metod implementovaných rozhraní.|  
 |`name`|Volitelné. Název rozhraní tak, jak se zobrazí v kódu.|  
@@ -140,7 +138,7 @@ Identifikuje všechny soubory nonassembly stáhli a použili aplikací.
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`iid`|Požadováno. Rozhraní ID (IID), které obsluhují tento proxy server. Identifikátor IID musí mít složené závorky okolní infrastrukturou.|  
+|`iid`|Povinný parametr. Rozhraní ID (IID), které obsluhují tento proxy server. Identifikátor IID musí mít složené závorky okolní infrastrukturou.|  
 |`baseInterface`|Volitelné. Identifikátor IID rozhraní, ze kterého rozhraní odkazuje `iid` pochází.|  
 |`numMethods`|Volitelné. Počet metod implementovaných rozhraní.|  
 |`Name`|Volitelné. Název rozhraní tak, jak se zobrazí v kódu.|  

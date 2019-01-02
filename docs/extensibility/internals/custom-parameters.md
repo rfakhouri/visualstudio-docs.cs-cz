@@ -1,9 +1,6 @@
 ---
 title: Vlastní parametry | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101076eb863294fe84ffed26d308f67110b90a33
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c8c243490a88010031bad91d6b45fe5645d21e6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826358"
 ---
 # <a name="custom-parameters"></a>Vlastní parametry
 Vlastní parametry řídí provoz průvodce po spuštění průvodce. Se souvisejícím *.vsz* souboru poskytují celou řadu uživatelem definované parametry, které jsou zabaleny pomocí integrovaného vývojového prostředí (IDE) a předána průvodci jako pole řetězců, které při spuštění průvodce. Průvodce potom analyzuje pole řetězců a informace používá k řízení skutečné činnosti průvodce. Tímto způsobem můžete průvodce přizpůsobit funkce v závislosti na obsah *.vsz* souboru.  

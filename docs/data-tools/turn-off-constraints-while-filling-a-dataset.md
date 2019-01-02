@@ -19,39 +19,38 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: aaf566c211cd79657b67a5af72d53c718cd2507a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951456"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Vypnutí omezení při naplňování datové sady
 
-Obsahuje-li datovou sadu omezení (například omezení cizího klíče), může být spojeno chyby související pracovního operace, které jsou provedeny s datovou sadu. Například načítání podřízené záznamy před načtením související nadřazené záznamy můžete porušení omezení a způsobit chybu. Při načítání na podřízený záznam, omezení kontroluje související nadřazený záznam a vyvolá chybu.
+Pokud datová sada obsahuje omezení (například omezení foreign key), mohou vyvolat chyby související s odpovídajícího pořadí operací, které jsou provedeny datové sadě. Načítají se podřízené záznamy před načtením související například nadřazené záznamy může narušit omezení a způsobit chybu. Jakmile načtete podřízený záznam, omezení kontroluje související nadřazený záznam a vyvolá chybu.
 
-Kdyby existovalo žádný mechanismus pro povolit omezení pro dočasné pozastavení, by pokaždé, když jste se pokusili načíst záznamu do tabulky podřízené vyvolána chyba. Je také možné pozastavit všechna omezení v datové sadě s <xref:System.Data.DataRow.BeginEdit%2A>, a <xref:System.Data.DataRow.EndEdit%2A> vlastnosti.
+Kdyby existovalo žádný mechanismus pro omezení dočasné pozastavení, by vyvolána chyba pokaždé, když se pokusila načíst záznam do podřízené tabulky. Dalším způsobem, jak pozastavit všechna omezení v datové sadě je <xref:System.Data.DataRow.BeginEdit%2A>, a <xref:System.Data.DataRow.EndEdit%2A> vlastnosti.
 
 > [!NOTE]
-> Události ověření (například <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging>) nebude se vyvolá, když jsou vypnuté omezení.
+> Události ověření (třeba <xref:System.Data.DataTable.ColumnChanging> a <xref:System.Data.DataTable.RowChanging>) nebude vyvolána, když jsou vypnuté omezení.
 
-## <a name="to-suspend-update-constraints-programmatically"></a>Pozastavení omezení aktualizace prostřednictvím kódu programu
+## <a name="to-suspend-update-constraints-programmatically"></a>Pozastavit aktualizace omezení prostřednictvím kódu programu
 
--   Následující příklad ukazuje, jak chcete dočasně vypnout kontrolu v datové sadě omezení:
+-   Následující příklad ukazuje, jak dočasně vypnout kontrolu v datové sadě omezení:
 
      [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
      [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
 
-## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Pozastavení omezení aktualizace pomocí návrháře Dataset
+## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Pozastavit aktualizace omezení pomocí návrháře datových sad
 
-1.  Otevřete datovou sadu v **návrháře Dataset**. Další informace najdete v tématu [návod: vytvoření datové sady v Návrháři Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1.  Otevřete svou datovou sadu v **Návrhář Dataset**. Další informace najdete v tématu [názorný postup: Vytvoření datové sady v návrháři datových sad](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  V **vlastnosti** nastavte <xref:System.Data.DataSet.EnforceConstraints%2A> vlastnost `false`.
+2.  V **vlastnosti** okno, nastaveno <xref:System.Data.DataSet.EnforceConstraints%2A> vlastnost `false`.
 
 ## <a name="see-also"></a>Viz také:
 
-- [Vyplnění datové sady s použitím objektů TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-- [Vztahy v datových sadách](../data-tools/relationships-in-datasets.md)
+- [Vyplnění datových sad pomocí objektů TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+- [Relace v datových sadách](../data-tools/relationships-in-datasets.md)

@@ -1,9 +1,6 @@
 ---
-title: Zdroj ovládacího prvku modulu Plug-in Glosář | Microsoft Docs
-ms.custom: ''
+title: Glosář modulu Plug-in ovládací prvek zdroje | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
@@ -14,58 +11,58 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfd4cbbbca86d3b6e93d9998410c5dea117328d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdd9cd8ee037b376b086def1464888f1ae6e11f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826835"
 ---
-# <a name="source-control-plug-in-glossary"></a>Modul Plug-in Glosář zdroj ovládacího prvku
-Následující užitečné termíny a definice se týkají dokumentace zdroj ovládacího prvku Plug-in SDK.  
+# <a name="source-control-plug-in-glossary"></a>Glosář modulu plug-in zdrojového kódu
+Užitečné následující pojmy a definice se vztahují k dokumentaci zdrojového ovládacího prvku modulu Plug-in SDK.  
   
 ## <a name="definitions"></a>Definice  
  Vrácení se změnami  
- Když uživatel provede změny pracovní kopie, musí uživatel odešle změny z je pracovní kopie do úložiště správy centrální zdrojů. Tím se vytvoří novou revizi souboru, který je k dispozici jiným uživatelům. Tento proces se nazývá vrátit se změnami.  
+ Když uživatel provede změny do funkční kopie, musí uživatel odeslat změny z pracovní kopie do úložiště správy centrální zdrojového kódu. Tím se vytvoří nová revize souboru, který je k dispozici jiným uživatelům. Tento proces se nazývá vrácení se změnami.  
   
  Rezervovat  
- V rámci požadavku kopírování pracovní z úložiště, informuje o úložišti vašich představ, jak v hotové. Pracovní kopie odráží stav projektu od okamžiku, kdy je rezervována.  
+ V rámci žádosti o pracovní kopie v úložišti informuje úložiště vaším záměrem jej upravit. Pracovní kopie odráží stav projektu od okamžiku, kdy je rezervován.  
   
  Klient  
- Program, který používá systém správy zdrojového kódu. Pro účely této dokumentace je Visual Studio IDE.  
+ Program, který využívá systém správy zdrojového kódu. Pro účely této dokumentace je integrované vývojové prostředí sady Visual Studio.  
   
  Komentář  
- Zpráva popisující změny, které uživatel může připojit k revizi při operaci správy zdrojů.  
+ Zpráva popisující změny, které uživatel může připojit k revizi při provádění operaci správy zdrojových kódů.  
   
  Konflikt  
- Stav, pokud dva uživatelé pokusí vrátit se změnami do stejné oblasti stejného souboru. Obvykle je nutné provést sloučení.  
+ Situace, když dva uživatelé pokusí vrátit se změnami do stejné oblasti stejného souboru. Obvykle musí být provedeno sloučení.  
   
  Adresář  
- Do místní složky klienta se označuje jako adresář. Toto je kopie, ve kterém uživatel ve skutečnosti provede změny. Může být mnoho pracovní kopie daného projektu. Každý vývojář má obvykle své aplikace.  
+ Místní složky na straně klienta se označuje jako adresář. Toto je kopírování, ve kterém uživatel ve skutečnosti provádí změny. Může být mnoho pracovních kopií daného projektu. obecně každý vývojář má svůj vlastní kopie.  
   
- GET  
- Operace získání přináší uživatele pracovní kopie aktuální s kopii úložiště. Na rozdíl od checkout se provádí get, když uživatel jednoduše vyžaduje nejnovější kopie, ale v úmyslu provést žádné změny.  
+ získat  
+ Operace get přináší uživatele pracovní kopie aktuální kopii úložiště. Na rozdíl od checkout get provést, pokud se uživatel jednoduše potřebuje nejnovější ale si klade za cíl neprovádějte žádné změny.  
   
  Historie  
- Obvykle je souhrn všech rezervace, vrácení se změnami, aktualizace, značky a verzí v úložiště řízení zdrojů.  
+ Obvykle je souhrn všech rezervace, vrácení se změnami, aktualizace, značky a verzí v úložišti správy zdrojů.  
   
  IDE – integrované vývojové prostředí  
- Obecně odkazuje na Visual Studio integrované vývojové prostředí. Však může také podívat na jiných prostředích klienta, které rozhraní API ovládacího prvku Plug-in Zdroj rozpoznat.  
+ Obvykle odkazuje na Visual Studio integrované vývojové prostředí. Ale může také odkazovat na jiné prostředí klienta, které rozhraní API modulu Plug-in zdroje ovládacího prvku.  
   
  Sloučit  
- Proces během dvou nebo více zdroje spojení souborů kód k vytvoření nového souboru, která zahrnuje všechny funkce z předchozí soubory. Tento koncept je důležité ve správě verzí, kde dva nebo více vývojářů práci soubory současně.  
+ Proces, během kterého nejmíň dva zdroje jsou soubory kódu se spojí dohromady a tvoří nový soubor, který zahrnuje všechny funkce z předchozí soubory. Tento koncept je důležité ve správě verzí místo, kde dva nebo více vývojáři pracovat na souborech současně.  
   
  Projekt  
- Zdrojové složky ovládací prvek se často označuje jako projekt. To nemá žádný vztah s řešeními nebo projekty v sadě Visual Studio.  
+ Složku správy zdrojového kódu se často označuje jako projekt. To nemá žádný vztah s projekty nebo řešení v sadě Visual Studio.  
   
- modul plug-in  
- Knihovnu DLL, kterou poskytuje funkce správy zdrojového implementací rozhraní API ovládacího prvku Plug-in zdroje.  
+ Modul plug-in  
+ Knihovny DLL, která poskytuje funkce správy zdrojového kódu pomocí implementace rozhraní API modulu Plug-in zdroje ovládacího prvku.  
   
  Úložiště  
- Hlavní kopii kde zdroj řízení systému ukládá historie revizí úplné projektu. Každý projekt má přesně jeden úložiště.  
+ Hlavní kopie, kde systém správy zdrojových kódů uchovává historii kompletní revizi projektu. Každý projekt má přesně jedno úložiště.  
   
  Revize  
- Potvrdit změny v historii souboru nebo sadu souborů. Revize je jedním snímku v nepřetržitě změna projektu.  
+ Potvrdit změny v historii souboru nebo sady souborů. Revizi patří pořízení snímku v neustále se měnící projektu.  
   
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)

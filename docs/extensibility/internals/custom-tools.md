@@ -1,9 +1,6 @@
 ---
 title: Vlastní nástroje | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, custom tools
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306173876d0fd7c4d1da76d1b5432ecd5358c425
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce8b18ee5c1c84b8e6480ffa9f91f739796f0991
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834409"
 ---
 # <a name="custom-tools"></a>Vlastní nástroje
 *Vlastní nástroje* vám umožní přidružit nástroj položky v projektu a spusťte tento nástroj pokaždé, když je soubor uložen. Některé vlastní nástroje, někdy označovány jako *generátorů tvořených jedním souborem*, jsou často používána k implementaci překladače, které generují kód z dat a naopak. Například vytvořit generátorů tvořených jedním souborem [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] zdrojový kód z celkového počtu *.settings* a *RESX* soubory. Generovaný zdrojový kód poskytuje silného typu přístup k datům v *.settings* a *RESX* soubory. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektů podpory vlastního nástroje. [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] typy projektů nejsou. Vlastní typy projektů může také podporovat vlastních nástrojů.  

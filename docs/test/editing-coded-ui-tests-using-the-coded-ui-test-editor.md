@@ -2,7 +2,6 @@
 title: Úpravy programových testů uživatelského rozhraní
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0e8e21129392ff949290576dbbbd9a315256b592
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959690"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úprava programových testů uživatelského rozhraní pomocí editoru programového testu uživatelského rozhraní
 
@@ -186,7 +185,7 @@ V některých případech můžete chtít provést test čekání na určité ud
 
 ![Zpoždění přidána s 5 sekund](../test/media/codeduidealy2.png)
 
-V **akce uživatelského rozhraní** podokně rozbalte položku testovací metoda, která obsahuje akce uživatelského rozhraní, který chcete vložit zpoždění před. Výběr akce uživatelského rozhraní. Dále otevřete místní nabídku pro akce uživatelského rozhraní a zvolte **vložit zpoždění před**. Zpoždění při vkládání a zvýrazněná, před vybrané akce uživatelského rozhraní s následujícím textem: **vyčkat, než 1 sekundy pro zpoždění uživatele mezi akcemi**. V **vlastnosti** okna, změňte hodnotu **zpoždění** vlastnost na požadovanou dobu v milisekundách.
+V **akce uživatelského rozhraní** podokně rozbalte položku testovací metoda, která obsahuje akce uživatelského rozhraní, který chcete vložit zpoždění před. Výběr akce uživatelského rozhraní. Dále otevřete místní nabídku pro akce uživatelského rozhraní a zvolte **vložit zpoždění před**. Zpoždění při vkládání a zvýrazněná, před vybrané akce uživatelského rozhraní s následujícím textem: **Počkejte 1 sekundy pro zpoždění uživatele mezi akcemi**. V **vlastnosti** okna, změňte hodnotu **zpoždění** vlastnost na požadovanou dobu v milisekundách.
 
 Po dokončení vkládání zpoždění, uložte změny *UIMap.Designer* soubor výběrem **Uložit** na panelu nástrojů sady Visual Studio.
 
@@ -197,4 +196,4 @@ Pokud je potřeba zajistit, že určitý ovládací prvek je k dispozici před a
 - [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
 - [Vytvoření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)
 - [Vytvoření datově řízeného programového testu UI](../test/creating-a-data-driven-coded-ui-test.md)
-- [Návod: Vytváření, úpravy a údržba programového uživatelského rozhraní testu](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Návod: Vytváření, úpravy a údržba programového testu uživatelského rozhraní](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

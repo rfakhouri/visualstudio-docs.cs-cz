@@ -2,7 +2,6 @@
 title: 'CA1403: Typy automatického rozložení by neměly být viditelné modelu COM'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AutoLayoutTypesShouldNotBeComVisible
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d84fdd4f352a823614832cc8d5d1b9e57c7a9dfb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1f713ac012509dd36d483ca354630e125066360b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954536"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typy automatického rozložení by neměly být viditelné modelu COM
 
@@ -41,21 +40,21 @@ Typ hodnoty viditelné modelu COM (Component Object) je označena <xref:System.R
 
 ## <a name="rule-description"></a>Popis pravidla
 
-<xref:System.Runtime.InteropServices.LayoutKind> typy rozložení se spravují přes modul common language runtime. Rozložení těchto typů můžete volit mezi verze rozhraní .NET Framework, která dělí klientů modelu COM, které očekávají konkrétní rozložení. Pokud <xref:System.Runtime.InteropServices.StructLayoutAttribute> atribut nezadá, zadejte kompilátory jazyka C#, Visual Basic a C++ [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) u typů hodnot.
+<xref:System.Runtime.InteropServices.LayoutKind> modul common language runtime spravuje typy rozložení. Mezi verzemi rozhraní .NET Framework, který přeruší klienty modelu COM, které očekávají specifické rozložení můžete změnit rozložení těchto typů. Pokud <xref:System.Runtime.InteropServices.StructLayoutAttribute> atribut není zadán, C#, Visual Basic, a zadejte kompilátory C++ [hodnotu LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) pro typy hodnot.
 
-Označena jinak, jsou všechny typy veřejné, neobecnou viditelné pro COM a všechny neveřejný a obecné typy jsou neviditelná modelu COM. K snížil počet falešných poplachů, ale toto pravidlo vyžaduje COM viditelnost typ, který má být explicitně uvedena. Musí být označen obsahující sestavení <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> nastavena na `false` a typ musí být označené jako <xref:System.Runtime.InteropServices.ComVisibleAttribute> nastavena na `true`.
+Pokud není označen jinak, všechny veřejné, neobecné typy jsou viditelné modelu COM, a všechny neveřejné a obecné typy nejsou viditelná modelu COM. Pokud chcete snížit počet falešně pozitivních výsledků, vyžaduje toto pravidlo viditelnost modelu COM typ, který má být explicitně uvedena. Musí být označené obsahující sestavení <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> nastavena na `false` a typ musí být označeny pomocí <xref:System.Runtime.InteropServices.ComVisibleAttribute> nastavena na `true`.
 
-## <a name="how-to-fix-violations"></a>Jak opravit porušení
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-Chcete-li opravit porušení toto pravidlo, změňte hodnotu <xref:System.Runtime.InteropServices.StructLayoutAttribute> atribut [LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) nebo [LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>), nebo nastavit typ neviditelné modelu COM.
+Chcete-li opravit porušení tohoto pravidla, změňte hodnotu <xref:System.Runtime.InteropServices.StructLayoutAttribute> atribut [LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) nebo [LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>), nebo skrytí typu modelu COM.
 
-## <a name="when-to-suppress-warnings"></a>Při potlačení upozornění
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
 
 Nepotlačujte upozornění na toto pravidlo.
 
 ## <a name="example"></a>Příklad
 
-Následující příklad ukazuje typ, který porušuje pravidlo a typ, který splňuje pravidlo.
+Následující příklad ukazuje typ, který porušuje pravidla a typ, který splňuje pravidlo.
 
 [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
 [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
@@ -66,5 +65,5 @@ Následující příklad ukazuje typ, který porušuje pravidlo a typ, který sp
 
 ## <a name="see-also"></a>Viz také:
 
-- [Určení typů .NET pro spolupráci](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
-- [Interoperabilita s nespravovaným kódem](/dotnet/framework/interop/index)
+- [Kvalifikovat typů .NET pro spolupráci](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [Spolupráce s nespravovaným kódem](/dotnet/framework/interop/index)

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947657"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 
@@ -37,7 +36,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
 
     -   Datová sada nebo modelu Entity Data Model.
 
-    -   WCF Data Service, služby WCF nebo webové službě. Další informace najdete v tématu [postupy: připojení k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   WCF Data Service, služby WCF nebo webové službě. Další informace najdete v tématu [jak: Připojte se k datům ve službě](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Objekty. Další informace najdete v tématu [svázat objekty v sadě Visual Studio](bind-objects-in-visual-studio.md).
 
@@ -94,4 +93,4 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
 
 - [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Zobrazení souvisejících dat v aplikacích WPF](../data-tools/display-related-data-in-wpf-applications.md)
-- [Návod: Zobrazování souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md)
+- [Návod: Zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md)

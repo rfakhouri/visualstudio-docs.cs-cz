@@ -1,9 +1,6 @@
 ---
 title: Ladění projektů Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c13bff50f95d713d909588341d39d4f8ede970c0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958394"
 ---
 # <a name="debug-office-projects"></a>Ladění projektů Office
   Můžete ladit projekty Office s použitím stejného Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů, které používáte pro jiné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Funkce, jako je možnost Vložit zarážky a proměnné v zobrazení ladicího programu **lokální** okna, jsou také k dispozici při ladění projektů Office. Další informace o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástroje pro ladění, naleznete v tématu [ladit v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).

@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: Vytvoření přechodu shaderu založeného na geometrii'
+title: 'Postupy: Vytvoření shaderu přechodu na základě geometrie'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c690aa0b18969dd3a832550789a65db01d61f08e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831859"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Postupy: vytvoření shaderu přechodu na základě geometrie
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Postupy: Vytvoření přechodu shaderu založeného na geometrii
 
 Tento článek popisuje způsob použití návrháře shaderu a Directed Graph Shader Language k vytvoření přechodu shader geometrie založené. Tento shader škáluje konstantní hodnota barvy RGB výška jednotlivých bodů objektu v prostoru světa.
 
@@ -54,17 +53,17 @@ Následující obrázek znázorňuje dokončené shader graf a náhled shaderu u
 
  Určité tvary můžou poskytovat lepší verze Preview pro některé shadery. Informace o tom, jak shadery v Návrháři shaderu ve verzi preview najdete v tématu **náhled shadery** v [návrháře shaderu](../designers/shader-designer.md)
 
- Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu použitý pro 3D scény, což je znázorněno v [postupy: modelování 3D terénu](../designers/how-to-model-3-d-terrain.md). Intenzita barvy se zvyšuje s výšky bodu na světě.
+ Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu použitý pro 3D scény, což je znázorněno v [jak: Modelování 3D terénu](../designers/how-to-model-3-d-terrain.md). Intenzita barvy se zvyšuje s výšky bodu na světě.
 
  ![Efekt přechodu použít na 3&#45;D terénu modelu](../designers/media/digit-gradient-effect-result.png)
 
- Další informace o tom, jak použití shaderu na 3D model, najdete v části [postupy: použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Další informace o tom, jak použití shaderu na 3D model, najdete v části [jak: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)
-- [Postupy: Modelování 3D terénu](../designers/how-to-model-3-d-terrain.md)
+- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)
+- [Postupy: Model 3D terénu](../designers/how-to-model-3-d-terrain.md)
 - [Postupy: Vytvoření shaderu textury stupňů šedé](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Návrhář shaderů](../designers/shader-designer.md)
 - [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

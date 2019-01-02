@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbols::clone – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f7a9bbba4d63837e3abe851f92b9b182978d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d665be2d4bbebe58cc834b92283bfc14a702b34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825921"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor výčtu.  
@@ -27,7 +25,7 @@ Vytvoří čítač, který obsahuje stejného stavu jako aktuální enumerátor 
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSymbols** ppenum  
 );  
 ```  

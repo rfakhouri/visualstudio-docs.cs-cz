@@ -3,7 +3,6 @@ title: Správa projektů aplikace v Pythonu
 description: Projekty v sadě Visual Studio Správa závislostí mezi soubory a složité vztahy v aplikaci.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825289"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projekty v Pythonu v sadě Visual Studio
 
@@ -39,7 +38,7 @@ Visual Studio poskytuje celou řadu šablon projektů Python rychle nastavit po�
 |   |   |
 |---|---|
 | ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) s úvodem do projektů v Pythonu (2 miliony 17s). |
-| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Viz také [podrobné informace o: použití správy zdrojového kódu s projekty v Pythonu](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 min 55s). |
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | Viz také [podrobné informace: Použití správy zdrojového kódu s projekty v Pythonu](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 min 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Přidejte soubory, přiřaďte spouštěcí soubor a nastavení prostředí
 
@@ -93,7 +92,7 @@ V následující tabulce najdete souhrn šablony, které jsou k dispozici v sad�
 
 ## <a name="linked-files"></a>Připojené soubory
 
-Propojené soubory jsou soubory, které přesměrují do projektu se ale obvykle se nacházejí mimo složky projektu aplikace. Zobrazí se v **Průzkumníka řešení** jako normální soubory s ikonou překryté místní: ![propojený soubor ikony](media/projects-linked-file-icon.png)
+Propojené soubory jsou soubory, které přesměrují do projektu se ale obvykle se nacházejí mimo složky projektu aplikace. Zobrazí se v **Průzkumníka řešení** jako normální soubory s ikonou překryté zástupce: ![Propojený soubor ikony](media/projects-linked-file-icon.png)
 
 Propojené soubory jsou určené v *.pyproj* soubor pomocí `<Compile Include="...">` elementu. Propojené soubory jsou implicitní, pokud používá relativní cestu mimo strukturu adresářů nebo explicitní, pokud používají cest v rámci **Průzkumníka řešení**:
 

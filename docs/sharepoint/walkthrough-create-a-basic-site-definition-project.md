@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření základního projektu definice webu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření projektu definice základního webu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958888"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>Návod: Vytvoření základního projektu definice webu
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>Průvodce: Vytvoření základního projektu definice webu
   Tento návod ukazuje, jak vytvořit základní definici webu obsahující vizuální webovou část s některými ovládacími prvky na něj. Vizuální webové části, který vytvoříte přehlednosti má několik ovládacích prvků. Můžete však vytvořit složitější definic webu služby SharePoint, které zahrnují další funkce.  
   
  Tento návod demonstruje následující úkoly:  
@@ -54,7 +49,7 @@ ms.locfileid: "49844404"
   
 1. V panelu nabídky zvolte **souboru** > **nový** > **projektu**. Pokud vaše rozhraní IDE nastaveno pro použití vývojového nastavení jazyka Visual Basic, v řádku nabídek, zvolte **souboru** > **nový projekt**.  
   
-    **Nový projekt** zobrazí se dialogové okno.  
+    Zobrazí se dialogové okno **Nový projekt**.  
   
 2. Rozbalte **Visual C#**  uzlu nebo **jazyka Visual Basic** uzlu, rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49844404"
   
 2.  Zvolte **SiteDefinition1** uzel projektu a pak na panelu nabídek zvolte **projektu** > **přidat novou položku**.  
   
-     **Přidat novou položku** zobrazí se dialogové okno.  
+     Zobrazí se dialogové okno **Přidat novou položku**.  
   
 3.  Rozbalte **Visual C#**  uzlu nebo **jazyka Visual Basic** uzlu, rozbalte **SharePoint** uzel a klikněte na tlačítko **2010** uzlu.  
   
@@ -187,6 +182,5 @@ ms.locfileid: "49844404"
      Text se zobrazí v popisku na pravé straně tlačítka.  
   
 ## <a name="see-also"></a>Viz také:
- [Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)   
+ [Postupy: Vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)   
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  

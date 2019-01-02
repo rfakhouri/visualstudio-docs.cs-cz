@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0e610e29c623ecc7e67dcaa87ac1d7ce5417fb5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956202"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Postupy: Přidání vlastních sad čítačů pomocí editoru zátěžových testů
 
@@ -43,7 +42,7 @@ Můžete spravovat čítače v **editoru zátěžových testů**. Sady čítač�
     > [!NOTE]
     > Sadě čítačů je přidělen výchozí název, jako například **vlastní1**. Název lze změnit pomocí **vlastnosti** okna. Stisknutím klávesy **F4** zobrazíte **vlastnosti** okna.
 
-4.  Chcete-li přidat čítače do vlastní počítadlo nastavit, klikněte pravým tlačítkem na novou sadu čítačů a klikněte na tlačítko **přidat čítače**. Další informace o přidávání čítačů naleznete v tématu [postupy: přidání čítačů do sad čítačů](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4.  Chcete-li přidat čítače do vlastní počítadlo nastavit, klikněte pravým tlačítkem na novou sadu čítačů a klikněte na tlačítko **přidat čítače**. Další informace o přidávání čítačů naleznete v tématu [jak: Přidání čítačů do sad čítačů](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Vlastní sadu čítačů lze také přidat kliknutím pravým tlačítkem myši na existující sadu čítačů, výběrem příkazu kopírování a následným vložením do uzlu sad čítačů. Další čítače, které jsou zkopírovány, ale nejsou vyžadovány, je možné odstranit. Můžete změnit název nové sady čítačů **vlastnosti** okna.

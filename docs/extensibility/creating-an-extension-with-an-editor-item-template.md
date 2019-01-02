@@ -1,9 +1,6 @@
 ---
 title: Vytváření rozšíření pomocí šablony položky editoru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a13c62d9fadfe105bd8e645ba6e7758c2b3195a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ffaadb2ccdf770231abcbbcc5e594644b78ef7e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957856"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Vytváření rozšíření pomocí šablony položky editoru
 Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio SDK vytvořit rozšíření základního editoru, které aplikacím dodávají třídění, vylepšení a okraje editoru. Šablony položky editoru jsou k dispozici pro projekty Visual C# nebo Visual Basic VSIX.  
@@ -29,7 +26,7 @@ Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio 
 ## <a name="create-a-classifier-extension"></a>Jak vytvořit rozšíření třídění  
  Šablony položky editoru třídění vytvoří editor klasifikátor, který barvy odpovídající text (v tomto případě všechno, co) v jakékoli textový soubor.  
   
-1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `TestClassifier`. Klikněte na tlačítko **OK**.  
+1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `TestClassifier`. Klikněte na **OK**.  
   
 2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. Přejděte do aplikace Visual C# **rozšiřitelnost** uzel a vyberte možnost **Editor třídění**. Ponechte výchozí název souboru (*EditorClassifier1.cs*).  
   
@@ -50,7 +47,7 @@ Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio 
 ## <a name="create-a-text-relative-adornment-extension"></a>Vytvoření dalších úprav textu relativní rozšíření  
  Šablona dalších úprav editoru textu vytvoří dalších úprav textu relativní, který upraví všechny výskyty znaků textu "a" s použitím pole, které má červené ohraničení a modrým pozadím. Je text relativní vzhledem k tomu, pole vždy překrytí "a" znaky, i když se přesunout nebo přeformátovali.  
   
-1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `TestAdornment`. Klikněte na tlačítko **OK**.  
+1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `TestAdornment`. Klikněte na **OK**.  
   
 2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. Přejděte do aplikace Visual C# **rozšiřitelnost** uzel a vyberte možnost **dalších úprav editoru textu**. Ponechte výchozí název souboru (*TextAdornment1.cs/vb*).  
   
@@ -70,7 +67,7 @@ Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio 
   
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Chcete-li vytvořit rozšíření grafického doplňku zobrazení s použitím šablony grafického doplňku zobrazení editoru  
   
-1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `ViewportAdornment`. Klikněte na tlačítko **OK**.  
+1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `ViewportAdornment`. Klikněte na **OK**.  
   
 2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. Přejděte do aplikace Visual C# **rozšiřitelnost** uzel a vyberte možnost **grafického doplňku zobrazení editoru**. Ponechte výchozí název souboru (*ViewportAdornment1.cs/vb*).  
   
@@ -87,7 +84,7 @@ Můžete použít šablony položek, které jsou zahrnuty v sadě Visual Studio 
   
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>Chcete-li vytvořit okraj rozšíření pomocí šablony okraj editoru  
   
-1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `MarginExtension`. Klikněte na tlačítko **OK**.  
+1.  V **nový projekt** dialogového okna rozbalte **Visual C#** nebo **jazyka Visual Basic** a potom klikněte na tlačítko **rozšiřitelnost**. V **šablony** vyberte **projekt VSIX**. V **název** zadejte `MarginExtension`. Klikněte na **OK**.  
   
 2.  V **Průzkumníka řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat** > **nová položka**. Přejděte do aplikace Visual C# **rozšiřitelnost** uzel a vyberte možnost **okraj editoru**. Ponechte výchozí název souboru (EditorMargin1.cs/vb).  
   
