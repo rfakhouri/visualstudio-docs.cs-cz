@@ -1,6 +1,6 @@
 items:
 - name: Dokumentace sady Visual Studio
-  href: ide/index.md
+  href: ide/index.yml
 - name: Přehled
   items:
   - name: O sadě Visual Studio 2017
@@ -140,32 +140,24 @@ items:
     href: ide/quickstart-fsharp.md
   - name: 'C#: Vytvoření webové aplikace'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: Vytvoření aplikace pro UPW'
-    href: ide/quickstart-uwp-csharp.md
   - name: 'C#: Vytvoření konzolové aplikace'
     href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic: Vytvoření konzolové aplikace'
     href: ide/quickstart-visual-basic-console.md
 - name: Kurzy
   items:
-  - name: C++ v sadě Visual Studio...
-    href: /cpp/build/vscpp-step-0-installation
-  - name: Python v sadě Visual Studio...
-    href: python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-  - name: R v sadě Visual Studio...
-    href: rtvs/getting-started-with-r.md
-  - name: Node.js v sadě ‏Visual Studio
-    href: javascript/tutorial-nodejs.md
-  - name: C# v sadě Visual Studio
-    items:
-    - name: 'C#: Vytvoření webové aplikace'
-      href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C#: Vytvoření konzolové aplikace'
-      href: ide/tutorial-csharp-console.md
-  - name: Visual Basic v sadě Visual Studio
-    href: ide/tutorial-visual-basic-console.md
-  - name: Ladění v sadě ‏Visual Studio
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
+  - name: C#
+    href: get-started/csharp/
+  - name: F#
+    href: /dotnet/fsharp/
+  - name: Visual Basic
+    href: get-started/visual-basic/
+  - name: C++
+    href: /cpp/get-started/tutorials/
+  - name: Python
+    href: python/
+  - name: Node.js
+    href: javascript/
 - name: Návody
   items:
   - name: Vývoj
@@ -517,7 +509,7 @@ items:
     - name: Další kurzy
       items:
       - name: Vytvoření aplikace WPF s C# nebo Visual Basicem
-        href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
+        href: /visualstudio/get-started/csharp/tutorial-wpf
       - name: Kurzy Formulářových aplikací Windows
         items:
         - name: 'Kurz 1: Vytvoření prohlížeče obrázků (C#)'
@@ -791,7 +783,7 @@ items:
           href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
         - name: Prostředí – Seznam úkolů
           href: ide/reference/task-list-environment-options-dialog-box.md
-        - name: Prostředí – Nastavení důvěryhodnosti
+        - name: Prostředí – nastavení důvěryhodnosti
           href: ide/reference/trust-settings.md
         - name: Prostředí – Webový prohlížeč
           href: ide/reference/web-browser-environment-options-dialog-box.md
@@ -1120,9 +1112,10 @@ items:
       href: ide/developer-community-privacy.md
   - name: Postup nahlášení problému v sadě Visual Studio
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 'Přehled: Nahlášení problému'
-    href: ide/report-a-problem.md
-  - name: 'Přehled: Navržení funkce'
+    items:
+    - name: Nahlášení problémových stavů a nejčastější dotazy
+      href: ide/report-a-problem.md
+  - name: Navrhnout funkci pro sadu Visual Studio
     href: ide/suggest-a-feature.md
   - name: Program Zlepšování softwaru a služeb na základě zkušeností uživatelů
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1126,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Kontaktujte nás
     href: ide/talk-to-us.md
-ms.openlocfilehash: ea2c50939b41a1495f02330ad5ca5fb0e0472666
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 65504b4cf7bfd126edceacfdcfd1cc71e725e8ca
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348452"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740416"

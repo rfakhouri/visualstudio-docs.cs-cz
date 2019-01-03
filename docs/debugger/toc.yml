@@ -20,11 +20,11 @@ items:
 - name: Kurzy
   items:
   - name: Naučte se ladit kód v C#
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Naučte se ladit kód v C++
     href: getting-started-with-the-debugger-cpp.md
   - name: Naučte se ladit kód ve Visual Basicu
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: Spouštění kódu Pythonu v ladicím programu...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: Ladění živé aplikace Azure
@@ -214,9 +214,9 @@ items:
         items:
         - name: Architektura vizualizéru
           href: visualizer-architecture.md
-        - name: 'Návod: Zápis vizualizéru v jazyce C#'
+        - name: 'Průvodce: Zápis vizualizéru v jazyce C#'
           href: walkthrough-writing-a-visualizer-in-csharp.md
-        - name: 'Návod: Zápis vizualizéru v jazyce Visual Basic'
+        - name: 'Průvodce: Zápis vizualizéru v jazyce Visual Basic'
           href: walkthrough-writing-a-visualizer-in-visual-basic.md
         - name: Instalace vizualizéru
           href: how-to-install-a-visualizer.md
@@ -314,9 +314,9 @@ items:
         href: how-to-use-the-gpu-threads-window.md
     - name: Ladění více procesů
       href: debug-multiple-processes.md
-    - name: 'Návod: Ladění pomocí okna Vlákna'
+    - name: 'Průvodce: Ladění pomocí okna Vlákna'
       href: how-to-use-the-threads-window.md
-    - name: 'Návod: Ladění paralelní aplikace'
+    - name: 'Průvodce: Ladění paralelní aplikace'
       href: walkthrough-debugging-a-parallel-application.md
     - name: Přepnutí na jiné vlákno během ladění
       href: how-to-switch-to-another-thread-while-debugging.md
@@ -413,9 +413,9 @@ items:
         items:
         - name: 'Spravované ladění: Doporučené nastavení vlastností'
           href: managed-debugging-recommended-property-settings.md
-        - name: 'Příprava ladění: Formulářové aplikace Windows'
+        - name: 'Příprava ladění: Windows Forms – aplikace'
           href: debugging-preparation-windows-forms-applications.md
-        - name: 'Příprava ladění: Služby systému Windows'
+        - name: 'Příprava ladění: služby systému Windows'
           href: debugging-preparation-windows-services.md
       - name: Odesílání zpráv do okna výstupu
         href: diagnostic-messages-in-the-output-window.md
@@ -423,7 +423,7 @@ items:
         href: assertions-in-managed-code.md
       - name: Příkazy Stop v jazyce Visual Basic
         href: stop-statements-in-visual-basic.md
-      - name: 'Návod: Ladění formuláře systému Windows'
+      - name: 'Průvodce: Ladění formuláře systému Windows'
         href: walkthrough-debugging-a-windows-form.md
       - name: Ladění metody OnStart
         href: how-to-debug-the-onstart-method.md
@@ -449,7 +449,7 @@ items:
     - name: Ladění nativního kódu
       href: debugging-native-code.md
       items:
-      - name: 'Příprava ladění: Typy projektů jazyka Visual C++'
+      - name: 'Příprava ladění: Typy projektů Visual C++'
         href: debugging-preparation-visual-cpp-project-types.md
       - name: Ladění optimalizovaného kódu
         href: how-to-debug-optimized-code.md
@@ -546,14 +546,14 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: Ladění nasazených webových aplikací
         href: debugging-deployed-web-applications.md
-      - name: 'Návod: Ladění webového formuláře'
+      - name: 'Průvodce: Ladění webového formuláře'
         href: walkthrough-debugging-a-web-form.md
       - name: Ladění výjimek ASP.NET
         href: how-to-debug-aspnet-exceptions.md
-      - name: 'Ladění webových aplikací: Chyby a řešení potíží'
+      - name: 'Ladění webových aplikací: Chyby a řešení problémů'
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: 'Ladění webových aplikací: Řešení potíží'
+        - name: 'Ladění webových aplikací: Poradce při potížích'
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: Ověření nastavení vlastnosti služby IIS
@@ -840,9 +840,9 @@ items:
   items:
   - name: Novinky v ladicím programu sady Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561733"

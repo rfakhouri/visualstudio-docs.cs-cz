@@ -5,7 +5,7 @@ items:
   href: installing-the-visual-studio-sdk.md
 - name: Začínáme s vývojem rozšíření sady Visual Studio
   href: starting-to-develop-visual-studio-extensions.md
-- name: 'Vytváření prvního rozšíření: Hello World'
+- name: 'Vytvořte své první rozšíření: Hello World'
   href: extensibility-hello-world.md
 - name: Novinky v sadě Visual Studio 2017 SDK
   href: what-s-new-in-the-visual-studio-2017-sdk.md
@@ -125,42 +125,42 @@ items:
       href: editor-imports.md
     - name: Podpora EditorConfig
       href: supporting-editorconfig.md
-    - name: 'Návod: Propojení typu obsahu s příponou názvu souboru'
+    - name: 'Průvodce: Propojení typu obsahu s příponou názvu souboru'
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-    - name: 'Návod: Vytvoření okrajového piktogramu'
+    - name: 'Průvodce: Vytvoření okrajového piktogramu'
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 'Návod: Přizpůsobení zobrazení textu'
+    - name: 'Průvodce: Přizpůsobení zobrazení textu'
       href: walkthrough-customizing-the-text-view.md
-    - name: 'Návod: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)'
+    - name: 'Průvodce: Vytvoření grafického doplňku zobrazení, příkazů a nastavení (vodítka sloupců)'
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 'Návod: Zvýraznění textu'
+    - name: 'Průvodce: Zvýraznění textu'
       href: walkthrough-highlighting-text.md
-    - name: 'Návod: Sbalení'
+    - name: 'Průvodce: Sbalování'
       href: walkthrough-outlining.md
-    - name: 'Návod: Zobrazení párových složených závorek'
+    - name: 'Průvodce: Zobrazení párových složených závorek'
       href: walkthrough-displaying-matching-braces.md
-    - name: 'Návod: Zobrazení popisů tlačítek s rychlými informacemi'
+    - name: 'Průvodce: Zobrazení popisů tlačítek s rychlými informacemi'
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 'Návod: Zobrazení vyhrazené nápovědy'
+    - name: 'Průvodce: Zobrazení vyhrazené nápovědy'
       href: walkthrough-displaying-signature-help.md
-    - name: 'Návod: Zobrazení dokončování příkazů'
+    - name: 'Průvodce: Zobrazení dokončování příkazů'
       href: walkthrough-displaying-statement-completion.md
-    - name: 'Návod: Implementace fragmentů kódu'
+    - name: 'Průvodce: Implementace fragmentů kódu'
       href: walkthrough-implementing-code-snippets.md
-    - name: 'Návod: Zobrazení návrhů v podobě žárovky'
+    - name: 'Průvodce: Zobrazení návrhů v podobě žárovky'
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: 'Návod: Použití příkazů prostředí s rozšířením editoru'
+    - name: 'Průvodce: Použití příkazů prostředí s rozšířením editoru'
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: 'Návod: Použití klávesové zkratky s rozšířením editoru'
+    - name: 'Průvodce: Použití klávesové zkratky s rozšířením editoru'
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-    - name: 'Návod: Přístup k objektu DTE z rozšíření editoru'
+    - name: 'Průvodce: Přístup k objektu DTE z rozšíření editoru'
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: Vytváření vlastních editorů a návrhářů
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 'Návod: Vytvoření vlastního editoru'
+    - name: 'Průvodce: Vytvoření vlastního editoru'
       href: walkthrough-creating-a-custom-editor.md
-    - name: 'Návod: Přidání funkcí do vlastního editoru'
+    - name: 'Průvodce: Přidání funkcí do vlastního editoru'
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: Inicializace návrháře a konfigurace metadat
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: Element sestavení (rozšíření průvodce pro šablony sady Visual Studio)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (šablony sady Visual Studio)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: BuildOnLoad – atribut a element (šablony sady Visual Studio)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnLoad – element (šablony sady Visual Studio)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (šablony sady Visual Studio)
       href: createinplace-visual-studio-templates.md
     - name: CreateNewFolder – element (šablony sady Visual Studio)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: RequiredFrameworkVersion – element (šablony sady Visual Studio)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion – element (šablony sady Visual Studio)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference – element (šablony sady Visual Studio)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (šablony sady Visual Studio)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder – element (šablony Visual Studia)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: SupportsMasterPage – element (šablony sady Visual Studio)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName – element (šablony sady Visual Studio)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: TemplateContent – element (šablony sady Visual Studio)
       href: templatecontent-element-visual-studio-templates.md
     - name: TemplateData – element (šablony sady Visual Studio)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: WizardExtension – element (šablony sady Visual Studio)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnLoad – element (šablony sady Visual Studio)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion – element (šablony sady Visual Studio)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference – element (šablony sady Visual Studio)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName – element (šablony sady Visual Studio)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Odkaz na schéma manifestu šablon sady Visual Studio
     href: visual-studio-template-manifest-schema-reference.md
 - name: Rozšíření uživatelských nastavení a možností
@@ -365,13 +365,13 @@ items:
   - name: Vytvoření vlastní úvodní stránky
     href: creating-a-custom-start-page.md
     items:
-    - name: 'Návod: Přidání vlastního souboru XAML na úvodní stránku'
+    - name: 'Průvodce: Přidání vlastního souboru XAML na úvodní stránku'
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: Přidání uživatelského ovládacího prvku na úvodní stránku
       href: adding-user-control-to-the-start-page.md
     - name: Přidání příkazů sady Visual Studio na úvodní stránku
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 'Návod: Ukládání uživatelských nastavení na úvodní stránce'
+    - name: 'Průvodce: Ukládání uživatelských nastavení na úvodní stránce'
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: Nasazení vlastních úvodních stránek
       href: deploying-custom-start-pages.md
@@ -426,11 +426,11 @@ items:
     href: vsix-project-template.md
   - name: Začínáme se šablonou projektu VSIX
     href: getting-started-with-the-vsix-project-template.md
-  - name: 'Návod: Publikování rozšíření sady Visual Studio'
+  - name: 'Průvodce: Publikování rozšíření sady Visual Studio'
     href: walkthrough-publishing-a-visual-studio-extension.md
-  - name: 'Návod: Publikování rozšíření sady Visual Studio pomocí příkazového řádku'
+  - name: 'Průvodce: Publikování rozšíření sady Visual Studio pomocí příkazového řádku'
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-  - name: 'Návod: Vytvoření balíčku rozšíření'
+  - name: 'Průvodce: Vytvoření balíčku rozšíření'
     href: walkthough-create-extension-pack.md
   - name: Přidání závislosti k balíčku VSIX
     href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -728,11 +728,11 @@ items:
 - name: Vytvoření sady SDK (Software Development Kit)
   href: creating-a-software-development-kit.md
   items:
-  - name: 'Návod: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic'
+  - name: 'Průvodce: Vytvoření sady SDK pomocí jazyka C# nebo Visual Basic'
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-  - name: 'Návod: Vytvoření sady SDK pomocí jazyka C++'
+  - name: 'Průvodce: Vytvoření sady SDK pomocí jazyka C++'
     href: walkthrough-creating-an-sdk-using-cpp.md
-  - name: 'Návod: Vytvoření sady SDK pomocí jazyka JavaScript'
+  - name: 'Průvodce: Vytvoření sady SDK pomocí jazyka JavaScript'
     href: walkthrough-creating-an-sdk-using-javascript.md
 - name: Rozšíření .NET Compiler Platform („Roslyn“)
   href: dotnet-compiler-platform-roslyn-extensibility.md
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Referenční informace k verzi balíčku Roslyn
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562357"

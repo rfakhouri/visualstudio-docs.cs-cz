@@ -83,6 +83,7 @@
 ##### [Vytvoření vazby ovládacích prvků WPF k datové službě WCF](bind-wpf-controls-to-a-wcf-data-service.md)
 ##### [Vytváření vyhledávacích tabulek v aplikacích WPF](create-lookup-tables-in-wpf-applications.md)
 ##### [Zobrazení souvisejících dat v aplikacích WPF](display-related-data-in-wpf-applications.md)
+##### [Návod: Zobrazení souvisejících dat v aplikacích WPF](walkthrough-displaying-related-data-in-a-wpf-application.md)
 ##### [Vytvoření vazby ovládacích prvků k obrázkům z databáze](bind-controls-to-pictures-from-a-database.md)
 #### [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům v sadě Visual Studio](bind-windows-forms-controls-to-data-in-visual-studio.md)
 ##### [Vytvoření vazby ovládacích prvků modelu Windows Forms k datům](bind-windows-forms-controls-to-data.md)

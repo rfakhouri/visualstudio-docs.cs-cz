@@ -1,0 +1,45 @@
+items:
+- name: C# v sadě Visual Studio
+  href: index.yml
+  items:
+  - name: Přehled
+    items:
+    - name: O sadě Visual Studio 2017
+      href: visual-studio-ide.md
+    - name: O editoru kódu
+      href: tutorial-editor.md
+    - name: O projektech a řešeních
+      href: tutorial-projects-solutions.md
+    - name: Další funkce sady Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+  - name: Kurzy
+    items:
+    - name: Vytvoření první aplikace jazyka C#
+      href: tutorial-console.md
+    - name: Vytvoření webové aplikace
+      href: tutorial-aspnet-core.md
+    - name: Vytvoření aplikace pro UPW
+      href: tutorial-uwp.md
+    - name: Vytvoření aplikace WPF
+      href: tutorial-wpf.md
+    expanded: true
+  - name: Poznejte Visual Studio
+    items:
+    - name: Psaní kódu a jeho úpravy
+      href: tutorial-editor.md
+    - name: Kompilace a sestavení
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Ladění kódu
+      href: ../csharp/tutorial-debugger.md
+    - name: Testování jednotek
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    - name: Nasazení projektu
+      href: ../../deployment/index.md
+    - name: Přístup k datům
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+ms.openlocfilehash: cb9bc5df898e902292b2cf53bcb43f72f4464454
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443586"
