@@ -1,8 +1,7 @@
 ---
-title: 'Postupy: modelování 3D terénu'
+title: 'Postupy: Model 3D terénu'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24fdf5f6c80dbb9d338b4c655b7cea05592a91ac
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 65590bb387b2f752a11f60bae82891a8ea3a713f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902588"
 ---
-# <a name="how-to-model-3d-terrain"></a>Postupy: modelování 3D terénu
+# <a name="how-to-model-3d-terrain"></a>Postupy: Modelování 3D terénu
 
 Tento článek ukazuje, jak vytvořit model 3D terénu pomocí Editoru modelů.
 
@@ -55,7 +54,7 @@ Model terénu je dokončena. Tady je znovu finálního modelu s Phongova stínov
 
 ![3&#45;D scény, který znázorňuje model terénu](../designers/media/digit-terrain-model.png)
 
-Tento model terénu slouží k předvedení efekt přechodu shaderu, který je popsaný v [postupy: vytvoření shaderu přechodu na základě geometrie](../designers/how-to-create-a-geometry-based-gradient-shader.md).
+Tento model terénu slouží k předvedení efekt přechodu shaderu, který je popsaný v [jak: Vytvoření shaderu přechodu na základě geometrie](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 
 ## <a name="see-also"></a>Viz také:
 

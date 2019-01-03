@@ -1,8 +1,7 @@
 ---
-title: 'CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modulem COM'
+title: 'CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modelu COM'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1413
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 060d8ebd26b08ef02a9986846bdab2a25a85072f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: dab50ec607e92222e0d14ed8f6afeeeb1515e61b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912007"
 ---
-# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modulem COM
+# <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modelu COM
 
 |||
 |-|-|

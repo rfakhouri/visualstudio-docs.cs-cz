@@ -2,7 +2,6 @@
 title: Zabezpečení a lokalizovaná satelitní sestavení
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - key pairs for strong-named assemblies
@@ -19,20 +18,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7eb391f01bc5a709aeaf0002ac647c358355e5f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4d0c38ae4353c7761b1cff4173b995ab6c89e0a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892050"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>Zabezpečení a lokalizovaná satelitní sestavení
 
-Pokud hlavní sestavení používá silné názvy, satelitních sestavení musí být podepsané stejným privátní klíče jako hlavní sestavení. Pokud se nenačte veřejného a privátního klíče, pair neodpovídají mezi hlavní a satelitní sestavení, vaše prostředky. Další informace o podepisování sestavení najdete v tématu [postupy: podepsání sestavení se silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Pokud hlavní sestavení používá silné názvy, musí být stejný soukromý klíč jako hlavní sestavení podepsáno satelitních sestavení. Pokud zadaný klíč veřejného/soukromého pár mezi hlavní a satelitní sestavení, vaše prostředky se neshoduje se nenačte. Další informace o podepisování sestavení naleznete v tématu [jak: Podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
- Obecně platí musíte mít podpisový skupinu vaší společnosti nebo organizaci externí podpisový přihlásit s privátním klíčem. Je to z důvodu citlivé povahy privátního klíče: přístup je omezen na několik z nich často. Můžete použít zpožděné podepisování během vývoje. Další informace najdete v tématu [zpoždění podepsání sestavení](/dotnet/framework/app-domains/delay-sign-assembly).
+ Obecně platí budete muset mít podpisový skupin vaší organizace nebo externí podpisový organizace přihlásit s privátním klíčem. Je to z důvodu citlivosti privátního klíče: přístup je často omezené na několika jednotlivcům. Můžete použít zpožděného podepisování během vývoje. Další informace najdete v tématu [zpožděné podepisování sestavení](/dotnet/framework/app-domains/delay-sign-assembly).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Důležité informace o zabezpečení sestavení](/dotnet/framework/app-domains/assembly-security-considerations)  - [klíčové koncepty zabezpečení](/dotnet/standard/security/key-security-concepts)
 - [Představení mezinárodních aplikací založených na prostředí .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)

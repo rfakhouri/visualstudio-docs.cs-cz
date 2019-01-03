@@ -1,9 +1,6 @@
 ---
 title: Volání kódu v doplňcích VSTO z jiných řešení pro Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 5c347000d75beb628c01c5a8f8275d4755db776f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910266"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Volání kódu v doplňcích VSTO z jiných řešení pro Office
   Objekt můžete zveřejnit v doplňku VSTO pro ostatní řešení, včetně jiných řešení pro Microsoft Office. To je užitečné, pokud váš doplněk VSTO poskytuje službu, kterou chcete povolit použití jiných řešení. Například pokud máte doplňku VSTO pro Microsoft Office Excel, která provádí výpočty finančních dat z webové služby, jiná řešení provádět tyto výpočty pomocí volání do doplňku VSTO pro Excel za běhu.  
@@ -152,5 +149,3 @@ utilities.ImportData();
  [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

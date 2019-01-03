@@ -1,8 +1,7 @@
 ---
-title: 'Návod: Vytvoření realistické 3D kulečníkové koule'
+title: 'Průvodce: Vytvoření realistické 3D kulečníkové koule'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847640"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913488"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Návod: Vytvoření realistické trojrozměrné kulečníkové koule
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Průvodce: Vytvořit realistické 3D kulečníkové koule
 
 Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové koule pomocí shaderu Designer a editoru obrázků v sadě Visual Studio. Vzhled 3D kulečníkové koule je dosaženo kombinací několika technik shaderu se vhodnými prostředky textur.
 
@@ -79,7 +78,7 @@ Ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobrazeny.
 
 3. Použijte texturu, kterou jste vytvořili v předchozím postupu konfigurací vlastností textury. Nastavte hodnotu **textury** vlastnost **vzorek textury** uzlu **Texture1**a poté určete soubor textury s použitím **Filename**vlastnost **Texture1** skupinu vlastností ve stejném okně s vlastnostmi.
 
-   Další informace o tom, jak aplikovat texturu na shader, naleznete v tématu [postupy: vytvoření shaderu základní textury](../designers/how-to-create-a-basic-texture-shader.md).
+   Další informace o tom, jak aplikovat texturu na shader, naleznete v tématu [jak: Vytvoření základní textury shaderu](../designers/how-to-create-a-basic-texture-shader.md).
 
    Vaše kulečníková koule by teď měl vypadat nějak takto:
 
@@ -101,7 +100,7 @@ V počítačové grafice *modely osvětlení*– zjednodušené, přibližně na
 
 - Volitelně můžete upravit, jak se osvětlení chová odlesk, konfigurací **MaterialDiffuse** vlastnost grafu shaderu. Přístup k vlastnostem grafu shader zvolte na prázdnou oblast návrhové plochy a potom vyhledejte vlastnost, ke které chcete získat přístup v **vlastnosti** okna.
 
-Další informace o tom, jak aplikovat Lambert osvětlení na shader, naleznete v tématu [postupy: vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).
+Další informace o tom, jak aplikovat Lambert osvětlení na shader, naleznete v tématu [jak: Vytvoření základního Lambertova shaderu](../designers/how-to-create-a-basic-lambert-shader.md).
 
 S použitím osvětlení Lambert by měla vaše kulečníková koule vypadat nějak takto:
 
@@ -123,7 +122,7 @@ Model osvětlení Phong je založena na modelu osvětlení Lambert k zahrnoval o
 
 2. Volitelně můžete upravit způsob, jakým chová odlesk, konfigurací vlastností odlesků (**MaterialSpecular** a **MaterialSpecularPower**) grafu shaderu. Chcete-li získat přístup k vlastnostem grafu shader zvolte na prázdnou oblast návrhové plochy a pak v **vlastnosti** okna, vyhledejte vlastnost, ke které chcete získat přístup.
 
-   Další informace o tom, jak aplikovat Zrcadlové osvětlení na shader, naleznete v tématu [postupy: vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md).
+   Další informace o tom, jak aplikovat Zrcadlové osvětlení na shader, naleznete v tématu [jak: Vytvoření základního Phongova shaderu](../designers/how-to-create-a-basic-phong-shader.md).
 
    S zvýrazňujících vaše kulečníková koule by měl vypadat nějak takto:
 
@@ -211,8 +210,8 @@ Prvním krokem je vytvoření textury mapy krychle. U mnoha druhů aplikací obs
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)
-- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)
+- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Návrhář shaderů](../designers/shader-designer.md)
 - [Editor obrázků](../designers/image-editor.md)
 - [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

@@ -2,7 +2,6 @@
 title: Dialogové okno Karty a okna, Prostředí, Možnosti
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.TabsAndWindows
@@ -12,17 +11,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49230a20bf8279548687d38e1ff3811e0b1730d7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c729ac6738eb8a09712ee87b64e1bb6f4eee2b1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944278"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903666"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Dialogové okno Karty a okna, Prostředí, Možnosti
 
-Pomocí této stránky lze nastavit možnosti pro jak záložkách windows chovat v podokně editor a chování nástroje systému windows. Další informace najdete v tématu [přizpůsobení rozložení oken v sadě Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
+Pomocí této stránky lze nastavit možnosti pro jak s kartami windows chovat do podokna editoru a chování oken nástrojů. Další informace najdete v tématu [přizpůsobení rozložení oken v sadě Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
 
-### <a name="see-also"></a>Viz také
+### <a name="see-also"></a>Viz také:
 
 - [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

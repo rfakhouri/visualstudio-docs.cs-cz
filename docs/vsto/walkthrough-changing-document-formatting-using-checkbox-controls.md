@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox'
-ms.custom: ''
+title: 'Průvodce: Změna formátování dokumentů s použitím ovládacích prvků CheckBox'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913866"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Návod: Změna formátování dokumentů s použitím ovládacích prvků CheckBox
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Průvodce: Změna formátování dokumentů s použitím ovládacích prvků CheckBox
   Tento návod ukazuje, jak změnit formátování textu pomocí ovládacích prvků Windows Forms v přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "49863929"
   
 1.  Vytvoření projektu Wordového dokumentu s názvem **Moje formátování aplikace Word**. V průvodci vyberte **vytvoříte nový textový dokument**.  
   
-     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio otevře nový Wordový dokument v návrháři a přidá **Moje formátování aplikace Word** projektu **Průzkumníka řešení**.  
   
@@ -72,7 +69,7 @@ ms.locfileid: "49863929"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**applyBoldFont**|  
+    |**Název**|**applyBoldFont**|  
     |**Text**|**Tučné**|  
   
 4.  Stisknutím klávesy **Enter** přesuňte kurzor pod první zaškrtávací políčko.  
@@ -81,7 +78,7 @@ ms.locfileid: "49863929"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**applyItalicFont**|  
+    |**Název**|**applyItalicFont**|  
     |**Text**|**Kurzíva**|  
   
 6.  Stisknutím klávesy **Enter** přesuňte kurzor pod zaškrtávacím políčkem druhý.  
@@ -90,7 +87,7 @@ ms.locfileid: "49863929"
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**applyUnderlineFont**|  
+    |**Název**|**applyUnderlineFont**|  
     |**Text**|**Podtržení**|  
   
 ### <a name="add-text-and-a-bookmark-control"></a>Přidání textu a ovládací prvek Bookmark  
@@ -137,7 +134,7 @@ ms.locfileid: "49863929"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  V C#, je nutné přidat obslužné rutiny událostí pro textová pole <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  V C#, je nutné přidat obslužné rutiny událostí pro textová pole <xref:Microsoft.Office.Tools.Word.Document.Startup> událostí. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863929"
 ## <a name="next-steps"></a>Další kroky  
  Tento návod ukazuje základy používání zaškrtávacích políček a formátování textu na dokumenty aplikace Word prostřednictvím kódu programu změna. Tady jsou některé úlohy, které by mohl pocházet Další:  
   
--   Tlačítko se používá k naplnění textové pole. Další informace najdete v tématu [návod: zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   Tlačítko se používá k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli v dokumentu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [návod: aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
+-   Pomocí přepínačů vyberte styly grafu. Další informace najdete v tématu [názorný postup: Aktualizace grafu v dokumentu s použitím přepínačů](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
 
 ## <a name="see-also"></a>Viz také:  
@@ -165,5 +162,3 @@ ms.locfileid: "49863929"
  [Ukázky vývoje pro Office a názorné postupy](../vsto/office-development-samples-and-walkthroughs.md)   
  [Namedrange – ovládací prvek](../vsto/namedrange-control.md)   
  [Omezení ovládacích prvků Windows Forms v dokumentech Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

@@ -1,8 +1,6 @@
 ---
 title: Referenční dokumentace rozhraní API vizualizéru | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902211"
 ---
 # <a name="visualizer-api-reference"></a>Referenční dokumentace rozhraní API vizualizéru
 
@@ -45,5 +43,5 @@ Rozhraní API Vizualizéru jsou k dispozici pro uživatele, kteří chtějí zá
 ## <a name="see-also"></a>Viz také
 
  [Návod: Zápis Vizualizéru v jazyce C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Postupy: zápis Vizualizéru](../debugger/how-to-write-a-visualizer.md)   
- [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)
+ [Postupy: Zápis Vizualizéru](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [Vytváření vlastních vizualizérů](../debugger/create-custom-visualizers-of-data.md)

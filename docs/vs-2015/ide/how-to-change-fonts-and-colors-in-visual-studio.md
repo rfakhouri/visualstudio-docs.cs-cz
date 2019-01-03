@@ -1,12 +1,11 @@
 ---
-title: 'Postupy: Změna písma a barev'
+title: 'Postupy: Změna písma a barvy'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,20 +16,20 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eee3b8a72ab530e4f480fb4927736e809488cb84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915358"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Postupy: Změna písma a barev v sadě Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Postupy: Změna písma a barev v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Můžete přizpůsobit barvu integrovaném vývojovém prostředí rámce a okna nástrojů v sadě Visual Studio několika způsoby.
 
 > [!TIP]
->  Informace o změně barev editoru kódu naleznete v tématu [postupy: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+>  Informace o změně barev editoru kódu naleznete v tématu [jak: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Změna barevného motivu prostředí IDE
 
@@ -71,4 +70,4 @@ Můžete přizpůsobit barvu integrovaném vývojovém prostředí rámce a okna
 5.  V **velikost** seznamu, vyberte velikost textu a klikněte na tlačítko **OK** tlačítko.
 
 ## <a name="see-also"></a>Viz také
- [Funkce pro usnadnění přístupu sady Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [postupy: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Funkce pro usnadnění přístupu sady Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [jak: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

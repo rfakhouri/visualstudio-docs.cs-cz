@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_objectFileName | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_objectFileName | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683e789e1edbe9f256847ad1e7d5fb7d13616608
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 928bd2b10c95a840323ba87fd9c5347520cf03c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927256"
 ---
 # <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
 Načte název souboru objektů.  
@@ -31,10 +29,10 @@ HRESULT get_objectFilename(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `BSTR` , obsahuje název souboru objektů.  
+ [out] Ukazatel `BSTR` , který obsahuje název souboru objektů.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

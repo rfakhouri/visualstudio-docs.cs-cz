@@ -1,9 +1,6 @@
 ---
 title: Určení, jestli se má implementovat VSPackage zdrojového ovládacího prvku | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3bef6030b6a21eeda708a5258c47c9dfdcfc0a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6ed78f8245479edfaa5e87c22e6651c867d96f98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914461"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Určete, jestli se má implementovat balíčku VSPackage správy zdrojového kódu
 Tato část popisuje možnosti řízení moduly plug-in zdrojového kódu a balíčků VSPackage správy zdrojového kódu pro rozšíření řešení a nabízí rozsáhlé pokyny o výběru cesty vhodné integrace správy zdrojového kódu.  
@@ -29,7 +26,7 @@ Tato část popisuje možnosti řízení moduly plug-in zdrojového kódu a bal�
 ## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Velké source řešení pro ovládací prvek s bohatou sadou funkcí  
  Pokud chcete implementovat řešení zdrojového ovládacího prvku, který poskytuje bohaté zdrojového ovládacího prvku modelu, který není dostatečně zachyceny pomocí rozhraní API modulu Plug-in zdroje ovládacího prvku, zvažte zdrojový balíček ovládací prvek jako cestu integrace. To platí zejména v případě, že místo toho by byly nahrazeny zdrojový balíček adaptér ovládací prvek (který komunikuje se ovládací prvek moduly plug-in zdrojového kódu a poskytuje základní zdroj ovládací prvek uživatelského rozhraní) s vlastním tak, aby bylo možné zpracovat události ovládacího prvku zdroje vlastní způsobem. Pokud už máte uspokojivé zdrojový ovládací prvek uživatelského rozhraní a chcete zachovat ve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], možnosti správy zdrojového kódu balíček umožňuje udělat přesně takhle. Zdrojový ovládací prvek balíček není obecná a je určený výhradně pro použití s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrovaného vývojového prostředí.  
   
- Pokud chcete implementovat řešení zdrojového ovládacího prvku, který poskytuje flexibilitu a lepší kontrolu nad zdrojového ovládacího prvku logiky a uživatelského rozhraní, možná dáte přednost zdrojového ovládacího prvku balíček integrace trasy. Můžeš:  
+ Pokud chcete implementovat řešení zdrojového ovládacího prvku, který poskytuje flexibilitu a lepší kontrolu nad zdrojového ovládacího prvku logiky a uživatelského rozhraní, možná dáte přednost zdrojového ovládacího prvku balíček integrace trasy. Můžete:  
   
 1.  Zaregistrovat vlastní ovládací prvek zdroje balíčku VSPackage (viz [registrace a výběr](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   

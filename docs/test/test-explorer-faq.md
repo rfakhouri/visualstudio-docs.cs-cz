@@ -2,7 +2,6 @@
 title: Průzkumník testů – nejčastější dotazy
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -16,12 +15,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 6f4d93f81cb653cda5af7a4b75affef4a845790f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910427"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Průzkumník testů sady Visual Studio – nejčastější dotazy
 
@@ -122,7 +121,7 @@ Namísto použití rozšíření adaptérů testů, jsou nutné k použití bal�
 
 Poslední projekty testů UPW zadejte vlastnosti sestavení testovací platformy, která umožňuje lepší výkon pro identifikaci testovací aplikace. Pokud máte projektu testů UPW, který byl inicializován před Visual Studio verze 15.7, může se zobrazit tato chyba v **výstup** > **testy**:
 
-**System.AggregateException: Došlo k jedné nebo více chybám. ---> System.InvalidOperationException: následující TestContainer nebyl nalezen {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException: Došlo k jedné nebo více chybám. ---> System.InvalidOperationException: Následující TestContainer nebyl nalezen {} na Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
 
 Chcete-li vyřešit tuto chybu:
 

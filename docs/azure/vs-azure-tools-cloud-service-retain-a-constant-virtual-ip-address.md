@@ -5,18 +5,17 @@ author: ghogen
 manager: douge
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
 ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 0d0ac9d18e72ff656877e47b9858ac460e54e7cf
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 786292d3d566f2b1da27bdd254019460929fbc0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921371"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Zachování konstantní virtuální IP adresy cloudové služby Azure
 Když aktualizujete cloudovou službu, která je hostovaná v Azure, můžete potřebovat k zajištění, že nedojde ke změně virtuální IP adresa (VIP) služby. Většina služeb správu domény používá v systému DNS (Domain Name) pro registraci názvů domén. DNS funguje pouze v případě, že virtuální IP adresa zůstala stejná. Můžete použít **Průvodce publikováním** v nástroje Azure k zajištění, že virtuální IP adresa cloudové služby nedojde ke změně při ho aktualizujete. Další informace o tom, jak pomocí DNS domény správy pro cloudové služby, najdete v části [konfigurace vlastního názvu domény pro cloudovou službu Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
@@ -55,4 +54,3 @@ Můžete zadat nastavení nasazení **Průvodce publikováním**, která podporu
 
 ## <a name="next-steps"></a>Další kroky
 - [Pomocí sady Visual Studio Azure Průvodce publikováním aplikace](vs-azure-tools-publish-azure-application-wizard.md)
-

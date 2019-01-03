@@ -2,19 +2,18 @@
 title: Testování aplikací pro SharePoint pomocí programových testů uživatelského rozhraní
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 32b408743a2017b6fe83c28659496844b204444f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910178"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint pomocí programových testů uživatelského rozhraní
 

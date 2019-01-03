@@ -1,9 +1,6 @@
 ---
-title: Trvalost a spuštění dokumentu tabulky | Microsoft Docs
-ms.custom: ''
+title: Trvalost a spuštění tabulky dokumentů | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, managing
@@ -16,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51f3d2cc41c9adaf97215701ad01da2e59d245a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05584f7bd7fe9743d12ddb1cdda41f9ef9aedff0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935603"
 ---
-# <a name="persistence-and-the-running-document-table"></a>Trvalosti a tabulce dokument spuštěná
-V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, projekty jsou zcela zodpovědní za správu trvalost jejich položky projektu, které se toho dosáhnout pomocí služby, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumenty jsou základní jednotkou trvalost v prostředí Visual Studio. Projekty koordinovat otevření, uložení a přejmenování dokumentů s spuštěné tabulce dokumentu r. (..), na prostředek, který sleduje stav všechny otevřené dokumenty.  
+# <a name="persistence-and-the-running-document-table"></a>Trvalost a spuštěná tabulka dokumentů
+V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, projekty jsou zcela zodpovědní za správu trvalost jejich položky projektu, které jsou-li toho dosáhnout pomocí služby, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumenty představují základní jednotkou přetrvávání v prostředí sady Visual Studio. Projekty koordinovat otevření, uložení a přejmenování dokumentů s tabulce spuštěných dokumentů (r...), prostředek, který sleduje stav všech otevřených dokumentech.  
   
-## <a name="managing-persistence"></a>Správa trvalost  
- Projekty řídit v prostředí trvalost služby pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> rozhraní. Když prostředí nikdy přímo požádá dokumentu trvání, požádá vlastnícím projektu (nebo hierarchie) k uložení dokumentu. To umožňuje projekt, který má-li uložit data položky projektu do místních souborů, vzdálené soubory, databáze, úložiště nebo jiné médium.  
+## <a name="managing-persistence"></a>Správa trvalosti  
+ Projekty řízen implementace službu trvalého uložení prostředí <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> rozhraní. Zatímco prostředí nikdy nesmí přímo dotazem dokument k uchování samotné, požádá vlastnící projekt (nebo hierarchie) k uložení dokumentu. Umožňuje pro projekt uložte jeho data položky projektu do místních souborů, vzdálené soubory, databáze, úložiště nebo jiné médium.  
   
- Globální prostředí udržuje r.... Prostředí udržuje položky pro všechna otevřená okna a dokumenty v r..., která vám umožní, aby přijímat speciální oznámení, například při uzavření řešení. Kromě toho r... umožňuje sledovat jejich odpovídajících uzlů v prostředí **Průzkumníku řešení**. R... udržuje jeden záznam za otevřený, trvalá objektu, včetně souborů projektu a položek projektů dokumenty.  
+ Globální prostředí udržuje rámcový. Prostředí udržuje položky pro všechna otevřená okna a dokumenty v r..., díky tomu je možné pro něho přijímat speciální oznámení, jako je například při zavření řešení. Kromě toho rámcový umožňuje prostředí tak, aby sledovat jejich odpovídající uzly v **Průzkumníka řešení**. Rámcový udržuje jeden záznam na otevřené, trvalé objektu, včetně souborů projektu a položek projektů dokumenty.  
   
 ## <a name="see-also"></a>Viz také  
- [Spuštěné tabulce dokumentu](../../extensibility/internals/running-document-table.md)   
+ [Spuštění tabulky dokumentů](../../extensibility/internals/running-document-table.md)   
  [Výběr a měna v prostředí IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

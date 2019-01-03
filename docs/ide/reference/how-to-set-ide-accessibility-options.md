@@ -1,9 +1,8 @@
 ---
-title: 'Postupy: nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí'
+title: 'Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí'
 description: Zjistěte, jak nastavení možností usnadnění přístupu v sadě Visual Studio, které vám usnadní jeho integrované vývojové prostředí (IDE) pro každodenní použití, včetně uživatelů, kteří mají ke čtení a pro uživatele, kteří mají omezenou pohyblivostí k zápisu.
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906771"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Postupy: nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
+# <a name="how-to-set-ide-accessibility-options"></a>Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí
 
 > [!TIP]
 > Další informace o nedávných aktualizacích usnadnění přístupu, najdete v článku [vylepšení přístupnosti v sadě Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blogový příspěvek.
@@ -90,7 +89,7 @@ Kromě toho [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporu
 
 4.  Z **zobrazení položek**, vyberte nějakou položku, jejichž zobrazení je potřeba změnit, jako například **prostý Text**, **okraj indikátoru**, **viditelné prázdné znaky**, **Atributu HTML Name**, nebo **atribut XML**.
 
-5.  Vyberte zobrazení nastavení z následujících možností: **popředí položky**, **položky pozadí**, a **tučné**.
+5.  Zobrazení nastavení vyberte z následujících možností: **Popředí položky**, **položky pozadí**, a **tučné**.
 
 6.  Zvolte **OK**.
 

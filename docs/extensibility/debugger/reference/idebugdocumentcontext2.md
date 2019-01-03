@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentContext2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDocumentContext2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06ff06086c0f293f70af7d9570cf72df4be85608
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dca62a511cd247f3344e319a7c3b4946b848103f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909695"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Toto rozhraní představuje pozici ve zdrojovém souboru dokumentu.  
@@ -32,31 +29,31 @@ IDebugDocumentContext2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní jako součást jeho podpora pro úrovně ladění zdrojového kódu. Toto rozhraní kromě pozici ve zdrojovém kódu, poskytuje metody pro porovnání kontexty a procházení jako zdrojový kód.  
+ Ladicí stroj (DE) implementuje toto rozhraní jako součást své podpory úrovně ladění zdrojového kódu. Kromě pozice ve zdrojovém kódu toto rozhraní poskytuje metody pro porovnávání kontextů a procházení jako zdrojový kód.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Některé metody rozhraní, obvykle [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) a [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) rozhraní, vrátí tato rozhraní.  
+ Metody v několika rozhraní, obvykle [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) a [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) rozhraní, vrátit toto rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugDocumentContext2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugDocumentContext2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)|Získá dokument, který obsahuje tento kontext dokumentu.|  
-|[GetName –](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|Získá zobrazitelné název dokumentu, který obsahuje tento kontext dokumentu.|  
-|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)|Načte seznam všech kontextů kód spojený s tímto kontextem dokumentu.|  
+|[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|Získá zobrazitelný název dokumentu, který obsahuje tento kontext dokumentu.|  
+|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)|Načte seznam všech kontextech kód spojený s tímto kontextem dokumentu.|  
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugdocumentcontext2-getlanguageinfo.md)|Získá jazyk spojený s tímto kontextem dokumentu.|  
-|[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Získá soubor příkaz rozsahu tohoto kontextu dokumentu.|  
-|[Getsourcerange –](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)|Získá rozsah zdrojových souborů tohoto kontextu dokumentu.|  
-|[Porovnání](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Porovná tento dokument kontext pro dané pole kontextů dokumentu.|  
-|[Hledat](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Přesune kontext dokumentu o zadaný počet příkazy nebo řádky.|  
+|[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Získá rozsah souboru příkazů tohoto kontextu dokumentu.|  
+|[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)|Získá zdrojový rozsah souboru tohoto kontextu dokumentu.|  
+|[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Porovná tento kontext dokumentu do daného pole kontextů dokumentu.|  
+|[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Přesune kontext dokumentu stanovený počet příkazů nebo řádky.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)   

@@ -1,8 +1,6 @@
 ---
 title: Idiasymbol::get_relativevirtualaddress – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5056c149559cfb6760890fb960ec608042839e4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 047d34eff9fd3218b48ad7efa3bbc0af3032b32a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908615"
 ---
 # <a name="idiasymbolgetrelativevirtualaddress"></a>IDiaSymbol::get_relativeVirtualAddress
 Načte relativní virtuální adresu (RVA) umístění. Použít, když [locationtype – výčet](../../debugger/debug-interface-access/locationtype.md) je nastavena na `LocIsStatic`.  
@@ -27,7 +25,7 @@ Načte relativní virtuální adresu (RVA) umístění. Použít, když [locatio
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

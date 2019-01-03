@@ -2,7 +2,6 @@
 title: Vytvoření a použití prostředku
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
@@ -13,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df8c3a225b4e8f4e65826c1db0c806c716d8fb0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903861"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Vytvoření a použití prostředku
-Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně použitelné entity nazývané prostředky. Styly umožňují nastavit vlastnosti elementu a použít tato nastavení pro jednotný vzhled napříč více prvků. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definuje vzhled ovládacího prvku a mohou být použity také jako prostředek. Další informace najdete v tématu [rychlý start: používání stylů pro ovládací prvky](http://go.microsoft.com/fwlink/?LinkID=248239) a [rychlý start: řízení šablony](http://go.microsoft.com/fwlink/?LinkID=247982).
+Styly a šablony pro elementy v Návrháři XAML jsou uloženy v opakovaně použitelné entity nazývané prostředky. Styly umožňují nastavit vlastnosti elementu a použít tato nastavení pro jednotný vzhled napříč více prvků. A [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definuje vzhled ovládacího prvku a mohou být použity také jako prostředek. Další informace najdete v tématu [rychlý start: Používání stylů pro ovládací prvky](http://go.microsoft.com/fwlink/?LinkID=248239) a [rychlý start: Ovládací prvek šablony](http://go.microsoft.com/fwlink/?LinkID=247982).
 
  Při každém vytvoření nového prostředku z existující vlastnosti [styl](/uwp/api/Windows.UI.Xaml.Style), nebo `ControlTemplate`, **vytvořit prostředek** dialogové okno umožňuje definovat prostředek na úrovni aplikace, úrovni dokumentu nebo na úrovni prvku. Tyto úrovně určit, kde lze prostředek použít. Například pokud definujete prostředek na úrovni prvku, prostředek je použít jenom na element, na kterém jste vytvořili. Také lze zvolit uložení prostředku do adresáře zdrojů, což je oddělený soubor, který lze znovu použít v jiném projektu.
 

@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 43975e57e37a16522b483990c83d0db22a6eb27d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896068"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Postupy: určení vlastnosti úložiště podrobností časování pro spuštění zátěžového testu
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Postupy: Určení vlastnosti úložiště podrobností časování pro spuštění zátěžového testu
 
 Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit nastavení, aby splňovalo potřebám a cílům testování.
 
@@ -26,14 +25,14 @@ Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým te
 
 Můžete upravit nastavení spuštění **úložiště podrobností časování** hodnotu vlastnosti v **vlastnosti** okna. **Úložiště podrobností časování** vlastnost lze nastavit na kteroukoli z následujících možností:
 
-- **Detaily o všech jednotlivých položkách:** shromažďuje a ukládá data jednotlivých časování pro každý test, transakci a stránku zmíněnou v průběhu testu.
+- **Detaily o všech jednotlivých položkách:** Shromažďuje a ukládá data jednotlivých časování pro každý test, transakci a stránku zmíněnou v průběhu testu.
 
   > [!NOTE]
   > **Detaily o všech jednotlivých položkách** musí být vybrána možnost povolit informace o datech virtuálních uživatelů ve vašich výsledcích zátěžového testu. Další informace najdete v tématu [analýza aktivity virtuálních uživatelů v podrobném zobrazení](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-- **Žádné:** neshromažďuje žádné podrobnosti jednotlivých časování. Průměrné hodnoty jsou však stále k dispozici.
+- **Žádné:** Neshromažďuje žádné podrobnosti jednotlivých časování. Průměrné hodnoty jsou však stále k dispozici.
 
-- **Pouze statistiky:** ukládá jednotlivá data časování, ale pouze jako percentil. Tím ušetříte prostředky prostoru.
+- **Pouze statistiky:** Ukládá data jednotlivých časování, ale pouze jako percentil. Tím ušetříte prostředky prostoru.
 
   **Důležité informace týkající se vlastnosti úložiště podrobností časování**
 
@@ -59,7 +58,7 @@ Můžete upravit nastavení spuštění **úložiště podrobností časování*
 
 5.  V části **výsledky** kategorie, zvolte **úložiště podrobností časování** vlastnosti a vyberte **detaily o všech jednotlivých položkách**.
 
-     Po nakonfigurování **detaily o všech jednotlivých položkách** nastavení **úložiště podrobností časování** vlastností, můžete spustit zatížení testování a zobrazení **graf aktivity virtuálního uživatele**. Další informace najdete v tématu [postupy: analýza, co dělají virtuálních uživatelů během zátěžového testu](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
+     Po nakonfigurování **detaily o všech jednotlivých položkách** nastavení **úložiště podrobností časování** vlastností, můžete spustit zatížení testování a zobrazení **graf aktivity virtuálního uživatele**. Další informace najdete v tématu [jak: Co dělají virtuálních uživatelů během zátěžového testu analyzovat](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
 ## <a name="see-also"></a>Viz také:
 

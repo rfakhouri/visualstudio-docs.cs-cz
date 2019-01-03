@@ -1,22 +1,20 @@
 ---
-title: 'Postupy: použití AsyncPackage k načtení rozšíření VSPackages na pozadí | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití AsyncPackage k načtení rozšíření VSPackages na pozadí | Dokumentace Microsoftu'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.technology: vs-ide-sdk
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1afd0199401159ace6ccc34bf3f32aa564cf195f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32fb275cc788722df7085e64d25ded88de127381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922926"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: použití AsyncPackage k načtení rozšíření VSPackages na pozadí
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: Použití AsyncPackage k načtení rozšíření VSPackages na pozadí
 V / v disku může způsobit načtením a inicializací balíček VS. V případě takových vstupně-výstupních operací na vlákno uživatelského rozhraní může vést k problémů s rychlostí odezvy. Z toho Visual Studio 2015 zavedené <xref:Microsoft.VisualStudio.Shell.AsyncPackage> třídu, která umožňuje načítání balíčku na vlákně na pozadí.  
   
 ## <a name="create-an-asyncpackage"></a>Vytvoření AsyncPackage  
@@ -49,7 +47,7 @@ V / v disku může způsobit načtením a inicializací balíček VS. V případ
   
 4. Pokud máte inicializace asynchronní práce, kterou byste měli přepsat <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Odeberte `Initialize()` metodu poskytovanou šablonou VSIX. ( `Initialize()` Metoda **AsyncPackage** je zapečetěná). Můžete použít některý z <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> metody pro přidání asynchronní služby do vašeho balíčku.  
   
-    Poznámka: K volání `base.InitializeAsync()`, můžete změnit zdrojový kód:  
+    POZNÁMKA: Chcete-li volat `base.InitializeAsync()`, můžete změnit zdrojový kód:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
@@ -57,7 +55,7 @@ V / v disku může způsobit načtením a inicializací balíček VS. V případ
   
 5. Je musíte pečlivě NEDOVOLTE, aby byly RPC (vzdálené volání procedur) z asynchronní inicializační kód (v **InitializeAsync**). Těm dochází při volání <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> přímo nebo nepřímo.  Při načítání synchronizace jsou požadovány, bude blokovat vlákno uživatelského rozhraní pomocí <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. Výchozí model blokování zakáže Vzdálená volání procedur. To znamená, že při pokusu o použití vzdáleného volání Procedur z vašich úloh s modifikátorem async, můžete se zablokování Pokud vlákno uživatelského rozhraní samotného čekání na váš balíček se načíst. Obecné alternativou je zařadit váš kód na vlákno uživatelského rozhraní v případě potřeby pomocí příkazu podobného tomuto **spojitelné továrny úloh**společnosti <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> nebo jiný mechanismus, který nepoužívá vzdáleného volání Procedur.  Nepoužívejte **ThreadHelper.Generic.Invoke** nebo obecně blokovat volající vlákno čeká na vlákně UI.  
   
-    Poznámka: Měli byste se vyhnout použití **GetService** nebo **služby QueryService** ve vašich `InitializeAsync` metody. Pokud máte použít, musíte nejprve přepnout na vlákno uživatelského rozhraní. Alternativou je použití <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> z vaší **AsyncPackage** (pomocí přetypování na <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    POZNÁMKA: Měli byste se vyhnout použití **GetService** nebo **služby QueryService** v vaše `InitializeAsync` metody. Pokud máte použít, musíte nejprve přepnout na vlákno uživatelského rozhraní. Alternativou je použití <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> z vaší **AsyncPackage** (pomocí přetypování na <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
   
    C#: Vytvoření AsyncPackage:  
   
@@ -79,7 +77,7 @@ public sealed class TestPackage : AsyncPackage
   
 1.  Nezapomeňte odebrat `Initialize` přepsání, které jste měli v balíčku.  
   
-2.  Zabránilo zablokování: to může být skrytá RPC ve vašem kódu. které teď provádělo na vlákně na pozadí. Ujistěte se, že pokud provádíte vzdáleného volání Procedur (například **GetService**), budete muset buď (1) přepněte na hlavním vlákně, nebo (2), použijte asynchronní verze rozhraní API, pokud existuje (například **GetServiceAsync**).  
+2.  Zabránilo zablokování: To může být skrytá RPC ve vašem kódu. které teď provádělo na vlákně na pozadí. Ujistěte se, že pokud provádíte vzdáleného volání Procedur (například **GetService**), budete muset buď (1) přepněte na hlavním vlákně, nebo (2), použijte asynchronní verze rozhraní API, pokud existuje (například **GetServiceAsync**).  
   
 3.  Přepnutí mezi vlákny příliš často. Došlo k pokusu o lokalizaci práci, kterou může dojít ve vlákně na pozadí zkrátit čas zatížení.  
   
@@ -96,7 +94,7 @@ public sealed class TestPackage : AsyncPackage
   
   Váš balíček má stále příležitost (ve fázi asynchronní inicializace) k práci mimo vlákno uživatelského rozhraní, ale pro dokončení, které pracují se zablokuje vlákno uživatelského rozhraní. Pokud volající používá **IAsyncServiceProvider** asynchronně dotazu pro vaši službu, pak zatížení a inicializace se provede asynchronně za předpokladu, že nemusíte okamžitě zablokovat výsledného objektu task.  
   
-  C#: Jak dotazovat služby asynchronně:  
+  C#: Jak provádět dotazy služby asynchronně:  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;   
@@ -105,4 +103,3 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
-  

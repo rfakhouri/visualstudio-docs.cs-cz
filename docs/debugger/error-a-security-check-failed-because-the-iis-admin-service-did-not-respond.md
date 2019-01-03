@@ -1,8 +1,6 @@
 ---
-title: 'Chyba: Kontrola zabezpečení selhala, protože správce služby IIS neodpověděla. | Microsoft Docs'
-ms.custom: ''
+title: 'Chyba: Kontrola zabezpečení selhala, protože služba správy služby IIS neodpověděla. | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -18,31 +16,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d590e98fc781093c6461bea78665ec0000875b7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058058"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902263"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Chyba: Kontrola zabezpečení selhala, protože služba správy služby IIS neodpověděla.
-K této chybě dojde, když správce služby IIS neodpovídá. To obvykle znamená, že dojde k problému s instalací služby IIS. Nejprve ověří, zda je spuštěna služba pomocí **služby** nástroje z **nástroje pro správu**.  
+Tato chyba nastane, pokud správce služby IIS neodpovídá. To obvykle znamená, že dojde k problému s instalací služby IIS. Nejprve ověří, zda je spuštěna služba pomocí **služby** nástroj z **nástroje pro správu**.  
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Znovu nainstalujte službu IIS, pomocí **přidat nebo odebrat programy** ovládací panely.  
+-   Znovu nainstalujte IIS pomocí **přidat nebo odebrat programy** ovládacích panelech.  
   
 -   -nebo-  
   
--   Odeberte služby IIS z počítače, pomocí ovládacího panelu Přidat nebo odebrat programy. Pokud jste odstranili služby IIS a stále máte problémy, zjistěte v registru a ujistěte se, že tento klíč již existuje:  
+-   Služba IIS odeberte z počítače, pomocí ovládacího panelu Přidat nebo odebrat programy. Pokud jste odebrali službu IIS a stále máte problémy, zkontrolujte registru a ujistěte se, že tento klíč už existuje:  
   
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`  
   
      -nebo-  
   
--   Zakážete službu Správce služby IIS, pomocí ovládacího panelu Nástroje pro správu. Tato akce zakáže služby IIS na počítači.  
+-   Zakážete službu Správce služby IIS pomocí nástroje pro správu ovládacích panelů. Tato akce zakáže služby IIS na vašem počítači.  
   
-     Po provedení některé z těchto tří kroků, restartujte svůj počítač.  
+     Po provedení některé z těchto tří kroků, restartujte počítač.  
   
      Další informace najdete v dokumentaci služby IIS.  
   

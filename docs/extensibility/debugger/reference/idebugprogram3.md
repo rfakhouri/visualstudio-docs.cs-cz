@@ -1,9 +1,6 @@
 ---
-title: IDebugProgram3 | Microsoft Docs
-ms.custom: ''
+title: IDebugProgram3 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5849617b1fb0d1446b847f9eb5137de06b685953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896605"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-Toto rozhraní představuje program, který běží v procesu a rozšiřuje [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) tím, že poskytuje informace o přístup z více vláken.  
+Toto rozhraní představuje program, který běží v procesu a rozšiřuje [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) tím, že poskytuje informace o vláknech.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,27 +27,27 @@ IDebugProgram3 : IDebugProgram3
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) a vlastní port dodavatele implementovat toto rozhraní představují program v procesu. Správce ladicí relace (SDM) také implementuje toto rozhraní poskytovat informace o [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
+ Ladicí stroj (DE) a vlastní port dodavatele implementovat toto rozhraní k reprezentaci programu v procesu. Správce ladění relace (SDM) také implementuje toto rozhraní poskytnout informace o [připojit](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) událostí vrátí toto rozhraní pro nový program. Toto rozhraní je také použít jako parametr pro mnoho způsobů na více rozhraní.  
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) událost vrátí toto rozhraní pro nový program. Toto rozhraní je také použít jako parametr pro mnoho metod na více rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugProgram3`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugProgram3`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Spustí program. Vlákno je vrácen do poskytnout ladicí program informace, na které vlákno je uživatel zobrazení při provádění.|  
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Spustí program. Vlákno se vrátí do poskytnout informace o ladicího programu, ve které vlákno je uživatel zobrazení při provádění.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Poznámky  
- Program je spuštěn v konkrétní architektuře běhu a proces se skládá z jednoho nebo více programů kontejner přístup z více vláken.  
+ Program je kontejner vlákna spuštěná v konkrétní za běhu architektury, zatímco proces se skládá z jednoho nebo více programů.  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

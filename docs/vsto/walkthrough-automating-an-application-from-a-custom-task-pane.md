@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Automatizace aplikace z vlastního podokna úloh'
-ms.custom: ''
+title: 'Průvodce: Automatizace aplikace z vlastního podokna úloh'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d6dd29f989f1ea2bbf95ce2b32e7d031e1953e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915085"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Návod: Automatizace aplikace z vlastního podokna úloh
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Průvodce: Automatizace aplikace z vlastního podokna úloh
   Tento návod ukazuje, jak vytvořit vlastního podokna úloh, který automatizuje aplikace PowerPoint. Vlastního podokna úloh vloží data do snímku, když uživatel klikne <xref:System.Windows.Forms.MonthCalendar> ovládací prvek, který je v podokně úloh.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "35675725"
   
 ### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
   
-1.  Vytvoření projektu doplňku VSTO pro PowerPoint s názvem **MyAddIn**, pomocí šablony projektu doplňku PowerPoint. Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Vytvoření projektu doplňku VSTO pro PowerPoint s názvem **MyAddIn**, pomocí šablony projektu doplňku PowerPoint. Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře **ThisAddIn.cs** nebo **ThisAddIn.vb** soubor kódu a přidá **MyAddIn** projektu **Průzkumníka řešení**.  
   
@@ -139,14 +136,12 @@ ms.locfileid: "35675725"
   
 -   Vytvoření vlastního podokna úloh v doplňku VSTO pro jinou aplikaci. Další informace o aplikacích, které podporují vlastní podokna úloh, naleznete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
   
--   Vytvoření tlačítka pásu karet, který umožňuje skrýt nebo zobrazit vlastního podokna úloh. Další informace najdete v tématu [návod: synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   Vytvoření tlačítka pásu karet, který umožňuje skrýt nebo zobrazit vlastního podokna úloh. Další informace najdete v tématu [názorný postup: Synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
--   Vytvoření vlastního podokna úloh pro každou e-mailové zprávy, která je otevřena v Outlooku. Další informace najdete v tématu [návod: zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Vytvoření vlastního podokna úloh pro každou e-mailové zprávy, která je otevřena v Outlooku. Další informace najdete v tématu [názorný postup: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Vlastní podokna úloh](../vsto/custom-task-panes.md)   
  [Postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
  [Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [Návod: Zobrazení vlastních podoken úloh s e-mailové zprávy v aplikaci Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  

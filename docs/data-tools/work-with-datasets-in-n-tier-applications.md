@@ -18,23 +18,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23dc346ac1d8495c3aef191ee3228087e1b222c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d89c3a5582ef1c84c455801d3766d65246e34dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899636"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Práce s datovými sadami ve vícevrstvých aplikacích
 
-*Vícevrstvé datové aplikace* datově zaměřená aplikace, které jsou rozdělené do několika logických vrstev (nebo *vrstev*). Jinými slovy vícevrstvé datové aplikace je aplikace, která rozdělen do více projektů, s úroveň přístupu dat, vrstvu obchodní logiky a prezentační vrstvou každý svůj vlastní projektu. Další informace najdete v tématu [vícevrstvé datové aplikace přehled](../data-tools/n-tier-data-applications-overview.md).
+*Vícevrstvé datové aplikace* datově orientovaných aplikací, které jsou rozdělené do několika logické vrstvy jsou (nebo *úrovně*). Jinými slovy vícevrstvé datové aplikace je aplikace, která je rozdělena do několika projektů s vrstvě přístupu k datům, vrstvu obchodní logiky a prezentační vrstvou každý ve svém vlastním projektu. Další informace najdete v tématu [přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md).
 
-Typové datové sady vylepšily tak, aby do diskrétní projektů možné vygenerovat třídy TableAdapters a datové sady. To umožňuje rychle samostatných aplikací vrstev a vytvářet vícevrstvé datové aplikace.
+Typové datové sady vylepšené tak, aby do samostatných projektů se můžou generovat třídy TableAdapter a datové sady. To poskytuje schopnost rychle samostatné aplikace a generovat vícevrstvých datových aplikací.
 
-N-vrstvá podpora v typových datových sadách umožňuje iterativní vývoj architektury aplikace n vrstvá návrhu. Také odebere požadavek na ručně oddělení kód do více než jeden projekt. Spustí navrhování Datová vrstva pomocí **návrháře Dataset**. Pokud jste připraveni provést Architektura aplikace na návrh n vrstvé, nastavit **DataSet projekt** vlastnosti datové sady pro generování třídu datové sady do samostatného projektu.
+N-vrstvá podpora v typových datových sadách umožňuje iterativního vývoje návrhu, n vrstvá architektura aplikací. Odebere také nutnost ručně rozdělení kódu do více než jeden projekt. Začíná návrh datové vrstvě pomocí **Návrhář Dataset**. Jakmile budete připraveni, abyste při návrhu n vrstvé architektury aplikace, nastavte **projektu DataSet** vlastnosti datové sady, chcete-li vytvořit třídu dataset do samostatného projektu.
 
 ## <a name="reference"></a>Odkaz
 
@@ -44,13 +43,13 @@ N-vrstvá podpora v typových datových sadách umožňuje iterativní vývoj ar
 ## <a name="see-also"></a>Viz také:
 
 - [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)
-- [Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Návod: Vytvoření vícevrstvé datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Přidávání kódu do datových sad ve vícevrstvých aplikacích](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Přidávání ověřování do vícevrstvé datové sady](../data-tools/add-validation-to-an-n-tier-dataset.md)
 - [Rozdělování datových sad a objektů TableAdapter do různých projektů](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 - [Hierarchická aktualizace](../data-tools/hierarchical-update.md)
-- [Datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Nástroje datových sad v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Vytvoření a konfigurace objektů TableAdapter](../data-tools/create-and-configure-tableadapters.md)
-- [N-vrstvá a vzdálené aplikace s dotazy LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+- [N-vrstvé a vzdálené aplikace s LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

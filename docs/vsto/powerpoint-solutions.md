@@ -1,9 +1,6 @@
 ---
 title: Řešení pro aplikaci PowerPoint
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906043"
 ---
 # <a name="powerpoint-solutions"></a>Řešení pro aplikaci PowerPoint
   Visual Studio poskytuje šablony projektu, které slouží k vytváření doplňků VSTO pro Microsoft Office PowerPoint. Doplňky VSTO slouží k automatizaci aplikace PowerPoint, rozšířit funkce aplikace nebo přizpůsobení uživatelského rozhraní (UI) aplikace PowerPoint.  
@@ -37,7 +34,7 @@ ms.locfileid: "49906556"
 > [!NOTE]  
 >  Zajímá vás vývoj řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na nové [Office Add-ins modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky sady Office mají malé náklady v porovnání s doplňky VSTO a řešení a je můžete vytvořit s využitím téměř jakékoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [jak mohu: vytvořit doplněk pro aplikaci Microsoft PowerPoint?](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související video ukázku naleznete v tématu [postup: Vytvořit doplněk pro aplikaci Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>Pomocí aplikace PowerPoint objektového modelu automatizace aplikace PowerPoint  
  Objektový model aplikace PowerPoint poskytuje mnoho typů, které můžete použít k automatizaci aplikace PowerPoint. Tyto typy umožňují také napsat kód k provedení běžných úloh:  
@@ -56,7 +53,7 @@ ms.locfileid: "49906556"
  Úplné informace o objektovém modelu aplikace PowerPoint mohou odkazovat na primární sestavení vzájemné spolupráce (PIA) odkaz na aplikaci PowerPoint a referenční dokumentace objektového modelu VBA.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz na primární spolupracující sestavení  
- Referenční dokumentaci PowerPoint PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na primární spolupracující sestavení PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
+ Referenční dokumentaci PowerPoint PIA popisují typy ve primárního spolupracujícího sestavení pro aplikaci PowerPoint. Tato dokumentace je k dispozici z následujícího umístění: [Odkaz na primární spolupracující sestavení PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=189588).  
   
  Další informace o návrhu aplikace PowerPoint PIA, jako jsou rozdíly mezi třídami a rozhraní v PIA a jak jsou implementované událostí v PIA, naleznete v tématu [přehled třídy a rozhraní v primární spolupracující sestavení Office ](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -81,11 +78,9 @@ ms.locfileid: "49906556"
  [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Přehled vývoje řešení pro Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
- [Postupy: vytváření projektů pro systém Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Postupy: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)   
  [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 ve vývoji Office](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

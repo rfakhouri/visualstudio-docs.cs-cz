@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentPosition2 | Microsoft Docs
-ms.custom: ''
+title: IDebugDocumentPosition2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentPosition2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d685a59dd9404f48cfbdf9ae72e1fa07ba0d0625
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4327d1350c6d0487f9ee8fb89f03ad24b0e085a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907758"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
-Toto rozhraní představuje abstraktní pozici ve zdrojovém souboru.  
+Toto rozhraní představuje abstraktní pozice ve zdrojovém souboru.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,27 +29,27 @@ IDebugDocumentPosition2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Visual Studio obvykle toto rozhraní implementuje. Modul ladění (DE) by také implementovat toto rozhraní, pokud je nutné zadat vlastní zdrojový kód (jako když je DE implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní).  
+ Visual Studio obvykle implementuje toto rozhraní. Ladicí stroj (DE) by také implementovat toto rozhraní, pokud je nutné zadat vlastní zdrojového kódu (jako při DE implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní).  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Toto rozhraní je předána jako argument k [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md). Rovněž je zadán jako součást [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) – typ union (konkrétně [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struktura), je zase součástí [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struktura, který se používá při vytváření čekající zarážky.  
+ Toto rozhraní je předán jako argument [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md). Je rovněž dodán jako součást [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) sjednocení (konkrétně [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) struktury), který je zase součástí [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) strukturu, který se používá při vytváření čekající zarážkou.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugDocumentPosition2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugDocumentPosition2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|Získá název souboru zdrojového souboru, který obsahuje tento dokument pozice.|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|Získá obsahující dokumentu.|  
-|[IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)|Určuje, pokud tato pozice je součástí daného dokumentu.|  
-|[Getrange –](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|Získá rozsahu pro tuto pozici dokumentu.|  
+|[GetFileName](../../../extensibility/debugger/reference/idebugdocumentposition2-getfilename.md)|Získá název souboru zdrojového souboru, který obsahuje pozici tohoto dokumentu.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-getdocument.md)|Získá aktuálního dokumentu.|  
+|[IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)|Určuje, pokud toto umístění je součástí daného dokumentu.|  
+|[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)|Získá rozsah pro tuto pozici dokumentu.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)   

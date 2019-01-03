@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919596"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 
@@ -71,11 +70,11 @@ V této části Průzkumník DSL můžete:
 
 3.  Nastavte **panelu nástrojů ikonu** vlastnost k odkazování na rastrový obrázek 16 x 16.
 
-     Pokud chcete definovat nová ikona, vytvořit soubor rastrového obrázku v Průzkumníku řešení v **Dsl\Resources** složky. Soubor by měl mít následující hodnoty vlastností: **akce sestavení** = **obsahu**; **Kopírovat do výstupního adresáře** = **nekopírovat**.
+     Pokud chcete definovat nová ikona, vytvořit soubor rastrového obrázku v Průzkumníku řešení v **Dsl\Resources** složky. Soubor by měl mít následující hodnoty vlastností: **Akce sestavení** = **obsahu**; **Kopírovat do výstupního adresáře** = **nekopírovat**.
 
-4.  **Pro element nástroj:** nastavit **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.
+4.  **Pro nástroj element:** Nastavte **třídy** vlastnost nástroje k odkazování na konkrétní doménovou třídou, která je namapovaná na obrazec.
 
-     **Pro nástroj konektor:** nastavit **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.
+     **Konektor nástroje:** Nastavte **Tvůrce připojení** vlastnost nástroje pro jednu z položek, které nabízí v rozevíracím seznamu. Tvůrci připojení se automaticky vytvoří při mapování spojnici na doménový vztah. Pokud jste nedávno vytvořili konektor, obvykle vyberete Tvůrce asociované připojení.
 
 5.  K otestování DSL, stiskněte klávesu F5 nebo CTRL + F5 a v experimentální instanci sady Visual Studio, otevřete ukázkový soubor modelu. Nový nástroj by se zobrazit na panelu nástrojů. Přetáhněte do diagramu, ověřte, že vytvoří nový prvek.
 

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Aktualizace grafu na listu s použitím přepínačů'
-ms.custom: ''
+title: 'Průvodce: Aktualizace grafu na listu s použitím přepínačů'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891933"
 ---
-# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Návod: Aktualizace grafu na listu s použitím přepínačů
+# <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Průvodce: Aktualizace grafu na listu s použitím přepínačů
   Tento návod ukazuje základy používání přepínací tlačítka na list aplikace Microsoft Office Excel poskytnout způsob, jak rychle přepínat mezi možnostmi uživatele. V takovém případě možnosti změnit styl grafu.  
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -96,11 +93,11 @@ ms.locfileid: "49866438"
 
 1.  Vytvořte projekt sešitu aplikace Excel s názvem **Můj Excelový graf**. V průvodci vyberte **zkopírovat existující dokument**.  
 
-     Další informace najdete v tématu [postupy: vytvoření Office projekty v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Další informace najdete v tématu [jak: Vytvářet projekty pro Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
 
 2.  Klikněte na tlačítko **Procházet** tlačítko a přejděte do sešitu, který jste vytvořili dříve v tomto návodu.  
 
-3.  Klikněte na tlačítko **OK**.  
+3.  Klikněte na **OK**.  
 
      Visual Studio otevře nový sešit aplikace Excel v návrháři a přidá **Můj Excelový graf** projektu **Průzkumníka řešení**.  
 
@@ -113,7 +110,7 @@ ms.locfileid: "49866438"
 
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**Jméno**|**dataChart**|  
+    |**Název**|**dataChart**|  
     |**HasLegend**|**false**|  
 
 ## <a name="add-controls"></a>Přidání ovládacích prvků  
@@ -138,7 +135,7 @@ ms.locfileid: "49866438"
 
    | Vlastnost | Hodnota |
    |----------|------------------|
-   | **Jméno** | **columnChart** |
+   | **Název** | **columnChart** |
    | **Text** | **Sloupcový graf** |
 
 
@@ -147,7 +144,7 @@ ms.locfileid: "49866438"
 
    | Vlastnost | Hodnota |
    |----------|---------------|
-   | **Jméno** | **barChart** |
+   | **Název** | **barChart** |
    | **Text** | **Pruhový graf** |
 
 
@@ -156,7 +153,7 @@ ms.locfileid: "49866438"
 
    | Vlastnost | Hodnota |
    |----------|----------------|
-   | **Jméno** | **lineChart** |
+   | **Název** | **lineChart** |
    | **Text** | **Spojnicový graf** |
 
 
@@ -164,7 +161,7 @@ ms.locfileid: "49866438"
 
    |Vlastnost|Hodnota|  
    |--------------|-----------|  
-   |**Jméno**|**areaBlockChart**|  
+   |**Název**|**areaBlockChart**|  
    |**Text**|**Plošný graf bloku**|  
 
    Dále napište kód pro aktualizaci grafu, když dojde ke kliknutí na tlačítko přepínače.  
@@ -203,7 +200,7 @@ ms.locfileid: "49866438"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]  
 
-5.  V jazyce C# je nutné přidat obslužné rutiny událostí pro přepínací tlačítka. Můžete přidat kód, který `ChartOptions` konstruktor pod volání `InitializeComponent`. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  V jazyce C# je nutné přidat obslužné rutiny událostí pro přepínací tlačítka. Můžete přidat kód, který `ChartOptions` konstruktor pod volání `InitializeComponent`. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]  
 
@@ -234,7 +231,7 @@ ms.locfileid: "49866438"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]  
 
-2.  V jazyce C#, musíte přidat obslužnou rutinu události pro uživatelský ovládací prvek <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> události, jak je znázorněno níže. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [postupy: vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  V jazyce C#, musíte přidat obslužnou rutinu události pro uživatelský ovládací prvek <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> události, jak je znázorněno níže. Informace o tom, jak vytváření obslužných rutin událostí, naleznete v tématu [jak: Vytváření obslužných rutin událostí v projektech pro systém Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866438"
 
 -   Nasazení projektu. Další informace najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
 
--   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [návod: zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
+-   Pomocí tlačítka k naplnění textové pole. Další informace najdete v tématu [názorný postup: Zobrazení textu v textovém poli na listu s použitím tlačítka](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).  
 
--   Změna formátování v listu pomocí zaškrtávacích políček. Další informace najdete v tématu [návod: Změna formátování listů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   Změna formátování v listu pomocí zaškrtávacích políček. Další informace najdete v tématu [názorný postup: Změna formátování listů s použitím ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
 
 ## <a name="see-also"></a>Viz také:  
  [Návody pro aplikaci Excel](../vsto/walkthroughs-using-excel.md)  
-

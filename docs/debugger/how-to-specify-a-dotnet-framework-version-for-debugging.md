@@ -2,7 +2,6 @@
 title: Určení verze rozhraní .NET Framework pro ladění | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893824"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Postupy: určení verze rozhraní .NET Framework pro ladění (C#, Visual Basic, F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Postupy: Určení verze rozhraní .NET Framework pro ladění (C#, Visual Basic, F#)
 
 Ladicí program sady Visual Studio podporuje ladění starších verzích Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] stejně jako aktuální verze. Pokud spouštíte aplikaci ze sady Visual Studio, ladicí program může vždy identifikovat správnou verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pro aplikaci, kterou ladíte. Nicméně pokud aplikace je již spuštěn a spustit ladění pomocí **připojit k**, ladicí program, nemusí být vždy schopen identifikovat starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Pokud k tomu dojde, zobrazí se chybová zpráva s upozorněním,  
 
@@ -59,7 +58,7 @@ Ve výjimečných případech, kde se zobrazí tato chyba můžete nastavit klí
   
 7. V **Upravit řetězec** zadejte číslo verze rozhraní .NET Framework v **hodnotu** pole. Příklad: V1.1.4322  
   
-8. Klikněte na tlačítko **OK**.  
+8. Klikněte na **OK**.  
   
 9. Zavřít **Editor registru**.  
   

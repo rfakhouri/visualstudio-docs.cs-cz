@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef1860274c9234774b8af42525a0215d9468a858
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 88590c49938ef61344a1092dffb42565a81755d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920138"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí metod TableAdapter DBDirect
 
@@ -75,7 +74,7 @@ Prvním krokem je vytvoření **formulářová aplikace Windows**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Vytvoření zdroje dat z databáze
 
-Tento krok používá **Průvodce konfigurací zdroje dat** vytvořit zdroj dat na základě `Region` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [postupy: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
+Tento krok používá **Průvodce konfigurací zdroje dat** vytvořit zdroj dat na základě `Region` tabulky v ukázkové databázi Northwind. Musíte mít přístup k ukázkové databázi Northwind k vytvoření připojení. Informace o nastavení ukázkové databáze Northwind naleznete v tématu [jak: Instalace ukázkových databází](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Vytvoření zdroje dat
 

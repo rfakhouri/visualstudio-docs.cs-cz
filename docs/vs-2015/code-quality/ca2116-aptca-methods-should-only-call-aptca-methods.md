@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ba80dc732b407cf32ec388583734fa0fd7a4f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819547"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905894"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA by měly volat pouze metody APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,10 +78,7 @@ ms.locfileid: "49819547"
  **Požadovat pro úplný vztah důvěryhodnosti: požadavek se nezdařil. ** 
  **ClassRequiringFullTrust.DoWork byla volána.**
 ## <a name="related-rules"></a>Související pravidla
- [CA2117: Typy APTCA by měly rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+ [CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Viz také
  [Pokyny pro zabezpečené kódování](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [sestavení rozhraní .NET Framework skriptem částečně důvěryhodný kód](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [používání knihoven z částečně důvěryhodného kódu](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [požadavky](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

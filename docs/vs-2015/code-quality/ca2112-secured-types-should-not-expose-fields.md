@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a09093d05758d58828b9d7ca73223243252cb23c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49c860735fc65655a958c39bc237defdbc0acc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913336"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Zabezpečené typy by neměly vystavovat pole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +68,7 @@ ms.locfileid: "49871456"
  Tento příklad vytvoří následující výstup.
 
  **Vytvoření instance SecuredTypeWithFields. ** 
- **Zabezpečené typy polí: 22, 33**
+ **Zabezpečené typ pole: 22, 33**
 **změna zabezpečeného typu pole... ** 
  **Pole objektů do mezipaměti: 99, 33**
 ## <a name="related-rules"></a>Související pravidla
@@ -77,6 +76,3 @@ ms.locfileid: "49871456"
 
 ## <a name="see-also"></a>Viz také
  [Požadavky na propojení](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Data a modelování](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-

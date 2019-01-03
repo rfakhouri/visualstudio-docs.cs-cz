@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 691b1e46f7657eb027fa48b31f31119cae0c7451
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc93fb1382dba70aedc989a609ac2932cf4f466
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901474"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Používání členů oboru názvů Microsoft.VisualStudio.TestTools.UnitTesting při testech jednotek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +34,7 @@ Rozhraní testování částí podporuje testování jednotek v [!INCLUDE[vsprvs
 >  `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Prvků, které slouží pro testování řízené daty
- Nastavte testy jednotek řízené daty pomocí následující prvky. Další informace najdete v tématu [postupy: vytvoření testu jednotek data-Driven](../test/how-to-create-a-data-driven-unit-test.md) a [návod: použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Nastavte testy jednotek řízené daty pomocí následující prvky. Další informace najdete v tématu [How To: Vytvoření testu jednotek řízené daty](../test/how-to-create-a-data-driven-unit-test.md) a [názorný postup: Použití konfiguračního souboru k definování zdroje dat](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 -   <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 

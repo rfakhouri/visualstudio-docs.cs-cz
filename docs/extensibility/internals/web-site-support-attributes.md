@@ -1,9 +1,6 @@
 ---
-title: Webové stránky podpory atributy | Microsoft Docs
-ms.custom: ''
+title: Atributy podpory webu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
@@ -13,32 +10,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b312322c1d707f13c5121f1fd159f3fd7736886c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea55937318d22a40b90cddb54490b87ab0c44325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916819"
 ---
-# <a name="web-site-support-attributes"></a>Atributy webu podpory
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Webový projekt lze rozšířit zajistit podporu pro webové programovacích jazyků. Jazyk musí se registrovat s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby šablony projektů může vyskytovat v **nový web** dialogové okno když je vybraný jazyk.
+# <a name="web-site-support-attributes"></a>Atributy podpory webu
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Webový projekt je možné rozšířit o podporu pro webové programovacích jazyků. Jazyk musí registrovat s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tak, aby šablony projektů mohou objevit v **nový web** dialogové okno při výběru jazyka.
 
-Ukázka IronPython Studio zahrnuje podporu webu. Ukázka obsahuje následující třídy atributů k registraci IronPython jako codebehind jazyk pro nové webové projekty.
+Ukázka IronPython Studio zahrnuje podporu webu. Vzorek obsahuje následující třídy atributů k registraci Ironpythonu jako codebehind jazyk pro nové webové projekty.
 
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- Tento atribut je umístěn na projekt jazyka. Jazyk ho přidá do seznamu webových programovacích jazyků v **jazyk** v seznamu **nový web** dialogové okno. Následující kód například přidá IronPython do seznamu:
+ Tento atribut je umístěn v projektu jazyka. Přidá jazyk na seznam programovacích jazyků v oddílu Web **jazyk** v seznamu **nový web** dialogové okno. Například následující kód přidá do seznamu IronPython:
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- Tento atribut nastaví také cestu šablony tak, aby odkazoval na složku šablony. Další informace o umístění složky šablony najdete v tématu [webu podpory šablony](../../extensibility/internals/web-site-support-templates.md).
+ Tento atribut nastaví také šablony cesty tak, aby odkazoval do složky šablony. Další informace o umístění složky šablony najdete v tématu [šablony podpory webu](../../extensibility/internals/web-site-support-templates.md).
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- Tento atribut je umístěn na projekt jazyka. Webový projekt lze vnořit jeden typ souboru (souvisejících) umožňuje v rámci jiného typu souboru (primární) v **Průzkumníku řešení**.
+ Tento atribut je umístěn v projektu jazyka. Webový projekt vnořit jeden typ souboru (související) umožňuje v rámci jiného typu souboru (primární) v **Průzkumníka řešení**.
 
- Například následující kód určuje, že soubor codebehind IronPython vztahuje na soubor .aspx. Při vytvoření nové webové stránky .aspx v řešení lokality IronPython webové nový soubor .py zdroje se vygeneruje a zobrazí se jako podřízený uzel stránky .aspx.
+ Například následující kód určuje, že soubor codebehind Ironpythonu vztahuje na soubor .aspx. Při vytvoření nové webové stránky .aspx v Ironpythonu webového řešení lokality nový zdrojový soubor .py se vygeneruje a zobrazí se jako podřízený uzel stránky ASPX.
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
@@ -46,16 +43,16 @@ public class PythonProjectPackage : ProjectPackage
 ```
 
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- Tento atribut je umístěn na jazykovou sadu projektu. Vybere poskytovatele IntelliSense pro jazyk.
+ Tento atribut je umístěn na balíčku projektu jazyka. Vybere poskytovatele technologie IntelliSense pro jazyk.
 
- Například následující kód určuje, že instance PythonIntellisenseProvider, která implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, by se měl vytvořit na vyžádání k poskytování služeb jazyk.
+ Například následující kód určuje, že instance PythonIntellisenseProvider, která implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, by měl být vytvořen na vyžádání k poskytování služeb jazyka.
 
 ```
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]
 public class PythonPackage : Package, IOleComponent
 ```
 
- Implementace IVsIntellisenseProject zpracovává odkazy a volá kompilátor jazyka, pokud webové stránky s kódem je požadována, ale není v mezipaměti.
+ Implementace IVsIntellisenseProject zpracovává odkazy a volá kompilátor jazyka, pokud webové stránky s kódem je požadováno, ale neukládá do mezipaměti.
 
 ## <a name="see-also"></a>Viz také
  [Podpora webu](../../extensibility/internals/web-site-support.md)

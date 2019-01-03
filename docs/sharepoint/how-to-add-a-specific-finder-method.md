@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: Přidání specifické vyhledávací metody | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Přidání konkrétní vyhledávací metody | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8005728d29c38e32d55f01e42d2666c69112b3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913462"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Postupy: Přidání specifické vyhledávací metody
+# <a name="how-to-add-a-specific-finder-method"></a>Postupy: Přidání konkrétní vyhledávací metody
   Může vrátit instanci jednu entitu tím, že vytvoříte *Specific Finder* metody. Služba obchodní Data připojení (BDC) provede metody Specific Finder, když uživatel vybere entity v obchodních dat webové části nebo externí seznam. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-specific-finder-method"></a>Chcete-li vytvořit konkrétní metodu Finder
   
 1. Na **návrháři služby BDC**, zvolit entitu.  
   
-    Informace o tom, jak přidat entitu, aby **návrháři služby BDC** v sadě Visual Studio, naleznete v tématu [postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+    Informace o tom, jak přidat entitu, aby **návrháři služby BDC** v sadě Visual Studio, naleznete v tématu [jak: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
 2. V panelu nabídky zvolte **zobrazení** > **ostatní Windows**, **podrobnosti metody služby BDC**.  
   
@@ -60,7 +55,7 @@ ms.locfileid: "49886484"
   
 4. Otevřít Visual Studio **vlastnosti** okna.  
   
-5. Nakonfigurujte typ popisovače návratového parametru jako popisovač pro typ entity. Informace o tom, jak vytvořit popisovač typu entity, naleznete v tématu [postupy: definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
+5. Nakonfigurujte typ popisovače návratového parametru jako popisovač pro typ entity. Informace o tom, jak vytvořit popisovač typu entity, naleznete v tématu [jak: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
    > [!NOTE]  
    >  Není nutné tento krok proveďte, pokud jste přidali vyhledávací metody k entitě. Visual Studio používá typ popisovače, který jste definovali v vyhledávací metody.  
@@ -92,11 +87,10 @@ ms.locfileid: "49886484"
   
 ## <a name="see-also"></a>Viz také:
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
- [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
- [Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
+ [Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
+ [Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)   
+ [Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
  [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)   
  [Přehled nástroje pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
-  
+ [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  

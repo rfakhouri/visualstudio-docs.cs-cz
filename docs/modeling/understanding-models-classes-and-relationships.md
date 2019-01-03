@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908641"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL, společně s jakýkoli vlastní program kód, který může zapisovat. Většina programového kódu v řešení DSL je generována z tohoto souboru.
@@ -54,9 +53,9 @@ Jazyka specifického pro doménu (DSL) je definován v jeho souboru definice DSL
 
  ![Vztahy vložení a referenční informace](../modeling/media/music_classes.png)
 
- Na obrázku znázorňuje čtyři doménovými třídami: Hudba, fotoalba, interpreta a skladby. Doménové třídy definují vlastnosti domény, například název, nadpis a tak dále. Instance modelu jsou hodnoty některých z těchto vlastností zobrazí v diagramu.
+ Na obrázku znázorňuje čtyři doménové třídy: Hudba, fotoalba, interpreta a skladby. Doménové třídy definují vlastnosti domény, například název, nadpis a tak dále. Instance modelu jsou hodnoty některých z těchto vlastností zobrazí v diagramu.
 
- Třídy, aby se vztahy domén: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs a ArtistAppearedOnAlbums. Vztahy mít například 1..1, násobnosti 0.. *. Například každý skladby musí mít relaci ke přesně jeden alba prostřednictvím AlbumHasSongs vztahu. Každý alba může mít libovolný počet skladeb.
+ Třídy, aby se vztahy domén: MusicHasAlbums MusicHasArtists, AlbumbHasSongs a ArtistAppearedOnAlbums. Vztahy mít například 1..1, násobnosti 0.. *. Například každý skladby musí mít relaci ke přesně jeden alba prostřednictvím AlbumHasSongs vztahu. Každý alba může mít libovolný počet skladeb.
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Změna uspořádání diagramem definice DSL
  Všimněte si, že doménová třída může zobrazit několikrát v definici DSL diagramu, alba stejně jako na tomto obrázku. Je vždy jeden hlavní zobrazení a můžou být některé *odkaz* zobrazení.

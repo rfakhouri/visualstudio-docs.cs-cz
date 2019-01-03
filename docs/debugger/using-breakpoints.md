@@ -2,7 +2,6 @@
 title: Používání zarážek v ladicím programu | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -35,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 37e3ec71123cd03c8b5b431d8b8dd6042a610bad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934554"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Používání zarážek v ladicím programu sady Visual Studio
 Zarážky jsou jedním z nejdůležitějších technik ladění mezi nástroji pro vývojáře sady nástrojů. Můžete nastavit zarážky, bez ohledu na to chcete provést pozastavení spuštění ladicího programu. Můžete například zobrazit stav proměnných kódu se také podívat na zásobník volání na určité zarážce. Pokud je to poprvé, kterou jste se pokusili ladění kódu, můžete chtít číst [ladění pro naprosté začátečníky](../debugger/debugging-absolute-beginners.md) před provedením tohoto článku.

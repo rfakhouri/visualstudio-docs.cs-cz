@@ -1,13 +1,8 @@
 ---
-title: 'Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918781"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Průvodce: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat
 
 Služba obchodní Data připojení (BDC) umožňuje SharePoint k zobrazení obchodní data z back endové serverové aplikace, webové služby a databáze.
 
@@ -189,13 +184,13 @@ Přidání konkrétní vyhledávací metody k entitě kontakt s použitím **pod
 
     |Název|Název typu|
     |----------|---------------|
-    |Jméno|System.String|
-    |Příjmení|System.String|
+    |FirstName|System.String|
+    |LastName|System.String|
     |Telefon|System.String|
     |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
-    |PasswordHash|System.String|
+    |PasswordHash (Hodnota hash hesla)|System.String|
     |PasswordSalt|System.String|
 
 11. V Návrháři služby BDC na **kontakt** entity, otevřete **ReadItem** metody.
@@ -275,9 +270,9 @@ Při spuštění projektu se otevře web služby SharePoint a Visual Studio při
 
 Další informace o navrhování modelů služby BDC v Sharepointu v těchto tématech:
 
-- [Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md).
+- [Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md).
 - [Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md).
-- [Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md).
+- [Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md).
 
 ## <a name="see-also"></a>Viz také:
 

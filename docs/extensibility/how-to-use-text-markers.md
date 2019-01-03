@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: použití značek Text | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Použití značek Text | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 825f567098d86a0f643de84eef395e5404d3b0f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895698"
 ---
-# <a name="how-to-use-text-markers"></a>Postupy: použití značek text
+# <a name="how-to-use-text-markers"></a>Postupy: Použití značek text
 Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objektu.  
   
 ## <a name="procedures"></a>Procedury  
@@ -58,5 +55,5 @@ Textu značky lze použít k úpravě <xref:Microsoft.VisualStudio.TextManager.I
 ## <a name="see-also"></a>Viz také  
  [Text značky pomocí starší verze rozhraní API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Postupy: Přidání standardní text značky](../extensibility/how-to-add-standard-text-markers.md)   
- [Postupy: vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
- [Postupy: implementace označování chyb](../extensibility/how-to-implement-error-markers.md)
+ [Postupy: Vytvoření vlastního textu značky](../extensibility/how-to-create-custom-text-markers.md)   
+ [Postupy: Implementace označování chyb](../extensibility/how-to-implement-error-markers.md)

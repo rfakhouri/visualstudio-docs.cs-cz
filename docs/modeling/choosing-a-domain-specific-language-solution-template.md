@@ -10,20 +10,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d2977d546d463a8c21446a3643cff7ef49a01fb1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9682e774533d9aa350d52b777ec783ea2abe9463
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896081"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Výběr šablony řešení jazyka specifického pro doménu
 K vytváření řešení jazyka specifického pro doménu, vyberte jednu z šablon řešení, které jsou k dispozici v Průvodci návrháře jazyka specifického pro doménu. Výběrem šablony, která nejlépe odpovídá jazyk, ve kterém chcete vytvořit, můžete minimalizovat úpravy, které je nutné provést počáteční řešení.
 
  Následující šablony řešení jsou k dispozici v Průvodci návrháře jazyka specifického pro doménu.
 
-|Šablony|Funkce|Popis|
+|Šablona|Funkce|Popis|
 |-|-|-|
 |Diagramy tříd|-Oddíl obrazce<br />– Dědičnost třída<br />-Vztah dědičnosti<br />– Obrazec dědičnosti<br />– Vlastnosti relace|Pomocí této šablony řešení jazyka specifického pro doménu obsahuje entity a vztahy, které mají vlastnosti. Tato šablona vytvoří jazyka specifického pro doménu, která se podobá diagramů tříd UML. Hlavní entity jsou třídy a rozhraní, společně s relací asociace, generalizace a implementaci. Třídy nebo rozhraní se zobrazí jako pole, která obsahuje seznam atributů.|
 |Diagramy komponent|-Porty|Pomocí této šablony řešení jazyka specifického pro doménu obsahuje součásti, tedy součástí softwaru system. Tato šablona vytvoří jazyka specifického pro doménu, která se podobá diagramy komponent UML. Hlavní entity jsou komponenty a porty, které se zobrazí jako malá tvary na povrchu komponenty.|

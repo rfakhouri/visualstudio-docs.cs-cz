@@ -1,8 +1,6 @@
 ---
-title: Tipy k ladění vláken v nativním kódu | Microsoft Docs
-ms.custom: ''
+title: Tipy k ladění vláken v nativním kódu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c98f6bb1a738111d32b26c5b923abe41367e621e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f8787af757a65a25cdd03240bd3942030120ad48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910071"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Tipy k ladění vláken v nativním kódu
-Zde jsou některé tipy, které můžete použít při ladění vláken v nativním kódu:  
+Zde je několik tipů, které můžete využít při ladění vláken v nativním kódu:  
   
--   Obsah bloku vláken informace můžete zobrazit zadáním `@TIB` v **sledovat** okno nebo **QuickWatch** dialogové okno.  
+-   Obsah bloku vláken informace můžete zobrazit zadáním `@TIB` v **Watch** okno nebo **QuickWatch** dialogové okno.  
   
--   Kód poslední chyby pro aktuální vlákno můžete zobrazit zadáním `@Err` v **sledovat** okno nebo **QuickWatch** dialogové okno.  
+-   Kód poslední chyby pro aktuální vlákno můžete zobrazit tak, že zadáte `@Err` v **Watch** okno nebo **QuickWatch** dialogové okno.  
   
--   Funkce běhové knihovny jazyka C (CRT) může být užitečná pro ladění vícevláknové aplikace. Další informace najdete v tématu [_malloc_dbg –](/cpp/c-runtime-library/reference/malloc-dbg).  
+-   Funkce knihovny Run-Time C (CRT) mohou být užitečné při ladění aplikace s více vlákny. Další informace najdete v tématu [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg).  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

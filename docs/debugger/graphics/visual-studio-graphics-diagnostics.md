@@ -2,7 +2,6 @@
 title: Diagnostika grafiky | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890927"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostika grafiky sady Visual Studio
 Visual Studio*diagnostiky grafiky* je sada nástrojů pro nahrávání a pak analýzu problémů vykreslování a výkon v aplikacích rozhraní Direct3D. Diagnostika grafiky je použít v aplikacích, které běží místně v počítači Windows v emulátoru zařízení Windows nebo na vzdálený počítač nebo zařízení.  
@@ -82,6 +81,5 @@ Visual Studio*diagnostiky grafiky* je sada nástrojů pro nahrávání a pak ana
 
 | Název | Popis |
 | - | - |
-| [Prohlídka funkcí ladicího programu](../debugging-in-visual-studio.md) | Představuje funkce ladění v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Prohlídka funkcí ladicího programu](/visualstudio/debugger/debugger-feature-tour) | Představuje funkce ladění v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Grafika DirectX a hraní her](http://go.microsoft.com/fwlink/?LinkId=256498) | Obsahuje články, které popisují technologií grafiky DirectX. |
-

@@ -1,9 +1,6 @@
 ---
 title: Implementace vlastních kategorií a zobrazovat položky | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908433"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementovat vlastní kategorie a zobrazení položek
 VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) prostřednictvím vlastní kategorie a zobrazit položky.
@@ -135,5 +132,5 @@ VSPackage může poskytnout kontrolu nad písma a barvy jeho textu, aby [!INCLUD
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [Získání informací o písma a barvy pro barevné zvýraznění textu](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [Přístup uložená nastavení písma a barvy](../extensibility/accessing-stored-font-and-color-settings.md)
-- [Postupy: přístup k vestavěné písma a barvy schéma](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [Postupy: Přístup k vestavěné písma a barvy schéma](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [Přehled písma a barvy](../extensibility/font-and-color-overview.md)

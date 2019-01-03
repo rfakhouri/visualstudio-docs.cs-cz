@@ -1,8 +1,6 @@
 ---
-title: Zobrazení funkcí – Data kolizí | Microsoft Docs
-ms.custom: ''
+title: Zobrazení funkcí – Data kolizí | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,39 +10,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920021"
 ---
 # <a name="functions-view---contention-data"></a>Zobrazení funkcí – data kolizí
-Sestavy funkce Zobrazit seznamů dat kolizí funkce v profilaci spuštění, které byly blokované ze spuštění během spuštění profilování.  
+Sestavy funkce zobrazení seznamů data kolize funkcí během spuštění profilování, který se zablokoval ze spuštění během spuštění profilování.  
   
- Následující tabulka vysvětluje hodnoty, které se zobrazují v zobrazení funkce profilování datový soubor, který byl shromážděn pomocí metoda souběžného zpracování.  
+ Následující tabulka vysvětluje hodnoty, které jsou zobrazeny v zobrazení funkcí ze souboru dat profilování, která byla shromážděna pomocí metody souběžnosti.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**Výhradní blokované čas**|Množství času, během kterého byl zablokován spuštěním kódu v těle funkce této funkce. Blokované čas v funkce, které byly volá funkci není součástí.|  
-|**Výhradní blokované čas: %**|Procento všech blokovaných času v profilaci spuštění, který byl časový výhradní blokované této funkce.|  
-|**Výhradní kolizí**|Počet pokusů, které tuto funkci byl zablokován spuštěním kódu v těle funkce. Kolizí ve funkcích, které byly volá funkci nejsou zahrnuty.|  
-|**% Výhradní kolizí**|Procento všech kolizí v profilaci spustit byly výhradní kolizí této funkce.|  
+|**Výhradní čas zablokování**|Množství času, během které se této funkce bylo zablokováno provádění kódu v těle funkce. Čas zablokování ve funkcích, které byly volány funkce není součástí.|  
+|**% Výhradního času zablokování**|Procento času všechny zablokování při spuštění profilace, která byla výhradní čas zablokování této funkce.|  
+|**Výhradní spory**|Počet pokusů, které tuto funkci bylo zablokováno provádění kódu v těle funkce. Tento počet sporů: ve funkcích, které byly volány funkce nejsou zahrnuty.|  
+|**% Výhradních sporů**|Procento všech sporů během spuštění profilování bylo výhradních sporů této funkce.|  
 |**Adresa funkce**|Adresa funkce.|  
 |**Název funkce**|Plně kvalifikovaný název funkce.|  
-|**Blokované čas (včetně).**|Čas, tato funkce nebo funkce, která byla volána pomocí této funkce byl zablokován provádění.|  
-|**Včetně blokované čas: %**|Procento všech blokovaných času v profilaci spustit, který byl včetně blokované čas tento modul nebo funkce.|  
-|**Kolizí (včetně).**|Počet pokusů, které tuto funkci nebo funkci, která byla volána pomocí této funkce byl zablokován provádění.|  
-|**% Kolizí (včetně).**|Procento všech kolizí v profilaci spuštění, které byly včetně kolizí této funkce nebo modul.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
+|**Celkový čas zablokování**|Čas, který tuto funkci nebo funkce, která byla volána pomocí této funkce bylo zablokováno provádění.|  
+|**% Celkového času zablokování**|Procento všech času zablokování spuštění profilování, která byla celkový čas zablokování této funkce nebo modulu.|  
+|**Celkově sporů**|Počet pokusů, které tuto funkci nebo funkce, která byla volána pomocí této funkce bylo zablokováno provádění.|  
+|**% Celkových sporů**|Procento všech sporů při spuštění, který profilace se celkově sporů této funkce nebo modulu.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
-|**Cesta modulu**|Cesta modul, který obsahuje funkce.|  
-|**ID procesu**|ID procesu (PID) procesu, ve kterém se provádí funkce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje funkci.|  
+|**ID procesu**|ID procesu (PID) proces, ve kterém funkce byla spuštěna.|  
 |**Název procesu**|Název procesu.|  
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro tuto funkci.|  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
+ [Postupy: Přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení funkcí](../profiling/functions-view.md)   
  [Zobrazení funkcí – instrumentace](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Zobrazení funkcí – vzorkování](../profiling/functions-view-dotnet-memory-sampling-data.md)   

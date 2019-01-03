@@ -1,9 +1,6 @@
 ---
 title: primární spolupracující sestavení sady Office
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926727"
 ---
 # <a name="office-primary-interop-assemblies"></a>primární spolupracující sestavení sady Office
 
@@ -82,7 +79,7 @@ Sestavení PIA sady Office nejsou vyžadovány v počítačích koncových uživ
 
 Každá šablona projektu Office v sadě Visual Studio je navržena pro práci s jedinou aplikací Microsoft Office. Pokud chcete používat funkce ve více aplikacích Microsoft Office nebo použít funkce v aplikace nebo komponenty, který nemá projekt v sadě Visual Studio, musíte přidat odkaz na požadovaná PIA.  
   
-Ve většině případů byste měli přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` adresáře. Tyto verze sestavení jsou uvedeny na **Framework** karty **správce odkazů** dialogové okno. Další informace najdete v tématu [jak: aplikace Office cílové primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+Ve většině případů byste měli přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` adresáře. Tyto verze sestavení jsou uvedeny na **Framework** karty **správce odkazů** dialogové okno. Další informace najdete v tématu [jak: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 Pokud máte nainstalována a registrována sestavení PIA v globální mezipaměti sestavení, tyto verze sestavení jsou uvedeny na **COM** karty **správce odkazů** dialogové okno. Můžete byste se vyhnout přidávání odkazů na tyto verze sestavení, protože existují některé problémy rozvoje, které může dojít, když je používáte. Například Pokud zaregistrujete různé verze PIA v globální mezipaměti sestavení, váš projekt bude automaticky svázán s verzí sestavení, která byla zaregistrována jako poslední – i v případě, že zadáte jinou verzi sestavení  **COM** karty **správce odkazů** dialogové okno.  
   
@@ -113,7 +110,7 @@ V následující tabulce jsou uvedeny sestavení primární spolupráce, které 
 |Knihovna objektů Microsoft Publisher 14.0<br /><br /> Knihovna objektů Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|  
 |Referenční Knihovna webových objektů Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Referenční knihovna stránkových objektů Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Knihovna typů 2.0 inteligentní značky Microsoft **Poznámka:** inteligentní značky jsou zastaralé v [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] a [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
+|2.0 knihovna typů Microsoft Smart Tags **Poznámka:**  Inteligentní značky jsou zastaralé v [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] a [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|  
 |Knihovna typů Microsoft Visio 14.0<br /><br /> Knihovna typů Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|  
 |Jako knihovna webových typů uložit aplikaci Microsoft Visio 14.0<br /><br /> Aplikace Microsoft Visio 15.0 uložit jako knihovna webových typů|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Knihovna typu ovládacích prvků výkresu aplikace Microsoft Visio 14.0<br /><br /> Knihovně typů ovládacího prvku výkresu Microsoft Visia 15.0|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Při instalaci a registraci sestavení PIA sady Office v globální mezipaměti 
 
 Například, když je řešení odkazující [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] sestavení běží na počítači, který má [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dává pokyn verze stejného primárního spolupracujícího sestavení, sestavení pro přesměrování vazby [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] runtime k načtení [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] verze sestavení primární spolupráce. 
 
-Další informace najdete v tématu [postupy: povolení a zákaz automatického přesměrování vazby](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
+Další informace najdete v tématu [jak: Povolení a zákaz automatického přesměrování vazby](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Viz také:  
 
-- [Postupy: aplikace Office cílové primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   
 - [InfoPath – řešení](../vsto/infopath-solutions.md)   
 - [Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Další informace najdete v tématu [postupy: povolení a zákaz automatického 
 - [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)   
 - [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
 - [Obecné referenční informace &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

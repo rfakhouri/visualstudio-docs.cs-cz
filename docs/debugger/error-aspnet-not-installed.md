@@ -1,8 +1,6 @@
 ---
 title: 'Chyba: Prostředí ASP.NET není nainstalováno | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http_not_supported
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 754d196ba49e97ed0a70ca988d4ae65aed001bdc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41ec708b25bc74eb1f566981ee4bbcdc23827087
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902106"
 ---
-# <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno.
+# <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno
 K této chybě dochází při [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] není správně nainstalován v počítači, který se pokoušíte ladit. To může znamenat, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nebyl nikdy nainstalován nebo které [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] byla nainstalovaná jako první a služby IIS byl nainstalován později.  
   
 ### <a name="to-reinstall-aspnet"></a>K opětovné instalaci technologie ASP.NET  

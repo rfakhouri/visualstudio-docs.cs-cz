@@ -1,8 +1,6 @@
 ---
-title: Zobrazení řádků | Microsoft Docs
-ms.custom: ''
+title: Zobrazení řádků | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.lines
@@ -16,33 +14,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c298f6801b5c66a978ac39953eb2edc92838c30
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a6d34b0ecb7ef7c47acca8d725ffc734e58cae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922069"
 ---
 # <a name="lines-view"></a>Zobrazení řádků
-Zobrazení řádků je k dispozici pouze pro profileru data, která nebyla shromážděna pomocí metody vzorkování. Toto zobrazení není k dispozici pro data, která nebyla shromážděna s použitím instrumentace.  
+Zobrazení řádků je k dispozici pouze pro data profileru, která byla shromážděna pomocí metody vzorkování. Zobrazení není k dispozici pro data, která byla shromážděna pomocí instrumentace.  
   
- Zobrazení řádků pro vzorkování dat profilu, identifikuje příkaz ve funkci, která byla spuštěna přímo, při ukázku nebyla shromážděna. Zobrazení řádků pro data paměti .NET, identifikuje příkazů, které přidělit paměť.  
+ Zobrazení řádků pro vzorkování dat profilu, identifikuje příkaz ve funkci, která byla spuštěna přímo po shromáždění vzorku. Zobrazení řádků pro data paměti .NET, identifikuje příkazy, které přidělují paměť.  
   
- Ve zdrojovém souboru příkaz může zahrnovat víc než jeden řádek v souboru zdroje a jeden řádek může obsahovat více než jeden výraz.  
+ Ve zdrojovém souboru příkaz se týkají více než jeden řádek ve zdrojovém souboru a jeden řádek může obsahovat více než jeden výraz.  
   
- Příkaz je identifikována následující:  
+ Příkaz je identifikován následující:  
   
--   Zdrojový soubor, který obsahuje příkaz funkce.  
+-   Zdrojový soubor, který obsahuje Function – příkaz  
   
 -   Funkce, která obsahuje příkaz.  
   
--   Zdrojového řádku, od kterého začne příkaz.  
+-   Zdrojový řádek, ve kterém se spustí příkaz.  
   
--   Znak v řádku zdroje, od kterého začne příkaz.  
+-   Znak ve zdrojovém řádku, ve kterém se spustí příkaz.  
   
 -   Řádku zdroje, u které končí příkaz.  
   
--   Znak v řádku zdroje, u které končí příkaz.  
+-   Znak ve zdrojovém řádku, kdy příkaz skončí.  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení řádků](../profiling/lines-view-sampling-data.md)   
