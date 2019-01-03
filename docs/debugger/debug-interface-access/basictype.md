@@ -1,8 +1,6 @@
 ---
 title: Basictype – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d63f20bb086190f6409d3eb4cd08c80689d10f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ed85ba87aaa8d78f6c9ad3470e454f60346e2ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958602"
 ---
 # <a name="basictype"></a>BasicType
 Určuje základní typ symbolu.  
@@ -27,7 +25,7 @@ Určuje základní typ symbolu.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-enum BasicType {   
+enum BasicType {   
    btNoType   = 0,  
    btVoid     = 1,  
    btChar     = 2,  

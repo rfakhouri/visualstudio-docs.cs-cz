@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 444fac0e3c99733397a9d8cda39c444206c0f3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
-ms.translationtype: HT
+ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821098"
 ---
 # <a name="installation"></a>Instalace
 
@@ -31,7 +30,7 @@ Můžete si stáhnout nástroje od [Visual Studio Marketplace](http://aka.ms/vst
 
 1. Vyberte **nástroje** > **rozšíření a aktualizace**.
 
-   ![Rozšíření a aktualizace nabídky v sadě Visual Studio](media\installation\extensions.png)
+   ![Rozšíření a aktualizace nabídky v sadě Visual Studio](media/installation/extensions.png)
 
 2. V **rozšíření a aktualizace** dialogu **Online** na levé straně.
 3. Do vyhledávacího pole v pravém horním rohu typ nebo zadejte "tools for ai".
@@ -59,7 +58,7 @@ Chcete-li nainstalovat CUDA
 - Ujistěte se, že k instalaci knihoven modulu runtime CUDA a pak přidejte CUDA binární cesty do proměnné % PATH % nebo $Path prostředí.
 - Na Windows tato cesta je "C:\Program Files\NVIDIA GPU computingu Toolkit\CUDA\v8.0\bin" ve výchozím nastavení.
 
-![Nainstalujte CUDA na Windows](media\installation\install_cuda_win.png)
+![Nainstalujte CUDA na Windows](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -85,7 +84,7 @@ Python byl primární programovací jazyk pro obsáhlý learning aplikací. **64
 
 Architektury obsáhlého learningu využívají pip pro vlastní instalaci.
 
-![Nainstalovat Python ve Windows](media\installation\install_python_win.png)
+![Nainstalovat Python ve Windows](media/installation/install_python_win.png)
 
 Nakonec musíme ověřit, zda je správně nainstalován Python 3.5 a upgradovat na nejnovější verzi spuštěním následujících příkazů v terminálu:
 

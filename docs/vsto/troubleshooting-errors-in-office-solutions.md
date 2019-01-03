@@ -1,9 +1,6 @@
 ---
 title: Řešení potíží s chybami v řešeních pro systém Office
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919017"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Řešení potíží s chybami v řešeních pro systém Office
   Při provádění následujících úloh při vývoji řešení pro systém Office v sadě Visual Studio se můžete setkat s problémy:  
@@ -57,7 +54,7 @@ ms.locfileid: "50672948"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Chyby při vytváření projektu sešitu aplikace Excel založené na existující sešit  
  Pokud vytvoříte nový projekt sešitu aplikace Excel založený na existující sešit, může se zobrazit kombinaci následující chyby.  
   
- Z aplikace Excel: "O ochraně osobních údajů upozornění: Tento dokument obsahuje makra, ovládací prvky ActiveX, informace o balíčku rozšíření XML nebo webové součásti. Ty mohou obsahovat osobní informace, které nebude moct odebrat metadat."  
+ Z aplikace Excel: "Upozornění o ochraně osobních údajů: Tento dokument obsahuje makra, ovládací prvky ActiveX, informace o balíčku rozšíření XML nebo webové součásti. Ty mohou obsahovat osobní informace, které nebude moct odebrat metadat."  
   
  Ze sady Visual Studio: "Návrhář se nenačetl správně."  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  Tento kód vrátí následující chyby kompilace:  
   
-- Visual Basic: "odkaz na třídu 'Třídu DocumentClass' není povolen její sestavení odkazováno prostřednictvím režimu No-PIA."  
+- Visual Basic: "Odkaz na třídu"Třídu DocumentClass"není povolena, pokud je její sestavení odkazováno prostřednictvím režimu No-PIA."  
   
-- Visual C#: "typ spolupráce, které 'Microsoft.Office.Interop.Word.DocumentClass' nemůže být vložený. Použijte příslušné rozhraní."  
+- Vizuální C#: "Typ spolupráce, které 'Microsoft.Office.Interop.Word.DocumentClass' nemůže být vložený. Použijte příslušné rozhraní."  
   
   Chcete-li vyřešit tuto chybu, upravte kód, který odkazuje odpovídající rozhraní místo. Například místo odkazu <xref:Microsoft.Office.Interop.Word.DocumentClass> objektu, odkazovat na instanci <xref:Microsoft.Office.Interop.Word.Document> místo toho rozhraní.  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Řešení potíží s řešení pro systém Office](../vsto/troubleshooting-office-solutions.md)   
  [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)   
  [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

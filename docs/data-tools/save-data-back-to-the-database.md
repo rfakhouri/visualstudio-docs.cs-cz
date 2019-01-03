@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989124"
 ---
 # <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 
@@ -49,7 +48,7 @@ Pokud jste obeznámeni s objekty TableAdapter, můžete přejít přímo na jedn
 |[Aktualizace dat pomocí objektu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Jak provádět aktualizace pomocí instancí TableAdapter|
 |[Hierarchická aktualizace](../data-tools/hierarchical-update.md)|Provádění aktualizací v prvku dataset pomocí dvou nebo více souvisejících tabulek|
 |[Zpracování výjimky souběžnosti](../data-tools/handle-a-concurrency-exception.md)|Způsob zpracování výjimek, když dva uživatelé pokoušejí změnit na stejná data v databázi ve stejnou dobu|
-|[Postupy: ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)|Jak k uložení dat v transakci pomocí systému. Obor názvů transakcí a objekt TransactionScope|
+|[Postupy: Ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)|Jak k uložení dat v transakci pomocí systému. Obor názvů transakcí a objekt TransactionScope|
 |[Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)|Návod, který vytvoří aplikaci Windows Forms k předvedení ukládání dat do databáze v transakci|
 |[Uložení dat do databáze (více tabulek)](../data-tools/save-data-to-a-database-multiple-tables.md)|Postup úpravy záznamů a uložit změny do několika tabulek zpět do databáze|
 |[Uložení dat z objektu do databáze](../data-tools/save-data-from-an-object-to-a-database.md)|Jak předávat data z objektu, který není v datové sadě k databázi pomocí TableAdapter dbdirect – metody|
