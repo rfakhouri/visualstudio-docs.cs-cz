@@ -1,8 +1,6 @@
 ---
 title: Generateresource – úloha | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917498"
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 Převádí mezi *.txt* a *RESX* (formát založený na formátu XML prostředků) soubory a binární common language runtime *.resources* soubory, které může být vložen do binárního modulu runtime spustitelný soubor nebo soubor zkompilovaný do satelitních sestavení. Tato úloha je obvykle používána pro převod *.txt* nebo *RESX* soubory *.resources* soubory. `GenerateResource` Úkolu je funkčně podobný [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -87,7 +85,7 @@ Převádí mezi *.txt* a *RESX* (formát založený na formátu XML prostředků
  Za předpokladu, že sestavení má název myAssembly, následující kód vygeneruje vložený prostředek s názvem *someQualifier.someResource.resources*:  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  Bez \<LogicalName > metadata, by se pojmenoval prostředek *myAssembly.myResource.resources*.  Tento příklad se týká jenom procesem sestavení jazyka Visual Basic a Visual C#.  

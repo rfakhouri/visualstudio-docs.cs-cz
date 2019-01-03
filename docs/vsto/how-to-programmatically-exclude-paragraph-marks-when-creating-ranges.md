@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: Programová vyloučení značek odstavů při vytváření oblastí'
-ms.custom: ''
+title: 'Postupy: Programově vyloučení značek odstavů při vytváření oblastí'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11015f0afb59f0d1aa71bad4adbc48b6c99887a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab8dc8e41983e6dd4bef8b3f7ba550853e32addd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35675675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847086"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Programová vyloučení značek odstavů při vytváření oblastí
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Programově vyloučení značek odstavů při vytváření oblastí
   Vždy, když vytvoříte <xref:Microsoft.Office.Interop.Word.Range> objektu podle odstavce, všechny netisknutelné znaky, jako je například značek odstavů, jsou zahrnuté v rozsahu. Můžete vložit text odstavce zdroje do cílového odstavce. Pokud nechcete cílového odstavce rozdělit na samostatné odstavce, pak musíte nejdřív odebrat značku odstavce od zdroje odstavce. Navíc protože informace o formátování odstavce se uloží v rámci značku odstavce, pravděpodobně chcete zahrnout to při vložení do existujícího odstavce rozsahu.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -119,11 +116,9 @@ ms.locfileid: "35675675"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Postupy: oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Postupy: vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Postupy: Programová resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Postupy: Programová definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Postupy: Oblastí nebo výběrů v dokumentech prostřednictvím kódu programu sbalit](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Postupy: Vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Postupy: Programově resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Postupy: Programově definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

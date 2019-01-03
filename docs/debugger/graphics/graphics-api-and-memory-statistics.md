@@ -1,8 +1,6 @@
 ---
-title: Grafické rozhraní API a statistiky paměti | Microsoft Docs
-ms.custom: ''
+title: Grafické rozhraní API a Statistika paměti | Dokumentace Microsoftu
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.apistatistics
@@ -13,36 +11,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c8ed3c8c2ebffc57ac46e987dbc37950cba0fd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 36feec786ba0bba71723073fb990054cc0206847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916676"
 ---
-# <a name="graphics-api-and-memory-statistics"></a>Grafické rozhraní API a statistiky paměti
-<!-- VERSIONLESS -->
-Visual Studio 2017 a větší podporu statistiku grafické rozhraní API a nástroje statistiky paměti.  Tyto dva nástroje umožňují zobrazit různé bity informace na využití Direct3D rozhraní API a také využití paměti grafického procesoru různých prostředků.
+# <a name="graphics-api-and-memory-statistics"></a>Grafické rozhraní API a Statistika paměti
+<!-- VERSIONLESS --> Visual Studio 2017 nebo novější podporují nástroje statistiky grafické rozhraní API a Statistika paměti.  Tyto dva nástroje umožňují zobrazit různé části informace o použití rozhraní API Direct3D, jakož i spotřebu paměti GPU z různých zdrojů.
 
-## <a name="graphics-api-statistics"></a>Grafické rozhraní API statistiky
-Statistické údaje grafické rozhraní API v diagnostiky grafiky Visual Studio umožňuje zobrazit všechny Direct3D – volání, které byly provedeny a počet jednotlivých volání.  Chcete-li zobrazit okno, vyberte **zobrazení > statistiky rozhraní API** položku nabídky.
+## <a name="graphics-api-statistics"></a>Statistika API grafiky
+Statistika API grafiky v Diagnostika grafiky sady Visual Studio umožňuje zobrazit všechna volání rozhraní Direct3D, které byly provedeny a počet každé volání.  Chcete-li zobrazit okno, vyberte **zobrazení > Statistika API** položky nabídky.
 
-![Rozhraní API statistiky](media/gfx_diag_api_statistics.png)
+![Statistika API](media/gfx_diag_api_statistics.png)
 
-Tento nástroj může být užitečný v zjišťování, že rozhraní DirectX volání že nemusí zjistíte, které provádíme za nebo volání, které provádíte příliš často.
+Tento nástroj může být užitečná v zjišťují, že volání rozhraní DirectX, že nemusí zjistíte, které vytváříte, nebo volání, které provádíte příliš často.
 
-V okně pro kopírování všechna data kliknete pravým tlačítkem jako sdílený svazek clusteru, který lze vložit do něco podobného jako aplikace Excel k další analýze.
+V okně všechny kopie dat kliknete pravým tlačítkem jako sdílený svazek clusteru, který může vložit na něco, jako je Excel k další analýze.
 
-## <a name="memory-statistics"></a>Statistiky paměti
-Tento nástroj se zobrazí, kolik paměti je ovladač grafiky přidělování pro prostředky vytvoříte v rámečku.  Chcete-li zobrazit toto okno, vyberte **zobrazení > paměti statistiky** položku nabídky.
+## <a name="memory-statistics"></a>Statistika paměti
+Tento nástroj se zobrazí, kolik paměti je ovladač grafiky přidělování prostředků vytvoříte v objektu frame.  Chcete-li zobrazit toto okno, vyberte **zobrazení > Statistika paměti** položky nabídky.
 
-![Statistiky paměti](media/gfx_diag_memory_statistics.png)
+![Statistika paměti](media/gfx_diag_memory_statistics.png)
 
-**GPU přidělení** sloupec zobrazuje velikost paměti, které zobrazí v události **událostí** sloupce.  Můžete také vybrat ikona sledování ![ikona sledování](media/gfx_watch.png) zobrazíte [historie prostředků](graphics-event-list.md#resource-history) pro zvolenou událost.
+**Přidělení GPU** sloupec zobrazuje množství paměti používané události zobrazí v **události** sloupce.  Můžete také vybrat ikonu watch ![ikona sledování](media/gfx_watch.png) zobrazíte [rie prostředku](graphics-event-list.md#resource-history) pro zvolenou událost.
 
-Stejně jako u rozhraní API statistiky nástroj, kliknete pravým tlačítkem v okně pro kopírování všechna data jako sdílený svazek clusteru, který lze vložit do něco podobného jako aplikace Excel k další analýze.
+Stejně jako u nástroj Statistika API kliknete pravým tlačítkem v okně všechny kopie dat jako sdílený svazek clusteru, který může vložit na něco, jako je Excel k další analýze.
 
 ## <a name="see-also"></a>Viz také  
 [Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)   
-[Historie prostředků](graphics-event-list.md#resource-history)
+[Historie prostředku](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

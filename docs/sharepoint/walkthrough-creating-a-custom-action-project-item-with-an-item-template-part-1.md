@@ -1,9 +1,6 @@
 ---
 title: 'Průvodce: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1 | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b07cfe78c7139d754e199a1f96974924b55531a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e3cae6558bdce8206340f10d570a620ba0fb1972
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932321"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Průvodce: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systém projektu služby SharePoint v sadě Visual Studio můžete rozšířit tak, že vytvoříte svůj vlastní projekt typy položek. V tomto návodu vytvoříte položku projektu, který lze přidat do projektu služby SharePoint pro vytvoření vlastní akce na Sharepointovém webu. Vlastní akce ho přidá položku nabídky **Akce webu** nabídku z webu služby SharePoint.

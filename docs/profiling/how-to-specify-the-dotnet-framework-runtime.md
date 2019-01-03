@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: Zadejte modul Runtime rozhraní .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Určení modulu Runtime rozhraní .NET Framework | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
@@ -13,39 +11,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6baa0e37acb4ba24d0622ad27fe84c47e84da59d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911010"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Postupy: Zadejte modul runtime rozhraní .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Postupy: Určení modulu runtime .NET Framework
 
-S vydáním [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], aplikace se může skládat z modulů, které byly vytvořeny pomocí různých verzích [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] spuštění. Ve výchozím nastavení profilu profilace nástroje sady Visual Studio první modul runtime, který je načten aplikací. Můžete zadat běhu profilu při spuštění aplikace s profilerem a při připojení profileru k aplikaci již spuštěné.
+S vydáním [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], aplikace se může skládat z modulů, které byly vytvořeny pomocí různých verzí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] za běhu. Ve výchozím profilu Visual Studio nástroje pro profilaci sady první modulu runtime, který je načten aplikací. Můžete zadat za běhu, která má být profilována při spuštění aplikace s profilerem a při připojení profileru k již běžícímu aplikace.
 
-## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>K určení běhu rozhraní .NET Framework profil při spuštění aplikace s profilerem
+## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Chcete-li určit běhu rozhraní .NET Framework profil při spuštění aplikace s profilerem
 
-1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na výkonnostní relace, klikněte na **vlastnosti**a potom klikněte na **Upřesnit**.
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na relaci výkonu, klikněte na tlačítko **vlastnosti**a potom klikněte na tlačítko **Upřesnit**.
 
-     **Cílová verze CLR** seznamu zobrazí pole **automatické** a verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modulu runtime, zda jsou nainstalovány v počítači.
+     **Cílová verze CLR** seznamu se zobrazí **automatické** a verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modulu runtime, které jsou nainstalovány v počítači.
 
 2. Proveďte jeden z následujících kroků:
 
-    - Klikněte na verzi modulu CLR, které chcete profil.
+    - Klikněte na verzi CLR, který chcete Profilovat.
 
-    - Klikněte na tlačítko **automatické** profilu první verze zavedená aplikace.
+    - Klikněte na tlačítko **automatické** Profilovat první verze, která jsou načtená aplikací.
 
-## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>Chcete-li určit běhu rozhraní .NET Framework profil při připojení profileru k aplikaci
+## <a name="to-specify-the-net-framework-run-time-to-profile-when-attaching-the-profiler-to-an-application"></a>K určení běhu rozhraní .NET Framework profilu, pokud připojení profileru k aplikaci
 
-1. Na **analyzovat** nabídky, přejděte **profileru**, klikněte **Attach/Detach**.
+1. Na **analyzovat** nabídky, přejděte k **Profiler**, pak klikněte na tlačítko **Attach/Detach**.
 
-2. Na **připojit profileru proces** dialogovém okně klikněte na proces, který chcete profil.
+2. Na **připojit Profiler k procesu** dialogového okna klikněte na proces, který chcete Profilovat.
 
-     **Cílová verze CLR** pole se seznamem s **automatické** a verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modulu runtime, zda jsou nainstalovány v počítači.
+     **Cílová verze CLR** pole se seznamem s **automatické** a verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modulu runtime, které jsou nainstalovány v počítači.
 
 3. Proveďte jeden z následujících kroků:
 
-    - Klikněte na verzi modulu CLR, které chcete profil.
+    - Klikněte na verzi CLR, který chcete Profilovat.
 
-    - Klikněte na tlačítko **automatické** profilu na verzi, která se načtou při profileru připojí k aplikaci.
+    - Klikněte na tlačítko **automatické** Profilovat verze, která jsou načtená při připojí profiler k aplikaci.

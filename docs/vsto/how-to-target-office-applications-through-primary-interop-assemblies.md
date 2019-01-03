@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: aplikace Office cílové primárních sestaveních vzájemné spolupráce'
-ms.custom: ''
+title: 'Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845899"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Postupy: aplikace Office cílové primárních sestaveních vzájemné spolupráce
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Postupy: Cílení na aplikace Office primárních sestaveních vzájemné spolupráce
   Když vytvoříte nový projekt sady Office, Visual Studio automaticky přidá odkazy na aplikace Microsoft Office primární sestavení interop (PIA), které jsou nezbytné k sestavení projektu. Je nutné přidat odkazy na další sestavení PIA v následujících scénářích:  
   
 - Chcete používat funkce z jiné aplikace Microsoft Office ve vašem projektu. Můžete například chtít používat funkce aplikace Microsoft Office Excel v projektu pro aplikaci Microsoft Office Word.  
@@ -50,7 +47,7 @@ ms.locfileid: "49863747"
     > [!NOTE]  
     >  V projektech pro systém Office, vždy přidat odkazy na sestavení PIA sady Office pomocí **.NET** karty **přidat odkaz** dialogové okno místo **COM** kartu. Další informace najdete v tématu [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
      Název sestavení se zobrazí v **odkazy** složky **Průzkumníka řešení**.  
   
@@ -58,6 +55,4 @@ ms.locfileid: "49863747"
  [Primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Postupy: instalace Office primárních sestavení vzájemné spolupráce](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  

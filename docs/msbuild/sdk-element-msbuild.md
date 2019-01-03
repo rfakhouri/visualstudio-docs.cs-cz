@@ -1,8 +1,6 @@
 ---
 title: SDK – Element (MSBuild) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e42714a44ebaee4d7e72d3997537491195d504f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938974"
 ---
 # <a name="sdk-element-msbuild"></a>SDK – element (MSBuild)
 Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu sady SDK.  
@@ -60,6 +58,6 @@ Odkazy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_
 | [Projekt](../msbuild/project-element-msbuild.md) | Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu. |
 
 ## <a name="see-also"></a>Viz také:  
- [Postupy: odkaz sadu SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md)   
+ [Postupy: Odkaz na sadu SDK projektu MSBuild](../msbuild/how-to-use-project-sdk.md)   
  [Referenční dokumentace schématu souboru projektu](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

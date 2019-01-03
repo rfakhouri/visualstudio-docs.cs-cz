@@ -1,9 +1,6 @@
 ---
 title: Vývoj služby starší verze jazyka | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845784"
 ---
 # <a name="develop-a-legacy-language-service"></a>Vývoj služby starší verze jazyka
 Tento oddíl obsahuje odkazy na témata, které umožňují vytvoření služby starší verze jazyka.  
@@ -63,7 +60,7 @@ Tento oddíl obsahuje odkazy na témata, které umožňují vytvoření služby 
  [Informace o parametrech ve službě starší verze jazyka](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Popisuje, jak získat tipy metodu přetížených funkcí a metod.  
   
- [Postupy: Zadejte skrytého textu podporují ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Postupy: Poskytování podpory skrytého textu ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Vysvětluje účel oblasti skrytého textu a poskytuje pokyny o tom, jak implementovat oblasti skrytého textu.  
   
  [Postupy: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  

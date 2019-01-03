@@ -1,8 +1,6 @@
 ---
-title: Vsperfreport – | Microsoft Docs
-ms.custom: ''
+title: VSPerfReport | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
@@ -17,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915465"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-Vsperfreport – nástroj pro příkazový řádek se používá k vytváření sestav pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci profilace datové soubory. Je výchozí formát sestavy. *csv* souboru.  
+Vsperfreport – nástroj příkazového řádku se používá k vytvoření sestavy, které používají [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojů pro profilaci sady souborů dat profilování. Výchozí formát sestavy. *sdíleného svazku clusteru* souboru.  
   
- Vsperfreport – používá následující syntaxe:  
+ VSPerfReport používá následující syntaxi:  
   
 ```cmd  
 VSPerfReport [/U] vspfilename [/options]  
@@ -35,61 +33,61 @@ VSPerfReport [/U] vspfilename [/options]
   
  Všimněte si, že `filename` musí být platná. *Vsp* nebo. *vsps* souboru.  
   
- Vsperfreport – nástroj příkazového řádku se také používá k porovnání. *vsp* nebo. *vsps* soubory. K vygenerování sestavy rozdíl ("rozdílové"), použijte následující syntaxi:  
+ Vsperfreport – nástroj příkazového řádku se také používá k porovnání. *vsp* nebo. *vsps* soubory. Aby se vygenerovala sestava rozdíl ("diff"), použijte následující syntaxi:  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2` musí být platná. *vsp* nebo. *vsps* soubory.  
+ `vspfilename1 and vspfilename2` musí být platný. *vsp* nebo. *vsps* soubory.  
   
 ## <a name="symbol-files"></a>Soubory symbolů  
- K zobrazení informací o symbolu například názvy funkcí a čísla řádků, vsperfreport – vyžaduje přístup k symbolu (. Soubory PDB) PROFILOVANÉHO součásti a soubory symbolů systému Windows. Další informace najdete v tématu [postupy: určení umístění souboru se symboly z příkazového řádku](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Chcete-li zobrazit informace o symbolech, jako jsou názvy funkcí a čísla řádků, VSPerfReport vyžaduje přístup k symbolu (. Soubory symbolů soubory PDB) PROFILOVANÉHO komponent a Windows. Další informace najdete v tématu [jak: Zadejte umístění souborů se symboly z příkazového řádku](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Možnosti Obecné sestavy  
- Následující tabulka popisuje obecné sestavy formátování možnosti a možnosti, které vyberte data, aby byly hlášené.  
+ Následující tabulka popisuje obecnou zprávu formátování možnosti a možnosti, které vyberte data, která mají být uvedeny.  
   
 |Možnosti|Popis|  
 |-------------|-----------------|  
-|**U**|Výstup sestavy a výstup přesměrovaného konzoly jsou zapsány jako kódování Unicode. Musí být první možnost zadat.|  
-|**Souhrn:**[*typy*]|Vytvoří jeden nebo více typů sestav.<br /><br /> -   `All` -všechny typy sestav jsou generovány.<br />-   `CallerCallee` -relace nadřazený podřízený mezi funkce.<br />-   `Function` -funkce volána.<br />-   `CallTree` -hierarchie funkce volána.<br />-   `Counter` -hodnoty čítače všechny značky společně s výkon systému Windows.<br />-   `Ip` -profilovaným pokyny.<br />-   `Life` -Doba životnosti přidělené objektů (k dispozici, pokud jsou shromážděná data přidělení.)<br />-   `Line` zdroj dat profilu řádek kódu.<br />-   `Header` -Sestava obsahuje informaci hlavičky souboru.<br />-   `Mark` všechny značky.<br />-   `Module` -profilovaným moduly.<br />-   `Process` -profilovaným procesy.<br />-   `Thread` -profilovaným vláken.<br />-   `Type` -přidělené typy.<br />-   `Contention` -kolizí prostředku.<br />-   `RuleWarnings` -pravidla problémy s výkonem<br />-   `ETW` -všechny události trasování událostí pro Windows (ETW) shromážděné v profilaci spustit. Datový soubor .etl musí být v původním umístění nebo v adresáři, která obsahuje soubor .vsp nebo .vsps.|  
+|**U**|Výstup sestavy a přesměrovaný výstup konzoly je zapsán jako Unicode. První možnost je povinná.|  
+|**Shrnutí:**[*typy*]|Vytvoří jeden nebo více typů sestav.<br /><br /> -   `All` -jsou generovány všechny typy sestav.<br />-   `CallerCallee` -nadřazené a podřízené vztahy mezi funkcemi.<br />-   `Function` -volané funkce.<br />-   `CallTree` -hierarchii volané funkce.<br />-   `Counter` -všechny značky společně s Windows performance hodnoty čítačů.<br />-   `Ip` -pokyny profilována.<br />-   `Life` -dobu životnosti přidělených objektů (k dispozici, když jsou shromážděná data o přidělování.)<br />-   `Line` data profilu řádku zdrojového kódu.<br />-   `Header` -Sestava obsahuje informace o souboru záhlaví.<br />-   `Mark` všechny značky.<br />-   `Module` -Profilované moduly.<br />-   `Process` -Profilovat procesy.<br />-   `Thread` -vlákna profilována.<br />-   `Type` -přidělené typy.<br />-   `Contention` -Sporty prostředků.<br />-   `RuleWarnings` -problémy pravidla výkonu<br />-   `ETW` -všechny události trasování událostí pro Windows (ETW) shromážděné při spuštění profilace. Datový soubor ETL musí být v původním umístění nebo do adresáře, který obsahuje soubor .vsp nebo .vsps.|  
 |**Xml**|Výstup sestavy ve formátu XML.|  
-|**CallTrace**|Vytvoří seznam položku funkce a ukončí, události trasování událostí a značky.|  
-|**ClearPackedSymbols**|Odebere dříve vložených symboly z datového souboru profileru. Tento příkaz spustit před spuštěním PackSymbols a sekundu čas.|  
-|**Symbolpath –:** `path`|Určuje jeden nebo více cest hledání nebo symbol servery, které obsahují symboly pro datový soubor profileru.|  
-|**DebugSymPath**|Uvádí umístění, které jsou vyhledávat symboly a jestli se nacházejí. Tato možnost je užitečná symbol řešení problémů.|  
-|**PackSymbols**|Uloží symboly do souboru profilování dat (.vsp), takže tento symbol (. *pdb*) nejsou soubory požadované pro analýzu.|  
-|**Výstup:** *cesta*&#124;*filename*|Určuje alternativní umístění pro soubory vygenerovanou sestavu. Ve výchozím nastavení sestavy jsou vytvořeny v aktuálním adresáři.|  
-|**SummaryFile**|Analýza a uložit soubor souhrnu .vsps analyzovaných informace.|  
+|**CallTrace**|Vytvoří seznam vstupu funkce a ukončí, událostí trasování událostí pro Windows a značky.|  
+|**ClearPackedSymbols**|Odebere dříve vložený symboly z datového souboru profilování. Tento příkaz spustit před spuštěním PackSymbols a druhý čas.|  
+|**SymbolPath:** `path`|Určuje cesty pro hledání nebo serverů symbolů, které obsahují symboly pro datového souboru profilování.|  
+|**DebugSymPath**|Seznam umístění, která jsou prohledány na symboly a určuje, zda jsou dostupné. Tato možnost je užitečná při řešení problémů rozlišení symbolů.|  
+|**PackSymbols**|Ukládání symbolů do souboru dat profilování (.vsp) proto symbolu (. *soubor PDB*) soubory nejsou vyžadovány pro analýzu.|  
+|**Výstup:** *cesta*&#124;*název souboru*|Určuje alternativní umístění pro soubory generované sestavě. Ve výchozím nastavení jsou sestavy vytvoří v aktuálním adresáři.|  
+|**SummaryFile**|Analyzovat a uložit analyzované informace v souboru souhrnu .vsps.|  
 |**PrintMarks**|Zobrazte názvy a časová razítka pro všechny značky v souboru zadané sestavy.|  
-|**?**|Zobrazí informace o využití.|  
-|**NoLogo**|Skryje informace o verzi, po spuštění sestavy.|  
-|**UserRulesDirectory**|Určuje adresář obsahující uživatelem definované výkonu pravidla [ještě nebyla implementována].|  
+|**?**|Zobrazí informace o použití.|  
+|**NoLogo**|Informace o verzi skryje, když je sestava spuštěna.|  
+|**UserRulesDirectory**|Určuje adresář obsahující uživatelsky definovaným výkonem pravidla [ještě nebyla implementována].|  
   
-## <a name="filter-options"></a>Možnosti filtru.  
- Následující tabulka popisuje možnosti filtrovat všechna dostupná data.  
+## <a name="filter-options"></a>Možnosti filtrování  
+ Následující tabulka popisuje možnosti filtrovat dostupná data.  
   
 |Možnosti|Popis|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`] [,`callee`]]|Zobrazit pouze uživatele volání funkcí aplikace; Skryjte systémová volání.<br /><br /> -Žádné parametry - skrýt všechny funkce systému.<br />-   `caller` -Zobrazit jednu úroveň funkce systému, které volají funkce aplikací.<br />-   `callee` -Zobrazit jednu úroveň systému funkce, které jsou volány funkce aplikací uživatele.|  
-|**Čas spuštění:**[*hodnotu*]|Zobrazit pouze data shromážděná po hodnotu (v milisekundách).|  
-|**Čas ukončení:**[*hodnotu*]|Zobrazit pouze data shromážděná před hodnotu (v milisekundách).|  
-|**FilterFile:** `VSPFFile`|Určuje umístění souboru filtru, který byl vytvořen z okna Sestava výkonu Visual Studio.|  
-|**MsFilter:**[*starttime, doba trvání*]|Zobrazit pouze data z `starttime` dokud délka `duration` (v milisekundách).|  
+|**JustMyCode**[**:**[`caller`] [,`callee`]]|Zobrazit pouze uživatele volání funkcí aplikace; Skryjte systémových volání.<br /><br /> -Žádné parametry - skrýt všechny systémové funkce.<br />-   `caller` -Zobrazit jednu úroveň funkce systému, které volají funkce aplikace.<br />-   `callee` -Zobrazit jednu úroveň funkce systému, které jsou volány pomocí funkcí aplikace uživatele.|  
+|**StartTime:**[*hodnotu*]|Zobrazit pouze data shromážděná za hodnotou (v milisekundách).|  
+|**EndTime:**[*hodnotu*]|Zobrazit pouze data shromážděná před hodnotou (v milisekundách).|  
+|**FilterFile:** `VSPFFile`|Určuje umístění souboru filtru, která byla vygenerována z okna sestavy výkonu Visual Studio.|  
+|**MsFilter:**[*časzahájeni, trvání*]|Zobrazit pouze data od `starttime` až do délky `duration` (v milisekundách).|  
 |**Proces:**[*pid*]|Zobrazit pouze data ze zadaného procesu.|  
-|**Přístup z více vláken:**[*ID podprocesu*]|Zobrazit pouze data ze zadaného vlákno.|  
-|**Přístup z více vláken:**[*ID podprocesu, ID procesu*]|Zobrazit pouze data ze zadaného vlákno přidružené k zadané procesu.|  
+|**Vlákna:**[*idvlákna*]|Zobrazit pouze data ze zadaného vlákna.|  
+|**Vlákna:**[*idvlákna, idprocesu*]|Zobrazit pouze data ze zadaného vlákna přidruženého se zadaným procesem.|  
   
-## <a name="difference-report-options"></a>Rozdíl možností sestav  
+## <a name="difference-report-options"></a>Možnosti sestavy rozdíl  
  Následující tabulka popisuje možnosti pro porovnávání souborů sestav.  
   
 |Možnosti|Popis|  
 |-------------|-----------------|  
-|**diff**  `vspfile1 vspfile2`|Porovnání dva soubory sestav (. *Vsp* nebo. *vsps*) soubory. Souhrn možnosti budou ignorovány pomocí možnosti rozdílové.|  
-|**Diff:**[*hodnotu*]|Nižší než tato prahová hodnota rozdílu mezi dvě hodnoty se budou ignorovat. Navíc se nezobrazí nová data s hodnotami pod touto prahovou hodnotou.|  
-|**DiffTable:**[*tablename*]|Pomocí této konkrétní tabulky k porovnání souborů. Výchozí hodnota je v tabulce funkce.|  
-|**DiffColumn:**[*columnname*]|Použijte tento konkrétní sloupec porovnat hodnoty. Výchozí hodnota je sloupec procent výhradní ukázky.|  
-|**QueryDiffTables**|Zobrazí seznam platný tabulky a sloupce pro dva soubory sestav zadali.|  
+|**Diff**  `vspfile1 vspfile2`|Porovnání dvou souborů sestav (. *Vsp* nebo. *vsps*) soubory. Možnosti souhrnu budou ignorovány pomocí možnosti rozdílů.|  
+|**Diff:**[*hodnotu*]|Nižší než tato prahová hodnota bude ignorována rozdíl mezi dvěma hodnotami. Také se nezobrazí nová data s hodnotami pod tuto mezní hodnotu.|  
+|**DiffTable:**[*tablename*]|Použijte tuto konkrétní tabulku pro porovnání souborů. Výchozí hodnota je tabulka funkcí.|  
+|**DiffColumn:**[*názevsloupce*]|Pomocí tohoto konkrétního sloupce porovnání hodnot. Výchozí hodnota je sloupec procent výhradních vzorků.|  
+|**QueryDiffTables**|Vypsat platné tabulky a sloupce příslušné dva soubory sestav, které jsou k dispozici.|  
   
 ## <a name="see-also"></a>Viz také:  
  [Zobrazení sestav výkonu](../profiling/performance-report-views.md)

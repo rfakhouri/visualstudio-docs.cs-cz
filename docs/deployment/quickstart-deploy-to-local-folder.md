@@ -1,8 +1,6 @@
 ---
 title: Nasazení do místní složky
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854032"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Nasazení aplikace do místní složky pomocí sady Visual Studio
 
@@ -39,7 +37,7 @@ Můžete použít **publikovat** nástroj pro publikování aplikace ASP.NET, AS
 
 1. Zadejte cestu nebo vyberte **Procházet** určit místní složku.
 
-1. Vyberte **publikovat**. Visual Studio vytvoří projekt a publikuje ji do zadané složky. Vlastnosti projektu **publikovat** otevře se podokno, zobrazuje profil souhrnu.
+1. Vyberte **Publikovat**. Visual Studio vytvoří projekt a publikuje ji do zadané složky. Vlastnosti projektu **publikovat** otevře se podokno, zobrazuje profil souhrnu.
 
     ![Podokno vlastností zobrazuje souhrn profil publikování](../deployment/media/quickstart-publish-folder-summary.png)
 

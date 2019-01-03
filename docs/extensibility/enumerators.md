@@ -1,9 +1,6 @@
 ---
 title: Výčty | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, enumerators
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e555ca317dea79d1fe3b856a7c449d01f0b792af
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 26631c4b6ae6d6fb8d5bd00c772cc7f11943d459
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848097"
 ---
 # <a name="enumerators"></a>Enumerátory
 Tato část uvádí výčet datových typů v rozhraní API modulu Plug-in zdroje ovládacího prvku, které musíte znát plug-in správy zdrojových kódů.  
@@ -40,10 +37,10 @@ Tato část uvádí výčet datových typů v rozhraní API modulu Plug-in zdroj
  [Vytvoření modulu plug-in správy zdrojového kódu](../extensibility/internals/creating-a-source-control-plug-in.md)  
  Definuje ovládací prvek modulu Plug-in Source sad SDK a popisuje zahrnuté prostředky.  
   
- [Sccgetcommandoptions –](../extensibility/sccgetcommandoptions-function.md)  
+ [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
  Vyzve uživatele k rozšířené možnosti pro daný příkaz.  
   
- [Sccpopulatelist –](../extensibility/sccpopulatelist-function.md)  
+ [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
  Zkontroluje seznam souborů pro jejich aktuální stav. Kromě toho používá `pfnPopulate` funkce oznámit volajícímu, soubor neodpovídá kritériím pro `nCommand`.  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  

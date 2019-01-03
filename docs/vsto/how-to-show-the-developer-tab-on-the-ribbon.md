@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: zobrazení karty Vývojář na pásu karet'
-ms.custom: ''
+title: 'Postupy: Zobrazení karty Vývojář na pásu karet'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906797"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Postupy: zobrazení karty Vývojář na pásu karet
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Postupy: Zobrazení karty Vývojář na pásu karet
   Pro přístup **Developer** kartu na pásu karet aplikace sady Office, je nutné nakonfigurovat ji k zobrazení této karty, protože se nezobrazuje ve výchozím nastavení. Například můžete musíte zobrazit kartu, pokud chcete přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> k přizpůsobení úrovni dokumentu pro aplikaci Word.  
   
 > [!NOTE]  
->  Tyto pokyny platí pro Office 2010 nebo novější pouze aplikací. Pokud chcete zobrazit tuto kartu v systému Microsoft Office 2007, přečtěte si následující verzi tohoto tématu [postupy: zobrazení karty Vývojář na pásu karet](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+>  Tyto pokyny platí pro Office 2010 nebo novější pouze aplikací. Pokud chcete zobrazit tuto kartu v systému Microsoft Office 2007, přečtěte si následující verzi tohoto tématu [jak: Zobrazení karty Vývojář na pásu karet](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -69,5 +66,3 @@ ms.locfileid: "51349621"
   
 ## <a name="see-also"></a>Viz také:  
  [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)  
-  
-  

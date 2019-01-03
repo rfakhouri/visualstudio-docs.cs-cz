@@ -1,17 +1,12 @@
 ---
-title: 'Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852528"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Průvodce: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupce webu služby SharePoint, nebo *pole*– stejně jako typ obsahu, který používá sloupce webu. Také ukazuje, jak vytvořit seznam, který používá nového typu obsahu.  
   
  Tento návod zahrnuje následující úlohy:  
@@ -95,7 +90,7 @@ ms.locfileid: "49900121"
     </Field>  
     ```  
   
-4.  Další dva sloupce webu pomocí stejného postupu, přidejte do projektu: **pacienta ID** (typ = "Celočíselné") a **lékař název** (typ = "Text"). Nastavte na hodnotu jejich skupiny **sloupců webu Clinic**.  
+4.  Další dva sloupce webu pomocí stejného postupu, přidejte do projektu: **ID pacientů** (typ = "Celočíselné") a **lékař název** (typ = "Text"). Nastavte na hodnotu jejich skupiny **sloupců webu Clinic**.  
   
 ## <a name="create-a-custom-content-type"></a>Vytvořit vlastní typ obsahu
  Dále vytvořte typu obsahu – na základě typu obsahu kontakty –, který obsahuje sloupce webu, které jste vytvořili v předchozím postupu. Podle typu obsahu založenou na stávající typ obsahu, můžete ušetřit čas, protože základní typ obsahu poskytuje několik sloupců webu pro použití v nového typu obsahu.  
@@ -116,7 +111,7 @@ ms.locfileid: "49900121"
   
      To poskytuje přístup k ostatním sloupcům potenciálně užitečné webu v kontaktu typ obsahu, kromě sloupců webu, které jste definovali dříve.  
   
-6.  Po typ obsahu návrháře zobrazení v **sloupce** kartu, přidejte tři sloupce, které jste definovali dříve webu: **pacienta název**, **pacienta ID**a **Lékař název**. Pro přidání těchto sloupců, vyberte v seznamu sloupců webu první seznam **zobrazovaný název**a pak zvolte každý sloupec v seznamu, jeden po druhém.  
+6.  Po typ obsahu návrháře zobrazení v **sloupce** kartu, přidejte tři sloupce, které jste definovali dříve webu: **Jméno pacienta**, **pacientů ID**, a **lékař název**. Pro přidání těchto sloupců, vyberte v seznamu sloupců webu první seznam **zobrazovaný název**a pak zvolte každý sloupec v seznamu, jeden po druhém.  
   
     > [!TIP]  
     >  Seznam sloupců webu zvolte rychleji, můžete filtrovat tak, že zadáte několik prvních písmen názvu sloupce.  
@@ -131,7 +126,7 @@ ms.locfileid: "49900121"
   
 11. V panelu nabídky zvolte **souboru** > **Uložit vše**a pak zavřete návrháře typu obsahu.  
   
-## <a name="create-a-list"></a>Vytvoření seznamu
+## <a name="create-a-list"></a>Vytvořit seznam
  Teď vytvořte seznam, který používá novou obsahu sloupce typu a lokality.  
   
 #### <a name="to-create-a-list"></a>Chcete-li vytvořit seznam  
@@ -229,7 +224,6 @@ ms.locfileid: "49900121"
 ## <a name="see-also"></a>Viz také:
  [Vytváření sloupců webu, typů obsahu a seznamů pro službu SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
- [Postupy: vytvoření vlastního pole typu](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [Postupy: Vytvoření vlastního pole typu](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Typy obsahu](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [Sloupce](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

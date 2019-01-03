@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: Použití SDK značek Vizualizéru souběžnosti | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Použití SDK značek Vizualizéru souběžnosti | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
@@ -10,21 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a608c5539e905ba7836f4dcfb5e785dc9630c28a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 82815ea756d7f7ae72f15d46c5418adb8eb72c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933590"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Postupy: Použití SDK značek Vizualizéru souběžnosti
-Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvořit rozsahy a zapsat příznaky, zprávy a upozornění.  
+Toto téma ukazuje, jak použít sada Vizualizátor souběžnosti SDK k vytvoření rozsahy a napsat příznaky, zprávy a upozornění.  
   
-### <a name="to-use-c"></a>Chcete-li použít C++  
+### <a name="to-use-c"></a>Použití jazyka C++  
   
-1.  SDK Vizualizéru souběžnosti podporu přidáte do vaší aplikace. Další informace najdete v tématu [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md).  
+1.  Přidání podpory sada Vizualizátor souběžnosti SDK do vaší aplikace. Další informace najdete v tématu [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md).  
   
-2.  Přidat `include` příkaz a `using` příkazu pro sadu SDK.  
+2.  Přidat `include` příkazu a `using` příkazu pro sadu SDK.  
   
     ```C++  
   
@@ -33,7 +31,7 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
   
     ```  
   
-3.  Přidejte kód k vytvoření tři rozsahy v řadě výchozí značky a zápis příznak, zprávu a výstrahu, jednu pro každý rozpětí. Metody k zápisu příznaky, zprávy a upozornění jsou členy [marker_series](../profiling/marker-series-class.md) třídy. V konstruktoru pro [span](../profiling/span-class.md) vyžaduje třídy `marker_series` objektu, tak, aby každý rozpětí je přidružen konkrétní značky řady. A `span` skončí, když je odstraněn.  
+3.  Přidejte kód pro vytvoření tři rozsahy v řadě výchozí značky a zápis příznak, zprávy a upozornění, jeden pro každý rozsah. Členové jsou metody zapsat příznaky, zprávy a upozornění [marker_series](../profiling/marker-series-class.md) třídy. Konstruktor pro [span](../profiling/span-class.md) vyžaduje třídu `marker_series` objektu tak, aby každý rozsah je přidružený k konkrétní značky řady. A `span` končí, když se odstraní.  
   
     ```C++  
   
@@ -52,11 +50,11 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
   
     ```  
   
-4.  Na řádku nabídek zvolte **analyzovat**, **vizualizér souběžnosti**, **začínat aktuálního projektu** spusťte aplikaci a zobrazte vizualizér souběžnosti. Následující obrázek znázorňuje tři rozsahy a tři značek v vizualizér souběžnosti.  
+4.  V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **spustit s aktuálním projektem** spusťte aplikaci a zobrazte Vizualizátor souběžnosti. Následující obrázek znázorňuje tři rozsahy a tři značky ve vizualizátoru souběžnosti.  
   
-     ![Vizualizér souběžnosti se 3 značkami a výstrahy](../profiling/media/cvmarkersnative.png "CvMarkersNative")  
+     ![Vizualizátor souběžnosti se 3 značkami a výstrahy](../profiling/media/cvmarkersnative.png "CvMarkersNative")  
   
-5.  Přidejte kód k vytvoření další, vlastní značky řady voláním v konstruktoru pro `marker_series` která přijímá řetězcový název řady, značky.  
+5.  Přidejte kód k vytvoření další, vlastní značky řady zavoláním konstruktoru pro `marker_series` , která přebírá řetězec název řady, značky.  
   
     ```C++  
   
@@ -76,13 +74,13 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
   
     ```  
   
-6.  Spusťte v aktuálním projektu zobrazíte vizualizér souběžnosti. Řada dvě značky se zobrazí v vlastní dráhy v zobrazení vláken. Následující obrázek znázorňuje dva nové rozsahy.  
+6.  Spuštění aktuálního projektu zobrazíte Vizualizátor souběžnosti. Řada dvě značky se zobrazí v jejich vlastní procesu v zobrazení vláken. Následující obrázek znázorňuje dvě nové rozpětí.  
   
-     ![Vizualizér souběžnosti 3 řady vlastní značky](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")  
+     ![Vizualizátor souběžnosti s 3 vlastní značky řady](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")  
   
-### <a name="to-use-visual-basic-or-c"></a>Chcete-li použít Visual Basic a C# #
+### <a name="to-use-visual-basic-or-c"></a>Použití jazyka Visual Basic nebo C# #
   
-1.  SDK Vizualizéru souběžnosti podporu přidáte do vaší aplikace. Další informace najdete v tématu [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md).  
+1.  Přidání podpory sada Vizualizátor souběžnosti SDK do vaší aplikace. Další informace najdete v tématu [sada Vizualizátor souběžnosti SDK](../profiling/concurrency-visualizer-sdk.md).  
   
 2.  Přidat `using` nebo `Imports` příkazu pro sadu SDK.  
   
@@ -95,7 +93,7 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Přidejte kód a vytvořte tři rozsahy na výchozí značky řadu, zápis příznak, zprávu a výstrahu, jednu pro každý rozpětí. Vytváření <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> objekt voláním statické `EnterSpan` metoda. Zapsat do výchozí řadu, používáte metody statické zápisu <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> třídy.  
+3.  Přidejte kód pro vytvoření tři rozsahy na výchozí značky řadu a zápis příznak, zprávy a upozornění, jeden pro každý rozsah. Vytváření <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> objektu voláním statické `EnterSpan` metody. Zapsat do výchozí řadu, použijete metody statický zápis <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> třídy.  
   
     ```VB  
   
@@ -136,11 +134,11 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
     alertSpan.Leave();  
     ```  
   
-4.  Na řádku nabídek zvolte **analyzovat**, **vizualizér souběžnosti**, **začínat aktuálního projektu** spusťte aplikaci a zobrazte vizualizér souběžnosti. Následující obrázek znázorňuje tři rozsahy a tři značek v zobrazení vláken vizualizér souběžnosti.  
+4.  V panelu nabídky zvolte **analyzovat**, **Vizualizátor souběžnosti**, **spustit s aktuálním projektem** spusťte aplikaci a zobrazte Vizualizátor souběžnosti. Následující obrázek znázorňuje tři rozsahy a značkami tři v zobrazení vláken vizualizátoru souběžnosti.  
   
-     ![Vizualizér souběžnosti se značkami a výstrahy](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
+     ![Vizualizátor souběžnosti pomocí značek a výstrah](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
   
-5.  Přidejte kód k vytvoření značky řadu zákazníků pomocí statické <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> metoda. <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> Třída obsahuje metody pro vytváření rozsahy a zápis příznaky, zprávy a upozornění.  
+5.  Přidejte kód k vytvoření značky řadu zákazníků pomocí statické <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> metody. <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> Třída obsahuje metody pro rozsahy a zapíše příznaky, zprávy a upozornění.  
   
     ```VB  
   
@@ -174,9 +172,9 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
     messageSeriesSpan.Leave();  
     ```  
   
-6.  Spusťte v aktuálním projektu zobrazíte vizualizér souběžnosti. Řada tři značky se zobrazí v vlastní dráhy v zobrazení vláken. Následující obrázek znázorňuje tři nové rozpětí.  
+6.  Spuštění aktuálního projektu zobrazíte Vizualizátor souběžnosti. Tři značky řady se zobrazí v jejich vlastním procesu v zobrazení vláken. Následující obrázek znázorňuje tři nové rozpětí.  
   
-     ![Vizualizér souběžnosti 3 řady vlastní značky](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
+     ![Vizualizátor souběžnosti s 3 vlastní značky řady](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
 ## <a name="see-also"></a>Viz také:  
  [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md)

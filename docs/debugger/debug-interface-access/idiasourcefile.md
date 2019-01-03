@@ -1,8 +1,6 @@
 ---
-title: Idiasourcefile – | Microsoft Docs
-ms.custom: ''
+title: Idiasourcefile – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,31 +12,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a810d43df678d79a57a755681907b8c472fdd82d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ca628689376bce696f49b3d1e01110108f58c0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851206"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
-Představuje zdrojového souboru.  
+Reprezentuje zdrojový soubor.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaSourceFile : IUnknown  
+IDiaSourceFile : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaSourceFile`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaSourceFile`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Načte jednoduché celočíselnou hodnotu klíče, které jsou jedinečné pro tuto bitovou kopii.|  
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Načte hodnotu klíče jednoduché celé číslo, které jsou jedinečné pro tuto bitovou kopii.|  
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Načte název zdrojového souboru.|  
 |[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Načte typ kontrolního součtu.|  
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Získá enumerátor souborech určených ke kompilaci s odkazy na tento soubor čísla řádků.|  
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Získá enumerátor souborech určených ke kompilaci s čísly řádků odkazující na tento soubor.|  
 |[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Načte kontrolní součet bajtů.|  
   
 ## <a name="remarks"></a>Poznámky  
@@ -47,7 +45,7 @@ IDiaSourceFile : IUnknown
  Získat voláním toto rozhraní [idiaenumsourcefiles::Item –](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) nebo [idiaenumsourcefiles::Next –](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) metody. Podívejte se na příklad podrobnosti.  
   
 ## <a name="example"></a>Příklad  
- Tato funkce zobrazí názvy všechny zdrojové soubory, které přispívají k zadané tabulky.  
+ Tato funkce zobrazí názvy všech zdrojových souborů, které přispívají k zadané tabulky.  
   
 ```C++  
 void ShowSourceFiles(IDiaTable *pTable)  
@@ -75,14 +73,14 @@ void ShowSourceFiles(IDiaTable *pTable)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumsourcefiles::Item –](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)   
  [Idiaenumsourcefiles::Next –](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)   
  [Idialinenumber::get_sourcefile –](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)   

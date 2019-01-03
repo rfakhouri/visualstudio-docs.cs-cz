@@ -2,7 +2,6 @@
 title: Fragmenty kódu Visual C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5069d1b92b9c4f73fdb8eca50eabce170f42cef1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948925"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937436"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu Visual C++
 
@@ -32,7 +31,7 @@ Chcete-li vložit fragment kódu, otevřete soubor kódu jazyka C++ (*.cpp* nebo
 
 - V **upravit / IntelliSense** příkaz **Vložit fragment**
 
-- Použití klávesových zkratek: **Ctrl**+**K**+**X**
+- Použití klávesových zkratek: **CTRL**+**K**+**X**
 
 Zobrazí se seznam možností počínaje **#if**. Když vyberete **#if**, byste měli vidět následující kód do souboru přidán:
 
@@ -52,7 +51,7 @@ Použití kódu před a za vybraný kód, vyberte řádek (nebo více řádků) 
 
 - Z **upravit** > **IntelliSense** příkaz **obklopit fragmentem**
 
-- Použití klávesnice, stiskněte klávesu: **Ctrl**+**K**+**S**
+- Pomocí klávesnice, stiskněte klávesu: **CTRL**+**K**+**S**
 
 Vyberte **#if**. By měl vypadat přibližně takto:
 

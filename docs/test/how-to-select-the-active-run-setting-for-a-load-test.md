@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cfbd259eb4363041988a7682f0e5ce601c3917cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914498"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Postupy: výběr aktivního parametru spuštění pro zátěžový test
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Postupy: Vyberte aktivní parametry běhu zátěžového testu
 
 Po vytvoření zátěžového testu pomocí **nového Průvodce zátěžovým testem**, můžete použít **editoru zátěžového testu** Chcete-li změnit vlastnosti scénářů pro splnění potřebám a cílům testování.
 
@@ -28,7 +27,7 @@ Zátěžový test může obsahovat jeden nebo více *parametry běhu* které př
 > [!NOTE]
 > Úplný seznam vlastností parametrů spuštění a jejich popis najdete v části [zátěžového testu spusťte nastavení](../test/load-test-run-settings-properties.md).
 
-Pokud zátěžový test obsahuje pouze jeden parametr spuštění uzel v rámci **parametrů běhu** složka, tento uzel je vždy aktivní uzel. Pokud zátěžový test obsahuje více uzlů parametrů spuštění, můžete vybrat ten, který má použít při spuštění zátěžového testu. Zobrazit [postupy: přidání dalších parametrů běhu k Zátěžovému testu](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Pokud zátěžový test obsahuje pouze jeden parametr spuštění uzel v rámci **parametrů běhu** složka, tento uzel je vždy aktivní uzel. Pokud zátěžový test obsahuje více uzlů parametrů spuštění, můžete vybrat ten, který má použít při spuštění zátěžového testu. Zobrazit [jak: Přidání dalších parametrů běhu k Zátěžovému testu](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 V **editoru zátěžových testů**, aktivní parametry běhu je identifikován podle přípony "[Active]".
 
@@ -61,4 +60,4 @@ A spusťte test:
 
 - [Konfigurace parametrů spuštění zátěžového testu](../test/configure-load-test-run-settings.md)
 - [Určení sad čítačů a mezních pravidel pro počítače v rámci zátěžového testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Postupy: přidání dalších parametrů běhu k zátěžovému testu](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Postupy: Přidání dalších parametrů běhu k zátěžovému testu](../test/how-to-add-additional-run-settings-to-a-load-test.md)

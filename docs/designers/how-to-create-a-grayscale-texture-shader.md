@@ -2,7 +2,6 @@
 title: 'Postupy: Vytvoření shaderu textury stupňů šedé'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1910926c6cb2d181f4e5e24ffb1bc1c75a56b3
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933538"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Postupy: vytvoření shaderu textury stupňů šedé
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Postupy: Vytvoření shaderu textury stupňů šedé
 
 Tento článek popisuje způsob použití návrháře shaderu a orientovaného grafu shaderu jazyka (DGSL) k vytvoření shaderu textury stupňů šedé. Tento shader změní hodnotu barvy RGB vzorek textury a použije ho spolu s verzí bez úprav alfa hodnotu nastavení konečnou barvu.
 
@@ -27,7 +26,7 @@ Můžete implementovat shaderu textury stupňů šedé změnou barvy hodnotu vzo
 
 Než začnete, ujistěte se, že **vlastnosti** okno a **nástrojů** jsou zobrazeny.
 
-1.  Vytvoření shaderu základní textury, jak je popsáno v [postupy: vytvoření shaderu základní textury](../designers/how-to-create-a-basic-texture-shader.md).
+1.  Vytvoření shaderu základní textury, jak je popsáno v [jak: Vytvoření základní textury shaderu](../designers/how-to-create-a-basic-texture-shader.md).
 
 2.  Odpojit **RGB** z terminálu **vzorek textury** uzlu z **RGB** z terminálu **konečnou barvu** uzlu. V **vyberte** režimu, zvolte **RGB** z terminálu **vzorek textury** uzel a klikněte na tlačítko **přerušit odkazy**. Díky tomu místo pro uzel, který je přidán v dalším kroku.
 
@@ -51,8 +50,8 @@ Určité tvary můžou poskytovat lepší verze Preview pro některé shadery. D
 
 ## <a name="see-also"></a>Viz také:
 
-- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)
+- [Postupy: Použití shaderu na 3D model](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)
 - [Editor obrázků](../designers/image-editor.md)
 - [Návrhář shaderů](../designers/shader-designer.md)
 - [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

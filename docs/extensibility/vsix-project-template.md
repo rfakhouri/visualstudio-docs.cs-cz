@@ -1,9 +1,6 @@
 ---
 title: Šablona projektu VSIX | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f897c2ae11e9b9677557684ca4755d0df66ddbdd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b54fef4e3662783ee7927eb049058c8245ce91c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943405"
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 Použijte šablonu projektu VSIX zabalit jeden nebo více rozšíření sady Visual Studio v projektu VSIX a potom publikujete balíček na [galerii sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu.  

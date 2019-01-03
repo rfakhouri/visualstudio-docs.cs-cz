@@ -1,8 +1,6 @@
 ---
-title: Idiasegment – | Microsoft Docs
-ms.custom: ''
+title: Idiasegment – | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,45 +12,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1547f91730d00babad6a0727686ff67357f910b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f4cc24d64d3d1b1f8ab3e4182c21d451763b15e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847188"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-Mapuje dat z číslo oddílu segmenty adresního prostoru.  
+Mapuje data z část čísla do segmentů adresního prostoru.  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDiaSegment`.  
+ V následující tabulce jsou uvedeny metody objektu `IDiaSegment`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Načte číslo segmentu.|  
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Načte posun v segmentech, které začíná v části.|  
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Získá číslo segmentu.|  
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Načte posun v příslušných segmentech, kde začíná v části.|  
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Získá počet bajtů v segmentu.|  
-|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Získá příznak označující, zda mohou být čteny segmentu.|  
-|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Získá příznak označující, zda je možné upravit segmentu.|  
-|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Načte příznak, který určuje, zda je spustitelný soubor segmentu.|  
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Načte číslo oddílu, který se mapuje na tento segment.|  
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Načte relativní virtuální adresy (RVA) začátku části.|  
+|[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Získá příznak, který označuje, zda lze číst segmentu.|  
+|[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Získá příznak, který označuje, zda může být upraveno segmentu.|  
+|[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Získá příznak, který určuje, zda je spustitelný soubor segmentu.|  
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Získá číslo oddílu, který se mapuje na tento segment.|  
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Načte relativní virtuální adresu (RVA) začátku části.|  
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Načte virtuální adresy (VA) začátku části.|  
   
 ## <a name="remarks"></a>Poznámky  
- Protože DIA SDK již provádí převody z části posun relativní virtuální adresy, nebude provádět většinu aplikací pomocí informací v mapy segmentu.  
+ Protože DIA SDK už provádí překlady z část posun relativních virtuálních adres, nebude provádět většinu aplikací pomocí informací na mapě segmentu.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Získat voláním toto rozhraní [idiaenumsegments::Item –](../../debugger/debug-interface-access/idiaenumsegments-item.md) nebo [idiaenumsegments::Next –](../../debugger/debug-interface-access/idiaenumsegments-next.md) metody. Podívejte se na příklad podrobnosti.  
   
 ## <a name="example"></a>Příklad  
- Tato funkce zobrazí všechny segmenty na adresu v tabulce a nejbližší symbol.  
+ Tato funkce zobrazí adresu všechny segmenty v tabulce a nejbližší symbol.  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
@@ -96,13 +94,13 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: Dia2.h  
+ Záhlaví: dia2.h  
   
  Knihovna: diaguids.lib  
   
  Knihovny DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Rozhraní (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumsegments::Item –](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

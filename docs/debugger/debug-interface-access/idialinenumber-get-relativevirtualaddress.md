@@ -1,8 +1,6 @@
 ---
 title: Idialinenumber::get_relativevirtualaddress – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5919ac289dcb7e78031ae433fda2620f62032f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fea19cae4f587ff6a7fb505653db5b3142564868
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940067"
 ---
 # <a name="idialinenumbergetrelativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
 Načte relativní virtuální adresu (RVA) bloku.  
@@ -27,7 +25,7 @@ Načte relativní virtuální adresu (RVA) bloku.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

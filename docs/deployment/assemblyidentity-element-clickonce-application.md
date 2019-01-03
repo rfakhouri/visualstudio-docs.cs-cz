@@ -1,8 +1,6 @@
 ---
 title: '&lt;Vlastnost assemblyIdentity&gt; – Element (aplikace ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b54c52625578b6ba1f7859654804fa1caaad32
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d83c750cdf08d79fc4402f08cf8a9e3a5ea218f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911465"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;Vlastnost assemblyIdentity&gt; – element (aplikace ClickOnce)
 Identifikuje nasazené v aplikaci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
@@ -46,11 +44,11 @@ Identifikuje nasazené v aplikaci [!INCLUDE[ndptecclick](../deployment/includes/
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Name`|Požadováno. Určuje název aplikace.<br /><br /> Pokud `Name` obsahuje speciální znaky, jako je například jednoduché nebo dvojité uvozovky, aplikací se pravděpodobně nezdaří k aktivaci.|  
-|`Version`|Požadováno. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
+|`Name`|Povinný parametr. Určuje název aplikace.<br /><br /> Pokud `Name` obsahuje speciální znaky, jako je například jednoduché nebo dvojité uvozovky, aplikací se pravděpodobně nezdaří k aktivaci.|  
+|`Version`|Povinný parametr. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
 |`publicKeyToken`|Volitelné. Určuje šestnáctkový řetězec 16 znacích představující posledních 8 bajtů `SHA-1` hash hodnoty veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč, který se používá k podepsání katalogu musí být 2 048 bitů nebo vyšší.<br /><br /> I když se podpis sestavení se doporučuje, ale volitelné, tento atribut je vyžadován. Pokud je sestavení bez znaménka, by měl zkopírujte hodnotu z podepsaného sestavení nebo použijte hodnotu "fiktivní" samými nulami.|  
-|`processorArchitecture`|Požadováno. Určuje procesor. Platné hodnoty jsou `msil` pro všechny procesory `x86` pro Windows 32-bit `IA64` pro Windows 64-bit, a `Itanium` pro procesory Itanium Intel 64-bit.|  
-|`language`|Požadováno. Určuje jazyk kódy dvě součásti (například `en-US`) sestavení. Tento element má `asmv2` oboru názvů. Pokud tento parametr zadán, výchozí hodnota je `neutral`.|  
+|`processorArchitecture`|Povinný parametr. Určuje procesor. Platné hodnoty jsou `msil` pro všechny procesory `x86` pro Windows 32-bit `IA64` pro Windows 64-bit, a `Itanium` pro procesory Itanium Intel 64-bit.|  
+|`language`|Povinný parametr. Určuje jazyk kódy dvě součásti (například `en-US`) sestavení. Tento element má `asmv2` oboru názvů. Pokud tento parametr zadán, výchozí hodnota je `neutral`.|  
   
 ## <a name="examples"></a>Příklady  
   

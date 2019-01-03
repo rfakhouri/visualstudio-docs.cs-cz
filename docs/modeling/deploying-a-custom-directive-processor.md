@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911647"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
 
@@ -164,7 +163,7 @@ Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následují
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Registrace procesoru direktiv nastavením klíče registru
 
-1. Spustit `regedit`.
+1. Spusťte `regedit`.
 
 2. V editoru registru přejděte na
 

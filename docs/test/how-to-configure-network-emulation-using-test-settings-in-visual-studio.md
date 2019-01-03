@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 032eff41f0e6b6366e5eb56dad591a02ebde4984
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ae6e3aaf204b54e413a76a8d07e0391a214b007d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900727"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Postupy: Konfigurace emulace sítě s využitím testovacích nastavení v sadě Visual Studio
 
@@ -78,12 +77,12 @@ Před provedením kroků v tomto postupu je nutné otevřít nastavení testů z
 
 4.  Pokud zahrnete emulaci adaptéru diagnostických dat sítě v nastavení testu a máte v úmyslu použít na místním počítači, pak musíte také svázat ovladač emulace sítě do jednoho ze síťových adaptérů v počítači. Ovladač emulace sítě je vyžadován pro adaptér diagnostických dat síťové emulace na funkci. Ovladač emulace sítě je nainstalován a svázán k adaptéru dvěma způsoby:
 
-    -   **Ovladač pro emulaci sítě nainstalovaný s Microsoft Visual Studio Test Agent:** The Microsoft Visual Studio Test Agent lze použít na vzdálených počítačích a v místním počítači. Když instalujete Visual Studio Test Agent, instalační proces zahrnuje krok konfigurace, spojující ovladač emulace sítě se síťovou kartou. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
+    -   **Ovladač pro emulaci sítě nainstalovaný s Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent lze použít na vzdálených počítačích a v místním počítači. Když instalujete Visual Studio Test Agent, instalační proces zahrnuje krok konfigurace, spojující ovladač emulace sítě se síťovou kartou. Další informace najdete v tématu [instalace a konfigurace testovacích agentů](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Ovladač pro emulaci sítě nainstalovaný s Microsoft Visual Studio Test Professional:** při prvním použití emulace sítě, budete vyzváni k vytvoření vazby ovladač emulace sítě se síťovou kartou.
+    -   **Ovladač pro emulaci sítě nainstalovaný s Microsoft Visual Studio Test Professional:** Při prvním použití emulace sítě, zobrazí se výzva k vytvoření vazby ovladač emulace sítě se síťovou kartou.
 
     > [!TIP]
-    > Můžete také nainstalovat ovladač emulace sítě z příkazového řádku na místním počítači bez instalace testovacího agenta sady Visual Studio pomocí následujícího příkazu: **VSTestConfig NETWORKEMULATION/Install**
+    > Ovladač emulace sítě můžete také nainstalovat z příkazového řádku na místním počítači bez instalace testovacího agenta sady Visual Studio pomocí následujícího příkazu: **VSTestConfig NETWORKEMULATION/Install**
 
 ## <a name="see-also"></a>Viz také:
 

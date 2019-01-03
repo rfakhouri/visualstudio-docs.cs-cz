@@ -1,9 +1,6 @@
 ---
-title: Vytváření funkcí služby SharePoint | Microsoft Docs
-ms.custom: ''
+title: Vytváření funkcí služby SharePoint | Dokumentace Microsoftu
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,48 +13,46 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 56bc4dbd50bedc15fcf6c69cbc334fe09c6094cc
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 55b1b3f2f243a6c4d35a4c1effbb4ca759abd9d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842879"
 ---
-# <a name="create-sharepoint-features"></a>Vytváření funkcí služby SharePoint
-  Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavení rozsahů a označit další funkce, jako závislosti pomocí návrháře funkce služby SharePoint. Návrhář vytvoří také manifestu, který je soubor XML, který popisuje každou funkci.  
+# <a name="create-sharepoint-features"></a>Vytvoření funkcí služby SharePoint
+  Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavit obory a označit jiné funkce jako závislosti pomocí funkce návrháře služby SharePoint. Návrhář také vygeneruje manifest, který je soubor XML, který popisuje každou funkci.  
   
 ## <a name="add-features-to-the-sharepoint-solution"></a>Přidání funkce do řešení služby SharePoint
- Pomocí Průzkumníka řešení nebo Průzkumníku balíčků můžete přidání funkce do řešení služby SharePoint. Jeden z následujících metod slouží k přidání funkce.  
+ Funkce můžete přidat do řešení služby SharePoint pomocí Průzkumníka řešení nebo Průzkumníku balíčků. Můžete použít jednu z následujících metod přidáte funkci.  
   
--   V **Průzkumníku řešení**, otevřete místní nabídku pro **funkce**a potom zvolte **přidat funkce**.  
+-   V **Průzkumníka řešení**, otevřete místní nabídku pro **funkce**a klikněte na tlačítko **přidat funkci**.  
   
--   V **Průzkumníku balíčků**, otevřete místní nabídku pro balíček a potom zvolte **přidat funkce**.  
+-   V **Průzkumník balení**, otevřete místní nabídku pro balíček a klikněte na tlačítko **přidat funkci**.  
   
-## <a name="using-the-feature-designer"></a>Pomocí funkce návrháře
- Řešení služby SharePoint může obsahovat jednu nebo několik funkcí služby SharePoint, které jsou seskupené v rámci uzlu funkce v Průzkumníku řešení. Jednotlivé funkce má svou vlastní **funkce Návrhář** , můžete upravit vlastnosti funkcí. Další informace najdete v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). K rozlišení funkce jeden z druhého, můžete konfigurovat vlastnosti funkce jako je například název, popis, verze a obor.  
+## <a name="using-the-feature-designer"></a>Pomocí návrháře funkcí
+ Řešení služby SharePoint mohou obsahovat jednu nebo více funkcí služby SharePoint, jsou seskupené v uzlu funkce v Průzkumníku řešení. Každá funkce má svůj vlastní **funkce návrháře** , můžete použít pro přizpůsobení vlastnosti funkce. Další informace najdete v tématu [jak: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). K rozlišení funkce od sebe, můžete nakonfigurovat vlastnosti funkce, jako je například název, popis, verze a obor.  
   
-### <a name="feature-designer-options"></a>Možnosti funkcí, které návrháře
- Po vytvoření funkce, můžete přizpůsobit funkce návrháře.  
+### <a name="feature-designer-options"></a>Možnosti návrháře funkcí
+ Po vytvoření funkce, můžete jej přizpůsobit návrháře funkcí.  
   
- Následující tabulka popisuje vlastnosti funkcí, které se zobrazují v Návrháři funkce.  
+ Následující tabulka popisuje vlastnosti funkce, které jsou zobrazeny v Návrháři funkce.  
   
 |Vlastnost|Popis|  
 |--------------|-----------------|  
-|Název|Volitelné. Výchozí název funkce je nastaven na *název řešení SolutionName* *FeatureName*.|  
-|Popis|Volitelné. Popis funkce služby SharePoint.|  
-|Rozsah|Požadováno. Pokud funkce je vytvořená pomocí **Průzkumníku řešení**, na Web ve výchozím nastavení oboru.<br /><br /> -Farmy: Aktivace funkce pro farmu služby celý server.<br /><br /> -Site: Aktivujte funkci pro všechny weby v kolekci webů.<br /><br /> -Webové: Aktivace funkce pro konkrétní web.<br /><br /> -WebApplication: Aktivujte funkci pro všechny webové servery ve webové aplikaci.|  
+|Název|Volitelné. Výchozí název funkce je nastavena na *SolutionName* *FeatureName*.|  
+|Popis|Volitelné. Popis funkce Sharepointu.|  
+|Rozsah|Povinný parametr. Pokud funkce je vytvořena pomocí **Průzkumníka řešení**, rozsah se nastaví na webu ve výchozím nastavení.<br /><br /> -Farmy: Aktivujte funkci pro celou serverovou farmu.<br /><br /> -Lokalita: Aktivujte funkci pro všechny weby v kolekci webů.<br /><br /> – Web: Aktivujte funkci pro konkrétní web.<br /><br /> -WebApplication: Aktivujte funkci pro všechny webové servery ve webové aplikaci.|  
 |Položky v řešení|Všechny položky služby SharePoint, které mohou být přidány do funkce.|  
-|Položky ve funkci|Položky projektu služby SharePoint, které jsou přidané do funkce.|  
+|Položky ve funkci|Položky Sharepointového projektu, které byly přidány k funkci.|  
   
 ## <a name="add-and-remove-sharepoint-project-items"></a>Přidání a odebrání položek projektu služby SharePoint
- Můžete vybrat položky projektu služby SharePoint, které chcete přidat funkce služby SharePoint k nasazení. Použití **funkce Návrhář** k přidání a odebrání položek z funkcí a funkce v manifestu. Další informace najdete v tématu [postupy: Přidání a odebrání položek z funkcí služby SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).  
+ Můžete vybrat položky Sharepointového projektu, které chcete přidat funkce služby SharePoint do nasazení. Použití **návrháře funkcí** k přidání a odebrání položek z funkcí a zobrazit manifest funkce. Další informace najdete v tématu [jak: Přidání a odebrání položek z funkcí služby SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).  
   
-## <a name="add-feature-dependencies"></a>Přidání funkcí
- Manifest funkce můžete nakonfigurovat tak, aby SharePoint server aktivuje některých funkcí, než je zapnuta. Například pokud vaše funkce služby SharePoint závisí na dalších funkcí pro funkce nebo data, serveru SharePoint mohou zkuste je napřed k aktivaci žádné funkce, které vaše funkce závisí na. Další informace najdete v tématu [postupy: Přidání a odebrání závislostí funkce](../sharepoint/how-to-add-and-remove-feature-dependencies.md).  
+## <a name="add-feature-dependencies"></a>Přidat závislosti
+ Manifest funkce můžete nakonfigurovat tak, aby SharePoint server aktivuje určité funkce předtím, než je zapnuta. Například pokud vaše funkce služby SharePoint závisí na jiné funkce pro funkce nebo data, SharePoint server nejprve zkusit některou z funkcí, které vaše funkce závisí na aktivovat. Další informace najdete v tématu [jak: Přidání a odebrání závislostí funkce](../sharepoint/how-to-add-and-remove-feature-dependencies.md).  
   
 ## <a name="see-also"></a>Viz také:
- [Postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [Postupy: Přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Postupy: Přidání a odebrání položek z funkcí služby SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
  [Postupy: Přidání a odebrání závislostí funkce](../sharepoint/how-to-add-and-remove-feature-dependencies.md)  
-  
-  

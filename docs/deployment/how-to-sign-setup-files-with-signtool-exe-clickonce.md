@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: podepsání souborů instalace pomocí SignTool.exe (ClickOnce) | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Podepsání souborů instalace pomocí SignTool.exe (ClickOnce) | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b66d9440ebcf62c59049b45769a2244fc773480e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 845c1511ebb4555fee12c92b5534b11fb23cbb45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845321"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Postupy: podepsání souborů instalace pomocí SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Postupy: Podepsání souborů instalace pomocí SignTool.exe (ClickOnce)
 Můžete použít *SignTool.exe* podepsat instalační program (*setup.exe*). Tento proces pomáhá zajistit, že zmanipulovanou soubory nejsou nainstalované v počítačích koncových uživatelů.  
   
  Ve výchozím nastavení má ClickOnce podepsané manifesty a podepsaný instalační program. Nicméně pokud chcete změnit parametry instalační program později, musíte podepsat instalační program později. Pokud změníte parametry po instalační program je podepsán, dojde k poškození podpis.  
@@ -79,4 +77,4 @@ Můžete použít *SignTool.exe* podepsat instalační program (*setup.exe*). Te
     ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: Opětovné podepisování manifestů aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Postupy: Znovu podepište manifesty aplikace a nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

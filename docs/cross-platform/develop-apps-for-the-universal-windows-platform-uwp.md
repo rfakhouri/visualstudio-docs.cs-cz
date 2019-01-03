@@ -2,8 +2,7 @@
 title: Vyvíjejte aplikace pro Universal Windows Platform (UWP) | Dokumentace Microsoftu
 ms.custom: ''
 ms.date: 10/24/2017
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: stevehoag
@@ -11,12 +10,12 @@ ms.author: shoag
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: de4306b2fa56bf00fd51a741441395b90ed314e5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7f0279249be7b5a48b342f1de26179af7b89f80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843788"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 Univerzální platformu Windows a naše jednoho jádra Windows můžete stejnou aplikaci spustit na jakékoli zařízení s Windows 10 z telefonů pro stolní počítače. Vytvořte tyto Universal Windows apps pomocí sady Visual Studio a nástroje pro vývoj univerzálních aplikací pro Windows.

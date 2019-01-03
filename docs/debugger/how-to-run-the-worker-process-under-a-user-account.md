@@ -2,7 +2,6 @@
 title: Spuštění pracovního procesu v rámci uživatelského účtu | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5162d06f54e65dc35fef9e623d1730b66813c0f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893248"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Postupy: Spuštění pracovního procesu v rámci uživatelského účtu
 Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovního procesu (aspnet_wp.exe nebo w3wp.exe) v rámci uživatelského účtu, postupujte podle těchto kroků.  
@@ -88,5 +87,4 @@ Nastavení počítače tak, aby mohly běžet [!INCLUDE[vstecasp](../code-qualit
   
 ## <a name="see-also"></a>Viz také  
 [Ladění aplikací ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
-[Ladění ASP.NET: Systémové požadavky](../debugger/aspnet-debugging-system-requirements.md)  
-  
+[Ladění ASP.NET: Požadavky na systém](../debugger/aspnet-debugging-system-requirements.md)  

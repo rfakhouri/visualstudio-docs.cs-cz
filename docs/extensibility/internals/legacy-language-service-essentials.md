@@ -1,9 +1,6 @@
 ---
 title: Základy služby starší verze jazyka | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847201"
 ---
 # <a name="legacy-language-service-essentials"></a>Základy služby starší verze jazyka
 Služba jazyka pro integraci programovací jazyk do sady Visual Studio je nutné zadat. Toto téma popisuje funkce dostupné ve službě starší verze jazyka services.  
@@ -50,4 +47,3 @@ Služba jazyka pro integraci programovací jazyk do sady Visual Studio je nutné
 |-----------------------| - |
 | Vyhodnocovače výrazů | Podporuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladicí program ověřování zarážek a poskytnutím seznam výrazů, který se má zobrazit v **automatické hodnoty** okno ladění.<br /><br /> Další informace najdete v tématu [podpora služby jazyka pro ladění](../../extensibility/internals/language-service-support-for-debugging.md). |
 | Nástroje procházení symbolů | Podporuje **Prohlížeč objektů**, **zobrazení tříd**, **prohlížeč volání**, a **výsledky hledání symbolu**. |
-

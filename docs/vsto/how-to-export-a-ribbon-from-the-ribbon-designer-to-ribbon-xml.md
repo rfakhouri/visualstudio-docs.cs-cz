@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 370c2e1d08c47b8a5068d0227426d2b4083590a5
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894058"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet
   **Pás karet (vizuální návrhář)** položka nepodporuje všechny možné typy vlastního nastavení pásu karet. Přizpůsobení pásu karet v upřesňující možnosti, můžete exportovat do kódu XML pásu karet na pásu karet z návrháře a přímo upravit soubor XML.  
@@ -73,5 +70,3 @@ ms.locfileid: "53646929"
  [Pás karet – XML](../vsto/ribbon-xml.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

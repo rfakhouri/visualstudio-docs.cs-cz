@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: Přidání funkce do řešení služby SharePoint | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Přidání funkce do řešení služby SharePoint | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,21 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44ce00ffcacd94f2f7ccb07a346d31abe5c4080f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b62c29da1d567567bd2788f6f0b497a4628797c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907693"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Postupy: Přidání funkce do řešení služby SharePoint
-  Když vytvoříte řešení služby SharePoint, jedna z funkcí a jeden balíček se přidají do řešení. Můžete přidat další položky funkci k uspořádání různých typů souborů služby SharePoint.  
+  Když vytvoříte řešení služby SharePoint, jednu funkci a jeden balíček se přidají do řešení. Můžete přidat další položky funkci k uspořádání různých typů souborů Sharepointu.  
   
-### <a name="to-add-a-feature-through-solution-explorer"></a>Přidání funkce pomocí Průzkumníku řešení
+### <a name="to-add-a-feature-through-solution-explorer"></a>Přidání funkce pomocí Průzkumníka řešení
   
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **funkce**a potom zvolte **přidat funkce**.  
+1.  V **Průzkumníka řešení**, otevřete místní nabídku pro **funkce**a klikněte na tlačítko **přidat funkci**.  
   
 ## <a name="see-also"></a>Viz také:
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

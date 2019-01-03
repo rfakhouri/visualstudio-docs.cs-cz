@@ -1,12 +1,11 @@
 ---
-title: 'CA2240: Implementujte ISerializable správně | Dokumentace Microsoftu'
+title: 'CA2240: Implementujte správně ISerializable | Dokumentace Microsoftu'
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -20,12 +19,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf9578d12a9d89a5c328cf15c1c5a7becef12cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dd40b20152478aa24e1835fb00d71c889fe2bd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930311"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementujte správně ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +69,9 @@ ms.locfileid: "49888919"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/vb/FxCop.Usage.ImplementISerializableCorrectly2.vb#1)]
 
 ## <a name="related-rules"></a>Související pravidla
- [CA2236: Volejte metody třídy Base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Volání metody třídy base na typech ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2229: Implementovat serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
+ [CA2229: Implementovat Serializační konstruktory](../code-quality/ca2229-implement-serialization-constructors.md)
 
  [CA2238: Implementujte správně metody serializace](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
@@ -82,7 +81,4 @@ ms.locfileid: "49888919"
 
  [CA2239: Poskytujte metody deserializace pro nepovinné pole](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: Zabezpečte serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)
-
-
-
+ [CA2120: Zabezpečte Serializační konstruktory](../code-quality/ca2120-secure-serialization-constructors.md)
