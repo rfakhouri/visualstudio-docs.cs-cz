@@ -2,7 +2,6 @@
 title: knihovna obrázků
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: sample
 helpviewer_keywords:
 - animation [Visual Studio]
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d4a75c8ded0db82070d04745bcc10c4083c2073
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 984f36ea98c0e61be7236407c9188211bdb2fe60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987489"
 ---
 # <a name="the-visual-studio-image-library"></a>Knihovna obrázků sady Visual Studio
 
@@ -31,7 +30,7 @@ Knihovna obrázků Visual Studio obsahuje obrázky aplikace, které se zobrazí 
 
 [Stáhnout knihovna obrázků sady Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-Knihovna obrázků je rozdělena do pěti kategorií: společné prvky, akce, poznámky, ikony a objekty. Soubory Readme jsou u společných elementů a typů ikon zahrnuté ve formátu PDF. Obsahují informace o tom, jak pomocí těchto bitových kopií odpovídajícím způsobem ve svých aplikacích.
+Knihovna obrázků je rozdělena do pěti kategorií: Společné prvky, akce, poznámky, ikony a objekty. Soubory Readme jsou u společných elementů a typů ikon zahrnuté ve formátu PDF. Obsahují informace o tom, jak pomocí těchto bitových kopií odpovídajícím způsobem ve svých aplikacích.
 
 ## <a name="see-also"></a>Viz také:
 

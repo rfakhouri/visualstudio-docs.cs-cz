@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vyvolání události při editoru ztratí fokus. | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Aktivovat události při editoru ztratí fokus. | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d579b30c5eac25c815739149d3b3baacc22dc439
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990763"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Postupy: vyvolání události při editoru ztratí fokus.
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Postupy: Aktivovat události při editoru ztratí fokus.
 Někdy je potřeba vědět, pokud editor ztratí fokus na okno rámce. Například můžete potřebovat po editoru už nemá fokus na něj extrahovat kód, z okna kódu. Následující postup vysvětluje, jak postupovat podle k přijímání oznámení tom editor ztráta fokusu.  
   
 ## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Chcete-li vyvolat událost v reakci na editor ztráta fokusu  

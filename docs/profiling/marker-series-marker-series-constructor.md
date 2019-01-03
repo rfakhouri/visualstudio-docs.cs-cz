@@ -1,8 +1,6 @@
 ---
-title: marker_series::marker_series – konstruktor | Microsoft Docs
-ms.custom: ''
+title: marker_series::marker_series – konstruktor | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series::marker_series
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc397fa88c722f6a7f16ac92f4388525073c0fa
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 8fad8eec19346273a7ea302da4653faa1bdec032
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987230"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series – konstruktor
 Inicializuje novou instanci třídy `marker_series` třídy.  
@@ -42,10 +40,10 @@ marker_series(
   
 #### <a name="parameters"></a>Parametry  
  `_SeriesName`  
- Název řady, chcete-li vytvořit.  
+ Název řady k vytvoření.  
   
  `_ProviderGuid`  
- Identifikátor GUID řady zprostředkovatele.  
+ Identifikátor GUID zprostředkovatele řady.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkersobj.h*  

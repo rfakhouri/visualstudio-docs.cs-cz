@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cae74c50ecd99716cf26eae2b7defcadf03fecbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d49df542dbd134a6164e582459978bb2ef1aee3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989643"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Práce s Konceptuálními modely (WCF Data Services)
 
@@ -30,8 +29,8 @@ Při použití koncepčního modelu pro popis dat v databázi se můžete dotazo
 
 | Téma | Popis |
 | - | - |
-| [Postupy: provádění dotazů v datové službě](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Ukazuje, jak provádět dotazy z datové služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikace. |
-| [Postupy: výsledky dotazů na projekt](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Ukazuje, jak snížit množství dat, které jsou vráceny prostřednictvím dotazu v datové službě. |
+| [Postupy: Provádění dotazů v datové službě](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Ukazuje, jak provádět dotazy z datové služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplikace. |
+| [Postupy: Výsledky dotazu projektu](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Ukazuje, jak snížit množství dat, které jsou vráceny prostřednictvím dotazu v datové službě. |
 
  Při použití konceptuálního modelu můžete definovat, jaký druh dat je platný v jazyce, který odpovídá vaší domény. Můžete definovat platná data v modelu, nebo můžete přidat ověření pro operace, které můžete provádět na entity nebo dat služby.
 
@@ -39,14 +38,14 @@ Při použití koncepčního modelu pro popis dat v databázi se můžete dotazo
 
 |Téma|Popis|
 |-----------|-----------------|
-|[Jak na: Intercept Data Service zprávy](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Ukazuje, jak přidat ověřování do datové operace služby.|
+|[Postupy: Zachytit zpráv datové služby](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Ukazuje, jak přidat ověřování do datové operace služby.|
 
  Následující témata ukazují, jak vytvořit, aktualizovat a odstraňovat data o provádění operací na entity.
 
 |Téma|Popis|
 |-----------|-----------------|
 |[Postupy: Přidání, úpravy a odstranění entit](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Ukazuje, jak vytvářet, aktualizovat a odstraňovat data entity ve službě data.|
-|[Postupy: definování vztahů mezi entitami](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Ukazuje, jak vytvořit nebo změnit vztahy v datových služeb.|
+|[Postupy: Definování vztahů mezi entitami](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Ukazuje, jak vytvořit nebo změnit vztahy v datových služeb.|
 
 ## <a name="see-also"></a>Viz také:
 

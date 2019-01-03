@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989241"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analýza mezních pravidel v zátěžových testech pomocí Analyzéru zátěžového testu
 
@@ -39,7 +38,7 @@ Pokud došlo k porušení zásad, **mezních hodnot** hypertextového odkazu se 
 |Sloupec|Popis|Ve výchozím nastavení viditelné|
 |-|-|-|
 |čas|Doba během zátěžového testu na kterém došlo k porušení zásady.|Ano|
-|Počítače|Název počítače v rámci testu, na kterém došlo k porušení zásady. **Poznámka:** to je důležité při spuštění zátěžových testů v skupiny testovacích počítačů.|Ano|
+|Počítače|Název počítače v rámci testu, na kterém došlo k porušení zásady. **Poznámka:**  To je důležité, při spuštění zátěžových testů v skupiny testovacích počítačů.|Ano|
 |Kategorie|Kategorie čítače výkonu, na kterém došlo k porušení zásady.|Ano|
 |Čítač|Název čítače výkonu, na kterém došlo k porušení zásady.|Ano|
 |instance|Instance čítače výkonu, na kterém došlo k porušení zásady.|Ano|

@@ -1,8 +1,6 @@
 ---
-title: Zobrazení stromu volání – Data vzorkování paměti .NET | Microsoft Docs
-ms.custom: ''
+title: Zobrazení stromu volání – Data vzorkování paměti .NET | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,47 +10,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7f8e2e6e480bb082c0f60bd94a06b28ea12c268b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988268"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Zobrazení stromu volání – data vzorkování paměti .NET
-Zobrazení stromu volání zobrazuje cesty provádění funkce, které byly provázán v PROFILOVANÉHO aplikaci. Kořen stromu je vstupním bodem do součást nebo aplikace. Každý uzel funkce jsou uvedeny všechny funkce, které ji volat a data přidělení paměti .NET o těchto volání funkcí.  
+Zobrazení stromu volání zobrazí cesty spuštění funkce, které byly Procházet v profilované aplikaci. Kořen stromu je vstupním bodem do aplikace nebo komponenty. Každý uzel funkce jsou uvedené všechny funkce, které ji volaly a data o přidělování paměti .NET o volání těchto funkcí.  
   
- Hodnoty v zobrazení stromu volání jsou pro funkce instancí, které byly volá funkci nadřazené ve stromové struktuře volání. Procentní hodnoty se počítá srovnáním hodnotu instance funkce pro celkový počet nebo velikost přidělení v profilaci spustit.  
+ Hodnoty v zobrazení stromu volání jsou pro instance funkce, které byly volány nadřazené funkce ve stromu volání. Procentní hodnoty se počítá srovnáním hodnota instance funkce celkového počtu nebo velikosti přidělení při spuštění profilace.  
   
-## <a name="highlight-the-execution-hot-path"></a>Zvýraznit cestu aktivní provádění  
- Zobrazení stromu volání můžete rozbalit a zvýraznit cestu spouštění procesu nebo funkce, která vytvořila na největší nebo většinu objektů paměti. Zobrazení Nejaktivnější cesty, klikněte pravým tlačítkem na proces nebo funkce a pak klikněte na tlačítko **rozbalte aktivní trase**.  
+## <a name="highlight-the-execution-hot-path"></a>Zvýrazněte provádění kritickou cestu  
+ Zobrazení stromu volání můžete rozbalit a zvýrazňovat postupu provádění procesu nebo funkci, kterou vytvořili největší nebo většinu objektů v paměti. Zobrazit Nejaktivnější cestu, klikněte pravým tlačítkem myši na proces nebo funkci a klikněte na **rozbalit kritickou cestu**.  
   
 ## <a name="set-the-call-tree-root-node"></a>Nastavit kořenový uzel stromu volání  
- Každý proces v profilaci spuštění se zobrazí jako kořenový uzel. Pokud chcete nastavit počáteční uzel zobrazení stromu volání na jiný uzel, klikněte pravým tlačítkem na uzel, který chcete nastavit jako počáteční uzel a vyberte **nastavit kořenové**.  
+ Každý proces při spuštění profilování se zobrazí jako kořenový uzel. Pokud chcete nastavit počáteční uzel zobrazení stromu volání na jiný uzel, klikněte pravým tlačítkem na uzel, který chcete nastavit jako počáteční uzel a vyberte **nastavit kořenový**.  
   
- Pokud nastavíte kořenového uzlu, můžete eliminovat všechny položky ze zobrazení s výjimkou podstrom vybraného uzlu. Můžete resetovat kořenový uzel zpět do uzlu, který se zobrazil; v okně zobrazení stromu volání klikněte pravým tlačítkem a vyberte **resetovat kořenové**.  
+ Když nastavíte kořenový uzel, odstraníte všechny položky ze zobrazení s výjimkou podstrom vybraný uzel. Můžete resetovat kořenový uzel zpět do uzlu, který byl zobrazený; Klikněte pravým tlačítkem v okně zobrazení stromu volání a vyberte **resetování kořenového**.  
   
 |Sloupec|Popis|  
 |------------|-----------------|  
-|**ID procesu**|ID procesu (PID) z profilace spustit.|  
+|**ID procesu**|ID procesu (PID) běhu profilování.|  
 |**Název procesu**|Název procesu.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
-|**Cesta modulu**|Cesta modul, který obsahuje funkce.|  
+|**Cesta modulu**|Cesta k napadenému modulu, který obsahuje funkci.|  
 |**Zdrojový soubor**|Zdrojový soubor, který obsahuje definici pro tuto funkci.|  
 |**Název funkce**|Plně kvalifikovaný název funkce.|  
-|**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
+|**Číslo řádku funkce**|Číslo řádku začátku této funkce ve zdrojovém souboru.|  
 |**Adresa funkce**|Adresa funkce.|  
-|**úroveň**|Hloubka funkce ve stromové struktuře volání.|  
-|**Přidělení (včetně).**|Počet objektů, které byly přiděleny instancí této funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Tato hodnota zahrnuje přidělení, které byly provedeny podle podřízené funkce.|  
-|**% Přidělení (včetně).**|Procento všech objektů, které byly vytvořeny v profilaci spuštění, které byly včetně přidělení této funkce.|  
-|**Výhradní přidělení**|Počet objektů, které byly přiděleny instancí této funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Toto číslo nezahrnuje přidělení, které byly provedeny podle podřízené funkce.|  
-|**Výhradní přidělení %**|Procento všech objektů, které byly vytvořeny v profilaci spuštění, které byly výhradní přidělení instancí funkce, které byly volá funkci nadřazené ve stromové struktuře volání.|  
-|**Bajtů (včetně).**|Počet bajtů v paměti, které byly přiděleny instancí této funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Tato hodnota zahrnuje přidělení, které byly provedeny podle podřízené funkce.|  
-|**% Bajtů (včetně).**|Procento všech bajtů paměti, které byly přiděleny v profilaci spuštění, které byly včetně přidělení této funkce.|  
-|**Výhradní bajtů**|Počet bajtů v paměti, které byly přiděleny instancí této funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Toto číslo nezahrnuje přidělení, které byly provedeny podle podřízené funkce.|  
-|**% Výhradní bajtů**|Procento všech bajtů paměti, které byly přiděleny v profilaci spuštění, které byly výhradní přidělení této funkce.|  
+|**Úroveň**|Hloubka funkce ve stromu volání.|  
+|**Celkově přidělení**|Počet objektů, které byly přiděleny instancí této funkce, které byly volány nadřazené funkce ve stromu volání. Toto číslo zahrnuje přidělení, které byly provedeny pomocí podřízených funkcí.|  
+|**% Celkových přidělení**|Procento všech objektů, které byly vytvořeny v profilování, která se celkově přidělení této funkce.|  
+|**Výhradní přidělení**|Počet objektů, které byly přiděleny instancí této funkce, které byly volány nadřazené funkce ve stromu volání. Toto číslo nezahrnuje přidělení, které byly provedeny pomocí podřízených funkcí.|  
+|**% Výhradních přidělení**|Procento všech objektů, které byly vytvořeny v profilování, které byly výhradních přidělení instancí funkce, které byly volány nadřazené funkce ve stromu volání.|  
+|**Celkově bajtů**|Počet bajtů paměti, které byly přiděleny instancí této funkce, které byly volány nadřazené funkce ve stromu volání. Toto číslo zahrnuje přidělení, které byly provedeny pomocí podřízených funkcí.|  
+|**% Celkových bajtů**|Procento bajtů paměti, které byly přiděleny v profilování, která se celkově přidělení této funkce.|  
+|**Výhradní bajty**|Počet bajtů paměti, které byly přiděleny instancí této funkce, které byly volány nadřazené funkce ve stromu volání. Toto číslo nezahrnuje přidělení, které byly provedeny pomocí podřízených funkcí.|  
+|**% Výhradních bajtů**|Procento všech počet bajtů paměti, které byly přiděleny v profilování, které byly výhradních přidělení této funkce.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Zobrazení stromu volání – instrumentace](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-sampling-data.md)   
  [Zobrazení stromu volání](../profiling/call-tree-view-instrumentation-data.md)

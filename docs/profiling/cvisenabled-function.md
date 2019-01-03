@@ -1,8 +1,6 @@
 ---
-title: Cvisenabled – funkce | Microsoft Docs
-ms.custom: ''
+title: Cvisenabled – funkce | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvIsEnabledEx
@@ -16,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1555703c92695090a3c8ac7b04e7a35dadcd7627
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0c35fc883e53e1b1cc430724d87d8bcbd1bb32ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989186"
 ---
 # <a name="cvisenabled-function"></a>Cvisenabled – funkce
-Určuje, zda má jakékoli relace povoleno zadaného zprostředkovatele trasování událostí pro Windows.  
+Určuje, zda všechny relace má povoleno zadaného zprostředkovatele trasování událostí pro Windows.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,13 +42,13 @@ HRESULT CvIsEnabledEx(
  Kategorie.  
   
  `level`  
- Úroveň význam.  
+ Úroveň důležitosti.  
   
  `pProvider`  
- Objekt platný zprostředkovatele. Nemůže mít hodnotu NULL.  
+ Objekt zprostředkovatele platné. Nemůže mít hodnotu NULL.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- S_OK, pokud zprostředkovatel je aktuálně povoleno. S_FALSE, pokud zprostředkovatel je aktuálně zakázáno. Kód chyby v případě, že byly všechny chyby. Zkontrolujte pro chybu a pak vyhledejte S_OK/S_FALSE pomocí makro se nezdařilo.  
+ S_OK, pokud zprostředkovatel je aktuálně povoleno. S_FALSE, pokud zprostředkovatel je momentálně zakázané. Kód chyby v případě, že došlo k chybám. Použijte makro se nezdařilo pro kontrolu chybovou podmínku a pak vyhledejte hodnotu S_OK/S_FALSE.  
   
 ## <a name="requirements"></a>Požadavky  
  **Záhlaví:** *cvmarkers.h*  

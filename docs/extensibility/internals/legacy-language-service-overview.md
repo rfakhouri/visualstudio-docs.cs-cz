@@ -1,9 +1,6 @@
 ---
-title: Přehled služby starší verze jazyka | Microsoft Docs
-ms.custom: ''
+title: Přehled služby starší verze jazyka | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
@@ -13,56 +10,56 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29d98bd0e474a503b84cb21a1bca25cb2836a433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989583"
 ---
 # <a name="legacy-language-service-overview"></a>Přehled služby starší verze jazyka
-Služba jazyka poskytuje podporu editor, který umožňuje implementovat určité [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkce. Třídy spravované Framework balíčku (MPF) jazyk služby poskytují plnou podporu pro často používané funkce a částečné podporu pro další funkce.  
+Služba jazyka podporuje editor, který umožňuje implementovat určité [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkce. Třídy služeb Managed Package Framework (MPF) jazyka poskytují úplnou podporu pro často používané funkce a částečně se podporuje další funkce.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Plně podporované funkce v MPF  
- Třídy sady MPF jazyk služeb podporují následující funkce:  
+ Třídy MPF language service podporují následující funkce:  
   
--   zvýraznění syntaxe  
+-   Zvýrazňování syntaxe  
   
 -   Sbalování  
   
 -   Při psaní komentářů bloky kódu  
   
--   Související závorky  
+-   Párování závorek  
   
 -   Fragmenty kódu  
   
 -   Vlastní vlastnosti dokumentu  
   
--   Informace o parametrech IntelliSense  
+-   Informace o parametrech technologie IntelliSense  
   
--   Informace o rychlé IntelliSense  
+-   Informace o parametru technologie IntelliSense  
   
--   Člen doplňování IntelliSense  
+-   Doplňování technologie IntelliSense člena  
   
--   Dokončení slova IntelliSense  
+-   Doplňování technologie IntelliSense aplikace word  
   
-## <a name="partially-supported-features-in-the-mpf"></a>Částečně podporovaných funkcích v MPF  
- Sady MPF poskytuje pouze částečný podporu pro následující funkce. To znamená, že musí implementovat metody, které jsou volány MPF.  
+## <a name="partially-supported-features-in-the-mpf"></a>Částečně podporované funkce v MPF  
+ MPF poskytuje jenom částečnou podporu pro následující funkce. To znamená, že je nutné implementovat metody, které jsou volány MPF.  
   
--   Přeformátování kód. Můžete zadat kód, který implementuje přeformátování.  
+-   Přeformátování kódu. Zadáte kód, který implementuje přeformátování.  
   
--   Ověřování zarážky určením platný kód zahrnuje. Můžete zadat kód, který identifikuje kódu rozpětí.  
+-   Ověřování zarážek určením platný kód zahrnuje. Zadáte kód, který identifikuje kódu rozpětí.  
   
--   Podpora ladicího programu **automobily** okno pro zobrazení proměnné. Můžete zadat kód, který určuje, co se zobrazí v okně.  
+-   Podpora ladicího programu **automatické hodnoty** okno pro zobrazení proměnné. Zadáte kód, který určuje, co se má zobrazit v okně.  
   
--   Podpora **navigační panel** rychlé navigace mezi typy a členy. Můžete implementovat a pomocná třída, která naplní seznamy v **navigační panel** pole se seznamem.  
+-   Podpora **navigační panel** pro rychlou navigaci mezi typy a členy. Implementace a vracet pomocnou třídu, která naplní seznamy v **navigační panel** polích se seznamem.  
   
 ## <a name="implementation"></a>Implementace  
- Je třeba provést několik kroky pro implementaci samotnou službu jazyka a jazykové funkce služby, které chcete zajistit podporu pro svůj jazyk. Tyto kroky jsou popsané v následujících tématech:  
+ Musíte dokončit několik kroků při implementaci samotnou službu jazyka a tato služba nabízí jazyka, které chcete zajistit podporu pro jazyk. Tyto kroky jsou popsány v následujících tématech:  
   
--   [Implementace služby jazyk starší verze](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+-   [Implementace služby starší verze jazyka](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
--   [Registrace služby jazyk starší verze](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+-   [Registrace služby starší verze jazyka](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
 -   [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
@@ -84,7 +81,7 @@ Služba jazyka poskytuje podporu editor, který umožňuje implementovat určit�
   
 -   [Dokončování členů ve službě starší verze jazyka](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
--   [Informace o parametrech ve službě jazyk starší verze](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+-   [Informace o parametrech ve službě starší verze jazyka](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
 -   [Rychlé informace ve službě starší verze jazyka](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
@@ -93,5 +90,5 @@ Služba jazyka poskytuje podporu editor, který umožňuje implementovat určit�
 -   [Ověřování zarážek ve službě starší verze jazyka](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Implementace služby jazyk starší verze](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+ [Implementace služby starší verze jazyka](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Rozšíření služeb starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md)

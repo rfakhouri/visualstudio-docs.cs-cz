@@ -1,9 +1,6 @@
 ---
 title: Funkce zpětného volání implementované integrovaným vývojovým prostředím | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c76a9ef3ab81cf764d5f82fdfb9c8d6a86f24bee
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3dd5196fae42079249f0632a065aacbf504938a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990776"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkce zpětného volání implementované integrovaným vývojovým prostředím
 Aby integrace s integrované vývojové prostředí (IDE) jako bezproblémové nejrychleji a poskytovat jednotné koncových uživatelů, modul plug-in správy zdrojového kódu můžete použít funkce zpětného volání implementované integrovaným vývojovým prostředím. Modul plug-in může volat tyto funkce ve vhodných chvílích při operaci správy zdrojových kódů k předávání informací do integrovaného vývojového prostředí; integrované vývojové prostředí můžete tyto informace zobrazit jako vložené prvky v jeho nativním uživatelským rozhraním. Uživatel má méně fragmentované prostředí v tomto scénáři než hodnotě modulu plug-in použijí své vlastní uživatelské rozhraní.  
@@ -43,19 +40,19 @@ Aby integrace s integrované vývojové prostředí (IDE) jako bezproblémové n
  Popisuje nastavení voláním funkce zpětného volání [sccsetoption –](../extensibility/sccsetoption-function.md) , která umožňuje komunikovat, název změny zpět do integrovaného vývojového prostředí modulu plug-in správy zdrojového kódu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Sccopenproject –](../extensibility/sccopenproject-function.md)  
+ [SccOpenProject](../extensibility/sccopenproject-function.md)  
  Otevře se projekt.  
   
- [Sccpopulatelist –](../extensibility/sccpopulatelist-function.md)  
+ [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
  Zkontroluje seznam souborů pro jejich aktuální stav. Kromě toho používá `pfnPopulate` funkce oznámit volajícímu, soubor neodpovídá kritériím pro `nCommand`.  
   
- [Sccpopulatedirlist –](../extensibility/sccpopulatedirlist-function.md)  
+ [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)  
  Zkontroluje seznam adresářů a souborů v projektu nebo v projektech, které jsou pod správou zdrojových kódů. Každý název adresáře a souboru nalezena je předán funkci zpětného volání.  
   
- [Sccquerychanges –](../extensibility/sccquerychanges-function.md)  
+ [SccQueryChanges](../extensibility/sccquerychanges-function.md)  
  Prozkoumá změn názvů, které byly provedeny seznam souborů. Každý název souboru je předán funkci zpětného volání společně s jeho změna stavu.  
   
- [Sccsetoption –](../extensibility/sccsetoption-function.md)  
+ [SccSetOption](../extensibility/sccsetoption-function.md)  
  Nastaví širokou škálu možností. Jednotlivé možnosti začíná `SCC_OPT_xxx` a má vlastní definované sady hodnot.  
   
  [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)  

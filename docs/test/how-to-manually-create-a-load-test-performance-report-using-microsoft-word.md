@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987638"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Postupy: ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Postupy: Ruční vytvoření sestavy výkonu zátěžového testu pomocí aplikace Microsoft Word
 
 Sestavy zátěžového testu aplikace Microsoft Word můžete vytvořit ručně zkopírováním a vložením dat ze souhrnného zobrazení výsledky zátěžového testu a zobrazení grafů. Při kopírování dat, která jsou uvedena v souhrnném zobrazení a zobrazení grafů, jsou tato data použita ve formátu HTML.
 
@@ -28,7 +27,7 @@ Sestavy zátěžového testu aplikace Microsoft Word můžete vytvořit ručně 
 > Můžete zkopírovat prostý text z tabulkového zobrazení a kopie obrazovek ze zobrazení podrobností o do aplikace Microsoft Word, ale není použit ve formátu HTML a bude vyžadovat další formátování a úpravy.
 
 > [!TIP]
-> Uspořádané sestavy aplikace Excel můžete také vygenerovat automaticky. Další informace najdete v tématu [postupy: vytvoření sestavy zátěžových testů výkonu pomocí pomocí aplikace Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> Uspořádané sestavy aplikace Excel můžete také vygenerovat automaticky. Další informace najdete v tématu [jak: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel pomocí](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Kopírování dat souhrnného zobrazení
 
@@ -46,7 +45,7 @@ Sestavy zátěžového testu aplikace Microsoft Word můžete vytvořit ručně 
 
 1.  V **výsledky zátěžového testu**, pokud se rozhodnou grafy zobrazení není zobrazen, **grafy** na panelu nástrojů.
 
-2.  (Volitelné) Přibližte konkrétní graf, který chcete zkopírovat do dokumentu Microsoft Wordu, jak je znázorněno na následujícím obrázku. Další informace najdete v tématu [postupy: přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2.  (Volitelné) Přibližte konkrétní graf, který chcete zkopírovat do dokumentu Microsoft Wordu, jak je znázorněno na následujícím obrázku. Další informace najdete v tématu [jak: Přiblížení oblasti grafu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Ovládací prvek lupy grafu zobrazit](../test/media/ltest_zoomcontrol.png)
 
@@ -60,4 +59,4 @@ Sestavy zátěžového testu aplikace Microsoft Word můžete vytvořit ručně 
 ## <a name="see-also"></a>Viz také:
 
 - [Sestava zátěžové testy s výsledky pro porovnávání testů a analýzu trendů](../test/compare-load-test-results.md)
-- [Postupy: vytvoření sestavy zátěžových testů výkonu pomocí aplikace Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)
+- [Postupy: Vytváření sestav výkonnosti pro zátěžový test pomocí aplikace Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

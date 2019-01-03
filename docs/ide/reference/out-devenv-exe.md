@@ -2,7 +2,6 @@
 title: -Out (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948241"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985638"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 Určuje soubor k uložení a zobrazení chyb při spuštění, sestavování, znovu sestavit nebo nasadit řešení.
@@ -39,7 +38,7 @@ devenv /out FileName
 ## <a name="arguments"></a>Arguments
  `FileName`
 
- Požadováno. Cesta a název souboru, který se zobrazí chyby při vytváření spustitelného souboru.
+ Povinný parametr. Cesta a název souboru, který se zobrazí chyby při vytváření spustitelného souboru.
 
 ## <a name="remarks"></a>Poznámky
  Pokud je zadaný název souboru, který neexistuje, vytvoří se soubor automaticky. Pokud soubor již existuje, výsledky jsou připojena k existující obsah souboru.

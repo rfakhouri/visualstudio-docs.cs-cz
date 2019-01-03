@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -35,12 +34,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e2917e6871004c9ceab7a37d79fbe9f3d9011afe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d7a4fe3eb8904877aa2ccdd5f2f2035884bfdb9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988492"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapování metod v zásobníku volání při ladění v sadě Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +54,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 - Kód, který lze ladit, jako je Visual C# .NET, Visual Basic .NET, C++, JavaScript nebo X ++
 
-  Přejděte na téma: [Video: vizuální ladění díky integraci ladicího programu mapy kódu (kanál 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [mapování zásobníku volání](#MapStack) • [Tvorba poznámek o kódu](#MakeNotes) • [aktualizace mapy s následujícím zásobníkem volání](#UpdateMap) • [přidání souvisejícího kódu do mapy](#AddRelatedCode) • [najít chyby pomocí mapy](#FindBugs) • [funkce Q & A](#QA)
+  Další informace: [Video: Vizuální ladění díky integraci ladicího programu mapy kódu (kanál 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [mapování zásobníku volání](#MapStack) • [Tvorba poznámek o kódu](#MakeNotes) • [aktualizace mapy s následujícím zásobníkem volání](#UpdateMap)• [Přidání souvisejícího kódu do mapy](#AddRelatedCode) • [najít chyby pomocí mapy](#FindBugs) • [funkce Q & A](#QA)
 
   Podrobnosti příkazů a akcí, které můžete použít při práci s mapami kódu najdete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -63,7 +62,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
 1.  Spusťte ladění. (Klávesnice: **F5**)
 
-2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **Ctrl** + **Shift** + **`**)
+2.  Až se vaše aplikace přejde do režimu přerušení nebo přejdete na funkci, zvolte **mapy kódu**. (Klávesnice: **CTRL** + **Shift** + **`**)
 
      ![Vyberte mapu kódu pro spuštění mapování zásobníku volání](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -136,7 +135,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
    Změna mapování kód nijak neovlivní. Nebojte se přejmenovat, přesunout nebo odebrat cokoli na mapě.
 
-- **Co tato zpráva znamená: "diagram může být založen na starší verzi kódu"?**
+- **Co tato zpráva znamená: "Diagram může být založen na starší verzi kódu"?**
 
    Po poslední aktualizaci mapy mohl být kód změněn. Například volání do mapy nemusí již v kódu existovat. Zavřete zprávu a potom zkuste znovu sestavit řešení před opětovnou aktualizací mapy.
 
@@ -168,7 +167,7 @@ Vytvořte mapu kódu pro vizuální sledování zásobníku volání během lad�
 
    ![Co znamenají ikony na mapě kódu zásobníku volání ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")
 
-  Přejděte na téma: [mapování zásobníku volání](#MapStack) • [Tvorba poznámek o kódu](#MakeNotes) • [aktualizace mapy s následujícím zásobníkem volání](#UpdateMap) • [přidání souvisejícího kódu do mapy](#AddRelatedCode) • [ Najít chyby pomocí mapy](#FindBugs)
+  Další informace: [Mapování zásobníku volání](#MapStack) • [Tvorba poznámek o kódu](#MakeNotes) • [aktualizace mapy s následujícím zásobníkem volání](#UpdateMap) • [přidání souvisejícího kódu do mapy](#AddRelatedCode) • [najít chyby pomocí mapy](#FindBugs)
 
 ## <a name="see-also"></a>Viz také
  [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md) [mapy kódu použít k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md) [najít potenciální problémy pomocí kódu mapování analyzátory](../modeling/find-potential-problems-using-code-map-analyzers.md) [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)

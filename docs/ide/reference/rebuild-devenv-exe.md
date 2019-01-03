@@ -2,7 +2,6 @@
 title: -Rebuild (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985680"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Čistí a poté sestaví Zadaná konfigurace řešení.
@@ -35,11 +34,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 ## <a name="arguments"></a>Arguments
  `SolnConfigName`
 
- Požadováno. Název konfigurace řešení, která se použije k opětovnému sestavení řešení s názvem v `SolutionName`.
+ Povinný parametr. Název konfigurace řešení, která se použije k opětovnému sestavení řešení s názvem v `SolutionName`.
 
  `SolutionName`
 
- Požadováno. Úplná cesta a název souboru řešení.
+ Povinný parametr. Úplná cesta a název souboru řešení.
 
  / Project `ProjName`
 

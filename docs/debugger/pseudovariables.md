@@ -1,8 +1,6 @@
 ---
-title: Pseudovariables | Microsoft Docs
-ms.custom: ''
+title: Pseudoproměnné | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,54 +17,54 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af106709ca578abeab19c4f474548476efbeea57
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4e7056c3535e05febfa8de2ddd57385fc73ec182
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988057"
 ---
-# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables v ladicím programu sady Visual Studio
-Pseudovariables jsou podmínky, které slouží k zobrazení určité informace v okně proměnná nebo **QuickWatch** dialogové okno. Můžete zadat pseudovariable stejným způsobem, zadali byste normální proměnné. Pseudovariables není proměnné, ale a nemusí odpovídat názvy proměnných v programu.  
+# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudoproměnné v ladicím programu sady Visual Studio
+Pseudoproměnné jsou podmínky, které slouží k zobrazení určitých informací v okně proměnné nebo **QuickWatch** dialogové okno. Pseudoproměnnou můžete zadat stejným způsobem, zadali byste jako běžné proměnné. Pseudoproměnné nejsou proměnné, ale a nemusí odpovídat názvům proměnných v programu.  
   
 ## <a name="example"></a>Příklad  
- Předpokládejme, že jsou psaní nativního kódu aplikace a chcete si prohlédnout počet popisovačů přidělené ve vaší aplikaci. V **sledovat** okně můžete zadat následující pseudovariable v **název** sloupec a poté stiskněte klávesu vrátit se k vyhodnocení:  
+ Předpokládejme, že píšete aplikaci v nativním kódu a chcete zjistit počet popisovačů přidělených v aplikaci. V **Watch** okna, můžete zadat následující pseudoproměnnou **název** sloupce, poté stiskem klávesy ENTER ji vyhodnotit:  
   
 `$handles`
   
- V nativním kódu můžete použít pseudovariables uvedené v této tabulce:  
+ V nativním kódu můžete použít pseudoproměnné uvedené v této tabulce:  
   
-|Pseudovariable|Funkce|  
+|Pseudoproměnnou|Funkce|  
 |--------------------|--------------|  
-|`$err`|Zobrazí poslední chybovou hodnotu nastavit pomocí funkce SetLastError. Hodnota, která se zobrazí představuje, co by měla vrátit GetLastError funkce.<br /><br /> Použití `$err,hr` zobrazíte dekódované formu tuto hodnotu. Pokud byla chyba poslední 3, například `$err,hr` by zobrazení `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|  
-|`$handles`|Zobrazí počet popisovačů přidělené ve vaší aplikaci.|  
+|`$err`|Zobrazí poslední chybovou hodnotu nastavenou pomocí funkce SetLastError. Zobrazená hodnota představuje, co by vrátila Funkce GetLastError.<br /><br /> Použití `$err,hr` Chcete-li zobrazit dekódovanou formu této hodnoty. Například, pokud byla poslední chyba 3 `$err,hr` zobrazí `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|  
+|`$handles`|Zobrazí počet popisovačů přidělených v aplikaci.|  
 |`$vframe`|Zobrazí adresu aktuální rámec zásobníku.|  
-|`$tid`|Zobrazí ID vlákna pro aktuální vlákno.|  
-|`$env`|Zobrazí blok prostředí v prohlížeči řetězec.|  
-|`$cmdline`|Zobrazí řetězec příkazového řádku, který spustí program.|  
-|`$pid`|Zobrazí id procesu.|  
-|`$` *registername*<br /><br /> or<br /><br /> `@` *registername*|Zobrazí obsah registru *registername*.<br /><br /> Za normálních okolností můžete zobrazit obsah registrace právě zadáním názvu registrace. Je třeba tuto syntaxi používají je pouze při registraci názvu přetížení název proměnné. Pokud název registrace je stejný jako název proměnné v aktuálním oboru, ladicího programu název interpretovat jako název proměnné. Když se `$` *registername* nebo `@` *registername* hodit.|  
-|`$clk`|Zobrazí čas v hodinových cyklů.|  
-|`$user`|Zobrazí struktura s informací o účtu pro účet spuštění aplikace. Z bezpečnostních důvodů se nezobrazí, informace o hesle.|  
-|`$exceptionstack`|Zobrazí trasování zásobníku aktuální výjimky prostředí Windows Runtime. `$ exceptionstack` funguje pouze v aplikacích pro UPW. `$ exceptionstack` není podporováno pro C++ a SEH výjimky|  
-|`$ReturnValue`|Zobrazí návratovou hodnotu metody rozhraní .NET Framework.|  
+|`$tid`|Zobrazí identifikátor ID vlákna pro aktuální vlákno.|  
+|`$env`|Zobrazí zadaný blok prostředí v prohlížeči řetězce.|  
+|`$cmdline`|Zobrazí řetězec příkazového řádku, který spustil program.|  
+|`$pid`|Zobrazuje id procesu.|  
+|`$` *registername –*<br /><br /> or<br /><br /> `@` *registername –*|Zobrazí obsah registru *registername –*.<br /><br /> Obsah registru za normálních okolností lze zobrazit pouze zadáním názvu registru. Je třeba použít tuto syntaxi se pouze když název registru přetíží název proměnné. Pokud název registru je stejný jako název proměnné v aktuálním oboru, ladicí program interpretuje název jako název proměnné. Právě to `$` *registername –* nebo `@` *registername –* se hodí.|  
+|`$clk`|Zobrazí čas v hodinových cyklech.|  
+|`$user`|Zobrazí se struktura s informacemi o účtu pro účet, který spouští aplikaci. Z bezpečnostních důvodů nejsou informace heslu zobrazeny.|  
+|`$exceptionstack`|Zobrazí trasování zásobníku aktuální výjimky prostředí Windows Runtime. `$ exceptionstack` funguje pouze v aplikacích pro UPW. `$ exceptionstack` není podporováno pro výjimky C++ a SEH|  
+|`$ReturnValue`|Zobrazuje hodnotu vrácenou metody rozhraní .NET Framework.|  
   
- V jazyce C# a Visual Basic můžete použít pseudovariables uvedené v této tabulce:  
+ V jazyce C# a Visual Basic můžete použít pseudoproměnné uvedené v této tabulce:  
   
-|Pseudovariable|Funkce|  
+|Pseudoproměnnou|Funkce|  
 |--------------------|--------------|  
-|`$exception`|Zobrazí informace o poslední výjimka. Pokud žádná výjimka došlo, vyhodnocení `$exception` zobrazí chybovou zprávu.<br /><br /> V jazyce Visual C#, pokud je zakázáno Pomocníka pro výjimky, `$exception` se automaticky přidá do **místní hodnoty –** okno, když dojde k výjimce.|  
-|`$user`|Zobrazí struktura s informací o účtu pro účet spuštění aplikace. Z bezpečnostních důvodů se nezobrazí, informace o hesle.|  
+|`$exception`|Zobrazí informace o poslední výjimce. Pokud k žádné výjimce, hodnocení `$exception` zobrazí chybovou zprávu.<br /><br /> V jazyce Visual C#, zakázán Pomocník pro výjimky, `$exception` se automaticky přidá do **lokální** okno, když dojde k výjimce.|  
+|`$user`|Zobrazí se struktura s informacemi o účtu pro účet, který spouští aplikaci. Z bezpečnostních důvodů nejsou informace heslu zobrazeny.|  
   
- V jazyce Visual Basic můžete použít pseudovariables uvedené v následující tabulce:  
+ V jazyce Visual Basic můžete použít pseudoproměnné uvedené v následující tabulce:  
   
-|Pseudovariable|Funkce|  
+|Pseudoproměnnou|Funkce|  
 |--------------------|--------------|  
-|`$delete` nebo `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **Immediate** okno. Syntaxe je `$delete,` *proměnná* nebo`$delete,` *proměnné*`.`|  
-|`$objectids` nebo `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené objekty, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|  
+|`$delete` Nebo `$$delete`|Odstraní implicitní proměnné, který byl vytvořen v **okamžité** okna. Syntaxe je `$delete,` *proměnnou* nebo`$delete,` *proměnné*`.`|  
+|`$objectids` Nebo `$listobjectids`|Zobrazí všechny aktivní ID objektů jako podřízené položky, z určeného výrazu. Syntaxe je `$objectid,` *výraz* nebo`$listobjectids,` *výraz*`.`|  
 |`$` *N* `#`|Zobrazí objekt s ID objektu rovna *N*.|  
-|`$dynamic`|Zobrazí speciální **dynamického zobrazení** uzel pro objekt, který implementuje `IDynamicMetaObjectProvider`. rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4.|  
+|`$dynamic`|Zobrazí zvláštní **dynamického zobrazení** uzlu pro objekt, který implementuje `IDynamicMetaObjectProvider`. rozhraní. Syntaxe je `$dynamic,` *objekt*. Tato funkce se vztahuje pouze na kód, který používá rozhraní .NET Framework verze 4.|  
   
 ## <a name="see-also"></a>Viz také  
- [Sledování a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)   
- [Okna proměnných](../debugger/debugger-windows.md)
+ [Kukátko a Rychlé kukátko Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Proměnné Windows](../debugger/debugger-windows.md)

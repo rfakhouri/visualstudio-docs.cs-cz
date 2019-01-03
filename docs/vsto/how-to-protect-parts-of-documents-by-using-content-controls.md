@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu'
-ms.custom: ''
+title: 'Postupy: Ochrana částí dokumentů pomocí ovládacích prvků obsahu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989254"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Postupy: ochrana částí dokumentů pomocí ovládacích prvků obsahu
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Postupy: Ochrana částí dokumentů pomocí ovládacích prvků obsahu
   Když chráníte část dokumentu, zabránit uživatelům v měnit nebo odstraňovat obsah v této části dokumentu. Existuje několik způsobů, jak může ochrana částí dokumentu aplikace Microsoft Office Word s použitím ovládacích prvků obsahu:  
   
 - Budete moci chránit obsah ovládacího prvku.  
@@ -40,7 +37,7 @@ ms.locfileid: "49850357"
 ##  <a name="EditDeleteControl"></a> Ochrana obsahu ovládacího prvku  
  Můžete zabránit uživatelům v úpravách nebo odstraňování ovládací prvek obsahu nastavením vlastností ovládacího prvku v projektu úrovni dokumentu v době návrhu nebo za běhu.  
   
- Můžete taky chránit ovládacích prvků obsahu, které přidáte do dokumentu za běhu pomocí projektu doplňku VSTO. Další informace najdete v tématu [postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+ Můžete taky chránit ovládacích prvků obsahu, které přidáte do dokumentu za běhu pomocí projektu doplňku VSTO. Další informace najdete v tématu [jak: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 ### <a name="to-protect-a-content-control-at-design-time"></a>K ochraně obsahu ovládacího prvku v době návrhu  
   
@@ -52,7 +49,7 @@ ms.locfileid: "49850357"
   
     -   Chcete-li uživatelům zabránit v odstranění ovládacího prvku, nastavte **LockContentControl** k **True**.  
   
-3.  Klikněte na tlačítko **OK**.  
+3.  Klikněte na **OK**.  
   
 ### <a name="to-protect-a-content-control-at-runtime"></a>K ochraně obsahu ovládacího prvku za běhu  
   
@@ -85,7 +82,7 @@ ms.locfileid: "49850357"
 2.  Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
     > [!NOTE]  
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 3.  V **ovládací prvky** klikněte na položku **skupiny** tlačítko rozevíracího seznamu a pak klikněte na tlačítko **skupiny**.  
   
@@ -112,4 +109,3 @@ ms.locfileid: "49850357"
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

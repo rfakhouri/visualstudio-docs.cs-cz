@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2de92d2b6083fd587dc38a67e189fa9ca24b660d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ea22577acc6c0a50c0f4639ebd6877890a8ce79d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991195"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Vzory běžných ovládacích prvků pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +52,7 @@ ms.locfileid: "53052142"
 
 -   **Dialogová okna Standard (nástroj):** není s motivem. Provést znovu – šablony. Použijte výchozí styl základního ovládacího prvku.
 
--   **Nástroje systému windows, editory dokumentu, návrhové ploše a dialogová okna s motivem:** použít specializované s motivem vzhled pomocí služby barvu.
+-   **Okna nástrojů, editory dokumentu, návrhové ploše a s motivem dialogová okna:** Použití specializované s motivem vzhled pomocí služby barvu.
 
 ###  <a name="BKMK_Scrollbars"></a> Posuvníky
  Postupujte podle posuvníky [běžné vzory interakcí pro posuvník Windows](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) pokud jejich rozšířená o informace o obsahu, jako například v editoru kódu.
@@ -73,13 +72,13 @@ ms.locfileid: "53052142"
 
 -   Povinné pole by měly mít  **\<vyžaduje >** jako vodoznaky v nich. Barva pozadí s výjimkou ve výjimečných případech byste neměli měnit.
 
--   Chyba ověřování: viz [oznámení a postup pro Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+-   Chyba ověřování: Zobrazit [oznámení a postup pro Visual Studio](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
 -   K zobrazení celého obsahu, ne na šířku okna, ve kterém jsou uvedeny ani libovolně odpovídala délce dlouhé pole, jako je například cesta by měla mít velikost vstupních polí. Délka mohlo by to znamenat uživateli omezení jde o tom, kolik znaky jsou povoleny v poli.
 
-     ![Šířku ovládacího prvku nesprávný vstupní pole](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **nesprávný vstupní pole délky: není pravděpodobné, že název bude takto dlouhé.**
+     ![Šířku ovládacího prvku nesprávný vstupní pole](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707 01_IncorrectInputFieldControl") **délka nesprávný vstupní pole: Není pravděpodobné, že název bude takto dlouhé.**
 
-     ![Opravte šířku ovládacího prvku vstupního pole](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **opravte vstupní délka pole: vstupní pole je rozumné šířku pro očekávaný obsah.**
+     ![Opravte šířku ovládacího prvku vstupního pole](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl") **opravte vstupní délka pole: Vstupní pole je rozumné šířku pro očekávaný obsah.**
 
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pole se seznamem a rozevírací seznamy
  Pro typické interakce chování, postupujte [Windows Desktop pokyny pro rozevírací seznamy a pole se seznamem](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx).
@@ -116,9 +115,9 @@ ms.locfileid: "53052142"
 
 -   Zarovnejte zaškrtávací políčka se standardními hodnotami první řádek textu.
 
-     ![Zarovnání nesprávné zaškrtávací políčko](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **nesprávné zaškrtávací políčko zarovnání: zaškrtávací políčko, které jsou zaměřeny na text.**
+     ![Nesprávný zaškrtávací políčko zarovnání](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707 05_IncorrectCheckBoxAlign") **nesprávné zaškrtávací políčko zarovnání: Zaškrtávací políčko se jedná o text.**
 
-     ![Opravte zaškrtávací políčko zarovnání](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **opravte zaškrtávací políčko zarovnání: zaškrtávací políčko je v souladu s účaří prvního řádku textu.**
+     ![Opravte zaškrtávací políčko zarovnání](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign") **opravte zaškrtávací políčko zarovnání: Zaškrtávací políčko je v souladu s účaří prvního řádku textu.**
 
 ###  <a name="BKMK_RadioButtons"></a> Přepínací tlačítka
  Chování typické interakce, postupujte [pokyny pro Windows Desktop pro přepínací tlačítka](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
@@ -425,24 +424,24 @@ ms.locfileid: "53052142"
 ##### <a name="tree-view-control"></a>Ovládací prvek stromového zobrazení
  Visual Studio ovládacích prvků strom postupujte podle běžných navigaci pomocí klávesnice:
 
--   **Šipka nahoru:** vybrat položky přesunutím směrem nahoru
+-   **Šipka: nahoru** Vyberte položky, které přesunutím směrem nahoru
 
--   **Šipky dolů:** vybrat položky přesunete dolů stromu
+-   **Šipku:** Vyberte položky, které přesunete dolů stromu
 
--   **Šipka doprava:** rozbalte uzel ve stromu
+-   **Šipka vpravo:** Rozbalte uzel ve stromu
 
--   **Šipka doleva:** Sbalit uzel ve stromu
+-   **Šipka vlevo:** Sbalit uzel ve stromu
 
--   **Zadejte klíč:** iniciovat, načíst, spustit vybranou položku
+-   **Zadejte klíč:** Zahájit, načtení a spustit vybranou položku
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (stromové zobrazení a zobrazení mřížky)
  Trid ovládacího prvku je komplexní ovládací prvek obsahující stromové zobrazení v mřížce. Rozšíření, sbalování a procházení stromu by měly dodržovat stejné klávesových příkazů jako stromové zobrazení, s těmito přídavky:
 
-- **Šipka doprava:** rozbalte uzel. Po rozbalení uzlu pokračováním, že přejdete na nejbližší sloupec na pravé straně. Na konci řádku, který by se měla zastavit navigace.
+- **Šipka vpravo:** Rozbalte uzel. Po rozbalení uzlu pokračováním, že přejdete na nejbližší sloupec na pravé straně. Na konci řádku, který by se měla zastavit navigace.
 
-- **Karta:** Navigates na nejbližší buňku na pravé straně.  Na konci řádku navigace pokračuje na další řádek.
+- **Karta:** Přejde na nejbližší buňku na pravé straně.  Na konci řádku navigace pokračuje na další řádek.
 
-- **Shift + Tab:** Navigates na nejbližší buňku na levé straně.  Na začátku řádku, bude nadále navigace buňku vpravo na předchozím řádku.
+- **Shift + Tab:** Přejde na nejbližší buňku na levé straně.  Na začátku řádku, bude nadále navigace buňku vpravo na předchozím řádku.
 
   ![Trid ovládací prvek v sadě Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")
 

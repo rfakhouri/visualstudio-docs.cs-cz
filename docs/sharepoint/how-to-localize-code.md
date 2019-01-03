@@ -1,13 +1,8 @@
 ---
-title: 'Postupy: lokalizace kódu | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Lokalizace kódu | Dokumentace Microsoftu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,64 +13,63 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d170906a66ffaaa0e73d4d7d236c8f41290abe55
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f45ef99210ccf5e6caa22e4aef6ba303aa6a6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990789"
 ---
-# <a name="how-to-localize-code"></a>Postupy: lokalizace kódu
-  Nelokalizované kód používá pevně zakódovaný řetězcové hodnoty. Na kód řetězce pro lokalizaci, je nahradit volání <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, což je metoda, která odkazuje na lokalizované prostředky.  
+# <a name="how-to-localize-code"></a>Postupy: Lokalizace kódu
+  Nelokalizovaný kód používá pevně zakódované řetězcové hodnoty. Chcete-li lokalizovat řetězce kódu, nahraďte je voláními do <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, což je metoda, která odkazuje na lokalizované prostředky.  
   
 ## <a name="localize-code"></a>Lokalizace kódu  
   
-#### <a name="to-localize-code"></a>Chcete-li lokalizace kódu  
+#### <a name="to-localize-code"></a>Chcete-li lokalizovat kód  
   
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro položku projektu a potom zvolte **přidat** > **modulu**.  
+1.  V **Průzkumníka řešení**, otevřete místní nabídku pro položku projektu a klikněte na tlačítko **přidat** > **modulu**.  
   
-     Vyberte **souboru prostředků** šablony.  
+     Zvolte **soubor prostředků** šablony.  
   
     > [!NOTE]  
-    >  Ujistěte se, že soubor prostředků přidat do položky projektu služby SharePoint, aby vlastnost typ nasazení k dispozici. Tato vlastnost se vyžaduje později v tomto postupu.  
+    >  Nezapomeňte přidat soubor prostředků do položky projektu SharePoint tak, aby vlastnost typ nasazení je k dispozici. Tato vlastnost je vyžadováno později v tomto postupu.  
   
-2.  Zadejte název zvoleného s příponou souboru prostředků jazyka výchozí *RESX* rozšíření, jako například *MyAppResources.resx*.  
+2.  Pojmenujte soubor prostředků výchozího jazyka jméno dle vašeho výběru s *RESX* rozšíření, jako například *MyAppResources.resx*.  
   
-3.  Opakujte kroky 1 a 2, pokud chcete přidat soubory samostatné prostředků do položky projektu služby SharePoint: jeden pro každou lokalizované jazyk.  
+3.  Opakujte kroky 1 a 2 pro přidání souborů prostředků do položky projektu služby SharePoint: jeden pro každý lokalizovaný jazyk.  
   
-     Použijte stejný základní název pro každý soubor lokalizovaný prostředek, ale přidat ID jazykovou verzi. Například název němčina lokalizované prostředků *MyAppResources.de DE.resx*.  
+     Použijte stejný základní název pro každý lokalizovaný soubor prostředků, ale přidejte identifikátor jazykové verze. Například pojmenujte německý lokalizovaný prostředek *MyAppResources.de-DE.resx*.  
   
-4.  Otevřete soubor každý prostředek a přidejte lokalizované řetězce. Použijte stejný řetězec ID do každého souboru.  
+4.  Otevřete každý soubor prostředků a přidejte lokalizované řetězce. V každém souboru použijte stejná ID řetězce.  
   
-5.  Změňte hodnotu **typ nasazení** vlastnost souborů prostředků se **AppGlobalResource** způsobí každý soubor pro nasazení do složky App_GlobalResources serveru.  
+5.  Změňte hodnotu **typ nasazení** vlastnosti každého souboru prostředků na **AppGlobalResource** pro každý soubor pro nasazení do složky App_GlobalResources serveru.  
   
-6.  Ponechte hodnotu **akce sestavení** vlastnosti každého souboru jako **vložený prostředek**.  
+6.  Ponechte hodnotu **akce sestavení** jednotlivých souborů jako **integrovaný prostředek**.  
   
-     Vložené prostředky jsou zkompilovány do projektu knihovny DLL.  
+     Vložené prostředky jsou kompilovány do projektu knihovny DLL.  
   
-7.  Sestavte projekt a vytvořte prostředek satelitní knihovny DLL.  
+7.  Vytvoření projektu pro vytvoření prostředku satelitní knihovny DLL.  
   
-8.  V **návrháře balíčků**, vyberte **Upřesnit** a pak přidejte satelitní sestavení.  
+8.  V **návrháři balíčku**, zvolte **Upřesnit** kartu a pak přidejte satelitní sestavení.  
   
-9. V **umístění** pole, předřazení ID složku jazykovou verzi pro cestu k umístění, jako například *de-DE\\\<název položky projektu >. resources.dll*.  
+9. V **umístění** pole, předřaďte proveďte předřazení složky ID pro cestu k umístění, jako například *de-DE\\\<název položky projektu >. resources.dll*.  
   
-10. Pokud vaše řešení neodkazuje již System.Web sestavení, přidejte odkaz na jeho a přidejte direktivu ve svém kódu pro <xref:System.Web>.  
+10. Pokud vaše řešení již neobsahuje odkaz na sestavení System.Web, přidejte na ni odkaz a přidejte direktivu ve vašem kódu k <xref:System.Web>.  
   
-11. Vyhledejte všechny řetězce pevně zakódovaná ve vašem kódu, které jsou viditelné pro uživatele, například textu uživatelského rozhraní, chyb a text zprávy. Nahraďte volání <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metoda pomocí následující syntaxe:  
+11. Vyhledejte všechny pevně zakódované řetězce v kódu, které jsou viditelné pro uživatele, jako je text zprávy, chyby a text uživatelského rozhraní. Nahraďte volání <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> metodu pomocí následující syntaxe:  
   
     ```csharp  
     HttpContext.GetGlobalResourceObject("Resource File Name", "String ID")  
     ```  
   
-12. Vyberte **F5** klíč sestavení a spuštění aplikace.  
+12. Zvolte **F5** klíče pro sestavení a spuštění aplikace.  
   
-13. Ve službě SharePoint změňte z výchozí jazyk zobrazení.  
+13. Ve službě SharePoint změňte jazyk zobrazení z výchozího.  
   
-     Lokalizované řetězce se zobrazí v aplikaci. Pokud chcete zobrazit lokalizované prostředky, musí mít serveru SharePoint jazyková sada nainstalovaná odpovídající jazykové verze souboru prostředků.  
+     Lokalizované řetězce jsou zobrazeny v aplikaci. Chcete-li zobrazit lokalizované prostředky, musí mít SharePoint server nainstalovanou jazykovou sadu odpovídající jazykové verzi souboru prostředků.  
   
 ## <a name="see-also"></a>Viz také:
  [Lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
- [Postupy: lokalizace funkce](../sharepoint/how-to-localize-a-feature.md)   
- [Postupy: lokalizace značek ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Postupy: Přidání zdrojového souboru](../sharepoint/how-to-add-a-resource-file.md)  
-
+ [Postupy: Lokalizace funkce](../sharepoint/how-to-localize-a-feature.md)   
+ [Postupy: Lokalizace značek ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
+ [Postupy: Přidejte soubor prostředků](../sharepoint/how-to-add-a-resource-file.md)  

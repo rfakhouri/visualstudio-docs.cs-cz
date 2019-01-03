@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: hledání procesu v zobrazení procesů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Hledání procesu v zobrazení procesů | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988751"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>Postupy: Hledání procesu v zobrazení procesů
+# <a name="how-to-search-for-a-process-in-processes-view"></a>Postupy: Hledání procesu v zobrazení procesů
 Můžete vyhledat konkrétního procesu v zobrazení procesů pomocí jeho ID nebo modul řetězec proces jako kritéria hledání. Můžete také zadat počáteční směr hledání. Pole v dialogovém okně se zobrazí atributy vybraný proces strom procesu.  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Hledání procesu v zobrazení procesů  
@@ -40,6 +38,6 @@ Můžete vyhledat konkrétního procesu v zobrazení procesů pomocí jeho ID ne
   
 5. Zvolte **nahoru** nebo **dolů** pro počáteční směr hledání.  
   
-6. Klikněte na tlačítko **OK**.  
+6. Klikněte na **OK**.  
   
    Pokud je nalezen odpovídající proces, je zvýrazněn **zobrazení procesů** okna.

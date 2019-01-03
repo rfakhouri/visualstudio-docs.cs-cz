@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Krok 3 průvodce základní funkce Pythonu v sadě Visual Studio, pokrývající okno REPL interaktivní Python.
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,16 +12,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986827"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní okno REPL
 
-**Předchozí krok: [psání a spouštění kódu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Předchozí krok: [Psání a spouštění kódu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 Visual Studio **interaktivní** okna pro jazyk Python poskytuje bohaté čtení vyhodnocení print-loop (REPL) prostředí, který výrazně zkracuje obvykle cyklem editovat sestavit ladit. **Interaktivní** okno nabízí všechny funkce prostředí REPL pro Python příkazového řádku. Také umožňuje velmi snadno vyměňovat kódu s zdrojové soubory v sadě Visual Studio editor, který je jinak náročné s příkazovým řádkem.
 

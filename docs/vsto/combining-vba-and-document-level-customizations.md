@@ -1,9 +1,6 @@
 ---
 title: Kombinování přizpůsobení na úrovni dokumentu a VBA
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987885"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovni dokumentu a VBA
   Používat Visual Basic for Applications (VBA) kódu v dokumentu, který je součástí přizpůsobení úrovni dokumentu pro aplikaci Microsoft Office Word nebo Microsoft Office Excel. Můžete volat kód VBA v dokumentu z vlastního nastavení sestavení nebo projektu, aby umožňoval kód VBA v dokumentu k volání kódu v sestavení přizpůsobení můžete nakonfigurovat.  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Řešení VBA a Office v sadě Visual Studio porovnání](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  
-  
-  

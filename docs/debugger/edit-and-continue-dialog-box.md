@@ -1,8 +1,6 @@
 ---
 title: Upravit a pokračovat – dialogové okno | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.welcome
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3ebec5936249e0d4e9764438060c13411cec8a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985917"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Dialogové okno Upravit a pokračovat
 (Pouze nativní) Toto dialogové okno se zobrazí, když se po úpravě kódu během ladění a **upravit a pokračovat** rozpozná, že můžete použít změny kódu. Další informace najdete v tématu [upravit a pokračovat](../debugger/edit-and-continue.md).  

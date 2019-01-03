@@ -1,8 +1,6 @@
 ---
-title: Dialogové okno vizualizér datasetu | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno vizualizér datasetu | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985300"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dialogové okno Vizualizér DataSetu
-Vizualizér datasetu umožňuje zobrazit obsah datovou sadu, DataTable, DataView nebo DataViewManager objektu. Kliknutím na ikonu lupy, který se zobrazí vedle hodnotu pro jeden z těchto objektů v okně proměnné ladicí program nebo v datového tipu dostanete tento vizualizér.  
+Vizualizér datasetu vám umožní zobrazit obsah objektu datové sady, datové tabulky, zobrazení dat nebo objekt DataViewManager. Tento vizualizér se zpřístupní po kliknutí na ikonu lupy, které se zobrazí vedle hodnoty pro jeden z těchto objektů v okně ladicího programu proměnné nebo v datovém tipu.  
   
- K objektům v této vizualizér vám provádět změny. Změny budou uloženy, jakmile potvrdíte řádek.  
+ Objekty v tento vizualizér můžou měnit. Změny se uloží, poté, co jste se zavázali řádek.  
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  Tabulka  
- Pomocí tohoto rozevíracího seznamu vyberte tabulku v rámci sady dat, která chcete k vizualizaci.  
+ Pomocí tohoto rozevíracího seznamu vyberte tabulku v datové sadě, kterou chcete vizualizovat.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
- [Vytvořit vlastní Vizualizérech](../debugger/create-custom-visualizers-of-data.md)   
- [Ladicího programu](../debugger/debugger-windows.md)   
+ [Vytváření vlastních Vizualizérů](../debugger/create-custom-visualizers-of-data.md)   
+ [Ladicí program Windows](../debugger/debugger-windows.md)   
  [Zobrazení hodnot dat v datových tipech](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

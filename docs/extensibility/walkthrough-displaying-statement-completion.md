@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Zobrazení dokončování příkazů | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Zobrazení dokončování příkazů | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986632"
 ---
-# <a name="walkthrough-display-statement-completion"></a>Návod: Zobrazení dokončování příkazů
+# <a name="walkthrough-display-statement-completion"></a>Průvodce: Zobrazení dokončování příkazů
 Doplňování výrazů založený na jazyce lze implementovat definováním identifikátory, pro které chcete poskytnout dokončení a potom aktivuje relace dokončení. Můžete definovat dokončování příkazů v rámci služby jazyka, definovat vlastní příponu názvu souboru a typu obsahu a pak zobrazí dokončení právě daného typu. Nebo můžete aktivovat dokončování pro existující typ obsahu, například "ve formátu prostého textu". Tento návod ukazuje, jak aktivovat doplňování výrazů pro typ obsahu "jako prostý text", což je typ obsahu textových souborů. Typ obsahu "text" je nadřazeného člena pro všechny ostatní typy obsahu, včetně kódu a soubory XML.  
   
  Dokončení příkazu se obvykle aktivuje po zadání určitých znaků, třeba tak, že zadáte počáteční identifikátor jako "pomocí". Obvykle se zavře stisknutím klávesy **MEZERNÍK**, **kartu**, nebo **Enter** klíč potvrďte výběr. Můžete implementovat funkce technologie IntelliSense, které aktivují při psaní znak pomocí obslužná rutina příkazu stisknutí kláves ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní) a zprostředkovatele obslužná rutina, která implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> rozhraní. Chcete-li vytvořit zdroj dokončení, což je seznam identifikátorů, které jsou součástí dokončení, implementovat <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> rozhraní a Zprostředkovatel zdroje dokončení ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> rozhraní). Poskytovatelé jsou součástí Managed Extensibility Framework (MEF). Odpovídají třídy zdroje a kontroler exportu a importu služby a můžou být zprostředkovatelé – například <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, která umožňuje navigaci ve vyrovnávací paměti textu a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, která aktivuje relace dokončení.  
@@ -205,4 +202,4 @@ Doplňování výrazů založený na jazyce lze implementovat definováním iden
 4.  Při psaní nejprve "a" a potom "d", by se zobrazit seznam, který obsahuje "Přidání" a "úpravy". Všimněte si, že je vybraná sčítání. Pokud zadáte jiný "d", v seznamu by měla obsahovat pouze "Přidání", který je teď vybrán. Můžete potvrdit "Přidání" stisknutím klávesy **MEZERNÍK**, **kartu**, nebo **Enter** klíče, nebo zavřete seznam tak, že zadáte Esc ani jiného klíče.  
   
 ## <a name="see-also"></a>Viz také:  
- [Návod: Propojení typ obsahu, který má příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Typ obsahu propojit příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

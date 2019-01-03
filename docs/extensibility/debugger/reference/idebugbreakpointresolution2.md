@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointResolution2 | Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointResolution2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointResolution2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79ffdc3af15a9b18ca022e4234b4e6d97742387
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a67fe4d63fc135f19ed8aed6c45f3d753166320
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991029"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
-Toto rozhraní představuje informace, které popisují vázané breakpoint.  
+Toto rozhraní reprezentuje informace popisující vázaná zarážka.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,25 +29,25 @@ IDebugBreakpointResolution2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Modul ladění (DE) implementuje toto rozhraní jako součást své podpory zarážky. Toto rozhraní obsahuje popis vázané Breakpoint – používající správce relace ladění při jeho zobrazení zarážek vlastnosti.  
+ Ladicí stroj (DE) implementuje toto rozhraní jako součást jeho podporu pro zarážky. Toto rozhraní poskytuje popis vázaná zarážka, která používá správce ladění relace, když uživatel na zarážku vlastnosti.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Volání [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md) vrátí toto rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugBreakpointResolution2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugBreakpointResolution2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Získá druh breakpoint reprezentována toto řešení.|  
-|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Získá informace o řešení zarážek, která popisuje tuto zarážek.|  
+|[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|Získá typ zarážky reprezentována toto řešení.|  
+|[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|Získá informace o řešení zarážek, popisující tuto zarážku.|  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)

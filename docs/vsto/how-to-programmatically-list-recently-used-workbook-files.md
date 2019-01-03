@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: vytváření seznamů naposledy použitých souborů sešitů'
-ms.custom: ''
+title: 'Postupy: Vytváření seznamů naposledy použitých souborů sešitů'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,19 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989615"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Postupy: vytváření seznamů naposledy použitých souborů sešitů
-  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Vlastnost vrací kolekci, která obsahuje názvy všech souborů, které se zobrazují v aplikaci Microsoft Office Excel seznam naposledy použitých souborů. Délka seznamu se liší v závislosti na počtu souborů, které uživatel vybral Pokud chcete zachovat. Můžete zobrazit výsledky v rozsahu.  
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Postupy: Vytváření seznamů naposledy použitých souborů sešitů
+  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> Vlastnost vrací kolekci, která obsahuje názvy všech souborů, které se zobrazí v seznamu naposledy použitých souborů Microsoft Office Excel. Délka seznamu se liší v závislosti na počtu souborů, které uživatel vybral Pokud chcete zachovat. Zobrazit výsledky v rozsahu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Do sešitů seznamu nedávno použité v rozsahu objektu  
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>Do seznamu naposledy použitých sešitů v rozsahu objektu  
   
 1.  Projděte seznam naposledy použitých souborů a zobrazit názvy v buňkách vzhledem k <xref:Microsoft.Office.Interop.Excel.Range> objektu.  
   
@@ -39,7 +36,5 @@ ms.locfileid: "35257586"
   
 ## <a name="see-also"></a>Viz také:  
  [Práce se sešity](../vsto/working-with-workbooks.md)   
- [NamedRange – ovládací prvek](../vsto/namedrange-control.md)   
+ [Namedrange – ovládací prvek](../vsto/namedrange-control.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

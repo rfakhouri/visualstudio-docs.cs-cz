@@ -1,8 +1,6 @@
 ---
 title: Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd) | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986840"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd)
 Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*CVCollectionCmd.exe*) Chcete-li shromažďovat trasování z příkazového řádku, takže můžete je zobrazit v Concurrency Visualizer pro sadu Visual Studio. Nástroje lze použít na počítačích, které nemají nainstalovanou sadu Visual Studio.  
@@ -42,7 +40,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 
 |Možnost|Popis|Parametry|Vrácené hodnoty|  
 |------------|-----------------|----------------|-------------------|  
-|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádné|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](/dotnet/framework/wcf/samples/etw-tracing) relace je již povolen.|  
+|Dotazy|Vrátí, zda shromažďování lze spustit.|Žádná|0, pokud kolekce je připraven ke spuštění.<br /><br /> 1, pokud kolekce je již spuštěna.<br /><br /> 2, pokud kolekce není v průběhu, ale jeden nebo více požadovaných [trasování událostí pro Windows](/dotnet/framework/wcf/samples/etw-tracing) relace je již povolen.|  
 |Spuštění|Spustí zadaný procesu v rámci Vizualizátor souběžnosti.|Cesta ke spustitelnému souboru.|0, pokud spuštění úspěšné.<br /><br /> 1, pokud spuštění selhalo, protože nebylo možné spustit cílovou aplikaci.<br /><br /> 13, pokud spuštění selhalo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře.|  
 |Připojit|Začne sběr trasování celého systému; v opačném případě připojí k procesu, pokud je zadaná.|Žádné|0, pokud byla úspěšná přílohy.<br /><br /> 1 pro přílohy se nezdařilo, protože určený proces je neplatný nebo nejednoznačný.<br /><br /> 13 Pokud přílohy se nezdařilo, protože CVCollectionCmd nemá dostatečná oprávnění k zápisu do zadaného výstupního adresáře:.|  
 |Odpojit|Zastaví shromažďování.|Žádné|0, pokud bylo úspěšné odpojení.<br /><br /> 1 pro odpojení se nezdařilo, protože kolekce není právě probíhá.<br /><br /> 2, pokud odpojení se nezdařilo, protože kolekce se nepovedlo zastavit.|  
@@ -75,7 +73,7 @@ Můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (*C
 | Značky | Obsahuje seznam zprostředkovatelů značky. | Může obsahovat nula nebo více prvků MarkerProvider. |
 | MarkerProvider | Určuje zprostředkovatele jednu značku. | Musí obsahovat tyto prvky:<br /><br /> -Úroveň<br />-IDENTIFIKÁTOR GUID<br />– Název<br /><br /> Může obsahovat tyto prvky:<br /><br /> -Kategorie<br />-IsEnabled |
 | úroveň | Nastaví úroveň důležitosti MarkerProvider. | – Nízká<br />-Normální<br />– Vysoká<br />– Kritické<br />-Vše |
-| identifikátor GUID | Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek. | IDENTIFIKÁTOR GUID. |
+| Guid | Globálně jedinečný identifikátor poskytovatele trasování událostí pro Windows značek. | IDENTIFIKÁTOR GUID. |
 | Název | Určuje popis poskytovatele značek. | Řetězec. |
 | Kategorie | Určuje kategorie shromážděných pro poskytovatele značek. | Řetězec oddělených čárkou čísla nebo rozsahy čísel. |
 | hodnotu isEnabled | Nastaví hodnotu, která určuje, zda je povoleno poskytovatele značek pro kolekci. | -True<br />-False |

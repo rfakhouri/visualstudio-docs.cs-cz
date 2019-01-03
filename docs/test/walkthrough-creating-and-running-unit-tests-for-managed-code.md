@@ -2,7 +2,6 @@
 title: Vytváření a spouštění testů jednotek pro spravovaný kód
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -15,14 +14,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989173"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testů jednotek pro spravovaný kód
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Průvodce: Vytváření a spouštění testů jednotek pro spravovaný kód
 
 Tento článek vás provede vytvořením, spuštěný, a přizpůsobením série jednotky testů pomocí rozhraní pro testování jednotek Microsoft pro spravovaný kód a Visual Studio **Průzkumníka testů**. Spustit u projektu C#, která je ve vývoji, vytvoříte testy, které testují jeho kód, spusťte testy a podívejte se na výsledky. Můžete změnit kód projektu a znovu spusťte testy.
 
@@ -41,7 +40,7 @@ Informace o tom, ke spuštění testů z příkazového řádku najdete v témat
 
 2. Na **souboru** nabídce vyberte možnost **nový** > **projektu**.
 
-   **Nový projekt** zobrazí se dialogové okno.
+   Zobrazí se dialogové okno **Nový projekt**.
 
 3. V části **nainstalované šablony**, klikněte na tlačítko **Visual C#**.
 

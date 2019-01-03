@@ -3,7 +3,6 @@ title: Odkaz na okno prostředí Pythonu
 description: Informace o jednotlivých karet, které se zobrazí v okně prostředí Pythonu v sadě Visual Studio.
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 076deaaa326f1e19b14670a91e988dc8eebef450
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989565"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na kartách okno prostředí Pythonu
 
@@ -103,7 +102,7 @@ Při instalaci balíčků do prostředí, ve kterém se nachází v chráněné 
 
 ![Výzvy ke zvýšení oprávnění pro instalaci balíčku](media/environments-pip-elevate.png)
 
-**Zvýšit** uděluje oprávnění správce k nástroje pip pro jednu operaci, předmět taky pro libovolný operační systém zobrazí výzvu k zadání oprávnění. Výběr **pokračovat bez oprávnění správce** pokusí nainstalovat, ale pip nezdaří při pokusu o vytvoření složky s výstupem, jako **Chyba: nepovedlo se vytvořit "C:\Program Files\Anaconda3\Lib\ Web-packages\png.py': přístup byl odepřen.**
+**Zvýšit** uděluje oprávnění správce k nástroje pip pro jednu operaci, předmět taky pro libovolný operační systém zobrazí výzvu k zadání oprávnění. Výběr **pokračovat bez oprávnění správce** pokusí nainstalovat, ale pip nezdaří při pokusu o vytvoření složky s výstupem, jako **Chyba: nepovedlo se vytvořit "C:\Program Files\Anaconda3\Lib\ Web-packages\png.py ": Oprávnění byla odepřena.**
 
 Výběr **vždy zvýšit při instalaci nebo odebrání balíčků** brání dialogového okna v zobrazení pro prostředí. Chcete-li se znovu zobrazí dialogové okno, přejděte na **nástroje** > **možnosti** > **nástroje Python Tools** > **Obecné** a klikněte na tlačítko **resetovat všechna trvale skrytá dialogová okna**.
 

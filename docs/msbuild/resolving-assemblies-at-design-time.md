@@ -1,8 +1,6 @@
 ---
 title: Překlad sestavení v době návrhu | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad24bcf461dab05444f0e26ffd4e0c826f3f2bed
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7e8f2bc946df5a84b85fc64f513d35c94c98b152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986064"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Přeložit sestavení v době návrhu
 Když přidáte odkaz na sestavení pomocí **.NET** karty **přidat odkaz** dialogové okno, odkaz odkazuje na zprostředkující referenční sestavení, což znamená, sestavení, která obsahuje všechny typ a informace o podpisu, ale nutně neobsahuje žádný kód. **.NET** karta obsahuje referenční sestavení, které odpovídají sestavením modulu runtime v rozhraní .NET Framework. Kromě toho obsahují referenční sestavení, které odpovídají sestavením modulu runtime v registrovaných složkách AssemblyFoldersEx, které jsou používány třetími stranami.  

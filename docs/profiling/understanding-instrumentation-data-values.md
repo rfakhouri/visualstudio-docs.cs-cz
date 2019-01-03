@@ -1,8 +1,6 @@
 ---
-title: Porozumění hodnotám dat instrumentace | Microsoft Docs
-ms.custom: ''
+title: Porozumění hodnotám dat instrumentace | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation
@@ -12,92 +10,92 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 10353dabf0ae0e0bbee726c2f816a04c2af99f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991094"
 ---
-# <a name="understand-instrumentation-data-values"></a>Pochopení hodnotám dat instrumentace
+# <a name="understand-instrumentation-data-values"></a>Vysvětlení hodnotám dat instrumentace
 
-*Instrumentace* metoda záznamy v sadě Visual Studio profilace podrobné informace o časování pro volání funkcí, řádky a pokyny v PROFILOVANÉHO aplikaci
+*Instrumentace* metoda sady Visual Studio záznamů profilace podrobné informace o časování pro volání funkce, řádky a podle pokynů v profilované aplikace
 
-Metoda instrumentace vloží kód na začátku a konci funkce cíl v PROFILOVANÉHO binárního souboru a před a po každém volání pomocí těchto funkcí dalších funkcí. Vložený kód zaznamenává následující informace:
+Metoda instrumentace vkládá kód na začátek a konec cílového funkcí v profilované binární soubor a před a po každé volání těmito funkcemi dalších funkcí. Vložený kód zaznamenává následující informace:
 
-- Interval mezi tato událost kolekce a předchozí.
+- Interval mezi předchozí a tato událost kolekce.
 
-- Operační systém, zda byla provedena operace během intervalu. Například může operační systém pro čtení nebo zápisu na disk nebo přepínač mezi vlákno cíl a jiné vlákno v jiném procesu.
+- Určuje, zda operační systém byla provedena operace během intervalu. Například operačního systému může číst nebo zapsat na disk nebo přepínače mezi cílovým vláknem a jiné vlákno v jiném procesu.
 
-V každém intervalu rekonstruuje analysis profileru zásobníku volání, který se nachází na konci tohoto intervalu. Zásobník volání je seznam funkcí, které jsou aktivní procesoru v bodě v čase. Jenom jednu funkci (funkci current) je provádění kódu; dalších funkcí jsou řetěz volání funkce, která je výsledkem volání funkce aktuální (zásobníku volání).
+V každém intervalu rekonstruuje analýzy profiler zásobníku volání, která byla k dispozici na konci interval. Zásobník volání je seznam funkcí, které jsou aktivní na procesoru v bodě v čase. Jenom jednu funkci (aktuální funkci) spouští kód; ostatní funkce jsou řetěz volání funkce, jejichž výsledkem volání na aktuální funkci (zásobník volání).
 
-Pro jednotlivé funkce v zásobníku volání během intervalu zaznamenávání, analýzy profileru přidá intervalu k jedné nebo více hodnot čtyři dat pro funkci. Analýza přidá interval datové hodnoty pro funkci na základě dvou kritérií:
+Pro každou funkci v zásobníku volání během intervalu zaznamenávání, profiler analýzy přidá interval do jedné nebo více hodnot čtyři dat pro funkci. Analýza přidá interval na hodnotu data pro funkce na základě dvou kritérií:
 
-- Jestli interval došlo k chybě v kódu funkce nebo v *podřízené funkce* (funkci, která byla zavolána funkce).
+- Určuje, zda došlo k v kódu funkce nebo v intervalu *podřízené funkce* (funkce, která byla volána funkce).
 
-- Jestli událost operačního systému došlo k chybě v intervalu.
+- Určuje, zda událost operačního systému došlo k chybě v intervalu.
 
-Hodnoty dat pro časový interval, rozsahu funkce nebo data jsou pojmenované *uplynulý čas včetně*, *uplynulý výhradní*, *aplikace včetně*, a  *Exkluzivní aplikace*:
+Hodnoty dat pro interval rozsah funkce nebo data jsou s názvem *uplynulý včetně*, *uplynulý výhradní*, *aplikace včetně*, a  *Výhradní čas aplikace*:
 
-- Uplynulý čas včetně hodnotu data jsou přidány všechny intervaly funkce.
+- Uplynulý včetně hodnotu data jsou přidány všechny intervaly funkce.
 
-- Pokud interval došlo k chybě v kódu funkce a není ve funkci podřízené, interval se přidá do uplynutí výhradní hodnota dat funkce.
+- Pokud interval došlo k chybě v kódu funkce a není ve funkci podřízené, interval je přidána do uplynulý výhradní datový typ funkce.
 
-- Pokud událost operačního systému se nevyskytla v intervalu, interval se přidá do aplikace včetně hodnotu data.
+- Pokud nedošlo k události operačního systému v intervalu, interval je přidána do aplikace včetně hodnotu data.
 
-- Pokud událost operačního systému se nevyskytla v intervalu a interval, došlo k chybě při přímé provádění kódu funkce (to znamená, že ho se nevyskytla ve funkci podřízené), interval se přidá do aplikace výhradní hodnotu data.
+- Pokud událost operačního systému nedošlo k v intervalu a intervalu došlo k přímé provádění kódu funkce (to znamená, ho nedošlo k ve funkci podřízené), interval se přidá do aplikace výhradní hodnoty data.
 
-Nástroje pro profilaci sestavy agregovat celkové hodnoty funkcí v samotném relace profilování a procesy, vláken a binární soubory relace.
+Nástroje pro profilaci sestavy shrnují celkové hodnoty funkcí v relaci profilování a procesy, vlákna a binární soubory z relace.
 
-## <a name="elapsed-inclusive-values"></a>Uplynulá (včetně) hodnot
+## <a name="elapsed-inclusive-values"></a>Uplynulý včetně hodnoty
 
-Celkový čas, která byla potřebná k provedení funkce a jeho podřízené funkce.
+Celkový čas, který byl stráven spouštěním funkce a její podřízené funkce.
 
-Uplynulá (včetně) hodnot zahrnují intervalech, které byly potřebná k provedení přímo kód funkce a intervalech, které byly potřebná k provedení funkce podřízené funkce cíl. Funkce nebo jeho podřízené funkce, které obsahují čeká na operační systém intervalů jsou také uvedené v uplynulý čas (včetně) hodnot.
+Uplynulý včetně hodnoty zahrnují intervalů, které se spotřebovávají přímo provádění kódu funkce a intervaly, které byly stráven spouštěním funkce podřízené cílová funkce. Uplynulý včetně hodnoty jsou taky součástí intervalech funkci nebo její podřízené funkce, které zahrnují časový limit na operační systém.
 
-## <a name="elapsed-exclusive-values"></a>Uplynulá výhradní hodnoty
+## <a name="elapsed-exclusive-values"></a>Uplynulý výhradní hodnoty
 
-Čas, kdy byla potřebná k provedení funkce, s výjimkou času stráveného v podřízené funkce.
+Čas, který byl stráven spouštěním funkce, s výjimkou čas, který byl stráven v podřízené funkce.
 
-Uplynulá hodnot, které zahrnují intervalech, které byly potřebná k provedení přímo kód funkce, bez ohledu na to, jestli operační systém události došlo k chybě v intervalu. Všechny intervaly věnovaný podřízené funkce, které byly volá funkci cíl nejsou součástí uplynulý výhradní hodnoty.
+Uplynulý výhradní hodnoty zahrnují intervalů, které se spotřebovávají přímo provádění kódu funkce bez ohledu na to, zda došlo k události operačního systému v intervalu. Všechny intervaly stráveného podřízené funkce, které byly volány cílová funkce nejsou součástí uplynulý výhradní hodnoty.
 
 ## <a name="application-inclusive-values"></a>Aplikace (včetně) hodnot
 
-Čas, kdy byla potřebná k provedení funkce a jeho podřízené funkce, s výjimkou času stráveného v událostech operačního systému.
+Čas, který byl stráven spouštěním funkce a její podřízené funkce, s výjimkou čas, který byl stráven v událostí operačního systému.
 
-Aplikace (včetně) hodnot nezahrnují intervalech, které obsahují události v operačním systému. Aplikace (včetně) hodnot zahrnout všechny ostatní intervalech, které byly potřebná k provedení funkce, bez ohledu na to, jestli interval strávená přímo provádění kódu funkce nebo byl stráven podřízené funkce funkce cíl.
+Aplikace (včetně) hodnot nezahrnují intervalech, které obsahují událostí operačního systému. Aplikace (včetně) hodnot zahrnout všechny intervaly, které byly stráven spouštěním funkce, bez ohledu na to, zda interval utratilo přímo provádění kódu funkce nebo byl vynaložen na podřízené funkce cílová funkce.
 
 ## <a name="application-exclusive-values"></a>Výhradní hodnoty aplikace
 
-Čas, kdy byla potřebná k provedení funkce, s výjimkou času stráveného v podřízené funkce a času stráveného v událostech operačního systému.
+Čas, který byl stráven spouštěním funkce, s výjimkou čas, který se využilo na podřízené funkce a čas, který byl stráven v událostí operačního systému.
 
-Aplikace hodnot, které neobsahují intervalech, které obsahují události v operačním systému nebo intervalech, které byly potřebná k provedení funkce, které byly volá funkci. Aplikace hodnot, které zahrnují jenom intervalech, byly potřebná k provedení přímo kód funkce a který neobsahoval událost operačního systému.
+Výhradní hodnoty, které aplikaci nezahrnují intervalech, které obsahují událostí operačního systému nebo intervaly, které byly strávený spouštěním funkcí, které byly volány funkce. Výhradní hodnoty aplikace zahrnují pouze intervaly, které byly strávený přímo provádění kódu funkce a, která neobsahovala událost operačního systému.
 
-## <a name="elapsed-inclusive-percent"></a>Uplynulá v procentech (včetně).
+## <a name="elapsed-inclusive-percent"></a>Uplynulý včetně procent
 
-Procento celkové uplynulý čas (včetně) hodnot relace profilování které byly uplynulý čas včetně hodnoty funkce, modulu, vlákno nebo proces.
+Procento z celkového uplynulý včetně hodnot relace profilování, které byly uplynulý včetně hodnoty funkce, modulu, vlákna nebo procesu.
 
-100 * funkce uplynulý čas včetně / uplynulé relace (včetně).
+100 * funkce uplynulý celkový / uplynulý celkový relace
 
-## <a name="elapsed-exclusive-percent"></a>Uplynulá výhradní procent
+## <a name="elapsed-exclusive-percent"></a>Uplynulý výhradní procent
 
-Procento celkové uplynulý čas (včetně) hodnot relace profilování které byly uplynulý výhradní hodnoty funkce, modulu, vlákno nebo proces.
+Procento z celkového uplynulý včetně hodnot relace profilování, které byly uplynulý výhradní hodnoty funkce, modulu, vlákna nebo procesu.
 
-100 * funkce uplynulá exkluzivní / uplynulé relace (včetně).
+100 * funkce uplynulý výhradní čas / uplynulý celkový relace
 
-## <a name="application-inclusive-percent"></a>Aplikace v procentech (včetně).
+## <a name="application-inclusive-percent"></a>Celkové procento aplikace
 
-Procento celkové aplikace včetně hodnoty relace profilování které byly aplikace včetně hodnoty funkce, modulu, vlákno nebo proces.
+Procento z celkové aplikace (včetně) hodnot relace profilování, které byly aplikace včetně hodnoty funkce, modulu, vlákna nebo procesu.
 
-100 * funkce aplikace (včetně) nebo aplikace relace (včetně).
+100 * funkce aplikace, včetně / relace aplikace (včetně)
 
 ## <a name="application-exclusive-percent"></a>Výhradní procent aplikace
 
-Procento celkové aplikace včetně hodnoty relace profilování které byly funkce, modulu, vlákno nebo proces aplikace výhradní intervalů.
+Procento z celkové aplikace včetně hodnot relace profilování, které byly aplikace exkluzivní intervalech funkce, modulu, vlákna nebo procesu.
 
-100 * funkce exkluzivní aplikace nebo relace aplikace (včetně).
+100 * funkce výhradní čas aplikace / aplikace relace (včetně)
 
 ## <a name="see-also"></a>Viz také:
 
 [Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)  
-[Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)
+[Postupy: Výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)

@@ -3,19 +3,18 @@ title: Průzkumník proměnných pro R
 description: Průzkumník proměnných v sadě Visual Studio zobrazuje všechny proměnné v daném oboru v aktuální relaci jazyka R:.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988933"
 ---
 # <a name="variable-explorer"></a>Průzkumník proměnných
 
@@ -71,7 +70,7 @@ Můžete také přepnout na rozsah funkce při zastavení na zarážce v ladicí
 
 ## <a name="import-data-into-variable-explorer"></a>Import dat do Průzkumníka proměnných
 
-Dva příkazy na **Průzkumníka proměnných** nástrojů, které jsou k dispozici prostřednictvím **nástroje R** > **Data** nabídky, externí sdílený svazek clusteru datové sady importu do vašeho jazyka R relace: **importovat datovou sadu do relace jazyka R z webové adresy URL** a **importovat datovou sadu do relace jazyka R z textového souboru**.
+Dva příkazy na **Průzkumníka proměnných** nástrojů, které jsou k dispozici prostřednictvím **nástroje R** > **Data** nabídky, externí sdílený svazek clusteru datové sady importu do vašeho jazyka R relace:  **Importovat datovou sadu do relace jazyka R z webové adresy URL** a **importovat datovou sadu do relace jazyka R z textového souboru**.
 
 Jakmile identifikujete importovat soubor CSV, zobrazí Visual Studio **importovat datovou sadu** dialogové okno, ve kterém máte možnosti řídit, jak analyzovat data souboru (to znamená, co oddělovač polí je a jak bude zpracováván uvozovky). Můžete také zobrazit náhled importované datového rámce a původní datový soubor:
 

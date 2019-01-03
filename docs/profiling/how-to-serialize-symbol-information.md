@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: serializace informací o symbolu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Serializace informací o symbolu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Performance.General
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b608b41ea4fd1b5b7544604e8d04bed02361b06
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 5ae49e4656bcbeb8e1048331b9fb0b61849e4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987590"
 ---
-# <a name="how-to-serialize-symbol-information"></a>Postupy: serializace informací o symbolu
+# <a name="how-to-serialize-symbol-information"></a>Postupy: Serializace informací o symbolu
 Může serializovat symboly, které potřebujete k analýze vaší aplikace. Serializace symbolu přidá symboly. *vsp* souboru. Přidejte informace o symbolech pro. *vsp* souboru, ostatní analyzovat sestavu výkonu bez nutnosti přístupu k původní symboly. Pokud nejsou serializován symboly, musíte mít původní instrumentovány. *exe* a. *soubor PDB* souborů k analýze. *Vsp* souboru.  
   
 ### <a name="to-automatically-serialize-symbol-information"></a>Automaticky serializovat informace o symbolech  
@@ -37,5 +35,5 @@ Může serializovat symboly, které potřebujete k analýze vaší aplikace. Ser
   
 ## <a name="see-also"></a>Viz také:  
  [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)   
- [Postupy: informace o symbolech Windows odkaz](../profiling/how-to-reference-windows-symbol-information.md)   
- [Postupy: uložení analyzovat soubory sestav](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))
+ [Postupy: Referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Postupy: Uložit analyzovanou sestavu soubory](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

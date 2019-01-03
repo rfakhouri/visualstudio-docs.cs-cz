@@ -1,9 +1,6 @@
 ---
 title: Přehled pásu karet
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989199"
 ---
 # <a name="ribbon-overview"></a>Přehled pásu karet
   Na pásu karet je způsob, jak uspořádat příkazy související tak, aby byly snadněji najít. Příkazy se zobrazují jako ovládací prvky na pásu karet. Ovládací prvky jsou uspořádány do *skupiny* podél horizontální pruh v horním okrajem jeho okna aplikace. Související skupiny jsou uspořádány na kartách.  
@@ -84,7 +81,7 @@ ms.locfileid: "49846355"
   
  Kromě toho všechny nezměněné výchozí hodnoty vlastností se nezobrazují ve výsledném souboru XML pásu karet.  
   
- Další informace o tom, jak exportovat na pásu karet do XML, naleznete v tématu [postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+ Další informace o tom, jak exportovat na pásu karet do XML, naleznete v tématu [jak: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="update-the-code"></a>Aktualizace kódu  
  Přidá nový soubor kódu pásu karet do **Průzkumníka řešení**. Tento soubor obsahuje třídu kódu XML pásu karet. Je nutné vytvořit metody zpětného volání ve `Ribbon Callbacks` oblasti této třídy pro zpracování uživatelské akce, jako je kliknutí na tlačítko. Přesuňte váš kód z obslužných rutin událostí těchto metod zpětného volání a upravte kód pro práci s pásu karet ribbonx (Ribbon extensibility) programovacího modelu. Další informace najdete v tématu [kódu XML pásu karet](../vsto/ribbon-xml.md).  
@@ -128,12 +125,10 @@ ms.locfileid: "49846355"
 |[Přizpůsobte pás karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Obsahuje pokyny k přizpůsobení pásu karet v aplikaci Microsoft Office Outlook.|  
 |[Přizpůsobte pás karet pro aplikaci InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Obsahuje pokyny k přizpůsobení pásu karet v aplikaci Microsoft Office InfoPath.|  
 |[Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)|Ukazuje, jak zobrazit, skrýt a změnám pásu karet a povolit uživatelům spustit kód z ovládacích prvků v vlastního podokna úloh, podokna akcí nebo oblasti formuláře aplikace Outlook.|  
-|[Postupy: Změna pozice karty na pásu karet](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Ukazuje, jak chcete-li změnit pořadí karet na pásu karet.|  
+|[Postupy: Změna umístění karty na pásu karet](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Ukazuje, jak chcete-li změnit pořadí karet na pásu karet.|  
 |[Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)|Ukazuje, jak přidat skupiny a ovládací prvky k předdefinované kartě.|  
 |[Postupy: Přidání ovládacích prvků do zobrazení Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Ukazuje, jak přidat ovládací prvky do nabídky, které se otevře po kliknutí **souboru**.|  
 |[Postupy: Přidání Spouštěče dialogového okna do skupiny pásu karet](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Ukazuje přidání Spouštěče dialogového okna pro libovolnou skupinu na pásu karet.|  
 |[Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Ukazuje, jak přizpůsobit pás karet Upřesnit způsoby tak, že vyexportujete na pásu karet do kódu XML pásu karet z návrháře.|  
 |[Pás karet – XML](../vsto/ribbon-xml.md)|Vysvětluje, jak můžete přizpůsobit pás karet pomocí kódu XML pásu karet.|  
 |[Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Ukazuje, jak vytvořit vlastní kartu pásu karet pomocí **pásu karet (XML)** položky.|  
-  
-  

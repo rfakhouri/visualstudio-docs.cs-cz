@@ -1,9 +1,6 @@
 ---
-title: Visual Studio otevřít složku rozšíření přehled | Microsoft Docs
-ms.custom: ''
+title: Přehled rozšíření Visual Studio otevřít složku | Dokumentace Microsoftu
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
@@ -11,42 +8,42 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb2d1d922b4ebd4943c42c478400c5873af9cc4
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986008"
 ---
 # <a name="open-folder-extensibility"></a>Otevřete složku rozšíření
 
-[Otevřete složku](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) funkce umožňuje uživatelům otevírat žádné základu kódu v sadě Visual Studio bez nutnosti projekt nebo řešení soubory. Otevřít složku nabízí funkce uživatelé očekávat ze sady Visual Studio, jako:
+[Otevřít složku](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) funkce umožňuje uživatelům otevírat libovolného základního kódu v sadě Visual Studio bez nutnosti soubory projektu nebo řešení. Otevřít složku poskytuje že funkce uživatelé očekávají ze sady Visual Studio jako například:
 
 * Integrace Průzkumníka řešení a vyhledávání
-* Editor zabarvení
-* Přejít na navigační
-* Najít v vyhledávání souborů
+* Zabarvení editoru
+* Přejít na navigace
+* Najít v souborech vyhledávání
 
-Při použití s úlohami například pro rozhraní .NET a C++ vývoj, uživatelé se také získat:
+Při použití úlohy pro vývoj pro .NET a C++, uživatelům se taky získat:
 
-* Bohaté Intellisense
-* Jazykové funkce
+* Propracovaná funkce Intellisense
+* Funkce specifické pro jazyk
 
-Pomocí otevřít složku autorům rozšíření vytvářet bohaté funkce pro žádný jazyk. Existují rozhraní API pro podporu vytváření, ladění a hledání symbolů pro každý soubor v uživatele základu kódu. Aktuální Extender můžete aktualizovat jejich stávajících funkcí sady Visual Studio zjistit kód bez základní projekty nebo řešení.
+Autoři rozšíření otevřenou složku můžou vytvářet bohaté funkce pro libovolný jazyk. Nejsou k dispozici rozhraní API pro podporu vytváření, ladění a hledání symbolu pro každý soubor v uživatel základu kódu. Aktuální zařízení Extender můžete aktualizovat svoje existující funkce sady Visual Studio k pochopení kódu bez pomocného projektů nebo řešení.
 
-## <a name="an-api-without-project-systems"></a>Rozhraní API bez systémy projektu
+## <a name="an-api-without-project-systems"></a>Rozhraní API bez systémů projektů
 
-Visual Studio v minulosti rozumí pouze soubory v řešení a jeho projektů pomocí projektu systémy. Systém projektu je zodpovědná za funkce a uživatelské interakce načíst projektu. Že rozumí co soubory jeho projekt obsahuje vizuální reprezentace obsahu projektu, závislostí na další projekty a úpravy základní souboru projektu. Je prostřednictvím těchto hierarchií a možnosti, které ostatní součásti fungují jménem uživatele. Ne všechny základy kódu jsou také reprezentované do projektu a řešení struktury. Skriptovací jazyky a open source kód napsaný v jazyce C++ pro Linux jsou dobrými příklady. Visual Studio se otevřít složku poskytuje uživatelům nový způsob interakci s jejich zdrojového kódu.
+Visual Studio v minulosti rozumí pouze soubory v řešení a jeho projektů s použitím systémů projektů. Systém projektu je zodpovědná za funkce a uživatelské interakce načtený žádný spustitelný projekt. To rozumí co soubory svůj projekt obsahuje vizuální reprezentace obsahu projektu, závislosti na jiných projektech a úpravy základního souboru projektu. Je to prostřednictvím těchto hierarchií a možnosti, které součásti fungovat jménem uživatele. Ne všechny základů kódu jsou dobře reprezentovány ve struktuře projektu a řešení. Skriptovací jazyky a open source kódu napsaného v jazyce C++ pro Linux jsou dobré příklady. Pomocí otevřít složku sady Visual Studio poskytuje uživatelům nový způsob interakce s jejich zdrojový kód.
 
-Rozhraní API, otevřete složku jsou v části `Microsoft.VisualStudio.Workspace.*` obor názvů a jsou k dispozici pro Extender vytvářet a využívat data nebo akce kolem souborů v rámci otevřít složku. Rozšíření můžete použít tato rozhraní API nabízí funkce pro mnoha oblastech, včetně:
+Rozhraní API, otevřete složku jsou v části `Microsoft.VisualStudio.Workspace.*` obor názvů a jsou k dispozici pro zařízení Extender vytvářet a využívat data nebo akce kolem soubory v rámci funkce Otevřít složku. Rozšíření můžete pomocí těchto rozhraní API poskytuje funkce pro řadu oblastí, včetně:
 
-- [Pracovní prostory](workspaces.md) – od bodu otevřít složku rozšíření je v pracovním prostoru a jejích rozhraní API.
-- [Soubor kontexty a akce](workspace-file-contexts.md) -souboru konkrétního kódu intelligence poskytované prostřednictvím kontexty souboru.
-- [Indexování](workspace-indexing.md) – shromažďuje a zachovat data o pracovních prostorech otevřít složku.
-- [Jazyk služby](workspace-language-services.md) -integrace jazyka služeb do pracovních prostorů otevřít složku.
+- [Pracovní prostory](workspaces.md) – od bodu otevřít složku rozšíření je pracovní prostor a jeho rozhraní API.
+- [Soubor kontextů a akce](workspace-file-contexts.md) -souboru konkrétního kódu intelligence zajišťována kontexty souborů.
+- [Indexování](workspace-indexing.md) – shromažďuje a trvalé uchování dat o pracovních prostorech otevřít složku.
+- [Jazykové služby](workspace-language-services.md) – integrace jazykových služeb do pracovních prostorů otevřít složku.
 - [Sestavení](workspace-build.md) – podpora pro pracovní prostory otevřít složku sestavení.
 
-Funkce, které používají následující typy bude muset přijmout nová rozhraní API pro podporu otevřít složku:
+Funkce, které používají následující typy muset přijmout nová rozhraní API pro podporu funkce Otevřít složku:
 
 - `IVsHierarchy`
 - `IVsProject`
@@ -54,8 +51,8 @@ Funkce, které používají následující typy bude muset přijmout nová rozhr
 
 ## <a name="feedback-comments-issues"></a>Zpětná vazba, komentáře, problémy
 
-Otevřete složku a `Microsoft.VisualStudio.Workspace.*` rozhraní API jsou ve vývoji aktivní. Pokud se zobrazí neočekávanému chování, pak najdete v části Známé problémy pro tuto verzi, které vás zajímají. [Komunity vývojářů](https://developercommunity.visualstudio.com) je doporučené místo, hlasování a vytvořit všechny problémy. Pro každý zpětnou vazbu důrazně doporučujeme podrobný popis vašeho problému. Zahrnují verzi sady Visual Studio, které vyvíjíte pro, rozhraní API používáte (co jste implementovali i jste interakci s), očekávaný výsledek a skutečný výsledek. Pokud je to možné zahrnují výpis procesu devenv.exe. Pomocí sledování pro odeslání názoru na tento problém Githubu a související dokumentaci.
+Otevřete složku a `Microsoft.VisualStudio.Workspace.*` rozhraní API se aktivně vyvíjí. Pokud se zobrazí neočekávané chování, přejděte na téma známé problémy pro vydanou verzi, které vás zajímají. [Komunita vývojářů](https://developercommunity.visualstudio.com) je doporučený místem, kde můžete hlasovat a vytvořte nějaké problémy. Pro každý zpětnou vazbu důrazně doporučujeme podrobný popis problému. Zahrnout verzi sady Visual Studio, kterou vyvíjíte pro, rozhraní API používáte (co jsme implementovali a při interakci s), očekávaný výsledek a skutečným výsledkem. Pokud je to možné zahrnují výpisu proces devenv.exe. Pomocí sledování pro poskytování zpětné vazby na tento problém Githubu a související dokumentaci.
 
 ## <a name="next-steps"></a>Další kroky
 
-* [Pracovní prostory](workspaces.md) -Další informace o pracovním prostoru otevřít složku rozhraní API.
+* [Pracovní prostory](workspaces.md) – Další informace o pracovním prostoru otevřít složku rozhraní API.

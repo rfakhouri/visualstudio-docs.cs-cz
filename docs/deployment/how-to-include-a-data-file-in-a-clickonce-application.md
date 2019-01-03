@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: zahrnutí datového souboru do aplikace ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Zahrnutí datového souboru do aplikace ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990211"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: zahrnutí datového souboru do aplikace ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: Zahrnutí datového souboru do aplikace ClickOnce
 Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikaci nainstalujete, je přiřazen adresář data na místním disku cílového počítače, kde aplikace může spravovat svoje vlastní data. Datové soubory můžete zahrnout soubory libovolného typu: textové soubory, soubory XML nebo dokonce i databáze Microsoft Access (*.mdb*) soubory. Následující postupy ukazují, jak přidat soubor dat libovolného typu do vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Zahrnout soubor dat s využitím Mage.exe  

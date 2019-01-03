@@ -1,25 +1,24 @@
 ---
-title: Návrhář postupu provádění - návrháře aktivit pro zasílání zpráv
+title: Návrhář postupu provádění – návrháři aktivit zasílání zpráv
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97279d92b9853f183778d069aa81182fa6cf8b56
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 3f414f79db83f65d10a3f7893580c587e4da2219
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989358"
 ---
 # <a name="messaging-activity-designers"></a>Návrháři aktivit zasílání zpráv
 
-Zasílání zpráv návrháře aktivit se používají k vytvoření a konfigurace zasílání zpráv aktivity, které odesílat a přijímat zprávy Windows Communication Foundation (WCF) v rámci aplikace Windows Workflow Foundation (WF). Rozhraní .NET Framework 4 zavádí pět aktivity zasílání zpráv a Návrháři pracovních postupů poskytuje dva nové návrháři šablon, které vám umožní spravovat zasílání zpráv v pracovním postupu. Témata obsažené v této části a uvedené v následující tabulce poskytují pokyny o tom, jak pomocí aktivity v Návrháři pracovních postupů a návrháři šablon.
+Zasílání zpráv návrháři aktivit umožňují vytvářet a konfigurovat zasílání zpráv aktivity, které odesílání a příjem zpráv Windows Communication Foundation (WCF) z aplikace pro Windows Workflow Foundation (WF). Představuje pět zasílání zpráv aktivity rozhraní .NET Framework 4 a návrháře postupu provádění, poskytuje dva nové návrháře šablony, které vám umožní spravovat zasílání zpráv v rámci pracovního postupu. V tématech obsažené v této části a uvedené v následující tabulce najdete pokyny, jak používat návrháře postupu provádění aktivity a návrháři šablon.
 
 ## <a name="reference"></a>Odkaz
  <xref:System.Activities.Activity>
@@ -37,7 +36,7 @@ Zasílání zpráv návrháře aktivit se používají k vytvoření a konfigura
  <xref:System.ServiceModel.Activities.TransactedReceiveScope>
 
 ## <a name="related-sections"></a>Související oddíly
- U jiných typů návrháře aktivit najdete v následujících tématech.
+ U jiných typů návrháři aktivit naleznete v následujících tématech.
 
  [Tok řízení](../workflow-designer/control-flow-activity-designers.md)
 

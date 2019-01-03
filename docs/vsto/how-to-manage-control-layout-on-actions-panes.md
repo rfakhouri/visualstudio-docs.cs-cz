@@ -1,9 +1,6 @@
 ---
 title: 'Postupy: Správa rozložení ovládacích prvků v podoknech akcí'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991172"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Postupy: Správa rozložení ovládacích prvků v podoknech akcí
   Podokna akcí je ukotven na pravém rohu dokumentu nebo sešitu ve výchozím nastavení; ale ho lze ukotvit vlevo, horní nebo dolní. Pokud používáte více uživatelských ovládacích prvků, můžete napsat kód správně zásobníku uživatelské ovládací prvky v podokně Akce. Další informace najdete v tématu [přehled podokna akcí](../vsto/actions-pane-overview.md).  
@@ -74,5 +71,3 @@ ms.locfileid: "53647046"
  [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo Excelové sešity](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Návod: Vkládání textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Návod: Vkládání textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

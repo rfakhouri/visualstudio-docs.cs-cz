@@ -2,7 +2,6 @@
 title: Aspekty zabezpečení při práci s daty XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: gewarren
@@ -10,38 +9,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0f53b3182d238b19abd3b03b02544307718377cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989552"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Aspekty zabezpečení při práci s daty XML
 
-Toto téma popisuje problémy zabezpečení, které potřebujete vědět o při práci s editoru XML nebo XSLT ladicího programu.
+Toto téma popisuje problémy se zabezpečením, které je potřeba vědět o při práci s editorem XML nebo ladicí program XSLT.
 
 ## <a name="xml-editor"></a>Editor XML
 
- Editor souborů XML je založen na editoru textu sady Visual Studio. Přitom spoléhá na <xref:System.Xml> a <xref:System.Xml.Xsl> třídy pro zpracování řadu procesů XML.
+ XML Editor je založena na Visual Studio textovém editoru. Využívá <xref:System.Xml> a <xref:System.Xml.Xsl> třídy pro zpracování řadu procesů XML.
 
--   Transformace XSLT jsou spouštěny v nové doméně aplikace. Transformace XSLT jsou *v izolovaném prostoru*; to znamená, zásady zabezpečení přístupu kódu počítače slouží k určení omezená oprávnění podle toho, kde je umístěné Styl XSLT. Například šablony stylů z umístění v Internetu mít nejvíce omezená oprávnění, zatímco stylů zkopíruje na vašem pevném disku, spusťte s úplný vztah důvěryhodnosti.
+-   Transformace XSLT jsou provedeny v nové doméně aplikace. Transformace XSLT jsou *v izolovaném prostoru*; to znamená, zásady zabezpečení přístupu kódu v počítači se používá k určení omezená oprávnění na základě na místě, kde šablony stylů XSLT. Například listů stylu z umístění v Internetu mít nejvíce omezená oprávnění, že šablony stylů zkopírovány na váš pevný disk, spusťte s úplnou důvěryhodností.
 
--   <xref:System.Xml.Xsl.XslCompiledTransform> Třída se používá ke kompilaci XSLT do převodního jazyka Microsoft pro dosažení vyššího výkonu během provádění.
+-   <xref:System.Xml.Xsl.XslCompiledTransform> Třída se používá ke kompilaci XSLT pro jazyk Microsoft intermediate language pro dosažení vyššího výkonu během provádění.
 
--   Schémata, které odkazují na externí umístění v souboru katalogu se automaticky stáhnou při poprvé načte editoru XML. <xref:System.Xml.Schema.XmlSchemaSet> Třída se používá ke kompilaci schémat. Soubor katalogu, který se dodává s editoru XML nemá odkazy na všechny externí schémat. Uživatel musí explicitně přidat odkaz na externí schéma před editoru XML soubory ke stažení souboru schématu. Stahování HTTP lze zakázat pomocí **různé možnosti v nabídce Nástroje** stránky pro Editor XML.
+-   Schémata, které odkazují na externím místě v souboru katalogu staženy automaticky při prvním načtení editoru XML. <xref:System.Xml.Schema.XmlSchemaSet> Třída se používá ke kompilaci schémata. Soubor katalogu, který se dodává s editorem XML neobsahuje odkazy na všechny externí schémata. Uživatel musí explicitně přidat odkaz na externí schéma před editoru XML, soubory ke stažení souboru schématu. Stahuje se protokol HTTP se dají zakázat pomocí **různé možnosti nástrojů** stránky pro Editor XML.
 
--   Pomocí editoru XML <xref:System.Net> třídy ke stažení schémat.
+-   XML Editor používá <xref:System.Net> třídy ke stažení schémata
 
 ## <a name="xslt-debugger"></a>Ladicí program XSLT
 
- Ladicí program XSLT využívá modul aplikace Visual Studio spravovaného ladění a třídy z <xref:System.Xml> a <xref:System.Xml.Xsl> oboru názvů.
+ Ladicí program XSLT využívá spravovaného ladicího stroje sady Visual Studio a tříd z <xref:System.Xml> a <xref:System.Xml.Xsl> oboru názvů.
 
--   Ladicí program XSLT spustí každý transformace XSLT v doméně aplikace v izolovaném prostoru. Zásady zabezpečení přístupu kódu počítače slouží k určení omezená oprávnění podle toho, kde je umístěné Styl XSLT. Například šablony stylů z umístění v Internetu mít nejvíce omezená oprávnění, zatímco stylů zkopíruje na vašem pevném disku, spusťte s úplný vztah důvěryhodnosti.
+-   Ladicí program XSLT spouští každá transformace XSLT v doméně aplikace v izolovaném prostoru. Zásady zabezpečení přístupu kódu v počítači se používá k určení omezená oprávnění na základě na místě, kde šablony stylů XSLT. Například listů stylu z umístění v Internetu mít nejvíce omezená oprávnění, že šablony stylů zkopírovány na váš pevný disk, spusťte s úplnou důvěryhodností.
 
--   Styl XSLT je kompilovat, pomocí <xref:System.Xml.Xsl.XslCompiledTransform> třídy.
+-   Šablony stylů XSLT je zkompilován pomocí <xref:System.Xml.Xsl.XslCompiledTransform> třídy.
 
--   Vyhodnocení výrazu XSLT je načten modulem spravované ladění. Modul spravované ladění předpokládá, že veškerý kód je spustit z místního počítače uživatele. Podle toho <xref:System.Xml.Xsl.XslCompiledTransform> třída stáhne soubor XSLT na místním počítači uživatele. Možnost, že mohlo dojít zvýšení oprávnění v provádění oprávnění zmírnit provádění všechny transformace XSLT v nové doméně aplikace s omezenými oprávněními
+-   Chyba při vyhodnocování výrazu XSLT je načtena pomocí spravovaného ladicího stroje. Spravovaného ladicího stroje se předpokládá, že všechny kód se spouští z místního počítače uživatele. Odpovídajícím způsobem <xref:System.Xml.Xsl.XslCompiledTransform> třídy stáhne soubor XSLT do místního počítače uživatele. Možnost, že mohlo dojít ke zvýšení úrovně oprávnění v provádění oprávnění zmírnit provádění všechny transformace XSLT v nové doméně aplikace s omezenými oprávněními
 
 ## <a name="see-also"></a>Viz také:
 

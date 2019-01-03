@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbolsbyaddr::symbolbyaddr – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d15901ac321a1a5d60db6e989b24c314bcd211b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c672beced050b4b393476d16120ab5a26a7e6d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987256"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 Pozice výčtu pomocí provádí vyhledávání podle obrázku číslo oddílu a posun.  
@@ -27,7 +25,7 @@ Pozice výčtu pomocí provádí vyhledávání podle obrázku číslo oddílu a
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT symbolByAddr (   
+HRESULT symbolByAddr (   
    DWORD**      isect,  
    DWORD**      offsect,  
    IDiaSymbol** ppsymbol  

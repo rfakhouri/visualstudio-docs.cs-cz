@@ -1,5 +1,5 @@
 ---
-title: Přizpůsobení jazyka domény
+title: Přizpůsobení jazyka specifického pro doménu
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,37 +10,36 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7fd63546f7d85ddbcc7661ac600a56bd340e6ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991201"
 ---
-# <a name="write-code-to-customize-a-domain-specific-language"></a>Napsat kód pro přizpůsobení jazyka domény
+# <a name="write-code-to-customize-a-domain-specific-language"></a>Zápis kódu pro úpravu jazyka specifického pro doménu
 
-V této části se dozvíte, jak použít vlastní kód pro přístup, upravit nebo vytvořit model v jazyce specifické pro doménu.
+Tato část ukazuje, jak použít vlastní kód pro přístup, upravit nebo vytvořit model v jazyka specifického pro doménu.
 
-Existuje několik kontexty, ve kterých můžete napsat kód, který funguje s DSL:
+Existuje několik kontextech, ve kterých můžete napsat kód, který funguje s DSL:
 
--   **Vlastní příkazy.** Můžete vytvořit příkaz uživatelů můžete vyvolat kliknutím pravým tlačítkem myši v diagramu, a který můžete upravit modelu. Další informace najdete v tématu [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+-   **Vlastní příkazy.** Můžete vytvořit příkaz, že uživatelé můžete vyvolat kliknutím pravým tlačítkem myši v diagramu a které můžete měnit model. Další informace najdete v tématu [jak: Přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
--   **Ověření.** Můžete napsat kód, který ověřuje, že model je ve správném stavu. Další informace najdete v tématu [ověření v jazyce specifické pro doménu](../modeling/validation-in-a-domain-specific-language.md).
+-   **Ověření.** Můžete napsat kód, který ověřuje, že model je ve správném stavu. Další informace najdete v tématu [ověřování v jazyka specifického pro doménu](../modeling/validation-in-a-domain-specific-language.md).
 
--   **Přepsání výchozího nastavení.** Mnoho aspektů kód, který se generují z DslDefinition.dsl, můžete upravit. Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).
+-   **Přepisování výchozího chování.** Můžete upravit mnoho aspektů kód, který je generován z DslDefinition.dsl. Další informace najdete v tématu [přepisování a rozšiřování třídy generované v](../modeling/overriding-and-extending-the-generated-classes.md).
 
--   **Transformace textu.** Můžete napsat textové šablony, které obsahovat kód, který přistupuje k modelu a generuje textového souboru, například ke generování kódu programu. Další informace najdete v tématu [generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md).
+-   **Transformace textu.** Můžete napsat textových šablon, které obsahují kód, který má přístup k modelu a vytváří textový soubor, třeba když chcete generovat kód programu. Další informace najdete v tématu [generování kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md).
 
--   **Další rozšíření sady Visual Studio.** Můžete napsat samostatné VSIX rozšíření, která číst a upravovat modely. Další informace najdete v tématu [postupy: otevření modelu ze souboru v programovém kódu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+-   **Další rozšíření sady Visual Studio.** Můžete napsat samostatné rozšíření VSIX, které čtení a úpravy modelů. Další informace najdete v tématu [jak: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
-Instance třídy, které definujete v DslDefinition.dsl udržovaly v strukturu dat s názvem *úložiště v paměti* (IMS) nebo *úložiště*. Třídy, které definujete DSL, vždy trvat úložiště jako argument konstruktoru. Například pokud vaše DSL definuje třídu s názvem příklad:
+Instance tříd, které definujete v DslDefinition.dsl uchovávají do datové struktury, volá se, *Store v paměti* (IMS) nebo *Store*. Třídy, které definujete DSL, vždy provést Store jako argument konstruktoru. Pokud například vaše DSL definuje třídu s názvem příkladu:
 
 `Example element = new Example (theStore);`
 
-uchování objektů v úložišti (namísto stejně jako obyčejnou objekty) poskytuje několik výhod.
+uchování objektů v Store (namísto stejně jako normální objekty) poskytuje několik výhod.
 
--   **Transakce**. Můžete seskupit řadu související změny do transakce:
+-   **Transakce**. Můžete seskupit řadu souvisejících změn do transakce:
 
      `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
 
@@ -52,27 +51,27 @@ uchování objektů v úložišti (namísto stejně jako obyčejnou objekty) pos
 
      `}`
 
-     Pokud dojde k výjimce během změny, tak, aby konečné Commit() neprovádí, úložišti se resetuje do předchozího stavu. Díky tomu můžete zajistit, že chyby nenechávejte modelu v nekonzistentním stavu. Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Pokud dojde k výjimce během změny, tak, aby konečná Commit() neprovádí, Store se resetuje do předchozího stavu. Díky tomu můžete zajistit, že chyby nenechala modelu v nekonzistentním stavu. Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Binární vztahy**. Při definování vztahu mezi dvěma třídami, instance na obou koncích mají vlastnost, která přejde na druhém konci. Vždy se synchronizují dva elementy end. Například pokud definujete rodičovství vztah s rolí s názvem nadřazené a podřízené položky, můžete napsat:
+-   **Binární vztahy**. Při definování vztahu mezi dvěma třídami, instance na obou koncích mají vlastnost, která přejde na druhém konci. Dva elementy jsou vždy synchronizované. Například pokud definujete rodičovství vztah s rolí s názvem nadřazené a podřízené položky, můžete napsat:
 
      `John.Children.Add(Mary)`
 
-     Z těchto výrazů platí obě nyní:
+     Obě tyto výrazy jsou teď true:
 
      `John.Children.Contains(Mary)`
 
      `Mary.Parents.Contains(John)`
 
-     Stejného efektu můžete také dosáhnout vytvořením:
+     Můžete také dosáhnout stejný účinek pomocí zápisu:
 
      `Mary.Parents.Add(John)`
 
      Další informace najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
--   **Pravidla a události**. Můžete definovat pravidla, které budou spuštěny při každé zadané změně. Pravidla jsou například použít k udržování tvarů diagram stavu pomocí modelu prvky, které budou k dispozici. Další informace najdete v tématu [reakce na a šíření změny](../modeling/responding-to-and-propagating-changes.md).
+-   **Pravidla a události**. Můžete definovat pravidla, která se aktivuje vždy, když dojde ke změně zadané. Se používají pravidla, třeba udržovat tvary v diagramu stavu s prvky modelu, které jsou k dispozici. Další informace najdete v tématu [šířící změny a reakce na](../modeling/responding-to-and-propagating-changes.md).
 
--   **Serializace**. Úložiště poskytuje standardní způsob, jak serializovat objekty, které obsahuje do souboru. Můžete upravit pravidla pro serializaci a deserializaci. Další informace najdete v tématu [přizpůsobení File Storage a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+-   **Serializace**. Store poskytuje standardní způsob, jak serializovat objekty, které obsahuje do souboru. Můžete přizpůsobit pravidla pro serializaci a deserializaci. Další informace najdete v tématu [přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Viz také
 

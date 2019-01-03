@@ -1,9 +1,6 @@
 ---
 title: Vlastní položky které lze zabarvit | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989747"
 ---
 # <a name="custom-colorable-items"></a>Vlastní položky které lze zabarvit
 Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová slova a komentáře, díky implementaci vlastní, které lze zabarvit položky jako součást služby jazyka.  
@@ -53,7 +50,7 @@ Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová 
   
 5. Ve stejné třídě, která implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> rozhraní, implementujte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> rozhraní a jeho dvě metody <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
-6. Implementace <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> rozhraní.  
+6. Implementujte rozhraní <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
 7. Pokud chcete zajistit podporu barvu 24-bit nebo vysoké hodnoty, implementovat taky <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> rozhraní.  
   
@@ -72,4 +69,4 @@ Seznam typů můžete přepsat pro barevné označování, jako jsou klíčová 
  [Barevné zvýrazňování syntaxe ve vlastních editorech](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Barevné zvýrazňování syntaxe implementace](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Postupy: použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Postupy: Použití předdefinovaných položek které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

@@ -2,19 +2,18 @@
 title: Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986138"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 
@@ -40,14 +39,14 @@ Při testování webové aplikace pomocí různých typů webových prohlížeč
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Jak mohu zaznamenat a přehrát programové testy UI webových aplikacích pomocí podporovaných webových prohlížečů?
 
-**Záznam:** Tvůrce programového testu UI musíte použít k záznamu testu webové aplikace pomocí aplikace Internet Explorer. Volitelně můžete pomocí předdefinované sady vlastností přidat kód pro ověření a přizpůsobení testovaných ovládacích prvků, jak byste to obvykle udělali v případě programových testů UI. Další informace najdete v tématu [automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md).
+**Záznam:** K záznamu testu webové aplikace pomocí aplikace Internet Explorer, je nutné použít Tvůrce programového testu UI. Volitelně můžete pomocí předdefinované sady vlastností přidat kód pro ověření a přizpůsobení testovaných ovládacích prvků, jak byste to obvykle udělali v případě programových testů UI. Další informace najdete v tématu [automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Programové testy UI nelze zaznamenat pomocí prohlížečů Google Chrome nebo Mozilla Firefox.
 
- **Přehrávání pomocí aplikace Internet Explorer:** při není explicitně zadán žádný prohlížeč, testy budou spuštěny v aplikaci Internet Explorer ve výchozím nastavení. Můžete explicitně uvést prohlížeče tak, že nastavíte **BrowserWindow.CurrentBrowser** vlastností v kódu testu. Pro aplikaci Internet Explorer by měla být tato vlastnost nastavená na **IE** nebo **aplikace Internet Explorer**.
+ **Přehrávání pomocí aplikace Internet Explorer:** Pokud není explicitně zadán žádný prohlížeč, testy poběží v Internet Exploreru ve výchozím nastavení. Můžete explicitně uvést prohlížeče tak, že nastavíte **BrowserWindow.CurrentBrowser** vlastností v kódu testu. Pro aplikaci Internet Explorer by měla být tato vlastnost nastavená na **IE** nebo **aplikace Internet Explorer**.
 
- **Přehrávání pomocí webového prohlížeče Internet Explorer:** přehrát v prohlížečích, Internet Explorer, změňte vlastnost BrowserWindow.CurrentBrowser v kódu testu buď **Firefox** nebo **Chrome** .
+ **Přehrávání pomocí Internet Exploreru webových prohlížečů:** Chcete-li přehrát v prohlížečích, Internet Explorer, změňte vlastnost BrowserWindow.CurrentBrowser v kódu testu buď **Firefox** nebo **Chrome**.
 
  Chcete-li přehrát testy v prohlížečích než Internet Exploreru, je nutné nainstalovat **součásti Selenium pro programové testování uživatelského rozhraní pro různé prohlížeče**.
 

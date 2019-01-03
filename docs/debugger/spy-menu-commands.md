@@ -1,8 +1,6 @@
 ---
-title: Příkazy nabídky sledovat | Microsoft Docs
-ms.custom: ''
+title: Sledovat příkazy nabídky | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy menu commands
@@ -12,30 +10,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a11b24f5f0f950fabe475a0f0099e76032451fb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0abf9695e0210cdae9785aafcd967513e48bf43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989526"
 ---
 # <a name="spy-menu-commands"></a>Příkazy nabídky nástroje Spy
-**Spy** nabídka poskytuje příkazy pro práci s nástroji Spy ++ Windows a zobrazení.  
+**Spy** nabídka obsahuje příkazy pro práci s nástroji Spy ++ Windows a zobrazení.  
   
  **Windows**  
- Otevře se nové zobrazení systému Windows.  
+ Otevře nové zobrazení Windows.  
   
  **Procesy**  
- Otevře se nové procesů zobrazení.  
+ Otevře nové zobrazení procesy.  
   
  **Vlákna**  
- Otevře se nové zobrazení vláken.  
+ Otevře nové zobrazení vlákna.  
   
  **Zprávy protokolu**  
- Otevře se nové zobrazení zpráv a otevře [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md) pro zobrazení.  
+ Otevře nové zobrazení zpráv a otevře [dialogové okno možností zpráv](../debugger/message-options-dialog-box.md) pro zobrazení.  
   
- **Najít – okno**  
- Zobrazí **FindWindow** dialogovém okně vyberte časové období pomocí myši.  
+ **Najít okno**  
+ Zobrazí **FindWindow** dialogové okno Vyberte okno pomocí myši.  
   
- **Ukončení**  
+ **ukončení**  
  Zavře nástroje Spy ++.

@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: nastavení možností názvu datového souboru výkonu | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Nastavení možností názvu datového souboru výkonu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
@@ -10,31 +8,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6e0027457e099c57423989070e6f30f275d7982e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990565"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Postupy: nastavení možností názvu datového souboru výkonu
+# <a name="how-to-set-performance-data-file-name-options"></a>Postupy: Nastavení možností názvu datového souboru výkonu
 
-Ve výchozím nastavení, můžete uložit data profilování (. *Vsp*) souborů pomocí následující syntaxe:
+Ve výchozím nastavení, uložte dat profilování (. *Vsp*) souborů pomocí následující syntaxe:
 
 *Path\VSP-File\YYMMDD(N)* **.vsp**
 
-Všechny pojmenování parametru můžete změnit na **Obecné** stránky dialogové okno Vlastnosti výkonnostní relace.
+Žádné pojmenování parametru můžete změnit na **Obecné** stránky dialogové okno Vlastnosti relace výkonu.
 
 |||
 |-|-|
-|*Cesta*|Adresář, který obsahuje sestavu. Výchozí umístění je složka řešení nebo výchozí umístění pro projekty a řešení pro uživatele.|
-|*VSP – soubor*|Název datového souboru profilování. Výchozí název je název řešení nebo spustitelného souboru, je profilovaným.|
-|*RRMMDD*|Razítka data, který ukazuje rok, měsíc a den, která nebyla shromážděna profilování data.|
-|*(NE)*|Pokud existuje více než jeden profilování datový soubor, zvýšena číslo se přidá k názvu souboru mezi závorky.|
+|*Cesta*|Adresář, který obsahuje sestavu. Výchozí umístění je složka řešení nebo výchozí umístění pro projekty a řešení pro daného uživatele.|
+|*Soubor VSP*|Název souboru dat profilování. Výchozí název je název řešení nebo spustitelného souboru, která je profilována.|
+|*RRMMDD*|Časové razítko, který ukazuje, rok, měsíc a den, shromážděná data profilace.|
+|*(N)*|Pokud existuje více než jeden soubor dat profilování se zvyšující číslo přidá k názvu souboru mezi závorky.|
 
-## <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Chcete-li změnit pojmenování syntaxe datových souborů profilace výkonnostní relace
+## <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Chcete-li změnit pojmenování syntaxe datových souborů profilace relace výkonu
 
-1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na název výkonnostní relace a pak klikněte na tlačítko **vlastnosti**.
+1. V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a potom klikněte na **vlastnosti**.
 
 2. Klikněte na tlačítko **Obecné**.
 
@@ -42,8 +40,8 @@ Všechny pojmenování parametru můžete změnit na **Obecné** stránky dialog
 
     |||
     |-|-|
-    |**Umístění sestavy**|Zadejte adresář pro ukládání datových souborů profilování.|
+    |**Umístění sestavy**|Zadejte adresář pro uložení souborů dat profilování.|
     |**Název sestavy**|Zadejte základní název pro soubory.|
-    |**Automaticky přidat nové sestavy do relace**|Zaškrtněte políčko automaticky přidat do relace výkon datového souboru.|
-    |**Připojit narůstajícími číslo generované sestav**|Zaškrtněte políčko Přidat narůstajícími číslo k názvu souboru, pokud existuje více než jeden soubor se stejným názvem. Zrušte zaškrtnutí políčka Přepsat existující soubor.|
-    |**Používat časové razítko pro číslo**|Zaškrtněte políčko Přidat datestamp k názvu souboru.|
+    |**Automaticky přidávat nové zprávy do relace**|Zaškrtněte políčko k automatickému přidávání datového souboru do relace výkonu.|
+    |**Přidat zvětšující se číslo do vygenerovaných sestav**|Zaškrtněte políčko Přidat zvětšující se číslo k názvu souboru, pokud existuje více než jeden soubor se stejným názvem. Zrušte zaškrtnutí políčka pro přepis existujícího souboru.|
+    |**Použít časové razítko pro číslo**|Zaškrtněte políčko pro přidání datestamp k názvu souboru.|

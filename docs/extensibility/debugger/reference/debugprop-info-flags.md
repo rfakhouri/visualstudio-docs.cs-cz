@@ -1,9 +1,6 @@
 ---
 title: DEBUGPROP_INFO_FLAGS | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUGPROP_INFO_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92138aa9cb3867343ec1d83653d8b30f9b1a8a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9046ab771ab4b0c2734c125f2ba17b86f57a09f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987463"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Určuje, jaké informace se mají načíst informace o objektu vlastnosti ladění.  
@@ -28,7 +25,7 @@ Určuje, jaké informace se mají načíst informace o objektu vlastnosti laděn
 ## <a name="syntax"></a>Syntaxe  
   
 ```cpp  
-enum enum_DEBUGPROP_INFO_FLAGS {   
+enum enum_DEBUGPROP_INFO_FLAGS {   
    DEBUGPROP_INFO_FULLNAME          = 0x00000001,  
    DEBUGPROP_INFO_NAME              = 0x00000002,  
    DEBUGPROP_INFO_TYPE              = 0x00000004,  
@@ -50,7 +47,7 @@ typedef DWORD DEBUGPROP_INFO_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DEBUGPROP_INFO_FLAGS {   
+public enum enum_DEBUGPROP_INFO_FLAGS {   
    DEBUGPROP_INFO_FULLNAME          = 0x00000001,  
    DEBUGPROP_INFO_NAME              = 0x00000002,  
    DEBUGPROP_INFO_TYPE              = 0x00000004,  
@@ -120,9 +117,9 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

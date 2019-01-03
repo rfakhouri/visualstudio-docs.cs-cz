@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce6d1a39f568986dfd77ed47fc2da18bf3da7ee4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a553119fe8cfbd9013357b63be07b300b59f9530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989076"
 ---
 # <a name="layout-for-visual-studio"></a>Rozložení pro sadu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +41,11 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
 
  ![Dialogové okno mezery pro popisky nad ovládací prvky](../../extensibility/ux-guidelines/media/0801-a-utilityspacingabove.png "0801 a_UtilitySpacingAbove")
 
- **Obrázek 08.01-a: Mezery pokyny pro dialogová okna nástroje s popisky nad ovládací prvky**
+ **Obrázek 08.01-a: Pokyny pro mezery pro dialogová okna nástroje s popisky nad ovládací prvky**
 
  ![Dialogové okno mezery pro popisky nalevo od ovládacích prvků](../../extensibility/ux-guidelines/media/0801-b-utilityspacingleft.png "0801 b_UtilitySpacingLeft")
 
- **Obrázek 08.01-b: Mezery pokyny pro dialogová okna nástroje s popisky nalevo od ovládacích prvků**
+ **Obrázek 08.01-b: Pokyny pro mezery pro dialogová okna nástroje s popisky nalevo od ovládacích prvků**
 
 ### <a name="layout-details"></a>Podrobnosti o rozložení
 
@@ -72,7 +71,7 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
 
   ![Tlačítko základní zarovnání](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")
 
-  **Obrázek 08.01-c: Tlačítko základní zarovnání**
+  **Obrázek 08.01 – c: Tlačítko základní zarovnání**
 
 #### <a name="labels"></a>Popisky
 
@@ -89,14 +88,14 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
 
  ![Doporučené vzdálenost mezi ovládacími prvky](../../extensibility/ux-guidelines/media/0801-d-controldistance.png "0801 d_ControlDistance")
 
- **Obrázek 08.01-d: Doporučení pro vzdálenost mezi ovládacími prvky**
+ **Obrázek 08.01 – d: Doporučení pro vzdálenost mezi ovládacími prvky**
 
 #### <a name="control-indentation"></a>Ovládací prvek odsazení
  Když jsou vnořené ovládací prvky, Zarovnat vnitřní ovládací prvky vodorovně s levým okrajem ovládacího prvku výše, obvykle popisek.
 
  ![Vnořené řízení zarovnání](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801 e_ControlAlign")
 
- **Obrázek 08.01 – e: Zarovnání ovládacího prvku vnořené**
+ **Obrázek 08.01 – e: Vnořené řídicí zarovnání**
 
 #### <a name="control-width"></a>Šířku ovládacího prvku
  Šířka textového pole nebo další podobné prvky musí být delší než průměrná vstupní pole. Průměrná anglického slova je pět znaků. Například textové pole, která vyžaduje dlouhého názvu cesty by měl být libovolně dlouhý umožňuje vodorovné rozložení, přestože rozevírací seznam pro platformu názvy by měly být pouze délkou, která umožňuje nejdelší položce.
@@ -122,7 +121,7 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
 
   ![Tlačítka OK svislé a zrušit](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")
 
-  **Obrázek 08.01-g: Vodorovné vnitřní tlačítka s svislé OK/zrušit**
+  **Obrázek 08.01k: Vodorovná tlačítka vnitřní s svislé OK/zrušit**
 
 #### <a name="browse-button"></a>[Procházet...] tlačítko
  **[Procházet...]**  tlačítka, které následují textové pole by si "Procházet..." pravopisu v plném rozsahu, včetně na tři tečky. Pokud je na úzkou místa nebo je více **[Procházet...]**  tlačítka na obrazovce, na tlačítko můžete omezit na právě na tři tečky.
@@ -151,15 +150,15 @@ Většina dialogová okna Visual Studio je [rozložení dialogového okna nástr
 
  ![Dialogové okno s motivem dimenze](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801 i_ThemedDialogDimensions")
 
- **Obrázek 08.01-i: s motivem dialogové okno – dimenze**
+ **Obrázek 08.01-i: Dialogové okno s motivem – dimenze**
 
  ![Písma dialogového okna s motivem](../../extensibility/ux-guidelines/media/0801-j-themeddialogfonts.png "0801 j_ThemedDialogFonts")
 
- **Obrázek 08.01-j: s motivem dialogové okno – písma**
+ **Obrázek 08.01-j: Dialogové okno s motivem – písma**
 
  ![Dialogové okno motivy barev](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801 k_ThemedDialogColors")
 
- **Obrázek 08.01-k: s motivem dialogové okno – barvy**
+ **Obrázek 08.01-k: Dialogové okno s motivem – barvy**
 
 ## <a name="see-also"></a>Viz také
  [Modely aplikací pro sadu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md) [ovládacích prvků (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [dialogových oken (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)

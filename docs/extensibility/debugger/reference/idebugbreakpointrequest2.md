@@ -1,9 +1,6 @@
 ---
-title: IDebugBreakpointRequest2 | Microsoft Docs
-ms.custom: ''
+title: IDebugBreakpointRequest2 | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03403a09ea5cd66839bf31fe5c690262fd55f3a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a29ddfa8e525e145143ae06e69cfed050b42a992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103306"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991081"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
-Toto rozhraní představuje informace potřebné k vytvoření a vytvořte vazbu žádný druh breakpoint.  
+Toto rozhraní představuje informace potřebné k vytvoření a připojení jakýkoli typ zarážky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,30 +29,30 @@ IDebugBreakpointRequest2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní implementuje obvykle správce ladicí relace (SDM).  
+ Správce ladění relace (SDM) obvykle implementuje toto rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- Modul ladění (DE) obdrží toto rozhraní prostřednictvím volání [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) před vytvořením čekající zarážky. Volání [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) ze DE můžete načíst toto rozhraní.  
+ Ladicí stroj (DE) obdrží toto rozhraní přímo pomocí volání [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) Chcete-li vytvořit čekající zarážkou. Volání [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) toto rozhraní můžete načíst z DE.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
- Následující tabulka uvádí metody `IDebugBreakpointRequest2`.  
+ V následující tabulce jsou uvedeny metody objektu `IDebugBreakpointRequest2`.  
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Získá typ zarážek umístění tohoto zarážek požadavku.|  
-|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Získá informace o požadavku zarážek, která popisuje tuto žádost zarážek.|  
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Získá typ umístění zarážky tohoto požadavku na zarážku.|  
+|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Získá informace o požadavku zarážky, popisující tuto zarážku žádost.|  
   
 ## <a name="remarks"></a>Poznámky  
- Po program laděné byl načten, volání [vazby](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) váže čekající zarážek zadaného umístění v programu.  
+ Po program laděn se načetl, volání [svázat](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) váže čekající zarážkou požadované umístění v programu.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Obor názvů: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)   
  [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)   
- [Vazby](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

@@ -2,7 +2,6 @@
 title: Třídy pro globální formuláře systému Windows a webové formuláře specifické pro jazykovou verzi
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
@@ -30,12 +29,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: cb0215c27b8d1fb09f54bc8590d24b99403670f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989958"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Třídy specifické pro jazykovou verzi pro globální Windows forms a webové formuláře
 
@@ -46,7 +45,7 @@ Jednotlivé jazykové verze mají různých konvencí zobrazení data, času, č
 
 ## <a name="using-the-culture-setting"></a>Pomocí nastavení jazykové verze
 
-Použít nastavení jazykové verze uložené v aplikaci nebo v **místní nastavení** ovládací panely k určení úmluv jazykové verze na čas spuštění a odpovídajícím způsobem formátovat informace. Další informace o nastavení jazykové verze, najdete v části [postupy: nastavení jazykové verze a jazykové verze uživatelského rozhraní pro globalizaci webové stránky ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Třídy, které automaticky formátovat informace podle nastavení jazykové verze se nazývají *specifické pro jazykovou verzi*. Jsou některé metody specifické pro jazykovou verzi
+Použít nastavení jazykové verze uložené v aplikaci nebo v **místní nastavení** ovládací panely k určení úmluv jazykové verze na čas spuštění a odpovídajícím způsobem formátovat informace. Další informace o nastavení jazykové verze, najdete v části [jak: Nastavení jazykové verze a jazykové verze uživatelského rozhraní pro globalizaci webové stránky ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Třídy, které automaticky formátovat informace podle nastavení jazykové verze se nazývají *specifické pro jazykovou verzi*. Jsou některé metody specifické pro jazykovou verzi
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

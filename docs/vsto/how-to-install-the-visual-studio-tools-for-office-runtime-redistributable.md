@@ -3,8 +3,6 @@ title: 'Postupy: Nainstalovat Visual Studio Tools for Office runtime redistribut
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83bc53dec2c4085b59a07ddc4694ff184b9e75a7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f9267e340d62def2660f807670dc9804dd531c8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988764"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Nainstalovat Visual Studio Tools for Office runtime redistributable
   Visual Studio 2010 Tools for Office runtime musí být nainstalovaný na každém počítači, na kterém běží řešení, které jsou vytvořeny pomocí nástroje Microsoft Office developer tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a Microsoft Office. Další informace najdete v tématu [Visual Studio Tools for Office runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -59,5 +57,3 @@ ms.locfileid: "53648493"
  [Postupy: Instalace primárních sestavení vzájemné spolupráce Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [Správa dokumentů na serveru s použitím třídy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
-  
-  

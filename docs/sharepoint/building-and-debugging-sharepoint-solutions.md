@@ -1,13 +1,8 @@
 ---
 title: Sestavování a ladění řešení služby SharePoint | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283532"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987191"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Sestavování a ladění řešení služby SharePoint
   Obecně platí, sestavování a ladění řešení služby SharePoint je shodný sestavování a ladění ostatních typů projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Témata v této části popisují, které existují rozdíly.  
@@ -39,7 +34,7 @@ ms.locfileid: "44283532"
 |Zprostředkující soubory balíčku.|*\<ProjectName > \pkgobj\debug* nebo  *\<ProjectName > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>Sestavení řešení služby SharePoint
- K sestavení řešení služby SharePoint, musí mít vývojovém počítači správnou verzi serveru SharePoint server nainstalovaný. V opačném případě sestavení řešení služby SharePoint je stejné jako vytvoření jiných typů projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [postupy: řešení služby SharePoint sestavení](../sharepoint/how-to-build-sharepoint-solutions.md).  
+ K sestavení řešení služby SharePoint, musí mít vývojovém počítači správnou verzi serveru SharePoint server nainstalovaný. V opačném případě sestavení řešení služby SharePoint je stejné jako vytvoření jiných typů projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [jak: Sestavení řešení služby SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>Ladění a testování řešení služby SharePoint
  Před laděním, [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] kopie *.wsp* balíček na server SharePoint, aktivuje na webu a rozsahem webové funkce a v některých případech se spustí projekt. V jiných případech budete muset otevřít projekt ručně. Další informace najdete v tématu [řešení potíží s SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md) a [řešení ladění služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md).  
@@ -57,5 +52,3 @@ ms.locfileid: "44283532"
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Procházet připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Zabalení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

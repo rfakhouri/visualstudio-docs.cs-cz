@@ -1,9 +1,6 @@
 ---
-title: 'Postupy: získání služby | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Získání služby | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990026"
 ---
-# <a name="how-to-get-a-service"></a>Postupy: získání služby
+# <a name="how-to-get-a-service"></a>Postupy: Získání služby
 Často je potřeba získat služby Visual Studio pro přístup k jiné funkce. Obecně platí služby Visual Studio obsahuje jedno nebo více rozhraní, které můžete použít. Většina služeb můžete získat z VSPackage.  
   
  Žádné VSPackage, která je odvozena z <xref:Microsoft.VisualStudio.Shell.Package> a který správně umístěný požádat o žádné globální služby. Protože `Package` implementuje třída <xref:System.IServiceProvider>, všechny VSPackage, která je odvozena z `Package` je také poskytovatele služeb.  
@@ -42,7 +39,7 @@ ms.locfileid: "49951376"
   
    ```  
   
-    Tento kód získá služby SVsActivityLog a přetypování na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu aktivit. Příklad najdete v tématu [postupy: použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
+    Tento kód získá služby SVsActivityLog a přetypování na <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu aktivit. Příklad najdete v tématu [jak: Použití protokolu aktivit](../extensibility/how-to-use-the-activity-log.md).  
   
 4. Sestavte projekt a spusťte ladění. Zobrazí se experimentální instance.  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49951376"
   
  Statické <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metoda závisí na zprostředkovateli služby uložený v mezipaměti, který je inicializován poprvé jakékoli VSPackage odvozený od <xref:Microsoft.VisualStudio.Shell.Package> je umístěn.  
   
- Protože VSPackage konstruktoru je volán předtím, než je umístěn sady VSPackage, jsou obvykle nedostupná z v rámci konstruktoru VSPackage služeb global services. Zobrazit [postupy: odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md) alternativní řešení.  
+ Protože VSPackage konstruktoru je volán předtím, než je umístěn sady VSPackage, jsou obvykle nedostupná z v rámci konstruktoru VSPackage služeb global services. Zobrazit [jak: Odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md) alternativní řešení.  
   
  Tady je příklad toho, jak se získat službu v panelu nástrojů nebo jiného elementu bez VSPackage.  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  Tady je postup, chcete-li získat službu z objektu DTE.  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Postupy: poskytování služby](../extensibility/how-to-provide-a-service.md)   
+ [Postupy: Poskytování služeb](../extensibility/how-to-provide-a-service.md)   
  [Použít a poskytování služeb](../extensibility/using-and-providing-services.md)   
  [Základy služby](../extensibility/internals/service-essentials.md)

@@ -1,9 +1,6 @@
 ---
 title: Přehled ovládacích prvků hostitele a hostitelské položky
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -39,12 +36,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e759b493c183c9a42da0130abc87d40c40f9b471
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987450"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Přehled ovládacích prvků hostitele a hostitelské položky
   Hostitelských položek a hostitelských ovládacích prvků jsou typy, které poskytují programovací model pro řešení Office, které jsou vytvořeny pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Hostitelských položek a hostitelských ovládacích prvků Ujistěte se, interakci s objektové modely aplikace Microsoft Office Word a Microsoft Office Excel, které jsou založeny na modelu COM, více jako interakci s spravované objekty, jako jsou například ovládací prvky Windows Forms.  
@@ -179,4 +176,3 @@ ms.locfileid: "53647971"
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Vytvoření vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  

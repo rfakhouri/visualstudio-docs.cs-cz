@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987337"
 ---
 # <a name="customizing-the-properties-window"></a>Přizpůsobení okna Vlastnosti
 Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete přizpůsobit vzhled a chování v okně Vlastnosti. V definici DSL definovat vlastnosti domény na každou doménovou třídu. Ve výchozím nastavení, když vyberete instance třídy v diagramu nebo v Průzkumníku modelu každé domény je uvedena vlastnost v okně Vlastnosti. To vám umožní zobrazit a upravit hodnoty vlastnosti domény, i když ještě je mapována na pole obrazec v diagramu.
@@ -24,7 +23,7 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 ## <a name="names-descriptions-and-categories"></a>Názvy, popisy a kategorie
  **Název a zobrazovaný název**. Zobrazovaný název vlastnosti v definici vlastnosti domény je název, který se zobrazí za běhu v okně Vlastnosti. Naopak název se používá při psaní kódu programu aktualizovat vlastnost. Název musí být správná alfanumerický název CLR, ale zobrazovaný název nemůže obsahovat mezery.
 
- Pokud název vlastnosti v definici DSL, své zobrazované jméno se automaticky nastaví na kopii tohoto názvu. Pokud píšete cased název Pascal, například "FuelGauge", zobrazovaný název bude automaticky obsahovat mezeru: "Posílit měřidla". Nicméně zobrazovaný název explicitně nastavena na jinou hodnotu.
+ Pokud název vlastnosti v definici DSL, své zobrazované jméno se automaticky nastaví na kopii tohoto názvu. Pokud píšete cased název Pascal, například "FuelGauge", zobrazovaný název bude automaticky obsahovat mezery: "Posílit měřidla". Nicméně zobrazovaný název explicitně nastavena na jinou hodnotu.
 
  **Popis**. Popis doménová vlastnost, která se zobrazí na dvou místech:
 
@@ -41,7 +40,7 @@ Ve svém jazyce specifického pro doménu (DSL) v sadě Visual Studio můžete p
 
  Ve tvarech můžete zveřejnit **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** a **FillGradientMode** vlastnosti. Na konektory můžete zveřejnit **barva**`,`**TextColor**, **DashStyle**, a **tloušťka** vlastnosti. V diagramech můžete zveřejnit **FillColor** a **TextColor** vlastnosti.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Předávání: Zobrazení vlastností souvisejících elementů
+## <a name="forwarding-displaying-properties-of-related-elements"></a>Předávání dál: Zobrazování vlastností souvisejících elementů
  Když uživatel tohoto kódu DSL vybere elementu v modelu, zobrazí se tento prvek vlastnosti v okně Vlastnosti. Můžete však také zobrazit vlastnosti zadané elementy související. To je užitečné, pokud jste definovali skupiny prvků, které spolupracují. Například můžete třeba definovat main element a volitelný prvek modulu plug-in. Pokud hlavní prvek je namapovaná na obrazec a druhý není, je vhodné zobrazíte jeho vlastnosti, jako by byly na jeden element.
 
  Tento efekt je s názvem *vlastnost předávání*, a to se stane automaticky v několika případech. V jiných případech může dosáhnout vlastnost předávání definováním popisovač typu domény.

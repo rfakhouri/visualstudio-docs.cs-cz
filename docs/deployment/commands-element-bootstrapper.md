@@ -1,8 +1,6 @@
 ---
 title: '&lt;Příkazy&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 785df23b3d76573182eeb97efc5b359e7298a009
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2370f8e394727c0a4f83488a77096b10cb36746c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990448"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Příkazy&gt; – element (zaváděcí nástroj)
 `Commands` Prvek implementuje testy, které jsou popsané prvky pod `InstallChecks` elementu a deklaruje balíčky, které [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zaváděcího nástroje by měla nainstalovat, pokud se test nezdaří.  
@@ -79,7 +77,7 @@ ms.locfileid: "39077952"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`PackageFile`|Požadováno. Jeden nebo více z určených podle podmínek by měl název balíčku pro instalaci `InstallConditions` vrátí false. Balíček musí být definován ve stejném souboru s použitím `PackageFile` elementu.|  
+|`PackageFile`|Povinný parametr. Jeden nebo více z určených podle podmínek by měl název balíčku pro instalaci `InstallConditions` vrátí false. Balíček musí být definován ve stejném souboru s použitím `PackageFile` elementu.|  
 |`Arguments`|Volitelné. Sada argumenty příkazového řádku k předání do souboru balíčku.|  
 |`EstimatedInstallSeconds`|Volitelné. Odhadovaný čas v sekundách, bude trvat k instalaci balíčku. Tato hodnota určuje velikost indikátoru průběhu, který zaváděcí nástroj zobrazí uživateli. Výchozí hodnota je 0, v takovém případě žádný čas zadaný odhad.|  
 |`EstimatedDiskBytes`|Volitelné. Odhadovaná velikost místa na disku v bajtech, které budou zaměstnávat balíčku po instalaci je dokončena. Tato hodnota se používá v pevném místo na disku, které zaváděcí nástroj zobrazí uživateli. Výchozí hodnota je 0, ve kterém zaváděcí nejsou zobrazeny žádné požadavky na místo pevného disku.|  
@@ -96,9 +94,9 @@ ms.locfileid: "39077952"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti pro testování. Vlastnost musí být dříve definována podřízený `InstallChecks` elementu. Další informace najdete v tématu [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Požadováno. Typ porovnání k provedení. Následující seznam uvádí platné hodnoty:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Požadováno. Hodnota určená k porovnání s vlastností.|  
+|`Property`|Povinný parametr. Název vlastnosti pro testování. Vlastnost musí být dříve definována podřízený `InstallChecks` elementu. Další informace najdete v tématu [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Povinný parametr. Typ porovnání k provedení. Následující seznam uvádí platné hodnoty:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Povinný parametr. Hodnota určená k porovnání s vlastností.|  
 |`Schedule`|Volitelné. Název `Schedule` značka, která definuje, kdy by se mělo vyhodnotit pravidlo.|  
   
 ## <a name="failif"></a>FailIf  
@@ -108,9 +106,9 @@ ms.locfileid: "39077952"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Property`|Požadováno. Název vlastnosti pro testování. Vlastnost musí být dříve definována podřízený `InstallChecks` elementu. Další informace najdete v tématu [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Požadováno. Typ porovnání k provedení. Následující seznam uvádí platné hodnoty:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Požadováno. Hodnota určená k porovnání s vlastností.|  
+|`Property`|Povinný parametr. Název vlastnosti pro testování. Vlastnost musí být dříve definována podřízený `InstallChecks` elementu. Další informace najdete v tématu [ \<InstallChecks > Element](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Povinný parametr. Typ porovnání k provedení. Následující seznam uvádí platné hodnoty:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Povinný parametr. Hodnota určená k porovnání s vlastností.|  
 |`String`|Volitelné. Text zobrazený uživateli, nebude úspěšná.|  
 |`Schedule`|Volitelné. Název `Schedule` značka, která definuje, kdy by se mělo vyhodnotit pravidlo.|  
   
@@ -122,8 +120,8 @@ ms.locfileid: "39077952"
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Value`|Požadováno. Hodnotu ukončovacího kódu, ke kterému je tento `ExitCode` vztahuje k elementu.|  
-|`Result`|Požadováno. Jak by instalace měla reagovat na tento kód ukončení. Následující seznam uvádí platné hodnoty:<br /><br /> `Success`. Příznaky balíčku jako úspěšně nainstalován.<br /><br /> `SuccessReboot`. Označuje jako úspěšně nainstaloval balíček a dává pokyn k restartování systému.<br /><br /> `Fail`. Balíček se označuje jako neúspěšný.<br /><br /> `FailReboot`. Příznaky balíčku jako neúspěšný a dává pokyn k restartování systému.|  
+|`Value`|Povinný parametr. Hodnotu ukončovacího kódu, ke kterému je tento `ExitCode` vztahuje k elementu.|  
+|`Result`|Povinný parametr. Jak by instalace měla reagovat na tento kód ukončení. Následující seznam uvádí platné hodnoty:<br /><br /> `Success`. Příznaky balíčku jako úspěšně nainstalován.<br /><br /> `SuccessReboot`. Označuje jako úspěšně nainstaloval balíček a dává pokyn k restartování systému.<br /><br /> `Fail`. Balíček se označuje jako neúspěšný.<br /><br /> `FailReboot`. Příznaky balíčku jako neúspěšný a dává pokyn k restartování systému.|  
 |`String`|Volitelné. Hodnota, která se budou zobrazovat uživateli v odpovědi na tento kód ukončení.|  
 |`FormatMessageFromSystem`|Volitelné. Určuje, jestli se má použít poskytované systémem chybová zpráva odpovídá ukončovací kód, nebo použijte hodnotu podle `String`. Platné hodnoty jsou `true`, což znamená, že použití poskytovaných systémem chyby, a `false`, což znamená, že použití řetězce poskytované `String`. Výchozí hodnota je `false`. Pokud je tato vlastnost `false`, ale `String` není nastaven, chyba poskytnuté systémem, který se použije.|  
   

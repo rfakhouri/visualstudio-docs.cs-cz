@@ -3,7 +3,6 @@ title: Návrhář postupu provádění – Pokud návrháře aktivit
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716f2b13758864d5eda449967990f9e5be399a9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de237acd09f4c4139bdf79f986dbb43c1a1f8343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822837"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988414"
 ---
 # <a name="if-activity-designer"></a>Návrhář aktivity If
 
@@ -29,7 +28,7 @@ V následující tabulce jsou uvedeny nejužitečnější <xref:System.Activitie
 
 |Název vlastnosti|Požadováno|Použití|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|Hodnota TRUE|Podmínka, která určuje, které podřízené aktivity ke spuštění. Chcete-li nastavit <xref:System.Activities.Statements.If.Condition%2A>, zadejte výraz jazyka Visual Basic v **podmínku** pole na **Pokud** aktivity návrháře nebo v mřížce vlastností.|
+|<xref:System.Activities.Statements.If.Condition%2A>|Pravda|Podmínka, která určuje, které podřízené aktivity ke spuštění. Chcete-li nastavit <xref:System.Activities.Statements.If.Condition%2A>, zadejte výraz jazyka Visual Basic v **podmínku** pole na **Pokud** aktivity návrháře nebo v mřížce vlastností.|
 |<xref:System.Activities.Statements.If.Else%2A>|False|Aktivita spustit, když <xref:System.Activities.Statements.If.Condition%2A> je **false**. Přidat aktivitu, která provádí <xref:System.Activities.Statements.If.Else%2A> větev, přetáhněte aktivitu z **nástrojů** do **Else** pole na **Pokud** Návrhář aktivity s text nápovědy " Sem přetáhněte aktivitu".|
 |<xref:System.Activities.Statements.If.Then%2A>|False|Aktivita spustit, když <xref:System.Activities.Statements.If.Condition%2A> je **true**. Přidat aktivitu, která provádí <xref:System.Activities.Statements.If.Then%2A> větev, přetáhněte aktivitu z **nástrojů** do **pak** pole na **Pokud** Návrhář aktivity s text nápovědy " Sem přetáhněte aktivitu".|
 

@@ -2,19 +2,18 @@
 title: Řešení potíží s body přerušení v ladicím programu | Dokumentace Microsoftu
 ms.custom: seodec18
 ms.date: 01/23/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a2afbff14be944e17a26df09d041d9267ac5cb87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989906"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Řešení potíží s body přerušení v ladicím programu sady Visual Studio
 

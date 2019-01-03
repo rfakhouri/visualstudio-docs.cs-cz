@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989147"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Vytváření vlastních procesorů pro direktivy textových šablon T4
 
@@ -64,9 +63,9 @@ Po všech volání metoda ProcessDirective() modul šablon bude volat tyto metod
 
 -   `string GetClassCodeForProcessingRun()` -Návratový kód metody, vlastnosti a jiné deklarace, které kód šablony mohl používat. Nejjednodušší způsob, jak to provést je vytvořit řetězec obsahující C# nebo kódu jazyka Visual Basic. Aby procesor direktiv dokáže volaná ze šablony, která používá libovolný jazyk CLR, můžete vytvořit příkazy jako strom CodeDom a potom vrátí výsledek serializaci stromu v jazyce, který používá šablonu.
 
--   Další informace najdete v tématu [návod: vytvoření vlastního procesoru direktiv](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+-   Další informace najdete v tématu [názorný postup: Vytvoření vlastního procesoru direktiv](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Viz také:
 
 - [Nasazení vlastního procesoru direktiv](../modeling/deploying-a-custom-directive-processor.md) vysvětluje postup při registraci vlastního procesoru direktiv.
-- [Návod: Vytvoření vlastního procesoru direktiv](../modeling/walkthrough-creating-a-custom-directive-processor.md) popisuje postup vytvoření vlastního procesoru direktiv, jak zaregistrovat a testování procesoru direktiv a jak formátovat výstup souboru ve formátu HTML.
+- [Návod: Vytvoření vlastního procesoru směrnice](../modeling/walkthrough-creating-a-custom-directive-processor.md) popisuje postup vytvoření vlastního procesoru direktiv, jak zaregistrovat a testování procesoru direktiv a jak formátovat výstup souboru ve formátu HTML.

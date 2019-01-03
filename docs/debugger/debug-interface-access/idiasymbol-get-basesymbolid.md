@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_baseSymbolId | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_baseSymbolId | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b787bc5459eaa08acbffa64f1f0bd123aa9cd7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 15787528e7acae9d1bc7b1a49c15570b2c04fefe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985943"
 ---
 # <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
-Načte ID symbol, ze kterého je založena ukazatel.  
+Načte ID symbol, ze které je založená ukazatel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +29,10 @@ HRESULT get_baseSymbolId(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Ukazatel na `DWORD` , obsahuje ID symbol, ze kterého je založena ukazatel.  
+ [out] Ukazatel `DWORD` , který obsahuje symbol ID, ze které je založená ukazatel.  
   
 ## <a name="return-value"></a>Návratová hodnota  
- V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
+ Pokud je úspěšná, vrátí `S_OK`; v opačném případě vrátí `S_FALSE` nebo kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
  [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   

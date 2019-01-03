@@ -1,8 +1,6 @@
 ---
 title: Vlastnosti nástroje MSBuild | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987035"
 ---
 # <a name="msbuild-properties"></a>vlastnosti nástroje MSBuild
 Vlastnosti jsou páry název-hodnota, které lze použít ke konfiguraci sestavení. Vlastnosti jsou užitečné pro předávání hodnot úkolům, vyhodnocování podmínek a ukládání hodnot, na které bude odkazováno v celém souboru projektu.  
@@ -46,7 +44,7 @@ Vlastnosti jsou páry název-hodnota, které lze použít ke konfiguraci sestave
 ## <a name="reserved-properties"></a>Rezervované vlastnosti  
  Nástroj MSBuild rezervuje některé názvy vlastností k ukládání informací o souboru projektu a binární soubory nástroje MSBuild. Na tyto vlastnosti i jakékoli jiné vlastnosti je odkazováno pomocí zápisu $. Například syntaxe $(MSBuildProjectFile) vrátí celý název souboru projektu, včetně přípony názvu souboru.  
   
- Další informace najdete v tématu [postupy: odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) a [MSBuild vyhrazené a dobře známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Další informace najdete v tématu [jak: Odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) a [MSBuild vyhrazené a dobře známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="environment-properties"></a>Vlastnosti prostředí  
  V souborech projektu je možné odkazovat na proměnné prostředí stejným způsobem jako na rezervované vlastnosti. Například pro použití proměnné prostředí `PATH` v souboru projektu je třeba použít příkaz $(Path). Obsahuje-li projekt definici vlastnosti stejného názvu jako vlastnost prostředí, přepíše vlastnost v projektu hodnotu proměnné prostředí.  
@@ -58,7 +56,7 @@ Vlastnosti jsou páry název-hodnota, které lze použít ke konfiguraci sestave
 > [!TIP]
 >  Ne všechny proměnné prostředí jsou čteny pro potřeby počátečních vlastností. Proměnná prostředí, jehož název není platný MSBuild název vlastnosti, jako je například "386", je ignorován.  
   
- Další informace najdete v tématu [postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Další informace najdete v tématu [jak: Použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="registry-properties"></a>Vlastnosti registru  
  Je možné číst hodnoty systémového registru pomocí následující syntaxe, kde `Hive` je podregistr registru (například **HKEY_LOCAL_MACHINE**), `Key` je název klíče, `SubKey` je název podklíče a `Value`je hodnota v podklíči.  
@@ -94,7 +92,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
   
  Globální vlastnosti je také možné nastavit nebo upravit pro podřízené projekty v sestaveních s více projekty pomocí atributu `Properties` úkolu MSBuild. Globální vlastnosti se také předávají do podřízené projekty, není-li `RemoveProperties` atribut úlohy nástroje MSBuild slouží k určení seznam vlastností není přeposlat. Další informace najdete v tématu [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).
   
- Při určení vlastnosti pomocí atributu `TreatAsLocalProperty` ve značce projektu nepřepíše hodnota globální vlastnosti hodnotu vlastnosti, která je nastavena v souboru projektu. Další informace najdete v tématu [Project – element (MSBuild)](../msbuild/project-element-msbuild.md) a [postupy: sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
+ Při určení vlastnosti pomocí atributu `TreatAsLocalProperty` ve značce projektu nepřepíše hodnota globální vlastnosti hodnotu vlastnosti, která je nastavena v souboru projektu. Další informace najdete v tématu [Project – element (MSBuild)](../msbuild/project-element-msbuild.md) a [jak: Sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md).  
   
 ## <a name="property-functions"></a>Funkce vlastností  
  Počínaje rozhraním .NET Framework verze 4 je možné použít funkce vlastností k vyhodnocení skriptů nástroje MSBuild. Ve skriptu sestavení je možné přečíst systémový čas, porovnat řetězce, porovnat regulární výrazy a provádět mnoho dalších akcí bez použití úkolů nástroje MSBuild.  
@@ -141,8 +139,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="see-also"></a>Viz také:  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)  
- [Postupy: použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md)   
- [Postupy: odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
- [Postupy: sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
+ [Postupy: Použití proměnných prostředí v sestavení](../msbuild/how-to-use-environment-variables-in-a-build.md)   
+ [Postupy: Odkazování na název nebo umístění souboru projektu](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)   
+ [Postupy: Sestavení stejných zdrojových souborů s různými možnostmi](../msbuild/how-to-build-the-same-source-files-with-different-options.md)   
  [Nástroj MSBuild vyhrazené a dobře známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md)   
  [Property – element (MSBuild)](../msbuild/property-element-msbuild.md)

@@ -1,9 +1,6 @@
 ---
-title: 'Návod: Volání kódu z jazyka VBA v projektu jazyka Visual C#'
-ms.custom: ''
+title: 'Průvodce: Volání kódu z jazyka VBA v Vizuálu C# projektu'
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989027"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Návod: Volání kódu z jazyka VBA v projektu jazyka Visual C#
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Průvodce: Volání kódu z jazyka VBA v Vizuálu C# projektu
   Tento návod ukazuje, jak volat metodu v přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel z jazyka Visual Basic pro kód Applications (VBA) v sešitu. Postup zahrnuje tři základní kroky: Přidejte metodu k `Sheet1` hostování třída položek, zveřejňují metodu pro kód VBA v sešitu a poté zavolejte metodu z jazyka VBA kód v sešitu.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -74,7 +71,7 @@ ms.locfileid: "38781686"
 3.  Na pásu karet klikněte na tlačítko **Developer** kartu.  
   
     > [!NOTE]  
-    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Pokud **Developer** karta není zobrazena, musíte ji nejdříve zobrazit. Další informace najdete v tématu [jak: Zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  V **kód** klikněte na možnost **jazyka Visual Basic**.  
   
@@ -110,7 +107,7 @@ ms.locfileid: "38781686"
   
 6.  V **název** zadejte **CallingCodeFromVBA**.  
   
-7.  Klikněte na tlačítko **OK**.  
+7.  Klikněte na **OK**.  
   
      **Visual Studio Tools for Office Project Wizard** otevře.  
   
@@ -183,7 +180,7 @@ ms.locfileid: "38781686"
   
 3.  V **extrahování rozhraní** v dialogu **vyberte veřejné členy rozhraní** pole, klikněte na položku `CreateVstoNamedRange` metoda.  
   
-4.  Klikněte na tlačítko **OK**.  
+4.  Klikněte na **OK**.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] generuje nové rozhraní s názvem `ISheet1`, a mění definici `Sheet1` třídy tak, aby se implementuje `ISheet1` rozhraní. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] také se otevře **ISheet1.cs** souboru v editoru kódu.  
   
@@ -245,14 +242,13 @@ ms.locfileid: "38781686"
 ## <a name="next-steps"></a>Další kroky  
  Další informace o volání kódu v řešeních pro systém Office z jazyka VBA v těchto tématech:  
   
--   Volání kódu v položce hostitel ve vlastním nastavení jazyka Visual Basic z jazyka VBA. Tento proces se liší od procesu Visual C#. Další informace najdete v tématu [návod: volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
+-   Volání kódu v položce hostitel ve vlastním nastavení jazyka Visual Basic z jazyka VBA. Tento proces se liší od procesu Visual C#. Další informace najdete v tématu [názorný postup: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md).  
   
--   Volání kódu v doplňku VSTO z jazyka VBA. Další informace najdete v tématu [návod: volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+-   Volání kódu v doplňku VSTO z jazyka VBA. Další informace najdete v tématu [názorný postup: Volání kódu v doplňku VSTO z jazyka VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Viz také:  
  [Kombinování přizpůsobení na úrovni dokumentu a VBA](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
- [Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Postupy: vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Postupy: Vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [Postupy: Vystavení kódu v aplikaci Visual C pro jazyk VBA&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
-  

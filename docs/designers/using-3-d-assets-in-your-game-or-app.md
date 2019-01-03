@@ -2,7 +2,6 @@
 title: Používání 3D prostředků ve hře nebo aplikaci
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986762"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 
@@ -95,7 +94,7 @@ Při použití nástroje obsahu kanálu obrázku k tvorbě prostředku textury m
 |**Komprese**|Určuje typ komprese, který se používá pro výstupní soubor.<br /><br /> Dostupné jsou následující možnosti:<br /><br /> -   **Bez komprese**<br />-   **Komprese BC1_UNORM**<br />-   **Komprese BC1_UNORM_SRGB**<br />-   **BC2_UNORM komprese**<br />-   **BC2_UNORM_SRGB komprese**<br />-   **BC3_UNORM komprese**<br />-   **BC3_UNORM_SRGB komprese**<br />-   **BC4_UNORM komprese**<br />-   **Komprese BC4_SNORM**<br />-   **BC5_UNORM komprese**<br />-   **BC5_SNORM komprese**<br />-   **BC6H_UF16 komprese**<br />-   **BC6H_SF16 komprese**<br />-   **BC7_UNORM komprese**<br />-   **BC7_UNORM_SRGB komprese**<br /><br /> Informace o komprimovaných formátech podporovaných různými verzemi rozhraní DirectX naleznete v tématu [programovací Příručka pro DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Převést na formát přednásobené alfa|**Ano** převést obrázek na formát přednásobené alfa do výstupního souboru; v opačném případě **ne**. Pouze výstupního souboru se změní, zůstává stejná jako zdroje obrázku.|
 |**Generovat Mips**|**Ano** Generovat úplný řetěz MIP v okamžiku sestavení a zahrnout do výstupního souboru; v opačném případě **ne**. Pokud **ne**a zdrojový soubor již obsahuje řetězec mipmap, potom výstupní soubor bude obsahovat MIP řetězec; v opačném případě výstupní soubor nebude mít žádný řetězec MIP.|
-|**Výstup obsahu**|Určuje název výstupního souboru. **Důležité:** změna příponu názvu souboru výstupního souboru nemá žádný vliv na formát souboru.|
+|**Výstup obsahu**|Určuje název výstupního souboru. **Důležité:**  Změna příponu názvu souboru výstupního souboru nemá žádný vliv na formát souboru.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfigurace kanálu obsahu mřížky
 
@@ -103,7 +102,7 @@ Při použití nástroje mřížka obsahu kanálu k vytvoření mřížky prost�
 
 |Vlastnost|Popis|
 |--------------|-----------------|
-|**Výstup obsahu**|Určuje název výstupního souboru. **Důležité:** změna příponu názvu souboru výstupního souboru nemá žádný vliv na formát souboru.|
+|**Výstup obsahu**|Určuje název výstupního souboru. **Důležité:**  Změna příponu názvu souboru výstupního souboru nemá žádný vliv na formát souboru.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Konfigurace kanálu obsahu shaderu
 
@@ -111,7 +110,7 @@ Při použití nástroje shader obsahu kanálu k vytvoření shaderu prostředku
 
 |Vlastnost|Popis|
 |--------------|-----------------|
-|**Výstup obsahu**|Určuje název výstupního souboru. **Důležité:** změna příponu názvu souboru výstupního souboru nemá žádný vliv na formát souboru.|
+|**Výstup obsahu**|Určuje název výstupního souboru. **Důležité:**  Změna příponu názvu souboru výstupního souboru nemá žádný vliv na formát souboru.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Načtení a použití 3D aktiv za běhu
 
@@ -209,7 +208,7 @@ cbuffer MiscVars : register(b3)
 |Název|Popis|
 |-----------|-----------------|
 |[Postupy: Export textury obsahující mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vypočtené mipmapy.|
-|[Postupy: Export textury s přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vynásobené hodnoty alfa.|
-|[Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje způsob použití obsahu kanálu obrázku k exportu textur, který lze použít v aplikaci Direct2D nebo JavaScript.|
+|[Postupy: Export textury s přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje způsob použití obsahu kanálu obrazu pro export textury obsahující předem vynásobené hodnoty alfa.|
+|[Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje způsob použití obsahu kanálu obrázku k exportu textur, který lze použít v aplikaci Direct2D nebo JavaScript.|
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Popisuje nástroje pro úpravy, které poskytuje Visual Studio pro vytváření a manipulaci se 3D prostředky, které zahrnují textury a obrázky, 3D modely a shadery.|
-|[Postupy: Export shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shader z Návrháře shaderu.|
+|[Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shader z Návrháře shaderu.|

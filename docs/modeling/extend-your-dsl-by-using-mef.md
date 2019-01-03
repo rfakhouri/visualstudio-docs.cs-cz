@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822122"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986164"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 Objekty přetáhnout do diagramu z kdekoli uvnitř nebo mimo sadu Visual Studio můžete vyřešit obslužné rutiny gesta. Následující příklad umožňuje uživateli přetáhnout soubory do diagramu z Průzkumníka Windows. Vytvoří prvky, které obsahují názvy souborů.
 
-Můžete napsat obslužné rutiny řešit drags z jiných DSL modely a modelech UML. Další informace najdete v tématu [postupy: přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).
+Můžete napsat obslužné rutiny řešit drags z jiných DSL modely a modelech UML. Další informace najdete v tématu [jak: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ```csharp
 using System.ComponentModel.Composition;

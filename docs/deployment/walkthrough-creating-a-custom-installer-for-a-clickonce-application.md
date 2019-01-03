@@ -1,8 +1,6 @@
 ---
-title: 'Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Průvodce: Vytvoření vlastního instalátoru pro aplikaci ClickOnce | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939fd64873a2aab9d5652768ad4ecfa4a93b5122
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4dcf81d6ddba8fdd4fbdbc3e1ea9ca15b7682498
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991003"
 ---
-# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
+# <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Průvodce: Vytvoření vlastního instalátoru pro aplikaci ClickOnce
 Na základě všech aplikací ClickOnce *.exe* souboru bezobslužné instalace a aktualizovat vlastní instalační program. Vlastní instalační program můžete implementovat vlastní uživatelské prostředí při instalaci, včetně vlastní dialogová okna pro operace zabezpečení a údržba. K provedení operace instalace, používá vlastní instalační program <xref:System.Deployment.Application.InPlaceHostingManager> třídy. Tento návod ukazuje, jak vytvořit vlastní instalační program, který tiché instalaci aplikace ClickOnce.  
   
 ## <a name="prerequisites"></a>Požadavky  

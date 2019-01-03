@@ -1,8 +1,6 @@
 ---
 title: '&lt;PackageFiles&gt; – Element (zaváděcí nástroj) | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990344"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; – element (zaváděcí nástroj)
 `PackageFiles` Obsahuje element `PackageFile` prvky, které definují instalační balíčky provést kvůli `Command` elementu.  
@@ -58,7 +56,7 @@ ms.locfileid: "49813762"
 
 | Atribut | Popis |
 |---------------| - |
-| `Name` | Požadováno. Název souboru balíčku. Jedná se o název, který `Command` element bude odkazovat při definuje podmínky, za kterých se balíček nainstaluje. Tato hodnota se také používá jako klíč do `Strings` tabulka, která má načíst lokalizovaný název, který nástroje jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude používat pro popis balíčku. |
+| `Name` | Povinný parametr. Název souboru balíčku. Jedná se o název, který `Command` element bude odkazovat při definuje podmínky, za kterých se balíček nainstaluje. Tato hodnota se také používá jako klíč do `Strings` tabulka, která má načíst lokalizovaný název, který nástroje jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude používat pro popis balíčku. |
 | `HomeSite` | Volitelné. Umístění balíčku na vzdáleném serveru, pokud není součástí instalačního programu. |
 | `CopyOnBuild` | Volitelné. Určuje, zda zaváděcí nástroj byste ho zkopírovat balíček na disku v okamžiku sestavení. Výchozí hodnota je true. |
 | `PublicKey` | Šifrované veřejný klíč certifikátu podpisu balíčku. Požadováno pokud `HomeSite` používané jinak volitelné. |

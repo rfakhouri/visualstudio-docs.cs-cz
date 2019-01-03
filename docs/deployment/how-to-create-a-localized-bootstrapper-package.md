@@ -1,8 +1,6 @@
 ---
-title: 'Postupy: vytvoření lokalizovaného balíčku Bootstrapperu | Dokumentace Microsoftu'
-ms.custom: ''
+title: 'Postupy: Vytvoření lokalizovaného balíčku Bootstrapperu | Dokumentace Microsoftu'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - localized bootstrapper packages
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1083633410c42c63f8c3e9a2ff341a2278f0b63a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990396"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Postupy: vytvoření lokalizovaného balíčku bootstrapperu
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Postupy: Vytvoření lokalizovaného balíčku bootstrapperu
 Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku zaváděcího nástroje můžete vytvořit tak, že vytvoříte dva další soubory pro každé národní prostředí: software licenčních podmínek souboru (například *eula.rtf*) a manifest balíčku (*package.xml*).  
   
- Ve výchozím nastavení Visual Studio 2010 obsahuje lokalizované balíčky zaváděcího nástroje pouze pro rozhraní .NET Framework 4, .NET Framework 4 Client Profile, 2.0 modul Runtime F # a F # 4.0 modulu Runtime. Lokalizované balíčky pro jiné bootstrapperů můžete vytvořit pomocí tří kroků.  
+ Ve výchozím nastavení, Visual Studio 2010 obsahuje lokalizované balíčky zaváděcího nástroje pouze pro rozhraní .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 a F# 4.0 modulu Runtime. Lokalizované balíčky pro jiné bootstrapperů můžete vytvořit pomocí tří kroků.  
   
 1.  Vytvořte složku s názvem za název národního prostředí v *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<BootstrapperPackageName >*.  
   
@@ -66,7 +64,7 @@ Po vytvoření balíčku zaváděcího nástroje lokalizované verze balíčku z
   
 2.  Vytvořit soubor, který obsahuje licenční podmínky pro software pro balíček zaváděcího nástroje a vložit ho do nové složky.  
   
-3.  Vytvoření manifestu balíčku s názvem *package.xml* a vložit ho do nové složky. Další informace najdete v tématu [postupy: vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).  
+3.  Vytvoření manifestu balíčku s názvem *package.xml* a vložit ho do nové složky. Další informace najdete v tématu [jak: Vytvoření manifestu balíčku](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Aktualizace `<Strings>` část balíček manifestu tak, že jsou řetězce ve správném jazyce pro národní prostředí.  
   

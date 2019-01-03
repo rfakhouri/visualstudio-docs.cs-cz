@@ -1,8 +1,6 @@
 ---
-title: Makra pro vytváření sestav | Microsoft Docs
-ms.custom: ''
+title: Makra pro vytváření sestav | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
@@ -24,22 +22,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 8453f00dda843f6940c518b7ed3ea83c8c261476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989971"
 ---
 # <a name="macros-for-reporting"></a>Makra pro vytváření sestav
-Pro ladění, můžete použít **_rptn –** a **_rptfn –** maker, definovaných v CRTDBG. H nahradit použití `printf` příkazy. Nemusíte je inclose **#ifdef**s, protože budou automaticky zmizí ve vaší verzi sestavení při **_DEBUG –** není definován.  
+Pro ladění, můžete použít **_RPTn** a **_RPTFn** makra, definovaná v CRTDBG. H, chcete-li nahradit použití `printf` příkazy. Není nutné je inclose **#ifdef**s, protože jejich automaticky zmizí ve svojí vydané verzi sestavení, když **_DEBUG** není definován.  
   
 |– Makro|Popis|  
 |-----------|-----------------|  
-|**_RPT0 –**, **_RPT1 –**, **_RPT2 –**, **_RPT3 –**, **_RPT4 –**|Výstupy řetězec zprávy a nuly do čtyř argumentů. Pro _rpt1 – prostřednictvím **_rpt4 –**, řetězec zprávy slouží jako řetězec printf stylu formátování pro argumenty.|  
-|**_RPTF0 –**, **_RPTF1 –**, **_RPTF2 –**, **_RPTF4 –**|Stejné jako **_rptn –**, ale tyto makra také výstupní soubor název a řádek číslo kde se nachází makro.|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Vrací řetězec zprávy a 0 až čtyři argumenty. Pro _RPT1 prostřednictvím **_RPT4**, řetězec zprávy slouží jako řetězec stylu printf formátování pro argumenty.|  
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Stejné jako **_RPTn**, ale tato makra také výstup souboru název a číslo řádku kde se nachází makra.|  
   
- Podívejte se na následující příklad:  
+ Vezměte v úvahu v následujícím příkladu:  
   
 ```cpp
 #ifdef _DEBUG  
@@ -50,13 +48,13 @@ Pro ladění, můžete použít **_rptn –** a **_rptfn –** maker, definovan�
 #endif  
 ```  
   
- Tento kód výstupy hodnoty `someVar` a `otherVar` k **stdout**. Můžete použít následující volání `_RPTF2` ohlásí tyto stejné hodnoty a navíc v souboru název a číslo řádku:  
+ Tento kód vracel hodnoty `someVar` a `otherVar` k **stdout**. Můžete použít následující volání do `_RPTF2` hlášení tyto hodnoty stejné a navíc souboru název a číslo řádku:  
   
 ```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
-Je možné, že konkrétní aplikaci potřebuje, ladění, které neposkytuje makra dodávaná s běhové knihovny jazyka C. Pro tyto případy můžete napsat makra navržená tak, aby vyhovovaly vašim požadavkům. V jednom z vaše soubory hlaviček, například můžete uvést kód jako následující příkaz pro definování makra názvem **ALERT_IF2**:  
+Můžete zjistit, konkrétní aplikace potřebuje, ladění, které neposkytují součástí knihovny run-time C makra. Pro tyto případy můžete napsat makro navržené, aby vyhovovaly vašim požadavkům. Jedním ze souborů hlaviček, například můžete zahrnout kód jako následující definovat makro volá **ALERT_IF2**:  
   
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  
@@ -72,14 +70,14 @@ Je možné, že konkrétní aplikaci potřebuje, ladění, které neposkytuje ma
 #endif  
 ```  
   
- Jednoho volání **ALERT_IF2** udělat všechny funkce **printf** kódu:  
+ Volání **ALERT_IF2** může provádět všechny funkce **printf** kódu:  
   
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- Můžete snadno změnit vlastní makro nahlásit vyšší nebo nižší informace do různých umístění. Tento postup je zvlášť užitečné jako momentální požadavků na ladění.  
+ Můžete snadno změnit vlastní – makro oznámit víc nebo míň informací do různých cílů. Tento přístup je zvlášť užitečné, jak se vyvíjí vaše požadavky na ladění.  
   
 ## <a name="see-also"></a>Viz také  
  [Techniky ladění CRT](../debugger/crt-debugging-techniques.md)

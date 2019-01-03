@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987963"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu (DSL), tak, aby vaši uživatelé můžou provádět úlohy, které se týkají vašeho DSL. Příkazy se zobrazují v nabídce kontextu (místní), po kliknutí pravým tlačítkem myši v diagramu. Příkaz můžete definovat tak, aby se zobrazí jenom v nabídce za určitých okolností. Například můžete provést příkaz viditelné pouze v případě, že uživatel klikne na určité typy prvek nebo prvky v konkrétní stavy.
@@ -33,7 +32,7 @@ Příkazy nabídky můžete přidat do vašeho jazyka specifického pro doménu 
    Ukázky najdete v tématu [Visualization and Modeling SDK webu](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
->  Můžete také upravit chování některé existující příkazy, jako je vyjmutí, vložení, Vybrat vše a tisk přepsáním metody v CommandSet.cs. Další informace najdete v tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+>  Můžete také upravit chování některé existující příkazy, jako je vyjmutí, vložení, Vybrat vše a tisk přepsáním metody v CommandSet.cs. Další informace najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ## <a name="defining-a-command-using-mef"></a>Definování příkazu pomocí MEF
  Spravované rozšíření Framework (MEF) obsahuje alternativní metodu pro definování příkazy nabídky v nabídce diagramu. Jeho primárním účelem je umožnit DSL prodloužit vámi nebo jiné smluvní strany. Uživatele můžete nainstalovat jenom DSL nebo nainstalovat DSL a rozšíření. MEF, ale také snižuje práci po počáteční pracovní umožňující MEF v DSL definující příkazy místní nabídky.
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>Definujte, co dělá příkaz
  Pro každý příkaz definovat `OnMenu...` metodu, která provádí požadované akce, když uživatel klepne na příkaz nabídky.
 
- Pokud provedete změny k prvkům modelu, musíte tak učinit v transakci. Další informace najdete v tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Pokud provedete změny k prvkům modelu, musíte tak učinit v transakci. Další informace najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  V tomto příkladu `ClassShape`, `ModelClass`, a `Comment` jsou typy, které jsou definovány v DSL, která je odvozena z třídy Diagram DSL šablony.
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- Další informace o tom, jak přejít z objektu v modelu a o tom, jak vytvořit objekty a propojení najdete v tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
+ Další informace o tom, jak přejít z objektu v modelu a o tom, jak vytvořit objekty a propojení najdete v tématu [jak: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
 ### <a name="register-the-command"></a>Zaregistrovat příkaz
  Opakujte v jazyce C# deklarace, které jste provedli v části symboly CommandSet.vsct hodnoty GUID a ID:
@@ -362,6 +361,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Postupy: Úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md)
-- [Ukázkový kód: diagramy okruh](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Ukázkový kód: Diagramy okruh](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,8 +1,6 @@
 ---
-title: Ladění odkazu uživatelského rozhraní | Microsoft Docs
-ms.custom: ''
+title: Ladění odkazu uživatelského rozhraní | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.uiref
@@ -20,31 +18,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83021f492eeb712f489641e3019fe9c8ecc47bdd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988021"
 ---
 # <a name="debugging-user-interface-reference"></a>Ladění odkazu uživatelského rozhraní
-Jak ladit aplikaci se můžete setkat s následujícím dialogových oken.  
+Jak ladit aplikaci se můžete setkat s následující dialogových oknech.  
   
- Mnoho funkcí ladicí program můžete automatizovat pomocí model rozšiřitelnosti Visual Studio. Další informace najdete v tématu Visual Studio SDK ladění.  
+ Mnoho funkcí ladicího programu můžete automatizovat pomocí sady Visual Studio model rozšiřitelnosti. Další informace najdete v tématu Visual Studio SDK ladění.  
   
--   [Vybrat zarážky – dialogové okno](../debugger/choose-breakpoints-dialog-box.md)  
+-   [Dialogové okno Vybrat zarážky](../debugger/choose-breakpoints-dialog-box.md)  
   
--   [Ladění zdrojové soubory, běžné vlastnosti řešení stránky dialogové okno vlastností](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
+-   [Ladění zdrojových souborů, běžné vlastnosti, dialogové okno stránek vlastností řešení](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
 -   [Ladění, dialogové okno Možnosti](../debugger/debugging-options-dialog-box.md)  
   
--   [Upravit a pokračovat dialogové okno](../debugger/edit-and-continue-dialog-box.md)  
+-   [Dialogové okno Upravit a pokračovat](../debugger/edit-and-continue-dialog-box.md)  
   
--   [Zastavte ladění v dialogové okno průběhu](../debugger/stop-debugging-in-progress-dialog-box.md)  
+-   [Dialogové okno Ukončit probíhající ladění](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
--   [Ladění chyb a upozornění dialogových oken](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
+-   [Ladění chyb a dialogových oken s upozorněním](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)   
+ [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)   
  [Příkazové okno](../ide/reference/command-window.md)

@@ -1,8 +1,6 @@
 ---
-title: Styly karta, dialogové okno Vlastnosti okna | Microsoft Docs
-ms.custom: ''
+title: Karta styly, dialogové okno Vlastnosti okna | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccccced77f508bdced130012645aa475124e87b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 464f2908784011074754ca68a29edbd52d992c95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990318"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Karta Styly, dialogové okno vlastnosti okna
-Použití **styly** zobrazte stylů použitých na vybrané okno. Chcete-li zobrazit [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesunout fokus na [zobrazení oken](../debugger/windows-view.md) okno. Vyberte libovolný uzel okno ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  
+Použití **styly** zobrazte styly použitý pro vybrané okno. Zobrazíte [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesuňte fokus [zobrazení Windows](../debugger/windows-view.md) okna. Vyberte jakékoli okno uzel ve stromu a pak zvolte **vlastnosti** z **zobrazení** nabídky.  
   
- Následující nastavení jsou k dispozici na **styly** karty:  
+ Následující nastavení jsou k dispozici na **styly** kartu:  
   
 |Položka|Popis|  
 |-----------|-----------------|  
-|**Styly oken**|Kombinace okno Styl kódy a řídit styly, pokud je k dispozici.|  
-|**Rozšířené styly**|Kombinace delší okno Styl kódy.|
+|**Styly oken**|Kombinace okno stylu kódy a řídit styly, pokud je k dispozici.|  
+|**Rozšířené styly**|Kombinace stylu kódů delší okno.|

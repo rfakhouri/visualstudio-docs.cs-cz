@@ -1,8 +1,6 @@
 ---
-title: Ovládací prvek Lupa (zobrazení využití) | Microsoft Docs
-ms.custom: ''
+title: Ovládací prvek Lupa (zobrazení využití) | Dokumentace Microsoftu
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.zoom
@@ -14,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5b999136eb1d1d268e8fc0a71147a1996940ed
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2c54a59cf95452e5582252ff29857851b0f43a50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986125"
 ---
 # <a name="zoom-control-utilization-view"></a>Ovládací prvek Lupa (zobrazení využití)
-Ovládací prvek Lupa umožňuje přiblížit na graf využití procesoru Chcete-li se zaměřit na oblasti zvláštní zájem. Tento ovládací prvek zvětší středu zobrazení. Předtím, než se můžete přiblížit, proto by měl center oblast zájmu.  
+Ovládací prvek lupy pomáhá přiblížit graf využití procesoru, abychom se mohli zaměřit na konkrétní zajímavé oblasti. Tento ovládací prvek přiblíží středu zobrazení. Proto by měl datacentra oblast zájmu předtím, než můžete přiblížit.  
   
- Můžete přetáhnout ukazatele myši v graf využití procesoru nebo graf aktivity GPU vytvořit zvýrazněné oblasti. Při uvolnění tlačítka myši, zobrazení zvětší vybraný rozsah.  
+ Můžete přetáhnout ukazatele myši v graf využití procesoru nebo graf aktivity GPU vytvořit zvýrazněné oblasti. Když se uvolní tlačítko myši, zobrazení přiblíží vybrané oblasti.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Zobrazení využití](../profiling/utilization-view.md)

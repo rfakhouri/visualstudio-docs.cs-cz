@@ -1,8 +1,6 @@
 ---
 title: Definice položek | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990802"
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umožňuje statických deklarací položky v souborech projektu pomocí [ItemGroup](../msbuild/itemgroup-element-msbuild.md) elementu. Však může být přidají metadata pouze na úrovni položek, i v případě, že metadata jsou stejné pro všechny položky. Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, prvek projektu s názvem [ItemDefinitionGroup –](../msbuild/itemdefinitiongroup-element-msbuild.md) překonává toto omezení. *ItemDefinitionGroup –* umožňuje definovat sadu definice položek, které přidávají výchozí hodnoty metadat pro všechny položky v typu s názvem položky.  
@@ -28,7 +26,7 @@ ms.locfileid: "39178559"
   
 -   Typy položek může mít několik definic. Při přidání dalších metadat specifikace typu, poslední specifikace přednost. \(Metadata se řídí stejným pořadím importu následujícím způsobem vlastnosti.\)  
   
--   Může být metadata sčítání. Například jsou hodnoty CDefines shromážděna podmíněně, v závislosti na vlastnosti, které jsou nastavena. Například `MT;STD_CALL;DEBUG;UNICODE`.  
+-   Může být metadata sčítání. Například jsou hodnoty CDefines shromážděna podmíněně, v závislosti na vlastnosti, které jsou nastavena. Například, `MT;STD_CALL;DEBUG;UNICODE`.  
   
 -   Metadata se dá odebrat.  
   
@@ -254,4 +252,4 @@ Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 ```  
   
 ## <a name="see-also"></a>Viz také:  
- [Dávkové zpracování](../msbuild/msbuild-batching.md)
+ [Dávkování](../msbuild/msbuild-batching.md)
