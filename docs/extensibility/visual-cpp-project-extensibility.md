@@ -1,6 +1,5 @@
 ---
 title: Rozšíření projektu Visual C++
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,16 +10,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
-ms.translationtype: HT
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986983"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ systému sada nástrojů a rozšíření integrace s Project
 
-*Systém projektu Visual C++* používá soubory VCXPROJ. Je založen na [Common Project System (CPS) ve Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) a poskytuje další, rozšíření specifické pro C++ body pro snadnou integraci nové sady nástrojů, sestavení architektury a cílové platformy. 
+*Systém projektu Visual C++* se používá pro soubory VCXPROJ. Je založen na [Common Project System (CPS) ve Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) a poskytuje další, rozšíření specifické pro C++ body pro snadnou integraci nové sady nástrojů, sestavení architektury a cílové platformy. 
 
 ## <a name="c-msbuild-targets-structure"></a>Struktura cíle nástroje MSBuild C++
 
@@ -227,13 +226,13 @@ Pokud se podíváte na cíli, jako například `_ClCompile`, zobrazí se vám ni
 </Target>
 ```
 
-`ClCompile` a další nástrojově specifické cíle sestavení jsou definované jako prázdný cílů v Microsoft.CppBuild.targets:
+`ClCompile` a jiných sestavení nástrojově specifické cíle jsou definované jako prázdný cílů v *Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Protože `ClCompile` cíl je definovaný jako prázdný cíl v *Microsoft.CppBuild.targets*, pokud je přepsán sadu nástrojů, neprovede se žádná akce skutečných sestavení. Sada nástrojů cíle, které můžete přepsat `ClCompile` cíl, tedy mohou obsahovat jiné `ClCompile` definice po importu *Microsoft.CppBuild.targets*: 
+Vzhledem k tomu, `ClCompile` cíl je prázdný, není-li, že je přepsána sadu nástrojů, neprovede se žádná akce skutečných sestavení. Sada nástrojů cíle, které můžete přepsat `ClCompile` cíl, tedy mohou obsahovat jiné `ClCompile` definice po importu *Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +242,7 @@ Protože `ClCompile` cíl je definovaný jako prázdný cíl v *Microsoft.CppBui
 </Target>
 ```
 
-Bez ohledu na název `ClCompile`, který byl vytvořen před provedením sady Visual Studio podporu pro různé platformy, `ClCompile` cíl nemá volat CL.exe. Pomocí příslušné úlohy nástroje MSBuild může také volat Clang, gcc nebo jinými kompilátory.
+Bez ohledu na jeho název, který byl vytvořen před provedením sady Visual Studio podporu pro různé platformy, `ClCompile` cíl nemá volat CL.exe. Pomocí příslušné úlohy nástroje MSBuild může také volat Clang, gcc nebo jinými kompilátory.
 
 `ClCompile` Cíl by neměl mít všechny závislosti, s výjimkou `SelectClCompile` cíl, který je vyžadován pro kompilaci jednoho souboru příkazu pracovat v integrovaném vývojovém prostředí.
 
@@ -289,7 +288,7 @@ Pokud je potřeba vytvořit nový úkol pro nástroj pro sestavení, můžete po
 
 1. Pokud má lepší výkon úloh nebo jenom potřebujete složitější funkce, použijte regulární MSBuild [úkolů zápisu](../msbuild/task-writing.md) procesu.
 
-   Pokud ne všechny vstupy a výstupy nástroje nejsou uvedeny na nástroj příkazového řádku, jako v `CL`, `MIDL`, a `RC` případech a pokud chcete automatické vstupní a výstupní soubor sledování a vytváření souborů .tlog, jsou odvozeny úlohy z `TrackedVCToolTask`.
+   Pokud ne všechny vstupy a výstupy nástroje nejsou uvedeny na nástroj příkazového řádku, jako v `CL`, `MIDL`, a `RC` případech a pokud chcete automatické vstupní a výstupní soubor sledování a vytváření souborů .tlog, odvozovat vaše úlohy `Microsoft.Build.CPPTasks.TrackedVCToolTask`třídy. V současné době sice dokumentaci pro základ [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) třídy, neexistují žádné příklady nebo dokumentaci pro podrobnosti `TrackedVCToolTask` třídy. Pokud by to být zajímavé především, přidejte vašeho hlasu, jak na žádost na [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>Přírůstková sestavení a aktuální kontroly
 
@@ -428,13 +427,13 @@ Použití `Task.HostObject` neuložené obsah zdrojové soubory získat, by měl
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Rozšíření projektu v integrovaném vývojovém prostředí sady Visual Studio
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Rozšíření projektu Visual C++ v integrovaném vývojovém prostředí sady Visual Studio
 
 Systém projektu Visual C++ je založen na [systém projektu VS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)a používá svůj body rozšiřitelnosti. Ale implementace hierarchie projektu je specifické pro Visual C++ a není založen na CPS, tak rozšíření hierarchie je omezená na položky projektu.
 
 ### <a name="project-property-pages"></a>Stránky vlastností projektu
 
-Návrh obecné informace najdete v tématu [rozšiřitelnosti platformy – část 1](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx) a [rozšiřitelnosti platformy – část 2](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx).
+Návrh obecné informace najdete v tématu [rozšiřitelnosti platformy – část 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) a [rozšiřitelnosti platformy – část 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
 
 Jednoduše řečeno, stránky vlastností zobrazí ve **vlastnosti projektu** dialogové okno pro projekt jazyka C++, které jsou definovány pomocí *pravidlo* soubory. Soubor pravidel určuje sadu vlastností, které mají zobrazit na stránce vlastností je a jak a kde by měla být uložena v projektu soubor. Pravidlo soubory jsou soubory XML, které používají formát Xaml. Typy použité k serializaci je popsané v [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Další informace o použití pravidel soubory v projektech, naleznete v tématu [soubory XML stránky vlastností pravidla](/cpp/ide/property-page-xml-files).
 
@@ -478,12 +477,13 @@ Pravidla formátu je jednoduché, takže tato část popisuje pouze atributy, kt
 
 `PageTemplate` Atribut definuje, jak se pravidlo zobrazilo v **stránky vlastností** dialogového okna. Atribut může mít jednu z těchto hodnot:
 
-|Atribut|Popis|
-|-|-|
-`generic`|Všechny vlastnosti jsou zobrazeny na jedné stránce v části kategorie záhlaví<br/>Pravidlo může být viditelné pro `Project` a `PropertySheet` kontextů, ale ne `File`.<br/><br/> Příklad: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
-`tool`|Kategorie jsou uvedeny jako podstránky.<br/>Pravidlo může být viditelný ve všech kontextech: `Project`, `PropertySheet` a `File`.<br/>Toto pravidlo je viditelná ve vlastnostech projektu pouze v případě, že projekt obsahuje položky, které `ItemType` definované v `Rule.DataSource`, pokud je součástí názvu pravidla `ProjectTools` skupiny položek.<br/><br/>Příklad: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|Na stránce se zobrazí jako součást stránky ladění.<br/>Kategorie jsou aktuálně ignorovány.<br/>Název pravidla musí odpovídat objektu ladění MEF Spouštěč `ExportDebugger` atribut.<br/><br/>Příklad: `$(VCTargetsPath)` \\ *1033*\\*ladicí program\_místní\_windows.xml*
-*Vlastní*| Vlastní šablony. Název šablony by měl odpovídat `ExportPropertyPageUIFactoryProvider` atribut `PropertyPageUIFactoryProvider` objekt MEF. Zobrazit **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Příklad: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Atribut | Popis |
+|------------| - |
+| `generic` | Všechny vlastnosti jsou zobrazeny na jedné stránce v části kategorie záhlaví<br/>Pravidlo může být viditelné pro `Project` a `PropertySheet` kontextů, ale ne `File`.<br/><br/> Příklad: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
+| `tool` | Kategorie jsou uvedeny jako podstránky.<br/>Pravidlo může být viditelný ve všech kontextech: `Project`, `PropertySheet` a `File`.<br/>Toto pravidlo je viditelná ve vlastnostech projektu pouze v případě, že projekt obsahuje položky, které `ItemType` definované v `Rule.DataSource`, pokud je součástí názvu pravidla `ProjectTools` skupiny položek.<br/><br/>Příklad: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | Na stránce se zobrazí jako součást stránky ladění.<br/>Kategorie jsou aktuálně ignorovány.<br/>Název pravidla musí odpovídat objektu ladění MEF Spouštěč `ExportDebugger` atribut.<br/><br/>Příklad: `$(VCTargetsPath)`\\*1033*\\*ladicí program\_místní\_windows.xml* |
+| *custom* | Vlastní šablony. Název šablony by měl odpovídat `ExportPropertyPageUIFactoryProvider` atribut `PropertyPageUIFactoryProvider` objekt MEF. Zobrazit **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Příklad: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 Pokud toto pravidlo používá některé ze šablon na základě mřížky vlastností, můžete těmto rozšiřujícím bodům vlastností:
 
@@ -529,7 +529,7 @@ V souboru cílů, zadejte:
 </ItemGroup>
 ```
 
-Příklad: `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+Příklad: `$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>Ladicí programy
 
@@ -656,6 +656,6 @@ Informace o tom, jak vytvořit soubory VSIX, naleznete v tématu [přesouvání 
 
 Sestavovací systém Microsoft ([MSBuild](../msbuild/msbuild.md)) poskytuje modul sestavení a rozšiřitelné formát založený na formátu XML pro soubory projektu. Měli byste se seznámit s basic [koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md) a jak [MSBuild pro Visual C++](/cpp/build/msbuild-visual-cpp-overview) systém projektů funguje za účelem rozšíření Visual C++.
 
-Rozhraní Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) poskytuje rozšíření rozhraní API, které jsou používány CPS a systém projektu Visual C++. Přehled jak CPS používá rozhraní MEF, naleznete v tématu [MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+Rozhraní Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) poskytuje rozšíření rozhraní API, které jsou používány CPS a systém projektu Visual C++. Přehled jak CPS používá rozhraní MEF, naleznete v tématu [CPS a MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) v [VSProjectSystem přehled MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Můžete přizpůsobit existující systém sestavení pro přidání kroků sestavení nebo nové typy souborů. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) a [práce s vlastnostmi projektu](/cpp/ide/working-with-project-properties).

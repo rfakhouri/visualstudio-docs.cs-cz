@@ -1,8 +1,6 @@
 ---
 title: 'Postupy: Nastavení oprávnění | Dokumentace Microsoftu'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c9770f1d9b42dd50367aaee81be94b0bd85025
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 1bfe3773032ff29fce831f675921289ed7a825ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828105"
 ---
 # <a name="how-to-set-permissions"></a>Postupy: Nastavení oprávnění
 
@@ -65,7 +63,7 @@ Princip základní zabezpečení hlásí, že aplikace má běžet s více než 
 
 2. Klikněte pravým tlačítkem na složku a potom klikněte na tlačítko **vlastnosti**.
 
-     **\<Název složky > vlastnosti** zobrazí se dialogové okno.
+      **\<Název složky > vlastnosti** zobrazí se dialogové okno.
 
 3. Klikněte na tlačítko **zabezpečení** kartu.
 

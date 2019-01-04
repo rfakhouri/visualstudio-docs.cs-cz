@@ -1,8 +1,6 @@
 ---
 title: Idiaenumsymbols::Item – | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8786d53e1ba3001bc882580c03005377d476a47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4be73de8540d89a4c45737aa6bdc2e24c704cd1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898996"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 Načte symbolu pomocí indexu.  
@@ -27,7 +25,7 @@ Načte symbolu pomocí indexu.
 ## <a name="syntax"></a>Syntaxe  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD        index,  
    IDiaSymbol** symbol  
 );  
@@ -37,7 +35,7 @@ HRESULT Item (
  index  
  [in] Index o [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt, který se má načíst. Index je v rozsahu 0 až `count`-1, kde `count` je vrácený [idiaenumsymbols::get_count –](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) metody.  
   
- – symbol  
+  – symbol  
  [out] Vrátí [idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md) objekt představující symbol požadované.  
   
 ## <a name="return-value"></a>Návratová hodnota  

@@ -2,7 +2,6 @@
 title: Nastavení symbolu (.pdb) a zdrojových souborů v ladicím programu
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892444"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Zadání symbolu (.pdb) a zdrojových souborů v ladicím programu sady Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -77,11 +76,11 @@ Ladicí program vyhledává také soubory se symboly v následujících umístě
       
      Servery symbolů, které můžete použít, patří:  
       
-     **Veřejné servery symbolů společnosti Microsoft**: K ladění selhání, ke kterému dojde během volání systémové knihovny DLL nebo knihovny třetí strany, budete často potřebovat systémové *PDB* soubory. Systém *PDB* soubory obsahují symboly pro knihovny DLL pro Windows, *.exe* soubory a ovladače zařízení. Můžete získat symboly pro operační systémy Windows, MDAC, IIS, ISA a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z veřejné symbolové servery společnosti Microsoft. 
+     **Veřejné Microsoft Symbol Servers**: K ladění selhání, ke kterému dojde během volání systémové knihovny DLL nebo knihovny třetí strany, budete často potřebovat systémové *PDB* soubory. Systém *PDB* soubory obsahují symboly pro knihovny DLL pro Windows, *.exe* soubory a ovladače zařízení. Můžete získat symboly pro operační systémy Windows, MDAC, IIS, ISA a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z veřejné symbolové servery společnosti Microsoft. 
       
-     **Servery v interní síti nebo na místním počítači symbolů**: váš tým nebo společnost může vytvořit servery symbolů pro vaše vlastní produkty a jako mezipaměť pro symboly z externích zdrojů. Symbolový server můžete mít na vlastním počítači. 
+     **Servery v interní síti nebo na místním počítači symbolů**: Váš tým nebo společnost může vytvořit servery symbolů pro vaše vlastní produkty a jako mezipaměť pro symboly z externích zdrojů. Symbolový server můžete mít na vlastním počítači. 
       
-     **Servery symbolů jiných výrobců**: externích poskytovatelů aplikací Windows a knihovny může poskytnout přístup k symbolovému serveru na Internetu. 
+     **Servery symbolů jiných výrobců**: Jiní zprostředkovatelé aplikací a knihoven systému Windows mohou poskytovat přístup k symbolovému serveru na internetu. 
     
      > [!WARNING]
      > Pokud používáte symbolový server jiný než veřejné symbolové servery společnosti Microsoft, ujistěte se, že symbol server a jeho cesty jsou důvěryhodné. Protože soubory symbolů může obsahovat libovolný spustitelný kód, můžete zveřejnit na ohrožení zabezpečení.  
@@ -156,7 +155,7 @@ Můžete vybrat další možnosti symbolu v **nástroje** > **možnosti** > **la
   Můžete omezit příkazy, které *srcsrv.dll* můžete spustit z aplikace *PDB* souboru uvedením povolených příkazů do souboru s názvem *srcsrv.ini*. Místo *srcsrv.ini* ve stejné složce jako soubor *srcsrv.dll* a *devenv.exe*.  
   
   >[!IMPORTANT]
-  >Libovolné příkazy lze vložit do vaší aplikace *PDB* souboru, proto ujistěte se, že chcete změnit jenom příkazy, které chcete provést do *srcsrv.ini* souboru. Žádný pokus o provedení příkazu nejsou v *srcsvr.ini* soubor způsobí, že se zobrazí dialog s potvrzení. Další informace najdete v tématu [upozornění zabezpečení: ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
+  >Libovolné příkazy lze vložit do vaší aplikace *PDB* souboru, proto ujistěte se, že chcete změnit jenom příkazy, které chcete provést do *srcsrv.ini* souboru. Žádný pokus o provedení příkazu nejsou v *srcsvr.ini* soubor způsobí, že se zobrazí dialog s potvrzení. Další informace najdete v tématu [upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md). 
   >
   >Parametry příkazu nejsou ověřovány, proto buďte s důvěryhodnými příkazy opatrní. Například, pokud je uvedená *cmd.exe* ve vašich *srcsrv.ini*, uživatel se zlými úmysly může zadat parametry na *cmd.exe* , který by ji činilo nebezpečné.  
   

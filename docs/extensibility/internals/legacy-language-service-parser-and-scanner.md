@@ -1,9 +1,6 @@
 ---
 title: Starší verze jazyka analyzátor a skener služby | Dokumentace Microsoftu
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941846"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor a skener služby starší verze jazyka
 Analyzátor je srdce komunity služby jazyka. Třídy jazyka Managed Package Framework (MPF) vyžadují analyzátoru jazyka pro výběr informací o kódu se zobrazí. Analyzátor oddělí text do lexikální tokenů a pak identifikuje těchto tokenů podle typu a funkce.  
@@ -45,7 +42,7 @@ namespace MyNamespace
 |Název tokenu|Typ tokenu|  
 |----------------|----------------|  
 |obor názvů, třídy, veřejná, void, int|klíčové slovo|  
-|=|– operátor|  
+|=| – operátor|  
 |{ } ( ) ;|Oddělovač|  
 |MyNamespace, MyClass, MáFunkce, arg1, var1|identifikátor|  
 |MyNamespace|– obor názvů|  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. Hotovo.  
   
 ### <a name="summary"></a>Souhrn  
- Odpovídající složené závorky operace je obvykle omezené na jednoduché dvojice prvků jazyka. Složitější prvky, jako je například porovnávání trojic ("`if(...)`","`{`"a"`}`", nebo "`else`","`{`"a"`}`"), může být zvýrazněný jako součást operace dokončování slov. Například slovo "else" dokončení odpovídající "`if`" může být zvýrazněný příkaz. Pokud došlo k řadě `if` / `else if` příkazy, všechny z nich může být zvýrazněný pomocí mechanismu stejné jako odpovídající složené závorky. <xref:Microsoft.VisualStudio.Package.Source> Základní třídy již podporuje, následujícím způsobem: skener musí vracet hodnotu tokenu trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> v kombinaci s hodnotou aktivační událost <xref:Microsoft.VisualStudio.Package.TokenTriggers> pro daný token, který je před pozice kurzoru.  
+ Odpovídající složené závorky operace je obvykle omezené na jednoduché dvojice prvků jazyka. Složitější prvky, jako je například porovnávání trojic ("`if(...)`","`{`"a"`}`", nebo "`else`","`{`"a"`}`"), může být zvýrazněný jako součást operace dokončování slov. Například slovo "else" dokončení odpovídající "`if`" může být zvýrazněný příkaz. Pokud došlo k řadě `if` / `else if` příkazy, všechny z nich může být zvýrazněný pomocí mechanismu stejné jako odpovídající složené závorky. <xref:Microsoft.VisualStudio.Package.Source> Základní třídy již podporuje, následujícím způsobem: Skener musí vracet hodnotu tokenu trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> v kombinaci s hodnotou aktivační událost <xref:Microsoft.VisualStudio.Package.TokenTriggers> pro daný token, který je před pozice kurzoru.  
   
  Další informace najdete v tématu [závorky ve službě starší verze jazyka](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).  
   
